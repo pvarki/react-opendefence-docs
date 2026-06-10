@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "fc567617-02ca-44ba-a293-e99977710931",
+  "slug": "overview-vqWEyyCxy8",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "Overview",
+  "breadcrumb": [
+    "TAK Clients",
+    "TAK Tracker - Apple",
+    "Usage by Role",
+    "Overview"
+  ],
+  "createdAt": "2025-12-05T20:41:45.561Z",
+  "updatedAt": "2026-02-21T08:40:26.953Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>(This tab should not be shown)</p>"
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 1,
+  "id": "5b08e73e-4ff5-4738-8d9c-e077f5dc7da1",
+  "slug": "operating-guide-HWk7wA10AV",
+  "collection": "dev",
+  "locale": "en",
+  "title": "Operating Guide",
+  "breadcrumb": [
+    "Operating Guide"
+  ],
+  "createdAt": "2026-05-28T07:16:42.430Z",
+  "updatedAt": "2026-06-02T06:50:51.165Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "What \"operating\" means here",
+      "id": "what-operating-means-here"
+    },
+    {
+      "depth": 2,
+      "text": "Cloud package build",
+      "id": "cloud-package-build"
+    },
+    {
+      "depth": 2,
+      "text": "Cloud deploy",
+      "id": "cloud-deploy"
+    },
+    {
+      "depth": 2,
+      "text": "Day-2 operations",
+      "id": "day-2-operations"
+    },
+    {
+      "depth": 3,
+      "text": "Pre-flight before any change",
+      "id": "pre-flight-before-any-change"
+    },
+    {
+      "depth": 3,
+      "text": "Re-deploying after a manifest change",
+      "id": "re-deploying-after-a-manifest-change"
+    },
+    {
+      "depth": 3,
+      "text": "Rotating secrets",
+      "id": "rotating-secrets"
+    },
+    {
+      "depth": 3,
+      "text": "Renewing the internal CA",
+      "id": "renewing-the-internal-ca"
+    },
+    {
+      "depth": 3,
+      "text": "Logs and metrics",
+      "id": "logs-and-metrics"
+    },
+    {
+      "depth": 2,
+      "text": "Common failure modes",
+      "id": "common-failure-modes"
+    },
+    {
+      "depth": 2,
+      "text": "Tearing down",
+      "id": "tearing-down"
+    },
+    {
+      "depth": 2,
+      "text": "What lives where",
+      "id": "what-lives-where"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>This page is about building and deploying the cloud package, plus day-2 operations against a live environment. Local development lives in the <a href=\"/doc/6c320d9e-dad4-4ed8-8026-94620b6084ff\">Development Guide</a>.</p>\n<h2 id=\"what-operating-means-here\"><a href=\"#what-operating-means-here\">What \"operating\" means here</a></h2>\n<p>There are two delivery modes:</p>\n<ul>\n<li>Local. <code>task deploy</code> against the kind cluster. Used by developers and CI.</li>\n<li>Cloud. A Zarf package built once, then deployed to one or more k3s clusters. This is the production-shaped path.</li>\n</ul>\n<p>For phase order and rollout dependencies, see <a href=\"/doc/134aff5a-b4b4-4c2f-a494-c61d1e7a8a14\">Architecture</a>. The same phases apply in both modes.</p>\n<h2 id=\"cloud-package-build\"><a href=\"#cloud-package-build\">Cloud package build</a></h2>\n<p>The cloud Zarf package mirrors <code>task deploy:cloud</code>. It renders each phase aggregator into a separate manifest and stitches them together with ordering hints.</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#61AFEF\">task</span><span style=\"color:#98C379\"> zarf:package:cloud</span></span></code></pre>",
+      "lang": "bash"
+    },
+    {
+      "type": "html",
+      "html": "<p>What the task does, in order:</p>\n<ol>\n<li>Copies <code>../zarf/cloud/zarf.template.yaml</code> to <code>.build/zarf/cloud/zarf.yaml</code>.</li>\n<li>Renders each <code>infra-phase1</code> bundle to its own manifest under <code>.build/zarf/cloud/manifests/infra-phase1/</code>. Splitting per bundle keeps each Helm-rendered manifest under the Kubernetes Secret size limit.</li>\n<li>Renders <code>infra-phase2</code>, <code>monitoring</code>, and <code>opendefense</code> to single manifests.</li>\n<li>Runs <code>zarf dev find-images</code> so the package self-describes its image list. The task supplies a placeholder hostname (<code>placeholder.invalid</code>) so discovery stays non-interactive.</li>\n<li>Appends the CloudNativePG init image (<code>ghcr.io/cloudnative-pg/postgresql:18.0-system-trixie</code>) by hand. CNPG references the image dynamically, and <code>find-images</code> doesn't detect that reference.</li>\n<li>Calls <code>zarf package create</code> to produce <code>zarf-package-opendefense-cloud-&#x3C;arch>-1.0.0.tar.zst</code> at the repo root.</li>\n</ol>\n<p>Architecture defaults to <code>amd64</code>. Override it with:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#61AFEF\">task</span><span style=\"color:#98C379\"> zarf:package:cloud</span><span style=\"color:#98C379\"> ZARF_ARCHITECTURE=arm64</span></span></code></pre>",
+      "lang": "bash"
+    },
+    {
+      "type": "html",
+      "html": "<p><code>ZARF_YOLO=true</code> strips the image list and sets <code>metadata.yolo: true</code> in the package. The target cluster then pulls images directly from their original registries. That's useful for environments with egress and no need for Zarf's image relocation. See <code>../zarf/cloud/README.md</code> for the full task contract.</p>\n<h2 id=\"cloud-deploy\"><a href=\"#cloud-deploy\">Cloud deploy</a></h2>\n<p><code>zarf package deploy</code> uses whatever kube context the shell sees, so point <code>KUBECONFIG</code> at the right file before deploying. Pass <code>OPENDEFENSE_HOST</code> either via <code>--set</code> or interactively.</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#E06C75\">KUBECONFIG</span><span style=\"color:#56B6C2\">=</span><span style=\"color:#98C379\">k3s-azure.yaml</span><span style=\"color:#61AFEF\"> zarf</span><span style=\"color:#98C379\"> package</span><span style=\"color:#98C379\"> deploy</span><span style=\"color:#56B6C2\"> \\</span></span>\n<span class=\"line\"><span style=\"color:#98C379\">  \"$(</span><span style=\"color:#61AFEF\">git</span><span style=\"color:#98C379\"> rev-parse </span><span style=\"color:#D19A66\">--show-toplevel</span><span style=\"color:#98C379\">)/zarf-package-opendefense-cloud-amd64-1.0.0.tar.zst\"</span><span style=\"color:#56B6C2\"> \\</span></span>\n<span class=\"line\"><span style=\"color:#D19A66\">  --set</span><span style=\"color:#98C379\"> OPENDEFENSE_HOST=example.dev.pvarki.fi</span><span style=\"color:#56B6C2\"> \\</span></span>\n<span class=\"line\"><span style=\"color:#D19A66\">  --confirm</span></span></code></pre>",
+      "lang": "bash"
+    },
+    {
+      "type": "html",
+      "html": "<p>Zarf substitutes <code>###ZARF_VAR_OPENDEFENSE_HOST###</code> everywhere the cloud overlays reference the host (ingress hostnames, app config). The phases deploy in declared order, with health checks between them:</p>\n<ul>\n<li><code>infra-phase1</code>. CNPG, cert-manager, Keycloak operator, External Secrets, Traefik, Grafana operator.</li>\n<li><code>infra-phase2</code>. trust-manager and cloud ClusterIssuers.</li>\n<li><code>monitoring</code>. Grafana, Loki, Alloy, Prometheus.</li>\n<li><code>opendefense</code>. CFSSL → PKI → opendefense-system → Battlelog → TAK → MTX.</li>\n</ul>\n<p><code>task deploy:_apply</code> enforces the same ordering for local. If a phase fails its health check, Zarf stops and surfaces which deployment didn't reach Ready.</p>\n<h2 id=\"day-2-operations\"><a href=\"#day-2-operations\">Day-2 operations</a></h2>\n<h3 id=\"pre-flight-before-any-change\"><a href=\"#pre-flight-before-any-change\">Pre-flight before any change</a></h3>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#61AFEF\">kubectl</span><span style=\"color:#98C379\"> config</span><span style=\"color:#98C379\"> current-context</span><span style=\"color:#7F848E;font-style:italic\">        # confirm you are on the right cluster</span></span>\n<span class=\"line\"><span style=\"color:#61AFEF\">kubectl</span><span style=\"color:#98C379\"> get</span><span style=\"color:#98C379\"> nodes</span><span style=\"color:#7F848E;font-style:italic\">                     # nodes Ready?</span></span>\n<span class=\"line\"><span style=\"color:#61AFEF\">kubectl</span><span style=\"color:#98C379\"> get</span><span style=\"color:#98C379\"> pods</span><span style=\"color:#D19A66\"> -A</span><span style=\"color:#ABB2BF\"> | </span><span style=\"color:#61AFEF\">grep</span><span style=\"color:#D19A66\"> -v</span><span style=\"color:#98C379\"> Running</span><span style=\"color:#7F848E;font-style:italic\"> # anything stuck?</span></span></code></pre>",
+      "lang": "bash"
+    },
+    {
+      "type": "html",
+      "html": "<h3 id=\"re-deploying-after-a-manifest-change\"><a href=\"#re-deploying-after-a-manifest-change\">Re-deploying after a manifest change</a></h3>\n<p>For local, edit and then <code>task deploy</code>. For cloud, rebuild the package (<code>task zarf:package:cloud</code>) and run <code>zarf package deploy</code> again. Zarf is idempotent and reconciles what already exists.</p>\n<h3 id=\"rotating-secrets\"><a href=\"#rotating-secrets\">Rotating secrets</a></h3>\n<p>Secrets are pulled in via <code>external-secrets-operator</code> from the configured secret store, so rotate them at the source. Then either let the ExternalSecret refresh interval pull the new value, or annotate the ExternalSecret to force a sync. Don't edit the synced Secret directly. The operator overwrites direct edits.</p>\n<h3 id=\"renewing-the-internal-ca\"><a href=\"#renewing-the-internal-ca\">Renewing the internal CA</a></h3>\n<p>The cluster CA is issued by <code>opendefense-cfssl</code>, and cert-manager renews leaf certificates automatically. If you need to rotate the root, plan ahead. Every namespace that consumes the bundle via trust-manager has to roll its consumers after the new bundle propagates.</p>\n<h3 id=\"logs-and-metrics\"><a href=\"#logs-and-metrics\">Logs and metrics</a></h3>\n<p>Logs flow through Alloy → Loki. Metrics flow through Prometheus. Dashboards live in Grafana. All three live in the <code>monitoring</code> namespace. Per-service log formatters are set in each overlay (e.g. <code>LOG_CONSOLE_FORMATTER=local</code> in battlelog), so local development stays human-readable while cloud emits structured JSON.</p>\n<h2 id=\"common-failure-modes\"><a href=\"#common-failure-modes\">Common failure modes</a></h2>\n<table>\n<thead>\n<tr>\n<th>Symptom</th>\n<th>Likely cause</th>\n<th>Where to look</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><code>zarf package deploy</code> fails on phase-1 health check</td>\n<td>An operator didn't reach Ready in time</td>\n<td><code>kubectl describe deployment ...</code> in the affected namespace</td>\n</tr>\n<tr>\n<td>Helm-managed resource refuses to apply</td>\n<td>The cloud overlay tried to remove <code>meta.helm.sh/*</code> labels but the source still has them</td>\n<td>The <code>patches:</code> block in <code>k8s/main/cloud/opendefense/kustomization.yaml</code></td>\n</tr>\n<tr>\n<td>Zarf package build fails with \"secret too big\"</td>\n<td>A bundle's rendered manifest crossed 1 MiB</td>\n<td>Split it. Add a new subfolder under <code>k8s/main/cloud/infra-phase1/bundles/</code></td>\n</tr>\n<tr>\n<td>TAK clients cannot connect</td>\n<td>Port 8089 or 8443 not reachable, or mTLS cert chain wrong</td>\n<td>Check Traefik routes and the tak overlay</td>\n</tr>\n<tr>\n<td>New product is missing from RM UI</td>\n<td><code>MW_PRODUCTS</code> not updated, or miniwerk didn't re-run</td>\n<td><code>kubectl -n opendefense-system logs job/opendefense-miniwerk</code></td>\n</tr>\n</tbody>\n</table>\n<h2 id=\"tearing-down\"><a href=\"#tearing-down\">Tearing down</a></h2>\n<ul>\n<li>Local: <code>task down</code> deletes the kind cluster.</li>\n<li>Cloud: <code>zarf package remove opendefense-cloud --confirm</code> (with the right <code>KUBECONFIG</code>). Be deliberate. This removes the platform from the cluster.</li>\n</ul>\n<h2 id=\"what-lives-where\"><a href=\"#what-lives-where\">What lives where</a></h2>\n<table>\n<thead>\n<tr>\n<th>Concern</th>\n<th>File / path</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Phase composition</td>\n<td><code>k8s/main/{local,cloud}/{infra-phase1,infra-phase2,monitoring,opendefense}/kustomization.yaml</code></td>\n</tr>\n<tr>\n<td>Rollout wait gates</td>\n<td><code>taskfile.yaml</code>, <code>deploy:_apply</code></td>\n</tr>\n<tr>\n<td>Zarf package definition</td>\n<td><code>zarf/cloud/zarf.template.yaml</code></td>\n</tr>\n<tr>\n<td>Cloud package build flow</td>\n<td><code>taskfile.yaml</code>, <code>zarf:package:cloud</code></td>\n</tr>\n<tr>\n<td>Tool versions</td>\n<td><code>mise.toml</code></td>\n</tr>\n<tr>\n<td>Kind cluster shape</td>\n<td><code>kind-config.yaml</code></td>\n</tr>\n</tbody>\n</table>"
+    }
+  ]
+}

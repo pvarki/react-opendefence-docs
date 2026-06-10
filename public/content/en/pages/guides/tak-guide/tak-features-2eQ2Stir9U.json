@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "3a1e70eb-41ed-405b-8b1d-4744e2b81e9b",
+  "slug": "tak-features-2eQ2Stir9U",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "TAK Features",
+  "breadcrumb": [
+    "TAK Clients",
+    "TAK Tracker - Apple",
+    "TAK Features"
+  ],
+  "createdAt": "2025-12-05T20:38:15.426Z",
+  "updatedAt": "2025-12-05T21:23:44.584Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>(This tab should not be shown)</p>"
+    }
+  ]
+}

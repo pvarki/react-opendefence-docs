@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "id": "71b83e6a-9dbb-4231-bc76-392f55489519",
+  "slug": "ohjevideot-cXQYuKHhVR",
+  "collection": "wikis/tak",
+  "locale": "fi",
+  "title": "Ohjevideot",
+  "breadcrumb": [
+    "Ohjevideot"
+  ],
+  "createdAt": "2025-12-07T23:06:03.188Z",
+  "updatedAt": "2026-02-19T12:41:21.625Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Seurattavia YouTube-kanavia",
+      "id": "seurattavia-youtube-kanavia"
+    },
+    {
+      "depth": 2,
+      "text": "Yleiset TAK-videot (pidemmät)",
+      "id": "yleiset-tak-videot-pidemmät"
+    },
+    {
+      "depth": 2,
+      "text": "Tuotekohtaiset videot",
+      "id": "tuotekohtaiset-videot"
+    },
+    {
+      "depth": 3,
+      "text": "ATAK-videot",
+      "id": "atak-videot"
+    },
+    {
+      "depth": 3,
+      "text": "WinTAK-videot",
+      "id": "wintak-videot"
+    },
+    {
+      "depth": 3,
+      "text": "iTAK-videot",
+      "id": "itak-videot"
+    },
+    {
+      "depth": 3,
+      "text": "Takserver-videot",
+      "id": "takserver-videot"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Kokoelma videoita TAK:n käytöstä.</p>\n<h2 id=\"seurattavia-youtube-kanavia\"><a href=\"#seurattavia-youtube-kanavia\">Seurattavia YouTube-kanavia</a></h2>\n<ul>\n<li><strong>ATAK Map</strong> — <a href=\"https://www.youtube.com/@ATAKMap\" target=\"_blank\" rel=\"noopener noreferrer\">https://www.youtube.com/@ATAKMap</a>\n<ul>\n<li>\"Virallisia\" TAK-videoita ja esityksiä.</li>\n</ul>\n</li>\n<li><strong>TAK Syndicate</strong> — <a href=\"https://www.youtube.com/@thetaksyndicate6234\" target=\"_blank\" rel=\"noopener noreferrer\">https://www.youtube.com/@thetaksyndicate6234</a>\n<ul>\n<li>TAK-yhteisö, joka koostuu julkisen turvallisuuden käyttäjistä (California FD TAK)\\n<a href=\"https://www.thetaksyndicate.org/\" target=\"_blank\" rel=\"noopener noreferrer\">https://www.thetaksyndicate.org/</a></li>\n</ul>\n</li>\n<li><strong>CoTAK</strong> — <a href=\"https://www.youtube.com/@coetak\" target=\"_blank\" rel=\"noopener noreferrer\">https://www.youtube.com/@coetak</a>\n<ul>\n<li>TAK-yhteisö julkisen turvallisuuden käyttäjille (Colorado FD TAK)\\n<a href=\"https://cotak.gov/\" target=\"_blank\" rel=\"noopener noreferrer\">https://cotak.gov/</a></li>\n</ul>\n</li>\n<li><strong>ATAK Wizard</strong> — <a href=\"https://www.youtube.com/@ATAKwizard/\" target=\"_blank\" rel=\"noopener noreferrer\">https://www.youtube.com/@ATAKwizard/</a>\n<ul>\n<li>Yksittäinen sisällöntuottaja, joka tekee lyhyitä TAK-opastusvideoita (ei tällä hetkellä aktiivinen).</li>\n</ul>\n</li>\n<li><strong>myTeckNet</strong> — <a href=\"https://www.youtube.com/@myTeckNet_Vids\" target=\"_blank\" rel=\"noopener noreferrer\">https://www.youtube.com/@myTeckNet_Vids</a>\n<ul>\n<li>Takserver- ja TAK-ohjevideoita\\n<a href=\"https://mytecknet.com/\" target=\"_blank\" rel=\"noopener noreferrer\">https://mytecknet.com/</a></li>\n</ul>\n</li>\n</ul>\n<h2 id=\"yleiset-tak-videot-pidemmät\"><a href=\"#yleiset-tak-videot-pidemmät\">Yleiset TAK-videot (pidemmät)</a></h2>\n<ul>\n<li><strong>ATAK Map</strong> – Pitkiä, kattavia opastusvideoita ja julkisia esityksiä TAK-toiminnoista\n<ul>\n<li><a href=\"https://www.youtube.com/@ATAKMap/videos\" target=\"_blank\" rel=\"noopener noreferrer\">https://www.youtube.com/@ATAKMap/videos</a></li>\n</ul>\n</li>\n<li><strong>TAK Syndicate</strong> – Pitkiä, kattavia opastusvideoita ja julkisia esityksiä TAK-toiminnoista\n<ul>\n<li><a href=\"https://www.youtube.com/@thetaksyndicate6234/videos\" target=\"_blank\" rel=\"noopener noreferrer\">https://www.youtube.com/@thetaksyndicate6234/videos</a></li>\n</ul>\n</li>\n<li><strong>S2 Underground</strong> – <em>How To: Intelligence, Surveillance, and Reconnaissance: A Primer</em>\n<ul>\n<li><a href=\"https://www.youtube.com/watch?v=ar3DNJaOJ1I\" target=\"_blank\" rel=\"noopener noreferrer\">https://www.youtube.com/watch?v=ar3DNJaOJ1I</a></li>\n</ul>\n</li>\n</ul>\n<h2 id=\"tuotekohtaiset-videot\"><a href=\"#tuotekohtaiset-videot\">Tuotekohtaiset videot</a></h2>\n<h3 id=\"atak-videot\"><a href=\"#atak-videot\">ATAK-videot</a></h3>\n<ul>\n<li><strong>ATAK Wizard</strong> – Hyviä lyhyitä videoita eri työkaluista ja toiminnoista\n<ul>\n<li><a href=\"https://www.youtube.com/@ATAKwizard/videos\" target=\"_blank\" rel=\"noopener noreferrer\">https://www.youtube.com/@ATAKwizard/videos</a></li>\n</ul>\n</li>\n<li><strong>ATAK Map</strong> – ATAK-opastusvideoita (vanhoja, mutta yhä hyödyllisiä)\n<ul>\n<li><a href=\"https://youtube.com/playlist?list=PLD4gdaBHX0b7GpPkuy0mbPaCw9kG3YgfB&#x26;si=YBFvJKkEdGOAi2ju\" target=\"_blank\" rel=\"noopener noreferrer\">https://youtube.com/playlist?list=PLD4gdaBHX0b7GpPkuy0mbPaCw9kG3YgfB&#x26;si=YBFvJKkEdGOAi2ju</a></li>\n<li><a href=\"https://www.youtube.com/playlist?list=PLD4gdaBHX0b7xmJughABx7NUTyb82wVCM\" target=\"_blank\" rel=\"noopener noreferrer\">https://www.youtube.com/playlist?list=PLD4gdaBHX0b7xmJughABx7NUTyb82wVCM</a></li>\n</ul>\n</li>\n<li><strong>CoTAK</strong> – Lyhyitä ATAK-opastusvideoita\n<ul>\n<li><a href=\"https://www.youtube.com/playlist?list=PLtQUvtEfuwzjI4uyptWRyT1m8z33q8DLW\" target=\"_blank\" rel=\"noopener noreferrer\">https://www.youtube.com/playlist?list=PLtQUvtEfuwzjI4uyptWRyT1m8z33q8DLW</a></li>\n</ul>\n</li>\n<li><strong>TAK Syndicate</strong> – Mistä aloittaa: lyhyitä ATAK-videoita\n<ul>\n<li><a href=\"https://www.youtube.com/playlist?list=PL0RLIF82BUhkNx0XomgLRydw8FSvw9Ka_\" target=\"_blank\" rel=\"noopener noreferrer\">https://www.youtube.com/playlist?list=PL0RLIF82BUhkNx0XomgLRydw8FSvw9Ka_</a></li>\n</ul>\n</li>\n</ul>\n<h3 id=\"wintak-videot\"><a href=\"#wintak-videot\">WinTAK-videot</a></h3>\n<ul>\n<li><strong>ATAK Map</strong> – WinTAK-opastusvideoita (vanhoja, mutta yhä hyödyllisiä)\n<ul>\n<li><a href=\"https://www.youtube.com/playlist?list=PLD4gdaBHX0b7kztKgcqrXcQ69WRfwAlac\" target=\"_blank\" rel=\"noopener noreferrer\">https://www.youtube.com/playlist?list=PLD4gdaBHX0b7kztKgcqrXcQ69WRfwAlac</a></li>\n</ul>\n</li>\n</ul>\n<h3 id=\"itak-videot\"><a href=\"#itak-videot\">iTAK-videot</a></h3>\n<ul>\n<li><strong>CoTAK</strong> – Lyhyitä iTAK-opastusvideoita\n<ul>\n<li><a href=\"https://www.youtube.com/playlist?list=PLtQUvtEfuwzjKmcdEpAMCHfqGgNyoQ8Mq\" target=\"_blank\" rel=\"noopener noreferrer\">https://www.youtube.com/playlist?list=PLtQUvtEfuwzjKmcdEpAMCHfqGgNyoQ8Mq</a></li>\n</ul>\n</li>\n</ul>\n<h3 id=\"takserver-videot\"><a href=\"#takserver-videot\">Takserver-videot</a></h3>\n<ul>\n<li><strong>TAK Syndicate</strong> – Takserverin asennus- ja käyttöönotto-oppaat\n<ul>\n<li><a href=\"https://www.youtube.com/playlist?list=PL0RLIF82BUhkU2e01vCCWZEIGMAvWqUVm\" target=\"_blank\" rel=\"noopener noreferrer\">https://www.youtube.com/playlist?list=PL0RLIF82BUhkU2e01vCCWZEIGMAvWqUVm</a></li>\n</ul>\n</li>\n<li><strong>myTeckNet</strong> – Takserverin asennus- ja käyttöönotto-oppaat\n<ul>\n<li><a href=\"https://www.youtube.com/@myTeckNet_Vids/videos\" target=\"_blank\" rel=\"noopener noreferrer\">https://www.youtube.com/@myTeckNet_Vids/videos</a></li>\n</ul>\n</li>\n</ul>"
+    }
+  ]
+}

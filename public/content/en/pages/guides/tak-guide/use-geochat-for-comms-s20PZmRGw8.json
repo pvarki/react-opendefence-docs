@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "id": "a3c77bb3-791e-4dcb-8ce1-bfc6850119e0",
+  "slug": "use-geochat-for-comms-s20PZmRGw8",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "Use Geochat for comms",
+  "breadcrumb": [
+    "TAK Clients",
+    "ATAK",
+    "Usage by Role",
+    "Fighter",
+    "Use Geochat for comms"
+  ],
+  "createdAt": "2026-01-25T10:03:42.124Z",
+  "updatedAt": "2026-04-12T10:05:24.996Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>(This tab should not be shown)</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "1. Use Geochat for Comms",
+          "layout": "text",
+          "html": "<p>TAK's Geochat provide simple textchannel communication.</p>",
+          "images": []
+        },
+        {
+          "title": "OpenDefence standard model",
+          "layout": "text",
+          "html": "<p>Let us have <strong>four</strong> channels in our unit, eg. Company:</p>\n<ul>\n<li>COMMAND Channel</li>\n<li>BLUFOR Channel</li>\n<li>RECON Channel</li>\n<li>COMMON Channel\nAside of them, use direct messages.</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "A Channel",
+          "layout": "text",
+          "html": "<p>Unit-wide channel for each theme.\nNO chatting in eg. platoon or company-specific channel in a company or battalion server.\n<strong>Efficiency. Avoid comms silos.</strong></p>",
+          "images": []
+        },
+        {
+          "title": "COMMAND Channel",
+          "layout": "text",
+          "html": "<ul>\n<li>Purpose: Receive &#x26; respond to Orders</li>\n<li>Posting rights: Leaders</li>\n<li>Others: Acknowledging. Otherwise read-only. Send execution status to Blufor channel.</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "Command Channel Example",
+          "layout": "text",
+          "html": "<p>Typical use:</p>\n<ul>\n<li>Unit is executing a Mission.</li>\n<li>Leader sends pre-planned code word \"BLUE43 prepare to execute AXE\" using the Command channel.</li>\n<li>Subordinate acknowledges.</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "BLUFOR Channel",
+          "layout": "text",
+          "html": "<ul>\n<li>Purpose: Send &#x26; receive status of execution</li>\n<li>Posting rights: Everyone</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "BLUFOR Channel Example",
+          "layout": "text",
+          "html": "<p>Typical use:</p>\n<ul>\n<li>Subordinate reports, \"Ready to execute AXE.\"</li>\n<li>Leader acknowledges.</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "RECON Channel",
+          "layout": "text",
+          "html": "<ul>\n<li>Purpose: Send &#x26; receive observations from Area of Operation</li>\n<li>Specifically: Always notify here if you've updated the OBSERVATION Feed.</li>\n<li>Posting rights: Everyone</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "RECON Channel Example",
+          "layout": "text",
+          "html": "<p>Typical use:</p>\n<ul>\n<li>Subordinate reports, \"Observed BOLO list car AAA-000 around GRY 4. Sent in OBS feed.\"</li>\n<li>CP recon staff acknowledges.</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "COMMON Channel",
+          "layout": "text",
+          "html": "<ul>\n<li>Purpose: All comms that do not fit any of the above but still need to be read by everyone.</li>\n<li>Posting rights: Everyone</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "COMMON Channel Example",
+          "layout": "text",
+          "html": "<p>Typical use:</p>\n<ul>\n<li>Leader informs, \"Gear arrived to BLUE 0 - get yours as ordered by 26JAN.\"</li>\n<li>Subordinates acknowledge.</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "Using Direct Messages",
+          "layout": "text",
+          "html": "<p>Use direct messages for comms specific to you.\n<strong>The rule of thumb:</strong> What is of no use to anybody but you and the recipient, should be DM'd.</p>",
+          "images": []
+        },
+        {
+          "title": "DM Example",
+          "layout": "text",
+          "html": "<ul>\n<li>Subordinate asks, \"Is BLUE 50 available? Need service to a generator.\"</li>\n<li>Command post answers, \"Will relay and report answer.\"</li>\n</ul>",
+          "images": []
+        }
+      ]
+    }
+  ]
+}

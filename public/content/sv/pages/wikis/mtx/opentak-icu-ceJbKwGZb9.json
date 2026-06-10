@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 1,
+  "id": "910e554e-48ad-4666-8859-a11bca34720b",
+  "slug": "opentak-icu-ceJbKwGZb9",
+  "collection": "wikis/mtx",
+  "locale": "sv",
+  "title": "Opentak ICU",
+  "breadcrumb": [
+    "Verktyg",
+    "Opentak ICU"
+  ],
+  "createdAt": "2025-12-03T13:36:58.330Z",
+  "updatedAt": "2026-02-16T08:36:30.475Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Tillgängligt:",
+      "id": "tillgängligt"
+    },
+    {
+      "depth": 2,
+      "text": "Grundvy:",
+      "id": "grundvy"
+    },
+    {
+      "depth": 2,
+      "text": "Instruktioner för strömning",
+      "id": "instruktioner-för-strömning"
+    },
+    {
+      "depth": 3,
+      "text": "Inställningar (grundläggande)",
+      "id": "inställningar-grundläggande"
+    },
+    {
+      "depth": 2,
+      "text": "Inställningar:",
+      "id": "inställningar"
+    },
+    {
+      "depth": 3,
+      "text": "Strömningsinställningar:",
+      "id": "strömningsinställningar"
+    },
+    {
+      "depth": 3,
+      "text": "Videoinställningar:",
+      "id": "videoinställningar"
+    },
+    {
+      "depth": 3,
+      "text": "Ljudinställningar:",
+      "id": "ljudinställningar"
+    },
+    {
+      "depth": 3,
+      "text": "TAK-serverinställningar:",
+      "id": "tak-serverinställningar"
+    },
+    {
+      "depth": 2,
+      "text": "Stödda strömningsprotokoll och codecs",
+      "id": "stödda-strömningsprotokoll-och-codecs"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Opentak ICU är ett open source-program som kan användas för att dela livevideo över ett medianätverk till en medieserver eller till ett lokalt nätverk. Via medieservern möjliggörs delning vidare utanför det egna nätet.\\nVideobild kan delas antingen från enhetens inbyggda kamera eller från en extern kamera som stöder USB-UVC-protokollet.</p>\n<h2 id=\"tillgängligt\"><a href=\"#tillgängligt\">Tillgängligt:</a></h2>\n<p><a href=\"https://github.com/brian7704/OpenTAK_ICU\" target=\"_blank\" rel=\"noopener noreferrer\">https://github.com/brian7704/OpenTAK_ICU</a></p>\n<h2 id=\"grundvy\"><a href=\"#grundvy\">Grundvy:</a></h2>"
+    },
+    {
+      "type": "image",
+      "src": "/content/images/sv/attachments/40796246e16ae648.webp",
+      "alt": "",
+      "width": 1482,
+      "height": 710
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"instruktioner-för-strömning\"><a href=\"#instruktioner-för-strömning\">Instruktioner för strömning</a></h2>\n<ul>\n<li>Ställ in inställningarna\n<ul>\n<li>Streaming Settings</li>\n<li>Video Settings</li>\n<li>Audio Settings</li>\n</ul>\n</li>\n<li>Tryck på <strong>\"Record\"</strong> i grundvyn för att börja sända bilden.</li>\n<li>Tryck på <strong>\"Stop\"</strong> för att sluta dela bilden.</li>\n</ul>\n<h3 id=\"inställningar-grundläggande\"><a href=\"#inställningar-grundläggande\">Inställningar (grundläggande)</a></h3>\n<ul>\n<li>Streaming Settings\n<ul>\n<li>Välj inställningen <strong>\"Stream video\"</strong></li>\n<li>Välj <strong>Stream Protocol: \"RTMPS\"</strong></li>\n<li>Ange adressen dit strömmen ska skickas: <strong>\"canadian-goose.pvarki.fi\"</strong></li>\n<li>Ange <strong>Stream Port: \"1936\"</strong></li>\n<li>Ange <strong>Stream Path: \"live/icu/callsign\"</strong> (ditt eget callsign)</li>\n<li>Ange <strong>Username</strong> – ditt användarnamn</li>\n<li>Ange <strong>Password</strong> – ditt lösenord</li>\n</ul>\n</li>\n<li>Video Settings\n<ul>\n<li>Välj <strong>Video Source: \"This device\"</strong></li>\n<li>Välj <strong>Resolution: \"1280 x 720\"</strong></li>\n<li>Ange <strong>Bitrate: \"3000\"</strong></li>\n<li>Välj <strong>\"Adaptive Bitrate\"</strong></li>\n<li>Välj <strong>FPS: \"15\"</strong></li>\n<li>Välj <strong>Codec: \"H264\"</strong></li>\n<li>Avmarkera <strong>\"Record\"</strong></li>\n<li>Välj <strong>\"Text Overlay\"</strong></li>\n</ul>\n</li>\n<li>Audio Settings\n<ul>\n<li>Avmarkera <strong>\"Enable Audio\"</strong></li>\n</ul>\n</li>\n</ul>\n<p>Om du vill kan du ändra strömningsprotokoll, codec, upplösning, FPS och ljudöverföring, men med dessa grundinställningar får du en bra och fungerande användarupplevelse.</p>\n<h2 id=\"inställningar\"><a href=\"#inställningar\">Inställningar:</a></h2>"
+    },
+    {
+      "type": "image",
+      "src": "/content/images/sv/attachments/32a4faaf1c18c6c1.webp",
+      "alt": "",
+      "width": 228,
+      "height": 210
+    },
+    {
+      "type": "html",
+      "html": "<p>Allmänna inställningsmenyn.</p>\n<h3 id=\"strömningsinställningar\"><a href=\"#strömningsinställningar\">Strömningsinställningar:</a></h3>"
+    },
+    {
+      "type": "image",
+      "src": "/content/images/sv/attachments/2222b2656d368506.webp",
+      "alt": "",
+      "width": 262,
+      "height": 720
+    },
+    {
+      "type": "html",
+      "html": "<p>Inställningar relaterade till strömningen, såsom vart strömmen skickas och vilket protokoll som används.</p>\n<h3 id=\"videoinställningar\"><a href=\"#videoinställningar\">Videoinställningar:</a></h3>"
+    },
+    {
+      "type": "image",
+      "src": "/content/images/sv/attachments/70c88e2cbe4bce2c.webp",
+      "alt": "",
+      "width": 261,
+      "height": 720
+    },
+    {
+      "type": "html",
+      "html": "<p>Inställningar som rör videoströmmen, till exempel om enhetens kamera eller en extern hjälmkamera används, vilken FPS eller codec som är vald och om callsign, position och tid visas i den sända bilden.</p>\n<h3 id=\"ljudinställningar\"><a href=\"#ljudinställningar\">Ljudinställningar:</a></h3>"
+    },
+    {
+      "type": "image",
+      "src": "/content/images/sv/attachments/f2a231a8a456d04e.webp",
+      "alt": "",
+      "width": 350,
+      "height": 440
+    },
+    {
+      "type": "html",
+      "html": "<p>Inställningar som rör ljudströmmen, till exempel om den är aktiverad, vilken codec som används och andra ljudrelaterade inställningar.</p>\n<h3 id=\"tak-serverinställningar\"><a href=\"#tak-serverinställningar\">TAK-serverinställningar:</a></h3>"
+    },
+    {
+      "type": "image",
+      "src": "/content/images/sv/attachments/9a8839d00f0649f0.webp",
+      "alt": "",
+      "width": 215,
+      "height": 720
+    },
+    {
+      "type": "html",
+      "html": "<p>Inställningar för att dela strömmen till Takservern, det vill säga att Opentak ICU kan ansluta till Takservern, vidarebefordra användarens positionsinformation och dela videolänken med andra användare.</p>\n<h2 id=\"stödda-strömningsprotokoll-och-codecs\"><a href=\"#stödda-strömningsprotokoll-och-codecs\">Stödda strömningsprotokoll och codecs</a></h2>\n<table>\n<thead>\n<tr>\n<th>Strömningsprotokoll (port)</th>\n<th>Videocodecs</th>\n<th>Ljudcodecs</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>RTSPS (8322)</td>\n<td>H264</td>\n<td>AAC</td>\n</tr>\n<tr>\n<td>RTMPS (1936)</td>\n<td>H265</td>\n<td>G711</td>\n</tr>\n<tr>\n<td>SRT (8890)</td>\n<td>AV1</td>\n<td>OPUS</td>\n</tr>\n<tr>\n<td>UDP</td>\n<td>–</td>\n<td>–</td>\n</tr>\n</tbody>\n</table>"
+    }
+  ]
+}

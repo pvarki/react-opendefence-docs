@@ -1,0 +1,165 @@
+{
+  "schemaVersion": 1,
+  "id": "2676ebbb-83f4-4569-a7a2-7050395f28c8",
+  "slug": "draw-share-plans-fxjT3hDZ5p",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "Draw & share Plans",
+  "breadcrumb": [
+    "TAK Clients",
+    "ATAK",
+    "Advanced Features",
+    "Draw & share Plans"
+  ],
+  "createdAt": "2025-12-05T22:06:22.115Z",
+  "updatedAt": "2026-02-21T11:17:43.549Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "ATAK connected to takserver - Draw & share Plans",
+      "id": "atak-connected-to-takserver---draw--share-plans"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>(This tab should not be shown)</p>\n<h1 id=\"atak---draw--share-plans---advanced-features\"><a href=\"#atak---draw--share-plans---advanced-features\">ATAK - Draw &#x26; share Plans - Advanced Features</a></h1>\n<h2 id=\"atak-connected-to-takserver---draw--share-plans\"><a href=\"#atak-connected-to-takserver---draw--share-plans\">ATAK connected to takserver - Draw &#x26; share Plans</a></h2>"
+    },
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Drawing & Sharing Plans",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>ATAK has the military drawing tools you need. First off, head to Main Menu (hamburger).</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/64805fb53e2f9091.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Choose Drawing Tools",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Look for the Drawing Tools symbol.</li>\n<li>If that doesn't appear in your menu, hit the yellowish Pen and activate the Drawing Tools in your menu.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/290e2d69343f71ff.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Drawing Toolset",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Select the tool that suits your need.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/34645de4727b037d.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Drawing a Marching Route (1)",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>In our example we draw a marching route using the Point-by-point line tool.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/0a4cc7a796110cd6.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Drawing a Marching Route (2)",
+          "layout": "image-bottom",
+          "html": "",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/5022607bb448e50b.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Drawing a Marching Route (3)",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>We press End to finalize the shape.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/91f711a157b3211f.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Edit & View Details",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Tap the shape to open the menu. Press the Edit icon to edit the details.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/0227e6ec3eb8af18.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Viewing Details",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Useful for a marching route, display the length of the line.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/4aec2c6d6b1c6305.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Editing a Shape",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Scroll down in the Edit menu to change line color, thickness and style.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/e53b25d163eb7f4f.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Other Tools",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Aside of Drawing Tools, the Point Dropper also has other symbols than military for your convenience.</li>\n<li>Use eg. \"Spot Map\" icon set to draw points.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/29b64f26a183afb7.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Done",
+          "layout": "text",
+          "html": "<ul>\n<li>You can close this guide.</li>\n</ul>",
+          "images": []
+        }
+      ]
+    },
+    {
+      "type": "html",
+      "html": "<p>\\</p>\n<p>After successful testing Draw &#x26; share Plans, continue to <a href=\"/doc/7df31ecb-1092-4d8c-9013-b168feec84ba\">Geofences</a></p>"
+    }
+  ]
+}

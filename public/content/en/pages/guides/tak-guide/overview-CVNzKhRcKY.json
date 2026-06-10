@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "0e075790-c86e-4330-9e1f-3d43298c5fce",
+  "slug": "overview-CVNzKhRcKY",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "Overview",
+  "breadcrumb": [
+    "TAK Clients",
+    "ATAK",
+    "Usage by Role",
+    "Overview"
+  ],
+  "createdAt": "2025-12-05T22:06:21.752Z",
+  "updatedAt": "2026-04-12T10:05:02.164Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>(This tab should not be shown)</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "OpenDefence Standard Model",
+          "layout": "text",
+          "html": "<ul>\n<li>There are many ways to use TAK</li>\n<li>We offer a thought usage model that aims to deliver value without complexity.</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "Overview - Fighter Sends",
+          "layout": "text",
+          "html": "<ol>\n<li>GeoChat using COMMAND, RECON, BLUFOR and COMMON Channels</li>\n<li>If applicable, Send recon observations to OBSERVATIONS Feed</li>\n</ol>",
+          "images": []
+        },
+        {
+          "title": "Overview - Fighter Gets",
+          "layout": "text",
+          "html": "<ol start=\"4\">\n<li>Receive the CP-produced RECON Feed to get what we know of the AO</li>\n<li>Receive Mission PLAN Feeds for marching routes, patrol routes, geofence alerts...</li>\n<li>Receive the BLUFOR Feed with eg. approach routes to friendly positions</li>\n</ol>",
+          "images": []
+        },
+        {
+          "title": "Overview - Leaders & CP Receive",
+          "layout": "text",
+          "html": "<ol>\n<li>Reports from GeoChat COMMAND, RECON, BLUFOR and COMMON Channels</li>\n<li>Receive SHARE &#x26; OBSERVATION Feed posts to help building the RECON Feed</li>\n<li>Plans &#x26; feeds &#x26; chat from the upper echelons</li>\n</ol>",
+          "images": []
+        },
+        {
+          "title": "Overview - Leaders & CP Send",
+          "layout": "text",
+          "html": "<ol start=\"4\">\n<li>Order &#x26; gain information using the Geochat channels</li>\n<li>Build RECON feed for managed picture of our knowledge of the AO</li>\n<li>Create PLAN feeds to describe operations in an area</li>\n<li>Send your unit's approach routes &#x26; important activities to the BLUFOR feed</li>\n</ol>",
+          "images": []
+        },
+        {
+          "title": "Done",
+          "layout": "text",
+          "html": "<ul>\n<li>You can close this guide.</li>\n</ul>",
+          "images": []
+        }
+      ]
+    }
+  ]
+}

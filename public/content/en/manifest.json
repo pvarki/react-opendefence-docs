@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "locale": "en",
-  "generatedAt": "2026-06-10T00:00:00.000Z",
+  "generatedAt": "2026-06-10T20:50:48.593Z",
   "collections": [
     {
       "slug": "deploy-app",
@@ -18,101 +18,2960 @@
       "order": 1
     },
     {
+      "slug": "guides/mtx-guide",
+      "label": "MTX Guide",
+      "description": "MTX platform guide",
+      "section": "guides",
+      "order": 2
+    },
+    {
+      "slug": "guides/matrix-guide",
+      "label": "Matrix Guide",
+      "description": "Matrix platform guide",
+      "section": "guides",
+      "order": 3
+    },
+    {
+      "slug": "guides/cryptpad-guide",
+      "label": "CryptPad Guide",
+      "description": "CryptPad platform guide",
+      "section": "guides",
+      "order": 4
+    },
+    {
+      "slug": "wikis/tak",
+      "label": "TAK Wiki",
+      "description": "TAK technical reference",
+      "section": "wikis",
+      "order": 5
+    },
+    {
+      "slug": "wikis/mtx",
+      "label": "MTX Wiki",
+      "description": "MTX technical reference",
+      "section": "wikis",
+      "order": 6
+    },
+    {
       "slug": "dev",
       "label": "For Developers",
       "description": "Developer-focused documentation",
       "section": "dev",
-      "order": 2
+      "order": 7
     }
   ],
   "pages": [
     {
-      "id": "00000000-0000-4000-8000-000000000001",
-      "slug": "welcome-fixture01",
+      "id": "356a70b8-4ac4-470f-ae30-9a4249c7f989",
+      "slug": "android-MENReFAfCN",
       "collection": "deploy-app",
-      "title": "Welcome to Deploy App",
+      "title": "Android",
       "breadcrumb": [
-        "Welcome to Deploy App"
+        "Android"
       ],
-      "path": "/content/en/pages/deploy-app/welcome-fixture01.json",
-      "updatedAt": "2026-06-10T00:00:00.000Z",
+      "path": "/content/en/pages/deploy-app/android-MENReFAfCN.json",
+      "updatedAt": "2026-02-24T06:18:22.658Z",
       "order": 0
     },
     {
-      "id": "00000000-0000-4000-8000-000000000002",
-      "slug": "first-login-fixture02",
+      "id": "2faeed6e-fe27-422e-b1e1-cb29cdd8e609",
+      "slug": "user-guide-SNTomIhnLe",
       "collection": "deploy-app",
-      "title": "First login",
+      "title": "User Guide",
       "breadcrumb": [
-        "Getting started",
-        "First login"
+        "Android",
+        "User Guide"
       ],
-      "path": "/content/en/pages/deploy-app/first-login-fixture02.json",
-      "updatedAt": "2026-06-10T00:00:00.000Z",
+      "path": "/content/en/pages/deploy-app/user-guide-SNTomIhnLe.json",
+      "updatedAt": "2026-02-17T06:52:23.188Z",
       "order": 1
     },
     {
-      "id": "00000000-0000-4000-8000-000000000003",
-      "slug": "adding-users-fixture03",
+      "id": "336018e1-3455-48f4-8a6a-c28cd69b1812",
+      "slug": "joining-a-deploy-app-p9htrbBL4S",
       "collection": "deploy-app",
-      "title": "Adding users",
+      "title": "Joining a Deploy App",
       "breadcrumb": [
-        "Administration",
-        "Adding users"
+        "Android",
+        "User Guide",
+        "Joining a Deploy App"
       ],
-      "path": "/content/en/pages/deploy-app/adding-users-fixture03.json",
-      "updatedAt": "2026-06-10T00:00:00.000Z",
+      "path": "/content/en/pages/deploy-app/joining-a-deploy-app-p9htrbBL4S.json",
+      "updatedAt": "2026-02-25T07:25:59.146Z",
       "order": 2
     },
     {
-      "id": "00000000-0000-4000-8000-000000000004",
-      "slug": "external-services-fixture04",
+      "id": "5d6ca81c-c79b-4aff-b76d-9815d68191f1",
+      "slug": "using-applications-CsobZMZ45Q",
       "collection": "deploy-app",
-      "title": "Access external services",
+      "title": "Using applications",
       "breadcrumb": [
-        "Use",
-        "Access external services"
+        "Android",
+        "User Guide",
+        "Using applications"
       ],
-      "path": "/content/en/pages/deploy-app/external-services-fixture04.json",
-      "updatedAt": "2026-06-10T00:00:00.000Z",
+      "path": "/content/en/pages/deploy-app/using-applications-CsobZMZ45Q.json",
+      "updatedAt": "2026-02-25T07:28:56.761Z",
       "order": 3
     },
     {
-      "id": "00000000-0000-4000-8000-000000000011",
-      "slug": "tak-intro-fixture11",
-      "collection": "guides/tak-guide",
-      "title": "TAK — Introduction",
+      "id": "e7c97a4b-01e4-4937-93e9-f60581de1ac4",
+      "slug": "interface-4Ncp4affe9",
+      "collection": "deploy-app",
+      "title": "Interface",
       "breadcrumb": [
-        "TAK — Introduction"
+        "Android",
+        "User Guide",
+        "Interface"
       ],
-      "path": "/content/en/pages/guides/tak-guide/tak-intro-fixture11.json",
-      "updatedAt": "2026-06-10T00:00:00.000Z",
+      "path": "/content/en/pages/deploy-app/interface-4Ncp4affe9.json",
+      "updatedAt": "2026-02-25T07:30:57.612Z",
+      "order": 4
+    },
+    {
+      "id": "3d2e1e68-dcdc-4e50-b182-2da28816a36c",
+      "slug": "admin-guide-V5Hs1rBdRL",
+      "collection": "deploy-app",
+      "title": "Admin Guide",
+      "breadcrumb": [
+        "Android",
+        "Admin Guide"
+      ],
+      "path": "/content/en/pages/deploy-app/admin-guide-V5Hs1rBdRL.json",
+      "updatedAt": "2026-01-23T19:37:19.427Z",
+      "order": 5
+    },
+    {
+      "id": "805f9783-b0e0-4a79-95a9-b219ac6216ec",
+      "slug": "first-login-qwmPnmJsrF",
+      "collection": "deploy-app",
+      "title": "First Login",
+      "breadcrumb": [
+        "Android",
+        "Admin Guide",
+        "First Login"
+      ],
+      "path": "/content/en/pages/deploy-app/first-login-qwmPnmJsrF.json",
+      "updatedAt": "2026-02-25T07:33:17.264Z",
+      "order": 6
+    },
+    {
+      "id": "2ca47d8d-0c6b-48c7-ae93-5d8143ab10bf",
+      "slug": "adding-users-GhHcn1knBJ",
+      "collection": "deploy-app",
+      "title": "Adding Users",
+      "breadcrumb": [
+        "Android",
+        "Admin Guide",
+        "Adding Users"
+      ],
+      "path": "/content/en/pages/deploy-app/adding-users-GhHcn1knBJ.json",
+      "updatedAt": "2026-02-25T07:33:51.306Z",
+      "order": 7
+    },
+    {
+      "id": "8f1a4118-406e-448d-9354-f029be2c9576",
+      "slug": "managing-users-V110s1QF2l",
+      "collection": "deploy-app",
+      "title": "Managing Users",
+      "breadcrumb": [
+        "Android",
+        "Admin Guide",
+        "Managing Users"
+      ],
+      "path": "/content/en/pages/deploy-app/managing-users-V110s1QF2l.json",
+      "updatedAt": "2026-02-25T07:34:19.063Z",
+      "order": 8
+    },
+    {
+      "id": "dd6f5149-2000-47ed-a5af-cec0ab003039",
+      "slug": "access-external-services-ohReBmQJiu",
+      "collection": "deploy-app",
+      "title": "Access External Services",
+      "breadcrumb": [
+        "Android",
+        "Admin Guide",
+        "Access External Services"
+      ],
+      "path": "/content/en/pages/deploy-app/access-external-services-ohReBmQJiu.json",
+      "updatedAt": "2026-02-25T07:35:19.709Z",
+      "order": 9
+    },
+    {
+      "id": "ee7d4162-9d19-4631-9d5e-b8a0181bdeaf",
+      "slug": "ios-8ux4fDfFeI",
+      "collection": "deploy-app",
+      "title": "iOS",
+      "breadcrumb": [
+        "iOS"
+      ],
+      "path": "/content/en/pages/deploy-app/ios-8ux4fDfFeI.json",
+      "updatedAt": "2026-02-20T06:35:57.354Z",
+      "order": 10
+    },
+    {
+      "id": "ca191705-b936-4718-8fdc-6c575df29c7e",
+      "slug": "user-guide-8g9rzhpxcj",
+      "collection": "deploy-app",
+      "title": "User Guide",
+      "breadcrumb": [
+        "iOS",
+        "User Guide"
+      ],
+      "path": "/content/en/pages/deploy-app/user-guide-8g9rzhpxcj.json",
+      "updatedAt": "2026-02-17T16:45:30.446Z",
+      "order": 11
+    },
+    {
+      "id": "18594b45-24a4-48d8-b9a0-ac3aa7293be1",
+      "slug": "join-a-deploy-app-f7TuSbNQId",
+      "collection": "deploy-app",
+      "title": "Join a Deploy App",
+      "breadcrumb": [
+        "iOS",
+        "User Guide",
+        "Join a Deploy App"
+      ],
+      "path": "/content/en/pages/deploy-app/join-a-deploy-app-f7TuSbNQId.json",
+      "updatedAt": "2026-02-25T07:36:12.445Z",
+      "order": 12
+    },
+    {
+      "id": "ce012a46-ec4f-4e51-8288-ab0f4750bee9",
+      "slug": "using-applications-fNlwcUs5fv",
+      "collection": "deploy-app",
+      "title": "Using applications",
+      "breadcrumb": [
+        "iOS",
+        "User Guide",
+        "Using applications"
+      ],
+      "path": "/content/en/pages/deploy-app/using-applications-fNlwcUs5fv.json",
+      "updatedAt": "2026-01-23T20:08:10.314Z",
+      "order": 13
+    },
+    {
+      "id": "20c5c9af-8980-431a-8ec5-9f6d408b93b3",
+      "slug": "admin-guide-H0sjVgEhja",
+      "collection": "deploy-app",
+      "title": "Admin Guide",
+      "breadcrumb": [
+        "iOS",
+        "Admin Guide"
+      ],
+      "path": "/content/en/pages/deploy-app/admin-guide-H0sjVgEhja.json",
+      "updatedAt": "2026-01-23T20:07:59.900Z",
+      "order": 14
+    },
+    {
+      "id": "bb5ab02d-2a87-4806-bca4-24752d189eb6",
+      "slug": "admin-first-login-pij4XWfCWf",
+      "collection": "deploy-app",
+      "title": "Admin First Login",
+      "breadcrumb": [
+        "iOS",
+        "Admin Guide",
+        "Admin First Login"
+      ],
+      "path": "/content/en/pages/deploy-app/admin-first-login-pij4XWfCWf.json",
+      "updatedAt": "2026-02-18T05:45:37.136Z",
+      "order": 15
+    },
+    {
+      "id": "0bf61632-c104-4acb-893e-0aa327b03154",
+      "slug": "add-users-to-deploy-app-LiZ7mcZXR9",
+      "collection": "deploy-app",
+      "title": "Add users to Deploy App",
+      "breadcrumb": [
+        "iOS",
+        "Admin Guide",
+        "Add users to Deploy App"
+      ],
+      "path": "/content/en/pages/deploy-app/add-users-to-deploy-app-LiZ7mcZXR9.json",
+      "updatedAt": "2026-01-23T20:08:00.066Z",
+      "order": 16
+    },
+    {
+      "id": "cbe54f33-983a-48e3-a087-5c4af02c0d0e",
+      "slug": "manage-users-in-deploy-app-pMXvqxrFQn",
+      "collection": "deploy-app",
+      "title": "Manage Users in Deploy App",
+      "breadcrumb": [
+        "iOS",
+        "Admin Guide",
+        "Manage Users in Deploy App"
+      ],
+      "path": "/content/en/pages/deploy-app/manage-users-in-deploy-app-pMXvqxrFQn.json",
+      "updatedAt": "2026-01-23T20:08:00.016Z",
+      "order": 17
+    },
+    {
+      "id": "5529b169-9c3a-42be-9c8d-78559e5fb758",
+      "slug": "troubleshooting-CxXaxweQeg",
+      "collection": "deploy-app",
+      "title": "Troubleshooting",
+      "breadcrumb": [
+        "iOS",
+        "Admin Guide",
+        "Troubleshooting"
+      ],
+      "path": "/content/en/pages/deploy-app/troubleshooting-CxXaxweQeg.json",
+      "updatedAt": "2026-01-23T20:07:59.959Z",
+      "order": 18
+    },
+    {
+      "id": "8e3fdeae-6802-4988-926f-474a171eeb67",
+      "slug": "windows-7LrSmQmqQ6",
+      "collection": "deploy-app",
+      "title": "Windows",
+      "breadcrumb": [
+        "Windows"
+      ],
+      "path": "/content/en/pages/deploy-app/windows-7LrSmQmqQ6.json",
+      "updatedAt": "2026-02-20T06:36:00.358Z",
+      "order": 19
+    },
+    {
+      "id": "2f09a3aa-792a-48b7-ae52-31de50e29426",
+      "slug": "user-guide-irnHx8wSE7",
+      "collection": "deploy-app",
+      "title": "User Guide",
+      "breadcrumb": [
+        "Windows",
+        "User Guide"
+      ],
+      "path": "/content/en/pages/deploy-app/user-guide-irnHx8wSE7.json",
+      "updatedAt": "2026-02-17T16:47:32.384Z",
+      "order": 20
+    },
+    {
+      "id": "d302b69b-e44c-430a-bca6-93ee7df4b55c",
+      "slug": "join-a-deploy-app-Ns73TcVodz",
+      "collection": "deploy-app",
+      "title": "Join a Deploy App",
+      "breadcrumb": [
+        "Windows",
+        "User Guide",
+        "Join a Deploy App"
+      ],
+      "path": "/content/en/pages/deploy-app/join-a-deploy-app-Ns73TcVodz.json",
+      "updatedAt": "2026-02-25T07:36:23.881Z",
+      "order": 21
+    },
+    {
+      "id": "903be4f7-49c7-4f6b-ae46-74f006ff8dbc",
+      "slug": "using-applications-j9IwlemcTo",
+      "collection": "deploy-app",
+      "title": "Using applications",
+      "breadcrumb": [
+        "Windows",
+        "User Guide",
+        "Using applications"
+      ],
+      "path": "/content/en/pages/deploy-app/using-applications-j9IwlemcTo.json",
+      "updatedAt": "2026-01-23T20:08:59.764Z",
+      "order": 22
+    },
+    {
+      "id": "79e0eb88-2060-4672-b65c-0920c8a25de6",
+      "slug": "admin-guide-vhfls732g4",
+      "collection": "deploy-app",
+      "title": "Admin Guide",
+      "breadcrumb": [
+        "Windows",
+        "Admin Guide"
+      ],
+      "path": "/content/en/pages/deploy-app/admin-guide-vhfls732g4.json",
+      "updatedAt": "2026-01-23T20:08:17.644Z",
+      "order": 23
+    },
+    {
+      "id": "8fae902e-8e95-47a1-9a66-c6d0d1777f2f",
+      "slug": "admin-first-login-1wjrnFERNt",
+      "collection": "deploy-app",
+      "title": "Admin First Login",
+      "breadcrumb": [
+        "Windows",
+        "Admin Guide",
+        "Admin First Login"
+      ],
+      "path": "/content/en/pages/deploy-app/admin-first-login-1wjrnFERNt.json",
+      "updatedAt": "2026-02-18T13:22:09.062Z",
+      "order": 24
+    },
+    {
+      "id": "e4752b45-5fc1-46dc-8fcc-d9d5db427419",
+      "slug": "add-users-to-deploy-app-eSD3JH0iqL",
+      "collection": "deploy-app",
+      "title": "Add users to Deploy App",
+      "breadcrumb": [
+        "Windows",
+        "Admin Guide",
+        "Add users to Deploy App"
+      ],
+      "path": "/content/en/pages/deploy-app/add-users-to-deploy-app-eSD3JH0iqL.json",
+      "updatedAt": "2026-01-23T20:08:17.806Z",
+      "order": 25
+    },
+    {
+      "id": "c782ae88-8b35-4761-bd7c-d3beabea9c2b",
+      "slug": "manage-users-in-deploy-app-NtJmpwczVJ",
+      "collection": "deploy-app",
+      "title": "Manage Users in Deploy App",
+      "breadcrumb": [
+        "Windows",
+        "Admin Guide",
+        "Manage Users in Deploy App"
+      ],
+      "path": "/content/en/pages/deploy-app/manage-users-in-deploy-app-NtJmpwczVJ.json",
+      "updatedAt": "2026-01-23T20:08:17.760Z",
+      "order": 26
+    },
+    {
+      "id": "9c34429c-7e17-4808-88d0-2554a44064c7",
+      "slug": "troubleshooting-TBvhuT5rIM",
+      "collection": "deploy-app",
+      "title": "Troubleshooting",
+      "breadcrumb": [
+        "Windows",
+        "Admin Guide",
+        "Troubleshooting"
+      ],
+      "path": "/content/en/pages/deploy-app/troubleshooting-TBvhuT5rIM.json",
+      "updatedAt": "2026-01-23T20:08:17.712Z",
+      "order": 27
+    },
+    {
+      "id": "64905c3d-3a72-4ab6-9d76-025444037001",
+      "slug": "linux-JmHAcb7bTi",
+      "collection": "deploy-app",
+      "title": "Linux",
+      "breadcrumb": [
+        "Linux"
+      ],
+      "path": "/content/en/pages/deploy-app/linux-JmHAcb7bTi.json",
+      "updatedAt": "2026-02-20T06:36:03.312Z",
+      "order": 28
+    },
+    {
+      "id": "7d4e5b5e-d362-4d2c-8f8b-d8d0afd096ea",
+      "slug": "user-guide-6StTnmEqiQ",
+      "collection": "deploy-app",
+      "title": "User Guide",
+      "breadcrumb": [
+        "Linux",
+        "User Guide"
+      ],
+      "path": "/content/en/pages/deploy-app/user-guide-6StTnmEqiQ.json",
+      "updatedAt": "2026-02-17T16:47:09.131Z",
+      "order": 29
+    },
+    {
+      "id": "86494ef3-0515-4b60-b5e4-33aad523e378",
+      "slug": "join-a-deploy-app-BFVDjvnboR",
+      "collection": "deploy-app",
+      "title": "Join a Deploy App",
+      "breadcrumb": [
+        "Linux",
+        "User Guide",
+        "Join a Deploy App"
+      ],
+      "path": "/content/en/pages/deploy-app/join-a-deploy-app-BFVDjvnboR.json",
+      "updatedAt": "2026-02-25T07:36:31.156Z",
+      "order": 30
+    },
+    {
+      "id": "58711dc7-81d4-47b1-8166-2e2c56cc0a18",
+      "slug": "using-applications-NYYhktcNaX",
+      "collection": "deploy-app",
+      "title": "Using applications",
+      "breadcrumb": [
+        "Linux",
+        "User Guide",
+        "Using applications"
+      ],
+      "path": "/content/en/pages/deploy-app/using-applications-NYYhktcNaX.json",
+      "updatedAt": "2026-01-23T20:08:39.896Z",
+      "order": 31
+    },
+    {
+      "id": "2906fdbe-f7ff-48ca-953a-5f670476cbc9",
+      "slug": "admin-guide-DA32dON96v",
+      "collection": "deploy-app",
+      "title": "Admin Guide",
+      "breadcrumb": [
+        "Linux",
+        "Admin Guide"
+      ],
+      "path": "/content/en/pages/deploy-app/admin-guide-DA32dON96v.json",
+      "updatedAt": "2026-01-23T20:09:16.762Z",
+      "order": 32
+    },
+    {
+      "id": "c2be775e-c656-49a5-8298-db0fb7f69912",
+      "slug": "admin-first-login-odAZzS2U6W",
+      "collection": "deploy-app",
+      "title": "Admin First Login",
+      "breadcrumb": [
+        "Linux",
+        "Admin Guide",
+        "Admin First Login"
+      ],
+      "path": "/content/en/pages/deploy-app/admin-first-login-odAZzS2U6W.json",
+      "updatedAt": "2026-02-18T13:22:24.264Z",
+      "order": 33
+    },
+    {
+      "id": "badfe684-4e82-437b-b572-4e162605b819",
+      "slug": "add-users-to-deploy-app-mnujIZSHKL",
+      "collection": "deploy-app",
+      "title": "Add users to Deploy App",
+      "breadcrumb": [
+        "Linux",
+        "Admin Guide",
+        "Add users to Deploy App"
+      ],
+      "path": "/content/en/pages/deploy-app/add-users-to-deploy-app-mnujIZSHKL.json",
+      "updatedAt": "2026-01-23T20:09:16.914Z",
+      "order": 34
+    },
+    {
+      "id": "1ec3c6a6-de4c-4198-87db-320d7034f5ad",
+      "slug": "manage-users-in-deploy-app-GANaLUFNSQ",
+      "collection": "deploy-app",
+      "title": "Manage Users in Deploy App",
+      "breadcrumb": [
+        "Linux",
+        "Admin Guide",
+        "Manage Users in Deploy App"
+      ],
+      "path": "/content/en/pages/deploy-app/manage-users-in-deploy-app-GANaLUFNSQ.json",
+      "updatedAt": "2026-01-23T20:09:16.869Z",
+      "order": 35
+    },
+    {
+      "id": "51b1052a-0069-48d4-902e-723bf4e0aead",
+      "slug": "troubleshooting-Oo8uDQbEZi",
+      "collection": "deploy-app",
+      "title": "Troubleshooting",
+      "breadcrumb": [
+        "Linux",
+        "Admin Guide",
+        "Troubleshooting"
+      ],
+      "path": "/content/en/pages/deploy-app/troubleshooting-Oo8uDQbEZi.json",
+      "updatedAt": "2026-01-23T20:09:16.822Z",
+      "order": 36
+    },
+    {
+      "id": "408b4bff-52ff-4884-a66c-31a112d5546a",
+      "slug": "macos-6fg0DsaF5B",
+      "collection": "deploy-app",
+      "title": "MacOS",
+      "breadcrumb": [
+        "MacOS"
+      ],
+      "path": "/content/en/pages/deploy-app/macos-6fg0DsaF5B.json",
+      "updatedAt": "2026-02-20T06:36:07.433Z",
+      "order": 37
+    },
+    {
+      "id": "91763134-8ab2-4b5d-903c-eec21c8b182e",
+      "slug": "user-guide-yEohm3XLal",
+      "collection": "deploy-app",
+      "title": "User Guide",
+      "breadcrumb": [
+        "MacOS",
+        "User Guide"
+      ],
+      "path": "/content/en/pages/deploy-app/user-guide-yEohm3XLal.json",
+      "updatedAt": "2026-02-17T16:47:20.121Z",
+      "order": 38
+    },
+    {
+      "id": "eb8c5e3c-3fb2-4d0f-974e-27b3140d861e",
+      "slug": "join-a-deploy-app-OrrLFQhem6",
+      "collection": "deploy-app",
+      "title": "Join a Deploy App",
+      "breadcrumb": [
+        "MacOS",
+        "User Guide",
+        "Join a Deploy App"
+      ],
+      "path": "/content/en/pages/deploy-app/join-a-deploy-app-OrrLFQhem6.json",
+      "updatedAt": "2026-02-27T08:34:36.287Z",
+      "order": 39
+    },
+    {
+      "id": "9bcd8abb-96b0-46a2-be2c-51c07b4be6ad",
+      "slug": "using-applications-VTXa01ztks",
+      "collection": "deploy-app",
+      "title": "Using applications",
+      "breadcrumb": [
+        "MacOS",
+        "User Guide",
+        "Using applications"
+      ],
+      "path": "/content/en/pages/deploy-app/using-applications-VTXa01ztks.json",
+      "updatedAt": "2026-01-23T20:08:51.211Z",
+      "order": 40
+    },
+    {
+      "id": "f1286f39-666b-46c9-be07-a497138d87dc",
+      "slug": "admin-guide-Jf06VjsJzu",
+      "collection": "deploy-app",
+      "title": "Admin Guide",
+      "breadcrumb": [
+        "MacOS",
+        "Admin Guide"
+      ],
+      "path": "/content/en/pages/deploy-app/admin-guide-Jf06VjsJzu.json",
+      "updatedAt": "2026-01-23T20:09:26.417Z",
+      "order": 41
+    },
+    {
+      "id": "b1a687ff-125c-47fd-a28d-6e7c83ce7da5",
+      "slug": "admin-first-login-uvcV5pEinh",
+      "collection": "deploy-app",
+      "title": "Admin First Login",
+      "breadcrumb": [
+        "MacOS",
+        "Admin Guide",
+        "Admin First Login"
+      ],
+      "path": "/content/en/pages/deploy-app/admin-first-login-uvcV5pEinh.json",
+      "updatedAt": "2026-02-18T13:22:31.867Z",
+      "order": 42
+    },
+    {
+      "id": "5e07011f-2a46-41e4-bf81-86a752693c8a",
+      "slug": "add-users-to-deploy-app-8Wa87CThza",
+      "collection": "deploy-app",
+      "title": "Add users to Deploy App",
+      "breadcrumb": [
+        "MacOS",
+        "Admin Guide",
+        "Add users to Deploy App"
+      ],
+      "path": "/content/en/pages/deploy-app/add-users-to-deploy-app-8Wa87CThza.json",
+      "updatedAt": "2026-01-23T20:09:26.781Z",
+      "order": 43
+    },
+    {
+      "id": "ea83e7e2-bb5d-43e4-a9f4-b10545365f78",
+      "slug": "manage-users-in-deploy-app-ecR8K2nIeC",
+      "collection": "deploy-app",
+      "title": "Manage Users in Deploy App",
+      "breadcrumb": [
+        "MacOS",
+        "Admin Guide",
+        "Manage Users in Deploy App"
+      ],
+      "path": "/content/en/pages/deploy-app/manage-users-in-deploy-app-ecR8K2nIeC.json",
+      "updatedAt": "2026-01-23T20:09:26.551Z",
+      "order": 44
+    },
+    {
+      "id": "2f509c45-7c0a-47b1-84c7-595488dc67c0",
+      "slug": "troubleshooting-adGWENRO1Q",
+      "collection": "deploy-app",
+      "title": "Troubleshooting",
+      "breadcrumb": [
+        "MacOS",
+        "Admin Guide",
+        "Troubleshooting"
+      ],
+      "path": "/content/en/pages/deploy-app/troubleshooting-adGWENRO1Q.json",
+      "updatedAt": "2026-01-23T20:09:26.495Z",
+      "order": 45
+    },
+    {
+      "id": "769c51c9-7f73-429e-aaf5-19240034b86c",
+      "slug": "deploy-app-tak-aFY9LCZCf0",
+      "collection": "guides/tak-guide",
+      "title": "Deploy App - TAK",
+      "breadcrumb": [
+        "Deploy App - TAK"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/deploy-app-tak-aFY9LCZCf0.json",
+      "updatedAt": "2026-03-08T05:03:57.916Z",
       "order": 0
     },
     {
-      "id": "00000000-0000-4000-8000-000000000012",
-      "slug": "atak-install-fixture12",
+      "id": "1dce6fa1-0bff-48cf-86ab-531187b9dd3d",
+      "slug": "tak-clients-IGYQEK6iZl",
       "collection": "guides/tak-guide",
-      "title": "Install ATAK on Android",
+      "title": "TAK Clients",
       "breadcrumb": [
-        "Android",
-        "Install ATAK"
+        "TAK Clients"
       ],
-      "path": "/content/en/pages/guides/tak-guide/atak-install-fixture12.json",
-      "updatedAt": "2026-06-10T00:00:00.000Z",
+      "path": "/content/en/pages/guides/tak-guide/tak-clients-IGYQEK6iZl.json",
+      "updatedAt": "2026-02-20T06:36:25.783Z",
       "order": 1
     },
     {
-      "id": "00000000-0000-4000-8000-000000000021",
-      "slug": "architecture-fixture21",
-      "collection": "dev",
-      "title": "Stack architecture",
+      "id": "685f6f0f-e7ca-4ba3-807f-568582663e95",
+      "slug": "atak-sGxUIXpQlU",
+      "collection": "guides/tak-guide",
+      "title": "ATAK",
       "breadcrumb": [
-        "Stack architecture"
+        "TAK Clients",
+        "ATAK"
       ],
-      "path": "/content/en/pages/dev/architecture-fixture21.json",
-      "updatedAt": "2026-06-10T00:00:00.000Z",
+      "path": "/content/en/pages/guides/tak-guide/atak-sGxUIXpQlU.json",
+      "updatedAt": "2026-02-24T06:23:31.623Z",
+      "order": 2
+    },
+    {
+      "id": "709bc302-315b-4afe-889c-8f6ada097e27",
+      "slug": "start-FxbN2wcFUs",
+      "collection": "guides/tak-guide",
+      "title": "Start",
+      "breadcrumb": [
+        "TAK Clients",
+        "ATAK",
+        "Start"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/start-FxbN2wcFUs.json",
+      "updatedAt": "2026-02-20T07:28:52.492Z",
+      "order": 3
+    },
+    {
+      "id": "9870d106-c7bf-4602-a929-1a9fa4ec777c",
+      "slug": "what-is-tak-hZw2wUmL7g",
+      "collection": "guides/tak-guide",
+      "title": "What is TAK?",
+      "breadcrumb": [
+        "TAK Clients",
+        "ATAK",
+        "Start",
+        "What is TAK?"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/what-is-tak-hZw2wUmL7g.json",
+      "updatedAt": "2026-02-28T11:12:46.806Z",
+      "order": 4
+    },
+    {
+      "id": "45a3e50c-b7c2-45d3-927d-bf2e2d97cbbf",
+      "slug": "start-from-download-bJC3Opax4P",
+      "collection": "guides/tak-guide",
+      "title": "Start from Download",
+      "breadcrumb": [
+        "TAK Clients",
+        "ATAK",
+        "Start",
+        "Start from Download"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/start-from-download-bJC3Opax4P.json",
+      "updatedAt": "2026-02-28T11:12:50.417Z",
+      "order": 5
+    },
+    {
+      "id": "c8842f7a-f533-4bfe-9027-88f165d16ddb",
+      "slug": "importing-server-connection-PQ4dCV2SYR",
+      "collection": "guides/tak-guide",
+      "title": "Importing Server Connection",
+      "breadcrumb": [
+        "TAK Clients",
+        "ATAK",
+        "Start",
+        "Importing Server Connection"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/importing-server-connection-PQ4dCV2SYR.json",
+      "updatedAt": "2026-02-28T11:12:52.249Z",
+      "order": 6
+    },
+    {
+      "id": "04b28f7b-f48f-4361-b9c9-f777dee2ed00",
+      "slug": "load-atak-plugins-xBeVkYsFjI",
+      "collection": "guides/tak-guide",
+      "title": "Load ATAK Plugins",
+      "breadcrumb": [
+        "TAK Clients",
+        "ATAK",
+        "Start",
+        "Load ATAK Plugins"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/load-atak-plugins-xBeVkYsFjI.json",
+      "updatedAt": "2026-02-28T11:12:53.977Z",
+      "order": 7
+    },
+    {
+      "id": "73d4d56f-a6d4-4819-8936-d3ca44258e82",
+      "slug": "basic-features-pDRdN25Lk6",
+      "collection": "guides/tak-guide",
+      "title": "Basic Features",
+      "breadcrumb": [
+        "TAK Clients",
+        "ATAK",
+        "Basic Features"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/basic-features-pDRdN25Lk6.json",
+      "updatedAt": "2025-12-20T14:53:35.581Z",
+      "order": 8
+    },
+    {
+      "id": "82c77545-7b47-4c8a-bf4b-2701a1bb3943",
+      "slug": "basic-view-tools-and-toolbar-juXbYsGMih",
+      "collection": "guides/tak-guide",
+      "title": "Basic view, tools and toolbar",
+      "breadcrumb": [
+        "TAK Clients",
+        "ATAK",
+        "Basic Features",
+        "Basic view, tools and toolbar"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/basic-view-tools-and-toolbar-juXbYsGMih.json",
+      "updatedAt": "2026-02-28T11:12:57.526Z",
+      "order": 9
+    },
+    {
+      "id": "6bf5c875-5082-4f7c-b28c-26b5eea8b0c5",
+      "slug": "blue-force-tracking-vZTVlgAzX8",
+      "collection": "guides/tak-guide",
+      "title": "Blue force tracking",
+      "breadcrumb": [
+        "TAK Clients",
+        "ATAK",
+        "Basic Features",
+        "Blue force tracking"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/blue-force-tracking-vZTVlgAzX8.json",
+      "updatedAt": "2026-02-28T11:12:59.807Z",
+      "order": 10
+    },
+    {
+      "id": "ce3ace12-abf3-4d66-a94b-8a5cbccfeebb",
+      "slug": "feeds-with-data-sync-thmayduqMx",
+      "collection": "guides/tak-guide",
+      "title": "Feeds with Data Sync",
+      "breadcrumb": [
+        "TAK Clients",
+        "ATAK",
+        "Basic Features",
+        "Feeds with Data Sync"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/feeds-with-data-sync-thmayduqMx.json",
+      "updatedAt": "2026-02-28T11:13:05.697Z",
+      "order": 11
+    },
+    {
+      "id": "ee9de6aa-bd12-414f-9e31-cfc8ecddda21",
+      "slug": "point-dropper-markers-lsYmFrTvqH",
+      "collection": "guides/tak-guide",
+      "title": "Point Dropper - Markers",
+      "breadcrumb": [
+        "TAK Clients",
+        "ATAK",
+        "Basic Features",
+        "Point Dropper - Markers"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/point-dropper-markers-lsYmFrTvqH.json",
+      "updatedAt": "2026-02-28T11:13:08.018Z",
+      "order": 12
+    },
+    {
+      "id": "ac6ec0b2-a62a-4435-ab5d-32cb374cc4c1",
+      "slug": "point-dropper-quick-pic-gxAsonzSXL",
+      "collection": "guides/tak-guide",
+      "title": "Point Dropper - Quick Pic",
+      "breadcrumb": [
+        "TAK Clients",
+        "ATAK",
+        "Basic Features",
+        "Point Dropper - Quick Pic"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/point-dropper-quick-pic-gxAsonzSXL.json",
+      "updatedAt": "2026-02-28T11:13:19.176Z",
+      "order": 13
+    },
+    {
+      "id": "1ddce881-2116-41eb-9980-f201fcc06f27",
+      "slug": "geochat-SMWfbwNItT",
+      "collection": "guides/tak-guide",
+      "title": "GeoChat",
+      "breadcrumb": [
+        "TAK Clients",
+        "ATAK",
+        "Basic Features",
+        "GeoChat"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/geochat-SMWfbwNItT.json",
+      "updatedAt": "2026-02-28T11:13:22.399Z",
+      "order": 14
+    },
+    {
+      "id": "a9de8b5d-4c35-4246-b0fe-7aeade6054ec",
+      "slug": "clear-content-lzrtCD0MdO",
+      "collection": "guides/tak-guide",
+      "title": "Clear Content",
+      "breadcrumb": [
+        "TAK Clients",
+        "ATAK",
+        "Basic Features",
+        "Clear Content"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/clear-content-lzrtCD0MdO.json",
+      "updatedAt": "2026-02-28T11:13:25.165Z",
+      "order": 15
+    },
+    {
+      "id": "0b81d9db-94b1-4474-a58a-6e46f27d3951",
+      "slug": "advanced-features-w8JvOrLVwe",
+      "collection": "guides/tak-guide",
+      "title": "Advanced Features",
+      "breadcrumb": [
+        "TAK Clients",
+        "ATAK",
+        "Advanced Features"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/advanced-features-w8JvOrLVwe.json",
+      "updatedAt": "2026-02-21T11:16:57.831Z",
+      "order": 16
+    },
+    {
+      "id": "8486d4e3-a42a-4478-b758-080f7033d3c5",
+      "slug": "downloading-maps-for-offline-use-AhUMNQ8mmS",
+      "collection": "guides/tak-guide",
+      "title": "Downloading Maps for Offline use",
+      "breadcrumb": [
+        "TAK Clients",
+        "ATAK",
+        "Advanced Features",
+        "Downloading Maps for Offline use"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/downloading-maps-for-offline-use-AhUMNQ8mmS.json",
+      "updatedAt": "2026-02-21T11:17:05.403Z",
+      "order": 17
+    },
+    {
+      "id": "8ff9d3fc-0a1c-4313-9458-c1a41be2f765",
+      "slug": "overlay-manager-how-to-manage-the-views-BVRnLCM7ME",
+      "collection": "guides/tak-guide",
+      "title": "Overlay Manager - How to manage the views",
+      "breadcrumb": [
+        "TAK Clients",
+        "ATAK",
+        "Advanced Features",
+        "Overlay Manager - How to manage the views"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/overlay-manager-how-to-manage-the-views-BVRnLCM7ME.json",
+      "updatedAt": "2026-02-21T11:17:10.271Z",
+      "order": 18
+    },
+    {
+      "id": "4f48651a-6513-4ec9-a22b-af1363663a5d",
+      "slug": "how-to-manage-atak-tools-and-toolbars-PbkLQcvrCe",
+      "collection": "guides/tak-guide",
+      "title": "How to manage ATAK Tools and Toolbars",
+      "breadcrumb": [
+        "TAK Clients",
+        "ATAK",
+        "Advanced Features",
+        "How to manage ATAK Tools and Toolbars"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/how-to-manage-atak-tools-and-toolbars-PbkLQcvrCe.json",
+      "updatedAt": "2026-02-21T11:17:25.786Z",
+      "order": 19
+    },
+    {
+      "id": "f30f10bf-0f99-4292-9930-56eaf6af5173",
+      "slug": "create-routes-and-use-vns-uymW3nDSPE",
+      "collection": "guides/tak-guide",
+      "title": "Create Routes and use VNS",
+      "breadcrumb": [
+        "TAK Clients",
+        "ATAK",
+        "Advanced Features",
+        "Create Routes and use VNS"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/create-routes-and-use-vns-uymW3nDSPE.json",
+      "updatedAt": "2026-02-21T11:17:31.428Z",
+      "order": 20
+    },
+    {
+      "id": "9bb35061-2c64-4718-9273-c11847dfa322",
+      "slug": "create-manage-feeds-z2CpC9Lpan",
+      "collection": "guides/tak-guide",
+      "title": "Create & Manage Feeds",
+      "breadcrumb": [
+        "TAK Clients",
+        "ATAK",
+        "Advanced Features",
+        "Create & Manage Feeds"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/create-manage-feeds-z2CpC9Lpan.json",
+      "updatedAt": "2026-02-28T11:13:36.157Z",
+      "order": 21
+    },
+    {
+      "id": "2676ebbb-83f4-4569-a7a2-7050395f28c8",
+      "slug": "draw-share-plans-fxjT3hDZ5p",
+      "collection": "guides/tak-guide",
+      "title": "Draw & share Plans",
+      "breadcrumb": [
+        "TAK Clients",
+        "ATAK",
+        "Advanced Features",
+        "Draw & share Plans"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/draw-share-plans-fxjT3hDZ5p.json",
+      "updatedAt": "2026-02-21T11:17:43.549Z",
+      "order": 22
+    },
+    {
+      "id": "9e276016-9095-4d4d-964b-871709eac99e",
+      "slug": "lasso-to-add-into-feed-Mt0Vykodea",
+      "collection": "guides/tak-guide",
+      "title": "Lasso to add into Feed",
+      "breadcrumb": [
+        "TAK Clients",
+        "ATAK",
+        "Advanced Features",
+        "Lasso to add into Feed"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/lasso-to-add-into-feed-Mt0Vykodea.json",
+      "updatedAt": "2026-02-28T11:13:49.510Z",
+      "order": 23
+    },
+    {
+      "id": "7df31ecb-1092-4d8c-9013-b168feec84ba",
+      "slug": "geofences-wgaLkSEvef",
+      "collection": "guides/tak-guide",
+      "title": "Geofences",
+      "breadcrumb": [
+        "TAK Clients",
+        "ATAK",
+        "Advanced Features",
+        "Geofences"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/geofences-wgaLkSEvef.json",
+      "updatedAt": "2026-02-28T11:13:55.810Z",
+      "order": 24
+    },
+    {
+      "id": "1c9994ff-4049-4eef-a7ee-2b8f23f749fc",
+      "slug": "usage-by-role-2F9bOBgUmG",
+      "collection": "guides/tak-guide",
+      "title": "Usage by Role",
+      "breadcrumb": [
+        "TAK Clients",
+        "ATAK",
+        "Usage by Role"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/usage-by-role-2F9bOBgUmG.json",
+      "updatedAt": "2026-01-23T20:27:01.428Z",
+      "order": 25
+    },
+    {
+      "id": "0e075790-c86e-4330-9e1f-3d43298c5fce",
+      "slug": "overview-CVNzKhRcKY",
+      "collection": "guides/tak-guide",
+      "title": "Overview",
+      "breadcrumb": [
+        "TAK Clients",
+        "ATAK",
+        "Usage by Role",
+        "Overview"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/overview-CVNzKhRcKY.json",
+      "updatedAt": "2026-04-12T10:05:02.164Z",
+      "order": 26
+    },
+    {
+      "id": "9fff4975-111b-45a3-9bd8-ba954b6fede0",
+      "slug": "fighter-Jaxg9FOHAs",
+      "collection": "guides/tak-guide",
+      "title": "Fighter",
+      "breadcrumb": [
+        "TAK Clients",
+        "ATAK",
+        "Usage by Role",
+        "Fighter"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/fighter-Jaxg9FOHAs.json",
+      "updatedAt": "2026-04-12T10:05:10.240Z",
+      "order": 27
+    },
+    {
+      "id": "a3c77bb3-791e-4dcb-8ce1-bfc6850119e0",
+      "slug": "use-geochat-for-comms-s20PZmRGw8",
+      "collection": "guides/tak-guide",
+      "title": "Use Geochat for comms",
+      "breadcrumb": [
+        "TAK Clients",
+        "ATAK",
+        "Usage by Role",
+        "Fighter",
+        "Use Geochat for comms"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/use-geochat-for-comms-s20PZmRGw8.json",
+      "updatedAt": "2026-04-12T10:05:24.996Z",
+      "order": 28
+    },
+    {
+      "id": "c64f9f4e-3647-40a8-b468-20adc6db40c3",
+      "slug": "use-recon-feed-1eKYHfIBys",
+      "collection": "guides/tak-guide",
+      "title": "Use RECON Feed",
+      "breadcrumb": [
+        "TAK Clients",
+        "ATAK",
+        "Usage by Role",
+        "Fighter",
+        "Use RECON Feed"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/use-recon-feed-1eKYHfIBys.json",
+      "updatedAt": "2026-04-12T10:05:30.082Z",
+      "order": 29
+    },
+    {
+      "id": "4b2c5185-db41-4594-8d0e-6e289c8dda78",
+      "slug": "command-post-jEe9wSs29A",
+      "collection": "guides/tak-guide",
+      "title": "Command Post",
+      "breadcrumb": [
+        "TAK Clients",
+        "ATAK",
+        "Usage by Role",
+        "Command Post"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/command-post-jEe9wSs29A.json",
+      "updatedAt": "2026-02-28T11:14:27.044Z",
+      "order": 30
+    },
+    {
+      "id": "7304adaf-3380-4d82-b27c-57f4b362887e",
+      "slug": "recon-feed-management-y1O0x1g2sf",
+      "collection": "guides/tak-guide",
+      "title": "RECON Feed Management",
+      "breadcrumb": [
+        "TAK Clients",
+        "ATAK",
+        "Usage by Role",
+        "Command Post",
+        "RECON Feed Management"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/recon-feed-management-y1O0x1g2sf.json",
+      "updatedAt": "2026-02-28T11:14:24.245Z",
+      "order": 31
+    },
+    {
+      "id": "0cea7c7c-fac9-410d-91ef-30bfb8df4675",
+      "slug": "supported-plugins-XdDLDnS5CE",
+      "collection": "guides/tak-guide",
+      "title": "Supported Plugins",
+      "breadcrumb": [
+        "TAK Clients",
+        "ATAK",
+        "Supported Plugins"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/supported-plugins-XdDLDnS5CE.json",
+      "updatedAt": "2025-12-05T22:06:21.332Z",
+      "order": 32
+    },
+    {
+      "id": "46d6af66-24b1-48f2-be29-eba6d30b8326",
+      "slug": "uastool-HDZFE1QhVT",
+      "collection": "guides/tak-guide",
+      "title": "Uastool",
+      "breadcrumb": [
+        "TAK Clients",
+        "ATAK",
+        "Supported Plugins",
+        "Uastool"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/uastool-HDZFE1QhVT.json",
+      "updatedAt": "2026-04-12T10:06:09.700Z",
+      "order": 33
+    },
+    {
+      "id": "28903747-f31c-424e-b7e5-7a3a70cd6648",
+      "slug": "troubleshooting-IC3Nd5qZHr",
+      "collection": "guides/tak-guide",
+      "title": "Troubleshooting",
+      "breadcrumb": [
+        "TAK Clients",
+        "ATAK",
+        "Troubleshooting"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/troubleshooting-IC3Nd5qZHr.json",
+      "updatedAt": "2026-04-12T10:06:13.891Z",
+      "order": 34
+    },
+    {
+      "id": "2797bf1c-40d6-43ca-8f4c-9314097ee396",
+      "slug": "wintak-w8mKUfaRBP",
+      "collection": "guides/tak-guide",
+      "title": "WinTAK",
+      "breadcrumb": [
+        "TAK Clients",
+        "WinTAK"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/wintak-w8mKUfaRBP.json",
+      "updatedAt": "2026-02-24T06:32:32.478Z",
+      "order": 35
+    },
+    {
+      "id": "caf39d18-218e-469d-9270-ee49dc7b1cbe",
+      "slug": "start-gF8MDfsdW9",
+      "collection": "guides/tak-guide",
+      "title": "Start",
+      "breadcrumb": [
+        "TAK Clients",
+        "WinTAK",
+        "Start"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/start-gF8MDfsdW9.json",
+      "updatedAt": "2025-12-05T22:05:59.725Z",
+      "order": 36
+    },
+    {
+      "id": "8d02b881-5071-435c-b1f3-7d3de6e70f63",
+      "slug": "start-from-download-GstcQifMVj",
+      "collection": "guides/tak-guide",
+      "title": "Start from Download",
+      "breadcrumb": [
+        "TAK Clients",
+        "WinTAK",
+        "Start",
+        "Start from Download"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/start-from-download-GstcQifMVj.json",
+      "updatedAt": "2026-02-21T22:16:31.427Z",
+      "order": 37
+    },
+    {
+      "id": "0d05e733-9d26-46a2-9280-8c0540b05284",
+      "slug": "wintak-already-installed-kCXH9p8keg",
+      "collection": "guides/tak-guide",
+      "title": "WinTAK Already Installed",
+      "breadcrumb": [
+        "TAK Clients",
+        "WinTAK",
+        "Start",
+        "WinTAK Already Installed"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/wintak-already-installed-kCXH9p8keg.json",
+      "updatedAt": "2026-02-22T11:48:39.586Z",
+      "order": 38
+    },
+    {
+      "id": "48aba316-838f-4ca1-b2d6-e76dcdc192bf",
+      "slug": "basic-features-pmjQ96x5bI",
+      "collection": "guides/tak-guide",
+      "title": "Basic Features",
+      "breadcrumb": [
+        "TAK Clients",
+        "WinTAK",
+        "Basic Features"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/basic-features-pmjQ96x5bI.json",
+      "updatedAt": "2025-12-20T15:24:57.971Z",
+      "order": 39
+    },
+    {
+      "id": "a59eb85c-070e-4fbc-ba9e-9da88dbab2c4",
+      "slug": "clear-content-gLcPrq5b5J",
+      "collection": "guides/tak-guide",
+      "title": "Clear Content",
+      "breadcrumb": [
+        "TAK Clients",
+        "WinTAK",
+        "Basic Features",
+        "Clear Content"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/clear-content-gLcPrq5b5J.json",
+      "updatedAt": "2026-02-21T22:28:54.014Z",
+      "order": 40
+    },
+    {
+      "id": "7323a242-265a-4e6f-abed-154acfc55924",
+      "slug": "blue-force-tracking-IAAAIJTiqZ",
+      "collection": "guides/tak-guide",
+      "title": "Blue force tracking",
+      "breadcrumb": [
+        "TAK Clients",
+        "WinTAK",
+        "Basic Features",
+        "Blue force tracking"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/blue-force-tracking-IAAAIJTiqZ.json",
+      "updatedAt": "2026-02-22T13:48:24.787Z",
+      "order": 41
+    },
+    {
+      "id": "16217aef-6702-4cec-af6f-0b7800f2556e",
+      "slug": "plugin-management-EphDON8hEX",
+      "collection": "guides/tak-guide",
+      "title": "Plugin Management",
+      "breadcrumb": [
+        "TAK Clients",
+        "WinTAK",
+        "Basic Features",
+        "Plugin Management"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/plugin-management-EphDON8hEX.json",
+      "updatedAt": "2026-02-22T14:12:32.711Z",
+      "order": 42
+    },
+    {
+      "id": "cf69db54-b795-412a-b111-f201fbd18211",
+      "slug": "data-sync-VswHZNexYA",
+      "collection": "guides/tak-guide",
+      "title": "Data Sync",
+      "breadcrumb": [
+        "TAK Clients",
+        "WinTAK",
+        "Basic Features",
+        "Data Sync"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/data-sync-VswHZNexYA.json",
+      "updatedAt": "2026-02-22T09:42:31.113Z",
+      "order": 43
+    },
+    {
+      "id": "8c95a34d-9d55-4568-97c8-597670b7de06",
+      "slug": "point-dropper-create-edit-send-wwYK8iDf5w",
+      "collection": "guides/tak-guide",
+      "title": "Point Dropper, Create, Edit, Send",
+      "breadcrumb": [
+        "TAK Clients",
+        "WinTAK",
+        "Basic Features",
+        "Point Dropper, Create, Edit, Send"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/point-dropper-create-edit-send-wwYK8iDf5w.json",
+      "updatedAt": "2026-02-22T13:45:05.025Z",
+      "order": 44
+    },
+    {
+      "id": "209ff533-7a27-41ff-8bc3-78d15e23b4fe",
+      "slug": "use-geochat-G4fqV0Y4fg",
+      "collection": "guides/tak-guide",
+      "title": "Use GeoChat",
+      "breadcrumb": [
+        "TAK Clients",
+        "WinTAK",
+        "Basic Features",
+        "Use GeoChat"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/use-geochat-G4fqV0Y4fg.json",
+      "updatedAt": "2025-12-05T22:05:59.366Z",
+      "order": 45
+    },
+    {
+      "id": "0e7f01dc-d1bc-49e2-8c28-079bebe59ce7",
+      "slug": "advanced-features-dUEpnxlGD0",
+      "collection": "guides/tak-guide",
+      "title": "Advanced Features",
+      "breadcrumb": [
+        "TAK Clients",
+        "WinTAK",
+        "Advanced Features"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/advanced-features-dUEpnxlGD0.json",
+      "updatedAt": "2026-02-21T14:24:33.030Z",
+      "order": 46
+    },
+    {
+      "id": "fb6567c8-d5b4-48f4-b782-71d384dc5e63",
+      "slug": "create-feeds-0jPr4Cah1Z",
+      "collection": "guides/tak-guide",
+      "title": "Create Feeds",
+      "breadcrumb": [
+        "TAK Clients",
+        "WinTAK",
+        "Advanced Features",
+        "Create Feeds"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/create-feeds-0jPr4Cah1Z.json",
+      "updatedAt": "2026-02-22T10:35:55.634Z",
+      "order": 47
+    },
+    {
+      "id": "b0b13d18-2d81-40e8-9964-cf12baabc387",
+      "slug": "draw-share-plans-gUzuEffh5v",
+      "collection": "guides/tak-guide",
+      "title": "Draw & share Plans",
+      "breadcrumb": [
+        "TAK Clients",
+        "WinTAK",
+        "Advanced Features",
+        "Draw & share Plans"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/draw-share-plans-gUzuEffh5v.json",
+      "updatedAt": "2026-02-22T13:48:52.268Z",
+      "order": 48
+    },
+    {
+      "id": "c9de2a31-2c41-42de-9e18-7de1c7463418",
+      "slug": "manage-feeds-62IWBYODOd",
+      "collection": "guides/tak-guide",
+      "title": "Manage Feeds",
+      "breadcrumb": [
+        "TAK Clients",
+        "WinTAK",
+        "Advanced Features",
+        "Manage Feeds"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/manage-feeds-62IWBYODOd.json",
+      "updatedAt": "2026-02-22T14:27:40.259Z",
+      "order": 49
+    },
+    {
+      "id": "b305516b-4199-4478-9b94-a1ea17eb516d",
+      "slug": "get-alerts-with-geofences-Y1Bgr7UInI",
+      "collection": "guides/tak-guide",
+      "title": "Get alerts with Geofences",
+      "breadcrumb": [
+        "TAK Clients",
+        "WinTAK",
+        "Advanced Features",
+        "Get alerts with Geofences"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/get-alerts-with-geofences-Y1Bgr7UInI.json",
+      "updatedAt": "2026-02-22T13:49:02.702Z",
+      "order": 50
+    },
+    {
+      "id": "86e415e5-bfd2-4d9d-8230-dedc19e754b5",
+      "slug": "usage-by-role-IWyDTtxCJS",
+      "collection": "guides/tak-guide",
+      "title": "Usage by Role",
+      "breadcrumb": [
+        "TAK Clients",
+        "WinTAK",
+        "Usage by Role"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/usage-by-role-IWyDTtxCJS.json",
+      "updatedAt": "2025-12-20T15:41:31.071Z",
+      "order": 51
+    },
+    {
+      "id": "d3de08cc-9b4e-4f1a-8791-5946535f4128",
+      "slug": "overview-G0keHC8NbD",
+      "collection": "guides/tak-guide",
+      "title": "Overview",
+      "breadcrumb": [
+        "TAK Clients",
+        "WinTAK",
+        "Usage by Role",
+        "Overview"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/overview-G0keHC8NbD.json",
+      "updatedAt": "2026-02-21T14:24:06.369Z",
+      "order": 52
+    },
+    {
+      "id": "d14105c6-34af-4000-befa-a15acfb7b187",
+      "slug": "fighter-ZxrplBIys6",
+      "collection": "guides/tak-guide",
+      "title": "Fighter",
+      "breadcrumb": [
+        "TAK Clients",
+        "WinTAK",
+        "Usage by Role",
+        "Fighter"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/fighter-ZxrplBIys6.json",
+      "updatedAt": "2026-02-21T14:24:08.912Z",
+      "order": 53
+    },
+    {
+      "id": "488d2379-2c05-4c92-99ae-7b4860fa2db3",
+      "slug": "command-post-Jysu3u7ga3",
+      "collection": "guides/tak-guide",
+      "title": "Command Post",
+      "breadcrumb": [
+        "TAK Clients",
+        "WinTAK",
+        "Usage by Role",
+        "Command Post"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/command-post-Jysu3u7ga3.json",
+      "updatedAt": "2026-02-21T14:24:10.332Z",
+      "order": 54
+    },
+    {
+      "id": "01ff4f55-d305-473e-a24c-1c3bcc5b07a7",
+      "slug": "edit-recon-feed-B7h9QJzZVd",
+      "collection": "guides/tak-guide",
+      "title": "Edit RECON feed",
+      "breadcrumb": [
+        "TAK Clients",
+        "WinTAK",
+        "Usage by Role",
+        "Command Post",
+        "Edit RECON feed"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/edit-recon-feed-B7h9QJzZVd.json",
+      "updatedAt": "2026-02-22T10:28:06.673Z",
+      "order": 55
+    },
+    {
+      "id": "a5cd4c36-7b4a-4ef0-8912-9719264d3567",
+      "slug": "supported-plugins-zl2XZB0u1p",
+      "collection": "guides/tak-guide",
+      "title": "Supported Plugins",
+      "breadcrumb": [
+        "TAK Clients",
+        "WinTAK",
+        "Supported Plugins"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/supported-plugins-zl2XZB0u1p.json",
+      "updatedAt": "2025-12-05T22:05:58.522Z",
+      "order": 56
+    },
+    {
+      "id": "310dd096-6160-46fe-9bb7-b668492c416d",
+      "slug": "tak-replay-Sy9dQFNBc1",
+      "collection": "guides/tak-guide",
+      "title": "TAK Replay",
+      "breadcrumb": [
+        "TAK Clients",
+        "WinTAK",
+        "Supported Plugins",
+        "TAK Replay"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/tak-replay-Sy9dQFNBc1.json",
+      "updatedAt": "2026-02-21T14:24:17.123Z",
+      "order": 57
+    },
+    {
+      "id": "c7ba4cd6-6b1b-4cd6-9a9d-c7734ab6ce85",
+      "slug": "troubleshooting-T4SvHjOYgd",
+      "collection": "guides/tak-guide",
+      "title": "Troubleshooting",
+      "breadcrumb": [
+        "TAK Clients",
+        "WinTAK",
+        "Troubleshooting"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/troubleshooting-T4SvHjOYgd.json",
+      "updatedAt": "2026-02-21T14:24:21.755Z",
+      "order": 58
+    },
+    {
+      "id": "a976f932-3cba-4bf5-82ab-d91bcca94b98",
+      "slug": "itak-bwDYWvqdnY",
+      "collection": "guides/tak-guide",
+      "title": "iTAK",
+      "breadcrumb": [
+        "TAK Clients",
+        "iTAK"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/itak-bwDYWvqdnY.json",
+      "updatedAt": "2026-02-24T06:32:28.111Z",
+      "order": 59
+    },
+    {
+      "id": "97ea21d4-8895-4feb-bbe8-92cd6951d760",
+      "slug": "start-sLRG2uavSv",
+      "collection": "guides/tak-guide",
+      "title": "Start",
+      "breadcrumb": [
+        "TAK Clients",
+        "iTAK",
+        "Start"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/start-sLRG2uavSv.json",
+      "updatedAt": "2025-12-05T22:06:11.256Z",
+      "order": 60
+    },
+    {
+      "id": "c703f1ac-61bf-48e2-9c03-36cfb7f72360",
+      "slug": "start-from-download-vQGTWj6wET",
+      "collection": "guides/tak-guide",
+      "title": "Start from Download",
+      "breadcrumb": [
+        "TAK Clients",
+        "iTAK",
+        "Start",
+        "Start from Download"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/start-from-download-vQGTWj6wET.json",
+      "updatedAt": "2026-02-20T22:12:29.976Z",
+      "order": 61
+    },
+    {
+      "id": "20a9fdbe-ba84-4a18-89ce-bbacfe3af064",
+      "slug": "itak-already-installed-DeEex1hIH2",
+      "collection": "guides/tak-guide",
+      "title": "iTAK Already Installed",
+      "breadcrumb": [
+        "TAK Clients",
+        "iTAK",
+        "Start",
+        "iTAK Already Installed"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/itak-already-installed-DeEex1hIH2.json",
+      "updatedAt": "2026-02-20T22:13:14.287Z",
+      "order": 62
+    },
+    {
+      "id": "e7460a11-750c-4026-bf82-6bee3c55aeda",
+      "slug": "basic-features-StHwTheTn5",
+      "collection": "guides/tak-guide",
+      "title": "Basic Features",
+      "breadcrumb": [
+        "TAK Clients",
+        "iTAK",
+        "Basic Features"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/basic-features-StHwTheTn5.json",
+      "updatedAt": "2025-12-20T15:27:41.324Z",
+      "order": 63
+    },
+    {
+      "id": "9c0978af-31b9-4f70-8bed-a82092232f09",
+      "slug": "blue-force-tracking-NOzCSj3j64",
+      "collection": "guides/tak-guide",
+      "title": "Blue force tracking",
+      "breadcrumb": [
+        "TAK Clients",
+        "iTAK",
+        "Basic Features",
+        "Blue force tracking"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/blue-force-tracking-NOzCSj3j64.json",
+      "updatedAt": "2026-02-22T13:49:19.366Z",
+      "order": 64
+    },
+    {
+      "id": "dc7f6de4-b754-457d-a704-dd1c792152af",
+      "slug": "data-sync-U4cc7UE9hg",
+      "collection": "guides/tak-guide",
+      "title": "Data Sync",
+      "breadcrumb": [
+        "TAK Clients",
+        "iTAK",
+        "Basic Features",
+        "Data Sync"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/data-sync-U4cc7UE9hg.json",
+      "updatedAt": "2026-02-20T20:51:41.284Z",
+      "order": 65
+    },
+    {
+      "id": "b05ee7a4-13a2-4cd8-865c-0812dd57bfff",
+      "slug": "create-symbols-quick-pics-elqHqV8SW7",
+      "collection": "guides/tak-guide",
+      "title": "Create Symbols & Quick Pics",
+      "breadcrumb": [
+        "TAK Clients",
+        "iTAK",
+        "Basic Features",
+        "Create Symbols & Quick Pics"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/create-symbols-quick-pics-elqHqV8SW7.json",
+      "updatedAt": "2026-02-22T13:49:37.259Z",
+      "order": 66
+    },
+    {
+      "id": "7f5e9540-9d73-4d1e-a0c1-14e3e6f07075",
+      "slug": "use-geochat-r99lJsOLnK",
+      "collection": "guides/tak-guide",
+      "title": "Use GeoChat",
+      "breadcrumb": [
+        "TAK Clients",
+        "iTAK",
+        "Basic Features",
+        "Use GeoChat"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/use-geochat-r99lJsOLnK.json",
+      "updatedAt": "2026-02-22T13:49:42.545Z",
+      "order": 67
+    },
+    {
+      "id": "812a5833-66fb-4ba9-ae27-afa5fb678c53",
+      "slug": "usage-by-role-LlQdNcNgkg",
+      "collection": "guides/tak-guide",
+      "title": "Usage by Role",
+      "breadcrumb": [
+        "TAK Clients",
+        "iTAK",
+        "Usage by Role"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/usage-by-role-LlQdNcNgkg.json",
+      "updatedAt": "2025-12-20T15:41:12.443Z",
+      "order": 68
+    },
+    {
+      "id": "c449e185-99ae-42a2-a1cf-7b59eeaa6775",
+      "slug": "overview-bPeWx0MdZQ",
+      "collection": "guides/tak-guide",
+      "title": "Overview",
+      "breadcrumb": [
+        "TAK Clients",
+        "iTAK",
+        "Usage by Role",
+        "Overview"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/overview-bPeWx0MdZQ.json",
+      "updatedAt": "2025-12-05T22:06:10.622Z",
+      "order": 69
+    },
+    {
+      "id": "884f750f-e176-4be4-a191-0665511ba933",
+      "slug": "fighter-rf4mMCmmWV",
+      "collection": "guides/tak-guide",
+      "title": "Fighter",
+      "breadcrumb": [
+        "TAK Clients",
+        "iTAK",
+        "Usage by Role",
+        "Fighter"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/fighter-rf4mMCmmWV.json",
+      "updatedAt": "2025-12-05T22:06:10.581Z",
+      "order": 70
+    },
+    {
+      "id": "62b8ea81-d7ef-490a-9834-1e8b7ce5bd24",
+      "slug": "command-post-YxjX9bA9iG",
+      "collection": "guides/tak-guide",
+      "title": "Command Post",
+      "breadcrumb": [
+        "TAK Clients",
+        "iTAK",
+        "Usage by Role",
+        "Command Post"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/command-post-YxjX9bA9iG.json",
+      "updatedAt": "2025-12-05T22:06:10.535Z",
+      "order": 71
+    },
+    {
+      "id": "411eed47-07e4-4089-b035-38f7e77e9a0d",
+      "slug": "troubleshooting-Pj64UaHAJW",
+      "collection": "guides/tak-guide",
+      "title": "Troubleshooting",
+      "breadcrumb": [
+        "TAK Clients",
+        "iTAK",
+        "Troubleshooting"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/troubleshooting-Pj64UaHAJW.json",
+      "updatedAt": "2025-12-05T22:06:10.255Z",
+      "order": 72
+    },
+    {
+      "id": "8227a4a8-5540-4624-a24d-91a5037cf456",
+      "slug": "tak-tracker-android-JCZw3YH2nW",
+      "collection": "guides/tak-guide",
+      "title": "TAK Tracker - Android",
+      "breadcrumb": [
+        "TAK Clients",
+        "TAK Tracker - Android"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/tak-tracker-android-JCZw3YH2nW.json",
+      "updatedAt": "2026-02-24T06:32:40.363Z",
+      "order": 73
+    },
+    {
+      "id": "7024dee7-4156-49b3-9d73-fcfb56c91afb",
+      "slug": "start-LlfSpMeCW8",
+      "collection": "guides/tak-guide",
+      "title": "Start",
+      "breadcrumb": [
+        "TAK Clients",
+        "TAK Tracker - Android",
+        "Start"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/start-LlfSpMeCW8.json",
+      "updatedAt": "2026-02-21T08:38:27.919Z",
+      "order": 74
+    },
+    {
+      "id": "4f4b85db-a381-44b9-b106-30ba37172e1b",
+      "slug": "start-from-download-x9ve2aL7oC",
+      "collection": "guides/tak-guide",
+      "title": "Start from Download",
+      "breadcrumb": [
+        "TAK Clients",
+        "TAK Tracker - Android",
+        "Start",
+        "Start from Download"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/start-from-download-x9ve2aL7oC.json",
+      "updatedAt": "2026-02-21T09:11:38.026Z",
+      "order": 75
+    },
+    {
+      "id": "c52c447b-f610-4b40-a910-bbf635572ad6",
+      "slug": "tak-tracker-already-installed-DoVQOAKWVB",
+      "collection": "guides/tak-guide",
+      "title": "TAK Tracker Already Installed",
+      "breadcrumb": [
+        "TAK Clients",
+        "TAK Tracker - Android",
+        "Start",
+        "TAK Tracker Already Installed"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/tak-tracker-already-installed-DoVQOAKWVB.json",
+      "updatedAt": "2026-02-21T09:11:28.472Z",
+      "order": 76
+    },
+    {
+      "id": "91c58ae9-39c3-4623-8099-ce1c85401757",
+      "slug": "importing-server-connection-URmd6F0UU5",
+      "collection": "guides/tak-guide",
+      "title": "Importing Server Connection",
+      "breadcrumb": [
+        "TAK Clients",
+        "TAK Tracker - Android",
+        "Start",
+        "Importing Server Connection"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/importing-server-connection-URmd6F0UU5.json",
+      "updatedAt": "2026-02-21T10:42:40.160Z",
+      "order": 77
+    },
+    {
+      "id": "e7903c26-2bef-4059-9348-6cf48cbd5e42",
+      "slug": "usage-by-role-KxtjmbM9B1",
+      "collection": "guides/tak-guide",
+      "title": "Usage by Role",
+      "breadcrumb": [
+        "TAK Clients",
+        "TAK Tracker - Android",
+        "Usage by Role"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/usage-by-role-KxtjmbM9B1.json",
+      "updatedAt": "2025-12-20T15:41:38.535Z",
+      "order": 78
+    },
+    {
+      "id": "3bc34372-3886-4a4a-9a61-acce2f9dcb60",
+      "slug": "overview-4sA7lVWVtw",
+      "collection": "guides/tak-guide",
+      "title": "Overview",
+      "breadcrumb": [
+        "TAK Clients",
+        "TAK Tracker - Android",
+        "Usage by Role",
+        "Overview"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/overview-4sA7lVWVtw.json",
+      "updatedAt": "2026-02-21T08:40:53.162Z",
+      "order": 79
+    },
+    {
+      "id": "a3db4071-6a71-4189-a81a-31e028b72c2f",
+      "slug": "fighter-gUAGHKAtVV",
+      "collection": "guides/tak-guide",
+      "title": "Fighter",
+      "breadcrumb": [
+        "TAK Clients",
+        "TAK Tracker - Android",
+        "Usage by Role",
+        "Fighter"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/fighter-gUAGHKAtVV.json",
+      "updatedAt": "2026-02-21T08:40:54.745Z",
+      "order": 80
+    },
+    {
+      "id": "03f5bfcd-2567-4a6f-9718-482953706997",
+      "slug": "command-post-t2fdgSrk3R",
+      "collection": "guides/tak-guide",
+      "title": "Command Post",
+      "breadcrumb": [
+        "TAK Clients",
+        "TAK Tracker - Android",
+        "Usage by Role",
+        "Command Post"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/command-post-t2fdgSrk3R.json",
+      "updatedAt": "2026-02-21T08:40:56.130Z",
+      "order": 81
+    },
+    {
+      "id": "a378322d-ad76-4cf4-ae94-a490806ac2b9",
+      "slug": "troubleshooting-E1xmJrS5OS",
+      "collection": "guides/tak-guide",
+      "title": "Troubleshooting",
+      "breadcrumb": [
+        "TAK Clients",
+        "TAK Tracker - Android",
+        "Troubleshooting"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/troubleshooting-E1xmJrS5OS.json",
+      "updatedAt": "2026-02-21T08:40:59.848Z",
+      "order": 82
+    },
+    {
+      "id": "2afa861e-7e13-4521-b433-48ab08d9a86f",
+      "slug": "tak-tracker-apple-PmHvleNK0F",
+      "collection": "guides/tak-guide",
+      "title": "TAK Tracker - Apple",
+      "breadcrumb": [
+        "TAK Clients",
+        "TAK Tracker - Apple"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/tak-tracker-apple-PmHvleNK0F.json",
+      "updatedAt": "2026-02-24T06:32:35.942Z",
+      "order": 83
+    },
+    {
+      "id": "570ae40b-17d0-4be1-a3cf-bf43e9916131",
+      "slug": "start-oZzAX4X7Er",
+      "collection": "guides/tak-guide",
+      "title": "Start",
+      "breadcrumb": [
+        "TAK Clients",
+        "TAK Tracker - Apple",
+        "Start"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/start-oZzAX4X7Er.json",
+      "updatedAt": "2025-12-05T22:05:36.056Z",
+      "order": 84
+    },
+    {
+      "id": "9dfe8284-0b55-4b2a-a02c-72d524d03d1f",
+      "slug": "start-from-download-5tAQBOfF65",
+      "collection": "guides/tak-guide",
+      "title": "Start from Download",
+      "breadcrumb": [
+        "TAK Clients",
+        "TAK Tracker - Apple",
+        "Start",
+        "Start from Download"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/start-from-download-5tAQBOfF65.json",
+      "updatedAt": "2026-02-21T08:37:32.546Z",
+      "order": 85
+    },
+    {
+      "id": "c5a3d4f8-ab45-49f1-ad12-c7d612cc732b",
+      "slug": "tak-tracker-already-installed-DmWqDN5jLp",
+      "collection": "guides/tak-guide",
+      "title": "TAK Tracker Already Installed",
+      "breadcrumb": [
+        "TAK Clients",
+        "TAK Tracker - Apple",
+        "Start",
+        "TAK Tracker Already Installed"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/tak-tracker-already-installed-DmWqDN5jLp.json",
+      "updatedAt": "2026-02-21T08:38:01.138Z",
+      "order": 86
+    },
+    {
+      "id": "3a1e70eb-41ed-405b-8b1d-4744e2b81e9b",
+      "slug": "tak-features-2eQ2Stir9U",
+      "collection": "guides/tak-guide",
+      "title": "TAK Features",
+      "breadcrumb": [
+        "TAK Clients",
+        "TAK Tracker - Apple",
+        "TAK Features"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/tak-features-2eQ2Stir9U.json",
+      "updatedAt": "2025-12-05T21:23:44.584Z",
+      "order": 87
+    },
+    {
+      "id": "e1b73cfa-3511-4413-92df-7ceed72140ff",
+      "slug": "send-alerts-jz5xQsdpbH",
+      "collection": "guides/tak-guide",
+      "title": "Send alerts",
+      "breadcrumb": [
+        "TAK Clients",
+        "TAK Tracker - Apple",
+        "TAK Features",
+        "Send alerts"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/send-alerts-jz5xQsdpbH.json",
+      "updatedAt": "2026-02-21T08:40:22.498Z",
+      "order": 88
+    },
+    {
+      "id": "a9e25a26-2a61-4ac2-abd9-f98a76e4454b",
+      "slug": "usage-by-role-FfcECbKYmK",
+      "collection": "guides/tak-guide",
+      "title": "Usage by Role",
+      "breadcrumb": [
+        "TAK Clients",
+        "TAK Tracker - Apple",
+        "Usage by Role"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/usage-by-role-FfcECbKYmK.json",
+      "updatedAt": "2025-12-20T15:43:04.691Z",
+      "order": 89
+    },
+    {
+      "id": "fc567617-02ca-44ba-a293-e99977710931",
+      "slug": "overview-vqWEyyCxy8",
+      "collection": "guides/tak-guide",
+      "title": "Overview",
+      "breadcrumb": [
+        "TAK Clients",
+        "TAK Tracker - Apple",
+        "Usage by Role",
+        "Overview"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/overview-vqWEyyCxy8.json",
+      "updatedAt": "2026-02-21T08:40:26.953Z",
+      "order": 90
+    },
+    {
+      "id": "7b06ea32-e825-4854-a9ee-c03f1de33dec",
+      "slug": "fighter-xKivECWhVS",
+      "collection": "guides/tak-guide",
+      "title": "Fighter",
+      "breadcrumb": [
+        "TAK Clients",
+        "TAK Tracker - Apple",
+        "Usage by Role",
+        "Fighter"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/fighter-xKivECWhVS.json",
+      "updatedAt": "2026-02-21T08:40:29.184Z",
+      "order": 91
+    },
+    {
+      "id": "4af2e06f-0b4c-4439-a633-772e713357cd",
+      "slug": "command-post-aX04WiqaZf",
+      "collection": "guides/tak-guide",
+      "title": "Command Post",
+      "breadcrumb": [
+        "TAK Clients",
+        "TAK Tracker - Apple",
+        "Usage by Role",
+        "Command Post"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/command-post-aX04WiqaZf.json",
+      "updatedAt": "2026-02-21T08:40:31.192Z",
+      "order": 92
+    },
+    {
+      "id": "59c68c5b-a763-41ee-9d9b-af2fa9b9a801",
+      "slug": "troubleshooting-4heIv7ZV7m",
+      "collection": "guides/tak-guide",
+      "title": "Troubleshooting",
+      "breadcrumb": [
+        "TAK Clients",
+        "TAK Tracker - Apple",
+        "Troubleshooting"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/troubleshooting-4heIv7ZV7m.json",
+      "updatedAt": "2026-02-21T08:40:35.190Z",
+      "order": 93
+    },
+    {
+      "id": "2f7189f4-8995-4438-a6a9-f54f1a6ef46c",
+      "slug": "deploy-app-mtx-pNYQudUcGq",
+      "collection": "guides/mtx-guide",
+      "title": "Deploy App - MTX",
+      "breadcrumb": [
+        "Deploy App - MTX"
+      ],
+      "path": "/content/en/pages/guides/mtx-guide/deploy-app-mtx-pNYQudUcGq.json",
+      "updatedAt": "2026-03-08T05:32:11.424Z",
       "order": 0
+    },
+    {
+      "id": "9c3d844b-ebb7-453c-9d30-7bab0891f66e",
+      "slug": "watch-stream-i7cQZkpBTh",
+      "collection": "guides/mtx-guide",
+      "title": "Watch Stream",
+      "breadcrumb": [
+        "Watch Stream"
+      ],
+      "path": "/content/en/pages/guides/mtx-guide/watch-stream-i7cQZkpBTh.json",
+      "updatedAt": "2026-03-08T05:42:51.468Z",
+      "order": 1
+    },
+    {
+      "id": "ffec221e-3d44-43c7-a4d4-483ae0c03da8",
+      "slug": "browser-OODFuhucDG",
+      "collection": "guides/mtx-guide",
+      "title": "Browser",
+      "breadcrumb": [
+        "Watch Stream",
+        "Browser"
+      ],
+      "path": "/content/en/pages/guides/mtx-guide/browser-OODFuhucDG.json",
+      "updatedAt": "2026-02-21T13:54:18.538Z",
+      "order": 2
+    },
+    {
+      "id": "5bcad522-f2a0-4cc4-967f-bd0e46953143",
+      "slug": "vlc-player-w1SqNUFWHC",
+      "collection": "guides/mtx-guide",
+      "title": "VLC Player",
+      "breadcrumb": [
+        "Watch Stream",
+        "VLC Player"
+      ],
+      "path": "/content/en/pages/guides/mtx-guide/vlc-player-w1SqNUFWHC.json",
+      "updatedAt": "2026-02-21T13:54:39.466Z",
+      "order": 3
+    },
+    {
+      "id": "e96c8450-ee15-4607-be9b-d1a479bcc24b",
+      "slug": "publish-stream-XN1sPInAKr",
+      "collection": "guides/mtx-guide",
+      "title": "Publish Stream",
+      "breadcrumb": [
+        "Publish Stream"
+      ],
+      "path": "/content/en/pages/guides/mtx-guide/publish-stream-XN1sPInAKr.json",
+      "updatedAt": "2026-04-11T21:49:30.251Z",
+      "order": 4
+    },
+    {
+      "id": "21a0cfc5-0bf4-4df0-b826-8ca170313488",
+      "slug": "gopro-gDG1IhzxmJ",
+      "collection": "guides/mtx-guide",
+      "title": "GoPro",
+      "breadcrumb": [
+        "Publish Stream",
+        "GoPro"
+      ],
+      "path": "/content/en/pages/guides/mtx-guide/gopro-gDG1IhzxmJ.json",
+      "updatedAt": "2026-02-20T07:30:34.049Z",
+      "order": 5
+    },
+    {
+      "id": "d8ffcd3b-cd8d-4074-be79-ad17c3a92a4c",
+      "slug": "opentak-icu-manual-method-zBqUHoY4j0",
+      "collection": "guides/mtx-guide",
+      "title": "OpenTAK ICU - Manual method",
+      "breadcrumb": [
+        "Publish Stream",
+        "OpenTAK ICU - Manual method"
+      ],
+      "path": "/content/en/pages/guides/mtx-guide/opentak-icu-manual-method-zBqUHoY4j0.json",
+      "updatedAt": "2026-04-11T16:45:09.785Z",
+      "order": 6
+    },
+    {
+      "id": "8494cf86-34e9-43e4-b8b9-d2f801589222",
+      "slug": "opentak-icu-xN1NdJaGa8",
+      "collection": "guides/mtx-guide",
+      "title": "OpenTAK ICU",
+      "breadcrumb": [
+        "Publish Stream",
+        "OpenTAK ICU"
+      ],
+      "path": "/content/en/pages/guides/mtx-guide/opentak-icu-xN1NdJaGa8.json",
+      "updatedAt": "2026-04-11T16:46:40.505Z",
+      "order": 7
+    },
+    {
+      "id": "39ded173-ec80-442c-b229-580740fb1bf5",
+      "slug": "uas-tool-DwT6M5lj9c",
+      "collection": "guides/mtx-guide",
+      "title": "UAS Tool",
+      "breadcrumb": [
+        "Publish Stream",
+        "UAS Tool"
+      ],
+      "path": "/content/en/pages/guides/mtx-guide/uas-tool-DwT6M5lj9c.json",
+      "updatedAt": "2026-04-11T16:44:39.202Z",
+      "order": 8
+    },
+    {
+      "id": "f5712226-1355-412a-9e28-ac127316cb30",
+      "slug": "deploy-app-matrix-ck6FccRX1P",
+      "collection": "guides/matrix-guide",
+      "title": "Deploy App - Matrix",
+      "breadcrumb": [
+        "Deploy App - Matrix"
+      ],
+      "path": "/content/en/pages/guides/matrix-guide/deploy-app-matrix-ck6FccRX1P.json",
+      "updatedAt": "2026-05-05T15:19:54.416Z",
+      "order": 0
+    },
+    {
+      "id": "ad27984a-c9fe-4ebb-ba2e-f782eded3233",
+      "slug": "deploy-app-cryptpad-AsW96ynevF",
+      "collection": "guides/cryptpad-guide",
+      "title": "Deploy App - CryptPad",
+      "breadcrumb": [
+        "Deploy App - CryptPad"
+      ],
+      "path": "/content/en/pages/guides/cryptpad-guide/deploy-app-cryptpad-AsW96ynevF.json",
+      "updatedAt": "2026-05-05T14:52:22.551Z",
+      "order": 0
+    },
+    {
+      "id": "4ec40322-580d-4280-978d-ebbf11f8cb3c",
+      "slug": "what-is-tak-o1gM2motGE",
+      "collection": "wikis/tak",
+      "title": "What is TAK?",
+      "breadcrumb": [
+        "What is TAK?"
+      ],
+      "path": "/content/en/pages/wikis/tak/what-is-tak-o1gM2motGE.json",
+      "updatedAt": "2026-02-16T08:41:05.195Z",
+      "order": 0
+    },
+    {
+      "id": "9f59d528-7f2e-4ee1-8eab-08377a5c1cca",
+      "slug": "guide-videos-x8oNBzPliV",
+      "collection": "wikis/tak",
+      "title": "Guide Videos",
+      "breadcrumb": [
+        "Guide Videos"
+      ],
+      "path": "/content/en/pages/wikis/tak/guide-videos-x8oNBzPliV.json",
+      "updatedAt": "2026-02-19T12:41:07.801Z",
+      "order": 1
+    },
+    {
+      "id": "9d878337-d480-4282-8f4e-d14a4973eb90",
+      "slug": "tak-products-for-users-CXHp98L3Pl",
+      "collection": "wikis/tak",
+      "title": "TAK Products for Users",
+      "breadcrumb": [
+        "TAK Products for Users"
+      ],
+      "path": "/content/en/pages/wikis/tak/tak-products-for-users-CXHp98L3Pl.json",
+      "updatedAt": "2026-02-19T12:45:07.829Z",
+      "order": 2
+    },
+    {
+      "id": "475d4228-c8c3-487d-8a57-bba880871c28",
+      "slug": "atak-android-tak-YCvtAZaLrF",
+      "collection": "wikis/tak",
+      "title": "ATAK - Android TAK",
+      "breadcrumb": [
+        "TAK Products for Users",
+        "ATAK - Android TAK"
+      ],
+      "path": "/content/en/pages/wikis/tak/atak-android-tak-YCvtAZaLrF.json",
+      "updatedAt": "2026-03-28T16:16:36.790Z",
+      "order": 3
+    },
+    {
+      "id": "382b880e-437d-4e45-b35c-22bfae226131",
+      "slug": "tools-and-functions-6akJzo2ed0",
+      "collection": "wikis/tak",
+      "title": "Tools and functions",
+      "breadcrumb": [
+        "TAK Products for Users",
+        "ATAK - Android TAK",
+        "Tools and functions"
+      ],
+      "path": "/content/en/pages/wikis/tak/tools-and-functions-6akJzo2ed0.json",
+      "updatedAt": "2026-02-19T13:04:55.167Z",
+      "order": 4
+    },
+    {
+      "id": "a1ae2d75-dc23-443b-aa26-526a47a1c85f",
+      "slug": "bloodhound-tool-kZ8MTy07YY",
+      "collection": "wikis/tak",
+      "title": "Bloodhound -tool",
+      "breadcrumb": [
+        "TAK Products for Users",
+        "ATAK - Android TAK",
+        "Tools and functions",
+        "Bloodhound -tool"
+      ],
+      "path": "/content/en/pages/wikis/tak/bloodhound-tool-kZ8MTy07YY.json",
+      "updatedAt": "2026-02-19T13:05:12.835Z",
+      "order": 5
+    },
+    {
+      "id": "c6ae417f-9cb1-47cd-b53e-dff9db30e24d",
+      "slug": "contacts-geochat-tool-3FdJAdO1R7",
+      "collection": "wikis/tak",
+      "title": "Contacts / GeoChat -tool",
+      "breadcrumb": [
+        "TAK Products for Users",
+        "ATAK - Android TAK",
+        "Tools and functions",
+        "Contacts / GeoChat -tool"
+      ],
+      "path": "/content/en/pages/wikis/tak/contacts-geochat-tool-3FdJAdO1R7.json",
+      "updatedAt": "2026-02-19T13:05:16.158Z",
+      "order": 6
+    },
+    {
+      "id": "7b0492b3-42b0-46d2-b2a9-ade55453f2f4",
+      "slug": "data-sync-plugin-Ux2V5Gdsry",
+      "collection": "wikis/tak",
+      "title": "Data Sync -plugin",
+      "breadcrumb": [
+        "TAK Products for Users",
+        "ATAK - Android TAK",
+        "Tools and functions",
+        "Data Sync -plugin"
+      ],
+      "path": "/content/en/pages/wikis/tak/data-sync-plugin-Ux2V5Gdsry.json",
+      "updatedAt": "2026-02-19T13:05:33.870Z",
+      "order": 7
+    },
+    {
+      "id": "8fe83d8c-29e4-44aa-9f59-6c72157323a1",
+      "slug": "point-dropper-tool-6BNurdPXpp",
+      "collection": "wikis/tak",
+      "title": "Point Dropper -tool",
+      "breadcrumb": [
+        "TAK Products for Users",
+        "ATAK - Android TAK",
+        "Tools and functions",
+        "Point Dropper -tool"
+      ],
+      "path": "/content/en/pages/wikis/tak/point-dropper-tool-6BNurdPXpp.json",
+      "updatedAt": "2026-02-19T13:04:02.956Z",
+      "order": 8
+    },
+    {
+      "id": "9417e4e1-0870-4938-8190-9b6ab0fd6734",
+      "slug": "toolbar-tool-EKByDYLVSo",
+      "collection": "wikis/tak",
+      "title": "Toolbar -tool",
+      "breadcrumb": [
+        "TAK Products for Users",
+        "ATAK - Android TAK",
+        "Tools and functions",
+        "Toolbar -tool"
+      ],
+      "path": "/content/en/pages/wikis/tak/toolbar-tool-EKByDYLVSo.json",
+      "updatedAt": "2026-02-19T13:05:55.929Z",
+      "order": 9
+    },
+    {
+      "id": "c5fbff8c-3df8-43b8-81e4-7b6275409ac9",
+      "slug": "uas-tool-plugin-Q5Mzhv56VO",
+      "collection": "wikis/tak",
+      "title": "UAS Tool -plugin",
+      "breadcrumb": [
+        "TAK Products for Users",
+        "ATAK - Android TAK",
+        "Tools and functions",
+        "UAS Tool -plugin"
+      ],
+      "path": "/content/en/pages/wikis/tak/uas-tool-plugin-Q5Mzhv56VO.json",
+      "updatedAt": "2026-02-19T13:05:59.638Z",
+      "order": 10
+    },
+    {
+      "id": "c4818ab9-c30b-4a81-8abf-741761387f78",
+      "slug": "vns-plugin-6eZoNDPEBA",
+      "collection": "wikis/tak",
+      "title": "VNS -plugin",
+      "breadcrumb": [
+        "TAK Products for Users",
+        "ATAK - Android TAK",
+        "Tools and functions",
+        "VNS -plugin"
+      ],
+      "path": "/content/en/pages/wikis/tak/vns-plugin-6eZoNDPEBA.json",
+      "updatedAt": "2026-02-19T13:04:08.658Z",
+      "order": 11
+    },
+    {
+      "id": "52717df5-11ce-4d08-a777-5c8154b451a4",
+      "slug": "plugin-list-cr2xfMYu9V",
+      "collection": "wikis/tak",
+      "title": "Plugin list",
+      "breadcrumb": [
+        "TAK Products for Users",
+        "ATAK - Android TAK",
+        "Plugin list"
+      ],
+      "path": "/content/en/pages/wikis/tak/plugin-list-cr2xfMYu9V.json",
+      "updatedAt": "2026-02-19T13:10:47.089Z",
+      "order": 12
+    },
+    {
+      "id": "031ffba0-bdfe-4736-ab7b-284b742aca55",
+      "slug": "itak-apple-tak-5bm4tto7yP",
+      "collection": "wikis/tak",
+      "title": "iTAK - Apple TAK",
+      "breadcrumb": [
+        "TAK Products for Users",
+        "iTAK - Apple TAK"
+      ],
+      "path": "/content/en/pages/wikis/tak/itak-apple-tak-5bm4tto7yP.json",
+      "updatedAt": "2026-02-19T13:14:05.546Z",
+      "order": 13
+    },
+    {
+      "id": "a4ae4ce6-ab74-46c0-b52f-f4d857cdb433",
+      "slug": "tak-aware-apple-tak-3TrdXhARBh",
+      "collection": "wikis/tak",
+      "title": "TAK Aware - Apple TAK",
+      "breadcrumb": [
+        "TAK Products for Users",
+        "TAK Aware - Apple TAK"
+      ],
+      "path": "/content/en/pages/wikis/tak/tak-aware-apple-tak-3TrdXhARBh.json",
+      "updatedAt": "2026-02-19T13:18:49.177Z",
+      "order": 14
+    },
+    {
+      "id": "d343006f-ccc0-4f2a-8874-33b7d32792ba",
+      "slug": "tak-tracker-lightweight-tak-pGihrJitAY",
+      "collection": "wikis/tak",
+      "title": "TAK Tracker - Lightweight TAK",
+      "breadcrumb": [
+        "TAK Products for Users",
+        "TAK Tracker - Lightweight TAK"
+      ],
+      "path": "/content/en/pages/wikis/tak/tak-tracker-lightweight-tak-pGihrJitAY.json",
+      "updatedAt": "2026-02-19T13:19:54.928Z",
+      "order": 15
+    },
+    {
+      "id": "104fc3cf-61b7-41e4-a5c7-2ec53922608f",
+      "slug": "vr-tak-virtualreality-tak-SDd4LXGE4i",
+      "collection": "wikis/tak",
+      "title": "VR-TAK - VirtualReality TAK",
+      "breadcrumb": [
+        "TAK Products for Users",
+        "VR-TAK - VirtualReality TAK"
+      ],
+      "path": "/content/en/pages/wikis/tak/vr-tak-virtualreality-tak-SDd4LXGE4i.json",
+      "updatedAt": "2026-02-19T13:20:41.078Z",
+      "order": 16
+    },
+    {
+      "id": "defdaa55-9669-4651-ae3f-7d7081b19c3b",
+      "slug": "wintak-windows-tak-h251ILyaWa",
+      "collection": "wikis/tak",
+      "title": "WinTAK - Windows TAK",
+      "breadcrumb": [
+        "TAK Products for Users",
+        "WinTAK - Windows TAK"
+      ],
+      "path": "/content/en/pages/wikis/tak/wintak-windows-tak-h251ILyaWa.json",
+      "updatedAt": "2026-03-04T19:02:19.555Z",
+      "order": 17
+    },
+    {
+      "id": "92558ed4-a1f0-47f8-9cfd-270335b52b62",
+      "slug": "plugin-list-9AXN24oAyB",
+      "collection": "wikis/tak",
+      "title": "Plugin list",
+      "breadcrumb": [
+        "TAK Products for Users",
+        "WinTAK - Windows TAK",
+        "Plugin list"
+      ],
+      "path": "/content/en/pages/wikis/tak/plugin-list-9AXN24oAyB.json",
+      "updatedAt": "2026-02-19T13:24:14.965Z",
+      "order": 18
+    },
+    {
+      "id": "ba59cab5-9f1f-40ba-af80-da525f8ff8bd",
+      "slug": "tools-and-functions-Wak49eEupd",
+      "collection": "wikis/tak",
+      "title": "Tools and functions",
+      "breadcrumb": [
+        "TAK Products for Users",
+        "WinTAK - Windows TAK",
+        "Tools and functions"
+      ],
+      "path": "/content/en/pages/wikis/tak/tools-and-functions-Wak49eEupd.json",
+      "updatedAt": "2026-02-19T13:25:34.938Z",
+      "order": 19
+    },
+    {
+      "id": "9d111355-07d3-411a-90b3-33c5c560a1e6",
+      "slug": "contacts-geochat-tool-He6gLKQ18V",
+      "collection": "wikis/tak",
+      "title": "Contacts / GeoChat tool",
+      "breadcrumb": [
+        "TAK Products for Users",
+        "WinTAK - Windows TAK",
+        "Tools and functions",
+        "Contacts / GeoChat tool"
+      ],
+      "path": "/content/en/pages/wikis/tak/contacts-geochat-tool-He6gLKQ18V.json",
+      "updatedAt": "2026-02-19T13:26:17.203Z",
+      "order": 20
+    },
+    {
+      "id": "1b678546-43f3-4641-aacd-9c031cab7439",
+      "slug": "data-sync-plugin-ahRu25V5Yh",
+      "collection": "wikis/tak",
+      "title": "Data Sync -plugin",
+      "breadcrumb": [
+        "TAK Products for Users",
+        "WinTAK - Windows TAK",
+        "Tools and functions",
+        "Data Sync -plugin"
+      ],
+      "path": "/content/en/pages/wikis/tak/data-sync-plugin-ahRu25V5Yh.json",
+      "updatedAt": "2026-02-19T13:27:00.942Z",
+      "order": 21
+    },
+    {
+      "id": "4f3fd3c2-b03c-4ecb-9fc9-87177e07dcbb",
+      "slug": "tak-replay-plugin-kodpUReaKa",
+      "collection": "wikis/tak",
+      "title": "TAK Replay -plugin",
+      "breadcrumb": [
+        "TAK Products for Users",
+        "WinTAK - Windows TAK",
+        "Tools and functions",
+        "TAK Replay -plugin"
+      ],
+      "path": "/content/en/pages/wikis/tak/tak-replay-plugin-kodpUReaKa.json",
+      "updatedAt": "2026-02-19T13:27:56.117Z",
+      "order": 22
+    },
+    {
+      "id": "079e0f1f-6917-4a68-b5cc-b8527300afaf",
+      "slug": "vns-plugin-myYvNJnnhw",
+      "collection": "wikis/tak",
+      "title": "VNS -plugin",
+      "breadcrumb": [
+        "TAK Products for Users",
+        "WinTAK - Windows TAK",
+        "Tools and functions",
+        "VNS -plugin"
+      ],
+      "path": "/content/en/pages/wikis/tak/vns-plugin-myYvNJnnhw.json",
+      "updatedAt": "2026-02-19T13:29:52.514Z",
+      "order": 23
+    },
+    {
+      "id": "b59c45a4-a74d-4f70-8502-245b3ab96c87",
+      "slug": "tpc-tak-product-center-CYKrI5BZFA",
+      "collection": "wikis/tak",
+      "title": "TPC - TAK Product Center",
+      "breadcrumb": [
+        "TAK Products for Users",
+        "TPC - TAK Product Center"
+      ],
+      "path": "/content/en/pages/wikis/tak/tpc-tak-product-center-CYKrI5BZFA.json",
+      "updatedAt": "2026-02-19T13:30:52.437Z",
+      "order": 24
+    },
+    {
+      "id": "8788c439-88dd-4ea0-9ea8-a63614058d63",
+      "slug": "tak-tools-for-products-pX6PDDy2l9",
+      "collection": "wikis/tak",
+      "title": "TAK Tools for Products",
+      "breadcrumb": [
+        "TAK Tools for Products"
+      ],
+      "path": "/content/en/pages/wikis/tak/tak-tools-for-products-pX6PDDy2l9.json",
+      "updatedAt": "2026-02-19T13:31:59.188Z",
+      "order": 25
+    },
+    {
+      "id": "5b52f888-abd3-4325-82a0-0d81a75ad808",
+      "slug": "bloodhound-tool-1JvEjCG9ha",
+      "collection": "wikis/tak",
+      "title": "Bloodhound tool",
+      "breadcrumb": [
+        "TAK Tools for Products",
+        "Bloodhound tool"
+      ],
+      "path": "/content/en/pages/wikis/tak/bloodhound-tool-1JvEjCG9ha.json",
+      "updatedAt": "2026-02-19T13:32:27.482Z",
+      "order": 26
+    },
+    {
+      "id": "34f28f61-6646-4a4d-a417-5ac036fccdb3",
+      "slug": "contacts-geochat-tool-Yk0UD4AmWE",
+      "collection": "wikis/tak",
+      "title": "Contacts / GeoChat tool",
+      "breadcrumb": [
+        "TAK Tools for Products",
+        "Contacts / GeoChat tool"
+      ],
+      "path": "/content/en/pages/wikis/tak/contacts-geochat-tool-Yk0UD4AmWE.json",
+      "updatedAt": "2026-02-19T13:33:40.355Z",
+      "order": 27
+    },
+    {
+      "id": "ba4bcf14-7495-408f-87f2-bf557fa465ac",
+      "slug": "data-sync-plugin-k4cwn1ZWo5",
+      "collection": "wikis/tak",
+      "title": "Data Sync -plugin",
+      "breadcrumb": [
+        "TAK Tools for Products",
+        "Data Sync -plugin"
+      ],
+      "path": "/content/en/pages/wikis/tak/data-sync-plugin-k4cwn1ZWo5.json",
+      "updatedAt": "2026-02-19T13:34:36.038Z",
+      "order": 28
+    },
+    {
+      "id": "5023efce-a2df-4288-bc49-cc1346082d4e",
+      "slug": "point-dropper-tool-IUEAOayhVJ",
+      "collection": "wikis/tak",
+      "title": "Point Dropper tool",
+      "breadcrumb": [
+        "TAK Tools for Products",
+        "Point Dropper tool"
+      ],
+      "path": "/content/en/pages/wikis/tak/point-dropper-tool-IUEAOayhVJ.json",
+      "updatedAt": "2026-02-26T08:39:21.628Z",
+      "order": 29
+    },
+    {
+      "id": "1b6cc232-d949-4b50-847d-2411a045d9b1",
+      "slug": "tak-replay-plugin-mI31D0ZhGP",
+      "collection": "wikis/tak",
+      "title": "TAK Replay -plugin",
+      "breadcrumb": [
+        "TAK Tools for Products",
+        "TAK Replay -plugin"
+      ],
+      "path": "/content/en/pages/wikis/tak/tak-replay-plugin-mI31D0ZhGP.json",
+      "updatedAt": "2026-02-19T13:37:58.117Z",
+      "order": 30
+    },
+    {
+      "id": "e164f6fb-bdb2-4ba2-8543-273d8c59eee1",
+      "slug": "uas-tool-plugin-XfHiHPF6yW",
+      "collection": "wikis/tak",
+      "title": "UAS Tool -plugin",
+      "breadcrumb": [
+        "TAK Tools for Products",
+        "UAS Tool -plugin"
+      ],
+      "path": "/content/en/pages/wikis/tak/uas-tool-plugin-XfHiHPF6yW.json",
+      "updatedAt": "2026-02-19T13:39:01.527Z",
+      "order": 31
+    },
+    {
+      "id": "39b95093-02df-4339-b20f-6c97f717bb36",
+      "slug": "vns-plugin-FWG1Z297lx",
+      "collection": "wikis/tak",
+      "title": "VNS -plugin",
+      "breadcrumb": [
+        "TAK Tools for Products",
+        "VNS -plugin"
+      ],
+      "path": "/content/en/pages/wikis/tak/vns-plugin-FWG1Z297lx.json",
+      "updatedAt": "2026-02-19T13:39:57.138Z",
+      "order": 32
+    },
+    {
+      "id": "1ecb9a01-db8a-4be0-8126-ec6cd4c861e9",
+      "slug": "tak-admin-tools-iuSyeIkpDv",
+      "collection": "wikis/tak",
+      "title": "TAK Admin Tools",
+      "breadcrumb": [
+        "TAK Admin Tools"
+      ],
+      "path": "/content/en/pages/wikis/tak/tak-admin-tools-iuSyeIkpDv.json",
+      "updatedAt": "2026-02-19T13:40:55.028Z",
+      "order": 33
+    },
+    {
+      "id": "851726ac-ccb8-4b41-a33e-aa8d93ccd59c",
+      "slug": "takserver-81IgtOjutZ",
+      "collection": "wikis/tak",
+      "title": "Takserver",
+      "breadcrumb": [
+        "TAK Admin Tools",
+        "Takserver"
+      ],
+      "path": "/content/en/pages/wikis/tak/takserver-81IgtOjutZ.json",
+      "updatedAt": "2026-02-22T10:15:21.798Z",
+      "order": 34
+    },
+    {
+      "id": "bfb60a74-c259-4714-8e69-39f43cec5185",
+      "slug": "basic-ui-HMgE19faE8",
+      "collection": "wikis/tak",
+      "title": "Basic UI",
+      "breadcrumb": [
+        "TAK Admin Tools",
+        "Takserver",
+        "Basic UI"
+      ],
+      "path": "/content/en/pages/wikis/tak/basic-ui-HMgE19faE8.json",
+      "updatedAt": "2026-02-19T13:42:48.355Z",
+      "order": 35
+    },
+    {
+      "id": "50d8c66c-6d0c-4c3b-95b2-c2a265961d75",
+      "slug": "update-server-ota-hyp4E4fwtQ",
+      "collection": "wikis/tak",
+      "title": "Update Server (OTA)",
+      "breadcrumb": [
+        "TAK Admin Tools",
+        "Takserver",
+        "Update Server (OTA)"
+      ],
+      "path": "/content/en/pages/wikis/tak/update-server-ota-hyp4E4fwtQ.json",
+      "updatedAt": "2026-02-19T13:43:52.148Z",
+      "order": 36
+    },
+    {
+      "id": "e78ab753-1ada-4cd2-a69c-86a42742c6af",
+      "slug": "mission-manager-data-sync-HdRqCuoE2v",
+      "collection": "wikis/tak",
+      "title": "Mission Manager (Data Sync)",
+      "breadcrumb": [
+        "TAK Admin Tools",
+        "Takserver",
+        "Mission Manager (Data Sync)"
+      ],
+      "path": "/content/en/pages/wikis/tak/mission-manager-data-sync-HdRqCuoE2v.json",
+      "updatedAt": "2026-02-22T01:29:14.823Z",
+      "order": 37
+    },
+    {
+      "id": "eb555bb7-aa94-4656-9f98-e7ffa430d941",
+      "slug": "device-profiles-gC8aj65Asa",
+      "collection": "wikis/tak",
+      "title": "Device Profiles",
+      "breadcrumb": [
+        "TAK Admin Tools",
+        "Takserver",
+        "Device Profiles"
+      ],
+      "path": "/content/en/pages/wikis/tak/device-profiles-gC8aj65Asa.json",
+      "updatedAt": "2026-02-21T18:53:30.160Z",
+      "order": 38
+    },
+    {
+      "id": "cbfa3cff-6549-416b-8b1a-fe0923752c49",
+      "slug": "advanced-features-fZicZztPG9",
+      "collection": "wikis/tak",
+      "title": "Advanced Features",
+      "breadcrumb": [
+        "TAK Admin Tools",
+        "Advanced Features"
+      ],
+      "path": "/content/en/pages/wikis/tak/advanced-features-fZicZztPG9.json",
+      "updatedAt": "2026-02-19T13:49:50.837Z",
+      "order": 39
+    },
+    {
+      "id": "4f2f19ab-a455-4749-9f2d-2612078bf49f",
+      "slug": "mtx-streaming-QXfsZsE0cX",
+      "collection": "wikis/tak",
+      "title": "MTX - Streaming",
+      "breadcrumb": [
+        "TAK Admin Tools",
+        "Advanced Features",
+        "MTX - Streaming"
+      ],
+      "path": "/content/en/pages/wikis/tak/mtx-streaming-QXfsZsE0cX.json",
+      "updatedAt": "2026-02-19T13:50:37.338Z",
+      "order": 40
+    },
+    {
+      "id": "40648d55-dc1a-44a1-a2e8-e099a4e865a8",
+      "slug": "keycloak-group-management-HbnhaALE1M",
+      "collection": "wikis/tak",
+      "title": "Keycloak - Group Management",
+      "breadcrumb": [
+        "TAK Admin Tools",
+        "Advanced Features",
+        "Keycloak - Group Management"
+      ],
+      "path": "/content/en/pages/wikis/tak/keycloak-group-management-HbnhaALE1M.json",
+      "updatedAt": "2026-02-19T13:52:20.215Z",
+      "order": 41
+    },
+    {
+      "id": "25ae2da2-0c7e-4cf5-b5b4-e3e0ad243eb5",
+      "slug": "usage-models-rFHfmF3UPX",
+      "collection": "wikis/tak",
+      "title": "Usage Models",
+      "breadcrumb": [
+        "Usage Models"
+      ],
+      "path": "/content/en/pages/wikis/tak/usage-models-rFHfmF3UPX.json",
+      "updatedAt": "2026-02-19T13:53:32.518Z",
+      "order": 42
+    },
+    {
+      "id": "7e02b803-4709-4741-b9c6-61bbb0efcc02",
+      "slug": "pvarki-standard-Zg3ybOXwdM",
+      "collection": "wikis/tak",
+      "title": "PVARKI Standard",
+      "breadcrumb": [
+        "Usage Models",
+        "PVARKI Standard"
+      ],
+      "path": "/content/en/pages/wikis/tak/pvarki-standard-Zg3ybOXwdM.json",
+      "updatedAt": "2026-02-19T13:54:13.437Z",
+      "order": 43
+    },
+    {
+      "id": "bf3416b5-d2ca-4dc6-89a2-b48cfca69618",
+      "slug": "takserver-recon-feed-6S3IuBlBTY",
+      "collection": "wikis/tak",
+      "title": "Takserver RECON feed",
+      "breadcrumb": [
+        "Usage Models",
+        "PVARKI Standard",
+        "Takserver RECON feed"
+      ],
+      "path": "/content/en/pages/wikis/tak/takserver-recon-feed-6S3IuBlBTY.json",
+      "updatedAt": "2026-02-20T06:13:21.003Z",
+      "order": 44
+    },
+    {
+      "id": "937b922f-5c37-469d-89df-84ee2b9d7682",
+      "slug": "takserver-groups-fywzxIBI9A",
+      "collection": "wikis/tak",
+      "title": "Takserver Groups",
+      "breadcrumb": [
+        "Usage Models",
+        "PVARKI Standard",
+        "Takserver Groups"
+      ],
+      "path": "/content/en/pages/wikis/tak/takserver-groups-fywzxIBI9A.json",
+      "updatedAt": "2026-02-20T06:14:03.201Z",
+      "order": 45
+    },
+    {
+      "id": "e918e4b5-6088-4244-b076-5bd55f64390f",
+      "slug": "use-cases-7bR2ASRf2x",
+      "collection": "wikis/tak",
+      "title": "Use Cases",
+      "breadcrumb": [
+        "Usage Models",
+        "Use Cases"
+      ],
+      "path": "/content/en/pages/wikis/tak/use-cases-7bR2ASRf2x.json",
+      "updatedAt": "2026-02-20T06:14:54.074Z",
+      "order": 46
+    },
+    {
+      "id": "58a46804-6639-4b5e-a7c0-3056309cb411",
+      "slug": "forwarding-observations-K5fcmMIAnp",
+      "collection": "wikis/tak",
+      "title": "Forwarding Observations",
+      "breadcrumb": [
+        "Usage Models",
+        "Use Cases",
+        "Forwarding Observations"
+      ],
+      "path": "/content/en/pages/wikis/tak/forwarding-observations-K5fcmMIAnp.json",
+      "updatedAt": "2026-02-20T06:17:12.644Z",
+      "order": 47
+    },
+    {
+      "id": "2cd1f565-0bd6-4041-8b60-35466dfc3d34",
+      "slug": "what-is-mtx-dfU8aHguP1",
+      "collection": "wikis/mtx",
+      "title": "What is MTX",
+      "breadcrumb": [
+        "What is MTX"
+      ],
+      "path": "/content/en/pages/wikis/mtx/what-is-mtx-dfU8aHguP1.json",
+      "updatedAt": "2026-04-12T13:42:17.787Z",
+      "order": 0
+    },
+    {
+      "id": "7f2e085b-7632-40ce-a869-ccc4df39103d",
+      "slug": "stream-publishing-and-watching-eZsoEzNcMs",
+      "collection": "wikis/mtx",
+      "title": "Stream Publishing and Watching",
+      "breadcrumb": [
+        "Stream Publishing and Watching"
+      ],
+      "path": "/content/en/pages/wikis/mtx/stream-publishing-and-watching-eZsoEzNcMs.json",
+      "updatedAt": "2026-02-16T08:35:05.680Z",
+      "order": 1
+    },
+    {
+      "id": "ac3efdab-2ded-45eb-a5b9-49d040c52194",
+      "slug": "tools-mC9QVIwoN3",
+      "collection": "wikis/mtx",
+      "title": "Tools",
+      "breadcrumb": [
+        "Tools"
+      ],
+      "path": "/content/en/pages/wikis/mtx/tools-mC9QVIwoN3.json",
+      "updatedAt": "2026-02-19T13:08:24.847Z",
+      "order": 2
+    },
+    {
+      "id": "c7881f4e-d267-4d64-8946-cf3b1f8ebc25",
+      "slug": "opentak-icu-6hPftpHVcX",
+      "collection": "wikis/mtx",
+      "title": "Opentak ICU",
+      "breadcrumb": [
+        "Tools",
+        "Opentak ICU"
+      ],
+      "path": "/content/en/pages/wikis/mtx/opentak-icu-6hPftpHVcX.json",
+      "updatedAt": "2026-02-16T08:36:14.562Z",
+      "order": 3
+    },
+    {
+      "id": "4d2c973a-179c-4706-b4e8-a372d353c50e",
+      "slug": "uas-tool-streaming-nxo5zBYr3D",
+      "collection": "wikis/mtx",
+      "title": "UAS Tool Streaming",
+      "breadcrumb": [
+        "Tools",
+        "UAS Tool Streaming"
+      ],
+      "path": "/content/en/pages/wikis/mtx/uas-tool-streaming-nxo5zBYr3D.json",
+      "updatedAt": "2026-03-05T07:50:39.905Z",
+      "order": 4
+    },
+    {
+      "id": "aa870c3f-5d61-41ec-8879-d398ad286448",
+      "slug": "overview-vYOjfpdwjs",
+      "collection": "dev",
+      "title": "Overview",
+      "breadcrumb": [
+        "Overview"
+      ],
+      "path": "/content/en/pages/dev/overview-vYOjfpdwjs.json",
+      "updatedAt": "2026-06-02T06:53:32.414Z",
+      "order": 0
+    },
+    {
+      "id": "134aff5a-b4b4-4c2f-a494-c61d1e7a8a14",
+      "slug": "architecture-IOuPq9WIIb",
+      "collection": "dev",
+      "title": "Architecture",
+      "breadcrumb": [
+        "Architecture"
+      ],
+      "path": "/content/en/pages/dev/architecture-IOuPq9WIIb.json",
+      "updatedAt": "2026-06-02T06:52:37.018Z",
+      "order": 1
+    },
+    {
+      "id": "6c320d9e-dad4-4ed8-8026-94620b6084ff",
+      "slug": "development-guide-cXwaZVMJSd",
+      "collection": "dev",
+      "title": "Development Guide",
+      "breadcrumb": [
+        "Development Guide"
+      ],
+      "path": "/content/en/pages/dev/development-guide-cXwaZVMJSd.json",
+      "updatedAt": "2026-06-02T06:52:53.350Z",
+      "order": 2
+    },
+    {
+      "id": "2aeb4f63-0d3d-407c-9a8b-e452e9c36b0b",
+      "slug": "integration-guide-xrzqbaaOre",
+      "collection": "dev",
+      "title": "Integration Guide",
+      "breadcrumb": [
+        "Integration Guide"
+      ],
+      "path": "/content/en/pages/dev/integration-guide-xrzqbaaOre.json",
+      "updatedAt": "2026-06-02T06:53:05.461Z",
+      "order": 3
+    },
+    {
+      "id": "5b08e73e-4ff5-4738-8d9c-e077f5dc7da1",
+      "slug": "operating-guide-HWk7wA10AV",
+      "collection": "dev",
+      "title": "Operating Guide",
+      "breadcrumb": [
+        "Operating Guide"
+      ],
+      "path": "/content/en/pages/dev/operating-guide-HWk7wA10AV.json",
+      "updatedAt": "2026-06-02T06:50:51.165Z",
+      "order": 4
     }
   ]
 }

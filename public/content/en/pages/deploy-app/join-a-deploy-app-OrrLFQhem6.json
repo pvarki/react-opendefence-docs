@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "eb8c5e3c-3fb2-4d0f-974e-27b3140d861e",
+  "slug": "join-a-deploy-app-OrrLFQhem6",
+  "collection": "deploy-app",
+  "locale": "en",
+  "title": "Join a Deploy App",
+  "breadcrumb": [
+    "MacOS",
+    "User Guide",
+    "Join a Deploy App"
+  ],
+  "createdAt": "2026-01-23T20:08:51.268Z",
+  "updatedAt": "2026-02-27T08:34:36.287Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<ul>\n<li>Receive Invite link or scan QR code\n<ul>\n<li>Input Callsign\n<ul>\n<li>Open Callsign.pfx file and import it\n<ul>\n<li>Connect to Deploy App with Certificate\n<ul>\n<li>Use Applications</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>"
+    }
+  ]
+}

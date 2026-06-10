@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "id": "3cfb86e9-62cd-4416-ad8c-6b87171cbf18",
+  "slug": "point-dropper-verktyget-xa1yEIE7Bn",
+  "collection": "wikis/tak",
+  "locale": "sv",
+  "title": "Point Dropper-verktyget",
+  "breadcrumb": [
+    "TAK-produkter för Användare",
+    "ATAK - Android TAK",
+    "Verktyg och tillägg",
+    "Point Dropper-verktyget"
+  ],
+  "createdAt": "2025-12-08T03:03:38.823Z",
+  "updatedAt": "2026-02-19T13:05:45.399Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Verktygsbeskrivning",
+      "id": "verktygsbeskrivning"
+    },
+    {
+      "depth": 2,
+      "text": "Instruktionsvideor",
+      "id": "instruktionsvideor"
+    },
+    {
+      "depth": 3,
+      "text": "Point Dropper tool (5min)",
+      "id": "point-dropper-tool-5min"
+    },
+    {
+      "depth": 2,
+      "text": "Avsnittet om Point Dropper-verktyget i ATAK-användarhandboken",
+      "id": "avsnittet-om-point-dropper-verktyget-i-atak-användarhandboken"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p><img src=\"/content/images/sv/attachments/4535799356955bab.webp\" alt=\"\">\\n</p>\n<h2 id=\"verktygsbeskrivning\"><a href=\"#verktygsbeskrivning\"><strong>Verktygsbeskrivning</strong></a></h2>\n<p>Intressanta positioner kan läggas till med hjälp av Point Dropper-verktyget. Välj Point Dropper-ikonen för att placera internationellt standardiserade markeringar och andra ikoner på kartan, redigera deras information samt dela markeringarna med andra användare i nätverket.</p>\n<h2 id=\"instruktionsvideor\"><a href=\"#instruktionsvideor\">Instruktionsvideor</a></h2>\n<h3 id=\"point-dropper-tool-5min\"><a href=\"#point-dropper-tool-5min\">Point Dropper tool (5min)</a></h3>"
+    },
+    {
+      "type": "youtube",
+      "videoId": "nst7KB4Elow"
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"avsnittet-om-point-dropper-verktyget-i-atak-användarhandboken\"><a href=\"#avsnittet-om-point-dropper-verktyget-i-atak-användarhandboken\">Avsnittet om Point Dropper-verktyget i ATAK-användarhandboken</a></h2>"
+    }
+  ]
+}

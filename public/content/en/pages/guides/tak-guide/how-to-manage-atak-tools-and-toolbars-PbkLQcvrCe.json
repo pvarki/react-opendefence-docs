@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "id": "4f48651a-6513-4ec9-a22b-af1363663a5d",
+  "slug": "how-to-manage-atak-tools-and-toolbars-PbkLQcvrCe",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "How to manage ATAK Tools and Toolbars",
+  "breadcrumb": [
+    "TAK Clients",
+    "ATAK",
+    "Advanced Features",
+    "How to manage ATAK Tools and Toolbars"
+  ],
+  "createdAt": "2026-01-25T09:59:52.395Z",
+  "updatedAt": "2026-02-21T11:17:25.786Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "ATAK connected to takserver - Basic view, toolbar, tools",
+      "id": "atak-connected-to-takserver---basic-view-toolbar-tools"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>(This tab should not be shown)</p>\n<ul>\n<li>Toolbar settings\n<ul>\n<li>How to get to \"All tools &#x26; plugins\"</li>\n<li>How to create new toolbar \"layout\"</li>\n</ul>\n</li>\n</ul>\n<h1 id=\"atak---basic-view-toolbar-tools\"><a href=\"#atak---basic-view-toolbar-tools\">ATAK - Basic view, toolbar, tools</a></h1>\n<h2 id=\"atak-connected-to-takserver---basic-view-toolbar-tools\"><a href=\"#atak-connected-to-takserver---basic-view-toolbar-tools\">ATAK connected to takserver - Basic view, toolbar, tools</a></h2>"
+    },
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Open ATAK",
+          "layout": "text",
+          "html": "<ul>\n<li>Open ATAK application</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "Basic view",
+          "layout": "text",
+          "html": "",
+          "images": []
+        },
+        {
+          "title": "Basic Toolbar",
+          "layout": "text",
+          "html": "",
+          "images": []
+        },
+        {
+          "title": "Basic Tools 1",
+          "layout": "text",
+          "html": "",
+          "images": []
+        },
+        {
+          "title": "Basic Tools 2",
+          "layout": "text",
+          "html": "",
+          "images": []
+        },
+        {
+          "title": "Done",
+          "layout": "text",
+          "html": "<ul>\n<li>You can close this guide.</li>\n</ul>",
+          "images": []
+        }
+      ]
+    },
+    {
+      "type": "html",
+      "html": "<p>After seeing Basic view, toolbar, tools, continue to <a href=\"/doc/6bf5c875-5082-4f7c-b28c-26b5eea8b0c5\">Blue force tracking</a></p>"
+    }
+  ]
+}

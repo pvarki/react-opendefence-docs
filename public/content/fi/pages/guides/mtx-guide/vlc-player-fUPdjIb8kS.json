@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "f8359615-cc9a-47ab-972b-128643af3af7",
+  "slug": "vlc-player-fUPdjIb8kS",
+  "collection": "guides/mtx-guide",
+  "locale": "fi",
+  "title": "VLC Player",
+  "breadcrumb": [
+    "Katso Striimiä",
+    "VLC Player"
+  ],
+  "createdAt": "2025-12-09T03:44:27.952Z",
+  "updatedAt": "2026-02-24T06:33:20.527Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Katso striimiä VLC Playerillä MTX:n kautta.",
+      "id": "katso-striimiä-vlc-playerillä-mtxn-kautta"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>(this tab should not be shown)</p>\n<p>— Waiting for new UI implementation —</p>\n<h2 id=\"katso-striimiä-vlc-playerillä-mtxn-kautta\"><a href=\"#katso-striimiä-vlc-playerillä-mtxn-kautta\">Katso striimiä VLC Playerillä MTX:n kautta.</a></h2>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"></span></code></pre>",
+      "lang": "markdown"
+    }
+  ]
+}

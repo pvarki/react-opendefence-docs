@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "id": "9d111355-07d3-411a-90b3-33c5c560a1e6",
+  "slug": "contacts-geochat-tool-He6gLKQ18V",
+  "collection": "wikis/tak",
+  "locale": "en",
+  "title": "Contacts / GeoChat tool",
+  "breadcrumb": [
+    "TAK Products for Users",
+    "WinTAK - Windows TAK",
+    "Tools and functions",
+    "Contacts / GeoChat tool"
+  ],
+  "createdAt": "2025-09-14T15:14:31.514Z",
+  "updatedAt": "2026-02-19T13:26:17.203Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Tool Description",
+      "id": "tool-description"
+    },
+    {
+      "depth": 2,
+      "text": "Contacts / GeoChat -tool section from WinTAK manual",
+      "id": "contacts--geochat--tool-section-from-wintak-manual"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "src": "/content/images/en/attachments/25e331c17ee17a21.webp",
+      "alt": "",
+      "width": 218,
+      "height": 161
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"tool-description\"><a href=\"#tool-description\"><strong>Tool Description</strong></a></h2>\n<p>The Contacts list includes a variety of ways in which a user may communicate with other users on the local network or TAK Server. A default communication type (shown in the last column) may be selected and used until another type of communication is selected.</p>\n<h2 id=\"contacts--geochat--tool-section-from-wintak-manual\"><a href=\"#contacts--geochat--tool-section-from-wintak-manual\">Contacts / GeoChat -tool section from WinTAK manual</a></h2>"
+    },
+    {
+      "type": "pdf",
+      "src": "attachments/912fb378-e4a7-48cc-b806-856e1ca303aa.pdf",
+      "title": "WinTAK 5.5 Contacts - GeoChat.pdf"
+    }
+  ]
+}

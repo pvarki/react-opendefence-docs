@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 1,
+  "id": "e78ab753-1ada-4cd2-a69c-86a42742c6af",
+  "slug": "mission-manager-data-sync-HdRqCuoE2v",
+  "collection": "wikis/tak",
+  "locale": "en",
+  "title": "Mission Manager (Data Sync)",
+  "breadcrumb": [
+    "TAK Admin Tools",
+    "Takserver",
+    "Mission Manager (Data Sync)"
+  ],
+  "createdAt": "2025-09-07T09:56:51.587Z",
+  "updatedAt": "2026-02-22T01:29:14.823Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Managing Missions",
+      "id": "managing-missions"
+    },
+    {
+      "depth": 3,
+      "text": "Create a Mission",
+      "id": "create-a-mission"
+    },
+    {
+      "depth": 3,
+      "text": "Delete Mission / Archive",
+      "id": "delete-mission--archive"
+    },
+    {
+      "depth": 3,
+      "text": "Edit Mission",
+      "id": "edit-mission"
+    },
+    {
+      "depth": 3,
+      "text": "Changing User Rights",
+      "id": "changing-user-rights"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Missions (Data Sync Feeds) are managed withing Mission Manager inside takserver UI.</p>\n<p>Mission Manager can be found  at <a href=\"https://tak.server.fi:8443/Marti/MissionManager.html\" target=\"_blank\" rel=\"noopener noreferrer\">https://tak.server.fi:8443/Marti/MissionManager.html</a></p>"
+    },
+    {
+      "type": "image",
+      "src": "/content/images/en/attachments/720335fb80ca3b57.webp",
+      "alt": "",
+      "width": 1448,
+      "height": 540
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"managing-missions\"><a href=\"#managing-missions\">Managing Missions</a></h2>\n<p>Managing the Missions (Data Sync - Feeds) is done withing Takserver or with TAK Products in Data Sync tool. For Managing the Missions the user need either Owner or Write user rights for the feed. If you want to change your user rights check <strong>Change User Rights</strong></p>"
+    },
+    {
+      "type": "image",
+      "src": "/content/images/en/attachments/c63873ae5f463e2d.webp",
+      "alt": "",
+      "width": 1463,
+      "height": 532
+    },
+    {
+      "type": "html",
+      "html": "<h3 id=\"create-a-mission\"><a href=\"#create-a-mission\"><strong>Create a Mission</strong></a></h3>\n<p>Administrators (Admin users) can create new missions in the Takserver Mission Manager view. Select <strong>+ ADD</strong> and fill in the desired settings for the feed.</p>\n<p>If the <em>defaultRole</em> is set to <em>ReadOnly</em>, you must assign one or more users to the Owner and/or ReadWrite roles. See <strong>Change User Rights</strong> for instructions.</p>\n<p>The main settings for a mission are:</p>\n<ul>\n<li><strong>Name</strong></li>\n<li><strong>Optional Password</strong></li>\n<li><strong>defaultRole</strong></li>\n<li><strong>Groups</strong></li>\n</ul>\n<p>The <strong>defaultRole</strong> defines the default user permissions for users who subscribe to the feed: <em>ReadOnly, ReadWrite, Owner</em>, etc.</p>\n<p>The <strong>Groups</strong> setting defines which Takserver groups can see the feed and are able to subscribe to it.</p>"
+    },
+    {
+      "type": "image",
+      "src": "/content/images/en/attachments/5abe50af29dbf227.webp",
+      "alt": "",
+      "width": 603,
+      "height": 611
+    },
+    {
+      "type": "html",
+      "html": "<h3 id=\"delete-mission--archive\"><a href=\"#delete-mission--archive\">Delete Mission / Archive</a></h3>\n<p>Deleting Missions is done with selecting the feeds and choosing Delete. The deleted feeds are kept in the <strong>Archived Missions</strong> so the data hasn't been removed from the server.</p>"
+    },
+    {
+      "type": "image",
+      "src": "/content/images/en/attachments/c63873ae5f463e2d.webp",
+      "alt": "",
+      "width": 1463,
+      "height": 532
+    },
+    {
+      "type": "html",
+      "html": "<h3 id=\"edit-mission\"><a href=\"#edit-mission\">Edit Mission</a></h3>\n<p>Editing mission via takserver is done from the Mission Manager, choose the feeds that are desired to change and change the settings. Select <strong>Save and Close</strong> after the changes are done.</p>"
+    },
+    {
+      "type": "image",
+      "src": "/content/images/en/attachments/d3cc0d829d12885f.webp",
+      "alt": "",
+      "width": 603,
+      "height": 1062
+    },
+    {
+      "type": "html",
+      "html": "<h3 id=\"changing-user-rights\"><a href=\"#changing-user-rights\"><strong>Changing User Rights</strong></a></h3>\n<p>If the <strong>RECON</strong> feed needs to be <em>ReadOnly</em> for regular users, at least one administrator must be assigned the <strong>Owner</strong> role for the feed so they can manage it.</p>\n<p>To assign a user the Owner role through Takserver:</p>\n<ol>\n<li>Temporarily set the mission's <strong>defaultRole</strong> to <strong>Owner</strong></li>\n<li>Have the desired user subscribe to the feed → they will receive Owner rights ( Example one command post user)</li>\n<li>Once all required users have the appropriate roles, you may return the defaultRole setting to the desired value for other users</li>\n</ol>\n<p><strong>Owner users can, withing the Data Sync plugin:</strong></p>\n<ul>\n<li>change other users' roles</li>\n<li>manage users by inviting them to the mission or removing them from it</li>\n</ul>\n<p>Changing roles is done in the feed settings under the <strong>Active Members</strong> menu using the key icon.</p>"
+    },
+    {
+      "type": "image",
+      "src": "/content/images/en/attachments/b49066f9459187ed.webp",
+      "alt": "",
+      "width": 602,
+      "height": 1073
+    },
+    {
+      "type": "html",
+      "html": "<h4 id=\"atak-feed-member-user-role-editing\"><a href=\"#atak-feed-member-user-role-editing\">ATAK feed member user role editing</a></h4>"
+    },
+    {
+      "type": "image",
+      "src": "/content/images/en/attachments/ecc18a14361c6156.webp",
+      "alt": "",
+      "width": 1080,
+      "height": 1981
+    },
+    {
+      "type": "html",
+      "html": "<h4 id=\"wintak-feed-member-user-role-editing\"><a href=\"#wintak-feed-member-user-role-editing\">WinTAK Feed member user role editing</a></h4>\n<ul>\n<li>Feed Settings</li>\n</ul>"
+    },
+    {
+      "type": "image",
+      "src": "/content/images/en/attachments/7c4f2ae98746c229.webp",
+      "alt": "",
+      "width": 349,
+      "height": 229
+    },
+    {
+      "type": "html",
+      "html": "<ul>\n<li>\n<p>Feed Members</p>\n<p><img src=\"/content/images/en/attachments/1d323b2fda10f320.webp\" alt=\"\" title=\" =458x418\"></p>\n</li>\n<li>\n<p>Change roles</p>\n<p><img src=\"/content/images/en/attachments/a71e08e6483fb4fa.webp\" alt=\"\" title=\" =381x414\"></p>\n</li>\n<li>\n<p>Edit roles</p>\n</li>\n</ul>"
+    },
+    {
+      "type": "image",
+      "src": "/content/images/en/attachments/d259a8a0ed44b356.webp",
+      "alt": "",
+      "width": 318,
+      "height": 162
+    }
+  ]
+}

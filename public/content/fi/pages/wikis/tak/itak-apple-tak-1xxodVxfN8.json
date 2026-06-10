@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "25c7aa6e-391e-436d-bf18-7ba542dba557",
+  "slug": "itak-apple-tak-1xxodVxfN8",
+  "collection": "wikis/tak",
+  "locale": "fi",
+  "title": "iTAK - Apple TAK",
+  "breadcrumb": [
+    "TAK Tuotteet Käyttäjille",
+    "iTAK - Apple TAK"
+  ],
+  "createdAt": "2025-12-07T23:16:40.473Z",
+  "updatedAt": "2026-02-19T13:13:48.829Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Tuote Saatavilla",
+      "id": "tuote-saatavilla"
+    },
+    {
+      "depth": 2,
+      "text": "Tuotekuvaus",
+      "id": "tuotekuvaus"
+    },
+    {
+      "depth": 3,
+      "text": "iTAKin ominaisuuksia:",
+      "id": "itakin-ominaisuuksia"
+    },
+    {
+      "depth": 3,
+      "text": "Järjestelmävaatimukset",
+      "id": "järjestelmävaatimukset"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "src": "/content/images/fi/attachments/ad41f3915303b0ea.webp",
+      "alt": "",
+      "caption": "=512x",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "type": "image",
+      "src": "/content/images/fi/attachments/be8344190b433dbf.webp",
+      "alt": "",
+      "caption": "=643x",
+      "width": 643,
+      "height": 297
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"tuote-saatavilla\"><a href=\"#tuote-saatavilla\">Tuote Saatavilla</a></h2>\n<p><a href=\"https://apps.apple.com/fi/app/itak/id1561656396\" target=\"_blank\" rel=\"noopener noreferrer\">https://apps.apple.com/fi/app/itak/id1561656396</a></p>\n<h2 id=\"tuotekuvaus\"><a href=\"#tuotekuvaus\">Tuotekuvaus</a></h2>\n<p>Yhteensopiva KOKO TAK-ekosysteemin kanssa (TAK Server, WinTAK, ATAK, WebTAK)</p>\n<p>Team Awareness Kit (TAK) -sovellus (tunnetaan Yhdysvaltain puolustusministeriössä nimellä Tactical Assault Kit):</p>\n<p>iTAK on yhteistoiminnallinen paikkatietosovellus, joka näyttää tiimisi sijainnit, sensoritiedot, videot, chatin ja paljon muuta reaaliajassa. iTAK tukee puolustusministeriön (DoD) ja kaupallisen sektorin standardeja kuvakkeille, sensoritiedoille ja viestinnälle. Data voidaan esiladata iTAKiin tai ladata verkon kautta (TAK Serverin kautta), kun se on saatavilla.</p>\n<h3 id=\"itakin-ominaisuuksia\"><a href=\"#itakin-ominaisuuksia\">iTAKin ominaisuuksia:</a></h3>\n<p>• Verkkokartat ja offline-kartat (useimmat standardiformaatit), kartat ladattavissa suoraan sovellukseen\\n• Blue Force / tiimin seuranta (BFT)\\n• Yhteistyöllinen kartoitus: pisteet, piirrokset, kiinnostavat sijainnit\\n• KML-, KMZ- ja GeoPDF-ylitysten tuonti ja näyttäminen\\n• Sijaintien merkintä ja jakaminen, valokuvien liittäminen\\n• Chat, tiedostojen jakaminen, valokuvien jakaminen\\n• Reaaliaikainen videolähetys ja videolinkkien jakaminen\\n• \"Spotted map\" – merkitse ja jaa useita sijainteja kartalla\\n• Digitaalinen osoitin – nopea kohteiden merkintä ja jakaminen tiimille\\n• Navigointi: kävely/vaellus, ajo, hyödyllinen myös lentotoiminnassa ja ilma–maa-yhteistoiminnassa\\n• Keskitys itseesi tai muihin kohteisiin (esim. toinen verkon käyttäjä)\\n• Etäisyys- ja suuntatyökalut\\n• Tiimien hätämajakkaominaisuudet\\n• Muokattava työkalupalkki\\n• 3D-näkymä\\n• Kaikki data on suojattua ja täysin yhteensopivaa TAK-ekosysteemin kanssa (ATAK, TAK Server, WinTAK)\\n• Soveltuu lainvalvontaan, ensivasteeseen, metsästykseen, kalastukseen, lintujen tarkkailuun ja luontokohteiden kartoitukseen</p>\n<h3 id=\"järjestelmävaatimukset\"><a href=\"#järjestelmävaatimukset\"><strong>Järjestelmävaatimukset</strong></a></h3>\n<p>Käyttöjärjestelmä: iOS 17 tai uudempi.</p>"
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 1,
+  "id": "847657a8-f0ca-40d5-98d5-a5f4a0383147",
+  "slug": "ga-med-i-en-deploy-app-Weat7nbJuF",
+  "collection": "deploy-app",
+  "locale": "sv",
+  "title": "Gå med i en Deploy App",
+  "breadcrumb": [
+    "Android",
+    "Användarguide",
+    "Gå med i en Deploy App"
+  ],
+  "createdAt": "2026-02-17T08:34:40.686Z",
+  "updatedAt": "2026-02-18T05:50:24.087Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Få åtkomst",
+          "layout": "image-left",
+          "html": "<p>Det finns flera alternativ för att gå med i instansen:</p>\n<ul>\n<li>Skanna QR-kod (Öppnar nästa sida omedelbart)</li>\n<li>Länk (Öppnar nästa sida omedelbart)</li>\n<li>Länk + manuell kod (Öppnar sidan till vänster)\nAnvänd den metod som används inom din organisation.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/dadcfbd89ded782d.webp",
+              "width": 2560,
+              "height": 5712
+            }
+          ]
+        },
+        {
+          "title": "Smeknamn",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Ge dig själv ett smeknamn. Det bör vara något som gör att endast din organisation kan identifiera dig.</li>\n<li>Detta kommer att användas i alla tjänster.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/97716def18fe2cd1.webp",
+              "width": 2560,
+              "height": 5712
+            }
+          ]
+        },
+        {
+          "title": "Väntrum",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Visa QR-koden för administratören eller dela länken med hen.</li>\n<li>När administratören har godkänt dig kan du fortsätta.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/d623c642e3f7a04a.webp",
+              "width": 2561,
+              "height": 5712
+            }
+          ]
+        },
+        {
+          "title": "Instruktioner",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Deploy App har inbyggda instruktioner som guidar användare och lyfter fram de viktigaste funktionerna.</li>\n<li>Denna guide går igenom installationen av certifikatet.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/d986be1a189773d8.webp",
+              "width": 2561,
+              "height": 5712
+            }
+          ]
+        },
+        {
+          "title": "Ladda ner certifikat",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Detta fungerar som din tillgång till tjänsterna.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/0b81e235ea4e786c.webp",
+              "width": 2560,
+              "height": 5712
+            }
+          ]
+        },
+        {
+          "title": "Installera certifikat",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Ditt smeknamn fungerar som ditt lösenord.</li>\n<li>Skriv in det och tryck på OK tills du är tillbaka i Deploy App.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/1544edd270bef5ff.webp",
+              "width": 2560,
+              "height": 5712
+            }
+          ]
+        },
+        {
+          "title": "Logga in med certifikat",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Tryck på \"Fortsätt med nyckeln\".</li>\n<li>När du blir ombedd att välja ett certifikat, kontrollera att ditt smeknamn är valt och logga in genom att trycka på \"Välj\".</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/9795133a058ac507.webp",
+              "width": 2560,
+              "height": 5712
+            }
+          ]
+        },
+        {
+          "title": "Klart",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Nu kan du börja använda apparna.</li>\n<li>Deploy App visar instruktioner de första gångerna, men du hittar fler guider på denna webbplats.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/e95f62e7a230de35.webp",
+              "width": 2560,
+              "height": 5712
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

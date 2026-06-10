@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "id": "4f3fd3c2-b03c-4ecb-9fc9-87177e07dcbb",
+  "slug": "tak-replay-plugin-kodpUReaKa",
+  "collection": "wikis/tak",
+  "locale": "en",
+  "title": "TAK Replay -plugin",
+  "breadcrumb": [
+    "TAK Products for Users",
+    "WinTAK - Windows TAK",
+    "Tools and functions",
+    "TAK Replay -plugin"
+  ],
+  "createdAt": "2025-09-14T14:54:38.147Z",
+  "updatedAt": "2026-02-19T13:27:56.117Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Plugin Description",
+      "id": "plugin-description"
+    },
+    {
+      "depth": 3,
+      "text": "TAK Replay Plugin manual for WinTAK",
+      "id": "tak-replay-plugin-manual-for-wintak"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "src": "/content/images/en/attachments/aa2e72c8a045629f.webp",
+      "alt": "",
+      "width": 310,
+      "height": 310
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"plugin-description\"><a href=\"#plugin-description\"><strong>Plugin Description</strong></a></h2>\n<p>TAK Replay allows users to record map events and chats in real time to replay later. The recording area can be customized by zoom level and viewing region. Each recording can be replayed in a Timeline Viewer that allows the user to view events in real or accelerated time. Additionally, users can download and save from the TAK Server all map events and chats that occurred during a user-specified time frame.</p>\n<h3 id=\"tak-replay-plugin-manual-for-wintak\"><a href=\"#tak-replay-plugin-manual-for-wintak\">TAK Replay Plugin manual for WinTAK</a></h3>"
+    },
+    {
+      "type": "pdf",
+      "src": "attachments/f593719d-a9d8-44a2-8393-c4aa806256e2.pdf",
+      "title": "WinTAK_TAK Replay User Guide.pdf"
+    }
+  ]
+}

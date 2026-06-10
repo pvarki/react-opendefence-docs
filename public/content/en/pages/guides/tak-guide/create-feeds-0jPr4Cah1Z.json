@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "id": "fb6567c8-d5b4-48f4-b782-71d384dc5e63",
+  "slug": "create-feeds-0jPr4Cah1Z",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "Create Feeds",
+  "breadcrumb": [
+    "TAK Clients",
+    "WinTAK",
+    "Advanced Features",
+    "Create Feeds"
+  ],
+  "createdAt": "2025-12-05T22:05:59.420Z",
+  "updatedAt": "2026-02-22T10:35:55.634Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Command Post User?",
+          "layout": "text",
+          "html": "<ul>\n<li>When you are using WinTAK you are very likely a command post / HQ user.</li>\n<li>You are responsible for managing and creating feeds.</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "Creating Feeds",
+          "layout": "text",
+          "html": "<ul>\n<li>Create feeds for either delivering your plans or to start a continuous sharing of information.</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "The Data Sync Home - Overlay Manager",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Tap the Data Sync New feed symbol to start.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/7d43be69d5f05b10.webp",
+              "width": 166,
+              "height": 100
+            }
+          ]
+        },
+        {
+          "title": "Creating Feed - Options",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>New feed creation form</li>\n<li>On the next pages are more detailed descriptions</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/297eac18aa76195d.webp",
+              "width": 384,
+              "height": 418
+            }
+          ]
+        },
+        {
+          "title": "Name your Feed",
+          "layout": "text",
+          "html": "<ul>\n<li>Name: Be descriptive. The example name points out that the feed contains a plan for logistics.</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "Choose Group",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Next, tap the Group selector to choose which group can access your feed.</li>\n<li>Default value uses default (all TAK users)</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/5ab0f68b09312587.webp",
+              "width": 380,
+              "height": 178
+            }
+          ]
+        },
+        {
+          "title": "Choose Default Role",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Choose what suits your purpose best.</li>\n<li>Subscriber means that all users can send and read from a feed.</li>\n<li>Read-only means that only owners can send to the feed.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/10c37e6dbeda685e.webp",
+              "width": 358,
+              "height": 113
+            }
+          ]
+        },
+        {
+          "title": "Password",
+          "layout": "text",
+          "html": "<ul>\n<li>Optionally, you can define a password for your feed to restrict access.</li>\n<li>You should carefully consider when to use a password.</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "Describe your Feed",
+          "layout": "text",
+          "html": "<ul>\n<li>By tapping Description, you may describe your feed. That helps.</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "Hashtags",
+          "layout": "text",
+          "html": "<ul>\n<li>Optionally, you could write some hashtags for your feed. That could help in analyzing data on your server.</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "New Feed Created!",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Create feed!</li>\n<li>People from your server can now subscribe to your feed.</li>\n</ul>\n<hr>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/f101e12b1767b4a0.webp",
+              "width": 398,
+              "height": 424
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "html",
+      "html": "<p>\\</p>"
+    }
+  ]
+}

@@ -5,20 +5,572 @@
   "items": [
     {
       "type": "doc",
-      "id": "tak-intro-fixture11",
-      "label": "TAK — Introduction",
-      "slug": "tak-intro-fixture11"
+      "id": "deploy-app-tak-aFY9LCZCf0",
+      "label": "Deploy App - TAK",
+      "slug": "deploy-app-tak-aFY9LCZCf0"
     },
     {
       "type": "group",
-      "id": "android",
-      "label": "Android",
+      "id": "tak-clients-IGYQEK6iZl",
+      "label": "TAK Clients",
       "children": [
         {
           "type": "doc",
-          "id": "atak-install-fixture12",
-          "label": "Install ATAK on Android",
-          "slug": "atak-install-fixture12"
+          "id": "tak-clients-IGYQEK6iZl",
+          "label": "TAK Clients",
+          "slug": "tak-clients-IGYQEK6iZl"
+        },
+        {
+          "type": "doc",
+          "id": "atak-sGxUIXpQlU",
+          "label": "ATAK",
+          "slug": "atak-sGxUIXpQlU"
+        },
+        {
+          "type": "doc",
+          "id": "start-FxbN2wcFUs",
+          "label": "Start",
+          "slug": "start-FxbN2wcFUs"
+        },
+        {
+          "type": "doc",
+          "id": "what-is-tak-hZw2wUmL7g",
+          "label": "What is TAK?",
+          "slug": "what-is-tak-hZw2wUmL7g"
+        },
+        {
+          "type": "doc",
+          "id": "start-from-download-bJC3Opax4P",
+          "label": "Start from Download",
+          "slug": "start-from-download-bJC3Opax4P"
+        },
+        {
+          "type": "doc",
+          "id": "importing-server-connection-PQ4dCV2SYR",
+          "label": "Importing Server Connection",
+          "slug": "importing-server-connection-PQ4dCV2SYR"
+        },
+        {
+          "type": "doc",
+          "id": "load-atak-plugins-xBeVkYsFjI",
+          "label": "Load ATAK Plugins",
+          "slug": "load-atak-plugins-xBeVkYsFjI"
+        },
+        {
+          "type": "doc",
+          "id": "basic-features-pDRdN25Lk6",
+          "label": "Basic Features",
+          "slug": "basic-features-pDRdN25Lk6"
+        },
+        {
+          "type": "doc",
+          "id": "basic-view-tools-and-toolbar-juXbYsGMih",
+          "label": "Basic view, tools and toolbar",
+          "slug": "basic-view-tools-and-toolbar-juXbYsGMih"
+        },
+        {
+          "type": "doc",
+          "id": "blue-force-tracking-vZTVlgAzX8",
+          "label": "Blue force tracking",
+          "slug": "blue-force-tracking-vZTVlgAzX8"
+        },
+        {
+          "type": "doc",
+          "id": "feeds-with-data-sync-thmayduqMx",
+          "label": "Feeds with Data Sync",
+          "slug": "feeds-with-data-sync-thmayduqMx"
+        },
+        {
+          "type": "doc",
+          "id": "point-dropper-markers-lsYmFrTvqH",
+          "label": "Point Dropper - Markers",
+          "slug": "point-dropper-markers-lsYmFrTvqH"
+        },
+        {
+          "type": "doc",
+          "id": "point-dropper-quick-pic-gxAsonzSXL",
+          "label": "Point Dropper - Quick Pic",
+          "slug": "point-dropper-quick-pic-gxAsonzSXL"
+        },
+        {
+          "type": "doc",
+          "id": "geochat-SMWfbwNItT",
+          "label": "GeoChat",
+          "slug": "geochat-SMWfbwNItT"
+        },
+        {
+          "type": "doc",
+          "id": "clear-content-lzrtCD0MdO",
+          "label": "Clear Content",
+          "slug": "clear-content-lzrtCD0MdO"
+        },
+        {
+          "type": "doc",
+          "id": "advanced-features-w8JvOrLVwe",
+          "label": "Advanced Features",
+          "slug": "advanced-features-w8JvOrLVwe"
+        },
+        {
+          "type": "doc",
+          "id": "downloading-maps-for-offline-use-AhUMNQ8mmS",
+          "label": "Downloading Maps for Offline use",
+          "slug": "downloading-maps-for-offline-use-AhUMNQ8mmS"
+        },
+        {
+          "type": "doc",
+          "id": "overlay-manager-how-to-manage-the-views-BVRnLCM7ME",
+          "label": "Overlay Manager - How to manage the views",
+          "slug": "overlay-manager-how-to-manage-the-views-BVRnLCM7ME"
+        },
+        {
+          "type": "doc",
+          "id": "how-to-manage-atak-tools-and-toolbars-PbkLQcvrCe",
+          "label": "How to manage ATAK Tools and Toolbars",
+          "slug": "how-to-manage-atak-tools-and-toolbars-PbkLQcvrCe"
+        },
+        {
+          "type": "doc",
+          "id": "create-routes-and-use-vns-uymW3nDSPE",
+          "label": "Create Routes and use VNS",
+          "slug": "create-routes-and-use-vns-uymW3nDSPE"
+        },
+        {
+          "type": "doc",
+          "id": "create-manage-feeds-z2CpC9Lpan",
+          "label": "Create & Manage Feeds",
+          "slug": "create-manage-feeds-z2CpC9Lpan"
+        },
+        {
+          "type": "doc",
+          "id": "draw-share-plans-fxjT3hDZ5p",
+          "label": "Draw & share Plans",
+          "slug": "draw-share-plans-fxjT3hDZ5p"
+        },
+        {
+          "type": "doc",
+          "id": "lasso-to-add-into-feed-Mt0Vykodea",
+          "label": "Lasso to add into Feed",
+          "slug": "lasso-to-add-into-feed-Mt0Vykodea"
+        },
+        {
+          "type": "doc",
+          "id": "geofences-wgaLkSEvef",
+          "label": "Geofences",
+          "slug": "geofences-wgaLkSEvef"
+        },
+        {
+          "type": "doc",
+          "id": "usage-by-role-2F9bOBgUmG",
+          "label": "Usage by Role",
+          "slug": "usage-by-role-2F9bOBgUmG"
+        },
+        {
+          "type": "doc",
+          "id": "overview-CVNzKhRcKY",
+          "label": "Overview",
+          "slug": "overview-CVNzKhRcKY"
+        },
+        {
+          "type": "doc",
+          "id": "fighter-Jaxg9FOHAs",
+          "label": "Fighter",
+          "slug": "fighter-Jaxg9FOHAs"
+        },
+        {
+          "type": "doc",
+          "id": "use-geochat-for-comms-s20PZmRGw8",
+          "label": "Use Geochat for comms",
+          "slug": "use-geochat-for-comms-s20PZmRGw8"
+        },
+        {
+          "type": "doc",
+          "id": "use-recon-feed-1eKYHfIBys",
+          "label": "Use RECON Feed",
+          "slug": "use-recon-feed-1eKYHfIBys"
+        },
+        {
+          "type": "doc",
+          "id": "command-post-jEe9wSs29A",
+          "label": "Command Post",
+          "slug": "command-post-jEe9wSs29A"
+        },
+        {
+          "type": "doc",
+          "id": "recon-feed-management-y1O0x1g2sf",
+          "label": "RECON Feed Management",
+          "slug": "recon-feed-management-y1O0x1g2sf"
+        },
+        {
+          "type": "doc",
+          "id": "supported-plugins-XdDLDnS5CE",
+          "label": "Supported Plugins",
+          "slug": "supported-plugins-XdDLDnS5CE"
+        },
+        {
+          "type": "doc",
+          "id": "uastool-HDZFE1QhVT",
+          "label": "Uastool",
+          "slug": "uastool-HDZFE1QhVT"
+        },
+        {
+          "type": "doc",
+          "id": "troubleshooting-IC3Nd5qZHr",
+          "label": "Troubleshooting",
+          "slug": "troubleshooting-IC3Nd5qZHr"
+        },
+        {
+          "type": "doc",
+          "id": "wintak-w8mKUfaRBP",
+          "label": "WinTAK",
+          "slug": "wintak-w8mKUfaRBP"
+        },
+        {
+          "type": "doc",
+          "id": "start-gF8MDfsdW9",
+          "label": "Start",
+          "slug": "start-gF8MDfsdW9"
+        },
+        {
+          "type": "doc",
+          "id": "start-from-download-GstcQifMVj",
+          "label": "Start from Download",
+          "slug": "start-from-download-GstcQifMVj"
+        },
+        {
+          "type": "doc",
+          "id": "wintak-already-installed-kCXH9p8keg",
+          "label": "WinTAK Already Installed",
+          "slug": "wintak-already-installed-kCXH9p8keg"
+        },
+        {
+          "type": "doc",
+          "id": "basic-features-pmjQ96x5bI",
+          "label": "Basic Features",
+          "slug": "basic-features-pmjQ96x5bI"
+        },
+        {
+          "type": "doc",
+          "id": "clear-content-gLcPrq5b5J",
+          "label": "Clear Content",
+          "slug": "clear-content-gLcPrq5b5J"
+        },
+        {
+          "type": "doc",
+          "id": "blue-force-tracking-IAAAIJTiqZ",
+          "label": "Blue force tracking",
+          "slug": "blue-force-tracking-IAAAIJTiqZ"
+        },
+        {
+          "type": "doc",
+          "id": "plugin-management-EphDON8hEX",
+          "label": "Plugin Management",
+          "slug": "plugin-management-EphDON8hEX"
+        },
+        {
+          "type": "doc",
+          "id": "data-sync-VswHZNexYA",
+          "label": "Data Sync",
+          "slug": "data-sync-VswHZNexYA"
+        },
+        {
+          "type": "doc",
+          "id": "point-dropper-create-edit-send-wwYK8iDf5w",
+          "label": "Point Dropper, Create, Edit, Send",
+          "slug": "point-dropper-create-edit-send-wwYK8iDf5w"
+        },
+        {
+          "type": "doc",
+          "id": "use-geochat-G4fqV0Y4fg",
+          "label": "Use GeoChat",
+          "slug": "use-geochat-G4fqV0Y4fg"
+        },
+        {
+          "type": "doc",
+          "id": "advanced-features-dUEpnxlGD0",
+          "label": "Advanced Features",
+          "slug": "advanced-features-dUEpnxlGD0"
+        },
+        {
+          "type": "doc",
+          "id": "create-feeds-0jPr4Cah1Z",
+          "label": "Create Feeds",
+          "slug": "create-feeds-0jPr4Cah1Z"
+        },
+        {
+          "type": "doc",
+          "id": "draw-share-plans-gUzuEffh5v",
+          "label": "Draw & share Plans",
+          "slug": "draw-share-plans-gUzuEffh5v"
+        },
+        {
+          "type": "doc",
+          "id": "manage-feeds-62IWBYODOd",
+          "label": "Manage Feeds",
+          "slug": "manage-feeds-62IWBYODOd"
+        },
+        {
+          "type": "doc",
+          "id": "get-alerts-with-geofences-Y1Bgr7UInI",
+          "label": "Get alerts with Geofences",
+          "slug": "get-alerts-with-geofences-Y1Bgr7UInI"
+        },
+        {
+          "type": "doc",
+          "id": "usage-by-role-IWyDTtxCJS",
+          "label": "Usage by Role",
+          "slug": "usage-by-role-IWyDTtxCJS"
+        },
+        {
+          "type": "doc",
+          "id": "overview-G0keHC8NbD",
+          "label": "Overview",
+          "slug": "overview-G0keHC8NbD"
+        },
+        {
+          "type": "doc",
+          "id": "fighter-ZxrplBIys6",
+          "label": "Fighter",
+          "slug": "fighter-ZxrplBIys6"
+        },
+        {
+          "type": "doc",
+          "id": "command-post-Jysu3u7ga3",
+          "label": "Command Post",
+          "slug": "command-post-Jysu3u7ga3"
+        },
+        {
+          "type": "doc",
+          "id": "edit-recon-feed-B7h9QJzZVd",
+          "label": "Edit RECON feed",
+          "slug": "edit-recon-feed-B7h9QJzZVd"
+        },
+        {
+          "type": "doc",
+          "id": "supported-plugins-zl2XZB0u1p",
+          "label": "Supported Plugins",
+          "slug": "supported-plugins-zl2XZB0u1p"
+        },
+        {
+          "type": "doc",
+          "id": "tak-replay-Sy9dQFNBc1",
+          "label": "TAK Replay",
+          "slug": "tak-replay-Sy9dQFNBc1"
+        },
+        {
+          "type": "doc",
+          "id": "troubleshooting-T4SvHjOYgd",
+          "label": "Troubleshooting",
+          "slug": "troubleshooting-T4SvHjOYgd"
+        },
+        {
+          "type": "doc",
+          "id": "itak-bwDYWvqdnY",
+          "label": "iTAK",
+          "slug": "itak-bwDYWvqdnY"
+        },
+        {
+          "type": "doc",
+          "id": "start-sLRG2uavSv",
+          "label": "Start",
+          "slug": "start-sLRG2uavSv"
+        },
+        {
+          "type": "doc",
+          "id": "start-from-download-vQGTWj6wET",
+          "label": "Start from Download",
+          "slug": "start-from-download-vQGTWj6wET"
+        },
+        {
+          "type": "doc",
+          "id": "itak-already-installed-DeEex1hIH2",
+          "label": "iTAK Already Installed",
+          "slug": "itak-already-installed-DeEex1hIH2"
+        },
+        {
+          "type": "doc",
+          "id": "basic-features-StHwTheTn5",
+          "label": "Basic Features",
+          "slug": "basic-features-StHwTheTn5"
+        },
+        {
+          "type": "doc",
+          "id": "blue-force-tracking-NOzCSj3j64",
+          "label": "Blue force tracking",
+          "slug": "blue-force-tracking-NOzCSj3j64"
+        },
+        {
+          "type": "doc",
+          "id": "data-sync-U4cc7UE9hg",
+          "label": "Data Sync",
+          "slug": "data-sync-U4cc7UE9hg"
+        },
+        {
+          "type": "doc",
+          "id": "create-symbols-quick-pics-elqHqV8SW7",
+          "label": "Create Symbols & Quick Pics",
+          "slug": "create-symbols-quick-pics-elqHqV8SW7"
+        },
+        {
+          "type": "doc",
+          "id": "use-geochat-r99lJsOLnK",
+          "label": "Use GeoChat",
+          "slug": "use-geochat-r99lJsOLnK"
+        },
+        {
+          "type": "doc",
+          "id": "usage-by-role-LlQdNcNgkg",
+          "label": "Usage by Role",
+          "slug": "usage-by-role-LlQdNcNgkg"
+        },
+        {
+          "type": "doc",
+          "id": "overview-bPeWx0MdZQ",
+          "label": "Overview",
+          "slug": "overview-bPeWx0MdZQ"
+        },
+        {
+          "type": "doc",
+          "id": "fighter-rf4mMCmmWV",
+          "label": "Fighter",
+          "slug": "fighter-rf4mMCmmWV"
+        },
+        {
+          "type": "doc",
+          "id": "command-post-YxjX9bA9iG",
+          "label": "Command Post",
+          "slug": "command-post-YxjX9bA9iG"
+        },
+        {
+          "type": "doc",
+          "id": "troubleshooting-Pj64UaHAJW",
+          "label": "Troubleshooting",
+          "slug": "troubleshooting-Pj64UaHAJW"
+        },
+        {
+          "type": "doc",
+          "id": "tak-tracker-android-JCZw3YH2nW",
+          "label": "TAK Tracker - Android",
+          "slug": "tak-tracker-android-JCZw3YH2nW"
+        },
+        {
+          "type": "doc",
+          "id": "start-LlfSpMeCW8",
+          "label": "Start",
+          "slug": "start-LlfSpMeCW8"
+        },
+        {
+          "type": "doc",
+          "id": "start-from-download-x9ve2aL7oC",
+          "label": "Start from Download",
+          "slug": "start-from-download-x9ve2aL7oC"
+        },
+        {
+          "type": "doc",
+          "id": "tak-tracker-already-installed-DoVQOAKWVB",
+          "label": "TAK Tracker Already Installed",
+          "slug": "tak-tracker-already-installed-DoVQOAKWVB"
+        },
+        {
+          "type": "doc",
+          "id": "importing-server-connection-URmd6F0UU5",
+          "label": "Importing Server Connection",
+          "slug": "importing-server-connection-URmd6F0UU5"
+        },
+        {
+          "type": "doc",
+          "id": "usage-by-role-KxtjmbM9B1",
+          "label": "Usage by Role",
+          "slug": "usage-by-role-KxtjmbM9B1"
+        },
+        {
+          "type": "doc",
+          "id": "overview-4sA7lVWVtw",
+          "label": "Overview",
+          "slug": "overview-4sA7lVWVtw"
+        },
+        {
+          "type": "doc",
+          "id": "fighter-gUAGHKAtVV",
+          "label": "Fighter",
+          "slug": "fighter-gUAGHKAtVV"
+        },
+        {
+          "type": "doc",
+          "id": "command-post-t2fdgSrk3R",
+          "label": "Command Post",
+          "slug": "command-post-t2fdgSrk3R"
+        },
+        {
+          "type": "doc",
+          "id": "troubleshooting-E1xmJrS5OS",
+          "label": "Troubleshooting",
+          "slug": "troubleshooting-E1xmJrS5OS"
+        },
+        {
+          "type": "doc",
+          "id": "tak-tracker-apple-PmHvleNK0F",
+          "label": "TAK Tracker - Apple",
+          "slug": "tak-tracker-apple-PmHvleNK0F"
+        },
+        {
+          "type": "doc",
+          "id": "start-oZzAX4X7Er",
+          "label": "Start",
+          "slug": "start-oZzAX4X7Er"
+        },
+        {
+          "type": "doc",
+          "id": "start-from-download-5tAQBOfF65",
+          "label": "Start from Download",
+          "slug": "start-from-download-5tAQBOfF65"
+        },
+        {
+          "type": "doc",
+          "id": "tak-tracker-already-installed-DmWqDN5jLp",
+          "label": "TAK Tracker Already Installed",
+          "slug": "tak-tracker-already-installed-DmWqDN5jLp"
+        },
+        {
+          "type": "doc",
+          "id": "tak-features-2eQ2Stir9U",
+          "label": "TAK Features",
+          "slug": "tak-features-2eQ2Stir9U"
+        },
+        {
+          "type": "doc",
+          "id": "send-alerts-jz5xQsdpbH",
+          "label": "Send alerts",
+          "slug": "send-alerts-jz5xQsdpbH"
+        },
+        {
+          "type": "doc",
+          "id": "usage-by-role-FfcECbKYmK",
+          "label": "Usage by Role",
+          "slug": "usage-by-role-FfcECbKYmK"
+        },
+        {
+          "type": "doc",
+          "id": "overview-vqWEyyCxy8",
+          "label": "Overview",
+          "slug": "overview-vqWEyyCxy8"
+        },
+        {
+          "type": "doc",
+          "id": "fighter-xKivECWhVS",
+          "label": "Fighter",
+          "slug": "fighter-xKivECWhVS"
+        },
+        {
+          "type": "doc",
+          "id": "command-post-aX04WiqaZf",
+          "label": "Command Post",
+          "slug": "command-post-aX04WiqaZf"
+        },
+        {
+          "type": "doc",
+          "id": "troubleshooting-4heIv7ZV7m",
+          "label": "Troubleshooting",
+          "slug": "troubleshooting-4heIv7ZV7m"
         }
       ]
     }

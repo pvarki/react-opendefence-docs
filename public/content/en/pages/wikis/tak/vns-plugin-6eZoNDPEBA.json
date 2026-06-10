@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "id": "c4818ab9-c30b-4a81-8abf-741761387f78",
+  "slug": "vns-plugin-6eZoNDPEBA",
+  "collection": "wikis/tak",
+  "locale": "en",
+  "title": "VNS -plugin",
+  "breadcrumb": [
+    "TAK Products for Users",
+    "ATAK - Android TAK",
+    "Tools and functions",
+    "VNS -plugin"
+  ],
+  "createdAt": "2025-09-07T00:12:02.700Z",
+  "updatedAt": "2026-02-19T13:04:08.658Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Plugin Description",
+      "id": "plugin-description"
+    },
+    {
+      "depth": 2,
+      "text": "Instruction Videos",
+      "id": "instruction-videos"
+    },
+    {
+      "depth": 2,
+      "text": "VNS Plugin manual for ATAK",
+      "id": "vns-plugin-manual-for-atak"
+    },
+    {
+      "depth": 3,
+      "text": "ATAK VNS Google Routes API Key",
+      "id": "atak-vns-google-routes-api-key"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "src": "/content/images/en/attachments/0aed24c4dd22ccae.webp",
+      "alt": "",
+      "width": 741,
+      "height": 754
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"plugin-description\"><a href=\"#plugin-description\"><strong>Plugin Description</strong></a></h2>\n<p>The Vehicle Navigation System (VNS) plugin performs two major functions. The first is that it allows routes in ATAK to be aligned to the road system. The second is that it feeds the Augmented Reality System-Navigation (ARES-N) application with vital information, such as the device's location, pertinent situational awareness markers, and turn-by-turn style driving directions.</p>\n<p>Road system data is procured using the PAR osm-routing-engine project.</p>\n<h2 id=\"instruction-videos\"><a href=\"#instruction-videos\">Instruction Videos</a></h2>\n<h4 id=\"atak-vns-plugin\"><a href=\"#atak-vns-plugin\">ATAK VNS PLUGIN</a></h4>"
+    },
+    {
+      "type": "youtube",
+      "videoId": "qpDTcvFwdb8"
+    },
+    {
+      "type": "html",
+      "html": "<h4 id=\"how-to-use-a-google-cloud-api-key-for-atak-vns-plugin\"><a href=\"#how-to-use-a-google-cloud-api-key-for-atak-vns-plugin\">How to use a Google Cloud API Key for ATAK VNS Plugin</a></h4>"
+    },
+    {
+      "type": "youtube",
+      "videoId": "IbIRl0D4CGU"
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"vns-plugin-manual-for-atak\"><a href=\"#vns-plugin-manual-for-atak\">VNS Plugin manual for ATAK</a></h2>"
+    },
+    {
+      "type": "pdf",
+      "src": "attachments/5774a3dc-c647-408b-8fef-31ab4c0ddaba.pdf",
+      "title": "ATAK-Plugin-vns-3.10-8136253f-5.5.0-civ-release.apk.pdf"
+    },
+    {
+      "type": "html",
+      "html": "<h3 id=\"atak-vns-google-routes-api-key\"><a href=\"#atak-vns-google-routes-api-key\">ATAK VNS Google Routes API Key</a></h3>"
+    },
+    {
+      "type": "pdf",
+      "src": "attachments/7712fedb-1b1d-4e1d-a6f3-793a783b6fc0.pdf",
+      "title": "ATAK VNS Google Routes API Key.pdf"
+    }
+  ]
+}

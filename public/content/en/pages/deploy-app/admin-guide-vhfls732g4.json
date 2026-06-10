@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "79e0eb88-2060-4672-b65c-0920c8a25de6",
+  "slug": "admin-guide-vhfls732g4",
+  "collection": "deploy-app",
+  "locale": "en",
+  "title": "Admin Guide",
+  "breadcrumb": [
+    "Windows",
+    "Admin Guide"
+  ],
+  "createdAt": "2026-01-23T20:08:17.644Z",
+  "updatedAt": "2026-01-23T20:08:17.644Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>(This tab should not be shown)</p>"
+    }
+  ]
+}

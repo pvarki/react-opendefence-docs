@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "id": "2ca47d8d-0c6b-48c7-ae93-5d8143ab10bf",
+  "slug": "adding-users-GhHcn1knBJ",
+  "collection": "deploy-app",
+  "locale": "en",
+  "title": "Adding Users",
+  "breadcrumb": [
+    "Android",
+    "Admin Guide",
+    "Adding Users"
+  ],
+  "createdAt": "2025-10-06T07:06:43.695Z",
+  "updatedAt": "2026-02-25T07:33:51.306Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>\\</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Adding Users",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Admin tools can be easily accessed from the sidebar</li>\n<li>Select \"Add Users\"</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/541c758c07d68394.webp",
+              "width": 2560,
+              "height": 5712
+            }
+          ]
+        },
+        {
+          "title": "Invite Codes",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Either select a current invite code or create a new one.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/38e3b6a543cc81ca.webp",
+              "width": 2560,
+              "height": 5712
+            }
+          ]
+        },
+        {
+          "title": "Using the invite codes",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Users can scan the QR code from your device.</li>\n<li>You can also share a link or create a easily printable PDF for example.</li>\n<li>Users will be now able to reach the <strong>waiting room</strong>.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/73fade7b10dde60f.webp",
+              "width": 2560,
+              "height": 5712
+            }
+          ]
+        },
+        {
+          "title": "Approve Users",
+          "layout": "image-left",
+          "html": "<ul>\n<li>You should now have users in the <strong>waiting room</strong>.</li>\n<li>You can reach it from the sidebar</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/a2871c27a37df94d.webp",
+              "width": 2560,
+              "height": 5712
+            }
+          ]
+        },
+        {
+          "title": "Approving Users",
+          "layout": "image-left",
+          "html": "<p>You have a few options on approving users:</p>\n<ul>\n<li>Scan QR Code shown on their devices (recommended).</li>\n<li>Click on a user and enter code shown on their device.</li>\n<li>Open a link shared by a user to you.\nWhen accepting users (especially with links) be 100% sure the person is who you think they are. Accepting them gives access to for example troop locations if using TAK.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/a9752158f1a0d710.webp",
+              "width": 2560,
+              "height": 5712
+            }
+          ]
+        },
+        {
+          "title": "Closing an invite code",
+          "layout": "image-left",
+          "html": "<ul>\n<li>For increased security it is wise to either close or disable invite codes when they are not required.</li>\n<li>Code management is opened by pressing the button next to the code.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/c8e9356a6514c842.webp",
+              "width": 2561,
+              "height": 5712
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "html",
+      "html": "<p>\\</p>"
+    }
+  ]
+}

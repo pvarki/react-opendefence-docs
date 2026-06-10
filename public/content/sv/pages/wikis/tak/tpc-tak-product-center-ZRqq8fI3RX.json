@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "11d58e0f-8463-47cc-91d6-45b3c7a76179",
+  "slug": "tpc-tak-product-center-ZRqq8fI3RX",
+  "collection": "wikis/tak",
+  "locale": "sv",
+  "title": "TPC - TAK Product Center",
+  "breadcrumb": [
+    "TAK-produkter för Användare",
+    "TPC - TAK Product Center"
+  ],
+  "createdAt": "2025-12-08T03:03:36.603Z",
+  "updatedAt": "2026-02-19T13:31:11.195Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "TAK-produktcenter, amerikansk statlig organisation",
+      "id": "tak-produktcenter-amerikansk-statlig-organisation"
+    },
+    {
+      "depth": 2,
+      "text": "Kontaktuppgifter:",
+      "id": "kontaktuppgifter"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "src": "/content/images/sv/attachments/a27d2138cd9878f2.webp",
+      "alt": "",
+      "caption": "=225x",
+      "width": 225,
+      "height": 225
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"tak-produktcenter-amerikansk-statlig-organisation\"><a href=\"#tak-produktcenter-amerikansk-statlig-organisation\"><strong>TAK-produktcenter, amerikansk statlig organisation</strong></a></h2>\n<p>TAK Product Center (TPC) är en statlig centralorganisation i USA som utvecklar, underhåller och publicerar lösningar inom Team Awareness Kit-produktfamiljen.</p>\n<h2 id=\"kontaktuppgifter\"><a href=\"#kontaktuppgifter\"><strong>Kontaktuppgifter:</strong></a></h2>\n<ul>\n<li><a href=\"https://tak.gov\" target=\"_blank\" rel=\"noopener noreferrer\">https://tak.gov</a></li>\n<li>company/tak-product-center</li>\n<li>@productctr</li>\n<li>channel/UCT6I35WBkLt3RTzndTjFv1Q</li>\n<li><a href=\"mailto:support@tak.gov\">support@tak.gov</a></li>\n</ul>"
+    }
+  ]
+}

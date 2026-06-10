@@ -1,0 +1,133 @@
+{
+  "schemaVersion": 1,
+  "id": "fed2d9b3-b683-47cf-9c96-560574f5f410",
+  "slug": "opentak-icu-f0iwedgGde",
+  "collection": "guides/mtx-guide",
+  "locale": "fi",
+  "title": "OpenTAK ICU",
+  "breadcrumb": [
+    "Julkaise Striimiä",
+    "OpenTAK ICU"
+  ],
+  "createdAt": "2026-03-05T07:53:31.636Z",
+  "updatedAt": "2026-04-12T12:45:25.222Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Julkaise stream OpenTAK ICU:lla",
+      "id": "julkaise-stream-opentak-iculla"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<h2 id=\"julkaise-stream-opentak-iculla\"><a href=\"#julkaise-stream-opentak-iculla\">Julkaise stream OpenTAK ICU:lla</a></h2>"
+    },
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Avaa Deploy App - MTX",
+          "layout": "text",
+          "html": "<ul>\n<li>Avaa Deploy App MTX</li>\n<li>Valitse \"+ Lisää\"</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "MTX - Streamin käynnistys 1",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Avaa OpenTAK ICU -pudotusvalikko</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/bff529cd206626fd.webp",
+              "width": 1080,
+              "height": 2007
+            }
+          ]
+        },
+        {
+          "title": "MTX - Streamin käynnistys 2",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Valitse \"Asetuksien automaattinen tuonti OpenTAK_ICU:hun\"</li>\n<li>OpenTAK ICU avautuu laitteessasi</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/30b27093ce2a9b8a.webp",
+              "width": 1080,
+              "height": 2002
+            }
+          ]
+        },
+        {
+          "title": "OpenTAK ICU - Ohjeet 1",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Tervetulosivu avautuu. Jos et ole avannut OpenTAK ICU:ta aiemmin, sovellus pyytää käyttöoikeuksia – myönnä kaikki pyydetyt oikeudet.</li>\n<li>Jatka pyyhkäisemällä vasemmalle tai painamalla \">\"</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/9c4a8be9656f88c0.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "OpenTAK ICU - Ohjeet 2",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Suoratoiston asetukset näytetään</li>\n<li>Tarkista, että asetukset ovat oikein (erityisesti palvelin)</li>\n<li>Paina \"Import\" – varo pyyhkäisemästä seuraavaan</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/7c693aed82153c62.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "OpenTAK ICU - Ohjeet 3",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Tarkista, että saat myös ilmoituksen \"Settings Updated Successfully\"</li>\n<li>Jos et saa ilmoitusta, palaa takaisin ja paina \"Import\" uudelleen</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/0a4ec50c875e3f61.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "OpenTAK ICU - Suoratoisto 1",
+          "layout": "image-left",
+          "html": "<ul>\n<li>OpenTAK ICU:n perusnäkymä</li>\n<li>Aloita suoratoisto painamalla \"Nauhoita\"-painiketta</li>\n<li>Muuttaaksesi asetuksia manuaalisesti valitse \"Ratas\"-kuvake</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/b23a282d7658326a.webp",
+              "width": 1080,
+              "height": 2256
+            }
+          ]
+        },
+        {
+          "title": "OpenTAK ICU - Suoratoisto 2",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Kun suoratoisto alkaa, saat ilmoituksen \"Connection success\"</li>\n<li>Jos ilmoitusta ei tule ja bittinopeus ei muutu, yritä tuoda asetukset uudelleen ja tarkista internet-yhteys</li>\n<li>Voit lopettaa suoratoiston \"Pysäytä\"-painikkeella</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/62f1db708a50e846.webp",
+              "width": 1080,
+              "height": 2256
+            }
+          ]
+        },
+        {
+          "title": "Osaat nyt aloittaa suoratoiston",
+          "layout": "text",
+          "html": "<ul>\n<li>Voit sulkea tämän ohjeen.</li>\n</ul>",
+          "images": []
+        }
+      ]
+    },
+    {
+      "type": "html",
+      "html": "<p>Kun olet aloittanut suoratoiston, siirry seuraavaan osioon <a href=\"/doc/53f74fbb-29cf-4abe-b448-93c0ab9674b7\">Katso Striimiä</a></p>"
+    }
+  ]
+}

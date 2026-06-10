@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "8e6c7af5-cc60-4d10-9edf-b45545d5b122",
+  "slug": "bloodhound-verktyget-8bsZHidzuJ",
+  "collection": "wikis/tak",
+  "locale": "sv",
+  "title": "Bloodhound-verktyget",
+  "breadcrumb": [
+    "TAK-produkter för Användare",
+    "ATAK - Android TAK",
+    "Verktyg och tillägg",
+    "Bloodhound-verktyget"
+  ],
+  "createdAt": "2025-12-08T03:03:39.236Z",
+  "updatedAt": "2026-02-19T13:05:05.797Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Verktygsbeskrivning",
+      "id": "verktygsbeskrivning"
+    },
+    {
+      "depth": 2,
+      "text": "Instruktionsvideor",
+      "id": "instruktionsvideor"
+    },
+    {
+      "depth": 3,
+      "text": "Bloodhound Tool (2min)",
+      "id": "bloodhound-tool-2min"
+    },
+    {
+      "depth": 2,
+      "text": "Bloodhound-avsnittet i ATAK-användarhandboken",
+      "id": "bloodhound-avsnittet-i-atak-användarhandboken"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "src": "/content/images/sv/attachments/40aa9ed82f65b372.webp",
+      "alt": "",
+      "width": 121,
+      "height": 122
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"verktygsbeskrivning\"><a href=\"#verktygsbeskrivning\"><strong>Verktygsbeskrivning</strong></a></h2>\n<p>Bloodhound-verktyget ger stöd för att följa och interceptera kartobjekt. Med det kan man välja två punkter på kartan och/eller kartobjekt, och det visar avstånds- och riktningsinformation mellan den valda följaren och målet.</p>\n<h2 id=\"instruktionsvideor\"><a href=\"#instruktionsvideor\">Instruktionsvideor</a></h2>\n<h3 id=\"bloodhound-tool-2min\"><a href=\"#bloodhound-tool-2min\">Bloodhound Tool (2min)</a></h3>"
+    },
+    {
+      "type": "youtube",
+      "videoId": "MazLYBMwsqU"
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"bloodhound-avsnittet-i-atak-användarhandboken\"><a href=\"#bloodhound-avsnittet-i-atak-användarhandboken\">Bloodhound-avsnittet i ATAK-användarhandboken</a></h2>"
+    },
+    {
+      "type": "pdf",
+      "src": "attachments/daaf7514-a184-4c70-bb69-0b34b96584cc.pdf",
+      "title": "ATAK 5.6 Bloodhound.pdf"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "de415c7f-b8bf-4dbc-beea-65848751165b",
+  "slug": "uas-tool-tillagg-zZkY1YhdAX",
+  "collection": "wikis/tak",
+  "locale": "sv",
+  "title": "UAS Tool -tillägg",
+  "breadcrumb": [
+    "TAK-verktyg för Produkter",
+    "UAS Tool -tillägg"
+  ],
+  "createdAt": "2025-12-08T03:03:36.142Z",
+  "updatedAt": "2026-02-19T13:39:12.010Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "TAK-produktsidor för verktyget",
+      "id": "tak-produktsidor-för-verktyget"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "src": "/content/images/sv/attachments/6e0082cb2a785620.webp",
+      "alt": "",
+      "caption": "=671x",
+      "width": 671,
+      "height": 675
+    },
+    {
+      "type": "html",
+      "html": "<p>UAS Tool är ett tillägg som möjliggör integration av obemannade flygsystem (UAS) för förbättrad situationsmedvetenhet (SA), telemetridata, Full Motion Video (FMV) samt stöd för ledning och kontroll (C2).</p>\n<h2 id=\"tak-produktsidor-för-verktyget\"><a href=\"#tak-produktsidor-för-verktyget\">TAK-produktsidor för verktyget</a></h2>\n<ul>\n<li>ATAK <a href=\"/doc/915afbb3-abb3-48cd-a469-974b96718235\">UAS Tool -lisäosa</a></li>\n</ul>"
+    }
+  ]
+}

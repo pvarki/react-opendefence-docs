@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "id": "cf69db54-b795-412a-b111-f201fbd18211",
+  "slug": "data-sync-VswHZNexYA",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "Data Sync",
+  "breadcrumb": [
+    "TAK Clients",
+    "WinTAK",
+    "Basic Features",
+    "Data Sync"
+  ],
+  "createdAt": "2025-12-05T22:05:59.535Z",
+  "updatedAt": "2026-02-22T09:42:31.113Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "1. Read Feeds using Data Sync",
+          "layout": "text",
+          "html": "<ul>\n<li>Data Sync lets you read (and share) map markers and more.</li>\n<li>Feeds are like map layers: subscribe and then tick to see or disable them.</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "2. See What Feeds are Available",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Select Data Sync (arrows icon) on the toolbar</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/7079e1cb26097f5d.webp",
+              "width": 853,
+              "height": 348
+            }
+          ]
+        },
+        {
+          "title": "Subscribe to RECON Feed",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Select your TAK server (if you have many)</li>\n<li>Select the RECON feed</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/452827eba167ad9d.webp",
+              "width": 348,
+              "height": 135
+            }
+          ]
+        },
+        {
+          "title": "Download & Sync",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Select Download and stay synced</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/0f2754820054de57.webp",
+              "width": 393,
+              "height": 241
+            }
+          ]
+        },
+        {
+          "title": "Feed - Connected",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Check that the RECON feed indicator is green</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/f635a664a6b9fa68.webp",
+              "width": 348,
+              "height": 237
+            }
+          ]
+        },
+        {
+          "title": "There's More",
+          "layout": "text",
+          "html": "<ul>\n<li>Creating, sharing and subscribing to Feeds, e.g. for planning and executing a mission, is easy.</li>\n<li>We offer an out of the box setup for efficient data sharing for a military unit.</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "Done",
+          "layout": "text",
+          "html": "<ul>\n<li>You can close this guide.</li>\n</ul>\n<hr>",
+          "images": []
+        }
+      ]
+    },
+    {
+      "type": "html",
+      "html": "<p>\\</p>"
+    }
+  ]
+}

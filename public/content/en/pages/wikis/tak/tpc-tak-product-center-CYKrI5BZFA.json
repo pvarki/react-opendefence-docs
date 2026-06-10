@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "b59c45a4-a74d-4f70-8502-245b3ab96c87",
+  "slug": "tpc-tak-product-center-CYKrI5BZFA",
+  "collection": "wikis/tak",
+  "locale": "en",
+  "title": "TPC - TAK Product Center",
+  "breadcrumb": [
+    "TAK Products for Users",
+    "TPC - TAK Product Center"
+  ],
+  "createdAt": "2025-10-26T20:18:41.627Z",
+  "updatedAt": "2026-02-19T13:30:52.437Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "TAK Product Center, a U.S. Government Organization",
+      "id": "tak-product-center-a-us-government-organization"
+    },
+    {
+      "depth": 2,
+      "text": "Contacts:",
+      "id": "contacts"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "src": "/content/images/en/attachments/a27d2138cd9878f2.webp",
+      "alt": "",
+      "width": 225,
+      "height": 225
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"tak-product-center-a-us-government-organization\"><a href=\"#tak-product-center-a-us-government-organization\">TAK Product Center, a U.S. Government Organization</a></h2>\n<p>The TAK Product Center (TPC) is the central U.S. Government organization that innovates, sustains, and releases the Team Awareness Kit family of products.</p>\n<h2 id=\"contacts\"><a href=\"#contacts\">Contacts:</a></h2>\n<ul>\n<li><a href=\"https://tak.gov/\" title=\"https://tak.gov\" target=\"_blank\" rel=\"noopener noreferrer\">https://tak.gov</a></li>\n<li><a href=\"https://www.linkedin.com/company/tak-product-center/\" target=\"_blank\" rel=\"noopener noreferrer\">company/tak-product-center</a></li>\n<li><a href=\"https://twitter.com/productctr\" target=\"_blank\" rel=\"noopener noreferrer\">@productctr</a></li>\n<li><a href=\"https://www.youtube.com/channel/UCT6I35WBkLt3RTzndTjFv1Q\" target=\"_blank\" rel=\"noopener noreferrer\">channel/UCT6I35WBkLt3RTzndTjFv1Q</a></li>\n<li><a href=\"mailto:support@tak.gov\">support@tak.gov</a></li>\n</ul>"
+    }
+  ]
+}

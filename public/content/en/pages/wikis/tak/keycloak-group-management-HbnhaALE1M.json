@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "id": "40648d55-dc1a-44a1-a2e8-e099a4e865a8",
+  "slug": "keycloak-group-management-HbnhaALE1M",
+  "collection": "wikis/tak",
+  "locale": "en",
+  "title": "Keycloak - Group Management",
+  "breadcrumb": [
+    "TAK Admin Tools",
+    "Advanced Features",
+    "Keycloak - Group Management"
+  ],
+  "createdAt": "2025-09-06T14:10:39.730Z",
+  "updatedAt": "2026-02-19T13:52:20.215Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Basic instructions:",
+      "id": "basic-instructions"
+    },
+    {
+      "depth": 3,
+      "text": "Pictures of Basic Instructions\\n",
+      "id": "pictures-of-basic-instructionsn-"
+    },
+    {
+      "depth": 2,
+      "text": "Advanced instructions: (Write or Read Groups)",
+      "id": "advanced-instructions-write-or-read-groups"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "src": "attachments/712bc7f0-7918-48e7-ae01-ae1932ca4c58.svg",
+      "alt": "",
+      "width": 730,
+      "height": 151
+    },
+    {
+      "type": "html",
+      "html": "<p>Current Deploy App environment uses Keycloak to manage user groups. These groups are relayed to takserver and connected users get them automatically.</p>\n<p>The idea in long term is to get the group management to Deploy App in some capacity.</p>\n<h2 id=\"basic-instructions\"><a href=\"#basic-instructions\">Basic instructions:</a></h2>\n<ul>\n<li>Login to keycloak with kc.your-server.fi using the mtls certificate provided with Rasenmaeher.</li>\n<li>Navigate to Groups on the sidebar</li>\n<li>Navigate to tak Group to manage TAK Groups.</li>\n<li>Create a group in the Child groups page of tak Group\n<ul>\n<li>Naming has to be tak_groupname</li>\n</ul>\n</li>\n<li>Navigate to the new Group</li>\n<li>Navigate to Members and Add member\n<ul>\n<li>Choose users you want to add to the Group</li>\n</ul>\n</li>\n</ul>\n<p>Users in the new Group that are connected to takserver will get the new Group</p>\n<h3 id=\"pictures-of-basic-instructionsn-\"><a href=\"#pictures-of-basic-instructionsn-\">Pictures of Basic Instructions\\n <img src=\"/content/images/en/attachments/e6c9b3177b78bd73.webp\" alt=\"\" title=\" =2693x1027\"></a></h3>"
+    },
+    {
+      "type": "image",
+      "src": "/content/images/en/attachments/7cf4e6fe1662d152.webp",
+      "alt": "",
+      "width": 2626,
+      "height": 1002
+    },
+    {
+      "type": "image",
+      "src": "/content/images/en/attachments/ef9391d58e5cb187.webp",
+      "alt": "",
+      "width": 2542,
+      "height": 1268
+    },
+    {
+      "type": "image",
+      "src": "/content/images/en/attachments/ec9ac1170b9a7293.webp",
+      "alt": "",
+      "width": 2878,
+      "height": 1218
+    },
+    {
+      "type": "image",
+      "src": "/content/images/en/attachments/cbfbf9ec63ee8679.webp",
+      "alt": "",
+      "width": 2932,
+      "height": 1468
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"advanced-instructions-write-or-read-groups\"><a href=\"#advanced-instructions-write-or-read-groups\">Advanced instructions: (Write or Read Groups)</a></h2>\n<p>Create Groups the same way as Basic instructions, but in the Group naming use _WRITE or _READ to specify how the users in the group are dealt with.</p>\n<p>tak_test_WRITE group users are sending information to test group but cannot receive information from it.\\n\\nThis feature can be used to let Command Post see everyone but only permitted users get the full access or read access to CP group. (tak_CP for Command Post personnel)</p>"
+    },
+    {
+      "type": "image",
+      "src": "/content/images/en/attachments/41ff55a41a76d952.webp",
+      "alt": "",
+      "width": 1417,
+      "height": 543
+    }
+  ]
+}

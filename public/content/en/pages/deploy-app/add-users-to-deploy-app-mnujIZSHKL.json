@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "badfe684-4e82-437b-b572-4e162605b819",
+  "slug": "add-users-to-deploy-app-mnujIZSHKL",
+  "collection": "deploy-app",
+  "locale": "en",
+  "title": "Add users to Deploy App",
+  "breadcrumb": [
+    "Linux",
+    "Admin Guide",
+    "Add users to Deploy App"
+  ],
+  "createdAt": "2026-01-23T20:09:16.914Z",
+  "updatedAt": "2026-01-23T20:09:16.914Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<ul>\n<li>Admin Tools\n<ul>\n<li>User Management\n<ul>\n<li>Add Users\n<ul>\n<li>Create Invite Code\n<ul>\n<li>Share Invite Code\n<ul>\n<li>Link</li>\n<li>QR Code</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n</li>\n<li>Approve Users\n<ul>\n<li>Scan Users QR code</li>\n<li>Manually Approve User with Approval Code</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>"
+    }
+  ]
+}

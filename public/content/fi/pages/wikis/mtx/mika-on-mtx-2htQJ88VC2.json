@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "a09fc869-706b-4509-a694-6b0fb9878e1f",
+  "slug": "mika-on-mtx-2htQJ88VC2",
+  "collection": "wikis/mtx",
+  "locale": "fi",
+  "title": "Mikä on MTX",
+  "breadcrumb": [
+    "Mikä on MTX"
+  ],
+  "createdAt": "2025-10-31T07:04:56.938Z",
+  "updatedAt": "2026-04-12T13:44:20.899Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Dokumentaatio:",
+      "id": "dokumentaatio"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>MTX = MediaMTX on käyttövalmis ja riippuvuuksista vapaa live-mediaserveri ja mediavälityspalvelin. Se on suunniteltu \"mediaväyläksi\", joka reitittää mediavirtoja päästä päähän.</p>"
+    },
+    {
+      "type": "image",
+      "src": "attachments/0b016abc-97cb-481e-8c1b-5b09d7e15e80.svg",
+      "alt": ""
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"dokumentaatio\"><a href=\"#dokumentaatio\">Dokumentaatio:</a></h2>\n<p><a href=\"https://mediamtx.org/docs/kickoff/introduction\" target=\"_blank\" rel=\"noopener noreferrer\">https://mediamtx.org/docs/kickoff/introduction</a></p>"
+    }
+  ]
+}

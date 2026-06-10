@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 1,
+  "id": "cdb7f08d-9a5c-438f-bb9e-ec5dfa252bc8",
+  "slug": "integraatio-opas-0cExHiOI97",
+  "collection": "dev",
+  "locale": "fi",
+  "title": "Integraatio-opas",
+  "breadcrumb": [
+    "Integraatio-opas"
+  ],
+  "createdAt": "2026-05-28T07:11:21.013Z",
+  "updatedAt": "2026-05-28T07:31:47.529Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Mitä \"palvelun integrointi\" tarkoittaa tässä",
+      "id": "mitä-palvelun-integrointi-tarkoittaa-tässä"
+    },
+    {
+      "depth": 2,
+      "text": "Vaiheittain: uuden palvelun lisäys",
+      "id": "vaiheittain-uuden-palvelun-lisäys"
+    },
+    {
+      "depth": 3,
+      "text": "1. Luo palvelukansio",
+      "id": "1-luo-palvelukansio"
+    },
+    {
+      "depth": 3,
+      "text": "2. Liitä palvelu julkaisuvaiheeseen",
+      "id": "2-liitä-palvelu-julkaisuvaiheeseen"
+    },
+    {
+      "depth": 3,
+      "text": "3. Rekisteröi tuote miniwerkille",
+      "id": "3-rekisteröi-tuote-miniwerkille"
+    },
+    {
+      "depth": 3,
+      "text": "4. Kytke identiteetti (Keycloak)",
+      "id": "4-kytke-identiteetti-keycloak"
+    },
+    {
+      "depth": 3,
+      "text": "5. Kytke sertifikaatit (CFSSL + trust-manager)",
+      "id": "5-kytke-sertifikaatit-cfssl--trust-manager"
+    },
+    {
+      "depth": 3,
+      "text": "6. Julkaise palvelu Traefikin kautta",
+      "id": "6-julkaise-palvelu-traefikin-kautta"
+    },
+    {
+      "depth": 3,
+      "text": "7. Verifioi",
+      "id": "7-verifioi"
+    },
+    {
+      "depth": 2,
+      "text": "API-pinta integrointia varten",
+      "id": "api-pinta-integrointia-varten"
+    },
+    {
+      "depth": 2,
+      "text": "Konventiot",
+      "id": "konventiot"
+    },
+    {
+      "depth": 2,
+      "text": "Älä",
+      "id": "älä"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Tämä sivu on uuden palvelun lisäämistä varten, tai olemassa olevan liittämistä Deploy App -alustaan. Oletus on, että olet lukenut <a href=\"/doc/8f9654ea-4fc7-4051-9675-8114db3aea50\">Arkkitehtuuri</a> ja <a href=\"/doc/b0b5c34b-5f9d-4100-b059-568d69f2ec16\">Kehitysopas</a>.</p>\n<h2 id=\"mitä-palvelun-integrointi-tarkoittaa-tässä\"><a href=\"#mitä-palvelun-integrointi-tarkoittaa-tässä\">Mitä \"palvelun integrointi\" tarkoittaa tässä</a></h2>\n<p>Tuote on integroitu kun:</p>\n<ol>\n<li>Se ajaa klusterissa työkuormana omassa nimiavaruudessaan ja overlayssaan.</li>\n<li>Palvelu on rekisteröity <code>miniwerk</code>:lle muuttujan <code>MW_PRODUCTS</code> kautta. RM UI tietää tällöin palvelun olemassaolon ja näyttää palvelun käyttöönotossa.</li>\n<li>Palvelu luottaa klusterin sisäiseen CA:han (myöntäjä <code>opendefense-cfssl</code>), jolloin palvelu puhuu muille alustan palveluille.</li>\n<li>Palvelu on saavutettavissa Traefikin kautta osoitteessa <code>&#x3C;product>.&#x3C;OPENDEFENSE_HOST></code>. Jos palvelu tarvitsee asiakas- sertifikaattitodennusta, myös osoitteessa <code>mtls.&#x3C;product>.&#x3C;OPENDEFENSE_HOST></code>.</li>\n<li>Palvelu on koottu oikeaan vaiheeseen polussa <code>k8s/main/&#x3C;env>/opendefense/</code>.</li>\n</ol>\n<p><code>battlelog</code>, <code>tak</code> ja <code>mtx</code> ovat kolme parasta toteutusesimerkkiä. Kopioi siitä joka on lähinnä palveluasi.</p>\n<h2 id=\"vaiheittain-uuden-palvelun-lisäys\"><a href=\"#vaiheittain-uuden-palvelun-lisäys\">Vaiheittain: uuden palvelun lisäys</a></h2>\n<h3 id=\"1-luo-palvelukansio\"><a href=\"#1-luo-palvelukansio\">1. Luo palvelukansio</a></h3>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span>k8s/&#x3C;service>/</span></span>\n<span class=\"line\"><span>├── base/</span></span>\n<span class=\"line\"><span>│   ├── kustomization.yaml</span></span>\n<span class=\"line\"><span>│   └── resources/</span></span>\n<span class=\"line\"><span>│       ├── namespace.yaml</span></span>\n<span class=\"line\"><span>│       ├── deployment.yaml</span></span>\n<span class=\"line\"><span>│       ├── service.yaml</span></span>\n<span class=\"line\"><span>│       └── ...                    # PVC, postgres, configmap, ...</span></span>\n<span class=\"line\"><span>└── overlays/</span></span>\n<span class=\"line\"><span>    ├── local/kustomization.yaml</span></span>\n<span class=\"line\"><span>    └── cloud/kustomization.yaml</span></span></code></pre>",
+      "lang": "plaintext"
+    },
+    {
+      "type": "html",
+      "html": "<p>Käytä polkua <code>k8s/battlelog/</code> mallina, jos palvelusi on tilallinen web-sovellus omalla tietokannallaan. Peilaa sen <code>namespace:</code>-kaavaa (<code>app-&#x3C;service></code>) ja <code>configMapGenerator</code>-muotoa. Lokit, metriikat ja nimiöt pysyvät yhdenmukaisina.</p>\n<h3 id=\"2-liitä-palvelu-julkaisuvaiheeseen\"><a href=\"#2-liitä-palvelu-julkaisuvaiheeseen\">2. Liitä palvelu julkaisuvaiheeseen</a></h3>\n<p>Lisää overlay sekä polkuun <code>k8s/main/local/opendefense/kustomization.yaml</code> että polkuun <code>k8s/main/cloud/opendefense/kustomization.yaml</code>:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#E06C75\">resources</span><span style=\"color:#ABB2BF\">:</span></span>\n<span class=\"line\"><span style=\"color:#ABB2BF\">  - </span><span style=\"color:#98C379\">../../../opendefense-cfssl/overlays/local</span></span>\n<span class=\"line\"><span style=\"color:#ABB2BF\">  - </span><span style=\"color:#98C379\">../../../opendefense-pki/overlays/local</span></span>\n<span class=\"line\"><span style=\"color:#ABB2BF\">  - </span><span style=\"color:#98C379\">../../../opendefense-system/overlays/local</span></span>\n<span class=\"line\"><span style=\"color:#ABB2BF\">  - </span><span style=\"color:#98C379\">../../../battlelog/overlays/local</span></span>\n<span class=\"line\"><span style=\"color:#ABB2BF\">  - </span><span style=\"color:#98C379\">../../../&#x3C;service>/overlays/local</span><span style=\"color:#7F848E;font-style:italic\">   # ← lisää</span></span></code></pre>",
+      "lang": "yaml"
+    },
+    {
+      "type": "html",
+      "html": "<p>Jos palvelusi riippuu infrastruktuurista, jota vaiheessa ei vielä ole, laita riippuvuus oikeaan aikaisempaan vaiheeseen. Älä monista riippuvuutta palvelukansiossasi. Älä lisää uutta palvelua polkuun <code>k8s/pvarki-keycloak/</code>. Kokonaisuus on vanhentunut ja dokumentoitu anti-pattern-tasolla tiedostossa <a href=\"../agents.md\"><code>../agents.md</code></a>.</p>\n<h3 id=\"3-rekisteröi-tuote-miniwerkille\"><a href=\"#3-rekisteröi-tuote-miniwerkille\">3. Rekisteröi tuote miniwerkille</a></h3>\n<p>Rasenmaeher UI ja API tietävät tuotteesta vain kun tuote on listattu muuttujaan <code>MW_PRODUCTS</code>. Muokkaa literaalia tiedostossa <code>k8s/opendefense-system/base/kustomization.yaml</code>:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#E06C75\">configMapGenerator</span><span style=\"color:#ABB2BF\">:</span></span>\n<span class=\"line\"><span style=\"color:#ABB2BF\">  - </span><span style=\"color:#E06C75\">name</span><span style=\"color:#ABB2BF\">: </span><span style=\"color:#98C379\">opendefense-miniwerk-env</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">    literals</span><span style=\"color:#ABB2BF\">:</span></span>\n<span class=\"line\"><span style=\"color:#ABB2BF\">      - </span><span style=\"color:#98C379\">MW_DOMAIN=localmaeher.dev.pvarki.fi</span></span>\n<span class=\"line\"><span style=\"color:#ABB2BF\">      - </span><span style=\"color:#98C379\">MW_PRODUCTS=\"kc,tak,mtx,&#x3C;your-product-code>\"</span></span></code></pre>",
+      "lang": "yaml"
+    },
+    {
+      "type": "html",
+      "html": "<p>Käytä lyhyttä, pienikirjaimista tuotekoodia (esim. <code>bl</code>, <code>tak</code>, <code>mtx</code>). Valitsemasi koodi on se, jolla integraatio-API löytää palvelusi. Muokkauksen jälkeen aja miniwerk-työ uudelleen. Poista olemassa oleva ja anna manifestin luoda uudelleen, tai aja <code>task deploy</code> jos configmapin hash muuttuu.</p>\n<h3 id=\"4-kytke-identiteetti-keycloak\"><a href=\"#4-kytke-identiteetti-keycloak\">4. Kytke identiteetti (Keycloak)</a></h3>\n<p>Kaksi mallia on olemassa, riippuen palvelusta:</p>\n<ul>\n<li>Palvelu luottaa alustan myöntämiin JWT-tokeneihin. Palvelusi validoi <code>Authorization: Bearer ...</code> -otsakkeen Keycloakin julkista avainta vasten. Uutta realm-konfiguraatiota ei tarvita.</li>\n<li>Palvelu tarvitsee oman OIDC-asiakkaan. Lisää Keycloak-asiakasmäärittely polkuun <code>k8s/opendefense-system/keycloak-config/</code> ja anna init-työn applyttaa määrittely realm-importin kautta.</li>\n</ul>\n<p>Katso miten <code>rmapi</code> on kytketty tänään. Se lataa JWT-avaimensa PVC:ltä, jonka miniwerk täyttää, ja lukee OIDC-konfiguraationsa salaisuudesta, jota <code>external-secrets-operator</code> hallitsee.</p>\n<h3 id=\"5-kytke-sertifikaatit-cfssl--trust-manager\"><a href=\"#5-kytke-sertifikaatit-cfssl--trust-manager\">5. Kytke sertifikaatit (CFSSL + trust-manager)</a></h3>\n<p>Jos palvelusi tekee ulospäin mTLS-kutsuja (esimerkiksi muille alustan palveluille), tarvitset:</p>\n<ol>\n<li><code>Certificate</code>-resurssin overlayssasi, joka osoittaa CFSSL:n eteen asetettuun klusterin myöntäjään. Katso myöntäjän nimi kussakin ympäristössä polusta <code>k8s/opendefense-pki/</code>.</li>\n<li><code>trust-manager</code>:n <code>Bundle</code>-resurssin, joka jakaa CA-bundlen nimiavaruuteesi. Käytä jo polussa <code>opendefense-pki</code> tuotettua bundlea. Älä luo uutta. <code>trust-manager</code> ajaa vaiheessa <code>infra-phase2</code>, joten palvelusi täytyy ajaa myöhemmässä vaiheessa.</li>\n</ol>\n<p>Komponentti <code>_shared/rmapi-container-init</code> on hyvä referenssi init-kontille, joka tarvitsee CA:n paikalleen ennen pääprosessin käynnistymistä.</p>\n<h3 id=\"6-julkaise-palvelu-traefikin-kautta\"><a href=\"#6-julkaise-palvelu-traefikin-kautta\">6. Julkaise palvelu Traefikin kautta</a></h3>\n<p>Lisää reititys overlayhin, ei baseen. Jokainen overlay määrittelee tyypillisesti:</p>\n<ul>\n<li>Standardin <code>IngressRoute</code>-resurssin osoitteelle <code>&#x3C;product>.&#x3C;OPENDEFENSE_HOST></code> (TLS cert-managerin kautta).</li>\n<li><code>IngressRoute</code>-resurssin <code>mtls</code>-sisääntulopisteeseen osoitteelle <code>mtls.&#x3C;product>.&#x3C;OPENDEFENSE_HOST></code> TLSOptionilla, joka vaatii asiakassertifikaatin.</li>\n</ul>\n<p>Paikallisesti hostnamet ratkeavat loopback-DNS-tietueen kautta osoitteessa <code>localmaeher.dev.pvarki.fi</code>. <code>/etc/hosts</code>-muokkausta ei tarvita. Cloudissa Zarf korvaa <code>###ZARF_VAR_OPENDEFENSE_HOST###</code> julkaisuhetkellä. Käytä tokenia overlayssasi, älä kovakoodaa hostia.</p>\n<p>Jos palvelusi tarvitsee raakaa TCP:tä (TAK, RTMPS ja muut), päivitä sekä Traefikin entryPoints että tiedoston <code>kind-config.yaml</code> extra-port-mappings. Protokolla saavuttaa klusterin työasemalla.</p>\n<h3 id=\"7-verifioi\"><a href=\"#7-verifioi\">7. Verifioi</a></h3>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#7F848E;font-style:italic\"># Renderöi syntaksi- ja viittausvirheiden löytämiseksi ensin</span></span>\n<span class=\"line\"><span style=\"color:#61AFEF\">kubectl</span><span style=\"color:#98C379\"> kustomize</span><span style=\"color:#D19A66\"> --enable-helm</span><span style=\"color:#98C379\"> k8s/</span><span style=\"color:#ABB2BF\">&#x3C;</span><span style=\"color:#98C379\">servic</span><span style=\"color:#ABB2BF\">e></span><span style=\"color:#98C379\">/overlays/local</span></span>\n<span class=\"line\"></span>\n<span class=\"line\"><span style=\"color:#7F848E;font-style:italic\"># Julkaise</span></span>\n<span class=\"line\"><span style=\"color:#61AFEF\">task</span><span style=\"color:#98C379\"> deploy</span></span>\n<span class=\"line\"></span>\n<span class=\"line\"><span style=\"color:#7F848E;font-style:italic\"># Seuraa julkaisua</span></span>\n<span class=\"line\"><span style=\"color:#61AFEF\">kubectl</span><span style=\"color:#D19A66\"> -n</span><span style=\"color:#ABB2BF\"> &#x3C;</span><span style=\"color:#98C379\">namespac</span><span style=\"color:#ABB2BF\">e> </span><span style=\"color:#98C379\">get</span><span style=\"color:#98C379\"> pods</span><span style=\"color:#D19A66\"> -w</span></span>\n<span class=\"line\"></span>\n<span class=\"line\"><span style=\"color:#7F848E;font-style:italic\"># Varmista että miniwerk ajoi uudelleen ja nappasi uuden MW_PRODUCTS-arvon</span></span>\n<span class=\"line\"><span style=\"color:#61AFEF\">kubectl</span><span style=\"color:#D19A66\"> -n</span><span style=\"color:#98C379\"> opendefense-system</span><span style=\"color:#98C379\"> logs</span><span style=\"color:#98C379\"> job/opendefense-miniwerk</span></span></code></pre>",
+      "lang": "bash"
+    },
+    {
+      "type": "html",
+      "html": "<p>Lataa sitten RM UI osoitteesta <a href=\"https://localmaeher.dev.pvarki.fi/\" target=\"_blank\" rel=\"noopener noreferrer\">https://localmaeher.dev.pvarki.fi/</a> ja varmista, että uusi tuote näkyy käyttöönottoputkessa.</p>\n<h2 id=\"api-pinta-integrointia-varten\"><a href=\"#api-pinta-integrointia-varten\">API-pinta integrointia varten</a></h2>\n<p>Palvelusi koodi puhuu alustalle kahden sopimuksen kautta:</p>\n<ul>\n<li>Rasenmaeher API (<code>rmapi</code>). REST-API dokumentoitu ylävirran Swaggerissa (<a href=\"https://github.com/pvarki/python-rasenmaeher-api\" target=\"_blank\" rel=\"noopener noreferrer\">pvarki.github.io/python-rasenmaeher-api</a>). Käytä API:a käyttäjän ja tiimin kontekstin hakemiseen ja tuotepuolen resurssien rekisteröintiin käyttöönotossa.</li>\n<li>Keycloak. Standardi OIDC. Realmin <code>RASENMAEHER</code> myöntämät tokenit kantavat käyttäjän identiteetin ja ryhmäjäsenyyden.</li>\n</ul>\n<p>Compose-ylävirta (pvarki/docker-rasenmaeher-integration) pysyy täydellisimpänä API-sopimuksen referenssinä, kun nämä dokumentit täydentyvät.</p>\n<h2 id=\"konventiot\"><a href=\"#konventiot\">Konventiot</a></h2>\n<ul>\n<li>Nimiavaruus: <code>app-&#x3C;service></code> sovelluspalveluille, <code>opendefense-&#x3C;thing></code> alustalle ja infralle.</li>\n<li>Resurssinimet: etuliite nimiavaruuden mukaan (esim. <code>app-battlelog-...</code>, <code>opendefense-rmapi-...</code>). Nimiavaruuksien väliset törmäykset on helppo havaita.</li>\n<li>Nimiöt ja valitsimet: vakaat basen ja overlayn välillä. Älä nimeä uudelleen ilman aikomusta migroida.</li>\n<li>Image-viittaukset basessa: käytä placeholder-tageja, kiinnitä overlayssa.</li>\n<li>Yksi asia per PR. Palvelukansion lisäys on yksi PR, reitityksen kytkentä toinen, miniwerk-rekisteröinti kolmas. Katselmoinnit pysyvät nopeina.</li>\n</ul>\n<h2 id=\"älä\"><a href=\"#älä\">Älä</a></h2>\n<ul>\n<li>Älä laajenna polkua <code>k8s/pvarki-keycloak/</code> uusilla palveluilla. Rakenna uusi palvelukansio.</li>\n<li>Älä keksi uutta CA:ta. Käytä <code>opendefense-cfssl</code> plus <code>trust-manager</code>.</li>\n<li>Älä paista <code>OPENDEFENSE_HOST</code>-arvoa base-manifesteihin. Se on julkaisuhetken Zarf-muuttuja cloudilla ja kiinteä hostname paikallisesti.</li>\n<li>Älä piilota tunnistetietoja ConfigMappeihin. Käytä <code>external-secrets-operator</code>-resurssia Secret-resurssin kanssa.</li>\n</ul>"
+    }
+  ]
+}

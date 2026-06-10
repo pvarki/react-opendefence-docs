@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "1088d329-4ce1-4e72-a247-cfb6dd0f0521",
+  "slug": "kayttoliittyma-9RSCOjN5ER",
+  "collection": "deploy-app",
+  "locale": "fi",
+  "title": "Käyttöliittymä",
+  "breadcrumb": [
+    "Android",
+    "Käyttäjäohjeet",
+    "Käyttöliittymä"
+  ],
+  "createdAt": "2026-02-17T06:55:27.250Z",
+  "updatedAt": "2026-02-25T07:32:33.936Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>\\</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Sovellusten käyttö",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Oikeasta yläkulmasta näet palveluiden tilan.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/b6632b5f1d29ca14.webp",
+              "width": 2560,
+              "height": 5712
+            }
+          ]
+        },
+        {
+          "title": "Sovellusten käyttö",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Tämä voi olla hyödyllistä ongelmatilanteissa, jotta näet, missä vika sijaitsee.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/4869bfd989eca9d6.webp",
+              "width": 2560,
+              "height": 5712
+            }
+          ]
+        },
+        {
+          "title": "Palautteen lähettäminen",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Voit lähettää meille palautetta sivun alalaidasta.</li>\n<li>Arvostamme kaikkea saamaamme palautetta.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/234e2518250edebe.webp",
+              "width": 5120,
+              "height": 5782
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "html",
+      "html": "<p>\\</p>"
+    }
+  ]
+}

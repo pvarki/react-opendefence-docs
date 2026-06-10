@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 1,
+  "id": "dbd14310-6179-4586-930b-1160b5dc45de",
+  "slug": "liittyminen-deploy-appiin-hFiNczU5i7",
+  "collection": "deploy-app",
+  "locale": "fi",
+  "title": "Liittyminen Deploy Appiin",
+  "breadcrumb": [
+    "Android",
+    "Käyttäjäohjeet",
+    "Liittyminen Deploy Appiin"
+  ],
+  "createdAt": "2026-02-17T06:54:39.248Z",
+  "updatedAt": "2026-02-19T12:24:36.291Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Pääsyn saaminen",
+          "layout": "image-left",
+          "html": "<p>Instanssiin liittymiseen on useita vaihtoehtoja:</p>\n<ul>\n<li>QR-koodin skannaaminen (Avaa seuraavan sivun välittömästi)</li>\n<li>Linkki (Avaa seuraavan sivun välittömästi)</li>\n<li>Linkki + manuaalinen koodi (Avaa vasemmalla olevan sivun)\nKäytä mitä tahansa organisaatiossasi käytössä olevaa menetelmää.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/7dcca9a65e3947c3.webp",
+              "width": 2560,
+              "height": 5712
+            }
+          ]
+        },
+        {
+          "title": "Kutsumanimi",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Anna itsellesi kutsumanimi. Sen tulisi olla jotain, jolla vain organisaatiosi pystyy tunnistamaan sinut.</li>\n<li>Sitä käytetään kaikissa palveluissa.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/c57ad7c1cda23463.webp",
+              "width": 2560,
+              "height": 5712
+            }
+          ]
+        },
+        {
+          "title": "Odotushuone",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Näytä QR koodia ylläpitäjälle tai jaa linkki hänelle.</li>\n<li>Kun ylläpitäjä on hyväksynyt sinut, voit jatkaa eteenpäin.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/fee8880f57ef1cea.webp",
+              "width": 2561,
+              "height": 5712
+            }
+          ]
+        },
+        {
+          "title": "Ohjeet",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Deploy App -sovelluksessa on sisäänrakennetut ohjeet, jotka opastavat käyttäjiä ja korostavat tärkeimpiä ominaisuuksia.</li>\n<li>Tämä opas käy läpi varmenteen asennuksen.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/9bb11f8681afbb15.webp",
+              "width": 2561,
+              "height": 5712
+            }
+          ]
+        },
+        {
+          "title": "Lataa varmenne",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Tämä toimii pääsynäsi palveluihin.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/915dd73333885fdf.webp",
+              "width": 2560,
+              "height": 5712
+            }
+          ]
+        },
+        {
+          "title": "Asenna varmenne",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Kutsumanimi toimii salasananasi.</li>\n<li>Kirjoita se ja paina OK, kunnes olet takaisin Deploy App -sovelluksessa.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/e5392de3596b7b88.webp",
+              "width": 2560,
+              "height": 5712
+            }
+          ]
+        },
+        {
+          "title": "Kirjaudu varmenteella",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Paina \"Siirry avaimella\".</li>\n<li>Kun sinua pyydetään valitsemaan varmenne, tarkista, että kutsumanimesi on valittuna, ja kirjaudu sisään painamalla \"Valitse\".</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/b184ffdfb7d6f5e7.webp",
+              "width": 2560,
+              "height": 5712
+            }
+          ]
+        },
+        {
+          "title": "Onnistui",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Nyt voit aloittaa sovellusten käytön.</li>\n<li>Deploy App näyttää ensimmäisillä kerroilla ohjeita, löydät enemmän ohjeita tältä sivustolla.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/c480c61ef4d60e23.webp",
+              "width": 2560,
+              "height": 5712
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

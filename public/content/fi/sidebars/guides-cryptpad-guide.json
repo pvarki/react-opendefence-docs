@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "label": "CryptPad Guide",
+  "slug": "guides/cryptpad-guide",
+  "items": [
+    {
+      "type": "doc",
+      "id": "deploy-app-cryptpad-2C27HtLUGm",
+      "label": "Deploy App - CryptPad",
+      "slug": "deploy-app-cryptpad-2C27HtLUGm"
+    }
+  ]
+}

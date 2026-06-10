@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 1,
+  "id": "2f7189f4-8995-4438-a6a9-f54f1a6ef46c",
+  "slug": "deploy-app-mtx-pNYQudUcGq",
+  "collection": "guides/mtx-guide",
+  "locale": "en",
+  "title": "Deploy App - MTX",
+  "breadcrumb": [
+    "Deploy App - MTX"
+  ],
+  "createdAt": "2026-03-08T05:30:50.873Z",
+  "updatedAt": "2026-03-08T05:32:11.424Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Deploy App - MTX page",
+      "id": "deploy-app---mtx-page"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<h2 id=\"deploy-app---mtx-page\"><a href=\"#deploy-app---mtx-page\">Deploy App - MTX page</a></h2>"
+    },
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Open Deploy App",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Navigate to Home</li>\n<li>Launch MTX</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/8dd067ea2b1a36cc.webp",
+              "width": 1080,
+              "height": 2002
+            }
+          ]
+        },
+        {
+          "title": "MTX Page - Instructions",
+          "layout": "image-left",
+          "html": "<ul>\n<li>When MTX page open the first time you will see the quick instructions</li>\n<li>Read trough the instructions</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/e544ca877fc47672.webp",
+              "width": 1080,
+              "height": 2004
+            }
+          ]
+        },
+        {
+          "title": "MTX Page - General",
+          "layout": "image-left",
+          "html": "<ul>\n<li>MTX page is where you see your servers active live streams, can add a new live stream and have a link for the documentation</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/85b93cfe62859e25.webp",
+              "width": 1080,
+              "height": 2004
+            }
+          ]
+        },
+        {
+          "title": "MTX Page - Watching Stream",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Active live streams are shown in as a list</li>\n<li>You can search for specific Callsing or device type \"gopro, icu, uas..\"</li>\n<li>To watch a stream click the \"Play\" button</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/74c421939cff4b12.webp",
+              "width": 1080,
+              "height": 2002
+            }
+          ]
+        },
+        {
+          "title": "MTX Page - Watching Stream Basic",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Stream opens to browser and is automatically played</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/57fae925d2f171e7.webp",
+              "width": 1080,
+              "height": 2002
+            }
+          ]
+        },
+        {
+          "title": "MTX Page - Watching Stream Advanced",
+          "layout": "image-left",
+          "html": "<ul>\n<li>If you need to watch the stream with something else than the browser</li>\n<li>Click on the link, NOT the button</li>\n<li>The advanced menu is now available</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/613aaa7253087dca.webp",
+              "width": 1080,
+              "height": 1999
+            }
+          ]
+        },
+        {
+          "title": "MTX Page - Publish Stream",
+          "layout": "image-left",
+          "html": "<ul>\n<li>To Publish a stream select \"+ Add\"</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/85b93cfe62859e25.webp",
+              "width": 1080,
+              "height": 2004
+            }
+          ]
+        },
+        {
+          "title": "MTX Page - Publish Stream Instructions",
+          "layout": "image-left",
+          "html": "<ul>\n<li>First you get the Streaming instructions, read trough them.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/bb5c6f58938a17c8.webp",
+              "width": 1080,
+              "height": 2006
+            }
+          ]
+        },
+        {
+          "title": "MTX Page - Publish Stream Menu",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Here you will find your credentials and instuctions for different tools</li>\n<li>Preferred method to stream from your android device is Opentak ICU</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/0bc49287e346237c.webp",
+              "width": 1080,
+              "height": 2004
+            }
+          ]
+        },
+        {
+          "title": "Done",
+          "layout": "text",
+          "html": "<ul>\n<li>You can close this guide.</li>\n</ul>",
+          "images": []
+        }
+      ]
+    },
+    {
+      "type": "html",
+      "html": "<p>After seeing Deploy App - MTX, continue to <a href=\"/doc/e96c8450-ee15-4607-be9b-d1a479bcc24b\">Publish Stream</a>for more depth on publishing or for more in depth for watching <a href=\"/doc/9c3d844b-ebb7-453c-9d30-7bab0891f66e\">Watch Stream</a></p>"
+    }
+  ]
+}

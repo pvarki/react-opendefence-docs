@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "id": "dc7f6de4-b754-457d-a704-dd1c792152af",
+  "slug": "data-sync-U4cc7UE9hg",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "Data Sync",
+  "breadcrumb": [
+    "TAK Clients",
+    "iTAK",
+    "Basic Features",
+    "Data Sync"
+  ],
+  "createdAt": "2025-12-05T22:06:10.995Z",
+  "updatedAt": "2026-02-20T20:51:41.284Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Datasync conficuration",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Navigate into the Data Sync functionality</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/feecfd08d805f472.webp",
+              "width": 1179,
+              "height": 599
+            }
+          ]
+        },
+        {
+          "title": "Add Missions",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Push + sign to subscribe missions</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/8fc535a64cf14580.webp",
+              "width": 1179,
+              "height": 1253
+            }
+          ]
+        },
+        {
+          "title": "Subscribe Missions",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Subscribe</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/01f76e13b94c8cb0.webp",
+              "width": 1179,
+              "height": 1249
+            }
+          ]
+        },
+        {
+          "title": "Available Missions",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Choose a instructed available mission</li>\n<li>Default Mission is the RECON</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/0367758ac6410f10.webp",
+              "width": 1179,
+              "height": 1253
+            }
+          ]
+        },
+        {
+          "title": "Mission information",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>view shows missions information and data availabe in a mission.</li>\n<li>Return to erlier view.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/b20947f3eb07b21b.webp",
+              "width": 1179,
+              "height": 1246
+            }
+          ]
+        },
+        {
+          "title": "Mission Sync",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Make sure that missions data is updated</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/6c66f841da75293e.webp",
+              "width": 1179,
+              "height": 1253
+            }
+          ]
+        },
+        {
+          "title": "Full Sync",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Allow full Sync</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/76b97aa304418702.webp",
+              "width": 1179,
+              "height": 1515
+            }
+          ]
+        },
+        {
+          "title": "iTAK configuration completed",
+          "layout": "text",
+          "html": "",
+          "images": []
+        }
+      ]
+    }
+  ]
+}

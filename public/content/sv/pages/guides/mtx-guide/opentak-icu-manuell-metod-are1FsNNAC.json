@@ -1,0 +1,327 @@
+{
+  "schemaVersion": 1,
+  "id": "1b22f38f-4c19-44a6-8873-9a660d99ccf6",
+  "slug": "opentak-icu-manuell-metod-are1FsNNAC",
+  "collection": "guides/mtx-guide",
+  "locale": "sv",
+  "title": "OpenTAK ICU - Manuell metod",
+  "breadcrumb": [
+    "Publicera streamen",
+    "OpenTAK ICU - Manuell metod"
+  ],
+  "createdAt": "2025-12-06T09:15:46.162Z",
+  "updatedAt": "2026-04-11T16:45:32.072Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Publicera streamen med Opentak ICU.",
+      "id": "publicera-streamen-med-opentak-icu"
+    },
+    {
+      "depth": 2,
+      "text": "Bilder:",
+      "id": "bilder"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>(this tab should not be shown)</p>\n<h2 id=\"publicera-streamen-med-opentak-icu\"><a href=\"#publicera-streamen-med-opentak-icu\">Publicera streamen med Opentak ICU.</a></h2>"
+    },
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Öppna Opentak ICU",
+          "layout": "text",
+          "html": "<ul>\n<li>Öppna Opentak ICU-appen</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "Grundvy",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Gå till Inställningar</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/1b13765b8367227c.webp",
+              "width": 1080,
+              "height": 2256
+            }
+          ]
+        },
+        {
+          "title": "Inställningar",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Gå till menyn <strong>Streaming Settings</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/23de9ae0450c7257.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "Streaming Settings",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Välj inställningen <strong>Stream video</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/f1e019f0af36d938.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "Stream Protocol",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Välj Stream Protocol <strong>RTMPS</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/157ab9557b8d35d8.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "Stream Address",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Ange adressen dit streamen ska skickas <strong>canadian-goose.pvarki.fi</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/8ef1d437b6664464.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "Stream Port",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Ange Stream Port <strong>1936</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/6bb175c35f67381f.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "Stream Path",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Ange Stream Path <strong>live/icu/Callsign</strong> (Ditt eget Callsign)</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/12f963134e51eefe.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "Username",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Ange <strong>Username</strong> – ditt användarnamn</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/becfcb740c5a6b30.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "Password",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Ange <strong>Password</strong> – ditt lösenord</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/99fb13b391084539.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "Video Preferences 1",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Gå tillbaka till Inställningar</li>\n<li>Gå till menyn <strong>Video Preferences</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/23de9ae0450c7257.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "Video Preferences 2",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Välj inställningen <strong>Adaptive Bitrate</strong></li>\n<li>Välj inställningen <strong>Text Overlay</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/8b902ad82be852ad.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "Video Source",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Välj Video Source <strong>This device</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/55d803f1e38bb375.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "Resolution",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Välj Resolution <strong>1280 x 720</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/197f80c6e4ae0499.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "Bitrate",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Ange Bitrate <strong>3000</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/f8b4714b26b65c28.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "FPS",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Välj FPS <strong>15</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/c454c10c806cc942.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "Codec",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Välj Codec <strong>H264</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/197f80c6e4ae0499.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "Audio Settings",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Gå tillbaka till Inställningar</li>\n<li>Gå till menyn <strong>Audio Settings</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/23de9ae0450c7257.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "Inaktivera Audio",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Avmarkera <strong>Enable Audio</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/c4733b57f5ac697a.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "TAK Server Preferences",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Gå tillbaka till Inställningar</li>\n<li>Gå till menyn <strong>TAK Server Preferences</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/23de9ae0450c7257.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "Inaktivera TAK Server",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Avmarkera <strong>Send Location CoTs to a TAK server</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/b00a1ef8387c1495.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "Starta Stream",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Gå tillbaka till startvyn</li>\n<li>Tryck på <strong>Record</strong> för att starta streamen</li>\n<li>Meddelandet <strong>Connection success</strong> visas</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/1b13765b8367227c.webp",
+              "width": 1080,
+              "height": 2256
+            }
+          ]
+        },
+        {
+          "title": "Stoppa Stream",
+          "layout": "image-left",
+          "html": "<ul>\n<li>När streamen är aktiv ser du datamängden under Bitrate</li>\n<li>I nedre vänstra hörnet visas din streams information</li>\n<li>Stoppa streamen genom att trycka på <strong>Stop</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/a6143b561d22c847.webp",
+              "width": 1080,
+              "height": 2256
+            }
+          ]
+        },
+        {
+          "title": "Nu vet du hur man streamar",
+          "layout": "text",
+          "html": "<ul>\n<li>Du kan stänga denna guide.</li>\n</ul>",
+          "images": []
+        }
+      ]
+    },
+    {
+      "type": "html",
+      "html": "<p>När du har startat streamen, fortsätt till avsnittet <a href=\"/doc/ce8883ca-0875-427b-88c6-464f3ebcc0e9\">Katso Striimiä</a></p>\n<h2 id=\"bilder\"><a href=\"#bilder\">Bilder:</a></h2>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span>\\</span></span>\n<span class=\"line\"><span></span></span>\n<span class=\"line\"><span>\\</span></span>\n<span class=\"line\"><span></span></span>\n<span class=\"line\"><span>\\</span></span>\n<span class=\"line\"><span></span></span>\n<span class=\"line\"><span>\\</span></span>\n<span class=\"line\"><span></span></span>\n<span class=\"line\"><span>\\</span></span>\n<span class=\"line\"><span></span></span>\n<span class=\"line\"><span>\\</span></span>\n<span class=\"line\"><span></span></span>\n<span class=\"line\"><span>\\</span></span>\n<span class=\"line\"><span></span></span>\n<span class=\"line\"><span>\\</span></span>\n<span class=\"line\"><span></span></span>\n<span class=\"line\"><span>\\</span></span>\n<span class=\"line\"><span></span></span>\n<span class=\"line\"><span>\\</span></span>\n<span class=\"line\"><span></span></span>\n<span class=\"line\"><span>\\</span></span>\n<span class=\"line\"><span></span></span>\n<span class=\"line\"><span>\\</span></span>\n<span class=\"line\"><span></span></span>\n<span class=\"line\"><span>\\</span></span>\n<span class=\"line\"><span></span></span>\n<span class=\"line\"><span>\\</span></span>\n<span class=\"line\"><span></span></span>\n<span class=\"line\"><span>\\</span></span>\n<span class=\"line\"><span></span></span>\n<span class=\"line\"><span>\\</span></span>\n<span class=\"line\"><span></span></span>\n<span class=\"line\"><span>\\</span></span>\n<span class=\"line\"><span></span></span>\n<span class=\"line\"><span>\\</span></span>\n<span class=\"line\"><span></span></span>\n<span class=\"line\"><span>\\</span></span>\n<span class=\"line\"><span></span></span>\n<span class=\"line\"><span>\\</span></span>\n<span class=\"line\"><span></span></span>\n<span class=\"line\"><span>\\</span></span>\n<span class=\"line\"><span></span></span>\n<span class=\"line\"><span>\\</span></span>\n<span class=\"line\"><span>\\</span></span></code></pre>",
+      "lang": "plaintext"
+    },
+    {
+      "type": "html",
+      "html": "<p>\\</p>"
+    }
+  ]
+}

@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 1,
+  "id": "e67c3a42-502a-4c85-b255-2fbf23fde23b",
+  "slug": "deploy-app-mtx-C43AiOwo2H",
+  "collection": "guides/mtx-guide",
+  "locale": "sv",
+  "title": "Deploy App - MTX",
+  "breadcrumb": [
+    "Deploy App - MTX"
+  ],
+  "createdAt": "2026-02-21T13:52:24.151Z",
+  "updatedAt": "2026-03-08T05:51:14.919Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Deploy App - MTX sida",
+      "id": "deploy-app---mtx-sida"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<h2 id=\"deploy-app---mtx-sida\"><a href=\"#deploy-app---mtx-sida\">Deploy App - MTX sida</a></h2>"
+    },
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Öppna Deploy App",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Gå till Home</li>\n<li>Starta MTX</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/18354de23cb4a466.webp",
+              "width": 1080,
+              "height": 2005
+            }
+          ]
+        },
+        {
+          "title": "MTX-sidan – Instruktioner",
+          "layout": "image-left",
+          "html": "<ul>\n<li>När du öppnar MTX-sidan första gången visas snabbinstruktioner</li>\n<li>Läs igenom instruktionerna</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/913792629cdbbe3c.webp",
+              "width": 1080,
+              "height": 2004
+            }
+          ]
+        },
+        {
+          "title": "MTX-sidan – Allmänt",
+          "layout": "image-left",
+          "html": "<ul>\n<li>På MTX-sidan ser du serverns aktiva live-strömmar, du kan lägga till en ny live-ström, det finns även en länk till dokumentationen</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/6e53ed1b41376e33.webp",
+              "width": 1080,
+              "height": 2002
+            }
+          ]
+        },
+        {
+          "title": "MTX Page - Watching Stream",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Aktiva live-strömmar visas i en lista</li>\n<li>Du kan söka efter ett specifikt Callsign eller en enhetstyp som gopro, icu, uas</li>\n<li>För att titta på en ström klicka på \"Play\"</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/baa85ee668f82795.webp",
+              "width": 1080,
+              "height": 1825
+            }
+          ]
+        },
+        {
+          "title": "MTX-sidan – Titta på ström Grundläggande",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Strömmen öppnas i webbläsaren och börjar spelas automatiskt</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/57fae925d2f171e7.webp",
+              "width": 1080,
+              "height": 2002
+            }
+          ]
+        },
+        {
+          "title": "MTX-sidan – Titta på ström Avancerat",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Om du vill titta på strömmen med något annat än webbläsaren</li>\n<li>Klicka på länken, INTE på \"Play\" knappen</li>\n<li>Den avancerade menyn blir nu tillgänglig</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/6ae1d1f95b669c95.webp",
+              "width": 1080,
+              "height": 2006
+            }
+          ]
+        },
+        {
+          "title": "MTX-sidan – Publicera en ström",
+          "layout": "image-left",
+          "html": "<ul>\n<li>För att publicera en ström välj \"+ Add\"</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/6e53ed1b41376e33.webp",
+              "width": 1080,
+              "height": 2002
+            }
+          ]
+        },
+        {
+          "title": "MTX-sidan – Instruktioner för att publicera ström",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Först visas streaminginstruktionerna, läs igenom dem</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/53d1974d6f80d0c8.webp",
+              "width": 1080,
+              "height": 2006
+            }
+          ]
+        },
+        {
+          "title": "MTX-sidan – Publiceringsmeny",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Här hittar du dina autentiseringsuppgifter och instruktioner för olika verktyg</li>\n<li>Rekommenderad metod för att streama från en Android-enhet är Opentak ICU</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/f09ddb5ce372f177.webp",
+              "width": 1080,
+              "height": 2006
+            }
+          ]
+        },
+        {
+          "title": "Klar",
+          "layout": "text",
+          "html": "<ul>\n<li>Du kan stänga denna guide.</li>\n</ul>",
+          "images": []
+        }
+      ]
+    },
+    {
+      "type": "html",
+      "html": "<p>Efter att ha gått igenom <strong>Deploy App – MTX</strong>, fortsätt till <a href=\"/doc/b431891e-c96a-48c8-98bf-7d8d4dcc8bea\">Publicera streamen</a>för mer information om hur du publicerar en ström, eller <a href=\"/doc/ce8883ca-0875-427b-88c6-464f3ebcc0e9\">Titta på streamen</a>  för mer detaljerade instruktioner om hur du tittar på en ström.</p>"
+    }
+  ]
+}

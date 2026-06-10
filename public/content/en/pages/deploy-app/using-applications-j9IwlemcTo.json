@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "903be4f7-49c7-4f6b-ae46-74f006ff8dbc",
+  "slug": "using-applications-j9IwlemcTo",
+  "collection": "deploy-app",
+  "locale": "en",
+  "title": "Using applications",
+  "breadcrumb": [
+    "Windows",
+    "User Guide",
+    "Using applications"
+  ],
+  "createdAt": "2026-01-23T20:08:59.764Z",
+  "updatedAt": "2026-01-23T20:08:59.764Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<ul>\n<li>Deploy App - Home page\n<ul>\n<li>Choose application\n<ul>\n<li>TAK</li>\n<li>MTX</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>"
+    }
+  ]
+}

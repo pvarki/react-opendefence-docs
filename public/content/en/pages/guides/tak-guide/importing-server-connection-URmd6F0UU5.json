@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 1,
+  "id": "91c58ae9-39c3-4623-8099-ce1c85401757",
+  "slug": "importing-server-connection-URmd6F0UU5",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "Importing Server Connection",
+  "breadcrumb": [
+    "TAK Clients",
+    "TAK Tracker - Android",
+    "Start",
+    "Importing Server Connection"
+  ],
+  "createdAt": "2026-02-21T08:45:34.542Z",
+  "updatedAt": "2026-02-21T10:42:40.160Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Open TAK Tracker",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Find the TAK Tracker icon and start the App.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/8d5d065c3a7b66c6.webp",
+              "width": 225,
+              "height": 225
+            }
+          ]
+        },
+        {
+          "title": "Open TAK Tracker App",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Open Settings on the top right.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/f188b0342fad947c.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "Import server package 1",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Select import tool on the top right.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/5f9d159d3e0512e5.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "Import server package 2",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Allow TAK Tracker access to files on device.</li>\n<li>Callsign-Server-Instance.zip</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/9387df0a4aa077ea.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "Import server package 3",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Navigate to devices Downloads folder and select Deploy App package.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/7aa40b9621466c3a.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "Check Settings",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Check Settings have imported to TAK Tracker</li>\n<li>Select Done</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/a669809e16da962d.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "Open TAK Tracker App",
+          "layout": "image-left",
+          "html": "<ul>\n<li>You should now have Server: Connected on the device.</li>\n</ul>\n<hr>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/b1b8bd8adcaaae83.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "html",
+      "html": "<p>After connecting TAK Tracker to server continue to…</p>"
+    }
+  ]
+}

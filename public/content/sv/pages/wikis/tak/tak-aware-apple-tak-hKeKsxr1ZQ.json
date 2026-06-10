@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "b9496eb6-e145-4efb-847b-275a083b4c07",
+  "slug": "tak-aware-apple-tak-hKeKsxr1ZQ",
+  "collection": "wikis/tak",
+  "locale": "sv",
+  "title": "TAK Aware - Apple TAK",
+  "breadcrumb": [
+    "TAK-produkter för Användare",
+    "TAK Aware - Apple TAK"
+  ],
+  "createdAt": "2025-12-08T03:03:37.387Z",
+  "updatedAt": "2026-02-19T13:16:14.158Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Produkt Tillgänglig",
+      "id": "produkt-tillgänglig"
+    },
+    {
+      "depth": 2,
+      "text": "Användarhandbok",
+      "id": "användarhandbok"
+    },
+    {
+      "depth": 2,
+      "text": "Produktbeskrivning",
+      "id": "produktbeskrivning"
+    },
+    {
+      "depth": 3,
+      "text": "Systemkrav",
+      "id": "systemkrav"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "src": "/content/images/sv/attachments/1f2bd5472620dcd2.webp",
+      "alt": "",
+      "caption": "=430x",
+      "width": 430,
+      "height": 430
+    },
+    {
+      "type": "image",
+      "src": "/content/images/sv/attachments/0866292196270644.webp",
+      "alt": "",
+      "caption": "=1024x",
+      "width": 1024,
+      "height": 471
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"produkt-tillgänglig\"><a href=\"#produkt-tillgänglig\">Produkt Tillgänglig</a></h2>\n<p><a href=\"https://apps.apple.com/br/app/tak-aware/id6738631659\" target=\"_blank\" rel=\"noopener noreferrer\">https://apps.apple.com/br/app/tak-aware/id6738631659</a></p>\n<h2 id=\"användarhandbok\"><a href=\"#användarhandbok\">Användarhandbok</a></h2>"
+    },
+    {
+      "type": "pdf",
+      "src": "attachments/cb3f05d3-d19d-4743-ade3-388286fee3bc.pdf",
+      "title": "takaware-v152.pdf"
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"produktbeskrivning\"><a href=\"#produktbeskrivning\"><strong>Produktbeskrivning</strong></a></h2>\n<p>TAK Aware är en lättviktig Team Awareness Kit-applikation (känd inom USA:s försvarsdepartement som Tactical Assault Kit), utformad för att enkelt integreras i befintliga utbildnings- och operativa arbetsflöden, samtidigt som den erbjuder den lägesbild och interaktionsförmåga som förväntas av TAK.</p>\n<p>Appen är byggd från grunden för iOS och ansluter till dina favorit-TAK-servrar antingen via datapaket eller genom certifikatregistrering. Den stödjer datapaket, DataSync, kanaler, certifikatregistrering och mycket mer!</p>\n<h3 id=\"systemkrav\"><a href=\"#systemkrav\"><strong>Systemkrav</strong></a></h3>\n<p><strong>Operativsystem:</strong> iOS 17 eller senare.</p>"
+    }
+  ]
+}

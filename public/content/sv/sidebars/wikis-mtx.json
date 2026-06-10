@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "label": "MTX Wiki",
+  "slug": "wikis/mtx",
+  "items": [
+    {
+      "type": "doc",
+      "id": "vad-ar-mtx-vrCxWzeqRf",
+      "label": "Vad är MTX",
+      "slug": "vad-ar-mtx-vrCxWzeqRf"
+    },
+    {
+      "type": "doc",
+      "id": "sanda-och-titta-pa-strommar-fmXlt9emje",
+      "label": "Sända och titta på strömmar",
+      "slug": "sanda-och-titta-pa-strommar-fmXlt9emje"
+    },
+    {
+      "type": "group",
+      "id": "verktyg-3E6a12iKtC",
+      "label": "Verktyg",
+      "children": [
+        {
+          "type": "doc",
+          "id": "verktyg-3E6a12iKtC",
+          "label": "Verktyg",
+          "slug": "verktyg-3E6a12iKtC"
+        },
+        {
+          "type": "doc",
+          "id": "opentak-icu-ceJbKwGZb9",
+          "label": "Opentak ICU",
+          "slug": "opentak-icu-ceJbKwGZb9"
+        },
+        {
+          "type": "doc",
+          "id": "uas-tool-stromning-5JeQ6TxVVy",
+          "label": "UAS Tool Strömning",
+          "slug": "uas-tool-stromning-5JeQ6TxVVy"
+        }
+      ]
+    }
+  ]
+}

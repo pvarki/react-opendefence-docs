@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "id": "9fff4975-111b-45a3-9bd8-ba954b6fede0",
+  "slug": "fighter-Jaxg9FOHAs",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "Fighter",
+  "breadcrumb": [
+    "TAK Clients",
+    "ATAK",
+    "Usage by Role",
+    "Fighter"
+  ],
+  "createdAt": "2025-12-05T22:06:21.675Z",
+  "updatedAt": "2026-04-12T10:05:10.240Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "What does ATAK allow Fighters to accomplish",
+      "id": "what-does-atak-allow-fighters-to-accomplish"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>(This tab should not be shown)</p>\n<h1 id=\"atak---usage-by-role---fighter\"><a href=\"#atak---usage-by-role---fighter\">ATAK - Usage by Role - Fighter</a></h1>\n<h2 id=\"what-does-atak-allow-fighters-to-accomplish\"><a href=\"#what-does-atak-allow-fighters-to-accomplish\">What does ATAK allow Fighters to accomplish</a></h2>"
+    },
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Open ATAK",
+          "layout": "text",
+          "html": "<ul>\n<li>Open ATAK application</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "xx",
+          "layout": "text",
+          "html": "<ul>\n<li>xx</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "xx",
+          "layout": "text",
+          "html": "<ul>\n<li>xx</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "xx",
+          "layout": "text",
+          "html": "<ul>\n<li>xx</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "xx",
+          "layout": "text",
+          "html": "<ul>\n<li>xx</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "You are now connected",
+          "layout": "text",
+          "html": "<ul>\n<li>You can close this guide.</li>\n</ul>",
+          "images": []
+        }
+      ]
+    },
+    {
+      "type": "html",
+      "html": "<p>After seeing what Fighter can do with ATAK, continue to <a href=\"/doc/73d4d56f-a6d4-4819-8936-d3ca44258e82\">Basic Features</a></p>"
+    }
+  ]
+}

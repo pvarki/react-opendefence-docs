@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "90cab2ca-b074-482d-af95-3cbd3eba53be",
+  "slug": "atkomst-till-externa-tjanster-j1mymYziCz",
+  "collection": "deploy-app",
+  "locale": "sv",
+  "title": "Åtkomst till externa tjänster",
+  "breadcrumb": [
+    "Android",
+    "Administratörsguide",
+    "Åtkomst till externa tjänster"
+  ],
+  "createdAt": "2026-02-17T08:35:03.390Z",
+  "updatedAt": "2026-02-25T07:35:34.103Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>\\</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Externa tjänster",
+          "layout": "text",
+          "html": "<p>Externa tjänster länkar dig till andra webbplatser som är tillgängliga i din Deploy App-instans. Dessa är inte nödvändiga för den dagliga verksamheten, men de erbjuder användarna ytterligare funktioner.\nFör närvarande är dessa mest användbara för användare av TAK och TAK-tillägg.</p>",
+          "images": []
+        },
+        {
+          "title": "Åtkomst till externa tjänster",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Externa tjänster nås via sidofältet.</li>\n<li>Välj \"Administrationsverktyg\" och därefter \"Externa tjänster\".</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/9ea28c47e19e9f59.webp",
+              "width": 2560,
+              "height": 5712
+            }
+          ]
+        },
+        {
+          "title": "Tillgängliga tjänster",
+          "layout": "image-left",
+          "html": "<p>Dessa varierar per installation beroende på vilka tjänster som har beställts. Varje tjänst bör ha en kort beskrivning av dess funktioner.\nDe öppnas genom att klicka på dem, och de bör be om ditt mTLS-certifikat för en säker inloggning.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/72b5a385faef4246.webp",
+              "width": 2560,
+              "height": 5712
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "html",
+      "html": "<p>\\</p>"
+    }
+  ]
+}

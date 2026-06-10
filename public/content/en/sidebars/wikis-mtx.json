@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "label": "MTX Wiki",
+  "slug": "wikis/mtx",
+  "items": [
+    {
+      "type": "doc",
+      "id": "what-is-mtx-dfU8aHguP1",
+      "label": "What is MTX",
+      "slug": "what-is-mtx-dfU8aHguP1"
+    },
+    {
+      "type": "doc",
+      "id": "stream-publishing-and-watching-eZsoEzNcMs",
+      "label": "Stream Publishing and Watching",
+      "slug": "stream-publishing-and-watching-eZsoEzNcMs"
+    },
+    {
+      "type": "group",
+      "id": "tools-mC9QVIwoN3",
+      "label": "Tools",
+      "children": [
+        {
+          "type": "doc",
+          "id": "tools-mC9QVIwoN3",
+          "label": "Tools",
+          "slug": "tools-mC9QVIwoN3"
+        },
+        {
+          "type": "doc",
+          "id": "opentak-icu-6hPftpHVcX",
+          "label": "Opentak ICU",
+          "slug": "opentak-icu-6hPftpHVcX"
+        },
+        {
+          "type": "doc",
+          "id": "uas-tool-streaming-nxo5zBYr3D",
+          "label": "UAS Tool Streaming",
+          "slug": "uas-tool-streaming-nxo5zBYr3D"
+        }
+      ]
+    }
+  ]
+}

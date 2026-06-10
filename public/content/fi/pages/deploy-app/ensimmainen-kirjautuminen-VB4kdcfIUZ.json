@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 1,
+  "id": "ba4285fd-7ff4-49df-9392-5c315e294681",
+  "slug": "ensimmainen-kirjautuminen-VB4kdcfIUZ",
+  "collection": "deploy-app",
+  "locale": "fi",
+  "title": "Ensimmäinen kirjautuminen",
+  "breadcrumb": [
+    "Android",
+    "Ylläpitäjäohjeet",
+    "Ensimmäinen kirjautuminen"
+  ],
+  "createdAt": "2026-02-17T07:13:15.395Z",
+  "updatedAt": "2026-02-25T07:33:23.528Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>\\</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Ensimmäinen kirjautuminen",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Sinulla tulisi olla Deploy App -instanssisi osoite sekä ensimmäisen ylläpitäjän koodi.</li>\n<li>Kirjaudu sisään annetulla koodilla.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/906b655aaeb3290a.webp",
+              "width": 2560,
+              "height": 5712
+            }
+          ]
+        },
+        {
+          "title": "Kutsumanimi",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Anna itsellesi Kutsumanimi. Sen tulisi olla tunniste, josta vain organisaatiosi tunnistaa sinut.</li>\n<li>Sitä käytetään kaikissa palveluissa.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/49c5be01fa4dfcdd.webp",
+              "width": 2560,
+              "height": 5712
+            }
+          ]
+        },
+        {
+          "title": "Ohjeet",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Deploy App -sovelluksessa on sisäänrakennetut ohjeet, jotka opastavat käyttäjiä ja esittelevät tärkeimmät ominaisuudet.</li>\n<li>Tässä oppaassa käydään läpi varmenteen asennus.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/e647ae0d62530c4e.webp",
+              "width": 2561,
+              "height": 5712
+            }
+          ]
+        },
+        {
+          "title": "Lataa varmenne",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Tämä toimii pääsynäsi palveluihin.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/ef5fa57ae9428863.webp",
+              "width": 2560,
+              "height": 5712
+            }
+          ]
+        },
+        {
+          "title": "Asenna varmenne",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Kutsumanimi toimii salasananasi.</li>\n<li>Kirjoita se ja paina OK, kunnes olet palannut Deploy App -sovellukseen.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/8cfbbfb203993696.webp",
+              "width": 2560,
+              "height": 5712
+            }
+          ]
+        },
+        {
+          "title": "Kirjaudu varmenteella",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Paina \"Siirry avaimella\".</li>\n<li>Kun sinua pyydetään valitsemaan varmenne, tarkista, että kutsumanimesi on valittuna, ja kirjaudu sisään painamalla \"Valitse\".</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/b184ffdfb7d6f5e7.webp",
+              "width": 2560,
+              "height": 5712
+            }
+          ]
+        },
+        {
+          "title": "Onnistui",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Nyt voit aloittaa sovellusten käytön sekä käyttäjien rekisteröinnin.</li>\n<li>Deploy App näyttää ensimmäisillä kerroilla ohjeita, löydät enemmän ohjeita tältä sivustolla.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/2d82fb1865c34508.webp",
+              "width": 2560,
+              "height": 5712
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

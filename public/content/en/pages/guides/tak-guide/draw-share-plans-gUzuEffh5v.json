@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "b0b13d18-2d81-40e8-9964-cf12baabc387",
+  "slug": "draw-share-plans-gUzuEffh5v",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "Draw & share Plans",
+  "breadcrumb": [
+    "TAK Clients",
+    "WinTAK",
+    "Advanced Features",
+    "Draw & share Plans"
+  ],
+  "createdAt": "2025-12-05T22:05:59.301Z",
+  "updatedAt": "2026-02-22T13:48:52.268Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#ABB2BF\">(</span><span style=\"color:#E06C75\">This</span><span style=\"color:#E06C75\"> tab</span><span style=\"color:#E06C75\"> should</span><span style=\"color:#E06C75\"> not</span><span style=\"color:#E06C75\"> be</span><span style=\"color:#E06C75\"> shown</span><span style=\"color:#ABB2BF\">)</span></span></code></pre>",
+      "lang": "javascript"
+    }
+  ]
+}

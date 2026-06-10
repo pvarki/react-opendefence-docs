@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "0eaa284c-2093-48e1-afa8-8b0b21efb978",
+  "slug": "wintak-windows-tak-AhFOs4e5q4",
+  "collection": "wikis/tak",
+  "locale": "sv",
+  "title": "WinTAK - Windows TAK",
+  "breadcrumb": [
+    "TAK-produkter för Användare",
+    "WinTAK - Windows TAK"
+  ],
+  "createdAt": "2025-12-08T03:03:36.663Z",
+  "updatedAt": "2026-03-04T19:01:09.153Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Produkt Tillgänglig",
+      "id": "produkt-tillgänglig"
+    },
+    {
+      "depth": 2,
+      "text": "Användarhandbok",
+      "id": "användarhandbok"
+    },
+    {
+      "depth": 2,
+      "text": "Produktbeskrivning",
+      "id": "produktbeskrivning"
+    },
+    {
+      "depth": 2,
+      "text": "Systemkrav",
+      "id": "systemkrav"
+    },
+    {
+      "depth": 3,
+      "text": "Stödda operativsystem:",
+      "id": "stödda-operativsystem"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p><img src=\"/content/images/sv/attachments/a2fe7303e7840f32.webp\" alt=\"\" title=\" =246x\">   <img src=\"/content/images/sv/attachments/3be005b91ab9ab96.webp\" alt=\"\" title=\" =1388x\"></p>\n<h2 id=\"produkt-tillgänglig\"><a href=\"#produkt-tillgänglig\">Produkt Tillgänglig</a></h2>\n<p><a>https://tak.gov/products/wintak-civ</a></p>\n<h2 id=\"användarhandbok\"><a href=\"#användarhandbok\">Användarhandbok</a></h2>"
+    },
+    {
+      "type": "pdf",
+      "src": "attachments/208909a8-32d9-4afc-b7ce-19839cc3f4d9.pdf",
+      "title": "WinTAK 5.6 SUM.pdf"
+    },
+    {
+      "type": "pdf",
+      "src": "attachments/fc5d479d-11f3-4f26-8010-dc92a36319ee.pdf",
+      "title": "WinTAK 5.5 SUM.pdf"
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"produktbeskrivning\"><a href=\"#produktbeskrivning\"><strong>Produktbeskrivning</strong></a></h2>\n<p>WinTAK-CIV har liknande funktioner som ATAK-CIV, men är utvecklad för att köras på Windows-datorer och Windows Surface-enheter. WinTAK-CIV är avsedd att stödja civilmyndigheternas principer för beredskap och krishantering: förebyggande, begränsning, förberedelse, insats, evakuering och återhämtning.</p>\n<p>WinTAK erbjuder en användarupplevelse som ligger i linje med Microsofts applikationer, samtidigt som den behåller det utseende och den känsla som är karakteristisk för ATAK. Till skillnad från ATAK stödjer WinTAK flera samtidiga instanser av samma verktyg, såsom flera videospelare, vilket förbättrar dess användbarhet i ledningscentraler och operativa miljöer.</p>\n<h2 id=\"systemkrav\"><a href=\"#systemkrav\"><strong>Systemkrav</strong></a></h2>\n<p>Applikationens prestanda beror starkt på enhetens hårdvara — den fungerar med 4 GB RAM men är långsam. 8 GB ger avsevärt bättre prestanda, och 12–16 GB är att föredra.</p>\n<h3 id=\"stödda-operativsystem\"><a href=\"#stödda-operativsystem\"><strong>Stödda operativsystem:</strong></a></h3>\n<ul>\n<li>Windows 10 x64, version 1607 eller senare</li>\n<li>Windows 11 x64</li>\n<li>Windows Server 2016 x64</li>\n<li>Windows Server 2019 x64</li>\n</ul>"
+    }
+  ]
+}

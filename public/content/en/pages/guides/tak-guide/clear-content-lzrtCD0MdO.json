@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "a9de8b5d-4c35-4246-b0fe-7aeade6054ec",
+  "slug": "clear-content-lzrtCD0MdO",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "Clear Content",
+  "breadcrumb": [
+    "TAK Clients",
+    "ATAK",
+    "Basic Features",
+    "Clear Content"
+  ],
+  "createdAt": "2026-01-24T12:18:25.164Z",
+  "updatedAt": "2026-02-28T11:13:25.165Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>\\</p>\n<h1 id=\"clearing-content\"><a href=\"#clearing-content\">Clearing Content</a></h1>"
+    },
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "ATAK Saves to your Device",
+          "layout": "text",
+          "html": "<ul>\n<li>All map items you've created in ATAK or received as data packages are stored in your device.</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "1. Clearing Content",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Clear content in ENDEX to maintain sanity and avoid accumulating data (opsec). To do so, tap the trashcan icon in the main menu.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/802490de29695a84.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "2. Are You Sure?",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Tap the two selectors to enable clearing.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/f4b2b0bfecd49805.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "3. Complete!",
+          "layout": "text",
+          "html": "<ul>\n<li>Clear Content empties everything and closes the app. Done!</li>\n</ul>",
+          "images": []
+        }
+      ]
+    }
+  ]
+}

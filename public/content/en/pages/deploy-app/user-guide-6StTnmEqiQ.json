@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "7d4e5b5e-d362-4d2c-8f8b-d8d0afd096ea",
+  "slug": "user-guide-6StTnmEqiQ",
+  "collection": "deploy-app",
+  "locale": "en",
+  "title": "User Guide",
+  "breadcrumb": [
+    "Linux",
+    "User Guide"
+  ],
+  "createdAt": "2026-01-23T20:08:39.818Z",
+  "updatedAt": "2026-02-17T16:47:09.131Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>(This tab should not be shown)</p>"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "91763134-8ab2-4b5d-903c-eec21c8b182e",
+  "slug": "user-guide-yEohm3XLal",
+  "collection": "deploy-app",
+  "locale": "en",
+  "title": "User Guide",
+  "breadcrumb": [
+    "MacOS",
+    "User Guide"
+  ],
+  "createdAt": "2026-01-23T20:08:51.137Z",
+  "updatedAt": "2026-02-17T16:47:20.121Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>(This tab should not be shown)</p>"
+    }
+  ]
+}

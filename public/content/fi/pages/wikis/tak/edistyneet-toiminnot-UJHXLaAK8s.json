@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "f04d8bdf-5a73-426d-84e2-c2b5fbecdf95",
+  "slug": "edistyneet-toiminnot-UJHXLaAK8s",
+  "collection": "wikis/tak",
+  "locale": "fi",
+  "title": "Edistyneet Toiminnot",
+  "breadcrumb": [
+    "TAK Pääkäyttäjä Työkalut",
+    "Edistyneet Toiminnot"
+  ],
+  "createdAt": "2025-12-08T01:56:00.690Z",
+  "updatedAt": "2026-02-19T13:49:54.015Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Sivut",
+      "id": "sivut"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Lisäominaisuuksia edistyneille ylläpitäjille. Kaikki ominaisuudet eivät ole vielä lopullisia tai valmiita.</p>\n<h2 id=\"sivut\"><a href=\"#sivut\">Sivut</a></h2>\n<ul>\n<li><a href=\"/doc/1c99ca1b-d741-495a-9782-86c9fffced55\">MTX - Striimaus</a></li>\n<li><a href=\"/doc/d1b75f85-2c8f-44f3-ab8e-a3f24f2d8695\">Keycloak - Ryhmien hallinta</a></li>\n</ul>"
+    }
+  ]
+}

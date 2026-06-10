@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "8ba91068-d662-4d04-a1d4-e46b1c23336a",
+  "slug": "tak-tuotteet-kayttajille-91L6pdb8ee",
+  "collection": "wikis/tak",
+  "locale": "fi",
+  "title": "TAK Tuotteet Käyttäjille",
+  "breadcrumb": [
+    "TAK Tuotteet Käyttäjille"
+  ],
+  "createdAt": "2025-12-07T22:57:05.157Z",
+  "updatedAt": "2026-02-19T12:42:47.401Z",
+  "headings": [
+    {
+      "depth": 3,
+      "text": "Luettelo asiakassovelluksista",
+      "id": "luettelo-asiakassovelluksista"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>TAK-käyttäjät käyttävät asiakassovelluksia tehdäkseen asioita TAK-järjestelmässä. Asiakassovelluksia voidaan käyttää itsenäisesti, liitettyinä toiseen asiakassovellukseen pisteestä pisteeseen tai yhdistettyinä muihin asiakassovelluksiin takserverin kautta.</p>\n<h3 id=\"luettelo-asiakassovelluksista\"><a href=\"#luettelo-asiakassovelluksista\">Luettelo asiakassovelluksista</a></h3>\n<ul>\n<li><a href=\"/doc/34798cc2-5edf-4064-84be-99468531d11e\">ATAK - Android TAK</a></li>\n<li><a href=\"/doc/25c7aa6e-391e-436d-bf18-7ba542dba557\">iTAK - Apple TAK</a></li>\n<li><a href=\"/doc/8ad5bfab-d9bb-4ea5-b7e7-92479be5f357\">TAK Aware - Apple TAK</a></li>\n<li><a href=\"/doc/a779bf12-1a8a-466e-a332-b4afea032045\">TAK Tracker - Kevyt TAK — Android ja Apple</a></li>\n<li><a href=\"/doc/fdfa6671-a07e-448e-9f10-c6d718bd4fce\">VR-TAK - Virtuaalitodellisuus TAK</a></li>\n<li><a href=\"/doc/aed98639-de02-4f0d-be4e-99b5151ca164\">WinTAK - Windows TAK</a></li>\n<li><a href=\"/doc/7967cf93-9eec-4a7c-9c17-3d4bffe312eb\">TPC - TAK Product Center</a></li>\n</ul>"
+    }
+  ]
+}

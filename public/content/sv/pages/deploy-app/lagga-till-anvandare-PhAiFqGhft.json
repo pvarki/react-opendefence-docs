@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "id": "5f9ec0c2-2080-4f63-bffc-2387a15abf22",
+  "slug": "lagga-till-anvandare-PhAiFqGhft",
+  "collection": "deploy-app",
+  "locale": "sv",
+  "title": "Lägga till användare",
+  "breadcrumb": [
+    "Android",
+    "Administratörsguide",
+    "Lägga till användare"
+  ],
+  "createdAt": "2026-02-17T08:35:21.512Z",
+  "updatedAt": "2026-02-25T07:34:01.620Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>\\</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Lägga till användare",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Administrationsverktygen hittas enkelt i sidofältet.</li>\n<li>Välj \"Lägg till användare\".</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/ff4c0e618a22a3d2.webp",
+              "width": 2560,
+              "height": 5712
+            }
+          ]
+        },
+        {
+          "title": "Inbjudningskoder",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Välj antingen en befintlig inbjudningskod eller skapa en ny.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/33d64ba5dd58cd6e.webp",
+              "width": 2560,
+              "height": 5712
+            }
+          ]
+        },
+        {
+          "title": "Användning av inbjudningskoder",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Användare kan skanna QR-koden från din enhet.</li>\n<li>Du kan även dela länken eller till exempel skapa en lättutskriven PDF-fil.</li>\n<li>Användare får nu tillgång till <strong>väntrummet</strong>.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/0c48c215b6524f0a.webp",
+              "width": 2560,
+              "height": 5712
+            }
+          ]
+        },
+        {
+          "title": "Godkänna användare",
+          "layout": "image-left",
+          "html": "<ul>\n<li>I <strong>väntrummet</strong> bör det nu synas användare.</li>\n<li>Du når det via sidofältet.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/9691712759f02b4e.webp",
+              "width": 2560,
+              "height": 5712
+            }
+          ]
+        },
+        {
+          "title": "Godkänna användare",
+          "layout": "image-left",
+          "html": "<p>Du har några olika sätt att godkänna användare på:</p>\n<ul>\n<li>Skanna QR-koden som visas på deras enheter (rekommenderat sätt).</li>\n<li>Klicka på användaren och ange koden som visas på deras enhet.</li>\n<li>Öppna länken som användaren har delat med dig.\nNär du godkänner användare (särskilt via länkar), var 100% säker på att personen är den hen utger sig för att vara. Godkännande ger till exempel åtkomst till truppers positionsdata om TAK används.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/9eea38b99be03347.webp",
+              "width": 2560,
+              "height": 5712
+            }
+          ]
+        },
+        {
+          "title": "Stänga inbjudningskoder",
+          "layout": "image-left",
+          "html": "<ul>\n<li>För att förbättra säkerheten är det klokt att antingen stänga eller ta bort inbjudningskoder när de inte behövs.</li>\n<li>Hantering av koder öppnas genom att trycka på knappen bredvid koden.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/631035b957a3474b.webp",
+              "width": 2561,
+              "height": 5712
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "html",
+      "html": "<p>\\</p>"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "id": "3751ae73-b0b3-42b0-b957-ab3184b731bb",
+  "slug": "update-server-ota-mhNw2v3VQk",
+  "collection": "wikis/tak",
+  "locale": "fi",
+  "title": "Update Server (OTA)",
+  "breadcrumb": [
+    "TAK Pääkäyttäjä Työkalut",
+    "Takserveri",
+    "Update Server (OTA)"
+  ],
+  "createdAt": "2025-12-08T01:59:21.325Z",
+  "updatedAt": "2026-02-19T13:43:58.038Z",
+  "headings": [
+    {
+      "depth": 3,
+      "text": "Nykyinen tapa hallita lisäosia Deploy App-ympäristössä",
+      "id": "nykyinen-tapa-hallita-lisäosia-deploy-app-ympäristössä"
+    },
+    {
+      "depth": 3,
+      "text": "Update-kansiota varten tarvittavien tiedostojen valmistelu",
+      "id": "update-kansiota-varten-tarvittavien-tiedostojen-valmistelu"
+    },
+    {
+      "depth": 3,
+      "text": "Tulevaisuuden suunnitelma (alustava)",
+      "id": "tulevaisuuden-suunnitelma-alustava"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Takserverissä on ominaisuus, jonka avulla se voi tarjota ATAK-sovellusten ja lisäosien päivityksiä takserver-yhteyden kautta. Kun käyttäjät ovat yhteydessä takserveriin ja palvelu on käytössä, he voivat päivittää ja asentaa sovelluksia sekä lisäosia <strong>Plugins Tools (TAK Package Mgmt)</strong> -toiminnon kautta.</p>\n<p>Tällä hetkellä <strong>PVARKI</strong> tarjoaa asennettavaksi ja päivitettäväksi seuraavat paketit:</p>\n<ul>\n<li><strong>ATAK-sovellus</strong></li>\n<li><strong>Data Sync -lisäosa</strong></li>\n</ul>\n<p>Suunnitteilla on portaali, jonka kautta ylläpitäjä voisi päivittää, lisätä ja poistaa asiakkaille jaettavia .apk-tiedostoja, mutta tätä ominaisuutta ei ole vielä aikataulutettu toteutukseen. <a href=\"/doc/6afaee14-68de-47b5-826c-ca68b557a975\">Lisäosa listaus</a>.</p>\n<h3 id=\"nykyinen-tapa-hallita-lisäosia-deploy-app-ympäristössä\"><a href=\"#nykyinen-tapa-hallita-lisäosia-deploy-app-ympäristössä\"><strong>Nykyinen tapa hallita lisäosia Deploy App-ympäristössä</strong></a></h3>\n<p>Ylläpitäjä tarvitsee SSH root -oikeudet palvelimelle!</p>\n<p>Lisää .apk-tiedostot hakemistoon <code>/tmp/update</code> ja aja komento <code>taktool pp</code> kyseisessä hakemistossa. Siirrä sen jälkeen muodostunut kansio määriteltyyn sijaintiin ja korjaa käyttöoikeudet.</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#E06C75\">cd</span><span style=\"color:#56B6C2\"> /</span><span style=\"color:#E06C75\">tmp</span><span style=\"color:#56B6C2\">/</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">taktool</span><span style=\"color:#E06C75\"> pp</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">sudo</span><span style=\"color:#E06C75\"> cp</span><span style=\"color:#56B6C2\"> -</span><span style=\"color:#E06C75\">r</span><span style=\"color:#E06C75\"> update</span><span style=\"color:#56B6C2\"> /</span><span style=\"color:#E06C75\">opt</span><span style=\"color:#56B6C2\">/</span><span style=\"color:#E06C75\">docker</span><span style=\"color:#56B6C2\">-</span><span style=\"color:#E06C75\">rasenmaeher</span><span style=\"color:#56B6C2\">-</span><span style=\"color:#E06C75\">integration</span><span style=\"color:#56B6C2\">/</span><span style=\"color:#E06C75\">takserver</span><span style=\"color:#56B6C2\">/</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">sudo</span><span style=\"color:#E06C75\"> chmod</span><span style=\"color:#D19A66\"> 755</span><span style=\"color:#56B6C2\"> /</span><span style=\"color:#E06C75\">opt</span><span style=\"color:#56B6C2\">/</span><span style=\"color:#E06C75\">docker</span><span style=\"color:#56B6C2\">-</span><span style=\"color:#E06C75\">rasenmaeher</span><span style=\"color:#56B6C2\">-</span><span style=\"color:#E06C75\">integration</span><span style=\"color:#56B6C2\">/</span><span style=\"color:#E06C75\">takserver</span><span style=\"color:#56B6C2\">/</span><span style=\"color:#E06C75\">update</span><span style=\"color:#56B6C2\"> -</span><span style=\"color:#E5C07B\">R</span></span></code></pre>",
+      "lang": "javascript"
+    },
+    {
+      "type": "html",
+      "html": "<p>Käynnistä takserver-instanssi uudelleen Deploy App-ympäristössä.</p>\n<h3 id=\"update-kansiota-varten-tarvittavien-tiedostojen-valmistelu\"><a href=\"#update-kansiota-varten-tarvittavien-tiedostojen-valmistelu\">Update-kansiota varten tarvittavien tiedostojen valmistelu</a></h3>\n<ul>\n<li><strong>APK-tiedostot</strong></li>\n<li><strong>product.infz</strong> -tiedosto\n<ul>\n<li>zip-paketti, joka sisältää <strong>product.inf</strong> -tiedoston ja apk-paketin kuvakkeet</li>\n</ul>\n</li>\n</ul>\n<h3 id=\"tulevaisuuden-suunnitelma-alustava\"><a href=\"#tulevaisuuden-suunnitelma-alustava\"><strong>Tulevaisuuden suunnitelma (alustava)</strong></a></h3>\n<p>Nykyinen ajatus on toteuttaa Rasenmäeherin sisälle verkkosivu, jonka kautta voi hallita .apk-tiedostoja ja ladata uusia tarpeen mukaan.</p>\n<p>Osana tätä:</p>\n<ul>\n<li><strong>taktool</strong> integroitaisiin sivuun</li>\n<li>muutokset .apk-tiedostoihin käynnistäisivät taktoolin automaattisesti tai järjestelmä pyytäisi ylläpitäjää suorittamaan sen</li>\n</ul>\n<p>Tavoitteena on helpottaa hallintaa ja poistaa tarve suorille SSH root -yhteyksille tulevaisuudessa.</p>"
+    }
+  ]
+}

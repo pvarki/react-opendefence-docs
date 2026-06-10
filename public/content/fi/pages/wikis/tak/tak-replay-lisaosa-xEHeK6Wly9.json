@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "id": "fc99f274-ee61-4f0b-a387-349025b67b76",
+  "slug": "tak-replay-lisaosa-xEHeK6Wly9",
+  "collection": "wikis/tak",
+  "locale": "fi",
+  "title": "TAK Replay -lisäosa",
+  "breadcrumb": [
+    "TAK Tuotteet Käyttäjille",
+    "WinTAK - Windows TAK",
+    "Työkalut ja lisäosat",
+    "TAK Replay -lisäosa"
+  ],
+  "createdAt": "2025-12-08T01:48:06.409Z",
+  "updatedAt": "2026-02-19T13:29:17.167Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Lisäosan kuvaus",
+      "id": "lisäosan-kuvaus"
+    },
+    {
+      "depth": 3,
+      "text": "TAK Replay -lisäosan käyttöohje WinTAK:lle",
+      "id": "tak-replay--lisäosan-käyttöohje-wintaklle"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "src": "/content/images/fi/attachments/aa2e72c8a045629f.webp",
+      "alt": "",
+      "caption": "=310x",
+      "width": 310,
+      "height": 310
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"lisäosan-kuvaus\"><a href=\"#lisäosan-kuvaus\"><strong>Lisäosan kuvaus</strong></a></h2>\n<p>TAK Replay -lisäosa mahdollistaa karttatapahtumien ja keskustelujen tallentamisen reaaliajassa myöhempää toistoa varten. Tallennusaluetta voidaan mukauttaa zoomaustason ja katselualueen perusteella. Jokainen tallenne voidaan toistaa Timeline Viewer -näkymässä, jossa käyttäjä voi tarkastella tapahtumia joko reaaliajassa tai nopeutettuna. Lisäksi käyttäjät voivat ladata ja tallentaa TAK Serveriltä kaikki karttatapahtumat ja chat-viestit, jotka ovat tapahtuneet käyttäjän määrittämänä ajanjaksona.</p>\n<h3 id=\"tak-replay--lisäosan-käyttöohje-wintaklle\"><a href=\"#tak-replay--lisäosan-käyttöohje-wintaklle\">TAK Replay -lisäosan käyttöohje WinTAK:lle</a></h3>"
+    },
+    {
+      "type": "pdf",
+      "src": "attachments/95066010-7714-4928-be41-12d7684013a5.pdf",
+      "title": "WinTAK 5.5 TAK Replay User Guide.pdf"
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "id": "fb92cecc-a290-420f-b974-226b0d5d4c08",
+  "slug": "deploy-app-cryptpad-2C27HtLUGm",
+  "collection": "guides/cryptpad-guide",
+  "locale": "fi",
+  "title": "Deploy App - CryptPad",
+  "breadcrumb": [
+    "Deploy App - CryptPad"
+  ],
+  "createdAt": "2026-03-19T08:00:21.880Z",
+  "updatedAt": "2026-05-05T14:52:30.790Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "CryptPadin perehdytys",
+      "id": "cryptpadin-perehdytys"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<h1 id=\"mikä-on-cryptpad\"><a href=\"#mikä-on-cryptpad\">Mikä on CryptPad?</a></h1>\n<h2 id=\"cryptpadin-perehdytys\"><a href=\"#cryptpadin-perehdytys\">CryptPadin perehdytys</a></h2>"
+    },
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Tervetuloa CryptPadiin!",
+          "layout": "image-left",
+          "html": "<ul>\n<li>CryptPad on turvallinen, päästä päähän salattu yhteistyöalusta.</li>\n<li>Sen avulla tiimisi voi luoda ja yhtäaikaisesti muokata dokumentteja sekä jakaa tiedostoja turvallisesti.</li>\n<li>Tässä Deploy App -palvelimessa on sinun tiimisi oma, hajautettu CryptPad-palvelu.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/1e3118f93bb5c70b.webp",
+              "width": 1918,
+              "height": 1111
+            }
+          ]
+        },
+        {
+          "title": "Miksi CryptPad on turvallinen?",
+          "layout": "image-left",
+          "html": "<ul>\n<li>CryptPad varmistaa turvallisuuden siten, että edes palvelimen ylläpitäjä ei voi lukea tiedostojasi.</li>\n<li>Sinä päätät, kenelle jaat tiedostot.</li>\n<li>Myös muut tämän Deploy App -palvelimen käyttäjät tarvitsevat sinulta kutsun, jotta he voivat lukea tiedostojasi.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/72db9f20933c7757.webp",
+              "width": 1918,
+              "height": 1111
+            }
+          ]
+        },
+        {
+          "title": "Kirjaudu Deploy Appilla",
+          "layout": "image-left",
+          "html": "<ul>\n<li>CryptPad on integroitu Deploy Appin sertifikaattipohjaiseen kirjautumiseen.</li>\n<li>Klikkaa <strong>Avaa CryptPad!</strong>, niin kirjaudut automaattisesti Deploy App -tunnuksillasi.</li>\n<li>Erillistä tiliä tai salasanaa ei tarvita.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/c6dd1b11e8f144c3.webp",
+              "width": 2162,
+              "height": 1346
+            }
+          ]
+        },
+        {
+          "title": "CryptPad-hallintapaneeli",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Kirjautumisen jälkeen näkyviin tulee CryptPad-hallintapaneeli.</li>\n<li>Täältä voit luoda uusia dokumentteja, käyttää viimeaikaisia tiedostoja, hallita CryptDrivea (tiedostojen tallennus) ja tehdä yhteistyötä tiimin jäsenten kanssa.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/ba58f3800e2900a4.webp",
+              "width": 1834,
+              "height": 1139
+            }
+          ]
+        },
+        {
+          "title": "Luo ensimmäinen dokumentti",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Klikkaa hallintapaneelissa <strong>+</strong>-painiketta luodaksesi uuden dokumentin.</li>\n<li>Valitse tekstidokumenteista, koodieditorista, taulukoista, kanban-tauluista, esityksistä, piirtotauluista, lomakkeista ja muista.</li>\n<li>Kaikki dokumentit salataan automaattisesti.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/a9a27cb4f59ada80.webp",
+              "width": 1827,
+              "height": 1134
+            }
+          ]
+        },
+        {
+          "title": "Jaa tiimisi kanssa",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Jakaaksesi dokumentin klikkaa työkalupalkin <strong>jakopainiketta</strong>.</li>\n<li>Voit jakaa tietyille tiimin jäsenille tai luoda linkin.</li>\n<li>Jaetut dokumentit tukevat reaaliaikaista yhteistyötä: useat käyttäjät voivat muokata samanaikaisesti.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/e97fe623e044b4e0.webp",
+              "width": 1820,
+              "height": 1133
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

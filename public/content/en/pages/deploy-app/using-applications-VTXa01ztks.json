@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "9bcd8abb-96b0-46a2-be2c-51c07b4be6ad",
+  "slug": "using-applications-VTXa01ztks",
+  "collection": "deploy-app",
+  "locale": "en",
+  "title": "Using applications",
+  "breadcrumb": [
+    "MacOS",
+    "User Guide",
+    "Using applications"
+  ],
+  "createdAt": "2026-01-23T20:08:51.211Z",
+  "updatedAt": "2026-01-23T20:08:51.211Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<ul>\n<li>Deploy App - Home page\n<ul>\n<li>Choose application\n<ul>\n<li>TAK</li>\n<li>MTX</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>"
+    }
+  ]
+}

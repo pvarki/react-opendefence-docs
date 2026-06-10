@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "70562d86-f135-4376-b3cd-96cd6dad013a",
+  "slug": "selain-0MrE4uNLAM",
+  "collection": "guides/mtx-guide",
+  "locale": "fi",
+  "title": "Selain",
+  "breadcrumb": [
+    "Katso Striimiä",
+    "Selain"
+  ],
+  "createdAt": "2025-12-09T03:44:27.995Z",
+  "updatedAt": "2026-02-24T06:33:37.533Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Katso striimiä selaimella MTX:n kautta.",
+      "id": "katso-striimiä-selaimella-mtxn-kautta"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>(this tab should not be shown)</p>\n<p>— Waiting for new UI implementation —</p>\n<h2 id=\"katso-striimiä-selaimella-mtxn-kautta\"><a href=\"#katso-striimiä-selaimella-mtxn-kautta\">Katso striimiä selaimella MTX:n kautta.</a></h2>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"></span></code></pre>",
+      "lang": "markdown"
+    }
+  ]
+}

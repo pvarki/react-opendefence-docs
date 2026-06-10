@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "label": "MTX Guide",
+  "slug": "guides/mtx-guide",
+  "items": [
+    {
+      "type": "doc",
+      "id": "deploy-app-mtx-yHJ4LHVgZZ",
+      "label": "Deploy App - MTX",
+      "slug": "deploy-app-mtx-yHJ4LHVgZZ"
+    },
+    {
+      "type": "group",
+      "id": "katso-striimia-x57r3upJZ4",
+      "label": "Katso Striimiä",
+      "children": [
+        {
+          "type": "doc",
+          "id": "katso-striimia-x57r3upJZ4",
+          "label": "Katso Striimiä",
+          "slug": "katso-striimia-x57r3upJZ4"
+        },
+        {
+          "type": "doc",
+          "id": "selain-0MrE4uNLAM",
+          "label": "Selain",
+          "slug": "selain-0MrE4uNLAM"
+        },
+        {
+          "type": "doc",
+          "id": "vlc-player-fUPdjIb8kS",
+          "label": "VLC Player",
+          "slug": "vlc-player-fUPdjIb8kS"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "julkaise-striimia-sIbGhTUkad",
+      "label": "Julkaise Striimiä",
+      "children": [
+        {
+          "type": "doc",
+          "id": "julkaise-striimia-sIbGhTUkad",
+          "label": "Julkaise Striimiä",
+          "slug": "julkaise-striimia-sIbGhTUkad"
+        },
+        {
+          "type": "doc",
+          "id": "gopro-C3E58GqT35",
+          "label": "GoPro",
+          "slug": "gopro-C3E58GqT35"
+        },
+        {
+          "type": "doc",
+          "id": "opentak-icu-manuaalinen-tapa-KeJeyn2JV6",
+          "label": "OpenTAK ICU - Manuaalinen tapa",
+          "slug": "opentak-icu-manuaalinen-tapa-KeJeyn2JV6"
+        },
+        {
+          "type": "doc",
+          "id": "opentak-icu-f0iwedgGde",
+          "label": "OpenTAK ICU",
+          "slug": "opentak-icu-f0iwedgGde"
+        },
+        {
+          "type": "doc",
+          "id": "uas-tool-CX4y0uY0IF",
+          "label": "UAS Tool",
+          "slug": "uas-tool-CX4y0uY0IF"
+        }
+      ]
+    }
+  ]
+}

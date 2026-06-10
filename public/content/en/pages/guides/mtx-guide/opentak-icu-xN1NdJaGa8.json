@@ -1,0 +1,133 @@
+{
+  "schemaVersion": 1,
+  "id": "8494cf86-34e9-43e4-b8b9-d2f801589222",
+  "slug": "opentak-icu-xN1NdJaGa8",
+  "collection": "guides/mtx-guide",
+  "locale": "en",
+  "title": "OpenTAK ICU",
+  "breadcrumb": [
+    "Publish Stream",
+    "OpenTAK ICU"
+  ],
+  "createdAt": "2026-02-21T13:55:37.534Z",
+  "updatedAt": "2026-04-11T16:46:40.505Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Publish the stream with OpenTAK ICU.",
+      "id": "publish-the-stream-with-opentak-icu"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<h2 id=\"publish-the-stream-with-opentak-icu\"><a href=\"#publish-the-stream-with-opentak-icu\">Publish the stream with OpenTAK ICU.</a></h2>"
+    },
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Open Deploy App - MTX",
+          "layout": "text",
+          "html": "<ul>\n<li>Open Deloy App MTX</li>\n<li>Select \"+ Add\"</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "MTX - Start a stream 1",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Open OpenTAK ICU dropdown</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/6c688161563357e5.webp",
+              "width": 1080,
+              "height": 2007
+            }
+          ]
+        },
+        {
+          "title": "MTX - Start a stream 2",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Select \"Auto import settings to OpenTAK_ICU\"</li>\n<li>OpenTAK ICU opens in your device</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/b97b49cb1a80bfde.webp",
+              "width": 1080,
+              "height": 2006
+            }
+          ]
+        },
+        {
+          "title": "OpenTAK ICU - Instructions 1",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Welcome page opens if you haven't opened OpenTAK ICU before it will ask for permissions, grand it everything it asks</li>\n<li>Swipe left or click the \">\" to continue</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/9c4a8be9656f88c0.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "OpenTAK ICU - Instructions 2",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Your streaming configuration will be shown</li>\n<li>Check the config is corret. (Mainly the server is the one you want)</li>\n<li>Click \"Import\" be carefull not to swipe</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/7c693aed82153c62.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "OpenTAK ICU - Instructions 3",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Check you also get the \"Settings Updated Successfully\"</li>\n<li>If not return back and press \"Import\" again</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/0a4ec50c875e3f61.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "OpenTAK ICU - Streaming 1",
+          "layout": "image-left",
+          "html": "<ul>\n<li>The basic view of OpenTAK ICU</li>\n<li>To stream choose the \"Record Button\"</li>\n<li>To change settings manually choose the \"Gear\" icon</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/b23a282d7658326a.webp",
+              "width": 1080,
+              "height": 2256
+            }
+          ]
+        },
+        {
+          "title": "OpenTAK ICU - Streaming 2",
+          "layout": "image-left",
+          "html": "<ul>\n<li>When stream starts you get a notification \"Connection success\"</li>\n<li>If you don't get a notification and the bitrate doesn't change try importing the settings again and check your internet connection</li>\n<li>You can stop the stream from \"Stop\" button</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/62f1db708a50e846.webp",
+              "width": 1080,
+              "height": 2256
+            }
+          ]
+        },
+        {
+          "title": "You now know how to stream",
+          "layout": "text",
+          "html": "<ul>\n<li>You can close this guide.</li>\n</ul>",
+          "images": []
+        }
+      ]
+    },
+    {
+      "type": "html",
+      "html": "<p>Once you have started the stream, continue to the section <a href=\"/doc/9c3d844b-ebb7-453c-9d30-7bab0891f66e\">Watch Stream</a></p>"
+    }
+  ]
+}

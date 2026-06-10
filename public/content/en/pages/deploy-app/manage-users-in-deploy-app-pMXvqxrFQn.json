@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "cbe54f33-983a-48e3-a087-5c4af02c0d0e",
+  "slug": "manage-users-in-deploy-app-pMXvqxrFQn",
+  "collection": "deploy-app",
+  "locale": "en",
+  "title": "Manage Users in Deploy App",
+  "breadcrumb": [
+    "iOS",
+    "Admin Guide",
+    "Manage Users in Deploy App"
+  ],
+  "createdAt": "2026-01-23T20:08:00.016Z",
+  "updatedAt": "2026-01-23T20:08:00.016Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<ul>\n<li>Admin Tools\n<ul>\n<li>User Management\n<ul>\n<li>Manage Users\n<ul>\n<li>Administrators\n<ul>\n<li>Remove</li>\n<li>Demote</li>\n</ul>\n</li>\n<li>Fighters\n<ul>\n<li>Remove</li>\n<li>Promote</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>"
+    }
+  ]
+}

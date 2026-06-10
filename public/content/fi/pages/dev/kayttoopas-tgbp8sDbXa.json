@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 1,
+  "id": "0dae3b03-2074-4833-beeb-5587bea6bf39",
+  "slug": "kayttoopas-tgbp8sDbXa",
+  "collection": "dev",
+  "locale": "fi",
+  "title": "Käyttöopas",
+  "breadcrumb": [
+    "Käyttöopas"
+  ],
+  "createdAt": "2026-05-28T07:11:56.721Z",
+  "updatedAt": "2026-06-02T06:27:20.712Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Mitä \"käyttö\" tarkoittaa tässä",
+      "id": "mitä-käyttö-tarkoittaa-tässä"
+    },
+    {
+      "depth": 2,
+      "text": "Cloud-paketin rakentaminen",
+      "id": "cloud-paketin-rakentaminen"
+    },
+    {
+      "depth": 2,
+      "text": "Cloud-julkaisu",
+      "id": "cloud-julkaisu"
+    },
+    {
+      "depth": 2,
+      "text": "Päivittäinen ylläpito",
+      "id": "päivittäinen-ylläpito"
+    },
+    {
+      "depth": 3,
+      "text": "Pre-flight ennen muutosta",
+      "id": "pre-flight-ennen-muutosta"
+    },
+    {
+      "depth": 3,
+      "text": "Uudelleenjulkaisu manifestimuutoksen jälkeen",
+      "id": "uudelleenjulkaisu-manifestimuutoksen-jälkeen"
+    },
+    {
+      "depth": 3,
+      "text": "Salaisuuksien rotaatio",
+      "id": "salaisuuksien-rotaatio"
+    },
+    {
+      "depth": 3,
+      "text": "Sisäisen CA:n uusiminen",
+      "id": "sisäisen-can-uusiminen"
+    },
+    {
+      "depth": 3,
+      "text": "Lokit ja metriikat",
+      "id": "lokit-ja-metriikat"
+    },
+    {
+      "depth": 2,
+      "text": "Yleisiä vikatiloja",
+      "id": "yleisiä-vikatiloja"
+    },
+    {
+      "depth": 2,
+      "text": "Alasajo",
+      "id": "alasajo"
+    },
+    {
+      "depth": 2,
+      "text": "Mistä mikäkin löytyy",
+      "id": "mistä-mikäkin-löytyy"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Tämä sivu on cloud-paketin rakentamista ja julkaisua varten, sekä elävän ympäristön päivittäistä ylläpitoa varten. Paikallinen kehitys löytyy oppaasta <a href=\"/doc/b0b5c34b-5f9d-4100-b059-568d69f2ec16\">Kehitysopas</a>.</p>\n<h2 id=\"mitä-käyttö-tarkoittaa-tässä\"><a href=\"#mitä-käyttö-tarkoittaa-tässä\">Mitä \"käyttö\" tarkoittaa tässä</a></h2>\n<p>Toimitusmalleja on kaksi:</p>\n<ul>\n<li>Local. <code>task deploy</code> kind-klusteria vastaan. Käytössä kehittäjillä ja CI:llä.</li>\n<li>Cloud. Zarf-paketti rakennetaan kerran, sitten julkaistaan yhteen tai useampaan k3s-klusteriin. Tämä on tuotannonkaltainen polku.</li>\n</ul>\n<p>Vaihejärjestys ja julkaisuriippuvuudet löytyvät oppaasta <a href=\"/doc/8f9654ea-4fc7-4051-9675-8114db3aea50\">Arkkitehtuuri</a>. Samat vaiheet pätevät molemmissa malleissa.</p>\n<h2 id=\"cloud-paketin-rakentaminen\"><a href=\"#cloud-paketin-rakentaminen\">Cloud-paketin rakentaminen</a></h2>\n<p>Cloud Zarf -paketti peilaa komentoa <code>task deploy:cloud</code>. Se renderöi jokaisen vaiheaggregaattorin erilliseksi manifestiksi ja yhdistää ne järjestysvihjeillä.</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#61AFEF\">task</span><span style=\"color:#98C379\"> zarf:package:cloud</span></span></code></pre>",
+      "lang": "bash"
+    },
+    {
+      "type": "html",
+      "html": "<p>Mitä taski tekee, järjestyksessä:</p>\n<ol>\n<li>Kopioi tiedoston <code>../zarf/cloud/zarf.template.yaml</code> polkuun <code>.build/zarf/cloud/zarf.yaml</code>.</li>\n<li>Renderöi jokaisen <code>infra-phase1</code>-bundlen omaan manifestiinsa polussa <code>.build/zarf/cloud/manifests/infra-phase1/</code>. Bundle-kohtainen jako pitää jokaisen Helm-renderöidyn manifestin Kubernetesin Secret-kokorajan alla.</li>\n<li>Renderöi <code>infra-phase2</code>, <code>monitoring</code> ja <code>opendefense</code> yksittäisiin manifesteihin.</li>\n<li>Ajaa <code>zarf dev find-images</code>, jotta paketti kuvailee oman image-listansa. Taski antaa placeholder-hostnamen (<code>placeholder.invalid</code>), jottei löytäminen vaadi vuorovaikutusta.</li>\n<li>Lisää CloudNativePG:n init-imagen (<code>ghcr.io/cloudnative-pg/postgresql:18.0-system-trixie</code>) käsin. CNPG viittaa imageen dynaamisesti, eikä <code>find-images</code> havaitse viittausta.</li>\n<li>Kutsuu <code>zarf package create</code> tuottaakseen tiedoston <code>zarf-package-opendefense-cloud-&#x3C;arch>-1.0.0.tar.zst</code> repositorion juureen.</li>\n</ol>\n<p>Arkkitehtuuri on oletuksena <code>amd64</code>. Ohita se näin:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#61AFEF\">task</span><span style=\"color:#98C379\"> zarf:package:cloud</span><span style=\"color:#98C379\"> ZARF_ARCHITECTURE=arm64</span></span></code></pre>",
+      "lang": "bash"
+    },
+    {
+      "type": "html",
+      "html": "<p><code>ZARF_YOLO=true</code> riisuu image-listan ja asettaa paketin arvon <code>metadata.yolo: true</code>. Kohdeklusteri vetää tällöin imaget suoraan alkuperäisistä rekistereistä. Tämä on hyödyllinen ympäristöissä, joilla on egress eikä tarvetta Zarfin image-relokaatiolle. Katso täysi taskin sopimus tiedostosta <code>../zarf/cloud/README.md</code>.</p>\n<h2 id=\"cloud-julkaisu\"><a href=\"#cloud-julkaisu\">Cloud-julkaisu</a></h2>\n<p><code>zarf package deploy</code> käyttää sitä kube-kontekstia, jonka shelli näkee, joten osoita <code>KUBECONFIG</code> oikeaan tiedostoon ennen julkaisua. Anna <code>OPENDEFENSE_HOST</code> joko lipulla <code>--set</code> tai vuorovaikutteisesti.</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#E06C75\">KUBECONFIG</span><span style=\"color:#56B6C2\">=</span><span style=\"color:#98C379\">k3s-azure.yaml</span><span style=\"color:#61AFEF\"> zarf</span><span style=\"color:#98C379\"> package</span><span style=\"color:#98C379\"> deploy</span><span style=\"color:#56B6C2\"> \\</span></span>\n<span class=\"line\"><span style=\"color:#98C379\">  \"$(</span><span style=\"color:#61AFEF\">git</span><span style=\"color:#98C379\"> rev-parse </span><span style=\"color:#D19A66\">--show-toplevel</span><span style=\"color:#98C379\">)/zarf-package-opendefense-cloud-amd64-1.0.0.tar.zst\"</span><span style=\"color:#56B6C2\"> \\</span></span>\n<span class=\"line\"><span style=\"color:#D19A66\">  --set</span><span style=\"color:#98C379\"> OPENDEFENSE_HOST=example.dev.pvarki.fi</span><span style=\"color:#56B6C2\"> \\</span></span>\n<span class=\"line\"><span style=\"color:#D19A66\">  --confirm</span></span></code></pre>",
+      "lang": "bash"
+    },
+    {
+      "type": "html",
+      "html": "<p>Zarf korvaa <code>###ZARF_VAR_OPENDEFENSE_HOST###</code> kaikkialla missä cloud-overlayt viittaavat hostiin (ingress-hostnamet, sovelluskonfiguraatio). Vaiheet julkaistaan ilmoitetussa järjestyksessä, terveystarkastuksilla välissä:</p>\n<ul>\n<li><code>infra-phase1</code>. CNPG, cert-manager, Keycloak-operaattori, External Secrets, Traefik, Grafana-operaattori.</li>\n<li><code>infra-phase2</code>. trust-manager ja cloudin ClusterIssuers.</li>\n<li><code>monitoring</code>. Grafana, Loki, Alloy, Prometheus.</li>\n<li><code>opendefense</code>. CFSSL → PKI → opendefense-system → Battlelog → TAK → MTX.</li>\n</ul>\n<p>Saman järjestyksen pakottaa <code>task deploy:_apply</code> paikallisesti. Jos vaihe kaatuu terveystarkistukseen, Zarf pysähtyy ja nostaa esiin, mikä deployment ei saavuttanut Ready-tilaa.</p>\n<h2 id=\"päivittäinen-ylläpito\"><a href=\"#päivittäinen-ylläpito\">Päivittäinen ylläpito</a></h2>\n<h3 id=\"pre-flight-ennen-muutosta\"><a href=\"#pre-flight-ennen-muutosta\">Pre-flight ennen muutosta</a></h3>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#61AFEF\">kubectl</span><span style=\"color:#98C379\"> config</span><span style=\"color:#98C379\"> current-context</span><span style=\"color:#7F848E;font-style:italic\">        # vahvista että olet oikeassa klusterissa</span></span>\n<span class=\"line\"><span style=\"color:#61AFEF\">kubectl</span><span style=\"color:#98C379\"> get</span><span style=\"color:#98C379\"> nodes</span><span style=\"color:#7F848E;font-style:italic\">                     # ovatko solmut Ready?</span></span>\n<span class=\"line\"><span style=\"color:#61AFEF\">kubectl</span><span style=\"color:#98C379\"> get</span><span style=\"color:#98C379\"> pods</span><span style=\"color:#D19A66\"> -A</span><span style=\"color:#ABB2BF\"> | </span><span style=\"color:#61AFEF\">grep</span><span style=\"color:#D19A66\"> -v</span><span style=\"color:#98C379\"> Running</span><span style=\"color:#7F848E;font-style:italic\"> # mikä on jumissa?</span></span></code></pre>",
+      "lang": "bash"
+    },
+    {
+      "type": "html",
+      "html": "<h3 id=\"uudelleenjulkaisu-manifestimuutoksen-jälkeen\"><a href=\"#uudelleenjulkaisu-manifestimuutoksen-jälkeen\">Uudelleenjulkaisu manifestimuutoksen jälkeen</a></h3>\n<p>Paikallinen: muokkaa, sitten <code>task deploy</code>. Cloud: rakenna paketti uudelleen (<code>task zarf:package:cloud</code>) ja aja <code>zarf package deploy</code> uudelleen. Zarf on idempotentti ja sovittaa olemassa olevan.</p>\n<h3 id=\"salaisuuksien-rotaatio\"><a href=\"#salaisuuksien-rotaatio\">Salaisuuksien rotaatio</a></h3>\n<p>Salaisuudet vedetään <code>external-secrets-operator</code>-resurssin kautta konfiguroidusta salaisuusvarastosta, joten rotaatio tehdään lähteessä. Anna sitten joko ExternalSecretin päivitysvälin vetää uusi arvo, tai annotoi ExternalSecret pakottaaksesi synkronoinnin. Älä muokkaa synkronoitua Secret-resurssia suoraan. Operaattori ylikirjoittaa suorat muokkaukset.</p>\n<h3 id=\"sisäisen-can-uusiminen\"><a href=\"#sisäisen-can-uusiminen\">Sisäisen CA:n uusiminen</a></h3>\n<p>Klusterin CA on <code>opendefense-cfssl</code>:n myöntämä, ja cert-manager uusii lehtisertifikaatit automaattisesti. Jos joudut rotatoimaan juuren, suunnittele etukäteen. Jokainen nimiavaruus, joka kuluttaa bundlea trust-manager:n kautta, joutuu rullaamaan kuluttajansa uuden bundlen levittyä.</p>\n<h3 id=\"lokit-ja-metriikat\"><a href=\"#lokit-ja-metriikat\">Lokit ja metriikat</a></h3>\n<p>Lokit virtaavat reittiä Alloy → Loki. Metriikat virtaavat Prometheuksen kautta. Dashboardit ovat Grafanassa. Kaikki kolme elävät nimiavaruudessa <code>monitoring</code>. Palvelukohtaiset lokimuotoilijat asetetaan kussakin overlayssa (esim. <code>LOG_CONSOLE_FORMATTER=local</code> battlelogissa), jotta paikallinen kehitys pysyy ihmisluettavana ja cloud lähettää strukturoitua JSON:ia.</p>\n<h2 id=\"yleisiä-vikatiloja\"><a href=\"#yleisiä-vikatiloja\">Yleisiä vikatiloja</a></h2>\n<table>\n<thead>\n<tr>\n<th>Oire</th>\n<th>Todennäköinen syy</th>\n<th>Mistä katsoa</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><code>zarf package deploy</code> kaatuu vaiheen 1 terveystarkistukseen</td>\n<td>Operaattori ei saavuttanut Ready-tilaa ajoissa</td>\n<td><code>kubectl describe deployment ...</code> vaikuttavassa nimiavaruudessa</td>\n</tr>\n<tr>\n<td>Helmin hallinnoima resurssi kieltäytyy applyttämästä</td>\n<td>Cloud-overlay yritti poistaa <code>meta.helm.sh/*</code>-nimiöt, mutta lähde sisältää ne yhä</td>\n<td><code>patches:</code>-lohko tiedostossa <code>k8s/main/cloud/opendefense/kustomization.yaml</code></td>\n</tr>\n<tr>\n<td>Zarf-paketin rakennus kaatuu \"secret too big\" -virheeseen</td>\n<td>Bundlen renderöity manifesti ylitti 1 MiB</td>\n<td>Jaa bundle. Lisää uusi alikansio polkuun <code>k8s/main/cloud/infra-phase1/bundles/</code></td>\n</tr>\n<tr>\n<td>TAK-asiakkaat eivät saa yhteyttä</td>\n<td>Portti 8089 tai 8443 ei tavoitettavissa, tai mTLS-sertifikaattiketju väärä</td>\n<td>Tarkista Traefikin reitit ja tak-overlay</td>\n</tr>\n<tr>\n<td>Uusi tuote puuttuu RM UI:sta</td>\n<td><code>MW_PRODUCTS</code> ei päivitetty, tai miniwerk ei ajanut uudelleen</td>\n<td><code>kubectl -n opendefense-system logs job/opendefense-miniwerk</code></td>\n</tr>\n</tbody>\n</table>\n<h2 id=\"alasajo\"><a href=\"#alasajo\">Alasajo</a></h2>\n<ul>\n<li>Paikallinen: <code>task down</code> poistaa kind-klusterin.</li>\n<li>Cloud: <code>zarf package remove opendefense-cloud --confirm</code> (oikealla <code>KUBECONFIG</code>-arvolla). Toimi harkitusti. Komento poistaa alustan klusterista.</li>\n</ul>\n<h2 id=\"mistä-mikäkin-löytyy\"><a href=\"#mistä-mikäkin-löytyy\">Mistä mikäkin löytyy</a></h2>\n<table>\n<thead>\n<tr>\n<th>Asia</th>\n<th>Tiedosto tai polku</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Vaihekokoonpano</td>\n<td><code>k8s/main/{local,cloud}/{infra-phase1,infra-phase2,monitoring,opendefense}/kustomization.yaml</code></td>\n</tr>\n<tr>\n<td>Julkaisun odotusportit</td>\n<td><code>taskfile.yaml</code>, <code>deploy:_apply</code></td>\n</tr>\n<tr>\n<td>Zarf-paketin määrittely</td>\n<td><code>zarf/cloud/zarf.template.yaml</code></td>\n</tr>\n<tr>\n<td>Cloud-paketin rakennusvirta</td>\n<td><code>taskfile.yaml</code>, <code>zarf:package:cloud</code></td>\n</tr>\n<tr>\n<td>Työkalujen versiot</td>\n<td><code>mise.toml</code></td>\n</tr>\n<tr>\n<td>Kind-klusterin muoto</td>\n<td><code>kind-config.yaml</code></td>\n</tr>\n</tbody>\n</table>"
+    }
+  ]
+}

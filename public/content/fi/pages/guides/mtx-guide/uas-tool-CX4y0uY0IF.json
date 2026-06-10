@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "id": "b8fccbaa-622b-4dd5-9a6c-ddbddcbc10a6",
+  "slug": "uas-tool-CX4y0uY0IF",
+  "collection": "guides/mtx-guide",
+  "locale": "fi",
+  "title": "UAS Tool",
+  "breadcrumb": [
+    "Julkaise Striimiä",
+    "UAS Tool"
+  ],
+  "createdAt": "2025-12-09T03:44:27.613Z",
+  "updatedAt": "2026-04-12T12:45:31.824Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Julkaise videostriimi UAS Toolilla.",
+      "id": "julkaise-videostriimi-uas-toolilla"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<h2 id=\"julkaise-videostriimi-uas-toolilla\"><a href=\"#julkaise-videostriimi-uas-toolilla\">Julkaise videostriimi UAS Toolilla.</a></h2>"
+    },
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Avaa Deploy App – MTX",
+          "layout": "text",
+          "html": "<ul>\n<li>Avaa Deploy App MTX</li>\n<li>Valitse \"+ Lisää\"</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "MTX - Aloita striimi 1",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Avaa UAS Tool -pudotusvalikko</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/bff529cd206626fd.webp",
+              "width": 1080,
+              "height": 2007
+            }
+          ]
+        },
+        {
+          "title": "MTX - Aloita striimi 2",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Valitse \"Import settings to UAS Tool\"</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/cc0adecfba18ba52.webp",
+              "width": 1080,
+              "height": 2006
+            }
+          ]
+        },
+        {
+          "title": "ATAK - Tuo asetukset",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>\"Would you like to apply the configuration from an external source?\"</li>\n<li>Valitse \"Yes\"</li>\n<li>Siirry UAS Tool -lisäosaan</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/cd929600c74f69be.webp",
+              "width": 2109,
+              "height": 994
+            }
+          ]
+        },
+        {
+          "title": "ATAK - UAS Tool Striimi1",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Valitse drone \"Toista\"-painikkeella</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/ba41b55607516e35.webp",
+              "width": 2106,
+              "height": 995
+            }
+          ]
+        },
+        {
+          "title": "ATAK - UAS Tool Streaming 2",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Striimiä varten valitse \"Wrench\"-painike avataksesi asetukset</li>\n<li>Paina \"((Toista))\"-painiketta aloittaaksesi lähetyksen</li>\n<li>Sinun pitäisi saada ilmoitus \"Broadcast started\"</li>\n<li>Lopettaaksesi lähetyksen paina \"((Toista))\"-painiketta uudelleen</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/07df05ce5332df04.webp",
+              "width": 2106,
+              "height": 995
+            }
+          ]
+        },
+        {
+          "title": "Osaat nyt striimata",
+          "layout": "text",
+          "html": "<ul>\n<li>Voit sulkea tämän ohjeen</li>\n</ul>",
+          "images": []
+        }
+      ]
+    },
+    {
+      "type": "html",
+      "html": "<p>Kun olet käynnistänyt striimin, jatka seuraavaan osioon <a href=\"/doc/53f74fbb-29cf-4abe-b448-93c0ab9674b7\">Katso Striimiä</a></p>"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "id": "13a5cf25-89d2-4409-8c72-13a60b77dc41",
+  "slug": "takserver-recon-flodet-da0vEyjl28",
+  "collection": "wikis/tak",
+  "locale": "sv",
+  "title": "Takserver RECON-flödet",
+  "breadcrumb": [
+    "Användningsmodeller",
+    "PVARKI-standarden",
+    "Takserver RECON-flödet"
+  ],
+  "createdAt": "2025-12-08T03:03:35.221Z",
+  "updatedAt": "2026-02-20T06:13:40.193Z",
+  "headings": [
+    {
+      "depth": 3,
+      "text": "Vad är en RECON-flödet?",
+      "id": "vad-är-en-recon-flödet"
+    },
+    {
+      "depth": 2,
+      "text": "Användning av RECON-flödet",
+      "id": "användning-av-recon-flödet"
+    },
+    {
+      "depth": 2,
+      "text": "Hantering av RECON-flödet",
+      "id": "hantering-av-recon-flödet"
+    },
+    {
+      "depth": 2,
+      "text": "Använda TAK-verktyg:",
+      "id": "använda-tak-verktyg"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<h3 id=\"vad-är-en-recon-flödet\"><a href=\"#vad-är-en-recon-flödet\"><strong>Vad är en RECON-flödet?</strong></a></h3>\n<p>Takserverns RECON-feed är avsedd för granskad och verifierad underrättelseinformation och observationer som ledningen vill dela med alla serverns användare.\\nRECON-feeden är avsedd att prenumereras på och synkroniseras av alla inom serverns verksamhetsområde. Dess huvudsakliga syfte är att sprida omedelbar information om fienden samt viktig information om egna styrkor.</p>\n<p>Som standard delas RECON-feeden med användarna i standardgruppen, och prenumeranter har läs- och skrivrättigheter. Administratörer kan göra ändringar, och i stora användargrupper är det ofta lämpligt att ge de flesta användarna endast läsrättigheter och reservera skrivrättigheter för befälspersonal som hanterar feedens innehåll.</p>\n<h2 id=\"användning-av-recon-flödet\"><a href=\"#användning-av-recon-flödet\"><strong>Användning av RECON-flödet</strong></a></h2>\n<p>Varje PVARKI-användare bör prenumerera på takserverns RECON-feed och ha aviseringar aktiverade. RECON-feeden håller användarnas lägesbild uppdaterad om egna och fientliga styrkor.</p>\n<p>Användare vid kommandoplats (t.ex. stab) underhåller feeden med hjälp av den egna gruppens underrättelser, information från vänligt sinnade förband samt överordnad RECON-feed, om organisationen är del av en större helhet. Kommandoplatsens användare tar bort föråldrad information, uppdaterar förändrade observationer och lägger till verifierad information i feeden.</p>\n<h2 id=\"hantering-av-recon-flödet\"><a href=\"#hantering-av-recon-flödet\">Hantering av RECON-<strong>flödet</strong></a></h2>\n<ul>\n<li><a href=\"/doc/2c843d6b-7763-40e3-bdba-31bc13bc8cf8\">Mission Manager (Data Sync)</a></li>\n</ul>\n<h2 id=\"använda-tak-verktyg\"><a href=\"#använda-tak-verktyg\">Använda TAK-verktyg:</a></h2>\n<ul>\n<li><a href=\"/doc/e07f23dc-142c-4b40-bf3a-a1c69857d5ef\">Data Sync -lisäosa</a></li>\n</ul>"
+    }
+  ]
+}

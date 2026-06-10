@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "d302b69b-e44c-430a-bca6-93ee7df4b55c",
+  "slug": "join-a-deploy-app-Ns73TcVodz",
+  "collection": "deploy-app",
+  "locale": "en",
+  "title": "Join a Deploy App",
+  "breadcrumb": [
+    "Windows",
+    "User Guide",
+    "Join a Deploy App"
+  ],
+  "createdAt": "2026-01-23T20:08:59.818Z",
+  "updatedAt": "2026-02-25T07:36:23.881Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<ul>\n<li>Receive Invite link or scan QR code\n<ul>\n<li>Input Callsign\n<ul>\n<li>Open Callsign.pfx file and import it\n<ul>\n<li>Connect to Deploy App with Certificate\n<ul>\n<li>Use Applications</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>"
+    }
+  ]
+}

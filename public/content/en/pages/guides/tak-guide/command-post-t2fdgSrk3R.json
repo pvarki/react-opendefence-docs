@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "03f5bfcd-2567-4a6f-9718-482953706997",
+  "slug": "command-post-t2fdgSrk3R",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "Command Post",
+  "breadcrumb": [
+    "TAK Clients",
+    "TAK Tracker - Android",
+    "Usage by Role",
+    "Command Post"
+  ],
+  "createdAt": "2025-12-20T00:47:06.850Z",
+  "updatedAt": "2026-02-21T08:40:56.130Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>(This tab should not be shown)</p>"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "98c6db66-fbdc-460d-9699-797e29e043f8",
+  "slug": "havainnon-edelleenlahettaminen-sIRDHP8qAL",
+  "collection": "wikis/tak",
+  "locale": "fi",
+  "title": "Havainnon edelleenlähettäminen",
+  "breadcrumb": [
+    "Käyttömallit",
+    "Käyttötapaukset",
+    "Havainnon edelleenlähettäminen"
+  ],
+  "createdAt": "2025-12-07T23:46:42.130Z",
+  "updatedAt": "2026-02-20T06:15:43.263Z",
+  "headings": [
+    {
+      "depth": 3,
+      "text": "HQ-jakamisen kaavio:",
+      "id": "hq-jakamisen-kaavio"
+    },
+    {
+      "depth": 3,
+      "text": "Tiedustelu syötteen -kaavio:",
+      "id": "tiedustelu-syötteen--kaavio"
+    },
+    {
+      "depth": 2,
+      "text": "Lähettäminen HQ-roolin kautta",
+      "id": "lähettäminen-hq-roolin-kautta"
+    },
+    {
+      "depth": 2,
+      "text": "Lähettäminen Tiedustelu syötteen kautta",
+      "id": "lähettäminen-tiedustelu-syötteen-kautta"
+    },
+    {
+      "depth": 2,
+      "text": "Käytetyt TAK-työkalut:",
+      "id": "käytetyt-tak-työkalut"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>TAK:ia käytetään ajantasaisen tiedustelun tarjoamiseen, jotta joukot saavat paremman tilannekuvan. Sen avulla voidaan jakaa helposti tarkastettua ja varmennettua tietoa, jota voidaan päivittää nopeasti.</p>\n<p>Tässä on kaksi perusesimerkkiä siitä, miten havaintoja voidaan välittää, päivittää ja jakaa johdolle sekä muille palvelimen käyttäjille. Tavat ovat: jakaminen yksi-yhdelle HQ-roolin henkilöstölle sekä jakaminen Tiedustelu-syötteellä. Ylläpito ohjeistaa käyttäjiä siitä, kumpaa tapaa käytetään.</p>\n<h3 id=\"hq-jakamisen-kaavio\"><a href=\"#hq-jakamisen-kaavio\">HQ-jakamisen kaavio:</a></h3>"
+    },
+    {
+      "type": "image",
+      "src": "/content/images/fi/attachments/9e800cc9a71d88c5.webp",
+      "alt": "",
+      "width": 1052,
+      "height": 371
+    },
+    {
+      "type": "html",
+      "html": "<h3 id=\"tiedustelu-syötteen--kaavio\"><a href=\"#tiedustelu-syötteen--kaavio\">Tiedustelu syötteen -kaavio:</a></h3>"
+    },
+    {
+      "type": "image",
+      "src": "/content/images/fi/attachments/b9c7ebcc2abc8007.webp",
+      "alt": "",
+      "width": 1049,
+      "height": 369
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"lähettäminen-hq-roolin-kautta\"><a href=\"#lähettäminen-hq-roolin-kautta\">Lähettäminen HQ-roolin kautta</a></h2>\n<h4 id=\"käyttäjä--jakaminen-hq-roolille\"><a href=\"#käyttäjä--jakaminen-hq-roolille\"><strong>Käyttäjä – Jakaminen HQ-roolille</strong></a></h4>\n<p>Käyttäjä varmistaa tiedon oikeellisuuden ja luo siitä markerin (täyttäen tärkeimmät perustiedot) ja lähettää sen HQ-roolin käyttäjille.</p>\n<p>Käyttäjät käyttävät yksi-yhdelle -chatia antaakseen lisätietoja markkerista tai korostaakseen sen, jos tieto on kiireellistä.</p>\n<p>Jakaminen HQ:lle tuo tiedon saataville vain HQ-roolin käyttäjille.</p>\n<h4 id=\"hq--jakaminen-koko-palvelimelle\"><a href=\"#hq--jakaminen-koko-palvelimelle\"><strong>HQ – Jakaminen koko palvelimelle</strong></a></h4>\n<p>HQ seuraa saamaansa tietoa viestien ja datapakettien kautta.</p>\n<p>HQ varmentaa vastaanotetun tiedon (että se on ajantasainen ja oleellinen) ja lähettää sen RECON-syötteeseen jaettavaksi käyttäjille. Tarvittaessa HQ voi jakaa tiedon myös muille palvelimille.</p>\n<p>Jakaminen RECON-syötteeseen tuo tiedon kaikkien palvelimen käyttäjien saataville.</p>\n<h2 id=\"lähettäminen-tiedustelu-syötteen-kautta\"><a href=\"#lähettäminen-tiedustelu-syötteen-kautta\">Lähettäminen Tiedustelu syötteen kautta</a></h2>\n<h4 id=\"käyttäjä--jakaminen-tiedustelu-syötteelle\"><a href=\"#käyttäjä--jakaminen-tiedustelu-syötteelle\"><strong>Käyttäjä – Jakaminen</strong> Tiedustelu syötteelle</a></h4>\n<p>Käyttäjä varmistaa tiedon oikeellisuuden ja luo siitä markerin (täyttäen tärkeimmät perustiedot) ja lähettää sen Tiedustelu syötteeseen. Käyttäjä voi myöhemmin päivittää tietoa ja pitää sen relevanttina.</p>\n<p>Käyttäjät käyttävät feedin chatia antaakseen lisätietoja markkerista tai korostaakseen sen kiireellisyyttä.</p>\n<p>Jakaminen Tiedustelu syötteeseen tuo tiedon saataville saman ryhmän käyttäjille.</p>\n<h4 id=\"hq--jakaminen-koko-palvelimelle-1\"><a href=\"#hq--jakaminen-koko-palvelimelle-1\"><strong>HQ – Jakaminen koko palvelimelle</strong></a></h4>\n<p>HQ seuraa palvelimen Tiedustelu- ja Joukko-feedejä ja etsii niistä tietoa, joka tarvitaan RECON-syötteeseen.</p>\n<p>HQ varmentaa vastaanotetun tiedon (että se on ajantasainen ja oleellinen) ja lähettää sen RECON-syötteeseen jaettavaksi käyttäjille. Tarvittaessa HQ voi jakaa tiedon myös muille palvelimille.</p>\n<p>Jakaminen RECON-syötteeseen tuo tiedon kaikkien palvelimen käyttäjien saataville.</p>\n<h4 id=\"käyttäjä--päivittää-recon-feedin-tietoa-tiedustelu-syöte\"><a href=\"#käyttäjä--päivittää-recon-feedin-tietoa-tiedustelu-syöte\"><strong>Käyttäjä – Päivittää RECON feedin tietoa Tiedustelu syöte</strong></a></h4>\n<p>Kun käyttäjä saa lisää tietoa RECON-syötteen markerista, hän voi päivittää tiedon ja jakaa sen Tiedustelu syötteen kautta (esim. markkerin sijainti, tiedot kohteesta jne.).</p>\n<h4 id=\"tiedustelu-syöte-lisätietoja\"><a href=\"#tiedustelu-syöte-lisätietoja\"><strong>Tiedustelu syöte lisätietoja</strong></a></h4>\n<p>Vain käyttäjien, joiden tarvitsee lähettää havaintoja, tulee käyttää Tiedustelu syöttettä, ja heidän tarvitsee tilata se vain silloin, kun he osallistuvat operaatioon. Useimmat käyttäjät tilaavat vain RECON-syötteen.</p>\n<p>Suuremmissa organisaatioissa voi olla useita Tiedustelu- tai Tehtävä-feedejä eri tiimeille, jotta uuteen tietoon saadaan välitön pääsy. Palvelimissa varmennettu ja keskeinen tiedustelutieto on RECON-syöte.</p>\n<h2 id=\"käytetyt-tak-työkalut\"><a href=\"#käytetyt-tak-työkalut\"><strong>Käytetyt TAK-työkalut:</strong></a></h2>\n<ul>\n<li><a href=\"/doc/5f14e760-f5a6-4eac-b86c-0b4299b020ee\">Contacts / GeoChat -työkalu</a></li>\n<li><a href=\"/doc/c8fc27ed-ee98-4026-bb37-d4c797ad7a9a\">Data Sync -lisäosa</a></li>\n</ul>"
+    }
+  ]
+}

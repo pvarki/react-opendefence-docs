@@ -1,0 +1,215 @@
+{
+  "schemaVersion": 1,
+  "id": "a6bcb3a6-5500-46b3-9856-4e179ad45e64",
+  "slug": "deploy-app-matrix-srCgmEoYC5",
+  "collection": "guides/matrix-guide",
+  "locale": "sv",
+  "title": "Deploy App - Matrix",
+  "breadcrumb": [
+    "Deploy App - Matrix"
+  ],
+  "createdAt": "2026-03-19T07:59:12.570Z",
+  "updatedAt": "2026-05-05T15:19:48.320Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Dator (Windows / Linux / macOS), Element",
+      "id": "dator-windows--linux--macos-element"
+    },
+    {
+      "depth": 2,
+      "text": "Mobil (Android / iOS), Element Classic",
+      "id": "mobil-android--ios-element-classic"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<h1 id=\"introduktion-till-matrix\"><a href=\"#introduktion-till-matrix\">Introduktion till Matrix</a></h1>\n<h2 id=\"dator-windows--linux--macos-element\"><a href=\"#dator-windows--linux--macos-element\">Dator (Windows / Linux / macOS), Element</a></h2>"
+    },
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Välkommen till Matrix",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Denna introduktion använder Element-klienten, men du kan använda vilken Matrix-klient som helst.</li>\n<li>Stegen bör vara liknande i andra klienter.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/f6e6d09fad12555f.webp",
+              "width": 1918,
+              "height": 1113
+            }
+          ]
+        },
+        {
+          "title": "Förutsättningar",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Kopiera adressen till hemservern (1).</li>\n<li>Du kan alltid återvända till guiden via det nedre högra hörnet (2).</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/0c280745f70c3109.webp",
+              "width": 6013,
+              "height": 3525
+            }
+          ]
+        },
+        {
+          "title": "Logga in i Element 1/4",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Öppna Element och välj <strong>Logga in</strong>.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/176d53401560d2cd.webp",
+              "width": 6006,
+              "height": 3526
+            }
+          ]
+        },
+        {
+          "title": "Logga in i Element 2/4",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Tryck på <strong>Redigera</strong> vid hemserverns adress.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/914d737ead9c2ae6.webp",
+              "width": 6006,
+              "height": 3526
+            }
+          ]
+        },
+        {
+          "title": "Logga in i Element 3/4",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Klistra in serveradressen du kopierade tidigare.</li>\n<li>Tryck på <strong>Fortsätt</strong>.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/d8c643553c524f72.webp",
+              "width": 6006,
+              "height": 3526
+            }
+          ]
+        },
+        {
+          "title": "Logga in i Element 4/4",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Tryck på <strong>Fortsätt med Keycloak</strong>.</li>\n<li>Fortsätt i din webbläsare, som bör fråga efter ditt mTLS-certifikat.</li>\n<li>Autentisera med mTLS.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/50e8a81607a0db8f.webp",
+              "width": 6006,
+              "height": 3526
+            }
+          ]
+        },
+        {
+          "title": "Elements startsida",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Du är nu inloggad och kan använda Matrix.</li>\n<li>Du kan se eller skapa ytor (<strong>Spaces</strong>) till vänster (1).</li>\n<li>Du kan se och skapa direktmeddelanden i mitten (2).</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/efc0411dc4e6b694.webp",
+              "width": 6013,
+              "height": 3525
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"mobil-android--ios-element-classic\"><a href=\"#mobil-android--ios-element-classic\">Mobil (Android / iOS), Element Classic</a></h2>"
+    },
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Välkommen till Matrix",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Denna introduktion använder Element Classic-klienten, men du kan använda nästan vilken Matrix-klient som helst.</li>\n<li>Stegen bör vara liknande i andra klienter.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/f6e6d09fad12555f.webp",
+              "width": 1918,
+              "height": 1113
+            }
+          ]
+        },
+        {
+          "title": "Förutsättningar",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Kopiera adressen till hemservern (1).</li>\n<li>Du kan alltid återvända till guiden via det nedre högra hörnet (2).</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/0c280745f70c3109.webp",
+              "width": 6013,
+              "height": 3525
+            }
+          ]
+        },
+        {
+          "title": "Logga in i Element Classic 1/4",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Öppna Element och välj <strong>Sign in</strong>.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/4342fc307e466025.webp",
+              "width": 2880,
+              "height": 1820
+            }
+          ]
+        },
+        {
+          "title": "Logga in i Element Classic 2/4",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Tryck på <strong>Edit</strong> vid hemserverns adress.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/c8abbfc6273a4721.webp",
+              "width": 2880,
+              "height": 1820
+            }
+          ]
+        },
+        {
+          "title": "Logga in i Element Classic 3/4",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Klistra in serveradressen du kopierade tidigare.</li>\n<li>Tryck på <strong>Next</strong>.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/a6843e0d4bdcfba7.webp",
+              "width": 2880,
+              "height": 1820
+            }
+          ]
+        },
+        {
+          "title": "Logga in i Element Classic 4/4",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Tryck på <strong>Continue with Keycloak</strong>.</li>\n<li>Fortsätt i din webbläsare, som bör fråga efter ditt mTLS-certifikat.</li>\n<li>Autentisera med mTLS.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/09163f1812c75063.webp",
+              "width": 2880,
+              "height": 1820
+            }
+          ]
+        },
+        {
+          "title": "Element Classics startsida",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Du är nu inloggad och kan använda Matrix.</li>\n<li>Du kan söka efter användare och rum i det övre högra hörnet (1).</li>\n<li>Du kan starta en chatt från det nedre högra hörnet (2).</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/efc0411dc4e6b694.webp",
+              "width": 6013,
+              "height": 3525
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

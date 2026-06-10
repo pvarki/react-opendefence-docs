@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "acb211aa-6f56-41a4-8891-ee571ef5dd8a",
+  "slug": "takserveri-wvGgSzba9a",
+  "collection": "wikis/tak",
+  "locale": "fi",
+  "title": "Takserveri",
+  "breadcrumb": [
+    "TAK Pääkäyttäjä Työkalut",
+    "Takserveri"
+  ],
+  "createdAt": "2025-12-08T01:55:37.708Z",
+  "updatedAt": "2026-02-22T10:14:00.652Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Tuote Saatavilla",
+      "id": "tuote-saatavilla"
+    },
+    {
+      "depth": 2,
+      "text": "Käyttöohje",
+      "id": "käyttöohje"
+    },
+    {
+      "depth": 2,
+      "text": "Tuotekuvaus",
+      "id": "tuotekuvaus"
+    },
+    {
+      "depth": 2,
+      "text": "Sivut",
+      "id": "sivut"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "src": "/content/images/fi/attachments/8afafc8d9b412653.webp",
+      "alt": "",
+      "caption": "=655x",
+      "width": 2621,
+      "height": 2643
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"tuote-saatavilla\"><a href=\"#tuote-saatavilla\">Tuote Saatavilla</a></h2>\n<p><a href=\"https://tak.gov/products/tak-server\" target=\"_blank\" rel=\"noopener noreferrer\">https://tak.gov/products/tak-server</a></p>\n<h2 id=\"käyttöohje\"><a href=\"#käyttöohje\">Käyttöohje</a></h2>"
+    },
+    {
+      "type": "pdf",
+      "src": "attachments/7ef0eb7c-e09e-4980-80bb-690a5b5822c9.pdf",
+      "title": "TAK_Server_Configuration_Guide-5.6.pdf"
+    },
+    {
+      "type": "pdf",
+      "src": "attachments/0f8385e1-a2f0-4c5b-a7d0-134348c86c88.pdf",
+      "title": "TAK_Server_Configuration_Guide-5.5.pdf"
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"tuotekuvaus\"><a href=\"#tuotekuvaus\"><strong>Tuotekuvaus</strong></a></h2>\n<p>TAK Server on taktinen tietojenhallinta-alusta, joka mahdollistaa tiedon käytön ja salauksen eri verkkojen välillä. TAK Server suojaa, välittää ja tallentaa dataa sekä itsenäisissä että federoiduissa kokoonpanoissa.</p>\n<p>Sitä tarvitaan aina, kun TAK-asiakaslaitteet eivät toimi vertaisverkossa (peer-to-peer) tai kun operatiivinen tarve edellyttää tehtävätiedon salaamista ja tallentamista.</p>\n<p>Asiakaslaitteiden lisäosat, kuten <strong>DataSync</strong> ja <strong>Execution Checklist</strong>, vaativat myös TAK Serverin toimiakseen.</p>\n<h2 id=\"sivut\"><a href=\"#sivut\">Sivut</a></h2>\n<ul>\n<li><a href=\"/doc/24203b60-7d9e-40a8-b9cb-f62cda5c7c8f\">Perus Käyttöliittymä</a></li>\n<li><a href=\"/doc/3751ae73-b0b3-42b0-b957-ab3184b731bb\">Update Server (OTA)</a></li>\n<li><a href=\"/doc/5ac20941-fc2e-41aa-b98a-b3931d2e3383\">Mission Manager (Data Sync)</a></li>\n<li><a href=\"/doc/d1851099-ba36-408a-8e72-b52ae70a57d9\">Device Profiles</a></li>\n</ul>"
+    }
+  ]
+}

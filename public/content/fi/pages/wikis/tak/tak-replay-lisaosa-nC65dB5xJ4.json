@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "ccbe23b5-2e1c-40cf-9737-d20d86be5399",
+  "slug": "tak-replay-lisaosa-nC65dB5xJ4",
+  "collection": "wikis/tak",
+  "locale": "fi",
+  "title": "TAK Replay -lisäosa",
+  "breadcrumb": [
+    "TAK Työkalut Tuotteille",
+    "TAK Replay -lisäosa"
+  ],
+  "createdAt": "2025-12-08T01:07:27.992Z",
+  "updatedAt": "2026-02-19T13:38:12.787Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "TAK-tuotesivut lisäosalle",
+      "id": "tak-tuotesivut-lisäosalle"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "src": "/content/images/fi/attachments/aa2e72c8a045629f.webp",
+      "alt": "",
+      "caption": "=310x",
+      "width": 310,
+      "height": 310
+    },
+    {
+      "type": "html",
+      "html": "<p>TAK Replay mahdollistaa karttatapahtumien ja keskustelujen tallentamisen reaaliajassa myöhempää toistoa varten. Tallennusaluetta voidaan mukauttaa zoomaustason ja katselualueen mukaan. Jokainen tallenne voidaan toistaa Timeline Viewer -toistotyökalussa, joka antaa käyttäjälle mahdollisuuden tarkastella tapahtumia reaaliajassa tai nopeutettuna. Lisäksi käyttäjät voivat ladata ja tallentaa TAK Serveriltä kaikki karttatapahtumat ja keskustelut, jotka ovat tapahtuneet käyttäjän määrittämänä aikajaksona.</p>\n<h2 id=\"tak-tuotesivut-lisäosalle\"><a href=\"#tak-tuotesivut-lisäosalle\">TAK-tuotesivut lisäosalle</a></h2>\n<ul>\n<li>WinTAK <a href=\"/doc/fc99f274-ee61-4f0b-a387-349025b67b76\">TAK Replay -lisäosa</a></li>\n</ul>"
+    }
+  ]
+}

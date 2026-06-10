@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "65d7d521-56bb-4033-97c8-9fb95ff4e563",
+  "slug": "tyokalut-EbDYHhpQYw",
+  "collection": "wikis/mtx",
+  "locale": "fi",
+  "title": "Työkalut",
+  "breadcrumb": [
+    "Työkalut"
+  ],
+  "createdAt": "2025-10-31T07:05:32.377Z",
+  "updatedAt": "2025-12-03T13:57:19.397Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<ul>\n<li><a href=\"/doc/9ddd0476-0ed4-4437-9c9b-99edf80bf5c4\">Opentak ICU</a></li>\n<li><a href=\"/doc/02a46403-8c05-4311-84f3-6c9bfb386be0\">Uastool Striimaus</a></li>\n</ul>"
+    }
+  ]
+}

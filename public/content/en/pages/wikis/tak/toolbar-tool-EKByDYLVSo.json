@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "9417e4e1-0870-4938-8190-9b6ab0fd6734",
+  "slug": "toolbar-tool-EKByDYLVSo",
+  "collection": "wikis/tak",
+  "locale": "en",
+  "title": "Toolbar -tool",
+  "breadcrumb": [
+    "TAK Products for Users",
+    "ATAK - Android TAK",
+    "Tools and functions",
+    "Toolbar -tool"
+  ],
+  "createdAt": "2025-11-05T01:26:49.053Z",
+  "updatedAt": "2026-02-19T13:05:55.929Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Tool Description",
+      "id": "tool-description"
+    },
+    {
+      "depth": 2,
+      "text": "Instruction videos",
+      "id": "instruction-videos"
+    },
+    {
+      "depth": 2,
+      "text": "Toolbar -tool section from ATAK manual",
+      "id": "toolbar--tool-section-from-atak-manual"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "src": "/content/images/en/attachments/9dfc62f372874a37.webp",
+      "alt": "",
+      "width": 224,
+      "height": 32
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"tool-description\"><a href=\"#tool-description\"><strong>Tool Description</strong></a></h2>\n<p>The ATAK toolbar is customizable allowing for multiple layouts to be available to quickly switch to or edit. The default toolbar contains five tools, a sixth tool can be added on a smartphone device with up to ten tools supported on a tablet device.</p>\n<h2 id=\"instruction-videos\"><a href=\"#instruction-videos\">Instruction videos</a></h2>\n<p>==YouTube==</p>\n<h2 id=\"toolbar--tool-section-from-atak-manual\"><a href=\"#toolbar--tool-section-from-atak-manual\">Toolbar -tool section from ATAK manual</a></h2>"
+    },
+    {
+      "type": "pdf",
+      "src": "attachments/575db69d-4884-49e2-b504-e41282d3bcdf.pdf",
+      "title": "ATAK 5.6 Toolbar.pdf"
+    }
+  ]
+}

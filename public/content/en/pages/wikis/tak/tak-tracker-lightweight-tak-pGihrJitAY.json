@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 1,
+  "id": "d343006f-ccc0-4f2a-8874-33b7d32792ba",
+  "slug": "tak-tracker-lightweight-tak-pGihrJitAY",
+  "collection": "wikis/tak",
+  "locale": "en",
+  "title": "TAK Tracker - Lightweight TAK",
+  "breadcrumb": [
+    "TAK Products for Users",
+    "TAK Tracker - Lightweight TAK"
+  ],
+  "createdAt": "2025-09-07T09:38:50.440Z",
+  "updatedAt": "2026-02-19T13:19:54.928Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Available from",
+      "id": "available-from"
+    },
+    {
+      "depth": 2,
+      "text": "Product manual",
+      "id": "product-manual"
+    },
+    {
+      "depth": 2,
+      "text": "Product Description",
+      "id": "product-description"
+    },
+    {
+      "depth": 2,
+      "text": "Available from",
+      "id": "available-from"
+    },
+    {
+      "depth": 2,
+      "text": "Product Description",
+      "id": "product-description"
+    },
+    {
+      "depth": 2,
+      "text": "TAK Tracker contains with the following features",
+      "id": "tak-tracker-contains-with-the-following-features"
+    },
+    {
+      "depth": 3,
+      "text": "Additional features coming in the next release:",
+      "id": "additional-features-coming-in-the-next-release"
+    },
+    {
+      "depth": 3,
+      "text": "System Requirements:",
+      "id": "system-requirements"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "src": "/content/images/en/attachments/8d5d065c3a7b66c6.webp",
+      "alt": "",
+      "width": 225,
+      "height": 225
+    },
+    {
+      "type": "html",
+      "html": "<p>Lightweight tracking only software for TAK. There is a Android and iOS version.</p>\n<p># Android version</p>"
+    },
+    {
+      "type": "image",
+      "src": "/content/images/en/attachments/762b4dfb8f6098ed.webp",
+      "alt": "",
+      "width": 2220,
+      "height": 1080
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"available-from\"><a href=\"#available-from\">Available from</a></h2>\n<p><a href=\"https://tak.gov/products/tak-tracker\" target=\"_blank\" rel=\"noopener noreferrer\">https://tak.gov/products/tak-tracker</a></p>\n<p><a href=\"https://play.google.com/store/search?q=tak%20tracker&#x26;c=apps\" target=\"_blank\" rel=\"noopener noreferrer\">https://play.google.com/store/search?q=tak%20tracker&#x26;c=apps</a></p>\n<h2 id=\"product-manual\"><a href=\"#product-manual\">Product manual</a></h2>"
+    },
+    {
+      "type": "pdf",
+      "src": "attachments/818edc6c-faeb-4dbd-b4f7-9b3051a9a78f.pdf",
+      "title": "ATAK TAK Tracker App User Guide 4.6.1.pdf"
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"product-description\"><a href=\"#product-description\"><strong>Product Description</strong></a></h2>\n<p>TAK Tracker is a lightweight standalone android application for sending location information to a TAK Server.  Additionally it supports sending chat and emergency messages.</p>\n<p>TAK Tracker is a standalone plug-in designed to keep track of users in a TAK environment who do not have ATAK installed. ATAK/WinTAK users enrolled on the same server will see the TAK Tracker user markers on their map interfaces. Selecting a user marker will show that device's speed, heading, altitude and location data.</p>\n<h1 id=\"ios-version\"><a href=\"#ios-version\">iOS version</a></h1>"
+    },
+    {
+      "type": "image",
+      "src": "/content/images/en/attachments/5ebef74498d0cdcf.webp",
+      "alt": "",
+      "width": 643,
+      "height": 297
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"available-from\"><a href=\"#available-from\">Available from</a></h2>\n<p><a href=\"https://apps.apple.com/us/app/tak-tracker/id6455684671\" target=\"_blank\" rel=\"noopener noreferrer\">https://apps.apple.com/us/app/tak-tracker/id6455684671</a></p>\n<h2 id=\"product-description\"><a href=\"#product-description\">Product Description</a></h2>\n<p>The Team Awareness Kit (TAK) Tracker (also known as the Tactical Assault Kit in the Department of Defense) is a lightweight, send-only application designed to enable easy integrations into existing training and operational workflows. The application is designed from the ground-up in iOS and connects to your favorite TAK servers with either Data Packages or Certificate Enrollment. In addition, TAK Tracker can broadcast its information to the local network like you would expect from any TAK application.</p>\n<h2 id=\"tak-tracker-contains-with-the-following-features\"><a href=\"#tak-tracker-contains-with-the-following-features\">TAK Tracker contains with the following features</a></h2>\n<ul>\n<li>Full support for Data Packages and Certificate Enrollment</li>\n<li>Location / CoT broadcast over UDP</li>\n<li>Emergency Beacon support</li>\n<li>Support for Standard, Hybrid and 3D Maps</li>\n<li>Ability to change all measurement types, including MGRS</li>\n<li>Full support for continuously running in the background with low power draw</li>\n</ul>\n<h3 id=\"additional-features-coming-in-the-next-release\"><a href=\"#additional-features-coming-in-the-next-release\">Additional features coming in the next release:</a></h3>\n<ul>\n<li>TAK Chat Support</li>\n<li>Group/Channel Support</li>\n<li>QR Code Enrollment</li>\n</ul>\n<h3 id=\"system-requirements\"><a href=\"#system-requirements\">System Requirements:</a></h3>\n<ul>\n<li>Supports iOS 15.4 and later versions</li>\n</ul>"
+    }
+  ]
+}

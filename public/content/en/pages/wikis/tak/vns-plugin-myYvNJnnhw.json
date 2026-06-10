@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "id": "079e0f1f-6917-4a68-b5cc-b8527300afaf",
+  "slug": "vns-plugin-myYvNJnnhw",
+  "collection": "wikis/tak",
+  "locale": "en",
+  "title": "VNS -plugin",
+  "breadcrumb": [
+    "TAK Products for Users",
+    "WinTAK - Windows TAK",
+    "Tools and functions",
+    "VNS -plugin"
+  ],
+  "createdAt": "2025-09-14T14:48:10.665Z",
+  "updatedAt": "2026-02-19T13:29:52.514Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Plugin Description",
+      "id": "plugin-description"
+    },
+    {
+      "depth": 3,
+      "text": "VNS Plugin manual for WinTAK",
+      "id": "vns-plugin-manual-for-wintak"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "src": "/content/images/en/attachments/0aed24c4dd22ccae.webp",
+      "alt": "",
+      "width": 741,
+      "height": 754
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"plugin-description\"><a href=\"#plugin-description\"><strong>Plugin Description</strong></a></h2>\n<p>The Vehicle Navigation System (VNS) plugin performs two major functions. The first is that it allows routes in TAK to be aligned to the road system. The second is that it feeds the Augmented Reality System-Navigation (ARES-N) application with vital information, such as the device's location, pertinent situational awareness markers, and turn-by-turn style driving directions.</p>\n<p>Road system data is procured using the PAR osm-routing-engine project.</p>\n<h3 id=\"vns-plugin-manual-for-wintak\"><a href=\"#vns-plugin-manual-for-wintak\">VNS Plugin manual for WinTAK</a></h3>"
+    },
+    {
+      "type": "pdf",
+      "src": "attachments/58bdf54e-9154-4663-a9c3-f2beef8b4edd.pdf",
+      "title": "WinTAK_5.5_VNS User Guide.pdf"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "59c68c5b-a763-41ee-9d9b-af2fa9b9a801",
+  "slug": "troubleshooting-4heIv7ZV7m",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "Troubleshooting",
+  "breadcrumb": [
+    "TAK Clients",
+    "TAK Tracker - Apple",
+    "Troubleshooting"
+  ],
+  "createdAt": "2025-12-05T21:21:15.512Z",
+  "updatedAt": "2026-02-21T08:40:35.190Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>(This tab should not be shown)</p>"
+    }
+  ]
+}

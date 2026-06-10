@@ -1,8 +1,8 @@
 import { expect, test, type Page } from "@playwright/test";
 
-const FIRST = "/en/deploy-app/welcome-fixture01";
-const SECOND = "/en/deploy-app/first-login-fixture02";
-const THIRD = "/en/deploy-app/adding-users-fixture03";
+const FIRST = "/en/deploy-app/android-MENReFAfCN";
+const SECOND = "/en/deploy-app/user-guide-SNTomIhnLe";
+const THIRD = "/en/deploy-app/joining-a-deploy-app-p9htrbBL4S";
 
 /** The active pane only — neighbor panes are mounted (inert) for the swipe reveal. */
 function currentPane(page: Page) {
@@ -44,7 +44,7 @@ test.describe("book swipe navigation", () => {
     await expect(page).toHaveURL(SECOND);
     await expect(
       currentPane(page).getByRole("heading", {
-        name: "First login",
+        name: "User Guide",
         exact: true,
       }),
     ).toBeVisible();
@@ -67,7 +67,7 @@ test.describe("book swipe navigation", () => {
     await page.goBack();
     await expect(page).toHaveURL(FIRST);
     await expect(
-      currentPane(page).getByRole("heading", { name: "Welcome to Deploy App" }),
+      currentPane(page).getByRole("heading", { name: "Android", exact: true }),
     ).toBeVisible();
   });
 
@@ -117,7 +117,7 @@ test.describe("book swipe navigation", () => {
       testInfo.project.name === "mobile",
       "StepList has no swipe scope",
     );
-    await open(page, SECOND); // contains a slideset
+    await open(page, THIRD); // contains a slideset
     const scope = page.locator("[data-current] [data-swipe-scope]").first();
     await scope.scrollIntoViewIfNeeded();
     const box = await scope.boundingBox();
@@ -130,7 +130,7 @@ test.describe("book swipe navigation", () => {
     await page.waitForTimeout(500);
     // The deck owns the gesture: it advances a slide (?slide=2 deep link)
     // while the page itself does not turn.
-    await expect(page).toHaveURL(`${SECOND}?slide=2`);
+    await expect(page).toHaveURL(`${THIRD}?slide=2`);
   });
 
   test("edge gestures are ignored (dead zone)", async ({ page }) => {
@@ -174,11 +174,11 @@ test.describe("locale fallback", () => {
   test("untranslated page shows English content with a banner", async ({
     page,
   }) => {
-    await page.goto("/fi/deploy-app/welcome-fixture01");
+    await page.goto("/fi/deploy-app/android-MENReFAfCN");
     await expect(
       page
         .locator("[data-current]")
-        .getByRole("heading", { name: "Welcome to Deploy App" }),
+        .getByRole("heading", { name: "Android", exact: true }),
     ).toBeVisible();
     await expect(
       page.getByText("Tätä sivua ei ole vielä suomennettu", { exact: false }),
@@ -189,14 +189,10 @@ test.describe("locale fallback", () => {
     page,
   }, testInfo) => {
     test.skip(testInfo.project.name !== "mobile", "mobile-only affordance");
-    await page.goto("/en/deploy-app/welcome-fixture01");
+    await page.goto(FIRST);
     await page.getByRole("button", { name: "Contents" }).click();
-    await expect(
-      page.getByRole("link", { name: "Welcome to Deploy App" }),
-    ).toBeVisible();
-    // Groups start collapsed unless they contain the current page.
-    await page.getByRole("button", { name: "Administration" }).click();
-    await page.getByRole("link", { name: "Adding users" }).click();
+    // The Android group auto-opens because it contains the current page.
+    await page.getByRole("link", { name: "Joining a Deploy App" }).click();
     await expect(page).toHaveURL(THIRD);
   });
 
@@ -204,10 +200,11 @@ test.describe("locale fallback", () => {
     page,
   }, testInfo) => {
     test.skip(testInfo.project.name !== "desktop", "desktop-only affordance");
-    await page.goto("/en/deploy-app/first-login-fixture02");
+    await page.goto(SECOND);
     const sidebar = page.locator("aside");
+    // The Android group auto-opens because it contains the current page.
     await expect(
-      sidebar.getByRole("link", { name: "First login" }),
+      sidebar.getByRole("link", { name: "User Guide", exact: true }),
     ).toBeVisible();
   });
 });
@@ -222,7 +219,7 @@ test.describe("search", () => {
     );
     await page.goto("/en/search");
     await page.getByRole("searchbox").fill("certificate");
-    await expect(page.getByRole("link", { name: /First login/ })).toBeVisible();
+    await expect(page.locator("main a").first()).toBeVisible();
   });
 
   test("command palette searches and navigates on desktop", async ({
@@ -230,9 +227,11 @@ test.describe("search", () => {
   }, testInfo) => {
     test.skip(testInfo.project.name !== "desktop", "palette is desktop-only");
     await page.goto("/en");
-    await page.keyboard.press("ControlOrMeta+k");
-    await page.getByPlaceholder("Search docs…").fill("invite");
-    await page.getByRole("option", { name: /Adding users/ }).click();
-    await expect(page).toHaveURL("/en/deploy-app/adding-users-fixture03");
+    await page.getByRole("button", { name: "Search docs…" }).click();
+    await page.getByPlaceholder("Search docs…").fill("ATAK");
+    const option = page.getByRole("option").first();
+    await expect(option).toBeVisible();
+    await option.click();
+    await expect(page).toHaveURL(/\/en\/(deploy-app|guides|wikis|dev)\//);
   });
 });

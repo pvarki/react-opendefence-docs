@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "eb555bb7-aa94-4656-9f98-e7ffa430d941",
+  "slug": "device-profiles-gC8aj65Asa",
+  "collection": "wikis/tak",
+  "locale": "en",
+  "title": "Device Profiles",
+  "breadcrumb": [
+    "TAK Admin Tools",
+    "Takserver",
+    "Device Profiles"
+  ],
+  "createdAt": "2025-09-06T21:11:08.907Z",
+  "updatedAt": "2026-02-21T18:53:30.160Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Apply on Enrollment",
+      "id": "apply-on-enrollment"
+    },
+    {
+      "depth": 2,
+      "text": "Apply on Connection",
+      "id": "apply-on-connection"
+    },
+    {
+      "depth": 2,
+      "text": "Tool",
+      "id": "tool"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Device Profiles are used to manage devices connected to takserver. Mainly ATAK as the device needs to support receiving profiles from the server.</p>\n<p>Device Profiles are made in the Device Profile Manager and are implemented on users in specified groups. The profiles can be shared to users with enrollment, connection to server or as a manual tool.</p>\n<p>The preferred format of shared settings is .pref files inside a TAK data package, as the packages can trigger import function in ATAK for the files inside the data package.</p>\n<p><img src=\"/content/images/en/attachments/fda9aac14a791999.webp\" alt=\"\" title=\" =2560x427\"> <img src=\"/content/images/en/attachments/c1665a4a7d3a3789.webp\" alt=\"\" title=\" =2560x676\"></p>\n<h2 id=\"apply-on-enrollment\"><a href=\"#apply-on-enrollment\"><strong>Apply on Enrollment</strong></a></h2>\n<p>When a user enrolls their device with a username and password to obtain a certificate, they can receive EUD device settings from the server.</p>\n<p>This is typically used to distribute initial or minimum configuration settings, such as:</p>\n<ul>\n<li>Update Server settings</li>\n<li>Maps</li>\n<li>Toolbars</li>\n</ul>\n<h2 id=\"apply-on-connection\"><a href=\"#apply-on-connection\"><strong>Apply on Connection</strong></a></h2>\n<p>A user who is already enrolled, or who connects using a certificate, can receive profile updates whenever reconnecting to the takserver.</p>\n<p>This can be used for example to:</p>\n<ul>\n<li>distribute required configuration changes</li>\n<li>provide additional settings for added features (e.g., a Medic toolbar for users in the Medic group)</li>\n<li>update Mesh encryption keys when they change</li>\n</ul>\n<h2 id=\"tool\"><a href=\"#tool\"><strong>Tool</strong></a></h2>\n<p>The Tool option is used as a <strong>manual method</strong> for updating configurations or sharing files with specific users.</p>\n<p>It is typically used for:</p>\n<ul>\n<li>forcing updates to users who have not received the files through other methods.</li>\n</ul>"
+    }
+  ]
+}

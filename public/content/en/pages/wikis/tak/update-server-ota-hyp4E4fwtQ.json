@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "id": "50d8c66c-6d0c-4c3b-95b2-c2a265961d75",
+  "slug": "update-server-ota-hyp4E4fwtQ",
+  "collection": "wikis/tak",
+  "locale": "en",
+  "title": "Update Server (OTA)",
+  "breadcrumb": [
+    "TAK Admin Tools",
+    "Takserver",
+    "Update Server (OTA)"
+  ],
+  "createdAt": "2025-09-07T09:57:44.384Z",
+  "updatedAt": "2026-02-19T13:43:52.148Z",
+  "headings": [
+    {
+      "depth": 3,
+      "text": "Current way of managing plugins inside Deploy App",
+      "id": "current-way-of-managing-plugins-inside-deploy-app"
+    },
+    {
+      "depth": 3,
+      "text": "Preparing the needed files for Update folder",
+      "id": "preparing-the-needed-files-for-update-folder"
+    },
+    {
+      "depth": 3,
+      "text": "Future plan (preliminary)",
+      "id": "future-plan-preliminary"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Takserver has a feature to provide updates to ATAK applications and plugins with takserver connection. When users are connected to takserver with the service enabled, they can update and install applications and plugins from Plugins Tools (TAK Package Mgmt).</p>\n<p>Currently PVARKI is providing the following for installing and updating.</p>\n<ul>\n<li>ATAK -app</li>\n<li>Data Sync -plugin</li>\n</ul>\n<p>There is a plan to have a portal for admin to update/add/remove the .apk files shared to clients but this function is not on the road map yet. List on some of the available plugins is <a href=\"/doc/52717df5-11ce-4d08-a777-5c8154b451a4\">Plugin list</a>.</p>\n<h3 id=\"current-way-of-managing-plugins-inside-deploy-app\"><a href=\"#current-way-of-managing-plugins-inside-deploy-app\">Current way of managing plugins inside Deploy App</a></h3>\n<p>Admin need ssh root access to server!</p>\n<p>Add .apk' to <code>/tmp/update</code> and run <code>taktool pp</code>, inside the folder. Move the folder to mapped location and fix permissions.</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#E06C75\">cd</span><span style=\"color:#56B6C2\"> /</span><span style=\"color:#E06C75\">tmp</span><span style=\"color:#56B6C2\">/</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">taktool</span><span style=\"color:#E06C75\"> pp</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">sudo</span><span style=\"color:#E06C75\"> cp</span><span style=\"color:#56B6C2\"> -</span><span style=\"color:#E06C75\">r</span><span style=\"color:#E06C75\"> update</span><span style=\"color:#56B6C2\"> /</span><span style=\"color:#E06C75\">opt</span><span style=\"color:#56B6C2\">/</span><span style=\"color:#E06C75\">docker</span><span style=\"color:#56B6C2\">-</span><span style=\"color:#E06C75\">rasenmaeher</span><span style=\"color:#56B6C2\">-</span><span style=\"color:#E06C75\">integration</span><span style=\"color:#56B6C2\">/</span><span style=\"color:#E06C75\">takserver</span><span style=\"color:#56B6C2\">/</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">sudo</span><span style=\"color:#E06C75\"> chmod</span><span style=\"color:#D19A66\"> 755</span><span style=\"color:#56B6C2\"> /</span><span style=\"color:#E06C75\">opt</span><span style=\"color:#56B6C2\">/</span><span style=\"color:#E06C75\">docker</span><span style=\"color:#56B6C2\">-</span><span style=\"color:#E06C75\">rasenmaeher</span><span style=\"color:#56B6C2\">-</span><span style=\"color:#E06C75\">integration</span><span style=\"color:#56B6C2\">/</span><span style=\"color:#E06C75\">takserver</span><span style=\"color:#56B6C2\">/</span><span style=\"color:#E06C75\">update</span><span style=\"color:#56B6C2\"> -</span><span style=\"color:#E5C07B\">R</span></span></code></pre>",
+      "lang": "javascript"
+    },
+    {
+      "type": "html",
+      "html": "<p>Restart takserver instance inside Deploy App</p>\n<h3 id=\"preparing-the-needed-files-for-update-folder\"><a href=\"#preparing-the-needed-files-for-update-folder\">Preparing the needed files for Update folder</a></h3>\n<ul>\n<li>APK -files</li>\n<li>product.infz file\n<ul>\n<li>zip file including product.inf file and the apk icons.</li>\n</ul>\n</li>\n</ul>\n<h3 id=\"future-plan-preliminary\"><a href=\"#future-plan-preliminary\"><strong>Future plan (preliminary)</strong></a></h3>\n<p>The current idea is to implement a web page inside Rasenmäeher where .apk files can be managed and new ones uploaded when needed.</p>\n<p>As part of this:</p>\n<ul>\n<li><strong>taktool</strong> would be integrated into the page</li>\n<li>any changes to .apk files would automatically trigger taktool, or the system would prompt the administrator to run it</li>\n</ul>\n<p>The goal is to simplify management and eliminate the need for direct SSH root access in the future.</p>"
+    }
+  ]
+}

@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 1,
+  "id": "9bb35061-2c64-4718-9273-c11847dfa322",
+  "slug": "create-manage-feeds-z2CpC9Lpan",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "Create & Manage Feeds",
+  "breadcrumb": [
+    "TAK Clients",
+    "ATAK",
+    "Advanced Features",
+    "Create & Manage Feeds"
+  ],
+  "createdAt": "2025-12-05T22:06:22.318Z",
+  "updatedAt": "2026-02-28T11:13:36.157Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "ATAK connected to takserver - Create & Manage Feeds",
+      "id": "atak-connected-to-takserver---create--manage-feeds"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>\\</p>\n<h1 id=\"atak---create--manage-feeds---advanced-features\"><a href=\"#atak---create--manage-feeds---advanced-features\">ATAK - Create &#x26; Manage Feeds - Advanced Features</a></h1>\n<h2 id=\"atak-connected-to-takserver---create--manage-feeds\"><a href=\"#atak-connected-to-takserver---create--manage-feeds\">ATAK connected to takserver - Create &#x26; Manage Feeds</a></h2>"
+    },
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Creating Feeds",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Create feeds for either delivering your Plans or to start a continuous sharing of information.</li>\n<li>Tap the Feed symbol to start.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/c09ee1fb0e31cfa8.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "The Datasync Home - Overlay Manager",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Datasync home shows all the present feeds in servers you've been connected.</li>\n<li>Hit the Plus symbol to create new.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/5f8b389b72416f9b.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Creating a Feed",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Tap Create feed.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/a7ccff6cbe91f629.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Creating Feed - Options",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>First we want to name your new feed.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/4c13e87fa2d1086e.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Name your Feed",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Be descriptive. The example name points out that the feed contains plan for the FRAGO3 Order.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/25d8adf32e029005.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Choose Default Role",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Next, tap the Default Role selector to choose who can access your Feed.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/b860b25fc7d71850.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Feed Default Access",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Choose what suits your purpose the best.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/7c5ef679f81f228b.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Describe your Feed",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>By hitting Description, you may describe your feed a bit. That helps.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/ccae7c9da23020d6.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Hashtags",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Optionally, you could write some hashtags for your feed. That could help in analyzing data on your server.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/e5b817603ea67a6e.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "New Feed Created!",
+          "layout": "text",
+          "html": "<ul>\n<li>Your new feed is now here! If the default role is not Admin, people from your server can now subscribe your feed.</li>\n</ul>",
+          "images": []
+        }
+      ]
+    },
+    {
+      "type": "html",
+      "html": "<p>After successful testing Create &#x26; Manage Feeds, continue to <a href=\"/doc/2676ebbb-83f4-4569-a7a2-7050395f28c8\">Draw &#x26; share Plans</a></p>"
+    }
+  ]
+}

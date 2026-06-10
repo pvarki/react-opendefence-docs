@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "5023efce-a2df-4288-bc49-cc1346082d4e",
+  "slug": "point-dropper-tool-IUEAOayhVJ",
+  "collection": "wikis/tak",
+  "locale": "en",
+  "title": "Point Dropper tool",
+  "breadcrumb": [
+    "TAK Tools for Products",
+    "Point Dropper tool"
+  ],
+  "createdAt": "2025-10-05T10:10:00.674Z",
+  "updatedAt": "2026-02-26T08:39:21.628Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "TAK Product pages for Tool",
+      "id": "tak-product-pages-for-tool"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p><img src=\"/content/images/en/attachments/4535799356955bab.webp\" alt=\"\" title=\" =189x\"> Locations of interest can be entered using the Point Dropper tool. The locations on map can be shown with different icons (i.e. MIL-STD-2525 symbols) for easy identification. The icons can also include data like notes or last seen information for additional functions.</p>\n<h2 id=\"tak-product-pages-for-tool\"><a href=\"#tak-product-pages-for-tool\">TAK Product pages for Tool</a></h2>\n<ul>\n<li>ATAK <a href=\"/doc/8fe83d8c-29e4-44aa-9f59-6c72157323a1\">Point Dropper tool</a></li>\n</ul>"
+    }
+  ]
+}

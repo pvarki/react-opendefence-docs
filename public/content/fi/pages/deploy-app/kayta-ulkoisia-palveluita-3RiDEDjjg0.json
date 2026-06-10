@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "3656f4ec-3dc2-448a-a239-581e9b5f87c0",
+  "slug": "kayta-ulkoisia-palveluita-3RiDEDjjg0",
+  "collection": "deploy-app",
+  "locale": "fi",
+  "title": "Käytä ulkoisia palveluita",
+  "breadcrumb": [
+    "Android",
+    "Ylläpitäjäohjeet",
+    "Käytä ulkoisia palveluita"
+  ],
+  "createdAt": "2026-02-17T06:56:01.038Z",
+  "updatedAt": "2026-02-25T07:35:24.784Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>\\</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Ulkoiset palvelut",
+          "layout": "text",
+          "html": "<p>Ulkoiset palvelut linkittävät sinut muihin Deploy App -instanssissasi saatavilla oleviin sivustoihin. Nämä eivät ole välttämättömiä päivittäisessä toiminnassa, mutta ne tarjoavat käyttäjille lisää ominaisuuksia.\nTällä hetkellä nämä ovat hyödyllisimpiä TAK- ja TAK-lisäosien käyttäjille.</p>",
+          "images": []
+        },
+        {
+          "title": "Pääsy ulkoisiin palveluihin",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Ulkoisiin palveluihin pääsee sivupalkista.</li>\n<li>Valitse \"Ylläpitotyökalut\" ja sen jälkeen \"Ulkoiset palvelut\".</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/a0c236af53e6bd9d.webp",
+              "width": 2560,
+              "height": 5712
+            }
+          ]
+        },
+        {
+          "title": "Saatavilla olevat palvelut",
+          "layout": "image-left",
+          "html": "<p>Nämä vaihtelevat asennuskohtaisesti riippuen siitä, mitä palveluita on tilattu. Jokaisessa pitäisi olla lyhyt kuvaus sen toiminnoista.\nNe avautuvat klikkaamalla, ja niiden pitäisi pyytää mTLS-varmennettasi turvallista kirjautumista varten.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/d0825ceddd5a1cbe.webp",
+              "width": 2560,
+              "height": 5712
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "html",
+      "html": "<p>\\</p>"
+    }
+  ]
+}

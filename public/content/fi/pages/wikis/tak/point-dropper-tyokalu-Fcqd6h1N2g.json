@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "b784c107-c14f-491a-838e-1e131d6b1ef3",
+  "slug": "point-dropper-tyokalu-Fcqd6h1N2g",
+  "collection": "wikis/tak",
+  "locale": "fi",
+  "title": "Point Dropper -työkalu",
+  "breadcrumb": [
+    "TAK Työkalut Tuotteille",
+    "Point Dropper -työkalu"
+  ],
+  "createdAt": "2025-12-08T01:07:43.374Z",
+  "updatedAt": "2026-02-19T13:37:41.218Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "TAK-tuotesivut työkalulle",
+      "id": "tak-tuotesivut-työkalulle"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "src": "/content/images/fi/attachments/4535799356955bab.webp",
+      "alt": "",
+      "caption": "=189x",
+      "width": 189,
+      "height": 190
+    },
+    {
+      "type": "html",
+      "html": "<p>Kiinnostavat sijainnit voidaan syöttää Point Dropper -työkalulla. Kartalla olevat sijainnit voidaan esittää eri ikoneilla (esim. MIL-STD-2525 -symbolit) helpottamaan tunnistamista. Ikoneihin voidaan myös liittää tietoja, kuten muistiinpanoja tai \"last seen\" -tietoja, lisätoimintoja varten.</p>\n<h2 id=\"tak-tuotesivut-työkalulle\"><a href=\"#tak-tuotesivut-työkalulle\">TAK-tuotesivut työkalulle</a></h2>\n<ul>\n<li>ATAK <a href=\"/doc/4f141c64-bede-4d05-b970-2d143aadc32d\">Point Dropper -työkalu</a></li>\n</ul>"
+    }
+  ]
+}

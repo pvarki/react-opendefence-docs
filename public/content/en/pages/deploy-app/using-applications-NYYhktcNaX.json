@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "58711dc7-81d4-47b1-8166-2e2c56cc0a18",
+  "slug": "using-applications-NYYhktcNaX",
+  "collection": "deploy-app",
+  "locale": "en",
+  "title": "Using applications",
+  "breadcrumb": [
+    "Linux",
+    "User Guide",
+    "Using applications"
+  ],
+  "createdAt": "2026-01-23T20:08:39.896Z",
+  "updatedAt": "2026-01-23T20:08:39.896Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<ul>\n<li>Deploy App - Home page\n<ul>\n<li>Choose application\n<ul>\n<li>TAK</li>\n<li>MTX</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>"
+    }
+  ]
+}

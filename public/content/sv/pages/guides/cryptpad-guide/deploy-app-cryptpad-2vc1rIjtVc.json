@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "id": "79446a47-2823-43c8-bd72-1787cc2496c6",
+  "slug": "deploy-app-cryptpad-2vc1rIjtVc",
+  "collection": "guides/cryptpad-guide",
+  "locale": "sv",
+  "title": "Deploy App - CryptPad",
+  "breadcrumb": [
+    "Deploy App - CryptPad"
+  ],
+  "createdAt": "2026-03-19T08:00:28.421Z",
+  "updatedAt": "2026-05-05T14:52:56.014Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "CryptPad-introduktion",
+      "id": "cryptpad-introduktion"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<h1 id=\"vad-är-cryptpad\"><a href=\"#vad-är-cryptpad\">Vad är CryptPad?</a></h1>\n<h2 id=\"cryptpad-introduktion\"><a href=\"#cryptpad-introduktion\">CryptPad-introduktion</a></h2>"
+    },
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Välkommen till CryptPad!",
+          "layout": "image-left",
+          "html": "<ul>\n<li>CryptPad är en säker, ände-till-ände-krypterad samarbetsplattform.</li>\n<li>Ditt team kan skapa och gemensamt redigera dokument samt dela filer säkert.</li>\n<li>Denna Deploy App-server har din enhets egna, decentraliserade CryptPad-tjänst.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/1e3118f93bb5c70b.webp",
+              "width": 1918,
+              "height": 1111
+            }
+          ]
+        },
+        {
+          "title": "Varför är CryptPad säkert?",
+          "layout": "image-left",
+          "html": "<ul>\n<li>CryptPad säkerställer att inte ens serveradministratören kan läsa dina filer.</li>\n<li>Du bestämmer vem du delar med.</li>\n<li>Även andra användare på denna Deploy App-server behöver en inbjudan från dig för att kunna läsa dina filer.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/72db9f20933c7757.webp",
+              "width": 1918,
+              "height": 1111
+            }
+          ]
+        },
+        {
+          "title": "Logga in med Deploy App",
+          "layout": "image-left",
+          "html": "<ul>\n<li>CryptPad är integrerat med Deploy Apps certifikatbaserade autentisering.</li>\n<li>Klicka bara på <strong>Logga in på CryptPad</strong> så autentiseras du automatiskt med dina Deploy App-uppgifter.</li>\n<li>Inget separat konto eller lösenord behövs.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/c6dd1b11e8f144c3.webp",
+              "width": 2162,
+              "height": 1346
+            }
+          ]
+        },
+        {
+          "title": "Din CryptPad-instrumentpanel",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Efter inloggning ser du din CryptPad-instrumentpanel.</li>\n<li>Härifrån kan du skapa nya dokument, komma åt senaste filer, hantera din CryptDrive och samarbeta med teammedlemmar.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/ba58f3800e2900a4.webp",
+              "width": 1834,
+              "height": 1139
+            }
+          ]
+        },
+        {
+          "title": "Skapa ditt första dokument",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Klicka på <strong>+</strong>-knappen på instrumentpanelen för att skapa ett nytt dokument.</li>\n<li>Välj från textdokument, kodredigerare, kalkylblad, kanban-tavlor, presentationer, whiteboards, formulär och mer.</li>\n<li>Alla dokument krypteras automatiskt.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/a9a27cb4f59ada80.webp",
+              "width": 1827,
+              "height": 1134
+            }
+          ]
+        },
+        {
+          "title": "Dela med ditt team",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Klicka på <strong>delningsknappen</strong> i verktygsfältet för att dela ett dokument.</li>\n<li>Du kan dela med specifika teammedlemmar eller skapa en länk.</li>\n<li>Flera användare kan redigera samtidigt och se varandras ändringar i realtid.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/e97fe623e044b4e0.webp",
+              "width": 1820,
+              "height": 1133
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

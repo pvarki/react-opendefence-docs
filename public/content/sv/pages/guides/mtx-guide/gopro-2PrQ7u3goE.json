@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 1,
+  "id": "4494b1af-609c-44be-95a1-42a18373a351",
+  "slug": "gopro-2PrQ7u3goE",
+  "collection": "guides/mtx-guide",
+  "locale": "sv",
+  "title": "GoPro",
+  "breadcrumb": [
+    "Publicera streamen",
+    "GoPro"
+  ],
+  "createdAt": "2025-12-06T09:18:04.066Z",
+  "updatedAt": "2026-02-20T06:24:01.414Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "GoPro-streaming med GoPro Quick-appen",
+      "id": "gopro-streaming-med-gopro-quick-appen"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<h2 id=\"gopro-streaming-med-gopro-quick-appen\"><a href=\"#gopro-streaming-med-gopro-quick-appen\">GoPro-streaming med GoPro Quick-appen</a></h2>"
+    },
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Öppna GoPro Quick-appen",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Anslut din GoPro-kamera</li>\n<li>Gå till <strong>GoPro</strong> – Undermeny</li>\n<li>Gå till <strong>GoPro Settings</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/be731519f338ca01.webp",
+              "width": 1080,
+              "height": 2107
+            }
+          ]
+        },
+        {
+          "title": "GoPro-inställningar",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Gå till <strong>Live Stream</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/655af611889d3dea.webp",
+              "width": 1080,
+              "height": 2107
+            }
+          ]
+        },
+        {
+          "title": "Set Up Live",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Gå till <strong>Other/RTMP</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/362dbd9e09f7c19b.webp",
+              "width": 1080,
+              "height": 2107
+            }
+          ]
+        },
+        {
+          "title": "Stream to Other/RTMP 1",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Anslut till ett Wi-Fi-nätverk – <strong>Select a Wi-Fi Network</strong></li>\n<li>Ange den RTMPS-adress som MTX ger – <strong>Enter your RTMP URL</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/2501089abd2c3fe6.webp",
+              "width": 1080,
+              "height": 2107
+            }
+          ]
+        },
+        {
+          "title": "Stream to Other/RTMP 2",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Kontrollera Wi-Fi-anslutningen</li>\n<li>Kontrollera strömningsadressen</li>\n<li>Kontrollera upplösningen</li>\n<li>Gå till <strong>Continue</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/9642a60ab2fb99d5.webp",
+              "width": 1080,
+              "height": 2107
+            }
+          ]
+        },
+        {
+          "title": "Go Live",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Vänta tills anslutningen upprättas</li>\n<li>Gå till <strong>Go Live</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/8865398b3a5be967.webp",
+              "width": 1080,
+              "height": 2107
+            }
+          ]
+        },
+        {
+          "title": "Streaming Live",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Direktsändning pågår</li>\n<li>När sändningen är klar, avsluta genom att trycka på <strong>Stop-knappen</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/8665eaf7f1f838f3.webp",
+              "width": 1080,
+              "height": 2107
+            }
+          ]
+        },
+        {
+          "title": "Nu vet du hur man streamar",
+          "layout": "text",
+          "html": "<ul>\n<li>Du kan stänga denna guide.</li>\n</ul>",
+          "images": []
+        }
+      ]
+    },
+    {
+      "type": "html",
+      "html": "<p>När du har startat streamen, fortsätt till avsnittet <a href=\"/doc/ce8883ca-0875-427b-88c6-464f3ebcc0e9\">Katso Striimiä</a></p>"
+    }
+  ]
+}

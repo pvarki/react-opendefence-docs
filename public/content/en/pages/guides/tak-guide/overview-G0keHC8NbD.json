@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "d3de08cc-9b4e-4f1a-8791-5946535f4128",
+  "slug": "overview-G0keHC8NbD",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "Overview",
+  "breadcrumb": [
+    "TAK Clients",
+    "WinTAK",
+    "Usage by Role",
+    "Overview"
+  ],
+  "createdAt": "2025-12-05T22:05:58.824Z",
+  "updatedAt": "2026-02-21T14:24:06.369Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>(This tab should not be shown)</p>"
+    }
+  ]
+}

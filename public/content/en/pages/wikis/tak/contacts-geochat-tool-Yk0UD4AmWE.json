@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "34f28f61-6646-4a4d-a417-5ac036fccdb3",
+  "slug": "contacts-geochat-tool-Yk0UD4AmWE",
+  "collection": "wikis/tak",
+  "locale": "en",
+  "title": "Contacts / GeoChat tool",
+  "breadcrumb": [
+    "TAK Tools for Products",
+    "Contacts / GeoChat tool"
+  ],
+  "createdAt": "2025-10-05T10:09:47.188Z",
+  "updatedAt": "2026-02-19T13:33:40.355Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "TAK Product pages for Tool",
+      "id": "tak-product-pages-for-tool"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p><img src=\"/content/images/en/attachments/25e331c17ee17a21.webp\" alt=\"\" title=\" =218x161\">Contacts Tool includes the users and other contact functions inside TAK. This tool can be used to chat, send packages and contact other users/functions in TAK.</p>\n<h2 id=\"tak-product-pages-for-tool\"><a href=\"#tak-product-pages-for-tool\">TAK Product pages for Tool</a></h2>\n<ul>\n<li>WinTAK <a href=\"/doc/9d111355-07d3-411a-90b3-33c5c560a1e6\">Contacts / GeoChat tool</a></li>\n<li>ATAK <a href=\"/doc/c6ae417f-9cb1-47cd-b53e-dff9db30e24d\">Contacts / GeoChat tool</a></li>\n</ul>"
+    }
+  ]
+}

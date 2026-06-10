@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "7f2e085b-7632-40ce-a869-ccc4df39103d",
+  "slug": "stream-publishing-and-watching-eZsoEzNcMs",
+  "collection": "wikis/mtx",
+  "locale": "en",
+  "title": "Stream Publishing and Watching",
+  "breadcrumb": [
+    "Stream Publishing and Watching"
+  ],
+  "createdAt": "2025-10-31T07:07:13.001Z",
+  "updatedAt": "2026-02-16T08:35:05.680Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Deploy App credentials and streams",
+      "id": "deploy-app-credentials-and-streams"
+    },
+    {
+      "depth": 2,
+      "text": "Naming convention:",
+      "id": "naming-convention"
+    },
+    {
+      "depth": 3,
+      "text": "Stream path naming",
+      "id": "stream-path-naming"
+    },
+    {
+      "depth": 2,
+      "text": "Streams with tools",
+      "id": "streams-with-tools"
+    },
+    {
+      "depth": 3,
+      "text": "Publishing streams",
+      "id": "publishing-streams"
+    },
+    {
+      "depth": 3,
+      "text": "Watching streams",
+      "id": "watching-streams"
+    },
+    {
+      "depth": 2,
+      "text": "Streams with protocols",
+      "id": "streams-with-protocols"
+    },
+    {
+      "depth": 3,
+      "text": "Publishing streams",
+      "id": "publishing-streams-1"
+    },
+    {
+      "depth": 3,
+      "text": "Watching streams",
+      "id": "watching-streams-1"
+    },
+    {
+      "depth": 2,
+      "text": "You can share the links with QR Code",
+      "id": "you-can-share-the-links-with-qr-code"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Live video sharing and viewing are done through a video streaming server. The server is accessed using the credentials provided by the Deploy App.</p>\n<h2 id=\"deploy-app-credentials-and-streams\"><a href=\"#deploy-app-credentials-and-streams\">Deploy App credentials and streams</a></h2>\n<p><code>https://mtx.``**canadian-goose.pvarki.fi**``:4626/api/v1/direct/credentials</code></p>\n<p><code>https://mtx.``**canadian-goose.pvarki.fi**``:4626/api/v1/direct/streams</code></p>\n<h2 id=\"naming-convention\"><a href=\"#naming-convention\"><strong>Naming convention:</strong></a></h2>\n<h3 id=\"stream-path-naming\"><a href=\"#stream-path-naming\">Stream path naming</a></h3>\n<p><code>*live/tool/callsign*</code></p>\n<h4 id=\"list-of-tools\"><a href=\"#list-of-tools\">List of tools</a></h4>\n<p><code>icu, gopro, uas, ipcam</code></p>\n<h2 id=\"streams-with-tools\"><a href=\"#streams-with-tools\">Streams with tools</a></h2>\n<h3 id=\"publishing-streams\"><a href=\"#publishing-streams\">Publishing streams</a></h3>\n<h4 id=\"opentak-icu\"><a href=\"#opentak-icu\">Opentak ICU</a></h4>\n<p><code>rtmps://``**canadian-goose.pvarki.fi**``:1936/live/icu/``**Callsign**</code></p>\n<p><a href=\"/doc/c7881f4e-d267-4d64-8946-cf3b1f8ebc25\">Opentak ICU</a></p>\n<h4 id=\"gopro-app\"><a href=\"#gopro-app\">GoPro App</a></h4>\n<p><code>rtmps://``**canadian-goose.pvarki.fi**``:1936/live/gopro/``**Callsing**``?user=``**USERNAME**``&#x26;pass=``**PASSWORD**</code></p>\n<h4 id=\"uastool\"><a href=\"#uastool\">Uastool</a></h4>\n<p><code>srt://``**canadian-goose.pvarki.fi**``:8890?streamid=publish:live/icu/``**Callsign**``:``**USERNAME**``:``**PASSWORD**</code></p>\n<p><a href=\"/doc/4d2c973a-179c-4706-b4e8-a372d353c50e\">Uastool Streaming</a></p>\n<h3 id=\"watching-streams\"><a href=\"#watching-streams\">Watching streams</a></h3>\n<h4 id=\"vlc\"><a href=\"#vlc\">VLC</a></h4>\n<p><code>srt://``**canadian-goose.pvarki.fi**``:8890?streamid=read:live/icu/``**Callsign**``:``**USERNAME**``:``**PASSWORD**</code></p>\n<p><code>https://``**canadian-goose.pvarki.fi**``:9888/live/icu/``**Callsign**``/index.m3u8</code></p>\n<h4 id=\"browser\"><a href=\"#browser\">Browser</a></h4>\n<p><code>https://``**canadian-goose.pvarki.fi**``:9888/live/icu/``**Callsign**``/</code></p>\n<h4 id=\"atak\"><a href=\"#atak\">ATAK</a></h4>\n<p><code>rtmps://``**canadian-goose.pvarki.fi**``:1936/live/icu/``**Callsign**``?user=``**USERNAME**``&#x26;pass=``**PASSWORD**</code></p>\n<h4 id=\"sharing-the-link-via-takserver\"><a href=\"#sharing-the-link-via-takserver\"><strong>Sharing the link via</strong> Takserver</a></h4>\n<p><code>rtmps://``**canadian-goose.pvarki.fi**``:1936/live/icu/``**Callsign**``?user=``**USERNAME**``&#x26;pass=``**PASSWORD**</code></p>\n<p><img src=\"/content/images/en/attachments/106978dd70770c1e.webp\" alt=\"\" title=\" =469x366\">Takserver - Hamburger Menu → Data → Video Feed Manager → Add</p>\n<h2 id=\"streams-with-protocols\"><a href=\"#streams-with-protocols\">Streams with protocols</a></h2>\n<h3 id=\"publishing-streams-1\"><a href=\"#publishing-streams-1\">Publishing streams</a></h3>\n<h4 id=\"rtsps-publishing\"><a href=\"#rtsps-publishing\">RTSPS Publishing</a></h4>\n<p><code>rtsps://``**canadian-goose.pvarki.fi**``:8322/live/icu/``**Callsign**</code></p>\n<p><code>rtsps://``**USERNAME**``:``**PASSWORD**``@``**canadian-goose.pvarki.fi**``:8322/live/icu/``**Callsign**</code></p>\n<h4 id=\"rtmps-publishing\"><a href=\"#rtmps-publishing\">RTMPS Publishing</a></h4>\n<p><code>rtmps://``**canadian-goose.pvarki.fi**``:1936/live/icu/``**Callsign**</code></p>\n<p><code>rtmps://``**USERNAME**``:``**PASSWORD**``@``**canadian-goose.pvarki.fi**``:1936/live/icu/``**Callsign**</code></p>\n<h4 id=\"srt-publishing\"><a href=\"#srt-publishing\">SRT Publishing</a></h4>\n<p><code>srt://``**canadian-goose.pvarki.fi**``:8890?streamid=publish:live/icu/``**Callsign**``&#x26;pkt_size=1316</code></p>\n<p><code>srt://``**canadian-goose.pvarki.fi**``:8890?streamid=publish:live/icu/``**Callsign**``:``**USERNAME**``:``**PASSWORD**``&#x26;pkt_size=1316</code></p>\n<h3 id=\"watching-streams-1\"><a href=\"#watching-streams-1\">Watching streams</a></h3>\n<h4 id=\"browser-using-hls-protocol\"><a href=\"#browser-using-hls-protocol\">Browser using HLS-protocol</a></h4>\n<p><code>https://``**canadian-goose.pvarki.fi**``:9888/live/icu/``**Callsign**</code></p>\n<h4 id=\"vlc-player\"><a href=\"#vlc-player\">VLC Player</a></h4>\n<p><code>srt://``**canadian-goose.pvarki.fi**``:8890?streamid=read:live/icu/``**Callsign**``:``**USERNAME**``:``**PASSWORD**</code></p>\n<p><code>https://``**canadian-goose.pvarki.fi**``:9888/live/icu/``**Callsign**``/index.m3u8</code></p>\n<h2 id=\"you-can-share-the-links-with-qr-code\"><a href=\"#you-can-share-the-links-with-qr-code\">You can share the links with QR Code</a></h2>\n<p>Free QR code generator</p>\n<p><a href=\"https://new.express.adobe.com/tools/generate-qr-code\" target=\"_blank\" rel=\"noopener noreferrer\">https://new.express.adobe.com/tools/generate-qr-code</a></p>"
+    }
+  ]
+}

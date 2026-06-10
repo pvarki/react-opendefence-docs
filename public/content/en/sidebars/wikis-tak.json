@@ -1,0 +1,323 @@
+{
+  "schemaVersion": 1,
+  "label": "TAK Wiki",
+  "slug": "wikis/tak",
+  "items": [
+    {
+      "type": "doc",
+      "id": "what-is-tak-o1gM2motGE",
+      "label": "What is TAK?",
+      "slug": "what-is-tak-o1gM2motGE"
+    },
+    {
+      "type": "doc",
+      "id": "guide-videos-x8oNBzPliV",
+      "label": "Guide Videos",
+      "slug": "guide-videos-x8oNBzPliV"
+    },
+    {
+      "type": "group",
+      "id": "tak-products-for-users-CXHp98L3Pl",
+      "label": "TAK Products for Users",
+      "children": [
+        {
+          "type": "doc",
+          "id": "tak-products-for-users-CXHp98L3Pl",
+          "label": "TAK Products for Users",
+          "slug": "tak-products-for-users-CXHp98L3Pl"
+        },
+        {
+          "type": "doc",
+          "id": "atak-android-tak-YCvtAZaLrF",
+          "label": "ATAK - Android TAK",
+          "slug": "atak-android-tak-YCvtAZaLrF"
+        },
+        {
+          "type": "doc",
+          "id": "tools-and-functions-6akJzo2ed0",
+          "label": "Tools and functions",
+          "slug": "tools-and-functions-6akJzo2ed0"
+        },
+        {
+          "type": "doc",
+          "id": "bloodhound-tool-kZ8MTy07YY",
+          "label": "Bloodhound -tool",
+          "slug": "bloodhound-tool-kZ8MTy07YY"
+        },
+        {
+          "type": "doc",
+          "id": "contacts-geochat-tool-3FdJAdO1R7",
+          "label": "Contacts / GeoChat -tool",
+          "slug": "contacts-geochat-tool-3FdJAdO1R7"
+        },
+        {
+          "type": "doc",
+          "id": "data-sync-plugin-Ux2V5Gdsry",
+          "label": "Data Sync -plugin",
+          "slug": "data-sync-plugin-Ux2V5Gdsry"
+        },
+        {
+          "type": "doc",
+          "id": "point-dropper-tool-6BNurdPXpp",
+          "label": "Point Dropper -tool",
+          "slug": "point-dropper-tool-6BNurdPXpp"
+        },
+        {
+          "type": "doc",
+          "id": "toolbar-tool-EKByDYLVSo",
+          "label": "Toolbar -tool",
+          "slug": "toolbar-tool-EKByDYLVSo"
+        },
+        {
+          "type": "doc",
+          "id": "uas-tool-plugin-Q5Mzhv56VO",
+          "label": "UAS Tool -plugin",
+          "slug": "uas-tool-plugin-Q5Mzhv56VO"
+        },
+        {
+          "type": "doc",
+          "id": "vns-plugin-6eZoNDPEBA",
+          "label": "VNS -plugin",
+          "slug": "vns-plugin-6eZoNDPEBA"
+        },
+        {
+          "type": "doc",
+          "id": "plugin-list-cr2xfMYu9V",
+          "label": "Plugin list",
+          "slug": "plugin-list-cr2xfMYu9V"
+        },
+        {
+          "type": "doc",
+          "id": "itak-apple-tak-5bm4tto7yP",
+          "label": "iTAK - Apple TAK",
+          "slug": "itak-apple-tak-5bm4tto7yP"
+        },
+        {
+          "type": "doc",
+          "id": "tak-aware-apple-tak-3TrdXhARBh",
+          "label": "TAK Aware - Apple TAK",
+          "slug": "tak-aware-apple-tak-3TrdXhARBh"
+        },
+        {
+          "type": "doc",
+          "id": "tak-tracker-lightweight-tak-pGihrJitAY",
+          "label": "TAK Tracker - Lightweight TAK",
+          "slug": "tak-tracker-lightweight-tak-pGihrJitAY"
+        },
+        {
+          "type": "doc",
+          "id": "vr-tak-virtualreality-tak-SDd4LXGE4i",
+          "label": "VR-TAK - VirtualReality TAK",
+          "slug": "vr-tak-virtualreality-tak-SDd4LXGE4i"
+        },
+        {
+          "type": "doc",
+          "id": "wintak-windows-tak-h251ILyaWa",
+          "label": "WinTAK - Windows TAK",
+          "slug": "wintak-windows-tak-h251ILyaWa"
+        },
+        {
+          "type": "doc",
+          "id": "plugin-list-9AXN24oAyB",
+          "label": "Plugin list",
+          "slug": "plugin-list-9AXN24oAyB"
+        },
+        {
+          "type": "doc",
+          "id": "tools-and-functions-Wak49eEupd",
+          "label": "Tools and functions",
+          "slug": "tools-and-functions-Wak49eEupd"
+        },
+        {
+          "type": "doc",
+          "id": "contacts-geochat-tool-He6gLKQ18V",
+          "label": "Contacts / GeoChat tool",
+          "slug": "contacts-geochat-tool-He6gLKQ18V"
+        },
+        {
+          "type": "doc",
+          "id": "data-sync-plugin-ahRu25V5Yh",
+          "label": "Data Sync -plugin",
+          "slug": "data-sync-plugin-ahRu25V5Yh"
+        },
+        {
+          "type": "doc",
+          "id": "tak-replay-plugin-kodpUReaKa",
+          "label": "TAK Replay -plugin",
+          "slug": "tak-replay-plugin-kodpUReaKa"
+        },
+        {
+          "type": "doc",
+          "id": "vns-plugin-myYvNJnnhw",
+          "label": "VNS -plugin",
+          "slug": "vns-plugin-myYvNJnnhw"
+        },
+        {
+          "type": "doc",
+          "id": "tpc-tak-product-center-CYKrI5BZFA",
+          "label": "TPC - TAK Product Center",
+          "slug": "tpc-tak-product-center-CYKrI5BZFA"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "tak-tools-for-products-pX6PDDy2l9",
+      "label": "TAK Tools for Products",
+      "children": [
+        {
+          "type": "doc",
+          "id": "tak-tools-for-products-pX6PDDy2l9",
+          "label": "TAK Tools for Products",
+          "slug": "tak-tools-for-products-pX6PDDy2l9"
+        },
+        {
+          "type": "doc",
+          "id": "bloodhound-tool-1JvEjCG9ha",
+          "label": "Bloodhound tool",
+          "slug": "bloodhound-tool-1JvEjCG9ha"
+        },
+        {
+          "type": "doc",
+          "id": "contacts-geochat-tool-Yk0UD4AmWE",
+          "label": "Contacts / GeoChat tool",
+          "slug": "contacts-geochat-tool-Yk0UD4AmWE"
+        },
+        {
+          "type": "doc",
+          "id": "data-sync-plugin-k4cwn1ZWo5",
+          "label": "Data Sync -plugin",
+          "slug": "data-sync-plugin-k4cwn1ZWo5"
+        },
+        {
+          "type": "doc",
+          "id": "point-dropper-tool-IUEAOayhVJ",
+          "label": "Point Dropper tool",
+          "slug": "point-dropper-tool-IUEAOayhVJ"
+        },
+        {
+          "type": "doc",
+          "id": "tak-replay-plugin-mI31D0ZhGP",
+          "label": "TAK Replay -plugin",
+          "slug": "tak-replay-plugin-mI31D0ZhGP"
+        },
+        {
+          "type": "doc",
+          "id": "uas-tool-plugin-XfHiHPF6yW",
+          "label": "UAS Tool -plugin",
+          "slug": "uas-tool-plugin-XfHiHPF6yW"
+        },
+        {
+          "type": "doc",
+          "id": "vns-plugin-FWG1Z297lx",
+          "label": "VNS -plugin",
+          "slug": "vns-plugin-FWG1Z297lx"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "tak-admin-tools-iuSyeIkpDv",
+      "label": "TAK Admin Tools",
+      "children": [
+        {
+          "type": "doc",
+          "id": "tak-admin-tools-iuSyeIkpDv",
+          "label": "TAK Admin Tools",
+          "slug": "tak-admin-tools-iuSyeIkpDv"
+        },
+        {
+          "type": "doc",
+          "id": "takserver-81IgtOjutZ",
+          "label": "Takserver",
+          "slug": "takserver-81IgtOjutZ"
+        },
+        {
+          "type": "doc",
+          "id": "basic-ui-HMgE19faE8",
+          "label": "Basic UI",
+          "slug": "basic-ui-HMgE19faE8"
+        },
+        {
+          "type": "doc",
+          "id": "update-server-ota-hyp4E4fwtQ",
+          "label": "Update Server",
+          "slug": "update-server-ota-hyp4E4fwtQ"
+        },
+        {
+          "type": "doc",
+          "id": "mission-manager-data-sync-HdRqCuoE2v",
+          "label": "Mission Manager",
+          "slug": "mission-manager-data-sync-HdRqCuoE2v"
+        },
+        {
+          "type": "doc",
+          "id": "device-profiles-gC8aj65Asa",
+          "label": "Device Profiles",
+          "slug": "device-profiles-gC8aj65Asa"
+        },
+        {
+          "type": "doc",
+          "id": "advanced-features-fZicZztPG9",
+          "label": "Advanced Features",
+          "slug": "advanced-features-fZicZztPG9"
+        },
+        {
+          "type": "doc",
+          "id": "mtx-streaming-QXfsZsE0cX",
+          "label": "MTX - Streaming",
+          "slug": "mtx-streaming-QXfsZsE0cX"
+        },
+        {
+          "type": "doc",
+          "id": "keycloak-group-management-HbnhaALE1M",
+          "label": "Keycloak - Group Management",
+          "slug": "keycloak-group-management-HbnhaALE1M"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "usage-models-rFHfmF3UPX",
+      "label": "Usage Models",
+      "children": [
+        {
+          "type": "doc",
+          "id": "usage-models-rFHfmF3UPX",
+          "label": "Usage Models",
+          "slug": "usage-models-rFHfmF3UPX"
+        },
+        {
+          "type": "doc",
+          "id": "pvarki-standard-Zg3ybOXwdM",
+          "label": "PVARKI Standard",
+          "slug": "pvarki-standard-Zg3ybOXwdM"
+        },
+        {
+          "type": "doc",
+          "id": "takserver-recon-feed-6S3IuBlBTY",
+          "label": "Takserver RECON feed",
+          "slug": "takserver-recon-feed-6S3IuBlBTY"
+        },
+        {
+          "type": "doc",
+          "id": "takserver-groups-fywzxIBI9A",
+          "label": "Takserver Groups",
+          "slug": "takserver-groups-fywzxIBI9A"
+        },
+        {
+          "type": "doc",
+          "id": "use-cases-7bR2ASRf2x",
+          "label": "Use Cases",
+          "slug": "use-cases-7bR2ASRf2x"
+        },
+        {
+          "type": "doc",
+          "id": "forwarding-observations-K5fcmMIAnp",
+          "label": "Forwarding Observations",
+          "slug": "forwarding-observations-K5fcmMIAnp"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 1,
+  "id": "9dbdb1d8-cd24-405f-b58c-60d46130e5bb",
+  "slug": "driftguide-yegkjZ9xGQ",
+  "collection": "dev",
+  "locale": "sv",
+  "title": "Driftguide",
+  "breadcrumb": [
+    "Driftguide"
+  ],
+  "createdAt": "2026-05-28T07:16:32.429Z",
+  "updatedAt": "2026-05-28T07:32:24.521Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Vad \"drift\" innebär här",
+      "id": "vad-drift-innebär-här"
+    },
+    {
+      "depth": 2,
+      "text": "Cloud-paketbygge",
+      "id": "cloud-paketbygge"
+    },
+    {
+      "depth": 2,
+      "text": "Cloud-driftsättning",
+      "id": "cloud-driftsättning"
+    },
+    {
+      "depth": 2,
+      "text": "Dag 2-drift",
+      "id": "dag-2-drift"
+    },
+    {
+      "depth": 3,
+      "text": "Pre-flight före varje ändring",
+      "id": "pre-flight-före-varje-ändring"
+    },
+    {
+      "depth": 3,
+      "text": "Driftsätta om efter manifeständring",
+      "id": "driftsätta-om-efter-manifeständring"
+    },
+    {
+      "depth": 3,
+      "text": "Rotera hemligheter",
+      "id": "rotera-hemligheter"
+    },
+    {
+      "depth": 3,
+      "text": "Förnya den interna CA:n",
+      "id": "förnya-den-interna-can"
+    },
+    {
+      "depth": 3,
+      "text": "Loggar och mätvärden",
+      "id": "loggar-och-mätvärden"
+    },
+    {
+      "depth": 3,
+      "text": "Vanliga felmoder",
+      "id": "vanliga-felmoder"
+    },
+    {
+      "depth": 3,
+      "text": "Riva ner",
+      "id": "riva-ner"
+    },
+    {
+      "depth": 2,
+      "text": "Vad bor var",
+      "id": "vad-bor-var"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Den här sidan täcker bygge och driftsättning av cloud-paketet, plus dag 2-drift mot en levande miljö. Lokal utveckling finns i <a href=\"/doc/f760779a-fef5-4053-9ece-902fcaf11e78\">Utvecklingsguide</a></p>\n<h2 id=\"vad-drift-innebär-här\"><a href=\"#vad-drift-innebär-här\">Vad \"drift\" innebär här</a></h2>\n<p>Det finns två leveranslägen:</p>\n<ul>\n<li>Lokal. <code>task deploy</code> mot kind-klustret. Används av utvecklare och CI.</li>\n<li>Cloud. Ett Zarf-paket byggs en gång, sedan driftsätts till ett eller flera k3s-kluster. Detta är den produktionsformade vägen.</li>\n</ul>\n<p>För fasordning och utrullningsberoenden se <a href=\"/doc/153b92bf-0872-4913-ae7f-41bf533131b2\">Arkitektur</a>. Samma faser gäller i båda lägena.</p>\n<h2 id=\"cloud-paketbygge\"><a href=\"#cloud-paketbygge\">Cloud-paketbygge</a></h2>\n<p>Cloud Zarf-paketet speglar <code>task deploy:cloud</code>. Det renderar varje fasaggregator till ett separat manifest och syr ihop dem med ordningsledtrådar.</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#61AFEF\">task</span><span style=\"color:#98C379\"> zarf:package:cloud</span></span></code></pre>",
+      "lang": "bash"
+    },
+    {
+      "type": "html",
+      "html": "<p>Vad tasken gör, i ordning:</p>\n<ol>\n<li>Kopierar <code>../zarf/cloud/zarf.template.yaml</code> till <code>.build/zarf/cloud/zarf.yaml</code>.</li>\n<li>Renderar varje <code>infra-phase1</code>-bunt till ett eget manifest under <code>.build/zarf/cloud/manifests/infra-phase1/</code>. Att dela per bunt håller varje Helm-renderat manifest under Kubernetes Secret-storleksgräns.</li>\n<li>Renderar <code>infra-phase2</code>, <code>monitoring</code> och <code>opendefense</code> till enskilda manifest.</li>\n<li>Kör <code>zarf dev find-images</code> så att paketet själv beskriver sin image- lista. Tasken ger ett platshållarvärdnamn (<code>placeholder.invalid</code>) så att discovery blir icke-interaktiv.</li>\n<li>Bifogar CloudNativePG init-image (<code>ghcr.io/cloudnative-pg/postgresql:18.0-system-trixie</code>) för hand. CNPG refererar imagen dynamiskt och <code>find-images</code> upptäcker inte referensen.</li>\n<li>Anropar <code>zarf package create</code> för att producera <code>zarf-package-opendefense-cloud-&#x3C;arch>-1.0.0.tar.zst</code> i repots rot.</li>\n</ol>\n<p>Arkitektur defaultar till <code>amd64</code>. Överstyr med:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#61AFEF\">task</span><span style=\"color:#98C379\"> zarf:package:cloud</span><span style=\"color:#98C379\"> ZARF_ARCHITECTURE=arm64</span></span></code></pre>",
+      "lang": "bash"
+    },
+    {
+      "type": "html",
+      "html": "<p><code>ZARF_YOLO=true</code> tar bort image-listan och sätter <code>metadata.yolo: true</code> i paketet. Målklustret hämtar då image direkt från deras ursprungsregister. Användbart för miljöer med egress och utan behov av Zarfs image-relokering. Se <code>../zarf/cloud/README.md</code> för det fullständiga task-kontraktet.</p>\n<h2 id=\"cloud-driftsättning\"><a href=\"#cloud-driftsättning\">Cloud-driftsättning</a></h2>\n<p><code>zarf package deploy</code> använder vilken kube-kontext skalet ser. Peka <code>KUBECONFIG</code> mot rätt fil före driftsättning. Skicka <code>OPENDEFENSE_HOST</code> antingen via <code>--set</code> eller interaktivt.</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#E06C75\">KUBECONFIG</span><span style=\"color:#56B6C2\">=</span><span style=\"color:#98C379\">k3s-azure.yaml</span><span style=\"color:#61AFEF\"> zarf</span><span style=\"color:#98C379\"> package</span><span style=\"color:#98C379\"> deploy</span><span style=\"color:#56B6C2\"> \\</span></span>\n<span class=\"line\"><span style=\"color:#98C379\">  \"$(</span><span style=\"color:#61AFEF\">git</span><span style=\"color:#98C379\"> rev-parse </span><span style=\"color:#D19A66\">--show-toplevel</span><span style=\"color:#98C379\">)/zarf-package-opendefense-cloud-amd64-1.0.0.tar.zst\"</span><span style=\"color:#56B6C2\"> \\</span></span>\n<span class=\"line\"><span style=\"color:#D19A66\">  --set</span><span style=\"color:#98C379\"> OPENDEFENSE_HOST=example.dev.pvarki.fi</span><span style=\"color:#56B6C2\"> \\</span></span>\n<span class=\"line\"><span style=\"color:#D19A66\">  --confirm</span></span></code></pre>",
+      "lang": "bash"
+    },
+    {
+      "type": "html",
+      "html": "<p>Zarf ersätter <code>###ZARF_VAR_OPENDEFENSE_HOST###</code> överallt där cloud- overlays refererar värden (ingress-värdnamn, app-konfig). Faserna driftsätts i deklarerad ordning med hälsokontroller emellan:</p>\n<ol>\n<li><code>infra-phase1</code>. CNPG, cert-manager, Keycloak-operatör, External Secrets, Traefik, Grafana-operatör.</li>\n<li><code>infra-phase2</code>. trust-manager och cloud ClusterIssuers.</li>\n<li><code>monitoring</code>. Grafana, Loki, Alloy, Prometheus.</li>\n<li><code>opendefense</code>. CFSSL → PKI → opendefense-system → Battlelog → TAK → MTX.</li>\n</ol>\n<p>Samma ordning framtvingas av <code>task deploy:_apply</code> för lokal. Om en fas misslyckas med hälsokontrollen stannar Zarf och visar vilken deployment inte nådde Ready.</p>\n<h2 id=\"dag-2-drift\"><a href=\"#dag-2-drift\">Dag 2-drift</a></h2>\n<h3 id=\"pre-flight-före-varje-ändring\"><a href=\"#pre-flight-före-varje-ändring\">Pre-flight före varje ändring</a></h3>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#61AFEF\">kubectl</span><span style=\"color:#98C379\"> config</span><span style=\"color:#98C379\"> current-context</span><span style=\"color:#7F848E;font-style:italic\">        # bekräfta att du är på rätt kluster</span></span>\n<span class=\"line\"><span style=\"color:#61AFEF\">kubectl</span><span style=\"color:#98C379\"> get</span><span style=\"color:#98C379\"> nodes</span><span style=\"color:#7F848E;font-style:italic\">                     # är noderna Ready?</span></span>\n<span class=\"line\"><span style=\"color:#61AFEF\">kubectl</span><span style=\"color:#98C379\"> get</span><span style=\"color:#98C379\"> pods</span><span style=\"color:#D19A66\"> -A</span><span style=\"color:#ABB2BF\"> | </span><span style=\"color:#61AFEF\">grep</span><span style=\"color:#D19A66\"> -v</span><span style=\"color:#98C379\"> Running</span><span style=\"color:#7F848E;font-style:italic\"> # är något fast?</span></span></code></pre>",
+      "lang": "bash"
+    },
+    {
+      "type": "html",
+      "html": "<h3 id=\"driftsätta-om-efter-manifeständring\"><a href=\"#driftsätta-om-efter-manifeständring\">Driftsätta om efter manifeständring</a></h3>\n<p>För lokalt: redigera, sedan <code>task deploy</code>. För cloud: bygg om paketet (<code>task zarf:package:cloud</code>) och kör <code>zarf package deploy</code> igen. Zarf är idempotent och stämmer av det som redan finns.</p>\n<h3 id=\"rotera-hemligheter\"><a href=\"#rotera-hemligheter\">Rotera hemligheter</a></h3>\n<p>Hemligheter dras in via <code>external-secrets-operator</code> från det konfigurerade hemlighetslagret. Rotera vid källan. Låt sedan antingen <code>ExternalSecret</code>-uppdateringsintervallet hämta det nya värdet, eller annotera <code>ExternalSecret</code> för att tvinga synk. Redigera inte den synkade <code>Secret</code>-resursen direkt. Operatören skriver över direkta redigeringar.</p>\n<h3 id=\"förnya-den-interna-can\"><a href=\"#förnya-den-interna-can\">Förnya den interna CA:n</a></h3>\n<p>Klustrets CA är utfärdad av <code>opendefense-cfssl</code>. cert-manager förnyar bladcertifikat automatiskt. Om du behöver rotera roten, planera i förväg. Varje namnrymd som konsumerar bunten via <code>trust-manager</code> behöver rulla sina konsumenter efter att den nya bunten spridits.</p>\n<h3 id=\"loggar-och-mätvärden\"><a href=\"#loggar-och-mätvärden\">Loggar och mätvärden</a></h3>\n<p>Loggar flyter genom Alloy → Loki. Mätvärden flyter genom Prometheus. Dashboards bor i Grafana. Alla tre bor i namnrymden <code>monitoring</code>. Tjänstspecifika loggformaterare sätts i varje overlay (t.ex. <code>LOG_CONSOLE_FORMATTER=local</code> i battlelog) så att lokal utveckling förblir mänskligt läsbar medan cloud emitterar strukturerad JSON.</p>\n<h3 id=\"vanliga-felmoder\"><a href=\"#vanliga-felmoder\">Vanliga felmoder</a></h3>\n<table>\n<thead>\n<tr>\n<th>Symptom</th>\n<th>Trolig orsak</th>\n<th>Var du tittar</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><code>zarf package deploy</code> misslyckas på fas-1-hälsokontroll</td>\n<td>En operatör nådde inte Ready i tid</td>\n<td><code>kubectl describe deployment ...</code> i berörda namnrymden</td>\n</tr>\n<tr>\n<td>Helm-hanterad resurs vägrar applya</td>\n<td>Cloud-overlayn försökte ta bort <code>meta.helm.sh/*</code>-labels men källan har dem fortfarande</td>\n<td>Kolla <code>patches:</code>-blocket i <code>k8s/main/cloud/opendefense/kustomization.yaml</code></td>\n</tr>\n<tr>\n<td>Zarf-paketbygge misslyckas med \"secret too big\"</td>\n<td>En bunts renderade manifest korsade 1 MiB</td>\n<td>Dela bunten. Lägg till en ny undermapp under <code>k8s/main/cloud/infra-phase1/bundles/</code></td>\n</tr>\n<tr>\n<td>TAK-klienter kan inte ansluta</td>\n<td>Port 8089 eller 8443 inte nåbar, eller mTLS-certkedjan fel</td>\n<td>Kolla Traefik-rutter och <code>tak</code>-overlayn</td>\n</tr>\n<tr>\n<td>Ny produkt saknas i RM UI</td>\n<td><code>MW_PRODUCTS</code> inte uppdaterad, eller miniwerk körde inte om</td>\n<td><code>kubectl -n opendefense-system logs job/opendefense-miniwerk</code></td>\n</tr>\n</tbody>\n</table>\n<h3 id=\"riva-ner\"><a href=\"#riva-ner\">Riva ner</a></h3>\n<ul>\n<li>Lokalt: <code>task down</code> raderar kind-klustret.</li>\n<li>Cloud: <code>zarf package remove opendefense-cloud --confirm</code> (med rätt <code>KUBECONFIG</code>). Var medveten. Kommandot tar bort plattformen från klustret.</li>\n</ul>\n<h2 id=\"vad-bor-var\"><a href=\"#vad-bor-var\">Vad bor var</a></h2>\n<table>\n<thead>\n<tr>\n<th>Område</th>\n<th>Fil eller sökväg</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Faskomposition</td>\n<td><code>k8s/main/{local,cloud}/{infra-phase1,infra-phase2,monitoring,opendefense}/kustomization.yaml</code></td>\n</tr>\n<tr>\n<td>Utrullningsväntportar</td>\n<td><code>taskfile.yaml</code>, <code>deploy:_apply</code></td>\n</tr>\n<tr>\n<td>Zarf-paketdefinition</td>\n<td><code>zarf/cloud/zarf.template.yaml</code></td>\n</tr>\n<tr>\n<td>Cloud-paketets byggflöde</td>\n<td><code>taskfile.yaml</code>, <code>zarf:package:cloud</code></td>\n</tr>\n<tr>\n<td>Verktygsversioner</td>\n<td><code>mise.toml</code></td>\n</tr>\n<tr>\n<td>Kind-klustrets form</td>\n<td><code>kind-config.yaml</code></td>\n</tr>\n</tbody>\n</table>"
+    }
+  ]
+}

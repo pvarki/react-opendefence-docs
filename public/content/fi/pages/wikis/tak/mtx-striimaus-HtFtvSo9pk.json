@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "id": "1c99ca1b-d741-495a-9782-86c9fffced55",
+  "slug": "mtx-striimaus-HtFtvSo9pk",
+  "collection": "wikis/tak",
+  "locale": "fi",
+  "title": "MTX - Striimaus",
+  "breadcrumb": [
+    "TAK Pääkäyttäjä Työkalut",
+    "Edistyneet Toiminnot",
+    "MTX - Striimaus"
+  ],
+  "createdAt": "2025-12-08T02:17:12.713Z",
+  "updatedAt": "2026-02-19T13:50:43.795Z",
+  "headings": [
+    {
+      "depth": 3,
+      "text": "Nykyiset tuotteet, joita tuetaan tai arvioidaan",
+      "id": "nykyiset-tuotteet-joita-tuetaan-tai-arvioidaan"
+    },
+    {
+      "depth": 3,
+      "text": "Nykyiset protokollat, joita tuetaan tai arvioidaan",
+      "id": "nykyiset-protokollat-joita-tuetaan-tai-arvioidaan"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>MTX = <strong>MediaMTX</strong> on käyttövalmis ja ilman riippuvuuksia toimiva live-mediapalvelin ja mediavälityspalvelu (media proxy). Se on suunniteltu \"mediareitittimeksi\", joka välittää mediavirtoja päästä päähän.</p>"
+    },
+    {
+      "type": "image",
+      "src": "attachments/28348c7c-0699-4748-b9ce-e6a069659a17.svg",
+      "alt": ""
+    },
+    {
+      "type": "html",
+      "html": "<h3 id=\"nykyiset-tuotteet-joita-tuetaan-tai-arvioidaan\"><a href=\"#nykyiset-tuotteet-joita-tuetaan-tai-arvioidaan\"><strong>Nykyiset tuotteet, joita tuetaan tai arvioidaan</strong></a></h3>\n<ul>\n<li>Opentak ICU</li>\n<li>UAStool</li>\n<li>ICU (ei varmistettu toimivaksi tunnistetietojen ja salauksen kanssa)</li>\n<li>Helmcam (ei varmistettu toimivaksi tunnistetietojen ja salauksen kanssa)</li>\n<li>GoPro</li>\n<li>Selain</li>\n<li>VLC</li>\n</ul>\n<h3 id=\"nykyiset-protokollat-joita-tuetaan-tai-arvioidaan\"><a href=\"#nykyiset-protokollat-joita-tuetaan-tai-arvioidaan\">Nykyiset protokollat, joita tuetaan tai arvioidaan</a></h3>\n<p><strong>MTX-portit ja -protokollat:</strong></p>\n<ul>\n<li><strong>1936</strong> – RTMPS</li>\n<li><strong>8322</strong> – RTSPS</li>\n<li><strong>8890</strong> – SRT</li>\n<li><strong>9888</strong> – HLS</li>\n<li><strong>9889</strong> – WebRTC</li>\n<li><strong>9996</strong> – Playpack videoille</li>\n</ul>"
+    }
+  ]
+}

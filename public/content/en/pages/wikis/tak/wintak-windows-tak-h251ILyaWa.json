@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "id": "defdaa55-9669-4651-ae3f-7d7081b19c3b",
+  "slug": "wintak-windows-tak-h251ILyaWa",
+  "collection": "wikis/tak",
+  "locale": "en",
+  "title": "WinTAK - Windows TAK",
+  "breadcrumb": [
+    "TAK Products for Users",
+    "WinTAK - Windows TAK"
+  ],
+  "createdAt": "2025-09-07T00:14:11.295Z",
+  "updatedAt": "2026-03-04T19:02:19.555Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Available from:",
+      "id": "available-from"
+    },
+    {
+      "depth": 2,
+      "text": "Product manual",
+      "id": "product-manual"
+    },
+    {
+      "depth": 2,
+      "text": "Product Description",
+      "id": "product-description"
+    },
+    {
+      "depth": 2,
+      "text": "System Requirements",
+      "id": "system-requirements"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p><img src=\"/content/images/en/attachments/a2fe7303e7840f32.webp\" alt=\"\" title=\" =246x246\"> <img src=\"/content/images/en/attachments/3be005b91ab9ab96.webp\" alt=\"\" title=\" =1388x970\"></p>\n<h2 id=\"available-from\"><a href=\"#available-from\">Available <a>from:</a></a></h2>\n<p><a>https://tak.gov/products/wintak-civ</a></p>\n<h2 id=\"product-manual\"><a href=\"#product-manual\">Product manual</a></h2>"
+    },
+    {
+      "type": "pdf",
+      "src": "attachments/92797e0c-f56a-48be-9bc9-822c472b85df.pdf",
+      "title": "WinTAK 5.6 SUM.pdf"
+    },
+    {
+      "type": "pdf",
+      "src": "attachments/2a00082a-592e-4e5f-8aab-7649e9d58d9a.pdf",
+      "title": "WinTAK 5.5 SUM.pdf"
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"product-description\"><a href=\"#product-description\"><strong>Product Description</strong></a></h2>\n<p>The WinTAK-CIV feature set is similar to ATAK-CIV's, having been developed to run on Windows PCs and Windows Surface devices. WinTAK-CIV is made available to support the principles of civil authority emergency operations: prevention, mitigation, preparation, response, or emergency evacuation and recovery. The WinTAK user experience is consistent with Microsoft applications while maintaining the look and feel of ATAK. Unlike ATAK, WinTAK supports multiple instances of a tool, such as a video player, thereby increasing utility for incident command and operation centers.</p>\n<h2 id=\"system-requirements\"><a href=\"#system-requirements\"><strong>System Requirements</strong></a></h2>\n<p>Performance of the application is highly dependent on the machine specifications i.e. it will run on a system with 4 GB of ram but is slow. Performance is much better with 8 GB - 12 or 16 GB is even better.</p>\n<ul>\n<li>Windows 10 x64, version 1607 or newer</li>\n<li>Windows 11 x64</li>\n<li>Windows Server 2016 x64</li>\n<li>Windows Server 2019 x64</li>\n</ul>"
+    }
+  ]
+}

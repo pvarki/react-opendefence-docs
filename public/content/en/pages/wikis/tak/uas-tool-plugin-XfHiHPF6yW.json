@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "e164f6fb-bdb2-4ba2-8543-273d8c59eee1",
+  "slug": "uas-tool-plugin-XfHiHPF6yW",
+  "collection": "wikis/tak",
+  "locale": "en",
+  "title": "UAS Tool -plugin",
+  "breadcrumb": [
+    "TAK Tools for Products",
+    "UAS Tool -plugin"
+  ],
+  "createdAt": "2025-10-05T10:09:31.255Z",
+  "updatedAt": "2026-02-19T13:39:01.527Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "TAK Product pages for Plugin",
+      "id": "tak-product-pages-for-plugin"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "src": "/content/images/en/attachments/6e0082cb2a785620.webp",
+      "alt": "",
+      "width": 671,
+      "height": 675
+    },
+    {
+      "type": "html",
+      "html": "<p>The UAS Tool is a plug-in that provides integration of Unmanned Aircraft Systems (UAS) for enhanced Situational Awareness (SA) and telemetry data, Full Motion Video (FMV), and command and control (C2).</p>\n<h2 id=\"tak-product-pages-for-plugin\"><a href=\"#tak-product-pages-for-plugin\">TAK Product pages for Plugin</a></h2>\n<ul>\n<li>ATAK <a href=\"/doc/c5fbff8c-3df8-43b8-81e4-7b6275409ac9\">UAS Tool -plugin</a></li>\n</ul>"
+    }
+  ]
+}

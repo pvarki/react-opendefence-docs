@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "7967cf93-9eec-4a7c-9c17-3d4bffe312eb",
+  "slug": "tpc-tak-product-center-BAsOmaQorN",
+  "collection": "wikis/tak",
+  "locale": "fi",
+  "title": "TPC - TAK Product Center",
+  "breadcrumb": [
+    "TAK Tuotteet Käyttäjille",
+    "TPC - TAK Product Center"
+  ],
+  "createdAt": "2025-12-07T23:16:16.363Z",
+  "updatedAt": "2026-02-19T13:30:57.557Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "TAK-tuotekeskus, Yhdysvaltain valtion organisaatio",
+      "id": "tak-tuotekeskus-yhdysvaltain-valtion-organisaatio"
+    },
+    {
+      "depth": 2,
+      "text": "Yhteystiedot:",
+      "id": "yhteystiedot"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "src": "/content/images/fi/attachments/a27d2138cd9878f2.webp",
+      "alt": "",
+      "caption": "=225x",
+      "width": 225,
+      "height": 225
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"tak-tuotekeskus-yhdysvaltain-valtion-organisaatio\"><a href=\"#tak-tuotekeskus-yhdysvaltain-valtion-organisaatio\"><strong>TAK-tuotekeskus, Yhdysvaltain valtion organisaatio</strong></a></h2>\n<p>TAK Product Center (TPC) on Yhdysvaltain valtion keskusorganisaatio, joka kehittää, ylläpitää ja julkaisee Team Awareness Kit -tuoteperheen ratkaisuja.</p>\n<h2 id=\"yhteystiedot\"><a href=\"#yhteystiedot\"><strong>Yhteystiedot:</strong></a></h2>\n<ul>\n<li><a href=\"https://tak.gov\" target=\"_blank\" rel=\"noopener noreferrer\">https://tak.gov</a></li>\n<li>company/tak-product-center</li>\n<li>@productctr</li>\n<li>channel/UCT6I35WBkLt3RTzndTjFv1Q</li>\n<li><a href=\"mailto:support@tak.gov\">support@tak.gov</a></li>\n</ul>"
+    }
+  ]
+}

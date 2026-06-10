@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "id": "9f59d528-7f2e-4ee1-8eab-08377a5c1cca",
+  "slug": "guide-videos-x8oNBzPliV",
+  "collection": "wikis/tak",
+  "locale": "en",
+  "title": "Guide Videos",
+  "breadcrumb": [
+    "Guide Videos"
+  ],
+  "createdAt": "2025-12-04T06:03:37.384Z",
+  "updatedAt": "2026-02-19T12:41:07.801Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Youtube channels to follow",
+      "id": "youtube-channels-to-follow"
+    },
+    {
+      "depth": 2,
+      "text": "General TAK videos (longer)",
+      "id": "general-tak-videos-longer"
+    },
+    {
+      "depth": 2,
+      "text": "Product Specific videos",
+      "id": "product-specific-videos"
+    },
+    {
+      "depth": 3,
+      "text": "ATAK specific videos",
+      "id": "atak-specific-videos"
+    },
+    {
+      "depth": 3,
+      "text": "WinTAK specific videos",
+      "id": "wintak-specific-videos"
+    },
+    {
+      "depth": 3,
+      "text": "iTAK specific videos",
+      "id": "itak-specific-videos"
+    },
+    {
+      "depth": 3,
+      "text": "Takserver spesific videos",
+      "id": "takserver-spesific-videos"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Collection of videos on how to use TAK.</p>\n<h2 id=\"youtube-channels-to-follow\"><a href=\"#youtube-channels-to-follow\">Youtube channels to follow</a></h2>\n<ul>\n<li>ATAK Map <a href=\"https://www.youtube.com/@ATAKMap\" target=\"_blank\" rel=\"noopener noreferrer\">https://www.youtube.com/@ATAKMap</a>\n<ul>\n<li>\"Official\" TAK Videos and presentations.</li>\n</ul>\n</li>\n<li>TAK Syndicate <a href=\"https://www.youtube.com/@thetaksyndicate6234\" target=\"_blank\" rel=\"noopener noreferrer\">https://www.youtube.com/@thetaksyndicate6234</a>\n<ul>\n<li>TAK community of public safety users (California FD TAK) <a href=\"https://www.thetaksyndicate.org/\" target=\"_blank\" rel=\"noopener noreferrer\">https://www.thetaksyndicate.org/</a></li>\n</ul>\n</li>\n<li>CoTAK <a href=\"https://www.youtube.com/@coetak\" target=\"_blank\" rel=\"noopener noreferrer\">https://www.youtube.com/@coetak</a>\n<ul>\n<li>TAK community of public safety users (Colorado FD TAK) <a href=\"https://cotak.gov/\" target=\"_blank\" rel=\"noopener noreferrer\">https://cotak.gov/</a></li>\n</ul>\n</li>\n<li>ATAK Wizard <a href=\"https://www.youtube.com/@ATAKwizard/\" target=\"_blank\" rel=\"noopener noreferrer\">https://www.youtube.com/@ATAKwizard/</a>\n<ul>\n<li>Individual doing short instructions videos of TAK (Currently not actively publishing).</li>\n</ul>\n</li>\n<li>myTeckNet <a href=\"https://www.youtube.com/@myTeckNet_Vids\" target=\"_blank\" rel=\"noopener noreferrer\">https://www.youtube.com/@myTeckNet_Vids</a>\n<ul>\n<li>Takserver and TAK specific instructions <a href=\"https://mytecknet.com/\" target=\"_blank\" rel=\"noopener noreferrer\">https://mytecknet.com/</a></li>\n</ul>\n</li>\n</ul>\n<h2 id=\"general-tak-videos-longer\"><a href=\"#general-tak-videos-longer\">General TAK videos (longer)</a></h2>\n<ul>\n<li>ATAK Map - Long full feature instruction and public presentations of TAK features\n<ul>\n<li><a href=\"https://www.youtube.com/@ATAKMap/videos\" target=\"_blank\" rel=\"noopener noreferrer\">https://www.youtube.com/@ATAKMap/videos</a></li>\n</ul>\n</li>\n<li>TAK Syndicate - Long full feature instruction and public presentations of TAK features\n<ul>\n<li><a href=\"https://www.youtube.com/@thetaksyndicate6234/videos\" target=\"_blank\" rel=\"noopener noreferrer\">https://www.youtube.com/@thetaksyndicate6234/videos</a></li>\n</ul>\n</li>\n<li>S2 Underground -  How To: Intelligence, Surveillance, and Reconnaissance: A Primer\n<ul>\n<li><a href=\"https://www.youtube.com/watch?v=ar3DNJaOJ1I\" target=\"_blank\" rel=\"noopener noreferrer\">https://www.youtube.com/watch?v=ar3DNJaOJ1I</a></li>\n</ul>\n</li>\n</ul>\n<h2 id=\"product-specific-videos\"><a href=\"#product-specific-videos\">Product Specific videos</a></h2>\n<h3 id=\"atak-specific-videos\"><a href=\"#atak-specific-videos\">ATAK specific videos</a></h3>\n<ul>\n<li>ATAK Wizard - Good short videos of different tools and features of\n<ul>\n<li><a>TAK </a><a href=\"https://www.youtube.com/@ATAKwizard/videos\" target=\"_blank\" rel=\"noopener noreferrer\">https://www.youtube.com/@ATAKwizard/videos</a></li>\n</ul>\n</li>\n<li>ATAK Map - ATAK Instruction videos (old ones, but still relevant).\n<ul>\n<li><a href=\"https://youtube.com/playlist?list=PLD4gdaBHX0b7GpPkuy0mbPaCw9kG3YgfB&#x26;si=YBFvJKkEdGOAi2ju\" target=\"_blank\" rel=\"noopener noreferrer\">https://youtube.com/playlist?list=PLD4gdaBHX0b7GpPkuy0mbPaCw9kG3YgfB&#x26;si=YBFvJKkEdGOAi2ju</a></li>\n<li><a href=\"https://www.youtube.com/playlist?list=PLD4gdaBHX0b7xmJughABx7NUTyb82wVCM\" target=\"_blank\" rel=\"noopener noreferrer\">https://www.youtube.com/playlist?list=PLD4gdaBHX0b7xmJughABx7NUTyb82wVCM</a></li>\n</ul>\n</li>\n<li>CoTAK - ATAK short video guides\n<ul>\n<li><a href=\"https://www.youtube.com/playlist?list=PLtQUvtEfuwzjI4uyptWRyT1m8z33q8DLW\" target=\"_blank\" rel=\"noopener noreferrer\">https://www.youtube.com/playlist?list=PLtQUvtEfuwzjI4uyptWRyT1m8z33q8DLW</a></li>\n</ul>\n</li>\n<li>TAK Syndicate - Where to start ATAK short videos\n<ul>\n<li><a href=\"https://www.youtube.com/playlist?list=PL0RLIF82BUhkNx0XomgLRydw8FSvw9Ka_\" target=\"_blank\" rel=\"noopener noreferrer\">https://www.youtube.com/playlist?list=PL0RLIF82BUhkNx0XomgLRydw8FSvw9Ka_</a></li>\n</ul>\n</li>\n</ul>\n<h3 id=\"wintak-specific-videos\"><a href=\"#wintak-specific-videos\">WinTAK specific videos</a></h3>\n<ul>\n<li>ATAK Map - WinTAK Instruction videos (old ones, but still relevant).\n<ul>\n<li><a href=\"https://www.youtube.com/playlist?list=PLD4gdaBHX0b7kztKgcqrXcQ69WRfwAlac\" target=\"_blank\" rel=\"noopener noreferrer\">https://www.youtube.com/playlist?list=PLD4gdaBHX0b7kztKgcqrXcQ69WRfwAlac</a></li>\n</ul>\n</li>\n</ul>\n<h3 id=\"itak-specific-videos\"><a href=\"#itak-specific-videos\">iTAK specific videos</a></h3>\n<ul>\n<li>CoTAK - iTAK short video guides\n<ul>\n<li><a href=\"https://www.youtube.com/playlist?list=PLtQUvtEfuwzjKmcdEpAMCHfqGgNyoQ8Mq\" target=\"_blank\" rel=\"noopener noreferrer\">https://www.youtube.com/playlist?list=PLtQUvtEfuwzjKmcdEpAMCHfqGgNyoQ8Mq</a></li>\n</ul>\n</li>\n</ul>\n<h3 id=\"takserver-spesific-videos\"><a href=\"#takserver-spesific-videos\">Takserver spesific videos</a></h3>\n<ul>\n<li>TAK Syndicate - Takserver install and setup videos\n<ul>\n<li><a href=\"https://www.youtube.com/playlist?list=PL0RLIF82BUhkU2e01vCCWZEIGMAvWqUVm\" target=\"_blank\" rel=\"noopener noreferrer\">https://www.youtube.com/playlist?list=PL0RLIF82BUhkU2e01vCCWZEIGMAvWqUVm</a></li>\n</ul>\n</li>\n<li>myTeckNet - Takserver install and setup videos\n<ul>\n<li><a href=\"https://www.youtube.com/@myTeckNet_Vids/videos\" target=\"_blank\" rel=\"noopener noreferrer\">https://www.youtube.com/@myTeckNet_Vids/videos</a></li>\n</ul>\n</li>\n</ul>"
+    }
+  ]
+}

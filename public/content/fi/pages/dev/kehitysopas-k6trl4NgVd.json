@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "id": "b0b5c34b-5f9d-4100-b059-568d69f2ec16",
+  "slug": "kehitysopas-k6trl4NgVd",
+  "collection": "dev",
+  "locale": "fi",
+  "title": "Kehitysopas",
+  "breadcrumb": [
+    "Kehitysopas"
+  ],
+  "createdAt": "2026-05-28T07:10:37.406Z",
+  "updatedAt": "2026-06-02T06:49:47.655Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Esivaatimukset",
+      "id": "esivaatimukset"
+    },
+    {
+      "depth": 2,
+      "text": "Käynnistä paikallinen ympäristö",
+      "id": "käynnistä-paikallinen-ympäristö"
+    },
+    {
+      "depth": 2,
+      "text": "Palvelukansiossa työskentely",
+      "id": "palvelukansiossa-työskentely"
+    },
+    {
+      "depth": 2,
+      "text": "rmapi:n iterointi klusteria vastaan",
+      "id": "rmapin-iterointi-klusteria-vastaan"
+    },
+    {
+      "depth": 2,
+      "text": "Yleisiä paikallisia työnkulkuja",
+      "id": "yleisiä-paikallisia-työnkulkuja"
+    },
+    {
+      "depth": 2,
+      "text": "Kun jokin menee pieleen",
+      "id": "kun-jokin-menee-pieleen"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<hr>\n<hr>\n<p>Tämä sivu on alustan parissa työskentelyä omalla koneella: nostat paikallisen klusterin, muokkaat manifesteja ja iteroit sitä palvelua johon keskityt.</p>\n<p>Jos et ole vielä tehnyt sitä, silmäile ensin <a href=\"/doc/8f9654ea-4fc7-4051-9675-8114db3aea50\">Arkkitehtuuri</a>, jottei alla oleva vaihe- ja kansiorakenne tule yllätyksenä.</p>\n<h2 id=\"esivaatimukset\"><a href=\"#esivaatimukset\">Esivaatimukset</a></h2>\n<p>Repositorio kiinnittää työkalujen versiot <a href=\"https://mise.jdx.dev/\" target=\"_blank\" rel=\"noopener noreferrer\"><code>mise</code></a>-työkalulla. Kun mise on asennettu, se ottaa käyttöön oikeat versiot työkaluista <code>kubectl</code>, <code>kind</code>, <code>helm</code>, <code>yq</code>, <code>task</code> ja <code>zarf</code> heti kun siirryt hakemistoon.</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#7F848E;font-style:italic\"># kertaluonteinen</span></span>\n<span class=\"line\"><span style=\"color:#61AFEF\">mise</span><span style=\"color:#98C379\"> install</span><span style=\"color:#7F848E;font-style:italic\">        # asentaa mise.toml-tiedoston versiot</span></span>\n<span class=\"line\"><span style=\"color:#61AFEF\">mise</span><span style=\"color:#98C379\"> trust</span><span style=\"color:#7F848E;font-style:italic\">          # luottaa paikalliseen mise.toml-tiedostoon</span></span>\n<span class=\"line\"></span>\n<span class=\"line\"><span style=\"color:#7F848E;font-style:italic\"># tarvitaan myös (ei misen hallinnassa)</span></span>\n<span class=\"line\"><span style=\"color:#61AFEF\">docker</span><span style=\"color:#7F848E;font-style:italic\">              # kind ajaa solmut kontteina</span></span></code></pre>",
+      "lang": "bash"
+    },
+    {
+      "type": "html",
+      "html": "<p>Versiot löytyvät tiedostosta <code>./mise.toml</code>. Ilman miseä asenna käsin samat versiot: <code>kubectl 1.36</code>, <code>kind 0.31</code>, <code>helm 3</code>, <code>task 3</code>, <code>yq 4.53.2</code> ja <code>zarf 0.76.0</code>.</p>\n<h2 id=\"käynnistä-paikallinen-ympäristö\"><a href=\"#käynnistä-paikallinen-ympäristö\">Käynnistä paikallinen ympäristö</a></h2>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#61AFEF\">task</span><span style=\"color:#98C379\"> up</span><span style=\"color:#7F848E;font-style:italic\">        # luo kind-klusterin ja ajaa kaikki neljä vaihetta</span></span>\n<span class=\"line\"><span style=\"color:#61AFEF\">task</span><span style=\"color:#7F848E;font-style:italic\">           # listaa kaikki saatavilla olevat taskit</span></span>\n<span class=\"line\"><span style=\"color:#61AFEF\">task</span><span style=\"color:#98C379\"> down</span><span style=\"color:#7F848E;font-style:italic\">      # purkaa kind-klusterin (alias komennolle `cluster:delete`)</span></span></code></pre>",
+      "lang": "bash"
+    },
+    {
+      "type": "html",
+      "html": "<p><code>task up</code> on idempotentti. Se ohittaa klusterin luonnin, jos <code>opendefense-kind</code> on jo olemassa. Kind-klusterin nimi ja porttimäppäykset tulevat tiedostosta <code>./kind-config.yaml</code>, joka sitoo portit 80 ja 443 sekä TAK- ja MediaMTX-portit localhostiin etukäteen.</p>\n<p>Kun julkaisu päättyy, UI on osoitteessa <a href=\"https://localmaeher.dev.pvarki.fi/\" target=\"_blank\" rel=\"noopener noreferrer\">https://localmaeher.dev.pvarki.fi/</a>. Tämä DNS-tietue osoittaa osoitteeseen <code>127.0.0.1</code>, joten <code>/etc/hosts</code>-muokkausta ei tarvita.</p>\n<p>Jos <code>task deploy</code> epäonnistuu kesken vaiheen, syy on yleensä edellisen vaiheen ohjain, joka ei ole vielä raportoinut valmiiksi. Aja sama komento uudelleen. Odotusportit jatkavat siitä mihin jäivät.</p>\n<h2 id=\"palvelukansiossa-työskentely\"><a href=\"#palvelukansiossa-työskentely\">Palvelukansiossa työskentely</a></h2>\n<p>Jokainen palvelu noudattaa samaa rakennetta:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span>k8s/&#x3C;service>/</span></span>\n<span class=\"line\"><span>├── base/</span></span>\n<span class=\"line\"><span>│   ├── kustomization.yaml</span></span>\n<span class=\"line\"><span>│   └── resources/...              # Deployment, Service, PVC, namespace, ...</span></span>\n<span class=\"line\"><span>└── overlays/</span></span>\n<span class=\"line\"><span>    ├── local/</span></span>\n<span class=\"line\"><span>    │   └── kustomization.yaml   # hostnamet, image-ohitukset, env-patchit</span></span>\n<span class=\"line\"><span>    └── cloud/</span></span>\n<span class=\"line\"><span>        └── kustomization.yaml</span></span></code></pre>",
+      "lang": "plaintext"
+    },
+    {
+      "type": "html",
+      "html": "<p>Esimerkit joista kopioida:</p>\n<ul>\n<li><code>k8s/battlelog/base/kustomization.yaml</code>, yksinkertainen sovellus tietokannan kanssa.</li>\n<li><code>k8s/pvarki-pki/base/kustomization.yaml</code>, CA- ja sertifikaattiputki.</li>\n<li><code>k8s/traefik/base/kustomization.yaml</code>, Helm-pohjainen base.</li>\n</ul>\n<p>Periaatteet:</p>\n<ul>\n<li>Pidä <code>base/</code> ympäristöriippumattomana. Ei hostnameja, ei ympäristökohtaisia rekistereitä, ei ympäristökohtaisia sertifikaatteja, vain placeholder-imaget.</li>\n<li>Overlayt omistavat ympäristökohtaiset asiat: image-tagit, sisääntulot, sertifikaatit, env-patchit. Jokaisella ympäristöllä on oma <code>overlays/&#x3C;env>/kustomization.yaml</code>.</li>\n<li>Yritä pitää yksi asia per muutos. Reititysmuutos, image-päivitys ja sertifikaattimuutos ovat kolme erillistä committia, ei yksi.</li>\n<li>Helm-pohjaiset baset tarvitsevat <code>--enable-helm</code>. <code>traefik</code>, <code>trust-manager</code>, <code>external-secrets-operator</code> ja muutamat muut renderöivät Helm-chartit Kustomizen sisällä. Buildaa ja applyttaa lipulla <code>--enable-helm</code>.</li>\n</ul>\n<p>Renderöi overlay paikallisesti ennen applyttämistä:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#61AFEF\">kubectl</span><span style=\"color:#98C379\"> kustomize</span><span style=\"color:#D19A66\"> --enable-helm</span><span style=\"color:#98C379\"> k8s/battlelog/overlays/local</span></span>\n<span class=\"line\"><span style=\"color:#61AFEF\">kubectl</span><span style=\"color:#98C379\"> kustomize</span><span style=\"color:#D19A66\"> --enable-helm</span><span style=\"color:#98C379\"> k8s/main/local/opendefense</span></span></code></pre>",
+      "lang": "bash"
+    },
+    {
+      "type": "html",
+      "html": "<p>Jos muutat kokoonpanoa (palvelu siirtyy toiseen vaiheeseen tai uusi palvelu ilmestyy), pidä <code>./taskfile.yaml</code> synkassa. Se omistaa vaiheidenvälisten julkaisujen odotusportit.</p>\n<h2 id=\"rmapin-iterointi-klusteria-vastaan\"><a href=\"#rmapin-iterointi-klusteria-vastaan\">rmapi:n iterointi klusteria vastaan</a></h2>\n<p><a href=\"https://mirrord.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">mirrord</a> antaa ajaa paikallista <code>rmapi</code>-prosessia samalla kun prosessi näkee klusterin liikenteen, salaisuudet ja tiedostojärjestelmän. Kulku karkeasti:</p>\n<ol>\n<li>\n<p><code>task up</code>, jotta <code>opendefense-rmapi</code> on elossa nimiavaruudessa <code>opendefense-system</code>.</p>\n</li>\n<li>\n<p>python-rasenmaeher-api -checkoutissa aja:</p>\n<pre><code class=\"language-bash\">mirrord exec --steal \\\n  --target-namespace opendefense-system \\\n  --target deployment/opendefense-rmapi -- \\\n  bash -c 'JWT_PRIVKEY_PATH=./locadir/private/rm_jwtsign.key \\\n           JWT_PUBKEY_PATH=./locadir/public \\\n           poetry run uvicorn --reload --factory \\\n             rasenmaeher_api.web.application:get_app'\n</code></pre>\n<p><code>--steal</code> ohjaa klusterin sisäisen liikenteen paikalliseen prosessiisi julkaistun podin sijaan. Lataukset osuvat koodiisi heti.</p>\n</li>\n</ol>\n<h2 id=\"yleisiä-paikallisia-työnkulkuja\"><a href=\"#yleisiä-paikallisia-työnkulkuja\">Yleisiä paikallisia työnkulkuja</a></h2>\n<table>\n<thead>\n<tr>\n<th>Tehtävä</th>\n<th>Komento</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Listaa saatavilla olevat taskit</td>\n<td><code>task</code></td>\n</tr>\n<tr>\n<td>Nosta kaikki ylös tyhjästä</td>\n<td><code>task up</code></td>\n</tr>\n<tr>\n<td>Uudelleenapplyttaa muokkausten jälkeen</td>\n<td><code>task deploy</code></td>\n</tr>\n<tr>\n<td>Renderöi yksi overlay YAML:ksi</td>\n<td><code>kubectl kustomize --enable-helm k8s/&#x3C;svc>/overlays/local</code></td>\n</tr>\n<tr>\n<td>Seuraa julkaisua</td>\n<td><code>kubectl -n opendefense-system get pods -w</code></td>\n</tr>\n<tr>\n<td>Pura klusteri</td>\n<td><code>task down</code></td>\n</tr>\n<tr>\n<td>Tarkista nykyinen kube-konteksti</td>\n<td><code>kubectl config current-context</code></td>\n</tr>\n</tbody>\n</table>\n<h2 id=\"kun-jokin-menee-pieleen\"><a href=\"#kun-jokin-menee-pieleen\">Kun jokin menee pieleen</a></h2>\n<ul>\n<li><code>task deploy</code> jumiutuu julkaisun odotukseen. Tutki deploymentti (<code>kubectl describe deployment &#x3C;name> -n &#x3C;ns></code>) ja sen podit. Tiedoston <code>taskfile.yaml</code> odotusportit kertovat, mitkä deploymentit pysäyttävät sen.</li>\n<li><code>error: unable to recognize \"...\": no matches for kind</code> muokkauksen jälkeen tarkoittaa, että <code>infra-phase1</code>:n CRD puuttuu. Aja <code>task deploy</code> ja anna vaihe 1 päättyä ennen uudelleenapplyttämistä.</li>\n<li><code>Forbidden</code>-virheet applyssa ovat yleensä server-side apply -kenttäomistuksen ristiriita, tyypillisesti jollain mitä Helm tai käsin tehty komento loi aiemmin. Tutki ennen pakottamista. Älä vain lyö <code>--force-conflicts</code>-lippua kaikkeen.</li>\n<li>TLS-virheet podien välillä tarkoittavat yleensä, ettei kuluttajan nimiavaruus koskaan saanut CA-bundlea <code>trust-manager</code>:lta. Bundlet ovat nimiavaruuskohtaisia ja ilmestyvät vasta kun <code>infra-phase2</code> on terve.</li>\n</ul>"
+    }
+  ]
+}

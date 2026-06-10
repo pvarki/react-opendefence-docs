@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "id": "acf80736-b31c-47d8-9ee2-f17a0339d6b9",
+  "slug": "uas-tool-97tr5ME3hk",
+  "collection": "guides/mtx-guide",
+  "locale": "sv",
+  "title": "UAS Tool",
+  "breadcrumb": [
+    "Publicera streamen",
+    "UAS Tool"
+  ],
+  "createdAt": "2025-12-06T09:15:40.378Z",
+  "updatedAt": "2026-04-11T21:50:55.659Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Publicera en videoström med UAS Tool.",
+      "id": "publicera-en-videoström-med-uas-tool"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<h2 id=\"publicera-en-videoström-med-uas-tool\"><a href=\"#publicera-en-videoström-med-uas-tool\">Publicera en videoström med UAS Tool.</a></h2>"
+    },
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Öppna Deploy App - MTX",
+          "layout": "text",
+          "html": "<ul>\n<li>Öppna Deploy App MTX</li>\n<li>Välj \"+ Lägg till\"</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "MTX - Starta en ström 1",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Öppna UAS Tool-rullgardinsmenyn</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/6c688161563357e5.webp",
+              "width": 1080,
+              "height": 2007
+            }
+          ]
+        },
+        {
+          "title": "MTX - Starta en ström 2",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Välj \"Import settings to UAS Tool\"</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/86295a5913b3135d.webp",
+              "width": 1080,
+              "height": 1997
+            }
+          ]
+        },
+        {
+          "title": "ATAK - Importera inställningar",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>\"Would you like to apply the configuration from an external source?\"</li>\n<li>Välj \"Yes\"</li>\n<li>Navigera till UAS Tool-pluginen</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/cd929600c74f69be.webp",
+              "width": 2109,
+              "height": 994
+            }
+          ]
+        },
+        {
+          "title": "UAS Tool Streaming 1",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Välj din drönare med \"Uppspelnings\"-knappen</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/ba41b55607516e35.webp",
+              "width": 2106,
+              "height": 995
+            }
+          ]
+        },
+        {
+          "title": "UAS Tool Streaming 2",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>För att strömma, välj \"Wrench\"-knappen för inställningar</li>\n<li>Tryck på \"((Uppspelnings))\" -knappen för att starta sändningen</li>\n<li>Du bör få en \"Broadcast started\" notis</li>\n<li>För att avsluta strömmen trycker du på \"((Uppspelnings))\" knappen igen</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/07df05ce5332df04.webp",
+              "width": 2106,
+              "height": 995
+            }
+          ]
+        },
+        {
+          "title": "Nu vet du hur man startar en ström",
+          "layout": "text",
+          "html": "<ul>\n<li>Du kan stänga denna guide.</li>\n</ul>",
+          "images": []
+        }
+      ]
+    },
+    {
+      "type": "html",
+      "html": "<p>När du har startat strömmen, fortsätt till nästa avsnitt <a href=\"/doc/ce8883ca-0875-427b-88c6-464f3ebcc0e9\">Katso Striimiä</a></p>"
+    }
+  ]
+}

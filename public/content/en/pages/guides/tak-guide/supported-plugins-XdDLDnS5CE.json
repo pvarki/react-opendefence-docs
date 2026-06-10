@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "0cea7c7c-fac9-410d-91ef-30bfb8df4675",
+  "slug": "supported-plugins-XdDLDnS5CE",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "Supported Plugins",
+  "breadcrumb": [
+    "TAK Clients",
+    "ATAK",
+    "Supported Plugins"
+  ],
+  "createdAt": "2025-12-05T22:06:21.332Z",
+  "updatedAt": "2025-12-05T22:06:21.332Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>(This tab should not be shown)</p>"
+    }
+  ]
+}

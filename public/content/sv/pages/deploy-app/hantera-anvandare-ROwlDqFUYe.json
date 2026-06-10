@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "d03d7fc3-d57c-40ad-843e-7bf21c8211e1",
+  "slug": "hantera-anvandare-ROwlDqFUYe",
+  "collection": "deploy-app",
+  "locale": "sv",
+  "title": "Hantera användare",
+  "breadcrumb": [
+    "Android",
+    "Administratörsguide",
+    "Hantera användare"
+  ],
+  "createdAt": "2026-02-17T08:35:10.054Z",
+  "updatedAt": "2026-02-25T07:34:57.091Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>\\</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Hantera användare",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Användarhanteringen finns i sidofältet.</li>\n<li>Välj \"Hantera användare\".</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/0d2956bb9d0a44c6.webp",
+              "width": 2560,
+              "height": 5712
+            }
+          ]
+        },
+        {
+          "title": "Hantera användare",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Genom att klicka på en användare visas de tillgängliga åtgärderna.</li>\n<li>Åtgärderna beror på användarens nuvarande roll (administratör / krigare).</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/60657beee4c1a598.webp",
+              "width": 2560,
+              "height": 5712
+            }
+          ]
+        },
+        {
+          "title": "Åtgärder",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Krigare kan tas bort eller befordras till administratör.</li>\n<li>Administratörer kan tas bort eller nedgraderas till krigare.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/5be58d7eca5d3769.webp",
+              "width": 2560,
+              "height": 5712
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "html",
+      "html": "<p>\\</p>"
+    }
+  ]
+}

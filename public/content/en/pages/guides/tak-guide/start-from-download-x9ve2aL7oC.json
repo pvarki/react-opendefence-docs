@@ -1,0 +1,137 @@
+{
+  "schemaVersion": 1,
+  "id": "4f4b85db-a381-44b9-b106-30ba37172e1b",
+  "slug": "start-from-download-x9ve2aL7oC",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "Start from Download",
+  "breadcrumb": [
+    "TAK Clients",
+    "TAK Tracker - Android",
+    "Start",
+    "Start from Download"
+  ],
+  "createdAt": "2026-02-21T08:38:28.073Z",
+  "updatedAt": "2026-02-21T09:11:38.026Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Install TAK Tracker from the Play Store",
+          "layout": "text",
+          "html": "<ul>\n<li><a href=\"https://play.google.com/store/search?q=tak%20tracker&#x26;c=apps\" target=\"_blank\" rel=\"noopener noreferrer\">https://play.google.com/store/search?q=tak%20tracker&#x26;c=apps</a></li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "Open TAK Tracker App",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Find the TAK Tracker icon and start the App.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/8d5d065c3a7b66c6.webp",
+              "width": 225,
+              "height": 225
+            }
+          ]
+        },
+        {
+          "title": "TAK Tracker App Permissions 1",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Stop optimising battery usage.</li>\n<li>Allow.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/ee88bc416b724ab3.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "TAK Tracker App Permissions 2",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Use your location in the background info.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/5fb1d0de14ead3db.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "TAK Tracker App Permissions 3",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Use your location in the background.</li>\n<li>Allow Precise. While using the app.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/1b80ee34368ca5fc.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "TAK Tracker App Permissions 4",
+          "layout": "image-left",
+          "html": "<ul>\n<li>App info</li>\n<li>Permissions</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/f173cdca1c314884.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "TAK Tracker App Permissions 5",
+          "layout": "image-left",
+          "html": "<ul>\n<li>App permissions</li>\n<li>Location</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/ea4269a513c88814.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "TAK Tracker App Permissions 6",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Location permissions</li>\n<li>Allow all the time</li>\n<li>Return to TAK Tracker</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/6d64fa41738950ad.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "TAK Tracker App Permissions 7",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Allow TAK Tracker to send you notifications.</li>\n<li>Allow</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/c4135da73dbff018.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "You are done with permissions",
+          "layout": "image-left",
+          "html": "<ul>\n<li>TAK Tracker is now installed.</li>\n<li>Move to Importing server connection.</li>\n</ul>\n<hr>",
+          "images": []
+        }
+      ]
+    },
+    {
+      "type": "html",
+      "html": "<p>After installing TAK Tracker continue to <a href=\"/doc/91c58ae9-39c3-4623-8099-ce1c85401757\">Importing Server Connection</a></p>"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "8f4db11b-9c95-4715-875f-0d6109fa48cd",
+  "slug": "webblasare-ww2sENtpLr",
+  "collection": "guides/mtx-guide",
+  "locale": "sv",
+  "title": "Webbläsare",
+  "breadcrumb": [
+    "Titta på streamen",
+    "Webbläsare"
+  ],
+  "createdAt": "2025-12-06T09:15:10.550Z",
+  "updatedAt": "2026-02-24T06:33:29.636Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Titta på streamen via MTX i en webbläsare.",
+      "id": "titta-på-streamen-via-mtx-i-en-webbläsare"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>(this tab should not be shown)</p>\n<p>— Waiting for new UI implementation —</p>\n<h2 id=\"titta-på-streamen-via-mtx-i-en-webbläsare\"><a href=\"#titta-på-streamen-via-mtx-i-en-webbläsare\">Titta på streamen via MTX i en webbläsare.</a></h2>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"></span></code></pre>",
+      "lang": "markdown"
+    }
+  ]
+}

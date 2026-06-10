@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "id": "2586e9d1-9343-4b54-9218-b6d5b9659a12",
+  "slug": "vns-lisaosa-Hnpl0Xgv25",
+  "collection": "wikis/tak",
+  "locale": "fi",
+  "title": "VNS -lisäosa",
+  "breadcrumb": [
+    "TAK Tuotteet Käyttäjille",
+    "ATAK - Android TAK",
+    "Työkalut ja lisäosat",
+    "VNS -lisäosa"
+  ],
+  "createdAt": "2025-12-08T01:23:40.850Z",
+  "updatedAt": "2026-02-19T13:04:19.098Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Lisäosan kuvaus",
+      "id": "lisäosan-kuvaus"
+    },
+    {
+      "depth": 2,
+      "text": "Opastusvideot",
+      "id": "opastusvideot"
+    },
+    {
+      "depth": 2,
+      "text": "VNS Plugin manual for ATAK",
+      "id": "vns-plugin-manual-for-atak"
+    },
+    {
+      "depth": 3,
+      "text": "ATAK VNS Google Routes API Key",
+      "id": "atak-vns-google-routes-api-key"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p><img src=\"/content/images/fi/attachments/0aed24c4dd22ccae.webp\" alt=\"\">\\n</p>\n<h2 id=\"lisäosan-kuvaus\"><a href=\"#lisäosan-kuvaus\"><strong>Lisäosan kuvaus</strong></a></h2>\n<p>Vehicle Navigation System (VNS) -lisäosa suorittaa kaksi päätoimintoa. Ensinnäkin se mahdollistaa ATAK:ssa reittien kohdistamisen tieverkkoon. Toiseksi se välittää Augmented Reality System–Navigation (ARES-N) -sovellukselle keskeisiä tietoja, kuten laitteen sijainnin, tilannetietoisuutta parantavat merkit sekä käännös käännökseltä etenevät ajo-ohjeet.</p>\n<p>Tieverkkoaineisto hankitaan käyttämällä PAR osm-routing-engine -projektia.</p>\n<h2 id=\"opastusvideot\"><a href=\"#opastusvideot\">Opastusvideot</a></h2>\n<h4 id=\"atak-vns-plugin\"><a href=\"#atak-vns-plugin\">ATAK VNS PLUGIN</a></h4>"
+    },
+    {
+      "type": "youtube",
+      "videoId": "qpDTcvFwdb8"
+    },
+    {
+      "type": "html",
+      "html": "<h4 id=\"how-to-use-a-google-cloud-api-key-for-atak-vns-plugin\"><a href=\"#how-to-use-a-google-cloud-api-key-for-atak-vns-plugin\">How to use a Google Cloud API Key for ATAK VNS Plugin</a></h4>"
+    },
+    {
+      "type": "youtube",
+      "videoId": "IbIRl0D4CGU"
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"vns-plugin-manual-for-atak\"><a href=\"#vns-plugin-manual-for-atak\">VNS Plugin manual for ATAK</a></h2>"
+    },
+    {
+      "type": "pdf",
+      "src": "attachments/1efb208e-e430-4554-b9f4-55288ca3a51e.pdf",
+      "title": "ATAK 5.5 VNS 3.10.pdf"
+    },
+    {
+      "type": "html",
+      "html": "<h3 id=\"atak-vns-google-routes-api-key\"><a href=\"#atak-vns-google-routes-api-key\">ATAK VNS Google Routes API Key</a></h3>"
+    },
+    {
+      "type": "pdf",
+      "src": "attachments/8286dd7f-0557-4603-950b-460502801190.pdf",
+      "title": "ATAK VNS Google Routes API Key.pdf"
+    }
+  ]
+}

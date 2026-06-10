@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "a5cd4c36-7b4a-4ef0-8912-9719264d3567",
+  "slug": "supported-plugins-zl2XZB0u1p",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "Supported Plugins",
+  "breadcrumb": [
+    "TAK Clients",
+    "WinTAK",
+    "Supported Plugins"
+  ],
+  "createdAt": "2025-12-05T22:05:58.522Z",
+  "updatedAt": "2025-12-05T22:05:58.522Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>(This tab should not be shown)</p>"
+    }
+  ]
+}

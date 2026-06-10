@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "id": "bfb60a74-c259-4714-8e69-39f43cec5185",
+  "slug": "basic-ui-HMgE19faE8",
+  "collection": "wikis/tak",
+  "locale": "en",
+  "title": "Basic UI",
+  "breadcrumb": [
+    "TAK Admin Tools",
+    "Takserver",
+    "Basic UI"
+  ],
+  "createdAt": "2025-09-07T12:34:30.519Z",
+  "updatedAt": "2026-02-19T13:42:48.355Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Takserver UI is found at tak.server.fi address on Deploy App environment.</p>"
+    },
+    {
+      "type": "image",
+      "src": "/content/images/en/attachments/56afd4959eea68c5.webp",
+      "alt": "",
+      "width": 3772,
+      "height": 2121
+    },
+    {
+      "type": "html",
+      "html": "<p>The dropdown menu on the right side is where the functions can found and the official tak.gov documentatio  is at the end \"Documentation\".</p>"
+    },
+    {
+      "type": "image",
+      "src": "/content/images/en/attachments/3dd9d3a9a81b066e.webp",
+      "alt": "",
+      "width": 382,
+      "height": 1908
+    },
+    {
+      "type": "html",
+      "html": "<p>\\</p>\n<p>\\</p>"
+    }
+  ]
+}

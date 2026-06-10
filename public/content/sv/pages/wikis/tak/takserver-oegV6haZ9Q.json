@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "bdaffd53-5731-4080-baf4-28f06b5e1971",
+  "slug": "takserver-oegV6haZ9Q",
+  "collection": "wikis/tak",
+  "locale": "sv",
+  "title": "Takserver",
+  "breadcrumb": [
+    "TAK-verktyg för Huvudadministratörer",
+    "Takserver"
+  ],
+  "createdAt": "2025-12-08T03:03:35.632Z",
+  "updatedAt": "2026-02-22T10:14:30.973Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Produkt Tillgänglig",
+      "id": "produkt-tillgänglig"
+    },
+    {
+      "depth": 2,
+      "text": "Användarhandbok",
+      "id": "användarhandbok"
+    },
+    {
+      "depth": 2,
+      "text": "Produktbeskrivning",
+      "id": "produktbeskrivning"
+    },
+    {
+      "depth": 2,
+      "text": "Sidor",
+      "id": "sidor"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "src": "/content/images/sv/attachments/8afafc8d9b412653.webp",
+      "alt": "",
+      "caption": "=655x",
+      "width": 2621,
+      "height": 2643
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"produkt-tillgänglig\"><a href=\"#produkt-tillgänglig\">Produkt Tillgänglig</a></h2>\n<p><a href=\"https://tak.gov/products/tak-server\" target=\"_blank\" rel=\"noopener noreferrer\">https://tak.gov/products/tak-server</a></p>\n<h2 id=\"användarhandbok\"><a href=\"#användarhandbok\">Användarhandbok</a></h2>"
+    },
+    {
+      "type": "pdf",
+      "src": "attachments/7ef0eb7c-e09e-4980-80bb-690a5b5822c9.pdf",
+      "title": "TAK_Server_Configuration_Guide-5.6.pdf"
+    },
+    {
+      "type": "pdf",
+      "src": "attachments/0f8385e1-a2f0-4c5b-a7d0-134348c86c88.pdf",
+      "title": "TAK_Server_Configuration_Guide-5.5.pdf"
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"produktbeskrivning\"><a href=\"#produktbeskrivning\"><strong>Produktbeskrivning</strong></a></h2>\n<p>TAK Server är en taktisk datahanteringsplattform som möjliggör användning och kryptering av information mellan olika nätverk. TAK Server skyddar, vidarebefordrar och lagrar data i både fristående och federerade installationer.</p>\n<p>Den behövs alltid när TAK-klientenheter inte arbetar i ett peer-to-peer-nätverk eller när operativa behov kräver att uppdragsdata krypteras och lagras.</p>\n<p>Klienttillägg som <strong>DataSync</strong> och <strong>Execution Checklist</strong> kräver också TAK Server för att fungera.</p>\n<h2 id=\"sidor\"><a href=\"#sidor\">Sidor</a></h2>\n<ul>\n<li><a href=\"/doc/688abe6a-4c5c-4237-b4d5-4fe1a9ce3029\">Grundläggande användargränssnitt</a></li>\n<li><a href=\"/doc/601cabae-060e-4b9a-877a-c4c0ab48fcd5\">Update Server (OTA)</a></li>\n<li><a href=\"/doc/2c843d6b-7763-40e3-bdba-31bc13bc8cf8\">Mission Manager (Data Sync)</a></li>\n<li><a href=\"/doc/e91f59d7-c745-4196-b327-81ce4988cd5e\">Device Profiles</a></li>\n</ul>"
+    }
+  ]
+}

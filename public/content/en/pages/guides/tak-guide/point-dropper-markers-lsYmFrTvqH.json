@@ -1,0 +1,309 @@
+{
+  "schemaVersion": 1,
+  "id": "ee9de6aa-bd12-414f-9e31-cfc8ecddda21",
+  "slug": "point-dropper-markers-lsYmFrTvqH",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "Point Dropper - Markers",
+  "breadcrumb": [
+    "TAK Clients",
+    "ATAK",
+    "Basic Features",
+    "Point Dropper - Markers"
+  ],
+  "createdAt": "2025-12-05T22:06:22.373Z",
+  "updatedAt": "2026-02-28T11:13:08.018Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "ATAK connected to takserver - Point Dropper - Markers",
+      "id": "atak-connected-to-takserver---point-dropper---markers"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>\\</p>\n<h1 id=\"atak---point-dropper---basic-use\"><a href=\"#atak---point-dropper---basic-use\">ATAK - Point Dropper - Basic use</a></h1>\n<h2 id=\"atak-connected-to-takserver---point-dropper---markers\"><a href=\"#atak-connected-to-takserver---point-dropper---markers\">ATAK connected to takserver - Point Dropper - Markers</a></h2>"
+    },
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "1. Drawing Markers with Point Dropper",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Tap the Point Dropper when you want to draw markers to the map.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/fcbc28e3f39dba58.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "2. Specify Marker Type",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Tap \"Ground\" to specify your marker's subtype further if you so wish. You can edit this later too.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/cef319194a1ab305.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "3. Select Marker Affiliation",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Tap Unknown, Neutral, Enemy and Friendly for affiliation and to start dropping your new Marker.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/f94932d1d0cc0787.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "4. Tap on map to drop the pointer",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>The pointer spawns upon tap. It is present only in your local device now - to share it, fill in some details and send it.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/800f50867119bce1.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "5. Select Marker for Editing or Send",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Tap the marker to bring up the action menu. Tap the details icon, right next of the delete icon to fill details.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/065beedcc732fe61.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "6. Open the Name dialog",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Tap on the generated name of your marker in order to edit it.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/32dffe6bfad84813.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "7. Name your Marker",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Name your marker according to your unit's convention. This example follows a scheme like so: \"Reporting unit name, Descriptive Title\"</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/9b044bced7fe5bd1.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "8. Change Type",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Tap Type to edit the marker subtype similarily as before.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/359315bda5a120bc.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "9. Type Choices",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>There's plenty of choice for marker subtypes. Specify yours if applicable.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/3c8da9ce18abf3f5.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "10. Set Location Error (Optional)",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>You can specify the location error of your symbol if applicable. It describes how accurate your marker's geolocation is.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/b53d51659a4fc177.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "11. Location Error Choices",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>As of NATO standard, you may specify the error from CAT1 (lowest) to CAT6 (highest error).</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/e0656e14a669a60b.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "12. Specify Marker Size (Optional)",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>If your marker subtype is \"Unit\", you can specify the markers' size indication (eg. squad, platoon, company). Tap Unit Modifier/Echelon to do that.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/9753780f6468bd55.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "13. From Squad to Army",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Choose as applicable.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/7d54f6c083697174.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "14. Fill in details using Remarks",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Tell more about the marker by scrolling down and tapping the pen icon.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/93c6f13b88084d0c.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "15. Fill in",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Fill in details as needed.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/867e504cb2851701.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "16. Edit marker's Status",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>If applicable, you can alter the Status of this marker. This is usable if you edit an existing marker to reflect a change, or are planning anticipated action.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/bbbae7db87d64f6d.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "17. Edit spotting Sensors",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>If you happen to have sensor, eg. video stream, going on against the target, you can fill that by tapping the \"play\" icon.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/74189d6500b4fdd3.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "18. Adding a video sensor to a marker",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Stream using MediaMTX [separate guide] or via platform like YouTube in order to start the stream. You have to specify address, port, protocol and possible password though.\nThis will be instructed in MediaMTX's guide.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/db8613213e120ded.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "19. Adding attachments",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>You can attachments eg. images to your marker. To do so, tap the pin icon.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/f4b56d58f5e31c58.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "20. Adding an attachment",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>You can eg. shoot a fresh image, or choose from your images using Image File.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/652f4eb200dbcab0.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "21. Adding an image",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Done adding attachments, go back to the main marker details screen via the back arrow.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/5976abeb0a204f9d.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "22. Sending the point",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Any marker you draw exists on your device only, unless you send the marker to somebody. We cover this further here.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/427fcd0c7ca57743.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Done",
+          "layout": "text",
+          "html": "<ul>\n<li>You can close this guide.</li>\n</ul>",
+          "images": []
+        }
+      ]
+    },
+    {
+      "type": "html",
+      "html": "<p>After successful testing Point Dropper, continue to <a href=\"/doc/1ddce881-2116-41eb-9980-f201fcc06f27\">Use GeoChat</a></p>"
+    }
+  ]
+}

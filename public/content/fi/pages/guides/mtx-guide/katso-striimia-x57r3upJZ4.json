@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "53f74fbb-29cf-4abe-b448-93c0ab9674b7",
+  "slug": "katso-striimia-x57r3upJZ4",
+  "collection": "guides/mtx-guide",
+  "locale": "fi",
+  "title": "Katso Striimiä",
+  "breadcrumb": [
+    "Katso Striimiä"
+  ],
+  "createdAt": "2025-12-09T03:44:27.894Z",
+  "updatedAt": "2026-02-20T06:19:45.903Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Striimin katsomisen ohjeet:",
+      "id": "striimin-katsomisen-ohjeet"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<h2 id=\"striimin-katsomisen-ohjeet\"><a href=\"#striimin-katsomisen-ohjeet\">Striimin katsomisen ohjeet:</a></h2>\n<ul>\n<li><a href=\"/doc/70562d86-f135-4376-b3cd-96cd6dad013a\">Selain</a></li>\n<li><a href=\"/doc/f8359615-cc9a-47ab-972b-128643af3af7\">VLC Player</a></li>\n</ul>"
+    }
+  ]
+}

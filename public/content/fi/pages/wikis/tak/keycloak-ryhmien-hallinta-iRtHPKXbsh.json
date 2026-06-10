@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "id": "d1b75f85-2c8f-44f3-ab8e-a3f24f2d8695",
+  "slug": "keycloak-ryhmien-hallinta-iRtHPKXbsh",
+  "collection": "wikis/tak",
+  "locale": "fi",
+  "title": "Keycloak - Ryhmien hallinta",
+  "breadcrumb": [
+    "TAK Pääkäyttäjä Työkalut",
+    "Edistyneet Toiminnot",
+    "Keycloak - Ryhmien hallinta"
+  ],
+  "createdAt": "2025-12-08T02:16:41.455Z",
+  "updatedAt": "2026-02-19T13:52:30.345Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Perusohjeet:",
+      "id": "perusohjeet"
+    },
+    {
+      "depth": 3,
+      "text": "Perusohjeiden kuvat",
+      "id": "perusohjeiden-kuvat"
+    },
+    {
+      "depth": 2,
+      "text": "Edistyneet ohjeet: (Write- tai Read-ryhmät)",
+      "id": "edistyneet-ohjeet-write--tai-read-ryhmät"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "src": "attachments/712bc7f0-7918-48e7-ae01-ae1932ca4c58.svg",
+      "alt": "",
+      "width": 730,
+      "height": 151
+    },
+    {
+      "type": "html",
+      "html": "<p>Nykyinen Deploy App -ympäristö käyttää Keycloakia käyttäjäryhmien hallintaan. Nämä ryhmät välitetään takserverille, ja yhdistetyt käyttäjät saavat ryhmät automaattisesti.</p>\n<p>Pitkän aikavälin tavoitteena on tuoda ryhmähallinta jossain määrin osaksi Deploy App -sovellusta.</p>\n<h2 id=\"perusohjeet\"><a href=\"#perusohjeet\">Perusohjeet:</a></h2>\n<ul>\n<li>Kirjaudu Keycloakiin osoitteessa <strong>kc.your-server.fi</strong> käyttäen Rasenmäherin mukana toimitettua <strong>mTLS-varmennetta</strong>.</li>\n<li>Siirry sivupalkista <strong>Groups (Ryhmät)</strong> -osioon.</li>\n<li>Siirry <strong>tak</strong>-ryhmään hallitaksesi TAK-ryhmiä.</li>\n<li>Luo uusi ryhmä <strong>tak</strong>-ryhmän <strong>Child groups</strong> -sivulla\n<ul>\n<li>Ryhmän nimen tulee olla muodossa <strong>tak_groupname</strong></li>\n</ul>\n</li>\n<li>Avaa juuri luotu ryhmä.</li>\n<li>Siirry <strong>Members (Jäsenet)</strong> -osioon ja valitse <strong>Add member</strong>\n<ul>\n<li>Valitse käyttäjät, jotka haluat lisätä ryhmään.</li>\n</ul>\n</li>\n</ul>\n<p>Uuteen ryhmään lisätyt käyttäjät, jotka ovat yhteydessä takserveriin, saavat tämän ryhmän automaattisesti.</p>\n<h3 id=\"perusohjeiden-kuvat\"><a href=\"#perusohjeiden-kuvat\">Perusohjeiden kuvat</a></h3>"
+    },
+    {
+      "type": "image",
+      "src": "/content/images/fi/attachments/e6c9b3177b78bd73.webp",
+      "alt": "",
+      "width": 2693,
+      "height": 1027
+    },
+    {
+      "type": "image",
+      "src": "/content/images/fi/attachments/7cf4e6fe1662d152.webp",
+      "alt": "",
+      "width": 2626,
+      "height": 1002
+    },
+    {
+      "type": "image",
+      "src": "/content/images/fi/attachments/ef9391d58e5cb187.webp",
+      "alt": "",
+      "width": 2542,
+      "height": 1268
+    },
+    {
+      "type": "image",
+      "src": "/content/images/fi/attachments/ec9ac1170b9a7293.webp",
+      "alt": "",
+      "width": 2878,
+      "height": 1218
+    },
+    {
+      "type": "image",
+      "src": "/content/images/fi/attachments/cbfbf9ec63ee8679.webp",
+      "alt": "",
+      "width": 2932,
+      "height": 1468
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"edistyneet-ohjeet-write--tai-read-ryhmät\"><a href=\"#edistyneet-ohjeet-write--tai-read-ryhmät\">Edistyneet ohjeet: (Write- tai Read-ryhmät)</a></h2>\n<p>Luo ryhmät samalla tavalla kuin perusohjeissa, mutta lisää ryhmän nimeen <strong>_WRITE</strong> tai <strong>_READ</strong> määrittääksesi, miten ryhmän käyttäjiä käsitellään.</p>\n<p><strong>tak_test_WRITE</strong>-ryhmän käyttäjät <strong>lähettävät tietoa</strong> <em>test</em>-ryhmään, mutta <strong>eivät voi vastaanottaa</strong> tietoa siitä.</p>\n<p>Tätä ominaisuutta voidaan käyttää esimerkiksi niin, että <strong>johto-/komentopaikka (kopa)</strong> näkee kaikki käyttäjät, mutta vain sallitut käyttäjät saavat täyden tai rajatun lukuoikeuden Kopa-ryhmään (esim. <strong>tak_kopa</strong> komentopaikan henkilöstölle).</p>"
+    },
+    {
+      "type": "image",
+      "src": "/content/images/fi/attachments/41ff55a41a76d952.webp",
+      "alt": "",
+      "width": 1417,
+      "height": 543
+    },
+    {
+      "type": "html",
+      "html": "<p>\\</p>"
+    }
+  ]
+}

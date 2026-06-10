@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 1,
+  "id": "9ddd0476-0ed4-4437-9c9b-99edf80bf5c4",
+  "slug": "opentak-icu-8GEhKJ6UDH",
+  "collection": "wikis/mtx",
+  "locale": "fi",
+  "title": "Opentak ICU",
+  "breadcrumb": [
+    "Työkalut",
+    "Opentak ICU"
+  ],
+  "createdAt": "2025-10-30T17:28:42.289Z",
+  "updatedAt": "2026-02-16T08:36:21.895Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Saatavilla:",
+      "id": "saatavilla"
+    },
+    {
+      "depth": 2,
+      "text": "Perusnäkymä",
+      "id": "perusnäkymä"
+    },
+    {
+      "depth": 2,
+      "text": "Ohjeet stiimaukseen",
+      "id": "ohjeet-stiimaukseen"
+    },
+    {
+      "depth": 3,
+      "text": "Asetukset (perus)",
+      "id": "asetukset-perus"
+    },
+    {
+      "depth": 2,
+      "text": "Asetukset:",
+      "id": "asetukset"
+    },
+    {
+      "depth": 3,
+      "text": "Striimauksen asetukset:",
+      "id": "striimauksen-asetukset"
+    },
+    {
+      "depth": 3,
+      "text": "Video asetukset:",
+      "id": "video-asetukset"
+    },
+    {
+      "depth": 3,
+      "text": "Ääni asetukset:",
+      "id": "ääni-asetukset"
+    },
+    {
+      "depth": 3,
+      "text": "TAK Palvelin asetukset:",
+      "id": "tak-palvelin-asetukset"
+    },
+    {
+      "depth": 2,
+      "text": "Tuetut striimaus protokollat ja kodekit",
+      "id": "tuetut-striimaus-protokollat-ja-kodekit"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Opentak ICU on avoimen lähdekoodin ohjelma, jolla voidaan jakaa live videokuvaa media verkon yli mediapalvelimelle tai lähiverkkoon. Mediapalvelimen kautta mahdollistetaan jakaminen kauemmas omasta verkosta.</p>\n<p>Videokuvaa voi jakaa joko laitteen omasta kamerasta tai ulkoisesta USB-UVC protokollaa tukevasta kamerasta.</p>\n<h2 id=\"saatavilla\"><a href=\"#saatavilla\">Saatavilla:</a></h2>\n<p><a href=\"https://github.com/brian7704/OpenTAK_ICU\" target=\"_blank\" rel=\"noopener noreferrer\">https://github.com/brian7704/OpenTAK_ICU</a></p>\n<h2 id=\"perusnäkymä\"><a href=\"#perusnäkymä\">Perusnäkymä</a></h2>"
+    },
+    {
+      "type": "image",
+      "src": "/content/images/fi/attachments/2e16c6f49e8d7ec4.webp",
+      "alt": "",
+      "width": 1582,
+      "height": 753
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"ohjeet-stiimaukseen\"><a href=\"#ohjeet-stiimaukseen\">Ohjeet stiimaukseen</a></h2>\n<ul>\n<li>Laita asetukset kuntoon\n<ul>\n<li>Streaming Settings</li>\n<li>Video Settings</li>\n<li>Audio Settings</li>\n</ul>\n</li>\n<li>Paina perusnäkymässä \"<strong>Record</strong>-nappia\" lähettääksesi kuvaa.</li>\n<li>Paina \"<strong>Stop</strong>-nappia\" lopettaaksesi kuvan jakaminen.</li>\n</ul>\n<h3 id=\"asetukset-perus\"><a href=\"#asetukset-perus\">Asetukset (perus)</a></h3>\n<ul>\n<li>Streaming Settings\n<ul>\n<li>Valitse <strong>\"Stream video\"</strong>-asetus</li>\n<li>Valitse Stream Protocol <strong>\"RTMPS\"</strong></li>\n<li>Syötä osoite minne striimi lähetetään <strong>\"canadian-goose.pvarki.fi\"</strong></li>\n<li>Syötä Stream Port <strong>\"1936\"</strong></li>\n<li>Syötä Stream Path \"<strong>live/icu/callsign</strong>\" (Oma callsign)</li>\n<li>Syötä Username käyttäjätunnuksesi</li>\n<li>Syötä Password salasanasi</li>\n</ul>\n</li>\n<li>Video Settings\n<ul>\n<li>Valitse Video Source <strong>\"This device\"</strong></li>\n<li>Valitse Resolution <strong>\"1280 x 720\"</strong></li>\n<li>Syötä Bitrate <strong>\"3000\"</strong></li>\n<li>Valitse <strong>\"Adaptive Bitrate\"</strong>-asetus</li>\n<li>Valitse FPS <strong>\"15\"</strong></li>\n<li>Valitse Codec <strong>\"H264\"</strong></li>\n<li>Poista valinta <strong>\"Record\"</strong></li>\n<li>Valitse <strong>\"Text Overlay\"</strong>-asetus</li>\n</ul>\n</li>\n<li>Audio Settings\n<ul>\n<li>Poista valinta <strong>\"Enable Audio\"</strong></li>\n</ul>\n</li>\n<li><strong>TAK Server Preferences</strong>\n<ul>\n<li>Poista valinta <strong>\"Send Location CoTs to a TAK server\"</strong></li>\n</ul>\n</li>\n</ul>\n<p>Halutessasi voit muuttaa stiimaus protokollaa, kodekkia, resoluutiota, fps:ää ja äänen lähettämistä, mutta näillä perus asetuksilla saat hyvän toimivan käyttökokemuksen.</p>\n<h2 id=\"asetukset\"><a href=\"#asetukset\">Asetukset:</a></h2>"
+    },
+    {
+      "type": "image",
+      "src": "/content/images/fi/attachments/32a4faaf1c18c6c1.webp",
+      "alt": "",
+      "width": 228,
+      "height": 210
+    },
+    {
+      "type": "html",
+      "html": "<p>Yleinen asetukset valikko.</p>\n<h3 id=\"striimauksen-asetukset\"><a href=\"#striimauksen-asetukset\">Striimauksen asetukset:</a></h3>"
+    },
+    {
+      "type": "image",
+      "src": "/content/images/fi/attachments/2222b2656d368506.webp",
+      "alt": "",
+      "width": 262,
+      "height": 720
+    },
+    {
+      "type": "html",
+      "html": "<p>Striimaukseen liittyvät asetukset, kuten minne striimi lähetetään ja mitä protokollaa käytetään.</p>\n<h3 id=\"video-asetukset\"><a href=\"#video-asetukset\">Video asetukset:</a></h3>"
+    },
+    {
+      "type": "image",
+      "src": "/content/images/fi/attachments/70c88e2cbe4bce2c.webp",
+      "alt": "",
+      "width": 261,
+      "height": 720
+    },
+    {
+      "type": "html",
+      "html": "<p>Striimin videoon liittyvät asetukset, kuten käytetäänkö laitteen kameraa vai ulkoista kypärä-kameraa, minkälainen fps tai kodekki on valittuna ja näytetäänkö lähetettävässä kuvassa callsign, sijainti ja aika.</p>\n<h3 id=\"ääni-asetukset\"><a href=\"#ääni-asetukset\">Ääni asetukset:</a></h3>"
+    },
+    {
+      "type": "image",
+      "src": "/content/images/fi/attachments/f2a231a8a456d04e.webp",
+      "alt": "",
+      "width": 350,
+      "height": 440
+    },
+    {
+      "type": "html",
+      "html": "<p>Striimin ääneen liittyvät asetukset, kuten onko se päällä, mitä kodekkia käyteään ja muut ääni asetukset.</p>\n<h3 id=\"tak-palvelin-asetukset\"><a href=\"#tak-palvelin-asetukset\">TAK Palvelin asetukset:</a></h3>"
+    },
+    {
+      "type": "image",
+      "src": "/content/images/fi/attachments/9a8839d00f0649f0.webp",
+      "alt": "",
+      "width": 215,
+      "height": 720
+    },
+    {
+      "type": "html",
+      "html": "<p>Striimin takserverille jakamisen asetukset, eli Opentak ICU voi liittyä takserverille, välittää käyttäjän sijainti tietoa ja linkkiä videoon muille käyttäjille.</p>\n<h2 id=\"tuetut-striimaus-protokollat-ja-kodekit\"><a href=\"#tuetut-striimaus-protokollat-ja-kodekit\">Tuetut striimaus protokollat ja kodekit</a></h2>\n<table>\n<thead>\n<tr>\n<th>Striimi protokollat (portti)</th>\n<th>Videokodekit</th>\n<th>Äänikodekit</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>RTSPS (8322)</td>\n<td>H264</td>\n<td>AAC</td>\n</tr>\n<tr>\n<td>RTMPS (1936)</td>\n<td>H265</td>\n<td>G711</td>\n</tr>\n<tr>\n<td>SRT (8890)</td>\n<td>AV1</td>\n<td>OPUS</td>\n</tr>\n<tr>\n<td>UDP</td>\n<td>–</td>\n<td>–</td>\n</tr>\n</tbody>\n</table>"
+    }
+  ]
+}

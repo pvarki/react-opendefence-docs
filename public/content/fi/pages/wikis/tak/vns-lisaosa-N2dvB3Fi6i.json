@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "b845f5f1-670e-48d9-83c2-4f376aa2457d",
+  "slug": "vns-lisaosa-N2dvB3Fi6i",
+  "collection": "wikis/tak",
+  "locale": "fi",
+  "title": "VNS -lisäosa",
+  "breadcrumb": [
+    "TAK Työkalut Tuotteille",
+    "VNS -lisäosa"
+  ],
+  "createdAt": "2025-12-08T01:07:09.937Z",
+  "updatedAt": "2026-02-19T13:40:03.998Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "TAK-tuotesivut lisäosalle",
+      "id": "tak-tuotesivut-lisäosalle"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "src": "/content/images/fi/attachments/0aed24c4dd22ccae.webp",
+      "alt": "",
+      "caption": "=342x",
+      "width": 741,
+      "height": 754
+    },
+    {
+      "type": "html",
+      "html": "<p>Vehicle Navigation System (VNS) -lisäosa suorittaa kaksi päätoimintoa. Ensinnäkin se mahdollistaa TAK:ssa reittien kohdistamisen tieverkkoon. Toiseksi se syöttää Augmented Reality System–Navigation (ARES-N) -sovellukselle keskeisiä tietoja, kuten laitteen sijainnin, olennaiset tilannetietoisuutta parantavat merkit sekä käännös käännökseltä etenevät ajo-ohjeet.</p>\n<h2 id=\"tak-tuotesivut-lisäosalle\"><a href=\"#tak-tuotesivut-lisäosalle\">TAK-tuotesivut lisäosalle</a></h2>\n<ul>\n<li>WinTAK <a href=\"/doc/1a4e123c-b1fc-4835-a345-6cc0b4b63eff\">VNS - lisäosa</a></li>\n<li>ATAK <a href=\"/doc/2586e9d1-9343-4b54-9218-b6d5b9659a12\">VNS -lisäosa</a></li>\n</ul>"
+    }
+  ]
+}

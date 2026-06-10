@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "5bcad522-f2a0-4cc4-967f-bd0e46953143",
+  "slug": "vlc-player-w1SqNUFWHC",
+  "collection": "guides/mtx-guide",
+  "locale": "en",
+  "title": "VLC Player",
+  "breadcrumb": [
+    "Watch Stream",
+    "VLC Player"
+  ],
+  "createdAt": "2025-12-06T01:03:44.046Z",
+  "updatedAt": "2026-02-21T13:54:39.466Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Watch stream with VLC Player via MTX.",
+      "id": "watch-stream-with-vlc-player-via-mtx"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>(this tab should not be shown)</p>\n<p>— Waiting for new UI implementation —</p>\n<h2 id=\"watch-stream-with-vlc-player-via-mtx\"><a href=\"#watch-stream-with-vlc-player-via-mtx\">Watch stream with VLC Player via MTX.</a></h2>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"></span></code></pre>",
+      "lang": "markdown"
+    }
+  ]
+}

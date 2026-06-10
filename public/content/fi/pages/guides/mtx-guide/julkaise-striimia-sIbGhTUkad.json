@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "3323b1eb-2f08-4c27-9503-cf6f70fa960d",
+  "slug": "julkaise-striimia-sIbGhTUkad",
+  "collection": "guides/mtx-guide",
+  "locale": "fi",
+  "title": "Julkaise Striimiä",
+  "breadcrumb": [
+    "Julkaise Striimiä"
+  ],
+  "createdAt": "2025-12-09T03:44:27.488Z",
+  "updatedAt": "2026-04-11T21:49:50.164Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Striimauksen ohjeet:",
+      "id": "striimauksen-ohjeet"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<h2 id=\"striimauksen-ohjeet\"><a href=\"#striimauksen-ohjeet\">Striimauksen ohjeet:</a></h2>\n<ul>\n<li><a href=\"/doc/1d937934-f557-4e02-b685-4f95e4ef6bbc\">GoPro</a></li>\n<li><a href=\"/doc/fed2d9b3-b683-47cf-9c96-560574f5f410\">Opentak ICU - Automaattinen menetelmä</a></li>\n<li><a href=\"/doc/b8fccbaa-622b-4dd5-9a6c-ddbddcbc10a6\">UAS Tool - Automaattinen menetelmä</a></li>\n</ul>"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "2f09a3aa-792a-48b7-ae52-31de50e29426",
+  "slug": "user-guide-irnHx8wSE7",
+  "collection": "deploy-app",
+  "locale": "en",
+  "title": "User Guide",
+  "breadcrumb": [
+    "Windows",
+    "User Guide"
+  ],
+  "createdAt": "2026-01-23T20:08:59.691Z",
+  "updatedAt": "2026-02-17T16:47:32.384Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>(This tab should not be shown)</p>"
+    }
+  ]
+}

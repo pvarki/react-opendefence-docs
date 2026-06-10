@@ -5,9 +5,33 @@
   "items": [
     {
       "type": "doc",
-      "id": "architecture-fixture21",
-      "label": "Stack architecture",
-      "slug": "architecture-fixture21"
+      "id": "overview-vYOjfpdwjs",
+      "label": "Overview",
+      "slug": "overview-vYOjfpdwjs"
+    },
+    {
+      "type": "doc",
+      "id": "architecture-IOuPq9WIIb",
+      "label": "Architecture",
+      "slug": "architecture-IOuPq9WIIb"
+    },
+    {
+      "type": "doc",
+      "id": "development-guide-cXwaZVMJSd",
+      "label": "Development Guide",
+      "slug": "development-guide-cXwaZVMJSd"
+    },
+    {
+      "type": "doc",
+      "id": "integration-guide-xrzqbaaOre",
+      "label": "Integration Guide",
+      "slug": "integration-guide-xrzqbaaOre"
+    },
+    {
+      "type": "doc",
+      "id": "operating-guide-HWk7wA10AV",
+      "label": "Operating Guide",
+      "slug": "operating-guide-HWk7wA10AV"
     }
   ]
 }

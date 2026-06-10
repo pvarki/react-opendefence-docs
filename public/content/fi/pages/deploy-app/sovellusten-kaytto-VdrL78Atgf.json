@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "id": "6357c6e4-656d-4013-aa96-82a88fa14e65",
+  "slug": "sovellusten-kaytto-VdrL78Atgf",
+  "collection": "deploy-app",
+  "locale": "fi",
+  "title": "Sovellusten käyttö",
+  "breadcrumb": [
+    "Android",
+    "Käyttäjäohjeet",
+    "Sovellusten käyttö"
+  ],
+  "createdAt": "2026-02-17T06:55:04.610Z",
+  "updatedAt": "2026-02-25T07:29:18.849Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Sovellusten käyttäminen",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Käytettävissäsi olevat sovellukset on listattu etusivulla.</li>\n<li>Voit avata sovelluksen klikkaamalla \"Käynnistä\"-painiketta.</li>\n<li>Valittavissa on myös \"Ohjeet\"-vaihtoehto, josta saat lisätietoa tuotteesta.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/a626a5dd075df8e0.webp",
+              "width": 2560,
+              "height": 5712
+            }
+          ]
+        },
+        {
+          "title": "Sovellusten käyttö",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Useimmissa sovelluksissa on perehdytysoppaat, jotka käyvät läpi jokaisen keskeisen ominaisuuden.</li>\n<li>Löydät tältä nettisivulta <strong>Tuoteoppaat</strong> perusasioiden nopeaan oppimiseen tai <strong>Tuote-wikit</strong> niiden mestarilliseen hallintaan.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/375c0db390170585.webp",
+              "width": 2560,
+              "height": 5712
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "html",
+      "html": "<p>\\</p>"
+    }
+  ]
+}

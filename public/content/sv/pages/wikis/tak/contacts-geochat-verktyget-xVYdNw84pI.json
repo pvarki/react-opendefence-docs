@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "id": "756a4b36-f15a-4ee5-a222-a4e707552634",
+  "slug": "contacts-geochat-verktyget-xVYdNw84pI",
+  "collection": "wikis/tak",
+  "locale": "sv",
+  "title": "Contacts / GeoChat-verktyget",
+  "breadcrumb": [
+    "TAK-produkter för Användare",
+    "WinTAK - Windows TAK",
+    "Verktyg och tillägg",
+    "Contacts / GeoChat-verktyget"
+  ],
+  "createdAt": "2025-12-08T03:03:37.123Z",
+  "updatedAt": "2026-02-19T13:26:29.037Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Verktygsbeskrivning",
+      "id": "verktygsbeskrivning"
+    },
+    {
+      "depth": 2,
+      "text": "Contacts / GeoChat-avsnittet i WinTAK-manualen",
+      "id": "contacts--geochat-avsnittet-i-wintak-manualen"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "src": "/content/images/sv/attachments/25e331c17ee17a21.webp",
+      "alt": "",
+      "caption": "=218x",
+      "width": 218,
+      "height": 161
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"verktygsbeskrivning\"><a href=\"#verktygsbeskrivning\"><strong>Verktygsbeskrivning</strong></a></h2>\n<p>Contacts-listan innehåller flera sätt för användaren att kommunicera med andra användare i ett lokalt nätverk eller via en TAK-server. Det förvalda kommunikationssättet (visas i den sista kolumnen) kan väljas och används tills användaren väljer ett annat sätt.</p>\n<h2 id=\"contacts--geochat-avsnittet-i-wintak-manualen\"><a href=\"#contacts--geochat-avsnittet-i-wintak-manualen\"><strong>Contacts / GeoChat-avsnittet i WinTAK-manualen</strong></a></h2>"
+    },
+    {
+      "type": "pdf",
+      "src": "attachments/320b27b1-7958-484c-ac19-caa2727720c9.pdf",
+      "title": "WinTAK 5.5 Contacts - GeoChat.pdf"
+    }
+  ]
+}

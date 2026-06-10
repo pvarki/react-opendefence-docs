@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "id": "e3fcd3da-5d9b-4ec8-984c-a35ad7f8ae82",
+  "slug": "mtx-stromning-W2p79UCLJ5",
+  "collection": "wikis/tak",
+  "locale": "sv",
+  "title": "MTX – Strömning",
+  "breadcrumb": [
+    "TAK-verktyg för Huvudadministratörer",
+    "Avancerade Funktioner",
+    "MTX – Strömning"
+  ],
+  "createdAt": "2025-12-08T03:03:35.553Z",
+  "updatedAt": "2026-02-19T13:50:52.217Z",
+  "headings": [
+    {
+      "depth": 3,
+      "text": "Nuvarande produkter som stöds eller utvärderas",
+      "id": "nuvarande-produkter-som-stöds-eller-utvärderas"
+    },
+    {
+      "depth": 3,
+      "text": "Nuvarande protokoll som stöds eller utvärderas",
+      "id": "nuvarande-protokoll-som-stöds-eller-utvärderas"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>MTX = <strong>MediaMTX</strong> är en färdig att använda, fristående live-mediaserver och mediaproxy utan externa beroenden. Den är utformad som en \"mediarouter\" som vidarebefordrar mediastreamar från ände till ände.</p>"
+    },
+    {
+      "type": "image",
+      "src": "attachments/28348c7c-0699-4748-b9ce-e6a069659a17.svg",
+      "alt": ""
+    },
+    {
+      "type": "html",
+      "html": "<h3 id=\"nuvarande-produkter-som-stöds-eller-utvärderas\"><a href=\"#nuvarande-produkter-som-stöds-eller-utvärderas\"><strong>Nuvarande produkter som stöds eller utvärderas</strong></a></h3>\n<ul>\n<li>Opentak ICU</li>\n<li>UAStool</li>\n<li>ICU (ej verifierad fungera med autentisering och kryptering)</li>\n<li>Helmcam (ej verifierad fungera med autentisering och kryptering)</li>\n<li>GoPro</li>\n<li>Webbläsare</li>\n<li>VLC</li>\n</ul>\n<h3 id=\"nuvarande-protokoll-som-stöds-eller-utvärderas\"><a href=\"#nuvarande-protokoll-som-stöds-eller-utvärderas\"><strong>Nuvarande protokoll som stöds eller utvärderas</strong></a></h3>\n<p><strong>MTX-portar och protokoll:</strong></p>\n<ul>\n<li><strong>1936</strong> – RTMPS</li>\n<li><strong>8322</strong> – RTSPS</li>\n<li><strong>8890</strong> – SRT</li>\n<li><strong>9888</strong> – HLS</li>\n<li><strong>9889</strong> – WebRTC</li>\n<li><strong>9996</strong> – Playpack för videor</li>\n</ul>"
+    }
+  ]
+}

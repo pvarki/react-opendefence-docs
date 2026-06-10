@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "id": "2c843d6b-7763-40e3-bdba-31bc13bc8cf8",
+  "slug": "mission-manager-data-sync-iCzglz3Qre",
+  "collection": "wikis/tak",
+  "locale": "sv",
+  "title": "Mission Manager (Data Sync)",
+  "breadcrumb": [
+    "TAK-verktyg för Huvudadministratörer",
+    "Takserver",
+    "Mission Manager (Data Sync)"
+  ],
+  "createdAt": "2025-12-08T03:03:35.769Z",
+  "updatedAt": "2026-02-19T13:45:08.437Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Hantering av missioner",
+      "id": "hantering-av-missioner"
+    },
+    {
+      "depth": 3,
+      "text": "Skapa en mission",
+      "id": "skapa-en-mission"
+    },
+    {
+      "depth": 3,
+      "text": "Ta bort / Arkivera en mission",
+      "id": "ta-bort--arkivera-en-mission"
+    },
+    {
+      "depth": 3,
+      "text": "Redigera en mission",
+      "id": "redigera-en-mission"
+    },
+    {
+      "depth": 3,
+      "text": "Ändra användarrättigheter",
+      "id": "ändra-användarrättigheter"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Missions (Data Sync-feeds) hanteras via Takserverns gränssnitt i avsnittet <strong>Mission Manager</strong>.\\nMission Manager finns på:\\n<a href=\"https://tak.server.fi:8443/Marti/MissionManager.html\" target=\"_blank\" rel=\"noopener noreferrer\"><strong>https://tak.server.fi:8443/Marti/MissionManager.html</strong></a></p>"
+    },
+    {
+      "type": "image",
+      "src": "/content/images/sv/attachments/720335fb80ca3b57.webp",
+      "alt": "",
+      "width": 1448,
+      "height": 540
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"hantering-av-missioner\"><a href=\"#hantering-av-missioner\"><strong>Hantering av missioner</strong></a></h2>\n<p>Hanteringen av missioner (Data Sync-feeds) görs antingen i Takservern eller i TAK-produkterna via Data Sync-verktyget. För att hantera missioner måste användaren ha antingen <strong>Owner</strong>- eller <strong>Write</strong>-rättigheter till feeden.</p>\n<p>Om du vill ändra användarrättigheter, se avsnittet <strong>Ändra användarrättigheter</strong>.</p>"
+    },
+    {
+      "type": "image",
+      "src": "/content/images/sv/attachments/c63873ae5f463e2d.webp",
+      "alt": "",
+      "width": 1463,
+      "height": 532
+    },
+    {
+      "type": "html",
+      "html": "<h3 id=\"skapa-en-mission\"><a href=\"#skapa-en-mission\"><strong>Skapa en mission</strong></a></h3>\n<p>Administratörer (Admin-användare) kan skapa nya missioner i Takserverns Mission Manager-vy. Välj <strong>+ ADD</strong> och fyll i önskade inställningar för feeden.</p>\n<p>Om <em>defaultRole</em> är inställt på <em>ReadOnly</em> måste du ange en eller flera användare som Owner och/eller ReadWrite. Se instruktionerna i <strong>Change User Rights</strong>.</p>\n<p>De viktigaste inställningarna för en mission är:</p>\n<ul>\n<li><strong>Name</strong></li>\n<li>Eventuellt <strong>Password</strong></li>\n<li><strong>defaultRole</strong></li>\n<li><strong>Groups</strong></li>\n</ul>\n<p><strong>defaultRole</strong> anger grundbehörigheten för användare som prenumererar på feeden: <em>ReadOnly, ReadWrite, Owner</em> …</p>\n<p><strong>Groups</strong> avgör vilka Takserver-grupper som ser feeden och kan prenumerera på den.</p>"
+    },
+    {
+      "type": "image",
+      "src": "/content/images/sv/attachments/5abe50af29dbf227.webp",
+      "alt": "",
+      "width": 603,
+      "height": 611
+    },
+    {
+      "type": "html",
+      "html": "<h3 id=\"ta-bort--arkivera-en-mission\"><a href=\"#ta-bort--arkivera-en-mission\"><strong>Ta bort / Arkivera en mission</strong></a></h3>\n<p>Missioner tas bort genom att markera önskade feeds och trycka på <strong>Delete</strong>.\\nBorttagna feeds hamnar i avsnittet <strong>Archived Missions</strong>, så deras data tas inte bort från servern.</p>"
+    },
+    {
+      "type": "image",
+      "src": "/content/images/sv/attachments/c63873ae5f463e2d.webp",
+      "alt": "",
+      "width": 1463,
+      "height": 532
+    },
+    {
+      "type": "html",
+      "html": "<h3 id=\"redigera-en-mission\"><a href=\"#redigera-en-mission\"><strong>Redigera en mission</strong></a></h3>\n<p>Redigering av en mission görs i Mission Manager-vyn.\\nVälj de feeds du vill ändra och justera inställningarna efter behov.</p>\n<p>När ändringarna är färdiga, välj <strong>Save and Close</strong>.</p>"
+    },
+    {
+      "type": "image",
+      "src": "/content/images/sv/attachments/d3cc0d829d12885f.webp",
+      "alt": "",
+      "width": 603,
+      "height": 1062
+    },
+    {
+      "type": "html",
+      "html": "<h3 id=\"ändra-användarrättigheter\"><a href=\"#ändra-användarrättigheter\"><strong>Ändra användarrättigheter</strong></a></h3>\n<p>Om du vill att <strong>RECON</strong>-feeden ska vara <em>ReadOnly</em> för vanliga användare, måste minst en administratör tilldelas rollen <strong>Owner</strong> för feeden så att hen kan hantera den.</p>\n<p>För att lägga till en användare som Owner via Takservern:</p>\n<ol>\n<li>Ställ missionens <strong>defaultRole</strong> tillfälligt till <strong>Owner</strong></li>\n<li>Be användaren att prenumerera på feeden → användaren får Owner-rättigheter</li>\n<li>När alla nödvändiga användare har rätt roll kan du återställa <em>defaultRole</em> till önskat läge</li>\n</ol>\n<p><strong>Owner-användare kan i Data Sync-tillägget:</strong></p>\n<ul>\n<li>ändra andra användares roller</li>\n<li>hantera användare genom att bjuda in dem till missionen eller ta bort dem</li>\n</ul>\n<p>Rolländring görs i feedens inställningar under <strong>Active Members</strong>, via nyckelikonen.</p>\n<p><img src=\"/content/images/sv/attachments/b49066f9459187ed.webp\" alt=\"\" title=\" =602x1073\"> <img src=\"/content/images/sv/attachments/ecc18a14361c6156.webp\" alt=\"\" title=\" =1080x1981\"></p>\n<p>\\</p>"
+    }
+  ]
+}

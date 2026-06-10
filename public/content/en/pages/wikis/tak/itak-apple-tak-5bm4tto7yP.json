@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "id": "031ffba0-bdfe-4736-ab7b-284b742aca55",
+  "slug": "itak-apple-tak-5bm4tto7yP",
+  "collection": "wikis/tak",
+  "locale": "en",
+  "title": "iTAK - Apple TAK",
+  "breadcrumb": [
+    "TAK Products for Users",
+    "iTAK - Apple TAK"
+  ],
+  "createdAt": "2025-09-07T00:14:34.105Z",
+  "updatedAt": "2026-02-19T13:14:05.546Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Available from:",
+      "id": "available-from"
+    },
+    {
+      "depth": 2,
+      "text": "Product description",
+      "id": "product-description"
+    },
+    {
+      "depth": 3,
+      "text": "iTAK capabilities include:",
+      "id": "itak-capabilities-include"
+    },
+    {
+      "depth": 3,
+      "text": "System Requirements",
+      "id": "system-requirements"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "src": "/content/images/en/attachments/ad41f3915303b0ea.webp",
+      "alt": "",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "type": "image",
+      "src": "/content/images/en/attachments/be8344190b433dbf.webp",
+      "alt": "",
+      "width": 643,
+      "height": 297
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"available-from\"><a href=\"#available-from\">Available from:</a></h2>\n<p><a href=\"https://apps.apple.com/fi/app/itak/id1561656396\" target=\"_blank\" rel=\"noopener noreferrer\">https://apps.apple.com/fi/app/itak/id1561656396</a></p>\n<h2 id=\"product-description\"><a href=\"#product-description\">Product description</a></h2>\n<p>Compatible with ALL TAK ecosystem (TAK server, WinTAK, ATAK, WebTAK)</p>\n<p>The Team Awareness Kit (TAK) (known as the Tactical Assault Kit in the Department of Defense) application:</p>\n<p>iTAK is a collaborative geospatial application to see your teams' locations, sensor information, videos, chat, and more in real-time. iTAK supports Department of Defense (DoD) and commercial sector standards for icons, sensor information, and communication. Data can be pre-loaded into iTAK or downloaded from the network (via TAK Server) when available.</p>\n<h3 id=\"itak-capabilities-include\"><a href=\"#itak-capabilities-include\">iTAK capabilities include:</a></h3>\n<p>• Online and offline mapping (most standard formats), download the maps right in the app</p>\n<p>• Blue force / team tracking (BFT)</p>\n<p>• Collaborative mapping, including points, drawings, locations of interest</p>\n<p>• Import and display of KML, KMZ, GeoPDF overlays</p>\n<p>• Location marking, sharing, with photo tagging</p>\n<p>• Chat, file sharing, photo sharing</p>\n<p>• Live video streaming with the ability to share video links</p>\n<p>• Spotted map to mark and share multiple locations across your map</p>\n<p>• Digital pointer to rapidly mark and share items on the map with your team</p>\n<p>• Navigation-walking/hiking, driving, also useful flying and air-ground coordination</p>\n<p>• Center on self or other objects (e.g. another person in the network)</p>\n<p>• Range, bearing measurement tools</p>\n<p>• Team Emergency Beacons</p>\n<p>• Customizable toolbar</p>\n<p>• 3D perspective</p>\n<p>• All data is secured and fully compatibility with the TAK ecosystem (ATAK, TAK Server, WinTAK)</p>\n<p>• Useful for law enforcement, first responders, hunting, fishing, ornithology, wildlife site survey</p>\n<h3 id=\"system-requirements\"><a href=\"#system-requirements\">System Requirements</a></h3>\n<p>Operating System: iOS version 17 and later.</p>"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "id": "24203b60-7d9e-40a8-b9cb-f62cda5c7c8f",
+  "slug": "perus-kayttoliittyma-2HXcY5vRCG",
+  "collection": "wikis/tak",
+  "locale": "fi",
+  "title": "Perus Käyttöliittymä",
+  "breadcrumb": [
+    "TAK Pääkäyttäjä Työkalut",
+    "Takserveri",
+    "Perus Käyttöliittymä"
+  ],
+  "createdAt": "2025-12-08T01:59:41.899Z",
+  "updatedAt": "2026-02-19T13:42:53.477Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Takserverin käyttöliittymä löytyy osoitteesta <strong>tak.server.fi</strong> Deploy App-ympäristössä.</p>"
+    },
+    {
+      "type": "image",
+      "src": "/content/images/fi/attachments/56afd4959eea68c5.webp",
+      "alt": "",
+      "width": 3772,
+      "height": 2121
+    },
+    {
+      "type": "html",
+      "html": "<p>Oikeassa reunassa olevan pudotusvalikon kautta löytyvät kaikki toiminnot, ja aivan valikon lopusta löytyy virallinen <strong>tak.gov-dokumentaatio</strong>, kohdassa <em>\"Documentation\"</em>.</p>"
+    },
+    {
+      "type": "image",
+      "src": "/content/images/fi/attachments/3dd9d3a9a81b066e.webp",
+      "alt": "",
+      "width": 382,
+      "height": 1908
+    },
+    {
+      "type": "html",
+      "html": "<p>\\</p>\n<p>\\</p>"
+    }
+  ]
+}

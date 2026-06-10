@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "label": "MTX Wiki",
+  "slug": "wikis/mtx",
+  "items": [
+    {
+      "type": "doc",
+      "id": "mika-on-mtx-2htQJ88VC2",
+      "label": "Mikä on MTX",
+      "slug": "mika-on-mtx-2htQJ88VC2"
+    },
+    {
+      "type": "doc",
+      "id": "striimin-lahettaminen-ja-katsominen-zIp4nbcTrF",
+      "label": "Striimin lähettäminen ja katsominen",
+      "slug": "striimin-lahettaminen-ja-katsominen-zIp4nbcTrF"
+    },
+    {
+      "type": "group",
+      "id": "tyokalut-EbDYHhpQYw",
+      "label": "Työkalut",
+      "children": [
+        {
+          "type": "doc",
+          "id": "tyokalut-EbDYHhpQYw",
+          "label": "Työkalut",
+          "slug": "tyokalut-EbDYHhpQYw"
+        },
+        {
+          "type": "doc",
+          "id": "opentak-icu-8GEhKJ6UDH",
+          "label": "Opentak ICU",
+          "slug": "opentak-icu-8GEhKJ6UDH"
+        },
+        {
+          "type": "doc",
+          "id": "uas-tool-striimaus-7enOQTR7tf",
+          "label": "UAS Tool Striimaus",
+          "slug": "uas-tool-striimaus-7enOQTR7tf"
+        }
+      ]
+    }
+  ]
+}

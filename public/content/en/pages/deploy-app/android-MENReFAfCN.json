@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "356a70b8-4ac4-470f-ae30-9a4249c7f989",
+  "slug": "android-MENReFAfCN",
+  "collection": "deploy-app",
+  "locale": "en",
+  "title": "Android",
+  "breadcrumb": [
+    "Android"
+  ],
+  "createdAt": "2025-12-06T09:43:41.677Z",
+  "updatedAt": "2026-02-24T06:18:22.658Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>(this tab should not be shown)</p>"
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "id": "c21661e8-f4e5-4d29-8be5-071debdf2917",
+  "slug": "tak-tracker-latt-tak-android-och-apple-Ldi7s2rHHY",
+  "collection": "wikis/tak",
+  "locale": "sv",
+  "title": "TAK Tracker – Lätt TAK — Android och Apple",
+  "breadcrumb": [
+    "TAK-produkter för Användare",
+    "TAK Tracker – Lätt TAK — Android och Apple"
+  ],
+  "createdAt": "2025-12-08T03:03:37.278Z",
+  "updatedAt": "2026-02-19T13:19:35.175Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Produkt Tillgänglig",
+      "id": "produkt-tillgänglig"
+    },
+    {
+      "depth": 2,
+      "text": "Användarhandbok",
+      "id": "användarhandbok"
+    },
+    {
+      "depth": 2,
+      "text": "Produktbeskrivning",
+      "id": "produktbeskrivning"
+    },
+    {
+      "depth": 2,
+      "text": "Produkt Tillgänglig",
+      "id": "produkt-tillgänglig"
+    },
+    {
+      "depth": 2,
+      "text": "Produktbeskrivning",
+      "id": "produktbeskrivning"
+    },
+    {
+      "depth": 2,
+      "text": "TAK Tracker innehåller följande funktioner",
+      "id": "tak-tracker-innehåller-följande-funktioner"
+    },
+    {
+      "depth": 2,
+      "text": "Kommande i nästa version",
+      "id": "kommande-i-nästa-version"
+    },
+    {
+      "depth": 2,
+      "text": "Systemkrav",
+      "id": "systemkrav"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "src": "/content/images/sv/attachments/8d5d065c3a7b66c6.webp",
+      "alt": "",
+      "caption": "=225x",
+      "width": 225,
+      "height": 225
+    },
+    {
+      "type": "html",
+      "html": "<p>En lätt lokaliseringsapp för TAK-miljön. Tillgänglig i Android- och iOS-versioner.</p>\n<h1 id=\"android-versionen\"><a href=\"#android-versionen\">Android-versionen</a></h1>"
+    },
+    {
+      "type": "image",
+      "src": "/content/images/sv/attachments/762b4dfb8f6098ed.webp",
+      "alt": "",
+      "caption": "=2220x",
+      "width": 2220,
+      "height": 1080
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"produkt-tillgänglig\"><a href=\"#produkt-tillgänglig\">Produkt Tillgänglig</a></h2>\n<p><a href=\"https://tak.gov/products/tak-tracker\" target=\"_blank\" rel=\"noopener noreferrer\">https://tak.gov/products/tak-tracker</a></p>\n<p><a href=\"https://play.google.com/store/search?q=tak%20tracker&#x26;c=apps\" target=\"_blank\" rel=\"noopener noreferrer\">https://play.google.com/store/search?q=tak%20tracker&#x26;c=apps</a></p>\n<h2 id=\"användarhandbok\"><a href=\"#användarhandbok\">Användarhandbok</a></h2>"
+    },
+    {
+      "type": "pdf",
+      "src": "attachments/827f0892-ac29-4730-892e-5761cc12a82a.pdf",
+      "title": "ATAK TAK Tracker App User Guide 4.6.1.pdf"
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"produktbeskrivning\"><a href=\"#produktbeskrivning\"><strong>Produktbeskrivning</strong></a></h2>\n<p>TAK Tracker är en lätt, fristående Android-app som skickar positionsdata till TAK Server. Den stöder även chatt- och nödsignalsmeddelanden.</p>\n<p>TAK Tracker är ett fristående tillägg avsett för att spåra användare i TAK-miljön när de inte har ATAK installerat. ATAK- och WinTAK-användare som är registrerade på samma server kan se TAK Tracker-användarnas markeringar på sina kartor. När man väljer en användarmarkering visas enhetens hastighet, färdriktning, höjd och positionsinformation.</p>\n<h1 id=\"ios-versionen\"><a href=\"#ios-versionen\">iOS-versionen</a></h1>"
+    },
+    {
+      "type": "image",
+      "src": "/content/images/sv/attachments/5ebef74498d0cdcf.webp",
+      "alt": "",
+      "caption": "=643x",
+      "width": 643,
+      "height": 297
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"produkt-tillgänglig\"><a href=\"#produkt-tillgänglig\">Produkt Tillgänglig</a></h2>\n<p><a href=\"https://apps.apple.com/us/app/tak-tracker/id6455684671\" target=\"_blank\" rel=\"noopener noreferrer\">https://apps.apple.com/us/app/tak-tracker/id6455684671</a></p>\n<h2 id=\"produktbeskrivning\"><a href=\"#produktbeskrivning\"><strong>Produktbeskrivning</strong></a></h2>\n<p>Team Awareness Kit (TAK) Tracker (känd inom USA:s försvarsdepartement som Tactical Assault Kit) är en lättviktig app med endast sändningsfunktion, avsedd att enkelt integreras i befintliga utbildnings- och operativa arbetsflöden. Appen är byggd från grunden för iOS och ansluter till dina TAK-servrar via datapaket eller certifikatregistrering. TAK Tracker kan även sända sin data i lokala nätverk på samma sätt som andra TAK-appar.</p>\n<h2 id=\"tak-tracker-innehåller-följande-funktioner\"><a href=\"#tak-tracker-innehåller-följande-funktioner\"><strong>TAK Tracker innehåller följande funktioner</strong></a></h2>\n<ul>\n<li>Fullt stöd för datapaket och certifikatregistrering</li>\n<li>Sändning av positions- / CoT-data via UDP</li>\n<li>Nödsignalsfunktioner</li>\n<li>Stöd för standard-, hybrid- och 3D-kartor</li>\n<li>Möjlighet att byta alla måttenheter, inklusive MGRS</li>\n<li>Fullt stöd för kontinuerlig bakgrundsdrift med låg energiförbrukning</li>\n</ul>\n<h2 id=\"kommande-i-nästa-version\"><a href=\"#kommande-i-nästa-version\"><strong>Kommande i nästa version</strong></a></h2>\n<ul>\n<li>Stöd för TAK-chatt</li>\n<li>Grupp- / kanalstöd</li>\n<li>QR-kodsregistrering</li>\n</ul>\n<h2 id=\"systemkrav\"><a href=\"#systemkrav\"><strong>Systemkrav</strong></a></h2>\n<ul>\n<li>Stöder iOS 15.4 och senare</li>\n</ul>"
+    }
+  ]
+}

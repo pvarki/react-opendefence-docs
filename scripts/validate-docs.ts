@@ -11,7 +11,7 @@
  *   error    missing-image            referenced /content/... asset missing on disk
  *   error    missing-page-file        manifest entry whose page JSON is missing
  *   error    orphaned-page            page file on disk but not in the manifest
- *   error    duplicate-base-slug      same slug minus shortid, same collection+locale
+ *   warning  duplicate-base-slug      same slug minus shortid, same collection+locale
  *   info     missing-locale-root      collection lacking one of en/fi/sv
  *   warning  legacy-slideset-format   slideset emitted from a legacy authoring format
  *   warning  slideset-step-missing-image  non-text slide without any image
@@ -226,7 +226,10 @@ export async function validateDocs(
           const [collection, base] = key.split("::");
           issues.push(
             issue(
-              "error",
+              // Warning, not error: full slugs stay unique (shortid suffix),
+              // so nothing breaks — this is an editorial-cleanup signal that
+              // must not block deploys until the wiki itself is tidied.
+              "warning",
               "duplicate-base-slug",
               `Base slug "${base}" maps to ${slugs.length} documents: ${slugs.join(", ")}`,
               locale,

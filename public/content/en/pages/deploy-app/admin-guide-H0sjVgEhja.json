@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "20c5c9af-8980-431a-8ec5-9f6d408b93b3",
+  "slug": "admin-guide-H0sjVgEhja",
+  "collection": "deploy-app",
+  "locale": "en",
+  "title": "Admin Guide",
+  "breadcrumb": [
+    "iOS",
+    "Admin Guide"
+  ],
+  "createdAt": "2026-01-23T20:07:59.900Z",
+  "updatedAt": "2026-01-23T20:07:59.900Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>(This tab should not be shown)</p>"
+    }
+  ]
+}

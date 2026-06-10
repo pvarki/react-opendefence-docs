@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "01ff4f55-d305-473e-a24c-1c3bcc5b07a7",
+  "slug": "edit-recon-feed-B7h9QJzZVd",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "Edit RECON feed",
+  "breadcrumb": [
+    "TAK Clients",
+    "WinTAK",
+    "Usage by Role",
+    "Command Post",
+    "Edit RECON feed"
+  ],
+  "createdAt": "2026-02-22T09:36:24.092Z",
+  "updatedAt": "2026-02-22T10:28:06.673Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>When you are using WinTAK, you are very likely a command post / HQ user. As a command post user, your responsibility is to define how a pre-created RECON feed is used and then do the needed configurations to the feed.</p>\n<p>An automatically created RECON feed's default role is subscriber, which means that all users have both write and read access to the feed. Because the feed is automatically created, there is no real owner assigned to it.</p>\n<p>If you need to change the default user role, for example to read-only, you have to use the following instructions to make changes to roles.</p>\n<p>Instructions on how to edit user rights can be found here <a href=\"/doc/e78ab753-1ada-4cd2-a69c-86a42742c6af\">Mission Manager (Data Sync)</a></p>"
+    }
+  ]
+}

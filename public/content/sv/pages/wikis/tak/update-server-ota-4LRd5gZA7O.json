@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "id": "601cabae-060e-4b9a-877a-c4c0ab48fcd5",
+  "slug": "update-server-ota-4LRd5gZA7O",
+  "collection": "wikis/tak",
+  "locale": "sv",
+  "title": "Update Server (OTA)",
+  "breadcrumb": [
+    "TAK-verktyg för Huvudadministratörer",
+    "Takserver",
+    "Update Server (OTA)"
+  ],
+  "createdAt": "2025-12-08T03:03:35.833Z",
+  "updatedAt": "2026-02-19T13:44:05.587Z",
+  "headings": [
+    {
+      "depth": 3,
+      "text": "Nuvarande metod för att hantera tillägg i Deploy App-miljön",
+      "id": "nuvarande-metod-för-att-hantera-tillägg-i-deploy-app-miljön"
+    },
+    {
+      "depth": 3,
+      "text": "Filer som behövs för Update-katalogen",
+      "id": "filer-som-behövs-för-update-katalogen"
+    },
+    {
+      "depth": 3,
+      "text": "Framtidsplan (preliminär)",
+      "id": "framtidsplan-preliminär"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Takserver har en funktion som gör det möjligt att tillhandahålla uppdateringar för ATAK-appar och tillägg via takserveranslutningen. När användare är anslutna till takservern och tjänsten är aktiverad kan de uppdatera och installera appar och tillägg via <strong>Plugins Tools (TAK Package Mgmt)</strong>.</p>\n<p>För närvarande erbjuder <strong>PVARKI</strong> följande paket för installation och uppdatering:</p>\n<ul>\n<li><strong>ATAK-applikationen</strong></li>\n<li><strong>Data Sync-tillägget</strong></li>\n</ul>\n<p>En portal planeras där administratörer skulle kunna uppdatera, lägga till och ta bort .apk-filer som distribueras till klienter, men denna funktion har ännu ingen tidsplan. <a href=\"/doc/69aa0a8f-4443-4727-b37a-51ab64149b0b\">Lisäosa listaus</a>.</p>\n<h3 id=\"nuvarande-metod-för-att-hantera-tillägg-i-deploy-app-miljön\"><a href=\"#nuvarande-metod-för-att-hantera-tillägg-i-deploy-app-miljön\"><strong>Nuvarande metod för att hantera tillägg i Deploy App-miljön</strong></a></h3>\n<p>Administratören behöver SSH root-behörighet till servern!</p>\n<p>Lägg .apk-filerna i katalogen <code>/tmp/update</code> och kör kommandot <code>taktool pp</code> i den katalogen. Flytta sedan den skapade mappen till rätt plats och justera rättigheterna.</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#E06C75\">cd</span><span style=\"color:#56B6C2\"> /</span><span style=\"color:#E06C75\">tmp</span><span style=\"color:#56B6C2\">/</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">taktool</span><span style=\"color:#E06C75\"> pp</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">sudo</span><span style=\"color:#E06C75\"> cp</span><span style=\"color:#56B6C2\"> -</span><span style=\"color:#E06C75\">r</span><span style=\"color:#E06C75\"> update</span><span style=\"color:#56B6C2\"> /</span><span style=\"color:#E06C75\">opt</span><span style=\"color:#56B6C2\">/</span><span style=\"color:#E06C75\">docker</span><span style=\"color:#56B6C2\">-</span><span style=\"color:#E06C75\">rasenmaeher</span><span style=\"color:#56B6C2\">-</span><span style=\"color:#E06C75\">integration</span><span style=\"color:#56B6C2\">/</span><span style=\"color:#E06C75\">takserver</span><span style=\"color:#56B6C2\">/</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">sudo</span><span style=\"color:#E06C75\"> chmod</span><span style=\"color:#D19A66\"> 755</span><span style=\"color:#56B6C2\"> /</span><span style=\"color:#E06C75\">opt</span><span style=\"color:#56B6C2\">/</span><span style=\"color:#E06C75\">docker</span><span style=\"color:#56B6C2\">-</span><span style=\"color:#E06C75\">rasenmaeher</span><span style=\"color:#56B6C2\">-</span><span style=\"color:#E06C75\">integration</span><span style=\"color:#56B6C2\">/</span><span style=\"color:#E06C75\">takserver</span><span style=\"color:#56B6C2\">/</span><span style=\"color:#E06C75\">update</span><span style=\"color:#56B6C2\"> -</span><span style=\"color:#E5C07B\">R</span></span></code></pre>",
+      "lang": "javascript"
+    },
+    {
+      "type": "html",
+      "html": "<p>Starta om takserver-instansen i Deploy App-miljön.</p>\n<h3 id=\"filer-som-behövs-för-update-katalogen\"><a href=\"#filer-som-behövs-för-update-katalogen\"><strong>Filer som behövs för Update-katalogen</strong></a></h3>\n<ul>\n<li><strong>APK-filer</strong></li>\n<li><strong>product.infz</strong>\n<ul>\n<li>ett zip-paket som innehåller <strong>product.inf</strong> samt ikonfiler för apk-paketet</li>\n</ul>\n</li>\n</ul>\n<h3 id=\"framtidsplan-preliminär\"><a href=\"#framtidsplan-preliminär\"><strong>Framtidsplan (preliminär)</strong></a></h3>\n<p>Den nuvarande idén är att skapa en webbsida i Rasenmäher där man kan hantera .apk-filer och ladda upp nya vid behov.</p>\n<p>Som en del av detta:</p>\n<ul>\n<li><strong>taktool</strong> skulle integreras i sidan</li>\n<li>ändringar i .apk-filer skulle automatiskt starta taktool, eller så skulle systemet be administratören att köra det</li>\n</ul>\n<p>Målet är att förenkla hanteringen och eliminera behovet av direkta SSH root-anslutningar i framtiden.</p>"
+    }
+  ]
+}

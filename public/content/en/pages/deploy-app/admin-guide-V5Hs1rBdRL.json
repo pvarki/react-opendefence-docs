@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "3d2e1e68-dcdc-4e50-b182-2da28816a36c",
+  "slug": "admin-guide-V5Hs1rBdRL",
+  "collection": "deploy-app",
+  "locale": "en",
+  "title": "Admin Guide",
+  "breadcrumb": [
+    "Android",
+    "Admin Guide"
+  ],
+  "createdAt": "2026-01-23T19:05:27.208Z",
+  "updatedAt": "2026-01-23T19:37:19.427Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>(This tab should not be shown)</p>"
+    }
+  ]
+}

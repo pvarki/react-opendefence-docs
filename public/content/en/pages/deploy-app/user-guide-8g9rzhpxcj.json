@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "ca191705-b936-4718-8fdc-6c575df29c7e",
+  "slug": "user-guide-8g9rzhpxcj",
+  "collection": "deploy-app",
+  "locale": "en",
+  "title": "User Guide",
+  "breadcrumb": [
+    "iOS",
+    "User Guide"
+  ],
+  "createdAt": "2026-01-23T20:08:10.242Z",
+  "updatedAt": "2026-02-17T16:45:30.446Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>(This tab should not be shown)</p>"
+    }
+  ]
+}

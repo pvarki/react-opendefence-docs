@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "ba59cab5-9f1f-40ba-af80-da525f8ff8bd",
+  "slug": "tools-and-functions-Wak49eEupd",
+  "collection": "wikis/tak",
+  "locale": "en",
+  "title": "Tools and functions",
+  "breadcrumb": [
+    "TAK Products for Users",
+    "WinTAK - Windows TAK",
+    "Tools and functions"
+  ],
+  "createdAt": "2025-09-14T14:47:42.863Z",
+  "updatedAt": "2026-02-19T13:25:34.938Z",
+  "headings": [
+    {
+      "depth": 3,
+      "text": "Basic tools:",
+      "id": "basic-tools"
+    },
+    {
+      "depth": 3,
+      "text": "Plugins",
+      "id": "plugins"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>WinTAK comprises of tools and plugins. Tools are included in WinTAK and are the basis of everything that is done inside WinTAK. Plugins are additions on top of the included tools.</p>\n<h3 id=\"basic-tools\"><a href=\"#basic-tools\">Basic tools:</a></h3>\n<p><a href=\"/doc/9d111355-07d3-411a-90b3-33c5c560a1e6\">Contacts / GeoChat tool</a></p>\n<h3 id=\"plugins\"><a href=\"#plugins\">Plugins</a></h3>\n<p><a href=\"/doc/1b678546-43f3-4641-aacd-9c031cab7439\">Data Sync -plugin</a></p>\n<p><a href=\"/doc/4f3fd3c2-b03c-4ecb-9fc9-87177e07dcbb\">TAK Replay -plugin</a></p>\n<p><a href=\"/doc/079e0f1f-6917-4a68-b5cc-b8527300afaf\">VNS -plugin</a></p>\n<p>\\n</p>"
+    }
+  ]
+}

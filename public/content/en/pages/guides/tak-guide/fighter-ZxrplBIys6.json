@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "d14105c6-34af-4000-befa-a15acfb7b187",
+  "slug": "fighter-ZxrplBIys6",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "Fighter",
+  "breadcrumb": [
+    "TAK Clients",
+    "WinTAK",
+    "Usage by Role",
+    "Fighter"
+  ],
+  "createdAt": "2025-12-05T22:05:58.759Z",
+  "updatedAt": "2026-02-21T14:24:08.912Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>(This tab should not be shown)</p>"
+    }
+  ]
+}

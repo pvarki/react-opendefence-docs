@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "92558ed4-a1f0-47f8-9cfd-270335b52b62",
+  "slug": "plugin-list-9AXN24oAyB",
+  "collection": "wikis/tak",
+  "locale": "en",
+  "title": "Plugin list",
+  "breadcrumb": [
+    "TAK Products for Users",
+    "WinTAK - Windows TAK",
+    "Plugin list"
+  ],
+  "createdAt": "2025-09-14T14:57:05.155Z",
+  "updatedAt": "2026-02-19T13:24:14.965Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Data Sync</p>\n<p>GRG Builder</p>\n<p>Reports</p>\n<p>TAK Chat</p>\n<p>TAK Replay</p>\n<p>VNS (Vehicle Navigation System)</p>"
+    }
+  ]
+}

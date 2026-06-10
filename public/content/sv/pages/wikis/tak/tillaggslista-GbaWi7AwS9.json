@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "7d0cd7b7-9b27-4946-8ca7-9f4fada46b43",
+  "slug": "tillaggslista-GbaWi7AwS9",
+  "collection": "wikis/tak",
+  "locale": "sv",
+  "title": "Tilläggslista",
+  "breadcrumb": [
+    "TAK-produkter för Användare",
+    "WinTAK - Windows TAK",
+    "Tilläggslista"
+  ],
+  "createdAt": "2025-12-08T03:03:36.751Z",
+  "updatedAt": "2026-02-19T13:24:27.609Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Data Sync</p>\n<p>GRG Builder</p>\n<p>Reports</p>\n<p>TAK Chat</p>\n<p>TAK Replay</p>\n<p>VNS (Vehicle Navigation System)</p>"
+    }
+  ]
+}

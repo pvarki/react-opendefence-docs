@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "a3db4071-6a71-4189-a81a-31e028b72c2f",
+  "slug": "fighter-gUAGHKAtVV",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "Fighter",
+  "breadcrumb": [
+    "TAK Clients",
+    "TAK Tracker - Android",
+    "Usage by Role",
+    "Fighter"
+  ],
+  "createdAt": "2025-12-20T00:47:06.902Z",
+  "updatedAt": "2026-02-21T08:40:54.745Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>(This tab should not be shown)</p>"
+    }
+  ]
+}

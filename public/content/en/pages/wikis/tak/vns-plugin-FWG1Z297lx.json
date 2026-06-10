@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "39b95093-02df-4339-b20f-6c97f717bb36",
+  "slug": "vns-plugin-FWG1Z297lx",
+  "collection": "wikis/tak",
+  "locale": "en",
+  "title": "VNS -plugin",
+  "breadcrumb": [
+    "TAK Tools for Products",
+    "VNS -plugin"
+  ],
+  "createdAt": "2025-10-05T10:09:18.481Z",
+  "updatedAt": "2026-02-19T13:39:57.138Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "TAK Product pages for Plugin",
+      "id": "tak-product-pages-for-plugin"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "src": "/content/images/en/attachments/0aed24c4dd22ccae.webp",
+      "alt": "",
+      "width": 741,
+      "height": 754
+    },
+    {
+      "type": "html",
+      "html": "<p>The Vehicle Navigation System (VNS) plugin performs two major functions. The first is that it allows routes in TAK to be aligned to the road system. The second is that it feeds the Augmented Reality System-Navigation (ARES-N) application with vital information, such as the device's location, pertinent situational awareness markers, and turn-by-turn style driving directions.</p>\n<h2 id=\"tak-product-pages-for-plugin\"><a href=\"#tak-product-pages-for-plugin\">TAK Product pages for Plugin</a></h2>\n<ul>\n<li>WinTAK <a href=\"/doc/079e0f1f-6917-4a68-b5cc-b8527300afaf\">VNS -plugin</a></li>\n<li>ATAK <a href=\"/doc/c4818ab9-c30b-4a81-8abf-741761387f78\">VNS -plugin</a></li>\n</ul>"
+    }
+  ]
+}

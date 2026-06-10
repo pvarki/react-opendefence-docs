@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "b431891e-c96a-48c8-98bf-7d8d4dcc8bea",
+  "slug": "publicera-streamen-51x6awRSrH",
+  "collection": "guides/mtx-guide",
+  "locale": "sv",
+  "title": "Publicera streamen",
+  "breadcrumb": [
+    "Publicera streamen"
+  ],
+  "createdAt": "2025-12-06T09:14:54.459Z",
+  "updatedAt": "2026-04-11T21:50:11.663Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Instruktioner för streaming:",
+      "id": "instruktioner-för-streaming"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<h2 id=\"instruktioner-för-streaming\"><a href=\"#instruktioner-för-streaming\"><strong>Instruktioner för streaming:</strong></a></h2>\n<ul>\n<li><a href=\"/doc/4494b1af-609c-44be-95a1-42a18373a351\">GoPro</a></li>\n<li><a href=\"/doc/4ab66e9f-1ba6-4ef7-8f80-af6182ca28c6\">Opentak ICU - Automatisk metod</a></li>\n<li><a href=\"/doc/acf80736-b31c-47d8-9ee2-f17a0339d6b9\">Uastool</a></li>\n</ul>"
+    }
+  ]
+}

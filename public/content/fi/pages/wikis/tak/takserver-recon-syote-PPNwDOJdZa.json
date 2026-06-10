@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "id": "cd8f6cd0-34c0-49f3-bc55-8fe9113d62a3",
+  "slug": "takserver-recon-syote-PPNwDOJdZa",
+  "collection": "wikis/tak",
+  "locale": "fi",
+  "title": "Takserver RECON -syöte",
+  "breadcrumb": [
+    "Käyttömallit",
+    "PVARKI Standardi",
+    "Takserver RECON -syöte"
+  ],
+  "createdAt": "2025-12-07T23:46:15.338Z",
+  "updatedAt": "2026-02-20T06:13:32.023Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Mikä on RECON-syöte",
+      "id": "mikä-on-recon-syöte"
+    },
+    {
+      "depth": 2,
+      "text": "RECON-syötteen käyttö",
+      "id": "recon-syötteen-käyttö"
+    },
+    {
+      "depth": 2,
+      "text": "RECON-syötteen hallinta",
+      "id": "recon-syötteen-hallinta"
+    },
+    {
+      "depth": 2,
+      "text": "Käytettävät TAK-työkalut:",
+      "id": "käytettävät-tak-työkalut"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<h2 id=\"mikä-on-recon-syöte\"><a href=\"#mikä-on-recon-syöte\"><strong>Mikä on RECON-syöte</strong></a></h2>\n<p>Takserverin RECON-syöte on tarkoitettu tarkastetulle ja varmennetulle tiedustelulle ja havainnoille, jotka johto haluaa jakaa koko palvelimen käyttäjille.\\nRECON-syöte on tarkoitettu kaikkien palvelimen toiminta-alueella olevien tilaajaksi ja synkronoitavaksi. Sen päätarkoitus on jakaa välitöntä tietoa vihollisesta sekä tärkeää tietoa omista joukoista.</p>\n<p>RECON-syötteen perusasetuksena on jakaa se oletusryhmän käyttäjille, ja tilaajilla on luku- ja kirjoitusoikeudet. Ylläpitäjät voivat tehdä muutoksia, ja suurissa käyttäjäryhmissä RECON-syöte kannattaa asettaa useimmille käyttäjille vain lukuoikeudelliseksi ja antaa kirjoitusoikeudet komentohenkilöstölle, joka hallinnoi syötteen sisältöä.</p>\n<h2 id=\"recon-syötteen-käyttö\"><a href=\"#recon-syötteen-käyttö\"><strong>RECON-syötteen käyttö</strong></a></h2>\n<p>Jokaisen PVARKI-käyttäjän tulisi olla tilannut takserverin RECON-syöte ja pitää ilmoitukset päällä. RECON-syöte pitää käyttäjien tilannekuvan ajan tasalla omista ja vihollisjoukoista.</p>\n<p>Komentopaikan käyttäjät (esimerkiksi esikunta) ylläpitävät syötettä oman ryhmänsä tiedustelun, ystäväjoukkojen tuottaman tiedon sekä ylemmän tason RECON-syötteen avulla, mikäli he kuuluvat suurempaan organisaatioon. Komentopaikan käyttäjät poistavat vanhentuneet tiedot, päivittävät muuttuneet havainnot ja lisäävät varmennettuja tietoja syötteeseen.</p>\n<h2 id=\"recon-syötteen-hallinta\"><a href=\"#recon-syötteen-hallinta\"><strong>RECON-syötteen hallinta</strong></a></h2>\n<ul>\n<li><a href=\"/doc/5ac20941-fc2e-41aa-b98a-b3931d2e3383\">Mission Manager (Data Sync)</a></li>\n</ul>\n<h2 id=\"käytettävät-tak-työkalut\"><a href=\"#käytettävät-tak-työkalut\"><strong>Käytettävät TAK-työkalut:</strong></a></h2>\n<ul>\n<li><a href=\"/doc/c8fc27ed-ee98-4026-bb37-d4c797ad7a9a\">Data Sync -lisäosa</a></li>\n</ul>"
+    }
+  ]
+}

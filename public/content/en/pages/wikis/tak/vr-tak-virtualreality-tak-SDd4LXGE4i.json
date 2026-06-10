@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "104fc3cf-61b7-41e4-a5c7-2ec53922608f",
+  "slug": "vr-tak-virtualreality-tak-SDd4LXGE4i",
+  "collection": "wikis/tak",
+  "locale": "en",
+  "title": "VR-TAK - VirtualReality TAK",
+  "breadcrumb": [
+    "TAK Products for Users",
+    "VR-TAK - VirtualReality TAK"
+  ],
+  "createdAt": "2025-09-07T00:14:22.256Z",
+  "updatedAt": "2026-02-19T13:20:41.078Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Available from",
+      "id": "available-from"
+    },
+    {
+      "depth": 2,
+      "text": "Product manual",
+      "id": "product-manual"
+    },
+    {
+      "depth": 2,
+      "text": "Product Description",
+      "id": "product-description"
+    },
+    {
+      "depth": 3,
+      "text": "Dataset formats currently supported",
+      "id": "dataset-formats-currently-supported"
+    },
+    {
+      "depth": 2,
+      "text": "System Requirements",
+      "id": "system-requirements"
+    },
+    {
+      "depth": 3,
+      "text": "Hardware requirements",
+      "id": "hardware-requirements"
+    },
+    {
+      "depth": 3,
+      "text": "VR headsets supported",
+      "id": "vr-headsets-supported"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p><img src=\"/content/images/en/attachments/a7b97d37bfac4ece.webp\" alt=\"\" title=\" =720x688\"> <img src=\"/content/images/en/attachments/f2c2ddc91e208d09.webp\" alt=\"\" title=\" =1400x788\"></p>\n<h2 id=\"available-from\"><a href=\"#available-from\">Available from</a></h2>\n<p><a href=\"https://tak.gov/products/vr-tak\" target=\"_blank\" rel=\"noopener noreferrer\">https://tak.gov/products/vr-tak</a></p>\n<p><a href=\"https://github.com/TAK-Product-Center/VR\" target=\"_blank\" rel=\"noopener noreferrer\">https://github.com/TAK-Product-Center/VR</a></p>\n<h2 id=\"product-manual\"><a href=\"#product-manual\">Product manual</a></h2>"
+    },
+    {
+      "type": "pdf",
+      "src": "attachments/6a40cd38-adfb-45b0-9c50-92d81c96f6e2.pdf",
+      "title": "VR-TAK 5.5.1 Manual.pdf"
+    },
+    {
+      "type": "pdf",
+      "src": "attachments/7c2390f6-abe6-4024-b839-f2dcdc282d52.pdf",
+      "title": "VR-TAK 5.5.0 Manual.pdf"
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"product-description\"><a href=\"#product-description\"><strong>Product Description</strong></a></h2>\n<p>The VR-TAK development effort leverages virtual reality to create a virtual world capable of interacting with and manipulating data in the TAK ecosystem for mission planning and heads up augmented reality operation. The 3-D content, created by FMVto3D, can be viewed using: commercial virtual reality (VR) hardware, through a desktop using video game controllers/keyboard and mouse, or handheld on TAK devices. VR-TAK and FMVto3D software is government owned and operated, just like TAK. All necessary hardware/software is commercially available for less than $13k/kit, fits into a man-portable pelican case, and can be operated in austere environments.</p>\n<h3 id=\"dataset-formats-currently-supported\"><a href=\"#dataset-formats-currently-supported\"><strong>Dataset formats currently supported</strong></a></h3>\n<ul>\n<li>Terrain Elevation -DTED, Quantized Mesh, Mapbox</li>\n<li>3D Tile format (gltf, b3dm, glb, geojson (polygons only)</li>\n<li>Pointclouds (xyz, pts, txt, las, lax, e57)</li>\n<li>Several raw mesh formats such as OBJ, FBX, DAE (Collada), 3DS, BLEND, etc.</li>\n<li>Geo-tagged datasets from services such as BuckEye, Context Capture, FG3D, Hivemapper, CORE 3D, NearMap3D, PeARL, etc.</li>\n<li>KML/KMZ files</li>\n<li>Mapbox vector tiles</li>\n</ul>\n<h2 id=\"system-requirements\"><a href=\"#system-requirements\"><strong>System Requirements</strong></a></h2>\n<h3 id=\"hardware-requirements\"><a href=\"#hardware-requirements\"><strong>Hardware requirements</strong></a></h3>\n<ul>\n<li><strong>OS:</strong> Windows 10 or later</li>\n<li><strong>Processor:</strong> Intel Core i5-4590/AMD FX 8350 equivalent or better</li>\n<li><strong>Memory:</strong> 16 GB RAM minimum</li>\n<li><strong>Dedicated Graphics Card:</strong> NVIDIA GeForce GTX 970, AMD Radeon R9 290 equivalent or better</li>\n</ul>\n<h3 id=\"vr-headsets-supported\"><a href=\"#vr-headsets-supported\"><strong>VR headsets supported</strong></a></h3>\n<p>You do not need a VR headset to run VR-TAK, but in case you have one, these are the headsets we currently support:</p>\n<ul>\n<li>HTC VIVE, VIVE Pro, and Valve Index</li>\n<li>VIVE Cosmos requires VIVE software</li>\n<li>Oculus Rift S and S2</li>\n<li>Oculus Quest, Quest 2, and Quest 3</li>\n<li>Valve Index (SteamVR)</li>\n<li>Varjo (SteamVR)</li>\n</ul>"
+    }
+  ]
+}

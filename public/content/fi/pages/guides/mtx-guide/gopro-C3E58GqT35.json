@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 1,
+  "id": "1d937934-f557-4e02-b685-4f95e4ef6bbc",
+  "slug": "gopro-C3E58GqT35",
+  "collection": "guides/mtx-guide",
+  "locale": "fi",
+  "title": "GoPro",
+  "breadcrumb": [
+    "Julkaise Striimiä",
+    "GoPro"
+  ],
+  "createdAt": "2025-12-09T03:44:27.844Z",
+  "updatedAt": "2026-02-20T06:23:13.083Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "GoPro striimaus GoPro Quick sovelluksella",
+      "id": "gopro-striimaus-gopro-quick-sovelluksella"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<h2 id=\"gopro-striimaus-gopro-quick-sovelluksella\"><a href=\"#gopro-striimaus-gopro-quick-sovelluksella\">GoPro striimaus GoPro Quick sovelluksella</a></h2>"
+    },
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Avaa GoPRo Quick Sovellus",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Yhdistä GoPro-kameraasi</li>\n<li>Siirry kohtaan <strong>GoPro</strong> – Alavalikko</li>\n<li>Siirry kohtaan <strong>GoPro Settings</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/be731519f338ca01.webp",
+              "width": 1080,
+              "height": 2107
+            }
+          ]
+        },
+        {
+          "title": "GoPro Asetukset",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Siirry kohtaan <strong>Live Stream</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/655af611889d3dea.webp",
+              "width": 1080,
+              "height": 2107
+            }
+          ]
+        },
+        {
+          "title": "Set Up Live",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Siirry kohtaan <strong>Other/RTMP</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/362dbd9e09f7c19b.webp",
+              "width": 1080,
+              "height": 2107
+            }
+          ]
+        },
+        {
+          "title": "Stream to Other/RTMP 1",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Yhdistä Wi-Fi-verkkoon – <strong>Select a Wi-Fi Network</strong></li>\n<li>Syötä MTX:n antama RTMPS-osoite – <strong>Enter your RTMP URL</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/2501089abd2c3fe6.webp",
+              "width": 1080,
+              "height": 2107
+            }
+          ]
+        },
+        {
+          "title": "Stream to Other/RTMP 2",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Tarkista Wi-Fi-yhteys</li>\n<li>Tarkista stream-osoite</li>\n<li>Tarkista resoluutio</li>\n<li>Siirry kohtaan <strong>Continue</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/9642a60ab2fb99d5.webp",
+              "width": 1080,
+              "height": 2107
+            }
+          ]
+        },
+        {
+          "title": "Go Live",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Odota, että yhteys muodostuu</li>\n<li>Siirry kohtaan <strong>Go Live</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/8865398b3a5be967.webp",
+              "width": 1080,
+              "height": 2107
+            }
+          ]
+        },
+        {
+          "title": "Streaming Live",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Suoratoisto käynnissä</li>\n<li>Kun suoratoisto on valmis, lopeta painamalla <strong>Lopeta-nappi</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/8665eaf7f1f838f3.webp",
+              "width": 1080,
+              "height": 2107
+            }
+          ]
+        },
+        {
+          "title": "Osaat nyt striimata",
+          "layout": "text",
+          "html": "<ul>\n<li>Voit sulkea tämän oppaan.</li>\n</ul>",
+          "images": []
+        }
+      ]
+    },
+    {
+      "type": "html",
+      "html": "<p>Kun olet saanut striimin päälle, jatka osioon <a href=\"/doc/53f74fbb-29cf-4abe-b448-93c0ab9674b7\">Katso Striimiä</a></p>"
+    }
+  ]
+}

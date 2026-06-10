@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "9c34429c-7e17-4808-88d0-2554a44064c7",
+  "slug": "troubleshooting-TBvhuT5rIM",
+  "collection": "deploy-app",
+  "locale": "en",
+  "title": "Troubleshooting",
+  "breadcrumb": [
+    "Windows",
+    "Admin Guide",
+    "Troubleshooting"
+  ],
+  "createdAt": "2026-01-23T20:08:17.712Z",
+  "updatedAt": "2026-01-23T20:08:17.712Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<ul>\n<li>User Troubleshooting\n<ul>\n<li>MTLS Fail\n<ul>\n<li>Check Certificate</li>\n<li>Check Deploy App</li>\n<li>Check MTLS Error</li>\n</ul>\n</li>\n<li>PFX download fail\n<ul>\n<li>Re-Invite User with other Callsign (CallsingB)</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>"
+    }
+  ]
+}

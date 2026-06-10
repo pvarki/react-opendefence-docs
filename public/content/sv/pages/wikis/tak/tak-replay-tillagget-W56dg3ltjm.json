@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "id": "7e7e24a0-2173-46f8-ab17-f60cf82d3344",
+  "slug": "tak-replay-tillagget-W56dg3ltjm",
+  "collection": "wikis/tak",
+  "locale": "sv",
+  "title": "TAK Replay-tillägget",
+  "breadcrumb": [
+    "TAK-produkter för Användare",
+    "WinTAK - Windows TAK",
+    "Verktyg och tillägg",
+    "TAK Replay-tillägget"
+  ],
+  "createdAt": "2025-12-08T03:03:36.960Z",
+  "updatedAt": "2026-02-19T13:29:25.077Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Tilläggsbeskrivning",
+      "id": "tilläggsbeskrivning"
+    },
+    {
+      "depth": 3,
+      "text": "TAK Replay – användarhandbok för WinTAK",
+      "id": "tak-replay--användarhandbok-för-wintak"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "src": "/content/images/sv/attachments/aa2e72c8a045629f.webp",
+      "alt": "",
+      "caption": "=310x",
+      "width": 310,
+      "height": 310
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"tilläggsbeskrivning\"><a href=\"#tilläggsbeskrivning\"><strong>Tilläggsbeskrivning</strong></a></h2>\n<p>TAK Replay-tillägget gör det möjligt att spela in kart­händelser och chattmeddelanden i realtid för senare uppspelning. Inspelningsområdet kan anpassas baserat på zoomnivå och visningsområde. Varje inspelning kan spelas upp i <em>Timeline Viewer</em>, där användaren kan granska händelser antingen i realtid eller i förhöjd hastighet.</p>\n<p>Dessutom kan användare hämta och spara alla kittartade händelser och chattmeddelanden från TAK Server som inträffat under en tidsperiod som användaren själv definierar.</p>\n<h3 id=\"tak-replay--användarhandbok-för-wintak\"><a href=\"#tak-replay--användarhandbok-för-wintak\">TAK Replay – användarhandbok för WinTAK</a></h3>"
+    },
+    {
+      "type": "pdf",
+      "src": "attachments/95066010-7714-4928-be41-12d7684013a5.pdf",
+      "title": "WinTAK 5.5 TAK Replay User Guide.pdf"
+    }
+  ]
+}

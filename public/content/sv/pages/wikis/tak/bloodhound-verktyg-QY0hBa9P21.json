@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "d208938e-247c-435e-a893-d15122798a8c",
+  "slug": "bloodhound-verktyg-QY0hBa9P21",
+  "collection": "wikis/tak",
+  "locale": "sv",
+  "title": "Bloodhound-verktyg",
+  "breadcrumb": [
+    "TAK-verktyg för Produkter",
+    "Bloodhound-verktyg"
+  ],
+  "createdAt": "2025-12-08T03:03:36.444Z",
+  "updatedAt": "2026-02-19T13:32:41.197Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "TAK-produktsidor för verktyget",
+      "id": "tak-produktsidor-för-verktyget"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "src": "/content/images/sv/attachments/40aa9ed82f65b372.webp",
+      "alt": "",
+      "width": 121,
+      "height": 122
+    },
+    {
+      "type": "html",
+      "html": "<p>Bloodhound-verktyget erbjuder stöd för att följa och interceptera kartobjekt. Med det kan man välja två punkter på kartan och/eller kartobjekt, och det visar avstånds- och riktningsinformation mellan den valda följaren och målet.</p>\n<h2 id=\"tak-produktsidor-för-verktyget\"><a href=\"#tak-produktsidor-för-verktyget\">TAK-produktsidor för verktyget</a></h2>\n<ul>\n<li>ATAK <a href=\"/doc/8e6c7af5-cc60-4d10-9edf-b45545d5b122\">Bloodhound-työkalu</a></li>\n</ul>"
+    }
+  ]
+}

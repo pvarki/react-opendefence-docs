@@ -1,0 +1,179 @@
+{
+  "schemaVersion": 1,
+  "id": "04b28f7b-f48f-4361-b9c9-f777dee2ed00",
+  "slug": "load-atak-plugins-xBeVkYsFjI",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "Load ATAK Plugins",
+  "breadcrumb": [
+    "TAK Clients",
+    "ATAK",
+    "Start",
+    "Load ATAK Plugins"
+  ],
+  "createdAt": "2026-01-24T18:32:30.639Z",
+  "updatedAt": "2026-02-28T11:12:53.977Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Load ATAK Plugins",
+      "id": "load-atak-plugins"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>\\</p>\n<h1 id=\"atak---load-atak-plugins\"><a href=\"#atak---load-atak-plugins\">ATAK - Load ATAK Plugins</a></h1>\n<h2 id=\"load-atak-plugins\"><a href=\"#load-atak-plugins\">Load ATAK Plugins</a></h2>"
+    },
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Plugins",
+          "layout": "text",
+          "html": "<ul>\n<li>ATAK can supplied with various Plugins.</li>\n<li>Deploy App's TAK automatically serves you set of plugins that you need to Load upon starting up.</li>\n<li>Installing &#x26; loading need to be only done once.</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "1. Data Sync - Missing",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>The Data Sync plugin is the most important one. Data Sync Missing from toolbar - time to load it.</li>\n<li>First, select the hamburger menu.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/49e065be1c38ff46.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "2. Data Sync - Tools Menu",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Select Plugins.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/959670dee9b0050b.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "3. Data Sync - TAK Package Mgmt",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Tap Data Sync 'Not Installed' to open the installation dialog.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/73ffe372020899e4.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "4. Data Sync - Install Product Plugin",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Select OK on Installing Product Data Sync:</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/86500dea7e683f75.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "5. Data Sync - Permission to install",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Do you want to install this app?</li>\n<li>Select Install</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/3aa2c36d7d52db85.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "6. Data Sync - Permission missing 1",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>If you get notification that installing from unkown apps from ATAK isn't allowed:</li>\n<li>Select Settings</li>\n<li>Othervise, skip permission missing parts</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/8f122306b7c7489f.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "7. Data Sync - Permission missing 2",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Install unknown apps</li>\n<li>Allow permissions for ATAK</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/e9d640992c63039a.webp",
+              "width": 2256,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "8. Data Sync - Install",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Data Sync install infromation</li>\n<li>Select Install</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/98e4f0bfd6f70f83.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "9. Data Sync - Permission to install",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Do you want to install this app?</li>\n<li>Select Install</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/3aa2c36d7d52db85.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "10. Data Sync - Installed 1",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>App installed</li>\n<li>Select Done</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/1ddf34aa91adfc00.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "11. Data Sync - Installed 2",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Check Data Sync is Installed and Loaded</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/d76d8d18f5129d03.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "Load Other Plugins",
+          "layout": "text",
+          "html": "<ul>\n<li>Similarily, load other standard plugins:</li>\n<li>\n<ul>\n<li>OpenTAKICU: Video streaming georeferenced in TAK.</li>\n</ul>\n</li>\n<li>\n<ul>\n<li>TAK VNS: Use this instead of Google Maps for routing to destination.</li>\n</ul>\n</li>\n</ul>",
+          "images": []
+        }
+      ]
+    }
+  ]
+}

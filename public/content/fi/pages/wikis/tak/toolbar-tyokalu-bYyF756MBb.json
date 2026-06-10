@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "id": "45b7d57b-c7bd-40df-b904-067c392de70d",
+  "slug": "toolbar-tyokalu-bYyF756MBb",
+  "collection": "wikis/tak",
+  "locale": "fi",
+  "title": "Toolbar-työkalu",
+  "breadcrumb": [
+    "TAK Tuotteet Käyttäjille",
+    "ATAK - Android TAK",
+    "Työkalut ja lisäosat",
+    "Toolbar-työkalu"
+  ],
+  "createdAt": "2025-12-08T01:23:57.323Z",
+  "updatedAt": "2026-02-19T13:05:52.415Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Työkalun kuvaus",
+      "id": "työkalun-kuvaus"
+    },
+    {
+      "depth": 2,
+      "text": "Opastusvideot",
+      "id": "opastusvideot"
+    },
+    {
+      "depth": 2,
+      "text": "Toolbar -tool section from ATAK manual",
+      "id": "toolbar--tool-section-from-atak-manual"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "src": "/content/images/fi/attachments/9dfc62f372874a37.webp",
+      "alt": "",
+      "caption": "=224x",
+      "width": 224,
+      "height": 32
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"työkalun-kuvaus\"><a href=\"#työkalun-kuvaus\"><strong>Työkalun kuvaus</strong></a></h2>\n<p>ATAK-työkalupalkki on muokattavissa, mikä mahdollistaa useiden eri asettelujen luomisen ja niiden välillä nopean vaihtamisen tai muokkaamisen. Oletustyökalupalkissa on viisi työkalua, ja älypuhelimessa siihen voidaan lisätä kuudes työkalu. Tablet-laitteissa työkalupalkki voi sisältää jopa kymmenen työkalua.</p>\n<h2 id=\"opastusvideot\"><a href=\"#opastusvideot\">Opastusvideot</a></h2>\n<p>==YouTube==</p>\n<h2 id=\"toolbar--tool-section-from-atak-manual\"><a href=\"#toolbar--tool-section-from-atak-manual\">Toolbar -tool section from ATAK manual</a></h2>"
+    },
+    {
+      "type": "pdf",
+      "src": "attachments/d2fe9f9f-1383-4965-810a-90e94a209971.pdf",
+      "title": "ATAK 5.6 Toolbar.pdf"
+    }
+  ]
+}

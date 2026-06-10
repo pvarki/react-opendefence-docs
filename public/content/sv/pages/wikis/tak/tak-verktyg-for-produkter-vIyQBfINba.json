@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "8850e878-bcfc-4ef8-b24a-2f76bb769267",
+  "slug": "tak-verktyg-for-produkter-vIyQBfINba",
+  "collection": "wikis/tak",
+  "locale": "sv",
+  "title": "TAK-verktyg för Produkter",
+  "breadcrumb": [
+    "TAK-verktyg för Produkter"
+  ],
+  "createdAt": "2025-12-08T03:03:35.981Z",
+  "updatedAt": "2026-02-19T13:31:46.357Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "TAK-verktyg:",
+      "id": "tak-verktyg"
+    },
+    {
+      "depth": 2,
+      "text": "TAK-tillägg:",
+      "id": "tak-tillägg"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>TAK-produkternas funktioner är i huvudsak desamma mellan olika produkter (t.ex. ATAK, WinTAK), och vissa tillägg har utvecklats separat för olika produkter. Att funktionerna är enhetliga mellan produkterna underlättar ekosystemets sammanhållning genom lösningar som utnyttjar anslutningar mellan takservern och andra klientenheter.\\nTAK-verktyg är funktioner och verktyg som ingår i TAK-produkterna.\\nTAK-tillägg är utökningar av TAK-produkterna som utvecklats av tak.gov, programvaruföretag eller gemenskapen. De lägger till nya funktioner och/eller kombinerar flera inbyggda funktioner.</p>\n<h2 id=\"tak-verktyg\"><a href=\"#tak-verktyg\">TAK-verktyg:</a></h2>\n<ul>\n<li><a href=\"/doc/d208938e-247c-435e-a893-d15122798a8c\">Bloodhound-verktyg</a>\n<ul>\n<li>Verktyg för navigering från punkt till punkt.</li>\n</ul>\n</li>\n<li><a href=\"/doc/383780b6-443c-4ec5-8944-0b9475f863b7\">Contacts / GeoChat -verktyg</a>\n<ul>\n<li>Användarkontakter och chatt.</li>\n</ul>\n</li>\n<li><a href=\"/doc/f4fe9a34-1fd3-4c7a-9533-153bd4bcf540\">Point Dropper -verktyg</a>\n<ul>\n<li>Markering av intressanta platser på kartan.</li>\n</ul>\n</li>\n</ul>\n<h2 id=\"tak-tillägg\"><a href=\"#tak-tillägg\">TAK-tillägg:</a></h2>\n<ul>\n<li><a href=\"/doc/e07f23dc-142c-4b40-bf3a-a1c69857d5ef\">Data Sync -tillägg</a>\n<ul>\n<li>Deldning och synkronisering av data mellan användare.</li>\n</ul>\n</li>\n<li><a href=\"/doc/f0773fed-b8fc-4ea6-bbef-a226de8d7299\">TAK Replay -tillägg</a>\n<ul>\n<li>Inspelning av TAK-händelser på en tidslinje och uppspelning av händelser på kartan.</li>\n</ul>\n</li>\n<li><a href=\"/doc/de415c7f-b8bf-4dbc-beea-65848751165b\">UAS Tool -tillägg</a>\n<ul>\n<li>UAS-integrationsverktyg för TAK.</li>\n</ul>\n</li>\n<li><a href=\"/doc/3cdd17e2-6991-47be-aa50-6806dd1146fb\">VNS -tillägg</a>\n<ul>\n<li>Tillägg för navigationsdata i TAK.</li>\n</ul>\n</li>\n</ul>"
+    }
+  ]
+}

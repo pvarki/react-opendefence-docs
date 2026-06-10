@@ -1,0 +1,165 @@
+{
+  "schemaVersion": 1,
+  "id": "7df31ecb-1092-4d8c-9013-b168feec84ba",
+  "slug": "geofences-wgaLkSEvef",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "Geofences",
+  "breadcrumb": [
+    "TAK Clients",
+    "ATAK",
+    "Advanced Features",
+    "Geofences"
+  ],
+  "createdAt": "2025-12-05T22:06:22.040Z",
+  "updatedAt": "2026-02-28T11:13:55.810Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "ATAK connected to takserver - Geofences",
+      "id": "atak-connected-to-takserver---geofences"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>\\</p>\n<h1 id=\"atak---geofences---advanced-features\"><a href=\"#atak---geofences---advanced-features\">ATAK - Geofences - Advanced Features</a></h1>\n<h2 id=\"atak-connected-to-takserver---geofences\"><a href=\"#atak-connected-to-takserver---geofences\">ATAK connected to takserver - Geofences</a></h2>"
+    },
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Monitor with Geofences",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Geofences help you to monitor movement &#x26; events in certain areas.</li>\n<li>Start by drawing an area shape using the Drawing Tools</li>\n<li>Then select and tap the Geofence icon.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/fdd6bca67f66f7ff.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Which change should alert us?",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Tap the change selector to edit what change will alert us.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/cf66ed64a0387ce4.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Options on alerting",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Choose what suits your needs best.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/f8dff3c7200bab31.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "What items will alert?",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>What-something that appears in the geofence area, will draw an alert? Choose as you need.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/945a62013c9d842f.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Options: Set & Send",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>In case you want to send your new Geofence, do so using the usual recipient dialog.</li>\n<li>You can send to a Feed. The feed will auto invite users that triggers the Geofence.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/ca187847ce9848b9.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Review the Situation",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>From the main menu's Geofences tab, you can review all Fences in place.</li>\n<li>If the Geofences tab is not present in your menu, tap the yellow pen to find and activate it.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/d755dc29a4557507.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "List Geofences",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>You'll see the list of fences, their names and their status.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/1d4c4647354a2937.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Alert!",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>You'll get an alert of breach according to your configuration.</li>\n<li>List them in Geofences-> the fence in question.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/3b610c296faea346.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Review Alerts of your Fence",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>List alerts in the fence view. Press the trash bin to delete or disable the alert.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/3143b16ad62405e3.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Disable or Delete an Alert",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Choose and that's it!</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/6b6f03778686f4ab.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Done",
+          "layout": "text",
+          "html": "<ul>\n<li>You can close this guide.</li>\n</ul>",
+          "images": []
+        }
+      ]
+    },
+    {
+      "type": "html",
+      "html": "<p><br>\nAfter successful testing Geofences, continue to</p>"
+    }
+  ]
+}

@@ -1,0 +1,215 @@
+{
+  "schemaVersion": 1,
+  "id": "f5712226-1355-412a-9e28-ac127316cb30",
+  "slug": "deploy-app-matrix-ck6FccRX1P",
+  "collection": "guides/matrix-guide",
+  "locale": "en",
+  "title": "Deploy App - Matrix",
+  "breadcrumb": [
+    "Deploy App - Matrix"
+  ],
+  "createdAt": "2026-03-17T10:06:53.616Z",
+  "updatedAt": "2026-05-05T15:19:54.416Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Desktop (Windows / Linux / macOS), Element",
+      "id": "desktop-windows--linux--macos-element"
+    },
+    {
+      "depth": 2,
+      "text": "Mobile (Android / iOS), Element Classic",
+      "id": "mobile-android--ios-element-classic"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<h1 id=\"matrix-onboarding\"><a href=\"#matrix-onboarding\">Matrix Onboarding</a></h1>\n<h2 id=\"desktop-windows--linux--macos-element\"><a href=\"#desktop-windows--linux--macos-element\">Desktop (Windows / Linux / macOS), Element</a></h2>"
+    },
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Welcome to Matrix",
+          "layout": "image-left",
+          "html": "<ul>\n<li>This guide uses the Element application, but you can use any Matrix application.</li>\n<li>The steps are similar in other applications as well.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/f6e6d09fad12555f.webp",
+              "width": 1918,
+              "height": 1113
+            }
+          ]
+        },
+        {
+          "title": "Prerequisites",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Copy the home server address (1).</li>\n<li>You can return to this guide at any time from the bottom right corner (2).</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/0c280745f70c3109.webp",
+              "width": 6013,
+              "height": 3525
+            }
+          ]
+        },
+        {
+          "title": "Log in to Element 1/4",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Open Element and select <strong>Log in</strong>.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/176d53401560d2cd.webp",
+              "width": 6006,
+              "height": 3526
+            }
+          ]
+        },
+        {
+          "title": "Log in to Element 2/4",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Press <strong>Edit</strong> next to the home server address.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/914d737ead9c2ae6.webp",
+              "width": 6006,
+              "height": 3526
+            }
+          ]
+        },
+        {
+          "title": "Log in to Element 3/4",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Paste the server address you copied earlier.</li>\n<li>Press <strong>Continue</strong>.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/d8c643553c524f72.webp",
+              "width": 6006,
+              "height": 3526
+            }
+          ]
+        },
+        {
+          "title": "Log in to Element 4/4",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Press <strong>Continue with Keycloak</strong>.</li>\n<li>Continue in your browser, which should prompt for your mTLS certificate a few times.</li>\n<li>Authenticate with your mTLS certificate.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/50e8a81607a0db8f.webp",
+              "width": 6006,
+              "height": 3526
+            }
+          ]
+        },
+        {
+          "title": "Element home view",
+          "layout": "image-left",
+          "html": "<ul>\n<li>You are now logged in and can use Matrix.</li>\n<li>View or create <strong>Spaces</strong> from the sidebar (1).</li>\n<li>See and create direct messages from the left panel (2).</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/efc0411dc4e6b694.webp",
+              "width": 6013,
+              "height": 3525
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"mobile-android--ios-element-classic\"><a href=\"#mobile-android--ios-element-classic\">Mobile (Android / iOS), Element Classic</a></h2>"
+    },
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Welcome to Matrix",
+          "layout": "image-left",
+          "html": "<ul>\n<li>This guide uses the Element Classic application, but you can use almost any Matrix application.</li>\n<li>The steps are similar in other applications as well.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/f6e6d09fad12555f.webp",
+              "width": 1918,
+              "height": 1113
+            }
+          ]
+        },
+        {
+          "title": "Prerequisites",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Copy the home server address (1).</li>\n<li>You can return to this guide at any time from the bottom right corner (2).</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/0c280745f70c3109.webp",
+              "width": 6013,
+              "height": 3525
+            }
+          ]
+        },
+        {
+          "title": "Log in to Element Classic 1/4",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Open Element and select <strong>Sign in</strong>.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/4342fc307e466025.webp",
+              "width": 2880,
+              "height": 1820
+            }
+          ]
+        },
+        {
+          "title": "Log in to Element Classic 2/4",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Press <strong>Edit</strong> next to the home server address.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/c8abbfc6273a4721.webp",
+              "width": 2880,
+              "height": 1820
+            }
+          ]
+        },
+        {
+          "title": "Log in to Element Classic 3/4",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Paste the server address you copied earlier.</li>\n<li>Press <strong>Next</strong>.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/a6843e0d4bdcfba7.webp",
+              "width": 2880,
+              "height": 1820
+            }
+          ]
+        },
+        {
+          "title": "Log in to Element Classic 4/4",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Press <strong>Continue with Keycloak</strong>.</li>\n<li>Continue in your browser, which should prompt for your mTLS certificate.</li>\n<li>Authenticate with your mTLS certificate.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/09163f1812c75063.webp",
+              "width": 2880,
+              "height": 1820
+            }
+          ]
+        },
+        {
+          "title": "Element Classic home view",
+          "layout": "image-left",
+          "html": "<ul>\n<li>You are now logged in and can use Matrix.</li>\n<li>Search for users and rooms from the top right corner (1).</li>\n<li>Start a conversation from the bottom right corner (2).</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/efc0411dc4e6b694.webp",
+              "width": 6013,
+              "height": 3525
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

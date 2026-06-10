@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "ffec221e-3d44-43c7-a4d4-483ae0c03da8",
+  "slug": "browser-OODFuhucDG",
+  "collection": "guides/mtx-guide",
+  "locale": "en",
+  "title": "Browser",
+  "breadcrumb": [
+    "Watch Stream",
+    "Browser"
+  ],
+  "createdAt": "2025-12-06T01:03:30.576Z",
+  "updatedAt": "2026-02-21T13:54:18.538Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Watch stream with Browser via MTX.",
+      "id": "watch-stream-with-browser-via-mtx"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>(this tab should not be shown)</p>\n<p>— Waiting for new UI implementation —</p>\n<h2 id=\"watch-stream-with-browser-via-mtx\"><a href=\"#watch-stream-with-browser-via-mtx\">Watch stream with Browser via MTX.</a></h2>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"></span></code></pre>",
+      "lang": "markdown"
+    }
+  ]
+}

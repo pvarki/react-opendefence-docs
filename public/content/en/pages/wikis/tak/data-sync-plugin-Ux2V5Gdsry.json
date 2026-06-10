@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "7b0492b3-42b0-46d2-b2a9-ade55453f2f4",
+  "slug": "data-sync-plugin-Ux2V5Gdsry",
+  "collection": "wikis/tak",
+  "locale": "en",
+  "title": "Data Sync -plugin",
+  "breadcrumb": [
+    "TAK Products for Users",
+    "ATAK - Android TAK",
+    "Tools and functions",
+    "Data Sync -plugin"
+  ],
+  "createdAt": "2025-09-07T00:12:16.811Z",
+  "updatedAt": "2026-02-19T13:05:33.870Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Plugin Description",
+      "id": "plugin-description"
+    },
+    {
+      "depth": 2,
+      "text": "Instruction videos",
+      "id": "instruction-videos"
+    },
+    {
+      "depth": 2,
+      "text": "Data Sync Plugin manual for ATAK",
+      "id": "data-sync-plugin-manual-for-atak"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "src": "/content/images/en/attachments/5c6d780d65fe7f7b.webp",
+      "alt": "",
+      "width": 192,
+      "height": 192
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"plugin-description\"><a href=\"#plugin-description\"><strong>Plugin Description</strong></a></h2>\n<p>The Data Synchronization plug-in is used to synchronize multiple ATAK devices involved in the same exercise or event. This plug-in requires TAK Server 1.3.3+. TAK Server stores all data for a \"mission\" in a server side database. Clients may subscribe to a mission to receive dynamic updates when a mission changes, or to synchronize data missed while a given device was disconnected.</p>\n<p>The plug-in currently supports the following types of data:\\n• Map Items (CoT data) - including markers, shapes, routes, etc.\\n• Files - arbitrary files may be synchronized including images, GRGs, configuration files, etc.\\n• Logs - Mission or Recce logs are timestamped events associated with the mission\\n• Chat - A persistent mission chat room is associated with each mission</p>\n<p>Arbitrary CoT/UIDs may be associated with a mission so that any updates to that CoT will be automatically synchronized with all client subscribers. The plug-in allows the user to export an entire mission to a mission package (zip file) for archiving or sharing data with other systems. Provides a dead reckoning navigation capability in a denied environment.</p>\n<h2 id=\"instruction-videos\"><a href=\"#instruction-videos\">Instruction videos</a></h2>\n<h4 id=\"data-sync-plugin-for-atak-45min\"><a href=\"#data-sync-plugin-for-atak-45min\">Data Sync Plugin for ATAK (45min)</a></h4>"
+    },
+    {
+      "type": "youtube",
+      "videoId": "5c8Hh1Pk7t8"
+    },
+    {
+      "type": "html",
+      "html": "<h4 id=\"atak-data-sync-installation-and-subscription-tutorial-5min\"><a href=\"#atak-data-sync-installation-and-subscription-tutorial-5min\">ATAK Data Sync Installation and Subscription Tutorial (5min)</a></h4>"
+    },
+    {
+      "type": "youtube",
+      "videoId": "CGQ-JrTjaFM"
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"data-sync-plugin-manual-for-atak\"><a href=\"#data-sync-plugin-manual-for-atak\">Data Sync Plugin manual for ATAK</a></h2>"
+    },
+    {
+      "type": "pdf",
+      "src": "attachments/78413a2d-b46b-4349-98d0-a0d5cd87f903.pdf",
+      "title": "ATAK_5.5.0_Data_Sync_SUM.pdf"
+    }
+  ]
+}

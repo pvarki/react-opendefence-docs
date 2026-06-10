@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "label": "Matrix Guide",
+  "slug": "guides/matrix-guide",
+  "items": [
+    {
+      "type": "doc",
+      "id": "deploy-app-matrix-srCgmEoYC5",
+      "label": "Deploy App - Matrix",
+      "slug": "deploy-app-matrix-srCgmEoYC5"
+    }
+  ]
+}

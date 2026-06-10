@@ -1,0 +1,291 @@
+{
+  "schemaVersion": 1,
+  "id": "45a3e50c-b7c2-45d3-927d-bf2e2d97cbbf",
+  "slug": "start-from-download-bJC3Opax4P",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "Start from Download",
+  "breadcrumb": [
+    "TAK Clients",
+    "ATAK",
+    "Start",
+    "Start from Download"
+  ],
+  "createdAt": "2025-12-05T22:06:23.638Z",
+  "updatedAt": "2026-02-28T11:12:50.417Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Install and open ATAK for initialization",
+      "id": "install-and-open-atak-for-initialization"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>\\</p>\n<h2 id=\"install-and-open-atak-for-initialization\"><a href=\"#install-and-open-atak-for-initialization\">Install and open ATAK for initialization</a></h2>"
+    },
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Install ATAK from Playstore or APK",
+          "layout": "text",
+          "html": "<ul>\n<li>To start using ATAK, you need to install it from Google Play.</li>\n<li><a href=\"https://play.google.com/store/apps/details?id=com.atakmap.app.civ\" target=\"_blank\" rel=\"noopener noreferrer\">https://play.google.com/store/apps/details?id=com.atakmap.app.civ</a></li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "1. Open ATAK and give permissions",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Once installed, find the TAK icon and open the application</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/a2fe7303e7840f32.webp",
+              "width": 246,
+              "height": 246
+            }
+          ]
+        },
+        {
+          "title": "Permissions 1",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>EULA</li>\n<li>I agree</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/bb74b8a7832f37d2.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "Permissions 2",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Permission Rationale</li>\n<li>I understand</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/1b64bf072a4658a4.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "Permissions 3",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>ATAK take pictures or video</li>\n<li>While using the app</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/b5a9c08cc99a2a16.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "Permissions 4",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>ATAK access location</li>\n<li>Precise and While using app</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/a86c87be2b44ef64.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "Permissions 5",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>ATAK record audio</li>\n<li>While using the app</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/4a0e92d613797b57.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "Permissions 6",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>ATAK find nearby devices</li>\n<li>Allow</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/b534c325a40d6b0b.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "Permissions 7",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>ATAK send notifications</li>\n<li>Allow</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/75114a3236a0faa6.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "Permissions 8",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>ATAK make phone calls and manage calls</li>\n<li>Allow</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/3c25040084131abf.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "Permissions 9",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>ATAK access music and audio files</li>\n<li>Allow</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/5997b500b0595461.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "Permissions 10",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>ATAK access photos and videos</li>\n<li>Allow all</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/1ba90c6f48f42fb6.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "Permissions 11",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>ATAK use location on background</li>\n<li>I understand</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/847ccec2aa5a90c4.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "Permissions 12",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Android 11+ warning about location in background</li>\n<li>OK</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/e4d5d79829f2ebf2.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "Permissions 13",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Required missing permissions</li>\n<li>Read instructions and do the steps</li>\n<li>I understand</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/e25a3a66bee6fac7.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "Permissions 14",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>App info</li>\n<li>Permissions</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/ab2300beaeac7e85.webp",
+              "width": 2256,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Permissions 15",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>App permission</li>\n<li>Location</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/770b056e3d14d651.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "Permissions 16",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Location permission</li>\n<li>Allow all the time</li>\n<li>Return to ATAK</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/785e38231c71b974.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "Permissions 17",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>TAK Device Setup</li>\n<li>Close with done</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/b04353af5bd411fb.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "Permissions 18",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Disable battery optimization</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/1363c65a7b52cdd1.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "Permissions 19",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Stop optimizing battery usage</li>\n<li>Allow</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/a775d9a29860bff9.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "Permission are granted",
+          "layout": "text",
+          "html": "<ul>\n<li>Next up is to import a server contact.</li>\n</ul>",
+          "images": []
+        }
+      ]
+    },
+    {
+      "type": "html",
+      "html": "<p>After installation and initialization of ATAK continue to <a href=\"/doc/c8842f7a-f533-4bfe-9027-88f165d16ddb\">ATAK Already Installed</a></p>"
+    }
+  ]
+}

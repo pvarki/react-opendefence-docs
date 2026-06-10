@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "9c3d844b-ebb7-453c-9d30-7bab0891f66e",
+  "slug": "watch-stream-i7cQZkpBTh",
+  "collection": "guides/mtx-guide",
+  "locale": "en",
+  "title": "Watch Stream",
+  "breadcrumb": [
+    "Watch Stream"
+  ],
+  "createdAt": "2025-12-06T01:02:22.475Z",
+  "updatedAt": "2026-03-08T05:42:51.468Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Instructions for watching streams",
+      "id": "instructions-for-watching-streams"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<h2 id=\"instructions-for-watching-streams\"><a href=\"#instructions-for-watching-streams\">Instructions for watching streams</a></h2>\n<ul>\n<li><a href=\"/doc/ffec221e-3d44-43c7-a4d4-483ae0c03da8\">Browser</a></li>\n<li><a href=\"/doc/5bcad522-f2a0-4cc4-967f-bd0e46953143\">VLC Player</a></li>\n</ul>"
+    }
+  ]
+}

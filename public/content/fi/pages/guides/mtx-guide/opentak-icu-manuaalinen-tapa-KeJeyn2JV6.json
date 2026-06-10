@@ -1,0 +1,313 @@
+{
+  "schemaVersion": 1,
+  "id": "61fcd48c-0c6d-4a3e-a81d-6bf70e3a380a",
+  "slug": "opentak-icu-manuaalinen-tapa-KeJeyn2JV6",
+  "collection": "guides/mtx-guide",
+  "locale": "fi",
+  "title": "OpenTAK ICU - Manuaalinen tapa",
+  "breadcrumb": [
+    "Julkaise Striimiä",
+    "OpenTAK ICU - Manuaalinen tapa"
+  ],
+  "createdAt": "2025-12-09T03:44:27.770Z",
+  "updatedAt": "2026-04-11T16:45:14.091Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Julkaise striimiä Opentak ICU:lla.",
+      "id": "julkaise-striimiä-opentak-iculla"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>(this tab should not be shown)</p>\n<h2 id=\"julkaise-striimiä-opentak-iculla\"><a href=\"#julkaise-striimiä-opentak-iculla\">Julkaise striimiä Opentak ICU:lla.</a></h2>"
+    },
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Avaa Opentak ICU",
+          "layout": "text",
+          "html": "<ul>\n<li>Avaa Opentak ICU sovellus</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "Perusnäkymä",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Mene asetuksiin</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/1b13765b8367227c.webp",
+              "width": 1080,
+              "height": 2256
+            }
+          ]
+        },
+        {
+          "title": "Asetukset",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Mene <strong>Streaming Settings</strong> valikkoon</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/23de9ae0450c7257.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "Streaming Settings",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Valitse <strong>Stream video</strong>-asetus</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/f1e019f0af36d938.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "Stream Protocol",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Valitse Stream Protocol <strong>RTMPS</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/157ab9557b8d35d8.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "Stream Address",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Syötä osoite minne striimi lähetetään <strong>canadian-goose.pvarki.fi</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/8ef1d437b6664464.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "Stream Port",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Syötä Stream Port <strong>1936</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/6bb175c35f67381f.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "Stream Path",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Syötä Stream Path <strong>live/icu/Callsign</strong> (Oma Callsign)</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/12f963134e51eefe.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "Username",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Syötä <strong>Username</strong> käyttäjätunnuksesi</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/becfcb740c5a6b30.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "Password",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Syötä <strong>Password</strong> salasanasi</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/99fb13b391084539.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "Video Preferences 1",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Palaa takaisin Asetuksiin</li>\n<li>Mene <strong>Video Preferences</strong> valikkoon</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/23de9ae0450c7257.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "Video Preferences 2",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Valitse <strong>Adaptive Bitrate</strong>-asetus</li>\n<li>Valitse <strong>Text Overlay</strong>-asetus</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/8b902ad82be852ad.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "Video Source",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Valitse Video Source <strong>This device</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/55d803f1e38bb375.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "Resolution",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Valitse Resolution <strong>1280 x 720</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/197f80c6e4ae0499.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "Bitrate",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Syötä Bitrate <strong>3000</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/f8b4714b26b65c28.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "FPS",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Valitse FPS <strong>15</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/c454c10c806cc942.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "Codec",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Valitse Codec <strong>H264</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/197f80c6e4ae0499.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "Audio Settings",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Palaa takaisin Asetuksiin</li>\n<li>Mene <strong>Audio Settings</strong> valikkoon</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/23de9ae0450c7257.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "Poista valinta Audio",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Poista valinta <strong>Enable Audio</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/c4733b57f5ac697a.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "TAK Server Preferences",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Palaa takaisin Asetuksiin</li>\n<li>Mene <strong>TAK Server Preferences</strong> valikkoon</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/23de9ae0450c7257.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "Poista valinta TAK Server",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Poista valinta <strong>Send Location CoTs to a TAK server</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/b00a1ef8387c1495.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "Aloita Striimi",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Palaa takaisin aloitus näytölle</li>\n<li>Paina nappia <strong>Record</strong> striimataksesi</li>\n<li>Tulee ilmoitus <strong>Connection success</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/1b13765b8367227c.webp",
+              "width": 1080,
+              "height": 2256
+            }
+          ]
+        },
+        {
+          "title": "Lopeta Striimi",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Striimin ollessa päällä näet Bitrate kohdassa datan määrän</li>\n<li>Vasemmassa alakulmassa on striimisi tiedot</li>\n<li>Striimi lopetaan painamalla <strong>Stop</strong>-nappia</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/a6143b561d22c847.webp",
+              "width": 1080,
+              "height": 2256
+            }
+          ]
+        },
+        {
+          "title": "Osaat nyt striimata",
+          "layout": "text",
+          "html": "<ul>\n<li>Voit sulkea tämän oppaan.</li>\n</ul>",
+          "images": []
+        }
+      ]
+    },
+    {
+      "type": "html",
+      "html": "<p>Kun olet saanut striimin päälle, jatka osioon <a href=\"/doc/53f74fbb-29cf-4abe-b448-93c0ab9674b7\">Katso Striimiä</a></p>"
+    }
+  ]
+}

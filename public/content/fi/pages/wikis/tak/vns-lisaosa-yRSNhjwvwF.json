@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "id": "1a4e123c-b1fc-4835-a345-6cc0b4b63eff",
+  "slug": "vns-lisaosa-yRSNhjwvwF",
+  "collection": "wikis/tak",
+  "locale": "fi",
+  "title": "VNS - lisäosa",
+  "breadcrumb": [
+    "TAK Tuotteet Käyttäjille",
+    "WinTAK - Windows TAK",
+    "Työkalut ja lisäosat",
+    "VNS - lisäosa"
+  ],
+  "createdAt": "2025-12-08T01:47:53.761Z",
+  "updatedAt": "2026-02-19T13:29:56.152Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Lisäosan kuvaus",
+      "id": "lisäosan-kuvaus"
+    },
+    {
+      "depth": 3,
+      "text": "VNS-lisäosan käyttöohje WinTAK:lle",
+      "id": "vns-lisäosan-käyttöohje-wintaklle"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "src": "/content/images/fi/attachments/0aed24c4dd22ccae.webp",
+      "alt": "",
+      "caption": "=342x",
+      "width": 741,
+      "height": 754
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"lisäosan-kuvaus\"><a href=\"#lisäosan-kuvaus\"><strong>Lisäosan kuvaus</strong></a></h2>\n<p>Vehicle Navigation System (VNS) -lisäosa suorittaa kaksi päätoimintoa. Ensinnäkin se mahdollistaa TAK:ssa reittien kohdistamisen tieverkkoon. Toiseksi se välittää Augmented Reality System–Navigation (ARES-N) -sovellukselle keskeisiä tietoja, kuten laitteen sijainnin, tilannetietoisuutta parantavat merkit sekä käännös käännökseltä etenevät ajo-ohjeet.</p>\n<p>Tieverkkoaineisto hankitaan PAR osm-routing-engine -projektin avulla.</p>\n<h3 id=\"vns-lisäosan-käyttöohje-wintaklle\"><a href=\"#vns-lisäosan-käyttöohje-wintaklle\">VNS-lisäosan käyttöohje WinTAK:lle</a></h3>"
+    },
+    {
+      "type": "pdf",
+      "src": "attachments/7cff7ba5-0947-4929-82ac-31e595ed1ed6.pdf",
+      "title": "WinTAK 5.5 VNS User Guide.pdf"
+    }
+  ]
+}

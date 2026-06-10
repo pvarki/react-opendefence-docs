@@ -1,0 +1,313 @@
+{
+  "schemaVersion": 1,
+  "id": "d8ffcd3b-cd8d-4074-be79-ad17c3a92a4c",
+  "slug": "opentak-icu-manual-method-zBqUHoY4j0",
+  "collection": "guides/mtx-guide",
+  "locale": "en",
+  "title": "OpenTAK ICU - Manual method",
+  "breadcrumb": [
+    "Publish Stream",
+    "OpenTAK ICU - Manual method"
+  ],
+  "createdAt": "2025-12-06T01:03:05.319Z",
+  "updatedAt": "2026-04-11T16:45:09.785Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Publish the stream with Opentak ICU.",
+      "id": "publish-the-stream-with-opentak-icu"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>(this tab should not be shown)</p>\n<h2 id=\"publish-the-stream-with-opentak-icu\"><a href=\"#publish-the-stream-with-opentak-icu\">Publish the stream with Opentak ICU.</a></h2>"
+    },
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Open Opentak ICU",
+          "layout": "text",
+          "html": "<ul>\n<li>Open the Opentak ICU application</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "Main View",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Go to Settings</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/1b13765b8367227c.webp",
+              "width": 1080,
+              "height": 2256
+            }
+          ]
+        },
+        {
+          "title": "Settings",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Go to the <strong>Streaming Settings</strong> menu</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/23de9ae0450c7257.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "Streaming Settings",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Select the <strong>Stream video</strong> option</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/f1e019f0af36d938.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "Stream Protocol",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Select the Stream Protocol <strong>RTMPS</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/157ab9557b8d35d8.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "Stream Address",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Enter the address where the stream will be sent <strong>canadian-goose.pvarki.fi</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/8ef1d437b6664464.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "Stream Port",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Enter Stream Port <strong>1936</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/6bb175c35f67381f.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "Stream Path",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Enter Stream Path <strong>live/icu/Callsign</strong> (Your own Callsign)</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/12f963134e51eefe.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "Username",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Enter your <strong>Username</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/becfcb740c5a6b30.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "Password",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Enter your <strong>Password</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/99fb13b391084539.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "Video Preferences 1",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Return to Settings</li>\n<li>Go to the <strong>Video Preferences</strong> menu</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/23de9ae0450c7257.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "Video Preferences 2",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Enable the <strong>Adaptive Bitrate</strong> option</li>\n<li>Enable the <strong>Text Overlay</strong> option</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/8b902ad82be852ad.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "Video Source",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Select Video Source <strong>This device</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/55d803f1e38bb375.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "Resolution",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Select Resolution <strong>1280 x 720</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/197f80c6e4ae0499.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "Bitrate",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Enter Bitrate <strong>3000</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/f8b4714b26b65c28.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "FPS",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Select FPS <strong>15</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/c454c10c806cc942.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "Codec",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Select Codec <strong>H264</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/197f80c6e4ae0499.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "Audio Settings",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Return to Settings</li>\n<li>Go to the <strong>Audio Settings</strong> menu</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/23de9ae0450c7257.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "Disable Audio",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Disable <strong>Enable Audio</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/c4733b57f5ac697a.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "TAK Server Preferences",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Return to Settings</li>\n<li>Go to the <strong>TAK Server Preferences</strong> menu</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/23de9ae0450c7257.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "Disable TAK Server",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Disable <strong>Send Location CoTs to a TAK server</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/b00a1ef8387c1495.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "Start Stream",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Return to the main screen</li>\n<li>Press <strong>Record</strong> to start streaming</li>\n<li>A notification <strong>Connection success</strong> will appear</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/1b13765b8367227c.webp",
+              "width": 1080,
+              "height": 2256
+            }
+          ]
+        },
+        {
+          "title": "Stop Stream",
+          "layout": "image-left",
+          "html": "<ul>\n<li>While streaming, you will see the data amount under Bitrate</li>\n<li>Stream information is shown in the lower-left corner</li>\n<li>Stop the stream by pressing the <strong>Stop</strong> button</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/a6143b561d22c847.webp",
+              "width": 1080,
+              "height": 2256
+            }
+          ]
+        },
+        {
+          "title": "You now know how to stream",
+          "layout": "text",
+          "html": "<ul>\n<li>You can close this guide.</li>\n</ul>",
+          "images": []
+        }
+      ]
+    },
+    {
+      "type": "html",
+      "html": "<p>Once you have started the stream, continue to the section <a href=\"/doc/9c3d844b-ebb7-453c-9d30-7bab0891f66e\">Watch Stream</a></p>\n<p>Automatic method for configuring Opentak ICU <a href=\"/doc/8494cf86-34e9-43e4-b8b9-d2f801589222\">Opentak ICU - Automatic method</a></p>"
+    }
+  ]
+}

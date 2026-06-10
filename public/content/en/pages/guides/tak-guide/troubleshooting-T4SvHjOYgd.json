@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "c7ba4cd6-6b1b-4cd6-9a9d-c7734ab6ce85",
+  "slug": "troubleshooting-T4SvHjOYgd",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "Troubleshooting",
+  "breadcrumb": [
+    "TAK Clients",
+    "WinTAK",
+    "Troubleshooting"
+  ],
+  "createdAt": "2025-12-05T22:05:58.415Z",
+  "updatedAt": "2026-02-21T14:24:21.755Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>(This tab should not be shown)</p>"
+    }
+  ]
+}

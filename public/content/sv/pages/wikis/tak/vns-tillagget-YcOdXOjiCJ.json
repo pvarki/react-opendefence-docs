@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "id": "b3a66926-4494-408a-ba74-778687b3c4ee",
+  "slug": "vns-tillagget-YcOdXOjiCJ",
+  "collection": "wikis/tak",
+  "locale": "sv",
+  "title": "VNS -tillägget",
+  "breadcrumb": [
+    "TAK-produkter för Användare",
+    "WinTAK - Windows TAK",
+    "Verktyg och tillägg",
+    "VNS -tillägget"
+  ],
+  "createdAt": "2025-12-08T03:03:36.906Z",
+  "updatedAt": "2026-02-19T13:30:04.817Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Tilläggsbeskrivning",
+      "id": "tilläggsbeskrivning"
+    },
+    {
+      "depth": 3,
+      "text": "VNS – användarhandbok för WinTAK",
+      "id": "vns--användarhandbok-för-wintak"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "src": "/content/images/sv/attachments/0aed24c4dd22ccae.webp",
+      "alt": "",
+      "caption": "=342x",
+      "width": 741,
+      "height": 754
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"tilläggsbeskrivning\"><a href=\"#tilläggsbeskrivning\"><strong>Tilläggsbeskrivning</strong></a></h2>\n<p>Tillägget <strong>Vehicle Navigation System (VNS)</strong> utför två huvudsakliga funktioner. För det första möjliggör det ruttanpassning till vägnätet i TAK. För det andra förser det applikationen <strong>Augmented Reality System–Navigation (ARES-N)</strong> med centrala data, såsom enhetens position, symboler som förbättrar situationsmedvetenheten samt sväng-för-sväng-navigationsinstruktioner.</p>\n<p>Vägnätsinformationen hämtas med hjälp av projektet <strong>PAR osm-routing-engine</strong>.</p>\n<h3 id=\"vns--användarhandbok-för-wintak\"><a href=\"#vns--användarhandbok-för-wintak\">VNS – användarhandbok för WinTAK</a></h3>"
+    },
+    {
+      "type": "pdf",
+      "src": "attachments/7cff7ba5-0947-4929-82ac-31e595ed1ed6.pdf",
+      "title": "WinTAK 5.5 VNS User Guide.pdf"
+    }
+  ]
+}

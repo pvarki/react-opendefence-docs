@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "847922d3-7b87-464e-ad1c-f107ed76c108",
+  "slug": "vad-ar-mtx-vrCxWzeqRf",
+  "collection": "wikis/mtx",
+  "locale": "sv",
+  "title": "Vad är MTX",
+  "breadcrumb": [
+    "Vad är MTX"
+  ],
+  "createdAt": "2025-12-03T13:36:04.778Z",
+  "updatedAt": "2026-04-12T13:42:35.363Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Dokumentation:",
+      "id": "dokumentation"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>MTX = MediaMTX är en färdig att använda och beroendefri live-mediaserver och medierele. Den är utformad som en \"medie-buss\" som dirigerar mediastreamar från ände till ände.</p>"
+    },
+    {
+      "type": "image",
+      "src": "attachments/0b016abc-97cb-481e-8c1b-5b09d7e15e80.svg",
+      "alt": ""
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"dokumentation\"><a href=\"#dokumentation\">Dokumentation:</a></h2>\n<p><a href=\"https://mediamtx.org/docs/kickoff/introduction\" target=\"_blank\" rel=\"noopener noreferrer\">https://mediamtx.org/docs/kickoff/introduction</a></p>"
+    }
+  ]
+}

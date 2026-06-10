@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "id": "c8842f7a-f533-4bfe-9027-88f165d16ddb",
+  "slug": "importing-server-connection-PQ4dCV2SYR",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "Importing Server Connection",
+  "breadcrumb": [
+    "TAK Clients",
+    "ATAK",
+    "Start",
+    "Importing Server Connection"
+  ],
+  "createdAt": "2025-12-05T22:06:23.582Z",
+  "updatedAt": "2026-02-28T11:12:52.249Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "ATAK Already installed - Connecting to takserver",
+      "id": "atak-already-installed---connecting-to-takserver"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>\\</p>\n<h1 id=\"short---auto-import\"><a href=\"#short---auto-import\">Short - Auto import</a></h1>\n<h2 id=\"atak-already-installed---connecting-to-takserver\"><a href=\"#atak-already-installed---connecting-to-takserver\">ATAK Already installed - Connecting to takserver</a></h2>"
+    },
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Getting online",
+          "layout": "text",
+          "html": "<ul>\n<li>With Deploy App there are the quick way and the backup manual way, to connect to your server.</li>\n<li>This guide covers the quick way aka. Auto Import Connection.</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "1. Open Deploy App - TAK",
+          "layout": "image-left",
+          "html": "<ul>\n<li>In Deploy App, tap TAK->Launch.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/c5aa5935ab7bc584.webp",
+              "width": 1080,
+              "height": 2340
+            }
+          ]
+        },
+        {
+          "title": "2. Tap Auto Import package",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Then tap the button ATAK: Auto import package</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/ff6080f3b330fd56.webp",
+              "width": 1080,
+              "height": 2340
+            }
+          ]
+        },
+        {
+          "title": "3. ATAK Auto-Import",
+          "layout": "image-left",
+          "html": "<ul>\n<li>The Auto-Import button will open ATAK and ask for importing a server configuration package. Press the button to do so.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/2eb1508d89ef7f24.webp",
+              "width": 1080,
+              "height": 2340
+            }
+          ]
+        },
+        {
+          "title": "3. Approve loading the server config",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>ATAK should open and ask about importing a package with a long link. Tap Yes to proceed.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/dfc75ec072099b39.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "4. That's it! You're online",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>That's it! The green TAK icon shows that the connection is OK.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/7b0db9fb8f123439.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "5. If the question about importing package did not appear",
+          "layout": "text",
+          "html": "<ul>\n<li>Sometimes ATAK fails to open the import dialog for Auto-Importing server configuration package. Make sure ATAK is running and try again.</li>\n</ul>",
+          "images": []
+        }
+      ]
+    },
+    {
+      "type": "html",
+      "html": "<p>After successfull connection to takserver, continue to <a href=\"/doc/ce3ace12-abf3-4d66-a94b-8a5cbccfeebb\">Receive Feeds</a></p>"
+    }
+  ]
+}

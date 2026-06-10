@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "e96c8450-ee15-4607-be9b-d1a479bcc24b",
+  "slug": "publish-stream-XN1sPInAKr",
+  "collection": "guides/mtx-guide",
+  "locale": "en",
+  "title": "Publish Stream",
+  "breadcrumb": [
+    "Publish Stream"
+  ],
+  "createdAt": "2025-12-06T01:02:31.643Z",
+  "updatedAt": "2026-04-11T21:49:30.251Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Streaming instructions:</p>\n<ul>\n<li><a href=\"/doc/21a0cfc5-0bf4-4df0-b826-8ca170313488\">GoPro</a></li>\n<li><a href=\"/doc/8494cf86-34e9-43e4-b8b9-d2f801589222\">Opentak ICU - Automatic method</a></li>\n<li><a href=\"/doc/39ded173-ec80-442c-b229-580740fb1bf5\">Uastool</a></li>\n</ul>"
+    }
+  ]
+}

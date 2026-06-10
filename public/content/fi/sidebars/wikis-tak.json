@@ -1,0 +1,323 @@
+{
+  "schemaVersion": 1,
+  "label": "TAK Wiki",
+  "slug": "wikis/tak",
+  "items": [
+    {
+      "type": "doc",
+      "id": "mika-on-tak-qDlgj4MWPN",
+      "label": "Mikä on TAK?",
+      "slug": "mika-on-tak-qDlgj4MWPN"
+    },
+    {
+      "type": "doc",
+      "id": "ohjevideot-cXQYuKHhVR",
+      "label": "Ohjevideot",
+      "slug": "ohjevideot-cXQYuKHhVR"
+    },
+    {
+      "type": "group",
+      "id": "tak-tuotteet-kayttajille-91L6pdb8ee",
+      "label": "TAK Tuotteet Käyttäjille",
+      "children": [
+        {
+          "type": "doc",
+          "id": "tak-tuotteet-kayttajille-91L6pdb8ee",
+          "label": "TAK Tuotteet Käyttäjille",
+          "slug": "tak-tuotteet-kayttajille-91L6pdb8ee"
+        },
+        {
+          "type": "doc",
+          "id": "atak-android-tak-oeRRt7n8VG",
+          "label": "ATAK - Android TAK",
+          "slug": "atak-android-tak-oeRRt7n8VG"
+        },
+        {
+          "type": "doc",
+          "id": "tyokalut-ja-lisaosat-qC4tN7ic8c",
+          "label": "Työkalut ja lisäosat",
+          "slug": "tyokalut-ja-lisaosat-qC4tN7ic8c"
+        },
+        {
+          "type": "doc",
+          "id": "bloodhound-tyokalu-6Upz4LkrO9",
+          "label": "Bloodhound-työkalu",
+          "slug": "bloodhound-tyokalu-6Upz4LkrO9"
+        },
+        {
+          "type": "doc",
+          "id": "contacts-geochat-tyokalu-3p3x279r0s",
+          "label": "Contacts / GeoChat -työkalu",
+          "slug": "contacts-geochat-tyokalu-3p3x279r0s"
+        },
+        {
+          "type": "doc",
+          "id": "data-sync-lisaosa-knb4IdgXyb",
+          "label": "Data Sync -lisäosa",
+          "slug": "data-sync-lisaosa-knb4IdgXyb"
+        },
+        {
+          "type": "doc",
+          "id": "point-dropper-tyokalu-eM4UMc4BBc",
+          "label": "Point Dropper -työkalu",
+          "slug": "point-dropper-tyokalu-eM4UMc4BBc"
+        },
+        {
+          "type": "doc",
+          "id": "toolbar-tyokalu-bYyF756MBb",
+          "label": "Toolbar-työkalu",
+          "slug": "toolbar-tyokalu-bYyF756MBb"
+        },
+        {
+          "type": "doc",
+          "id": "uas-tool-lisaosa-BXzO8q7CVq",
+          "label": "UAS Tool -lisäosa",
+          "slug": "uas-tool-lisaosa-BXzO8q7CVq"
+        },
+        {
+          "type": "doc",
+          "id": "vns-lisaosa-Hnpl0Xgv25",
+          "label": "VNS -lisäosa",
+          "slug": "vns-lisaosa-Hnpl0Xgv25"
+        },
+        {
+          "type": "doc",
+          "id": "lisaosa-listaus-N4znkanSPj",
+          "label": "Lisäosa listaus",
+          "slug": "lisaosa-listaus-N4znkanSPj"
+        },
+        {
+          "type": "doc",
+          "id": "itak-apple-tak-1xxodVxfN8",
+          "label": "iTAK - Apple TAK",
+          "slug": "itak-apple-tak-1xxodVxfN8"
+        },
+        {
+          "type": "doc",
+          "id": "tak-aware-apple-tak-Kca1qYUDAO",
+          "label": "TAK Aware - Apple TAK",
+          "slug": "tak-aware-apple-tak-Kca1qYUDAO"
+        },
+        {
+          "type": "doc",
+          "id": "tak-tracker-kevyt-tak-android-ja-apple-H2Bj8HNmnv",
+          "label": "TAK Tracker - Kevyt TAK — Android ja Apple",
+          "slug": "tak-tracker-kevyt-tak-android-ja-apple-H2Bj8HNmnv"
+        },
+        {
+          "type": "doc",
+          "id": "vr-tak-virtuaalitodellisuus-tak-zpNoc3jnF4",
+          "label": "VR-TAK - Virtuaalitodellisuus TAK",
+          "slug": "vr-tak-virtuaalitodellisuus-tak-zpNoc3jnF4"
+        },
+        {
+          "type": "doc",
+          "id": "wintak-windows-tak-UFb4pI3uVv",
+          "label": "WinTAK - Windows TAK",
+          "slug": "wintak-windows-tak-UFb4pI3uVv"
+        },
+        {
+          "type": "doc",
+          "id": "tyokalut-ja-lisaosat-z4hu8AFihP",
+          "label": "Työkalut ja lisäosat",
+          "slug": "tyokalut-ja-lisaosat-z4hu8AFihP"
+        },
+        {
+          "type": "doc",
+          "id": "contacts-geochat-tyokalu-isdG7ytN8I",
+          "label": "Contacts / GeoChat -työkalu",
+          "slug": "contacts-geochat-tyokalu-isdG7ytN8I"
+        },
+        {
+          "type": "doc",
+          "id": "data-sync-lisaosa-jU43Cz3gXs",
+          "label": "Data Sync -lisäosa",
+          "slug": "data-sync-lisaosa-jU43Cz3gXs"
+        },
+        {
+          "type": "doc",
+          "id": "tak-replay-lisaosa-xEHeK6Wly9",
+          "label": "TAK Replay -lisäosa",
+          "slug": "tak-replay-lisaosa-xEHeK6Wly9"
+        },
+        {
+          "type": "doc",
+          "id": "vns-lisaosa-yRSNhjwvwF",
+          "label": "VNS - lisäosa",
+          "slug": "vns-lisaosa-yRSNhjwvwF"
+        },
+        {
+          "type": "doc",
+          "id": "lisaosa-listaus-W9iA7LSPv4",
+          "label": "Lisäosa listaus",
+          "slug": "lisaosa-listaus-W9iA7LSPv4"
+        },
+        {
+          "type": "doc",
+          "id": "tpc-tak-product-center-BAsOmaQorN",
+          "label": "TPC - TAK Product Center",
+          "slug": "tpc-tak-product-center-BAsOmaQorN"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "tak-tyokalut-tuotteille-PRBSLNNcXe",
+      "label": "TAK Työkalut Tuotteille",
+      "children": [
+        {
+          "type": "doc",
+          "id": "tak-tyokalut-tuotteille-PRBSLNNcXe",
+          "label": "TAK Työkalut Tuotteille",
+          "slug": "tak-tyokalut-tuotteille-PRBSLNNcXe"
+        },
+        {
+          "type": "doc",
+          "id": "bloodhound-tyokalu-EutttuAMqj",
+          "label": "Bloodhound-työkalu",
+          "slug": "bloodhound-tyokalu-EutttuAMqj"
+        },
+        {
+          "type": "doc",
+          "id": "contacts-geochat-tyokalu-3WnDMNrvne",
+          "label": "Contacts / GeoChat -työkalu",
+          "slug": "contacts-geochat-tyokalu-3WnDMNrvne"
+        },
+        {
+          "type": "doc",
+          "id": "data-sync-lisaosa-FDSZf8s4dN",
+          "label": "Data Sync -lisäosa",
+          "slug": "data-sync-lisaosa-FDSZf8s4dN"
+        },
+        {
+          "type": "doc",
+          "id": "point-dropper-tyokalu-Fcqd6h1N2g",
+          "label": "Point Dropper -työkalu",
+          "slug": "point-dropper-tyokalu-Fcqd6h1N2g"
+        },
+        {
+          "type": "doc",
+          "id": "tak-replay-lisaosa-nC65dB5xJ4",
+          "label": "TAK Replay -lisäosa",
+          "slug": "tak-replay-lisaosa-nC65dB5xJ4"
+        },
+        {
+          "type": "doc",
+          "id": "uas-tool-lisaosa-PjKHZ3uXFM",
+          "label": "UAS Tool -lisäosa",
+          "slug": "uas-tool-lisaosa-PjKHZ3uXFM"
+        },
+        {
+          "type": "doc",
+          "id": "vns-lisaosa-N2dvB3Fi6i",
+          "label": "VNS -lisäosa",
+          "slug": "vns-lisaosa-N2dvB3Fi6i"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "tak-paakayttaja-tyokalut-da3GQMAefs",
+      "label": "TAK Pääkäyttäjä Työkalut",
+      "children": [
+        {
+          "type": "doc",
+          "id": "tak-paakayttaja-tyokalut-da3GQMAefs",
+          "label": "TAK Pääkäyttäjä Työkalut",
+          "slug": "tak-paakayttaja-tyokalut-da3GQMAefs"
+        },
+        {
+          "type": "doc",
+          "id": "takserveri-wvGgSzba9a",
+          "label": "Takserveri",
+          "slug": "takserveri-wvGgSzba9a"
+        },
+        {
+          "type": "doc",
+          "id": "perus-kayttoliittyma-2HXcY5vRCG",
+          "label": "Perus Käyttöliittymä",
+          "slug": "perus-kayttoliittyma-2HXcY5vRCG"
+        },
+        {
+          "type": "doc",
+          "id": "update-server-ota-mhNw2v3VQk",
+          "label": "Update Server",
+          "slug": "update-server-ota-mhNw2v3VQk"
+        },
+        {
+          "type": "doc",
+          "id": "mission-manager-data-sync-JzYy4wUkU9",
+          "label": "Mission Manager",
+          "slug": "mission-manager-data-sync-JzYy4wUkU9"
+        },
+        {
+          "type": "doc",
+          "id": "device-profiles-7sZvcFsZIc",
+          "label": "Device Profiles",
+          "slug": "device-profiles-7sZvcFsZIc"
+        },
+        {
+          "type": "doc",
+          "id": "edistyneet-toiminnot-UJHXLaAK8s",
+          "label": "Edistyneet Toiminnot",
+          "slug": "edistyneet-toiminnot-UJHXLaAK8s"
+        },
+        {
+          "type": "doc",
+          "id": "mtx-striimaus-HtFtvSo9pk",
+          "label": "MTX - Striimaus",
+          "slug": "mtx-striimaus-HtFtvSo9pk"
+        },
+        {
+          "type": "doc",
+          "id": "keycloak-ryhmien-hallinta-iRtHPKXbsh",
+          "label": "Keycloak - Ryhmien hallinta",
+          "slug": "keycloak-ryhmien-hallinta-iRtHPKXbsh"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "kayttomallit-qfKyTEO473",
+      "label": "Käyttömallit",
+      "children": [
+        {
+          "type": "doc",
+          "id": "kayttomallit-qfKyTEO473",
+          "label": "Käyttömallit",
+          "slug": "kayttomallit-qfKyTEO473"
+        },
+        {
+          "type": "doc",
+          "id": "pvarki-standardi-pH8Co9lKsr",
+          "label": "PVARKI Standardi",
+          "slug": "pvarki-standardi-pH8Co9lKsr"
+        },
+        {
+          "type": "doc",
+          "id": "takserver-recon-syote-PPNwDOJdZa",
+          "label": "Takserver RECON -syöte",
+          "slug": "takserver-recon-syote-PPNwDOJdZa"
+        },
+        {
+          "type": "doc",
+          "id": "takserver-ryhmat-6chJPiJi7g",
+          "label": "Takserver-ryhmät",
+          "slug": "takserver-ryhmat-6chJPiJi7g"
+        },
+        {
+          "type": "doc",
+          "id": "kayttotapaukset-LyBVWJ49UE",
+          "label": "Käyttötapaukset",
+          "slug": "kayttotapaukset-LyBVWJ49UE"
+        },
+        {
+          "type": "doc",
+          "id": "havainnon-edelleenlahettaminen-sIRDHP8qAL",
+          "label": "Havainnon edelleenlähettäminen",
+          "slug": "havainnon-edelleenlahettaminen-sIRDHP8qAL"
+        }
+      ]
+    }
+  ]
+}

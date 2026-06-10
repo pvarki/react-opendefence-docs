@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "b05ee7a4-13a2-4cd8-865c-0812dd57bfff",
+  "slug": "create-symbols-quick-pics-elqHqV8SW7",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "Create Symbols & Quick Pics",
+  "breadcrumb": [
+    "TAK Clients",
+    "iTAK",
+    "Basic Features",
+    "Create Symbols & Quick Pics"
+  ],
+  "createdAt": "2025-12-05T22:06:10.937Z",
+  "updatedAt": "2026-02-22T13:49:37.259Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#ABB2BF\">(</span><span style=\"color:#E06C75\">This</span><span style=\"color:#E06C75\"> tab</span><span style=\"color:#E06C75\"> should</span><span style=\"color:#E06C75\"> not</span><span style=\"color:#E06C75\"> be</span><span style=\"color:#E06C75\"> shown</span><span style=\"color:#ABB2BF\">)</span></span></code></pre>",
+      "lang": "javascript"
+    }
+  ]
+}

@@ -1,0 +1,351 @@
+{
+  "schemaVersion": 1,
+  "id": "c703f1ac-61bf-48e2-9c03-36cfb7f72360",
+  "slug": "start-from-download-vQGTWj6wET",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "Start from Download",
+  "breadcrumb": [
+    "TAK Clients",
+    "iTAK",
+    "Start",
+    "Start from Download"
+  ],
+  "createdAt": "2025-12-05T22:06:11.383Z",
+  "updatedAt": "2026-02-20T22:12:29.976Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Install and open iTAK for initialization",
+      "id": "install-and-open-itak-for-initialization"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<h2 id=\"install-and-open-itak-for-initialization\"><a href=\"#install-and-open-itak-for-initialization\">Install and open iTAK for initialization</a></h2>"
+    },
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Install iTAK from the Appstore",
+          "layout": "text",
+          "html": "<ul>\n<li><a href=\"https://apps.apple.com/us/app/itak/id1561656396\" target=\"_blank\" rel=\"noopener noreferrer\">https://apps.apple.com/us/app/itak/id1561656396</a></li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "Open iTAK App",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Find the iTAK icon and start the App. Don't allow app to find other devices on local network. iTAK doesen't encrypt traffic in a LAN.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/d2b86a0e4da37de8.webp",
+              "width": 1179,
+              "height": 2556
+            }
+          ]
+        },
+        {
+          "title": "Start Setup iTAK flow",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Start Setup iTAK flow.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/4bc489751e28b47d.webp",
+              "width": 1179,
+              "height": 2556
+            }
+          ]
+        },
+        {
+          "title": "Callsign Settings",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Give your Callsign in the Callsign field, Leave Phone field empty.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/179742443855f7bd.webp",
+              "width": 1179,
+              "height": 2556
+            }
+          ]
+        },
+        {
+          "title": "Team/Role Settings",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Choose your Team and Role.</li>\n<li>Team color should have been told to you. Default role is Team Member</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/25a884ed6dc00676.webp",
+              "width": 1179,
+              "height": 2556
+            }
+          ]
+        },
+        {
+          "title": "Privacy Settings",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Activate Notifications and Location Services</li>\n<li>NOTICE! Approve all iTAK notification sending and location usage questions.</li>\n<li>IMPORTANT! Allow location usage also when you are not using the app.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/60c55560970d34f8.webp",
+              "width": 1179,
+              "height": 2556
+            }
+          ]
+        },
+        {
+          "title": "iTAK Opens / Remaining steps",
+          "layout": "text",
+          "html": "<ol>\n<li>Settings/ Unit Preferences</li>\n<li>Server connection / Package import</li>\n<li>Datasync activation</li>\n<li>Map settings</li>\n</ol>",
+          "images": []
+        },
+        {
+          "title": "iTAK Settings",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Open the iTAK settings</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/8c1929e22a527c6e.webp",
+              "width": 1179,
+              "height": 2556
+            }
+          ]
+        },
+        {
+          "title": "iTAK Preference Settings",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Open <em>Preferences</em> menu</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/ad672d1b8c61f6d9.webp",
+              "width": 1179,
+              "height": 2556
+            }
+          ]
+        },
+        {
+          "title": "iTAK Preferences Units",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Open the <em>Unit of Measure</em> menu</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/b1f7aa523dc46ad3.webp",
+              "width": 1179,
+              "height": 2556
+            }
+          ]
+        },
+        {
+          "title": "iTAK Units 1/2",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Select the following unit formats.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/a7c0e607aa9afe83.webp",
+              "width": 1179,
+              "height": 2556
+            }
+          ]
+        },
+        {
+          "title": "iTAK Units 2/2",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Select the following unit formats.</li>\n<li>Close the settings window</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/524c4c95f7dc4a7d.webp",
+              "width": 1179,
+              "height": 2556
+            }
+          ]
+        },
+        {
+          "title": "iTAK Packages / Import config",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Navigate into the Packages functionality</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/0eaf05e585e36850.webp",
+              "width": 1179,
+              "height": 2556
+            }
+          ]
+        },
+        {
+          "title": "iTAK import Packages",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Push + sign to add a Package</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/2793eb64889d2e76.webp",
+              "width": 1179,
+              "height": 2556
+            }
+          ]
+        },
+        {
+          "title": "Add Mission Package",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Navigeto to the folder in your device, where you earlier downloaded a configuration zip-file.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/095f5897fa1210b0.webp",
+              "width": 1179,
+              "height": 2556
+            }
+          ]
+        },
+        {
+          "title": "Select the zip-file",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Select the file you downloaded earlier.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/c7159bfe8dd36b43.webp",
+              "width": 1179,
+              "height": 2556
+            }
+          ]
+        },
+        {
+          "title": "Package imported",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Import is sucessful when a server name comes visible</li>\n<li>Close the Packages window.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/886151d89dfe7c5a.webp",
+              "width": 1179,
+              "height": 2556
+            }
+          ]
+        },
+        {
+          "title": "Server Connection & DataSync",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Server connection is now CONNECTED</li>\n<li>Continue into the Data Sync configuration</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/919414ee0b73a1d2.webp",
+              "width": 1179,
+              "height": 2556
+            }
+          ]
+        },
+        {
+          "title": "Data Sync Mission Subscribe",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Subcribe a Missions from + sign</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/87481ce66a072a28.webp",
+              "width": 1179,
+              "height": 2556
+            }
+          ]
+        },
+        {
+          "title": "Available Missions",
+          "layout": "image-left",
+          "html": "<ul>\n<li>You get list of avalaibele Missions.</li>\n<li>Default mission to order is the RECON.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/0df098efc62c5dda.webp",
+              "width": 1179,
+              "height": 2556
+            }
+          ]
+        },
+        {
+          "title": "Mission Info",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Return to the Data Sync page.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/807a0f0653c27ebe.webp",
+              "width": 1179,
+              "height": 2556
+            }
+          ]
+        },
+        {
+          "title": "Sync Mission data",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Push a circle arrows to make a full Sync to a missions</li>\n<li>Close the Data Sync view.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/3fe1150893e530f4.webp",
+              "width": 1179,
+              "height": 2556
+            }
+          ]
+        },
+        {
+          "title": "iTAK configuration ready",
+          "layout": "text",
+          "html": "<ul>\n<li>If needed you can edit:</li>\n<li>MAP Source</li>\n<li>User Preferences</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "Map Source",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Go into the settings (Gear icon)</li>\n<li>Go into the Map source</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/bcf5e5ebe13a5378.webp",
+              "width": 1179,
+              "height": 2556
+            }
+          ]
+        },
+        {
+          "title": "Change Map Source",
+          "layout": "image-left",
+          "html": "<ul>\n<li>You get view of available map sources</li>\n<li>Change map source</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/b11423a782352344.webp",
+              "width": 1179,
+              "height": 2556
+            }
+          ]
+        },
+        {
+          "title": "User Preferences",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Go into the settings (Gear icon)</li>\n<li>Go into the User Preferences</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/3310d2100c68ae89.webp",
+              "width": 1179,
+              "height": 2556
+            }
+          ]
+        },
+        {
+          "title": "Edit User Preferences",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Edit user preferences if needed</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/ebb7e48bd111a1db.webp",
+              "width": 1179,
+              "height": 2556
+            }
+          ]
+        },
+        {
+          "title": "Done",
+          "layout": "text",
+          "html": "<ul>\n<li>You can close this guide.</li>\n</ul>",
+          "images": []
+        }
+      ]
+    },
+    {
+      "type": "html",
+      "html": "<p>After successfully settings impementation and connection to takserver, continue to<a href=\"/doc/dc7f6de4-b754-457d-a704-dd1c792152af\">Receive Feeds</a></p>"
+    }
+  ]
+}

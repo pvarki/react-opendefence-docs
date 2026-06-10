@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "id": "2dcca80b-a80d-4d27-a97c-8004143585e6",
+  "slug": "vidarebefordran-av-observation-ee7btUhwIp",
+  "collection": "wikis/tak",
+  "locale": "sv",
+  "title": "Vidarebefordran av Observation",
+  "breadcrumb": [
+    "Användningsmodeller",
+    "Användningsfall",
+    "Vidarebefordran av Observation"
+  ],
+  "createdAt": "2025-12-08T03:03:34.937Z",
+  "updatedAt": "2026-02-20T06:15:57.464Z",
+  "headings": [
+    {
+      "depth": 3,
+      "text": "HQ-delning – schema:",
+      "id": "hq-delning--schema"
+    },
+    {
+      "depth": 3,
+      "text": "Underrättelseflöde – schema:",
+      "id": "underrättelseflöde--schema"
+    },
+    {
+      "depth": 2,
+      "text": "Sändning via HQ-roll",
+      "id": "sändning-via-hq-roll"
+    },
+    {
+      "depth": 2,
+      "text": "Sändning via Underrättelseflödet",
+      "id": "sändning-via-underrättelseflödet"
+    },
+    {
+      "depth": 3,
+      "text": "Användare – Delning till Underrättelseflödet",
+      "id": "användare--delning-till-underrättelseflödet"
+    },
+    {
+      "depth": 3,
+      "text": "HQ – Delning till hela servern",
+      "id": "hq--delning-till-hela-servern-1"
+    },
+    {
+      "depth": 3,
+      "text": "Användare – Uppdatering av RECON-information via Underrättelseflödet",
+      "id": "användare--uppdatering-av-recon-information-via-underrättelseflödet"
+    },
+    {
+      "depth": 3,
+      "text": "Underrättelseflödet – ytterligare information",
+      "id": "underrättelseflödet--ytterligare-information"
+    },
+    {
+      "depth": 2,
+      "text": "Använda TAK-verktyg:",
+      "id": "använda-tak-verktyg"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>TAK används för att tillhandahålla aktuell underrättelseinformation så att förband får en bättre lägesbild. Det gör det möjligt att enkelt dela verifierad och validerad information som kan uppdateras snabbt.</p>\n<p>Här följer två grundläggande exempel på hur observationer kan vidarebefordras, uppdateras och delas med <strong>Ledning / Ledningsplats (LePl)</strong> samt andra serveranvändare. Metoderna är: delning direkt till personal med HQ-roll samt delning via <em>Underrättelseflödet</em>. Administratören instruerar användarna om vilken metod som ska användas.</p>\n<h3 id=\"hq-delning--schema\"><a href=\"#hq-delning--schema\">HQ-delning – schema:</a></h3>"
+    },
+    {
+      "type": "image",
+      "src": "/content/images/sv/attachments/facbf3245ee91bf1.webp",
+      "alt": "",
+      "width": 1046,
+      "height": 370
+    },
+    {
+      "type": "html",
+      "html": "<h3 id=\"underrättelseflöde--schema\"><a href=\"#underrättelseflöde--schema\">Underrättelseflöde – schema:</a></h3>"
+    },
+    {
+      "type": "image",
+      "src": "/content/images/sv/attachments/9d6a247e4b3e5168.webp",
+      "alt": "",
+      "width": 1046,
+      "height": 369
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"sändning-via-hq-roll\"><a href=\"#sändning-via-hq-roll\">Sändning via HQ-roll</a></h2>\n<h4 id=\"användare--delning-till-hq-rollen\"><a href=\"#användare--delning-till-hq-rollen\"><strong>Användare – Delning till HQ-rollen</strong></a></h4>\n<p>Användaren säkerställer riktigheten i informationen och skapar en markering (fyller i de viktigaste grunduppgifterna) och skickar den till användare med HQ-roll.\\nAnvändare kan använda en en-till-en-chatt för att lämna ytterligare information om markeringen eller betona om uppgiften är brådskande.</p>\n<p>Delning till HQ gör att informationen endast blir tillgänglig för HQ-personalen.</p>\n<h4 id=\"hq--delning-till-hela-servern\"><a href=\"#hq--delning-till-hela-servern\"><strong>HQ – Delning till hela servern</strong></a></h4>\n<p>HQ övervakar mottagen information via meddelanden och datapaket.\\nHQ validerar informationen (att den är aktuell och relevant) och skickar den vidare till <strong>RECON-flödet</strong> för att delas med alla användare.\\nVid behov kan HQ även dela informationen till andra servrar.</p>\n<p>Delning till <strong>RECON-flödet</strong> gör informationen tillgänglig för alla serverns användare.</p>\n<h2 id=\"sändning-via-underrättelseflödet\"><a href=\"#sändning-via-underrättelseflödet\"><strong>Sändning via Underrättelseflödet</strong></a></h2>\n<h3 id=\"användare--delning-till-underrättelseflödet\"><a href=\"#användare--delning-till-underrättelseflödet\"><strong>Användare – Delning till Underrättelseflödet</strong></a></h3>\n<p>Användaren säkerställer riktigheten i informationen och skapar en markering (fyller i de viktigaste grunduppgifterna) och skickar den till <strong>Underrättelseflödet</strong>.\\nAnvändaren kan senare uppdatera informationen och hålla den relevant.</p>\n<p>Användare kan använda flödets chatt för att lämna ytterligare information eller signalera brådska.</p>\n<p>Delning till <strong>Underrättelseflödet</strong> gör informationen tillgänglig för användare i samma grupp.</p>\n<h3 id=\"hq--delning-till-hela-servern-1\"><a href=\"#hq--delning-till-hela-servern-1\"><strong>HQ – Delning till hela servern</strong></a></h3>\n<p>HQ övervakar <strong>Underrättelseflöden</strong> och <strong>Förbandsflöden</strong> på servern och letar efter information som behöver föras in i <strong>RECON-flödet</strong>.\\nHQ validerar mottagen information (att den är aktuell och relevant) och distribuerar den till <strong>RECON-flödet</strong> för alla användare.\\nVid behov kan HQ också vidarebefordra informationen till andra servrar.</p>\n<p>Delning till <strong>RECON-flödet</strong> gör informationen tillgänglig för samtliga användare på servern.</p>\n<h3 id=\"användare--uppdatering-av-recon-information-via-underrättelseflödet\"><a href=\"#användare--uppdatering-av-recon-information-via-underrättelseflödet\"><strong>Användare – Uppdatering av RECON-information via Underrättelseflödet</strong></a></h3>\n<p>När användaren får ytterligare information om en markering i <strong>RECON-flödet</strong> kan hen uppdatera den och dela uppdateringen via <strong>Underrättelseflödet</strong> (t.ex. markeringens position, information om objektet etc.).</p>\n<h3 id=\"underrättelseflödet--ytterligare-information\"><a href=\"#underrättelseflödet--ytterligare-information\"><strong>Underrättelseflödet – ytterligare information</strong></a></h3>\n<p>Endast användare som behöver skicka observationer ska använda <strong>Underrättelseflödet</strong>, och de behöver bara prenumerera när de deltar i en operation.\\nDe flesta användare prenumererar enbart på <strong>RECON-flödet</strong>.</p>\n<p>I större organisationer kan det finnas flera <strong>Underrättelseflöden</strong> eller <strong>Uppdragsflöden</strong> för olika team, så att ny information snabbt blir tillgänglig.\\nPå servrar är <strong>RECON-flödet</strong> den validerade och centrala underrättelsekällan.</p>\n<h2 id=\"använda-tak-verktyg\"><a href=\"#använda-tak-verktyg\">Använda TAK-verktyg:</a></h2>\n<ul>\n<li><a href=\"/doc/383780b6-443c-4ec5-8944-0b9475f863b7\">Contacts / GeoChat -työkalu</a></li>\n<li><a href=\"/doc/e07f23dc-142c-4b40-bf3a-a1c69857d5ef\">Data Sync -lisäosa</a></li>\n</ul>"
+    }
+  ]
+}

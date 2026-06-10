@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "2cd1f565-0bd6-4041-8b60-35466dfc3d34",
+  "slug": "what-is-mtx-dfU8aHguP1",
+  "collection": "wikis/mtx",
+  "locale": "en",
+  "title": "What is MTX",
+  "breadcrumb": [
+    "What is MTX"
+  ],
+  "createdAt": "2025-10-26T20:29:33.638Z",
+  "updatedAt": "2026-04-12T13:42:17.787Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Documentation:",
+      "id": "documentation"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>MTX = MediaMTX is a ready-to-use and zero-dependency live media server and media proxy. It has been conceived as a \"media router\" that routes media streams from one end to the other.</p>"
+    },
+    {
+      "type": "image",
+      "src": "attachments/28348c7c-0699-4748-b9ce-e6a069659a17.svg",
+      "alt": ""
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"documentation\"><a href=\"#documentation\">Documentation:</a></h2>\n<p><a href=\"https://mediamtx.org/docs/kickoff/introduction\" target=\"_blank\" rel=\"noopener noreferrer\">https://mediamtx.org/docs/kickoff/introduction</a></p>"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "3bc34372-3886-4a4a-9a61-acce2f9dcb60",
+  "slug": "overview-4sA7lVWVtw",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "Overview",
+  "breadcrumb": [
+    "TAK Clients",
+    "TAK Tracker - Android",
+    "Usage by Role",
+    "Overview"
+  ],
+  "createdAt": "2025-12-20T00:47:06.954Z",
+  "updatedAt": "2026-02-21T08:40:53.162Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>(This tab should not be shown)</p>"
+    }
+  ]
+}

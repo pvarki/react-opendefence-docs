@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "id": "d1851099-ba36-408a-8e72-b52ae70a57d9",
+  "slug": "device-profiles-7sZvcFsZIc",
+  "collection": "wikis/tak",
+  "locale": "fi",
+  "title": "Device Profiles",
+  "breadcrumb": [
+    "TAK Pääkäyttäjä Työkalut",
+    "Takserveri",
+    "Device Profiles"
+  ],
+  "createdAt": "2025-12-08T01:58:53.584Z",
+  "updatedAt": "2026-02-19T13:46:44.604Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Apply on Connection (Käytä yhteyden muodostuessa)",
+      "id": "apply-on-connection-käytä-yhteyden-muodostuessa"
+    },
+    {
+      "depth": 2,
+      "text": "Tool (Työkalu)",
+      "id": "tool-työkalu"
+    },
+    {
+      "depth": 2,
+      "text": "Apply on Enrollment (Käytä rekisteröitymisen yhteydessä)",
+      "id": "apply-on-enrollment-käytä-rekisteröitymisen-yhteydessä"
+    },
+    {
+      "depth": 2,
+      "text": "Apply on Connection (Käytä yhteyden muodostuessa)",
+      "id": "apply-on-connection-käytä-yhteyden-muodostuessa-1"
+    },
+    {
+      "depth": 2,
+      "text": "Tool (Työkalu)",
+      "id": "tool-työkalu-1"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Laiteprofiileja<strong>Apply on Enrollment (Käytä rekisteröitymisen yhteydessä)</strong></p>\n<p>Kun käyttäjä rekisteröityy laitteelleen käyttäjätunnuksella ja salasanalla sertifikaattia varten, hän voi saada EUD-laitteen asetukset palvelimelta.</p>\n<p>Tätä käytetään yleensä ensiasetus- tai minimikonfiguraation jakamiseen, kuten:</p>\n<ul>\n<li>Update Server -asetukset</li>\n<li>Kartat</li>\n<li>Työkalupalkit</li>\n</ul>\n<h2 id=\"apply-on-connection-käytä-yhteyden-muodostuessa\"><a href=\"#apply-on-connection-käytä-yhteyden-muodostuessa\"><strong>Apply on Connection (Käytä yhteyden muodostuessa)</strong></a></h2>\n<p>Jo rekisteröitynyt käyttäjä tai käyttäjä, joka muodostaa yhteyden sertifikaatin avulla, voi saada profiilipäivityksiä aina palvelimeen uudelleen yhdistäessään.</p>\n<p>Tätä voidaan käyttää esimerkiksi:</p>\n<ul>\n<li>tarvittavien muutosten jakelemiseen</li>\n<li>lisätoimintojen asetuspakettien toimittamiseen (esim. Medic-työkalupalkki Medic-ryhmän käyttäjille)</li>\n<li>Mesh-salausavainten päivittämiseen</li>\n</ul>\n<h2 id=\"tool-työkalu\"><a href=\"#tool-työkalu\"><strong>Tool (Työkalu)</strong></a></h2>\n<p>Työkalua käytetään <strong>manuaalisena menetelmänä</strong> asetusten päivittämiseen tai tiedostojen jakamiseen tietyille käyttäjille.</p>\n<p>Tätä käytetään yleensä:</p>\n<ul>\n<li>käytetään takserveriin yhdistettyjen laitteiden hallintaan.\\nPääasiassa ATAK-laitteet hyödyntävät profiileja, koska niiden tulee tukea palvelimelta vastaanotettavia asetuksia.</li>\n</ul>\n<p>Laiteprofiilit luodaan <strong>Device Profile Managerissa</strong>, ja ne kohdistetaan käyttäjille tietyissä ryhmissä. Profiilit voidaan jakaa käyttäjille <strong>rekisteröitymisen</strong>, <strong>palvelinyhteyden</strong> tai <strong>manuaalisen työkalun</strong> kautta.</p>\n<p>Suositeltu tapa jakaa asetuksia on käyttää <strong>.pref-tiedostoja TAK datapaketin sisällä</strong>, koska datapaketit voivat automaattisesti käynnistää ATAK:n tuontitoiminnon (import) niiden sisältämille tiedostoille.</p>\n<p><img src=\"/content/images/fi/attachments/fda9aac14a791999.webp\" alt=\"\" title=\" =2560x427\"> <img src=\"/content/images/fi/attachments/c1665a4a7d3a3789.webp\" alt=\"\" title=\" =2560x676\"></p>\n<h2 id=\"apply-on-enrollment-käytä-rekisteröitymisen-yhteydessä\"><a href=\"#apply-on-enrollment-käytä-rekisteröitymisen-yhteydessä\"><strong>Apply on Enrollment (Käytä rekisteröitymisen yhteydessä)</strong></a></h2>\n<p>Kun käyttäjä rekisteröityy laitteelleen käyttäjätunnuksella ja salasanalla sertifikaattia varten, hän voi saada EUD-laitteen asetukset palvelimelta.</p>\n<p>Tätä käytetään yleensä ensiasetus- tai minimikonfiguraation jakamiseen, kuten:</p>\n<ul>\n<li>Update Server -asetukset</li>\n<li>Kartat</li>\n<li>Työkalupalkit</li>\n</ul>\n<h2 id=\"apply-on-connection-käytä-yhteyden-muodostuessa-1\"><a href=\"#apply-on-connection-käytä-yhteyden-muodostuessa-1\"><strong>Apply on Connection (Käytä yhteyden muodostuessa)</strong></a></h2>\n<p>Jo rekisteröitynyt käyttäjä tai käyttäjä, joka muodostaa yhteyden sertifikaatin avulla, voi saada profiilipäivityksiä aina palvelimeen uudelleen yhdistäessään.</p>\n<p>Tätä voidaan käyttää esimerkiksi:</p>\n<ul>\n<li>tarvittavien muutosten jakelemiseen</li>\n<li>lisätoimintojen asetuspakettien toimittamiseen (esim. Medic-työkalupalkki Medic-ryhmän käyttäjille)</li>\n<li>Mesh-salausavainten päivittämiseen</li>\n</ul>\n<h2 id=\"tool-työkalu-1\"><a href=\"#tool-työkalu-1\"><strong>Tool (Työkalu)</strong></a></h2>\n<p>Työkalua käytetään <strong>manuaalisena menetelmänä</strong> asetusten päivittämiseen tai tiedostojen jakamiseen tietyille käyttäjille.</p>\n<p>Tätä käytetään yleensä:</p>\n<ul>\n<li>käyttäjien pakotettuihin päivityksiin, jos he eivät ole saaneet tiedostoja muilla tavoilla.</li>\n</ul>"
+    }
+  ]
+}

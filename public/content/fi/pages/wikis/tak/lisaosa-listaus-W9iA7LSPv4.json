@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "f05f880a-11bf-48f3-a268-d86506eee537",
+  "slug": "lisaosa-listaus-W9iA7LSPv4",
+  "collection": "wikis/tak",
+  "locale": "fi",
+  "title": "Lisäosa listaus",
+  "breadcrumb": [
+    "TAK Tuotteet Käyttäjille",
+    "WinTAK - Windows TAK",
+    "Lisäosa listaus"
+  ],
+  "createdAt": "2025-12-08T01:45:53.187Z",
+  "updatedAt": "2026-02-19T13:24:21.507Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Data Sync</p>\n<p>GRG Builder</p>\n<p>Reports</p>\n<p>TAK Chat</p>\n<p>TAK Replay</p>\n<p>VNS (Vehicle Navigation System)</p>"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "799dae9d-ebd5-4143-9e25-b97d18746975",
+  "slug": "data-sync-tillagget-aqLOkDieIe",
+  "collection": "wikis/tak",
+  "locale": "sv",
+  "title": "Data Sync-tillägget",
+  "breadcrumb": [
+    "TAK-produkter för Användare",
+    "ATAK - Android TAK",
+    "Verktyg och tillägg",
+    "Data Sync-tillägget"
+  ],
+  "createdAt": "2025-12-08T03:03:38.905Z",
+  "updatedAt": "2026-02-19T13:05:26.738Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Tilläggsbeskrivning",
+      "id": "tilläggsbeskrivning"
+    },
+    {
+      "depth": 2,
+      "text": "Instruktionsvideor",
+      "id": "instruktionsvideor"
+    },
+    {
+      "depth": 2,
+      "text": "Data Sync-tilläggets användarhandbok för ATAK",
+      "id": "data-sync-tilläggets-användarhandbok-för-atak"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p><img src=\"/content/images/sv/attachments/5c6d780d65fe7f7b.webp\" alt=\"\">\\n</p>\n<h2 id=\"tilläggsbeskrivning\"><a href=\"#tilläggsbeskrivning\"><strong>Tilläggsbeskrivning</strong></a></h2>\n<p>Data Synchronization-tillägget används för att synkronisera flera ATAK-enheter som deltar i samma övning eller händelse. Detta tillägg kräver TAK Server version 1.3.3 eller senare. TAK Server lagrar all <em>mission</em>-data i serverns databas. Klientenheter kan ansluta sig till en mission för att få dynamiska uppdateringar i takt med att uppdraget förändras, eller för att synkronisera data som missats när enheten varit frånkopplad.</p>\n<p>Tillägget stöder för närvarande följande datatyper:</p>\n<p>• <strong>Kartobjekt (CoT-data)</strong> – såsom markeringar, former, rutter osv.\\n• <strong>Filer</strong> – valfri fil kan synkroniseras, inklusive bilder, GRG:er, konfigurationsfiler m.m.\\n• <strong>Loggar</strong> – Mission- eller Recce-loggar är tidsstämplade händelser kopplade till ett uppdrag\\n• <strong>Chat</strong> – Varje mission har ett permanent uppdragsbaserat chattrum</p>\n<p>Godtyckliga CoT/UID:er kan knytas till en mission så att alla uppdateringar av dessa objekt automatiskt synkroniseras till alla prenumeranter.\\nTillägget möjliggör även export av hela missionen som ett mission-paket (zip-fil) för arkivering eller delning med andra system. Det erbjuder dessutom <em>dead reckoning</em>-navigeringsförmåga för situationer där GPS eller annan positionering inte är tillgänglig.</p>\n<h2 id=\"instruktionsvideor\"><a href=\"#instruktionsvideor\">Instruktionsvideor</a></h2>\n<h4 id=\"data-sync-plugin-for-atak-45min\"><a href=\"#data-sync-plugin-for-atak-45min\">Data Sync Plugin for ATAK (45min)</a></h4>"
+    },
+    {
+      "type": "youtube",
+      "videoId": "5c8Hh1Pk7t8"
+    },
+    {
+      "type": "html",
+      "html": "<h4 id=\"atak-data-sync-installation-and-subscription-tutorial-5min\"><a href=\"#atak-data-sync-installation-and-subscription-tutorial-5min\">ATAK Data Sync Installation and Subscription Tutorial (5min)</a></h4>"
+    },
+    {
+      "type": "youtube",
+      "videoId": "CGQ-JrTjaFM"
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"data-sync-tilläggets-användarhandbok-för-atak\"><a href=\"#data-sync-tilläggets-användarhandbok-för-atak\">Data Sync-tilläggets användarhandbok för ATAK</a></h2>"
+    },
+    {
+      "type": "pdf",
+      "src": "attachments/edea572a-c5cc-4f81-926b-42937f498a74.pdf",
+      "title": "ATAK 5.5.0 DataSync SUM.pdf"
+    }
+  ]
+}

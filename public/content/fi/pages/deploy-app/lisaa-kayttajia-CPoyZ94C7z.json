@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 1,
+  "id": "e00c5123-e584-46ba-a48a-6673d23499ea",
+  "slug": "lisaa-kayttajia-CPoyZ94C7z",
+  "collection": "deploy-app",
+  "locale": "fi",
+  "title": "Lisää käyttäjiä",
+  "breadcrumb": [
+    "Android",
+    "Ylläpitäjäohjeet",
+    "Lisää käyttäjiä"
+  ],
+  "createdAt": "2026-02-17T07:13:06.764Z",
+  "updatedAt": "2026-02-25T07:33:56.672Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>\\</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Käyttäjien lisääminen",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Hallintatyökalut löytyvät helposti sivupalkista.</li>\n<li>Valitse \"Lisää käyttäjiä\".</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/7aff08b00d245a5d.webp",
+              "width": 2560,
+              "height": 5712
+            }
+          ]
+        },
+        {
+          "title": "Kutsukoodit",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Valitse joko olemassa oleva kutsukoodi tai luo uusi.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/7928e9d7bc99768c.webp",
+              "width": 2560,
+              "height": 5712
+            }
+          ]
+        },
+        {
+          "title": "Kutsukoodien käyttö",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Käyttäjät voivat skannata QR-koodin laitteeltasi.</li>\n<li>Voit myös jakaa linkin tai luoda esimerkiksi helposti tulostettavan PDF-tiedoston.</li>\n<li>Käyttäjät pääsevät nyt <strong>odotushuoneeseen</strong>.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/9619c131ffc35a8b.webp",
+              "width": 2560,
+              "height": 5712
+            }
+          ]
+        },
+        {
+          "title": "Käyttäjien hyväksyminen",
+          "layout": "image-left",
+          "html": "<ul>\n<li><strong>Odotushuoneessa</strong> tulisi nyt näkyä käyttäjiä.</li>\n<li>Pääset sinne sivupalkista.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/5ba8aac8a0c44b86.webp",
+              "width": 2560,
+              "height": 5712
+            }
+          ]
+        },
+        {
+          "title": "Käyttäjien hyväksyminen",
+          "layout": "image-left",
+          "html": "<p>Sinulla on muutama tapa hyväksyä käyttäjiä:</p>\n<ul>\n<li>Skannaa heidän laitteillaan näkyvä QR-koodi (suositeltu tapa).</li>\n<li>Klikkaa käyttäjää ja syötä heidän laitteellaan näkyvä koodi.</li>\n<li>Avaa käyttäjän sinulle jakama linkki.\nKun hyväksyt käyttäjiä (erityisesti linkkien kautta), ole 100% varma, että henkilö on se, kuka hän väittää olevansa. Hyväksyminen antaa pääsyn esimerkiksi joukkojen sijaintitietoihin, jos käytössä on TAK.</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "Kutsukoodin sulkeminen",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Turvallisuuden parantamiseksi on viisasta joko sulkea tai poistaa kutsukoodit käytöstä silloin, kun niitä ei tarvita.</li>\n<li>Koodien hallinta avataan painamalla koodin vieressä olevaa painiketta.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/7c81482d44d7b5c9.webp",
+              "width": 2561,
+              "height": 5712
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "html",
+      "html": "<p>\\</p>"
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "id": "6c320d9e-dad4-4ed8-8026-94620b6084ff",
+  "slug": "development-guide-cXwaZVMJSd",
+  "collection": "dev",
+  "locale": "en",
+  "title": "Development Guide",
+  "breadcrumb": [
+    "Development Guide"
+  ],
+  "createdAt": "2026-05-28T07:16:42.567Z",
+  "updatedAt": "2026-06-02T06:52:53.350Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Prerequisites",
+      "id": "prerequisites"
+    },
+    {
+      "depth": 2,
+      "text": "Bring up a local environment",
+      "id": "bring-up-a-local-environment"
+    },
+    {
+      "depth": 2,
+      "text": "Working in a service folder",
+      "id": "working-in-a-service-folder"
+    },
+    {
+      "depth": 2,
+      "text": "Iterating on rmapi against the cluster",
+      "id": "iterating-on-rmapi-against-the-cluster"
+    },
+    {
+      "depth": 2,
+      "text": "Common local workflows",
+      "id": "common-local-workflows"
+    },
+    {
+      "depth": 2,
+      "text": "When something goes wrong",
+      "id": "when-something-goes-wrong"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>This page is about working on the platform from your own machine: spinning up a local cluster, editing manifests, and iterating on whatever service you're focused on.</p>\n<p>If you haven't yet, skim <a href=\"/doc/134aff5a-b4b4-4c2f-a494-c61d1e7a8a14\">Architecture</a> first so the phases and folder layout below don't come out of nowhere.</p>\n<h2 id=\"prerequisites\"><a href=\"#prerequisites\">Prerequisites</a></h2>\n<p>The repo pins tool versions through <a href=\"https://mise.jdx.dev/\" target=\"_blank\" rel=\"noopener noreferrer\"><code>mise</code></a>. Once mise is installed, it picks up the right <code>kubectl</code>, <code>kind</code>, <code>helm</code>, <code>yq</code>, <code>task</code>, and <code>zarf</code> when you <code>cd</code> into the directory.</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#7F848E;font-style:italic\"># one-time</span></span>\n<span class=\"line\"><span style=\"color:#61AFEF\">mise</span><span style=\"color:#98C379\"> install</span><span style=\"color:#7F848E;font-style:italic\">        # installs the versions listed in mise.toml</span></span>\n<span class=\"line\"><span style=\"color:#61AFEF\">mise</span><span style=\"color:#98C379\"> trust</span><span style=\"color:#7F848E;font-style:italic\">          # trust the local mise.toml</span></span>\n<span class=\"line\"></span>\n<span class=\"line\"><span style=\"color:#7F848E;font-style:italic\"># also needed (not managed by mise)</span></span>\n<span class=\"line\"><span style=\"color:#61AFEF\">docker</span><span style=\"color:#7F848E;font-style:italic\">              # kind runs nodes as containers</span></span></code></pre>",
+      "lang": "bash"
+    },
+    {
+      "type": "html",
+      "html": "<p>Versions live in <code>../mise.toml</code>. Without mise, install matching versions of <code>kubectl 1.36</code>, <code>kind 0.31</code>, <code>helm 3</code>, <code>task 3</code>, <code>yq 4.53.2</code>, and <code>zarf 0.76.0</code> by hand.</p>\n<h2 id=\"bring-up-a-local-environment\"><a href=\"#bring-up-a-local-environment\">Bring up a local environment</a></h2>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#61AFEF\">task</span><span style=\"color:#98C379\"> up</span><span style=\"color:#7F848E;font-style:italic\">        # creates the kind cluster and runs all four deploy phases</span></span>\n<span class=\"line\"><span style=\"color:#61AFEF\">task</span><span style=\"color:#7F848E;font-style:italic\">           # list every available task</span></span>\n<span class=\"line\"><span style=\"color:#61AFEF\">task</span><span style=\"color:#98C379\"> down</span><span style=\"color:#7F848E;font-style:italic\">      # tear the kind cluster down (alias for `cluster:delete`)</span></span></code></pre>",
+      "lang": "bash"
+    },
+    {
+      "type": "html",
+      "html": "<p><code>task up</code> is safe to re-run. It won't recreate the cluster if <code>opendefense-kind</code> is already there. The cluster name and port mappings come from <code>../kind-config.yaml</code>, which pre-binds ports 80 and 443 along with the TAK and MediaMTX ports to localhost.</p>\n<p>When it's done, the UI is at <a href=\"https://localmaeher.dev.pvarki.fi/\" target=\"_blank\" rel=\"noopener noreferrer\">https://localmaeher.dev.pvarki.fi/</a>. The hostname is just a public DNS record pointing at <code>127.0.0.1</code>, so you don't have to mess with <code>/etc/hosts</code>.</p>\n<p>If <code>task deploy</code> falls over partway through a phase, it's usually a controller from the previous phase that hasn't reported Ready yet. Re-running the same command is enough. The wait gates carry on from where they stopped.</p>\n<h2 id=\"working-in-a-service-folder\"><a href=\"#working-in-a-service-folder\">Working in a service folder</a></h2>\n<p>Every service follows the same layout:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span>k8s/&#x3C;service>/</span></span>\n<span class=\"line\"><span>├── base/</span></span>\n<span class=\"line\"><span>│   ├── kustomization.yaml</span></span>\n<span class=\"line\"><span>│   └── resources/...              # Deployment, Service, PVC, namespace, ...</span></span>\n<span class=\"line\"><span>└── overlays/</span></span>\n<span class=\"line\"><span>    ├── local/</span></span>\n<span class=\"line\"><span>    │   └── kustomization.yaml   # hostnames, image overrides, env patches</span></span>\n<span class=\"line\"><span>    └── cloud/</span></span>\n<span class=\"line\"><span>        └── kustomization.yaml</span></span></code></pre>",
+      "lang": "plaintext"
+    },
+    {
+      "type": "html",
+      "html": "<p>Examples worth copying from:</p>\n<ul>\n<li><code>k8s/battlelog/base/kustomization.yaml</code>, a simple app with a database.</li>\n<li><code>k8s/pvarki-pki/base/kustomization.yaml</code>, CA and cert plumbing.</li>\n<li><code>k8s/traefik/base/kustomization.yaml</code>, a Helm-chart-backed base.</li>\n</ul>\n<p>Rules of thumb:</p>\n<ul>\n<li>Keep <code>base/</code> environment-agnostic: no hostnames, no environment registries, no env-specific certificates, placeholder images only.</li>\n<li>Anything environment-specific (image tags, ingress routes, certificates, env patches) belongs in the overlays, and each environment gets its own <code>overlays/&#x3C;env>/kustomization.yaml</code>.</li>\n<li>Try to keep one concern per change. A routing tweak, an image bump, and a cert change are three separate commits, not one.</li>\n<li>Helm-backed bases need <code>--enable-helm</code>. <code>traefik</code>, <code>trust-manager</code>, <code>external-secrets-operator</code>, and a few others render Helm charts inside Kustomize. Build and apply them with <code>--enable-helm</code>.</li>\n</ul>\n<p>After editing, render the overlay locally before you apply:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#61AFEF\">kubectl</span><span style=\"color:#98C379\"> kustomize</span><span style=\"color:#D19A66\"> --enable-helm</span><span style=\"color:#98C379\"> k8s/battlelog/overlays/local</span></span>\n<span class=\"line\"><span style=\"color:#61AFEF\">kubectl</span><span style=\"color:#98C379\"> kustomize</span><span style=\"color:#D19A66\"> --enable-helm</span><span style=\"color:#98C379\"> k8s/main/local/opendefense</span></span></code></pre>",
+      "lang": "bash"
+    },
+    {
+      "type": "html",
+      "html": "<p>If you change the composition (a service moves to a different phase, or a new one shows up) keep <a href=\"../taskfile.yaml\"><code>../taskfile.yaml</code></a> in sync, since that's what owns the rollout wait gates between phases.</p>\n<h2 id=\"iterating-on-rmapi-against-the-cluster\"><a href=\"#iterating-on-rmapi-against-the-cluster\">Iterating on rmapi against the cluster</a></h2>\n<p><a href=\"https://mirrord.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">mirrord</a> lets you run <code>rmapi</code> locally while that local process still sees the cluster's traffic, secrets, and filesystem. The flow is roughly:</p>\n<ol>\n<li>\n<p><code>task up</code> so <code>opendefense-rmapi</code> is live in the <code>opendefense-system</code> namespace.</p>\n</li>\n<li>\n<p>In the python-rasenmaeher-api checkout, run:</p>\n<pre><code class=\"language-bash\">mirrord exec --steal \\\n  --target-namespace opendefense-system \\\n  --target deployment/opendefense-rmapi -- \\\n  bash -c 'JWT_PRIVKEY_PATH=./locadir/private/rm_jwtsign.key \\\n           JWT_PUBKEY_PATH=./locadir/public \\\n           poetry run uvicorn --reload --factory \\\n             rasenmaeher_api.web.application:get_app'\n</code></pre>\n<p><code>--steal</code> redirects in-cluster traffic to your local process instead of the deployed pod. Reloads hit your code immediately.</p>\n</li>\n</ol>\n<h2 id=\"common-local-workflows\"><a href=\"#common-local-workflows\">Common local workflows</a></h2>\n<table>\n<thead>\n<tr>\n<th>Task</th>\n<th>Command</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>List available tasks</td>\n<td><code>task</code></td>\n</tr>\n<tr>\n<td>Bring everything up from scratch</td>\n<td><code>task up</code></td>\n</tr>\n<tr>\n<td>Re-apply after editing manifests</td>\n<td><code>task deploy</code></td>\n</tr>\n<tr>\n<td>Render a single overlay to YAML</td>\n<td><code>kubectl kustomize --enable-helm k8s/&#x3C;svc>/overlays/local</code></td>\n</tr>\n<tr>\n<td>Watch a rollout</td>\n<td><code>kubectl -n opendefense-system get pods -w</code></td>\n</tr>\n<tr>\n<td>Tear the cluster down</td>\n<td><code>task down</code></td>\n</tr>\n<tr>\n<td>Check current kube context</td>\n<td><code>kubectl config current-context</code></td>\n</tr>\n</tbody>\n</table>\n<h2 id=\"when-something-goes-wrong\"><a href=\"#when-something-goes-wrong\">When something goes wrong</a></h2>\n<ul>\n<li>If <code>task deploy</code> hangs on a rollout wait, look at the deployment and its pods with <code>kubectl describe deployment &#x3C;name> -n &#x3C;ns></code>. The wait gates in <code>taskfile.yaml</code> tell you which deployments it's blocking on.</li>\n<li><code>error: unable to recognize \"...\": no matches for kind</code> after an edit means a CRD from <code>infra-phase1</code> isn't there yet. Run <code>task deploy</code> and let phase 1 settle before you re-apply.</li>\n<li><code>Forbidden</code> errors during apply are usually a server-side-apply field ownership conflict, typically on something Helm or a human created earlier. Dig into it before forcing anything. Don't just slap <code>--force-conflicts</code> on everything.</li>\n<li>TLS errors between pods usually mean the consumer namespace never got its CA bundle from <code>trust-manager</code>. Those bundles are namespace-scoped and only show up once <code>infra-phase2</code> is healthy.</li>\n</ul>"
+    }
+  ]
+}

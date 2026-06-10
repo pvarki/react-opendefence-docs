@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "58a46804-6639-4b5e-a7c0-3056309cb411",
+  "slug": "forwarding-observations-K5fcmMIAnp",
+  "collection": "wikis/tak",
+  "locale": "en",
+  "title": "Forwarding Observations",
+  "breadcrumb": [
+    "Usage Models",
+    "Use Cases",
+    "Forwarding Observations"
+  ],
+  "createdAt": "2025-09-24T16:11:36.625Z",
+  "updatedAt": "2026-02-20T06:17:12.644Z",
+  "headings": [
+    {
+      "depth": 3,
+      "text": "HQ sharing diagram:",
+      "id": "hq-sharing-diagram"
+    },
+    {
+      "depth": 3,
+      "text": "Observation feed diagram:",
+      "id": "observation-feed-diagram"
+    },
+    {
+      "depth": 2,
+      "text": "Sending via HQ Role",
+      "id": "sending-via-hq-role"
+    },
+    {
+      "depth": 2,
+      "text": "Sending via Observation feed",
+      "id": "sending-via-observation-feed"
+    },
+    {
+      "depth": 2,
+      "text": "TAK Tools used:",
+      "id": "tak-tools-used"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<hr>\n<hr>\n<p>TAK is used to provide up to date intelligence to increase the situational awareness of troops. Having easy access to reviewed and verified information that can be easily updated.</p>\n<p>Here are two basic use cases for forwarding, updating and sharing observations to the command and other users in the server. The ways are one-to-one share to HQ Role personnel and sharing with Observation feed. Admin will instruct the users witch way is used.</p>\n<h3 id=\"hq-sharing-diagram\"><a href=\"#hq-sharing-diagram\">HQ sharing diagram:</a></h3>"
+    },
+    {
+      "type": "image",
+      "src": "/content/images/en/attachments/a6d90a26a6a40ac9.webp",
+      "alt": "",
+      "width": 1052,
+      "height": 372
+    },
+    {
+      "type": "html",
+      "html": "<h3 id=\"observation-feed-diagram\"><a href=\"#observation-feed-diagram\">Observation feed diagram:</a></h3>"
+    },
+    {
+      "type": "image",
+      "src": "/content/images/en/attachments/7e68b1bb54a2be03.webp",
+      "alt": "",
+      "width": 1057,
+      "height": 375
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"sending-via-hq-role\"><a href=\"#sending-via-hq-role\">Sending via HQ Role</a></h2>\n<h4 id=\"user---sharing-via-hq-role\"><a href=\"#user---sharing-via-hq-role\">User - Sharing via HQ Role</a></h4>\n<p>User verifies data and creates a marker for it (filling the most critical information about it) and sends it to HQ role users.</p>\n<p>Users use the one-to-one chat to give more information about the marker or highlight it if the information is urgent.</p>\n<p>Sharing to the HQ brings the information available to only users with HQ role.</p>\n<h4 id=\"hq---sharing-to-whole-server\"><a href=\"#hq---sharing-to-whole-server\">HQ - Sharing to whole server</a></h4>\n<p>HQ follows the information it is getting via messages / data packages</p>\n<p>HQ verifies the received data (it is up to date and relevant) and sends it to the RECON feed to be distributed to the users. If relevant HQ can share the data to other servers.</p>\n<p>Sharing to the RECON feed brings the information available to all users in the server.</p>\n<h2 id=\"sending-via-observation-feed\"><a href=\"#sending-via-observation-feed\">Sending via Observation feed</a></h2>\n<h4 id=\"user---sharing-to-observation-feed\"><a href=\"#user---sharing-to-observation-feed\">User - Sharing to Observation feed</a></h4>\n<p>User verifies data and creates a marker for it (filling the most critical information about it) and sends it to Observation feed. User can then update the information and keep it relevant when needed.</p>\n<p>Users use the feed chat to give more information about the marker or highlight it if the information is urgent.</p>\n<p>Sharing to the Observation feed brings the information available to users in the same group.</p>\n<h4 id=\"hq---sharing-to-whole-server-1\"><a href=\"#hq---sharing-to-whole-server-1\">HQ - Sharing to whole server</a></h4>\n<p>HQ follows the servers Observation / Team feeds and looks for data that is needed in the RECON feed.</p>\n<p>HQ verifies the received data (it is up to date and relevant) and sends it to the RECON feed to be distributed to the users. If relevant HQ can share the data to other servers.</p>\n<p>Sharing to the RECON feed brings the information available to all users in the server.</p>\n<h4 id=\"user---updates-the-recon-feed-data-to-observation-feed\"><a href=\"#user---updates-the-recon-feed-data-to-observation-feed\">User - Updates the RECON feed data to Observation feed</a></h4>\n<p>When user gets more information about a RECON feed data. They can update the information and share it via the Observation feed (Location of the marker, information about the marker, etc).</p>\n<h4 id=\"observation-feed-specs\"><a href=\"#observation-feed-specs\">Observation feed specs</a></h4>\n<p>Only users that need to send information need the Observation feed and the only need to subscribe to it during the times they are taking part of the operation. Most users are only subscribing to RECON feed.</p>\n<p>With bigger organizations there can be multiple Observation feeds or Mission feeds for different teams to have the instant access to new information. For the servers the main verified intelligence is the RECON feed.</p>\n<h2 id=\"tak-tools-used\"><a href=\"#tak-tools-used\">TAK Tools used:</a></h2>\n<ul>\n<li><a href=\"/doc/34f28f61-6646-4a4d-a417-5ac036fccdb3\">Contacts / GeoChat tool</a></li>\n<li><a href=\"/doc/ba4bcf14-7495-408f-87f2-bf557fa465ac\">Data Sync -plugin</a></li>\n</ul>"
+    }
+  ]
+}

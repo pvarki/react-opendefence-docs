@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "8788c439-88dd-4ea0-9ea8-a63614058d63",
+  "slug": "tak-tools-for-products-pX6PDDy2l9",
+  "collection": "wikis/tak",
+  "locale": "en",
+  "title": "TAK Tools for Products",
+  "breadcrumb": [
+    "TAK Tools for Products"
+  ],
+  "createdAt": "2025-10-05T10:00:47.795Z",
+  "updatedAt": "2026-02-19T13:31:59.188Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "TAK Tools:",
+      "id": "tak-tools"
+    },
+    {
+      "depth": 2,
+      "text": "TAK Plugins:",
+      "id": "tak-plugins"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>TAK Products functions are mostly the same between different products (i.e. ATAK, WinTAK) and some of the additional plugins have been made for the different products. The functions being the same between products helps to bring together the ecosystem with takserver and other ways of connection between client devices.</p>\n<p>TAK Tools are the functions/tools that are included in TAK products.</p>\n<p>TAK plugins are tak.gov, software company or community developed additions to TAK Products, that add more functions and/or combine multiple included functions together.</p>\n<h2 id=\"tak-tools\"><a href=\"#tak-tools\">TAK Tools:</a></h2>\n<ul>\n<li><a href=\"/doc/5b52f888-abd3-4325-82a0-0d81a75ad808\">Bloodhound tool</a>\n<ul>\n<li>Tool for navigating from point to point.</li>\n</ul>\n</li>\n<li><a href=\"/doc/34f28f61-6646-4a4d-a417-5ac036fccdb3\">Contacts / GeoChat tool</a>\n<ul>\n<li>User contacts and chat.</li>\n</ul>\n</li>\n<li><a href=\"/doc/5023efce-a2df-4288-bc49-cc1346082d4e\">Point Dropper tool</a>\n<ul>\n<li>Marking interesting locations on map</li>\n</ul>\n</li>\n</ul>\n<h2 id=\"tak-plugins\"><a href=\"#tak-plugins\">TAK Plugins:</a></h2>\n<ul>\n<li><a href=\"/doc/ba4bcf14-7495-408f-87f2-bf557fa465ac\">Data Sync -plugin</a>\n<ul>\n<li>Sharing data and keeping it synced between users</li>\n</ul>\n</li>\n<li><a href=\"/doc/1b6cc232-d949-4b50-847d-2411a045d9b1\">TAK Replay -plugin</a>\n<ul>\n<li>Record TAK events to timeline and replay events on map.</li>\n</ul>\n</li>\n<li><a href=\"/doc/e164f6fb-bdb2-4ba2-8543-273d8c59eee1\">UAS Tool -plugin</a>\n<ul>\n<li>UAS TAK integration tool</li>\n</ul>\n</li>\n<li><a href=\"/doc/39b95093-02df-4339-b20f-6c97f717bb36\">VNS -plugin</a>\n<ul>\n<li>Navigation data plugin for TAK</li>\n</ul>\n</li>\n</ul>"
+    }
+  ]
+}

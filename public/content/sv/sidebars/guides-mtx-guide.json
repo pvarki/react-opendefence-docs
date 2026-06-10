@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "label": "MTX Guide",
+  "slug": "guides/mtx-guide",
+  "items": [
+    {
+      "type": "doc",
+      "id": "deploy-app-mtx-C43AiOwo2H",
+      "label": "Deploy App - MTX",
+      "slug": "deploy-app-mtx-C43AiOwo2H"
+    },
+    {
+      "type": "group",
+      "id": "titta-pa-streamen-0SUHzvwK33",
+      "label": "Titta på streamen",
+      "children": [
+        {
+          "type": "doc",
+          "id": "titta-pa-streamen-0SUHzvwK33",
+          "label": "Titta på streamen",
+          "slug": "titta-pa-streamen-0SUHzvwK33"
+        },
+        {
+          "type": "doc",
+          "id": "webblasare-ww2sENtpLr",
+          "label": "Webbläsare",
+          "slug": "webblasare-ww2sENtpLr"
+        },
+        {
+          "type": "doc",
+          "id": "vlc-player-8p9jKo0ZTH",
+          "label": "VLC Player",
+          "slug": "vlc-player-8p9jKo0ZTH"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "publicera-streamen-51x6awRSrH",
+      "label": "Publicera streamen",
+      "children": [
+        {
+          "type": "doc",
+          "id": "publicera-streamen-51x6awRSrH",
+          "label": "Publicera streamen",
+          "slug": "publicera-streamen-51x6awRSrH"
+        },
+        {
+          "type": "doc",
+          "id": "gopro-2PrQ7u3goE",
+          "label": "GoPro",
+          "slug": "gopro-2PrQ7u3goE"
+        },
+        {
+          "type": "doc",
+          "id": "opentak-icu-manuell-metod-are1FsNNAC",
+          "label": "OpenTAK ICU - Manuell metod",
+          "slug": "opentak-icu-manuell-metod-are1FsNNAC"
+        },
+        {
+          "type": "doc",
+          "id": "opentak-icu-HJresNyWaE",
+          "label": "OpenTAK ICU",
+          "slug": "opentak-icu-HJresNyWaE"
+        },
+        {
+          "type": "doc",
+          "id": "uas-tool-97tr5ME3hk",
+          "label": "UAS Tool",
+          "slug": "uas-tool-97tr5ME3hk"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "a4ae4ce6-ab74-46c0-b52f-f4d857cdb433",
+  "slug": "tak-aware-apple-tak-3TrdXhARBh",
+  "collection": "wikis/tak",
+  "locale": "en",
+  "title": "TAK Aware - Apple TAK",
+  "breadcrumb": [
+    "TAK Products for Users",
+    "TAK Aware - Apple TAK"
+  ],
+  "createdAt": "2025-10-26T18:03:57.906Z",
+  "updatedAt": "2026-02-19T13:18:49.177Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Available from:",
+      "id": "available-from"
+    },
+    {
+      "depth": 2,
+      "text": "Product manual",
+      "id": "product-manual"
+    },
+    {
+      "depth": 2,
+      "text": "Product description",
+      "id": "product-description"
+    },
+    {
+      "depth": 3,
+      "text": "System Requirements",
+      "id": "system-requirements"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "src": "/content/images/en/attachments/1f2bd5472620dcd2.webp",
+      "alt": "",
+      "width": 430,
+      "height": 430
+    },
+    {
+      "type": "image",
+      "src": "/content/images/en/attachments/0866292196270644.webp",
+      "alt": "",
+      "width": 1024,
+      "height": 471
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"available-from\"><a href=\"#available-from\">Available from:</a></h2>\n<p><a href=\"https://apps.apple.com/br/app/tak-aware/id6738631659\" target=\"_blank\" rel=\"noopener noreferrer\">https://apps.apple.com/br/app/tak-aware/id6738631659</a></p>\n<h2 id=\"product-manual\"><a href=\"#product-manual\">Product manual</a></h2>"
+    },
+    {
+      "type": "pdf",
+      "src": "attachments/5ef01449-5734-4d78-a356-f2b11f5059ca.pdf",
+      "title": "takaware-v152.pdf"
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"product-description\"><a href=\"#product-description\">Product description</a></h2>\n<p>TAK Aware is a lightweight Team Awareness Kit (also known as the Tactical Assault Kit in the Department of Defense) application designed to enable easy integrations into existing training and operational workflows while still providing the level of situational awareness and interaction you expect from TAK. The application is designed from the ground-up in iOS and connects to your favorite TAK servers with either Data Packages or Certificate Enrollment, and supports Data Packages, DataSync, Channels, Certificate Enrollment and more!</p>\n<h3 id=\"system-requirements\"><a href=\"#system-requirements\">System Requirements</a></h3>\n<p>Operating System: iOS version 17 and later.</p>"
+    }
+  ]
+}

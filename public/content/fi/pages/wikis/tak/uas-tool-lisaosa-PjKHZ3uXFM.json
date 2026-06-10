@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "97f08263-447b-40e2-95ac-ecf1a108273c",
+  "slug": "uas-tool-lisaosa-PjKHZ3uXFM",
+  "collection": "wikis/tak",
+  "locale": "fi",
+  "title": "UAS Tool -lisäosa",
+  "breadcrumb": [
+    "TAK Työkalut Tuotteille",
+    "UAS Tool -lisäosa"
+  ],
+  "createdAt": "2025-12-08T01:07:18.000Z",
+  "updatedAt": "2026-02-19T13:39:07.390Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "TAK-tuotesivut työkalulle",
+      "id": "tak-tuotesivut-työkalulle"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "src": "/content/images/fi/attachments/6e0082cb2a785620.webp",
+      "alt": "",
+      "caption": "=671x",
+      "width": 671,
+      "height": 675
+    },
+    {
+      "type": "html",
+      "html": "<p>UAS Tool on lisäosa, joka mahdollistaa miehittämättömien ilma-alusjärjestelmien (UAS) integroinnin parannetun tilannetietoisuuden (SA), telemetriatiedon, Full Motion Video (FMV) -kuvan ja johtamisen sekä ohjauksen (C2) tueksi.</p>\n<h2 id=\"tak-tuotesivut-työkalulle\"><a href=\"#tak-tuotesivut-työkalulle\">TAK-tuotesivut työkalulle</a></h2>\n<ul>\n<li>ATAK <a href=\"/doc/e841f929-6240-493c-b6f2-b45f6a6e501d\">UAS Tool -lisäosa</a></li>\n</ul>"
+    }
+  ]
+}

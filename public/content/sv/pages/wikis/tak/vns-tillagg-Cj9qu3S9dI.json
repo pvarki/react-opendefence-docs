@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "3cdd17e2-6991-47be-aa50-6806dd1146fb",
+  "slug": "vns-tillagg-Cj9qu3S9dI",
+  "collection": "wikis/tak",
+  "locale": "sv",
+  "title": "VNS -tillägg",
+  "breadcrumb": [
+    "TAK-verktyg för Produkter",
+    "VNS -tillägg"
+  ],
+  "createdAt": "2025-12-08T03:03:36.081Z",
+  "updatedAt": "2026-02-19T13:40:08.706Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "TAK-produktsidor för tillägget",
+      "id": "tak-produktsidor-för-tillägget"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "src": "/content/images/sv/attachments/0aed24c4dd22ccae.webp",
+      "alt": "",
+      "caption": "=342x",
+      "width": 741,
+      "height": 754
+    },
+    {
+      "type": "html",
+      "html": "<p>Tillägget <strong>Vehicle Navigation System (VNS)</strong> utför två huvudfunktioner. För det första möjliggör det ruttanpassning till vägnätet i TAK. För det andra förser det <strong>Augmented Reality System–Navigation (ARES-N)</strong> med centrala data, såsom enhetens position, relevanta symboler för förbättrad situationsmedvetenhet samt sväng-för-sväng-navigationsinstruktioner.</p>\n<h2 id=\"tak-produktsidor-för-tillägget\"><a href=\"#tak-produktsidor-för-tillägget\">TAK-produktsidor för tillägget</a></h2>\n<ul>\n<li>WinTAK <a href=\"/doc/b3a66926-4494-408a-ba74-778687b3c4ee\">VNS - lisäosa</a></li>\n<li>ATAK <a href=\"/doc/c9a109d6-be84-4e97-aa62-1226523f8848\">VNS -lisäosa</a></li>\n</ul>"
+    }
+  ]
+}

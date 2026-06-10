@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "5f14e760-f5a6-4eac-b86c-0b4299b020ee",
+  "slug": "contacts-geochat-tyokalu-3WnDMNrvne",
+  "collection": "wikis/tak",
+  "locale": "fi",
+  "title": "Contacts / GeoChat -työkalu",
+  "breadcrumb": [
+    "TAK Työkalut Tuotteille",
+    "Contacts / GeoChat -työkalu"
+  ],
+  "createdAt": "2025-12-08T01:07:49.252Z",
+  "updatedAt": "2026-02-19T13:33:53.247Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "TAK-tuotesivut työkalulle",
+      "id": "tak-tuotesivut-työkalulle"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "src": "/content/images/fi/attachments/25e331c17ee17a21.webp",
+      "alt": "",
+      "caption": "=218x",
+      "width": 218,
+      "height": 161
+    },
+    {
+      "type": "html",
+      "html": "<p>Contacts-työkalu sisältää käyttäjät ja muut yhteystoiminnot TAK-järjestelmän sisällä. Tämän työkalun avulla voidaan keskustella, lähettää paketteja sekä olla yhteydessä muihin käyttäjiin/toimintoihin TAK:ssa.</p>\n<h2 id=\"tak-tuotesivut-työkalulle\"><a href=\"#tak-tuotesivut-työkalulle\">TAK-tuotesivut työkalulle</a></h2>\n<ul>\n<li>WinTAK <a href=\"/doc/03db5d21-39c1-4477-b684-7ee2675425ef\">Contacts / GeoChat -työkalu</a></li>\n<li>ATAK <a href=\"/doc/0e4ecfe3-e4c3-43e6-b9ac-fe95e7b1dc14\">Contacts / GeoChat -työkalu</a></li>\n</ul>"
+    }
+  ]
+}

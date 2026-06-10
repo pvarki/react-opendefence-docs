@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "f0773fed-b8fc-4ea6-bbef-a226de8d7299",
+  "slug": "tak-replay-tillagg-nPQC6qexcA",
+  "collection": "wikis/tak",
+  "locale": "sv",
+  "title": "TAK Replay -tillägg",
+  "breadcrumb": [
+    "TAK-verktyg för Produkter",
+    "TAK Replay -tillägg"
+  ],
+  "createdAt": "2025-12-08T03:03:36.210Z",
+  "updatedAt": "2026-02-19T13:38:19.397Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "TAK-produktsidor för tillägget",
+      "id": "tak-produktsidor-för-tillägget"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "src": "/content/images/sv/attachments/aa2e72c8a045629f.webp",
+      "alt": "",
+      "caption": "=310x",
+      "width": 310,
+      "height": 310
+    },
+    {
+      "type": "html",
+      "html": "<p>TAK Replay möjliggör inspelning av kart­händelser och chattar i realtid för senare uppspelning. Inspelningsområdet kan anpassas baserat på zoomnivå och visningsområde. Varje inspelning kan spelas upp i verktyget <strong>Timeline Viewer</strong>, vilket ger användaren möjlighet att granska händelser i realtid eller i snabbspolning. Dessutom kan användare hämta och spara alla kart­händelser och chattar från TAK Server som inträffat under en användardefinierad tidsperiod.</p>\n<h2 id=\"tak-produktsidor-för-tillägget\"><a href=\"#tak-produktsidor-för-tillägget\">TAK-produktsidor för tillägget</a></h2>\n<ul>\n<li>WinTAK <a href=\"/doc/7e7e24a0-2173-46f8-ab17-f60cf82d3344\">TAK Replay -lisäosa</a></li>\n</ul>"
+    }
+  ]
+}

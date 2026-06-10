@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "6a205aa6-167d-47bf-a4d5-ee78740685e5",
+  "slug": "takserver-ryhmat-6chJPiJi7g",
+  "collection": "wikis/tak",
+  "locale": "fi",
+  "title": "Takserver-ryhmät",
+  "breadcrumb": [
+    "Käyttömallit",
+    "PVARKI Standardi",
+    "Takserver-ryhmät"
+  ],
+  "createdAt": "2025-12-07T23:45:59.944Z",
+  "updatedAt": "2026-02-20T06:14:15.782Z",
+  "headings": [
+    {
+      "depth": 3,
+      "text": "Käytettävät TAK-työkalut:\\nEi käytössä",
+      "id": "käytettävät-tak-työkalutnei-käytössä"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Ryhmien avulla hallitaan, kuka näkee mitäkin. Samaaan ryhmään kuuluvat käyttäjät jakavat ja näkevät tietoa itsestään ja toisistaan. PVARKI-asennuksessa jokainen käyttäjä kuuluu aluksi oletusryhmään, ja ylläpitäjät voivat muuttaa ryhmäjäsenyyksiä tarpeen mukaan. Käyttäjä voi kuulua useaan ryhmään.</p>\n<p>Käyttäjä voi kuulua ryhmään kolmella tavalla:</p>\n<ul>\n<li><strong>In</strong> – käyttäjä lähettää (write) dataa ryhmälle</li>\n<li><strong>Out</strong> – käyttäjä vastaanottaa (read) dataa ryhmältä</li>\n<li><strong>Both</strong> – käyttäjä lähettää ja vastaanottaa dataa ryhmässä</li>\n</ul>\n<p>Näitä hallitaan ryhmien nimillä: <strong>group</strong> (Both), <strong>group_WRITE</strong> (In) ja <strong>group_READ</strong> (Out).\\nPerusteet Keycloakilla tehtävään PVARKI-ryhmähallintaan näkyvät siellä erikseen.</p>\n<p>Peruskäyttäjät eivät näe ryhmiä eivätkä voi muuttaa niitä. Ryhmä­hallinta on admin-käyttäjille, jotka voivat tarkastella ryhmiä eri TAK-työkaluilla ja takserverin hallintaliittymässä.</p>\n<h3 id=\"käytettävät-tak-työkalutnei-käytössä\"><a href=\"#käytettävät-tak-työkalutnei-käytössä\"><strong>Käytettävät TAK-työkalut:</strong>\\nEi käytössä</a></h3>"
+    }
+  ]
+}

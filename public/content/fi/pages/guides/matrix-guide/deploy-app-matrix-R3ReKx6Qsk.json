@@ -1,0 +1,215 @@
+{
+  "schemaVersion": 1,
+  "id": "60acf78d-ae06-46a8-9959-cfc2e60298bc",
+  "slug": "deploy-app-matrix-R3ReKx6Qsk",
+  "collection": "guides/matrix-guide",
+  "locale": "fi",
+  "title": "Deploy App - Matrix",
+  "breadcrumb": [
+    "Deploy App - Matrix"
+  ],
+  "createdAt": "2026-03-19T07:59:04.367Z",
+  "updatedAt": "2026-05-05T15:20:00.632Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Tietokone (Windows / Linux / macOS), Element",
+      "id": "tietokone-windows--linux--macos-element"
+    },
+    {
+      "depth": 2,
+      "text": "Mobiili (Android / iOS), Element Classic",
+      "id": "mobiili-android--ios-element-classic"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<h1 id=\"matrix-perehdytys\"><a href=\"#matrix-perehdytys\">Matrix-perehdytys</a></h1>\n<h2 id=\"tietokone-windows--linux--macos-element\"><a href=\"#tietokone-windows--linux--macos-element\">Tietokone (Windows / Linux / macOS), Element</a></h2>"
+    },
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Tervetuloa Matrixiin",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Tämä opas käyttää Element-sovellusta, mutta voit käyttää mitä tahansa Matrix-sovellusta.</li>\n<li>Vaiheet ovat samankaltaisia muissakin sovelluksissa.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/f6e6d09fad12555f.webp",
+              "width": 1918,
+              "height": 1113
+            }
+          ]
+        },
+        {
+          "title": "Esivaatimukset",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Kopioi kotipalvelimen osoite (1).</li>\n<li>Voit palata oppaaseen milloin vain oikeasta alakulmasta (2).</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/0c280745f70c3109.webp",
+              "width": 6013,
+              "height": 3525
+            }
+          ]
+        },
+        {
+          "title": "Kirjaudu Elementiin 1/4",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Avaa Element ja valitse <strong>Log in</strong>.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/176d53401560d2cd.webp",
+              "width": 6006,
+              "height": 3526
+            }
+          ]
+        },
+        {
+          "title": "Kirjaudu Elementiin 2/4",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Paina <strong>Edit</strong> kotipalvelimen osoitteen kohdalta.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/914d737ead9c2ae6.webp",
+              "width": 6006,
+              "height": 3526
+            }
+          ]
+        },
+        {
+          "title": "Kirjaudu Elementiin 3/4",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Liitä aiemmin kopioimasi palvelimen osoite.</li>\n<li>Paina <strong>Continue</strong>.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/d8c643553c524f72.webp",
+              "width": 6006,
+              "height": 3526
+            }
+          ]
+        },
+        {
+          "title": "Kirjaudu Elementiin 4/4",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Paina <strong>Continue with Keycloak</strong>.</li>\n<li>Jatka selaimessasi, jonka pitäisi pyytää mTLS-varmennettasi muutaman kerran.</li>\n<li>Tunnistaudu mTLS-varmenteella.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/50e8a81607a0db8f.webp",
+              "width": 6006,
+              "height": 3526
+            }
+          ]
+        },
+        {
+          "title": "Elementin kotinäkymä",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Olet nyt kirjautunut sisään ja voit käyttää Matrixia.</li>\n<li>Voit tarkastella tai luoda tiloja (<strong>Spaces</strong>) sivupalkista (1).</li>\n<li>Näet ja voit luoda suoraviestejä vasemmasta reunasta (2).</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/efc0411dc4e6b694.webp",
+              "width": 6013,
+              "height": 3525
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"mobiili-android--ios-element-classic\"><a href=\"#mobiili-android--ios-element-classic\">Mobiili (Android / iOS), Element Classic</a></h2>"
+    },
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Tervetuloa Matrixiin",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Tämä opas käyttää Element Classic -sovellusta, mutta voit käyttää lähes mitä tahansa Matrix-sovellusta.</li>\n<li>Vaiheet ovat samankaltaisia muissakin sovelluksissa.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/f6e6d09fad12555f.webp",
+              "width": 1918,
+              "height": 1113
+            }
+          ]
+        },
+        {
+          "title": "Esivaatimukset",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Kopioi kotipalvelimen osoite (1).</li>\n<li>Voit palata oppaaseen milloin vain oikeasta alakulmasta (2).</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/0c280745f70c3109.webp",
+              "width": 6013,
+              "height": 3525
+            }
+          ]
+        },
+        {
+          "title": "Kirjaudu Element Classiciin 1/4",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Avaa Element ja valitse <strong>Sign in</strong>.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/4342fc307e466025.webp",
+              "width": 2880,
+              "height": 1820
+            }
+          ]
+        },
+        {
+          "title": "Kirjaudu Element Classiciin 2/4",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Paina <strong>Edit</strong> kotipalvelimen osoitteen kohdalta.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/c8abbfc6273a4721.webp",
+              "width": 2880,
+              "height": 1820
+            }
+          ]
+        },
+        {
+          "title": "Kirjaudu Element Classiciin 3/4",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Liitä aiemmin kopioimasi palvelimen osoite.</li>\n<li>Paina <strong>Next</strong>.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/a6843e0d4bdcfba7.webp",
+              "width": 2880,
+              "height": 1820
+            }
+          ]
+        },
+        {
+          "title": "Kirjaudu Element Classiciin 4/4",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Paina <strong>Continue with Keycloak</strong>.</li>\n<li>Jatka selaimessasi, jonka pitäisi pyytää mTLS-varmennettasi.</li>\n<li>Tunnistaudu mTLS-varmenteella.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/09163f1812c75063.webp",
+              "width": 2880,
+              "height": 1820
+            }
+          ]
+        },
+        {
+          "title": "Element Classicin kotinäkymä",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Olet nyt kirjautunut sisään ja voit käyttää Matrixia.</li>\n<li>Voit etsiä käyttäjiä ja huoneita oikeasta yläkulmasta (1).</li>\n<li>Voit aloittaa keskustelun oikeasta alakulmasta (2).</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/efc0411dc4e6b694.webp",
+              "width": 6013,
+              "height": 3525
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

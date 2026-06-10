@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "a1ae2d75-dc23-443b-aa26-526a47a1c85f",
+  "slug": "bloodhound-tool-kZ8MTy07YY",
+  "collection": "wikis/tak",
+  "locale": "en",
+  "title": "Bloodhound -tool",
+  "breadcrumb": [
+    "TAK Products for Users",
+    "ATAK - Android TAK",
+    "Tools and functions",
+    "Bloodhound -tool"
+  ],
+  "createdAt": "2025-09-11T15:38:34.094Z",
+  "updatedAt": "2026-02-19T13:05:12.835Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Tool Description",
+      "id": "tool-description"
+    },
+    {
+      "depth": 2,
+      "text": "Instruction videos",
+      "id": "instruction-videos"
+    },
+    {
+      "depth": 3,
+      "text": "Bloodhound Tool (2min)",
+      "id": "bloodhound-tool-2min"
+    },
+    {
+      "depth": 2,
+      "text": "Bloodhound -tool section from ATAK manual",
+      "id": "bloodhound--tool-section-from-atak-manual"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "src": "/content/images/en/attachments/40aa9ed82f65b372.webp",
+      "alt": "",
+      "width": 121,
+      "height": 122
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"tool-description\"><a href=\"#tool-description\"><strong>Tool Description</strong></a></h2>\n<p>The Bloodhound Tool provides support for tracking and intercepting a map item. It allows for the selection of two points on the map, and/or map objects, and displays Range &#x26; Bearing information between the chosen tracker and the target.</p>\n<h2 id=\"instruction-videos\"><a href=\"#instruction-videos\">Instruction videos</a></h2>\n<h3 id=\"bloodhound-tool-2min\"><a href=\"#bloodhound-tool-2min\">Bloodhound Tool (2min)</a></h3>"
+    },
+    {
+      "type": "youtube",
+      "videoId": "MazLYBMwsqU"
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"bloodhound--tool-section-from-atak-manual\"><a href=\"#bloodhound--tool-section-from-atak-manual\">Bloodhound -tool section from ATAK manual</a></h2>"
+    },
+    {
+      "type": "pdf",
+      "src": "attachments/fbcd454c-87f1-4259-a9f1-cdff75116619.pdf",
+      "title": "ATAK 5.6 Bloodhound.pdf"
+    }
+  ]
+}

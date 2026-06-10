@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "id": "bf3416b5-d2ca-4dc6-89a2-b48cfca69618",
+  "slug": "takserver-recon-feed-6S3IuBlBTY",
+  "collection": "wikis/tak",
+  "locale": "en",
+  "title": "Takserver RECON feed",
+  "breadcrumb": [
+    "Usage Models",
+    "PVARKI Standard",
+    "Takserver RECON feed"
+  ],
+  "createdAt": "2025-09-11T15:32:43.991Z",
+  "updatedAt": "2026-02-20T06:13:21.003Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "What is RECON feed",
+      "id": "what-is-recon-feed"
+    },
+    {
+      "depth": 2,
+      "text": "How to use RECON feed",
+      "id": "how-to-use-recon-feed"
+    },
+    {
+      "depth": 2,
+      "text": "How to manage the RECON feed",
+      "id": "how-to-manage-the-recon-feed"
+    },
+    {
+      "depth": 2,
+      "text": "TAK Tools used:",
+      "id": "tak-tools-used"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<h2 id=\"what-is-recon-feed\"><a href=\"#what-is-recon-feed\">What is RECON feed</a></h2>\n<p>Takservers RECON feed is meant for reviewed and verified intelligence and observations that the command wants to share to the whole server.</p>\n<p>RECON feed is meant to be subscribed and synchronized by everyone in the operation area of the server. The main use is to share immediate information about enemy and important information about friendly forces.</p>\n<p>The basic settings for the RECON feed is to be shared to default group users and users subscribing will have read and write user rights. Admins can make changes and with bigger groups of users the RECON feed is recommended to be readonly for most of the users and write rights for command personnel that will manage the information on it.</p>\n<h2 id=\"how-to-use-recon-feed\"><a href=\"#how-to-use-recon-feed\">How to use RECON feed</a></h2>\n<p>Every user in PVARKI should be subscribed to the takservers RECON feed and have notifications enabled. The users situational awareness about friendly and enemy forces is kept up to date with RECON feed.</p>\n<p>Command Post users (HQ etc roles) are maintaining the feed with information from the groups own intelligence gathering, friendly forces intelligence and the Command RECON feed if they are part of bigger organization. Command Post users remove staled data, update changed data and input verified data to the feed.</p>\n<h2 id=\"how-to-manage-the-recon-feed\"><a href=\"#how-to-manage-the-recon-feed\">How to manage the RECON feed</a></h2>\n<p>In longer use RECON feed gets clogged up with data. When this happens the Command Post recycles the feed by creating new one and transferring users to the new one.  The frequency of the renewal of RECON feed depends on the units size, for a company size unit the recommendation is daily when day changes.</p>\n<p>Command Posts RECON Feed Recycling steps:</p>\n<ul>\n<li>Create a new feed name RECON xx.xx (Current or next day)</li>\n<li>Add all current and relevant data from the old feed to new one</li>\n<li>Check the settings</li>\n<li>Add a Geofence for Area of Operations (to automatically invite users), you can also manually invite users.</li>\n<li>Remove default groups and users from the old RECON feed and delete the feed.\n<ul>\n<li>If you want to keep the old files export the feed as datapackage before deleting</li>\n</ul>\n</li>\n</ul>\n<p>Additional information about Data Sync Management:</p>\n<p><a href=\"/doc/e78ab753-1ada-4cd2-a69c-86a42742c6af\">Mission Manager (Data Sync)</a></p>\n<h2 id=\"tak-tools-used\"><a href=\"#tak-tools-used\">TAK Tools used:</a></h2>\n<ul>\n<li><a href=\"/doc/ba4bcf14-7495-408f-87f2-bf557fa465ac\">Data Sync -plugin</a></li>\n</ul>"
+    }
+  ]
+}

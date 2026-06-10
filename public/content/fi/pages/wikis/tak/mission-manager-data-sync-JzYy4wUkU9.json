@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "id": "5ac20941-fc2e-41aa-b98a-b3931d2e3383",
+  "slug": "mission-manager-data-sync-JzYy4wUkU9",
+  "collection": "wikis/tak",
+  "locale": "fi",
+  "title": "Mission Manager (Data Sync)",
+  "breadcrumb": [
+    "TAK Pääkäyttäjä Työkalut",
+    "Takserveri",
+    "Mission Manager (Data Sync)"
+  ],
+  "createdAt": "2025-12-08T01:59:08.227Z",
+  "updatedAt": "2026-02-19T13:45:02.265Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Missionien hallinta",
+      "id": "missionien-hallinta"
+    },
+    {
+      "depth": 3,
+      "text": "Missionin luominen",
+      "id": "missionin-luominen"
+    },
+    {
+      "depth": 3,
+      "text": "Missionin poistaminen / Arkistointi",
+      "id": "missionin-poistaminen--arkistointi"
+    },
+    {
+      "depth": 3,
+      "text": "Missionin muokkaaminen",
+      "id": "missionin-muokkaaminen"
+    },
+    {
+      "depth": 3,
+      "text": "Käyttäjäoikeuksien muuttaminen",
+      "id": "käyttäjäoikeuksien-muuttaminen"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Missions (Data Sync -syötteet) hallitaan takserverin käyttöliittymän Mission Manager -osion kautta.\\nMission Manager löytyy<a> osoitteesta:</a>\\n<a><strong>https://tak.server.fi:8443/Marti/MissionManager.ht</strong></a><a href=\"https://tak.server.fi:8443/Marti/MissionManager.html\" target=\"_blank\" rel=\"noopener noreferrer\"><strong>ml</strong></a></p>"
+    },
+    {
+      "type": "image",
+      "src": "/content/images/fi/attachments/720335fb80ca3b57.webp",
+      "alt": "",
+      "width": 1448,
+      "height": 540
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"missionien-hallinta\"><a href=\"#missionien-hallinta\"><strong>Missionien hallinta</strong></a></h2>\n<p>Missionien (Data Sync -syötteiden) hallinta tehdään joko Takserverissä tai TAK-tuotteissa Data Sync -työkalun kautta. Missionien hallintaan käyttäjällä täytyy olla joko <strong>Owner</strong>- tai <strong>Write</strong>-oikeudet kyseiseen syötteeseen.</p>\n<p>Jos haluat muuttaa käyttäjäoikeuksia, katso kohta <strong>Käyttäjäoikeuksien muuttaminen</strong>.</p>"
+    },
+    {
+      "type": "image",
+      "src": "/content/images/fi/attachments/c63873ae5f463e2d.webp",
+      "alt": "",
+      "width": 1463,
+      "height": 532
+    },
+    {
+      "type": "html",
+      "html": "<h3 id=\"missionin-luominen\"><a href=\"#missionin-luominen\"><strong>Missionin luominen</strong></a></h3>\n<p>Ylläpitäjät (Admin-käyttäjät) voivat luoda uusia missioneita Takserverin Mission Manager -näkymässä. Valitse <strong>+ ADD</strong> ja täytä halutut asetukset syötteelle.</p>\n<p>Jos <em>defaultRole</em> on asetettu arvoon <em>ReadOnly</em>, sinun täytyy määrittää yksi tai useampi käyttäjä Owner- ja/tai ReadWrite-rooleihin. Katso ohje kohdasta <strong>Change User Rights</strong>.</p>\n<p>Tärkeimmät asetukset missionille ovat:</p>\n<ul>\n<li><strong>Name</strong> (Nimi)</li>\n<li><strong>Mahdollinen Password</strong> (Salasana)</li>\n<li><strong>defaultRole</strong></li>\n<li><strong>Groups</strong></li>\n</ul>\n<p><strong>defaultRole</strong> määrittää perusoikeudet käyttäjille, jotka tilaavat syötteen: <em>ReadOnly, ReadWrite, Owner</em>...</p>\n<p><strong>Groups</strong>-asetus määrittää, mitkä takserverin ryhmät näkevät syötteen ja voivat tilata sen.</p>"
+    },
+    {
+      "type": "image",
+      "src": "/content/images/fi/attachments/5abe50af29dbf227.webp",
+      "alt": "",
+      "width": 603,
+      "height": 611
+    },
+    {
+      "type": "html",
+      "html": "<h3 id=\"missionin-poistaminen--arkistointi\"><a href=\"#missionin-poistaminen--arkistointi\"><strong>Missionin poistaminen / Arkistointi</strong></a></h3>\n<p>Missionien poistaminen tehdään valitsemalla halutut syötteet ja painamalla <strong>Delete</strong>.\\nPoistetut syötteet siirtyvät <strong>Archived Missions</strong> -osioon, joten niiden dataa ei poisteta palvelimelta.</p>"
+    },
+    {
+      "type": "image",
+      "src": "/content/images/fi/attachments/c63873ae5f463e2d.webp",
+      "alt": "",
+      "width": 1463,
+      "height": 532
+    },
+    {
+      "type": "html",
+      "html": "<h3 id=\"missionin-muokkaaminen\"><a href=\"#missionin-muokkaaminen\"><strong>Missionin muokkaaminen</strong></a></h3>\n<p>Missionin muokkaus takserverissä tehdään Mission Manager -näkymästä.\\nValitse syötteet, joita haluat muuttaa, ja säädä asetuksia tarpeen mukaan.</p>\n<p>Kun muutokset on tehty, valitse <strong>Save and Close</strong>.</p>"
+    },
+    {
+      "type": "image",
+      "src": "/content/images/fi/attachments/d3cc0d829d12885f.webp",
+      "alt": "",
+      "width": 603,
+      "height": 1062
+    },
+    {
+      "type": "html",
+      "html": "<h3 id=\"käyttäjäoikeuksien-muuttaminen\"><a href=\"#käyttäjäoikeuksien-muuttaminen\"><strong>Käyttäjäoikeuksien muuttaminen</strong></a></h3>\n<p>Jos <strong>RECON</strong>-syötteen halutaan olevan tavallisille käyttäjille vain <em>ReadOnly</em>, vähintään yksi ylläpitäjä täytyy asettaa syötteen <strong>Owner</strong>-rooliin, jotta hän voi hallita sitä.</p>\n<p>Saadaksesi käyttäjän Owner-rooliin takserverin kautta:</p>\n<ol>\n<li>Aseta mission <strong>defaultRole</strong> tilapäisesti arvoon <strong>Owner</strong></li>\n<li>Pyydä haluttua käyttäjää tilaamaan syöte (subscribe) → hän saa Owner-oikeudet</li>\n<li>Kun kaikilla tarvittavilla käyttäjillä on halutut roolit, voit palauttaa defaultRole-asetuksen haluttuun tilaan</li>\n</ol>\n<p><strong>Owner-käyttäjät voivat data sync -lisäosassa:</strong></p>\n<ul>\n<li>muuttaa muiden käyttäjien rooleja</li>\n<li>hallita käyttäjiä kutsumalla heitä missioniin tai poistamalla heidät siitä</li>\n</ul>\n<p>Roolin muuttaminen tehdään syötteen asetuksissa <strong>Active Members</strong> -valikon kautta, käyttämällä avain-kuvaketta.</p>\n<p><img src=\"/content/images/fi/attachments/b49066f9459187ed.webp\" alt=\"\" title=\" =602x1073\"> <img src=\"/content/images/fi/attachments/ecc18a14361c6156.webp\" alt=\"\" title=\" =1080x1981\"></p>\n<p>\\</p>"
+    }
+  ]
+}

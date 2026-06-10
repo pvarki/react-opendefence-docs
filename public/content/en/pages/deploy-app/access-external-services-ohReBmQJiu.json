@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "dd6f5149-2000-47ed-a5af-cec0ab003039",
+  "slug": "access-external-services-ohReBmQJiu",
+  "collection": "deploy-app",
+  "locale": "en",
+  "title": "Access External Services",
+  "breadcrumb": [
+    "Android",
+    "Admin Guide",
+    "Access External Services"
+  ],
+  "createdAt": "2025-12-06T09:39:50.140Z",
+  "updatedAt": "2026-02-25T07:35:19.709Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>\\</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "External Services",
+          "layout": "text",
+          "html": "<p>External Services link you to other sites avaivable in your Deploy App instance. These are not necessary needed in day to day operations, but grant more features avaivable to users.\nCurrently these are most useful for TAK &#x26; TAK Plugin users.</p>",
+          "images": []
+        },
+        {
+          "title": "Accessing External Services",
+          "layout": "image-left",
+          "html": "<ul>\n<li>External Services can be accessed from the sidebar.</li>\n<li>Select \"Admin Tools\" and then \"External Services\".</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/7d126d3d3daf2488.webp",
+              "width": 2560,
+              "height": 5712
+            }
+          ]
+        },
+        {
+          "title": "Services Avaivable",
+          "layout": "image-left",
+          "html": "<p>These vary from deployment to deployment depending on what services you have ordered. Each should have a short description of what it does.\nThey open by clicking on them and should ask for your mTLS-certificate for secure login.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/1195f66395544a05.webp",
+              "width": 2560,
+              "height": 5712
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "html",
+      "html": "<p>\\</p>"
+    }
+  ]
+}

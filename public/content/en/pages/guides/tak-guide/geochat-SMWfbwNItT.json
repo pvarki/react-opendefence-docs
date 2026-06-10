@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 1,
+  "id": "1ddce881-2116-41eb-9980-f201fcc06f27",
+  "slug": "geochat-SMWfbwNItT",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "GeoChat",
+  "breadcrumb": [
+    "TAK Clients",
+    "ATAK",
+    "Basic Features",
+    "GeoChat"
+  ],
+  "createdAt": "2025-12-05T22:06:22.269Z",
+  "updatedAt": "2026-02-28T11:13:22.399Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "ATAK connected to takserver - GeoChat",
+      "id": "atak-connected-to-takserver---geochat"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>\\</p>\n<h1 id=\"atak---geochat---basic-use\"><a href=\"#atak---geochat---basic-use\">ATAK - GeoChat - Basic use</a></h1>\n<h2 id=\"atak-connected-to-takserver---geochat\"><a href=\"#atak-connected-to-takserver---geochat\">ATAK connected to takserver - GeoChat</a></h2>"
+    },
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "1. What is GeoChat?",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>TAK's integral GeoChat offers basic text communication. Tap the Chat icon to start.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/fdd5d3739fd86ef9.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "2. Showing Messages",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Initial screen shows any previous senders. Select one to start.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/455d339c722c509a.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "3. Sending Messages to Groups",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Send and receive text easily.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/ab2f24ffaf33f0da.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "4. Binding Quick Phrase Buttons",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>To speed up communicating, you can bind Quick Phrase Buttons. Long-tap one to start.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/7582790dadbb4137.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "5. How-to: Quick Phrase",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>'Name' is how it appears in the button. 'Value' is what the button will print.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/6205ae560ab9b2c2.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "6. Our Recommended Phrases",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>We recommend the following: Bind \"This is YOUR CALLSIGN, \", \"Roger\", \"Radio check\", RC OK as \"Loud and clear.\"</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/87a80d5f3139ff7e.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "7. Navigate All Available Recipients",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>In the main geochat menu, hit the Plus symbol to see all available recipients.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/8373b375c881afbe.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "8. Send to Roles",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Tapping HQ lets you send to all HQ-roled users in your Server. This comes handy in our Standard Model.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/a4862fb7b3800583.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "9. Send to Team",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Sending to Team lets you send to a group of all eg. BLUE team users.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/d0068e29c594c820.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "10. Send Direct Messages",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Need to chat with just someone? Select them for that.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/f7781f14134bfa0f.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "11. Send to Feed",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Send to Feed eg. in case you're going to send an image to it and want to tell why.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/6d8268cd06b95bd0.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Limitations of Geochat",
+          "layout": "text",
+          "html": "<ul>\n<li>There are three limitations with Geochat:</li>\n<li>\n<ul>\n<li>\n<ol>\n<li>Don't send images / attachments, this is not usable. Send them to a Feed instead.</li>\n</ol>\n</li>\n</ul>\n</li>\n<li>\n<ul>\n<li>\n<ol start=\"2\">\n<li>Recipient needs to have their TAK app open or in background to receive you.</li>\n</ol>\n</li>\n</ul>\n</li>\n<li>\n<ul>\n<li>\n<ol start=\"3\">\n<li>iTAK is unreliable with GeoChat group chat, especially with WinTAK &#x3C;-> iTAK.</li>\n</ol>\n</li>\n</ul>\n</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "Done",
+          "layout": "text",
+          "html": "<ul>\n<li>You can close this guide.</li>\n</ul>",
+          "images": []
+        }
+      ]
+    },
+    {
+      "type": "html",
+      "html": "<p>After successful testing GeoChat, continue to <a href=\"/doc/685f6f0f-e7ca-4ba3-807f-568582663e95\">ATAK</a></p>"
+    }
+  ]
+}

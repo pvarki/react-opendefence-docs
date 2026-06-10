@@ -1,0 +1,323 @@
+{
+  "schemaVersion": 1,
+  "label": "TAK Wiki",
+  "slug": "wikis/tak",
+  "items": [
+    {
+      "type": "doc",
+      "id": "vad-ar-tak-qbojmFicSS",
+      "label": "Vad är TAK?",
+      "slug": "vad-ar-tak-qbojmFicSS"
+    },
+    {
+      "type": "doc",
+      "id": "videoinstruktioner-htjmtR1nFI",
+      "label": "Videoinstruktioner",
+      "slug": "videoinstruktioner-htjmtR1nFI"
+    },
+    {
+      "type": "group",
+      "id": "tak-produkter-for-anvandare-Vbfsq3vhyM",
+      "label": "TAK-produkter för Användare",
+      "children": [
+        {
+          "type": "doc",
+          "id": "tak-produkter-for-anvandare-Vbfsq3vhyM",
+          "label": "TAK-produkter för Användare",
+          "slug": "tak-produkter-for-anvandare-Vbfsq3vhyM"
+        },
+        {
+          "type": "doc",
+          "id": "atak-android-tak-WLqt5LNmVx",
+          "label": "ATAK - Android TAK",
+          "slug": "atak-android-tak-WLqt5LNmVx"
+        },
+        {
+          "type": "doc",
+          "id": "verktyg-och-tillagg-sEB6ccwyRm",
+          "label": "Verktyg och tillägg",
+          "slug": "verktyg-och-tillagg-sEB6ccwyRm"
+        },
+        {
+          "type": "doc",
+          "id": "bloodhound-verktyget-8bsZHidzuJ",
+          "label": "Bloodhound-verktyget",
+          "slug": "bloodhound-verktyget-8bsZHidzuJ"
+        },
+        {
+          "type": "doc",
+          "id": "contacts-geochat-verktyget-cpj9rNVTxW",
+          "label": "Contacts / GeoChat-verktyget",
+          "slug": "contacts-geochat-verktyget-cpj9rNVTxW"
+        },
+        {
+          "type": "doc",
+          "id": "data-sync-tillagget-aqLOkDieIe",
+          "label": "Data Sync-tillägget",
+          "slug": "data-sync-tillagget-aqLOkDieIe"
+        },
+        {
+          "type": "doc",
+          "id": "point-dropper-verktyget-xa1yEIE7Bn",
+          "label": "Point Dropper-verktyget",
+          "slug": "point-dropper-verktyget-xa1yEIE7Bn"
+        },
+        {
+          "type": "doc",
+          "id": "toolbar-verktyget-DEWC4UgT03",
+          "label": "Toolbar-verktyget",
+          "slug": "toolbar-verktyget-DEWC4UgT03"
+        },
+        {
+          "type": "doc",
+          "id": "uas-tool-tillagget-XJJNDWfYt5",
+          "label": "UAS Tool-tillägget",
+          "slug": "uas-tool-tillagget-XJJNDWfYt5"
+        },
+        {
+          "type": "doc",
+          "id": "vns-tillagget-Vx7rEZ4RGp",
+          "label": "VNS-tillägget",
+          "slug": "vns-tillagget-Vx7rEZ4RGp"
+        },
+        {
+          "type": "doc",
+          "id": "tillaggslista-kvscGDLbSf",
+          "label": "Tilläggslista",
+          "slug": "tillaggslista-kvscGDLbSf"
+        },
+        {
+          "type": "doc",
+          "id": "itak-apple-tak-nN8YzIEfFX",
+          "label": "iTAK - Apple TAK",
+          "slug": "itak-apple-tak-nN8YzIEfFX"
+        },
+        {
+          "type": "doc",
+          "id": "tak-aware-apple-tak-hKeKsxr1ZQ",
+          "label": "TAK Aware - Apple TAK",
+          "slug": "tak-aware-apple-tak-hKeKsxr1ZQ"
+        },
+        {
+          "type": "doc",
+          "id": "tak-tracker-latt-tak-android-och-apple-Ldi7s2rHHY",
+          "label": "TAK Tracker – Lätt TAK — Android och Apple",
+          "slug": "tak-tracker-latt-tak-android-och-apple-Ldi7s2rHHY"
+        },
+        {
+          "type": "doc",
+          "id": "vr-tak-virtuell-verklighet-for-tak-yNkWIh46xk",
+          "label": "VR-TAK – Virtuell verklighet för TAK",
+          "slug": "vr-tak-virtuell-verklighet-for-tak-yNkWIh46xk"
+        },
+        {
+          "type": "doc",
+          "id": "wintak-windows-tak-AhFOs4e5q4",
+          "label": "WinTAK - Windows TAK",
+          "slug": "wintak-windows-tak-AhFOs4e5q4"
+        },
+        {
+          "type": "doc",
+          "id": "verktyg-och-tillagg-vX0F7rltb0",
+          "label": "Verktyg och tillägg",
+          "slug": "verktyg-och-tillagg-vX0F7rltb0"
+        },
+        {
+          "type": "doc",
+          "id": "contacts-geochat-verktyget-xVYdNw84pI",
+          "label": "Contacts / GeoChat-verktyget",
+          "slug": "contacts-geochat-verktyget-xVYdNw84pI"
+        },
+        {
+          "type": "doc",
+          "id": "data-sync-tillagget-tjH0fMfWva",
+          "label": "Data Sync-tillägget",
+          "slug": "data-sync-tillagget-tjH0fMfWva"
+        },
+        {
+          "type": "doc",
+          "id": "tak-replay-tillagget-W56dg3ltjm",
+          "label": "TAK Replay-tillägget",
+          "slug": "tak-replay-tillagget-W56dg3ltjm"
+        },
+        {
+          "type": "doc",
+          "id": "vns-tillagget-YcOdXOjiCJ",
+          "label": "VNS -tillägget",
+          "slug": "vns-tillagget-YcOdXOjiCJ"
+        },
+        {
+          "type": "doc",
+          "id": "tillaggslista-GbaWi7AwS9",
+          "label": "Tilläggslista",
+          "slug": "tillaggslista-GbaWi7AwS9"
+        },
+        {
+          "type": "doc",
+          "id": "tpc-tak-product-center-ZRqq8fI3RX",
+          "label": "TPC - TAK Product Center",
+          "slug": "tpc-tak-product-center-ZRqq8fI3RX"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "tak-verktyg-for-produkter-vIyQBfINba",
+      "label": "TAK-verktyg för Produkter",
+      "children": [
+        {
+          "type": "doc",
+          "id": "tak-verktyg-for-produkter-vIyQBfINba",
+          "label": "TAK-verktyg för Produkter",
+          "slug": "tak-verktyg-for-produkter-vIyQBfINba"
+        },
+        {
+          "type": "doc",
+          "id": "bloodhound-verktyg-QY0hBa9P21",
+          "label": "Bloodhound-verktyg",
+          "slug": "bloodhound-verktyg-QY0hBa9P21"
+        },
+        {
+          "type": "doc",
+          "id": "contacts-geochat-verktyg-gLh2UFdoEc",
+          "label": "Contacts / GeoChat -verktyg",
+          "slug": "contacts-geochat-verktyg-gLh2UFdoEc"
+        },
+        {
+          "type": "doc",
+          "id": "data-sync-tillagg-izVIiIaHkF",
+          "label": "Data Sync -tillägg",
+          "slug": "data-sync-tillagg-izVIiIaHkF"
+        },
+        {
+          "type": "doc",
+          "id": "point-dropper-verktyg-693liFHNYR",
+          "label": "Point Dropper -verktyg",
+          "slug": "point-dropper-verktyg-693liFHNYR"
+        },
+        {
+          "type": "doc",
+          "id": "tak-replay-tillagg-nPQC6qexcA",
+          "label": "TAK Replay -tillägg",
+          "slug": "tak-replay-tillagg-nPQC6qexcA"
+        },
+        {
+          "type": "doc",
+          "id": "uas-tool-tillagg-zZkY1YhdAX",
+          "label": "UAS Tool -tillägg",
+          "slug": "uas-tool-tillagg-zZkY1YhdAX"
+        },
+        {
+          "type": "doc",
+          "id": "vns-tillagg-Cj9qu3S9dI",
+          "label": "VNS -tillägg",
+          "slug": "vns-tillagg-Cj9qu3S9dI"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "tak-verktyg-for-huvudadministratorer-Ng0EPuM5Rr",
+      "label": "TAK-verktyg för Huvudadministratörer",
+      "children": [
+        {
+          "type": "doc",
+          "id": "tak-verktyg-for-huvudadministratorer-Ng0EPuM5Rr",
+          "label": "TAK-verktyg för Huvudadministratörer",
+          "slug": "tak-verktyg-for-huvudadministratorer-Ng0EPuM5Rr"
+        },
+        {
+          "type": "doc",
+          "id": "takserver-oegV6haZ9Q",
+          "label": "Takserver",
+          "slug": "takserver-oegV6haZ9Q"
+        },
+        {
+          "type": "doc",
+          "id": "grundlaggande-anvandargranssnitt-h2BJMcZND4",
+          "label": "Grundläggande användargränssnitt",
+          "slug": "grundlaggande-anvandargranssnitt-h2BJMcZND4"
+        },
+        {
+          "type": "doc",
+          "id": "update-server-ota-4LRd5gZA7O",
+          "label": "Update Server",
+          "slug": "update-server-ota-4LRd5gZA7O"
+        },
+        {
+          "type": "doc",
+          "id": "mission-manager-data-sync-iCzglz3Qre",
+          "label": "Mission Manager",
+          "slug": "mission-manager-data-sync-iCzglz3Qre"
+        },
+        {
+          "type": "doc",
+          "id": "device-profiles-TbWQElcu1A",
+          "label": "Device Profiles",
+          "slug": "device-profiles-TbWQElcu1A"
+        },
+        {
+          "type": "doc",
+          "id": "avancerade-funktioner-1R6BEkfIUe",
+          "label": "Avancerade Funktioner",
+          "slug": "avancerade-funktioner-1R6BEkfIUe"
+        },
+        {
+          "type": "doc",
+          "id": "mtx-stromning-W2p79UCLJ5",
+          "label": "MTX – Strömning",
+          "slug": "mtx-stromning-W2p79UCLJ5"
+        },
+        {
+          "type": "doc",
+          "id": "keycloak-grupphantering-ejTxo0JEa8",
+          "label": "Keycloak – Grupphantering",
+          "slug": "keycloak-grupphantering-ejTxo0JEa8"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "anvandningsmodeller-N5mf2UtRlc",
+      "label": "Användningsmodeller",
+      "children": [
+        {
+          "type": "doc",
+          "id": "anvandningsmodeller-N5mf2UtRlc",
+          "label": "Användningsmodeller",
+          "slug": "anvandningsmodeller-N5mf2UtRlc"
+        },
+        {
+          "type": "doc",
+          "id": "pvarki-standarden-u39zwMiK2h",
+          "label": "PVARKI-standarden",
+          "slug": "pvarki-standarden-u39zwMiK2h"
+        },
+        {
+          "type": "doc",
+          "id": "takserver-recon-flodet-da0vEyjl28",
+          "label": "Takserver RECON-flödet",
+          "slug": "takserver-recon-flodet-da0vEyjl28"
+        },
+        {
+          "type": "doc",
+          "id": "takserver-grupper-zHjvp8incO",
+          "label": "Takserver-grupper",
+          "slug": "takserver-grupper-zHjvp8incO"
+        },
+        {
+          "type": "doc",
+          "id": "anvandningsfall-qMdv2JrX5d",
+          "label": "Användningsfall",
+          "slug": "anvandningsfall-qMdv2JrX5d"
+        },
+        {
+          "type": "doc",
+          "id": "vidarebefordran-av-observation-ee7btUhwIp",
+          "label": "Vidarebefordran av Observation",
+          "slug": "vidarebefordran-av-observation-ee7btUhwIp"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "8ad5bfab-d9bb-4ea5-b7e7-92479be5f357",
+  "slug": "tak-aware-apple-tak-Kca1qYUDAO",
+  "collection": "wikis/tak",
+  "locale": "fi",
+  "title": "TAK Aware - Apple TAK",
+  "breadcrumb": [
+    "TAK Tuotteet Käyttäjille",
+    "TAK Aware - Apple TAK"
+  ],
+  "createdAt": "2025-12-07T23:25:03.959Z",
+  "updatedAt": "2026-02-19T13:16:38.634Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Tuote Saatavilla",
+      "id": "tuote-saatavilla"
+    },
+    {
+      "depth": 2,
+      "text": "Käyttöohje",
+      "id": "käyttöohje"
+    },
+    {
+      "depth": 2,
+      "text": "Tuotekuvaus",
+      "id": "tuotekuvaus"
+    },
+    {
+      "depth": 3,
+      "text": "Järjestelmävaatimukset",
+      "id": "järjestelmävaatimukset"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "src": "/content/images/fi/attachments/1f2bd5472620dcd2.webp",
+      "alt": "",
+      "caption": "=430x",
+      "width": 430,
+      "height": 430
+    },
+    {
+      "type": "image",
+      "src": "/content/images/fi/attachments/0866292196270644.webp",
+      "alt": "",
+      "caption": "=1024x",
+      "width": 1024,
+      "height": 471
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"tuote-saatavilla\"><a href=\"#tuote-saatavilla\">Tuote Saatavilla</a></h2>\n<p><a href=\"https://apps.apple.com/br/app/tak-aware/id6738631659\" target=\"_blank\" rel=\"noopener noreferrer\">https://apps.apple.com/br/app/tak-aware/id6738631659</a></p>\n<h2 id=\"käyttöohje\"><a href=\"#käyttöohje\">Käyttöohje</a></h2>"
+    },
+    {
+      "type": "pdf",
+      "src": "attachments/cb3f05d3-d19d-4743-ade3-388286fee3bc.pdf",
+      "title": "takaware-v152.pdf"
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"tuotekuvaus\"><a href=\"#tuotekuvaus\">Tuotekuvaus</a></h2>\n<p><strong>TAK Aware</strong> on kevyt Team Awareness Kit -sovellus (tunnetaan Yhdysvaltain puolustusministeriössä nimellä Tactical Assault Kit), joka on suunniteltu integroitumaan helposti olemassa oleviin koulutus- ja operatiivisiin työnkulkuihin, samalla tarjoten sen tilannekuvan ja vuorovaikutuskyvyn, jota TAKilta odotetaan.</p>\n<p>Sovellus on rakennettu alusta asti iOS:lle ja se yhdistyy suosikki-TAK-palvelimiisi joko datapakettien tai varmenteiden rekisteröinnin kautta. Se tukee datapaketteja, DataSynciä, kanavia, varmenteiden rekisteröintiä ja paljon muuta!</p>\n<h3 id=\"järjestelmävaatimukset\"><a href=\"#järjestelmävaatimukset\"><strong>Järjestelmävaatimukset</strong></a></h3>\n<p>Käyttöjärjestelmä: iOS 17 tai uudempi.</p>"
+    }
+  ]
+}

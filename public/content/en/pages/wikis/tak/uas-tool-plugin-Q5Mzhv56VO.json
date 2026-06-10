@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 1,
+  "id": "c5fbff8c-3df8-43b8-81e4-7b6275409ac9",
+  "slug": "uas-tool-plugin-Q5Mzhv56VO",
+  "collection": "wikis/tak",
+  "locale": "en",
+  "title": "UAS Tool -plugin",
+  "breadcrumb": [
+    "TAK Products for Users",
+    "ATAK - Android TAK",
+    "Tools and functions",
+    "UAS Tool -plugin"
+  ],
+  "createdAt": "2025-09-14T14:42:44.206Z",
+  "updatedAt": "2026-02-19T13:05:59.638Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Plugin Description",
+      "id": "plugin-description"
+    },
+    {
+      "depth": 2,
+      "text": "Instruction Videos",
+      "id": "instruction-videos"
+    },
+    {
+      "depth": 2,
+      "text": "UAS Tool Plugin manuals for ATAK",
+      "id": "uas-tool-plugin-manuals-for-atak"
+    },
+    {
+      "depth": 3,
+      "text": "UAS Tool Quick Start Guide",
+      "id": "uas-tool-quick-start-guide"
+    },
+    {
+      "depth": 3,
+      "text": "Full UAS Tool Plugin manual for ATAK",
+      "id": "full-uas-tool-plugin-manual-for-atak"
+    },
+    {
+      "depth": 3,
+      "text": "UAS Tool FPV Configuration",
+      "id": "uas-tool-fpv-configuration"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "src": "/content/images/en/attachments/6e0082cb2a785620.webp",
+      "alt": "",
+      "width": 671,
+      "height": 675
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"plugin-description\"><a href=\"#plugin-description\"><strong>Plugin Description</strong></a></h2>\n<p>The UAS Tool is a plug-in that provides integration of Unmanned Aircraft Systems (UAS) for enhanced Situational Awareness (SA) and telemetry data, Full Motion Video (FMV), and command and control (C2).</p>\n<h2 id=\"instruction-videos\"><a href=\"#instruction-videos\">Instruction Videos</a></h2>\n<h4 id=\"tak-syndicate-uastool-youtube-playlist\"><a href=\"#tak-syndicate-uastool-youtube-playlist\">TAK Syndicate Uastool youtube playlist</a></h4>\n<p><a href=\"https://www.youtube.com/playlist?list=PL0RLIF82BUhmc7ovS2VF1nKJf7_14S0Wv\" target=\"_blank\" rel=\"noopener noreferrer\">https://www.youtube.com/playlist?list=PL0RLIF82BUhmc7ovS2VF1nKJf7_14S0Wv</a></p>\n<h4 id=\"how-to-install-atak-and-the-uas-plugin-in-the-dji-mavic-3t\"><a href=\"#how-to-install-atak-and-the-uas-plugin-in-the-dji-mavic-3t\">How to INSTALL ATAK and the UAS PLUGIN in the DJI Mavic 3T</a></h4>"
+    },
+    {
+      "type": "youtube",
+      "videoId": "60mbK6ejAmM"
+    },
+    {
+      "type": "html",
+      "html": "<h4 id=\"how-to-livestream-video-from-a-drone-to-atak-uas-plugin-tool\"><a href=\"#how-to-livestream-video-from-a-drone-to-atak-uas-plugin-tool\">How to LIVESTREAM VIDEO from a DRONE to ATAK UAS Plugin Tool</a></h4>"
+    },
+    {
+      "type": "youtube",
+      "videoId": "3JNP3uRVwmo"
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"uas-tool-plugin-manuals-for-atak\"><a href=\"#uas-tool-plugin-manuals-for-atak\">UAS Tool Plugin manuals for ATAK</a></h2>\n<h3 id=\"uas-tool-quick-start-guide\"><a href=\"#uas-tool-quick-start-guide\">UAS Tool Quick Start Guide</a></h3>"
+    },
+    {
+      "type": "pdf",
+      "src": "attachments/a614cc73-3b5b-40f5-aa5b-5a08da345cce.pdf",
+      "title": "UAS_Tool_Quick_Start_Guide (9-23-2021).pdf"
+    },
+    {
+      "type": "html",
+      "html": "<h3 id=\"full-uas-tool-plugin-manual-for-atak\"><a href=\"#full-uas-tool-plugin-manual-for-atak\">Full UAS Tool Plugin manual for ATAK</a></h3>"
+    },
+    {
+      "type": "pdf",
+      "src": "attachments/02323555-0ba9-4809-857f-8676edf8aec0.pdf",
+      "title": "ATAK UAS Tool User Manual - v12.12.pdf"
+    },
+    {
+      "type": "html",
+      "html": "<h3 id=\"uas-tool-fpv-configuration\"><a href=\"#uas-tool-fpv-configuration\">UAS Tool FPV Configuration</a></h3>"
+    },
+    {
+      "type": "pdf",
+      "src": "attachments/94f1ed82-ab92-46a5-b157-82f8e1faa274.pdf",
+      "title": "UAS_Tool_12.9_FPV_Configuration v3 (1-16-2024).pdf"
+    }
+  ]
+}

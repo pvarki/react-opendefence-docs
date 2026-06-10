@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 1,
+  "id": "c7881f4e-d267-4d64-8946-cf3b1f8ebc25",
+  "slug": "opentak-icu-6hPftpHVcX",
+  "collection": "wikis/mtx",
+  "locale": "en",
+  "title": "Opentak ICU",
+  "breadcrumb": [
+    "Tools",
+    "Opentak ICU"
+  ],
+  "createdAt": "2025-10-31T07:07:48.210Z",
+  "updatedAt": "2026-02-16T08:36:14.562Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Available:",
+      "id": "available"
+    },
+    {
+      "depth": 2,
+      "text": "Basic view",
+      "id": "basic-view"
+    },
+    {
+      "depth": 2,
+      "text": "Streaming Instructions",
+      "id": "streaming-instructions"
+    },
+    {
+      "depth": 3,
+      "text": "Basic Settings",
+      "id": "basic-settings"
+    },
+    {
+      "depth": 2,
+      "text": "Settings:",
+      "id": "settings"
+    },
+    {
+      "depth": 3,
+      "text": "Streaming Settings:",
+      "id": "streaming-settings"
+    },
+    {
+      "depth": 3,
+      "text": "Video Settings:",
+      "id": "video-settings"
+    },
+    {
+      "depth": 3,
+      "text": "Audio Settings:",
+      "id": "audio-settings"
+    },
+    {
+      "depth": 3,
+      "text": "TAK Server Settings:",
+      "id": "tak-server-settings"
+    },
+    {
+      "depth": 2,
+      "text": "Supported streaming protocols and codec's",
+      "id": "supported-streaming-protocols-and-codecs"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Opentak ICU is an open-source application that allows live video streaming over a media network to a media server or a local network. Through the media server, video sharing beyond the local network is made possible.</p>\n<p>Video can be streamed either from the device's built-in camera or from an external camera that supports the USB-UVC protocol.</p>\n<h2 id=\"available\"><a href=\"#available\">Available:</a></h2>\n<p><a href=\"https://github.com/brian7704/OpenTAK_ICU\" target=\"_blank\" rel=\"noopener noreferrer\">https://github.com/brian7704/OpenTAK_ICU</a></p>\n<h2 id=\"basic-view\"><a href=\"#basic-view\">Basic view</a></h2>"
+    },
+    {
+      "type": "image",
+      "src": "/content/images/en/attachments/66de79f2806f45c6.webp",
+      "alt": "",
+      "width": 1582,
+      "height": 753
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"streaming-instructions\"><a href=\"#streaming-instructions\">Streaming Instructions</a></h2>\n<ul>\n<li>Configure the settings\n<ul>\n<li>Streaming Settings</li>\n<li>Video Settings</li>\n<li>Audio Settings</li>\n</ul>\n</li>\n<li>In the main view, press the <strong>\"Record\"</strong> button to start streaming.</li>\n<li>Press the <strong>\"Stop\"</strong> button to stop streaming.</li>\n</ul>\n<h3 id=\"basic-settings\"><a href=\"#basic-settings\">Basic Settings</a></h3>\n<ul>\n<li><strong>Streaming Settings</strong>\n<ul>\n<li>Enable the <strong>\"Stream video\"</strong> option</li>\n<li>Select Stream Protocol**: \"RTMPS\"**</li>\n<li>Enter the stream destination address: \"<strong>canadian-goose.pvarki.fi</strong>\"</li>\n<li>Enter Stream Port: <strong>\"1936\"</strong></li>\n<li>Enter Stream Path: <strong>\"live/icu/callsign\"</strong> (your own callsign)</li>\n<li>Enter Username: your username</li>\n<li>Enter Password: your password</li>\n</ul>\n</li>\n<li><strong>Video Settings</strong>\n<ul>\n<li>Select Video Source: <strong>\"This device\"</strong></li>\n<li>Select Resolution: <strong>\"1280 x 720\"</strong></li>\n<li>Enter Bitrate: <strong>\"3000\"</strong></li>\n<li>Enable <strong>\"Adaptive Bitrate\"</strong></li>\n<li>Select FPS: <strong>\"15\"</strong></li>\n<li>Select Codec: <strong>\"H264\"</strong></li>\n<li>Disable <strong>\"Record\"</strong></li>\n<li>Enable <strong>\"Text Overlay\"</strong></li>\n</ul>\n</li>\n<li><strong>Audio Settings</strong>\n<ul>\n<li>Disable <strong>\"Enable Audio\"</strong></li>\n</ul>\n</li>\n<li><strong>TAK Server Preferences</strong>\n<ul>\n<li>Disable <strong>\"Send Location CoTs to a TAK server\"</strong></li>\n</ul>\n</li>\n</ul>\n<p>If desired, you can adjust the streaming protocol, codec, resolution, FPS, or audio transmission, but with these basic settings you will achieve a stable and reliable streaming experience.</p>\n<h2 id=\"settings\"><a href=\"#settings\">Settings:</a></h2>"
+    },
+    {
+      "type": "image",
+      "src": "/content/images/en/attachments/32a4faaf1c18c6c1.webp",
+      "alt": "",
+      "width": 228,
+      "height": 210
+    },
+    {
+      "type": "html",
+      "html": "<p>Basic settings menu.</p>\n<h3 id=\"streaming-settings\"><a href=\"#streaming-settings\">Streaming Settings:</a></h3>"
+    },
+    {
+      "type": "image",
+      "src": "/content/images/en/attachments/2222b2656d368506.webp",
+      "alt": "",
+      "width": 262,
+      "height": 720
+    },
+    {
+      "type": "html",
+      "html": "<p>Settings related to streaming, such as the destination of the stream and the protocol being used.</p>\n<h3 id=\"video-settings\"><a href=\"#video-settings\">Video Settings:</a></h3>"
+    },
+    {
+      "type": "image",
+      "src": "/content/images/en/attachments/70c88e2cbe4bce2c.webp",
+      "alt": "",
+      "width": 261,
+      "height": 720
+    },
+    {
+      "type": "html",
+      "html": "<p>Settings related to the video stream, such as whether the device's internal camera or an external helmet camera is used, the selected FPS or codec, and whether the transmitted video displays the callsign, location, and time.</p>\n<h3 id=\"audio-settings\"><a href=\"#audio-settings\">Audio Settings:</a></h3>"
+    },
+    {
+      "type": "image",
+      "src": "/content/images/en/attachments/f2a231a8a456d04e.webp",
+      "alt": "",
+      "width": 350,
+      "height": 440
+    },
+    {
+      "type": "html",
+      "html": "<p>Settings related to the audio stream, such as whether it is enabled, which codec is used, and other audio parameters.</p>\n<h3 id=\"tak-server-settings\"><a href=\"#tak-server-settings\">TAK Server Settings:</a></h3>"
+    },
+    {
+      "type": "image",
+      "src": "/content/images/en/attachments/9a8839d00f0649f0.webp",
+      "alt": "",
+      "width": 215,
+      "height": 720
+    },
+    {
+      "type": "html",
+      "html": "<p>Settings for sharing the stream with the TAK server — Opentak ICU can connect to a TAK server, transmit the user's location information, and share a video link with other users.</p>\n<h2 id=\"supported-streaming-protocols-and-codecs\"><a href=\"#supported-streaming-protocols-and-codecs\">Supported streaming protocols and codec's</a></h2>\n<table>\n<thead>\n<tr>\n<th>Streaming protocols (port)</th>\n<th>Video Codec</th>\n<th>Audio Codec</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>RTSPS (8322)</td>\n<td>H264</td>\n<td>AAC</td>\n</tr>\n<tr>\n<td>RTMPS (1936)</td>\n<td>H265</td>\n<td>G711</td>\n</tr>\n<tr>\n<td>SRT (8890)</td>\n<td>AV1</td>\n<td>OPUS</td>\n</tr>\n<tr>\n<td>UDP</td>\n<td>–</td>\n<td>–</td>\n</tr>\n</tbody>\n</table>"
+    }
+  ]
+}

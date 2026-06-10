@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "id": "34798cc2-5edf-4064-84be-99468531d11e",
+  "slug": "atak-android-tak-oeRRt7n8VG",
+  "collection": "wikis/tak",
+  "locale": "fi",
+  "title": "ATAK - Android TAK",
+  "breadcrumb": [
+    "TAK Tuotteet Käyttäjille",
+    "ATAK - Android TAK"
+  ],
+  "createdAt": "2025-12-07T23:16:04.813Z",
+  "updatedAt": "2026-03-28T16:16:57.042Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Tuote Saatavilla",
+      "id": "tuote-saatavilla"
+    },
+    {
+      "depth": 2,
+      "text": "Käyttöohje",
+      "id": "käyttöohje"
+    },
+    {
+      "depth": 2,
+      "text": "Tuotekuvaus",
+      "id": "tuotekuvaus"
+    },
+    {
+      "depth": 2,
+      "text": "Järjestelmävaatimukset",
+      "id": "järjestelmävaatimukset"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p><img src=\"/content/images/fi/attachments/a2fe7303e7840f32.webp\" alt=\"\" title=\" =246x\">   <img src=\"/content/images/fi/attachments/784605b842a7cb56.webp\" alt=\"\" title=\" =2560x\"></p>\n<h2 id=\"tuote-saatavilla\"><a href=\"#tuote-saatavilla\">Tuote Saatavilla</a></h2>\n<p><a href=\"https://tak.gov/products/atak-civ\" target=\"_blank\" rel=\"noopener noreferrer\">https://tak.gov/products/atak-civ</a></p>\n<p><a href=\"https://play.google.com/store/apps/details?id=com.atakmap.app.civ\" target=\"_blank\" rel=\"noopener noreferrer\">https://play.google.com/store/apps/details?id=com.atakmap.app.civ</a></p>\n<h2 id=\"käyttöohje\"><a href=\"#käyttöohje\">Käyttöohje</a></h2>"
+    },
+    {
+      "type": "pdf",
+      "src": "attachments/431e18ef-6d08-439f-9ae8-986de1483385.pdf",
+      "title": "ATAK 5.7 User Guide.pdf"
+    },
+    {
+      "type": "pdf",
+      "src": "attachments/bb683387-a10a-48e1-a3f1-eb03fa821e7e.pdf",
+      "title": "ATAK 5.6 User Guide.pdf"
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"tuotekuvaus\"><a href=\"#tuotekuvaus\">Tuotekuvaus</a></h2>\n<p>Android Team Awareness Kit (ATAK-CIV) tarjoaa vastaavat toiminnot kuin ATAK-MIL -perusversio, lukuun ottamatta pieniä muutoksia sotilassanastossa. TAK-CIV on saatavilla tukemaan siviiliviranomaisten valmius- ja kriisitoiminnan periaatteita: ehkäisy, lieventäminen, valmistautuminen, reagointi sekä hätäevakuointi ja toipuminen.</p>\n<p>Merkittävin ero MIL- ja CIV-versioiden välillä on perusallekirjoitusavain, joka estää sotilaskohtaisten ominaisuuksien lataamisen lisäosien kautta. ATAK-CIV on, kuten ATAK-MIL, verkkoagnostinen ja toimii monien taktisten viestintäjärjestelmien kanssa. ATAK-CIV tukee puolustusministeriön ja kaupallisia karttoja, kuvamateriaalia ja päällekkäisiä tietokerroksia. Mahdollisuuksien mukaan ATAK-sovellus noudattaa Googlen tuottamia käyttöliittymäsuunnittelun ohjeita, jotta loppukäyttäjillä on tuttu käyttökokemus.</p>\n<h2 id=\"järjestelmävaatimukset\"><a href=\"#järjestelmävaatimukset\">Järjestelmävaatimukset</a></h2>\n<p>ATAK-järjestelmävaatimukset</p>\n<ul>\n<li>\n<p><strong>Käyttöjärjestelmä:</strong> ATAK vaatii Android 5.0 (API 21) tai uudemman.</p>\n<p><strong>Laitteisto:</strong> ATAK ei vaadi erityistä laitteistoa ja sen tulisi toimia millä tahansa Android-laitteella, joka täyttää muut järjestelmävaatimukset.</p>\n<p><strong>Grafiikka:</strong> ATAK vaatii grafiikkaprosessorin, joka tukee GLES 3.0:aa.</p>\n<p><strong>Tallennustila, muisti ja prosessori:</strong> ATAKilla ei ole erityisiä vaatimuksia tallennustilan, muistin tai prosessorin suhteen, mutta sovelluksen suorituskyky riippuu laitteen kokoonpanosta.</p>\n<p><strong>Esimerkkejä laitteista:</strong> TAK:ia testataan yleensä useilla Samsung-laitteilla, koska niitä on pääasiassa käytössä kentällä. ATAK toimii kuitenkin myös muilla kuin Samsung-laitteilla.\\n– Pienikokoisiin puhelimiin vaaditaan vähintään Samsung S5:n tasoinen tai uudempi laitteisto.\\n– Tablettilaitteisiin vähintään Samsung Tab S:n tasoinen tai uudempi laitteisto.\\n– Suositus: parhaan käyttökokemuksen saavuttamiseksi puhelimissa tulisi käyttää vähintään Samsung S9:n tasoista tai uudempaa laitteistoa ja tableteissa vähintään Samsung S2:n tasoista tai uudempaa.</p>\n</li>\n</ul>"
+    }
+  ]
+}

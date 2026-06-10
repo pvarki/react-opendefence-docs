@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "label": "MTX Guide",
+  "slug": "guides/mtx-guide",
+  "items": [
+    {
+      "type": "doc",
+      "id": "deploy-app-mtx-pNYQudUcGq",
+      "label": "Deploy App - MTX",
+      "slug": "deploy-app-mtx-pNYQudUcGq"
+    },
+    {
+      "type": "group",
+      "id": "watch-stream-i7cQZkpBTh",
+      "label": "Watch Stream",
+      "children": [
+        {
+          "type": "doc",
+          "id": "watch-stream-i7cQZkpBTh",
+          "label": "Watch Stream",
+          "slug": "watch-stream-i7cQZkpBTh"
+        },
+        {
+          "type": "doc",
+          "id": "browser-OODFuhucDG",
+          "label": "Browser",
+          "slug": "browser-OODFuhucDG"
+        },
+        {
+          "type": "doc",
+          "id": "vlc-player-w1SqNUFWHC",
+          "label": "VLC Player",
+          "slug": "vlc-player-w1SqNUFWHC"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "publish-stream-XN1sPInAKr",
+      "label": "Publish Stream",
+      "children": [
+        {
+          "type": "doc",
+          "id": "publish-stream-XN1sPInAKr",
+          "label": "Publish Stream",
+          "slug": "publish-stream-XN1sPInAKr"
+        },
+        {
+          "type": "doc",
+          "id": "gopro-gDG1IhzxmJ",
+          "label": "GoPro",
+          "slug": "gopro-gDG1IhzxmJ"
+        },
+        {
+          "type": "doc",
+          "id": "opentak-icu-manual-method-zBqUHoY4j0",
+          "label": "OpenTAK ICU - Manual method",
+          "slug": "opentak-icu-manual-method-zBqUHoY4j0"
+        },
+        {
+          "type": "doc",
+          "id": "opentak-icu-xN1NdJaGa8",
+          "label": "OpenTAK ICU",
+          "slug": "opentak-icu-xN1NdJaGa8"
+        },
+        {
+          "type": "doc",
+          "id": "uas-tool-DwT6M5lj9c",
+          "label": "UAS Tool",
+          "slug": "uas-tool-DwT6M5lj9c"
+        }
+      ]
+    }
+  ]
+}

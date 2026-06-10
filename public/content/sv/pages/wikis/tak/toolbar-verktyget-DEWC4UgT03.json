@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "id": "dbddd006-7cee-4216-b9ed-b5727175236e",
+  "slug": "toolbar-verktyget-DEWC4UgT03",
+  "collection": "wikis/tak",
+  "locale": "sv",
+  "title": "Toolbar-verktyget",
+  "breadcrumb": [
+    "TAK-produkter för Användare",
+    "ATAK - Android TAK",
+    "Verktyg och tillägg",
+    "Toolbar-verktyget"
+  ],
+  "createdAt": "2025-12-08T03:03:38.706Z",
+  "updatedAt": "2026-02-19T13:05:48.877Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Verktygsbeskrivning",
+      "id": "verktygsbeskrivning"
+    },
+    {
+      "depth": 2,
+      "text": "Instruktionsvideor",
+      "id": "instruktionsvideor"
+    },
+    {
+      "depth": 2,
+      "text": "Toolbar-verktygets avsnitt i ATAK-manualen",
+      "id": "toolbar-verktygets-avsnitt-i-atak-manualen"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "src": "/content/images/sv/attachments/9dfc62f372874a37.webp",
+      "alt": "",
+      "caption": "=224x",
+      "width": 224,
+      "height": 32
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"verktygsbeskrivning\"><a href=\"#verktygsbeskrivning\"><strong>Verktygsbeskrivning</strong></a></h2>\n<p>ATAK:s verktygsfält är anpassningsbart, vilket gör det möjligt att skapa flera olika layouter och snabbt växla mellan eller redigera dem. Standardverktygsfältet innehåller fem verktyg, och på en smartphone kan ett sjätte verktyg läggas till. På surfplattor kan verktygsfältet innehålla upp till tio verktyg.</p>\n<h2 id=\"instruktionsvideor\"><a href=\"#instruktionsvideor\">Instruktionsvideor</a></h2>\n<p>==YouTube==</p>\n<h2 id=\"toolbar-verktygets-avsnitt-i-atak-manualen\"><a href=\"#toolbar-verktygets-avsnitt-i-atak-manualen\">Toolbar-verktygets avsnitt i ATAK-manualen</a></h2>"
+    },
+    {
+      "type": "pdf",
+      "src": "attachments/d2fe9f9f-1383-4965-810a-90e94a209971.pdf",
+      "title": "ATAK 5.6 Toolbar.pdf"
+    }
+  ]
+}

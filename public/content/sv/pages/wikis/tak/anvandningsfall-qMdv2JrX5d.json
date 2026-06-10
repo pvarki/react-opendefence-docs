@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "a0f41ae4-0570-45ad-a75d-1d23913b2504",
+  "slug": "anvandningsfall-qMdv2JrX5d",
+  "collection": "wikis/tak",
+  "locale": "sv",
+  "title": "Användningsfall",
+  "breadcrumb": [
+    "Användningsmodeller",
+    "Användningsfall"
+  ],
+  "createdAt": "2025-12-08T03:03:34.861Z",
+  "updatedAt": "2026-02-20T06:15:16.403Z",
+  "headings": [
+    {
+      "depth": 3,
+      "text": "Havainnon edelleenlähettäminen\\nHur observationer delas på servern med hjälp av RECON-feeden.",
+      "id": "havainnon-edelleenlähettäminennhur-observationer-delas-på-servern-med-hjälp-av-recon-feeden"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Här presenteras olika sätt att använda TAK för att möta truppers behov i fält. Tyngdpunkten ligger på hur verktygen används för olika användningsfall och hur flera verktyg kan kombineras för att uppnå ett mer effektivt resultat.</p>\n<h3 id=\"havainnon-edelleenlähettäminennhur-observationer-delas-på-servern-med-hjälp-av-recon-feeden\"><a href=\"#havainnon-edelleenlähettäminennhur-observationer-delas-på-servern-med-hjälp-av-recon-feeden\"><a href=\"/doc/2dcca80b-a80d-4d27-a97c-8004143585e6\">Havainnon edelleenlähettäminen</a>\\nHur observationer delas på servern med hjälp av RECON-feeden.</a></h3>"
+    }
+  ]
+}

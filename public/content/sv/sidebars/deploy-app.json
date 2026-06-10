@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "label": "Deploy App",
+  "slug": "deploy-app",
+  "items": [
+    {
+      "type": "group",
+      "id": "android-yFEMlNyGOI",
+      "label": "Android",
+      "children": [
+        {
+          "type": "doc",
+          "id": "android-yFEMlNyGOI",
+          "label": "Android",
+          "slug": "android-yFEMlNyGOI"
+        },
+        {
+          "type": "doc",
+          "id": "anvandarguide-q7fgVGQ10J",
+          "label": "Användarguide",
+          "slug": "anvandarguide-q7fgVGQ10J"
+        },
+        {
+          "type": "doc",
+          "id": "ga-med-i-en-deploy-app-Weat7nbJuF",
+          "label": "Gå med i en Deploy App",
+          "slug": "ga-med-i-en-deploy-app-Weat7nbJuF"
+        },
+        {
+          "type": "doc",
+          "id": "anvanda-applikationer-0DvdFxbzvH",
+          "label": "Använda applikationer",
+          "slug": "anvanda-applikationer-0DvdFxbzvH"
+        },
+        {
+          "type": "doc",
+          "id": "granssnitt-vx5s9QUx7Y",
+          "label": "Gränssnitt",
+          "slug": "granssnitt-vx5s9QUx7Y"
+        },
+        {
+          "type": "doc",
+          "id": "administratorsguide-iLjfd22kyb",
+          "label": "Administratörsguide",
+          "slug": "administratorsguide-iLjfd22kyb"
+        },
+        {
+          "type": "doc",
+          "id": "forsta-inloggningen-X4xEQb7jxr",
+          "label": "Första inloggningen",
+          "slug": "forsta-inloggningen-X4xEQb7jxr"
+        },
+        {
+          "type": "doc",
+          "id": "lagga-till-anvandare-PhAiFqGhft",
+          "label": "Lägga till användare",
+          "slug": "lagga-till-anvandare-PhAiFqGhft"
+        },
+        {
+          "type": "doc",
+          "id": "hantera-anvandare-ROwlDqFUYe",
+          "label": "Hantera användare",
+          "slug": "hantera-anvandare-ROwlDqFUYe"
+        },
+        {
+          "type": "doc",
+          "id": "atkomst-till-externa-tjanster-j1mymYziCz",
+          "label": "Åtkomst till externa tjänster",
+          "slug": "atkomst-till-externa-tjanster-j1mymYziCz"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "id": "2afb6ef9-8302-4722-8880-9f3e01f8a51e",
+  "slug": "mika-on-tak-qDlgj4MWPN",
+  "collection": "wikis/tak",
+  "locale": "fi",
+  "title": "Mikä on TAK?",
+  "breadcrumb": [
+    "Mikä on TAK?"
+  ],
+  "createdAt": "2025-12-07T22:56:55.485Z",
+  "updatedAt": "2026-02-16T08:41:24.184Z",
+  "headings": [
+    {
+      "depth": 3,
+      "text": "Kuka käyttää TAK:ia",
+      "id": "kuka-käyttää-takia"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "src": "/content/images/fi/attachments/e66a11da1a49077d.webp",
+      "alt": "",
+      "caption": "=2000x",
+      "width": 2000,
+      "height": 2064
+    },
+    {
+      "type": "html",
+      "html": "<p>\\n</p>\n<p>Tactical Assault Kit (TAK) on joukko paikkatietopohjaisia tilannekuvatyökaluja — yleisimmin Android-sovellus ATAK (Android Tactical Assault Kit) — jotka on suunniteltu tarjoamaan ryhmille reaaliaikainen karttanäkymä, sijainnin jakaminen ja tehtäväsuunnittelu.</p>\n<p>TAK yhdistää yhden laajennettavan käyttöliittymän alle useita toimintoja: reaaliaikaiset Blue Force / omajoukon sijainnin näytöt, kerrokselliset kartat (rasteri/vektori/WMS/WMTS/KML), chatin ja taktisen viestinnän, sensori- ja videovirrat sekä reitti- ja maalinmerkinnät.</p>\n<p>TAK on lisäosapohjainen, mikä mahdollistaa organisaatioiden lisätä toiminnallisuuksia — kuten havaitsemisen, analytiikan, laiteohjauksen ja hyötykuorman hallinnan — omien tehtävävaatimustensa mukaan. Laajalti käytössä puolustusvoimissa, lainvalvonnassa, pelastustoimessa ja siviiliorganisaatioissa, TAK on osa laajempaa ekosysteemiä, johon kuuluu asiakasohjelmia, palvelimia ja palveluita. Tämä ekosysteemi mahdollistaa yhteentoimivan ja turvallisen koordinaation sekä taistelukentällä että muissa kenttäoperaatioissa.</p>"
+    },
+    {
+      "type": "youtube",
+      "videoId": "kq5Q5chCLSY"
+    },
+    {
+      "type": "html",
+      "html": "<h3 id=\"kuka-käyttää-takia\"><a href=\"#kuka-käyttää-takia\">Kuka käyttää TAK:ia</a></h3>\n<p>TAK on laajassa käytössä Yhdysvalloissa useiden sotilashaarojen ja valtion virastojen keskuudessa. Lisäksi sitä on otettu käyttöön tai kokeiltu useissa Yhdysvaltojen kumppanimaissa, joista merkittävin esimerkki on Britannian maavoimat. Esimerkkejä:</p>\n<ul>\n<li><strong>Yhdysvallat</strong> — laaja DoD-käyttö eri puolustushaaroissa (Yhdysvaltain maavoimat, U.S. Special Operations Command, U.S. Air Force, National Guard sekä monet DoD- ja DHS-yksiköt).</li>\n<li><strong>Iso-Britannia</strong> — TAK valittiin British Armyn Dismounted Situational Awareness -ohjelman (DSA) ensisijaiseksi taistelunjohtosovellukseksi.</li>\n<li><strong>Kanada</strong> — sekä siviili- että sotilaskäyttäjiä on raportoitu (Canadian Armed Forces ja RCMP esiintyvät TAK-käyttäjälistoissa).</li>\n<li><strong>Australia</strong> — australialaisten joukkojen on raportoitu integroineen UAV-järjestelmiä ja muita järjestelmiä TAKiin.</li>\n</ul>\n<p>TAK/ATAK/WinTAK-versioita käyttävät näiden lisäksi monet Naton kumppanit, liittoutuneiden asevoimat sekä lukuisat lainvalvonta- ja pelastusviranomaiset eri puolilla maailmaa. Ekosysteemi on laajasti lisensoitu ja otettu käyttöön sekä sotilas- että siviiliorganisaatioissa. Lähteet vaihtelevat maittain ja ohjelmittain — joissakin tapauksissa käyttöönotto tehdään ohjelmatasolla, kun taas toisissa kyse on yksittäisten joukkojen tai virastojen käyttöönotosta.</p>"
+    }
+  ]
+}

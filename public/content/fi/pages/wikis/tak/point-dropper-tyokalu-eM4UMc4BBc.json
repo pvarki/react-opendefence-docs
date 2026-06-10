@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "id": "4f141c64-bede-4d05-b970-2d143aadc32d",
+  "slug": "point-dropper-tyokalu-eM4UMc4BBc",
+  "collection": "wikis/tak",
+  "locale": "fi",
+  "title": "Point Dropper -työkalu",
+  "breadcrumb": [
+    "TAK Tuotteet Käyttäjille",
+    "ATAK - Android TAK",
+    "Työkalut ja lisäosat",
+    "Point Dropper -työkalu"
+  ],
+  "createdAt": "2025-12-08T01:24:03.892Z",
+  "updatedAt": "2026-02-19T13:05:40.097Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Työkalun kuvaus",
+      "id": "työkalun-kuvaus"
+    },
+    {
+      "depth": 2,
+      "text": "Opastusvideot",
+      "id": "opastusvideot"
+    },
+    {
+      "depth": 3,
+      "text": "Point Dropper tool (5min)",
+      "id": "point-dropper-tool-5min"
+    },
+    {
+      "depth": 2,
+      "text": "Point Dropper -työkalun osio ATAK-käyttöohjeesta",
+      "id": "point-dropper--työkalun-osio-atak-käyttöohjeesta"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p><img src=\"/content/images/fi/attachments/4535799356955bab.webp\" alt=\"\">\\n</p>\n<h2 id=\"työkalun-kuvaus\"><a href=\"#työkalun-kuvaus\"><strong>Työkalun kuvaus</strong></a></h2>\n<p>Kiinnostavat sijainnit voidaan syöttää Point Dropper -työkalun avulla. Valitse Point Dropper -ikoni asettaaksesi kansainvälisesti standardoituja markkereita ja muita ikoneita kartalle, muokataksesi niiden tietoja sekä jakaaksesi markkerit muiden verkon käyttäjien kanssa.</p>\n<h2 id=\"opastusvideot\"><a href=\"#opastusvideot\">Opastusvideot</a></h2>\n<h3 id=\"point-dropper-tool-5min\"><a href=\"#point-dropper-tool-5min\">Point Dropper tool (5min)</a></h3>"
+    },
+    {
+      "type": "youtube",
+      "videoId": "nst7KB4Elow"
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"point-dropper--työkalun-osio-atak-käyttöohjeesta\"><a href=\"#point-dropper--työkalun-osio-atak-käyttöohjeesta\">Point Dropper -työkalun osio ATAK-käyttöohjeesta</a></h2>"
+    }
+  ]
+}

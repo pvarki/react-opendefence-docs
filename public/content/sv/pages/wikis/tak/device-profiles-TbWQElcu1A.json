@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "id": "e91f59d7-c745-4196-b327-81ce4988cd5e",
+  "slug": "device-profiles-TbWQElcu1A",
+  "collection": "wikis/tak",
+  "locale": "sv",
+  "title": "Device Profiles",
+  "breadcrumb": [
+    "TAK-verktyg för Huvudadministratörer",
+    "Takserver",
+    "Device Profiles"
+  ],
+  "createdAt": "2025-12-08T03:03:35.705Z",
+  "updatedAt": "2026-02-19T13:46:53.978Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Enhetsprofiler – Apply on Enrollment (Använd vid registrering)",
+      "id": "enhetsprofiler--apply-on-enrollment-använd-vid-registrering"
+    },
+    {
+      "depth": 2,
+      "text": "Apply on Connection (Använd vid anslutning)",
+      "id": "apply-on-connection-använd-vid-anslutning"
+    },
+    {
+      "depth": 2,
+      "text": "Tool (Verktyg)",
+      "id": "tool-verktyg"
+    },
+    {
+      "depth": 2,
+      "text": "Apply on Enrollment (Använd vid registrering)",
+      "id": "apply-on-enrollment-använd-vid-registrering"
+    },
+    {
+      "depth": 2,
+      "text": "Apply on Connection (Använd vid anslutning)",
+      "id": "apply-on-connection-använd-vid-anslutning-1"
+    },
+    {
+      "depth": 2,
+      "text": "Tool (Verktyg)",
+      "id": "tool-verktyg-1"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<h2 id=\"enhetsprofiler--apply-on-enrollment-använd-vid-registrering\"><a href=\"#enhetsprofiler--apply-on-enrollment-använd-vid-registrering\"><strong>Enhetsprofiler – Apply on Enrollment (Använd vid registrering)</strong></a></h2>\n<p>När en användare registrerar sin enhet med användarnamn och lösenord för att få ett certifikat, kan enheten få sina EUD-inställningar från servern.</p>\n<p>Detta används vanligtvis för att distribuera en första eller minimal konfiguration, såsom:</p>\n<ul>\n<li>Update Server-inställningar</li>\n<li>Kartor</li>\n<li>Verktygsfält</li>\n</ul>\n<h2 id=\"apply-on-connection-använd-vid-anslutning\"><a href=\"#apply-on-connection-använd-vid-anslutning\"><strong>Apply on Connection (Använd vid anslutning)</strong></a></h2>\n<p>En redan registrerad användare, eller en användare som ansluter med certifikat, kan få profiluppdateringar varje gång enheten åter ansluter till servern.</p>\n<p>Detta kan användas till exempel för:</p>\n<ul>\n<li>att distribuera nödvändiga ändringar</li>\n<li>att leverera paket med extra funktioner (t.ex. Medic-verktygsfältet till användare i Medic-gruppen)</li>\n<li>att uppdatera Mesh-krypteringsnycklar</li>\n</ul>\n<h2 id=\"tool-verktyg\"><a href=\"#tool-verktyg\"><strong>Tool (Verktyg)</strong></a></h2>\n<p>Verktyget används som en <strong>manuell metod</strong> för att uppdatera inställningar eller dela filer till specifika användare.</p>\n<p>Det används vanligtvis för:</p>\n<ul>\n<li>tvingade uppdateringar till användare som inte fått filer på andra sätt.</li>\n</ul>\n<p>Enhetsprofiler skapas i <strong>Device Profile Manager</strong> och tilldelas användare i specifika grupper. Profiler kan distribueras till användare via <strong>registrering</strong>, <strong>serveranslutning</strong> eller <strong>manuellt via verktyget</strong>.</p>\n<p>Det rekommenderade sättet att distribuera inställningar är att använda <strong>.pref-filer i ett TAK-datapaket</strong>, eftersom datapaket automatiskt kan starta ATAK:s importfunktion för sina filer.</p>\n<p><img src=\"/content/images/sv/attachments/fda9aac14a791999.webp\" alt=\"\" title=\" =2560x427\"> <img src=\"/content/images/sv/attachments/c1665a4a7d3a3789.webp\" alt=\"\" title=\" =2560x676\"></p>\n<h2 id=\"apply-on-enrollment-använd-vid-registrering\"><a href=\"#apply-on-enrollment-använd-vid-registrering\"><strong>Apply on Enrollment (Använd vid registrering)</strong></a></h2>\n<p>När en användare registrerar sin enhet med användarnamn och lösenord för att få ett certifikat kan enheten ta emot EUD-inställningar från servern.</p>\n<p>Detta används vanligtvis för att distribuera en första eller minimal konfiguration, såsom:</p>\n<ul>\n<li>Update Server-inställningar</li>\n<li>Kartor</li>\n<li>Verktygsfält</li>\n</ul>\n<h2 id=\"apply-on-connection-använd-vid-anslutning-1\"><a href=\"#apply-on-connection-använd-vid-anslutning-1\"><strong>Apply on Connection (Använd vid anslutning)</strong></a></h2>\n<p>En redan registrerad användare, eller en användare som ansluter med certifikat, kan få profiluppdateringar varje gång enheten återansluter till servern.</p>\n<p>Detta kan användas till exempel för:</p>\n<ul>\n<li>distribution av nödvändiga ändringar</li>\n<li>leverans av tilläggspaket (t.ex. Medic-verktygsfält till användare i Medic-gruppen)</li>\n<li>uppdatering av Mesh-krypteringsnycklar</li>\n</ul>\n<h2 id=\"tool-verktyg-1\"><a href=\"#tool-verktyg-1\"><strong>Tool (Verktyg)</strong></a></h2>\n<p>Verktyget används som en <strong>manuell metod</strong> för att uppdatera inställningar eller dela filer till specifika användare.</p>\n<p>Det används vanligtvis för:</p>\n<ul>\n<li>tvingade uppdateringar för användare som inte har fått filer på andra sätt.</li>\n</ul>"
+    }
+  ]
+}

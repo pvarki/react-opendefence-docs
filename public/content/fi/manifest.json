@@ -1,0 +1,1107 @@
+{
+  "schemaVersion": 1,
+  "locale": "fi",
+  "generatedAt": "2026-06-10T20:50:48.593Z",
+  "collections": [
+    {
+      "slug": "deploy-app",
+      "label": "Deploy App",
+      "description": "Main application documentation",
+      "section": "deploy-app",
+      "order": 0
+    },
+    {
+      "slug": "guides/mtx-guide",
+      "label": "MTX Guide",
+      "description": "MTX platform guide",
+      "section": "guides",
+      "order": 1
+    },
+    {
+      "slug": "guides/matrix-guide",
+      "label": "Matrix Guide",
+      "description": "Matrix platform guide",
+      "section": "guides",
+      "order": 2
+    },
+    {
+      "slug": "guides/cryptpad-guide",
+      "label": "CryptPad Guide",
+      "description": "CryptPad platform guide",
+      "section": "guides",
+      "order": 3
+    },
+    {
+      "slug": "wikis/tak",
+      "label": "TAK Wiki",
+      "description": "TAK technical reference",
+      "section": "wikis",
+      "order": 4
+    },
+    {
+      "slug": "wikis/mtx",
+      "label": "MTX Wiki",
+      "description": "MTX technical reference",
+      "section": "wikis",
+      "order": 5
+    },
+    {
+      "slug": "dev",
+      "label": "For Developers",
+      "description": "Developer-focused documentation",
+      "section": "dev",
+      "order": 6
+    }
+  ],
+  "pages": [
+    {
+      "id": "cdd04071-30d1-41be-ae25-3b4b9e18d880",
+      "slug": "android-vdSzGssyHX",
+      "collection": "deploy-app",
+      "title": "Android",
+      "breadcrumb": [
+        "Android"
+      ],
+      "path": "/content/fi/pages/deploy-app/android-vdSzGssyHX.json",
+      "updatedAt": "2026-02-17T06:52:04.584Z",
+      "order": 0
+    },
+    {
+      "id": "69358e0e-1419-4f2a-bccb-f82512e081c9",
+      "slug": "kayttajaohjeet-KILDyYvVV0",
+      "collection": "deploy-app",
+      "title": "Käyttäjäohjeet",
+      "breadcrumb": [
+        "Android",
+        "Käyttäjäohjeet"
+      ],
+      "path": "/content/fi/pages/deploy-app/kayttajaohjeet-KILDyYvVV0.json",
+      "updatedAt": "2026-02-17T06:53:40.398Z",
+      "order": 1
+    },
+    {
+      "id": "dbd14310-6179-4586-930b-1160b5dc45de",
+      "slug": "liittyminen-deploy-appiin-hFiNczU5i7",
+      "collection": "deploy-app",
+      "title": "Liittyminen Deploy Appiin",
+      "breadcrumb": [
+        "Android",
+        "Käyttäjäohjeet",
+        "Liittyminen Deploy Appiin"
+      ],
+      "path": "/content/fi/pages/deploy-app/liittyminen-deploy-appiin-hFiNczU5i7.json",
+      "updatedAt": "2026-02-19T12:24:36.291Z",
+      "order": 2
+    },
+    {
+      "id": "6357c6e4-656d-4013-aa96-82a88fa14e65",
+      "slug": "sovellusten-kaytto-VdrL78Atgf",
+      "collection": "deploy-app",
+      "title": "Sovellusten käyttö",
+      "breadcrumb": [
+        "Android",
+        "Käyttäjäohjeet",
+        "Sovellusten käyttö"
+      ],
+      "path": "/content/fi/pages/deploy-app/sovellusten-kaytto-VdrL78Atgf.json",
+      "updatedAt": "2026-02-25T07:29:18.849Z",
+      "order": 3
+    },
+    {
+      "id": "1088d329-4ce1-4e72-a247-cfb6dd0f0521",
+      "slug": "kayttoliittyma-9RSCOjN5ER",
+      "collection": "deploy-app",
+      "title": "Käyttöliittymä",
+      "breadcrumb": [
+        "Android",
+        "Käyttäjäohjeet",
+        "Käyttöliittymä"
+      ],
+      "path": "/content/fi/pages/deploy-app/kayttoliittyma-9RSCOjN5ER.json",
+      "updatedAt": "2026-02-25T07:32:33.936Z",
+      "order": 4
+    },
+    {
+      "id": "5a9026f1-7ece-45aa-979c-37db5c558679",
+      "slug": "yllapitajaohjeet-9kIb7LsIOM",
+      "collection": "deploy-app",
+      "title": "Ylläpitäjäohjeet",
+      "breadcrumb": [
+        "Android",
+        "Ylläpitäjäohjeet"
+      ],
+      "path": "/content/fi/pages/deploy-app/yllapitajaohjeet-9kIb7LsIOM.json",
+      "updatedAt": "2026-02-17T06:53:47.894Z",
+      "order": 5
+    },
+    {
+      "id": "ba4285fd-7ff4-49df-9392-5c315e294681",
+      "slug": "ensimmainen-kirjautuminen-VB4kdcfIUZ",
+      "collection": "deploy-app",
+      "title": "Ensimmäinen kirjautuminen",
+      "breadcrumb": [
+        "Android",
+        "Ylläpitäjäohjeet",
+        "Ensimmäinen kirjautuminen"
+      ],
+      "path": "/content/fi/pages/deploy-app/ensimmainen-kirjautuminen-VB4kdcfIUZ.json",
+      "updatedAt": "2026-02-25T07:33:23.528Z",
+      "order": 6
+    },
+    {
+      "id": "e00c5123-e584-46ba-a48a-6673d23499ea",
+      "slug": "lisaa-kayttajia-CPoyZ94C7z",
+      "collection": "deploy-app",
+      "title": "Lisää käyttäjiä",
+      "breadcrumb": [
+        "Android",
+        "Ylläpitäjäohjeet",
+        "Lisää käyttäjiä"
+      ],
+      "path": "/content/fi/pages/deploy-app/lisaa-kayttajia-CPoyZ94C7z.json",
+      "updatedAt": "2026-02-25T07:33:56.672Z",
+      "order": 7
+    },
+    {
+      "id": "fbcaabf8-29db-413d-acc6-8eccd5ef00de",
+      "slug": "hallitse-kayttajia-YrSqUxRf2V",
+      "collection": "deploy-app",
+      "title": "Hallitse käyttäjiä",
+      "breadcrumb": [
+        "Android",
+        "Ylläpitäjäohjeet",
+        "Hallitse käyttäjiä"
+      ],
+      "path": "/content/fi/pages/deploy-app/hallitse-kayttajia-YrSqUxRf2V.json",
+      "updatedAt": "2026-02-25T07:34:51.649Z",
+      "order": 8
+    },
+    {
+      "id": "3656f4ec-3dc2-448a-a239-581e9b5f87c0",
+      "slug": "kayta-ulkoisia-palveluita-3RiDEDjjg0",
+      "collection": "deploy-app",
+      "title": "Käytä ulkoisia palveluita",
+      "breadcrumb": [
+        "Android",
+        "Ylläpitäjäohjeet",
+        "Käytä ulkoisia palveluita"
+      ],
+      "path": "/content/fi/pages/deploy-app/kayta-ulkoisia-palveluita-3RiDEDjjg0.json",
+      "updatedAt": "2026-02-25T07:35:24.784Z",
+      "order": 9
+    },
+    {
+      "id": "95181bf8-9633-4bc0-98a5-2d19f45c8a83",
+      "slug": "deploy-app-mtx-yHJ4LHVgZZ",
+      "collection": "guides/mtx-guide",
+      "title": "Deploy App - MTX",
+      "breadcrumb": [
+        "Deploy App - MTX"
+      ],
+      "path": "/content/fi/pages/guides/mtx-guide/deploy-app-mtx-yHJ4LHVgZZ.json",
+      "updatedAt": "2026-03-08T05:42:09.271Z",
+      "order": 0
+    },
+    {
+      "id": "53f74fbb-29cf-4abe-b448-93c0ab9674b7",
+      "slug": "katso-striimia-x57r3upJZ4",
+      "collection": "guides/mtx-guide",
+      "title": "Katso Striimiä",
+      "breadcrumb": [
+        "Katso Striimiä"
+      ],
+      "path": "/content/fi/pages/guides/mtx-guide/katso-striimia-x57r3upJZ4.json",
+      "updatedAt": "2026-02-20T06:19:45.903Z",
+      "order": 1
+    },
+    {
+      "id": "70562d86-f135-4376-b3cd-96cd6dad013a",
+      "slug": "selain-0MrE4uNLAM",
+      "collection": "guides/mtx-guide",
+      "title": "Selain",
+      "breadcrumb": [
+        "Katso Striimiä",
+        "Selain"
+      ],
+      "path": "/content/fi/pages/guides/mtx-guide/selain-0MrE4uNLAM.json",
+      "updatedAt": "2026-02-24T06:33:37.533Z",
+      "order": 2
+    },
+    {
+      "id": "f8359615-cc9a-47ab-972b-128643af3af7",
+      "slug": "vlc-player-fUPdjIb8kS",
+      "collection": "guides/mtx-guide",
+      "title": "VLC Player",
+      "breadcrumb": [
+        "Katso Striimiä",
+        "VLC Player"
+      ],
+      "path": "/content/fi/pages/guides/mtx-guide/vlc-player-fUPdjIb8kS.json",
+      "updatedAt": "2026-02-24T06:33:20.527Z",
+      "order": 3
+    },
+    {
+      "id": "3323b1eb-2f08-4c27-9503-cf6f70fa960d",
+      "slug": "julkaise-striimia-sIbGhTUkad",
+      "collection": "guides/mtx-guide",
+      "title": "Julkaise Striimiä",
+      "breadcrumb": [
+        "Julkaise Striimiä"
+      ],
+      "path": "/content/fi/pages/guides/mtx-guide/julkaise-striimia-sIbGhTUkad.json",
+      "updatedAt": "2026-04-11T21:49:50.164Z",
+      "order": 4
+    },
+    {
+      "id": "1d937934-f557-4e02-b685-4f95e4ef6bbc",
+      "slug": "gopro-C3E58GqT35",
+      "collection": "guides/mtx-guide",
+      "title": "GoPro",
+      "breadcrumb": [
+        "Julkaise Striimiä",
+        "GoPro"
+      ],
+      "path": "/content/fi/pages/guides/mtx-guide/gopro-C3E58GqT35.json",
+      "updatedAt": "2026-02-20T06:23:13.083Z",
+      "order": 5
+    },
+    {
+      "id": "61fcd48c-0c6d-4a3e-a81d-6bf70e3a380a",
+      "slug": "opentak-icu-manuaalinen-tapa-KeJeyn2JV6",
+      "collection": "guides/mtx-guide",
+      "title": "OpenTAK ICU - Manuaalinen tapa",
+      "breadcrumb": [
+        "Julkaise Striimiä",
+        "OpenTAK ICU - Manuaalinen tapa"
+      ],
+      "path": "/content/fi/pages/guides/mtx-guide/opentak-icu-manuaalinen-tapa-KeJeyn2JV6.json",
+      "updatedAt": "2026-04-11T16:45:14.091Z",
+      "order": 6
+    },
+    {
+      "id": "fed2d9b3-b683-47cf-9c96-560574f5f410",
+      "slug": "opentak-icu-f0iwedgGde",
+      "collection": "guides/mtx-guide",
+      "title": "OpenTAK ICU",
+      "breadcrumb": [
+        "Julkaise Striimiä",
+        "OpenTAK ICU"
+      ],
+      "path": "/content/fi/pages/guides/mtx-guide/opentak-icu-f0iwedgGde.json",
+      "updatedAt": "2026-04-12T12:45:25.222Z",
+      "order": 7
+    },
+    {
+      "id": "b8fccbaa-622b-4dd5-9a6c-ddbddcbc10a6",
+      "slug": "uas-tool-CX4y0uY0IF",
+      "collection": "guides/mtx-guide",
+      "title": "UAS Tool",
+      "breadcrumb": [
+        "Julkaise Striimiä",
+        "UAS Tool"
+      ],
+      "path": "/content/fi/pages/guides/mtx-guide/uas-tool-CX4y0uY0IF.json",
+      "updatedAt": "2026-04-12T12:45:31.824Z",
+      "order": 8
+    },
+    {
+      "id": "60acf78d-ae06-46a8-9959-cfc2e60298bc",
+      "slug": "deploy-app-matrix-R3ReKx6Qsk",
+      "collection": "guides/matrix-guide",
+      "title": "Deploy App - Matrix",
+      "breadcrumb": [
+        "Deploy App - Matrix"
+      ],
+      "path": "/content/fi/pages/guides/matrix-guide/deploy-app-matrix-R3ReKx6Qsk.json",
+      "updatedAt": "2026-05-05T15:20:00.632Z",
+      "order": 0
+    },
+    {
+      "id": "fb92cecc-a290-420f-b974-226b0d5d4c08",
+      "slug": "deploy-app-cryptpad-2C27HtLUGm",
+      "collection": "guides/cryptpad-guide",
+      "title": "Deploy App - CryptPad",
+      "breadcrumb": [
+        "Deploy App - CryptPad"
+      ],
+      "path": "/content/fi/pages/guides/cryptpad-guide/deploy-app-cryptpad-2C27HtLUGm.json",
+      "updatedAt": "2026-05-05T14:52:30.790Z",
+      "order": 0
+    },
+    {
+      "id": "2afb6ef9-8302-4722-8880-9f3e01f8a51e",
+      "slug": "mika-on-tak-qDlgj4MWPN",
+      "collection": "wikis/tak",
+      "title": "Mikä on TAK?",
+      "breadcrumb": [
+        "Mikä on TAK?"
+      ],
+      "path": "/content/fi/pages/wikis/tak/mika-on-tak-qDlgj4MWPN.json",
+      "updatedAt": "2026-02-16T08:41:24.184Z",
+      "order": 0
+    },
+    {
+      "id": "71b83e6a-9dbb-4231-bc76-392f55489519",
+      "slug": "ohjevideot-cXQYuKHhVR",
+      "collection": "wikis/tak",
+      "title": "Ohjevideot",
+      "breadcrumb": [
+        "Ohjevideot"
+      ],
+      "path": "/content/fi/pages/wikis/tak/ohjevideot-cXQYuKHhVR.json",
+      "updatedAt": "2026-02-19T12:41:21.625Z",
+      "order": 1
+    },
+    {
+      "id": "8ba91068-d662-4d04-a1d4-e46b1c23336a",
+      "slug": "tak-tuotteet-kayttajille-91L6pdb8ee",
+      "collection": "wikis/tak",
+      "title": "TAK Tuotteet Käyttäjille",
+      "breadcrumb": [
+        "TAK Tuotteet Käyttäjille"
+      ],
+      "path": "/content/fi/pages/wikis/tak/tak-tuotteet-kayttajille-91L6pdb8ee.json",
+      "updatedAt": "2026-02-19T12:42:47.401Z",
+      "order": 2
+    },
+    {
+      "id": "34798cc2-5edf-4064-84be-99468531d11e",
+      "slug": "atak-android-tak-oeRRt7n8VG",
+      "collection": "wikis/tak",
+      "title": "ATAK - Android TAK",
+      "breadcrumb": [
+        "TAK Tuotteet Käyttäjille",
+        "ATAK - Android TAK"
+      ],
+      "path": "/content/fi/pages/wikis/tak/atak-android-tak-oeRRt7n8VG.json",
+      "updatedAt": "2026-03-28T16:16:57.042Z",
+      "order": 3
+    },
+    {
+      "id": "26fc7309-0aaf-41be-b1b4-85875f4c0e29",
+      "slug": "tyokalut-ja-lisaosat-qC4tN7ic8c",
+      "collection": "wikis/tak",
+      "title": "Työkalut ja lisäosat",
+      "breadcrumb": [
+        "TAK Tuotteet Käyttäjille",
+        "ATAK - Android TAK",
+        "Työkalut ja lisäosat"
+      ],
+      "path": "/content/fi/pages/wikis/tak/tyokalut-ja-lisaosat-qC4tN7ic8c.json",
+      "updatedAt": "2026-02-19T13:04:59.086Z",
+      "order": 4
+    },
+    {
+      "id": "35d0cc01-38f5-4e3e-bdc2-86cc58a8b015",
+      "slug": "bloodhound-tyokalu-6Upz4LkrO9",
+      "collection": "wikis/tak",
+      "title": "Bloodhound-työkalu",
+      "breadcrumb": [
+        "TAK Tuotteet Käyttäjille",
+        "ATAK - Android TAK",
+        "Työkalut ja lisäosat",
+        "Bloodhound-työkalu"
+      ],
+      "path": "/content/fi/pages/wikis/tak/bloodhound-tyokalu-6Upz4LkrO9.json",
+      "updatedAt": "2026-02-19T13:05:09.198Z",
+      "order": 5
+    },
+    {
+      "id": "0e4ecfe3-e4c3-43e6-b9ac-fe95e7b1dc14",
+      "slug": "contacts-geochat-tyokalu-3p3x279r0s",
+      "collection": "wikis/tak",
+      "title": "Contacts / GeoChat -työkalu",
+      "breadcrumb": [
+        "TAK Tuotteet Käyttäjille",
+        "ATAK - Android TAK",
+        "Työkalut ja lisäosat",
+        "Contacts / GeoChat -työkalu"
+      ],
+      "path": "/content/fi/pages/wikis/tak/contacts-geochat-tyokalu-3p3x279r0s.json",
+      "updatedAt": "2026-02-19T13:05:19.438Z",
+      "order": 6
+    },
+    {
+      "id": "44249d16-6362-47b6-8859-7837e58f1997",
+      "slug": "data-sync-lisaosa-knb4IdgXyb",
+      "collection": "wikis/tak",
+      "title": "Data Sync -lisäosa",
+      "breadcrumb": [
+        "TAK Tuotteet Käyttäjille",
+        "ATAK - Android TAK",
+        "Työkalut ja lisäosat",
+        "Data Sync -lisäosa"
+      ],
+      "path": "/content/fi/pages/wikis/tak/data-sync-lisaosa-knb4IdgXyb.json",
+      "updatedAt": "2026-02-19T13:05:30.279Z",
+      "order": 7
+    },
+    {
+      "id": "4f141c64-bede-4d05-b970-2d143aadc32d",
+      "slug": "point-dropper-tyokalu-eM4UMc4BBc",
+      "collection": "wikis/tak",
+      "title": "Point Dropper -työkalu",
+      "breadcrumb": [
+        "TAK Tuotteet Käyttäjille",
+        "ATAK - Android TAK",
+        "Työkalut ja lisäosat",
+        "Point Dropper -työkalu"
+      ],
+      "path": "/content/fi/pages/wikis/tak/point-dropper-tyokalu-eM4UMc4BBc.json",
+      "updatedAt": "2026-02-19T13:05:40.097Z",
+      "order": 8
+    },
+    {
+      "id": "45b7d57b-c7bd-40df-b904-067c392de70d",
+      "slug": "toolbar-tyokalu-bYyF756MBb",
+      "collection": "wikis/tak",
+      "title": "Toolbar-työkalu",
+      "breadcrumb": [
+        "TAK Tuotteet Käyttäjille",
+        "ATAK - Android TAK",
+        "Työkalut ja lisäosat",
+        "Toolbar-työkalu"
+      ],
+      "path": "/content/fi/pages/wikis/tak/toolbar-tyokalu-bYyF756MBb.json",
+      "updatedAt": "2026-02-19T13:05:52.415Z",
+      "order": 9
+    },
+    {
+      "id": "e841f929-6240-493c-b6f2-b45f6a6e501d",
+      "slug": "uas-tool-lisaosa-BXzO8q7CVq",
+      "collection": "wikis/tak",
+      "title": "UAS Tool -lisäosa",
+      "breadcrumb": [
+        "TAK Tuotteet Käyttäjille",
+        "ATAK - Android TAK",
+        "Työkalut ja lisäosat",
+        "UAS Tool -lisäosa"
+      ],
+      "path": "/content/fi/pages/wikis/tak/uas-tool-lisaosa-BXzO8q7CVq.json",
+      "updatedAt": "2026-02-19T13:06:02.864Z",
+      "order": 10
+    },
+    {
+      "id": "2586e9d1-9343-4b54-9218-b6d5b9659a12",
+      "slug": "vns-lisaosa-Hnpl0Xgv25",
+      "collection": "wikis/tak",
+      "title": "VNS -lisäosa",
+      "breadcrumb": [
+        "TAK Tuotteet Käyttäjille",
+        "ATAK - Android TAK",
+        "Työkalut ja lisäosat",
+        "VNS -lisäosa"
+      ],
+      "path": "/content/fi/pages/wikis/tak/vns-lisaosa-Hnpl0Xgv25.json",
+      "updatedAt": "2026-02-19T13:04:19.098Z",
+      "order": 11
+    },
+    {
+      "id": "6afaee14-68de-47b5-826c-ca68b557a975",
+      "slug": "lisaosa-listaus-N4znkanSPj",
+      "collection": "wikis/tak",
+      "title": "Lisäosa listaus",
+      "breadcrumb": [
+        "TAK Tuotteet Käyttäjille",
+        "ATAK - Android TAK",
+        "Lisäosa listaus"
+      ],
+      "path": "/content/fi/pages/wikis/tak/lisaosa-listaus-N4znkanSPj.json",
+      "updatedAt": "2026-02-19T13:12:50.870Z",
+      "order": 12
+    },
+    {
+      "id": "25c7aa6e-391e-436d-bf18-7ba542dba557",
+      "slug": "itak-apple-tak-1xxodVxfN8",
+      "collection": "wikis/tak",
+      "title": "iTAK - Apple TAK",
+      "breadcrumb": [
+        "TAK Tuotteet Käyttäjille",
+        "iTAK - Apple TAK"
+      ],
+      "path": "/content/fi/pages/wikis/tak/itak-apple-tak-1xxodVxfN8.json",
+      "updatedAt": "2026-02-19T13:13:48.829Z",
+      "order": 13
+    },
+    {
+      "id": "8ad5bfab-d9bb-4ea5-b7e7-92479be5f357",
+      "slug": "tak-aware-apple-tak-Kca1qYUDAO",
+      "collection": "wikis/tak",
+      "title": "TAK Aware - Apple TAK",
+      "breadcrumb": [
+        "TAK Tuotteet Käyttäjille",
+        "TAK Aware - Apple TAK"
+      ],
+      "path": "/content/fi/pages/wikis/tak/tak-aware-apple-tak-Kca1qYUDAO.json",
+      "updatedAt": "2026-02-19T13:16:38.634Z",
+      "order": 14
+    },
+    {
+      "id": "a779bf12-1a8a-466e-a332-b4afea032045",
+      "slug": "tak-tracker-kevyt-tak-android-ja-apple-H2Bj8HNmnv",
+      "collection": "wikis/tak",
+      "title": "TAK Tracker - Kevyt TAK — Android ja Apple",
+      "breadcrumb": [
+        "TAK Tuotteet Käyttäjille",
+        "TAK Tracker - Kevyt TAK — Android ja Apple"
+      ],
+      "path": "/content/fi/pages/wikis/tak/tak-tracker-kevyt-tak-android-ja-apple-H2Bj8HNmnv.json",
+      "updatedAt": "2026-02-19T13:19:43.077Z",
+      "order": 15
+    },
+    {
+      "id": "fdfa6671-a07e-448e-9f10-c6d718bd4fce",
+      "slug": "vr-tak-virtuaalitodellisuus-tak-zpNoc3jnF4",
+      "collection": "wikis/tak",
+      "title": "VR-TAK - Virtuaalitodellisuus TAK",
+      "breadcrumb": [
+        "TAK Tuotteet Käyttäjille",
+        "VR-TAK - Virtuaalitodellisuus TAK"
+      ],
+      "path": "/content/fi/pages/wikis/tak/vr-tak-virtuaalitodellisuus-tak-zpNoc3jnF4.json",
+      "updatedAt": "2026-02-19T13:20:52.888Z",
+      "order": 16
+    },
+    {
+      "id": "aed98639-de02-4f0d-be4e-99b5151ca164",
+      "slug": "wintak-windows-tak-UFb4pI3uVv",
+      "collection": "wikis/tak",
+      "title": "WinTAK - Windows TAK",
+      "breadcrumb": [
+        "TAK Tuotteet Käyttäjille",
+        "WinTAK - Windows TAK"
+      ],
+      "path": "/content/fi/pages/wikis/tak/wintak-windows-tak-UFb4pI3uVv.json",
+      "updatedAt": "2026-03-04T19:01:46.048Z",
+      "order": 17
+    },
+    {
+      "id": "18cb5e46-53b2-4943-bf98-9deeb9e54012",
+      "slug": "tyokalut-ja-lisaosat-z4hu8AFihP",
+      "collection": "wikis/tak",
+      "title": "Työkalut ja lisäosat",
+      "breadcrumb": [
+        "TAK Tuotteet Käyttäjille",
+        "WinTAK - Windows TAK",
+        "Työkalut ja lisäosat"
+      ],
+      "path": "/content/fi/pages/wikis/tak/tyokalut-ja-lisaosat-z4hu8AFihP.json",
+      "updatedAt": "2026-02-19T13:25:40.830Z",
+      "order": 18
+    },
+    {
+      "id": "03db5d21-39c1-4477-b684-7ee2675425ef",
+      "slug": "contacts-geochat-tyokalu-isdG7ytN8I",
+      "collection": "wikis/tak",
+      "title": "Contacts / GeoChat -työkalu",
+      "breadcrumb": [
+        "TAK Tuotteet Käyttäjille",
+        "WinTAK - Windows TAK",
+        "Työkalut ja lisäosat",
+        "Contacts / GeoChat -työkalu"
+      ],
+      "path": "/content/fi/pages/wikis/tak/contacts-geochat-tyokalu-isdG7ytN8I.json",
+      "updatedAt": "2026-02-19T13:26:22.177Z",
+      "order": 19
+    },
+    {
+      "id": "ebf3a151-33a5-4294-8bee-c551e45658e9",
+      "slug": "data-sync-lisaosa-jU43Cz3gXs",
+      "collection": "wikis/tak",
+      "title": "Data Sync -lisäosa",
+      "breadcrumb": [
+        "TAK Tuotteet Käyttäjille",
+        "WinTAK - Windows TAK",
+        "Työkalut ja lisäosat",
+        "Data Sync -lisäosa"
+      ],
+      "path": "/content/fi/pages/wikis/tak/data-sync-lisaosa-jU43Cz3gXs.json",
+      "updatedAt": "2026-02-19T13:27:06.108Z",
+      "order": 20
+    },
+    {
+      "id": "fc99f274-ee61-4f0b-a387-349025b67b76",
+      "slug": "tak-replay-lisaosa-xEHeK6Wly9",
+      "collection": "wikis/tak",
+      "title": "TAK Replay -lisäosa",
+      "breadcrumb": [
+        "TAK Tuotteet Käyttäjille",
+        "WinTAK - Windows TAK",
+        "Työkalut ja lisäosat",
+        "TAK Replay -lisäosa"
+      ],
+      "path": "/content/fi/pages/wikis/tak/tak-replay-lisaosa-xEHeK6Wly9.json",
+      "updatedAt": "2026-02-19T13:29:17.167Z",
+      "order": 21
+    },
+    {
+      "id": "1a4e123c-b1fc-4835-a345-6cc0b4b63eff",
+      "slug": "vns-lisaosa-yRSNhjwvwF",
+      "collection": "wikis/tak",
+      "title": "VNS - lisäosa",
+      "breadcrumb": [
+        "TAK Tuotteet Käyttäjille",
+        "WinTAK - Windows TAK",
+        "Työkalut ja lisäosat",
+        "VNS - lisäosa"
+      ],
+      "path": "/content/fi/pages/wikis/tak/vns-lisaosa-yRSNhjwvwF.json",
+      "updatedAt": "2026-02-19T13:29:56.152Z",
+      "order": 22
+    },
+    {
+      "id": "f05f880a-11bf-48f3-a268-d86506eee537",
+      "slug": "lisaosa-listaus-W9iA7LSPv4",
+      "collection": "wikis/tak",
+      "title": "Lisäosa listaus",
+      "breadcrumb": [
+        "TAK Tuotteet Käyttäjille",
+        "WinTAK - Windows TAK",
+        "Lisäosa listaus"
+      ],
+      "path": "/content/fi/pages/wikis/tak/lisaosa-listaus-W9iA7LSPv4.json",
+      "updatedAt": "2026-02-19T13:24:21.507Z",
+      "order": 23
+    },
+    {
+      "id": "7967cf93-9eec-4a7c-9c17-3d4bffe312eb",
+      "slug": "tpc-tak-product-center-BAsOmaQorN",
+      "collection": "wikis/tak",
+      "title": "TPC - TAK Product Center",
+      "breadcrumb": [
+        "TAK Tuotteet Käyttäjille",
+        "TPC - TAK Product Center"
+      ],
+      "path": "/content/fi/pages/wikis/tak/tpc-tak-product-center-BAsOmaQorN.json",
+      "updatedAt": "2026-02-19T13:30:57.557Z",
+      "order": 24
+    },
+    {
+      "id": "51f904db-915e-4409-98dd-910630d1a598",
+      "slug": "tak-tyokalut-tuotteille-PRBSLNNcXe",
+      "collection": "wikis/tak",
+      "title": "TAK Työkalut Tuotteille",
+      "breadcrumb": [
+        "TAK Työkalut Tuotteille"
+      ],
+      "path": "/content/fi/pages/wikis/tak/tak-tyokalut-tuotteille-PRBSLNNcXe.json",
+      "updatedAt": "2026-02-19T13:31:52.468Z",
+      "order": 25
+    },
+    {
+      "id": "d67394cc-024c-4b9d-a8b9-241bf6a33580",
+      "slug": "bloodhound-tyokalu-EutttuAMqj",
+      "collection": "wikis/tak",
+      "title": "Bloodhound-työkalu",
+      "breadcrumb": [
+        "TAK Työkalut Tuotteille",
+        "Bloodhound-työkalu"
+      ],
+      "path": "/content/fi/pages/wikis/tak/bloodhound-tyokalu-EutttuAMqj.json",
+      "updatedAt": "2026-02-19T13:33:23.377Z",
+      "order": 26
+    },
+    {
+      "id": "5f14e760-f5a6-4eac-b86c-0b4299b020ee",
+      "slug": "contacts-geochat-tyokalu-3WnDMNrvne",
+      "collection": "wikis/tak",
+      "title": "Contacts / GeoChat -työkalu",
+      "breadcrumb": [
+        "TAK Työkalut Tuotteille",
+        "Contacts / GeoChat -työkalu"
+      ],
+      "path": "/content/fi/pages/wikis/tak/contacts-geochat-tyokalu-3WnDMNrvne.json",
+      "updatedAt": "2026-02-19T13:33:53.247Z",
+      "order": 27
+    },
+    {
+      "id": "c8fc27ed-ee98-4026-bb37-d4c797ad7a9a",
+      "slug": "data-sync-lisaosa-FDSZf8s4dN",
+      "collection": "wikis/tak",
+      "title": "Data Sync -lisäosa",
+      "breadcrumb": [
+        "TAK Työkalut Tuotteille",
+        "Data Sync -lisäosa"
+      ],
+      "path": "/content/fi/pages/wikis/tak/data-sync-lisaosa-FDSZf8s4dN.json",
+      "updatedAt": "2026-02-19T13:34:41.237Z",
+      "order": 28
+    },
+    {
+      "id": "b784c107-c14f-491a-838e-1e131d6b1ef3",
+      "slug": "point-dropper-tyokalu-Fcqd6h1N2g",
+      "collection": "wikis/tak",
+      "title": "Point Dropper -työkalu",
+      "breadcrumb": [
+        "TAK Työkalut Tuotteille",
+        "Point Dropper -työkalu"
+      ],
+      "path": "/content/fi/pages/wikis/tak/point-dropper-tyokalu-Fcqd6h1N2g.json",
+      "updatedAt": "2026-02-19T13:37:41.218Z",
+      "order": 29
+    },
+    {
+      "id": "ccbe23b5-2e1c-40cf-9737-d20d86be5399",
+      "slug": "tak-replay-lisaosa-nC65dB5xJ4",
+      "collection": "wikis/tak",
+      "title": "TAK Replay -lisäosa",
+      "breadcrumb": [
+        "TAK Työkalut Tuotteille",
+        "TAK Replay -lisäosa"
+      ],
+      "path": "/content/fi/pages/wikis/tak/tak-replay-lisaosa-nC65dB5xJ4.json",
+      "updatedAt": "2026-02-19T13:38:12.787Z",
+      "order": 30
+    },
+    {
+      "id": "97f08263-447b-40e2-95ac-ecf1a108273c",
+      "slug": "uas-tool-lisaosa-PjKHZ3uXFM",
+      "collection": "wikis/tak",
+      "title": "UAS Tool -lisäosa",
+      "breadcrumb": [
+        "TAK Työkalut Tuotteille",
+        "UAS Tool -lisäosa"
+      ],
+      "path": "/content/fi/pages/wikis/tak/uas-tool-lisaosa-PjKHZ3uXFM.json",
+      "updatedAt": "2026-02-19T13:39:07.390Z",
+      "order": 31
+    },
+    {
+      "id": "b845f5f1-670e-48d9-83c2-4f376aa2457d",
+      "slug": "vns-lisaosa-N2dvB3Fi6i",
+      "collection": "wikis/tak",
+      "title": "VNS -lisäosa",
+      "breadcrumb": [
+        "TAK Työkalut Tuotteille",
+        "VNS -lisäosa"
+      ],
+      "path": "/content/fi/pages/wikis/tak/vns-lisaosa-N2dvB3Fi6i.json",
+      "updatedAt": "2026-02-19T13:40:03.998Z",
+      "order": 32
+    },
+    {
+      "id": "5f4e1a81-e414-46c5-93cb-b348dd702f3a",
+      "slug": "tak-paakayttaja-tyokalut-da3GQMAefs",
+      "collection": "wikis/tak",
+      "title": "TAK Pääkäyttäjä Työkalut",
+      "breadcrumb": [
+        "TAK Pääkäyttäjä Työkalut"
+      ],
+      "path": "/content/fi/pages/wikis/tak/tak-paakayttaja-tyokalut-da3GQMAefs.json",
+      "updatedAt": "2026-02-19T13:41:01.176Z",
+      "order": 33
+    },
+    {
+      "id": "acb211aa-6f56-41a4-8891-ee571ef5dd8a",
+      "slug": "takserveri-wvGgSzba9a",
+      "collection": "wikis/tak",
+      "title": "Takserveri",
+      "breadcrumb": [
+        "TAK Pääkäyttäjä Työkalut",
+        "Takserveri"
+      ],
+      "path": "/content/fi/pages/wikis/tak/takserveri-wvGgSzba9a.json",
+      "updatedAt": "2026-02-22T10:14:00.652Z",
+      "order": 34
+    },
+    {
+      "id": "24203b60-7d9e-40a8-b9cb-f62cda5c7c8f",
+      "slug": "perus-kayttoliittyma-2HXcY5vRCG",
+      "collection": "wikis/tak",
+      "title": "Perus Käyttöliittymä",
+      "breadcrumb": [
+        "TAK Pääkäyttäjä Työkalut",
+        "Takserveri",
+        "Perus Käyttöliittymä"
+      ],
+      "path": "/content/fi/pages/wikis/tak/perus-kayttoliittyma-2HXcY5vRCG.json",
+      "updatedAt": "2026-02-19T13:42:53.477Z",
+      "order": 35
+    },
+    {
+      "id": "3751ae73-b0b3-42b0-b957-ab3184b731bb",
+      "slug": "update-server-ota-mhNw2v3VQk",
+      "collection": "wikis/tak",
+      "title": "Update Server (OTA)",
+      "breadcrumb": [
+        "TAK Pääkäyttäjä Työkalut",
+        "Takserveri",
+        "Update Server (OTA)"
+      ],
+      "path": "/content/fi/pages/wikis/tak/update-server-ota-mhNw2v3VQk.json",
+      "updatedAt": "2026-02-19T13:43:58.038Z",
+      "order": 36
+    },
+    {
+      "id": "5ac20941-fc2e-41aa-b98a-b3931d2e3383",
+      "slug": "mission-manager-data-sync-JzYy4wUkU9",
+      "collection": "wikis/tak",
+      "title": "Mission Manager (Data Sync)",
+      "breadcrumb": [
+        "TAK Pääkäyttäjä Työkalut",
+        "Takserveri",
+        "Mission Manager (Data Sync)"
+      ],
+      "path": "/content/fi/pages/wikis/tak/mission-manager-data-sync-JzYy4wUkU9.json",
+      "updatedAt": "2026-02-19T13:45:02.265Z",
+      "order": 37
+    },
+    {
+      "id": "d1851099-ba36-408a-8e72-b52ae70a57d9",
+      "slug": "device-profiles-7sZvcFsZIc",
+      "collection": "wikis/tak",
+      "title": "Device Profiles",
+      "breadcrumb": [
+        "TAK Pääkäyttäjä Työkalut",
+        "Takserveri",
+        "Device Profiles"
+      ],
+      "path": "/content/fi/pages/wikis/tak/device-profiles-7sZvcFsZIc.json",
+      "updatedAt": "2026-02-19T13:46:44.604Z",
+      "order": 38
+    },
+    {
+      "id": "f04d8bdf-5a73-426d-84e2-c2b5fbecdf95",
+      "slug": "edistyneet-toiminnot-UJHXLaAK8s",
+      "collection": "wikis/tak",
+      "title": "Edistyneet Toiminnot",
+      "breadcrumb": [
+        "TAK Pääkäyttäjä Työkalut",
+        "Edistyneet Toiminnot"
+      ],
+      "path": "/content/fi/pages/wikis/tak/edistyneet-toiminnot-UJHXLaAK8s.json",
+      "updatedAt": "2026-02-19T13:49:54.015Z",
+      "order": 39
+    },
+    {
+      "id": "1c99ca1b-d741-495a-9782-86c9fffced55",
+      "slug": "mtx-striimaus-HtFtvSo9pk",
+      "collection": "wikis/tak",
+      "title": "MTX - Striimaus",
+      "breadcrumb": [
+        "TAK Pääkäyttäjä Työkalut",
+        "Edistyneet Toiminnot",
+        "MTX - Striimaus"
+      ],
+      "path": "/content/fi/pages/wikis/tak/mtx-striimaus-HtFtvSo9pk.json",
+      "updatedAt": "2026-02-19T13:50:43.795Z",
+      "order": 40
+    },
+    {
+      "id": "d1b75f85-2c8f-44f3-ab8e-a3f24f2d8695",
+      "slug": "keycloak-ryhmien-hallinta-iRtHPKXbsh",
+      "collection": "wikis/tak",
+      "title": "Keycloak - Ryhmien hallinta",
+      "breadcrumb": [
+        "TAK Pääkäyttäjä Työkalut",
+        "Edistyneet Toiminnot",
+        "Keycloak - Ryhmien hallinta"
+      ],
+      "path": "/content/fi/pages/wikis/tak/keycloak-ryhmien-hallinta-iRtHPKXbsh.json",
+      "updatedAt": "2026-02-19T13:52:30.345Z",
+      "order": 41
+    },
+    {
+      "id": "203699c0-cc77-4c69-b98f-5aa9f00bb85e",
+      "slug": "kayttomallit-qfKyTEO473",
+      "collection": "wikis/tak",
+      "title": "Käyttömallit",
+      "breadcrumb": [
+        "Käyttömallit"
+      ],
+      "path": "/content/fi/pages/wikis/tak/kayttomallit-qfKyTEO473.json",
+      "updatedAt": "2026-02-19T13:53:23.823Z",
+      "order": 42
+    },
+    {
+      "id": "d6bb8b76-3b26-435f-9bab-0117d3282994",
+      "slug": "pvarki-standardi-pH8Co9lKsr",
+      "collection": "wikis/tak",
+      "title": "PVARKI Standardi",
+      "breadcrumb": [
+        "Käyttömallit",
+        "PVARKI Standardi"
+      ],
+      "path": "/content/fi/pages/wikis/tak/pvarki-standardi-pH8Co9lKsr.json",
+      "updatedAt": "2026-02-19T13:54:19.539Z",
+      "order": 43
+    },
+    {
+      "id": "cd8f6cd0-34c0-49f3-bc55-8fe9113d62a3",
+      "slug": "takserver-recon-syote-PPNwDOJdZa",
+      "collection": "wikis/tak",
+      "title": "Takserver RECON -syöte",
+      "breadcrumb": [
+        "Käyttömallit",
+        "PVARKI Standardi",
+        "Takserver RECON -syöte"
+      ],
+      "path": "/content/fi/pages/wikis/tak/takserver-recon-syote-PPNwDOJdZa.json",
+      "updatedAt": "2026-02-20T06:13:32.023Z",
+      "order": 44
+    },
+    {
+      "id": "6a205aa6-167d-47bf-a4d5-ee78740685e5",
+      "slug": "takserver-ryhmat-6chJPiJi7g",
+      "collection": "wikis/tak",
+      "title": "Takserver-ryhmät",
+      "breadcrumb": [
+        "Käyttömallit",
+        "PVARKI Standardi",
+        "Takserver-ryhmät"
+      ],
+      "path": "/content/fi/pages/wikis/tak/takserver-ryhmat-6chJPiJi7g.json",
+      "updatedAt": "2026-02-20T06:14:15.782Z",
+      "order": 45
+    },
+    {
+      "id": "2776947e-a07e-4f08-af64-05560e5c32e4",
+      "slug": "kayttotapaukset-LyBVWJ49UE",
+      "collection": "wikis/tak",
+      "title": "Käyttötapaukset",
+      "breadcrumb": [
+        "Käyttömallit",
+        "Käyttötapaukset"
+      ],
+      "path": "/content/fi/pages/wikis/tak/kayttotapaukset-LyBVWJ49UE.json",
+      "updatedAt": "2026-02-20T06:15:08.492Z",
+      "order": 46
+    },
+    {
+      "id": "98c6db66-fbdc-460d-9699-797e29e043f8",
+      "slug": "havainnon-edelleenlahettaminen-sIRDHP8qAL",
+      "collection": "wikis/tak",
+      "title": "Havainnon edelleenlähettäminen",
+      "breadcrumb": [
+        "Käyttömallit",
+        "Käyttötapaukset",
+        "Havainnon edelleenlähettäminen"
+      ],
+      "path": "/content/fi/pages/wikis/tak/havainnon-edelleenlahettaminen-sIRDHP8qAL.json",
+      "updatedAt": "2026-02-20T06:15:43.263Z",
+      "order": 47
+    },
+    {
+      "id": "a09fc869-706b-4509-a694-6b0fb9878e1f",
+      "slug": "mika-on-mtx-2htQJ88VC2",
+      "collection": "wikis/mtx",
+      "title": "Mikä on MTX",
+      "breadcrumb": [
+        "Mikä on MTX"
+      ],
+      "path": "/content/fi/pages/wikis/mtx/mika-on-mtx-2htQJ88VC2.json",
+      "updatedAt": "2026-04-12T13:44:20.899Z",
+      "order": 0
+    },
+    {
+      "id": "2bb08fbe-7c5b-420a-841d-66db98365f62",
+      "slug": "striimin-lahettaminen-ja-katsominen-zIp4nbcTrF",
+      "collection": "wikis/mtx",
+      "title": "Striimin lähettäminen ja katsominen",
+      "breadcrumb": [
+        "Striimin lähettäminen ja katsominen"
+      ],
+      "path": "/content/fi/pages/wikis/mtx/striimin-lahettaminen-ja-katsominen-zIp4nbcTrF.json",
+      "updatedAt": "2026-02-16T08:35:35.312Z",
+      "order": 1
+    },
+    {
+      "id": "65d7d521-56bb-4033-97c8-9fb95ff4e563",
+      "slug": "tyokalut-EbDYHhpQYw",
+      "collection": "wikis/mtx",
+      "title": "Työkalut",
+      "breadcrumb": [
+        "Työkalut"
+      ],
+      "path": "/content/fi/pages/wikis/mtx/tyokalut-EbDYHhpQYw.json",
+      "updatedAt": "2025-12-03T13:57:19.397Z",
+      "order": 2
+    },
+    {
+      "id": "9ddd0476-0ed4-4437-9c9b-99edf80bf5c4",
+      "slug": "opentak-icu-8GEhKJ6UDH",
+      "collection": "wikis/mtx",
+      "title": "Opentak ICU",
+      "breadcrumb": [
+        "Työkalut",
+        "Opentak ICU"
+      ],
+      "path": "/content/fi/pages/wikis/mtx/opentak-icu-8GEhKJ6UDH.json",
+      "updatedAt": "2026-02-16T08:36:21.895Z",
+      "order": 3
+    },
+    {
+      "id": "02a46403-8c05-4311-84f3-6c9bfb386be0",
+      "slug": "uas-tool-striimaus-7enOQTR7tf",
+      "collection": "wikis/mtx",
+      "title": "UAS Tool Striimaus",
+      "breadcrumb": [
+        "Työkalut",
+        "UAS Tool Striimaus"
+      ],
+      "path": "/content/fi/pages/wikis/mtx/uas-tool-striimaus-7enOQTR7tf.json",
+      "updatedAt": "2026-03-05T07:51:14.343Z",
+      "order": 4
+    },
+    {
+      "id": "8fc34ab3-af92-4348-a821-adf3e15b269f",
+      "slug": "yleiskatsaus-mv1Zi8YEYo",
+      "collection": "dev",
+      "title": "Yleiskatsaus",
+      "breadcrumb": [
+        "Yleiskatsaus"
+      ],
+      "path": "/content/fi/pages/dev/yleiskatsaus-mv1Zi8YEYo.json",
+      "updatedAt": "2026-06-02T06:54:04.940Z",
+      "order": 0
+    },
+    {
+      "id": "8f9654ea-4fc7-4051-9675-8114db3aea50",
+      "slug": "arkkitehtuuri-P6Ns4ahwzc",
+      "collection": "dev",
+      "title": "Arkkitehtuuri",
+      "breadcrumb": [
+        "Arkkitehtuuri"
+      ],
+      "path": "/content/fi/pages/dev/arkkitehtuuri-P6Ns4ahwzc.json",
+      "updatedAt": "2026-05-28T07:29:26.005Z",
+      "order": 1
+    },
+    {
+      "id": "b0b5c34b-5f9d-4100-b059-568d69f2ec16",
+      "slug": "kehitysopas-k6trl4NgVd",
+      "collection": "dev",
+      "title": "Kehitysopas",
+      "breadcrumb": [
+        "Kehitysopas"
+      ],
+      "path": "/content/fi/pages/dev/kehitysopas-k6trl4NgVd.json",
+      "updatedAt": "2026-06-02T06:49:47.655Z",
+      "order": 2
+    },
+    {
+      "id": "cdb7f08d-9a5c-438f-bb9e-ec5dfa252bc8",
+      "slug": "integraatio-opas-0cExHiOI97",
+      "collection": "dev",
+      "title": "Integraatio-opas",
+      "breadcrumb": [
+        "Integraatio-opas"
+      ],
+      "path": "/content/fi/pages/dev/integraatio-opas-0cExHiOI97.json",
+      "updatedAt": "2026-05-28T07:31:47.529Z",
+      "order": 3
+    },
+    {
+      "id": "0dae3b03-2074-4833-beeb-5587bea6bf39",
+      "slug": "kayttoopas-tgbp8sDbXa",
+      "collection": "dev",
+      "title": "Käyttöopas",
+      "breadcrumb": [
+        "Käyttöopas"
+      ],
+      "path": "/content/fi/pages/dev/kayttoopas-tgbp8sDbXa.json",
+      "updatedAt": "2026-06-02T06:27:20.712Z",
+      "order": 4
+    }
+  ]
+}

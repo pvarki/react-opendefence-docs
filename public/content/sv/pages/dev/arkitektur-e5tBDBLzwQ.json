@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "id": "153b92bf-0872-4913-ae7f-41bf533131b2",
+  "slug": "arkitektur-e5tBDBLzwQ",
+  "collection": "dev",
+  "locale": "sv",
+  "title": "Arkitektur",
+  "breadcrumb": [
+    "Arkitektur"
+  ],
+  "createdAt": "2026-05-28T07:16:33.673Z",
+  "updatedAt": "2026-06-02T06:48:17.363Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Översiktsbild",
+      "id": "översiktsbild"
+    },
+    {
+      "depth": 2,
+      "text": "Komponenter per mapp",
+      "id": "komponenter-per-mapp"
+    },
+    {
+      "depth": 3,
+      "text": "Klusterinfrastruktur (operatörer och ingress)",
+      "id": "klusterinfrastruktur-operatörer-och-ingress"
+    },
+    {
+      "depth": 3,
+      "text": "Plattformskärna",
+      "id": "plattformskärna"
+    },
+    {
+      "depth": 3,
+      "text": "Integrerade applikationer",
+      "id": "integrerade-applikationer"
+    },
+    {
+      "depth": 3,
+      "text": "Äldre och referens",
+      "id": "äldre-och-referens"
+    },
+    {
+      "depth": 2,
+      "text": "Driftsättningsfaser",
+      "id": "driftsättningsfaser"
+    },
+    {
+      "depth": 2,
+      "text": "Två miljöer",
+      "id": "två-miljöer"
+    },
+    {
+      "depth": 2,
+      "text": "Värdnamn och routning",
+      "id": "värdnamn-och-routning"
+    },
+    {
+      "depth": 2,
+      "text": "När något är fel",
+      "id": "när-något-är-fel"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Deploy App är en handfull små tjänster. Var och en ägs självständigt, men de lutar sig mot två delade saker: ett gemensamt identitetslager och en privat CA. Den här sidan är kartan över vad som körs, hur det driftsätts och var du tittar först när något går sönder.</p>\n<p>Sanningskällan om Kustomize-strukturen finns i <code>agents.md</code>.</p>\n<h2 id=\"översiktsbild\"><a href=\"#översiktsbild\">Översiktsbild</a></h2>\n<p>Plattformen levereras som Zarf-paket byggda i CI, både online- och offline-installationsbuntar. Plattformen själv innehåller bara funktioner på plattformsnivå: identitetslagret (Keycloak och OpenLDAP), Rasenmaeher, den delade CA:n, kärnoperatörerna och monitoring. Varje integrerad produkt ägs i sitt eget repo och producerar sitt eget Zarf-paket. Hur ett repo bygger det paketet, med Kustomize eller något annat, är dess egen sak. Vid plattformsgränsen spelar bara en sak roll: att samma Zarf-paket kommer ut ur CI och driftsätts tillsammans. Behandla alltså de repospecifika detaljerna nedan som den nuvarande övergångslayouten. De är inte fasta kontrakt.</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span>flowchart TB</span></span>\n<span class=\"line\"><span>traefik[\"Traefik-ingress - HTTP och TCP passthrough\"]</span></span>\n<span class=\"line\"><span>rm[\"Rasenmaeher UI och API - rmui, rmapi\"]</span></span>\n<span class=\"line\"><span>idp[\"Identitet - Keycloak och OpenLDAP\"]</span></span>\n<span class=\"line\"><span>apps[\"Integrerade appar - TAK, Battlelog, MediaMTX, ...\"]</span></span>\n<span class=\"line\"><span>infra[\"Delad infra - CFSSL CA, cert-manager, external-secrets, CloudNativePG, trust-manager\"]</span></span>\n<span class=\"line\"><span>traefik --> rm</span></span>\n<span class=\"line\"><span>traefik --> idp</span></span>\n<span class=\"line\"><span>traefik --> apps</span></span>\n<span class=\"line\"><span>idp --> rm</span></span>\n<span class=\"line\"><span>idp -->|LDAP / OIDC| apps</span></span>\n<span class=\"line\"><span>rm --> infra</span></span>\n<span class=\"line\"><span>idp --> infra</span></span>\n<span class=\"line\"><span>apps --> infra</span></span></code></pre>",
+      "lang": "plaintext"
+    },
+    {
+      "type": "html",
+      "html": "<p>rmapi och rmui är ytterdörren för onboarding. Själva bootstrappen är <code>miniwerk</code>, ett engångsjobb som sätter upp Keycloak-realmen och registrerar de produkter som listas i <code>MW_PRODUCTS</code>. Därefter pratar varje integrerad applikation tillbaka till <code>rmapi</code> och autentiserar sina användare genom Keycloak. Tjänst-till-tjänst-förtroendet sköts av klustrets egen CFSSL-CA, och <code>trust-manager</code> distribuerar certifikaten vidare.</p>\n<h2 id=\"komponenter-per-mapp\"><a href=\"#komponenter-per-mapp\">Komponenter per mapp</a></h2>\n<p>Varje post nedan motsvarar en katalog <code>k8s/&#x3C;folder>/</code>. Tänk på att den här layouten är en ögonblicksbild av var sakerna ligger så länge allt fortfarande bor i ett repo. Modulerna är den stabila delen. De exakta mappsökvägarna och verktygen runt dem är inte löften. Plattformsmodulerna (identitet, Rasenmaeher, CA:n, kärnoperatörerna, monitoring) stannar i plattformspaketet. De integrerade produkterna flyttar gradvis ut i egna repon, var och en med sitt eget Zarf-paket.</p>\n<h3 id=\"klusterinfrastruktur-operatörer-och-ingress\"><a href=\"#klusterinfrastruktur-operatörer-och-ingress\">Klusterinfrastruktur (operatörer och ingress)</a></h3>\n<table>\n<thead>\n<tr>\n<th>Mapp</th>\n<th>Roll</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><code>cloudnative-pg</code></td>\n<td>PostgreSQL-operatör. Äger rmapi-, keycloak- och battlelog-databaserna.</td>\n</tr>\n<tr>\n<td><code>keycloak-operator</code></td>\n<td>CRD:er och controller för Keycloak.</td>\n</tr>\n<tr>\n<td><code>external-secrets-operator</code></td>\n<td>Hämtar hemligheter från externa lager in i klustret.</td>\n</tr>\n<tr>\n<td><code>cert-manager</code>, <code>cert-manager-clusterissuers</code></td>\n<td>Certifikatutfärdande och klusterövergripande issuers.</td>\n</tr>\n<tr>\n<td><code>trust-manager</code></td>\n<td>Distribuerar CA-buntar till namnrymder som behöver dem.</td>\n</tr>\n<tr>\n<td><code>traefik</code></td>\n<td>Ingress och TCP passthrough för TAK och mTLS.</td>\n</tr>\n<tr>\n<td><code>prometheus-operator</code>, <code>grafana-operator</code></td>\n<td>Monitoring-CRD:er.</td>\n</tr>\n<tr>\n<td><code>metrics-server</code></td>\n<td>Källa för HPA och <code>kubectl top</code> (cloud-overlay).</td>\n</tr>\n<tr>\n<td><code>longhorn</code></td>\n<td>Lagringsalternativ (utkommenterat i <code>main/local</code>).</td>\n</tr>\n<tr>\n<td><code>projectcontour</code></td>\n<td>Alternativ ingress (inte i den aktiva faskompositionen).</td>\n</tr>\n</tbody>\n</table>\n<h3 id=\"plattformskärna\"><a href=\"#plattformskärna\">Plattformskärna</a></h3>\n<table>\n<thead>\n<tr>\n<th>Mapp</th>\n<th>Roll</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><code>opendefense-cfssl</code></td>\n<td>Den interna Certificate Authority.</td>\n</tr>\n<tr>\n<td><code>opendefense-pki</code></td>\n<td>PKI-lim och CA-buntresurser för andra tjänster.</td>\n</tr>\n<tr>\n<td><code>opendefense-system</code></td>\n<td>Keycloak, OpenLDAP, miniwerk, rmapi och rmui i en namnrymd (<code>opendefense-system</code>).</td>\n</tr>\n</tbody>\n</table>\n<h3 id=\"integrerade-applikationer\"><a href=\"#integrerade-applikationer\">Integrerade applikationer</a></h3>\n<table>\n<thead>\n<tr>\n<th>Mapp</th>\n<th>Roll</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><code>battlelog</code></td>\n<td>Levande händelselogg (Liveloki). Bor i namnrymden <code>app-battlelog</code>.</td>\n</tr>\n<tr>\n<td><code>tak</code></td>\n<td>ATAK / TAK-server. CoT TCP-streaming och mTLS-subdomän.</td>\n</tr>\n<tr>\n<td><code>mtx</code></td>\n<td>MediaMTX-streamingserver (RTMPS, RTSPS, SRT, HLS, WebRTC).</td>\n</tr>\n<tr>\n<td><code>monitoring/{alloy,grafana,loki,prometheus}</code></td>\n<td>Observabilitetsstack komponerad under <code>main/&#x3C;env>/monitoring/</code>.</td>\n</tr>\n</tbody>\n</table>\n<h3 id=\"äldre-och-referens\"><a href=\"#äldre-och-referens\">Äldre och referens</a></h3>\n<p><code>k8s/pvarki-keycloak/</code> är ett aggregat som är kvar från tidigare arbete. Mallbygg inte nya tjänster på det. Det samlar många orelaterade ansvar i en bas, vilket är precis det vi försöker komma bort från. <code>agents.md</code> förklarar resonemanget närmare.</p>\n<h2 id=\"driftsättningsfaser\"><a href=\"#driftsättningsfaser\">Driftsättningsfaser</a></h2>\n<p>Klustret startas i fyra ordnade skivor. Varje fas rullar ut helt innan nästa tillämpas, och <code>task deploy:_apply</code> framtvingar det.</p>\n<ol>\n<li><code>infra-phase1</code>, operatörer och ingress. CloudNativePG, Keycloak-operatör, External Secrets, cert-manager, Traefik, Prometheus-operatör och Grafana-operatör (plus Metrics Server på cloud). Väntportar: <code>cnpg-controller-manager</code>, <code>cert-manager-webhook</code>, <code>external-secrets-operator</code>, <code>external-secrets-operator-webhook</code>.</li>\n<li><code>infra-phase2</code>, distribution av förtroende. <code>trust-manager</code>, och på cloud klustrets issuers. Väntport: <code>trust-manager</code>.</li>\n<li><code>monitoring</code>, observabilitet. Grafana, Loki, Alloy och Prometheus till namnrymden <code>monitoring</code>.</li>\n<li><code>opendefense</code>, applikationer. CFSSL → PKI → opendefense-system (Keycloak, LDAP, RM API, RM UI, miniwerk) → Battlelog → TAK → MediaMTX.</li>\n</ol>\n<p>Ordningen spelar roll. Applikationerna startar inte utan CA:n från <code>opendefense-cfssl</code>, förtroenderötterna från <code>trust-manager</code> och operatörerna från <code>infra-phase1</code>. Att hoppa över en fas ser oftast ut som en fladdrande pod med ett kryptiskt certifikat- eller CRD-fel.</p>\n<h2 id=\"två-miljöer\"><a href=\"#två-miljöer\">Två miljöer</a></h2>\n<table>\n<thead>\n<tr>\n<th></th>\n<th><code>local</code></th>\n<th><code>cloud</code></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Mål</td>\n<td><code>kind</code>-kluster på arbetsstationen</td>\n<td>k3s-VM (<code>k3s-azure.yaml</code>)</td>\n</tr>\n<tr>\n<td>Kompositionens ingång</td>\n<td><code>k8s/main/local/</code></td>\n<td><code>k8s/main/cloud/</code></td>\n</tr>\n<tr>\n<td>Värdnamn</td>\n<td><code>localmaeher.dev.pvarki.fi</code> (loopback)</td>\n<td>Sätts vid driftsättning via <code>OPENDEFENSE_HOST</code> (Zarf-var)</td>\n</tr>\n<tr>\n<td>Livscykelkommando</td>\n<td><code>task up</code> / <code>task deploy</code></td>\n<td><code>task zarf:package:cloud</code> → <code>zarf package deploy</code></td>\n</tr>\n<tr>\n<td>Lagring</td>\n<td>hostPath via kind</td>\n<td>k3s standard storage class</td>\n</tr>\n<tr>\n<td>TLS-utfärdare</td>\n<td>Självsignerad via inbyggd CFSSL</td>\n<td>Samma, plus cloud-specifika ClusterIssuers</td>\n</tr>\n</tbody>\n</table>\n<p>Cloud-kompositionen gör två saker som local hoppar över:</p>\n<ul>\n<li>Den tar bort Helms ägarmetadata så att Zarf kan adoptera resurser utan att slåss mot Helm.</li>\n<li>Den delar <code>infra-phase1</code> i ett Zarf-manifest per bunt (<code>cert-manager</code>, <code>cloudnative-pg</code>, <code>external-secrets-operator</code>, <code>grafana-operator</code>, <code>keycloak-operator</code>, <code>traefik</code>). Den renderade Helm-utdatan håller sig under Kubernetes Secret-storleksgräns.</li>\n</ul>\n<h2 id=\"värdnamn-och-routning\"><a href=\"#värdnamn-och-routning\">Värdnamn och routning</a></h2>\n<p>Varje integrerad produkt publicerar två värdnamn:</p>\n<ul>\n<li><code>&#x3C;product>.&#x3C;OPENDEFENSE_HOST></code>, publik, bara TLS.</li>\n<li><code>mtls.&#x3C;product>.&#x3C;OPENDEFENSE_HOST></code>, ömsesidig TLS-variant för klienter som autentiserar med ett klientcertifikat (TAK, interna adminverktyg och andra).</li>\n</ul>\n<p>Traefik står framför båda. TAK behöver också rå TCP passthrough på 8089 (CoT-streaming) och 8443 (TAK native HTTPS). MediaMTX behöver portarna 1936, 8322, 8890, 9888 och 9889 för sina streamingprotokoll. Den lokala <code>kind-config.yaml</code> förmappar alla dessa till värden.</p>\n<h2 id=\"när-något-är-fel\"><a href=\"#när-något-är-fel\">När något är fel</a></h2>\n<ul>\n<li>En pod hamnar i <code>CrashLoopBackOff</code> tidigt i uppstarten. Oftast är en <code>infra-phase1</code>-controller inte redo än och dess CRD:er saknas. Kör <code>task deploy</code> igen så att väntportarna får tid att stabilisera sig.</li>\n<li>TLS-fel mellan tjänster. Kontrollera att <code>trust-manager</code> distribuerade CFSSL CA-bunten till den namnrymd som klagar.</li>\n<li>En ny tjänst syns inte i RM UI. Nästan alltid saknas den i <code>MW_PRODUCTS</code>. Kontrollera det först.</li>\n<li>Zarf-driftsättning misslyckas på Secret-storlek. Ett Helm-renderat manifest överskred gränsen. Ge det en ny bunt-undermapp under <code>k8s/main/cloud/infra-phase1/bundles/</code> i stället för att stoppa in mer i en befintlig.</li>\n</ul>"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "id": "688abe6a-4c5c-4237-b4d5-4fe1a9ce3029",
+  "slug": "grundlaggande-anvandargranssnitt-h2BJMcZND4",
+  "collection": "wikis/tak",
+  "locale": "sv",
+  "title": "Grundläggande användargränssnitt",
+  "breadcrumb": [
+    "TAK-verktyg för Huvudadministratörer",
+    "Takserver",
+    "Grundläggande användargränssnitt"
+  ],
+  "createdAt": "2025-12-08T03:03:35.929Z",
+  "updatedAt": "2026-02-19T13:43:43.818Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Takserverns användargränssnitt finns på adressen <strong>tak.server.fi</strong> i Deploy App-miljön.</p>"
+    },
+    {
+      "type": "image",
+      "src": "/content/images/sv/attachments/56afd4959eea68c5.webp",
+      "alt": "",
+      "width": 3772,
+      "height": 2121
+    },
+    {
+      "type": "html",
+      "html": "<p>Alla funktioner finns i rullgardinsmenyn till höger, och längst ned i menyn finns den officiella tak.gov-dokumentationen under posten <strong>\"Documentation\"</strong>.</p>"
+    },
+    {
+      "type": "image",
+      "src": "/content/images/sv/attachments/3dd9d3a9a81b066e.webp",
+      "alt": "",
+      "width": 382,
+      "height": 1908
+    },
+    {
+      "type": "html",
+      "html": "<p>\\</p>\n<p>\\</p>"
+    }
+  ]
+}

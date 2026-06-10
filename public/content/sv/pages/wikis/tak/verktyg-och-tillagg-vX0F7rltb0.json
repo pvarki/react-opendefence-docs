@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "63180985-c47f-4fa9-9ef6-b32ab486c808",
+  "slug": "verktyg-och-tillagg-vX0F7rltb0",
+  "collection": "wikis/tak",
+  "locale": "sv",
+  "title": "Verktyg och tillägg",
+  "breadcrumb": [
+    "TAK-produkter för Användare",
+    "WinTAK - Windows TAK",
+    "Verktyg och tillägg"
+  ],
+  "createdAt": "2025-12-08T03:03:36.826Z",
+  "updatedAt": "2026-02-19T13:25:47.978Z",
+  "headings": [
+    {
+      "depth": 3,
+      "text": "Grundverktyg:",
+      "id": "grundverktyg"
+    },
+    {
+      "depth": 3,
+      "text": "Tillägg:",
+      "id": "tillägg"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>WinTAK består av verktyg och tillägg. Verktygen ingår i WinTAK och utgör grunden för allt arbete som utförs i WinTAK. Tilläggen är utökningar som kompletterar dessa verktyg.</p>\n<h3 id=\"grundverktyg\"><a href=\"#grundverktyg\">Grundverktyg:</a></h3>\n<p><a href=\"/doc/756a4b36-f15a-4ee5-a222-a4e707552634\">Contacts / GeoChat-verktyget</a></p>\n<h3 id=\"tillägg\"><a href=\"#tillägg\">Tillägg:</a></h3>\n<p><a href=\"/doc/62398a9a-e125-4af9-973b-40d4669fc4c6\">Data Sync-tillägget</a></p>\n<p><a href=\"/doc/7e7e24a0-2173-46f8-ab17-f60cf82d3344\">TAK Replay-tillägget</a></p>\n<p><a href=\"/doc/b3a66926-4494-408a-ba74-778687b3c4ee\">VNS -tillägget</a></p>"
+    }
+  ]
+}

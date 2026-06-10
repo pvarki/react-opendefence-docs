@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 1,
+  "id": "95181bf8-9633-4bc0-98a5-2d19f45c8a83",
+  "slug": "deploy-app-mtx-yHJ4LHVgZZ",
+  "collection": "guides/mtx-guide",
+  "locale": "fi",
+  "title": "Deploy App - MTX",
+  "breadcrumb": [
+    "Deploy App - MTX"
+  ],
+  "createdAt": "2026-03-08T05:30:46.168Z",
+  "updatedAt": "2026-03-08T05:42:09.271Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Deploy App - MTX sivu",
+      "id": "deploy-app---mtx-sivu"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<h2 id=\"deploy-app---mtx-sivu\"><a href=\"#deploy-app---mtx-sivu\">Deploy App - MTX sivu</a></h2>"
+    },
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Avaa Deploy App",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Siirry Home-sivulle</li>\n<li>Käynnistä MTX</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/9870ed4a2bb7d81f.webp",
+              "width": 1080,
+              "height": 2007
+            }
+          ]
+        },
+        {
+          "title": "MTX-sivu – Ohjeet",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Kun avaat MTX-sivun ensimmäistä kertaa, näet pikaohjeet</li>\n<li>Lue ohjeet läpi</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/4d3bdba9c5920b89.webp",
+              "width": 1080,
+              "height": 2004
+            }
+          ]
+        },
+        {
+          "title": "MTX-sivu – Yleistä",
+          "layout": "image-left",
+          "html": "<ul>\n<li>MTX-sivulla näet palvelimesi aktiiviset live-striimit, voit lisätä uuden live-striimin, sivulla on myös linkki dokumentaatioon</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/a699a72d653ceafb.webp",
+              "width": 1080,
+              "height": 2002
+            }
+          ]
+        },
+        {
+          "title": "MTX-sivu – Striimin katsominen",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Aktiiviset live-striimit näkyvät listana</li>\n<li>Voit hakea tiettyä kutsutunnusta (Callsign) tai laitetyyppiä kuten gopro, icu, uas</li>\n<li>Katsoaksesi striimiä paina \"Play\"-painiketta</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/84ac4b5be89312dd.webp",
+              "width": 1080,
+              "height": 2006
+            }
+          ]
+        },
+        {
+          "title": "MTX-sivu – Striimin katsominen Perus",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Striimi avautuu selaimeen ja alkaa toistua automaattisesti</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/57fae925d2f171e7.webp",
+              "width": 1080,
+              "height": 2002
+            }
+          ]
+        },
+        {
+          "title": "MTX-sivu – Striimin katsominen Edistynyt",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Jos haluat katsoa striimiä muulla sovelluksella kuin selaimella</li>\n<li>Klikkaa linkkiä, EI \"Play\" painiketta</li>\n<li>Edistyneet vaihtoehdot tulevat näkyviin</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/b53ab9d3d0f12410.webp",
+              "width": 1080,
+              "height": 2000
+            }
+          ]
+        },
+        {
+          "title": "MTX-sivu – Striimin julkaiseminen",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Julkaistaksesi striimin valitse \"+ Add\"</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/a699a72d653ceafb.webp",
+              "width": 1080,
+              "height": 2002
+            }
+          ]
+        },
+        {
+          "title": "MTX-sivu – Striimin julkaisemisen ohjeet",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Ensin näet striimausohjeet, lue ne läpi</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/059f61018997a35e.webp",
+              "width": 1080,
+              "height": 2004
+            }
+          ]
+        },
+        {
+          "title": "MTX-sivu – Striimin julkaisuvalikko",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Täältä löydät tunnuksesi ja ohjeet eri työkaluille</li>\n<li>Suositeltu tapa striimata Android-laitteesta on Opentak ICU</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/bff529cd206626fd.webp",
+              "width": 1080,
+              "height": 2007
+            }
+          ]
+        },
+        {
+          "title": "Valmis",
+          "layout": "text",
+          "html": "<ul>\n<li>Voit sulkea tämän oppaan.</li>\n</ul>",
+          "images": []
+        }
+      ]
+    },
+    {
+      "type": "html",
+      "html": "<p>Kun olet tutustunut <strong>Deploy App – MTX</strong> -osioon, jatka kohtaan <a href=\"/doc/3323b1eb-2f08-4c27-9503-cf6f70fa960d\">Julkaise Striimiä</a> saadaksesi lisää tietoa striimin julkaisemisesta tai kohtaan <a href=\"/doc/53f74fbb-29cf-4abe-b448-93c0ab9674b7\">Katso Striimiä</a>saadaksesi tarkemmat ohjeet striimin katseluun.</p>"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "35d0cc01-38f5-4e3e-bdc2-86cc58a8b015",
+  "slug": "bloodhound-tyokalu-6Upz4LkrO9",
+  "collection": "wikis/tak",
+  "locale": "fi",
+  "title": "Bloodhound-työkalu",
+  "breadcrumb": [
+    "TAK Tuotteet Käyttäjille",
+    "ATAK - Android TAK",
+    "Työkalut ja lisäosat",
+    "Bloodhound-työkalu"
+  ],
+  "createdAt": "2025-12-08T01:24:26.083Z",
+  "updatedAt": "2026-02-19T13:05:09.198Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Työkalun kuvaus",
+      "id": "työkalun-kuvaus"
+    },
+    {
+      "depth": 2,
+      "text": "Opastusvideot",
+      "id": "opastusvideot"
+    },
+    {
+      "depth": 3,
+      "text": "Bloodhound Tool (2min)",
+      "id": "bloodhound-tool-2min"
+    },
+    {
+      "depth": 2,
+      "text": "Bloodhound-työkalun osio ATAK-käyttöohjeesta",
+      "id": "bloodhound-työkalun-osio-atak-käyttöohjeesta"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "src": "/content/images/fi/attachments/40aa9ed82f65b372.webp",
+      "alt": "",
+      "width": 121,
+      "height": 122
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"työkalun-kuvaus\"><a href=\"#työkalun-kuvaus\"><strong>Työkalun kuvaus</strong></a></h2>\n<p>Bloodhound-työkalu tarjoaa tuen karttakohteen seuraamiseen ja sieppaamiseen. Sen avulla voidaan valita kaksi pistettä kartalta ja/tai karttaobjekteja, ja se näyttää etäisyys- ja suuntimatiedot valitun seuraajan ja kohteen välillä.</p>\n<h2 id=\"opastusvideot\"><a href=\"#opastusvideot\">Opastusvideot</a></h2>\n<h3 id=\"bloodhound-tool-2min\"><a href=\"#bloodhound-tool-2min\">Bloodhound Tool (2min)</a></h3>"
+    },
+    {
+      "type": "youtube",
+      "videoId": "MazLYBMwsqU"
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"bloodhound-työkalun-osio-atak-käyttöohjeesta\"><a href=\"#bloodhound-työkalun-osio-atak-käyttöohjeesta\">Bloodhound-työkalun osio ATAK-käyttöohjeesta</a></h2>"
+    },
+    {
+      "type": "pdf",
+      "src": "attachments/daaf7514-a184-4c70-bb69-0b34b96584cc.pdf",
+      "title": "ATAK 5.6 Bloodhound.pdf"
+    }
+  ]
+}

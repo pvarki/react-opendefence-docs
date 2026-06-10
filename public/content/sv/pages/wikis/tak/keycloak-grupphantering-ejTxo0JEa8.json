@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "id": "b35fac02-94d2-40db-a522-b82ff4e0cb16",
+  "slug": "keycloak-grupphantering-ejTxo0JEa8",
+  "collection": "wikis/tak",
+  "locale": "sv",
+  "title": "Keycloak – Grupphantering",
+  "breadcrumb": [
+    "TAK-verktyg för Huvudadministratörer",
+    "Avancerade Funktioner",
+    "Keycloak – Grupphantering"
+  ],
+  "createdAt": "2025-12-08T03:03:35.475Z",
+  "updatedAt": "2026-02-19T13:52:39.829Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Grundläggande instruktioner:",
+      "id": "grundläggande-instruktioner"
+    },
+    {
+      "depth": 3,
+      "text": "Bilder för grundinstruktionerna",
+      "id": "bilder-för-grundinstruktionerna"
+    },
+    {
+      "depth": 2,
+      "text": "Avancerade instruktioner: (Write- eller Read-grupper)",
+      "id": "avancerade-instruktioner-write--eller-read-grupper"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "src": "attachments/712bc7f0-7918-48e7-ae01-ae1932ca4c58.svg",
+      "alt": "",
+      "width": 730,
+      "height": 151
+    },
+    {
+      "type": "html",
+      "html": "<p>Den nuvarande Deploy App-miljön använder Keycloak för att hantera användargrupper. Dessa grupper skickas vidare till takservern, och anslutna användare får grupperna automatiskt.</p>\n<p>Det långsiktiga målet är att i någon mån integrera grupphanteringen i Deploy App-applikationen.</p>\n<h2 id=\"grundläggande-instruktioner\"><a href=\"#grundläggande-instruktioner\">Grundläggande instruktioner:</a></h2>\n<ul>\n<li>Logga in i Keycloak på <strong>kc.your-server.fi</strong> med det <strong>mTLS-certifikat</strong> som levereras med Rasenmäher.</li>\n<li>Gå till <strong>Groups (Grupper)</strong> i sidomenyn.</li>\n<li>Öppna gruppen <strong>tak</strong> för att hantera TAK-grupper.</li>\n<li>Skapa en ny grupp under <strong>Child groups</strong> i <strong>tak</strong>-gruppen\n<ul>\n<li>Gruppens namn ska ha formatet <strong>tak_groupname</strong></li>\n</ul>\n</li>\n<li>Öppna den nyskapade gruppen.</li>\n<li>Gå till <strong>Members (Medlemmar)</strong> och välj <strong>Add member</strong>\n<ul>\n<li>Välj de användare du vill lägga till i gruppen.</li>\n</ul>\n</li>\n</ul>\n<p>Användare som läggs till i en ny grupp och som är anslutna till takservern får denna grupp automatiskt.</p>\n<h3 id=\"bilder-för-grundinstruktionerna\"><a href=\"#bilder-för-grundinstruktionerna\">Bilder för grundinstruktionerna</a></h3>"
+    },
+    {
+      "type": "image",
+      "src": "/content/images/sv/attachments/e6c9b3177b78bd73.webp",
+      "alt": "",
+      "width": 2693,
+      "height": 1027
+    },
+    {
+      "type": "image",
+      "src": "/content/images/sv/attachments/7cf4e6fe1662d152.webp",
+      "alt": "",
+      "width": 2626,
+      "height": 1002
+    },
+    {
+      "type": "image",
+      "src": "/content/images/sv/attachments/ef9391d58e5cb187.webp",
+      "alt": "",
+      "width": 2542,
+      "height": 1268
+    },
+    {
+      "type": "image",
+      "src": "/content/images/sv/attachments/ec9ac1170b9a7293.webp",
+      "alt": "",
+      "width": 2878,
+      "height": 1218
+    },
+    {
+      "type": "image",
+      "src": "/content/images/sv/attachments/cbfbf9ec63ee8679.webp",
+      "alt": "",
+      "width": 2932,
+      "height": 1468
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"avancerade-instruktioner-write--eller-read-grupper\"><a href=\"#avancerade-instruktioner-write--eller-read-grupper\">Avancerade instruktioner: (Write- eller Read-grupper)</a></h2>\n<p>Skapa grupper på samma sätt som i grundinstruktionerna, men lägg till _WRITE eller _READ i gruppnamnet för att ange hur gruppens användare ska hanteras.</p>\n<p>Användare i gruppen <strong>tak_test_WRITE</strong> skickar data till <em>test</em>-gruppen men kan inte ta emot data från den.</p>\n<p>Denna funktion kan exempelvis användas för att låta lednings-/kommandoplatsens personal (==kopa==) se alla användare, medan endast behöriga användare får full eller begränsad läsrättighet till ==kopa==-gruppen (t.ex. <strong>tak_==kopa==</strong> för kommandoplatsens personal).</p>"
+    },
+    {
+      "type": "image",
+      "src": "/content/images/sv/attachments/41ff55a41a76d952.webp",
+      "alt": "",
+      "width": 1417,
+      "height": 543
+    },
+    {
+      "type": "html",
+      "html": "<p>\\</p>"
+    }
+  ]
+}

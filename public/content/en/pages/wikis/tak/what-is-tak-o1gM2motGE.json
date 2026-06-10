@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "4ec40322-580d-4280-978d-ebbf11f8cb3c",
+  "slug": "what-is-tak-o1gM2motGE",
+  "collection": "wikis/tak",
+  "locale": "en",
+  "title": "What is TAK?",
+  "breadcrumb": [
+    "What is TAK?"
+  ],
+  "createdAt": "2025-09-07T15:51:40.701Z",
+  "updatedAt": "2026-02-16T08:41:05.195Z",
+  "headings": [
+    {
+      "depth": 3,
+      "text": "Who uses TAK",
+      "id": "who-uses-tak"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "src": "/content/images/en/attachments/e66a11da1a49077d.webp",
+      "alt": "",
+      "width": 2000,
+      "height": 2064
+    },
+    {
+      "type": "html",
+      "html": "<p>Tactical Assault Kit (TAK) is a family of geospatial situational-awareness tools—most commonly the Android app <strong>ATAK</strong> (Android Tactical Assault Kit)—designed to give teams real-time mapping, location sharing, and mission planning.</p>\n<p>TAK combines live Blue-Force/track displays, layered maps (raster/vector/WMS/WMTS/KML), chat and tactical messaging, sensor and video feeds, and route/target marking into a single, extensible client.</p>\n<p>TAK is plugin-driven, allowing organizations to add capabilities such as detection, analytics, device control, and payload management tailored to their mission needs. Widely adopted by military, law enforcement, emergency-response, and civilian agencies, it is part of a broader ecosystem of clients, servers, and services that enables interoperable and secure coordination across battlefield and field operations.</p>"
+    },
+    {
+      "type": "youtube",
+      "videoId": "kq5Q5chCLSY"
+    },
+    {
+      "type": "html",
+      "html": "<h3 id=\"who-uses-tak\"><a href=\"#who-uses-tak\">Who uses TAK</a></h3>\n<p>TAK is used widely by the United States and by several U.S. military services and many U.S. government agencies, and it's been adopted or trialed by a number of U.S. partner militaries (most notably the British Army). Examples:</p>\n<ul>\n<li><strong>United States</strong> — extensive DoD use across services (U.S. Army, U.S. Special Operations Command, U.S. Air Force, National Guard and many DoD/DHS components).</li>\n<li><strong>United Kingdom</strong> — TAK was selected as the preferred Battle Management Application for the British Army's Dismounted Situational Awareness programme (DSA).</li>\n<li><strong>Canada</strong> — civil and military users are reported (Canadian Armed Forces and RCMP appear in TAK user lists).</li>\n<li><strong>Australia</strong> — examples of Australian forces integrating UAVs and systems with TAK have been reported.</li>\n</ul>\n<p>Beyond those, TAK/ATAK/WinTAK variants are used by many NATO partners, allied militaries, and numerous law-enforcement and emergency-response agencies worldwide — the ecosystem has been widely licensed and deployed to both military and civilian organizations. Sources vary by country and programme (some adoptions are programme-level selections, others are unit or agency fielding).</p>"
+    }
+  ]
+}

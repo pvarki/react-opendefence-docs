@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "id": "62cbe6ce-ead5-4043-9b36-8f46282aa06a",
+  "slug": "contacts-geochat-verktyget-cpj9rNVTxW",
+  "collection": "wikis/tak",
+  "locale": "sv",
+  "title": "Contacts / GeoChat-verktyget",
+  "breadcrumb": [
+    "TAK-produkter för Användare",
+    "ATAK - Android TAK",
+    "Verktyg och tillägg",
+    "Contacts / GeoChat-verktyget"
+  ],
+  "createdAt": "2025-12-08T03:03:39.098Z",
+  "updatedAt": "2026-02-19T13:05:23.168Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Contacts",
+      "id": "contacts"
+    },
+    {
+      "depth": 3,
+      "text": "Verktygsbeskrivning",
+      "id": "verktygsbeskrivning"
+    },
+    {
+      "depth": 2,
+      "text": "Chat",
+      "id": "chat"
+    },
+    {
+      "depth": 3,
+      "text": "Verktygsbeskrivning",
+      "id": "verktygsbeskrivning"
+    },
+    {
+      "depth": 2,
+      "text": "Opastusvideot",
+      "id": "opastusvideot"
+    },
+    {
+      "depth": 3,
+      "text": "Contacts Tool (3min)",
+      "id": "contacts-tool-3min"
+    },
+    {
+      "depth": 2,
+      "text": "Avsnittet om Contacts / GeoChat-verktyget i ATAK-användarhandboken",
+      "id": "avsnittet-om-contacts--geochat-verktyget-i-atak-användarhandboken"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<h2 id=\"contacts\"><a href=\"#contacts\">Contacts</a></h2>"
+    },
+    {
+      "type": "image",
+      "src": "/content/images/sv/attachments/e8a857267f843c68.webp",
+      "alt": "",
+      "width": 98,
+      "height": 97
+    },
+    {
+      "type": "html",
+      "html": "<h3 id=\"verktygsbeskrivning\"><a href=\"#verktygsbeskrivning\"><strong>Verktygsbeskrivning</strong></a></h3>\n<p>Contacts-listan innehåller olika sätt för användaren att kommunicera med andra användare i ett lokalt nätverk eller via TAK Server. Det förvalda kommunikationssättet (visas i den sista kolumnen) kan väljas och används tills användaren väljer ett annat sätt.</p>\n<h2 id=\"chat\"><a href=\"#chat\">Chat</a></h2>"
+    },
+    {
+      "type": "image",
+      "src": "/content/images/sv/attachments/2c88eedf741fb4fb.webp",
+      "alt": "",
+      "width": 102,
+      "height": 100
+    },
+    {
+      "type": "html",
+      "html": "<h3 id=\"verktygsbeskrivning\"><a href=\"#verktygsbeskrivning\"><strong>Verktygsbeskrivning</strong></a></h3>\n<p>Chat-verktyget loggar, organiserar och visar det senaste meddelandet som skickats i varje chattrum som enheten har anslutit sig till. Detta ger en snabb översikt över alla grupper och konversationer där aktiv kommunikation pågår.</p>\n<h2 id=\"opastusvideot\"><a href=\"#opastusvideot\">Opastusvideot</a></h2>\n<h3 id=\"contacts-tool-3min\"><a href=\"#contacts-tool-3min\">Contacts Tool (3min)</a></h3>"
+    },
+    {
+      "type": "youtube",
+      "videoId": "dUHiXl7f7vw"
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"avsnittet-om-contacts--geochat-verktyget-i-atak-användarhandboken\"><a href=\"#avsnittet-om-contacts--geochat-verktyget-i-atak-användarhandboken\">Avsnittet om Contacts / GeoChat-verktyget i ATAK-användarhandboken</a></h2>"
+    },
+    {
+      "type": "pdf",
+      "src": "attachments/b820049a-914f-4337-9877-4c3d37264871.pdf",
+      "title": "ATAK 5.6 Contacts - GeoChat.pdf"
+    }
+  ]
+}

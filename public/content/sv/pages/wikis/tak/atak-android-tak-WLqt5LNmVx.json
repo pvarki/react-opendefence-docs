@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "c5833484-2fc2-4383-848f-2be14b1b1833",
+  "slug": "atak-android-tak-WLqt5LNmVx",
+  "collection": "wikis/tak",
+  "locale": "sv",
+  "title": "ATAK - Android TAK",
+  "breadcrumb": [
+    "TAK-produkter för Användare",
+    "ATAK - Android TAK"
+  ],
+  "createdAt": "2025-12-08T03:03:37.534Z",
+  "updatedAt": "2026-03-28T16:20:11.020Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Produkt Tillgänglig",
+      "id": "produkt-tillgänglig"
+    },
+    {
+      "depth": 2,
+      "text": "Användarhandbok",
+      "id": "användarhandbok"
+    },
+    {
+      "depth": 2,
+      "text": "Produktbeskrivning",
+      "id": "produktbeskrivning"
+    },
+    {
+      "depth": 2,
+      "text": "Systemkrav",
+      "id": "systemkrav"
+    },
+    {
+      "depth": 3,
+      "text": "ATAK-systemkrav",
+      "id": "atak-systemkrav"
+    },
+    {
+      "depth": 3,
+      "text": "Exempel på enheter",
+      "id": "exempel-på-enheter"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p><img src=\"/content/images/sv/attachments/a2fe7303e7840f32.webp\" alt=\"\" title=\" =246x\">   <img src=\"/content/images/sv/attachments/784605b842a7cb56.webp\" alt=\"\" title=\" =2560x\"></p>\n<h2 id=\"produkt-tillgänglig\"><a href=\"#produkt-tillgänglig\">Produkt Tillgänglig</a></h2>\n<p><a href=\"https://tak.gov/products/atak-civ\" target=\"_blank\" rel=\"noopener noreferrer\">https://tak.gov/products/atak-civ</a></p>\n<p><a href=\"https://play.google.com/store/apps/details?id=com.atakmap.app.civ\" target=\"_blank\" rel=\"noopener noreferrer\">https://play.google.com/store/apps/details?id=com.atakmap.app.civ</a></p>\n<h2 id=\"användarhandbok\"><a href=\"#användarhandbok\">Användarhandbok</a></h2>"
+    },
+    {
+      "type": "pdf",
+      "src": "attachments/5988d027-2ac8-44a2-aca8-2189a1fc21a1.pdf",
+      "title": "ATAK 5.7 User Guide.pdf"
+    },
+    {
+      "type": "pdf",
+      "src": "attachments/bb683387-a10a-48e1-a3f1-eb03fa821e7e.pdf",
+      "title": "ATAK 5.6 User Guide.pdf"
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"produktbeskrivning\"><a href=\"#produktbeskrivning\">Produktbeskrivning</a></h2>\n<p>Android Team Awareness Kit (ATAK-CIV) erbjuder samma funktioner som grundversionen ATAK-MIL, med undantag för mindre justeringar i militär terminologi. TAK-CIV finns tillgänglig för att stödja civilmyndigheternas principer för beredskap och krishantering: förebyggande, begränsning, förberedelse, insats, evakuering och återhämtning.</p>\n<p>Den största skillnaden mellan MIL- och CIV-versionerna är basens signeringsnyckel, som förhindrar att militära funktioner laddas ned via tillägg. ATAK-CIV är, liksom ATAK-MIL, nätverksagnostisk och fungerar med många taktiska kommunikationssystem. ATAK-CIV stöder kartor, bildmaterial och överlagrade datablad från både försvarsdepartementet och kommersiella aktörer. När möjligt följer ATAK-applikationen Googles riktlinjer för gränssnittsdesign för att ge en välbekant användarupplevelse.</p>\n<h2 id=\"systemkrav\"><a href=\"#systemkrav\">Systemkrav</a></h2>\n<h3 id=\"atak-systemkrav\"><a href=\"#atak-systemkrav\"><strong>ATAK-systemkrav</strong></a></h3>\n<p><strong>Operativsystem:</strong> ATAK kräver Android 5.0 (API 21) eller senare.\\n<strong>Hårdvara:</strong> ATAK kräver ingen särskild hårdvara och bör fungera på alla Android-enheter som uppfyller övriga krav.\\n<strong>Grafik:</strong> ATAK kräver en grafikprocessor som stöder GLES 3.0.\\n<strong>Lagring, minne och processor:</strong> ATAK har inga specifika krav på lagring, minne eller processor, men prestandan beror på enhetens kapacitet.</p>\n<h3 id=\"exempel-på-enheter\"><a href=\"#exempel-på-enheter\"><strong>Exempel på enheter</strong></a></h3>\n<p>TAK testas vanligtvis på flera Samsung-enheter eftersom de huvudsakligen används i fält. ATAK fungerar dock även på andra fabrikat.</p>\n<p>– För mindre telefoner krävs minst hårdvara motsvarande Samsung S5 eller nyare.\\n– För surfplattor minst Samsung Tab S eller nyare.</p>\n<p><strong>Rekommendation:</strong>\\nFör bästa användarupplevelse rekommenderas minst Samsung S9 eller nyare för telefoner, samt Samsung S2 eller nyare för surfplattor.</p>"
+    }
+  ]
+}

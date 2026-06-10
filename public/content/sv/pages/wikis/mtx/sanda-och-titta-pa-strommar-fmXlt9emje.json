@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "0db274cf-9e35-42c4-b77d-8cf33094ff48",
+  "slug": "sanda-och-titta-pa-strommar-fmXlt9emje",
+  "collection": "wikis/mtx",
+  "locale": "sv",
+  "title": "Sända och titta på strömmar",
+  "breadcrumb": [
+    "Sända och titta på strömmar"
+  ],
+  "createdAt": "2025-12-03T13:36:20.444Z",
+  "updatedAt": "2026-02-16T08:35:46.926Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Deploy App-inloggningar och strömningslistor",
+      "id": "deploy-app-inloggningar-och-strömningslistor"
+    },
+    {
+      "depth": 2,
+      "text": "Namngivningspraxis:",
+      "id": "namngivningspraxis"
+    },
+    {
+      "depth": 2,
+      "text": "Strömningsverktyg",
+      "id": "strömningsverktyg"
+    },
+    {
+      "depth": 3,
+      "text": "Publicera en ström",
+      "id": "publicera-en-ström"
+    },
+    {
+      "depth": 3,
+      "text": "Titta på en ström",
+      "id": "titta-på-en-ström"
+    },
+    {
+      "depth": 2,
+      "text": "Strömningsprotokoll",
+      "id": "strömningsprotokoll"
+    },
+    {
+      "depth": 3,
+      "text": "Publicering av ström",
+      "id": "publicering-av-ström"
+    },
+    {
+      "depth": 3,
+      "text": "Titta på ström",
+      "id": "titta-på-ström"
+    },
+    {
+      "depth": 2,
+      "text": "Du kan också dela länkar som QR-kod",
+      "id": "du-kan-också-dela-länkar-som-qr-kod"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Livevideo delas och visas via en videodistributionsserver. Servern nås med de inloggningsuppgifter som erhålls från Deploy-appen.</p>\n<h2 id=\"deploy-app-inloggningar-och-strömningslistor\"><a href=\"#deploy-app-inloggningar-och-strömningslistor\">Deploy App-inloggningar och strömningslistor</a></h2>\n<p><code>https://mtx.``**canadian-goose.pvarki.fi**``:4626/api/v1/direct/credentials</code></p>\n<p><code>https://mtx.``**canadian-goose.pvarki.fi**``:4626/api/v1/direct/streams</code></p>\n<h2 id=\"namngivningspraxis\"><a href=\"#namngivningspraxis\">Namngivningspraxis:</a></h2>\n<h4 id=\"namngivning-av-strömnliveverktygcallsign\"><a href=\"#namngivning-av-strömnliveverktygcallsign\"><strong>Namngivning av ström</strong>\\n<code>live/verktyg/callsign</code></a></h4>\n<h4 id=\"lista-över-verktyg-exempel\"><a href=\"#lista-över-verktyg-exempel\">Lista över verktyg, exempel</a></h4>\n<p><code>icu, gopro, uas, ipcam</code></p>\n<h2 id=\"strömningsverktyg\"><a href=\"#strömningsverktyg\">Strömningsverktyg</a></h2>\n<h3 id=\"publicera-en-ström\"><a href=\"#publicera-en-ström\">Publicera en ström</a></h3>\n<h4 id=\"opentak-icu\"><a href=\"#opentak-icu\">Opentak ICU</a></h4>\n<p><code>rtmps://``**canadian-goose.pvarki.fi**``:1936/live/icu/``**Callsign**</code></p>\n<p><a href=\"/doc/910e554e-48ad-4666-8859-a11bca34720b\">Opentak ICU</a></p>\n<h4 id=\"gopro-app\"><a href=\"#gopro-app\">GoPro App</a></h4>\n<p><code>rtmps://``**canadian-goose.pvarki.fi**``:1936/live/gopro/``**Callsing**``?user=``**USERNAME**``&#x26;pass=``**PASSWORD**</code></p>\n<h4 id=\"uastool\"><a href=\"#uastool\">Uastool</a></h4>\n<p><code>srt://``**canadian-goose.pvarki.fi**``:8890?streamid=publish:live/icu/``**Callsign**``:``**USERNAME**``:``**PASSWORD**</code></p>\n<p><a href=\"/doc/0b500367-7eda-4ccf-a9b2-39f29556c5ac\">Uastool Strömning</a></p>\n<h3 id=\"titta-på-en-ström\"><a href=\"#titta-på-en-ström\">Titta på en ström</a></h3>\n<h4 id=\"vlc\"><a href=\"#vlc\">VLC</a></h4>\n<p><code>srt://``**canadian-goose.pvarki.fi**``:8890?streamid=read:live/icu/``**Callsign**``:``**USERNAME**``:``**PASSWORD**</code></p>\n<p><code>https://``**canadian-goose.pvarki.fi**``:9888/live/icu/``**Callsign**``/index.m3u8</code></p>\n<h4 id=\"webbläsare\"><a href=\"#webbläsare\">Webbläsare</a></h4>\n<p><code>https://``**canadian-goose.pvarki.fi**``:9888/live/icu/``**Callsign**``/</code></p>\n<h4 id=\"atak\"><a href=\"#atak\">ATAK</a></h4>\n<p><code>rtmps://``**canadian-goose.pvarki.fi**``:1936/live/icu/``**Callsign**``?user=``**USERNAME**``&#x26;pass=``**PASSWORD**</code></p>\n<h4 id=\"dela-länken-via-takserver\"><a href=\"#dela-länken-via-takserver\">Dela länken via Takserver</a></h4>\n<p><code>rtmps://``**canadian-goose.pvarki.fi**``:1936/live/icu/``**Callsign**``?user=``**USERNAME**``&#x26;pass=``**PASSWORD**</code></p>\n<p><img src=\"/content/images/sv/attachments/106978dd70770c1e.webp\" alt=\"\" title=\" =469x\"> Takserver - Hamburgarmenyn → Data → Video Feed Manager → Add</p>\n<h2 id=\"strömningsprotokoll\"><a href=\"#strömningsprotokoll\">Strömningsprotokoll</a></h2>\n<h3 id=\"publicering-av-ström\"><a href=\"#publicering-av-ström\">Publicering av ström</a></h3>\n<h4 id=\"rtsps-publicering\"><a href=\"#rtsps-publicering\">RTSPS-publicering</a></h4>\n<p><code>rtsps://``**canadian-goose.pvarki.fi**``:8322/live/icu/``**Callsign**</code></p>\n<p><code>rtsps://``**USERNAME**``:``**PASSWORD**``@``**canadian-goose.pvarki.fi**``:8322/live/icu/``**Callsign**</code></p>\n<h4 id=\"rtmps-publicering\"><a href=\"#rtmps-publicering\">RTMPS-publicering</a></h4>\n<p><code>rtmps://``**canadian-goose.pvarki.fi**``:1936/live/icu/``**Callsign**</code></p>\n<p><code>rtmps://``**USERNAME**``:``**PASSWORD**``@``**canadian-goose.pvarki.fi**``:1936/live/icu/``**Callsign**</code></p>\n<h4 id=\"srt-publicering\"><a href=\"#srt-publicering\">SRT-publicering</a></h4>\n<p><code>srt://``**canadian-goose.pvarki.fi**``:8890?streamid=publish:live/icu/``**Callsign**``&#x26;pkt_size=1316</code></p>\n<p><code>srt://``**canadian-goose.pvarki.fi**``:8890?streamid=publish:live/icu/``**Callsign**``:``**USERNAME**``:``**PASSWORD**``&#x26;pkt_size=1316</code></p>\n<h3 id=\"titta-på-ström\"><a href=\"#titta-på-ström\">Titta på ström</a></h3>\n<h4 id=\"titta-i-webbläsare-med-hls-protokollet\"><a href=\"#titta-i-webbläsare-med-hls-protokollet\">Titta i webbläsare med HLS-protokollet</a></h4>\n<p><code>https://``**canadian-goose.pvarki.fi**``:9888/live/icu/``**Callsign**</code></p>\n<h4 id=\"titta-i-vlc-player\"><a href=\"#titta-i-vlc-player\">Titta i VLC Player</a></h4>\n<p><code>srt://``**canadian-goose.pvarki.fi**``:8890?streamid=read:live/icu/``**Callsign**``:``**USERNAME**``:``**PASSWORD**</code></p>\n<p><code>https://``**canadian-goose.pvarki.fi**``:9888/live/icu/``**Callsign**``/index.m3u8</code></p>\n<h2 id=\"du-kan-också-dela-länkar-som-qr-kod\"><a href=\"#du-kan-också-dela-länkar-som-qr-kod\">Du kan också dela länkar som QR-kod</a></h2>\n<p>Gratis verktyg för att skapa QR-koder</p>\n<p><a href=\"https://new.express.adobe.com/tools/generate-qr-code\" target=\"_blank\" rel=\"noopener noreferrer\">https://new.express.adobe.com/tools/generate-qr-code</a></p>"
+    }
+  ]
+}

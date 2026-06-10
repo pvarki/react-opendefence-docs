@@ -1,0 +1,133 @@
+{
+  "schemaVersion": 1,
+  "id": "4ab66e9f-1ba6-4ef7-8f80-af6182ca28c6",
+  "slug": "opentak-icu-HJresNyWaE",
+  "collection": "guides/mtx-guide",
+  "locale": "sv",
+  "title": "OpenTAK ICU",
+  "breadcrumb": [
+    "Publicera streamen",
+    "OpenTAK ICU"
+  ],
+  "createdAt": "2026-03-05T07:56:19.510Z",
+  "updatedAt": "2026-04-11T21:50:38.139Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Publicera streamen med OpenTAK ICU",
+      "id": "publicera-streamen-med-opentak-icu"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<h2 id=\"publicera-streamen-med-opentak-icu\"><a href=\"#publicera-streamen-med-opentak-icu\">Publicera streamen med OpenTAK ICU</a></h2>"
+    },
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Öppna Deploy App MTX",
+          "layout": "text",
+          "html": "<ul>\n<li>Öppna Deploy App MTX</li>\n<li>Välj \"+ Lägg till\"</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "MTX - Starta en stream 1",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Öppna rullgardinsmenyn OpenTAK ICU</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/f09ddb5ce372f177.webp",
+              "width": 1080,
+              "height": 2006
+            }
+          ]
+        },
+        {
+          "title": "MTX - Starta en stream 2",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Välj \"Auto-importera inställningar till OpenTAK_ICU\"</li>\n<li>OpenTAK ICU öppnas på din enhet</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/a13419b4884063c3.webp",
+              "width": 1080,
+              "height": 2000
+            }
+          ]
+        },
+        {
+          "title": "OpenTAK ICU - Instruktioner 1",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Välkomstsidan öppnas. Om du inte har öppnat OpenTAK ICU tidigare kommer appen att begära behörigheter – ge alla behörigheter den ber om.</li>\n<li>Svep åt vänster eller klicka på \">\" för att fortsätta</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/9c4a8be9656f88c0.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "OpenTAK ICU - Instruktioner 2",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Din streamingkonfiguration visas</li>\n<li>Kontrollera att konfigurationen är korrekt (framför allt servern)</li>\n<li>Klicka på \"Import\", var noga med att inte svepa</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/7c693aed82153c62.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "OpenTAK ICU - Instruktioner 3",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Kontrollera att du också får meddelandet \"Settings Updated Successfully\"</li>\n<li>Om inte, gå tillbaka och tryck på \"Import\" igen</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/0a4ec50c875e3f61.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "OpenTAK ICU - Streaming 1",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Grundvyn i OpenTAK ICU</li>\n<li>För att starta streamen, tryck på inspelningsknappen.</li>\n<li>För att ändra inställningar manuellt, välj kugghjulsikonen</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/b23a282d7658326a.webp",
+              "width": 1080,
+              "height": 2256
+            }
+          ]
+        },
+        {
+          "title": "OpenTAK ICU - Streaming 2",
+          "layout": "image-left",
+          "html": "<ul>\n<li>När streamen startar får du ett meddelande \"Connection success\"</li>\n<li>Om du inte får ett meddelande och bithastigheten inte ändras, försök importera inställningarna igen och kontrollera din internetanslutning</li>\n<li>Du kan stoppa streamen med stoppknappen</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/62f1db708a50e846.webp",
+              "width": 1080,
+              "height": 2256
+            }
+          ]
+        },
+        {
+          "title": "Du vet nu hur man startar en stream",
+          "layout": "text",
+          "html": "<ul>\n<li>Du kan stänga denna guide.</li>\n</ul>",
+          "images": []
+        }
+      ]
+    },
+    {
+      "type": "html",
+      "html": "<p>När du har startat streamen, fortsätt till nästa avsnitt <a href=\"/doc/ce8883ca-0875-427b-88c6-464f3ebcc0e9\">Katso Striimiä</a></p>"
+    }
+  ]
+}

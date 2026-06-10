@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "7b06ea32-e825-4854-a9ee-c03f1de33dec",
+  "slug": "fighter-xKivECWhVS",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "Fighter",
+  "breadcrumb": [
+    "TAK Clients",
+    "TAK Tracker - Apple",
+    "Usage by Role",
+    "Fighter"
+  ],
+  "createdAt": "2025-12-05T20:41:37.516Z",
+  "updatedAt": "2026-02-21T08:40:29.184Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>(This tab should not be shown)</p>"
+    }
+  ]
+}

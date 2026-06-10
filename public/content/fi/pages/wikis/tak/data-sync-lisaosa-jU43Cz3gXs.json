@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "id": "ebf3a151-33a5-4294-8bee-c551e45658e9",
+  "slug": "data-sync-lisaosa-jU43Cz3gXs",
+  "collection": "wikis/tak",
+  "locale": "fi",
+  "title": "Data Sync -lisäosa",
+  "breadcrumb": [
+    "TAK Tuotteet Käyttäjille",
+    "WinTAK - Windows TAK",
+    "Työkalut ja lisäosat",
+    "Data Sync -lisäosa"
+  ],
+  "createdAt": "2025-12-08T01:48:34.319Z",
+  "updatedAt": "2026-02-19T13:27:06.108Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Lisäosan kuvaus",
+      "id": "lisäosan-kuvaus"
+    },
+    {
+      "depth": 3,
+      "text": "Data Sync -lisäosan käyttöohje WinTAK:lle",
+      "id": "data-sync--lisäosan-käyttöohje-wintaklle"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "src": "/content/images/fi/attachments/5c6d780d65fe7f7b.webp",
+      "alt": "",
+      "caption": "=192x",
+      "width": 192,
+      "height": 192
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"lisäosan-kuvaus\"><a href=\"#lisäosan-kuvaus\"><strong>Lisäosan kuvaus</strong></a></h2>\n<p>Data Synchronization -lisäosaa käytetään synkronoimaan useita WinTAK-laitteita, jotka osallistuvat samaan harjoitukseen tai tapahtumaan. Tämä lisäosa vaatii TAK Server -version 1.3.3 tai uudemman. TAK Server tallentaa kaiken <em>mission</em> eli tehtävän datan palvelinpuolen tietokantaan. Asiakaslaitteet voivat liittyä tehtävään saadakseen dynaamisia päivityksiä tehtävän muuttuessa tai synkronoidakseen tiedot, jotka ovat jääneet vastaanottamatta laitteen ollessa irti yhteydestä.</p>\n<p>Lisäosa tukee tällä hetkellä seuraavia tietotyyppejä:</p>\n<p>• <strong>Karttakohteet (CoT-data)</strong> – kuten merkit, muodot, reitit jne.\\n• <strong>Tiedostot</strong> – mitä tahansa tiedostoja voidaan synkronoida, esim. kuvat, GRG:t, asetustiedostot\\n• <strong>Lokit</strong> – Mission- tai Recce-lokit ovat tehtävään liittyviä aikaleimattuja tapahtumia\\n• <strong>Chat</strong> – Jokaisella tehtävällä on pysyvä tehtäväkohtainen keskusteluhuone</p>\n<p>Mielivaltaiset CoT/UID-tunnisteet voidaan liittää tehtävään siten, että kaikki niihin liittyvät päivitykset synkronoidaan automaattisesti kaikille tilaajille. Lisäosa mahdollistaa koko tehtävän viennin mission-paketiksi (zip-tiedosto) arkistointia tai jakamista varten muihin järjestelmiin.</p>\n<p>Lisäksi lisäosa tarjoaa <strong>dead reckoning</strong> -navigointikyvykkyyden ympäristöissä, joissa GPS- tai muu paikannus ei ole käytettävissä.</p>\n<h3 id=\"data-sync--lisäosan-käyttöohje-wintaklle\"><a href=\"#data-sync--lisäosan-käyttöohje-wintaklle\">Data Sync -lisäosan käyttöohje WinTAK:lle</a></h3>"
+    },
+    {
+      "type": "pdf",
+      "src": "attachments/1774e7d3-13c1-4f08-b545-7e27fe4c9c4d.pdf",
+      "title": "WinTAK 5.5 Data Sync User Guide.pdf"
+    }
+  ]
+}

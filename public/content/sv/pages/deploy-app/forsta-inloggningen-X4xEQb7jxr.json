@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 1,
+  "id": "87831814-57e3-4e78-a7c2-0c59987f1d07",
+  "slug": "forsta-inloggningen-X4xEQb7jxr",
+  "collection": "deploy-app",
+  "locale": "sv",
+  "title": "Första inloggningen",
+  "breadcrumb": [
+    "Android",
+    "Administratörsguide",
+    "Första inloggningen"
+  ],
+  "createdAt": "2026-02-17T08:35:27.402Z",
+  "updatedAt": "2026-02-25T07:33:30.334Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>\\</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Första inloggningen",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Du bör ha adressen till din Deploy App-instans samt koden för den första administratören.</li>\n<li>Logga in med den angivna koden.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/4fb51e9305f53799.webp",
+              "width": 2560,
+              "height": 5712
+            }
+          ]
+        },
+        {
+          "title": "Smeknamn",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Ge dig själv ett smeknamn. Det bör vara en identifierare som gör att endast din organisation kan känna igen dig.</li>\n<li>Detta används i alla tjänster.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/74df1ae3d9eade0e.webp",
+              "width": 2560,
+              "height": 5712
+            }
+          ]
+        },
+        {
+          "title": "Instruktioner",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Deploy App har inbyggda instruktioner som guidar användare och presenterar de viktigaste funktionerna.</li>\n<li>Denna guide går igenom installationen av certifikatet.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/0a8f83017e024fb4.webp",
+              "width": 2561,
+              "height": 5712
+            }
+          ]
+        },
+        {
+          "title": "Ladda ner certifikat",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Detta fungerar som din tillgång till tjänsterna.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/ba6459408ea6b3e3.webp",
+              "width": 2560,
+              "height": 5712
+            }
+          ]
+        },
+        {
+          "title": "Installera certifikat",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Ditt smeknamn fungerar som ditt lösenord.</li>\n<li>Skriv in det och tryck på \"OK\" tills du har återvänt till Deploy App.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/ce2c74c4774fc9b4.webp",
+              "width": 2560,
+              "height": 5712
+            }
+          ]
+        },
+        {
+          "title": "Logga in med certifikat",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Tryck på \"Fortsätt med nyckeln\".</li>\n<li>När du blir ombedd att välja ett certifikat, kontrollera att ditt smeknamn är valt och logga in genom att trycka på \"Välj\".</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/147e1f5c5c9663cd.webp",
+              "width": 2560,
+              "height": 5712
+            }
+          ]
+        },
+        {
+          "title": "Klart",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Nu kan du börja använda apparna och registrera användare.</li>\n<li>Deploy App visar instruktioner de första gångerna, men du hittar fler guider på denna webbplats.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/763730078dd550d8.webp",
+              "width": 2560,
+              "height": 5712
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

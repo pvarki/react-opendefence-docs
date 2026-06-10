@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "id": "7304adaf-3380-4d82-b27c-57f4b362887e",
+  "slug": "recon-feed-management-y1O0x1g2sf",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "RECON Feed Management",
+  "breadcrumb": [
+    "TAK Clients",
+    "ATAK",
+    "Usage by Role",
+    "Command Post",
+    "RECON Feed Management"
+  ],
+  "createdAt": "2026-01-23T21:19:17.944Z",
+  "updatedAt": "2026-02-28T11:14:24.245Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "ATAK connected to takserver - RECON Feed Management",
+      "id": "atak-connected-to-takserver---recon-feed-management"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>\\</p>\n<ul>\n<li>Short slideshow on how to manage RECON feed and what does managing help with.</li>\n<li>For instructions on Managing Data Sync Feeds go to <a href=\"/doc/9bb35061-2c64-4718-9273-c11847dfa322\">Create &#x26; Manage Feeds</a></li>\n<li>For Basics of RECON feed go to <a href=\"/doc/c64f9f4e-3647-40a8-b468-20adc6db40c3\">Use RECON Feed</a></li>\n</ul>\n<h1 id=\"atak---recon-feed---command-post-usage-role\"><a href=\"#atak---recon-feed---command-post-usage-role\">ATAK - RECON Feed - Command Post Usage Role</a></h1>\n<h2 id=\"atak-connected-to-takserver---recon-feed-management\"><a href=\"#atak-connected-to-takserver---recon-feed-management\">ATAK connected to takserver - RECON Feed Management</a></h2>"
+    },
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "What is RECON feed",
+          "layout": "text",
+          "html": "<ul>\n<li>RECON Feed is automatically created Data Sync feed for Deploy App</li>\n<li>It is used for reviewed and verified intelligence and observations</li>\n<li>Basically the current enemy locations are other critical information</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "RECON feed basics",
+          "layout": "text",
+          "html": "<ul>\n<li>RECON Feed is meant to be managed by Command Post</li>\n<li>Fighters have read only access to it</li>\n<li>Every user in the Deploy App is subscribed to RECON Feed</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "RECON Feed management",
+          "layout": "text",
+          "html": "<ul>\n<li>Command Post users publish and manage information on RECON Feed.</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "xx",
+          "layout": "text",
+          "html": "<ul>\n<li>xx</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "xx",
+          "layout": "text",
+          "html": "<ul>\n<li>xx</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "You are now connected",
+          "layout": "text",
+          "html": "<ul>\n<li>You can close this guide.</li>\n</ul>",
+          "images": []
+        }
+      ]
+    },
+    {
+      "type": "html",
+      "html": "<p>After successful testing Geofences, continue to</p>\n<p>Read more about RECON feed at TAK Wiki <a href=\"/doc/bf3416b5-d2ca-4dc6-89a2-b48cfca69618\">Takserver RECON feed</a></p>\n<p>Read more about Forwarding observations to Command Post at TAK WIKI <a href=\"/doc/58a46804-6639-4b5e-a7c0-3056309cb411\">Forwarding Observations</a></p>"
+    }
+  ]
+}
