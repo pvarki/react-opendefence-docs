@@ -1,18 +1,10 @@
 import { Link, createFileRoute, notFound } from "@tanstack/react-router";
 import { useTranslation } from "react-i18next";
-import { ChevronLeft, ChevronRight } from "lucide-react";
-import type {
-  LocaleManifest,
-  ManifestPage,
-  PageDoc,
-} from "@shared/content-schema";
+import { ChevronRight } from "lucide-react";
+import type { LocaleManifest, ManifestPage } from "@shared/content-schema";
 import { loadManifest, loadPage } from "@/lib/content/loader";
-import {
-  readingOrder,
-  resolvePosition,
-  resolveSplat,
-} from "@/lib/content/neighbors";
-import { BlockRenderer } from "@/components/blocks/BlockRenderer";
+import { readingOrder, resolveSplat } from "@/lib/content/neighbors";
+import { PageSwiper } from "@/components/reader/PageSwiper";
 import { NotFound } from "@/components/shell/NotFound";
 import { Button } from "@/components/ui/button";
 
@@ -28,7 +20,6 @@ export interface PageData {
   manifest: LocaleManifest;
   collection: string;
   slug: string;
-  doc: PageDoc;
 }
 
 export const Route = createFileRoute("/$locale/$")({
@@ -46,19 +37,18 @@ export const Route = createFileRoute("/$locale/$")({
       };
     }
 
-    const position = resolvePosition(
-      manifest,
-      resolved.collection,
-      resolved.slug,
+    const page = manifest.pages.find(
+      (p) => p.collection === resolved.collection && p.slug === resolved.slug,
     );
-    if (!position) throw notFound();
-    const doc = await loadPage(position.page.path);
+    if (!page) throw notFound();
+    // Warm the cache so the current pane renders without a skeleton flash;
+    // the swiper itself preloads the neighbors.
+    await loadPage(page.path).catch(() => {});
     return {
       kind: "page",
       manifest,
       collection: resolved.collection,
       slug: resolved.slug,
-      doc,
     };
   },
   component: ReaderRoute,
@@ -67,10 +57,17 @@ export const Route = createFileRoute("/$locale/$")({
 
 function ReaderRoute() {
   const data = Route.useLoaderData();
+  const { locale } = Route.useParams();
+
   return data.kind === "cover" ? (
     <BookCover data={data} />
   ) : (
-    <PageView data={data} />
+    <PageSwiper
+      locale={locale}
+      manifest={data.manifest}
+      collection={data.collection}
+      slug={data.slug}
+    />
   );
 }
 
@@ -119,62 +116,6 @@ function BookCover({ data }: { data: CoverData }) {
           ))}
         </ol>
       </div>
-    </div>
-  );
-}
-
-function PageView({ data }: { data: PageData }) {
-  const { t } = useTranslation();
-  const { locale } = Route.useParams();
-  const position = resolvePosition(data.manifest, data.collection, data.slug);
-
-  return (
-    <div className="h-full overflow-y-auto" data-page-scroll>
-      <article className="mx-auto max-w-3xl px-4 py-8">
-        <h1 className="mb-6 text-3xl font-bold">{data.doc.title}</h1>
-        <BlockRenderer blocks={data.doc.blocks} />
-
-        {position && (
-          <nav className="mt-12 flex items-center justify-between gap-4 border-t border-border pt-6">
-            {position.prev ? (
-              <Link
-                to="/$locale/$"
-                params={{
-                  locale,
-                  _splat: `${position.prev.collection}/${position.prev.slug}`,
-                }}
-                className="flex min-w-0 items-center gap-2 text-sm text-muted-foreground hover:text-foreground"
-              >
-                <ChevronLeft className="size-4 shrink-0" />
-                <span className="truncate">{position.prev.title}</span>
-              </Link>
-            ) : (
-              <span />
-            )}
-            <span className="shrink-0 text-xs text-muted-foreground tabular-nums">
-              {t("reader.pageOf", {
-                current: position.index + 1,
-                total: position.total,
-              })}
-            </span>
-            {position.next ? (
-              <Link
-                to="/$locale/$"
-                params={{
-                  locale,
-                  _splat: `${position.next.collection}/${position.next.slug}`,
-                }}
-                className="flex min-w-0 items-center gap-2 text-sm text-muted-foreground hover:text-foreground"
-              >
-                <span className="truncate">{position.next.title}</span>
-                <ChevronRight className="size-4 shrink-0" />
-              </Link>
-            ) : (
-              <span />
-            )}
-          </nav>
-        )}
-      </article>
     </div>
   );
 }

@@ -4,13 +4,14 @@ import type { SlidesetBlock } from "@shared/content-schema";
 /**
  * Step-by-step guide block. M4 adds the desktop Embla SlideDeck; until then
  * both form factors get the vertical step list (which remains the permanent
- * mobile rendering — deliberately not a carousel).
+ * mobile rendering — deliberately not a carousel, and deliberately NOT a
+ * data-swipe-scope: a plain list must not steal page-turn gestures).
  */
 export function Slideset({ block }: { block: SlidesetBlock }) {
   const { t } = useTranslation();
 
   return (
-    <section data-swipe-scope="slides" className="my-8">
+    <section className="my-8">
       {block.title && (
         <h3 className="mb-4 text-lg font-semibold">{block.title}</h3>
       )}
