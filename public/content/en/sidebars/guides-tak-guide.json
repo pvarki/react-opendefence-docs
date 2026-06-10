@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "label": "TAK Guide",
+  "slug": "guides/tak-guide",
+  "items": [
+    {
+      "type": "doc",
+      "id": "tak-intro-fixture11",
+      "label": "TAK — Introduction",
+      "slug": "tak-intro-fixture11"
+    },
+    {
+      "type": "group",
+      "id": "android",
+      "label": "Android",
+      "children": [
+        {
+          "type": "doc",
+          "id": "atak-install-fixture12",
+          "label": "Install ATAK on Android",
+          "slug": "atak-install-fixture12"
+        }
+      ]
+    }
+  ]
+}

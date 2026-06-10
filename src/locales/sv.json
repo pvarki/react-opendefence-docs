@@ -1,0 +1,55 @@
+{
+  "app": {
+    "title": "OpenDefence Docs",
+    "tagline": "Lär dig Deploy App och OpenDefence-stacken"
+  },
+  "nav": {
+    "home": "Hem",
+    "deployApp": "Deploy App",
+    "guides": "Guider",
+    "develop": "Utveckling",
+    "search": "Sök",
+    "contents": "Innehåll",
+    "back": "Tillbaka"
+  },
+  "home": {
+    "userCard": "Jag använder Deploy App",
+    "userCardDesc": "Kom igång, logga in och använd tjänster i fält",
+    "guidesCard": "Jag behöver en produktguide",
+    "guidesCardDesc": "Steg-för-steg-guider för TAK, MTX, Matrix och CryptPad",
+    "devCard": "Jag utvecklar eller driftar",
+    "devCardDesc": "Arkitektur, integrationer, API-referens, driftguider",
+    "continueReading": "Fortsätt läsa"
+  },
+  "reader": {
+    "pageOf": "Sida {{current}} av {{total}}",
+    "previous": "Föregående",
+    "next": "Nästa",
+    "startReading": "Börja läsa",
+    "endOfBook": "Du har läst klart {{book}}",
+    "notTranslated": "Denna sida är inte översatt ännu. Visar engelskt innehåll.",
+    "comingSoon": "Denna sida är under arbete",
+    "pageAnnouncement": "Sida: {{title}} — {{current}} av {{total}}"
+  },
+  "slides": {
+    "stepOf": "Steg {{current}} av {{total}}",
+    "fullscreen": "Helskärm",
+    "exitFullscreen": "Avsluta helskärm",
+    "imageMissing": "Bild saknas"
+  },
+  "search": {
+    "placeholder": "Sök i dokumentationen…",
+    "noResults": "Inga resultat",
+    "searching": "Söker…"
+  },
+  "common": {
+    "loading": "Laddar…",
+    "error": "Något gick fel",
+    "notFound": "Sidan hittades inte",
+    "notFoundDesc": "Sidan du letar efter finns inte eller har flyttats.",
+    "goHome": "Gå till startsidan",
+    "language": "Språk",
+    "updateAvailable": "Dokumentationen uppdaterad",
+    "reload": "Ladda om"
+  }
+}

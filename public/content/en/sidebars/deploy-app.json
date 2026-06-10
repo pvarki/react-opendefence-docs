@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "label": "Deploy App",
+  "slug": "deploy-app",
+  "items": [
+    {
+      "type": "doc",
+      "id": "welcome-fixture01",
+      "label": "Welcome to Deploy App",
+      "slug": "welcome-fixture01"
+    },
+    {
+      "type": "group",
+      "id": "getting-started",
+      "label": "Getting started",
+      "children": [
+        {
+          "type": "doc",
+          "id": "first-login-fixture02",
+          "label": "First login",
+          "slug": "first-login-fixture02"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "administration",
+      "label": "Administration",
+      "children": [
+        {
+          "type": "doc",
+          "id": "adding-users-fixture03",
+          "label": "Adding users",
+          "slug": "adding-users-fixture03"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "use",
+      "label": "Use",
+      "children": [
+        {
+          "type": "doc",
+          "id": "external-services-fixture04",
+          "label": "Access external services",
+          "slug": "external-services-fixture04"
+        }
+      ]
+    }
+  ]
+}

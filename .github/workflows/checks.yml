@@ -1,0 +1,49 @@
+name: Checks
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  org-checks:
+    uses: pvarki/config-ci-library/.github/workflows/general-check.yml@main
+    with:
+      # Versioning is managed by release-please, not bump-my-version.
+      run-bumpversion: false
+
+  quality:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+      - name: Lint
+        run: pnpm lint
+      - name: Format check
+        run: pnpm format:check
+      - name: Unit tests
+        run: pnpm test
+      - name: Validate docs
+        run: pnpm validate:docs
+      - name: Build (includes typecheck)
+        run: pnpm build
+
+  docker-verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: docker/setup-buildx-action@v3
+      - name: Build image (no push)
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          target: production
+          push: false
+          cache-from: type=gha
+          cache-to: type=gha,mode=max

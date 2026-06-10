@@ -1,0 +1,55 @@
+{
+  "app": {
+    "title": "OpenDefence Docs",
+    "tagline": "Learn Deploy App and the OpenDefence stack"
+  },
+  "nav": {
+    "home": "Home",
+    "deployApp": "Deploy App",
+    "guides": "Guides",
+    "develop": "Develop",
+    "search": "Search",
+    "contents": "Contents",
+    "back": "Back"
+  },
+  "home": {
+    "userCard": "I use Deploy App",
+    "userCardDesc": "Get started, log in, use products in the field",
+    "guidesCard": "I need a product guide",
+    "guidesCardDesc": "TAK, MTX, Matrix and CryptPad step-by-step guides",
+    "devCard": "I develop or operate",
+    "devCardDesc": "Architecture, integrations, API reference, runbooks",
+    "continueReading": "Continue reading"
+  },
+  "reader": {
+    "pageOf": "Page {{current}} of {{total}}",
+    "previous": "Previous",
+    "next": "Next",
+    "startReading": "Start reading",
+    "endOfBook": "You finished {{book}}",
+    "notTranslated": "This page is not yet translated. Showing English content.",
+    "comingSoon": "This page is under development",
+    "pageAnnouncement": "Page: {{title}} — {{current}} of {{total}}"
+  },
+  "slides": {
+    "stepOf": "Step {{current}} of {{total}}",
+    "fullscreen": "Fullscreen",
+    "exitFullscreen": "Exit fullscreen",
+    "imageMissing": "Image missing"
+  },
+  "search": {
+    "placeholder": "Search docs…",
+    "noResults": "No results",
+    "searching": "Searching…"
+  },
+  "common": {
+    "loading": "Loading…",
+    "error": "Something went wrong",
+    "notFound": "Page not found",
+    "notFoundDesc": "The page you are looking for does not exist or has moved.",
+    "goHome": "Go to home",
+    "language": "Language",
+    "updateAvailable": "Docs updated",
+    "reload": "Reload"
+  }
+}

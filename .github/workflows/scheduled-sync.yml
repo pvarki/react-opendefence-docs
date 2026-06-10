@@ -1,0 +1,70 @@
+name: Scheduled Outline Sync
+
+on:
+  schedule:
+    # Saturday 22:00 UTC = midnight in Finland
+    - cron: "0 22 * * 6"
+  workflow_dispatch:
+    inputs:
+      force_sync:
+        description: "Force re-download of all documents"
+        type: boolean
+        default: false
+      collection:
+        description: "Sync only this collection slug (empty = all)"
+        type: string
+        default: ""
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+      - name: Sync content from Outline
+        env:
+          OUTLINE_API_KEY: ${{ secrets.OUTLINE_API_KEY }}
+          OUTLINE_API_BASE: ${{ vars.OUTLINE_API_BASE }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if [ "${{ inputs.force_sync }}" = "true" ]; then
+            pnpm sync:force
+          elif [ -n "${{ inputs.collection }}" ]; then
+            pnpm sync:collection "${{ inputs.collection }}"
+          else
+            pnpm sync:outline
+          fi
+          pnpm extract:translations
+          pnpm fetch:api-specs
+          pnpm validate:docs --report sync-report.md || true
+      - name: Read validation report
+        id: report
+        run: |
+          if [ -f sync-report.md ]; then
+            {
+              echo "body<<SYNC_REPORT_EOF"
+              cat sync-report.md
+              echo "SYNC_REPORT_EOF"
+            } >> "$GITHUB_OUTPUT"
+            rm sync-report.md
+          else
+            echo "body=Automated content sync from Outline." >> "$GITHUB_OUTPUT"
+          fi
+      - name: Create pull request
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: docs/outline-sync
+          title: "docs: sync content from Outline"
+          commit-message: "docs: sync content from Outline"
+          body: ${{ steps.report.outputs.body }}
+          labels: documentation

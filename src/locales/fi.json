@@ -1,0 +1,55 @@
+{
+  "app": {
+    "title": "OpenDefence Docs",
+    "tagline": "Opi Deploy App ja OpenDefence-pino"
+  },
+  "nav": {
+    "home": "Etusivu",
+    "deployApp": "Deploy App",
+    "guides": "Oppaat",
+    "develop": "Kehitys",
+    "search": "Haku",
+    "contents": "Sisällys",
+    "back": "Takaisin"
+  },
+  "home": {
+    "userCard": "Käytän Deploy Appia",
+    "userCardDesc": "Aloita, kirjaudu ja käytä palveluita kentällä",
+    "guidesCard": "Tarvitsen tuoteoppaan",
+    "guidesCardDesc": "TAK-, MTX-, Matrix- ja CryptPad-oppaat vaihe vaiheelta",
+    "devCard": "Kehitän tai operoin",
+    "devCardDesc": "Arkkitehtuuri, integraatiot, API-referenssi, ohjeet",
+    "continueReading": "Jatka lukemista"
+  },
+  "reader": {
+    "pageOf": "Sivu {{current}} / {{total}}",
+    "previous": "Edellinen",
+    "next": "Seuraava",
+    "startReading": "Aloita lukeminen",
+    "endOfBook": "Sait valmiiksi: {{book}}",
+    "notTranslated": "Tätä sivua ei ole vielä suomennettu. Näytetään englanninkielinen sisältö.",
+    "comingSoon": "Tämä sivu on työn alla",
+    "pageAnnouncement": "Sivu: {{title}} — {{current}} / {{total}}"
+  },
+  "slides": {
+    "stepOf": "Vaihe {{current}} / {{total}}",
+    "fullscreen": "Koko näyttö",
+    "exitFullscreen": "Poistu koko näytöstä",
+    "imageMissing": "Kuva puuttuu"
+  },
+  "search": {
+    "placeholder": "Hae ohjeista…",
+    "noResults": "Ei tuloksia",
+    "searching": "Haetaan…"
+  },
+  "common": {
+    "loading": "Ladataan…",
+    "error": "Jokin meni vikaan",
+    "notFound": "Sivua ei löytynyt",
+    "notFoundDesc": "Etsimääsi sivua ei ole tai se on siirretty.",
+    "goHome": "Siirry etusivulle",
+    "language": "Kieli",
+    "updateAvailable": "Ohjeet päivitetty",
+    "reload": "Lataa uudelleen"
+  }
+}

@@ -1,0 +1,5 @@
+# Version mirror for pvarki/config-ci-library publish-image, which derives
+# Docker image tags from this file. The version itself is managed by
+# release-please (see .github/release-please-config.json extra-files).
+[tool.bumpversion]
+current_version = "0.1.0" # x-release-please-version

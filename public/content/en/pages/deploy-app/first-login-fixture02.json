@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "00000000-0000-4000-8000-000000000002",
+  "slug": "first-login-fixture02",
+  "collection": "deploy-app",
+  "locale": "en",
+  "title": "First login",
+  "breadcrumb": [
+    "Getting started",
+    "First login"
+  ],
+  "createdAt": "2026-06-01T00:00:00.000Z",
+  "updatedAt": "2026-06-10T00:00:00.000Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Your administrator sends you an invite link or QR code. Opening it starts the enrollment flow.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "title": "Logging in for the first time",
+      "slides": [
+        {
+          "title": "First login — step 1",
+          "layout": "image-bottom",
+          "html": "<p>This is the caption for step 1. It explains exactly what to tap or click, in one or two short sentences.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/fixtures/step1.svg",
+              "alt": "First login step 1",
+              "width": 800,
+              "height": 450
+            }
+          ]
+        },
+        {
+          "title": "First login — step 2",
+          "layout": "image-bottom",
+          "html": "<p>This is the caption for step 2. It explains exactly what to tap or click, in one or two short sentences.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/fixtures/step2.svg",
+              "alt": "First login step 2",
+              "width": 800,
+              "height": 450
+            }
+          ]
+        },
+        {
+          "title": "First login — step 3",
+          "layout": "image-bottom",
+          "html": "<p>This is the caption for step 3. It explains exactly what to tap or click, in one or two short sentences.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/fixtures/step3.svg",
+              "alt": "First login step 3",
+              "width": 800,
+              "height": 450
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "html",
+      "html": "<p>After enrollment your browser holds a device certificate; services open without further prompts.</p>"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "label": "For Developers",
+  "slug": "dev",
+  "items": [
+    {
+      "type": "doc",
+      "id": "architecture-fixture21",
+      "label": "Stack architecture",
+      "slug": "architecture-fixture21"
+    }
+  ]
+}

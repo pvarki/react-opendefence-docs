@@ -1,0 +1,118 @@
+{
+  "schemaVersion": 1,
+  "locale": "en",
+  "generatedAt": "2026-06-10T00:00:00.000Z",
+  "collections": [
+    {
+      "slug": "deploy-app",
+      "label": "Deploy App",
+      "description": "Main application documentation",
+      "section": "deploy-app",
+      "order": 0
+    },
+    {
+      "slug": "guides/tak-guide",
+      "label": "TAK Guide",
+      "description": "TAK platform guide",
+      "section": "guides",
+      "order": 1
+    },
+    {
+      "slug": "dev",
+      "label": "For Developers",
+      "description": "Developer-focused documentation",
+      "section": "dev",
+      "order": 2
+    }
+  ],
+  "pages": [
+    {
+      "id": "00000000-0000-4000-8000-000000000001",
+      "slug": "welcome-fixture01",
+      "collection": "deploy-app",
+      "title": "Welcome to Deploy App",
+      "breadcrumb": [
+        "Welcome to Deploy App"
+      ],
+      "path": "/content/en/pages/deploy-app/welcome-fixture01.json",
+      "updatedAt": "2026-06-10T00:00:00.000Z",
+      "order": 0
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000002",
+      "slug": "first-login-fixture02",
+      "collection": "deploy-app",
+      "title": "First login",
+      "breadcrumb": [
+        "Getting started",
+        "First login"
+      ],
+      "path": "/content/en/pages/deploy-app/first-login-fixture02.json",
+      "updatedAt": "2026-06-10T00:00:00.000Z",
+      "order": 1
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000003",
+      "slug": "adding-users-fixture03",
+      "collection": "deploy-app",
+      "title": "Adding users",
+      "breadcrumb": [
+        "Administration",
+        "Adding users"
+      ],
+      "path": "/content/en/pages/deploy-app/adding-users-fixture03.json",
+      "updatedAt": "2026-06-10T00:00:00.000Z",
+      "order": 2
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000004",
+      "slug": "external-services-fixture04",
+      "collection": "deploy-app",
+      "title": "Access external services",
+      "breadcrumb": [
+        "Use",
+        "Access external services"
+      ],
+      "path": "/content/en/pages/deploy-app/external-services-fixture04.json",
+      "updatedAt": "2026-06-10T00:00:00.000Z",
+      "order": 3
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000011",
+      "slug": "tak-intro-fixture11",
+      "collection": "guides/tak-guide",
+      "title": "TAK — Introduction",
+      "breadcrumb": [
+        "TAK — Introduction"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/tak-intro-fixture11.json",
+      "updatedAt": "2026-06-10T00:00:00.000Z",
+      "order": 0
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000012",
+      "slug": "atak-install-fixture12",
+      "collection": "guides/tak-guide",
+      "title": "Install ATAK on Android",
+      "breadcrumb": [
+        "Android",
+        "Install ATAK"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/atak-install-fixture12.json",
+      "updatedAt": "2026-06-10T00:00:00.000Z",
+      "order": 1
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000021",
+      "slug": "architecture-fixture21",
+      "collection": "dev",
+      "title": "Stack architecture",
+      "breadcrumb": [
+        "Stack architecture"
+      ],
+      "path": "/content/en/pages/dev/architecture-fixture21.json",
+      "updatedAt": "2026-06-10T00:00:00.000Z",
+      "order": 0
+    }
+  ]
+}

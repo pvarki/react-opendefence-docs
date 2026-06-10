@@ -1,0 +1,70 @@
+import type { Block } from "@shared/content-schema";
+import { HtmlBlock } from "@/components/blocks/HtmlBlock";
+import { Slideset } from "@/components/slides/Slideset";
+
+export function BlockRenderer({ blocks }: { blocks: Block[] }) {
+  return (
+    <>
+      {blocks.map((block, i) => {
+        switch (block.type) {
+          case "html":
+            return <HtmlBlock key={i} html={block.html} />;
+          case "slideset":
+            return <Slideset key={i} block={block} />;
+          case "image":
+            return (
+              <figure key={i} className="my-6">
+                <img
+                  src={block.src}
+                  alt={block.alt}
+                  width={block.width}
+                  height={block.height}
+                  loading="lazy"
+                  className="rounded-lg border border-border"
+                />
+                {block.caption && (
+                  <figcaption className="mt-2 text-sm text-muted-foreground">
+                    {block.caption}
+                  </figcaption>
+                )}
+              </figure>
+            );
+          case "code":
+            return (
+              <div
+                key={i}
+                className="my-6 text-sm"
+                // shiki output, generated and sanitized at build time
+                dangerouslySetInnerHTML={{ __html: block.html }}
+              />
+            );
+          case "youtube":
+            return (
+              <div key={i} className="my-6 aspect-video">
+                <iframe
+                  className="h-full w-full rounded-lg border border-border"
+                  src={`https://www.youtube-nocookie.com/embed/${block.videoId}`}
+                  title={block.title ?? "YouTube video"}
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  loading="lazy"
+                />
+              </div>
+            );
+          case "pdf":
+            return (
+              <a
+                key={i}
+                href={block.src}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="my-6 block rounded-lg border border-border bg-card px-4 py-3 text-primary hover:border-primary"
+              >
+                {block.title ?? block.src}
+              </a>
+            );
+        }
+      })}
+    </>
+  );
+}

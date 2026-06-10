@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "00000000-0000-4000-8000-000000000001",
+  "slug": "welcome-fixture01",
+  "collection": "deploy-app",
+  "locale": "en",
+  "title": "Welcome to Deploy App",
+  "breadcrumb": [
+    "Welcome to Deploy App"
+  ],
+  "createdAt": "2026-06-01T00:00:00.000Z",
+  "updatedAt": "2026-06-10T00:00:00.000Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "What is Deploy App?",
+      "id": "what-is-deploy-app"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Deploy App provides a single, simple and secure login and identity flow for mission-critical services. This is fixture content used while the Outline sync pipeline is being ported; it will be replaced by real synced content.</p><h2 id=\"what-is-deploy-app\">What is Deploy App?</h2><p>Deploy App (codename RASENMAEHER) issues mTLS device certificates to users, onboards them with invite codes and QR codes, and exposes integrated products as cards in its UI.</p><p>Swipe left to start reading, or open the contents list.</p>"
+    }
+  ]
+}

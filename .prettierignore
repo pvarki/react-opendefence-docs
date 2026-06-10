@@ -1,0 +1,9 @@
+node_modules/
+dist/
+helpcontent/
+public/content/
+public/api-specs/
+public/pagefind/
+src/routeTree.gen.ts
+pnpm-lock.yaml
+.prettier_cache
