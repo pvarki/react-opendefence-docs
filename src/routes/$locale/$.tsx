@@ -23,6 +23,10 @@ export interface PageData {
 }
 
 export const Route = createFileRoute("/$locale/$")({
+  validateSearch: (search: Record<string, unknown>): { slide?: number } => {
+    const slide = Number(search.slide);
+    return Number.isInteger(slide) && slide >= 1 ? { slide } : {};
+  },
   loader: async ({ context, params }): Promise<CoverData | PageData> => {
     const manifest = await loadManifest(context.locale);
     const resolved = resolveSplat(manifest, params._splat ?? "");

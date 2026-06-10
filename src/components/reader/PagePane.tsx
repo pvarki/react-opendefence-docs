@@ -12,9 +12,10 @@ import { useScrollMemory } from "@/components/reader/useScrollMemory";
 function usePageDoc(page: ManifestPage): PageDoc | undefined {
   const [doc, setDoc] = useState<PageDoc>();
 
+  // Panes are keyed by slug, so page.path is stable for this instance's
+  // lifetime — no stale-doc reset needed before the (usually cached) load.
   useEffect(() => {
     let cancelled = false;
-    setDoc(undefined);
     loadPage(page.path)
       .then((loaded) => {
         if (!cancelled) setDoc(loaded);
@@ -44,10 +45,18 @@ interface PagePaneProps {
  * Neighbor panes are mounted for the swipe reveal but inert — their links
  * and headings stay out of the tab order and accessibility tree.
  */
-export function PagePane({ locale, page, position, isCurrent, nextBook }: PagePaneProps) {
+export function PagePane({
+  locale,
+  page,
+  position,
+  isCurrent,
+  nextBook,
+}: PagePaneProps) {
   const { t } = useTranslation();
   const doc = usePageDoc(page);
-  const scrollRef = useScrollMemory(`${locale}:${page.collection}:${page.slug}`);
+  const scrollRef = useScrollMemory(
+    `${locale}:${page.collection}:${page.slug}`,
+  );
   const isLast = position.index === position.total - 1;
 
   return (

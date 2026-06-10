@@ -1,11 +1,22 @@
-import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
+import {
+  useCallback,
+  useEffect,
+  useLayoutEffect,
+  useMemo,
+  useRef,
+  useState,
+} from "react";
 import { useNavigate, useRouter } from "@tanstack/react-router";
 import useEmblaCarousel from "embla-carousel-react";
 import { WheelGesturesPlugin } from "embla-carousel-wheel-gestures";
 import { useTranslation } from "react-i18next";
 import type { LocaleManifest, ManifestPage } from "@shared/content-schema";
 import { loadPage } from "@/lib/content/loader";
-import { readingOrder, resolvePosition, resolveSplat } from "@/lib/content/neighbors";
+import {
+  readingOrder,
+  resolvePosition,
+  resolveSplat,
+} from "@/lib/content/neighbors";
 import { pageSwiperOptions } from "@/components/reader/emblaPageOptions";
 import { PagePane } from "@/components/reader/PagePane";
 import { useReducedMotion } from "@/components/reader/useReducedMotion";
@@ -26,13 +37,21 @@ interface PageSwiperProps {
  * Only prev/current/next panes are mounted, keyed by slug so the visible
  * pane's DOM survives window shifts without remounting.
  */
-export function PageSwiper({ locale, manifest, collection, slug }: PageSwiperProps) {
+export function PageSwiper({
+  locale,
+  manifest,
+  collection,
+  slug,
+}: PageSwiperProps) {
   const { t } = useTranslation();
   const navigate = useNavigate();
   const router = useRouter();
   const reducedMotion = useReducedMotion();
 
-  const order = useMemo(() => readingOrder(manifest, collection), [manifest, collection]);
+  const order = useMemo(
+    () => readingOrder(manifest, collection),
+    [manifest, collection],
+  );
 
   // The slug whose window is currently rendered. Lags the URL slug while an
   // animated page turn (from a link/back navigation) is in flight.
@@ -41,21 +60,26 @@ export function PageSwiper({ locale, manifest, collection, slug }: PageSwiperPro
   const windowIndex = order.findIndex((p) => p.slug === windowSlug);
   const windowPages = useMemo(
     () =>
-      [order[windowIndex - 1], order[windowIndex], order[windowIndex + 1]].filter(
-        (p): p is ManifestPage => p !== undefined,
-      ),
+      [
+        order[windowIndex - 1],
+        order[windowIndex],
+        order[windowIndex + 1],
+      ].filter((p): p is ManifestPage => p !== undefined),
     [order, windowIndex],
   );
   const startIndex = windowIndex === 0 ? 0 : 1;
 
   const navLockRef = useRef(false);
-  const guards = useRef({ navLocked: () => navLockRef.current }).current;
+  // navLockRef is read inside Embla's watchDrag at gesture time, never during
+  // render; the react-hooks/refs rule can't see across the factory boundary.
+  /* eslint-disable react-hooks/refs */
+  const guards = useMemo(() => ({ navLocked: () => navLockRef.current }), []);
 
   const [viewportRef, embla] = useEmblaCarousel(
-    // eslint-disable-next-line react-hooks/exhaustive-deps -- options identity keyed on the window
-    useMemo(() => pageSwiperOptions(startIndex, guards), [windowSlug, startIndex, guards]),
+    useMemo(() => pageSwiperOptions(startIndex, guards), [startIndex, guards]),
     useMemo(() => [WheelGesturesPlugin()], []),
   );
+  /* eslint-enable react-hooks/refs */
 
   const navigateToPage = useCallback(
     (page: ManifestPage) => {
@@ -86,6 +110,9 @@ export function PageSwiper({ locale, manifest, collection, slug }: PageSwiperPro
   }, [embla, windowPages, windowSlug, slug, navigateToPage]);
 
   // URL path: reconcile the rendered window with the slug from the route.
+  // Embla is an external animation engine; this effect is the designed sync
+  // point between it and the URL, so the setState here is intentional.
+  /* eslint-disable react-hooks/set-state-in-effect */
   useLayoutEffect(() => {
     if (slug === windowSlug) {
       navLockRef.current = false;
@@ -111,6 +138,7 @@ export function PageSwiper({ locale, manifest, collection, slug }: PageSwiperPro
       setWindowSlug(slug);
     }
   }, [slug, windowSlug, windowPages, embla, reducedMotion]);
+  /* eslint-enable react-hooks/set-state-in-effect */
 
   // Whenever the window re-renders, snap the carousel to the current pane.
   useLayoutEffect(() => {
@@ -131,7 +159,11 @@ export function PageSwiper({ locale, manifest, collection, slug }: PageSwiperPro
       if (e.key !== "ArrowLeft" && e.key !== "ArrowRight") return;
       if (e.metaKey || e.ctrlKey || e.altKey) return;
       const target = e.target as Element | null;
-      if (target?.closest("input,textarea,select,[contenteditable=true],[data-swipe-scope]")) {
+      if (
+        target?.closest(
+          "input,textarea,select,[contenteditable=true],[data-swipe-scope]",
+        )
+      ) {
         return;
       }
       // Resolve from the router's live location: props lag the URL during
@@ -142,7 +174,11 @@ export function PageSwiper({ locale, manifest, collection, slug }: PageSwiperPro
         : "";
       const resolved = resolveSplat(manifest, decodeURIComponent(splat));
       if (!resolved?.slug) return;
-      const current = resolvePosition(manifest, resolved.collection, resolved.slug);
+      const current = resolvePosition(
+        manifest,
+        resolved.collection,
+        resolved.slug,
+      );
       const dest = e.key === "ArrowLeft" ? current?.prev : current?.next;
       if (dest) {
         e.preventDefault();
@@ -161,9 +197,14 @@ export function PageSwiper({ locale, manifest, collection, slug }: PageSwiperPro
     if (!position || position.index !== position.total - 1) return undefined;
     const current = manifest.collections.find((c) => c.slug === collection);
     const next = manifest.collections.find(
-      (c) => current && c.section === current.section && c.order === current.order + 1,
+      (c) =>
+        current &&
+        c.section === current.section &&
+        c.order === current.order + 1,
     );
-    return next ? { label: next.label, href: `/${locale}/${next.slug}` } : undefined;
+    return next
+      ? { label: next.label, href: `/${locale}/${next.slug}` }
+      : undefined;
   }, [position, manifest, collection, locale]);
 
   if (!position) return null;
@@ -186,7 +227,9 @@ export function PageSwiper({ locale, manifest, collection, slug }: PageSwiperPro
               key={page.slug}
               locale={locale}
               page={page}
-              position={resolvePosition(manifest, collection, page.slug) ?? position}
+              position={
+                resolvePosition(manifest, collection, page.slug) ?? position
+              }
               isCurrent={page.slug === windowSlug}
               nextBook={nextBook}
             />

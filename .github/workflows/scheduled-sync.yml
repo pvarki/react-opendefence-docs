@@ -44,7 +44,6 @@ jobs:
           else
             pnpm sync:outline
           fi
-          pnpm extract:translations
           pnpm fetch:api-specs
           pnpm validate:docs --report sync-report.md || true
       - name: Read validation report

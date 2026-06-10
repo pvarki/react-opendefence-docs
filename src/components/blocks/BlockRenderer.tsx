@@ -3,6 +3,8 @@ import { HtmlBlock } from "@/components/blocks/HtmlBlock";
 import { Slideset } from "@/components/slides/Slideset";
 
 export function BlockRenderer({ blocks }: { blocks: Block[] }) {
+  const firstSlideset = blocks.findIndex((b) => b.type === "slideset");
+
   return (
     <>
       {blocks.map((block, i) => {
@@ -10,7 +12,14 @@ export function BlockRenderer({ blocks }: { blocks: Block[] }) {
           case "html":
             return <HtmlBlock key={i} html={block.html} />;
           case "slideset":
-            return <Slideset key={i} block={block} />;
+            // Only the first slideset binds the ?slide=N deep link.
+            return (
+              <Slideset
+                key={i}
+                block={block}
+                bindSlideParam={i === firstSlideset}
+              />
+            );
           case "image":
             return (
               <figure key={i} className="my-6">

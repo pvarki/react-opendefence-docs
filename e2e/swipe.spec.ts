@@ -17,15 +17,17 @@ async function open(page: Page, url: string) {
 }
 
 /**
- * Horizontal drag through the middle of the viewport (outside the 32px edge
- * dead zones). Embla listens to pointer events, so a mouse drag exercises
- * the same gesture path as touch.
+ * Horizontal drag in the title zone below the header (outside the 32px edge
+ * dead zones, above any slideset deck, which rightly owns its own gestures).
+ * Embla listens to pointer events, so a mouse drag exercises the same
+ * gesture path as touch.
  */
 async function swipe(page: Page, direction: "left" | "right") {
   const viewport = page.viewportSize();
   if (!viewport) throw new Error("no viewport");
-  const y = viewport.height / 2;
-  const from = direction === "left" ? viewport.width * 0.8 : viewport.width * 0.2;
+  const y = 110;
+  const from =
+    direction === "left" ? viewport.width * 0.8 : viewport.width * 0.2;
   const to = direction === "left" ? viewport.width * 0.2 : viewport.width * 0.8;
   await page.mouse.move(from, y);
   await page.mouse.down();
@@ -34,12 +36,17 @@ async function swipe(page: Page, direction: "left" | "right") {
 }
 
 test.describe("book swipe navigation", () => {
-  test("swipe left turns to the next page and pushes history", async ({ page }) => {
+  test("swipe left turns to the next page and pushes history", async ({
+    page,
+  }) => {
     await open(page, FIRST);
     await swipe(page, "left");
     await expect(page).toHaveURL(SECOND);
     await expect(
-      currentPane(page).getByRole("heading", { name: "First login", exact: true }),
+      currentPane(page).getByRole("heading", {
+        name: "First login",
+        exact: true,
+      }),
     ).toBeVisible();
 
     await swipe(page, "left");
@@ -64,7 +71,9 @@ test.describe("book swipe navigation", () => {
     ).toBeVisible();
   });
 
-  test("swipe right on the first page stays put (rubber band)", async ({ page }) => {
+  test("swipe right on the first page stays put (rubber band)", async ({
+    page,
+  }) => {
     await open(page, FIRST);
     await swipe(page, "right");
     await page.waitForTimeout(500);
@@ -99,9 +108,15 @@ test.describe("book swipe navigation", () => {
       .toBeGreaterThan(0);
   });
 
-  // Re-enabled in M4: gesture ownership belongs to the desktop SlideDeck
+  // Desktop-only: gesture ownership belongs to the desktop SlideDeck
   // (data-swipe-scope); the mobile step list intentionally has no scope.
-  test.fixme("drags starting inside a slideset do not turn the page", async ({ page }) => {
+  test("drags starting inside a slideset do not turn the page", async ({
+    page,
+  }, testInfo) => {
+    test.skip(
+      testInfo.project.name === "mobile",
+      "StepList has no swipe scope",
+    );
     await open(page, SECOND); // contains a slideset
     const scope = page.locator("[data-current] [data-swipe-scope]").first();
     await scope.scrollIntoViewIfNeeded();
@@ -113,7 +128,9 @@ test.describe("book swipe navigation", () => {
     await page.mouse.move(box.x + box.width * 0.2, y, { steps: 8 });
     await page.mouse.up();
     await page.waitForTimeout(500);
-    await expect(page).toHaveURL(SECOND);
+    // The deck owns the gesture: it advances a slide (?slide=2 deep link)
+    // while the page itself does not turn.
+    await expect(page).toHaveURL(`${SECOND}?slide=2`);
   });
 
   test("edge gestures are ignored (dead zone)", async ({ page }) => {
@@ -129,7 +146,9 @@ test.describe("book swipe navigation", () => {
     await expect(page).toHaveURL(SECOND);
   });
 
-  test("deep link mid-book renders and can swipe both ways", async ({ page }) => {
+  test("deep link mid-book renders and can swipe both ways", async ({
+    page,
+  }) => {
     await open(page, SECOND);
     await swipe(page, "left");
     await expect(page).toHaveURL(THIRD);

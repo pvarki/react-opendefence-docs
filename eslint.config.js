@@ -26,6 +26,19 @@ export default tseslint.config(
       ecmaVersion: 2023,
       globals: { ...globals.browser, ...globals.node },
     },
+    rules: {
+      "@typescript-eslint/no-unused-vars": [
+        "error",
+        { argsIgnorePattern: "^_", varsIgnorePattern: "^_" },
+      ],
+    },
+  },
+  {
+    // Ambient declaration shims legitimately use `import x = require(...)`.
+    files: ["**/*.d.ts"],
+    rules: {
+      "@typescript-eslint/no-require-imports": "off",
+    },
   },
   {
     // TanStack Router file routes export `Route` (and loader data types)
