@@ -3,6 +3,7 @@ import { Toaster } from "@/components/ui/sonner";
 import { Header } from "@/components/shell/Header";
 import { TabBar } from "@/components/shell/TabBar";
 import { NotFound } from "@/components/shell/NotFound";
+import { UpdatePrompt } from "@/components/shell/UpdatePrompt";
 
 export const Route = createRootRoute({
   component: RootLayout,
@@ -18,6 +19,7 @@ function RootLayout() {
       </main>
       <TabBar />
       <Toaster />
+      <UpdatePrompt />
     </div>
   );
 }

@@ -70,6 +70,13 @@ export default defineConfig({
       "@config": path.resolve(__dirname, "config"),
     },
   },
+  build: {
+    rollupOptions: {
+      // The pagefind bundle is generated into public/ at build time and
+      // loaded at runtime — it is not part of the module graph.
+      external: [/^\/pagefind\//],
+    },
+  },
   test: {
     environment: "happy-dom",
     include: [

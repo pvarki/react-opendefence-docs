@@ -17,6 +17,8 @@ function LocaleLayout() {
 
   useEffect(() => {
     if (i18n.language !== locale) void i18n.changeLanguage(locale);
+    // Keeps a11y + pagefind's per-language index selection correct.
+    document.documentElement.lang = locale;
   }, [locale]);
 
   return <Outlet />;

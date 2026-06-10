@@ -69,7 +69,7 @@ export function PagePane({
         ref={scrollRef}
         data-page-scroll
         tabIndex={-1}
-        className="h-[calc(100dvh-var(--header-h)-var(--tabbar-h))] overflow-y-auto overscroll-y-contain px-4 outline-none md:px-8"
+        className="h-full overflow-y-auto overscroll-y-contain px-4 outline-none md:px-8"
       >
         <article className="mx-auto max-w-3xl py-8">
           <h1 className="mb-6 text-3xl font-bold">{page.title}</h1>

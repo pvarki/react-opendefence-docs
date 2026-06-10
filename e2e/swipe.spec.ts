@@ -169,3 +169,70 @@ test.describe("book swipe navigation", () => {
       .toBeGreaterThan(w1);
   });
 });
+
+test.describe("locale fallback", () => {
+  test("untranslated page shows English content with a banner", async ({
+    page,
+  }) => {
+    await page.goto("/fi/deploy-app/welcome-fixture01");
+    await expect(
+      page
+        .locator("[data-current]")
+        .getByRole("heading", { name: "Welcome to Deploy App" }),
+    ).toBeVisible();
+    await expect(
+      page.getByText("Tätä sivua ei ole vielä suomennettu", { exact: false }),
+    ).toBeVisible();
+  });
+
+  test("contents drawer opens the book TOC on mobile", async ({
+    page,
+  }, testInfo) => {
+    test.skip(testInfo.project.name !== "mobile", "mobile-only affordance");
+    await page.goto("/en/deploy-app/welcome-fixture01");
+    await page.getByRole("button", { name: "Contents" }).click();
+    await expect(
+      page.getByRole("link", { name: "Welcome to Deploy App" }),
+    ).toBeVisible();
+    // Groups start collapsed unless they contain the current page.
+    await page.getByRole("button", { name: "Administration" }).click();
+    await page.getByRole("link", { name: "Adding users" }).click();
+    await expect(page).toHaveURL(THIRD);
+  });
+
+  test("desktop sidebar shows the book tree with active page", async ({
+    page,
+  }, testInfo) => {
+    test.skip(testInfo.project.name !== "desktop", "desktop-only affordance");
+    await page.goto("/en/deploy-app/first-login-fixture02");
+    const sidebar = page.locator("aside");
+    await expect(
+      sidebar.getByRole("link", { name: "First login" }),
+    ).toBeVisible();
+  });
+});
+
+test.describe("search", () => {
+  test("full-text search finds pages by body content", async ({
+    page,
+  }, testInfo) => {
+    test.skip(
+      testInfo.project.name !== "mobile",
+      "search tab is the mobile entry",
+    );
+    await page.goto("/en/search");
+    await page.getByRole("searchbox").fill("certificate");
+    await expect(page.getByRole("link", { name: /First login/ })).toBeVisible();
+  });
+
+  test("command palette searches and navigates on desktop", async ({
+    page,
+  }, testInfo) => {
+    test.skip(testInfo.project.name !== "desktop", "palette is desktop-only");
+    await page.goto("/en");
+    await page.keyboard.press("ControlOrMeta+k");
+    await page.getByPlaceholder("Search docs…").fill("invite");
+    await page.getByRole("option", { name: /Adding users/ }).click();
+    await expect(page).toHaveURL("/en/deploy-app/adding-users-fixture03");
+  });
+});

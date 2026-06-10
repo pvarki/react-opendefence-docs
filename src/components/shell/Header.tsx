@@ -2,6 +2,7 @@ import { Link, useParams } from "@tanstack/react-router";
 import { useTranslation } from "react-i18next";
 import { DEFAULT_LOCALE } from "@shared/content-schema";
 import { LocaleSwitcher } from "@/components/shell/LocaleSwitcher";
+import { CommandMenu } from "@/components/search/CommandMenu";
 
 const NAV_ITEMS = [
   { splat: "deploy-app", key: "nav.deployApp" },
@@ -43,6 +44,7 @@ export function Header() {
       </div>
 
       <div className="flex shrink-0 items-center gap-2">
+        <CommandMenu />
         <LocaleSwitcher />
       </div>
     </header>
