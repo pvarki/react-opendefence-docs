@@ -23,7 +23,7 @@
   "blocks": [
     {
       "type": "html",
-      "html": "<p>\\</p>\n<h1 id=\"atak---point-dropper---basic-use\"><a href=\"#atak---point-dropper---basic-use\">ATAK - Point Dropper - Basic use</a></h1>\n<h2 id=\"atak-connected-to-takserver---point-dropper---markers\"><a href=\"#atak-connected-to-takserver---point-dropper---markers\">ATAK connected to takserver - Point Dropper - Markers</a></h2>"
+      "html": "<h1 id=\"atak---point-dropper---basic-use\"><a href=\"#atak---point-dropper---basic-use\">ATAK - Point Dropper - Basic use</a></h1>\n<h2 id=\"atak-connected-to-takserver---point-dropper---markers\"><a href=\"#atak-connected-to-takserver---point-dropper---markers\">ATAK connected to takserver - Point Dropper - Markers</a></h2>"
     },
     {
       "type": "slideset",

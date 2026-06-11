@@ -23,7 +23,7 @@
   "blocks": [
     {
       "type": "html",
-      "html": "<p>\\</p>\n<h2 id=\"what-is-tak-and-what-does-atak-allow-you-to-accomplish\"><a href=\"#what-is-tak-and-what-does-atak-allow-you-to-accomplish\">What is TAK and what does ATAK allow you to accomplish</a></h2>"
+      "html": "<h2 id=\"what-is-tak-and-what-does-atak-allow-you-to-accomplish\"><a href=\"#what-is-tak-and-what-does-atak-allow-you-to-accomplish\">What is TAK and what does ATAK allow you to accomplish</a></h2>"
     },
     {
       "type": "slideset",

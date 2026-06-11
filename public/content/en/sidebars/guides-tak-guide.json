@@ -11,27 +11,10 @@
     },
     {
       "type": "group",
-      "id": "tak-clients-IGYQEK6iZl",
-      "label": "TAK Clients",
+      "id": "start-FxbN2wcFUs",
+      "label": "ATAK · Start",
+      "platform": "android",
       "children": [
-        {
-          "type": "doc",
-          "id": "tak-clients-IGYQEK6iZl",
-          "label": "TAK Clients",
-          "slug": "tak-clients-IGYQEK6iZl"
-        },
-        {
-          "type": "doc",
-          "id": "atak-sGxUIXpQlU",
-          "label": "ATAK",
-          "slug": "atak-sGxUIXpQlU"
-        },
-        {
-          "type": "doc",
-          "id": "start-FxbN2wcFUs",
-          "label": "Start",
-          "slug": "start-FxbN2wcFUs"
-        },
         {
           "type": "doc",
           "id": "what-is-tak-hZw2wUmL7g",
@@ -55,13 +38,15 @@
           "id": "load-atak-plugins-xBeVkYsFjI",
           "label": "Load ATAK Plugins",
           "slug": "load-atak-plugins-xBeVkYsFjI"
-        },
-        {
-          "type": "doc",
-          "id": "basic-features-pDRdN25Lk6",
-          "label": "Basic Features",
-          "slug": "basic-features-pDRdN25Lk6"
-        },
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "basic-features-pDRdN25Lk6",
+      "label": "ATAK · Basic Features",
+      "platform": "android",
+      "children": [
         {
           "type": "doc",
           "id": "basic-view-tools-and-toolbar-juXbYsGMih",
@@ -103,13 +88,15 @@
           "id": "clear-content-lzrtCD0MdO",
           "label": "Clear Content",
           "slug": "clear-content-lzrtCD0MdO"
-        },
-        {
-          "type": "doc",
-          "id": "advanced-features-w8JvOrLVwe",
-          "label": "Advanced Features",
-          "slug": "advanced-features-w8JvOrLVwe"
-        },
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "advanced-features-w8JvOrLVwe",
+      "label": "ATAK · Advanced Features",
+      "platform": "android",
+      "children": [
         {
           "type": "doc",
           "id": "downloading-maps-for-offline-use-AhUMNQ8mmS",
@@ -157,24 +144,20 @@
           "id": "geofences-wgaLkSEvef",
           "label": "Geofences",
           "slug": "geofences-wgaLkSEvef"
-        },
-        {
-          "type": "doc",
-          "id": "usage-by-role-2F9bOBgUmG",
-          "label": "Usage by Role",
-          "slug": "usage-by-role-2F9bOBgUmG"
-        },
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "usage-by-role-2F9bOBgUmG",
+      "label": "ATAK · Usage by Role",
+      "platform": "android",
+      "children": [
         {
           "type": "doc",
           "id": "overview-CVNzKhRcKY",
           "label": "Overview",
           "slug": "overview-CVNzKhRcKY"
-        },
-        {
-          "type": "doc",
-          "id": "fighter-Jaxg9FOHAs",
-          "label": "Fighter",
-          "slug": "fighter-Jaxg9FOHAs"
         },
         {
           "type": "doc",
@@ -190,46 +173,46 @@
         },
         {
           "type": "doc",
-          "id": "command-post-jEe9wSs29A",
-          "label": "Command Post",
-          "slug": "command-post-jEe9wSs29A"
-        },
-        {
-          "type": "doc",
           "id": "recon-feed-management-y1O0x1g2sf",
           "label": "RECON Feed Management",
           "slug": "recon-feed-management-y1O0x1g2sf"
-        },
-        {
-          "type": "doc",
-          "id": "supported-plugins-XdDLDnS5CE",
-          "label": "Supported Plugins",
-          "slug": "supported-plugins-XdDLDnS5CE"
-        },
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "supported-plugins-XdDLDnS5CE",
+      "label": "ATAK · Supported Plugins",
+      "platform": "android",
+      "children": [
         {
           "type": "doc",
           "id": "uastool-HDZFE1QhVT",
           "label": "Uastool",
           "slug": "uastool-HDZFE1QhVT"
-        },
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "atak-sGxUIXpQlU",
+      "label": "ATAK",
+      "platform": "android",
+      "children": [
         {
           "type": "doc",
           "id": "troubleshooting-IC3Nd5qZHr",
           "label": "Troubleshooting",
           "slug": "troubleshooting-IC3Nd5qZHr"
-        },
-        {
-          "type": "doc",
-          "id": "wintak-w8mKUfaRBP",
-          "label": "WinTAK",
-          "slug": "wintak-w8mKUfaRBP"
-        },
-        {
-          "type": "doc",
-          "id": "start-gF8MDfsdW9",
-          "label": "Start",
-          "slug": "start-gF8MDfsdW9"
-        },
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "start-gF8MDfsdW9",
+      "label": "Start",
+      "platform": "windows",
+      "children": [
         {
           "type": "doc",
           "id": "start-from-download-GstcQifMVj",
@@ -241,13 +224,15 @@
           "id": "wintak-already-installed-kCXH9p8keg",
           "label": "WinTAK Already Installed",
           "slug": "wintak-already-installed-kCXH9p8keg"
-        },
-        {
-          "type": "doc",
-          "id": "basic-features-pmjQ96x5bI",
-          "label": "Basic Features",
-          "slug": "basic-features-pmjQ96x5bI"
-        },
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "basic-features-pmjQ96x5bI",
+      "label": "Basic Features",
+      "platform": "windows",
+      "children": [
         {
           "type": "doc",
           "id": "clear-content-gLcPrq5b5J",
@@ -283,13 +268,15 @@
           "id": "use-geochat-G4fqV0Y4fg",
           "label": "Use GeoChat",
           "slug": "use-geochat-G4fqV0Y4fg"
-        },
-        {
-          "type": "doc",
-          "id": "advanced-features-dUEpnxlGD0",
-          "label": "Advanced Features",
-          "slug": "advanced-features-dUEpnxlGD0"
-        },
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "advanced-features-dUEpnxlGD0",
+      "label": "Advanced Features",
+      "platform": "windows",
+      "children": [
         {
           "type": "doc",
           "id": "create-feeds-0jPr4Cah1Z",
@@ -313,13 +300,15 @@
           "id": "get-alerts-with-geofences-Y1Bgr7UInI",
           "label": "Get alerts with Geofences",
           "slug": "get-alerts-with-geofences-Y1Bgr7UInI"
-        },
-        {
-          "type": "doc",
-          "id": "usage-by-role-IWyDTtxCJS",
-          "label": "Usage by Role",
-          "slug": "usage-by-role-IWyDTtxCJS"
-        },
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "usage-by-role-IWyDTtxCJS",
+      "label": "Usage by Role",
+      "platform": "windows",
+      "children": [
         {
           "type": "doc",
           "id": "overview-G0keHC8NbD",
@@ -334,46 +323,46 @@
         },
         {
           "type": "doc",
-          "id": "command-post-Jysu3u7ga3",
-          "label": "Command Post",
-          "slug": "command-post-Jysu3u7ga3"
-        },
-        {
-          "type": "doc",
           "id": "edit-recon-feed-B7h9QJzZVd",
           "label": "Edit RECON feed",
           "slug": "edit-recon-feed-B7h9QJzZVd"
-        },
-        {
-          "type": "doc",
-          "id": "supported-plugins-zl2XZB0u1p",
-          "label": "Supported Plugins",
-          "slug": "supported-plugins-zl2XZB0u1p"
-        },
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "supported-plugins-zl2XZB0u1p",
+      "label": "Supported Plugins",
+      "platform": "windows",
+      "children": [
         {
           "type": "doc",
           "id": "tak-replay-Sy9dQFNBc1",
           "label": "TAK Replay",
           "slug": "tak-replay-Sy9dQFNBc1"
-        },
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "wintak-w8mKUfaRBP",
+      "label": "WinTAK",
+      "platform": "windows",
+      "children": [
         {
           "type": "doc",
           "id": "troubleshooting-T4SvHjOYgd",
           "label": "Troubleshooting",
           "slug": "troubleshooting-T4SvHjOYgd"
-        },
-        {
-          "type": "doc",
-          "id": "itak-bwDYWvqdnY",
-          "label": "iTAK",
-          "slug": "itak-bwDYWvqdnY"
-        },
-        {
-          "type": "doc",
-          "id": "start-sLRG2uavSv",
-          "label": "Start",
-          "slug": "start-sLRG2uavSv"
-        },
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "start-sLRG2uavSv",
+      "label": "iTAK · Start",
+      "platform": "ios",
+      "children": [
         {
           "type": "doc",
           "id": "start-from-download-vQGTWj6wET",
@@ -385,13 +374,15 @@
           "id": "itak-already-installed-DeEex1hIH2",
           "label": "iTAK Already Installed",
           "slug": "itak-already-installed-DeEex1hIH2"
-        },
-        {
-          "type": "doc",
-          "id": "basic-features-StHwTheTn5",
-          "label": "Basic Features",
-          "slug": "basic-features-StHwTheTn5"
-        },
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "basic-features-StHwTheTn5",
+      "label": "iTAK · Basic Features",
+      "platform": "ios",
+      "children": [
         {
           "type": "doc",
           "id": "blue-force-tracking-NOzCSj3j64",
@@ -415,13 +406,15 @@
           "id": "use-geochat-r99lJsOLnK",
           "label": "Use GeoChat",
           "slug": "use-geochat-r99lJsOLnK"
-        },
-        {
-          "type": "doc",
-          "id": "usage-by-role-LlQdNcNgkg",
-          "label": "Usage by Role",
-          "slug": "usage-by-role-LlQdNcNgkg"
-        },
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "usage-by-role-LlQdNcNgkg",
+      "label": "iTAK · Usage by Role",
+      "platform": "ios",
+      "children": [
         {
           "type": "doc",
           "id": "overview-bPeWx0MdZQ",
@@ -439,25 +432,29 @@
           "id": "command-post-YxjX9bA9iG",
           "label": "Command Post",
           "slug": "command-post-YxjX9bA9iG"
-        },
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "itak-bwDYWvqdnY",
+      "label": "iTAK",
+      "platform": "ios",
+      "children": [
         {
           "type": "doc",
           "id": "troubleshooting-Pj64UaHAJW",
           "label": "Troubleshooting",
           "slug": "troubleshooting-Pj64UaHAJW"
-        },
-        {
-          "type": "doc",
-          "id": "tak-tracker-android-JCZw3YH2nW",
-          "label": "TAK Tracker - Android",
-          "slug": "tak-tracker-android-JCZw3YH2nW"
-        },
-        {
-          "type": "doc",
-          "id": "start-LlfSpMeCW8",
-          "label": "Start",
-          "slug": "start-LlfSpMeCW8"
-        },
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "start-LlfSpMeCW8",
+      "label": "TAK Tracker - Android · Start",
+      "platform": "android",
+      "children": [
         {
           "type": "doc",
           "id": "start-from-download-x9ve2aL7oC",
@@ -475,13 +472,15 @@
           "id": "importing-server-connection-URmd6F0UU5",
           "label": "Importing Server Connection",
           "slug": "importing-server-connection-URmd6F0UU5"
-        },
-        {
-          "type": "doc",
-          "id": "usage-by-role-KxtjmbM9B1",
-          "label": "Usage by Role",
-          "slug": "usage-by-role-KxtjmbM9B1"
-        },
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "usage-by-role-KxtjmbM9B1",
+      "label": "TAK Tracker - Android · Usage by Role",
+      "platform": "android",
+      "children": [
         {
           "type": "doc",
           "id": "overview-4sA7lVWVtw",
@@ -499,25 +498,29 @@
           "id": "command-post-t2fdgSrk3R",
           "label": "Command Post",
           "slug": "command-post-t2fdgSrk3R"
-        },
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "tak-tracker-android-JCZw3YH2nW",
+      "label": "TAK Tracker - Android",
+      "platform": "android",
+      "children": [
         {
           "type": "doc",
           "id": "troubleshooting-E1xmJrS5OS",
           "label": "Troubleshooting",
           "slug": "troubleshooting-E1xmJrS5OS"
-        },
-        {
-          "type": "doc",
-          "id": "tak-tracker-apple-PmHvleNK0F",
-          "label": "TAK Tracker - Apple",
-          "slug": "tak-tracker-apple-PmHvleNK0F"
-        },
-        {
-          "type": "doc",
-          "id": "start-oZzAX4X7Er",
-          "label": "Start",
-          "slug": "start-oZzAX4X7Er"
-        },
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "start-oZzAX4X7Er",
+      "label": "TAK Tracker - Apple · Start",
+      "platform": "ios",
+      "children": [
         {
           "type": "doc",
           "id": "start-from-download-5tAQBOfF65",
@@ -529,25 +532,29 @@
           "id": "tak-tracker-already-installed-DmWqDN5jLp",
           "label": "TAK Tracker Already Installed",
           "slug": "tak-tracker-already-installed-DmWqDN5jLp"
-        },
-        {
-          "type": "doc",
-          "id": "tak-features-2eQ2Stir9U",
-          "label": "TAK Features",
-          "slug": "tak-features-2eQ2Stir9U"
-        },
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "tak-features-2eQ2Stir9U",
+      "label": "TAK Tracker - Apple · TAK Features",
+      "platform": "ios",
+      "children": [
         {
           "type": "doc",
           "id": "send-alerts-jz5xQsdpbH",
           "label": "Send alerts",
           "slug": "send-alerts-jz5xQsdpbH"
-        },
-        {
-          "type": "doc",
-          "id": "usage-by-role-FfcECbKYmK",
-          "label": "Usage by Role",
-          "slug": "usage-by-role-FfcECbKYmK"
-        },
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "usage-by-role-FfcECbKYmK",
+      "label": "TAK Tracker - Apple · Usage by Role",
+      "platform": "ios",
+      "children": [
         {
           "type": "doc",
           "id": "overview-vqWEyyCxy8",
@@ -565,7 +572,15 @@
           "id": "command-post-aX04WiqaZf",
           "label": "Command Post",
           "slug": "command-post-aX04WiqaZf"
-        },
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "tak-tracker-apple-PmHvleNK0F",
+      "label": "TAK Tracker - Apple",
+      "platform": "ios",
+      "children": [
         {
           "type": "doc",
           "id": "troubleshooting-4heIv7ZV7m",

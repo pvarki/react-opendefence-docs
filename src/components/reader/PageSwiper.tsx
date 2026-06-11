@@ -10,7 +10,11 @@ import { useNavigate, useRouter } from "@tanstack/react-router";
 import useEmblaCarousel from "embla-carousel-react";
 import { WheelGesturesPlugin } from "embla-carousel-wheel-gestures";
 import { useTranslation } from "react-i18next";
-import type { LocaleManifest, ManifestPage } from "@shared/content-schema";
+import type {
+  LocaleManifest,
+  ManifestPage,
+  Platform,
+} from "@shared/content-schema";
 import { loadPage } from "@/lib/content/loader";
 import {
   readingOrder,
@@ -26,6 +30,8 @@ interface PageSwiperProps {
   manifest: LocaleManifest;
   collection: string;
   slug: string;
+  /** Active platform: the swipe order covers this platform start to finish. */
+  platform?: Platform;
 }
 
 /**
@@ -42,6 +48,7 @@ export function PageSwiper({
   manifest,
   collection,
   slug,
+  platform,
 }: PageSwiperProps) {
   const { t } = useTranslation();
   const navigate = useNavigate();
@@ -49,8 +56,8 @@ export function PageSwiper({
   const reducedMotion = useReducedMotion();
 
   const order = useMemo(
-    () => readingOrder(manifest, collection),
-    [manifest, collection],
+    () => readingOrder(manifest, collection, platform),
+    [manifest, collection, platform],
   );
 
   // The slug whose window is currently rendered. Lags the URL slug while an
@@ -178,6 +185,7 @@ export function PageSwiper({
         manifest,
         resolved.collection,
         resolved.slug,
+        platform,
       );
       const dest = e.key === "ArrowLeft" ? current?.prev : current?.next;
       if (dest) {
@@ -190,9 +198,9 @@ export function PageSwiper({
     };
     window.addEventListener("keydown", onKeyDown);
     return () => window.removeEventListener("keydown", onKeyDown);
-  }, [manifest, router, navigate, locale]);
+  }, [manifest, router, navigate, locale, platform]);
 
-  const position = resolvePosition(manifest, collection, windowSlug);
+  const position = resolvePosition(manifest, collection, windowSlug, platform);
   const nextBook = useMemo(() => {
     if (!position || position.index !== position.total - 1) return undefined;
     const current = manifest.collections.find((c) => c.slug === collection);
@@ -228,7 +236,8 @@ export function PageSwiper({
               locale={locale}
               page={page}
               position={
-                resolvePosition(manifest, collection, page.slug) ?? position
+                resolvePosition(manifest, collection, page.slug, platform) ??
+                position
               }
               isCurrent={page.slug === windowSlug}
               nextBook={nextBook}

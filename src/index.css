@@ -84,7 +84,7 @@
   --radius: 0.75rem;
 
   /* Layout contract shared by the app shell and PageSwiper panes */
-  --header-h: 4rem;
+  --header-h: 3rem;
   --tabbar-h: 0px;
 }
 

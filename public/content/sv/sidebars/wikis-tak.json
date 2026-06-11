@@ -17,27 +17,10 @@
     },
     {
       "type": "group",
-      "id": "tak-produkter-for-anvandare-Vbfsq3vhyM",
-      "label": "TAK-produkter för Användare",
+      "id": "verktyg-och-tillagg-sEB6ccwyRm",
+      "label": "Verktyg och tillägg",
+      "platform": "android",
       "children": [
-        {
-          "type": "doc",
-          "id": "tak-produkter-for-anvandare-Vbfsq3vhyM",
-          "label": "TAK-produkter för Användare",
-          "slug": "tak-produkter-for-anvandare-Vbfsq3vhyM"
-        },
-        {
-          "type": "doc",
-          "id": "atak-android-tak-WLqt5LNmVx",
-          "label": "ATAK - Android TAK",
-          "slug": "atak-android-tak-WLqt5LNmVx"
-        },
-        {
-          "type": "doc",
-          "id": "verktyg-och-tillagg-sEB6ccwyRm",
-          "label": "Verktyg och tillägg",
-          "slug": "verktyg-och-tillagg-sEB6ccwyRm"
-        },
         {
           "type": "doc",
           "id": "bloodhound-verktyget-8bsZHidzuJ",
@@ -79,49 +62,53 @@
           "id": "vns-tillagget-Vx7rEZ4RGp",
           "label": "VNS-tillägget",
           "slug": "vns-tillagget-Vx7rEZ4RGp"
-        },
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "atak-android-tak-WLqt5LNmVx",
+      "label": "ATAK - Android TAK",
+      "platform": "android",
+      "children": [
         {
           "type": "doc",
           "id": "tillaggslista-kvscGDLbSf",
           "label": "Tilläggslista",
           "slug": "tillaggslista-kvscGDLbSf"
-        },
-        {
-          "type": "doc",
-          "id": "itak-apple-tak-nN8YzIEfFX",
-          "label": "iTAK - Apple TAK",
-          "slug": "itak-apple-tak-nN8YzIEfFX"
-        },
-        {
-          "type": "doc",
-          "id": "tak-aware-apple-tak-hKeKsxr1ZQ",
-          "label": "TAK Aware - Apple TAK",
-          "slug": "tak-aware-apple-tak-hKeKsxr1ZQ"
-        },
-        {
-          "type": "doc",
-          "id": "tak-tracker-latt-tak-android-och-apple-Ldi7s2rHHY",
-          "label": "TAK Tracker – Lätt TAK — Android och Apple",
-          "slug": "tak-tracker-latt-tak-android-och-apple-Ldi7s2rHHY"
-        },
-        {
-          "type": "doc",
-          "id": "vr-tak-virtuell-verklighet-for-tak-yNkWIh46xk",
-          "label": "VR-TAK – Virtuell verklighet för TAK",
-          "slug": "vr-tak-virtuell-verklighet-for-tak-yNkWIh46xk"
-        },
-        {
-          "type": "doc",
-          "id": "wintak-windows-tak-AhFOs4e5q4",
-          "label": "WinTAK - Windows TAK",
-          "slug": "wintak-windows-tak-AhFOs4e5q4"
-        },
-        {
-          "type": "doc",
-          "id": "verktyg-och-tillagg-vX0F7rltb0",
-          "label": "Verktyg och tillägg",
-          "slug": "verktyg-och-tillagg-vX0F7rltb0"
-        },
+        }
+      ]
+    },
+    {
+      "type": "doc",
+      "id": "itak-apple-tak-nN8YzIEfFX",
+      "label": "iTAK - Apple TAK",
+      "slug": "itak-apple-tak-nN8YzIEfFX"
+    },
+    {
+      "type": "doc",
+      "id": "tak-aware-apple-tak-hKeKsxr1ZQ",
+      "label": "TAK Aware - Apple TAK",
+      "slug": "tak-aware-apple-tak-hKeKsxr1ZQ"
+    },
+    {
+      "type": "doc",
+      "id": "tak-tracker-latt-tak-android-och-apple-Ldi7s2rHHY",
+      "label": "TAK Tracker – Lätt TAK — Android och Apple",
+      "slug": "tak-tracker-latt-tak-android-och-apple-Ldi7s2rHHY"
+    },
+    {
+      "type": "doc",
+      "id": "vr-tak-virtuell-verklighet-for-tak-yNkWIh46xk",
+      "label": "VR-TAK – Virtuell verklighet för TAK",
+      "slug": "vr-tak-virtuell-verklighet-for-tak-yNkWIh46xk"
+    },
+    {
+      "type": "group",
+      "id": "verktyg-och-tillagg-vX0F7rltb0",
+      "label": "Verktyg och tillägg",
+      "platform": "windows",
+      "children": [
         {
           "type": "doc",
           "id": "contacts-geochat-verktyget-xVYdNw84pI",
@@ -145,32 +132,34 @@
           "id": "vns-tillagget-YcOdXOjiCJ",
           "label": "VNS -tillägget",
           "slug": "vns-tillagget-YcOdXOjiCJ"
-        },
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "wintak-windows-tak-AhFOs4e5q4",
+      "label": "WinTAK - Windows TAK",
+      "platform": "windows",
+      "children": [
         {
           "type": "doc",
           "id": "tillaggslista-GbaWi7AwS9",
           "label": "Tilläggslista",
           "slug": "tillaggslista-GbaWi7AwS9"
-        },
-        {
-          "type": "doc",
-          "id": "tpc-tak-product-center-ZRqq8fI3RX",
-          "label": "TPC - TAK Product Center",
-          "slug": "tpc-tak-product-center-ZRqq8fI3RX"
         }
       ]
+    },
+    {
+      "type": "doc",
+      "id": "tpc-tak-product-center-ZRqq8fI3RX",
+      "label": "TPC - TAK Product Center",
+      "slug": "tpc-tak-product-center-ZRqq8fI3RX"
     },
     {
       "type": "group",
       "id": "tak-verktyg-for-produkter-vIyQBfINba",
       "label": "TAK-verktyg för Produkter",
       "children": [
-        {
-          "type": "doc",
-          "id": "tak-verktyg-for-produkter-vIyQBfINba",
-          "label": "TAK-verktyg för Produkter",
-          "slug": "tak-verktyg-for-produkter-vIyQBfINba"
-        },
         {
           "type": "doc",
           "id": "bloodhound-verktyg-QY0hBa9P21",
@@ -222,18 +211,6 @@
       "children": [
         {
           "type": "doc",
-          "id": "tak-verktyg-for-huvudadministratorer-Ng0EPuM5Rr",
-          "label": "TAK-verktyg för Huvudadministratörer",
-          "slug": "tak-verktyg-for-huvudadministratorer-Ng0EPuM5Rr"
-        },
-        {
-          "type": "doc",
-          "id": "takserver-oegV6haZ9Q",
-          "label": "Takserver",
-          "slug": "takserver-oegV6haZ9Q"
-        },
-        {
-          "type": "doc",
           "id": "grundlaggande-anvandargranssnitt-h2BJMcZND4",
           "label": "Grundläggande användargränssnitt",
           "slug": "grundlaggande-anvandargranssnitt-h2BJMcZND4"
@@ -258,12 +235,6 @@
         },
         {
           "type": "doc",
-          "id": "avancerade-funktioner-1R6BEkfIUe",
-          "label": "Avancerade Funktioner",
-          "slug": "avancerade-funktioner-1R6BEkfIUe"
-        },
-        {
-          "type": "doc",
           "id": "mtx-stromning-W2p79UCLJ5",
           "label": "MTX – Strömning",
           "slug": "mtx-stromning-W2p79UCLJ5"
@@ -283,18 +254,6 @@
       "children": [
         {
           "type": "doc",
-          "id": "anvandningsmodeller-N5mf2UtRlc",
-          "label": "Användningsmodeller",
-          "slug": "anvandningsmodeller-N5mf2UtRlc"
-        },
-        {
-          "type": "doc",
-          "id": "pvarki-standarden-u39zwMiK2h",
-          "label": "PVARKI-standarden",
-          "slug": "pvarki-standarden-u39zwMiK2h"
-        },
-        {
-          "type": "doc",
           "id": "takserver-recon-flodet-da0vEyjl28",
           "label": "Takserver RECON-flödet",
           "slug": "takserver-recon-flodet-da0vEyjl28"
@@ -304,12 +263,6 @@
           "id": "takserver-grupper-zHjvp8incO",
           "label": "Takserver-grupper",
           "slug": "takserver-grupper-zHjvp8incO"
-        },
-        {
-          "type": "doc",
-          "id": "anvandningsfall-qMdv2JrX5d",
-          "label": "Användningsfall",
-          "slug": "anvandningsfall-qMdv2JrX5d"
         },
         {
           "type": "doc",

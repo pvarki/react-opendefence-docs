@@ -1,14 +1,20 @@
 {
   "schemaVersion": 1,
   "locale": "sv",
-  "generatedAt": "2026-06-10T20:50:48.593Z",
+  "generatedAt": "2026-06-11T06:36:39.803Z",
   "collections": [
     {
       "slug": "deploy-app",
       "label": "Deploy App",
       "description": "Main application documentation",
       "section": "deploy-app",
-      "order": 0
+      "order": 0,
+      "platforms": [
+        {
+          "key": "android",
+          "label": "Android"
+        }
+      ]
     },
     {
       "slug": "guides/mtx-guide",
@@ -36,7 +42,17 @@
       "label": "TAK Wiki",
       "description": "TAK technical reference",
       "section": "wikis",
-      "order": 4
+      "order": 4,
+      "platforms": [
+        {
+          "key": "android",
+          "label": "ATAK - Android TAK"
+        },
+        {
+          "key": "windows",
+          "label": "WinTAK - Windows TAK"
+        }
+      ]
     },
     {
       "slug": "wikis/mtx",
@@ -55,31 +71,6 @@
   ],
   "pages": [
     {
-      "id": "7778ee93-0a6a-4a0d-b4c0-0e611f9d5d24",
-      "slug": "android-yFEMlNyGOI",
-      "collection": "deploy-app",
-      "title": "Android",
-      "breadcrumb": [
-        "Android"
-      ],
-      "path": "/content/sv/pages/deploy-app/android-yFEMlNyGOI.json",
-      "updatedAt": "2026-02-17T08:32:16.139Z",
-      "order": 0
-    },
-    {
-      "id": "572c908e-d39f-4c81-bbcf-32fef7371d67",
-      "slug": "anvandarguide-q7fgVGQ10J",
-      "collection": "deploy-app",
-      "title": "Användarguide",
-      "breadcrumb": [
-        "Android",
-        "Användarguide"
-      ],
-      "path": "/content/sv/pages/deploy-app/anvandarguide-q7fgVGQ10J.json",
-      "updatedAt": "2026-02-17T08:33:54.974Z",
-      "order": 1
-    },
-    {
       "id": "847657a8-f0ca-40d5-98d5-a5f4a0383147",
       "slug": "ga-med-i-en-deploy-app-Weat7nbJuF",
       "collection": "deploy-app",
@@ -91,7 +82,10 @@
       ],
       "path": "/content/sv/pages/deploy-app/ga-med-i-en-deploy-app-Weat7nbJuF.json",
       "updatedAt": "2026-02-18T05:50:24.087Z",
-      "order": 2
+      "order": 0,
+      "platform": "android",
+      "chapterId": "anvandarguide-q7fgVGQ10J",
+      "chapterLabel": "Användarguide"
     },
     {
       "id": "58999c82-57bb-4618-ae1b-e9fe90a0db41",
@@ -105,7 +99,10 @@
       ],
       "path": "/content/sv/pages/deploy-app/anvanda-applikationer-0DvdFxbzvH.json",
       "updatedAt": "2026-02-25T07:30:14.946Z",
-      "order": 3
+      "order": 1,
+      "platform": "android",
+      "chapterId": "anvandarguide-q7fgVGQ10J",
+      "chapterLabel": "Användarguide"
     },
     {
       "id": "836269ca-4fda-4830-a46c-c782f9a1b134",
@@ -119,20 +116,10 @@
       ],
       "path": "/content/sv/pages/deploy-app/granssnitt-vx5s9QUx7Y.json",
       "updatedAt": "2026-02-25T07:31:32.766Z",
-      "order": 4
-    },
-    {
-      "id": "e8737299-54cd-46db-9573-064d18e30466",
-      "slug": "administratorsguide-iLjfd22kyb",
-      "collection": "deploy-app",
-      "title": "Administratörsguide",
-      "breadcrumb": [
-        "Android",
-        "Administratörsguide"
-      ],
-      "path": "/content/sv/pages/deploy-app/administratorsguide-iLjfd22kyb.json",
-      "updatedAt": "2026-02-17T08:34:01.087Z",
-      "order": 5
+      "order": 2,
+      "platform": "android",
+      "chapterId": "anvandarguide-q7fgVGQ10J",
+      "chapterLabel": "Användarguide"
     },
     {
       "id": "87831814-57e3-4e78-a7c2-0c59987f1d07",
@@ -146,7 +133,10 @@
       ],
       "path": "/content/sv/pages/deploy-app/forsta-inloggningen-X4xEQb7jxr.json",
       "updatedAt": "2026-02-25T07:33:30.334Z",
-      "order": 6
+      "order": 3,
+      "platform": "android",
+      "chapterId": "administratorsguide-iLjfd22kyb",
+      "chapterLabel": "Administratörsguide"
     },
     {
       "id": "5f9ec0c2-2080-4f63-bffc-2387a15abf22",
@@ -160,7 +150,10 @@
       ],
       "path": "/content/sv/pages/deploy-app/lagga-till-anvandare-PhAiFqGhft.json",
       "updatedAt": "2026-02-25T07:34:01.620Z",
-      "order": 7
+      "order": 4,
+      "platform": "android",
+      "chapterId": "administratorsguide-iLjfd22kyb",
+      "chapterLabel": "Administratörsguide"
     },
     {
       "id": "d03d7fc3-d57c-40ad-843e-7bf21c8211e1",
@@ -174,7 +167,10 @@
       ],
       "path": "/content/sv/pages/deploy-app/hantera-anvandare-ROwlDqFUYe.json",
       "updatedAt": "2026-02-25T07:34:57.091Z",
-      "order": 8
+      "order": 5,
+      "platform": "android",
+      "chapterId": "administratorsguide-iLjfd22kyb",
+      "chapterLabel": "Administratörsguide"
     },
     {
       "id": "90cab2ca-b074-482d-af95-3cbd3eba53be",
@@ -188,7 +184,10 @@
       ],
       "path": "/content/sv/pages/deploy-app/atkomst-till-externa-tjanster-j1mymYziCz.json",
       "updatedAt": "2026-02-25T07:35:34.103Z",
-      "order": 9
+      "order": 6,
+      "platform": "android",
+      "chapterId": "administratorsguide-iLjfd22kyb",
+      "chapterLabel": "Administratörsguide"
     },
     {
       "id": "e67c3a42-502a-4c85-b255-2fbf23fde23b",
@@ -203,18 +202,6 @@
       "order": 0
     },
     {
-      "id": "ce8883ca-0875-427b-88c6-464f3ebcc0e9",
-      "slug": "titta-pa-streamen-0SUHzvwK33",
-      "collection": "guides/mtx-guide",
-      "title": "Titta på streamen",
-      "breadcrumb": [
-        "Titta på streamen"
-      ],
-      "path": "/content/sv/pages/guides/mtx-guide/titta-pa-streamen-0SUHzvwK33.json",
-      "updatedAt": "2026-02-20T06:19:53.682Z",
-      "order": 1
-    },
-    {
       "id": "8f4db11b-9c95-4715-875f-0d6109fa48cd",
       "slug": "webblasare-ww2sENtpLr",
       "collection": "guides/mtx-guide",
@@ -225,7 +212,9 @@
       ],
       "path": "/content/sv/pages/guides/mtx-guide/webblasare-ww2sENtpLr.json",
       "updatedAt": "2026-02-24T06:33:29.636Z",
-      "order": 2
+      "order": 1,
+      "chapterId": "titta-pa-streamen-0SUHzvwK33",
+      "chapterLabel": "Titta på streamen"
     },
     {
       "id": "5d779ae3-0e14-4d51-92a8-298f742370e2",
@@ -238,19 +227,9 @@
       ],
       "path": "/content/sv/pages/guides/mtx-guide/vlc-player-8p9jKo0ZTH.json",
       "updatedAt": "2026-02-24T06:33:10.577Z",
-      "order": 3
-    },
-    {
-      "id": "b431891e-c96a-48c8-98bf-7d8d4dcc8bea",
-      "slug": "publicera-streamen-51x6awRSrH",
-      "collection": "guides/mtx-guide",
-      "title": "Publicera streamen",
-      "breadcrumb": [
-        "Publicera streamen"
-      ],
-      "path": "/content/sv/pages/guides/mtx-guide/publicera-streamen-51x6awRSrH.json",
-      "updatedAt": "2026-04-11T21:50:11.663Z",
-      "order": 4
+      "order": 2,
+      "chapterId": "titta-pa-streamen-0SUHzvwK33",
+      "chapterLabel": "Titta på streamen"
     },
     {
       "id": "4494b1af-609c-44be-95a1-42a18373a351",
@@ -263,7 +242,9 @@
       ],
       "path": "/content/sv/pages/guides/mtx-guide/gopro-2PrQ7u3goE.json",
       "updatedAt": "2026-02-20T06:24:01.414Z",
-      "order": 5
+      "order": 3,
+      "chapterId": "publicera-streamen-51x6awRSrH",
+      "chapterLabel": "Publicera streamen"
     },
     {
       "id": "1b22f38f-4c19-44a6-8873-9a660d99ccf6",
@@ -276,7 +257,9 @@
       ],
       "path": "/content/sv/pages/guides/mtx-guide/opentak-icu-manuell-metod-are1FsNNAC.json",
       "updatedAt": "2026-04-11T16:45:32.072Z",
-      "order": 6
+      "order": 4,
+      "chapterId": "publicera-streamen-51x6awRSrH",
+      "chapterLabel": "Publicera streamen"
     },
     {
       "id": "4ab66e9f-1ba6-4ef7-8f80-af6182ca28c6",
@@ -289,7 +272,9 @@
       ],
       "path": "/content/sv/pages/guides/mtx-guide/opentak-icu-HJresNyWaE.json",
       "updatedAt": "2026-04-11T21:50:38.139Z",
-      "order": 7
+      "order": 5,
+      "chapterId": "publicera-streamen-51x6awRSrH",
+      "chapterLabel": "Publicera streamen"
     },
     {
       "id": "acf80736-b31c-47d8-9ee2-f17a0339d6b9",
@@ -302,7 +287,9 @@
       ],
       "path": "/content/sv/pages/guides/mtx-guide/uas-tool-97tr5ME3hk.json",
       "updatedAt": "2026-04-11T21:50:55.659Z",
-      "order": 8
+      "order": 6,
+      "chapterId": "publicera-streamen-51x6awRSrH",
+      "chapterLabel": "Publicera streamen"
     },
     {
       "id": "a6bcb3a6-5500-46b3-9856-4e179ad45e64",
@@ -353,45 +340,6 @@
       "order": 1
     },
     {
-      "id": "a4731376-2639-4d3e-bcf2-1cb0ee554590",
-      "slug": "tak-produkter-for-anvandare-Vbfsq3vhyM",
-      "collection": "wikis/tak",
-      "title": "TAK-produkter för Användare",
-      "breadcrumb": [
-        "TAK-produkter för Användare"
-      ],
-      "path": "/content/sv/pages/wikis/tak/tak-produkter-for-anvandare-Vbfsq3vhyM.json",
-      "updatedAt": "2026-02-19T12:43:29.442Z",
-      "order": 2
-    },
-    {
-      "id": "c5833484-2fc2-4383-848f-2be14b1b1833",
-      "slug": "atak-android-tak-WLqt5LNmVx",
-      "collection": "wikis/tak",
-      "title": "ATAK - Android TAK",
-      "breadcrumb": [
-        "TAK-produkter för Användare",
-        "ATAK - Android TAK"
-      ],
-      "path": "/content/sv/pages/wikis/tak/atak-android-tak-WLqt5LNmVx.json",
-      "updatedAt": "2026-03-28T16:20:11.020Z",
-      "order": 3
-    },
-    {
-      "id": "7c934d2a-e8e0-4f16-910d-c82c74b36c93",
-      "slug": "verktyg-och-tillagg-sEB6ccwyRm",
-      "collection": "wikis/tak",
-      "title": "Verktyg och tillägg",
-      "breadcrumb": [
-        "TAK-produkter för Användare",
-        "ATAK - Android TAK",
-        "Verktyg och tillägg"
-      ],
-      "path": "/content/sv/pages/wikis/tak/verktyg-och-tillagg-sEB6ccwyRm.json",
-      "updatedAt": "2026-02-19T13:05:02.181Z",
-      "order": 4
-    },
-    {
       "id": "8e6c7af5-cc60-4d10-9edf-b45545d5b122",
       "slug": "bloodhound-verktyget-8bsZHidzuJ",
       "collection": "wikis/tak",
@@ -404,7 +352,10 @@
       ],
       "path": "/content/sv/pages/wikis/tak/bloodhound-verktyget-8bsZHidzuJ.json",
       "updatedAt": "2026-02-19T13:05:05.797Z",
-      "order": 5
+      "order": 2,
+      "platform": "android",
+      "chapterId": "verktyg-och-tillagg-sEB6ccwyRm",
+      "chapterLabel": "Verktyg och tillägg"
     },
     {
       "id": "62cbe6ce-ead5-4043-9b36-8f46282aa06a",
@@ -419,7 +370,10 @@
       ],
       "path": "/content/sv/pages/wikis/tak/contacts-geochat-verktyget-cpj9rNVTxW.json",
       "updatedAt": "2026-02-19T13:05:23.168Z",
-      "order": 6
+      "order": 3,
+      "platform": "android",
+      "chapterId": "verktyg-och-tillagg-sEB6ccwyRm",
+      "chapterLabel": "Verktyg och tillägg"
     },
     {
       "id": "799dae9d-ebd5-4143-9e25-b97d18746975",
@@ -434,7 +388,10 @@
       ],
       "path": "/content/sv/pages/wikis/tak/data-sync-tillagget-aqLOkDieIe.json",
       "updatedAt": "2026-02-19T13:05:26.738Z",
-      "order": 7
+      "order": 4,
+      "platform": "android",
+      "chapterId": "verktyg-och-tillagg-sEB6ccwyRm",
+      "chapterLabel": "Verktyg och tillägg"
     },
     {
       "id": "3cfb86e9-62cd-4416-ad8c-6b87171cbf18",
@@ -449,7 +406,10 @@
       ],
       "path": "/content/sv/pages/wikis/tak/point-dropper-verktyget-xa1yEIE7Bn.json",
       "updatedAt": "2026-02-19T13:05:45.399Z",
-      "order": 8
+      "order": 5,
+      "platform": "android",
+      "chapterId": "verktyg-och-tillagg-sEB6ccwyRm",
+      "chapterLabel": "Verktyg och tillägg"
     },
     {
       "id": "dbddd006-7cee-4216-b9ed-b5727175236e",
@@ -464,7 +424,10 @@
       ],
       "path": "/content/sv/pages/wikis/tak/toolbar-verktyget-DEWC4UgT03.json",
       "updatedAt": "2026-02-19T13:05:48.877Z",
-      "order": 9
+      "order": 6,
+      "platform": "android",
+      "chapterId": "verktyg-och-tillagg-sEB6ccwyRm",
+      "chapterLabel": "Verktyg och tillägg"
     },
     {
       "id": "915afbb3-abb3-48cd-a469-974b96718235",
@@ -479,7 +442,10 @@
       ],
       "path": "/content/sv/pages/wikis/tak/uas-tool-tillagget-XJJNDWfYt5.json",
       "updatedAt": "2026-02-19T13:06:06.400Z",
-      "order": 10
+      "order": 7,
+      "platform": "android",
+      "chapterId": "verktyg-och-tillagg-sEB6ccwyRm",
+      "chapterLabel": "Verktyg och tillägg"
     },
     {
       "id": "c9a109d6-be84-4e97-aa62-1226523f8848",
@@ -494,7 +460,10 @@
       ],
       "path": "/content/sv/pages/wikis/tak/vns-tillagget-Vx7rEZ4RGp.json",
       "updatedAt": "2026-02-19T13:04:29.097Z",
-      "order": 11
+      "order": 8,
+      "platform": "android",
+      "chapterId": "verktyg-och-tillagg-sEB6ccwyRm",
+      "chapterLabel": "Verktyg och tillägg"
     },
     {
       "id": "69aa0a8f-4443-4727-b37a-51ab64149b0b",
@@ -508,7 +477,10 @@
       ],
       "path": "/content/sv/pages/wikis/tak/tillaggslista-kvscGDLbSf.json",
       "updatedAt": "2026-02-19T13:11:09.958Z",
-      "order": 12
+      "order": 9,
+      "platform": "android",
+      "chapterId": "atak-android-tak-WLqt5LNmVx",
+      "chapterLabel": "ATAK - Android TAK"
     },
     {
       "id": "7e246f07-07e4-45ed-8dfa-d944aea0048f",
@@ -521,7 +493,7 @@
       ],
       "path": "/content/sv/pages/wikis/tak/itak-apple-tak-nN8YzIEfFX.json",
       "updatedAt": "2026-02-19T13:14:15.538Z",
-      "order": 13
+      "order": 10
     },
     {
       "id": "b9496eb6-e145-4efb-847b-275a083b4c07",
@@ -534,7 +506,7 @@
       ],
       "path": "/content/sv/pages/wikis/tak/tak-aware-apple-tak-hKeKsxr1ZQ.json",
       "updatedAt": "2026-02-19T13:16:14.158Z",
-      "order": 14
+      "order": 11
     },
     {
       "id": "c21661e8-f4e5-4d29-8be5-071debdf2917",
@@ -547,7 +519,7 @@
       ],
       "path": "/content/sv/pages/wikis/tak/tak-tracker-latt-tak-android-och-apple-Ldi7s2rHHY.json",
       "updatedAt": "2026-02-19T13:19:35.175Z",
-      "order": 15
+      "order": 12
     },
     {
       "id": "793a3da8-5085-4ffb-8772-b136d582a222",
@@ -560,34 +532,7 @@
       ],
       "path": "/content/sv/pages/wikis/tak/vr-tak-virtuell-verklighet-for-tak-yNkWIh46xk.json",
       "updatedAt": "2026-02-19T13:21:01.842Z",
-      "order": 16
-    },
-    {
-      "id": "0eaa284c-2093-48e1-afa8-8b0b21efb978",
-      "slug": "wintak-windows-tak-AhFOs4e5q4",
-      "collection": "wikis/tak",
-      "title": "WinTAK - Windows TAK",
-      "breadcrumb": [
-        "TAK-produkter för Användare",
-        "WinTAK - Windows TAK"
-      ],
-      "path": "/content/sv/pages/wikis/tak/wintak-windows-tak-AhFOs4e5q4.json",
-      "updatedAt": "2026-03-04T19:01:09.153Z",
-      "order": 17
-    },
-    {
-      "id": "63180985-c47f-4fa9-9ef6-b32ab486c808",
-      "slug": "verktyg-och-tillagg-vX0F7rltb0",
-      "collection": "wikis/tak",
-      "title": "Verktyg och tillägg",
-      "breadcrumb": [
-        "TAK-produkter för Användare",
-        "WinTAK - Windows TAK",
-        "Verktyg och tillägg"
-      ],
-      "path": "/content/sv/pages/wikis/tak/verktyg-och-tillagg-vX0F7rltb0.json",
-      "updatedAt": "2026-02-19T13:25:47.978Z",
-      "order": 18
+      "order": 13
     },
     {
       "id": "756a4b36-f15a-4ee5-a222-a4e707552634",
@@ -602,7 +547,10 @@
       ],
       "path": "/content/sv/pages/wikis/tak/contacts-geochat-verktyget-xVYdNw84pI.json",
       "updatedAt": "2026-02-19T13:26:29.037Z",
-      "order": 19
+      "order": 14,
+      "platform": "windows",
+      "chapterId": "verktyg-och-tillagg-vX0F7rltb0",
+      "chapterLabel": "Verktyg och tillägg"
     },
     {
       "id": "62398a9a-e125-4af9-973b-40d4669fc4c6",
@@ -617,7 +565,10 @@
       ],
       "path": "/content/sv/pages/wikis/tak/data-sync-tillagget-tjH0fMfWva.json",
       "updatedAt": "2026-02-19T13:27:11.887Z",
-      "order": 20
+      "order": 15,
+      "platform": "windows",
+      "chapterId": "verktyg-och-tillagg-vX0F7rltb0",
+      "chapterLabel": "Verktyg och tillägg"
     },
     {
       "id": "7e7e24a0-2173-46f8-ab17-f60cf82d3344",
@@ -632,7 +583,10 @@
       ],
       "path": "/content/sv/pages/wikis/tak/tak-replay-tillagget-W56dg3ltjm.json",
       "updatedAt": "2026-02-19T13:29:25.077Z",
-      "order": 21
+      "order": 16,
+      "platform": "windows",
+      "chapterId": "verktyg-och-tillagg-vX0F7rltb0",
+      "chapterLabel": "Verktyg och tillägg"
     },
     {
       "id": "b3a66926-4494-408a-ba74-778687b3c4ee",
@@ -647,7 +601,10 @@
       ],
       "path": "/content/sv/pages/wikis/tak/vns-tillagget-YcOdXOjiCJ.json",
       "updatedAt": "2026-02-19T13:30:04.817Z",
-      "order": 22
+      "order": 17,
+      "platform": "windows",
+      "chapterId": "verktyg-och-tillagg-vX0F7rltb0",
+      "chapterLabel": "Verktyg och tillägg"
     },
     {
       "id": "7d0cd7b7-9b27-4946-8ca7-9f4fada46b43",
@@ -661,7 +618,10 @@
       ],
       "path": "/content/sv/pages/wikis/tak/tillaggslista-GbaWi7AwS9.json",
       "updatedAt": "2026-02-19T13:24:27.609Z",
-      "order": 23
+      "order": 18,
+      "platform": "windows",
+      "chapterId": "wintak-windows-tak-AhFOs4e5q4",
+      "chapterLabel": "WinTAK - Windows TAK"
     },
     {
       "id": "11d58e0f-8463-47cc-91d6-45b3c7a76179",
@@ -674,19 +634,7 @@
       ],
       "path": "/content/sv/pages/wikis/tak/tpc-tak-product-center-ZRqq8fI3RX.json",
       "updatedAt": "2026-02-19T13:31:11.195Z",
-      "order": 24
-    },
-    {
-      "id": "8850e878-bcfc-4ef8-b24a-2f76bb769267",
-      "slug": "tak-verktyg-for-produkter-vIyQBfINba",
-      "collection": "wikis/tak",
-      "title": "TAK-verktyg för Produkter",
-      "breadcrumb": [
-        "TAK-verktyg för Produkter"
-      ],
-      "path": "/content/sv/pages/wikis/tak/tak-verktyg-for-produkter-vIyQBfINba.json",
-      "updatedAt": "2026-02-19T13:31:46.357Z",
-      "order": 25
+      "order": 19
     },
     {
       "id": "d208938e-247c-435e-a893-d15122798a8c",
@@ -699,7 +647,9 @@
       ],
       "path": "/content/sv/pages/wikis/tak/bloodhound-verktyg-QY0hBa9P21.json",
       "updatedAt": "2026-02-19T13:32:41.197Z",
-      "order": 26
+      "order": 20,
+      "chapterId": "tak-verktyg-for-produkter-vIyQBfINba",
+      "chapterLabel": "TAK-verktyg för Produkter"
     },
     {
       "id": "383780b6-443c-4ec5-8944-0b9475f863b7",
@@ -712,7 +662,9 @@
       ],
       "path": "/content/sv/pages/wikis/tak/contacts-geochat-verktyg-gLh2UFdoEc.json",
       "updatedAt": "2026-02-19T13:33:59.748Z",
-      "order": 27
+      "order": 21,
+      "chapterId": "tak-verktyg-for-produkter-vIyQBfINba",
+      "chapterLabel": "TAK-verktyg för Produkter"
     },
     {
       "id": "e07f23dc-142c-4b40-bf3a-a1c69857d5ef",
@@ -725,7 +677,9 @@
       ],
       "path": "/content/sv/pages/wikis/tak/data-sync-tillagg-izVIiIaHkF.json",
       "updatedAt": "2026-02-19T13:35:00.677Z",
-      "order": 28
+      "order": 22,
+      "chapterId": "tak-verktyg-for-produkter-vIyQBfINba",
+      "chapterLabel": "TAK-verktyg för Produkter"
     },
     {
       "id": "f4fe9a34-1fd3-4c7a-9533-153bd4bcf540",
@@ -738,7 +692,9 @@
       ],
       "path": "/content/sv/pages/wikis/tak/point-dropper-verktyg-693liFHNYR.json",
       "updatedAt": "2026-02-19T13:36:16.177Z",
-      "order": 29
+      "order": 23,
+      "chapterId": "tak-verktyg-for-produkter-vIyQBfINba",
+      "chapterLabel": "TAK-verktyg för Produkter"
     },
     {
       "id": "f0773fed-b8fc-4ea6-bbef-a226de8d7299",
@@ -751,7 +707,9 @@
       ],
       "path": "/content/sv/pages/wikis/tak/tak-replay-tillagg-nPQC6qexcA.json",
       "updatedAt": "2026-02-19T13:38:19.397Z",
-      "order": 30
+      "order": 24,
+      "chapterId": "tak-verktyg-for-produkter-vIyQBfINba",
+      "chapterLabel": "TAK-verktyg för Produkter"
     },
     {
       "id": "de415c7f-b8bf-4dbc-beea-65848751165b",
@@ -764,7 +722,9 @@
       ],
       "path": "/content/sv/pages/wikis/tak/uas-tool-tillagg-zZkY1YhdAX.json",
       "updatedAt": "2026-02-19T13:39:12.010Z",
-      "order": 31
+      "order": 25,
+      "chapterId": "tak-verktyg-for-produkter-vIyQBfINba",
+      "chapterLabel": "TAK-verktyg för Produkter"
     },
     {
       "id": "3cdd17e2-6991-47be-aa50-6806dd1146fb",
@@ -777,32 +737,9 @@
       ],
       "path": "/content/sv/pages/wikis/tak/vns-tillagg-Cj9qu3S9dI.json",
       "updatedAt": "2026-02-19T13:40:08.706Z",
-      "order": 32
-    },
-    {
-      "id": "3a744acf-0c6f-432a-a8b3-6ec7855e0c31",
-      "slug": "tak-verktyg-for-huvudadministratorer-Ng0EPuM5Rr",
-      "collection": "wikis/tak",
-      "title": "TAK-verktyg för Huvudadministratörer",
-      "breadcrumb": [
-        "TAK-verktyg för Huvudadministratörer"
-      ],
-      "path": "/content/sv/pages/wikis/tak/tak-verktyg-for-huvudadministratorer-Ng0EPuM5Rr.json",
-      "updatedAt": "2026-02-19T13:41:11.398Z",
-      "order": 33
-    },
-    {
-      "id": "bdaffd53-5731-4080-baf4-28f06b5e1971",
-      "slug": "takserver-oegV6haZ9Q",
-      "collection": "wikis/tak",
-      "title": "Takserver",
-      "breadcrumb": [
-        "TAK-verktyg för Huvudadministratörer",
-        "Takserver"
-      ],
-      "path": "/content/sv/pages/wikis/tak/takserver-oegV6haZ9Q.json",
-      "updatedAt": "2026-02-22T10:14:30.973Z",
-      "order": 34
+      "order": 26,
+      "chapterId": "tak-verktyg-for-produkter-vIyQBfINba",
+      "chapterLabel": "TAK-verktyg för Produkter"
     },
     {
       "id": "688abe6a-4c5c-4237-b4d5-4fe1a9ce3029",
@@ -816,7 +753,9 @@
       ],
       "path": "/content/sv/pages/wikis/tak/grundlaggande-anvandargranssnitt-h2BJMcZND4.json",
       "updatedAt": "2026-02-19T13:43:43.818Z",
-      "order": 35
+      "order": 27,
+      "chapterId": "tak-verktyg-for-huvudadministratorer-Ng0EPuM5Rr",
+      "chapterLabel": "TAK-verktyg för Huvudadministratörer"
     },
     {
       "id": "601cabae-060e-4b9a-877a-c4c0ab48fcd5",
@@ -830,7 +769,9 @@
       ],
       "path": "/content/sv/pages/wikis/tak/update-server-ota-4LRd5gZA7O.json",
       "updatedAt": "2026-02-19T13:44:05.587Z",
-      "order": 36
+      "order": 28,
+      "chapterId": "tak-verktyg-for-huvudadministratorer-Ng0EPuM5Rr",
+      "chapterLabel": "TAK-verktyg för Huvudadministratörer"
     },
     {
       "id": "2c843d6b-7763-40e3-bdba-31bc13bc8cf8",
@@ -844,7 +785,9 @@
       ],
       "path": "/content/sv/pages/wikis/tak/mission-manager-data-sync-iCzglz3Qre.json",
       "updatedAt": "2026-02-19T13:45:08.437Z",
-      "order": 37
+      "order": 29,
+      "chapterId": "tak-verktyg-for-huvudadministratorer-Ng0EPuM5Rr",
+      "chapterLabel": "TAK-verktyg för Huvudadministratörer"
     },
     {
       "id": "e91f59d7-c745-4196-b327-81ce4988cd5e",
@@ -858,20 +801,9 @@
       ],
       "path": "/content/sv/pages/wikis/tak/device-profiles-TbWQElcu1A.json",
       "updatedAt": "2026-02-19T13:46:53.978Z",
-      "order": 38
-    },
-    {
-      "id": "f893b0e4-8ada-40bb-b484-c4b2808eb09f",
-      "slug": "avancerade-funktioner-1R6BEkfIUe",
-      "collection": "wikis/tak",
-      "title": "Avancerade Funktioner",
-      "breadcrumb": [
-        "TAK-verktyg för Huvudadministratörer",
-        "Avancerade Funktioner"
-      ],
-      "path": "/content/sv/pages/wikis/tak/avancerade-funktioner-1R6BEkfIUe.json",
-      "updatedAt": "2026-02-19T13:50:02.378Z",
-      "order": 39
+      "order": 30,
+      "chapterId": "tak-verktyg-for-huvudadministratorer-Ng0EPuM5Rr",
+      "chapterLabel": "TAK-verktyg för Huvudadministratörer"
     },
     {
       "id": "e3fcd3da-5d9b-4ec8-984c-a35ad7f8ae82",
@@ -885,7 +817,9 @@
       ],
       "path": "/content/sv/pages/wikis/tak/mtx-stromning-W2p79UCLJ5.json",
       "updatedAt": "2026-02-19T13:50:52.217Z",
-      "order": 40
+      "order": 31,
+      "chapterId": "tak-verktyg-for-huvudadministratorer-Ng0EPuM5Rr",
+      "chapterLabel": "TAK-verktyg för Huvudadministratörer"
     },
     {
       "id": "b35fac02-94d2-40db-a522-b82ff4e0cb16",
@@ -899,32 +833,9 @@
       ],
       "path": "/content/sv/pages/wikis/tak/keycloak-grupphantering-ejTxo0JEa8.json",
       "updatedAt": "2026-02-19T13:52:39.829Z",
-      "order": 41
-    },
-    {
-      "id": "7b2c1e9b-a8a0-47ba-b435-9e1ec13042b1",
-      "slug": "anvandningsmodeller-N5mf2UtRlc",
-      "collection": "wikis/tak",
-      "title": "Användningsmodeller",
-      "breadcrumb": [
-        "Användningsmodeller"
-      ],
-      "path": "/content/sv/pages/wikis/tak/anvandningsmodeller-N5mf2UtRlc.json",
-      "updatedAt": "2026-02-19T13:53:17.042Z",
-      "order": 42
-    },
-    {
-      "id": "62852f67-7f38-46c9-912a-32de63a2eb43",
-      "slug": "pvarki-standarden-u39zwMiK2h",
-      "collection": "wikis/tak",
-      "title": "PVARKI-standarden",
-      "breadcrumb": [
-        "Användningsmodeller",
-        "PVARKI-standarden"
-      ],
-      "path": "/content/sv/pages/wikis/tak/pvarki-standarden-u39zwMiK2h.json",
-      "updatedAt": "2026-02-19T13:54:28.877Z",
-      "order": 43
+      "order": 32,
+      "chapterId": "tak-verktyg-for-huvudadministratorer-Ng0EPuM5Rr",
+      "chapterLabel": "TAK-verktyg för Huvudadministratörer"
     },
     {
       "id": "13a5cf25-89d2-4409-8c72-13a60b77dc41",
@@ -938,7 +849,9 @@
       ],
       "path": "/content/sv/pages/wikis/tak/takserver-recon-flodet-da0vEyjl28.json",
       "updatedAt": "2026-02-20T06:13:40.193Z",
-      "order": 44
+      "order": 33,
+      "chapterId": "anvandningsmodeller-N5mf2UtRlc",
+      "chapterLabel": "Användningsmodeller"
     },
     {
       "id": "7f882800-0e39-4293-88f3-d65375d1b222",
@@ -952,20 +865,9 @@
       ],
       "path": "/content/sv/pages/wikis/tak/takserver-grupper-zHjvp8incO.json",
       "updatedAt": "2026-02-20T06:14:25.304Z",
-      "order": 45
-    },
-    {
-      "id": "a0f41ae4-0570-45ad-a75d-1d23913b2504",
-      "slug": "anvandningsfall-qMdv2JrX5d",
-      "collection": "wikis/tak",
-      "title": "Användningsfall",
-      "breadcrumb": [
-        "Användningsmodeller",
-        "Användningsfall"
-      ],
-      "path": "/content/sv/pages/wikis/tak/anvandningsfall-qMdv2JrX5d.json",
-      "updatedAt": "2026-02-20T06:15:16.403Z",
-      "order": 46
+      "order": 34,
+      "chapterId": "anvandningsmodeller-N5mf2UtRlc",
+      "chapterLabel": "Användningsmodeller"
     },
     {
       "id": "2dcca80b-a80d-4d27-a97c-8004143585e6",
@@ -979,7 +881,9 @@
       ],
       "path": "/content/sv/pages/wikis/tak/vidarebefordran-av-observation-ee7btUhwIp.json",
       "updatedAt": "2026-02-20T06:15:57.464Z",
-      "order": 47
+      "order": 35,
+      "chapterId": "anvandningsmodeller-N5mf2UtRlc",
+      "chapterLabel": "Användningsmodeller"
     },
     {
       "id": "847922d3-7b87-464e-ad1c-f107ed76c108",
@@ -1006,18 +910,6 @@
       "order": 1
     },
     {
-      "id": "6003e4cf-45f8-442b-9298-77a3652180ea",
-      "slug": "verktyg-3E6a12iKtC",
-      "collection": "wikis/mtx",
-      "title": "Verktyg",
-      "breadcrumb": [
-        "Verktyg"
-      ],
-      "path": "/content/sv/pages/wikis/mtx/verktyg-3E6a12iKtC.json",
-      "updatedAt": "2025-12-03T13:58:24.282Z",
-      "order": 2
-    },
-    {
       "id": "910e554e-48ad-4666-8859-a11bca34720b",
       "slug": "opentak-icu-ceJbKwGZb9",
       "collection": "wikis/mtx",
@@ -1028,7 +920,9 @@
       ],
       "path": "/content/sv/pages/wikis/mtx/opentak-icu-ceJbKwGZb9.json",
       "updatedAt": "2026-02-16T08:36:30.475Z",
-      "order": 3
+      "order": 2,
+      "chapterId": "verktyg-3E6a12iKtC",
+      "chapterLabel": "Verktyg"
     },
     {
       "id": "0b500367-7eda-4ccf-a9b2-39f29556c5ac",
@@ -1041,7 +935,9 @@
       ],
       "path": "/content/sv/pages/wikis/mtx/uas-tool-stromning-5JeQ6TxVVy.json",
       "updatedAt": "2026-03-05T07:50:32.443Z",
-      "order": 4
+      "order": 3,
+      "chapterId": "verktyg-3E6a12iKtC",
+      "chapterLabel": "Verktyg"
     },
     {
       "id": "3c41e5d9-865f-4d1a-8b43-e63835ebfe83",

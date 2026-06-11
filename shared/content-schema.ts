@@ -23,6 +23,31 @@ export function normalizeLocale(raw: string): Locale | undefined {
 }
 
 // ---------------------------------------------------------------------------
+// Platforms — guides are authored per platform in Outline (top-level
+// organizer docs: Android/iOS/... or client names like ATAK/iTAK/WinTAK).
+// The reader shows one platform at a time, selected in the navbar.
+// ---------------------------------------------------------------------------
+
+export const PLATFORMS = [
+  "android",
+  "ios",
+  "windows",
+  "linux",
+  "macos",
+] as const;
+export const PlatformSchema = z.enum(PLATFORMS);
+export type Platform = z.infer<typeof PlatformSchema>;
+
+export const PlatformInfoSchema = z.object({
+  key: PlatformSchema,
+  /** Book-specific display label (e.g. "ATAK" for android in the TAK guide). */
+  label: z.string(),
+  /** The platform's organizer doc carries the under-development marker. */
+  underDevelopment: z.boolean().optional(),
+});
+export type PlatformInfo = z.infer<typeof PlatformInfoSchema>;
+
+// ---------------------------------------------------------------------------
 // Blocks — a page body is an ordered list of typed blocks. HTML is sanitized
 // at build time (rehype-sanitize); the app renders it without re-processing.
 // ---------------------------------------------------------------------------
@@ -157,8 +182,11 @@ export const ManifestPageSchema = z.object({
   order: z.number().int().nonnegative(),
   /** Under development / explicitly hidden: excluded from reading order & search. */
   hidden: z.boolean().optional(),
-  /** Chapter-level platform tag (TOC filter chips). */
-  platform: z.enum(["android", "ios", "windows"]).optional(),
+  /** Platform this page belongs to; absent = shown on every platform. */
+  platform: PlatformSchema.optional(),
+  /** Chapter (Outline organizer doc) this page belongs to. */
+  chapterId: z.string().optional(),
+  chapterLabel: z.string().optional(),
 });
 export type ManifestPage = z.infer<typeof ManifestPageSchema>;
 
@@ -168,6 +196,8 @@ export const ManifestCollectionSchema = z.object({
   description: z.string().optional(),
   section: z.enum(["deploy-app", "guides", "dev", "wikis"]),
   order: z.number().int().nonnegative(),
+  /** Platforms this book is authored for (absent = platform-agnostic book). */
+  platforms: z.array(PlatformInfoSchema).optional(),
 });
 export type ManifestCollection = z.infer<typeof ManifestCollectionSchema>;
 
@@ -192,6 +222,8 @@ export interface SidebarItem {
   /** Doc slug for type "doc"; href for type "link". */
   slug?: string;
   href?: string;
+  /** Groups under a platform organizer carry its key; the TOC filters by it. */
+  platform?: Platform;
   children?: SidebarItem[];
 }
 
@@ -202,6 +234,7 @@ export const SidebarItemSchema: z.ZodType<SidebarItem> = z.lazy(() =>
     label: z.string(),
     slug: z.string().optional(),
     href: z.string().optional(),
+    platform: PlatformSchema.optional(),
     children: z.array(SidebarItemSchema).optional(),
   }),
 );

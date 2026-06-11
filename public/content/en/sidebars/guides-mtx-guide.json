@@ -16,12 +16,6 @@
       "children": [
         {
           "type": "doc",
-          "id": "watch-stream-i7cQZkpBTh",
-          "label": "Watch Stream",
-          "slug": "watch-stream-i7cQZkpBTh"
-        },
-        {
-          "type": "doc",
           "id": "browser-OODFuhucDG",
           "label": "Browser",
           "slug": "browser-OODFuhucDG"
@@ -39,12 +33,6 @@
       "id": "publish-stream-XN1sPInAKr",
       "label": "Publish Stream",
       "children": [
-        {
-          "type": "doc",
-          "id": "publish-stream-XN1sPInAKr",
-          "label": "Publish Stream",
-          "slug": "publish-stream-XN1sPInAKr"
-        },
         {
           "type": "doc",
           "id": "gopro-gDG1IhzxmJ",

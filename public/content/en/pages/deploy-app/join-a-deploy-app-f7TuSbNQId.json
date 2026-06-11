@@ -16,7 +16,7 @@
   "blocks": [
     {
       "type": "html",
-      "html": "<ul>\n<li>Receive Invite link or scan QR code\n<ul>\n<li>Input Callsign\n<ul>\n<li>Open Callsign.pfx file and import it\n<ul>\n<li>Connect to Deploy App with Certificate\n<ul>\n<li>Use Applications</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n<p>\\</p>"
+      "html": "<ul>\n<li>Receive Invite link or scan QR code\n<ul>\n<li>Input Callsign\n<ul>\n<li>Open Callsign.pfx file and import it\n<ul>\n<li>Connect to Deploy App with Certificate\n<ul>\n<li>Use Applications</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>"
     }
   ]
 }

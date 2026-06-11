@@ -16,10 +16,6 @@
   "headings": [],
   "blocks": [
     {
-      "type": "html",
-      "html": "<p>\\</p>"
-    },
-    {
       "type": "slideset",
       "source": "legacy",
       "slides": [

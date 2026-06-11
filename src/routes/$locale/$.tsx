@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link, createFileRoute, notFound } from "@tanstack/react-router";
 import { useTranslation } from "react-i18next";
 import { Check, ChevronRight, Download, Languages } from "lucide-react";
@@ -11,6 +11,7 @@ import {
 import { loadManifest, loadPage } from "@/lib/content/loader";
 import { readingOrder, resolveSplat } from "@/lib/content/neighbors";
 import { downloadCollectionImages } from "@/lib/pwa/offline-download";
+import { setPlatform, usePlatform } from "@/lib/platform";
 import { PageSwiper } from "@/components/reader/PageSwiper";
 import { NotFound } from "@/components/shell/NotFound";
 import { SidebarNav } from "@/components/shell/SidebarNav";
@@ -90,6 +91,7 @@ export const Route = createFileRoute("/$locale/$")({
 function ReaderRoute() {
   const data = Route.useLoaderData();
   const { locale } = Route.useParams();
+  const platform = usePlatform();
   const bookLabel =
     data.manifest.collections.find((c) => c.slug === data.collection)?.label ??
     data.collection;
@@ -97,6 +99,14 @@ function ReaderRoute() {
     data.kind === "page"
       ? data.pages.find((p) => p.slug === data.slug)
       : undefined;
+
+  // Deep links (search, shared URLs) into another platform's pages switch
+  // the selector — the page the user asked for always wins.
+  useEffect(() => {
+    if (currentPage?.platform && currentPage.platform !== platform) {
+      setPlatform(currentPage.platform);
+    }
+  }, [currentPage, platform]);
 
   return (
     <div className="flex h-full">
@@ -109,11 +119,9 @@ function ReaderRoute() {
       <div className="flex min-w-0 flex-1 flex-col">
         <ReaderBar
           locale={locale}
-          contentLocale={data.contentLocale}
           collection={data.collection}
           bookLabel={bookLabel}
           breadcrumb={currentPage?.breadcrumb}
-          currentSlug={data.slug}
         />
         {data.fallback && <FallbackBanner />}
         <div className="min-h-0 flex-1">
@@ -125,6 +133,7 @@ function ReaderRoute() {
               manifest={data.manifest}
               collection={data.collection}
               slug={data.slug}
+              platform={currentPage?.platform ?? platform}
             />
           )}
         </div>
@@ -152,10 +161,12 @@ function BookCover({
 }) {
   const { t } = useTranslation();
   const { locale } = Route.useParams();
+  const platform = usePlatform();
   const collection = data.manifest.collections.find(
     (c) => c.slug === data.collection,
   );
-  const first = data.pages[0];
+  const pages = readingOrder(data.manifest, data.collection, platform);
+  const first = pages[0];
 
   return (
     <div className="h-full overflow-y-auto">
@@ -182,7 +193,7 @@ function BookCover({
           />
         </div>
         <ol className="mt-8 space-y-1">
-          {data.pages.map((page, i) => (
+          {pages.map((page, i) => (
             <li key={page.slug}>
               <Link
                 to="/$locale/$"

@@ -23,7 +23,7 @@
   "blocks": [
     {
       "type": "html",
-      "html": "<p>\\</p>\n<h2 id=\"install-and-open-atak-for-initialization\"><a href=\"#install-and-open-atak-for-initialization\">Install and open ATAK for initialization</a></h2>"
+      "html": "<h2 id=\"install-and-open-atak-for-initialization\"><a href=\"#install-and-open-atak-for-initialization\">Install and open ATAK for initialization</a></h2>"
     },
     {
       "type": "slideset",

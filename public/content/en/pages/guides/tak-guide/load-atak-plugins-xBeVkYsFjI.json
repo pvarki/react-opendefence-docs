@@ -23,7 +23,7 @@
   "blocks": [
     {
       "type": "html",
-      "html": "<p>\\</p>\n<h1 id=\"atak---load-atak-plugins\"><a href=\"#atak---load-atak-plugins\">ATAK - Load ATAK Plugins</a></h1>\n<h2 id=\"load-atak-plugins\"><a href=\"#load-atak-plugins\">Load ATAK Plugins</a></h2>"
+      "html": "<h1 id=\"atak---load-atak-plugins\"><a href=\"#atak---load-atak-plugins\">ATAK - Load ATAK Plugins</a></h1>\n<h2 id=\"load-atak-plugins\"><a href=\"#load-atak-plugins\">Load ATAK Plugins</a></h2>"
     },
     {
       "type": "slideset",

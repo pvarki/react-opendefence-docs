@@ -223,8 +223,10 @@ function SlideContent({
   onEnlarge: (src: string, alt?: string) => void;
 }) {
   const image = slide.images[0];
+  // Desktop guide slides standardize on image-left/text-right; only the
+  // explicit image-right, grid and text layouts deviate.
   const sideBySide =
-    slide.layout === "image-left" || slide.layout === "image-right";
+    !!image && slide.layout !== "grid" && slide.layout !== "text";
 
   const imageEl = (img: {
     src: string;

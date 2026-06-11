@@ -22,12 +22,6 @@
       "children": [
         {
           "type": "doc",
-          "id": "tools-mC9QVIwoN3",
-          "label": "Tools",
-          "slug": "tools-mC9QVIwoN3"
-        },
-        {
-          "type": "doc",
           "id": "opentak-icu-6hPftpHVcX",
           "label": "Opentak ICU",
           "slug": "opentak-icu-6hPftpHVcX"

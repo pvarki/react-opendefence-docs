@@ -29,7 +29,8 @@
     "endOfBook": "Du har läst klart {{book}}",
     "notTranslated": "Denna sida är inte översatt ännu. Visar engelskt innehåll.",
     "comingSoon": "Denna sida är under arbete",
-    "pageAnnouncement": "Sida: {{title}} — {{current}} av {{total}}"
+    "pageAnnouncement": "Sida: {{title}} — {{current}} av {{total}}",
+    "nextPage": "Nästa sida"
   },
   "slides": {
     "stepOf": "Steg {{current}} av {{total}}",
@@ -51,5 +52,9 @@
     "language": "Språk",
     "updateAvailable": "Dokumentationen uppdaterad",
     "reload": "Ladda om"
+  },
+  "platform": {
+    "label": "Plattform",
+    "underDevelopment": "Under arbete"
   }
 }

@@ -1,34 +1,40 @@
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { TableOfContents } from "lucide-react";
 import type { Locale, SidebarConfig } from "@shared/content-schema";
 import { loadSidebar } from "@/lib/content/loader";
+import { usePlatform } from "@/lib/platform";
 import {
   Drawer,
   DrawerContent,
   DrawerDescription,
   DrawerTitle,
-  DrawerTrigger,
 } from "@/components/ui/drawer";
-import { Button } from "@/components/ui/button";
 import { SidebarItems } from "@/components/shell/SidebarNav";
+import { filterSidebarByPlatform } from "@/lib/content/neighbors";
 
-interface ContentsDrawerProps {
+interface ContentsSheetProps {
+  open: boolean;
+  onOpenChange: (open: boolean) => void;
   locale: string;
   contentLocale: Locale;
   collection: string;
   currentSlug?: string;
 }
 
-/** Mobile book TOC: a bottom sheet, like flipping to a book's contents page. */
-export function ContentsDrawer({
+/**
+ * Mobile book TOC bottom sheet (opened from the bottom bar's Contents
+ * button), filtered to the active platform's chapters.
+ */
+export function ContentsSheet({
+  open,
+  onOpenChange,
   locale,
   contentLocale,
   collection,
   currentSlug,
-}: ContentsDrawerProps) {
+}: ContentsSheetProps) {
   const { t } = useTranslation();
-  const [open, setOpen] = useState(false);
+  const platform = usePlatform();
   const [sidebar, setSidebar] = useState<SidebarConfig>();
 
   useEffect(() => {
@@ -43,29 +49,23 @@ export function ContentsDrawer({
     };
   }, [contentLocale, collection]);
 
+  const items = sidebar ? filterSidebarByPlatform(sidebar.items, platform) : [];
+
   return (
-    <Drawer open={open} onOpenChange={setOpen}>
-      <DrawerTrigger asChild>
-        <Button variant="ghost" size="sm" className="md:hidden">
-          <TableOfContents />
-          {t("nav.contents")}
-        </Button>
-      </DrawerTrigger>
+    <Drawer open={open} onOpenChange={onOpenChange}>
       <DrawerContent className="max-h-[85dvh]">
         <DrawerTitle className="px-4 pt-2 pb-1 text-base">
           {sidebar?.label ?? t("nav.contents")}
         </DrawerTitle>
         <DrawerDescription className="sr-only" />
         <nav className="overflow-y-auto px-4 pb-8">
-          {sidebar && (
-            <SidebarItems
-              items={sidebar.items}
-              locale={locale}
-              collection={collection}
-              currentSlug={currentSlug}
-              onNavigate={() => setOpen(false)}
-            />
-          )}
+          <SidebarItems
+            items={items}
+            locale={locale}
+            collection={collection}
+            currentSlug={currentSlug}
+            onNavigate={() => onOpenChange(false)}
+          />
         </nav>
       </DrawerContent>
     </Drawer>

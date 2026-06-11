@@ -23,7 +23,7 @@
   "blocks": [
     {
       "type": "html",
-      "html": "<p>\\</p>\n<h1 id=\"short---auto-import\"><a href=\"#short---auto-import\">Short - Auto import</a></h1>\n<h2 id=\"atak-already-installed---connecting-to-takserver\"><a href=\"#atak-already-installed---connecting-to-takserver\">ATAK Already installed - Connecting to takserver</a></h2>"
+      "html": "<h1 id=\"short---auto-import\"><a href=\"#short---auto-import\">Short - Auto import</a></h1>\n<h2 id=\"atak-already-installed---connecting-to-takserver\"><a href=\"#atak-already-installed---connecting-to-takserver\">ATAK Already installed - Connecting to takserver</a></h2>"
     },
     {
       "type": "slideset",

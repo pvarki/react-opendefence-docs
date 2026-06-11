@@ -5,21 +5,10 @@
   "items": [
     {
       "type": "group",
-      "id": "android-yFEMlNyGOI",
-      "label": "Android",
+      "id": "anvandarguide-q7fgVGQ10J",
+      "label": "Användarguide",
+      "platform": "android",
       "children": [
-        {
-          "type": "doc",
-          "id": "android-yFEMlNyGOI",
-          "label": "Android",
-          "slug": "android-yFEMlNyGOI"
-        },
-        {
-          "type": "doc",
-          "id": "anvandarguide-q7fgVGQ10J",
-          "label": "Användarguide",
-          "slug": "anvandarguide-q7fgVGQ10J"
-        },
         {
           "type": "doc",
           "id": "ga-med-i-en-deploy-app-Weat7nbJuF",
@@ -37,13 +26,15 @@
           "id": "granssnitt-vx5s9QUx7Y",
           "label": "Gränssnitt",
           "slug": "granssnitt-vx5s9QUx7Y"
-        },
-        {
-          "type": "doc",
-          "id": "administratorsguide-iLjfd22kyb",
-          "label": "Administratörsguide",
-          "slug": "administratorsguide-iLjfd22kyb"
-        },
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "administratorsguide-iLjfd22kyb",
+      "label": "Administratörsguide",
+      "platform": "android",
+      "children": [
         {
           "type": "doc",
           "id": "forsta-inloggningen-X4xEQb7jxr",

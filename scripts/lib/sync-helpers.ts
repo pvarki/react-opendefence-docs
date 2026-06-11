@@ -13,6 +13,7 @@ import {
   type Locale,
   type LocaleManifest,
   type ManifestPage,
+  type PlatformInfo,
   type TranslationsFile,
 } from "../../shared/content-schema";
 import type { CollectionConfig } from "../../config/collections";
@@ -190,6 +191,9 @@ export function buildBookManifestPages(
       order: pages.length,
       ...(hidden ? { hidden: true } : {}),
       ...(ref.platform ? { platform: ref.platform } : {}),
+      ...(ref.chapterId
+        ? { chapterId: ref.chapterId, chapterLabel: ref.chapterLabel }
+        : {}),
     });
   }
 
@@ -208,10 +212,19 @@ export function buildLocaleManifest(opts: {
   collections: readonly CollectionConfig[];
   /** collection slug -> entries built this run (may be empty arrays). */
   syncedPages: ReadonlyMap<string, ManifestPage[]>;
+  /** collection slug -> platforms detected this run. */
+  syncedPlatforms?: ReadonlyMap<string, PlatformInfo[]>;
   previous: LocaleManifest | undefined;
   generatedAt: string;
 }): LocaleManifest {
-  const { locale, collections, syncedPages, previous, generatedAt } = opts;
+  const {
+    locale,
+    collections,
+    syncedPages,
+    syncedPlatforms,
+    previous,
+    generatedAt,
+  } = opts;
 
   const pages: ManifestPage[] = [];
   for (const collection of collections) {
@@ -228,13 +241,20 @@ export function buildLocaleManifest(opts: {
   const present = new Set(pages.map((p) => p.collection));
   const manifestCollections = collections
     .filter((c) => present.has(c.slug))
-    .map((c, order) => ({
-      slug: c.slug,
-      label: c.label,
-      description: c.description,
-      section: c.section,
-      order,
-    }));
+    .map((c, order) => {
+      // Fresh platform info when synced; carried over otherwise.
+      const platforms = syncedPages.has(c.slug)
+        ? syncedPlatforms?.get(c.slug)
+        : previous?.collections.find((pc) => pc.slug === c.slug)?.platforms;
+      return {
+        slug: c.slug,
+        label: c.label,
+        description: c.description,
+        section: c.section,
+        order,
+        ...(platforms && platforms.length > 0 ? { platforms } : {}),
+      };
+    });
 
   return {
     schemaVersion: SCHEMA_VERSION,

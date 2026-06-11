@@ -23,7 +23,7 @@
   "blocks": [
     {
       "type": "html",
-      "html": "<p>\\</p>\n<h1 id=\"atak---data-sync\"><a href=\"#atak---data-sync\">ATAK - Data Sync</a></h1>\n<h2 id=\"atak-connected-to-takserver---subscribe-to-recon-feed\"><a href=\"#atak-connected-to-takserver---subscribe-to-recon-feed\">ATAK connected to takserver - Subscribe to RECON feed</a></h2>"
+      "html": "<h1 id=\"atak---data-sync\"><a href=\"#atak---data-sync\">ATAK - Data Sync</a></h1>\n<h2 id=\"atak-connected-to-takserver---subscribe-to-recon-feed\"><a href=\"#atak-connected-to-takserver---subscribe-to-recon-feed\">ATAK connected to takserver - Subscribe to RECON feed</a></h2>"
     },
     {
       "type": "slideset",

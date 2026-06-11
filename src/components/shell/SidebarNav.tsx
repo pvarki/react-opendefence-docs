@@ -7,6 +7,8 @@ import type {
   SidebarItem,
 } from "@shared/content-schema";
 import { loadSidebar } from "@/lib/content/loader";
+import { filterSidebarByPlatform } from "@/lib/content/neighbors";
+import { usePlatform } from "@/lib/platform";
 import { cn } from "@/lib/utils";
 
 interface SidebarNavProps {
@@ -28,6 +30,7 @@ export function SidebarNav({
   collection,
   currentSlug,
 }: SidebarNavProps) {
+  const platform = usePlatform();
   const [sidebar, setSidebar] = useState<SidebarConfig>();
 
   useEffect(() => {
@@ -56,7 +59,7 @@ export function SidebarNav({
           {sidebar.label}
         </p>
         <SidebarItems
-          items={sidebar.items}
+          items={filterSidebarByPlatform(sidebar.items, platform)}
           locale={locale}
           collection={collection}
           currentSlug={currentSlug}

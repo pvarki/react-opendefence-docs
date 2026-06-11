@@ -23,7 +23,7 @@
   "blocks": [
     {
       "type": "html",
-      "html": "<p>\\</p>\n<h1 id=\"atak---geofences---advanced-features\"><a href=\"#atak---geofences---advanced-features\">ATAK - Geofences - Advanced Features</a></h1>\n<h2 id=\"atak-connected-to-takserver---geofences\"><a href=\"#atak-connected-to-takserver---geofences\">ATAK connected to takserver - Geofences</a></h2>"
+      "html": "<h1 id=\"atak---geofences---advanced-features\"><a href=\"#atak---geofences---advanced-features\">ATAK - Geofences - Advanced Features</a></h1>\n<h2 id=\"atak-connected-to-takserver---geofences\"><a href=\"#atak-connected-to-takserver---geofences\">ATAK connected to takserver - Geofences</a></h2>"
     },
     {
       "type": "slideset",
@@ -159,7 +159,7 @@
     },
     {
       "type": "html",
-      "html": "<p><br>\nAfter successful testing Geofences, continue to</p>"
+      "html": "<p>After successful testing Geofences, continue to</p>"
     }
   ]
 }

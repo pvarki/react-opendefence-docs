@@ -23,7 +23,7 @@
   "blocks": [
     {
       "type": "html",
-      "html": "<p>\\</p>\n<h1 id=\"atak---basic-view-toolbar-tools\"><a href=\"#atak---basic-view-toolbar-tools\">ATAK - Basic view, toolbar, tools</a></h1>\n<h2 id=\"atak-connected-to-takserver---basic-view-toolbar-tools\"><a href=\"#atak-connected-to-takserver---basic-view-toolbar-tools\">ATAK connected to takserver - Basic view, toolbar, tools</a></h2>"
+      "html": "<h1 id=\"atak---basic-view-toolbar-tools\"><a href=\"#atak---basic-view-toolbar-tools\">ATAK - Basic view, toolbar, tools</a></h1>\n<h2 id=\"atak-connected-to-takserver---basic-view-toolbar-tools\"><a href=\"#atak-connected-to-takserver---basic-view-toolbar-tools\">ATAK connected to takserver - Basic view, toolbar, tools</a></h2>"
     },
     {
       "type": "slideset",
@@ -93,7 +93,7 @@
     },
     {
       "type": "html",
-      "html": "<p><br>\nAfter seeing Basic view, toolbar, tools, continue to <a href=\"/doc/6bf5c875-5082-4f7c-b28c-26b5eea8b0c5\">Blue force tracking</a></p>"
+      "html": "<p>After seeing Basic view, toolbar, tools, continue to <a href=\"/doc/6bf5c875-5082-4f7c-b28c-26b5eea8b0c5\">Blue force tracking</a></p>"
     }
   ]
 }

@@ -2,15 +2,27 @@ import type {
   Locale,
   LocaleManifest,
   ManifestPage,
+  Platform,
+  SidebarItem,
 } from "@shared/content-schema";
 
-/** A collection's pages in reading order (hidden pages excluded). */
+/**
+ * A collection's pages in reading order (hidden pages excluded). With a
+ * platform, only that platform's pages plus platform-agnostic ones — the
+ * reader swipes through everything for THIS platform, start to finish.
+ */
 export function readingOrder(
   manifest: LocaleManifest,
   collection: string,
+  platform?: Platform,
 ): ManifestPage[] {
   return manifest.pages
-    .filter((p) => p.collection === collection && !p.hidden)
+    .filter(
+      (p) =>
+        p.collection === collection &&
+        !p.hidden &&
+        (!platform || !p.platform || p.platform === platform),
+    )
     .sort((a, b) => a.order - b.order);
 }
 
@@ -27,8 +39,9 @@ export function resolvePosition(
   manifest: LocaleManifest,
   collection: string,
   slug: string,
+  platform?: Platform,
 ): PagePosition | undefined {
-  const order = readingOrder(manifest, collection);
+  const order = readingOrder(manifest, collection, platform);
   const index = order.findIndex((p) => p.slug === slug);
   if (index === -1) return undefined;
   return {
@@ -66,4 +79,12 @@ export function resolveSplat(
 
 export function pageRoute(locale: Locale, page: ManifestPage): string {
   return `/${locale}/${page.collection}/${page.slug}`;
+}
+
+/** Platform-tagged chapters from other platforms are hidden entirely. */
+export function filterSidebarByPlatform(
+  items: SidebarItem[],
+  platform: Platform,
+): SidebarItem[] {
+  return items.filter((i) => !i.platform || i.platform === platform);
 }

@@ -22,12 +22,6 @@
       "children": [
         {
           "type": "doc",
-          "id": "verktyg-3E6a12iKtC",
-          "label": "Verktyg",
-          "slug": "verktyg-3E6a12iKtC"
-        },
-        {
-          "type": "doc",
           "id": "opentak-icu-ceJbKwGZb9",
           "label": "Opentak ICU",
           "slug": "opentak-icu-ceJbKwGZb9"

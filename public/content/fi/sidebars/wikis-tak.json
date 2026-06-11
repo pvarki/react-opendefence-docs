@@ -17,27 +17,10 @@
     },
     {
       "type": "group",
-      "id": "tak-tuotteet-kayttajille-91L6pdb8ee",
-      "label": "TAK Tuotteet Käyttäjille",
+      "id": "tyokalut-ja-lisaosat-qC4tN7ic8c",
+      "label": "Työkalut ja lisäosat",
+      "platform": "android",
       "children": [
-        {
-          "type": "doc",
-          "id": "tak-tuotteet-kayttajille-91L6pdb8ee",
-          "label": "TAK Tuotteet Käyttäjille",
-          "slug": "tak-tuotteet-kayttajille-91L6pdb8ee"
-        },
-        {
-          "type": "doc",
-          "id": "atak-android-tak-oeRRt7n8VG",
-          "label": "ATAK - Android TAK",
-          "slug": "atak-android-tak-oeRRt7n8VG"
-        },
-        {
-          "type": "doc",
-          "id": "tyokalut-ja-lisaosat-qC4tN7ic8c",
-          "label": "Työkalut ja lisäosat",
-          "slug": "tyokalut-ja-lisaosat-qC4tN7ic8c"
-        },
         {
           "type": "doc",
           "id": "bloodhound-tyokalu-6Upz4LkrO9",
@@ -79,49 +62,53 @@
           "id": "vns-lisaosa-Hnpl0Xgv25",
           "label": "VNS -lisäosa",
           "slug": "vns-lisaosa-Hnpl0Xgv25"
-        },
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "atak-android-tak-oeRRt7n8VG",
+      "label": "ATAK - Android TAK",
+      "platform": "android",
+      "children": [
         {
           "type": "doc",
           "id": "lisaosa-listaus-N4znkanSPj",
           "label": "Lisäosa listaus",
           "slug": "lisaosa-listaus-N4znkanSPj"
-        },
-        {
-          "type": "doc",
-          "id": "itak-apple-tak-1xxodVxfN8",
-          "label": "iTAK - Apple TAK",
-          "slug": "itak-apple-tak-1xxodVxfN8"
-        },
-        {
-          "type": "doc",
-          "id": "tak-aware-apple-tak-Kca1qYUDAO",
-          "label": "TAK Aware - Apple TAK",
-          "slug": "tak-aware-apple-tak-Kca1qYUDAO"
-        },
-        {
-          "type": "doc",
-          "id": "tak-tracker-kevyt-tak-android-ja-apple-H2Bj8HNmnv",
-          "label": "TAK Tracker - Kevyt TAK — Android ja Apple",
-          "slug": "tak-tracker-kevyt-tak-android-ja-apple-H2Bj8HNmnv"
-        },
-        {
-          "type": "doc",
-          "id": "vr-tak-virtuaalitodellisuus-tak-zpNoc3jnF4",
-          "label": "VR-TAK - Virtuaalitodellisuus TAK",
-          "slug": "vr-tak-virtuaalitodellisuus-tak-zpNoc3jnF4"
-        },
-        {
-          "type": "doc",
-          "id": "wintak-windows-tak-UFb4pI3uVv",
-          "label": "WinTAK - Windows TAK",
-          "slug": "wintak-windows-tak-UFb4pI3uVv"
-        },
-        {
-          "type": "doc",
-          "id": "tyokalut-ja-lisaosat-z4hu8AFihP",
-          "label": "Työkalut ja lisäosat",
-          "slug": "tyokalut-ja-lisaosat-z4hu8AFihP"
-        },
+        }
+      ]
+    },
+    {
+      "type": "doc",
+      "id": "itak-apple-tak-1xxodVxfN8",
+      "label": "iTAK - Apple TAK",
+      "slug": "itak-apple-tak-1xxodVxfN8"
+    },
+    {
+      "type": "doc",
+      "id": "tak-aware-apple-tak-Kca1qYUDAO",
+      "label": "TAK Aware - Apple TAK",
+      "slug": "tak-aware-apple-tak-Kca1qYUDAO"
+    },
+    {
+      "type": "doc",
+      "id": "tak-tracker-kevyt-tak-android-ja-apple-H2Bj8HNmnv",
+      "label": "TAK Tracker - Kevyt TAK — Android ja Apple",
+      "slug": "tak-tracker-kevyt-tak-android-ja-apple-H2Bj8HNmnv"
+    },
+    {
+      "type": "doc",
+      "id": "vr-tak-virtuaalitodellisuus-tak-zpNoc3jnF4",
+      "label": "VR-TAK - Virtuaalitodellisuus TAK",
+      "slug": "vr-tak-virtuaalitodellisuus-tak-zpNoc3jnF4"
+    },
+    {
+      "type": "group",
+      "id": "tyokalut-ja-lisaosat-z4hu8AFihP",
+      "label": "Työkalut ja lisäosat",
+      "platform": "windows",
+      "children": [
         {
           "type": "doc",
           "id": "contacts-geochat-tyokalu-isdG7ytN8I",
@@ -145,32 +132,34 @@
           "id": "vns-lisaosa-yRSNhjwvwF",
           "label": "VNS - lisäosa",
           "slug": "vns-lisaosa-yRSNhjwvwF"
-        },
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "wintak-windows-tak-UFb4pI3uVv",
+      "label": "WinTAK - Windows TAK",
+      "platform": "windows",
+      "children": [
         {
           "type": "doc",
           "id": "lisaosa-listaus-W9iA7LSPv4",
           "label": "Lisäosa listaus",
           "slug": "lisaosa-listaus-W9iA7LSPv4"
-        },
-        {
-          "type": "doc",
-          "id": "tpc-tak-product-center-BAsOmaQorN",
-          "label": "TPC - TAK Product Center",
-          "slug": "tpc-tak-product-center-BAsOmaQorN"
         }
       ]
+    },
+    {
+      "type": "doc",
+      "id": "tpc-tak-product-center-BAsOmaQorN",
+      "label": "TPC - TAK Product Center",
+      "slug": "tpc-tak-product-center-BAsOmaQorN"
     },
     {
       "type": "group",
       "id": "tak-tyokalut-tuotteille-PRBSLNNcXe",
       "label": "TAK Työkalut Tuotteille",
       "children": [
-        {
-          "type": "doc",
-          "id": "tak-tyokalut-tuotteille-PRBSLNNcXe",
-          "label": "TAK Työkalut Tuotteille",
-          "slug": "tak-tyokalut-tuotteille-PRBSLNNcXe"
-        },
         {
           "type": "doc",
           "id": "bloodhound-tyokalu-EutttuAMqj",
@@ -222,18 +211,6 @@
       "children": [
         {
           "type": "doc",
-          "id": "tak-paakayttaja-tyokalut-da3GQMAefs",
-          "label": "TAK Pääkäyttäjä Työkalut",
-          "slug": "tak-paakayttaja-tyokalut-da3GQMAefs"
-        },
-        {
-          "type": "doc",
-          "id": "takserveri-wvGgSzba9a",
-          "label": "Takserveri",
-          "slug": "takserveri-wvGgSzba9a"
-        },
-        {
-          "type": "doc",
           "id": "perus-kayttoliittyma-2HXcY5vRCG",
           "label": "Perus Käyttöliittymä",
           "slug": "perus-kayttoliittyma-2HXcY5vRCG"
@@ -258,12 +235,6 @@
         },
         {
           "type": "doc",
-          "id": "edistyneet-toiminnot-UJHXLaAK8s",
-          "label": "Edistyneet Toiminnot",
-          "slug": "edistyneet-toiminnot-UJHXLaAK8s"
-        },
-        {
-          "type": "doc",
           "id": "mtx-striimaus-HtFtvSo9pk",
           "label": "MTX - Striimaus",
           "slug": "mtx-striimaus-HtFtvSo9pk"
@@ -283,18 +254,6 @@
       "children": [
         {
           "type": "doc",
-          "id": "kayttomallit-qfKyTEO473",
-          "label": "Käyttömallit",
-          "slug": "kayttomallit-qfKyTEO473"
-        },
-        {
-          "type": "doc",
-          "id": "pvarki-standardi-pH8Co9lKsr",
-          "label": "PVARKI Standardi",
-          "slug": "pvarki-standardi-pH8Co9lKsr"
-        },
-        {
-          "type": "doc",
           "id": "takserver-recon-syote-PPNwDOJdZa",
           "label": "Takserver RECON -syöte",
           "slug": "takserver-recon-syote-PPNwDOJdZa"
@@ -304,12 +263,6 @@
           "id": "takserver-ryhmat-6chJPiJi7g",
           "label": "Takserver-ryhmät",
           "slug": "takserver-ryhmat-6chJPiJi7g"
-        },
-        {
-          "type": "doc",
-          "id": "kayttotapaukset-LyBVWJ49UE",
-          "label": "Käyttötapaukset",
-          "slug": "kayttotapaukset-LyBVWJ49UE"
         },
         {
           "type": "doc",

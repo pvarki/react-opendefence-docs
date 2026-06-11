@@ -23,7 +23,7 @@
   "blocks": [
     {
       "type": "html",
-      "html": "<p>\\</p>\n<h1 id=\"atak---blue-force-tracking---basic-use\"><a href=\"#atak---blue-force-tracking---basic-use\">ATAK - Blue force tracking - Basic use</a></h1>\n<h2 id=\"atak-connected-to-takserver---blue-force-tracking\"><a href=\"#atak-connected-to-takserver---blue-force-tracking\">ATAK connected to takserver - Blue force tracking</a></h2>"
+      "html": "<h1 id=\"atak---blue-force-tracking---basic-use\"><a href=\"#atak---blue-force-tracking---basic-use\">ATAK - Blue force tracking - Basic use</a></h1>\n<h2 id=\"atak-connected-to-takserver---blue-force-tracking\"><a href=\"#atak-connected-to-takserver---blue-force-tracking\">ATAK connected to takserver - Blue force tracking</a></h2>"
     },
     {
       "type": "slideset",
@@ -81,7 +81,7 @@
     },
     {
       "type": "html",
-      "html": "<p><br>\nAfter successful testing Blue force tracking, continue to <a href=\"/doc/ee9de6aa-bd12-414f-9e31-cfc8ecddda21\">Point Dropper - Markers</a></p>"
+      "html": "<p>After successful testing Blue force tracking, continue to <a href=\"/doc/ee9de6aa-bd12-414f-9e31-cfc8ecddda21\">Point Dropper - Markers</a></p>"
     }
   ]
 }

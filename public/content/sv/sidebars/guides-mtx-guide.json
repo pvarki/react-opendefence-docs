@@ -16,12 +16,6 @@
       "children": [
         {
           "type": "doc",
-          "id": "titta-pa-streamen-0SUHzvwK33",
-          "label": "Titta på streamen",
-          "slug": "titta-pa-streamen-0SUHzvwK33"
-        },
-        {
-          "type": "doc",
           "id": "webblasare-ww2sENtpLr",
           "label": "Webbläsare",
           "slug": "webblasare-ww2sENtpLr"
@@ -39,12 +33,6 @@
       "id": "publicera-streamen-51x6awRSrH",
       "label": "Publicera streamen",
       "children": [
-        {
-          "type": "doc",
-          "id": "publicera-streamen-51x6awRSrH",
-          "label": "Publicera streamen",
-          "slug": "publicera-streamen-51x6awRSrH"
-        },
         {
           "type": "doc",
           "id": "gopro-2PrQ7u3goE",

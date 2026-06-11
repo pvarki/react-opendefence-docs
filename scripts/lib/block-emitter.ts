@@ -165,7 +165,11 @@ const mdParser = unified().use(remarkParse).use(remarkGfm);
 // Runtime cleanups moved to build time (old lib/docs/loader.ts cleanDocContent)
 // ---------------------------------------------------------------------------
 
-function isUnderDevelopment(content: string): boolean {
+/**
+ * Authoring marker for unfinished docs. Exported because sync also checks
+ * organizer (platform) doc bodies, which never reach emitBlocks.
+ */
+export function isUnderDevelopment(content: string): boolean {
   const lower = content.toLowerCase();
   return (
     lower.includes("(this tab is under development)") ||

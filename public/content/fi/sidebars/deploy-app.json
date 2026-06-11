@@ -5,21 +5,10 @@
   "items": [
     {
       "type": "group",
-      "id": "android-vdSzGssyHX",
-      "label": "Android",
+      "id": "kayttajaohjeet-KILDyYvVV0",
+      "label": "Käyttäjäohjeet",
+      "platform": "android",
       "children": [
-        {
-          "type": "doc",
-          "id": "android-vdSzGssyHX",
-          "label": "Android",
-          "slug": "android-vdSzGssyHX"
-        },
-        {
-          "type": "doc",
-          "id": "kayttajaohjeet-KILDyYvVV0",
-          "label": "Käyttäjäohjeet",
-          "slug": "kayttajaohjeet-KILDyYvVV0"
-        },
         {
           "type": "doc",
           "id": "liittyminen-deploy-appiin-hFiNczU5i7",
@@ -37,13 +26,15 @@
           "id": "kayttoliittyma-9RSCOjN5ER",
           "label": "Käyttöliittymä",
           "slug": "kayttoliittyma-9RSCOjN5ER"
-        },
-        {
-          "type": "doc",
-          "id": "yllapitajaohjeet-9kIb7LsIOM",
-          "label": "Ylläpitäjäohjeet",
-          "slug": "yllapitajaohjeet-9kIb7LsIOM"
-        },
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "yllapitajaohjeet-9kIb7LsIOM",
+      "label": "Ylläpitäjäohjeet",
+      "platform": "android",
+      "children": [
         {
           "type": "doc",
           "id": "ensimmainen-kirjautuminen-VB4kdcfIUZ",

@@ -23,7 +23,7 @@
   "blocks": [
     {
       "type": "html",
-      "html": "<p>\\</p>\n<h1 id=\"atak---create--manage-feeds---advanced-features\"><a href=\"#atak---create--manage-feeds---advanced-features\">ATAK - Create &#x26; Manage Feeds - Advanced Features</a></h1>\n<h2 id=\"atak-connected-to-takserver---create--manage-feeds\"><a href=\"#atak-connected-to-takserver---create--manage-feeds\">ATAK connected to takserver - Create &#x26; Manage Feeds</a></h2>"
+      "html": "<h1 id=\"atak---create--manage-feeds---advanced-features\"><a href=\"#atak---create--manage-feeds---advanced-features\">ATAK - Create &#x26; Manage Feeds - Advanced Features</a></h1>\n<h2 id=\"atak-connected-to-takserver---create--manage-feeds\"><a href=\"#atak-connected-to-takserver---create--manage-feeds\">ATAK connected to takserver - Create &#x26; Manage Feeds</a></h2>"
     },
     {
       "type": "slideset",

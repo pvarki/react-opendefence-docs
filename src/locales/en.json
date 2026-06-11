@@ -29,7 +29,8 @@
     "endOfBook": "You finished {{book}}",
     "notTranslated": "This page is not yet translated. Showing English content.",
     "comingSoon": "This page is under development",
-    "pageAnnouncement": "Page: {{title}} — {{current}} of {{total}}"
+    "pageAnnouncement": "Page: {{title}} — {{current}} of {{total}}",
+    "nextPage": "Next page"
   },
   "slides": {
     "stepOf": "Step {{current}} of {{total}}",
@@ -51,5 +52,9 @@
     "language": "Language",
     "updateAvailable": "Docs updated",
     "reload": "Reload"
+  },
+  "platform": {
+    "label": "Platform",
+    "underDevelopment": "Under development"
   }
 }

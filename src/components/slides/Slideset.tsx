@@ -1,7 +1,7 @@
 import { useIsMobile } from "@/hooks/use-mobile";
 import type { SlidesetBlock } from "@shared/content-schema";
 import { SlideDeck } from "@/components/slides/SlideDeck";
-import { StepList } from "@/components/slides/StepList";
+import { MobileSlideShow } from "@/components/slides/MobileSlideShow";
 
 interface SlidesetProps {
   block: SlidesetBlock;
@@ -9,16 +9,16 @@ interface SlidesetProps {
 }
 
 /**
- * Step-by-step guide block, the historically hardest UI piece — solved by
- * never sharing a gesture code path: desktop gets an Embla slide deck (its
- * own data-swipe-scope), mobile gets a plain vertical step list with zero
- * gesture code on the platform where nesting used to break.
+ * Step-by-step guide block. Both form factors are swipable slideshows that
+ * own their gestures (data-swipe-scope): desktop shows image-left/text-right
+ * slides, mobile maximizes the screen so image and caption are both visible
+ * at one glance.
  */
 export function Slideset({ block, bindSlideParam }: SlidesetProps) {
   const isMobile = useIsMobile();
 
   return isMobile ? (
-    <StepList block={block} />
+    <MobileSlideShow block={block} />
   ) : (
     <SlideDeck block={block} bindSlideParam={bindSlideParam} />
   );

@@ -23,7 +23,7 @@
   "blocks": [
     {
       "type": "html",
-      "html": "<p>\\</p>\n<h1 id=\"atak---geochat---basic-use\"><a href=\"#atak---geochat---basic-use\">ATAK - GeoChat - Basic use</a></h1>\n<h2 id=\"atak-connected-to-takserver---geochat\"><a href=\"#atak-connected-to-takserver---geochat\">ATAK connected to takserver - GeoChat</a></h2>"
+      "html": "<h1 id=\"atak---geochat---basic-use\"><a href=\"#atak---geochat---basic-use\">ATAK - GeoChat - Basic use</a></h1>\n<h2 id=\"atak-connected-to-takserver---geochat\"><a href=\"#atak-connected-to-takserver---geochat\">ATAK connected to takserver - GeoChat</a></h2>"
     },
     {
       "type": "slideset",

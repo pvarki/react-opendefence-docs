@@ -152,6 +152,9 @@ function unescapeMarkdown(markdown: string): string {
       .replace(/\\`/g, "`")
       // Remove double underscores around image paths
       .replace(/(!\[[^\]]*\]\()__([^)]+)__(\))/g, "$1$2$3")
+      // Outline exports intentionally blank lines as a lone backslash, which
+      // would otherwise render as a literal "\" paragraph.
+      .replace(/^\\\s*$/gm, "")
   );
 }
 

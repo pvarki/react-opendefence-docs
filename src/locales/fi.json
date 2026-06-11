@@ -29,7 +29,8 @@
     "endOfBook": "Sait valmiiksi: {{book}}",
     "notTranslated": "Tätä sivua ei ole vielä suomennettu. Näytetään englanninkielinen sisältö.",
     "comingSoon": "Tämä sivu on työn alla",
-    "pageAnnouncement": "Sivu: {{title}} — {{current}} / {{total}}"
+    "pageAnnouncement": "Sivu: {{title}} — {{current}} / {{total}}",
+    "nextPage": "Seuraava sivu"
   },
   "slides": {
     "stepOf": "Vaihe {{current}} / {{total}}",
@@ -51,5 +52,9 @@
     "language": "Kieli",
     "updateAvailable": "Ohjeet päivitetty",
     "reload": "Lataa uudelleen"
+  },
+  "platform": {
+    "label": "Alusta",
+    "underDevelopment": "Kesken"
   }
 }

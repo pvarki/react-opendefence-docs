@@ -17,7 +17,7 @@
   "blocks": [
     {
       "type": "html",
-      "html": "<p>\\</p>\n<h1 id=\"clearing-content\"><a href=\"#clearing-content\">Clearing Content</a></h1>"
+      "html": "<h1 id=\"clearing-content\"><a href=\"#clearing-content\">Clearing Content</a></h1>"
     },
     {
       "type": "slideset",

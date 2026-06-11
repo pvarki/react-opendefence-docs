@@ -22,12 +22,6 @@
       "children": [
         {
           "type": "doc",
-          "id": "tyokalut-EbDYHhpQYw",
-          "label": "Työkalut",
-          "slug": "tyokalut-EbDYHhpQYw"
-        },
-        {
-          "type": "doc",
           "id": "opentak-icu-8GEhKJ6UDH",
           "label": "Opentak ICU",
           "slug": "opentak-icu-8GEhKJ6UDH"

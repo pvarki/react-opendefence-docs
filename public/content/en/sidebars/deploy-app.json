@@ -5,21 +5,10 @@
   "items": [
     {
       "type": "group",
-      "id": "android-MENReFAfCN",
-      "label": "Android",
+      "id": "user-guide-SNTomIhnLe",
+      "label": "User Guide",
+      "platform": "android",
       "children": [
-        {
-          "type": "doc",
-          "id": "android-MENReFAfCN",
-          "label": "Android",
-          "slug": "android-MENReFAfCN"
-        },
-        {
-          "type": "doc",
-          "id": "user-guide-SNTomIhnLe",
-          "label": "User Guide",
-          "slug": "user-guide-SNTomIhnLe"
-        },
         {
           "type": "doc",
           "id": "joining-a-deploy-app-p9htrbBL4S",
@@ -37,13 +26,15 @@
           "id": "interface-4Ncp4affe9",
           "label": "Interface",
           "slug": "interface-4Ncp4affe9"
-        },
-        {
-          "type": "doc",
-          "id": "admin-guide-V5Hs1rBdRL",
-          "label": "Admin Guide",
-          "slug": "admin-guide-V5Hs1rBdRL"
-        },
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "admin-guide-V5Hs1rBdRL",
+      "label": "Admin Guide",
+      "platform": "android",
+      "children": [
         {
           "type": "doc",
           "id": "first-login-qwmPnmJsrF",
@@ -72,21 +63,10 @@
     },
     {
       "type": "group",
-      "id": "ios-8ux4fDfFeI",
-      "label": "iOS",
+      "id": "user-guide-8g9rzhpxcj",
+      "label": "User Guide",
+      "platform": "ios",
       "children": [
-        {
-          "type": "doc",
-          "id": "ios-8ux4fDfFeI",
-          "label": "iOS",
-          "slug": "ios-8ux4fDfFeI"
-        },
-        {
-          "type": "doc",
-          "id": "user-guide-8g9rzhpxcj",
-          "label": "User Guide",
-          "slug": "user-guide-8g9rzhpxcj"
-        },
         {
           "type": "doc",
           "id": "join-a-deploy-app-f7TuSbNQId",
@@ -98,13 +78,15 @@
           "id": "using-applications-fNlwcUs5fv",
           "label": "Using applications",
           "slug": "using-applications-fNlwcUs5fv"
-        },
-        {
-          "type": "doc",
-          "id": "admin-guide-H0sjVgEhja",
-          "label": "Admin Guide",
-          "slug": "admin-guide-H0sjVgEhja"
-        },
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "admin-guide-H0sjVgEhja",
+      "label": "Admin Guide",
+      "platform": "ios",
+      "children": [
         {
           "type": "doc",
           "id": "admin-first-login-pij4XWfCWf",
@@ -133,21 +115,10 @@
     },
     {
       "type": "group",
-      "id": "windows-7LrSmQmqQ6",
-      "label": "Windows",
+      "id": "user-guide-irnHx8wSE7",
+      "label": "User Guide",
+      "platform": "windows",
       "children": [
-        {
-          "type": "doc",
-          "id": "windows-7LrSmQmqQ6",
-          "label": "Windows",
-          "slug": "windows-7LrSmQmqQ6"
-        },
-        {
-          "type": "doc",
-          "id": "user-guide-irnHx8wSE7",
-          "label": "User Guide",
-          "slug": "user-guide-irnHx8wSE7"
-        },
         {
           "type": "doc",
           "id": "join-a-deploy-app-Ns73TcVodz",
@@ -159,13 +130,15 @@
           "id": "using-applications-j9IwlemcTo",
           "label": "Using applications",
           "slug": "using-applications-j9IwlemcTo"
-        },
-        {
-          "type": "doc",
-          "id": "admin-guide-vhfls732g4",
-          "label": "Admin Guide",
-          "slug": "admin-guide-vhfls732g4"
-        },
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "admin-guide-vhfls732g4",
+      "label": "Admin Guide",
+      "platform": "windows",
+      "children": [
         {
           "type": "doc",
           "id": "admin-first-login-1wjrnFERNt",
@@ -194,21 +167,10 @@
     },
     {
       "type": "group",
-      "id": "linux-JmHAcb7bTi",
-      "label": "Linux",
+      "id": "user-guide-6StTnmEqiQ",
+      "label": "User Guide",
+      "platform": "linux",
       "children": [
-        {
-          "type": "doc",
-          "id": "linux-JmHAcb7bTi",
-          "label": "Linux",
-          "slug": "linux-JmHAcb7bTi"
-        },
-        {
-          "type": "doc",
-          "id": "user-guide-6StTnmEqiQ",
-          "label": "User Guide",
-          "slug": "user-guide-6StTnmEqiQ"
-        },
         {
           "type": "doc",
           "id": "join-a-deploy-app-BFVDjvnboR",
@@ -220,13 +182,15 @@
           "id": "using-applications-NYYhktcNaX",
           "label": "Using applications",
           "slug": "using-applications-NYYhktcNaX"
-        },
-        {
-          "type": "doc",
-          "id": "admin-guide-DA32dON96v",
-          "label": "Admin Guide",
-          "slug": "admin-guide-DA32dON96v"
-        },
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "admin-guide-DA32dON96v",
+      "label": "Admin Guide",
+      "platform": "linux",
+      "children": [
         {
           "type": "doc",
           "id": "admin-first-login-odAZzS2U6W",
@@ -255,21 +219,10 @@
     },
     {
       "type": "group",
-      "id": "macos-6fg0DsaF5B",
-      "label": "MacOS",
+      "id": "user-guide-yEohm3XLal",
+      "label": "User Guide",
+      "platform": "macos",
       "children": [
-        {
-          "type": "doc",
-          "id": "macos-6fg0DsaF5B",
-          "label": "MacOS",
-          "slug": "macos-6fg0DsaF5B"
-        },
-        {
-          "type": "doc",
-          "id": "user-guide-yEohm3XLal",
-          "label": "User Guide",
-          "slug": "user-guide-yEohm3XLal"
-        },
         {
           "type": "doc",
           "id": "join-a-deploy-app-OrrLFQhem6",
@@ -281,13 +234,15 @@
           "id": "using-applications-VTXa01ztks",
           "label": "Using applications",
           "slug": "using-applications-VTXa01ztks"
-        },
-        {
-          "type": "doc",
-          "id": "admin-guide-Jf06VjsJzu",
-          "label": "Admin Guide",
-          "slug": "admin-guide-Jf06VjsJzu"
-        },
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "admin-guide-Jf06VjsJzu",
+      "label": "Admin Guide",
+      "platform": "macos",
+      "children": [
         {
           "type": "doc",
           "id": "admin-first-login-uvcV5pEinh",
