@@ -11,12 +11,13 @@ import {
 } from "@shared/content-schema";
 import { loadManifest, loadPage, loadSidebar } from "@/lib/content/loader";
 import {
-  filterSidebarByPlatform,
+  filterSidebarByClient,
   readingOrder,
+  resolveClient,
   resolveSplat,
 } from "@/lib/content/neighbors";
 import { downloadCollectionImages } from "@/lib/pwa/offline-download";
-import { setPlatform, usePlatform } from "@/lib/platform";
+import { setClientForBook, setPlatform, useReadingView } from "@/lib/platform";
 import { PageSwiper } from "@/components/reader/PageSwiper";
 import { NotFound } from "@/components/shell/NotFound";
 import { SidebarItems, SidebarNav } from "@/components/shell/SidebarNav";
@@ -96,7 +97,7 @@ export const Route = createFileRoute("/$locale/$")({
 function ReaderRoute() {
   const data = Route.useLoaderData();
   const { locale } = Route.useParams();
-  const platform = usePlatform();
+  const view = useReadingView();
   const bookLabel =
     data.manifest.collections.find((c) => c.slug === data.collection)?.label ??
     data.collection;
@@ -104,11 +105,12 @@ function ReaderRoute() {
     data.kind === "page"
       ? data.pages.find((p) => p.slug === data.slug)
       : undefined;
+  const activeClient = resolveClient(data.manifest, data.collection, view);
 
-  // Deep links (search, shared URLs) into another platform's pages switch
-  // the selector — the page the user asked for wins, but only when the PAGE
-  // changes: an explicit platform pick (which navigates separately) must not
-  // be fought back.
+  // Deep links (search, shared URLs) into another client's pages switch the
+  // selector — the page the user asked for wins, but only when the PAGE
+  // changes: an explicit pick (which navigates separately) must not be
+  // fought back.
   const lastPageKeyRef = useRef<string>(undefined);
   useEffect(() => {
     const key = currentPage
@@ -116,10 +118,17 @@ function ReaderRoute() {
       : undefined;
     if (!key || key === lastPageKeyRef.current) return;
     lastPageKeyRef.current = key;
-    if (currentPage!.platform && currentPage!.platform !== platform) {
+    if (currentPage!.clientId && currentPage!.clientId !== activeClient?.id) {
+      setClientForBook(currentPage!.collection, currentPage!.clientId);
+      if (currentPage!.platform) setPlatform(currentPage!.platform);
+    } else if (
+      !currentPage!.clientId &&
+      currentPage!.platform &&
+      currentPage!.platform !== view.platform
+    ) {
       setPlatform(currentPage!.platform);
     }
-  }, [currentPage, platform]);
+  }, [currentPage, activeClient, view.platform]);
 
   return (
     <div className="flex h-full">
@@ -128,6 +137,7 @@ function ReaderRoute() {
         contentLocale={data.contentLocale}
         collection={data.collection}
         currentSlug={data.slug}
+        clientId={activeClient?.id}
       />
       <div className="flex min-w-0 flex-1 flex-col">
         <ReaderBar
@@ -146,7 +156,7 @@ function ReaderRoute() {
               manifest={data.manifest}
               collection={data.collection}
               slug={data.slug}
-              platform={currentPage?.platform ?? platform}
+              view={view}
             />
           )}
         </div>
@@ -174,11 +184,12 @@ function BookCover({
 }) {
   const { t } = useTranslation();
   const { locale } = Route.useParams();
-  const platform = usePlatform();
+  const view = useReadingView();
   const collection = data.manifest.collections.find(
     (c) => c.slug === data.collection,
   );
-  const pages = readingOrder(data.manifest, data.collection, platform);
+  const activeClient = resolveClient(data.manifest, data.collection, view);
+  const pages = readingOrder(data.manifest, data.collection, view);
   const first = pages[0];
 
   // The cover IS the book's table of contents: the same grouped chapter tree
@@ -225,7 +236,7 @@ function BookCover({
         <nav aria-label={t("nav.contents")} className="mt-5 md:mt-8">
           {sidebar && (
             <SidebarItems
-              items={filterSidebarByPlatform(sidebar.items, platform)}
+              items={filterSidebarByClient(sidebar.items, activeClient?.id)}
               locale={locale}
               collection={data.collection}
               defaultOpen

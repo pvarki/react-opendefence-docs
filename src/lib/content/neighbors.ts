@@ -1,27 +1,63 @@
 import type {
+  ClientInfo,
   Locale,
   LocaleManifest,
   ManifestPage,
-  Platform,
   SidebarItem,
 } from "@shared/content-schema";
+import type { ReadingView } from "@/lib/platform";
+
+/**
+ * The active client (selector entry) for a book: the remembered explicit
+ * pick, else the first client matching the global platform, else the first
+ * client. Books without clients return undefined (nothing to filter by).
+ */
+export function resolveClient(
+  manifest: LocaleManifest,
+  collection: string,
+  view: ReadingView,
+): ClientInfo | undefined {
+  const clients = manifest.collections.find(
+    (c) => c.slug === collection,
+  )?.clients;
+  if (!clients || clients.length === 0) return undefined;
+  const overrideId = view.clientOverrides[collection];
+  return (
+    clients.find((c) => c.id === overrideId) ??
+    clients.find((c) => c.platform === view.platform) ??
+    clients[0]
+  );
+}
+
+function pageMatchesView(
+  page: ManifestPage,
+  client: ClientInfo | undefined,
+  view: ReadingView | undefined,
+): boolean {
+  if (!view) return true;
+  if (page.clientId) return page.clientId === client?.id;
+  // Client-less pages tagged with #tag:<platform> follow the global platform.
+  if (page.platform) return page.platform === view.platform;
+  return true;
+}
 
 /**
  * A collection's pages in reading order (hidden pages excluded). With a
- * platform, only that platform's pages plus platform-agnostic ones — the
- * reader swipes through everything for THIS platform, start to finish.
+ * view, only the active client's pages plus client-agnostic ones — the
+ * reader swipes through everything for THIS view, start to finish.
  */
 export function readingOrder(
   manifest: LocaleManifest,
   collection: string,
-  platform?: Platform,
+  view?: ReadingView,
 ): ManifestPage[] {
+  const client = view ? resolveClient(manifest, collection, view) : undefined;
   return manifest.pages
     .filter(
       (p) =>
         p.collection === collection &&
         !p.hidden &&
-        (!platform || !p.platform || p.platform === platform),
+        pageMatchesView(p, client, view),
     )
     .sort((a, b) => a.order - b.order);
 }
@@ -39,9 +75,9 @@ export function resolvePosition(
   manifest: LocaleManifest,
   collection: string,
   slug: string,
-  platform?: Platform,
+  view?: ReadingView,
 ): PagePosition | undefined {
-  const order = readingOrder(manifest, collection, platform);
+  const order = readingOrder(manifest, collection, view);
   const index = order.findIndex((p) => p.slug === slug);
   if (index === -1) return undefined;
   return {
@@ -60,11 +96,11 @@ export function resolvePosition(
  */
 export function globalReadingOrder(
   manifest: LocaleManifest,
-  platform?: Platform,
+  view?: ReadingView,
 ): ManifestPage[] {
   return [...manifest.collections]
     .sort((a, b) => a.order - b.order)
-    .flatMap((c) => readingOrder(manifest, c.slug, platform));
+    .flatMap((c) => readingOrder(manifest, c.slug, view));
 }
 
 /**
@@ -76,14 +112,14 @@ export function resolveGlobalPosition(
   manifest: LocaleManifest,
   collection: string,
   slug: string,
-  platform?: Platform,
+  view?: ReadingView,
 ): PagePosition | undefined {
-  const global = globalReadingOrder(manifest, platform);
+  const global = globalReadingOrder(manifest, view);
   const gi = global.findIndex(
     (p) => p.collection === collection && p.slug === slug,
   );
   if (gi === -1) return undefined;
-  const book = readingOrder(manifest, collection, platform);
+  const book = readingOrder(manifest, collection, view);
   const bi = book.findIndex((p) => p.slug === slug);
   return {
     page: global[gi],
@@ -122,10 +158,10 @@ export function pageRoute(locale: Locale, page: ManifestPage): string {
   return `/${locale}/${page.collection}/${page.slug}`;
 }
 
-/** Platform-tagged chapters from other platforms are hidden entirely. */
-export function filterSidebarByPlatform(
+/** Client-tagged sections from other clients are hidden entirely. */
+export function filterSidebarByClient(
   items: SidebarItem[],
-  platform: Platform,
+  clientId: string | undefined,
 ): SidebarItem[] {
-  return items.filter((i) => !i.platform || i.platform === platform);
+  return items.filter((i) => !i.clientId || i.clientId === clientId);
 }

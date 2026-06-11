@@ -1,7 +1,8 @@
-import { useSyncExternalStore } from "react";
+import { useMemo, useSyncExternalStore } from "react";
 import { PLATFORMS, type Platform } from "@shared/content-schema";
 
 const STORAGE_KEY = "platform";
+const CLIENTS_KEY = "clientByBook";
 
 /** First visit: pick the platform from the user agent; changeable + remembered. */
 function detectFromUserAgent(): Platform {
@@ -53,6 +54,63 @@ export function usePlatform(): Platform {
     subscribe,
     getPlatform,
     () => "android" as Platform,
+  );
+}
+
+// ---------------------------------------------------------------------------
+// Per-book client choice (e.g. TAK guide: ATAK vs TAK Tracker, both android).
+// The global platform remains the cross-book default; an explicit client
+// pick is remembered for that book.
+// ---------------------------------------------------------------------------
+
+export type ClientOverrides = Readonly<Record<string, string>>;
+
+function readOverrides(): Record<string, string> {
+  try {
+    const raw = localStorage.getItem(CLIENTS_KEY);
+    const parsed: unknown = raw ? JSON.parse(raw) : {};
+    if (parsed && typeof parsed === "object" && !Array.isArray(parsed)) {
+      return parsed as Record<string, string>;
+    }
+  } catch {
+    // fall through
+  }
+  return {};
+}
+
+let overrides: ClientOverrides = readOverrides();
+
+export function getClientOverrides(): ClientOverrides {
+  return overrides;
+}
+
+export function setClientForBook(collection: string, clientId: string): void {
+  if (overrides[collection] === clientId) return;
+  overrides = { ...overrides, [collection]: clientId };
+  try {
+    localStorage.setItem(CLIENTS_KEY, JSON.stringify(overrides));
+  } catch {
+    // non-fatal
+  }
+  for (const listener of listeners) listener();
+}
+
+export function useClientOverrides(): ClientOverrides {
+  return useSyncExternalStore(subscribe, getClientOverrides, () => overrides);
+}
+
+export interface ReadingView {
+  platform: Platform;
+  clientOverrides: ClientOverrides;
+}
+
+/** The reader's full content-view state: global platform + per-book clients. */
+export function useReadingView(): ReadingView {
+  const platform = usePlatform();
+  const clientOverrides = useClientOverrides();
+  return useMemo(
+    () => ({ platform, clientOverrides }),
+    [platform, clientOverrides],
   );
 }
 

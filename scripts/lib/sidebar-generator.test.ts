@@ -144,15 +144,16 @@ describe("buildBook platform model", () => {
 
   const book = buildBook(deployTree, collection, "en");
 
-  it("detects platform organizers and tags their pages", () => {
-    expect(book.platforms.map((p) => [p.key, p.label])).toEqual([
-      ["android", "Android"],
-      ["ios", "iOS"],
+  it("detects client organizers and tags their pages", () => {
+    expect(book.clients.map((c) => [c.platform, c.label, c.id])).toEqual([
+      ["android", "Android", "android-Aa11111111"],
+      ["ios", "iOS", "ios-Ff66666666"],
     ]);
     const joining = book.readingOrder.find(
       (r) => r.slug === "joining-Cc33333333",
     );
     expect(joining?.platform).toBe("android");
+    expect(joining?.clientId).toBe("android-Aa11111111");
     expect(joining?.chapterLabel).toBe("User Guide");
   });
 
@@ -172,17 +173,17 @@ describe("buildBook platform model", () => {
     expect(common?.chapterLabel).toBe("Troubleshooting");
   });
 
-  it("tags sidebar groups with their platform", () => {
+  it("tags sidebar groups with their client", () => {
     const groups = book.sidebar.items.filter((i) => i.type === "group");
     const userGuideAndroid = groups.find(
       (g) => g.id === "user-guide-Bb22222222",
     );
-    expect(userGuideAndroid?.platform).toBe("android");
+    expect(userGuideAndroid?.clientId).toBe("android-Aa11111111");
     const trouble = groups.find((g) => g.id === "troubleshooting-Ii99999999");
-    expect(trouble?.platform).toBeUndefined();
+    expect(trouble?.clientId).toBeUndefined();
   });
 
-  it("handles TAK-style wrappers and multi-client platforms", () => {
+  it("handles TAK-style wrappers; every client is its own selector entry", () => {
     const takTree = [
       node("Deploy App - TAK", "tak-intro-Kk11111111"),
       node("TAK Clients", "tak-clients-Ll12121212", [
@@ -205,36 +206,96 @@ describe("buildBook platform model", () => {
     ];
     const tak = buildBook(takTree, collection, "en");
 
-    // The wrapper organizer disappears; clients map onto platforms.
-    expect(tak.platforms.map((p) => [p.key, p.label])).toEqual([
+    // The wrapper organizer disappears; each client is selectable on its
+    // own (TAK Tracker is NOT merged into ATAK's android entry).
+    expect(tak.clients.map((c) => [c.platform, c.label])).toEqual([
       ["android", "ATAK"],
       ["android", "TAK Tracker - Android"],
       ["ios", "iTAK"],
     ]);
 
-    // Multi-client platform (android x2): chapter labels carry the client.
+    // Pages carry their client; chapter labels stay bare (clients never mix).
     const what = tak.readingOrder.find(
       (r) => r.slug === "what-is-tak-Oo15151515",
     );
-    expect(what?.platform).toBe("android");
-    expect(what?.chapterLabel).toBe("ATAK · Start");
+    expect(what?.clientId).toBe("atak-Mm13131313");
+    expect(what?.chapterLabel).toBe("Start");
     const trackerIntro = tak.readingOrder.find(
       (r) => r.slug === "tracker-intro-Rr18181818",
     );
-    expect(trackerIntro?.chapterLabel).toBe("TAK Tracker - Android · Start");
+    expect(trackerIntro?.clientId).toBe("tracker-Pp16161616");
+    expect(trackerIntro?.chapterLabel).toBe("Start");
 
-    // Single-client platform keeps the bare chapter label.
-    const itakIntro = tak.readingOrder.find(
-      (r) => r.slug === "itak-intro-Uu21212121",
-    );
-    expect(itakIntro?.platform).toBe("ios");
-    expect(itakIntro?.chapterLabel).toBe("Start");
-
-    // The top-level leaf stays platform-agnostic.
+    // The top-level leaf stays client-agnostic.
     const intro = tak.readingOrder.find(
       (r) => r.slug === "tak-intro-Kk11111111",
     );
-    expect(intro?.platform).toBeUndefined();
+    expect(intro?.clientId).toBeUndefined();
+  });
+
+  it("META markers: toporg sections group chapters; platform marker makes a client", () => {
+    const fooClientId = "id-foo-client";
+    const introTopId = "id-toporg-intro";
+    const tree = [
+      node("FooApp", "fooapp-Vv22222222", [
+        node("INTRODUCTION", "introduction-Ww23232323", [
+          node("Welcome", "welcome-Xx24242424"),
+          node("Start", "start-Yy25252525", [
+            node("Install", "install-Zz26262626"),
+          ]),
+        ]),
+        node("Advanced", "advanced-Ab27272727", [
+          node("Plugins", "plugins-Ac28282828"),
+        ]),
+      ]),
+    ];
+    // Stamp deterministic ids for the marker maps.
+    tree[0].id = fooClientId;
+    tree[0].children[0].id = introTopId;
+
+    const built = buildBook(tree, collection, "en", {
+      toporgIds: new Set([introTopId]),
+      platformByDocId: new Map([[fooClientId, "android"]]),
+    });
+
+    // META: platform made FooApp a client despite the unknown name.
+    expect(built.clients).toEqual([
+      {
+        id: "fooapp-Vv22222222",
+        platform: "android",
+        label: "FooApp",
+        docId: fooClientId,
+      },
+    ]);
+
+    // META: toporg made INTRODUCTION a section heading with a loose page and
+    // a chapter inside; Advanced stays a plain chapter at client level.
+    const toporg = built.sidebar.items.find((i) => i.type === "toporg");
+    expect(toporg?.label).toBe("INTRODUCTION");
+    expect(toporg?.clientId).toBe("fooapp-Vv22222222");
+    expect(toporg?.children?.map((c) => [c.type, c.label])).toEqual([
+      ["doc", "Welcome"],
+      ["group", "Start"],
+    ]);
+
+    // Loose page under the toporg: chapter = the toporg itself.
+    const welcome = built.readingOrder.find(
+      (r) => r.slug === "welcome-Xx24242424",
+    );
+    expect(welcome?.chapterLabel).toBe("INTRODUCTION");
+    expect(welcome?.clientId).toBe("fooapp-Vv22222222");
+    // Chapter page inside the toporg keeps the chapter label.
+    const install = built.readingOrder.find(
+      (r) => r.slug === "install-Zz26262626",
+    );
+    expect(install?.chapterLabel).toBe("Start");
+
+    // Reading order is pre-order through the whole client.
+    expect(built.readingOrder.map((r) => r.slug)).toEqual([
+      "welcome-Xx24242424",
+      "install-Zz26262626",
+      "plugins-Ac28282828",
+    ]);
   });
 });
 

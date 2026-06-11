@@ -1,13 +1,14 @@
 import { useNavigate } from "@tanstack/react-router";
 import { useTranslation } from "react-i18next";
 import { Check } from "lucide-react";
+import { PLATFORMS, type ClientInfo } from "@shared/content-schema";
 import {
-  PLATFORMS,
-  type Platform,
-  type PlatformInfo,
-} from "@shared/content-schema";
-import { PLATFORM_LABELS, setPlatform, usePlatform } from "@/lib/platform";
-import { readingOrder } from "@/lib/content/neighbors";
+  PLATFORM_LABELS,
+  setClientForBook,
+  setPlatform,
+  useReadingView,
+} from "@/lib/platform";
+import { readingOrder, resolveClient } from "@/lib/content/neighbors";
 import type { ReaderData } from "@/routes/$locale/$";
 import {
   Drawer,
@@ -36,36 +37,65 @@ export function PlatformSheet({
   reader,
 }: PlatformSheetProps) {
   const { t } = useTranslation();
-  const active = usePlatform();
+  const view = useReadingView();
   const navigate = useNavigate();
 
-  const bookPlatforms = reader.manifest.collections.find(
+  const bookClients = reader.manifest.collections.find(
     (c) => c.slug === reader.collection,
-  )?.platforms;
-  const options: PlatformInfo[] =
-    bookPlatforms && bookPlatforms.length > 0
-      ? bookPlatforms
-      : PLATFORMS.map((key) => ({ key, label: PLATFORM_LABELS[key] }));
+  )?.clients;
+  // Books without clients still offer the generic platform choice (it
+  // drives the rest of the app).
+  const options: ClientInfo[] =
+    bookClients && bookClients.length > 0
+      ? bookClients
+      : PLATFORMS.map((key) => ({
+          id: key,
+          platform: key,
+          label: PLATFORM_LABELS[key],
+        }));
 
-  const pick = (next: Platform) => {
-    setPlatform(next);
+  const active = bookClients?.length
+    ? resolveClient(reader.manifest, reader.collection, view)
+    : options.find((o) => o.platform === view.platform);
+
+  const pick = (next: ClientInfo) => {
+    if (bookClients?.length) setClientForBook(reader.collection, next.id);
+    setPlatform(next.platform);
     onOpenChange(false);
     const current = reader.slug
       ? reader.manifest.pages.find(
           (p) => p.collection === reader.collection && p.slug === reader.slug,
         )
       : undefined;
-    if (current?.platform && current.platform !== next) {
-      const first = readingOrder(reader.manifest, reader.collection, next)[0];
-      void navigate({
-        to: "/$locale/$",
-        params: {
-          locale,
-          _splat: first
-            ? `${first.collection}/${first.slug}`
-            : reader.collection,
-        },
-      });
+    // Reading a page that doesn't exist in the picked view: continue at the
+    // view's first page of this book.
+    if (current && (current.clientId ?? current.platform)) {
+      const stillVisible = current.clientId
+        ? current.clientId === next.id
+        : current.platform === next.platform;
+      if (!stillVisible) {
+        const nextView = {
+          platform: next.platform,
+          clientOverrides: {
+            ...view.clientOverrides,
+            [reader.collection]: next.id,
+          },
+        };
+        const first = readingOrder(
+          reader.manifest,
+          reader.collection,
+          nextView,
+        )[0];
+        void navigate({
+          to: "/$locale/$",
+          params: {
+            locale,
+            _splat: first
+              ? `${first.collection}/${first.slug}`
+              : reader.collection,
+          },
+        });
+      }
     }
   };
 
@@ -78,19 +108,19 @@ export function PlatformSheet({
         <DrawerDescription className="sr-only" />
         <ul className="px-2 pb-8">
           {options.map((option) => (
-            <li key={option.key}>
+            <li key={option.id}>
               <button
                 type="button"
-                onClick={() => pick(option.key)}
+                onClick={() => pick(option)}
                 className={cn(
                   "flex w-full items-center gap-3 rounded-lg px-3 py-3 text-left",
-                  option.key === active ? "bg-muted font-medium" : "",
+                  option.id === active?.id ? "bg-muted font-medium" : "",
                 )}
               >
                 <Check
                   className={cn(
                     "size-4 shrink-0 text-primary",
-                    option.key !== active && "invisible",
+                    option.id !== active?.id && "invisible",
                   )}
                 />
                 {option.label}

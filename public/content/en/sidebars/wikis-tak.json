@@ -19,7 +19,7 @@
       "type": "group",
       "id": "tools-and-functions-6akJzo2ed0",
       "label": "Tools and functions",
-      "platform": "android",
+      "clientId": "atak-android-tak-YCvtAZaLrF",
       "children": [
         {
           "type": "doc",
@@ -69,7 +69,7 @@
       "type": "group",
       "id": "atak-android-tak-YCvtAZaLrF",
       "label": "ATAK - Android TAK",
-      "platform": "android",
+      "clientId": "atak-android-tak-YCvtAZaLrF",
       "children": [
         {
           "type": "doc",
@@ -107,7 +107,7 @@
       "type": "group",
       "id": "tools-and-functions-Wak49eEupd",
       "label": "Tools and functions",
-      "platform": "windows",
+      "clientId": "wintak-windows-tak-h251ILyaWa",
       "children": [
         {
           "type": "doc",
@@ -139,7 +139,7 @@
       "type": "group",
       "id": "wintak-windows-tak-h251ILyaWa",
       "label": "WinTAK - Windows TAK",
-      "platform": "windows",
+      "clientId": "wintak-windows-tak-h251ILyaWa",
       "children": [
         {
           "type": "doc",

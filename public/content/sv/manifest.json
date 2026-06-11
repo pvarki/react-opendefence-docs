@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "locale": "sv",
-  "generatedAt": "2026-06-11T06:36:39.803Z",
+  "generatedAt": "2026-06-11T16:33:34.651Z",
   "collections": [
     {
       "slug": "deploy-app",
@@ -9,10 +9,11 @@
       "description": "Main application documentation",
       "section": "deploy-app",
       "order": 0,
-      "platforms": [
+      "clients": [
         {
-          "key": "android",
-          "label": "Android"
+          "id": "android-yFEMlNyGOI",
+          "label": "Android",
+          "platform": "android"
         }
       ]
     },
@@ -43,14 +44,16 @@
       "description": "TAK technical reference",
       "section": "wikis",
       "order": 4,
-      "platforms": [
+      "clients": [
         {
-          "key": "android",
-          "label": "ATAK - Android TAK"
+          "id": "atak-android-tak-WLqt5LNmVx",
+          "label": "ATAK - Android TAK",
+          "platform": "android"
         },
         {
-          "key": "windows",
-          "label": "WinTAK - Windows TAK"
+          "id": "wintak-windows-tak-AhFOs4e5q4",
+          "label": "WinTAK - Windows TAK",
+          "platform": "windows"
         }
       ]
     },
@@ -84,6 +87,7 @@
       "updatedAt": "2026-02-18T05:50:24.087Z",
       "order": 0,
       "platform": "android",
+      "clientId": "android-yFEMlNyGOI",
       "chapterId": "anvandarguide-q7fgVGQ10J",
       "chapterLabel": "Användarguide"
     },
@@ -101,6 +105,7 @@
       "updatedAt": "2026-02-25T07:30:14.946Z",
       "order": 1,
       "platform": "android",
+      "clientId": "android-yFEMlNyGOI",
       "chapterId": "anvandarguide-q7fgVGQ10J",
       "chapterLabel": "Användarguide"
     },
@@ -118,6 +123,7 @@
       "updatedAt": "2026-02-25T07:31:32.766Z",
       "order": 2,
       "platform": "android",
+      "clientId": "android-yFEMlNyGOI",
       "chapterId": "anvandarguide-q7fgVGQ10J",
       "chapterLabel": "Användarguide"
     },
@@ -135,6 +141,7 @@
       "updatedAt": "2026-02-25T07:33:30.334Z",
       "order": 3,
       "platform": "android",
+      "clientId": "android-yFEMlNyGOI",
       "chapterId": "administratorsguide-iLjfd22kyb",
       "chapterLabel": "Administratörsguide"
     },
@@ -152,6 +159,7 @@
       "updatedAt": "2026-02-25T07:34:01.620Z",
       "order": 4,
       "platform": "android",
+      "clientId": "android-yFEMlNyGOI",
       "chapterId": "administratorsguide-iLjfd22kyb",
       "chapterLabel": "Administratörsguide"
     },
@@ -169,6 +177,7 @@
       "updatedAt": "2026-02-25T07:34:57.091Z",
       "order": 5,
       "platform": "android",
+      "clientId": "android-yFEMlNyGOI",
       "chapterId": "administratorsguide-iLjfd22kyb",
       "chapterLabel": "Administratörsguide"
     },
@@ -186,6 +195,7 @@
       "updatedAt": "2026-02-25T07:35:34.103Z",
       "order": 6,
       "platform": "android",
+      "clientId": "android-yFEMlNyGOI",
       "chapterId": "administratorsguide-iLjfd22kyb",
       "chapterLabel": "Administratörsguide"
     },
@@ -354,6 +364,7 @@
       "updatedAt": "2026-02-19T13:05:05.797Z",
       "order": 2,
       "platform": "android",
+      "clientId": "atak-android-tak-WLqt5LNmVx",
       "chapterId": "verktyg-och-tillagg-sEB6ccwyRm",
       "chapterLabel": "Verktyg och tillägg"
     },
@@ -372,6 +383,7 @@
       "updatedAt": "2026-02-19T13:05:23.168Z",
       "order": 3,
       "platform": "android",
+      "clientId": "atak-android-tak-WLqt5LNmVx",
       "chapterId": "verktyg-och-tillagg-sEB6ccwyRm",
       "chapterLabel": "Verktyg och tillägg"
     },
@@ -390,6 +402,7 @@
       "updatedAt": "2026-02-19T13:05:26.738Z",
       "order": 4,
       "platform": "android",
+      "clientId": "atak-android-tak-WLqt5LNmVx",
       "chapterId": "verktyg-och-tillagg-sEB6ccwyRm",
       "chapterLabel": "Verktyg och tillägg"
     },
@@ -408,6 +421,7 @@
       "updatedAt": "2026-02-19T13:05:45.399Z",
       "order": 5,
       "platform": "android",
+      "clientId": "atak-android-tak-WLqt5LNmVx",
       "chapterId": "verktyg-och-tillagg-sEB6ccwyRm",
       "chapterLabel": "Verktyg och tillägg"
     },
@@ -426,6 +440,7 @@
       "updatedAt": "2026-02-19T13:05:48.877Z",
       "order": 6,
       "platform": "android",
+      "clientId": "atak-android-tak-WLqt5LNmVx",
       "chapterId": "verktyg-och-tillagg-sEB6ccwyRm",
       "chapterLabel": "Verktyg och tillägg"
     },
@@ -444,6 +459,7 @@
       "updatedAt": "2026-02-19T13:06:06.400Z",
       "order": 7,
       "platform": "android",
+      "clientId": "atak-android-tak-WLqt5LNmVx",
       "chapterId": "verktyg-och-tillagg-sEB6ccwyRm",
       "chapterLabel": "Verktyg och tillägg"
     },
@@ -462,6 +478,7 @@
       "updatedAt": "2026-02-19T13:04:29.097Z",
       "order": 8,
       "platform": "android",
+      "clientId": "atak-android-tak-WLqt5LNmVx",
       "chapterId": "verktyg-och-tillagg-sEB6ccwyRm",
       "chapterLabel": "Verktyg och tillägg"
     },
@@ -479,6 +496,7 @@
       "updatedAt": "2026-02-19T13:11:09.958Z",
       "order": 9,
       "platform": "android",
+      "clientId": "atak-android-tak-WLqt5LNmVx",
       "chapterId": "atak-android-tak-WLqt5LNmVx",
       "chapterLabel": "ATAK - Android TAK"
     },
@@ -549,6 +567,7 @@
       "updatedAt": "2026-02-19T13:26:29.037Z",
       "order": 14,
       "platform": "windows",
+      "clientId": "wintak-windows-tak-AhFOs4e5q4",
       "chapterId": "verktyg-och-tillagg-vX0F7rltb0",
       "chapterLabel": "Verktyg och tillägg"
     },
@@ -567,6 +586,7 @@
       "updatedAt": "2026-02-19T13:27:11.887Z",
       "order": 15,
       "platform": "windows",
+      "clientId": "wintak-windows-tak-AhFOs4e5q4",
       "chapterId": "verktyg-och-tillagg-vX0F7rltb0",
       "chapterLabel": "Verktyg och tillägg"
     },
@@ -585,6 +605,7 @@
       "updatedAt": "2026-02-19T13:29:25.077Z",
       "order": 16,
       "platform": "windows",
+      "clientId": "wintak-windows-tak-AhFOs4e5q4",
       "chapterId": "verktyg-och-tillagg-vX0F7rltb0",
       "chapterLabel": "Verktyg och tillägg"
     },
@@ -603,6 +624,7 @@
       "updatedAt": "2026-02-19T13:30:04.817Z",
       "order": 17,
       "platform": "windows",
+      "clientId": "wintak-windows-tak-AhFOs4e5q4",
       "chapterId": "verktyg-och-tillagg-vX0F7rltb0",
       "chapterLabel": "Verktyg och tillägg"
     },
@@ -620,6 +642,7 @@
       "updatedAt": "2026-02-19T13:24:27.609Z",
       "order": 18,
       "platform": "windows",
+      "clientId": "wintak-windows-tak-AhFOs4e5q4",
       "chapterId": "wintak-windows-tak-AhFOs4e5q4",
       "chapterLabel": "WinTAK - Windows TAK"
     },

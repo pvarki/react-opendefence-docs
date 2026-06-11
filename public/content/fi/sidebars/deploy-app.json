@@ -7,7 +7,7 @@
       "type": "group",
       "id": "kayttajaohjeet-KILDyYvVV0",
       "label": "Käyttäjäohjeet",
-      "platform": "android",
+      "clientId": "android-vdSzGssyHX",
       "children": [
         {
           "type": "doc",
@@ -33,7 +33,7 @@
       "type": "group",
       "id": "yllapitajaohjeet-9kIb7LsIOM",
       "label": "Ylläpitäjäohjeet",
-      "platform": "android",
+      "clientId": "android-vdSzGssyHX",
       "children": [
         {
           "type": "doc",

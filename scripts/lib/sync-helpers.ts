@@ -13,7 +13,7 @@ import {
   type Locale,
   type LocaleManifest,
   type ManifestPage,
-  type PlatformInfo,
+  type ClientInfo,
   type TranslationsFile,
 } from "../../shared/content-schema";
 import type { CollectionConfig } from "../../config/collections";
@@ -191,6 +191,7 @@ export function buildBookManifestPages(
       order: pages.length,
       ...(hidden ? { hidden: true } : {}),
       ...(ref.platform ? { platform: ref.platform } : {}),
+      ...(ref.clientId ? { clientId: ref.clientId } : {}),
       ...(ref.chapterId
         ? { chapterId: ref.chapterId, chapterLabel: ref.chapterLabel }
         : {}),
@@ -212,8 +213,8 @@ export function buildLocaleManifest(opts: {
   collections: readonly CollectionConfig[];
   /** collection slug -> entries built this run (may be empty arrays). */
   syncedPages: ReadonlyMap<string, ManifestPage[]>;
-  /** collection slug -> platforms detected this run. */
-  syncedPlatforms?: ReadonlyMap<string, PlatformInfo[]>;
+  /** collection slug -> clients detected this run. */
+  syncedClients?: ReadonlyMap<string, ClientInfo[]>;
   previous: LocaleManifest | undefined;
   generatedAt: string;
 }): LocaleManifest {
@@ -221,7 +222,7 @@ export function buildLocaleManifest(opts: {
     locale,
     collections,
     syncedPages,
-    syncedPlatforms,
+    syncedClients,
     previous,
     generatedAt,
   } = opts;
@@ -242,17 +243,17 @@ export function buildLocaleManifest(opts: {
   const manifestCollections = collections
     .filter((c) => present.has(c.slug))
     .map((c, order) => {
-      // Fresh platform info when synced; carried over otherwise.
-      const platforms = syncedPages.has(c.slug)
-        ? syncedPlatforms?.get(c.slug)
-        : previous?.collections.find((pc) => pc.slug === c.slug)?.platforms;
+      // Fresh client info when synced; carried over otherwise.
+      const clients = syncedPages.has(c.slug)
+        ? syncedClients?.get(c.slug)
+        : previous?.collections.find((pc) => pc.slug === c.slug)?.clients;
       return {
         slug: c.slug,
         label: c.label,
         description: c.description,
         section: c.section,
         order,
-        ...(platforms && platforms.length > 0 ? { platforms } : {}),
+        ...(clients && clients.length > 0 ? { clients } : {}),
       };
     });
 

@@ -7,8 +7,7 @@ import type {
   SidebarItem,
 } from "@shared/content-schema";
 import { loadSidebar } from "@/lib/content/loader";
-import { filterSidebarByPlatform } from "@/lib/content/neighbors";
-import { usePlatform } from "@/lib/platform";
+import { filterSidebarByClient } from "@/lib/content/neighbors";
 import { cn } from "@/lib/utils";
 
 interface SidebarNavProps {
@@ -17,6 +16,8 @@ interface SidebarNavProps {
   contentLocale: Locale;
   collection: string;
   currentSlug?: string;
+  /** Active client id for this book (filters client-tagged sections). */
+  clientId?: string;
 }
 
 /**
@@ -29,8 +30,8 @@ export function SidebarNav({
   contentLocale,
   collection,
   currentSlug,
+  clientId,
 }: SidebarNavProps) {
-  const platform = usePlatform();
   const [sidebar, setSidebar] = useState<SidebarConfig>();
 
   useEffect(() => {
@@ -59,7 +60,7 @@ export function SidebarNav({
           {sidebar.label}
         </p>
         <SidebarItems
-          items={filterSidebarByPlatform(sidebar.items, platform)}
+          items={filterSidebarByClient(sidebar.items, clientId)}
           locale={locale}
           collection={collection}
           currentSlug={currentSlug}
@@ -88,7 +89,25 @@ export function SidebarItems({
   return (
     <ul className="space-y-0.5">
       {items.map((item) =>
-        item.type === "group" ? (
+        item.type === "toporg" ? (
+          // A toporg is a section heading grouping chapters — always open,
+          // never a link (META: toporg in Outline).
+          <li key={item.id} className="pt-3 first:pt-0">
+            <p className="px-2 pb-1 text-[11px] font-semibold tracking-widest text-muted-foreground uppercase">
+              {item.label}
+            </p>
+            {item.children && (
+              <SidebarItems
+                items={item.children}
+                locale={locale}
+                collection={collection}
+                currentSlug={currentSlug}
+                onNavigate={onNavigate}
+                defaultOpen={defaultOpen}
+              />
+            )}
+          </li>
+        ) : item.type === "group" ? (
           <SidebarGroup
             key={item.id}
             item={item}

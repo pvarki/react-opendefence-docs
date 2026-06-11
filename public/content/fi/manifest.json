@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "locale": "fi",
-  "generatedAt": "2026-06-11T06:36:39.803Z",
+  "generatedAt": "2026-06-11T16:33:34.651Z",
   "collections": [
     {
       "slug": "deploy-app",
@@ -9,10 +9,11 @@
       "description": "Main application documentation",
       "section": "deploy-app",
       "order": 0,
-      "platforms": [
+      "clients": [
         {
-          "key": "android",
-          "label": "Android"
+          "id": "android-vdSzGssyHX",
+          "label": "Android",
+          "platform": "android"
         }
       ]
     },
@@ -43,14 +44,16 @@
       "description": "TAK technical reference",
       "section": "wikis",
       "order": 4,
-      "platforms": [
+      "clients": [
         {
-          "key": "android",
-          "label": "ATAK - Android TAK"
+          "id": "atak-android-tak-oeRRt7n8VG",
+          "label": "ATAK - Android TAK",
+          "platform": "android"
         },
         {
-          "key": "windows",
-          "label": "WinTAK - Windows TAK"
+          "id": "wintak-windows-tak-UFb4pI3uVv",
+          "label": "WinTAK - Windows TAK",
+          "platform": "windows"
         }
       ]
     },
@@ -84,6 +87,7 @@
       "updatedAt": "2026-02-19T12:24:36.291Z",
       "order": 0,
       "platform": "android",
+      "clientId": "android-vdSzGssyHX",
       "chapterId": "kayttajaohjeet-KILDyYvVV0",
       "chapterLabel": "Käyttäjäohjeet"
     },
@@ -101,6 +105,7 @@
       "updatedAt": "2026-02-25T07:29:18.849Z",
       "order": 1,
       "platform": "android",
+      "clientId": "android-vdSzGssyHX",
       "chapterId": "kayttajaohjeet-KILDyYvVV0",
       "chapterLabel": "Käyttäjäohjeet"
     },
@@ -118,6 +123,7 @@
       "updatedAt": "2026-02-25T07:32:33.936Z",
       "order": 2,
       "platform": "android",
+      "clientId": "android-vdSzGssyHX",
       "chapterId": "kayttajaohjeet-KILDyYvVV0",
       "chapterLabel": "Käyttäjäohjeet"
     },
@@ -135,6 +141,7 @@
       "updatedAt": "2026-02-25T07:33:23.528Z",
       "order": 3,
       "platform": "android",
+      "clientId": "android-vdSzGssyHX",
       "chapterId": "yllapitajaohjeet-9kIb7LsIOM",
       "chapterLabel": "Ylläpitäjäohjeet"
     },
@@ -152,6 +159,7 @@
       "updatedAt": "2026-02-25T07:33:56.672Z",
       "order": 4,
       "platform": "android",
+      "clientId": "android-vdSzGssyHX",
       "chapterId": "yllapitajaohjeet-9kIb7LsIOM",
       "chapterLabel": "Ylläpitäjäohjeet"
     },
@@ -169,6 +177,7 @@
       "updatedAt": "2026-02-25T07:34:51.649Z",
       "order": 5,
       "platform": "android",
+      "clientId": "android-vdSzGssyHX",
       "chapterId": "yllapitajaohjeet-9kIb7LsIOM",
       "chapterLabel": "Ylläpitäjäohjeet"
     },
@@ -186,6 +195,7 @@
       "updatedAt": "2026-02-25T07:35:24.784Z",
       "order": 6,
       "platform": "android",
+      "clientId": "android-vdSzGssyHX",
       "chapterId": "yllapitajaohjeet-9kIb7LsIOM",
       "chapterLabel": "Ylläpitäjäohjeet"
     },
@@ -354,6 +364,7 @@
       "updatedAt": "2026-02-19T13:05:09.198Z",
       "order": 2,
       "platform": "android",
+      "clientId": "atak-android-tak-oeRRt7n8VG",
       "chapterId": "tyokalut-ja-lisaosat-qC4tN7ic8c",
       "chapterLabel": "Työkalut ja lisäosat"
     },
@@ -372,6 +383,7 @@
       "updatedAt": "2026-02-19T13:05:19.438Z",
       "order": 3,
       "platform": "android",
+      "clientId": "atak-android-tak-oeRRt7n8VG",
       "chapterId": "tyokalut-ja-lisaosat-qC4tN7ic8c",
       "chapterLabel": "Työkalut ja lisäosat"
     },
@@ -390,6 +402,7 @@
       "updatedAt": "2026-02-19T13:05:30.279Z",
       "order": 4,
       "platform": "android",
+      "clientId": "atak-android-tak-oeRRt7n8VG",
       "chapterId": "tyokalut-ja-lisaosat-qC4tN7ic8c",
       "chapterLabel": "Työkalut ja lisäosat"
     },
@@ -408,6 +421,7 @@
       "updatedAt": "2026-02-19T13:05:40.097Z",
       "order": 5,
       "platform": "android",
+      "clientId": "atak-android-tak-oeRRt7n8VG",
       "chapterId": "tyokalut-ja-lisaosat-qC4tN7ic8c",
       "chapterLabel": "Työkalut ja lisäosat"
     },
@@ -426,6 +440,7 @@
       "updatedAt": "2026-02-19T13:05:52.415Z",
       "order": 6,
       "platform": "android",
+      "clientId": "atak-android-tak-oeRRt7n8VG",
       "chapterId": "tyokalut-ja-lisaosat-qC4tN7ic8c",
       "chapterLabel": "Työkalut ja lisäosat"
     },
@@ -444,6 +459,7 @@
       "updatedAt": "2026-02-19T13:06:02.864Z",
       "order": 7,
       "platform": "android",
+      "clientId": "atak-android-tak-oeRRt7n8VG",
       "chapterId": "tyokalut-ja-lisaosat-qC4tN7ic8c",
       "chapterLabel": "Työkalut ja lisäosat"
     },
@@ -462,6 +478,7 @@
       "updatedAt": "2026-02-19T13:04:19.098Z",
       "order": 8,
       "platform": "android",
+      "clientId": "atak-android-tak-oeRRt7n8VG",
       "chapterId": "tyokalut-ja-lisaosat-qC4tN7ic8c",
       "chapterLabel": "Työkalut ja lisäosat"
     },
@@ -479,6 +496,7 @@
       "updatedAt": "2026-02-19T13:12:50.870Z",
       "order": 9,
       "platform": "android",
+      "clientId": "atak-android-tak-oeRRt7n8VG",
       "chapterId": "atak-android-tak-oeRRt7n8VG",
       "chapterLabel": "ATAK - Android TAK"
     },
@@ -549,6 +567,7 @@
       "updatedAt": "2026-02-19T13:26:22.177Z",
       "order": 14,
       "platform": "windows",
+      "clientId": "wintak-windows-tak-UFb4pI3uVv",
       "chapterId": "tyokalut-ja-lisaosat-z4hu8AFihP",
       "chapterLabel": "Työkalut ja lisäosat"
     },
@@ -567,6 +586,7 @@
       "updatedAt": "2026-02-19T13:27:06.108Z",
       "order": 15,
       "platform": "windows",
+      "clientId": "wintak-windows-tak-UFb4pI3uVv",
       "chapterId": "tyokalut-ja-lisaosat-z4hu8AFihP",
       "chapterLabel": "Työkalut ja lisäosat"
     },
@@ -585,6 +605,7 @@
       "updatedAt": "2026-02-19T13:29:17.167Z",
       "order": 16,
       "platform": "windows",
+      "clientId": "wintak-windows-tak-UFb4pI3uVv",
       "chapterId": "tyokalut-ja-lisaosat-z4hu8AFihP",
       "chapterLabel": "Työkalut ja lisäosat"
     },
@@ -603,6 +624,7 @@
       "updatedAt": "2026-02-19T13:29:56.152Z",
       "order": 17,
       "platform": "windows",
+      "clientId": "wintak-windows-tak-UFb4pI3uVv",
       "chapterId": "tyokalut-ja-lisaosat-z4hu8AFihP",
       "chapterLabel": "Työkalut ja lisäosat"
     },
@@ -620,6 +642,7 @@
       "updatedAt": "2026-02-19T13:24:21.507Z",
       "order": 18,
       "platform": "windows",
+      "clientId": "wintak-windows-tak-UFb4pI3uVv",
       "chapterId": "wintak-windows-tak-UFb4pI3uVv",
       "chapterLabel": "WinTAK - Windows TAK"
     },

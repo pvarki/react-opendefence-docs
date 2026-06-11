@@ -7,7 +7,7 @@
       "type": "group",
       "id": "anvandarguide-q7fgVGQ10J",
       "label": "Användarguide",
-      "platform": "android",
+      "clientId": "android-yFEMlNyGOI",
       "children": [
         {
           "type": "doc",
@@ -33,7 +33,7 @@
       "type": "group",
       "id": "administratorsguide-iLjfd22kyb",
       "label": "Administratörsguide",
-      "platform": "android",
+      "clientId": "android-yFEMlNyGOI",
       "children": [
         {
           "type": "doc",

@@ -47,6 +47,23 @@ export const PlatformInfoSchema = z.object({
 });
 export type PlatformInfo = z.infer<typeof PlatformInfoSchema>;
 
+/**
+ * A client is one selectable content view of a book — usually an app for a
+ * platform (ATAK, iTAK, WinTAK, TAK Tracker). Detected from organizer names
+ * or an explicit "META: platform: <key>" line in the organizer doc body.
+ * The selector lists a book's clients; the platform key links the choice to
+ * the global platform preference.
+ */
+export const ClientInfoSchema = z.object({
+  /** Organizer doc slug — stable id, also stamped on its pages. */
+  id: z.string(),
+  label: z.string(),
+  platform: PlatformSchema,
+  /** The client's organizer doc carries the under-development marker. */
+  underDevelopment: z.boolean().optional(),
+});
+export type ClientInfo = z.infer<typeof ClientInfoSchema>;
+
 // ---------------------------------------------------------------------------
 // Blocks — a page body is an ordered list of typed blocks. HTML is sanitized
 // at build time (rehype-sanitize); the app renders it without re-processing.
@@ -184,6 +201,8 @@ export const ManifestPageSchema = z.object({
   hidden: z.boolean().optional(),
   /** Platform this page belongs to; absent = shown on every platform. */
   platform: PlatformSchema.optional(),
+  /** Client (selector entry) this page belongs to; absent = all clients. */
+  clientId: z.string().optional(),
   /** Chapter (Outline organizer doc) this page belongs to. */
   chapterId: z.string().optional(),
   chapterLabel: z.string().optional(),
@@ -196,8 +215,8 @@ export const ManifestCollectionSchema = z.object({
   description: z.string().optional(),
   section: z.enum(["deploy-app", "guides", "dev", "wikis"]),
   order: z.number().int().nonnegative(),
-  /** Platforms this book is authored for (absent = platform-agnostic book). */
-  platforms: z.array(PlatformInfoSchema).optional(),
+  /** Clients this book is authored for (absent = platform-agnostic book). */
+  clients: z.array(ClientInfoSchema).optional(),
 });
 export type ManifestCollection = z.infer<typeof ManifestCollectionSchema>;
 
@@ -216,25 +235,26 @@ export type LocaleManifest = z.infer<typeof LocaleManifestSchema>;
 // ---------------------------------------------------------------------------
 
 export interface SidebarItem {
-  type: "group" | "doc" | "link";
+  /** "toporg" = section heading grouping chapters (META: toporg in Outline). */
+  type: "group" | "doc" | "link" | "toporg";
   id: string;
   label: string;
   /** Doc slug for type "doc"; href for type "link". */
   slug?: string;
   href?: string;
-  /** Groups under a platform organizer carry its key; the TOC filters by it. */
-  platform?: Platform;
+  /** Items under a client organizer carry its id; the TOC filters by it. */
+  clientId?: string;
   children?: SidebarItem[];
 }
 
 export const SidebarItemSchema: z.ZodType<SidebarItem> = z.lazy(() =>
   z.object({
-    type: z.enum(["group", "doc", "link"]),
+    type: z.enum(["group", "doc", "link", "toporg"]),
     id: z.string(),
     label: z.string(),
     slug: z.string().optional(),
     href: z.string().optional(),
-    platform: PlatformSchema.optional(),
+    clientId: z.string().optional(),
     children: z.array(SidebarItemSchema).optional(),
   }),
 );

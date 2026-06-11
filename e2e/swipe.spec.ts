@@ -236,7 +236,7 @@ test.describe("platform selector", () => {
     ).toContainText("Android");
   });
 
-  test("TAK guide labels platforms by client name", async ({
+  test("TAK guide lists every client separately (incl. TAK Tracker)", async ({
     page,
   }, testInfo) => {
     test.skip(testInfo.project.name !== "desktop", "asserts navbar selector");
@@ -245,6 +245,9 @@ test.describe("platform selector", () => {
     await selector.click();
     await expect(page.getByRole("option", { name: "ATAK" })).toBeVisible();
     await expect(page.getByRole("option", { name: "iTAK" })).toBeVisible();
+    await expect(
+      page.getByRole("option", { name: "TAK Tracker - Android" }),
+    ).toBeVisible();
     await page.getByRole("option", { name: "WinTAK" }).click();
     // Cover now lists the WinTAK reading order.
     await expect(

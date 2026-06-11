@@ -11,7 +11,8 @@ import {
   TableOfContents,
 } from "lucide-react";
 import { DEFAULT_LOCALE } from "@shared/content-schema";
-import { PLATFORM_LABELS, usePlatform } from "@/lib/platform";
+import { PLATFORM_LABELS, useReadingView } from "@/lib/platform";
+import { resolveClient } from "@/lib/content/neighbors";
 import { useReaderData } from "@/lib/useReaderData";
 import { ContentsSheet } from "@/components/shell/ContentsDrawer";
 import { PlatformSheet } from "@/components/shell/PlatformSheet";
@@ -52,16 +53,14 @@ export function TabBar() {
   const params = useParams({ strict: false });
   const locale = params.locale ?? DEFAULT_LOCALE;
   const reader = useReaderData();
-  const platform = usePlatform();
+  const view = useReadingView();
   const [contentsOpen, setContentsOpen] = useState(false);
   const [platformOpen, setPlatformOpen] = useState(false);
 
-  const bookPlatforms = reader?.manifest.collections.find(
-    (c) => c.slug === reader.collection,
-  )?.platforms;
-  const platformLabel =
-    bookPlatforms?.find((p) => p.key === platform)?.label ??
-    PLATFORM_LABELS[platform];
+  const activeClient = reader
+    ? resolveClient(reader.manifest, reader.collection, view)
+    : undefined;
+  const platformLabel = activeClient?.label ?? PLATFORM_LABELS[view.platform];
 
   const itemClass =
     "flex flex-1 flex-col items-center justify-center gap-0.5 text-muted-foreground transition-colors";
@@ -115,6 +114,7 @@ export function TabBar() {
             contentLocale={reader.contentLocale}
             collection={reader.collection}
             currentSlug={reader.slug}
+            clientId={activeClient?.id}
           />
           <PlatformSheet
             open={platformOpen}

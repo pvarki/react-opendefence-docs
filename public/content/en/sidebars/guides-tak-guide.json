@@ -12,8 +12,8 @@
     {
       "type": "group",
       "id": "start-FxbN2wcFUs",
-      "label": "ATAK · Start",
-      "platform": "android",
+      "label": "Start",
+      "clientId": "atak-sGxUIXpQlU",
       "children": [
         {
           "type": "doc",
@@ -44,8 +44,8 @@
     {
       "type": "group",
       "id": "basic-features-pDRdN25Lk6",
-      "label": "ATAK · Basic Features",
-      "platform": "android",
+      "label": "Basic Features",
+      "clientId": "atak-sGxUIXpQlU",
       "children": [
         {
           "type": "doc",
@@ -94,8 +94,8 @@
     {
       "type": "group",
       "id": "advanced-features-w8JvOrLVwe",
-      "label": "ATAK · Advanced Features",
-      "platform": "android",
+      "label": "Advanced Features",
+      "clientId": "atak-sGxUIXpQlU",
       "children": [
         {
           "type": "doc",
@@ -150,8 +150,8 @@
     {
       "type": "group",
       "id": "usage-by-role-2F9bOBgUmG",
-      "label": "ATAK · Usage by Role",
-      "platform": "android",
+      "label": "Usage by Role",
+      "clientId": "atak-sGxUIXpQlU",
       "children": [
         {
           "type": "doc",
@@ -182,8 +182,8 @@
     {
       "type": "group",
       "id": "supported-plugins-XdDLDnS5CE",
-      "label": "ATAK · Supported Plugins",
-      "platform": "android",
+      "label": "Supported Plugins",
+      "clientId": "atak-sGxUIXpQlU",
       "children": [
         {
           "type": "doc",
@@ -197,7 +197,7 @@
       "type": "group",
       "id": "atak-sGxUIXpQlU",
       "label": "ATAK",
-      "platform": "android",
+      "clientId": "atak-sGxUIXpQlU",
       "children": [
         {
           "type": "doc",
@@ -211,7 +211,7 @@
       "type": "group",
       "id": "start-gF8MDfsdW9",
       "label": "Start",
-      "platform": "windows",
+      "clientId": "wintak-w8mKUfaRBP",
       "children": [
         {
           "type": "doc",
@@ -231,7 +231,7 @@
       "type": "group",
       "id": "basic-features-pmjQ96x5bI",
       "label": "Basic Features",
-      "platform": "windows",
+      "clientId": "wintak-w8mKUfaRBP",
       "children": [
         {
           "type": "doc",
@@ -275,7 +275,7 @@
       "type": "group",
       "id": "advanced-features-dUEpnxlGD0",
       "label": "Advanced Features",
-      "platform": "windows",
+      "clientId": "wintak-w8mKUfaRBP",
       "children": [
         {
           "type": "doc",
@@ -307,7 +307,7 @@
       "type": "group",
       "id": "usage-by-role-IWyDTtxCJS",
       "label": "Usage by Role",
-      "platform": "windows",
+      "clientId": "wintak-w8mKUfaRBP",
       "children": [
         {
           "type": "doc",
@@ -333,7 +333,7 @@
       "type": "group",
       "id": "supported-plugins-zl2XZB0u1p",
       "label": "Supported Plugins",
-      "platform": "windows",
+      "clientId": "wintak-w8mKUfaRBP",
       "children": [
         {
           "type": "doc",
@@ -347,7 +347,7 @@
       "type": "group",
       "id": "wintak-w8mKUfaRBP",
       "label": "WinTAK",
-      "platform": "windows",
+      "clientId": "wintak-w8mKUfaRBP",
       "children": [
         {
           "type": "doc",
@@ -360,8 +360,8 @@
     {
       "type": "group",
       "id": "start-sLRG2uavSv",
-      "label": "iTAK · Start",
-      "platform": "ios",
+      "label": "Start",
+      "clientId": "itak-bwDYWvqdnY",
       "children": [
         {
           "type": "doc",
@@ -380,8 +380,8 @@
     {
       "type": "group",
       "id": "basic-features-StHwTheTn5",
-      "label": "iTAK · Basic Features",
-      "platform": "ios",
+      "label": "Basic Features",
+      "clientId": "itak-bwDYWvqdnY",
       "children": [
         {
           "type": "doc",
@@ -412,8 +412,8 @@
     {
       "type": "group",
       "id": "usage-by-role-LlQdNcNgkg",
-      "label": "iTAK · Usage by Role",
-      "platform": "ios",
+      "label": "Usage by Role",
+      "clientId": "itak-bwDYWvqdnY",
       "children": [
         {
           "type": "doc",
@@ -439,7 +439,7 @@
       "type": "group",
       "id": "itak-bwDYWvqdnY",
       "label": "iTAK",
-      "platform": "ios",
+      "clientId": "itak-bwDYWvqdnY",
       "children": [
         {
           "type": "doc",
@@ -452,8 +452,8 @@
     {
       "type": "group",
       "id": "start-LlfSpMeCW8",
-      "label": "TAK Tracker - Android · Start",
-      "platform": "android",
+      "label": "Start",
+      "clientId": "tak-tracker-android-JCZw3YH2nW",
       "children": [
         {
           "type": "doc",
@@ -478,8 +478,8 @@
     {
       "type": "group",
       "id": "usage-by-role-KxtjmbM9B1",
-      "label": "TAK Tracker - Android · Usage by Role",
-      "platform": "android",
+      "label": "Usage by Role",
+      "clientId": "tak-tracker-android-JCZw3YH2nW",
       "children": [
         {
           "type": "doc",
@@ -505,7 +505,7 @@
       "type": "group",
       "id": "tak-tracker-android-JCZw3YH2nW",
       "label": "TAK Tracker - Android",
-      "platform": "android",
+      "clientId": "tak-tracker-android-JCZw3YH2nW",
       "children": [
         {
           "type": "doc",
@@ -518,8 +518,8 @@
     {
       "type": "group",
       "id": "start-oZzAX4X7Er",
-      "label": "TAK Tracker - Apple · Start",
-      "platform": "ios",
+      "label": "Start",
+      "clientId": "tak-tracker-apple-PmHvleNK0F",
       "children": [
         {
           "type": "doc",
@@ -538,8 +538,8 @@
     {
       "type": "group",
       "id": "tak-features-2eQ2Stir9U",
-      "label": "TAK Tracker - Apple · TAK Features",
-      "platform": "ios",
+      "label": "TAK Features",
+      "clientId": "tak-tracker-apple-PmHvleNK0F",
       "children": [
         {
           "type": "doc",
@@ -552,8 +552,8 @@
     {
       "type": "group",
       "id": "usage-by-role-FfcECbKYmK",
-      "label": "TAK Tracker - Apple · Usage by Role",
-      "platform": "ios",
+      "label": "Usage by Role",
+      "clientId": "tak-tracker-apple-PmHvleNK0F",
       "children": [
         {
           "type": "doc",
@@ -579,7 +579,7 @@
       "type": "group",
       "id": "tak-tracker-apple-PmHvleNK0F",
       "label": "TAK Tracker - Apple",
-      "platform": "ios",
+      "clientId": "tak-tracker-apple-PmHvleNK0F",
       "children": [
         {
           "type": "doc",

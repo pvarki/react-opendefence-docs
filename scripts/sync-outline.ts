@@ -30,7 +30,11 @@ import {
   normalizeOutlineMarkdown,
   extractTranslationLinks,
 } from "./lib/outline-normalizer";
-import { emitBlocks, isUnderDevelopment } from "./lib/block-emitter";
+import { emitBlocks } from "./lib/block-emitter";
+import {
+  parseOrganizerMarkers,
+  type OrganizerMarkers,
+} from "./lib/organizer-markers";
 import { createTimer, formatDuration } from "./lib/utils";
 import {
   buildBook,
@@ -69,7 +73,8 @@ import {
   type Locale,
   type LocaleManifest,
   type ManifestPage,
-  type PlatformInfo,
+  type ClientInfo,
+  type Platform,
   type TranslationsFile,
 } from "../shared/content-schema";
 
@@ -129,6 +134,9 @@ function translationsFilePath(locale: Locale) {
 // Document info cache
 
 const documentInfoCache = new Map<string, DocumentInfo>();
+
+/** Organizer body markers, fetched once per doc per run. */
+const organizerMarkersCache = new Map<string, OrganizerMarkers>();
 
 // Get document info with caching to avoid duplicate API calls.
 async function getCachedDocumentInfo(
@@ -292,8 +300,8 @@ interface BookSyncResult {
   processedSlugs: Set<string>;
   /** page slug -> declared locale -> bare target slug. */
   translationLinks: Map<string, Partial<Record<Locale, string>>>;
-  /** Platforms this book is authored for (under-dev flag from organizer body). */
-  platforms: PlatformInfo[];
+  /** Clients this book is authored for (under-dev flag from organizer body). */
+  clients: ClientInfo[];
 }
 
 // Sync a single collection across all locales using a pre-fetched structure.
@@ -334,9 +342,54 @@ async function syncCollection(
         entries: [],
         processedSlugs: new Set(),
         translationLinks: new Map(),
-        platforms: [],
+        clients: [],
       });
       continue;
+    }
+
+    // Organizer doc bodies carry editor markers (META: toporg,
+    // META: platform: <key>, under-development) that shape the book — fetch
+    // them BEFORE building so structure decisions can use them. Candidates:
+    // organizers in the top three levels (root / wrapper / client children).
+    const navChildren = (localeRoot.children ?? []) as OutlineNavNode[];
+    const organizerIds: string[] = [];
+    const collectOrganizers = (nodes: OutlineNavNode[], depth: number) => {
+      for (const node of nodes) {
+        if (node.children.length === 0) continue;
+        organizerIds.push(node.id);
+        if (depth < 3) collectOrganizers(node.children, depth + 1);
+      }
+    };
+    collectOrganizers(navChildren, 1);
+
+    const markerSpinner = createSpinner(
+      `Reading organizer markers for ${locale} (${organizerIds.length} organizers)`,
+      args.ci,
+    );
+    await runWithConcurrency(
+      organizerIds.map((docId) => async () => {
+        if (organizerMarkersCache.has(docId)) return;
+        try {
+          const body = await client.getDocumentAsMarkdown(docId);
+          organizerMarkersCache.set(docId, parseOrganizerMarkers(body));
+        } catch {
+          // Best-effort: an unreadable organizer just has no markers.
+          organizerMarkersCache.set(docId, {
+            toporg: false,
+            underDevelopment: false,
+          });
+        }
+      }),
+      INFO_CONCURRENCY,
+    );
+    markerSpinner.succeed(`Organizer markers read for ${locale}`);
+
+    const toporgIds = new Set<string>();
+    const platformByDocId = new Map<string, Platform>();
+    for (const docId of organizerIds) {
+      const markers = organizerMarkersCache.get(docId);
+      if (markers?.toporg) toporgIds.add(docId);
+      if (markers?.platform) platformByDocId.set(docId, markers.platform);
     }
 
     // Build the book (sidebar + flattened reading order). The locale root
@@ -345,40 +398,25 @@ async function syncCollection(
       `Generating sidebar for ${locale}`,
       args.ci,
     );
-    const navChildren = (localeRoot.children ?? []) as OutlineNavNode[];
-    const book = buildBook(navChildren, collection, locale);
+    const book = buildBook(navChildren, collection, locale, {
+      toporgIds,
+      platformByDocId,
+    });
     await writeJson(
       sidebarFilePath(locale, collection.slug),
       SidebarConfigSchema.parse(book.sidebar),
     );
     sidebarSpinner.succeed(`Sidebar generated for ${locale}`);
 
-    // Platform organizer bodies carry the under-development marker the
-    // platform selector surfaces ("sections missing on this platform").
-    // A platform may have several client organizers (ATAK + TAK Tracker are
-    // both android): one selector entry per key, first client names it,
-    // under-dev flags OR together.
-    const platformByKey = new Map<string, PlatformInfo>();
-    for (const platformRef of book.platforms) {
-      let underDev = false;
-      try {
-        const body = await client.getDocumentAsMarkdown(platformRef.docId);
-        underDev = isUnderDevelopment(body);
-      } catch {
-        // Best-effort: the platform still appears without the tag.
-      }
-      const existing = platformByKey.get(platformRef.key);
-      if (existing) {
-        if (underDev) existing.underDevelopment = true;
-      } else {
-        platformByKey.set(platformRef.key, {
-          key: platformRef.key,
-          label: platformRef.label,
-          ...(underDev ? { underDevelopment: true } : {}),
-        });
-      }
-    }
-    const platforms = [...platformByKey.values()];
+    // Selector entries: one per client organizer, under-dev tag from its body.
+    const clients: ClientInfo[] = book.clients.map((c) => ({
+      id: c.id,
+      label: c.label,
+      platform: c.platform,
+      ...(organizerMarkersCache.get(c.docId)?.underDevelopment
+        ? { underDevelopment: true }
+        : {}),
+    }));
 
     // Pre-fetch all document info in parallel to populate cache
     const infoSpinner = createSpinner(
@@ -586,7 +624,7 @@ async function syncCollection(
       }
     }
 
-    books.set(locale, { entries, processedSlugs, translationLinks, platforms });
+    books.set(locale, { entries, processedSlugs, translationLinks, clients });
   }
 
   stats.duration = timer.elapsed();
@@ -791,7 +829,7 @@ async function main() {
 
   // Second pass: sync each collection (using cached structures)
   const syncedBooks = new Map<Locale, Map<string, ManifestPage[]>>();
-  const syncedPlatforms = new Map<Locale, Map<string, PlatformInfo[]>>();
+  const syncedClients = new Map<Locale, Map<string, ClientInfo[]>>();
   const processedSlugsByLocale = new Map<Locale, Set<string>>();
   const translationLinksByLocale = new Map<
     Locale,
@@ -799,7 +837,7 @@ async function main() {
   >();
   for (const locale of LOCALES) {
     syncedBooks.set(locale, new Map());
-    syncedPlatforms.set(locale, new Map());
+    syncedClients.set(locale, new Map());
     processedSlugsByLocale.set(locale, new Set());
     translationLinksByLocale.set(locale, new Map());
   }
@@ -823,7 +861,7 @@ async function main() {
 
       for (const [locale, book] of books) {
         syncedBooks.get(locale)!.set(collection.slug, book.entries);
-        syncedPlatforms.get(locale)!.set(collection.slug, book.platforms);
+        syncedClients.get(locale)!.set(collection.slug, book.clients);
         const processedSlugs = processedSlugsByLocale.get(locale)!;
         for (const slug of book.processedSlugs) processedSlugs.add(slug);
         const links = translationLinksByLocale.get(locale)!;
@@ -854,7 +892,7 @@ async function main() {
         locale,
         collections: ALL_COLLECTIONS,
         syncedPages: syncedBooks.get(locale)!,
-        syncedPlatforms: syncedPlatforms.get(locale)!,
+        syncedClients: syncedClients.get(locale)!,
         previous: previousManifests.get(locale),
         generatedAt,
       }),

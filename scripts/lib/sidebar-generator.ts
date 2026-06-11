@@ -43,24 +43,40 @@ export interface BookPageRef {
   slug: string;
   title: string;
   breadcrumb: string[];
-  /** From the enclosing platform organizer or a "#tag:..." title marker. */
+  /** From the enclosing client organizer or a "#tag:..." title marker. */
   platform?: Platform;
+  /** Slug of the enclosing client organizer (selector entry). */
+  clientId?: string;
   chapterId?: string;
   chapterLabel?: string;
 }
 
-export interface BookPlatformRef {
-  key: Platform;
-  /** Display label from the organizer title (e.g. "ATAK" for android). */
+export interface BookClientRef {
+  /** Organizer doc slug — the stable client id. */
+  id: string;
+  platform: Platform;
+  /** Display label from the organizer title (e.g. "ATAK", "TAK Tracker - Android"). */
   label: string;
-  /** Organizer doc id — sync fetches its body for the under-dev marker. */
   docId: string;
 }
+
+/** Body-derived organizer markers, prefetched by sync (organizer-markers.ts). */
+export interface BookMarkers {
+  /** Organizer docIds whose body says "META: toporg". */
+  toporgIds: ReadonlySet<string>;
+  /** Organizer docIds whose body says "META: platform: <key>". */
+  platformByDocId: ReadonlyMap<string, Platform>;
+}
+
+const NO_MARKERS: BookMarkers = {
+  toporgIds: new Set(),
+  platformByDocId: new Map(),
+};
 
 export interface BookBuild {
   sidebar: SidebarConfig;
   readingOrder: BookPageRef[];
-  platforms: BookPlatformRef[];
+  clients: BookClientRef[];
 }
 
 /** Last URL segment = full Outline slug (shortid suffix kept). */
@@ -149,6 +165,7 @@ function makeDocItem(node: OutlineNavNode): SidebarItem {
 
 interface ChapterContext {
   platform?: Platform;
+  clientId?: string;
   chapterId?: string;
   chapterLabel?: string;
 }
@@ -165,6 +182,7 @@ function makePageRef(
     title: cleanTitle(node.title),
     breadcrumb: trailTitles.map((t) => cleanTitle(t)),
     ...(platform ? { platform } : {}),
+    ...(ctx.clientId ? { clientId: ctx.clientId } : {}),
     ...(ctx.chapterId
       ? { chapterId: ctx.chapterId, chapterLabel: ctx.chapterLabel }
       : {}),
@@ -182,32 +200,14 @@ export function buildBook(
   localeRootChildren: OutlineNavNode[],
   collection: CollectionConfig,
   _locale: Locale,
+  markers: BookMarkers = NO_MARKERS,
 ): BookBuild {
   const items: SidebarItem[] = [];
   const readingOrder: BookPageRef[] = [];
-  const platforms: BookPlatformRef[] = [];
+  const clients: BookClientRef[] = [];
 
-  // First pass: count client organizers per platform (across one wrapper
-  // level, e.g. "TAK Clients" -> ATAK + TAK Tracker are both android). When
-  // a platform has several clients, chapter labels get the client prefix so
-  // the bottom bar's chips stay unambiguous ("ATAK · Start").
-  const clientCounts = new Map<Platform, number>();
-  const countClients = (nodes: OutlineNavNode[]) => {
-    for (const node of nodes) {
-      if (node.children.length === 0) continue;
-      const platform = detectPlatform(node.title);
-      if (platform) {
-        clientCounts.set(platform, (clientCounts.get(platform) ?? 0) + 1);
-      } else if (
-        node.children.some(
-          (c) => c.children.length > 0 && detectPlatform(c.title),
-        )
-      ) {
-        countClients(node.children);
-      }
-    }
-  };
-  countClients(localeRootChildren);
+  const clientPlatform = (node: OutlineNavNode): Platform | undefined =>
+    markers.platformByDocId.get(node.id) ?? detectPlatform(node.title);
 
   // All leaf descendants of `node`, depth-first, flattened into one chapter.
   const collectLeaves = (
@@ -229,46 +229,86 @@ export function buildBook(
   };
 
   // One chapter organizer -> one sidebar group + its pages in reading order.
+  // `into` lets a toporg collect its chapters as children.
   const addChapter = (
     node: OutlineNavNode,
     trailTitles: string[],
-    platform: Platform | undefined,
-    labelPrefix?: string,
+    client: BookClientRef | undefined,
+    into: SidebarItem[] = items,
   ): void => {
-    const label = cleanLabel(node.title);
     const ctx: ChapterContext = {
-      platform,
+      platform: client?.platform,
+      clientId: client?.id,
       chapterId: slugFromUrl(node.url),
-      chapterLabel: labelPrefix ? `${labelPrefix} · ${label}` : label,
+      chapterLabel: cleanLabel(node.title),
     };
     const groupChildren: SidebarItem[] = [];
     collectLeaves(node, trailTitles, ctx, groupChildren);
     if (groupChildren.length === 0) return; // empty organizer: nothing to show
-    items.push({
+    into.push({
       type: "group",
       id: ctx.chapterId!,
       label: ctx.chapterLabel!,
-      ...(platform ? { platform } : {}),
+      ...(client ? { clientId: client.id } : {}),
       children: groupChildren,
     });
   };
 
-  // A platform/client organizer: its sub-organizers are chapters, its direct
-  // leaves group under the client's own label.
+  // A toporg (META: toporg): a section heading grouping chapters and loose
+  // pages — structure, never content.
+  const addToporg = (
+    node: OutlineNavNode,
+    trailTitles: string[],
+    client: BookClientRef | undefined,
+    into: SidebarItem[] = items,
+  ): void => {
+    const toporgLabel = cleanLabel(node.title);
+    const toporgChildren: SidebarItem[] = [];
+    const looseCtx: ChapterContext = {
+      platform: client?.platform,
+      clientId: client?.id,
+      chapterId: slugFromUrl(node.url),
+      chapterLabel: toporgLabel,
+    };
+    for (const sub of node.children) {
+      const trail = [...trailTitles, sub.title];
+      if (sub.children.length === 0) {
+        readingOrder.push(makePageRef(sub, trail, looseCtx));
+        toporgChildren.push(makeDocItem(sub));
+      } else {
+        addChapter(sub, trail, client, toporgChildren);
+      }
+    }
+    if (toporgChildren.length === 0) return;
+    into.push({
+      type: "toporg",
+      id: slugFromUrl(node.url),
+      label: toporgLabel,
+      ...(client ? { clientId: client.id } : {}),
+      children: toporgChildren,
+    });
+  };
+
+  // A client organizer (selector entry): its sub-organizers are toporgs or
+  // chapters, its direct leaves group under the client's own label.
   const addClient = (
     node: OutlineNavNode,
     trailTitles: string[],
     platform: Platform,
   ) => {
-    const clientLabel = cleanLabel(node.title);
-    platforms.push({ key: platform, label: clientLabel, docId: node.id });
-    const prefix =
-      (clientCounts.get(platform) ?? 0) > 1 ? clientLabel : undefined;
+    const client: BookClientRef = {
+      id: slugFromUrl(node.url),
+      platform,
+      label: cleanLabel(node.title),
+      docId: node.id,
+    };
+    clients.push(client);
 
     const looseCtx: ChapterContext = {
       platform,
-      chapterId: slugFromUrl(node.url),
-      chapterLabel: clientLabel,
+      clientId: client.id,
+      chapterId: client.id,
+      chapterLabel: client.label,
     };
     const looseChildren: SidebarItem[] = [];
     for (const sub of node.children) {
@@ -276,8 +316,10 @@ export function buildBook(
       if (sub.children.length === 0) {
         readingOrder.push(makePageRef(sub, trail, looseCtx));
         looseChildren.push(makeDocItem(sub));
+      } else if (markers.toporgIds.has(sub.id)) {
+        addToporg(sub, trail, client);
       } else {
-        addChapter(sub, trail, platform, prefix);
+        addChapter(sub, trail, client);
       }
     }
     if (looseChildren.length > 0) {
@@ -285,38 +327,43 @@ export function buildBook(
         type: "group",
         id: looseCtx.chapterId!,
         label: looseCtx.chapterLabel!,
-        platform,
+        clientId: client.id,
         children: looseChildren,
       });
     }
   };
 
   // A "root-like" level: locale root children, or the children of a wrapper
-  // organizer that exists only to hold platform clients (e.g. "TAK Clients").
+  // organizer that exists only to hold clients (e.g. "TAK Clients").
   const walkRootLevel = (nodes: OutlineNavNode[], trailTitles: string[]) => {
     for (const child of nodes) {
       const trail = [...trailTitles, child.title];
 
-      // Top-level leaf: a platform-agnostic content page.
+      // Top-level leaf: a content page shown on every client.
       if (child.children.length === 0) {
         readingOrder.push(makePageRef(child, trail, {}));
         items.push(makeDocItem(child));
         continue;
       }
 
-      const platform = detectPlatform(child.title);
+      const platform = clientPlatform(child);
       if (platform) {
         addClient(child, trail, platform);
         continue;
       }
 
+      if (markers.toporgIds.has(child.id)) {
+        addToporg(child, trail, undefined);
+        continue;
+      }
+
       const wrapsClients = child.children.some(
-        (c) => c.children.length > 0 && detectPlatform(c.title),
+        (c) => c.children.length > 0 && clientPlatform(c),
       );
       if (wrapsClients) {
         walkRootLevel(child.children, trail);
       } else {
-        // Platform-agnostic chapter (e.g. Troubleshooting, wiki sections).
+        // Client-agnostic chapter (e.g. Troubleshooting, wiki sections).
         addChapter(child, trail, undefined);
       }
     }
@@ -324,8 +371,6 @@ export function buildBook(
 
   walkRootLevel(localeRootChildren, []);
 
-  // The selector shows one entry per platform key; the first client names it
-  // (ATAK for android in the TAK guide). Sync ORs under-dev flags per key.
   return {
     sidebar: {
       schemaVersion: SCHEMA_VERSION,
@@ -334,6 +379,6 @@ export function buildBook(
       items,
     },
     readingOrder,
-    platforms,
+    clients,
   };
 }

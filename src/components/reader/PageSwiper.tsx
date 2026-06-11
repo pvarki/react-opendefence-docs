@@ -10,11 +10,8 @@ import { useNavigate, useRouter } from "@tanstack/react-router";
 import useEmblaCarousel from "embla-carousel-react";
 import { WheelGesturesPlugin } from "embla-carousel-wheel-gestures";
 import { useTranslation } from "react-i18next";
-import type {
-  LocaleManifest,
-  ManifestPage,
-  Platform,
-} from "@shared/content-schema";
+import type { LocaleManifest, ManifestPage } from "@shared/content-schema";
+import type { ReadingView } from "@/lib/platform";
 import { loadPage } from "@/lib/content/loader";
 import {
   globalReadingOrder,
@@ -30,8 +27,8 @@ interface PageSwiperProps {
   manifest: LocaleManifest;
   collection: string;
   slug: string;
-  /** Active platform: the swipe order covers this platform start to finish. */
-  platform?: Platform;
+  /** Active view (platform + per-book clients): the swipe order covers it start to finish. */
+  view?: ReadingView;
 }
 
 /** Slugs are unique per collection only — windowing keys on both. */
@@ -54,7 +51,7 @@ export function PageSwiper({
   manifest,
   collection,
   slug,
-  platform,
+  view,
 }: PageSwiperProps) {
   const { t } = useTranslation();
   const navigate = useNavigate();
@@ -62,8 +59,8 @@ export function PageSwiper({
   const reducedMotion = useReducedMotion();
 
   const order = useMemo(
-    () => globalReadingOrder(manifest, platform),
-    [manifest, platform],
+    () => globalReadingOrder(manifest, view),
+    [manifest, view],
   );
 
   const urlKey = `${collection}/${slug}`;
@@ -194,7 +191,7 @@ export function PageSwiper({
         manifest,
         resolved.collection,
         resolved.slug,
-        platform,
+        view,
       );
       const dest = e.key === "ArrowLeft" ? current?.prev : current?.next;
       if (dest) {
@@ -207,7 +204,7 @@ export function PageSwiper({
     };
     window.addEventListener("keydown", onKeyDown);
     return () => window.removeEventListener("keydown", onKeyDown);
-  }, [manifest, router, navigate, locale, platform]);
+  }, [manifest, router, navigate, locale, view]);
 
   const windowPage = order[windowIndex];
   const position = windowPage
@@ -215,7 +212,7 @@ export function PageSwiper({
         manifest,
         windowPage.collection,
         windowPage.slug,
-        platform,
+        view,
       )
     : undefined;
 
@@ -257,7 +254,7 @@ export function PageSwiper({
                   manifest,
                   page.collection,
                   page.slug,
-                  platform,
+                  view,
                 ) ?? position
               }
               isCurrent={keyOf(page) === windowKey}

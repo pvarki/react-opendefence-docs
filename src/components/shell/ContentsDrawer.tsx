@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import type { Locale, SidebarConfig } from "@shared/content-schema";
 import { loadSidebar } from "@/lib/content/loader";
-import { usePlatform } from "@/lib/platform";
 import {
   Drawer,
   DrawerContent,
@@ -10,7 +9,7 @@ import {
   DrawerTitle,
 } from "@/components/ui/drawer";
 import { SidebarItems } from "@/components/shell/SidebarNav";
-import { filterSidebarByPlatform } from "@/lib/content/neighbors";
+import { filterSidebarByClient } from "@/lib/content/neighbors";
 
 interface ContentsSheetProps {
   open: boolean;
@@ -19,6 +18,8 @@ interface ContentsSheetProps {
   contentLocale: Locale;
   collection: string;
   currentSlug?: string;
+  /** Active client id for this book (filters client-tagged sections). */
+  clientId?: string;
 }
 
 /**
@@ -32,9 +33,9 @@ export function ContentsSheet({
   contentLocale,
   collection,
   currentSlug,
+  clientId,
 }: ContentsSheetProps) {
   const { t } = useTranslation();
-  const platform = usePlatform();
   const [sidebar, setSidebar] = useState<SidebarConfig>();
 
   useEffect(() => {
@@ -49,7 +50,7 @@ export function ContentsSheet({
     };
   }, [contentLocale, collection]);
 
-  const items = sidebar ? filterSidebarByPlatform(sidebar.items, platform) : [];
+  const items = sidebar ? filterSidebarByClient(sidebar.items, clientId) : [];
 
   return (
     <Drawer open={open} onOpenChange={onOpenChange}>

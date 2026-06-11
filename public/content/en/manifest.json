@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "locale": "en",
-  "generatedAt": "2026-06-11T06:36:39.803Z",
+  "generatedAt": "2026-06-11T16:33:34.651Z",
   "collections": [
     {
       "slug": "deploy-app",
@@ -9,26 +9,31 @@
       "description": "Main application documentation",
       "section": "deploy-app",
       "order": 0,
-      "platforms": [
+      "clients": [
         {
-          "key": "android",
-          "label": "Android"
+          "id": "android-MENReFAfCN",
+          "label": "Android",
+          "platform": "android"
         },
         {
-          "key": "ios",
-          "label": "iOS"
+          "id": "ios-8ux4fDfFeI",
+          "label": "iOS",
+          "platform": "ios"
         },
         {
-          "key": "windows",
-          "label": "Windows"
+          "id": "windows-7LrSmQmqQ6",
+          "label": "Windows",
+          "platform": "windows"
         },
         {
-          "key": "linux",
-          "label": "Linux"
+          "id": "linux-JmHAcb7bTi",
+          "label": "Linux",
+          "platform": "linux"
         },
         {
-          "key": "macos",
-          "label": "MacOS"
+          "id": "macos-6fg0DsaF5B",
+          "label": "MacOS",
+          "platform": "macos"
         }
       ]
     },
@@ -38,18 +43,31 @@
       "description": "TAK platform guide",
       "section": "guides",
       "order": 1,
-      "platforms": [
+      "clients": [
         {
-          "key": "android",
-          "label": "ATAK"
+          "id": "atak-sGxUIXpQlU",
+          "label": "ATAK",
+          "platform": "android"
         },
         {
-          "key": "windows",
-          "label": "WinTAK"
+          "id": "wintak-w8mKUfaRBP",
+          "label": "WinTAK",
+          "platform": "windows"
         },
         {
-          "key": "ios",
-          "label": "iTAK"
+          "id": "itak-bwDYWvqdnY",
+          "label": "iTAK",
+          "platform": "ios"
+        },
+        {
+          "id": "tak-tracker-android-JCZw3YH2nW",
+          "label": "TAK Tracker - Android",
+          "platform": "android"
+        },
+        {
+          "id": "tak-tracker-apple-PmHvleNK0F",
+          "label": "TAK Tracker - Apple",
+          "platform": "ios"
         }
       ]
     },
@@ -80,14 +98,16 @@
       "description": "TAK technical reference",
       "section": "wikis",
       "order": 5,
-      "platforms": [
+      "clients": [
         {
-          "key": "android",
-          "label": "ATAK - Android TAK"
+          "id": "atak-android-tak-YCvtAZaLrF",
+          "label": "ATAK - Android TAK",
+          "platform": "android"
         },
         {
-          "key": "windows",
-          "label": "WinTAK - Windows TAK"
+          "id": "wintak-windows-tak-h251ILyaWa",
+          "label": "WinTAK - Windows TAK",
+          "platform": "windows"
         }
       ]
     },
@@ -121,6 +141,7 @@
       "updatedAt": "2026-02-25T07:25:59.146Z",
       "order": 0,
       "platform": "android",
+      "clientId": "android-MENReFAfCN",
       "chapterId": "user-guide-SNTomIhnLe",
       "chapterLabel": "User Guide"
     },
@@ -138,6 +159,7 @@
       "updatedAt": "2026-02-25T07:28:56.761Z",
       "order": 1,
       "platform": "android",
+      "clientId": "android-MENReFAfCN",
       "chapterId": "user-guide-SNTomIhnLe",
       "chapterLabel": "User Guide"
     },
@@ -155,6 +177,7 @@
       "updatedAt": "2026-02-25T07:30:57.612Z",
       "order": 2,
       "platform": "android",
+      "clientId": "android-MENReFAfCN",
       "chapterId": "user-guide-SNTomIhnLe",
       "chapterLabel": "User Guide"
     },
@@ -172,6 +195,7 @@
       "updatedAt": "2026-02-25T07:33:17.264Z",
       "order": 3,
       "platform": "android",
+      "clientId": "android-MENReFAfCN",
       "chapterId": "admin-guide-V5Hs1rBdRL",
       "chapterLabel": "Admin Guide"
     },
@@ -189,6 +213,7 @@
       "updatedAt": "2026-02-25T07:33:51.306Z",
       "order": 4,
       "platform": "android",
+      "clientId": "android-MENReFAfCN",
       "chapterId": "admin-guide-V5Hs1rBdRL",
       "chapterLabel": "Admin Guide"
     },
@@ -206,6 +231,7 @@
       "updatedAt": "2026-02-25T07:34:19.063Z",
       "order": 5,
       "platform": "android",
+      "clientId": "android-MENReFAfCN",
       "chapterId": "admin-guide-V5Hs1rBdRL",
       "chapterLabel": "Admin Guide"
     },
@@ -223,6 +249,7 @@
       "updatedAt": "2026-02-25T07:35:19.709Z",
       "order": 6,
       "platform": "android",
+      "clientId": "android-MENReFAfCN",
       "chapterId": "admin-guide-V5Hs1rBdRL",
       "chapterLabel": "Admin Guide"
     },
@@ -240,6 +267,7 @@
       "updatedAt": "2026-02-25T07:36:12.445Z",
       "order": 7,
       "platform": "ios",
+      "clientId": "ios-8ux4fDfFeI",
       "chapterId": "user-guide-8g9rzhpxcj",
       "chapterLabel": "User Guide"
     },
@@ -257,6 +285,7 @@
       "updatedAt": "2026-01-23T20:08:10.314Z",
       "order": 8,
       "platform": "ios",
+      "clientId": "ios-8ux4fDfFeI",
       "chapterId": "user-guide-8g9rzhpxcj",
       "chapterLabel": "User Guide"
     },
@@ -274,6 +303,7 @@
       "updatedAt": "2026-02-18T05:45:37.136Z",
       "order": 9,
       "platform": "ios",
+      "clientId": "ios-8ux4fDfFeI",
       "chapterId": "admin-guide-H0sjVgEhja",
       "chapterLabel": "Admin Guide"
     },
@@ -291,6 +321,7 @@
       "updatedAt": "2026-01-23T20:08:00.066Z",
       "order": 10,
       "platform": "ios",
+      "clientId": "ios-8ux4fDfFeI",
       "chapterId": "admin-guide-H0sjVgEhja",
       "chapterLabel": "Admin Guide"
     },
@@ -308,6 +339,7 @@
       "updatedAt": "2026-01-23T20:08:00.016Z",
       "order": 11,
       "platform": "ios",
+      "clientId": "ios-8ux4fDfFeI",
       "chapterId": "admin-guide-H0sjVgEhja",
       "chapterLabel": "Admin Guide"
     },
@@ -325,6 +357,7 @@
       "updatedAt": "2026-01-23T20:07:59.959Z",
       "order": 12,
       "platform": "ios",
+      "clientId": "ios-8ux4fDfFeI",
       "chapterId": "admin-guide-H0sjVgEhja",
       "chapterLabel": "Admin Guide"
     },
@@ -342,6 +375,7 @@
       "updatedAt": "2026-02-25T07:36:23.881Z",
       "order": 13,
       "platform": "windows",
+      "clientId": "windows-7LrSmQmqQ6",
       "chapterId": "user-guide-irnHx8wSE7",
       "chapterLabel": "User Guide"
     },
@@ -359,6 +393,7 @@
       "updatedAt": "2026-01-23T20:08:59.764Z",
       "order": 14,
       "platform": "windows",
+      "clientId": "windows-7LrSmQmqQ6",
       "chapterId": "user-guide-irnHx8wSE7",
       "chapterLabel": "User Guide"
     },
@@ -376,6 +411,7 @@
       "updatedAt": "2026-02-18T13:22:09.062Z",
       "order": 15,
       "platform": "windows",
+      "clientId": "windows-7LrSmQmqQ6",
       "chapterId": "admin-guide-vhfls732g4",
       "chapterLabel": "Admin Guide"
     },
@@ -393,6 +429,7 @@
       "updatedAt": "2026-01-23T20:08:17.806Z",
       "order": 16,
       "platform": "windows",
+      "clientId": "windows-7LrSmQmqQ6",
       "chapterId": "admin-guide-vhfls732g4",
       "chapterLabel": "Admin Guide"
     },
@@ -410,6 +447,7 @@
       "updatedAt": "2026-01-23T20:08:17.760Z",
       "order": 17,
       "platform": "windows",
+      "clientId": "windows-7LrSmQmqQ6",
       "chapterId": "admin-guide-vhfls732g4",
       "chapterLabel": "Admin Guide"
     },
@@ -427,6 +465,7 @@
       "updatedAt": "2026-01-23T20:08:17.712Z",
       "order": 18,
       "platform": "windows",
+      "clientId": "windows-7LrSmQmqQ6",
       "chapterId": "admin-guide-vhfls732g4",
       "chapterLabel": "Admin Guide"
     },
@@ -444,6 +483,7 @@
       "updatedAt": "2026-02-25T07:36:31.156Z",
       "order": 19,
       "platform": "linux",
+      "clientId": "linux-JmHAcb7bTi",
       "chapterId": "user-guide-6StTnmEqiQ",
       "chapterLabel": "User Guide"
     },
@@ -461,6 +501,7 @@
       "updatedAt": "2026-01-23T20:08:39.896Z",
       "order": 20,
       "platform": "linux",
+      "clientId": "linux-JmHAcb7bTi",
       "chapterId": "user-guide-6StTnmEqiQ",
       "chapterLabel": "User Guide"
     },
@@ -478,6 +519,7 @@
       "updatedAt": "2026-02-18T13:22:24.264Z",
       "order": 21,
       "platform": "linux",
+      "clientId": "linux-JmHAcb7bTi",
       "chapterId": "admin-guide-DA32dON96v",
       "chapterLabel": "Admin Guide"
     },
@@ -495,6 +537,7 @@
       "updatedAt": "2026-01-23T20:09:16.914Z",
       "order": 22,
       "platform": "linux",
+      "clientId": "linux-JmHAcb7bTi",
       "chapterId": "admin-guide-DA32dON96v",
       "chapterLabel": "Admin Guide"
     },
@@ -512,6 +555,7 @@
       "updatedAt": "2026-01-23T20:09:16.869Z",
       "order": 23,
       "platform": "linux",
+      "clientId": "linux-JmHAcb7bTi",
       "chapterId": "admin-guide-DA32dON96v",
       "chapterLabel": "Admin Guide"
     },
@@ -529,6 +573,7 @@
       "updatedAt": "2026-01-23T20:09:16.822Z",
       "order": 24,
       "platform": "linux",
+      "clientId": "linux-JmHAcb7bTi",
       "chapterId": "admin-guide-DA32dON96v",
       "chapterLabel": "Admin Guide"
     },
@@ -546,6 +591,7 @@
       "updatedAt": "2026-02-27T08:34:36.287Z",
       "order": 25,
       "platform": "macos",
+      "clientId": "macos-6fg0DsaF5B",
       "chapterId": "user-guide-yEohm3XLal",
       "chapterLabel": "User Guide"
     },
@@ -563,6 +609,7 @@
       "updatedAt": "2026-01-23T20:08:51.211Z",
       "order": 26,
       "platform": "macos",
+      "clientId": "macos-6fg0DsaF5B",
       "chapterId": "user-guide-yEohm3XLal",
       "chapterLabel": "User Guide"
     },
@@ -580,6 +627,7 @@
       "updatedAt": "2026-02-18T13:22:31.867Z",
       "order": 27,
       "platform": "macos",
+      "clientId": "macos-6fg0DsaF5B",
       "chapterId": "admin-guide-Jf06VjsJzu",
       "chapterLabel": "Admin Guide"
     },
@@ -597,6 +645,7 @@
       "updatedAt": "2026-01-23T20:09:26.781Z",
       "order": 28,
       "platform": "macos",
+      "clientId": "macos-6fg0DsaF5B",
       "chapterId": "admin-guide-Jf06VjsJzu",
       "chapterLabel": "Admin Guide"
     },
@@ -614,6 +663,7 @@
       "updatedAt": "2026-01-23T20:09:26.551Z",
       "order": 29,
       "platform": "macos",
+      "clientId": "macos-6fg0DsaF5B",
       "chapterId": "admin-guide-Jf06VjsJzu",
       "chapterLabel": "Admin Guide"
     },
@@ -631,6 +681,7 @@
       "updatedAt": "2026-01-23T20:09:26.495Z",
       "order": 30,
       "platform": "macos",
+      "clientId": "macos-6fg0DsaF5B",
       "chapterId": "admin-guide-Jf06VjsJzu",
       "chapterLabel": "Admin Guide"
     },
@@ -661,8 +712,9 @@
       "updatedAt": "2026-02-28T11:12:46.806Z",
       "order": 1,
       "platform": "android",
+      "clientId": "atak-sGxUIXpQlU",
       "chapterId": "start-FxbN2wcFUs",
-      "chapterLabel": "ATAK · Start"
+      "chapterLabel": "Start"
     },
     {
       "id": "45a3e50c-b7c2-45d3-927d-bf2e2d97cbbf",
@@ -679,8 +731,9 @@
       "updatedAt": "2026-02-28T11:12:50.417Z",
       "order": 2,
       "platform": "android",
+      "clientId": "atak-sGxUIXpQlU",
       "chapterId": "start-FxbN2wcFUs",
-      "chapterLabel": "ATAK · Start"
+      "chapterLabel": "Start"
     },
     {
       "id": "c8842f7a-f533-4bfe-9027-88f165d16ddb",
@@ -697,8 +750,9 @@
       "updatedAt": "2026-02-28T11:12:52.249Z",
       "order": 3,
       "platform": "android",
+      "clientId": "atak-sGxUIXpQlU",
       "chapterId": "start-FxbN2wcFUs",
-      "chapterLabel": "ATAK · Start"
+      "chapterLabel": "Start"
     },
     {
       "id": "04b28f7b-f48f-4361-b9c9-f777dee2ed00",
@@ -715,8 +769,9 @@
       "updatedAt": "2026-02-28T11:12:53.977Z",
       "order": 4,
       "platform": "android",
+      "clientId": "atak-sGxUIXpQlU",
       "chapterId": "start-FxbN2wcFUs",
-      "chapterLabel": "ATAK · Start"
+      "chapterLabel": "Start"
     },
     {
       "id": "82c77545-7b47-4c8a-bf4b-2701a1bb3943",
@@ -733,8 +788,9 @@
       "updatedAt": "2026-02-28T11:12:57.526Z",
       "order": 5,
       "platform": "android",
+      "clientId": "atak-sGxUIXpQlU",
       "chapterId": "basic-features-pDRdN25Lk6",
-      "chapterLabel": "ATAK · Basic Features"
+      "chapterLabel": "Basic Features"
     },
     {
       "id": "6bf5c875-5082-4f7c-b28c-26b5eea8b0c5",
@@ -751,8 +807,9 @@
       "updatedAt": "2026-02-28T11:12:59.807Z",
       "order": 6,
       "platform": "android",
+      "clientId": "atak-sGxUIXpQlU",
       "chapterId": "basic-features-pDRdN25Lk6",
-      "chapterLabel": "ATAK · Basic Features"
+      "chapterLabel": "Basic Features"
     },
     {
       "id": "ce3ace12-abf3-4d66-a94b-8a5cbccfeebb",
@@ -769,8 +826,9 @@
       "updatedAt": "2026-02-28T11:13:05.697Z",
       "order": 7,
       "platform": "android",
+      "clientId": "atak-sGxUIXpQlU",
       "chapterId": "basic-features-pDRdN25Lk6",
-      "chapterLabel": "ATAK · Basic Features"
+      "chapterLabel": "Basic Features"
     },
     {
       "id": "ee9de6aa-bd12-414f-9e31-cfc8ecddda21",
@@ -787,8 +845,9 @@
       "updatedAt": "2026-02-28T11:13:08.018Z",
       "order": 8,
       "platform": "android",
+      "clientId": "atak-sGxUIXpQlU",
       "chapterId": "basic-features-pDRdN25Lk6",
-      "chapterLabel": "ATAK · Basic Features"
+      "chapterLabel": "Basic Features"
     },
     {
       "id": "ac6ec0b2-a62a-4435-ab5d-32cb374cc4c1",
@@ -805,8 +864,9 @@
       "updatedAt": "2026-02-28T11:13:19.176Z",
       "order": 9,
       "platform": "android",
+      "clientId": "atak-sGxUIXpQlU",
       "chapterId": "basic-features-pDRdN25Lk6",
-      "chapterLabel": "ATAK · Basic Features"
+      "chapterLabel": "Basic Features"
     },
     {
       "id": "1ddce881-2116-41eb-9980-f201fcc06f27",
@@ -823,8 +883,9 @@
       "updatedAt": "2026-02-28T11:13:22.399Z",
       "order": 10,
       "platform": "android",
+      "clientId": "atak-sGxUIXpQlU",
       "chapterId": "basic-features-pDRdN25Lk6",
-      "chapterLabel": "ATAK · Basic Features"
+      "chapterLabel": "Basic Features"
     },
     {
       "id": "a9de8b5d-4c35-4246-b0fe-7aeade6054ec",
@@ -841,8 +902,9 @@
       "updatedAt": "2026-02-28T11:13:25.165Z",
       "order": 11,
       "platform": "android",
+      "clientId": "atak-sGxUIXpQlU",
       "chapterId": "basic-features-pDRdN25Lk6",
-      "chapterLabel": "ATAK · Basic Features"
+      "chapterLabel": "Basic Features"
     },
     {
       "id": "8486d4e3-a42a-4478-b758-080f7033d3c5",
@@ -859,8 +921,9 @@
       "updatedAt": "2026-02-21T11:17:05.403Z",
       "order": 12,
       "platform": "android",
+      "clientId": "atak-sGxUIXpQlU",
       "chapterId": "advanced-features-w8JvOrLVwe",
-      "chapterLabel": "ATAK · Advanced Features"
+      "chapterLabel": "Advanced Features"
     },
     {
       "id": "8ff9d3fc-0a1c-4313-9458-c1a41be2f765",
@@ -877,8 +940,9 @@
       "updatedAt": "2026-02-21T11:17:10.271Z",
       "order": 13,
       "platform": "android",
+      "clientId": "atak-sGxUIXpQlU",
       "chapterId": "advanced-features-w8JvOrLVwe",
-      "chapterLabel": "ATAK · Advanced Features"
+      "chapterLabel": "Advanced Features"
     },
     {
       "id": "4f48651a-6513-4ec9-a22b-af1363663a5d",
@@ -895,8 +959,9 @@
       "updatedAt": "2026-02-21T11:17:25.786Z",
       "order": 14,
       "platform": "android",
+      "clientId": "atak-sGxUIXpQlU",
       "chapterId": "advanced-features-w8JvOrLVwe",
-      "chapterLabel": "ATAK · Advanced Features"
+      "chapterLabel": "Advanced Features"
     },
     {
       "id": "f30f10bf-0f99-4292-9930-56eaf6af5173",
@@ -913,8 +978,9 @@
       "updatedAt": "2026-02-21T11:17:31.428Z",
       "order": 15,
       "platform": "android",
+      "clientId": "atak-sGxUIXpQlU",
       "chapterId": "advanced-features-w8JvOrLVwe",
-      "chapterLabel": "ATAK · Advanced Features"
+      "chapterLabel": "Advanced Features"
     },
     {
       "id": "9bb35061-2c64-4718-9273-c11847dfa322",
@@ -931,8 +997,9 @@
       "updatedAt": "2026-02-28T11:13:36.157Z",
       "order": 16,
       "platform": "android",
+      "clientId": "atak-sGxUIXpQlU",
       "chapterId": "advanced-features-w8JvOrLVwe",
-      "chapterLabel": "ATAK · Advanced Features"
+      "chapterLabel": "Advanced Features"
     },
     {
       "id": "2676ebbb-83f4-4569-a7a2-7050395f28c8",
@@ -949,8 +1016,9 @@
       "updatedAt": "2026-02-21T11:17:43.549Z",
       "order": 17,
       "platform": "android",
+      "clientId": "atak-sGxUIXpQlU",
       "chapterId": "advanced-features-w8JvOrLVwe",
-      "chapterLabel": "ATAK · Advanced Features"
+      "chapterLabel": "Advanced Features"
     },
     {
       "id": "9e276016-9095-4d4d-964b-871709eac99e",
@@ -967,8 +1035,9 @@
       "updatedAt": "2026-02-28T11:13:49.510Z",
       "order": 18,
       "platform": "android",
+      "clientId": "atak-sGxUIXpQlU",
       "chapterId": "advanced-features-w8JvOrLVwe",
-      "chapterLabel": "ATAK · Advanced Features"
+      "chapterLabel": "Advanced Features"
     },
     {
       "id": "7df31ecb-1092-4d8c-9013-b168feec84ba",
@@ -985,8 +1054,9 @@
       "updatedAt": "2026-02-28T11:13:55.810Z",
       "order": 19,
       "platform": "android",
+      "clientId": "atak-sGxUIXpQlU",
       "chapterId": "advanced-features-w8JvOrLVwe",
-      "chapterLabel": "ATAK · Advanced Features"
+      "chapterLabel": "Advanced Features"
     },
     {
       "id": "0e075790-c86e-4330-9e1f-3d43298c5fce",
@@ -1003,8 +1073,9 @@
       "updatedAt": "2026-04-12T10:05:02.164Z",
       "order": 20,
       "platform": "android",
+      "clientId": "atak-sGxUIXpQlU",
       "chapterId": "usage-by-role-2F9bOBgUmG",
-      "chapterLabel": "ATAK · Usage by Role"
+      "chapterLabel": "Usage by Role"
     },
     {
       "id": "a3c77bb3-791e-4dcb-8ce1-bfc6850119e0",
@@ -1022,8 +1093,9 @@
       "updatedAt": "2026-04-12T10:05:24.996Z",
       "order": 21,
       "platform": "android",
+      "clientId": "atak-sGxUIXpQlU",
       "chapterId": "usage-by-role-2F9bOBgUmG",
-      "chapterLabel": "ATAK · Usage by Role"
+      "chapterLabel": "Usage by Role"
     },
     {
       "id": "c64f9f4e-3647-40a8-b468-20adc6db40c3",
@@ -1041,8 +1113,9 @@
       "updatedAt": "2026-04-12T10:05:30.082Z",
       "order": 22,
       "platform": "android",
+      "clientId": "atak-sGxUIXpQlU",
       "chapterId": "usage-by-role-2F9bOBgUmG",
-      "chapterLabel": "ATAK · Usage by Role"
+      "chapterLabel": "Usage by Role"
     },
     {
       "id": "7304adaf-3380-4d82-b27c-57f4b362887e",
@@ -1060,8 +1133,9 @@
       "updatedAt": "2026-02-28T11:14:24.245Z",
       "order": 23,
       "platform": "android",
+      "clientId": "atak-sGxUIXpQlU",
       "chapterId": "usage-by-role-2F9bOBgUmG",
-      "chapterLabel": "ATAK · Usage by Role"
+      "chapterLabel": "Usage by Role"
     },
     {
       "id": "46d6af66-24b1-48f2-be29-eba6d30b8326",
@@ -1078,8 +1152,9 @@
       "updatedAt": "2026-04-12T10:06:09.700Z",
       "order": 24,
       "platform": "android",
+      "clientId": "atak-sGxUIXpQlU",
       "chapterId": "supported-plugins-XdDLDnS5CE",
-      "chapterLabel": "ATAK · Supported Plugins"
+      "chapterLabel": "Supported Plugins"
     },
     {
       "id": "28903747-f31c-424e-b7e5-7a3a70cd6648",
@@ -1095,6 +1170,7 @@
       "updatedAt": "2026-04-12T10:06:13.891Z",
       "order": 25,
       "platform": "android",
+      "clientId": "atak-sGxUIXpQlU",
       "chapterId": "atak-sGxUIXpQlU",
       "chapterLabel": "ATAK"
     },
@@ -1113,6 +1189,7 @@
       "updatedAt": "2026-02-21T22:16:31.427Z",
       "order": 26,
       "platform": "windows",
+      "clientId": "wintak-w8mKUfaRBP",
       "chapterId": "start-gF8MDfsdW9",
       "chapterLabel": "Start"
     },
@@ -1131,6 +1208,7 @@
       "updatedAt": "2026-02-22T11:48:39.586Z",
       "order": 27,
       "platform": "windows",
+      "clientId": "wintak-w8mKUfaRBP",
       "chapterId": "start-gF8MDfsdW9",
       "chapterLabel": "Start"
     },
@@ -1149,6 +1227,7 @@
       "updatedAt": "2026-02-21T22:28:54.014Z",
       "order": 28,
       "platform": "windows",
+      "clientId": "wintak-w8mKUfaRBP",
       "chapterId": "basic-features-pmjQ96x5bI",
       "chapterLabel": "Basic Features"
     },
@@ -1167,6 +1246,7 @@
       "updatedAt": "2026-02-22T13:48:24.787Z",
       "order": 29,
       "platform": "windows",
+      "clientId": "wintak-w8mKUfaRBP",
       "chapterId": "basic-features-pmjQ96x5bI",
       "chapterLabel": "Basic Features"
     },
@@ -1185,6 +1265,7 @@
       "updatedAt": "2026-02-22T14:12:32.711Z",
       "order": 30,
       "platform": "windows",
+      "clientId": "wintak-w8mKUfaRBP",
       "chapterId": "basic-features-pmjQ96x5bI",
       "chapterLabel": "Basic Features"
     },
@@ -1203,6 +1284,7 @@
       "updatedAt": "2026-02-22T09:42:31.113Z",
       "order": 31,
       "platform": "windows",
+      "clientId": "wintak-w8mKUfaRBP",
       "chapterId": "basic-features-pmjQ96x5bI",
       "chapterLabel": "Basic Features"
     },
@@ -1221,6 +1303,7 @@
       "updatedAt": "2026-02-22T13:45:05.025Z",
       "order": 32,
       "platform": "windows",
+      "clientId": "wintak-w8mKUfaRBP",
       "chapterId": "basic-features-pmjQ96x5bI",
       "chapterLabel": "Basic Features"
     },
@@ -1239,6 +1322,7 @@
       "updatedAt": "2025-12-05T22:05:59.366Z",
       "order": 33,
       "platform": "windows",
+      "clientId": "wintak-w8mKUfaRBP",
       "chapterId": "basic-features-pmjQ96x5bI",
       "chapterLabel": "Basic Features"
     },
@@ -1257,6 +1341,7 @@
       "updatedAt": "2026-02-22T10:35:55.634Z",
       "order": 34,
       "platform": "windows",
+      "clientId": "wintak-w8mKUfaRBP",
       "chapterId": "advanced-features-dUEpnxlGD0",
       "chapterLabel": "Advanced Features"
     },
@@ -1275,6 +1360,7 @@
       "updatedAt": "2026-02-22T13:48:52.268Z",
       "order": 35,
       "platform": "windows",
+      "clientId": "wintak-w8mKUfaRBP",
       "chapterId": "advanced-features-dUEpnxlGD0",
       "chapterLabel": "Advanced Features"
     },
@@ -1293,6 +1379,7 @@
       "updatedAt": "2026-02-22T14:27:40.259Z",
       "order": 36,
       "platform": "windows",
+      "clientId": "wintak-w8mKUfaRBP",
       "chapterId": "advanced-features-dUEpnxlGD0",
       "chapterLabel": "Advanced Features"
     },
@@ -1311,6 +1398,7 @@
       "updatedAt": "2026-02-22T13:49:02.702Z",
       "order": 37,
       "platform": "windows",
+      "clientId": "wintak-w8mKUfaRBP",
       "chapterId": "advanced-features-dUEpnxlGD0",
       "chapterLabel": "Advanced Features"
     },
@@ -1329,6 +1417,7 @@
       "updatedAt": "2026-02-21T14:24:06.369Z",
       "order": 38,
       "platform": "windows",
+      "clientId": "wintak-w8mKUfaRBP",
       "chapterId": "usage-by-role-IWyDTtxCJS",
       "chapterLabel": "Usage by Role"
     },
@@ -1347,6 +1436,7 @@
       "updatedAt": "2026-02-21T14:24:08.912Z",
       "order": 39,
       "platform": "windows",
+      "clientId": "wintak-w8mKUfaRBP",
       "chapterId": "usage-by-role-IWyDTtxCJS",
       "chapterLabel": "Usage by Role"
     },
@@ -1366,6 +1456,7 @@
       "updatedAt": "2026-02-22T10:28:06.673Z",
       "order": 40,
       "platform": "windows",
+      "clientId": "wintak-w8mKUfaRBP",
       "chapterId": "usage-by-role-IWyDTtxCJS",
       "chapterLabel": "Usage by Role"
     },
@@ -1384,6 +1475,7 @@
       "updatedAt": "2026-02-21T14:24:17.123Z",
       "order": 41,
       "platform": "windows",
+      "clientId": "wintak-w8mKUfaRBP",
       "chapterId": "supported-plugins-zl2XZB0u1p",
       "chapterLabel": "Supported Plugins"
     },
@@ -1401,6 +1493,7 @@
       "updatedAt": "2026-02-21T14:24:21.755Z",
       "order": 42,
       "platform": "windows",
+      "clientId": "wintak-w8mKUfaRBP",
       "chapterId": "wintak-w8mKUfaRBP",
       "chapterLabel": "WinTAK"
     },
@@ -1419,8 +1512,9 @@
       "updatedAt": "2026-02-20T22:12:29.976Z",
       "order": 43,
       "platform": "ios",
+      "clientId": "itak-bwDYWvqdnY",
       "chapterId": "start-sLRG2uavSv",
-      "chapterLabel": "iTAK · Start"
+      "chapterLabel": "Start"
     },
     {
       "id": "20a9fdbe-ba84-4a18-89ce-bbacfe3af064",
@@ -1437,8 +1531,9 @@
       "updatedAt": "2026-02-20T22:13:14.287Z",
       "order": 44,
       "platform": "ios",
+      "clientId": "itak-bwDYWvqdnY",
       "chapterId": "start-sLRG2uavSv",
-      "chapterLabel": "iTAK · Start"
+      "chapterLabel": "Start"
     },
     {
       "id": "9c0978af-31b9-4f70-8bed-a82092232f09",
@@ -1455,8 +1550,9 @@
       "updatedAt": "2026-02-22T13:49:19.366Z",
       "order": 45,
       "platform": "ios",
+      "clientId": "itak-bwDYWvqdnY",
       "chapterId": "basic-features-StHwTheTn5",
-      "chapterLabel": "iTAK · Basic Features"
+      "chapterLabel": "Basic Features"
     },
     {
       "id": "dc7f6de4-b754-457d-a704-dd1c792152af",
@@ -1473,8 +1569,9 @@
       "updatedAt": "2026-02-20T20:51:41.284Z",
       "order": 46,
       "platform": "ios",
+      "clientId": "itak-bwDYWvqdnY",
       "chapterId": "basic-features-StHwTheTn5",
-      "chapterLabel": "iTAK · Basic Features"
+      "chapterLabel": "Basic Features"
     },
     {
       "id": "b05ee7a4-13a2-4cd8-865c-0812dd57bfff",
@@ -1491,8 +1588,9 @@
       "updatedAt": "2026-02-22T13:49:37.259Z",
       "order": 47,
       "platform": "ios",
+      "clientId": "itak-bwDYWvqdnY",
       "chapterId": "basic-features-StHwTheTn5",
-      "chapterLabel": "iTAK · Basic Features"
+      "chapterLabel": "Basic Features"
     },
     {
       "id": "7f5e9540-9d73-4d1e-a0c1-14e3e6f07075",
@@ -1509,8 +1607,9 @@
       "updatedAt": "2026-02-22T13:49:42.545Z",
       "order": 48,
       "platform": "ios",
+      "clientId": "itak-bwDYWvqdnY",
       "chapterId": "basic-features-StHwTheTn5",
-      "chapterLabel": "iTAK · Basic Features"
+      "chapterLabel": "Basic Features"
     },
     {
       "id": "c449e185-99ae-42a2-a1cf-7b59eeaa6775",
@@ -1527,8 +1626,9 @@
       "updatedAt": "2025-12-05T22:06:10.622Z",
       "order": 49,
       "platform": "ios",
+      "clientId": "itak-bwDYWvqdnY",
       "chapterId": "usage-by-role-LlQdNcNgkg",
-      "chapterLabel": "iTAK · Usage by Role"
+      "chapterLabel": "Usage by Role"
     },
     {
       "id": "884f750f-e176-4be4-a191-0665511ba933",
@@ -1545,8 +1645,9 @@
       "updatedAt": "2025-12-05T22:06:10.581Z",
       "order": 50,
       "platform": "ios",
+      "clientId": "itak-bwDYWvqdnY",
       "chapterId": "usage-by-role-LlQdNcNgkg",
-      "chapterLabel": "iTAK · Usage by Role"
+      "chapterLabel": "Usage by Role"
     },
     {
       "id": "62b8ea81-d7ef-490a-9834-1e8b7ce5bd24",
@@ -1563,8 +1664,9 @@
       "updatedAt": "2025-12-05T22:06:10.535Z",
       "order": 51,
       "platform": "ios",
+      "clientId": "itak-bwDYWvqdnY",
       "chapterId": "usage-by-role-LlQdNcNgkg",
-      "chapterLabel": "iTAK · Usage by Role"
+      "chapterLabel": "Usage by Role"
     },
     {
       "id": "411eed47-07e4-4089-b035-38f7e77e9a0d",
@@ -1580,6 +1682,7 @@
       "updatedAt": "2025-12-05T22:06:10.255Z",
       "order": 52,
       "platform": "ios",
+      "clientId": "itak-bwDYWvqdnY",
       "chapterId": "itak-bwDYWvqdnY",
       "chapterLabel": "iTAK"
     },
@@ -1598,8 +1701,9 @@
       "updatedAt": "2026-02-21T09:11:38.026Z",
       "order": 53,
       "platform": "android",
+      "clientId": "tak-tracker-android-JCZw3YH2nW",
       "chapterId": "start-LlfSpMeCW8",
-      "chapterLabel": "TAK Tracker - Android · Start"
+      "chapterLabel": "Start"
     },
     {
       "id": "c52c447b-f610-4b40-a910-bbf635572ad6",
@@ -1616,8 +1720,9 @@
       "updatedAt": "2026-02-21T09:11:28.472Z",
       "order": 54,
       "platform": "android",
+      "clientId": "tak-tracker-android-JCZw3YH2nW",
       "chapterId": "start-LlfSpMeCW8",
-      "chapterLabel": "TAK Tracker - Android · Start"
+      "chapterLabel": "Start"
     },
     {
       "id": "91c58ae9-39c3-4623-8099-ce1c85401757",
@@ -1634,8 +1739,9 @@
       "updatedAt": "2026-02-21T10:42:40.160Z",
       "order": 55,
       "platform": "android",
+      "clientId": "tak-tracker-android-JCZw3YH2nW",
       "chapterId": "start-LlfSpMeCW8",
-      "chapterLabel": "TAK Tracker - Android · Start"
+      "chapterLabel": "Start"
     },
     {
       "id": "3bc34372-3886-4a4a-9a61-acce2f9dcb60",
@@ -1652,8 +1758,9 @@
       "updatedAt": "2026-02-21T08:40:53.162Z",
       "order": 56,
       "platform": "android",
+      "clientId": "tak-tracker-android-JCZw3YH2nW",
       "chapterId": "usage-by-role-KxtjmbM9B1",
-      "chapterLabel": "TAK Tracker - Android · Usage by Role"
+      "chapterLabel": "Usage by Role"
     },
     {
       "id": "a3db4071-6a71-4189-a81a-31e028b72c2f",
@@ -1670,8 +1777,9 @@
       "updatedAt": "2026-02-21T08:40:54.745Z",
       "order": 57,
       "platform": "android",
+      "clientId": "tak-tracker-android-JCZw3YH2nW",
       "chapterId": "usage-by-role-KxtjmbM9B1",
-      "chapterLabel": "TAK Tracker - Android · Usage by Role"
+      "chapterLabel": "Usage by Role"
     },
     {
       "id": "03f5bfcd-2567-4a6f-9718-482953706997",
@@ -1688,8 +1796,9 @@
       "updatedAt": "2026-02-21T08:40:56.130Z",
       "order": 58,
       "platform": "android",
+      "clientId": "tak-tracker-android-JCZw3YH2nW",
       "chapterId": "usage-by-role-KxtjmbM9B1",
-      "chapterLabel": "TAK Tracker - Android · Usage by Role"
+      "chapterLabel": "Usage by Role"
     },
     {
       "id": "a378322d-ad76-4cf4-ae94-a490806ac2b9",
@@ -1705,6 +1814,7 @@
       "updatedAt": "2026-02-21T08:40:59.848Z",
       "order": 59,
       "platform": "android",
+      "clientId": "tak-tracker-android-JCZw3YH2nW",
       "chapterId": "tak-tracker-android-JCZw3YH2nW",
       "chapterLabel": "TAK Tracker - Android"
     },
@@ -1723,8 +1833,9 @@
       "updatedAt": "2026-02-21T08:37:32.546Z",
       "order": 60,
       "platform": "ios",
+      "clientId": "tak-tracker-apple-PmHvleNK0F",
       "chapterId": "start-oZzAX4X7Er",
-      "chapterLabel": "TAK Tracker - Apple · Start"
+      "chapterLabel": "Start"
     },
     {
       "id": "c5a3d4f8-ab45-49f1-ad12-c7d612cc732b",
@@ -1741,8 +1852,9 @@
       "updatedAt": "2026-02-21T08:38:01.138Z",
       "order": 61,
       "platform": "ios",
+      "clientId": "tak-tracker-apple-PmHvleNK0F",
       "chapterId": "start-oZzAX4X7Er",
-      "chapterLabel": "TAK Tracker - Apple · Start"
+      "chapterLabel": "Start"
     },
     {
       "id": "e1b73cfa-3511-4413-92df-7ceed72140ff",
@@ -1759,8 +1871,9 @@
       "updatedAt": "2026-02-21T08:40:22.498Z",
       "order": 62,
       "platform": "ios",
+      "clientId": "tak-tracker-apple-PmHvleNK0F",
       "chapterId": "tak-features-2eQ2Stir9U",
-      "chapterLabel": "TAK Tracker - Apple · TAK Features"
+      "chapterLabel": "TAK Features"
     },
     {
       "id": "fc567617-02ca-44ba-a293-e99977710931",
@@ -1777,8 +1890,9 @@
       "updatedAt": "2026-02-21T08:40:26.953Z",
       "order": 63,
       "platform": "ios",
+      "clientId": "tak-tracker-apple-PmHvleNK0F",
       "chapterId": "usage-by-role-FfcECbKYmK",
-      "chapterLabel": "TAK Tracker - Apple · Usage by Role"
+      "chapterLabel": "Usage by Role"
     },
     {
       "id": "7b06ea32-e825-4854-a9ee-c03f1de33dec",
@@ -1795,8 +1909,9 @@
       "updatedAt": "2026-02-21T08:40:29.184Z",
       "order": 64,
       "platform": "ios",
+      "clientId": "tak-tracker-apple-PmHvleNK0F",
       "chapterId": "usage-by-role-FfcECbKYmK",
-      "chapterLabel": "TAK Tracker - Apple · Usage by Role"
+      "chapterLabel": "Usage by Role"
     },
     {
       "id": "4af2e06f-0b4c-4439-a633-772e713357cd",
@@ -1813,8 +1928,9 @@
       "updatedAt": "2026-02-21T08:40:31.192Z",
       "order": 65,
       "platform": "ios",
+      "clientId": "tak-tracker-apple-PmHvleNK0F",
       "chapterId": "usage-by-role-FfcECbKYmK",
-      "chapterLabel": "TAK Tracker - Apple · Usage by Role"
+      "chapterLabel": "Usage by Role"
     },
     {
       "id": "59c68c5b-a763-41ee-9d9b-af2fa9b9a801",
@@ -1830,6 +1946,7 @@
       "updatedAt": "2026-02-21T08:40:35.190Z",
       "order": 66,
       "platform": "ios",
+      "clientId": "tak-tracker-apple-PmHvleNK0F",
       "chapterId": "tak-tracker-apple-PmHvleNK0F",
       "chapterLabel": "TAK Tracker - Apple"
     },
@@ -1998,6 +2115,7 @@
       "updatedAt": "2026-02-19T13:05:12.835Z",
       "order": 2,
       "platform": "android",
+      "clientId": "atak-android-tak-YCvtAZaLrF",
       "chapterId": "tools-and-functions-6akJzo2ed0",
       "chapterLabel": "Tools and functions"
     },
@@ -2016,6 +2134,7 @@
       "updatedAt": "2026-02-19T13:05:16.158Z",
       "order": 3,
       "platform": "android",
+      "clientId": "atak-android-tak-YCvtAZaLrF",
       "chapterId": "tools-and-functions-6akJzo2ed0",
       "chapterLabel": "Tools and functions"
     },
@@ -2034,6 +2153,7 @@
       "updatedAt": "2026-02-19T13:05:33.870Z",
       "order": 4,
       "platform": "android",
+      "clientId": "atak-android-tak-YCvtAZaLrF",
       "chapterId": "tools-and-functions-6akJzo2ed0",
       "chapterLabel": "Tools and functions"
     },
@@ -2052,6 +2172,7 @@
       "updatedAt": "2026-02-19T13:04:02.956Z",
       "order": 5,
       "platform": "android",
+      "clientId": "atak-android-tak-YCvtAZaLrF",
       "chapterId": "tools-and-functions-6akJzo2ed0",
       "chapterLabel": "Tools and functions"
     },
@@ -2070,6 +2191,7 @@
       "updatedAt": "2026-02-19T13:05:55.929Z",
       "order": 6,
       "platform": "android",
+      "clientId": "atak-android-tak-YCvtAZaLrF",
       "chapterId": "tools-and-functions-6akJzo2ed0",
       "chapterLabel": "Tools and functions"
     },
@@ -2088,6 +2210,7 @@
       "updatedAt": "2026-02-19T13:05:59.638Z",
       "order": 7,
       "platform": "android",
+      "clientId": "atak-android-tak-YCvtAZaLrF",
       "chapterId": "tools-and-functions-6akJzo2ed0",
       "chapterLabel": "Tools and functions"
     },
@@ -2106,6 +2229,7 @@
       "updatedAt": "2026-02-19T13:04:08.658Z",
       "order": 8,
       "platform": "android",
+      "clientId": "atak-android-tak-YCvtAZaLrF",
       "chapterId": "tools-and-functions-6akJzo2ed0",
       "chapterLabel": "Tools and functions"
     },
@@ -2123,6 +2247,7 @@
       "updatedAt": "2026-02-19T13:10:47.089Z",
       "order": 9,
       "platform": "android",
+      "clientId": "atak-android-tak-YCvtAZaLrF",
       "chapterId": "atak-android-tak-YCvtAZaLrF",
       "chapterLabel": "ATAK - Android TAK"
     },
@@ -2192,6 +2317,7 @@
       "updatedAt": "2026-02-19T13:24:14.965Z",
       "order": 14,
       "platform": "windows",
+      "clientId": "wintak-windows-tak-h251ILyaWa",
       "chapterId": "wintak-windows-tak-h251ILyaWa",
       "chapterLabel": "WinTAK - Windows TAK"
     },
@@ -2210,6 +2336,7 @@
       "updatedAt": "2026-02-19T13:26:17.203Z",
       "order": 15,
       "platform": "windows",
+      "clientId": "wintak-windows-tak-h251ILyaWa",
       "chapterId": "tools-and-functions-Wak49eEupd",
       "chapterLabel": "Tools and functions"
     },
@@ -2228,6 +2355,7 @@
       "updatedAt": "2026-02-19T13:27:00.942Z",
       "order": 16,
       "platform": "windows",
+      "clientId": "wintak-windows-tak-h251ILyaWa",
       "chapterId": "tools-and-functions-Wak49eEupd",
       "chapterLabel": "Tools and functions"
     },
@@ -2246,6 +2374,7 @@
       "updatedAt": "2026-02-19T13:27:56.117Z",
       "order": 17,
       "platform": "windows",
+      "clientId": "wintak-windows-tak-h251ILyaWa",
       "chapterId": "tools-and-functions-Wak49eEupd",
       "chapterLabel": "Tools and functions"
     },
@@ -2264,6 +2393,7 @@
       "updatedAt": "2026-02-19T13:29:52.514Z",
       "order": 18,
       "platform": "windows",
+      "clientId": "wintak-windows-tak-h251ILyaWa",
       "chapterId": "tools-and-functions-Wak49eEupd",
       "chapterLabel": "Tools and functions"
     },

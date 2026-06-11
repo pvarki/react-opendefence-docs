@@ -69,6 +69,30 @@ and the page goes live on the next sync.
 This means you can draft freely in Outline without half-finished
 pages leaking to readers.
 
+## Organizer markers: platforms, clients and section headings
+
+Organizer docs (docs that only nest other docs) shape navigation. Three
+markers, typed as plain lines in the organizer doc's body, control how:
+
+- `META: platform: android` (or `ios`, `windows`, `linux`, `macos`) — this
+  organizer is a selectable client in the platform selector. You rarely need
+  it: names like `Android`, `ATAK`, `iTAK`, `WinTAK` or `TAK Tracker -
+Android` are detected automatically. Use the marker when the name alone
+  doesn't say the platform (e.g. a new product client).
+- `META: toporg` — this organizer is a section heading that groups chapters
+  in the table of contents instead of being a chapter itself. Example: under
+  `ATAK`, a toporg `INTRODUCTION` holding the intro page and the `Start`
+  chapter, then `USING ATAK FEATURES` holding Basic Features, Advanced
+  Features and Supported Plugins, then `USAGE BY ROLE`.
+- `(this page is under development)` — on a client organizer this shows an
+  "Under development" tag in the platform selector, telling readers this
+  client still has sections missing compared to the others.
+
+Structure under a client: organizers become chapters (or toporgs with the
+marker), loose docs group under the client's own name. Each client is its
+own entry in the selector — ATAK and TAK Tracker are separate choices even
+though both run on Android.
+
 ## Quick checklist for a new page
 
 1. Open the right collection in Outline.

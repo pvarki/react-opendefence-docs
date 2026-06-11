@@ -9,7 +9,7 @@ import { Button } from "@/components/ui/button";
 import { Lightbox } from "@/components/slides/Lightbox";
 import { useImagePreloader } from "@/components/slides/useImagePreloader";
 import { useReaderData } from "@/lib/useReaderData";
-import { usePlatform } from "@/lib/platform";
+import { useReadingView } from "@/lib/platform";
 import { resolveGlobalPosition } from "@/lib/content/neighbors";
 
 /**
@@ -24,7 +24,7 @@ export function MobileSlideShow({ block }: { block: SlidesetBlock }) {
   const navigate = useNavigate();
   const params = useParams({ strict: false });
   const reader = useReaderData();
-  const platform = usePlatform();
+  const view = useReadingView();
 
   const [selected, setSelected] = useState(0);
   const [enlarged, setEnlarged] = useState<{ src: string; alt?: string }>();
@@ -58,7 +58,7 @@ export function MobileSlideShow({ block }: { block: SlidesetBlock }) {
       reader.manifest,
       reader.collection,
       reader.slug,
-      platform,
+      view,
     )?.next;
   })();
 

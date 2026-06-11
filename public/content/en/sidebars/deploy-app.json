@@ -7,7 +7,7 @@
       "type": "group",
       "id": "user-guide-SNTomIhnLe",
       "label": "User Guide",
-      "platform": "android",
+      "clientId": "android-MENReFAfCN",
       "children": [
         {
           "type": "doc",
@@ -33,7 +33,7 @@
       "type": "group",
       "id": "admin-guide-V5Hs1rBdRL",
       "label": "Admin Guide",
-      "platform": "android",
+      "clientId": "android-MENReFAfCN",
       "children": [
         {
           "type": "doc",
@@ -65,7 +65,7 @@
       "type": "group",
       "id": "user-guide-8g9rzhpxcj",
       "label": "User Guide",
-      "platform": "ios",
+      "clientId": "ios-8ux4fDfFeI",
       "children": [
         {
           "type": "doc",
@@ -85,7 +85,7 @@
       "type": "group",
       "id": "admin-guide-H0sjVgEhja",
       "label": "Admin Guide",
-      "platform": "ios",
+      "clientId": "ios-8ux4fDfFeI",
       "children": [
         {
           "type": "doc",
@@ -117,7 +117,7 @@
       "type": "group",
       "id": "user-guide-irnHx8wSE7",
       "label": "User Guide",
-      "platform": "windows",
+      "clientId": "windows-7LrSmQmqQ6",
       "children": [
         {
           "type": "doc",
@@ -137,7 +137,7 @@
       "type": "group",
       "id": "admin-guide-vhfls732g4",
       "label": "Admin Guide",
-      "platform": "windows",
+      "clientId": "windows-7LrSmQmqQ6",
       "children": [
         {
           "type": "doc",
@@ -169,7 +169,7 @@
       "type": "group",
       "id": "user-guide-6StTnmEqiQ",
       "label": "User Guide",
-      "platform": "linux",
+      "clientId": "linux-JmHAcb7bTi",
       "children": [
         {
           "type": "doc",
@@ -189,7 +189,7 @@
       "type": "group",
       "id": "admin-guide-DA32dON96v",
       "label": "Admin Guide",
-      "platform": "linux",
+      "clientId": "linux-JmHAcb7bTi",
       "children": [
         {
           "type": "doc",
@@ -221,7 +221,7 @@
       "type": "group",
       "id": "user-guide-yEohm3XLal",
       "label": "User Guide",
-      "platform": "macos",
+      "clientId": "macos-6fg0DsaF5B",
       "children": [
         {
           "type": "doc",
@@ -241,7 +241,7 @@
       "type": "group",
       "id": "admin-guide-Jf06VjsJzu",
       "label": "Admin Guide",
-      "platform": "macos",
+      "clientId": "macos-6fg0DsaF5B",
       "children": [
         {
           "type": "doc",
