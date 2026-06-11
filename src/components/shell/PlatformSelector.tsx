@@ -1,7 +1,13 @@
+import { useNavigate, useParams } from "@tanstack/react-router";
 import { useTranslation } from "react-i18next";
 import { MonitorSmartphone } from "lucide-react";
-import { PLATFORMS, type PlatformInfo } from "@shared/content-schema";
+import {
+  PLATFORMS,
+  type Platform,
+  type PlatformInfo,
+} from "@shared/content-schema";
 import { PLATFORM_LABELS, setPlatform, usePlatform } from "@/lib/platform";
+import { readingOrder } from "@/lib/content/neighbors";
 import { useReaderData } from "@/lib/useReaderData";
 import {
   Select,
@@ -20,6 +26,8 @@ export function PlatformSelector() {
   const { t } = useTranslation();
   const active = usePlatform();
   const reader = useReaderData();
+  const navigate = useNavigate();
+  const params = useParams({ strict: false });
 
   const bookPlatforms = reader?.manifest.collections.find(
     (c) => c.slug === reader.collection,
@@ -32,8 +40,30 @@ export function PlatformSelector() {
 
   const activeOption = options.find((o) => o.key === active);
 
+  // Picking a platform while reading a page that doesn't exist there lands
+  // on that platform's first page of the current book.
+  const pick = (next: Platform) => {
+    setPlatform(next);
+    if (!reader?.slug) return;
+    const current = reader.manifest.pages.find(
+      (p) => p.collection === reader.collection && p.slug === reader.slug,
+    );
+    if (current?.platform && current.platform !== next) {
+      const first = readingOrder(reader.manifest, reader.collection, next)[0];
+      void navigate({
+        to: "/$locale/$",
+        params: {
+          locale: params.locale ?? "en",
+          _splat: first
+            ? `${first.collection}/${first.slug}`
+            : reader.collection,
+        },
+      });
+    }
+  };
+
   return (
-    <Select value={active} onValueChange={(v) => setPlatform(v as never)}>
+    <Select value={active} onValueChange={(v) => pick(v as Platform)}>
       <SelectTrigger
         size="sm"
         className="gap-1.5 border-input bg-transparent"

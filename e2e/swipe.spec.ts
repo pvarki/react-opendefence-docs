@@ -185,19 +185,31 @@ test.describe("book swipe navigation", () => {
 });
 
 test.describe("contextual bottom bar (mobile)", () => {
-  test("shows the book's chapters; tapping jumps to the chapter", async ({
+  test("in-book bar: Home, Search, Platform, Guides + larger Contents rightmost", async ({
     page,
   }, testInfo) => {
     test.skip(testInfo.project.name !== "mobile", "bottom bar is mobile-only");
     await open(page, FIRST);
     const bar = page.locator("nav.fixed");
-    await expect(bar.getByRole("button", { name: "User Guide" })).toBeVisible();
-    await bar.getByRole("button", { name: "Admin Guide" }).click();
-    await expect(page).toHaveURL(ADMIN_FIRST);
-    // Active chapter chip follows.
-    await expect(
-      bar.getByRole("button", { name: "Admin Guide" }),
-    ).toHaveAttribute("aria-current", "true");
+    await expect(bar.getByRole("link", { name: "Home" })).toBeVisible();
+    await expect(bar.getByRole("link", { name: "Search" })).toBeVisible();
+    await expect(bar.getByRole("link", { name: "Guides" })).toBeVisible();
+    await expect(bar.getByRole("button", { name: "Platform" })).toBeVisible();
+    await expect(bar.getByRole("button", { name: "Contents" })).toBeVisible();
+  });
+
+  test("platform sheet picks a platform and lands on its first page", async ({
+    page,
+  }, testInfo) => {
+    test.skip(testInfo.project.name !== "mobile", "bottom bar is mobile-only");
+    await open(page, FIRST); // android page
+    await page
+      .locator("nav.fixed")
+      .getByRole("button", { name: "Platform" })
+      .click();
+    await page.getByRole("button", { name: "iOS" }).click();
+    // Current page is android-only: the pick continues at iOS's first page.
+    await expect(page).toHaveURL("/en/deploy-app/join-a-deploy-app-f7TuSbNQId");
   });
 
   test("contents (leftmost) opens the platform-filtered book TOC", async ({
@@ -238,6 +250,30 @@ test.describe("platform selector", () => {
     await expect(
       page.locator("main").getByText("WinTAK", { exact: false }).first(),
     ).toBeVisible();
+  });
+});
+
+test.describe("book cover TOC", () => {
+  test("cover lists chapters with pages, fully expanded", async ({ page }) => {
+    await page.goto("/en/deploy-app");
+    const cover = page.getByRole("navigation", { name: "Contents" });
+    await expect(
+      cover.getByRole("button", { name: "User Guide" }),
+    ).toBeVisible();
+    // Android's chapters are expanded by default once the platform follows
+    // the reader; click a page link straight from the cover TOC.
+    const link = cover.getByRole("link", {
+      name: "Joining a Deploy App",
+      exact: true,
+    });
+    if (await link.isVisible().catch(() => false)) {
+      await link.click();
+      await expect(page).toHaveURL(FIRST);
+    } else {
+      // Platform defaulted elsewhere (e.g. macOS on desktop): its own
+      // chapters are still listed expanded.
+      await expect(cover.getByRole("link").first()).toBeVisible();
+    }
   });
 });
 

@@ -84,7 +84,7 @@ export function MobileSlideShow({ block }: { block: SlidesetBlock }) {
       role="group"
       aria-roledescription="carousel"
       aria-label={block.title}
-      className="my-3 flex h-[calc(100dvh-var(--header-h)-var(--tabbar-h)-5.75rem)] min-h-80 flex-col overflow-hidden rounded-xl border border-border bg-card"
+      className="my-3 flex h-[calc(100dvh-var(--header-h)-var(--tabbar-h)-4.5rem)] min-h-80 flex-col overflow-hidden rounded-xl border border-border bg-card"
     >
       <div
         ref={viewportRef}

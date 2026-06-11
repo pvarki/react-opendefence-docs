@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Link, createFileRoute, notFound } from "@tanstack/react-router";
 import { useTranslation } from "react-i18next";
 import { Check, ChevronRight, Download, Languages } from "lucide-react";
@@ -7,14 +7,19 @@ import {
   type Locale,
   type LocaleManifest,
   type ManifestPage,
+  type SidebarConfig,
 } from "@shared/content-schema";
-import { loadManifest, loadPage } from "@/lib/content/loader";
-import { readingOrder, resolveSplat } from "@/lib/content/neighbors";
+import { loadManifest, loadPage, loadSidebar } from "@/lib/content/loader";
+import {
+  filterSidebarByPlatform,
+  readingOrder,
+  resolveSplat,
+} from "@/lib/content/neighbors";
 import { downloadCollectionImages } from "@/lib/pwa/offline-download";
 import { setPlatform, usePlatform } from "@/lib/platform";
 import { PageSwiper } from "@/components/reader/PageSwiper";
 import { NotFound } from "@/components/shell/NotFound";
-import { SidebarNav } from "@/components/shell/SidebarNav";
+import { SidebarItems, SidebarNav } from "@/components/shell/SidebarNav";
 import { ReaderBar } from "@/components/shell/ReaderBar";
 import { Button } from "@/components/ui/button";
 
@@ -101,10 +106,18 @@ function ReaderRoute() {
       : undefined;
 
   // Deep links (search, shared URLs) into another platform's pages switch
-  // the selector — the page the user asked for always wins.
+  // the selector — the page the user asked for wins, but only when the PAGE
+  // changes: an explicit platform pick (which navigates separately) must not
+  // be fought back.
+  const lastPageKeyRef = useRef<string>(undefined);
   useEffect(() => {
-    if (currentPage?.platform && currentPage.platform !== platform) {
-      setPlatform(currentPage.platform);
+    const key = currentPage
+      ? `${currentPage.collection}/${currentPage.slug}`
+      : undefined;
+    if (!key || key === lastPageKeyRef.current) return;
+    lastPageKeyRef.current = key;
+    if (currentPage!.platform && currentPage!.platform !== platform) {
+      setPlatform(currentPage!.platform);
     }
   }, [currentPage, platform]);
 
@@ -168,14 +181,31 @@ function BookCover({
   const pages = readingOrder(data.manifest, data.collection, platform);
   const first = pages[0];
 
+  // The cover IS the book's table of contents: the same grouped chapter tree
+  // as the Contents sheet, fully expanded.
+  const [sidebar, setSidebar] = useState<SidebarConfig>();
+  useEffect(() => {
+    let cancelled = false;
+    loadSidebar(data.contentLocale, data.collection)
+      .then((config) => {
+        if (!cancelled) setSidebar(config);
+      })
+      .catch(() => {});
+    return () => {
+      cancelled = true;
+    };
+  }, [data.contentLocale, data.collection]);
+
   return (
     <div className="h-full overflow-y-auto">
-      <div className="mx-auto max-w-3xl px-4 py-8 md:py-12">
-        <h1 className="text-3xl font-bold">{bookLabel}</h1>
+      <div className="mx-auto max-w-3xl px-4 py-5 md:py-12">
+        <h1 className="text-xl font-bold md:text-3xl">{bookLabel}</h1>
         {collection?.description && (
-          <p className="mt-2 text-muted-foreground">{collection.description}</p>
+          <p className="mt-1.5 text-sm text-muted-foreground md:text-base">
+            {collection.description}
+          </p>
         )}
-        <div className="mt-6 flex flex-wrap items-center gap-3">
+        <div className="mt-4 flex flex-wrap items-center gap-3 md:mt-6">
           {first && (
             <Button asChild>
               <Link
@@ -192,22 +222,16 @@ function BookCover({
             collection={data.collection}
           />
         </div>
-        <ol className="mt-8 space-y-1">
-          {pages.map((page, i) => (
-            <li key={page.slug}>
-              <Link
-                to="/$locale/$"
-                params={{ locale, _splat: `${page.collection}/${page.slug}` }}
-                className="flex items-baseline gap-3 rounded-md px-3 py-2 hover:bg-card"
-              >
-                <span className="w-6 shrink-0 text-right text-sm text-muted-foreground tabular-nums">
-                  {i + 1}
-                </span>
-                <span>{page.title}</span>
-              </Link>
-            </li>
-          ))}
-        </ol>
+        <nav aria-label={t("nav.contents")} className="mt-5 md:mt-8">
+          {sidebar && (
+            <SidebarItems
+              items={filterSidebarByPlatform(sidebar.items, platform)}
+              locale={locale}
+              collection={data.collection}
+              defaultOpen
+            />
+          )}
+        </nav>
       </div>
     </div>
   );

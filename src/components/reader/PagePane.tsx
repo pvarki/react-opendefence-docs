@@ -71,7 +71,7 @@ export function PagePane({
         tabIndex={-1}
         className="h-full overflow-y-auto overscroll-y-contain px-4 outline-none md:px-8"
       >
-        <article className="mx-auto max-w-3xl py-3 md:py-8">
+        <article className="mx-auto max-w-3xl py-2 md:py-8">
           <h1 className="mb-2 text-xl font-bold md:mb-6 md:text-3xl">
             {page.title}
           </h1>

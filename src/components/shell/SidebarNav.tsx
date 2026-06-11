@@ -75,12 +75,15 @@ export function SidebarItems({
   collection,
   currentSlug,
   onNavigate,
+  defaultOpen = false,
 }: {
   items: SidebarItem[];
   locale: string;
   collection: string;
   currentSlug?: string;
   onNavigate?: () => void;
+  /** Open all groups initially (used by the book cover's full TOC). */
+  defaultOpen?: boolean;
 }) {
   return (
     <ul className="space-y-0.5">
@@ -93,6 +96,7 @@ export function SidebarItems({
             collection={collection}
             currentSlug={currentSlug}
             onNavigate={onNavigate}
+            defaultOpen={defaultOpen}
           />
         ) : item.type === "doc" && item.slug ? (
           <li key={item.id}>
@@ -133,15 +137,17 @@ function SidebarGroup({
   collection,
   currentSlug,
   onNavigate,
+  defaultOpen = false,
 }: {
   item: SidebarItem;
   locale: string;
   collection: string;
   currentSlug?: string;
   onNavigate?: () => void;
+  defaultOpen?: boolean;
 }) {
   const containsCurrent = !!item.children?.some((c) => c.slug === currentSlug);
-  const [open, setOpen] = useState(containsCurrent);
+  const [open, setOpen] = useState(defaultOpen || containsCurrent);
 
   // Reveal the group when navigation lands inside it (swipe, search, link) —
   // the render-time "adjust state on prop change" pattern.
@@ -175,6 +181,7 @@ function SidebarGroup({
             collection={collection}
             currentSlug={currentSlug}
             onNavigate={onNavigate}
+            defaultOpen={defaultOpen}
           />
         </div>
       )}
