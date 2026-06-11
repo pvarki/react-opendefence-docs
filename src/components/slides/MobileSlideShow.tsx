@@ -10,7 +10,7 @@ import { Lightbox } from "@/components/slides/Lightbox";
 import { useImagePreloader } from "@/components/slides/useImagePreloader";
 import { useReaderData } from "@/lib/useReaderData";
 import { usePlatform } from "@/lib/platform";
-import { resolvePosition } from "@/lib/content/neighbors";
+import { resolveGlobalPosition } from "@/lib/content/neighbors";
 
 /**
  * Mobile slideshow — the primary guide surface. Occupies the viewport below
@@ -50,10 +50,11 @@ export function MobileSlideShow({ block }: { block: SlidesetBlock }) {
     };
   }, [embla]);
 
-  // The next page in this platform's reading order, for the last slide.
+  // The next page in this platform's GLOBAL reading order (continues into
+  // the next book), for the last slide's forward button.
   const nextPage = (() => {
     if (!reader?.slug) return undefined;
-    return resolvePosition(
+    return resolveGlobalPosition(
       reader.manifest,
       reader.collection,
       reader.slug,
@@ -83,7 +84,7 @@ export function MobileSlideShow({ block }: { block: SlidesetBlock }) {
       role="group"
       aria-roledescription="carousel"
       aria-label={block.title}
-      className="my-3 flex h-[calc(100dvh-var(--header-h)-var(--tabbar-h)-7.5rem)] min-h-80 flex-col overflow-hidden rounded-xl border border-border bg-card"
+      className="my-3 flex h-[calc(100dvh-var(--header-h)-var(--tabbar-h)-5.75rem)] min-h-80 flex-col overflow-hidden rounded-xl border border-border bg-card"
     >
       <div
         ref={viewportRef}

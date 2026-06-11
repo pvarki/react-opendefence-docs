@@ -106,6 +106,22 @@ test.describe("book swipe navigation", () => {
     await expect(page).toHaveURL(ADMIN_FIRST);
   });
 
+  test("swipe flows across book boundaries (Deploy App -> TAK Guide)", async ({
+    page,
+  }) => {
+    // Last android page of deploy-app continues into the TAK guide.
+    await open(page, "/en/deploy-app/access-external-services-ohReBmQJiu");
+    await swipe(page, "left");
+    await expect(page).toHaveURL(
+      "/en/guides/tak-guide/deploy-app-tak-aFY9LCZCf0",
+    );
+    // And back across the same boundary.
+    await swipe(page, "right");
+    await expect(page).toHaveURL(
+      "/en/deploy-app/access-external-services-ohReBmQJiu",
+    );
+  });
+
   test("drags inside the slideshow turn slides, never the page", async ({
     page,
   }, testInfo) => {

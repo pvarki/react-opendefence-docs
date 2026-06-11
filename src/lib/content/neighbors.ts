@@ -54,6 +54,47 @@ export function resolvePosition(
 }
 
 /**
+ * Every readable page of the app in one sequence: books in manifest order,
+ * each in its platform-filtered reading order — the whole app is swipable
+ * start to finish.
+ */
+export function globalReadingOrder(
+  manifest: LocaleManifest,
+  platform?: Platform,
+): ManifestPage[] {
+  return [...manifest.collections]
+    .sort((a, b) => a.order - b.order)
+    .flatMap((c) => readingOrder(manifest, c.slug, platform));
+}
+
+/**
+ * A page's swipe neighbors in the GLOBAL order (crossing book boundaries),
+ * with index/total still scoped to its own book — "Page n of N" and the
+ * progress bar describe the book, the swipe continues past it.
+ */
+export function resolveGlobalPosition(
+  manifest: LocaleManifest,
+  collection: string,
+  slug: string,
+  platform?: Platform,
+): PagePosition | undefined {
+  const global = globalReadingOrder(manifest, platform);
+  const gi = global.findIndex(
+    (p) => p.collection === collection && p.slug === slug,
+  );
+  if (gi === -1) return undefined;
+  const book = readingOrder(manifest, collection, platform);
+  const bi = book.findIndex((p) => p.slug === slug);
+  return {
+    page: global[gi],
+    prev: global[gi - 1],
+    next: global[gi + 1],
+    index: bi,
+    total: book.length,
+  };
+}
+
+/**
  * Resolve a reader splat ("deploy-app/welcome-x", "guides/tak-guide/foo-y",
  * "dev", "wikis/tak/bar-z") into collection + optional page slug. Collection
  * slugs can contain "/", so match longest collection prefix first.

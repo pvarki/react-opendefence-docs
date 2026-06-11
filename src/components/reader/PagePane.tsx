@@ -71,8 +71,10 @@ export function PagePane({
         tabIndex={-1}
         className="h-full overflow-y-auto overscroll-y-contain px-4 outline-none md:px-8"
       >
-        <article className="mx-auto max-w-3xl py-8">
-          <h1 className="mb-6 text-3xl font-bold">{page.title}</h1>
+        <article className="mx-auto max-w-3xl py-3 md:py-8">
+          <h1 className="mb-2 text-xl font-bold md:mb-6 md:text-3xl">
+            {page.title}
+          </h1>
           {doc ? (
             doc.underDevelopment ? (
               <p className="rounded-lg border border-border bg-card px-4 py-6 text-muted-foreground">

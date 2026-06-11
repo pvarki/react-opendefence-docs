@@ -17,8 +17,8 @@ import type {
 } from "@shared/content-schema";
 import { loadPage } from "@/lib/content/loader";
 import {
-  readingOrder,
-  resolvePosition,
+  globalReadingOrder,
+  resolveGlobalPosition,
   resolveSplat,
 } from "@/lib/content/neighbors";
 import { pageSwiperOptions } from "@/components/reader/emblaPageOptions";
@@ -34,14 +34,20 @@ interface PageSwiperProps {
   platform?: Platform;
 }
 
+/** Slugs are unique per collection only — windowing keys on both. */
+const keyOf = (page: ManifestPage) => `${page.collection}/${page.slug}`;
+
 /**
- * Book-like swipe navigation. The URL is the single source of truth:
+ * Book-like swipe navigation over the GLOBAL reading order: pages flow
+ * through chapters and across book boundaries, so the whole app reads as one
+ * continuous swipe for the active platform. The URL is the single source of
+ * truth:
  * - a settled swipe commits a history push (so OS back-gestures land on the
  *   previous page — the only sane behavior on iOS standalone);
  * - URL changes from links/back/forward animate when the target is the
  *   adjacent pane, otherwise jump instantly.
- * Only prev/current/next panes are mounted, keyed by slug so the visible
- * pane's DOM survives window shifts without remounting.
+ * Only prev/current/next panes are mounted, keyed by collection/slug so the
+ * visible pane's DOM survives window shifts without remounting.
  */
 export function PageSwiper({
   locale,
@@ -56,15 +62,17 @@ export function PageSwiper({
   const reducedMotion = useReducedMotion();
 
   const order = useMemo(
-    () => readingOrder(manifest, collection, platform),
-    [manifest, collection, platform],
+    () => globalReadingOrder(manifest, platform),
+    [manifest, platform],
   );
 
-  // The slug whose window is currently rendered. Lags the URL slug while an
-  // animated page turn (from a link/back navigation) is in flight.
-  const [windowSlug, setWindowSlug] = useState(slug);
+  const urlKey = `${collection}/${slug}`;
 
-  const windowIndex = order.findIndex((p) => p.slug === windowSlug);
+  // The page whose window is currently rendered. Lags the URL while an
+  // animated page turn (from a link/back navigation) is in flight.
+  const [windowKey, setWindowKey] = useState(urlKey);
+
+  const windowIndex = order.findIndex((p) => keyOf(p) === windowKey);
   const windowPages = useMemo(
     () =>
       [
@@ -93,7 +101,7 @@ export function PageSwiper({
       navLockRef.current = true;
       void navigate({
         to: "/$locale/$",
-        params: { locale, _splat: `${page.collection}/${page.slug}` },
+        params: { locale, _splat: keyOf(page) },
       });
     },
     [navigate, locale],
@@ -107,58 +115,59 @@ export function PageSwiper({
       const target = windowPages[selected];
       // Skip when already current — incl. settles from OUR animated scrollTo
       // during link/back reconciliation, where the URL leads the window.
-      if (!target || target.slug === windowSlug || target.slug === slug) return;
+      if (!target || keyOf(target) === windowKey || keyOf(target) === urlKey)
+        return;
       navigateToPage(target);
     };
     embla.on("settle", onSettle);
     return () => {
       embla.off("settle", onSettle);
     };
-  }, [embla, windowPages, windowSlug, slug, navigateToPage]);
+  }, [embla, windowPages, windowKey, urlKey, navigateToPage]);
 
-  // URL path: reconcile the rendered window with the slug from the route.
+  // URL path: reconcile the rendered window with the page from the route.
   // Embla is an external animation engine; this effect is the designed sync
   // point between it and the URL, so the setState here is intentional.
   /* eslint-disable react-hooks/set-state-in-effect */
   useLayoutEffect(() => {
-    if (slug === windowSlug) {
+    if (urlKey === windowKey) {
       navLockRef.current = false;
       return;
     }
     if (navLockRef.current) {
       // We initiated this navigation from a settled gesture: shift the window
       // silently — the settled pane is already what the reader sees.
-      setWindowSlug(slug);
+      setWindowKey(urlKey);
       return;
     }
-    const adjacentIndex = windowPages.findIndex((p) => p.slug === slug);
+    const adjacentIndex = windowPages.findIndex((p) => keyOf(p) === urlKey);
     if (embla && adjacentIndex !== -1 && !reducedMotion) {
       // Link/back/forward to the adjacent page: animate the page turn, then
       // shift the window once the animation settles.
       const onSettle = () => {
         embla.off("settle", onSettle);
-        setWindowSlug(slug);
+        setWindowKey(urlKey);
       };
       embla.on("settle", onSettle);
       embla.scrollTo(adjacentIndex, false);
     } else {
-      setWindowSlug(slug);
+      setWindowKey(urlKey);
     }
-  }, [slug, windowSlug, windowPages, embla, reducedMotion]);
+  }, [urlKey, windowKey, windowPages, embla, reducedMotion]);
   /* eslint-enable react-hooks/set-state-in-effect */
 
   // Whenever the window re-renders, snap the carousel to the current pane.
   useLayoutEffect(() => {
     if (!embla) return;
     embla.scrollTo(startIndex, true);
-  }, [embla, windowSlug, startIndex]);
+  }, [embla, windowKey, startIndex]);
 
   // Preload neighbors so a swipe reveals content, not a skeleton.
   useEffect(() => {
     for (const page of windowPages) {
-      if (page.slug !== windowSlug) void loadPage(page.path).catch(() => {});
+      if (keyOf(page) !== windowKey) void loadPage(page.path).catch(() => {});
     }
-  }, [windowPages, windowSlug]);
+  }, [windowPages, windowKey]);
 
   // Keyboard page turns (skipped when typing or inside a slideset's scope).
   useEffect(() => {
@@ -181,7 +190,7 @@ export function PageSwiper({
         : "";
       const resolved = resolveSplat(manifest, decodeURIComponent(splat));
       if (!resolved?.slug) return;
-      const current = resolvePosition(
+      const current = resolveGlobalPosition(
         manifest,
         resolved.collection,
         resolved.slug,
@@ -192,7 +201,7 @@ export function PageSwiper({
         e.preventDefault();
         void navigate({
           to: "/$locale/$",
-          params: { locale, _splat: `${dest.collection}/${dest.slug}` },
+          params: { locale, _splat: keyOf(dest) },
         });
       }
     };
@@ -200,26 +209,34 @@ export function PageSwiper({
     return () => window.removeEventListener("keydown", onKeyDown);
   }, [manifest, router, navigate, locale, platform]);
 
-  const position = resolvePosition(manifest, collection, windowSlug, platform);
+  const windowPage = order[windowIndex];
+  const position = windowPage
+    ? resolveGlobalPosition(
+        manifest,
+        windowPage.collection,
+        windowPage.slug,
+        platform,
+      )
+    : undefined;
+
+  // At a book's last page, name where the swipe continues (the next book).
   const nextBook = useMemo(() => {
-    if (!position || position.index !== position.total - 1) return undefined;
-    const current = manifest.collections.find((c) => c.slug === collection);
+    if (!position?.next || position.index !== position.total - 1)
+      return undefined;
+    if (position.next.collection === position.page.collection) return undefined;
     const next = manifest.collections.find(
-      (c) =>
-        current &&
-        c.section === current.section &&
-        c.order === current.order + 1,
+      (c) => c.slug === position.next!.collection,
     );
     return next
-      ? { label: next.label, href: `/${locale}/${next.slug}` }
+      ? { label: next.label, href: `/${locale}/${keyOf(position.next)}` }
       : undefined;
-  }, [position, manifest, collection, locale]);
+  }, [position, manifest, locale]);
 
   if (!position) return null;
 
   return (
     <div className="relative h-full">
-      {/* Reading progress under the header */}
+      {/* Reading progress through the current book, under the header */}
       <div className="absolute inset-x-0 top-0 z-10 h-0.5 bg-muted">
         <div
           data-testid="reading-progress"
@@ -232,14 +249,18 @@ export function PageSwiper({
         <div className="flex h-full">
           {windowPages.map((page) => (
             <PagePane
-              key={page.slug}
+              key={keyOf(page)}
               locale={locale}
               page={page}
               position={
-                resolvePosition(manifest, collection, page.slug, platform) ??
-                position
+                resolveGlobalPosition(
+                  manifest,
+                  page.collection,
+                  page.slug,
+                  platform,
+                ) ?? position
               }
-              isCurrent={page.slug === windowSlug}
+              isCurrent={keyOf(page) === windowKey}
               nextBook={nextBook}
             />
           ))}
