@@ -10,7 +10,8 @@
     "develop": "Utveckling",
     "search": "Sök",
     "contents": "Innehåll",
-    "back": "Tillbaka"
+    "back": "Tillbaka",
+    "advanced": "Avancerat"
   },
   "home": {
     "userCard": "Jag använder Deploy App",
@@ -19,7 +20,9 @@
     "guidesCardDesc": "Steg-för-steg-guider för TAK, MTX, Matrix och CryptPad",
     "devCard": "Jag utvecklar eller driftar",
     "devCardDesc": "Arkitektur, integrationer, API-referens, driftguider",
-    "continueReading": "Fortsätt läsa"
+    "continueReading": "Fortsätt läsa",
+    "powerCard": "Jag är en avancerad användare",
+    "powerCardDesc": "Använd produkterna på avancerade sätt"
   },
   "reader": {
     "pageOf": "Sida {{current}} av {{total}}",

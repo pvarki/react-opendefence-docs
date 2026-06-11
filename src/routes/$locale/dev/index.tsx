@@ -1,6 +1,6 @@
 import { Link, createFileRoute } from "@tanstack/react-router";
 import { useTranslation } from "react-i18next";
-import { BookText, Braces, Code2 } from "lucide-react";
+import { Braces, Code2 } from "lucide-react";
 import {
   Card,
   CardDescription,
@@ -17,7 +17,6 @@ export const Route = createFileRoute("/$locale/dev/")({
     return {
       devBook,
       devFirstPage: devBook ? readingOrder(manifest, "dev")[0] : undefined,
-      wikis: manifest.collections.filter((c) => c.section === "wikis"),
     };
   },
   component: DevShelf,
@@ -26,7 +25,7 @@ export const Route = createFileRoute("/$locale/dev/")({
 function DevShelf() {
   const { t } = useTranslation();
   const { locale } = Route.useParams();
-  const { devBook, devFirstPage, wikis } = Route.useLoaderData();
+  const { devBook, devFirstPage } = Route.useLoaderData();
 
   return (
     <div className="h-full overflow-y-auto">
@@ -50,24 +49,6 @@ function DevShelf() {
               </Card>
             </Link>
           )}
-          {wikis.map((wiki) => (
-            <Link
-              key={wiki.slug}
-              to="/$locale/$"
-              params={{ locale, _splat: wiki.slug }}
-              className="group focus-visible:outline-none"
-            >
-              <Card className="h-full gap-3 py-5 transition-colors group-hover:border-primary group-focus-visible:ring-2 group-focus-visible:ring-ring">
-                <CardHeader>
-                  <BookText className="mb-2 size-6 text-primary" />
-                  <CardTitle>{wiki.label}</CardTitle>
-                  {wiki.description && (
-                    <CardDescription>{wiki.description}</CardDescription>
-                  )}
-                </CardHeader>
-              </Card>
-            </Link>
-          ))}
           <Link
             to="/$locale/dev/api"
             params={{ locale }}

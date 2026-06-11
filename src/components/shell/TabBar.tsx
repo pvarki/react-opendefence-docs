@@ -3,12 +3,12 @@ import { Link, useParams } from "@tanstack/react-router";
 import { useTranslation } from "react-i18next";
 import {
   BookOpen,
-  Code2,
   House,
   MonitorSmartphone,
   Search,
   Smartphone,
   TableOfContents,
+  Zap,
 } from "lucide-react";
 import { DEFAULT_LOCALE } from "@shared/content-schema";
 import { PLATFORM_LABELS, useReadingView } from "@/lib/platform";
@@ -37,7 +37,12 @@ const HOME_TABS = [
     icon: BookOpen,
     key: "nav.guides",
   },
-  { to: "/$locale/dev", splat: undefined, icon: Code2, key: "nav.develop" },
+  {
+    to: "/$locale/advanced",
+    splat: undefined,
+    icon: Zap,
+    key: "nav.advanced",
+  },
   { to: "/$locale/search", splat: undefined, icon: Search, key: "nav.search" },
 ] as const;
 

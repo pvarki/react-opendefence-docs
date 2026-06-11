@@ -10,7 +10,8 @@
     "develop": "Develop",
     "search": "Search",
     "contents": "Contents",
-    "back": "Back"
+    "back": "Back",
+    "advanced": "Advanced"
   },
   "home": {
     "userCard": "I use Deploy App",
@@ -19,7 +20,9 @@
     "guidesCardDesc": "TAK, MTX, Matrix and CryptPad step-by-step guides",
     "devCard": "I develop or operate",
     "devCardDesc": "Architecture, integrations, API reference, runbooks",
-    "continueReading": "Continue reading"
+    "continueReading": "Continue reading",
+    "powerCard": "I'm a power user",
+    "powerCardDesc": "Use the products in advanced ways"
   },
   "reader": {
     "pageOf": "Page {{current}} of {{total}}",

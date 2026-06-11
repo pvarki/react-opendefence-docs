@@ -10,7 +10,8 @@
     "develop": "Kehitys",
     "search": "Haku",
     "contents": "Sisällys",
-    "back": "Takaisin"
+    "back": "Takaisin",
+    "advanced": "Edistyneille"
   },
   "home": {
     "userCard": "Käytän Deploy Appia",
@@ -19,7 +20,9 @@
     "guidesCardDesc": "TAK-, MTX-, Matrix- ja CryptPad-oppaat vaihe vaiheelta",
     "devCard": "Kehitän tai operoin",
     "devCardDesc": "Arkkitehtuuri, integraatiot, API-referenssi, ohjeet",
-    "continueReading": "Jatka lukemista"
+    "continueReading": "Jatka lukemista",
+    "powerCard": "Olen tehokäyttäjä",
+    "powerCardDesc": "Käytä tuotteita edistyneillä tavoilla"
   },
   "reader": {
     "pageOf": "Sivu {{current}} / {{total}}",

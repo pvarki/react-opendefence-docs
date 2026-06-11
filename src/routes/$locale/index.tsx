@@ -1,6 +1,6 @@
 import { Link, createFileRoute } from "@tanstack/react-router";
 import { useTranslation } from "react-i18next";
-import { BookOpen, Code2, Smartphone } from "lucide-react";
+import { BookOpen, Code2, Smartphone, Zap } from "lucide-react";
 import {
   Card,
   CardDescription,
@@ -26,6 +26,12 @@ const CARDS = [
     descKey: "home.guidesCardDesc",
   },
   {
+    to: "advanced",
+    icon: Zap,
+    titleKey: "home.powerCard",
+    descKey: "home.powerCardDesc",
+  },
+  {
     to: "dev",
     icon: Code2,
     titleKey: "home.devCard",
@@ -43,7 +49,7 @@ function HomePage() {
         <h1 className="text-3xl font-bold md:text-4xl">{t("app.title")}</h1>
         <p className="mt-2 text-muted-foreground">{t("app.tagline")}</p>
 
-        <div className="mt-8 grid gap-4 md:grid-cols-3">
+        <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {CARDS.map(({ to, icon: Icon, titleKey, descKey }) => (
             <Link
               key={to}

@@ -16,6 +16,7 @@ import { Route as LocaleSearchRouteImport } from './routes/$locale/search'
 import { Route as LocaleSplatRouteImport } from './routes/$locale/$'
 import { Route as LocaleGuidesIndexRouteImport } from './routes/$locale/guides/index'
 import { Route as LocaleDevIndexRouteImport } from './routes/$locale/dev/index'
+import { Route as LocaleAdvancedIndexRouteImport } from './routes/$locale/advanced/index'
 import { Route as LocaleDevApiRouteImport } from './routes/$locale/dev/api'
 
 const LocaleRouteRoute = LocaleRouteRouteImport.update({
@@ -53,6 +54,11 @@ const LocaleDevIndexRoute = LocaleDevIndexRouteImport.update({
   path: '/dev/',
   getParentRoute: () => LocaleRouteRoute,
 } as any)
+const LocaleAdvancedIndexRoute = LocaleAdvancedIndexRouteImport.update({
+  id: '/advanced/',
+  path: '/advanced/',
+  getParentRoute: () => LocaleRouteRoute,
+} as any)
 const LocaleDevApiRoute = LocaleDevApiRouteImport.update({
   id: '/dev/api',
   path: '/dev/api',
@@ -66,6 +72,7 @@ export interface FileRoutesByFullPath {
   '/$locale/search': typeof LocaleSearchRoute
   '/$locale/': typeof LocaleIndexRoute
   '/$locale/dev/api': typeof LocaleDevApiRoute
+  '/$locale/advanced/': typeof LocaleAdvancedIndexRoute
   '/$locale/dev/': typeof LocaleDevIndexRoute
   '/$locale/guides/': typeof LocaleGuidesIndexRoute
 }
@@ -75,6 +82,7 @@ export interface FileRoutesByTo {
   '/$locale/search': typeof LocaleSearchRoute
   '/$locale': typeof LocaleIndexRoute
   '/$locale/dev/api': typeof LocaleDevApiRoute
+  '/$locale/advanced': typeof LocaleAdvancedIndexRoute
   '/$locale/dev': typeof LocaleDevIndexRoute
   '/$locale/guides': typeof LocaleGuidesIndexRoute
 }
@@ -86,6 +94,7 @@ export interface FileRoutesById {
   '/$locale/search': typeof LocaleSearchRoute
   '/$locale/': typeof LocaleIndexRoute
   '/$locale/dev/api': typeof LocaleDevApiRoute
+  '/$locale/advanced/': typeof LocaleAdvancedIndexRoute
   '/$locale/dev/': typeof LocaleDevIndexRoute
   '/$locale/guides/': typeof LocaleGuidesIndexRoute
 }
@@ -98,6 +107,7 @@ export interface FileRouteTypes {
     | '/$locale/search'
     | '/$locale/'
     | '/$locale/dev/api'
+    | '/$locale/advanced/'
     | '/$locale/dev/'
     | '/$locale/guides/'
   fileRoutesByTo: FileRoutesByTo
@@ -107,6 +117,7 @@ export interface FileRouteTypes {
     | '/$locale/search'
     | '/$locale'
     | '/$locale/dev/api'
+    | '/$locale/advanced'
     | '/$locale/dev'
     | '/$locale/guides'
   id:
@@ -117,6 +128,7 @@ export interface FileRouteTypes {
     | '/$locale/search'
     | '/$locale/'
     | '/$locale/dev/api'
+    | '/$locale/advanced/'
     | '/$locale/dev/'
     | '/$locale/guides/'
   fileRoutesById: FileRoutesById
@@ -177,6 +189,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof LocaleDevIndexRouteImport
       parentRoute: typeof LocaleRouteRoute
     }
+    '/$locale/advanced/': {
+      id: '/$locale/advanced/'
+      path: '/advanced'
+      fullPath: '/$locale/advanced/'
+      preLoaderRoute: typeof LocaleAdvancedIndexRouteImport
+      parentRoute: typeof LocaleRouteRoute
+    }
     '/$locale/dev/api': {
       id: '/$locale/dev/api'
       path: '/dev/api'
@@ -192,6 +211,7 @@ interface LocaleRouteRouteChildren {
   LocaleSearchRoute: typeof LocaleSearchRoute
   LocaleIndexRoute: typeof LocaleIndexRoute
   LocaleDevApiRoute: typeof LocaleDevApiRoute
+  LocaleAdvancedIndexRoute: typeof LocaleAdvancedIndexRoute
   LocaleDevIndexRoute: typeof LocaleDevIndexRoute
   LocaleGuidesIndexRoute: typeof LocaleGuidesIndexRoute
 }
@@ -201,6 +221,7 @@ const LocaleRouteRouteChildren: LocaleRouteRouteChildren = {
   LocaleSearchRoute: LocaleSearchRoute,
   LocaleIndexRoute: LocaleIndexRoute,
   LocaleDevApiRoute: LocaleDevApiRoute,
+  LocaleAdvancedIndexRoute: LocaleAdvancedIndexRoute,
   LocaleDevIndexRoute: LocaleDevIndexRoute,
   LocaleGuidesIndexRoute: LocaleGuidesIndexRoute,
 }

@@ -333,3 +333,28 @@ test.describe("search", () => {
     await expect(page).toHaveURL(/\/en\/(deploy-app|guides|wikis|dev)\//);
   });
 });
+
+test.describe("advanced section and back button", () => {
+  test("wikis live under Advanced; bottom tab reads Advanced", async ({
+    page,
+  }, testInfo) => {
+    test.skip(testInfo.project.name !== "mobile", "asserts mobile tabs");
+    await page.goto("/en");
+    const bar = page.locator("nav.fixed");
+    await expect(bar.getByRole("link", { name: "Advanced" })).toBeVisible();
+    await bar.getByRole("link", { name: "Advanced" }).click();
+    await expect(page).toHaveURL("/en/advanced");
+    await expect(page.getByRole("link", { name: /TAK Wiki/ })).toBeVisible();
+  });
+
+  test("header back button returns to the earlier place", async ({
+    page,
+  }, testInfo) => {
+    test.skip(testInfo.project.name !== "mobile", "back button is mobile-only");
+    await page.goto("/en");
+    await page.getByRole("link", { name: /power user/i }).click();
+    await expect(page).toHaveURL("/en/advanced");
+    await page.getByRole("button", { name: "Back" }).click();
+    await expect(page).toHaveURL("/en");
+  });
+});
