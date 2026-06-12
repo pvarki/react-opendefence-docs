@@ -22,7 +22,8 @@ interface PlatformSheetProps {
   open: boolean;
   onOpenChange: (open: boolean) => void;
   locale: string;
-  reader: ReaderData;
+  /** Present inside a book: enables client options + relocation on pick. */
+  reader?: ReaderData;
 }
 
 /**
@@ -40,7 +41,7 @@ export function PlatformSheet({
   const view = useReadingView();
   const navigate = useNavigate();
 
-  const bookClients = reader.manifest.collections.find(
+  const bookClients = reader?.manifest.collections.find(
     (c) => c.slug === reader.collection,
   )?.clients;
   // Books without clients still offer the generic platform choice (it
@@ -54,14 +55,18 @@ export function PlatformSheet({
           label: PLATFORM_LABELS[key],
         }));
 
-  const active = bookClients?.length
-    ? resolveClient(reader.manifest, reader.collection, view)
-    : options.find((o) => o.platform === view.platform);
+  const active =
+    reader && bookClients?.length
+      ? resolveClient(reader.manifest, reader.collection, view)
+      : options.find((o) => o.platform === view.platform);
 
   const pick = (next: ClientInfo) => {
-    if (bookClients?.length) setClientForBook(reader.collection, next.id);
+    if (reader && bookClients?.length) {
+      setClientForBook(reader.collection, next.id);
+    }
     setPlatform(next.platform);
     onOpenChange(false);
+    if (!reader) return;
     const current = reader.slug
       ? reader.manifest.pages.find(
           (p) => p.collection === reader.collection && p.slug === reader.slug,

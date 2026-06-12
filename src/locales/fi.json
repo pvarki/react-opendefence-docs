@@ -59,5 +59,9 @@
   "platform": {
     "label": "Alusta",
     "underDevelopment": "Kesken"
+  },
+  "sections": {
+    "products": "Tuotteet",
+    "developer": "Kehittäjät"
   }
 }

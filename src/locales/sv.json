@@ -59,5 +59,9 @@
   "platform": {
     "label": "Plattform",
     "underDevelopment": "Under arbete"
+  },
+  "sections": {
+    "products": "Produkter",
+    "developer": "Utvecklare"
   }
 }
