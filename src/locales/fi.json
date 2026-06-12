@@ -58,14 +58,15 @@
   },
   "platform": {
     "label": "Alusta",
-    "underDevelopment": "Kesken"
+    "available": "Saatavilla olevat alustat",
+    "incomplete": "Keskeneräinen"
   },
   "sections": {
     "products": "Tuotteet",
     "developer": "Kehittäjät"
   },
   "footer": {
-    "lead": "OpenDefence on Puolustusvoimien ohjaama kansallisen puolustuksen avoimen lähdekoodin hanke, jonka tavoitteena on tarjota sotilaille monialueoperaatioihin kykeneviä johtamispalveluita helposti ja yhteentoimivasti.",
+    "lead": "OpenDefence on Puolustusvoimia palveleva kansallisen puolustuksen avoimen lähdekoodin hanke, jonka tavoitteena on tarjota sotilaille monialueoperaatioihin kykeneviä johtamispalveluita helposti ja yhteentoimivasti.",
     "tellMore": "Kerro lisää",
     "core": "OpenDefence-pinon ydin on Deploy App. Käyttäjille se on helpoiten kuvattuna sovellus käyttäjien lisäämiseen ja hallintaan; kehittäjille rajapinta, jonka kautta oma sovellus integroidaan ja saadaan sotilaiden käyttöön.",
     "easyTitle": "Tavoitteena helppo pääsy",
@@ -77,5 +78,9 @@
     "qualityTitle": "Tavoitteena korkea laatu ja turvallisuus",
     "qualityBody": "Deploy Appin ja kaikkien virallisten tuoteintegraatioiden on kestettävä todellista sotaa — ei yhtään vähempää. Se vaatii ensiluokkaista laatua, yksinkertaisuutta ja todellisuuspohjaista turvallisuutta. Emme kehitä tai julkaise ominaisuuksia, jotka eivät täytä näitä vaatimuksia — olemme mieluummin ilman niitä.",
     "siteUnderDev": "Verkkosivusto on kehitteillä."
+  },
+  "contents": {
+    "siteTitle": "Sivuston sisältö",
+    "guidesTitle": "Saatavilla olevat oppaat"
   }
 }

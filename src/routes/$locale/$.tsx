@@ -18,8 +18,10 @@ import {
 } from "@/lib/content/neighbors";
 import { downloadCollectionImages } from "@/lib/pwa/offline-download";
 import { setClientForBook, setPlatform, useReadingView } from "@/lib/platform";
+import { usePlatformPicker } from "@/lib/usePlatformPicker";
 import { PageSwiper } from "@/components/reader/PageSwiper";
 import { NotFound } from "@/components/shell/NotFound";
+import { PlatformList } from "@/components/shell/PlatformList";
 import { SidebarItems, SidebarNav } from "@/components/shell/SidebarNav";
 import { ReaderBar } from "@/components/shell/ReaderBar";
 import { Button } from "@/components/ui/button";
@@ -188,7 +190,7 @@ function BookCover({
   const collection = data.manifest.collections.find(
     (c) => c.slug === data.collection,
   );
-  const activeClient = resolveClient(data.manifest, data.collection, view);
+  const { options, active, pick, hasClients } = usePlatformPicker(data);
   const pages = readingOrder(data.manifest, data.collection, view);
   const first = pages[0];
 
@@ -216,9 +218,21 @@ function BookCover({
             {collection.description}
           </p>
         )}
+        {hasClients && (
+          <div className="mt-4 md:mt-6">
+            <p className="pb-1.5 text-[11px] font-semibold tracking-widest text-muted-foreground uppercase">
+              {t("platform.available")}
+            </p>
+            <PlatformList
+              options={options}
+              activeId={active?.id}
+              onPick={pick}
+            />
+          </div>
+        )}
         <div className="mt-4 flex flex-wrap items-center gap-3 md:mt-6">
           {first && (
-            <Button asChild>
+            <Button asChild className="hidden md:inline-flex">
               <Link
                 to="/$locale/$"
                 params={{ locale, _splat: `${data.collection}/${first.slug}` }}
@@ -236,12 +250,31 @@ function BookCover({
         <nav aria-label={t("nav.contents")} className="mt-5 md:mt-8">
           {sidebar && (
             <SidebarItems
-              items={filterSidebarByClient(sidebar.items, activeClient?.id)}
+              items={filterSidebarByClient(
+                sidebar.items,
+                hasClients ? active?.id : undefined,
+              )}
               locale={locale}
               collection={data.collection}
             />
           )}
         </nav>
+        {/* Thumb-reach Start reading: floats bottom-left above the tab bar,
+            next to the floating back button. */}
+        {first && (
+          <Button
+            asChild
+            className="fixed bottom-[calc(var(--tabbar-h)+0.75rem)] left-16 z-40 shadow-lg md:hidden"
+          >
+            <Link
+              to="/$locale/$"
+              params={{ locale, _splat: `${data.collection}/${first.slug}` }}
+            >
+              {t("reader.startReading")}
+              <ChevronRight />
+            </Link>
+          </Button>
+        )}
       </div>
     </div>
   );

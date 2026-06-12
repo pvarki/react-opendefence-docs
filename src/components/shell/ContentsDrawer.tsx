@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
-import type { Locale, SidebarConfig } from "@shared/content-schema";
+import type { SidebarConfig } from "@shared/content-schema";
 import { loadSidebar } from "@/lib/content/loader";
 import {
   Drawer,
@@ -10,37 +10,37 @@ import {
 } from "@/components/ui/drawer";
 import { SidebarItems } from "@/components/shell/SidebarNav";
 import { filterSidebarByClient } from "@/lib/content/neighbors";
+import { usePlatformPicker } from "@/lib/usePlatformPicker";
+import { PlatformList } from "@/components/shell/PlatformList";
+import type { ReaderData } from "@/routes/$locale/$";
 
 interface ContentsSheetProps {
   open: boolean;
   onOpenChange: (open: boolean) => void;
   locale: string;
-  contentLocale: Locale;
-  collection: string;
-  currentSlug?: string;
-  /** Active client id for this book (filters client-tagged sections). */
-  clientId?: string;
+  reader: ReaderData;
 }
 
 /**
  * Mobile book TOC bottom sheet (opened from the bottom bar's Contents
- * button), filtered to the active platform's chapters.
+ * button). Books with selectable clients (e.g. the TAK guide) lead with an
+ * "Available platforms" switcher; the chapter tree below is filtered to the
+ * active platform. Wikis and dev books have no clients, so they show the
+ * whole TOC.
  */
 export function ContentsSheet({
   open,
   onOpenChange,
   locale,
-  contentLocale,
-  collection,
-  currentSlug,
-  clientId,
+  reader,
 }: ContentsSheetProps) {
   const { t } = useTranslation();
   const [sidebar, setSidebar] = useState<SidebarConfig>();
+  const { options, active, pick, hasClients } = usePlatformPicker(reader);
 
   useEffect(() => {
     let cancelled = false;
-    loadSidebar(contentLocale, collection)
+    loadSidebar(reader.contentLocale, reader.collection)
       .then((config) => {
         if (!cancelled) setSidebar(config);
       })
@@ -48,9 +48,11 @@ export function ContentsSheet({
     return () => {
       cancelled = true;
     };
-  }, [contentLocale, collection]);
+  }, [reader.contentLocale, reader.collection]);
 
-  const items = sidebar ? filterSidebarByClient(sidebar.items, clientId) : [];
+  const items = sidebar
+    ? filterSidebarByClient(sidebar.items, hasClients ? active?.id : undefined)
+    : [];
 
   return (
     <Drawer open={open} onOpenChange={onOpenChange}>
@@ -60,11 +62,26 @@ export function ContentsSheet({
         </DrawerTitle>
         <DrawerDescription className="sr-only" />
         <nav className="overflow-y-auto px-4 pb-8">
+          {hasClients && (
+            <>
+              <p className="px-1 pt-3 pb-1.5 text-[11px] font-semibold tracking-widest text-muted-foreground uppercase">
+                {t("platform.available")}
+              </p>
+              <PlatformList
+                options={options}
+                activeId={active?.id}
+                onPick={(option) => {
+                  onOpenChange(false);
+                  pick(option);
+                }}
+              />
+            </>
+          )}
           <SidebarItems
             items={items}
             locale={locale}
-            collection={collection}
-            currentSlug={currentSlug}
+            collection={reader.collection}
+            currentSlug={reader.slug}
             onNavigate={() => onOpenChange(false)}
           />
         </nav>

@@ -6,18 +6,13 @@ import {
   useRouter,
 } from "@tanstack/react-router";
 import { useTranslation } from "react-i18next";
-import {
-  ChevronLeft,
-  House,
-  MonitorSmartphone,
-  Search,
-  TableOfContents,
-} from "lucide-react";
+import { ChevronLeft, House, Search, TableOfContents } from "lucide-react";
 import { DEFAULT_LOCALE, normalizeLocale } from "@shared/content-schema";
 import { PLATFORM_LABELS, useReadingView } from "@/lib/platform";
 import { resolveClient } from "@/lib/content/neighbors";
 import { useReaderData } from "@/lib/useReaderData";
 import { ContentsSheet } from "@/components/shell/ContentsDrawer";
+import { PlatformIcon } from "@/components/shell/PlatformIcon";
 import { SiteContentsSheet } from "@/components/shell/SiteContentsSheet";
 import { PlatformSheet } from "@/components/shell/PlatformSheet";
 import { useShelfContext } from "@/lib/useShelfContext";
@@ -110,7 +105,10 @@ export function TabBar() {
             className={itemClass}
             aria-label={t("platform.label")}
           >
-            <MonitorSmartphone className="size-5" />
+            <PlatformIcon
+              platform={activeClient?.platform ?? view.platform}
+              className="size-5"
+            />
             <span className="max-w-16 truncate text-[10px] leading-none">
               {platformLabel}
             </span>
@@ -131,10 +129,7 @@ export function TabBar() {
             open={contentsOpen}
             onOpenChange={setContentsOpen}
             locale={locale}
-            contentLocale={reader.contentLocale}
-            collection={reader.collection}
-            currentSlug={reader.slug}
-            clientId={activeClient?.id}
+            reader={reader}
           />
         ) : (
           <SiteContentsSheet

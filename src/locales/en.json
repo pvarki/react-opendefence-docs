@@ -58,14 +58,15 @@
   },
   "platform": {
     "label": "Platform",
-    "underDevelopment": "Under development"
+    "available": "Available platforms",
+    "incomplete": "Incomplete"
   },
   "sections": {
     "products": "Products",
     "developer": "Developer"
   },
   "footer": {
-    "lead": "OpenDefence is an FDF-guided national defence open-source project that aims to offer multi-domain-operation-capable C2 services to soldiers in an easy and interoperable way.",
+    "lead": "OpenDefence is an FDF-serving national defence open-source project that aims to offer multi-domain-operation-capable C2 services to soldiers in an easy and interoperable way.",
     "tellMore": "Tell me more",
     "core": "The core of the OpenDefence stack is Deploy App. For users, it's best described as an app for adding and managing users; for developers, as an interface to integrate your application with — to get it into the hands of soldiers.",
     "easyTitle": "Goal of easy access",
@@ -77,5 +78,9 @@
     "qualityTitle": "Goal of great quality and security",
     "qualityBody": "Deploy App and all official product integrations must withstand actual war — nothing less. That demands paramount quality, simplicity and reality-based security. We don't develop or release features that fall short of these standards; we'd rather go without them.",
     "siteUnderDev": "Website under development."
+  },
+  "contents": {
+    "siteTitle": "Contents of the site",
+    "guidesTitle": "Available guides"
   }
 }

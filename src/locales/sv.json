@@ -58,14 +58,15 @@
   },
   "platform": {
     "label": "Plattform",
-    "underDevelopment": "Under arbete"
+    "available": "Tillgängliga plattformar",
+    "incomplete": "Ofullständig"
   },
   "sections": {
     "products": "Produkter",
     "developer": "Utvecklare"
   },
   "footer": {
-    "lead": "OpenDefence är ett FDF-styrt nationellt försvarsprojekt med öppen källkod som syftar till att erbjuda soldater C2-tjänster med förmåga till multidomänoperationer på ett enkelt och interoperabelt sätt.",
+    "lead": "OpenDefence är ett nationellt försvarsprojekt med öppen källkod i Försvarsmaktens tjänst, som syftar till att erbjuda soldater C2-tjänster med förmåga till multidomänoperationer på ett enkelt och interoperabelt sätt.",
     "tellMore": "Berätta mer",
     "core": "Kärnan i OpenDefence-stacken är Deploy App. För användare beskrivs den enklast som en app för att lägga till och hantera användare; för utvecklare som ett gränssnitt att integrera sin applikation med — för att få den i händerna på soldater.",
     "easyTitle": "Målet: enkel åtkomst",
@@ -77,5 +78,9 @@
     "qualityTitle": "Målet: hög kvalitet och säkerhet",
     "qualityBody": "Deploy App och alla officiella produktintegrationer måste klara ett verkligt krig — inget mindre. Det kräver främsta kvalitet, enkelhet och verklighetsbaserad säkerhet. Vi utvecklar eller släpper inte funktioner som inte håller dessa krav — då är vi hellre utan dem.",
     "siteUnderDev": "Webbplatsen är under utveckling."
+  },
+  "contents": {
+    "siteTitle": "Webbplatsens innehåll",
+    "guidesTitle": "Tillgängliga guider"
   }
 }
