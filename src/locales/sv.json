@@ -82,5 +82,52 @@
   "contents": {
     "siteTitle": "Webbplatsens innehåll",
     "guidesTitle": "Tillgängliga guider"
+  },
+  "guideFooter": {
+    "maintainedBy": "Den här integrationen utvecklas och underhålls av OpenDefence.",
+    "tak-guide": {
+      "lead": "TAK (Team Awareness Kit) är den amerikanska regeringens stridstestade plattform för lägesuppfattning som ger soldater en gemensam operativ bild på Android-, iOS- och Windows-enheter i fält.",
+      "core": "OpenDefences TAK-integration gör TAK-servrar driftsättningsbara via Deploy App och lägger steg-för-steg-guider direkt i händerna på soldater — med klientinstallation, serverkonfiguration och daglig drift.",
+      "goal1Title": "Gemensam operativ bild",
+      "goal1Body": "TAK håller alla enhetsmedlemmar på samma karta i realtid. OpenDefences integration säkerställer att serversidan är korrekt och konsekvent konfigurerad så att bilden alltid är korrekt när det gäller som mest.",
+      "goal2Title": "Stöd för flera plattformar",
+      "goal2Body": "ATAK, iTAK och WinTAK har var sin installationsprocess. Den här guiden går igenom varje klient så att ingen soldat hamnar efter oavsett enhet.",
+      "goal3Title": "Fältduglig kvalitet",
+      "goal3Body": "Varje steg i guiden har validerats i verkliga driftsättningsscenarier. Ingenting inkluderas om det inte fungerar tillförlitligt under operativa förhållanden.",
+      "copyright": "TAK: © TAK Product Center, a U.S. Government organization"
+    },
+    "mtx-guide": {
+      "lead": "MediaMTX är en beroendefri mediaserver och proxy som hanterar RTSP-, RTMP-, HLS-, WebRTC- och SRT-strömmar — byggd för latensskänslig video i fältmiljöer.",
+      "core": "OpenDefences MediaMTX-integration tillhandahåller en Deploy App-kompatibel mediadriftsättning och en kortfattad guide för att få livevideo från fältkameror till soldaternas enheter med minimal konfiguration.",
+      "goal1Title": "Låg latens",
+      "goal1Body": "Under en sekunds latens är avgörande när flödet är en UAV över ett omtvistat område. MediaMTX uppnår detta direkt; integrationen håller konfigurationsvägen så kort som möjligt.",
+      "goal2Title": "Protokollflexibilitet",
+      "goal2Body": "Olika klienter stöder olika protokoll. MediaMTX bryggar RTSP-källor till WebRTC-visare utan extra transkodning, vilket håller CPU-användningen minimal på fältmaskinvara.",
+      "goal3Title": "Enkel driftsättning",
+      "goal3Body": "En container, några konfigurationsrader och strömmen är live. Guiden täcker både initial installation och vanlig felsökning så att operatörer kan lösa problem utan specialisthjälp.",
+      "copyright": "MediaMTX: © aler9"
+    },
+    "matrix-guide": {
+      "lead": "Matrix är en öppen standard för säker, decentraliserad realtidskommunikation — som ger soldater krypterad meddelandehantering och röst som fungerar mellan organisationer utan central kontroll.",
+      "core": "OpenDefences Matrix-integration driftsätter en Synapse-hemserver via Deploy App och vägleder användare genom klientinstallation, rumskapande och federation mellan servrar för kommunikation mellan enheter.",
+      "goal1Title": "Suverän meddelandehantering",
+      "goal1Body": "Enhetens meddelanden stannar på er server. Federation låter er kommunicera med andra enheters servrar utan att ge någon organisation kontroll över hela nätverket.",
+      "goal2Title": "Slutpunkt-till-slutpunkt-kryptering",
+      "goal2Body": "Matrix E2EE innebär att inte ens hemserveroperatören kan läsa meddelandeinnehåll. Den här guiden täcker nyckelverifieringsstegen så att krypteringen är genuin i praktiken, inte bara i teorin.",
+      "goal3Title": "Motståndskraftig design",
+      "goal3Body": "Matrix-hemservrar är designade för att klara nätverkspartitioner och återansluta graciöst. Driftsättningskonfigurationen är anpassad för den intermittenta anslutning som är typisk i fältoperationer.",
+      "copyright": "Matrix: © The Matrix.org Foundation"
+    },
+    "deploy-app": {
+      "lead": "Deploy App är hjärtat i OpenDefence-stacken — gränssnittet genom vilket operatörer driftsätter tjänster till soldater och genom vilket soldater når allt från ett enda välbekant ställe.",
+      "core": "Den här guiden täcker Deploy App från båda sidor: soldater som lär sig att få åtkomst och hantera sina konton, och operatörer som hanterar användare, roller och tjänstedriftsättningar i sin enhet.",
+      "goal1Title": "Ingen utbildning behövs",
+      "goal1Body": "En soldat som plockar upp Deploy App för första gången ska kunna logga in och nå enhetens tjänster utan att läsa en manual. Varje flöde är utformat med det ribban i åtanke.",
+      "goal2Title": "Operatörskontroll",
+      "goal2Body": "Operatörer får detaljerad kontroll över vem som har tillgång till vad, med granskningsloggar och rollhantering som uppfyller ansvarskraven för militära operationer.",
+      "goal3Title": "Integrationshubben",
+      "goal3Body": "Varje officiell OpenDefence-produkt integreras via Deploy App. Att lägga till en ny tjänst är en konfigurationsuppgift, inte en utvecklingsuppgift — operatörer kan driftsätta godkända integrationer på minuter.",
+      "copyright": "Deploy App & denna webbplats: © OpenDefence"
+    }
   }
 }

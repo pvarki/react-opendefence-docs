@@ -82,5 +82,52 @@
   "contents": {
     "siteTitle": "Contents of the site",
     "guidesTitle": "Available guides"
+  },
+  "guideFooter": {
+    "maintainedBy": "This integration is developed and maintained by OpenDefence.",
+    "tak-guide": {
+      "lead": "TAK (Team Awareness Kit) is the U.S. Government's battle-tested situational awareness platform, giving soldiers a shared operational picture across Android, iOS, and Windows devices in the field.",
+      "core": "The OpenDefence TAK integration makes TAK servers deployable through Deploy App and puts step-by-step guidance directly in soldiers' hands — covering client setup, server configuration, and day-to-day operations.",
+      "goal1Title": "Common operating picture",
+      "goal1Body": "TAK puts every unit member on the same map in real time. The OpenDefence integration ensures the server side is set up correctly and consistently so the picture is always accurate when it matters most.",
+      "goal2Title": "Multi-platform support",
+      "goal2Body": "ATAK, iTAK, and WinTAK each have their own setup flows. This guide walks through each client so no soldier is left behind regardless of their device.",
+      "goal3Title": "Field-ready quality",
+      "goal3Body": "Every step in this guide has been validated in real deployment scenarios. Nothing is included unless it works reliably under operational conditions.",
+      "copyright": "TAK: © TAK Product Center, a U.S. Government organization"
+    },
+    "mtx-guide": {
+      "lead": "MediaMTX is a zero-dependency media server and proxy that handles RTSP, RTMP, HLS, WebRTC, and SRT streams — purpose-built for latency-sensitive video in field environments.",
+      "core": "The OpenDefence MediaMTX integration provides a Deploy App-compatible media server deployment and a concise guide for getting live video from field cameras into soldiers' devices with minimal configuration.",
+      "goal1Title": "Low-latency video",
+      "goal1Body": "Sub-second latency matters when the feed is a UAV over a contested area. MediaMTX achieves this out of the box; the integration keeps the configuration path as short as possible.",
+      "goal2Title": "Protocol flexibility",
+      "goal2Body": "Different clients support different protocols. MediaMTX bridges RTSP sources to WebRTC viewers without additional transcoding, keeping CPU usage minimal on field hardware.",
+      "goal3Title": "Simple deployment",
+      "goal3Body": "A single container, a few configuration lines, and the stream is live. The guide covers both initial setup and common troubleshooting so operators can resolve issues without specialist help.",
+      "copyright": "MediaMTX: © aler9"
+    },
+    "matrix-guide": {
+      "lead": "Matrix is an open standard for secure, decentralised real-time communication — giving soldiers end-to-end encrypted messaging and voice that works across organisations without a central authority.",
+      "core": "The OpenDefence Matrix integration deploys a Synapse homeserver through Deploy App and guides users through client setup, room creation, and cross-server federation for inter-unit communication.",
+      "goal1Title": "Sovereign messaging",
+      "goal1Body": "Your unit's messages stay on your server. Federation lets you communicate with other units' servers without giving any single organisation control over the whole network.",
+      "goal2Title": "End-to-end encryption",
+      "goal2Body": "Matrix's E2EE means even the homeserver operator cannot read message content. This guide covers key verification steps so encryption is genuinely end-to-end in practice, not just in theory.",
+      "goal3Title": "Resilient by design",
+      "goal3Body": "Matrix homeservers are designed to survive network partitions and reconnect gracefully. The deployment configuration in this guide is tuned for intermittent connectivity typical in field operations.",
+      "copyright": "Matrix: © The Matrix.org Foundation"
+    },
+    "deploy-app": {
+      "lead": "Deploy App is the heart of the OpenDefence stack — the interface through which operators deploy services to soldiers and through which soldiers access everything from a single, familiar place.",
+      "core": "This guide covers Deploy App from both sides: soldiers learning to get access and manage their accounts, and operators managing users, roles, and service deployments across their unit.",
+      "goal1Title": "Zero training required",
+      "goal1Body": "A soldier picking up Deploy App for the first time should be able to log in and reach their unit's services without reading a manual. Every flow is designed with that bar in mind.",
+      "goal2Title": "Operator control",
+      "goal2Body": "Operators get fine-grained control over who accesses what, with audit trails and role management that meet the accountability requirements of military operations.",
+      "goal3Title": "The integration hub",
+      "goal3Body": "Every official OpenDefence product integrates through Deploy App. Adding a new service is a configuration task, not a development task — operators can deploy approved integrations in minutes.",
+      "copyright": "Deploy App & this site: © OpenDefence"
+    }
   }
 }
