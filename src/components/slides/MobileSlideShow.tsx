@@ -2,12 +2,13 @@ import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "@tanstack/react-router";
 import useEmblaCarousel from "embla-carousel-react";
 import { useTranslation } from "react-i18next";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight, ChevronsRight } from "lucide-react";
 import type { SlidesetBlock } from "@shared/content-schema";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { Lightbox } from "@/components/slides/Lightbox";
 import { useImagePreloader } from "@/components/slides/useImagePreloader";
+import { useEdgePageFlow } from "@/components/slides/useEdgePageFlow";
 import { useReaderData } from "@/lib/useReaderData";
 import { useReadingView } from "@/lib/platform";
 import { resolveGlobalPosition } from "@/lib/content/neighbors";
@@ -50,33 +51,45 @@ export function MobileSlideShow({ block }: { block: SlidesetBlock }) {
     };
   }, [embla]);
 
-  // The next page in this platform's GLOBAL reading order (continues into
-  // the next book), for the last slide's forward button.
-  const nextPage = (() => {
-    if (!reader?.slug) return undefined;
-    return resolveGlobalPosition(
-      reader.manifest,
-      reader.collection,
-      reader.slug,
-      view,
-    )?.next;
-  })();
+  // Surrounding pages in the GLOBAL reading order: the deck flows into them.
+  const position =
+    reader?.slug !== undefined
+      ? resolveGlobalPosition(
+          reader.manifest,
+          reader.collection,
+          reader.slug,
+          view,
+        )
+      : undefined;
+  const nextPage = position?.next;
+  const prevPage = position?.prev;
 
   const isLast = selected === block.slides.length - 1;
 
-  const goForward = () => {
-    if (!isLast) {
-      embla?.scrollNext();
-    } else if (nextPage && params.locale) {
-      void navigate({
-        to: "/$locale/$",
-        params: {
-          locale: params.locale,
-          _splat: `${nextPage.collection}/${nextPage.slug}`,
-        },
-      });
-    }
+  const goToPage = (page: { collection: string; slug: string } | undefined) => {
+    if (!page || !params.locale) return;
+    void navigate({
+      to: "/$locale/$",
+      params: {
+        locale: params.locale,
+        _splat: `${page.collection}/${page.slug}`,
+      },
+    });
   };
+
+  const goForward = () => {
+    if (!isLast) embla?.scrollNext();
+    else goToPage(nextPage);
+  };
+
+  // Dragging past the deck's edges continues through the book — no need to
+  // exit the slideshow to keep reading.
+  useEdgePageFlow(embla, {
+    isFirst: selected === 0,
+    isLast,
+    onNextPage: () => goToPage(nextPage),
+    onPrevPage: () => goToPage(prevPage),
+  });
 
   return (
     <section
@@ -176,19 +189,32 @@ export function MobileSlideShow({ block }: { block: SlidesetBlock }) {
             ))}
           </div>
         </div>
-        <Button
-          variant={isLast && nextPage ? "default" : "ghost"}
-          size="sm"
-          className={cn(!(isLast && nextPage) && "size-8 px-0")}
-          onClick={goForward}
-          disabled={isLast && !nextPage}
-          aria-label={isLast ? t("reader.nextPage") : t("reader.next")}
-        >
-          {isLast && nextPage && (
-            <span className="text-xs">{t("reader.nextPage")}</span>
+        <div className="flex items-center">
+          {!isLast && nextPage && (
+            <Button
+              variant="ghost"
+              size="sm"
+              className="size-8 px-0 text-muted-foreground"
+              onClick={() => goToPage(nextPage)}
+              aria-label={t("reader.nextPage")}
+            >
+              <ChevronsRight />
+            </Button>
           )}
-          <ChevronRight />
-        </Button>
+          <Button
+            variant={isLast && nextPage ? "default" : "ghost"}
+            size="sm"
+            className={cn(!(isLast && nextPage) && "size-8 px-0")}
+            onClick={goForward}
+            disabled={isLast && !nextPage}
+            aria-label={isLast ? t("reader.nextPage") : t("reader.next")}
+          >
+            {isLast && nextPage && (
+              <span className="text-xs">{t("reader.nextPage")}</span>
+            )}
+            <ChevronRight />
+          </Button>
+        </div>
       </div>
 
       <Lightbox

@@ -358,3 +358,34 @@ test.describe("advanced section and back button", () => {
     await expect(page).toHaveURL("/en");
   });
 });
+
+test.describe("slideshow flows into the book", () => {
+  test("overdragging past the last slide turns the page", async ({
+    page,
+  }, testInfo) => {
+    test.skip(testInfo.project.name !== "mobile", "mobile deck gesture");
+    await open(page, FIRST);
+    const scope = page.locator("[data-current] [data-swipe-scope]").first();
+    // Jump to the last slide via its dot, then drag forward past the edge.
+    await scope.getByRole("button", { name: "8", exact: true }).click();
+    await expect(scope.getByText("8/8")).toBeVisible();
+    await page.waitForTimeout(500); // let the deck settle on the last slide
+    const box = await scope.boundingBox();
+    if (!box) throw new Error("deck not visible");
+    const y = box.y + box.height / 2;
+    await page.mouse.move(box.x + box.width * 0.9, y);
+    await page.mouse.down();
+    await page.mouse.move(box.x + box.width * 0.05, y, { steps: 10 });
+    await page.mouse.up();
+    await expect(page).toHaveURL(SECOND);
+  });
+
+  test("skip button leaves the deck mid-slides", async ({ page }, testInfo) => {
+    test.skip(testInfo.project.name !== "mobile", "mobile deck control");
+    await open(page, FIRST);
+    const scope = page.locator("[data-current] [data-swipe-scope]").first();
+    // Still on slide 1 of 8 — the skip control goes straight to the next page.
+    await scope.getByRole("button", { name: "Next page" }).click();
+    await expect(page).toHaveURL(SECOND);
+  });
+});

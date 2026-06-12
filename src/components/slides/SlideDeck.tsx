@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from "react";
-import { useNavigate, useSearch } from "@tanstack/react-router";
+import { useNavigate, useParams, useSearch } from "@tanstack/react-router";
 import useEmblaCarousel from "embla-carousel-react";
 import { useTranslation } from "react-i18next";
 import { ChevronLeft, ChevronRight, Maximize2, Minimize2 } from "lucide-react";
@@ -8,6 +8,10 @@ import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { Lightbox } from "@/components/slides/Lightbox";
 import { useImagePreloader } from "@/components/slides/useImagePreloader";
+import { useEdgePageFlow } from "@/components/slides/useEdgePageFlow";
+import { useReaderData } from "@/lib/useReaderData";
+import { useReadingView } from "@/lib/platform";
+import { resolveGlobalPosition } from "@/lib/content/neighbors";
 
 interface SlideDeckProps {
   block: SlidesetBlock;
@@ -25,6 +29,9 @@ interface SlideDeckProps {
 export function SlideDeck({ block, bindSlideParam = false }: SlideDeckProps) {
   const { t } = useTranslation();
   const navigate = useNavigate();
+  const params = useParams({ strict: false });
+  const reader = useReaderData();
+  const view = useReadingView();
   const search = useSearch({ strict: false }) as { slide?: number };
   const sectionRef = useRef<HTMLElement>(null);
 
@@ -71,6 +78,37 @@ export function SlideDeck({ block, bindSlideParam = false }: SlideDeckProps) {
   }, [embla, bindSlideParam, navigate]);
 
   const goTo = useCallback((index: number) => embla?.scrollTo(index), [embla]);
+
+  // Dragging past the deck's edges continues through the book, exactly like
+  // the mobile show — the deck never dead-ends the reading flow.
+  const position =
+    reader?.slug !== undefined
+      ? resolveGlobalPosition(
+          reader.manifest,
+          reader.collection,
+          reader.slug,
+          view,
+        )
+      : undefined;
+  const goToPage = useCallback(
+    (page: { collection: string; slug: string } | undefined) => {
+      if (!page || !params.locale) return;
+      void navigate({
+        to: "/$locale/$",
+        params: {
+          locale: params.locale,
+          _splat: `${page.collection}/${page.slug}`,
+        },
+      });
+    },
+    [navigate, params.locale],
+  );
+  useEdgePageFlow(embla, {
+    isFirst: selected === 0,
+    isLast: selected === block.slides.length - 1,
+    onNextPage: () => goToPage(position?.next),
+    onPrevPage: () => goToPage(position?.prev),
+  });
 
   const onKeyDown = (e: React.KeyboardEvent) => {
     if (e.key === "ArrowLeft") {
