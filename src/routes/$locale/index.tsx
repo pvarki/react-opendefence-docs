@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useTranslation } from "react-i18next";
-import { BookOpen, Code2, Smartphone, Zap } from "lucide-react";
+import { BookOpen, ChevronDown, Code2, Smartphone, Zap } from "lucide-react";
 import { BookCard } from "@/components/shell/BookCard";
 import { CARD_IMAGES } from "@/lib/cardImages";
 import { withBase } from "@/lib/base";
@@ -94,6 +94,12 @@ const COPYRIGHT_LINES = [
 function HomeFooter() {
   const { t } = useTranslation();
 
+  const goals = [
+    { title: "footer.easyTitle", body: "footer.easyBody" },
+    { title: "footer.interopTitle", body: "footer.interopBody" },
+    { title: "footer.qualityTitle", body: "footer.qualityBody" },
+  ];
+
   return (
     <footer className="mt-4 border-t border-border bg-card md:mt-8">
       <div className="mx-auto max-w-3xl px-4 py-6 md:py-10">
@@ -101,42 +107,51 @@ function HomeFooter() {
           {t("footer.lead")}
         </p>
 
-        <h2 className="mt-5 text-base font-semibold">{t("footer.tellMore")}</h2>
-        <p className="mt-1.5 text-sm text-muted-foreground">
-          {t("footer.core")}
-        </p>
+        {/* Collapsed by default; native disclosure keeps it JS-free. */}
+        <details className="group mt-5 rounded-lg border border-border bg-background">
+          <summary className="flex cursor-pointer list-none items-center justify-between gap-2 px-4 py-3 text-base font-semibold select-none [&::-webkit-details-marker]:hidden">
+            {t("footer.tellMore")}
+            <ChevronDown className="size-4 shrink-0 text-muted-foreground transition-transform group-open:rotate-180" />
+          </summary>
+          <div className="px-4 pb-4">
+            <p className="text-sm leading-relaxed text-muted-foreground">
+              {t("footer.core")}
+            </p>
 
-        <p className="mt-4 text-[11px] font-semibold tracking-widest text-primary uppercase">
-          {t("footer.easyTitle")}
-        </p>
-        <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
-          {t("footer.easyBody")}
-        </p>
+            {goals.map(({ title, body }) => (
+              <div key={title}>
+                <p className="mt-4 text-[11px] font-semibold tracking-widest text-primary uppercase">
+                  {t(title)}
+                </p>
+                <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
+                  {t(body)}
+                </p>
+              </div>
+            ))}
 
-        <p className="mt-4 text-[11px] font-semibold tracking-widest text-primary uppercase">
-          {t("footer.interopTitle")}
-        </p>
-        <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
-          {t("footer.interopBody")}
-        </p>
+            <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+              {t("footer.maintain")}
+            </p>
 
-        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-          {t("footer.maintain")}
-        </p>
-
-        {LANDING_URL && (
-          <p className="mt-4 text-sm">
-            {t("footer.readMore")}{" "}
-            <a
-              href={LANDING_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-primary underline-offset-2 hover:underline"
-            >
-              {LANDING_URL.replace(/^https?:\/\//, "")}
-            </a>
-          </p>
-        )}
+            <p className="mt-4 text-sm">
+              {t("footer.readMore")}{" "}
+              {LANDING_URL ? (
+                <a
+                  href={LANDING_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary underline-offset-2 hover:underline"
+                >
+                  {LANDING_URL.replace(/^https?:\/\//, "")}
+                </a>
+              ) : (
+                <span className="text-muted-foreground italic">
+                  {t("footer.siteUnderDev")}
+                </span>
+              )}
+            </p>
+          </div>
+        </details>
 
         <div className="mt-6 space-y-0.5 border-t border-border pt-4">
           {COPYRIGHT_LINES.map((line) => (

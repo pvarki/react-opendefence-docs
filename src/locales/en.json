@@ -67,12 +67,15 @@
   "footer": {
     "lead": "OpenDefence is an FDF-guided national defence open-source project that aims to offer multi-domain-operation-capable C2 services to soldiers in an easy and interoperable way.",
     "tellMore": "Tell me more",
-    "core": "The core of the stack is Deploy App.",
+    "core": "The core of the OpenDefence stack is Deploy App. For users, it's best described as an app for adding and managing users; for developers, as an interface to integrate your application with — to get it into the hands of soldiers.",
     "easyTitle": "Goal of easy access",
-    "easyBody": "It gives soldiers the ability to easily share and gain access to their unit's services.",
+    "easyBody": "Deploy App aims to give soldiers the ability to easily gain, manage and share access to their unit's services. Using Deploy App and the services behind it should be so easy that no special training is needed.",
     "interopTitle": "Goal of interoperability",
-    "interopBody": "For us, interoperability is not a marketing slogan. Deploy App offers developers an integration interface: integrate your product into the app, and we can deploy it to soldiers — working together with the other products.",
-    "maintain": "OpenDefence develops and maintains a couple of official product integrations and user guides, as shown here. The products themselves are made by their original developers, such as the TAK Product Center.",
-    "readMore": "Read more at our landing page:"
+    "interopBody": "For us, interoperability is not a marketing slogan. Deploy App offers app developers an integration interface: integrate your product into Deploy App, and Deploy App operators can deploy it to soldiers — working together with the other products.",
+    "maintain": "OpenDefence develops and maintains a couple of official product integrations and user guides, as shown here. The products themselves are made by their original developers, such as the TAK Product Center. Our official product integrations adhere to our goals and values.",
+    "readMore": "Read more about OpenDefence, the vision and how to contribute:",
+    "qualityTitle": "Goal of great quality and security",
+    "qualityBody": "Deploy App and all official product integrations must withstand actual war — nothing less. That demands paramount quality, simplicity and reality-based security. We don't develop or release features that fall short of these standards; we'd rather go without them.",
+    "siteUnderDev": "Website under development."
   }
 }
