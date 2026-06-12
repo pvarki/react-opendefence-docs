@@ -365,16 +365,19 @@ export function buildBook(
     for (const child of nodes) {
       const trail = [...trailTitles, child.title];
 
+      // Explicit platforms container (META: platforms-container in body).
+      // Checked before the leaf guard so an empty Platforms organiser
+      // (no children in an untranslated locale) is silently skipped rather
+      // than being treated as a content page.
+      if (markers.platformsContainerIds.has(child.id)) {
+        walkRootLevel(child.children, trail);
+        continue;
+      }
+
       // Top-level leaf: a content page shown on every client.
       if (child.children.length === 0) {
         readingOrder.push(makePageRef(child, trail, {}));
         items.push(makeDocItem(child));
-        continue;
-      }
-
-      // Explicit platforms container (META: platforms-container in body).
-      if (markers.platformsContainerIds.has(child.id)) {
-        walkRootLevel(child.children, trail);
         continue;
       }
 

@@ -5,12 +5,6 @@
   "items": [
     {
       "type": "doc",
-      "id": "platforms-IsQ8yzFLWG",
-      "label": "Platforms",
-      "slug": "platforms-IsQ8yzFLWG"
-    },
-    {
-      "type": "doc",
       "id": "deploy-app-matrix-ck6FccRX1P",
       "label": "Deploy App - Matrix",
       "slug": "deploy-app-matrix-ck6FccRX1P"

@@ -356,11 +356,15 @@ async function syncCollection(
     const organizerIds: string[] = [];
     // Collect up to 4 levels deep: locale root / platforms-container /
     // platform organizer / chapter organizer.
+    // Depth-1 leaf nodes (direct children of locale root) are always included
+    // so we can detect empty platforms-container organizers (they have no
+    // children in untranslated locales but still carry META: platforms-container).
     const collectOrganizers = (nodes: OutlineNavNode[], depth: number) => {
       for (const node of nodes) {
-        if (node.children.length === 0) continue;
+        if (node.children.length === 0 && depth > 1) continue;
         organizerIds.push(node.id);
-        if (depth < 4) collectOrganizers(node.children, depth + 1);
+        if (node.children.length > 0 && depth < 4)
+          collectOrganizers(node.children, depth + 1);
       }
     };
     collectOrganizers(navChildren, 1);
