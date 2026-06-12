@@ -70,6 +70,16 @@ export default defineConfig({
       "@config": path.resolve(__dirname, "config"),
     },
   },
+  // helpcontent/ holds reference clones of other repos (own html entries,
+  // uninstalled deps): keep Vite's dep scanner and watcher out of them.
+  optimizeDeps: {
+    entries: ["index.html"],
+  },
+  server: {
+    watch: {
+      ignored: ["**/helpcontent/**", "**/backups/**"],
+    },
+  },
   build: {
     rollupOptions: {
       // The pagefind bundle is generated into public/ at build time and
