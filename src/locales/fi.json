@@ -17,7 +17,7 @@
     "userCard": "Käytän Deploy Appia",
     "userCardDesc": "Aloita, kirjaudu ja käytä palveluita kentällä",
     "guidesCard": "Tarvitsen tuoteoppaan",
-    "guidesCardDesc": "TAK-, MTX-, Matrix- ja CryptPad-oppaat vaihe vaiheelta",
+    "guidesCardDesc": "Vaiheittaiset ohjeet virallisiin tuoteintegraatioihin, kuten TAK",
     "devCard": "Kehitän tai operoin",
     "devCardDesc": "Arkkitehtuuri, integraatiot, API-referenssi, ohjeet",
     "continueReading": "Jatka lukemista",
@@ -58,10 +58,29 @@
   },
   "platform": {
     "label": "Alusta",
-    "underDevelopment": "Kesken"
+    "available": "Saatavilla olevat alustat",
+    "incomplete": "Keskeneräinen"
   },
   "sections": {
     "products": "Tuotteet",
     "developer": "Kehittäjät"
+  },
+  "footer": {
+    "lead": "OpenDefence on Puolustusvoimia palveleva kansallisen puolustuksen avoimen lähdekoodin hanke, jonka tavoitteena on tarjota sotilaille monialueoperaatioihin kykeneviä johtamispalveluita helposti ja yhteentoimivasti.",
+    "tellMore": "Kerro lisää",
+    "core": "OpenDefence-pinon ydin on Deploy App. Käyttäjille se on helpoiten kuvattuna sovellus käyttäjien lisäämiseen ja hallintaan; kehittäjille rajapinta, jonka kautta oma sovellus integroidaan ja saadaan sotilaiden käyttöön.",
+    "easyTitle": "Tavoitteena helppo pääsy",
+    "easyBody": "Deploy Appin tavoitteena on antaa sotilaille mahdollisuus saada, hallita ja jakaa pääsy yksikkönsä palveluihin helposti. Deploy Appin ja sen kautta käytettävien palveluiden käytön tulee olla niin helppoa, ettei siihen tarvita erillistä koulutusta.",
+    "interopTitle": "Tavoitteena yhteentoimivuus",
+    "interopBody": "Meille yhteentoimivuus ei ole markkinointislogan. Deploy App tarjoaa sovelluskehittäjille integraatiorajapinnan: integroi tuotteesi Deploy Appiin, niin Deploy App -operaattorit voivat jakaa sen sotilaille — toimimaan yhdessä muiden tuotteiden kanssa.",
+    "maintain": "OpenDefence kehittää ja ylläpitää muutamia virallisia tuoteintegraatioita ja käyttöohjeita, kuten tällä sivustolla. Itse tuotteita kehittävät niiden alkuperäiset kehittäjät, kuten TAK Product Center. Viralliset tuoteintegraatiomme noudattavat tavoitteitamme ja arvojamme.",
+    "readMore": "Lue lisää OpenDefencestä, visiosta ja siitä, miten voit osallistua:",
+    "qualityTitle": "Tavoitteena korkea laatu ja turvallisuus",
+    "qualityBody": "Deploy Appin ja kaikkien virallisten tuoteintegraatioiden on kestettävä todellista sotaa — ei yhtään vähempää. Se vaatii ensiluokkaista laatua, yksinkertaisuutta ja todellisuuspohjaista turvallisuutta. Emme kehitä tai julkaise ominaisuuksia, jotka eivät täytä näitä vaatimuksia — olemme mieluummin ilman niitä.",
+    "siteUnderDev": "Verkkosivusto on kehitteillä."
+  },
+  "contents": {
+    "siteTitle": "Sivuston sisältö",
+    "guidesTitle": "Saatavilla olevat oppaat"
   }
 }

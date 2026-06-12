@@ -1,15 +1,10 @@
-import { useNavigate } from "@tanstack/react-router";
 import { useTranslation } from "react-i18next";
 import { Check } from "lucide-react";
-import { PLATFORMS, type ClientInfo } from "@shared/content-schema";
-import {
-  PLATFORM_LABELS,
-  setClientForBook,
-  setPlatform,
-  useReadingView,
-} from "@/lib/platform";
-import { readingOrder, resolveClient } from "@/lib/content/neighbors";
+import type { ClientInfo } from "@shared/content-schema";
+import { stripPlatformSuffix } from "@/lib/platform";
+import { usePlatformPicker } from "@/lib/usePlatformPicker";
 import type { ReaderData } from "@/routes/$locale/$";
+import { PlatformIcon, IncompleteBadge } from "@/components/shell/PlatformIcon";
 import {
   Drawer,
   DrawerContent,
@@ -34,74 +29,14 @@ interface PlatformSheetProps {
 export function PlatformSheet({
   open,
   onOpenChange,
-  locale,
   reader,
 }: PlatformSheetProps) {
   const { t } = useTranslation();
-  const view = useReadingView();
-  const navigate = useNavigate();
+  const { options, active, pick } = usePlatformPicker(reader);
 
-  const bookClients = reader?.manifest.collections.find(
-    (c) => c.slug === reader.collection,
-  )?.clients;
-  // Books without clients still offer the generic platform choice (it
-  // drives the rest of the app).
-  const options: ClientInfo[] =
-    bookClients && bookClients.length > 0
-      ? bookClients
-      : PLATFORMS.map((key) => ({
-          id: key,
-          platform: key,
-          label: PLATFORM_LABELS[key],
-        }));
-
-  const active =
-    reader && bookClients?.length
-      ? resolveClient(reader.manifest, reader.collection, view)
-      : options.find((o) => o.platform === view.platform);
-
-  const pick = (next: ClientInfo) => {
-    if (reader && bookClients?.length) {
-      setClientForBook(reader.collection, next.id);
-    }
-    setPlatform(next.platform);
+  const choose = (option: ClientInfo) => {
     onOpenChange(false);
-    if (!reader) return;
-    const current = reader.slug
-      ? reader.manifest.pages.find(
-          (p) => p.collection === reader.collection && p.slug === reader.slug,
-        )
-      : undefined;
-    // Reading a page that doesn't exist in the picked view: continue at the
-    // view's first page of this book.
-    if (current && (current.clientId ?? current.platform)) {
-      const stillVisible = current.clientId
-        ? current.clientId === next.id
-        : current.platform === next.platform;
-      if (!stillVisible) {
-        const nextView = {
-          platform: next.platform,
-          clientOverrides: {
-            ...view.clientOverrides,
-            [reader.collection]: next.id,
-          },
-        };
-        const first = readingOrder(
-          reader.manifest,
-          reader.collection,
-          nextView,
-        )[0];
-        void navigate({
-          to: "/$locale/$",
-          params: {
-            locale,
-            _splat: first
-              ? `${first.collection}/${first.slug}`
-              : reader.collection,
-          },
-        });
-      }
-    }
+    pick(option);
   };
 
   return (
@@ -116,7 +51,8 @@ export function PlatformSheet({
             <li key={option.id}>
               <button
                 type="button"
-                onClick={() => pick(option)}
+                onClick={() => choose(option)}
+                aria-label={option.label}
                 className={cn(
                   "flex w-full items-center gap-3 rounded-lg px-3 py-3 text-left",
                   option.id === active?.id ? "bg-muted font-medium" : "",
@@ -128,12 +64,12 @@ export function PlatformSheet({
                     option.id !== active?.id && "invisible",
                   )}
                 />
-                {option.label}
-                {option.underDevelopment && (
-                  <span className="rounded bg-warning/15 px-1.5 py-0.5 text-[10px] font-semibold text-warning">
-                    {t("platform.underDevelopment")}
-                  </span>
-                )}
+                <PlatformIcon
+                  platform={option.platform}
+                  className="size-4 shrink-0 text-muted-foreground"
+                />
+                {stripPlatformSuffix(option.label)}
+                {option.underDevelopment && <IncompleteBadge />}
               </button>
             </li>
           ))}

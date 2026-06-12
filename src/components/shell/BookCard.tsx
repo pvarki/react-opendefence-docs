@@ -42,7 +42,7 @@ export function BookCard({
       <div
         className={cn(
           "relative flex items-center gap-3 overflow-hidden rounded-xl border border-border bg-card px-3.5 transition-colors group-hover:border-primary group-focus-visible:ring-2 group-focus-visible:ring-ring md:px-4",
-          size === "tall" ? "h-24 md:h-28" : "h-[4.25rem] md:h-20",
+          size === "tall" ? "h-20 md:h-24" : "h-[4.25rem] md:h-20",
         )}
       >
         {image &&
