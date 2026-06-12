@@ -52,9 +52,12 @@ async function setDocMarkers(
     .filter((l) => !l.match(/^META:\s*(platforms-container|platform:|os:|product:)/i))
     .join("\n")
     .trimStart();
+  // Each META: line must be its own paragraph (blank line between) so Outline's
+  // Markdown renderer doesn't collapse them into a single line.
+  const markerParagraphs = markers.split("\n").join("\n\n");
   const newText = withoutMeta
-    ? `${markers}\n\n${withoutMeta}`
-    : markers;
+    ? `${markerParagraphs}\n\n${withoutMeta}`
+    : markerParagraphs;
   await post("/documents.update", { id, text: newText, publish: true });
   console.log(`✓ Updated [${id}] "${title}"`);
 }
