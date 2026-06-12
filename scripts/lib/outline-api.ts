@@ -330,6 +330,40 @@ export class OutlineApiClient {
   }
 
   /**
+   * Create a new document in a collection.
+   *
+   * @param opts.collectionId  - Target collection UUID
+   * @param opts.parentDocumentId - Parent doc UUID (creates nested doc)
+   * @param opts.title         - Document title
+   * @param opts.text          - Markdown body (Outline format)
+   * @param opts.publish       - Whether to publish immediately (default true)
+   */
+  async createDocument(opts: {
+    collectionId: string;
+    parentDocumentId?: string;
+    title: string;
+    text: string;
+    publish?: boolean;
+  }): Promise<{ id: string; title: string; url: string }> {
+    const data = await this.post<{
+      data: { id: string; title: string; url: string };
+    }>("/documents.create", {
+      collectionId: opts.collectionId,
+      ...(opts.parentDocumentId
+        ? { parentDocumentId: opts.parentDocumentId }
+        : {}),
+      title: opts.title,
+      text: opts.text,
+      publish: opts.publish ?? true,
+    });
+    return {
+      id: data.data.id,
+      title: data.data.title,
+      url: data.data.url,
+    };
+  }
+
+  /**
    * Search documents
    *
    * @param query - Search query string

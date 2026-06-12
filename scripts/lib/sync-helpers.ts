@@ -215,6 +215,12 @@ export function buildLocaleManifest(opts: {
   syncedPages: ReadonlyMap<string, ManifestPage[]>;
   /** collection slug -> clients detected this run. */
   syncedClients?: ReadonlyMap<string, ClientInfo[]>;
+  /**
+   * EN (canonical) clients — used as fallback when this locale has none yet.
+   * Ensures the platform selector stays visible for untranslated locales
+   * rather than incorrectly treating them as platform-agnostic books.
+   */
+  enClients?: ReadonlyMap<string, ClientInfo[]>;
   previous: LocaleManifest | undefined;
   generatedAt: string;
 }): LocaleManifest {
@@ -223,6 +229,7 @@ export function buildLocaleManifest(opts: {
     collections,
     syncedPages,
     syncedClients,
+    enClients,
     previous,
     generatedAt,
   } = opts;
@@ -243,10 +250,16 @@ export function buildLocaleManifest(opts: {
   const manifestCollections = collections
     .filter((c) => present.has(c.slug))
     .map((c, order) => {
-      // Fresh client info when synced; carried over otherwise.
-      const clients = syncedPages.has(c.slug)
+      // Fresh client info when synced; carried over from previous otherwise.
+      const localeClients = syncedPages.has(c.slug)
         ? syncedClients?.get(c.slug)
         : previous?.collections.find((pc) => pc.slug === c.slug)?.clients;
+      // Fall back to EN clients when this locale has none — the book is still
+      // platform-aware, translations for those clients just aren't posted yet.
+      const clients =
+        localeClients && localeClients.length > 0
+          ? localeClients
+          : enClients?.get(c.slug);
       return {
         slug: c.slug,
         label: c.label,

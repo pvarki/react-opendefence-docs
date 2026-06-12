@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "locale": "sv",
-  "generatedAt": "2026-06-12T15:52:05.930Z",
+  "generatedAt": "2026-06-12T23:13:44.764Z",
   "collections": [
     {
       "slug": "deploy-app",
@@ -13,7 +13,8 @@
         {
           "id": "android-yFEMlNyGOI",
           "label": "Android",
-          "platform": "android"
+          "platform": "android",
+          "os": "android"
         }
       ]
     },
@@ -79,6 +80,7 @@
       "collection": "deploy-app",
       "title": "Gå med i en Deploy App",
       "breadcrumb": [
+        "Platforms",
         "Android",
         "Användarguide",
         "Gå med i en Deploy App"
@@ -97,6 +99,7 @@
       "collection": "deploy-app",
       "title": "Använda applikationer",
       "breadcrumb": [
+        "Platforms",
         "Android",
         "Användarguide",
         "Använda applikationer"
@@ -115,6 +118,7 @@
       "collection": "deploy-app",
       "title": "Gränssnitt",
       "breadcrumb": [
+        "Platforms",
         "Android",
         "Användarguide",
         "Gränssnitt"
@@ -133,6 +137,7 @@
       "collection": "deploy-app",
       "title": "Första inloggningen",
       "breadcrumb": [
+        "Platforms",
         "Android",
         "Administratörsguide",
         "Första inloggningen"
@@ -151,6 +156,7 @@
       "collection": "deploy-app",
       "title": "Lägga till användare",
       "breadcrumb": [
+        "Platforms",
         "Android",
         "Administratörsguide",
         "Lägga till användare"
@@ -169,6 +175,7 @@
       "collection": "deploy-app",
       "title": "Hantera användare",
       "breadcrumb": [
+        "Platforms",
         "Android",
         "Administratörsguide",
         "Hantera användare"
@@ -187,6 +194,7 @@
       "collection": "deploy-app",
       "title": "Åtkomst till externa tjänster",
       "breadcrumb": [
+        "Platforms",
         "Android",
         "Administratörsguide",
         "Åtkomst till externa tjänster"

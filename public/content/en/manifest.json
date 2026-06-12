@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "locale": "en",
-  "generatedAt": "2026-06-12T15:52:05.930Z",
+  "generatedAt": "2026-06-12T23:13:44.764Z",
   "collections": [
     {
       "slug": "deploy-app",
@@ -13,27 +13,32 @@
         {
           "id": "android-MENReFAfCN",
           "label": "Android",
-          "platform": "android"
+          "platform": "android",
+          "os": "android"
         },
         {
           "id": "ios-8ux4fDfFeI",
           "label": "iOS",
-          "platform": "ios"
+          "platform": "ios",
+          "os": "ios"
         },
         {
           "id": "windows-7LrSmQmqQ6",
           "label": "Windows",
-          "platform": "windows"
+          "platform": "windows",
+          "os": "windows"
         },
         {
           "id": "linux-JmHAcb7bTi",
           "label": "Linux",
-          "platform": "linux"
+          "platform": "linux",
+          "os": "linux"
         },
         {
           "id": "macos-6fg0DsaF5B",
           "label": "MacOS",
-          "platform": "macos"
+          "platform": "macos",
+          "os": "macos"
         }
       ]
     },
@@ -47,27 +52,37 @@
         {
           "id": "atak-sGxUIXpQlU",
           "label": "ATAK",
-          "platform": "android"
+          "platform": "android",
+          "os": "android",
+          "isProduct": true
         },
         {
           "id": "wintak-w8mKUfaRBP",
           "label": "WinTAK",
-          "platform": "windows"
+          "platform": "windows",
+          "os": "windows",
+          "isProduct": true
         },
         {
           "id": "itak-bwDYWvqdnY",
           "label": "iTAK",
-          "platform": "ios"
+          "platform": "ios",
+          "os": "ios",
+          "isProduct": true
         },
         {
           "id": "tak-tracker-android-JCZw3YH2nW",
           "label": "TAK Tracker - Android",
-          "platform": "android"
+          "platform": "android",
+          "os": "android",
+          "isProduct": true
         },
         {
           "id": "tak-tracker-apple-PmHvleNK0F",
           "label": "TAK Tracker - Apple",
-          "platform": "ios"
+          "platform": "ios",
+          "os": "ios",
+          "isProduct": true
         }
       ]
     },
@@ -128,18 +143,32 @@
   ],
   "pages": [
     {
+      "id": "ed412ef0-5e77-4db2-a774-303a9e42119f",
+      "slug": "introduction-d1XzfzOkpz",
+      "collection": "deploy-app",
+      "title": "Introduction",
+      "breadcrumb": [
+        "Platforms",
+        "Introduction"
+      ],
+      "path": "/content/en/pages/deploy-app/introduction-d1XzfzOkpz.json",
+      "updatedAt": "2026-06-12T23:07:43.260Z",
+      "order": 0
+    },
+    {
       "id": "336018e1-3455-48f4-8a6a-c28cd69b1812",
       "slug": "joining-a-deploy-app-p9htrbBL4S",
       "collection": "deploy-app",
       "title": "Joining a Deploy App",
       "breadcrumb": [
+        "Platforms",
         "Android",
         "User Guide",
         "Joining a Deploy App"
       ],
       "path": "/content/en/pages/deploy-app/joining-a-deploy-app-p9htrbBL4S.json",
       "updatedAt": "2026-02-25T07:25:59.146Z",
-      "order": 0,
+      "order": 1,
       "platform": "android",
       "clientId": "android-MENReFAfCN",
       "chapterId": "user-guide-SNTomIhnLe",
@@ -151,13 +180,14 @@
       "collection": "deploy-app",
       "title": "Using applications",
       "breadcrumb": [
+        "Platforms",
         "Android",
         "User Guide",
         "Using applications"
       ],
       "path": "/content/en/pages/deploy-app/using-applications-CsobZMZ45Q.json",
       "updatedAt": "2026-02-25T07:28:56.761Z",
-      "order": 1,
+      "order": 2,
       "platform": "android",
       "clientId": "android-MENReFAfCN",
       "chapterId": "user-guide-SNTomIhnLe",
@@ -169,13 +199,14 @@
       "collection": "deploy-app",
       "title": "Interface",
       "breadcrumb": [
+        "Platforms",
         "Android",
         "User Guide",
         "Interface"
       ],
       "path": "/content/en/pages/deploy-app/interface-4Ncp4affe9.json",
       "updatedAt": "2026-02-25T07:30:57.612Z",
-      "order": 2,
+      "order": 3,
       "platform": "android",
       "clientId": "android-MENReFAfCN",
       "chapterId": "user-guide-SNTomIhnLe",
@@ -187,13 +218,14 @@
       "collection": "deploy-app",
       "title": "First Login",
       "breadcrumb": [
+        "Platforms",
         "Android",
         "Admin Guide",
         "First Login"
       ],
       "path": "/content/en/pages/deploy-app/first-login-qwmPnmJsrF.json",
       "updatedAt": "2026-02-25T07:33:17.264Z",
-      "order": 3,
+      "order": 4,
       "platform": "android",
       "clientId": "android-MENReFAfCN",
       "chapterId": "admin-guide-V5Hs1rBdRL",
@@ -205,13 +237,14 @@
       "collection": "deploy-app",
       "title": "Adding Users",
       "breadcrumb": [
+        "Platforms",
         "Android",
         "Admin Guide",
         "Adding Users"
       ],
       "path": "/content/en/pages/deploy-app/adding-users-GhHcn1knBJ.json",
       "updatedAt": "2026-02-25T07:33:51.306Z",
-      "order": 4,
+      "order": 5,
       "platform": "android",
       "clientId": "android-MENReFAfCN",
       "chapterId": "admin-guide-V5Hs1rBdRL",
@@ -223,13 +256,14 @@
       "collection": "deploy-app",
       "title": "Managing Users",
       "breadcrumb": [
+        "Platforms",
         "Android",
         "Admin Guide",
         "Managing Users"
       ],
       "path": "/content/en/pages/deploy-app/managing-users-V110s1QF2l.json",
       "updatedAt": "2026-02-25T07:34:19.063Z",
-      "order": 5,
+      "order": 6,
       "platform": "android",
       "clientId": "android-MENReFAfCN",
       "chapterId": "admin-guide-V5Hs1rBdRL",
@@ -241,13 +275,14 @@
       "collection": "deploy-app",
       "title": "Access External Services",
       "breadcrumb": [
+        "Platforms",
         "Android",
         "Admin Guide",
         "Access External Services"
       ],
       "path": "/content/en/pages/deploy-app/access-external-services-ohReBmQJiu.json",
       "updatedAt": "2026-02-25T07:35:19.709Z",
-      "order": 6,
+      "order": 7,
       "platform": "android",
       "clientId": "android-MENReFAfCN",
       "chapterId": "admin-guide-V5Hs1rBdRL",
@@ -259,13 +294,14 @@
       "collection": "deploy-app",
       "title": "Join a Deploy App",
       "breadcrumb": [
+        "Platforms",
         "iOS",
         "User Guide",
         "Join a Deploy App"
       ],
       "path": "/content/en/pages/deploy-app/join-a-deploy-app-f7TuSbNQId.json",
       "updatedAt": "2026-02-25T07:36:12.445Z",
-      "order": 7,
+      "order": 8,
       "platform": "ios",
       "clientId": "ios-8ux4fDfFeI",
       "chapterId": "user-guide-8g9rzhpxcj",
@@ -277,13 +313,14 @@
       "collection": "deploy-app",
       "title": "Using applications",
       "breadcrumb": [
+        "Platforms",
         "iOS",
         "User Guide",
         "Using applications"
       ],
       "path": "/content/en/pages/deploy-app/using-applications-fNlwcUs5fv.json",
       "updatedAt": "2026-01-23T20:08:10.314Z",
-      "order": 8,
+      "order": 9,
       "platform": "ios",
       "clientId": "ios-8ux4fDfFeI",
       "chapterId": "user-guide-8g9rzhpxcj",
@@ -295,13 +332,14 @@
       "collection": "deploy-app",
       "title": "Admin First Login",
       "breadcrumb": [
+        "Platforms",
         "iOS",
         "Admin Guide",
         "Admin First Login"
       ],
       "path": "/content/en/pages/deploy-app/admin-first-login-pij4XWfCWf.json",
       "updatedAt": "2026-02-18T05:45:37.136Z",
-      "order": 9,
+      "order": 10,
       "platform": "ios",
       "clientId": "ios-8ux4fDfFeI",
       "chapterId": "admin-guide-H0sjVgEhja",
@@ -313,13 +351,14 @@
       "collection": "deploy-app",
       "title": "Add users to Deploy App",
       "breadcrumb": [
+        "Platforms",
         "iOS",
         "Admin Guide",
         "Add users to Deploy App"
       ],
       "path": "/content/en/pages/deploy-app/add-users-to-deploy-app-LiZ7mcZXR9.json",
       "updatedAt": "2026-01-23T20:08:00.066Z",
-      "order": 10,
+      "order": 11,
       "platform": "ios",
       "clientId": "ios-8ux4fDfFeI",
       "chapterId": "admin-guide-H0sjVgEhja",
@@ -331,13 +370,14 @@
       "collection": "deploy-app",
       "title": "Manage Users in Deploy App",
       "breadcrumb": [
+        "Platforms",
         "iOS",
         "Admin Guide",
         "Manage Users in Deploy App"
       ],
       "path": "/content/en/pages/deploy-app/manage-users-in-deploy-app-pMXvqxrFQn.json",
       "updatedAt": "2026-01-23T20:08:00.016Z",
-      "order": 11,
+      "order": 12,
       "platform": "ios",
       "clientId": "ios-8ux4fDfFeI",
       "chapterId": "admin-guide-H0sjVgEhja",
@@ -349,13 +389,14 @@
       "collection": "deploy-app",
       "title": "Troubleshooting",
       "breadcrumb": [
+        "Platforms",
         "iOS",
         "Admin Guide",
         "Troubleshooting"
       ],
       "path": "/content/en/pages/deploy-app/troubleshooting-CxXaxweQeg.json",
       "updatedAt": "2026-01-23T20:07:59.959Z",
-      "order": 12,
+      "order": 13,
       "platform": "ios",
       "clientId": "ios-8ux4fDfFeI",
       "chapterId": "admin-guide-H0sjVgEhja",
@@ -367,13 +408,14 @@
       "collection": "deploy-app",
       "title": "Join a Deploy App",
       "breadcrumb": [
+        "Platforms",
         "Windows",
         "User Guide",
         "Join a Deploy App"
       ],
       "path": "/content/en/pages/deploy-app/join-a-deploy-app-Ns73TcVodz.json",
       "updatedAt": "2026-02-25T07:36:23.881Z",
-      "order": 13,
+      "order": 14,
       "platform": "windows",
       "clientId": "windows-7LrSmQmqQ6",
       "chapterId": "user-guide-irnHx8wSE7",
@@ -385,13 +427,14 @@
       "collection": "deploy-app",
       "title": "Using applications",
       "breadcrumb": [
+        "Platforms",
         "Windows",
         "User Guide",
         "Using applications"
       ],
       "path": "/content/en/pages/deploy-app/using-applications-j9IwlemcTo.json",
       "updatedAt": "2026-01-23T20:08:59.764Z",
-      "order": 14,
+      "order": 15,
       "platform": "windows",
       "clientId": "windows-7LrSmQmqQ6",
       "chapterId": "user-guide-irnHx8wSE7",
@@ -403,13 +446,14 @@
       "collection": "deploy-app",
       "title": "Admin First Login",
       "breadcrumb": [
+        "Platforms",
         "Windows",
         "Admin Guide",
         "Admin First Login"
       ],
       "path": "/content/en/pages/deploy-app/admin-first-login-1wjrnFERNt.json",
       "updatedAt": "2026-02-18T13:22:09.062Z",
-      "order": 15,
+      "order": 16,
       "platform": "windows",
       "clientId": "windows-7LrSmQmqQ6",
       "chapterId": "admin-guide-vhfls732g4",
@@ -421,13 +465,14 @@
       "collection": "deploy-app",
       "title": "Add users to Deploy App",
       "breadcrumb": [
+        "Platforms",
         "Windows",
         "Admin Guide",
         "Add users to Deploy App"
       ],
       "path": "/content/en/pages/deploy-app/add-users-to-deploy-app-eSD3JH0iqL.json",
       "updatedAt": "2026-01-23T20:08:17.806Z",
-      "order": 16,
+      "order": 17,
       "platform": "windows",
       "clientId": "windows-7LrSmQmqQ6",
       "chapterId": "admin-guide-vhfls732g4",
@@ -439,13 +484,14 @@
       "collection": "deploy-app",
       "title": "Manage Users in Deploy App",
       "breadcrumb": [
+        "Platforms",
         "Windows",
         "Admin Guide",
         "Manage Users in Deploy App"
       ],
       "path": "/content/en/pages/deploy-app/manage-users-in-deploy-app-NtJmpwczVJ.json",
       "updatedAt": "2026-01-23T20:08:17.760Z",
-      "order": 17,
+      "order": 18,
       "platform": "windows",
       "clientId": "windows-7LrSmQmqQ6",
       "chapterId": "admin-guide-vhfls732g4",
@@ -457,13 +503,14 @@
       "collection": "deploy-app",
       "title": "Troubleshooting",
       "breadcrumb": [
+        "Platforms",
         "Windows",
         "Admin Guide",
         "Troubleshooting"
       ],
       "path": "/content/en/pages/deploy-app/troubleshooting-TBvhuT5rIM.json",
       "updatedAt": "2026-01-23T20:08:17.712Z",
-      "order": 18,
+      "order": 19,
       "platform": "windows",
       "clientId": "windows-7LrSmQmqQ6",
       "chapterId": "admin-guide-vhfls732g4",
@@ -475,13 +522,14 @@
       "collection": "deploy-app",
       "title": "Join a Deploy App",
       "breadcrumb": [
+        "Platforms",
         "Linux",
         "User Guide",
         "Join a Deploy App"
       ],
       "path": "/content/en/pages/deploy-app/join-a-deploy-app-BFVDjvnboR.json",
       "updatedAt": "2026-02-25T07:36:31.156Z",
-      "order": 19,
+      "order": 20,
       "platform": "linux",
       "clientId": "linux-JmHAcb7bTi",
       "chapterId": "user-guide-6StTnmEqiQ",
@@ -493,13 +541,14 @@
       "collection": "deploy-app",
       "title": "Using applications",
       "breadcrumb": [
+        "Platforms",
         "Linux",
         "User Guide",
         "Using applications"
       ],
       "path": "/content/en/pages/deploy-app/using-applications-NYYhktcNaX.json",
       "updatedAt": "2026-01-23T20:08:39.896Z",
-      "order": 20,
+      "order": 21,
       "platform": "linux",
       "clientId": "linux-JmHAcb7bTi",
       "chapterId": "user-guide-6StTnmEqiQ",
@@ -511,13 +560,14 @@
       "collection": "deploy-app",
       "title": "Admin First Login",
       "breadcrumb": [
+        "Platforms",
         "Linux",
         "Admin Guide",
         "Admin First Login"
       ],
       "path": "/content/en/pages/deploy-app/admin-first-login-odAZzS2U6W.json",
       "updatedAt": "2026-02-18T13:22:24.264Z",
-      "order": 21,
+      "order": 22,
       "platform": "linux",
       "clientId": "linux-JmHAcb7bTi",
       "chapterId": "admin-guide-DA32dON96v",
@@ -529,13 +579,14 @@
       "collection": "deploy-app",
       "title": "Add users to Deploy App",
       "breadcrumb": [
+        "Platforms",
         "Linux",
         "Admin Guide",
         "Add users to Deploy App"
       ],
       "path": "/content/en/pages/deploy-app/add-users-to-deploy-app-mnujIZSHKL.json",
       "updatedAt": "2026-01-23T20:09:16.914Z",
-      "order": 22,
+      "order": 23,
       "platform": "linux",
       "clientId": "linux-JmHAcb7bTi",
       "chapterId": "admin-guide-DA32dON96v",
@@ -547,13 +598,14 @@
       "collection": "deploy-app",
       "title": "Manage Users in Deploy App",
       "breadcrumb": [
+        "Platforms",
         "Linux",
         "Admin Guide",
         "Manage Users in Deploy App"
       ],
       "path": "/content/en/pages/deploy-app/manage-users-in-deploy-app-GANaLUFNSQ.json",
       "updatedAt": "2026-01-23T20:09:16.869Z",
-      "order": 23,
+      "order": 24,
       "platform": "linux",
       "clientId": "linux-JmHAcb7bTi",
       "chapterId": "admin-guide-DA32dON96v",
@@ -565,13 +617,14 @@
       "collection": "deploy-app",
       "title": "Troubleshooting",
       "breadcrumb": [
+        "Platforms",
         "Linux",
         "Admin Guide",
         "Troubleshooting"
       ],
       "path": "/content/en/pages/deploy-app/troubleshooting-Oo8uDQbEZi.json",
       "updatedAt": "2026-01-23T20:09:16.822Z",
-      "order": 24,
+      "order": 25,
       "platform": "linux",
       "clientId": "linux-JmHAcb7bTi",
       "chapterId": "admin-guide-DA32dON96v",
@@ -583,13 +636,14 @@
       "collection": "deploy-app",
       "title": "Join a Deploy App",
       "breadcrumb": [
+        "Platforms",
         "MacOS",
         "User Guide",
         "Join a Deploy App"
       ],
       "path": "/content/en/pages/deploy-app/join-a-deploy-app-OrrLFQhem6.json",
       "updatedAt": "2026-02-27T08:34:36.287Z",
-      "order": 25,
+      "order": 26,
       "platform": "macos",
       "clientId": "macos-6fg0DsaF5B",
       "chapterId": "user-guide-yEohm3XLal",
@@ -601,13 +655,14 @@
       "collection": "deploy-app",
       "title": "Using applications",
       "breadcrumb": [
+        "Platforms",
         "MacOS",
         "User Guide",
         "Using applications"
       ],
       "path": "/content/en/pages/deploy-app/using-applications-VTXa01ztks.json",
       "updatedAt": "2026-01-23T20:08:51.211Z",
-      "order": 26,
+      "order": 27,
       "platform": "macos",
       "clientId": "macos-6fg0DsaF5B",
       "chapterId": "user-guide-yEohm3XLal",
@@ -619,13 +674,14 @@
       "collection": "deploy-app",
       "title": "Admin First Login",
       "breadcrumb": [
+        "Platforms",
         "MacOS",
         "Admin Guide",
         "Admin First Login"
       ],
       "path": "/content/en/pages/deploy-app/admin-first-login-uvcV5pEinh.json",
       "updatedAt": "2026-02-18T13:22:31.867Z",
-      "order": 27,
+      "order": 28,
       "platform": "macos",
       "clientId": "macos-6fg0DsaF5B",
       "chapterId": "admin-guide-Jf06VjsJzu",
@@ -637,13 +693,14 @@
       "collection": "deploy-app",
       "title": "Add users to Deploy App",
       "breadcrumb": [
+        "Platforms",
         "MacOS",
         "Admin Guide",
         "Add users to Deploy App"
       ],
       "path": "/content/en/pages/deploy-app/add-users-to-deploy-app-8Wa87CThza.json",
       "updatedAt": "2026-01-23T20:09:26.781Z",
-      "order": 28,
+      "order": 29,
       "platform": "macos",
       "clientId": "macos-6fg0DsaF5B",
       "chapterId": "admin-guide-Jf06VjsJzu",
@@ -655,13 +712,14 @@
       "collection": "deploy-app",
       "title": "Manage Users in Deploy App",
       "breadcrumb": [
+        "Platforms",
         "MacOS",
         "Admin Guide",
         "Manage Users in Deploy App"
       ],
       "path": "/content/en/pages/deploy-app/manage-users-in-deploy-app-ecR8K2nIeC.json",
       "updatedAt": "2026-01-23T20:09:26.551Z",
-      "order": 29,
+      "order": 30,
       "platform": "macos",
       "clientId": "macos-6fg0DsaF5B",
       "chapterId": "admin-guide-Jf06VjsJzu",
@@ -673,13 +731,14 @@
       "collection": "deploy-app",
       "title": "Troubleshooting",
       "breadcrumb": [
+        "Platforms",
         "MacOS",
         "Admin Guide",
         "Troubleshooting"
       ],
       "path": "/content/en/pages/deploy-app/troubleshooting-adGWENRO1Q.json",
       "updatedAt": "2026-01-23T20:09:26.495Z",
-      "order": 30,
+      "order": 31,
       "platform": "macos",
       "clientId": "macos-6fg0DsaF5B",
       "chapterId": "admin-guide-Jf06VjsJzu",
@@ -691,13 +750,13 @@
       "collection": "guides/tak-guide",
       "title": "Deploy App - TAK",
       "breadcrumb": [
-        "TAK Clients",
+        "Platforms",
         "ATAK",
         "INTRODUCTION",
         "Deploy App - TAK"
       ],
       "path": "/content/en/pages/guides/tak-guide/deploy-app-tak-aFY9LCZCf0.json",
-      "updatedAt": "2026-06-12T15:51:07.655Z",
+      "updatedAt": "2026-06-12T23:03:54.454Z",
       "order": 0,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
@@ -710,7 +769,7 @@
       "collection": "guides/tak-guide",
       "title": "What is TAK?",
       "breadcrumb": [
-        "TAK Clients",
+        "Platforms",
         "ATAK",
         "INTRODUCTION",
         "Start",
@@ -730,7 +789,7 @@
       "collection": "guides/tak-guide",
       "title": "Start from Download",
       "breadcrumb": [
-        "TAK Clients",
+        "Platforms",
         "ATAK",
         "INTRODUCTION",
         "Start",
@@ -750,7 +809,7 @@
       "collection": "guides/tak-guide",
       "title": "Importing Server Connection",
       "breadcrumb": [
-        "TAK Clients",
+        "Platforms",
         "ATAK",
         "INTRODUCTION",
         "Start",
@@ -770,7 +829,7 @@
       "collection": "guides/tak-guide",
       "title": "Load ATAK Plugins",
       "breadcrumb": [
-        "TAK Clients",
+        "Platforms",
         "ATAK",
         "INTRODUCTION",
         "Start",
@@ -790,7 +849,7 @@
       "collection": "guides/tak-guide",
       "title": "Basic view, tools and toolbar",
       "breadcrumb": [
-        "TAK Clients",
+        "Platforms",
         "ATAK",
         "USING ATAK FEATURES",
         "Basic Features",
@@ -810,7 +869,7 @@
       "collection": "guides/tak-guide",
       "title": "Blue force tracking",
       "breadcrumb": [
-        "TAK Clients",
+        "Platforms",
         "ATAK",
         "USING ATAK FEATURES",
         "Basic Features",
@@ -830,7 +889,7 @@
       "collection": "guides/tak-guide",
       "title": "Feeds with Data Sync",
       "breadcrumb": [
-        "TAK Clients",
+        "Platforms",
         "ATAK",
         "USING ATAK FEATURES",
         "Basic Features",
@@ -850,7 +909,7 @@
       "collection": "guides/tak-guide",
       "title": "Point Dropper - Markers",
       "breadcrumb": [
-        "TAK Clients",
+        "Platforms",
         "ATAK",
         "USING ATAK FEATURES",
         "Basic Features",
@@ -870,7 +929,7 @@
       "collection": "guides/tak-guide",
       "title": "Point Dropper - Quick Pic",
       "breadcrumb": [
-        "TAK Clients",
+        "Platforms",
         "ATAK",
         "USING ATAK FEATURES",
         "Basic Features",
@@ -890,7 +949,7 @@
       "collection": "guides/tak-guide",
       "title": "GeoChat",
       "breadcrumb": [
-        "TAK Clients",
+        "Platforms",
         "ATAK",
         "USING ATAK FEATURES",
         "Basic Features",
@@ -910,7 +969,7 @@
       "collection": "guides/tak-guide",
       "title": "Clear Content",
       "breadcrumb": [
-        "TAK Clients",
+        "Platforms",
         "ATAK",
         "USING ATAK FEATURES",
         "Basic Features",
@@ -930,7 +989,7 @@
       "collection": "guides/tak-guide",
       "title": "Downloading Maps for Offline use",
       "breadcrumb": [
-        "TAK Clients",
+        "Platforms",
         "ATAK",
         "USING ATAK FEATURES",
         "Advanced Features",
@@ -950,7 +1009,7 @@
       "collection": "guides/tak-guide",
       "title": "Overlay Manager - How to manage the views",
       "breadcrumb": [
-        "TAK Clients",
+        "Platforms",
         "ATAK",
         "USING ATAK FEATURES",
         "Advanced Features",
@@ -970,7 +1029,7 @@
       "collection": "guides/tak-guide",
       "title": "How to manage ATAK Tools and Toolbars",
       "breadcrumb": [
-        "TAK Clients",
+        "Platforms",
         "ATAK",
         "USING ATAK FEATURES",
         "Advanced Features",
@@ -990,7 +1049,7 @@
       "collection": "guides/tak-guide",
       "title": "Create Routes and use VNS",
       "breadcrumb": [
-        "TAK Clients",
+        "Platforms",
         "ATAK",
         "USING ATAK FEATURES",
         "Advanced Features",
@@ -1010,7 +1069,7 @@
       "collection": "guides/tak-guide",
       "title": "Create & Manage Feeds",
       "breadcrumb": [
-        "TAK Clients",
+        "Platforms",
         "ATAK",
         "USING ATAK FEATURES",
         "Advanced Features",
@@ -1030,7 +1089,7 @@
       "collection": "guides/tak-guide",
       "title": "Draw & share Plans",
       "breadcrumb": [
-        "TAK Clients",
+        "Platforms",
         "ATAK",
         "USING ATAK FEATURES",
         "Advanced Features",
@@ -1050,7 +1109,7 @@
       "collection": "guides/tak-guide",
       "title": "Lasso to add into Feed",
       "breadcrumb": [
-        "TAK Clients",
+        "Platforms",
         "ATAK",
         "USING ATAK FEATURES",
         "Advanced Features",
@@ -1070,7 +1129,7 @@
       "collection": "guides/tak-guide",
       "title": "Geofences",
       "breadcrumb": [
-        "TAK Clients",
+        "Platforms",
         "ATAK",
         "USING ATAK FEATURES",
         "Advanced Features",
@@ -1090,7 +1149,7 @@
       "collection": "guides/tak-guide",
       "title": "Uastool",
       "breadcrumb": [
-        "TAK Clients",
+        "Platforms",
         "ATAK",
         "USING ATAK FEATURES",
         "Supported Plugins",
@@ -1110,9 +1169,9 @@
       "collection": "guides/tak-guide",
       "title": "Overview",
       "breadcrumb": [
-        "TAK Clients",
+        "Platforms",
         "ATAK",
-        "Usage by Role",
+        "USAGE BY ROLE",
         "Overview"
       ],
       "path": "/content/en/pages/guides/tak-guide/overview-CVNzKhRcKY.json",
@@ -1121,7 +1180,7 @@
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
       "chapterId": "usage-by-role-2F9bOBgUmG",
-      "chapterLabel": "Usage by Role"
+      "chapterLabel": "USAGE BY ROLE"
     },
     {
       "id": "a3c77bb3-791e-4dcb-8ce1-bfc6850119e0",
@@ -1129,9 +1188,9 @@
       "collection": "guides/tak-guide",
       "title": "Use Geochat for comms",
       "breadcrumb": [
-        "TAK Clients",
+        "Platforms",
         "ATAK",
-        "Usage by Role",
+        "USAGE BY ROLE",
         "Fighter",
         "Use Geochat for comms"
       ],
@@ -1149,9 +1208,9 @@
       "collection": "guides/tak-guide",
       "title": "Use RECON Feed",
       "breadcrumb": [
-        "TAK Clients",
+        "Platforms",
         "ATAK",
-        "Usage by Role",
+        "USAGE BY ROLE",
         "Fighter",
         "Use RECON Feed"
       ],
@@ -1169,9 +1228,9 @@
       "collection": "guides/tak-guide",
       "title": "RECON Feed Management",
       "breadcrumb": [
-        "TAK Clients",
+        "Platforms",
         "ATAK",
-        "Usage by Role",
+        "USAGE BY ROLE",
         "Command Post",
         "RECON Feed Management"
       ],
@@ -1189,12 +1248,12 @@
       "collection": "guides/tak-guide",
       "title": "Troubleshooting",
       "breadcrumb": [
-        "TAK Clients",
+        "Platforms",
         "ATAK",
         "Troubleshooting"
       ],
       "path": "/content/en/pages/guides/tak-guide/troubleshooting-IC3Nd5qZHr.json",
-      "updatedAt": "2026-06-12T15:51:48.189Z",
+      "updatedAt": "2026-06-12T22:24:56.108Z",
       "order": 25,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
@@ -1207,7 +1266,7 @@
       "collection": "guides/tak-guide",
       "title": "Start from Download",
       "breadcrumb": [
-        "TAK Clients",
+        "Platforms",
         "WinTAK",
         "Start",
         "Start from Download"
@@ -1226,7 +1285,7 @@
       "collection": "guides/tak-guide",
       "title": "WinTAK Already Installed",
       "breadcrumb": [
-        "TAK Clients",
+        "Platforms",
         "WinTAK",
         "Start",
         "WinTAK Already Installed"
@@ -1245,7 +1304,7 @@
       "collection": "guides/tak-guide",
       "title": "Clear Content",
       "breadcrumb": [
-        "TAK Clients",
+        "Platforms",
         "WinTAK",
         "Basic Features",
         "Clear Content"
@@ -1264,7 +1323,7 @@
       "collection": "guides/tak-guide",
       "title": "Blue force tracking",
       "breadcrumb": [
-        "TAK Clients",
+        "Platforms",
         "WinTAK",
         "Basic Features",
         "Blue force tracking"
@@ -1283,7 +1342,7 @@
       "collection": "guides/tak-guide",
       "title": "Plugin Management",
       "breadcrumb": [
-        "TAK Clients",
+        "Platforms",
         "WinTAK",
         "Basic Features",
         "Plugin Management"
@@ -1302,7 +1361,7 @@
       "collection": "guides/tak-guide",
       "title": "Data Sync",
       "breadcrumb": [
-        "TAK Clients",
+        "Platforms",
         "WinTAK",
         "Basic Features",
         "Data Sync"
@@ -1321,7 +1380,7 @@
       "collection": "guides/tak-guide",
       "title": "Point Dropper, Create, Edit, Send",
       "breadcrumb": [
-        "TAK Clients",
+        "Platforms",
         "WinTAK",
         "Basic Features",
         "Point Dropper, Create, Edit, Send"
@@ -1340,7 +1399,7 @@
       "collection": "guides/tak-guide",
       "title": "Use GeoChat",
       "breadcrumb": [
-        "TAK Clients",
+        "Platforms",
         "WinTAK",
         "Basic Features",
         "Use GeoChat"
@@ -1359,7 +1418,7 @@
       "collection": "guides/tak-guide",
       "title": "Create Feeds",
       "breadcrumb": [
-        "TAK Clients",
+        "Platforms",
         "WinTAK",
         "Advanced Features",
         "Create Feeds"
@@ -1378,7 +1437,7 @@
       "collection": "guides/tak-guide",
       "title": "Draw & share Plans",
       "breadcrumb": [
-        "TAK Clients",
+        "Platforms",
         "WinTAK",
         "Advanced Features",
         "Draw & share Plans"
@@ -1397,7 +1456,7 @@
       "collection": "guides/tak-guide",
       "title": "Manage Feeds",
       "breadcrumb": [
-        "TAK Clients",
+        "Platforms",
         "WinTAK",
         "Advanced Features",
         "Manage Feeds"
@@ -1416,7 +1475,7 @@
       "collection": "guides/tak-guide",
       "title": "Get alerts with Geofences",
       "breadcrumb": [
-        "TAK Clients",
+        "Platforms",
         "WinTAK",
         "Advanced Features",
         "Get alerts with Geofences"
@@ -1435,7 +1494,7 @@
       "collection": "guides/tak-guide",
       "title": "Overview",
       "breadcrumb": [
-        "TAK Clients",
+        "Platforms",
         "WinTAK",
         "Usage by Role",
         "Overview"
@@ -1454,7 +1513,7 @@
       "collection": "guides/tak-guide",
       "title": "Fighter",
       "breadcrumb": [
-        "TAK Clients",
+        "Platforms",
         "WinTAK",
         "Usage by Role",
         "Fighter"
@@ -1473,7 +1532,7 @@
       "collection": "guides/tak-guide",
       "title": "Edit RECON feed",
       "breadcrumb": [
-        "TAK Clients",
+        "Platforms",
         "WinTAK",
         "Usage by Role",
         "Command Post",
@@ -1493,7 +1552,7 @@
       "collection": "guides/tak-guide",
       "title": "TAK Replay",
       "breadcrumb": [
-        "TAK Clients",
+        "Platforms",
         "WinTAK",
         "Supported Plugins",
         "TAK Replay"
@@ -1512,7 +1571,7 @@
       "collection": "guides/tak-guide",
       "title": "Troubleshooting",
       "breadcrumb": [
-        "TAK Clients",
+        "Platforms",
         "WinTAK",
         "Troubleshooting"
       ],
@@ -1530,7 +1589,7 @@
       "collection": "guides/tak-guide",
       "title": "Start from Download",
       "breadcrumb": [
-        "TAK Clients",
+        "Platforms",
         "iTAK",
         "Start",
         "Start from Download"
@@ -1549,7 +1608,7 @@
       "collection": "guides/tak-guide",
       "title": "iTAK Already Installed",
       "breadcrumb": [
-        "TAK Clients",
+        "Platforms",
         "iTAK",
         "Start",
         "iTAK Already Installed"
@@ -1568,7 +1627,7 @@
       "collection": "guides/tak-guide",
       "title": "Blue force tracking",
       "breadcrumb": [
-        "TAK Clients",
+        "Platforms",
         "iTAK",
         "Basic Features",
         "Blue force tracking"
@@ -1587,7 +1646,7 @@
       "collection": "guides/tak-guide",
       "title": "Data Sync",
       "breadcrumb": [
-        "TAK Clients",
+        "Platforms",
         "iTAK",
         "Basic Features",
         "Data Sync"
@@ -1606,7 +1665,7 @@
       "collection": "guides/tak-guide",
       "title": "Create Symbols & Quick Pics",
       "breadcrumb": [
-        "TAK Clients",
+        "Platforms",
         "iTAK",
         "Basic Features",
         "Create Symbols & Quick Pics"
@@ -1625,7 +1684,7 @@
       "collection": "guides/tak-guide",
       "title": "Use GeoChat",
       "breadcrumb": [
-        "TAK Clients",
+        "Platforms",
         "iTAK",
         "Basic Features",
         "Use GeoChat"
@@ -1644,7 +1703,7 @@
       "collection": "guides/tak-guide",
       "title": "Overview",
       "breadcrumb": [
-        "TAK Clients",
+        "Platforms",
         "iTAK",
         "Usage by Role",
         "Overview"
@@ -1663,7 +1722,7 @@
       "collection": "guides/tak-guide",
       "title": "Fighter",
       "breadcrumb": [
-        "TAK Clients",
+        "Platforms",
         "iTAK",
         "Usage by Role",
         "Fighter"
@@ -1682,7 +1741,7 @@
       "collection": "guides/tak-guide",
       "title": "Command Post",
       "breadcrumb": [
-        "TAK Clients",
+        "Platforms",
         "iTAK",
         "Usage by Role",
         "Command Post"
@@ -1701,7 +1760,7 @@
       "collection": "guides/tak-guide",
       "title": "Troubleshooting",
       "breadcrumb": [
-        "TAK Clients",
+        "Platforms",
         "iTAK",
         "Troubleshooting"
       ],
@@ -1719,7 +1778,7 @@
       "collection": "guides/tak-guide",
       "title": "Start from Download",
       "breadcrumb": [
-        "TAK Clients",
+        "Platforms",
         "TAK Tracker - Android",
         "Start",
         "Start from Download"
@@ -1738,7 +1797,7 @@
       "collection": "guides/tak-guide",
       "title": "TAK Tracker Already Installed",
       "breadcrumb": [
-        "TAK Clients",
+        "Platforms",
         "TAK Tracker - Android",
         "Start",
         "TAK Tracker Already Installed"
@@ -1757,7 +1816,7 @@
       "collection": "guides/tak-guide",
       "title": "Importing Server Connection",
       "breadcrumb": [
-        "TAK Clients",
+        "Platforms",
         "TAK Tracker - Android",
         "Start",
         "Importing Server Connection"
@@ -1776,7 +1835,7 @@
       "collection": "guides/tak-guide",
       "title": "Overview",
       "breadcrumb": [
-        "TAK Clients",
+        "Platforms",
         "TAK Tracker - Android",
         "Usage by Role",
         "Overview"
@@ -1795,7 +1854,7 @@
       "collection": "guides/tak-guide",
       "title": "Fighter",
       "breadcrumb": [
-        "TAK Clients",
+        "Platforms",
         "TAK Tracker - Android",
         "Usage by Role",
         "Fighter"
@@ -1814,7 +1873,7 @@
       "collection": "guides/tak-guide",
       "title": "Command Post",
       "breadcrumb": [
-        "TAK Clients",
+        "Platforms",
         "TAK Tracker - Android",
         "Usage by Role",
         "Command Post"
@@ -1833,7 +1892,7 @@
       "collection": "guides/tak-guide",
       "title": "Troubleshooting",
       "breadcrumb": [
-        "TAK Clients",
+        "Platforms",
         "TAK Tracker - Android",
         "Troubleshooting"
       ],
@@ -1851,7 +1910,7 @@
       "collection": "guides/tak-guide",
       "title": "Start from Download",
       "breadcrumb": [
-        "TAK Clients",
+        "Platforms",
         "TAK Tracker - Apple",
         "Start",
         "Start from Download"
@@ -1870,7 +1929,7 @@
       "collection": "guides/tak-guide",
       "title": "TAK Tracker Already Installed",
       "breadcrumb": [
-        "TAK Clients",
+        "Platforms",
         "TAK Tracker - Apple",
         "Start",
         "TAK Tracker Already Installed"
@@ -1889,7 +1948,7 @@
       "collection": "guides/tak-guide",
       "title": "Send alerts",
       "breadcrumb": [
-        "TAK Clients",
+        "Platforms",
         "TAK Tracker - Apple",
         "TAK Features",
         "Send alerts"
@@ -1908,7 +1967,7 @@
       "collection": "guides/tak-guide",
       "title": "Overview",
       "breadcrumb": [
-        "TAK Clients",
+        "Platforms",
         "TAK Tracker - Apple",
         "Usage by Role",
         "Overview"
@@ -1927,7 +1986,7 @@
       "collection": "guides/tak-guide",
       "title": "Fighter",
       "breadcrumb": [
-        "TAK Clients",
+        "Platforms",
         "TAK Tracker - Apple",
         "Usage by Role",
         "Fighter"
@@ -1946,7 +2005,7 @@
       "collection": "guides/tak-guide",
       "title": "Command Post",
       "breadcrumb": [
-        "TAK Clients",
+        "Platforms",
         "TAK Tracker - Apple",
         "Usage by Role",
         "Command Post"
@@ -1965,7 +2024,7 @@
       "collection": "guides/tak-guide",
       "title": "Troubleshooting",
       "breadcrumb": [
-        "TAK Clients",
+        "Platforms",
         "TAK Tracker - Apple",
         "Troubleshooting"
       ],

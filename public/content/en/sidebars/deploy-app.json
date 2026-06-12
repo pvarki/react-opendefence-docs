@@ -4,6 +4,12 @@
   "slug": "deploy-app",
   "items": [
     {
+      "type": "doc",
+      "id": "introduction-d1XzfzOkpz",
+      "label": "Introduction",
+      "slug": "introduction-d1XzfzOkpz"
+    },
+    {
       "type": "group",
       "id": "user-guide-SNTomIhnLe",
       "label": "User Guide",

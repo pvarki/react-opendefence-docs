@@ -26,13 +26,20 @@ export function usePlatformPicker(reader?: ReaderData) {
   )?.clients;
   const hasClients = !!bookClients?.length;
 
-  const options: ClientInfo[] = hasClients
-    ? bookClients
-    : PLATFORMS.map((key) => ({
-        id: key,
-        platform: key,
-        label: PLATFORM_LABELS[key],
-      }));
+  // Inside a platform-agnostic book (no Platforms organizer in Outline) the
+  // selector has no meaning — return empty options so callers hide it.
+  // Outside a book (home, shelf pages) fall back to the generic OS list so
+  // users can set their platform preference before opening any book.
+  const options: ClientInfo[] =
+    reader && !hasClients
+      ? []
+      : hasClients
+        ? bookClients!
+        : PLATFORMS.map((key) => ({
+            id: key,
+            platform: key,
+            label: PLATFORM_LABELS[key],
+          }));
 
   const active =
     reader && hasClients

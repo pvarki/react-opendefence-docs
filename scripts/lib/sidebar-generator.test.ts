@@ -256,6 +256,9 @@ describe("buildBook platform model", () => {
     const built = buildBook(tree, collection, "en", {
       toporgIds: new Set([introTopId]),
       platformByDocId: new Map([[fooClientId, "android"]]),
+      platformsContainerIds: new Set(),
+      osByDocId: new Map(),
+      isProductDocIds: new Set(),
     });
 
     // META: platform made FooApp a client despite the unknown name.

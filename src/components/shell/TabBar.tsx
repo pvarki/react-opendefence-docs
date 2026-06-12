@@ -48,6 +48,13 @@ export function TabBar() {
   const platformLabel = activeClient
     ? stripPlatformSuffix(activeClient.label)
     : PLATFORM_LABELS[view.platform];
+  // Hide the platform button when inside a platform-agnostic book (no Platforms
+  // organizer in Outline). Outside a book the button is always shown so users
+  // can set their OS preference.
+  const bookClients = reader?.manifest.collections.find(
+    (c) => c.slug === reader.collection,
+  )?.clients;
+  const showPlatformButton = !reader || !!bookClients?.length;
   const shelf = useShelfContext();
   const ShelfIcon = shelf.icon;
 
@@ -105,20 +112,22 @@ export function TabBar() {
               {t(shelf.labelKey)}
             </span>
           </Link>
-          <button
-            type="button"
-            onClick={() => setPlatformOpen(true)}
-            className={itemClass}
-            aria-label={t("platform.label")}
-          >
-            <PlatformIcon
-              platform={activeClient?.platform ?? view.platform}
-              className="size-5"
-            />
-            <span className="max-w-16 truncate text-[10px] leading-none">
-              {platformLabel}
-            </span>
-          </button>
+          {showPlatformButton && (
+            <button
+              type="button"
+              onClick={() => setPlatformOpen(true)}
+              className={itemClass}
+              aria-label={t("platform.label")}
+            >
+              <PlatformIcon
+                platform={activeClient?.platform ?? view.platform}
+                className="size-5"
+              />
+              <span className="max-w-16 truncate text-[10px] leading-none">
+                {platformLabel}
+              </span>
+            </button>
+          )}
           <Link
             to="/$locale/search"
             params={{ locale }}

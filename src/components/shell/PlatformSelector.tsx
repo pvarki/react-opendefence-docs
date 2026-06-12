@@ -27,6 +27,9 @@ export function PlatformSelector() {
   const reader = useReaderData();
   const { options, active, pick } = usePlatformPicker(reader);
 
+  // Platform-agnostic book: no Platforms organizer in Outline → hide selector.
+  if (!options.length) return null;
+
   return (
     <Select
       value={active?.id ?? view.platform}

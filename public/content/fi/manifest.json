@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "locale": "fi",
-  "generatedAt": "2026-06-12T15:52:05.930Z",
+  "generatedAt": "2026-06-12T23:13:44.764Z",
   "collections": [
     {
       "slug": "deploy-app",
@@ -13,7 +13,8 @@
         {
           "id": "android-vdSzGssyHX",
           "label": "Android",
-          "platform": "android"
+          "platform": "android",
+          "os": "android"
         }
       ]
     },
@@ -79,6 +80,7 @@
       "collection": "deploy-app",
       "title": "Liittyminen Deploy Appiin",
       "breadcrumb": [
+        "Platforms",
         "Android",
         "Käyttäjäohjeet",
         "Liittyminen Deploy Appiin"
@@ -97,6 +99,7 @@
       "collection": "deploy-app",
       "title": "Sovellusten käyttö",
       "breadcrumb": [
+        "Platforms",
         "Android",
         "Käyttäjäohjeet",
         "Sovellusten käyttö"
@@ -115,6 +118,7 @@
       "collection": "deploy-app",
       "title": "Käyttöliittymä",
       "breadcrumb": [
+        "Platforms",
         "Android",
         "Käyttäjäohjeet",
         "Käyttöliittymä"
@@ -133,6 +137,7 @@
       "collection": "deploy-app",
       "title": "Ensimmäinen kirjautuminen",
       "breadcrumb": [
+        "Platforms",
         "Android",
         "Ylläpitäjäohjeet",
         "Ensimmäinen kirjautuminen"
@@ -151,6 +156,7 @@
       "collection": "deploy-app",
       "title": "Lisää käyttäjiä",
       "breadcrumb": [
+        "Platforms",
         "Android",
         "Ylläpitäjäohjeet",
         "Lisää käyttäjiä"
@@ -169,6 +175,7 @@
       "collection": "deploy-app",
       "title": "Hallitse käyttäjiä",
       "breadcrumb": [
+        "Platforms",
         "Android",
         "Ylläpitäjäohjeet",
         "Hallitse käyttäjiä"
@@ -187,6 +194,7 @@
       "collection": "deploy-app",
       "title": "Käytä ulkoisia palveluita",
       "breadcrumb": [
+        "Platforms",
         "Android",
         "Ylläpitäjäohjeet",
         "Käytä ulkoisia palveluita"

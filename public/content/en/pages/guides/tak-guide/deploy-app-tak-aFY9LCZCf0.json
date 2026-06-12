@@ -6,13 +6,13 @@
   "locale": "en",
   "title": "Deploy App - TAK",
   "breadcrumb": [
-    "TAK Clients",
+    "Platforms",
     "ATAK",
     "INTRODUCTION",
     "Deploy App - TAK"
   ],
   "createdAt": "2026-02-21T13:52:09.303Z",
-  "updatedAt": "2026-06-12T15:51:07.655Z",
+  "updatedAt": "2026-06-12T23:03:54.454Z",
   "headings": [],
   "blocks": [
     {
@@ -50,7 +50,7 @@
         {
           "title": "TAK Page - General",
           "layout": "image-left",
-          "html": "<ul>\n<li>TAK page is where you get your server connection packages to TAK products like ATAK, WinTAK...</li>\n</ul>",
+          "html": "<ul>\n<li>TAK page is where you get your server connection to your TAK client application.</li>\n</ul>",
           "images": [
             {
               "src": "/content/images/en/attachments/8aed2f1d854150ea.webp",
@@ -62,7 +62,7 @@
         {
           "title": "TAK Page - Platform",
           "layout": "image-left",
-          "html": "<ul>\n<li>Page should recognize your device if you want a package for different platform you can change it here and download the correct one</li>\n<li>Generally each device should have its own Deploy App identity and user shouldn't use same identity on multible devices.</li>\n<li>This way individual device can be disabled when needed and not every device at the same time</li>\n</ul>",
+          "html": "<ul>\n<li>Page should recognize your device if you want a package for different platform you can change it here and download the correct one</li>\n<li>Generally each device should have its own Deploy App identity and user shouldn't use same identity on multiple devices.</li>\n<li>This way individual device can be disabled when needed and not every device at the same time</li>\n</ul>",
           "images": [
             {
               "src": "/content/images/en/attachments/21c4b55de8d8f216.webp",
