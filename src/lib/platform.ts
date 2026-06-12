@@ -121,3 +121,19 @@ export const PLATFORM_LABELS: Record<Platform, string> = {
   linux: "Linux",
   macos: "macOS",
 };
+
+/**
+ * "TAK Tracker - Android" -> "TAK Tracker". Platform lists pair every label
+ * with an OS icon, so the OS suffix is redundant there — two TAK Trackers
+ * differ by icon alone. Falls back to the original when the label IS the
+ * platform name (generic list). Keep the full label for aria-labels.
+ */
+export function stripPlatformSuffix(label: string): string {
+  const stripped = label
+    .replace(
+      /\s*[-–—]\s*(android|apple|ios|ipados|windows|macos|linux)\s*$/i,
+      "",
+    )
+    .trim();
+  return stripped || label;
+}

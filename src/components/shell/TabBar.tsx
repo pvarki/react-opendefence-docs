@@ -8,7 +8,11 @@ import {
 import { useTranslation } from "react-i18next";
 import { ChevronLeft, House, Search, TableOfContents } from "lucide-react";
 import { DEFAULT_LOCALE, normalizeLocale } from "@shared/content-schema";
-import { PLATFORM_LABELS, useReadingView } from "@/lib/platform";
+import {
+  PLATFORM_LABELS,
+  stripPlatformSuffix,
+  useReadingView,
+} from "@/lib/platform";
 import { resolveClient } from "@/lib/content/neighbors";
 import { useReaderData } from "@/lib/useReaderData";
 import { ContentsSheet } from "@/components/shell/ContentsDrawer";
@@ -41,7 +45,9 @@ export function TabBar() {
   const activeClient = reader
     ? resolveClient(reader.manifest, reader.collection, view)
     : undefined;
-  const platformLabel = activeClient?.label ?? PLATFORM_LABELS[view.platform];
+  const platformLabel = activeClient
+    ? stripPlatformSuffix(activeClient.label)
+    : PLATFORM_LABELS[view.platform];
   const shelf = useShelfContext();
   const ShelfIcon = shelf.icon;
 

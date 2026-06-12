@@ -310,9 +310,7 @@ function OfflineDownloadButton({
       {state.phase === "done" ? <Check /> : <Download />}
       {state.phase === "downloading"
         ? `${state.done}/${state.total || "…"}`
-        : state.phase === "done"
-          ? "Offline"
-          : "Offline"}
+        : "Offline"}
     </Button>
   );
 }

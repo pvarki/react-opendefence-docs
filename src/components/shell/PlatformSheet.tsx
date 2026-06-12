@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { Check } from "lucide-react";
 import type { ClientInfo } from "@shared/content-schema";
+import { stripPlatformSuffix } from "@/lib/platform";
 import { usePlatformPicker } from "@/lib/usePlatformPicker";
 import type { ReaderData } from "@/routes/$locale/$";
 import { PlatformIcon, IncompleteBadge } from "@/components/shell/PlatformIcon";
@@ -51,6 +52,7 @@ export function PlatformSheet({
               <button
                 type="button"
                 onClick={() => choose(option)}
+                aria-label={option.label}
                 className={cn(
                   "flex w-full items-center gap-3 rounded-lg px-3 py-3 text-left",
                   option.id === active?.id ? "bg-muted font-medium" : "",
@@ -66,7 +68,7 @@ export function PlatformSheet({
                   platform={option.platform}
                   className="size-4 shrink-0 text-muted-foreground"
                 />
-                {option.label}
+                {stripPlatformSuffix(option.label)}
                 {option.underDevelopment && <IncompleteBadge />}
               </button>
             </li>

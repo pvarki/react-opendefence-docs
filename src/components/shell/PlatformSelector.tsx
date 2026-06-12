@@ -1,5 +1,9 @@
 import { useTranslation } from "react-i18next";
-import { PLATFORM_LABELS, useReadingView } from "@/lib/platform";
+import {
+  PLATFORM_LABELS,
+  stripPlatformSuffix,
+  useReadingView,
+} from "@/lib/platform";
 import { usePlatformPicker } from "@/lib/usePlatformPicker";
 import { useReaderData } from "@/lib/useReaderData";
 import { PlatformIcon, IncompleteBadge } from "@/components/shell/PlatformIcon";
@@ -41,7 +45,9 @@ export function PlatformSelector() {
           className="size-4"
         />
         <span className="max-w-24 truncate sm:max-w-none">
-          {active?.label ?? PLATFORM_LABELS[view.platform]}
+          {active
+            ? stripPlatformSuffix(active.label)
+            : PLATFORM_LABELS[view.platform]}
         </span>
       </SelectTrigger>
       <SelectContent align="end">
@@ -52,7 +58,7 @@ export function PlatformSelector() {
                 platform={option.platform}
                 className="size-4 text-muted-foreground"
               />
-              {option.label}
+              {stripPlatformSuffix(option.label)}
               {option.underDevelopment && <IncompleteBadge />}
             </span>
           </SelectItem>
