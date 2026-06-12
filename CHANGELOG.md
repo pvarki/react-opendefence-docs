@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.1](https://github.com/pvarki/react-opendefence-docs/compare/0.2.0...0.2.1) (2026-06-12)
+
+
+### Bug Fixes
+
+* keep Vite dev scanner and watcher out of helpcontent/ ([f81e81d](https://github.com/pvarki/react-opendefence-docs/commit/f81e81d4828af255eeb5dd7411a1638aa6f8de1f))
+
 ## [0.2.0](https://github.com/pvarki/react-opendefence-docs/compare/0.1.0...0.2.0) (2026-06-12)
 
 

@@ -2,4 +2,4 @@
 # Docker image tags from this file. The version itself is managed by
 # release-please (see .github/release-please-config.json extra-files).
 [tool.bumpversion]
-current_version = "0.2.0" # x-release-please-version
+current_version = "0.2.1" # x-release-please-version
