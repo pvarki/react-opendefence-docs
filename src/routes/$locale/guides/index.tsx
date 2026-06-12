@@ -48,7 +48,7 @@ function GuidesShelf() {
             <h2 className="px-1 pt-5 pb-2 text-[11px] font-semibold tracking-widest text-muted-foreground uppercase">
               {t(section.titleKey)}
             </h2>
-            <div className="grid gap-2.5 md:grid-cols-2 md:gap-3">
+            <div className="grid grid-cols-1 gap-2.5 md:grid-cols-2 md:gap-3">
               {section.books.map((book: ManifestCollection) => (
                 <BookCard
                   key={book.slug}

@@ -32,7 +32,7 @@ function AdvancedShelf() {
         </p>
         {sections.map((section) => (
           <Fragment key={section.titleKey}>
-            <div className="mt-4 grid gap-2.5 md:mt-6 md:grid-cols-2 md:gap-3">
+            <div className="mt-4 grid grid-cols-1 gap-2.5 md:mt-6 md:grid-cols-2 md:gap-3">
               {section.books.map((book) => (
                 <BookCard
                   key={book.slug}

@@ -59,7 +59,7 @@ function HomePage() {
         </div>
       </div>
       <div className="mx-auto max-w-2xl px-4 py-4 md:py-8">
-        <div className="grid gap-2.5 md:grid-cols-2 md:gap-3">
+        <div className="grid grid-cols-1 gap-2.5 md:grid-cols-2 md:gap-3">
           {CARDS.map(({ to, icon, titleKey, descKey }) => (
             <BookCard
               key={to}

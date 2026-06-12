@@ -26,7 +26,7 @@ function DevShelf() {
     <div className="h-full overflow-y-auto">
       <div className="mx-auto max-w-3xl px-4 py-5 md:py-12">
         <h1 className="text-xl font-bold md:text-3xl">{t("nav.develop")}</h1>
-        <div className="mt-4 grid gap-2.5 md:mt-6 md:grid-cols-2 md:gap-3">
+        <div className="mt-4 grid grid-cols-1 gap-2.5 md:mt-6 md:grid-cols-2 md:gap-3">
           {devBook && devFirstPage && (
             <BookCard
               locale={locale}
