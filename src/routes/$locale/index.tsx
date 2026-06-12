@@ -1,12 +1,8 @@
-import { Link, createFileRoute } from "@tanstack/react-router";
+import { createFileRoute } from "@tanstack/react-router";
 import { useTranslation } from "react-i18next";
 import { BookOpen, Code2, Smartphone, Zap } from "lucide-react";
-import {
-  Card,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { BookCard } from "@/components/shell/BookCard";
+import { CARD_IMAGES } from "@/lib/cardImages";
 
 export const Route = createFileRoute("/$locale/")({
   component: HomePage,
@@ -45,26 +41,23 @@ function HomePage() {
 
   return (
     <div className="h-full overflow-y-auto">
-      <div className="mx-auto max-w-3xl px-4 py-10 md:py-16">
-        <h1 className="text-3xl font-bold md:text-4xl">{t("app.title")}</h1>
-        <p className="mt-2 text-muted-foreground">{t("app.tagline")}</p>
+      <div className="mx-auto max-w-3xl px-4 py-5 md:py-12">
+        <h1 className="text-xl font-bold md:text-4xl">{t("app.title")}</h1>
+        <p className="mt-1 text-sm text-muted-foreground md:mt-2 md:text-base">
+          {t("app.tagline")}
+        </p>
 
-        <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          {CARDS.map(({ to, icon: Icon, titleKey, descKey }) => (
-            <Link
+        <div className="mt-4 grid gap-2.5 md:mt-8 md:grid-cols-2 md:gap-3">
+          {CARDS.map(({ to, icon, titleKey, descKey }) => (
+            <BookCard
               key={to}
-              to={`/$locale/${to}` as string}
-              params={{ locale }}
-              className="group focus-visible:outline-none"
-            >
-              <Card className="h-full gap-3 py-5 transition-colors group-hover:border-primary group-focus-visible:ring-2 group-focus-visible:ring-ring">
-                <CardHeader>
-                  <Icon className="mb-2 size-7 text-primary" />
-                  <CardTitle>{t(titleKey)}</CardTitle>
-                  <CardDescription>{t(descKey)}</CardDescription>
-                </CardHeader>
-              </Card>
-            </Link>
+              locale={locale}
+              to={`/$locale/${to}`}
+              icon={icon}
+              title={t(titleKey)}
+              description={t(descKey)}
+              image={CARD_IMAGES[to]}
+            />
           ))}
         </div>
       </div>

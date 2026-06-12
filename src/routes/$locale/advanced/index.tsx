@@ -1,12 +1,8 @@
-import { Link, createFileRoute } from "@tanstack/react-router";
+import { createFileRoute } from "@tanstack/react-router";
 import { useTranslation } from "react-i18next";
 import { BookText } from "lucide-react";
-import {
-  Card,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { BookCard } from "@/components/shell/BookCard";
+import { CARD_IMAGES } from "@/lib/cardImages";
 import { loadManifest } from "@/lib/content/loader";
 
 export const Route = createFileRoute("/$locale/advanced/")({
@@ -27,29 +23,23 @@ function AdvancedShelf() {
 
   return (
     <div className="h-full overflow-y-auto">
-      <div className="mx-auto max-w-3xl px-4 py-8 md:py-12">
-        <h1 className="text-2xl font-bold md:text-3xl">{t("nav.advanced")}</h1>
-        <p className="mt-1.5 text-sm text-muted-foreground md:text-base">
+      <div className="mx-auto max-w-3xl px-4 py-5 md:py-12">
+        <h1 className="text-xl font-bold md:text-3xl">{t("nav.advanced")}</h1>
+        <p className="mt-1 text-sm text-muted-foreground">
           {t("home.powerCardDesc")}
         </p>
-        <div className="mt-6 grid gap-4 sm:grid-cols-2">
+        <div className="mt-4 grid gap-2.5 md:mt-6 md:grid-cols-2 md:gap-3">
           {books.map((book) => (
-            <Link
+            <BookCard
               key={book.slug}
+              locale={locale}
               to="/$locale/$"
-              params={{ locale, _splat: book.slug }}
-              className="group focus-visible:outline-none"
-            >
-              <Card className="h-full gap-3 py-5 transition-colors group-hover:border-primary group-focus-visible:ring-2 group-focus-visible:ring-ring">
-                <CardHeader>
-                  <BookText className="mb-2 size-6 text-primary" />
-                  <CardTitle>{book.label}</CardTitle>
-                  {book.description && (
-                    <CardDescription>{book.description}</CardDescription>
-                  )}
-                </CardHeader>
-              </Card>
-            </Link>
+              splat={book.slug}
+              icon={BookText}
+              title={book.label}
+              description={book.description}
+              image={CARD_IMAGES[book.slug]}
+            />
           ))}
         </div>
       </div>

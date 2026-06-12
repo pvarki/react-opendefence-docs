@@ -1,12 +1,7 @@
-import { Link, createFileRoute } from "@tanstack/react-router";
+import { createFileRoute } from "@tanstack/react-router";
 import { useTranslation } from "react-i18next";
 import { Braces, Code2 } from "lucide-react";
-import {
-  Card,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { BookCard } from "@/components/shell/BookCard";
 import { loadManifest } from "@/lib/content/loader";
 import { readingOrder } from "@/lib/content/neighbors";
 
@@ -29,41 +24,26 @@ function DevShelf() {
 
   return (
     <div className="h-full overflow-y-auto">
-      <div className="mx-auto max-w-3xl px-4 py-8 md:py-12">
-        <h1 className="text-2xl font-bold md:text-3xl">{t("nav.develop")}</h1>
-        <div className="mt-6 grid gap-4 sm:grid-cols-2">
+      <div className="mx-auto max-w-3xl px-4 py-5 md:py-12">
+        <h1 className="text-xl font-bold md:text-3xl">{t("nav.develop")}</h1>
+        <div className="mt-4 grid gap-2.5 md:mt-6 md:grid-cols-2 md:gap-3">
           {devBook && devFirstPage && (
-            <Link
+            <BookCard
+              locale={locale}
               to="/$locale/$"
-              params={{ locale, _splat: `dev/${devFirstPage.slug}` }}
-              className="group focus-visible:outline-none"
-            >
-              <Card className="h-full gap-3 py-5 transition-colors group-hover:border-primary group-focus-visible:ring-2 group-focus-visible:ring-ring">
-                <CardHeader>
-                  <Code2 className="mb-2 size-6 text-primary" />
-                  <CardTitle>{devBook.label}</CardTitle>
-                  {devBook.description && (
-                    <CardDescription>{devBook.description}</CardDescription>
-                  )}
-                </CardHeader>
-              </Card>
-            </Link>
+              splat={`dev/${devFirstPage.slug}`}
+              icon={Code2}
+              title={devBook.label}
+              description={devBook.description}
+            />
           )}
-          <Link
+          <BookCard
+            locale={locale}
             to="/$locale/dev/api"
-            params={{ locale }}
-            className="group focus-visible:outline-none"
-          >
-            <Card className="h-full gap-3 py-5 transition-colors group-hover:border-primary group-focus-visible:ring-2 group-focus-visible:ring-ring">
-              <CardHeader>
-                <Braces className="mb-2 size-6 text-primary" />
-                <CardTitle>API Reference</CardTitle>
-                <CardDescription>
-                  rasenmaeher-api &amp; integration APIs (OpenAPI)
-                </CardDescription>
-              </CardHeader>
-            </Card>
-          </Link>
+            icon={Braces}
+            title="API Reference"
+            description="rasenmaeher-api & integration APIs (OpenAPI)"
+          />
         </div>
       </div>
     </div>

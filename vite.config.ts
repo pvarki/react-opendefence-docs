@@ -47,7 +47,7 @@ export default defineConfig({
         cleanupOutdatedCaches: true,
         runtimeCaching: [
           {
-            urlPattern: /^\/content\/images\//,
+            urlPattern: /^\/(content\/)?images\//,
             handler: "CacheFirst",
             options: {
               cacheName: "content-images",
