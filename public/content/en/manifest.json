@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "locale": "en",
-  "generatedAt": "2026-06-11T16:33:34.651Z",
+  "generatedAt": "2026-06-12T15:52:05.930Z",
   "collections": [
     {
       "slug": "deploy-app",
@@ -691,11 +691,18 @@
       "collection": "guides/tak-guide",
       "title": "Deploy App - TAK",
       "breadcrumb": [
+        "TAK Clients",
+        "ATAK",
+        "INTRODUCTION",
         "Deploy App - TAK"
       ],
       "path": "/content/en/pages/guides/tak-guide/deploy-app-tak-aFY9LCZCf0.json",
-      "updatedAt": "2026-03-08T05:03:57.916Z",
-      "order": 0
+      "updatedAt": "2026-06-12T15:51:07.655Z",
+      "order": 0,
+      "platform": "android",
+      "clientId": "atak-sGxUIXpQlU",
+      "chapterId": "introduction-2M0PRHydCl",
+      "chapterLabel": "INTRODUCTION"
     },
     {
       "id": "9870d106-c7bf-4602-a929-1a9fa4ec777c",
@@ -705,6 +712,7 @@
       "breadcrumb": [
         "TAK Clients",
         "ATAK",
+        "INTRODUCTION",
         "Start",
         "What is TAK?"
       ],
@@ -724,6 +732,7 @@
       "breadcrumb": [
         "TAK Clients",
         "ATAK",
+        "INTRODUCTION",
         "Start",
         "Start from Download"
       ],
@@ -743,6 +752,7 @@
       "breadcrumb": [
         "TAK Clients",
         "ATAK",
+        "INTRODUCTION",
         "Start",
         "Importing Server Connection"
       ],
@@ -762,6 +772,7 @@
       "breadcrumb": [
         "TAK Clients",
         "ATAK",
+        "INTRODUCTION",
         "Start",
         "Load ATAK Plugins"
       ],
@@ -781,6 +792,7 @@
       "breadcrumb": [
         "TAK Clients",
         "ATAK",
+        "USING ATAK FEATURES",
         "Basic Features",
         "Basic view, tools and toolbar"
       ],
@@ -800,6 +812,7 @@
       "breadcrumb": [
         "TAK Clients",
         "ATAK",
+        "USING ATAK FEATURES",
         "Basic Features",
         "Blue force tracking"
       ],
@@ -819,6 +832,7 @@
       "breadcrumb": [
         "TAK Clients",
         "ATAK",
+        "USING ATAK FEATURES",
         "Basic Features",
         "Feeds with Data Sync"
       ],
@@ -838,6 +852,7 @@
       "breadcrumb": [
         "TAK Clients",
         "ATAK",
+        "USING ATAK FEATURES",
         "Basic Features",
         "Point Dropper - Markers"
       ],
@@ -857,6 +872,7 @@
       "breadcrumb": [
         "TAK Clients",
         "ATAK",
+        "USING ATAK FEATURES",
         "Basic Features",
         "Point Dropper - Quick Pic"
       ],
@@ -876,6 +892,7 @@
       "breadcrumb": [
         "TAK Clients",
         "ATAK",
+        "USING ATAK FEATURES",
         "Basic Features",
         "GeoChat"
       ],
@@ -895,6 +912,7 @@
       "breadcrumb": [
         "TAK Clients",
         "ATAK",
+        "USING ATAK FEATURES",
         "Basic Features",
         "Clear Content"
       ],
@@ -914,6 +932,7 @@
       "breadcrumb": [
         "TAK Clients",
         "ATAK",
+        "USING ATAK FEATURES",
         "Advanced Features",
         "Downloading Maps for Offline use"
       ],
@@ -933,6 +952,7 @@
       "breadcrumb": [
         "TAK Clients",
         "ATAK",
+        "USING ATAK FEATURES",
         "Advanced Features",
         "Overlay Manager - How to manage the views"
       ],
@@ -952,6 +972,7 @@
       "breadcrumb": [
         "TAK Clients",
         "ATAK",
+        "USING ATAK FEATURES",
         "Advanced Features",
         "How to manage ATAK Tools and Toolbars"
       ],
@@ -971,6 +992,7 @@
       "breadcrumb": [
         "TAK Clients",
         "ATAK",
+        "USING ATAK FEATURES",
         "Advanced Features",
         "Create Routes and use VNS"
       ],
@@ -990,6 +1012,7 @@
       "breadcrumb": [
         "TAK Clients",
         "ATAK",
+        "USING ATAK FEATURES",
         "Advanced Features",
         "Create & Manage Feeds"
       ],
@@ -1009,6 +1032,7 @@
       "breadcrumb": [
         "TAK Clients",
         "ATAK",
+        "USING ATAK FEATURES",
         "Advanced Features",
         "Draw & share Plans"
       ],
@@ -1028,6 +1052,7 @@
       "breadcrumb": [
         "TAK Clients",
         "ATAK",
+        "USING ATAK FEATURES",
         "Advanced Features",
         "Lasso to add into Feed"
       ],
@@ -1047,6 +1072,7 @@
       "breadcrumb": [
         "TAK Clients",
         "ATAK",
+        "USING ATAK FEATURES",
         "Advanced Features",
         "Geofences"
       ],
@@ -1057,6 +1083,26 @@
       "clientId": "atak-sGxUIXpQlU",
       "chapterId": "advanced-features-w8JvOrLVwe",
       "chapterLabel": "Advanced Features"
+    },
+    {
+      "id": "46d6af66-24b1-48f2-be29-eba6d30b8326",
+      "slug": "uastool-HDZFE1QhVT",
+      "collection": "guides/tak-guide",
+      "title": "Uastool",
+      "breadcrumb": [
+        "TAK Clients",
+        "ATAK",
+        "USING ATAK FEATURES",
+        "Supported Plugins",
+        "Uastool"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/uastool-HDZFE1QhVT.json",
+      "updatedAt": "2026-04-12T10:06:09.700Z",
+      "order": 20,
+      "platform": "android",
+      "clientId": "atak-sGxUIXpQlU",
+      "chapterId": "supported-plugins-XdDLDnS5CE",
+      "chapterLabel": "Supported Plugins"
     },
     {
       "id": "0e075790-c86e-4330-9e1f-3d43298c5fce",
@@ -1071,7 +1117,7 @@
       ],
       "path": "/content/en/pages/guides/tak-guide/overview-CVNzKhRcKY.json",
       "updatedAt": "2026-04-12T10:05:02.164Z",
-      "order": 20,
+      "order": 21,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
       "chapterId": "usage-by-role-2F9bOBgUmG",
@@ -1091,11 +1137,11 @@
       ],
       "path": "/content/en/pages/guides/tak-guide/use-geochat-for-comms-s20PZmRGw8.json",
       "updatedAt": "2026-04-12T10:05:24.996Z",
-      "order": 21,
+      "order": 22,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
-      "chapterId": "usage-by-role-2F9bOBgUmG",
-      "chapterLabel": "Usage by Role"
+      "chapterId": "fighter-Jaxg9FOHAs",
+      "chapterLabel": "Fighter"
     },
     {
       "id": "c64f9f4e-3647-40a8-b468-20adc6db40c3",
@@ -1111,11 +1157,11 @@
       ],
       "path": "/content/en/pages/guides/tak-guide/use-recon-feed-1eKYHfIBys.json",
       "updatedAt": "2026-04-12T10:05:30.082Z",
-      "order": 22,
+      "order": 23,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
-      "chapterId": "usage-by-role-2F9bOBgUmG",
-      "chapterLabel": "Usage by Role"
+      "chapterId": "fighter-Jaxg9FOHAs",
+      "chapterLabel": "Fighter"
     },
     {
       "id": "7304adaf-3380-4d82-b27c-57f4b362887e",
@@ -1131,30 +1177,11 @@
       ],
       "path": "/content/en/pages/guides/tak-guide/recon-feed-management-y1O0x1g2sf.json",
       "updatedAt": "2026-02-28T11:14:24.245Z",
-      "order": 23,
-      "platform": "android",
-      "clientId": "atak-sGxUIXpQlU",
-      "chapterId": "usage-by-role-2F9bOBgUmG",
-      "chapterLabel": "Usage by Role"
-    },
-    {
-      "id": "46d6af66-24b1-48f2-be29-eba6d30b8326",
-      "slug": "uastool-HDZFE1QhVT",
-      "collection": "guides/tak-guide",
-      "title": "Uastool",
-      "breadcrumb": [
-        "TAK Clients",
-        "ATAK",
-        "Supported Plugins",
-        "Uastool"
-      ],
-      "path": "/content/en/pages/guides/tak-guide/uastool-HDZFE1QhVT.json",
-      "updatedAt": "2026-04-12T10:06:09.700Z",
       "order": 24,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
-      "chapterId": "supported-plugins-XdDLDnS5CE",
-      "chapterLabel": "Supported Plugins"
+      "chapterId": "command-post-jEe9wSs29A",
+      "chapterLabel": "Command Post"
     },
     {
       "id": "28903747-f31c-424e-b7e5-7a3a70cd6648",
@@ -1167,7 +1194,7 @@
         "Troubleshooting"
       ],
       "path": "/content/en/pages/guides/tak-guide/troubleshooting-IC3Nd5qZHr.json",
-      "updatedAt": "2026-04-12T10:06:13.891Z",
+      "updatedAt": "2026-06-12T15:51:48.189Z",
       "order": 25,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",

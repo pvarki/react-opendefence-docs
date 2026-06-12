@@ -25,3 +25,4 @@ coverage/
 # Logs
 *.log
 pnpm-debug.log*
+backups/
