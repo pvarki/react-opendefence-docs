@@ -1,64 +1,44 @@
 import { useState } from "react";
-import { Link, useParams } from "@tanstack/react-router";
+import {
+  Link,
+  useCanGoBack,
+  useParams,
+  useRouter,
+} from "@tanstack/react-router";
 import { useTranslation } from "react-i18next";
 import {
   BookOpen,
+  ChevronLeft,
   House,
   MonitorSmartphone,
   Search,
-  Smartphone,
   TableOfContents,
-  Zap,
 } from "lucide-react";
-import { DEFAULT_LOCALE } from "@shared/content-schema";
+import { DEFAULT_LOCALE, normalizeLocale } from "@shared/content-schema";
 import { PLATFORM_LABELS, useReadingView } from "@/lib/platform";
 import { resolveClient } from "@/lib/content/neighbors";
 import { useReaderData } from "@/lib/useReaderData";
 import { ContentsSheet } from "@/components/shell/ContentsDrawer";
+import { SiteContentsSheet } from "@/components/shell/SiteContentsSheet";
 import { PlatformSheet } from "@/components/shell/PlatformSheet";
 
-const HOME_TABS = [
-  {
-    to: "/$locale",
-    splat: undefined,
-    icon: House,
-    key: "nav.home",
-    exact: true,
-  },
-  {
-    to: "/$locale/$",
-    splat: "deploy-app",
-    icon: Smartphone,
-    key: "nav.deployApp",
-  },
-  {
-    to: "/$locale/guides",
-    splat: undefined,
-    icon: BookOpen,
-    key: "nav.guides",
-  },
-  {
-    to: "/$locale/advanced",
-    splat: undefined,
-    icon: Zap,
-    key: "nav.advanced",
-  },
-  { to: "/$locale/search", splat: undefined, icon: Search, key: "nav.search" },
-] as const;
-
 /**
- * Mobile bottom bar, Wikipedia-style. App tabs at home/shelves; inside a
- * book: Home / Search / Platform / Guides, and a larger border-separated
- * Contents button RIGHTMOST — under the right thumb. No back button: swiping
- * right is back. Chapters live behind Contents (there are too many for
- * chips) and on the book cover's full TOC.
+ * Mobile bottom bar — the SAME five controls in the same places everywhere:
+ * Contents (leftmost, larger, border-separated) · Guides · Home · Platform ·
+ * Search. Phones ride in the right hand, so Contents and the floating back
+ * button above it sit on the LEFT, clear of the thumb's resting side.
+ * Contents is context-aware: the current book's TOC inside a reader, the
+ * site-wide TOC elsewhere.
  */
 export function TabBar() {
   const { t } = useTranslation();
   const params = useParams({ strict: false });
   const locale = params.locale ?? DEFAULT_LOCALE;
+  const contentLocale = normalizeLocale(locale) ?? DEFAULT_LOCALE;
   const reader = useReaderData();
   const view = useReadingView();
+  const router = useRouter();
+  const canGoBack = useCanGoBack();
   const [contentsOpen, setContentsOpen] = useState(false);
   const [platformOpen, setPlatformOpen] = useState(false);
 
@@ -68,22 +48,56 @@ export function TabBar() {
   const platformLabel = activeClient?.label ?? PLATFORM_LABELS[view.platform];
 
   const itemClass =
-    "flex flex-1 flex-col items-center justify-center gap-0.5 text-muted-foreground transition-colors";
+    "flex flex-1 flex-col items-center justify-center gap-0.5 text-muted-foreground transition-colors [&.active]:text-primary";
 
   return (
-    <nav
-      aria-label={t("nav.home")}
-      className="fixed inset-x-0 bottom-0 z-50 border-t border-border bg-card pb-[env(safe-area-inset-bottom)] md:hidden"
-    >
-      {reader ? (
+    <>
+      {/* History back, floating above Home — reachable with the thumb. */}
+      {canGoBack && (
+        <button
+          type="button"
+          onClick={() => router.history.back()}
+          aria-label={t("nav.back")}
+          className="fixed bottom-[calc(var(--tabbar-h)+0.75rem)] left-3 z-50 flex size-10 items-center justify-center rounded-full border border-border bg-card/95 text-muted-foreground shadow-lg backdrop-blur md:hidden"
+        >
+          <ChevronLeft className="size-5" />
+        </button>
+      )}
+
+      <nav
+        aria-label={t("nav.home")}
+        className="fixed inset-x-0 bottom-0 z-50 border-t border-border bg-card pb-[env(safe-area-inset-bottom)] md:hidden"
+      >
         <div className="flex h-14 items-stretch">
-          <Link to="/$locale" params={{ locale }} className={itemClass}>
+          <button
+            type="button"
+            onClick={() => setContentsOpen(true)}
+            className="flex shrink-0 flex-col items-center justify-center gap-0.5 border-r border-border px-6 text-foreground"
+            aria-label={t("nav.contents")}
+          >
+            <TableOfContents className="size-6 text-primary" />
+            <span className="text-[11px] leading-none font-medium">
+              {t("nav.contents")}
+            </span>
+          </button>
+          <Link
+            to="/$locale/guides"
+            params={{ locale }}
+            className={itemClass}
+            activeProps={{ "aria-current": "page" }}
+          >
+            <BookOpen className="size-5" />
+            <span className="text-[10px] leading-none">{t("nav.guides")}</span>
+          </Link>
+          <Link
+            to="/$locale"
+            params={{ locale }}
+            activeOptions={{ exact: true }}
+            className={itemClass}
+            activeProps={{ "aria-current": "page" }}
+          >
             <House className="size-5" />
             <span className="text-[10px] leading-none">{t("nav.home")}</span>
-          </Link>
-          <Link to="/$locale/search" params={{ locale }} className={itemClass}>
-            <Search className="size-5" />
-            <span className="text-[10px] leading-none">{t("nav.search")}</span>
           </Link>
           <button
             type="button"
@@ -96,22 +110,18 @@ export function TabBar() {
               {platformLabel}
             </span>
           </button>
-          <Link to="/$locale/guides" params={{ locale }} className={itemClass}>
-            <BookOpen className="size-5" />
-            <span className="text-[10px] leading-none">{t("nav.guides")}</span>
-          </Link>
-          <button
-            type="button"
-            onClick={() => setContentsOpen(true)}
-            className="flex shrink-0 flex-col items-center justify-center gap-0.5 border-l border-border px-6 text-foreground"
-            aria-label={t("nav.contents")}
+          <Link
+            to="/$locale/search"
+            params={{ locale }}
+            className={itemClass}
+            activeProps={{ "aria-current": "page" }}
           >
-            <TableOfContents className="size-6 text-primary" />
-            <span className="text-[11px] leading-none font-medium">
-              {t("nav.contents")}
-            </span>
-          </button>
+            <Search className="size-5" />
+            <span className="text-[10px] leading-none">{t("nav.search")}</span>
+          </Link>
+        </div>
 
+        {reader ? (
           <ContentsSheet
             open={contentsOpen}
             onOpenChange={setContentsOpen}
@@ -121,30 +131,20 @@ export function TabBar() {
             currentSlug={reader.slug}
             clientId={activeClient?.id}
           />
-          <PlatformSheet
-            open={platformOpen}
-            onOpenChange={setPlatformOpen}
-            locale={locale}
-            reader={reader}
+        ) : (
+          <SiteContentsSheet
+            open={contentsOpen}
+            onOpenChange={setContentsOpen}
+            locale={contentLocale}
           />
-        </div>
-      ) : (
-        <div className="grid h-14 grid-cols-5">
-          {HOME_TABS.map(({ to, splat, icon: Icon, key, ...rest }) => (
-            <Link
-              key={key}
-              to={to}
-              params={splat ? { locale, _splat: splat } : { locale }}
-              activeOptions={{ exact: "exact" in rest && rest.exact }}
-              className="flex flex-col items-center justify-center gap-0.5 text-muted-foreground transition-colors [&.active]:text-primary"
-              activeProps={{ "aria-current": "page" }}
-            >
-              <Icon className="size-5" />
-              <span className="text-[10px] leading-none">{t(key)}</span>
-            </Link>
-          ))}
-        </div>
-      )}
-    </nav>
+        )}
+        <PlatformSheet
+          open={platformOpen}
+          onOpenChange={setPlatformOpen}
+          locale={locale}
+          reader={reader}
+        />
+      </nav>
+    </>
   );
 }

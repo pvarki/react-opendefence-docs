@@ -185,17 +185,38 @@ test.describe("book swipe navigation", () => {
 });
 
 test.describe("contextual bottom bar (mobile)", () => {
-  test("in-book bar: Home, Search, Platform, Guides + larger Contents rightmost", async ({
+  test("the same five controls everywhere: Contents left, then Guides/Home/Platform/Search", async ({
     page,
   }, testInfo) => {
     test.skip(testInfo.project.name !== "mobile", "bottom bar is mobile-only");
-    await open(page, FIRST);
-    const bar = page.locator("nav.fixed");
-    await expect(bar.getByRole("link", { name: "Home" })).toBeVisible();
-    await expect(bar.getByRole("link", { name: "Search" })).toBeVisible();
-    await expect(bar.getByRole("link", { name: "Guides" })).toBeVisible();
-    await expect(bar.getByRole("button", { name: "Platform" })).toBeVisible();
-    await expect(bar.getByRole("button", { name: "Contents" })).toBeVisible();
+    for (const url of ["/en", FIRST]) {
+      await page.goto(url);
+      const bar = page.locator("nav.fixed");
+      await expect(bar.getByRole("button", { name: "Contents" })).toBeVisible();
+      await expect(bar.getByRole("link", { name: "Guides" })).toBeVisible();
+      await expect(bar.getByRole("link", { name: "Home" })).toBeVisible();
+      await expect(bar.getByRole("button", { name: "Platform" })).toBeVisible();
+      await expect(bar.getByRole("link", { name: "Search" })).toBeVisible();
+      // Contents is the LEFTMOST control (thumb-clear on right-handed grip).
+      const contentsBox = await bar
+        .getByRole("button", { name: "Contents" })
+        .boundingBox();
+      const guidesBox = await bar
+        .getByRole("link", { name: "Guides" })
+        .boundingBox();
+      if (!contentsBox || !guidesBox) throw new Error("bar not visible");
+      expect(contentsBox.x).toBeLessThan(guidesBox.x);
+    }
+  });
+
+  test("contents outside a reader opens the site-wide TOC", async ({
+    page,
+  }, testInfo) => {
+    test.skip(testInfo.project.name !== "mobile", "bottom bar is mobile-only");
+    await page.goto("/en");
+    await page.getByRole("button", { name: "Contents" }).click();
+    await expect(page.getByRole("link", { name: "TAK Guide" })).toBeVisible();
+    await expect(page.getByRole("link", { name: "TAK Wiki" })).toBeVisible();
   });
 
   test("platform sheet picks a platform and lands on its first page", async ({
@@ -335,26 +356,28 @@ test.describe("search", () => {
   });
 });
 
-test.describe("advanced section and back button", () => {
-  test("wikis live under Advanced; bottom tab reads Advanced", async ({
+test.describe("unified guides page and back button", () => {
+  test("guides page groups every book under toporg-style sections", async ({
     page,
-  }, testInfo) => {
-    test.skip(testInfo.project.name !== "mobile", "asserts mobile tabs");
-    await page.goto("/en");
-    const bar = page.locator("nav.fixed");
-    await expect(bar.getByRole("link", { name: "Advanced" })).toBeVisible();
-    await bar.getByRole("link", { name: "Advanced" }).click();
-    await expect(page).toHaveURL("/en/advanced");
-    await expect(page.getByRole("link", { name: /TAK Wiki/ })).toBeVisible();
+  }) => {
+    await page.goto("/en/guides");
+    const main = page.locator("main");
+    await expect(main.getByText("Products", { exact: true })).toBeVisible();
+    await expect(main.getByText("Advanced", { exact: true })).toBeVisible();
+    await expect(main.getByRole("link", { name: /TAK Guide/ })).toBeVisible();
+    await expect(main.getByRole("link", { name: /TAK Wiki/ })).toBeVisible();
+    await expect(
+      main.getByRole("link", { name: /API Reference/ }),
+    ).toBeVisible();
   });
 
-  test("header back button returns to the earlier place", async ({
+  test("floating back button above Contents returns to the earlier place", async ({
     page,
   }, testInfo) => {
     test.skip(testInfo.project.name !== "mobile", "back button is mobile-only");
     await page.goto("/en");
     await page.getByRole("link", { name: /power user/i }).click();
-    await expect(page).toHaveURL("/en/advanced");
+    await expect(page).toHaveURL("/en/guides");
     await page.getByRole("button", { name: "Back" }).click();
     await expect(page).toHaveURL("/en");
   });

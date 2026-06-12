@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import type { LucideIcon } from "lucide-react";
 import type { CardImage } from "@/lib/cardImages";
+import { cn } from "@/lib/utils";
 import { withBase } from "@/lib/base";
 
 interface BookCardProps {
@@ -13,6 +14,8 @@ interface BookCardProps {
   description?: string;
   /** Optional backdrop (public/images/...), tinted so text stays readable. */
   image?: CardImage;
+  /** "tall" for sparse pages (home); default stays shelf-compact. */
+  size?: "default" | "tall";
 }
 
 /**
@@ -28,6 +31,7 @@ export function BookCard({
   title,
   description,
   image,
+  size = "default",
 }: BookCardProps) {
   return (
     <Link
@@ -35,7 +39,12 @@ export function BookCard({
       params={splat ? { locale, _splat: splat } : { locale }}
       className="group block focus-visible:outline-none"
     >
-      <div className="relative flex h-[4.25rem] items-center gap-3 overflow-hidden rounded-xl border border-border bg-card px-3.5 transition-colors group-hover:border-primary group-focus-visible:ring-2 group-focus-visible:ring-ring md:h-20 md:px-4">
+      <div
+        className={cn(
+          "relative flex items-center gap-3 overflow-hidden rounded-xl border border-border bg-card px-3.5 transition-colors group-hover:border-primary group-focus-visible:ring-2 group-focus-visible:ring-ring md:px-4",
+          size === "tall" ? "h-24 md:h-28" : "h-[4.25rem] md:h-20",
+        )}
+      >
         {image &&
           (image.logo ? (
             // Brand marks: contained on the right, faint — never stretched.
