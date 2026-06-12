@@ -11,6 +11,27 @@ jobs:
     with:
       # Versioning is managed by release-please, not bump-my-version.
       run-bumpversion: false
+      # prek runs in the pre-commit job below instead: the org runner does a
+      # bare checkout, but our local hooks need node_modules to execute.
+      run-prek: false
+
+  pre-commit:
+    runs-on: ubuntu-latest
+    env:
+      # Branch-protection hook is meaningless on a CI checkout of main; the
+      # skip is reported in prek's output, not hidden.
+      SKIP: ${{ github.event_name == 'push' && 'no-commit-to-branch' || '' }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+      - name: Run all pre-commit hooks (same runner as the org gate)
+        uses: j178/prek-action@v2
 
   quality:
     runs-on: ubuntu-latest
