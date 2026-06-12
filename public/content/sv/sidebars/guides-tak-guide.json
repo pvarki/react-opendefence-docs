@@ -2,5 +2,12 @@
   "schemaVersion": 1,
   "label": "TAK Guide",
   "slug": "guides/tak-guide",
-  "items": []
+  "items": [
+    {
+      "type": "doc",
+      "id": "platforms-yfB75yaGEK",
+      "label": "Platforms",
+      "slug": "platforms-yfB75yaGEK"
+    }
+  ]
 }

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "locale": "sv",
-  "generatedAt": "2026-06-12T15:52:05.930Z",
+  "generatedAt": "2026-06-12T22:59:44.564Z",
   "collections": [
     {
       "slug": "deploy-app",
@@ -13,7 +13,52 @@
         {
           "id": "android-yFEMlNyGOI",
           "label": "Android",
-          "platform": "android"
+          "platform": "android",
+          "os": "android"
+        }
+      ]
+    },
+    {
+      "slug": "guides/tak-guide",
+      "label": "TAK Guide",
+      "description": "Learn how to use TAK for situational awareness",
+      "section": "guides",
+      "order": 1,
+      "clients": [
+        {
+          "id": "atak-sGxUIXpQlU",
+          "label": "ATAK",
+          "platform": "android",
+          "os": "android",
+          "isProduct": true
+        },
+        {
+          "id": "wintak-w8mKUfaRBP",
+          "label": "WinTAK",
+          "platform": "windows",
+          "os": "windows",
+          "isProduct": true
+        },
+        {
+          "id": "itak-bwDYWvqdnY",
+          "label": "iTAK",
+          "platform": "ios",
+          "os": "ios",
+          "isProduct": true
+        },
+        {
+          "id": "tak-tracker-android-JCZw3YH2nW",
+          "label": "TAK Tracker - Android",
+          "platform": "android",
+          "os": "android",
+          "isProduct": true
+        },
+        {
+          "id": "tak-tracker-apple-PmHvleNK0F",
+          "label": "TAK Tracker - Apple",
+          "platform": "ios",
+          "os": "ios",
+          "isProduct": true
         }
       ]
     },
@@ -22,28 +67,28 @@
       "label": "MTX Guide",
       "description": "Learn how to stream and view video from drones and phones",
       "section": "guides",
-      "order": 1
+      "order": 2
     },
     {
       "slug": "guides/matrix-guide",
       "label": "Matrix Guide",
       "description": "Learn how to use Matrix for secure messaging with Deploy App",
       "section": "guides",
-      "order": 2
+      "order": 3
     },
     {
       "slug": "guides/cryptpad-guide",
       "label": "CryptPad Guide",
       "description": "Learn how to share files and work together with CryptPad",
       "section": "guides",
-      "order": 3
+      "order": 4
     },
     {
       "slug": "wikis/tak",
       "label": "TAK Wiki",
       "description": "TAK technical reference",
       "section": "wikis",
-      "order": 4,
+      "order": 5,
       "clients": [
         {
           "id": "atak-android-tak-WLqt5LNmVx",
@@ -62,14 +107,14 @@
       "label": "MTX Wiki",
       "description": "MTX technical reference",
       "section": "wikis",
-      "order": 5
+      "order": 6
     },
     {
       "slug": "dev",
       "label": "For Developers",
       "description": "Developer-focused documentation",
       "section": "dev",
-      "order": 6
+      "order": 7
     }
   ],
   "pages": [
@@ -79,6 +124,7 @@
       "collection": "deploy-app",
       "title": "Gå med i en Deploy App",
       "breadcrumb": [
+        "Platforms",
         "Android",
         "Användarguide",
         "Gå med i en Deploy App"
@@ -97,6 +143,7 @@
       "collection": "deploy-app",
       "title": "Använda applikationer",
       "breadcrumb": [
+        "Platforms",
         "Android",
         "Användarguide",
         "Använda applikationer"
@@ -115,6 +162,7 @@
       "collection": "deploy-app",
       "title": "Gränssnitt",
       "breadcrumb": [
+        "Platforms",
         "Android",
         "Användarguide",
         "Gränssnitt"
@@ -133,6 +181,7 @@
       "collection": "deploy-app",
       "title": "Första inloggningen",
       "breadcrumb": [
+        "Platforms",
         "Android",
         "Administratörsguide",
         "Första inloggningen"
@@ -151,6 +200,7 @@
       "collection": "deploy-app",
       "title": "Lägga till användare",
       "breadcrumb": [
+        "Platforms",
         "Android",
         "Administratörsguide",
         "Lägga till användare"
@@ -169,6 +219,7 @@
       "collection": "deploy-app",
       "title": "Hantera användare",
       "breadcrumb": [
+        "Platforms",
         "Android",
         "Administratörsguide",
         "Hantera användare"
@@ -187,6 +238,7 @@
       "collection": "deploy-app",
       "title": "Åtkomst till externa tjänster",
       "breadcrumb": [
+        "Platforms",
         "Android",
         "Administratörsguide",
         "Åtkomst till externa tjänster"
@@ -198,6 +250,18 @@
       "clientId": "android-yFEMlNyGOI",
       "chapterId": "administratorsguide-iLjfd22kyb",
       "chapterLabel": "Administratörsguide"
+    },
+    {
+      "id": "8c943eff-7621-412d-ace3-021358ce30e7",
+      "slug": "platforms-yfB75yaGEK",
+      "collection": "guides/tak-guide",
+      "title": "Platforms",
+      "breadcrumb": [
+        "Platforms"
+      ],
+      "path": "/content/sv/pages/guides/tak-guide/platforms-yfB75yaGEK.json",
+      "updatedAt": "2026-06-12T21:46:18.204Z",
+      "order": 0
     },
     {
       "id": "e67c3a42-502a-4c85-b255-2fbf23fde23b",
@@ -302,6 +366,18 @@
       "chapterLabel": "Publicera streamen"
     },
     {
+      "id": "b6280ed6-e647-4b1d-91ca-8196cbfd7d19",
+      "slug": "platforms-duI5b47K3i",
+      "collection": "guides/matrix-guide",
+      "title": "Platforms",
+      "breadcrumb": [
+        "Platforms"
+      ],
+      "path": "/content/sv/pages/guides/matrix-guide/platforms-duI5b47K3i.json",
+      "updatedAt": "2026-06-12T21:46:19.261Z",
+      "order": 0
+    },
+    {
       "id": "a6bcb3a6-5500-46b3-9856-4e179ad45e64",
       "slug": "deploy-app-matrix-srCgmEoYC5",
       "collection": "guides/matrix-guide",
@@ -311,7 +387,7 @@
       ],
       "path": "/content/sv/pages/guides/matrix-guide/deploy-app-matrix-srCgmEoYC5.json",
       "updatedAt": "2026-05-05T15:19:48.320Z",
-      "order": 0
+      "order": 1
     },
     {
       "id": "79446a47-2823-43c8-bd72-1787cc2496c6",

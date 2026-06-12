@@ -24,7 +24,7 @@ async function post(path: string, body: object): Promise<any> {
     },
     body: JSON.stringify(body),
   });
-  const data = await res.json();
+  const data = await res.json() as Record<string, unknown>;
   if (!data.ok && data.status !== 200) {
     throw new Error(`API error ${path}: ${JSON.stringify(data)}`);
   }

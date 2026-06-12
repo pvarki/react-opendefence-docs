@@ -66,6 +66,7 @@ import {
 } from "../config/collections";
 import {
   LOCALES,
+  DEFAULT_LOCALE,
   SCHEMA_VERSION,
   PageDocSchema,
   LocaleManifestSchema,
@@ -900,6 +901,7 @@ async function main() {
   const manifestSpinner = createSpinner("Writing locale manifests", args.ci);
 
   const generatedAt = new Date().toISOString();
+  const enClientsMap = syncedClients.get(DEFAULT_LOCALE as Locale);
   const newManifests = new Map<Locale, LocaleManifest>();
   for (const locale of LOCALES) {
     const manifest = LocaleManifestSchema.parse(
@@ -908,6 +910,7 @@ async function main() {
         collections: ALL_COLLECTIONS,
         syncedPages: syncedBooks.get(locale)!,
         syncedClients: syncedClients.get(locale)!,
+        enClients: locale !== DEFAULT_LOCALE ? enClientsMap : undefined,
         previous: previousManifests.get(locale),
         generatedAt,
       }),
