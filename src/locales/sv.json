@@ -17,7 +17,7 @@
     "userCard": "Jag använder Deploy App",
     "userCardDesc": "Kom igång, logga in och använd tjänster i fält",
     "guidesCard": "Jag behöver en produktguide",
-    "guidesCardDesc": "Steg-för-steg-guider för TAK, MTX, Matrix och CryptPad",
+    "guidesCardDesc": "Steg-för-steg-guider för officiella produktintegrationer som TAK",
     "devCard": "Jag utvecklar eller driftar",
     "devCardDesc": "Arkitektur, integrationer, API-referens, driftguider",
     "continueReading": "Fortsätt läsa",
@@ -63,5 +63,16 @@
   "sections": {
     "products": "Produkter",
     "developer": "Utvecklare"
+  },
+  "footer": {
+    "lead": "OpenDefence är ett FDF-styrt nationellt försvarsprojekt med öppen källkod som syftar till att erbjuda soldater C2-tjänster med förmåga till multidomänoperationer på ett enkelt och interoperabelt sätt.",
+    "tellMore": "Berätta mer",
+    "core": "Kärnan i stacken är Deploy App.",
+    "easyTitle": "Målet: enkel åtkomst",
+    "easyBody": "Den ger soldater möjlighet att enkelt dela och få tillgång till sin enhets tjänster.",
+    "interopTitle": "Målet: interoperabilitet",
+    "interopBody": "För oss är interoperabilitet inte en marknadsföringsslogan. Deploy App erbjuder utvecklare ett integrationsgränssnitt: integrera din produkt i appen, så kan vi distribuera den till soldater — och den fungerar tillsammans med de andra produkterna.",
+    "maintain": "OpenDefence utvecklar och underhåller några officiella produktintegrationer och användarguider, som visas här. Produkterna görs av sina ursprungliga utvecklare, till exempel TAK Product Center.",
+    "readMore": "Läs mer på vår webbplats:"
   }
 }

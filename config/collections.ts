@@ -30,7 +30,7 @@ export const MAIN_COLLECTION: CollectionConfig = {
   label: "Deploy App",
   slug: "deploy-app",
   section: "deploy-app",
-  description: "Main application documentation",
+  description: "Learn how to join and add users to a server",
 };
 
 export const GUIDE_COLLECTIONS: CollectionConfig[] = [
@@ -39,28 +39,28 @@ export const GUIDE_COLLECTIONS: CollectionConfig[] = [
     label: "TAK Guide",
     slug: "guides/tak-guide",
     section: "guides",
-    description: "TAK platform guide",
+    description: "Learn how to use TAK for situational awareness",
   },
   {
     collectionId: "2821f4e0-273d-42e9-a410-2059dd43e35c",
     label: "MTX Guide",
     slug: "guides/mtx-guide",
     section: "guides",
-    description: "MTX platform guide",
+    description: "Learn how to stream and view video from drones and phones",
   },
   {
     collectionId: "197bf6c2-f095-4a31-af4d-7c0cef365ee4",
     label: "Matrix Guide",
     slug: "guides/matrix-guide",
     section: "guides",
-    description: "Matrix platform guide",
+    description: "Learn how to use Matrix for secure messaging with Deploy App",
   },
   {
     collectionId: "1fa15405-4e21-4d83-be45-f0d263e2c790",
     label: "CryptPad Guide",
     slug: "guides/cryptpad-guide",
     section: "guides",
-    description: "CryptPad platform guide",
+    description: "Learn how to share files and work together with CryptPad",
   },
 ];
 

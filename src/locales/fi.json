@@ -17,7 +17,7 @@
     "userCard": "Käytän Deploy Appia",
     "userCardDesc": "Aloita, kirjaudu ja käytä palveluita kentällä",
     "guidesCard": "Tarvitsen tuoteoppaan",
-    "guidesCardDesc": "TAK-, MTX-, Matrix- ja CryptPad-oppaat vaihe vaiheelta",
+    "guidesCardDesc": "Vaiheittaiset ohjeet virallisiin tuoteintegraatioihin, kuten TAK",
     "devCard": "Kehitän tai operoin",
     "devCardDesc": "Arkkitehtuuri, integraatiot, API-referenssi, ohjeet",
     "continueReading": "Jatka lukemista",
@@ -63,5 +63,16 @@
   "sections": {
     "products": "Tuotteet",
     "developer": "Kehittäjät"
+  },
+  "footer": {
+    "lead": "OpenDefence on Puolustusvoimien ohjaama kansallisen puolustuksen avoimen lähdekoodin hanke, jonka tavoitteena on tarjota sotilaille monialueoperaatioihin kykeneviä johtamispalveluita helposti ja yhteentoimivasti.",
+    "tellMore": "Kerro lisää",
+    "core": "Pinon ydin on Deploy App.",
+    "easyTitle": "Tavoitteena helppo pääsy",
+    "easyBody": "Se antaa sotilaille mahdollisuuden jakaa ja saavuttaa yksikkönsä palvelut helposti.",
+    "interopTitle": "Tavoitteena yhteentoimivuus",
+    "interopBody": "Meille yhteentoimivuus ei ole markkinointislogan. Deploy App tarjoaa kehittäjille integraatiorajapinnan: integroi tuotteesi sovellukseen, niin voimme jakaa sen sotilaille — toimimaan yhdessä muiden tuotteiden kanssa.",
+    "maintain": "OpenDefence kehittää ja ylläpitää muutamia virallisia tuoteintegraatioita ja käyttöohjeita, kuten tällä sivustolla. Tuotteet kehittävät niiden alkuperäiset kehittäjät, kuten TAK Product Center.",
+    "readMore": "Lue lisää sivustollamme:"
   }
 }

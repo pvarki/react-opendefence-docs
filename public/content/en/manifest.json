@@ -6,7 +6,7 @@
     {
       "slug": "deploy-app",
       "label": "Deploy App",
-      "description": "Main application documentation",
+      "description": "Learn how to join and add users to a server",
       "section": "deploy-app",
       "order": 0,
       "clients": [
@@ -40,7 +40,7 @@
     {
       "slug": "guides/tak-guide",
       "label": "TAK Guide",
-      "description": "TAK platform guide",
+      "description": "Learn how to use TAK for situational awareness",
       "section": "guides",
       "order": 1,
       "clients": [
@@ -74,21 +74,21 @@
     {
       "slug": "guides/mtx-guide",
       "label": "MTX Guide",
-      "description": "MTX platform guide",
+      "description": "Learn how to stream and view video from drones and phones",
       "section": "guides",
       "order": 2
     },
     {
       "slug": "guides/matrix-guide",
       "label": "Matrix Guide",
-      "description": "Matrix platform guide",
+      "description": "Learn how to use Matrix for secure messaging with Deploy App",
       "section": "guides",
       "order": 3
     },
     {
       "slug": "guides/cryptpad-guide",
       "label": "CryptPad Guide",
-      "description": "CryptPad platform guide",
+      "description": "Learn how to share files and work together with CryptPad",
       "section": "guides",
       "order": 4
     },

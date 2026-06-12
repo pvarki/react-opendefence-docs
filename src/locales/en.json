@@ -17,7 +17,7 @@
     "userCard": "I use Deploy App",
     "userCardDesc": "Get started, log in, use products in the field",
     "guidesCard": "I need a product guide",
-    "guidesCardDesc": "TAK, MTX, Matrix and CryptPad step-by-step guides",
+    "guidesCardDesc": "Step-by-step guides for official product integrations like TAK",
     "devCard": "I develop or operate",
     "devCardDesc": "Architecture, integrations, API reference, runbooks",
     "continueReading": "Continue reading",
@@ -63,5 +63,16 @@
   "sections": {
     "products": "Products",
     "developer": "Developer"
+  },
+  "footer": {
+    "lead": "OpenDefence is an FDF-guided national defence open-source project that aims to offer multi-domain-operation-capable C2 services to soldiers in an easy and interoperable way.",
+    "tellMore": "Tell me more",
+    "core": "The core of the stack is Deploy App.",
+    "easyTitle": "Goal of easy access",
+    "easyBody": "It gives soldiers the ability to easily share and gain access to their unit's services.",
+    "interopTitle": "Goal of interoperability",
+    "interopBody": "For us, interoperability is not a marketing slogan. Deploy App offers developers an integration interface: integrate your product into the app, and we can deploy it to soldiers — working together with the other products.",
+    "maintain": "OpenDefence develops and maintains a couple of official product integrations and user guides, as shown here. The products themselves are made by their original developers, such as the TAK Product Center.",
+    "readMore": "Read more at our landing page:"
   }
 }
