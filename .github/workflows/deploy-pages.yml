@@ -30,6 +30,11 @@ jobs:
       # the build needs no Outline secrets.
       - name: Build
         run: pnpm build
+      # enablement: turns Pages on (build type "workflow") on first run, so
+      # deploys work without a manual Settings step.
+      - uses: actions/configure-pages@v5
+        with:
+          enablement: true
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
