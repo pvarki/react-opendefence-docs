@@ -82,5 +82,52 @@
   "contents": {
     "siteTitle": "Sivuston sisältö",
     "guidesTitle": "Saatavilla olevat oppaat"
+  },
+  "guideFooter": {
+    "maintainedBy": "Tämän integraation kehittää ja ylläpitää OpenDefence.",
+    "tak-guide": {
+      "lead": "TAK (Team Awareness Kit) on Yhdysvaltain hallituksen taistelutestattua tilannekuvaalusta, joka antaa sotilaille jaetun operatiivisen kuvan Android-, iOS- ja Windows-laitteiden välillä kentällä.",
+      "core": "OpenDefencen TAK-integraatio mahdollistaa TAK-palvelinten käyttöönoton Deploy Appin kautta ja tuo vaiheittaiset ohjeet suoraan sotilaiden käyttöön — kattaen asiakasohjelmiston asennuksen, palvelimen konfiguraation ja päivittäisen käytön.",
+      "goal1Title": "Yhteinen operatiivinen kuva",
+      "goal1Body": "TAK pitää kaikki yksikön jäsenet samalla kartalla reaaliajassa. OpenDefencen integraatio varmistaa, että palvelinpuoli on asetettu oikein ja yhtenäisesti niin, että kuva on aina tarkka kun se eniten merkitsee.",
+      "goal2Title": "Monialustatuki",
+      "goal2Body": "ATAK:lla, iTAK:lla ja WinTAK:lla on omat asennusvirtansa. Tämä opas käy läpi jokaisen asiakkaan, jotta yksikään sotilas ei jää jälkeen laitteestaan riippumatta.",
+      "goal3Title": "Kenttäkelpoinen laatu",
+      "goal3Body": "Jokainen tämän oppaan vaihe on validoitu todellisissa käyttöönottotilanteissa. Mitään ei sisällytetä, ellei se toimi luotettavasti operatiivisissa olosuhteissa.",
+      "copyright": "TAK: © TAK Product Center, U.S. Government organization"
+    },
+    "mtx-guide": {
+      "lead": "MediaMTX on riippumaton mediapalvelin ja välityspalvelin, joka käsittelee RTSP-, RTMP-, HLS-, WebRTC- ja SRT-striimejä — suunniteltu viiveherkkään videoon kenttäolosuhteissa.",
+      "core": "OpenDefencen MediaMTX-integraatio tarjoaa Deploy App -yhteensopivan mediapalvelimen käyttöönoton ja tiiviin oppaan kenttäkameroiden livevideon välittämiseen sotilaiden laitteille mahdollisimman vähällä konfiguraatiolla.",
+      "goal1Title": "Pieni viive",
+      "goal1Body": "Alle sekunnin viive on ratkaisevaa, kun lähetys tulee UAV:lta kiistanalueella. MediaMTX saavuttaa tämän oletuksena; integraatio pitää konfigurointipolun mahdollisimman lyhyenä.",
+      "goal2Title": "Protokollajoustavuus",
+      "goal2Body": "Eri asiakkaat tukevat eri protokollia. MediaMTX silloittaa RTSP-lähteet WebRTC-katsojille ilman lisäkoodausta, pitäen suorittimen käytön minimissä kenttälaitteistolla.",
+      "goal3Title": "Yksinkertainen käyttöönotto",
+      "goal3Body": "Yksi kontti, muutama konfiguraatiorivi ja striimi on live. Opas kattaa sekä ensimmäisen asennuksen että yleisen vianmäärityksen, jotta operaattorit voivat ratkaista ongelmat ilman asiantuntija-apua.",
+      "copyright": "MediaMTX: © aler9"
+    },
+    "matrix-guide": {
+      "lead": "Matrix on avoin standardi turvalliseen, hajautettuun reaaliaikaiseen viestintään — tarjoten sotilaille päästä-päähän-salatun viestinnän ja äänen, joka toimii organisaatiorajojen yli ilman keskitettyä auktoriteettia.",
+      "core": "OpenDefencen Matrix-integraatio ottaa käyttöön Synapse-kotipalvelimen Deploy Appin kautta ja opastaa käyttäjät asiakasohjelmiston asennukseen, huoneiden luomiseen ja palvelinten väliseen yhdistämiseen yksikköjenvälistä viestintää varten.",
+      "goal1Title": "Oma viestintä",
+      "goal1Body": "Yksikkösi viestit pysyvät omalla palvelimellasi. Yhdistäminen mahdollistaa viestinnän muiden yksiköiden palvelimien kanssa ilman, että yksikään organisaatio hallitsee koko verkostoa.",
+      "goal2Title": "Päästä-päähän-salaus",
+      "goal2Body": "Matrixin E2EE tarkoittaa, että edes kotipalvelimen ylläpitäjä ei voi lukea viestien sisältöä. Tämä opas kattaa avaimen varmistamisvaiheet niin, että salaus on käytännössä aito, ei vain teoriassa.",
+      "goal3Title": "Kestävä rakenne",
+      "goal3Body": "Matrix-kotipalvelimet on suunniteltu selviytymään verkkokatkoista ja yhdistymään uudelleen sujuvasti. Käyttöönottokonfiguraatio on viritetty kenttäolosuhteissa tyypilliselle katkonaiselle yhteydelle.",
+      "copyright": "Matrix: © The Matrix.org Foundation"
+    },
+    "deploy-app": {
+      "lead": "Deploy App on OpenDefence-pinon ydin — rajapinta, jonka kautta operaattorit jakavat palveluita sotilaille ja jonka kautta sotilaat pääsevät kaikkeen yhdestä tutusta paikasta.",
+      "core": "Tämä opas kattaa Deploy Appin molemmilta puolilta: sotilaat, jotka opettelevat pääsyn saamista ja tiliensä hallintaa, sekä operaattorit, jotka hallitsevat käyttäjiä, rooleja ja palvelinkäyttöönottoja yksikössään.",
+      "goal1Title": "Ei koulutusta tarvita",
+      "goal1Body": "Ensimmäistä kertaa Deploy Appia käyttävän sotilaan tulisi pystyä kirjautumaan sisään ja pääsemään yksikkönsä palveluihin ilman manuaalin lukemista. Jokainen toiminto on suunniteltu tämä vaatimus mielessä.",
+      "goal2Title": "Operaattorin hallinta",
+      "goal2Body": "Operaattorit saavat tarkan hallinnan siitä, kuka pääsee mihinkin, auditoinnin ja roolinhallinnan avulla — vastaten sotilaallisen toiminnan vastuullisuusvaatimuksiin.",
+      "goal3Title": "Integraatiokeskus",
+      "goal3Body": "Jokainen virallinen OpenDefence-tuote integroituu Deploy Appin kautta. Uuden palvelun lisääminen on konfigurointitehtävä, ei kehitystehtävä — operaattorit voivat ottaa käyttöön hyväksyttyjä integraatioita minuuteissa.",
+      "copyright": "Deploy App ja tämä sivusto: © OpenDefence"
+    }
   }
 }

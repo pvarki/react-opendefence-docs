@@ -1,7 +1,13 @@
 import { useEffect, useRef, useState } from "react";
 import { Link, createFileRoute, notFound } from "@tanstack/react-router";
 import { useTranslation } from "react-i18next";
-import { Check, ChevronRight, Download, Languages } from "lucide-react";
+import {
+  Check,
+  ChevronDown,
+  ChevronRight,
+  Download,
+  Languages,
+} from "lucide-react";
 import {
   DEFAULT_LOCALE,
   type Locale,
@@ -9,6 +15,9 @@ import {
   type ManifestPage,
   type SidebarConfig,
 } from "@shared/content-schema";
+import { CARD_IMAGES } from "@/lib/cardImages";
+import { withBase } from "@/lib/base";
+import i18n from "@/lib/i18n";
 import { loadManifest, loadPage, loadSidebar } from "@/lib/content/loader";
 import {
   filterSidebarByClient,
@@ -276,7 +285,93 @@ function BookCover({
           </Button>
         )}
       </div>
+      <GuideFooter collection={data.collection} />
     </div>
+  );
+}
+
+function GuideFooter({ collection }: { collection: string }) {
+  const { t } = useTranslation();
+  const slug = collection.replace(/^guides\//, "");
+  const kp = `guideFooter.${slug}`;
+
+  if (!i18n.exists(`${kp}.lead`)) return null;
+
+  const cardImage = CARD_IMAGES[collection];
+  const hasPhoto = !!cardImage && !cardImage.logo;
+
+  const goals = [
+    { title: `${kp}.goal1Title`, body: `${kp}.goal1Body` },
+    { title: `${kp}.goal2Title`, body: `${kp}.goal2Body` },
+    { title: `${kp}.goal3Title`, body: `${kp}.goal3Body` },
+  ];
+
+  return (
+    <footer className="mt-4 border-t border-border bg-card md:mt-8">
+      <div className="relative overflow-hidden">
+        {hasPhoto && (
+          <>
+            <img
+              src={withBase(cardImage.src)}
+              alt=""
+              aria-hidden
+              className="absolute inset-0 h-full w-full object-cover object-[center_30%]"
+            />
+            <div className="absolute inset-0 bg-black/60" />
+          </>
+        )}
+        <div
+          className={
+            hasPhoto
+              ? "relative mx-auto max-w-2xl px-4 py-8 md:py-12"
+              : "mx-auto max-w-2xl px-4 py-6 md:py-8"
+          }
+        >
+          <p
+            className={
+              hasPhoto
+                ? "text-sm leading-relaxed text-white"
+                : "text-sm leading-relaxed text-foreground"
+            }
+          >
+            {t(`${kp}.lead`)}
+          </p>
+        </div>
+      </div>
+
+      <div className="mx-auto max-w-2xl px-4 pb-6 md:pb-10">
+        <details className="group mt-5 rounded-lg border border-border bg-background">
+          <summary className="flex cursor-pointer list-none items-center justify-between gap-2 px-4 py-3 text-base font-semibold select-none [&::-webkit-details-marker]:hidden">
+            {t("footer.tellMore")}
+            <ChevronDown className="size-4 shrink-0 text-muted-foreground transition-transform group-open:rotate-180" />
+          </summary>
+          <div className="px-4 pb-4">
+            <p className="text-sm leading-relaxed text-muted-foreground">
+              {t(`${kp}.core`)}
+            </p>
+            {goals.map(({ title, body }) => (
+              <div key={title}>
+                <p className="mt-4 text-[11px] font-semibold tracking-widest text-primary uppercase">
+                  {t(title)}
+                </p>
+                <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
+                  {t(body)}
+                </p>
+              </div>
+            ))}
+          </div>
+        </details>
+
+        <div className="mt-6 space-y-0.5 border-t border-border pt-4">
+          <p className="text-[11px] text-muted-foreground/80">
+            {t(`${kp}.copyright`)}
+          </p>
+          <p className="text-[11px] text-muted-foreground/80">
+            {t("guideFooter.maintainedBy")}
+          </p>
+        </div>
+      </div>
+    </footer>
   );
 }
 
