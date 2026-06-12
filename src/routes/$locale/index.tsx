@@ -23,7 +23,7 @@ const CARDS = [
     descKey: "home.guidesCardDesc",
   },
   {
-    to: "guides",
+    to: "advanced",
     icon: Zap,
     titleKey: "home.powerCard",
     descKey: "home.powerCardDesc",

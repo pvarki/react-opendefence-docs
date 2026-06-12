@@ -92,7 +92,7 @@ export function PlatformSelector() {
         aria-label={t("platform.label")}
       >
         <MonitorSmartphone className="size-4" />
-        <span className="hidden sm:inline">
+        <span className="max-w-24 truncate sm:max-w-none">
           {active?.label ?? PLATFORM_LABELS[view.platform]}
         </span>
       </SelectTrigger>

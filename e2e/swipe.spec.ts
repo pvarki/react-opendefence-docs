@@ -185,28 +185,42 @@ test.describe("book swipe navigation", () => {
 });
 
 test.describe("contextual bottom bar (mobile)", () => {
-  test("the same five controls everywhere: Contents left, then Guides/Home/Platform/Search", async ({
+  test("five controls in order: Contents, Home, shelf, Platform, Search", async ({
     page,
   }, testInfo) => {
     test.skip(testInfo.project.name !== "mobile", "bottom bar is mobile-only");
     for (const url of ["/en", FIRST]) {
       await page.goto(url);
       const bar = page.locator("nav.fixed");
-      await expect(bar.getByRole("button", { name: "Contents" })).toBeVisible();
-      await expect(bar.getByRole("link", { name: "Guides" })).toBeVisible();
-      await expect(bar.getByRole("link", { name: "Home" })).toBeVisible();
-      await expect(bar.getByRole("button", { name: "Platform" })).toBeVisible();
-      await expect(bar.getByRole("link", { name: "Search" })).toBeVisible();
-      // Contents is the LEFTMOST control (thumb-clear on right-handed grip).
-      const contentsBox = await bar
-        .getByRole("button", { name: "Contents" })
-        .boundingBox();
-      const guidesBox = await bar
-        .getByRole("link", { name: "Guides" })
-        .boundingBox();
-      if (!contentsBox || !guidesBox) throw new Error("bar not visible");
-      expect(contentsBox.x).toBeLessThan(guidesBox.x);
+      const boxes = [];
+      for (const [role, name] of [
+        ["button", "Contents"],
+        ["link", "Home"],
+        ["link", "Guides"],
+        ["button", "Platform"],
+        ["link", "Search"],
+      ] as const) {
+        const el = bar.getByRole(role, { name });
+        await expect(el).toBeVisible();
+        boxes.push((await el.boundingBox())!.x);
+      }
+      // Left-to-right exactly in this order.
+      expect([...boxes].sort((a, b) => a - b)).toEqual(boxes);
     }
+  });
+
+  test("the shelf slot is context-aware: Advanced in wikis, Developer in dev", async ({
+    page,
+  }, testInfo) => {
+    test.skip(testInfo.project.name !== "mobile", "bottom bar is mobile-only");
+    await page.goto("/en/advanced");
+    const bar = page.locator("nav.fixed");
+    await expect(bar.getByRole("link", { name: "Advanced" })).toBeVisible();
+    // Inside a wiki book it stays Advanced.
+    await page.goto("/en/wikis/tak");
+    await expect(bar.getByRole("link", { name: "Advanced" })).toBeVisible();
+    await page.goto("/en/dev");
+    await expect(bar.getByRole("link", { name: "Developer" })).toBeVisible();
   });
 
   test("contents outside a reader opens the site-wide TOC", async ({
@@ -255,6 +269,16 @@ test.describe("platform selector", () => {
     await expect(
       page.getByRole("combobox", { name: "Platform" }),
     ).toContainText("Android");
+  });
+
+  test("navbar shows the active client label on mobile (ATAK in TAK guide)", async ({
+    page,
+  }, testInfo) => {
+    test.skip(testInfo.project.name !== "mobile", "asserts mobile navbar");
+    await open(page, "/en/guides/tak-guide/what-is-tak-hZw2wUmL7g");
+    await expect(
+      page.getByRole("combobox", { name: "Platform" }),
+    ).toContainText("ATAK");
   });
 
   test("TAK guide lists every client separately (incl. TAK Tracker)", async ({
@@ -357,18 +381,21 @@ test.describe("search", () => {
 });
 
 test.describe("unified guides page and back button", () => {
-  test("guides page groups every book under toporg-style sections", async ({
+  test("guides page holds Deploy App + Products only; wikis live on Advanced", async ({
     page,
   }) => {
     await page.goto("/en/guides");
     const main = page.locator("main");
-    await expect(main.getByText("Products", { exact: true })).toBeVisible();
-    await expect(main.getByText("Advanced", { exact: true })).toBeVisible();
-    await expect(main.getByRole("link", { name: /TAK Guide/ })).toBeVisible();
-    await expect(main.getByRole("link", { name: /TAK Wiki/ })).toBeVisible();
     await expect(
-      main.getByRole("link", { name: /API Reference/ }),
+      main.getByRole("heading", { name: "Deploy App", exact: true }),
     ).toBeVisible();
+    await expect(
+      main.getByRole("heading", { name: "Products", exact: true }),
+    ).toBeVisible();
+    await expect(main.getByRole("link", { name: /TAK Guide/ })).toBeVisible();
+    await expect(main.getByRole("link", { name: /TAK Wiki/ })).toHaveCount(0);
+    await page.goto("/en/advanced");
+    await expect(main.getByRole("link", { name: /TAK Wiki/ })).toBeVisible();
   });
 
   test("floating back button above Contents returns to the earlier place", async ({
@@ -377,7 +404,7 @@ test.describe("unified guides page and back button", () => {
     test.skip(testInfo.project.name !== "mobile", "back button is mobile-only");
     await page.goto("/en");
     await page.getByRole("link", { name: /power user/i }).click();
-    await expect(page).toHaveURL("/en/guides");
+    await expect(page).toHaveURL("/en/advanced");
     await page.getByRole("button", { name: "Back" }).click();
     await expect(page).toHaveURL("/en");
   });

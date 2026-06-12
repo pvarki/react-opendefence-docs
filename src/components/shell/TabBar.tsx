@@ -7,7 +7,6 @@ import {
 } from "@tanstack/react-router";
 import { useTranslation } from "react-i18next";
 import {
-  BookOpen,
   ChevronLeft,
   House,
   MonitorSmartphone,
@@ -21,14 +20,16 @@ import { useReaderData } from "@/lib/useReaderData";
 import { ContentsSheet } from "@/components/shell/ContentsDrawer";
 import { SiteContentsSheet } from "@/components/shell/SiteContentsSheet";
 import { PlatformSheet } from "@/components/shell/PlatformSheet";
+import { useShelfContext } from "@/lib/useShelfContext";
 
 /**
- * Mobile bottom bar — the SAME five controls in the same places everywhere:
- * Contents (leftmost, larger, border-separated) · Guides · Home · Platform ·
+ * Mobile bottom bar — five controls in the same places everywhere:
+ * Contents (leftmost, larger, border-separated) · Home · shelf · Platform ·
  * Search. Phones ride in the right hand, so Contents and the floating back
  * button above it sit on the LEFT, clear of the thumb's resting side.
- * Contents is context-aware: the current book's TOC inside a reader, the
- * site-wide TOC elsewhere.
+ * Two slots are context-aware: Contents opens the current book's TOC in a
+ * reader and the site-wide TOC elsewhere; the shelf slot is Guides,
+ * Advanced or Developer depending on what's being read.
  */
 export function TabBar() {
   const { t } = useTranslation();
@@ -46,6 +47,8 @@ export function TabBar() {
     ? resolveClient(reader.manifest, reader.collection, view)
     : undefined;
   const platformLabel = activeClient?.label ?? PLATFORM_LABELS[view.platform];
+  const shelf = useShelfContext();
+  const ShelfIcon = shelf.icon;
 
   const itemClass =
     "flex flex-1 flex-col items-center justify-center gap-0.5 text-muted-foreground transition-colors [&.active]:text-primary";
@@ -81,15 +84,6 @@ export function TabBar() {
             </span>
           </button>
           <Link
-            to="/$locale/guides"
-            params={{ locale }}
-            className={itemClass}
-            activeProps={{ "aria-current": "page" }}
-          >
-            <BookOpen className="size-5" />
-            <span className="text-[10px] leading-none">{t("nav.guides")}</span>
-          </Link>
-          <Link
             to="/$locale"
             params={{ locale }}
             activeOptions={{ exact: true }}
@@ -98,6 +92,17 @@ export function TabBar() {
           >
             <House className="size-5" />
             <span className="text-[10px] leading-none">{t("nav.home")}</span>
+          </Link>
+          <Link
+            to={shelf.to}
+            params={{ locale }}
+            className={itemClass}
+            activeProps={{ "aria-current": "page" }}
+          >
+            <ShelfIcon className="size-5" />
+            <span className="text-[10px] leading-none">
+              {t(shelf.labelKey)}
+            </span>
           </Link>
           <button
             type="button"

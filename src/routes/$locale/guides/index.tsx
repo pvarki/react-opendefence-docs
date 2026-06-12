@@ -11,7 +11,9 @@ import { siteSections } from "@/lib/siteSections";
 export const Route = createFileRoute("/$locale/guides/")({
   loader: async ({ context }) => {
     const manifest = await loadManifest(context.locale);
-    return { sections: siteSections(manifest) };
+    return {
+      sections: siteSections(manifest).filter((s) => s.shelf === "guides"),
+    };
   },
   component: GuidesShelf,
 });
@@ -28,8 +30,9 @@ function bookIcon(titleKey: string) {
 }
 
 /**
- * The one shelf for everything: every book in the app under toporg-style
- * section headings — Deploy App, Products, Advanced, Developer.
+ * The guides shelf: Deploy App and the product guides under toporg-style
+ * headings. Advanced (wikis) and Developer content have their own shelves,
+ * reached from Home and the context-aware bottom bar.
  */
 function GuidesShelf() {
   const { t } = useTranslation();
