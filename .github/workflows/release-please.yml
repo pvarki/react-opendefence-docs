@@ -25,7 +25,9 @@ jobs:
 
   publish-image:
     needs: release-please
-    if: needs.release-please.outputs.releases_created == 'true'
+    # Off until registry credentials exist: set the repo variable
+    # ENABLE_IMAGE_PUBLISH=true (plus DOCKERHUB_* secrets) to activate.
+    if: needs.release-please.outputs.releases_created == 'true' && vars.ENABLE_IMAGE_PUBLISH == 'true'
     runs-on: ubuntu-latest
     permissions:
       contents: read
