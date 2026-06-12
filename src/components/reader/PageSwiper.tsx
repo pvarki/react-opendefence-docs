@@ -19,6 +19,7 @@ import {
   resolveSplat,
 } from "@/lib/content/neighbors";
 import { pageSwiperOptions } from "@/components/reader/emblaPageOptions";
+import { stripBase } from "@/lib/base";
 import { PagePane } from "@/components/reader/PagePane";
 import { useReducedMotion } from "@/components/reader/useReducedMotion";
 
@@ -181,7 +182,7 @@ export function PageSwiper({
       }
       // Resolve from the router's live location: props lag the URL during
       // animated transitions, and rapid keypresses must not be dropped.
-      const pathname = router.state.location.pathname;
+      const pathname = stripBase(router.state.location.pathname);
       const splat = pathname.startsWith(`/${locale}/`)
         ? pathname.slice(locale.length + 2)
         : "";

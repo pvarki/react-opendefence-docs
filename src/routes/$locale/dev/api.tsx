@@ -9,6 +9,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { Skeleton } from "@/components/ui/skeleton";
+import { withBase } from "@/lib/base";
 
 export interface SpecVersion {
   tag: string;
@@ -30,7 +31,7 @@ const ApiReference = lazy(() =>
 export const Route = createFileRoute("/$locale/dev/api")({
   loader: async (): Promise<SpecManifest> => {
     try {
-      const res = await fetch("/api-specs/manifest.json");
+      const res = await fetch(withBase("/api-specs/manifest.json"));
       if (!res.ok) throw new Error(String(res.status));
       return (await res.json()) as SpecManifest;
     } catch {
@@ -97,7 +98,7 @@ function ApiReferencePage() {
           >
             <ApiReference
               configuration={{
-                url: active.specFile,
+                url: withBase(active.specFile),
                 hideDarkModeToggle: true,
                 forceDarkModeState: "dark",
                 hideClientButton: true,

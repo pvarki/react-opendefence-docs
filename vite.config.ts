@@ -6,7 +6,13 @@ import tailwindcss from "@tailwindcss/vite";
 import { tanstackRouter } from "@tanstack/router-plugin/vite";
 import { VitePWA } from "vite-plugin-pwa";
 
+// Deployment base: "/" for the real domain and local dev; the Pages deploy
+// sets BASE_PATH=/react-opendefence-docs/ (project URL) until DNS exists.
+const base = process.env.BASE_PATH ?? "/";
+const baseRe = base.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+
 export default defineConfig({
+  base,
   plugins: [
     tanstackRouter({ target: "react", autoCodeSplitting: true }),
     react(),
@@ -19,15 +25,23 @@ export default defineConfig({
         short_name: "OD Docs",
         description: "Documentation for Deploy App and the OpenDefence stack",
         display: "standalone",
-        start_url: "/",
-        scope: "/",
+        start_url: base,
+        scope: base,
         theme_color: "#ff6b1a",
         background_color: "#1a1a1a",
         icons: [
-          { src: "/icons/icon-192.png", sizes: "192x192", type: "image/png" },
-          { src: "/icons/icon-512.png", sizes: "512x512", type: "image/png" },
           {
-            src: "/icons/icon-512-maskable.png",
+            src: `${base}icons/icon-192.png`,
+            sizes: "192x192",
+            type: "image/png",
+          },
+          {
+            src: `${base}icons/icon-512.png`,
+            sizes: "512x512",
+            type: "image/png",
+          },
+          {
+            src: `${base}icons/icon-512-maskable.png`,
             sizes: "512x512",
             type: "image/png",
             purpose: "maskable",
@@ -42,12 +56,14 @@ export default defineConfig({
           "api-specs/manifest.json",
         ],
         maximumFileSizeToCacheInBytes: 4 * 1024 * 1024,
-        navigateFallback: "index.html",
-        navigateFallbackDenylist: [/^\/(content|api-specs|pagefind)\//],
+        navigateFallback: `${base}index.html`,
+        navigateFallbackDenylist: [
+          new RegExp(`^${baseRe}(content|api-specs|pagefind)/`),
+        ],
         cleanupOutdatedCaches: true,
         runtimeCaching: [
           {
-            urlPattern: /^\/(content\/)?images\//,
+            urlPattern: new RegExp(`^${baseRe}(content/)?images/`),
             handler: "CacheFirst",
             options: {
               cacheName: "content-images",
@@ -55,7 +71,7 @@ export default defineConfig({
             },
           },
           {
-            urlPattern: /^\/api-specs\//,
+            urlPattern: new RegExp(`^${baseRe}api-specs/`),
             handler: "StaleWhileRevalidate",
             options: { cacheName: "api-specs" },
           },
