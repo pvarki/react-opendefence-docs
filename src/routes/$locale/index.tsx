@@ -51,14 +51,14 @@ function HomePage() {
           className="absolute inset-0 h-full w-full object-cover object-[center_30%]"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-background/20" />
-        <div className="absolute inset-x-0 bottom-0 mx-auto w-full max-w-3xl px-4 pb-3 md:pb-5">
+        <div className="absolute inset-x-0 bottom-0 mx-auto w-full max-w-2xl px-4 pb-3 md:pb-5">
           <h1 className="text-2xl font-bold md:text-4xl">{t("app.title")}</h1>
           <p className="mt-0.5 text-sm text-muted-foreground md:mt-1 md:text-base">
             {t("app.tagline")}
           </p>
         </div>
       </div>
-      <div className="mx-auto max-w-3xl px-4 py-4 md:py-8">
+      <div className="mx-auto max-w-2xl px-4 py-4 md:py-8">
         <div className="grid gap-2.5 md:grid-cols-2 md:gap-3">
           {CARDS.map(({ to, icon, titleKey, descKey }) => (
             <BookCard
@@ -102,7 +102,7 @@ function HomeFooter() {
 
   return (
     <footer className="mt-4 border-t border-border bg-card md:mt-8">
-      <div className="mx-auto max-w-3xl px-4 py-6 md:py-10">
+      <div className="mx-auto max-w-2xl px-4 py-6 md:py-10">
         <p className="text-sm leading-relaxed text-foreground">
           {t("footer.lead")}
         </p>
