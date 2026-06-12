@@ -193,7 +193,7 @@ function BookCover({
   const first = pages[0];
 
   // The cover IS the book's table of contents: the same grouped chapter tree
-  // as the Contents sheet, fully expanded.
+  // as the Contents sheet, chapters collapsed for a scannable overview.
   const [sidebar, setSidebar] = useState<SidebarConfig>();
   useEffect(() => {
     let cancelled = false;
@@ -239,7 +239,6 @@ function BookCover({
               items={filterSidebarByClient(sidebar.items, activeClient?.id)}
               locale={locale}
               collection={data.collection}
-              defaultOpen
             />
           )}
         </nav>

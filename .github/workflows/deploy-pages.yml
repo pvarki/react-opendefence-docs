@@ -27,9 +27,13 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
       # Content and api-specs are committed by the sync PR flow;
-      # the build needs no Outline secrets.
+      # the build needs no Outline secrets. BASE_PATH targets the GitHub
+      # Pages project URL — drop it (and restore public/CNAME) when
+      # docs.opendefence.fi DNS goes live.
       - name: Build
         run: pnpm build
+        env:
+          BASE_PATH: /react-opendefence-docs/
       # enablement: turns Pages on (build type "workflow") on first run, so
       # deploys work without a manual Settings step.
       - uses: actions/configure-pages@v5

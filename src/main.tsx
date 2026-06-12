@@ -9,6 +9,7 @@ import { routeTree } from "@/routeTree.gen";
 
 const router = createRouter({
   routeTree,
+  basepath: import.meta.env.BASE_URL,
   defaultPreload: "intent",
   defaultPreloadDelay: 50,
   scrollRestoration: false, // reader panes manage their own scroll memory

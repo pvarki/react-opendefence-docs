@@ -2,6 +2,7 @@ import { useNavigate, useParams, useRouterState } from "@tanstack/react-router";
 import { Languages } from "lucide-react";
 import { LOCALES, normalizeLocale, type Locale } from "@shared/content-schema";
 import { storeLocale } from "@/lib/i18n";
+import { stripBase } from "@/lib/base";
 import {
   Select,
   SelectContent,
@@ -27,7 +28,7 @@ export function LocaleSwitcher() {
     storeLocale(next);
     // Exact counterpart paths via translations.json come with M2; until then
     // swap the locale prefix and let the loader 404-fallback handle gaps.
-    const nextPath = pathname.replace(`/${current}`, `/${next}`);
+    const nextPath = stripBase(pathname).replace(`/${current}`, `/${next}`);
     void navigate({ to: nextPath });
   };
 

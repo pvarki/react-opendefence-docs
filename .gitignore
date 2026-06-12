@@ -26,3 +26,4 @@ coverage/
 *.log
 pnpm-debug.log*
 backups/
+.prettier_cache

@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import type { LucideIcon } from "lucide-react";
 import type { CardImage } from "@/lib/cardImages";
+import { withBase } from "@/lib/base";
 
 interface BookCardProps {
   locale: string;
@@ -39,7 +40,7 @@ export function BookCard({
           (image.logo ? (
             // Brand marks: contained on the right, faint — never stretched.
             <img
-              src={image.src}
+              src={withBase(image.src)}
               alt=""
               aria-hidden
               loading="lazy"
@@ -48,7 +49,7 @@ export function BookCard({
           ) : (
             <>
               <img
-                src={image.src}
+                src={withBase(image.src)}
                 alt=""
                 aria-hidden
                 loading="lazy"

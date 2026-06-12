@@ -32,7 +32,9 @@ let modulePromise: Promise<PagefindModule | null> | undefined;
 
 // Non-literal specifier: keeps both TS (no ambient modules for absolute
 // paths) and Rollup from trying to resolve a build-generated asset.
-const PAGEFIND_URL = "/pagefind/pagefind.js";
+import { withBase } from "@/lib/base";
+
+const PAGEFIND_URL = withBase("/pagefind/pagefind.js");
 
 function loadPagefind(): Promise<PagefindModule | null> {
   if (!modulePromise) {
