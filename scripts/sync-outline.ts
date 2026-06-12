@@ -353,11 +353,13 @@ async function syncCollection(
     // organizers in the top three levels (root / wrapper / client children).
     const navChildren = (localeRoot.children ?? []) as OutlineNavNode[];
     const organizerIds: string[] = [];
+    // Collect up to 4 levels deep: locale root / platforms-container /
+    // platform organizer / chapter organizer.
     const collectOrganizers = (nodes: OutlineNavNode[], depth: number) => {
       for (const node of nodes) {
         if (node.children.length === 0) continue;
         organizerIds.push(node.id);
-        if (depth < 3) collectOrganizers(node.children, depth + 1);
+        if (depth < 4) collectOrganizers(node.children, depth + 1);
       }
     };
     collectOrganizers(navChildren, 1);
@@ -376,6 +378,8 @@ async function syncCollection(
           // Best-effort: an unreadable organizer just has no markers.
           organizerMarkersCache.set(docId, {
             toporg: false,
+            platformsContainer: false,
+            isProduct: false,
             underDevelopment: false,
           });
         }
@@ -386,10 +390,16 @@ async function syncCollection(
 
     const toporgIds = new Set<string>();
     const platformByDocId = new Map<string, Platform>();
+    const platformsContainerIds = new Set<string>();
+    const osByDocId = new Map<string, Platform>();
+    const isProductDocIds = new Set<string>();
     for (const docId of organizerIds) {
       const markers = organizerMarkersCache.get(docId);
       if (markers?.toporg) toporgIds.add(docId);
       if (markers?.platform) platformByDocId.set(docId, markers.platform);
+      if (markers?.platformsContainer) platformsContainerIds.add(docId);
+      if (markers?.os) osByDocId.set(docId, markers.os);
+      if (markers?.isProduct) isProductDocIds.add(docId);
     }
 
     // Build the book (sidebar + flattened reading order). The locale root
@@ -401,6 +411,9 @@ async function syncCollection(
     const book = buildBook(navChildren, collection, locale, {
       toporgIds,
       platformByDocId,
+      platformsContainerIds,
+      osByDocId,
+      isProductDocIds,
     });
     await writeJson(
       sidebarFilePath(locale, collection.slug),
@@ -408,11 +421,13 @@ async function syncCollection(
     );
     sidebarSpinner.succeed(`Sidebar generated for ${locale}`);
 
-    // Selector entries: one per client organizer, under-dev tag from its body.
+    // Selector entries: one per client organizer; body markers add optional fields.
     const clients: ClientInfo[] = book.clients.map((c) => ({
       id: c.id,
       label: c.label,
       platform: c.platform,
+      ...(c.os ? { os: c.os } : {}),
+      ...(c.isProduct ? { isProduct: true } : {}),
       ...(organizerMarkersCache.get(c.docId)?.underDevelopment
         ? { underDevelopment: true }
         : {}),

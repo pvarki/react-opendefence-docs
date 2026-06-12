@@ -15,6 +15,7 @@
     "sync:outline": "tsx scripts/sync-outline.ts",
     "sync:force": "tsx scripts/sync-outline.ts --force",
     "sync:collection": "tsx scripts/sync-outline.ts --collection",
+    "post-translations": "tsx scripts/post-translations.ts",
     "fetch:api-specs": "tsx scripts/fetch-api-specs.ts",
     "validate:docs": "tsx scripts/validate-docs.ts",
     "rebuild:meta": "tsx scripts/rebuild-metadata.ts",

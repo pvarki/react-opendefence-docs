@@ -53,12 +53,23 @@ export type PlatformInfo = z.infer<typeof PlatformInfoSchema>;
  * or an explicit "META: platform: <key>" line in the organizer doc body.
  * The selector lists a book's clients; the platform key links the choice to
  * the global platform preference.
+ *
+ * For product clients (META: product: yes), `platform` is the underlying OS
+ * (e.g. android for ATAK) used for icon display and platform-filter routing.
+ * The `os` field carries the same value when explicitly declared via META: os.
+ * `isProduct` distinguishes named products (ATAK) from generic OS platforms
+ * (Android) so the selector can show the product label instead of the OS name.
  */
 export const ClientInfoSchema = z.object({
   /** Organizer doc slug — stable id, also stamped on its pages. */
   id: z.string(),
   label: z.string(),
+  /** Underlying OS platform key; used for icon display and reading-order filter. */
   platform: PlatformSchema,
+  /** Explicitly declared OS (META: os: <key>); present when set via marker. */
+  os: PlatformSchema.optional(),
+  /** True when this client is a named product (ATAK, WinTAK) rather than a generic OS. */
+  isProduct: z.boolean().optional(),
   /** The client's organizer doc carries the under-development marker. */
   underDevelopment: z.boolean().optional(),
 });

@@ -8,11 +8,16 @@
  * Structure model (mirrors how authors organize guides in Outline):
  *
  *   locale root
- *   ├── Platform organizer (Android / iOS / ... or client names: ATAK/iTAK/WinTAK)
- *   │   ├── Chapter organizer (User Guide, Admin Guide, Troubleshooting, ...)
- *   │   │   ├── content page
- *   │   │   └── content page (deeper nesting flattens into the chapter)
- *   │   └── content page          (chapterless: grouped under the platform label)
+ *   ├── Platforms  (META: platforms-container — explicit wrapper, or auto-detected)
+ *   │   ├── Platform organizer (Android / iOS / ... or ATAK/iTAK/WinTAK products)
+ *   │   │   │   Body: META: platform: <id>  (optional, overrides title detection)
+ *   │   │   │         META: os: <os-key>    (explicit OS for icon; required for products)
+ *   │   │   │         META: product: yes    (named product, not a generic OS)
+ *   │   │   ├── Chapter organizer (User Guide, Admin Guide, Troubleshooting, …)
+ *   │   │   │   ├── content page
+ *   │   │   │   └── content page (deeper nesting flattens into the chapter)
+ *   │   │   └── content page          (chapterless: grouped under the platform label)
+ *   │   └── …
  *   ├── Chapter organizer          (platform-agnostic chapter, shown everywhere)
  *   │   └── content page
  *   └── content page               (top-level platform-agnostic page)
@@ -54,23 +59,37 @@ export interface BookPageRef {
 export interface BookClientRef {
   /** Organizer doc slug — the stable client id. */
   id: string;
+  /** Underlying OS platform key (android / ios / windows / linux / macos). */
   platform: Platform;
   /** Display label from the organizer title (e.g. "ATAK", "TAK Tracker - Android"). */
   label: string;
   docId: string;
+  /** True when this is a named product (ATAK, WinTAK) not a generic OS. */
+  isProduct?: boolean;
+  /** Explicitly declared OS from META: os (same value as platform when set). */
+  os?: Platform;
 }
 
 /** Body-derived organizer markers, prefetched by sync (organizer-markers.ts). */
 export interface BookMarkers {
   /** Organizer docIds whose body says "META: toporg". */
   toporgIds: ReadonlySet<string>;
-  /** Organizer docIds whose body says "META: platform: <key>". */
+  /** Organizer docIds whose body says "META: platform: <os-key>". */
   platformByDocId: ReadonlyMap<string, Platform>;
+  /** Organizer docIds whose body says "META: platforms-container". */
+  platformsContainerIds: ReadonlySet<string>;
+  /** Organizer docIds → explicit OS from "META: os: <key>". */
+  osByDocId: ReadonlyMap<string, Platform>;
+  /** Organizer docIds whose body says "META: product: yes". */
+  isProductDocIds: ReadonlySet<string>;
 }
 
 const NO_MARKERS: BookMarkers = {
   toporgIds: new Set(),
   platformByDocId: new Map(),
+  platformsContainerIds: new Set(),
+  osByDocId: new Map(),
+  isProductDocIds: new Set(),
 };
 
 export interface BookBuild {
@@ -206,8 +225,12 @@ export function buildBook(
   const readingOrder: BookPageRef[] = [];
   const clients: BookClientRef[] = [];
 
+  // Resolve the underlying OS for a potential client organizer.
+  // Priority: explicit META: os > META: platform (must be an OS key) > title heuristic.
   const clientPlatform = (node: OutlineNavNode): Platform | undefined =>
-    markers.platformByDocId.get(node.id) ?? detectPlatform(node.title);
+    markers.osByDocId.get(node.id) ??
+    markers.platformByDocId.get(node.id) ??
+    detectPlatform(node.title);
 
   // All leaf descendants of `node`, depth-first, flattened into one chapter.
   const collectLeaves = (
@@ -296,11 +319,14 @@ export function buildBook(
     trailTitles: string[],
     platform: Platform,
   ) => {
+    const explicitOs = markers.osByDocId.get(node.id);
     const client: BookClientRef = {
       id: slugFromUrl(node.url),
       platform,
       label: cleanLabel(node.title),
       docId: node.id,
+      ...(markers.isProductDocIds.has(node.id) ? { isProduct: true } : {}),
+      ...(explicitOs ? { os: explicitOs } : {}),
     };
     clients.push(client);
 
@@ -334,7 +360,7 @@ export function buildBook(
   };
 
   // A "root-like" level: locale root children, or the children of a wrapper
-  // organizer that exists only to hold clients (e.g. "TAK Clients").
+  // organizer that exists only to hold clients (e.g. "Platforms").
   const walkRootLevel = (nodes: OutlineNavNode[], trailTitles: string[]) => {
     for (const child of nodes) {
       const trail = [...trailTitles, child.title];
@@ -343,6 +369,12 @@ export function buildBook(
       if (child.children.length === 0) {
         readingOrder.push(makePageRef(child, trail, {}));
         items.push(makeDocItem(child));
+        continue;
+      }
+
+      // Explicit platforms container (META: platforms-container in body).
+      if (markers.platformsContainerIds.has(child.id)) {
+        walkRootLevel(child.children, trail);
         continue;
       }
 
@@ -357,6 +389,7 @@ export function buildBook(
         continue;
       }
 
+      // Legacy auto-detect: a wrapper whose children look like client organizers.
       const wrapsClients = child.children.some(
         (c) => c.children.length > 0 && clientPlatform(c),
       );
