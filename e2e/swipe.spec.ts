@@ -257,14 +257,15 @@ test.describe("platform selector", () => {
 });
 
 test.describe("book cover TOC", () => {
-  test("cover lists chapters with pages, fully expanded", async ({ page }) => {
+  test("cover lists chapters collapsed; expanding reveals pages", async ({
+    page,
+  }) => {
     await page.goto("/en/deploy-app");
     const cover = page.getByRole("navigation", { name: "Contents" });
-    await expect(
-      cover.getByRole("button", { name: "User Guide" }),
-    ).toBeVisible();
-    // Android's chapters are expanded by default once the platform follows
-    // the reader; click a page link straight from the cover TOC.
+    const userGuide = cover.getByRole("button", { name: "User Guide" });
+    await expect(userGuide).toBeVisible();
+    await expect(userGuide).toHaveAttribute("aria-expanded", "false");
+    await userGuide.click();
     const link = cover.getByRole("link", {
       name: "Joining a Deploy App",
       exact: true,
@@ -274,7 +275,7 @@ test.describe("book cover TOC", () => {
       await expect(page).toHaveURL(FIRST);
     } else {
       // Platform defaulted elsewhere (e.g. macOS on desktop): its own
-      // chapters are still listed expanded.
+      // chapters expand the same way.
       await expect(cover.getByRole("link").first()).toBeVisible();
     }
   });
