@@ -3,6 +3,8 @@ name: Release Please
 on:
   push:
     branches: [main]
+  # Manual re-run from the Actions tab (e.g. after a skipped/failed run).
+  workflow_dispatch:
 
 permissions:
   contents: write
