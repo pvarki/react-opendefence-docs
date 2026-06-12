@@ -286,6 +286,9 @@ function BookCover({
         )}
       </div>
       <GuideFooter collection={data.collection} />
+      {/* Scroll-end clearance: the floating Start reading / back buttons
+          hover here instead of covering the last content. */}
+      <div aria-hidden className="h-16 md:hidden" />
     </div>
   );
 }

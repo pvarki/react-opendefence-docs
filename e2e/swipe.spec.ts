@@ -290,9 +290,10 @@ test.describe("platform selector", () => {
     await selector.click();
     await expect(page.getByRole("option", { name: "ATAK" })).toBeVisible();
     await expect(page.getByRole("option", { name: "iTAK" })).toBeVisible();
+    // Both TAK Trackers read the same — the OS icon tells them apart.
     await expect(
-      page.getByRole("option", { name: "TAK Tracker - Android" }),
-    ).toBeVisible();
+      page.getByRole("option", { name: "TAK Tracker", exact: true }),
+    ).toHaveCount(2);
     await page.getByRole("option", { name: "WinTAK" }).click();
     // Cover now lists the WinTAK reading order.
     await expect(

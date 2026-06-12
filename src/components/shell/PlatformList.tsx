@@ -17,7 +17,14 @@ interface PlatformListProps {
  */
 export function PlatformList({ options, activeId, onPick }: PlatformListProps) {
   return (
-    <ul className="grid grid-cols-2 gap-2 sm:grid-cols-3">
+    <ul
+      className={cn(
+        // Three columns once two columns would need a third row — the list
+        // stays at most two rows for any realistic client count.
+        "grid gap-1.5 sm:grid-cols-3 sm:gap-2",
+        options.length > 4 ? "grid-cols-3" : "grid-cols-2",
+      )}
+    >
       {options.map((option) => (
         <li key={option.id}>
           <button
@@ -26,7 +33,7 @@ export function PlatformList({ options, activeId, onPick }: PlatformListProps) {
             aria-pressed={option.id === activeId}
             aria-label={option.label}
             className={cn(
-              "flex h-11 w-full min-w-0 items-center gap-2 rounded-lg border px-3 text-sm transition-colors",
+              "flex h-10 w-full min-w-0 items-center gap-2 rounded-lg border px-2.5 text-xs transition-colors sm:h-11 sm:px-3 sm:text-sm",
               option.id === activeId
                 ? "border-primary bg-muted font-medium text-foreground"
                 : "border-border bg-card text-muted-foreground hover:border-primary hover:text-foreground",
