@@ -37,6 +37,40 @@ async function swipe(page: Page, direction: "left" | "right") {
   await page.mouse.up();
 }
 
+/**
+ * A touch swipe via synthetic pointer events (pointerType "touch"). Unlike a
+ * mouse drag, touch never starts a text selection — which is exactly the
+ * real-device gesture the landing-page swipe listens for (the in-book reader's
+ * Embla owns the pointer instead and so works under a mouse drag too).
+ */
+async function touchSwipe(page: Page, direction: "left" | "right") {
+  const viewport = page.viewportSize();
+  if (!viewport) throw new Error("no viewport");
+  await page.evaluate(
+    ({ width, dir }) => {
+      const y = 80;
+      const from = dir === "left" ? width * 0.8 : width * 0.2;
+      const to = dir === "left" ? width * 0.2 : width * 0.8;
+      const el = document.elementFromPoint(from, y) ?? document.body;
+      const at = (type: string, x: number) =>
+        el.dispatchEvent(
+          new PointerEvent(type, {
+            pointerId: 1,
+            pointerType: "touch",
+            clientX: x,
+            clientY: y,
+            bubbles: true,
+            cancelable: true,
+          }),
+        );
+      at("pointerdown", from);
+      at("pointermove", (from + to) / 2);
+      at("pointerup", to);
+    },
+    { width: viewport.width, dir: direction },
+  );
+}
+
 test.describe("book swipe navigation", () => {
   test("swipe left turns to the next page and pushes history", async ({
     page,
@@ -181,6 +215,133 @@ test.describe("book swipe navigation", () => {
     await expect
       .poll(() => bar.evaluate((el) => el.getBoundingClientRect().width))
       .toBeGreaterThan(w1);
+  });
+});
+
+test.describe("bookshelf-level swipe (landing pages)", () => {
+  // Open a landing page and wait until its content is on screen.
+  async function openShelf(page: Page, url: string) {
+    await page.goto(url);
+    await expect(page.locator("main")).toBeVisible();
+    await expect(
+      page.locator("main").getByRole("heading").first(),
+    ).toBeVisible();
+  }
+
+  // Let the View Transition finish and the route's effects flush before the
+  // next gesture (the swipe reads the current stop from a ref updated on
+  // render).
+  async function settle(page: Page) {
+    await page.waitForTimeout(450);
+  }
+
+  test("swipe left walks Home → Deploy App → Guides → Advanced → Develop", async ({
+    page,
+  }) => {
+    await openShelf(page, "/en");
+    await touchSwipe(page, "left");
+    await expect(page).toHaveURL("/en/deploy-app");
+    await settle(page);
+
+    await touchSwipe(page, "left");
+    await expect(page).toHaveURL("/en/guides");
+    await settle(page);
+
+    await touchSwipe(page, "left");
+    await expect(page).toHaveURL("/en/advanced");
+    await settle(page);
+
+    await touchSwipe(page, "left");
+    await expect(page).toHaveURL("/en/dev");
+  });
+
+  test("swipe right walks back toward Home", async ({ page }) => {
+    await openShelf(page, "/en/guides");
+    await touchSwipe(page, "right");
+    await expect(page).toHaveURL("/en/deploy-app");
+    await settle(page);
+
+    await touchSwipe(page, "right");
+    await expect(page).toHaveURL("/en");
+  });
+
+  test("swipe right on Home stays put (no stop before it)", async ({
+    page,
+  }) => {
+    await openShelf(page, "/en");
+    await touchSwipe(page, "right");
+    await page.waitForTimeout(500);
+    await expect(page).toHaveURL("/en");
+  });
+
+  test("swipe left on the last stop (Develop) stays put", async ({ page }) => {
+    await openShelf(page, "/en/dev");
+    await touchSwipe(page, "left");
+    await page.waitForTimeout(500);
+    await expect(page).toHaveURL("/en/dev");
+  });
+
+  test("arrow keys turn between landing pages", async ({ page }) => {
+    await openShelf(page, "/en/guides");
+    await page.keyboard.press("ArrowRight");
+    await expect(page).toHaveURL("/en/advanced");
+    await settle(page);
+    await page.keyboard.press("ArrowLeft");
+    await expect(page).toHaveURL("/en/guides");
+  });
+
+  test("the Deploy App cover swipes as a stop, then hands off to the reader", async ({
+    page,
+  }) => {
+    // The cover is a landing stop: swiping turns to the next shelf, not into
+    // the book.
+    await openShelf(page, "/en/deploy-app");
+    await touchSwipe(page, "left");
+    await expect(page).toHaveURL("/en/guides");
+    await settle(page);
+
+    // Inside the book (a content page) the reader's own swipe takes over.
+    await open(page, FIRST);
+    await swipe(page, "left");
+    await expect(page).toHaveURL(SECOND);
+  });
+
+  test("reduced motion still navigates (instant swap, no slide)", async ({
+    page,
+  }) => {
+    await page.emulateMedia({ reducedMotion: "reduce" });
+    await openShelf(page, "/en");
+    await page.keyboard.press("ArrowRight");
+    await expect(page).toHaveURL("/en/deploy-app");
+    await settle(page);
+    await touchSwipe(page, "left");
+    await expect(page).toHaveURL("/en/guides");
+  });
+
+  test("a second finger (pinch) does not turn the page", async ({ page }) => {
+    await openShelf(page, "/en/guides");
+    await page.evaluate(() => {
+      const y = 80;
+      const el = document.elementFromPoint(200, y) ?? document.body;
+      const fire = (type: string, id: number, x: number) =>
+        el.dispatchEvent(
+          new PointerEvent(type, {
+            pointerId: id,
+            pointerType: "touch",
+            clientX: x,
+            clientY: y,
+            bubbles: true,
+          }),
+        );
+      fire("pointerdown", 1, 200); // first finger
+      fire("pointerdown", 2, 210); // second finger poisons the gesture
+      fire("pointermove", 1, 40);
+      fire("pointermove", 2, 400);
+      fire("pointerup", 1, 40); // a wide horizontal spread on release
+      fire("pointerup", 2, 400);
+    });
+    await page.waitForTimeout(500);
+    await expect(page).toHaveURL("/en/guides");
   });
 });
 

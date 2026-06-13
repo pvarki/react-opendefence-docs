@@ -293,3 +293,80 @@
   padding: 1rem;
   overflow-x: auto;
 }
+
+/* ── Bookshelf-level swipe (Home ⇄ Deploy App ⇄ Guides ⇄ Advanced ⇄ Develop) ──
+   Naming <main> isolates it into its own View Transition group, so only the
+   content slides while the header and bottom bar stay put. The slide direction
+   comes from the navigation's `viewTransition` type (set in useShelfSwipe). */
+.shelf-vt-main {
+  view-transition-name: shelf-main;
+}
+
+/* Header/bottom-bar (the "root" snapshot) must not cross-fade — swap instantly. */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+}
+
+/* Default to an instant swap (e.g. reduced motion): the UA's cross-fade would
+   otherwise still play on the content. The directional slide is re-enabled
+   only under prefers-reduced-motion: no-preference below (higher specificity). */
+::view-transition-old(shelf-main),
+::view-transition-new(shelf-main) {
+  animation: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  ::view-transition-group(shelf-main) {
+    animation-duration: 0.3s;
+  }
+  ::view-transition-old(shelf-main),
+  ::view-transition-new(shelf-main) {
+    animation-duration: 0.3s;
+    animation-timing-function: cubic-bezier(0.22, 0.61, 0.36, 1);
+    /* Both panes occupy the same box and slide past each other (no fade). */
+    mix-blend-mode: normal;
+  }
+
+  html:active-view-transition-type(shelf-forward)::view-transition-old(
+      shelf-main
+    ) {
+    animation-name: shelf-slide-out-left;
+  }
+  html:active-view-transition-type(shelf-forward)::view-transition-new(
+      shelf-main
+    ) {
+    animation-name: shelf-slide-in-right;
+  }
+  html:active-view-transition-type(shelf-back)::view-transition-old(
+      shelf-main
+    ) {
+    animation-name: shelf-slide-out-right;
+  }
+  html:active-view-transition-type(shelf-back)::view-transition-new(
+      shelf-main
+    ) {
+    animation-name: shelf-slide-in-left;
+  }
+}
+
+@keyframes shelf-slide-out-left {
+  to {
+    transform: translateX(-100%);
+  }
+}
+@keyframes shelf-slide-in-right {
+  from {
+    transform: translateX(100%);
+  }
+}
+@keyframes shelf-slide-out-right {
+  to {
+    transform: translateX(100%);
+  }
+}
+@keyframes shelf-slide-in-left {
+  from {
+    transform: translateX(-100%);
+  }
+}

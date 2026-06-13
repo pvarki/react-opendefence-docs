@@ -14,7 +14,7 @@ function RootLayout() {
   return (
     <div className="flex h-dvh flex-col bg-background text-foreground">
       <Header />
-      <main className="min-h-0 flex-1 pb-[var(--tabbar-h)]">
+      <main className="shelf-vt-main min-h-0 flex-1 pb-[var(--tabbar-h)]">
         <Outlet />
       </main>
       <TabBar />

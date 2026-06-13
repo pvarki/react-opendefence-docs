@@ -20,3 +20,13 @@ export const CARD_IMAGES: Record<string, CardImage> = {
   "wikis/tak": { src: "/images/tak.png" },
   "wikis/mtx": { src: "/images/mtxlogo.svg", logo: true },
 };
+
+/**
+ * Book covers that get a full-width hero banner like the shelf pages, keyed
+ * by collection slug. The Deploy App cover reuses its footer photo, framed
+ * from the top. Covers without an entry render their plain title heading.
+ */
+export const COVER_HEROES: Record<string, { src: string; position?: string }> =
+  {
+    "deploy-app": { src: "/images/deployapp.png", position: "object-top" },
+  };
