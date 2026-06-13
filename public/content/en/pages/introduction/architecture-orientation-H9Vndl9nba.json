@@ -9,7 +9,7 @@
     "Architecture orientation"
   ],
   "createdAt": "2026-06-13T13:20:29.180Z",
-  "updatedAt": "2026-06-13T14:35:40.206Z",
+  "updatedAt": "2026-06-13T21:19:11.344Z",
   "headings": [
     {
       "depth": 2,
@@ -55,11 +55,19 @@
   "blocks": [
     {
       "type": "html",
-      "html": "<p>A shallow conceptual map of how Deploy App fits together: it names the moving parts and how they relate, but does not go deep into any one component. For shared vocabulary see the <a href=\"/en/introduction/glossary-bM0nAcqNkN\">Glossary</a>; to pick a stack see <a href=\"/en/introduction/choose-your-platform-legacy-docker-vs-kubernetes-HMH7bBbZTO\">Choose your platform</a>; for component-level Kubernetes detail see the <strong>Develop Deploy App</strong> book.</p>\n<h2 id=\"the-shape-of-the-system\"><a href=\"#the-shape-of-the-system\">The shape of the system</a></h2>\n<p>Deploy App is one identity provider, one hub API, a web UI, several products, and a certificate/trust layer that lets them talk securely. A user enrolls once, authenticates with an mTLS client certificate, and reaches every product they are entitled to. The hub fans user-lifecycle events out to each product over mTLS, so revoking a user in one place revokes them everywhere.</p>"
+      "html": "<p>A shallow conceptual map of how Deploy App fits together: it names the moving parts and how they relate, but does not go deep into any one component. For shared vocabulary see the <a href=\"/en/introduction/glossary-bM0nAcqNkN\">Glossary</a>; to pick a stack see <a href=\"/en/introduction/choose-your-platform-legacy-docker-vs-kubernetes-HMH7bBbZTO\">Choose your platform</a>; for component-level Kubernetes detail see the <strong>Develop Deploy App</strong> book.</p>\n<h2 id=\"the-shape-of-the-system\"><a href=\"#the-shape-of-the-system\">The shape of the system</a></h2>\n<p>Deploy App is one identity provider, one hub API, a web UI, several products, and a certificate/trust layer that lets them talk securely. A user enrolls once, authenticates with an mTLS client certificate, and reaches every product they are entitled to. The hub fans user-lifecycle events out to each product over mTLS, so revoking a user in one place revokes them everywhere.</p>\n<p>The same shape runs on both stacks; only the <strong>ingress</strong> and the <strong>CA / trust</strong> layer differ — so here is one diagram per stack.</p>\n<p><strong>Legacy (Docker Compose)</strong> — nginx ingress (certs via miniwerk) in front of the hub, with CFSSL as the internal CA:</p>"
     },
     {
       "type": "mermaid",
-      "code": "flowchart TB\n    users[\"Users / EUDs\\n(browser, ATAK/iTAK, ...)\"]\n    ingress[\"Ingress + TLS / mTLS termination\\n(legacy: nginx via miniwerk  •  k8s: Traefik)\"]\n    ui[\"Deploy App UI\\n(react-rasenmaeher-ui-v2)\"]\n    idp[\"Identity\\n(Keycloak + OpenLDAP)\"]\n    core[\"Core rmapi\\n(rasenmaeher_api — hub & integration point)\"]\n    ca[\"CA / trust\\n(legacy: CFSSL  •  k8s: cert-manager +\\ntrust-manager + opendefense-pki)\"]\n\n    intapi[\"Product integration APIs\\n(matrix / tak / mediamtx / ...)\"]\n    products[\"Products\\n(TAK • Matrix/Synapse • MediaMTX • Battlelog)\"]\n\n    users --> ingress\n    ingress --> ui\n    ingress --> core\n    ui --> core\n    core --> idp\n    core --> ca\n    core <-->|mTLS user-lifecycle callbacks| intapi\n    intapi --> products"
+      "code": "flowchart TB\n    users[\"Users / EUDs<br/>(browser, ATAK / iTAK, ...)\"]\n    ingress[\"nginx ingress<br/>(TLS via miniwerk)\"]\n    ui[\"Deploy App UI\"]\n    core[\"Core rmapi<br/>(hub & integration point)\"]\n    idp[\"Identity<br/>(Keycloak + OpenLDAP)\"]\n    ca[\"CFSSL<br/>(internal CA)\"]\n    intapi[\"Product integration APIs<br/>(matrix / tak / mediamtx)\"]\n    products[\"Products<br/>(TAK / Matrix / MediaMTX / Battlelog)\"]\n    users --> ingress\n    ingress --> ui\n    ingress --> core\n    ui --> core\n    core --> idp\n    core --> ca\n    core <-->|mTLS callbacks| intapi\n    intapi --> products"
+    },
+    {
+      "type": "html",
+      "html": "<p><strong>Kubernetes</strong> (<code>opendefence-platform</code>, alpha) — Traefik ingress, with cert-manager + trust-manager + opendefense-pki providing the CA and trust:</p>"
+    },
+    {
+      "type": "mermaid",
+      "code": "flowchart TB\n    users[\"Users / EUDs<br/>(browser, ATAK / iTAK, ...)\"]\n    ingress[\"Traefik ingress<br/>(TLS / mTLS)\"]\n    ui[\"Deploy App UI\"]\n    core[\"Core rmapi<br/>(deployment/opendefense-rmapi)\"]\n    idp[\"Identity<br/>(Keycloak operator + OpenLDAP)\"]\n    ca[\"cert-manager + trust-manager<br/>+ opendefense-pki\"]\n    intapi[\"Product integration APIs<br/>(matrix / tak / mediamtx)\"]\n    products[\"Products<br/>(TAK / Matrix / MediaMTX / Battlelog)\"]\n    users --> ingress\n    ingress --> ui\n    ingress --> core\n    ui --> core\n    core --> idp\n    core --> ca\n    core <-->|mTLS callbacks| intapi\n    intapi --> products"
     },
     {
       "type": "html",
