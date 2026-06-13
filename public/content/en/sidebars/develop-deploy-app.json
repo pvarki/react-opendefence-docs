@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "label": "Develop Deploy App",
+  "slug": "develop-deploy-app",
+  "items": [
+    {
+      "type": "doc",
+      "id": "core-development-overview-2Qap7v2dqB",
+      "label": "Core development overview",
+      "slug": "core-development-overview-2Qap7v2dqB"
+    },
+    {
+      "type": "doc",
+      "id": "core-apis-the-rmapi-contract-RUcNFLQRXT",
+      "label": "Core APIs & the rmapi contract",
+      "slug": "core-apis-the-rmapi-contract-RUcNFLQRXT"
+    },
+    {
+      "type": "doc",
+      "id": "testing-ci-conventions-rhTvWtij7I",
+      "label": "Testing & CI conventions",
+      "slug": "testing-ci-conventions-rhTvWtij7I"
+    },
+    {
+      "type": "group",
+      "id": "docker-compose-legacy-nhqHtxFBvx",
+      "label": "Docker Compose",
+      "clientId": "docker-compose-legacy-nhqHtxFBvx",
+      "children": [
+        {
+          "type": "doc",
+          "id": "set-up-your-dev-environment-docker-compose-t4JDwRuQs2",
+          "label": "Set up your dev environment",
+          "slug": "set-up-your-dev-environment-docker-compose-t4JDwRuQs2"
+        },
+        {
+          "type": "doc",
+          "id": "iterate-on-the-core-api-docker-compose-qhg7EpPTbA",
+          "label": "Iterate on the core API",
+          "slug": "iterate-on-the-core-api-docker-compose-qhg7EpPTbA"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "kubernetes-plT6WHkYy5",
+      "label": "Kubernetes",
+      "clientId": "kubernetes-plT6WHkYy5",
+      "children": [
+        {
+          "type": "doc",
+          "id": "set-up-your-dev-environment-kubernetes-z9YF0C0oH4",
+          "label": "Set up your dev environment",
+          "slug": "set-up-your-dev-environment-kubernetes-z9YF0C0oH4"
+        },
+        {
+          "type": "doc",
+          "id": "iterate-on-the-core-api-mirrord-lzshevUc4T",
+          "label": "Iterate on the core API",
+          "slug": "iterate-on-the-core-api-mirrord-lzshevUc4T"
+        }
+      ]
+    }
+  ]
+}

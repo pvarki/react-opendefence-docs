@@ -45,6 +45,7 @@ jobs:
             pnpm sync:outline
           fi
           pnpm fetch:api-specs
+          pnpm fetch:release-docs
           pnpm validate:docs --report sync-report.md || true
       - name: Read validation report
         id: report

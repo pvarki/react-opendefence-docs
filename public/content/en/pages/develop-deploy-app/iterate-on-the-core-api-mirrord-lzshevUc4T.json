@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "c7777b46-96d5-490b-a9bf-908b9cba2e8e",
+  "slug": "iterate-on-the-core-api-mirrord-lzshevUc4T",
+  "collection": "develop-deploy-app",
+  "locale": "en",
+  "title": "Iterate on the core API (mirrord)",
+  "breadcrumb": [
+    "Platforms",
+    "Kubernetes",
+    "Iterate on the core API (mirrord)"
+  ],
+  "createdAt": "2026-06-13T13:21:28.222Z",
+  "updatedAt": "2026-06-13T13:21:28.222Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Prerequisites",
+      "id": "prerequisites"
+    },
+    {
+      "depth": 2,
+      "text": "The mirrord inner loop",
+      "id": "the-mirrord-inner-loop"
+    },
+    {
+      "depth": 2,
+      "text": "JWT key paths",
+      "id": "jwt-key-paths"
+    },
+    {
+      "depth": 2,
+      "text": "Inspecting the in-cluster deployment",
+      "id": "inspecting-the-in-cluster-deployment"
+    },
+    {
+      "depth": 2,
+      "text": "When to use the cluster pod instead",
+      "id": "when-to-use-the-cluster-pod-instead"
+    },
+    {
+      "depth": 2,
+      "text": "Related pages",
+      "id": "related-pages"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>On the Kubernetes stack the inner loop does not run uvicorn inside the cluster. Instead you keep the full stack running in <code>kind</code> (see <strong>Set up your dev environment (Kubernetes)</strong>) and use <strong>mirrord</strong> to make your <em>local</em> core process handle the cluster's traffic for <code>deployment/opendefense-rmapi</code>. You edit code on your machine, uvicorn reloads locally, and the running cluster routes real requests to it. This is the platform repo's \"Developing using mirrord\" workflow.</p>\n<h2 id=\"prerequisites\"><a href=\"#prerequisites\">Prerequisites</a></h2>\n<ul>\n<li>The platform stack up locally: <code>task up</code> against the <code>opendefense-kind</code> cluster, with <code>opendefense-rmapi</code> healthy in namespace <code>opendefense-system</code>.</li>\n<li>A local checkout of the <strong>rasenmaeher</strong> repo (<code>pvarki/python-rasenmaeher-api</code>) with its dependencies installed via Poetry — you run mirrord <em>from that repo</em>, not from the platform repo.</li>\n<li><code>mirrord</code> installed locally.</li>\n</ul>\n<h2 id=\"the-mirrord-inner-loop\"><a href=\"#the-mirrord-inner-loop\">The mirrord inner loop</a></h2>\n<p>From the rasenmaeher repo, run your local core under uvicorn but stolen into the cluster target:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#61AFEF\">mirrord</span><span style=\"color:#98C379\"> exec</span><span style=\"color:#D19A66\"> --steal</span><span style=\"color:#56B6C2\"> \\</span></span>\n<span class=\"line\"><span style=\"color:#D19A66\">  --target-namespace</span><span style=\"color:#98C379\"> opendefense-system</span><span style=\"color:#56B6C2\"> \\</span></span>\n<span class=\"line\"><span style=\"color:#D19A66\">  --target</span><span style=\"color:#98C379\"> deployment/opendefense-rmapi</span><span style=\"color:#56B6C2\"> \\</span></span>\n<span class=\"line\"><span style=\"color:#D19A66\">  --</span><span style=\"color:#98C379\"> bash</span><span style=\"color:#D19A66\"> -c</span><span style=\"color:#98C379\"> 'JWT_PRIVKEY_PATH=./locadir/private/rm_jwtsign.key JWT_PUBKEY_PATH=./locadir/public poetry run uvicorn --reload --factory rasenmaeher_api.web.application:get_app'</span></span></code></pre>",
+      "lang": "bash"
+    },
+    {
+      "type": "html",
+      "html": "<p>What this does:</p>\n<ul>\n<li><code>--steal</code> intercepts traffic destined for the targeted deployment and routes it to your local process (rather than just mirroring a copy). Your laptop now answers requests that the in-cluster <code>opendefense-rmapi</code> would have served.</li>\n<li><code>--target-namespace opendefense-system --target deployment/opendefense-rmapi</code> selects the core deployment as the interception target.</li>\n<li>The command after <code>--</code> is your local app: <code>poetry run uvicorn --reload --factory rasenmaeher_api.web.application:get_app</code>, with the JWT signing key paths pointed at local files.</li>\n</ul>\n<p>The loop is then:</p>\n<ol>\n<li>Edit <code>rasenmaeher_api</code> source locally.</li>\n<li>uvicorn <code>--reload</code> restarts your local app on save.</li>\n<li>Drive the stack as normal (UI, other components, product-integration callbacks) — requests for the core land on your local process.</li>\n<li>Watch your local terminal for logs/tracebacks instead of <code>kubectl logs</code>.</li>\n</ol>\n<h2 id=\"jwt-key-paths\"><a href=\"#jwt-key-paths\">JWT key paths</a></h2>\n<p>The example sets <code>JWT_PRIVKEY_PATH</code> and <code>JWT_PUBKEY_PATH</code> to local paths (<code>./locadir/...</code>) so your local instance can sign/verify JWTs. Make sure those files exist locally before starting.</p>\n<blockquote>\n<p><strong>TODO:</strong> confirm how <code>./locadir/private/rm_jwtsign.key</code> and <code>./locadir/public</code> are produced/obtained for local mirrord runs (generated by the rasenmaeher repo's tooling vs. copied out of the cluster) and document the step here.</p>\n</blockquote>\n<h2 id=\"inspecting-the-in-cluster-deployment\"><a href=\"#inspecting-the-in-cluster-deployment\">Inspecting the in-cluster deployment</a></h2>\n<p>While iterating it is useful to see the target you are stealing from:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#61AFEF\">kubectl</span><span style=\"color:#98C379\"> get</span><span style=\"color:#98C379\"> deployment</span><span style=\"color:#98C379\"> opendefense-rmapi</span><span style=\"color:#D19A66\"> -n</span><span style=\"color:#98C379\"> opendefense-system</span></span>\n<span class=\"line\"><span style=\"color:#61AFEF\">kubectl</span><span style=\"color:#98C379\"> describe</span><span style=\"color:#98C379\"> deployment</span><span style=\"color:#98C379\"> opendefense-rmapi</span><span style=\"color:#D19A66\"> -n</span><span style=\"color:#98C379\"> opendefense-system</span></span>\n<span class=\"line\"><span style=\"color:#61AFEF\">kubectl</span><span style=\"color:#98C379\"> logs</span><span style=\"color:#D19A66\"> -n</span><span style=\"color:#98C379\"> opendefense-system</span><span style=\"color:#98C379\"> deployment/opendefense-rmapi</span><span style=\"color:#7F848E;font-style:italic\">   # the in-cluster pod (when not stealing)</span></span></code></pre>",
+      "lang": "bash"
+    },
+    {
+      "type": "html",
+      "html": "<p>Note the in-cluster container listens on port <code>8000</code>; match your local uvicorn to the same port the cluster expects so the stolen traffic is served correctly.</p>\n<blockquote>\n<p><strong>TODO:</strong> confirm the local uvicorn <code>--port</code> / <code>--host</code> binding the platform's mirrord setup expects (the README example omits them); align it with the deployment's containerPort <code>8000</code>.</p>\n</blockquote>\n<h2 id=\"when-to-use-the-cluster-pod-instead\"><a href=\"#when-to-use-the-cluster-pod-instead\">When to use the cluster pod instead</a></h2>\n<p>mirrord is for the core inner loop. If you are changing manifests, Kustomize overlays, or the deploy phasing rather than core Python, do that in the platform repo and redeploy with <code>task deploy</code> (or <code>task up</code> for a fresh cluster) — see <strong>Set up your dev environment (Kubernetes)</strong> and <code>agents.md</code>.</p>\n<h2 id=\"related-pages\"><a href=\"#related-pages\">Related pages</a></h2>\n<ul>\n<li><strong>Set up your dev environment (Kubernetes)</strong> — getting the cluster and stack up.</li>\n<li><strong>Core APIs &#x26; the rmapi contract</strong> — the surface your local changes affect.</li>\n<li><strong>Testing &#x26; CI conventions</strong> — what gates the change before merge.</li>\n</ul>"
+    }
+  ]
+}

@@ -221,6 +221,28 @@ export class OutlineApiClient {
     return data.data;
   }
 
+  /** Create a new collection; returns its UUID. */
+  async createCollection(
+    name: string,
+    description = "",
+  ): Promise<{ id: string; name: string }> {
+    const data = await this.post<{ data: { id: string; name: string } }>(
+      "/collections.create",
+      { name, description },
+    );
+    return { id: data.data.id, name: data.data.name };
+  }
+
+  /** Permanently delete a collection and all its documents. */
+  async deleteCollection(id: string): Promise<void> {
+    await this.post("/collections.delete", { id });
+  }
+
+  /** Replace a document's markdown body (keeps title/position). */
+  async updateDocument(id: string, text: string): Promise<void> {
+    await this.post("/documents.update", { id, text });
+  }
+
   // ==========================================================================
   // Document Methods
   // ==========================================================================
@@ -361,6 +383,30 @@ export class OutlineApiClient {
       title: data.data.title,
       url: data.data.url,
     };
+  }
+
+  /**
+   * Move/reorder a document to a position among its siblings.
+   *
+   * @param opts.id               - Document UUID to move
+   * @param opts.collectionId     - Collection UUID (kept the same when reordering)
+   * @param opts.parentDocumentId - New parent UUID (omit for collection top level)
+   * @param opts.index            - Zero-based position among siblings
+   */
+  async moveDocument(opts: {
+    id: string;
+    collectionId?: string;
+    parentDocumentId?: string;
+    index?: number;
+  }): Promise<void> {
+    await this.post("/documents.move", {
+      id: opts.id,
+      ...(opts.collectionId ? { collectionId: opts.collectionId } : {}),
+      ...(opts.parentDocumentId
+        ? { parentDocumentId: opts.parentDocumentId }
+        : {}),
+      ...(opts.index !== undefined ? { index: opts.index } : {}),
+    });
   }
 
   /**

@@ -1,0 +1,140 @@
+{
+  "schemaVersion": 1,
+  "id": "b16688b9-102b-4352-8ab0-a8e3fba0afbb",
+  "slug": "set-up-your-dev-environment-kubernetes-z9YF0C0oH4",
+  "collection": "develop-deploy-app",
+  "locale": "en",
+  "title": "Set up your dev environment (Kubernetes)",
+  "breadcrumb": [
+    "Platforms",
+    "Kubernetes",
+    "Set up your dev environment (Kubernetes)"
+  ],
+  "createdAt": "2026-06-13T13:21:27.879Z",
+  "updatedAt": "2026-06-13T13:21:27.879Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Prerequisites",
+      "id": "prerequisites"
+    },
+    {
+      "depth": 2,
+      "text": "1. Install and trust the toolchain with mise",
+      "id": "1-install-and-trust-the-toolchain-with-mise"
+    },
+    {
+      "depth": 2,
+      "text": "2. Bring up the cluster and the full stack",
+      "id": "2-bring-up-the-cluster-and-the-full-stack"
+    },
+    {
+      "depth": 2,
+      "text": "3. Verify the kubecontext",
+      "id": "3-verify-the-kubecontext"
+    },
+    {
+      "depth": 2,
+      "text": "4. Verify the pods",
+      "id": "4-verify-the-pods"
+    },
+    {
+      "depth": 2,
+      "text": "How the stack is structured (for orientation)",
+      "id": "how-the-stack-is-structured-for-orientation"
+    },
+    {
+      "depth": 2,
+      "text": "Cloud deployment (for reference)",
+      "id": "cloud-deployment-for-reference"
+    },
+    {
+      "depth": 2,
+      "text": "Tear down",
+      "id": "tear-down"
+    },
+    {
+      "depth": 2,
+      "text": "Next",
+      "id": "next"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>This is the first thing a core developer does on the new Kubernetes stack (<code>pvarki/opendefence-platform</code>, <strong>alpha</strong>): stand up a local <code>kind</code> cluster running the full Deploy App stack, so you can later point your local core code at it. Unlike the legacy stack there is no miniwerk and no CFSSL here — trust is provided by <code>cert-manager</code>, <code>trust-manager</code>, and the <code>opendefense-pki</code> resources, and the whole lifecycle is driven by <code>task</code>. Everything below comes from the platform repo's <code>README.md</code> and <code>taskfile.yaml</code>.</p>\n<h2 id=\"prerequisites\"><a href=\"#prerequisites\">Prerequisites</a></h2>\n<ul>\n<li><strong>Docker</strong> (kind runs Kubernetes in Docker).</li>\n<li><strong>kind</strong> — Kubernetes in Docker.</li>\n<li><strong>kubectl</strong> — the Kubernetes CLI.</li>\n<li><strong>mise</strong> — tool version manager (recommended; it pins the exact tool versions for this repo).</li>\n</ul>\n<p>The pinned tool versions live in <code>mise.toml</code>:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#ABB2BF\">[</span><span style=\"color:#61AFEF\">tools</span><span style=\"color:#ABB2BF\">]</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">helm</span><span style=\"color:#ABB2BF\"> = </span><span style=\"color:#98C379\">\"3\"</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">kind</span><span style=\"color:#ABB2BF\"> = </span><span style=\"color:#98C379\">\"0.31\"</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">kubectl</span><span style=\"color:#ABB2BF\"> = </span><span style=\"color:#98C379\">\"1.36\"</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">task</span><span style=\"color:#ABB2BF\"> = </span><span style=\"color:#98C379\">\"3\"</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">yq</span><span style=\"color:#ABB2BF\"> = </span><span style=\"color:#98C379\">\"4.53.2\"</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">zarf</span><span style=\"color:#ABB2BF\"> = </span><span style=\"color:#98C379\">\"0.76.0\"</span></span></code></pre>",
+      "lang": "toml"
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"1-install-and-trust-the-toolchain-with-mise\"><a href=\"#1-install-and-trust-the-toolchain-with-mise\">1. Install and trust the toolchain with mise</a></h2>\n<p>Once mise itself is installed, let it install everything else this repo needs and trust the local config:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#61AFEF\">mise</span><span style=\"color:#98C379\"> install</span><span style=\"color:#7F848E;font-style:italic\">   # install all pinned tools (helm, kind, kubectl, task, yq, zarf)</span></span>\n<span class=\"line\"><span style=\"color:#61AFEF\">mise</span><span style=\"color:#98C379\"> trust</span><span style=\"color:#7F848E;font-style:italic\">     # trust this repo's local mise configuration</span></span></code></pre>",
+      "lang": "bash"
+    },
+    {
+      "type": "html",
+      "html": "<p>After this, mise automatically selects the correct version of every tool whenever you enter the project directory.</p>\n<h2 id=\"2-bring-up-the-cluster-and-the-full-stack\"><a href=\"#2-bring-up-the-cluster-and-the-full-stack\">2. Bring up the cluster and the full stack</a></h2>\n<p>One command creates the <code>kind</code> cluster and deploys all resources:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#61AFEF\">task</span><span style=\"color:#98C379\"> up</span><span style=\"color:#7F848E;font-style:italic\">        # create a kind cluster and deploy all resources</span></span>\n<span class=\"line\"><span style=\"color:#61AFEF\">task</span><span style=\"color:#98C379\"> down</span><span style=\"color:#7F848E;font-style:italic\">      # tear the cluster down</span></span>\n<span class=\"line\"><span style=\"color:#61AFEF\">task</span><span style=\"color:#7F848E;font-style:italic\">           # list all available tasks</span></span></code></pre>",
+      "lang": "bash"
+    },
+    {
+      "type": "html",
+      "html": "<p>Under the hood (<code>taskfile.yaml</code>), <code>task up</code> runs <code>cluster:create</code> (creates a <code>kind</code> cluster named <code>opendefense-kind</code> from <code>kind-config.yaml</code>), <code>check-kubecontext</code>, <code>cluster:wait</code> (waits for nodes to be Ready), then <code>deploy:local</code>. The deploy is <strong>phased with readiness gates</strong> — it applies <code>infra-phase1</code>, waits for the CloudNativePG, cert-manager, and external-secrets operators to roll out, applies <code>infra-phase2</code>, waits for <code>trust-manager</code>, then applies <code>monitoring</code> and finally <code>opendefense</code>. Do not bypass this ordering; the gates exist so dependent resources only apply once their operators are ready.</p>\n<h2 id=\"3-verify-the-kubecontext\"><a href=\"#3-verify-the-kubecontext\">3. Verify the kubecontext</a></h2>\n<p><code>task</code> guards against deploying into the wrong cluster. You can check manually:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#61AFEF\">kubectl</span><span style=\"color:#98C379\"> config</span><span style=\"color:#98C379\"> current-context</span></span>\n<span class=\"line\"><span style=\"color:#7F848E;font-style:italic\"># should contain: opendefense-kind</span></span></code></pre>",
+      "lang": "bash"
+    },
+    {
+      "type": "html",
+      "html": "<p>If the context is wrong, <code>task check-kubecontext</code> will warn and prompt before continuing.</p>\n<h2 id=\"4-verify-the-pods\"><a href=\"#4-verify-the-pods\">4. Verify the pods</a></h2>\n<p>The core API runs as <code>deployment/opendefense-rmapi</code> in namespace <code>opendefense-system</code>, listening on container port <code>8000</code>:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#61AFEF\">kubectl</span><span style=\"color:#98C379\"> get</span><span style=\"color:#98C379\"> pods</span><span style=\"color:#D19A66\"> -n</span><span style=\"color:#98C379\"> opendefense-system</span></span>\n<span class=\"line\"><span style=\"color:#61AFEF\">kubectl</span><span style=\"color:#98C379\"> rollout</span><span style=\"color:#98C379\"> status</span><span style=\"color:#98C379\"> deployment/opendefense-rmapi</span><span style=\"color:#D19A66\"> -n</span><span style=\"color:#98C379\"> opendefense-system</span></span>\n<span class=\"line\"><span style=\"color:#61AFEF\">kubectl</span><span style=\"color:#98C379\"> logs</span><span style=\"color:#D19A66\"> -n</span><span style=\"color:#98C379\"> opendefense-system</span><span style=\"color:#98C379\"> deployment/opendefense-rmapi</span></span></code></pre>",
+      "lang": "bash"
+    },
+    {
+      "type": "html",
+      "html": "<p>Supporting pieces run as operators in their own namespaces — for example <code>cnpg-system</code> (CloudNativePG), <code>cert-manager</code> (cert-manager + trust-manager), and <code>external-secrets-system</code>. You can confirm the gated operators are healthy:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#61AFEF\">kubectl</span><span style=\"color:#98C379\"> rollout</span><span style=\"color:#98C379\"> status</span><span style=\"color:#98C379\"> deployment</span><span style=\"color:#98C379\"> cnpg-controller-manager</span><span style=\"color:#D19A66\"> -n</span><span style=\"color:#98C379\"> cnpg-system</span></span>\n<span class=\"line\"><span style=\"color:#61AFEF\">kubectl</span><span style=\"color:#98C379\"> rollout</span><span style=\"color:#98C379\"> status</span><span style=\"color:#98C379\"> deployment</span><span style=\"color:#98C379\"> cert-manager-webhook</span><span style=\"color:#D19A66\"> -n</span><span style=\"color:#98C379\"> cert-manager</span></span>\n<span class=\"line\"><span style=\"color:#61AFEF\">kubectl</span><span style=\"color:#98C379\"> rollout</span><span style=\"color:#98C379\"> status</span><span style=\"color:#98C379\"> deployment</span><span style=\"color:#98C379\"> trust-manager</span><span style=\"color:#D19A66\"> -n</span><span style=\"color:#98C379\"> cert-manager</span></span></code></pre>",
+      "lang": "bash"
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"how-the-stack-is-structured-for-orientation\"><a href=\"#how-the-stack-is-structured-for-orientation\">How the stack is structured (for orientation)</a></h2>\n<p>The repo converts the legacy compose stack into Kustomize: each component is split into <code>base/</code> (environment-agnostic) and <code>overlays/&#x3C;env>/</code> (registries, hostnames, certificates, ingress). Components are composed in phases under <code>k8s/main/local</code> (and <code>k8s/main/cloud</code>). See <code>agents.md</code> for the full structural contract; for everyday work prefer the <code>task</code> commands over hand-running <code>kubectl kustomize</code>.</p>\n<h2 id=\"cloud-deployment-for-reference\"><a href=\"#cloud-deployment-for-reference\">Cloud deployment (for reference)</a></h2>\n<p>To build and deploy a Zarf package to an external cluster:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#61AFEF\">task</span><span style=\"color:#98C379\"> zarf:package:cloud</span></span>\n<span class=\"line\"><span style=\"color:#61AFEF\">zarf</span><span style=\"color:#98C379\"> package</span><span style=\"color:#98C379\"> deploy</span><span style=\"color:#ABB2BF\"> &#x3C;</span><span style=\"color:#98C379\">packag</span><span style=\"color:#ABB2BF\">e></span><span style=\"color:#98C379\">.tar.zst</span><span style=\"color:#D19A66\"> --set</span><span style=\"color:#98C379\"> OPENDEFENSE_HOST=example.dev.pvarki.fi</span><span style=\"color:#D19A66\"> --confirm</span></span></code></pre>",
+      "lang": "bash"
+    },
+    {
+      "type": "html",
+      "html": "<p>That is a deployment concern rather than a core-dev inner loop; see the <strong>Operate</strong> book.</p>\n<h2 id=\"tear-down\"><a href=\"#tear-down\">Tear down</a></h2>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#61AFEF\">task</span><span style=\"color:#98C379\"> down</span><span style=\"color:#7F848E;font-style:italic\">      # deletes the kind cluster</span></span></code></pre>",
+      "lang": "bash"
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"next\"><a href=\"#next\">Next</a></h2>\n<ul>\n<li><strong>Iterate on the core API (mirrord)</strong> — point your local core code at this cluster.</li>\n<li><strong>Core APIs &#x26; the rmapi contract</strong> — what the core exposes and the callback contract.</li>\n</ul>"
+    }
+  ]
+}

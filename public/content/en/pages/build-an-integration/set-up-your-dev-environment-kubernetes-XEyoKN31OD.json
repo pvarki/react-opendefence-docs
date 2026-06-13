@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 1,
+  "id": "f4966b7e-0f58-4b97-a5cc-0be8048303e2",
+  "slug": "set-up-your-dev-environment-kubernetes-XEyoKN31OD",
+  "collection": "build-an-integration",
+  "locale": "en",
+  "title": "Set up your dev environment (Kubernetes)",
+  "breadcrumb": [
+    "Platforms",
+    "Kubernetes",
+    "Set up your dev environment (Kubernetes)"
+  ],
+  "createdAt": "2026-06-13T13:21:35.682Z",
+  "updatedAt": "2026-06-13T13:21:35.682Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Toolchain",
+      "id": "toolchain"
+    },
+    {
+      "depth": 2,
+      "text": "Spin up a local cluster",
+      "id": "spin-up-a-local-cluster"
+    },
+    {
+      "depth": 2,
+      "text": "Lay out your integration as a Kustomize service",
+      "id": "lay-out-your-integration-as-a-kustomize-service"
+    },
+    {
+      "depth": 2,
+      "text": "Container shape (model: mtx)",
+      "id": "container-shape-model-mtx"
+    },
+    {
+      "depth": 2,
+      "text": "Deploy your changes",
+      "id": "deploy-your-changes"
+    },
+    {
+      "depth": 2,
+      "text": "Developing the core rmapi against the cluster",
+      "id": "developing-the-core-rmapi-against-the-cluster"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>This page covers running your product integration API as a workload on the <strong>Kubernetes stack</strong> (<a href=\"https://github.com/pvarki/opendefence-platform\" target=\"_blank\" rel=\"noopener noreferrer\">pvarki/opendefence-platform</a>, alpha). The stack is Kustomize-based: each service has a <code>base/</code> plus <code>overlays/&#x3C;env>/</code>. There is <strong>no miniwerk-driven</strong> <code>**MW_PRODUCTS**</code> <strong>registration</strong> — your integration is composed in by manifests. The manifest wiring is in <strong>Register your integration (Kubernetes)</strong>; this page is about the toolchain and getting a local cluster running.</p>\n<blockquote>\n<p><strong>Platform scope: k8s (Kubernetes only).</strong> The compose aliases (<code>rmlocal</code>/<code>rmdev</code>), the local <code>:5050</code> registry, and miniwerk's <code>MW_PRODUCTS</code> do <strong>not</strong> apply — see <strong>Set up your dev environment (Docker Compose)</strong> for the legacy stack.</p>\n</blockquote>\n<h2 id=\"toolchain\"><a href=\"#toolchain\">Toolchain</a></h2>\n<p>The repo pins tools with <a href=\"https://mise.jdx.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">mise</a> and drives the cluster with <a href=\"https://taskfile.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">Taskfile</a>:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#61AFEF\">mise</span><span style=\"color:#98C379\"> install</span><span style=\"color:#7F848E;font-style:italic\">   # install all pinned tools (helm, kind, kubectl, task, yq, zarf, ...)</span></span>\n<span class=\"line\"><span style=\"color:#61AFEF\">mise</span><span style=\"color:#98C379\"> trust</span><span style=\"color:#7F848E;font-style:italic\">     # trust the repo's local mise config</span></span></code></pre>",
+      "lang": "bash"
+    },
+    {
+      "type": "html",
+      "html": "<p>Once mise is installed it auto-selects the correct tool versions when you enter the project directory.</p>\n<h2 id=\"spin-up-a-local-cluster\"><a href=\"#spin-up-a-local-cluster\">Spin up a local cluster</a></h2>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#61AFEF\">task</span><span style=\"color:#98C379\"> up</span><span style=\"color:#7F848E;font-style:italic\">     # create a kind cluster and deploy all resources</span></span>\n<span class=\"line\"><span style=\"color:#61AFEF\">task</span><span style=\"color:#98C379\"> down</span><span style=\"color:#7F848E;font-style:italic\">   # tear the cluster down</span></span>\n<span class=\"line\"><span style=\"color:#61AFEF\">task</span><span style=\"color:#7F848E;font-style:italic\">        # list all available tasks</span></span></code></pre>",
+      "lang": "bash"
+    },
+    {
+      "type": "html",
+      "html": "<p><code>task up</code> runs <code>cluster:create</code> (kind, using <code>kind-config.yaml</code>), waits for nodes, then <code>deploy:local</code>. The deploy is <strong>phased with readiness gates</strong> (from <code>taskfile.yaml</code>): <code>infra-phase1</code> (cnpg, cert-manager, external-secrets) → <code>infra-phase2</code> (trust-manager) → <code>monitoring</code> → <code>opendefense</code> (the apps). Kustomizations that include Helm charts (traefik, trust-manager, external-secrets) are built with <code>--enable-helm</code>.</p>\n<p>The core API runs as <code>deployment/opendefense-rmapi</code> in namespace <code>opendefense-system</code>.</p>\n<h2 id=\"lay-out-your-integration-as-a-kustomize-service\"><a href=\"#lay-out-your-integration-as-a-kustomize-service\">Lay out your integration as a Kustomize service</a></h2>\n<p>Follow the repo's working contract (<code>agents.md</code>): add a new logical service as its own <code>k8s/&#x3C;service>/</code> folder with <code>base/</code> + <code>overlays/&#x3C;env>/</code>. Use the existing <code>mtx</code> service as the model.</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span>k8s/&#x3C;service>/</span></span>\n<span class=\"line\"><span>  base/</span></span>\n<span class=\"line\"><span>    kustomization.yaml</span></span>\n<span class=\"line\"><span>    resources/</span></span>\n<span class=\"line\"><span>      &#x3C;service>.deployment.yaml      # your &#x3C;short_name>rmapi container</span></span>\n<span class=\"line\"><span>      &#x3C;service>.service.yaml</span></span>\n<span class=\"line\"><span>      ...</span></span>\n<span class=\"line\"><span>  overlays/</span></span>\n<span class=\"line\"><span>    local/</span></span>\n<span class=\"line\"><span>      kustomization.yaml             # namespace, images, ingress, certs</span></span>\n<span class=\"line\"><span>      &#x3C;service>.namespace.yaml</span></span>\n<span class=\"line\"><span>      ...</span></span></code></pre>",
+      "lang": "plaintext"
+    },
+    {
+      "type": "html",
+      "html": "<p>Rules from <code>agents.md</code>:</p>\n<ul>\n<li>Keep <code>base/</code> <strong>environment-agnostic</strong> — core resources and placeholder image names only; no hostnames, certs, or registry/tag pins.</li>\n<li>Put environment-specific data (<code>images:</code> overrides, IngressRoutes, Certificates, patches) in <code>overlays/&#x3C;env>/</code>.</li>\n<li>Every environment needs its own <code>overlays/&#x3C;env>/kustomization.yaml</code>, and overlays reference <code>../../base</code>.</li>\n</ul>\n<h2 id=\"container-shape-model-mtx\"><a href=\"#container-shape-model-mtx\">Container shape (model: mtx)</a></h2>\n<p>The MediaMTX integration (<code>k8s/mtx</code>) runs the integration API (<code>mtxrmapi</code>) as a container alongside the product. Patterns to copy for your <code>&#x3C;short_name>rmapi</code> container:</p>\n<ul>\n<li>A <code>healthcheck</code>-backed startup/readiness/liveness probe on <code>GET /api/v1/healthcheck</code> (mtx uses container port <code>8005</code>).</li>\n<li>Mount the CA bundle at <code>/ca_public</code> from the <code>opendefense-bundle</code> ConfigMap.</li>\n<li>Mount the shared rasenmaeher data at <code>/pvarki</code> (so <code>get_manifest()</code> can read <code>/pvarki/kraftwerk-init.json</code>).</li>\n<li>A persistent data mount at <code>/data/persistent</code>.</li>\n<li>For <code>component</code> UIs, an <code>ui-files</code> <code>emptyDir</code> shared with an nginx sidecar serving <code>/ui/&#x3C;short_name></code>.</li>\n</ul>\n<h2 id=\"deploy-your-changes\"><a href=\"#deploy-your-changes\">Deploy your changes</a></h2>\n<p>After adding your overlay to the aggregator (see <strong>Register your integration (Kubernetes)</strong>), build and apply with the phased task flow rather than ad-hoc <code>kubectl apply</code>:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#61AFEF\">task</span><span style=\"color:#98C379\"> deploy</span><span style=\"color:#7F848E;font-style:italic\">        # phased deploy of infra + apps with readiness gates</span></span>\n<span class=\"line\"><span style=\"color:#7F848E;font-style:italic\"># or inspect a single overlay:</span></span>\n<span class=\"line\"><span style=\"color:#61AFEF\">kubectl</span><span style=\"color:#98C379\"> kustomize</span><span style=\"color:#D19A66\"> --enable-helm</span><span style=\"color:#98C379\"> k8s/</span><span style=\"color:#ABB2BF\">&#x3C;</span><span style=\"color:#98C379\">servic</span><span style=\"color:#ABB2BF\">e></span><span style=\"color:#98C379\">/overlays/local</span></span></code></pre>",
+      "lang": "bash"
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"developing-the-core-rmapi-against-the-cluster\"><a href=\"#developing-the-core-rmapi-against-the-cluster\">Developing the core rmapi against the cluster</a></h2>\n<p>To iterate on the core RASENMAEHER API itself against a running cluster, use <a href=\"https://mirrord.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">mirrord</a> from the rasenmaeher repo:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#61AFEF\">mirrord</span><span style=\"color:#98C379\"> exec</span><span style=\"color:#D19A66\"> --steal</span><span style=\"color:#D19A66\"> --target-namespace</span><span style=\"color:#98C379\"> opendefense-system</span><span style=\"color:#56B6C2\"> \\</span></span>\n<span class=\"line\"><span style=\"color:#D19A66\">  --target</span><span style=\"color:#98C379\"> deployment/opendefense-rmapi</span><span style=\"color:#D19A66\"> --</span><span style=\"color:#98C379\"> bash</span><span style=\"color:#D19A66\"> -c</span><span style=\"color:#56B6C2\"> \\</span></span>\n<span class=\"line\"><span style=\"color:#98C379\">  'JWT_PRIVKEY_PATH=./locadir/private/rm_jwtsign.key JWT_PUBKEY_PATH=./locadir/public \\</span></span>\n<span class=\"line\"><span style=\"color:#98C379\">   poetry run uvicorn --reload --factory rasenmaeher_api.web.application:get_app'</span></span></code></pre>",
+      "lang": "bash"
+    },
+    {
+      "type": "html",
+      "html": "<blockquote>\n<p><strong>TODO:</strong> confirm whether a mirrord-style hot-reload flow is also documented for product integration APIs, or whether iterating means rebuilding the image and re-running <code>task deploy</code>.</p>\n</blockquote>"
+    }
+  ]
+}

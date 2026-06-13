@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 1,
+  "id": "6e3c983e-ac56-4a29-b118-9079502dd018",
+  "slug": "register-your-integration-kubernetes-wjtpPdtQ2k",
+  "collection": "build-an-integration",
+  "locale": "en",
+  "title": "Register your integration (Kubernetes)",
+  "breadcrumb": [
+    "Platforms",
+    "Kubernetes",
+    "Register your integration (Kubernetes)"
+  ],
+  "createdAt": "2026-06-13T13:21:36.042Z",
+  "updatedAt": "2026-06-13T13:21:36.042Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "1. Compose your overlay into the aggregator",
+      "id": "1-compose-your-overlay-into-the-aggregator"
+    },
+    {
+      "depth": 2,
+      "text": "2. Give the service its own namespace",
+      "id": "2-give-the-service-its-own-namespace"
+    },
+    {
+      "depth": 2,
+      "text": "3. Issue certificates from the platform CA",
+      "id": "3-issue-certificates-from-the-platform-ca"
+    },
+    {
+      "depth": 2,
+      "text": "4. In-cluster trust via trust-manager",
+      "id": "4-in-cluster-trust-via-trust-manager"
+    },
+    {
+      "depth": 2,
+      "text": "5. Traefik IngressRoute with mTLS",
+      "id": "5-traefik-ingressroute-with-mtls"
+    },
+    {
+      "depth": 2,
+      "text": "6. How the core rmapi reaches your service",
+      "id": "6-how-the-core-rmapi-reaches-your-service"
+    },
+    {
+      "depth": 2,
+      "text": "7. Deploy",
+      "id": "7-deploy"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>On the Kubernetes stack, registering a product is done entirely with <strong>manifests</strong> — there is no miniwerk and no <code>MW_PRODUCTS</code>. You add a Kustomize overlay with a Traefik <code>IngressRoute</code>, cert-manager <code>Certificate</code>s, and the in-cluster trust bundle, then compose your overlay into the aggregator. The <a href=\"https://github.com/pvarki/python-mediamtx-rmmtxauthz\" target=\"_blank\" rel=\"noopener noreferrer\">MediaMTX integration</a> under <code>k8s/mtx</code> is the worked model.</p>\n<blockquote>\n<p><strong>Platform scope: k8s (Kubernetes only).</strong> For the Docker Compose equivalent (miniwerk, <code>MW_PRODUCTS</code>, nginx upstreams), see <strong>Register your integration (Docker Compose)</strong>.</p>\n</blockquote>\n<h2 id=\"1-compose-your-overlay-into-the-aggregator\"><a href=\"#1-compose-your-overlay-into-the-aggregator\">1. Compose your overlay into the aggregator</a></h2>\n<p>The local stack composes products in <code>k8s/main/local/opendefense/kustomization.yaml</code>:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#E06C75\">resources</span><span style=\"color:#ABB2BF\">:</span></span>\n<span class=\"line\"><span style=\"color:#ABB2BF\">- </span><span style=\"color:#98C379\">../../../traefik/middleware/overlays/local</span></span>\n<span class=\"line\"><span style=\"color:#ABB2BF\">- </span><span style=\"color:#98C379\">../../../opendefense-pki/overlays/local</span></span>\n<span class=\"line\"><span style=\"color:#ABB2BF\">- </span><span style=\"color:#98C379\">../../../opendefense-system/overlays/local</span></span>\n<span class=\"line\"><span style=\"color:#ABB2BF\">- </span><span style=\"color:#98C379\">../../../battlelog/overlays/local</span></span>\n<span class=\"line\"><span style=\"color:#ABB2BF\">- </span><span style=\"color:#98C379\">../../../tak/overlays/local</span></span>\n<span class=\"line\"><span style=\"color:#ABB2BF\">- </span><span style=\"color:#98C379\">../../../mtx/overlays/local</span></span>\n<span class=\"line\"><span style=\"color:#7F848E;font-style:italic\"># add your service:</span></span>\n<span class=\"line\"><span style=\"color:#ABB2BF\">- </span><span style=\"color:#98C379\">../../../&#x3C;service>/overlays/local</span></span></code></pre>",
+      "lang": "yaml"
+    },
+    {
+      "type": "html",
+      "html": "<p>Add the matching line to the cloud aggregator (<code>k8s/main/cloud/opendefense</code>) for the cloud environment.</p>\n<h2 id=\"2-give-the-service-its-own-namespace\"><a href=\"#2-give-the-service-its-own-namespace\">2. Give the service its own namespace</a></h2>\n<p>Products run in their own namespace (e.g. <code>app-mtx</code>). Your overlay's <code>kustomization.yaml</code> sets <code>namespace:</code> and includes a <code>Namespace</code> resource:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#7F848E;font-style:italic\"># overlays/local/kustomization.yaml</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">namespace</span><span style=\"color:#ABB2BF\">: </span><span style=\"color:#98C379\">app-&#x3C;short_name></span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">resources</span><span style=\"color:#ABB2BF\">:</span></span>\n<span class=\"line\"><span style=\"color:#ABB2BF\">  - </span><span style=\"color:#98C379\">../../base</span></span>\n<span class=\"line\"><span style=\"color:#ABB2BF\">  - </span><span style=\"color:#98C379\">app-&#x3C;short_name>.namespace.yaml</span></span>\n<span class=\"line\"><span style=\"color:#ABB2BF\">  - </span><span style=\"color:#98C379\">&#x3C;short_name>.certificate.yaml</span></span>\n<span class=\"line\"><span style=\"color:#ABB2BF\">  - </span><span style=\"color:#98C379\">&#x3C;short_name>rmapi.certificate.yaml</span></span>\n<span class=\"line\"><span style=\"color:#ABB2BF\">  - </span><span style=\"color:#98C379\">app-&#x3C;short_name>.ingressroute.yaml</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">images</span><span style=\"color:#ABB2BF\">:</span></span>\n<span class=\"line\"><span style=\"color:#ABB2BF\">  - </span><span style=\"color:#E06C75\">name</span><span style=\"color:#ABB2BF\">: </span><span style=\"color:#98C379\">&#x3C;short_name>-rmapi-image</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">    newName</span><span style=\"color:#ABB2BF\">: </span><span style=\"color:#98C379\">ghcr.io/pvarki/&#x3C;your-integration-image></span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">    newTag</span><span style=\"color:#ABB2BF\">: </span><span style=\"color:#98C379\">&#x3C;tag></span></span></code></pre>",
+      "lang": "yaml"
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"3-issue-certificates-from-the-platform-ca\"><a href=\"#3-issue-certificates-from-the-platform-ca\">3. Issue certificates from the platform CA</a></h2>\n<p>cert-manager (not CFSSL) issues certs from the deployment's intermediate CA. Each product has a server cert and the integration API has a <strong>client</strong> cert (for the mTLS it presents). Model from <code>k8s/mtx/overlays/local</code>:</p>\n<p>Server certificate (DNS names for the product subdomains):</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#E06C75\">apiVersion</span><span style=\"color:#ABB2BF\">: </span><span style=\"color:#98C379\">cert-manager.io/v1</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">kind</span><span style=\"color:#ABB2BF\">: </span><span style=\"color:#98C379\">Certificate</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">metadata</span><span style=\"color:#ABB2BF\">:</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">  name</span><span style=\"color:#ABB2BF\">: </span><span style=\"color:#98C379\">&#x3C;short_name></span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">spec</span><span style=\"color:#ABB2BF\">:</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">  secretName</span><span style=\"color:#ABB2BF\">: </span><span style=\"color:#98C379\">app-&#x3C;short_name>-tls</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">  issuerRef</span><span style=\"color:#ABB2BF\">:</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">    name</span><span style=\"color:#ABB2BF\">: </span><span style=\"color:#98C379\">opendefense-intermediate-ca-issuer</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">    kind</span><span style=\"color:#ABB2BF\">: </span><span style=\"color:#98C379\">ClusterIssuer</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">    group</span><span style=\"color:#ABB2BF\">: </span><span style=\"color:#98C379\">cert-manager.io</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">  dnsNames</span><span style=\"color:#ABB2BF\">:</span></span>\n<span class=\"line\"><span style=\"color:#ABB2BF\">    - </span><span style=\"color:#98C379\">&#x3C;short_name>.localmaeher.dev.pvarki.fi</span></span>\n<span class=\"line\"><span style=\"color:#ABB2BF\">    - </span><span style=\"color:#98C379\">mtls.&#x3C;short_name>.localmaeher.dev.pvarki.fi</span></span></code></pre>",
+      "lang": "yaml"
+    },
+    {
+      "type": "html",
+      "html": "<p>Client certificate for the integration API:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#E06C75\">apiVersion</span><span style=\"color:#ABB2BF\">: </span><span style=\"color:#98C379\">cert-manager.io/v1</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">kind</span><span style=\"color:#ABB2BF\">: </span><span style=\"color:#98C379\">Certificate</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">metadata</span><span style=\"color:#ABB2BF\">:</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">  name</span><span style=\"color:#ABB2BF\">: </span><span style=\"color:#98C379\">&#x3C;short_name>rmapi-mtls-opendefense-dev</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">spec</span><span style=\"color:#ABB2BF\">:</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">  secretName</span><span style=\"color:#ABB2BF\">: </span><span style=\"color:#98C379\">&#x3C;short_name>rmapi-mtls-opendefense-dev-tls</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">  issuerRef</span><span style=\"color:#ABB2BF\">:</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">    name</span><span style=\"color:#ABB2BF\">: </span><span style=\"color:#98C379\">opendefense-intermediate-ca-issuer</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">    kind</span><span style=\"color:#ABB2BF\">: </span><span style=\"color:#98C379\">ClusterIssuer</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">    group</span><span style=\"color:#ABB2BF\">: </span><span style=\"color:#98C379\">cert-manager.io</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">  commonName</span><span style=\"color:#ABB2BF\">: </span><span style=\"color:#98C379\">&#x3C;short_name>rmapi.localmaeher.dev.pvarki.fi</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">  usages</span><span style=\"color:#ABB2BF\">:</span></span>\n<span class=\"line\"><span style=\"color:#ABB2BF\">    - </span><span style=\"color:#98C379\">digital signature</span></span>\n<span class=\"line\"><span style=\"color:#ABB2BF\">    - </span><span style=\"color:#98C379\">key encipherment</span></span>\n<span class=\"line\"><span style=\"color:#ABB2BF\">    - </span><span style=\"color:#98C379\">client auth</span></span></code></pre>",
+      "lang": "yaml"
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"4-in-cluster-trust-via-trust-manager\"><a href=\"#4-in-cluster-trust-via-trust-manager\">4. In-cluster trust via trust-manager</a></h2>\n<p>trust-manager (replacing CFSSL's distribution role) syncs the CA bundle defined by <code>opendefense-pki</code> (<code>opendefense-bundle</code>) into <strong>every namespace</strong> as a ConfigMap (<code>opendefense-ca-cert.pem</code>) and as a Secret key <code>ca.crt</code> for Traefik. Your integration container mounts it at <code>/ca_public</code>:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#E06C75\">volumes</span><span style=\"color:#ABB2BF\">:</span></span>\n<span class=\"line\"><span style=\"color:#ABB2BF\">  - </span><span style=\"color:#E06C75\">name</span><span style=\"color:#ABB2BF\">: </span><span style=\"color:#98C379\">ca-public</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">    configMap</span><span style=\"color:#ABB2BF\">:</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">      name</span><span style=\"color:#ABB2BF\">: </span><span style=\"color:#98C379\">opendefense-bundle</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">      items</span><span style=\"color:#ABB2BF\">:</span></span>\n<span class=\"line\"><span style=\"color:#ABB2BF\">        - </span><span style=\"color:#E06C75\">key</span><span style=\"color:#ABB2BF\">: </span><span style=\"color:#98C379\">opendefense-ca-cert.pem</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">          path</span><span style=\"color:#ABB2BF\">: </span><span style=\"color:#98C379\">opendefense-ca-cert.pem</span></span></code></pre>",
+      "lang": "yaml"
+    },
+    {
+      "type": "html",
+      "html": "<p>This is what lets your service verify that callbacks come from the core rmapi, and lets the core rmapi trust your service.</p>\n<h2 id=\"5-traefik-ingressroute-with-mtls\"><a href=\"#5-traefik-ingressroute-with-mtls\">5. Traefik IngressRoute with mTLS</a></h2>\n<p>Expose the integration API behind Traefik on <code>websecure</code>, requiring and verifying a client cert against the bundle, and apply the shared mTLS middleware chain. Model from <code>k8s/mtx/overlays/local/app-mtx.ingressroute.yaml</code>:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#E06C75\">apiVersion</span><span style=\"color:#ABB2BF\">: </span><span style=\"color:#98C379\">traefik.io/v1alpha1</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">kind</span><span style=\"color:#ABB2BF\">: </span><span style=\"color:#98C379\">TLSOption</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">metadata</span><span style=\"color:#ABB2BF\">:</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">  name</span><span style=\"color:#ABB2BF\">: </span><span style=\"color:#98C379\">&#x3C;short_name>-mtls</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">  namespace</span><span style=\"color:#ABB2BF\">: </span><span style=\"color:#98C379\">app-&#x3C;short_name></span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">spec</span><span style=\"color:#ABB2BF\">:</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">  clientAuth</span><span style=\"color:#ABB2BF\">:</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">    secretNames</span><span style=\"color:#ABB2BF\">:</span></span>\n<span class=\"line\"><span style=\"color:#ABB2BF\">      - </span><span style=\"color:#98C379\">opendefense-bundle</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">    clientAuthType</span><span style=\"color:#ABB2BF\">: </span><span style=\"color:#98C379\">RequireAndVerifyClientCert</span></span>\n<span class=\"line\"><span style=\"color:#ABB2BF\">---</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">apiVersion</span><span style=\"color:#ABB2BF\">: </span><span style=\"color:#98C379\">traefik.io/v1alpha1</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">kind</span><span style=\"color:#ABB2BF\">: </span><span style=\"color:#98C379\">IngressRoute</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">metadata</span><span style=\"color:#ABB2BF\">:</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">  name</span><span style=\"color:#ABB2BF\">: </span><span style=\"color:#98C379\">app-&#x3C;short_name></span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">  namespace</span><span style=\"color:#ABB2BF\">: </span><span style=\"color:#98C379\">app-&#x3C;short_name></span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">spec</span><span style=\"color:#ABB2BF\">:</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">  entryPoints</span><span style=\"color:#ABB2BF\">: [</span><span style=\"color:#98C379\">websecure</span><span style=\"color:#ABB2BF\">]</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">  routes</span><span style=\"color:#ABB2BF\">:</span></span>\n<span class=\"line\"><span style=\"color:#ABB2BF\">    - </span><span style=\"color:#E06C75\">match</span><span style=\"color:#ABB2BF\">: </span><span style=\"color:#98C379\">Host(`&#x3C;short_name>.localmaeher.dev.pvarki.fi`) &#x26;&#x26; PathPrefix(`/api`)</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">      kind</span><span style=\"color:#ABB2BF\">: </span><span style=\"color:#98C379\">Rule</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">      priority</span><span style=\"color:#ABB2BF\">: </span><span style=\"color:#D19A66\">110</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">      middlewares</span><span style=\"color:#ABB2BF\">:</span></span>\n<span class=\"line\"><span style=\"color:#ABB2BF\">        - </span><span style=\"color:#E06C75\">name</span><span style=\"color:#ABB2BF\">: </span><span style=\"color:#98C379\">mtls-chain-with-legacy</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">          namespace</span><span style=\"color:#ABB2BF\">: </span><span style=\"color:#98C379\">traefik-system</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">      services</span><span style=\"color:#ABB2BF\">:</span></span>\n<span class=\"line\"><span style=\"color:#ABB2BF\">        - </span><span style=\"color:#E06C75\">name</span><span style=\"color:#ABB2BF\">: </span><span style=\"color:#98C379\">&#x3C;short_name>-server</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">          port</span><span style=\"color:#ABB2BF\">: </span><span style=\"color:#98C379\">&#x3C;short_name>rmapi</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">  tls</span><span style=\"color:#ABB2BF\">:</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">    secretName</span><span style=\"color:#ABB2BF\">: </span><span style=\"color:#98C379\">app-&#x3C;short_name>-tls</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">    options</span><span style=\"color:#ABB2BF\">:</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">      name</span><span style=\"color:#ABB2BF\">: </span><span style=\"color:#98C379\">&#x3C;short_name>-mtls</span></span></code></pre>",
+      "lang": "yaml"
+    },
+    {
+      "type": "html",
+      "html": "<p>Add parallel routes for <code>mtls.&#x3C;short_name>....</code> and, for a <code>component</code> UI, a route matching <code>mtls.localmaeher.dev.pvarki.fi</code> + <code>PathPrefix(\"/ui/&#x3C;short_name>\")</code> served from your UI/nginx port.</p>\n<h2 id=\"6-how-the-core-rmapi-reaches-your-service\"><a href=\"#6-how-the-core-rmapi-reaches-your-service\">6. How the core rmapi reaches your service</a></h2>\n<p>The core API (<code>deployment/opendefense-rmapi</code> in <code>opendefense-system</code>) reads the deployment manifest from the shared <code>/pvarki</code> data and the CA from the synced <code>opendefense-bundle</code>, and calls your <code>/api/v1/users/*</code> endpoints over mTLS through Traefik. Your service authenticates the call with the same CN pin used everywhere (<code>comes_from_rm()</code> against <code>manifest[\"rasenmaeher\"][\"certcn\"]</code>).</p>\n<h2 id=\"7-deploy\"><a href=\"#7-deploy\">7. Deploy</a></h2>\n<p>Use the phased task flow so readiness gates between infra and apps are honoured:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#61AFEF\">task</span><span style=\"color:#98C379\"> deploy</span></span>\n<span class=\"line\"><span style=\"color:#7F848E;font-style:italic\"># inspect first if needed:</span></span>\n<span class=\"line\"><span style=\"color:#61AFEF\">kubectl</span><span style=\"color:#98C379\"> kustomize</span><span style=\"color:#D19A66\"> --enable-helm</span><span style=\"color:#98C379\"> k8s/</span><span style=\"color:#ABB2BF\">&#x3C;</span><span style=\"color:#98C379\">servic</span><span style=\"color:#ABB2BF\">e></span><span style=\"color:#98C379\">/overlays/local</span></span></code></pre>",
+      "lang": "bash"
+    },
+    {
+      "type": "html",
+      "html": "<blockquote>\n<p><strong>TODO:</strong> confirm the exact product-discovery mechanism the K8s core rmapi uses to learn about a newly added integration (manifest entry in the shared <code>/pvarki</code> data vs. a config field), since there is no <code>MW_PRODUCTS</code> list on this stack.</p>\n</blockquote>"
+    }
+  ]
+}

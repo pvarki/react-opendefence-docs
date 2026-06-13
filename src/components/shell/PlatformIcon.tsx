@@ -1,4 +1,4 @@
-import { Monitor } from "lucide-react";
+import { Boxes, Container, Monitor, type LucideIcon } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import type { Platform } from "@shared/content-schema";
 
@@ -17,8 +17,15 @@ const PATHS: Partial<Record<Platform, string>> = {
   windows: WINDOWS,
 };
 
+// Deployment targets (Developer Guide) use lucide glyphs, not brand marks.
+const LUCIDE: Partial<Record<Platform, LucideIcon>> = {
+  "docker-rasenmaeher-integration": Container,
+  "opendefence-k8s": Boxes,
+};
+
 /** OS mark for a platform key — ATAK/TAK Tracker render the Android robot,
- * iTAK the Apple logo, WinTAK the Windows flag. */
+ * iTAK the Apple logo, WinTAK the Windows flag; deployment targets get a
+ * container / boxes glyph. */
 export function PlatformIcon({
   platform,
   className,
@@ -26,6 +33,8 @@ export function PlatformIcon({
   platform: Platform;
   className?: string;
 }) {
+  const Lucide = LUCIDE[platform];
+  if (Lucide) return <Lucide className={className} aria-hidden />;
   const d = PATHS[platform];
   if (!d) return <Monitor className={className} aria-hidden />;
   return (

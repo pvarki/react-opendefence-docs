@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "label": "Operate",
+  "slug": "operate",
+  "items": [
+    {
+      "type": "doc",
+      "id": "operator-quickstart-iQzhtjCDTg",
+      "label": "Operator quickstart",
+      "slug": "operator-quickstart-iQzhtjCDTg"
+    },
+    {
+      "type": "doc",
+      "id": "audit-logging-observability-Va3sP3XTgz",
+      "label": "Audit logging & observability",
+      "slug": "audit-logging-observability-Va3sP3XTgz"
+    },
+    {
+      "type": "doc",
+      "id": "troubleshooting-teardown-H4UicAUh4c",
+      "label": "Troubleshooting & teardown",
+      "slug": "troubleshooting-teardown-H4UicAUh4c"
+    },
+    {
+      "type": "group",
+      "id": "docker-compose-legacy-V5BNgGudas",
+      "label": "Docker Compose",
+      "clientId": "docker-compose-legacy-V5BNgGudas",
+      "children": [
+        {
+          "type": "doc",
+          "id": "deploy-with-docker-compose-B518eLioFe",
+          "label": "Deploy with Docker Compose",
+          "slug": "deploy-with-docker-compose-B518eLioFe"
+        },
+        {
+          "type": "doc",
+          "id": "day-2-operations-docker-compose-FJFEoqvs6b",
+          "label": "Day-2 operations",
+          "slug": "day-2-operations-docker-compose-FJFEoqvs6b"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "kubernetes-rEPhr2GWLF",
+      "label": "Kubernetes",
+      "clientId": "kubernetes-rEPhr2GWLF",
+      "children": [
+        {
+          "type": "doc",
+          "id": "deploy-on-kubernetes-S5cwJYQzPu",
+          "label": "Deploy on Kubernetes",
+          "slug": "deploy-on-kubernetes-S5cwJYQzPu"
+        },
+        {
+          "type": "doc",
+          "id": "day-2-operations-kubernetes-lDjKap3DpF",
+          "label": "Day-2 operations",
+          "slug": "day-2-operations-kubernetes-lDjKap3DpF"
+        }
+      ]
+    }
+  ]
+}

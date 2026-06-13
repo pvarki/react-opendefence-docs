@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "locale": "sv",
-  "generatedAt": "2026-06-12T23:13:44.764Z",
+  "generatedAt": "2026-06-13T16:38:27.681Z",
   "collections": [
     {
       "slug": "deploy-app",
@@ -64,13 +64,6 @@
       "description": "MTX technical reference",
       "section": "wikis",
       "order": 5
-    },
-    {
-      "slug": "dev",
-      "label": "For Developers",
-      "description": "Developer-focused documentation",
-      "section": "dev",
-      "order": 6
     }
   ],
   "pages": [
@@ -969,66 +962,6 @@
       "order": 3,
       "chapterId": "verktyg-3E6a12iKtC",
       "chapterLabel": "Verktyg"
-    },
-    {
-      "id": "3c41e5d9-865f-4d1a-8b43-e63835ebfe83",
-      "slug": "oversikt-fKyQWM7Kzo",
-      "collection": "dev",
-      "title": "Översikt",
-      "breadcrumb": [
-        "Översikt"
-      ],
-      "path": "/content/sv/pages/dev/oversikt-fKyQWM7Kzo.json",
-      "updatedAt": "2026-06-02T06:53:41.386Z",
-      "order": 0
-    },
-    {
-      "id": "153b92bf-0872-4913-ae7f-41bf533131b2",
-      "slug": "arkitektur-e5tBDBLzwQ",
-      "collection": "dev",
-      "title": "Arkitektur",
-      "breadcrumb": [
-        "Arkitektur"
-      ],
-      "path": "/content/sv/pages/dev/arkitektur-e5tBDBLzwQ.json",
-      "updatedAt": "2026-06-02T06:48:17.363Z",
-      "order": 1
-    },
-    {
-      "id": "f760779a-fef5-4053-9ece-902fcaf11e78",
-      "slug": "utvecklingsguide-0Ogl37B9Gg",
-      "collection": "dev",
-      "title": "Utvecklingsguide",
-      "breadcrumb": [
-        "Utvecklingsguide"
-      ],
-      "path": "/content/sv/pages/dev/utvecklingsguide-0Ogl37B9Gg.json",
-      "updatedAt": "2026-05-28T07:30:07.553Z",
-      "order": 2
-    },
-    {
-      "id": "a1dee748-5b30-450f-b246-9238adb120b5",
-      "slug": "integrationsguide-O92eOYkuHQ",
-      "collection": "dev",
-      "title": "Integrationsguide",
-      "breadcrumb": [
-        "Integrationsguide"
-      ],
-      "path": "/content/sv/pages/dev/integrationsguide-O92eOYkuHQ.json",
-      "updatedAt": "2026-05-28T07:31:51.791Z",
-      "order": 3
-    },
-    {
-      "id": "9dbdb1d8-cd24-405f-b58c-60d46130e5bb",
-      "slug": "driftguide-yegkjZ9xGQ",
-      "collection": "dev",
-      "title": "Driftguide",
-      "breadcrumb": [
-        "Driftguide"
-      ],
-      "path": "/content/sv/pages/dev/driftguide-yegkjZ9xGQ.json",
-      "updatedAt": "2026-05-28T07:32:24.521Z",
-      "order": 4
     }
   ]
 }

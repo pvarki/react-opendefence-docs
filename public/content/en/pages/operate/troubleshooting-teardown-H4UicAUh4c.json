@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "id": "f8f8ca0a-df4b-4c09-919e-0caf6017fba4",
+  "slug": "troubleshooting-teardown-H4UicAUh4c",
+  "collection": "operate",
+  "locale": "en",
+  "title": "Troubleshooting & teardown",
+  "breadcrumb": [
+    "Troubleshooting & teardown"
+  ],
+  "createdAt": "2026-06-13T13:20:32.542Z",
+  "updatedAt": "2026-06-13T13:20:32.542Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Common failure modes",
+      "id": "common-failure-modes"
+    },
+    {
+      "depth": 3,
+      "text": "First-boot quirks (legacy local/dev)",
+      "id": "first-boot-quirks-legacy-localdev"
+    },
+    {
+      "depth": 2,
+      "text": "A triage checklist",
+      "id": "a-triage-checklist"
+    },
+    {
+      "depth": 2,
+      "text": "Teardown — legacy (Docker Compose)",
+      "id": "teardown--legacy-docker-compose"
+    },
+    {
+      "depth": 2,
+      "text": "Teardown — Kubernetes",
+      "id": "teardown--kubernetes"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>This page collects the common failure modes for a Deploy App instance and the clean teardown procedure for each stack. The headline rule: on the legacy stack, <code>**docker compose down -v**</code> <strong>destroys your certificates and users</strong> — never run it on an instance you intend to keep. The Kubernetes equivalent (<code>task down</code> / deleting the namespace) is similarly destructive.</p>\n<h2 id=\"common-failure-modes\"><a href=\"#common-failure-modes\">Common failure modes</a></h2>\n<p>Many of these surface in logs first; see <strong>Audit logging &#x26; observability</strong> for where to look and what is normal versus suspicious.</p>\n<table>\n<thead>\n<tr>\n<th>Symptom</th>\n<th>Log signal</th>\n<th>Impact</th>\n<th>First action</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Container crash loop</td>\n<td><code>Restarting (1) ...</code> repeated; non-zero exit</td>\n<td>Service unavailable</td>\n<td>Read the container's logs for the root cause; verify its dependencies started</td>\n</tr>\n<tr>\n<td>Database unreachable</td>\n<td><code>could not connect to server</code>; <code>pg_isready</code> fails</td>\n<td>All services degraded</td>\n<td>Check the postgres container, disk space, connection count</td>\n</tr>\n<tr>\n<td>Keycloak unhealthy</td>\n<td><code>/health/ready</code> not UP; Java heap errors</td>\n<td>Auth broken</td>\n<td>Check memory, DB connectivity; restart if needed</td>\n</tr>\n<tr>\n<td>OCSP stale</td>\n<td>healthcheck returns <code>crlfail</code>; CRL mtime past refresh interval</td>\n<td>Revocation checks fail</td>\n<td>Trigger a manual CRL refresh; check the CA service</td>\n</tr>\n<tr>\n<td>Certificate chain broken</td>\n<td><code>ssl_verify_client</code> errors; <code>unknown CA</code></td>\n<td>mTLS fails for all users</td>\n<td>Verify the CA public material is present and correct</td>\n</tr>\n<tr>\n<td>LDAP sync failure</td>\n<td>TAK auth errors; <code>ldapsearch</code> timeouts</td>\n<td>TAK users can't authenticate</td>\n<td>Check OpenLDAP and the Keycloak federation config</td>\n</tr>\n<tr>\n<td>Let's Encrypt failure (legacy)</td>\n<td>miniwerk renewal errors; cert-expiry warnings</td>\n<td>TLS breaks at expiry</td>\n<td>Check DNS, the ACME challenge, and rate limits</td>\n</tr>\n<tr>\n<td>Disk exhaustion</td>\n<td><code>No space left on device</code></td>\n<td>Writes fail, corruption risk</td>\n<td>Clean logs/images, expand storage</td>\n</tr>\n</tbody>\n</table>\n<p>Guiding principle from the runbook: the product is meant not to fail, and when a <em>local</em> instance does misbehave, the expected remediation is to <strong>boot it down and back up</strong> (or, for a serious/critical issue, destroy and redeploy the instance). Instance destruction is the expected fix for critical issues, because each instance is short-lived by design.</p>\n<h3 id=\"first-boot-quirks-legacy-localdev\"><a href=\"#first-boot-quirks-legacy-localdev\">First-boot quirks (legacy local/dev)</a></h3>\n<p>OpenLDAP and the Keycloak init sometimes fail on the very first start. If so, just bring the composition up again. If switching between the <code>rmlocal</code> and <code>rmdev</code> development environments causes odd network issues, run <code>down</code> for one before starting the other.</p>\n<h2 id=\"a-triage-checklist\"><a href=\"#a-triage-checklist\">A triage checklist</a></h2>\n<ol>\n<li><strong>Is everything running?</strong> <code>docker compose ps</code> (legacy) or <code>kubectl get pods -A</code> (k8s). Look for restart loops and non-<code>Running</code>/non-healthy states.</li>\n<li><strong>What do the logs say?</strong> Start with <code>rmapi</code>, then <code>rmnginx</code>, then the failing component. Filter for <code>ERROR</code>/<code>CRITICAL</code>/<code>fail</code>.</li>\n<li><strong>Are the dependencies healthy?</strong> Postgres, Keycloak, the CA, and OCSP underpin almost everything. Hit their health endpoints (see <strong>Audit logging &#x26; observability</strong>).</li>\n<li><strong>Are certs/trust intact?</strong> mTLS failures for <em>all</em> users point at the CA/trust material, not at individual users.</li>\n<li><strong>Is it a security signal, not a fault?</strong> Cross-check against the compromise indicators before restarting — for a suspected compromise, preserve logs and do <strong>not</strong> restart.</li>\n</ol>\n<h2 id=\"teardown--legacy-docker-compose\"><a href=\"#teardown--legacy-docker-compose\">Teardown — legacy (Docker Compose)</a></h2>\n<p>Stopping the stack without deleting data:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#61AFEF\">docker</span><span style=\"color:#98C379\"> compose</span><span style=\"color:#98C379\"> down</span></span></code></pre>",
+      "lang": "bash"
+    },
+    {
+      "type": "html",
+      "html": "<p><strong>Destructive teardown — deletes persistent volumes (certificates, users, databases):</strong></p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#7F848E;font-style:italic\"># !DO NOT DO! on an instance you want to keep —</span></span>\n<span class=\"line\"><span style=\"color:#7F848E;font-style:italic\"># this removes the certificates etc. and you will have to add all users again</span></span>\n<span class=\"line\"><span style=\"color:#61AFEF\">docker</span><span style=\"color:#98C379\"> compose</span><span style=\"color:#98C379\"> down</span><span style=\"color:#D19A66\"> -v</span></span></code></pre>",
+      "lang": "bash"
+    },
+    {
+      "type": "html",
+      "html": "<p>Use <code>down -v</code> only when you genuinely want a clean slate — for example resetting a dev environment, or before running the integration test suite (which expects a clean database). On a real instance, treat <code>-v</code> as \"destroy this instance.\"</p>\n<h2 id=\"teardown--kubernetes\"><a href=\"#teardown--kubernetes\">Teardown — Kubernetes</a></h2>\n<p>For a local <code>kind</code> instance, the project's <code>task</code> interface deletes the whole cluster (and therefore all instance data):</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#61AFEF\">task</span><span style=\"color:#98C379\"> down</span><span style=\"color:#7F848E;font-style:italic\">          # alias of cluster:delete — deletes the kind cluster</span></span>\n<span class=\"line\"><span style=\"color:#7F848E;font-style:italic\"># equivalently:</span></span>\n<span class=\"line\"><span style=\"color:#61AFEF\">task</span><span style=\"color:#98C379\"> cluster:delete</span></span></code></pre>",
+      "lang": "bash"
+    },
+    {
+      "type": "html",
+      "html": "<p>Under the hood this runs <code>kind delete cluster --name opendefense-kind</code>, which destroys the cluster and all of its persistent volumes — the equivalent of <code>down -v</code> on the legacy stack.</p>\n<p>On a shared/cloud cluster you usually do <strong>not</strong> want to delete the cluster. Instead remove the workload by deleting its namespace (this still destroys that instance's data):</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#61AFEF\">kubectl</span><span style=\"color:#98C379\"> delete</span><span style=\"color:#98C379\"> namespace</span><span style=\"color:#98C379\"> opendefense-system</span></span></code></pre>",
+      "lang": "bash"
+    },
+    {
+      "type": "html",
+      "html": "<blockquote>\n<p><strong>TODO:</strong> confirm the recommended cloud teardown for a Zarf-deployed package (whether to use <code>zarf package remove</code> against the deployed package, or delete namespaces) — not specified in the sources read.</p>\n</blockquote>\n<p>For planned, non-destructive day-2 work (updates, rotation, backups) see <strong>Day-2 operations (Docker Compose)</strong> or <strong>Day-2 operations (Kubernetes)</strong>.</p>"
+    }
+  ]
+}

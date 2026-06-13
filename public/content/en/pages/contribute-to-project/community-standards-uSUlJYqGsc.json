@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "48c3a5c8-c984-41d6-9deb-2dd3715e42b5",
+  "slug": "community-standards-uSUlJYqGsc",
+  "collection": "contribute-to-project",
+  "locale": "en",
+  "title": "Community & Standards",
+  "breadcrumb": [
+    "Community & Standards"
+  ],
+  "createdAt": "2026-06-13T13:21:41.083Z",
+  "updatedAt": "2026-06-13T13:21:41.083Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "markdown-pvarki-best_practises",
+      "id": "markdown-pvarki-best_practises"
+    },
+    {
+      "depth": 2,
+      "text": "config-ci-library",
+      "id": "config-ci-library"
+    },
+    {
+      "depth": 3,
+      "text": "Running the checks locally",
+      "id": "running-the-checks-locally"
+    },
+    {
+      "depth": 2,
+      "text": "Versioning conventions",
+      "id": "versioning-conventions"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>This page is the hub for the org-wide standards that the other Contribute pages point to. Rather than repeat the rules everywhere, <strong>Contributing</strong>, <strong>Reporting issues &#x26; support</strong>, <strong>Security policy &#x26; reporting</strong>, and <strong>Releases &#x26; versioning</strong> all defer here for the shared conventions. Two pvarki repos define those conventions:</p>\n<ul>\n<li><a href=\"https://github.com/pvarki/markdown-pvarki-best_practises\" target=\"_blank\" rel=\"noopener noreferrer\">pvarki/markdown-pvarki-best_practises</a> — documentation, Markdown, and dev-environment conventions.</li>\n<li><a href=\"https://github.com/pvarki/config-ci-library\" target=\"_blank\" rel=\"noopener noreferrer\">pvarki/config-ci-library</a> — the shared CI building blocks (reusable actions, pre-commit configs, image publishing).</li>\n</ul>\n<h2 id=\"markdown-pvarki-best_practises\"><a href=\"#markdown-pvarki-best_practises\">markdown-pvarki-best_practises</a></h2>\n<p>The best-practises repo is the reference for how docs and developer environments are expected to look. The legacy <code>docker-rasenmaeher-integration/README.rst</code> links it directly from its Windows notes:</p>\n<blockquote>\n<p>Use WSL, see best_practises repo for instructions on how to set it up.</p>\n</blockquote>\n<p>Key points it covers (link out rather than duplicate here):</p>\n<ul>\n<li>\n<p><strong>Markdown / documentation style</strong> — house conventions for the prose and code blocks in these repos.</p>\n</li>\n<li>\n<p><strong>Windows / dev-environment setup</strong> — use WSL, not git-bash, for the Docker-based legacy stack. Make sure your editor or git client does not rewrite line endings. For a CLI git client the README spells out the fix:</p>\n<pre><code class=\"language-bash\">git config --global core.eol lf\ngit config --global core.autocrlf false\n</code></pre>\n</li>\n</ul>\n<h2 id=\"config-ci-library\"><a href=\"#config-ci-library\">config-ci-library</a></h2>\n<p><code>config-ci-library</code> is the shared CI library every product repo pulls from, so checks stay consistent across the org. You will see it referenced as <code>pvarki/config-ci-library/.github/actions/&#x3C;name>@main</code> and via its hosted pre-commit configs. From the integration-template scaffolding and the matrix-rmapi workflows, the pieces in active use include:</p>\n<ul>\n<li>\n<p><strong>Reusable composite actions</strong>, e.g.</p>\n<ul>\n<li><code>actions/setup-python</code> and <code>actions/setup-typescript</code> — pinned toolchains for CI jobs.</li>\n<li><code>actions/validate-bumpversion</code> — enforces a version bump on every PR (see <strong>Releases &#x26; versioning</strong>).</li>\n<li><code>actions/snyk-test</code> (on PRs) and <code>actions/snyk-monitor</code> (on <code>main</code>) — dependency vulnerability scanning, org <code>deployapp-products</code>.</li>\n<li><code>actions/publish-image</code> — builds and pushes the product container image to the configured registries (GHCR / Docker Hub / ACR).</li>\n</ul>\n</li>\n<li>\n<p><strong>Shared pre-commit configs</strong> fetched during scaffolding. The integration template's <code>copier.yml</code> pulls a pinned config from <code>config-ci-library</code> and writes it to <code>.pre-commit-config.yaml</code>, choosing a <code>python</code> or <code>python+typescript</code> variant depending on the integration type:</p>\n<pre><code class=\"language-text\">config-ci-library/pre-commit/configs/python.pre-commit-config.yaml\nconfig-ci-library/pre-commit/configs/python+typescript.pre-commit-config.yaml\n</code></pre>\n</li>\n</ul>\n<h3 id=\"running-the-checks-locally\"><a href=\"#running-the-checks-locally\">Running the checks locally</a></h3>\n<p>Across the repos the entry point is the same:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#61AFEF\">pre-commit</span><span style=\"color:#98C379\"> install</span><span style=\"color:#D19A66\"> --install-hooks</span></span>\n<span class=\"line\"><span style=\"color:#61AFEF\">pre-commit</span><span style=\"color:#98C379\"> run</span><span style=\"color:#D19A66\"> --all-files</span></span></code></pre>",
+      "lang": "bash"
+    },
+    {
+      "type": "html",
+      "html": "<p>Parser-required linters (ruff, mypy, prettier, eslint) run against rendered output; the integration template wires these through nox (<code>uvx --with nox nox -s lint</code>).</p>\n<h2 id=\"versioning-conventions\"><a href=\"#versioning-conventions\">Versioning conventions</a></h2>\n<p>The product repos increment versions with <a href=\"https://github.com/callowayproject/bump-my-version\" target=\"_blank\" rel=\"noopener noreferrer\">bump-my-version</a> and CI verifies the bump on every PR via <code>validate-bumpversion</code>. The mechanics and release-notes formats are covered on <strong>Releases &#x26; versioning</strong>.</p>\n<blockquote>\n<p><strong>TODO:</strong> confirm the full current contents of <code>markdown-pvarki-best_practises</code> and <code>config-ci-library</code> against their live repos before publishing — only the parts referenced by the local sources are summarized here.</p>\n</blockquote>"
+    }
+  ]
+}

@@ -17,9 +17,9 @@
     "userCard": "I use Deploy App",
     "userCardDesc": "Get started, log in, use products in the field",
     "guidesCard": "I need a product guide",
-    "guidesCardDesc": "Step-by-step guides for official product integrations like TAK",
+    "guidesCardDesc": "Step-by-step guides for official products",
     "devCard": "I develop or operate",
-    "devCardDesc": "Architecture, integrations, API reference, runbooks",
+    "devCardDesc": "All you need to run, develop or integrate",
     "continueReading": "Continue reading",
     "powerCard": "I'm a power user",
     "powerCardDesc": "Use the products in advanced ways"
@@ -67,6 +67,7 @@
   },
   "footer": {
     "lead": "OpenDefence is an FDF-serving national defence open-source project that aims to offer multi-domain-operation-capable C2 services to soldiers in an easy and interoperable way.",
+    "lead2": "The cornerstone of the project is Deploy App, which accepts product integrations, defines how to spin up servers with them, and lets soldiers easily use them.",
     "tellMore": "Tell me more",
     "core": "The core of the OpenDefence stack is Deploy App. For users, it's best described as an app for adding and managing users; for developers, as an interface to integrate your application with — to get it into the hands of soldiers.",
     "easyTitle": "Goal of easy access",
@@ -128,6 +129,17 @@
       "goal3Title": "The integration hub",
       "goal3Body": "Every official OpenDefence product integrates through Deploy App. Adding a new service is a configuration task, not a development task — operators can deploy approved integrations in minutes.",
       "copyright": "Deploy App & this site: © OpenDefence"
+    }
+  },
+  "clientFooter": {
+    "atak": {
+      "lead": "ATAK is the flagship application of the TAK ecosystem. There are a few so-called flavors of ATAK — CIVTAK, MilTAK, and national TAK apps. They are the same application, but they accept only specifically signed plugins: a MilTAK installation will accept MilTAK-signed plugins and reject others."
+    },
+    "itak": {
+      "lead": "iTAK is the iOS version of ATAK, bringing the full TAK situational awareness experience to iPhone and iPad. It shares the same server protocols and data formats as ATAK, so ATAK and iTAK users see each other on the same map."
+    },
+    "wintak": {
+      "lead": "WinTAK is the Windows desktop client for the TAK ecosystem, designed for use in command posts and operations centers where a full-screen map interface and keyboard-driven workflow are preferred over a mobile device."
     }
   }
 }

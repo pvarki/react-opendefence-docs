@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "label": "Build an Integration",
+  "slug": "build-an-integration",
+  "items": [
+    {
+      "type": "doc",
+      "id": "integration-overview-unDmuW0qFc",
+      "label": "Integration overview",
+      "slug": "integration-overview-unDmuW0qFc"
+    },
+    {
+      "type": "doc",
+      "id": "scaffold-from-the-template-EhvdImAQbC",
+      "label": "Scaffold from the template",
+      "slug": "scaffold-from-the-template-EhvdImAQbC"
+    },
+    {
+      "type": "doc",
+      "id": "worked-example-matrix-918lI88Lsy",
+      "label": "Worked example: Matrix",
+      "slug": "worked-example-matrix-918lI88Lsy"
+    },
+    {
+      "type": "doc",
+      "id": "integration-conventions-donts-cwt08BEcut",
+      "label": "Integration conventions & don'ts",
+      "slug": "integration-conventions-donts-cwt08BEcut"
+    },
+    {
+      "type": "group",
+      "id": "docker-compose-legacy-XHGf0sQykt",
+      "label": "Docker Compose",
+      "clientId": "docker-compose-legacy-XHGf0sQykt",
+      "children": [
+        {
+          "type": "doc",
+          "id": "set-up-your-dev-environment-docker-compose-h3bTY6alr3",
+          "label": "Set up your dev environment",
+          "slug": "set-up-your-dev-environment-docker-compose-h3bTY6alr3"
+        },
+        {
+          "type": "doc",
+          "id": "register-your-integration-docker-compose-W6oMGCVsAt",
+          "label": "Register your integration",
+          "slug": "register-your-integration-docker-compose-W6oMGCVsAt"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "kubernetes-p5xIRYVegQ",
+      "label": "Kubernetes",
+      "clientId": "kubernetes-p5xIRYVegQ",
+      "children": [
+        {
+          "type": "doc",
+          "id": "set-up-your-dev-environment-kubernetes-XEyoKN31OD",
+          "label": "Set up your dev environment",
+          "slug": "set-up-your-dev-environment-kubernetes-XEyoKN31OD"
+        },
+        {
+          "type": "doc",
+          "id": "register-your-integration-kubernetes-wjtpPdtQ2k",
+          "label": "Register your integration",
+          "slug": "register-your-integration-kubernetes-wjtpPdtQ2k"
+        }
+      ]
+    }
+  ]
+}

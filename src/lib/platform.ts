@@ -120,6 +120,9 @@ export const PLATFORM_LABELS: Record<Platform, string> = {
   windows: "Windows",
   linux: "Linux",
   macos: "macOS",
+  // Developer Guide deployment targets (legacy docker-compose vs new K8s).
+  "docker-rasenmaeher-integration": "RASENMAEHER (Docker)",
+  "opendefence-k8s": "OpenDefence K8s",
 };
 
 /**

@@ -28,12 +28,29 @@ export function normalizeLocale(raw: string): Locale | undefined {
 // The reader shows one platform at a time, selected in the navbar.
 // ---------------------------------------------------------------------------
 
+// OS platforms drive the end-user/product area selector (TAK, MTX, ...).
+export const OS_PLATFORMS = [
+  "android",
+  "ios",
+  "windows",
+  "linux",
+  "macos",
+] as const;
+// Deployment targets drive the developer-docs legacy-vs-new toggle. They are
+// NOT shown in the generic OS picker — only as dev-book clients / the dev-area
+// generic list.
+export const DEPLOYMENT_PLATFORMS = [
+  "docker-rasenmaeher-integration",
+  "opendefence-k8s",
+] as const;
 export const PLATFORMS = [
   "android",
   "ios",
   "windows",
   "linux",
   "macos",
+  "docker-rasenmaeher-integration",
+  "opendefence-k8s",
 ] as const;
 export const PlatformSchema = z.enum(PLATFORMS);
 export type Platform = z.infer<typeof PlatformSchema>;
@@ -149,6 +166,13 @@ export const CodeBlockSchema = z.object({
   title: z.string().optional(),
 });
 
+export const MermaidBlockSchema = z.object({
+  type: z.literal("mermaid"),
+  /** Raw mermaid source; rendered to SVG client-side (heavy lib, lazy). */
+  code: z.string(),
+  title: z.string().optional(),
+});
+
 export const BlockSchema = z.discriminatedUnion("type", [
   HtmlBlockSchema,
   SlidesetBlockSchema,
@@ -156,6 +180,7 @@ export const BlockSchema = z.discriminatedUnion("type", [
   YoutubeBlockSchema,
   PdfBlockSchema,
   CodeBlockSchema,
+  MermaidBlockSchema,
 ]);
 export type Block = z.infer<typeof BlockSchema>;
 

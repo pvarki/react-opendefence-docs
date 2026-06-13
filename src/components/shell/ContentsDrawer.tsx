@@ -8,7 +8,7 @@ import {
   DrawerDescription,
   DrawerTitle,
 } from "@/components/ui/drawer";
-import { SidebarItems } from "@/components/shell/SidebarNav";
+import { DevDocsNavBody, SidebarItems } from "@/components/shell/SidebarNav";
 import { filterSidebarByClient } from "@/lib/content/neighbors";
 import { usePlatformPicker } from "@/lib/usePlatformPicker";
 import { PlatformList } from "@/components/shell/PlatformList";
@@ -53,6 +53,9 @@ export function ContentsSheet({
   const items = sidebar
     ? filterSidebarByClient(sidebar.items, hasClients ? active?.id : undefined)
     : [];
+  const isDev =
+    reader.manifest.collections.find((c) => c.slug === reader.collection)
+      ?.section === "dev";
 
   return (
     <Drawer open={open} onOpenChange={onOpenChange}>
@@ -77,13 +80,25 @@ export function ContentsSheet({
               />
             </>
           )}
-          <SidebarItems
-            items={items}
-            locale={locale}
-            collection={reader.collection}
-            currentSlug={reader.slug}
-            onNavigate={() => onOpenChange(false)}
-          />
+          {isDev ? (
+            <DevDocsNavBody
+              locale={locale}
+              contentLocale={reader.contentLocale}
+              manifest={reader.manifest}
+              currentCollection={reader.collection}
+              currentSlug={reader.slug}
+              clientId={hasClients ? active?.id : undefined}
+              onNavigate={() => onOpenChange(false)}
+            />
+          ) : (
+            <SidebarItems
+              items={items}
+              locale={locale}
+              collection={reader.collection}
+              currentSlug={reader.slug}
+              onNavigate={() => onOpenChange(false)}
+            />
+          )}
         </nav>
       </DrawerContent>
     </Drawer>

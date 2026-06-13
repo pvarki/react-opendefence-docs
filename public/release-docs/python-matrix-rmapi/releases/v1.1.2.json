@@ -1,0 +1,5 @@
+{
+  "tag": "v1.1.2",
+  "publishedAt": "2026-06-09T19:29:41Z",
+  "html": "<h2 id=\"112-2026-06-09\"><a href=\"#112-2026-06-09\"><a href=\"https://github.com/pvarki/python-matrix-rmapi/releases/tag/v1.1.2\" target=\"_blank\" rel=\"noopener noreferrer\">1.1.2</a> (2026-06-09)</a></h2>\n<h3 id=\"features\"><a href=\"#features\">Features</a></h3>\n<ul>\n<li>implement release-please for versioning and releases (<a href=\"https://github.com/pvarki/python-matrix-rmapi/commit/35bf3bdd243ba2da4703a913481f002a6a66564e\" target=\"_blank\" rel=\"noopener noreferrer\">35bf3bd</a>)</li>\n</ul>\n<h3 id=\"documentation\"><a href=\"#documentation\">Documentation</a></h3>\n<ul>\n<li>fix release-please changelog list (<a href=\"https://github.com/pvarki/python-matrix-rmapi/commit/725a56171f9c126b1c3432239563042209960aea\" target=\"_blank\" rel=\"noopener noreferrer\">725a561</a>)</li>\n<li>update readme (<a href=\"https://github.com/pvarki/python-matrix-rmapi/commit/17604f74e02dc70324dd53a3585aab9c7636c214\" target=\"_blank\" rel=\"noopener noreferrer\">17604f7</a>)</li>\n</ul>"
+}

@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "label": "Introduction",
+  "slug": "introduction",
+  "items": [
+    {
+      "type": "doc",
+      "id": "what-is-deploy-app-HGko2yWWay",
+      "label": "What is Deploy App",
+      "slug": "what-is-deploy-app-HGko2yWWay"
+    },
+    {
+      "type": "doc",
+      "id": "choose-your-platform-legacy-docker-vs-kubernetes-HMH7bBbZTO",
+      "label": "Choose your platform: legacy Docker vs Kubernetes",
+      "slug": "choose-your-platform-legacy-docker-vs-kubernetes-HMH7bBbZTO"
+    },
+    {
+      "type": "doc",
+      "id": "architecture-orientation-H9Vndl9nba",
+      "label": "Architecture orientation",
+      "slug": "architecture-orientation-H9Vndl9nba"
+    },
+    {
+      "type": "doc",
+      "id": "glossary-bM0nAcqNkN",
+      "label": "Glossary",
+      "slug": "glossary-bM0nAcqNkN"
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "locale": "en",
-  "generatedAt": "2026-06-12T23:13:44.764Z",
+  "generatedAt": "2026-06-13T16:38:27.681Z",
   "collections": [
     {
       "slug": "deploy-app",
@@ -134,11 +134,75 @@
       "order": 6
     },
     {
-      "slug": "dev",
-      "label": "For Developers",
-      "description": "Developer-focused documentation",
+      "slug": "introduction",
+      "label": "Introduction",
+      "description": "Start here: what Deploy App is and how to choose a platform",
       "section": "dev",
       "order": 7
+    },
+    {
+      "slug": "operate",
+      "label": "Operate",
+      "description": "Deploy and run Deploy App",
+      "section": "dev",
+      "order": 8,
+      "clients": [
+        {
+          "id": "docker-compose-legacy-V5BNgGudas",
+          "label": "Docker Compose",
+          "platform": "docker-rasenmaeher-integration"
+        },
+        {
+          "id": "kubernetes-rEPhr2GWLF",
+          "label": "Kubernetes",
+          "platform": "opendefence-k8s"
+        }
+      ]
+    },
+    {
+      "slug": "develop-deploy-app",
+      "label": "Develop Deploy App",
+      "description": "Work on the Deploy App core (rmapi)",
+      "section": "dev",
+      "order": 9,
+      "clients": [
+        {
+          "id": "docker-compose-legacy-nhqHtxFBvx",
+          "label": "Docker Compose",
+          "platform": "docker-rasenmaeher-integration"
+        },
+        {
+          "id": "kubernetes-plT6WHkYy5",
+          "label": "Kubernetes",
+          "platform": "opendefence-k8s"
+        }
+      ]
+    },
+    {
+      "slug": "build-an-integration",
+      "label": "Build an Integration",
+      "description": "Build a product integration API for Deploy App",
+      "section": "dev",
+      "order": 10,
+      "clients": [
+        {
+          "id": "docker-compose-legacy-XHGf0sQykt",
+          "label": "Docker Compose",
+          "platform": "docker-rasenmaeher-integration"
+        },
+        {
+          "id": "kubernetes-p5xIRYVegQ",
+          "label": "Kubernetes",
+          "platform": "opendefence-k8s"
+        }
+      ]
+    },
+    {
+      "slug": "contribute-to-project",
+      "label": "Contribute to Project",
+      "description": "Contribute across the pvarki repositories",
+      "section": "dev",
+      "order": 11
     }
   ],
   "pages": [
@@ -152,7 +216,7 @@
         "Introduction"
       ],
       "path": "/content/en/pages/deploy-app/introduction-d1XzfzOkpz.json",
-      "updatedAt": "2026-06-12T23:07:43.260Z",
+      "updatedAt": "2026-06-13T08:53:26.790Z",
       "order": 0
     },
     {
@@ -2800,63 +2864,447 @@
       "chapterLabel": "Tools"
     },
     {
-      "id": "aa870c3f-5d61-41ec-8879-d398ad286448",
-      "slug": "overview-vYOjfpdwjs",
-      "collection": "dev",
-      "title": "Overview",
+      "id": "1c499c9e-1ef7-49a9-b8ae-d77266a97f83",
+      "slug": "what-is-deploy-app-HGko2yWWay",
+      "collection": "introduction",
+      "title": "What is Deploy App",
       "breadcrumb": [
-        "Overview"
+        "What is Deploy App"
       ],
-      "path": "/content/en/pages/dev/overview-vYOjfpdwjs.json",
-      "updatedAt": "2026-06-02T06:53:32.414Z",
+      "path": "/content/en/pages/introduction/what-is-deploy-app-HGko2yWWay.json",
+      "updatedAt": "2026-06-13T13:20:28.316Z",
       "order": 0
     },
     {
-      "id": "134aff5a-b4b4-4c2f-a494-c61d1e7a8a14",
-      "slug": "architecture-IOuPq9WIIb",
-      "collection": "dev",
-      "title": "Architecture",
+      "id": "bf9c17d5-f90b-477a-ade1-e9da7590f132",
+      "slug": "choose-your-platform-legacy-docker-vs-kubernetes-HMH7bBbZTO",
+      "collection": "introduction",
+      "title": "Choose your platform: legacy Docker vs Kubernetes",
       "breadcrumb": [
-        "Architecture"
+        "Choose your platform: legacy Docker vs Kubernetes"
       ],
-      "path": "/content/en/pages/dev/architecture-IOuPq9WIIb.json",
-      "updatedAt": "2026-06-02T06:52:37.018Z",
+      "path": "/content/en/pages/introduction/choose-your-platform-legacy-docker-vs-kubernetes-HMH7bBbZTO.json",
+      "updatedAt": "2026-06-13T13:20:28.722Z",
       "order": 1
     },
     {
-      "id": "6c320d9e-dad4-4ed8-8026-94620b6084ff",
-      "slug": "development-guide-cXwaZVMJSd",
-      "collection": "dev",
-      "title": "Development Guide",
+      "id": "c9108d13-25cb-446a-8f4d-fd2e8886e1eb",
+      "slug": "architecture-orientation-H9Vndl9nba",
+      "collection": "introduction",
+      "title": "Architecture orientation",
       "breadcrumb": [
-        "Development Guide"
+        "Architecture orientation"
       ],
-      "path": "/content/en/pages/dev/development-guide-cXwaZVMJSd.json",
-      "updatedAt": "2026-06-02T06:52:53.350Z",
+      "path": "/content/en/pages/introduction/architecture-orientation-H9Vndl9nba.json",
+      "updatedAt": "2026-06-13T14:35:40.206Z",
       "order": 2
     },
     {
-      "id": "2aeb4f63-0d3d-407c-9a8b-e452e9c36b0b",
-      "slug": "integration-guide-xrzqbaaOre",
-      "collection": "dev",
-      "title": "Integration Guide",
+      "id": "fade3c07-b137-4d6a-aa34-1e8c576760bc",
+      "slug": "glossary-bM0nAcqNkN",
+      "collection": "introduction",
+      "title": "Glossary",
       "breadcrumb": [
-        "Integration Guide"
+        "Glossary"
       ],
-      "path": "/content/en/pages/dev/integration-guide-xrzqbaaOre.json",
-      "updatedAt": "2026-06-02T06:53:05.461Z",
+      "path": "/content/en/pages/introduction/glossary-bM0nAcqNkN.json",
+      "updatedAt": "2026-06-13T13:20:29.553Z",
       "order": 3
     },
     {
-      "id": "5b08e73e-4ff5-4738-8d9c-e077f5dc7da1",
-      "slug": "operating-guide-HWk7wA10AV",
-      "collection": "dev",
-      "title": "Operating Guide",
+      "id": "c4ffc11f-cea6-40d2-94cc-bb8c0a692e4d",
+      "slug": "operator-quickstart-iQzhtjCDTg",
+      "collection": "operate",
+      "title": "Operator quickstart",
       "breadcrumb": [
-        "Operating Guide"
+        "Operator quickstart"
       ],
-      "path": "/content/en/pages/dev/operating-guide-HWk7wA10AV.json",
-      "updatedAt": "2026-06-02T06:50:51.165Z",
+      "path": "/content/en/pages/operate/operator-quickstart-iQzhtjCDTg.json",
+      "updatedAt": "2026-06-13T16:38:24.821Z",
+      "order": 0
+    },
+    {
+      "id": "b811818c-21be-4c5a-b26f-b27cb64bfd8b",
+      "slug": "audit-logging-observability-Va3sP3XTgz",
+      "collection": "operate",
+      "title": "Audit logging & observability",
+      "breadcrumb": [
+        "Audit logging & observability"
+      ],
+      "path": "/content/en/pages/operate/audit-logging-observability-Va3sP3XTgz.json",
+      "updatedAt": "2026-06-13T16:12:34.185Z",
+      "order": 1
+    },
+    {
+      "id": "f8f8ca0a-df4b-4c09-919e-0caf6017fba4",
+      "slug": "troubleshooting-teardown-H4UicAUh4c",
+      "collection": "operate",
+      "title": "Troubleshooting & teardown",
+      "breadcrumb": [
+        "Troubleshooting & teardown"
+      ],
+      "path": "/content/en/pages/operate/troubleshooting-teardown-H4UicAUh4c.json",
+      "updatedAt": "2026-06-13T13:20:32.542Z",
+      "order": 2
+    },
+    {
+      "id": "c1b3ce77-3445-4dd4-938a-ca3f4d4d3d29",
+      "slug": "deploy-with-docker-compose-B518eLioFe",
+      "collection": "operate",
+      "title": "Deploy with Docker Compose",
+      "breadcrumb": [
+        "Platforms",
+        "Docker Compose (legacy)",
+        "Deploy with Docker Compose"
+      ],
+      "path": "/content/en/pages/operate/deploy-with-docker-compose-B518eLioFe.json",
+      "updatedAt": "2026-06-13T13:20:33.562Z",
+      "order": 3,
+      "platform": "docker-rasenmaeher-integration",
+      "clientId": "docker-compose-legacy-V5BNgGudas",
+      "chapterId": "docker-compose-legacy-V5BNgGudas",
+      "chapterLabel": "Docker Compose"
+    },
+    {
+      "id": "d7bd61d9-3acd-498a-a846-ec2115327bc9",
+      "slug": "day-2-operations-docker-compose-FJFEoqvs6b",
+      "collection": "operate",
+      "title": "Day-2 operations (Docker Compose)",
+      "breadcrumb": [
+        "Platforms",
+        "Docker Compose (legacy)",
+        "Day-2 operations (Docker Compose)"
+      ],
+      "path": "/content/en/pages/operate/day-2-operations-docker-compose-FJFEoqvs6b.json",
+      "updatedAt": "2026-06-13T16:12:34.386Z",
+      "order": 4,
+      "platform": "docker-rasenmaeher-integration",
+      "clientId": "docker-compose-legacy-V5BNgGudas",
+      "chapterId": "docker-compose-legacy-V5BNgGudas",
+      "chapterLabel": "Docker Compose"
+    },
+    {
+      "id": "8a1b8ee3-f02b-4f5f-8782-cc62eaecbd20",
+      "slug": "deploy-on-kubernetes-S5cwJYQzPu",
+      "collection": "operate",
+      "title": "Deploy on Kubernetes",
+      "breadcrumb": [
+        "Platforms",
+        "Kubernetes",
+        "Deploy on Kubernetes"
+      ],
+      "path": "/content/en/pages/operate/deploy-on-kubernetes-S5cwJYQzPu.json",
+      "updatedAt": "2026-06-13T14:30:09.549Z",
+      "order": 5,
+      "platform": "opendefence-k8s",
+      "clientId": "kubernetes-rEPhr2GWLF",
+      "chapterId": "kubernetes-rEPhr2GWLF",
+      "chapterLabel": "Kubernetes"
+    },
+    {
+      "id": "3217efcd-4398-4d67-bff6-e39283952de1",
+      "slug": "day-2-operations-kubernetes-lDjKap3DpF",
+      "collection": "operate",
+      "title": "Day-2 operations (Kubernetes)",
+      "breadcrumb": [
+        "Platforms",
+        "Kubernetes",
+        "Day-2 operations (Kubernetes)"
+      ],
+      "path": "/content/en/pages/operate/day-2-operations-kubernetes-lDjKap3DpF.json",
+      "updatedAt": "2026-06-13T13:20:34.953Z",
+      "order": 6,
+      "platform": "opendefence-k8s",
+      "clientId": "kubernetes-rEPhr2GWLF",
+      "chapterId": "kubernetes-rEPhr2GWLF",
+      "chapterLabel": "Kubernetes"
+    },
+    {
+      "id": "f725653e-e420-4c65-971d-937932a373b2",
+      "slug": "core-development-overview-2Qap7v2dqB",
+      "collection": "develop-deploy-app",
+      "title": "Core development overview",
+      "breadcrumb": [
+        "Core development overview"
+      ],
+      "path": "/content/en/pages/develop-deploy-app/core-development-overview-2Qap7v2dqB.json",
+      "updatedAt": "2026-06-13T13:20:39.229Z",
+      "order": 0
+    },
+    {
+      "id": "6bd62fd3-6585-449a-a4da-3aec47e9d6b2",
+      "slug": "core-apis-the-rmapi-contract-RUcNFLQRXT",
+      "collection": "develop-deploy-app",
+      "title": "Core APIs & the rmapi contract",
+      "breadcrumb": [
+        "Core APIs & the rmapi contract"
+      ],
+      "path": "/content/en/pages/develop-deploy-app/core-apis-the-rmapi-contract-RUcNFLQRXT.json",
+      "updatedAt": "2026-06-13T14:30:10.324Z",
+      "order": 1
+    },
+    {
+      "id": "73d61828-bb47-418f-8d78-c14a050678a7",
+      "slug": "testing-ci-conventions-rhTvWtij7I",
+      "collection": "develop-deploy-app",
+      "title": "Testing & CI conventions",
+      "breadcrumb": [
+        "Testing & CI conventions"
+      ],
+      "path": "/content/en/pages/develop-deploy-app/testing-ci-conventions-rhTvWtij7I.json",
+      "updatedAt": "2026-06-13T13:20:40.036Z",
+      "order": 2
+    },
+    {
+      "id": "5e5eaf64-442a-442e-8112-a43920509129",
+      "slug": "set-up-your-dev-environment-docker-compose-t4JDwRuQs2",
+      "collection": "develop-deploy-app",
+      "title": "Set up your dev environment (Docker Compose)",
+      "breadcrumb": [
+        "Platforms",
+        "Docker Compose (legacy)",
+        "Set up your dev environment (Docker Compose)"
+      ],
+      "path": "/content/en/pages/develop-deploy-app/set-up-your-dev-environment-docker-compose-t4JDwRuQs2.json",
+      "updatedAt": "2026-06-13T14:30:10.674Z",
+      "order": 3,
+      "platform": "docker-rasenmaeher-integration",
+      "clientId": "docker-compose-legacy-nhqHtxFBvx",
+      "chapterId": "docker-compose-legacy-nhqHtxFBvx",
+      "chapterLabel": "Docker Compose"
+    },
+    {
+      "id": "20e25f38-ce64-4b6e-b539-35b879ac0426",
+      "slug": "iterate-on-the-core-api-docker-compose-qhg7EpPTbA",
+      "collection": "develop-deploy-app",
+      "title": "Iterate on the core API (Docker Compose)",
+      "breadcrumb": [
+        "Platforms",
+        "Docker Compose (legacy)",
+        "Iterate on the core API (Docker Compose)"
+      ],
+      "path": "/content/en/pages/develop-deploy-app/iterate-on-the-core-api-docker-compose-qhg7EpPTbA.json",
+      "updatedAt": "2026-06-13T14:30:11.043Z",
+      "order": 4,
+      "platform": "docker-rasenmaeher-integration",
+      "clientId": "docker-compose-legacy-nhqHtxFBvx",
+      "chapterId": "docker-compose-legacy-nhqHtxFBvx",
+      "chapterLabel": "Docker Compose"
+    },
+    {
+      "id": "b16688b9-102b-4352-8ab0-a8e3fba0afbb",
+      "slug": "set-up-your-dev-environment-kubernetes-z9YF0C0oH4",
+      "collection": "develop-deploy-app",
+      "title": "Set up your dev environment (Kubernetes)",
+      "breadcrumb": [
+        "Platforms",
+        "Kubernetes",
+        "Set up your dev environment (Kubernetes)"
+      ],
+      "path": "/content/en/pages/develop-deploy-app/set-up-your-dev-environment-kubernetes-z9YF0C0oH4.json",
+      "updatedAt": "2026-06-13T13:21:27.879Z",
+      "order": 5,
+      "platform": "opendefence-k8s",
+      "clientId": "kubernetes-plT6WHkYy5",
+      "chapterId": "kubernetes-plT6WHkYy5",
+      "chapterLabel": "Kubernetes"
+    },
+    {
+      "id": "c7777b46-96d5-490b-a9bf-908b9cba2e8e",
+      "slug": "iterate-on-the-core-api-mirrord-lzshevUc4T",
+      "collection": "develop-deploy-app",
+      "title": "Iterate on the core API (mirrord)",
+      "breadcrumb": [
+        "Platforms",
+        "Kubernetes",
+        "Iterate on the core API (mirrord)"
+      ],
+      "path": "/content/en/pages/develop-deploy-app/iterate-on-the-core-api-mirrord-lzshevUc4T.json",
+      "updatedAt": "2026-06-13T13:21:28.222Z",
+      "order": 6,
+      "platform": "opendefence-k8s",
+      "clientId": "kubernetes-plT6WHkYy5",
+      "chapterId": "kubernetes-plT6WHkYy5",
+      "chapterLabel": "Kubernetes"
+    },
+    {
+      "id": "06c323ed-98d4-42bc-9e42-db456259d50e",
+      "slug": "integration-overview-unDmuW0qFc",
+      "collection": "build-an-integration",
+      "title": "Integration overview",
+      "breadcrumb": [
+        "Integration overview"
+      ],
+      "path": "/content/en/pages/build-an-integration/integration-overview-unDmuW0qFc.json",
+      "updatedAt": "2026-06-13T13:21:32.551Z",
+      "order": 0
+    },
+    {
+      "id": "895b772c-7537-4230-a632-9a5440ce313a",
+      "slug": "scaffold-from-the-template-EhvdImAQbC",
+      "collection": "build-an-integration",
+      "title": "Scaffold from the template",
+      "breadcrumb": [
+        "Scaffold from the template"
+      ],
+      "path": "/content/en/pages/build-an-integration/scaffold-from-the-template-EhvdImAQbC.json",
+      "updatedAt": "2026-06-13T13:21:32.918Z",
+      "order": 1
+    },
+    {
+      "id": "9a36f046-832a-4adb-af2c-d44328ffd0be",
+      "slug": "worked-example-matrix-918lI88Lsy",
+      "collection": "build-an-integration",
+      "title": "Worked example: Matrix",
+      "breadcrumb": [
+        "Worked example: Matrix"
+      ],
+      "path": "/content/en/pages/build-an-integration/worked-example-matrix-918lI88Lsy.json",
+      "updatedAt": "2026-06-13T13:21:33.271Z",
+      "order": 2
+    },
+    {
+      "id": "2a690f0b-7983-4da9-9e65-103da15b8ee9",
+      "slug": "integration-conventions-donts-cwt08BEcut",
+      "collection": "build-an-integration",
+      "title": "Integration conventions & don'ts",
+      "breadcrumb": [
+        "Integration conventions & don'ts"
+      ],
+      "path": "/content/en/pages/build-an-integration/integration-conventions-donts-cwt08BEcut.json",
+      "updatedAt": "2026-06-13T13:21:33.620Z",
+      "order": 3
+    },
+    {
+      "id": "93f1ef12-bfff-40a2-83f3-b80dc939d81e",
+      "slug": "set-up-your-dev-environment-docker-compose-h3bTY6alr3",
+      "collection": "build-an-integration",
+      "title": "Set up your dev environment (Docker Compose)",
+      "breadcrumb": [
+        "Platforms",
+        "Docker Compose (legacy)",
+        "Set up your dev environment (Docker Compose)"
+      ],
+      "path": "/content/en/pages/build-an-integration/set-up-your-dev-environment-docker-compose-h3bTY6alr3.json",
+      "updatedAt": "2026-06-13T14:30:11.626Z",
+      "order": 4,
+      "platform": "docker-rasenmaeher-integration",
+      "clientId": "docker-compose-legacy-XHGf0sQykt",
+      "chapterId": "docker-compose-legacy-XHGf0sQykt",
+      "chapterLabel": "Docker Compose"
+    },
+    {
+      "id": "51e42e5c-1438-46f5-bf47-27bb1ece2492",
+      "slug": "register-your-integration-docker-compose-W6oMGCVsAt",
+      "collection": "build-an-integration",
+      "title": "Register your integration (Docker Compose)",
+      "breadcrumb": [
+        "Platforms",
+        "Docker Compose (legacy)",
+        "Register your integration (Docker Compose)"
+      ],
+      "path": "/content/en/pages/build-an-integration/register-your-integration-docker-compose-W6oMGCVsAt.json",
+      "updatedAt": "2026-06-13T14:30:11.999Z",
+      "order": 5,
+      "platform": "docker-rasenmaeher-integration",
+      "clientId": "docker-compose-legacy-XHGf0sQykt",
+      "chapterId": "docker-compose-legacy-XHGf0sQykt",
+      "chapterLabel": "Docker Compose"
+    },
+    {
+      "id": "f4966b7e-0f58-4b97-a5cc-0be8048303e2",
+      "slug": "set-up-your-dev-environment-kubernetes-XEyoKN31OD",
+      "collection": "build-an-integration",
+      "title": "Set up your dev environment (Kubernetes)",
+      "breadcrumb": [
+        "Platforms",
+        "Kubernetes",
+        "Set up your dev environment (Kubernetes)"
+      ],
+      "path": "/content/en/pages/build-an-integration/set-up-your-dev-environment-kubernetes-XEyoKN31OD.json",
+      "updatedAt": "2026-06-13T13:21:35.682Z",
+      "order": 6,
+      "platform": "opendefence-k8s",
+      "clientId": "kubernetes-p5xIRYVegQ",
+      "chapterId": "kubernetes-p5xIRYVegQ",
+      "chapterLabel": "Kubernetes"
+    },
+    {
+      "id": "6e3c983e-ac56-4a29-b118-9079502dd018",
+      "slug": "register-your-integration-kubernetes-wjtpPdtQ2k",
+      "collection": "build-an-integration",
+      "title": "Register your integration (Kubernetes)",
+      "breadcrumb": [
+        "Platforms",
+        "Kubernetes",
+        "Register your integration (Kubernetes)"
+      ],
+      "path": "/content/en/pages/build-an-integration/register-your-integration-kubernetes-wjtpPdtQ2k.json",
+      "updatedAt": "2026-06-13T13:21:36.042Z",
+      "order": 7,
+      "platform": "opendefence-k8s",
+      "clientId": "kubernetes-p5xIRYVegQ",
+      "chapterId": "kubernetes-p5xIRYVegQ",
+      "chapterLabel": "Kubernetes"
+    },
+    {
+      "id": "8ee75e4a-56a0-4df7-a17f-6030ad73457f",
+      "slug": "contributing-dsXGjtdXG8",
+      "collection": "contribute-to-project",
+      "title": "Contributing",
+      "breadcrumb": [
+        "Contributing"
+      ],
+      "path": "/content/en/pages/contribute-to-project/contributing-dsXGjtdXG8.json",
+      "updatedAt": "2026-06-13T13:21:40.742Z",
+      "order": 0
+    },
+    {
+      "id": "48c3a5c8-c984-41d6-9deb-2dd3715e42b5",
+      "slug": "community-standards-uSUlJYqGsc",
+      "collection": "contribute-to-project",
+      "title": "Community & Standards",
+      "breadcrumb": [
+        "Community & Standards"
+      ],
+      "path": "/content/en/pages/contribute-to-project/community-standards-uSUlJYqGsc.json",
+      "updatedAt": "2026-06-13T13:21:41.083Z",
+      "order": 1
+    },
+    {
+      "id": "b7a3d1be-7981-4eec-9cb4-edf3d4703f99",
+      "slug": "reporting-issues-support-MIgxRA5dFF",
+      "collection": "contribute-to-project",
+      "title": "Reporting issues & support",
+      "breadcrumb": [
+        "Reporting issues & support"
+      ],
+      "path": "/content/en/pages/contribute-to-project/reporting-issues-support-MIgxRA5dFF.json",
+      "updatedAt": "2026-06-13T13:21:41.422Z",
+      "order": 2
+    },
+    {
+      "id": "bdf385f2-45f3-4d85-a5c7-a40713924a49",
+      "slug": "security-policy-reporting-UmTyYXQA5Z",
+      "collection": "contribute-to-project",
+      "title": "Security policy & reporting",
+      "breadcrumb": [
+        "Security policy & reporting"
+      ],
+      "path": "/content/en/pages/contribute-to-project/security-policy-reporting-UmTyYXQA5Z.json",
+      "updatedAt": "2026-06-13T13:21:41.764Z",
+      "order": 3
+    },
+    {
+      "id": "c99da98b-79ce-4b99-831f-8c9eaecd3caa",
+      "slug": "releases-versioning-KNjehwFcnX",
+      "collection": "contribute-to-project",
+      "title": "Releases & versioning",
+      "breadcrumb": [
+        "Releases & versioning"
+      ],
+      "path": "/content/en/pages/contribute-to-project/releases-versioning-KNjehwFcnX.json",
+      "updatedAt": "2026-06-13T13:21:42.108Z",
       "order": 4
     }
   ]

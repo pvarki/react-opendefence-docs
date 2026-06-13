@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "id": "b811818c-21be-4c5a-b26f-b27cb64bfd8b",
+  "slug": "audit-logging-observability-Va3sP3XTgz",
+  "collection": "operate",
+  "locale": "en",
+  "title": "Audit logging & observability",
+  "breadcrumb": [
+    "Audit logging & observability"
+  ],
+  "createdAt": "2026-06-13T13:20:32.189Z",
+  "updatedAt": "2026-06-13T16:12:34.185Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Logging objectives",
+      "id": "logging-objectives"
+    },
+    {
+      "depth": 2,
+      "text": "Log categories",
+      "id": "log-categories"
+    },
+    {
+      "depth": 2,
+      "text": "The audit-log model",
+      "id": "the-audit-log-model"
+    },
+    {
+      "depth": 3,
+      "text": "Audit record fields",
+      "id": "audit-record-fields"
+    },
+    {
+      "depth": 2,
+      "text": "Log formats and levels",
+      "id": "log-formats-and-levels"
+    },
+    {
+      "depth": 2,
+      "text": "Logging architecture",
+      "id": "logging-architecture"
+    },
+    {
+      "depth": 2,
+      "text": "Where logs live",
+      "id": "where-logs-live"
+    },
+    {
+      "depth": 2,
+      "text": "Accessing logs",
+      "id": "accessing-logs"
+    },
+    {
+      "depth": 2,
+      "text": "Health checks",
+      "id": "health-checks"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Deploy App is built to be observed: every instance emits structured logs, and the audit log in particular is the authoritative record of who did what to whom. <strong>Deploy App defines clear logging and security requirements for its product integrations and for auditability</strong> — integrations log to the same model so activity across the whole stack is recorded consistently. This page describes the audit-log model, what is logged, where logs live, and how logs flow off the host. It is shared across both deployment stacks.</p>\n<blockquote>\n<p>The log-shipping and aggregation backend shown below is <strong>an example only</strong> — substitute your own collector, log store / SIEM, and on-call routing. For <strong>certified operators</strong>, OpenDefence can share a <strong>reference audit-log &#x26; alert setup guide</strong> with our recommended alert rules, endpoint by endpoint.</p>\n</blockquote>\n<h2 id=\"logging-objectives\"><a href=\"#logging-objectives\">Logging objectives</a></h2>\n<p>Logging is prioritized around security outcomes, in roughly this order:</p>\n<table>\n<thead>\n<tr>\n<th>Priority</th>\n<th>Objective</th>\n<th>Why</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Critical</td>\n<td>Detect unauthorized access attempts</td>\n<td>mTLS bypass, privilege escalation</td>\n</tr>\n<tr>\n<td>Critical</td>\n<td>Detect container/host compromise</td>\n<td>Escape attempts, unauthorized CLI access</td>\n</tr>\n<tr>\n<td>High</td>\n<td>Track certificate lifecycle</td>\n<td>Issuance, revocation, OCSP queries</td>\n</tr>\n<tr>\n<td>Medium</td>\n<td>Audit administrative actions</td>\n<td>User management, role changes</td>\n</tr>\n<tr>\n<td>Medium</td>\n<td>Monitor service health</td>\n<td>Availability, performance</td>\n</tr>\n<tr>\n<td>Low</td>\n<td>Operational troubleshooting</td>\n<td>Debug application issues</td>\n</tr>\n</tbody>\n</table>\n<h2 id=\"log-categories\"><a href=\"#log-categories\">Log categories</a></h2>\n<p>Logs fall into five categories:</p>\n<ol>\n<li><strong>Audit logs</strong> — user lifecycle, certificate operations, admin actions.</li>\n<li><strong>Security / intrusion logs</strong> — privilege escalation, container anomalies, intrusion markers.</li>\n<li><strong>Application logs</strong> — business logic, errors, stack traces.</li>\n<li><strong>Access logs</strong> — nginx requests, API calls, mTLS verification results.</li>\n<li><strong>System logs</strong> — container lifecycle, OS events, resource alerts.</li>\n</ol>\n<h2 id=\"the-audit-log-model\"><a href=\"#the-audit-log-model\">The audit-log model</a></h2>\n<p>Audit logging is implemented through <a href=\"https://github.com/pvarki/python-libpvarki\" target=\"_blank\" rel=\"noopener noreferrer\"><code>python-libpvarki</code></a>, which adds a dedicated <strong>AUDIT</strong> log level (Python value <code>55</code>, mapped to syslog severity <code>5</code> / notice). Audit records are emitted as ECS 1.6.0 JSON carried in syslog.</p>\n<p>Important scope note: <strong>today only</strong> <a href=\"/en/dev/api\"><code>rmapi</code></a><strong>-level (core API) actions are audit-logged.</strong> <code>python-libpvarki</code> is planned to be extended later to carry action context through to product integration APIs so that user activity inside products (TAK, etc.) can be audit-logged too. Until then, integration-API activity must be inferred from those services' own application logs.</p>\n<h3 id=\"audit-record-fields\"><a href=\"#audit-record-fields\">Audit record fields</a></h3>\n<p>Every audit event carries standard ECS 1.6.0 fields plus a few application-specific custom fields:</p>\n<table>\n<thead>\n<tr>\n<th>Field</th>\n<th>Meaning</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><code>event.action</code></td>\n<td>Action identifier</td>\n</tr>\n<tr>\n<td><code>event.outcome</code></td>\n<td><code>success</code>, <code>failure</code>, or <code>unknown</code></td>\n</tr>\n<tr>\n<td><code>user.name</code></td>\n<td>Actor performing the action (defaults to the client cert DN if not set explicitly)</td>\n</tr>\n<tr>\n<td><code>destination.user.name</code></td>\n<td>Target user of the action</td>\n</tr>\n<tr>\n<td><code>source.ip</code></td>\n<td>Original client IP (from <code>X-Real-IP</code> / XFF)</td>\n</tr>\n<tr>\n<td><code>client.ip</code></td>\n<td>Direct peer IP (nginx/container)</td>\n</tr>\n<tr>\n<td><code>transaction.id</code></td>\n<td>Request correlation ID (<code>X-Request-ID</code>)</td>\n</tr>\n<tr>\n<td><code>tls.client.hash.sha256</code></td>\n<td>Client cert SHA256 fingerprint</td>\n</tr>\n<tr>\n<td><code>tls.client.x509.subject.distinguished_name</code></td>\n<td>Client cert DN</td>\n</tr>\n<tr>\n<td><code>tls.client.x509.serial_number</code></td>\n<td>Client cert serial</td>\n</tr>\n<tr>\n<td><code>error_message</code> / <code>error_code</code></td>\n<td>Detail and reason code for failures</td>\n</tr>\n<tr>\n<td><code>invitecode_id</code></td>\n<td>Invite code UUID (never the raw code value)</td>\n</tr>\n<tr>\n<td><code>certificate_type</code></td>\n<td><code>pem</code> or <code>pfx</code></td>\n</tr>\n</tbody>\n</table>\n<h2 id=\"log-formats-and-levels\"><a href=\"#log-formats-and-levels\">Log formats and levels</a></h2>\n<p>The core <a href=\"/en/dev/api\"><code>rmapi</code></a> service controls the log format via the <code>LOG_CONSOLE_FORMATTER</code> environment variable:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#E06C75\">LOG_CONSOLE_FORMATTER</span><span style=\"color:#56B6C2\">=</span><span style=\"color:#98C379\">local</span><span style=\"color:#7F848E;font-style:italic\">    # human-readable (development/local)</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">LOG_CONSOLE_FORMATTER</span><span style=\"color:#56B6C2\">=</span><span style=\"color:#98C379\">ecs</span><span style=\"color:#7F848E;font-style:italic\">      # ECS JSON (legacy, being phased out)</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">LOG_CONSOLE_FORMATTER</span><span style=\"color:#56B6C2\">=</span><span style=\"color:#98C379\">syslog</span><span style=\"color:#7F848E;font-style:italic\">   # ECS JSON-in-syslog (target for rm* services)</span></span></code></pre>",
+      "lang": "bash"
+    },
+    {
+      "type": "html",
+      "html": "<p>OpenDefence <code>rm*</code> services (including <code>takrmapi</code>) are migrating from plain ECS JSON to ECS-JSON-in-syslog. Third-party components (Keycloak, MediaMTX, CFSSL) keep their native formats. The core <code>rmapi</code> emits its logs and audit logs in ECS-JSON-in-syslog.</p>\n<p>Per-component log levels:</p>\n<table>\n<thead>\n<tr>\n<th>Component</th>\n<th>Framework</th>\n<th>Level env var</th>\n<th>Prod default</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>rmapi</td>\n<td>libpvarki.logging</td>\n<td><code>RM_LOG_LEVEL</code></td>\n<td>INFO</td>\n</tr>\n<tr>\n<td>keycloak</td>\n<td>Quarkus/Java</td>\n<td><code>KC_LOG_LEVEL</code></td>\n<td>INFO</td>\n</tr>\n<tr>\n<td>nginx</td>\n<td>native</td>\n<td><code>error_log</code> directive</td>\n<td>WARN</td>\n</tr>\n<tr>\n<td>ocsprest</td>\n<td>libadvian.logging</td>\n<td><code>-l</code> / <code>--loglevel</code></td>\n<td>30 (WARNING)</td>\n</tr>\n<tr>\n<td>takrmapi</td>\n<td>libpvarki.logging</td>\n<td><code>LOG_LEVEL</code></td>\n<td>INFO</td>\n</tr>\n<tr>\n<td>postgres</td>\n<td>native</td>\n<td><code>log_min_messages</code></td>\n<td>WARNING</td>\n</tr>\n<tr>\n<td>openldap</td>\n<td>slapd</td>\n<td><code>LDAP_LOGLEVEL</code></td>\n<td>0</td>\n</tr>\n<tr>\n<td>cfssl</td>\n<td>native</td>\n<td><code>--loglevel</code></td>\n<td>1 (INFO)</td>\n</tr>\n</tbody>\n</table>\n<p>Syslog severity mapping for the Python services (priority shown for the <code>local0</code> facility):</p>\n<table>\n<thead>\n<tr>\n<th>Python level</th>\n<th>Value</th>\n<th>Syslog severity</th>\n<th>Priority</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>AUDIT</td>\n<td>55</td>\n<td>5 (notice)</td>\n<td>133</td>\n</tr>\n<tr>\n<td>CRITICAL</td>\n<td>50</td>\n<td>2 (critical)</td>\n<td>130</td>\n</tr>\n<tr>\n<td>ERROR</td>\n<td>40</td>\n<td>3 (error)</td>\n<td>131</td>\n</tr>\n<tr>\n<td>WARNING</td>\n<td>30</td>\n<td>4 (warning)</td>\n<td>132</td>\n</tr>\n<tr>\n<td>INFO</td>\n<td>20</td>\n<td>6 (info)</td>\n<td>134</td>\n</tr>\n<tr>\n<td>DEBUG</td>\n<td>10</td>\n<td>7 (debug)</td>\n<td>135</td>\n</tr>\n</tbody>\n</table>\n<h2 id=\"logging-architecture\"><a href=\"#logging-architecture\">Logging architecture</a></h2>\n<p>The diagram traces a log line from the Deploy App host to your on-call. <strong>The aggregation tier is an example</strong> — substitute your own log-shipping agent, central log store / SIEM, and alert routing.</p>"
+    },
+    {
+      "type": "mermaid",
+      "code": "flowchart TB\n    subgraph VM[\"Deploy App host\"]\n        Docker[\"Syslog log driver\"]\n        Agent[\"Log-shipping agent\"]\n        Docker --> Agent\n    end\n    Agent --> Store[\"Central log store / SIEM\"]\n    Store --> Query[\"Queries\"]\n    Store --> Alerts[\"Alert rules\"]\n    Alerts --> OnCall[\"On-call / operator\"]"
+    },
+    {
+      "type": "html",
+      "html": "<p>On the legacy Docker Compose stack the syslog log driver is configured in Docker, and a log store ingests the syslog stream (the ECS JSON inside it stays queryable). On Kubernetes the platform ships its own monitoring stack (Loki / Grafana / Alloy / Prometheus, deployed as the <code>monitoring</code> phase) — see <a href=\"/en/operate/deploy-on-kubernetes-S5cwJYQzPu\">Deploy on Kubernetes</a>.</p>\n<h2 id=\"where-logs-live\"><a href=\"#where-logs-live\">Where logs live</a></h2>\n<table>\n<thead>\n<tr>\n<th>Log type</th>\n<th>Location</th>\n<th>Access method</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>All container stdout/stderr</td>\n<td><code>/var/lib/docker/containers/&#x3C;id>/*.log</code></td>\n<td><code>docker compose logs</code></td>\n</tr>\n<tr>\n<td>nginx access</td>\n<td>stdout (Docker-captured)</td>\n<td><code>docker compose logs rmnginx</code></td>\n</tr>\n<tr>\n<td>TAK server</td>\n<td><code>/opt/tak/logs/</code> in <code>tak_data</code> volume</td>\n<td><code>docker exec</code> into the container</td>\n</tr>\n<tr>\n<td>PostgreSQL</td>\n<td><code>pg_data</code> volume</td>\n<td><code>docker compose logs postgres</code></td>\n</tr>\n<tr>\n<td>CFSSL/OCSP</td>\n<td>stdout + <code>/data/persistent/</code></td>\n<td>container logs + volume</td>\n</tr>\n</tbody>\n</table>\n<p>Retention on a local instance is the instance lifetime (no automatic rotation by default); the recommended Docker daemon config is <code>max-size: 100m, max-file: 5</code>. Centralized retention is whatever your log store's policy sets.</p>\n<h2 id=\"accessing-logs\"><a href=\"#accessing-logs\">Accessing logs</a></h2>\n<p><strong>Direct (SSH / emergency / dev):</strong></p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#7F848E;font-style:italic\"># Real-time, all services</span></span>\n<span class=\"line\"><span style=\"color:#61AFEF\">docker</span><span style=\"color:#98C379\"> compose</span><span style=\"color:#98C379\"> logs</span><span style=\"color:#D19A66\"> -f</span></span>\n<span class=\"line\"></span>\n<span class=\"line\"><span style=\"color:#7F848E;font-style:italic\"># Specific services with timestamps</span></span>\n<span class=\"line\"><span style=\"color:#61AFEF\">docker</span><span style=\"color:#98C379\"> compose</span><span style=\"color:#98C379\"> logs</span><span style=\"color:#D19A66\"> -f</span><span style=\"color:#D19A66\"> --timestamps</span><span style=\"color:#98C379\"> rmapi</span><span style=\"color:#98C379\"> keycloak</span><span style=\"color:#98C379\"> rmnginx</span><span style=\"color:#98C379\"> cfssl</span><span style=\"color:#98C379\"> ocsprest</span></span>\n<span class=\"line\"></span>\n<span class=\"line\"><span style=\"color:#7F848E;font-style:italic\"># Export the last 24h for analysis</span></span>\n<span class=\"line\"><span style=\"color:#61AFEF\">docker</span><span style=\"color:#98C379\"> compose</span><span style=\"color:#98C379\"> logs</span><span style=\"color:#D19A66\"> --since</span><span style=\"color:#98C379\"> 24h</span><span style=\"color:#D19A66\"> --no-color</span><span style=\"color:#ABB2BF\"> > </span><span style=\"color:#98C379\">/tmp/logs-</span><span style=\"color:#ABB2BF\">$(</span><span style=\"color:#61AFEF\">date</span><span style=\"color:#98C379\"> +%Y%m%d-%H%M</span><span style=\"color:#ABB2BF\">)</span><span style=\"color:#98C379\">.log</span></span></code></pre>",
+      "lang": "bash"
+    },
+    {
+      "type": "html",
+      "html": "<p><strong>Centralized (primary in test/prod-like environments):</strong> query the aggregated stream from your log store / SIEM. Set access policy per environment — for example route normal access through the log store and reserve SSH for emergencies.</p>\n<h2 id=\"health-checks\"><a href=\"#health-checks\">Health checks</a></h2>\n<p>Quick per-service health endpoints (legacy ports):</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#61AFEF\">curl</span><span style=\"color:#D19A66\"> -s</span><span style=\"color:#98C379\"> http://localhost:8000/api/v1/healthcheck</span><span style=\"color:#7F848E;font-style:italic\">     # rmapi</span></span>\n<span class=\"line\"><span style=\"color:#61AFEF\">curl</span><span style=\"color:#D19A66\"> -s</span><span style=\"color:#98C379\"> http://keycloak:8080/health/ready</span><span style=\"color:#ABB2BF\"> | </span><span style=\"color:#61AFEF\">grep</span><span style=\"color:#D19A66\"> -q</span><span style=\"color:#98C379\"> UP</span><span style=\"color:#7F848E;font-style:italic\">  # keycloak</span></span>\n<span class=\"line\"><span style=\"color:#61AFEF\">curl</span><span style=\"color:#D19A66\"> -s</span><span style=\"color:#98C379\"> http://localhost:8887/api/v1/healthcheck</span><span style=\"color:#7F848E;font-style:italic\">     # ocsprest (returns crlfail if CRL stale)</span></span>\n<span class=\"line\"><span style=\"color:#61AFEF\">curl</span><span style=\"color:#D19A66\"> -s</span><span style=\"color:#98C379\"> http://localhost:5666/healthcheck</span><span style=\"color:#7F848E;font-style:italic\">            # nginx internal</span></span>\n<span class=\"line\"><span style=\"color:#61AFEF\">curl</span><span style=\"color:#D19A66\"> -s</span><span style=\"color:#98C379\"> http://localhost:8003/api/v1/healthcheck</span><span style=\"color:#7F848E;font-style:italic\">     # takrmapi</span></span></code></pre>",
+      "lang": "bash"
+    },
+    {
+      "type": "html",
+      "html": "<p>Organization-wide logging and documentation conventions are deferred to the <strong>Community &#x26; Standards</strong> page (in <em>Contribute to Project</em>).</p>"
+    }
+  ]
+}

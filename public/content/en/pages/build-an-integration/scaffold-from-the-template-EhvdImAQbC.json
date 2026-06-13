@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "id": "895b772c-7537-4230-a632-9a5440ce313a",
+  "slug": "scaffold-from-the-template-EhvdImAQbC",
+  "collection": "build-an-integration",
+  "locale": "en",
+  "title": "Scaffold from the template",
+  "breadcrumb": [
+    "Scaffold from the template"
+  ],
+  "createdAt": "2026-06-13T13:21:32.918Z",
+  "updatedAt": "2026-06-13T13:21:32.918Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Generate a new integration",
+      "id": "generate-a-new-integration"
+    },
+    {
+      "depth": 2,
+      "text": "Questions Copier asks",
+      "id": "questions-copier-asks"
+    },
+    {
+      "depth": 2,
+      "text": "What template/ generates",
+      "id": "what-template-generates"
+    },
+    {
+      "depth": 2,
+      "text": "After generation",
+      "id": "after-generation"
+    },
+    {
+      "depth": 2,
+      "text": "Implement the stubs",
+      "id": "implement-the-stubs"
+    },
+    {
+      "depth": 2,
+      "text": "Linting and versioning",
+      "id": "linting-and-versioning"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>The fastest way to start a product integration API is to generate one from <a href=\"https://github.com/pvarki/python-integration-template\" target=\"_blank\" rel=\"noopener noreferrer\">pvarki/python-integration-template</a>, a <a href=\"https://copier.readthedocs.io/\" target=\"_blank\" rel=\"noopener noreferrer\">Copier</a> template that renders a working FastAPI service with the rmapi callback contract already wired up.</p>\n<h2 id=\"generate-a-new-integration\"><a href=\"#generate-a-new-integration\">Generate a new integration</a></h2>\n<p>The template uses the <code>jinja2-time</code> extension, so it must be installed alongside Copier and <code>--trust</code> must be passed to load extensions:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#61AFEF\">uvx</span><span style=\"color:#D19A66\"> --with</span><span style=\"color:#98C379\"> jinja2-time</span><span style=\"color:#98C379\"> copier</span><span style=\"color:#98C379\"> copy</span><span style=\"color:#D19A66\"> --trust</span><span style=\"color:#56B6C2\"> \\</span></span>\n<span class=\"line\"><span style=\"color:#98C379\">  https://github.com/pvarki/python-integration-template</span><span style=\"color:#ABB2BF\"> &#x3C;</span><span style=\"color:#98C379\">path_where_to_creat</span><span style=\"color:#ABB2BF\">e></span></span></code></pre>",
+      "lang": "sh"
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"questions-copier-asks\"><a href=\"#questions-copier-asks\">Questions Copier asks</a></h2>\n<p>From <code>copier.yml</code>:</p>\n<table>\n<thead>\n<tr>\n<th>Question</th>\n<th>Meaning</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><code>title_en</code></td>\n<td>English product title shown on the UI card</td>\n</tr>\n<tr>\n<td><code>short_name</code></td>\n<td>Shortname / slug used in URLs and as the dict key</td>\n</tr>\n<tr>\n<td><code>package_name</code></td>\n<td>Python package name (defaults to <code>&#x3C;short_name>rmapi</code>)</td>\n</tr>\n<tr>\n<td><code>description_en</code></td>\n<td>English short description (defaults to <code>&#x3C;title_en> integration</code>)</td>\n</tr>\n<tr>\n<td><code>app_port</code></td>\n<td>Internal port the app binds to (must be unique on the <code>productnet</code> network)</td>\n</tr>\n<tr>\n<td><code>component_type</code></td>\n<td>How the integration appears in the UI: <code>link</code>, <code>markdown</code>, or <code>component</code></td>\n</tr>\n</tbody>\n</table>\n<p>The <code>component_type</code> choice changes what gets generated:</p>\n<ul>\n<li><code>**link**</code> — the product card links to an external URL (replace <code>https://example.com</code> in <code>description.py</code>).</li>\n<li><code>**markdown**</code> — adds <code>api/proxy.py</code>, serving per-user Markdown at <code>POST /api/v2/clients/{language}/info.md</code>, which the core rmapi proxies.</li>\n<li><code>**component**</code> — scaffolds a <code>ui/</code> folder (a Module Federation React bundle) plus <code>api/clientinfo.py</code> for the per-user data feed; the build output is served by nginx at <code>/ui/&#x3C;short_name>/remoteEntry.js</code>.</li>\n</ul>\n<h2 id=\"what-template-generates\"><a href=\"#what-template-generates\">What <code>template/</code> generates</a></h2>\n<p>The rendered project (paths shown relative to the project root) includes:</p>\n<ul>\n<li><code>pyproject.toml</code> — <code>uv</code>-managed project metadata and dependencies (depends on <code>libpvarki</code>).</li>\n<li><code>Dockerfile</code> — multi-stage build with <code>builder_base</code>, <code>production</code>, <code>devel_build</code>, <code>test</code>, and <code>devel_shell</code> targets. Production copies <code>kw_product_init</code> from <code>pvarki/kw_product_init:latest</code>.</li>\n<li><code>docker/entrypoint.sh</code>, <code>docker/entrypoint-dev.sh</code>, <code>docker/container-init.sh</code> — container startup and the hot-reload dev entrypoint.</li>\n<li><code>src/&#x3C;package_name>/app.py</code> — the FastAPI factory <code>get_app()</code> (CORS locked to the deployment domain regex; mounts <code>/api/v1</code> and <code>/api/v2</code> routers).</li>\n<li><code>src/&#x3C;package_name>/config.py</code> — <code>get_manifest()</code> reads <code>/pvarki/kraftwerk-init.json</code> (with a localmaeher fallback).</li>\n<li><code>src/&#x3C;package_name>/api/usercrud.py</code> — the five mTLS-guarded lifecycle stubs (<code>created</code>, <code>revoked</code>, <code>promoted</code>, <code>demoted</code>, <code>updated</code>), each raising <code>NotImplementedError</code>.</li>\n<li><code>src/&#x3C;package_name>/api/description.py</code> — the v2 description endpoint returning the <code>ProductComponent</code> for your chosen type.</li>\n<li><code>src/&#x3C;package_name>/api/healthcheck.py</code> — <code>GET /api/v1/healthcheck</code>, returns <code>healthy=True</code> unconditionally until you add real checks.</li>\n<li><code>proxy.py</code> (markdown) or <code>clientinfo.py</code> + <code>ui/</code> (component), conditional on <code>component_type</code>.</li>\n<li><code>tests/</code> — pytest suite asserting the stub/example behaviour.</li>\n<li><code>RASENMAEHER_SETUP.md</code> — step-by-step wiring into the legacy <code>docker-rasenmaeher-integration</code> stack.</li>\n</ul>\n<h2 id=\"after-generation\"><a href=\"#after-generation\">After generation</a></h2>\n<p>Copier prints the next steps (<code>_message_after_copy</code>):</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#56B6C2\">cd</span><span style=\"color:#ABB2BF\"> &#x3C;</span><span style=\"color:#98C379\">your-integratio</span><span style=\"color:#ABB2BF\">n></span></span>\n<span class=\"line\"><span style=\"color:#61AFEF\">git</span><span style=\"color:#98C379\"> init</span><span style=\"color:#ABB2BF\"> &#x26;&#x26; </span><span style=\"color:#61AFEF\">git</span><span style=\"color:#98C379\"> add</span><span style=\"color:#D19A66\"> -A</span><span style=\"color:#ABB2BF\"> &#x26;&#x26; </span><span style=\"color:#61AFEF\">git</span><span style=\"color:#98C379\"> commit</span><span style=\"color:#D19A66\"> -m</span><span style=\"color:#98C379\"> \"chore: scaffold from python-integration-template\"</span></span>\n<span class=\"line\"><span style=\"color:#61AFEF\">uv</span><span style=\"color:#98C379\"> lock</span></span>\n<span class=\"line\"><span style=\"color:#7F848E;font-style:italic\"># for a 'component' integration also: cd ui &#x26;&#x26; pnpm install &#x26;&#x26; cd ..</span></span></code></pre>",
+      "lang": "sh"
+    },
+    {
+      "type": "html",
+      "html": "<p>Then read the generated <code>RASENMAEHER_SETUP.md</code> for wiring into the stack.</p>\n<h2 id=\"implement-the-stubs\"><a href=\"#implement-the-stubs\">Implement the stubs</a></h2>\n<p>The generated <code>usercrud.py</code> handlers raise <code>NotImplementedError</code>. Implement the events your product needs and acknowledge the rest:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#C678DD\">return</span><span style=\"color:#61AFEF\"> OperationResultResponse</span><span style=\"color:#ABB2BF\">(</span><span style=\"color:#E06C75;font-style:italic\">success</span><span style=\"color:#56B6C2\">=</span><span style=\"color:#D19A66\">True</span><span style=\"color:#ABB2BF\">)</span></span></code></pre>",
+      "lang": "python"
+    },
+    {
+      "type": "html",
+      "html": "<p>Likewise, fill in the real <code>fi</code>/<code>sv</code> titles and descriptions in <code>description.py</code>, make <code>healthcheck.py</code> check your real dependencies, and update the generated tests as you go.</p>\n<h2 id=\"linting-and-versioning\"><a href=\"#linting-and-versioning\">Linting and versioning</a></h2>\n<ul>\n<li><code>pre-commit</code> at the repo root handles parser-free checks; parser-required checks (ruff, mypy, prettier, eslint) run against rendered output via <code>uvx --with nox nox -s lint</code>.</li>\n<li>Versioning uses <a href=\"https://github.com/callowayproject/bump-my-version\" target=\"_blank\" rel=\"noopener noreferrer\">bump-my-version</a>: <code>bump-my-version bump &#x3C;patch/minor/major></code> (use <code>show-bump</code> to preview).</li>\n</ul>\n<blockquote>\n<p>See <strong>Set up your dev environment (Docker Compose)</strong> or <strong>(Kubernetes)</strong> to run the generated service against a real stack, and <strong>Community &#x26; Standards</strong> (in <em>Contribute to Project</em>) for the org-wide tooling rules.</p>\n</blockquote>"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "label": "Contribute to Project",
+  "slug": "contribute-to-project",
+  "items": [
+    {
+      "type": "doc",
+      "id": "contributing-dsXGjtdXG8",
+      "label": "Contributing",
+      "slug": "contributing-dsXGjtdXG8"
+    },
+    {
+      "type": "doc",
+      "id": "community-standards-uSUlJYqGsc",
+      "label": "Community & Standards",
+      "slug": "community-standards-uSUlJYqGsc"
+    },
+    {
+      "type": "doc",
+      "id": "reporting-issues-support-MIgxRA5dFF",
+      "label": "Reporting issues & support",
+      "slug": "reporting-issues-support-MIgxRA5dFF"
+    },
+    {
+      "type": "doc",
+      "id": "security-policy-reporting-UmTyYXQA5Z",
+      "label": "Security policy & reporting",
+      "slug": "security-policy-reporting-UmTyYXQA5Z"
+    },
+    {
+      "type": "doc",
+      "id": "releases-versioning-KNjehwFcnX",
+      "label": "Releases & versioning",
+      "slug": "releases-versioning-KNjehwFcnX"
+    }
+  ]
+}

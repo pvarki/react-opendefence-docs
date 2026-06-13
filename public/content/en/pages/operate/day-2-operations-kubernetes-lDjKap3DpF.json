@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "id": "3217efcd-4398-4d67-bff6-e39283952de1",
+  "slug": "day-2-operations-kubernetes-lDjKap3DpF",
+  "collection": "operate",
+  "locale": "en",
+  "title": "Day-2 operations (Kubernetes)",
+  "breadcrumb": [
+    "Platforms",
+    "Kubernetes",
+    "Day-2 operations (Kubernetes)"
+  ],
+  "createdAt": "2026-06-13T13:20:34.953Z",
+  "updatedAt": "2026-06-13T13:20:34.953Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Redeploy / apply changes",
+      "id": "redeploy--apply-changes"
+    },
+    {
+      "depth": 2,
+      "text": "Secrets (external-secrets-operator)",
+      "id": "secrets-external-secrets-operator"
+    },
+    {
+      "depth": 2,
+      "text": "Certificate and CA rotation (cert-manager + opendefense-pki)",
+      "id": "certificate-and-ca-rotation-cert-manager--opendefense-pki"
+    },
+    {
+      "depth": 2,
+      "text": "Database (cloudnative-pg)",
+      "id": "database-cloudnative-pg"
+    },
+    {
+      "depth": 2,
+      "text": "Upgrades",
+      "id": "upgrades"
+    },
+    {
+      "depth": 2,
+      "text": "Teardown",
+      "id": "teardown"
+    },
+    {
+      "depth": 2,
+      "text": "Monitoring",
+      "id": "monitoring"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Day-2 operations for a Deploy App instance on the Kubernetes platform (<a href=\"https://github.com/pvarki/opendefence-platform\" target=\"_blank\" rel=\"noopener noreferrer\"><code>pvarki/opendefence-platform</code></a>, <strong>alpha</strong>): redeploying, managing secrets, rotating certificates/CA, the database, upgrades, and teardown. This stack uses Kubernetes-native operators rather than the legacy miniwerk/CFSSL pieces. For initial standup see <strong>Deploy on Kubernetes</strong>; for failure modes see <strong>Troubleshooting &#x26; teardown</strong>.</p>\n<h2 id=\"redeploy--apply-changes\"><a href=\"#redeploy--apply-changes\">Redeploy / apply changes</a></h2>\n<p>The canonical interface is <code>task</code>. To re-apply the full phased stack to the current cluster:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#61AFEF\">task</span><span style=\"color:#98C379\"> deploy</span><span style=\"color:#7F848E;font-style:italic\">          # phased apply of infra + apps with readiness gates</span></span>\n<span class=\"line\"><span style=\"color:#61AFEF\">task</span><span style=\"color:#98C379\"> deploy:local</span><span style=\"color:#7F848E;font-style:italic\">    # local (kind) overlays explicitly</span></span>\n<span class=\"line\"><span style=\"color:#61AFEF\">task</span><span style=\"color:#98C379\"> deploy:cloud</span><span style=\"color:#7F848E;font-style:italic\">    # cloud overlays against the k3s VM kubeconfig</span></span></code></pre>",
+      "lang": "bash"
+    },
+    {
+      "type": "html",
+      "html": "<p><code>task deploy</code> re-renders the phased kustomizations and applies them with <code>kubectl apply --server-side</code>, waiting for each phase's controllers (cloudnative-pg, cert-manager, external-secrets-operator, then trust-manager) before applying the next. Do not run ad-hoc multi-phase <code>kubectl apply</code> that skips these rollout waits.</p>\n<p>To apply a single service after editing its manifests, build its overlay and apply it (use <code>--enable-helm</code> for any kustomization that includes Helm charts):</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#61AFEF\">kubectl</span><span style=\"color:#98C379\"> kustomize</span><span style=\"color:#D19A66\"> --enable-helm</span><span style=\"color:#98C379\"> k8s/</span><span style=\"color:#ABB2BF\">&#x3C;</span><span style=\"color:#98C379\">servic</span><span style=\"color:#ABB2BF\">e></span><span style=\"color:#98C379\">/overlays/local</span><span style=\"color:#ABB2BF\"> | </span><span style=\"color:#56B6C2\">\\</span></span>\n<span class=\"line\"><span style=\"color:#61AFEF\">  kubectl</span><span style=\"color:#98C379\"> apply</span><span style=\"color:#D19A66\"> --server-side</span><span style=\"color:#D19A66\"> -f</span><span style=\"color:#98C379\"> -</span></span></code></pre>",
+      "lang": "bash"
+    },
+    {
+      "type": "html",
+      "html": "<p>Keep <code>base/</code> environment-agnostic and put environment-specific changes (images, ingress routes, certificates, hostnames) in <code>overlays/&#x3C;env>/</code>. When you change deployment phases or kustomization paths, keep <code>taskfile.yaml</code> in sync.</p>\n<h2 id=\"secrets-external-secrets-operator\"><a href=\"#secrets-external-secrets-operator\">Secrets (external-secrets-operator)</a></h2>\n<p>Secrets are managed by the <strong>external-secrets-operator</strong>, which is deployed in <code>infra-phase1</code> and gated on before later phases. Runtime secrets for the core API surface as the <code>opendefense-rmapi-runtime-secrets</code> Secret in <code>opendefense-system</code>, materialized from the operator's <code>ExternalSecret</code> definitions (<code>k8s/opendefense-system/base/resources/opendefense-secrets.external-secrets.yaml</code>). To rotate or change a secret, update the backing secret store / <code>ExternalSecret</code> rather than editing the Kubernetes <code>Secret</code> by hand, then let the operator re-sync.</p>\n<blockquote>\n<p><strong>TODO:</strong> confirm the backing secret store used per environment (e.g. cluster SecretStore/ClusterSecretStore provider) and the operational steps to rotate a credential end to end.</p>\n</blockquote>\n<h2 id=\"certificate-and-ca-rotation-cert-manager--opendefense-pki\"><a href=\"#certificate-and-ca-rotation-cert-manager--opendefense-pki\">Certificate and CA rotation (cert-manager + opendefense-pki)</a></h2>\n<p>There is <strong>no CFSSL</strong> here. The CA chain is defined in <code>k8s/opendefense-pki/</code> (CA cert, CA issuer, OpenDefense CA, intermediate CA, and the trust bundle), cert-manager issues from it, and <strong>trust-manager</strong> distributes the trust bundle cluster-wide. The core API issues client/service certs through cert-manager using the intermediate CA issuer:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span>RM_CERT_BACKEND=cert_manager</span></span>\n<span class=\"line\"><span>RM_CERT_MANAGER_NAMESPACE=opendefense-system</span></span>\n<span class=\"line\"><span>RM_CERT_MANAGER_ISSUER_NAME=opendefense-intermediate-ca-issuer</span></span></code></pre>",
+      "lang": "plaintext"
+    },
+    {
+      "type": "html",
+      "html": "<p>Leaf certificates are renewed by cert-manager on its normal schedule. Rotating the CA/intermediate is a <code>opendefense-pki</code> change, re-applied through <code>infra-phase2</code> (which waits for trust-manager) so the updated trust bundle propagates.</p>\n<blockquote>\n<p><strong>TODO:</strong> confirm the safe CA-rotation runbook (issue new intermediate, roll the trust bundle via trust-manager, re-issue leaf certs) and the user-impact window, since rotating the CA affects mTLS for all enrolled devices.</p>\n</blockquote>\n<h2 id=\"database-cloudnative-pg\"><a href=\"#database-cloudnative-pg\">Database (cloudnative-pg)</a></h2>\n<p>PostgreSQL is managed by the <strong>cloudnative-pg</strong> operator (deployed in <code>infra-phase1</code>; the deploy flow waits for <code>deployment/cnpg-controller-manager</code> in <code>cnpg-system</code>). The core API's database is a CNPG cluster whose app credentials are exposed as the <code>opendefense-rmapi-postgres-app</code> secret. Use CNPG's own mechanisms (Cluster resource, backups, scheduled backups) for DB operations rather than touching the pods directly.</p>\n<blockquote>\n<p><strong>TODO:</strong> confirm whether CNPG scheduled backups / object-store backup is configured per environment, and the restore procedure.</p>\n</blockquote>\n<h2 id=\"upgrades\"><a href=\"#upgrades\">Upgrades</a></h2>\n<p>Upgrade by changing the pinned images in the relevant <code>overlays/&#x3C;env>/</code> (and operator/tool versions in <code>mise.toml</code>), then re-running <code>task deploy</code> so the phased rollout with readiness gates applies the change. As on the legacy stack, the model favors redeploying over long-lived in-place maintenance. For cloud, rebuild and redeploy the Zarf package (<code>task zarf:package:cloud</code>, then <code>zarf package deploy ... --set OPENDEFENSE_HOST=...</code>) — see <strong>Deploy on Kubernetes</strong>.</p>\n<h2 id=\"teardown\"><a href=\"#teardown\">Teardown</a></h2>\n<p>Local (kind) — destroys the whole cluster and all instance data:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#61AFEF\">task</span><span style=\"color:#98C379\"> down</span><span style=\"color:#7F848E;font-style:italic\">            # alias of cluster:delete (kind delete cluster --name opendefense-kind)</span></span></code></pre>",
+      "lang": "bash"
+    },
+    {
+      "type": "html",
+      "html": "<p>On a shared/cloud cluster you typically remove the workload by deleting its namespace instead of deleting the cluster (still destructive to that instance's data):</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#61AFEF\">kubectl</span><span style=\"color:#98C379\"> delete</span><span style=\"color:#98C379\"> namespace</span><span style=\"color:#98C379\"> opendefense-system</span></span></code></pre>",
+      "lang": "bash"
+    },
+    {
+      "type": "html",
+      "html": "<p>See <strong>Troubleshooting &#x26; teardown</strong> for the full teardown discussion and the legacy <code>down -v</code> equivalence.</p>\n<h2 id=\"monitoring\"><a href=\"#monitoring\">Monitoring</a></h2>\n<p>The platform deploys its own <code>monitoring</code> phase (Grafana, Loki, Alloy, Prometheus). Use it for logs and metrics; see <strong>Audit logging &#x26; observability</strong> for the audit-log model and what to watch. Organization-wide conventions are deferred to the <strong>Community &#x26; Standards</strong> page (in <em>Contribute to Project</em>).</p>"
+    }
+  ]
+}

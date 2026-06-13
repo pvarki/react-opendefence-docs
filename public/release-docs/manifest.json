@@ -1,0 +1,36 @@
+{
+  "generatedAt": "2026-06-13T10:01:52.415Z",
+  "components": [
+    {
+      "id": "docker-rasenmaeher-integration",
+      "name": "Deploy App Core (RASENMAEHER, legacy)",
+      "repo": "pvarki/docker-rasenmaeher-integration",
+      "releases": []
+    },
+    {
+      "id": "opendefence-platform",
+      "name": "OpenDefence Platform (K8s)",
+      "repo": "pvarki/opendefence-platform",
+      "releases": []
+    },
+    {
+      "id": "python-integration-template",
+      "name": "Integration Template (rmapi)",
+      "repo": "pvarki/python-integration-template",
+      "releases": []
+    },
+    {
+      "id": "python-matrix-rmapi",
+      "name": "Matrix Integration (example)",
+      "repo": "pvarki/python-matrix-rmapi",
+      "releases": [
+        {
+          "file": "v1.1.2.json",
+          "tag": "v1.1.2",
+          "publishedAt": "2026-06-09T19:29:41Z"
+        }
+      ],
+      "changelogFile": "changelog.json"
+    }
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "schemaVersion": 1,
+  "id": "93f1ef12-bfff-40a2-83f3-b80dc939d81e",
+  "slug": "set-up-your-dev-environment-docker-compose-h3bTY6alr3",
+  "collection": "build-an-integration",
+  "locale": "en",
+  "title": "Set up your dev environment (Docker Compose)",
+  "breadcrumb": [
+    "Platforms",
+    "Docker Compose (legacy)",
+    "Set up your dev environment (Docker Compose)"
+  ],
+  "createdAt": "2026-06-13T13:21:34.650Z",
+  "updatedAt": "2026-06-13T14:30:11.626Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "How your integration plugs into the legacy stack",
+      "id": "how-your-integration-plugs-into-the-legacy-stack"
+    },
+    {
+      "depth": 2,
+      "text": "Prerequisites",
+      "id": "prerequisites"
+    },
+    {
+      "depth": 2,
+      "text": "The localhost note (read this before you up)",
+      "id": "the-localhost-note-read-this-before-you-up"
+    },
+    {
+      "depth": 2,
+      "text": "1. Start the local registry",
+      "id": "1-start-the-local-registry"
+    },
+    {
+      "depth": 2,
+      "text": "2. Pick a composition: rmlocal vs rmdev",
+      "id": "2-pick-a-composition-rmlocal-vs-rmdev"
+    },
+    {
+      "depth": 2,
+      "text": "3. Build and bring it up",
+      "id": "3-build-and-bring-it-up"
+    },
+    {
+      "depth": 2,
+      "text": "4. Verify your integration answers on 4626",
+      "id": "4-verify-your-integration-answers-on-4626"
+    },
+    {
+      "depth": 2,
+      "text": "5. Point the core at it and get first-admin access",
+      "id": "5-point-the-core-at-it-and-get-first-admin-access"
+    },
+    {
+      "depth": 2,
+      "text": "Next",
+      "id": "next"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Run your <strong>product integration API</strong> (the service <em>you</em> build — see the <a href=\"/en/build-an-integration/integration-overview-unDmuW0qFc\">Integration overview</a>) against the legacy Docker Compose stack, so the core <a href=\"/en/dev/api\"><code>rmapi</code></a> can reach it over mTLS and drive its CRUD and Deploy App callbacks. This page is about iterating on <em>your</em> integration; if you want to hack on the core itself, see <strong>Set up your dev environment (Docker Compose)</strong> in the <em>Develop Deploy App</em> book instead.</p>\n<blockquote>\n<p><strong>Heads up:</strong> <code>rmapi</code> here always means the core RASENMAEHER API (<code>pvarki/python-rasenmaeher-api</code>) — the thing you integrate <em>with</em>. The service you ship (e.g. <code>pvarki/python-matrix-rmapi</code>) is a <em>product integration API</em>, never \"rmapi\".</p>\n</blockquote>\n<h2 id=\"how-your-integration-plugs-into-the-legacy-stack\"><a href=\"#how-your-integration-plugs-into-the-legacy-stack\">How your integration plugs into the legacy stack</a></h2>\n<p>In <code>docker-rasenmaeher-integration</code> every product integration API runs as its own service that joins two Docker networks and is fronted by a shared nginx (<code>productsnginx</code>). End users and the core never hit your container directly — they reach it at <code>mtls.&#x3C;product>.&#x3C;domain></code> on the <strong>product integration APIs port</strong> <code>**4626**</code>, and nginx proxies to your service's internal port.</p>"
+    },
+    {
+      "type": "mermaid",
+      "code": "flowchart LR\n    RM[\"core rmapi\\n(user CRUD + Deploy App ops)\"] -->|mTLS| PN[\"productsnginx\\n:4626\"]\n    EUD[\"End-user device\"] -->|\"https://mtls.&lt;product&gt;.&lt;domain&gt;:4626\"| PN\n    PN -->|\"proxy_pass\"| YOUR[\"your product integration API\\n(internal port, e.g. 8012)\"]\n    MW[\"miniwerk\"] -->|\"issues subdomain + cert\\n+ kraftwerk manifest\"| YOUR"
+    },
+    {
+      "type": "html",
+      "html": "<p>miniwerk (the legacy KRAFTWERK emulation) is what gives your service its identity: for each name in <code>MW_PRODUCTS</code> it provisions the <code>&#x3C;product>.&#x3C;domain></code> and <code>mtls.&#x3C;product>.&#x3C;domain></code> certificates and drops a <code>kraftwerk-rasenmaeher-init.json</code> manifest into the product's shared volume (<code>/pvarki/</code>). Your service reads that manifest to learn its own DNS and the core's service-cert CN it must trust. Getting your product <em>into</em> <code>MW_PRODUCTS</code> and onto <code>productsnginx</code> is the subject of <a href=\"/en/build-an-integration/register-your-integration-docker-compose-W6oMGCVsAt\">Register your integration (Docker Compose)</a> — this page assumes that wiring already exists (it does for the bundled examples like <code>matrixrmapi</code>, <code>takrmapi</code>, <code>blapi</code>).</p>\n<h2 id=\"prerequisites\"><a href=\"#prerequisites\">Prerequisites</a></h2>\n<ul>\n<li>Docker with Compose v2.</li>\n<li>The integration repo cloned <strong>with submodules</strong> (your product lives in its own submodule directory):</li>\n</ul>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#61AFEF\">git</span><span style=\"color:#98C379\"> clone</span><span style=\"color:#D19A66\"> --recurse-submodules</span><span style=\"color:#D19A66\"> -j8</span><span style=\"color:#98C379\"> git@github.com:pvarki/docker-rasenmaeher-integration.git</span></span></code></pre>",
+      "lang": "bash"
+    },
+    {
+      "type": "html",
+      "html": "<p>If you forgot <code>--recurse-submodules</code>, run <code>git submodule update --init --recursive</code>. On Windows use WSL (not git-bash) and disable line-ending rewriting (<code>git config --global core.eol lf</code> / <code>core.autocrlf false</code>) — see the <a href=\"/en/develop-deploy-app/set-up-your-dev-environment-docker-compose-t4JDwRuQs2\">Set up your dev environment</a> core page for the full Windows notes.</p>\n<h2 id=\"the-localhost-note-read-this-before-you-up\"><a href=\"#the-localhost-note-read-this-before-you-up\">The localhost note (read this before you <code>up</code>)</a></h2>\n<p>Local dev uses the domain <code>localmaeher.dev.pvarki.fi</code>, and your integration is reached at <code>mtls.&#x3C;product>.localmaeher.dev.pvarki.fi:4626</code>. For that to resolve to your machine:</p>\n<ul>\n<li><strong>Official (OpenDefence-developed) integrations</strong> get their <code>localmaeher</code> subdomain resolved to <code>localhost</code> automatically — pvarki DNS already points <code>*.localmaeher.dev.pvarki.fi</code> at <code>127.0.0.1</code>, so there is nothing to do.</li>\n<li><strong>If your integration is NOT official</strong>, you must make its subdomain resolve to localhost yourself. The simplest fix is an <code>/etc/hosts</code> entry for local dev/testing:</li>\n</ul>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span>127.0.0.1   mtls.&#x3C;product>.localmaeher.dev.pvarki.fi &#x3C;product>.localmaeher.dev.pvarki.fi</span></span></code></pre>",
+      "lang": "plaintext"
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"1-start-the-local-registry\"><a href=\"#1-start-the-local-registry\">1. Start the local registry</a></h2>\n<p>Due to BuildKit cache bugs, the dev compositions push/pull through a local registry on port <code>5050</code>. Start it once:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#61AFEF\">docker</span><span style=\"color:#98C379\"> run</span><span style=\"color:#D19A66\"> -d</span><span style=\"color:#D19A66\"> -p</span><span style=\"color:#98C379\"> 5050:5000</span><span style=\"color:#D19A66\"> --restart</span><span style=\"color:#98C379\"> always</span><span style=\"color:#D19A66\"> --name</span><span style=\"color:#98C379\"> registry</span><span style=\"color:#98C379\"> registry:3</span></span></code></pre>",
+      "lang": "bash"
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"2-pick-a-composition-rmlocal-vs-rmdev\"><a href=\"#2-pick-a-composition-rmlocal-vs-rmdev\">2. Pick a composition: <code>rmlocal</code> vs <code>rmdev</code></a></h2>\n<p>The repo provides two compose aliases:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#C678DD\">alias</span><span style=\"color:#E06C75\"> rmlocal</span><span style=\"color:#56B6C2\">=</span><span style=\"color:#98C379\">\"PVARKI_DOCKER_REPO=localhost:5050/ docker compose -p rmlocal -f docker-compose-local.yml\"</span></span>\n<span class=\"line\"><span style=\"color:#C678DD\">alias</span><span style=\"color:#E06C75\"> rmdev</span><span style=\"color:#56B6C2\">=</span><span style=\"color:#98C379\">\"PVARKI_DOCKER_REPO=localhost:5050/ docker compose -p rmdev -f docker-compose-local.yml -f docker-compose-dev.yml\"</span></span></code></pre>",
+      "lang": "bash"
+    },
+    {
+      "type": "html",
+      "html": "<ul>\n<li><code>**rmlocal**</code> corresponds best to a real running environment — assets are minified and baked in. Always confirm your integration works under <code>rmlocal</code> before trusting <code>rmdev</code>.</li>\n<li><code>**rmdev**</code> layers <code>docker-compose-dev.yml</code> on top: it bind-mounts your source and runs the service under <code>uvicorn --reload</code> so edits are reflected live (this is your inner loop). The bundled <code>docker-compose-dev.yml</code> already does this for <code>takrmapi</code> and <code>blapi</code>; the Matrix example reloads at port <code>8012</code> via <code>docker/entrypoint-dev.sh</code>.</li>\n</ul>\n<blockquote>\n<p><strong>Note:</strong> to just run the stack with pre-built images (no local build), drop the <code>PVARKI_DOCKER_REPO=localhost:5050/</code> prefix from the alias.</p>\n</blockquote>\n<h2 id=\"3-build-and-bring-it-up\"><a href=\"#3-build-and-bring-it-up\">3. Build and bring it up</a></h2>\n<p>Build the init/cert images first (pushing to the local registry), then everything else, then start:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#61AFEF\">rmdev</span><span style=\"color:#98C379\"> build</span><span style=\"color:#98C379\"> takinit</span><span style=\"color:#98C379\"> miniwerk</span><span style=\"color:#98C379\"> rmnginx</span><span style=\"color:#D19A66\"> --pull</span><span style=\"color:#D19A66\"> --push</span></span>\n<span class=\"line\"><span style=\"color:#61AFEF\">rmdev</span><span style=\"color:#98C379\"> build</span><span style=\"color:#D19A66\"> --pull</span></span>\n<span class=\"line\"><span style=\"color:#61AFEF\">rmdev</span><span style=\"color:#98C379\"> up</span></span></code></pre>",
+      "lang": "bash"
+    },
+    {
+      "type": "html",
+      "html": "<p>Substitute <code>rmlocal</code> for <code>rmdev</code> for the baked-in composition. OpenLDAP and keycloak-init sometimes fail on first start — just run <code>up</code> again.</p>\n<p>Keep <strong>only one of</strong> <code>rmlocal</code> / <code>rmdev</code> up at a time (running both causes network issues — run <code>down</code> for one first), and use <code>down -v</code> to reset persistent volumes when switching environments. Note <code>down -v</code> deletes certificates and users, so you will re-add everything.</p>\n<h2 id=\"4-verify-your-integration-answers-on-4626\"><a href=\"#4-verify-your-integration-answers-on-4626\">4. Verify your integration answers on 4626</a></h2>\n<p>Once the stack is healthy, your service should answer through nginx on the product integration APIs port. A quick health probe (mTLS-protected endpoints will need a client cert; the healthcheck route is open):</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#61AFEF\">curl</span><span style=\"color:#D19A66\"> -k</span><span style=\"color:#98C379\"> https://mtls.</span><span style=\"color:#ABB2BF\">&#x3C;</span><span style=\"color:#98C379\">produc</span><span style=\"color:#ABB2BF\">t></span><span style=\"color:#98C379\">.localmaeher.dev.pvarki.fi:4626/api/v1/healthcheck</span></span></code></pre>",
+      "lang": "bash"
+    },
+    {
+      "type": "html",
+      "html": "<p>If this hangs or fails to resolve, re-check the localhost note above. If it connects but returns <code>401</code>/<code>403</code>, that is nginx enforcing mTLS — expected for the <code>/api/v1/users/*</code> callbacks the core uses. The internal port your container actually listens on (e.g. <code>8012</code> for Matrix) should <strong>not</strong> be exposed publicly; always go through nginx.</p>\n<h2 id=\"5-point-the-core-at-it-and-get-first-admin-access\"><a href=\"#5-point-the-core-at-it-and-get-first-admin-access\">5. Point the core at it and get first-admin access</a></h2>\n<p>The core reaches your integration automatically once miniwerk has written the kraftwerk manifest and <code>productsnginx</code> routes to it — there is no separate \"point RM at it\" step beyond the registration wiring. To exercise the full flow you need an admin; generate the first admin invite code in local mode:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#61AFEF\">rmlocal</span><span style=\"color:#98C379\"> exec</span><span style=\"color:#98C379\"> rmapi</span><span style=\"color:#D19A66\"> -it</span><span style=\"color:#98C379\"> /bin/bash</span><span style=\"color:#D19A66\"> -c</span><span style=\"color:#98C379\"> \"source /.venv/bin/activate &#x26;&#x26; rasenmaeher_api addcode\"</span></span></code></pre>",
+      "lang": "bash"
+    },
+    {
+      "type": "html",
+      "html": "<p>Then open the local UI at <code>https://localmaeher.dev.pvarki.fi:4439</code>, enter the code, choose your admin callsign, and create/approve a user. Each user CRUD event the core processes is mirrored to your integration over mTLS — watch your service logs (<code>rmdev logs -f &#x3C;yourservice></code>) to confirm the callbacks land.</p>\n<h2 id=\"next\"><a href=\"#next\">Next</a></h2>\n<ul>\n<li><a href=\"/en/build-an-integration/register-your-integration-docker-compose-W6oMGCVsAt\">Register your integration (Docker Compose)</a> — wire a brand-new product into the stack (submodule + compose + miniwerk + nginx).</li>\n<li><a href=\"/en/build-an-integration/worked-example-matrix-918lI88Lsy\">Worked example: Matrix</a> — <code>python-matrix-rmapi</code> as the reference implementation.</li>\n<li><a href=\"/en/build-an-integration/integration-conventions-donts-cwt08BEcut\">Integration conventions &#x26; don'ts</a> — the contract your endpoints must honour.</li>\n</ul>"
+    }
+  ]
+}

@@ -1,11 +1,16 @@
-import { useNavigate, useParams } from "@tanstack/react-router";
-import { PLATFORMS, type ClientInfo } from "@shared/content-schema";
+import { useNavigate, useParams, useRouterState } from "@tanstack/react-router";
+import {
+  DEPLOYMENT_PLATFORMS,
+  OS_PLATFORMS,
+  type ClientInfo,
+} from "@shared/content-schema";
 import {
   PLATFORM_LABELS,
   setClientForBook,
   setPlatform,
   useReadingView,
 } from "@/lib/platform";
+import { stripBase } from "@/lib/base";
 import { readingOrder, resolveClient } from "@/lib/content/neighbors";
 import type { ReaderData } from "@/routes/$locale/$";
 
@@ -26,16 +31,25 @@ export function usePlatformPicker(reader?: ReaderData) {
   )?.clients;
   const hasClients = !!bookClients?.length;
 
+  // Outside a book the generic list depends on the area: the developer-docs
+  // area (/{locale}/dev*) offers the deployment targets (Docker / Kubernetes);
+  // everywhere else offers the OS platforms for product guides. Deployment
+  // targets never appear in the OS picker.
+  const pathname = useRouterState({
+    select: (s) => stripBase(s.location.pathname),
+  });
+  const inDevArea = /^\/[a-z]{2}\/dev(\/|$)/.test(pathname);
+  const genericPlatforms = inDevArea ? DEPLOYMENT_PLATFORMS : OS_PLATFORMS;
+
   // Inside a platform-agnostic book (no Platforms organizer in Outline) the
   // selector has no meaning — return empty options so callers hide it.
-  // Outside a book (home, shelf pages) fall back to the generic OS list so
-  // users can set their platform preference before opening any book.
+  // Outside a book (home, shelf pages) fall back to the generic list above.
   const options: ClientInfo[] =
     reader && !hasClients
       ? []
       : hasClients
         ? bookClients!
-        : PLATFORMS.map((key) => ({
+        : genericPlatforms.map((key) => ({
             id: key,
             platform: key,
             label: PLATFORM_LABELS[key],
@@ -44,7 +58,7 @@ export function usePlatformPicker(reader?: ReaderData) {
   const active =
     reader && hasClients
       ? resolveClient(reader.manifest, reader.collection, view)
-      : options.find((o) => o.platform === view.platform);
+      : (options.find((o) => o.platform === view.platform) ?? options[0]);
 
   const pick = (next: ClientInfo) => {
     if (reader && hasClients) {
