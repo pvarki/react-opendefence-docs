@@ -27,6 +27,20 @@ export type { OutlineNavNode } from "./script-types";
 
 const DEFAULT_API_BASE = "https://pvarki.getoutline.com/api";
 
+const MIME_BY_EXT: Record<string, string> = {
+  ".png": "image/png",
+  ".jpg": "image/jpeg",
+  ".jpeg": "image/jpeg",
+  ".webp": "image/webp",
+  ".gif": "image/gif",
+  ".svg": "image/svg+xml",
+  ".pdf": "application/pdf",
+};
+
+function mimeFromExt(ext: string): string {
+  return MIME_BY_EXT[ext.toLowerCase()] ?? "application/octet-stream";
+}
+
 // API Client
 
 export class OutlineApiClient {
@@ -209,6 +223,34 @@ export class OutlineApiClient {
   }
 
   /**
+   * List documents, optionally scoped to the direct children of a parent.
+   * Used for idempotent find-or-create: look for an existing organizer/page by
+   * title under a known parent before creating a new one.
+   *
+   * @param opts.collectionId     - Restrict to a collection
+   * @param opts.parentDocumentId - Restrict to direct children of this document
+   * @param opts.limit            - Page size (default 100)
+   */
+  async listDocuments(
+    opts: {
+      collectionId?: string;
+      parentDocumentId?: string;
+      limit?: number;
+    } = {},
+  ): Promise<Array<{ id: string; title: string }>> {
+    const data = await this.post<{
+      data: Array<{ id: string; title: string }>;
+    }>("/documents.list", {
+      ...(opts.collectionId ? { collectionId: opts.collectionId } : {}),
+      ...(opts.parentDocumentId
+        ? { parentDocumentId: opts.parentDocumentId }
+        : {}),
+      limit: opts.limit ?? 100,
+    });
+    return data.data.map((doc) => ({ id: doc.id, title: doc.title }));
+  }
+
+  /**
    * List all collections accessible to the API key
    */
   async listCollections(): Promise<
@@ -239,8 +281,25 @@ export class OutlineApiClient {
   }
 
   /** Replace a document's markdown body (keeps title/position). */
-  async updateDocument(id: string, text: string): Promise<void> {
-    await this.post("/documents.update", { id, text });
+  async updateDocument(
+    id: string,
+    text: string,
+    opts: { publish?: boolean } = {},
+  ): Promise<void> {
+    await this.post("/documents.update", {
+      id,
+      text,
+      ...(opts.publish !== undefined ? { publish: opts.publish } : {}),
+    });
+  }
+
+  /** Fetch a document's raw markdown body (documents.info `text` field). */
+  async getDocumentText(id: string): Promise<string> {
+    const data = await this.post<{ data: { text: string } }>(
+      "/documents.info",
+      { id },
+    );
+    return data.data.text ?? "";
   }
 
   // ==========================================================================
@@ -407,6 +466,69 @@ export class OutlineApiClient {
         : {}),
       ...(opts.index !== undefined ? { index: opts.index } : {}),
     });
+  }
+
+  /**
+   * Upload a local file to Outline as an attachment.
+   *
+   * Two-step flow (mirrors what the Outline editor does when you paste an
+   * image): `attachments.create` returns a presigned S3 POST, then the bytes
+   * are uploaded directly to S3. Returns the attachment id and the canonical
+   * reference URL — the same `attachments.redirect?id=` shape the sync pipeline
+   * already downloads, so embedding `![alt](url)` in a document body Just Works.
+   *
+   * @param filePath - Absolute or cwd-relative path to the file
+   * @param opts.name - Override the stored filename (defaults to basename)
+   * @param opts.contentType - Override the MIME type (defaults to extension)
+   * @param opts.documentId - Associate the attachment with a document
+   */
+  async uploadAttachment(
+    filePath: string,
+    opts: { name?: string; contentType?: string; documentId?: string } = {},
+  ): Promise<{ id: string; url: string }> {
+    const { readFile } = await import("node:fs/promises");
+    const { basename, extname } = await import("node:path");
+    const bytes = await readFile(filePath);
+    const name = opts.name ?? basename(filePath);
+    const contentType = opts.contentType ?? mimeFromExt(extname(filePath));
+
+    const { data: created } = await this.post<{
+      data: {
+        uploadUrl: string;
+        form: Record<string, string>;
+        attachment: { id: string; url: string };
+      };
+    }>("/attachments.create", {
+      name,
+      contentType,
+      size: bytes.byteLength,
+      preset: "documentAttachment",
+      ...(opts.documentId ? { documentId: opts.documentId } : {}),
+    });
+
+    // Presigned S3 POST: every form field first, the file blob LAST, no auth
+    // header (the signature lives in the form policy).
+    const fd = new FormData();
+    for (const [key, value] of Object.entries(created.form)) {
+      fd.append(key, value);
+    }
+    fd.append("file", new Blob([bytes], { type: contentType }), name);
+
+    const upload = await fetch(created.uploadUrl, { method: "POST", body: fd });
+    if (!upload.ok) {
+      const errText = await upload.text().catch(() => "");
+      throw new Error(
+        `Attachment upload failed for ${name}: ${upload.status} ${upload.statusText} - ${errText.slice(0, 300)}`,
+      );
+    }
+
+    // attachment.url is relative ("/api/attachments.redirect?id=..."); make it
+    // absolute against the instance origin so the markdown reference resolves.
+    const origin = this.apiBase.replace(/\/api\/?$/, "");
+    return {
+      id: created.attachment.id,
+      url: `${origin}${created.attachment.url}`,
+    };
   }
 
   /**

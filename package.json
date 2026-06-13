@@ -22,6 +22,8 @@
     "rebuild:meta": "tsx scripts/rebuild-metadata.ts",
     "search:index": "tsx scripts/build-search-index.ts",
     "sync": "pnpm sync:outline && pnpm fetch:api-specs && pnpm fetch:release-docs && pnpm validate:docs",
+    "author:scaffold": "tsx scripts/author/scaffold-draft.ts",
+    "author:push": "tsx scripts/author/push-draft.ts",
     "lint": "eslint .",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
