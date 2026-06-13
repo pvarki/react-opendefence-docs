@@ -6,6 +6,7 @@ import { loadPage } from "@/lib/content/loader";
 import { BlockRenderer } from "@/components/blocks/BlockRenderer";
 import { PrevNextBar } from "@/components/reader/PrevNextBar";
 import { EndOfBookCard } from "@/components/reader/EndOfBookCard";
+import { PageFooter } from "@/components/reader/PageFooter";
 import { Skeleton } from "@/components/ui/skeleton";
 import { useScrollMemory } from "@/components/reader/useScrollMemory";
 
@@ -37,6 +38,7 @@ interface PagePaneProps {
   position: PagePosition;
   isCurrent: boolean;
   nextBook?: { label: string; href: string };
+  activeClientId?: string;
 }
 
 /**
@@ -51,6 +53,7 @@ export function PagePane({
   position,
   isCurrent,
   nextBook,
+  activeClientId,
 }: PagePaneProps) {
   const { t } = useTranslation();
   const doc = usePageDoc(page);
@@ -93,6 +96,7 @@ export function PagePane({
           )}
           <PrevNextBar locale={locale} position={position} />
           {isLast && nextBook && <EndOfBookCard nextBook={nextBook} />}
+          <PageFooter collection={page.collection} clientId={activeClientId} />
         </article>
       </div>
     </div>

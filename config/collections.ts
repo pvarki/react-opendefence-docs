@@ -89,11 +89,55 @@ export const FOR_DEVELOPERS_COLLECTION: CollectionConfig = {
   description: "Developer-focused documentation",
 };
 
+// Audience-organized developer books — separate books on the Develop shelf.
+// Operate / Develop Deploy App / Build an Integration carry the Docker↔K8s
+// platform toggle; Introduction and Contribute to Project are platform-agnostic.
+// The "For Developers" book above stays as the existing K8s component reference.
+export const DEV_BOOK_COLLECTIONS: CollectionConfig[] = [
+  {
+    collectionId: "dc4aa3b7-2495-4b8a-b8db-bc79d65fe4d1",
+    label: "Introduction",
+    slug: "introduction",
+    section: "dev",
+    description: "Start here: what Deploy App is and how to choose a platform",
+  },
+  {
+    collectionId: "05529a3a-64f0-475a-9078-00c101d9b551",
+    label: "Operate",
+    slug: "operate",
+    section: "dev",
+    description: "Deploy and run Deploy App",
+  },
+  {
+    collectionId: "816041c3-4234-4cbe-b4fc-bdd7cd8203ec",
+    label: "Develop Deploy App",
+    slug: "develop-deploy-app",
+    section: "dev",
+    description: "Work on the Deploy App core (rmapi)",
+  },
+  {
+    collectionId: "be2f879f-ab44-4830-a043-dd305d4c65b3",
+    label: "Build an Integration",
+    slug: "build-an-integration",
+    section: "dev",
+    description: "Build a product integration API for Deploy App",
+  },
+  {
+    collectionId: "97398f22-736c-4e41-b8f3-4e90f6c98533",
+    label: "Contribute to Project",
+    slug: "contribute-to-project",
+    section: "dev",
+    description: "Contribute across the pvarki repositories",
+  },
+];
+
 export const ALL_COLLECTIONS: CollectionConfig[] = [
   MAIN_COLLECTION,
   ...GUIDE_COLLECTIONS,
   ...WIKI_COLLECTIONS,
-  FOR_DEVELOPERS_COLLECTION,
+  ...DEV_BOOK_COLLECTIONS,
+  // FOR_DEVELOPERS_COLLECTION dropped from the site (superseded by the 5
+  // dev books above). Its Outline collection is left intact.
 ];
 
 export function getCollectionBySlug(
@@ -159,4 +203,52 @@ export const API_SPEC_SOURCES: ApiSpecSource[] = [
     kind: "gh-pages",
     url: "https://pvarki.github.io/docker-rasenmaeher-integration/openapi.json",
   },
+];
+
+/** Release-dependent doc sources fetched from each pvarki component repo. */
+export interface ReleaseDocSource {
+  /** URL-safe component slug; also the folder under public/release-docs/. */
+  id: string;
+  /** Display name on the Releases page. */
+  name: string;
+  /** GitHub repo "owner/name". */
+  repo: string;
+  /** Default branch for raw CHANGELOG/RELEASE_NOTES fetches. Default "main". */
+  branch?: string;
+  /** Path to the changelog in the repo. Default "CHANGELOG.md". */
+  changelogPath?: string;
+  /** Path to optional human release notes. Default "RELEASE_NOTES.md". */
+  releaseNotesPath?: string;
+  /** How many GitHub releases to surface, newest-first. Default 10. */
+  maxVersions?: number;
+}
+
+/**
+ * Component repos whose release notes / changelogs feed the on-site Releases
+ * page. Fetched (and committed) by scripts/fetch-release-docs.ts, mirroring the
+ * OpenAPI-spec fetch above. Adding a repo here surfaces it automatically.
+ */
+export const RELEASE_DOC_SOURCES: ReleaseDocSource[] = [
+  {
+    id: "docker-rasenmaeher-integration",
+    name: "Deploy App Core (RASENMAEHER, legacy)",
+    repo: "pvarki/docker-rasenmaeher-integration",
+  },
+  {
+    id: "opendefence-platform",
+    name: "OpenDefence Platform (K8s)",
+    repo: "pvarki/opendefence-platform",
+  },
+  {
+    id: "python-integration-template",
+    name: "Integration Template (rmapi)",
+    repo: "pvarki/python-integration-template",
+  },
+  {
+    id: "python-matrix-rmapi",
+    name: "Matrix Integration (example)",
+    repo: "pvarki/python-matrix-rmapi",
+  },
+  // NB: deployapp-runbook is an Outline export, not a GitHub repo — its content
+  // is authored in Outline (Developer Guide), so it has no release feed here.
 ];

@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "id": "8a1b8ee3-f02b-4f5f-8782-cc62eaecbd20",
+  "slug": "deploy-on-kubernetes-S5cwJYQzPu",
+  "collection": "operate",
+  "locale": "en",
+  "title": "Deploy on Kubernetes",
+  "breadcrumb": [
+    "Platforms",
+    "Kubernetes",
+    "Deploy on Kubernetes"
+  ],
+  "createdAt": "2026-06-13T13:20:34.601Z",
+  "updatedAt": "2026-06-13T14:30:09.549Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "How it is structured",
+      "id": "how-it-is-structured"
+    },
+    {
+      "depth": 2,
+      "text": "Prerequisites (local)",
+      "id": "prerequisites-local"
+    },
+    {
+      "depth": 2,
+      "text": "Local deploy with kind",
+      "id": "local-deploy-with-kind"
+    },
+    {
+      "depth": 2,
+      "text": "Ingress: Traefik",
+      "id": "ingress-traefik"
+    },
+    {
+      "depth": 2,
+      "text": "CA and trust (no CFSSL, no miniwerk)",
+      "id": "ca-and-trust-no-cfssl-no-miniwerk"
+    },
+    {
+      "depth": 2,
+      "text": "Other supporting operators",
+      "id": "other-supporting-operators"
+    },
+    {
+      "depth": 2,
+      "text": "Cloud deploy with Zarf",
+      "id": "cloud-deploy-with-zarf"
+    },
+    {
+      "depth": 2,
+      "text": "First admin invite code",
+      "id": "first-admin-invite-code"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>This page covers deploying Deploy App on the newer Kubernetes platform, <a href=\"https://github.com/pvarki/opendefence-platform\" target=\"_blank\" rel=\"noopener noreferrer\"><code>pvarki/opendefence-platform</code></a>, which converts the Docker Compose stack into Kustomize manifests (<code>base/</code> + <code>overlays/&#x3C;env>/</code>). <strong>This platform is alpha.</strong> Unlike the legacy stack it has <strong>no miniwerk</strong>, and <strong>CFSSL is not the CA</strong> — certificate and trust material come from <strong>cert-manager + trust-manager + the</strong> <code>**opendefense-pki**</code> <strong>bundle</strong>. For the shared in-UI onboarding flow, see <strong>Operator quickstart</strong>.</p>\n<h2 id=\"how-it-is-structured\"><a href=\"#how-it-is-structured\">How it is structured</a></h2>\n<p>Each application is split into <code>base/</code> (environment-agnostic) and <code>overlays/&#x3C;env>/</code> (registries, pull secrets, hostnames, certificates, ingress). The top-level composition is phased under <code>k8s/main/&#x3C;env>/</code>:</p>\n<ul>\n<li><code>infra-phase1</code> — core operators (cloudnative-pg, cert-manager, external-secrets-operator)</li>\n<li><code>infra-phase2</code> — trust-manager and the cluster issuers</li>\n<li><code>monitoring</code> — Grafana, Loki, Alloy, Prometheus</li>\n<li><code>opendefense</code> — the Deploy App workloads themselves (the <code>opendefense-system</code> namespace, including <code>deployment/opendefense-rmapi</code>, the core <a href=\"/en/dev/api\">rmapi</a>)</li>\n</ul>\n<p>The <code>task deploy</code> flow applies these phases in order with readiness gates between them — do not bypass the sequencing.</p>\n<h2 id=\"prerequisites-local\"><a href=\"#prerequisites-local\">Prerequisites (local)</a></h2>\n<ul>\n<li><a href=\"https://kind.sigs.k8s.io/\" target=\"_blank\" rel=\"noopener noreferrer\"><code>kind</code></a> — Kubernetes in Docker</li>\n<li><a href=\"https://kubernetes.io/docs/tasks/tools/\" target=\"_blank\" rel=\"noopener noreferrer\"><code>kubectl</code></a></li>\n<li><a href=\"https://mise.jdx.dev/\" target=\"_blank\" rel=\"noopener noreferrer\"><code>mise</code></a> — tool version manager (recommended)</li>\n</ul>\n<p>Tooling versions are pinned in <code>mise.toml</code> (helm 3, kind 0.31, kubectl 1.36, task 3, yq 4.53.2, zarf 0.76.0). Once <code>mise</code> is installed it auto-selects the right tool versions when you enter the project directory:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#61AFEF\">mise</span><span style=\"color:#98C379\"> install</span><span style=\"color:#7F848E;font-style:italic\">   # install all pinned tools</span></span>\n<span class=\"line\"><span style=\"color:#61AFEF\">mise</span><span style=\"color:#98C379\"> trust</span><span style=\"color:#7F848E;font-style:italic\">     # trust the project's local mise config</span></span></code></pre>",
+      "lang": "bash"
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"local-deploy-with-kind\"><a href=\"#local-deploy-with-kind\">Local deploy with kind</a></h2>\n<p>Bring up a kind cluster and deploy the whole stack:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#61AFEF\">task</span><span style=\"color:#98C379\"> up</span><span style=\"color:#7F848E;font-style:italic\">        # create the kind cluster and deploy all resources</span></span>\n<span class=\"line\"><span style=\"color:#61AFEF\">task</span><span style=\"color:#98C379\"> down</span><span style=\"color:#7F848E;font-style:italic\">      # tear the cluster down</span></span>\n<span class=\"line\"><span style=\"color:#61AFEF\">task</span><span style=\"color:#7F848E;font-style:italic\">           # list all available tasks</span></span></code></pre>",
+      "lang": "bash"
+    },
+    {
+      "type": "html",
+      "html": "<p><code>task up</code> runs, in order: <code>cluster:create</code> (creates the <code>opendefense-kind</code> cluster from <code>kind-config.yaml</code> if absent), <code>check-kubecontext</code>, <code>cluster:wait</code> (waits for nodes Ready), then <code>deploy:local</code>. <code>deploy:local</code> applies the phased local kustomizations (<code>k8s/main/local/*</code>) with <code>kubectl apply --server-side</code>, waiting for each phase's controllers before continuing. Kustomizations that pull in Helm charts (traefik, trust-manager, external-secrets-operator) are rendered with <code>--enable-helm</code>.</p>\n<p>The kind config maps the host ports the stack needs: 80/443 (Traefik web/websecure), 8089 and 8443 (TAK CoT streaming and native HTTPS via Traefik TCP passthrough), and the MediaMTX ports 1936 (RTMPS), 8322 (RTSPS), 8890 (SRT TCP+UDP), 9888 (HLS), 9889 (WebRTC), 9996 (playback).</p>\n<p>The local deploy flow looks like this:</p>"
+    },
+    {
+      "type": "mermaid",
+      "code": "flowchart LR\n    A[\"task up\"] --> B[\"cluster:create\"]\n    B --> C[\"check-kubecontext\"]\n    C --> D[\"cluster:wait\"]\n    D --> E[\"deploy:local\"]\n    E --> P1[\"infra-phase1\"]\n    P1 --> P2[\"infra-phase2\"]\n    P2 --> P3[\"monitoring\"]\n    P3 --> P4[\"opendefense\"]"
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"ingress-traefik\"><a href=\"#ingress-traefik\">Ingress: Traefik</a></h2>\n<p>Ingress is handled by <strong>Traefik</strong> (with <code>IngressRoute</code> resources and TCP passthrough for the TAK ports). It replaces the legacy nginx front door. Per-environment routes and certificates live in each service's <code>overlays/&#x3C;env>/</code>, not in <code>base/</code>.</p>\n<h2 id=\"ca-and-trust-no-cfssl-no-miniwerk\"><a href=\"#ca-and-trust-no-cfssl-no-miniwerk\">CA and trust (no CFSSL, no miniwerk)</a></h2>\n<p>Certificate issuance and trust distribution use Kubernetes-native operators:</p>\n<ul>\n<li><strong>cert-manager</strong> issues certificates.</li>\n<li><code>**opendefense-pki**</code> (<code>k8s/opendefense-pki/</code>) defines the CA chain: a CA cert, CA issuer, the OpenDefense CA, an intermediate CA, and a trust bundle.</li>\n<li><strong>trust-manager</strong> distributes the trust bundle across the cluster.</li>\n</ul>\n<p>The core <a href=\"/en/dev/api\">rmapi</a> is wired to cert-manager rather than CFSSL via its environment, for example:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span>RM_CERT_BACKEND=cert_manager</span></span>\n<span class=\"line\"><span>RM_CERT_MANAGER_NAMESPACE=opendefense-system</span></span>\n<span class=\"line\"><span>RM_CERT_MANAGER_ISSUER_NAME=opendefense-intermediate-ca-issuer</span></span></code></pre>",
+      "lang": "plaintext"
+    },
+    {
+      "type": "html",
+      "html": "<p>Do not document CFSSL or miniwerk as part of this platform — they belong to the legacy Docker Compose stack only.</p>\n<blockquote>\n<p><strong>TODO:</strong> the local <code>opendefense-system</code> base still contains a miniwerk <em>job</em> configured for mkcert (<code>MW_MKCERT=true</code>) used for local cert bootstrapping. Confirm whether this is a transitional local-only artifact; the canonical CA/trust path on this platform is cert-manager + trust-manager + <code>opendefense-pki</code>, and Let's Encrypt-style miniwerk certificate provisioning is <strong>not</strong> part of it.</p>\n</blockquote>\n<h2 id=\"other-supporting-operators\"><a href=\"#other-supporting-operators\">Other supporting operators</a></h2>\n<p>The platform also runs cloudnative-pg (PostgreSQL), keycloak-operator, external-secrets-operator, projectcontour, longhorn (storage), and the prometheus/grafana operators, each as its own <code>k8s/&#x3C;component>/</code> Kustomize unit composed in via <code>k8s/main/&#x3C;env>/</code>.</p>\n<h2 id=\"cloud-deploy-with-zarf\"><a href=\"#cloud-deploy-with-zarf\">Cloud deploy with Zarf</a></h2>\n<p>For an external cluster, build a Zarf package from the cloud overlays and deploy it. The build renders the same four cloud phases and bundles their manifests:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#61AFEF\">task</span><span style=\"color:#98C379\"> zarf:package:cloud</span></span></code></pre>",
+      "lang": "bash"
+    },
+    {
+      "type": "html",
+      "html": "<p>This writes <code>zarf-package-opendefense-cloud-&#x3C;arch>-1.0.0.tar.zst</code> to the repo root (default architecture <code>amd64</code>; override with <code>ZARF_ARCHITECTURE=arm64</code>). Then deploy against your cluster's kubeconfig, supplying the deploy-time hostname. The <code>KUBECONFIG</code> below points at whatever kubeconfig your target cluster gave you — <strong>e.g. when in Azure</strong> that might be a <code>k3s-azure.yaml</code>, but the target cloud is just an example; any reachable cluster works:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#E06C75\">KUBECONFIG</span><span style=\"color:#56B6C2\">=</span><span style=\"color:#98C379\">k3s-azure.yaml</span><span style=\"color:#61AFEF\"> zarf</span><span style=\"color:#98C379\"> package</span><span style=\"color:#98C379\"> deploy</span><span style=\"color:#56B6C2\"> \\</span></span>\n<span class=\"line\"><span style=\"color:#98C379\">  zarf-package-opendefense-cloud-amd64-1.0.0.tar.zst</span><span style=\"color:#56B6C2\"> \\</span></span>\n<span class=\"line\"><span style=\"color:#D19A66\">  --set</span><span style=\"color:#98C379\"> OPENDEFENSE_HOST=example.dev.pvarki.fi</span><span style=\"color:#D19A66\"> --confirm</span></span></code></pre>",
+      "lang": "bash"
+    },
+    {
+      "type": "html",
+      "html": "<p><code>OPENDEFENSE_HOST</code> is a deploy-time Zarf variable; cloud overlay resources reference <code>###ZARF_VAR_OPENDEFENSE_HOST###</code> and Zarf substitutes it at deploy time. The package deploys in the same phased order as <code>task deploy:cloud</code>: <code>infra-phase1</code> (waits for CNPG, cert-manager, external-secrets), then <code>infra-phase2</code> (cluster issuers, waits for trust-manager), then <code>monitoring</code>, then <code>opendefense</code>. See <code>zarf/cloud/README.md</code> for build internals (including YOLO mode via <code>ZARF_YOLO=true</code>).</p>\n<h2 id=\"first-admin-invite-code\"><a href=\"#first-admin-invite-code\">First admin invite code</a></h2>\n<p>Generate the first admin invite code from the core <a href=\"/en/dev/api\">rmapi</a>. On this platform that is <code>deployment/opendefense-rmapi</code> in the <code>opendefense-system</code> namespace:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#61AFEF\">kubectl</span><span style=\"color:#98C379\"> exec</span><span style=\"color:#D19A66\"> -it</span><span style=\"color:#D19A66\"> -n</span><span style=\"color:#98C379\"> opendefense-system</span><span style=\"color:#98C379\"> deployment/opendefense-rmapi</span><span style=\"color:#D19A66\"> --</span><span style=\"color:#56B6C2\"> \\</span></span>\n<span class=\"line\"><span style=\"color:#98C379\">  rasenmaeher_api</span><span style=\"color:#98C379\"> addcode</span></span></code></pre>",
+      "lang": "bash"
+    },
+    {
+      "type": "html",
+      "html": "<blockquote>\n<p><strong>TODO:</strong> confirm the exact in-container invocation on k8s (whether the virtualenv must be activated, e.g. <code>source /.venv/bin/activate &#x26;&#x26; rasenmaeher_api addcode</code>, as it is in some legacy modes). The command name (<code>rasenmaeher_api addcode</code>) and target deployment are confirmed; the shell wrapper is not.</p>\n</blockquote>\n<p>Then follow the shared in-UI flow in <strong>Operator quickstart</strong>. For ongoing operations on this platform see <strong>Day-2 operations (Kubernetes)</strong>; for development against a running platform (mirrord), see <strong>Develop Deploy App</strong>.</p>"
+    }
+  ]
+}

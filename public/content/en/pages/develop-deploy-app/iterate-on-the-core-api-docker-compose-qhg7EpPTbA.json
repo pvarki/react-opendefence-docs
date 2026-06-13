@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 1,
+  "id": "20e25f38-ce64-4b6e-b539-35b879ac0426",
+  "slug": "iterate-on-the-core-api-docker-compose-qhg7EpPTbA",
+  "collection": "develop-deploy-app",
+  "locale": "en",
+  "title": "Iterate on the core API (Docker Compose)",
+  "breadcrumb": [
+    "Platforms",
+    "Docker Compose (legacy)",
+    "Iterate on the core API (Docker Compose)"
+  ],
+  "createdAt": "2026-06-13T13:20:41.420Z",
+  "updatedAt": "2026-06-13T14:30:11.043Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "The edit / reload loop (rmdev)",
+      "id": "the-edit--reload-loop-rmdev"
+    },
+    {
+      "depth": 2,
+      "text": "Verify in rmlocal before trusting it",
+      "id": "verify-in-rmlocal-before-trusting-it"
+    },
+    {
+      "depth": 2,
+      "text": "Running integration tests",
+      "id": "running-integration-tests"
+    },
+    {
+      "depth": 2,
+      "text": "Bringing the change upstream",
+      "id": "bringing-the-change-upstream"
+    },
+    {
+      "depth": 2,
+      "text": "Switching between rmlocal and rmdev safely",
+      "id": "switching-between-rmlocal-and-rmdev-safely"
+    },
+    {
+      "depth": 2,
+      "text": "Related pages",
+      "id": "related-pages"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Once the legacy stack is up (see <a href=\"/en/develop-deploy-app/set-up-your-dev-environment-docker-compose-t4JDwRuQs2\">Set up your dev environment (Docker Compose)</a>), this is the inner loop for changing the core <code>rmapi</code>: edit the source in the <code>api/</code> submodule, let uvicorn reload it, exercise it, run integration tests against a clean database, then bring the change upstream. All commands assume the <code>rmlocal</code> / <code>rmdev</code> aliases from the setup page.</p>\n<h2 id=\"the-edit--reload-loop-rmdev\"><a href=\"#the-edit--reload-loop-rmdev\">The edit / reload loop (rmdev)</a></h2>\n<p>The core source is the <code>api/</code> git submodule, mounted into the <code>rmapi</code> container as <code>/app</code>. In <code>rmdev</code> the service runs under uvicorn <code>--reload</code>:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span>uvicorn --host 0.0.0.0 --port 8000 --factory rasenmaeher_api.web.application:get_app --reload</span></span></code></pre>",
+      "lang": "plaintext"
+    },
+    {
+      "type": "html",
+      "html": "<p>So the loop is:</p>\n<ol>\n<li>Edit Python under <code>api/</code> (the <code>rasenmaeher_api</code> package).</li>\n<li>Save — uvicorn detects the change and reloads the app. No rebuild needed for pure Python edits.</li>\n<li>Hit the endpoint through the UI (<code>https://localmaeher.dev.pvarki.fi:4439</code>) or its Swagger UI, or via the relevant product callback path.</li>\n<li>Watch the container logs:</li>\n</ol>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#61AFEF\">rmdev</span><span style=\"color:#98C379\"> logs</span><span style=\"color:#D19A66\"> -f</span><span style=\"color:#98C379\"> rmapi</span></span></code></pre>",
+      "lang": "bash"
+    },
+    {
+      "type": "html",
+      "html": "<blockquote>\n<p><strong>Note:</strong> Reload covers source edits. Changing dependencies, the Dockerfile, or <code>container-init.sh</code> requires a rebuild: <code>rmdev build rmapi</code> then <code>rmdev up -d rmapi</code>. The dev entrypoint runs <code>container-init.sh</code> and <code>poetry install</code> before launching uvicorn, so dependency changes are picked up on container (re)start, not on file save.</p>\n</blockquote>\n<h2 id=\"verify-in-rmlocal-before-trusting-it\"><a href=\"#verify-in-rmlocal-before-trusting-it\">Verify in rmlocal before trusting it</a></h2>\n<p><code>rmdev</code> is convenient but introduces variability (reload, unminified assets, extra dev services). Before you consider a change done, confirm it in <code>rmlocal</code>, where assets are minified and baked in and the layout matches a real deployment:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#61AFEF\">rmdev</span><span style=\"color:#98C379\"> down</span><span style=\"color:#7F848E;font-style:italic\">            # stop the dev env first (see rule below)</span></span>\n<span class=\"line\"><span style=\"color:#61AFEF\">rmlocal</span><span style=\"color:#98C379\"> build</span><span style=\"color:#98C379\"> rmapi</span><span style=\"color:#7F848E;font-style:italic\">   # rebuild the baked image with your change</span></span>\n<span class=\"line\"><span style=\"color:#61AFEF\">rmlocal</span><span style=\"color:#98C379\"> up</span></span></code></pre>",
+      "lang": "bash"
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"running-integration-tests\"><a href=\"#running-integration-tests\">Running integration tests</a></h2>\n<p>The integration tests <strong>require a clean database</strong> and have side effects (see <strong>Testing &#x26; CI conventions</strong>). Always reset volumes first:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#61AFEF\">rmlocal</span><span style=\"color:#98C379\"> down</span><span style=\"color:#D19A66\"> -v</span><span style=\"color:#7F848E;font-style:italic\">       # wipe persistent volumes (deletes users/certs)</span></span>\n<span class=\"line\"><span style=\"color:#61AFEF\">rmlocal</span><span style=\"color:#98C379\"> build</span><span style=\"color:#D19A66\"> --pull</span></span>\n<span class=\"line\"><span style=\"color:#61AFEF\">rmlocal</span><span style=\"color:#98C379\"> up</span></span>\n<span class=\"line\"><span style=\"color:#7F848E;font-style:italic\"># ... wait until healthy, then run the pytest integration suite</span></span></code></pre>",
+      "lang": "bash"
+    },
+    {
+      "type": "html",
+      "html": "<blockquote>\n<p><strong>TODO:</strong> confirm the exact pytest invocation for the integration suite (host vs. inside the <code>rmapi</code> container) and document it here.</p>\n</blockquote>\n<p>After any <code>down -v</code>, regenerate the first admin invite code before onboarding again:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#61AFEF\">rmlocal</span><span style=\"color:#98C379\"> exec</span><span style=\"color:#98C379\"> rmapi</span><span style=\"color:#D19A66\"> -it</span><span style=\"color:#98C379\"> /bin/bash</span><span style=\"color:#D19A66\"> -c</span><span style=\"color:#98C379\"> \"source /.venv/bin/activate &#x26;&#x26; rasenmaeher_api addcode\"</span></span></code></pre>",
+      "lang": "bash"
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"bringing-the-change-upstream\"><a href=\"#bringing-the-change-upstream\">Bringing the change upstream</a></h2>\n<p>Your edits live in the <code>api/</code> submodule (<code>pvarki/python-rasenmaeher-api</code>), a repo in its own right; the aggregate compose repo only records which commit of it to use. Per the compose <code>README.rst</code> \"Git submodules\", ship a core change in two steps:</p>\n<ol>\n<li><strong>In the submodule</strong> (<code>cd api/</code>): branch, commit, push, and open a PR to <code>pvarki/python-rasenmaeher-api</code>. Get it merged.</li>\n<li><strong>In the compose repo</strong>: open a PR that updates the submodule pointer to the merged commit (check out the merged commit/tag inside <code>api/</code>, then <code>git add api</code> at the repo root, commit, and PR).</li>\n</ol>\n<p>The detailed submodule-PR + compose-edit workflow (and the new-integration variant) is in <a href=\"/en/build-an-integration/register-your-integration-docker-compose-W6oMGCVsAt\">Build an Integration > Register your integration (Docker Compose)</a> — follow it there rather than repeating the steps. Remind collaborators to run <code>git submodule update --init --recursive</code> after pulling the pointer change.</p>\n<h2 id=\"switching-between-rmlocal-and-rmdev-safely\"><a href=\"#switching-between-rmlocal-and-rmdev-safely\">Switching between rmlocal and rmdev safely</a></h2>\n<p>Two rules from the <code>README.rst</code> prevent most breakage:</p>\n<ul>\n<li><strong>Never keep both up at once.</strong> Running <code>rmlocal</code> and <code>rmdev</code> simultaneously causes network issues. Always <code>down</code> one before bringing up the other:</li>\n</ul>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#61AFEF\">rmdev</span><span style=\"color:#98C379\"> down</span></span>\n<span class=\"line\"><span style=\"color:#61AFEF\">rmlocal</span><span style=\"color:#98C379\"> up</span></span></code></pre>",
+      "lang": "bash"
+    },
+    {
+      "type": "html",
+      "html": "<ul>\n<li><strong>Use</strong> <code>**down -v**</code> <strong>to clear weird state.</strong> When switching environments or hitting inexplicable issues, reset the persistent volumes. Remember this destroys certificates and users, so you will re-run <code>rasenmaeher_api addcode</code> and re-onboard afterwards.</li>\n</ul>\n<h2 id=\"related-pages\"><a href=\"#related-pages\">Related pages</a></h2>\n<ul>\n<li><a href=\"/en/develop-deploy-app/set-up-your-dev-environment-docker-compose-t4JDwRuQs2\">Set up your dev environment (Docker Compose)</a> — the one-time setup.</li>\n<li><a href=\"/en/develop-deploy-app/core-apis-the-rmapi-contract-RUcNFLQRXT\">Core APIs &#x26; the rmapi contract</a> — what your endpoint changes affect downstream.</li>\n<li><strong>Testing &#x26; CI conventions</strong> — the clean-DB rule and the merge gates.</li>\n</ul>"
+    }
+  ]
+}

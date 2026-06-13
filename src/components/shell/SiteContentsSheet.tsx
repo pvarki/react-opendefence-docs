@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, useRouterState } from "@tanstack/react-router";
 import { useTranslation } from "react-i18next";
-import { Braces } from "lucide-react";
+import { Braces, Tag } from "lucide-react";
 import type { Locale, LocaleManifest } from "@shared/content-schema";
 import { loadManifest } from "@/lib/content/loader";
 import { siteSections } from "@/lib/siteSections";
@@ -93,6 +93,19 @@ export function SiteContentsSheet({
                         >
                           <Braces className="size-3.5" />
                           API Reference
+                        </Link>
+                      </li>
+                    )}
+                    {section.withReleases && (
+                      <li>
+                        <Link
+                          to="/$locale/dev/releases"
+                          params={{ locale }}
+                          onClick={() => onOpenChange(false)}
+                          className="flex items-center gap-2 rounded-md px-2 py-1.5 text-sm text-muted-foreground hover:bg-muted hover:text-foreground"
+                        >
+                          <Tag className="size-3.5" />
+                          Releases
                         </Link>
                       </li>
                     )}

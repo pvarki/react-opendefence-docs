@@ -1,6 +1,13 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useTranslation } from "react-i18next";
-import { BookOpen, ChevronDown, Code2, Smartphone, Zap } from "lucide-react";
+import {
+  BookOpen,
+  ChevronDown,
+  Code2,
+  MonitorPlay,
+  Smartphone,
+  Zap,
+} from "lucide-react";
 import { BookCard } from "@/components/shell/BookCard";
 import { CARD_IMAGES } from "@/lib/cardImages";
 import { withBase } from "@/lib/base";
@@ -72,6 +79,14 @@ function HomePage() {
               size="tall"
             />
           ))}
+          <BookCard
+            locale={locale}
+            href="https://demo.opendefence.fi"
+            icon={MonitorPlay}
+            title="Try the demo"
+            description="See how Deploy App works and feels like"
+            size="tall"
+          />
         </div>
       </div>
       <HomeFooter />
@@ -105,6 +120,9 @@ function HomeFooter() {
       <div className="mx-auto max-w-2xl px-4 py-6 md:py-10">
         <p className="text-sm leading-relaxed text-foreground">
           {t("footer.lead")}
+        </p>
+        <p className="mt-3 text-sm leading-relaxed text-foreground">
+          {t("footer.lead2")}
         </p>
 
         {/* Collapsed by default; native disclosure keeps it JS-free. */}

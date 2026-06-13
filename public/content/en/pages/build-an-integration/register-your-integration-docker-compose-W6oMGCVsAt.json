@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "id": "51e42e5c-1438-46f5-bf47-27bb1ece2492",
+  "slug": "register-your-integration-docker-compose-W6oMGCVsAt",
+  "collection": "build-an-integration",
+  "locale": "en",
+  "title": "Register your integration (Docker Compose)",
+  "breadcrumb": [
+    "Platforms",
+    "Docker Compose (legacy)",
+    "Register your integration (Docker Compose)"
+  ],
+  "createdAt": "2026-06-13T13:21:34.999Z",
+  "updatedAt": "2026-06-13T14:30:11.999Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Two paths",
+      "id": "two-paths"
+    },
+    {
+      "depth": 2,
+      "text": "A. Add a NEW product integration",
+      "id": "a-add-a-new-product-integration"
+    },
+    {
+      "depth": 3,
+      "text": "A1. Add the submodule",
+      "id": "a1-add-the-submodule"
+    },
+    {
+      "depth": 3,
+      "text": "A2. docker-compose.yml — register the service for real deployments",
+      "id": "a2-docker-composeyml--register-the-service-for-real-deployments"
+    },
+    {
+      "depth": 3,
+      "text": "A3. docker-compose-local.yml — local registry / image overrides",
+      "id": "a3-docker-compose-localyml--local-registry--image-overrides"
+    },
+    {
+      "depth": 3,
+      "text": "A4. docker-compose-dev.yml — dev-mode (uvicorn --reload) overrides",
+      "id": "a4-docker-compose-devyml--dev-mode-uvicorn---reload-overrides"
+    },
+    {
+      "depth": 3,
+      "text": "A5. The localhost-resolution note (unofficial integrations)",
+      "id": "a5-the-localhost-resolution-note-unofficial-integrations"
+    },
+    {
+      "depth": 3,
+      "text": "A6. Validate, then PR",
+      "id": "a6-validate-then-pr"
+    },
+    {
+      "depth": 2,
+      "text": "B. Update an EXISTING submodule (pointer bump)",
+      "id": "b-update-an-existing-submodule-pointer-bump"
+    },
+    {
+      "depth": 2,
+      "text": "Next",
+      "id": "next"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>This is the canonical workflow for getting a <strong>product integration API</strong> into the legacy <code>docker-rasenmaeher-integration</code> stack. Components there are <strong>git submodules</strong>, so \"registering\" your integration means two layers of pull request: one in <em>your</em> repo, and one in the integration-compose repo that wires the service into compose, miniwerk, and nginx. If you have not run the stack yet, do <a href=\"/en/build-an-integration/set-up-your-dev-environment-docker-compose-h3bTY6alr3\">Set up your dev environment (Docker Compose)</a> first.</p>\n<blockquote>\n<p>Reminder on terms: the integration-compose's <code>api/</code> submodule <strong>is</strong> the core <code>rmapi</code> (<code>pvarki/python-rasenmaeher-api</code>). Your service is a <em>product integration API</em> (like <code>pvarki/python-matrix-rmapi</code>), not \"rmapi\".</p>\n</blockquote>\n<h2 id=\"two-paths\"><a href=\"#two-paths\">Two paths</a></h2>"
+    },
+    {
+      "type": "mermaid",
+      "code": "flowchart TB\n    Q{\"Is your product already\\na submodule in the stack?\"}\n    Q -->|No| NEW[\"Add it: new submodule + compose/miniwerk/nginx edits\"]\n    Q -->|\"Yes (e.g. api, takintegration)\"| UPD[\"Update it: PR in submodule repo, then bump the pointer\"]"
+    },
+    {
+      "type": "html",
+      "html": "<hr>\n<h2 id=\"a-add-a-new-product-integration\"><a href=\"#a-add-a-new-product-integration\">A. Add a NEW product integration</a></h2>\n<p>Open one PR against <code>docker-rasenmaeher-integration</code> that <strong>adds your repo as a submodule</strong> <em>and</em> makes the compose-level edits. Per the README, submodules \"are repos in their own right\" — yours will be no different.</p>\n<h3 id=\"a1-add-the-submodule\"><a href=\"#a1-add-the-submodule\">A1. Add the submodule</a></h3>\n<p>From the repo root, add your integration's repo into its own directory (matching the existing pattern: <code>api</code>, <code>takintegration</code>, <code>battlelog</code>, <code>matrixrmapi</code>, …):</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#61AFEF\">git</span><span style=\"color:#98C379\"> submodule</span><span style=\"color:#98C379\"> add</span><span style=\"color:#98C379\"> https://github.com/</span><span style=\"color:#ABB2BF\">&#x3C;</span><span style=\"color:#98C379\">or</span><span style=\"color:#ABB2BF\">g></span><span style=\"color:#98C379\">/</span><span style=\"color:#ABB2BF\">&#x3C;</span><span style=\"color:#98C379\">your-integratio</span><span style=\"color:#ABB2BF\">n> &#x3C;</span><span style=\"color:#98C379\">di</span><span style=\"color:#ABB2BF\">r></span></span>\n<span class=\"line\"><span style=\"color:#61AFEF\">git</span><span style=\"color:#98C379\"> add</span><span style=\"color:#98C379\"> .gitmodules</span><span style=\"color:#ABB2BF\"> &#x3C;</span><span style=\"color:#98C379\">di</span><span style=\"color:#ABB2BF\">r></span></span></code></pre>",
+      "lang": "bash"
+    },
+    {
+      "type": "html",
+      "html": "<p>Tell collaborators to run <code>git submodule update --init --recursive</code> after they pull your branch.</p>\n<h3 id=\"a2-docker-composeyml--register-the-service-for-real-deployments\"><a href=\"#a2-docker-composeyml--register-the-service-for-real-deployments\">A2. <code>docker-compose.yml</code> — register the service for real deployments</a></h3>\n<p>Add a service block modelled on <code>matrixrmapi</code> (the reference) or <code>takrmapi</code>. The load-bearing parts:</p>\n<ul>\n<li><strong>Image + build</strong>: <code>image: ${PVARKI_DOCKER_REPO:-ghcr.io/}pvarki/&#x3C;your-image>:&#x3C;tag></code> with <code>build.context: ./&#x3C;dir></code>, <code>target: production</code>.</li>\n<li><strong>Networks</strong>: join <code>productnet</code> (so nginx can reach you) and <code>intranet</code>. Do <strong>not</strong> publish your internal port here — traffic comes through nginx on <code>4626</code>.</li>\n<li><code>**depends_on**</code>: <code>rmnginx</code> healthy (plus any backing service your product needs).</li>\n<li><strong>Volumes</strong>: at minimum <code>ca_public:/ca_public</code> (CA chain to validate the core's mTLS cert), your product's <code>kraftwerk_shared_&#x3C;product>:/pvarki</code> (where miniwerk writes the manifest), a persistent data volume, and <code>ui_files:/ui_files</code> if you ship Deploy App UI assets.</li>\n<li><code>**healthcheck**</code>: e.g. <code>test: '&#x3C;yourcli> healthcheck || exit 1'</code>.</li>\n<li><strong>Route it on 4626</strong>: add your upstream to the shared <code>productsnginx</code> service via env vars, mirroring <code>NGINX_MATRIX_UPSTREAM</code> / <code>NGINX_MATRIX_UPSTREAM_PORT</code> (which point at <code>matrixrmapi:8012</code>). <code>productsnginx</code> is what publishes <code>4626</code> (<code>PRODUCT_HTTPS_PORT</code>) and proxies <code>mtls.&#x3C;product>.&#x3C;domain></code> to your service. Add your service to its <code>depends_on</code> too.</li>\n<li><strong>Register the product with miniwerk</strong> so it issues your subdomain + cert and writes your manifest: add your short-name to the <code>miniwerk</code> service's <code>MW_PRODUCTS</code> (today <code>\"tak,kc,bl,mtx,matrix,synapse\"</code>), add <code>MW_&#x3C;PRODUCT>__API_PORT: *productport</code> (i.e. <code>4626</code>) and <code>MW_&#x3C;PRODUCT>__USER_PORT</code>, and mount a <code>kraftwerk_shared_&#x3C;product></code> volume into miniwerk at <code>/pvarkishares/&#x3C;product></code>.</li>\n</ul>\n<blockquote>\n<p><strong>The nginx hostname map and miniwerk's product defaults are not pure env-config.</strong> <code>nginx/templates_consolidated/default.conf.template</code> enumerates product hostnames (<code>matrix.${NGINX_HOST}</code>, <code>mtls.matrix.${NGINX_HOST}</code>, …), and miniwerk's <code>src/miniwerk/config.py</code> defines the canonical <code>ProductSettings</code> (subdomain + <code>api_port</code>/<code>user_port</code>, defaulting to <code>4626</code>). A genuinely new product needs both touched: add your <code>&#x3C;product>.${NGINX_HOST}</code> + <code>mtls.&#x3C;product>.${NGINX_HOST}</code> rows to the nginx <code>map</code> blocks, and add your <code>ProductSettings</code> entry to the miniwerk config (then update <code>tests/test_config.py</code>, which asserts the exact FQDN set). These changes may live in the <code>nginx/</code> tree and the <code>miniwerk</code> submodule respectively. <strong>TODO:</strong> confirm with maintainers whether the nginx template change ships in <code>docker-rasenmaeher-integration</code> directly or via the <code>miniwerk</code>/nginx submodule for your specific product.</p>\n</blockquote>\n<h3 id=\"a3-docker-compose-localyml--local-registry--image-overrides\"><a href=\"#a3-docker-compose-localyml--local-registry--image-overrides\">A3. <code>docker-compose-local.yml</code> — local registry / image overrides</a></h3>\n<p>For the <code>rmlocal</code> composition, add the same service with the <code>-local</code> image suffix (e.g. <code>pvarki/&#x3C;your-image>:&#x3C;tag>-local</code>) so it builds and pushes to the local registry on <code>localhost:5050</code>. The Matrix example also publishes its internal port for debugging — keep the comment that warns <em>never</em> to expose it in production:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#E06C75\">ports</span><span style=\"color:#ABB2BF\">:</span></span>\n<span class=\"line\"><span style=\"color:#ABB2BF\">  - </span><span style=\"color:#98C379\">\"8012:8012\"</span><span style=\"color:#7F848E;font-style:italic\">  # NOTE: Do *NOT* expose this in production, always pass through NGinx proxy</span></span></code></pre>",
+      "lang": "yaml"
+    },
+    {
+      "type": "html",
+      "html": "<h3 id=\"a4-docker-compose-devyml--dev-mode-uvicorn---reload-overrides\"><a href=\"#a4-docker-compose-devyml--dev-mode-uvicorn---reload-overrides\">A4. <code>docker-compose-dev.yml</code> — dev-mode (uvicorn --reload) overrides</a></h3>\n<p>For the <code>rmdev</code> composition, add an override that runs your service in reload mode with source bind-mounted, modelled on <code>takrmapi</code>:</p>\n<ul>\n<li><code>build.target</code> set to your image's devel/shell stage,</li>\n<li><code>volumes</code> mounting your source into the container (e.g. <code>./&#x3C;dir>:/app</code>, plus <code>./&#x3C;dir>/ui:/ui</code> if you have a UI),</li>\n<li>a <code>command</code>/entrypoint that runs <code>uvicorn --host 0.0.0.0 --port &#x3C;internal> --reload --factory &#x3C;module>:get_app</code> (the Matrix <code>docker/entrypoint-dev.sh</code> does exactly this on <code>8012</code>),</li>\n<li>add your service to <code>productsnginx.depends_on</code> here too (the dev file re-declares it so it doesn't start too early).</li>\n</ul>\n<h3 id=\"a5-the-localhost-resolution-note-unofficial-integrations\"><a href=\"#a5-the-localhost-resolution-note-unofficial-integrations\">A5. The localhost-resolution note (unofficial integrations)</a></h3>\n<p>Local testing reaches you at <code>mtls.&#x3C;product>.localmaeher.dev.pvarki.fi:4626</code>. <strong>Official (OpenDefence-developed) integrations</strong> have their <code>localmaeher</code> subdomain resolved to <code>localhost</code> automatically by pvarki DNS. <strong>If your integration is NOT official</strong>, you must make its subdomain resolve to localhost yourself, e.g.:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span>127.0.0.1   mtls.&#x3C;product>.localmaeher.dev.pvarki.fi &#x3C;product>.localmaeher.dev.pvarki.fi</span></span></code></pre>",
+      "lang": "plaintext"
+    },
+    {
+      "type": "html",
+      "html": "<h3 id=\"a6-validate-then-pr\"><a href=\"#a6-validate-then-pr\">A6. Validate, then PR</a></h3>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#61AFEF\">rmlocal</span><span style=\"color:#98C379\"> build</span><span style=\"color:#ABB2BF\"> &#x3C;</span><span style=\"color:#98C379\">yourservic</span><span style=\"color:#ABB2BF\">e> </span><span style=\"color:#D19A66\">--pull</span><span style=\"color:#D19A66\"> --push</span></span>\n<span class=\"line\"><span style=\"color:#61AFEF\">rmlocal</span><span style=\"color:#98C379\"> up</span></span>\n<span class=\"line\"><span style=\"color:#61AFEF\">curl</span><span style=\"color:#D19A66\"> -k</span><span style=\"color:#98C379\"> https://mtls.</span><span style=\"color:#ABB2BF\">&#x3C;</span><span style=\"color:#98C379\">produc</span><span style=\"color:#ABB2BF\">t></span><span style=\"color:#98C379\">.localmaeher.dev.pvarki.fi:4626/api/v1/healthcheck</span></span></code></pre>",
+      "lang": "bash"
+    },
+    {
+      "type": "html",
+      "html": "<p>When it comes up clean in <code>rmlocal</code> (and ideally <code>rmdev</code>), open the PR against <code>docker-rasenmaeher-integration</code> containing the submodule addition plus the four-file edits above.</p>\n<hr>\n<h2 id=\"b-update-an-existing-submodule-pointer-bump\"><a href=\"#b-update-an-existing-submodule-pointer-bump\">B. Update an EXISTING submodule (pointer bump)</a></h2>\n<p>To ship a change to a submodule already in the stack — your own integration, the core <code>api</code> (<code>rmapi</code>), <code>takintegration</code>, etc. — the integration-compose repo only stores a <em>pointer</em> to a commit, so it is a two-PR dance:</p>\n<ol>\n<li><strong>In the submodule's own repo:</strong> branch, commit, push, open a PR there, and get it merged (submodules are full repos — \"create new branch, commit and push changes as usual under that directory\").</li>\n<li><strong>In</strong> <code>**docker-rasenmaeher-integration**</code><strong>:</strong> bump the submodule pointer to the merged commit/tag:</li>\n</ol>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#61AFEF\">git</span><span style=\"color:#D19A66\"> -C</span><span style=\"color:#ABB2BF\"> &#x3C;</span><span style=\"color:#98C379\">di</span><span style=\"color:#ABB2BF\">r> </span><span style=\"color:#98C379\">fetch</span></span>\n<span class=\"line\"><span style=\"color:#61AFEF\">git</span><span style=\"color:#D19A66\"> -C</span><span style=\"color:#ABB2BF\"> &#x3C;</span><span style=\"color:#98C379\">di</span><span style=\"color:#ABB2BF\">r> </span><span style=\"color:#98C379\">checkout</span><span style=\"color:#ABB2BF\"> &#x3C;</span><span style=\"color:#98C379\">merged-commit-or-ta</span><span style=\"color:#ABB2BF\">g></span></span>\n<span class=\"line\"><span style=\"color:#61AFEF\">git</span><span style=\"color:#98C379\"> add</span><span style=\"color:#ABB2BF\"> &#x3C;</span><span style=\"color:#98C379\">di</span><span style=\"color:#ABB2BF\">r></span></span>\n<span class=\"line\"><span style=\"color:#61AFEF\">git</span><span style=\"color:#98C379\"> commit</span><span style=\"color:#D19A66\"> -m</span><span style=\"color:#98C379\"> \"Bump &#x3C;dir> to &#x3C;tag>\"</span></span></code></pre>",
+      "lang": "bash"
+    },
+    {
+      "type": "html",
+      "html": "<p>Then open a PR with that pointer bump. The integration-compose pins submodule combinations with tags, so prefer checking out a released tag of the submodule over a loose commit where one exists. Collaborators pick up the new pointer with <code>git submodule update --init --recursive</code>.</p>\n<hr>\n<h2 id=\"next\"><a href=\"#next\">Next</a></h2>\n<ul>\n<li><a href=\"/en/build-an-integration/set-up-your-dev-environment-docker-compose-h3bTY6alr3\">Set up your dev environment (Docker Compose)</a> — run and probe your service on <code>4626</code>.</li>\n<li><a href=\"/en/build-an-integration/worked-example-matrix-918lI88Lsy\">Worked example: Matrix</a> — the four edits above, as they actually appear for <code>matrixrmapi</code>.</li>\n<li><a href=\"/en/build-an-integration/integration-conventions-donts-cwt08BEcut\">Integration conventions &#x26; don'ts</a> and the <a href=\"/en/dev/api\">API reference</a> — the mTLS callback contract your service must implement.</li>\n</ul>"
+    }
+  ]
+}

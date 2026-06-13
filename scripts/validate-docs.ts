@@ -86,6 +86,10 @@ function issue(
 const HREF_PATTERN = /href="([^"]*)"/g;
 const IMG_SRC_PATTERN = /<img\b[^>]*?\bsrc="([^"]*)"/g;
 
+// Real app routes that are not content pages (so they aren't in the manifest);
+// links to them are valid. Keyed without the /{locale}/ prefix.
+const NON_CONTENT_ROUTES = new Set(["dev/api", "dev/releases"]);
+
 function extractAll(pattern: RegExp, html: string): string[] {
   const out: string[] = [];
   for (const match of html.matchAll(pattern)) out.push(match[1]);
@@ -288,6 +292,7 @@ export async function validateDocs(
       for (const href of collectHrefs(page)) {
         const route = parseRouteHref(href);
         if (!route) continue;
+        if (NON_CONTENT_ROUTES.has(route.routeKey)) continue;
         if (!routeSets.get(route.locale)?.has(route.routeKey)) {
           issues.push(
             issue(

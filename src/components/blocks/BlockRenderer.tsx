@@ -1,5 +1,6 @@
 import type { Block } from "@shared/content-schema";
 import { HtmlBlock } from "@/components/blocks/HtmlBlock";
+import { MermaidBlock } from "@/components/blocks/MermaidBlock";
 import { Slideset } from "@/components/slides/Slideset";
 
 export function BlockRenderer({ blocks }: { blocks: Block[] }) {
@@ -46,6 +47,10 @@ export function BlockRenderer({ blocks }: { blocks: Block[] }) {
                 // shiki output, generated and sanitized at build time
                 dangerouslySetInnerHTML={{ __html: block.html }}
               />
+            );
+          case "mermaid":
+            return (
+              <MermaidBlock key={i} code={block.code} title={block.title} />
             );
           case "youtube":
             return (

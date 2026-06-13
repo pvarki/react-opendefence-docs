@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 1,
+  "id": "5e5eaf64-442a-442e-8112-a43920509129",
+  "slug": "set-up-your-dev-environment-docker-compose-t4JDwRuQs2",
+  "collection": "develop-deploy-app",
+  "locale": "en",
+  "title": "Set up your dev environment (Docker Compose)",
+  "breadcrumb": [
+    "Platforms",
+    "Docker Compose (legacy)",
+    "Set up your dev environment (Docker Compose)"
+  ],
+  "createdAt": "2026-06-13T13:20:41.051Z",
+  "updatedAt": "2026-06-13T14:30:10.674Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Prerequisites",
+      "id": "prerequisites"
+    },
+    {
+      "depth": 3,
+      "text": "Windows: use WSL and fix line endings",
+      "id": "windows-use-wsl-and-fix-line-endings"
+    },
+    {
+      "depth": 2,
+      "text": "1. Start the local registry",
+      "id": "1-start-the-local-registry"
+    },
+    {
+      "depth": 2,
+      "text": "2. Pick a composition: rmlocal vs rmdev",
+      "id": "2-pick-a-composition-rmlocal-vs-rmdev"
+    },
+    {
+      "depth": 2,
+      "text": "3. Build and bring it up",
+      "id": "3-build-and-bring-it-up"
+    },
+    {
+      "depth": 2,
+      "text": "4. How rmdev hot-reloads the core",
+      "id": "4-how-rmdev-hot-reloads-the-core"
+    },
+    {
+      "depth": 2,
+      "text": "5. Reach the local UI",
+      "id": "5-reach-the-local-ui"
+    },
+    {
+      "depth": 2,
+      "text": "6. Get first-admin access",
+      "id": "6-get-first-admin-access"
+    },
+    {
+      "depth": 2,
+      "text": "Shipping a core change",
+      "id": "shipping-a-core-change"
+    },
+    {
+      "depth": 2,
+      "text": "Keeping environments sane",
+      "id": "keeping-environments-sane"
+    },
+    {
+      "depth": 2,
+      "text": "Next",
+      "id": "next"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>This is the first thing a core developer does on the legacy (Docker Compose) stack: get <code>pvarki/docker-rasenmaeher-integration</code> running locally with the core <code>rmapi</code> built from source, so you can edit it and see changes live. Everything here comes from the compose repo's <code>README.rst</code> \"Running in local development mode\" section.</p>\n<h2 id=\"prerequisites\"><a href=\"#prerequisites\">Prerequisites</a></h2>\n<ul>\n<li>Docker with Compose v2.</li>\n<li>The repo cloned <strong>with submodules</strong> (the core lives in the <code>api/</code> submodule):</li>\n</ul>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#61AFEF\">git</span><span style=\"color:#98C379\"> clone</span><span style=\"color:#D19A66\"> --recurse-submodules</span><span style=\"color:#D19A66\"> -j8</span><span style=\"color:#98C379\"> git@github.com:pvarki/docker-rasenmaeher-integration.git</span></span></code></pre>",
+      "lang": "bash"
+    },
+    {
+      "type": "html",
+      "html": "<p>If you forgot <code>--recurse-submodules</code>, run <code>git submodule update --init --recursive</code>.</p>\n<h3 id=\"windows-use-wsl-and-fix-line-endings\"><a href=\"#windows-use-wsl-and-fix-line-endings\">Windows: use WSL and fix line endings</a></h3>\n<p>From the <code>README.rst</code> \"Windows notes\":</p>\n<ul>\n<li>Do <strong>not</strong> use git-bash — it causes the weirdest issues with Docker containers.</li>\n<li>Use WSL (setup instructions live in <code>pvarki/markdown-pvarki-best_practises</code>).</li>\n<li>Make sure your git client / IDE does not rewrite line endings:</li>\n</ul>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#61AFEF\">git</span><span style=\"color:#98C379\"> config</span><span style=\"color:#D19A66\"> --global</span><span style=\"color:#98C379\"> core.eol</span><span style=\"color:#98C379\"> lf</span></span>\n<span class=\"line\"><span style=\"color:#61AFEF\">git</span><span style=\"color:#98C379\"> config</span><span style=\"color:#D19A66\"> --global</span><span style=\"color:#98C379\"> core.autocrlf</span><span style=\"color:#D19A66\"> false</span></span></code></pre>",
+      "lang": "bash"
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"1-start-the-local-registry\"><a href=\"#1-start-the-local-registry\">1. Start the local registry</a></h2>\n<p>Due to BuildKit cache bugs, the dev compositions push/pull through a local registry on port <code>5050</code>. Start it once:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#61AFEF\">docker</span><span style=\"color:#98C379\"> run</span><span style=\"color:#D19A66\"> -d</span><span style=\"color:#D19A66\"> -p</span><span style=\"color:#98C379\"> 5050:5000</span><span style=\"color:#D19A66\"> --restart</span><span style=\"color:#98C379\"> always</span><span style=\"color:#D19A66\"> --name</span><span style=\"color:#98C379\"> registry</span><span style=\"color:#98C379\"> registry:3</span></span></code></pre>",
+      "lang": "bash"
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"2-pick-a-composition-rmlocal-vs-rmdev\"><a href=\"#2-pick-a-composition-rmlocal-vs-rmdev\">2. Pick a composition: <code>rmlocal</code> vs <code>rmdev</code></a></h2>\n<p>The repo provides two compose aliases. Define whichever you need:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#C678DD\">alias</span><span style=\"color:#E06C75\"> rmlocal</span><span style=\"color:#56B6C2\">=</span><span style=\"color:#98C379\">\"PVARKI_DOCKER_REPO=localhost:5050/ docker compose -p rmlocal -f docker-compose-local.yml\"</span></span>\n<span class=\"line\"><span style=\"color:#C678DD\">alias</span><span style=\"color:#E06C75\"> rmdev</span><span style=\"color:#56B6C2\">=</span><span style=\"color:#98C379\">\"PVARKI_DOCKER_REPO=localhost:5050/ docker compose -p rmdev -f docker-compose-local.yml -f docker-compose-dev.yml\"</span></span></code></pre>",
+      "lang": "bash"
+    },
+    {
+      "type": "html",
+      "html": "<ul>\n<li><code>**rmlocal**</code> corresponds best to a real running environment — assets are minified and baked in. Start here, and always verify your changes work in <code>rmlocal</code> before trusting <code>rmdev</code>.</li>\n<li><code>**rmdev**</code> layers <code>docker-compose-dev.yml</code> on top and runs the core in development mode. This is the convenient inner-loop environment but introduces extra variability.</li>\n</ul>\n<blockquote>\n<p><strong>Note:</strong> If you only want to test the stack and not build your own changes, drop the <code>PVARKI_DOCKER_REPO=localhost:5050/</code> prefix from the alias to use pre-built images.</p>\n</blockquote>\n<h2 id=\"3-build-and-bring-it-up\"><a href=\"#3-build-and-bring-it-up\">3. Build and bring it up</a></h2>\n<p>Build the special init/cert images (pushing them to the local registry), then build the rest, then start:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#61AFEF\">rmdev</span><span style=\"color:#98C379\"> build</span><span style=\"color:#98C379\"> takinit</span><span style=\"color:#98C379\"> miniwerk</span><span style=\"color:#98C379\"> rmnginx</span><span style=\"color:#D19A66\"> --pull</span><span style=\"color:#D19A66\"> --push</span></span>\n<span class=\"line\"><span style=\"color:#61AFEF\">rmdev</span><span style=\"color:#98C379\"> build</span><span style=\"color:#D19A66\"> --pull</span></span>\n<span class=\"line\"><span style=\"color:#61AFEF\">rmdev</span><span style=\"color:#98C379\"> up</span></span></code></pre>",
+      "lang": "bash"
+    },
+    {
+      "type": "html",
+      "html": "<p>(Substitute <code>rmlocal</code> for <code>rmdev</code> if running the baked-in composition.) OpenLDAP and keycloak-init sometimes fail on first start — just run <code>up</code> again.</p>\n<h2 id=\"4-how-rmdev-hot-reloads-the-core\"><a href=\"#4-how-rmdev-hot-reloads-the-core\">4. How <code>rmdev</code> hot-reloads the core</a></h2>\n<p>In <code>rmdev</code>, the <code>rmapi</code> service is built from the <code>./api</code> submodule with the source bind-mounted into the container (<code>./api:/app</code>) and launched under uvicorn reload:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span>uvicorn --host 0.0.0.0 --port 8000 --factory rasenmaeher_api.web.application:get_app --reload</span></span></code></pre>",
+      "lang": "plaintext"
+    },
+    {
+      "type": "html",
+      "html": "<p>As the <code>README.rst</code> puts it: the dev version runs <code>rasenmaeher-api</code> in uvicorn reload mode, so any edits you make under <code>/api</code> are soon reflected in the running instance. That is the core inner loop — see <a href=\"/en/develop-deploy-app/iterate-on-the-core-api-docker-compose-qhg7EpPTbA\">Iterate on the core API (Docker Compose)</a>.</p>\n<blockquote>\n<p><strong>Note:</strong> If the rasenmaeher-ui dev server complains, delete <code>uiv2/node_modules</code> on the host first — the Docker Node.js distribution likely is not compatible with whatever is installed on the host.</p>\n</blockquote>\n<h2 id=\"5-reach-the-local-ui\"><a href=\"#5-reach-the-local-ui\">5. Reach the local UI</a></h2>\n<p>Under local/dev mode the UI runs at:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span>https://localmaeher.dev.pvarki.fi:4439</span></span></code></pre>",
+      "lang": "plaintext"
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"6-get-first-admin-access\"><a href=\"#6-get-first-admin-access\">6. Get first-admin access</a></h2>\n<p>Generate the first admin invite code in local mode:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#61AFEF\">rmlocal</span><span style=\"color:#98C379\"> exec</span><span style=\"color:#98C379\"> rmapi</span><span style=\"color:#D19A66\"> -it</span><span style=\"color:#98C379\"> /bin/bash</span><span style=\"color:#D19A66\"> -c</span><span style=\"color:#98C379\"> \"source /.venv/bin/activate &#x26;&#x26; rasenmaeher_api addcode\"</span></span></code></pre>",
+      "lang": "bash"
+    },
+    {
+      "type": "html",
+      "html": "<p>Then log in through the UI, enter the code, and choose your admin callsign (the operator flow is described in the <strong>Operate</strong> book).</p>\n<h2 id=\"shipping-a-core-change\"><a href=\"#shipping-a-core-change\">Shipping a core change</a></h2>\n<p>The core you are editing lives in the <code>api/</code> <strong>submodule</strong> (<code>pvarki/python-rasenmaeher-api</code>), which is its own repo. The aggregate compose repo only records <em>which commit</em> of that submodule it points at. So a core change ships in two steps:</p>\n<ol>\n<li><strong>In the submodule</strong> (<code>cd api/</code>): branch, commit, push, and open a PR to <code>pvarki/python-rasenmaeher-api</code>. Get it merged.</li>\n<li><strong>In the compose repo</strong>: open a PR that updates the submodule pointer to the merged commit (check out the merged commit/tag inside <code>api/</code>, then <code>git add api</code> at the repo root, commit, and PR).</li>\n</ol>\n<p>The full submodule-PR + compose-edit workflow — including what to do for a brand-new product integration — is documented in <a href=\"/en/build-an-integration/register-your-integration-docker-compose-W6oMGCVsAt\">Build an Integration > Register your integration (Docker Compose)</a>; follow it there rather than reinventing it.</p>\n<h2 id=\"keeping-environments-sane\"><a href=\"#keeping-environments-sane\">Keeping environments sane</a></h2>\n<p>These two rules from the <code>README.rst</code> prevent most local pain:</p>\n<ul>\n<li><strong>Only keep one of</strong> <code>**rmlocal**</code> <strong>/</strong> <code>**rmdev**</code> <strong>up at a time.</strong> Running both causes network issues. Run <code>down</code> for one before starting the other.</li>\n<li><strong>Run</strong> <code>**down -v**</code> <strong>to reset persistent volumes</strong> when switching environments or when you hit weird state. Note that <code>down -v</code> deletes certificates and users — you will have to re-add everything.</li>\n</ul>\n<h2 id=\"next\"><a href=\"#next\">Next</a></h2>\n<ul>\n<li><a href=\"/en/develop-deploy-app/iterate-on-the-core-api-docker-compose-qhg7EpPTbA\">Iterate on the core API (Docker Compose)</a> — the edit/reload/test loop.</li>\n<li><strong>Testing &#x26; CI conventions</strong> — the clean-database rule for integration tests.</li>\n</ul>"
+    }
+  ]
+}

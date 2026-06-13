@@ -54,11 +54,12 @@ export default defineConfig({
           "content/**/*.json",
           "pagefind/**/*",
           "api-specs/manifest.json",
+          "release-docs/manifest.json",
         ],
         maximumFileSizeToCacheInBytes: 4 * 1024 * 1024,
         navigateFallback: `${base}index.html`,
         navigateFallbackDenylist: [
-          new RegExp(`^${baseRe}(content|api-specs|pagefind)/`),
+          new RegExp(`^${baseRe}(content|api-specs|release-docs|pagefind)/`),
         ],
         cleanupOutdatedCaches: true,
         runtimeCaching: [
@@ -74,6 +75,11 @@ export default defineConfig({
             urlPattern: new RegExp(`^${baseRe}api-specs/`),
             handler: "StaleWhileRevalidate",
             options: { cacheName: "api-specs" },
+          },
+          {
+            urlPattern: new RegExp(`^${baseRe}release-docs/`),
+            handler: "StaleWhileRevalidate",
+            options: { cacheName: "release-docs" },
           },
         ],
       },

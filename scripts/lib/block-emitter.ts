@@ -302,6 +302,14 @@ function withDims(
 
 async function renderCodeBlock(node: MdNode): Promise<Block> {
   const requested = (node.lang ?? "").trim().toLowerCase();
+  // Mermaid diagrams: keep the raw source; the client renders it to SVG.
+  if (requested === "mermaid" || requested === "mermaidjs") {
+    return {
+      type: "mermaid",
+      code: node.value ?? "",
+      ...(node.meta ? { title: node.meta } : {}),
+    };
+  }
   const lang = CODE_LANGS.has(requested) ? requested : "plaintext";
   // Singleton highlighter: theme/langs are loaded lazily and cached process-wide.
   const highlighter = await getSingletonHighlighter({

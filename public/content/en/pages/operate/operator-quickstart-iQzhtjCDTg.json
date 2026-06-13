@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "id": "c4ffc11f-cea6-40d2-94cc-bb8c0a692e4d",
+  "slug": "operator-quickstart-iQzhtjCDTg",
+  "collection": "operate",
+  "locale": "en",
+  "title": "Operator quickstart",
+  "breadcrumb": [
+    "Operator quickstart"
+  ],
+  "createdAt": "2026-06-13T13:20:31.790Z",
+  "updatedAt": "2026-06-13T16:38:24.821Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "What you are operating",
+      "id": "what-you-are-operating"
+    },
+    {
+      "depth": 2,
+      "text": "Prerequisites",
+      "id": "prerequisites"
+    },
+    {
+      "depth": 2,
+      "text": "The happy path",
+      "id": "the-happy-path"
+    },
+    {
+      "depth": 2,
+      "text": "In-UI operator flow (shared)",
+      "id": "in-ui-operator-flow-shared"
+    },
+    {
+      "depth": 2,
+      "text": "How users reach services",
+      "id": "how-users-reach-services"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Operating Deploy App means standing up one self-contained instance for one user unit (a company, battalion, or similar group), then using the Deploy App UI to onboard that unit's devices and manage them over the instance's lifetime. The project goal is <strong>zero to a running service with your team onboarded in roughly 30 minutes</strong>, with no manual setup steps outside the documented flow.</p>\n<p>This page covers what is the same on every deployment: the prerequisites, the happy path, and the in-UI user flow. When you are ready to bring the stack up, switch the platform toggle and follow either <strong>Deploy with Docker Compose</strong> (legacy) or <strong>Deploy on Kubernetes</strong> (the newer, alpha platform).</p>\n<h2 id=\"what-you-are-operating\"><a href=\"#what-you-are-operating\">What you are operating</a></h2>\n<p>A single Deploy App instance provides one login/identity flow in front of several mission services (TAK, MediaMTX video, Battlelog, and any other integrated products). Devices authenticate with mTLS client certificates issued at enrollment; an administrator can revoke a user, which invalidates their certificate across every integrated service. Each instance is intended to be short-lived and disposable — patch by redeploying, not by long-term in-place maintenance.</p>\n<p>The core API service (the <strong>rmapi</strong> / <code>rasenmaeher_api</code> container) handles user CRUD and the Deploy App operations, and is the integration point that product integration APIs (TAK, Matrix, MediaMTX, ...) register against. Users reach every product <strong>through the Deploy App UI</strong> — see <em>How users reach services</em> below.</p>\n<h2 id=\"prerequisites\"><a href=\"#prerequisites\">Prerequisites</a></h2>\n<p><strong>Shared, regardless of platform:</strong></p>\n<ul>\n<li>A domain you control, with the ability to create the DNS records the deployment needs (see the platform-specific deploy page for the exact subdomain set).</li>\n<li>Inbound network reachability to the host (public WAN address, or NAT/port-forwarding) for the required ports.</li>\n<li>Strong, unique secrets/passphrases for every credential the deployment asks for.</li>\n<li>A host or cluster sized for the products you enable (see host sizing below).</li>\n</ul>\n<p><strong>Host sizing.</strong> Sizing is driven by the integrated products, and <strong>TAK sets the floor</strong>: a single instance needs <strong>at minimum 4 cores / 8 GB RAM</strong>, and we <strong>recommend 4 cores / 12 GB RAM</strong>. Add headroom for the other products you turn on (MediaMTX video, Matrix, Battlelog). On the upcoming <strong>modular Kubernetes</strong> platform, requirements become <strong>module-specific</strong> — each module declares its own CPU/RAM needs — so an instance's size is the core services plus the modules you deploy.</p>\n<p><strong>Then pick your platform:</strong></p>\n<ul>\n<li><strong>Legacy (Docker Compose):</strong> Docker + Docker Compose on a Linux host. See <strong>Deploy with Docker Compose</strong>.</li>\n<li><strong>Kubernetes (alpha):</strong> <code>kind</code>, <code>kubectl</code>, and <code>mise</code> for local; a prepared cluster (plus <code>zarf</code>) for cloud. See <strong>Deploy on Kubernetes</strong>.</li>\n</ul>\n<blockquote>\n<p><strong>Automate it — don't deploy by hand.</strong> Standing up Deploy App instances with <strong>infrastructure-as-code</strong> (your provisioning/config tooling driving the documented flow) is <strong>fully supported and strongly encouraged</strong>. Because instances are short-lived and disposable — <em>new operation, new instance</em> — IaC is what makes bringing up a fresh, identical instance fast, repeatable, and auditable. Please don't click through the steps manually for anything beyond a one-off test.</p>\n</blockquote>\n<h2 id=\"the-happy-path\"><a href=\"#the-happy-path\">The happy path</a></h2>\n<ol>\n<li>\n<p><strong>Provision and deploy the stack</strong> for your platform: set up DNS + ports, then deploy via <strong>Deploy with Docker Compose</strong> or <strong>Deploy on Kubernetes</strong>. Drive this with infrastructure-as-code rather than by hand (see above).</p>\n</li>\n<li>\n<p><strong>Generate the first-admin invite code</strong> from the running core API. On Docker Compose:</p>\n<pre><code class=\"language-bash\">docker compose exec -it rmapi /bin/bash -c \"rasenmaeher_api addcode\"\n</code></pre>\n<p>On Kubernetes the equivalent runs against the <code>opendefense-rmapi</code> deployment — see <strong>Deploy on Kubernetes</strong>.</p>\n</li>\n<li>\n<p><strong>Become admin.</strong> Open <code>https://&#x3C;your-deployment-fqdn></code>, enter the first-admin code, and pick your admin <strong>callsign</strong>. Deploy App issues your <strong>client certificate</strong> to your device — from here on that certificate <em>is</em> your authenticated access.</p>\n</li>\n<li>\n<p><strong>Invite and accept users.</strong> In the Deploy App UI, create <strong>invite codes</strong>, share them, and approve people as they join (full steps in the in-UI flow below).</p>\n</li>\n<li>\n<p><strong>Users connect to services themselves, from the Deploy App UI</strong> — you don't ship anything out (see <em>How users reach services</em> below).</p>\n</li>\n</ol>\n<p>For what to watch once it is running, see <strong>Audit logging &#x26; observability</strong>. For fixing problems and tearing down cleanly, see <strong>Troubleshooting &#x26; teardown</strong>.</p>\n<h2 id=\"in-ui-operator-flow-shared\"><a href=\"#in-ui-operator-flow-shared\">In-UI operator flow (shared)</a></h2>\n<p>Once the instance is up and you have a first-admin invite code, the operator flow inside the Deploy App UI is the same on every platform:</p>\n<ol>\n<li><strong>Create the first admin account.</strong> Open the login page, enter your first-admin invite code, and choose your admin callsign. (Deploy App identifies users by callsign — no real names.)</li>\n<li><strong>Create invite codes for other users.</strong> Go to <strong>Manage Users → Add Users → Create New Invite</strong>. Share the invite link, QR code, or the invite code plus domain with the people you are onboarding.</li>\n<li><strong>Approve users.</strong> Open an approval link or scan the QR code from a joining user and approve them. Alternatively go to <strong>Approve Users → Select Waiting User</strong> and enter the user's approval code.</li>\n<li><strong>Promote or manage users as needed.</strong> Under <strong>Manage Users → Manage Users</strong>, select a user to <strong>Promote</strong> them to admin. You can also <strong>Demote</strong> admins or <strong>Delete</strong> users entirely; deleting a user revokes their certificate.</li>\n</ol>\n<h2 id=\"how-users-reach-services\"><a href=\"#how-users-reach-services\">How users reach services</a></h2>\n<p>As a service operator you don't have to manually ship credentials or configurations to your users — instead they <strong>self-serve through Deploy App</strong>. This self-service is the whole point, and our quality standards make sure it is as convenient and secure as possible for users:</p>\n<ul>\n<li><strong>TAK on Android (ATAK):</strong> the user taps <strong>one button</strong> in Deploy App and their ATAK client is securely connected to the server — no manual server entry, no certificate handling.</li>\n<li><strong>UAS tools and video streaming:</strong> configured the same way — <strong>one tap</strong> in Deploy App wires up the UAS tool and the streaming apps.</li>\n<li><strong>Matrix (secure messaging):</strong> <strong>one tap</strong> connects the user's Matrix client for modern, secure instant messaging — with <strong>no phone numbers</strong> to exchange (unlike Signal).</li>\n<li><strong>Other TAK flavors (WinTAK, iTAK, TAK Tracker):</strong> the user <strong>downloads their client package</strong> from Deploy App, with instructions for loading it into their app to connect.</li>\n</ul>\n<p>The operator's job is only to invite and approve people. Each product's connection happens in the user's hands, in the UI.</p>"
+    }
+  ]
+}

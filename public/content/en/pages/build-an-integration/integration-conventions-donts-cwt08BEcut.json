@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "2a690f0b-7983-4da9-9e65-103da15b8ee9",
+  "slug": "integration-conventions-donts-cwt08BEcut",
+  "collection": "build-an-integration",
+  "locale": "en",
+  "title": "Integration conventions & don'ts",
+  "breadcrumb": [
+    "Integration conventions & don'ts"
+  ],
+  "createdAt": "2026-06-13T13:21:33.620Z",
+  "updatedAt": "2026-06-13T13:21:33.620Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Implement the required callbacks",
+      "id": "implement-the-required-callbacks"
+    },
+    {
+      "depth": 2,
+      "text": "Trust only the core rmapi",
+      "id": "trust-only-the-core-rmapi"
+    },
+    {
+      "depth": 2,
+      "text": "Expose your product to the UI correctly",
+      "id": "expose-your-product-to-the-ui-correctly"
+    },
+    {
+      "depth": 2,
+      "text": "Health check honestly",
+      "id": "health-check-honestly"
+    },
+    {
+      "depth": 2,
+      "text": "Pick a unique port and slug",
+      "id": "pick-a-unique-port-and-slug"
+    },
+    {
+      "depth": 2,
+      "text": "Versioning",
+      "id": "versioning"
+    },
+    {
+      "depth": 2,
+      "text": "Don'ts",
+      "id": "donts"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>This is the durable checklist for any product integration API, independent of stack. It distils the patterns in the template and the Matrix/MediaMTX examples. For org-wide tooling, CI, and style rules, see <strong>Community &#x26; Standards</strong> (in <em>Contribute to Project</em>), which links <a href=\"https://github.com/pvarki/markdown-pvarki-best_practises\" target=\"_blank\" rel=\"noopener noreferrer\">pvarki/markdown-pvarki-best_practises</a> and <a href=\"https://github.com/pvarki/config-ci-library\" target=\"_blank\" rel=\"noopener noreferrer\">pvarki/config-ci-library</a>.</p>\n<h2 id=\"implement-the-required-callbacks\"><a href=\"#implement-the-required-callbacks\">Implement the required callbacks</a></h2>\n<p>Your service must answer all five lifecycle endpoints under <code>/api/v1/users/</code> (<code>created</code>, <code>revoked</code>, <code>promoted</code>, <code>demoted</code>, <code>updated</code>). The template generates them as <code>NotImplementedError</code> stubs.</p>\n<ul>\n<li>Implement the events your product needs; <strong>acknowledge the rest</strong> with <code>return OperationResultResponse(success=True)</code> — never leave a stub raising <code>NotImplementedError</code>, or the core rmapi's user operations will fail.</li>\n<li>Return <code>success=False</code> only on a real failure; the core rmapi treats it as a failed operation.</li>\n<li>Make handlers <strong>idempotent</strong> — the same callback may be retried. Look up by alias/uid and skip if already done (as Matrix does with rooms).</li>\n</ul>\n<h2 id=\"trust-only-the-core-rmapi\"><a href=\"#trust-only-the-core-rmapi\">Trust only the core rmapi</a></h2>\n<p>Guard every callback (and any per-user endpoint like <code>clientinfo</code>/<code>proxy</code>) with mTLS and the CN pin:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#C678DD\">def</span><span style=\"color:#61AFEF\"> comes_from_rm</span><span style=\"color:#ABB2BF\">(</span><span style=\"color:#D19A66;font-style:italic\">request</span><span style=\"color:#ABB2BF\">: Request) -> </span><span style=\"color:#D19A66\">None</span><span style=\"color:#ABB2BF\">:</span></span>\n<span class=\"line\"><span style=\"color:#ABB2BF\">    payload </span><span style=\"color:#56B6C2\">=</span><span style=\"color:#ABB2BF\"> request.state.mtlsdn</span></span>\n<span class=\"line\"><span style=\"color:#ABB2BF\">    manifest </span><span style=\"color:#56B6C2\">=</span><span style=\"color:#61AFEF\"> get_manifest</span><span style=\"color:#ABB2BF\">()</span></span>\n<span class=\"line\"><span style=\"color:#C678DD\">    if</span><span style=\"color:#ABB2BF\"> payload.</span><span style=\"color:#61AFEF\">get</span><span style=\"color:#ABB2BF\">(</span><span style=\"color:#98C379\">\"CN\"</span><span style=\"color:#ABB2BF\">) </span><span style=\"color:#56B6C2\">!=</span><span style=\"color:#ABB2BF\"> manifest[</span><span style=\"color:#98C379\">\"rasenmaeher\"</span><span style=\"color:#ABB2BF\">][</span><span style=\"color:#98C379\">\"certcn\"</span><span style=\"color:#ABB2BF\">]:</span></span>\n<span class=\"line\"><span style=\"color:#C678DD\">        raise</span><span style=\"color:#61AFEF\"> HTTPException</span><span style=\"color:#ABB2BF\">(</span><span style=\"color:#E06C75;font-style:italic\">status_code</span><span style=\"color:#56B6C2\">=</span><span style=\"color:#D19A66\">403</span><span style=\"color:#ABB2BF\">)</span></span></code></pre>",
+      "lang": "python"
+    },
+    {
+      "type": "html",
+      "html": "<ul>\n<li>Read trust material from the deployment manifest (<code>/pvarki/kraftwerk-init.json</code>), not hard-coded values.</li>\n<li>Trust the deployment CA the platform provides — do not bundle your own CA or skip verification. On Docker Compose certs come via <code>kw_product_init</code> and the <code>ca_public</code> volume; on Kubernetes the CA arrives as the <code>opendefense-bundle</code> ConfigMap/Secret synced by trust-manager. (See the stack-specific <em>Register your integration</em> pages.)</li>\n</ul>\n<h2 id=\"expose-your-product-to-the-ui-correctly\"><a href=\"#expose-your-product-to-the-ui-correctly\">Expose your product to the UI correctly</a></h2>\n<p>Serve <code>GET /api/v2/description/{language}</code> returning a <code>ProductDescriptionExtended</code> with a <code>ProductComponent</code> of the right type:</p>\n<ul>\n<li><code>**link**</code> — point <code>ref</code> at a real external URL (not <code>https://example.com</code>).</li>\n<li><code>**markdown**</code> — serve per-user Markdown at <code>POST /api/v2/clients/{language}/info.md</code>; the core rmapi proxies it at <code>/api/v1/product/proxy/&#x3C;short_name>/...</code>.</li>\n<li><code>**component**</code> — build the <code>ui/</code> bundle to <code>dist/</code>; it is served at <code>/ui/&#x3C;short_name>/remoteEntry.js</code>. Keep the <code>clientinfo</code> payload (<code>ClientInfoData</code>) in sync with the UI's expected type.</li>\n</ul>\n<p>Provide real <code>fi</code> and <code>sv</code> translations, not just <code>en</code> (missing languages fall back to <code>en</code>).</p>\n<h2 id=\"health-check-honestly\"><a href=\"#health-check-honestly\">Health check honestly</a></h2>\n<p><code>GET /api/v1/healthcheck</code> ships returning <code>healthy=True</code> unconditionally. Make it check the services your API actually depends on and report <code>healthy=False</code> (with details in <code>extra=</code>) when they are down — orchestration and readiness probes rely on it.</p>\n<h2 id=\"pick-a-unique-port-and-slug\"><a href=\"#pick-a-unique-port-and-slug\">Pick a unique port and slug</a></h2>\n<ul>\n<li>The internal <code>app_port</code> must be unique on the shared product network.</li>\n<li>On Docker Compose, product integration APIs are reached on the conventional <strong>Product integration APIs port</strong> <code>**4626**</code> via nginx; the service binds its own internal port.</li>\n<li>Use one consistent <code>short_name</code> everywhere — package name, subdomain, UI slug, manifest key.</li>\n</ul>\n<h2 id=\"versioning\"><a href=\"#versioning\">Versioning</a></h2>\n<p>Use <a href=\"https://github.com/callowayproject/bump-my-version\" target=\"_blank\" rel=\"noopener noreferrer\">bump-my-version</a>: <code>bump-my-version bump &#x3C;patch/minor/major></code>. The scheme combines a semantic version with an autoincrementing calendar build (e.g. <code>1.0.2-260420</code>); always bump the semantic part, never <code>build</code> on its own. Preview with <code>bump-my-version show-bump</code>.</p>\n<h2 id=\"donts\"><a href=\"#donts\">Don'ts</a></h2>\n<ul>\n<li><strong>Don't</strong> call your service <code>rmapi</code> — that name belongs to the core RASENMAEHER API. Name yours <code>&#x3C;short_name>rmapi</code>.</li>\n<li><strong>Don't</strong> accept unauthenticated lifecycle calls or trust any CN other than the rmaeher cert CN.</li>\n<li><strong>Don't</strong> block startup on slow dependencies — bootstrap in a background task and queue/defer work (the Matrix deferred queue is the pattern).</li>\n<li><strong>Don't</strong> invent endpoints the core rmapi doesn't call; keep to the documented contract and add product-specific endpoints behind the same mTLS guard.</li>\n<li><strong>Don't</strong> hard-code domains, ports, or CA paths — read them from the manifest and the platform-provided trust bundle.</li>\n</ul>"
+    }
+  ]
+}

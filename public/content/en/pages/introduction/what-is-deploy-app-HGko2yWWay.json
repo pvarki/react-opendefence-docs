@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "id": "1c499c9e-1ef7-49a9-b8ae-d77266a97f83",
+  "slug": "what-is-deploy-app-HGko2yWWay",
+  "collection": "introduction",
+  "locale": "en",
+  "title": "What is Deploy App",
+  "breadcrumb": [
+    "What is Deploy App"
+  ],
+  "createdAt": "2026-06-13T13:20:28.316Z",
+  "updatedAt": "2026-06-13T13:20:28.316Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "What Deploy App is",
+      "id": "what-deploy-app-is"
+    },
+    {
+      "depth": 2,
+      "text": "The core rmapi",
+      "id": "the-core-rmapi"
+    },
+    {
+      "depth": 2,
+      "text": "Product integration APIs",
+      "id": "product-integration-apis"
+    },
+    {
+      "depth": 2,
+      "text": "Two deployment stacks",
+      "id": "two-deployment-stacks"
+    },
+    {
+      "depth": 2,
+      "text": "Where to go next",
+      "id": "where-to-go-next"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Deploy App is a self-hosted system that gives a team a single, secure login and identity flow across a set of mission-critical services, and lets new services be added through integration APIs so users can onboard to them directly from the Deploy App UI.</p>\n<p>This page orients operators, developers, and integrators. It defines the core concepts, names the two deployment stacks, and points you at the right book for what you want to do.</p>\n<h2 id=\"what-deploy-app-is\"><a href=\"#what-deploy-app-is\">What Deploy App is</a></h2>\n<p>Deploy App brings several services (chat, situational awareness, video, logging, and more) together behind one identity and one secure web UI. The design goals are explicit:</p>\n<ul>\n<li>From zero to a running service with your team onboarded in about 30 minutes.</li>\n<li>A fully reproducible deployment flow with no manual setup steps.</li>\n<li>Security and quality first.</li>\n</ul>\n<p>Deploy App's codename is <strong>RASENMAEHER</strong> (German for \"lawnmower\" — an infantry joke). You will see the name throughout the codebase and these docs; for practical purposes \"RASENMAEHER\" and \"Deploy App\" refer to the same system.</p>\n<p>An operator stands up the stack, creates the first admin, invites and approves users, and those users then onboard to individual services (for example downloading a TAK client package) from the Deploy App home page.</p>\n<h2 id=\"the-core-rmapi\"><a href=\"#the-core-rmapi\">The core rmapi</a></h2>\n<p>At the centre of the system is the <strong>core rmapi</strong> — the RASENMAEHER API. This is the <code>rmapi</code> service/container running the <code>rasenmaeher_api</code> application from the repo <code>pvarki/python-rasenmaeher-api</code>.</p>\n<p>The core rmapi:</p>\n<ul>\n<li>Owns the main user CRUD (create, approve, promote, demote, delete) and the identity that ties everything together.</li>\n<li>Drives the Deploy App operations (invite codes, user approval, admin management).</li>\n<li>Is <strong>the point of integration</strong>: every product integration registers with it, and it calls each integration over mTLS when a user changes.</li>\n</ul>\n<p>For example, the first admin invite code is minted by the core rmapi:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#61AFEF\">docker</span><span style=\"color:#98C379\"> compose</span><span style=\"color:#98C379\"> exec</span><span style=\"color:#D19A66\"> -it</span><span style=\"color:#98C379\"> rmapi</span><span style=\"color:#98C379\"> /bin/bash</span><span style=\"color:#D19A66\"> -c</span><span style=\"color:#98C379\"> \"rasenmaeher_api addcode\"</span></span></code></pre>",
+      "lang": "bash"
+    },
+    {
+      "type": "html",
+      "html": "<blockquote>\n<p>The thing an integrator builds is <strong>never</strong> called \"rmapi\". That name belongs only to the core RASENMAEHER API.</p>\n</blockquote>\n<h2 id=\"product-integration-apis\"><a href=\"#product-integration-apis\">Product integration APIs</a></h2>\n<p>A <strong>product integration API</strong> (also called a product-rm integration API) is the small service you build to plug a product into Deploy App. It registers with / is driven by the core rmapi: when a user is created, promoted, demoted, or deleted, the core rmapi calls the integration's user-lifecycle endpoints over mTLS, and the integration reflects that change into its product.</p>\n<p>Real examples that ship with the stack:</p>\n<ul>\n<li><code>pvarki/python-matrix-rmapi</code> — Matrix / Synapse chat.</li>\n<li><code>pvarki/python-tak-rmapi</code> — TAK (situational awareness).</li>\n<li><code>pvarki/python-mediamtx-rmmtxauthz</code> — MediaMTX video streaming.</li>\n</ul>\n<p>To build your own, start from <code>pvarki/python-integration-template</code>, the Copier scaffold for a new integration. See the <strong>Build an Integration</strong> book for the full workflow.</p>\n<h2 id=\"two-deployment-stacks\"><a href=\"#two-deployment-stacks\">Two deployment stacks</a></h2>\n<p>Deploy App can be deployed two different ways, and these docs treat them as genuinely different systems:</p>\n<ul>\n<li><strong>Legacy — Docker Compose</strong> (<code>pvarki/docker-rasenmaeher-integration</code>). The production stack today. It uses <strong>miniwerk</strong> (Let's Encrypt certificates, subdomains, the <code>MW_PRODUCTS</code> list) and <strong>CFSSL</strong> as the internal CA. Components are pulled in as git submodules.</li>\n<li><strong>New — Kubernetes</strong> (<code>pvarki/opendefence-platform</code>). An <strong>alpha</strong>, modular direction. It drops miniwerk and CFSSL: deployment is described with Kustomize (<code>base/</code> + <code>overlays/&#x3C;env></code>) applied via <code>task</code>/<code>kubectl</code>, and certificates/trust come from cert-manager, trust-manager, and the <code>opendefense-pki</code> CA. Supporting pieces run as Kubernetes operators.</li>\n</ul>\n<p>See <strong>Choose your platform: legacy Docker vs Kubernetes</strong> to decide which one applies to you, and note that each documentation page carries a platform toggle (shared / legacy / k8s).</p>\n<h2 id=\"where-to-go-next\"><a href=\"#where-to-go-next\">Where to go next</a></h2>\n<ul>\n<li><strong>Operate</strong> — run Deploy App: stand up the stack, manage users and admins, day-2 operations and audit logging.</li>\n<li><strong>Develop Deploy App</strong> — work on the Deploy App platform itself (the compose stack or the Kubernetes manifests).</li>\n<li><strong>Build an Integration</strong> — add a new product using a product integration API.</li>\n<li><strong>Contribute to Project</strong> — coding standards, CI, and community rules (see the <strong>Community &#x26; Standards</strong> page there).</li>\n</ul>\n<p>For shared vocabulary, see the <strong>Glossary</strong>. For a conceptual map of the moving parts, see <strong>Architecture orientation</strong>.</p>"
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "locale": "fi",
-  "generatedAt": "2026-06-12T23:13:44.764Z",
+  "generatedAt": "2026-06-13T16:38:27.681Z",
   "collections": [
     {
       "slug": "deploy-app",
@@ -64,13 +64,6 @@
       "description": "MTX technical reference",
       "section": "wikis",
       "order": 5
-    },
-    {
-      "slug": "dev",
-      "label": "For Developers",
-      "description": "Developer-focused documentation",
-      "section": "dev",
-      "order": 6
     }
   ],
   "pages": [
@@ -969,66 +962,6 @@
       "order": 3,
       "chapterId": "tyokalut-EbDYHhpQYw",
       "chapterLabel": "Työkalut"
-    },
-    {
-      "id": "8fc34ab3-af92-4348-a821-adf3e15b269f",
-      "slug": "yleiskatsaus-mv1Zi8YEYo",
-      "collection": "dev",
-      "title": "Yleiskatsaus",
-      "breadcrumb": [
-        "Yleiskatsaus"
-      ],
-      "path": "/content/fi/pages/dev/yleiskatsaus-mv1Zi8YEYo.json",
-      "updatedAt": "2026-06-02T06:54:04.940Z",
-      "order": 0
-    },
-    {
-      "id": "8f9654ea-4fc7-4051-9675-8114db3aea50",
-      "slug": "arkkitehtuuri-P6Ns4ahwzc",
-      "collection": "dev",
-      "title": "Arkkitehtuuri",
-      "breadcrumb": [
-        "Arkkitehtuuri"
-      ],
-      "path": "/content/fi/pages/dev/arkkitehtuuri-P6Ns4ahwzc.json",
-      "updatedAt": "2026-05-28T07:29:26.005Z",
-      "order": 1
-    },
-    {
-      "id": "b0b5c34b-5f9d-4100-b059-568d69f2ec16",
-      "slug": "kehitysopas-k6trl4NgVd",
-      "collection": "dev",
-      "title": "Kehitysopas",
-      "breadcrumb": [
-        "Kehitysopas"
-      ],
-      "path": "/content/fi/pages/dev/kehitysopas-k6trl4NgVd.json",
-      "updatedAt": "2026-06-02T06:49:47.655Z",
-      "order": 2
-    },
-    {
-      "id": "cdb7f08d-9a5c-438f-bb9e-ec5dfa252bc8",
-      "slug": "integraatio-opas-0cExHiOI97",
-      "collection": "dev",
-      "title": "Integraatio-opas",
-      "breadcrumb": [
-        "Integraatio-opas"
-      ],
-      "path": "/content/fi/pages/dev/integraatio-opas-0cExHiOI97.json",
-      "updatedAt": "2026-05-28T07:31:47.529Z",
-      "order": 3
-    },
-    {
-      "id": "0dae3b03-2074-4833-beeb-5587bea6bf39",
-      "slug": "kayttoopas-tgbp8sDbXa",
-      "collection": "dev",
-      "title": "Käyttöopas",
-      "breadcrumb": [
-        "Käyttöopas"
-      ],
-      "path": "/content/fi/pages/dev/kayttoopas-tgbp8sDbXa.json",
-      "updatedAt": "2026-06-02T06:27:20.712Z",
-      "order": 4
     }
   ]
 }

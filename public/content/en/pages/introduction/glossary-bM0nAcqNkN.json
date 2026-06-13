@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "fade3c07-b137-4d6a-aa34-1e8c576760bc",
+  "slug": "glossary-bM0nAcqNkN",
+  "collection": "introduction",
+  "locale": "en",
+  "title": "Glossary",
+  "breadcrumb": [
+    "Glossary"
+  ],
+  "createdAt": "2026-06-13T13:20:29.553Z",
+  "updatedAt": "2026-06-13T13:20:29.553Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Core concepts",
+      "id": "core-concepts"
+    },
+    {
+      "depth": 2,
+      "text": "Identity and components",
+      "id": "identity-and-components"
+    },
+    {
+      "depth": 2,
+      "text": "Legacy stack (Docker Compose)",
+      "id": "legacy-stack-docker-compose"
+    },
+    {
+      "depth": 2,
+      "text": "Kubernetes stack (opendefence-platform)",
+      "id": "kubernetes-stack-opendefence-platform"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Shared vocabulary used across these books. Terms scoped to one stack are marked <strong>(legacy)</strong> or <strong>(k8s)</strong>.</p>\n<h2 id=\"core-concepts\"><a href=\"#core-concepts\">Core concepts</a></h2>\n<p><strong>Deploy App</strong> The self-hosted system that provides a single secure login and identity flow across several mission-critical services, with new services added via integration APIs. Codenamed RASENMAEHER.</p>\n<p><strong>RASENMAEHER</strong> The project codename for Deploy App (an infantry joke; German for \"lawnmower\"). Used interchangeably with \"Deploy App\" in the codebase and these docs.</p>\n<p><strong>rmapi (core)</strong> The core RASENMAEHER API — the <code>rmapi</code> service/container running the <code>rasenmaeher_api</code> application from <code>pvarki/python-rasenmaeher-api</code>. It owns main user CRUD and the Deploy App operations and is the point of integration that product integrations call. The thing an integrator builds is never called \"rmapi\".</p>\n<p><strong>Product integration API</strong> (product-rm integration API) The service you build to integrate a product into Deploy App. It registers with / is driven by the core rmapi, which calls its user-lifecycle endpoints (create/promote/demote/delete) over mTLS. Examples: <code>python-matrix-rmapi</code>, <code>python-tak-rmapi</code>, <code>python-mediamtx-rmmtxauthz</code>. Scaffolded from <code>python-integration-template</code>.</p>\n<p><strong>EUD</strong> End User Device — a phone, tablet, or laptop a user runs the product client on (for example ATAK/WinTAK/iTAK after downloading a client package from Deploy App).</p>\n<p><strong>mTLS</strong> Mutual TLS: both client and server present certificates. Deploy App uses it for service-to-service trust, including the core rmapi's callbacks to product integration APIs (the caller's certificate CN must match the RASENMAEHER service certificate).</p>\n<h2 id=\"identity-and-components\"><a href=\"#identity-and-components\">Identity and components</a></h2>\n<p><strong>Keycloak</strong> The identity provider behind the shared single login flow. On legacy it sits on the <code>kc.</code> subdomain; on Kubernetes it is managed by the keycloak-operator.</p>\n<h2 id=\"legacy-stack-docker-compose\"><a href=\"#legacy-stack-docker-compose\">Legacy stack (Docker Compose)</a></h2>\n<p><strong>miniwerk</strong> <em>(legacy)</em> <code>pvarki/python-rasenmaeher-miniwerk</code>. Handles Let's Encrypt certificate issuance, the subdomain scheme, and the <code>MW_PRODUCTS</code> product list for the compose stack. Does not exist on Kubernetes.</p>\n<p><strong>MW_PRODUCTS</strong> <em>(legacy)</em> The miniwerk environment variable listing which products are part of the deployment (e.g. <code>tak,kc,fake,bl,mtx,matrix,synapse</code>). Adding a product means adding its short name here so its subdomains and routing are provisioned.</p>\n<p><strong>CFSSL</strong> <em>(legacy)</em> <code>pvarki/docker-rasenmaeher-cfssl</code>. The internal certificate authority for the legacy stack. Replaced on Kubernetes by cert-manager / trust-manager / opendefense-pki.</p>\n<h2 id=\"kubernetes-stack-opendefence-platform\"><a href=\"#kubernetes-stack-opendefence-platform\">Kubernetes stack (opendefence-platform)</a></h2>\n<p><strong>cert-manager</strong> <em>(k8s)</em> The Kubernetes controller that issues and renews certificates. Replaces CFSSL's issuing role.</p>\n<p><strong>trust-manager</strong> <em>(k8s)</em> Distributes the CA trust bundle across the cluster so workloads trust the internal CA.</p>\n<p><strong>opendefense-pki</strong> <em>(k8s)</em> The in-cluster PKI definition (root and intermediate CA / issuers) that backs internal mTLS. Replaces CFSSL as the CA source.</p>\n<p><strong>Kustomize</strong> <em>(k8s)</em> The templating-free Kubernetes config tool used to build manifests. Each app is split into <code>base/</code> (environment-agnostic) and <code>overlays/&#x3C;env>/</code> (environment-specific).</p>\n<p><strong>overlay</strong> <em>(k8s)</em> An <code>overlays/&#x3C;env>/</code> directory that customizes a <code>base/</code> for a specific environment — image registries, hostnames, certificates, and ingress. The repo ships <code>local</code> and <code>cloud</code> overlays.</p>\n<p><strong>kind</strong> <em>(k8s)</em> Kubernetes IN Docker — runs a local Kubernetes cluster inside Docker for development (<code>task up</code> creates one). Pinned to 0.31 via mise.</p>\n<p><strong>k3s</strong> <em>(k8s)</em> A lightweight Kubernetes distribution used for external/cloud clusters (for example a Zarf deploy targets a k3s cluster via its <code>KUBECONFIG</code>).</p>\n<p><strong>mise</strong> <em>(k8s)</em> The tool-version manager that pins the exact versions of <code>helm</code>, <code>kind</code>, <code>kubectl</code>, <code>task</code>, <code>yq</code>, and <code>zarf</code>. Run <code>mise install</code> to get them and <code>mise trust</code> to trust local config.</p>\n<p><strong>task (Taskfile)</strong> <em>(k8s)</em> The task runner (<code>taskfile.dev</code>) used as the default command interface: <code>task up</code>, <code>task down</code>, <code>task deploy</code>, and so on. Tasks include ordered readiness gates between deploy phases.</p>\n<p><strong>Zarf</strong> <em>(k8s)</em> A packaging/airgap-friendly tool used to build a deployable package from the cloud overlays (<code>task zarf:package:cloud</code>) and deploy it to an external cluster.</p>\n<p><strong>Traefik</strong> <em>(k8s)</em> The ingress controller / reverse proxy on the Kubernetes stack. Replaces nginx (which on legacy is driven by miniwerk).</p>"
+    }
+  ]
+}

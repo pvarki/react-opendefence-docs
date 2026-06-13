@@ -65,7 +65,7 @@ repos:
     rev: v1.5.0
     hooks:
       - id: detect-secrets
-        exclude: "poetry.lock|pnpm-lock.yaml"
+        exclude: "poetry.lock|pnpm-lock.yaml|^public/content/|^public/release-docs/"
         args: [--baseline, .secrets.baseline]
   - repo: https://github.com/pre-commit/mirrors-prettier
     rev: v4.0.0-alpha.8

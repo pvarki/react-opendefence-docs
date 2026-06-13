@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "id": "d7bd61d9-3acd-498a-a846-ec2115327bc9",
+  "slug": "day-2-operations-docker-compose-FJFEoqvs6b",
+  "collection": "operate",
+  "locale": "en",
+  "title": "Day-2 operations (Docker Compose)",
+  "breadcrumb": [
+    "Platforms",
+    "Docker Compose (legacy)",
+    "Day-2 operations (Docker Compose)"
+  ],
+  "createdAt": "2026-06-13T13:20:33.926Z",
+  "updatedAt": "2026-06-13T16:12:34.386Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Updating an instance",
+      "id": "updating-an-instance"
+    },
+    {
+      "depth": 2,
+      "text": "Design lifetime",
+      "id": "design-lifetime"
+    },
+    {
+      "depth": 2,
+      "text": "Do NOT destroy the volumes",
+      "id": "do-not-destroy-the-volumes"
+    },
+    {
+      "depth": 2,
+      "text": "Backups",
+      "id": "backups"
+    },
+    {
+      "depth": 2,
+      "text": "Monitoring during operation",
+      "id": "monitoring-during-operation"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<blockquote>\n<p><strong>Run an instance for at most ~3 months.</strong> For safety, we recommend a <strong>maximum deployment time of about three months</strong> per instance. A Deploy App instance's containers are <strong>not meant to be updated during a server's lifetime</strong> — you patch by redeploying a fresh instance, not by maintaining a long-lived one. The model is <strong>one operation, one server</strong>: a new operation gets a new instance. This also minimizes data build-up and configuration drift over time.</p>\n</blockquote>\n<p>Day-2 operations for a Docker Compose Deploy App instance: keeping it patched, understanding its short design lifetime, the one command never to run on a live instance, and backups. All of this is grounded in the legacy <a href=\"https://github.com/pvarki/docker-rasenmaeher-integration\" target=\"_blank\" rel=\"noopener noreferrer\"><code>docker-rasenmaeher-integration</code></a> README. For initial standup see <strong>Deploy with Docker Compose</strong>; for failure modes see <strong>Troubleshooting &#x26; teardown</strong>.</p>\n<h2 id=\"updating-an-instance\"><a href=\"#updating-an-instance\">Updating an instance</a></h2>\n<p>Update the repository, re-sync submodules to the checked-out version, pull the matching images, and recreate the services:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#61AFEF\">git</span><span style=\"color:#98C379\"> pull</span></span>\n<span class=\"line\"><span style=\"color:#61AFEF\">git</span><span style=\"color:#98C379\"> submodule</span><span style=\"color:#98C379\"> update</span><span style=\"color:#D19A66\"> --init</span><span style=\"color:#D19A66\"> --recursive</span></span>\n<span class=\"line\"><span style=\"color:#61AFEF\">docker</span><span style=\"color:#98C379\"> compose</span><span style=\"color:#98C379\"> pull</span></span>\n<span class=\"line\"><span style=\"color:#61AFEF\">docker</span><span style=\"color:#98C379\"> compose</span><span style=\"color:#98C379\"> up</span><span style=\"color:#D19A66\"> -d</span></span></code></pre>",
+      "lang": "bash"
+    },
+    {
+      "type": "html",
+      "html": "<p>If you ever cloned or checked out without <code>--recurse-submodules</code>, the <code>git submodule update --init --recursive</code> step also repairs that.</p>\n<p>Note the design intent: there are <strong>no in-place upgrades</strong> in the long-running sense. An instance is meant to be patched by redeploying, and is expected to be refreshed rather than maintained indefinitely.</p>\n<h2 id=\"design-lifetime\"><a href=\"#design-lifetime\">Design lifetime</a></h2>\n<p>A Deploy App instance has a <strong>design lifetime of 1–2 months</strong>, with a recommended operational ceiling of <strong>about 3 months</strong> (see the banner above). The short lifetime is deliberate: it forces instance refreshing, which avoids accumulated maintenance, persistence, and user-management drift.</p>\n<p>If you genuinely need an instance to outlive that window, you can extend the certificate validity — but this is <strong>not recommended and has security implications</strong>. If you do it, <strong>you</strong> take responsibility for reading through all Dockerfiles and compositions to understand exactly how things are built and for applying security updates into the containers yourself.</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#E06C75\">CFSSL_CA_EXPIRY</span><span style=\"color:#56B6C2\">=</span><span style=\"color:#98C379\">\"8800h\"</span><span style=\"color:#7F848E;font-style:italic\">            # hours; 8800h is ~366 days</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">CFSSL_SIGN_DEFAULT_EXPIRY</span><span style=\"color:#56B6C2\">=</span><span style=\"color:#98C379\">\"8800h\"</span><span style=\"color:#7F848E;font-style:italic\">  # hours; 8800h is ~366 days</span></span></code></pre>",
+      "lang": "bash"
+    },
+    {
+      "type": "html",
+      "html": "<p>These set the CFSSL CA and default signing expiry. Leaving them at defaults keeps the instance within its intended short life.</p>\n<h2 id=\"do-not-destroy-the-volumes\"><a href=\"#do-not-destroy-the-volumes\">Do NOT destroy the volumes</a></h2>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#7F848E;font-style:italic\"># !DO NOT DO! on a live instance</span></span>\n<span class=\"line\"><span style=\"color:#61AFEF\">docker</span><span style=\"color:#98C379\"> compose</span><span style=\"color:#98C379\"> down</span><span style=\"color:#D19A66\"> -v</span></span></code></pre>",
+      "lang": "bash"
+    },
+    {
+      "type": "html",
+      "html": "<p><code>docker compose down -v</code> deletes the persistent volumes — the certificates, users, and databases — and you will have to re-add all users and re-enroll all devices. Use plain <code>docker compose down</code> (no <code>-v</code>) to stop the stack while keeping state. The <code>-v</code> form is only for intentionally resetting dev environments or before the integration test suite (which requires a clean database). See <strong>Troubleshooting &#x26; teardown</strong> for the full teardown discussion.</p>\n<h2 id=\"backups\"><a href=\"#backups\">Backups</a></h2>\n<blockquote>\n<p><strong>TODO:</strong> confirm a supported backup/restore procedure for a Docker Compose instance (which named volumes to snapshot — CFSSL/CA material, postgres <code>pg_data</code>, TAK <code>tak_data</code> — and a tested restore path). The README does not document a backup flow; given the short design lifetime, the project's stance is to <strong>refresh/redeploy rather than maintain long-lived instances</strong>, so plan around disposability rather than long-term restore.</p>\n</blockquote>\n<p>What the sources do make clear is that the persistent volumes hold everything that matters (CA/certificates, users, databases), and that destroying them (<code>down -v</code>) is irreversible — so any backup strategy must capture those volumes while the stack is down or quiesced.</p>\n<h2 id=\"monitoring-during-operation\"><a href=\"#monitoring-during-operation\">Monitoring during operation</a></h2>\n<p>Keep an eye on the audit and security logs throughout the instance's life — certificate lifecycle events, auth failures, and the compromise indicators. See <strong>Audit logging &#x26; observability</strong> for the log model, where logs live, and the health-check endpoints.</p>\n<p>Organization-wide operational and contribution conventions are deferred to the <strong>Community &#x26; Standards</strong> page (in <em>Contribute to Project</em>).</p>"
+    }
+  ]
+}

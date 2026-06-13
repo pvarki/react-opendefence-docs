@@ -31,7 +31,11 @@ import { usePlatformPicker } from "@/lib/usePlatformPicker";
 import { PageSwiper } from "@/components/reader/PageSwiper";
 import { NotFound } from "@/components/shell/NotFound";
 import { PlatformList } from "@/components/shell/PlatformList";
-import { SidebarItems, SidebarNav } from "@/components/shell/SidebarNav";
+import {
+  DevDocsSidebar,
+  SidebarItems,
+  SidebarNav,
+} from "@/components/shell/SidebarNav";
 import { ReaderBar } from "@/components/shell/ReaderBar";
 import { Button } from "@/components/ui/button";
 
@@ -109,9 +113,11 @@ function ReaderRoute() {
   const data = Route.useLoaderData();
   const { locale } = Route.useParams();
   const view = useReadingView();
-  const bookLabel =
-    data.manifest.collections.find((c) => c.slug === data.collection)?.label ??
-    data.collection;
+  const collectionMeta = data.manifest.collections.find(
+    (c) => c.slug === data.collection,
+  );
+  const bookLabel = collectionMeta?.label ?? data.collection;
+  const isDevSection = collectionMeta?.section === "dev";
   const currentPage =
     data.kind === "page"
       ? data.pages.find((p) => p.slug === data.slug)
@@ -143,13 +149,24 @@ function ReaderRoute() {
 
   return (
     <div className="flex h-full">
-      <SidebarNav
-        locale={locale}
-        contentLocale={data.contentLocale}
-        collection={data.collection}
-        currentSlug={data.slug}
-        clientId={activeClient?.id}
-      />
+      {isDevSection ? (
+        <DevDocsSidebar
+          locale={locale}
+          contentLocale={data.contentLocale}
+          manifest={data.manifest}
+          currentCollection={data.collection}
+          currentSlug={data.slug}
+          clientId={activeClient?.id}
+        />
+      ) : (
+        <SidebarNav
+          locale={locale}
+          contentLocale={data.contentLocale}
+          collection={data.collection}
+          currentSlug={data.slug}
+          clientId={activeClient?.id}
+        />
+      )}
       <div className="flex min-w-0 flex-1 flex-col">
         <ReaderBar
           locale={locale}

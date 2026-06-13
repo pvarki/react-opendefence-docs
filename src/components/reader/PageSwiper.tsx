@@ -15,6 +15,7 @@ import type { ReadingView } from "@/lib/platform";
 import { loadPage } from "@/lib/content/loader";
 import {
   globalReadingOrder,
+  resolveClient,
   resolveGlobalPosition,
   resolveSplat,
 } from "@/lib/content/neighbors";
@@ -115,13 +116,34 @@ export function PageSwiper({
       // during link/back reconciliation, where the URL leads the window.
       if (!target || keyOf(target) === windowKey || keyOf(target) === urlKey)
         return;
+      // Cross-book forward swipe: land on the cover of the next book rather
+      // than its first content page so the reader can orient before diving in.
+      const current = order[windowIndex];
+      if (current && target.collection !== current.collection) {
+        navLockRef.current = true;
+        void navigate({
+          to: "/$locale/$",
+          params: { locale, _splat: target.collection },
+        });
+        return;
+      }
       navigateToPage(target);
     };
     embla.on("settle", onSettle);
     return () => {
       embla.off("settle", onSettle);
     };
-  }, [embla, windowPages, windowKey, urlKey, navigateToPage]);
+  }, [
+    embla,
+    windowPages,
+    windowKey,
+    urlKey,
+    navigateToPage,
+    order,
+    windowIndex,
+    navigate,
+    locale,
+  ]);
 
   // URL path: reconcile the rendered window with the page from the route.
   // Embla is an external animation engine; this effect is the designed sync
@@ -197,9 +219,15 @@ export function PageSwiper({
       const dest = e.key === "ArrowLeft" ? current?.prev : current?.next;
       if (dest) {
         e.preventDefault();
+        // Right-arrow into a new book: land on the cover, not the first page.
+        const crossBook =
+          e.key === "ArrowRight" && dest.collection !== resolved.collection;
         void navigate({
           to: "/$locale/$",
-          params: { locale, _splat: keyOf(dest) },
+          params: {
+            locale,
+            _splat: crossBook ? dest.collection : keyOf(dest),
+          },
         });
       }
     };
@@ -226,7 +254,7 @@ export function PageSwiper({
       (c) => c.slug === position.next!.collection,
     );
     return next
-      ? { label: next.label, href: `/${locale}/${keyOf(position.next)}` }
+      ? { label: next.label, href: `/${locale}/${position.next!.collection}` }
       : undefined;
   }, [position, manifest, locale]);
 
@@ -260,6 +288,11 @@ export function PageSwiper({
               }
               isCurrent={keyOf(page) === windowKey}
               nextBook={nextBook}
+              activeClientId={
+                view
+                  ? resolveClient(manifest, page.collection, view)?.id
+                  : undefined
+              }
             />
           ))}
         </div>

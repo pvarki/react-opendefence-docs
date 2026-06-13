@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "id": "8ee75e4a-56a0-4df7-a17f-6030ad73457f",
+  "slug": "contributing-dsXGjtdXG8",
+  "collection": "contribute-to-project",
+  "locale": "en",
+  "title": "Contributing",
+  "breadcrumb": [
+    "Contributing"
+  ],
+  "createdAt": "2026-06-13T13:21:40.742Z",
+  "updatedAt": "2026-06-13T13:21:40.742Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Where the code lives",
+      "id": "where-the-code-lives"
+    },
+    {
+      "depth": 2,
+      "text": "Standard PR flow (any repo)",
+      "id": "standard-pr-flow-any-repo"
+    },
+    {
+      "depth": 2,
+      "text": "Working with submodules (legacy stack)",
+      "id": "working-with-submodules-legacy-stack"
+    },
+    {
+      "depth": 2,
+      "text": "Working in the Kubernetes stack",
+      "id": "working-in-the-kubernetes-stack"
+    },
+    {
+      "depth": 2,
+      "text": "Working on a product integration",
+      "id": "working-on-a-product-integration"
+    },
+    {
+      "depth": 2,
+      "text": "Cross-stack changes",
+      "id": "cross-stack-changes"
+    },
+    {
+      "depth": 2,
+      "text": "Commit and review etiquette",
+      "id": "commit-and-review-etiquette"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Deploy App is built across many separate pvarki repositories — the legacy stack (<code>docker-rasenmaeher-integration</code>) pulls most of them in as git submodules, while the Kubernetes stack (<code>opendefence-platform</code>) and the per-product integration APIs live as standalone repos. This page covers the day-to-day branching, PR, and review flow that applies to all of them. For the conventions those flows enforce (Markdown style, line-endings, shared CI), see <strong>Community &#x26; Standards</strong>.</p>\n<h2 id=\"where-the-code-lives\"><a href=\"#where-the-code-lives\">Where the code lives</a></h2>\n<p>There is no single monorepo. Almost every component is its own repository, and the legacy stack stitches them together as submodules. From <code>docker-rasenmaeher-integration/README.rst</code>:</p>\n<blockquote>\n<p>The submodules are repos in their own right, if you plan to make changes into them change to the directory and create new branch, commit and push changes as usual under that directory.</p>\n</blockquote>\n<p>The practical consequence: <strong>decide which repo actually owns the change before you start.</strong> A fix to the core API belongs in <code>pvarki/python-rasenmaeher-api</code>, not in the integration repo that happens to vendor it as the <code>api/</code> submodule. See <strong>Reporting issues &#x26; support</strong> for a triage map of which repo owns what.</p>\n<h2 id=\"standard-pr-flow-any-repo\"><a href=\"#standard-pr-flow-any-repo\">Standard PR flow (any repo)</a></h2>\n<ol>\n<li>\n<p>Fork or branch from <code>main</code>. Use a short, descriptive branch name (e.g. <code>feat/matrix-room-state</code>, <code>fix/241-srt-passwords</code>).</p>\n</li>\n<li>\n<p>Make focused commits. Keep one concern per PR — the <code>opendefence-platform</code> agent guidance is explicit about this for <code>k8s/</code> work (\"Keep changes limited to one concern per PR\").</p>\n</li>\n<li>\n<p>Run the local checks before pushing (see <strong>Community &#x26; Standards</strong> for the shared pre-commit setup):</p>\n<pre><code class=\"language-bash\">pre-commit install --install-hooks\npre-commit run --all-files\n</code></pre>\n<p>If pre-commit complains about missing environment variables in the legacy stack, run <code>source example_env.sh</code> first.</p>\n</li>\n<li>\n<p>Open a PR against <code>main</code>. CI runs automatically (lint/type-check, tests, container build, dependency scan — see <strong>Community &#x26; Standards</strong>).</p>\n</li>\n<li>\n<p>Address review, get an approval, merge.</p>\n</li>\n</ol>\n<h2 id=\"working-with-submodules-legacy-stack\"><a href=\"#working-with-submodules-legacy-stack\">Working with submodules (legacy stack)</a></h2>\n<p>The legacy <code>docker-rasenmaeher-integration</code> repo references its components at pinned commits. Clone and update with submodules so you get a consistent set:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#61AFEF\">git</span><span style=\"color:#98C379\"> clone</span><span style=\"color:#D19A66\"> --recurse-submodules</span><span style=\"color:#D19A66\"> -j8</span><span style=\"color:#98C379\"> git@github.com:pvarki/docker-rasenmaeher-integration.git</span></span>\n<span class=\"line\"><span style=\"color:#7F848E;font-style:italic\"># after pulling or switching branches:</span></span>\n<span class=\"line\"><span style=\"color:#61AFEF\">git</span><span style=\"color:#98C379\"> submodule</span><span style=\"color:#98C379\"> update</span><span style=\"color:#D19A66\"> --init</span><span style=\"color:#D19A66\"> --recursive</span></span></code></pre>",
+      "lang": "bash"
+    },
+    {
+      "type": "html",
+      "html": "<p>To change a component, treat its submodule directory as a normal repo:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#56B6C2\">cd</span><span style=\"color:#98C379\"> api</span><span style=\"color:#7F848E;font-style:italic\">          # e.g. python-rasenmaeher-api</span></span>\n<span class=\"line\"><span style=\"color:#61AFEF\">git</span><span style=\"color:#98C379\"> checkout</span><span style=\"color:#D19A66\"> -b</span><span style=\"color:#98C379\"> fix/my-change</span></span>\n<span class=\"line\"><span style=\"color:#7F848E;font-style:italic\"># ...edit, commit, push in THIS repo...</span></span></code></pre>",
+      "lang": "bash"
+    },
+    {
+      "type": "html",
+      "html": "<p>Then, in the <strong>integration repo</strong>, commit the updated submodule pointer so the stack picks up your change. Land the component PR first, then bump the pointer. The submodule directories and their upstream repos are listed in the integration README under \"Directories that are submodules\" (for example <code>api</code> → <code>python-rasenmaeher-api</code>, <code>takintegration</code> → <code>python-tak-rmapi</code>, <code>mtxauthz</code> → <code>python-mediamtx-rmmtxauthz</code>).</p>\n<h2 id=\"working-in-the-kubernetes-stack\"><a href=\"#working-in-the-kubernetes-stack\">Working in the Kubernetes stack</a></h2>\n<p><code>opendefence-platform</code> is a single repo (no submodules) organized as Kustomize <code>base/</code> + <code>overlays/&#x3C;env>/</code> folders. Its <code>agents.md</code> is the working contract for changes under <code>k8s/</code>:</p>\n<ul>\n<li>\n<p>Work inside one <code>k8s/&#x3C;service>/</code> folder per concern; add new workloads as a <code>base/</code> + <code>overlays/&#x3C;env>/</code> pair.</p>\n</li>\n<li>\n<p>Keep <code>base/</code> environment-agnostic; put hostnames, certificates, image overrides, and ingress in <code>overlays/&#x3C;env>/</code>.</p>\n</li>\n<li>\n<p>When build/deploy phasing changes, update the root <code>taskfile.yaml</code> in the <strong>same</strong> change.</p>\n</li>\n<li>\n<p>Build affected overlays locally before pushing:</p>\n<pre><code class=\"language-bash\">kubectl kustomize --enable-helm k8s/&#x3C;service>/overlays/local\n</code></pre>\n<p>Use <code>--enable-helm</code> whenever the kustomization includes <code>helmCharts</code> (e.g. <code>traefik</code>, <code>trust-manager</code>, <code>external-secrets-operator</code>).</p>\n</li>\n</ul>\n<h2 id=\"working-on-a-product-integration\"><a href=\"#working-on-a-product-integration\">Working on a product integration</a></h2>\n<p>Integration APIs (e.g. <code>python-matrix-rmapi</code>, <code>python-tak-rmapi</code>, <code>python-mediamtx-rmmtxauthz</code>) are standalone repos scaffolded from <code>pvarki/python-integration-template</code>. They follow the same PR flow, plus a version bump on every change (see <strong>Releases &#x26; versioning</strong>). The matrix example's PR pipeline shows the expected gates: version-check, pre-commit, pytest, dependency scan, and a Docker build of both the <code>test</code> and <code>production</code> targets. See <strong>Build an Integration</strong> (separate book) for the development workflow itself.</p>\n<h2 id=\"cross-stack-changes\"><a href=\"#cross-stack-changes\">Cross-stack changes</a></h2>\n<p>Because the legacy and Kubernetes stacks are genuinely different deployments, a behavior change in a shared component (e.g. the core <code>rmapi</code>) may need follow-up in <strong>both</strong>: a submodule pointer bump in <code>docker-rasenmaeher-integration</code> and a manifest/image update in <code>opendefence-platform</code>. Note which stacks you have tested in the PR description.</p>\n<h2 id=\"commit-and-review-etiquette\"><a href=\"#commit-and-review-etiquette\">Commit and review etiquette</a></h2>\n<ul>\n<li>Conventional-style prefixes (<code>feat:</code>, <code>fix:</code>, <code>chore:</code>) are used across the repos and feed the release notes — keep using them.</li>\n<li>Reference the issue or PR number where relevant; the legacy release notes link PRs and commits per component.</li>\n<li>Keep PRs reviewable: small diffs, clear description, note any new mandatory env vars or breaking changes so they can be captured in the release notes.</li>\n</ul>\n<blockquote>\n<p><strong>TODO:</strong> confirm whether any repo requires signed commits or DCO sign-off; not evident in the sources reviewed.</p>\n</blockquote>"
+    }
+  ]
+}

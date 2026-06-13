@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
 import { Link } from "@tanstack/react-router";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, ChevronLeft } from "lucide-react";
 import type {
   Locale,
+  LocaleManifest,
+  ManifestCollection,
   SidebarConfig,
   SidebarItem,
 } from "@shared/content-schema";
@@ -93,7 +95,7 @@ export function SidebarItems({
           // A toporg is a section heading grouping chapters — always open,
           // never a link (META: toporg in Outline).
           <li key={item.id} className="pt-3 first:pt-0">
-            <p className="px-2 pb-1 text-[11px] font-semibold tracking-widest text-muted-foreground uppercase">
+            <p className="px-2 pb-1 text-[11px] font-semibold tracking-widest text-foreground uppercase">
               {item.label}
             </p>
             {item.children && (
@@ -205,5 +207,157 @@ function SidebarGroup({
         </div>
       )}
     </li>
+  );
+}
+
+// ---------------------------------------------------------------------------
+// Cross-book developer-docs nav: inside any "dev" section book, show the whole
+// developer-docs tree (every dev book collapsible, current one expanded) so the
+// reader can jump across books and back to the Develop shelf.
+// ---------------------------------------------------------------------------
+
+interface DevDocsNavProps {
+  locale: string;
+  contentLocale: Locale;
+  manifest: LocaleManifest;
+  currentCollection: string;
+  currentSlug?: string;
+  /** Active client id for the CURRENT book (filters its platform sections). */
+  clientId?: string;
+  onNavigate?: () => void;
+}
+
+function DevBookGroup({
+  book,
+  sidebar,
+  locale,
+  isCurrent,
+  currentSlug,
+  clientId,
+  onNavigate,
+}: {
+  book: ManifestCollection;
+  sidebar?: SidebarConfig;
+  locale: string;
+  isCurrent: boolean;
+  currentSlug?: string;
+  clientId?: string;
+  onNavigate?: () => void;
+}) {
+  const [open, setOpen] = useState(isCurrent);
+  const items = sidebar ? filterSidebarByClient(sidebar.items, clientId) : [];
+  return (
+    <div className="pt-1">
+      <button
+        type="button"
+        onClick={() => setOpen((o) => !o)}
+        aria-expanded={open}
+        className={cn(
+          "flex w-full items-center justify-between rounded-md px-2 py-1.5 text-[11px] font-semibold tracking-widest uppercase",
+          isCurrent
+            ? "text-foreground"
+            : "text-muted-foreground hover:text-foreground",
+        )}
+      >
+        <span className="truncate">{book.label}</span>
+        <ChevronDown
+          className={cn(
+            "size-3.5 shrink-0 transition-transform",
+            open ? "" : "-rotate-90",
+          )}
+        />
+      </button>
+      {open && items.length > 0 && (
+        <SidebarItems
+          items={items}
+          locale={locale}
+          collection={book.slug}
+          currentSlug={currentSlug}
+          onNavigate={onNavigate}
+        />
+      )}
+    </div>
+  );
+}
+
+/** The cross-book dev nav body (no chrome) — used by desktop + mobile. */
+export function DevDocsNavBody({
+  locale,
+  contentLocale,
+  manifest,
+  currentCollection,
+  currentSlug,
+  clientId,
+  onNavigate,
+}: DevDocsNavProps) {
+  const devBooks = manifest.collections
+    .filter((c) => c.section === "dev")
+    .slice()
+    .sort((a, b) => a.order - b.order);
+  const [sidebars, setSidebars] = useState<Record<string, SidebarConfig>>({});
+
+  useEffect(() => {
+    let cancelled = false;
+    const slugs = manifest.collections
+      .filter((c) => c.section === "dev")
+      .map((c) => c.slug);
+    Promise.all(
+      slugs.map((slug) =>
+        loadSidebar(contentLocale, slug).then(
+          (sb) => [slug, sb] as const,
+          () => [slug, undefined] as const,
+        ),
+      ),
+    ).then((entries) => {
+      if (cancelled) return;
+      const map: Record<string, SidebarConfig> = {};
+      for (const [slug, sb] of entries) if (sb) map[slug] = sb;
+      setSidebars(map);
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, [contentLocale, manifest]);
+
+  return (
+    <div>
+      <Link
+        to="/$locale/dev"
+        params={{ locale }}
+        onClick={onNavigate}
+        className="mb-1 flex items-center gap-1.5 rounded-md px-2 py-1.5 text-xs font-medium text-muted-foreground hover:text-foreground"
+      >
+        <ChevronLeft className="size-3.5 shrink-0" />
+        All developer docs
+      </Link>
+      {devBooks.map((book) => (
+        <DevBookGroup
+          key={book.slug}
+          book={book}
+          sidebar={sidebars[book.slug]}
+          locale={locale}
+          isCurrent={book.slug === currentCollection}
+          currentSlug={
+            book.slug === currentCollection ? currentSlug : undefined
+          }
+          clientId={book.slug === currentCollection ? clientId : undefined}
+          onNavigate={onNavigate}
+        />
+      ))}
+    </div>
+  );
+}
+
+/** Desktop aside variant of the cross-book dev nav. */
+export function DevDocsSidebar(props: DevDocsNavProps) {
+  return (
+    <aside className="hidden w-64 shrink-0 overflow-y-auto border-r border-sidebar-border bg-sidebar md:block">
+      <nav className="px-3 py-4">
+        <p className="px-2 pb-2 text-xs font-semibold tracking-wider text-foreground uppercase">
+          Developer docs
+        </p>
+        <DevDocsNavBody {...props} />
+      </nav>
+    </aside>
   );
 }

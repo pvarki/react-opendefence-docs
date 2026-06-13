@@ -138,6 +138,13 @@ const PLATFORM_NAMES: Record<string, Platform> = {
   macos: "macos",
   mac: "macos",
   "mac os": "macos",
+  // Developer Guide deployment targets (fallback to the explicit
+  // `META: platform:` organizer marker, which is the primary binding).
+  kubernetes: "opendefence-k8s",
+  k8s: "opendefence-k8s",
+  docker: "docker-rasenmaeher-integration",
+  "docker compose": "docker-rasenmaeher-integration",
+  rasenmaeher: "docker-rasenmaeher-integration",
 };
 
 const PLATFORM_TOKENS: Record<string, Platform> = {
@@ -149,6 +156,10 @@ const PLATFORM_TOKENS: Record<string, Platform> = {
   windows: "windows",
   linux: "linux",
   macos: "macos",
+  kubernetes: "opendefence-k8s",
+  docker: "docker-rasenmaeher-integration",
+  compose: "docker-rasenmaeher-integration",
+  rasenmaeher: "docker-rasenmaeher-integration",
 };
 
 export function detectPlatform(title: string): Platform | undefined {
@@ -164,7 +175,9 @@ export function detectPlatform(title: string): Platform | undefined {
 
 /** Extract the platform chip tag from a raw Outline title, if present. */
 export function platformFromTitle(title: string): Platform | undefined {
-  const match = title.match(/#tag:(android|ios|windows|linux|macos)\b/i);
+  const match = title.match(
+    /#tag:(android|ios|windows|linux|macos|docker-rasenmaeher-integration|opendefence-k8s)\b/i,
+  );
   return match ? (match[1].toLowerCase() as Platform) : undefined;
 }
 

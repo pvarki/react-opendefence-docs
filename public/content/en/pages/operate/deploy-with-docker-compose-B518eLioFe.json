@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "id": "c1b3ce77-3445-4dd4-938a-ca3f4d4d3d29",
+  "slug": "deploy-with-docker-compose-B518eLioFe",
+  "collection": "operate",
+  "locale": "en",
+  "title": "Deploy with Docker Compose",
+  "breadcrumb": [
+    "Platforms",
+    "Docker Compose (legacy)",
+    "Deploy with Docker Compose"
+  ],
+  "createdAt": "2026-06-13T13:20:33.562Z",
+  "updatedAt": "2026-06-13T13:20:33.562Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Required DNS records",
+      "id": "required-dns-records"
+    },
+    {
+      "depth": 2,
+      "text": "Required open ports",
+      "id": "required-open-ports"
+    },
+    {
+      "depth": 2,
+      "text": "Clone with submodules",
+      "id": "clone-with-submodules"
+    },
+    {
+      "depth": 2,
+      "text": "Choose a tag and sync submodules",
+      "id": "choose-a-tag-and-sync-submodules"
+    },
+    {
+      "depth": 2,
+      "text": "Write the .env file",
+      "id": "write-the-env-file"
+    },
+    {
+      "depth": 2,
+      "text": "Start the services",
+      "id": "start-the-services"
+    },
+    {
+      "depth": 2,
+      "text": "Get the first admin invite code",
+      "id": "get-the-first-admin-invite-code"
+    },
+    {
+      "depth": 2,
+      "text": "Service URLs",
+      "id": "service-urls"
+    },
+    {
+      "depth": 2,
+      "text": "Components (submodules)",
+      "id": "components-submodules"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>This is the authoritative procedure for standing up a Deploy App instance on the legacy Docker Compose stack (<a href=\"https://github.com/pvarki/docker-rasenmaeher-integration\" target=\"_blank\" rel=\"noopener noreferrer\"><code>pvarki/docker-rasenmaeher-integration</code></a>). On this stack, <strong>miniwerk</strong> fetches the Let's Encrypt certificates and resolves the per-product subdomains from <code>MW_PRODUCTS</code>, and <strong>CFSSL</strong> is the internal CA that issues client/service certificates. For the shared in-UI onboarding flow, see <strong>Operator quickstart</strong>.</p>\n<h2 id=\"required-dns-records\"><a href=\"#required-dns-records\">Required DNS records</a></h2>\n<p>All of these must point to your WAN address. When you add more products, follow the same naming pattern — you need a subdomain for every product listed in the composition's miniwerk <code>MW_PRODUCTS</code> variable, plus <code>kc</code> for Keycloak:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span>domain</span></span>\n<span class=\"line\"><span>kc.domain</span></span>\n<span class=\"line\"><span>tak.domain</span></span>\n<span class=\"line\"><span>bl.domain</span></span>\n<span class=\"line\"><span>mtx.domain</span></span>\n<span class=\"line\"><span>matrix.domain</span></span>\n<span class=\"line\"><span>synapse.domain</span></span>\n<span class=\"line\"><span>mtls.domain</span></span>\n<span class=\"line\"><span>mtls.kc.domain</span></span>\n<span class=\"line\"><span>mtls.tak.domain</span></span>\n<span class=\"line\"><span>mtls.bl.domain</span></span>\n<span class=\"line\"><span>mtls.mtx.domain</span></span>\n<span class=\"line\"><span>mtls.matrix.domain</span></span>\n<span class=\"line\"><span>mtls.synapse.domain</span></span></code></pre>",
+      "lang": "plaintext"
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"required-open-ports\"><a href=\"#required-open-ports\">Required open ports</a></h2>\n<p>Open these (and redirect them to the server if it is behind NAT):</p>\n<table>\n<thead>\n<tr>\n<th>Port</th>\n<th>Use</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>80</td>\n<td>HTTP</td>\n</tr>\n<tr>\n<td>443</td>\n<td>HTTPS</td>\n</tr>\n<tr>\n<td>8089</td>\n<td>TAK</td>\n</tr>\n<tr>\n<td>8443</td>\n<td>TAK</td>\n</tr>\n<tr>\n<td>8446</td>\n<td>TAK</td>\n</tr>\n<tr>\n<td>9446</td>\n<td>Keycloak</td>\n</tr>\n<tr>\n<td>4626</td>\n<td>Product integration APIs port</td>\n</tr>\n<tr>\n<td>4627</td>\n<td>ATAK Autoimport ephemeral download port</td>\n</tr>\n<tr>\n<td>4666</td>\n<td>Battlelog API/UI port</td>\n</tr>\n<tr>\n<td>1936</td>\n<td>RTMPS</td>\n</tr>\n<tr>\n<td>8322</td>\n<td>RTSPS</td>\n</tr>\n<tr>\n<td>8890</td>\n<td>SRT</td>\n</tr>\n<tr>\n<td>9888</td>\n<td>HLS</td>\n</tr>\n<tr>\n<td>9889</td>\n<td>WebRTC</td>\n</tr>\n<tr>\n<td>9996</td>\n<td>Playback for recorded streams/videos</td>\n</tr>\n</tbody>\n</table>\n<h2 id=\"clone-with-submodules\"><a href=\"#clone-with-submodules\">Clone with submodules</a></h2>\n<p>The components are git submodules, so clone recursively. Run all subsequent commands inside the cloned repository.</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#61AFEF\">git</span><span style=\"color:#98C379\"> clone</span><span style=\"color:#D19A66\"> --recurse-submodules</span><span style=\"color:#D19A66\"> -j8</span><span style=\"color:#98C379\"> git@github.com:pvarki/docker-rasenmaeher-integration.git</span></span></code></pre>",
+      "lang": "bash"
+    },
+    {
+      "type": "html",
+      "html": "<blockquote>\n<p>On Windows, do <strong>not</strong> use git-bash (it breaks Docker containers) — use WSL, and make sure your git client does not rewrite line endings (<code>git config --global core.eol lf</code>, <code>git config --global core.autocrlf false</code>).</p>\n</blockquote>\n<h2 id=\"choose-a-tag-and-sync-submodules\"><a href=\"#choose-a-tag-and-sync-submodules\">Choose a tag and sync submodules</a></h2>\n<p>Use a tag so you get a known-good combination of submodules:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#61AFEF\">git</span><span style=\"color:#98C379\"> tag</span><span style=\"color:#7F848E;font-style:italic\">                              # list available tags</span></span>\n<span class=\"line\"><span style=\"color:#61AFEF\">git</span><span style=\"color:#98C379\"> checkout</span><span style=\"color:#ABB2BF\"> &#x3C;</span><span style=\"color:#98C379\">TAG_NAM</span><span style=\"color:#ABB2BF\">E>              </span><span style=\"color:#7F848E;font-style:italic\"># choose a specific tag</span></span>\n<span class=\"line\"><span style=\"color:#61AFEF\">git</span><span style=\"color:#98C379\"> submodule</span><span style=\"color:#98C379\"> update</span><span style=\"color:#D19A66\"> --init</span><span style=\"color:#D19A66\"> --recursive</span><span style=\"color:#7F848E;font-style:italic\">   # sync submodules to that tag</span></span>\n<span class=\"line\"><span style=\"color:#61AFEF\">docker</span><span style=\"color:#98C379\"> compose</span><span style=\"color:#98C379\"> build</span><span style=\"color:#7F848E;font-style:italic\">                 # build the matching set</span></span></code></pre>",
+      "lang": "bash"
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"write-the-env-file\"><a href=\"#write-the-env-file\">Write the <code>.env</code> file</a></h2>\n<p>Create a file named literally <code>.env</code> (not <code>something.env</code>) in the repository root. The canonical example is <a href=\"https://github.com/pvarki/docker-rasenmaeher-integration/blob/main/example_env.sh\" target=\"_blank\" rel=\"noopener noreferrer\"><code>example_env.sh</code></a>. Minimal set:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#E06C75\">KEYCLOAK_DATABASE_PASSWORD</span><span style=\"color:#56B6C2\">=</span><span style=\"color:#98C379\">\"input-secure-password\"</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">RM_DATABASE_PASSWORD</span><span style=\"color:#56B6C2\">=</span><span style=\"color:#98C379\">\"input-secure-password\"</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">POSTGRES_PASSWORD</span><span style=\"color:#56B6C2\">=</span><span style=\"color:#98C379\">\"input-secure-password\"</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">LDAP_ADMIN_PASSWORD</span><span style=\"color:#56B6C2\">=</span><span style=\"color:#98C379\">\"input-secure-password\"</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">KEYCLOAK_ADMIN_PASSWORD</span><span style=\"color:#56B6C2\">=</span><span style=\"color:#98C379\">\"input-secure-password\"</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">TAK_DATABASE_PASSWORD</span><span style=\"color:#56B6C2\">=</span><span style=\"color:#98C379\">\"input-secure-password\"</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">SYNAPSE_DATABASE_PASSWORD</span><span style=\"color:#56B6C2\">=</span><span style=\"color:#98C379\">\"input-secure-password\"</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">SYNAPSE_MACAROON_SECRET_KEY</span><span style=\"color:#56B6C2\">=</span><span style=\"color:#98C379\">\"input-secure-password\"</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">SYNAPSE_REGISTRATION_SECRET</span><span style=\"color:#56B6C2\">=</span><span style=\"color:#98C379\">\"input-secure-password\"</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">SERVER_DOMAIN</span><span style=\"color:#56B6C2\">=</span><span style=\"color:#98C379\">\"input-domain\"</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">CFSSL_CA_NAME</span><span style=\"color:#56B6C2\">=</span><span style=\"color:#98C379\">\"input-ca-name\"</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">MW_LE_EMAIL</span><span style=\"color:#56B6C2\">=</span><span style=\"color:#98C379\">\"input-email-for-lets-encrypt\"</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">MW_LE_TEST</span><span style=\"color:#56B6C2\">=</span><span style=\"color:#98C379\">\"false\"</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">TAKSERVER_CERT_PASS</span><span style=\"color:#56B6C2\">=</span><span style=\"color:#98C379\">\"input-secure-password\"</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">TAK_CA_PASS</span><span style=\"color:#56B6C2\">=</span><span style=\"color:#98C379\">\"input-secure-password\"</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">VITE_THEME</span><span style=\"color:#56B6C2\">=</span><span style=\"color:#98C379\">\"${</span><span style=\"color:#E06C75\">VITE_THEME</span><span style=\"color:#ABB2BF\">:-</span><span style=\"color:#E06C75\">default</span><span style=\"color:#98C379\">}\"</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">KEYCLOAK_PROFILEROOT_UUID</span><span style=\"color:#56B6C2\">=</span><span style=\"color:#98C379\">\"input-uuid\"</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">KEYCLOAK_HTTPS_KEY_STORE_PASSWORD</span><span style=\"color:#56B6C2\">=</span><span style=\"color:#98C379\">\"input-secure-password\"</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">KEYCLOAK_HTTPS_TRUST_STORE_PASSWORD</span><span style=\"color:#56B6C2\">=</span><span style=\"color:#98C379\">\"input-secure-password\"</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">BL_DATABASE_PASSWORD</span><span style=\"color:#56B6C2\">=</span><span style=\"color:#98C379\">\"input-secure-password\"</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">RMMTX_DATABASE_PASSWORD</span><span style=\"color:#56B6C2\">=</span><span style=\"color:#98C379\">\"input-secure-password\"</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">RMMTX_API_PASSWORD</span><span style=\"color:#56B6C2\">=</span><span style=\"color:#98C379\">\"input-secure-password\"</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">RMMTX_SRT_PUB_PASSWORD</span><span style=\"color:#56B6C2\">=</span><span style=\"color:#98C379\">\"input-secure-password\"</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">RMMTX_SRT_READ_PASSWORD</span><span style=\"color:#56B6C2\">=</span><span style=\"color:#98C379\">\"input-secure-password\"</span></span></code></pre>",
+      "lang": "bash"
+    },
+    {
+      "type": "html",
+      "html": "<p>Replace every <code>input-secure-password</code> with a unique, strong passphrase. Generate UUIDs with:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#61AFEF\">python</span><span style=\"color:#D19A66\"> -c</span><span style=\"color:#98C379\"> 'import uuid; print(uuid.uuid4())'</span></span></code></pre>",
+      "lang": "bash"
+    },
+    {
+      "type": "html",
+      "html": "<p><code>SERVER_DOMAIN</code> is your domain, <code>MW_LE_EMAIL</code> is the Let's Encrypt contact, and <code>MW_LE_TEST=\"false\"</code> issues real (not staging) certificates. <code>CFSSL_CA_NAME</code> names the internal CA.</p>\n<h2 id=\"start-the-services\"><a href=\"#start-the-services\">Start the services</a></h2>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#61AFEF\">docker</span><span style=\"color:#98C379\"> compose</span><span style=\"color:#98C379\"> up</span><span style=\"color:#D19A66\"> -d</span></span></code></pre>",
+      "lang": "bash"
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"get-the-first-admin-invite-code\"><a href=\"#get-the-first-admin-invite-code\">Get the first admin invite code</a></h2>\n<p>Generate the first admin invite code from the core API container (<code>rmapi</code>):</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#61AFEF\">docker</span><span style=\"color:#98C379\"> compose</span><span style=\"color:#98C379\"> exec</span><span style=\"color:#D19A66\"> -it</span><span style=\"color:#98C379\"> rmapi</span><span style=\"color:#98C379\"> /bin/bash</span><span style=\"color:#D19A66\"> -c</span><span style=\"color:#98C379\"> \"rasenmaeher_api addcode\"</span></span></code></pre>",
+      "lang": "bash"
+    },
+    {
+      "type": "html",
+      "html": "<blockquote>\n<p>If you get \"no such service -d\", the dash you pasted is probably not a real ASCII hyphen (0x2D). When in doubt, type the command by hand instead of copy-pasting.</p>\n</blockquote>\n<p>Then follow the in-UI flow in <strong>Operator quickstart</strong> to create your admin account, invite users, and approve them.</p>\n<h2 id=\"service-urls\"><a href=\"#service-urls\">Service URLs</a></h2>\n<table>\n<thead>\n<tr>\n<th>What</th>\n<th>URL</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Deploy App login page</td>\n<td><code>https://domain</code></td>\n</tr>\n<tr>\n<td>Deploy App home page</td>\n<td><code>https://mtls.domain</code></td>\n</tr>\n<tr>\n<td>TAK Server Admin UI</td>\n<td><code>https://tak.domain:8443/</code></td>\n</tr>\n<tr>\n<td>Keycloak Admin UI</td>\n<td><code>https://kc.domain:9443/admin/RASENMAEHER/console/</code></td>\n</tr>\n</tbody>\n</table>\n<p>The TAK OTA update server lives inside the TAK server at <code>&#x3C;repo>/takserver/update</code> (path depends on where you cloned the repository).</p>\n<h2 id=\"components-submodules\"><a href=\"#components-submodules\">Components (submodules)</a></h2>\n<p>The composition is assembled from these submodule repos:</p>\n<table>\n<thead>\n<tr>\n<th>Directory</th>\n<th>Repo</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><code>api</code></td>\n<td><code>pvarki/python-rasenmaeher-api</code> (the core rmapi)</td>\n</tr>\n<tr>\n<td><code>cfssl</code></td>\n<td><code>pvarki/docker-rasenmaeher-cfssl</code> (internal CA)</td>\n</tr>\n<tr>\n<td><code>fpintegration</code></td>\n<td><code>pvarki/python-rasenmaeher-rmfpapi</code></td>\n</tr>\n<tr>\n<td><code>keycloak</code></td>\n<td><code>pvarki/docker-keycloak</code></td>\n</tr>\n<tr>\n<td><code>kw_product_init</code></td>\n<td><code>pvarki/golang-kraftwerk-init-helper-cli</code></td>\n</tr>\n<tr>\n<td><code>openldap</code></td>\n<td><code>pvarki/docker-openldap</code></td>\n</tr>\n<tr>\n<td><code>miniwerk</code></td>\n<td><code>pvarki/python-rasenmaeher-miniwerk</code> (LE certs, subdomains)</td>\n</tr>\n<tr>\n<td><code>uiv2</code></td>\n<td><code>pvarki/react-rasenmaeher-ui-v2</code></td>\n</tr>\n<tr>\n<td><code>takserver</code></td>\n<td><code>pvarki/docker-atak-server</code></td>\n</tr>\n<tr>\n<td><code>takintegration</code></td>\n<td><code>pvarki/python-tak-rmapi</code></td>\n</tr>\n<tr>\n<td><code>battlelog</code></td>\n<td><code>pvarki/typescript-liveloki-app</code></td>\n</tr>\n<tr>\n<td><code>mtxauthz</code></td>\n<td><code>pvarki/python-mediamtx-rmmtxauthz</code></td>\n</tr>\n</tbody>\n</table>\n<p>For updates, lifetime caveats, backups, and the destructive-teardown warning, see <strong>Day-2 operations (Docker Compose)</strong>. To run the stack locally for development (<code>rmlocal</code> / <code>rmdev</code>), see <strong>Develop Deploy App</strong>.</p>"
+    }
+  ]
+}
