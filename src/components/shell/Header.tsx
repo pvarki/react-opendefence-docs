@@ -1,6 +1,7 @@
 import { Link, useParams } from "@tanstack/react-router";
 import { useTranslation } from "react-i18next";
 import { DEFAULT_LOCALE } from "@shared/content-schema";
+import { withBase } from "@/lib/base";
 import { LocaleSwitcher } from "@/components/shell/LocaleSwitcher";
 import { PlatformSelector } from "@/components/shell/PlatformSelector";
 import { CommandMenu } from "@/components/search/CommandMenu";
@@ -22,11 +23,15 @@ export function Header() {
         <Link
           to="/$locale"
           params={{ locale }}
+          aria-label={t("app.title")}
           className="flex shrink-0 items-center gap-2 font-bold"
         >
-          <span className="flex size-7 items-center justify-center rounded-md bg-primary font-mono text-xs text-primary-foreground">
-            OD
-          </span>
+          <img
+            src={withBase("/icons/pvatk.png")}
+            alt=""
+            aria-hidden
+            className="size-7 shrink-0 rounded-md object-contain"
+          />
           <span className="hidden text-sm lg:inline">{t("app.title")}</span>
         </Link>
 

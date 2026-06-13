@@ -3,6 +3,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useTranslation } from "react-i18next";
 import { BookText } from "lucide-react";
 import { BookCard } from "@/components/shell/BookCard";
+import { ShelfHero } from "@/components/shell/ShelfHero";
 import { CARD_IMAGES } from "@/lib/cardImages";
 import { loadManifest } from "@/lib/content/loader";
 import { siteSections } from "@/lib/siteSections";
@@ -25,9 +26,9 @@ function AdvancedShelf() {
 
   return (
     <div className="h-full overflow-y-auto">
-      <div className="mx-auto max-w-3xl px-4 py-5 md:py-12">
-        <h1 className="text-xl font-bold md:text-3xl">{t("nav.advanced")}</h1>
-        <p className="mt-1 text-sm text-muted-foreground">
+      <ShelfHero src="/images/poweruser.jpg" title={t("nav.advanced")} />
+      <div className="mx-auto max-w-3xl px-4 py-4 md:py-8">
+        <p className="text-sm text-muted-foreground">
           {t("home.powerCardDesc")}
         </p>
         {sections.map((section) => (
@@ -49,6 +50,22 @@ function AdvancedShelf() {
           </Fragment>
         ))}
       </div>
+      <AdvancedFooter />
     </div>
+  );
+}
+
+/** Advanced-page footer, styled like the Guides and Develop footers. */
+function AdvancedFooter() {
+  return (
+    <footer className="mt-4 border-t border-border bg-card md:mt-8">
+      <div className="mx-auto max-w-3xl px-4 py-6 md:py-10">
+        <p className="text-sm leading-relaxed text-foreground">
+          These wikis provide advanced information about products that aim to
+          deepen your understanding on them and their capabilities. They are
+          developed by our community senior experts.
+        </p>
+      </div>
+    </footer>
   );
 }

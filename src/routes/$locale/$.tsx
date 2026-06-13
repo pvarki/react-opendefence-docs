@@ -15,7 +15,7 @@ import {
   type ManifestPage,
   type SidebarConfig,
 } from "@shared/content-schema";
-import { CARD_IMAGES } from "@/lib/cardImages";
+import { CARD_IMAGES, COVER_HEROES } from "@/lib/cardImages";
 import { withBase } from "@/lib/base";
 import i18n from "@/lib/i18n";
 import { loadManifest, loadPage, loadSidebar } from "@/lib/content/loader";
@@ -31,6 +31,7 @@ import { usePlatformPicker } from "@/lib/usePlatformPicker";
 import { PageSwiper } from "@/components/reader/PageSwiper";
 import { NotFound } from "@/components/shell/NotFound";
 import { PlatformList } from "@/components/shell/PlatformList";
+import { ShelfHero } from "@/components/shell/ShelfHero";
 import {
   DevDocsSidebar,
   SidebarItems,
@@ -216,6 +217,7 @@ function BookCover({
   const collection = data.manifest.collections.find(
     (c) => c.slug === data.collection,
   );
+  const hero = COVER_HEROES[data.collection];
   const { options, active, pick, hasClients } = usePlatformPicker(data);
   const pages = readingOrder(data.manifest, data.collection, view);
   const first = pages[0];
@@ -237,8 +239,17 @@ function BookCover({
 
   return (
     <div className="h-full overflow-y-auto">
-      <div className="mx-auto max-w-3xl px-4 py-5 md:py-12">
-        <h1 className="text-xl font-bold md:text-3xl">{bookLabel}</h1>
+      {hero && (
+        <ShelfHero src={hero.src} title={bookLabel} position={hero.position} />
+      )}
+      <div
+        className={`mx-auto max-w-3xl px-4 ${
+          hero ? "py-4 md:py-8" : "py-5 md:py-12"
+        }`}
+      >
+        {!hero && (
+          <h1 className="text-xl font-bold md:text-3xl">{bookLabel}</h1>
+        )}
         {collection?.description && (
           <p className="mt-1.5 text-sm text-muted-foreground md:text-base">
             {collection.description}
