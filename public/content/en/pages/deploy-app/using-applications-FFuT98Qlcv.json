@@ -1,18 +1,18 @@
 {
   "schemaVersion": 1,
-  "id": "5d6ca81c-c79b-4aff-b76d-9815d68191f1",
-  "slug": "using-applications-CsobZMZ45Q",
+  "id": "1de2e49c-5756-4353-9231-8982bc3aadcd",
+  "slug": "using-applications-FFuT98Qlcv",
   "collection": "deploy-app",
   "locale": "en",
   "title": "Using applications",
   "breadcrumb": [
     "Platforms",
-    "Android",
+    "iOS",
     "User Guide",
     "Using applications"
   ],
-  "createdAt": "2025-12-06T09:39:40.929Z",
-  "updatedAt": "2026-06-13T22:25:14.378Z",
+  "createdAt": "2026-06-13T22:59:18.455Z",
+  "updatedAt": "2026-06-13T22:59:18.455Z",
   "headings": [],
   "blocks": [
     {

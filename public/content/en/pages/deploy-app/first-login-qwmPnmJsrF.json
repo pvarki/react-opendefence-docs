@@ -6,12 +6,13 @@
   "locale": "en",
   "title": "First Login",
   "breadcrumb": [
+    "Platforms",
     "Android",
     "Admin Guide",
     "First Login"
   ],
   "createdAt": "2025-10-06T07:06:34.809Z",
-  "updatedAt": "2026-02-25T07:33:17.264Z",
+  "updatedAt": "2026-06-13T22:33:32.026Z",
   "headings": [],
   "blocks": [
     {
@@ -21,7 +22,7 @@
         {
           "title": "Initial Access",
           "layout": "image-left",
-          "html": "<ul>\n<li>You should have the address to your Deploy App instance and a first admin code.</li>\n<li>Login with the code provided.</li>\n</ul>",
+          "html": "<p>For the first time, you access your Deploy App with a first-admin code.</p>\n<ul>\n<li>Your service operator should provide you with a link to your instance and a first admin code.</li>\n<li>Login with the code provided.\nRemember! First-admin codes are one-use only, so when using one, do complete the login flow. Else you have used the code and gained no access with it.</li>\n</ul>",
           "images": [
             {
               "src": "/content/images/en/attachments/11432f12e365f28d.webp",
@@ -33,7 +34,7 @@
         {
           "title": "Callsign",
           "layout": "image-left",
-          "html": "<ul>\n<li>Give yourself a callsign. This should be something only your organization can identify you with.</li>\n<li>It will be used across all services.</li>\n</ul>",
+          "html": "<p>As with standard user login, give yourself a callsign.</p>\n<ul>\n<li>This should be something your organization can identify you with.</li>\n<li>It will be used across all services.</li>\n</ul>",
           "images": [
             {
               "src": "/content/images/en/attachments/26fbe762461e7c63.webp",
@@ -44,7 +45,7 @@
         },
         {
           "title": "Instructions",
-          "layout": "image-left",
+          "layout": "image-bottom",
           "html": "<ul>\n<li>Deploy App has built in instructions to instruct users and highlight key features.</li>\n<li>This guide will go through certificate installation.</li>\n</ul>",
           "images": [
             {
@@ -57,7 +58,7 @@
         {
           "title": "Download the certificate",
           "layout": "image-left",
-          "html": "<ul>\n<li>This will act as your way to access the services.</li>\n</ul>",
+          "html": "<p>Unlike inviting users, using a first admin code will directly land you to downloading your client cert.</p>\n<ul>\n<li>This will act as your way to access the services.</li>\n<li>You do not need passwords with Deploy App, as the cert will be your ID.</li>\n</ul>",
           "images": [
             {
               "src": "/content/images/en/attachments/a44f44059bc33636.webp",
@@ -69,7 +70,7 @@
         {
           "title": "Install your certificate",
           "layout": "image-left",
-          "html": "<ul>\n<li>Your callsign acts as your password.</li>\n<li>Type it and press OK until you are back in Deploy App.</li>\n</ul>",
+          "html": "<p>With Android, installing the cert is straightforward.</p>\n<ul>\n<li>Your callsign acts as your password.</li>\n<li>Type it and press OK until you are back in Deploy App.</li>\n</ul>",
           "images": [
             {
               "src": "/content/images/en/attachments/9c6fb95f15899e24.webp",
@@ -79,7 +80,7 @@
           ]
         },
         {
-          "title": "Login the certificate",
+          "title": "Login with the certificate",
           "layout": "image-left",
           "html": "<ul>\n<li>Press \"Navigate with your key\".</li>\n<li>When prompted to choose a certificate, check that your callsign is selected and press \"Select\" to login.</li>\n</ul>",
           "images": [
@@ -93,7 +94,7 @@
         {
           "title": "Success",
           "layout": "image-left",
-          "html": "<ul>\n<li>Now you can start using apps as well as enrolling users.</li>\n<li>Deploy App shows you some instructions the first time, or you can look at the instructions on this wiki.</li>\n</ul>",
+          "html": "<ul>\n<li>Now you can start using apps as well as enrolling users.</li>\n<li>Deploy App shows you some instructions the first time.</li>\n</ul>",
           "images": [
             {
               "src": "/content/images/en/attachments/22ab69924bedd1aa.webp",

@@ -1,18 +1,18 @@
 {
   "schemaVersion": 1,
-  "id": "8f1a4118-406e-448d-9354-f029be2c9576",
-  "slug": "managing-users-V110s1QF2l",
+  "id": "e638313d-1814-4431-aea2-495e49ba5b63",
+  "slug": "managing-users-nWgFG3XzMv",
   "collection": "deploy-app",
   "locale": "en",
   "title": "Managing Users",
   "breadcrumb": [
     "Platforms",
-    "Android",
+    "iOS",
     "Admin Guide",
     "Managing Users"
   ],
-  "createdAt": "2025-12-06T09:38:19.326Z",
-  "updatedAt": "2026-06-13T22:42:56.425Z",
+  "createdAt": "2026-06-13T22:59:19.817Z",
+  "updatedAt": "2026-06-13T22:59:19.817Z",
   "headings": [],
   "blocks": [
     {

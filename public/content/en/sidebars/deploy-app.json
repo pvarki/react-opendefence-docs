@@ -69,53 +69,59 @@
     },
     {
       "type": "group",
-      "id": "user-guide-8g9rzhpxcj",
+      "id": "user-guide-aRTF5enbWV",
       "label": "User Guide",
       "clientId": "ios-8ux4fDfFeI",
       "children": [
         {
           "type": "doc",
-          "id": "join-a-deploy-app-f7TuSbNQId",
-          "label": "Join a Deploy App",
-          "slug": "join-a-deploy-app-f7TuSbNQId"
+          "id": "joining-a-deploy-app-A7hCnp5D1b",
+          "label": "Joining a Deploy App",
+          "slug": "joining-a-deploy-app-A7hCnp5D1b"
         },
         {
           "type": "doc",
-          "id": "using-applications-fNlwcUs5fv",
+          "id": "using-applications-FFuT98Qlcv",
           "label": "Using applications",
-          "slug": "using-applications-fNlwcUs5fv"
+          "slug": "using-applications-FFuT98Qlcv"
+        },
+        {
+          "type": "doc",
+          "id": "interface-pyG1Ln1MfU",
+          "label": "Interface",
+          "slug": "interface-pyG1Ln1MfU"
         }
       ]
     },
     {
       "type": "group",
-      "id": "admin-guide-H0sjVgEhja",
+      "id": "admin-guide-mVE2SN7j33",
       "label": "Admin Guide",
       "clientId": "ios-8ux4fDfFeI",
       "children": [
         {
           "type": "doc",
-          "id": "admin-first-login-pij4XWfCWf",
-          "label": "Admin First Login",
-          "slug": "admin-first-login-pij4XWfCWf"
+          "id": "first-login-oKodQDb6I1",
+          "label": "First Login",
+          "slug": "first-login-oKodQDb6I1"
         },
         {
           "type": "doc",
-          "id": "add-users-to-deploy-app-LiZ7mcZXR9",
-          "label": "Add users to Deploy App",
-          "slug": "add-users-to-deploy-app-LiZ7mcZXR9"
+          "id": "adding-users-LKw6wrsELi",
+          "label": "Adding Users",
+          "slug": "adding-users-LKw6wrsELi"
         },
         {
           "type": "doc",
-          "id": "manage-users-in-deploy-app-pMXvqxrFQn",
-          "label": "Manage Users in Deploy App",
-          "slug": "manage-users-in-deploy-app-pMXvqxrFQn"
+          "id": "managing-users-nWgFG3XzMv",
+          "label": "Managing Users",
+          "slug": "managing-users-nWgFG3XzMv"
         },
         {
           "type": "doc",
-          "id": "troubleshooting-CxXaxweQeg",
-          "label": "Troubleshooting",
-          "slug": "troubleshooting-CxXaxweQeg"
+          "id": "access-external-services-wQy9bpe1aE",
+          "label": "Access External Services",
+          "slug": "access-external-services-wQy9bpe1aE"
         }
       ]
     },
@@ -130,12 +136,6 @@
           "id": "join-a-deploy-app-Ns73TcVodz",
           "label": "Join a Deploy App",
           "slug": "join-a-deploy-app-Ns73TcVodz"
-        },
-        {
-          "type": "doc",
-          "id": "using-applications-j9IwlemcTo",
-          "label": "Using applications",
-          "slug": "using-applications-j9IwlemcTo"
         }
       ]
     },
@@ -150,128 +150,6 @@
           "id": "admin-first-login-1wjrnFERNt",
           "label": "Admin First Login",
           "slug": "admin-first-login-1wjrnFERNt"
-        },
-        {
-          "type": "doc",
-          "id": "add-users-to-deploy-app-eSD3JH0iqL",
-          "label": "Add users to Deploy App",
-          "slug": "add-users-to-deploy-app-eSD3JH0iqL"
-        },
-        {
-          "type": "doc",
-          "id": "manage-users-in-deploy-app-NtJmpwczVJ",
-          "label": "Manage Users in Deploy App",
-          "slug": "manage-users-in-deploy-app-NtJmpwczVJ"
-        },
-        {
-          "type": "doc",
-          "id": "troubleshooting-TBvhuT5rIM",
-          "label": "Troubleshooting",
-          "slug": "troubleshooting-TBvhuT5rIM"
-        }
-      ]
-    },
-    {
-      "type": "group",
-      "id": "user-guide-6StTnmEqiQ",
-      "label": "User Guide",
-      "clientId": "linux-JmHAcb7bTi",
-      "children": [
-        {
-          "type": "doc",
-          "id": "join-a-deploy-app-BFVDjvnboR",
-          "label": "Join a Deploy App",
-          "slug": "join-a-deploy-app-BFVDjvnboR"
-        },
-        {
-          "type": "doc",
-          "id": "using-applications-NYYhktcNaX",
-          "label": "Using applications",
-          "slug": "using-applications-NYYhktcNaX"
-        }
-      ]
-    },
-    {
-      "type": "group",
-      "id": "admin-guide-DA32dON96v",
-      "label": "Admin Guide",
-      "clientId": "linux-JmHAcb7bTi",
-      "children": [
-        {
-          "type": "doc",
-          "id": "admin-first-login-odAZzS2U6W",
-          "label": "Admin First Login",
-          "slug": "admin-first-login-odAZzS2U6W"
-        },
-        {
-          "type": "doc",
-          "id": "add-users-to-deploy-app-mnujIZSHKL",
-          "label": "Add users to Deploy App",
-          "slug": "add-users-to-deploy-app-mnujIZSHKL"
-        },
-        {
-          "type": "doc",
-          "id": "manage-users-in-deploy-app-GANaLUFNSQ",
-          "label": "Manage Users in Deploy App",
-          "slug": "manage-users-in-deploy-app-GANaLUFNSQ"
-        },
-        {
-          "type": "doc",
-          "id": "troubleshooting-Oo8uDQbEZi",
-          "label": "Troubleshooting",
-          "slug": "troubleshooting-Oo8uDQbEZi"
-        }
-      ]
-    },
-    {
-      "type": "group",
-      "id": "user-guide-yEohm3XLal",
-      "label": "User Guide",
-      "clientId": "macos-6fg0DsaF5B",
-      "children": [
-        {
-          "type": "doc",
-          "id": "join-a-deploy-app-OrrLFQhem6",
-          "label": "Join a Deploy App",
-          "slug": "join-a-deploy-app-OrrLFQhem6"
-        },
-        {
-          "type": "doc",
-          "id": "using-applications-VTXa01ztks",
-          "label": "Using applications",
-          "slug": "using-applications-VTXa01ztks"
-        }
-      ]
-    },
-    {
-      "type": "group",
-      "id": "admin-guide-Jf06VjsJzu",
-      "label": "Admin Guide",
-      "clientId": "macos-6fg0DsaF5B",
-      "children": [
-        {
-          "type": "doc",
-          "id": "admin-first-login-uvcV5pEinh",
-          "label": "Admin First Login",
-          "slug": "admin-first-login-uvcV5pEinh"
-        },
-        {
-          "type": "doc",
-          "id": "add-users-to-deploy-app-8Wa87CThza",
-          "label": "Add users to Deploy App",
-          "slug": "add-users-to-deploy-app-8Wa87CThza"
-        },
-        {
-          "type": "doc",
-          "id": "manage-users-in-deploy-app-ecR8K2nIeC",
-          "label": "Manage Users in Deploy App",
-          "slug": "manage-users-in-deploy-app-ecR8K2nIeC"
-        },
-        {
-          "type": "doc",
-          "id": "troubleshooting-adGWENRO1Q",
-          "label": "Troubleshooting",
-          "slug": "troubleshooting-adGWENRO1Q"
         }
       ]
     }
