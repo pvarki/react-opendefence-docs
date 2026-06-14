@@ -1,18 +1,18 @@
 {
   "schemaVersion": 1,
-  "id": "dd6f5149-2000-47ed-a5af-cec0ab003039",
-  "slug": "access-external-services-ohReBmQJiu",
+  "id": "5187ef22-afec-4526-aa70-8caf3bceadbe",
+  "slug": "access-external-services-wQy9bpe1aE",
   "collection": "deploy-app",
   "locale": "en",
   "title": "Access External Services",
   "breadcrumb": [
     "Platforms",
-    "Android",
+    "iOS",
     "Admin Guide",
     "Access External Services"
   ],
-  "createdAt": "2025-12-06T09:39:50.140Z",
-  "updatedAt": "2026-06-13T22:51:04.465Z",
+  "createdAt": "2026-06-13T22:59:19.762Z",
+  "updatedAt": "2026-06-13T22:59:19.762Z",
   "headings": [],
   "blocks": [
     {

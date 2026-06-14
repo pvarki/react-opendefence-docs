@@ -1,18 +1,18 @@
 {
   "schemaVersion": 1,
-  "id": "e7c97a4b-01e4-4937-93e9-f60581de1ac4",
-  "slug": "interface-4Ncp4affe9",
+  "id": "ddfac2d3-27c8-486f-a40f-71c1ea331b22",
+  "slug": "interface-pyG1Ln1MfU",
   "collection": "deploy-app",
   "locale": "en",
   "title": "Interface",
   "breadcrumb": [
     "Platforms",
-    "Android",
+    "iOS",
     "User Guide",
     "Interface"
   ],
-  "createdAt": "2026-02-16T13:49:18.045Z",
-  "updatedAt": "2026-06-13T22:26:08.125Z",
+  "createdAt": "2026-06-13T22:59:18.388Z",
+  "updatedAt": "2026-06-13T22:59:18.388Z",
   "headings": [],
   "blocks": [
     {

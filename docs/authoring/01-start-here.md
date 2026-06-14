@@ -105,6 +105,8 @@ though both run on Android.
 
 - Writing a step-by-step guide with screenshots? Read
   [Write a step guide](02-write-a-step-guide.md).
+- Want Claude to write the guide and publish it for you, screenshots and all?
+  Read [Draft a guide with Claude, push to Outline](06-claude-draft-to-outline.md).
 - Need a whole new collection? Read
   [Add a collection](03-add-a-collection.md).
 - Wondering when your edits go live? Read

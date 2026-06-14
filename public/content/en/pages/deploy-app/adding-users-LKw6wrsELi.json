@@ -1,18 +1,18 @@
 {
   "schemaVersion": 1,
-  "id": "2ca47d8d-0c6b-48c7-ae93-5d8143ab10bf",
-  "slug": "adding-users-GhHcn1knBJ",
+  "id": "8dd526a8-e5ec-476b-b805-b5e25880efa9",
+  "slug": "adding-users-LKw6wrsELi",
   "collection": "deploy-app",
   "locale": "en",
   "title": "Adding Users",
   "breadcrumb": [
     "Platforms",
-    "Android",
+    "iOS",
     "Admin Guide",
     "Adding Users"
   ],
-  "createdAt": "2025-10-06T07:06:43.695Z",
-  "updatedAt": "2026-06-13T22:41:10.211Z",
+  "createdAt": "2026-06-13T22:59:19.878Z",
+  "updatedAt": "2026-06-13T22:59:19.878Z",
   "headings": [],
   "blocks": [
     {

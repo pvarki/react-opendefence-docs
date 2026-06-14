@@ -1,0 +1,169 @@
+{
+  "schemaVersion": 1,
+  "id": "45d8e9f7-f154-4c6b-9eaa-cb37c5cb749d",
+  "slug": "first-login-oKodQDb6I1",
+  "collection": "deploy-app",
+  "locale": "en",
+  "title": "First Login",
+  "breadcrumb": [
+    "Platforms",
+    "iOS",
+    "Admin Guide",
+    "First Login"
+  ],
+  "createdAt": "2026-06-13T22:59:19.940Z",
+  "updatedAt": "2026-06-13T23:41:55.293Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Initial Access",
+          "layout": "image-left",
+          "html": "<p>For the first time, you access your Deploy App with a first-admin code.</p>\n<ul>\n<li>Your service operator should provide you with a link to your instance and a first admin code.</li>\n<li>Login with the code provided.\nRemember! First-admin codes are one-use only, so when using one, do complete the login flow. Else you have used the code and gained no access with it.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/11432f12e365f28d.webp",
+              "width": 2560,
+              "height": 5712
+            }
+          ]
+        },
+        {
+          "title": "Callsign",
+          "layout": "image-left",
+          "html": "<p>As with standard user login, give yourself a callsign.</p>\n<ul>\n<li>This should be something your organization can identify you with.</li>\n<li>It will be used across all services.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/26fbe762461e7c63.webp",
+              "width": 2560,
+              "height": 5712
+            }
+          ]
+        },
+        {
+          "title": "Instructions",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Deploy App has built in instructions to instruct users and highlight key features.</li>\n<li>This guide will go through certificate installation.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/1bf91f34810aec36.webp",
+              "width": 2561,
+              "height": 5712
+            }
+          ]
+        },
+        {
+          "title": "Download the certificate",
+          "layout": "image-left",
+          "html": "<p>Download your client certificate (mTLS) that is to be installed in your device.</p>\n<ul>\n<li>This will act as your way to access the services.</li>\n<li>You do not need passwords with Deploy App, as the cert will be your ID.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/5f4af02a9a230a03.webp",
+              "width": 1290,
+              "height": 2796
+            }
+          ]
+        },
+        {
+          "title": "Go to Settings",
+          "layout": "image-left",
+          "html": "<p>With iOS, you have to go to Settings to install the certificate.</p>\n<ul>\n<li>Look for Settings.</li>\n<li>Eg. swipe a bit upwards to bring up Search, then type Settings and tap the settings icon.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/398dbbd7142bcf32.webp",
+              "width": 1290,
+              "height": 2796
+            }
+          ]
+        },
+        {
+          "title": "Tap 'Profile Downloaded'",
+          "layout": "image-left",
+          "html": "<p>Because you just downloaded a cert, Settings notifies you of it.</p>\n<ul>\n<li>Press the 'Profile Downloaded' notification to install the cert.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/c905d16e044fd170.webp",
+              "width": 1290,
+              "height": 2796
+            }
+          ]
+        },
+        {
+          "title": "Tap Install",
+          "layout": "image-left",
+          "html": "<p>Hit <strong>Install</strong> from the top right of this popup.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/a92a3fff866069d6.webp",
+              "width": 1290,
+              "height": 2796
+            }
+          ]
+        },
+        {
+          "title": "Type your Passcode",
+          "layout": "image-left",
+          "html": "<p>In order to proceed, iOS asks for your device passcode.</p>\n<ul>\n<li>Type your passcode to continue.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/4c0f3f83b869addb.webp",
+              "width": 1290,
+              "height": 2796
+            }
+          ]
+        },
+        {
+          "title": "Acknowledge the Warning",
+          "layout": "image-left",
+          "html": "<p>iOS notifies you that this certificate is not signed by any Authority your phone already knows to trust.</p>\n<ul>\n<li>Acknowledge the warning (the signatory of this cert is your Deploy App server, eg. 'golden-monkey.example.com'.)</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/6031d4a541ad77bf.webp",
+              "width": 1290,
+              "height": 2796
+            }
+          ]
+        },
+        {
+          "title": "Type the Cert's Pass, always the callsign",
+          "layout": "image-left",
+          "html": "<p>You have to type the Cert's Password. This is always <strong>exactly same as your callsign.</strong></p>\n<ul>\n<li>The cert password bears no security meaning here.</li>\n<li>The password is only required due some password being mandatory for the cert filetype we use for compatibility reasons.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/80adff6535609c96.webp",
+              "width": 1290,
+              "height": 2796
+            }
+          ]
+        },
+        {
+          "title": "Success - Get Back to the Browser",
+          "layout": "image-left",
+          "html": "<p>iOS notifies you that the client cert is now installed to your device.</p>\n<ul>\n<li>Now you can go back to your browser.</li>\n<li>Your client cert persists in your device, so you cannot lose access to the server unless you are deleted (which invalidates your cert's access.)</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/486cd868e3cbd019.webp",
+              "width": 1290,
+              "height": 2796
+            }
+          ]
+        },
+        {
+          "title": "Hit Continue with Cert",
+          "layout": "image-left",
+          "html": "<p>Hitting the purple Continue with Cert button now will let you in to application.</p>\n<ul>\n<li>Caution: If you pressed that button before the cert is installed, you will get the mTLS failure error.</li>\n<li>To clear that error, close the browser by swiping up and swiping the browser away. Then navigate back to the server and hit Continue with Cert.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/7be0856bcc320b45.webp",
+              "width": 1290,
+              "height": 2796
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

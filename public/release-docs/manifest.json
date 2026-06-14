@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-13T10:01:52.415Z",
+  "generatedAt": "2026-06-13T23:49:08.754Z",
   "components": [
     {
       "id": "docker-rasenmaeher-integration",
@@ -23,13 +23,7 @@
       "id": "python-matrix-rmapi",
       "name": "Matrix Integration (example)",
       "repo": "pvarki/python-matrix-rmapi",
-      "releases": [
-        {
-          "file": "v1.1.2.json",
-          "tag": "v1.1.2",
-          "publishedAt": "2026-06-09T19:29:41Z"
-        }
-      ],
+      "releases": [],
       "changelogFile": "changelog.json"
     }
   ]
