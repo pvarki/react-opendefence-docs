@@ -1,9 +1,0 @@
-sequenceDiagram
-    actor F as Fighters
-    participant M as Messaging (GeoChat / Matrix)
-    participant OF as OBSERVATIONS Feed
-    participant CP as CP (HQ role)
-    F->>CP: Send marker to HQ role
-    F->>M: 1. Chat on COMMAND, RECON,<br/>BLUFOR & COMMON
-    F->>OF: 2. Recon observations<br/>(if applicable)
-    Note over CP: HQ interprets the marker &<br/>produces the curated feeds

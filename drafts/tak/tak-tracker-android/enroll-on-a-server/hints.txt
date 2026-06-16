@@ -1,5 +1,0 @@
-# Authoring notes — NOT published. One line per screenshot.
-# Source: TAK_Tracker_User_Guide.pdf (US TPC, v8.1.0), "Server Enrollment" p.5
-01: Enrollment window — Server / Port (def 8446) / Username / Password fields, ADVANCED + ENROLL buttons (p05-000)
-# Step 2 is text-led (no manual figure for it). IMAGE-LIGHT: swap in a branded
-# Android enrollment shot when available.

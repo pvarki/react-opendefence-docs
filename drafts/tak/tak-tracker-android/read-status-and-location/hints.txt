@@ -1,6 +1,0 @@
-# Authoring notes — NOT published. One line per screenshot.
-# Source: TAK_Tracker_User_Guide.pdf (US TPC, v8.1.0), "User Details" p.6
-01: Main window (landscape) — location, connection and the four data boxes (p06-000)
-02: Location box in DMS; tap to switch to MGRS (p06-001; MGRS variant is p06-002 if needed)
-03: Connection box — Server / GPS / Compass status (p06-003)
-04: Four data boxes — Altitude / Speed / Compass / Heading, tap to change units (p06-004)

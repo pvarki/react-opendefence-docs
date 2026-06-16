@@ -1,5 +1,0 @@
-# Authoring notes — NOT published. One line per screenshot.
-# Source: TAK_Tracker_User_Guide.pdf (US TPC, v8.1.0), "Options and Settings" p.8
-01: Connection Settings window — callsign / team color / role, enrollment, Service on Boot (p08-001)
-# Steps 2-3 are text-led. IMAGE-LIGHT: Lock + Import are tiny toolbar glyphs with
-# no usable standalone figure; swap in branded Android shots when available.
