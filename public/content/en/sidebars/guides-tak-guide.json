@@ -105,6 +105,18 @@
       "children": [
         {
           "type": "doc",
+          "id": "feed-timeline-view-Ykwnn1hgWm",
+          "label": "Feed Timeline View",
+          "slug": "feed-timeline-view-Ykwnn1hgWm"
+        },
+        {
+          "type": "doc",
+          "id": "add-to-work-a-feed-QUjMOBwISe",
+          "label": "Add to & Work a Feed",
+          "slug": "add-to-work-a-feed-QUjMOBwISe"
+        },
+        {
+          "type": "doc",
           "id": "create-manage-feeds-z2CpC9Lpan",
           "label": "Create & Manage Feeds",
           "slug": "create-manage-feeds-z2CpC9Lpan"

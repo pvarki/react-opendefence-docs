@@ -12,7 +12,7 @@
     "Feeds with Data Sync"
   ],
   "createdAt": "2025-12-05T22:06:22.487Z",
-  "updatedAt": "2026-06-16T10:03:23.324Z",
+  "updatedAt": "2026-06-16T18:02:29.472Z",
   "headings": [],
   "blocks": [
     {
@@ -118,6 +118,18 @@
               "src": "/content/images/en/attachments/29ac7189339d6a1c.webp",
               "width": 310,
               "height": 224
+            }
+          ]
+        },
+        {
+          "title": "Read the feed status colours",
+          "layout": "image-bottom",
+          "html": "<p>The coloured sync icon by each feed tells you its state at a glance:</p>\n<ul>\n<li><strong>Green</strong> — downloaded and up to date.</li>\n<li><strong>Yellow</strong> — connected but behind (e.g. a large file still to pull).</li>\n<li><strong>Grey</strong> — downloaded, but not checking for updates.</li>\n<li><strong>Red</strong> — downloaded, but you're offline; reconnect to sync.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/99fe9ba85772009b.webp",
+              "width": 800,
+              "height": 664
             }
           ]
         }

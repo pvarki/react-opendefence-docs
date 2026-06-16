@@ -28,3 +28,5 @@ pnpm-debug.log*
 backups/
 .prettier_cache
 .tanstack/
+/drafts
+scripts/author/push-kotlin-page.ts
