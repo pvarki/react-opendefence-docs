@@ -6,19 +6,49 @@
   "locale": "en",
   "title": "Get alerts with Geofences",
   "breadcrumb": [
-    "TAK Clients",
+    "Platforms",
     "WinTAK",
+    "USING WINTAK FEATURES",
     "Advanced Features",
     "Get alerts with Geofences"
   ],
   "createdAt": "2025-12-05T22:05:59.131Z",
-  "updatedAt": "2026-02-22T13:49:02.702Z",
+  "updatedAt": "2026-06-15T13:52:59.404Z",
   "headings": [],
   "blocks": [
     {
-      "type": "code",
-      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#ABB2BF\">(</span><span style=\"color:#E06C75\">This</span><span style=\"color:#E06C75\"> tab</span><span style=\"color:#E06C75\"> should</span><span style=\"color:#E06C75\"> not</span><span style=\"color:#E06C75\"> be</span><span style=\"color:#E06C75\"> shown</span><span style=\"color:#ABB2BF\">)</span></span></code></pre>",
-      "lang": "javascript"
+      "type": "html",
+      "html": "<p>A geofence is a boundary you draw on the map that raises an alert when something crosses it — so you can watch an area without staring at the screen.</p>\n<blockquote>\n<p>Draft: written without screenshots. Add WinTAK geofence screenshots when available.</p>\n</blockquote>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "What a geofence does",
+          "layout": "text",
+          "html": "<p>A geofence monitors a shape on the map and notifies you when a tracked entity <strong>enters</strong> or <strong>exits</strong> it. Use it to watch an avenue of approach, a boundary, or a no-go area.</p>",
+          "images": []
+        },
+        {
+          "title": "Create a geofence",
+          "layout": "text",
+          "html": "<p>Draw an <strong>area</strong> (circle or polygon) with the drawing tools, then turn it into a geofence from its options. The geofence is tied to that shape.</p>",
+          "images": []
+        },
+        {
+          "title": "Set the alert conditions",
+          "layout": "text",
+          "html": "<p>Choose what triggers the alert — entering and/or exiting — and which entities to monitor (for example hostile or unknown tracks). Tune it so you get useful alerts, not noise.</p>",
+          "images": []
+        },
+        {
+          "title": "Receive alerts",
+          "layout": "text",
+          "html": "<p>When the condition is met, WinTAK alerts you and highlights the crossing on the map. Acknowledge it, assess, and report through the RECON feed or your messaging tools as appropriate.</p>",
+          "images": []
+        }
+      ]
     }
   ]
 }

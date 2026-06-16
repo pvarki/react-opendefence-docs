@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "8d43d4ff-6ddd-4423-806f-783b70e532c0",
+  "slug": "best-practices-ci-library-axlX8ORNt2",
+  "collection": "develop-deploy-app",
+  "locale": "en",
+  "title": "Best practices & CI library",
+  "breadcrumb": [
+    "Best practices & CI library"
+  ],
+  "createdAt": "2026-06-16T16:46:50.282Z",
+  "updatedAt": "2026-06-16T16:53:50.443Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Best practices",
+      "id": "best-practices"
+    },
+    {
+      "depth": 2,
+      "text": "CI templates",
+      "id": "ci-templates"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<h2 id=\"best-practices\"><a href=\"#best-practices\">Best practices</a></h2>\n<p>When developing core Deploy App, as well as if you want your product integration to ship into our official delivery, you must follow our <a>best practices</a>.</p>\n<h2 id=\"ci-templates\"><a href=\"#ci-templates\">CI templates</a></h2>\n<p>We recommend and with our core components &#x26; official product integrations, require you to follow our <a>CI standards</a>. The CI standards are written as a reusable library so you can instantly start utilizing them. It makes it easy to start using tools like proper pre-commit, versioning, and github actions-based runs, in order to deliver your code quality to the standards.</p>"
+    }
+  ]
+}

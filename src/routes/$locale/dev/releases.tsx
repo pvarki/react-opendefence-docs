@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { createFileRoute } from "@tanstack/react-router";
+import { useTranslation } from "react-i18next";
 import { Tag } from "lucide-react";
 import {
   Select,
@@ -95,6 +96,7 @@ function useDocHtml(file: string | undefined): {
 }
 
 function ReleasesPage() {
+  const { t } = useTranslation();
   const manifest = Route.useLoaderData();
   const search = Route.useSearch();
   const components = manifest.components.filter(hasContent);
@@ -109,10 +111,10 @@ function ReleasesPage() {
     return (
       <div className="h-full overflow-y-auto">
         <div className="mx-auto max-w-3xl px-4 py-8">
-          <h1 className="text-2xl font-bold">Releases</h1>
+          <h1 className="text-2xl font-bold">{t("releases.title")}</h1>
           <div className="mt-6 flex items-center gap-3 rounded-lg border border-border bg-card px-4 py-6 text-muted-foreground">
             <Tag className="size-5 text-primary" />
-            No releases have been synced yet.
+            {t("releases.empty")}
           </div>
         </div>
       </div>
@@ -122,7 +124,7 @@ function ReleasesPage() {
   return (
     <div className="flex h-full flex-col">
       <div className="flex shrink-0 flex-wrap items-center gap-2 border-b border-border px-4 py-2">
-        <h1 className="mr-2 text-sm font-semibold">Releases</h1>
+        <h1 className="mr-2 text-sm font-semibold">{t("releases.title")}</h1>
         {components.length > 1 && (
           <Select value={active.id} onValueChange={setCompId}>
             <SelectTrigger size="sm" className="w-72">
@@ -155,15 +157,16 @@ function ComponentReleases({
   component: ReleaseDocComponent;
   initialTab?: TabKey;
 }) {
+  const { t } = useTranslation();
   const tabs: { key: TabKey; label: string }[] = [
     ...(component.releases.length > 0
-      ? [{ key: "releases" as const, label: "Release notes" }]
+      ? [{ key: "releases" as const, label: t("releases.releaseNotes") }]
       : []),
     ...(component.releaseNotesFile
-      ? [{ key: "notes" as const, label: "Notes" }]
+      ? [{ key: "notes" as const, label: t("releases.notes") }]
       : []),
     ...(component.changelogFile
-      ? [{ key: "changelog" as const, label: "Changelog" }]
+      ? [{ key: "changelog" as const, label: t("releases.changelog") }]
       : []),
   ];
   const [tab, setTab] = useState<TabKey>(
@@ -231,7 +234,7 @@ function ComponentReleases({
               <HtmlBlock html={html} />
             ) : (
               <p className="text-sm text-muted-foreground">
-                Nothing to show here yet.
+                {t("releases.nothingYet")}
               </p>
             )}
           </div>

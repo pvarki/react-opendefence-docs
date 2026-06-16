@@ -57,13 +57,12 @@ function AdvancedShelf() {
 
 /** Advanced-page footer, styled like the Guides and Develop footers. */
 function AdvancedFooter() {
+  const { t } = useTranslation();
   return (
     <footer className="mt-4 border-t border-border bg-card md:mt-8">
       <div className="mx-auto max-w-3xl px-4 py-6 md:py-10">
         <p className="text-sm leading-relaxed text-foreground">
-          These wikis provide advanced information about products that aim to
-          deepen your understanding on them and their capabilities. They are
-          developed by our community senior experts.
+          {t("advancedFooter.lead")}
         </p>
       </div>
     </footer>

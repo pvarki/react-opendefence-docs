@@ -6,25 +6,15 @@
   "locale": "en",
   "title": "Start from Download",
   "breadcrumb": [
-    "TAK Clients",
+    "Platforms",
     "iTAK",
     "Start",
     "Start from Download"
   ],
   "createdAt": "2025-12-05T22:06:11.383Z",
-  "updatedAt": "2026-02-20T22:12:29.976Z",
-  "headings": [
-    {
-      "depth": 2,
-      "text": "Install and open iTAK for initialization",
-      "id": "install-and-open-itak-for-initialization"
-    }
-  ],
+  "updatedAt": "2026-06-16T10:58:01.341Z",
+  "headings": [],
   "blocks": [
-    {
-      "type": "html",
-      "html": "<h2 id=\"install-and-open-itak-for-initialization\"><a href=\"#install-and-open-itak-for-initialization\">Install and open iTAK for initialization</a></h2>"
-    },
     {
       "type": "slideset",
       "source": "legacy",

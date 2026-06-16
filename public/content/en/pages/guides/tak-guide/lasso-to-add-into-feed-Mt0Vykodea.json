@@ -6,13 +6,14 @@
   "locale": "en",
   "title": "Lasso to add into Feed",
   "breadcrumb": [
-    "TAK Clients",
+    "Platforms",
     "ATAK",
+    "USING ATAK FEATURES",
     "Advanced Features",
     "Lasso to add into Feed"
   ],
   "createdAt": "2026-01-24T23:29:40.977Z",
-  "updatedAt": "2026-02-28T11:13:49.510Z",
+  "updatedAt": "2026-06-14T12:14:27.795Z",
   "headings": [],
   "blocks": [
     {
@@ -34,7 +35,7 @@
         {
           "title": "Select Lasso",
           "layout": "image-bottom",
-          "html": "<ul>\n<li>Select Lasso from the main toolbar.</li>\n<li>If your main toolbar lacks Lasso, tap the yellow pen icon to find and enable it.</li>\n</ul>",
+          "html": "<ul>\n<li>Select <strong>Lasso</strong> from the main toolbar.</li>\n<li>If your main toolbar lacks Lasso, tap the yellow pen icon to find and enable it.</li>\n</ul>",
           "images": [
             {
               "src": "/content/images/en/attachments/88424a3e47d76a8e.webp",
@@ -58,7 +59,7 @@
         {
           "title": "What to Include?",
           "layout": "image-bottom",
-          "html": "<ul>\n<li>Lasso asks you what to include.</li>\n<li>In this example we select Markers as we have already sent the shape to the target feed.</li>\n</ul>",
+          "html": "<ul>\n<li>Lasso asks you what to include.</li>\n<li>In this example we select Markers, as we have already sent that shape to the target feed.</li>\n</ul>",
           "images": [
             {
               "src": "/content/images/en/attachments/9509cf3e03322baa.webp",
@@ -94,7 +95,7 @@
         {
           "title": "List of Feeds",
           "layout": "image-bottom",
-          "html": "<ul>\n<li>Feeds that you have subscribed &#x26; you can write to, are listed.</li>\n<li>In this example, we have lasso'd the FRAGO3's plan drawing, so we send it to its feed.</li>\n</ul>",
+          "html": "<ul>\n<li>Feeds that you have subscribed &#x26; you can write to, are listed.</li>\n<li>In this example, we have lasso'd the FRAGO3's plan drawing, so we send it to its feed.</li>\n<li>Your markers &#x26; drawings are now shared via a Feed.</li>\n</ul>",
           "images": [
             {
               "src": "/content/images/en/attachments/ae82441be003c278.webp",
@@ -102,12 +103,6 @@
               "height": 1080
             }
           ]
-        },
-        {
-          "title": "Done!",
-          "layout": "text",
-          "html": "<p>Your markers &#x26; drawings are now shared via a Feed.</p>",
-          "images": []
         }
       ]
     }

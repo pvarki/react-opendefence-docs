@@ -17,9 +17,15 @@
     },
     {
       "type": "doc",
-      "id": "testing-ci-conventions-rhTvWtij7I",
-      "label": "Testing & CI conventions",
-      "slug": "testing-ci-conventions-rhTvWtij7I"
+      "id": "testing-conventions-rhTvWtij7I",
+      "label": "Testing conventions",
+      "slug": "testing-conventions-rhTvWtij7I"
+    },
+    {
+      "type": "doc",
+      "id": "best-practices-ci-library-axlX8ORNt2",
+      "label": "Best practices & CI library",
+      "slug": "best-practices-ci-library-axlX8ORNt2"
     },
     {
       "type": "group",

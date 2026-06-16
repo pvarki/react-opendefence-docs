@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "id": "aa857e7b-8a17-4573-b2cf-6aac3a3f6d37",
+  "slug": "build-a-custom-report-template-VVphDLVbW3",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "Build a Custom Report Template",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "Supported Plugins",
+    "Reports",
+    "Build a Custom Report Template"
+  ],
+  "createdAt": "2026-06-15T19:50:39.995Z",
+  "updatedAt": "2026-06-15T19:50:39.995Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Make your own report form so the fields match what your team actually needs to send.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Open the Editor",
+          "layout": "image-bottom",
+          "html": "<p>From the Reports Panel, tap <strong>Editor</strong>. This opens a new blank template you can build from scratch.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/9d58fe854259f743.webp",
+              "width": 422,
+              "height": 51
+            }
+          ]
+        },
+        {
+          "title": "Start a blank template",
+          "layout": "image-bottom",
+          "html": "<p>The blank template starts with a title and a <strong>+</strong> button. Tap <strong>+</strong> to add your first field.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/47198f8f30669ace.webp",
+              "width": 800,
+              "height": 297
+            }
+          ]
+        },
+        {
+          "title": "Pick a field type",
+          "layout": "image-bottom",
+          "html": "<p>Choose the field type you need from the list, for example <strong>Section</strong>, <strong>Text Field</strong>, <strong>Location Field</strong> or <strong>Dropdown List(Single Selection)</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/369bee9569c31724.webp",
+              "width": 693,
+              "height": 752
+            }
+          ]
+        },
+        {
+          "title": "Add and arrange fields",
+          "layout": "image-bottom",
+          "html": "<p>Each field gets a <strong>Field Title</strong> and a <strong>Required</strong> toggle. Tap <strong>+</strong> again to keep adding fields until the report is complete.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/5f44caa28e2bb318.webp",
+              "width": 800,
+              "height": 387
+            }
+          ]
+        },
+        {
+          "title": "Save, export or import",
+          "layout": "image-bottom",
+          "html": "<p>Tap the three-dot menu, then:</p>\n<ul>\n<li><strong>Save Template</strong> to store it for use</li>\n<li><strong>Export Template</strong> to share it as an XML file</li>\n<li><strong>Import Template</strong> to load an XML template someone sent you</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/5ec261548ffe0e93.webp",
+              "width": 800,
+              "height": 654
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

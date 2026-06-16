@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "id": "4b3dca08-a641-49e0-be67-22e057e403a4",
+  "slug": "load-plugins-finish-setup-xa2huv9Wmn",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "Load Plugins & Finish Setup",
+  "breadcrumb": [
+    "Platforms",
+    "WinTAK",
+    "START & CONNECT",
+    "Load Plugins & Finish Setup"
+  ],
+  "createdAt": "2026-06-14T14:30:40.979Z",
+  "updatedAt": "2026-06-16T10:55:57.533Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Finish the Device Setup Wizard by enabling the Data Sync plugin and elevation data, then review your preferences and set the measurement units.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Install the Data Sync plugin",
+          "layout": "image-bottom",
+          "html": "<p>The application asks whether to install plugins. Select <strong>DataSync</strong> and press <strong>OK</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/029f11bf3e10f495.webp",
+              "width": 428,
+              "height": 168
+            }
+          ]
+        },
+        {
+          "title": "Download elevation data (DTED-0)",
+          "layout": "image-bottom",
+          "html": "<p>WinTAK then asks whether to download DTED-0 elevation models automatically. Select <strong>Yes</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/88039349514be5fe.webp",
+              "width": 428,
+              "height": 194
+            }
+          ]
+        },
+        {
+          "title": "Review My Preferences",
+          "layout": "image-bottom",
+          "html": "<p>The basic setup is done — check <strong>My Preferences</strong>. Your <strong>Callsign</strong>, team colour (<strong>My Team</strong>) and role (<strong>My Role</strong>) should match what you were assigned, and <strong>My Display Type</strong> should be <strong>Ground</strong>.</p>\n<p>If you are a command post user, your role should be <strong>HQ</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/3e80491a5937ce95.webp",
+              "width": 408,
+              "height": 428
+            }
+          ]
+        },
+        {
+          "title": "Check the TAK Network Status",
+          "layout": "image-bottom",
+          "html": "<p>Check the <strong>TAK Network Status</strong>: a green cloud means the server connection is OK, red means disconnected. If it stays red, check your internet connection and restart WinTAK (see Troubleshooting).</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/047e001151462738.webp",
+              "width": 228,
+              "height": 48
+            }
+          ]
+        },
+        {
+          "title": "Open unit settings",
+          "layout": "image-bottom",
+          "html": "<p>Now set the measurement units. Press the <strong>hamburger menu</strong> (three stacked lines) in the top-left corner, then select <strong>Settings</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/505604de49718539.webp",
+              "width": 162,
+              "height": 428
+            }
+          ]
+        },
+        {
+          "title": "Open Display Preferences",
+          "layout": "image-bottom",
+          "html": "<p>Select <strong>Display Preferences</strong>, then open <strong>Unit Display Format Preferences</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/8caa66e01ac7ab6d.webp",
+              "width": 426,
+              "height": 428
+            }
+          ]
+        },
+        {
+          "title": "Set the unit format",
+          "layout": "image-bottom",
+          "html": "<p>Check that the unit settings match the picture, and change them if necessary.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/8b7b8a374e2bf818.webp",
+              "width": 428,
+              "height": 156
+            }
+          ]
+        },
+        {
+          "title": "WinTAK is set up",
+          "layout": "image-bottom",
+          "html": "<p>WinTAK is now set up. The usage guide following the standard model is under <strong>Usage by Role</strong> — and on this Deploy App's front-page menu under <strong>Usage</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/7004acd42562d400.webp",
+              "width": 338,
+              "height": 682
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

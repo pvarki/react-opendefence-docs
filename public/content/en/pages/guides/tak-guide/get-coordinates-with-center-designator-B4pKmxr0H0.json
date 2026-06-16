@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "id": "a91b4b3c-9288-4e9d-8368-50ff8d1015c6",
+  "slug": "get-coordinates-with-center-designator-B4pKmxr0H0",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "Get Coordinates with Center Designator",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "ADDITIONAL FEATURES",
+    "Navigation & Coordinates",
+    "Get Coordinates with Center Designator"
+  ],
+  "createdAt": "2026-06-15T19:39:47.401Z",
+  "updatedAt": "2026-06-15T20:53:47.228Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Turn on the Center Designator to read the exact coordinates and elevation under the middle of your map.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Enable Center Designator",
+          "layout": "image-bottom",
+          "html": "<p>Open <strong>Overlay Manager</strong>, then <strong>Other Overlays</strong>. Tap the eye icon next to <strong>Center Designator</strong> to turn it on.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/f28caa1685cb737c.webp",
+              "width": 400,
+              "height": 191
+            }
+          ]
+        },
+        {
+          "title": "Read coordinates at map centre",
+          "layout": "image-bottom",
+          "html": "<p>The readout chip in the lower-left now shows the coordinates and elevation at the map centre. Pan the map to read any point.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/ac247a9aa8e49a30.webp",
+              "width": 400,
+              "height": 194
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

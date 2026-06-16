@@ -24,7 +24,11 @@ import "dotenv/config";
 import path from "node:path";
 import { pathToFileURL } from "node:url";
 
-import { API_SPEC_SOURCES, type ApiSpecSource } from "../config/collections";
+import {
+  API_SPEC_SOURCES,
+  type ApiSpecSource,
+  type SpecOverlay,
+} from "../config/collections";
 import { writeJson } from "./lib/sync-helpers";
 
 const DEFAULT_MAX_VERSIONS = 5;
@@ -70,6 +74,30 @@ function safeTag(tag: string): string {
   return tag.replace(/[^A-Za-z0-9._-]/g, "-");
 }
 
+/**
+ * Re-apply a source's cosmetic overlay (title/description/servers) to a spec.
+ *
+ * Upstream FastAPI specs ship `info.title` = "FastAPI", no `info.description`
+ * and no `servers[]`, so the embedded reference would read "FastAPI 1.4.0" with
+ * no overview or base URL. Running this on every fetch means re-syncing can't
+ * revert the branding. Mutates and returns `spec`; non-object specs and a
+ * missing overlay pass through untouched.
+ */
+export function applyOverlay(spec: unknown, overlay?: SpecOverlay): unknown {
+  if (!overlay || typeof spec !== "object" || spec === null) return spec;
+  const s = spec as Record<string, unknown>;
+
+  if (overlay.title || overlay.description) {
+    if (typeof s.info !== "object" || s.info === null) s.info = {};
+    const info = s.info as Record<string, unknown>;
+    if (overlay.title) info.title = overlay.title;
+    if (overlay.description) info.description = overlay.description;
+  }
+  if (overlay.servers) s.servers = overlay.servers;
+
+  return s;
+}
+
 // Download + parse a spec; returns undefined (with a warning) on any failure.
 async function downloadSpec(
   url: string,
@@ -106,6 +134,7 @@ async function fetchGhPagesSource(
   const spec = await downloadSpec(source.url, fetchImpl);
   if (spec === undefined) return [];
 
+  applyOverlay(spec, source.overlay);
   await writeJson(path.join(outDir, source.id, "latest.json"), spec);
 
   // Some generators stamp the spec; surface it as publishedAt when present.
@@ -184,6 +213,7 @@ async function fetchReleaseAssetsSource(
     );
     if (spec === undefined) continue;
 
+    applyOverlay(spec, source.overlay);
     const specFile = `${safeTag(release.tag_name)}.json`;
     await writeJson(path.join(outDir, source.id, specFile), spec);
     versions.push({

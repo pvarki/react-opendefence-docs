@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "id": "8c95a34d-9d55-4568-97c8-597670b7de06",
+  "slug": "point-dropper-add-markers-wwYK8iDf5w",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "Point Dropper - add markers",
+  "breadcrumb": [
+    "Platforms",
+    "WinTAK",
+    "USING WINTAK FEATURES",
+    "Basic Features",
+    "Point Dropper - add markers"
+  ],
+  "createdAt": "2025-12-05T22:05:59.482Z",
+  "updatedAt": "2026-06-15T13:52:40.858Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Create Markers",
+          "layout": "text",
+          "html": "<ul>\n<li>When you need to create information on the map and share it with other users, the basic tool for this is Point Dropper.</li>\n<li>With Point Dropper you can add tactical markings to the map.</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "1. Point Dropper",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Activate Point Dropper</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/e06306a28b9a837d.webp",
+              "width": 150,
+              "height": 86
+            }
+          ]
+        },
+        {
+          "title": "2. Markers",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Select markers or icons you want to use</li>\n<li>By default, tactical icons are what you need</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/7ba80f9c6b6d5e0a.webp",
+              "width": 350,
+              "height": 228
+            }
+          ]
+        },
+        {
+          "title": "3. Add Marker",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Select a marker you want to use</li>\n<li>Zoom the map and find the location where you want to add a marker</li>\n<li>Click on the map to add a marking.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/bb713e3d37e6dc4d.webp",
+              "width": 1243,
+              "height": 279
+            }
+          ]
+        },
+        {
+          "title": "Stop Adding Markers",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Deselect the icon on the right to stop adding new markings to the map.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/5984039ec61503be.webp",
+              "width": 568,
+              "height": 310
+            }
+          ]
+        },
+        {
+          "title": "Edit Marker Details",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>To edit an added marker, click the marker</li>\n<li>Radial Menu opens</li>\n<li>Select the \"Detail\" radial submenu</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/09b2aa65bab569df.webp",
+              "width": 315,
+              "height": 309
+            }
+          ]
+        },
+        {
+          "title": "Marker Details Menu",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Things to edit</li>\n<li>Type: Edit type, for example edit to infantry</li>\n<li>Remarks: Add your own information about the marker / situation</li>\n<li>Add Attachments</li>\n<li>Send Marker</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/b0906938c547f776.webp",
+              "width": 345,
+              "height": 852
+            }
+          ]
+        },
+        {
+          "title": "Edit Marker Type",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>You can get into the type editing by clicking the Type field</li>\n<li>Navigate between different types by using More and the back arrow.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/197326b7194d66d7.webp",
+              "width": 446,
+              "height": 387
+            }
+          ]
+        },
+        {
+          "title": "Edit Marker Remarks",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Click the remark field to add text</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/00d36894acac1733.webp",
+              "width": 346,
+              "height": 48
+            }
+          ]
+        },
+        {
+          "title": "Add Attachments to a Marker",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Click the paperclip icon to open Attachments</li>\n<li>Add attachments through the + sign</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/04316090ef4c9167.webp",
+              "width": 343,
+              "height": 205
+            }
+          ]
+        },
+        {
+          "title": "Send Marker",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>You can send a marker to:</li>\n<li>Single user</li>\n<li>Group</li>\n<li>Team</li>\n<li>Data Sync feed</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/a7ddaeecd254ed90.webp",
+              "width": 349,
+              "height": 280
+            }
+          ]
+        },
+        {
+          "title": "Other Functions for a Marker",
+          "layout": "text",
+          "html": "<ul>\n<li>Through the radial submenus you can perform the following important actions on a marker:</li>\n<li>Delete</li>\n<li>Change location</li>\n<li>Measure</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "Done",
+          "layout": "text",
+          "html": "<ul>\n<li>You can close this guide.</li>\n</ul>\n<hr>",
+          "images": []
+        }
+      ]
+    }
+  ]
+}

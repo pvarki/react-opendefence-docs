@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "id": "4015bdff-290b-4574-891e-6ee6b80a6628",
+  "slug": "import-files-remote-resources-yjaTiWVKHl",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "Import Files & Remote Resources",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "ADDITIONAL FEATURES",
+    "Elevation, Terrain & Map Tools",
+    "Import Files & Remote Resources"
+  ],
+  "createdAt": "2026-06-15T19:44:13.035Z",
+  "updatedAt": "2026-06-15T21:18:58.658Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Pull maps, imagery and data packages into ATAK from your device, or hook up a network link that refreshes itself.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Open Import and pick a source",
+          "layout": "image-bottom",
+          "html": "<p>Tap the <strong>Import</strong> icon. In the <strong>Select Import Type</strong> window choose <strong>Local SD</strong>, <strong>Gallery</strong>, <strong>KML Link</strong>, <strong>HTTP URL</strong> or <strong>Choose App</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/03949903f00012bc.webp",
+              "width": 232,
+              "height": 92
+            }
+          ]
+        },
+        {
+          "title": "Import from device storage",
+          "layout": "image-bottom",
+          "html": "<p>Pick <strong>Local SD</strong>, browse to the file and tap <strong>OK</strong>. ATAK takes config, data packages, elevation data, imagery and overlays; some types prompt you to choose the handler.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/fb7955722d5c042f.webp",
+              "width": 186,
+              "height": 103
+            }
+          ]
+        },
+        {
+          "title": "Choose an import strategy",
+          "layout": "image-bottom",
+          "html": "<p>Tell ATAK how to handle the file. <strong>Copy</strong> duplicates it into the ATAK directory, <strong>Move</strong> relocates it, and <strong>Use in Place</strong> leaves it where it is.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/3d724c2ac23016fc.webp",
+              "width": 224,
+              "height": 118
+            }
+          ]
+        },
+        {
+          "title": "Add a network link resource",
+          "layout": "image-bottom",
+          "html": "<p>Pick <strong>KML Link</strong> or <strong>HTTP URL</strong>, enter a <strong>Name</strong> and the <strong>URL</strong>, set a refresh interval, then tap <strong>Add</strong>. The link can auto-refresh and clear local content on shutdown.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/148f6d8f61edf0fc.webp",
+              "width": 248,
+              "height": 150
+            }
+          ]
+        },
+        {
+          "title": "Download and track remote resources",
+          "layout": "image-bottom",
+          "html": "<p>Added links appear under <strong>Remote Resources</strong> in Overlay Manager. A red dot means not yet downloaded; tap <strong>Download</strong> to fetch it. Green means it is in and up to date.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/17744d1ab1f41071.webp",
+              "width": 248,
+              "height": 109
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

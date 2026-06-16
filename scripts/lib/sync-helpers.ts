@@ -191,6 +191,7 @@ export function buildBookManifestPages(
       order: pages.length,
       ...(hidden ? { hidden: true } : {}),
       ...(ref.platform ? { platform: ref.platform } : {}),
+      ...(ref.platforms ? { platforms: ref.platforms } : {}),
       ...(ref.clientId ? { clientId: ref.clientId } : {}),
       ...(ref.chapterId
         ? { chapterId: ref.chapterId, chapterLabel: ref.chapterLabel }

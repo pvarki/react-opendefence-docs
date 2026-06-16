@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "id": "738081cb-3906-4aee-bd2b-8635ac74285d",
+  "slug": "resection-no-gps-location-YjW4JqiWQJ",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "Resection (No-GPS Location)",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "ADDITIONAL FEATURES",
+    "Navigation & Coordinates",
+    "Resection (No-GPS Location)"
+  ],
+  "createdAt": "2026-06-15T19:45:06.507Z",
+  "updatedAt": "2026-06-15T20:53:49.610Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>No GPS signal? Take bearings to two or more known landmarks and ATAK works out where you are.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Open the Resection Tool",
+          "layout": "image-bottom",
+          "html": "<p>Open the <strong>Resection Tool</strong>. The panel lists each landmark with its <strong>Location</strong> and <strong>Bearing</strong>, plus an empty <strong>Intersection</strong> field at the bottom.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/b97d072c0a27fd52.webp",
+              "width": 139,
+              "height": 112
+            }
+          ]
+        },
+        {
+          "title": "Drop a landmark and set its bearing",
+          "layout": "image-bottom",
+          "html": "<p>Stand still, face a landmark you can see on the map, and tap the point dropper icon to place it. A compass appears so you can adjust the bearing from your position to that landmark.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/c3e0e56c372d36ab.webp",
+              "width": 139,
+              "height": 102
+            }
+          ]
+        },
+        {
+          "title": "Plot the intersection",
+          "layout": "image-bottom",
+          "html": "<p>Place two or more landmarks. Then tap the <strong>Plot Intersection</strong> icon to drop a marker at the computed intersection. The marker is labelled with your device callsign.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/2af6ca3ede3fac38.webp",
+              "width": 252,
+              "height": 164
+            }
+          ]
+        },
+        {
+          "title": "Move, delete, or clear landmarks",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>To move a point, long-press it on the map and pick a new spot.</li>\n<li>To remove one point, tap it on the map and select <strong>Delete</strong>.</li>\n<li>To remove them all, tap the <strong>Clear Landmarks</strong> icon and confirm.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/2af6ca3ede3fac38.webp",
+              "width": 252,
+              "height": 164
+            }
+          ]
+        },
+        {
+          "title": "Update your position and exit",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Back</strong> to exit. When asked to update your location, select <strong>Yes</strong> to move your Self-Marker to the estimate and broadcast it, or <strong>No</strong> to leave it.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/eab817e259c77713.webp",
+              "width": 174,
+              "height": 74
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "id": "f05950f1-b1b1-45c1-b8bc-944f6fafdeff",
+  "slug": "customize-markers-icons-TGz9RiGwju",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "Customize Markers & Icons",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "Advanced Core Features",
+    "Customize Markers & Icons"
+  ],
+  "createdAt": "2026-06-15T19:40:09.699Z",
+  "updatedAt": "2026-06-15T21:18:55.337Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Pick the right symbol for what you are reporting, switch to mission-specific iconsets, and tune your own Self-Marker so the team can read you at a glance.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Pick a marker subtype",
+          "layout": "image-bottom",
+          "html": "<p>After choosing a marker, tap the subtype field to open <strong>Select Subtype</strong>, then pick the affiliation you need. Use <strong>Search</strong> to jump straight to a subtype instead of scrolling the list.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/377dc3d0016dbbf9.webp",
+              "width": 267,
+              "height": 165
+            }
+          ]
+        },
+        {
+          "title": "Switch to a mission iconset",
+          "layout": "image-bottom",
+          "html": "<p>Swipe the iconset area or tap the <strong>Iconset Name</strong> field to open the pallet list, then choose <strong>Mission</strong> for mission-specific symbols such as Contact Point (CP), Initial Point (IP) and Observation Point (OP).</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/88309ebe5bcf3eb9.webp",
+              "width": 221,
+              "height": 166
+            }
+          ]
+        },
+        {
+          "title": "Customise your Self-Marker",
+          "layout": "image-bottom",
+          "html": "<p>Set your marker size, main colour and outline under <strong>Settings > Display Preferences > My Location Color/Size</strong>. Use the <strong>Change/Create Icon Main Custom Color</strong> and <strong>Change/Create Icon Outline Custom Color</strong> sliders to make it stand out on the map.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/3912ff240588c91e.webp",
+              "width": 254,
+              "height": 211
+            }
+          ]
+        },
+        {
+          "title": "Place it with Fine Adjust",
+          "layout": "image-bottom",
+          "html": "<p>Long-press <strong>Fine Adjust</strong> on the Self-Marker radial to open the sub-radial. Enter an exact <strong>MGRS Location</strong> or coordinate to drop yourself precisely instead of relying on GPS drift.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/571a196b0e34856b.webp",
+              "width": 170,
+              "height": 148
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

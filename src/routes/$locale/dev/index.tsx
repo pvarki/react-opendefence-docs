@@ -16,14 +16,14 @@ import { siteSections } from "@/lib/siteSections";
 const RESERVED_SLUGS = new Set(["dev", "guides", "advanced"]);
 
 // Toporg-style grouping of the Develop shelf (separate from the manifest order).
-const GROUPS: { heading: string; slugs: string[] }[] = [
-  { heading: "Introduction", slugs: ["introduction"] },
-  { heading: "Operate", slugs: ["operate"] },
+const GROUPS: { headingKey: string; slugs: string[] }[] = [
+  { headingKey: "devShelf.introduction", slugs: ["introduction"] },
+  { headingKey: "devShelf.operate", slugs: ["operate"] },
   {
-    heading: "Contribute",
+    headingKey: "devShelf.contribute",
     slugs: ["contribute-to-project", "develop-deploy-app"],
   },
-  { heading: "Integrate", slugs: ["build-an-integration"] },
+  { headingKey: "devShelf.integrate", slugs: ["build-an-integration"] },
 ];
 
 export interface RelComponent {
@@ -89,12 +89,13 @@ function ComponentRow({
   tab: "releases" | "changelog";
   available: boolean;
 }) {
+  const { t } = useTranslation();
   if (!available) {
     return (
       <div className="flex items-center justify-between rounded-xl border border-border/60 bg-card/40 px-3.5 py-2.5 text-sm text-muted-foreground md:px-4">
         <span className="truncate">{comp.name}</span>
         <span className="ml-2 shrink-0 rounded bg-muted px-1.5 py-0.5 text-[10px] font-semibold tracking-wide uppercase">
-          Under development
+          {t("releases.underDevelopment")}
         </span>
       </div>
     );
@@ -151,8 +152,8 @@ function DevShelf() {
             .filter((b): b is ManifestCollection => Boolean(b));
           if (groupBooks.length === 0) return null;
           return (
-            <Fragment key={g.heading}>
-              <SectionHeading>{g.heading}</SectionHeading>
+            <Fragment key={g.headingKey}>
+              <SectionHeading>{t(g.headingKey)}</SectionHeading>
               <div className="grid grid-cols-1 gap-2.5 md:grid-cols-2 md:gap-3">
                 {groupBooks.map(bookCard)}
               </div>
@@ -160,21 +161,21 @@ function DevShelf() {
           );
         })}
 
-        <SectionHeading>API ref &amp; releases</SectionHeading>
+        <SectionHeading>{t("releases.sectionTitle")}</SectionHeading>
         <div className="grid grid-cols-1 gap-2.5 md:grid-cols-2 md:gap-3">
           <BookCard
             locale={locale}
             to="/$locale/dev/api"
             icon={Braces}
-            title="API Reference"
-            description="Core rmapi & product integration APIs (OpenAPI)"
+            title={t("apiRef.title")}
+            description={t("apiRef.descDev")}
           />
         </div>
 
         {relComponents.length > 0 && (
           <>
             <h3 className="px-1 pt-4 pb-1.5 text-xs font-semibold text-foreground">
-              Releases
+              {t("releases.title")}
             </h3>
             <div className="grid grid-cols-1 gap-2 md:grid-cols-2">
               {relComponents.map((c) => (
@@ -189,7 +190,7 @@ function DevShelf() {
             </div>
 
             <h3 className="px-1 pt-4 pb-1.5 text-xs font-semibold text-foreground">
-              Changelogs
+              {t("releases.changelogs")}
             </h3>
             <div className="grid grid-cols-1 gap-2 md:grid-cols-2">
               {relComponents.map((c) => (
@@ -212,14 +213,16 @@ function DevShelf() {
 
 /** Develop-page footer, styled like the Deploy App (home) footer. */
 function DevFooter() {
+  const { t } = useTranslation();
   return (
     <footer className="mt-4 border-t border-border bg-card md:mt-8">
       <div className="mx-auto max-w-3xl px-4 py-6 md:py-10">
         <p className="text-sm leading-relaxed text-foreground">
-          This developer documentation is maintained by OpenDefence staff. It is{" "}
-          <strong className="font-semibold text-primary">currently</strong>{" "}
-          under rapid development and may contain errors, outages, and other
-          discrepancies.
+          {t("devFooter.leadBefore")}
+          <strong className="font-semibold text-primary">
+            {t("devFooter.leadEmphasis")}
+          </strong>
+          {t("devFooter.leadAfter")}
         </p>
       </div>
     </footer>

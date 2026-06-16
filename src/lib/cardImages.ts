@@ -17,6 +17,7 @@ export const CARD_IMAGES: Record<string, CardImage> = {
   "guides/tak-guide": { src: "/images/tak.png" },
   "guides/mtx-guide": { src: "/images/mtxlogo.svg", logo: true },
   "guides/matrix-guide": { src: "/images/matrixlogo.svg", logo: true },
+  "guides/cryptpad-guide": { src: "/images/cryptpadlogo.svg", logo: true },
   "wikis/tak": { src: "/images/tak.png" },
   "wikis/mtx": { src: "/images/mtxlogo.svg", logo: true },
 };

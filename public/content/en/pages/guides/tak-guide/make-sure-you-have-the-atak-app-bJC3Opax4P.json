@@ -1,0 +1,281 @@
+{
+  "schemaVersion": 1,
+  "id": "45a3e50c-b7c2-45d3-927d-bf2e2d97cbbf",
+  "slug": "make-sure-you-have-the-atak-app-bJC3Opax4P",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "Make sure you have the ATAK App",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "START & CONNECT",
+    "Make sure you have the ATAK App"
+  ],
+  "createdAt": "2025-12-05T22:06:23.638Z",
+  "updatedAt": "2026-06-16T10:53:18.151Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Install ATAK from Playstore or APK",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>To start using ATAK, you need to install the app from Google Play.</li>\n<li>Deploy App's TAK page offers you the <a href=\"https://play.google.com/store/apps/details?id=com.atakmap.app.civ\" target=\"_blank\" rel=\"noopener noreferrer\">link for it</a>.</li>\n<li>ATAK/CivTAK application is exactly the same app as so-called MilTAK - the difference is that MilTAK app accepts MilTAK-signed plugins.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/d456b61755f60acf.webp",
+              "width": 860,
+              "height": 384
+            }
+          ]
+        },
+        {
+          "title": "1. Open ATAK and give permissions",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Once installed, find the TAK icon from your phone and open the application.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/a2fe7303e7840f32.webp",
+              "width": 246,
+              "height": 246
+            }
+          ]
+        },
+        {
+          "title": "Permissions 1",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>The EULA pops up.</li>\n<li>Tap <strong>I agree</strong>.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/bb74b8a7832f37d2.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "Permissions 2",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>ATAK app asks a number of permissions within your phone.</li>\n<li>The permission rationale explains, that none of user data ends up to the TAK developers (U.S. TPC).</li>\n<li>What these permissions enable is to make your TAK data to flow to <strong>your unit's</strong> TAK Server, which is operated by eg. FDF.</li>\n<li>No other data than what happens in ATAK is concerned here.</li>\n<li>Tap <strong>I understand</strong> to continue.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/1b64bf072a4658a4.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "Permissions 3",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Allow ATAK to take pictures or video.</li>\n<li>This is required for Quick Pic and video sharing features.</li>\n<li>Choose <strong>While using the app.</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/b5a9c08cc99a2a16.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "Permissions 4",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Allow ATAK to access location.</li>\n<li>This is required for Blue force tracking to work, ie. to have your symbol appear to the map.</li>\n<li>Choose <strong>Precise</strong> and <strong>While using app.</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/a86c87be2b44ef64.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "Permissions 5",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Allow ATAK to record audio.</li>\n<li>This is required for calls to teammates started from ATAK.</li>\n<li>Choose <strong>While using the app.</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/4a0e92d613797b57.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "Permissions 6",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Allow ATAK to find nearby devices.</li>\n<li>This is required for using ATAK in broadcast mode (communicate with other ATAKs in local network, WiFi or eg. radio connection).</li>\n<li>Choose <strong>Allow.</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/b534c325a40d6b0b.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "Permissions 7",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Allow ATAK to send notifications.</li>\n<li>This is required for having notifications from ATAK.</li>\n<li>Choose <strong>Allow.</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/75114a3236a0faa6.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "Permissions 8",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Allow ATAK make phone calls and manage calls.</li>\n<li>This is required for calls to teammates started from ATAK.</li>\n<li>Choose <strong>Allow.</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/3c25040084131abf.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "Permissions 9",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Allow ATAK to access music and audio files.</li>\n<li>This is required for being able to send audio messages over the TAK Server.</li>\n<li>Choose <strong>Allow.</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/5997b500b0595461.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "Permissions 10",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Allow ATAK to access photos and videos.</li>\n<li>This is required for Quick Pic and video sharing features.</li>\n<li>Choose <strong>Allow all.</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/1ba90c6f48f42fb6.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "Permissions 11",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Allow ATAK to use location on background.</li>\n<li>This is required for Blue force tracking to work, ie. to have your symbol appear to the map.</li>\n<li>Choose <strong>I understand.</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/847ccec2aa5a90c4.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "Permissions 12",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Acknowledge the Android 11+ warning about location in background.</li>\n<li>Choose <strong>OK.</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/e4d5d79829f2ebf2.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "Permissions 13",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>ATAK needs you to do change a location permission from Android settings in order to the Blue force tracking feature to work.</li>\n<li>Read instructions and do the steps as follows. Tap <strong>I understand</strong> to continue.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/e25a3a66bee6fac7.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "Permissions 14",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>The Android setting for App info opens automatically.</li>\n<li>Tap <strong>Permissions.</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/ab2300beaeac7e85.webp",
+              "width": 2256,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Permissions 15",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Next, tap <strong>App permission.</strong></li>\n<li>Then tap <strong>Location</strong> to open location permission settings.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/770b056e3d14d651.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "Permissions 16",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>In the Location permission menu, tap <strong>Allow all the time.</strong></li>\n<li>This enables ATAK to continuously send your location to the TAK Server which is required for the blue force tracking feature to work.</li>\n<li>After doing this, return to ATAK.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/785e38231c71b974.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "Permissions 17",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>If you start up ATAK for the first time, the TAK Device Setup menu will appear.</li>\n<li>We don't need anything from here, so close it by tapping <strong>Done.</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/b04353af5bd411fb.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "Permissions 18",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Finally, the app asks you to disable the Android battery optimization feature.</li>\n<li>This is important, as Android may randomly block ATAK from sending and receiving location data because of this.</li>\n<li>Press OK in order to the next dialog to open.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/1363c65a7b52cdd1.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "Permissions 19",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Android asks you whether to stop optimizing battery usage.</li>\n<li>Tap <strong>Allow.</strong></li>\n<li>This concludes setting permissions with your freshly-installed ATAK app.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/a775d9a29860bff9.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "html",
+      "html": "<p>After installation and initialization of ATAK continue to <a href=\"/doc/c8842f7a-f533-4bfe-9027-88f165d16ddb\">ATAK Already Installed</a></p>"
+    }
+  ]
+}

@@ -11,7 +11,7 @@
     "Set up your dev environment (Docker Compose)"
   ],
   "createdAt": "2026-06-13T13:20:41.051Z",
-  "updatedAt": "2026-06-13T14:30:10.674Z",
+  "updatedAt": "2026-06-16T16:52:28.004Z",
   "headings": [
     {
       "depth": 2,
@@ -108,7 +108,7 @@
     },
     {
       "type": "html",
-      "html": "<ul>\n<li><code>**rmlocal**</code> corresponds best to a real running environment — assets are minified and baked in. Start here, and always verify your changes work in <code>rmlocal</code> before trusting <code>rmdev</code>.</li>\n<li><code>**rmdev**</code> layers <code>docker-compose-dev.yml</code> on top and runs the core in development mode. This is the convenient inner-loop environment but introduces extra variability.</li>\n</ul>\n<blockquote>\n<p><strong>Note:</strong> If you only want to test the stack and not build your own changes, drop the <code>PVARKI_DOCKER_REPO=localhost:5050/</code> prefix from the alias to use pre-built images.</p>\n</blockquote>\n<h2 id=\"3-build-and-bring-it-up\"><a href=\"#3-build-and-bring-it-up\">3. Build and bring it up</a></h2>\n<p>Build the special init/cert images (pushing them to the local registry), then build the rest, then start:</p>"
+      "html": "<ul>\n<li><code>**rmlocal**</code> corresponds best to a real running environment — assets are minified and baked in. Start here, and always verify your changes work in <code>rmlocal</code> before trusting <code>rmdev</code>.</li>\n<li><code>**rmdev**</code> layers <code>docker-compose-dev.yml</code> on top and runs the core in development mode. This is the convenient inner-loop environment but introduces extra variability. UI and API HMR in place for example.</li>\n</ul>\n<blockquote>\n<p><strong>Note:</strong> If you only want to test the stack and not build your own changes, drop the <code>PVARKI_DOCKER_REPO=localhost:5050/</code> prefix from the alias to use pre-built images.</p>\n</blockquote>\n<h2 id=\"3-build-and-bring-it-up\"><a href=\"#3-build-and-bring-it-up\">3. Build and bring it up</a></h2>\n<p>Build the special init/cert images (pushing them to the local registry), then build the rest, then start:</p>"
     },
     {
       "type": "code",

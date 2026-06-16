@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "id": "5a5f1c7d-61bd-42a5-bea8-6445fc145949",
+  "slug": "scout-with-first-person-view-tZ27WjeppE",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "Scout with First-Person View",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "ADDITIONAL FEATURES",
+    "Elevation, Terrain & Map Tools",
+    "Scout with First-Person View"
+  ],
+  "createdAt": "2026-06-15T19:45:13.081Z",
+  "updatedAt": "2026-06-15T20:53:53.693Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>First-Person View drops your camera to ground level so you can scout terrain, sightlines and cover the way you would actually see them on the ground.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Open the First-Person tool",
+          "layout": "image-bottom",
+          "html": "<p>Open the <strong>First-Person</strong> tool from the <strong>Additional Tools</strong> and <strong>Settings</strong> menu. It places buttons at the top of the map and two soft joysticks on the right and left.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/d44bccb6a9d47e48.webp",
+              "width": 311,
+              "height": 143
+            }
+          ]
+        },
+        {
+          "title": "Enable and pick your viewpoint",
+          "layout": "image-bottom",
+          "html": "<p>Tap the <strong>First-Person View</strong> button, then tap the spot on the map you want to look from.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/92d7ffc40b67939f.webp",
+              "width": 266,
+              "height": 123
+            }
+          ]
+        },
+        {
+          "title": "Move and tilt the camera",
+          "layout": "image-bottom",
+          "html": "<p>Use the right joystick to scout. It toggles between <strong>DRIVE</strong> to move and <strong>TILT</strong> to angle the camera.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/990e13acf1ab2aa3.webp",
+              "width": 266,
+              "height": 123
+            }
+          ]
+        },
+        {
+          "title": "Adjust your elevation",
+          "layout": "image-bottom",
+          "html": "<p>Use the left joystick to raise or lower your eye level. Elevation goes above ground level and below ground for a subterranean view.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/d44bccb6a9d47e48.webp",
+              "width": 311,
+              "height": 143
+            }
+          ]
+        },
+        {
+          "title": "Exit First-Person View",
+          "layout": "image-bottom",
+          "html": "<p>Tap the <strong>First-Person</strong> icon again to leave the perspective and return to the default overhead map view.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/990e13acf1ab2aa3.webp",
+              "width": 266,
+              "height": 123
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

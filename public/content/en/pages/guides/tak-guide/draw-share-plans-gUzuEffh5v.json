@@ -6,19 +6,49 @@
   "locale": "en",
   "title": "Draw & share Plans",
   "breadcrumb": [
-    "TAK Clients",
+    "Platforms",
     "WinTAK",
+    "USING WINTAK FEATURES",
     "Advanced Features",
     "Draw & share Plans"
   ],
   "createdAt": "2025-12-05T22:05:59.301Z",
-  "updatedAt": "2026-02-22T13:48:52.268Z",
+  "updatedAt": "2026-06-15T13:52:58.978Z",
   "headings": [],
   "blocks": [
     {
-      "type": "code",
-      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#ABB2BF\">(</span><span style=\"color:#E06C75\">This</span><span style=\"color:#E06C75\"> tab</span><span style=\"color:#E06C75\"> should</span><span style=\"color:#E06C75\"> not</span><span style=\"color:#E06C75\"> be</span><span style=\"color:#E06C75\"> shown</span><span style=\"color:#ABB2BF\">)</span></span></code></pre>",
-      "lang": "javascript"
+      "type": "html",
+      "html": "<p>WinTAK's drawing tools let you sketch plans — routes, areas and control measures — and share them with your unit through a feed.</p>\n<blockquote>\n<p>Draft: written without screenshots. Add WinTAK drawing-tool screenshots when available.</p>\n</blockquote>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Open the drawing tools",
+          "layout": "text",
+          "html": "<p>Open the drawing tools from the WinTAK toolbar. You can place lines, routes, shapes and freehand drawings directly on the map.</p>",
+          "images": []
+        },
+        {
+          "title": "Draw routes and areas",
+          "layout": "text",
+          "html": "<p>Draw what the plan needs — a marching or patrol <strong>route</strong>, an <strong>area</strong> (polygon/circle) for a sector or objective, or control measures. Snap points onto the map and adjust them as needed.</p>",
+          "images": []
+        },
+        {
+          "title": "Label and style",
+          "layout": "text",
+          "html": "<p>Give each drawing a clear <strong>name</strong> and set its colour so the plan reads at a glance and matches your unit's conventions.</p>",
+          "images": []
+        },
+        {
+          "title": "Share to a feed",
+          "layout": "text",
+          "html": "<p>Send the finished plan to a <strong>Data Sync feed</strong> (for example a PLAN feed) so the whole unit receives it and stays in sync as you update it.</p>",
+          "images": []
+        }
+      ]
     }
   ]
 }

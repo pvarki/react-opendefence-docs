@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "id": "8ef634b5-1930-4ea5-b85f-9f585b5603de",
+  "slug": "digital-pointer-0K1KdydAeq",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "Digital Pointer",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "Advanced Core Features",
+    "Digital Pointer"
+  ],
+  "createdAt": "2026-06-15T19:40:15.484Z",
+  "updatedAt": "2026-06-15T21:18:57.274Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Point at a spot on the map and everyone on your network sees it live, with range and bearing from you and optional threat rings.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Drop a live pointer",
+          "layout": "image-bottom",
+          "html": "<p>Tap the <strong>Digital Pointer</strong> icon, then <strong>Pointer</strong> to drop a marker on the map. Anyone on your network sees it appear and gets a notification, with a line running back to you.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/cbdeb87085572763.webp",
+              "width": 236,
+              "height": 186
+            }
+          ]
+        },
+        {
+          "title": "Show range, bearing and threat rings",
+          "layout": "image-bottom",
+          "html": "<p>Tap your own pointer to open its radial menu. Pick <strong>Range and Bearing Line</strong> to show distance and direction from you, or <strong>Custom Threat Rings</strong> to add danger rings around the spot.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/cbdeb87085572763.webp",
+              "width": 236,
+              "height": 186
+            }
+          ]
+        },
+        {
+          "title": "Use a teammate's pointer",
+          "layout": "image-bottom",
+          "html": "<p>Tap someone else's pointer for extra options:</p>\n<ul>\n<li><strong>Lock to Self</strong> to keep it centred on your position</li>\n<li><strong>Bloodhound Tool</strong> to navigate to it</li>\n<li><strong>Track Breadcrumbs</strong> to follow its trail</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/7c6e87c1d423d079.webp",
+              "width": 223,
+              "height": 183
+            }
+          ]
+        },
+        {
+          "title": "Point at an exact grid",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>GoTo MGRS</strong> on the Digital Pointer toolbar to type a 10-digit Easting and Northing by hand. The pointer drops on that exact grid for the current map view.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/7c6e87c1d423d079.webp",
+              "width": 223,
+              "height": 183
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

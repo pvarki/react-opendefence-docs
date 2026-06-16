@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "id": "0176284f-3400-485f-81a6-7d9f16d59a63",
+  "slug": "custom-report-templates-8bCilJEujm",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "Custom report templates",
+  "breadcrumb": [
+    "Platforms",
+    "WinTAK",
+    "Supported Plugins",
+    "Reports",
+    "Custom report templates"
+  ],
+  "createdAt": "2026-06-16T10:20:58.483Z",
+  "updatedAt": "2026-06-16T10:20:58.483Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Preconfigured report templates can be edited, and you can build your own from scratch.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Start a custom template",
+          "layout": "image-bottom",
+          "html": "<p>To edit a default template, choose the report type and select <strong>Edit</strong> next to it — it opens in the editor to save as a new custom template. To build a new one, select <strong>+</strong> next to the <strong>Custom</strong> category; this creates an empty template with one section and a text field.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/d664252fecb158df.webp",
+              "width": 224,
+              "height": 205
+            }
+          ]
+        },
+        {
+          "title": "Name it and add sections",
+          "layout": "image-bottom",
+          "html": "<p>Enter a name in the <strong>Template Type</strong> field (this becomes the stored template name). Use the editor to add sections and fields, delete a section or field, mark a section <strong>Required</strong>, or <strong>Clear</strong> the template.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/ae93f14c8d8e1847.webp",
+              "width": 224,
+              "height": 183
+            }
+          ]
+        },
+        {
+          "title": "Add field types",
+          "layout": "image-bottom",
+          "html": "<p>Select <strong>+</strong> within a section to add a field: Options, Multi-Select Options, Section, Checkbox, Date, Location, Number with Units, Number, Range, Route, Text or Time.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/6002d87be513d362.webp",
+              "width": 347,
+              "height": 566
+            }
+          ]
+        },
+        {
+          "title": "Save the template",
+          "layout": "image-bottom",
+          "html": "<p>Drag the window out to see a live preview on the right as you build. Select <strong>Save</strong> to store it under Custom using its title, <strong>Save As</strong> to give it a new name, or <strong>Save / Fill Out</strong> to store it and immediately start a report from it.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/13a5fa24076e6565.webp",
+              "width": 407,
+              "height": 536
+            }
+          ]
+        },
+        {
+          "title": "Reports preferences",
+          "layout": "image-bottom",
+          "html": "<p>Tailor the report layout under <strong>Settings > Tool Preferences > Reporting Preferences</strong>: <strong>Allow sending to TAK users over Data Package</strong>, send Data Packages to all contacts automatically, and show or hide the Importance, Scale, Scale Description and User Description fields.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/ccd7eb372a082524.webp",
+              "width": 339,
+              "height": 467
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

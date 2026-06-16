@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "id": "b8aaf9c0-a307-4aeb-94ec-e5bfd81d7751",
+  "slug": "track-to-a-target-with-bloodhound-CRgoGZzBqb",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "Track to a Target with Bloodhound",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "ADDITIONAL FEATURES",
+    "Navigation & Coordinates",
+    "Track to a Target with Bloodhound"
+  ],
+  "createdAt": "2026-06-15T19:42:09.526Z",
+  "updatedAt": "2026-06-15T20:53:49.114Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Bloodhound locks a tracker onto a target and gives you live range, bearing and ETA as you close the gap.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Open the Bloodhound tool",
+          "layout": "image-bottom",
+          "html": "<p>Tap the <strong>Bloodhound</strong> icon to open the tool. The <strong>Setup Bloodhound</strong> prompt appears so you can choose your tracker and your target.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/73bb4fb07230f64d.webp",
+              "width": 299,
+              "height": 100
+            }
+          ]
+        },
+        {
+          "title": "Set tracker and target",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>From Reticle</strong> to pick the tracker (defaults to your own Self-Marker), then tap <strong>To Reticle</strong> to pick the target. The target can be another user, a DP, a CoT marker or any map point. Use <strong>Quick Select DP</strong> to grab a DP fast.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/73bb4fb07230f64d.webp",
+              "width": 299,
+              "height": 100
+            }
+          ]
+        },
+        {
+          "title": "Activate the track",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>OK</strong> to activate. A green line is drawn from you to the target. If you tapped empty map instead of an object, Bloodhound drops a waypoint there and tracks to it.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/68a499821086477f.webp",
+              "width": 336,
+              "height": 272
+            }
+          ]
+        },
+        {
+          "title": "Read range, bearing and ETA",
+          "layout": "image-bottom",
+          "html": "<p>The green widget in the lower-left shows live <strong>Range</strong>, <strong>Bearing</strong> and <strong>ETA</strong>. As either point moves and you navigate toward the target, these values update in real time.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/68a499821086477f.webp",
+              "width": 336,
+              "height": 272
+            }
+          ]
+        },
+        {
+          "title": "Watch the line colour",
+          "layout": "image-bottom",
+          "html": "<p>The line flashes by ETA: green flashes at 6 minutes out, then 3 minutes, turns flashing yellow at 1 minute, and flashes red until you reach the target. Adjust these in <strong>Settings > Tool Preferences > Specific Tool Preferences > Bloodhound Preferences</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/68a499821086477f.webp",
+              "width": 336,
+              "height": 272
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

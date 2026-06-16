@@ -6,18 +6,42 @@
   "locale": "en",
   "title": "Fighter",
   "breadcrumb": [
-    "TAK Clients",
+    "Platforms",
     "WinTAK",
-    "Usage by Role",
+    "USAGE BY ROLE",
     "Fighter"
   ],
   "createdAt": "2025-12-05T22:05:58.759Z",
-  "updatedAt": "2026-02-21T14:24:08.912Z",
+  "updatedAt": "2026-06-14T17:11:18.112Z",
   "headings": [],
   "blocks": [
     {
       "type": "html",
-      "html": "<p>(This tab should not be shown)</p>"
+      "html": "<p>As a fighter, WinTAK keeps you on the shared map and lets you feed observations to the command post. Here is what you send and what you get.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "What a fighter sends",
+          "layout": "text",
+          "html": "<ul>\n<li>Your <strong>live position</strong>, so the unit sees you on the map (blue force tracking).</li>\n<li><strong>Observation markers</strong> — create a marker and send it to the HQ role / the observations feed.</li>\n<li><strong>Reports</strong> over the prescribed messaging tools, on the command, recon, BLUFOR and common channels.</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "What a fighter gets",
+          "layout": "text",
+          "html": "<ul>\n<li>The CP-produced <strong>RECON Feed</strong> — what the unit knows about the area of operations.</li>\n<li>Mission <strong>PLAN</strong> feeds — marching routes, patrol routes, geofence alerts.</li>\n<li>Other users' positions on the map.</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "How to do it",
+          "layout": "text",
+          "html": "<ul>\n<li>See <strong>Blue force tracking</strong> to find yourself, read the map, and set your position when you have no GPS.</li>\n<li>Make sure you are connected first — a <strong>green cloud</strong> in the TAK Network Status means the server connection is up; if your RECON feed is empty, re-check the connection (see the Start guide).</li>\n</ul>",
+          "images": []
+        }
+      ]
     }
   ]
 }

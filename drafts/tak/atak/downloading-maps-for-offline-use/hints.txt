@@ -1,0 +1,9 @@
+# Authoring notes — NOT published. One line per screenshot.
+# Format:  NN: what's happening / exact button labels / non-obvious step
+01:
+02:
+03:
+04:
+05:
+06:
+07:

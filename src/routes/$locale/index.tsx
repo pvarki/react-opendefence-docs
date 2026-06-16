@@ -83,8 +83,8 @@ function HomePage() {
             locale={locale}
             href="https://demo.opendefence.fi"
             icon={MonitorPlay}
-            title="Try the demo"
-            description="See how Deploy App works and feels like"
+            title={t("home.demoCard")}
+            description={t("home.demoCardDesc")}
             size="tall"
           />
         </div>

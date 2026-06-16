@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "id": "11d3d03f-62eb-41b3-bcaa-9b80973c2bab",
+  "slug": "create-a-vns-route-gfIlnjXwN2",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "Create a VNS route",
+  "breadcrumb": [
+    "Platforms",
+    "WinTAK",
+    "Supported Plugins",
+    "Vehicle Navigation System",
+    "Create a VNS route"
+  ],
+  "createdAt": "2026-06-16T10:21:36.565Z",
+  "updatedAt": "2026-06-16T10:21:36.565Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>The Vehicle Navigation System (VNS) plugin adds road-snapped vehicle routing and turn-by-turn voice cues to WinTAK's route planning. Once installed, it lives behind the <strong>Routes</strong> icon.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Open the Routes tool",
+          "layout": "image-bottom",
+          "html": "<p>Open the <strong>Routes</strong> tool on the WinTAK toolbar and select <strong>+</strong> to start a new route. With VNS active, the New Route planning dialog opens instead of the manual placement dialog.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/705d55ba0f6065ce.webp",
+              "width": 348,
+              "height": 72
+            }
+          ]
+        },
+        {
+          "title": "Enter addresses and routing method",
+          "layout": "image-bottom",
+          "html": "<p>Type the <strong>Start Address</strong> and <strong>Destination Address</strong>, or use the reticles to drop them on the map. Set <strong>Routing Method</strong> to <strong>Google Route Planner</strong> and tick any avoidances (<strong>Avoid Ferries / Highways / Tolls</strong>), then select <strong>Create</strong> — the route snaps to roads and draws on the map. To place a manual point-to-point route with WinTAK's core tool instead, select <strong>Manual</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/cb9d0eac9cac12fe.webp",
+              "width": 409,
+              "height": 363
+            }
+          ]
+        },
+        {
+          "title": "Work with the route details",
+          "layout": "image-bottom",
+          "html": "<p>The <strong>Route Details</strong> pane opens after creation. From here you can rename the route, pick its color, set the route type (primary/secondary, infil/exfil), add remarks, name checkpoints, attach files, set a navigation cue per checkpoint, view the elevation profile, <strong>Send</strong> the route to other devices, or press <strong>GO</strong> to begin navigation.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/d755d59454946e3b.webp",
+              "width": 350,
+              "height": 561
+            }
+          ]
+        },
+        {
+          "title": "Set the Google Directions API key",
+          "layout": "image-bottom",
+          "html": "<p>VNS uses the Google routing engine. Set your key under <strong>Settings > Tool Preferences > VNS Preferences</strong> — organizations license their own Google Directions API key.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/2543c2aa7a4ddde7.webp",
+              "width": 269,
+              "height": 136
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

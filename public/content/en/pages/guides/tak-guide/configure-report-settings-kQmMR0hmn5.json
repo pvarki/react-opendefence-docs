@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "id": "8572d67c-91c7-4e00-b915-bb5f8ed8ec94",
+  "slug": "configure-report-settings-kQmMR0hmn5",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "Configure Report Settings",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "Supported Plugins",
+    "Reports",
+    "Configure Report Settings"
+  ],
+  "createdAt": "2026-06-15T19:51:31.064Z",
+  "updatedAt": "2026-06-15T19:51:31.064Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Set up Reports once so every report you send uses the right defaults without extra taps in the field. Open <strong>Settings > Tool Preferences > Specific Tool Preferences > Reporting Preferences</strong>.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Set how reports are sent",
+          "layout": "image-bottom",
+          "html": "<p>In <strong>General Settings</strong>, turn on <strong>Allow sending to ATAK users over Data Package</strong> to be prompted for a send method, and <strong>Send Report Data Package To All Contacts Automatically</strong> to push to everyone on the network. Use <strong>Always Show Queried Reports</strong> to keep server results on screen.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/1671ece168e75125.webp",
+              "width": 800,
+              "height": 176
+            }
+          ]
+        },
+        {
+          "title": "Default your report location to self",
+          "layout": "image-bottom",
+          "html": "<p>Enable <strong>Set report location to self marker by default</strong> so each new report drops on your own position. Saves you placing the marker by hand every time.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/1671ece168e75125.webp",
+              "width": 800,
+              "height": 176
+            }
+          ]
+        },
+        {
+          "title": "Set default importance and scale",
+          "layout": "image-bottom",
+          "html": "<p>Under <strong>Default Information</strong>, set <strong>Importance</strong> for the <strong>Default Report Importance</strong> and <strong>Event Scale</strong> for the <strong>Default Report Event Scale</strong>. New reports start with these values.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/35c176c6a758d5d2.webp",
+              "width": 634,
+              "height": 243
+            }
+          ]
+        },
+        {
+          "title": "Pick a default report template",
+          "layout": "image-bottom",
+          "html": "<p>In <strong>Report Templates</strong>, set <strong>Default Report Type</strong> to the template you create most. Use <strong>Overwrite Reports with Defaults</strong> to customize reports made with that type.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/0b9f6fd975c7ce3d.webp",
+              "width": 635,
+              "height": 233
+            }
+          ]
+        },
+        {
+          "title": "Set PDF export options",
+          "layout": "image-bottom",
+          "html": "<p>Under <strong>Export to PDF</strong>, turn on <strong>Automatically Open PDFs</strong> to view each PDF as soon as it is created. Use <strong>Watermark Preferences</strong> to set the watermark to default, custom, or none.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/bade3d6907a7b1b4.webp",
+              "width": 800,
+              "height": 357
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

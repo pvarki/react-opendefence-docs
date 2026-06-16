@@ -1,0 +1,11 @@
+sequenceDiagram
+    participant CP as CP (HQ role)
+    participant RF as RECON Feed
+    participant PF as PLAN Feeds
+    participant BF as BLUFOR Feed
+    actor F as Fighters
+    Note over CP,BF: Produced by HQ / CP
+    RF->>F: 4. what we know of the AO
+    PF->>F: 5. marching & patrol routes,<br/>geofence alerts
+    BF->>F: 6. approach routes to<br/>friendly positions
+    Note over F,BF: Feeds are read-only for Fighters

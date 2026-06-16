@@ -79,8 +79,8 @@ function GuidesShelf() {
                   locale={locale}
                   to="/$locale/dev/api"
                   icon={Braces}
-                  title="API Reference"
-                  description="rasenmaeher-api & integration APIs (OpenAPI)"
+                  title={t("apiRef.title")}
+                  description={t("apiRef.descGuides")}
                 />
               )}
               {section.withReleases && (
@@ -88,8 +88,8 @@ function GuidesShelf() {
                   locale={locale}
                   to="/$locale/dev/releases"
                   icon={Tag}
-                  title="Releases"
-                  description="Changelogs & release notes per component"
+                  title={t("releases.title")}
+                  description={t("releases.desc")}
                 />
               )}
             </div>
@@ -101,25 +101,13 @@ function GuidesShelf() {
   );
 }
 
-/** Product integrations covered by the guides, with a one-line credit each. */
+/** Product integrations covered by the guides; body text lives in i18n. */
 const PRODUCTS = [
-  {
-    name: "TAK",
-    body: "Developed by the TAK Product Center (TPC), a U.S. Government organization. The OpenDefence-developed integration gets your ATAK users connected to the server by a double-tap self service — yes, press two buttons and you're in.",
-  },
-  {
-    name: "Matrix",
-    body: "An open, decentralized messaging protocol from the Matrix.org Foundation; clients such as Element X are spearheaded by New Vector Ltd. The OpenDefence-developed integration lets users connect their Element X client to the Deploy App-bundled Synapse server by simply pasting in the server address.",
-  },
-  {
-    name: "MediaMTX",
-    body: "A real-time media server: a video-sharing service that lets you quickly share video from e.g. drone operators. The OpenDefence-developed integration lets you start streaming with your OpenTAK ICU and UAS Tool applications by tapping an import-settings button once.",
-  },
-  {
-    name: "CryptPad",
-    body: "Developed by XWiki SAS, CryptPad is an end-to-end-encrypted collaboration and file-sharing suite used by, among others, the European Commission.",
-  },
-];
+  { name: "TAK", bodyKey: "guidesFooter.products.tak" },
+  { name: "Matrix", bodyKey: "guidesFooter.products.matrix" },
+  { name: "MediaMTX", bodyKey: "guidesFooter.products.mediamtx" },
+  { name: "CryptPad", bodyKey: "guidesFooter.products.cryptpad" },
+] as const;
 
 /** Guides-page footer, styled like the Deploy App (home) footer. */
 function GuidesFooter() {
@@ -128,9 +116,7 @@ function GuidesFooter() {
     <footer className="mt-4 border-t border-border bg-card md:mt-8">
       <div className="mx-auto max-w-3xl px-4 py-6 md:py-10">
         <p className="text-sm leading-relaxed text-foreground">
-          Deploy App has a number of official product integrations, each
-          currently developed by OpenDefence. Here you can find guides to use
-          the official products efficiently.
+          {t("guidesFooter.lead")}
         </p>
 
         {/* Collapsed by default; native disclosure keeps it JS-free. */}
@@ -146,29 +132,23 @@ function GuidesFooter() {
                   {p.name}
                 </p>
                 <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
-                  {p.body}
+                  {t(p.bodyKey)}
                 </p>
               </div>
             ))}
 
             <p className="mt-5 text-[11px] font-semibold tracking-widest text-primary uppercase">
-              OpenDefence as integration developer
+              {t("guidesFooter.devTitle")}
             </p>
             <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
-              We develop product integrations for Deploy App to give soldiers a
-              strong stack of services. These integrations are open source, just
-              like core Deploy App — and you are invited to collaborate with us.
+              {t("guidesFooter.devBody")}
             </p>
 
             <p className="mt-4 text-[11px] font-semibold tracking-widest text-primary uppercase">
-              Want to see your product here?
+              {t("guidesFooter.wantTitle")}
             </p>
             <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
-              OpenDefence aims to make Deploy App a true interface for deploying
-              apps to soldiers. That works when you can fork our core, build
-              your integration yourself, and then either contact us for official
-              integration status or agree to deliver your app to your
-              armed-forces customer on our open-source tech.
+              {t("guidesFooter.wantBody")}
             </p>
           </div>
         </details>

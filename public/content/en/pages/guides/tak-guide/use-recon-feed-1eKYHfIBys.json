@@ -6,26 +6,16 @@
   "locale": "en",
   "title": "Use RECON Feed",
   "breadcrumb": [
-    "TAK Clients",
+    "Platforms",
     "ATAK",
-    "Usage by Role",
+    "USAGE BY ROLE",
     "Fighter",
     "Use RECON Feed"
   ],
   "createdAt": "2026-01-23T21:12:33.341Z",
-  "updatedAt": "2026-04-12T10:05:30.082Z",
-  "headings": [
-    {
-      "depth": 2,
-      "text": "ATAK connected to Takserver - RECON Feed",
-      "id": "atak-connected-to-takserver---recon-feed"
-    }
-  ],
+  "updatedAt": "2026-06-14T13:12:56.341Z",
+  "headings": [],
   "blocks": [
-    {
-      "type": "html",
-      "html": "<p>(This tab should not be shown)</p>\n<ul>\n<li>Short slideshow on how to use RECON feed and what does it help.</li>\n<li>For instructions on Data Sync go to <a href=\"/doc/ce3ace12-abf3-4d66-a94b-8a5cbccfeebb\">Data Sync</a></li>\n</ul>\n<h1 id=\"atak---recon-feed---fighter-usage-role\"><a href=\"#atak---recon-feed---fighter-usage-role\">ATAK - RECON Feed - Fighter Usage Role</a></h1>\n<h2 id=\"atak-connected-to-takserver---recon-feed\"><a href=\"#atak-connected-to-takserver---recon-feed\">ATAK connected to Takserver - RECON Feed</a></h2>"
-    },
     {
       "type": "slideset",
       "source": "legacy",
@@ -33,44 +23,62 @@
         {
           "title": "What is RECON feed",
           "layout": "text",
-          "html": "<ul>\n<li>RECON Feed is automatically created Data Sync feed for Deploy App</li>\n<li>It is used for reviewed and verified intelligence and observations</li>\n<li>Basically the current enemy locations are other critical information</li>\n</ul>",
+          "html": "<ul>\n<li>RECON Feed is automatically created Data Sync feed for Deploy App</li>\n<li>It is used for reviewed and verified intelligence and observations</li>\n<li>Basically the feed shows confirmed neutral or enemy observations.</li>\n</ul>",
           "images": []
         },
         {
           "title": "RECON feed basics",
           "layout": "text",
-          "html": "<ul>\n<li>RECON Feed is meant to be managed by Command Post</li>\n<li>Fighters have read only access to it</li>\n<li>Every user in the Deploy App is subscribed to RECON Feed</li>\n</ul>",
+          "html": "<ul>\n<li>RECON Feed is meant to be managed by Command Post.</li>\n<li>Fighters have read only access to it.</li>\n<li>Every ATAK user in a Deploy App TAK server is automatically subscribed to RECON Feed.\nA readily available &#x26; subscribed Recon Feed is seen here.</li>\n</ul>",
           "images": []
         },
         {
           "title": "RECON Feed updating information 1",
-          "layout": "text",
-          "html": "<ul>\n<li>Fighters send observations to Command Post via Observation feed or via GeoChat to HQ role users</li>\n</ul>",
-          "images": []
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Fighters send observations to Command Post via GeoChat to HQ role users, or via an Observations feed if your unit uses such.</li>\n<li>Send your marker to either <strong>to role -> HQ</strong> (shown in pic) or an Observations feed.\nBlue43 here is sending his new Marker to the HQ role.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/13ed3f60a7fb002f.webp",
+              "width": 1080,
+              "height": 2340
+            }
+          ]
         },
         {
           "title": "RECON Feed updating information 2",
-          "layout": "text",
-          "html": "<ul>\n<li>Command Post Reviews the received information, verifies it and if needed forwards it to the RECON Feed</li>\n<li>CP Also keeps track on information on the feed and old, unrelevant information is removed from the feed</li>\n</ul>",
-          "images": []
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Command Post Reviews the received information, verifies it and, if needed, forwards relevant info to the RECON Feed.</li>\n<li>CP also keeps track on information on the feed and old, unrelevant information is removed from the feed.\nAn iTAK HQ user acting as CP is seen here adding Blue43's marker to the RECON feed.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/224048abc6268778.webp",
+              "width": 1290,
+              "height": 2796
+            }
+          ]
         },
         {
           "title": "RECON Feed updating information 3",
-          "layout": "text",
-          "html": "<ul>\n<li>Added information will appear for all users</li>\n<li>Removed information will dissappear from the users.</li>\n</ul>",
-          "images": []
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Added information will appear for all users</li>\n<li>Removed information will disappear from the users.\nOur freshly added marker from Blue43 shown from the RECON feed.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/0348a5da252e244d.webp",
+              "width": 1080,
+              "height": 2340
+            }
+          ]
         },
         {
           "title": "RECON Feed recycling",
-          "layout": "text",
-          "html": "<ul>\n<li>Lots of information is placed on the RECON feed during active use and it needs to be recycled to clear out old information</li>\n<li>Recycling is done by Command Post and Fighters get invited to the new feeds with regular intervals</li>\n</ul>",
-          "images": []
-        },
-        {
-          "title": "You understand now basics of RECON feed",
-          "layout": "text",
-          "html": "<ul>\n<li>You can close this guide.</li>\n</ul>",
-          "images": []
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Lots of information is placed on the RECON feed during active use and it needs to be recycled to clear out old information.</li>\n<li>Recycling is done by Command Post and Fighters get invited to the new feeds with regular intervals.\nA refreshed RECON feed available is shown here.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/22ab27310be30c0d.webp",
+              "width": 1080,
+              "height": 2340
+            }
+          ]
         }
       ]
     },

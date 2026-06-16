@@ -103,9 +103,16 @@ export function SlideDeck({ block, bindSlideParam = false }: SlideDeckProps) {
     },
     [navigate, params.locale],
   );
+  const isLast = selected === block.slides.length - 1;
+  // Forward from the last slide continues into the next chapter, so the Next
+  // button never dead-ends — same flow as the drag-past-edge gesture below.
+  const goForward = () => {
+    if (!isLast) embla?.scrollNext();
+    else goToPage(position?.next);
+  };
   useEdgePageFlow(embla, {
     isFirst: selected === 0,
-    isLast: selected === block.slides.length - 1,
+    isLast,
     onNextPage: () => goToPage(position?.next),
     onPrevPage: () => goToPage(position?.prev),
   });
@@ -232,10 +239,10 @@ export function SlideDeck({ block, bindSlideParam = false }: SlideDeckProps) {
         <Button
           variant="outline"
           size="sm"
-          onClick={() => embla?.scrollNext()}
-          disabled={selected === block.slides.length - 1}
+          onClick={goForward}
+          disabled={isLast && !position?.next}
         >
-          {t("reader.next")}
+          {isLast && position?.next ? t("reader.nextPage") : t("reader.next")}
           <ChevronRight />
         </Button>
       </div>

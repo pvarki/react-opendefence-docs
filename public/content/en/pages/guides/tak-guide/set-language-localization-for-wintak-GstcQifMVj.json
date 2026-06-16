@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "id": "8d02b881-5071-435c-b1f3-7d3de6e70f63",
+  "slug": "set-language-localization-for-wintak-GstcQifMVj",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "Set language & localization for WinTAK",
+  "breadcrumb": [
+    "Platforms",
+    "WinTAK",
+    "START & CONNECT",
+    "Set language & localization for WinTAK"
+  ],
+  "createdAt": "2025-12-05T22:05:59.853Z",
+  "updatedAt": "2026-06-16T10:55:48.465Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>WinTAK requires Windows to be set to <strong>English</strong> with the <strong>United States</strong> region — do this <em>before</em> you install the app. Work in pairs if you can: one reads, one drives.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Search for Time and Language",
+          "layout": "image-bottom",
+          "html": "<p>Open the Windows settings: type <strong>Time and Language</strong> into the search bar (bottom-left).</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/b591cd09ae92c086.webp",
+              "width": 320,
+              "height": 202
+            }
+          ]
+        },
+        {
+          "title": "Open Region settings",
+          "layout": "image-bottom",
+          "html": "<p>First change the region. In <strong>Time and Language</strong>, select <strong>Region</strong> from the sidebar.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/487040977533ee91.webp",
+              "width": 418,
+              "height": 174
+            }
+          ]
+        },
+        {
+          "title": "Set region to United States",
+          "layout": "image-bottom",
+          "html": "<p>Set the country or region to <strong>United States</strong>. Make sure the regional format is also <strong>English (United States)</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/6cf7b296d8f78493.webp",
+              "width": 656,
+              "height": 330
+            }
+          ]
+        },
+        {
+          "title": "Set the display language to English (US)",
+          "layout": "image-bottom",
+          "html": "<p>Back in the sidebar, select <strong>Language</strong>. Set the Windows display language to <strong>English (United States)</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/c96a80f0dfa8ce4b.webp",
+              "width": 428,
+              "height": 278
+            }
+          ]
+        },
+        {
+          "title": "Sign out and back in",
+          "layout": "image-bottom",
+          "html": "<p>Finalize the display-language change by signing out and signing back in.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/fd1b084648d45844.webp",
+              "width": 306,
+              "height": 428
+            }
+          ]
+        },
+        {
+          "title": "Language set",
+          "layout": "image-bottom",
+          "html": "<p>If English is now your display language, the localization is complete. If English was <strong>not</strong> available to choose, the next two steps add it — otherwise you're ready to install WinTAK.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/3b6397c0e3004325.webp",
+              "width": 428,
+              "height": 98
+            }
+          ]
+        },
+        {
+          "title": "If English is missing: add a language pack",
+          "layout": "image-bottom",
+          "html": "<p>If English isn't in the display-language list, press <strong>Add a language</strong>, search for English, and press <strong>Install language pack</strong>. Wait for it to install.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/c2ee5ce82a350c99.webp",
+              "width": 306,
+              "height": 428
+            }
+          ]
+        },
+        {
+          "title": "Select English, then sign out and in",
+          "layout": "image-bottom",
+          "html": "<p>Once installed, select English as the display language as above, then sign out and back in. Windows is now localized — next, download and install WinTAK.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/12ebe55adc2ea8e3.webp",
+              "width": 428,
+              "height": 118
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

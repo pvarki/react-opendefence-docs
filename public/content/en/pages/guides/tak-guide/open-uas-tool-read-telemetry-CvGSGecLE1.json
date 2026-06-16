@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "id": "9e112593-309f-483e-a0f7-1127bd556065",
+  "slug": "open-uas-tool-read-telemetry-CvGSGecLE1",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "Open UAS Tool & Read Telemetry",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "Supported Plugins",
+    "UAS Tool",
+    "Open UAS Tool & Read Telemetry"
+  ],
+  "createdAt": "2026-06-15T19:49:07.036Z",
+  "updatedAt": "2026-06-15T19:49:07.036Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Find a drone on the network, open its feed, and read its altitude, battery and link without leaving ATAK.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Open the drone list",
+          "layout": "image-bottom",
+          "html": "<p>The UAS Tool Home Screen lists every drone on the network under <strong>Network UAS</strong>. Drones in <strong>UAS Observer</strong> mode have a black background; an <strong>Operator Connected</strong> drone sits on top with a blue background. Each entry shows signal strength and battery at a glance.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/e9c077ded52295a1.webp",
+              "width": 1067,
+              "height": 718
+            }
+          ]
+        },
+        {
+          "title": "Select a platform",
+          "layout": "image-bottom",
+          "html": "<p>Tap a drone to select it and open its ribbon. The ribbon exposes <strong>Platform Settings</strong>, <strong>Platform Health</strong>, <strong>Platform Information</strong> and <strong>Pan To</strong>. Only one drone can be selected at a time.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/0d6ec954c43b358a.webp",
+              "width": 1058,
+              "height": 860
+            }
+          ]
+        },
+        {
+          "title": "Open the UAS Display",
+          "layout": "image-bottom",
+          "html": "<p>Tap the <strong>Play</strong> button to open the UAS Full Motion Video (FMV) display. The video fills the screen with the <strong>Quick Flight Toolbar</strong> on top, the <strong>Instrument Panel</strong> (heading, horizon, GPS fix) on the right and the <strong>Lower Toolbar</strong> along the bottom.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/fec9ac33dde3223c.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Read the status overlay",
+          "layout": "image-bottom",
+          "html": "<p>The <strong>sUAS Metadata</strong> in the upper-left gives you the live numbers: remaining battery, connection strength, range and bearing from your position, and altitude (<strong>AGL</strong>). Check these before and during every flight.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/be8704e99d6e5ef9.webp",
+              "width": 720,
+              "height": 183
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "id": "95a82fb1-43ed-462c-bd0d-3d1aa69d7841",
+  "slug": "capture-broadcast-drone-video-UfMEqBjxec",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "Capture & Broadcast Drone Video",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "Supported Plugins",
+    "UAS Tool",
+    "Capture & Broadcast Drone Video"
+  ],
+  "createdAt": "2026-06-15T19:47:54.506Z",
+  "updatedAt": "2026-06-15T19:47:54.506Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Push your drone feed to the whole team, grab stills, and record video to your device straight from the UAS Tool toolbar.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Open Drone Utilities",
+          "layout": "image-bottom",
+          "html": "<p>Tap the <strong>Drone Utilities</strong> wrench icon on the lower toolbar to open the capture tools: Broadcast Video, Map Shot, Drone Shot, Record Video and Platform Settings.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/7d9a7786064a3b4e.webp",
+              "width": 2101,
+              "height": 1010
+            }
+          ]
+        },
+        {
+          "title": "Broadcast video to the team",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Broadcast ON</strong> to stream the feed to other TAK users over Wi-Fi or tactical radio. The button turns green when the stream is live. Teammates open it with <strong>Video</strong> on the UAS map marker radial.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/7d9a7786064a3b4e.webp",
+              "width": 2101,
+              "height": 1010
+            }
+          ]
+        },
+        {
+          "title": "Set up the broadcast",
+          "layout": "image-bottom",
+          "html": "<p>Long-press <strong>Broadcast On</strong> to open the broadcast settings. Set the <strong>Broadcast Size</strong>, <strong>Broadcast Bitrate</strong> and <strong>Video Broadcast Destination</strong> to match your network.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/7d9a7786064a3b4e.webp",
+              "width": 2101,
+              "height": 1010
+            }
+          ]
+        },
+        {
+          "title": "Drop a Mapshot on the map",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Mapshot</strong> to grab the current feed image and drop it as a picture marker on the map. A prompt lets you send it to the team, and it lands at the spot the drone was looking at.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/7d9a7786064a3b4e.webp",
+              "width": 2101,
+              "height": 1010
+            }
+          ]
+        },
+        {
+          "title": "Take a Drone Shot still",
+          "layout": "image-bottom",
+          "html": "<p>Tap the <strong>Drone Shot</strong> icon to capture a still straight from the platform's sensor and save it to the device.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/d805541f680adf29.webp",
+              "width": 118,
+              "height": 117
+            }
+          ]
+        },
+        {
+          "title": "Record video locally",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Record Video</strong> to start and stop recording the incoming feed. Clips save to the EUD and show up in ATAK's Video Player. Long-press the button to record to the EUD, the drone's SD card, or both.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/7d9a7786064a3b4e.webp",
+              "width": 2101,
+              "height": 1010
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

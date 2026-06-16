@@ -6,70 +6,108 @@
   "locale": "en",
   "title": "Downloading Maps for Offline use",
   "breadcrumb": [
-    "TAK Clients",
+    "Platforms",
     "ATAK",
-    "Advanced Features",
+    "Advanced Core Features",
     "Downloading Maps for Offline use"
   ],
   "createdAt": "2026-01-25T10:14:38.710Z",
-  "updatedAt": "2026-02-21T11:17:05.403Z",
-  "headings": [
-    {
-      "depth": 2,
-      "text": "ATAK connected to takserver - Basic view, toolbar, tools",
-      "id": "atak-connected-to-takserver---basic-view-toolbar-tools"
-    }
-  ],
+  "updatedAt": "2026-06-15T19:43:05.391Z",
+  "headings": [],
   "blocks": [
     {
       "type": "html",
-      "html": "<p>(This tab should not be shown)</p>\n<ul>\n<li>Maps / Mobile\n<ul>\n<li>Play button\n<ul>\n<li>Select area\n<ul>\n<li>Specify layers\n<ul>\n<li>Download</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n<h1 id=\"atak---basic-view-toolbar-tools\"><a href=\"#atak---basic-view-toolbar-tools\">ATAK - Basic view, toolbar, tools</a></h1>\n<h2 id=\"atak-connected-to-takserver---basic-view-toolbar-tools\"><a href=\"#atak-connected-to-takserver---basic-view-toolbar-tools\">ATAK connected to takserver - Basic view, toolbar, tools</a></h2>"
+      "html": "<p>Download map tiles onto your phone so the map keeps working with no signal.</p>"
     },
     {
       "type": "slideset",
-      "source": "legacy",
+      "source": "canonical",
       "slides": [
         {
-          "title": "Open ATAK",
-          "layout": "text",
-          "html": "<ul>\n<li>Open ATAK application</li>\n</ul>",
-          "images": []
+          "title": "Open Maps & Favorites",
+          "layout": "image-bottom",
+          "html": "<p>Tap the <strong>Maps &#x26; Favorites</strong> icon. It has three tabs: <strong>Imagery</strong>, <strong>Mobile</strong> and <strong>FAVS</strong> (favourites).</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/0eaa4d299fd7efcd.webp",
+              "width": 189,
+              "height": 126
+            }
+          ]
         },
         {
-          "title": "Basic view",
-          "layout": "text",
-          "html": "",
-          "images": []
+          "title": "Mark the area to download",
+          "layout": "image-bottom",
+          "html": "<p>On the <strong>Mobile</strong> tab toggle to <strong>Online</strong>, then tap <strong>Select Area</strong>. Pick <strong>Rectangle</strong>, <strong>Free Form</strong>, <strong>Lasso</strong> or <strong>Map Select</strong> and draw your region.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/95fa01e8259285c0.webp",
+              "width": 367,
+              "height": 170
+            }
+          ]
         },
         {
-          "title": "Basic Toolbar",
-          "layout": "text",
-          "html": "",
-          "images": []
+          "title": "Set the resolution",
+          "layout": "image-bottom",
+          "html": "<p>Drag the slider ends to set detail — <strong>coarse</strong> for fewer tiles, <strong>fine</strong> for sharper maps. ATAK shows the tile count; the limit is 850,000 tiles per download.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/bb7aba1816fd05a0.webp",
+              "width": 220,
+              "height": 100
+            }
+          ]
         },
         {
-          "title": "Basic Tools 1",
-          "layout": "text",
-          "html": "",
-          "images": []
+          "title": "Name it and download",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Download</strong>, name the tileset and tap <strong>OK</strong>. A progress bar appears; <strong>Cancel</strong> stops it. You can also add tiles to an existing set or save an overlay.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/233202f64b766362.webp",
+              "width": 220,
+              "height": 145
+            }
+          ]
         },
         {
-          "title": "Basic Tools 2",
-          "layout": "text",
-          "html": "",
-          "images": []
+          "title": "Switch to your offline maps",
+          "layout": "image-bottom",
+          "html": "<p>Toggle to <strong>Local</strong> to list your downloaded layers, nearest first. Tap one to use it as the map source — the map now works with no signal.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/95d8e7d780f95ad1.webp",
+              "width": 196,
+              "height": 181
+            }
+          ]
         },
         {
-          "title": "Done",
-          "layout": "text",
-          "html": "<ul>\n<li>You can close this guide.</li>\n</ul>",
-          "images": []
+          "title": "Manage and share imagery",
+          "layout": "image-bottom",
+          "html": "<p>The <strong>Imagery</strong> tab lists all your maps. Expand a category to <strong>Send</strong> a layer to other users or delete it. The <strong>Outline</strong> checkbox shows each layer's border.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/6a7e67ec50bffd9c.webp",
+              "width": 245,
+              "height": 192
+            }
+          ]
+        },
+        {
+          "title": "Bookmark a view",
+          "layout": "image-bottom",
+          "html": "<p>On <strong>FAVS</strong>, tap <strong>Add Current View</strong> to save your spot and its imagery. Tap a saved view to jump back, or <strong>Send</strong> it to share with your unit.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/6012d9b47815dff7.webp",
+              "width": 203,
+              "height": 188
+            }
+          ]
         }
       ]
-    },
-    {
-      "type": "html",
-      "html": "<p>After seeing Basic view, toolbar, tools, continue to <a href=\"/doc/6bf5c875-5082-4f7c-b28c-26b5eea8b0c5\">Blue force tracking</a></p>"
     }
   ]
 }

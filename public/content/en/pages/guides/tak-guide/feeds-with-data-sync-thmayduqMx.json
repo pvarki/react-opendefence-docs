@@ -6,39 +6,23 @@
   "locale": "en",
   "title": "Feeds with Data Sync",
   "breadcrumb": [
-    "TAK Clients",
+    "Platforms",
     "ATAK",
-    "Basic Features",
+    "Basic Core Features",
     "Feeds with Data Sync"
   ],
   "createdAt": "2025-12-05T22:06:22.487Z",
-  "updatedAt": "2026-02-28T11:13:05.697Z",
-  "headings": [
-    {
-      "depth": 2,
-      "text": "ATAK connected to takserver - Subscribe to RECON feed",
-      "id": "atak-connected-to-takserver---subscribe-to-recon-feed"
-    }
-  ],
+  "updatedAt": "2026-06-16T10:03:23.324Z",
+  "headings": [],
   "blocks": [
     {
-      "type": "html",
-      "html": "<h1 id=\"atak---data-sync\"><a href=\"#atak---data-sync\">ATAK - Data Sync</a></h1>\n<h2 id=\"atak-connected-to-takserver---subscribe-to-recon-feed\"><a href=\"#atak-connected-to-takserver---subscribe-to-recon-feed\">ATAK connected to takserver - Subscribe to RECON feed</a></h2>"
-    },
-    {
       "type": "slideset",
-      "source": "legacy",
+      "source": "canonical",
       "slides": [
-        {
-          "title": "Read Feeds using Data Sync",
-          "layout": "text",
-          "html": "<ul>\n<li>Data Sync lets you read (and share) map markers and more easily.</li>\n<li>Feeds are like map layers: subscribe and then tick to see or disable them.</li>\n</ul>",
-          "images": []
-        },
         {
           "title": "See What Feeds are Available",
           "layout": "image-bottom",
-          "html": "<ul>\n<li>Select Data Sync (arrows icon) on toolbar</li>\n</ul>",
+          "html": "<ul>\n<li>Data Sync lets you read (and share) map markers and more easily.</li>\n<li>Feeds are like map layers: subscribe and then tick to see or disable them.</li>\n<li>Select Data Sync (arrows icon) on toolbar .</li>\n</ul>",
           "images": [
             {
               "src": "/content/images/en/attachments/5e32c5f54248b72d.webp",
@@ -50,7 +34,7 @@
         {
           "title": "Subscribe to RECON feed",
           "layout": "image-bottom",
-          "html": "<ul>\n<li>Select your takserver (if many)</li>\n<li>Select the RECON feed</li>\n</ul>",
+          "html": "<p>The Deploy App TAK automatically creates a RECON feed. It is meant for fighters to receive coherent recon picture from the CP who upkeeps it.</p>\n<ul>\n<li>Select your takserver (if many)</li>\n<li>Select the RECON feed.</li>\n</ul>",
           "images": [
             {
               "src": "/content/images/en/attachments/6b7e8960e01ec760.webp",
@@ -62,7 +46,7 @@
         {
           "title": "Download & Sync",
           "layout": "image-bottom",
-          "html": "<ul>\n<li>Select Download &#x26; Sync to have it</li>\n</ul>",
+          "html": "<ul>\n<li>Select <strong>Download &#x26; Sync</strong> to subsscribe to this feed.</li>\n</ul>",
           "images": [
             {
               "src": "/content/images/en/attachments/4ca381418b7341b0.webp",
@@ -74,7 +58,7 @@
         {
           "title": "Feed - Connected",
           "layout": "image-bottom",
-          "html": "<ul>\n<li>Check that RECON feed mark is green</li>\n</ul>",
+          "html": "<ul>\n<li>Now check that RECON feed symbol (left to the 'RECON' title of the feed) is green.</li>\n<li>This indicates that the subscription was successful and you receive this feed continuously.</li>\n</ul>",
           "images": [
             {
               "src": "/content/images/en/attachments/761f96f700f37fa1.webp",
@@ -84,22 +68,60 @@
           ]
         },
         {
-          "title": "There's more",
+          "title": "Creating, managing and subscribing feeds",
           "layout": "text",
-          "html": "<ul>\n<li>Creating, sharing and subscribing Feeds for eg. planning then executing a mission is easy.</li>\n<li>We offer an out of the box setup for efficient data sharing for a military unit.</li>\n</ul>",
+          "html": "<ul>\n<li>Creating, sharing and subscribing Feeds for eg. sharing a plan to a mission is easy.</li>\n<li>See Advanced features - <strong>'Create &#x26; Manage Feeds'</strong> for further information.</li>\n</ul>\n<p>After successful connection to RECON feed, continue to <a href=\"/doc/82c77545-7b47-4c8a-bf4b-2701a1bb3943\">Blue force tracking</a></p>",
           "images": []
         },
         {
-          "title": "Done",
-          "layout": "text",
-          "html": "<ul>\n<li>You can close this guide.</li>\n</ul>",
-          "images": []
+          "title": "Create a Data Package",
+          "layout": "image-bottom",
+          "html": "<p>Bundle markers, shapes and routes into a Data Package so the whole team shares the same picture.</p>\n<ul>\n<li>Open <strong>Data Package</strong>, select <strong>+</strong>, then pick <strong>Map Select</strong>, <strong>File Select</strong>, <strong>Overlays</strong> or <strong>Lasso</strong> to add items.</li>\n<li>Tap items on the map (or browse files) to add them to the package.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/94a86f56455541ce.webp",
+              "width": 400,
+              "height": 185
+            }
+          ]
+        },
+        {
+          "title": "Save the Data Package",
+          "layout": "image-bottom",
+          "html": "<p>A red asterisk on the package name means there are unsaved changes.</p>\n<ul>\n<li>Set a <strong>Name</strong> and any <strong>Remarks</strong>, then select <strong>Done</strong>.</li>\n<li>Select the <strong>Save</strong> icon to store the package on your device.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/c0fbb4907e86065e.webp",
+              "width": 236,
+              "height": 126
+            }
+          ]
+        },
+        {
+          "title": "Send it to Others",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Select the <strong>Send</strong> icon next to the package, then choose how to share it.</li>\n<li>Send to a <strong>Contact</strong> (TAK Contact), push it to the <strong>Select Server</strong>, hand it to another app with <strong>Choose App</strong>, or <strong>Export</strong> the file.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/53fa5bb12234bad2.webp",
+              "width": 220,
+              "height": 82
+            }
+          ]
+        },
+        {
+          "title": "Download a Package from the Server",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>In Data Package, select the <strong>Download</strong> icon to list packages stored on the TAK Server.</li>\n<li>Pick a package from <strong>Available Packages</strong> to pull it onto your device.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/29ac7189339d6a1c.webp",
+              "width": 310,
+              "height": 224
+            }
+          ]
         }
       ]
-    },
-    {
-      "type": "html",
-      "html": "<p>After successful connection to RECON feed, continue to <a href=\"/doc/82c77545-7b47-4c8a-bf4b-2701a1bb3943\">Blue force tracking</a></p>"
     }
   ]
 }

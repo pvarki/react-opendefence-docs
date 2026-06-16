@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "id": "0a4fa578-1ecd-4395-9827-e2c8a9eb226c",
+  "slug": "go-to-coordinates-x7AdN7ZMgn",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "Go To Coordinates",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "ADDITIONAL FEATURES",
+    "Navigation & Coordinates",
+    "Go To Coordinates"
+  ],
+  "createdAt": "2026-06-15T19:40:37.539Z",
+  "updatedAt": "2026-06-15T20:53:46.342Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Jump the map straight to a grid reference, lat-lon, or street address - and drop a marker there if you want.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Open Go To and pick a format",
+          "layout": "image-bottom",
+          "html": "<p>Select the <strong>Go To</strong> icon. Pick your format tab: <strong>MGRS</strong> (grid), <strong>DD</strong> / <strong>DM</strong> / <strong>DMS</strong> (lat-lon), <strong>UTM</strong>, or <strong>ADDR</strong> (address).</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/cde56dc1fb341efa.webp",
+              "width": 249,
+              "height": 162
+            }
+          ]
+        },
+        {
+          "title": "Enter the coordinates",
+          "layout": "image-bottom",
+          "html": "<p>Type the location into the fields. Tap <strong>Cycle</strong> to combine Easting/Northing into one field, then the whole coordinate into one large field for fast entry.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/457be0f5970b3ee9.webp",
+              "width": 224,
+              "height": 57
+            }
+          ]
+        },
+        {
+          "title": "Set the elevation",
+          "layout": "image-bottom",
+          "html": "<p>Enter elevation in the space provided, or tap <strong>Pull Elevation</strong> to fill it from the map's elevation source if one is loaded.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/cde56dc1fb341efa.webp",
+              "width": 249,
+              "height": 162
+            }
+          ]
+        },
+        {
+          "title": "Jump to an address",
+          "layout": "image-bottom",
+          "html": "<p>On the <strong>ADDR</strong> tab, type the address and tap <strong>Find</strong>. It drops a marker or pans the map there. Tick <strong>Set the address as the title</strong> to use the address as the marker label.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/b6d2f7ab5a39c7d7.webp",
+              "width": 336,
+              "height": 45
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

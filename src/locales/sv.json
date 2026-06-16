@@ -3,6 +3,7 @@
     "title": "OpenDefence Docs",
     "tagline": "Lär dig Deploy App och OpenDefence-stacken"
   },
+  "docsBuild": "Dokumentationsbygge {{date}} · {{commit}}",
   "nav": {
     "home": "Hem",
     "deployApp": "Deploy App",
@@ -11,7 +12,8 @@
     "search": "Sök",
     "contents": "Innehåll",
     "back": "Tillbaka",
-    "advanced": "Avancerat"
+    "advanced": "Avancerat",
+    "breadcrumb": "Sökväg"
   },
   "home": {
     "userCard": "Jag använder Deploy App",
@@ -22,7 +24,9 @@
     "devCardDesc": "Arkitektur, integrationer, API-referens, driftguider",
     "continueReading": "Fortsätt läsa",
     "powerCard": "Jag är en avancerad användare",
-    "powerCardDesc": "Använd produkterna på avancerade sätt"
+    "powerCardDesc": "Använd produkterna på avancerade sätt",
+    "demoCard": "Prova demon",
+    "demoCardDesc": "Se hur Deploy App fungerar och känns"
   },
   "reader": {
     "pageOf": "Sida {{current}} av {{total}}",
@@ -46,6 +50,33 @@
     "noResults": "Inga resultat",
     "searching": "Söker…"
   },
+  "blocks": {
+    "youtubeTitle": "YouTube-video"
+  },
+  "devShelf": {
+    "introduction": "Introduktion",
+    "operate": "Drift",
+    "contribute": "Bidra",
+    "integrate": "Integrera"
+  },
+  "apiRef": {
+    "title": "API-referens",
+    "empty": "Inga API-specifikationer har synkroniserats ännu.",
+    "descGuides": "rasenmaeher-api och integrations-API:er (OpenAPI)",
+    "descDev": "Kärn-rmapi och produktintegrations-API:er (OpenAPI)"
+  },
+  "releases": {
+    "title": "Versioner",
+    "empty": "Inga versioner har synkroniserats ännu.",
+    "desc": "Ändringsloggar och versionsinformation per komponent",
+    "sectionTitle": "API-referens och versioner",
+    "changelogs": "Ändringsloggar",
+    "underDevelopment": "Under utveckling",
+    "releaseNotes": "Versionsinformation",
+    "notes": "Anteckningar",
+    "changelog": "Ändringslogg",
+    "nothingYet": "Det finns inget att visa här ännu."
+  },
   "common": {
     "loading": "Laddar…",
     "error": "Något gick fel",
@@ -54,7 +85,8 @@
     "goHome": "Gå till startsidan",
     "language": "Språk",
     "updateAvailable": "Dokumentationen uppdaterad",
-    "reload": "Ladda om"
+    "reload": "Ladda om",
+    "close": "Stäng"
   },
   "platform": {
     "label": "Plattform",
@@ -67,6 +99,7 @@
   },
   "footer": {
     "lead": "OpenDefence är ett nationellt försvarsprojekt med öppen källkod i Försvarsmaktens tjänst, som syftar till att erbjuda soldater C2-tjänster med förmåga till multidomänoperationer på ett enkelt och interoperabelt sätt.",
+    "lead2": "Projektets hörnsten är Deploy App, som tar emot produktintegrationer, definierar hur servrar startas med dem och låter soldater enkelt använda dem.",
     "tellMore": "Berätta mer",
     "core": "Kärnan i OpenDefence-stacken är Deploy App. För användare beskrivs den enklast som en app för att lägga till och hantera användare; för utvecklare som ett gränssnitt att integrera sin applikation med — för att få den i händerna på soldater.",
     "easyTitle": "Målet: enkel åtkomst",
@@ -78,6 +111,27 @@
     "qualityTitle": "Målet: hög kvalitet och säkerhet",
     "qualityBody": "Deploy App och alla officiella produktintegrationer måste klara ett verkligt krig — inget mindre. Det kräver främsta kvalitet, enkelhet och verklighetsbaserad säkerhet. Vi utvecklar eller släpper inte funktioner som inte håller dessa krav — då är vi hellre utan dem.",
     "siteUnderDev": "Webbplatsen är under utveckling."
+  },
+  "guidesFooter": {
+    "lead": "Deploy App har ett antal officiella produktintegrationer, som var och en för närvarande utvecklas av OpenDefence. Här hittar du guider för att använda de officiella produkterna effektivt.",
+    "devTitle": "OpenDefence som integrationsutvecklare",
+    "devBody": "Vi utvecklar produktintegrationer för Deploy App för att ge soldater en stark stack av tjänster. Dessa integrationer är öppen källkod, precis som Deploy Apps kärna — och du är inbjuden att samarbeta med oss.",
+    "wantTitle": "Vill du se din produkt här?",
+    "wantBody": "OpenDefence strävar efter att göra Deploy App till ett verkligt gränssnitt för att distribuera appar till soldater. Det fungerar när du kan forka vår kärna, bygga din integration själv och sedan antingen kontakta oss för officiell integrationsstatus eller komma överens om att leverera din app till din försvarsmaktskund på vår teknik med öppen källkod.",
+    "products": {
+      "tak": "Utvecklad av TAK Product Center (TPC), en amerikansk myndighet. Den OpenDefence-utvecklade integrationen kopplar dina ATAK-användare till servern via en självbetjäning med dubbeltryck — ja, tryck på två knappar så är du inne.",
+      "matrix": "Ett öppet, decentraliserat meddelandeprotokoll från Matrix.org-stiftelsen; klienter som Element X leds av New Vector Ltd. Den OpenDefence-utvecklade integrationen låter användare ansluta sin Element X-klient till den Synapse-server som följer med Deploy App genom att helt enkelt klistra in serveradressen.",
+      "mediamtx": "En realtidsmediaserver: en videodelningstjänst som låter dig snabbt dela video från t.ex. drönaroperatörer. Den OpenDefence-utvecklade integrationen låter dig börja strömma med dina OpenTAK ICU- och UAS Tool-applikationer genom att trycka på en importinställningsknapp en gång.",
+      "cryptpad": "Utvecklad av XWiki SAS är CryptPad en slutpunkt-till-slutpunkt-krypterad samarbets- och fildelningssvit som används av bland andra Europeiska kommissionen."
+    }
+  },
+  "devFooter": {
+    "leadBefore": "Den här utvecklardokumentationen underhålls av OpenDefences personal. Den är ",
+    "leadEmphasis": "för närvarande",
+    "leadAfter": " under snabb utveckling och kan innehålla fel, avbrott och andra avvikelser."
+  },
+  "advancedFooter": {
+    "lead": "Dessa wikier ger avancerad information om produkter i syfte att fördjupa din förståelse för dem och deras kapacitet. De utvecklas av våra seniora experter i communityn."
   },
   "contents": {
     "siteTitle": "Webbplatsens innehåll",
@@ -128,6 +182,17 @@
       "goal3Title": "Integrationshubben",
       "goal3Body": "Varje officiell OpenDefence-produkt integreras via Deploy App. Att lägga till en ny tjänst är en konfigurationsuppgift, inte en utvecklingsuppgift — operatörer kan driftsätta godkända integrationer på minuter.",
       "copyright": "Deploy App & denna webbplats: © OpenDefence"
+    }
+  },
+  "clientFooter": {
+    "atak": {
+      "lead": "ATAK är flaggskeppsapplikationen i TAK-ekosystemet. Det finns några så kallade varianter av ATAK — CIVTAK, MilTAK och nationella TAK-appar. De är samma applikation, men de accepterar endast specifikt signerade plugin: en MilTAK-installation accepterar MilTAK-signerade plugin och avvisar andra."
+    },
+    "itak": {
+      "lead": "iTAK är iOS-versionen av ATAK och ger den fullständiga TAK-lägesuppfattningsupplevelsen till iPhone och iPad. Den delar samma serverprotokoll och dataformat som ATAK, så ATAK- och iTAK-användare ser varandra på samma karta."
+    },
+    "wintak": {
+      "lead": "WinTAK är Windows-skrivbordsklienten för TAK-ekosystemet, utformad för användning i kommandoplatser och ledningscentraler där ett helskärmskartgränssnitt och ett tangentbordsdrivet arbetsflöde föredras framför en mobil enhet."
     }
   }
 }

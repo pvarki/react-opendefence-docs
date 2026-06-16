@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "id": "ebc771ea-9960-441b-930e-b29757957866",
+  "slug": "manage-contacts-URumWb83Ox",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "Manage Contacts",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "Advanced Core Features",
+    "Manage Contacts"
+  ],
+  "createdAt": "2026-06-15T19:41:05.485Z",
+  "updatedAt": "2026-06-15T21:18:56.790Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Find who you can reach, how to reach them, and pull up a callsign's details without leaving the map.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Open the Contacts list",
+          "layout": "image-bottom",
+          "html": "<p>Open the Contacts tool to see everyone on the network. The last column shows each callsign's default communication type. Use <strong>Unread Only</strong> and <strong>Show All</strong> at the bottom to limit the list.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/b62f7fec1b4a8100.webp",
+              "width": 189,
+              "height": 192
+            }
+          ]
+        },
+        {
+          "title": "Filter by communication type",
+          "layout": "image-bottom",
+          "html": "<p>Tap the arrow next to <strong>Contacts</strong> at the top of the list. Pick a type — <strong>Data Package</strong>, <strong>GeoChat</strong>, <strong>Email</strong>, <strong>Phone</strong>, <strong>SMS</strong>, <strong>VoIP</strong> or <strong>XMPP</strong> — to show only callsigns reachable that way.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/846f358d5092baf8.webp",
+              "width": 175,
+              "height": 219
+            }
+          ]
+        },
+        {
+          "title": "Filter and favourite callsigns",
+          "layout": "image-bottom",
+          "html": "<p>Use multi-select to tick callsigns and remove them from the list and map; enable <strong>Hide Filtered Contacts</strong> to keep them off. To favourite a contact, tap the <strong>Star</strong> icon, tap the <strong>+</strong> icon, choose the contact(s), then tap <strong>Add</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/4222d8488a125ceb.webp",
+              "width": 196,
+              "height": 196
+            }
+          ]
+        },
+        {
+          "title": "Sort and search",
+          "layout": "image-bottom",
+          "html": "<p>Tap the <strong>Sort</strong> icon to reorder the list — alphabetically, by connection status, by unread messages or by distance from you. Each tap changes the sort. Tap the <strong>Search</strong> icon and type to jump to a specific callsign.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/550b421a93bc6ad0.webp",
+              "width": 189,
+              "height": 157
+            }
+          ]
+        },
+        {
+          "title": "Open a contact profile card",
+          "layout": "image-bottom",
+          "html": "<p>Tap the second-to-last column for any callsign to open its profile card. It shows role, software version, node type, default connector, last report time, battery, location and the comms types available for that contact.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/934bfbdf0fc9ebd2.webp",
+              "width": 178,
+              "height": 200
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

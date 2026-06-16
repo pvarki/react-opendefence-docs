@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "id": "4271e471-e742-452d-be4f-7860bc64bd93",
+  "slug": "create-a-report-FB38XVNhaL",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "Create a Report",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "Supported Plugins",
+    "Reports",
+    "Create a Report"
+  ],
+  "createdAt": "2026-06-15T19:50:29.608Z",
+  "updatedAt": "2026-06-15T19:50:29.608Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Build and send a structured report from ATAK so your HQ gets the picture in a known format, saved locally or pushed straight to the TAK Server.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Open the Reports tool",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Reports</strong> in the toolbar. The Reports panel opens with <strong>Search</strong>, <strong>Multi-select</strong>, <strong>Sort</strong>, <strong>Create A Report</strong>, <strong>Editor</strong>, <strong>Visibility</strong> and <strong>Delete All</strong>. You do not need a TAK Server connection to create one.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/9d58fe854259f743.webp",
+              "width": 422,
+              "height": 51
+            }
+          ]
+        },
+        {
+          "title": "Start a new report",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Create A Report</strong>. The <strong>Report Category</strong> prompt appears. Pick the report type that fits, for example <strong>Counter Intel</strong>, <strong>DHS</strong>, <strong>Surveillance</strong> or <strong>Custom</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/f7cd973673176e13.webp",
+              "width": 540,
+              "height": 271
+            }
+          ]
+        },
+        {
+          "title": "Fill in the fields",
+          "layout": "image-bottom",
+          "html": "<p>Work down the form and complete each field. Required fields show in <strong>red text</strong> until filled. Add a <strong>Title</strong>, check the <strong>DateTime</strong>, and use <strong>Tags</strong> to make the report easy to find later.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/e3df4f92a1bd6213.webp",
+              "width": 424,
+              "height": 375
+            }
+          ]
+        },
+        {
+          "title": "Set the location",
+          "layout": "image-bottom",
+          "html": "<p>Use the <strong>pencil</strong> icon on the <strong>Location</strong> row to set or edit the report position, then add a <strong>Location Description</strong> if it helps. The grid reference is filled in automatically.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/e3df4f92a1bd6213.webp",
+              "width": 424,
+              "height": 375
+            }
+          ]
+        },
+        {
+          "title": "Add attachments",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>+ Add New Attachment</strong> to attach a photo, video or file from the device. Tap the <strong>Delete</strong> icon next to any item to remove it.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/40a838387550224b.webp",
+              "width": 526,
+              "height": 184
+            }
+          ]
+        },
+        {
+          "title": "Save, upload or send",
+          "layout": "image-bottom",
+          "html": "<p>When finished, tap <strong>Save &#x26; Close</strong> to keep a local copy, or <strong>Upload</strong> to publish to the <strong>TAK Server</strong>. The Send dialog can also push the report to a <strong>Contact</strong>, <strong>Cloud/FTP</strong>, another app, or <strong>Export</strong> it.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/b8b6eb329179698a.webp",
+              "width": 800,
+              "height": 244
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

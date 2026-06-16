@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "id": "973ac63e-7215-46ce-891b-297b77cc1548",
+  "slug": "get-location-with-red-x-14YkJ0qaz7",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "Get Location with Red X",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "ADDITIONAL FEATURES",
+    "Navigation & Coordinates",
+    "Get Location with Red X"
+  ],
+  "createdAt": "2026-06-15T19:40:31.706Z",
+  "updatedAt": "2026-06-15T20:53:46.785Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Read the exact coordinates and elevation of any point on the map by dropping the Red X on it.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Turn on the Red X tool",
+          "layout": "image-bottom",
+          "html": "<p>Tap the <strong>White X</strong> on the toolbar to toggle the Red X tool into a movable state. The icon turns yellow.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/2ddeb4d931832a3b.webp",
+              "width": 385,
+              "height": 187
+            }
+          ]
+        },
+        {
+          "title": "Tap to read a location",
+          "layout": "image-bottom",
+          "html": "<p>While the icon is yellow, tap anywhere on the map and the Red X jumps there. The widget in the upper right shows that point's coordinates, elevation and range and bearing.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/2ddeb4d931832a3b.webp",
+              "width": 385,
+              "height": 187
+            }
+          ]
+        },
+        {
+          "title": "Lock or disable it",
+          "layout": "image-bottom",
+          "html": "<p>Tap the toolbar icon again to lock the Red X to its current spot. Long press the <strong>Red X</strong> icon on the toolbar to disable the tool. Note: the Red X is not saved when ATAK is closed and reopened.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/2ddeb4d931832a3b.webp",
+              "width": 385,
+              "height": 187
+            }
+          ]
+        },
+        {
+          "title": "Open the radial menu for more",
+          "layout": "image-bottom",
+          "html": "<p>Tap the <strong>Red X</strong> on the map to open its radial menu. From here you can:</p>\n<ul>\n<li><strong>Fine Adjust</strong> the position</li>\n<li>drop a <strong>Range and Bearing Line</strong></li>\n<li>turn on the <strong>Compass Overlay</strong> or <strong>Polar Coordinates</strong></li>\n<li><strong>Pair to Self</strong> or <strong>Place a Marker</strong></li>\n</ul>\n<p>Long press the yellow arrow to reach the sub-radial menus.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/a73e4b6e1f10e24f.webp",
+              "width": 250,
+              "height": 207
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

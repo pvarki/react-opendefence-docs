@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "495a4737-8de9-4601-8900-268d2ac9d049",
+  "slug": "export-download-manage-0NPPYBJSNP",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "Export, download & manage",
+  "breadcrumb": [
+    "Platforms",
+    "WinTAK",
+    "Supported Plugins",
+    "TAK Replay",
+    "Export, download & manage"
+  ],
+  "createdAt": "2026-06-16T10:21:30.269Z",
+  "updatedAt": "2026-06-16T10:21:30.269Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Recorded tracks can be exported, pulled from a TAK Server, and managed from the recordings folder.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Export tracks",
+          "layout": "image-bottom",
+          "html": "<p>Export a recording's moved-marker tracks as <strong>GPX</strong>, <strong>KML</strong> or <strong>KMZ</strong> to <strong>Documents > WinTAK > Export</strong>. All marker types are supported except Vehicle Outlines and Vehicle Models. A re-imported track appears on the map, and its marker follows the track during playback.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/feb224de8f57550b.webp",
+              "width": 336,
+              "height": 196
+            }
+          ]
+        },
+        {
+          "title": "Download events from a TAK Server",
+          "layout": "image-bottom",
+          "html": "<p>Create a recording from past server events (within a 24-hour window). Define a map region, choose a <strong>Start</strong> and <strong>End</strong> date/time (defaults to a two-hour block ending now), pick the <strong>Server</strong> if more than one is connected, then <strong>Download</strong> and <strong>OK</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/4d6a449c80919394.webp",
+              "width": 207,
+              "height": 287
+            }
+          ]
+        },
+        {
+          "title": "Manage recordings & preferences",
+          "layout": "image-bottom",
+          "html": "<p>Recordings (.cpr) are stored under <strong>AppData > Roaming > WinTAK > Databases > TakReplay</strong>; use <strong>Open Recordings Folder</strong> to view them — you can also drop .cpr files in directly. In <strong>Settings / Preferences</strong> set <strong>Auto Record</strong> (record on startup), <strong>Pan to Map Events</strong>, and the <strong>Recordings Directory</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/08e997c3ea2e456e.webp",
+              "width": 356,
+              "height": 279
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

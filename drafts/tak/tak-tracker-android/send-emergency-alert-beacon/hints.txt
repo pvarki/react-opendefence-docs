@@ -1,0 +1,6 @@
+# Authoring notes — NOT published. One line per screenshot.
+# Source: TAK_Tracker_User_Guide.pdf (US TPC, v8.1.0), "Emergency Alert Beacon" p.7
+01: Map widget showing an alert location/bearing from own marker (p07-000)
+02: Emergency Beacon menu — 911 Alert / Geo-fence Breached / Ring the Bell / In Contact (p07-001)
+03: Confirmation — slide both switches right, then OK (p07-002)
+04: Cancel Alert chosen from the drop-down, then slide + OK (p07-003)

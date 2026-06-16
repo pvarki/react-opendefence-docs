@@ -1,0 +1,15 @@
+sequenceDiagram
+    actor F as Fighters
+    actor OB as Observer
+    participant RF as RECON Feed
+    participant CP as CP (HQ role)
+    OB->>OB: 0. Make an observation
+    Note over RF,CP: Marked as an Unknown Symbol with description
+    OB->>CP: 1. Send symbol to HQ
+    Note over CP: Users with the HQ role receive it
+    CP->>CP: 2. Add interpretation to symbol
+    CP->>RF: 3. Send symbol to the Feed
+    Note over F,CP: All users can read the read-only RECON Feed
+    RF->>F: 4. Fighters see the symbol in the recon feed
+    CP->>CP: (5. Edit or remove the symbol)
+    Note over F,CP: Symbol automatically updated for all

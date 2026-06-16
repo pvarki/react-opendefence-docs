@@ -1,0 +1,11 @@
+sequenceDiagram
+    actor CP as CP (HQ role)
+    participant M as Messaging (GeoChat / Matrix)
+    participant RF as RECON Feed
+    participant PF as PLAN Feeds
+    participant BF as BLUFOR Feed
+    CP->>M: 4. order & gain information
+    CP->>RF: 5. build — our knowledge of the AO
+    CP->>PF: 6. create — describe operations
+    CP->>BF: 7. approach routes & activities
+    Note over RF,BF: Fighters then receive these feeds

@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "id": "a5e06343-ceaf-4102-8dcc-64d6a2d53f40",
+  "slug": "control-location-providers-WuJJaCfIYG",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "Control Location Providers",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "ADDITIONAL FEATURES",
+    "Navigation & Coordinates",
+    "Control Location Providers"
+  ],
+  "createdAt": "2026-06-15T19:40:03.611Z",
+  "updatedAt": "2026-06-15T20:53:48.159Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Pick where ATAK gets your position from — internal GPS, Wi-Fi/cell, or an external receiver — so your dot on the map stays accurate.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Choose your position source",
+          "layout": "image-bottom",
+          "html": "<p>Open the <strong>Location Input Manager</strong> to see every provider with a short description. Tick the <strong>Enabled</strong> checkbox to turn a source on or off:</p>\n<ul>\n<li><strong>Internal GNSS/GPS Receiver</strong> — the device's own GPS chip.</li>\n<li><strong>WiFi/Cell Signal Derived (NETD)</strong> — position from cell towers and Wi-Fi.</li>\n<li><strong>Serial Monitor Input</strong> — an external/serial GPS receiver.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/c7f96abb7f4c2edb.webp",
+              "width": 299,
+              "height": 314
+            }
+          ]
+        },
+        {
+          "title": "Set the priority order",
+          "layout": "image-bottom",
+          "html": "<p>Drag the grey bar on the left of a provider up or down to reorder it. ATAK uses the first provider in the list and falls back to the next one if it can't get a fix.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/c7f96abb7f4c2edb.webp",
+              "width": 299,
+              "height": 314
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

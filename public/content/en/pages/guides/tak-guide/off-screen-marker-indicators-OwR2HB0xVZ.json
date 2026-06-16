@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "id": "8daa5a35-5b6d-4234-8566-ad7f9a6413db",
+  "slug": "off-screen-marker-indicators-OwR2HB0xVZ",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "Off-Screen Marker Indicators",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "ADDITIONAL FEATURES",
+    "Navigation & Coordinates",
+    "Off-Screen Marker Indicators"
+  ],
+  "createdAt": "2026-06-15T19:41:23.270Z",
+  "updatedAt": "2026-06-15T20:53:47.674Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Turn on arrows that point to nearby markers sitting just off the edge of your map view, so you know what is around you without zooming out.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Open Other Overlays",
+          "layout": "image-bottom",
+          "html": "<p>Open <strong>Overlay Manager</strong>, then tap <strong>Other Overlays</strong>. Each row has an eye icon you tap to enable or disable that overlay.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/f28caa1685cb737c.webp",
+              "width": 400,
+              "height": 191
+            }
+          ]
+        },
+        {
+          "title": "Toggle Off-Screen Indicators",
+          "layout": "image-bottom",
+          "html": "<p>Tap the eye icon on the <strong>Off-Screen Indicators</strong> row to turn it on. Arrows then appear at the map edge pointing to newly placed or received markers that are nearby but outside your current view (how near depends on zoom level).</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/d6879fdc07334ec1.webp",
+              "width": 400,
+              "height": 194
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

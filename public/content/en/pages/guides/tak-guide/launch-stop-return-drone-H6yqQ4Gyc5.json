@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 1,
+  "id": "fd47971f-97c6-4df4-9f81-9d8a643ca2b5",
+  "slug": "launch-stop-return-drone-H6yqQ4Gyc5",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "Launch, Stop & Return Drone",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "Supported Plugins",
+    "UAS Tool",
+    "Launch, Stop & Return Drone"
+  ],
+  "createdAt": "2026-06-15T19:48:14.422Z",
+  "updatedAt": "2026-06-15T19:48:14.422Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>The Quick Flight Toolbar gets your drone in the air, brings it home, and stops it fast when something goes wrong. Here is the safe order to fly it.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Find the Quick Flight Toolbar",
+          "layout": "image-bottom",
+          "html": "<p>The toolbar sits at the top of the UAS menu after takeoff. From left: <strong>Set Altitude</strong>, <strong>Emergency Stop</strong>, <strong>Return To Home</strong>, <strong>Quick Task</strong>, <strong>Follow EUD/Recon</strong>, <strong>Mission Manager</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/9b47a9f4c89d6e45.webp",
+              "width": 738,
+              "height": 140
+            }
+          ]
+        },
+        {
+          "title": "Set your altitude",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Set Altitude</strong>, drag the slider to the height you want, then tap <strong>Set Altitude</strong> to confirm. Read the height as <strong>AGL</strong> (above ground), <strong>HAL</strong> (above launch) or <strong>MSL</strong> (sea level).</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/c6cd7fa8485b7c2b.webp",
+              "width": 800,
+              "height": 326
+            }
+          ]
+        },
+        {
+          "title": "Take off",
+          "layout": "image-bottom",
+          "html": "<p>On the ground the Set Altitude button shows a green <strong>GO</strong> circle, called <strong>Takeoff Now</strong>. Tap it and the drone launches and climbs to the altitude you set.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/7bd02e8ff2a402c3.webp",
+              "width": 800,
+              "height": 324
+            }
+          ]
+        },
+        {
+          "title": "Emergency Stop",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Emergency Stop</strong> to kill the current task, then <strong>OK</strong> on the prompt. It cancels Quick Tasks, Routes and altitude moves but not manual stick control. WARNING: some aircraft drift or backtrack before stopping.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/41d974ab869aa2ec.webp",
+              "width": 800,
+              "height": 336
+            }
+          ]
+        },
+        {
+          "title": "Return to Home",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Return To Home</strong> (button 3) for a short press to fly back to the launch point. Long-press it to open <strong>Home Position Follow Options</strong> so the drone tracks your moving position instead.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/4cb7bbce0e08308c.webp",
+              "width": 249,
+              "height": 141
+            }
+          ]
+        },
+        {
+          "title": "Land and disarm in place",
+          "layout": "image-bottom",
+          "html": "<p>In the Set Altitude dialog, <strong>Land-Now</strong> brings the drone straight down where it hovers. Landing and disarm vary by platform:</p>\n<ul>\n<li>DJI aircraft hover low and need the physical Ground Control Station (GCS) to land and disarm.</li>\n<li>Some MAVLink aircraft will backtrack before landing.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/7bd02e8ff2a402c3.webp",
+              "width": 800,
+              "height": 324
+            }
+          ]
+        },
+        {
+          "title": "Reposition with Quick Task",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Quick Task</strong>, then tap a point on the map. Choose <strong>Go Now</strong> to fly there at current height, or <strong>Orbit</strong> to circle it. The <strong>Selected Coordinate</strong> field lets you type exact coordinates.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/c3fe23149220c4cb.webp",
+              "width": 1428,
+              "height": 725
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

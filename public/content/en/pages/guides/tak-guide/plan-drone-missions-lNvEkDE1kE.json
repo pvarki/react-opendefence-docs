@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "id": "cbab3ab9-2622-48e4-9aaf-ab5374dd09c8",
+  "slug": "plan-drone-missions-lNvEkDE1kE",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "Plan Drone Missions",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "Supported Plugins",
+    "UAS Tool",
+    "Plan Drone Missions"
+  ],
+  "createdAt": "2026-06-15T19:49:36.760Z",
+  "updatedAt": "2026-06-15T19:49:36.760Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Plan a drone flight before launch so the aircraft flies your route, perimeter, or survey area on its own.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Open Mission Manager",
+          "layout": "image-bottom",
+          "html": "<p>From the Home Screen, <strong>swipe left</strong> to reach <strong>Stored Tasks</strong>, then open <strong>Mission Manager</strong>. You can plan here with no UAS connected.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/0b0cfd9aa9fb6002.webp",
+              "width": 800,
+              "height": 381
+            }
+          ]
+        },
+        {
+          "title": "Build a Route",
+          "layout": "image-bottom",
+          "html": "<p>Pick <strong>Route</strong> to drop a multi-point path for the aircraft to follow. Tap each point on the map, then tap <strong>Save</strong>. <strong>Existing Route</strong> converts an ATAK route the same way.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/0b0cfd9aa9fb6002.webp",
+              "width": 800,
+              "height": 381
+            }
+          ]
+        },
+        {
+          "title": "Build a Perimeter",
+          "layout": "image-bottom",
+          "html": "<p>Pick <strong>Perimeter</strong> to fly a closed shape. The aircraft follows the outline and returns to the first waypoint. Tap <strong>Save</strong> when the shape is set.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/5f79161bba86aa7e.webp",
+              "width": 800,
+              "height": 380
+            }
+          ]
+        },
+        {
+          "title": "Build a Survey",
+          "layout": "image-bottom",
+          "html": "<p>Pick <strong>Survey</strong> to cover a whole area with a back-and-forth grid. Set the <strong>Task Name</strong> and <strong>Task Altitude (AGL)</strong>, then tap <strong>Create Task</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/3c55a25ac1471b7b.webp",
+              "width": 800,
+              "height": 381
+            }
+          ]
+        },
+        {
+          "title": "Create a MAVLink mission",
+          "layout": "image-bottom",
+          "html": "<p>For step-by-step tasking, open the Add Task Menu (the <strong>+</strong>) and select <strong>Add</strong>. Use the <strong>MISSION</strong> tab for the flight, <strong>FENCE</strong> for geofences, and <strong>RALLY</strong> for rally points.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/db50b1677519014a.webp",
+              "width": 1064,
+              "height": 697
+            }
+          ]
+        },
+        {
+          "title": "Add takeoff and waypoints",
+          "layout": "image-bottom",
+          "html": "<p>Tap the <strong>Pencil Icon</strong> to add mission items to the map. Add <strong>Takeoff</strong> to arm and climb to an altitude, then add <strong>Waypoint</strong> points for the aircraft to fly to (speed, altitude, yaw, gimbal).</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/db50b1677519014a.webp",
+              "width": 1064,
+              "height": 697
+            }
+          ]
+        },
+        {
+          "title": "Set ROI on a target",
+          "layout": "image-bottom",
+          "html": "<p>Add <strong>ROI (Region of Interest)</strong> to lock the gimbal onto a point. Add <strong>Cancel ROI</strong> before the mission ends, or the aircraft keeps tracking the target in manual flight.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/db50b1677519014a.webp",
+              "width": 1064,
+              "height": 697
+            }
+          ]
+        },
+        {
+          "title": "Finish with Land or Return to Launch",
+          "layout": "image-bottom",
+          "html": "<p>End the mission with <strong>Land</strong> to set a landing waypoint, or <strong>Return to Launch</strong> to fly back to takeoff and land. Tap <strong>Save</strong> to store the mission, then run it from the <strong>Onboard</strong> list.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/db50b1677519014a.webp",
+              "width": 1064,
+              "height": 697
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

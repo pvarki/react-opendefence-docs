@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "cc108991-41d6-4296-bf39-57407de3a18c",
+  "slug": "record-events-2LJeWe6cPW",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "Record events",
+  "breadcrumb": [
+    "Platforms",
+    "WinTAK",
+    "Supported Plugins",
+    "TAK Replay",
+    "Record events"
+  ],
+  "createdAt": "2026-06-16T10:21:06.430Z",
+  "updatedAt": "2026-06-16T10:21:06.430Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>TAK Replay records map events and chats in real time so you can replay them later. Open the plug-ins tab on the WinTAK toolbar to begin.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Start recording",
+          "layout": "image-bottom",
+          "html": "<p>Select <strong>Record</strong> to capture all map events and chats, or open the main <strong>TAK Replay</strong> panel (via <strong>Recordings</strong>) for more control. A recording can be paused, resumed or stopped from the toolbar.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/036190631addd755.webp",
+              "width": 349,
+              "height": 151
+            }
+          ]
+        },
+        {
+          "title": "Choose a recording region",
+          "layout": "image-bottom",
+          "html": "<p>When you select <strong>Record</strong>, choose what area to capture: <strong>Select Map View</strong> (only what's in view, with the zoom level preserved), <strong>Select Existing Shape</strong>, <strong>Select Polygon Region</strong>, or <strong>Select Rectangular Region</strong>. Use <strong>Reset Region Selection</strong> to pick a different region type.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/a132944160d2eff0.webp",
+              "width": 351,
+              "height": 343
+            }
+          ]
+        },
+        {
+          "title": "Record events & chats",
+          "layout": "image-bottom",
+          "html": "<p>Select <strong>Start Recording</strong>, keep or change the title, and select <strong>OK</strong>. A tally shows the elapsed time and counts of events, map items and chat messages, updating until you stop. Toggle which items are recorded via Overlay Manager. Select <strong>Stop Recording</strong> to finish — the Timeline Viewer opens automatically.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/aeeb99b00aa0608d.webp",
+              "width": 448,
+              "height": 255
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

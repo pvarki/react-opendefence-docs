@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 1,
+  "id": "ed46efc7-521b-4486-8bed-e8b8b751552b",
+  "slug": "watch-control-drone-camera-45LPQNKdqn",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "Watch & Control Drone Camera",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "Supported Plugins",
+    "UAS Tool",
+    "Watch & Control Drone Camera"
+  ],
+  "createdAt": "2026-06-15T19:50:22.907Z",
+  "updatedAt": "2026-06-15T19:50:22.907Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Get eyes on the drone's live video, aim the camera, and pull a grid on what you see.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Open the live video feed",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Play</strong> on the UAS Tool home screen to open the Full Motion Video (FMV) feed and map. The drone's marker, its <strong>SPoI</strong> (Sensor Point of Interest) and camera field of view show on the map.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/7d9a7786064a3b4e.webp",
+              "width": 2101,
+              "height": 1010
+            }
+          ]
+        },
+        {
+          "title": "Pan and tilt the camera",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Gimbal Control</strong> to open the gimbal toolbar. Drag the <strong>Pan/Tilt</strong> sliders to aim the camera, and use <strong>Zoom In</strong> / <strong>Zoom Out</strong> to move in or out.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/f018ccb2fb7a19df.webp",
+              "width": 2111,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "Lock the gimbal",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Gimbal Lock</strong> (item 7 on the lower toolbar) to fix the camera's yaw so it stays pointed and does not rotate with the drone.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/b3d16402361aa6d0.webp",
+              "width": 800,
+              "height": 86
+            }
+          ]
+        },
+        {
+          "title": "Switch thermal or visible",
+          "layout": "image-bottom",
+          "html": "<p>Open the <strong>Camera</strong> options, tap <strong>Select Video Stream</strong>, and pick <strong>Frontal</strong> (visible) or <strong>Thermal</strong>. Use thermal in low light or to pick out heat.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/c97489654937a42a.webp",
+              "width": 800,
+              "height": 588
+            }
+          ]
+        },
+        {
+          "title": "Read the crosshair (SPoI)",
+          "layout": "image-bottom",
+          "html": "<p>The center crosshair marks where the camera is looking. It shows <strong>Grid Coordinates</strong>, the <strong>Range</strong> (slant distance to the point) and the <strong>Bearing</strong> (angle from the drone). Use this to call a grid.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/3ed22463bd8c92b6.webp",
+              "width": 708,
+              "height": 561
+            }
+          ]
+        },
+        {
+          "title": "Snap the map to the drone",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Pan-To</strong> to jump the map view to the drone's location. Long press <strong>Pan-To</strong> to lock the map to the drone marker so it follows along.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/faaabd21a33493a7.webp",
+              "width": 369,
+              "height": 374
+            }
+          ]
+        },
+        {
+          "title": "Toggle full or half screen",
+          "layout": "image-bottom",
+          "html": "<p>Tap the screen size button to switch between <strong>Half screen</strong> (big map, small video) and <strong>Full screen</strong> (big video with a mini-map). Tap it again to switch back.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/27a1155b72bffd95.webp",
+              "width": 2111,
+              "height": 1010
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

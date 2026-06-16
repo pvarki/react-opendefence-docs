@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "id": "81576339-9877-444d-9ace-fa92a79b0e60",
+  "slug": "play-capture-video-hWmpN6dj9t",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "Play & Capture Video",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "ADDITIONAL FEATURES",
+    "Video in ATAK",
+    "Play & Capture Video"
+  ],
+  "createdAt": "2026-06-15T19:46:26.259Z",
+  "updatedAt": "2026-06-15T19:46:26.259Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Watch live IP-camera, Rover5 and H.264 video feeds in ATAK, grab a still, record clips, and push the feed onto the map.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Open a video and play it",
+          "layout": "image-bottom",
+          "html": "<p>Tap the <strong>Video Player</strong> icon to open the list of feeds. Select a video alias or file name to start playing.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/ab045f72d0899194.webp",
+              "width": 225,
+              "height": 184
+            }
+          ]
+        },
+        {
+          "title": "Use the playback controls",
+          "layout": "image-bottom",
+          "html": "<p>The video shows at half-screen with <strong>play/pause</strong>, elapsed time and <strong>mute/unmute</strong>. Slide the pull bar to go full screen; press the device <strong>Back</strong> button to return.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/60c4f50814886e59.webp",
+              "width": 241,
+              "height": 197
+            }
+          ]
+        },
+        {
+          "title": "Snapshot a frame",
+          "layout": "image-bottom",
+          "html": "<p>Tap the <strong>Snapshot</strong> icon to save the current frame as a JPEG; the icon flashes green when done. Tap the snapshots icon to open the <strong>Video Snapshots</strong> gallery.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/b6a49d1f7d6ae1d2.webp",
+              "width": 266,
+              "height": 210
+            }
+          ]
+        },
+        {
+          "title": "Send a snapshot",
+          "layout": "image-bottom",
+          "html": "<p>Open a snapshot, then tap <strong>Send</strong> to push it to another TAK user, the TAK server, or a 3rd party app. Use <strong>Arrow</strong> to cycle to the next snapshot.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/9b516c1553436f27.webp",
+              "width": 266,
+              "height": 219
+            }
+          ]
+        },
+        {
+          "title": "Record the feed to a file",
+          "layout": "image-bottom",
+          "html": "<p>For a live UDP or RTSP stream, tap <strong>Record</strong> to start; it turns into a green square while recording. Tap <strong>Record</strong> again to stop. Clips save to /atak/tools/videos/.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/709c6d58e6fead76.webp",
+              "width": 185,
+              "height": 50
+            }
+          ]
+        },
+        {
+          "title": "Show the feed on the map",
+          "layout": "image-bottom",
+          "html": "<p>If the stream carries corner metadata, tap the <strong>Globe</strong> icon in the top-right of the video window. The globe turns green and the feed overlays directly on the map.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/5272d32cd8e564b3.webp",
+              "width": 582,
+              "height": 325
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

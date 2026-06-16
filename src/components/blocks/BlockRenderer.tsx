@@ -1,9 +1,11 @@
+import { useTranslation } from "react-i18next";
 import type { Block } from "@shared/content-schema";
 import { HtmlBlock } from "@/components/blocks/HtmlBlock";
 import { MermaidBlock } from "@/components/blocks/MermaidBlock";
 import { Slideset } from "@/components/slides/Slideset";
 
 export function BlockRenderer({ blocks }: { blocks: Block[] }) {
+  const { t } = useTranslation();
   const firstSlideset = blocks.findIndex((b) => b.type === "slideset");
 
   return (
@@ -58,7 +60,7 @@ export function BlockRenderer({ blocks }: { blocks: Block[] }) {
                 <iframe
                   className="h-full w-full rounded-lg border border-border"
                   src={`https://www.youtube-nocookie.com/embed/${block.videoId}`}
-                  title={block.title ?? "YouTube video"}
+                  title={block.title ?? t("blocks.youtubeTitle")}
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                   loading="lazy"

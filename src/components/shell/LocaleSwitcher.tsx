@@ -1,4 +1,5 @@
 import { useNavigate, useParams, useRouterState } from "@tanstack/react-router";
+import { useTranslation } from "react-i18next";
 import { Languages } from "lucide-react";
 import { LOCALES, normalizeLocale, type Locale } from "@shared/content-schema";
 import { storeLocale } from "@/lib/i18n";
@@ -17,6 +18,7 @@ const LOCALE_LABELS: Record<Locale, string> = {
 };
 
 export function LocaleSwitcher() {
+  const { t } = useTranslation();
   const params = useParams({ strict: false });
   const navigate = useNavigate();
   const pathname = useRouterState({ select: (s) => s.location.pathname });
@@ -37,7 +39,7 @@ export function LocaleSwitcher() {
       <SelectTrigger
         size="sm"
         className="gap-2 border-input bg-transparent"
-        aria-label="Language"
+        aria-label={t("common.language")}
       >
         <Languages className="size-4" />
         <span className="hidden sm:inline">{LOCALE_LABELS[current]}</span>

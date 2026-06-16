@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 1,
+  "id": "54573e8e-4302-4cbf-85d1-b63019fc40cd",
+  "slug": "save-send-share-a-report-FCSrRHNkjC",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "Save, Send & Share a Report",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "Supported Plugins",
+    "Reports",
+    "Save, Send & Share a Report"
+  ],
+  "createdAt": "2026-06-15T19:50:55.066Z",
+  "updatedAt": "2026-06-15T19:50:55.066Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Once a report is filled in, this is how you keep a copy, push it to the server, and get it to the people who need it.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Save a local copy or upload",
+          "layout": "image-bottom",
+          "html": "<p>At the bottom of the report, select <strong>Save &#x26; Close</strong> to keep a local copy, or the upload icon to <strong>Upload</strong> to the TAK Server. If several servers are configured you pick one; after upload the button greys out until you change something.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/e3df4f92a1bd6213.webp",
+              "width": 424,
+              "height": 375
+            }
+          ]
+        },
+        {
+          "title": "Add or remove attachments",
+          "layout": "image-bottom",
+          "html": "<p>Select <strong>Add New Attachment</strong> to add a photo, video, or file to the report. Select the <strong>Delete</strong> trash icon next to a file to drop it.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/40a838387550224b.webp",
+              "width": 526,
+              "height": 184
+            }
+          ]
+        },
+        {
+          "title": "Send the report",
+          "layout": "image-bottom",
+          "html": "<p>Select the upload or send icon to choose how the report goes out: to a <strong>Contact</strong>, <strong>Select Server</strong>, <strong>Cloud/FTP</strong>, <strong>Choose App</strong>, or <strong>Export</strong>. Data Sync and Cloud/FTP only show up if those plug-ins are installed.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/b8b6eb329179698a.webp",
+              "width": 800,
+              "height": 244
+            }
+          ]
+        },
+        {
+          "title": "Send via TAK Chat or copy the text",
+          "layout": "image-bottom",
+          "html": "<p>Select the <strong>Send</strong> button for sending options. <strong>TAK Chat</strong> pushes the report to users on the network; <strong>Copy</strong> puts it on the clipboard to paste into any chat. For Data Sync, pick <strong>Data Sync Upload</strong>, choose a feed, then <strong>Send</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/894ec543cf32e4bc.webp",
+              "width": 511,
+              "height": 206
+            }
+          ]
+        },
+        {
+          "title": "Manage your saved reports",
+          "layout": "image-bottom",
+          "html": "<p>Saved copies live in the Reports panel. Each report has its own row of icons: <strong>Upload</strong>, <strong>Details</strong>, <strong>PDF</strong>, <strong>Copy to Clipboard</strong>, <strong>Share</strong>, <strong>Visibility</strong>, and <strong>Delete</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/dd7ec43088ae27a5.webp",
+              "width": 422,
+              "height": 219
+            }
+          ]
+        },
+        {
+          "title": "Make a PDF or copy the text",
+          "layout": "image-bottom",
+          "html": "<p>Select <strong>PDF</strong> to generate a PDF of the report. Select <strong>Copy to Clipboard</strong> to drop the report as plain text into any Free Text or Contacts channel.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/dd7ec43088ae27a5.webp",
+              "width": 422,
+              "height": 219
+            }
+          ]
+        },
+        {
+          "title": "Share via apps or delete",
+          "layout": "image-bottom",
+          "html": "<p>Select <strong>Share</strong> to hand the report to any installed app that can send it. Select <strong>Delete</strong> to remove the report from the device. <strong>Visibility</strong> toggles the report marker on the map.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/dd7ec43088ae27a5.webp",
+              "width": 422,
+              "height": 219
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "id": "631a6088-1d19-41b7-82db-9445ffdf1091",
+  "slug": "range-rings-bullseye-NHJCYsh6xN",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "Range Rings & Bullseye",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "ADDITIONAL FEATURES",
+    "Range & Bearing Tools",
+    "Range Rings & Bullseye"
+  ],
+  "createdAt": "2026-06-15T19:41:29.958Z",
+  "updatedAt": "2026-06-15T20:53:51.011Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Drop range rings or a bullseye grid on the map to judge distance and sector to a point, then share it with your team.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Drop a range ring circle",
+          "layout": "image-bottom",
+          "html": "<p>Tap the <strong>Circle</strong> icon on the toolbar to turn the Circle Tool on (yellow), then tap the map for the centre. Tap the circle's centre to open its radial menu.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/7d9031fef93fb31a.webp",
+              "width": 228,
+              "height": 209
+            }
+          ]
+        },
+        {
+          "title": "Set radius and ring count",
+          "layout": "image-bottom",
+          "html": "<p>On the radial, tap <strong>Details</strong>. Set the <strong>Radius</strong>, <strong>Rings</strong> count and unit. The circle redraws as specified and can be sent or broadcast to other users.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/31e2a2101114961c.webp",
+              "width": 183,
+              "height": 202
+            }
+          ]
+        },
+        {
+          "title": "Add a bullseye grid",
+          "layout": "image-bottom",
+          "html": "<p>The <strong>Bullseye</strong> tool adds a circular grid with bearing lines every 30 degrees. Angles read either <strong>From Center</strong> (red, away) or toward the centre point (green).</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/7522e73b31c8f85d.webp",
+              "width": 270,
+              "height": 154
+            }
+          ]
+        },
+        {
+          "title": "Adjust the bullseye",
+          "layout": "image-bottom",
+          "html": "<p>Tap the bullseye centre for its radial. Use <strong>Range Rings</strong> to add rings, <strong>Angle Bearing Units</strong> to switch units, and <strong>Fine Adjust</strong> to nudge the centre.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/8cf64fccd6867c20.webp",
+              "width": 225,
+              "height": 192
+            }
+          ]
+        },
+        {
+          "title": "Set direction and send",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Details</strong>. Set <strong>Direction</strong> (From Center or toward it), the angle units and <strong>Show Range Rings</strong>. Tap <strong>Send</strong> to broadcast the bullseye to other users.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/1587c4e2b57b5b78.webp",
+              "width": 186,
+              "height": 204
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

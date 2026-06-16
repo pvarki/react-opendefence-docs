@@ -20,10 +20,14 @@ export function PageFooter({ collection, clientId }: PageFooterProps) {
   const hasGuide = i18n.exists(guideKey);
   const hasClient = !!clientKey && i18n.exists(clientKey);
 
-  if (!hasGuide && !hasClient) return null;
-
   return (
     <footer className="mt-8 border-t border-border pt-6 text-sm leading-relaxed text-muted-foreground">
+      <p className="mb-3 text-center text-xs text-muted-foreground/70">
+        {t("docsBuild", {
+          date: __BUILD_DATE__,
+          commit: __BUILD_COMMIT__,
+        })}
+      </p>
       {hasClient && (
         <p className={hasGuide ? "mb-3" : undefined}>{t(clientKey!)}</p>
       )}

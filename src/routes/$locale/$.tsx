@@ -139,12 +139,18 @@ function ReaderRoute() {
     if (currentPage!.clientId && currentPage!.clientId !== activeClient?.id) {
       setClientForBook(currentPage!.collection, currentPage!.clientId);
       if (currentPage!.platform) setPlatform(currentPage!.platform);
-    } else if (
-      !currentPage!.clientId &&
-      currentPage!.platform &&
-      currentPage!.platform !== view.platform
-    ) {
-      setPlatform(currentPage!.platform);
+    } else if (!currentPage!.clientId) {
+      // Client-less page tagged for one or more platforms: only switch the
+      // global platform when the reader's current one isn't among them (so a
+      // desktop guide tagged win/mac/linux leaves a Mac reader on macOS).
+      const pagePlatforms = currentPage!.platforms?.length
+        ? currentPage!.platforms
+        : currentPage!.platform
+          ? [currentPage!.platform]
+          : [];
+      if (pagePlatforms.length && !pagePlatforms.includes(view.platform)) {
+        setPlatform(pagePlatforms[0]);
+      }
     }
   }, [currentPage, activeClient, view.platform]);
 

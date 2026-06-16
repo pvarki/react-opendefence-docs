@@ -11,7 +11,7 @@
     "Deploy with Docker Compose"
   ],
   "createdAt": "2026-06-13T13:20:33.562Z",
-  "updatedAt": "2026-06-13T13:20:33.562Z",
+  "updatedAt": "2026-06-16T16:39:50.048Z",
   "headings": [
     {
       "depth": 2,
@@ -62,7 +62,7 @@
   "blocks": [
     {
       "type": "html",
-      "html": "<p>This is the authoritative procedure for standing up a Deploy App instance on the legacy Docker Compose stack (<a href=\"https://github.com/pvarki/docker-rasenmaeher-integration\" target=\"_blank\" rel=\"noopener noreferrer\"><code>pvarki/docker-rasenmaeher-integration</code></a>). On this stack, <strong>miniwerk</strong> fetches the Let's Encrypt certificates and resolves the per-product subdomains from <code>MW_PRODUCTS</code>, and <strong>CFSSL</strong> is the internal CA that issues client/service certificates. For the shared in-UI onboarding flow, see <strong>Operator quickstart</strong>.</p>\n<h2 id=\"required-dns-records\"><a href=\"#required-dns-records\">Required DNS records</a></h2>\n<p>All of these must point to your WAN address. When you add more products, follow the same naming pattern — you need a subdomain for every product listed in the composition's miniwerk <code>MW_PRODUCTS</code> variable, plus <code>kc</code> for Keycloak:</p>"
+      "html": "<p>This is the authoritative procedure for standing up a Deploy App instance on the legacy Docker Compose stack (<a href=\"https://github.com/pvarki/docker-rasenmaeher-integration\" target=\"_blank\" rel=\"noopener noreferrer\"><code>pvarki/docker-rasenmaeher-integration</code></a>). On this stack, <strong>miniwerk</strong> fetches the Let's Encrypt certificates and resolves the per-product subdomains from <code>MW_PRODUCTS</code>, and <strong>CFSSL</strong> is the internal CA that issues client/service certificates. For the shared in-UI onboarding flow, see <strong>Operator quickstart</strong>.</p>\n<blockquote>\n<p>Ideally you don't do any of the below manually, but instead use a pipeline &#x26; Terraform for deployment. IaC is the way we are doing it.</p>\n</blockquote>\n<h2 id=\"required-dns-records\"><a href=\"#required-dns-records\">Required DNS records</a></h2>\n<p>All of these must point to your WAN address. When you add more products, follow the same naming pattern — you need a subdomain for every product listed in the composition's miniwerk <code>MW_PRODUCTS</code> variable, plus <code>kc</code> for Keycloak:</p>"
     },
     {
       "type": "code",
@@ -71,7 +71,7 @@
     },
     {
       "type": "html",
-      "html": "<h2 id=\"required-open-ports\"><a href=\"#required-open-ports\">Required open ports</a></h2>\n<p>Open these (and redirect them to the server if it is behind NAT):</p>\n<table>\n<thead>\n<tr>\n<th>Port</th>\n<th>Use</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>80</td>\n<td>HTTP</td>\n</tr>\n<tr>\n<td>443</td>\n<td>HTTPS</td>\n</tr>\n<tr>\n<td>8089</td>\n<td>TAK</td>\n</tr>\n<tr>\n<td>8443</td>\n<td>TAK</td>\n</tr>\n<tr>\n<td>8446</td>\n<td>TAK</td>\n</tr>\n<tr>\n<td>9446</td>\n<td>Keycloak</td>\n</tr>\n<tr>\n<td>4626</td>\n<td>Product integration APIs port</td>\n</tr>\n<tr>\n<td>4627</td>\n<td>ATAK Autoimport ephemeral download port</td>\n</tr>\n<tr>\n<td>4666</td>\n<td>Battlelog API/UI port</td>\n</tr>\n<tr>\n<td>1936</td>\n<td>RTMPS</td>\n</tr>\n<tr>\n<td>8322</td>\n<td>RTSPS</td>\n</tr>\n<tr>\n<td>8890</td>\n<td>SRT</td>\n</tr>\n<tr>\n<td>9888</td>\n<td>HLS</td>\n</tr>\n<tr>\n<td>9889</td>\n<td>WebRTC</td>\n</tr>\n<tr>\n<td>9996</td>\n<td>Playback for recorded streams/videos</td>\n</tr>\n</tbody>\n</table>\n<h2 id=\"clone-with-submodules\"><a href=\"#clone-with-submodules\">Clone with submodules</a></h2>\n<p>The components are git submodules, so clone recursively. Run all subsequent commands inside the cloned repository.</p>"
+      "html": "<h2 id=\"required-open-ports\"><a href=\"#required-open-ports\">Required open ports</a></h2>\n<p>Open these (and redirect them to the server if it is behind NAT):</p>\n<table>\n<thead>\n<tr>\n<th>Port</th>\n<th>Use</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>80</td>\n<td>HTTP</td>\n</tr>\n<tr>\n<td>443</td>\n<td>HTTPS</td>\n</tr>\n<tr>\n<td>8089</td>\n<td>TAK</td>\n</tr>\n<tr>\n<td>8443</td>\n<td>TAK</td>\n</tr>\n<tr>\n<td>8446</td>\n<td>TAK</td>\n</tr>\n<tr>\n<td>9446</td>\n<td>Keycloak</td>\n</tr>\n<tr>\n<td>4626</td>\n<td>Product integration APIs port</td>\n</tr>\n<tr>\n<td>4627</td>\n<td>ATAK Autoimport ephemeral download port</td>\n</tr>\n<tr>\n<td>4666</td>\n<td>Battlelog API/UI port</td>\n</tr>\n<tr>\n<td>1936</td>\n<td>RTMPS (Media MTX video streams)</td>\n</tr>\n<tr>\n<td>8322</td>\n<td>RTSPS Media MTX video streams)</td>\n</tr>\n<tr>\n<td>8890</td>\n<td>SRT Media MTX video streams)</td>\n</tr>\n<tr>\n<td>9888</td>\n<td>HLS Media MTX video streams)</td>\n</tr>\n<tr>\n<td>9889</td>\n<td>WebRTC Media MTX video streams)</td>\n</tr>\n<tr>\n<td>9996</td>\n<td>Playback for recorded streams/videos Media MTX video streams)</td>\n</tr>\n</tbody>\n</table>\n<h2 id=\"clone-with-submodules\"><a href=\"#clone-with-submodules\">Clone with submodules</a></h2>\n<p>The components are git submodules, so clone recursively. Run all subsequent commands inside the cloned repository.</p>"
     },
     {
       "type": "code",
@@ -80,7 +80,7 @@
     },
     {
       "type": "html",
-      "html": "<blockquote>\n<p>On Windows, do <strong>not</strong> use git-bash (it breaks Docker containers) — use WSL, and make sure your git client does not rewrite line endings (<code>git config --global core.eol lf</code>, <code>git config --global core.autocrlf false</code>).</p>\n</blockquote>\n<h2 id=\"choose-a-tag-and-sync-submodules\"><a href=\"#choose-a-tag-and-sync-submodules\">Choose a tag and sync submodules</a></h2>\n<p>Use a tag so you get a known-good combination of submodules:</p>"
+      "html": "<blockquote>\n<p>On Windows, do <strong>not</strong> use git-bash (it breaks Docker containers) — use WSL, and make sure your git client does not rewrite line endings (<code>git config --global core.eol lf</code>, <code>git config --global core.autocrlf false</code>).</p>\n</blockquote>\n<h2 id=\"choose-a-tag-and-sync-submodules\"><a href=\"#choose-a-tag-and-sync-submodules\"><a>Choose a tag</a> and sync submodules</a></h2>\n<p>Always a tag so you get a known-good combination of submodules.</p>\n<p>Latest tag is a good idea, you can find them at the docker-rasenmaeher-integration <a>tags list</a>.</p>"
     },
     {
       "type": "code",
@@ -89,7 +89,7 @@
     },
     {
       "type": "html",
-      "html": "<h2 id=\"write-the-env-file\"><a href=\"#write-the-env-file\">Write the <code>.env</code> file</a></h2>\n<p>Create a file named literally <code>.env</code> (not <code>something.env</code>) in the repository root. The canonical example is <a href=\"https://github.com/pvarki/docker-rasenmaeher-integration/blob/main/example_env.sh\" target=\"_blank\" rel=\"noopener noreferrer\"><code>example_env.sh</code></a>. Minimal set:</p>"
+      "html": "<h2 id=\"write-the-env-file\"><a href=\"#write-the-env-file\">Write the <code>.env</code> file</a></h2>\n<p>Create (or make your IaC create) a file named literally <code>.env</code> (not <code>something.env</code>) in the repository root. The canonical example is <a href=\"https://github.com/pvarki/docker-rasenmaeher-integration/blob/main/example_env.sh\" target=\"_blank\" rel=\"noopener noreferrer\"><code>example_env.sh</code></a>. Minimal set:</p>"
     },
     {
       "type": "code",

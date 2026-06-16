@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "id": "644e212b-f050-417a-a50a-ee89d6890161",
+  "slug": "broadcast-emergency-alert-UUcvlpUGMg",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "Broadcast Emergency Alert",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "Advanced Core Features",
+    "Broadcast Emergency Alert"
+  ],
+  "createdAt": "2026-06-15T19:39:42.888Z",
+  "updatedAt": "2026-06-15T21:18:57.709Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Send an emergency beacon to everyone on the network so they see your position and the type of trouble you are in.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Open the Alert Tool",
+          "layout": "image-bottom",
+          "html": "<p>Tap the <strong>Alert</strong> icon (warning triangle) to open the Alert Tool. It puts an emergency beacon at your location on the map.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/a18d1db2c75023bc.webp",
+              "width": 475,
+              "height": 219
+            }
+          ]
+        },
+        {
+          "title": "Pick the emergency type",
+          "layout": "image-bottom",
+          "html": "<p>Open the <strong>Select the type of emergency</strong> drop-down and choose one:</p>\n<ul>\n<li><strong>911 Alert</strong> — need assistance now</li>\n<li><strong>Ring The Bell</strong> — call attention to your position</li>\n<li><strong>Geo-fence Breached</strong> — a boundary was crossed</li>\n<li><strong>In Contact</strong> — engaged with the enemy</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/ded64bace244a9ac.webp",
+              "width": 150,
+              "height": 162
+            }
+          ]
+        },
+        {
+          "title": "Enable both switches to broadcast",
+          "layout": "image-bottom",
+          "html": "<p>After picking the type, flip both <strong>LOCKED</strong> switches on. The TAK Server then broadcasts your beacon to every network contact. The beacon keeps broadcasting even if your device is turned off.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/a18d1db2c75023bc.webp",
+              "width": 475,
+              "height": 219
+            }
+          ]
+        },
+        {
+          "title": "Cancel the beacon",
+          "layout": "image-bottom",
+          "html": "<p>To stand down, return to the <strong>Alert</strong> tool and toggle both switches off. This cancels the beacon and removes it from the map.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/a18d1db2c75023bc.webp",
+              "width": 475,
+              "height": 219
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

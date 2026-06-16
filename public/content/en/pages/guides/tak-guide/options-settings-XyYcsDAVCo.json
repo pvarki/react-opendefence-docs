@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "id": "d56e161f-47cb-404c-917d-ef30afed1775",
+  "slug": "options-settings-XyYcsDAVCo",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "Options & Settings",
+  "breadcrumb": [
+    "Platforms",
+    "TAK Tracker - Android",
+    "ADVANCED FEATURES",
+    "Options & Settings"
+  ],
+  "createdAt": "2026-06-16T16:18:19.274Z",
+  "updatedAt": "2026-06-16T16:21:27.142Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>The Settings window controls how you appear on the network and how TAK Tracker behaves. Open it any time to change your callsign, enrollment or display.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Open Settings",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Settings</strong> to open the Connection Settings window. From here you can:</p>\n<ul>\n<li>Change your <strong>callsign</strong>, <strong>team color</strong> or <strong>role</strong></li>\n<li>Enroll with a <strong>username and password</strong>, or import an <strong>SSL certificate</strong></li>\n<li>Turn on <strong>Service on Boot</strong> so TAK Tracker runs whenever the device starts</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/c3fdf294917ad30f.webp",
+              "width": 179,
+              "height": 234
+            }
+          ]
+        },
+        {
+          "title": "Tidy up the display",
+          "layout": "text",
+          "html": "<p>Two options control how much of the main window you see:</p>\n<ul>\n<li><strong>Hide Quit Button</strong> — removes the Quit button; re-show it from <strong>Settings</strong> by unchecking the box</li>\n<li><strong>Limited View Mode</strong> — shows only the connection box; uncheck it in <strong>Settings</strong> to show all boxes again</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "Lock settings and import certificates",
+          "layout": "text",
+          "html": "<ul>\n<li>Tap <strong>Lock</strong> on the toolbar to set a password that protects your settings</li>\n<li>Tap <strong>Import</strong> on the toolbar to enroll by importing an SSL certificate <code>.zip</code> file</li>\n</ul>\n<p>If TAK Tracker has not been granted access to the Android file system, a prompt opens here to allow it.</p>",
+          "images": []
+        }
+      ]
+    }
+  ]
+}

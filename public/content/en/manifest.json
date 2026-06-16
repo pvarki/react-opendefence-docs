@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "locale": "en",
-  "generatedAt": "2026-06-13T23:49:05.567Z",
+  "generatedAt": "2026-06-16T17:24:02.786Z",
   "collections": [
     {
       "slug": "deploy-app",
@@ -512,63 +512,55 @@
       "chapterLabel": "Admin Guide"
     },
     {
-      "id": "769c51c9-7f73-429e-aaf5-19240034b86c",
-      "slug": "deploy-app-tak-aFY9LCZCf0",
-      "collection": "guides/tak-guide",
-      "title": "Deploy App - TAK",
-      "breadcrumb": [
-        "Platforms",
-        "ATAK",
-        "INTRODUCTION",
-        "Deploy App - TAK"
-      ],
-      "path": "/content/en/pages/guides/tak-guide/deploy-app-tak-aFY9LCZCf0.json",
-      "updatedAt": "2026-06-12T23:03:54.454Z",
-      "order": 0,
-      "platform": "android",
-      "clientId": "atak-sGxUIXpQlU",
-      "chapterId": "introduction-2M0PRHydCl",
-      "chapterLabel": "INTRODUCTION"
-    },
-    {
-      "id": "9870d106-c7bf-4602-a929-1a9fa4ec777c",
-      "slug": "what-is-tak-hZw2wUmL7g",
+      "id": "a87aa7ad-6fe9-4a1c-88cc-e20574225866",
+      "slug": "what-is-tak-Vy8mUPLS87",
       "collection": "guides/tak-guide",
       "title": "What is TAK?",
       "breadcrumb": [
         "Platforms",
-        "ATAK",
-        "INTRODUCTION",
-        "Start",
         "What is TAK?"
       ],
-      "path": "/content/en/pages/guides/tak-guide/what-is-tak-hZw2wUmL7g.json",
-      "updatedAt": "2026-02-28T11:12:46.806Z",
-      "order": 1,
-      "platform": "android",
-      "clientId": "atak-sGxUIXpQlU",
-      "chapterId": "start-FxbN2wcFUs",
-      "chapterLabel": "Start"
+      "path": "/content/en/pages/guides/tak-guide/what-is-tak-Vy8mUPLS87.json",
+      "updatedAt": "2026-06-14T08:53:34.806Z",
+      "order": 0
     },
     {
-      "id": "45a3e50c-b7c2-45d3-927d-bf2e2d97cbbf",
-      "slug": "start-from-download-bJC3Opax4P",
+      "id": "769c51c9-7f73-429e-aaf5-19240034b86c",
+      "slug": "start-from-deploy-app-aFY9LCZCf0",
       "collection": "guides/tak-guide",
-      "title": "Start from Download",
+      "title": "Start from Deploy App",
       "breadcrumb": [
         "Platforms",
         "ATAK",
-        "INTRODUCTION",
-        "Start",
-        "Start from Download"
+        "START & CONNECT",
+        "Start from Deploy App"
       ],
-      "path": "/content/en/pages/guides/tak-guide/start-from-download-bJC3Opax4P.json",
-      "updatedAt": "2026-02-28T11:12:50.417Z",
+      "path": "/content/en/pages/guides/tak-guide/start-from-deploy-app-aFY9LCZCf0.json",
+      "updatedAt": "2026-06-16T10:53:12.957Z",
+      "order": 1,
+      "platform": "android",
+      "clientId": "atak-sGxUIXpQlU",
+      "chapterId": "start-connect-2M0PRHydCl",
+      "chapterLabel": "START & CONNECT"
+    },
+    {
+      "id": "45a3e50c-b7c2-45d3-927d-bf2e2d97cbbf",
+      "slug": "make-sure-you-have-the-atak-app-bJC3Opax4P",
+      "collection": "guides/tak-guide",
+      "title": "Make sure you have the ATAK App",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "START & CONNECT",
+        "Make sure you have the ATAK App"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/make-sure-you-have-the-atak-app-bJC3Opax4P.json",
+      "updatedAt": "2026-06-16T10:53:18.151Z",
       "order": 2,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
-      "chapterId": "start-FxbN2wcFUs",
-      "chapterLabel": "Start"
+      "chapterId": "start-connect-2M0PRHydCl",
+      "chapterLabel": "START & CONNECT"
     },
     {
       "id": "c8842f7a-f533-4bfe-9027-88f165d16ddb",
@@ -578,17 +570,16 @@
       "breadcrumb": [
         "Platforms",
         "ATAK",
-        "INTRODUCTION",
-        "Start",
+        "START & CONNECT",
         "Importing Server Connection"
       ],
       "path": "/content/en/pages/guides/tak-guide/importing-server-connection-PQ4dCV2SYR.json",
-      "updatedAt": "2026-02-28T11:12:52.249Z",
+      "updatedAt": "2026-06-16T10:52:36.409Z",
       "order": 3,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
-      "chapterId": "start-FxbN2wcFUs",
-      "chapterLabel": "Start"
+      "chapterId": "start-connect-2M0PRHydCl",
+      "chapterLabel": "START & CONNECT"
     },
     {
       "id": "04b28f7b-f48f-4361-b9c9-f777dee2ed00",
@@ -598,17 +589,16 @@
       "breadcrumb": [
         "Platforms",
         "ATAK",
-        "INTRODUCTION",
-        "Start",
+        "START & CONNECT",
         "Load ATAK Plugins"
       ],
       "path": "/content/en/pages/guides/tak-guide/load-atak-plugins-xBeVkYsFjI.json",
-      "updatedAt": "2026-02-28T11:12:53.977Z",
+      "updatedAt": "2026-06-16T10:52:44.205Z",
       "order": 4,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
-      "chapterId": "start-FxbN2wcFUs",
-      "chapterLabel": "Start"
+      "chapterId": "start-connect-2M0PRHydCl",
+      "chapterLabel": "START & CONNECT"
     },
     {
       "id": "82c77545-7b47-4c8a-bf4b-2701a1bb3943",
@@ -618,17 +608,16 @@
       "breadcrumb": [
         "Platforms",
         "ATAK",
-        "USING ATAK FEATURES",
-        "Basic Features",
+        "Basic Core Features",
         "Basic view, tools and toolbar"
       ],
       "path": "/content/en/pages/guides/tak-guide/basic-view-tools-and-toolbar-juXbYsGMih.json",
-      "updatedAt": "2026-02-28T11:12:57.526Z",
+      "updatedAt": "2026-06-15T19:39:09.221Z",
       "order": 5,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
-      "chapterId": "basic-features-pDRdN25Lk6",
-      "chapterLabel": "Basic Features"
+      "chapterId": "basic-core-features-pDRdN25Lk6",
+      "chapterLabel": "Basic Core Features"
     },
     {
       "id": "6bf5c875-5082-4f7c-b28c-26b5eea8b0c5",
@@ -638,17 +627,16 @@
       "breadcrumb": [
         "Platforms",
         "ATAK",
-        "USING ATAK FEATURES",
-        "Basic Features",
+        "Basic Core Features",
         "Blue force tracking"
       ],
       "path": "/content/en/pages/guides/tak-guide/blue-force-tracking-vZTVlgAzX8.json",
-      "updatedAt": "2026-02-28T11:12:59.807Z",
+      "updatedAt": "2026-06-16T12:10:36.174Z",
       "order": 6,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
-      "chapterId": "basic-features-pDRdN25Lk6",
-      "chapterLabel": "Basic Features"
+      "chapterId": "basic-core-features-pDRdN25Lk6",
+      "chapterLabel": "Basic Core Features"
     },
     {
       "id": "ce3ace12-abf3-4d66-a94b-8a5cbccfeebb",
@@ -658,17 +646,16 @@
       "breadcrumb": [
         "Platforms",
         "ATAK",
-        "USING ATAK FEATURES",
-        "Basic Features",
+        "Basic Core Features",
         "Feeds with Data Sync"
       ],
       "path": "/content/en/pages/guides/tak-guide/feeds-with-data-sync-thmayduqMx.json",
-      "updatedAt": "2026-02-28T11:13:05.697Z",
+      "updatedAt": "2026-06-16T10:03:23.324Z",
       "order": 7,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
-      "chapterId": "basic-features-pDRdN25Lk6",
-      "chapterLabel": "Basic Features"
+      "chapterId": "basic-core-features-pDRdN25Lk6",
+      "chapterLabel": "Basic Core Features"
     },
     {
       "id": "ee9de6aa-bd12-414f-9e31-cfc8ecddda21",
@@ -678,17 +665,35 @@
       "breadcrumb": [
         "Platforms",
         "ATAK",
-        "USING ATAK FEATURES",
-        "Basic Features",
+        "Basic Core Features",
         "Point Dropper - Markers"
       ],
       "path": "/content/en/pages/guides/tak-guide/point-dropper-markers-lsYmFrTvqH.json",
-      "updatedAt": "2026-02-28T11:13:08.018Z",
+      "updatedAt": "2026-06-14T10:56:07.469Z",
       "order": 8,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
-      "chapterId": "basic-features-pDRdN25Lk6",
-      "chapterLabel": "Basic Features"
+      "chapterId": "basic-core-features-pDRdN25Lk6",
+      "chapterLabel": "Basic Core Features"
+    },
+    {
+      "id": "c588cbd2-a6fb-48d6-842f-6920707f82d3",
+      "slug": "sending-a-marker-tbLPq64DLE",
+      "collection": "guides/tak-guide",
+      "title": "Sending a Marker",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "Basic Core Features",
+        "Sending a Marker"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/sending-a-marker-tbLPq64DLE.json",
+      "updatedAt": "2026-06-16T10:12:54.991Z",
+      "order": 9,
+      "platform": "android",
+      "clientId": "atak-sGxUIXpQlU",
+      "chapterId": "basic-core-features-pDRdN25Lk6",
+      "chapterLabel": "Basic Core Features"
     },
     {
       "id": "ac6ec0b2-a62a-4435-ab5d-32cb374cc4c1",
@@ -698,17 +703,16 @@
       "breadcrumb": [
         "Platforms",
         "ATAK",
-        "USING ATAK FEATURES",
-        "Basic Features",
+        "Basic Core Features",
         "Point Dropper - Quick Pic"
       ],
       "path": "/content/en/pages/guides/tak-guide/point-dropper-quick-pic-gxAsonzSXL.json",
-      "updatedAt": "2026-02-28T11:13:19.176Z",
-      "order": 9,
+      "updatedAt": "2026-06-16T10:13:07.442Z",
+      "order": 10,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
-      "chapterId": "basic-features-pDRdN25Lk6",
-      "chapterLabel": "Basic Features"
+      "chapterId": "basic-core-features-pDRdN25Lk6",
+      "chapterLabel": "Basic Core Features"
     },
     {
       "id": "1ddce881-2116-41eb-9980-f201fcc06f27",
@@ -718,17 +722,16 @@
       "breadcrumb": [
         "Platforms",
         "ATAK",
-        "USING ATAK FEATURES",
-        "Basic Features",
+        "Basic Core Features",
         "GeoChat"
       ],
       "path": "/content/en/pages/guides/tak-guide/geochat-SMWfbwNItT.json",
-      "updatedAt": "2026-02-28T11:13:22.399Z",
-      "order": 10,
+      "updatedAt": "2026-06-15T19:42:23.236Z",
+      "order": 11,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
-      "chapterId": "basic-features-pDRdN25Lk6",
-      "chapterLabel": "Basic Features"
+      "chapterId": "basic-core-features-pDRdN25Lk6",
+      "chapterLabel": "Basic Core Features"
     },
     {
       "id": "a9de8b5d-4c35-4246-b0fe-7aeade6054ec",
@@ -738,97 +741,16 @@
       "breadcrumb": [
         "Platforms",
         "ATAK",
-        "USING ATAK FEATURES",
-        "Basic Features",
+        "Basic Core Features",
         "Clear Content"
       ],
       "path": "/content/en/pages/guides/tak-guide/clear-content-lzrtCD0MdO.json",
-      "updatedAt": "2026-02-28T11:13:25.165Z",
-      "order": 11,
-      "platform": "android",
-      "clientId": "atak-sGxUIXpQlU",
-      "chapterId": "basic-features-pDRdN25Lk6",
-      "chapterLabel": "Basic Features"
-    },
-    {
-      "id": "8486d4e3-a42a-4478-b758-080f7033d3c5",
-      "slug": "downloading-maps-for-offline-use-AhUMNQ8mmS",
-      "collection": "guides/tak-guide",
-      "title": "Downloading Maps for Offline use",
-      "breadcrumb": [
-        "Platforms",
-        "ATAK",
-        "USING ATAK FEATURES",
-        "Advanced Features",
-        "Downloading Maps for Offline use"
-      ],
-      "path": "/content/en/pages/guides/tak-guide/downloading-maps-for-offline-use-AhUMNQ8mmS.json",
-      "updatedAt": "2026-02-21T11:17:05.403Z",
+      "updatedAt": "2026-06-15T19:39:13.557Z",
       "order": 12,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
-      "chapterId": "advanced-features-w8JvOrLVwe",
-      "chapterLabel": "Advanced Features"
-    },
-    {
-      "id": "8ff9d3fc-0a1c-4313-9458-c1a41be2f765",
-      "slug": "overlay-manager-how-to-manage-the-views-BVRnLCM7ME",
-      "collection": "guides/tak-guide",
-      "title": "Overlay Manager - How to manage the views",
-      "breadcrumb": [
-        "Platforms",
-        "ATAK",
-        "USING ATAK FEATURES",
-        "Advanced Features",
-        "Overlay Manager - How to manage the views"
-      ],
-      "path": "/content/en/pages/guides/tak-guide/overlay-manager-how-to-manage-the-views-BVRnLCM7ME.json",
-      "updatedAt": "2026-02-21T11:17:10.271Z",
-      "order": 13,
-      "platform": "android",
-      "clientId": "atak-sGxUIXpQlU",
-      "chapterId": "advanced-features-w8JvOrLVwe",
-      "chapterLabel": "Advanced Features"
-    },
-    {
-      "id": "4f48651a-6513-4ec9-a22b-af1363663a5d",
-      "slug": "how-to-manage-atak-tools-and-toolbars-PbkLQcvrCe",
-      "collection": "guides/tak-guide",
-      "title": "How to manage ATAK Tools and Toolbars",
-      "breadcrumb": [
-        "Platforms",
-        "ATAK",
-        "USING ATAK FEATURES",
-        "Advanced Features",
-        "How to manage ATAK Tools and Toolbars"
-      ],
-      "path": "/content/en/pages/guides/tak-guide/how-to-manage-atak-tools-and-toolbars-PbkLQcvrCe.json",
-      "updatedAt": "2026-02-21T11:17:25.786Z",
-      "order": 14,
-      "platform": "android",
-      "clientId": "atak-sGxUIXpQlU",
-      "chapterId": "advanced-features-w8JvOrLVwe",
-      "chapterLabel": "Advanced Features"
-    },
-    {
-      "id": "f30f10bf-0f99-4292-9930-56eaf6af5173",
-      "slug": "create-routes-and-use-vns-uymW3nDSPE",
-      "collection": "guides/tak-guide",
-      "title": "Create Routes and use VNS",
-      "breadcrumb": [
-        "Platforms",
-        "ATAK",
-        "USING ATAK FEATURES",
-        "Advanced Features",
-        "Create Routes and use VNS"
-      ],
-      "path": "/content/en/pages/guides/tak-guide/create-routes-and-use-vns-uymW3nDSPE.json",
-      "updatedAt": "2026-02-21T11:17:31.428Z",
-      "order": 15,
-      "platform": "android",
-      "clientId": "atak-sGxUIXpQlU",
-      "chapterId": "advanced-features-w8JvOrLVwe",
-      "chapterLabel": "Advanced Features"
+      "chapterId": "basic-core-features-pDRdN25Lk6",
+      "chapterLabel": "Basic Core Features"
     },
     {
       "id": "9bb35061-2c64-4718-9273-c11847dfa322",
@@ -838,17 +760,16 @@
       "breadcrumb": [
         "Platforms",
         "ATAK",
-        "USING ATAK FEATURES",
-        "Advanced Features",
+        "Advanced Core Features",
         "Create & Manage Feeds"
       ],
       "path": "/content/en/pages/guides/tak-guide/create-manage-feeds-z2CpC9Lpan.json",
-      "updatedAt": "2026-02-28T11:13:36.157Z",
-      "order": 16,
+      "updatedAt": "2026-06-15T19:42:22.210Z",
+      "order": 13,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
-      "chapterId": "advanced-features-w8JvOrLVwe",
-      "chapterLabel": "Advanced Features"
+      "chapterId": "advanced-core-features-w8JvOrLVwe",
+      "chapterLabel": "Advanced Core Features"
     },
     {
       "id": "2676ebbb-83f4-4569-a7a2-7050395f28c8",
@@ -858,37 +779,35 @@
       "breadcrumb": [
         "Platforms",
         "ATAK",
-        "USING ATAK FEATURES",
-        "Advanced Features",
+        "Advanced Core Features",
         "Draw & share Plans"
       ],
       "path": "/content/en/pages/guides/tak-guide/draw-share-plans-fxjT3hDZ5p.json",
-      "updatedAt": "2026-02-21T11:17:43.549Z",
-      "order": 17,
+      "updatedAt": "2026-06-16T10:15:20.448Z",
+      "order": 14,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
-      "chapterId": "advanced-features-w8JvOrLVwe",
-      "chapterLabel": "Advanced Features"
+      "chapterId": "advanced-core-features-w8JvOrLVwe",
+      "chapterLabel": "Advanced Core Features"
     },
     {
-      "id": "9e276016-9095-4d4d-964b-871709eac99e",
-      "slug": "lasso-to-add-into-feed-Mt0Vykodea",
+      "id": "3984313a-7dd1-46e2-8571-949c99893e8a",
+      "slug": "draw-shapes-graphics-OSECv6soAB",
       "collection": "guides/tak-guide",
-      "title": "Lasso to add into Feed",
+      "title": "Draw Shapes & Graphics",
       "breadcrumb": [
         "Platforms",
         "ATAK",
-        "USING ATAK FEATURES",
-        "Advanced Features",
-        "Lasso to add into Feed"
+        "Advanced Core Features",
+        "Draw Shapes & Graphics"
       ],
-      "path": "/content/en/pages/guides/tak-guide/lasso-to-add-into-feed-Mt0Vykodea.json",
-      "updatedAt": "2026-02-28T11:13:49.510Z",
-      "order": 18,
+      "path": "/content/en/pages/guides/tak-guide/draw-shapes-graphics-OSECv6soAB.json",
+      "updatedAt": "2026-06-15T21:18:56.309Z",
+      "order": 15,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
-      "chapterId": "advanced-features-w8JvOrLVwe",
-      "chapterLabel": "Advanced Features"
+      "chapterId": "advanced-core-features-w8JvOrLVwe",
+      "chapterLabel": "Advanced Core Features"
     },
     {
       "id": "7df31ecb-1092-4d8c-9013-b168feec84ba",
@@ -898,37 +817,206 @@
       "breadcrumb": [
         "Platforms",
         "ATAK",
-        "USING ATAK FEATURES",
-        "Advanced Features",
+        "Advanced Core Features",
         "Geofences"
       ],
       "path": "/content/en/pages/guides/tak-guide/geofences-wgaLkSEvef.json",
-      "updatedAt": "2026-02-28T11:13:55.810Z",
-      "order": 19,
+      "updatedAt": "2026-06-14T12:14:43.049Z",
+      "order": 16,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
-      "chapterId": "advanced-features-w8JvOrLVwe",
-      "chapterLabel": "Advanced Features"
+      "chapterId": "advanced-core-features-w8JvOrLVwe",
+      "chapterLabel": "Advanced Core Features"
     },
     {
-      "id": "46d6af66-24b1-48f2-be29-eba6d30b8326",
-      "slug": "uastool-HDZFE1QhVT",
+      "id": "9e276016-9095-4d4d-964b-871709eac99e",
+      "slug": "lasso-to-add-into-feed-Mt0Vykodea",
       "collection": "guides/tak-guide",
-      "title": "Uastool",
+      "title": "Lasso to add into Feed",
       "breadcrumb": [
         "Platforms",
         "ATAK",
-        "USING ATAK FEATURES",
-        "Supported Plugins",
-        "Uastool"
+        "Advanced Core Features",
+        "Lasso to add into Feed"
       ],
-      "path": "/content/en/pages/guides/tak-guide/uastool-HDZFE1QhVT.json",
-      "updatedAt": "2026-04-12T10:06:09.700Z",
+      "path": "/content/en/pages/guides/tak-guide/lasso-to-add-into-feed-Mt0Vykodea.json",
+      "updatedAt": "2026-06-14T12:14:27.795Z",
+      "order": 17,
+      "platform": "android",
+      "clientId": "atak-sGxUIXpQlU",
+      "chapterId": "advanced-core-features-w8JvOrLVwe",
+      "chapterLabel": "Advanced Core Features"
+    },
+    {
+      "id": "8ff9d3fc-0a1c-4313-9458-c1a41be2f765",
+      "slug": "overlay-manager-how-to-manage-the-views-BVRnLCM7ME",
+      "collection": "guides/tak-guide",
+      "title": "Overlay Manager - How to manage the views",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "Advanced Core Features",
+        "Overlay Manager - How to manage the views"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/overlay-manager-how-to-manage-the-views-BVRnLCM7ME.json",
+      "updatedAt": "2026-06-15T19:44:32.792Z",
+      "order": 18,
+      "platform": "android",
+      "clientId": "atak-sGxUIXpQlU",
+      "chapterId": "advanced-core-features-w8JvOrLVwe",
+      "chapterLabel": "Advanced Core Features"
+    },
+    {
+      "id": "f30f10bf-0f99-4292-9930-56eaf6af5173",
+      "slug": "create-routes-and-use-vns-uymW3nDSPE",
+      "collection": "guides/tak-guide",
+      "title": "Create Routes and use VNS",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "Advanced Core Features",
+        "Create Routes and use VNS"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/create-routes-and-use-vns-uymW3nDSPE.json",
+      "updatedAt": "2026-06-15T19:42:33.761Z",
+      "order": 19,
+      "platform": "android",
+      "clientId": "atak-sGxUIXpQlU",
+      "chapterId": "advanced-core-features-w8JvOrLVwe",
+      "chapterLabel": "Advanced Core Features"
+    },
+    {
+      "id": "8486d4e3-a42a-4478-b758-080f7033d3c5",
+      "slug": "downloading-maps-for-offline-use-AhUMNQ8mmS",
+      "collection": "guides/tak-guide",
+      "title": "Downloading Maps for Offline use",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "Advanced Core Features",
+        "Downloading Maps for Offline use"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/downloading-maps-for-offline-use-AhUMNQ8mmS.json",
+      "updatedAt": "2026-06-15T19:43:05.391Z",
       "order": 20,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
-      "chapterId": "supported-plugins-XdDLDnS5CE",
-      "chapterLabel": "Supported Plugins"
+      "chapterId": "advanced-core-features-w8JvOrLVwe",
+      "chapterLabel": "Advanced Core Features"
+    },
+    {
+      "id": "4f48651a-6513-4ec9-a22b-af1363663a5d",
+      "slug": "how-to-manage-atak-tools-and-toolbars-PbkLQcvrCe",
+      "collection": "guides/tak-guide",
+      "title": "How to manage ATAK Tools and Toolbars",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "Advanced Core Features",
+        "How to manage ATAK Tools and Toolbars"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/how-to-manage-atak-tools-and-toolbars-PbkLQcvrCe.json",
+      "updatedAt": "2026-06-15T19:44:07.321Z",
+      "order": 21,
+      "platform": "android",
+      "clientId": "atak-sGxUIXpQlU",
+      "chapterId": "advanced-core-features-w8JvOrLVwe",
+      "chapterLabel": "Advanced Core Features"
+    },
+    {
+      "id": "f05950f1-b1b1-45c1-b8bc-944f6fafdeff",
+      "slug": "customize-markers-icons-TGz9RiGwju",
+      "collection": "guides/tak-guide",
+      "title": "Customize Markers & Icons",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "Advanced Core Features",
+        "Customize Markers & Icons"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/customize-markers-icons-TGz9RiGwju.json",
+      "updatedAt": "2026-06-15T21:18:55.337Z",
+      "order": 22,
+      "platform": "android",
+      "clientId": "atak-sGxUIXpQlU",
+      "chapterId": "advanced-core-features-w8JvOrLVwe",
+      "chapterLabel": "Advanced Core Features"
+    },
+    {
+      "id": "6e02cbf5-d2a6-4959-8b06-5b2aa635b4fc",
+      "slug": "drop-a-casevac-9-line-sstaZDEz76",
+      "collection": "guides/tak-guide",
+      "title": "Drop a CASEVAC 9-Line",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "Advanced Core Features",
+        "Drop a CASEVAC 9-Line"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/drop-a-casevac-9-line-sstaZDEz76.json",
+      "updatedAt": "2026-06-15T21:18:55.858Z",
+      "order": 23,
+      "platform": "android",
+      "clientId": "atak-sGxUIXpQlU",
+      "chapterId": "advanced-core-features-w8JvOrLVwe",
+      "chapterLabel": "Advanced Core Features"
+    },
+    {
+      "id": "ebc771ea-9960-441b-930e-b29757957866",
+      "slug": "manage-contacts-URumWb83Ox",
+      "collection": "guides/tak-guide",
+      "title": "Manage Contacts",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "Advanced Core Features",
+        "Manage Contacts"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/manage-contacts-URumWb83Ox.json",
+      "updatedAt": "2026-06-15T21:18:56.790Z",
+      "order": 24,
+      "platform": "android",
+      "clientId": "atak-sGxUIXpQlU",
+      "chapterId": "advanced-core-features-w8JvOrLVwe",
+      "chapterLabel": "Advanced Core Features"
+    },
+    {
+      "id": "8ef634b5-1930-4ea5-b85f-9f585b5603de",
+      "slug": "digital-pointer-0K1KdydAeq",
+      "collection": "guides/tak-guide",
+      "title": "Digital Pointer",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "Advanced Core Features",
+        "Digital Pointer"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/digital-pointer-0K1KdydAeq.json",
+      "updatedAt": "2026-06-15T21:18:57.274Z",
+      "order": 25,
+      "platform": "android",
+      "clientId": "atak-sGxUIXpQlU",
+      "chapterId": "advanced-core-features-w8JvOrLVwe",
+      "chapterLabel": "Advanced Core Features"
+    },
+    {
+      "id": "644e212b-f050-417a-a50a-ee89d6890161",
+      "slug": "broadcast-emergency-alert-UUcvlpUGMg",
+      "collection": "guides/tak-guide",
+      "title": "Broadcast Emergency Alert",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "Advanced Core Features",
+        "Broadcast Emergency Alert"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/broadcast-emergency-alert-UUcvlpUGMg.json",
+      "updatedAt": "2026-06-15T21:18:57.709Z",
+      "order": 26,
+      "platform": "android",
+      "clientId": "atak-sGxUIXpQlU",
+      "chapterId": "advanced-core-features-w8JvOrLVwe",
+      "chapterLabel": "Advanced Core Features"
     },
     {
       "id": "0e075790-c86e-4330-9e1f-3d43298c5fce",
@@ -942,28 +1030,28 @@
         "Overview"
       ],
       "path": "/content/en/pages/guides/tak-guide/overview-CVNzKhRcKY.json",
-      "updatedAt": "2026-04-12T10:05:02.164Z",
-      "order": 21,
+      "updatedAt": "2026-06-16T12:20:28.018Z",
+      "order": 27,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
       "chapterId": "usage-by-role-2F9bOBgUmG",
       "chapterLabel": "USAGE BY ROLE"
     },
     {
-      "id": "a3c77bb3-791e-4dcb-8ce1-bfc6850119e0",
-      "slug": "use-geochat-for-comms-s20PZmRGw8",
+      "id": "1e44df7f-4908-4672-833a-d482c72b68ef",
+      "slug": "what-you-get-send-MhsXXsmVxN",
       "collection": "guides/tak-guide",
-      "title": "Use Geochat for comms",
+      "title": "What you get & send",
       "breadcrumb": [
         "Platforms",
         "ATAK",
         "USAGE BY ROLE",
         "Fighter",
-        "Use Geochat for comms"
+        "What you get & send"
       ],
-      "path": "/content/en/pages/guides/tak-guide/use-geochat-for-comms-s20PZmRGw8.json",
-      "updatedAt": "2026-04-12T10:05:24.996Z",
-      "order": 22,
+      "path": "/content/en/pages/guides/tak-guide/what-you-get-send-MhsXXsmVxN.json",
+      "updatedAt": "2026-06-16T12:23:41.539Z",
+      "order": 28,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
       "chapterId": "fighter-Jaxg9FOHAs",
@@ -982,8 +1070,28 @@
         "Use RECON Feed"
       ],
       "path": "/content/en/pages/guides/tak-guide/use-recon-feed-1eKYHfIBys.json",
-      "updatedAt": "2026-04-12T10:05:30.082Z",
-      "order": 23,
+      "updatedAt": "2026-06-14T13:12:56.341Z",
+      "order": 29,
+      "platform": "android",
+      "clientId": "atak-sGxUIXpQlU",
+      "chapterId": "fighter-Jaxg9FOHAs",
+      "chapterLabel": "Fighter"
+    },
+    {
+      "id": "a3c77bb3-791e-4dcb-8ce1-bfc6850119e0",
+      "slug": "use-geochat-for-comms-s20PZmRGw8",
+      "collection": "guides/tak-guide",
+      "title": "Use Geochat for comms",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "USAGE BY ROLE",
+        "Fighter",
+        "Use Geochat for comms"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/use-geochat-for-comms-s20PZmRGw8.json",
+      "updatedAt": "2026-06-16T12:25:47.763Z",
+      "order": 30,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
       "chapterId": "fighter-Jaxg9FOHAs",
@@ -1002,26 +1110,786 @@
         "RECON Feed Management"
       ],
       "path": "/content/en/pages/guides/tak-guide/recon-feed-management-y1O0x1g2sf.json",
-      "updatedAt": "2026-02-28T11:14:24.245Z",
-      "order": 24,
+      "updatedAt": "2026-06-14T13:16:24.218Z",
+      "order": 31,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
       "chapterId": "command-post-jEe9wSs29A",
       "chapterLabel": "Command Post"
     },
     {
-      "id": "28903747-f31c-424e-b7e5-7a3a70cd6648",
-      "slug": "troubleshooting-IC3Nd5qZHr",
+      "id": "0a4fa578-1ecd-4395-9827-e2c8a9eb226c",
+      "slug": "go-to-coordinates-x7AdN7ZMgn",
       "collection": "guides/tak-guide",
-      "title": "Troubleshooting",
+      "title": "Go To Coordinates",
       "breadcrumb": [
         "Platforms",
         "ATAK",
-        "Troubleshooting"
+        "ADDITIONAL FEATURES",
+        "Navigation & Coordinates",
+        "Go To Coordinates"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/go-to-coordinates-x7AdN7ZMgn.json",
+      "updatedAt": "2026-06-15T20:53:46.342Z",
+      "order": 32,
+      "platform": "android",
+      "clientId": "atak-sGxUIXpQlU",
+      "chapterId": "navigation-coordinates-x2YhsQTF3N",
+      "chapterLabel": "Navigation & Coordinates"
+    },
+    {
+      "id": "a91b4b3c-9288-4e9d-8368-50ff8d1015c6",
+      "slug": "get-coordinates-with-center-designator-B4pKmxr0H0",
+      "collection": "guides/tak-guide",
+      "title": "Get Coordinates with Center Designator",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "ADDITIONAL FEATURES",
+        "Navigation & Coordinates",
+        "Get Coordinates with Center Designator"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/get-coordinates-with-center-designator-B4pKmxr0H0.json",
+      "updatedAt": "2026-06-15T20:53:47.228Z",
+      "order": 33,
+      "platform": "android",
+      "clientId": "atak-sGxUIXpQlU",
+      "chapterId": "navigation-coordinates-x2YhsQTF3N",
+      "chapterLabel": "Navigation & Coordinates"
+    },
+    {
+      "id": "e87ac21a-a663-4105-84d8-6de6898371ae",
+      "slug": "navigate-a-route-zHde8FSxCb",
+      "collection": "guides/tak-guide",
+      "title": "Navigate a Route",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "ADDITIONAL FEATURES",
+        "Navigation & Coordinates",
+        "Navigate a Route"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/navigate-a-route-zHde8FSxCb.json",
+      "updatedAt": "2026-06-15T20:53:48.642Z",
+      "order": 34,
+      "platform": "android",
+      "clientId": "atak-sGxUIXpQlU",
+      "chapterId": "navigation-coordinates-x2YhsQTF3N",
+      "chapterLabel": "Navigation & Coordinates"
+    },
+    {
+      "id": "738081cb-3906-4aee-bd2b-8635ac74285d",
+      "slug": "resection-no-gps-location-YjW4JqiWQJ",
+      "collection": "guides/tak-guide",
+      "title": "Resection (No-GPS Location)",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "ADDITIONAL FEATURES",
+        "Navigation & Coordinates",
+        "Resection (No-GPS Location)"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/resection-no-gps-location-YjW4JqiWQJ.json",
+      "updatedAt": "2026-06-15T20:53:49.610Z",
+      "order": 35,
+      "platform": "android",
+      "clientId": "atak-sGxUIXpQlU",
+      "chapterId": "navigation-coordinates-x2YhsQTF3N",
+      "chapterLabel": "Navigation & Coordinates"
+    },
+    {
+      "id": "973ac63e-7215-46ce-891b-297b77cc1548",
+      "slug": "get-location-with-red-x-14YkJ0qaz7",
+      "collection": "guides/tak-guide",
+      "title": "Get Location with Red X",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "ADDITIONAL FEATURES",
+        "Navigation & Coordinates",
+        "Get Location with Red X"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/get-location-with-red-x-14YkJ0qaz7.json",
+      "updatedAt": "2026-06-15T20:53:46.785Z",
+      "order": 36,
+      "platform": "android",
+      "clientId": "atak-sGxUIXpQlU",
+      "chapterId": "navigation-coordinates-x2YhsQTF3N",
+      "chapterLabel": "Navigation & Coordinates"
+    },
+    {
+      "id": "8daa5a35-5b6d-4234-8566-ad7f9a6413db",
+      "slug": "off-screen-marker-indicators-OwR2HB0xVZ",
+      "collection": "guides/tak-guide",
+      "title": "Off-Screen Marker Indicators",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "ADDITIONAL FEATURES",
+        "Navigation & Coordinates",
+        "Off-Screen Marker Indicators"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/off-screen-marker-indicators-OwR2HB0xVZ.json",
+      "updatedAt": "2026-06-15T20:53:47.674Z",
+      "order": 37,
+      "platform": "android",
+      "clientId": "atak-sGxUIXpQlU",
+      "chapterId": "navigation-coordinates-x2YhsQTF3N",
+      "chapterLabel": "Navigation & Coordinates"
+    },
+    {
+      "id": "a5e06343-ceaf-4102-8dcc-64d6a2d53f40",
+      "slug": "control-location-providers-WuJJaCfIYG",
+      "collection": "guides/tak-guide",
+      "title": "Control Location Providers",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "ADDITIONAL FEATURES",
+        "Navigation & Coordinates",
+        "Control Location Providers"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/control-location-providers-WuJJaCfIYG.json",
+      "updatedAt": "2026-06-15T20:53:48.159Z",
+      "order": 38,
+      "platform": "android",
+      "clientId": "atak-sGxUIXpQlU",
+      "chapterId": "navigation-coordinates-x2YhsQTF3N",
+      "chapterLabel": "Navigation & Coordinates"
+    },
+    {
+      "id": "b8aaf9c0-a307-4aeb-94ec-e5bfd81d7751",
+      "slug": "track-to-a-target-with-bloodhound-CRgoGZzBqb",
+      "collection": "guides/tak-guide",
+      "title": "Track to a Target with Bloodhound",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "ADDITIONAL FEATURES",
+        "Navigation & Coordinates",
+        "Track to a Target with Bloodhound"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/track-to-a-target-with-bloodhound-CRgoGZzBqb.json",
+      "updatedAt": "2026-06-15T20:53:49.114Z",
+      "order": 39,
+      "platform": "android",
+      "clientId": "atak-sGxUIXpQlU",
+      "chapterId": "navigation-coordinates-x2YhsQTF3N",
+      "chapterLabel": "Navigation & Coordinates"
+    },
+    {
+      "id": "4017490c-98ea-4ad6-a60a-9e7e728d3ee6",
+      "slug": "track-movement-gps-tracks-ncPNa8dv8K",
+      "collection": "guides/tak-guide",
+      "title": "Track Movement (GPS Tracks)",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "ADDITIONAL FEATURES",
+        "Navigation & Coordinates",
+        "Track Movement (GPS Tracks)"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/track-movement-gps-tracks-ncPNa8dv8K.json",
+      "updatedAt": "2026-06-15T21:18:58.177Z",
+      "order": 40,
+      "platform": "android",
+      "clientId": "atak-sGxUIXpQlU",
+      "chapterId": "navigation-coordinates-x2YhsQTF3N",
+      "chapterLabel": "Navigation & Coordinates"
+    },
+    {
+      "id": "5f24eb7f-21e5-4cb8-8ee9-83d03a1864eb",
+      "slug": "measure-range-bearing-vEAV62W7O1",
+      "collection": "guides/tak-guide",
+      "title": "Measure Range & Bearing",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "ADDITIONAL FEATURES",
+        "Range & Bearing Tools",
+        "Measure Range & Bearing"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/measure-range-bearing-vEAV62W7O1.json",
+      "updatedAt": "2026-06-16T10:20:34.612Z",
+      "order": 41,
+      "platform": "android",
+      "clientId": "atak-sGxUIXpQlU",
+      "chapterId": "range-bearing-tools-0VXiObOnFi",
+      "chapterLabel": "Range & Bearing Tools"
+    },
+    {
+      "id": "55ca4562-41f2-4a6e-b215-ed5ae29771a2",
+      "slug": "dynamic-range-bearing-HMYy8mVdNk",
+      "collection": "guides/tak-guide",
+      "title": "Dynamic Range & Bearing",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "ADDITIONAL FEATURES",
+        "Range & Bearing Tools",
+        "Dynamic Range & Bearing"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/dynamic-range-bearing-HMYy8mVdNk.json",
+      "updatedAt": "2026-06-15T20:53:50.553Z",
+      "order": 42,
+      "platform": "android",
+      "clientId": "atak-sGxUIXpQlU",
+      "chapterId": "range-bearing-tools-0VXiObOnFi",
+      "chapterLabel": "Range & Bearing Tools"
+    },
+    {
+      "id": "631a6088-1d19-41b7-82db-9445ffdf1091",
+      "slug": "range-rings-bullseye-NHJCYsh6xN",
+      "collection": "guides/tak-guide",
+      "title": "Range Rings & Bullseye",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "ADDITIONAL FEATURES",
+        "Range & Bearing Tools",
+        "Range Rings & Bullseye"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/range-rings-bullseye-NHJCYsh6xN.json",
+      "updatedAt": "2026-06-15T20:53:51.011Z",
+      "order": 43,
+      "platform": "android",
+      "clientId": "atak-sGxUIXpQlU",
+      "chapterId": "range-bearing-tools-0VXiObOnFi",
+      "chapterLabel": "Range & Bearing Tools"
+    },
+    {
+      "id": "43d69a69-6e3e-44b1-8054-5cf737ea6c83",
+      "slug": "use-3d-terrain-view-nTeTbi2I5K",
+      "collection": "guides/tak-guide",
+      "title": "Use 3D Terrain View",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "ADDITIONAL FEATURES",
+        "Elevation, Terrain & Map Tools",
+        "Use 3D Terrain View"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/use-3d-terrain-view-nTeTbi2I5K.json",
+      "updatedAt": "2026-06-15T20:53:52.840Z",
+      "order": 44,
+      "platform": "android",
+      "clientId": "atak-sGxUIXpQlU",
+      "chapterId": "elevation-terrain-map-tools-HGXlYrEFbM",
+      "chapterLabel": "Elevation, Terrain & Map Tools"
+    },
+    {
+      "id": "8945544b-2914-45f3-8c64-a1f46368dc0f",
+      "slug": "add-3d-models-to-map-bp5Bo7T0oI",
+      "collection": "guides/tak-guide",
+      "title": "Add 3D Models to Map",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "ADDITIONAL FEATURES",
+        "Elevation, Terrain & Map Tools",
+        "Add 3D Models to Map"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/add-3d-models-to-map-bp5Bo7T0oI.json",
+      "updatedAt": "2026-06-15T20:53:53.270Z",
+      "order": 45,
+      "platform": "android",
+      "clientId": "atak-sGxUIXpQlU",
+      "chapterId": "elevation-terrain-map-tools-HGXlYrEFbM",
+      "chapterLabel": "Elevation, Terrain & Map Tools"
+    },
+    {
+      "id": "5a5f1c7d-61bd-42a5-bea8-6445fc145949",
+      "slug": "scout-with-first-person-view-tZ27WjeppE",
+      "collection": "guides/tak-guide",
+      "title": "Scout with First-Person View",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "ADDITIONAL FEATURES",
+        "Elevation, Terrain & Map Tools",
+        "Scout with First-Person View"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/scout-with-first-person-view-tZ27WjeppE.json",
+      "updatedAt": "2026-06-15T20:53:53.693Z",
+      "order": 46,
+      "platform": "android",
+      "clientId": "atak-sGxUIXpQlU",
+      "chapterId": "elevation-terrain-map-tools-HGXlYrEFbM",
+      "chapterLabel": "Elevation, Terrain & Map Tools"
+    },
+    {
+      "id": "d387b912-e790-4f80-8177-e9db3d63d428",
+      "slug": "elevation-viewshed-tools-Vqje1Ybg0d",
+      "collection": "guides/tak-guide",
+      "title": "Elevation & Viewshed Tools",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "ADDITIONAL FEATURES",
+        "Elevation, Terrain & Map Tools",
+        "Elevation & Viewshed Tools"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/elevation-viewshed-tools-Vqje1Ybg0d.json",
+      "updatedAt": "2026-06-15T20:53:54.113Z",
+      "order": 47,
+      "platform": "android",
+      "clientId": "atak-sGxUIXpQlU",
+      "chapterId": "elevation-terrain-map-tools-HGXlYrEFbM",
+      "chapterLabel": "Elevation, Terrain & Map Tools"
+    },
+    {
+      "id": "21c5cd56-02ca-4ec0-8e44-3e33fbc6e2dc",
+      "slug": "manage-elevation-sources-1DMW21VzzP",
+      "collection": "guides/tak-guide",
+      "title": "Manage Elevation Sources",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "ADDITIONAL FEATURES",
+        "Elevation, Terrain & Map Tools",
+        "Manage Elevation Sources"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/manage-elevation-sources-1DMW21VzzP.json",
+      "updatedAt": "2026-06-15T20:53:54.561Z",
+      "order": 48,
+      "platform": "android",
+      "clientId": "atak-sGxUIXpQlU",
+      "chapterId": "elevation-terrain-map-tools-HGXlYrEFbM",
+      "chapterLabel": "Elevation, Terrain & Map Tools"
+    },
+    {
+      "id": "4925e7f6-8e5f-49ed-9432-4f2f5496b02d",
+      "slug": "georeference-an-image-rubber-sheet-TgWDRF45Bd",
+      "collection": "guides/tak-guide",
+      "title": "Georeference an Image (Rubber Sheet)",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "ADDITIONAL FEATURES",
+        "Elevation, Terrain & Map Tools",
+        "Georeference an Image (Rubber Sheet)"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/georeference-an-image-rubber-sheet-TgWDRF45Bd.json",
+      "updatedAt": "2026-06-15T20:53:54.994Z",
+      "order": 49,
+      "platform": "android",
+      "clientId": "atak-sGxUIXpQlU",
+      "chapterId": "elevation-terrain-map-tools-HGXlYrEFbM",
+      "chapterLabel": "Elevation, Terrain & Map Tools"
+    },
+    {
+      "id": "4015bdff-290b-4574-891e-6ee6b80a6628",
+      "slug": "import-files-remote-resources-yjaTiWVKHl",
+      "collection": "guides/tak-guide",
+      "title": "Import Files & Remote Resources",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "ADDITIONAL FEATURES",
+        "Elevation, Terrain & Map Tools",
+        "Import Files & Remote Resources"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/import-files-remote-resources-yjaTiWVKHl.json",
+      "updatedAt": "2026-06-15T21:18:58.658Z",
+      "order": 50,
+      "platform": "android",
+      "clientId": "atak-sGxUIXpQlU",
+      "chapterId": "elevation-terrain-map-tools-HGXlYrEFbM",
+      "chapterLabel": "Elevation, Terrain & Map Tools"
+    },
+    {
+      "id": "81576339-9877-444d-9ace-fa92a79b0e60",
+      "slug": "play-capture-video-hWmpN6dj9t",
+      "collection": "guides/tak-guide",
+      "title": "Play & Capture Video",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "ADDITIONAL FEATURES",
+        "Video in ATAK",
+        "Play & Capture Video"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/play-capture-video-hWmpN6dj9t.json",
+      "updatedAt": "2026-06-15T19:46:26.259Z",
+      "order": 51,
+      "platform": "android",
+      "clientId": "atak-sGxUIXpQlU",
+      "chapterId": "video-in-atak-iVmcVibrpH",
+      "chapterLabel": "Video in ATAK"
+    },
+    {
+      "id": "8f3e9f16-d383-4fa5-990f-22c39afa73ce",
+      "slug": "install-uas-tool-plugin-BDPcnhvDgk",
+      "collection": "guides/tak-guide",
+      "title": "Install UAS Tool Plugin",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "SUPPORTED PLUGINS",
+        "UAS Tool",
+        "Install UAS Tool Plugin"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/install-uas-tool-plugin-BDPcnhvDgk.json",
+      "updatedAt": "2026-06-16T10:28:43.907Z",
+      "order": 52,
+      "platform": "android",
+      "clientId": "atak-sGxUIXpQlU",
+      "chapterId": "uas-tool-7Z75EajOUb",
+      "chapterLabel": "UAS Tool"
+    },
+    {
+      "id": "b772f6a2-72a8-4846-9007-0572f4f9c885",
+      "slug": "auto-connect-uas-tool-to-mediamtx-MahzGHsEdu",
+      "collection": "guides/tak-guide",
+      "title": "Auto-connect UAS Tool to MediaMTX",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "SUPPORTED PLUGINS",
+        "UAS Tool",
+        "Auto-connect UAS Tool to MediaMTX"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/auto-connect-uas-tool-to-mediamtx-MahzGHsEdu.json",
+      "updatedAt": "2026-06-16T10:31:04.825Z",
+      "order": 53,
+      "platform": "android",
+      "clientId": "atak-sGxUIXpQlU",
+      "chapterId": "uas-tool-7Z75EajOUb",
+      "chapterLabel": "UAS Tool"
+    },
+    {
+      "id": "9e112593-309f-483e-a0f7-1127bd556065",
+      "slug": "open-uas-tool-read-telemetry-CvGSGecLE1",
+      "collection": "guides/tak-guide",
+      "title": "Open UAS Tool & Read Telemetry",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "SUPPORTED PLUGINS",
+        "UAS Tool",
+        "Open UAS Tool & Read Telemetry"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/open-uas-tool-read-telemetry-CvGSGecLE1.json",
+      "updatedAt": "2026-06-15T19:49:07.036Z",
+      "order": 54,
+      "platform": "android",
+      "clientId": "atak-sGxUIXpQlU",
+      "chapterId": "uas-tool-7Z75EajOUb",
+      "chapterLabel": "UAS Tool"
+    },
+    {
+      "id": "ed46efc7-521b-4486-8bed-e8b8b751552b",
+      "slug": "watch-control-drone-camera-45LPQNKdqn",
+      "collection": "guides/tak-guide",
+      "title": "Watch & Control Drone Camera",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "SUPPORTED PLUGINS",
+        "UAS Tool",
+        "Watch & Control Drone Camera"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/watch-control-drone-camera-45LPQNKdqn.json",
+      "updatedAt": "2026-06-15T19:50:22.907Z",
+      "order": 55,
+      "platform": "android",
+      "clientId": "atak-sGxUIXpQlU",
+      "chapterId": "uas-tool-7Z75EajOUb",
+      "chapterLabel": "UAS Tool"
+    },
+    {
+      "id": "95a82fb1-43ed-462c-bd0d-3d1aa69d7841",
+      "slug": "capture-broadcast-drone-video-UfMEqBjxec",
+      "collection": "guides/tak-guide",
+      "title": "Capture & Broadcast Drone Video",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "SUPPORTED PLUGINS",
+        "UAS Tool",
+        "Capture & Broadcast Drone Video"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/capture-broadcast-drone-video-UfMEqBjxec.json",
+      "updatedAt": "2026-06-15T19:47:54.506Z",
+      "order": 56,
+      "platform": "android",
+      "clientId": "atak-sGxUIXpQlU",
+      "chapterId": "uas-tool-7Z75EajOUb",
+      "chapterLabel": "UAS Tool"
+    },
+    {
+      "id": "1007ba39-2dcd-49d4-97a1-7bbe73d4be43",
+      "slug": "send-drone-to-a-location-vwYPd2cbEC",
+      "collection": "guides/tak-guide",
+      "title": "Send Drone to a Location",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "SUPPORTED PLUGINS",
+        "UAS Tool",
+        "Send Drone to a Location"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/send-drone-to-a-location-vwYPd2cbEC.json",
+      "updatedAt": "2026-06-15T19:49:52.364Z",
+      "order": 57,
+      "platform": "android",
+      "clientId": "atak-sGxUIXpQlU",
+      "chapterId": "uas-tool-7Z75EajOUb",
+      "chapterLabel": "UAS Tool"
+    },
+    {
+      "id": "cbab3ab9-2622-48e4-9aaf-ab5374dd09c8",
+      "slug": "plan-drone-missions-lNvEkDE1kE",
+      "collection": "guides/tak-guide",
+      "title": "Plan Drone Missions",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "SUPPORTED PLUGINS",
+        "UAS Tool",
+        "Plan Drone Missions"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/plan-drone-missions-lNvEkDE1kE.json",
+      "updatedAt": "2026-06-15T19:49:36.760Z",
+      "order": 58,
+      "platform": "android",
+      "clientId": "atak-sGxUIXpQlU",
+      "chapterId": "uas-tool-7Z75EajOUb",
+      "chapterLabel": "UAS Tool"
+    },
+    {
+      "id": "fd47971f-97c6-4df4-9f81-9d8a643ca2b5",
+      "slug": "launch-stop-return-drone-H6yqQ4Gyc5",
+      "collection": "guides/tak-guide",
+      "title": "Launch, Stop & Return Drone",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "SUPPORTED PLUGINS",
+        "UAS Tool",
+        "Launch, Stop & Return Drone"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/launch-stop-return-drone-H6yqQ4Gyc5.json",
+      "updatedAt": "2026-06-15T19:48:14.422Z",
+      "order": 59,
+      "platform": "android",
+      "clientId": "atak-sGxUIXpQlU",
+      "chapterId": "uas-tool-7Z75EajOUb",
+      "chapterLabel": "UAS Tool"
+    },
+    {
+      "id": "fc463dc7-4572-4465-a45b-b0b9bce0196f",
+      "slug": "create-a-grid-grg-builder-RD3vtzu9yS",
+      "collection": "guides/tak-guide",
+      "title": "Create a Grid (GRG Builder)",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "SUPPORTED PLUGINS",
+        "GRG Builder",
+        "Create a Grid (GRG Builder)"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/create-a-grid-grg-builder-RD3vtzu9yS.json",
+      "updatedAt": "2026-06-15T20:51:13.205Z",
+      "order": 60,
+      "platform": "android",
+      "clientId": "atak-sGxUIXpQlU",
+      "chapterId": "grg-builder-JjwvXFR6na",
+      "chapterLabel": "GRG Builder"
+    },
+    {
+      "id": "f0f8ed7c-1ba6-438e-b9b2-196a6ebe4938",
+      "slug": "annotate-style-a-grid-xSjKDtDtsj",
+      "collection": "guides/tak-guide",
+      "title": "Annotate & Style a Grid",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "SUPPORTED PLUGINS",
+        "GRG Builder",
+        "Annotate & Style a Grid"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/annotate-style-a-grid-xSjKDtDtsj.json",
+      "updatedAt": "2026-06-15T19:51:40.057Z",
+      "order": 61,
+      "platform": "android",
+      "clientId": "atak-sGxUIXpQlU",
+      "chapterId": "grg-builder-JjwvXFR6na",
+      "chapterLabel": "GRG Builder"
+    },
+    {
+      "id": "3cbf6a03-80dd-48d2-891a-fc9ca3bce21c",
+      "slug": "export-a-grid-grg-builder-EcpaE7LkX1",
+      "collection": "guides/tak-guide",
+      "title": "Export a Grid (GRG Builder)",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "SUPPORTED PLUGINS",
+        "GRG Builder",
+        "Export a Grid (GRG Builder)"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/export-a-grid-grg-builder-EcpaE7LkX1.json",
+      "updatedAt": "2026-06-15T20:51:18.981Z",
+      "order": 62,
+      "platform": "android",
+      "clientId": "atak-sGxUIXpQlU",
+      "chapterId": "grg-builder-JjwvXFR6na",
+      "chapterLabel": "GRG Builder"
+    },
+    {
+      "id": "4271e471-e742-452d-be4f-7860bc64bd93",
+      "slug": "create-a-report-FB38XVNhaL",
+      "collection": "guides/tak-guide",
+      "title": "Create a Report",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "SUPPORTED PLUGINS",
+        "Reports",
+        "Create a Report"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/create-a-report-FB38XVNhaL.json",
+      "updatedAt": "2026-06-15T19:50:29.608Z",
+      "order": 63,
+      "platform": "android",
+      "clientId": "atak-sGxUIXpQlU",
+      "chapterId": "reports-6HdrUSYmw9",
+      "chapterLabel": "Reports"
+    },
+    {
+      "id": "54573e8e-4302-4cbf-85d1-b63019fc40cd",
+      "slug": "save-send-share-a-report-FCSrRHNkjC",
+      "collection": "guides/tak-guide",
+      "title": "Save, Send & Share a Report",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "SUPPORTED PLUGINS",
+        "Reports",
+        "Save, Send & Share a Report"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/save-send-share-a-report-FCSrRHNkjC.json",
+      "updatedAt": "2026-06-15T19:50:55.066Z",
+      "order": 64,
+      "platform": "android",
+      "clientId": "atak-sGxUIXpQlU",
+      "chapterId": "reports-6HdrUSYmw9",
+      "chapterLabel": "Reports"
+    },
+    {
+      "id": "c0da3adf-2dcd-4da8-b0f9-4eaf5deab3d7",
+      "slug": "find-reports-on-the-server-QTVm3SETE8",
+      "collection": "guides/tak-guide",
+      "title": "Find Reports on the Server",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "SUPPORTED PLUGINS",
+        "Reports",
+        "Find Reports on the Server"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/find-reports-on-the-server-QTVm3SETE8.json",
+      "updatedAt": "2026-06-15T19:50:47.363Z",
+      "order": 65,
+      "platform": "android",
+      "clientId": "atak-sGxUIXpQlU",
+      "chapterId": "reports-6HdrUSYmw9",
+      "chapterLabel": "Reports"
+    },
+    {
+      "id": "aa857e7b-8a17-4573-b2cf-6aac3a3f6d37",
+      "slug": "build-a-custom-report-template-VVphDLVbW3",
+      "collection": "guides/tak-guide",
+      "title": "Build a Custom Report Template",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "SUPPORTED PLUGINS",
+        "Reports",
+        "Build a Custom Report Template"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/build-a-custom-report-template-VVphDLVbW3.json",
+      "updatedAt": "2026-06-15T19:50:39.995Z",
+      "order": 66,
+      "platform": "android",
+      "clientId": "atak-sGxUIXpQlU",
+      "chapterId": "reports-6HdrUSYmw9",
+      "chapterLabel": "Reports"
+    },
+    {
+      "id": "8572d67c-91c7-4e00-b915-bb5f8ed8ec94",
+      "slug": "configure-report-settings-kQmMR0hmn5",
+      "collection": "guides/tak-guide",
+      "title": "Configure Report Settings",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "SUPPORTED PLUGINS",
+        "Reports",
+        "Configure Report Settings"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/configure-report-settings-kQmMR0hmn5.json",
+      "updatedAt": "2026-06-15T19:51:31.064Z",
+      "order": 67,
+      "platform": "android",
+      "clientId": "atak-sGxUIXpQlU",
+      "chapterId": "reports-6HdrUSYmw9",
+      "chapterLabel": "Reports"
+    },
+    {
+      "id": "74628bc0-a1eb-4756-972f-54802d81540c",
+      "slug": "connect-to-prc-152-rover-radio-h4TQ7hwPw2",
+      "collection": "guides/tak-guide",
+      "title": "Connect to PRC-152 / Rover Radio",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "SUPPORTED PLUGINS",
+        "Connect radio with HAMMER",
+        "Connect to PRC-152 / Rover Radio"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/connect-to-prc-152-rover-radio-h4TQ7hwPw2.json",
+      "updatedAt": "2026-06-15T21:18:59.901Z",
+      "order": 68,
+      "platform": "android",
+      "clientId": "atak-sGxUIXpQlU",
+      "chapterId": "connect-radio-with-hammer-vdPW7IvJlG",
+      "chapterLabel": "Connect radio with HAMMER"
+    },
+    {
+      "id": "89db3917-f862-4963-94b5-1ea26ae6767c",
+      "slug": "setup-encrypted-mesh-comms-ytYOQTVxVo",
+      "collection": "guides/tak-guide",
+      "title": "Setup Encrypted Mesh Comms",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "SUPPORTED PLUGINS",
+        "Connect radio with HAMMER",
+        "Setup Encrypted Mesh Comms"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/setup-encrypted-mesh-comms-ytYOQTVxVo.json",
+      "updatedAt": "2026-06-15T21:19:00.420Z",
+      "order": 69,
+      "platform": "android",
+      "clientId": "atak-sGxUIXpQlU",
+      "chapterId": "connect-radio-with-hammer-vdPW7IvJlG",
+      "chapterLabel": "Connect radio with HAMMER"
+    },
+    {
+      "id": "28903747-f31c-424e-b7e5-7a3a70cd6648",
+      "slug": "troubleshooting-IC3Nd5qZHr",
+      "collection": "guides/tak-guide",
+      "title": "TROUBLESHOOTING",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "TROUBLESHOOTING"
       ],
       "path": "/content/en/pages/guides/tak-guide/troubleshooting-IC3Nd5qZHr.json",
-      "updatedAt": "2026-06-12T22:24:56.108Z",
-      "order": 25,
+      "updatedAt": "2026-06-13T23:47:24.046Z",
+      "order": 70,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
       "chapterId": "atak-sGxUIXpQlU",
@@ -1029,98 +1897,117 @@
     },
     {
       "id": "8d02b881-5071-435c-b1f3-7d3de6e70f63",
-      "slug": "start-from-download-GstcQifMVj",
+      "slug": "set-language-localization-for-wintak-GstcQifMVj",
       "collection": "guides/tak-guide",
-      "title": "Start from Download",
+      "title": "Set language & localization for WinTAK",
       "breadcrumb": [
         "Platforms",
         "WinTAK",
-        "Start",
-        "Start from Download"
+        "START & CONNECT",
+        "Set language & localization for WinTAK"
       ],
-      "path": "/content/en/pages/guides/tak-guide/start-from-download-GstcQifMVj.json",
-      "updatedAt": "2026-02-21T22:16:31.427Z",
-      "order": 26,
+      "path": "/content/en/pages/guides/tak-guide/set-language-localization-for-wintak-GstcQifMVj.json",
+      "updatedAt": "2026-06-16T10:55:48.465Z",
+      "order": 71,
       "platform": "windows",
       "clientId": "wintak-w8mKUfaRBP",
-      "chapterId": "start-gF8MDfsdW9",
-      "chapterLabel": "Start"
+      "chapterId": "start-connect-c27Zc4YePw",
+      "chapterLabel": "START & CONNECT"
+    },
+    {
+      "id": "c2dbbfb2-9dff-4d2e-95c9-3ada7707f248",
+      "slug": "download-install-wintak-qfu2aB0W9u",
+      "collection": "guides/tak-guide",
+      "title": "Download & install WinTAK",
+      "breadcrumb": [
+        "Platforms",
+        "WinTAK",
+        "START & CONNECT",
+        "Download & install WinTAK"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/download-install-wintak-qfu2aB0W9u.json",
+      "updatedAt": "2026-06-16T10:55:51.358Z",
+      "order": 72,
+      "platform": "windows",
+      "clientId": "wintak-w8mKUfaRBP",
+      "chapterId": "start-connect-c27Zc4YePw",
+      "chapterLabel": "START & CONNECT"
     },
     {
       "id": "0d05e733-9d26-46a2-9280-8c0540b05284",
-      "slug": "wintak-already-installed-kCXH9p8keg",
+      "slug": "import-the-client-package-to-wintak-kCXH9p8keg",
       "collection": "guides/tak-guide",
-      "title": "WinTAK Already Installed",
+      "title": "Import the client package to WinTAK",
       "breadcrumb": [
         "Platforms",
         "WinTAK",
-        "Start",
-        "WinTAK Already Installed"
+        "START & CONNECT",
+        "Import the client package to WinTAK"
       ],
-      "path": "/content/en/pages/guides/tak-guide/wintak-already-installed-kCXH9p8keg.json",
-      "updatedAt": "2026-02-22T11:48:39.586Z",
-      "order": 27,
+      "path": "/content/en/pages/guides/tak-guide/import-the-client-package-to-wintak-kCXH9p8keg.json",
+      "updatedAt": "2026-06-16T10:55:54.193Z",
+      "order": 73,
       "platform": "windows",
       "clientId": "wintak-w8mKUfaRBP",
-      "chapterId": "start-gF8MDfsdW9",
-      "chapterLabel": "Start"
+      "chapterId": "start-connect-c27Zc4YePw",
+      "chapterLabel": "START & CONNECT"
     },
     {
-      "id": "a59eb85c-070e-4fbc-ba9e-9da88dbab2c4",
-      "slug": "clear-content-gLcPrq5b5J",
+      "id": "4b3dca08-a641-49e0-be67-22e057e403a4",
+      "slug": "load-plugins-finish-setup-xa2huv9Wmn",
       "collection": "guides/tak-guide",
-      "title": "Clear Content",
+      "title": "Load Plugins & Finish Setup",
       "breadcrumb": [
         "Platforms",
         "WinTAK",
-        "Basic Features",
-        "Clear Content"
+        "START & CONNECT",
+        "Load Plugins & Finish Setup"
       ],
-      "path": "/content/en/pages/guides/tak-guide/clear-content-gLcPrq5b5J.json",
-      "updatedAt": "2026-02-21T22:28:54.014Z",
-      "order": 28,
+      "path": "/content/en/pages/guides/tak-guide/load-plugins-finish-setup-xa2huv9Wmn.json",
+      "updatedAt": "2026-06-16T10:55:57.533Z",
+      "order": 74,
       "platform": "windows",
       "clientId": "wintak-w8mKUfaRBP",
-      "chapterId": "basic-features-pmjQ96x5bI",
-      "chapterLabel": "Basic Features"
+      "chapterId": "start-connect-c27Zc4YePw",
+      "chapterLabel": "START & CONNECT"
     },
     {
       "id": "7323a242-265a-4e6f-abed-154acfc55924",
-      "slug": "blue-force-tracking-IAAAIJTiqZ",
+      "slug": "setting-up-your-own-location-IAAAIJTiqZ",
+      "collection": "guides/tak-guide",
+      "title": "Setting up your own location",
+      "breadcrumb": [
+        "Platforms",
+        "WinTAK",
+        "BASIC CORE FEATURES",
+        "Setting up your own location"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/setting-up-your-own-location-IAAAIJTiqZ.json",
+      "updatedAt": "2026-06-15T13:52:39.481Z",
+      "order": 75,
+      "platform": "windows",
+      "clientId": "wintak-w8mKUfaRBP",
+      "chapterId": "basic-core-features-pmjQ96x5bI",
+      "chapterLabel": "BASIC CORE FEATURES"
+    },
+    {
+      "id": "788b426b-5e77-4e6c-bc63-92fc2a2c55e2",
+      "slug": "blue-force-tracking-uv3kHr7LSr",
       "collection": "guides/tak-guide",
       "title": "Blue force tracking",
       "breadcrumb": [
         "Platforms",
         "WinTAK",
-        "Basic Features",
+        "BASIC CORE FEATURES",
         "Blue force tracking"
       ],
-      "path": "/content/en/pages/guides/tak-guide/blue-force-tracking-IAAAIJTiqZ.json",
-      "updatedAt": "2026-02-22T13:48:24.787Z",
-      "order": 29,
+      "path": "/content/en/pages/guides/tak-guide/blue-force-tracking-uv3kHr7LSr.json",
+      "updatedAt": "2026-06-15T13:53:00.074Z",
+      "order": 76,
       "platform": "windows",
       "clientId": "wintak-w8mKUfaRBP",
-      "chapterId": "basic-features-pmjQ96x5bI",
-      "chapterLabel": "Basic Features"
-    },
-    {
-      "id": "16217aef-6702-4cec-af6f-0b7800f2556e",
-      "slug": "plugin-management-EphDON8hEX",
-      "collection": "guides/tak-guide",
-      "title": "Plugin Management",
-      "breadcrumb": [
-        "Platforms",
-        "WinTAK",
-        "Basic Features",
-        "Plugin Management"
-      ],
-      "path": "/content/en/pages/guides/tak-guide/plugin-management-EphDON8hEX.json",
-      "updatedAt": "2026-02-22T14:12:32.711Z",
-      "order": 30,
-      "platform": "windows",
-      "clientId": "wintak-w8mKUfaRBP",
-      "chapterId": "basic-features-pmjQ96x5bI",
-      "chapterLabel": "Basic Features"
+      "chapterId": "basic-core-features-pmjQ96x5bI",
+      "chapterLabel": "BASIC CORE FEATURES"
     },
     {
       "id": "cf69db54-b795-412a-b111-f201fbd18211",
@@ -1130,35 +2017,35 @@
       "breadcrumb": [
         "Platforms",
         "WinTAK",
-        "Basic Features",
+        "BASIC CORE FEATURES",
         "Data Sync"
       ],
       "path": "/content/en/pages/guides/tak-guide/data-sync-VswHZNexYA.json",
-      "updatedAt": "2026-02-22T09:42:31.113Z",
-      "order": 31,
+      "updatedAt": "2026-06-14T17:11:31.500Z",
+      "order": 77,
       "platform": "windows",
       "clientId": "wintak-w8mKUfaRBP",
-      "chapterId": "basic-features-pmjQ96x5bI",
-      "chapterLabel": "Basic Features"
+      "chapterId": "basic-core-features-pmjQ96x5bI",
+      "chapterLabel": "BASIC CORE FEATURES"
     },
     {
       "id": "8c95a34d-9d55-4568-97c8-597670b7de06",
-      "slug": "point-dropper-create-edit-send-wwYK8iDf5w",
+      "slug": "point-dropper-add-markers-wwYK8iDf5w",
       "collection": "guides/tak-guide",
-      "title": "Point Dropper, Create, Edit, Send",
+      "title": "Point Dropper - add markers",
       "breadcrumb": [
         "Platforms",
         "WinTAK",
-        "Basic Features",
-        "Point Dropper, Create, Edit, Send"
+        "BASIC CORE FEATURES",
+        "Point Dropper - add markers"
       ],
-      "path": "/content/en/pages/guides/tak-guide/point-dropper-create-edit-send-wwYK8iDf5w.json",
-      "updatedAt": "2026-02-22T13:45:05.025Z",
-      "order": 32,
+      "path": "/content/en/pages/guides/tak-guide/point-dropper-add-markers-wwYK8iDf5w.json",
+      "updatedAt": "2026-06-15T13:52:40.858Z",
+      "order": 78,
       "platform": "windows",
       "clientId": "wintak-w8mKUfaRBP",
-      "chapterId": "basic-features-pmjQ96x5bI",
-      "chapterLabel": "Basic Features"
+      "chapterId": "basic-core-features-pmjQ96x5bI",
+      "chapterLabel": "BASIC CORE FEATURES"
     },
     {
       "id": "209ff533-7a27-41ff-8bc3-78d15e23b4fe",
@@ -1168,16 +2055,54 @@
       "breadcrumb": [
         "Platforms",
         "WinTAK",
-        "Basic Features",
+        "BASIC CORE FEATURES",
         "Use GeoChat"
       ],
       "path": "/content/en/pages/guides/tak-guide/use-geochat-G4fqV0Y4fg.json",
-      "updatedAt": "2025-12-05T22:05:59.366Z",
-      "order": 33,
+      "updatedAt": "2026-06-15T13:52:58.519Z",
+      "order": 79,
       "platform": "windows",
       "clientId": "wintak-w8mKUfaRBP",
-      "chapterId": "basic-features-pmjQ96x5bI",
-      "chapterLabel": "Basic Features"
+      "chapterId": "basic-core-features-pmjQ96x5bI",
+      "chapterLabel": "BASIC CORE FEATURES"
+    },
+    {
+      "id": "16217aef-6702-4cec-af6f-0b7800f2556e",
+      "slug": "plugin-management-EphDON8hEX",
+      "collection": "guides/tak-guide",
+      "title": "Plugin Management",
+      "breadcrumb": [
+        "Platforms",
+        "WinTAK",
+        "BASIC CORE FEATURES",
+        "Plugin Management"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/plugin-management-EphDON8hEX.json",
+      "updatedAt": "2026-06-14T17:11:33.654Z",
+      "order": 80,
+      "platform": "windows",
+      "clientId": "wintak-w8mKUfaRBP",
+      "chapterId": "basic-core-features-pmjQ96x5bI",
+      "chapterLabel": "BASIC CORE FEATURES"
+    },
+    {
+      "id": "a59eb85c-070e-4fbc-ba9e-9da88dbab2c4",
+      "slug": "clear-content-gLcPrq5b5J",
+      "collection": "guides/tak-guide",
+      "title": "Clear Content",
+      "breadcrumb": [
+        "Platforms",
+        "WinTAK",
+        "BASIC CORE FEATURES",
+        "Clear Content"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/clear-content-gLcPrq5b5J.json",
+      "updatedAt": "2026-06-14T17:11:33.276Z",
+      "order": 81,
+      "platform": "windows",
+      "clientId": "wintak-w8mKUfaRBP",
+      "chapterId": "basic-core-features-pmjQ96x5bI",
+      "chapterLabel": "BASIC CORE FEATURES"
     },
     {
       "id": "fb6567c8-d5b4-48f4-b782-71d384dc5e63",
@@ -1187,35 +2112,16 @@
       "breadcrumb": [
         "Platforms",
         "WinTAK",
-        "Advanced Features",
+        "ADVANCED CORE FEATURES",
         "Create Feeds"
       ],
       "path": "/content/en/pages/guides/tak-guide/create-feeds-0jPr4Cah1Z.json",
-      "updatedAt": "2026-02-22T10:35:55.634Z",
-      "order": 34,
+      "updatedAt": "2026-06-15T13:53:06.432Z",
+      "order": 82,
       "platform": "windows",
       "clientId": "wintak-w8mKUfaRBP",
-      "chapterId": "advanced-features-dUEpnxlGD0",
-      "chapterLabel": "Advanced Features"
-    },
-    {
-      "id": "b0b13d18-2d81-40e8-9964-cf12baabc387",
-      "slug": "draw-share-plans-gUzuEffh5v",
-      "collection": "guides/tak-guide",
-      "title": "Draw & share Plans",
-      "breadcrumb": [
-        "Platforms",
-        "WinTAK",
-        "Advanced Features",
-        "Draw & share Plans"
-      ],
-      "path": "/content/en/pages/guides/tak-guide/draw-share-plans-gUzuEffh5v.json",
-      "updatedAt": "2026-02-22T13:48:52.268Z",
-      "order": 35,
-      "platform": "windows",
-      "clientId": "wintak-w8mKUfaRBP",
-      "chapterId": "advanced-features-dUEpnxlGD0",
-      "chapterLabel": "Advanced Features"
+      "chapterId": "advanced-core-features-dUEpnxlGD0",
+      "chapterLabel": "ADVANCED CORE FEATURES"
     },
     {
       "id": "c9de2a31-2c41-42de-9e18-7de1c7463418",
@@ -1225,16 +2131,35 @@
       "breadcrumb": [
         "Platforms",
         "WinTAK",
-        "Advanced Features",
+        "ADVANCED CORE FEATURES",
         "Manage Feeds"
       ],
       "path": "/content/en/pages/guides/tak-guide/manage-feeds-62IWBYODOd.json",
-      "updatedAt": "2026-02-22T14:27:40.259Z",
-      "order": 36,
+      "updatedAt": "2026-06-15T13:53:06.856Z",
+      "order": 83,
       "platform": "windows",
       "clientId": "wintak-w8mKUfaRBP",
-      "chapterId": "advanced-features-dUEpnxlGD0",
-      "chapterLabel": "Advanced Features"
+      "chapterId": "advanced-core-features-dUEpnxlGD0",
+      "chapterLabel": "ADVANCED CORE FEATURES"
+    },
+    {
+      "id": "b0b13d18-2d81-40e8-9964-cf12baabc387",
+      "slug": "draw-share-plans-gUzuEffh5v",
+      "collection": "guides/tak-guide",
+      "title": "Draw & share Plans",
+      "breadcrumb": [
+        "Platforms",
+        "WinTAK",
+        "ADVANCED CORE FEATURES",
+        "Draw & share Plans"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/draw-share-plans-gUzuEffh5v.json",
+      "updatedAt": "2026-06-15T13:52:58.978Z",
+      "order": 84,
+      "platform": "windows",
+      "clientId": "wintak-w8mKUfaRBP",
+      "chapterId": "advanced-core-features-dUEpnxlGD0",
+      "chapterLabel": "ADVANCED CORE FEATURES"
     },
     {
       "id": "b305516b-4199-4478-9b94-a1ea17eb516d",
@@ -1244,16 +2169,16 @@
       "breadcrumb": [
         "Platforms",
         "WinTAK",
-        "Advanced Features",
+        "ADVANCED CORE FEATURES",
         "Get alerts with Geofences"
       ],
       "path": "/content/en/pages/guides/tak-guide/get-alerts-with-geofences-Y1Bgr7UInI.json",
-      "updatedAt": "2026-02-22T13:49:02.702Z",
-      "order": 37,
+      "updatedAt": "2026-06-15T13:52:59.404Z",
+      "order": 85,
       "platform": "windows",
       "clientId": "wintak-w8mKUfaRBP",
-      "chapterId": "advanced-features-dUEpnxlGD0",
-      "chapterLabel": "Advanced Features"
+      "chapterId": "advanced-core-features-dUEpnxlGD0",
+      "chapterLabel": "ADVANCED CORE FEATURES"
     },
     {
       "id": "d3de08cc-9b4e-4f1a-8791-5946535f4128",
@@ -1263,16 +2188,16 @@
       "breadcrumb": [
         "Platforms",
         "WinTAK",
-        "Usage by Role",
+        "USAGE BY ROLE",
         "Overview"
       ],
       "path": "/content/en/pages/guides/tak-guide/overview-G0keHC8NbD.json",
-      "updatedAt": "2026-02-21T14:24:06.369Z",
-      "order": 38,
+      "updatedAt": "2026-06-14T14:30:47.115Z",
+      "order": 86,
       "platform": "windows",
       "clientId": "wintak-w8mKUfaRBP",
       "chapterId": "usage-by-role-IWyDTtxCJS",
-      "chapterLabel": "Usage by Role"
+      "chapterLabel": "USAGE BY ROLE"
     },
     {
       "id": "d14105c6-34af-4000-befa-a15acfb7b187",
@@ -1282,55 +2207,236 @@
       "breadcrumb": [
         "Platforms",
         "WinTAK",
-        "Usage by Role",
+        "USAGE BY ROLE",
         "Fighter"
       ],
       "path": "/content/en/pages/guides/tak-guide/fighter-ZxrplBIys6.json",
-      "updatedAt": "2026-02-21T14:24:08.912Z",
-      "order": 39,
+      "updatedAt": "2026-06-14T17:11:18.112Z",
+      "order": 87,
       "platform": "windows",
       "clientId": "wintak-w8mKUfaRBP",
       "chapterId": "usage-by-role-IWyDTtxCJS",
-      "chapterLabel": "Usage by Role"
+      "chapterLabel": "USAGE BY ROLE"
     },
     {
       "id": "01ff4f55-d305-473e-a24c-1c3bcc5b07a7",
-      "slug": "edit-recon-feed-B7h9QJzZVd",
+      "slug": "produce-recon-feed-B7h9QJzZVd",
       "collection": "guides/tak-guide",
-      "title": "Edit RECON feed",
+      "title": "Produce RECON feed",
       "breadcrumb": [
         "Platforms",
         "WinTAK",
-        "Usage by Role",
+        "USAGE BY ROLE",
         "Command Post",
-        "Edit RECON feed"
+        "Produce RECON feed"
       ],
-      "path": "/content/en/pages/guides/tak-guide/edit-recon-feed-B7h9QJzZVd.json",
-      "updatedAt": "2026-02-22T10:28:06.673Z",
-      "order": 40,
+      "path": "/content/en/pages/guides/tak-guide/produce-recon-feed-B7h9QJzZVd.json",
+      "updatedAt": "2026-06-15T13:52:41.610Z",
+      "order": 88,
       "platform": "windows",
       "clientId": "wintak-w8mKUfaRBP",
-      "chapterId": "usage-by-role-IWyDTtxCJS",
-      "chapterLabel": "Usage by Role"
+      "chapterId": "command-post-Jysu3u7ga3",
+      "chapterLabel": "Command Post"
     },
     {
-      "id": "310dd096-6160-46fe-9bb7-b668492c416d",
-      "slug": "tak-replay-Sy9dQFNBc1",
+      "id": "cc108991-41d6-4296-bf39-57407de3a18c",
+      "slug": "record-events-2LJeWe6cPW",
       "collection": "guides/tak-guide",
-      "title": "TAK Replay",
+      "title": "Record events",
       "breadcrumb": [
         "Platforms",
         "WinTAK",
-        "Supported Plugins",
-        "TAK Replay"
+        "SUPPORTED PLUGINS",
+        "TAK Replay",
+        "Record events"
       ],
-      "path": "/content/en/pages/guides/tak-guide/tak-replay-Sy9dQFNBc1.json",
-      "updatedAt": "2026-02-21T14:24:17.123Z",
-      "order": 41,
+      "path": "/content/en/pages/guides/tak-guide/record-events-2LJeWe6cPW.json",
+      "updatedAt": "2026-06-16T10:21:06.430Z",
+      "order": 89,
       "platform": "windows",
       "clientId": "wintak-w8mKUfaRBP",
-      "chapterId": "supported-plugins-zl2XZB0u1p",
-      "chapterLabel": "Supported Plugins"
+      "chapterId": "tak-replay-GSHD19ipyT",
+      "chapterLabel": "TAK Replay"
+    },
+    {
+      "id": "01270beb-b003-4c46-9b01-3086de69ab94",
+      "slug": "play-a-recording-uLch9lAImn",
+      "collection": "guides/tak-guide",
+      "title": "Play a recording",
+      "breadcrumb": [
+        "Platforms",
+        "WinTAK",
+        "SUPPORTED PLUGINS",
+        "TAK Replay",
+        "Play a recording"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/play-a-recording-uLch9lAImn.json",
+      "updatedAt": "2026-06-16T10:21:26.006Z",
+      "order": 90,
+      "platform": "windows",
+      "clientId": "wintak-w8mKUfaRBP",
+      "chapterId": "tak-replay-GSHD19ipyT",
+      "chapterLabel": "TAK Replay"
+    },
+    {
+      "id": "495a4737-8de9-4601-8900-268d2ac9d049",
+      "slug": "export-download-manage-0NPPYBJSNP",
+      "collection": "guides/tak-guide",
+      "title": "Export, download & manage",
+      "breadcrumb": [
+        "Platforms",
+        "WinTAK",
+        "SUPPORTED PLUGINS",
+        "TAK Replay",
+        "Export, download & manage"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/export-download-manage-0NPPYBJSNP.json",
+      "updatedAt": "2026-06-16T10:21:30.269Z",
+      "order": 91,
+      "platform": "windows",
+      "clientId": "wintak-w8mKUfaRBP",
+      "chapterId": "tak-replay-GSHD19ipyT",
+      "chapterLabel": "TAK Replay"
+    },
+    {
+      "id": "65284479-f446-4b5b-8ffe-65c5cad9d442",
+      "slug": "create-edit-a-grg-Xui0ilYenu",
+      "collection": "guides/tak-guide",
+      "title": "Create & edit a GRG",
+      "breadcrumb": [
+        "Platforms",
+        "WinTAK",
+        "SUPPORTED PLUGINS",
+        "GRG Builder",
+        "Create & edit a GRG"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/create-edit-a-grg-Xui0ilYenu.json",
+      "updatedAt": "2026-06-16T10:20:30.412Z",
+      "order": 92,
+      "platform": "windows",
+      "clientId": "wintak-w8mKUfaRBP",
+      "chapterId": "grg-builder-Hoz96EesTm",
+      "chapterLabel": "GRG Builder"
+    },
+    {
+      "id": "ac2fb5ae-b907-4e55-abfa-5f478c17a5b5",
+      "slug": "add-features-markers-9dYxguZls8",
+      "collection": "guides/tak-guide",
+      "title": "Add features & markers",
+      "breadcrumb": [
+        "Platforms",
+        "WinTAK",
+        "SUPPORTED PLUGINS",
+        "GRG Builder",
+        "Add features & markers"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/add-features-markers-9dYxguZls8.json",
+      "updatedAt": "2026-06-16T10:20:36.340Z",
+      "order": 93,
+      "platform": "windows",
+      "clientId": "wintak-w8mKUfaRBP",
+      "chapterId": "grg-builder-Hoz96EesTm",
+      "chapterLabel": "GRG Builder"
+    },
+    {
+      "id": "4d26e656-f9b7-4d29-9fee-7052e7b8c45c",
+      "slug": "export-share-a-grg-OP1CAaNJhC",
+      "collection": "guides/tak-guide",
+      "title": "Export & share a GRG",
+      "breadcrumb": [
+        "Platforms",
+        "WinTAK",
+        "SUPPORTED PLUGINS",
+        "GRG Builder",
+        "Export & share a GRG"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/export-share-a-grg-OP1CAaNJhC.json",
+      "updatedAt": "2026-06-16T10:20:40.632Z",
+      "order": 94,
+      "platform": "windows",
+      "clientId": "wintak-w8mKUfaRBP",
+      "chapterId": "grg-builder-Hoz96EesTm",
+      "chapterLabel": "GRG Builder"
+    },
+    {
+      "id": "90699913-0c34-41d5-a661-d17f19e30724",
+      "slug": "create-a-report-mhCCLqyMaU",
+      "collection": "guides/tak-guide",
+      "title": "Create a report",
+      "breadcrumb": [
+        "Platforms",
+        "WinTAK",
+        "SUPPORTED PLUGINS",
+        "Reports",
+        "Create a report"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/create-a-report-mhCCLqyMaU.json",
+      "updatedAt": "2026-06-16T10:20:49.489Z",
+      "order": 95,
+      "platform": "windows",
+      "clientId": "wintak-w8mKUfaRBP",
+      "chapterId": "reports-kTDOW67c8w",
+      "chapterLabel": "Reports"
+    },
+    {
+      "id": "bb1a047e-2fff-446a-8490-dcc04d82b209",
+      "slug": "browse-the-reports-database-unYDjhwqXD",
+      "collection": "guides/tak-guide",
+      "title": "Browse the reports database",
+      "breadcrumb": [
+        "Platforms",
+        "WinTAK",
+        "SUPPORTED PLUGINS",
+        "Reports",
+        "Browse the reports database"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/browse-the-reports-database-unYDjhwqXD.json",
+      "updatedAt": "2026-06-16T10:20:52.951Z",
+      "order": 96,
+      "platform": "windows",
+      "clientId": "wintak-w8mKUfaRBP",
+      "chapterId": "reports-kTDOW67c8w",
+      "chapterLabel": "Reports"
+    },
+    {
+      "id": "0176284f-3400-485f-81a6-7d9f16d59a63",
+      "slug": "custom-report-templates-8bCilJEujm",
+      "collection": "guides/tak-guide",
+      "title": "Custom report templates",
+      "breadcrumb": [
+        "Platforms",
+        "WinTAK",
+        "SUPPORTED PLUGINS",
+        "Reports",
+        "Custom report templates"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/custom-report-templates-8bCilJEujm.json",
+      "updatedAt": "2026-06-16T10:20:58.483Z",
+      "order": 97,
+      "platform": "windows",
+      "clientId": "wintak-w8mKUfaRBP",
+      "chapterId": "reports-kTDOW67c8w",
+      "chapterLabel": "Reports"
+    },
+    {
+      "id": "11d3d03f-62eb-41b3-bcaa-9b80973c2bab",
+      "slug": "create-a-vns-route-gfIlnjXwN2",
+      "collection": "guides/tak-guide",
+      "title": "Create a VNS route",
+      "breadcrumb": [
+        "Platforms",
+        "WinTAK",
+        "SUPPORTED PLUGINS",
+        "VNS - Vehicle Navigation System",
+        "Create a VNS route"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/create-a-vns-route-gfIlnjXwN2.json",
+      "updatedAt": "2026-06-16T10:21:36.565Z",
+      "order": 98,
+      "platform": "windows",
+      "clientId": "wintak-w8mKUfaRBP",
+      "chapterId": "vns-vehicle-navigation-system-AiQdKUTeFM",
+      "chapterLabel": "VNS - Vehicle Navigation System"
     },
     {
       "id": "c7ba4cd6-6b1b-4cd6-9a9d-c7734ab6ce85",
@@ -1343,8 +2449,8 @@
         "Troubleshooting"
       ],
       "path": "/content/en/pages/guides/tak-guide/troubleshooting-T4SvHjOYgd.json",
-      "updatedAt": "2026-02-21T14:24:21.755Z",
-      "order": 42,
+      "updatedAt": "2026-06-14T17:11:29.599Z",
+      "order": 99,
       "platform": "windows",
       "clientId": "wintak-w8mKUfaRBP",
       "chapterId": "wintak-w8mKUfaRBP",
@@ -1362,8 +2468,8 @@
         "Start from Download"
       ],
       "path": "/content/en/pages/guides/tak-guide/start-from-download-vQGTWj6wET.json",
-      "updatedAt": "2026-02-20T22:12:29.976Z",
-      "order": 43,
+      "updatedAt": "2026-06-16T10:58:01.341Z",
+      "order": 100,
       "platform": "ios",
       "clientId": "itak-bwDYWvqdnY",
       "chapterId": "start-sLRG2uavSv",
@@ -1382,7 +2488,7 @@
       ],
       "path": "/content/en/pages/guides/tak-guide/itak-already-installed-DeEex1hIH2.json",
       "updatedAt": "2026-02-20T22:13:14.287Z",
-      "order": 44,
+      "order": 101,
       "platform": "ios",
       "clientId": "itak-bwDYWvqdnY",
       "chapterId": "start-sLRG2uavSv",
@@ -1401,7 +2507,7 @@
       ],
       "path": "/content/en/pages/guides/tak-guide/blue-force-tracking-NOzCSj3j64.json",
       "updatedAt": "2026-02-22T13:49:19.366Z",
-      "order": 45,
+      "order": 102,
       "platform": "ios",
       "clientId": "itak-bwDYWvqdnY",
       "chapterId": "basic-features-StHwTheTn5",
@@ -1420,7 +2526,7 @@
       ],
       "path": "/content/en/pages/guides/tak-guide/data-sync-U4cc7UE9hg.json",
       "updatedAt": "2026-02-20T20:51:41.284Z",
-      "order": 46,
+      "order": 103,
       "platform": "ios",
       "clientId": "itak-bwDYWvqdnY",
       "chapterId": "basic-features-StHwTheTn5",
@@ -1439,7 +2545,7 @@
       ],
       "path": "/content/en/pages/guides/tak-guide/create-symbols-quick-pics-elqHqV8SW7.json",
       "updatedAt": "2026-02-22T13:49:37.259Z",
-      "order": 47,
+      "order": 104,
       "platform": "ios",
       "clientId": "itak-bwDYWvqdnY",
       "chapterId": "basic-features-StHwTheTn5",
@@ -1458,7 +2564,7 @@
       ],
       "path": "/content/en/pages/guides/tak-guide/use-geochat-r99lJsOLnK.json",
       "updatedAt": "2026-02-22T13:49:42.545Z",
-      "order": 48,
+      "order": 105,
       "platform": "ios",
       "clientId": "itak-bwDYWvqdnY",
       "chapterId": "basic-features-StHwTheTn5",
@@ -1477,7 +2583,7 @@
       ],
       "path": "/content/en/pages/guides/tak-guide/overview-bPeWx0MdZQ.json",
       "updatedAt": "2025-12-05T22:06:10.622Z",
-      "order": 49,
+      "order": 106,
       "platform": "ios",
       "clientId": "itak-bwDYWvqdnY",
       "chapterId": "usage-by-role-LlQdNcNgkg",
@@ -1496,7 +2602,7 @@
       ],
       "path": "/content/en/pages/guides/tak-guide/fighter-rf4mMCmmWV.json",
       "updatedAt": "2025-12-05T22:06:10.581Z",
-      "order": 50,
+      "order": 107,
       "platform": "ios",
       "clientId": "itak-bwDYWvqdnY",
       "chapterId": "usage-by-role-LlQdNcNgkg",
@@ -1515,7 +2621,7 @@
       ],
       "path": "/content/en/pages/guides/tak-guide/command-post-YxjX9bA9iG.json",
       "updatedAt": "2025-12-05T22:06:10.535Z",
-      "order": 51,
+      "order": 108,
       "platform": "ios",
       "clientId": "itak-bwDYWvqdnY",
       "chapterId": "usage-by-role-LlQdNcNgkg",
@@ -1533,7 +2639,7 @@
       ],
       "path": "/content/en/pages/guides/tak-guide/troubleshooting-Pj64UaHAJW.json",
       "updatedAt": "2025-12-05T22:06:10.255Z",
-      "order": 52,
+      "order": 109,
       "platform": "ios",
       "clientId": "itak-bwDYWvqdnY",
       "chapterId": "itak-bwDYWvqdnY",
@@ -1547,16 +2653,16 @@
       "breadcrumb": [
         "Platforms",
         "TAK Tracker - Android",
-        "Start",
+        "START & CONNECT",
         "Start from Download"
       ],
       "path": "/content/en/pages/guides/tak-guide/start-from-download-x9ve2aL7oC.json",
-      "updatedAt": "2026-02-21T09:11:38.026Z",
-      "order": 53,
+      "updatedAt": "2026-06-16T17:04:53.537Z",
+      "order": 110,
       "platform": "android",
       "clientId": "tak-tracker-android-JCZw3YH2nW",
-      "chapterId": "start-LlfSpMeCW8",
-      "chapterLabel": "Start"
+      "chapterId": "start-connect-LlfSpMeCW8",
+      "chapterLabel": "START & CONNECT"
     },
     {
       "id": "c52c447b-f610-4b40-a910-bbf635572ad6",
@@ -1566,16 +2672,16 @@
       "breadcrumb": [
         "Platforms",
         "TAK Tracker - Android",
-        "Start",
+        "START & CONNECT",
         "TAK Tracker Already Installed"
       ],
       "path": "/content/en/pages/guides/tak-guide/tak-tracker-already-installed-DoVQOAKWVB.json",
-      "updatedAt": "2026-02-21T09:11:28.472Z",
-      "order": 54,
+      "updatedAt": "2026-06-16T17:04:58.486Z",
+      "order": 111,
       "platform": "android",
       "clientId": "tak-tracker-android-JCZw3YH2nW",
-      "chapterId": "start-LlfSpMeCW8",
-      "chapterLabel": "Start"
+      "chapterId": "start-connect-LlfSpMeCW8",
+      "chapterLabel": "START & CONNECT"
     },
     {
       "id": "91c58ae9-39c3-4623-8099-ce1c85401757",
@@ -1585,16 +2691,92 @@
       "breadcrumb": [
         "Platforms",
         "TAK Tracker - Android",
-        "Start",
+        "START & CONNECT",
         "Importing Server Connection"
       ],
       "path": "/content/en/pages/guides/tak-guide/importing-server-connection-URmd6F0UU5.json",
       "updatedAt": "2026-02-21T10:42:40.160Z",
-      "order": 55,
+      "order": 112,
       "platform": "android",
       "clientId": "tak-tracker-android-JCZw3YH2nW",
-      "chapterId": "start-LlfSpMeCW8",
-      "chapterLabel": "Start"
+      "chapterId": "start-connect-LlfSpMeCW8",
+      "chapterLabel": "START & CONNECT"
+    },
+    {
+      "id": "cb2b030b-3126-4d40-a45e-f2e59fc97273",
+      "slug": "read-your-status-location-xFbq6tWEQC",
+      "collection": "guides/tak-guide",
+      "title": "Read Your Status & Location",
+      "breadcrumb": [
+        "Platforms",
+        "TAK Tracker - Android",
+        "BASIC FEATURES",
+        "Read Your Status & Location"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/read-your-status-location-xFbq6tWEQC.json",
+      "updatedAt": "2026-06-16T16:21:25.766Z",
+      "order": 113,
+      "platform": "android",
+      "clientId": "tak-tracker-android-JCZw3YH2nW",
+      "chapterId": "basic-features-VzNKs1TiW6",
+      "chapterLabel": "BASIC FEATURES"
+    },
+    {
+      "id": "1838e5ce-d7b2-46f8-a10a-0d65c2320ff9",
+      "slug": "send-an-emergency-alert-beacon-rmQFqQnNJC",
+      "collection": "guides/tak-guide",
+      "title": "Send an Emergency Alert Beacon",
+      "breadcrumb": [
+        "Platforms",
+        "TAK Tracker - Android",
+        "BASIC FEATURES",
+        "Send an Emergency Alert Beacon"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/send-an-emergency-alert-beacon-rmQFqQnNJC.json",
+      "updatedAt": "2026-06-16T16:21:26.673Z",
+      "order": 114,
+      "platform": "android",
+      "clientId": "tak-tracker-android-JCZw3YH2nW",
+      "chapterId": "basic-features-VzNKs1TiW6",
+      "chapterLabel": "BASIC FEATURES"
+    },
+    {
+      "id": "4fbaeb85-0a5f-42f3-b51d-f0819e1de775",
+      "slug": "chat-with-your-team-y6xwtxc8G9",
+      "collection": "guides/tak-guide",
+      "title": "Chat With Your Team",
+      "breadcrumb": [
+        "Platforms",
+        "TAK Tracker - Android",
+        "BASIC FEATURES",
+        "Chat With Your Team"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/chat-with-your-team-y6xwtxc8G9.json",
+      "updatedAt": "2026-06-16T16:21:26.224Z",
+      "order": 115,
+      "platform": "android",
+      "clientId": "tak-tracker-android-JCZw3YH2nW",
+      "chapterId": "basic-features-VzNKs1TiW6",
+      "chapterLabel": "BASIC FEATURES"
+    },
+    {
+      "id": "d56e161f-47cb-404c-917d-ef30afed1775",
+      "slug": "options-settings-XyYcsDAVCo",
+      "collection": "guides/tak-guide",
+      "title": "Options & Settings",
+      "breadcrumb": [
+        "Platforms",
+        "TAK Tracker - Android",
+        "ADVANCED FEATURES",
+        "Options & Settings"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/options-settings-XyYcsDAVCo.json",
+      "updatedAt": "2026-06-16T16:21:27.142Z",
+      "order": 116,
+      "platform": "android",
+      "clientId": "tak-tracker-android-JCZw3YH2nW",
+      "chapterId": "advanced-features-PxjYTgbxDu",
+      "chapterLabel": "ADVANCED FEATURES"
     },
     {
       "id": "3bc34372-3886-4a4a-9a61-acce2f9dcb60",
@@ -1604,16 +2786,16 @@
       "breadcrumb": [
         "Platforms",
         "TAK Tracker - Android",
-        "Usage by Role",
+        "USAGE BY ROLE",
         "Overview"
       ],
       "path": "/content/en/pages/guides/tak-guide/overview-4sA7lVWVtw.json",
       "updatedAt": "2026-02-21T08:40:53.162Z",
-      "order": 56,
+      "order": 117,
       "platform": "android",
       "clientId": "tak-tracker-android-JCZw3YH2nW",
       "chapterId": "usage-by-role-KxtjmbM9B1",
-      "chapterLabel": "Usage by Role"
+      "chapterLabel": "USAGE BY ROLE"
     },
     {
       "id": "a3db4071-6a71-4189-a81a-31e028b72c2f",
@@ -1623,16 +2805,16 @@
       "breadcrumb": [
         "Platforms",
         "TAK Tracker - Android",
-        "Usage by Role",
+        "USAGE BY ROLE",
         "Fighter"
       ],
       "path": "/content/en/pages/guides/tak-guide/fighter-gUAGHKAtVV.json",
       "updatedAt": "2026-02-21T08:40:54.745Z",
-      "order": 57,
+      "order": 118,
       "platform": "android",
       "clientId": "tak-tracker-android-JCZw3YH2nW",
       "chapterId": "usage-by-role-KxtjmbM9B1",
-      "chapterLabel": "Usage by Role"
+      "chapterLabel": "USAGE BY ROLE"
     },
     {
       "id": "03f5bfcd-2567-4a6f-9718-482953706997",
@@ -1642,34 +2824,16 @@
       "breadcrumb": [
         "Platforms",
         "TAK Tracker - Android",
-        "Usage by Role",
+        "USAGE BY ROLE",
         "Command Post"
       ],
       "path": "/content/en/pages/guides/tak-guide/command-post-t2fdgSrk3R.json",
       "updatedAt": "2026-02-21T08:40:56.130Z",
-      "order": 58,
+      "order": 119,
       "platform": "android",
       "clientId": "tak-tracker-android-JCZw3YH2nW",
       "chapterId": "usage-by-role-KxtjmbM9B1",
-      "chapterLabel": "Usage by Role"
-    },
-    {
-      "id": "a378322d-ad76-4cf4-ae94-a490806ac2b9",
-      "slug": "troubleshooting-E1xmJrS5OS",
-      "collection": "guides/tak-guide",
-      "title": "Troubleshooting",
-      "breadcrumb": [
-        "Platforms",
-        "TAK Tracker - Android",
-        "Troubleshooting"
-      ],
-      "path": "/content/en/pages/guides/tak-guide/troubleshooting-E1xmJrS5OS.json",
-      "updatedAt": "2026-02-21T08:40:59.848Z",
-      "order": 59,
-      "platform": "android",
-      "clientId": "tak-tracker-android-JCZw3YH2nW",
-      "chapterId": "tak-tracker-android-JCZw3YH2nW",
-      "chapterLabel": "TAK Tracker - Android"
+      "chapterLabel": "USAGE BY ROLE"
     },
     {
       "id": "9dfe8284-0b55-4b2a-a02c-72d524d03d1f",
@@ -1679,16 +2843,16 @@
       "breadcrumb": [
         "Platforms",
         "TAK Tracker - Apple",
-        "Start",
+        "START & CONNECT",
         "Start from Download"
       ],
       "path": "/content/en/pages/guides/tak-guide/start-from-download-5tAQBOfF65.json",
       "updatedAt": "2026-02-21T08:37:32.546Z",
-      "order": 60,
+      "order": 120,
       "platform": "ios",
       "clientId": "tak-tracker-apple-PmHvleNK0F",
-      "chapterId": "start-oZzAX4X7Er",
-      "chapterLabel": "Start"
+      "chapterId": "start-connect-oZzAX4X7Er",
+      "chapterLabel": "START & CONNECT"
     },
     {
       "id": "c5a3d4f8-ab45-49f1-ad12-c7d612cc732b",
@@ -1698,16 +2862,16 @@
       "breadcrumb": [
         "Platforms",
         "TAK Tracker - Apple",
-        "Start",
+        "START & CONNECT",
         "TAK Tracker Already Installed"
       ],
       "path": "/content/en/pages/guides/tak-guide/tak-tracker-already-installed-DmWqDN5jLp.json",
       "updatedAt": "2026-02-21T08:38:01.138Z",
-      "order": 61,
+      "order": 121,
       "platform": "ios",
       "clientId": "tak-tracker-apple-PmHvleNK0F",
-      "chapterId": "start-oZzAX4X7Er",
-      "chapterLabel": "Start"
+      "chapterId": "start-connect-oZzAX4X7Er",
+      "chapterLabel": "START & CONNECT"
     },
     {
       "id": "e1b73cfa-3511-4413-92df-7ceed72140ff",
@@ -1722,7 +2886,7 @@
       ],
       "path": "/content/en/pages/guides/tak-guide/send-alerts-jz5xQsdpbH.json",
       "updatedAt": "2026-02-21T08:40:22.498Z",
-      "order": 62,
+      "order": 122,
       "platform": "ios",
       "clientId": "tak-tracker-apple-PmHvleNK0F",
       "chapterId": "tak-features-2eQ2Stir9U",
@@ -1741,7 +2905,7 @@
       ],
       "path": "/content/en/pages/guides/tak-guide/overview-vqWEyyCxy8.json",
       "updatedAt": "2026-02-21T08:40:26.953Z",
-      "order": 63,
+      "order": 123,
       "platform": "ios",
       "clientId": "tak-tracker-apple-PmHvleNK0F",
       "chapterId": "usage-by-role-FfcECbKYmK",
@@ -1760,7 +2924,7 @@
       ],
       "path": "/content/en/pages/guides/tak-guide/fighter-xKivECWhVS.json",
       "updatedAt": "2026-02-21T08:40:29.184Z",
-      "order": 64,
+      "order": 124,
       "platform": "ios",
       "clientId": "tak-tracker-apple-PmHvleNK0F",
       "chapterId": "usage-by-role-FfcECbKYmK",
@@ -1779,7 +2943,7 @@
       ],
       "path": "/content/en/pages/guides/tak-guide/command-post-aX04WiqaZf.json",
       "updatedAt": "2026-02-21T08:40:31.192Z",
-      "order": 65,
+      "order": 125,
       "platform": "ios",
       "clientId": "tak-tracker-apple-PmHvleNK0F",
       "chapterId": "usage-by-role-FfcECbKYmK",
@@ -1797,7 +2961,7 @@
       ],
       "path": "/content/en/pages/guides/tak-guide/troubleshooting-4heIv7ZV7m.json",
       "updatedAt": "2026-02-21T08:40:35.190Z",
-      "order": 66,
+      "order": 126,
       "platform": "ios",
       "clientId": "tak-tracker-apple-PmHvleNK0F",
       "chapterId": "tak-tracker-apple-PmHvleNK0F",
@@ -1906,28 +3070,178 @@
       "chapterLabel": "Publish Stream"
     },
     {
-      "id": "f5712226-1355-412a-9e28-ac127316cb30",
-      "slug": "deploy-app-matrix-ck6FccRX1P",
+      "id": "b4a61c0b-6fce-470b-9770-3ee3f8428b36",
+      "slug": "set-up-element-desktop-tagwindows-tagmacos-taglinux-KspjTxDpoH",
       "collection": "guides/matrix-guide",
-      "title": "Deploy App - Matrix",
+      "title": "Set up Element (desktop)",
       "breadcrumb": [
-        "Deploy App - Matrix"
+        "Connect to Server",
+        "Set up Element (desktop)"
       ],
-      "path": "/content/en/pages/guides/matrix-guide/deploy-app-matrix-ck6FccRX1P.json",
-      "updatedAt": "2026-05-05T15:19:54.416Z",
-      "order": 0
+      "path": "/content/en/pages/guides/matrix-guide/set-up-element-desktop-tagwindows-tagmacos-taglinux-KspjTxDpoH.json",
+      "updatedAt": "2026-06-15T17:52:25.452Z",
+      "order": 0,
+      "platforms": [
+        "windows",
+        "macos",
+        "linux"
+      ],
+      "chapterId": "connect-to-server-UUA0f5AFR5",
+      "chapterLabel": "Connect to Server"
     },
     {
-      "id": "ad27984a-c9fe-4ebb-ba2e-f782eded3233",
-      "slug": "deploy-app-cryptpad-AsW96ynevF",
-      "collection": "guides/cryptpad-guide",
-      "title": "Deploy App - CryptPad",
+      "id": "e9dfd659-f7ca-4e39-bdeb-999ffa4c9874",
+      "slug": "set-up-element-mobile-tagios-tagandroid-QacQsNprmb",
+      "collection": "guides/matrix-guide",
+      "title": "Set up Element (mobile)",
       "breadcrumb": [
-        "Deploy App - CryptPad"
+        "Connect to Server",
+        "Set up Element (mobile)"
       ],
-      "path": "/content/en/pages/guides/cryptpad-guide/deploy-app-cryptpad-AsW96ynevF.json",
-      "updatedAt": "2026-05-05T14:52:22.551Z",
-      "order": 0
+      "path": "/content/en/pages/guides/matrix-guide/set-up-element-mobile-tagios-tagandroid-QacQsNprmb.json",
+      "updatedAt": "2026-06-15T17:52:27.597Z",
+      "order": 1,
+      "platforms": [
+        "ios",
+        "android"
+      ],
+      "chapterId": "connect-to-server-UUA0f5AFR5",
+      "chapterLabel": "Connect to Server"
+    },
+    {
+      "id": "7976ded4-1ccf-485b-8f40-a54cfd146c83",
+      "slug": "messaging-in-matrix-MFNQHEi50M",
+      "collection": "guides/matrix-guide",
+      "title": "Messaging in Matrix",
+      "breadcrumb": [
+        "Basic Features",
+        "Messaging in Matrix"
+      ],
+      "path": "/content/en/pages/guides/matrix-guide/messaging-in-matrix-MFNQHEi50M.json",
+      "updatedAt": "2026-06-15T17:52:31.351Z",
+      "order": 2,
+      "chapterId": "basic-features-jotC7n1wbz",
+      "chapterLabel": "Basic Features"
+    },
+    {
+      "id": "f13fbaa8-ef05-4a1d-a105-ae769347aa51",
+      "slug": "unit-rooms-organisation-krWteO9e37",
+      "collection": "guides/matrix-guide",
+      "title": "Unit rooms & organisation",
+      "breadcrumb": [
+        "Usage in Unit",
+        "Unit rooms & organisation"
+      ],
+      "path": "/content/en/pages/guides/matrix-guide/unit-rooms-organisation-krWteO9e37.json",
+      "updatedAt": "2026-06-15T17:52:34.732Z",
+      "order": 3,
+      "chapterId": "usage-in-unit-yVodEGlu1v",
+      "chapterLabel": "Usage in Unit"
+    },
+    {
+      "id": "15e5a59c-784a-4652-b8d2-2f1e91ed65a2",
+      "slug": "getting-started-with-cryptpad-JznoTt1R8B",
+      "collection": "guides/cryptpad-guide",
+      "title": "Getting started with CryptPad",
+      "breadcrumb": [
+        "Connect to Server",
+        "Getting started with CryptPad"
+      ],
+      "path": "/content/en/pages/guides/cryptpad-guide/getting-started-with-cryptpad-JznoTt1R8B.json",
+      "updatedAt": "2026-06-15T17:52:39.856Z",
+      "order": 0,
+      "chapterId": "connect-to-server-52H4m1TfNt",
+      "chapterLabel": "Connect to Server"
+    },
+    {
+      "id": "b36c34b7-4076-4812-b235-f621c6e9a79c",
+      "slug": "documents-1QGExPEBr9",
+      "collection": "guides/cryptpad-guide",
+      "title": "Documents",
+      "breadcrumb": [
+        "Basic Features",
+        "Documents"
+      ],
+      "path": "/content/en/pages/guides/cryptpad-guide/documents-1QGExPEBr9.json",
+      "updatedAt": "2026-06-15T17:52:43.697Z",
+      "order": 1,
+      "chapterId": "basic-features-BTiSy0beMJ",
+      "chapterLabel": "Basic Features"
+    },
+    {
+      "id": "383899fc-eae8-4556-aafb-d2f0c0d1a86f",
+      "slug": "kanban-boards-U2wuelSn6Z",
+      "collection": "guides/cryptpad-guide",
+      "title": "Kanban boards",
+      "breadcrumb": [
+        "Basic Features",
+        "Kanban boards"
+      ],
+      "path": "/content/en/pages/guides/cryptpad-guide/kanban-boards-U2wuelSn6Z.json",
+      "updatedAt": "2026-06-15T17:52:44.963Z",
+      "order": 2,
+      "chapterId": "basic-features-BTiSy0beMJ",
+      "chapterLabel": "Basic Features"
+    },
+    {
+      "id": "616682ef-70ba-441a-b3b3-1871adced9fa",
+      "slug": "presentations-gWIWMzfeXq",
+      "collection": "guides/cryptpad-guide",
+      "title": "Presentations",
+      "breadcrumb": [
+        "Basic Features",
+        "Presentations"
+      ],
+      "path": "/content/en/pages/guides/cryptpad-guide/presentations-gWIWMzfeXq.json",
+      "updatedAt": "2026-06-15T17:52:46.180Z",
+      "order": 3,
+      "chapterId": "basic-features-BTiSy0beMJ",
+      "chapterLabel": "Basic Features"
+    },
+    {
+      "id": "20fe3087-e09b-4ac2-86ff-f53c0d2f96ec",
+      "slug": "set-up-a-unit-team-acg83EqeNh",
+      "collection": "guides/cryptpad-guide",
+      "title": "Set up a unit team",
+      "breadcrumb": [
+        "Usage in Unit",
+        "Set up a unit team"
+      ],
+      "path": "/content/en/pages/guides/cryptpad-guide/set-up-a-unit-team-acg83EqeNh.json",
+      "updatedAt": "2026-06-15T18:30:03.990Z",
+      "order": 4,
+      "chapterId": "usage-in-unit-jfKfzdcfOY",
+      "chapterLabel": "Usage in Unit"
+    },
+    {
+      "id": "454a695e-1d40-4e50-ae55-c3c643771922",
+      "slug": "shared-calendar-uEIsdBqGNk",
+      "collection": "guides/cryptpad-guide",
+      "title": "Shared calendar",
+      "breadcrumb": [
+        "Usage in Unit",
+        "Shared calendar"
+      ],
+      "path": "/content/en/pages/guides/cryptpad-guide/shared-calendar-uEIsdBqGNk.json",
+      "updatedAt": "2026-06-15T18:30:09.642Z",
+      "order": 5,
+      "chapterId": "usage-in-unit-jfKfzdcfOY",
+      "chapterLabel": "Usage in Unit"
+    },
+    {
+      "id": "b058e210-a36e-4f8c-9f7e-86ed6dd2bba9",
+      "slug": "back-up-your-data-xYdkRa1Tms",
+      "collection": "guides/cryptpad-guide",
+      "title": "Back up your data",
+      "breadcrumb": [
+        "Usage in Unit",
+        "Back up your data"
+      ],
+      "path": "/content/en/pages/guides/cryptpad-guide/back-up-your-data-xYdkRa1Tms.json",
+      "updatedAt": "2026-06-15T18:30:12.779Z",
+      "order": 6,
+      "chapterId": "usage-in-unit-jfKfzdcfOY",
+      "chapterLabel": "Usage in Unit"
     },
     {
       "id": "4ec40322-580d-4280-978d-ebbf11f8cb3c",
@@ -2575,7 +3889,7 @@
         "What is Deploy App"
       ],
       "path": "/content/en/pages/introduction/what-is-deploy-app-HGko2yWWay.json",
-      "updatedAt": "2026-06-13T13:20:28.316Z",
+      "updatedAt": "2026-06-16T11:05:30.985Z",
       "order": 0
     },
     {
@@ -2599,7 +3913,7 @@
         "Architecture orientation"
       ],
       "path": "/content/en/pages/introduction/architecture-orientation-H9Vndl9nba.json",
-      "updatedAt": "2026-06-13T21:19:11.344Z",
+      "updatedAt": "2026-06-16T16:21:31.291Z",
       "order": 2
     },
     {
@@ -2647,7 +3961,7 @@
         "Troubleshooting & teardown"
       ],
       "path": "/content/en/pages/operate/troubleshooting-teardown-H4UicAUh4c.json",
-      "updatedAt": "2026-06-13T13:20:32.542Z",
+      "updatedAt": "2026-06-16T16:36:32.235Z",
       "order": 2
     },
     {
@@ -2661,7 +3975,7 @@
         "Deploy with Docker Compose"
       ],
       "path": "/content/en/pages/operate/deploy-with-docker-compose-B518eLioFe.json",
-      "updatedAt": "2026-06-13T13:20:33.562Z",
+      "updatedAt": "2026-06-16T16:39:50.048Z",
       "order": 3,
       "platform": "docker-rasenmaeher-integration",
       "clientId": "docker-compose-legacy-V5BNgGudas",
@@ -2679,7 +3993,7 @@
         "Day-2 operations (Docker Compose)"
       ],
       "path": "/content/en/pages/operate/day-2-operations-docker-compose-FJFEoqvs6b.json",
-      "updatedAt": "2026-06-13T16:12:34.386Z",
+      "updatedAt": "2026-06-16T16:41:48.704Z",
       "order": 4,
       "platform": "docker-rasenmaeher-integration",
       "clientId": "docker-compose-legacy-V5BNgGudas",
@@ -2731,7 +4045,7 @@
         "Core development overview"
       ],
       "path": "/content/en/pages/develop-deploy-app/core-development-overview-2Qap7v2dqB.json",
-      "updatedAt": "2026-06-13T13:20:39.229Z",
+      "updatedAt": "2026-06-16T16:45:52.515Z",
       "order": 0
     },
     {
@@ -2748,15 +4062,27 @@
     },
     {
       "id": "73d61828-bb47-418f-8d78-c14a050678a7",
-      "slug": "testing-ci-conventions-rhTvWtij7I",
+      "slug": "testing-conventions-rhTvWtij7I",
       "collection": "develop-deploy-app",
-      "title": "Testing & CI conventions",
+      "title": "Testing conventions",
       "breadcrumb": [
-        "Testing & CI conventions"
+        "Testing conventions"
       ],
-      "path": "/content/en/pages/develop-deploy-app/testing-ci-conventions-rhTvWtij7I.json",
-      "updatedAt": "2026-06-13T13:20:40.036Z",
+      "path": "/content/en/pages/develop-deploy-app/testing-conventions-rhTvWtij7I.json",
+      "updatedAt": "2026-06-16T16:47:00.198Z",
       "order": 2
+    },
+    {
+      "id": "8d43d4ff-6ddd-4423-806f-783b70e532c0",
+      "slug": "best-practices-ci-library-axlX8ORNt2",
+      "collection": "develop-deploy-app",
+      "title": "Best practices & CI library",
+      "breadcrumb": [
+        "Best practices & CI library"
+      ],
+      "path": "/content/en/pages/develop-deploy-app/best-practices-ci-library-axlX8ORNt2.json",
+      "updatedAt": "2026-06-16T16:53:50.443Z",
+      "order": 3
     },
     {
       "id": "5e5eaf64-442a-442e-8112-a43920509129",
@@ -2769,8 +4095,8 @@
         "Set up your dev environment (Docker Compose)"
       ],
       "path": "/content/en/pages/develop-deploy-app/set-up-your-dev-environment-docker-compose-t4JDwRuQs2.json",
-      "updatedAt": "2026-06-13T14:30:10.674Z",
-      "order": 3,
+      "updatedAt": "2026-06-16T16:52:28.004Z",
+      "order": 4,
       "platform": "docker-rasenmaeher-integration",
       "clientId": "docker-compose-legacy-nhqHtxFBvx",
       "chapterId": "docker-compose-legacy-nhqHtxFBvx",
@@ -2788,7 +4114,7 @@
       ],
       "path": "/content/en/pages/develop-deploy-app/iterate-on-the-core-api-docker-compose-qhg7EpPTbA.json",
       "updatedAt": "2026-06-13T14:30:11.043Z",
-      "order": 4,
+      "order": 5,
       "platform": "docker-rasenmaeher-integration",
       "clientId": "docker-compose-legacy-nhqHtxFBvx",
       "chapterId": "docker-compose-legacy-nhqHtxFBvx",
@@ -2806,7 +4132,7 @@
       ],
       "path": "/content/en/pages/develop-deploy-app/set-up-your-dev-environment-kubernetes-z9YF0C0oH4.json",
       "updatedAt": "2026-06-13T13:21:27.879Z",
-      "order": 5,
+      "order": 6,
       "platform": "opendefence-k8s",
       "clientId": "kubernetes-plT6WHkYy5",
       "chapterId": "kubernetes-plT6WHkYy5",
@@ -2824,7 +4150,7 @@
       ],
       "path": "/content/en/pages/develop-deploy-app/iterate-on-the-core-api-mirrord-lzshevUc4T.json",
       "updatedAt": "2026-06-13T13:21:28.222Z",
-      "order": 6,
+      "order": 7,
       "platform": "opendefence-k8s",
       "clientId": "kubernetes-plT6WHkYy5",
       "chapterId": "kubernetes-plT6WHkYy5",
@@ -2963,18 +4289,6 @@
       "order": 0
     },
     {
-      "id": "48c3a5c8-c984-41d6-9deb-2dd3715e42b5",
-      "slug": "community-standards-uSUlJYqGsc",
-      "collection": "contribute-to-project",
-      "title": "Community & Standards",
-      "breadcrumb": [
-        "Community & Standards"
-      ],
-      "path": "/content/en/pages/contribute-to-project/community-standards-uSUlJYqGsc.json",
-      "updatedAt": "2026-06-13T13:21:41.083Z",
-      "order": 1
-    },
-    {
       "id": "b7a3d1be-7981-4eec-9cb4-edf3d4703f99",
       "slug": "reporting-issues-support-MIgxRA5dFF",
       "collection": "contribute-to-project",
@@ -2984,7 +4298,7 @@
       ],
       "path": "/content/en/pages/contribute-to-project/reporting-issues-support-MIgxRA5dFF.json",
       "updatedAt": "2026-06-13T13:21:41.422Z",
-      "order": 2
+      "order": 1
     },
     {
       "id": "bdf385f2-45f3-4d85-a5c7-a40713924a49",
@@ -2995,8 +4309,8 @@
         "Security policy & reporting"
       ],
       "path": "/content/en/pages/contribute-to-project/security-policy-reporting-UmTyYXQA5Z.json",
-      "updatedAt": "2026-06-13T13:21:41.764Z",
-      "order": 3
+      "updatedAt": "2026-06-16T17:03:37.751Z",
+      "order": 2
     },
     {
       "id": "c99da98b-79ce-4b99-831f-8c9eaecd3caa",
@@ -3007,8 +4321,8 @@
         "Releases & versioning"
       ],
       "path": "/content/en/pages/contribute-to-project/releases-versioning-KNjehwFcnX.json",
-      "updatedAt": "2026-06-13T13:21:42.108Z",
-      "order": 4
+      "updatedAt": "2026-06-16T17:04:33.949Z",
+      "order": 3
     }
   ]
 }

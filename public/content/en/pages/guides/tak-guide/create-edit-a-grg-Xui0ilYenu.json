@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "65284479-f446-4b5b-8ffe-65c5cad9d442",
+  "slug": "create-edit-a-grg-Xui0ilYenu",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "Create & edit a GRG",
+  "breadcrumb": [
+    "Platforms",
+    "WinTAK",
+    "Supported Plugins",
+    "GRG Builder",
+    "Create & edit a GRG"
+  ],
+  "createdAt": "2026-06-16T10:20:30.412Z",
+  "updatedAt": "2026-06-16T10:20:30.412Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>GRG Builder makes a GRG (Gridded Reference Graphic — a KMZ) from a snapshot of high-resolution map imagery. The grid can also carry map items, a scale, compass, crosshair and an MGRS grid.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Create a GRG",
+          "layout": "image-bottom",
+          "html": "<p>Pick a map source from <strong>Maps &#x26; Favorites</strong> and pan/zoom to your area of interest. Select the <strong>GRG Builder</strong> icon on the Creation tab, then <strong>Add GRG (+)</strong> to drop a grid on the map. Select <strong>Add GRG</strong> again to place more. To rename a grid, select <strong>Edit GRG</strong> (pencil) > <strong>Change GRG Name</strong> > <strong>Rename</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/583bdf391ad9d3d6.webp",
+              "width": 224,
+              "height": 128
+            }
+          ]
+        },
+        {
+          "title": "Edit the grid",
+          "layout": "image-bottom",
+          "html": "<p>Select <strong>Edit GRG</strong> > <strong>Edit GRG Components</strong> > <strong>Edit Grid</strong>. <strong>Move Grid</strong> recenters it; change <strong>Height x Width</strong> and <strong>Spacing</strong> to resize the cells (or <strong>Add Size</strong> for a custom layout), and set the grid <strong>Color</strong> and opacity with the slider. To reshape the footprint, use <strong>Redefine GRG</strong>: right-click a corner, left-click a new point, then <strong>Done Editing</strong> to save.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/d7fcd03d2bce1f1e.webp",
+              "width": 224,
+              "height": 118
+            }
+          ]
+        },
+        {
+          "title": "Label the grid",
+          "layout": "image-bottom",
+          "html": "<p>Open <strong>Grid Label</strong> to letter and number the grid. Choose <strong>Alphanumeric</strong>, <strong>MGRS</strong> or <strong>Both</strong>; for MGRS, set the orientation, colors and <strong>Precision</strong>. Toggle labels with the <strong>Show Grid Labels</strong> checkbox.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/10365331d1b37b8b.webp",
+              "width": 192,
+              "height": 160
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

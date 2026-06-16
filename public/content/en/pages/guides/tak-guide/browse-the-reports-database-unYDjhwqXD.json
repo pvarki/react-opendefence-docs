@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "id": "bb1a047e-2fff-446a-8490-dcc04d82b209",
+  "slug": "browse-the-reports-database-unYDjhwqXD",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "Browse the reports database",
+  "breadcrumb": [
+    "Platforms",
+    "WinTAK",
+    "Supported Plugins",
+    "Reports",
+    "Browse the reports database"
+  ],
+  "createdAt": "2026-06-16T10:20:52.951Z",
+  "updatedAt": "2026-06-16T10:20:52.951Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Reports stored on the TAK Server can be searched, filtered and visualized.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Filter & sort reports",
+          "layout": "image-bottom",
+          "html": "<p>Select the <strong>Filter</strong> icon to limit the list by current map view, date range, report type, status, importance or user callsign; <strong>Clear Filters</strong> shows everything again. Select <strong>Sort</strong> to order the list by Date, User Callsign, Importance, Status, Title or Type — click a choice again to reverse it.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/5e3bf90b2eaae81b.webp",
+              "width": 241,
+              "height": 548
+            }
+          ]
+        },
+        {
+          "title": "Build a reports dashboard",
+          "layout": "image-bottom",
+          "html": "<p>Open <strong>Dashboard</strong> from the toolbar and filter down to the reports you want. Select <strong>Create New Chart</strong>, choose how to group it (Importance, Scale, Status, Type or User Callsign) and a pie or bar chart, then <strong>Create</strong>. Multiple charts can run side by side, each with its own filters.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/01a40ce39c3aa870.webp",
+              "width": 378,
+              "height": 339
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "id": "a87aa7ad-6fe9-4a1c-88cc-e20574225866",
+  "slug": "what-is-tak-Vy8mUPLS87",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "What is TAK?",
+  "breadcrumb": [
+    "Platforms",
+    "What is TAK?"
+  ],
+  "createdAt": "2026-06-13T23:47:59.586Z",
+  "updatedAt": "2026-06-14T08:53:34.806Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "What is TAK?",
+          "layout": "image-left",
+          "html": "<ul>\n<li>TAK is the US DoD's situational awareness ecosystem of choice.</li>\n<li>ATAK for Android is the main client, but there are clients for all platforms, like iOS and Windows.</li>\n<li>As TAK is by its main parts open source, we can utilize it sovereignly to a large extent.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/4354584791162239.webp",
+              "width": 400,
+              "height": 400
+            }
+          ]
+        },
+        {
+          "title": "Intro: what you can do with TAK",
+          "layout": "image-left",
+          "html": "<ul>\n<li>TAK is a tremendously capable tool.</li>\n<li>Mostly your benefits from TAK are limited by your user's skill to work with it.</li>\n<li>The OpenDefence guide attempts to help you a bit with this.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/e0c950f756a2ca75.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Blue-force Tracking",
+          "layout": "image-left",
+          "html": "<p>With TAK, you can do Blue-force Tracking out of the box.</p>\n<ul>\n<li>This means seeing where you are and where your teammates are on the map.</li>\n<li>This allows leaders to make better decision with proper real time information.</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "Placing and sharing Markers",
+          "layout": "image-left",
+          "html": "<p>TAK lets you place and manage markers to build an awareness picture on the map.</p>\n<ul>\n<li>Place markers to map (Enemies, Friendlies, Other: Hospitals, Supply Points, etc)</li>\n<li>Send the markers to users and groups.</li>\n<li>OpenDefence standard model instructed later offers a simple way to ensure your unit uses the marker feature potently.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/b53d51659a4fc177.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Data Sync",
+          "layout": "image-left",
+          "html": "<p>TAK lets you syncronize data from your TAK Server without manual effort.</p>\n<ul>\n<li>Synchronize chat, map markers, files between users and server.</li>\n<li>Data is shown while offline, changes can be made and automatically updated when online.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/6b7e8960e01ec760.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "Planning",
+          "layout": "image-left",
+          "html": "<p>TAK lets you draw and share georeferenced plans for your troops.</p>\n<ul>\n<li>Plans for eg. unit placements, movements and Areas of Responsibility &#x26; Operation.</li>\n<li>Plans can be prepared beforehand and shared to users when needed.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/e5b817603ea67a6e.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Chat features",
+          "layout": "image-left",
+          "html": "<p>TAK contains rudimentary chat features out of the box.</p>\n<ul>\n<li>Message other users and groups via TAK.</li>\n<li>Send text, pictures, files and datapackages.</li>\n<li>Use the TAK Geochat if your unit does not use more advantaged tools like the Matrix.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/ab2f24ffaf33f0da.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "You need a Server",
+          "layout": "image-left",
+          "html": "<ul>\n<li>To gain these benefits from TAK you need a Server. Deploy App's TAK provides you one with state-of-the-art easy access.</li>\n<li>TAK client apps connected to the Server automatically post their location to server.</li>\n<li>With a server access, you can easily share and receive data such as situational awareness products made by your CP as TAK Feeds.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/777836b658dd16dd.webp",
+              "width": 1488,
+              "height": 1068
+            }
+          ]
+        },
+        {
+          "title": "Deploy App automates Server management",
+          "layout": "image-left",
+          "html": "<p>With Deploy App, you never have to configure your TAK Server manually.</p>\n<ul>\n<li>A Deploy App instance brings up a bundled official-flavor TAK Server.</li>\n<li>You and your fighters can access it with two taps from Deploy App.\nWe believe soldiers should operate, not to rub servers. Deploy App removes manual config with a highly secure execution.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/2eb1508d89ef7f24.webp",
+              "width": 1080,
+              "height": 2340
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

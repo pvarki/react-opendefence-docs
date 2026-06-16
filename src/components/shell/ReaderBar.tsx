@@ -1,4 +1,5 @@
 import { Link } from "@tanstack/react-router";
+import { useTranslation } from "react-i18next";
 import { ChevronRight } from "lucide-react";
 
 interface ReaderBarProps {
@@ -18,11 +19,12 @@ export function ReaderBar({
   bookLabel,
   breadcrumb,
 }: ReaderBarProps) {
+  const { t } = useTranslation();
   const pageTitle = breadcrumb?.[breadcrumb.length - 1];
 
   return (
     <nav
-      aria-label="Breadcrumb"
+      aria-label={t("nav.breadcrumb")}
       className="hidden h-7 shrink-0 items-center gap-1 border-b border-border/60 px-6 text-[11px] text-muted-foreground md:flex"
     >
       <Link

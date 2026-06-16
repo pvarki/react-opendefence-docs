@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "8945544b-2914-45f3-8c64-a1f46368dc0f",
+  "slug": "add-3d-models-to-map-bp5Bo7T0oI",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "Add 3D Models to Map",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "ADDITIONAL FEATURES",
+    "Elevation, Terrain & Map Tools",
+    "Add 3D Models to Map"
+  ],
+  "createdAt": "2026-06-15T19:42:19.354Z",
+  "updatedAt": "2026-06-15T20:53:53.270Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Drop a 3D model (like a Pix4D scan) onto the map so terrain and structures show in proper relief.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Import the model file",
+          "layout": "image-bottom",
+          "html": "<p>Open the <strong>Import Manager</strong>, browse to your <strong>.OBJ</strong> file, or a <strong>.ZIP</strong> that contains it, and import only that file. You can also drop the <strong>.ZIP</strong> into the <strong>atak/overlays</strong> folder to load it on startup.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/9b7ac349d4cebcd9.webp",
+              "width": 373,
+              "height": 173
+            }
+          ]
+        },
+        {
+          "title": "See it on the map",
+          "layout": "image-bottom",
+          "html": "<p>Zoom in and the model loads onto the map. Two-finger swipe up or down to tilt the view and see it raised above the surface.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/7e43c4ed0a91d87e.webp",
+              "width": 373,
+              "height": 185
+            }
+          ]
+        },
+        {
+          "title": "Lock the 3D view",
+          "layout": "image-bottom",
+          "html": "<p>Long press the <strong>North Arrow</strong> and select <strong>3D</strong> to switch to 3D view. Tap <strong>3D Lock</strong> to hold the tilt angle while you pan the map.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/b3500e627e1d5c59.webp",
+              "width": 152,
+              "height": 52
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

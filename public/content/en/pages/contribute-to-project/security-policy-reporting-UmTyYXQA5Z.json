@@ -9,7 +9,7 @@
     "Security policy & reporting"
   ],
   "createdAt": "2026-06-13T13:21:41.764Z",
-  "updatedAt": "2026-06-13T13:21:41.764Z",
+  "updatedAt": "2026-06-16T17:03:37.751Z",
   "headings": [
     {
       "depth": 2,
@@ -18,23 +18,13 @@
     },
     {
       "depth": 2,
-      "text": "Supported versions & design lifetime",
-      "id": "supported-versions--design-lifetime"
+      "text": "Supported versions under Deploy App 2.x",
+      "id": "supported-versions-under-deploy-app-2x"
     },
     {
       "depth": 2,
-      "text": "CA and trust posture",
-      "id": "ca-and-trust-posture"
-    },
-    {
-      "depth": 3,
-      "text": "Legacy (Docker Compose)",
-      "id": "legacy-docker-compose"
-    },
-    {
-      "depth": 3,
-      "text": "Kubernetes (opendefence-platform, alpha)",
-      "id": "kubernetes-opendefence-platform-alpha"
+      "text": "Designated service lifetime under Deploy App 2.x",
+      "id": "designated-service-lifetime-under-deploy-app-2x"
     },
     {
       "depth": 2,
@@ -45,16 +35,16 @@
   "blocks": [
     {
       "type": "html",
-      "html": "<p>Security is a first-class goal for Deploy App (\"Security and quality first\"). This page covers how to report vulnerabilities privately, the supported-versions / design-lifetime expectations, and the CA/trust posture that differs between the legacy and Kubernetes stacks.</p>\n<h2 id=\"reporting-a-vulnerability\"><a href=\"#reporting-a-vulnerability\">Reporting a vulnerability</a></h2>\n<p>Do <strong>not</strong> open a public GitHub issue for a security problem. Report it privately so it can be triaged and fixed before disclosure.</p>\n<blockquote>\n<p><strong>TODO:</strong> confirm the exact private reporting channel (GitHub private vulnerability reporting / a security mailbox) for the pvarki org and link it here. No <code>SECURITY.md</code> was present in the local sources.</p>\n</blockquote>\n<p>When reporting, include the affected stack and version/tag (and the submodule set for the legacy stack), reproduction steps, and the impact you observed.</p>\n<h2 id=\"supported-versions--design-lifetime\"><a href=\"#supported-versions--design-lifetime\">Supported versions &#x26; design lifetime</a></h2>\n<p>A Deploy App deployment is intended to be <strong>short-lived</strong>. The legacy README states a <em>design lifetime</em> of <strong>1–2 months</strong> and warns explicitly against running a single deployment longer:</p>\n<blockquote>\n<p>If you wish to use one deployment for longer than the design lifetime of 1–2 months you can change the following env variables. But do understand that this is <strong>not recommended</strong> and has <strong>security implications</strong>.</p>\n</blockquote>\n<p>The relevant knobs are the CFSSL certificate expiries, which default to short windows:</p>"
+      "html": "<p>Security is a first-class goal for Deploy App (\"Security and quality first\"). This page covers how to report vulnerabilities privately, the supported-versions / design-lifetime expectations, and the CA/trust posture that differs between the legacy and Kubernetes stacks.</p>\n<h2 id=\"reporting-a-vulnerability\"><a href=\"#reporting-a-vulnerability\">Reporting a vulnerability</a></h2>\n<p>Do <strong>not</strong> open a public GitHub issue for a security problem. Report it privately so it can be triaged and fixed before disclosure.</p>\n<blockquote>\n<p><strong>TODO:</strong>  set up the exact private reporting channel (GitHub private vulnerability reporting / a security mailbox) for the pvarki org and link it here.</p>\n</blockquote>\n<p>When reporting, include the affected stack and version/tag (and the submodule set for the legacy stack), reproduction steps, and the impact you observed.</p>\n<h2 id=\"supported-versions-under-deploy-app-2x\"><a href=\"#supported-versions-under-deploy-app-2x\">Supported versions under Deploy App 2.x</a></h2>\n<p>We, presently, only support the latest version tag of [(<a href=\"https://github.com/pvarki/docker-rasenmaeher-integration\" target=\"_blank\" rel=\"noopener noreferrer\">https://github.com/pvarki/docker-rasenmaeher-integration/tags)</a>] and latest version tags of each of our components</p>\n<h2 id=\"designated-service-lifetime-under-deploy-app-2x\"><a href=\"#designated-service-lifetime-under-deploy-app-2x\">Designated service lifetime under Deploy App 2.x</a></h2>\n<p>A Deploy App deployment is intended to be <strong>short-lived</strong>. The legacy README states a <em>design lifetime</em> of <strong>1–2 months</strong> and warns explicitly against running a single deployment longer:</p>\n<blockquote>\n<p>If you wish to use one deployment for longer than the design lifetime of 1–2 months you can change the following env variables. But do understand that this is <strong>not recommended</strong> and has <strong>security implications</strong>.</p>\n</blockquote>\n<p>The relevant knobs are the CFSSL certificate expiries, which default to short windows:</p>"
     },
     {
       "type": "code",
-      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#E06C75\">CFSSL_CA_EXPIRY</span><span style=\"color:#56B6C2\">=</span><span style=\"color:#98C379\">\"8800h\"</span><span style=\"color:#7F848E;font-style:italic\">            # ~366 days; only if you accept the risk</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">CFSSL_SIGN_DEFAULT_EXPIRY</span><span style=\"color:#56B6C2\">=</span><span style=\"color:#98C379\">\"8800h\"</span></span></code></pre>",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#E06C75\">CFSSL_CA_EXPIRY</span><span style=\"color:#56B6C2\">=</span><span style=\"color:#98C379\">\"hours here\"</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">CFSSL_SIGN_DEFAULT_EXPIRY</span><span style=\"color:#56B6C2\">=</span><span style=\"color:#98C379\">\"hours here, make sure it equals CFSSL_CA_EXPIRY\"</span></span></code></pre>",
       "lang": "bash"
     },
     {
       "type": "html",
-      "html": "<p>The README is blunt about the tradeoff: if you extend the lifetime, <strong>you</strong> take responsibility to go through all Dockerfiles and compositions and apply security updates yourself. The supported, secure path is to stand up a fresh deployment from a current tag rather than nurse an old one. Tearing down with <code>docker compose down -v</code> deletes certificates and all user state — treat that as a full reset, not an upgrade step.</p>\n<h2 id=\"ca-and-trust-posture\"><a href=\"#ca-and-trust-posture\">CA and trust posture</a></h2>\n<p>Both stacks are mTLS-centric — product integration endpoints authenticate the caller by client certificate (the matrix example rejects any caller whose CN does not match the Rasenmaeher service certificate with <code>403 Forbidden</code>). How the CA and trust distribution are implemented differs sharply between stacks.</p>\n<h3 id=\"legacy-docker-compose\"><a href=\"#legacy-docker-compose\">Legacy (Docker Compose)</a></h3>\n<p>The internal CA is <strong>CFSSL</strong> (<code>docker-rasenmaeher-cfssl</code>, the <code>cfssl</code> submodule). Public-facing TLS certificates are obtained via <strong>miniwerk</strong> (<code>python-rasenmaeher-miniwerk</code>) using Let's Encrypt, configured with <code>MW_LE_EMAIL</code> and <code>MW_LE_TEST</code>, and the CA is named via <code>CFSSL_CA_NAME</code>. Certificate lifetimes are governed by the <code>CFSSL_*_EXPIRY</code> variables above.</p>\n<h3 id=\"kubernetes-opendefence-platform-alpha\"><a href=\"#kubernetes-opendefence-platform-alpha\">Kubernetes (opendefence-platform, alpha)</a></h3>\n<p>The k8s stack <strong>drops CFSSL and miniwerk</strong> entirely. CA and trust are handled by <strong>cert-manager</strong> + <strong>trust-manager</strong> with an in-cluster PKI (<code>opendefense-pki</code>):</p>\n<ul>\n<li>A self-signed <code>ClusterIssuer</code> (<code>opendefense-issuer</code>) signs the root CA, which signs an intermediate CA — a normal cert-manager root/intermediate chain.</li>\n<li>A trust-manager <code>Bundle</code> (<code>opendefense-bundle</code>) distributes the CA chain to a ConfigMap in <strong>every namespace</strong> (PEM, plus JKS/PKCS#12 formats for Java/keystore consumers). Notably it sets <code>useDefaultCAs: false</code> for the public-CA portion, with a warning that an unpinned default bundle can change underneath you.</li>\n<li>Public-facing TLS uses cert-manager <code>ClusterIssuer</code>s for Let's Encrypt instead of miniwerk.</li>\n<li>The core API runs as <code>deployment/opendefense-rmapi</code> in namespace <code>opendefense-system</code>.</li>\n</ul>\n<p>Because the two stacks use different CA machinery, <strong>do not</strong> mix guidance: there is no CFSSL or miniwerk on Kubernetes, and there is no cert-manager/trust-manager on the Compose stack.</p>\n<h2 id=\"supply-chain-scanning\"><a href=\"#supply-chain-scanning\">Supply-chain scanning</a></h2>\n<p>CI enforces dependency and image scanning (see <strong>Community &#x26; Standards</strong>): product repos run Snyk on PRs (<code>snyk-test</code>) and monitor <code>main</code> (<code>snyk-monitor</code>), and the legacy stack runs a Syft + Grype SBOM/scan pipeline that uploads findings to DefectDojo after builds. Threat modeling is part of the operational handover — the Deploy App runbook includes a Threat Model section. See <strong>Operate</strong> (separate book) for day-2 security operations.</p>"
+      "html": "<p>The README is blunt about the tradeoff: if you extend the lifetime, <strong>you</strong> take responsibility to go through all Dockerfiles and compositions and apply security updates yourself. The supported, secure path is to stand up a fresh deployment from a current tag rather than nurse an old one. Tearing down with <code>docker compose down -v</code> deletes certificates and all user state — treat that as a full reset, not an upgrade step.</p>\n<blockquote>\n<p>The upcoming OpenDefence k8s-platform deployment model may change the designated service lifetime of a Deploy App instance.</p>\n<p><br>\nWe only alter this when we have designed and enforced methods for service operators to both keep their services up-to-date AND enabled certificate / ID lifecycle refreshing within Deploy App, in order to ensure high security of a Deploy App service.</p>\n</blockquote>\n<h2 id=\"supply-chain-scanning\"><a href=\"#supply-chain-scanning\">Supply-chain scanning</a></h2>\n<p>CI enforces dependency and image scanning (see <strong>Community &#x26; Standards</strong>): product repos run Snyk on PRs (<code>snyk-test</code>) and monitor <code>main</code> (<code>snyk-monitor</code>), and the legacy stack runs a Syft + Grype SBOM/scan pipeline that uploads findings to DefectDojo after builds.</p>\n<p>Threat modeling is part of the operational handover. If you are developing a new product integration to Deploy App, please provide a threat model against your integration and product</p>"
     }
   ]
 }

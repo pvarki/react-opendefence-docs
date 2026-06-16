@@ -6,13 +6,14 @@
   "locale": "en",
   "title": "Geofences",
   "breadcrumb": [
-    "TAK Clients",
+    "Platforms",
     "ATAK",
+    "USING ATAK FEATURES",
     "Advanced Features",
     "Geofences"
   ],
   "createdAt": "2025-12-05T22:06:22.040Z",
-  "updatedAt": "2026-02-28T11:13:55.810Z",
+  "updatedAt": "2026-06-14T12:14:43.049Z",
   "headings": [
     {
       "depth": 2,
@@ -140,7 +141,7 @@
         {
           "title": "Disable or Delete an Alert",
           "layout": "image-bottom",
-          "html": "<ul>\n<li>Choose and that's it!</li>\n</ul>",
+          "html": "<ul>\n<li>Choose, and that's it!</li>\n</ul>",
           "images": [
             {
               "src": "/content/images/en/attachments/6b6f03778686f4ab.webp",
@@ -148,12 +149,6 @@
               "height": 1080
             }
           ]
-        },
-        {
-          "title": "Done",
-          "layout": "text",
-          "html": "<ul>\n<li>You can close this guide.</li>\n</ul>",
-          "images": []
         }
       ]
     },

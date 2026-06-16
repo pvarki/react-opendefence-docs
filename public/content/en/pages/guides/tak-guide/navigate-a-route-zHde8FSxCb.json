@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "id": "e87ac21a-a663-4105-84d8-6de6898371ae",
+  "slug": "navigate-a-route-zHde8FSxCb",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "Navigate a Route",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "ADDITIONAL FEATURES",
+    "Navigation & Coordinates",
+    "Navigate a Route"
+  ],
+  "createdAt": "2026-06-15T19:41:19.003Z",
+  "updatedAt": "2026-06-15T20:53:48.642Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Follow an existing route to your objective with on-screen distance, heading and turn cues.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Start navigation on a route",
+          "layout": "image-bottom",
+          "html": "<p>Select the route's navigation radial option, or tap its <strong>Navigation</strong> icon in the Routes listing. Navigation info then appears in the top left corner. (To build a route first, see Create Routes and use VNS.)</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/fc5e3c34fc6eb9e4.webp",
+              "width": 98,
+              "height": 71
+            }
+          ]
+        },
+        {
+          "title": "Read the navigation info",
+          "layout": "image-bottom",
+          "html": "<p>The bar shows distance, current speed and the next check point, for example <strong>Next: CP1 Continue Straight</strong>. Tap the top row of the display to collapse it and free up screen space.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/0649bc01e20d4a2e.webp",
+              "width": 245,
+              "height": 98
+            }
+          ]
+        },
+        {
+          "title": "Cues, mute and units",
+          "layout": "image-bottom",
+          "html": "<p>As you near a check point its cue shows; turn the volume up to hear voice cues, or tap the <strong>Mute</strong> icon to silence them. Tap the distance or speed to cycle units (mph, km/h, kn, m/s).</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/0649bc01e20d4a2e.webp",
+              "width": 245,
+              "height": 98
+            }
+          ]
+        },
+        {
+          "title": "Move between check points and end",
+          "layout": "image-bottom",
+          "html": "<p>Use the arrows on either side of the info to step to the next or previous check point. Select the <strong>x</strong> to end navigation.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/0649bc01e20d4a2e.webp",
+              "width": 245,
+              "height": 98
+            }
+          ]
+        },
+        {
+          "title": "Navigate tilted in 3D with billboards",
+          "layout": "image-bottom",
+          "html": "<p>While navigating in 3D, a marker's attached image pops up as a billboard when you come within its render distance, then clears once you pass. Adjust it under <strong>Settings > Tool Preferences > Specific Tool Preferences > Route Preferences > Billboard Render Distance</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/7b33163f75e1cb54.webp",
+              "width": 380,
+              "height": 201
+            }
+          ]
+        },
+        {
+          "title": "Quick Nav to any point (bloodhound)",
+          "layout": "image-bottom",
+          "html": "<p>Select the <strong>Quick Nav</strong> icon to bloodhound straight to any point, object or route. A pairing line is drawn and the lower left shows time, speed and distance to the next check point as you move.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/7b33163f75e1cb54.webp",
+              "width": 380,
+              "height": 201
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

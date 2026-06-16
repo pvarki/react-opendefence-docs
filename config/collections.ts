@@ -183,6 +183,33 @@ export function validateCollectionConfig(): void {
   }
 }
 
+/** A single `servers[]` entry, optionally templated with OpenAPI variables. */
+export interface SpecOverlayServer {
+  url: string;
+  description?: string;
+  variables?: Record<
+    string,
+    { default: string; description?: string; enum?: string[] }
+  >;
+}
+
+/**
+ * Cosmetic enrichment re-applied to a fetched spec on every sync.
+ *
+ * Raw FastAPI specs ship `info.title` = "FastAPI", no `info.description` and no
+ * `servers[]`, so the embedded reference would otherwise read "FastAPI 1.4.0"
+ * with no overview or base URL. Keeping the overlay here (not hand-edited into
+ * the synced JSON) means `pnpm fetch:api-specs` can't revert the branding.
+ */
+export interface SpecOverlay {
+  /** Replaces `info.title`. */
+  title?: string;
+  /** Replaces `info.description` — markdown, rendered atop the reference. */
+  description?: string;
+  /** Replaces `servers[]`. */
+  servers?: SpecOverlayServer[];
+}
+
 /** OpenAPI spec sources for the embedded Scalar reference. */
 export interface ApiSpecSource {
   id: string;
@@ -194,6 +221,8 @@ export interface ApiSpecSource {
   repo?: string;
   assetPath?: string;
   maxVersions?: number;
+  /** Branding/overview re-applied after each download (see {@link SpecOverlay}). */
+  overlay?: SpecOverlay;
 }
 
 export const API_SPEC_SOURCES: ApiSpecSource[] = [
@@ -202,6 +231,49 @@ export const API_SPEC_SOURCES: ApiSpecSource[] = [
     name: "Deploy App Core API",
     kind: "gh-pages",
     url: "https://pvarki.github.io/docker-rasenmaeher-integration/openapi.json",
+    overlay: {
+      title: "Deploy App Core API",
+      description: [
+        "The **Deploy App Core API** (codename *RASENMAEHER*) is the identity,",
+        "certificate and enrollment backend behind Deploy App. Product",
+        "integrations and operators use it to enroll users, issue and renew mTLS",
+        "client certificates, and validate access.",
+        "",
+        "## Base URL",
+        "",
+        "All endpoints live under `/api/v1`. The host is assigned per deployment",
+        "(for example `your-deployment.pvarki.fi`) — pick it in the server",
+        "selector above or substitute your own instance's hostname.",
+        "",
+        "## Authentication",
+        "",
+        "Endpoints accept one of two credentials, depending on the operation:",
+        "",
+        "- **Bearer JWT** — send `Authorization: Bearer <token>` (scheme",
+        "  `JWTBearer`).",
+        "- **mTLS client certificate** — present your client certificate; the",
+        "  mTLS-terminating proxy forwards it to the API (schemes `MTLSHeader` /",
+        "  `MTLSorJWT`). Some operations accept either, or additionally require a",
+        "  valid user (`ValidUser`).",
+        "",
+        "Each operation below lists the exact credential it expects.",
+      ].join("\n"),
+      servers: [
+        {
+          url: "https://{deployment}.pvarki.fi",
+          description:
+            "Your Deploy App deployment. The host is assigned per installation; " +
+            "replace {deployment} with your instance's hostname.",
+          variables: {
+            deployment: {
+              default: "your-deployment",
+              description:
+                "Deployment hostname prefix assigned to your Deploy App instance.",
+            },
+          },
+        },
+      ],
+    },
   },
 ];
 

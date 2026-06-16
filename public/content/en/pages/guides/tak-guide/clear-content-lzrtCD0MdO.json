@@ -6,33 +6,23 @@
   "locale": "en",
   "title": "Clear Content",
   "breadcrumb": [
-    "TAK Clients",
+    "Platforms",
     "ATAK",
-    "Basic Features",
+    "Basic Core Features",
     "Clear Content"
   ],
   "createdAt": "2026-01-24T12:18:25.164Z",
-  "updatedAt": "2026-02-28T11:13:25.165Z",
+  "updatedAt": "2026-06-15T19:39:13.557Z",
   "headings": [],
   "blocks": [
     {
-      "type": "html",
-      "html": "<h1 id=\"clearing-content\"><a href=\"#clearing-content\">Clearing Content</a></h1>"
-    },
-    {
       "type": "slideset",
-      "source": "legacy",
+      "source": "canonical",
       "slides": [
-        {
-          "title": "ATAK Saves to your Device",
-          "layout": "text",
-          "html": "<ul>\n<li>All map items you've created in ATAK or received as data packages are stored in your device.</li>\n</ul>",
-          "images": []
-        },
         {
           "title": "1. Clearing Content",
           "layout": "image-bottom",
-          "html": "<ul>\n<li>Clear content in ENDEX to maintain sanity and avoid accumulating data (opsec). To do so, tap the trashcan icon in the main menu.</li>\n</ul>",
+          "html": "<ul>\n<li>All map items you've created in ATAK or received as data packages are stored in your device.</li>\n<li>Clear content in ENDEX to maintain sanity and avoid accumulating data (opsec).</li>\n<li>To do so, tap the <strong>Trashcan icon</strong> in the main menu.</li>\n</ul>",
           "images": [
             {
               "src": "/content/images/en/attachments/802490de29695a84.webp",
@@ -58,6 +48,30 @@
           "layout": "text",
           "html": "<ul>\n<li>Clear Content empties everything and closes the app. Done!</li>\n</ul>",
           "images": []
+        },
+        {
+          "title": "Lock Both Switches to Wipe",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Swipe both switches to the right until they read <strong>LOCKED</strong>; this arms the red <strong>Clear Now</strong> button.</li>\n<li>Tick <strong>Clear maps &#x26; imagery</strong> first if you also want offline maps removed. ATAK exits once the wipe finishes.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/788bec790a8247dc.webp",
+              "width": 249,
+              "height": 169
+            }
+          ]
+        },
+        {
+          "title": "Delete Only Some Items",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Instead of wiping everything, tap <strong>Select Items</strong> to open the Overlay Manager multi-select tool and pick exactly what to remove.</li>\n<li>Tap <strong>Cancel</strong> to back out to the map. Deleted file data is corrupted on disk, so recovery is not possible.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/c7f82fa573862bd0.webp",
+              "width": 250,
+              "height": 170
+            }
+          ]
         }
       ]
     }

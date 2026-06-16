@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 1,
+  "id": "c588cbd2-a6fb-48d6-842f-6920707f82d3",
+  "slug": "sending-a-marker-tbLPq64DLE",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "Sending a Marker",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "Basic Core Features",
+    "Sending a Marker"
+  ],
+  "createdAt": "2026-06-14T10:36:11.851Z",
+  "updatedAt": "2026-06-16T10:12:54.991Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Sending Markers",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Unless you explicitly send Map Markers, they exist only <strong>in your device.</strong></li>\n<li>Send markers by tapping a marker and selecting the <strong>Details</strong> icon and</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/065beedcc732fe61.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Hit Send to see sending options",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>The <strong>SEND button</strong> in bottom left lets you send your markers.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/16f13f5fd95b46ee.webp",
+              "width": 1080,
+              "height": 2340
+            }
+          ]
+        },
+        {
+          "title": "Sending options",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>You can send markers directly to Feeds, GeoChat Groups, Roles, Teams (people with same marker color than you) and individuals.</li>\n<li>The OpenDefence standard model for TAK recommends to send recon markers such as this <strong>to a role -> HQ</strong> (as shown in the pic) or an Observations feed.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/13ed3f60a7fb002f.webp",
+              "width": 1080,
+              "height": 2340
+            }
+          ]
+        },
+        {
+          "title": "Who receives?",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Sending to Feeds disseminate your marker to all feed subscribers.</li>\n<li>Sending to Role sends it all bearers of that role.</li>\n</ul>\n<p>The marker in the image, sent to the HQ role, will end up for the Command Post's people to be analyzed.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/224048abc6268778.webp",
+              "width": 1290,
+              "height": 2796
+            }
+          ]
+        },
+        {
+          "title": "Receiving a Marker",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>In this example pic, a HQ-role Command Post user has just received the symbol we sent them earlier, and is now adding it to the <strong>Recon Feed</strong> for everybody to see.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/0348a5da252e244d.webp",
+              "width": 1080,
+              "height": 2340
+            }
+          ]
+        },
+        {
+          "title": "Feeds are the best tool to share markers",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Sending markers to users will clog up their maps quickly.</li>\n<li>The best way is to either add markers directly to a feed...</li>\n<li>...or as our Standard Model instructs, to first send them to the CP who owns the quality of the RECON feed so everything you read from there is cuated.</li>\n</ul>\n<p>Our freshly added marker from Blue43 is here seen in the RECON feed.</p>\n<p>After understandig RECON feed, continue to</p>\n<p>Read more about RECON feed at TAK Wiki <a href=\"/doc/bf3416b5-d2ca-4dc6-89a2-b48cfca69618\">Takserver RECON feed</a></p>\n<p>Read more about Forwarding observations to Command Post at TAK WIKI <a href=\"/doc/58a46804-6639-4b5e-a7c0-3056309cb411\">Forwarding Observations</a></p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/22ab27310be30c0d.webp",
+              "width": 1080,
+              "height": 2340
+            }
+          ]
+        },
+        {
+          "title": "Open the marker radial",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Tap a marker to bring up its radial menu.</li>\n<li>Pick <strong>Details</strong> to edit it, or <strong>Fine Adjust</strong> and <strong>Polar Coordinates</strong> to refine its position.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/00c599f6b62e304e.webp",
+              "width": 256,
+              "height": 198
+            }
+          ]
+        },
+        {
+          "title": "Set status and modifiers",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>In <strong>Details</strong>, set the <strong>Status</strong> field (for example <strong>Present/Damaged</strong>) to show a status indicator under the marker.</li>\n<li>Tick <strong>Show Modifiers</strong> to record direction of movement, speed and location, then send the update with <strong>Send</strong> or <strong>Auto Send</strong>.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/029fe4cc0794346f.webp",
+              "width": 349,
+              "height": 198
+            }
+          ]
+        },
+        {
+          "title": "Edit type and affiliation",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Use the marker icon in the top-left of the pane to change the <strong>Affiliation</strong>.</li>\n<li>Select <strong>Type</strong> to choose a more specific category from the list.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/0ace50673d861f2c.webp",
+              "width": 426,
+              "height": 210
+            }
+          ]
+        },
+        {
+          "title": "Fine Adjust to move it precisely",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Select <strong>Fine Adjust</strong> on the radial to nudge the marker into exact placement.</li>\n<li>Long-press <strong>Fine Adjust</strong> to open the sub-radial and type an <strong>MGRS</strong> or coordinate location directly.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/482f1a04596e73be.webp",
+              "width": 256,
+              "height": 192
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

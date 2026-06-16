@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "id": "01270beb-b003-4c46-9b01-3086de69ab94",
+  "slug": "play-a-recording-uLch9lAImn",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "Play a recording",
+  "breadcrumb": [
+    "Platforms",
+    "WinTAK",
+    "Supported Plugins",
+    "TAK Replay",
+    "Play a recording"
+  ],
+  "createdAt": "2026-06-16T10:21:26.006Z",
+  "updatedAt": "2026-06-16T10:21:26.006Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Any saved recording can be replayed in the Timeline Viewer.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Open & play a recording",
+          "layout": "image-bottom",
+          "html": "<p>Select <strong>Open</strong> next to a filename to open the Timeline Viewer at the bottom of the map. It shows the start/end and total time, player speed, current and elapsed time, and a green mark for each event. Chats sent or received during the recording appear in a panel beside the viewer. Select <strong>Play</strong> to start; only events inside the recording region display, at the point in time they occurred.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/e2d23de5da9553f3.webp",
+              "width": 480,
+              "height": 265
+            }
+          ]
+        },
+        {
+          "title": "Control playback speed",
+          "layout": "image-bottom",
+          "html": "<p>Each press of fast-forward or reverse changes the speed up to <strong>64x</strong> or down to <strong>−64x</strong>; a negative speed plays backwards toward the start. Tick <strong>Pan to Map Events</strong> (off by default) to keep replayed events in view as they play.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/7d36a5fcc69c63ce.webp",
+              "width": 448,
+              "height": 81
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

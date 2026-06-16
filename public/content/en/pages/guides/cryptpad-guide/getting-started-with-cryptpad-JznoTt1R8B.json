@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "id": "15e5a59c-784a-4652-b8d2-2f1e91ed65a2",
+  "slug": "getting-started-with-cryptpad-JznoTt1R8B",
+  "collection": "guides/cryptpad-guide",
+  "locale": "en",
+  "title": "Getting started with CryptPad",
+  "breadcrumb": [
+    "Connect to Server",
+    "Getting started with CryptPad"
+  ],
+  "createdAt": "2026-06-15T14:07:43.314Z",
+  "updatedAt": "2026-06-15T17:52:39.856Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>CryptPad is your team's secure, end-to-end encrypted collaboration suite. This guide gets you signed in and creating your first document.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Welcome to CryptPad",
+          "layout": "image-bottom",
+          "html": "<p>CryptPad is a secure, end-to-end encrypted collaboration suite. Your team can create and collaboratively edit documents and share files securely. This Deploy App server runs your team's own, decentralized CryptPad service.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/e71eaeb23b57ae18.webp",
+              "width": 1918,
+              "height": 1111
+            }
+          ]
+        },
+        {
+          "title": "Why CryptPad is secure",
+          "layout": "image-bottom",
+          "html": "<p>CryptPad ensures that not even the server administrator can read your files. You decide who to share with — other users on this Deploy App server also need an invitation from you to read your files.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/8490a8a6267faa7e.webp",
+              "width": 1918,
+              "height": 1111
+            }
+          ]
+        },
+        {
+          "title": "Sign in with Deploy App",
+          "layout": "image-bottom",
+          "html": "<p>CryptPad is integrated with Deploy App's certificate-based authentication. Click <strong>Log in to CryptPad</strong> and you are authenticated automatically using your Deploy App credentials — no separate account or password is needed.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/df5186655c4944a4.webp",
+              "width": 2162,
+              "height": 1346
+            }
+          ]
+        },
+        {
+          "title": "Your CryptPad dashboard",
+          "layout": "image-bottom",
+          "html": "<p>After signing in you see your CryptPad dashboard. From here you can create new documents, access recent files, manage your CryptDrive, and collaborate with team members.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/b26541fcf0a18e34.webp",
+              "width": 1834,
+              "height": 1139
+            }
+          ]
+        },
+        {
+          "title": "Create your first document",
+          "layout": "image-bottom",
+          "html": "<p>Click the <strong>+</strong> button on your dashboard to create a new document. Choose from rich text, code, spreadsheets, kanban boards, presentations, whiteboards, forms, and more. All documents are encrypted automatically.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/940d325323062037.webp",
+              "width": 1827,
+              "height": 1134
+            }
+          ]
+        },
+        {
+          "title": "Share with your team",
+          "layout": "image-bottom",
+          "html": "<p>To share a document, click the share button in the toolbar. Share with specific team members or create a link. Multiple users can edit simultaneously and see each other's changes in real time.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/8207d147e97d7674.webp",
+              "width": 1820,
+              "height": 1133
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

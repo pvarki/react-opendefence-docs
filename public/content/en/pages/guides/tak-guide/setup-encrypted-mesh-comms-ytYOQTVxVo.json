@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "id": "89db3917-f862-4963-94b5-1ea26ae6767c",
+  "slug": "setup-encrypted-mesh-comms-ytYOQTVxVo",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "Setup Encrypted Mesh Comms",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "Supported Plugins",
+    "Radios & Hardware",
+    "Setup Encrypted Mesh Comms"
+  ],
+  "createdAt": "2026-06-15T19:45:19.190Z",
+  "updatedAt": "2026-06-15T21:19:00.420Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Lock down your mesh so only your team can see your position, chat, and data packages. Encrypted devices cannot talk to non-encrypted ones, and vice versa.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Open mesh encryption settings",
+          "layout": "image-bottom",
+          "html": "<p>Go to <strong>Settings</strong> > <strong>Network Preferences</strong> > <strong>Network Connection Preferences</strong> > <strong>Configure AES-256 Mesh Encryption</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/2ba6dcc5a91d311e.webp",
+              "width": 305,
+              "height": 143
+            }
+          ]
+        },
+        {
+          "title": "Generate a key",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Generate Key</strong> to create a new AES-256 encryption key for the team.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/2ba6dcc5a91d311e.webp",
+              "width": 305,
+              "height": 143
+            }
+          ]
+        },
+        {
+          "title": "Name and save the key",
+          "layout": "image-bottom",
+          "html": "<p>Enter a file name (no extension) and select <strong>OK</strong>. The key is saved in the <code>atak/config/prefs</code> folder.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/df3b48cd693a460b.webp",
+              "width": 307,
+              "height": 127
+            }
+          ]
+        },
+        {
+          "title": "Load and share the key",
+          "layout": "image-bottom",
+          "html": "<p>On each device, tap <strong>Load Key</strong> and browse to the key file. Share the same key with everyone before enabling encryption, or preload it onto the devices.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/b1028ed72be7cc9f.webp",
+              "width": 306,
+              "height": 126
+            }
+          ]
+        },
+        {
+          "title": "Revert to unencrypted",
+          "layout": "image-bottom",
+          "html": "<p>To drop encryption and go back to plain mesh traffic, tap <strong>Forget Key</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/2ba6dcc5a91d311e.webp",
+              "width": 305,
+              "height": 143
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

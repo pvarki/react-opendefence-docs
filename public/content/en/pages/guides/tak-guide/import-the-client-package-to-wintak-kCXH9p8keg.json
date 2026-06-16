@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "id": "0d05e733-9d26-46a2-9280-8c0540b05284",
+  "slug": "import-the-client-package-to-wintak-kCXH9p8keg",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "Import the client package to WinTAK",
+  "breadcrumb": [
+    "Platforms",
+    "WinTAK",
+    "START & CONNECT",
+    "Import the client package to WinTAK"
+  ],
+  "createdAt": "2025-12-05T22:05:59.798Z",
+  "updatedAt": "2026-06-16T10:55:54.193Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>With WinTAK installed, open it for the first time and connect it to your unit's TAK server by importing the Client Package you downloaded.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Open WinTAK",
+          "layout": "image-bottom",
+          "html": "<p>Open the <strong>WinTAK</strong> application from the desktop.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/79a6bb8767bf3d58.webp",
+              "width": 88,
+              "height": 114
+            }
+          ]
+        },
+        {
+          "title": "Accept the EULA",
+          "layout": "image-bottom",
+          "html": "<p>After a moment the <strong>Device Setup Wizard</strong> opens. Its first step is to accept the <strong>EULA</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/8e12e26181a305e0.webp",
+              "width": 428,
+              "height": 318
+            }
+          ]
+        },
+        {
+          "title": "Import your Client Package",
+          "layout": "image-bottom",
+          "html": "<p>The wizard asks whether to import a data package — this is your <strong>Client Package</strong> (<code>Name.zip</code>) downloaded from this app's front page. Select <strong>Yes</strong> and point to the Client Package in your downloads.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/2d5fea49b6aeb184.webp",
+              "width": 428,
+              "height": 198
+            }
+          ]
+        },
+        {
+          "title": "Choose an import strategy",
+          "layout": "image-bottom",
+          "html": "<p>After you choose the package and press <strong>Open</strong>, the <strong>Select Import Strategy</strong> window opens.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/ce16efd0433fc825.webp",
+              "width": 428,
+              "height": 270
+            }
+          ]
+        },
+        {
+          "title": "Select UserPreferenceImportStrategy",
+          "layout": "image-bottom",
+          "html": "<p>Select <strong>UserPreferenceImportStrategy</strong> and press <strong>OK</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/69ab4f1ee687b607.webp",
+              "width": 428,
+              "height": 270
+            }
+          ]
+        },
+        {
+          "title": "Choose a map base",
+          "layout": "image-bottom",
+          "html": "<p>The package may include several <strong>map bases</strong>. Choose your preferred one — you can change it later.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/dd8073840bd5be9a.webp",
+              "width": 428,
+              "height": 156
+            }
+          ]
+        },
+        {
+          "title": "Set your callsign",
+          "layout": "image-bottom",
+          "html": "<p>The wizard asks whether to define your callsign. Select <strong>Yes</strong> and enter your <strong>assigned callsign</strong>. It then asks for additional WMS (map) service sources.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/b3cd94ffd6dc7a08.webp",
+              "width": 428,
+              "height": 206
+            }
+          ]
+        },
+        {
+          "title": "Skip extra WMS sources",
+          "layout": "image-bottom",
+          "html": "<p>Extra WMS sources are not needed — clear the boxes and press <strong>OK</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/9e147b44d330b7ba.webp",
+              "width": 428,
+              "height": 276
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

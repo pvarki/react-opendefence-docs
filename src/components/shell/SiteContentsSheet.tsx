@@ -92,7 +92,7 @@ export function SiteContentsSheet({
                           className="flex items-center gap-2 rounded-md px-2 py-1.5 text-sm text-muted-foreground hover:bg-muted hover:text-foreground"
                         >
                           <Braces className="size-3.5" />
-                          API Reference
+                          {t("apiRef.title")}
                         </Link>
                       </li>
                     )}
@@ -105,7 +105,7 @@ export function SiteContentsSheet({
                           className="flex items-center gap-2 rounded-md px-2 py-1.5 text-sm text-muted-foreground hover:bg-muted hover:text-foreground"
                         >
                           <Tag className="size-3.5" />
-                          Releases
+                          {t("releases.title")}
                         </Link>
                       </li>
                     )}

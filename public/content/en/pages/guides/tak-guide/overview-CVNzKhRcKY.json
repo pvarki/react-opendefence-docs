@@ -6,13 +6,13 @@
   "locale": "en",
   "title": "Overview",
   "breadcrumb": [
-    "TAK Clients",
+    "Platforms",
     "ATAK",
-    "Usage by Role",
+    "USAGE BY ROLE",
     "Overview"
   ],
   "createdAt": "2025-12-05T22:06:21.752Z",
-  "updatedAt": "2026-04-12T10:05:02.164Z",
+  "updatedAt": "2026-06-16T12:20:28.018Z",
   "headings": [],
   "blocks": [
     {
@@ -21,43 +21,67 @@
     },
     {
       "type": "slideset",
-      "source": "legacy",
+      "source": "canonical",
       "slides": [
         {
           "title": "OpenDefence Standard Model",
-          "layout": "text",
-          "html": "<ul>\n<li>There are many ways to use TAK</li>\n<li>We offer a thought usage model that aims to deliver value without complexity.</li>\n</ul>",
-          "images": []
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>There are many ways to use TAK. We offer an usage model that delivers value without complexity.</li>\n<li><strong>Goal:</strong> the whole unit is aware of essential events within minutes of the observation.</li>\n<li><strong>Observation data flow:</strong> a fighter observes something reportable, informs their own group, and sends a marker to the <strong>HQ role</strong> (the command post). The command post verifies and interprets it, then publishes it to the <strong>Recon Feed</strong> — which every user is subscribed to.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/26c9f9d12b8a6fac.webp",
+              "width": 2066,
+              "height": 1602
+            }
+          ]
         },
         {
-          "title": "Overview - Fighter Sends",
-          "layout": "text",
-          "html": "<ol>\n<li>GeoChat using COMMAND, RECON, BLUFOR and COMMON Channels</li>\n<li>If applicable, Send recon observations to OBSERVATIONS Feed</li>\n</ol>",
-          "images": []
+          "title": "Using TAK as a Fighter",
+          "layout": "image-bottom",
+          "html": "<ol>\n<li>When you make an observation, create a marker and <strong>send it to the HQ role</strong>.</li>\n<li>Report as ordered.</li>\n<li>Besides sending the marker, make the observation known via other mediums as you've been told to (messaging, eg. using TAK Geochat or Deploy App's Matrix RECON channel).</li>\n</ol>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/a984073033cdf039.webp",
+              "width": 2176,
+              "height": 954
+            }
+          ]
         },
         {
-          "title": "Overview - Fighter Gets",
-          "layout": "text",
-          "html": "<ol start=\"4\">\n<li>Receive the CP-produced RECON Feed to get what we know of the AO</li>\n<li>Receive Mission PLAN Feeds for marching routes, patrol routes, geofence alerts...</li>\n<li>Receive the BLUFOR Feed with eg. approach routes to friendly positions</li>\n</ol>",
-          "images": []
+          "title": "Fighters follow the Feeds…",
+          "layout": "image-bottom",
+          "html": "<ol start=\"3\">\n<li>Follow the <strong>Recon Feed</strong> — your command post (HQ) creates and updates it for your unit.</li>\n<li>It holds the interpreted intelligence situation picture of your unit's observations, including yours.</li>\n</ol>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/9990aa9707a9ab73.webp",
+              "width": 2278,
+              "height": 1014
+            }
+          ]
         },
         {
-          "title": "Overview - Leaders & CP Receive",
-          "layout": "text",
-          "html": "<ol>\n<li>Reports from GeoChat COMMAND, RECON, BLUFOR and COMMON Channels</li>\n<li>Receive SHARE &#x26; OBSERVATION Feed posts to help building the RECON Feed</li>\n<li>Plans &#x26; feeds &#x26; chat from the upper echelons</li>\n</ol>",
-          "images": []
+          "title": "…and Command Post produces them",
+          "layout": "image-bottom",
+          "html": "<ol>\n<li>TAK collects information from the force and distributes it back to them.</li>\n<li><strong>As a command post,</strong> you create the unit's <strong>Feeds</strong> and use the <strong>HQ</strong> team role to receive and interpret fighters' observations.</li>\n<li>To interpret: confirm the observation with its sender, draw conclusions if possible, then add confirmed observations to the <strong>Recon Feed</strong>.</li>\n</ol>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/10ce7a6b98a9baed.webp",
+              "width": 2604,
+              "height": 1012
+            }
+          ]
         },
         {
-          "title": "Overview - Leaders & CP Send",
-          "layout": "text",
-          "html": "<ol start=\"4\">\n<li>Order &#x26; gain information using the Geochat channels</li>\n<li>Build RECON feed for managed picture of our knowledge of the AO</li>\n<li>Create PLAN feeds to describe operations in an area</li>\n<li>Send your unit's approach routes &#x26; important activities to the BLUFOR feed</li>\n</ol>",
-          "images": []
-        },
-        {
-          "title": "Done",
-          "layout": "text",
-          "html": "<ul>\n<li>You can close this guide.</li>\n</ul>",
-          "images": []
+          "title": "Producing the other feeds as the CP",
+          "layout": "image-bottom",
+          "html": "<ol start=\"4\">\n<li>Maintain the <strong>Recon Feed</strong>: send markers to it, update their information, and remove them when the information or situation changes.</li>\n</ol>\n<ul>\n<li>\n<p>The command post produces and curates the other f feeds — <strong>RECON</strong>, <strong>PLAN</strong> and <strong>BLUFOR</strong>.</p>\n<p>\\</p>\n</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/a5b8303c5ef0853c.webp",
+              "width": 2444,
+              "height": 936
+            }
+          ]
         }
       ]
     }

@@ -6,23 +6,23 @@
   "locale": "en",
   "title": "Point Dropper - Quick Pic",
   "breadcrumb": [
-    "TAK Clients",
+    "Platforms",
     "ATAK",
-    "Basic Features",
+    "Basic Core Features",
     "Point Dropper - Quick Pic"
   ],
   "createdAt": "2026-01-24T17:45:22.298Z",
-  "updatedAt": "2026-02-28T11:13:19.176Z",
+  "updatedAt": "2026-06-16T10:13:07.442Z",
   "headings": [],
   "blocks": [
     {
       "type": "slideset",
-      "source": "legacy",
+      "source": "canonical",
       "slides": [
         {
           "title": "1. Take Pics & Share",
           "layout": "image-bottom",
-          "html": "<ul>\n<li>Quick Pic lets you take and share pictures right away. Select the Camera icon to start.</li>\n</ul>",
+          "html": "<ul>\n<li>Quick Pic lets you take and share pictures right away.</li>\n<li>Select the <strong>Camera icon</strong> to start.</li>\n</ul>",
           "images": [
             {
               "src": "/content/images/en/attachments/9109cc5bb272b903.webp",
@@ -34,7 +34,7 @@
         {
           "title": "Camera opens",
           "layout": "image-bottom",
-          "html": "<ul>\n<li>Take image as you wish.</li>\n</ul>",
+          "html": "<ul>\n<li>Take an image as you wish.</li>\n</ul>",
           "images": [
             {
               "src": "/content/images/en/attachments/d6d74241e5e1b0f7.webp",
@@ -46,7 +46,7 @@
         {
           "title": "Fill in Details",
           "layout": "image-bottom",
-          "html": "<ul>\n<li>By tapping the pen icon, you may fill details on the image.</li>\n</ul>",
+          "html": "<ul>\n<li>By tapping the <strong>Pen icon</strong>, you may fill details on the image.</li>\n</ul>",
           "images": [
             {
               "src": "/content/images/en/attachments/9149da436f4c2709.webp",
@@ -58,7 +58,7 @@
         {
           "title": "Filling...",
           "layout": "image-bottom",
-          "html": "<ul>\n<li>Describe as you wish.</li>\n</ul>",
+          "html": "<ul>\n<li>Describe details as you wish.</li>\n</ul>",
           "images": [
             {
               "src": "/content/images/en/attachments/94d9e291cef5c019.webp",
@@ -70,7 +70,7 @@
         {
           "title": "Rename the image",
           "layout": "image-bottom",
-          "html": "<ul>\n<li>By tapping the Edit Name icon, you may rename the image.</li>\n</ul>",
+          "html": "<ul>\n<li>By tapping the <strong>Edit Name icon</strong>, you may rename the image.</li>\n</ul>",
           "images": [
             {
               "src": "/content/images/en/attachments/6c2f87cd6f97b770.webp",
@@ -82,7 +82,7 @@
         {
           "title": "Renaming...",
           "layout": "image-bottom",
-          "html": "<ul>\n<li>Descriptive name is good.</li>\n</ul>",
+          "html": "<ul>\n<li>A descriptive name is recommended.</li>\n</ul>",
           "images": [
             {
               "src": "/content/images/en/attachments/620823070e61033d.webp",
@@ -104,10 +104,28 @@
           ]
         },
         {
-          "title": "Done",
-          "layout": "text",
-          "html": "<ul>\n<li>You can close this guide.</li>\n</ul>",
-          "images": []
+          "title": "Attach a File to a Marker",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Open a marker and select the <strong>Attachments</strong> (paperclip) icon to add an image, video or file.</li>\n<li>Tick <strong>Auto Send</strong> to keep the marker updating to the network roughly every 60 seconds.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/029fe4cc0794346f.webp",
+              "width": 349,
+              "height": 198
+            }
+          ]
+        },
+        {
+          "title": "Review in the Gallery",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Open the <strong>Gallery</strong> tool to browse every media attachment with its file name and linked map item.</li>\n<li>Tap an image, then tap the line at the top to add a caption.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/2782222a4a682e38.webp",
+              "width": 425,
+              "height": 206
+            }
+          ]
         }
       ]
     }

@@ -4,10 +4,58 @@
   "slug": "guides/matrix-guide",
   "items": [
     {
-      "type": "doc",
-      "id": "deploy-app-matrix-ck6FccRX1P",
-      "label": "Deploy App - Matrix",
-      "slug": "deploy-app-matrix-ck6FccRX1P"
+      "type": "toporg",
+      "id": "connect-to-server-UUA0f5AFR5",
+      "label": "Connect to Server",
+      "children": [
+        {
+          "type": "doc",
+          "id": "set-up-element-desktop-tagwindows-tagmacos-taglinux-KspjTxDpoH",
+          "label": "Set up Element",
+          "slug": "set-up-element-desktop-tagwindows-tagmacos-taglinux-KspjTxDpoH",
+          "platforms": [
+            "windows",
+            "macos",
+            "linux"
+          ]
+        },
+        {
+          "type": "doc",
+          "id": "set-up-element-mobile-tagios-tagandroid-QacQsNprmb",
+          "label": "Set up Element",
+          "slug": "set-up-element-mobile-tagios-tagandroid-QacQsNprmb",
+          "platforms": [
+            "ios",
+            "android"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "toporg",
+      "id": "basic-features-jotC7n1wbz",
+      "label": "Basic Features",
+      "children": [
+        {
+          "type": "doc",
+          "id": "messaging-in-matrix-MFNQHEi50M",
+          "label": "Messaging in Matrix",
+          "slug": "messaging-in-matrix-MFNQHEi50M"
+        }
+      ]
+    },
+    {
+      "type": "toporg",
+      "id": "usage-in-unit-yVodEGlu1v",
+      "label": "Usage in Unit",
+      "children": [
+        {
+          "type": "doc",
+          "id": "unit-rooms-organisation-krWteO9e37",
+          "label": "Unit rooms & organisation",
+          "slug": "unit-rooms-organisation-krWteO9e37"
+        }
+      ]
     }
   ]
 }

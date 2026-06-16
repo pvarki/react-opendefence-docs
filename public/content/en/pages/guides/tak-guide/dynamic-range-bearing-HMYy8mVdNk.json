@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "id": "55ca4562-41f2-4a6e-b215-ed5ae29771a2",
+  "slug": "dynamic-range-bearing-HMYy8mVdNk",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "Dynamic Range & Bearing",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "ADDITIONAL FEATURES",
+    "Range & Bearing Tools",
+    "Dynamic Range & Bearing"
+  ],
+  "createdAt": "2026-06-15T19:43:19.220Z",
+  "updatedAt": "2026-06-15T20:53:50.553Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>A range-and-bearing line you can drop, pin in place, and shove around the map as the picture changes — unlike the fixed two-point measure line.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Drop the line",
+          "layout": "image-bottom",
+          "html": "<p>From the Range Tools toolbar, select the <strong>Dynamic R&#x26;B Line</strong> icon. Tap once to place an endpoint, tap again for the second point. The line stays unlocked so you can keep moving it.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/47abd3f788f1958e.webp",
+              "width": 250,
+              "height": 181
+            }
+          ]
+        },
+        {
+          "title": "Pin it in place",
+          "layout": "image-bottom",
+          "html": "<p>Tap the centre of the line and use the <strong>Pin</strong> button on the radial to fix the position. The pinned line shows azimuth and distance and stays put even after the Dynamic R&#x26;B Line is toggled off.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/5987b70235dd5bf6.webp",
+              "width": 244,
+              "height": 68
+            }
+          ]
+        },
+        {
+          "title": "Reposition or open the endpoint radial",
+          "layout": "image-bottom",
+          "html": "<p>To move a pinned line, long press either end and tap a new location. To tune one end precisely, select that end to open the radial, then tap <strong>Fine Adjust</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/c85d0d5788f4f2d3.webp",
+              "width": 331,
+              "height": 183
+            }
+          ]
+        },
+        {
+          "title": "Fine adjust the end",
+          "layout": "image-bottom",
+          "html": "<p>Crosshairs appear over a magnified area. Drag a finger inside it to position the end exactly, then select <strong>Confirm</strong> to accept or <strong>Cancel</strong> to discard.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/09d27cfb477cb9ed.webp",
+              "width": 331,
+              "height": 178
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

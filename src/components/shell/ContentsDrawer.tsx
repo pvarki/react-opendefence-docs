@@ -9,7 +9,11 @@ import {
   DrawerTitle,
 } from "@/components/ui/drawer";
 import { DevDocsNavBody, SidebarItems } from "@/components/shell/SidebarNav";
-import { filterSidebarByClient } from "@/lib/content/neighbors";
+import {
+  filterSidebarByClient,
+  filterSidebarByPlatform,
+} from "@/lib/content/neighbors";
+import { usePlatform } from "@/lib/platform";
 import { usePlatformPicker } from "@/lib/usePlatformPicker";
 import { PlatformList } from "@/components/shell/PlatformList";
 import type { ReaderData } from "@/routes/$locale/$";
@@ -36,6 +40,7 @@ export function ContentsSheet({
 }: ContentsSheetProps) {
   const { t } = useTranslation();
   const [sidebar, setSidebar] = useState<SidebarConfig>();
+  const platform = usePlatform();
   const { options, active, pick, hasClients } = usePlatformPicker(reader);
 
   useEffect(() => {
@@ -51,7 +56,13 @@ export function ContentsSheet({
   }, [reader.contentLocale, reader.collection]);
 
   const items = sidebar
-    ? filterSidebarByClient(sidebar.items, hasClients ? active?.id : undefined)
+    ? filterSidebarByPlatform(
+        filterSidebarByClient(
+          sidebar.items,
+          hasClients ? active?.id : undefined,
+        ),
+        platform,
+      )
     : [];
   const isDev =
     reader.manifest.collections.find((c) => c.slug === reader.collection)
