@@ -1,4 +1,5 @@
 /// <reference types="vitest/config" />
+import { execSync } from "node:child_process";
 import path from "node:path";
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
@@ -11,8 +12,22 @@ import { VitePWA } from "vite-plugin-pwa";
 const base = process.env.BASE_PATH ?? "/";
 const baseRe = base.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 
+// Build stamp shown in the page footer. Date is the build time; commit is the
+// short git SHA (falls back to "dev" outside a git checkout, e.g. CI tarballs).
+const buildDate = new Date().toISOString().slice(0, 10);
+let buildCommit = "dev";
+try {
+  buildCommit = execSync("git rev-parse --short HEAD").toString().trim();
+} catch {
+  // not a git checkout — keep the fallback
+}
+
 export default defineConfig({
   base,
+  define: {
+    __BUILD_DATE__: JSON.stringify(buildDate),
+    __BUILD_COMMIT__: JSON.stringify(buildCommit),
+  },
   plugins: [
     tanstackRouter({ target: "react", autoCodeSplitting: true }),
     react(),

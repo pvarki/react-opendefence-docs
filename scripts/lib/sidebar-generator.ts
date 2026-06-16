@@ -48,8 +48,10 @@ export interface BookPageRef {
   slug: string;
   title: string;
   breadcrumb: string[];
-  /** From the enclosing client organizer or a "#tag:..." title marker. */
+  /** From the enclosing client organizer or a single "#tag:..." title marker. */
   platform?: Platform;
+  /** Set when the title carries several "#tag:..." markers (multi-platform page). */
+  platforms?: Platform[];
   /** Slug of the enclosing client organizer (selector entry). */
   clientId?: string;
   chapterId?: string;
@@ -173,12 +175,26 @@ export function detectPlatform(title: string): Platform | undefined {
   return platformFromTitle(title);
 }
 
-/** Extract the platform chip tag from a raw Outline title, if present. */
+const TAG_RE =
+  /#tag:(android|ios|windows|linux|macos|docker-rasenmaeher-integration|opendefence-k8s)\b/gi;
+
+/**
+ * All platform chip tags on a raw Outline title, de-duped, in order. A page
+ * can carry several (e.g. "Set up Element (desktop) #tag:windows #tag:macos
+ * #tag:linux") to target a group of platforms at once.
+ */
+export function platformsFromTitle(title: string): Platform[] {
+  const out: Platform[] = [];
+  for (const m of title.matchAll(TAG_RE)) {
+    const p = m[1].toLowerCase() as Platform;
+    if (!out.includes(p)) out.push(p);
+  }
+  return out;
+}
+
+/** The first platform chip tag on a raw Outline title, if present. */
 export function platformFromTitle(title: string): Platform | undefined {
-  const match = title.match(
-    /#tag:(android|ios|windows|linux|macos|docker-rasenmaeher-integration|opendefence-k8s)\b/i,
-  );
-  return match ? (match[1].toLowerCase() as Platform) : undefined;
+  return platformsFromTitle(title)[0];
 }
 
 /**
@@ -192,7 +208,14 @@ export function cleanTitle(title: string): string {
 
 function makeDocItem(node: OutlineNavNode): SidebarItem {
   const slug = slugFromUrl(node.url);
-  return { type: "doc", id: slug, label: cleanLabel(node.title), slug };
+  const tags = platformsFromTitle(node.title);
+  return {
+    type: "doc",
+    id: slug,
+    label: cleanLabel(node.title),
+    slug,
+    ...(tags.length > 1 ? { platforms: tags } : {}),
+  };
 }
 
 interface ChapterContext {
@@ -207,13 +230,19 @@ function makePageRef(
   trailTitles: string[],
   ctx: ChapterContext,
 ): BookPageRef {
-  const platform = platformFromTitle(node.title) ?? ctx.platform;
+  // A single tag (or the inherited client platform) sets `platform`; several
+  // tags set `platforms` and target each listed OS — `platform` stays unset so
+  // multi-platform pages aren't pinned to one.
+  const tags = platformsFromTitle(node.title);
+  const platform = tags.length <= 1 ? (tags[0] ?? ctx.platform) : undefined;
+  const platforms = tags.length > 1 ? tags : undefined;
   return {
     docId: node.id,
     slug: slugFromUrl(node.url),
     title: cleanTitle(node.title),
     breadcrumb: trailTitles.map((t) => cleanTitle(t)),
     ...(platform ? { platform } : {}),
+    ...(platforms ? { platforms } : {}),
     ...(ctx.clientId ? { clientId: ctx.clientId } : {}),
     ...(ctx.chapterId
       ? { chapterId: ctx.chapterId, chapterLabel: ctx.chapterLabel }

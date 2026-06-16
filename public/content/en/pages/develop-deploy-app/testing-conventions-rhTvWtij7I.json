@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "id": "73d61828-bb47-418f-8d78-c14a050678a7",
+  "slug": "testing-conventions-rhTvWtij7I",
+  "collection": "develop-deploy-app",
+  "locale": "en",
+  "title": "Testing conventions",
+  "breadcrumb": [
+    "Testing conventions"
+  ],
+  "createdAt": "2026-06-13T13:20:40.036Z",
+  "updatedAt": "2026-06-16T16:47:00.198Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "How the core is tested",
+      "id": "how-the-core-is-tested"
+    },
+    {
+      "depth": 2,
+      "text": "Product integration tests (for contract awareness)",
+      "id": "product-integration-tests-for-contract-awareness"
+    },
+    {
+      "depth": 2,
+      "text": "pre-commit",
+      "id": "pre-commit"
+    },
+    {
+      "depth": 2,
+      "text": "What gates a merge",
+      "id": "what-gates-a-merge"
+    },
+    {
+      "depth": 2,
+      "text": "Related pages",
+      "id": "related-pages"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>The core is exercised by <code>pytest</code> integration tests that run against a real, running stack rather than against mocks alone. Because those tests have side effects on the database, the single most important rule is to start from a clean state. Org-wide rules (branch naming, commit style, the shared CI library) are not repeated here — see <strong>Community &#x26; Standards</strong> in the <strong>Contribute to Project</strong> book.</p>\n<h2 id=\"how-the-core-is-tested\"><a href=\"#how-the-core-is-tested\">How the core is tested</a></h2>\n<p>From the compose repo's <code>README.rst</code> \"Integration tests\" section:</p>\n<ul>\n<li><code>pytest</code> handles the integration tests; their requirements live in <code>tests/requirements.txt</code>.</li>\n<li><strong>The tests have side effects and expect a clean database.</strong> Always tear the composition's volumes down first, then bring it back up, then run the tests.</li>\n</ul>\n<p>The practical sequence on the legacy stack is therefore:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#7F848E;font-style:italic\"># reset persistent volumes, then bring the stack back up</span></span>\n<span class=\"line\"><span style=\"color:#61AFEF\">rmlocal</span><span style=\"color:#98C379\"> down</span><span style=\"color:#D19A66\"> -v</span></span>\n<span class=\"line\"><span style=\"color:#61AFEF\">rmlocal</span><span style=\"color:#98C379\"> build</span><span style=\"color:#D19A66\"> --pull</span></span>\n<span class=\"line\"><span style=\"color:#61AFEF\">rmlocal</span><span style=\"color:#98C379\"> up</span></span>\n<span class=\"line\"><span style=\"color:#7F848E;font-style:italic\"># ... wait for the stack to be healthy, then run pytest against it</span></span></code></pre>",
+      "lang": "bash"
+    },
+    {
+      "type": "html",
+      "html": "<blockquote>\n<p><strong>TODO:</strong> confirm the exact command used to invoke the integration <code>pytest</code> suite against a running stack (e.g. whether it runs on the host from <code>tests/requirements.txt</code> or inside the <code>rmapi</code> container).</p>\n</blockquote>\n<p>Skipping the <code>down -v</code> reset is the most common cause of flaky or false test failures, because leftover users, invite codes, and certificates from a previous run pollute the assertions. See <strong>Iterate on the core API (Docker Compose)</strong> for the full down/up dance and how to switch between <code>rmlocal</code> and <code>rmdev</code> safely.</p>\n<h2 id=\"product-integration-tests-for-contract-awareness\"><a href=\"#product-integration-tests-for-contract-awareness\">Product integration tests (for contract awareness)</a></h2>\n<p>Product integration APIs ship their own <code>pytest</code> suites that assert the callback contract from the other side. The Copier scaffold (<code>pvarki/python-integration-template</code>) and the Matrix reference (<code>pvarki/python-matrix-rmapi</code>) both generate tests under <code>tests/</code> (for example <code>test_crud.py</code>, <code>test_openapi.py</code>) and run them via <code>uv</code> / <code>nox</code> / <code>tox</code> and Docker <code>devel_shell</code> / <code>tox</code> targets. When you change the core's callback behaviour, expect those downstream suites to be the early-warning system — keep the contract documented on <strong>Core APIs &#x26; the rmapi contract</strong> stable.</p>\n<h2 id=\"pre-commit\"><a href=\"#pre-commit\">pre-commit</a></h2>\n<p>The compose repo's <code>README.rst</code> \"pre-commit notes\" section: run <code>pre-commit run --all-files</code> liberally, and make sure you have installed the hooks first:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#61AFEF\">pre-commit</span><span style=\"color:#98C379\"> install</span><span style=\"color:#D19A66\"> --install-hooks</span></span>\n<span class=\"line\"><span style=\"color:#61AFEF\">pre-commit</span><span style=\"color:#98C379\"> run</span><span style=\"color:#D19A66\"> --all-files</span></span></code></pre>",
+      "lang": "bash"
+    },
+    {
+      "type": "html",
+      "html": "<p>If pre-commit complains about missing environment variables, source the example env first:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#56B6C2\">source</span><span style=\"color:#98C379\"> example_env.sh</span></span></code></pre>",
+      "lang": "bash"
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"what-gates-a-merge\"><a href=\"#what-gates-a-merge\">What gates a merge</a></h2>\n<ul>\n<li>CI runs on every push/PR (build + checks). The build badge at the top of the compose <code>README.rst</code> reflects the aggregate build workflow.</li>\n<li>pre-commit / lint must pass.</li>\n<li>Integration tests must pass against a clean database.</li>\n</ul>\n<p>The concrete CI configuration is shared across pvarki repos through <code>pvarki/config-ci-library</code>, and markdown/docs conventions through <code>pvarki/markdown-pvarki-best_practises</code>. Both are documented and linked from <strong>Community &#x26; Standards</strong> in <strong>Contribute to Project</strong> — defer to that page for the authoritative org rules rather than duplicating them here.</p>\n<h2 id=\"related-pages\"><a href=\"#related-pages\">Related pages</a></h2>\n<ul>\n<li><strong>Iterate on the core API (Docker Compose)</strong> — the down/up reset loop in practice.</li>\n<li><strong>Core APIs &#x26; the rmapi contract</strong> — the contract your changes must not silently break.</li>\n<li><strong>Community &#x26; Standards</strong> (Contribute to Project) — branch/commit conventions, <code>config-ci-library</code>, <code>markdown-pvarki-best_practises</code>.</li>\n</ul>"
+    }
+  ]
+}

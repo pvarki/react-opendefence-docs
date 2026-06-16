@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "id": "383899fc-eae8-4556-aafb-d2f0c0d1a86f",
+  "slug": "kanban-boards-U2wuelSn6Z",
+  "collection": "guides/cryptpad-guide",
+  "locale": "en",
+  "title": "Kanban boards",
+  "breadcrumb": [
+    "Basic Features",
+    "Kanban boards"
+  ],
+  "createdAt": "2026-06-15T14:07:55.466Z",
+  "updatedAt": "2026-06-15T17:52:44.963Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>CryptPad's Kanban app is like a board of sticky notes. Arrange tasks by completion stage, or maintain a situation board for your unit.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Create a Kanban board",
+          "layout": "image-bottom",
+          "html": "<p>Click <strong>+</strong> and select <strong>Kanban</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/a2efd8a3607bc944.webp",
+              "width": 1356,
+              "height": 1170
+            }
+          ]
+        },
+        {
+          "title": "Edit the board",
+          "layout": "image-bottom",
+          "html": "<p>Create columns for workflow stages and add cards for tasks. Shown here is an example task-completion tracking board.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/b8949f211da2411e.webp",
+              "width": 1972,
+              "height": 791
+            }
+          ]
+        },
+        {
+          "title": "Manage task cards",
+          "layout": "image-bottom",
+          "html": "<p>Click a card to add details. You can also add images to cards. Drag and drop cards between columns to update their status.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/16b9fe15c2fbec04.webp",
+              "width": 1978,
+              "height": 1026
+            }
+          ]
+        },
+        {
+          "title": "Situation board",
+          "layout": "image-bottom",
+          "html": "<p>The Kanban app can also be used as a situation board. Track units' mission progress, tasks, and the enemy situation in cards, and share your surface picture with the command centre.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/c5fbd98a6a588076.webp",
+              "width": 1805,
+              "height": 1148
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -3,6 +3,7 @@ import type {
   Locale,
   LocaleManifest,
   ManifestPage,
+  Platform,
   SidebarItem,
 } from "@shared/content-schema";
 import type { ReadingView } from "@/lib/platform";
@@ -36,7 +37,9 @@ function pageMatchesView(
 ): boolean {
   if (!view) return true;
   if (page.clientId) return page.clientId === client?.id;
-  // Client-less pages tagged with #tag:<platform> follow the global platform.
+  // Client-less pages tagged with #tag:<platform> follow the global platform —
+  // `platforms` (several tags) matches any listed OS, else the single `platform`.
+  if (page.platforms?.length) return page.platforms.includes(view.platform);
   if (page.platform) return page.platform === view.platform;
   return true;
 }
@@ -164,4 +167,38 @@ export function filterSidebarByClient(
   clientId: string | undefined,
 ): SidebarItem[] {
   return items.filter((i) => !i.clientId || i.clientId === clientId);
+}
+
+/**
+ * Hide doc items that target specific platforms not matching the reader's
+ * platform (multi-`#tag:` pages, e.g. a desktop guide on a phone). Recurses,
+ * dropping groups/toporgs left empty after filtering. Untagged items pass.
+ */
+export function filterSidebarByPlatform(
+  items: SidebarItem[],
+  platform: Platform,
+): SidebarItem[] {
+  const out: SidebarItem[] = [];
+  for (const item of items) {
+    if (
+      item.type === "doc" &&
+      item.platforms?.length &&
+      !item.platforms.includes(platform)
+    ) {
+      continue;
+    }
+    if (item.children) {
+      const children = filterSidebarByPlatform(item.children, platform);
+      if (
+        (item.type === "group" || item.type === "toporg") &&
+        children.length === 0
+      ) {
+        continue;
+      }
+      out.push({ ...item, children });
+    } else {
+      out.push(item);
+    }
+  }
+  return out;
 }

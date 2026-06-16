@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "b36c34b7-4076-4812-b235-f621c6e9a79c",
+  "slug": "documents-1QGExPEBr9",
+  "collection": "guides/cryptpad-guide",
+  "locale": "en",
+  "title": "Documents",
+  "breadcrumb": [
+    "Basic Features",
+    "Documents"
+  ],
+  "createdAt": "2026-06-15T14:07:49.099Z",
+  "updatedAt": "2026-06-15T17:52:43.697Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>CryptPad supports creating and editing Rich Text documents in real time, directly in your browser. Here is how to create, collaborate on, and discuss a document.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Create a document",
+          "layout": "image-bottom",
+          "html": "<p>Click <strong>+</strong> in the dashboard and select <strong>Rich Text</strong>. A new encrypted document is created.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/cd7134912cd62e80.webp",
+              "width": 1830,
+              "height": 1140
+            }
+          ]
+        },
+        {
+          "title": "Real-time collaboration",
+          "layout": "image-bottom",
+          "html": "<p>Write a document simultaneously with others — everyone sees changes as they happen.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/f4b4d7d1028d66b6.webp",
+              "width": 1815,
+              "height": 1143
+            }
+          ]
+        },
+        {
+          "title": "Discuss the document",
+          "layout": "image-bottom",
+          "html": "<p>You can also discuss the document directly inside the document editing view.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/c32f00bcd15e726a.webp",
+              "width": 1821,
+              "height": 1135
+            }
+          ]
+        },
+        {
+          "title": "Other file formats",
+          "layout": "text",
+          "html": "<p>CryptPad doesn't support real-time browser editing of formats such as <code>.docx</code>, but you can share those files on CryptDrive and edit them locally.</p>",
+          "images": []
+        }
+      ]
+    }
+  ]
+}

@@ -9,7 +9,11 @@ import type {
   SidebarItem,
 } from "@shared/content-schema";
 import { loadSidebar } from "@/lib/content/loader";
-import { filterSidebarByClient } from "@/lib/content/neighbors";
+import {
+  filterSidebarByClient,
+  filterSidebarByPlatform,
+} from "@/lib/content/neighbors";
+import { usePlatform } from "@/lib/platform";
 import { cn } from "@/lib/utils";
 
 interface SidebarNavProps {
@@ -35,6 +39,7 @@ export function SidebarNav({
   clientId,
 }: SidebarNavProps) {
   const [sidebar, setSidebar] = useState<SidebarConfig>();
+  const platform = usePlatform();
 
   useEffect(() => {
     let cancelled = false;
@@ -62,7 +67,10 @@ export function SidebarNav({
           {sidebar.label}
         </p>
         <SidebarItems
-          items={filterSidebarByClient(sidebar.items, clientId)}
+          items={filterSidebarByPlatform(
+            filterSidebarByClient(sidebar.items, clientId),
+            platform,
+          )}
           locale={locale}
           collection={collection}
           currentSlug={currentSlug}
@@ -92,23 +100,15 @@ export function SidebarItems({
     <ul className="space-y-0.5">
       {items.map((item) =>
         item.type === "toporg" ? (
-          // A toporg is a section heading grouping chapters — always open,
-          // never a link (META: toporg in Outline).
-          <li key={item.id} className="pt-3 first:pt-0">
-            <p className="px-2 pb-1 text-[11px] font-semibold tracking-widest text-foreground uppercase">
-              {item.label}
-            </p>
-            {item.children && (
-              <SidebarItems
-                items={item.children}
-                locale={locale}
-                collection={collection}
-                currentSlug={currentSlug}
-                onNavigate={onNavigate}
-                defaultOpen={defaultOpen}
-              />
-            )}
-          </li>
+          <SidebarToporg
+            key={item.id}
+            item={item}
+            locale={locale}
+            collection={collection}
+            currentSlug={currentSlug}
+            onNavigate={onNavigate}
+            defaultOpen={defaultOpen}
+          />
         ) : item.type === "group" ? (
           <SidebarGroup
             key={item.id}
@@ -128,7 +128,7 @@ export function SidebarItems({
               className={cn(
                 "block rounded-md px-2 py-1.5 text-sm transition-colors",
                 item.slug === currentSlug
-                  ? "bg-muted font-medium text-primary"
+                  ? "bg-muted font-medium text-foreground"
                   : "text-muted-foreground hover:bg-muted hover:text-foreground",
               )}
             >
@@ -149,6 +149,82 @@ export function SidebarItems({
         ) : null,
       )}
     </ul>
+  );
+}
+
+/** Does the current page live anywhere in this subtree (toporg > group > doc)? */
+function containsSlug(
+  items: SidebarItem[] | undefined,
+  slug?: string,
+): boolean {
+  if (!items || !slug) return false;
+  return items.some((c) => c.slug === slug || containsSlug(c.children, slug));
+}
+
+/**
+ * A toporg is a top-level section grouping chapters (META: toporg in Outline).
+ * Collapsible and orange (primary) to stand apart from chapters/the active
+ * page. Open by default only when it holds chapters directly — sections that
+ * are purely sub-folder containers (e.g. "Additional Features") start collapsed
+ * to keep the tree scannable. The section holding the current page always opens.
+ */
+function SidebarToporg({
+  item,
+  locale,
+  collection,
+  currentSlug,
+  onNavigate,
+  defaultOpen = false,
+}: {
+  item: SidebarItem;
+  locale: string;
+  collection: string;
+  currentSlug?: string;
+  onNavigate?: () => void;
+  defaultOpen?: boolean;
+}) {
+  const hasDirectChapter = !!item.children?.some(
+    (c) => c.type === "doc" || c.type === "link",
+  );
+  const containsCurrent = containsSlug(item.children, currentSlug);
+  const [open, setOpen] = useState(
+    defaultOpen || containsCurrent || hasDirectChapter,
+  );
+
+  // Reveal the section when navigation lands inside it (swipe, search, link).
+  const [prevContains, setPrevContains] = useState(containsCurrent);
+  if (containsCurrent !== prevContains) {
+    setPrevContains(containsCurrent);
+    if (containsCurrent) setOpen(true);
+  }
+
+  return (
+    <li className="pt-3 first:pt-0">
+      <button
+        type="button"
+        onClick={() => setOpen((o) => !o)}
+        aria-expanded={open}
+        className="flex w-full items-center justify-between rounded-md px-2 py-1 text-[11px] font-semibold tracking-widest text-primary uppercase hover:bg-muted"
+      >
+        <span className="truncate">{item.label}</span>
+        <ChevronDown
+          className={cn(
+            "size-3.5 shrink-0 transition-transform",
+            !open && "-rotate-90",
+          )}
+        />
+      </button>
+      {open && item.children && (
+        <SidebarItems
+          items={item.children}
+          locale={locale}
+          collection={collection}
+          currentSlug={currentSlug}
+          onNavigate={onNavigate}
+          defaultOpen={defaultOpen}
+        />
+      )}
+    </li>
   );
 }
 
@@ -184,7 +260,7 @@ function SidebarGroup({
         type="button"
         onClick={() => setOpen((o) => !o)}
         aria-expanded={open}
-        className="flex w-full items-center justify-between rounded-md px-2 py-1.5 text-sm font-medium hover:bg-muted"
+        className="flex w-full items-center justify-between rounded-md px-2 py-1.5 text-sm font-medium text-muted-foreground hover:bg-muted hover:text-foreground"
       >
         {item.label}
         <ChevronDown
@@ -252,12 +328,7 @@ function DevBookGroup({
         type="button"
         onClick={() => setOpen((o) => !o)}
         aria-expanded={open}
-        className={cn(
-          "flex w-full items-center justify-between rounded-md px-2 py-1.5 text-[11px] font-semibold tracking-widest uppercase",
-          isCurrent
-            ? "text-foreground"
-            : "text-muted-foreground hover:text-foreground",
-        )}
+        className="flex w-full items-center justify-between rounded-md px-2 py-1.5 text-[11px] font-semibold tracking-widest text-primary uppercase hover:bg-muted"
       >
         <span className="truncate">{book.label}</span>
         <ChevronDown

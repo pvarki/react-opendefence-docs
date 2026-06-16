@@ -6,25 +6,15 @@
   "locale": "en",
   "title": "Draw & share Plans",
   "breadcrumb": [
-    "TAK Clients",
+    "Platforms",
     "ATAK",
-    "Advanced Features",
+    "Advanced Core Features",
     "Draw & share Plans"
   ],
   "createdAt": "2025-12-05T22:06:22.115Z",
-  "updatedAt": "2026-02-21T11:17:43.549Z",
-  "headings": [
-    {
-      "depth": 2,
-      "text": "ATAK connected to takserver - Draw & share Plans",
-      "id": "atak-connected-to-takserver---draw--share-plans"
-    }
-  ],
+  "updatedAt": "2026-06-16T10:15:20.448Z",
+  "headings": [],
   "blocks": [
-    {
-      "type": "html",
-      "html": "<p>(This tab should not be shown)</p>\n<h1 id=\"atak---draw--share-plans---advanced-features\"><a href=\"#atak---draw--share-plans---advanced-features\">ATAK - Draw &#x26; share Plans - Advanced Features</a></h1>\n<h2 id=\"atak-connected-to-takserver---draw--share-plans\"><a href=\"#atak-connected-to-takserver---draw--share-plans\">ATAK connected to takserver - Draw &#x26; share Plans</a></h2>"
-    },
     {
       "type": "slideset",
       "source": "legacy",

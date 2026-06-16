@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "id": "3984313a-7dd1-46e2-8571-949c99893e8a",
+  "slug": "draw-shapes-graphics-OSECv6soAB",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "Draw Shapes & Graphics",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "Advanced Core Features",
+    "Draw Shapes & Graphics"
+  ],
+  "createdAt": "2026-06-15T19:43:14.006Z",
+  "updatedAt": "2026-06-15T21:18:56.309Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>The Drawing Tools let you mark up the map with shapes, freehand sketches and briefing graphics. Create a shape, then tap it to open its radial menu and <strong>Details</strong>.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Draw a circle or ellipse",
+          "layout": "image-bottom",
+          "html": "<p>Select the <strong>Circle</strong> or <strong>Ellipse</strong> icon, tap the centre, then tap again to set the radius or edge. Open <strong>Details</strong> to set exact radius, rings, colour and line thickness; <strong>Label</strong> and <strong>Center</strong> toggle the on-map markers.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/a0cbee814e6ff8f8.webp",
+              "width": 400,
+              "height": 184
+            }
+          ]
+        },
+        {
+          "title": "Draw a rectangle",
+          "layout": "image-bottom",
+          "html": "<p>Select the <strong>Rectangle</strong> icon, then tap three corners to set width, length and depth. In <strong>Details</strong>, tick <strong>Tactical Overlay</strong> to colour-code the structure: white is the front, black the back.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/41d7528587fa2de7.webp",
+              "width": 480,
+              "height": 233
+            }
+          ]
+        },
+        {
+          "title": "Draw a free-form polygon or polyline",
+          "layout": "image-bottom",
+          "html": "<p>Select the <strong>Free Form</strong> icon and tap to drop each vertex. Tap the first vertex to close a polygon, or select <strong>End Shape</strong> for an open polyline. Use <strong>Undo</strong> to remove the last link.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/8fd4734675824459.webp",
+              "width": 480,
+              "height": 233
+            }
+          ]
+        },
+        {
+          "title": "Sketch freehand with Telestrate",
+          "layout": "image-bottom",
+          "html": "<p>Select the <strong>Telestrate</strong> icon to draw freehand with a finger or stylus; map scrolling is locked while it is on. Select <strong>Undo</strong> to remove the last stroke, or <strong>End</strong> to save the sketch as one multi-polyline.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/149a6b28edd88c00.webp",
+              "width": 482,
+              "height": 212
+            }
+          ]
+        },
+        {
+          "title": "Place briefing graphics",
+          "layout": "image-bottom",
+          "html": "<p>Briefing graphics and tactical symbols are placed like ordinary shapes: pick the symbol type, then draw it on the map. The chosen type is listed in the shape's <strong>Details</strong> panel, where you can change or clear it.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/ca6c525dba920195.webp",
+              "width": 427,
+              "height": 235
+            }
+          ]
+        },
+        {
+          "title": "Add a minimum safe distance zone",
+          "layout": "image-bottom",
+          "html": "<p>On a placed shape, select <strong>Minimum Safe Distance</strong> from its radial menu. Set the <strong>Range</strong> and tick <strong>Enabled</strong> to draw a buffer zone around the shape's border. Save it to <strong>Favorites</strong> with <strong>+</strong> to reuse it on other shapes.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/69b3e54222d145f3.webp",
+              "width": 311,
+              "height": 171
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

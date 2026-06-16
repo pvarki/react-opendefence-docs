@@ -11,7 +11,7 @@
     "Day-2 operations (Docker Compose)"
   ],
   "createdAt": "2026-06-13T13:20:33.926Z",
-  "updatedAt": "2026-06-13T16:12:34.386Z",
+  "updatedAt": "2026-06-16T16:41:48.704Z",
   "headings": [
     {
       "depth": 2,
@@ -25,8 +25,8 @@
     },
     {
       "depth": 2,
-      "text": "Do NOT destroy the volumes",
-      "id": "do-not-destroy-the-volumes"
+      "text": "Do not destroy the volumes unless you need a complete reboot",
+      "id": "do-not-destroy-the-volumes-unless-you-need-a-complete-reboot"
     },
     {
       "depth": 2,
@@ -42,7 +42,7 @@
   "blocks": [
     {
       "type": "html",
-      "html": "<blockquote>\n<p><strong>Run an instance for at most ~3 months.</strong> For safety, we recommend a <strong>maximum deployment time of about three months</strong> per instance. A Deploy App instance's containers are <strong>not meant to be updated during a server's lifetime</strong> — you patch by redeploying a fresh instance, not by maintaining a long-lived one. The model is <strong>one operation, one server</strong>: a new operation gets a new instance. This also minimizes data build-up and configuration drift over time.</p>\n</blockquote>\n<p>Day-2 operations for a Docker Compose Deploy App instance: keeping it patched, understanding its short design lifetime, the one command never to run on a live instance, and backups. All of this is grounded in the legacy <a href=\"https://github.com/pvarki/docker-rasenmaeher-integration\" target=\"_blank\" rel=\"noopener noreferrer\"><code>docker-rasenmaeher-integration</code></a> README. For initial standup see <strong>Deploy with Docker Compose</strong>; for failure modes see <strong>Troubleshooting &#x26; teardown</strong>.</p>\n<h2 id=\"updating-an-instance\"><a href=\"#updating-an-instance\">Updating an instance</a></h2>\n<p>Update the repository, re-sync submodules to the checked-out version, pull the matching images, and recreate the services:</p>"
+      "html": "<blockquote>\n<p><strong>Run an instance for at most ~3 months.</strong> For safety, we recommend a <strong>maximum deployment time of about three months</strong> per instance. A Deploy App instance's containers are <strong>not meant to be updated during a server's lifetime</strong> — you patch by redeploying a fresh instance, not by maintaining a long-lived one. The model is <strong>one operation, one server</strong>: a new operation gets a new instance. This also minimizes data build-up and configuration drift over time.</p>\n</blockquote>\n<p>Day-2 operations for a Docker Compose Deploy App instance: keeping it patched, understanding its short design lifetime, the one command never to run on a live instance, and backups. All of this is grounded in the legacy <a href=\"https://github.com/pvarki/docker-rasenmaeher-integration\" target=\"_blank\" rel=\"noopener noreferrer\"><code>docker-rasenmaeher-integration</code></a> README. For initial standup see <strong>Deploy with Docker Compose</strong>; for failure modes see <strong>Troubleshooting &#x26; teardown</strong>.</p>\n<h2 id=\"updating-an-instance\"><a href=\"#updating-an-instance\">Updating an instance</a></h2>\n<blockquote>\n<p>Note the design intent: there are <strong>no in-place upgrades</strong> in the long-running sense. An instance is meant to be patched by redeploying, and is expected to be refreshed rather than maintained indefinitely.</p>\n<p>If you, however, want try to update, do it the below way.</p>\n</blockquote>\n<p>Update the repository, re-sync submodules to the checked-out version, pull the matching images, and recreate the services:</p>"
     },
     {
       "type": "code",
@@ -51,7 +51,7 @@
     },
     {
       "type": "html",
-      "html": "<p>If you ever cloned or checked out without <code>--recurse-submodules</code>, the <code>git submodule update --init --recursive</code> step also repairs that.</p>\n<p>Note the design intent: there are <strong>no in-place upgrades</strong> in the long-running sense. An instance is meant to be patched by redeploying, and is expected to be refreshed rather than maintained indefinitely.</p>\n<h2 id=\"design-lifetime\"><a href=\"#design-lifetime\">Design lifetime</a></h2>\n<p>A Deploy App instance has a <strong>design lifetime of 1–2 months</strong>, with a recommended operational ceiling of <strong>about 3 months</strong> (see the banner above). The short lifetime is deliberate: it forces instance refreshing, which avoids accumulated maintenance, persistence, and user-management drift.</p>\n<p>If you genuinely need an instance to outlive that window, you can extend the certificate validity — but this is <strong>not recommended and has security implications</strong>. If you do it, <strong>you</strong> take responsibility for reading through all Dockerfiles and compositions to understand exactly how things are built and for applying security updates into the containers yourself.</p>"
+      "html": "<p>If you ever cloned or checked out without <code>--recurse-submodules</code>, the <code>git submodule update --init --recursive</code> step also repairs that.</p>\n<h2 id=\"design-lifetime\"><a href=\"#design-lifetime\">Design lifetime</a></h2>\n<p>A Deploy App instance has a <strong>design lifetime of 1–2 months</strong>, with a recommended operational ceiling of <strong>about 3 months</strong> (see the banner above). The short lifetime is deliberate: it forces instance refreshing, which avoids accumulated maintenance, persistence, and user-management drift.</p>\n<p>If you genuinely need an instance to outlive that window, you can extend the certificate validity — but this is <strong>not recommended and has security implications</strong>. If you do it, <strong>you</strong> take responsibility for reading through all Dockerfiles and compositions to understand exactly how things are built and for applying security updates into the containers yourself.</p>"
     },
     {
       "type": "code",
@@ -60,7 +60,7 @@
     },
     {
       "type": "html",
-      "html": "<p>These set the CFSSL CA and default signing expiry. Leaving them at defaults keeps the instance within its intended short life.</p>\n<h2 id=\"do-not-destroy-the-volumes\"><a href=\"#do-not-destroy-the-volumes\">Do NOT destroy the volumes</a></h2>"
+      "html": "<p>These set the CFSSL CA and default signing expiry. Leaving them at defaults keeps the instance within its intended short life.</p>\n<blockquote>\n<p>Once again: Do not run an instance for time longer that 3 months.</p>\n</blockquote>\n<h2 id=\"do-not-destroy-the-volumes-unless-you-need-a-complete-reboot\"><a href=\"#do-not-destroy-the-volumes-unless-you-need-a-complete-reboot\">Do not destroy the volumes unless you need a complete reboot</a></h2>"
     },
     {
       "type": "code",

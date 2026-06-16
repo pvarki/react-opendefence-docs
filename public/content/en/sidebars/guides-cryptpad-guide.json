@@ -4,10 +4,67 @@
   "slug": "guides/cryptpad-guide",
   "items": [
     {
-      "type": "doc",
-      "id": "deploy-app-cryptpad-AsW96ynevF",
-      "label": "Deploy App - CryptPad",
-      "slug": "deploy-app-cryptpad-AsW96ynevF"
+      "type": "toporg",
+      "id": "connect-to-server-52H4m1TfNt",
+      "label": "Connect to Server",
+      "children": [
+        {
+          "type": "doc",
+          "id": "getting-started-with-cryptpad-JznoTt1R8B",
+          "label": "Getting started with CryptPad",
+          "slug": "getting-started-with-cryptpad-JznoTt1R8B"
+        }
+      ]
+    },
+    {
+      "type": "toporg",
+      "id": "basic-features-BTiSy0beMJ",
+      "label": "Basic Features",
+      "children": [
+        {
+          "type": "doc",
+          "id": "documents-1QGExPEBr9",
+          "label": "Documents",
+          "slug": "documents-1QGExPEBr9"
+        },
+        {
+          "type": "doc",
+          "id": "kanban-boards-U2wuelSn6Z",
+          "label": "Kanban boards",
+          "slug": "kanban-boards-U2wuelSn6Z"
+        },
+        {
+          "type": "doc",
+          "id": "presentations-gWIWMzfeXq",
+          "label": "Presentations",
+          "slug": "presentations-gWIWMzfeXq"
+        }
+      ]
+    },
+    {
+      "type": "toporg",
+      "id": "usage-in-unit-jfKfzdcfOY",
+      "label": "Usage in Unit",
+      "children": [
+        {
+          "type": "doc",
+          "id": "set-up-a-unit-team-acg83EqeNh",
+          "label": "Set up a unit team",
+          "slug": "set-up-a-unit-team-acg83EqeNh"
+        },
+        {
+          "type": "doc",
+          "id": "shared-calendar-uEIsdBqGNk",
+          "label": "Shared calendar",
+          "slug": "shared-calendar-uEIsdBqGNk"
+        },
+        {
+          "type": "doc",
+          "id": "back-up-your-data-xYdkRa1Tms",
+          "label": "Back up your data",
+          "slug": "back-up-your-data-xYdkRa1Tms"
+        }
+      ]
     }
   ]
 }

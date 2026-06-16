@@ -6,13 +6,49 @@
   "locale": "en",
   "title": "Use GeoChat",
   "breadcrumb": [
-    "TAK Clients",
+    "Platforms",
     "WinTAK",
+    "USING WINTAK FEATURES",
     "Basic Features",
     "Use GeoChat"
   ],
   "createdAt": "2025-12-05T22:05:59.366Z",
-  "updatedAt": "2025-12-05T22:05:59.366Z",
+  "updatedAt": "2026-06-15T13:52:58.519Z",
   "headings": [],
-  "blocks": []
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>GeoChat is WinTAK's built-in text messaging. Use it to coordinate with your unit without leaving the map.</p>\n<blockquote>\n<p>Draft: written without screenshots. Add WinTAK GeoChat screenshots when available.</p>\n</blockquote>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Open GeoChat",
+          "layout": "text",
+          "html": "<p>Open <strong>GeoChat</strong> from the WinTAK toolbar. It lists your conversations — all-chat, teams/groups, and individual users.</p>",
+          "images": []
+        },
+        {
+          "title": "Choose who you're messaging",
+          "layout": "text",
+          "html": "<p>Pick the recipient: the whole net (<strong>All Chat Rooms</strong>), a specific <strong>team / group</strong>, or a single <strong>user</strong>. Sending to the right scope keeps the net clean and respects OPSEC.</p>",
+          "images": []
+        },
+        {
+          "title": "Send a message",
+          "layout": "text",
+          "html": "<p>Type your message and send. Keep it short and unambiguous; follow your unit's reporting format and use cover terms for sensitive detail.</p>",
+          "images": []
+        },
+        {
+          "title": "Messages and the map",
+          "layout": "text",
+          "html": "<p>GeoChat is geo-aware — messages can carry a location, and you can jump from a message to the point on the map it refers to. For longer or formatted reporting, use the prescribed messaging tools per your unit's standing orders.</p>",
+          "images": []
+        }
+      ]
+    }
+  ]
 }

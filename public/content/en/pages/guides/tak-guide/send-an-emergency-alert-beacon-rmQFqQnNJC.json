@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "id": "1838e5ce-d7b2-46f8-a10a-0d65c2320ff9",
+  "slug": "send-an-emergency-alert-beacon-rmQFqQnNJC",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "Send an Emergency Alert Beacon",
+  "breadcrumb": [
+    "Platforms",
+    "TAK Tracker - Android",
+    "BASIC FEATURES",
+    "Send an Emergency Alert Beacon"
+  ],
+  "createdAt": "2026-06-16T16:18:16.743Z",
+  "updatedAt": "2026-06-16T16:21:26.673Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>An emergency alert beacon broadcasts your location to every TAK user on the server until you cancel it. You can set one from anywhere.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "See alerts on the map",
+          "layout": "image-bottom",
+          "html": "<p>When any TAK user sets a beacon, the widget in the lower left of their map shows where the alert is in relation to their own marker.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/decf98549e5a40ae.webp",
+              "width": 252,
+              "height": 148
+            }
+          ]
+        },
+        {
+          "title": "Start a beacon and pick a type",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Emergency</strong> on the TAK Tracker toolbar, then choose one of the four buttons:</p>\n<ul>\n<li><strong>911 Alert</strong> — you need assistance now</li>\n<li><strong>Geo-fence Breached</strong> — a boundary was crossed</li>\n<li><strong>Ring the Bell</strong> — call attention to your position</li>\n<li><strong>In Contact</strong> — engaged with the enemy</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/f6db2268289e00d8.webp",
+              "width": 130,
+              "height": 143
+            }
+          ]
+        },
+        {
+          "title": "Slide to confirm",
+          "layout": "image-bottom",
+          "html": "<p>Slide both switches to the right, then tap <strong>OK</strong> to initiate the beacon. It keeps broadcasting across the network until you disable it.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/9f864ee1589a0275.webp",
+              "width": 130,
+              "height": 92
+            }
+          ]
+        },
+        {
+          "title": "Cancel the alert",
+          "layout": "image-bottom",
+          "html": "<p>Tap the lit <strong>Emergency</strong> button again to reopen the window. Choose <strong>Cancel Alert</strong> from the drop-down, slide both switches to the right and tap <strong>OK</strong>. The beacon clears on every TAK device in the network.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/69ec0b3d8d2674a4.webp",
+              "width": 130,
+              "height": 96
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

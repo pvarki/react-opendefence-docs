@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "id": "4fbaeb85-0a5f-42f3-b51d-f0819e1de775",
+  "slug": "chat-with-your-team-y6xwtxc8G9",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "Chat With Your Team",
+  "breadcrumb": [
+    "Platforms",
+    "TAK Tracker - Android",
+    "BASIC FEATURES",
+    "Chat With Your Team"
+  ],
+  "createdAt": "2026-06-16T16:18:11.840Z",
+  "updatedAt": "2026-06-16T16:21:26.224Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>TAK Tracker can send and receive text messages with everyone on the server — ATAK, WinTAK and other TAK Tracker users alike.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Open Chat and send a message",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Chat</strong> on the toolbar to open the messaging window, type your message and send it. Anyone enrolled on the same server can read it and reply.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/f320db307bcbc020.webp",
+              "width": 114,
+              "height": 170
+            }
+          ]
+        },
+        {
+          "title": "Spot unread messages",
+          "layout": "text",
+          "html": "<p>The <strong>Chat</strong> icon shows the number of unread messages in red. Tap it to open the conversation and clear the count.</p>",
+          "images": []
+        }
+      ]
+    }
+  ]
+}

@@ -6,18 +6,44 @@
   "locale": "en",
   "title": "Overview",
   "breadcrumb": [
-    "TAK Clients",
+    "Platforms",
     "WinTAK",
-    "Usage by Role",
+    "USAGE BY ROLE",
     "Overview"
   ],
   "createdAt": "2025-12-05T22:05:58.824Z",
-  "updatedAt": "2026-02-21T14:24:06.369Z",
+  "updatedAt": "2026-06-14T14:30:47.115Z",
   "headings": [],
   "blocks": [
     {
-      "type": "html",
-      "html": "<p>(This tab should not be shown)</p>"
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "The OpenDefence Standard Model",
+          "layout": "text",
+          "html": "<p>There are many ways to use TAK; we offer a thought-through usage model that delivers value without complexity. TAK collects information from the force and distributes it back as shared situational awareness. Two roles carry it: the <strong>fighter</strong> and the <strong>command post (HQ)</strong>.</p>",
+          "images": []
+        },
+        {
+          "title": "Using TAK as a fighter",
+          "layout": "text",
+          "html": "<ul>\n<li>Keep your own position live on the map so others see you (blue force tracking).</li>\n<li>When you make an observation, create a marker and <strong>send it to the HQ role</strong>.</li>\n<li>Follow the <strong>RECON Feed</strong> — your command post creates and maintains it for your unit.</li>\n<li>Report and communicate over the prescribed messaging tools on their channels.</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "Being a command post user",
+          "layout": "text",
+          "html": "<ul>\n<li>Create and maintain the <strong>RECON Feed</strong> for the whole unit: receive observations, process them, and send the processed markers back to the feed.</li>\n<li>Build situational awareness — understand what is happening now, in 6 hours, and in 24 hours.</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "Command Post — continuous tasks",
+          "layout": "text",
+          "html": "<p>The command post continuously, among other things:</p>\n<ul>\n<li><strong>Knows</strong> the force's mission and execution phase to squad and team precision.</li>\n<li><strong>Receives</strong> immediately-reportable matters and periodic situation reports from the force.</li>\n<li><strong>Maintains</strong> a message journal and a numbered intelligence diary.</li>\n<li><strong>Maintains</strong> the information systems, of which TAK is one.</li>\n</ul>\n<p>TAK is just one tool — use it to collect and share information, not to capture your attention.</p>",
+          "images": []
+        }
+      ]
     }
   ]
 }

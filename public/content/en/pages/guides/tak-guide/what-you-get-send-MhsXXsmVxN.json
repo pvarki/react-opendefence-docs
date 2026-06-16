@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "id": "1e44df7f-4908-4672-833a-d482c72b68ef",
+  "slug": "what-you-get-send-MhsXXsmVxN",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "What you get & send",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "USAGE BY ROLE",
+    "Fighter",
+    "What you get & send"
+  ],
+  "createdAt": "2026-06-14T13:34:51.124Z",
+  "updatedAt": "2026-06-16T12:23:41.539Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Overview - Fighter Sends",
+          "layout": "image-bottom",
+          "html": "<ol>\n<li>Send messages using what's ordered in your unit, eg. Matrix or GeoChat. Messages go to COMMAND, RECON, BLUFOR or COMMON depending on your content.</li>\n<li>Send your Markers to HQ role for CP's interpretation.</li>\n<li>If your unit has so ordered, Send recon observations also to the OBSERVATIONS Feed</li>\n</ol>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/a984073033cdf039.webp",
+              "width": 2176,
+              "height": 954
+            }
+          ]
+        },
+        {
+          "title": "Overview - Fighter Gets",
+          "layout": "image-bottom",
+          "html": "<ol start=\"4\">\n<li>\n<p>Receive the CP-produced RECON Feed to get what we know of the AO</p>\n</li>\n<li>\n<p>Receive Mission PLAN Feeds for marching routes, patrol routes, geofence alerts...</p>\n</li>\n<li>\n<p>Receive the BLUFOR Feed with eg. approach routes to friendly positions</p>\n</li>\n<li>\n<p>Monitor the Messaging tool of choice in your unit (Geochat, Matrix or others).</p>\n<p>\\</p>\n</li>\n</ol>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/9990aa9707a9ab73.webp",
+              "width": 2278,
+              "height": 1014
+            }
+          ]
+        },
+        {
+          "title": "How To?",
+          "layout": "text",
+          "html": "<ol>\n<li>The following <strong>Use RECON Feed</strong> guide will instruct you how to send &#x26; receive markers.</li>\n<li>The <strong>Use Geochat for comms</strong> guide will instruct you how to use TAK's Geochat for messaging.</li>\n<li>The <strong>Use Matrix Element for comms</strong> guide will instruct you how to use an app external to TAK, Matrix Element, for messaging. It is the recommended alternative to TAK's Geochat.</li>\n</ol>",
+          "images": []
+        }
+      ]
+    }
+  ]
+}

@@ -6,39 +6,23 @@
   "locale": "en",
   "title": "Blue force tracking",
   "breadcrumb": [
-    "TAK Clients",
+    "Platforms",
     "ATAK",
-    "Basic Features",
+    "Basic Core Features",
     "Blue force tracking"
   ],
   "createdAt": "2025-12-21T10:34:26.068Z",
-  "updatedAt": "2026-02-28T11:12:59.807Z",
-  "headings": [
-    {
-      "depth": 2,
-      "text": "ATAK connected to takserver - Blue force tracking",
-      "id": "atak-connected-to-takserver---blue-force-tracking"
-    }
-  ],
+  "updatedAt": "2026-06-16T12:10:36.174Z",
+  "headings": [],
   "blocks": [
-    {
-      "type": "html",
-      "html": "<h1 id=\"atak---blue-force-tracking---basic-use\"><a href=\"#atak---blue-force-tracking---basic-use\">ATAK - Blue force tracking - Basic use</a></h1>\n<h2 id=\"atak-connected-to-takserver---blue-force-tracking\"><a href=\"#atak-connected-to-takserver---blue-force-tracking\">ATAK connected to takserver - Blue force tracking</a></h2>"
-    },
     {
       "type": "slideset",
       "source": "legacy",
       "slides": [
         {
-          "title": "Blue force tracking",
-          "layout": "text",
-          "html": "<ul>\n<li>The key ATAK feature is automatic blue force tracking.</li>\n</ul>",
-          "images": []
-        },
-        {
-          "title": "Have a GPS and be connected",
+          "title": "Blue Force Tracking",
           "layout": "image-bottom",
-          "html": "<ul>\n<li>ATAK automatically reports locations to server. See others in your server.</li>\n</ul>",
+          "html": "<ul>\n<li>The key ATAK feature is automatic Blue Force Tracking.</li>\n<li>ATAK automatically reports locations to server.</li>\n<li>With this feature, you'll see where your team members are.</li>\n</ul>",
           "images": [
             {
               "src": "/content/images/en/attachments/e0c950f756a2ca75.webp",
@@ -48,9 +32,9 @@
           ]
         },
         {
-          "title": "Don't have a GPS and set manually",
+          "title": "Set your location manually",
           "layout": "image-bottom",
-          "html": "<ul>\n<li>If you don't have GPS, you can set your location manually. Long tap the \"NO GPS\" text.</li>\n</ul>",
+          "html": "<ul>\n<li>If you don't have GPS, you can set your location manually.</li>\n<li>To do so, long tap the <strong>\"NO GPS\"</strong> text.</li>\n</ul>",
           "images": [
             {
               "src": "/content/images/en/attachments/5d03f66cc09c3221.webp",
@@ -62,7 +46,7 @@
         {
           "title": "Move your marker",
           "layout": "image-bottom",
-          "html": "<ul>\n<li>Drag your marker to set your location.</li>\n</ul>",
+          "html": "<ul>\n<li>Drag your marker to set your location.</li>\n<li>Your location is now shown to you and others.</li>\n<li>It will stay here until you move it or you remove your manual location setup.</li>\n</ul>",
           "images": [
             {
               "src": "/content/images/en/attachments/c12b2758017026a4.webp",
@@ -70,12 +54,6 @@
               "height": 1080
             }
           ]
-        },
-        {
-          "title": "Done",
-          "layout": "text",
-          "html": "<ul>\n<li>You can close this guide.</li>\n</ul>",
-          "images": []
         }
       ]
     },

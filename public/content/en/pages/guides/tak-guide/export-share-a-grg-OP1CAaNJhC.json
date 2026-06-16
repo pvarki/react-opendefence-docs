@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "id": "4d26e656-f9b7-4d29-9fee-7052e7b8c45c",
+  "slug": "export-share-a-grg-OP1CAaNJhC",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "Export & share a GRG",
+  "breadcrumb": [
+    "Platforms",
+    "WinTAK",
+    "Supported Plugins",
+    "GRG Builder",
+    "Export & share a GRG"
+  ],
+  "createdAt": "2026-06-16T10:20:40.632Z",
+  "updatedAt": "2026-06-16T10:20:40.632Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>When the GRG is ready, export it as a file or send it straight to your team.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Export the GRG",
+          "layout": "image-bottom",
+          "html": "<p>Select the <strong>Export</strong> icon and choose <strong>Export as KMZ</strong> or <strong>Export as JSON</strong>. The file is saved to <strong>Documents > WinTAK > Export</strong> by default.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/3b41a437e4a2a2f7.webp",
+              "width": 225,
+              "height": 96
+            }
+          ]
+        },
+        {
+          "title": "Send a GRG & set preferences",
+          "layout": "text",
+          "html": "<p>If you exported as JSON, select <strong>Send GRG</strong> on the GRG Builder panel to send it to contacts. To clear everything placed this session, use <strong>Delete</strong> at the top of the panel. Configure <strong>Auto Import GRG</strong>, the JSON directory and <strong>Set GRG Spacing Intervals</strong> under <strong>Edit GRG > Edit GRG Components > Open Preferences</strong>.</p>",
+          "images": []
+        }
+      ]
+    }
+  ]
+}

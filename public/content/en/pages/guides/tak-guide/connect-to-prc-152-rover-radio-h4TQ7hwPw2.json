@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 1,
+  "id": "74628bc0-a1eb-4756-972f-54802d81540c",
+  "slug": "connect-to-prc-152-rover-radio-h4TQ7hwPw2",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "Connect to PRC-152 / Rover Radio",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "Supported Plugins",
+    "Radios & Hardware",
+    "Connect to PRC-152 / Rover Radio"
+  ],
+  "createdAt": "2026-06-15T19:46:05.566Z",
+  "updatedAt": "2026-06-15T21:18:59.901Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Wire your phone to a Harris PRC-152 radio and a Rover video downlink so you can talk point-to-point and watch live aircraft video on the map.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Open Radio Controls",
+          "layout": "image-bottom",
+          "html": "<p>Tap the <strong>Radio</strong> icon to open <strong>Radio Controls</strong>. <strong>Harris SA</strong> is the PRC-152 voice and data radio; <strong>Rover</strong> is the ISRV video downlink.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/064a87db54be9c9a.webp",
+              "width": 262,
+              "height": 175
+            }
+          ]
+        },
+        {
+          "title": "Set the PRC-152 cable",
+          "layout": "image-bottom",
+          "html": "<p>Connect the PRC-152 cable, then tap the <strong>Harris SA</strong> gear icon. In <strong>Cable Configuration</strong>, pick your cable (e.g. <strong>PRC-152A Cable</strong>) and tap <strong>OK</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/3e1d2f7bc4f92e4e.webp",
+              "width": 277,
+              "height": 214
+            }
+          ]
+        },
+        {
+          "title": "Connect the PRC-152",
+          "layout": "image-bottom",
+          "html": "<p>Slide the <strong>Harris SA</strong> toggle from <strong>OFF</strong> to <strong>ON</strong>. Once connected, other radios on the same net appear on the map when squelched.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/59dff00e909edf4d.webp",
+              "width": 336,
+              "height": 139
+            }
+          ]
+        },
+        {
+          "title": "Connect the Rover",
+          "layout": "image-bottom",
+          "html": "<p>Slide the <strong>Rover</strong> toggle from <strong>OFF</strong> to <strong>ON</strong>. ATAK scans for a feed; the antenna icon turns green and reads <strong>Connected</strong> when the downlink is live.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/d093929ac08f9981.webp",
+              "width": 357,
+              "height": 164
+            }
+          ]
+        },
+        {
+          "title": "Open Rover Controls",
+          "layout": "image-bottom",
+          "html": "<p>Tap the <strong>Rover</strong> menu item to open <strong>Rover Controls</strong>. The current frequency and waveform show at the top. Use <strong>Scan</strong> and <strong>Next</strong> to step through feeds.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/7c0f821ce387b52b.webp",
+              "width": 243,
+              "height": 253
+            }
+          ]
+        },
+        {
+          "title": "Set frequency and waveform",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Scan</strong> to open <strong>Scan Frequency Range</strong>. Enter a <strong>Start Freq Code</strong> and <strong>End Freq Code</strong>, pick the <strong>Waveform</strong> (e.g. ANALOG, DDL), and tap <strong>OK</strong>, then <strong>Next</strong> to advance.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/e1f84335cbd03acc.webp",
+              "width": 271,
+              "height": 221
+            }
+          ]
+        },
+        {
+          "title": "Watch the video",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Watch</strong> to open the live stream. The video shows the aircraft sensor feed with target grid and coordinates overlaid.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/78f3cbf6f8c0f8f7.webp",
+              "width": 379,
+              "height": 354
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

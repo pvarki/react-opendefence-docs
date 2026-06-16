@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 1,
+  "id": "f0f8ed7c-1ba6-438e-b9b2-196a6ebe4938",
+  "slug": "annotate-style-a-grid-xSjKDtDtsj",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "Annotate & Style a Grid",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "Supported Plugins",
+    "GRG Builder",
+    "Annotate & Style a Grid"
+  ],
+  "createdAt": "2026-06-15T19:51:40.057Z",
+  "updatedAt": "2026-06-15T19:51:40.057Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Once a GRG capture is built, this is where you label it, restyle it and add the markings your team needs before you share it.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Open the GRG edit screen",
+          "layout": "image-bottom",
+          "html": "<p>After processing, the <strong>GRG Capture</strong> edit screen opens. The check boxes on the right turn each feature on or off; tapping a feature's name opens its editor. Drag the info box or point list to reposition them.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/d3c379fd34f9f723.webp",
+              "width": 783,
+              "height": 464
+            }
+          ]
+        },
+        {
+          "title": "Restyle the grid",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Edit Grid</strong> to set <strong>Label Style</strong> (<strong>MGRS</strong>, <strong>Letter/Number</strong> or <strong>Both</strong>), grid <strong>Color</strong> and <strong>Spacing</strong>. Toggle <strong>Show Labels</strong> and <strong>Additional Labels</strong> for multi-page exports.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/02f0b5d4ea0f57fc.webp",
+              "width": 624,
+              "height": 355
+            }
+          ]
+        },
+        {
+          "title": "Manage the point list",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Point List</strong> to set <strong>Text Color</strong> and <strong>Text Align</strong>. Use the eye icon on each point to show or hide it on the capture; the radio buttons move the list's position.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/70d90848f969b8b6.webp",
+              "width": 624,
+              "height": 455
+            }
+          ]
+        },
+        {
+          "title": "Set the crosshair",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Crosshair</strong> to change its <strong>Color</strong>, brightness and <strong>Size</strong>. Keep it readable against your imagery.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/4768f782cb4bb8bb.webp",
+              "width": 800,
+              "height": 366
+            }
+          ]
+        },
+        {
+          "title": "Edit the info box",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Info Box</strong> to set <strong>Title</strong>, <strong>Location</strong>, <strong>Date</strong> and <strong>Classification</strong>, plus <strong>Style</strong> (<strong>Box</strong> or <strong>Banner</strong>) and <strong>Text Align</strong>. Each entry's text color can be set on the right.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/de881fa11c8fe32a.webp",
+              "width": 800,
+              "height": 580
+            }
+          ]
+        },
+        {
+          "title": "Add a compass",
+          "layout": "image-bottom",
+          "html": "<p>Tick the <strong>Compass</strong> box to show it, then tap <strong>Compass</strong> to pick <strong>Style</strong> (<strong>True + Mag</strong> or <strong>Full</strong>) and <strong>Color</strong>. Use <strong>Left</strong> or <strong>Right</strong> to set its side of the grid.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/1e7cdfaa0ed505cc.webp",
+              "width": 800,
+              "height": 364
+            }
+          ]
+        },
+        {
+          "title": "Add a scale bar",
+          "layout": "image-bottom",
+          "html": "<p>Tick the scale bar box, then tap <strong>Scale Bar</strong> to set <strong>Style</strong> (<strong>Map Range</strong> or <strong>Cell Range</strong>), <strong>Unit</strong>, <strong>Size</strong> and <strong>Segment every</strong>. Tap <strong>Save</strong> on the edit screen to keep your changes.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/c130c90a2d0b9a87.webp",
+              "width": 800,
+              "height": 486
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

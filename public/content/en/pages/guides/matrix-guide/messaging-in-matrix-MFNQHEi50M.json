@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "id": "7976ded4-1ccf-485b-8f40-a54cfd146c83",
+  "slug": "messaging-in-matrix-MFNQHEi50M",
+  "collection": "guides/matrix-guide",
+  "locale": "en",
+  "title": "Messaging in Matrix",
+  "breadcrumb": [
+    "Basic Features",
+    "Messaging in Matrix"
+  ],
+  "createdAt": "2026-06-15T14:06:52.989Z",
+  "updatedAt": "2026-06-15T17:52:31.351Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Element covers all your messaging needs — text, voice messages, calls and video. Here is what you can do once you are signed in.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Messaging in Element",
+          "layout": "image-bottom",
+          "html": "<p>Element supports text messages, voice messages, voice and video calls, and video conferences. These work in any room or direct message conversation.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/058da610d673915a.webp",
+              "width": 2134,
+              "height": 1354
+            }
+          ]
+        },
+        {
+          "title": "Space and rooms",
+          "layout": "image-bottom",
+          "html": "<p>You automatically join this server's Space as a member. The Space includes all server members and has pre-created rooms, so you can start communicating right away.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/5622ffc866250369.webp",
+              "width": 2140,
+              "height": 1356
+            }
+          ]
+        },
+        {
+          "title": "Messaging in rooms",
+          "layout": "image-bottom",
+          "html": "<p>Send messages in any room or start a direct message with other members. You can also create new rooms that are either discoverable by all Space members or join-by-invitation only.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/d610ca2877e8006f.webp",
+              "width": 2132,
+              "height": 1346
+            }
+          ]
+        },
+        {
+          "title": "Voice and video calls",
+          "layout": "image-bottom",
+          "html": "<p>Start a voice or video call directly from any room or direct message — convenient for quick conversations without setting up a meeting.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/38ff9ddc1744c800.webp",
+              "width": 1906,
+              "height": 1356
+            }
+          ]
+        },
+        {
+          "title": "Group video call",
+          "layout": "image-bottom",
+          "html": "<p>Element supports high-quality group video calls in rooms — fully equivalent to Microsoft Teams, Skype, or other similar services.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/ea3d84d1cd630aba.webp",
+              "width": 2140,
+              "height": 1360
+            }
+          ]
+        },
+        {
+          "title": "Encryption",
+          "layout": "image-bottom",
+          "html": "<p>A key feature of Matrix is strong end-to-end encryption: outsiders — including the server itself — cannot access your private messages or group messages.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/878eba1d705d4ba7.webp",
+              "width": 2254,
+              "height": 1442
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "id": "4017490c-98ea-4ad6-a60a-9e7e728d3ee6",
+  "slug": "track-movement-gps-tracks-ncPNa8dv8K",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "Track Movement (GPS Tracks)",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "ADDITIONAL FEATURES",
+    "Navigation & Coordinates",
+    "Track Movement (GPS Tracks)"
+  ],
+  "createdAt": "2026-06-15T19:45:32.812Z",
+  "updatedAt": "2026-06-15T21:18:58.177Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Record where you have been as a GPS breadcrumb trail, then view, recolour and share that track with your team or a TAK Server.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Start a new track",
+          "layout": "image-bottom",
+          "html": "<p>Open the <strong>Track History</strong> tool to see <strong>Track Details</strong> for your active track. Tap the <strong>Add Track</strong> icon to start a new GPS breadcrumb trail. A GPS position must be established before tracking begins.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/2007ac2a0f34cc8d.webp",
+              "width": 220,
+              "height": 248
+            }
+          ]
+        },
+        {
+          "title": "Name and confirm the track",
+          "layout": "image-bottom",
+          "html": "<p>Keep the default track name or type your own, then tap <strong>OK</strong>. Your location is now recorded as breadcrumbs into the new track file.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/29d539466a9e263f.webp",
+              "width": 220,
+              "height": 101
+            }
+          ]
+        },
+        {
+          "title": "View your past tracks",
+          "layout": "image-bottom",
+          "html": "<p>Open the <strong>Track List</strong> to see tracks saved on the device or pulled from a TAK Server. Tap a track in the list to select it and show it on the map.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/99fb32717d4acbd5.webp",
+              "width": 448,
+              "height": 218
+            }
+          ]
+        },
+        {
+          "title": "Search for a saved track",
+          "layout": "image-bottom",
+          "html": "<p>Tap the <strong>Track Search</strong> icon to find older tracks. Set the callsign and the <strong>Start</strong> and <strong>End</strong> time range, tick <strong>Server Search</strong> to include the server, then tap <strong>Search</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/0f7ebbcfa66cd987.webp",
+              "width": 207,
+              "height": 156
+            }
+          ]
+        },
+        {
+          "title": "Change the track colour",
+          "layout": "image-bottom",
+          "html": "<p>Select the track, then in <strong>Track Details</strong> tap the <strong>Style</strong> colour swatch to recolour it. Use <strong>Arrows</strong> to show direction of travel along the line.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/2007ac2a0f34cc8d.webp",
+              "width": 220,
+              "height": 248
+            }
+          ]
+        },
+        {
+          "title": "Export or share the track",
+          "layout": "image-bottom",
+          "html": "<p>Use the bottom icons to <strong>Export</strong> the track as KML, KMZ, GPX or CSV, or to <strong>Send</strong> it to a TAK Server. Enter a file name, tap <strong>Next</strong>, choose the format, then tap <strong>Done</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/2007ac2a0f34cc8d.webp",
+              "width": 220,
+              "height": 248
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

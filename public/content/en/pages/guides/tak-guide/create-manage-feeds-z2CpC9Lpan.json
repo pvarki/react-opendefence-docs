@@ -6,33 +6,23 @@
   "locale": "en",
   "title": "Create & Manage Feeds",
   "breadcrumb": [
-    "TAK Clients",
+    "Platforms",
     "ATAK",
-    "Advanced Features",
+    "Advanced Core Features",
     "Create & Manage Feeds"
   ],
   "createdAt": "2025-12-05T22:06:22.318Z",
-  "updatedAt": "2026-02-28T11:13:36.157Z",
-  "headings": [
-    {
-      "depth": 2,
-      "text": "ATAK connected to takserver - Create & Manage Feeds",
-      "id": "atak-connected-to-takserver---create--manage-feeds"
-    }
-  ],
+  "updatedAt": "2026-06-15T19:42:22.210Z",
+  "headings": [],
   "blocks": [
     {
-      "type": "html",
-      "html": "<h1 id=\"atak---create--manage-feeds---advanced-features\"><a href=\"#atak---create--manage-feeds---advanced-features\">ATAK - Create &#x26; Manage Feeds - Advanced Features</a></h1>\n<h2 id=\"atak-connected-to-takserver---create--manage-feeds\"><a href=\"#atak-connected-to-takserver---create--manage-feeds\">ATAK connected to takserver - Create &#x26; Manage Feeds</a></h2>"
-    },
-    {
       "type": "slideset",
-      "source": "legacy",
+      "source": "canonical",
       "slides": [
         {
           "title": "Creating Feeds",
           "layout": "image-bottom",
-          "html": "<ul>\n<li>Create feeds for either delivering your Plans or to start a continuous sharing of information.</li>\n<li>Tap the Feed symbol to start.</li>\n</ul>",
+          "html": "<ul>\n<li>Create feeds for either delivering your Plans or to start continuously sharing information.</li>\n<li>Tap the <strong>Feed symbol</strong> to start.</li>\n</ul>",
           "images": [
             {
               "src": "/content/images/en/attachments/c09ee1fb0e31cfa8.webp",
@@ -44,7 +34,7 @@
         {
           "title": "The Datasync Home - Overlay Manager",
           "layout": "image-bottom",
-          "html": "<ul>\n<li>Datasync home shows all the present feeds in servers you've been connected.</li>\n<li>Hit the Plus symbol to create new.</li>\n</ul>",
+          "html": "<ul>\n<li>Datasync home shows all the present feeds in the servers you are connected to.</li>\n<li>Hit the <strong>Plus symbol</strong> to create a new Feed.</li>\n</ul>",
           "images": [
             {
               "src": "/content/images/en/attachments/5f8b389b72416f9b.webp",
@@ -56,7 +46,7 @@
         {
           "title": "Creating a Feed",
           "layout": "image-bottom",
-          "html": "<ul>\n<li>Tap Create feed.</li>\n</ul>",
+          "html": "<ul>\n<li>Tap <strong>Create feed.</strong></li>\n</ul>",
           "images": [
             {
               "src": "/content/images/en/attachments/a7ccff6cbe91f629.webp",
@@ -80,7 +70,7 @@
         {
           "title": "Name your Feed",
           "layout": "image-bottom",
-          "html": "<ul>\n<li>Be descriptive. The example name points out that the feed contains plan for the FRAGO3 Order.</li>\n</ul>",
+          "html": "<ul>\n<li>Be descriptive. The example name points out that the feed contains your plan for the FRAGO3 Order.</li>\n</ul>",
           "images": [
             {
               "src": "/content/images/en/attachments/25d8adf32e029005.webp",
@@ -104,7 +94,7 @@
         {
           "title": "Feed Default Access",
           "layout": "image-bottom",
-          "html": "<ul>\n<li>Choose what suits your purpose the best.</li>\n</ul>",
+          "html": "<ul>\n<li>Choose what best suites your purposes.</li>\n</ul>",
           "images": [
             {
               "src": "/content/images/en/attachments/7c5ef679f81f228b.webp",
@@ -140,14 +130,22 @@
         {
           "title": "New Feed Created!",
           "layout": "text",
-          "html": "<ul>\n<li>Your new feed is now here! If the default role is not Admin, people from your server can now subscribe your feed.</li>\n</ul>",
+          "html": "<ul>\n<li>Your new feed is now here!</li>\n<li>If the default role is not Admin, people from your server can now subscribe your feed.</li>\n</ul>\n<p>After successful testing Create &#x26; Manage Feeds, continue to <a href=\"/doc/2676ebbb-83f4-4569-a7a2-7050395f28c8\">Draw &#x26; share Plans</a></p>\n<p>Korjataan Data Sync Default Role Owner kuvaus:\\nKäyttäjästä tulee oletuksena Admin Data Sync feedille. Tätä ominaisuutta ei suositella käytettäväksi, uusi omistaja voi</p>",
           "images": []
+        },
+        {
+          "title": "Confirm in the Data Sync List",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Reopen Data Sync. Your new feed now appears in the list with its callsign and item count.</li>\n<li>Tap the <strong>eye icon</strong> beside it to toggle visibility on the map.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/c53a9f2ed53348e3.webp",
+              "width": 250,
+              "height": 197
+            }
+          ]
         }
       ]
-    },
-    {
-      "type": "html",
-      "html": "<p>After successful testing Create &#x26; Manage Feeds, continue to <a href=\"/doc/2676ebbb-83f4-4569-a7a2-7050395f28c8\">Draw &#x26; share Plans</a></p>"
     }
   ]
 }

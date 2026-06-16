@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "id": "3cbf6a03-80dd-48d2-891a-fc9ca3bce21c",
+  "slug": "export-a-grid-grg-builder-EcpaE7LkX1",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "Export a Grid (GRG Builder)",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "Supported Plugins",
+    "GRG Builder",
+    "Export a Grid (GRG Builder)"
+  ],
+  "createdAt": "2026-06-15T20:51:18.981Z",
+  "updatedAt": "2026-06-15T20:51:18.981Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Turn your built grid into a file you can share or print, then clean up the map afterwards.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Save the grid",
+          "layout": "image-bottom",
+          "html": "<p>When your edits are done, select <strong>Save</strong> and tick any combination of <strong>KMZ</strong>, <strong>PDF</strong>, <strong>JPEG</strong> or <strong>Settings (JSON)</strong>. <strong>KMZ</strong> with <strong>Flatten map items to image</strong> drops the grid onto the map and into Overlay Manager; <strong>PDF</strong> can <strong>Append to PDF</strong>, <strong>Include geospatial data</strong> or <strong>Create multiple pages</strong>; <strong>JPEG</strong> can <strong>Create multiple images</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/6b6154a9d232b8c0.webp",
+              "width": 800,
+              "height": 519
+            }
+          ]
+        },
+        {
+          "title": "Open capture settings",
+          "layout": "image-bottom",
+          "html": "<p>Select the <strong>Settings</strong> (gear) icon on the toolbar to configure how the GRG is captured.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/c3a51e185c872841.webp",
+              "width": 432,
+              "height": 71
+            }
+          ]
+        },
+        {
+          "title": "Configure the capture",
+          "layout": "image-bottom",
+          "html": "<p>Set <strong>Auto-import GRG capture</strong>, pick a <strong>Resolution</strong> (<strong>Low</strong> or <strong>High</strong>), and enable <strong>Scaled Printable Map</strong> to choose a <strong>Page Size</strong>. Select <strong>Done</strong> to confirm. Note: Scaled Printable Map may limit your GRG customization options.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/4fd7562c0d5d2d61.webp",
+              "width": 800,
+              "height": 481
+            }
+          ]
+        },
+        {
+          "title": "Delete map items",
+          "layout": "image-bottom",
+          "html": "<p>To clear the map items you placed while building the GRG, select <strong>Delete</strong> (trash) from the toolbar.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/565591385cd6d27d.webp",
+              "width": 432,
+              "height": 71
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

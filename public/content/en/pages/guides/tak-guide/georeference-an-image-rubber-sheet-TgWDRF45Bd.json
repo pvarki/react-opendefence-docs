@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "id": "4925e7f6-8e5f-49ed-9432-4f2f5496b02d",
+  "slug": "georeference-an-image-rubber-sheet-TgWDRF45Bd",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "Georeference an Image (Rubber Sheet)",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "ADDITIONAL FEATURES",
+    "Elevation, Terrain & Map Tools",
+    "Georeference an Image (Rubber Sheet)"
+  ],
+  "createdAt": "2026-06-15T19:43:33.845Z",
+  "updatedAt": "2026-06-15T20:53:54.994Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Pin a flat map or sketch onto the live terrain, then stretch and rotate it to line up with the ground so the whole team reads the same picture.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Open the Rubber Sheet tool",
+          "layout": "image-bottom",
+          "html": "<p>Select the <strong>Rubber Sheet</strong> icon to open its toolbar. The toolbar options are <strong>Import</strong>, <strong>Sort</strong>, <strong>Export</strong> and <strong>Search</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/db53ed5d82829bd3.webp",
+              "width": 310,
+              "height": 273
+            }
+          ]
+        },
+        {
+          "title": "Import the 2D image",
+          "layout": "image-bottom",
+          "html": "<p>Pan and zoom the map to where the imagery belongs. Select the <strong>+</strong> icon, pick the image file, then select <strong>OK</strong>. The image lands on the map and is listed under <strong>Rubber Sheets</strong> in <strong>Overlay Manager</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/db53ed5d82829bd3.webp",
+              "width": 310,
+              "height": 273
+            }
+          ]
+        },
+        {
+          "title": "Open the radial menu",
+          "layout": "image-bottom",
+          "html": "<p>Tap the imported image to open its radial menu. From here you can adjust the fit, set <strong>Opacity</strong>, add a <strong>Label</strong>, or open <strong>Details</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/db53ed5d82829bd3.webp",
+              "width": 310,
+              "height": 273
+            }
+          ]
+        },
+        {
+          "title": "Fit it to the ground",
+          "layout": "image-bottom",
+          "html": "<p>Select <strong>Edit</strong> to size, rotate and place the image.</p>\n<ul>\n<li>Drag a corner to resize.</li>\n<li>Drag an edge midpoint to change size and rotation.</li>\n<li>Drag the center to move the whole image.</li>\n</ul>\n<p>Select <strong>Rotate</strong> to spin it with two fingers without changing size. When it lines up, select <strong>End Editing</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/db53ed5d82829bd3.webp",
+              "width": 310,
+              "height": 273
+            }
+          ]
+        },
+        {
+          "title": "Export as KMZ",
+          "layout": "image-bottom",
+          "html": "<p>Select <strong>Export</strong> from the rubber sheet <strong>Details</strong>, or from the <strong>Rubber Sheet</strong> category in <strong>Overlay Manager</strong>, to save it as a KMZ file in the atak/tools/rubbersheet folder. A prompt then offers to re-import it as an image overlay.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/db53ed5d82829bd3.webp",
+              "width": 310,
+              "height": 273
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

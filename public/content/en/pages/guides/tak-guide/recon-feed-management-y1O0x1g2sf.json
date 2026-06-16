@@ -6,26 +6,22 @@
   "locale": "en",
   "title": "RECON Feed Management",
   "breadcrumb": [
-    "TAK Clients",
+    "Platforms",
     "ATAK",
-    "Usage by Role",
+    "USAGE BY ROLE",
     "Command Post",
     "RECON Feed Management"
   ],
   "createdAt": "2026-01-23T21:19:17.944Z",
-  "updatedAt": "2026-02-28T11:14:24.245Z",
+  "updatedAt": "2026-06-14T13:16:24.218Z",
   "headings": [
     {
       "depth": 2,
-      "text": "ATAK connected to takserver - RECON Feed Management",
-      "id": "atak-connected-to-takserver---recon-feed-management"
+      "text": "Pictures:",
+      "id": "pictures"
     }
   ],
   "blocks": [
-    {
-      "type": "html",
-      "html": "<ul>\n<li>Short slideshow on how to manage RECON feed and what does managing help with.</li>\n<li>For instructions on Managing Data Sync Feeds go to <a href=\"/doc/9bb35061-2c64-4718-9273-c11847dfa322\">Create &#x26; Manage Feeds</a></li>\n<li>For Basics of RECON feed go to <a href=\"/doc/c64f9f4e-3647-40a8-b468-20adc6db40c3\">Use RECON Feed</a></li>\n</ul>\n<h1 id=\"atak---recon-feed---command-post-usage-role\"><a href=\"#atak---recon-feed---command-post-usage-role\">ATAK - RECON Feed - Command Post Usage Role</a></h1>\n<h2 id=\"atak-connected-to-takserver---recon-feed-management\"><a href=\"#atak-connected-to-takserver---recon-feed-management\">ATAK connected to takserver - RECON Feed Management</a></h2>"
-    },
     {
       "type": "slideset",
       "source": "legacy",
@@ -33,44 +29,68 @@
         {
           "title": "What is RECON feed",
           "layout": "text",
-          "html": "<ul>\n<li>RECON Feed is automatically created Data Sync feed for Deploy App</li>\n<li>It is used for reviewed and verified intelligence and observations</li>\n<li>Basically the current enemy locations are other critical information</li>\n</ul>",
+          "html": "<ul>\n<li>RECON Feed is automatically created Data Sync feed for Deploy App</li>\n<li>It is used for reviewed and verified intelligence and observations</li>\n<li>Basically the feed is meant to show confirmed neutral or enemy observations.</li>\n</ul>",
           "images": []
         },
         {
           "title": "RECON feed basics",
           "layout": "text",
-          "html": "<ul>\n<li>RECON Feed is meant to be managed by Command Post</li>\n<li>Fighters have read only access to it</li>\n<li>Every user in the Deploy App is subscribed to RECON Feed</li>\n</ul>",
+          "html": "<ul>\n<li>RECON Feed is meant to be managed by Command Post.</li>\n<li>Fighters have read only access to it.</li>\n<li>Every ATAK user in a Deploy App TAK server is automatically subscribed to RECON Feed.\nA readily available &#x26; subscribed Recon Feed is seen here.</li>\n</ul>",
           "images": []
         },
         {
-          "title": "RECON Feed management",
-          "layout": "text",
-          "html": "<ul>\n<li>Command Post users publish and manage information on RECON Feed.</li>\n</ul>",
-          "images": []
+          "title": "RECON Feed updating information 1",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>IMPORTANT PREQUISITE for our model to work: As Command Post, <strong>have your ATAK role set as HQ.</strong></li>\n<li>Fighters send observations to you by <strong>sending to HQ role users</strong>, or via a publicy-editable Observations feed if you have created &#x26; instructed uses such.\nBlue43 here is sending his new Marker to you HQ role.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/13ed3f60a7fb002f.webp",
+              "width": 1080,
+              "height": 2340
+            }
+          ]
         },
         {
-          "title": "xx",
-          "layout": "text",
-          "html": "<ul>\n<li>xx</li>\n</ul>",
-          "images": []
+          "title": "RECON Feed updating information 2",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Command Post Reviews the received information, verifies it and, if needed, forwards relevant info to the RECON Feed.</li>\n<li>CP also keeps track on information on the feed and old, unrelevant information is removed from the feed.\nAn iTAK HQ user acting as CP is seen here adding Blue43's marker to the RECON feed.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/224048abc6268778.webp",
+              "width": 1290,
+              "height": 2796
+            }
+          ]
         },
         {
-          "title": "xx",
-          "layout": "text",
-          "html": "<ul>\n<li>xx</li>\n</ul>",
-          "images": []
+          "title": "RECON Feed updating information 3",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Added information will appear for all users</li>\n<li>Removed information will disappear from the users.\nOur freshly added marker from Blue43 shown from the RECON feed.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/0348a5da252e244d.webp",
+              "width": 1080,
+              "height": 2340
+            }
+          ]
         },
         {
-          "title": "You are now connected",
-          "layout": "text",
-          "html": "<ul>\n<li>You can close this guide.</li>\n</ul>",
-          "images": []
+          "title": "RECON Feed recycling",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Lots of information is placed on the RECON feed during active use and it needs to be recycled to clear out old information.</li>\n<li>Recycling is done by Command Post and Fighters get invited to the new feeds with regular intervals.\nA refreshed RECON feed available is shown here.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/22ab27310be30c0d.webp",
+              "width": 1080,
+              "height": 2340
+            }
+          ]
         }
       ]
     },
     {
       "type": "html",
-      "html": "<p>After successful testing Geofences, continue to</p>\n<p>Read more about RECON feed at TAK Wiki <a href=\"/doc/bf3416b5-d2ca-4dc6-89a2-b48cfca69618\">Takserver RECON feed</a></p>\n<p>Read more about Forwarding observations to Command Post at TAK WIKI <a href=\"/doc/58a46804-6639-4b5e-a7c0-3056309cb411\">Forwarding Observations</a></p>"
+      "html": "<h2 id=\"pictures\"><a href=\"#pictures\">Pictures:</a></h2>\n<ul>\n<li>pic1</li>\n</ul>"
     }
   ]
 }

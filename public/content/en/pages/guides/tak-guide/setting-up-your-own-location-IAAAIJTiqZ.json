@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 1,
+  "id": "7323a242-265a-4e6f-abed-154acfc55924",
+  "slug": "setting-up-your-own-location-IAAAIJTiqZ",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "Setting up your own location",
+  "breadcrumb": [
+    "Platforms",
+    "WinTAK",
+    "USING WINTAK FEATURES",
+    "Basic Features",
+    "Setting up your own location"
+  ],
+  "createdAt": "2025-12-05T22:05:59.668Z",
+  "updatedAt": "2026-06-15T13:52:39.481Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>WinTAK shows you and everyone in your group on one shared map — this is blue force tracking. Here's how to read the map, see your group, and set your own position when your PC has no GPS.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Starting position",
+          "layout": "image-bottom",
+          "html": "<p>If your PC has no GPS, WinTAK starts at the 0/0 coordinates. You'll move the map to your area and set your position manually.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/f4ca39fb2c4570d3.webp",
+              "width": 656,
+              "height": 433
+            }
+          ]
+        },
+        {
+          "title": "Move and zoom the map",
+          "layout": "image-bottom",
+          "html": "<p>Move the map <strong>with the mouse</strong> toward Finland. Zoom with the mouse wheel, the plus/minus keys, or the on-screen buttons.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/e37892a9bd5c9b69.webp",
+              "width": 656,
+              "height": 427
+            }
+          ]
+        },
+        {
+          "title": "Straighten the map",
+          "layout": "image-bottom",
+          "html": "<p>Click the <strong>compass icon (N)</strong> to straighten the map to north-up.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/c779ef046110d795.webp",
+              "width": 656,
+              "height": 427
+            }
+          ]
+        },
+        {
+          "title": "See your group",
+          "layout": "image-bottom",
+          "html": "<p>Other users in your group appear as coloured icons. Each icon's colour is the colour that user set for themselves.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/ed7e71e66c22109c.webp",
+              "width": 184,
+              "height": 134
+            }
+          ]
+        },
+        {
+          "title": "Set your location manually",
+          "layout": "image-bottom",
+          "html": "<p>If your device has no GPS, set your own location: press the <strong>red information field</strong> in the bottom-right corner.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/851482830646f9ec.webp",
+              "width": 428,
+              "height": 156
+            }
+          ]
+        },
+        {
+          "title": "Pick your position",
+          "layout": "image-bottom",
+          "html": "<p>Find your location on the map and click it. Your own marker then appears — and becomes visible to other users.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/e941a2bab03c4da8.webp",
+              "width": 284,
+              "height": 188
+            }
+          ]
+        },
+        {
+          "title": "Change your location",
+          "layout": "image-bottom",
+          "html": "<p>To move yourself later, click your own marker (the <strong>arrow symbol</strong>), then click a new location.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/2adf69f8cfdbb5a9.webp",
+              "width": 428,
+              "height": 120
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

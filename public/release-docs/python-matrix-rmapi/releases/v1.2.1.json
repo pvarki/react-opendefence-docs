@@ -1,0 +1,5 @@
+{
+  "tag": "v1.2.1",
+  "publishedAt": "2026-06-14T13:48:54Z",
+  "html": "<h2 id=\"121-2026-06-14\"><a href=\"#121-2026-06-14\"><a href=\"https://github.com/pvarki/python-matrix-rmapi/compare/v1.2.0...v1.2.1\" target=\"_blank\" rel=\"noopener noreferrer\">1.2.1</a> (2026-06-14)</a></h2>\n<h3 id=\"bug-fixes\"><a href=\"#bug-fixes\">Bug Fixes</a></h3>\n<ul>\n<li>add the missing -local suffix to local build action (why is it not using the common one ??) (<a href=\"https://github.com/pvarki/python-matrix-rmapi/commit/e4d486e5ab55eb514f5230e74705e2cc361fe6e9\" target=\"_blank\" rel=\"noopener noreferrer\">e4d486e</a>)</li>\n</ul>"
+}

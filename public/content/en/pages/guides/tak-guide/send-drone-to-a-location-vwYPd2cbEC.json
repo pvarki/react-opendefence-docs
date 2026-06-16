@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "id": "1007ba39-2dcd-49d4-97a1-7bbe73d4be43",
+  "slug": "send-drone-to-a-location-vwYPd2cbEC",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "Send Drone to a Location",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "Supported Plugins",
+    "UAS Tool",
+    "Send Drone to a Location"
+  ],
+  "createdAt": "2026-06-15T19:49:52.364Z",
+  "updatedAt": "2026-06-15T19:49:52.364Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Push the drone to any point on the map, orbit a target, or have it follow you, all from the Quick Flight Toolbar without building a route.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Open Quick Task",
+          "layout": "image-bottom",
+          "html": "<p>Tap a spot on the map to send the drone there. <strong>Quick Task</strong> opens with the location ready and three options: <strong>Cancel</strong>, <strong>Go Now</strong>, <strong>Orbit</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/c3fe23149220c4cb.webp",
+              "width": 1428,
+              "height": 725
+            }
+          ]
+        },
+        {
+          "title": "Fly there now",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Go Now</strong>. The drone takes off if needed and flies to the point, holding its current altitude (<strong>HAL</strong>, Height Above Launch).</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/c3fe23149220c4cb.webp",
+              "width": 1428,
+              "height": 725
+            }
+          ]
+        },
+        {
+          "title": "Set an exact coordinate",
+          "layout": "image-bottom",
+          "html": "<p>For a precise point, tap the <strong>Selected Coordinate</strong> field and type the grid and altitude. This is more exact than tapping the map.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/c3fe23149220c4cb.webp",
+              "width": 1428,
+              "height": 725
+            }
+          ]
+        },
+        {
+          "title": "Orbit a target",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Orbit</strong> to circle the point and watch it. A window lets you set the orbit radius and speed; then use the sticks to grow or shrink the circle and reverse direction mid-flight.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/c3fe23149220c4cb.webp",
+              "width": 1428,
+              "height": 725
+            }
+          ]
+        },
+        {
+          "title": "Follow Me",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Follow Me</strong> in the UAS Tool. The drone locks onto your ATAK GPS self-marker and keeps the same range and bearing as you move.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/0a863b0a122572b2.webp",
+              "width": 114,
+              "height": 114
+            }
+          ]
+        },
+        {
+          "title": "Set the follow distance",
+          "layout": "image-bottom",
+          "html": "<p>Long press <strong>Follow Me</strong> to open a dialog. There you can pick a different marker to follow and set the stand-off distance.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/0a863b0a122572b2.webp",
+              "width": 114,
+              "height": 114
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

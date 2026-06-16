@@ -19,6 +19,9 @@ const takCollectionId = GUIDE_COLLECTIONS.find(
 const matrixCollectionId = GUIDE_COLLECTIONS.find(
   (c) => c.slug === "guides/matrix-guide",
 )!.collectionId;
+const cryptpadCollectionId = GUIDE_COLLECTIONS.find(
+  (c) => c.slug === "guides/cryptpad-guide",
+)!.collectionId;
 
 export interface PlatformTarget {
   /** Platform/client key used on the CLI (e.g. "android", "atak"). */
@@ -111,6 +114,13 @@ export const PRODUCTS: Record<string, ProductTarget> = {
     key: "matrix",
     label: "Matrix Guide",
     collectionId: matrixCollectionId,
+    // Platform-agnostic: pages hang off the En locale root.
+    platforms: [],
+  },
+  cryptpad: {
+    key: "cryptpad",
+    label: "CryptPad Guide",
+    collectionId: cryptpadCollectionId,
     // Platform-agnostic: pages hang off the En locale root.
     platforms: [],
   },

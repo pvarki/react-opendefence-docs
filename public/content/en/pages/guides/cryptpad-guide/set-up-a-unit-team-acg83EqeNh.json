@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 1,
+  "id": "20fe3087-e09b-4ac2-86ff-f53c0d2f96ec",
+  "slug": "set-up-a-unit-team-acg83EqeNh",
+  "collection": "guides/cryptpad-guide",
+  "locale": "en",
+  "title": "Set up a unit team",
+  "breadcrumb": [
+    "Usage in Unit",
+    "Set up a unit team"
+  ],
+  "createdAt": "2026-06-15T17:20:33.297Z",
+  "updatedAt": "2026-06-15T18:30:03.990Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>This CryptPad instance is unique — it exists only on this Deploy App server. All data stays on your own infrastructure and disappears completely when the server is shut down. The following is a simple, effective way to use CryptPad in your unit: as the person responsible for the command system, start by creating a top-level team.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Create a team for your unit (1/8)",
+          "layout": "image-bottom",
+          "html": "<p>Create a team for your unit in CryptPad. This gives you a shared drive and calendar easily. Start by finding the <strong>Teams</strong> menu in the top-right corner.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/4f152362b1aa2d59.webp",
+              "width": 1464,
+              "height": 832
+            }
+          ]
+        },
+        {
+          "title": "Create a team for your unit (2/8)",
+          "layout": "image-bottom",
+          "html": "<p>The Teams menu shows the CryptPad teams you belong to. Create a new one.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/8bd4aa05a29ed558.webp",
+              "width": 1482,
+              "height": 1050
+            }
+          ]
+        },
+        {
+          "title": "Create a team for your unit (3/8)",
+          "layout": "image-bottom",
+          "html": "<p>Give your team a descriptive name and continue.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/55bdb55717d2c692.webp",
+              "width": 1460,
+              "height": 844
+            }
+          ]
+        },
+        {
+          "title": "Create a team for your unit (4/8)",
+          "layout": "image-bottom",
+          "html": "<p>Your team is created and visible in the teams menu. Continue by clicking your team's icon.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/6265e38fbe94f397.webp",
+              "width": 1440,
+              "height": 1140
+            }
+          ]
+        },
+        {
+          "title": "Create a team for your unit (5/8)",
+          "layout": "image-bottom",
+          "html": "<p>Here you'll find your team's shared drive. Next, navigate to the <strong>Members</strong> menu to create an invitation to your team.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/80ed7c71b542afc3.webp",
+              "width": 1470,
+              "height": 952
+            }
+          ]
+        },
+        {
+          "title": "Create a team for your unit (6/8)",
+          "layout": "image-bottom",
+          "html": "<p>To let others join your team, create an invite link. The image shows our recommended settings. Press <strong>Create link</strong> to generate a shareable invite link.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/66d8c31b2c80943a.webp",
+              "width": 1394,
+              "height": 1156
+            }
+          ]
+        },
+        {
+          "title": "Create a team for your unit (7/8)",
+          "layout": "image-bottom",
+          "html": "<p>Copy the link and share it via your preferred messaging service. The recipient must be on your unit's Deploy App server — without Deploy App's mTLS certificate, your CryptPad cannot be accessed, for security reasons.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/d8d8fb051d38c2ab.webp",
+              "width": 1180,
+              "height": 662
+            }
+          ]
+        },
+        {
+          "title": "Create a team for your unit (8/8)",
+          "layout": "image-bottom",
+          "html": "<p>This is what the joining member's view looks like. After this, they will see your team's shared drive.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/7805443f8bbba537.webp",
+              "width": 1282,
+              "height": 1328
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

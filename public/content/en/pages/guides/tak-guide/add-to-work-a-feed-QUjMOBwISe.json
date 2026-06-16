@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "id": "2e7a61a4-b12a-4179-80d9-a12858290a76",
+  "slug": "add-to-work-a-feed-QUjMOBwISe",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "Add to & Work a Feed",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "Advanced Core Features",
+    "Add to & Work a Feed"
+  ],
+  "createdAt": "2026-06-16T18:02:36.847Z",
+  "updatedAt": "2026-06-16T18:02:36.847Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Once you own or join a feed, the dashboard is where you add content and keep it in sync.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Open the feed dashboard",
+          "layout": "image-bottom",
+          "html": "<p>Tap a feed to open its dashboard. The tools across the top are <strong>Add Items</strong>, <strong>Timeline</strong>, <strong>Download</strong>, <strong>Feed Settings</strong> and <strong>Search</strong>. Items are grouped into <strong>Map Items</strong>, <strong>Photos</strong> and <strong>Files</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/1dca104e83b4b195.webp",
+              "width": 800,
+              "height": 662
+            }
+          ]
+        },
+        {
+          "title": "Add items to a feed",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Add Items</strong>, then choose how to add: <strong>Map Select</strong>, <strong>Overlays</strong>, <strong>File Select</strong> or <strong>User Log</strong>. The same menu has <strong>Invite</strong> (add teammates) and <strong>Geofence</strong> — anyone whose marker crosses a feed's geofence is invited automatically.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/f7be9455c9ab8fce.webp",
+              "width": 800,
+              "height": 415
+            }
+          ]
+        },
+        {
+          "title": "Update shared items",
+          "layout": "image-bottom",
+          "html": "<p>Move or edit a shared item and you're asked to <strong>publish</strong> the change. Changed items show in <strong>red</strong>; tap <strong>Mark Read</strong> to clear them. If two people edit the same item offline, a deconfliction prompt lets you keep the version you want.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/27581627618d5542.webp",
+              "width": 800,
+              "height": 664
+            }
+          ]
+        },
+        {
+          "title": "Delete or unsubscribe a feed",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Delete</strong> on a feed and choose <strong>Unsubscribe</strong> (stop updates, keep content), <strong>Delete local content</strong>, or <strong>Delete from server</strong> (owners only). Slide <strong>both</strong> switches to the locked position, then confirm.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/5e8d16730da02067.webp",
+              "width": 404,
+              "height": 253
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

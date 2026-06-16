@@ -6,70 +6,132 @@
   "locale": "en",
   "title": "Create Routes and use VNS",
   "breadcrumb": [
-    "TAK Clients",
+    "Platforms",
     "ATAK",
-    "Advanced Features",
+    "Advanced Core Features",
     "Create Routes and use VNS"
   ],
   "createdAt": "2026-01-25T09:59:16.310Z",
-  "updatedAt": "2026-02-21T11:17:31.428Z",
-  "headings": [
-    {
-      "depth": 2,
-      "text": "ATAK connected to takserver - Basic view, toolbar, tools",
-      "id": "atak-connected-to-takserver---basic-view-toolbar-tools"
-    }
-  ],
+  "updatedAt": "2026-06-15T19:42:33.761Z",
+  "headings": [],
   "blocks": [
     {
       "type": "html",
-      "html": "<p>(This tab should not be shown)</p>\n<ul>\n<li>Routes with route tool\n<ul>\n<li>Create navigate etc</li>\n</ul>\n</li>\n<li>VNS\n<ul>\n<li>How to download offline regions</li>\n<li>How to use VNS to route with Route tool\n<ul>\n<li>Offline Routes</li>\n<li>Google Routes</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n<h1 id=\"atak---basic-view-toolbar-tools\"><a href=\"#atak---basic-view-toolbar-tools\">ATAK - Basic view, toolbar, tools</a></h1>\n<h2 id=\"atak-connected-to-takserver---basic-view-toolbar-tools\"><a href=\"#atak-connected-to-takserver---basic-view-toolbar-tools\">ATAK connected to takserver - Basic view, toolbar, tools</a></h2>"
+      "html": "<p>The VNS plug-in snaps your routes to real roads and gives you turn-by-turn audio and visual cues, plus on-the-fly re-routing if you go off track.</p>"
     },
     {
       "type": "slideset",
-      "source": "legacy",
+      "source": "canonical",
       "slides": [
         {
-          "title": "Open ATAK",
-          "layout": "text",
-          "html": "<ul>\n<li>Open ATAK application</li>\n</ul>",
-          "images": []
+          "title": "Open the Routes tool",
+          "layout": "image-bottom",
+          "html": "<p>Open the <strong>Routes</strong> tool and select the <strong>+</strong> button to start a new route. With VNS loaded, the Route Planning dialog opens instead of the plain marker dialog.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/d8a37c13a3405e63.webp",
+              "width": 546,
+              "height": 94
+            }
+          ]
         },
         {
-          "title": "Basic view",
-          "layout": "text",
-          "html": "",
-          "images": []
+          "title": "Enter addresses and pick a routing method",
+          "layout": "image-bottom",
+          "html": "<p>Fill in the start, one or more <strong>waypoint</strong> and <strong>destination</strong> fields. Pick <strong>Google Routing</strong>, <strong>Offline Routing</strong> or <strong>Private Routing Server</strong>, tick any <strong>Avoid Ferries / Highways / Tolls</strong> boxes, then select <strong>Create</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/98914f15e152b704.webp",
+              "width": 763,
+              "height": 1475
+            }
+          ]
         },
         {
-          "title": "Basic Toolbar",
-          "layout": "text",
-          "html": "",
-          "images": []
+          "title": "Set each address by hand",
+          "layout": "image-bottom",
+          "html": "<p>Select the <strong>Menu</strong> button beside any address field to choose how to set it: enter via <strong>GoTo</strong>, <strong>map select</strong>, clear the field, or pick a <strong>recent address</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/c5f27427c934e909.webp",
+              "width": 418,
+              "height": 263
+            }
+          ]
         },
         {
-          "title": "Basic Tools 1",
-          "layout": "text",
-          "html": "",
-          "images": []
+          "title": "Route around regions",
+          "layout": "image-bottom",
+          "html": "<p>For offline routing, tick <strong>Route around geofences?</strong> to avoid all geofences, or tick <strong>Route around regions in region manager?</strong> and select <strong>Open Route Around Region Manager</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/18890bc8def202cd.webp",
+              "width": 800,
+              "height": 622
+            }
+          ]
         },
         {
-          "title": "Basic Tools 2",
-          "layout": "text",
-          "html": "",
-          "images": []
+          "title": "Manage the avoidance shapes",
+          "layout": "image-bottom",
+          "html": "<p>Pick existing shapes to route around, add new ones with the <strong>+</strong> button, or remove a shape with its trash icon. Select <strong>Done</strong> when finished.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/fa3c942d53113175.webp",
+              "width": 800,
+              "height": 609
+            }
+          ]
         },
         {
-          "title": "Done",
-          "layout": "text",
-          "html": "<ul>\n<li>You can close this guide.</li>\n</ul>",
-          "images": []
+          "title": "Name, set checkpoints and cues",
+          "layout": "image-bottom",
+          "html": "<p>In the route details you can rename the route, set the <strong>Route Details</strong> type (infil/exfil, primary/secondary), name checkpoints, set a <strong>Navigation Cue</strong> per checkpoint, and <strong>VNS Recalculate</strong> the whole route or a single segment. Select <strong>GO</strong> to start navigating.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/a4b2abaaf7ad6e27.webp",
+              "width": 800,
+              "height": 959
+            }
+          ]
+        },
+        {
+          "title": "VNS-recalculate a manual route",
+          "layout": "image-bottom",
+          "html": "<p>To convert a hand-drawn route, open its details, set it as a driving route in the <strong>Route Details Dropdown</strong>, then select <strong>VNS Recalculate</strong> at the top right for the full route, or on a checkpoint row for just that segment.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/87069ff4e3894237.webp",
+              "width": 800,
+              "height": 284
+            }
+          ]
+        },
+        {
+          "title": "Re-route and Quick Nav safe points",
+          "layout": "image-bottom",
+          "html": "<p>During navigation the <strong>Re-routing</strong> icon turns its border green when enabled, so ATAK recalculates if you go off route. Predefine safe points under <strong>Additional Tools</strong> > <strong>VNS</strong> > <strong>Set Quick Nav Points</strong>, name them with <strong>Add new Quick Nav point</strong>, then tap <strong>Quick Nav</strong> in navigation to route to one.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/2a1bce24cde940fe.webp",
+              "width": 800,
+              "height": 381
+            }
+          ]
+        },
+        {
+          "title": "Download offline routing data",
+          "layout": "image-bottom",
+          "html": "<p>Offline routing and re-routing need a local data set. Go to <strong>Additional Tools</strong> > <strong>VNS</strong> > <strong>Manage Offline Areas</strong>, then select <strong>Download</strong> to pull a data set onto the device or <strong>Delete</strong> to remove one.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/8f29cfaeff23f184.webp",
+              "width": 800,
+              "height": 319
+            }
+          ]
         }
       ]
-    },
-    {
-      "type": "html",
-      "html": "<p>After seeing Basic view, toolbar, tools, continue to <a href=\"/doc/6bf5c875-5082-4f7c-b28c-26b5eea8b0c5\">Blue force tracking</a></p>"
     }
   ]
 }

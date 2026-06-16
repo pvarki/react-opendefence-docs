@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "id": "b4a61c0b-6fce-470b-9770-3ee3f8428b36",
+  "slug": "set-up-element-desktop-tagwindows-tagmacos-taglinux-KspjTxDpoH",
+  "collection": "guides/matrix-guide",
+  "locale": "en",
+  "title": "Set up Element (desktop)",
+  "breadcrumb": [
+    "Connect to Server",
+    "Set up Element (desktop)"
+  ],
+  "createdAt": "2026-06-15T14:06:36.702Z",
+  "updatedAt": "2026-06-15T17:52:25.452Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Set up the Element client on your computer and connect it to your unit's Matrix home server. This guide uses Element, but the steps are similar in any Matrix application. Takes about five minutes.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Welcome to Matrix",
+          "layout": "image-bottom",
+          "html": "<p>This guide uses the Element application, but you can use any Matrix application — the steps are similar elsewhere too.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/5239bfbb830a52b8.webp",
+              "width": 1918,
+              "height": 1113
+            }
+          ]
+        },
+        {
+          "title": "Prerequisites",
+          "layout": "image-bottom",
+          "html": "<p>Copy the home server address (1). You can return to this guide at any time from the bottom-right corner (2).</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/fce8ba119e6c9bf8.webp",
+              "width": 6013,
+              "height": 3525
+            }
+          ]
+        },
+        {
+          "title": "Log in to Element",
+          "layout": "image-bottom",
+          "html": "<p>Open Element and select <strong>Log in</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/7b7808cd50ac49f6.webp",
+              "width": 6006,
+              "height": 3526
+            }
+          ]
+        },
+        {
+          "title": "Edit the home server",
+          "layout": "image-bottom",
+          "html": "<p>Press <strong>Edit</strong> next to the home server address.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/eed18535001dfe59.webp",
+              "width": 6006,
+              "height": 3526
+            }
+          ]
+        },
+        {
+          "title": "Paste the server address",
+          "layout": "image-bottom",
+          "html": "<p>Paste the server address you copied earlier, then press <strong>Continue</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/19d056702ecb3e94.webp",
+              "width": 6006,
+              "height": 3526
+            }
+          ]
+        },
+        {
+          "title": "Authenticate with Keycloak",
+          "layout": "image-bottom",
+          "html": "<p>Press <strong>Continue with Keycloak</strong>. Continue in your browser, which should prompt for your mTLS certificate a few times — authenticate with your mTLS certificate.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/aae0a2dfde68c631.webp",
+              "width": 6006,
+              "height": 3526
+            }
+          ]
+        },
+        {
+          "title": "Element home view",
+          "layout": "image-bottom",
+          "html": "<p>You are now logged in and can use Matrix. View or create Spaces from the sidebar (1), and see or start direct messages from the left panel (2).</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/67b5165ce3509fde.webp",
+              "width": 6013,
+              "height": 3525
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

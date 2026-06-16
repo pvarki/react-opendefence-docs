@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "8f3e9f16-d383-4fa5-990f-22c39afa73ce",
+  "slug": "install-uas-tool-plugin-BDPcnhvDgk",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "Install UAS Tool Plugin",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "Supported Plugins",
+    "UAS Tool",
+    "Install UAS Tool Plugin"
+  ],
+  "createdAt": "2026-06-16T10:22:21.056Z",
+  "updatedAt": "2026-06-16T10:28:43.907Z",
+  "headings": [],
+  "blocks": []
+}

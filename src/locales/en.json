@@ -3,6 +3,7 @@
     "title": "OpenDefence Docs",
     "tagline": "Learn Deploy App and the OpenDefence stack"
   },
+  "docsBuild": "Docs build {{date}} · {{commit}}",
   "nav": {
     "home": "Home",
     "deployApp": "Deploy App",
@@ -11,7 +12,8 @@
     "search": "Search",
     "contents": "Contents",
     "back": "Back",
-    "advanced": "Advanced"
+    "advanced": "Advanced",
+    "breadcrumb": "Breadcrumb"
   },
   "home": {
     "userCard": "I use Deploy App",
@@ -22,7 +24,9 @@
     "devCardDesc": "All you need to run, develop or integrate",
     "continueReading": "Continue reading",
     "powerCard": "I'm a power user",
-    "powerCardDesc": "Use the products in advanced ways"
+    "powerCardDesc": "Use the products in advanced ways",
+    "demoCard": "Try the demo",
+    "demoCardDesc": "See how Deploy App works and feels like"
   },
   "reader": {
     "pageOf": "Page {{current}} of {{total}}",
@@ -46,6 +50,33 @@
     "noResults": "No results",
     "searching": "Searching…"
   },
+  "blocks": {
+    "youtubeTitle": "YouTube video"
+  },
+  "apiRef": {
+    "title": "API Reference",
+    "empty": "No API specs have been synced yet.",
+    "descGuides": "rasenmaeher-api & integration APIs (OpenAPI)",
+    "descDev": "Core rmapi & product integration APIs (OpenAPI)"
+  },
+  "devShelf": {
+    "introduction": "Introduction",
+    "operate": "Operate",
+    "contribute": "Contribute",
+    "integrate": "Integrate"
+  },
+  "releases": {
+    "title": "Releases",
+    "empty": "No releases have been synced yet.",
+    "desc": "Changelogs & release notes per component",
+    "sectionTitle": "API ref & releases",
+    "changelogs": "Changelogs",
+    "underDevelopment": "Under development",
+    "releaseNotes": "Release notes",
+    "notes": "Notes",
+    "changelog": "Changelog",
+    "nothingYet": "Nothing to show here yet."
+  },
   "common": {
     "loading": "Loading…",
     "error": "Something went wrong",
@@ -54,7 +85,8 @@
     "goHome": "Go to home",
     "language": "Language",
     "updateAvailable": "Docs updated",
-    "reload": "Reload"
+    "reload": "Reload",
+    "close": "Close"
   },
   "platform": {
     "label": "Platform",
@@ -79,6 +111,27 @@
     "qualityTitle": "Goal of great quality and security",
     "qualityBody": "Deploy App and all official product integrations must withstand actual war — nothing less. That demands paramount quality, simplicity and reality-based security. We don't develop or release features that fall short of these standards; we'd rather go without them.",
     "siteUnderDev": "Website under development."
+  },
+  "guidesFooter": {
+    "lead": "Deploy App has a number of official product integrations, each currently developed by OpenDefence. Here you can find guides to use the official products efficiently.",
+    "devTitle": "OpenDefence as integration developer",
+    "devBody": "We develop product integrations for Deploy App to give soldiers a strong stack of services. These integrations are open source, just like core Deploy App — and you are invited to collaborate with us.",
+    "wantTitle": "Want to see your product here?",
+    "wantBody": "OpenDefence aims to make Deploy App a true interface for deploying apps to soldiers. That works when you can fork our core, build your integration yourself, and then either contact us for official integration status or agree to deliver your app to your armed-forces customer on our open-source tech.",
+    "products": {
+      "tak": "Developed by the TAK Product Center (TPC), a U.S. Government organization. The OpenDefence-developed integration gets your ATAK users connected to the server by a double-tap self service — yes, press two buttons and you're in.",
+      "matrix": "An open, decentralized messaging protocol from the Matrix.org Foundation; clients such as Element X are spearheaded by New Vector Ltd. The OpenDefence-developed integration lets users connect their Element X client to the Deploy App-bundled Synapse server by simply pasting in the server address.",
+      "mediamtx": "A real-time media server: a video-sharing service that lets you quickly share video from e.g. drone operators. The OpenDefence-developed integration lets you start streaming with your OpenTAK ICU and UAS Tool applications by tapping an import-settings button once.",
+      "cryptpad": "Developed by XWiki SAS, CryptPad is an end-to-end-encrypted collaboration and file-sharing suite used by, among others, the European Commission."
+    }
+  },
+  "devFooter": {
+    "leadBefore": "This developer documentation is maintained by OpenDefence staff. It is ",
+    "leadEmphasis": "currently",
+    "leadAfter": " under rapid development and may contain errors, outages, and other discrepancies."
+  },
+  "advancedFooter": {
+    "lead": "These wikis provide advanced information about products that aim to deepen your understanding on them and their capabilities. They are developed by our community senior experts."
   },
   "contents": {
     "siteTitle": "Contents of the site",

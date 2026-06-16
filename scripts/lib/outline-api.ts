@@ -280,6 +280,11 @@ export class OutlineApiClient {
     await this.post("/collections.delete", { id });
   }
 
+  /** Permanently delete a document (and its children). */
+  async deleteDocument(id: string): Promise<void> {
+    await this.post("/documents.delete", { id });
+  }
+
   /** Replace a document's markdown body (keeps title/position). */
   async updateDocument(
     id: string,
@@ -291,6 +296,11 @@ export class OutlineApiClient {
       text,
       ...(opts.publish !== undefined ? { publish: opts.publish } : {}),
     });
+  }
+
+  /** Rename a document (change its title, leaving the body untouched). */
+  async renameDocument(id: string, title: string): Promise<void> {
+    await this.post("/documents.update", { id, title });
   }
 
   /** Fetch a document's raw markdown body (documents.info `text` field). */

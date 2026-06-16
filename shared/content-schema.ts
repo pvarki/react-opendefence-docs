@@ -237,6 +237,12 @@ export const ManifestPageSchema = z.object({
   hidden: z.boolean().optional(),
   /** Platform this page belongs to; absent = shown on every platform. */
   platform: PlatformSchema.optional(),
+  /**
+   * Platforms this page belongs to when it targets several at once (multiple
+   * `#tag:` markers, e.g. a desktop guide for windows+macos+linux). Takes
+   * precedence over `platform`; absent = fall back to `platform`/all.
+   */
+  platforms: z.array(PlatformSchema).optional(),
   /** Client (selector entry) this page belongs to; absent = all clients. */
   clientId: z.string().optional(),
   /** Chapter (Outline organizer doc) this page belongs to. */
@@ -280,6 +286,8 @@ export interface SidebarItem {
   href?: string;
   /** Items under a client organizer carry its id; the TOC filters by it. */
   clientId?: string;
+  /** Doc items targeting specific platforms (multiple `#tag:` markers); the TOC filters by the reader's platform. */
+  platforms?: Platform[];
   children?: SidebarItem[];
 }
 
@@ -291,6 +299,7 @@ export const SidebarItemSchema: z.ZodType<SidebarItem> = z.lazy(() =>
     slug: z.string().optional(),
     href: z.string().optional(),
     clientId: z.string().optional(),
+    platforms: z.array(PlatformSchema).optional(),
     children: z.array(SidebarItemSchema).optional(),
   }),
 );

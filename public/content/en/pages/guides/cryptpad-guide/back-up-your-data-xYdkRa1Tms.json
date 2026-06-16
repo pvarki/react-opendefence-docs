@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "b058e210-a36e-4f8c-9f7e-86ed6dd2bba9",
+  "slug": "back-up-your-data-xYdkRa1Tms",
+  "collection": "guides/cryptpad-guide",
+  "locale": "en",
+  "title": "Back up your data",
+  "breadcrumb": [
+    "Usage in Unit",
+    "Back up your data"
+  ],
+  "createdAt": "2026-06-15T18:30:12.779Z",
+  "updatedAt": "2026-06-15T18:30:12.779Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>When a mission ends, back up your team's shared CryptDrive so you can carry it to your next Deploy App server — or retire it safely.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Back up your data",
+          "layout": "image-bottom",
+          "html": "<p>From the team's <strong>Settings</strong> menu you can easily back up the team's shared CryptDrive. When your mission ends, take a backup — you can upload it to your next Deploy App CryptPad server or another system as needed. Remember safe data handling!</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/d0659582699d9524.webp",
+              "width": 1460,
+              "height": 1332
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

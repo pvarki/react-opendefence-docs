@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "id": "ac2fb5ae-b907-4e55-abfa-5f478c17a5b5",
+  "slug": "add-features-markers-9dYxguZls8",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "Add features & markers",
+  "breadcrumb": [
+    "Platforms",
+    "WinTAK",
+    "Supported Plugins",
+    "GRG Builder",
+    "Add features & markers"
+  ],
+  "createdAt": "2026-06-16T10:20:36.340Z",
+  "updatedAt": "2026-06-16T10:20:36.340Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Beyond the grid itself, a GRG can carry map references and markers. Open <strong>Edit GRG > Edit GRG Components</strong> and expand each item to add it.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Add a crosshair",
+          "layout": "image-bottom",
+          "html": "<p><strong>Crosshair</strong> places an aiming cross on the grid. Reposition it with <strong>Move Crosshair</strong>, set its color and opacity, and adjust the size. Toggle it with the <strong>Show Crosshair</strong> checkbox.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/a2c1c8ef2e90e531.webp",
+              "width": 192,
+              "height": 95
+            }
+          ]
+        },
+        {
+          "title": "Add an info box",
+          "layout": "image-bottom",
+          "html": "<p><strong>InfoBox</strong> shows a labelled box on the grid. Edit the <strong>Title</strong>, <strong>Location</strong>, <strong>Date</strong> and <strong>Classification</strong> text and their colors; set the Theme, Style, Placement and Text Alignment. Toggle it with the <strong>Show Info Box</strong> checkbox.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/b334153ae9e6eb32.webp",
+              "width": 201,
+              "height": 283
+            }
+          ]
+        },
+        {
+          "title": "Add a scale bar",
+          "layout": "image-bottom",
+          "html": "<p><strong>ScaleBar</strong> adds a scale showing either cell range or map range. The cell-range value defaults to the Edit Grid spacing; adjust the map-range size and segment values to taste. Toggle it with the <strong>Show Scale Bar</strong> checkbox.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/bb60a55890a28356.webp",
+              "width": 224,
+              "height": 116
+            }
+          ]
+        },
+        {
+          "title": "Add a compass",
+          "layout": "image-bottom",
+          "html": "<p><strong>Compass</strong> adds a north reference. Pick the style (<strong>Full</strong> or <strong>True + Mag</strong>), its position and declination; with True + Mag you can also set the color. Toggle it with the <strong>Show Compass</strong> checkbox.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/576dc52c687eea2d.webp",
+              "width": 224,
+              "height": 151
+            }
+          ]
+        },
+        {
+          "title": "Add markers with Point Dropper",
+          "layout": "image-bottom",
+          "html": "<p>Select <strong>Open Point Dropper</strong> to place markers on the grid — choose a marker type and tap a position; use the arrows for more types. Placed markers appear under <strong>Recently Added</strong>, where they can be sent, edited or deleted. Use <strong>Edit Grid Markers > Name Markers</strong> to auto-rename spot markers by the quadrant they fall in.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/5185b111cacafb99.webp",
+              "width": 354,
+              "height": 386
+            }
+          ]
+        },
+        {
+          "title": "Import points from a file",
+          "layout": "image-bottom",
+          "html": "<p>Import markers from a <strong>.csv</strong> or <strong>.xlsx</strong> with <strong>Import Points</strong>. Name, Prefix and Location (Lat/Long or MGRS) columns are required; Elevation, Remarks, Color and Type are optional. If a column doesn't match, the <strong>Assign Columns</strong> window lets you map each column — or change a marker's type — before importing.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/ce6cce34c43d139a.webp",
+              "width": 256,
+              "height": 227
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

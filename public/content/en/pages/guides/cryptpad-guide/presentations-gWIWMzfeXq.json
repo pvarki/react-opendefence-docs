@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "616682ef-70ba-441a-b3b3-1871adced9fa",
+  "slug": "presentations-gWIWMzfeXq",
+  "collection": "guides/cryptpad-guide",
+  "locale": "en",
+  "title": "Presentations",
+  "breadcrumb": [
+    "Basic Features",
+    "Presentations"
+  ],
+  "createdAt": "2026-06-15T14:07:59.179Z",
+  "updatedAt": "2026-06-15T17:52:46.180Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>CryptPad includes a Markdown-based presentation tool. You write your presentation as text and the tool lays it out into slides.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Start a presentation",
+          "layout": "image-bottom",
+          "html": "<p>Click <strong>+</strong> and select <strong>Slide</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/a053f62be8cb42ea.webp",
+              "width": 1450,
+              "height": 1252
+            }
+          ]
+        },
+        {
+          "title": "Write and present slides",
+          "layout": "image-bottom",
+          "html": "<p>Write your slides as text on the left. Separate slides with <code>---</code>. Click <strong>Present</strong> to enter fullscreen mode, and navigate slides with the arrow keys.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/82ccb028d62e5ce2.webp",
+              "width": 1825,
+              "height": 1131
+            }
+          ]
+        },
+        {
+          "title": "Other file formats",
+          "layout": "text",
+          "html": "<p>CryptPad doesn't support real-time browser editing of formats such as PowerPoint, but you can share those files on CryptDrive and edit and present them locally.</p>",
+          "images": []
+        }
+      ]
+    }
+  ]
+}

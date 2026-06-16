@@ -6,70 +6,144 @@
   "locale": "en",
   "title": "Overlay Manager - How to manage the views",
   "breadcrumb": [
-    "TAK Clients",
+    "Platforms",
     "ATAK",
-    "Advanced Features",
+    "Advanced Core Features",
     "Overlay Manager - How to manage the views"
   ],
   "createdAt": "2026-01-25T10:04:00.819Z",
-  "updatedAt": "2026-02-21T11:17:10.271Z",
-  "headings": [
-    {
-      "depth": 2,
-      "text": "ATAK connected to takserver - Basic view, toolbar, tools",
-      "id": "atak-connected-to-takserver---basic-view-toolbar-tools"
-    }
-  ],
+  "updatedAt": "2026-06-15T19:44:32.792Z",
+  "headings": [],
   "blocks": [
     {
       "type": "html",
-      "html": "<p>(This tab should not be shown)</p>\n<ul>\n<li>Overlay manager view\n<ul>\n<li>How to manage visibility for different thing.</li>\n</ul>\n</li>\n<li>Visibility of\n<ul>\n<li>Data Sync Feeds</li>\n<li>Map Overlays</li>\n<li>Terrain data</li>\n</ul>\n</li>\n</ul>\n<h1 id=\"atak---basic-view-toolbar-tools\"><a href=\"#atak---basic-view-toolbar-tools\">ATAK - Basic view, toolbar, tools</a></h1>\n<h2 id=\"atak-connected-to-takserver---basic-view-toolbar-tools\"><a href=\"#atak-connected-to-takserver---basic-view-toolbar-tools\">ATAK connected to takserver - Basic view, toolbar, tools</a></h2>"
+      "html": "<p>Overlay Manager sorts everything on your map into categories so you can clean up the picture, find a marker fast, and control exactly what you see.</p>"
     },
     {
       "type": "slideset",
-      "source": "legacy",
+      "source": "canonical",
       "slides": [
         {
-          "title": "Open ATAK",
-          "layout": "text",
-          "html": "<ul>\n<li>Open ATAK application</li>\n</ul>",
-          "images": []
+          "title": "Open Overlay Manager",
+          "layout": "image-bottom",
+          "html": "<p>Select the <strong>Overlay Manager</strong> icon to open the list of categories: Team, Markers, Alerts, Data Packages, Navigation, Shapes, Hashtags and more. Tap a category to drill into its items.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/799226c30d9e7680.webp",
+              "width": 276,
+              "height": 348
+            }
+          ]
         },
         {
-          "title": "Basic view",
-          "layout": "text",
-          "html": "",
-          "images": []
+          "title": "Show or hide layers",
+          "layout": "image-bottom",
+          "html": "<p>Tap the <strong>Visibility</strong> (eye) button to toggle a layer on or off. A white eye means visible, an outlined eye means some items are hidden, and an eye with a line through it means hidden.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/406c9451d5252967.webp",
+              "width": 224,
+              "height": 131
+            }
+          ]
         },
         {
-          "title": "Basic Toolbar",
-          "layout": "text",
-          "html": "",
-          "images": []
+          "title": "Filter markers by side and domain",
+          "layout": "image-bottom",
+          "html": "<p>In the Markers category select <strong>Slicer</strong>. Tap <strong>F</strong>, <strong>N</strong> and the others to toggle Friendly, Neutral, Hostile and Unknown; the top letters cover Space, Air, Ground, Sea and Subsurface.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/36c179bfad6b4520.webp",
+              "width": 325,
+              "height": 154
+            }
+          ]
         },
         {
-          "title": "Basic Tools 1",
-          "layout": "text",
-          "html": "",
-          "images": []
+          "title": "Show only your own markers",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>List</strong>, then <strong>Filters</strong>. Turn on <strong>Self Authored</strong> to show only markers you placed on this device and hide everyone else's, then tap <strong>OK</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/2762f211082c1f9a.webp",
+              "width": 171,
+              "height": 96
+            }
+          ]
         },
         {
-          "title": "Basic Tools 2",
-          "layout": "text",
-          "html": "",
-          "images": []
+          "title": "Search the overlays",
+          "layout": "image-bottom",
+          "html": "<p>Tap the <strong>Search</strong> icon in the Overlay Manager toolbar to find an overlay by name. Pick a category first to narrow the results.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/7453787700a0eaff.webp",
+              "width": 285,
+              "height": 173
+            }
+          ]
         },
         {
-          "title": "Done",
-          "layout": "text",
-          "html": "<ul>\n<li>You can close this guide.</li>\n</ul>",
-          "images": []
+          "title": "Clear temporary items with COP Refresh",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>COP Refresh</strong> to clear temporary items from the map: other users' self-markers, their SPIs and ADSB aircraft tracks. Confirm in the window that appears.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/38472422770b6434.webp",
+              "width": 326,
+              "height": 32
+            }
+          ]
+        },
+        {
+          "title": "Tag items with Hashtags",
+          "layout": "image-bottom",
+          "html": "<p>Open the <strong>Hashtags</strong> category and tap <strong>+</strong> to create a tag. Hashtags group related items so you can search and filter by them later; add the tag and select <strong>Done</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/3519c2735f0ec1f6.webp",
+              "width": 305,
+              "height": 87
+            }
+          ]
+        },
+        {
+          "title": "Turn on the MGRS grid",
+          "layout": "image-bottom",
+          "html": "<p>In Overlay Manager open <strong>Other Overlays</strong> and toggle <strong>Grid Lines</strong> with its eye icon. The MGRS grid is drawn over the map and adjusts automatically as you zoom.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/ac247a9aa8e49a30.webp",
+              "width": 400,
+              "height": 194
+            }
+          ]
+        },
+        {
+          "title": "Toggle the Heatmap overlay",
+          "layout": "image-bottom",
+          "html": "<p>In <strong>Other Overlays</strong>, toggle <strong>Heatmap Overlay</strong> to shade the terrain by elevation. Off-Screen Indicators can be toggled here too, pointing to nearby markers just outside your view.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/d6879fdc07334ec1.webp",
+              "width": 400,
+              "height": 194
+            }
+          ]
+        },
+        {
+          "title": "Edit overlay colour and thickness",
+          "layout": "image-bottom",
+          "html": "<p>For file overlays (Shapefiles, KMZ, DRW) tap <strong>Edit</strong> (the pencil icon) in the listing. Drag the <strong>Line Thickness</strong> slider and pick a <strong>Color</strong> to make the overlay easier to read.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/3b2ad0aa64eb4cb5.webp",
+              "width": 229,
+              "height": 125
+            }
+          ]
         }
       ]
-    },
-    {
-      "type": "html",
-      "html": "<p>After seeing Basic view, toolbar, tools, continue to <a href=\"/doc/6bf5c875-5082-4f7c-b28c-26b5eea8b0c5\">Blue force tracking</a></p>"
     }
   ]
 }

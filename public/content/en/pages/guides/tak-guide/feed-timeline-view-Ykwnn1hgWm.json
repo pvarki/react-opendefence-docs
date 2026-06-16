@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "id": "f3eb5975-f657-4092-a074-9cd9356aa07e",
+  "slug": "feed-timeline-view-Ykwnn1hgWm",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "Feed Timeline View",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "Advanced Core Features",
+    "Feed Timeline View"
+  ],
+  "createdAt": "2026-06-16T18:02:43.877Z",
+  "updatedAt": "2026-06-16T18:02:43.877Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Timeline view shows a feed's items as a scrollable stack of snapshots — handy for catching up on what changed.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Open Timeline",
+          "layout": "image-bottom",
+          "html": "<p>Tap the <strong>Timeline</strong> icon from the feed list or a feed dashboard. Switch to <strong>portrait</strong> when prompted. Pick a feed tile, or <strong>All</strong> to see every feed you follow.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/0087614f5756a67b.webp",
+              "width": 800,
+              "height": 270
+            }
+          ]
+        },
+        {
+          "title": "Read and act on snapshots",
+          "layout": "image-bottom",
+          "html": "<p>Each snapshot shows the <strong>callsign</strong>, time, location and a map capture; tap it to show the item on the map. Tap the <strong>⋮</strong> on a snapshot for <strong>View Details → History</strong> (revert to an earlier version), <strong>Save screenshot</strong>, <strong>Contact Author</strong> or <strong>Undo</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/8d81d2ed4a45a4eb.webp",
+              "width": 800,
+              "height": 1473
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

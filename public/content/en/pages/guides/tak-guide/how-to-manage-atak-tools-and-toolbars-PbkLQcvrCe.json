@@ -6,70 +6,108 @@
   "locale": "en",
   "title": "How to manage ATAK Tools and Toolbars",
   "breadcrumb": [
-    "TAK Clients",
+    "Platforms",
     "ATAK",
-    "Advanced Features",
+    "Advanced Core Features",
     "How to manage ATAK Tools and Toolbars"
   ],
   "createdAt": "2026-01-25T09:59:52.395Z",
-  "updatedAt": "2026-02-21T11:17:25.786Z",
-  "headings": [
-    {
-      "depth": 2,
-      "text": "ATAK connected to takserver - Basic view, toolbar, tools",
-      "id": "atak-connected-to-takserver---basic-view-toolbar-tools"
-    }
-  ],
+  "updatedAt": "2026-06-15T19:44:07.321Z",
+  "headings": [],
   "blocks": [
     {
       "type": "html",
-      "html": "<p>(This tab should not be shown)</p>\n<ul>\n<li>Toolbar settings\n<ul>\n<li>How to get to \"All tools &#x26; plugins\"</li>\n<li>How to create new toolbar \"layout\"</li>\n</ul>\n</li>\n</ul>\n<h1 id=\"atak---basic-view-toolbar-tools\"><a href=\"#atak---basic-view-toolbar-tools\">ATAK - Basic view, toolbar, tools</a></h1>\n<h2 id=\"atak-connected-to-takserver---basic-view-toolbar-tools\"><a href=\"#atak-connected-to-takserver---basic-view-toolbar-tools\">ATAK connected to takserver - Basic view, toolbar, tools</a></h2>"
+      "html": "<p>Set up your ATAK toolbar so the tools you actually use are one tap away, and swap layouts fast in the field.</p>"
     },
     {
       "type": "slideset",
-      "source": "legacy",
+      "source": "canonical",
       "slides": [
         {
-          "title": "Open ATAK",
-          "layout": "text",
-          "html": "<ul>\n<li>Open ATAK application</li>\n</ul>",
-          "images": []
+          "title": "Open the extra tools",
+          "layout": "image-bottom",
+          "html": "<p>Tap the <strong>Additional Tools</strong> button beside the toolbar to reach the tools that are not on the bar. They open in a grid by default.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/35e140ca871255f4.webp",
+              "width": 224,
+              "height": 32
+            }
+          ]
         },
         {
-          "title": "Basic view",
-          "layout": "text",
-          "html": "",
-          "images": []
+          "title": "Switch to list view",
+          "layout": "image-bottom",
+          "html": "<p>In the Tools panel, tap <strong>List View</strong> to see each tool with its name in a vertical list. Easier to read when you are learning the icons.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/2ae607069497d712.webp",
+              "width": 121,
+              "height": 157
+            }
+          ]
         },
         {
-          "title": "Basic Toolbar",
-          "layout": "text",
-          "html": "",
-          "images": []
+          "title": "Switch back to grid view",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Grid View</strong> to pack the tools back into a compact icon grid. Use whichever layout you find faster.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/9805c5db41d2281e.webp",
+              "width": 110,
+              "height": 156
+            }
+          ]
         },
         {
-          "title": "Basic Tools 1",
-          "layout": "text",
-          "html": "",
-          "images": []
+          "title": "Edit the toolbar",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Edit Toolbar</strong> to enter Edit Mode. The default toolbar cannot be changed, so a copy is made for you. For a clean start instead, use <strong>Add Toolbar</strong> in the toolbars list.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/7d959b51feeccd7d.webp",
+              "width": 349,
+              "height": 163
+            }
+          ]
         },
         {
-          "title": "Basic Tools 2",
-          "layout": "text",
-          "html": "",
-          "images": []
+          "title": "Add or remove a tool",
+          "layout": "image-bottom",
+          "html": "<p>In Edit Mode you can:</p>\n<ul>\n<li>Long-press and drag a tool onto the bar to <strong>add</strong> it.</li>\n<li>Drag a tool onto an occupied slot to <strong>replace</strong> it.</li>\n<li>Long-press and rename a tool by its label.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/352c0cf24ccac67c.webp",
+              "width": 400,
+              "height": 157
+            }
+          ]
         },
         {
-          "title": "Done",
-          "layout": "text",
-          "html": "<ul>\n<li>You can close this guide.</li>\n</ul>",
-          "images": []
+          "title": "Delete a tool and save",
+          "layout": "image-bottom",
+          "html": "<p>Drag a tool to the trashcan to <strong>delete</strong> it from the bar and send it back to the tool list. When done, tap <strong>Save</strong> and the toolbar joins your available list.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/a9e7e27ed2f07c43.webp",
+              "width": 207,
+              "height": 150
+            }
+          ]
+        },
+        {
+          "title": "Manage and select toolbars",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Toolbar Manager</strong> to see all your toolbars. Use the radio toggle to pick the <strong>active</strong> toolbar, <strong>Edit</strong> or <strong>Delete</strong> any line, and use <strong>Export Toolbar</strong> / <strong>Import Toolbar</strong> to share a layout with another TAK user.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/ae6d25344c1544fd.webp",
+              "width": 190,
+              "height": 194
+            }
+          ]
         }
       ]
-    },
-    {
-      "type": "html",
-      "html": "<p>After seeing Basic view, toolbar, tools, continue to <a href=\"/doc/6bf5c875-5082-4f7c-b28c-26b5eea8b0c5\">Blue force tracking</a></p>"
     }
   ]
 }

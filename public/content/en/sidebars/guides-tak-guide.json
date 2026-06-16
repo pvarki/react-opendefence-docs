@@ -4,176 +4,200 @@
   "slug": "guides/tak-guide",
   "items": [
     {
+      "type": "doc",
+      "id": "what-is-tak-Vy8mUPLS87",
+      "label": "What is TAK?",
+      "slug": "what-is-tak-Vy8mUPLS87"
+    },
+    {
       "type": "toporg",
-      "id": "introduction-2M0PRHydCl",
-      "label": "INTRODUCTION",
+      "id": "start-connect-2M0PRHydCl",
+      "label": "START & CONNECT",
       "clientId": "atak-sGxUIXpQlU",
       "children": [
         {
           "type": "doc",
-          "id": "deploy-app-tak-aFY9LCZCf0",
-          "label": "Deploy App - TAK",
-          "slug": "deploy-app-tak-aFY9LCZCf0"
+          "id": "start-from-deploy-app-aFY9LCZCf0",
+          "label": "Start from Deploy App",
+          "slug": "start-from-deploy-app-aFY9LCZCf0"
         },
         {
-          "type": "group",
-          "id": "start-FxbN2wcFUs",
-          "label": "Start",
-          "clientId": "atak-sGxUIXpQlU",
-          "children": [
-            {
-              "type": "doc",
-              "id": "what-is-tak-hZw2wUmL7g",
-              "label": "What is TAK?",
-              "slug": "what-is-tak-hZw2wUmL7g"
-            },
-            {
-              "type": "doc",
-              "id": "start-from-download-bJC3Opax4P",
-              "label": "Start from Download",
-              "slug": "start-from-download-bJC3Opax4P"
-            },
-            {
-              "type": "doc",
-              "id": "importing-server-connection-PQ4dCV2SYR",
-              "label": "Importing Server Connection",
-              "slug": "importing-server-connection-PQ4dCV2SYR"
-            },
-            {
-              "type": "doc",
-              "id": "load-atak-plugins-xBeVkYsFjI",
-              "label": "Load ATAK Plugins",
-              "slug": "load-atak-plugins-xBeVkYsFjI"
-            }
-          ]
+          "type": "doc",
+          "id": "make-sure-you-have-the-atak-app-bJC3Opax4P",
+          "label": "Make sure you have the ATAK App",
+          "slug": "make-sure-you-have-the-atak-app-bJC3Opax4P"
+        },
+        {
+          "type": "doc",
+          "id": "importing-server-connection-PQ4dCV2SYR",
+          "label": "Importing Server Connection",
+          "slug": "importing-server-connection-PQ4dCV2SYR"
+        },
+        {
+          "type": "doc",
+          "id": "load-atak-plugins-xBeVkYsFjI",
+          "label": "Load ATAK Plugins",
+          "slug": "load-atak-plugins-xBeVkYsFjI"
         }
       ]
     },
     {
       "type": "toporg",
-      "id": "using-atak-features-tNbeSJHTZE",
-      "label": "USING ATAK FEATURES",
+      "id": "basic-core-features-pDRdN25Lk6",
+      "label": "Basic Core Features",
       "clientId": "atak-sGxUIXpQlU",
       "children": [
         {
-          "type": "group",
-          "id": "basic-features-pDRdN25Lk6",
-          "label": "Basic Features",
-          "clientId": "atak-sGxUIXpQlU",
-          "children": [
-            {
-              "type": "doc",
-              "id": "basic-view-tools-and-toolbar-juXbYsGMih",
-              "label": "Basic view, tools and toolbar",
-              "slug": "basic-view-tools-and-toolbar-juXbYsGMih"
-            },
-            {
-              "type": "doc",
-              "id": "blue-force-tracking-vZTVlgAzX8",
-              "label": "Blue force tracking",
-              "slug": "blue-force-tracking-vZTVlgAzX8"
-            },
-            {
-              "type": "doc",
-              "id": "feeds-with-data-sync-thmayduqMx",
-              "label": "Feeds with Data Sync",
-              "slug": "feeds-with-data-sync-thmayduqMx"
-            },
-            {
-              "type": "doc",
-              "id": "point-dropper-markers-lsYmFrTvqH",
-              "label": "Point Dropper - Markers",
-              "slug": "point-dropper-markers-lsYmFrTvqH"
-            },
-            {
-              "type": "doc",
-              "id": "point-dropper-quick-pic-gxAsonzSXL",
-              "label": "Point Dropper - Quick Pic",
-              "slug": "point-dropper-quick-pic-gxAsonzSXL"
-            },
-            {
-              "type": "doc",
-              "id": "geochat-SMWfbwNItT",
-              "label": "GeoChat",
-              "slug": "geochat-SMWfbwNItT"
-            },
-            {
-              "type": "doc",
-              "id": "clear-content-lzrtCD0MdO",
-              "label": "Clear Content",
-              "slug": "clear-content-lzrtCD0MdO"
-            }
-          ]
+          "type": "doc",
+          "id": "basic-view-tools-and-toolbar-juXbYsGMih",
+          "label": "Basic view, tools and toolbar",
+          "slug": "basic-view-tools-and-toolbar-juXbYsGMih"
         },
         {
-          "type": "group",
-          "id": "advanced-features-w8JvOrLVwe",
-          "label": "Advanced Features",
-          "clientId": "atak-sGxUIXpQlU",
-          "children": [
-            {
-              "type": "doc",
-              "id": "downloading-maps-for-offline-use-AhUMNQ8mmS",
-              "label": "Downloading Maps for Offline use",
-              "slug": "downloading-maps-for-offline-use-AhUMNQ8mmS"
-            },
-            {
-              "type": "doc",
-              "id": "overlay-manager-how-to-manage-the-views-BVRnLCM7ME",
-              "label": "Overlay Manager - How to manage the views",
-              "slug": "overlay-manager-how-to-manage-the-views-BVRnLCM7ME"
-            },
-            {
-              "type": "doc",
-              "id": "how-to-manage-atak-tools-and-toolbars-PbkLQcvrCe",
-              "label": "How to manage ATAK Tools and Toolbars",
-              "slug": "how-to-manage-atak-tools-and-toolbars-PbkLQcvrCe"
-            },
-            {
-              "type": "doc",
-              "id": "create-routes-and-use-vns-uymW3nDSPE",
-              "label": "Create Routes and use VNS",
-              "slug": "create-routes-and-use-vns-uymW3nDSPE"
-            },
-            {
-              "type": "doc",
-              "id": "create-manage-feeds-z2CpC9Lpan",
-              "label": "Create & Manage Feeds",
-              "slug": "create-manage-feeds-z2CpC9Lpan"
-            },
-            {
-              "type": "doc",
-              "id": "draw-share-plans-fxjT3hDZ5p",
-              "label": "Draw & share Plans",
-              "slug": "draw-share-plans-fxjT3hDZ5p"
-            },
-            {
-              "type": "doc",
-              "id": "lasso-to-add-into-feed-Mt0Vykodea",
-              "label": "Lasso to add into Feed",
-              "slug": "lasso-to-add-into-feed-Mt0Vykodea"
-            },
-            {
-              "type": "doc",
-              "id": "geofences-wgaLkSEvef",
-              "label": "Geofences",
-              "slug": "geofences-wgaLkSEvef"
-            }
-          ]
+          "type": "doc",
+          "id": "blue-force-tracking-vZTVlgAzX8",
+          "label": "Blue force tracking",
+          "slug": "blue-force-tracking-vZTVlgAzX8"
         },
         {
-          "type": "group",
-          "id": "supported-plugins-XdDLDnS5CE",
-          "label": "Supported Plugins",
-          "clientId": "atak-sGxUIXpQlU",
-          "children": [
-            {
-              "type": "doc",
-              "id": "uastool-HDZFE1QhVT",
-              "label": "Uastool",
-              "slug": "uastool-HDZFE1QhVT"
-            }
-          ]
+          "type": "doc",
+          "id": "feeds-with-data-sync-thmayduqMx",
+          "label": "Feeds with Data Sync",
+          "slug": "feeds-with-data-sync-thmayduqMx"
+        },
+        {
+          "type": "doc",
+          "id": "point-dropper-markers-lsYmFrTvqH",
+          "label": "Point Dropper - Markers",
+          "slug": "point-dropper-markers-lsYmFrTvqH"
+        },
+        {
+          "type": "doc",
+          "id": "sending-a-marker-tbLPq64DLE",
+          "label": "Sending a Marker",
+          "slug": "sending-a-marker-tbLPq64DLE"
+        },
+        {
+          "type": "doc",
+          "id": "point-dropper-quick-pic-gxAsonzSXL",
+          "label": "Point Dropper - Quick Pic",
+          "slug": "point-dropper-quick-pic-gxAsonzSXL"
+        },
+        {
+          "type": "doc",
+          "id": "geochat-SMWfbwNItT",
+          "label": "GeoChat",
+          "slug": "geochat-SMWfbwNItT"
+        },
+        {
+          "type": "doc",
+          "id": "clear-content-lzrtCD0MdO",
+          "label": "Clear Content",
+          "slug": "clear-content-lzrtCD0MdO"
+        }
+      ]
+    },
+    {
+      "type": "toporg",
+      "id": "advanced-core-features-w8JvOrLVwe",
+      "label": "Advanced Core Features",
+      "clientId": "atak-sGxUIXpQlU",
+      "children": [
+        {
+          "type": "doc",
+          "id": "feed-timeline-view-Ykwnn1hgWm",
+          "label": "Feed Timeline View",
+          "slug": "feed-timeline-view-Ykwnn1hgWm"
+        },
+        {
+          "type": "doc",
+          "id": "add-to-work-a-feed-QUjMOBwISe",
+          "label": "Add to & Work a Feed",
+          "slug": "add-to-work-a-feed-QUjMOBwISe"
+        },
+        {
+          "type": "doc",
+          "id": "create-manage-feeds-z2CpC9Lpan",
+          "label": "Create & Manage Feeds",
+          "slug": "create-manage-feeds-z2CpC9Lpan"
+        },
+        {
+          "type": "doc",
+          "id": "draw-share-plans-fxjT3hDZ5p",
+          "label": "Draw & share Plans",
+          "slug": "draw-share-plans-fxjT3hDZ5p"
+        },
+        {
+          "type": "doc",
+          "id": "draw-shapes-graphics-OSECv6soAB",
+          "label": "Draw Shapes & Graphics",
+          "slug": "draw-shapes-graphics-OSECv6soAB"
+        },
+        {
+          "type": "doc",
+          "id": "geofences-wgaLkSEvef",
+          "label": "Geofences",
+          "slug": "geofences-wgaLkSEvef"
+        },
+        {
+          "type": "doc",
+          "id": "lasso-to-add-into-feed-Mt0Vykodea",
+          "label": "Lasso to add into Feed",
+          "slug": "lasso-to-add-into-feed-Mt0Vykodea"
+        },
+        {
+          "type": "doc",
+          "id": "overlay-manager-how-to-manage-the-views-BVRnLCM7ME",
+          "label": "Overlay Manager - How to manage the views",
+          "slug": "overlay-manager-how-to-manage-the-views-BVRnLCM7ME"
+        },
+        {
+          "type": "doc",
+          "id": "create-routes-and-use-vns-uymW3nDSPE",
+          "label": "Create Routes and use VNS",
+          "slug": "create-routes-and-use-vns-uymW3nDSPE"
+        },
+        {
+          "type": "doc",
+          "id": "downloading-maps-for-offline-use-AhUMNQ8mmS",
+          "label": "Downloading Maps for Offline use",
+          "slug": "downloading-maps-for-offline-use-AhUMNQ8mmS"
+        },
+        {
+          "type": "doc",
+          "id": "how-to-manage-atak-tools-and-toolbars-PbkLQcvrCe",
+          "label": "How to manage ATAK Tools and Toolbars",
+          "slug": "how-to-manage-atak-tools-and-toolbars-PbkLQcvrCe"
+        },
+        {
+          "type": "doc",
+          "id": "customize-markers-icons-TGz9RiGwju",
+          "label": "Customize Markers & Icons",
+          "slug": "customize-markers-icons-TGz9RiGwju"
+        },
+        {
+          "type": "doc",
+          "id": "drop-a-casevac-9-line-sstaZDEz76",
+          "label": "Drop a CASEVAC 9-Line",
+          "slug": "drop-a-casevac-9-line-sstaZDEz76"
+        },
+        {
+          "type": "doc",
+          "id": "manage-contacts-URumWb83Ox",
+          "label": "Manage Contacts",
+          "slug": "manage-contacts-URumWb83Ox"
+        },
+        {
+          "type": "doc",
+          "id": "digital-pointer-0K1KdydAeq",
+          "label": "Digital Pointer",
+          "slug": "digital-pointer-0K1KdydAeq"
+        },
+        {
+          "type": "doc",
+          "id": "broadcast-emergency-alert-UUcvlpUGMg",
+          "label": "Broadcast Emergency Alert",
+          "slug": "broadcast-emergency-alert-UUcvlpUGMg"
         }
       ]
     },
@@ -197,15 +221,21 @@
           "children": [
             {
               "type": "doc",
-              "id": "use-geochat-for-comms-s20PZmRGw8",
-              "label": "Use Geochat for comms",
-              "slug": "use-geochat-for-comms-s20PZmRGw8"
+              "id": "what-you-get-send-MhsXXsmVxN",
+              "label": "What you get & send",
+              "slug": "what-you-get-send-MhsXXsmVxN"
             },
             {
               "type": "doc",
               "id": "use-recon-feed-1eKYHfIBys",
               "label": "Use RECON Feed",
               "slug": "use-recon-feed-1eKYHfIBys"
+            },
+            {
+              "type": "doc",
+              "id": "use-geochat-for-comms-s20PZmRGw8",
+              "label": "Use Geochat for comms",
+              "slug": "use-geochat-for-comms-s20PZmRGw8"
             }
           ]
         },
@@ -226,6 +256,314 @@
       ]
     },
     {
+      "type": "toporg",
+      "id": "additional-features-2mWAkYdO1u",
+      "label": "ADDITIONAL FEATURES",
+      "clientId": "atak-sGxUIXpQlU",
+      "children": [
+        {
+          "type": "group",
+          "id": "navigation-coordinates-x2YhsQTF3N",
+          "label": "Navigation & Coordinates",
+          "clientId": "atak-sGxUIXpQlU",
+          "children": [
+            {
+              "type": "doc",
+              "id": "go-to-coordinates-x7AdN7ZMgn",
+              "label": "Go To Coordinates",
+              "slug": "go-to-coordinates-x7AdN7ZMgn"
+            },
+            {
+              "type": "doc",
+              "id": "get-coordinates-with-center-designator-B4pKmxr0H0",
+              "label": "Get Coordinates with Center Designator",
+              "slug": "get-coordinates-with-center-designator-B4pKmxr0H0"
+            },
+            {
+              "type": "doc",
+              "id": "navigate-a-route-zHde8FSxCb",
+              "label": "Navigate a Route",
+              "slug": "navigate-a-route-zHde8FSxCb"
+            },
+            {
+              "type": "doc",
+              "id": "resection-no-gps-location-YjW4JqiWQJ",
+              "label": "Resection",
+              "slug": "resection-no-gps-location-YjW4JqiWQJ"
+            },
+            {
+              "type": "doc",
+              "id": "get-location-with-red-x-14YkJ0qaz7",
+              "label": "Get Location with Red X",
+              "slug": "get-location-with-red-x-14YkJ0qaz7"
+            },
+            {
+              "type": "doc",
+              "id": "off-screen-marker-indicators-OwR2HB0xVZ",
+              "label": "Off-Screen Marker Indicators",
+              "slug": "off-screen-marker-indicators-OwR2HB0xVZ"
+            },
+            {
+              "type": "doc",
+              "id": "control-location-providers-WuJJaCfIYG",
+              "label": "Control Location Providers",
+              "slug": "control-location-providers-WuJJaCfIYG"
+            },
+            {
+              "type": "doc",
+              "id": "track-to-a-target-with-bloodhound-CRgoGZzBqb",
+              "label": "Track to a Target with Bloodhound",
+              "slug": "track-to-a-target-with-bloodhound-CRgoGZzBqb"
+            },
+            {
+              "type": "doc",
+              "id": "track-movement-gps-tracks-ncPNa8dv8K",
+              "label": "Track Movement",
+              "slug": "track-movement-gps-tracks-ncPNa8dv8K"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "id": "range-bearing-tools-0VXiObOnFi",
+          "label": "Range & Bearing Tools",
+          "clientId": "atak-sGxUIXpQlU",
+          "children": [
+            {
+              "type": "doc",
+              "id": "measure-range-bearing-vEAV62W7O1",
+              "label": "Measure Range & Bearing",
+              "slug": "measure-range-bearing-vEAV62W7O1"
+            },
+            {
+              "type": "doc",
+              "id": "dynamic-range-bearing-HMYy8mVdNk",
+              "label": "Dynamic Range & Bearing",
+              "slug": "dynamic-range-bearing-HMYy8mVdNk"
+            },
+            {
+              "type": "doc",
+              "id": "range-rings-bullseye-NHJCYsh6xN",
+              "label": "Range Rings & Bullseye",
+              "slug": "range-rings-bullseye-NHJCYsh6xN"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "id": "elevation-terrain-map-tools-HGXlYrEFbM",
+          "label": "Elevation, Terrain & Map Tools",
+          "clientId": "atak-sGxUIXpQlU",
+          "children": [
+            {
+              "type": "doc",
+              "id": "use-3d-terrain-view-nTeTbi2I5K",
+              "label": "Use 3D Terrain View",
+              "slug": "use-3d-terrain-view-nTeTbi2I5K"
+            },
+            {
+              "type": "doc",
+              "id": "add-3d-models-to-map-bp5Bo7T0oI",
+              "label": "Add 3D Models to Map",
+              "slug": "add-3d-models-to-map-bp5Bo7T0oI"
+            },
+            {
+              "type": "doc",
+              "id": "scout-with-first-person-view-tZ27WjeppE",
+              "label": "Scout with First-Person View",
+              "slug": "scout-with-first-person-view-tZ27WjeppE"
+            },
+            {
+              "type": "doc",
+              "id": "elevation-viewshed-tools-Vqje1Ybg0d",
+              "label": "Elevation & Viewshed Tools",
+              "slug": "elevation-viewshed-tools-Vqje1Ybg0d"
+            },
+            {
+              "type": "doc",
+              "id": "manage-elevation-sources-1DMW21VzzP",
+              "label": "Manage Elevation Sources",
+              "slug": "manage-elevation-sources-1DMW21VzzP"
+            },
+            {
+              "type": "doc",
+              "id": "georeference-an-image-rubber-sheet-TgWDRF45Bd",
+              "label": "Georeference an Image",
+              "slug": "georeference-an-image-rubber-sheet-TgWDRF45Bd"
+            },
+            {
+              "type": "doc",
+              "id": "import-files-remote-resources-yjaTiWVKHl",
+              "label": "Import Files & Remote Resources",
+              "slug": "import-files-remote-resources-yjaTiWVKHl"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "id": "video-in-atak-iVmcVibrpH",
+          "label": "Video in ATAK",
+          "clientId": "atak-sGxUIXpQlU",
+          "children": [
+            {
+              "type": "doc",
+              "id": "play-capture-video-hWmpN6dj9t",
+              "label": "Play & Capture Video",
+              "slug": "play-capture-video-hWmpN6dj9t"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "toporg",
+      "id": "supported-plugins-dfVYBQNjpr",
+      "label": "SUPPORTED PLUGINS",
+      "clientId": "atak-sGxUIXpQlU",
+      "children": [
+        {
+          "type": "group",
+          "id": "uas-tool-7Z75EajOUb",
+          "label": "UAS Tool",
+          "clientId": "atak-sGxUIXpQlU",
+          "children": [
+            {
+              "type": "doc",
+              "id": "install-uas-tool-plugin-BDPcnhvDgk",
+              "label": "Install UAS Tool Plugin",
+              "slug": "install-uas-tool-plugin-BDPcnhvDgk"
+            },
+            {
+              "type": "doc",
+              "id": "auto-connect-uas-tool-to-mediamtx-MahzGHsEdu",
+              "label": "Auto-connect UAS Tool to MediaMTX",
+              "slug": "auto-connect-uas-tool-to-mediamtx-MahzGHsEdu"
+            },
+            {
+              "type": "doc",
+              "id": "open-uas-tool-read-telemetry-CvGSGecLE1",
+              "label": "Open UAS Tool & Read Telemetry",
+              "slug": "open-uas-tool-read-telemetry-CvGSGecLE1"
+            },
+            {
+              "type": "doc",
+              "id": "watch-control-drone-camera-45LPQNKdqn",
+              "label": "Watch & Control Drone Camera",
+              "slug": "watch-control-drone-camera-45LPQNKdqn"
+            },
+            {
+              "type": "doc",
+              "id": "capture-broadcast-drone-video-UfMEqBjxec",
+              "label": "Capture & Broadcast Drone Video",
+              "slug": "capture-broadcast-drone-video-UfMEqBjxec"
+            },
+            {
+              "type": "doc",
+              "id": "send-drone-to-a-location-vwYPd2cbEC",
+              "label": "Send Drone to a Location",
+              "slug": "send-drone-to-a-location-vwYPd2cbEC"
+            },
+            {
+              "type": "doc",
+              "id": "plan-drone-missions-lNvEkDE1kE",
+              "label": "Plan Drone Missions",
+              "slug": "plan-drone-missions-lNvEkDE1kE"
+            },
+            {
+              "type": "doc",
+              "id": "launch-stop-return-drone-H6yqQ4Gyc5",
+              "label": "Launch, Stop & Return Drone",
+              "slug": "launch-stop-return-drone-H6yqQ4Gyc5"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "id": "grg-builder-JjwvXFR6na",
+          "label": "GRG Builder",
+          "clientId": "atak-sGxUIXpQlU",
+          "children": [
+            {
+              "type": "doc",
+              "id": "create-a-grid-grg-builder-RD3vtzu9yS",
+              "label": "Create a Grid",
+              "slug": "create-a-grid-grg-builder-RD3vtzu9yS"
+            },
+            {
+              "type": "doc",
+              "id": "annotate-style-a-grid-xSjKDtDtsj",
+              "label": "Annotate & Style a Grid",
+              "slug": "annotate-style-a-grid-xSjKDtDtsj"
+            },
+            {
+              "type": "doc",
+              "id": "export-a-grid-grg-builder-EcpaE7LkX1",
+              "label": "Export a Grid",
+              "slug": "export-a-grid-grg-builder-EcpaE7LkX1"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "id": "reports-6HdrUSYmw9",
+          "label": "Reports",
+          "clientId": "atak-sGxUIXpQlU",
+          "children": [
+            {
+              "type": "doc",
+              "id": "create-a-report-FB38XVNhaL",
+              "label": "Create a Report",
+              "slug": "create-a-report-FB38XVNhaL"
+            },
+            {
+              "type": "doc",
+              "id": "save-send-share-a-report-FCSrRHNkjC",
+              "label": "Save, Send & Share a Report",
+              "slug": "save-send-share-a-report-FCSrRHNkjC"
+            },
+            {
+              "type": "doc",
+              "id": "find-reports-on-the-server-QTVm3SETE8",
+              "label": "Find Reports on the Server",
+              "slug": "find-reports-on-the-server-QTVm3SETE8"
+            },
+            {
+              "type": "doc",
+              "id": "build-a-custom-report-template-VVphDLVbW3",
+              "label": "Build a Custom Report Template",
+              "slug": "build-a-custom-report-template-VVphDLVbW3"
+            },
+            {
+              "type": "doc",
+              "id": "configure-report-settings-kQmMR0hmn5",
+              "label": "Configure Report Settings",
+              "slug": "configure-report-settings-kQmMR0hmn5"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "id": "connect-radio-with-hammer-vdPW7IvJlG",
+          "label": "Connect radio with HAMMER",
+          "clientId": "atak-sGxUIXpQlU",
+          "children": [
+            {
+              "type": "doc",
+              "id": "connect-to-prc-152-rover-radio-h4TQ7hwPw2",
+              "label": "Connect to PRC-152 / Rover Radio",
+              "slug": "connect-to-prc-152-rover-radio-h4TQ7hwPw2"
+            },
+            {
+              "type": "doc",
+              "id": "setup-encrypted-mesh-comms-ytYOQTVxVo",
+              "label": "Setup Encrypted Mesh Comms",
+              "slug": "setup-encrypted-mesh-comms-ytYOQTVxVo"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "type": "group",
       "id": "atak-sGxUIXpQlU",
       "label": "ATAK",
@@ -234,54 +572,60 @@
         {
           "type": "doc",
           "id": "troubleshooting-IC3Nd5qZHr",
-          "label": "Troubleshooting",
+          "label": "TROUBLESHOOTING",
           "slug": "troubleshooting-IC3Nd5qZHr"
         }
       ]
     },
     {
-      "type": "group",
-      "id": "start-gF8MDfsdW9",
-      "label": "Start",
+      "type": "toporg",
+      "id": "start-connect-c27Zc4YePw",
+      "label": "START & CONNECT",
       "clientId": "wintak-w8mKUfaRBP",
       "children": [
         {
           "type": "doc",
-          "id": "start-from-download-GstcQifMVj",
-          "label": "Start from Download",
-          "slug": "start-from-download-GstcQifMVj"
+          "id": "set-language-localization-for-wintak-GstcQifMVj",
+          "label": "Set language & localization for WinTAK",
+          "slug": "set-language-localization-for-wintak-GstcQifMVj"
         },
         {
           "type": "doc",
-          "id": "wintak-already-installed-kCXH9p8keg",
-          "label": "WinTAK Already Installed",
-          "slug": "wintak-already-installed-kCXH9p8keg"
+          "id": "download-install-wintak-qfu2aB0W9u",
+          "label": "Download & install WinTAK",
+          "slug": "download-install-wintak-qfu2aB0W9u"
+        },
+        {
+          "type": "doc",
+          "id": "import-the-client-package-to-wintak-kCXH9p8keg",
+          "label": "Import the client package to WinTAK",
+          "slug": "import-the-client-package-to-wintak-kCXH9p8keg"
+        },
+        {
+          "type": "doc",
+          "id": "load-plugins-finish-setup-xa2huv9Wmn",
+          "label": "Load Plugins & Finish Setup",
+          "slug": "load-plugins-finish-setup-xa2huv9Wmn"
         }
       ]
     },
     {
-      "type": "group",
-      "id": "basic-features-pmjQ96x5bI",
-      "label": "Basic Features",
+      "type": "toporg",
+      "id": "basic-core-features-pmjQ96x5bI",
+      "label": "BASIC CORE FEATURES",
       "clientId": "wintak-w8mKUfaRBP",
       "children": [
         {
           "type": "doc",
-          "id": "clear-content-gLcPrq5b5J",
-          "label": "Clear Content",
-          "slug": "clear-content-gLcPrq5b5J"
+          "id": "setting-up-your-own-location-IAAAIJTiqZ",
+          "label": "Setting up your own location",
+          "slug": "setting-up-your-own-location-IAAAIJTiqZ"
         },
         {
           "type": "doc",
-          "id": "blue-force-tracking-IAAAIJTiqZ",
+          "id": "blue-force-tracking-uv3kHr7LSr",
           "label": "Blue force tracking",
-          "slug": "blue-force-tracking-IAAAIJTiqZ"
-        },
-        {
-          "type": "doc",
-          "id": "plugin-management-EphDON8hEX",
-          "label": "Plugin Management",
-          "slug": "plugin-management-EphDON8hEX"
+          "slug": "blue-force-tracking-uv3kHr7LSr"
         },
         {
           "type": "doc",
@@ -291,22 +635,34 @@
         },
         {
           "type": "doc",
-          "id": "point-dropper-create-edit-send-wwYK8iDf5w",
-          "label": "Point Dropper, Create, Edit, Send",
-          "slug": "point-dropper-create-edit-send-wwYK8iDf5w"
+          "id": "point-dropper-add-markers-wwYK8iDf5w",
+          "label": "Point Dropper - add markers",
+          "slug": "point-dropper-add-markers-wwYK8iDf5w"
         },
         {
           "type": "doc",
           "id": "use-geochat-G4fqV0Y4fg",
           "label": "Use GeoChat",
           "slug": "use-geochat-G4fqV0Y4fg"
+        },
+        {
+          "type": "doc",
+          "id": "plugin-management-EphDON8hEX",
+          "label": "Plugin Management",
+          "slug": "plugin-management-EphDON8hEX"
+        },
+        {
+          "type": "doc",
+          "id": "clear-content-gLcPrq5b5J",
+          "label": "Clear Content",
+          "slug": "clear-content-gLcPrq5b5J"
         }
       ]
     },
     {
-      "type": "group",
-      "id": "advanced-features-dUEpnxlGD0",
-      "label": "Advanced Features",
+      "type": "toporg",
+      "id": "advanced-core-features-dUEpnxlGD0",
+      "label": "ADVANCED CORE FEATURES",
       "clientId": "wintak-w8mKUfaRBP",
       "children": [
         {
@@ -317,15 +673,15 @@
         },
         {
           "type": "doc",
-          "id": "draw-share-plans-gUzuEffh5v",
-          "label": "Draw & share Plans",
-          "slug": "draw-share-plans-gUzuEffh5v"
-        },
-        {
-          "type": "doc",
           "id": "manage-feeds-62IWBYODOd",
           "label": "Manage Feeds",
           "slug": "manage-feeds-62IWBYODOd"
+        },
+        {
+          "type": "doc",
+          "id": "draw-share-plans-gUzuEffh5v",
+          "label": "Draw & share Plans",
+          "slug": "draw-share-plans-gUzuEffh5v"
         },
         {
           "type": "doc",
@@ -336,9 +692,9 @@
       ]
     },
     {
-      "type": "group",
+      "type": "toporg",
       "id": "usage-by-role-IWyDTtxCJS",
-      "label": "Usage by Role",
+      "label": "USAGE BY ROLE",
       "clientId": "wintak-w8mKUfaRBP",
       "children": [
         {
@@ -354,24 +710,118 @@
           "slug": "fighter-ZxrplBIys6"
         },
         {
-          "type": "doc",
-          "id": "edit-recon-feed-B7h9QJzZVd",
-          "label": "Edit RECON feed",
-          "slug": "edit-recon-feed-B7h9QJzZVd"
+          "type": "group",
+          "id": "command-post-Jysu3u7ga3",
+          "label": "Command Post",
+          "clientId": "wintak-w8mKUfaRBP",
+          "children": [
+            {
+              "type": "doc",
+              "id": "produce-recon-feed-B7h9QJzZVd",
+              "label": "Produce RECON feed",
+              "slug": "produce-recon-feed-B7h9QJzZVd"
+            }
+          ]
         }
       ]
     },
     {
-      "type": "group",
-      "id": "supported-plugins-zl2XZB0u1p",
-      "label": "Supported Plugins",
+      "type": "toporg",
+      "id": "supported-plugins-kI9j4sGKzz",
+      "label": "SUPPORTED PLUGINS",
       "clientId": "wintak-w8mKUfaRBP",
       "children": [
         {
-          "type": "doc",
-          "id": "tak-replay-Sy9dQFNBc1",
+          "type": "group",
+          "id": "tak-replay-GSHD19ipyT",
           "label": "TAK Replay",
-          "slug": "tak-replay-Sy9dQFNBc1"
+          "clientId": "wintak-w8mKUfaRBP",
+          "children": [
+            {
+              "type": "doc",
+              "id": "record-events-2LJeWe6cPW",
+              "label": "Record events",
+              "slug": "record-events-2LJeWe6cPW"
+            },
+            {
+              "type": "doc",
+              "id": "play-a-recording-uLch9lAImn",
+              "label": "Play a recording",
+              "slug": "play-a-recording-uLch9lAImn"
+            },
+            {
+              "type": "doc",
+              "id": "export-download-manage-0NPPYBJSNP",
+              "label": "Export, download & manage",
+              "slug": "export-download-manage-0NPPYBJSNP"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "id": "grg-builder-Hoz96EesTm",
+          "label": "GRG Builder",
+          "clientId": "wintak-w8mKUfaRBP",
+          "children": [
+            {
+              "type": "doc",
+              "id": "create-edit-a-grg-Xui0ilYenu",
+              "label": "Create & edit a GRG",
+              "slug": "create-edit-a-grg-Xui0ilYenu"
+            },
+            {
+              "type": "doc",
+              "id": "add-features-markers-9dYxguZls8",
+              "label": "Add features & markers",
+              "slug": "add-features-markers-9dYxguZls8"
+            },
+            {
+              "type": "doc",
+              "id": "export-share-a-grg-OP1CAaNJhC",
+              "label": "Export & share a GRG",
+              "slug": "export-share-a-grg-OP1CAaNJhC"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "id": "reports-kTDOW67c8w",
+          "label": "Reports",
+          "clientId": "wintak-w8mKUfaRBP",
+          "children": [
+            {
+              "type": "doc",
+              "id": "create-a-report-mhCCLqyMaU",
+              "label": "Create a report",
+              "slug": "create-a-report-mhCCLqyMaU"
+            },
+            {
+              "type": "doc",
+              "id": "browse-the-reports-database-unYDjhwqXD",
+              "label": "Browse the reports database",
+              "slug": "browse-the-reports-database-unYDjhwqXD"
+            },
+            {
+              "type": "doc",
+              "id": "custom-report-templates-8bCilJEujm",
+              "label": "Custom report templates",
+              "slug": "custom-report-templates-8bCilJEujm"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "id": "vns-vehicle-navigation-system-AiQdKUTeFM",
+          "label": "VNS - Vehicle Navigation System",
+          "clientId": "wintak-w8mKUfaRBP",
+          "children": [
+            {
+              "type": "doc",
+              "id": "create-a-vns-route-gfIlnjXwN2",
+              "label": "Create a VNS route",
+              "slug": "create-a-vns-route-gfIlnjXwN2"
+            }
+          ]
         }
       ]
     },
@@ -482,9 +932,9 @@
       ]
     },
     {
-      "type": "group",
-      "id": "start-LlfSpMeCW8",
-      "label": "Start",
+      "type": "toporg",
+      "id": "start-connect-LlfSpMeCW8",
+      "label": "START & CONNECT",
       "clientId": "tak-tracker-android-JCZw3YH2nW",
       "children": [
         {
@@ -508,9 +958,49 @@
       ]
     },
     {
-      "type": "group",
+      "type": "toporg",
+      "id": "basic-features-VzNKs1TiW6",
+      "label": "BASIC FEATURES",
+      "clientId": "tak-tracker-android-JCZw3YH2nW",
+      "children": [
+        {
+          "type": "doc",
+          "id": "read-your-status-location-xFbq6tWEQC",
+          "label": "Read Your Status & Location",
+          "slug": "read-your-status-location-xFbq6tWEQC"
+        },
+        {
+          "type": "doc",
+          "id": "send-an-emergency-alert-beacon-rmQFqQnNJC",
+          "label": "Send an Emergency Alert Beacon",
+          "slug": "send-an-emergency-alert-beacon-rmQFqQnNJC"
+        },
+        {
+          "type": "doc",
+          "id": "chat-with-your-team-y6xwtxc8G9",
+          "label": "Chat With Your Team",
+          "slug": "chat-with-your-team-y6xwtxc8G9"
+        }
+      ]
+    },
+    {
+      "type": "toporg",
+      "id": "advanced-features-PxjYTgbxDu",
+      "label": "ADVANCED FEATURES",
+      "clientId": "tak-tracker-android-JCZw3YH2nW",
+      "children": [
+        {
+          "type": "doc",
+          "id": "options-settings-XyYcsDAVCo",
+          "label": "Options & Settings",
+          "slug": "options-settings-XyYcsDAVCo"
+        }
+      ]
+    },
+    {
+      "type": "toporg",
       "id": "usage-by-role-KxtjmbM9B1",
-      "label": "Usage by Role",
+      "label": "USAGE BY ROLE",
       "clientId": "tak-tracker-android-JCZw3YH2nW",
       "children": [
         {
@@ -534,23 +1024,9 @@
       ]
     },
     {
-      "type": "group",
-      "id": "tak-tracker-android-JCZw3YH2nW",
-      "label": "TAK Tracker - Android",
-      "clientId": "tak-tracker-android-JCZw3YH2nW",
-      "children": [
-        {
-          "type": "doc",
-          "id": "troubleshooting-E1xmJrS5OS",
-          "label": "Troubleshooting",
-          "slug": "troubleshooting-E1xmJrS5OS"
-        }
-      ]
-    },
-    {
-      "type": "group",
-      "id": "start-oZzAX4X7Er",
-      "label": "Start",
+      "type": "toporg",
+      "id": "start-connect-oZzAX4X7Er",
+      "label": "START & CONNECT",
       "clientId": "tak-tracker-apple-PmHvleNK0F",
       "children": [
         {

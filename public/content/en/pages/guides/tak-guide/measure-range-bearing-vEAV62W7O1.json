@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "id": "5f24eb7f-21e5-4cb8-8ee9-83d03a1864eb",
+  "slug": "measure-range-bearing-vEAV62W7O1",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "Measure Range & Bearing",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "ADDITIONAL FEATURES",
+    "Range & Bearing Tools",
+    "Measure Range & Bearing"
+  ],
+  "createdAt": "2026-06-15T19:41:11.866Z",
+  "updatedAt": "2026-06-16T10:20:34.612Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Drop a two-point line on the map to get the exact distance and azimuth between a start and an end point — the basics for fires and recon callouts.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Drop the Range&Bearing Line",
+          "layout": "image-bottom",
+          "html": "<p>Open the <strong>Range Tools</strong> toolbar from <strong>Additional Tools &#x26; Plugins</strong>, then tap the <strong>R&#x26;B Line</strong> icon so it turns yellow. Tap your start point, then tap a second point to set the line.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/1827d04a68014926.webp",
+              "width": 250,
+              "height": 208
+            }
+          ]
+        },
+        {
+          "title": "Read distance and azimuth",
+          "layout": "image-bottom",
+          "html": "<p>The line label shows the <strong>azimuth</strong> and <strong>distance</strong> between the two points (for example, <code>68°M  12.21 km</code>). The line stays put until you delete it.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/5987b70235dd5bf6.webp",
+              "width": 244,
+              "height": 68
+            }
+          ]
+        },
+        {
+          "title": "Reposition with a Dynamic R&B Line",
+          "layout": "image-bottom",
+          "html": "<p>Use the <strong>Dynamic R&#x26;B Line</strong> instead to drag an endpoint and re-measure on the fly. When it is where you want it, tap the center of the line and use <strong>Pin</strong> to fix the line in place.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/47abd3f788f1958e.webp",
+              "width": 250,
+              "height": 181
+            }
+          ]
+        },
+        {
+          "title": "Choose your bearing units",
+          "layout": "image-bottom",
+          "html": "<p>Tap an endpoint, then the <strong>Angle Bearing Units</strong> radial to switch how the azimuth is read. Pick the unit your fires net uses:</p>\n<ul>\n<li>Degrees True / Mils True</li>\n<li>Degrees Magnetic / Mils Magnetic</li>\n<li>Degrees Grid / Mils Grid</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/d02bb29b8fedd5d4.webp",
+              "width": 200,
+              "height": 181
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 1,
+  "id": "fc463dc7-4572-4465-a45b-b0b9bce0196f",
+  "slug": "create-a-grid-grg-builder-RD3vtzu9yS",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "Create a Grid (GRG Builder)",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "Supported Plugins",
+    "GRG Builder",
+    "Create a Grid (GRG Builder)"
+  ],
+  "createdAt": "2026-06-15T20:51:13.205Z",
+  "updatedAt": "2026-06-15T20:51:13.205Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Build a gridded reference graphic (GRG) over a patch of map so everyone can call grid squares by the same letter/number.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Open GRG Builder and start a grid",
+          "layout": "image-bottom",
+          "html": "<p>Open the <strong>GRG Builder</strong> icon from the <strong>Additional Tools</strong> menu. The toolbar appears in the Action Bar. Pan and zoom to your area, then select the <strong>Grid</strong> icon.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/fb2bbc9f1f7981c0.webp",
+              "width": 345,
+              "height": 57
+            }
+          ]
+        },
+        {
+          "title": "Set spacing and color, then place it",
+          "layout": "image-bottom",
+          "html": "<p>In the <strong>Select Grid Spacing and Color</strong> window choose spacing, color, size and datum, then select <strong>Done</strong> to drop the grid. Long-press the center crosshair to move it; a short tap opens a radial with <strong>Enter Coordinate</strong>, <strong>MGRS Location</strong> or <strong>Delete</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/fb2bbc9f1f7981c0.webp",
+              "width": 345,
+              "height": 57
+            }
+          ]
+        },
+        {
+          "title": "Add markers to the grid",
+          "layout": "image-bottom",
+          "html": "<p>Select the <strong>Label</strong> icon to drop markers on the grid. Slide the marker pallet right and left for more marker choices.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/87c3458b29b69b19.webp",
+              "width": 350,
+              "height": 59
+            }
+          ]
+        },
+        {
+          "title": "Export the GRG",
+          "layout": "image-bottom",
+          "html": "<p>When the grid looks right, select the <strong>Export</strong> icon to process the imagery into a GRG (KMZ) file.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/aa79c89744a65f37.webp",
+              "width": 349,
+              "height": 62
+            }
+          ]
+        },
+        {
+          "title": "Edit the GRG Capture",
+          "layout": "image-bottom",
+          "html": "<p>The <strong>GRG Capture</strong> edit screen opens. Tick a feature's check box to remove it; tap the box itself to edit it. Drag the info box or point list to re-position them on the capture.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/d3c379fd34f9f723.webp",
+              "width": 783,
+              "height": 464
+            }
+          ]
+        },
+        {
+          "title": "Adjust the grid in Edit Grid",
+          "layout": "image-bottom",
+          "html": "<p>Select <strong>Edit Grid</strong> to set <strong>Label Style</strong> (MGRS, Letter/Number or Both), grid color and spacing. Toggle <strong>Show Labels</strong> on or off, and <strong>Additional Labels</strong> to split the export across multiple image files or a multi-page PDF.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/02f0b5d4ea0f57fc.webp",
+              "width": 624,
+              "height": 355
+            }
+          ]
+        },
+        {
+          "title": "Edit the point labels",
+          "layout": "image-bottom",
+          "html": "<p>Select <strong>Point List</strong> to open <strong>Edit Point List</strong>. Set <strong>Text Color</strong> and <strong>Text Align</strong> (<strong>Left</strong>, <strong>Center</strong>, <strong>Right</strong>), and tap a point in the list to show or hide it on the capture.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/70d90848f969b8b6.webp",
+              "width": 624,
+              "height": 455
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

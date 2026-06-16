@@ -1,5 +1,6 @@
 import { Suspense, lazy, useState } from "react";
 import { createFileRoute } from "@tanstack/react-router";
+import { useTranslation } from "react-i18next";
 import { Braces } from "lucide-react";
 import {
   Select,
@@ -42,12 +43,15 @@ export const Route = createFileRoute("/$locale/dev/api")({
 });
 
 function ApiReferencePage() {
+  const { t } = useTranslation();
   const manifest = Route.useLoaderData();
   const all = manifest.sources.flatMap((source) =>
     source.versions.map((v) => ({
       key: `${source.id}/${v.tag}`,
       label: `${source.name} (${v.tag})`,
-      specFile: v.specFile,
+      // Specs live at /api-specs/{id}/{file}; a bare filename would resolve
+      // relative to the current route and hit the SPA fallback (HTML, not JSON).
+      specUrl: `/api-specs/${source.id}/${v.specFile}`,
     })),
   );
   const [selected, setSelected] = useState(all[0]?.key);
@@ -57,10 +61,10 @@ function ApiReferencePage() {
     return (
       <div className="h-full overflow-y-auto">
         <div className="mx-auto max-w-3xl px-4 py-8">
-          <h1 className="text-2xl font-bold">API Reference</h1>
+          <h1 className="text-2xl font-bold">{t("apiRef.title")}</h1>
           <div className="mt-6 flex items-center gap-3 rounded-lg border border-border bg-card px-4 py-6 text-muted-foreground">
             <Braces className="size-5 text-primary" />
-            No API specs have been synced yet.
+            {t("apiRef.empty")}
           </div>
         </div>
       </div>
@@ -98,10 +102,13 @@ function ApiReferencePage() {
           >
             <ApiReference
               configuration={{
-                url: withBase(active.specFile),
+                url: withBase(active.specUrl),
                 hideDarkModeToggle: true,
                 forceDarkModeState: "dark",
                 hideClientButton: true,
+                // Scalar shows its Configure/Share/Deploy toolbar on localhost
+                // by default; we never want it in the embedded reader.
+                showDeveloperTools: "never",
               }}
             />
           </Suspense>

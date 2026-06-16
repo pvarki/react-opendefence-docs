@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "id": "43d69a69-6e3e-44b1-8054-5cf737ea6c83",
+  "slug": "use-3d-terrain-view-nTeTbi2I5K",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "Use 3D Terrain View",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "ADDITIONAL FEATURES",
+    "Elevation, Terrain & Map Tools",
+    "Use 3D Terrain View"
+  ],
+  "createdAt": "2026-06-15T19:42:15.060Z",
+  "updatedAt": "2026-06-15T20:53:52.840Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Tilt the map into 3D to read terrain, slopes and dead ground. You need elevation data installed (DTED, SRTM, or Quantized Mesh).</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Open the 3D menu",
+          "layout": "image-bottom",
+          "html": "<p>Long press the <strong>North Arrow</strong> to open the extra controls, then select <strong>3D</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/b3500e627e1d5c59.webp",
+              "width": 152,
+              "height": 52
+            }
+          ]
+        },
+        {
+          "title": "Start from the flat map",
+          "layout": "image-bottom",
+          "html": "<p>With 3D on, a tilt angle indicator appears around the <strong>North Arrow</strong>. The map still looks flat until you tilt it.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/9b7ac349d4cebcd9.webp",
+              "width": 373,
+              "height": 173
+            }
+          ]
+        },
+        {
+          "title": "Two-finger tilt",
+          "layout": "image-bottom",
+          "html": "<p>Touch the screen with two fingers and swipe up or down to tilt the view. Items with set elevations rise above the surface. Tilt to 90 degrees to look straight at a marker.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/7e43c4ed0a91d87e.webp",
+              "width": 373,
+              "height": 185
+            }
+          ]
+        },
+        {
+          "title": "Lock the 3D view",
+          "layout": "image-bottom",
+          "html": "<p>Once the angle is right, select the <strong>3D Lock</strong> icon. The 3D view stays locked while you pan the map.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/02dc7ffe0f7584ba.webp",
+              "width": 152,
+              "height": 52
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

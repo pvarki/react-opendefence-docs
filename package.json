@@ -24,6 +24,8 @@
     "sync": "pnpm sync:outline && pnpm fetch:api-specs && pnpm fetch:release-docs && pnpm validate:docs",
     "author:scaffold": "tsx scripts/author/scaffold-draft.ts",
     "author:push": "tsx scripts/author/push-draft.ts",
+    "author:figures": "tsx scripts/author/extract-figures.mts",
+    "author:fetch": "tsx scripts/author/fetch-chapter.mts",
     "lint": "eslint .",
     "format": "prettier --write .",
     "format:check": "prettier --check .",

@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "21c5cd56-02ca-4ec0-8e44-3e33fbc6e2dc",
+  "slug": "manage-elevation-sources-1DMW21VzzP",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "Manage Elevation Sources",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "ADDITIONAL FEATURES",
+    "Elevation, Terrain & Map Tools",
+    "Manage Elevation Sources"
+  ],
+  "createdAt": "2026-06-15T19:44:18.973Z",
+  "updatedAt": "2026-06-15T20:53:54.561Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Get accurate terrain heights for 3D and viewsheds by streaming and switching elevation data on your device.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Choose how elevation data loads",
+          "layout": "image-bottom",
+          "html": "<p>Go to <strong>Settings</strong> > <strong>Tool Preferences</strong> > <strong>Specific Tool Preferences</strong> > <strong>Elevation Overlays Preferences</strong>. By default ATAK streams data (DTED, SRTM) as needed; uncheck <strong>Stream Elevation Data</strong> to force full downloads instead.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/0deb95b6245dbcbc.webp",
+              "width": 332,
+              "height": 398
+            }
+          ]
+        },
+        {
+          "title": "Check coverage in Overlay Manager",
+          "layout": "image-bottom",
+          "html": "<p>Open <strong>Overlay Manager</strong> and check the outline checkbox for the <strong>DTED</strong> layer. The yellow grids on the map show exactly where DTED0 data has already been downloaded.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/1e3b3ae178532c26.webp",
+              "width": 400,
+              "height": 226
+            }
+          ]
+        },
+        {
+          "title": "Switch and prioritize sources",
+          "layout": "image-bottom",
+          "html": "<p>The <strong>Elevation Manager</strong> lists your sources (DTED, <strong>TAK Terrain</strong>, <strong>TAK Bathy</strong>). Reorder a layer with the arrow buttons to set priority (top wins), and use the visibility buttons to toggle each source on or off.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/02917e1c8b4769b6.webp",
+              "width": 470,
+              "height": 679
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

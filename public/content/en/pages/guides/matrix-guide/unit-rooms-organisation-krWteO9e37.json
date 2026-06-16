@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 1,
+  "id": "f13fbaa8-ef05-4a1d-a105-ae769347aa51",
+  "slug": "unit-rooms-organisation-krWteO9e37",
+  "collection": "guides/matrix-guide",
+  "locale": "en",
+  "title": "Unit rooms & organisation",
+  "breadcrumb": [
+    "Usage in Unit",
+    "Unit rooms & organisation"
+  ],
+  "createdAt": "2026-06-15T14:07:35.419Z",
+  "updatedAt": "2026-06-15T17:52:34.732Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Matrix works well as your unit's primary messaging tool. This is a recommended way to structure your rooms — treat each room like a radio channel.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Easy primary messaging tool",
+          "layout": "image-bottom",
+          "html": "<p>Matrix fulfils all messaging and video-call needs well. All members of this server are automatically members of your server's Space, so you can start communicating with your team immediately.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/00bbdf3e264749e7.webp",
+              "width": 2306,
+              "height": 1444
+            }
+          ]
+        },
+        {
+          "title": "A good room structure",
+          "layout": "image-bottom",
+          "html": "<p>In addition to the automatically created rooms, we recommend creating the following rooms and inviting the appropriate members. The core idea is to think of rooms as radio channels.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/008ce475a318f511.webp",
+              "width": 2312,
+              "height": 1442
+            }
+          ]
+        },
+        {
+          "title": "Command room",
+          "layout": "image-bottom",
+          "html": "<p>Invite your team leaders to the <strong>Command</strong> channel. It works like a radio command channel — for orders and their acknowledgements. It can also be used for briefings over video conference.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/af4773fccb6ca2b8.webp",
+              "width": 2302,
+              "height": 1446
+            }
+          ]
+        },
+        {
+          "title": "Friendly situation room",
+          "layout": "image-bottom",
+          "html": "<p>Invite at least your team leaders and deputies to the <strong>Friendly situation</strong> room. Use it to communicate the execution of your mission — where friendlies are moving and how task execution is progressing.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/6a7d2f2720dc26b1.webp",
+              "width": 2314,
+              "height": 1452
+            }
+          ]
+        },
+        {
+          "title": "Recon room",
+          "layout": "image-bottom",
+          "html": "<p>Invite at least your team leaders and deputies to the <strong>Recon</strong> room. Use it to communicate reconnaissance and enemy observations.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/0e6f89ecfb767dfc.webp",
+              "width": 2303,
+              "height": 1449
+            }
+          ]
+        },
+        {
+          "title": "Guard room",
+          "layout": "image-bottom",
+          "html": "<p>Set up the <strong>Guard</strong> room so that anyone can freely join from the Space. Operators starting guard or patrol duties join for the duration of their task, giving the command post a direct line to them.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/f79376cb94ddaeb2.webp",
+              "width": 2314,
+              "height": 1438
+            }
+          ]
+        },
+        {
+          "title": "Other room recommendations",
+          "layout": "text",
+          "html": "<p>Other recommended rooms include a <strong>Call for Fires</strong> room and a <strong>Fires Management</strong> room for fire direction and fire coordination.</p>",
+          "images": []
+        },
+        {
+          "title": "User management",
+          "layout": "text",
+          "html": "<p>A user set as an administrator in Deploy App automatically receives administrator rights to the Space and its rooms, and is added to the admin room. A user removed from Deploy App loses access to Matrix.</p>",
+          "images": []
+        },
+        {
+          "title": "Working with other Matrix servers",
+          "layout": "text",
+          "html": "<p>By default, you can invite users from other Matrix servers to your rooms. This enables cooperation with other teams using Deploy App, or with NATO allies who also use Matrix — for example through the NI2CE application.</p>",
+          "images": []
+        }
+      ]
+    }
+  ]
+}

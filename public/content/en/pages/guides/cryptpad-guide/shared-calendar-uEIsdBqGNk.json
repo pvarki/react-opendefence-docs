@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "454a695e-1d40-4e50-ae55-c3c643771922",
+  "slug": "shared-calendar-uEIsdBqGNk",
+  "collection": "guides/cryptpad-guide",
+  "locale": "en",
+  "title": "Shared calendar",
+  "breadcrumb": [
+    "Usage in Unit",
+    "Shared calendar"
+  ],
+  "createdAt": "2026-06-15T18:30:09.642Z",
+  "updatedAt": "2026-06-15T18:30:09.642Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Beyond shared files and collaborative editing, your unit team can keep a shared calendar. Here is how to create one and share it with the team.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Shared calendar (1/3)",
+          "layout": "image-bottom",
+          "html": "<p>In addition to files and collaborative editing, your team can use shared calendars. First, navigate to the <strong>Calendars</strong> menu.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/c33adf70d613d1b9.webp",
+              "width": 1462,
+              "height": 1022
+            }
+          ]
+        },
+        {
+          "title": "Shared calendar (2/3)",
+          "layout": "image-bottom",
+          "html": "<p>Create a new calendar and name it appropriately. Then select the <strong>Sharing</strong> menu.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/6cf48a40b61289a5.webp",
+              "width": 1468,
+              "height": 1180
+            }
+          ]
+        },
+        {
+          "title": "Shared calendar (3/3)",
+          "layout": "image-bottom",
+          "html": "<p>Share the calendar with the team. Your team members will then find this shared calendar in their own Calendars menu.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/206f8be3ff9dc2bd.webp",
+              "width": 1462,
+              "height": 1214
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

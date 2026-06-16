@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "id": "788b426b-5e77-4e6c-bc63-92fc2a2c55e2",
+  "slug": "blue-force-tracking-uv3kHr7LSr",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "Blue force tracking",
+  "breadcrumb": [
+    "Platforms",
+    "WinTAK",
+    "USING WINTAK FEATURES",
+    "Basic Features",
+    "Blue force tracking"
+  ],
+  "createdAt": "2026-06-15T13:53:00.074Z",
+  "updatedAt": "2026-06-15T13:53:00.074Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Once you are connected and on the map, WinTAK shows everyone in your unit in real time. This shared picture — who is where — is blue force tracking.</p>\n<blockquote>\n<p>Draft: written without screenshots. Add images of TAK users on the map and an opened user card when available.</p>\n</blockquote>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Everyone on one map",
+          "layout": "text",
+          "html": "<p>Other TAK users in your group appear on the map as icons. As they move (or update their position), their icons move too, so the whole unit shares one live picture of where everyone is.</p>",
+          "images": []
+        },
+        {
+          "title": "What the colours tell you",
+          "layout": "text",
+          "html": "<p>Each user's icon is shown in the colour that user (or their team) has set for themselves. Use the colours to tell teams apart at a glance — friendly elements, sub-units, command post.</p>",
+          "images": []
+        },
+        {
+          "title": "Read a user's details",
+          "layout": "text",
+          "html": "<p>Click a user's icon to open their card. From it you can read the information they share — typically their <strong>callsign</strong>, <strong>team</strong> and <strong>role</strong>, and <strong>when their position last updated</strong>. A stale update time is a hint their connection may be down.</p>",
+          "images": []
+        },
+        {
+          "title": "Keep your own position visible",
+          "layout": "text",
+          "html": "<p>Blue force tracking only works if everyone is on the map — so make sure your own location is set (see <strong>Setting up your own location</strong>). If a teammate is missing, they may not be connected yet, or may need to set their location manually.</p>",
+          "images": []
+        }
+      ]
+    }
+  ]
+}

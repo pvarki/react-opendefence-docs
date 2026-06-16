@@ -6,41 +6,43 @@
   "locale": "en",
   "title": "Use Geochat for comms",
   "breadcrumb": [
-    "TAK Clients",
+    "Platforms",
     "ATAK",
-    "Usage by Role",
+    "USAGE BY ROLE",
     "Fighter",
     "Use Geochat for comms"
   ],
   "createdAt": "2026-01-25T10:03:42.124Z",
-  "updatedAt": "2026-04-12T10:05:24.996Z",
+  "updatedAt": "2026-06-16T12:25:47.763Z",
   "headings": [],
   "blocks": [
     {
-      "type": "html",
-      "html": "<p>(This tab should not be shown)</p>"
-    },
-    {
       "type": "slideset",
-      "source": "legacy",
+      "source": "canonical",
       "slides": [
         {
           "title": "1. Use Geochat for Comms",
-          "layout": "text",
-          "html": "<p>TAK's Geochat provide simple textchannel communication.</p>",
-          "images": []
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>TAK's Geochat provide simple textchannel communication.</li>\n<li>Use it <strong>if your unit has ordered you to do so.</strong> An alternative for Geochat usage is Deploy App's Matrix, which is more robust but requires you to use the <strong>Element</strong> app aside of ATAK.</li>\n<li>For Matrix/Element guide, please see Guides → Matrix.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/4673d7d14af04ebb.webp",
+              "width": 200,
+              "height": 166
+            }
+          ]
         },
         {
           "title": "OpenDefence standard model",
-          "layout": "text",
-          "html": "<p>Let us have <strong>four</strong> channels in our unit, eg. Company:</p>\n<ul>\n<li>COMMAND Channel</li>\n<li>BLUFOR Channel</li>\n<li>RECON Channel</li>\n<li>COMMON Channel\nAside of them, use direct messages.</li>\n</ul>",
-          "images": []
-        },
-        {
-          "title": "A Channel",
-          "layout": "text",
-          "html": "<p>Unit-wide channel for each theme.\nNO chatting in eg. platoon or company-specific channel in a company or battalion server.\n<strong>Efficiency. Avoid comms silos.</strong></p>",
-          "images": []
+          "layout": "image-bottom",
+          "html": "<p>Let us have <strong>four</strong> channels in our unit, eg. Company:</p>\n<ul>\n<li>COMMAND Channel</li>\n<li>BLUFOR Channel</li>\n<li>RECON Channel</li>\n<li>COMMON Channel Aside of them, use direct messages.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/5b3baa45e81b5736.webp",
+              "width": 224,
+              "height": 228
+            }
+          ]
         },
         {
           "title": "COMMAND Channel",
@@ -92,15 +94,27 @@
         },
         {
           "title": "Using Direct Messages",
-          "layout": "text",
-          "html": "<p>Use direct messages for comms specific to you.\n<strong>The rule of thumb:</strong> What is of no use to anybody but you and the recipient, should be DM'd.</p>",
-          "images": []
+          "layout": "image-bottom",
+          "html": "<p>Use direct messages for comms specific to you. <strong>The rule of thumb:</strong> What is of no use to anybody but you and the recipient, should be DM'd.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/89257cabbbe2780f.webp",
+              "width": 192,
+              "height": 163
+            }
+          ]
         },
         {
           "title": "DM Example",
-          "layout": "text",
+          "layout": "image-bottom",
           "html": "<ul>\n<li>Subordinate asks, \"Is BLUE 50 available? Need service to a generator.\"</li>\n<li>Command post answers, \"Will relay and report answer.\"</li>\n</ul>",
-          "images": []
+          "images": [
+            {
+              "src": "/content/images/en/attachments/e7cd7378de07ff3d.webp",
+              "width": 213,
+              "height": 177
+            }
+          ]
         }
       ]
     }

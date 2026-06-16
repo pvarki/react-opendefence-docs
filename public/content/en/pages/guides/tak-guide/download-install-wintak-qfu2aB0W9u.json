@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 1,
+  "id": "c2dbbfb2-9dff-4d2e-95c9-3ada7707f248",
+  "slug": "download-install-wintak-qfu2aB0W9u",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "Download & install WinTAK",
+  "breadcrumb": [
+    "Platforms",
+    "WinTAK",
+    "START & CONNECT",
+    "Download & install WinTAK"
+  ],
+  "createdAt": "2026-06-14T14:29:35.209Z",
+  "updatedAt": "2026-06-16T10:55:51.358Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Everything you need to set up WinTAK comes from Deploy App's <strong>TAK</strong> page — the WinTAK installer and your personal Client Package. Download both, then run the installer.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Open Deploy App's TAK page",
+          "layout": "text",
+          "html": "<p>Open Deploy App and go to the <strong>TAK</strong> page. It gives WinTAK users two downloads: the WinTAK application and your Client Package.</p>",
+          "images": []
+        },
+        {
+          "title": "Download WinTAK",
+          "layout": "text",
+          "html": "<p>Download the WinTAK application from the <strong>Defence Forces' designated location</strong> — the link is on the TAK page.</p>\n<p>Important: only download Windows applications from the instructed location.</p>",
+          "images": []
+        },
+        {
+          "title": "Download your Client Package",
+          "layout": "text",
+          "html": "<p>Press the green <strong>Download your Client Package</strong> button (also on the front page) and save the <code>.zip</code> file. You will point WinTAK at this package after installing.</p>",
+          "images": []
+        },
+        {
+          "title": "Extract the package and find the installer",
+          "layout": "image-bottom",
+          "html": "<p>Find the downloaded WinTAK <code>.zip</code>, extract it, and locate the <code>.msi</code> installer inside the zip's <strong>Products</strong> folder. Double-click the <code>.msi</code> to open the installer.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/a837f7266418b504.webp",
+              "width": 356,
+              "height": 32
+            }
+          ]
+        },
+        {
+          "title": "Run the Setup Wizard",
+          "layout": "image-bottom",
+          "html": "<p>Install WinTAK with the Setup Wizard. Press <strong>Next</strong>, then choose the installation folder.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/dd306d17588aaf12.webp",
+              "width": 428,
+              "height": 340
+            }
+          ]
+        },
+        {
+          "title": "Choose the install folder",
+          "layout": "image-bottom",
+          "html": "<p>Optionally change the folder with <strong>Browse</strong>, then press <strong>Next</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/2b1f95692aab5d36.webp",
+              "width": 428,
+              "height": 340
+            }
+          ]
+        },
+        {
+          "title": "Select components — include Data Sync",
+          "layout": "image-bottom",
+          "html": "<p>Select the components to install. Select <strong>at least</strong>:</p>\n<ul>\n<li><strong>Data Sync</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/c87276ce4ad45cd0.webp",
+              "width": 428,
+              "height": 340
+            }
+          ]
+        },
+        {
+          "title": "Install",
+          "layout": "image-bottom",
+          "html": "<p>Press <strong>Next</strong>. When the Wizard is ready, press <strong>Install</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/b825f25aa95d2406.webp",
+              "width": 428,
+              "height": 340
+            }
+          ]
+        },
+        {
+          "title": "Finish",
+          "layout": "image-bottom",
+          "html": "<p>Press <strong>Next</strong> to finish. WinTAK is now installed — next, open it and import your Client Package.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/88a7bedf95dacbcc.webp",
+              "width": 428,
+              "height": 338
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

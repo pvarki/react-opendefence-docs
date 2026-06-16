@@ -120,6 +120,27 @@ describe("buildBook", () => {
     expect(tagged.readingOrder[0].title).toBe("Maps");
     expect(tagged.sidebar.items[0].label).toBe("Maps");
   });
+
+  it("extracts several platform tags into a multi-platform ref + sidebar item", () => {
+    const multi = buildBook(
+      [
+        node(
+          "Set up on desktop #tag:windows #tag:macos #tag:linux",
+          "setup-Gg77777777",
+        ),
+      ],
+      collection,
+      "en",
+    );
+    const ref = multi.readingOrder[0];
+    expect(ref.platforms).toEqual(["windows", "macos", "linux"]);
+    // Multi-platform pages aren't pinned to a single `platform`.
+    expect(ref.platform).toBeUndefined();
+    expect(ref.title).toBe("Set up on desktop");
+    const docItem = multi.sidebar.items[0];
+    expect(docItem.label).toBe("Set up on desktop");
+    expect(docItem.platforms).toEqual(["windows", "macos", "linux"]);
+  });
 });
 
 describe("buildBook platform model", () => {

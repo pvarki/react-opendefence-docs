@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "id": "c0da3adf-2dcd-4da8-b0f9-4eaf5deab3d7",
+  "slug": "find-reports-on-the-server-QTVm3SETE8",
+  "collection": "guides/tak-guide",
+  "locale": "en",
+  "title": "Find Reports on the Server",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "Supported Plugins",
+    "Reports",
+    "Find Reports on the Server"
+  ],
+  "createdAt": "2026-06-15T19:50:47.363Z",
+  "updatedAt": "2026-06-15T19:50:47.363Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Pull reports other units filed to the TAK Server, narrow them down, and save the ones you need to your own device.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Search the server",
+          "layout": "image-bottom",
+          "html": "<p>You need a live TAK Server connection. Select <strong>Search</strong>, type your text, then select <strong>Search</strong> again to run it. Matching reports fill the list and green icons mark their locations on the map.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/5774cf8de3b5964e.webp",
+              "width": 800,
+              "height": 561
+            }
+          ]
+        },
+        {
+          "title": "Narrow with filters",
+          "layout": "image-bottom",
+          "html": "<p>Select <strong>Filter</strong> to add parameters such as <strong>Current Map View</strong>, <strong>Date Range</strong>, <strong>Limit Shown To</strong> or <strong>Report Type</strong>. You can stack more than one at a time, then select <strong>Confirm</strong> to update the results.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/643415a2b393deaa.webp",
+              "width": 800,
+              "height": 718
+            }
+          ]
+        },
+        {
+          "title": "Download a report",
+          "layout": "image-bottom",
+          "html": "<p>Select a report in the list to expand its summary and pan to it on the map. Select <strong>Download</strong> to the right of the entry to save a local copy. The map icon changes from green to white once it is saved.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/be983a1b06fc461e.webp",
+              "width": 800,
+              "height": 314
+            }
+          ]
+        },
+        {
+          "title": "Edit a local report",
+          "layout": "image-bottom",
+          "html": "<p>Open the saved report from the Reports panel. Select <strong>Details</strong> (from the list or the map marker radial) to view and edit it, change the fields you need, then select <strong>Save Draft</strong> for a local copy or <strong>Upload</strong> to save and send.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/dd7ec43088ae27a5.webp",
+              "width": 422,
+              "height": 219
+            }
+          ]
+        },
+        {
+          "title": "Show or hide on the map",
+          "layout": "image-bottom",
+          "html": "<p>Select the <strong>Visibility</strong> button to toggle whether the report shows on the map. Use it to clear clutter without deleting your local copy.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/dd7ec43088ae27a5.webp",
+              "width": 422,
+              "height": 219
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

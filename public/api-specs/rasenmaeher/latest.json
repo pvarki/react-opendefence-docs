@@ -1,8 +1,9 @@
 {
   "openapi": "3.1.0",
   "info": {
-    "title": "FastAPI",
-    "version": "1.4.0"
+    "title": "Deploy App Core API",
+    "version": "1.4.0",
+    "description": "The **Deploy App Core API** (codename *RASENMAEHER*) is the identity,\ncertificate and enrollment backend behind Deploy App. Product\nintegrations and operators use it to enroll users, issue and renew mTLS\nclient certificates, and validate access.\n\n## Base URL\n\nAll endpoints live under `/api/v1`. The host is assigned per deployment\n(for example `your-deployment.pvarki.fi`) — pick it in the server\nselector above or substitute your own instance's hostname.\n\n## Authentication\n\nEndpoints accept one of two credentials, depending on the operation:\n\n- **Bearer JWT** — send `Authorization: Bearer <token>` (scheme\n  `JWTBearer`).\n- **mTLS client certificate** — present your client certificate; the\n  mTLS-terminating proxy forwards it to the API (schemes `MTLSHeader` /\n  `MTLSorJWT`). Some operations accept either, or additionally require a\n  valid user (`ValidUser`).\n\nEach operation below lists the exact credential it expects."
   },
   "paths": {
     "/api/v1/healthcheck": {
@@ -3181,5 +3182,17 @@
         "scheme": "header"
       }
     }
-  }
+  },
+  "servers": [
+    {
+      "url": "https://{deployment}.pvarki.fi",
+      "description": "Your Deploy App deployment. The host is assigned per installation; replace {deployment} with your instance's hostname.",
+      "variables": {
+        "deployment": {
+          "default": "your-deployment",
+          "description": "Deployment hostname prefix assigned to your Deploy App instance."
+        }
+      }
+    }
+  ]
 }

@@ -6,12 +6,23 @@
  * the right platform organizer. The existing `pnpm sync` then pulls it into the
  * app — this script only writes to Outline.
  *
- *   pnpm author:push <draftDir> [--chapter "Title"] [--publish] [--dry-run]
+ *   pnpm author:push <draftDir> [--chapter "Title"] [--append] [--publish] [--dry-run]
+ *
+ * --append adds the draft's `## ` slides to an existing same-titled page instead
+ * of replacing its body — used to augment a chapter while keeping its current
+ * branded slides. The draft's intro text before the first H2 is ignored.
  *
  * Examples:
  *   pnpm author:push drafts/deploy-app/android/install-deploy-app --dry-run
  *   pnpm author:push drafts/deploy-app/android/install-deploy-app --chapter "Getting Started"
  *   pnpm author:push drafts/matrix/_/join-a-room --publish
+ *
+ * --chapter accepts a nested organizer path; all but the last segment become
+ * `META: toporg` section headings, the last is the chapter that holds the page:
+ *   pnpm author:push drafts/tak/atak/overlay-manager \
+ *     --chapter "USING ATAK FEATURES/Advanced Features"
+ *   pnpm author:push drafts/tak/atak/open-uas-tool \
+ *     --chapter "USING ATAK FEATURES/Supported Plugins/UAS Tool"
  *
  * The draft folder path encodes the target: drafts/<product>/<platform>/<slug>
  * ("_" platform = platform-agnostic book → pages hang off the En locale root).
@@ -31,6 +42,9 @@ const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
 const args = process.argv.slice(2);
 const dryRun = args.includes("--dry-run");
 const publish = args.includes("--publish");
+// --append adds the draft's slides to an existing page instead of replacing it
+// (used to augment a chapter without clobbering its current branded slides).
+const append = args.includes("--append");
 const chapterIdx = args.indexOf("--chapter");
 const chapter = chapterIdx >= 0 ? args[chapterIdx + 1] : undefined;
 const chapterValueIdx = chapterIdx >= 0 ? chapterIdx + 1 : -1;
@@ -40,7 +54,7 @@ const draftArg = args.find(
 
 if (!draftArg) {
   console.error(
-    'Usage: pnpm author:push <draftDir> [--chapter "Title"] [--publish] [--dry-run]',
+    'Usage: pnpm author:push <draftDir> [--chapter "Title"] [--append] [--publish] [--dry-run]',
   );
   process.exit(1);
 }
@@ -153,41 +167,98 @@ async function main() {
 
   // Resolve hierarchy (read-only — safe in dry-run too).
   const platformParentId = await resolveParentId();
-  let parentId = platformParentId;
-  let chapterExisting: { id: string; title: string } | undefined;
-  if (chapter) {
-    chapterExisting = await findChildByTitle(platformParentId, chapter);
-    if (chapterExisting) parentId = chapterExisting.id;
+
+  // --chapter accepts a nested path, e.g. "USING ATAK FEATURES/Advanced Features".
+  // Every segment except the last is a section-heading toporg (created with
+  // `META: toporg`); the last segment is the chapter organizer that directly
+  // holds the leaf page. A single segment (no "/") is the classic one-level case.
+  const chapterSegments = chapter
+    ? chapter
+        .split("/")
+        .map((s) => s.trim())
+        .filter(Boolean)
+    : [];
+  const isToporgLevel = (i: number) => i < chapterSegments.length - 1;
+
+  // Phase 1 — read-only plan. Walk existing segments; the first missing one
+  // (and everything below it) is new, so we stop looking up once a level is
+  // absent (its children can't exist yet).
+  let resolvedParentId = platformParentId;
+  let firstMissingIdx = chapterSegments.length;
+  const segInfo: Array<{ title: string; id?: string }> = [];
+  for (let i = 0; i < chapterSegments.length; i++) {
+    if (i < firstMissingIdx) {
+      const existing = await findChildByTitle(
+        resolvedParentId,
+        chapterSegments[i],
+      );
+      if (existing) {
+        resolvedParentId = existing.id;
+        segInfo.push({ title: chapterSegments[i], id: existing.id });
+        continue;
+      }
+      firstMissingIdx = i;
+    }
+    segInfo.push({ title: chapterSegments[i] });
   }
-  const leafParentForLookup = chapterExisting?.id ?? platformParentId;
-  const existingLeaf = await findChildByTitle(leafParentForLookup, title);
+  const chainFullyExists = firstMissingIdx >= chapterSegments.length;
+  // The leaf's parent is only known when the whole chain already exists.
+  const leafParentId = chainFullyExists ? resolvedParentId : undefined;
+  const existingLeaf = leafParentId
+    ? await findChildByTitle(leafParentId, title)
+    : undefined;
 
   console.log(`\nParent organizer: ${platformParentId}`);
-  if (chapter) {
+  for (let i = 0; i < segInfo.length; i++) {
+    const kind = isToporgLevel(i) ? "toporg" : "chapter";
     console.log(
-      `Chapter "${chapter}": ${chapterExisting ? `exists (${chapterExisting.id})` : "will be CREATED"}`,
+      `  ${"  ".repeat(i)}↳ ${kind} "${segInfo[i].title}": ${
+        segInfo[i].id
+          ? `exists (${segInfo[i].id})`
+          : `will be CREATED (${kind})`
+      }`,
     );
   }
+  const leafAction = existingLeaf
+    ? append
+      ? "APPEND slides"
+      : "UPDATE"
+    : "will be CREATED";
   console.log(
-    `Leaf page "${title}": ${existingLeaf ? `exists (${existingLeaf.id}) → UPDATE` : "will be CREATED"}`,
+    `Leaf page "${title}": ${existingLeaf ? `exists (${existingLeaf.id}) → ${leafAction}` : leafAction}`,
   );
+
+  if (append && !existingLeaf) {
+    console.error(
+      `\n✗ --append needs an existing page titled "${title}" to add slides to, but none was found under that chapter.`,
+    );
+    process.exit(1);
+  }
 
   if (dryRun) {
     console.log("\n(dry run — no uploads or writes performed)");
     return;
   }
 
-  // 1) Create the chapter organizer if needed.
-  if (chapter && !chapterExisting) {
+  // Phase 2 — create each missing organizer level top-down.
+  let parentId = platformParentId;
+  for (let i = 0; i < chapterSegments.length; i++) {
+    const segId = segInfo[i].id;
+    if (segId) {
+      parentId = segId;
+      continue;
+    }
+    const kind = isToporgLevel(i) ? "toporg" : "chapter";
     const created = await client.createDocument({
       collectionId: product.collectionId,
-      parentDocumentId: platformParentId,
-      title: chapter,
-      text: "",
+      parentDocumentId: parentId,
+      title: chapterSegments[i],
+      // toporgs render as non-clickable section headings; chapters group pages.
+      text: isToporgLevel(i) ? "META: toporg\n" : "",
       publish: true, // organizers are structural — always published
     });
     parentId = created.id;
-    console.log(`+ created chapter "${chapter}" → ${created.url}`);
+    console.log(`+ created ${kind} "${chapterSegments[i]}" → ${created.url}`);
     await sleep(150);
   }
 
@@ -208,7 +279,21 @@ async function main() {
   );
 
   // 3) Create or update the leaf page.
-  if (existingLeaf) {
+  if (existingLeaf && append) {
+    // Augment: keep the current body (and its branded slides) and append only
+    // this draft's slides — everything from the first H2 onward.
+    const slidesStart = finalBody.search(/^##\s/m);
+    const newSlides =
+      slidesStart >= 0 ? finalBody.slice(slidesStart).trimEnd() : "";
+    if (!newSlides) {
+      console.error("✗ --append: draft has no `## ` slides to add.");
+      process.exit(1);
+    }
+    const current = (await client.getDocumentText(existingLeaf.id)).trimEnd();
+    const merged = `${current}\n\n${newSlides}\n`;
+    await client.updateDocument(existingLeaf.id, merged, { publish });
+    console.log(`✓ appended slides to "${title}" (${existingLeaf.id})`);
+  } else if (existingLeaf) {
     await client.updateDocument(existingLeaf.id, finalBody, { publish });
     console.log(`✓ updated leaf page "${title}" (${existingLeaf.id})`);
   } else {

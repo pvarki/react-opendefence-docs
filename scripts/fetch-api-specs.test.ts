@@ -11,6 +11,13 @@ const ghPagesSource: ApiSpecSource = {
   name: "Core API",
   kind: "gh-pages",
   url: "https://example.com/openapi.json",
+  overlay: {
+    title: "Branded Core API",
+    description: "Overview text.",
+    servers: [
+      { url: "https://{host}.example.com", description: "Per deploy." },
+    ],
+  },
 };
 
 const releaseSource: ApiSpecSource = {
@@ -124,6 +131,20 @@ describe("fetchApiSpecs", () => {
       await fs.readFile(path.join(outDir, "core", "latest.json"), "utf-8"),
     );
     expect(spec.openapi).toBe("3.0.0");
+  });
+
+  it("applies the source overlay (title/description/servers) to the written spec", async () => {
+    const spec = JSON.parse(
+      await fs.readFile(path.join(outDir, "core", "latest.json"), "utf-8"),
+    );
+    // Upstream spec had no info block — overlay must create it.
+    expect(spec.info).toMatchObject({
+      title: "Branded Core API",
+      description: "Overview text.",
+    });
+    expect(spec.servers).toEqual([
+      { url: "https://{host}.example.com", description: "Per deploy." },
+    ]);
   });
 
   it("downloads release assets newest-first, skipping drafts, capped at maxVersions", async () => {
