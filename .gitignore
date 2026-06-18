@@ -30,6 +30,4 @@ backups/
 .tanstack/
 /drafts
 scripts/author/push-kotlin-page.ts
-
-# Private raw captures of gated tak.gov dev docs (never commit — see ASSESSMENT.md)
 drafts/tak-developing-guide/_source/
