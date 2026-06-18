@@ -2,12 +2,5 @@
   "schemaVersion": 1,
   "label": "TAK Guide",
   "slug": "guides/tak-guide",
-  "items": [
-    {
-      "type": "doc",
-      "id": "platforms-tZOlEzNVd6",
-      "label": "Platforms",
-      "slug": "platforms-tZOlEzNVd6"
-    }
-  ]
+  "items": []
 }

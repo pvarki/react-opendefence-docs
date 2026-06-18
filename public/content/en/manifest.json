@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "locale": "en",
-  "generatedAt": "2026-06-16T21:03:53.357Z",
+  "generatedAt": "2026-06-18T16:54:09.476Z",
   "collections": [
     {
       "slug": "deploy-app",
@@ -650,7 +650,7 @@
         "Feeds with Data Sync"
       ],
       "path": "/content/en/pages/guides/tak-guide/feeds-with-data-sync-thmayduqMx.json",
-      "updatedAt": "2026-06-16T18:02:29.472Z",
+      "updatedAt": "2026-06-16T21:54:01.872Z",
       "order": 7,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
@@ -753,18 +753,18 @@
       "chapterLabel": "Basic Core Features"
     },
     {
-      "id": "f3eb5975-f657-4092-a074-9cd9356aa07e",
-      "slug": "feed-timeline-view-Ykwnn1hgWm",
+      "id": "9bb35061-2c64-4718-9273-c11847dfa322",
+      "slug": "create-manage-feeds-z2CpC9Lpan",
       "collection": "guides/tak-guide",
-      "title": "Feed Timeline View",
+      "title": "Create & Manage Feeds",
       "breadcrumb": [
         "Platforms",
         "ATAK",
         "Advanced Core Features",
-        "Feed Timeline View"
+        "Create & Manage Feeds"
       ],
-      "path": "/content/en/pages/guides/tak-guide/feed-timeline-view-Ykwnn1hgWm.json",
-      "updatedAt": "2026-06-16T18:02:43.877Z",
+      "path": "/content/en/pages/guides/tak-guide/create-manage-feeds-z2CpC9Lpan.json",
+      "updatedAt": "2026-06-16T21:54:46.926Z",
       "order": 13,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
@@ -791,25 +791,6 @@
       "chapterLabel": "Advanced Core Features"
     },
     {
-      "id": "9bb35061-2c64-4718-9273-c11847dfa322",
-      "slug": "create-manage-feeds-z2CpC9Lpan",
-      "collection": "guides/tak-guide",
-      "title": "Create & Manage Feeds",
-      "breadcrumb": [
-        "Platforms",
-        "ATAK",
-        "Advanced Core Features",
-        "Create & Manage Feeds"
-      ],
-      "path": "/content/en/pages/guides/tak-guide/create-manage-feeds-z2CpC9Lpan.json",
-      "updatedAt": "2026-06-15T19:42:22.210Z",
-      "order": 15,
-      "platform": "android",
-      "clientId": "atak-sGxUIXpQlU",
-      "chapterId": "advanced-core-features-w8JvOrLVwe",
-      "chapterLabel": "Advanced Core Features"
-    },
-    {
       "id": "2676ebbb-83f4-4569-a7a2-7050395f28c8",
       "slug": "draw-share-plans-fxjT3hDZ5p",
       "collection": "guides/tak-guide",
@@ -822,6 +803,25 @@
       ],
       "path": "/content/en/pages/guides/tak-guide/draw-share-plans-fxjT3hDZ5p.json",
       "updatedAt": "2026-06-16T10:15:20.448Z",
+      "order": 15,
+      "platform": "android",
+      "clientId": "atak-sGxUIXpQlU",
+      "chapterId": "advanced-core-features-w8JvOrLVwe",
+      "chapterLabel": "Advanced Core Features"
+    },
+    {
+      "id": "f3eb5975-f657-4092-a074-9cd9356aa07e",
+      "slug": "feed-timeline-view-Ykwnn1hgWm",
+      "collection": "guides/tak-guide",
+      "title": "Feed Timeline View",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "Advanced Core Features",
+        "Feed Timeline View"
+      ],
+      "path": "/content/en/pages/guides/tak-guide/feed-timeline-view-Ykwnn1hgWm.json",
+      "updatedAt": "2026-06-16T18:02:43.877Z",
       "order": 16,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
