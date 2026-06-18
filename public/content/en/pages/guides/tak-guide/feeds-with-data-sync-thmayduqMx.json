@@ -12,7 +12,7 @@
     "Feeds with Data Sync"
   ],
   "createdAt": "2025-12-05T22:06:22.487Z",
-  "updatedAt": "2026-06-16T18:02:29.472Z",
+  "updatedAt": "2026-06-16T21:54:01.872Z",
   "headings": [],
   "blocks": [
     {
@@ -70,7 +70,7 @@
         {
           "title": "Creating, managing and subscribing feeds",
           "layout": "text",
-          "html": "<ul>\n<li>Creating, sharing and subscribing Feeds for eg. sharing a plan to a mission is easy.</li>\n<li>See Advanced features - <strong>'Create &#x26; Manage Feeds'</strong> for further information.</li>\n</ul>\n<p>After successful connection to RECON feed, continue to <a href=\"/doc/82c77545-7b47-4c8a-bf4b-2701a1bb3943\">Blue force tracking</a></p>",
+          "html": "<ul>\n<li>Creating, sharing and subscribing Feeds for eg. sharing a plan to a mission is easy.</li>\n<li>See Advanced features - <strong>'Create &#x26; Manage Feeds'</strong> for further information.</li>\n</ul>",
           "images": []
         },
         {

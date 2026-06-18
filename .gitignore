@@ -30,3 +30,4 @@ backups/
 .tanstack/
 /drafts
 scripts/author/push-kotlin-page.ts
+drafts/tak-developing-guide/_source/
