@@ -79,28 +79,28 @@
       "label": "MTX Guide",
       "description": "Learn how to stream and view video from drones and phones",
       "section": "guides",
-      "order": 2
+      "order": 1
     },
     {
       "slug": "guides/matrix-guide",
       "label": "Matrix Guide",
       "description": "Learn how to use Matrix for secure messaging with Deploy App",
       "section": "guides",
-      "order": 3
+      "order": 2
     },
     {
       "slug": "guides/cryptpad-guide",
       "label": "CryptPad Guide",
       "description": "Learn how to share files and work together with CryptPad",
       "section": "guides",
-      "order": 4
+      "order": 3
     },
     {
       "slug": "wikis/tak",
       "label": "TAK Wiki",
       "description": "TAK technical reference",
       "section": "wikis",
-      "order": 5,
+      "order": 4,
       "clients": [
         {
           "id": "atak-android-tak-oeRRt7n8VG",
@@ -119,7 +119,7 @@
       "label": "MTX Wiki",
       "description": "MTX technical reference",
       "section": "wikis",
-      "order": 6
+      "order": 5
     }
   ],
   "pages": [
