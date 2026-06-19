@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "66cb9be2-4a2b-4995-9ce3-410550ca1b97",
+  "slug": "fa-varningar-med-geostangsel-YvTX3n2Ucj",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Få varningar med geostängsel",
+  "breadcrumb": [
+    "Platforms",
+    "WinTAK",
+    "AVANCERADE KÄRNFUNKTIONER",
+    "Få varningar med geostängsel"
+  ],
+  "createdAt": "2026-06-18T19:33:29.909Z",
+  "updatedAt": "2026-06-18T20:23:53.414Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/get-alerts-with-geofences-Y1Bgr7UInI",
+    "fi": "/fi/guides/tak-guide/saa-halytyksia-geoaidoilla-4MYhNMrI4D",
+    "sv": "/sv/guides/tak-guide/fa-varningar-med-geostangsel-YvTX3n2Ucj"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Ett geostängsel är en gräns du ritar på kartan som utlöser en varning när något korsar den — så att du kan bevaka ett område utan att stirra på skärmen.</p>\n<blockquote>\n<p>Utkast: skrivet utan skärmbilder. Lägg till skärmbilder av WinTAK-geostängsel när de finns tillgängliga.</p>\n</blockquote>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Vad ett geostängsel gör",
+          "layout": "text",
+          "html": "<p>Ett geostängsel bevakar en form på kartan och meddelar dig när ett spårat objekt <strong>går in i</strong> eller <strong>lämnar</strong> det. Använd det för att bevaka en framryckningsväg, en gräns eller ett förbjudet område.</p>",
+          "images": []
+        },
+        {
+          "title": "Skapa ett geostängsel",
+          "layout": "text",
+          "html": "<p>Rita ett <strong>område</strong> (cirkel eller polygon) med ritverktygen och gör det sedan till ett geostängsel via dess inställningar. Geostängslet är knutet till den formen.</p>",
+          "images": []
+        },
+        {
+          "title": "Ställ in varningsvillkoren",
+          "layout": "text",
+          "html": "<p>Välj vad som utlöser varningen — inträde och/eller utträde — och vilka objekt som ska bevakas (till exempel fientliga eller okända spår). Justera det så att du får användbara varningar, inte brus.</p>",
+          "images": []
+        },
+        {
+          "title": "Ta emot varningar",
+          "layout": "text",
+          "html": "<p>När villkoret uppfylls varnar WinTAK dig och markerar korsningen på kartan. Kvittera den, bedöm läget och rapportera via RECON-flödet eller dina meddelandeverktyg efter behov.</p>",
+          "images": []
+        }
+      ]
+    }
+  ]
+}

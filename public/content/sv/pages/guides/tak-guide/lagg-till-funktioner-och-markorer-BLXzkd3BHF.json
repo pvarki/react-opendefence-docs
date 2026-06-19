@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 1,
+  "id": "4f94165d-258c-48f8-b98e-7ee09c1bb233",
+  "slug": "lagg-till-funktioner-och-markorer-BLXzkd3BHF",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Lägg till funktioner och markörer",
+  "breadcrumb": [
+    "Platforms",
+    "WinTAK",
+    "Plugin-program som stöds",
+    "GRG Builder",
+    "Lägg till funktioner och markörer"
+  ],
+  "createdAt": "2026-06-18T19:34:32.870Z",
+  "updatedAt": "2026-06-18T20:24:53.056Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/add-features-markers-9dYxguZls8",
+    "fi": "/fi/guides/tak-guide/lisaa-ominaisuuksia-ja-merkintoja-6rG5M5SnNo",
+    "sv": "/sv/guides/tak-guide/lagg-till-funktioner-och-markorer-BLXzkd3BHF"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Utöver själva rutnätet kan en GRG innehålla kartreferenser och markörer. Öppna <strong>Edit GRG > Edit GRG Components</strong> och expandera varje objekt för att lägga till det.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Lägg till ett hårkors",
+          "layout": "image-bottom",
+          "html": "<p><strong>Crosshair</strong> placerar ett siktkors på rutnätet. Flytta det med <strong>Move Crosshair</strong>, ställ in dess färg och opacitet samt justera storleken. Slå på och av det med kryssrutan <strong>Show Crosshair</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/a2c1c8ef2e90e531.webp",
+              "width": 192,
+              "height": 95
+            }
+          ]
+        },
+        {
+          "title": "Lägg till en inforuta",
+          "layout": "image-bottom",
+          "html": "<p><strong>InfoBox</strong> visar en märkt ruta på rutnätet. Redigera texten och färgerna för <strong>Title</strong>, <strong>Location</strong>, <strong>Date</strong> och <strong>Classification</strong>; ställ in Theme, Style, Placement och Text Alignment. Slå på och av den med kryssrutan <strong>Show Info Box</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/b334153ae9e6eb32.webp",
+              "width": 201,
+              "height": 283
+            }
+          ]
+        },
+        {
+          "title": "Lägg till en skalstock",
+          "layout": "image-bottom",
+          "html": "<p><strong>ScaleBar</strong> lägger till en skala som visar antingen cellintervall eller kartintervall. Cellintervallets värde är som standard Edit Grid-rutnätsavståndet; justera kartintervallets storlek och segmentvärden efter behov. Slå på och av den med kryssrutan <strong>Show Scale Bar</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/bb60a55890a28356.webp",
+              "width": 224,
+              "height": 116
+            }
+          ]
+        },
+        {
+          "title": "Lägg till en kompass",
+          "layout": "image-bottom",
+          "html": "<p><strong>Compass</strong> lägger till en nordreferens. Välj stil (<strong>Full</strong> eller <strong>True + Mag</strong>), dess position och deklination; med True + Mag kan du även ställa in färgen. Slå på och av den med kryssrutan <strong>Show Compass</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/576dc52c687eea2d.webp",
+              "width": 224,
+              "height": 151
+            }
+          ]
+        },
+        {
+          "title": "Lägg till markörer med Point Dropper",
+          "layout": "image-bottom",
+          "html": "<p>Välj <strong>Open Point Dropper</strong> för att placera markörer på rutnätet — välj en markörtyp och tryck på en position; använd pilarna för fler typer.</p>\n<ul>\n<li>Placerade markörer visas under <strong>Recently Added</strong>, där de kan skickas, redigeras eller raderas.</li>\n<li>Använd <strong>Edit Grid Markers > Name Markers</strong> för att automatiskt byta namn på punktmarkörer efter den kvadrant de hamnar i.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/5185b111cacafb99.webp",
+              "width": 354,
+              "height": 386
+            }
+          ]
+        },
+        {
+          "title": "Importera punkter från en fil",
+          "layout": "image-bottom",
+          "html": "<p>Importera markörer från en <strong>.csv</strong> eller <strong>.xlsx</strong> med <strong>Import Points</strong>.</p>\n<ul>\n<li>Kolumnerna Name, Prefix och Location (Lat/Long eller MGRS) krävs; Elevation, Remarks, Color och Type är valfria.</li>\n<li>Om en kolumn inte matchar låter fönstret <strong>Assign Columns</strong> dig mappa varje kolumn — eller ändra en markörs typ — innan importen.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/ce6cce34c43d139a.webp",
+              "width": 256,
+              "height": 227
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

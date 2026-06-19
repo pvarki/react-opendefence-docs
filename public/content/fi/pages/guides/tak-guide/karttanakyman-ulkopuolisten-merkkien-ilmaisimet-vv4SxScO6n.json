@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "d14b16c1-8db2-4b9b-81d0-8e85e7015f8e",
+  "slug": "karttanakyman-ulkopuolisten-merkkien-ilmaisimet-vv4SxScO6n",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Karttanäkymän ulkopuolisten merkkien ilmaisimet",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "LISÄOMINAISUUDET",
+    "Navigointi ja koordinaatit",
+    "Karttanäkymän ulkopuolisten merkkien ilmaisimet"
+  ],
+  "createdAt": "2026-06-18T19:28:22.286Z",
+  "updatedAt": "2026-06-18T20:19:39.375Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/off-screen-marker-indicators-OwR2HB0xVZ",
+    "fi": "/fi/guides/tak-guide/karttanakyman-ulkopuolisten-merkkien-ilmaisimet-vv4SxScO6n",
+    "sv": "/sv/guides/tak-guide/indikatorer-for-markorer-utanfor-skarmen-74d7IKYhZz"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Ota käyttöön nuolet, jotka osoittavat lähellä oleviin merkkeihin, jotka jäävät juuri karttanäkymäsi reunan ulkopuolelle, jotta tiedät mitä ympärilläsi on tarvitsematta loitontaa.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Open Other Overlays",
+          "layout": "image-bottom",
+          "html": "<p>Avaa <strong>Overlay Manager</strong> ja napauta sitten <strong>Other Overlays</strong>. Jokaisella rivillä on silmäkuvake, jota napauttamalla kyseinen taso otetaan käyttöön tai poistetaan käytöstä.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/f28caa1685cb737c.webp",
+              "width": 400,
+              "height": 191
+            }
+          ]
+        },
+        {
+          "title": "Toggle Off-Screen Indicators",
+          "layout": "image-bottom",
+          "html": "<p>Ota toiminto käyttöön napauttamalla silmäkuvaketta <strong>Off-Screen Indicators</strong> -rivillä. Tämän jälkeen kartan reunaan ilmestyy nuolia, jotka osoittavat juuri lisättyihin tai vastaanotettuihin merkkeihin, jotka ovat lähellä mutta nykyisen näkymäsi ulkopuolella (etäisyys riippuu zoomaustasosta).</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/d6879fdc07334ec1.webp",
+              "width": 400,
+              "height": 194
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

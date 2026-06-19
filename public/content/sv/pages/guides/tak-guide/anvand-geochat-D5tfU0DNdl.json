@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "e330aea0-62b8-4753-997d-ede95804b933",
+  "slug": "anvand-geochat-D5tfU0DNdl",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Använd GeoChat",
+  "breadcrumb": [
+    "Platforms",
+    "WinTAK",
+    "GRUNDLÄGGANDE KÄRNFUNKTIONER",
+    "Använd GeoChat"
+  ],
+  "createdAt": "2026-06-18T19:33:25.668Z",
+  "updatedAt": "2026-06-18T20:23:41.110Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/use-geochat-G4fqV0Y4fg",
+    "fi": "/fi/guides/tak-guide/kayta-geochatia-F9hZhCTnub",
+    "sv": "/sv/guides/tak-guide/anvand-geochat-D5tfU0DNdl"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>GeoChat är WinTAK:s inbyggda textmeddelandefunktion. Använd den för att koordinera med din enhet utan att lämna kartan.</p>\n<blockquote>\n<p>Utkast: skrivet utan skärmbilder. Lägg till WinTAK GeoChat-skärmbilder när de finns tillgängliga.</p>\n</blockquote>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Öppna GeoChat",
+          "layout": "text",
+          "html": "<p>Öppna <strong>GeoChat</strong> från WinTAK:s verktygsfält.</p>\n<ul>\n<li>Den listar dina konversationer — allmän chatt, lag/grupper och enskilda användare.</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "Välj vem du skickar till",
+          "layout": "text",
+          "html": "<p>Välj mottagare: hela nätet (<strong>All Chat Rooms</strong>), ett specifikt <strong>team / group</strong> eller en enskild <strong>user</strong>. Att skicka till rätt mottagarkrets håller nätet rent och respekterar OPSEC.</p>",
+          "images": []
+        },
+        {
+          "title": "Skicka ett meddelande",
+          "layout": "text",
+          "html": "<p>Skriv ditt meddelande och skicka. Håll det kort och entydigt; följ din enhets rapporteringsformat och använd täcktermer för känsliga detaljer.</p>",
+          "images": []
+        },
+        {
+          "title": "Meddelanden och kartan",
+          "layout": "text",
+          "html": "<p>GeoChat är platsmedveten — meddelanden kan bära en position, och du kan hoppa från ett meddelande till den punkt på kartan som det hänvisar till. För längre eller formaterad rapportering, använd de föreskrivna meddelandeverktygen enligt din enhets stående order.</p>",
+          "images": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 1,
+  "id": "292d3612-781d-4e13-a85b-67739e95ed75",
+  "slug": "installera-element-skrivbord-tagwindows-tagmacos-taglinux-CzxXo6adUl",
+  "collection": "guides/matrix-guide",
+  "locale": "sv",
+  "title": "Installera Element (skrivbord)",
+  "breadcrumb": [
+    "Anslut till servern",
+    "Installera Element (skrivbord)"
+  ],
+  "createdAt": "2026-06-18T20:33:52.770Z",
+  "updatedAt": "2026-06-18T20:37:51.049Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/matrix-guide/set-up-element-desktop-tagwindows-tagmacos-taglinux-KspjTxDpoH",
+    "fi": "/fi/guides/matrix-guide/asenna-element-tyopoyta-tagwindows-tagmacos-taglinux-Zn1epPrcp6",
+    "sv": "/sv/guides/matrix-guide/installera-element-skrivbord-tagwindows-tagmacos-taglinux-CzxXo6adUl"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Installera Element-klienten på din dator och anslut den till din enhets Matrix-hemserver. Den här guiden använder Element, men stegen är liknande i alla Matrix-applikationer. Tar ungefär fem minuter.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Välkommen till Matrix",
+          "layout": "image-bottom",
+          "html": "<p>Den här guiden använder Element-applikationen, men du kan använda vilken Matrix-applikation som helst — stegen är liknande även på andra håll.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/5239bfbb830a52b8.webp",
+              "width": 1918,
+              "height": 1113
+            }
+          ]
+        },
+        {
+          "title": "Förutsättningar",
+          "layout": "image-bottom",
+          "html": "<p>Kopiera hemserverns adress (1). Du kan när som helst återvända till den här guiden från det nedre högra hörnet (2).</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/fce8ba119e6c9bf8.webp",
+              "width": 6013,
+              "height": 3525
+            }
+          ]
+        },
+        {
+          "title": "Logga in på Element",
+          "layout": "image-bottom",
+          "html": "<p>Öppna Element och välj <strong>Log in</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/7b7808cd50ac49f6.webp",
+              "width": 6006,
+              "height": 3526
+            }
+          ]
+        },
+        {
+          "title": "Redigera hemservern",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på <strong>Edit</strong> bredvid hemserverns adress.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/eed18535001dfe59.webp",
+              "width": 6006,
+              "height": 3526
+            }
+          ]
+        },
+        {
+          "title": "Klistra in serveradressen",
+          "layout": "image-bottom",
+          "html": "<p>Klistra in serveradressen du kopierade tidigare och tryck sedan på <strong>Continue</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/19d056702ecb3e94.webp",
+              "width": 6006,
+              "height": 3526
+            }
+          ]
+        },
+        {
+          "title": "Autentisera med Keycloak",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på <strong>Continue with Keycloak</strong>. Fortsätt i din webbläsare, som troligen ber om ditt mTLS-certifikat några gånger — autentisera med ditt mTLS-certifikat.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/aae0a2dfde68c631.webp",
+              "width": 6006,
+              "height": 3526
+            }
+          ]
+        },
+        {
+          "title": "Elements hemvy",
+          "layout": "image-bottom",
+          "html": "<p>Du är nu inloggad och kan använda Matrix. Visa eller skapa Spaces från sidofältet (1), och se eller starta direktmeddelanden från den vänstra panelen (2).</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/67b5165ce3509fde.webp",
+              "width": 6013,
+              "height": 3525
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

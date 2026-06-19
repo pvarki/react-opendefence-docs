@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "locale": "fi",
-  "generatedAt": "2026-06-18T16:54:09.476Z",
+  "generatedAt": "2026-06-19T14:40:25.959Z",
   "collections": [
     {
       "slug": "deploy-app",
@@ -15,6 +15,62 @@
           "label": "Android",
           "platform": "android",
           "os": "android"
+        },
+        {
+          "id": "ios-W14a7ZsDI4",
+          "label": "iOS",
+          "platform": "ios",
+          "os": "ios"
+        },
+        {
+          "id": "windows-KjeSm52R8U",
+          "label": "Windows",
+          "platform": "windows",
+          "os": "windows"
+        }
+      ]
+    },
+    {
+      "slug": "guides/tak-guide",
+      "label": "TAK Guide",
+      "description": "Learn how to use TAK for situational awareness",
+      "section": "guides",
+      "order": 1,
+      "clients": [
+        {
+          "id": "atak-cIgl1ujs22",
+          "label": "ATAK",
+          "platform": "android",
+          "os": "android",
+          "isProduct": true
+        },
+        {
+          "id": "wintak-gOdRRMN4lI",
+          "label": "WinTAK",
+          "platform": "windows",
+          "os": "windows",
+          "isProduct": true
+        },
+        {
+          "id": "itak-pzOFxqFSem",
+          "label": "iTAK",
+          "platform": "ios",
+          "os": "ios",
+          "isProduct": true
+        },
+        {
+          "id": "tak-tracker-android-E5prGxCUhh",
+          "label": "TAK Tracker - Android",
+          "platform": "android",
+          "os": "android",
+          "isProduct": true
+        },
+        {
+          "id": "tak-tracker-apple-fLXmWaMemp",
+          "label": "TAK Tracker - Apple",
+          "platform": "ios",
+          "os": "ios",
+          "isProduct": true
         }
       ]
     },
@@ -68,6 +124,19 @@
   ],
   "pages": [
     {
+      "id": "ef1e49fe-2f98-479a-b6d2-59645d01ddd4",
+      "slug": "johdanto-pVdcEzIB4j",
+      "collection": "deploy-app",
+      "title": "Johdanto",
+      "breadcrumb": [
+        "Platforms",
+        "Johdanto"
+      ],
+      "path": "/content/fi/pages/deploy-app/johdanto-pVdcEzIB4j.json",
+      "updatedAt": "2026-06-18T20:38:49.834Z",
+      "order": 0
+    },
+    {
       "id": "dbd14310-6179-4586-930b-1160b5dc45de",
       "slug": "liittyminen-deploy-appiin-hFiNczU5i7",
       "collection": "deploy-app",
@@ -80,7 +149,7 @@
       ],
       "path": "/content/fi/pages/deploy-app/liittyminen-deploy-appiin-hFiNczU5i7.json",
       "updatedAt": "2026-02-19T12:24:36.291Z",
-      "order": 0,
+      "order": 1,
       "platform": "android",
       "clientId": "android-vdSzGssyHX",
       "chapterId": "kayttajaohjeet-KILDyYvVV0",
@@ -99,7 +168,7 @@
       ],
       "path": "/content/fi/pages/deploy-app/sovellusten-kaytto-VdrL78Atgf.json",
       "updatedAt": "2026-02-25T07:29:18.849Z",
-      "order": 1,
+      "order": 2,
       "platform": "android",
       "clientId": "android-vdSzGssyHX",
       "chapterId": "kayttajaohjeet-KILDyYvVV0",
@@ -118,7 +187,7 @@
       ],
       "path": "/content/fi/pages/deploy-app/kayttoliittyma-9RSCOjN5ER.json",
       "updatedAt": "2026-02-25T07:32:33.936Z",
-      "order": 2,
+      "order": 3,
       "platform": "android",
       "clientId": "android-vdSzGssyHX",
       "chapterId": "kayttajaohjeet-KILDyYvVV0",
@@ -137,7 +206,7 @@
       ],
       "path": "/content/fi/pages/deploy-app/ensimmainen-kirjautuminen-VB4kdcfIUZ.json",
       "updatedAt": "2026-02-25T07:33:23.528Z",
-      "order": 3,
+      "order": 4,
       "platform": "android",
       "clientId": "android-vdSzGssyHX",
       "chapterId": "yllapitajaohjeet-9kIb7LsIOM",
@@ -156,7 +225,7 @@
       ],
       "path": "/content/fi/pages/deploy-app/lisaa-kayttajia-CPoyZ94C7z.json",
       "updatedAt": "2026-02-25T07:33:56.672Z",
-      "order": 4,
+      "order": 5,
       "platform": "android",
       "clientId": "android-vdSzGssyHX",
       "chapterId": "yllapitajaohjeet-9kIb7LsIOM",
@@ -175,7 +244,7 @@
       ],
       "path": "/content/fi/pages/deploy-app/hallitse-kayttajia-YrSqUxRf2V.json",
       "updatedAt": "2026-02-25T07:34:51.649Z",
-      "order": 5,
+      "order": 6,
       "platform": "android",
       "clientId": "android-vdSzGssyHX",
       "chapterId": "yllapitajaohjeet-9kIb7LsIOM",
@@ -194,11 +263,2676 @@
       ],
       "path": "/content/fi/pages/deploy-app/kayta-ulkoisia-palveluita-3RiDEDjjg0.json",
       "updatedAt": "2026-02-25T07:35:24.784Z",
-      "order": 6,
+      "order": 7,
       "platform": "android",
       "clientId": "android-vdSzGssyHX",
       "chapterId": "yllapitajaohjeet-9kIb7LsIOM",
       "chapterLabel": "Ylläpitäjäohjeet"
+    },
+    {
+      "id": "46afbe5e-3d09-4684-b2fd-c6e946eb5fb6",
+      "slug": "liittyminen-deploy-appiin-Jy261fSdzF",
+      "collection": "deploy-app",
+      "title": "Liittyminen Deploy Appiin",
+      "breadcrumb": [
+        "Platforms",
+        "iOS",
+        "Käyttäjäohjeet",
+        "Liittyminen Deploy Appiin"
+      ],
+      "path": "/content/fi/pages/deploy-app/liittyminen-deploy-appiin-Jy261fSdzF.json",
+      "updatedAt": "2026-06-18T20:38:54.238Z",
+      "order": 8,
+      "platform": "ios",
+      "clientId": "ios-W14a7ZsDI4",
+      "chapterId": "kayttajaohjeet-tmHgIS6QIb",
+      "chapterLabel": "Käyttäjäohjeet"
+    },
+    {
+      "id": "5be62a4d-4647-4305-aa47-b23a0511ba31",
+      "slug": "sovellusten-kayttaminen-AZUWkin399",
+      "collection": "deploy-app",
+      "title": "Sovellusten käyttäminen",
+      "breadcrumb": [
+        "Platforms",
+        "iOS",
+        "Käyttäjäohjeet",
+        "Sovellusten käyttäminen"
+      ],
+      "path": "/content/fi/pages/deploy-app/sovellusten-kayttaminen-AZUWkin399.json",
+      "updatedAt": "2026-06-18T20:38:55.954Z",
+      "order": 9,
+      "platform": "ios",
+      "clientId": "ios-W14a7ZsDI4",
+      "chapterId": "kayttajaohjeet-tmHgIS6QIb",
+      "chapterLabel": "Käyttäjäohjeet"
+    },
+    {
+      "id": "18aa9de5-d29e-4d75-b58a-2acaba195601",
+      "slug": "kayttoliittyma-AYxx37RhPK",
+      "collection": "deploy-app",
+      "title": "Käyttöliittymä",
+      "breadcrumb": [
+        "Platforms",
+        "iOS",
+        "Käyttäjäohjeet",
+        "Käyttöliittymä"
+      ],
+      "path": "/content/fi/pages/deploy-app/kayttoliittyma-AYxx37RhPK.json",
+      "updatedAt": "2026-06-18T20:38:57.205Z",
+      "order": 10,
+      "platform": "ios",
+      "clientId": "ios-W14a7ZsDI4",
+      "chapterId": "kayttajaohjeet-tmHgIS6QIb",
+      "chapterLabel": "Käyttäjäohjeet"
+    },
+    {
+      "id": "12f3b85b-1534-4bd4-80f5-4b0e06e1c5a0",
+      "slug": "ensimmainen-kirjautuminen-6xSLnWbWmV",
+      "collection": "deploy-app",
+      "title": "Ensimmäinen kirjautuminen",
+      "breadcrumb": [
+        "Platforms",
+        "iOS",
+        "Ylläpitäjäohjeet",
+        "Ensimmäinen kirjautuminen"
+      ],
+      "path": "/content/fi/pages/deploy-app/ensimmainen-kirjautuminen-6xSLnWbWmV.json",
+      "updatedAt": "2026-06-18T20:39:00.554Z",
+      "order": 11,
+      "platform": "ios",
+      "clientId": "ios-W14a7ZsDI4",
+      "chapterId": "yllapitajaohjeet-opJgK00Rlw",
+      "chapterLabel": "Ylläpitäjäohjeet"
+    },
+    {
+      "id": "cd919bc5-b7aa-4896-91f5-d1227f0e6db3",
+      "slug": "kayttajien-lisaaminen-A97x9tyG2o",
+      "collection": "deploy-app",
+      "title": "Käyttäjien lisääminen",
+      "breadcrumb": [
+        "Platforms",
+        "iOS",
+        "Ylläpitäjäohjeet",
+        "Käyttäjien lisääminen"
+      ],
+      "path": "/content/fi/pages/deploy-app/kayttajien-lisaaminen-A97x9tyG2o.json",
+      "updatedAt": "2026-06-18T20:39:02.322Z",
+      "order": 12,
+      "platform": "ios",
+      "clientId": "ios-W14a7ZsDI4",
+      "chapterId": "yllapitajaohjeet-opJgK00Rlw",
+      "chapterLabel": "Ylläpitäjäohjeet"
+    },
+    {
+      "id": "400cc76d-3f55-4c04-8006-86e367e83b8f",
+      "slug": "kayttajien-hallinta-ThmzgQfcOQ",
+      "collection": "deploy-app",
+      "title": "Käyttäjien hallinta",
+      "breadcrumb": [
+        "Platforms",
+        "iOS",
+        "Ylläpitäjäohjeet",
+        "Käyttäjien hallinta"
+      ],
+      "path": "/content/fi/pages/deploy-app/kayttajien-hallinta-ThmzgQfcOQ.json",
+      "updatedAt": "2026-06-18T20:39:04.127Z",
+      "order": 13,
+      "platform": "ios",
+      "clientId": "ios-W14a7ZsDI4",
+      "chapterId": "yllapitajaohjeet-opJgK00Rlw",
+      "chapterLabel": "Ylläpitäjäohjeet"
+    },
+    {
+      "id": "d4cc80ca-6e48-4385-b274-afd2fd36a219",
+      "slug": "ulkoiset-palvelut-SIWRaQtmte",
+      "collection": "deploy-app",
+      "title": "Ulkoiset palvelut",
+      "breadcrumb": [
+        "Platforms",
+        "iOS",
+        "Ylläpitäjäohjeet",
+        "Ulkoiset palvelut"
+      ],
+      "path": "/content/fi/pages/deploy-app/ulkoiset-palvelut-SIWRaQtmte.json",
+      "updatedAt": "2026-06-18T20:39:06.357Z",
+      "order": 14,
+      "platform": "ios",
+      "clientId": "ios-W14a7ZsDI4",
+      "chapterId": "yllapitajaohjeet-opJgK00Rlw",
+      "chapterLabel": "Ylläpitäjäohjeet"
+    },
+    {
+      "id": "40d58df4-c74a-41ab-86c8-f770f2161996",
+      "slug": "liity-deploy-app-sovellukseen-h2y5oF7JN4",
+      "collection": "deploy-app",
+      "title": "Liity Deploy App -sovellukseen",
+      "breadcrumb": [
+        "Platforms",
+        "Windows",
+        "Käyttäjäohjeet",
+        "Liity Deploy App -sovellukseen"
+      ],
+      "path": "/content/fi/pages/deploy-app/liity-deploy-app-sovellukseen-h2y5oF7JN4.json",
+      "updatedAt": "2026-06-18T20:39:11.159Z",
+      "order": 15,
+      "platform": "windows",
+      "clientId": "windows-KjeSm52R8U",
+      "chapterId": "kayttajaohjeet-0lLKAWitYN",
+      "chapterLabel": "Käyttäjäohjeet"
+    },
+    {
+      "id": "14b49092-4101-4e1f-b37f-64bab8128873",
+      "slug": "ensimmainen-kirjautuminen-w6ucKbFHSI",
+      "collection": "deploy-app",
+      "title": "Ensimmäinen kirjautuminen",
+      "breadcrumb": [
+        "Platforms",
+        "Windows",
+        "Ylläpitäjäohjeet",
+        "Ensimmäinen kirjautuminen"
+      ],
+      "path": "/content/fi/pages/deploy-app/ensimmainen-kirjautuminen-w6ucKbFHSI.json",
+      "updatedAt": "2026-06-18T20:39:14.046Z",
+      "order": 16,
+      "platform": "windows",
+      "clientId": "windows-KjeSm52R8U",
+      "chapterId": "yllapitajaohjeet-2fmjvQns4a",
+      "chapterLabel": "Ylläpitäjäohjeet"
+    },
+    {
+      "id": "3a4c0280-7d00-4729-bcfb-6ce0c9283e2a",
+      "slug": "mika-on-tak-u19DIbyqfY",
+      "collection": "guides/tak-guide",
+      "title": "Mikä on TAK?",
+      "breadcrumb": [
+        "Platforms",
+        "Mikä on TAK?"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/mika-on-tak-u19DIbyqfY.json",
+      "updatedAt": "2026-06-18T20:12:56.627Z",
+      "order": 0
+    },
+    {
+      "id": "018c0695-81ac-4d0c-8b29-8257101c36de",
+      "slug": "aloita-deploy-app-sovelluksesta-R0jCXhuEn5",
+      "collection": "guides/tak-guide",
+      "title": "Aloita Deploy App -sovelluksesta",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "ALOITA JA YHDISTÄ",
+        "Aloita Deploy App -sovelluksesta"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/aloita-deploy-app-sovelluksesta-R0jCXhuEn5.json",
+      "updatedAt": "2026-06-18T20:13:06.613Z",
+      "order": 1,
+      "platform": "android",
+      "clientId": "atak-cIgl1ujs22",
+      "chapterId": "aloita-ja-yhdista-TBgwOqNqrQ",
+      "chapterLabel": "ALOITA JA YHDISTÄ"
+    },
+    {
+      "id": "0572cbe9-3292-4b00-9832-ee67c379108e",
+      "slug": "varmista-etta-sinulla-on-atak-sovellus-ceMKXWjxoQ",
+      "collection": "guides/tak-guide",
+      "title": "Varmista, että sinulla on ATAK-sovellus",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "ALOITA JA YHDISTÄ",
+        "Varmista, että sinulla on ATAK-sovellus"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/varmista-etta-sinulla-on-atak-sovellus-ceMKXWjxoQ.json",
+      "updatedAt": "2026-06-18T20:13:37.347Z",
+      "order": 2,
+      "platform": "android",
+      "clientId": "atak-cIgl1ujs22",
+      "chapterId": "aloita-ja-yhdista-TBgwOqNqrQ",
+      "chapterLabel": "ALOITA JA YHDISTÄ"
+    },
+    {
+      "id": "10bde822-a52c-4b45-b555-facc61d49f5d",
+      "slug": "palvelinyhteyden-tuonti-orW4BArnHi",
+      "collection": "guides/tak-guide",
+      "title": "Palvelinyhteyden tuonti",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "ALOITA JA YHDISTÄ",
+        "Palvelinyhteyden tuonti"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/palvelinyhteyden-tuonti-orW4BArnHi.json",
+      "updatedAt": "2026-06-18T20:13:38.815Z",
+      "order": 3,
+      "platform": "android",
+      "clientId": "atak-cIgl1ujs22",
+      "chapterId": "aloita-ja-yhdista-TBgwOqNqrQ",
+      "chapterLabel": "ALOITA JA YHDISTÄ"
+    },
+    {
+      "id": "bdc23558-cb3b-442b-8477-aad8c6cd7a07",
+      "slug": "lataa-atak-liitannaiset-CrjCC07xf1",
+      "collection": "guides/tak-guide",
+      "title": "Lataa ATAK-liitännäiset",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "ALOITA JA YHDISTÄ",
+        "Lataa ATAK-liitännäiset"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/lataa-atak-liitannaiset-CrjCC07xf1.json",
+      "updatedAt": "2026-06-18T20:13:40.153Z",
+      "order": 4,
+      "platform": "android",
+      "clientId": "atak-cIgl1ujs22",
+      "chapterId": "aloita-ja-yhdista-TBgwOqNqrQ",
+      "chapterLabel": "ALOITA JA YHDISTÄ"
+    },
+    {
+      "id": "135d7682-d3f6-4c38-bcb8-c4355ca4efb5",
+      "slug": "perusnakyma-tyokalut-ja-tyokalupalkki-5cY07BjmD4",
+      "collection": "guides/tak-guide",
+      "title": "Perusnäkymä, työkalut ja työkalupalkki",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "Perustoiminnot",
+        "Perusnäkymä, työkalut ja työkalupalkki"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/perusnakyma-tyokalut-ja-tyokalupalkki-5cY07BjmD4.json",
+      "updatedAt": "2026-06-18T20:13:44.289Z",
+      "order": 5,
+      "platform": "android",
+      "clientId": "atak-cIgl1ujs22",
+      "chapterId": "perustoiminnot-qYjIME1DFH",
+      "chapterLabel": "Perustoiminnot"
+    },
+    {
+      "id": "e90bb96c-2cc7-408d-9473-f623667e4a48",
+      "slug": "omien-joukkojen-seuranta-xwhLFahQPe",
+      "collection": "guides/tak-guide",
+      "title": "Omien joukkojen seuranta",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "Perustoiminnot",
+        "Omien joukkojen seuranta"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/omien-joukkojen-seuranta-xwhLFahQPe.json",
+      "updatedAt": "2026-06-18T20:13:46.757Z",
+      "order": 6,
+      "platform": "android",
+      "clientId": "atak-cIgl1ujs22",
+      "chapterId": "perustoiminnot-qYjIME1DFH",
+      "chapterLabel": "Perustoiminnot"
+    },
+    {
+      "id": "79181696-83f2-4fc5-bd50-10e961b69b28",
+      "slug": "feeds-with-data-sync-EMnuDBTzRY",
+      "collection": "guides/tak-guide",
+      "title": "Feeds with Data Sync",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "Perustoiminnot",
+        "Feeds with Data Sync"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/feeds-with-data-sync-EMnuDBTzRY.json",
+      "updatedAt": "2026-06-18T20:13:48.209Z",
+      "order": 7,
+      "platform": "android",
+      "clientId": "atak-cIgl1ujs22",
+      "chapterId": "perustoiminnot-qYjIME1DFH",
+      "chapterLabel": "Perustoiminnot"
+    },
+    {
+      "id": "b71e6e53-a979-4cf4-b2ad-b309e53c7020",
+      "slug": "point-dropper-merkit-9yamK9nyOX",
+      "collection": "guides/tak-guide",
+      "title": "Point Dropper - Merkit",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "Perustoiminnot",
+        "Point Dropper - Merkit"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/point-dropper-merkit-9yamK9nyOX.json",
+      "updatedAt": "2026-06-18T20:13:49.713Z",
+      "order": 8,
+      "platform": "android",
+      "clientId": "atak-cIgl1ujs22",
+      "chapterId": "perustoiminnot-qYjIME1DFH",
+      "chapterLabel": "Perustoiminnot"
+    },
+    {
+      "id": "f02574d8-063c-496d-9688-9c2f03f43329",
+      "slug": "merkin-lahettaminen-VFvhZ3yMfm",
+      "collection": "guides/tak-guide",
+      "title": "Merkin lähettäminen",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "Perustoiminnot",
+        "Merkin lähettäminen"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/merkin-lahettaminen-VFvhZ3yMfm.json",
+      "updatedAt": "2026-06-18T20:13:51.248Z",
+      "order": 9,
+      "platform": "android",
+      "clientId": "atak-cIgl1ujs22",
+      "chapterId": "perustoiminnot-qYjIME1DFH",
+      "chapterLabel": "Perustoiminnot"
+    },
+    {
+      "id": "74085c34-90d6-47ef-a23d-f2895998048a",
+      "slug": "point-dropper-quick-pic-dnyOSYWlOg",
+      "collection": "guides/tak-guide",
+      "title": "Point Dropper - Quick Pic",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "Perustoiminnot",
+        "Point Dropper - Quick Pic"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/point-dropper-quick-pic-dnyOSYWlOg.json",
+      "updatedAt": "2026-06-18T20:13:52.628Z",
+      "order": 10,
+      "platform": "android",
+      "clientId": "atak-cIgl1ujs22",
+      "chapterId": "perustoiminnot-qYjIME1DFH",
+      "chapterLabel": "Perustoiminnot"
+    },
+    {
+      "id": "ad49b71f-6f00-47bd-a0fa-d7efd33b72ef",
+      "slug": "geochat-5kOdqvslhn",
+      "collection": "guides/tak-guide",
+      "title": "GeoChat",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "Perustoiminnot",
+        "GeoChat"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/geochat-5kOdqvslhn.json",
+      "updatedAt": "2026-06-18T20:13:54.065Z",
+      "order": 11,
+      "platform": "android",
+      "clientId": "atak-cIgl1ujs22",
+      "chapterId": "perustoiminnot-qYjIME1DFH",
+      "chapterLabel": "Perustoiminnot"
+    },
+    {
+      "id": "a0f332b7-266a-46e8-9c2b-f613cfb06964",
+      "slug": "sisallon-tyhjentaminen-RTDgPCCE8y",
+      "collection": "guides/tak-guide",
+      "title": "Sisällön tyhjentäminen",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "Perustoiminnot",
+        "Sisällön tyhjentäminen"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/sisallon-tyhjentaminen-RTDgPCCE8y.json",
+      "updatedAt": "2026-06-18T20:13:55.527Z",
+      "order": 12,
+      "platform": "android",
+      "clientId": "atak-cIgl1ujs22",
+      "chapterId": "perustoiminnot-qYjIME1DFH",
+      "chapterLabel": "Perustoiminnot"
+    },
+    {
+      "id": "6a06d5cd-87d0-4955-a2d5-262ec8d17aac",
+      "slug": "syotteiden-luonti-ja-hallinta-FpLL6NYB2F",
+      "collection": "guides/tak-guide",
+      "title": "Syötteiden luonti ja hallinta",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "Edistyneet ydintoiminnot",
+        "Syötteiden luonti ja hallinta"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/syotteiden-luonti-ja-hallinta-FpLL6NYB2F.json",
+      "updatedAt": "2026-06-18T20:13:58.291Z",
+      "order": 13,
+      "platform": "android",
+      "clientId": "atak-cIgl1ujs22",
+      "chapterId": "edistyneet-ydintoiminnot-evxX7cFEJr",
+      "chapterLabel": "Edistyneet ydintoiminnot"
+    },
+    {
+      "id": "7a7580d9-986c-4235-b69c-f75785e05d69",
+      "slug": "lisaa-syotteeseen-ja-kayta-sita-zgUEPZIdvs",
+      "collection": "guides/tak-guide",
+      "title": "Lisää syötteeseen ja käytä sitä",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "Edistyneet ydintoiminnot",
+        "Lisää syötteeseen ja käytä sitä"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/lisaa-syotteeseen-ja-kayta-sita-zgUEPZIdvs.json",
+      "updatedAt": "2026-06-18T20:13:59.654Z",
+      "order": 14,
+      "platform": "android",
+      "clientId": "atak-cIgl1ujs22",
+      "chapterId": "edistyneet-ydintoiminnot-evxX7cFEJr",
+      "chapterLabel": "Edistyneet ydintoiminnot"
+    },
+    {
+      "id": "bfabdef0-9803-4641-a5df-209a20164afd",
+      "slug": "suunnitelmien-piirtaminen-ja-jakaminen-6PjOAXGBff",
+      "collection": "guides/tak-guide",
+      "title": "Suunnitelmien piirtäminen ja jakaminen",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "Edistyneet ydintoiminnot",
+        "Suunnitelmien piirtäminen ja jakaminen"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/suunnitelmien-piirtaminen-ja-jakaminen-6PjOAXGBff.json",
+      "updatedAt": "2026-06-18T20:14:01.051Z",
+      "order": 15,
+      "platform": "android",
+      "clientId": "atak-cIgl1ujs22",
+      "chapterId": "edistyneet-ydintoiminnot-evxX7cFEJr",
+      "chapterLabel": "Edistyneet ydintoiminnot"
+    },
+    {
+      "id": "82bb1fde-08a4-42e3-a34e-8c60bc2e9a09",
+      "slug": "aikajananakyma-DKl8eVn3bU",
+      "collection": "guides/tak-guide",
+      "title": "Aikajananäkymä",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "Edistyneet ydintoiminnot",
+        "Aikajananäkymä"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/aikajananakyma-DKl8eVn3bU.json",
+      "updatedAt": "2026-06-18T20:14:27.793Z",
+      "order": 16,
+      "platform": "android",
+      "clientId": "atak-cIgl1ujs22",
+      "chapterId": "edistyneet-ydintoiminnot-evxX7cFEJr",
+      "chapterLabel": "Edistyneet ydintoiminnot"
+    },
+    {
+      "id": "6b450a83-2ee4-445c-bd26-f6f75f46c214",
+      "slug": "piirra-muotoja-ja-grafiikkaa-xS2vkzkOyP",
+      "collection": "guides/tak-guide",
+      "title": "Piirrä muotoja ja grafiikkaa",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "Edistyneet ydintoiminnot",
+        "Piirrä muotoja ja grafiikkaa"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/piirra-muotoja-ja-grafiikkaa-xS2vkzkOyP.json",
+      "updatedAt": "2026-06-18T20:14:38.513Z",
+      "order": 17,
+      "platform": "android",
+      "clientId": "atak-cIgl1ujs22",
+      "chapterId": "edistyneet-ydintoiminnot-evxX7cFEJr",
+      "chapterLabel": "Edistyneet ydintoiminnot"
+    },
+    {
+      "id": "16070c90-60f9-4478-900a-c361459f083c",
+      "slug": "atak-geofences-lisaominaisuudet-Odn3KhETfp",
+      "collection": "guides/tak-guide",
+      "title": "ATAK - Geofences - Lisaominaisuudet",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "Edistyneet ydintoiminnot",
+        "ATAK - Geofences - Lisaominaisuudet"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/atak-geofences-lisaominaisuudet-Odn3KhETfp.json",
+      "updatedAt": "2026-06-18T20:14:40.209Z",
+      "order": 18,
+      "platform": "android",
+      "clientId": "atak-cIgl1ujs22",
+      "chapterId": "edistyneet-ydintoiminnot-evxX7cFEJr",
+      "chapterLabel": "Edistyneet ydintoiminnot"
+    },
+    {
+      "id": "1feb6e69-47b2-461e-b9d1-273c3ddd1377",
+      "slug": "lassolla-lisaaminen-syotteeseen-a6typO1eEd",
+      "collection": "guides/tak-guide",
+      "title": "Lassolla lisääminen syötteeseen",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "Edistyneet ydintoiminnot",
+        "Lassolla lisääminen syötteeseen"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/lassolla-lisaaminen-syotteeseen-a6typO1eEd.json",
+      "updatedAt": "2026-06-18T20:14:41.637Z",
+      "order": 19,
+      "platform": "android",
+      "clientId": "atak-cIgl1ujs22",
+      "chapterId": "edistyneet-ydintoiminnot-evxX7cFEJr",
+      "chapterLabel": "Edistyneet ydintoiminnot"
+    },
+    {
+      "id": "6c69bef2-4e5f-49f1-990a-a440733369ba",
+      "slug": "overlay-manager-nakymien-hallinta-L14bpp02nM",
+      "collection": "guides/tak-guide",
+      "title": "Overlay Manager - näkymien hallinta",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "Edistyneet ydintoiminnot",
+        "Overlay Manager - näkymien hallinta"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/overlay-manager-nakymien-hallinta-L14bpp02nM.json",
+      "updatedAt": "2026-06-18T20:14:43.618Z",
+      "order": 20,
+      "platform": "android",
+      "clientId": "atak-cIgl1ujs22",
+      "chapterId": "edistyneet-ydintoiminnot-evxX7cFEJr",
+      "chapterLabel": "Edistyneet ydintoiminnot"
+    },
+    {
+      "id": "6e8ce34f-2013-4042-a91c-414723e32130",
+      "slug": "luo-reitteja-ja-kayta-vnsaa-JMeuuWETPf",
+      "collection": "guides/tak-guide",
+      "title": "Luo reittejä ja käytä VNS:ää",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "Edistyneet ydintoiminnot",
+        "Luo reittejä ja käytä VNS:ää"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/luo-reitteja-ja-kayta-vnsaa-JMeuuWETPf.json",
+      "updatedAt": "2026-06-18T20:14:46.358Z",
+      "order": 21,
+      "platform": "android",
+      "clientId": "atak-cIgl1ujs22",
+      "chapterId": "edistyneet-ydintoiminnot-evxX7cFEJr",
+      "chapterLabel": "Edistyneet ydintoiminnot"
+    },
+    {
+      "id": "9550f48c-1213-4eeb-9011-f187cbfd2c60",
+      "slug": "karttojen-lataaminen-offline-kayttoon-HWp5pbjscs",
+      "collection": "guides/tak-guide",
+      "title": "Karttojen lataaminen offline-käyttöön",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "Edistyneet ydintoiminnot",
+        "Karttojen lataaminen offline-käyttöön"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/karttojen-lataaminen-offline-kayttoon-HWp5pbjscs.json",
+      "updatedAt": "2026-06-18T20:15:09.602Z",
+      "order": 22,
+      "platform": "android",
+      "clientId": "atak-cIgl1ujs22",
+      "chapterId": "edistyneet-ydintoiminnot-evxX7cFEJr",
+      "chapterLabel": "Edistyneet ydintoiminnot"
+    },
+    {
+      "id": "6a8a3657-d2f0-4573-947d-f60962c48ecb",
+      "slug": "atak-tyokalujen-ja-tyokalupalkkien-hallinta-BExrl8NVtl",
+      "collection": "guides/tak-guide",
+      "title": "ATAK-työkalujen ja työkalupalkkien hallinta",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "Edistyneet ydintoiminnot",
+        "ATAK-työkalujen ja työkalupalkkien hallinta"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/atak-tyokalujen-ja-tyokalupalkkien-hallinta-BExrl8NVtl.json",
+      "updatedAt": "2026-06-18T20:15:11.332Z",
+      "order": 23,
+      "platform": "android",
+      "clientId": "atak-cIgl1ujs22",
+      "chapterId": "edistyneet-ydintoiminnot-evxX7cFEJr",
+      "chapterLabel": "Edistyneet ydintoiminnot"
+    },
+    {
+      "id": "9905d47e-ebee-420e-a38a-15a857209579",
+      "slug": "mukauta-merkit-ja-kuvakkeet-vmmluklewl",
+      "collection": "guides/tak-guide",
+      "title": "Mukauta merkit ja kuvakkeet",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "Edistyneet ydintoiminnot",
+        "Mukauta merkit ja kuvakkeet"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/mukauta-merkit-ja-kuvakkeet-vmmluklewl.json",
+      "updatedAt": "2026-06-18T20:15:12.955Z",
+      "order": 24,
+      "platform": "android",
+      "clientId": "atak-cIgl1ujs22",
+      "chapterId": "edistyneet-ydintoiminnot-evxX7cFEJr",
+      "chapterLabel": "Edistyneet ydintoiminnot"
+    },
+    {
+      "id": "4fc19f4d-bc37-4345-966a-600ff7dbae4a",
+      "slug": "tee-casevac-9-line-ilmoitus-biscwQ9Tt9",
+      "collection": "guides/tak-guide",
+      "title": "Tee CASEVAC 9-line -ilmoitus",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "Edistyneet ydintoiminnot",
+        "Tee CASEVAC 9-line -ilmoitus"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/tee-casevac-9-line-ilmoitus-biscwQ9Tt9.json",
+      "updatedAt": "2026-06-18T20:15:14.599Z",
+      "order": 25,
+      "platform": "android",
+      "clientId": "atak-cIgl1ujs22",
+      "chapterId": "edistyneet-ydintoiminnot-evxX7cFEJr",
+      "chapterLabel": "Edistyneet ydintoiminnot"
+    },
+    {
+      "id": "26ebb8eb-1c9b-4a63-af57-6cba09aad14f",
+      "slug": "hallitse-kontakteja-qN5FTP2SPr",
+      "collection": "guides/tak-guide",
+      "title": "Hallitse kontakteja",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "Edistyneet ydintoiminnot",
+        "Hallitse kontakteja"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/hallitse-kontakteja-qN5FTP2SPr.json",
+      "updatedAt": "2026-06-18T20:15:37.026Z",
+      "order": 26,
+      "platform": "android",
+      "clientId": "atak-cIgl1ujs22",
+      "chapterId": "edistyneet-ydintoiminnot-evxX7cFEJr",
+      "chapterLabel": "Edistyneet ydintoiminnot"
+    },
+    {
+      "id": "ec14fd4f-2dab-4d01-ba38-4a54bf85eb15",
+      "slug": "digital-pointer-d8AjEWxuxZ",
+      "collection": "guides/tak-guide",
+      "title": "Digital Pointer",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "Edistyneet ydintoiminnot",
+        "Digital Pointer"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/digital-pointer-d8AjEWxuxZ.json",
+      "updatedAt": "2026-06-18T20:15:51.268Z",
+      "order": 27,
+      "platform": "android",
+      "clientId": "atak-cIgl1ujs22",
+      "chapterId": "edistyneet-ydintoiminnot-evxX7cFEJr",
+      "chapterLabel": "Edistyneet ydintoiminnot"
+    },
+    {
+      "id": "4c0c2cdb-161f-4838-822b-a00857491827",
+      "slug": "laheta-hatahalytys-qv6woTAZ5H",
+      "collection": "guides/tak-guide",
+      "title": "Lähetä hätähälytys",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "Edistyneet ydintoiminnot",
+        "Lähetä hätähälytys"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/laheta-hatahalytys-qv6woTAZ5H.json",
+      "updatedAt": "2026-06-18T20:15:58.890Z",
+      "order": 28,
+      "platform": "android",
+      "clientId": "atak-cIgl1ujs22",
+      "chapterId": "edistyneet-ydintoiminnot-evxX7cFEJr",
+      "chapterLabel": "Edistyneet ydintoiminnot"
+    },
+    {
+      "id": "7c2648d0-a32c-4fb3-a67f-d7fc1b5fcc2e",
+      "slug": "yleiskatsaus-dSxmQoNuM0",
+      "collection": "guides/tak-guide",
+      "title": "Yleiskatsaus",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "KÄYTTÖ ROOLEITTAIN",
+        "Yleiskatsaus"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/yleiskatsaus-dSxmQoNuM0.json",
+      "updatedAt": "2026-06-18T20:16:58.840Z",
+      "order": 29,
+      "platform": "android",
+      "clientId": "atak-cIgl1ujs22",
+      "chapterId": "kaytto-rooleittain-WKnbDNKGHe",
+      "chapterLabel": "KÄYTTÖ ROOLEITTAIN"
+    },
+    {
+      "id": "c9a26689-0dfc-4fd1-baee-6eccd67f2475",
+      "slug": "mita-saat-ja-lahetat-fb846unh6t",
+      "collection": "guides/tak-guide",
+      "title": "Mitä saat ja lähetät",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "KÄYTTÖ ROOLEITTAIN",
+        "Taistelija",
+        "Mitä saat ja lähetät"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/mita-saat-ja-lahetat-fb846unh6t.json",
+      "updatedAt": "2026-06-18T20:17:02.615Z",
+      "order": 30,
+      "platform": "android",
+      "clientId": "atak-cIgl1ujs22",
+      "chapterId": "taistelija-JPrcc1wzdD",
+      "chapterLabel": "Taistelija"
+    },
+    {
+      "id": "3c6b6301-c36d-43b7-89b1-d28c0707a484",
+      "slug": "kayta-recon-syotetta-RorUr3qVJs",
+      "collection": "guides/tak-guide",
+      "title": "Käytä RECON-syötettä",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "KÄYTTÖ ROOLEITTAIN",
+        "Taistelija",
+        "Käytä RECON-syötettä"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/kayta-recon-syotetta-RorUr3qVJs.json",
+      "updatedAt": "2026-06-18T20:17:07.006Z",
+      "order": 31,
+      "platform": "android",
+      "clientId": "atak-cIgl1ujs22",
+      "chapterId": "taistelija-JPrcc1wzdD",
+      "chapterLabel": "Taistelija"
+    },
+    {
+      "id": "aa57ef66-9c10-4b58-8c54-9288fa19cf9f",
+      "slug": "kayta-geochatia-viestintaan-u0VBv8IjJy",
+      "collection": "guides/tak-guide",
+      "title": "Käytä Geochatia viestintään",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "KÄYTTÖ ROOLEITTAIN",
+        "Taistelija",
+        "Käytä Geochatia viestintään"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/kayta-geochatia-viestintaan-u0VBv8IjJy.json",
+      "updatedAt": "2026-06-18T20:17:46.051Z",
+      "order": 32,
+      "platform": "android",
+      "clientId": "atak-cIgl1ujs22",
+      "chapterId": "taistelija-JPrcc1wzdD",
+      "chapterLabel": "Taistelija"
+    },
+    {
+      "id": "59abca42-0147-4adf-860f-676388053765",
+      "slug": "recon-syotteen-hallinta-BcuC80sRrk",
+      "collection": "guides/tak-guide",
+      "title": "RECON-syötteen hallinta",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "KÄYTTÖ ROOLEITTAIN",
+        "Komentopaikka",
+        "RECON-syötteen hallinta"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/recon-syotteen-hallinta-BcuC80sRrk.json",
+      "updatedAt": "2026-06-18T20:18:23.756Z",
+      "order": 33,
+      "platform": "android",
+      "clientId": "atak-cIgl1ujs22",
+      "chapterId": "komentopaikka-oeAqXVrdBa",
+      "chapterLabel": "Komentopaikka"
+    },
+    {
+      "id": "cd985fe6-b37c-4259-9a50-9052b1803b06",
+      "slug": "siirry-koordinaatteihin-go-to-x2wAmIQ8Sd",
+      "collection": "guides/tak-guide",
+      "title": "Siirry koordinaatteihin (Go To)",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "LISÄOMINAISUUDET",
+        "Navigointi ja koordinaatit",
+        "Siirry koordinaatteihin (Go To)"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/siirry-koordinaatteihin-go-to-x2wAmIQ8Sd.json",
+      "updatedAt": "2026-06-18T20:19:00.063Z",
+      "order": 34,
+      "platform": "android",
+      "clientId": "atak-cIgl1ujs22",
+      "chapterId": "navigointi-ja-koordinaatit-4dzwkZgyXl",
+      "chapterLabel": "Navigointi ja koordinaatit"
+    },
+    {
+      "id": "84ee4e7c-b537-4f87-8713-3fbe42864dbb",
+      "slug": "hae-koordinaatit-center-designatorilla-yaOIpaeTv4",
+      "collection": "guides/tak-guide",
+      "title": "Hae koordinaatit Center Designatorilla",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "LISÄOMINAISUUDET",
+        "Navigointi ja koordinaatit",
+        "Hae koordinaatit Center Designatorilla"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/hae-koordinaatit-center-designatorilla-yaOIpaeTv4.json",
+      "updatedAt": "2026-06-18T20:19:02.406Z",
+      "order": 35,
+      "platform": "android",
+      "clientId": "atak-cIgl1ujs22",
+      "chapterId": "navigointi-ja-koordinaatit-4dzwkZgyXl",
+      "chapterLabel": "Navigointi ja koordinaatit"
+    },
+    {
+      "id": "a708920a-f4ae-4af0-967e-40831a5268b5",
+      "slug": "navigoi-reittia-V9h7ubqj5x",
+      "collection": "guides/tak-guide",
+      "title": "Navigoi reittiä",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "LISÄOMINAISUUDET",
+        "Navigointi ja koordinaatit",
+        "Navigoi reittiä"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/navigoi-reittia-V9h7ubqj5x.json",
+      "updatedAt": "2026-06-18T20:19:05.535Z",
+      "order": 36,
+      "platform": "android",
+      "clientId": "atak-cIgl1ujs22",
+      "chapterId": "navigointi-ja-koordinaatit-4dzwkZgyXl",
+      "chapterLabel": "Navigointi ja koordinaatit"
+    },
+    {
+      "id": "f04b98ad-16dc-432e-8584-b5a9ef856d33",
+      "slug": "takaisinleikkaus-sijainti-ilman-gpsaa-ScxwqM908E",
+      "collection": "guides/tak-guide",
+      "title": "Takaisinleikkaus (sijainti ilman GPS:ää)",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "LISÄOMINAISUUDET",
+        "Navigointi ja koordinaatit",
+        "Takaisinleikkaus (sijainti ilman GPS:ää)"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/takaisinleikkaus-sijainti-ilman-gpsaa-ScxwqM908E.json",
+      "updatedAt": "2026-06-18T20:19:13.284Z",
+      "order": 37,
+      "platform": "android",
+      "clientId": "atak-cIgl1ujs22",
+      "chapterId": "navigointi-ja-koordinaatit-4dzwkZgyXl",
+      "chapterLabel": "Navigointi ja koordinaatit"
+    },
+    {
+      "id": "9083dd22-a8a7-492e-b191-eb5cb2b259ec",
+      "slug": "hae-sijainti-red-xlla-mpYohfdfVx",
+      "collection": "guides/tak-guide",
+      "title": "Hae sijainti Red X:llä",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "LISÄOMINAISUUDET",
+        "Navigointi ja koordinaatit",
+        "Hae sijainti Red X:llä"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/hae-sijainti-red-xlla-mpYohfdfVx.json",
+      "updatedAt": "2026-06-18T20:19:21.722Z",
+      "order": 38,
+      "platform": "android",
+      "clientId": "atak-cIgl1ujs22",
+      "chapterId": "navigointi-ja-koordinaatit-4dzwkZgyXl",
+      "chapterLabel": "Navigointi ja koordinaatit"
+    },
+    {
+      "id": "d14b16c1-8db2-4b9b-81d0-8e85e7015f8e",
+      "slug": "karttanakyman-ulkopuolisten-merkkien-ilmaisimet-vv4SxScO6n",
+      "collection": "guides/tak-guide",
+      "title": "Karttanäkymän ulkopuolisten merkkien ilmaisimet",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "LISÄOMINAISUUDET",
+        "Navigointi ja koordinaatit",
+        "Karttanäkymän ulkopuolisten merkkien ilmaisimet"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/karttanakyman-ulkopuolisten-merkkien-ilmaisimet-vv4SxScO6n.json",
+      "updatedAt": "2026-06-18T20:19:39.375Z",
+      "order": 39,
+      "platform": "android",
+      "clientId": "atak-cIgl1ujs22",
+      "chapterId": "navigointi-ja-koordinaatit-4dzwkZgyXl",
+      "chapterLabel": "Navigointi ja koordinaatit"
+    },
+    {
+      "id": "3df9f847-a4f1-4ef3-938d-34664a43fbf9",
+      "slug": "hallitse-sijaintilahteita-RakVzDRlad",
+      "collection": "guides/tak-guide",
+      "title": "Hallitse sijaintilähteitä",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "LISÄOMINAISUUDET",
+        "Navigointi ja koordinaatit",
+        "Hallitse sijaintilähteitä"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/hallitse-sijaintilahteita-RakVzDRlad.json",
+      "updatedAt": "2026-06-18T20:19:52.960Z",
+      "order": 40,
+      "platform": "android",
+      "clientId": "atak-cIgl1ujs22",
+      "chapterId": "navigointi-ja-koordinaatit-4dzwkZgyXl",
+      "chapterLabel": "Navigointi ja koordinaatit"
+    },
+    {
+      "id": "a621e9ed-ed5c-4842-923e-8818a2cfd751",
+      "slug": "seuraa-kohdetta-bloodhoundilla-GHDj89NBpo",
+      "collection": "guides/tak-guide",
+      "title": "Seuraa kohdetta Bloodhoundilla",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "LISÄOMINAISUUDET",
+        "Navigointi ja koordinaatit",
+        "Seuraa kohdetta Bloodhoundilla"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/seuraa-kohdetta-bloodhoundilla-GHDj89NBpo.json",
+      "updatedAt": "2026-06-18T20:20:03.906Z",
+      "order": 41,
+      "platform": "android",
+      "clientId": "atak-cIgl1ujs22",
+      "chapterId": "navigointi-ja-koordinaatit-4dzwkZgyXl",
+      "chapterLabel": "Navigointi ja koordinaatit"
+    },
+    {
+      "id": "27c61be4-b3b6-40ad-ad48-8b849df1b02f",
+      "slug": "liikkeen-jaljitys-gps-jaljet-Kfbctffcg5",
+      "collection": "guides/tak-guide",
+      "title": "Liikkeen jäljitys (GPS-jäljet)",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "LISÄOMINAISUUDET",
+        "Navigointi ja koordinaatit",
+        "Liikkeen jäljitys (GPS-jäljet)"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/liikkeen-jaljitys-gps-jaljet-Kfbctffcg5.json",
+      "updatedAt": "2026-06-18T20:20:36.020Z",
+      "order": 42,
+      "platform": "android",
+      "clientId": "atak-cIgl1ujs22",
+      "chapterId": "navigointi-ja-koordinaatit-4dzwkZgyXl",
+      "chapterLabel": "Navigointi ja koordinaatit"
+    },
+    {
+      "id": "76496739-3455-4321-8147-5b52fc3273ff",
+      "slug": "mittaa-etaisyys-ja-suuntakulma-DUBmCeWCli",
+      "collection": "guides/tak-guide",
+      "title": "Mittaa etäisyys ja suuntakulma",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "LISÄOMINAISUUDET",
+        "Etäisyys- ja suuntimatyökalut",
+        "Mittaa etäisyys ja suuntakulma"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/mittaa-etaisyys-ja-suuntakulma-DUBmCeWCli.json",
+      "updatedAt": "2026-06-18T20:20:40.378Z",
+      "order": 43,
+      "platform": "android",
+      "clientId": "atak-cIgl1ujs22",
+      "chapterId": "etaisyys-ja-suuntimatyokalut-GNPpKxnT6a",
+      "chapterLabel": "Etäisyys- ja suuntimatyökalut"
+    },
+    {
+      "id": "2fcc1e04-68f4-4c15-96ae-8cd8a93e0759",
+      "slug": "dynaaminen-etaisyys-ja-suuntima-MocHzAMYao",
+      "collection": "guides/tak-guide",
+      "title": "Dynaaminen etäisyys ja suuntima",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "LISÄOMINAISUUDET",
+        "Etäisyys- ja suuntimatyökalut",
+        "Dynaaminen etäisyys ja suuntima"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/dynaaminen-etaisyys-ja-suuntima-MocHzAMYao.json",
+      "updatedAt": "2026-06-18T20:20:42.026Z",
+      "order": 44,
+      "platform": "android",
+      "clientId": "atak-cIgl1ujs22",
+      "chapterId": "etaisyys-ja-suuntimatyokalut-GNPpKxnT6a",
+      "chapterLabel": "Etäisyys- ja suuntimatyökalut"
+    },
+    {
+      "id": "a86836d7-d6b0-4a30-9540-12751b6a5aba",
+      "slug": "etaisyysrenkaat-ja-bullseye-VVnbPZDiAy",
+      "collection": "guides/tak-guide",
+      "title": "Etäisyysrenkaat ja bullseye",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "LISÄOMINAISUUDET",
+        "Etäisyys- ja suuntimatyökalut",
+        "Etäisyysrenkaat ja bullseye"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/etaisyysrenkaat-ja-bullseye-VVnbPZDiAy.json",
+      "updatedAt": "2026-06-18T20:20:44.487Z",
+      "order": 45,
+      "platform": "android",
+      "clientId": "atak-cIgl1ujs22",
+      "chapterId": "etaisyys-ja-suuntimatyokalut-GNPpKxnT6a",
+      "chapterLabel": "Etäisyys- ja suuntimatyökalut"
+    },
+    {
+      "id": "d81cda58-83ac-41c4-9802-07af725deefe",
+      "slug": "kayta-3d-maastonakymaa-MvrevSdk5j",
+      "collection": "guides/tak-guide",
+      "title": "Käytä 3D-maastonäkymää",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "LISÄOMINAISUUDET",
+        "Korkeus, maasto ja karttatyökalut",
+        "Käytä 3D-maastonäkymää"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/kayta-3d-maastonakymaa-MvrevSdk5j.json",
+      "updatedAt": "2026-06-18T20:20:47.776Z",
+      "order": 46,
+      "platform": "android",
+      "clientId": "atak-cIgl1ujs22",
+      "chapterId": "korkeus-maasto-ja-karttatyokalut-euqzbtzIuC",
+      "chapterLabel": "Korkeus, maasto ja karttatyökalut"
+    },
+    {
+      "id": "fbc06c77-a1b0-4f24-84e8-7cb3dde0a34c",
+      "slug": "lisaa-3d-malleja-kartalle-48R5EqaMl7",
+      "collection": "guides/tak-guide",
+      "title": "Lisää 3D-malleja kartalle",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "LISÄOMINAISUUDET",
+        "Korkeus, maasto ja karttatyökalut",
+        "Lisää 3D-malleja kartalle"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/lisaa-3d-malleja-kartalle-48R5EqaMl7.json",
+      "updatedAt": "2026-06-18T20:20:49.905Z",
+      "order": 47,
+      "platform": "android",
+      "clientId": "atak-cIgl1ujs22",
+      "chapterId": "korkeus-maasto-ja-karttatyokalut-euqzbtzIuC",
+      "chapterLabel": "Korkeus, maasto ja karttatyökalut"
+    },
+    {
+      "id": "6c0b4bae-d671-4ff2-a7c3-81908aa39028",
+      "slug": "tiedustele-first-person-viewlla-dG5GsFs9is",
+      "collection": "guides/tak-guide",
+      "title": "Tiedustele First-Person View'lla",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "LISÄOMINAISUUDET",
+        "Korkeus, maasto ja karttatyökalut",
+        "Tiedustele First-Person View'lla"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/tiedustele-first-person-viewlla-dG5GsFs9is.json",
+      "updatedAt": "2026-06-18T20:20:51.652Z",
+      "order": 48,
+      "platform": "android",
+      "clientId": "atak-cIgl1ujs22",
+      "chapterId": "korkeus-maasto-ja-karttatyokalut-euqzbtzIuC",
+      "chapterLabel": "Korkeus, maasto ja karttatyökalut"
+    },
+    {
+      "id": "d0f303b3-1c20-4814-a16d-daefe588acf9",
+      "slug": "korkeus-ja-nakyvyystyokalut-K38iegcAlI",
+      "collection": "guides/tak-guide",
+      "title": "Korkeus- ja näkyvyystyökalut",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "LISÄOMINAISUUDET",
+        "Korkeus, maasto ja karttatyökalut",
+        "Korkeus- ja näkyvyystyökalut"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/korkeus-ja-nakyvyystyokalut-K38iegcAlI.json",
+      "updatedAt": "2026-06-18T20:21:23.199Z",
+      "order": 49,
+      "platform": "android",
+      "clientId": "atak-cIgl1ujs22",
+      "chapterId": "korkeus-maasto-ja-karttatyokalut-euqzbtzIuC",
+      "chapterLabel": "Korkeus, maasto ja karttatyökalut"
+    },
+    {
+      "id": "dfbbbc4a-b022-42a0-a98b-df55c4d51033",
+      "slug": "hallitse-korkeusdatan-lahteita-5PT2yLQKk5",
+      "collection": "guides/tak-guide",
+      "title": "Hallitse korkeusdatan lähteitä",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "LISÄOMINAISUUDET",
+        "Korkeus, maasto ja karttatyökalut",
+        "Hallitse korkeusdatan lähteitä"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/hallitse-korkeusdatan-lahteita-5PT2yLQKk5.json",
+      "updatedAt": "2026-06-18T20:21:28.313Z",
+      "order": 50,
+      "platform": "android",
+      "clientId": "atak-cIgl1ujs22",
+      "chapterId": "korkeus-maasto-ja-karttatyokalut-euqzbtzIuC",
+      "chapterLabel": "Korkeus, maasto ja karttatyökalut"
+    },
+    {
+      "id": "7503c7f6-f716-4885-bd83-3ce2cb8003a9",
+      "slug": "georeferoi-kuva-rubber-sheet-onZsR99V8e",
+      "collection": "guides/tak-guide",
+      "title": "Georeferoi kuva (Rubber Sheet)",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "LISÄOMINAISUUDET",
+        "Korkeus, maasto ja karttatyökalut",
+        "Georeferoi kuva (Rubber Sheet)"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/georeferoi-kuva-rubber-sheet-onZsR99V8e.json",
+      "updatedAt": "2026-06-18T20:21:29.740Z",
+      "order": 51,
+      "platform": "android",
+      "clientId": "atak-cIgl1ujs22",
+      "chapterId": "korkeus-maasto-ja-karttatyokalut-euqzbtzIuC",
+      "chapterLabel": "Korkeus, maasto ja karttatyökalut"
+    },
+    {
+      "id": "741b0bc5-a906-47f5-b60e-c7dac6813f8d",
+      "slug": "tiedostojen-ja-etaresurssien-tuonti-c3dqZ2juww",
+      "collection": "guides/tak-guide",
+      "title": "Tiedostojen ja etäresurssien tuonti",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "LISÄOMINAISUUDET",
+        "Korkeus, maasto ja karttatyökalut",
+        "Tiedostojen ja etäresurssien tuonti"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/tiedostojen-ja-etaresurssien-tuonti-c3dqZ2juww.json",
+      "updatedAt": "2026-06-18T20:21:31.168Z",
+      "order": 52,
+      "platform": "android",
+      "clientId": "atak-cIgl1ujs22",
+      "chapterId": "korkeus-maasto-ja-karttatyokalut-euqzbtzIuC",
+      "chapterLabel": "Korkeus, maasto ja karttatyökalut"
+    },
+    {
+      "id": "be06b2d1-a59a-471d-908f-e5b34eb680ae",
+      "slug": "toista-ja-kaappaa-videota-xag7zBmlMd",
+      "collection": "guides/tak-guide",
+      "title": "Toista ja kaappaa videota",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "LISÄOMINAISUUDET",
+        "Video ATAKissa",
+        "Toista ja kaappaa videota"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/toista-ja-kaappaa-videota-xag7zBmlMd.json",
+      "updatedAt": "2026-06-18T20:21:34.809Z",
+      "order": 53,
+      "platform": "android",
+      "clientId": "atak-cIgl1ujs22",
+      "chapterId": "video-atakissa-yxjKtpJULG",
+      "chapterLabel": "Video ATAKissa"
+    },
+    {
+      "id": "63a76d47-45b8-4cbd-a40f-a5f870df934d",
+      "slug": "asenna-uas-tool-lisaosa-ezy7pwc4no",
+      "collection": "guides/tak-guide",
+      "title": "Asenna UAS Tool -lisäosa",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "TUETUT LISÄOSAT",
+        "UAS-työkalu",
+        "Asenna UAS Tool -lisäosa"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/asenna-uas-tool-lisaosa-ezy7pwc4no.json",
+      "updatedAt": "2026-06-18T20:21:39.317Z",
+      "order": 54,
+      "platform": "android",
+      "clientId": "atak-cIgl1ujs22",
+      "chapterId": "uas-tyokalu-cVivwBox3e",
+      "chapterLabel": "UAS-työkalu"
+    },
+    {
+      "id": "6a4a786d-7a7a-4b33-8858-e96bbf6e13f2",
+      "slug": "yhdista-uas-tool-automaattisesti-mediamtxaan-OxrZY5V7EQ",
+      "collection": "guides/tak-guide",
+      "title": "Yhdistä UAS Tool automaattisesti MediaMTX:ään",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "TUETUT LISÄOSAT",
+        "UAS-työkalu",
+        "Yhdistä UAS Tool automaattisesti MediaMTX:ään"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/yhdista-uas-tool-automaattisesti-mediamtxaan-OxrZY5V7EQ.json",
+      "updatedAt": "2026-06-18T20:21:40.617Z",
+      "order": 55,
+      "platform": "android",
+      "clientId": "atak-cIgl1ujs22",
+      "chapterId": "uas-tyokalu-cVivwBox3e",
+      "chapterLabel": "UAS-työkalu"
+    },
+    {
+      "id": "56bc49b8-b7bb-473a-b74c-e1bf9a6b84f2",
+      "slug": "avaa-uas-tyokalu-ja-lue-telemetria-z5ZZMLVliu",
+      "collection": "guides/tak-guide",
+      "title": "Avaa UAS-työkalu ja lue telemetria",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "TUETUT LISÄOSAT",
+        "UAS-työkalu",
+        "Avaa UAS-työkalu ja lue telemetria"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/avaa-uas-tyokalu-ja-lue-telemetria-z5ZZMLVliu.json",
+      "updatedAt": "2026-06-18T20:21:42.061Z",
+      "order": 56,
+      "platform": "android",
+      "clientId": "atak-cIgl1ujs22",
+      "chapterId": "uas-tyokalu-cVivwBox3e",
+      "chapterLabel": "UAS-työkalu"
+    },
+    {
+      "id": "e2bcb771-67a9-465e-8715-1f48021cb3b9",
+      "slug": "katso-ja-ohjaa-dronen-kameraa-rh95KbaTpe",
+      "collection": "guides/tak-guide",
+      "title": "Katso ja ohjaa dronen kameraa",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "TUETUT LISÄOSAT",
+        "UAS-työkalu",
+        "Katso ja ohjaa dronen kameraa"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/katso-ja-ohjaa-dronen-kameraa-rh95KbaTpe.json",
+      "updatedAt": "2026-06-18T20:21:43.483Z",
+      "order": 57,
+      "platform": "android",
+      "clientId": "atak-cIgl1ujs22",
+      "chapterId": "uas-tyokalu-cVivwBox3e",
+      "chapterLabel": "UAS-työkalu"
+    },
+    {
+      "id": "f7cabcfe-e29b-4b4a-95bb-84bcc1646640",
+      "slug": "kuvaa-ja-laheta-lennokin-videota-rjbcDzCyvV",
+      "collection": "guides/tak-guide",
+      "title": "Kuvaa ja lähetä lennokin videota",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "TUETUT LISÄOSAT",
+        "UAS-työkalu",
+        "Kuvaa ja lähetä lennokin videota"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/kuvaa-ja-laheta-lennokin-videota-rjbcDzCyvV.json",
+      "updatedAt": "2026-06-18T20:21:45.765Z",
+      "order": 58,
+      "platform": "android",
+      "clientId": "atak-cIgl1ujs22",
+      "chapterId": "uas-tyokalu-cVivwBox3e",
+      "chapterLabel": "UAS-työkalu"
+    },
+    {
+      "id": "db2d2ac4-8a2e-4eec-a7bd-2d52103ba287",
+      "slug": "laheta-lennokki-sijaintiin-mKsB4aikwV",
+      "collection": "guides/tak-guide",
+      "title": "Lähetä lennokki sijaintiin",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "TUETUT LISÄOSAT",
+        "UAS-työkalu",
+        "Lähetä lennokki sijaintiin"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/laheta-lennokki-sijaintiin-mKsB4aikwV.json",
+      "updatedAt": "2026-06-18T20:21:47.190Z",
+      "order": 59,
+      "platform": "android",
+      "clientId": "atak-cIgl1ujs22",
+      "chapterId": "uas-tyokalu-cVivwBox3e",
+      "chapterLabel": "UAS-työkalu"
+    },
+    {
+      "id": "5610378c-6a9d-4fc2-b8bd-59f167b9ccf5",
+      "slug": "suunnittele-lennokkitehtavat-emxgZTF3x4",
+      "collection": "guides/tak-guide",
+      "title": "Suunnittele lennokkitehtävät",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "TUETUT LISÄOSAT",
+        "UAS-työkalu",
+        "Suunnittele lennokkitehtävät"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/suunnittele-lennokkitehtavat-emxgZTF3x4.json",
+      "updatedAt": "2026-06-18T20:21:50.080Z",
+      "order": 60,
+      "platform": "android",
+      "clientId": "atak-cIgl1ujs22",
+      "chapterId": "uas-tyokalu-cVivwBox3e",
+      "chapterLabel": "UAS-työkalu"
+    },
+    {
+      "id": "dba32565-12e3-4c47-83e9-b779512e07a3",
+      "slug": "kaynnista-pysayta-ja-palauta-lennokki-ramp5QBORo",
+      "collection": "guides/tak-guide",
+      "title": "Käynnistä, pysäytä ja palauta lennokki",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "TUETUT LISÄOSAT",
+        "UAS-työkalu",
+        "Käynnistä, pysäytä ja palauta lennokki"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/kaynnista-pysayta-ja-palauta-lennokki-ramp5QBORo.json",
+      "updatedAt": "2026-06-18T20:21:51.964Z",
+      "order": 61,
+      "platform": "android",
+      "clientId": "atak-cIgl1ujs22",
+      "chapterId": "uas-tyokalu-cVivwBox3e",
+      "chapterLabel": "UAS-työkalu"
+    },
+    {
+      "id": "9607021e-7b75-41ef-b148-25b1af4603bb",
+      "slug": "luo-ruudukko-grg-builder-z0VfhByVKA",
+      "collection": "guides/tak-guide",
+      "title": "Luo ruudukko (GRG Builder)",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "TUETUT LISÄOSAT",
+        "GRG-rakennustyökalu",
+        "Luo ruudukko (GRG Builder)"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/luo-ruudukko-grg-builder-z0VfhByVKA.json",
+      "updatedAt": "2026-06-18T20:22:24.389Z",
+      "order": 62,
+      "platform": "android",
+      "clientId": "atak-cIgl1ujs22",
+      "chapterId": "grg-rakennustyokalu-0B3MV9dSbC",
+      "chapterLabel": "GRG-rakennustyökalu"
+    },
+    {
+      "id": "1d0b00dd-91ad-44f5-ba3c-40e7cc4dbe23",
+      "slug": "merkitse-ja-muotoile-ruudukko-fA3HwgfjjV",
+      "collection": "guides/tak-guide",
+      "title": "Merkitse ja muotoile ruudukko",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "TUETUT LISÄOSAT",
+        "GRG-rakennustyökalu",
+        "Merkitse ja muotoile ruudukko"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/merkitse-ja-muotoile-ruudukko-fA3HwgfjjV.json",
+      "updatedAt": "2026-06-18T20:22:28.870Z",
+      "order": 63,
+      "platform": "android",
+      "clientId": "atak-cIgl1ujs22",
+      "chapterId": "grg-rakennustyokalu-0B3MV9dSbC",
+      "chapterLabel": "GRG-rakennustyökalu"
+    },
+    {
+      "id": "ac96996c-117e-4acf-86b8-3a097194e464",
+      "slug": "vie-ruudukko-grg-builder-yx2Y3RPY0C",
+      "collection": "guides/tak-guide",
+      "title": "Vie ruudukko (GRG Builder)",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "TUETUT LISÄOSAT",
+        "GRG-rakennustyökalu",
+        "Vie ruudukko (GRG Builder)"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/vie-ruudukko-grg-builder-yx2Y3RPY0C.json",
+      "updatedAt": "2026-06-18T20:22:30.403Z",
+      "order": 64,
+      "platform": "android",
+      "clientId": "atak-cIgl1ujs22",
+      "chapterId": "grg-rakennustyokalu-0B3MV9dSbC",
+      "chapterLabel": "GRG-rakennustyökalu"
+    },
+    {
+      "id": "735de2ec-493c-44b8-a3d4-b548082b1f12",
+      "slug": "luo-raportti-ATqNeF4S9c",
+      "collection": "guides/tak-guide",
+      "title": "Luo raportti",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "TUETUT LISÄOSAT",
+        "Raportit",
+        "Luo raportti"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/luo-raportti-ATqNeF4S9c.json",
+      "updatedAt": "2026-06-18T20:22:34.010Z",
+      "order": 65,
+      "platform": "android",
+      "clientId": "atak-cIgl1ujs22",
+      "chapterId": "raportit-ClRZUR1lAp",
+      "chapterLabel": "Raportit"
+    },
+    {
+      "id": "5aed709e-d4c9-4a69-ad89-fd1bd6c9d01a",
+      "slug": "tallenna-laheta-ja-jaa-raportti-seWPZi6Bfz",
+      "collection": "guides/tak-guide",
+      "title": "Tallenna, lähetä ja jaa raportti",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "TUETUT LISÄOSAT",
+        "Raportit",
+        "Tallenna, lähetä ja jaa raportti"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/tallenna-laheta-ja-jaa-raportti-seWPZi6Bfz.json",
+      "updatedAt": "2026-06-18T20:22:35.403Z",
+      "order": 66,
+      "platform": "android",
+      "clientId": "atak-cIgl1ujs22",
+      "chapterId": "raportit-ClRZUR1lAp",
+      "chapterLabel": "Raportit"
+    },
+    {
+      "id": "29740247-087a-4d50-a9f3-7421d1f59b90",
+      "slug": "etsi-raportteja-palvelimelta-fgWGDji6qC",
+      "collection": "guides/tak-guide",
+      "title": "Etsi raportteja palvelimelta",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "TUETUT LISÄOSAT",
+        "Raportit",
+        "Etsi raportteja palvelimelta"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/etsi-raportteja-palvelimelta-fgWGDji6qC.json",
+      "updatedAt": "2026-06-18T20:22:37.560Z",
+      "order": 67,
+      "platform": "android",
+      "clientId": "atak-cIgl1ujs22",
+      "chapterId": "raportit-ClRZUR1lAp",
+      "chapterLabel": "Raportit"
+    },
+    {
+      "id": "2427f63d-b62a-420f-8218-4225245e41e5",
+      "slug": "rakenna-mukautettu-raporttimalli-yCSiu6uhpP",
+      "collection": "guides/tak-guide",
+      "title": "Rakenna mukautettu raporttimalli",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "TUETUT LISÄOSAT",
+        "Raportit",
+        "Rakenna mukautettu raporttimalli"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/rakenna-mukautettu-raporttimalli-yCSiu6uhpP.json",
+      "updatedAt": "2026-06-18T20:22:39.187Z",
+      "order": 68,
+      "platform": "android",
+      "clientId": "atak-cIgl1ujs22",
+      "chapterId": "raportit-ClRZUR1lAp",
+      "chapterLabel": "Raportit"
+    },
+    {
+      "id": "5aaf264d-62c2-4f42-bf62-f0b3ccc5a010",
+      "slug": "maarita-raporttiasetukset-irT9AFQtCl",
+      "collection": "guides/tak-guide",
+      "title": "Määritä raporttiasetukset",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "TUETUT LISÄOSAT",
+        "Raportit",
+        "Määritä raporttiasetukset"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/maarita-raporttiasetukset-irT9AFQtCl.json",
+      "updatedAt": "2026-06-18T20:22:41.600Z",
+      "order": 69,
+      "platform": "android",
+      "clientId": "atak-cIgl1ujs22",
+      "chapterId": "raportit-ClRZUR1lAp",
+      "chapterLabel": "Raportit"
+    },
+    {
+      "id": "704d74aa-611b-48f6-b10e-42f828acdc1e",
+      "slug": "yhdista-prc-152-rover-radioon-hoINotQoqb",
+      "collection": "guides/tak-guide",
+      "title": "Yhdistä PRC-152- / Rover-radioon",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "TUETUT LISÄOSAT",
+        "Yhdistä radio HAMMER-sovelluksella",
+        "Yhdistä PRC-152- / Rover-radioon"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/yhdista-prc-152-rover-radioon-hoINotQoqb.json",
+      "updatedAt": "2026-06-18T20:22:45.576Z",
+      "order": 70,
+      "platform": "android",
+      "clientId": "atak-cIgl1ujs22",
+      "chapterId": "yhdista-radio-hammer-sovelluksella-lbJQmjj1Y1",
+      "chapterLabel": "Yhdistä radio HAMMER-sovelluksella"
+    },
+    {
+      "id": "09b14aae-959d-4239-94df-abc005604624",
+      "slug": "salatun-mesh-viestinnan-kayttoonotto-l34tbseLan",
+      "collection": "guides/tak-guide",
+      "title": "Salatun mesh-viestinnän käyttöönotto",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "TUETUT LISÄOSAT",
+        "Yhdistä radio HAMMER-sovelluksella",
+        "Salatun mesh-viestinnän käyttöönotto"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/salatun-mesh-viestinnan-kayttoonotto-l34tbseLan.json",
+      "updatedAt": "2026-06-18T20:22:46.918Z",
+      "order": 71,
+      "platform": "android",
+      "clientId": "atak-cIgl1ujs22",
+      "chapterId": "yhdista-radio-hammer-sovelluksella-lbJQmjj1Y1",
+      "chapterLabel": "Yhdistä radio HAMMER-sovelluksella"
+    },
+    {
+      "id": "dd47faf7-c825-4ae9-b7dc-dab819ddfb79",
+      "slug": "vianmaaritys-mum1CL1yac",
+      "collection": "guides/tak-guide",
+      "title": "Vianmääritys",
+      "breadcrumb": [
+        "Platforms",
+        "ATAK",
+        "Vianmääritys"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/vianmaaritys-mum1CL1yac.json",
+      "updatedAt": "2026-06-18T20:22:48.373Z",
+      "order": 72,
+      "platform": "android",
+      "clientId": "atak-cIgl1ujs22",
+      "chapterId": "atak-cIgl1ujs22",
+      "chapterLabel": "ATAK"
+    },
+    {
+      "id": "9317320f-d7dd-481e-baff-81846551cae6",
+      "slug": "aseta-wintakn-kieli-ja-lokalisointi-h2H6q8rgOi",
+      "collection": "guides/tak-guide",
+      "title": "Aseta WinTAK:n kieli ja lokalisointi",
+      "breadcrumb": [
+        "Platforms",
+        "WinTAK",
+        "ALOITA JA YHDISTÄ",
+        "Aseta WinTAK:n kieli ja lokalisointi"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/aseta-wintakn-kieli-ja-lokalisointi-h2H6q8rgOi.json",
+      "updatedAt": "2026-06-18T20:22:53.603Z",
+      "order": 73,
+      "platform": "windows",
+      "clientId": "wintak-gOdRRMN4lI",
+      "chapterId": "aloita-ja-yhdista-ChEG1h3e8E",
+      "chapterLabel": "ALOITA JA YHDISTÄ"
+    },
+    {
+      "id": "b13f4bbb-57dd-4085-bdba-f029f49b6492",
+      "slug": "lataa-ja-asenna-wintak-Xx7Wycg9gb",
+      "collection": "guides/tak-guide",
+      "title": "Lataa ja asenna WinTAK",
+      "breadcrumb": [
+        "Platforms",
+        "WinTAK",
+        "ALOITA JA YHDISTÄ",
+        "Lataa ja asenna WinTAK"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/lataa-ja-asenna-wintak-Xx7Wycg9gb.json",
+      "updatedAt": "2026-06-18T20:22:55.648Z",
+      "order": 74,
+      "platform": "windows",
+      "clientId": "wintak-gOdRRMN4lI",
+      "chapterId": "aloita-ja-yhdista-ChEG1h3e8E",
+      "chapterLabel": "ALOITA JA YHDISTÄ"
+    },
+    {
+      "id": "4e39c62c-3796-4d5c-8344-26a1569abf6a",
+      "slug": "tuo-client-package-wintakiin-4r7he3cxqW",
+      "collection": "guides/tak-guide",
+      "title": "Tuo Client Package WinTAKiin",
+      "breadcrumb": [
+        "Platforms",
+        "WinTAK",
+        "ALOITA JA YHDISTÄ",
+        "Tuo Client Package WinTAKiin"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/tuo-client-package-wintakiin-4r7he3cxqW.json",
+      "updatedAt": "2026-06-18T20:23:26.312Z",
+      "order": 75,
+      "platform": "windows",
+      "clientId": "wintak-gOdRRMN4lI",
+      "chapterId": "aloita-ja-yhdista-ChEG1h3e8E",
+      "chapterLabel": "ALOITA JA YHDISTÄ"
+    },
+    {
+      "id": "666ff535-0b6e-489c-98d2-9481fa57bd9b",
+      "slug": "lataa-lisaosat-ja-viimeistele-asennus-Tb3fKqrK2B",
+      "collection": "guides/tak-guide",
+      "title": "Lataa lisäosat ja viimeistele asennus",
+      "breadcrumb": [
+        "Platforms",
+        "WinTAK",
+        "ALOITA JA YHDISTÄ",
+        "Lataa lisäosat ja viimeistele asennus"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/lataa-lisaosat-ja-viimeistele-asennus-Tb3fKqrK2B.json",
+      "updatedAt": "2026-06-18T20:23:29.698Z",
+      "order": 76,
+      "platform": "windows",
+      "clientId": "wintak-gOdRRMN4lI",
+      "chapterId": "aloita-ja-yhdista-ChEG1h3e8E",
+      "chapterLabel": "ALOITA JA YHDISTÄ"
+    },
+    {
+      "id": "c0637320-5f88-4ea2-aeee-629286092385",
+      "slug": "oman-sijainnin-asettaminen-17jf00ekir",
+      "collection": "guides/tak-guide",
+      "title": "Oman sijainnin asettaminen",
+      "breadcrumb": [
+        "Platforms",
+        "WinTAK",
+        "PERUSTOIMINNOT",
+        "Oman sijainnin asettaminen"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/oman-sijainnin-asettaminen-17jf00ekir.json",
+      "updatedAt": "2026-06-18T20:23:32.451Z",
+      "order": 77,
+      "platform": "windows",
+      "clientId": "wintak-gOdRRMN4lI",
+      "chapterId": "perustoiminnot-D1WjpOWQsF",
+      "chapterLabel": "PERUSTOIMINNOT"
+    },
+    {
+      "id": "bda12c6f-1de8-4939-a866-4ce49510b5a4",
+      "slug": "omien-joukkojen-seuranta-tKICHJUF25",
+      "collection": "guides/tak-guide",
+      "title": "Omien joukkojen seuranta",
+      "breadcrumb": [
+        "Platforms",
+        "WinTAK",
+        "PERUSTOIMINNOT",
+        "Omien joukkojen seuranta"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/omien-joukkojen-seuranta-tKICHJUF25.json",
+      "updatedAt": "2026-06-18T20:23:35.315Z",
+      "order": 78,
+      "platform": "windows",
+      "clientId": "wintak-gOdRRMN4lI",
+      "chapterId": "perustoiminnot-D1WjpOWQsF",
+      "chapterLabel": "PERUSTOIMINNOT"
+    },
+    {
+      "id": "95febac5-2440-4058-a847-9a32b71ab872",
+      "slug": "data-sync-k0vQiZ3DNm",
+      "collection": "guides/tak-guide",
+      "title": "Data Sync",
+      "breadcrumb": [
+        "Platforms",
+        "WinTAK",
+        "PERUSTOIMINNOT",
+        "Data Sync"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/data-sync-k0vQiZ3DNm.json",
+      "updatedAt": "2026-06-18T20:23:36.999Z",
+      "order": 79,
+      "platform": "windows",
+      "clientId": "wintak-gOdRRMN4lI",
+      "chapterId": "perustoiminnot-D1WjpOWQsF",
+      "chapterLabel": "PERUSTOIMINNOT"
+    },
+    {
+      "id": "49d4fe96-da94-4f80-a7fa-8065a3a3d5a4",
+      "slug": "point-dropper-lisaa-merkintoja-oCa76CxmxW",
+      "collection": "guides/tak-guide",
+      "title": "Point Dropper - lisää merkintöjä",
+      "breadcrumb": [
+        "Platforms",
+        "WinTAK",
+        "PERUSTOIMINNOT",
+        "Point Dropper - lisää merkintöjä"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/point-dropper-lisaa-merkintoja-oCa76CxmxW.json",
+      "updatedAt": "2026-06-18T20:23:38.486Z",
+      "order": 80,
+      "platform": "windows",
+      "clientId": "wintak-gOdRRMN4lI",
+      "chapterId": "perustoiminnot-D1WjpOWQsF",
+      "chapterLabel": "PERUSTOIMINNOT"
+    },
+    {
+      "id": "81c3fb4d-b8fd-4930-bf3b-56cf4c439c3b",
+      "slug": "kayta-geochatia-F9hZhCTnub",
+      "collection": "guides/tak-guide",
+      "title": "Käytä GeoChatia",
+      "breadcrumb": [
+        "Platforms",
+        "WinTAK",
+        "PERUSTOIMINNOT",
+        "Käytä GeoChatia"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/kayta-geochatia-F9hZhCTnub.json",
+      "updatedAt": "2026-06-18T20:23:40.216Z",
+      "order": 81,
+      "platform": "windows",
+      "clientId": "wintak-gOdRRMN4lI",
+      "chapterId": "perustoiminnot-D1WjpOWQsF",
+      "chapterLabel": "PERUSTOIMINNOT"
+    },
+    {
+      "id": "69db6555-7f64-4136-94bf-995e42cea62a",
+      "slug": "wintak-laajennusten-hallinta-qaHLBdWwfw",
+      "collection": "guides/tak-guide",
+      "title": "WinTAK-laajennusten hallinta",
+      "breadcrumb": [
+        "Platforms",
+        "WinTAK",
+        "PERUSTOIMINNOT",
+        "WinTAK-laajennusten hallinta"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/wintak-laajennusten-hallinta-qaHLBdWwfw.json",
+      "updatedAt": "2026-06-18T20:23:42.249Z",
+      "order": 82,
+      "platform": "windows",
+      "clientId": "wintak-gOdRRMN4lI",
+      "chapterId": "perustoiminnot-D1WjpOWQsF",
+      "chapterLabel": "PERUSTOIMINNOT"
+    },
+    {
+      "id": "e42fb82f-8296-4a74-9b90-996810de7486",
+      "slug": "tyhjenna-sisalto-WetdafA5DU",
+      "collection": "guides/tak-guide",
+      "title": "Tyhjennä sisältö",
+      "breadcrumb": [
+        "Platforms",
+        "WinTAK",
+        "PERUSTOIMINNOT",
+        "Tyhjennä sisältö"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/tyhjenna-sisalto-WetdafA5DU.json",
+      "updatedAt": "2026-06-18T20:23:45.245Z",
+      "order": 83,
+      "platform": "windows",
+      "clientId": "wintak-gOdRRMN4lI",
+      "chapterId": "perustoiminnot-D1WjpOWQsF",
+      "chapterLabel": "PERUSTOIMINNOT"
+    },
+    {
+      "id": "f135d75f-0e1b-42bb-a8f9-1ff5a0ce4680",
+      "slug": "syotteiden-luominen-RQLTfV45mi",
+      "collection": "guides/tak-guide",
+      "title": "Syötteiden luominen",
+      "breadcrumb": [
+        "Platforms",
+        "WinTAK",
+        "EDISTYNEET YDINOMINAISUUDET",
+        "Syötteiden luominen"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/syotteiden-luominen-RQLTfV45mi.json",
+      "updatedAt": "2026-06-18T20:23:47.961Z",
+      "order": 84,
+      "platform": "windows",
+      "clientId": "wintak-gOdRRMN4lI",
+      "chapterId": "edistyneet-ydinominaisuudet-phbBAipJR3",
+      "chapterLabel": "EDISTYNEET YDINOMINAISUUDET"
+    },
+    {
+      "id": "abf3ba30-84a1-4f57-aed8-a39d7d657775",
+      "slug": "hallinnoi-syotteita-dbaSnOdqqc",
+      "collection": "guides/tak-guide",
+      "title": "Hallinnoi syötteitä",
+      "breadcrumb": [
+        "Platforms",
+        "WinTAK",
+        "EDISTYNEET YDINOMINAISUUDET",
+        "Hallinnoi syötteitä"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/hallinnoi-syotteita-dbaSnOdqqc.json",
+      "updatedAt": "2026-06-18T20:23:49.448Z",
+      "order": 85,
+      "platform": "windows",
+      "clientId": "wintak-gOdRRMN4lI",
+      "chapterId": "edistyneet-ydinominaisuudet-phbBAipJR3",
+      "chapterLabel": "EDISTYNEET YDINOMINAISUUDET"
+    },
+    {
+      "id": "9a4df5b6-93a1-48e3-964e-1b34412c08d2",
+      "slug": "piirra-ja-jaa-suunnitelmia-yKzNNsotOO",
+      "collection": "guides/tak-guide",
+      "title": "Piirrä ja jaa suunnitelmia",
+      "breadcrumb": [
+        "Platforms",
+        "WinTAK",
+        "EDISTYNEET YDINOMINAISUUDET",
+        "Piirrä ja jaa suunnitelmia"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/piirra-ja-jaa-suunnitelmia-yKzNNsotOO.json",
+      "updatedAt": "2026-06-18T20:23:51.193Z",
+      "order": 86,
+      "platform": "windows",
+      "clientId": "wintak-gOdRRMN4lI",
+      "chapterId": "edistyneet-ydinominaisuudet-phbBAipJR3",
+      "chapterLabel": "EDISTYNEET YDINOMINAISUUDET"
+    },
+    {
+      "id": "166d61a1-6834-4a01-bff3-833962305c7f",
+      "slug": "saa-halytyksia-geoaidoilla-4MYhNMrI4D",
+      "collection": "guides/tak-guide",
+      "title": "Saa hälytyksiä geoaidoilla",
+      "breadcrumb": [
+        "Platforms",
+        "WinTAK",
+        "EDISTYNEET YDINOMINAISUUDET",
+        "Saa hälytyksiä geoaidoilla"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/saa-halytyksia-geoaidoilla-4MYhNMrI4D.json",
+      "updatedAt": "2026-06-18T20:23:52.917Z",
+      "order": 87,
+      "platform": "windows",
+      "clientId": "wintak-gOdRRMN4lI",
+      "chapterId": "edistyneet-ydinominaisuudet-phbBAipJR3",
+      "chapterLabel": "EDISTYNEET YDINOMINAISUUDET"
+    },
+    {
+      "id": "1cbd3681-5687-4078-a94c-94eff8d1e5be",
+      "slug": "opendefence-vakiomalli-x5SMy8a7WS",
+      "collection": "guides/tak-guide",
+      "title": "OpenDefence-vakiomalli",
+      "breadcrumb": [
+        "Platforms",
+        "WinTAK",
+        "KÄYTTÖ ROOLEITTAIN",
+        "OpenDefence-vakiomalli"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/opendefence-vakiomalli-x5SMy8a7WS.json",
+      "updatedAt": "2026-06-18T20:24:15.265Z",
+      "order": 88,
+      "platform": "windows",
+      "clientId": "wintak-gOdRRMN4lI",
+      "chapterId": "kaytto-rooleittain-KV9kd7JRcO",
+      "chapterLabel": "KÄYTTÖ ROOLEITTAIN"
+    },
+    {
+      "id": "5d42135e-3bde-4786-8a39-72c83c06bbea",
+      "slug": "taistelija-trgkL4SaDk",
+      "collection": "guides/tak-guide",
+      "title": "Taistelija",
+      "breadcrumb": [
+        "Platforms",
+        "WinTAK",
+        "KÄYTTÖ ROOLEITTAIN",
+        "Taistelija"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/taistelija-trgkL4SaDk.json",
+      "updatedAt": "2026-06-18T20:24:29.259Z",
+      "order": 89,
+      "platform": "windows",
+      "clientId": "wintak-gOdRRMN4lI",
+      "chapterId": "kaytto-rooleittain-KV9kd7JRcO",
+      "chapterLabel": "KÄYTTÖ ROOLEITTAIN"
+    },
+    {
+      "id": "4b0fdbfb-ea02-4170-880e-b3c58191bbdb",
+      "slug": "tuota-recon-syote-fexKBlxU0L",
+      "collection": "guides/tak-guide",
+      "title": "Tuota RECON-syöte",
+      "breadcrumb": [
+        "Platforms",
+        "WinTAK",
+        "KÄYTTÖ ROOLEITTAIN",
+        "Komentopaikka",
+        "Tuota RECON-syöte"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/tuota-recon-syote-fexKBlxU0L.json",
+      "updatedAt": "2026-06-18T20:24:33.425Z",
+      "order": 90,
+      "platform": "windows",
+      "clientId": "wintak-gOdRRMN4lI",
+      "chapterId": "komentopaikka-PbnlzDbEe6",
+      "chapterLabel": "Komentopaikka"
+    },
+    {
+      "id": "1f301b06-a1b5-47eb-8da4-813148a22548",
+      "slug": "tallenna-tapahtumat-qjxLc57ea2",
+      "collection": "guides/tak-guide",
+      "title": "Tallenna tapahtumat",
+      "breadcrumb": [
+        "Platforms",
+        "WinTAK",
+        "Tuetut lisäosat",
+        "TAK Replay",
+        "Tallenna tapahtumat"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/tallenna-tapahtumat-qjxLc57ea2.json",
+      "updatedAt": "2026-06-18T20:24:41.221Z",
+      "order": 91,
+      "platform": "windows",
+      "clientId": "wintak-gOdRRMN4lI",
+      "chapterId": "tak-replay-zL0VTQCC8K",
+      "chapterLabel": "TAK Replay"
+    },
+    {
+      "id": "8404e106-d015-4438-a21f-fa52b22d7fd2",
+      "slug": "toista-nauhoitus-IzwZSK6kdC",
+      "collection": "guides/tak-guide",
+      "title": "Toista nauhoitus",
+      "breadcrumb": [
+        "Platforms",
+        "WinTAK",
+        "Tuetut lisäosat",
+        "TAK Replay",
+        "Toista nauhoitus"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/toista-nauhoitus-IzwZSK6kdC.json",
+      "updatedAt": "2026-06-18T20:24:43.414Z",
+      "order": 92,
+      "platform": "windows",
+      "clientId": "wintak-gOdRRMN4lI",
+      "chapterId": "tak-replay-zL0VTQCC8K",
+      "chapterLabel": "TAK Replay"
+    },
+    {
+      "id": "83573802-5949-47c1-96d6-5ec3821cf64b",
+      "slug": "vie-lataa-ja-hallitse-FEIam7G2GU",
+      "collection": "guides/tak-guide",
+      "title": "Vie, lataa ja hallitse",
+      "breadcrumb": [
+        "Platforms",
+        "WinTAK",
+        "Tuetut lisäosat",
+        "TAK Replay",
+        "Vie, lataa ja hallitse"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/vie-lataa-ja-hallitse-FEIam7G2GU.json",
+      "updatedAt": "2026-06-18T20:24:46.124Z",
+      "order": 93,
+      "platform": "windows",
+      "clientId": "wintak-gOdRRMN4lI",
+      "chapterId": "tak-replay-zL0VTQCC8K",
+      "chapterLabel": "TAK Replay"
+    },
+    {
+      "id": "7a12e934-9bcf-4b1e-97ce-e20acfdeb8ef",
+      "slug": "luo-ja-muokkaa-grg-Fpt8jedvMz",
+      "collection": "guides/tak-guide",
+      "title": "Luo ja muokkaa GRG",
+      "breadcrumb": [
+        "Platforms",
+        "WinTAK",
+        "Tuetut lisäosat",
+        "GRG Builder",
+        "Luo ja muokkaa GRG"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/luo-ja-muokkaa-grg-Fpt8jedvMz.json",
+      "updatedAt": "2026-06-18T20:24:50.470Z",
+      "order": 94,
+      "platform": "windows",
+      "clientId": "wintak-gOdRRMN4lI",
+      "chapterId": "grg-builder-ClsND0zeco",
+      "chapterLabel": "GRG Builder"
+    },
+    {
+      "id": "24605dfa-ac58-4ebd-90f0-7c7f01f62fa4",
+      "slug": "lisaa-ominaisuuksia-ja-merkintoja-6rG5M5SnNo",
+      "collection": "guides/tak-guide",
+      "title": "Lisää ominaisuuksia ja merkintöjä",
+      "breadcrumb": [
+        "Platforms",
+        "WinTAK",
+        "Tuetut lisäosat",
+        "GRG Builder",
+        "Lisää ominaisuuksia ja merkintöjä"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/lisaa-ominaisuuksia-ja-merkintoja-6rG5M5SnNo.json",
+      "updatedAt": "2026-06-18T20:24:52.642Z",
+      "order": 95,
+      "platform": "windows",
+      "clientId": "wintak-gOdRRMN4lI",
+      "chapterId": "grg-builder-ClsND0zeco",
+      "chapterLabel": "GRG Builder"
+    },
+    {
+      "id": "0077d43b-e010-421f-844a-c79029a53845",
+      "slug": "grgn-vienti-ja-jakaminen-ydjlUkJ7Pg",
+      "collection": "guides/tak-guide",
+      "title": "GRG:n vienti ja jakaminen",
+      "breadcrumb": [
+        "Platforms",
+        "WinTAK",
+        "Tuetut lisäosat",
+        "GRG Builder",
+        "GRG:n vienti ja jakaminen"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/grgn-vienti-ja-jakaminen-ydjlUkJ7Pg.json",
+      "updatedAt": "2026-06-18T20:24:54.053Z",
+      "order": 96,
+      "platform": "windows",
+      "clientId": "wintak-gOdRRMN4lI",
+      "chapterId": "grg-builder-ClsND0zeco",
+      "chapterLabel": "GRG Builder"
+    },
+    {
+      "id": "39828d94-f400-4fea-81d8-7b9b652b3b07",
+      "slug": "luo-raportti-DDE5rNDUyr",
+      "collection": "guides/tak-guide",
+      "title": "Luo raportti",
+      "breadcrumb": [
+        "Platforms",
+        "WinTAK",
+        "Tuetut lisäosat",
+        "Raportit",
+        "Luo raportti"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/luo-raportti-DDE5rNDUyr.json",
+      "updatedAt": "2026-06-18T20:24:57.360Z",
+      "order": 97,
+      "platform": "windows",
+      "clientId": "wintak-gOdRRMN4lI",
+      "chapterId": "raportit-0dBn1xdifl",
+      "chapterLabel": "Raportit"
+    },
+    {
+      "id": "1ca68991-e76c-4342-8fc9-021887033dd5",
+      "slug": "selaa-raporttitietokantaa-RmpgkBAbfQ",
+      "collection": "guides/tak-guide",
+      "title": "Selaa raporttitietokantaa",
+      "breadcrumb": [
+        "Platforms",
+        "WinTAK",
+        "Tuetut lisäosat",
+        "Raportit",
+        "Selaa raporttitietokantaa"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/selaa-raporttitietokantaa-RmpgkBAbfQ.json",
+      "updatedAt": "2026-06-18T20:24:58.760Z",
+      "order": 98,
+      "platform": "windows",
+      "clientId": "wintak-gOdRRMN4lI",
+      "chapterId": "raportit-0dBn1xdifl",
+      "chapterLabel": "Raportit"
+    },
+    {
+      "id": "31f5eb75-619c-4e27-ae46-53acc18c3f29",
+      "slug": "mukautetut-raporttipohjat-ArfvIcUuY3",
+      "collection": "guides/tak-guide",
+      "title": "Mukautetut raporttipohjat",
+      "breadcrumb": [
+        "Platforms",
+        "WinTAK",
+        "Tuetut lisäosat",
+        "Raportit",
+        "Mukautetut raporttipohjat"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/mukautetut-raporttipohjat-ArfvIcUuY3.json",
+      "updatedAt": "2026-06-18T20:25:00.292Z",
+      "order": 99,
+      "platform": "windows",
+      "clientId": "wintak-gOdRRMN4lI",
+      "chapterId": "raportit-0dBn1xdifl",
+      "chapterLabel": "Raportit"
+    },
+    {
+      "id": "c2b1c65c-4af3-4800-821b-a08fd64ac18e",
+      "slug": "luo-vns-reitti-Njd2diVcZY",
+      "collection": "guides/tak-guide",
+      "title": "Luo VNS-reitti",
+      "breadcrumb": [
+        "Platforms",
+        "WinTAK",
+        "Tuetut lisäosat",
+        "VNS - Ajoneuvon navigointijärjestelmä",
+        "Luo VNS-reitti"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/luo-vns-reitti-Njd2diVcZY.json",
+      "updatedAt": "2026-06-18T20:25:29.888Z",
+      "order": 100,
+      "platform": "windows",
+      "clientId": "wintak-gOdRRMN4lI",
+      "chapterId": "vns-ajoneuvon-navigointijarjestelma-xBTc9MgBEc",
+      "chapterLabel": "VNS - Ajoneuvon navigointijärjestelmä"
+    },
+    {
+      "id": "c159d21c-7074-4c24-b5ef-eb680fd031f9",
+      "slug": "vianmaaritys-HIBgMyBeHy",
+      "collection": "guides/tak-guide",
+      "title": "Vianmääritys",
+      "breadcrumb": [
+        "Platforms",
+        "WinTAK",
+        "Vianmääritys"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/vianmaaritys-HIBgMyBeHy.json",
+      "updatedAt": "2026-06-18T20:25:32.056Z",
+      "order": 101,
+      "platform": "windows",
+      "clientId": "wintak-gOdRRMN4lI",
+      "chapterId": "wintak-gOdRRMN4lI",
+      "chapterLabel": "WinTAK"
+    },
+    {
+      "id": "021af034-5c85-4937-9aa7-b68f90bffe3e",
+      "slug": "aloita-lataamisesta-qtXafhRjdo",
+      "collection": "guides/tak-guide",
+      "title": "Aloita lataamisesta",
+      "breadcrumb": [
+        "Platforms",
+        "iTAK",
+        "Aloitus",
+        "Aloita lataamisesta"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/aloita-lataamisesta-qtXafhRjdo.json",
+      "updatedAt": "2026-06-18T20:25:40.143Z",
+      "order": 102,
+      "platform": "ios",
+      "clientId": "itak-pzOFxqFSem",
+      "chapterId": "aloitus-r6ZvF4Ztdj",
+      "chapterLabel": "Aloitus"
+    },
+    {
+      "id": "162642b1-e1f1-46c2-9a95-8b6166f0ae78",
+      "slug": "itak-on-jo-asennettu-b7KB36fpA7",
+      "collection": "guides/tak-guide",
+      "title": "iTAK on jo asennettu",
+      "breadcrumb": [
+        "Platforms",
+        "iTAK",
+        "Aloitus",
+        "iTAK on jo asennettu"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/itak-on-jo-asennettu-b7KB36fpA7.json",
+      "updatedAt": "2026-06-18T20:25:41.869Z",
+      "order": 103,
+      "platform": "ios",
+      "clientId": "itak-pzOFxqFSem",
+      "chapterId": "aloitus-r6ZvF4Ztdj",
+      "chapterLabel": "Aloitus"
+    },
+    {
+      "id": "1dee787c-2738-4b8a-98c1-873c41e90443",
+      "slug": "omien-joukkojen-seuranta-g7RxW8tHH6",
+      "collection": "guides/tak-guide",
+      "title": "Omien joukkojen seuranta",
+      "breadcrumb": [
+        "Platforms",
+        "iTAK",
+        "Perustoiminnot",
+        "Omien joukkojen seuranta"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/omien-joukkojen-seuranta-g7RxW8tHH6.json",
+      "updatedAt": "2026-06-18T20:25:47.444Z",
+      "order": 104,
+      "platform": "ios",
+      "clientId": "itak-pzOFxqFSem",
+      "chapterId": "perustoiminnot-AR7DoihPBU",
+      "chapterLabel": "Perustoiminnot"
+    },
+    {
+      "id": "d9dc958f-f34a-48d9-ba9e-0349404a8406",
+      "slug": "datan-synkronointi-lzOCvJIN5S",
+      "collection": "guides/tak-guide",
+      "title": "Datan synkronointi",
+      "breadcrumb": [
+        "Platforms",
+        "iTAK",
+        "Perustoiminnot",
+        "Datan synkronointi"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/datan-synkronointi-lzOCvJIN5S.json",
+      "updatedAt": "2026-06-18T20:25:49.448Z",
+      "order": 105,
+      "platform": "ios",
+      "clientId": "itak-pzOFxqFSem",
+      "chapterId": "perustoiminnot-AR7DoihPBU",
+      "chapterLabel": "Perustoiminnot"
+    },
+    {
+      "id": "608ccf84-5721-4c6a-973e-a9391b819404",
+      "slug": "luo-symboleja-ja-pikakuvia-sHjyCvAf4P",
+      "collection": "guides/tak-guide",
+      "title": "Luo symboleja ja pikakuvia",
+      "breadcrumb": [
+        "Platforms",
+        "iTAK",
+        "Perustoiminnot",
+        "Luo symboleja ja pikakuvia"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/luo-symboleja-ja-pikakuvia-sHjyCvAf4P.json",
+      "updatedAt": "2026-06-18T20:25:51.081Z",
+      "order": 106,
+      "platform": "ios",
+      "clientId": "itak-pzOFxqFSem",
+      "chapterId": "perustoiminnot-AR7DoihPBU",
+      "chapterLabel": "Perustoiminnot"
+    },
+    {
+      "id": "0de0128d-a395-4263-b423-b5b9cfa75636",
+      "slug": "kayta-geochatia-1MmA1emqhu",
+      "collection": "guides/tak-guide",
+      "title": "Käytä GeoChatia",
+      "breadcrumb": [
+        "Platforms",
+        "iTAK",
+        "Perustoiminnot",
+        "Käytä GeoChatia"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/kayta-geochatia-1MmA1emqhu.json",
+      "updatedAt": "2026-06-18T20:25:53.609Z",
+      "order": 107,
+      "platform": "ios",
+      "clientId": "itak-pzOFxqFSem",
+      "chapterId": "perustoiminnot-AR7DoihPBU",
+      "chapterLabel": "Perustoiminnot"
+    },
+    {
+      "id": "3e632fbf-3667-4897-8257-bec692ca559c",
+      "slug": "yleiskatsaus-UB5rRp5Nz5",
+      "collection": "guides/tak-guide",
+      "title": "Yleiskatsaus",
+      "breadcrumb": [
+        "Platforms",
+        "iTAK",
+        "Käyttö roolin mukaan",
+        "Yleiskatsaus"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/yleiskatsaus-UB5rRp5Nz5.json",
+      "updatedAt": "2026-06-18T20:25:57.427Z",
+      "order": 108,
+      "platform": "ios",
+      "clientId": "itak-pzOFxqFSem",
+      "chapterId": "kaytto-roolin-mukaan-vm304ASeSS",
+      "chapterLabel": "Käyttö roolin mukaan"
+    },
+    {
+      "id": "4352e3d6-ce97-4256-852a-d48c6357cccf",
+      "slug": "taistelija-Rco9ioLaEE",
+      "collection": "guides/tak-guide",
+      "title": "Taistelija",
+      "breadcrumb": [
+        "Platforms",
+        "iTAK",
+        "Käyttö roolin mukaan",
+        "Taistelija"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/taistelija-Rco9ioLaEE.json",
+      "updatedAt": "2026-06-18T20:25:58.968Z",
+      "order": 109,
+      "platform": "ios",
+      "clientId": "itak-pzOFxqFSem",
+      "chapterId": "kaytto-roolin-mukaan-vm304ASeSS",
+      "chapterLabel": "Käyttö roolin mukaan"
+    },
+    {
+      "id": "84ea854e-a3d5-4af0-8273-9aa0be721b73",
+      "slug": "komentopaikka-7qMzKheq4Z",
+      "collection": "guides/tak-guide",
+      "title": "Komentopaikka",
+      "breadcrumb": [
+        "Platforms",
+        "iTAK",
+        "Käyttö roolin mukaan",
+        "Komentopaikka"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/komentopaikka-7qMzKheq4Z.json",
+      "updatedAt": "2026-06-18T20:26:00.444Z",
+      "order": 110,
+      "platform": "ios",
+      "clientId": "itak-pzOFxqFSem",
+      "chapterId": "kaytto-roolin-mukaan-vm304ASeSS",
+      "chapterLabel": "Käyttö roolin mukaan"
+    },
+    {
+      "id": "60229c8d-98cc-4419-8bd2-5eca84ac8016",
+      "slug": "vianmaaritys-LtZ3uqW6vO",
+      "collection": "guides/tak-guide",
+      "title": "Vianmääritys",
+      "breadcrumb": [
+        "Platforms",
+        "iTAK",
+        "Vianmääritys"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/vianmaaritys-LtZ3uqW6vO.json",
+      "updatedAt": "2026-06-18T20:26:01.917Z",
+      "order": 111,
+      "platform": "ios",
+      "clientId": "itak-pzOFxqFSem",
+      "chapterId": "itak-pzOFxqFSem",
+      "chapterLabel": "iTAK"
+    },
+    {
+      "id": "2936078e-8d2c-4836-9e8a-0181fe284bb4",
+      "slug": "aloita-lataamisesta-HDrpxKE5fj",
+      "collection": "guides/tak-guide",
+      "title": "Aloita lataamisesta",
+      "breadcrumb": [
+        "Platforms",
+        "TAK Tracker - Android",
+        "ALOITA JA YHDISTÄ",
+        "Aloita lataamisesta"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/aloita-lataamisesta-HDrpxKE5fj.json",
+      "updatedAt": "2026-06-18T20:26:33.145Z",
+      "order": 112,
+      "platform": "android",
+      "clientId": "tak-tracker-android-E5prGxCUhh",
+      "chapterId": "aloita-ja-yhdista-12ZYUnFSaG",
+      "chapterLabel": "ALOITA JA YHDISTÄ"
+    },
+    {
+      "id": "30a86a0f-4958-4844-b094-cd24981cec8c",
+      "slug": "tak-tracker-on-jo-asennettu-kdeS68J3Ln",
+      "collection": "guides/tak-guide",
+      "title": "TAK Tracker on jo asennettu",
+      "breadcrumb": [
+        "Platforms",
+        "TAK Tracker - Android",
+        "ALOITA JA YHDISTÄ",
+        "TAK Tracker on jo asennettu"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/tak-tracker-on-jo-asennettu-kdeS68J3Ln.json",
+      "updatedAt": "2026-06-18T20:26:34.864Z",
+      "order": 113,
+      "platform": "android",
+      "clientId": "tak-tracker-android-E5prGxCUhh",
+      "chapterId": "aloita-ja-yhdista-12ZYUnFSaG",
+      "chapterLabel": "ALOITA JA YHDISTÄ"
+    },
+    {
+      "id": "f4610ffd-e0f4-42cb-938f-5bde18060dfa",
+      "slug": "palvelinyhteyden-tuonti-se5nhvhcj0",
+      "collection": "guides/tak-guide",
+      "title": "Palvelinyhteyden tuonti",
+      "breadcrumb": [
+        "Platforms",
+        "TAK Tracker - Android",
+        "ALOITA JA YHDISTÄ",
+        "Palvelinyhteyden tuonti"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/palvelinyhteyden-tuonti-se5nhvhcj0.json",
+      "updatedAt": "2026-06-18T20:26:36.775Z",
+      "order": 114,
+      "platform": "android",
+      "clientId": "tak-tracker-android-E5prGxCUhh",
+      "chapterId": "aloita-ja-yhdista-12ZYUnFSaG",
+      "chapterLabel": "ALOITA JA YHDISTÄ"
+    },
+    {
+      "id": "dd9d0236-0270-4234-b69a-e86e9f2e5be4",
+      "slug": "lue-tilasi-ja-sijaintisi-2FUEtnpZg4",
+      "collection": "guides/tak-guide",
+      "title": "Lue tilasi ja sijaintisi",
+      "breadcrumb": [
+        "Platforms",
+        "TAK Tracker - Android",
+        "PERUSTOIMINNOT",
+        "Lue tilasi ja sijaintisi"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/lue-tilasi-ja-sijaintisi-2FUEtnpZg4.json",
+      "updatedAt": "2026-06-18T20:26:43.749Z",
+      "order": 115,
+      "platform": "android",
+      "clientId": "tak-tracker-android-E5prGxCUhh",
+      "chapterId": "perustoiminnot-STBYPn8qJ6",
+      "chapterLabel": "PERUSTOIMINNOT"
+    },
+    {
+      "id": "dcfe340e-15ab-49a5-9faa-19f3034c5932",
+      "slug": "laheta-hatamajakka-1C1ahU2CXe",
+      "collection": "guides/tak-guide",
+      "title": "Lähetä hätämajakka",
+      "breadcrumb": [
+        "Platforms",
+        "TAK Tracker - Android",
+        "PERUSTOIMINNOT",
+        "Lähetä hätämajakka"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/laheta-hatamajakka-1C1ahU2CXe.json",
+      "updatedAt": "2026-06-18T20:26:45.315Z",
+      "order": 116,
+      "platform": "android",
+      "clientId": "tak-tracker-android-E5prGxCUhh",
+      "chapterId": "perustoiminnot-STBYPn8qJ6",
+      "chapterLabel": "PERUSTOIMINNOT"
+    },
+    {
+      "id": "84921950-7102-42cd-acc1-a2de7de41309",
+      "slug": "keskustele-tiimisi-kanssa-gTr7e8bLbF",
+      "collection": "guides/tak-guide",
+      "title": "Keskustele tiimisi kanssa",
+      "breadcrumb": [
+        "Platforms",
+        "TAK Tracker - Android",
+        "PERUSTOIMINNOT",
+        "Keskustele tiimisi kanssa"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/keskustele-tiimisi-kanssa-gTr7e8bLbF.json",
+      "updatedAt": "2026-06-18T20:26:48.210Z",
+      "order": 117,
+      "platform": "android",
+      "clientId": "tak-tracker-android-E5prGxCUhh",
+      "chapterId": "perustoiminnot-STBYPn8qJ6",
+      "chapterLabel": "PERUSTOIMINNOT"
+    },
+    {
+      "id": "19ca65cb-0cf0-4552-af3f-3050978973a8",
+      "slug": "asetukset-ja-valinnat-kNYxhiyRlR",
+      "collection": "guides/tak-guide",
+      "title": "Asetukset ja valinnat",
+      "breadcrumb": [
+        "Platforms",
+        "TAK Tracker - Android",
+        "LISÄOMINAISUUDET",
+        "Asetukset ja valinnat"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/asetukset-ja-valinnat-kNYxhiyRlR.json",
+      "updatedAt": "2026-06-18T20:26:52.427Z",
+      "order": 118,
+      "platform": "android",
+      "clientId": "tak-tracker-android-E5prGxCUhh",
+      "chapterId": "lisaominaisuudet-zDxTIvOwBi",
+      "chapterLabel": "LISÄOMINAISUUDET"
+    },
+    {
+      "id": "cbbe0084-4302-4c2b-90b1-b3f24ee2d22d",
+      "slug": "yleiskatsaus-awMobw9EkE",
+      "collection": "guides/tak-guide",
+      "title": "Yleiskatsaus",
+      "breadcrumb": [
+        "Platforms",
+        "TAK Tracker - Android",
+        "KÄYTTÖ ROOLEITTAIN",
+        "Yleiskatsaus"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/yleiskatsaus-awMobw9EkE.json",
+      "updatedAt": "2026-06-18T20:26:56.596Z",
+      "order": 119,
+      "platform": "android",
+      "clientId": "tak-tracker-android-E5prGxCUhh",
+      "chapterId": "kaytto-rooleittain-CjDF6P8IaC",
+      "chapterLabel": "KÄYTTÖ ROOLEITTAIN"
+    },
+    {
+      "id": "c381435e-66e3-4115-b8aa-077f5b453b0f",
+      "slug": "taistelija-jkvrnZXkli",
+      "collection": "guides/tak-guide",
+      "title": "Taistelija",
+      "breadcrumb": [
+        "Platforms",
+        "TAK Tracker - Android",
+        "KÄYTTÖ ROOLEITTAIN",
+        "Taistelija"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/taistelija-jkvrnZXkli.json",
+      "updatedAt": "2026-06-18T20:26:58.062Z",
+      "order": 120,
+      "platform": "android",
+      "clientId": "tak-tracker-android-E5prGxCUhh",
+      "chapterId": "kaytto-rooleittain-CjDF6P8IaC",
+      "chapterLabel": "KÄYTTÖ ROOLEITTAIN"
+    },
+    {
+      "id": "b05c3000-8eb8-49a9-9330-1c6d8b24e2dc",
+      "slug": "komentopaikka-BLzd0iLjOh",
+      "collection": "guides/tak-guide",
+      "title": "Komentopaikka",
+      "breadcrumb": [
+        "Platforms",
+        "TAK Tracker - Android",
+        "KÄYTTÖ ROOLEITTAIN",
+        "Komentopaikka"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/komentopaikka-BLzd0iLjOh.json",
+      "updatedAt": "2026-06-18T20:26:59.682Z",
+      "order": 121,
+      "platform": "android",
+      "clientId": "tak-tracker-android-E5prGxCUhh",
+      "chapterId": "kaytto-rooleittain-CjDF6P8IaC",
+      "chapterLabel": "KÄYTTÖ ROOLEITTAIN"
+    },
+    {
+      "id": "eedb30db-d275-4759-a91e-c92003ce3842",
+      "slug": "aloita-lataamalla-GKdhN7JWfS",
+      "collection": "guides/tak-guide",
+      "title": "Aloita lataamalla",
+      "breadcrumb": [
+        "Platforms",
+        "TAK Tracker - Apple",
+        "ALOITUS JA YHTEYDEN MUODOSTAMINEN",
+        "Aloita lataamalla"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/aloita-lataamalla-GKdhN7JWfS.json",
+      "updatedAt": "2026-06-18T20:27:30.069Z",
+      "order": 122,
+      "platform": "ios",
+      "clientId": "tak-tracker-apple-fLXmWaMemp",
+      "chapterId": "aloitus-ja-yhteyden-muodostaminen-zNOY45PsbD",
+      "chapterLabel": "ALOITUS JA YHTEYDEN MUODOSTAMINEN"
+    },
+    {
+      "id": "7b31e467-8ef9-4534-96c0-ae85ed98d814",
+      "slug": "tak-tracker-on-jo-asennettu-9ULjLI5HIp",
+      "collection": "guides/tak-guide",
+      "title": "TAK Tracker on jo asennettu",
+      "breadcrumb": [
+        "Platforms",
+        "TAK Tracker - Apple",
+        "ALOITUS JA YHTEYDEN MUODOSTAMINEN",
+        "TAK Tracker on jo asennettu"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/tak-tracker-on-jo-asennettu-9ULjLI5HIp.json",
+      "updatedAt": "2026-06-18T20:27:31.721Z",
+      "order": 123,
+      "platform": "ios",
+      "clientId": "tak-tracker-apple-fLXmWaMemp",
+      "chapterId": "aloitus-ja-yhteyden-muodostaminen-zNOY45PsbD",
+      "chapterLabel": "ALOITUS JA YHTEYDEN MUODOSTAMINEN"
+    },
+    {
+      "id": "8be8ff89-43d5-41b1-bb73-a8b34b952b0e",
+      "slug": "laheta-halytyksia-oXpOorNrag",
+      "collection": "guides/tak-guide",
+      "title": "Lähetä hälytyksiä",
+      "breadcrumb": [
+        "Platforms",
+        "TAK Tracker - Apple",
+        "TAK-toiminnot",
+        "Lähetä hälytyksiä"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/laheta-halytyksia-oXpOorNrag.json",
+      "updatedAt": "2026-06-18T20:27:35.677Z",
+      "order": 124,
+      "platform": "ios",
+      "clientId": "tak-tracker-apple-fLXmWaMemp",
+      "chapterId": "tak-toiminnot-d65wlJ4o4J",
+      "chapterLabel": "TAK-toiminnot"
+    },
+    {
+      "id": "1a49cc30-ad6f-48a5-b013-70671bcd2c08",
+      "slug": "yleiskatsaus-BerAy6ibbu",
+      "collection": "guides/tak-guide",
+      "title": "Yleiskatsaus",
+      "breadcrumb": [
+        "Platforms",
+        "TAK Tracker - Apple",
+        "Käyttö roolin mukaan",
+        "Yleiskatsaus"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/yleiskatsaus-BerAy6ibbu.json",
+      "updatedAt": "2026-06-18T20:27:41.590Z",
+      "order": 125,
+      "platform": "ios",
+      "clientId": "tak-tracker-apple-fLXmWaMemp",
+      "chapterId": "kaytto-roolin-mukaan-XcyWT5erP6",
+      "chapterLabel": "Käyttö roolin mukaan"
+    },
+    {
+      "id": "0cbcd6dd-cd52-4c1d-941e-0e748e88344b",
+      "slug": "taistelija-Qgf88CxnWl",
+      "collection": "guides/tak-guide",
+      "title": "Taistelija",
+      "breadcrumb": [
+        "Platforms",
+        "TAK Tracker - Apple",
+        "Käyttö roolin mukaan",
+        "Taistelija"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/taistelija-Qgf88CxnWl.json",
+      "updatedAt": "2026-06-18T20:27:44.355Z",
+      "order": 126,
+      "platform": "ios",
+      "clientId": "tak-tracker-apple-fLXmWaMemp",
+      "chapterId": "kaytto-roolin-mukaan-XcyWT5erP6",
+      "chapterLabel": "Käyttö roolin mukaan"
+    },
+    {
+      "id": "162e90de-5073-4a4f-9bce-c828289a5d7a",
+      "slug": "komentopaikka-q4LRKdr4q0",
+      "collection": "guides/tak-guide",
+      "title": "Komentopaikka",
+      "breadcrumb": [
+        "Platforms",
+        "TAK Tracker - Apple",
+        "Käyttö roolin mukaan",
+        "Komentopaikka"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/komentopaikka-q4LRKdr4q0.json",
+      "updatedAt": "2026-06-18T20:27:46.434Z",
+      "order": 127,
+      "platform": "ios",
+      "clientId": "tak-tracker-apple-fLXmWaMemp",
+      "chapterId": "kaytto-roolin-mukaan-XcyWT5erP6",
+      "chapterLabel": "Käyttö roolin mukaan"
+    },
+    {
+      "id": "4874c1de-0f8b-4022-995a-c0f0d31b86e2",
+      "slug": "vianmaaritys-MchVmRHKOC",
+      "collection": "guides/tak-guide",
+      "title": "Vianmääritys",
+      "breadcrumb": [
+        "Platforms",
+        "TAK Tracker - Apple",
+        "Vianmääritys"
+      ],
+      "path": "/content/fi/pages/guides/tak-guide/vianmaaritys-MchVmRHKOC.json",
+      "updatedAt": "2026-06-18T20:27:48.924Z",
+      "order": 128,
+      "platform": "ios",
+      "clientId": "tak-tracker-apple-fLXmWaMemp",
+      "chapterId": "tak-tracker-apple-fLXmWaMemp",
+      "chapterLabel": "TAK Tracker - Apple"
     },
     {
       "id": "95181bf8-9633-4bc0-98a5-2d19f45c8a83",
@@ -303,6 +3037,75 @@
       "chapterLabel": "Julkaise Striimiä"
     },
     {
+      "id": "789eadfb-dc28-4086-8d09-9385e6b4bcba",
+      "slug": "asenna-element-tyopoyta-tagwindows-tagmacos-taglinux-Zn1epPrcp6",
+      "collection": "guides/matrix-guide",
+      "title": "Asenna Element (työpöytä)",
+      "breadcrumb": [
+        "Yhdistä palvelimeen",
+        "Asenna Element (työpöytä)"
+      ],
+      "path": "/content/fi/pages/guides/matrix-guide/asenna-element-tyopoyta-tagwindows-tagmacos-taglinux-Zn1epPrcp6.json",
+      "updatedAt": "2026-06-18T20:37:50.598Z",
+      "order": 0,
+      "platforms": [
+        "windows",
+        "macos",
+        "linux"
+      ],
+      "chapterId": "yhdista-palvelimeen-9Y5uV0Gnae",
+      "chapterLabel": "Yhdistä palvelimeen"
+    },
+    {
+      "id": "5b05951a-0a08-4ce8-b328-a07fc132e51e",
+      "slug": "ota-element-kayttoon-mobiili-tagios-tagandroid-GKkxWww3O0",
+      "collection": "guides/matrix-guide",
+      "title": "Ota Element käyttöön (mobiili)",
+      "breadcrumb": [
+        "Yhdistä palvelimeen",
+        "Ota Element käyttöön (mobiili)"
+      ],
+      "path": "/content/fi/pages/guides/matrix-guide/ota-element-kayttoon-mobiili-tagios-tagandroid-GKkxWww3O0.json",
+      "updatedAt": "2026-06-18T20:37:51.925Z",
+      "order": 1,
+      "platforms": [
+        "ios",
+        "android"
+      ],
+      "chapterId": "yhdista-palvelimeen-9Y5uV0Gnae",
+      "chapterLabel": "Yhdistä palvelimeen"
+    },
+    {
+      "id": "d1fa966f-0e47-4c77-a8e4-d956369a6ba3",
+      "slug": "viestinta-matrixissa-3mOCfe4cEL",
+      "collection": "guides/matrix-guide",
+      "title": "Viestintä Matrixissa",
+      "breadcrumb": [
+        "Perustoiminnot",
+        "Viestintä Matrixissa"
+      ],
+      "path": "/content/fi/pages/guides/matrix-guide/viestinta-matrixissa-3mOCfe4cEL.json",
+      "updatedAt": "2026-06-18T20:37:54.420Z",
+      "order": 2,
+      "chapterId": "perustoiminnot-78ualZZbi1",
+      "chapterLabel": "Perustoiminnot"
+    },
+    {
+      "id": "dc5d7d9c-de57-47e2-a8cf-ec8dabc55673",
+      "slug": "yksikon-huoneet-ja-organisointi-9VvNjfff1H",
+      "collection": "guides/matrix-guide",
+      "title": "Yksikön huoneet ja organisointi",
+      "breadcrumb": [
+        "Käyttö yksikössä",
+        "Yksikön huoneet ja organisointi"
+      ],
+      "path": "/content/fi/pages/guides/matrix-guide/yksikon-huoneet-ja-organisointi-9VvNjfff1H.json",
+      "updatedAt": "2026-06-18T20:37:57.242Z",
+      "order": 3,
+      "chapterId": "kaytto-yksikossa-56G4Kbv5Qx",
+      "chapterLabel": "Käyttö yksikössä"
+    },
+    {
       "id": "60acf78d-ae06-46a8-9959-cfc2e60298bc",
       "slug": "deploy-app-matrix-R3ReKx6Qsk",
       "collection": "guides/matrix-guide",
@@ -312,7 +3115,112 @@
       ],
       "path": "/content/fi/pages/guides/matrix-guide/deploy-app-matrix-R3ReKx6Qsk.json",
       "updatedAt": "2026-05-05T15:20:00.632Z",
-      "order": 0
+      "order": 4
+    },
+    {
+      "id": "18a6c05e-ce32-43c0-9664-e62c8f113b3b",
+      "slug": "cryptpadin-kayton-aloittaminen-hQ7vIKZoxX",
+      "collection": "guides/cryptpad-guide",
+      "title": "CryptPadin käytön aloittaminen",
+      "breadcrumb": [
+        "Yhdistä palvelimeen",
+        "CryptPadin käytön aloittaminen"
+      ],
+      "path": "/content/fi/pages/guides/cryptpad-guide/cryptpadin-kayton-aloittaminen-hQ7vIKZoxX.json",
+      "updatedAt": "2026-06-18T20:37:59.786Z",
+      "order": 0,
+      "chapterId": "yhdista-palvelimeen-OB9gA93P2o",
+      "chapterLabel": "Yhdistä palvelimeen"
+    },
+    {
+      "id": "f3783de4-f5ef-4c66-9109-f7a96e0bbd6e",
+      "slug": "dokumentit-vYaxLgXJyf",
+      "collection": "guides/cryptpad-guide",
+      "title": "Dokumentit",
+      "breadcrumb": [
+        "Perustoiminnot",
+        "Dokumentit"
+      ],
+      "path": "/content/fi/pages/guides/cryptpad-guide/dokumentit-vYaxLgXJyf.json",
+      "updatedAt": "2026-06-18T20:38:02.879Z",
+      "order": 1,
+      "chapterId": "perustoiminnot-FFfD6juoNA",
+      "chapterLabel": "Perustoiminnot"
+    },
+    {
+      "id": "f8ced10f-e7f1-431d-af1f-4d169f70ca67",
+      "slug": "kanban-taulut-zFIxk6Fqwa",
+      "collection": "guides/cryptpad-guide",
+      "title": "Kanban-taulut",
+      "breadcrumb": [
+        "Perustoiminnot",
+        "Kanban-taulut"
+      ],
+      "path": "/content/fi/pages/guides/cryptpad-guide/kanban-taulut-zFIxk6Fqwa.json",
+      "updatedAt": "2026-06-18T20:38:04.371Z",
+      "order": 2,
+      "chapterId": "perustoiminnot-FFfD6juoNA",
+      "chapterLabel": "Perustoiminnot"
+    },
+    {
+      "id": "dc81c21d-4114-4502-8bd6-746b952c2755",
+      "slug": "esitykset-k6gHQmskUS",
+      "collection": "guides/cryptpad-guide",
+      "title": "Esitykset",
+      "breadcrumb": [
+        "Perustoiminnot",
+        "Esitykset"
+      ],
+      "path": "/content/fi/pages/guides/cryptpad-guide/esitykset-k6gHQmskUS.json",
+      "updatedAt": "2026-06-18T20:38:05.802Z",
+      "order": 3,
+      "chapterId": "perustoiminnot-FFfD6juoNA",
+      "chapterLabel": "Perustoiminnot"
+    },
+    {
+      "id": "e90b1be3-ef45-40dc-9bde-e03cf1f43168",
+      "slug": "luo-tiimi-yksikollesi-rh5NTKB48E",
+      "collection": "guides/cryptpad-guide",
+      "title": "Luo tiimi yksiköllesi",
+      "breadcrumb": [
+        "Käyttö yksikössä",
+        "Luo tiimi yksiköllesi"
+      ],
+      "path": "/content/fi/pages/guides/cryptpad-guide/luo-tiimi-yksikollesi-rh5NTKB48E.json",
+      "updatedAt": "2026-06-18T20:38:09.249Z",
+      "order": 4,
+      "chapterId": "kaytto-yksikossa-1rC1yGUkPs",
+      "chapterLabel": "Käyttö yksikössä"
+    },
+    {
+      "id": "d226a613-5058-4ae0-af89-335a09c58355",
+      "slug": "jaettu-kalenteri-O7sH9Zra69",
+      "collection": "guides/cryptpad-guide",
+      "title": "Jaettu kalenteri",
+      "breadcrumb": [
+        "Käyttö yksikössä",
+        "Jaettu kalenteri"
+      ],
+      "path": "/content/fi/pages/guides/cryptpad-guide/jaettu-kalenteri-O7sH9Zra69.json",
+      "updatedAt": "2026-06-18T20:38:10.532Z",
+      "order": 5,
+      "chapterId": "kaytto-yksikossa-1rC1yGUkPs",
+      "chapterLabel": "Käyttö yksikössä"
+    },
+    {
+      "id": "c76012d6-83e4-4aa0-8c23-2172bbd6e99e",
+      "slug": "varmuuskopioi-tietosi-DQfftbWf4c",
+      "collection": "guides/cryptpad-guide",
+      "title": "Varmuuskopioi tietosi",
+      "breadcrumb": [
+        "Käyttö yksikössä",
+        "Varmuuskopioi tietosi"
+      ],
+      "path": "/content/fi/pages/guides/cryptpad-guide/varmuuskopioi-tietosi-DQfftbWf4c.json",
+      "updatedAt": "2026-06-18T20:38:48.109Z",
+      "order": 6,
+      "chapterId": "kaytto-yksikossa-1rC1yGUkPs",
+      "chapterLabel": "Käyttö yksikössä"
     },
     {
       "id": "fb92cecc-a290-420f-b974-226b0d5d4c08",
@@ -324,7 +3232,7 @@
       ],
       "path": "/content/fi/pages/guides/cryptpad-guide/deploy-app-cryptpad-2C27HtLUGm.json",
       "updatedAt": "2026-05-05T14:52:30.790Z",
-      "order": 0
+      "order": 7
     },
     {
       "id": "2afb6ef9-8302-4722-8880-9f3e01f8a51e",

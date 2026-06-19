@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "a7687592-4323-4508-9c2d-599d98aaf393",
+  "slug": "soldat-zS7E1xGRtx",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Soldat",
+  "breadcrumb": [
+    "Platforms",
+    "iTAK",
+    "Användning efter roll",
+    "Soldat"
+  ],
+  "createdAt": "2026-06-18T19:39:01.409Z",
+  "updatedAt": "2026-06-18T20:25:59.563Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/fighter-rf4mMCmmWV",
+    "fi": "/fi/guides/tak-guide/taistelija-Rco9ioLaEE",
+    "sv": "/sv/guides/tak-guide/soldat-zS7E1xGRtx"
+  },
+  "blocks": []
+}

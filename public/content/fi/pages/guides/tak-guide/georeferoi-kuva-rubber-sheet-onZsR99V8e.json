@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "id": "7503c7f6-f716-4885-bd83-3ce2cb8003a9",
+  "slug": "georeferoi-kuva-rubber-sheet-onZsR99V8e",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Georeferoi kuva (Rubber Sheet)",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "LISÄOMINAISUUDET",
+    "Korkeus, maasto ja karttatyökalut",
+    "Georeferoi kuva (Rubber Sheet)"
+  ],
+  "createdAt": "2026-06-18T19:29:25.642Z",
+  "updatedAt": "2026-06-18T20:21:29.740Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/georeference-an-image-rubber-sheet-TgWDRF45Bd",
+    "fi": "/fi/guides/tak-guide/georeferoi-kuva-rubber-sheet-onZsR99V8e",
+    "sv": "/sv/guides/tak-guide/georeferera-en-bild-rubber-sheet-WijOqzcbZT"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Kiinnitä tasokartta tai luonnos elävään maastoon, venytä ja kierrä sitä niin että se asettuu maaston mukaan, jolloin koko ryhmä näkee saman kuvan.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Avaa Rubber Sheet -työkalu",
+          "layout": "image-bottom",
+          "html": "<p>Valitse <strong>Rubber Sheet</strong> -kuvake avataksesi sen työkalupalkin.</p>\n<ul>\n<li>Työkalupalkin vaihtoehdot ovat <strong>Import</strong>, <strong>Sort</strong>, <strong>Export</strong> ja <strong>Search</strong>.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/db53ed5d82829bd3.webp",
+              "width": 310,
+              "height": 273
+            }
+          ]
+        },
+        {
+          "title": "Tuo 2D-kuva",
+          "layout": "image-bottom",
+          "html": "<p>Panoroi ja zoomaa kartta kohtaan, johon kuva kuuluu. Valitse <strong>+</strong>-kuvake, valitse kuvatiedosto ja valitse sitten <strong>OK</strong>. Kuva ilmestyy kartalle ja näkyy luettelossa kohdassa <strong>Rubber Sheets</strong> valikossa <strong>Overlay Manager</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/db53ed5d82829bd3.webp",
+              "width": 310,
+              "height": 273
+            }
+          ]
+        },
+        {
+          "title": "Avaa ympyrävalikko",
+          "layout": "image-bottom",
+          "html": "<p>Napauta tuotua kuvaa avataksesi sen ympyrävalikon. Täältä voit säätää sovitusta, asettaa <strong>Opacity</strong>, lisätä <strong>Label</strong> tai avata <strong>Details</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/db53ed5d82829bd3.webp",
+              "width": 310,
+              "height": 273
+            }
+          ]
+        },
+        {
+          "title": "Sovita se maastoon",
+          "layout": "image-bottom",
+          "html": "<p>Valitse <strong>Edit</strong> muuttaaksesi kuvan kokoa, kiertääksesi ja sijoittaaksesi sen.</p>\n<ul>\n<li>Vedä kulmaa muuttaaksesi kokoa.</li>\n<li>Vedä reunan keskipistettä muuttaaksesi kokoa ja kiertoa.</li>\n<li>Vedä keskiötä siirtääksesi koko kuvaa.</li>\n</ul>\n<p>Valitse <strong>Rotate</strong> kiertääksesi sitä kahdella sormella muuttamatta kokoa. Kun se on kohdallaan, valitse <strong>End Editing</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/db53ed5d82829bd3.webp",
+              "width": 310,
+              "height": 273
+            }
+          ]
+        },
+        {
+          "title": "Vie KMZ-muodossa",
+          "layout": "image-bottom",
+          "html": "<p>Valitse <strong>Export</strong> rubber sheetin valikosta <strong>Details</strong> tai valikon <strong>Overlay Manager</strong> kohdasta <strong>Rubber Sheet</strong> tallentaaksesi sen KMZ-tiedostona kansioon atak/tools/rubbersheet. Tämän jälkeen ilmestyy kehote, joka tarjoaa kuvan tuomista uudelleen kuvapeitteenä.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/db53ed5d82829bd3.webp",
+              "width": 310,
+              "height": 273
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

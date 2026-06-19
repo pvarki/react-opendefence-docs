@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "a4a252ff-06b7-45fd-bf07-2183e59f401f",
+  "slug": "itak-redan-installerat-HPGjec95O1",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "iTAK redan installerat",
+  "breadcrumb": [
+    "Platforms",
+    "iTAK",
+    "Start",
+    "iTAK redan installerat"
+  ],
+  "createdAt": "2026-06-18T19:35:30.481Z",
+  "updatedAt": "2026-06-18T20:25:43.643Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/itak-already-installed-DeEex1hIH2",
+    "fi": "/fi/guides/tak-guide/itak-on-jo-asennettu-b7KB36fpA7",
+    "sv": "/sv/guides/tak-guide/itak-redan-installerat-HPGjec95O1"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Avinstallera iTAK om det är installerat",
+          "layout": "text",
+          "html": "<ul>\n<li>Att avinstallera iTAK är det enklaste sättet att radera gamla inställningar och serveranslutningar</li>\n</ul>\n<hr>",
+          "images": []
+        }
+      ]
+    },
+    {
+      "type": "html",
+      "html": "<p>Efter att du avinstallerat iTAK, fortsätt till <a href=\"/doc/c703f1ac-61bf-48e2-9c03-36cfb7f72360\">Start from Download</a></p>"
+    }
+  ]
+}

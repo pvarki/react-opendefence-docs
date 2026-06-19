@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "7a12e934-9bcf-4b1e-97ce-e20acfdeb8ef",
+  "slug": "luo-ja-muokkaa-grg-Fpt8jedvMz",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Luo ja muokkaa GRG",
+  "breadcrumb": [
+    "Platforms",
+    "WinTAK",
+    "Tuetut lisäosat",
+    "GRG Builder",
+    "Luo ja muokkaa GRG"
+  ],
+  "createdAt": "2026-06-18T19:34:31.665Z",
+  "updatedAt": "2026-06-18T20:24:50.470Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/create-edit-a-grg-Xui0ilYenu",
+    "fi": "/fi/guides/tak-guide/luo-ja-muokkaa-grg-Fpt8jedvMz",
+    "sv": "/sv/guides/tak-guide/skapa-och-redigera-en-grg-rDfydLOMtb"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>GRG Builder luo GRG:n (Gridded Reference Graphic — KMZ-tiedosto) tilannekuvasta korkearesoluutioista karttakuvaa. Ruudukko voi sisältää myös karttamerkkejä, mittakaavan, kompassin, tähtäimen ja MGRS-ruudukon.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Luo GRG",
+          "layout": "image-bottom",
+          "html": "<p>Valitse karttalähde kohdasta <strong>Maps &#x26; Favorites</strong> ja panoroi/zoomaa kiinnostavaan alueeseesi. Valitse <strong>GRG Builder</strong> -kuvake Creation-välilehdeltä ja sitten <strong>Add GRG (+)</strong> pudottaaksesi ruudukon kartalle. Valitse <strong>Add GRG</strong> uudelleen lisätäksesi useampia. Nimeä ruudukko uudelleen valitsemalla <strong>Edit GRG</strong> (kynä) > <strong>Change GRG Name</strong> > <strong>Rename</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/583bdf391ad9d3d6.webp",
+              "width": 224,
+              "height": 128
+            }
+          ]
+        },
+        {
+          "title": "Muokkaa ruudukkoa",
+          "layout": "image-bottom",
+          "html": "<p>Valitse <strong>Edit GRG</strong> > <strong>Edit GRG Components</strong> > <strong>Edit Grid</strong>.</p>\n<ul>\n<li><strong>Move Grid</strong> keskittää ruudukon uudelleen; muuta arvoja <strong>Height x Width</strong> ja <strong>Spacing</strong> muuttaaksesi solujen kokoa (tai <strong>Add Size</strong> mukautettua asettelua varten) ja aseta ruudukon <strong>Color</strong> sekä läpinäkyvyys liukusäätimellä.</li>\n<li>Muotoile peittoalue uudelleen toiminnolla <strong>Redefine GRG</strong>: napsauta kulmaa hiiren oikealla, napsauta uutta pistettä hiiren vasemmalla ja tallenna sitten valitsemalla <strong>Done Editing</strong>.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/d7fcd03d2bce1f1e.webp",
+              "width": 224,
+              "height": 118
+            }
+          ]
+        },
+        {
+          "title": "Merkitse ruudukko",
+          "layout": "image-bottom",
+          "html": "<p>Avaa <strong>Grid Label</strong> lisätäksesi ruudukkoon kirjaimet ja numerot.</p>\n<ul>\n<li>Valitse <strong>Alphanumeric</strong>, <strong>MGRS</strong> tai <strong>Both</strong>; MGRS:ää varten aseta suunta, värit ja <strong>Precision</strong>.</li>\n<li>Näytä tai piilota merkinnät <strong>Show Grid Labels</strong> -valintaruudulla.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/10365331d1b37b8b.webp",
+              "width": 192,
+              "height": 160
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

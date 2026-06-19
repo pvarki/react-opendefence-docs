@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "id": "76496739-3455-4321-8147-5b52fc3273ff",
+  "slug": "mittaa-etaisyys-ja-suuntakulma-DUBmCeWCli",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Mittaa etäisyys ja suuntakulma",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "LISÄOMINAISUUDET",
+    "Etäisyys- ja suuntimatyökalut",
+    "Mittaa etäisyys ja suuntakulma"
+  ],
+  "createdAt": "2026-06-18T19:29:18.577Z",
+  "updatedAt": "2026-06-18T20:20:40.378Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/measure-range-bearing-vEAV62W7O1",
+    "fi": "/fi/guides/tak-guide/mittaa-etaisyys-ja-suuntakulma-DUBmCeWCli",
+    "sv": "/sv/guides/tak-guide/mat-avstand-och-baring-eegRo4EznT"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Vedä kahden pisteen viiva kartalle ja saat tarkan etäisyyden ja suuntakulman alku- ja loppupisteen välillä — perusta tulenkäytölle ja tiedusteluilmoituksille.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Piirrä Range&Bearing -viiva",
+          "layout": "image-bottom",
+          "html": "<p>Avaa <strong>Range Tools</strong> -työkalupalkki kohdasta <strong>Additional Tools &#x26; Plugins</strong> ja napauta sitten <strong>R&#x26;B Line</strong> -kuvaketta, kunnes se muuttuu keltaiseksi. Napauta alkupistettä ja napauta sitten toista pistettä asettaaksesi viivan.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/1827d04a68014926.webp",
+              "width": 250,
+              "height": 208
+            }
+          ]
+        },
+        {
+          "title": "Lue etäisyys ja suuntakulma",
+          "layout": "image-bottom",
+          "html": "<p>Viivan tarra näyttää <strong>azimuth</strong> (suuntakulma) ja <strong>distance</strong> (etäisyys) kahden pisteen välillä (esimerkiksi <code>68°M  12.21 km</code>). Viiva pysyy paikallaan, kunnes poistat sen.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/5987b70235dd5bf6.webp",
+              "width": 244,
+              "height": 68
+            }
+          ]
+        },
+        {
+          "title": "Siirrä viivaa Dynamic R&B Line -toiminnolla",
+          "layout": "image-bottom",
+          "html": "<p>Käytä sen sijaan <strong>Dynamic R&#x26;B Line</strong> -toimintoa, jolla voit vetää päätepistettä ja mitata uudelleen lennossa. Kun viiva on haluamassasi kohdassa, napauta viivan keskikohtaa ja kiinnitä viiva paikalleen <strong>Pin</strong>-toiminnolla.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/47abd3f788f1958e.webp",
+              "width": 250,
+              "height": 181
+            }
+          ]
+        },
+        {
+          "title": "Valitse suuntakulman yksiköt",
+          "layout": "image-bottom",
+          "html": "<p>Napauta päätepistettä ja sitten <strong>Angle Bearing Units</strong> -säteittäisvalikkoa vaihtaaksesi tavan, jolla suuntakulma luetaan. Valitse yksikkö, jota tuliverkkosi käyttää:</p>\n<ul>\n<li>Degrees True / Mils True</li>\n<li>Degrees Magnetic / Mils Magnetic</li>\n<li>Degrees Grid / Mils Grid</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/d02bb29b8fedd5d4.webp",
+              "width": 200,
+              "height": 181
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

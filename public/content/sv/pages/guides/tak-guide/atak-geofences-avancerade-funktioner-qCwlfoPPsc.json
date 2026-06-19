@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "id": "9a968527-a4f8-4428-9983-c9bd170a9ada",
+  "slug": "atak-geofences-avancerade-funktioner-qCwlfoPPsc",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "ATAK - Geofences - Avancerade funktioner",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "Avancerade kärnfunktioner",
+    "ATAK - Geofences - Avancerade funktioner"
+  ],
+  "createdAt": "2026-06-18T19:26:20.938Z",
+  "updatedAt": "2026-06-18T20:14:40.720Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "ATAK ansluten till takserver - Geofences",
+      "id": "atak-ansluten-till-takserver---geofences"
+    }
+  ],
+  "translations": {
+    "en": "/en/guides/tak-guide/geofences-wgaLkSEvef",
+    "fi": "/fi/guides/tak-guide/atak-geofences-lisaominaisuudet-Odn3KhETfp",
+    "sv": "/sv/guides/tak-guide/atak-geofences-avancerade-funktioner-qCwlfoPPsc"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<h1 id=\"atak---geofences---avancerade-funktioner\"><a href=\"#atak---geofences---avancerade-funktioner\">ATAK - Geofences - Avancerade funktioner</a></h1>\n<h2 id=\"atak-ansluten-till-takserver---geofences\"><a href=\"#atak-ansluten-till-takserver---geofences\">ATAK ansluten till takserver - Geofences</a></h2>"
+    },
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Overvaka med Geofences",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Geofences hjalper dig att overvaka rorelser och handelser i vissa omraden.</li>\n<li>Borja med att rita en omradesform med Drawing Tools.</li>\n<li>Valj sedan Geofence-ikonen och tryck pa den.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/fdd6bca67f66f7ff.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Vilken forandring ska varna oss?",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Tryck pa forandringsvaljaren for att redigera vilken forandring som ska varna oss.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/cf66ed64a0387ce4.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Alternativ for varning",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Valj det som passar dina behov bast.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/f8dff3c7200bab31.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Vilka objekt ska utlosa en varning?",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Vad - nagot som dyker upp i geofence-omradet, ska utlosa en varning? Valj efter behov.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/945a62013c9d842f.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Alternativ: stall in och skicka",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Om du vill skicka din nya Geofence, gor det via den vanliga mottagardialogen.</li>\n<li>Du kan skicka till en Feed. Floder bjuder automatiskt in anvandare som utloser din Geofence.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/ca187847ce9848b9.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Granska situationen",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Fran huvudmenyns Geofences-flik kan du granska alla aktiva stangsel.</li>\n<li>Om Geofences-fliken inte finns i din meny, tryck pa den gula pennan for att hitta och aktivera den.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/d755dc29a4557507.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Lista Geofences",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Du ser listan over stangsel, deras namn och deras status.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/1d4c4647354a2937.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Varning!",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Du far en varning om overtradelse enligt din konfiguration.</li>\n<li>Lista dem under Geofences -> det aktuella stangslet.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/3b610c296faea346.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Granska varningar for ditt stangsel",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Lista varningar i stangselvyn. Tryck pa papperskorgen for att radera eller inaktivera varningen.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/3143b16ad62405e3.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Inaktivera eller radera en varning",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Valj, och det ar allt!</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/6b6f03778686f4ab.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "html",
+      "html": "<p>\\nNar du har testat Geofences framgangsrikt, fortsatt till</p>"
+    }
+  ]
+}

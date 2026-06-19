@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "b51649b6-dffd-46ae-9efd-1f89ff18219f",
+  "slug": "control-what-crosses-group-filtering-DKvIW89bZD",
+  "collection": "working-with-tak",
+  "locale": "en",
+  "title": "Control what crosses (group filtering)",
+  "breadcrumb": [
+    "Federation Hub: connecting multiple TAK Servers",
+    "Control what crosses (group filtering)"
+  ],
+  "createdAt": "2026-06-17T19:13:31.647Z",
+  "updatedAt": "2026-06-17T19:13:34.997Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "The four filtering modes",
+      "id": "the-four-filtering-modes"
+    },
+    {
+      "depth": 2,
+      "text": "How this maps to Deploy App / Keycloak groups",
+      "id": "how-this-maps-to-deploy-app--keycloak-groups"
+    },
+    {
+      "depth": 2,
+      "text": "A worked intent",
+      "id": "a-worked-intent"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Connecting two servers with an edge is only half the story — you decide <strong>which data</strong> crosses it. Every edge has a <strong>group filtering</strong> mode, chosen when you draw it.</p>\n<h2 id=\"the-four-filtering-modes\"><a href=\"#the-four-filtering-modes\">The four filtering modes</a></h2>\n<table>\n<thead>\n<tr>\n<th>Mode</th>\n<th>Effect</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Allow All Messages</strong></td>\n<td>No filtering — everything on the edge crosses. Required for V1 connections and any V2 connection <strong>not</strong> running group mapping.</td>\n</tr>\n<tr>\n<td><strong>Allowed Groups</strong></td>\n<td>Cross a message if it contains <strong>at least one</strong> of these groups.</td>\n</tr>\n<tr>\n<td><strong>Disallowed Groups</strong></td>\n<td><strong>Block</strong> any message containing one of these groups.</td>\n</tr>\n<tr>\n<td><strong>Allowed And Disallowed Groups</strong></td>\n<td>Cross a message that contains an allowed group <strong>and</strong> no disallowed groups.</td>\n</tr>\n</tbody>\n</table>\n<blockquote>\n<p><strong>Prerequisite:</strong> the <strong>source</strong> node must be running <strong>group mapping</strong> to use anything other than <em>Allow All Messages</em>. If it isn't, your only option is Allow All.</p>\n</blockquote>\n<h2 id=\"how-this-maps-to-deploy-app--keycloak-groups\"><a href=\"#how-this-maps-to-deploy-app--keycloak-groups\">How this maps to Deploy App / Keycloak groups</a></h2>\n<p>Inside each Deploy App deployment, <strong>Keycloak</strong> defines the groups and TAK Server uses them to decide who sees what (the In/Out/Both model — <code>group</code>, <code>group_WRITE</code>, <code>group_READ</code> — see <a href=\"/en/working-with-tak/keycloak-identity-groups-WXsDTvK7H8\">Integrating to TAK Server → Keycloak</a>). Those same group <strong>names</strong> are what the hub's edge filters match on.</p>\n<p>So the hub lets you federate <strong>selectively</strong>:</p>\n<ul>\n<li>Agree on a <strong>shared group name</strong> across the deployments that should share data — e.g. a <code>COALITION</code> group.</li>\n<li>On the hub edge between them, use <strong>Allowed Groups =</strong> <code>**COALITION**</code>. Only data tagged with that group crosses; each deployment's internal groups stay local.</li>\n<li>Use <strong>Disallowed Groups</strong> to carve out sensitive partitions that must never leave a deployment, even on an otherwise-open edge.</li>\n</ul>\n<p>Because filtering is by <strong>group name</strong>, coordinate naming across the deployments you federate (a group only matches if both sides use the same name). The default anonymous group <code>__ANON__</code> can also be referenced explicitly.</p>\n<h2 id=\"a-worked-intent\"><a href=\"#a-worked-intent\">A worked intent</a></h2>\n<blockquote>\n<p>\"Deployments A and B share a common operating picture for a joint operation, but keep their own internal traffic private.\"</p>\n</blockquote>\n<ol>\n<li>CA Group node for A, CA Group node for B (their CAs uploaded).</li>\n<li>Edge <strong>A → B</strong> and edge <strong>B → A</strong> (two-way).</li>\n<li>On both edges, <strong>Allowed Groups =</strong> <code>**COALITION**</code> (a group both deployments' Keycloaks define and assign to the relevant users).</li>\n<li>Publish the policy. Now only <code>COALITION</code>-tagged situational awareness crosses; each side's other groups never leave.</li>\n</ol>\n<p>→ Next: <a href=\"/en/working-with-tak/connect-a-deploy-app-tak-server-nTjT0SDPzw\">Connect a Deploy App TAK Server</a>.</p>"
+    }
+  ]
+}

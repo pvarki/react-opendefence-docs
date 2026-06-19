@@ -1,0 +1,128 @@
+{
+  "schemaVersion": 1,
+  "id": "e90b1be3-ef45-40dc-9bde-e03cf1f43168",
+  "slug": "luo-tiimi-yksikollesi-rh5NTKB48E",
+  "collection": "guides/cryptpad-guide",
+  "locale": "fi",
+  "title": "Luo tiimi yksiköllesi",
+  "breadcrumb": [
+    "Käyttö yksikössä",
+    "Luo tiimi yksiköllesi"
+  ],
+  "createdAt": "2026-06-18T20:34:45.164Z",
+  "updatedAt": "2026-06-18T20:38:09.249Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/cryptpad-guide/set-up-a-unit-team-acg83EqeNh",
+    "fi": "/fi/guides/cryptpad-guide/luo-tiimi-yksikollesi-rh5NTKB48E",
+    "sv": "/sv/guides/cryptpad-guide/skapa-ett-team-for-din-enhet-5WZecY2ggu"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Tämä CryptPad-instanssi on ainutlaatuinen — se on olemassa vain tällä Deploy App -palvelimella. Kaikki tiedot pysyvät omassa infrastruktuurissasi ja katoavat kokonaan, kun palvelin sammutetaan. Seuraavassa on yksinkertainen ja tehokas tapa käyttää CryptPadia yksikössäsi: johtamisjärjestelmästä vastaavana henkilönä aloita luomalla ylätason tiimi.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Luo tiimi yksiköllesi (1/8)",
+          "layout": "image-bottom",
+          "html": "<p>Luo CryptPadissa tiimi yksiköllesi. Näin saat helposti jaetun aseman ja kalenterin. Aloita etsimällä <strong>Teams</strong>-valikko oikeasta yläkulmasta.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/4f152362b1aa2d59.webp",
+              "width": 1464,
+              "height": 832
+            }
+          ]
+        },
+        {
+          "title": "Luo tiimi yksiköllesi (2/8)",
+          "layout": "image-bottom",
+          "html": "<p>Teams-valikko näyttää CryptPad-tiimit, joihin kuulut. Luo uusi.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/8bd4aa05a29ed558.webp",
+              "width": 1482,
+              "height": 1050
+            }
+          ]
+        },
+        {
+          "title": "Luo tiimi yksiköllesi (3/8)",
+          "layout": "image-bottom",
+          "html": "<p>Anna tiimillesi kuvaava nimi ja jatka.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/55bdb55717d2c692.webp",
+              "width": 1460,
+              "height": 844
+            }
+          ]
+        },
+        {
+          "title": "Luo tiimi yksiköllesi (4/8)",
+          "layout": "image-bottom",
+          "html": "<p>Tiimisi on luotu ja näkyy tiimivalikossa. Jatka napsauttamalla tiimisi kuvaketta.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/6265e38fbe94f397.webp",
+              "width": 1440,
+              "height": 1140
+            }
+          ]
+        },
+        {
+          "title": "Luo tiimi yksiköllesi (5/8)",
+          "layout": "image-bottom",
+          "html": "<p>Täältä löydät tiimisi jaetun aseman. Siirry seuraavaksi <strong>Members</strong>-valikkoon luodaksesi kutsun tiimiisi.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/80ed7c71b542afc3.webp",
+              "width": 1470,
+              "height": 952
+            }
+          ]
+        },
+        {
+          "title": "Luo tiimi yksiköllesi (6/8)",
+          "layout": "image-bottom",
+          "html": "<p>Jotta muut voivat liittyä tiimiisi, luo kutsulinkki. Kuvassa näkyvät suosittelemamme asetukset. Paina <strong>Create link</strong> luodaksesi jaettavan kutsulinkin.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/66d8c31b2c80943a.webp",
+              "width": 1394,
+              "height": 1156
+            }
+          ]
+        },
+        {
+          "title": "Luo tiimi yksiköllesi (7/8)",
+          "layout": "image-bottom",
+          "html": "<p>Kopioi linkki ja jaa se haluamasi viestipalvelun kautta. Vastaanottajan on oltava yksikkösi Deploy App -palvelimella — ilman Deploy Appin mTLS-varmennetta CryptPadiisi ei turvallisuussyistä pääse käsiksi.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/d8d8fb051d38c2ab.webp",
+              "width": 1180,
+              "height": 662
+            }
+          ]
+        },
+        {
+          "title": "Luo tiimi yksiköllesi (8/8)",
+          "layout": "image-bottom",
+          "html": "<p>Tältä liittyvän jäsenen näkymä näyttää. Tämän jälkeen hän näkee tiimisi jaetun aseman.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/7805443f8bbba537.webp",
+              "width": 1282,
+              "height": 1328
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "id": "01bc75ee-2958-4dc2-8721-1b5972913c56",
+  "slug": "georeferera-en-bild-rubber-sheet-WijOqzcbZT",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Georeferera en bild (Rubber Sheet)",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "YTTERLIGARE FUNKTIONER",
+    "Höjd, terräng och kartverktyg",
+    "Georeferera en bild (Rubber Sheet)"
+  ],
+  "createdAt": "2026-06-18T19:30:19.257Z",
+  "updatedAt": "2026-06-18T20:21:30.212Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/georeference-an-image-rubber-sheet-TgWDRF45Bd",
+    "fi": "/fi/guides/tak-guide/georeferoi-kuva-rubber-sheet-onZsR99V8e",
+    "sv": "/sv/guides/tak-guide/georeferera-en-bild-rubber-sheet-WijOqzcbZT"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Fäst en plan karta eller skiss på den verkliga terrängen, sträck och rotera den sedan så att den passar marken så att hela gruppen ser samma bild.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Öppna verktyget Rubber Sheet",
+          "layout": "image-bottom",
+          "html": "<p>Välj ikonen <strong>Rubber Sheet</strong> för att öppna dess verktygsfält.</p>\n<ul>\n<li>Verktygsfältets alternativ är <strong>Import</strong>, <strong>Sort</strong>, <strong>Export</strong> och <strong>Search</strong>.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/db53ed5d82829bd3.webp",
+              "width": 310,
+              "height": 273
+            }
+          ]
+        },
+        {
+          "title": "Importera 2D-bilden",
+          "layout": "image-bottom",
+          "html": "<p>Panorera och zooma kartan till platsen där bilden hör hemma. Välj ikonen <strong>+</strong>, välj bildfilen och välj sedan <strong>OK</strong>. Bilden hamnar på kartan och listas under <strong>Rubber Sheets</strong> i <strong>Overlay Manager</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/db53ed5d82829bd3.webp",
+              "width": 310,
+              "height": 273
+            }
+          ]
+        },
+        {
+          "title": "Öppna radialmenyn",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på den importerade bilden för att öppna dess radialmeny. Härifrån kan du justera passningen, ställa in <strong>Opacity</strong>, lägga till en <strong>Label</strong> eller öppna <strong>Details</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/db53ed5d82829bd3.webp",
+              "width": 310,
+              "height": 273
+            }
+          ]
+        },
+        {
+          "title": "Passa in den mot marken",
+          "layout": "image-bottom",
+          "html": "<p>Välj <strong>Edit</strong> för att ändra storlek på, rotera och placera bilden.</p>\n<ul>\n<li>Dra i ett hörn för att ändra storlek.</li>\n<li>Dra i en kants mittpunkt för att ändra storlek och rotation.</li>\n<li>Dra i centrum för att flytta hela bilden.</li>\n</ul>\n<p>Välj <strong>Rotate</strong> för att snurra den med två fingrar utan att ändra storlek. När den ligger rätt, välj <strong>End Editing</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/db53ed5d82829bd3.webp",
+              "width": 310,
+              "height": 273
+            }
+          ]
+        },
+        {
+          "title": "Exportera som KMZ",
+          "layout": "image-bottom",
+          "html": "<p>Välj <strong>Export</strong> från rubber sheetens <strong>Details</strong>, eller från kategorin <strong>Rubber Sheet</strong> i <strong>Overlay Manager</strong>, för att spara den som en KMZ-fil i mappen atak/tools/rubbersheet. En uppmaning erbjuder sedan att importera den på nytt som ett bildlager.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/db53ed5d82829bd3.webp",
+              "width": 310,
+              "height": 273
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

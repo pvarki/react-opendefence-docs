@@ -13,8 +13,13 @@
     "Get Location with Red X"
   ],
   "createdAt": "2026-06-15T19:40:31.706Z",
-  "updatedAt": "2026-06-15T20:53:46.785Z",
+  "updatedAt": "2026-06-18T20:19:17.954Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/get-location-with-red-x-14YkJ0qaz7",
+    "fi": "/fi/guides/tak-guide/hae-sijainti-red-xlla-mpYohfdfVx",
+    "sv": "/sv/guides/tak-guide/hamta-plats-med-red-x-Xs9y10bYwP"
+  },
   "blocks": [
     {
       "type": "html",
@@ -51,7 +56,7 @@
         {
           "title": "Lock or disable it",
           "layout": "image-bottom",
-          "html": "<p>Tap the toolbar icon again to lock the Red X to its current spot. Long press the <strong>Red X</strong> icon on the toolbar to disable the tool. Note: the Red X is not saved when ATAK is closed and reopened.</p>",
+          "html": "<p>Tap the toolbar icon again to lock the Red X to its current spot.</p>\n<ul>\n<li>Long press the <strong>Red X</strong> icon on the toolbar to disable the tool.</li>\n<li>Note: the Red X is not saved when ATAK is closed and reopened.</li>\n</ul>",
           "images": [
             {
               "src": "/content/images/en/attachments/2ddeb4d931832a3b.webp",

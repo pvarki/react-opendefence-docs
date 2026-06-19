@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "id": "c2b1c65c-4af3-4800-821b-a08fd64ac18e",
+  "slug": "luo-vns-reitti-Njd2diVcZY",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Luo VNS-reitti",
+  "breadcrumb": [
+    "Platforms",
+    "WinTAK",
+    "Tuetut lisäosat",
+    "VNS - Ajoneuvon navigointijärjestelmä",
+    "Luo VNS-reitti"
+  ],
+  "createdAt": "2026-06-18T19:35:26.963Z",
+  "updatedAt": "2026-06-18T20:25:29.888Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/create-a-vns-route-gfIlnjXwN2",
+    "fi": "/fi/guides/tak-guide/luo-vns-reitti-Njd2diVcZY",
+    "sv": "/sv/guides/tak-guide/skapa-en-vns-rutt-B6iV1MgGN7"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>VNS-laajennus (Vehicle Navigation System) tuo WinTAKin reittisuunnitteluun teihin sidotun ajoneuvoreitityksen ja vaihe vaiheelta annettavat ääniopasteet. Asennuksen jälkeen se löytyy <strong>Routes</strong>-kuvakkeen takaa.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Avaa Routes-työkalu",
+          "layout": "image-bottom",
+          "html": "<p>Avaa <strong>Routes</strong>-työkalu WinTAKin työkalupalkista ja valitse <strong>+</strong> aloittaaksesi uuden reitin. Kun VNS on käytössä, avautuu New Route -suunnitteluikkuna manuaalisen sijoitusikkunan sijaan.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/705d55ba0f6065ce.webp",
+              "width": 348,
+              "height": 72
+            }
+          ]
+        },
+        {
+          "title": "Syötä osoitteet ja reititystapa",
+          "layout": "image-bottom",
+          "html": "<p>Kirjoita <strong>Start Address</strong> ja <strong>Destination Address</strong>, tai pudota ne kartalle hiusristikoilla. Aseta <strong>Routing Method</strong> arvoon <strong>Google Route Planner</strong> ja rastita haluamasi vältettävät (<strong>Avoid Ferries / Highways / Tolls</strong>), valitse sitten <strong>Create</strong> — reitti sitoutuu teihin ja piirtyy kartalle. Jos haluat sen sijaan sijoittaa manuaalisen pisteestä pisteeseen -reitin WinTAKin perustyökalulla, valitse <strong>Manual</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/cb9d0eac9cac12fe.webp",
+              "width": 409,
+              "height": 363
+            }
+          ]
+        },
+        {
+          "title": "Käsittele reitin tietoja",
+          "layout": "image-bottom",
+          "html": "<p><strong>Route Details</strong> -ruutu avautuu reitin luomisen jälkeen.</p>\n<ul>\n<li>Täältä voit nimetä reitin uudelleen, valita sen värin, asettaa reittityypin (ensisijainen/toissijainen, infil/exfil), lisätä huomautuksia, nimetä tarkistuspisteet, liittää tiedostoja, asettaa navigointiopasteen kullekin tarkistuspisteelle, tarkastella korkeusprofiilia, lähettää reitin muille laitteille (<strong>Send</strong>) tai aloittaa navigoinnin painamalla <strong>GO</strong>.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/d755d59454946e3b.webp",
+              "width": 350,
+              "height": 561
+            }
+          ]
+        },
+        {
+          "title": "Aseta Google Directions API -avain",
+          "layout": "image-bottom",
+          "html": "<p>VNS käyttää Googlen reititysmoottoria. Aseta avaimesi kohdasta <strong>Settings > Tool Preferences > VNS Preferences</strong> — organisaatiot lisensoivat oman Google Directions API -avaimensa.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/2543c2aa7a4ddde7.webp",
+              "width": 269,
+              "height": 136
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

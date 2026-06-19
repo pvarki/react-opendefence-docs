@@ -12,8 +12,13 @@
     "Adding Users"
   ],
   "createdAt": "2026-06-13T22:59:19.878Z",
-  "updatedAt": "2026-06-13T22:59:19.878Z",
+  "updatedAt": "2026-06-18T20:39:01.775Z",
   "headings": [],
+  "translations": {
+    "en": "/en/deploy-app/adding-users-LKw6wrsELi",
+    "fi": "/fi/deploy-app/kayttajien-lisaaminen-A97x9tyG2o",
+    "sv": "/sv/deploy-app/lagga-till-anvandare-yQNQQKKHyp"
+  },
   "blocks": [
     {
       "type": "slideset",

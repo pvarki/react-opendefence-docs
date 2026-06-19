@@ -8,13 +8,17 @@
   "breadcrumb": [
     "Platforms",
     "WinTAK",
-    "USING WINTAK FEATURES",
-    "Advanced Features",
+    "ADVANCED CORE FEATURES",
     "Create Feeds"
   ],
   "createdAt": "2025-12-05T22:05:59.420Z",
-  "updatedAt": "2026-06-15T13:53:06.432Z",
+  "updatedAt": "2026-06-18T20:23:47.495Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/create-feeds-0jPr4Cah1Z",
+    "fi": "/fi/guides/tak-guide/syotteiden-luominen-RQLTfV45mi",
+    "sv": "/sv/guides/tak-guide/skapa-floden-12E0nv0B4a"
+  },
   "blocks": [
     {
       "type": "slideset",

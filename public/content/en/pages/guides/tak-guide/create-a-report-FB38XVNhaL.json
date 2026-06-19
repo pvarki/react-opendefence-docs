@@ -8,13 +8,18 @@
   "breadcrumb": [
     "Platforms",
     "ATAK",
-    "Supported Plugins",
+    "SUPPORTED PLUGINS",
     "Reports",
     "Create a Report"
   ],
   "createdAt": "2026-06-15T19:50:29.608Z",
-  "updatedAt": "2026-06-15T19:50:29.608Z",
+  "updatedAt": "2026-06-18T20:22:32.604Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/create-a-report-FB38XVNhaL",
+    "fi": "/fi/guides/tak-guide/luo-raportti-ATqNeF4S9c",
+    "sv": "/sv/guides/tak-guide/skapa-en-rapport-YpiHRTtIiL"
+  },
   "blocks": [
     {
       "type": "html",
@@ -27,7 +32,7 @@
         {
           "title": "Open the Reports tool",
           "layout": "image-bottom",
-          "html": "<p>Tap <strong>Reports</strong> in the toolbar. The Reports panel opens with <strong>Search</strong>, <strong>Multi-select</strong>, <strong>Sort</strong>, <strong>Create A Report</strong>, <strong>Editor</strong>, <strong>Visibility</strong> and <strong>Delete All</strong>. You do not need a TAK Server connection to create one.</p>",
+          "html": "<p>Tap <strong>Reports</strong> in the toolbar.</p>\n<ul>\n<li>The Reports panel opens with <strong>Search</strong>, <strong>Multi-select</strong>, <strong>Sort</strong>, <strong>Create A Report</strong>, <strong>Editor</strong>, <strong>Visibility</strong> and <strong>Delete All</strong>.</li>\n<li>You do not need a TAK Server connection to create one.</li>\n</ul>",
           "images": [
             {
               "src": "/content/images/en/attachments/9d58fe854259f743.webp",

@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "3df9f847-a4f1-4ef3-938d-34664a43fbf9",
+  "slug": "hallitse-sijaintilahteita-RakVzDRlad",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Hallitse sijaintilähteitä",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "LISÄOMINAISUUDET",
+    "Navigointi ja koordinaatit",
+    "Hallitse sijaintilähteitä"
+  ],
+  "createdAt": "2026-06-18T19:28:23.219Z",
+  "updatedAt": "2026-06-18T20:19:52.960Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/control-location-providers-WuJJaCfIYG",
+    "fi": "/fi/guides/tak-guide/hallitse-sijaintilahteita-RakVzDRlad",
+    "sv": "/sv/guides/tak-guide/hantera-positionskallor-bfhTDCM6Kg"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Valitse, mistä ATAK saa sijaintisi — sisäisestä GPS:stä, Wi-Fi:stä/mobiiliverkosta vai ulkoisesta vastaanottimesta — jotta pisteesi pysyy tarkkana kartalla.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Valitse sijaintilähteesi",
+          "layout": "image-bottom",
+          "html": "<p>Avaa <strong>Location Input Manager</strong> nähdäksesi jokaisen lähteen lyhyen kuvauksen kera. Merkitse <strong>Enabled</strong>-valintaruutu kytkeäksesi lähteen päälle tai pois:</p>\n<ul>\n<li><strong>Internal GNSS/GPS Receiver</strong> — laitteen oma GPS-siru.</li>\n<li><strong>WiFi/Cell Signal Derived (NETD)</strong> — sijainti matkapuhelinmastoista ja Wi-Fistä.</li>\n<li><strong>Serial Monitor Input</strong> — ulkoinen/sarjaliitäntäinen GPS-vastaanotin.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/c7f96abb7f4c2edb.webp",
+              "width": 299,
+              "height": 314
+            }
+          ]
+        },
+        {
+          "title": "Aseta tärkeysjärjestys",
+          "layout": "image-bottom",
+          "html": "<p>Raahaa lähteen vasemmalla olevaa harmaata palkkia ylös- tai alaspäin muuttaaksesi järjestystä. ATAK käyttää luettelon ensimmäistä lähdettä ja siirtyy seuraavaan, jos se ei saa paikannusta.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/c7f96abb7f4c2edb.webp",
+              "width": 299,
+              "height": 314
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

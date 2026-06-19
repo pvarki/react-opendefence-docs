@@ -13,8 +13,13 @@
     "Use Geochat for comms"
   ],
   "createdAt": "2026-01-25T10:03:42.124Z",
-  "updatedAt": "2026-06-16T12:25:47.763Z",
+  "updatedAt": "2026-06-18T20:17:35.582Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/use-geochat-for-comms-s20PZmRGw8",
+    "fi": "/fi/guides/tak-guide/kayta-geochatia-viestintaan-u0VBv8IjJy",
+    "sv": "/sv/guides/tak-guide/anvand-geochat-for-kommunikation-HR8qIoirSR"
+  },
   "blocks": [
     {
       "type": "slideset",

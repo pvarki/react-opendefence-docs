@@ -8,13 +8,17 @@
   "breadcrumb": [
     "Platforms",
     "WinTAK",
-    "USING WINTAK FEATURES",
-    "Basic Features",
+    "BASIC CORE FEATURES",
     "Clear Content"
   ],
   "createdAt": "2026-02-21T22:25:18.130Z",
-  "updatedAt": "2026-06-14T17:11:33.276Z",
+  "updatedAt": "2026-06-18T20:23:43.290Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/clear-content-gLcPrq5b5J",
+    "fi": "/fi/guides/tak-guide/tyhjenna-sisalto-WetdafA5DU",
+    "sv": "/sv/guides/tak-guide/rensa-innehall-ELxCoba17F"
+  },
   "blocks": [
     {
       "type": "slideset",

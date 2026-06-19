@@ -6,14 +6,19 @@
   "locale": "en",
   "title": "Importing Server Connection",
   "breadcrumb": [
-    "TAK Clients",
+    "Platforms",
     "TAK Tracker - Android",
-    "Start",
+    "START & CONNECT",
     "Importing Server Connection"
   ],
   "createdAt": "2026-02-21T08:45:34.542Z",
-  "updatedAt": "2026-02-21T10:42:40.160Z",
+  "updatedAt": "2026-06-18T20:26:36.226Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/importing-server-connection-URmd6F0UU5",
+    "fi": "/fi/guides/tak-guide/palvelinyhteyden-tuonti-se5nhvhcj0",
+    "sv": "/sv/guides/tak-guide/importera-serveranslutning-yxBJHAG8As"
+  },
   "blocks": [
     {
       "type": "slideset",

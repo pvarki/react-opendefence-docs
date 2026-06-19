@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "id": "9f33f92f-ffdc-4282-b431-72500d7120c9",
+  "slug": "hantering-av-wintak-tillagg-9iOqPxCmwd",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Hantering av WinTAK-tillägg",
+  "breadcrumb": [
+    "Platforms",
+    "WinTAK",
+    "GRUNDLÄGGANDE KÄRNFUNKTIONER",
+    "Hantering av WinTAK-tillägg"
+  ],
+  "createdAt": "2026-06-18T19:33:26.254Z",
+  "updatedAt": "2026-06-18T20:23:42.817Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/plugin-management-EphDON8hEX",
+    "fi": "/fi/guides/tak-guide/wintak-laajennusten-hallinta-qaHLBdWwfw",
+    "sv": "/sv/guides/tak-guide/hantering-av-wintak-tillagg-9iOqPxCmwd"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Hantering av WinTAK-tillägg",
+          "layout": "text",
+          "html": "<ul>\n<li>För att lägga till eller uppdatera WinTAK-tillägg laddar du ner installationsfilerna från Deploy-appen.</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "1. Öppna WinTAK:s importfunktion",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Öppna menyn från hamburgerikonen</li>\n<li>Öppna funktionen Import files</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/c89fb3cfc2ff4804.webp",
+              "width": 461,
+              "height": 429
+            }
+          ]
+        },
+        {
+          "title": "2. Välj tillägg",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Navigera till mappen där du laddade ner tilläggsfilerna.</li>\n<li>Välj de tillägg du vill installera eller uppdatera</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/6ab695625e3d98e1.webp",
+              "width": 944,
+              "height": 528
+            }
+          ]
+        },
+        {
+          "title": "3. Importen lyckades",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Efter en lyckad import startar du om WinTAK</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/8b6953cdd0d8b8fe.webp",
+              "width": 346,
+              "height": 267
+            }
+          ]
+        },
+        {
+          "title": "4. Plugin Manager",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Öppna Plugin Manager</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/57b3ac49dbf6569f.webp",
+              "width": 165,
+              "height": 426
+            }
+          ]
+        },
+        {
+          "title": "5. Hantering av tillägg",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>I Plugin Manager kan du ladda och inaktivera installerade tillägg.</li>\n<li>Du kan också kontrollera tilläggsinformationen</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/c9206fe4e35e5298.webp",
+              "width": 349,
+              "height": 503
+            }
+          ]
+        },
+        {
+          "title": "Klart",
+          "layout": "text",
+          "html": "<ul>\n<li>Du kan stänga den här guiden.</li>\n</ul>\n<hr>",
+          "images": []
+        }
+      ]
+    },
+    {
+      "type": "html",
+      "html": "<p>Nästa steg är att konfigurera <a href=\"/doc/cf69db54-b795-412a-b111-f201fbd18211\">Data Sync</a></p>"
+    }
+  ]
+}

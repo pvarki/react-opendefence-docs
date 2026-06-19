@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "id": "6c0b4bae-d671-4ff2-a7c3-81908aa39028",
+  "slug": "tiedustele-first-person-viewlla-dG5GsFs9is",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Tiedustele First-Person View'lla",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "LISÄOMINAISUUDET",
+    "Korkeus, maasto ja karttatyökalut",
+    "Tiedustele First-Person View'lla"
+  ],
+  "createdAt": "2026-06-18T19:29:23.520Z",
+  "updatedAt": "2026-06-18T20:20:51.652Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/scout-with-first-person-view-tZ27WjeppE",
+    "fi": "/fi/guides/tak-guide/tiedustele-first-person-viewlla-dG5GsFs9is",
+    "sv": "/sv/guides/tak-guide/spana-med-first-person-view-LateYCOhY4"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>First-Person View laskee kameran maan tasalle, jotta voit tiedustella maastoa, näkölinjoja ja suojaa niin kuin näkisit ne todellisuudessa maastossa.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Avaa First-Person-työkalu",
+          "layout": "image-bottom",
+          "html": "<p>Avaa <strong>First-Person</strong>-työkalu <strong>Additional Tools</strong>- ja <strong>Settings</strong>-valikosta.</p>\n<ul>\n<li>Se sijoittaa painikkeet kartan yläreunaan ja kaksi pehmeää ohjaussauvaa oikealle ja vasemmalle.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/d44bccb6a9d47e48.webp",
+              "width": 311,
+              "height": 143
+            }
+          ]
+        },
+        {
+          "title": "Ota käyttöön ja valitse katselupiste",
+          "layout": "image-bottom",
+          "html": "<p>Napauta <strong>First-Person View</strong> -painiketta ja napauta sitten kartalta kohtaa, josta haluat katsoa.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/92d7ffc40b67939f.webp",
+              "width": 266,
+              "height": 123
+            }
+          ]
+        },
+        {
+          "title": "Liikuta ja kallista kameraa",
+          "layout": "image-bottom",
+          "html": "<p>Käytä oikeaa ohjaussauvaa tiedusteluun. Se vaihtaa tilojen <strong>DRIVE</strong> (liikkuminen) ja <strong>TILT</strong> (kameran kallistus) välillä.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/990e13acf1ab2aa3.webp",
+              "width": 266,
+              "height": 123
+            }
+          ]
+        },
+        {
+          "title": "Säädä korkeuttasi",
+          "layout": "image-bottom",
+          "html": "<p>Käytä vasenta ohjaussauvaa silmäkorkeuden nostamiseen tai laskemiseen. Korkeus yltää maanpinnan yläpuolelle ja maan alle maanalaista näkymää varten.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/d44bccb6a9d47e48.webp",
+              "width": 311,
+              "height": 143
+            }
+          ]
+        },
+        {
+          "title": "Poistu First-Person View'sta",
+          "layout": "image-bottom",
+          "html": "<p>Napauta <strong>First-Person</strong>-kuvaketta uudelleen poistuaksesi näkymästä ja palataksesi oletusarvoiseen ylhäältä päin kuvattuun karttanäkymään.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/990e13acf1ab2aa3.webp",
+              "width": 266,
+              "height": 123
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

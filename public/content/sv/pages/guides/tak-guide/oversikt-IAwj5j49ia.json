@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "23eb0d2a-5ba4-4155-8665-6eef54ab751b",
+  "slug": "oversikt-IAwj5j49ia",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Översikt",
+  "breadcrumb": [
+    "Platforms",
+    "TAK Tracker - Apple",
+    "Användning efter roll",
+    "Översikt"
+  ],
+  "createdAt": "2026-06-18T19:45:51.647Z",
+  "updatedAt": "2026-06-18T20:27:42.034Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/overview-vqWEyyCxy8",
+    "fi": "/fi/guides/tak-guide/yleiskatsaus-BerAy6ibbu",
+    "sv": "/sv/guides/tak-guide/oversikt-IAwj5j49ia"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>(Den här fliken ska inte visas)</p>"
+    }
+  ]
+}

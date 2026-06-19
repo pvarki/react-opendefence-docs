@@ -1,0 +1,118 @@
+{
+  "schemaVersion": 1,
+  "id": "032343f1-3947-4d93-9d2f-1b5bf265b991",
+  "slug": "ladda-ner-kartor-for-offline-anvandning-uKJz92KfHd",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Ladda ner kartor för offline-användning",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "Avancerade kärnfunktioner",
+    "Ladda ner kartor för offline-användning"
+  ],
+  "createdAt": "2026-06-18T19:27:14.070Z",
+  "updatedAt": "2026-06-18T20:15:10.256Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/downloading-maps-for-offline-use-AhUMNQ8mmS",
+    "fi": "/fi/guides/tak-guide/karttojen-lataaminen-offline-kayttoon-HWp5pbjscs",
+    "sv": "/sv/guides/tak-guide/ladda-ner-kartor-for-offline-anvandning-uKJz92KfHd"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Ladda ner kartrutor till din telefon så att kartan fungerar utan signal.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Öppna Maps & Favorites",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på ikonen <strong>Maps &#x26; Favorites</strong>.</p>\n<ul>\n<li>Den har tre flikar: <strong>Imagery</strong>, <strong>Mobile</strong> och <strong>FAVS</strong> (favoriter).</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/0eaa4d299fd7efcd.webp",
+              "width": 189,
+              "height": 126
+            }
+          ]
+        },
+        {
+          "title": "Markera området som ska laddas ner",
+          "layout": "image-bottom",
+          "html": "<p>På fliken <strong>Mobile</strong> växla till <strong>Online</strong> och tryck sedan på <strong>Select Area</strong>.</p>\n<ul>\n<li>Välj <strong>Rectangle</strong>, <strong>Free Form</strong>, <strong>Lasso</strong> eller <strong>Map Select</strong> och rita ditt område.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/95fa01e8259285c0.webp",
+              "width": 367,
+              "height": 170
+            }
+          ]
+        },
+        {
+          "title": "Ställ in upplösningen",
+          "layout": "image-bottom",
+          "html": "<p>Dra i reglagets ändar för att ställa in detaljnivån — <strong>coarse</strong> för färre rutor, <strong>fine</strong> för skarpare kartor.</p>\n<ul>\n<li>ATAK visar antalet rutor; gränsen är 850 000 rutor per nedladdning.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/bb7aba1816fd05a0.webp",
+              "width": 220,
+              "height": 100
+            }
+          ]
+        },
+        {
+          "title": "Namnge och ladda ner",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på <strong>Download</strong>, namnge rutuppsättningen och tryck på <strong>OK</strong>.</p>\n<ul>\n<li>En förloppsindikator visas; <strong>Cancel</strong> stoppar den.</li>\n<li>Du kan också lägga till rutor i en befintlig uppsättning eller spara ett överlägg.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/233202f64b766362.webp",
+              "width": 220,
+              "height": 145
+            }
+          ]
+        },
+        {
+          "title": "Växla till dina offline-kartor",
+          "layout": "image-bottom",
+          "html": "<p>Växla till <strong>Local</strong> för att lista dina nedladdade lager, närmast först. Tryck på ett för att använda det som kartkälla — kartan fungerar nu utan signal.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/95d8e7d780f95ad1.webp",
+              "width": 196,
+              "height": 181
+            }
+          ]
+        },
+        {
+          "title": "Hantera och dela kartbilder",
+          "layout": "image-bottom",
+          "html": "<p>Fliken <strong>Imagery</strong> listar alla dina kartor.</p>\n<ul>\n<li>Expandera en kategori för att skicka ett lager till andra användare (<strong>Send</strong>) eller radera det.</li>\n<li>Kryssrutan <strong>Outline</strong> visar varje lagers kant.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/6a7e67ec50bffd9c.webp",
+              "width": 245,
+              "height": 192
+            }
+          ]
+        },
+        {
+          "title": "Bokmärk en vy",
+          "layout": "image-bottom",
+          "html": "<p>På <strong>FAVS</strong> trycker du på <strong>Add Current View</strong> för att spara din plats och dess kartbilder. Tryck på en sparad vy för att hoppa tillbaka, eller skicka den (<strong>Send</strong>) för att dela med din enhet.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/6012d9b47815dff7.webp",
+              "width": 203,
+              "height": 188
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

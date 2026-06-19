@@ -6,14 +6,19 @@
   "locale": "en",
   "title": "Data Sync",
   "breadcrumb": [
-    "TAK Clients",
+    "Platforms",
     "iTAK",
     "Basic Features",
     "Data Sync"
   ],
   "createdAt": "2025-12-05T22:06:10.995Z",
-  "updatedAt": "2026-02-20T20:51:41.284Z",
+  "updatedAt": "2026-06-18T20:25:48.398Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/data-sync-U4cc7UE9hg",
+    "fi": "/fi/guides/tak-guide/datan-synkronointi-lzOCvJIN5S",
+    "sv": "/sv/guides/tak-guide/datasynkronisering-sfvICpIRhr"
+  },
   "blocks": [
     {
       "type": "slideset",

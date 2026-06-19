@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 1,
+  "id": "be06b2d1-a59a-471d-908f-e5b34eb680ae",
+  "slug": "toista-ja-kaappaa-videota-xag7zBmlMd",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Toista ja kaappaa videota",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "LISÄOMINAISUUDET",
+    "Video ATAKissa",
+    "Toista ja kaappaa videota"
+  ],
+  "createdAt": "2026-06-18T19:30:21.400Z",
+  "updatedAt": "2026-06-18T20:21:34.809Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/play-capture-video-hWmpN6dj9t",
+    "fi": "/fi/guides/tak-guide/toista-ja-kaappaa-videota-xag7zBmlMd",
+    "sv": "/sv/guides/tak-guide/spela-upp-och-fanga-video-2fFwRMj9g4"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Katso reaaliaikaisia IP-kameran, Rover5- ja H.264-videosyötteitä ATAKissa, ota pysäytyskuva, tallenna leikkeitä ja vie syöte kartalle.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Avaa video ja toista se",
+          "layout": "image-bottom",
+          "html": "<p>Avaa syötteiden lista napauttamalla <strong>Video Player</strong> -kuvaketta. Aloita toisto valitsemalla videoalias tai tiedostonimi.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/ab045f72d0899194.webp",
+              "width": 225,
+              "height": 184
+            }
+          ]
+        },
+        {
+          "title": "Käytä toistosäätimiä",
+          "layout": "image-bottom",
+          "html": "<p>Video näkyy puolikkaalla ruudulla, mukana <strong>play/pause</strong>, kulunut aika ja <strong>mute/unmute</strong>. Siirry koko ruutuun vetämällä vetopalkkia; palaa painamalla laitteen <strong>Back</strong>-painiketta.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/60c4f50814886e59.webp",
+              "width": 241,
+              "height": 197
+            }
+          ]
+        },
+        {
+          "title": "Ota kuva pysäytyskuvana",
+          "layout": "image-bottom",
+          "html": "<p>Tallenna nykyinen ruutu JPEG-kuvana napauttamalla <strong>Snapshot</strong>-kuvaketta; kuvake välähtää vihreänä, kun tallennus on valmis. Avaa <strong>Video Snapshots</strong> -galleria napauttamalla pysäytyskuvien kuvaketta.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/b6a49d1f7d6ae1d2.webp",
+              "width": 266,
+              "height": 210
+            }
+          ]
+        },
+        {
+          "title": "Lähetä pysäytyskuva",
+          "layout": "image-bottom",
+          "html": "<p>Avaa pysäytyskuva ja vie se toiselle TAK-käyttäjälle, TAK-palvelimelle tai kolmannen osapuolen sovellukseen napauttamalla <strong>Send</strong>. Siirry seuraavaan pysäytyskuvaan <strong>Arrow</strong>-painikkeella.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/9b516c1553436f27.webp",
+              "width": 266,
+              "height": 219
+            }
+          ]
+        },
+        {
+          "title": "Tallenna syöte tiedostoon",
+          "layout": "image-bottom",
+          "html": "<p>Aloita reaaliaikaisen UDP- tai RTSP-virran tallennus napauttamalla <strong>Record</strong>; painike muuttuu vihreäksi neliöksi tallennuksen aikana. Lopeta napauttamalla <strong>Record</strong> uudelleen. Leikkeet tallentuvat kansioon /atak/tools/videos/.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/709c6d58e6fead76.webp",
+              "width": 185,
+              "height": 50
+            }
+          ]
+        },
+        {
+          "title": "Näytä syöte kartalla",
+          "layout": "image-bottom",
+          "html": "<p>Jos virta sisältää kulmametatietoa, napauta videoikkunan oikeassa yläkulmassa olevaa <strong>Globe</strong>-kuvaketta. Maapallo muuttuu vihreäksi ja syöte asettuu suoraan kartan päälle.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/5272d32cd8e564b3.webp",
+              "width": 582,
+              "height": 325
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

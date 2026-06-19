@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "52a16518-2aaf-4755-b927-2314cd42199b",
+  "slug": "tidslinjevy-mXMCZ7CwsA",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Tidslinjevy",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "Avancerade kärnfunktioner",
+    "Tidslinjevy"
+  ],
+  "createdAt": "2026-06-18T19:26:19.098Z",
+  "updatedAt": "2026-06-18T20:14:37.355Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/feed-timeline-view-Ykwnn1hgWm",
+    "fi": "/fi/guides/tak-guide/aikajananakyma-DKl8eVn3bU",
+    "sv": "/sv/guides/tak-guide/tidslinjevy-mXMCZ7CwsA"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Tidslinjevyn visar ett flödes objekt som en bläddringsbar stapel av ögonblicksbilder — praktiskt för att snabbt se vad som har ändrats.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Öppna tidslinjen",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på <strong>Timeline</strong>-ikonen från flödeslistan eller ett flödes översiktsvy. Växla till <strong>portrait</strong> när du uppmanas. Välj en flödesruta, eller <strong>All</strong> för att se alla flöden du följer.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/0087614f5756a67b.webp",
+              "width": 800,
+              "height": 270
+            }
+          ]
+        },
+        {
+          "title": "Läs och agera på ögonblicksbilder",
+          "layout": "image-bottom",
+          "html": "<p>Varje ögonblicksbild visar <strong>callsign</strong>, tid, plats och en kartbild; tryck på den för att visa objektet på kartan.</p>\n<ul>\n<li>Tryck på <strong>⋮</strong> på en ögonblicksbild för <strong>View Details → History</strong> (återgå till en tidigare version), <strong>Save screenshot</strong>, <strong>Contact Author</strong> eller <strong>Undo</strong>.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/8d81d2ed4a45a4eb.webp",
+              "width": 800,
+              "height": 1473
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -8,13 +8,18 @@
   "breadcrumb": [
     "Platforms",
     "ATAK",
-    "Supported Plugins",
+    "SUPPORTED PLUGINS",
     "Reports",
     "Find Reports on the Server"
   ],
   "createdAt": "2026-06-15T19:50:47.363Z",
-  "updatedAt": "2026-06-15T19:50:47.363Z",
+  "updatedAt": "2026-06-18T20:22:37.075Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/find-reports-on-the-server-QTVm3SETE8",
+    "fi": "/fi/guides/tak-guide/etsi-raportteja-palvelimelta-fgWGDji6qC",
+    "sv": "/sv/guides/tak-guide/hitta-rapporter-pa-servern-Nt8T6THdnt"
+  },
   "blocks": [
     {
       "type": "html",

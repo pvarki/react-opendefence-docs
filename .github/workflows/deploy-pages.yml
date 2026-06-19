@@ -27,15 +27,14 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
       # Content and api-specs are committed by the sync PR flow;
-      # the build needs no Outline secrets. BASE_PATH targets the GitHub
-      # Pages project URL — drop it (and restore public/CNAME) when
-      # docs.opendefence.fi DNS goes live.
+      # the build needs no Outline secrets. Served at the root of the custom
+      # domain docs.opendefence.fi, so base = "/" (no BASE_PATH) and public/CNAME
+      # carries the domain into the deployed artifact.
       # LANDING_URL (repo variable, optional) feeds the home-footer
       # landing-page link; the link is hidden while the variable is unset.
       - name: Build
         run: pnpm build
         env:
-          BASE_PATH: /react-opendefence-docs/
           VITE_LANDING_URL: ${{ vars.LANDING_URL }}
       # enablement: turns Pages on (build type "workflow") on first run, so
       # deploys work without a manual Settings step.

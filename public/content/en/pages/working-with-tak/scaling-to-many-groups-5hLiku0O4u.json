@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "5abdcea3-fd19-407d-b267-87bfa7062171",
+  "slug": "scaling-to-many-groups-5hLiku0O4u",
+  "collection": "working-with-tak",
+  "locale": "en",
+  "title": "Scaling to many groups",
+  "breadcrumb": [
+    "Wire up two Federation Hubs (IaC)",
+    "Scaling to many groups"
+  ],
+  "createdAt": "2026-06-17T20:26:00.542Z",
+  "updatedAt": "2026-06-19T14:18:55.781Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "The pattern",
+      "id": "the-pattern"
+    },
+    {
+      "depth": 2,
+      "text": "Why a hierarchy, not one big hub or a mesh",
+      "id": "why-a-hierarchy-not-one-big-hub-or-a-mesh"
+    },
+    {
+      "depth": 2,
+      "text": "One pipeline, parameterized by the structure",
+      "id": "one-pipeline-parameterized-by-the-structure"
+    },
+    {
+      "depth": 2,
+      "text": "Going further",
+      "id": "going-further"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>A hub-to-hub link is the unit of scale. Repeat it and you get a larger structure: one hub per group of servers, all federated to a central hub.</p>\n<h2 id=\"the-pattern\"><a href=\"#the-pattern\">The pattern</a></h2>\n<p>For a large organization with several groups, each group running a few Deploy App TAK servers (say, five groups of three servers, 15 in total):</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span>  group 1: 3 servers ─▶ [Group 1 Hub] ─┐</span></span>\n<span class=\"line\"><span>  group 2: 3 servers ─▶ [Group 2 Hub] ─┤</span></span>\n<span class=\"line\"><span>  group 3: 3 servers ─▶ [Group 3 Hub] ─┼─▶ [Central Hub]</span></span>\n<span class=\"line\"><span>  group 4: 3 servers ─▶ [Group 4 Hub] ─┤</span></span>\n<span class=\"line\"><span>  group 5: 3 servers ─▶ [Group 5 Hub] ─┘</span></span></code></pre>",
+      "lang": "plaintext"
+    },
+    {
+      "type": "html",
+      "html": "<ul>\n<li>Each group hub federates its own servers (single-hub guide), giving a full picture within the group, kept local.</li>\n<li>Each group hub has one hub-to-hub link to the central hub (this guide), filtered to the shared <code>SHARED_COP</code> group.</li>\n<li>The central hub brokers the common operating picture between groups; nothing else crosses.</li>\n</ul>\n<p>Link count stays linear. With five groups of three: 15 server-to-hub links plus 5 group-to-central links is 20, versus 105 for a flat 15-server mesh. Adding a group is one more hub-to-hub link, not N more.</p>\n<h2 id=\"why-a-hierarchy-not-one-big-hub-or-a-mesh\"><a href=\"#why-a-hierarchy-not-one-big-hub-or-a-mesh\">Why a hierarchy, not one big hub or a mesh</a></h2>\n<ul>\n<li>Localized traffic. Intra-group CoT never touches the inter-group links; only <code>SHARED_COP</code> crosses up. This matters on constrained bandwidth.</li>\n<li>Graceful degradation. If the link to the central hub drops, each group keeps its own picture. A single shared hub would make hub loss an outage for everyone.</li>\n<li>Releasability maps to the structure. The central hub's edges are the one place that governs cross-group sharing.</li>\n</ul>\n<p>Enable MFDT (MongoDB) on the hubs so mission and Data-Sync changes store and forward across disrupted links and reconcile on reconnect.</p>\n<h2 id=\"one-pipeline-parameterized-by-the-structure\"><a href=\"#one-pipeline-parameterized-by-the-structure\">One pipeline, parameterized by the structure</a></h2>\n<p>Because every link is derived from topology, the whole structure is one idempotent deployment parameterized by the group layout:</p>\n<ul>\n<li>Inputs: the list of groups, their servers, and the shared group taxonomy (<code>tak_SHARED_COP</code>, plus any sub-pictures like <code>tak_SHARED_FIRES</code>).</li>\n<li>Per group: stand up its servers plus a group hub (single-hub guide).</li>\n<li>Per group hub: cross-trust with the central hub and add one filtered inter-hub edge (this guide).</li>\n<li>Reconcile: adding or removing a group, or changing what is shared, is a re-render and re-apply, with no graphs drawn by hand.</li>\n</ul>\n<h2 id=\"going-further\"><a href=\"#going-further\">Going further</a></h2>\n<p>The same hub-to-hub primitive composes further. A central hub can federate to another hub above it (multi-hop again), or two central hubs can link for a combined picture, with each boundary filtered to exactly the group that should cross. Keep every inter-hub edge narrow by default and widen it deliberately.</p>\n<p>→ Next: <a href=\"/en/working-with-tak/references-n9W8lB6Gpz\">References</a>.</p>"
+    }
+  ]
+}

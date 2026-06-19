@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "0d913942-3dc2-4df8-939a-da2c0769d8a9",
+  "slug": "anslut-uas-tool-automatiskt-till-mediamtx-HeWL5goTM5",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Anslut UAS Tool automatiskt till MediaMTX",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "TILLÄGG SOM STÖDS",
+    "UAS-verktyg",
+    "Anslut UAS Tool automatiskt till MediaMTX"
+  ],
+  "createdAt": "2026-06-18T19:30:24.787Z",
+  "updatedAt": "2026-06-18T20:21:41.093Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/auto-connect-uas-tool-to-mediamtx-MahzGHsEdu",
+    "fi": "/fi/guides/tak-guide/yhdista-uas-tool-automaattisesti-mediamtxaan-OxrZY5V7EQ",
+    "sv": "/sv/guides/tak-guide/anslut-uas-tool-automatiskt-till-mediamtx-HeWL5goTM5"
+  },
+  "blocks": []
+}

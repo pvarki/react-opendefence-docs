@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 1,
+  "id": "fe0e99df-b62d-4419-876f-206d6bb4cab6",
+  "slug": "datasynkronisering-sfvICpIRhr",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Datasynkronisering",
+  "breadcrumb": [
+    "Platforms",
+    "iTAK",
+    "Grundfunktioner",
+    "Datasynkronisering"
+  ],
+  "createdAt": "2026-06-18T19:35:32.137Z",
+  "updatedAt": "2026-06-18T20:25:50.056Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/data-sync-U4cc7UE9hg",
+    "fi": "/fi/guides/tak-guide/datan-synkronointi-lzOCvJIN5S",
+    "sv": "/sv/guides/tak-guide/datasynkronisering-sfvICpIRhr"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Data Sync-konfiguration",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Navigera till Data Sync-funktionen</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/feecfd08d805f472.webp",
+              "width": 1179,
+              "height": 599
+            }
+          ]
+        },
+        {
+          "title": "Lägg till uppdrag",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Tryck på + -tecknet för att prenumerera på uppdrag</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/8fc535a64cf14580.webp",
+              "width": 1179,
+              "height": 1253
+            }
+          ]
+        },
+        {
+          "title": "Prenumerera på uppdrag",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Prenumerera</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/01f76e13b94c8cb0.webp",
+              "width": 1179,
+              "height": 1249
+            }
+          ]
+        },
+        {
+          "title": "Tillgängliga uppdrag",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Välj ett anvisat tillgängligt uppdrag</li>\n<li>Standarduppdraget är RECON</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/0367758ac6410f10.webp",
+              "width": 1179,
+              "height": 1253
+            }
+          ]
+        },
+        {
+          "title": "Uppdragsinformation",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>vyn visar uppdragets information och de data som finns tillgängliga i ett uppdrag.</li>\n<li>Återgå till föregående vy.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/b20947f3eb07b21b.webp",
+              "width": 1179,
+              "height": 1246
+            }
+          ]
+        },
+        {
+          "title": "Mission Sync",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Säkerställ att uppdragets data är uppdaterade</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/6c66f841da75293e.webp",
+              "width": 1179,
+              "height": 1253
+            }
+          ]
+        },
+        {
+          "title": "Full Sync",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Tillåt Full Sync</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/76b97aa304418702.webp",
+              "width": 1179,
+              "height": 1515
+            }
+          ]
+        },
+        {
+          "title": "iTAK-konfiguration slutförd",
+          "layout": "text",
+          "html": "",
+          "images": []
+        }
+      ]
+    }
+  ]
+}

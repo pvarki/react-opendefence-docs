@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "id": "66e02598-7b26-4a72-809e-b99544896f0d",
+  "slug": "skicka-en-nodsignal-P8pYX5tKLu",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Skicka en nödsignal",
+  "breadcrumb": [
+    "Platforms",
+    "TAK Tracker - Android",
+    "GRUNDFUNKTIONER",
+    "Skicka en nödsignal"
+  ],
+  "createdAt": "2026-06-18T19:44:12.607Z",
+  "updatedAt": "2026-06-18T20:26:46.334Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/send-an-emergency-alert-beacon-rmQFqQnNJC",
+    "fi": "/fi/guides/tak-guide/laheta-hatamajakka-1C1ahU2CXe",
+    "sv": "/sv/guides/tak-guide/skicka-en-nodsignal-P8pYX5tKLu"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>En nödsignal sänder din position till alla TAK-användare på servern tills du avbryter den. Du kan aktivera den varifrån som helst.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Se larm på kartan",
+          "layout": "image-bottom",
+          "html": "<p>När någon TAK-användare aktiverar en signal visar widgeten längst ner till vänster på deras karta var larmet finns i förhållande till deras egen markör.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/decf98549e5a40ae.webp",
+              "width": 252,
+              "height": 148
+            }
+          ]
+        },
+        {
+          "title": "Starta en signal och välj typ",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på <strong>Emergency</strong> i TAK Trackers verktygsfält och välj sedan en av de fyra knapparna:</p>\n<ul>\n<li><strong>911 Alert</strong> — du behöver hjälp nu</li>\n<li><strong>Geo-fence Breached</strong> — en gräns har överträtts</li>\n<li><strong>Ring the Bell</strong> — påkalla uppmärksamhet på din position</li>\n<li><strong>In Contact</strong> — i strid med fienden</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/f6db2268289e00d8.webp",
+              "width": 130,
+              "height": 143
+            }
+          ]
+        },
+        {
+          "title": "Dra för att bekräfta",
+          "layout": "image-bottom",
+          "html": "<p>Dra båda reglagen åt höger och tryck sedan på <strong>OK</strong> för att utlösa signalen. Den fortsätter att sända över nätverket tills du inaktiverar den.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/9f864ee1589a0275.webp",
+              "width": 130,
+              "height": 92
+            }
+          ]
+        },
+        {
+          "title": "Avbryt larmet",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på den tända <strong>Emergency</strong>-knappen igen för att öppna fönstret på nytt. Välj <strong>Cancel Alert</strong> från rullgardinsmenyn, dra båda reglagen åt höger och tryck på <strong>OK</strong>. Signalen rensas på varje TAK-enhet i nätverket.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/69ec0b3d8d2674a4.webp",
+              "width": 130,
+              "height": 96
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

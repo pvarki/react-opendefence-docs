@@ -13,8 +13,13 @@
     "Georeference an Image (Rubber Sheet)"
   ],
   "createdAt": "2026-06-15T19:43:33.845Z",
-  "updatedAt": "2026-06-15T20:53:54.994Z",
+  "updatedAt": "2026-06-18T20:21:29.269Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/georeference-an-image-rubber-sheet-TgWDRF45Bd",
+    "fi": "/fi/guides/tak-guide/georeferoi-kuva-rubber-sheet-onZsR99V8e",
+    "sv": "/sv/guides/tak-guide/georeferera-en-bild-rubber-sheet-WijOqzcbZT"
+  },
   "blocks": [
     {
       "type": "html",
@@ -27,7 +32,7 @@
         {
           "title": "Open the Rubber Sheet tool",
           "layout": "image-bottom",
-          "html": "<p>Select the <strong>Rubber Sheet</strong> icon to open its toolbar. The toolbar options are <strong>Import</strong>, <strong>Sort</strong>, <strong>Export</strong> and <strong>Search</strong>.</p>",
+          "html": "<p>Select the <strong>Rubber Sheet</strong> icon to open its toolbar.</p>\n<ul>\n<li>The toolbar options are <strong>Import</strong>, <strong>Sort</strong>, <strong>Export</strong> and <strong>Search</strong>.</li>\n</ul>",
           "images": [
             {
               "src": "/content/images/en/attachments/db53ed5d82829bd3.webp",

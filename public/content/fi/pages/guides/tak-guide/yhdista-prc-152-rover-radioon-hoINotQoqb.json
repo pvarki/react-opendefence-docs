@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 1,
+  "id": "704d74aa-611b-48f6-b10e-42f828acdc1e",
+  "slug": "yhdista-prc-152-rover-radioon-hoINotQoqb",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Yhdistä PRC-152- / Rover-radioon",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "TUETUT LISÄOSAT",
+    "Yhdistä radio HAMMER-sovelluksella",
+    "Yhdistä PRC-152- / Rover-radioon"
+  ],
+  "createdAt": "2026-06-18T19:31:39.308Z",
+  "updatedAt": "2026-06-18T20:22:45.576Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/connect-to-prc-152-rover-radio-h4TQ7hwPw2",
+    "fi": "/fi/guides/tak-guide/yhdista-prc-152-rover-radioon-hoINotQoqb",
+    "sv": "/sv/guides/tak-guide/anslut-till-prc-152-rover-radio-cMfvASinoQ"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Yhdistä puhelimesi Harris PRC-152 -radioon ja Rover-videolinkkiin, jotta voit puhua kahdenvälisesti ja katsoa ilma-aluksen reaaliaikaista videokuvaa kartalla.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Avaa radio-ohjaimet",
+          "layout": "image-bottom",
+          "html": "<p>Avaa <strong>Radio Controls</strong> napauttamalla <strong>Radio</strong>-kuvaketta.</p>\n<ul>\n<li><strong>Harris SA</strong> on PRC-152:n puhe- ja dataradio; <strong>Rover</strong> on ISRV-videolinkki.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/064a87db54be9c9a.webp",
+              "width": 262,
+              "height": 175
+            }
+          ]
+        },
+        {
+          "title": "Aseta PRC-152-kaapeli",
+          "layout": "image-bottom",
+          "html": "<p>Kytke PRC-152-kaapeli ja napauta sitten <strong>Harris SA</strong> -hammasrataskuvaketta. Valitse <strong>Cable Configuration</strong> -valikossa kaapelisi (esim. <strong>PRC-152A Cable</strong>) ja napauta <strong>OK</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/3e1d2f7bc4f92e4e.webp",
+              "width": 277,
+              "height": 214
+            }
+          ]
+        },
+        {
+          "title": "Yhdistä PRC-152",
+          "layout": "image-bottom",
+          "html": "<p>Siirrä <strong>Harris SA</strong> -kytkin asennosta <strong>OFF</strong> asentoon <strong>ON</strong>. Yhteyden muodostuttua samassa verkossa olevat muut radiot näkyvät kartalla, kun kohina vaimennetaan.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/59dff00e909edf4d.webp",
+              "width": 336,
+              "height": 139
+            }
+          ]
+        },
+        {
+          "title": "Yhdistä Rover",
+          "layout": "image-bottom",
+          "html": "<p>Siirrä <strong>Rover</strong>-kytkin asennosta <strong>OFF</strong> asentoon <strong>ON</strong>. ATAK etsii syötettä; antennikuvake muuttuu vihreäksi ja näyttää tilan <strong>Connected</strong>, kun videolinkki on aktiivinen.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/d093929ac08f9981.webp",
+              "width": 357,
+              "height": 164
+            }
+          ]
+        },
+        {
+          "title": "Avaa Rover-ohjaimet",
+          "layout": "image-bottom",
+          "html": "<p>Avaa <strong>Rover Controls</strong> napauttamalla <strong>Rover</strong>-valikkokohtaa.</p>\n<ul>\n<li>Nykyinen taajuus ja aaltomuoto näkyvät yläosassa.</li>\n<li>Selaa syötteitä painikkeilla <strong>Scan</strong> ja <strong>Next</strong>.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/7c0f821ce387b52b.webp",
+              "width": 243,
+              "height": 253
+            }
+          ]
+        },
+        {
+          "title": "Aseta taajuus ja aaltomuoto",
+          "layout": "image-bottom",
+          "html": "<p>Avaa <strong>Scan Frequency Range</strong> napauttamalla <strong>Scan</strong>. Syötä <strong>Start Freq Code</strong> ja <strong>End Freq Code</strong>, valitse <strong>Waveform</strong> (esim. ANALOG, DDL) ja napauta <strong>OK</strong>, siirry sitten eteenpäin painikkeella <strong>Next</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/e1f84335cbd03acc.webp",
+              "width": 271,
+              "height": 221
+            }
+          ]
+        },
+        {
+          "title": "Katso videokuvaa",
+          "layout": "image-bottom",
+          "html": "<p>Avaa reaaliaikainen lähetys napauttamalla <strong>Watch</strong>. Video näyttää ilma-aluksen sensorisyötteen, jonka päälle on lisätty kohderuudukko ja koordinaatit.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/78f3cbf6f8c0f8f7.webp",
+              "width": 379,
+              "height": 354
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

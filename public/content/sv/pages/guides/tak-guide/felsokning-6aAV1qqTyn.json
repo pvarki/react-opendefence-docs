@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "fff08d2c-9828-43a9-9008-425ca6002c36",
+  "slug": "felsokning-6aAV1qqTyn",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Felsökning",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "Felsökning"
+  ],
+  "createdAt": "2026-06-18T19:32:25.616Z",
+  "updatedAt": "2026-06-18T20:22:48.915Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/troubleshooting-IC3Nd5qZHr",
+    "fi": "/fi/guides/tak-guide/vianmaaritys-mum1CL1yac",
+    "sv": "/sv/guides/tak-guide/felsokning-6aAV1qqTyn"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>(Den här fliken ska inte visas)</p>"
+    }
+  ]
+}

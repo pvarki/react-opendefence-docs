@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "id": "6ba7d761-ea9b-4627-90ec-3ffe6b326bcc",
+  "slug": "packaging-distribution-overview-Yfof5rViqj",
+  "collection": "working-with-tak",
+  "locale": "en",
+  "title": "Packaging & distribution (overview)",
+  "breadcrumb": [
+    "ATAK Plugin Development",
+    "Packaging & distribution (overview)"
+  ],
+  "createdAt": "2026-06-16T22:49:07.789Z",
+  "updatedAt": "2026-06-16T22:57:03.224Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Package a release build",
+      "id": "package-a-release-build"
+    },
+    {
+      "depth": 2,
+      "text": "Which distribution path applies to you?",
+      "id": "which-distribution-path-applies-to-you"
+    },
+    {
+      "depth": 2,
+      "text": "Versioning",
+      "id": "versioning"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Once your plugin builds and runs, distribution is mostly about <strong>signing</strong> and <strong>API/version matching</strong> — plus understanding which distribution path applies to you.</p>\n<h2 id=\"package-a-release-build\"><a href=\"#package-a-release-build\">Package a release build</a></h2>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#61AFEF\">./gradlew</span><span style=\"color:#98C379\"> assembleCivRelease</span></span></code></pre>",
+      "lang": "bash"
+    },
+    {
+      "type": "html",
+      "html": "<p>This produces a minified, ProGuarded, <strong>release-signed</strong> APK named <code>ATAK-Plugin-&#x3C;name>-&#x3C;PLUGIN_VERSION>-&#x3C;versionName>-&#x3C;ATAK_VERSION>.apk</code>. Before you share it:</p>\n<ul>\n<li><strong>Match the ATAK version.</strong> A plugin only loads into an ATAK whose API matches its <code>plugin-api</code> marker. State the target <code>ATAK_VERSION</code> (and variant, e.g. CIV) alongside the download, and rebuild for each ATAK version you support.</li>\n<li><strong>Sign consistently.</strong> Keep your release keystore safe and reuse it, so updates are recognized as the same app.</li>\n<li><strong>Honor third-party licenses.</strong> Check <code>THIRDPARTY.md</code> for any library you bundle and include the required notices.</li>\n</ul>\n<h2 id=\"which-distribution-path-applies-to-you\"><a href=\"#which-distribution-path-applies-to-you\">Which distribution path applies to you?</a></h2>\n<ul>\n<li><strong>Civilian / open-source plugins (this guide's scope).</strong> You distribute your own signed APK — GitHub releases, your own site, etc. — just like any Android app, within the terms of the ATAK-CIV license and the licenses of anything you bundle. Users side-load it onto a device running ATAK-CIV.</li>\n<li><strong>Government / controlled plugins.</strong> Plugins that build against the Military SDK, expose military-controlled capability, or are intended for foreign release go through the <strong>official TAK Product Center pipeline</strong> — build requests, data-rights/export determination, and <em>keying</em> for distribution (including Foreign Military Sales). That process is governed by tak.gov policy, not this guide; see TAK.gov's <em>\"Our Process\"</em> and <em>\"Third Party Pipeline\"</em> pages.</li>\n</ul>\n<h2 id=\"versioning\"><a href=\"#versioning\">Versioning</a></h2>\n<p>Bump <code>PLUGIN_VERSION</code> for your own releases, and remember to <strong>tick</strong> <code>**versionCode**</code> <strong>in</strong> <code>**AndroidManifest.xml**</code> <strong>whenever you change</strong> <code>**plugin.xml**</code> (the file itself notes this) so ATAK picks up the change.</p>\n<p>→ Next: <a href=\"/en/working-with-tak/references-attribution-n8JEv3i895\">References &#x26; attribution</a>.</p>"
+    }
+  ]
+}

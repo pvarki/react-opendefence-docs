@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 1,
+  "id": "5b05951a-0a08-4ce8-b328-a07fc132e51e",
+  "slug": "ota-element-kayttoon-mobiili-tagios-tagandroid-GKkxWww3O0",
+  "collection": "guides/matrix-guide",
+  "locale": "fi",
+  "title": "Ota Element käyttöön (mobiili)",
+  "breadcrumb": [
+    "Yhdistä palvelimeen",
+    "Ota Element käyttöön (mobiili)"
+  ],
+  "createdAt": "2026-06-18T20:33:56.235Z",
+  "updatedAt": "2026-06-18T20:37:51.925Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/matrix-guide/set-up-element-mobile-tagios-tagandroid-QacQsNprmb",
+    "fi": "/fi/guides/matrix-guide/ota-element-kayttoon-mobiili-tagios-tagandroid-GKkxWww3O0",
+    "sv": "/sv/guides/matrix-guide/konfigurera-element-mobil-tagios-tagandroid-dPrhAGHVpH"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Asenna Element puhelimeesi ja yhdistä se yksikkösi Matrix-kotipalvelimeen. Tässä oppaassa käytetään Element Classicia, mutta vaiheet ovat samankaltaiset lähes kaikissa Matrix-sovelluksissa. Kestää noin viisi minuuttia.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Tervetuloa Matrixiin",
+          "layout": "image-bottom",
+          "html": "<p>Tässä oppaassa käytetään Element Classic -sovellusta, mutta voit käyttää lähes mitä tahansa Matrix-sovellusta — vaiheet ovat samankaltaiset muuallakin.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/5239bfbb830a52b8.webp",
+              "width": 1918,
+              "height": 1113
+            }
+          ]
+        },
+        {
+          "title": "Esivaatimukset",
+          "layout": "image-bottom",
+          "html": "<p>Kopioi kotipalvelimen osoite (1). Voit palata tähän oppaaseen milloin tahansa oikeasta alakulmasta (2).</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/fce8ba119e6c9bf8.webp",
+              "width": 6013,
+              "height": 3525
+            }
+          ]
+        },
+        {
+          "title": "Kirjaudu sisään Element Classiciin",
+          "layout": "image-bottom",
+          "html": "<p>Avaa Element ja valitse <strong>Sign in</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/d3d387ad950f47e2.webp",
+              "width": 2880,
+              "height": 1820
+            }
+          ]
+        },
+        {
+          "title": "Muokkaa kotipalvelinta",
+          "layout": "image-bottom",
+          "html": "<p>Paina <strong>Edit</strong> kotipalvelimen osoitteen vieressä.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/e149492ede84d08b.webp",
+              "width": 2880,
+              "height": 1820
+            }
+          ]
+        },
+        {
+          "title": "Liitä palvelimen osoite",
+          "layout": "image-bottom",
+          "html": "<p>Liitä aiemmin kopioimasi palvelimen osoite ja paina sitten <strong>Next</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/71fb6f7a4d40f83a.webp",
+              "width": 2880,
+              "height": 1820
+            }
+          ]
+        },
+        {
+          "title": "Tunnistaudu Keycloakilla",
+          "layout": "image-bottom",
+          "html": "<p>Paina <strong>Continue with Keycloak</strong>. Jatka selaimessa, jonka pitäisi pyytää mTLS-varmennettasi — tunnistaudu mTLS-varmenteellasi.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/8f1288ca414bd9ba.webp",
+              "width": 2880,
+              "height": 1820
+            }
+          ]
+        },
+        {
+          "title": "Element Classicin etusivu",
+          "layout": "image-bottom",
+          "html": "<p>Olet nyt kirjautunut sisään ja voit käyttää Matrixia. Hae käyttäjiä ja huoneita oikeasta yläkulmasta (1) ja aloita keskustelu oikeasta alakulmasta (2).</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/d324ea41bfd3cea3.webp",
+              "width": 2880,
+              "height": 1820
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "id": "f135d75f-0e1b-42bb-a8f9-1ff5a0ce4680",
+  "slug": "syotteiden-luominen-RQLTfV45mi",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Syötteiden luominen",
+  "breadcrumb": [
+    "Platforms",
+    "WinTAK",
+    "EDISTYNEET YDINOMINAISUUDET",
+    "Syötteiden luominen"
+  ],
+  "createdAt": "2026-06-18T19:33:27.778Z",
+  "updatedAt": "2026-06-18T20:23:47.961Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/create-feeds-0jPr4Cah1Z",
+    "fi": "/fi/guides/tak-guide/syotteiden-luominen-RQLTfV45mi",
+    "sv": "/sv/guides/tak-guide/skapa-floden-12E0nv0B4a"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Komentopaikan käyttäjä?",
+          "layout": "text",
+          "html": "<ul>\n<li>Kun käytät WinTAKia, olet hyvin todennäköisesti komentopaikan / esikunnan käyttäjä.</li>\n<li>Vastaat syötteiden hallinnasta ja luomisesta.</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "Syötteiden luominen",
+          "layout": "text",
+          "html": "<ul>\n<li>Luo syötteitä joko suunnitelmiesi toimittamista varten tai aloittaaksesi jatkuvan tiedon jakamisen.</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "Data Sync -aloitusnäkymä - Overlay Manager",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Aloita napauttamalla Data Sync -uuden syötteen symbolia.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/7d43be69d5f05b10.webp",
+              "width": 166,
+              "height": 100
+            }
+          ]
+        },
+        {
+          "title": "Syötteen luominen - Asetukset",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Uuden syötteen luontilomake</li>\n<li>Seuraavilla sivuilla on yksityiskohtaisemmat kuvaukset</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/297eac18aa76195d.webp",
+              "width": 384,
+              "height": 418
+            }
+          ]
+        },
+        {
+          "title": "Nimeä syötteesi",
+          "layout": "text",
+          "html": "<ul>\n<li>Nimi: Ole kuvaileva. Esimerkkinimi osoittaa, että syöte sisältää logistiikan suunnitelman.</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "Valitse ryhmä",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Valitse seuraavaksi <strong>Group</strong>-valitsimesta, mikä ryhmä voi käyttää syötettäsi.</li>\n<li>Oletusarvo käyttää oletusta (kaikki TAK-käyttäjät)</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/5ab0f68b09312587.webp",
+              "width": 380,
+              "height": 178
+            }
+          ]
+        },
+        {
+          "title": "Valitse oletusrooli",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Valitse tarkoitukseesi parhaiten sopiva.</li>\n<li><strong>Subscriber</strong> tarkoittaa, että kaikki käyttäjät voivat lähettää ja lukea syötteestä.</li>\n<li><strong>Read-only</strong> tarkoittaa, että vain omistajat voivat lähettää syötteeseen.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/10c37e6dbeda685e.webp",
+              "width": 358,
+              "height": 113
+            }
+          ]
+        },
+        {
+          "title": "Salasana",
+          "layout": "text",
+          "html": "<ul>\n<li>Voit halutessasi määrittää syötteellesi salasanan käytön rajoittamiseksi.</li>\n<li>Harkitse huolellisesti, milloin salasanaa kannattaa käyttää.</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "Kuvaile syötteesi",
+          "layout": "text",
+          "html": "<ul>\n<li>Napauttamalla <strong>Description</strong> voit kuvailla syötettäsi. Se auttaa.</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "Hashtagit",
+          "layout": "text",
+          "html": "<ul>\n<li>Voit halutessasi kirjoittaa syötteellesi hashtageja. Se voi auttaa tietojen analysoinnissa palvelimellasi.</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "Uusi syöte luotu!",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Luo syöte!</li>\n<li>Palvelimesi käyttäjät voivat nyt tilata syötteesi.</li>\n</ul>\n<hr>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/f101e12b1767b4a0.webp",
+              "width": 398,
+              "height": 424
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

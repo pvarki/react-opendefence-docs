@@ -12,8 +12,13 @@
     "Send an Emergency Alert Beacon"
   ],
   "createdAt": "2026-06-16T16:18:16.743Z",
-  "updatedAt": "2026-06-16T16:21:26.673Z",
+  "updatedAt": "2026-06-18T20:26:44.860Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/send-an-emergency-alert-beacon-rmQFqQnNJC",
+    "fi": "/fi/guides/tak-guide/laheta-hatamajakka-1C1ahU2CXe",
+    "sv": "/sv/guides/tak-guide/skicka-en-nodsignal-P8pYX5tKLu"
+  },
   "blocks": [
     {
       "type": "html",

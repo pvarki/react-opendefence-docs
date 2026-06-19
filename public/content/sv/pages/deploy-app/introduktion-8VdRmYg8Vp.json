@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "9551fc89-fe7f-46b2-a890-64209d4acbe7",
+  "slug": "introduktion-8VdRmYg8Vp",
+  "collection": "deploy-app",
+  "locale": "sv",
+  "title": "Introduktion",
+  "breadcrumb": [
+    "Platforms",
+    "Introduktion"
+  ],
+  "createdAt": "2026-06-18T20:34:50.644Z",
+  "updatedAt": "2026-06-18T20:38:50.263Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/deploy-app/introduction-d1XzfzOkpz",
+    "fi": "/fi/deploy-app/johdanto-pVdcEzIB4j",
+    "sv": "/sv/deploy-app/introduktion-8VdRmYg8Vp"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<hr>"
+    },
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Vad är Deploy App",
+          "layout": "image-left",
+          "html": "<p>Deploy App ger dig enkel åtkomst till din enhets C2-server.</p>\n<ul>\n<li>Du kan enkelt lägga till, hantera och ta bort användare från din server, på 0-2 minuter per uppgift.</li>\n<li>Att starta en Deploy App-instans i molnet eller lokalt är en automatiserad uppgift som tar tio minuter. Ingen manuell konfiguration.\nDeploy App innehåller appar som är integrerade i den. Många appar kan utvecklas för att fungera med Deploy App.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/25c1580a29c70523.webp",
+              "width": 2560,
+              "height": 5712
+            }
+          ]
+        },
+        {
+          "title": "Hantera användare",
+          "layout": "image-left",
+          "html": "<p>Lägg till användare enkelt med QR-koder eller länkar. Hantera deras roll och ta bort dem vid behov.</p>\n<ul>\n<li>När de bjuds in får inkommande användare ett klientcertifikat på sin enhet.</li>\n<li>Klientcertifikatet blir deras identitet och åtkomst till din enhets Deploy App-server och tjänster.\nKlientcertifikat är ett beprövat och pålitligt högsäkerhetsverktyg. Sannolikt innehåller till exempel ditt vanliga företags-ID ett sådant.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/408823f815c4d338.webp",
+              "width": 2560,
+              "height": 5712
+            }
+          ]
+        },
+        {
+          "title": "Utvecklad för att utökas",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Apputvecklare kan göra så att deras app fungerar med Deploy App.</li>\n<li>Detta syftar till att förenkla hur du får ut din app till soldater, både ur soldaternas och ditt perspektiv.\nBekanta dig med hur du använder Deploy App i följande guide.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/51dfa90a783a5717.webp",
+              "width": 512,
+              "height": 512
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

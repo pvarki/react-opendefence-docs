@@ -8,13 +8,17 @@
   "breadcrumb": [
     "Platforms",
     "WinTAK",
-    "USING WINTAK FEATURES",
-    "Advanced Features",
+    "ADVANCED CORE FEATURES",
     "Manage Feeds"
   ],
   "createdAt": "2026-02-22T09:46:06.621Z",
-  "updatedAt": "2026-06-15T13:53:06.856Z",
+  "updatedAt": "2026-06-18T20:23:48.943Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/manage-feeds-62IWBYODOd",
+    "fi": "/fi/guides/tak-guide/hallinnoi-syotteita-dbaSnOdqqc",
+    "sv": "/sv/guides/tak-guide/hantera-floden-Qyvi9XK881"
+  },
   "blocks": [
     {
       "type": "slideset",

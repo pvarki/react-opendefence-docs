@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "id": "59abca42-0147-4adf-860f-676388053765",
+  "slug": "recon-syotteen-hallinta-BcuC80sRrk",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "RECON-syötteen hallinta",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "KÄYTTÖ ROOLEITTAIN",
+    "Komentopaikka",
+    "RECON-syötteen hallinta"
+  ],
+  "createdAt": "2026-06-18T19:28:16.314Z",
+  "updatedAt": "2026-06-18T20:18:23.756Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Pictures:",
+      "id": "pictures"
+    }
+  ],
+  "translations": {
+    "en": "/en/guides/tak-guide/recon-feed-management-y1O0x1g2sf",
+    "fi": "/fi/guides/tak-guide/recon-syotteen-hallinta-BcuC80sRrk",
+    "sv": "/sv/guides/tak-guide/hantering-av-recon-flodet-7quTutquFB"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Mikä on RECON-syöte",
+          "layout": "text",
+          "html": "<ul>\n<li>RECON-syöte on Data Sync -syöte, joka luodaan automaattisesti Deploy Appille</li>\n<li>Sitä käytetään tarkistettuun ja varmennettuun tiedusteluun ja havaintoihin</li>\n<li>Käytännössä syöte on tarkoitettu näyttämään varmennetut neutraalit tai viholliseen liittyvät havainnot.</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "RECON-syötteen perusteet",
+          "layout": "text",
+          "html": "<ul>\n<li>RECON-syöte on tarkoitettu johtopaikan (Command Post) hallinnoitavaksi.</li>\n<li>Taistelijoilla on siihen vain lukuoikeus.</li>\n<li>Jokainen Deploy App TAK -palvelimen ATAK-käyttäjä liitetään automaattisesti RECON-syötteen tilaajaksi.\nValmiina oleva ja tilattu RECON-syöte näkyy tässä.</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "RECON-syötteen tietojen päivittäminen 1",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>TÄRKEÄ EDELLYTYS, jotta mallimme toimii: johtopaikkana <strong>aseta ATAK-roolisi HQ-rooliksi.</strong></li>\n<li>Taistelijat lähettävät sinulle havaintoja <strong>lähettämällä HQ-rooliin asetetuille käyttäjille</strong>, tai julkisesti muokattavan Observations-syötteen kautta, jos olet luonut sellaisen ja ohjeistanut sen käyttöön.\nBlue43 lähettää tässä uuden merkkinsä (Marker) sinulle HQ-rooliin.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/13ed3f60a7fb002f.webp",
+              "width": 1080,
+              "height": 2340
+            }
+          ]
+        },
+        {
+          "title": "RECON-syötteen tietojen päivittäminen 2",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Johtopaikka tarkistaa vastaanotetun tiedon, varmentaa sen ja tarvittaessa välittää oleelliset tiedot RECON-syötteeseen.</li>\n<li>Johtopaikka myös seuraa syötteen tietoja ja poistaa syötteestä vanhat, epäoleelliset tiedot.\niTAK HQ -käyttäjä johtopaikkana näkyy tässä lisäämässä Blue43:n merkkiä RECON-syötteeseen.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/224048abc6268778.webp",
+              "width": 1290,
+              "height": 2796
+            }
+          ]
+        },
+        {
+          "title": "RECON-syötteen tietojen päivittäminen 3",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Lisätyt tiedot tulevat näkyviin kaikille käyttäjille</li>\n<li>Poistetut tiedot katoavat käyttäjiltä.\nJuuri lisätty merkkimme Blue43:lta näytettynä RECON-syötteestä.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/0348a5da252e244d.webp",
+              "width": 1080,
+              "height": 2340
+            }
+          ]
+        },
+        {
+          "title": "RECON-syötteen kierrättäminen",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Aktiivisen käytön aikana RECON-syötteeseen kertyy paljon tietoa, ja se on kierrätettävä vanhojen tietojen poistamiseksi.</li>\n<li>Kierrättämisen tekee johtopaikka, ja taistelijat kutsutaan uusiin syötteisiin säännöllisin väliajoin.\nTässä näkyy päivitetty, käytettävissä oleva RECON-syöte.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/22ab27310be30c0d.webp",
+              "width": 1080,
+              "height": 2340
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"pictures\"><a href=\"#pictures\">Pictures:</a></h2>\n<ul>\n<li>pic1</li>\n</ul>"
+    }
+  ]
+}

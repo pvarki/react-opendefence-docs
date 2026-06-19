@@ -13,8 +13,13 @@
     "Use 3D Terrain View"
   ],
   "createdAt": "2026-06-15T19:42:15.060Z",
-  "updatedAt": "2026-06-15T20:53:52.840Z",
+  "updatedAt": "2026-06-18T20:20:47.261Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/use-3d-terrain-view-nTeTbi2I5K",
+    "fi": "/fi/guides/tak-guide/kayta-3d-maastonakymaa-MvrevSdk5j",
+    "sv": "/sv/guides/tak-guide/anvand-3d-terrangvyn-Z4Tf8cVmbg"
+  },
   "blocks": [
     {
       "type": "html",

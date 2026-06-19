@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 1,
+  "id": "2b642b8a-1d19-4518-bf7f-1a9d483f77bb",
+  "slug": "titta-pa-och-styr-dronarens-kamera-cazTd6XReH",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Titta på och styr dronarens kamera",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "TILLÄGG SOM STÖDS",
+    "UAS-verktyg",
+    "Titta på och styr dronarens kamera"
+  ],
+  "createdAt": "2026-06-18T19:30:26.520Z",
+  "updatedAt": "2026-06-18T20:21:43.932Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/watch-control-drone-camera-45LPQNKdqn",
+    "fi": "/fi/guides/tak-guide/katso-ja-ohjaa-dronen-kameraa-rh95KbaTpe",
+    "sv": "/sv/guides/tak-guide/titta-pa-och-styr-dronarens-kamera-cazTd6XReH"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Få syn på dronarens livevideo, rikta kameran och ta ut en ruta på det du ser.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Öppna livevideoflödet",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på <strong>Play</strong> på UAS Tool-startskärmen för att öppna Full Motion Video (FMV)-flödet och kartan. Dronarens markör, dess <strong>SPoI</strong> (Sensor Point of Interest) och kamerans synfält visas på kartan.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/7d9a7786064a3b4e.webp",
+              "width": 2101,
+              "height": 1010
+            }
+          ]
+        },
+        {
+          "title": "Panorera och luta kameran",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på <strong>Gimbal Control</strong> för att öppna gimbalverktygsfältet. Dra i <strong>Pan/Tilt</strong>-reglagen för att rikta kameran och använd <strong>Zoom In</strong> / <strong>Zoom Out</strong> för att gå in eller ut.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/f018ccb2fb7a19df.webp",
+              "width": 2111,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "Lås gimbalen",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på <strong>Gimbal Lock</strong> (objekt 7 i nedre verktygsfältet) för att låsa kamerans gir så att den förblir riktad och inte roterar med dronaren.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/b3d16402361aa6d0.webp",
+              "width": 800,
+              "height": 86
+            }
+          ]
+        },
+        {
+          "title": "Växla mellan värme och synligt ljus",
+          "layout": "image-bottom",
+          "html": "<p>Öppna <strong>Camera</strong>-alternativen, tryck på <strong>Select Video Stream</strong> och välj <strong>Frontal</strong> (synligt ljus) eller <strong>Thermal</strong>. Använd värme i svagt ljus eller för att urskilja värme.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/c97489654937a42a.webp",
+              "width": 800,
+              "height": 588
+            }
+          ]
+        },
+        {
+          "title": "Läs av hårkorset (SPoI)",
+          "layout": "image-bottom",
+          "html": "<p>Hårkorset i mitten markerar var kameran tittar. Det visar <strong>Grid Coordinates</strong>, <strong>Range</strong> (snedavstånd till punkten) och <strong>Bearing</strong> (vinkel från dronaren). Använd detta för att rapportera en ruta.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/3ed22463bd8c92b6.webp",
+              "width": 708,
+              "height": 561
+            }
+          ]
+        },
+        {
+          "title": "Centrera kartan på dronaren",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på <strong>Pan-To</strong> för att hoppa kartvyn till dronarens position. Långtryck på <strong>Pan-To</strong> för att låsa kartan till dronarens markör så att den följer med.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/faaabd21a33493a7.webp",
+              "width": 369,
+              "height": 374
+            }
+          ]
+        },
+        {
+          "title": "Växla mellan hel- eller halvskärm",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på skärmstorleksknappen för att växla mellan <strong>Half screen</strong> (stor karta, liten video) och <strong>Full screen</strong> (stor video med en minikarta). Tryck igen för att växla tillbaka.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/27a1155b72bffd95.webp",
+              "width": 2111,
+              "height": 1010
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

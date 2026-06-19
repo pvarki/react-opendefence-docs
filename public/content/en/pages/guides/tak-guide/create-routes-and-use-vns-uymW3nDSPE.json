@@ -12,8 +12,13 @@
     "Create Routes and use VNS"
   ],
   "createdAt": "2026-01-25T09:59:16.310Z",
-  "updatedAt": "2026-06-15T19:42:33.761Z",
+  "updatedAt": "2026-06-18T20:14:44.548Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/create-routes-and-use-vns-uymW3nDSPE",
+    "fi": "/fi/guides/tak-guide/luo-reitteja-ja-kayta-vnsaa-JMeuuWETPf",
+    "sv": "/sv/guides/tak-guide/skapa-rutter-och-anvand-vns-KURI7xcoXM"
+  },
   "blocks": [
     {
       "type": "html",
@@ -38,7 +43,7 @@
         {
           "title": "Enter addresses and pick a routing method",
           "layout": "image-bottom",
-          "html": "<p>Fill in the start, one or more <strong>waypoint</strong> and <strong>destination</strong> fields. Pick <strong>Google Routing</strong>, <strong>Offline Routing</strong> or <strong>Private Routing Server</strong>, tick any <strong>Avoid Ferries / Highways / Tolls</strong> boxes, then select <strong>Create</strong>.</p>",
+          "html": "<p>Fill in the start, one or more <strong>waypoint</strong> and <strong>destination</strong> fields.</p>\n<ul>\n<li>Pick <strong>Google Routing</strong>, <strong>Offline Routing</strong> or <strong>Private Routing Server</strong>, tick any <strong>Avoid Ferries / Highways / Tolls</strong> boxes, then select <strong>Create</strong>.</li>\n</ul>",
           "images": [
             {
               "src": "/content/images/en/attachments/98914f15e152b704.webp",

@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "7d6a35cd-0562-449e-8234-e6c6babfca00",
+  "slug": "the-federation-policy-as-code-iza8fDoAU8",
+  "collection": "working-with-tak",
+  "locale": "en",
+  "title": "The federation policy as code",
+  "breadcrumb": [
+    "Wire up Deploy App TAK Servers via a Federation Hub (IaC)",
+    "The federation policy as code"
+  ],
+  "createdAt": "2026-06-17T20:25:58.358Z",
+  "updatedAt": "2026-06-19T14:18:52.992Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "What the policy must contain",
+      "id": "what-the-policy-must-contain"
+    },
+    {
+      "depth": 2,
+      "text": "Applying it without the UI",
+      "id": "applying-it-without-the-ui"
+    },
+    {
+      "depth": 2,
+      "text": "Keep it idempotent",
+      "id": "keep-it-idempotent"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>The policy is what makes the hub broker data: it lists the federates and the edges between them, with group filtering. The hub denies any server not in the active policy, so the policy must exist before the servers try to connect. We generate it rather than draw it.</p>\n<h2 id=\"what-the-policy-must-contain\"><a href=\"#what-the-policy-must-contain\">What the policy must contain</a></h2>\n<p>For a set of deployments sharing one common operating picture:</p>\n<ul>\n<li>A CA Group node per deployment, each identified by that deployment's CA (the issuer/subject of its <code>root_ca.pem</code>, already in the hub truststore).</li>\n<li>Edges between the pairs that should share, in both directions, each with group filtering set to Allowed Groups <code>SHARED_COP</code>. Only the shared picture crosses; each deployment's <code>*_LOCAL</code> traffic stays home.</li>\n<li>Outgoing nodes, only if the hub initiates: one per server, connecting to <code>…:9001</code>, so no per-server config is needed (see <a href=\"/en/working-with-tak/the-tak-server-side-bCErH3lFoW\">the TAK Server side</a>).</li>\n<li>Token-auth flags, only if a link cannot do mTLS: Allow Token Auth on a CA Group, or a Token Group node.</li>\n</ul>\n<p>Filtering beyond Allow All requires the source to run group mapping, which Deploy App's <code>x509groups=\"true\"</code> LDAP auth already does, so Allowed Groups works without extra setup.</p>\n<p>Your IaC knows all of this (the CA subjects and the shared group name are inputs), so the policy is a function of the topology. Render it per environment.</p>\n<h2 id=\"applying-it-without-the-ui\"><a href=\"#applying-it-without-the-ui\">Applying it without the UI</a></h2>\n<p>The policy is normally built in the UI and published with the cloud icon. To do it headlessly, pick whichever your FedHub build supports:</p>\n<ol>\n<li>Template the persisted policy artifact. The broker loads a policy referenced from <code>federation-hub-broker.yml</code>; the UI's upload writes it. Generate that artifact from your topology and place it before the broker starts. This is the cleanest option once you have confirmed the file's path and schema for your version.</li>\n<li>One-shot apply job. Run a bootstrap container after the hub starts that posts your generated policy to the policy manager (the same operation the UI's upload performs), then exits. It is idempotent, so it is safe to re-run on every pipeline run.</li>\n</ol>\n<blockquote>\n<p>This is the one thing to confirm for your version. Everything else in this guide comes from Deploy App's templates and the public config guides. The exact policy artifact (file path and schema) or apply-endpoint is the item to verify against your FedHub build: look in <code>federation-hub-broker.yml</code> for the policy reference, and check the policy-manager service for an apply route. Until that is confirmed, this part of the guide is a proposal, not a tested procedure.</p>\n</blockquote>\n<h2 id=\"keep-it-idempotent\"><a href=\"#keep-it-idempotent\">Keep it idempotent</a></h2>\n<p>Treat the policy as derived state: re-render it from the current topology and re-apply on every run. Adding another deployment then means its CA is fanned out and a new CA Group plus edges appear, with no hand-editing of a graph.</p>\n<p>→ Next: <a href=\"/en/working-with-tak/bring-up-sequence-verification-ydtDk00K2h\">Bring-up sequence &#x26; verification</a>.</p>"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "id": "87ff9599-50e7-420c-bd0b-639c7f7b5708",
+  "slug": "the-iac-trust-model-oJJLybgejE",
+  "collection": "working-with-tak",
+  "locale": "en",
+  "title": "The IaC trust model",
+  "breadcrumb": [
+    "Wire up Deploy App TAK Servers via a Federation Hub (IaC)",
+    "The IaC trust model"
+  ],
+  "createdAt": "2026-06-17T20:25:56.917Z",
+  "updatedAt": "2026-06-19T14:18:51.383Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "The certificates involved",
+      "id": "the-certificates-involved"
+    },
+    {
+      "depth": 2,
+      "text": "Give the hub an identity from Deploy App",
+      "id": "give-the-hub-an-identity-from-deploy-app"
+    },
+    {
+      "depth": 2,
+      "text": "The trust matrix",
+      "id": "the-trust-matrix"
+    },
+    {
+      "depth": 2,
+      "text": "Isolate federation trust",
+      "id": "isolate-federation-trust"
+    },
+    {
+      "depth": 2,
+      "text": "Use a unique CA per deployment",
+      "id": "use-a-unique-ca-per-deployment"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Federation uses mutual TLS, so a link works only if both ends trust each other's CA. With a handful of Deploy App deployments and one hub, that trust matrix is small and fully known, so you can set it up in code. You own every CA and you inject secrets at deploy time, so no manual uploads are needed.</p>\n<h2 id=\"the-certificates-involved\"><a href=\"#the-certificates-involved\">The certificates involved</a></h2>\n<p>Each Deploy App deployment has its own PKI (RASENMAEHER plus CFSSL on the Legacy/Docker stack, or opendefence-pki on Kubernetes). At first run the TAK Server:</p>\n<ul>\n<li>gets its server certificate from RASENMAEHER (<code>…/product/sign_csr/mtls</code>), and</li>\n<li>builds its truststore from the CA PEMs in <code>/ca_public/</code> (importing <code>root_ca.pem</code>, <code>intermediate_ca.pem</code>, and <code>miniwerk_ca.pem</code> if present, each by alias), then copies it to <code>fed-truststore.jks</code>, the federation truststore.</li>\n</ul>\n<p>So a deployment's federation CA is its <code>root_ca.pem</code> (plus intermediate). That PEM is what another party must trust to accept this deployment.</p>\n<h2 id=\"give-the-hub-an-identity-from-deploy-app\"><a href=\"#give-the-hub-an-identity-from-deploy-app\">Give the hub an identity from Deploy App</a></h2>\n<p>Treat the Federation Hub as a Deploy App product: enroll it and sign its server/client certs through RASENMAEHER (<code>sign_csr</code>). Its cert then chains to a CA you already manage, and you avoid running a separate, untracked CA. You can give the hub its own CA instead; if you do, that CA's PEM is the one you distribute below.</p>\n<h2 id=\"the-trust-matrix\"><a href=\"#the-trust-matrix\">The trust matrix</a></h2>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span>   each server CA  ─────────▶  hub fed-truststore     (so the hub accepts the servers)</span></span>\n<span class=\"line\"><span>   hub CA          ─────────▶  each server /ca_public  (so the servers accept the hub)</span></span></code></pre>",
+      "lang": "plaintext"
+    },
+    {
+      "type": "html",
+      "html": "<p>Two one-way injections, applied to every node by the pipeline:</p>\n<ol>\n<li>Server CA to the hub. For each deployment, take its <code>root_ca.pem</code>, put it in the hub's federation truststore, and register it as a CA Group in the policy (see <a href=\"/en/working-with-tak/the-federation-policy-as-code-iza8fDoAU8\">Policy as code</a>).</li>\n<li>Hub CA to the servers. Take the hub's CA PEM and drop it into each deployment's <code>/ca_public/</code> with a unique filename (for example <code>fedhub_ca.pem</code>), so first run imports it into <code>fed-truststore.jks</code>.</li>\n</ol>\n<p>The set of CAs is known to your IaC (it knows which deployments exist), so this is just collecting the CA PEMs and fanning them out to the right truststores.</p>\n<h2 id=\"isolate-federation-trust\"><a href=\"#isolate-federation-trust\">Isolate federation trust</a></h2>\n<p>By default Deploy App copies the same truststore to both <code>fed-truststore.jks</code> and the client <code>truststore-root.jks</code>. If you inject a peer/hub CA into <code>/ca_public/</code>, it lands in both, which means a client holding a peer-CA cert could also connect directly on 8089. For cleaner isolation, build a dedicated <code>fed-truststore.jks</code> that contains only the federation CAs (your own plus the hub), separate from the client truststore. The TAK Server configuration guide recommends this separation.</p>\n<h2 id=\"use-a-unique-ca-per-deployment\"><a href=\"#use-a-unique-ca-per-deployment\">Use a unique CA per deployment</a></h2>\n<p>Keep one CA per deployment, which you already do (each has its own RASENMAEHER/CFSSL). If two servers shared a CA, the hub could treat them as Interconnected and share everything between them automatically. Distinct CAs are what let the policy control each link on its own.</p>\n<p>→ Next: <a href=\"/en/working-with-tak/the-tak-server-side-bCErH3lFoW\">The TAK Server side</a>.</p>"
+    }
+  ]
+}

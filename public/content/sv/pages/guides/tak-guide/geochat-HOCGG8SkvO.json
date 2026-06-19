@@ -1,0 +1,192 @@
+{
+  "schemaVersion": 1,
+  "id": "247093ea-6d9b-42f7-bdd6-628628ba8410",
+  "slug": "geochat-HOCGG8SkvO",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "GeoChat",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "Grundläggande funktioner",
+    "GeoChat"
+  ],
+  "createdAt": "2026-06-18T19:26:14.296Z",
+  "updatedAt": "2026-06-18T20:13:54.546Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/geochat-SMWfbwNItT",
+    "fi": "/fi/guides/tak-guide/geochat-5kOdqvslhn",
+    "sv": "/sv/guides/tak-guide/geochat-HOCGG8SkvO"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "1. Vad är GeoChat?",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>TAK:s inbyggda GeoChat erbjuder grundläggande textkommunikation.</li>\n<li>Tryck på <strong>Chat icon</strong> för att börja.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/fdd5d3739fd86ef9.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "2. Visa meddelanden",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Startskärmen visar tidigare avsändare.</li>\n<li>Välj en för att börja.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/455d339c722c509a.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "3. Skicka meddelanden till grupper",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Skicka och ta emot text enkelt.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/ab2f24ffaf33f0da.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "4. Binda snabbfrasknappar",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>För att snabba upp kommunikationen kan du binda <strong>Quick Phrase Buttons.</strong></li>\n<li>Tryck och håll på en för att börja.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/7582790dadbb4137.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "5. Så här gör du: snabbfras",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>'Name' är hur den visas på knappen. 'Value' är vad knappen skriver ut.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/6205ae560ab9b2c2.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "6. Våra rekommenderade fraser",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Vi rekommenderar följande: binda \"This is DITT ANROPSNAMN, \", \"Roger\", \"Radio check\", RC OK som \"Loud and clear.\"</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/87a80d5f3139ff7e.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "7. Bläddra bland alla tillgängliga mottagare",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Tryck på <strong>Plus symbol</strong> i GeoChats huvudmeny för att se alla tillgängliga mottagare.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/8373b375c881afbe.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "8. Skicka till roller",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Genom att trycka på <strong>HQ</strong> kan du skicka till alla användare med HQ-roll på din server.</li>\n<li>Detta är användbart i TAK:s standardanvändningsmodell, där enheter kommunicerar med CP-användare som har HQ-rollen.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/a4862fb7b3800583.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "9. Skicka till lag",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li><strong>Sending to Team</strong> låter dig skicka till en grupp med alla t.ex. BLUE-lagets användare.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/d0068e29c594c820.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "10. Skicka direktmeddelanden",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Behöver du chatta med bara någon enskild? Välj den personen i menyn för det.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/f7781f14134bfa0f.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "11. Skicka till flöde",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li><strong>Send to Feed</strong> t.ex. när du tänker skicka en bild till ett flöde och vill förklara varför.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/6d8268cd06b95bd0.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "GeoChats begränsningar",
+          "layout": "text",
+          "html": "<p>Det finns tre begränsningar med GeoChat:</p>\n<ul>\n<li>\n<ol>\n<li>Försök inte skicka bilder / bilagor, detta fungerar inte i praktiken. Skicka dem till ett flöde i stället.</li>\n</ol>\n</li>\n<li>\n<ol start=\"2\">\n<li>Mottagaren behöver ha sin TAK-app öppen eller i bakgrunden för att kunna ta emot dig.</li>\n</ol>\n</li>\n<li>\n<ol start=\"3\">\n<li>iTAK är opålitlig med GeoChats gruppchatt, särskilt med WinTAK &#x3C;-> iTAK. Av dessa skäl rekommenderar vi att använda Matrix (Element) för enhetskommunikation med Deploy App.</li>\n</ol>\n</li>\n</ul>\n<p>När du har testat GeoChat framgångsrikt, fortsätt till <a href=\"/doc/685f6f0f-e7ca-4ba3-807f-568582663e95\">ATAK</a></p>",
+          "images": []
+        },
+        {
+          "title": "Kontrollera lässtatus",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Varje direktmeddelande visar en <strong>read</strong>-bock: en ifylld vit bock betyder att mottagaren har öppnat det, en ofylld betyder levererat men ännu inte läst.</li>\n<li><strong>Messages</strong>-listan flaggar tillstånd som \"sent to offline user\" så att du vet om ditt meddelande nådde fram.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/89257cabbbe2780f.webp",
+              "width": 192,
+              "height": 163
+            }
+          ]
+        },
+        {
+          "title": "Skapa eller lägg till i en grupp",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Välj <strong>Group</strong>-ikonen i <strong>Contacts</strong> för att skapa en ny chattgrupp av anslutna och offline-användare; ange ett <strong>group name</strong> och tryck <strong>Select</strong>.</li>\n<li>Välj <strong>Select an Existing Group</strong> för att lägga till fler användare i en grupp du redan har, även medan de är offline.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/267e23a144e8f3cf.webp",
+              "width": 198,
+              "height": 197
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

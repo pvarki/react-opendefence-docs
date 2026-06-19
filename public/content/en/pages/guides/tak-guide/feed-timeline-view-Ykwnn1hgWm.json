@@ -12,8 +12,13 @@
     "Feed Timeline View"
   ],
   "createdAt": "2026-06-16T18:02:43.877Z",
-  "updatedAt": "2026-06-16T18:02:43.877Z",
+  "updatedAt": "2026-06-18T20:14:03.694Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/feed-timeline-view-Ykwnn1hgWm",
+    "fi": "/fi/guides/tak-guide/aikajananakyma-DKl8eVn3bU",
+    "sv": "/sv/guides/tak-guide/tidslinjevy-mXMCZ7CwsA"
+  },
   "blocks": [
     {
       "type": "html",
@@ -38,7 +43,7 @@
         {
           "title": "Read and act on snapshots",
           "layout": "image-bottom",
-          "html": "<p>Each snapshot shows the <strong>callsign</strong>, time, location and a map capture; tap it to show the item on the map. Tap the <strong>⋮</strong> on a snapshot for <strong>View Details → History</strong> (revert to an earlier version), <strong>Save screenshot</strong>, <strong>Contact Author</strong> or <strong>Undo</strong>.</p>",
+          "html": "<p>Each snapshot shows the <strong>callsign</strong>, time, location and a map capture; tap it to show the item on the map.</p>\n<ul>\n<li>Tap the <strong>⋮</strong> on a snapshot for <strong>View Details → History</strong> (revert to an earlier version), <strong>Save screenshot</strong>, <strong>Contact Author</strong> or <strong>Undo</strong>.</li>\n</ul>",
           "images": [
             {
               "src": "/content/images/en/attachments/8d81d2ed4a45a4eb.webp",

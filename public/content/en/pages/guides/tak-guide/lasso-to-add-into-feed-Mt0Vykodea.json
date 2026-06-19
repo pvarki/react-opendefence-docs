@@ -8,13 +8,17 @@
   "breadcrumb": [
     "Platforms",
     "ATAK",
-    "USING ATAK FEATURES",
-    "Advanced Features",
+    "Advanced Core Features",
     "Lasso to add into Feed"
   ],
   "createdAt": "2026-01-24T23:29:40.977Z",
-  "updatedAt": "2026-06-14T12:14:27.795Z",
+  "updatedAt": "2026-06-18T20:14:41.188Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/lasso-to-add-into-feed-Mt0Vykodea",
+    "fi": "/fi/guides/tak-guide/lassolla-lisaaminen-syotteeseen-a6typO1eEd",
+    "sv": "/sv/guides/tak-guide/lagg-till-i-flode-med-lasso-wA9WruroCt"
+  },
   "blocks": [
     {
       "type": "slideset",

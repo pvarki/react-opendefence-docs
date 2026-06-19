@@ -12,8 +12,13 @@
     "Managing Users"
   ],
   "createdAt": "2026-06-13T22:59:19.817Z",
-  "updatedAt": "2026-06-13T22:59:19.817Z",
+  "updatedAt": "2026-06-18T20:39:03.381Z",
   "headings": [],
+  "translations": {
+    "en": "/en/deploy-app/managing-users-nWgFG3XzMv",
+    "fi": "/fi/deploy-app/kayttajien-hallinta-ThmzgQfcOQ",
+    "sv": "/sv/deploy-app/hantera-anvandare-l24qOTAPIQ"
+  },
   "blocks": [
     {
       "type": "slideset",

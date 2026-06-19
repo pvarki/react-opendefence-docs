@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "id": "acbc8729-50ef-46a7-801c-7431a0353145",
+  "slug": "opendefence-standardmodellen-Rlu6i4aeXg",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "OpenDefence-standardmodellen",
+  "breadcrumb": [
+    "Platforms",
+    "WinTAK",
+    "ANVÄNDNING ENLIGT ROLL",
+    "OpenDefence-standardmodellen"
+  ],
+  "createdAt": "2026-06-18T19:33:30.980Z",
+  "updatedAt": "2026-06-18T20:24:28.176Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/overview-G0keHC8NbD",
+    "fi": "/fi/guides/tak-guide/opendefence-vakiomalli-x5SMy8a7WS",
+    "sv": "/sv/guides/tak-guide/opendefence-standardmodellen-Rlu6i4aeXg"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "OpenDefence-standardmodellen",
+          "layout": "text",
+          "html": "<p>Det finns många sätt att använda TAK; vi erbjuder en genomtänkt användningsmodell som ger värde utan komplexitet. TAK samlar in information från styrkan och fördelar den tillbaka som gemensam lägesbild. Två roller bär den: <strong>kämpen</strong> och <strong>kommandoplatsen (staben)</strong>.</p>",
+          "images": []
+        },
+        {
+          "title": "Att använda TAK som kämpe",
+          "layout": "text",
+          "html": "<ul>\n<li>Håll din egen position aktiv på kartan så att andra ser dig (blue force tracking).</li>\n<li>När du gör en observation, skapa en markör och <strong>skicka den till stabsrollen</strong>.</li>\n<li>Följ <strong>RECON Feed</strong> — din kommandoplats skapar och underhåller den för din enhet.</li>\n<li>Rapportera och kommunicera via de föreskrivna meddelandeverktygen på deras kanaler.</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "Att vara användare på en kommandoplats",
+          "layout": "text",
+          "html": "<ul>\n<li>Skapa och underhåll <strong>RECON Feed</strong> för hela enheten: ta emot observationer, bearbeta dem och skicka de bearbetade markörerna tillbaka till flödet.</li>\n<li>Bygg lägesbild — förstå vad som händer nu, om 6 timmar och om 24 timmar.</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "Kommandoplats — kontinuerliga uppgifter",
+          "layout": "text",
+          "html": "<p>Kommandoplatsen gör kontinuerligt bland annat följande:</p>\n<ul>\n<li><strong>Känner</strong> till styrkans uppgift och genomförandefas med grupp- och patrullprecision.</li>\n<li><strong>Tar emot</strong> omedelbart rapporterbara ärenden och regelbundna lägesrapporter från styrkan.</li>\n<li><strong>För</strong> en meddelandejournal och en numrerad underrättelsedagbok.</li>\n<li><strong>Underhåller</strong> informationssystemen, av vilka TAK är ett.</li>\n</ul>\n<p>TAK är bara ett verktyg — använd det för att samla in och dela information, inte för att binda din uppmärksamhet.</p>",
+          "images": []
+        }
+      ]
+    }
+  ]
+}

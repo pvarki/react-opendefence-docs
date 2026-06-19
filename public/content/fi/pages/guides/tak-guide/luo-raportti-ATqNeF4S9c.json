@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 1,
+  "id": "735de2ec-493c-44b8-a3d4-b548082b1f12",
+  "slug": "luo-raportti-ATqNeF4S9c",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Luo raportti",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "TUETUT LISÄOSAT",
+    "Raportit",
+    "Luo raportti"
+  ],
+  "createdAt": "2026-06-18T19:31:27.965Z",
+  "updatedAt": "2026-06-18T20:22:34.010Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/create-a-report-FB38XVNhaL",
+    "fi": "/fi/guides/tak-guide/luo-raportti-ATqNeF4S9c",
+    "sv": "/sv/guides/tak-guide/skapa-en-rapport-YpiHRTtIiL"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Luo ja lähetä jäsennelty raportti ATAKista, jotta esikuntasi saa tilannekuvan tutussa muodossa, joko paikallisesti tallennettuna tai suoraan TAK Serverille lähetettynä.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Avaa Reports-työkalu",
+          "layout": "image-bottom",
+          "html": "<p>Napauta työkalupalkista <strong>Reports</strong>.</p>\n<ul>\n<li>Reports-paneeli avautuu, ja siinä ovat <strong>Search</strong>, <strong>Multi-select</strong>, <strong>Sort</strong>, <strong>Create A Report</strong>, <strong>Editor</strong>, <strong>Visibility</strong> ja <strong>Delete All</strong>.</li>\n<li>Raportin luomiseen ei tarvita TAK Server -yhteyttä.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/9d58fe854259f743.webp",
+              "width": 422,
+              "height": 51
+            }
+          ]
+        },
+        {
+          "title": "Aloita uusi raportti",
+          "layout": "image-bottom",
+          "html": "<p>Napauta <strong>Create A Report</strong>. Näkyviin tulee <strong>Report Category</strong> -kehote. Valitse sopiva raporttityyppi, esimerkiksi <strong>Counter Intel</strong>, <strong>DHS</strong>, <strong>Surveillance</strong> tai <strong>Custom</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/f7cd973673176e13.webp",
+              "width": 540,
+              "height": 271
+            }
+          ]
+        },
+        {
+          "title": "Täytä kentät",
+          "layout": "image-bottom",
+          "html": "<p>Käy lomake läpi ja täytä jokainen kenttä. Pakolliset kentät näkyvät <strong>punaisella tekstillä</strong>, kunnes ne on täytetty. Lisää <strong>Title</strong>, tarkista <strong>DateTime</strong> ja käytä <strong>Tags</strong>-kenttää, jotta raportti on helppo löytää myöhemmin.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/e3df4f92a1bd6213.webp",
+              "width": 424,
+              "height": 375
+            }
+          ]
+        },
+        {
+          "title": "Aseta sijainti",
+          "layout": "image-bottom",
+          "html": "<p>Aseta tai muokkaa raportin sijaintia <strong>Location</strong>-rivin <strong>kynäkuvakkeella</strong> ja lisää tarvittaessa <strong>Location Description</strong>. Ruutukoordinaatti täytetään automaattisesti.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/e3df4f92a1bd6213.webp",
+              "width": 424,
+              "height": 375
+            }
+          ]
+        },
+        {
+          "title": "Lisää liitteitä",
+          "layout": "image-bottom",
+          "html": "<p>Napauta <strong>+ Add New Attachment</strong> liittääksesi laitteelta valokuvan, videon tai tiedoston. Poista kohde napauttamalla sen vieressä olevaa <strong>Delete</strong>-kuvaketta.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/40a838387550224b.webp",
+              "width": 526,
+              "height": 184
+            }
+          ]
+        },
+        {
+          "title": "Tallenna, lataa tai lähetä",
+          "layout": "image-bottom",
+          "html": "<p>Kun olet valmis, napauta <strong>Save &#x26; Close</strong> tallentaaksesi paikallisen kopion tai <strong>Upload</strong> julkaistaksesi raportin <strong>TAK Server</strong> -palvelimelle. Send-valintaikkunan kautta raportin voi myös lähettää <strong>Contact</strong>-kohteelle, <strong>Cloud/FTP</strong>-palveluun tai toiseen sovellukseen, tai voit valita <strong>Export</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/b8b6eb329179698a.webp",
+              "width": 800,
+              "height": 244
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

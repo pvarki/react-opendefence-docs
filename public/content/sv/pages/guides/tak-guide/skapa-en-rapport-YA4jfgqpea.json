@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "id": "aa2ed8b0-2ee1-49a9-a8a5-045a9611769c",
+  "slug": "skapa-en-rapport-YA4jfgqpea",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Skapa en rapport",
+  "breadcrumb": [
+    "Platforms",
+    "WinTAK",
+    "Plugin-program som stöds",
+    "Rapporter",
+    "Skapa en rapport"
+  ],
+  "createdAt": "2026-06-18T19:34:35.133Z",
+  "updatedAt": "2026-06-18T20:24:57.819Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/create-a-report-mhCCLqyMaU",
+    "fi": "/fi/guides/tak-guide/luo-raportti-DDE5rNDUyr",
+    "sv": "/sv/guides/tak-guide/skapa-en-rapport-YA4jfgqpea"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Med tillägget Reports kan du skapa, placera, redigera och ladda upp fältrapporter av många slag med fördefinierade eller anpassade mallar. När en rapport har skapats markerar en ikon platsen på kartan där den togs.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Öppna Reports-verktyget",
+          "layout": "image-bottom",
+          "html": "<p>Välj <strong>Reports</strong> i verktygsfältet. Fönstret listar rapporter som laddats ned från TAK Server samt eventuella lokala rapporter på enheten. En serveranslutning behövs inte för att skapa en rapport, men krävs för att ladda ned, ladda upp eller söka efter rapporter som skrivits av andra användare.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/c44e79370c4168e5.webp",
+              "width": 203,
+              "height": 221
+            }
+          ]
+        },
+        {
+          "title": "Välj en rapportmall",
+          "layout": "image-bottom",
+          "html": "<p>Välj <strong>+</strong> för att öppna listan över rapportmallar och välj en för att börja. Varje mall har fördefinierade fält; alla fält märkta <strong>Required</strong> måste fyllas i innan rapporten kan laddas upp. Du kan stänga och spara en rapport lokalt utan att fylla i varje fält.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/cb01f77c840ef2ce.webp",
+              "width": 196,
+              "height": 180
+            }
+          ]
+        },
+        {
+          "title": "Fyll i rapporten",
+          "layout": "image-bottom",
+          "html": "<p>Fyll i rapportens fält — Title, Importance, beskrivningar och så vidare. Standardplatsen är den lokala enhetens Self-Marker. Välj <strong>Pan-To</strong> för att visa platsfältet och <strong>Edit</strong> för att ändra platsen.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/b3e875499c258fe3.webp",
+              "width": 351,
+              "height": 466
+            }
+          ]
+        },
+        {
+          "title": "Ange rapportens plats",
+          "layout": "image-bottom",
+          "html": "<p>Ange platsen med ett av följande: <strong>Use my current location</strong>, <strong>Based on map click</strong>, <strong>Enter coordinates</strong> (MGRS, Deg, DM, DMS, UTM eller Address), <strong>Use current map view</strong>, <strong>Define location boundary</strong> (rita en polygon) eller <strong>Define route</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/d87b4a4908106a5c.webp",
+              "width": 345,
+              "height": 200
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -9,6 +9,7 @@ import { Button } from "@/components/ui/button";
 import { Lightbox } from "@/components/slides/Lightbox";
 import { useImagePreloader } from "@/components/slides/useImagePreloader";
 import { useEdgePageFlow } from "@/components/slides/useEdgePageFlow";
+import { useFitText } from "@/components/slides/useFitText";
 import { useReaderData } from "@/lib/useReaderData";
 import { useReadingView } from "@/lib/platform";
 import { resolveGlobalPosition } from "@/lib/content/neighbors";
@@ -273,6 +274,21 @@ function SlideContent({
   const sideBySide =
     !!image && slide.layout !== "grid" && slide.layout !== "text";
 
+  // Image always gets the major golden-ratio column (~62 %). For image-right
+  // the children are swapped so we flip the template accordingly.
+  const columns =
+    slide.layout === "image-right"
+      ? "grid-cols-[minmax(0,1fr)_minmax(0,1.618fr)]"
+      : "grid-cols-[minmax(0,1.618fr)_minmax(0,1fr)]";
+
+  // The caption scales up to fill its column but is clamped so even the most
+  // verbose slide always fits — the box owns a fixed height, so the fit is
+  // stable. Sparse slides grow into bold headlines; fullscreen gets more room.
+  const { boxRef, contentRef, fontSize } = useFitText({
+    min: 13,
+    max: fullscreen ? 24 : 19,
+  });
+
   const imageEl = (img: {
     src: string;
     alt?: string;
@@ -282,7 +298,7 @@ function SlideContent({
     <button
       key={img.src}
       type="button"
-      className="relative block w-full"
+      className="group relative flex h-full min-h-0 w-full min-w-0 items-center justify-center overflow-hidden rounded-xl border border-border bg-muted/20 p-3 transition-colors hover:border-primary/40 md:p-4"
       onClick={() => onEnlarge(img.src, img.alt)}
     >
       {!imageLoaded(img.src) && (
@@ -296,51 +312,94 @@ function SlideContent({
         width={img.width}
         height={img.height}
         className={cn(
-          "w-full rounded-lg border border-border bg-muted/20 object-contain transition-opacity duration-300",
-          fullscreen ? "max-h-[60dvh]" : "max-h-[45dvh]",
+          "max-h-full max-w-full rounded-md object-contain transition-opacity duration-300",
           imageLoaded(img.src) ? "opacity-100" : "opacity-0",
         )}
       />
     </button>
   );
 
-  const caption = (
-    <div>
-      {slide.title && <h4 className="mb-2 font-semibold">{slide.title}</h4>}
-      <div
-        className="prose prose-invert max-w-none text-sm"
-        dangerouslySetInnerHTML={{ __html: slide.html }}
-      />
+  // Auto-fitted caption: the outer box has a definite height and scrolls only
+  // as a last resort; the inner wrapper centres the text vertically.
+  const caption = (boxClass?: string, contentClass?: string) => (
+    <div ref={boxRef} className={cn("min-h-0 overflow-y-auto", boxClass)}>
+      <div className="flex min-h-full flex-col justify-center">
+        <div
+          ref={contentRef}
+          className={contentClass}
+          style={{ fontSize: `${fontSize}px` }}
+        >
+          {slide.title && (
+            <h4 className="mb-3 text-[1.25em] leading-tight font-semibold text-balance">
+              {slide.title}
+            </h4>
+          )}
+          <div
+            style={{ fontSize: "inherit" }}
+            className="prose prose-invert max-w-none leading-snug"
+            dangerouslySetInnerHTML={{ __html: slide.html }}
+          />
+        </div>
+      </div>
     </div>
   );
 
+  // A fixed slide height keeps the deck uniform and gives the caption a stable
+  // box to fit into. Tall enough that even the most verbose caption in the
+  // corpus fits without scrolling; fullscreen gets the taller frame.
+  const frame = fullscreen ? "h-[72dvh]" : "h-[62dvh] min-h-[420px]";
+
+  // Legacy / unused layout: a grid of images above a plain caption. Kept for
+  // safety (no slide currently authors it) without the fit machinery.
+  if (slide.layout === "grid") {
+    return (
+      <div className="space-y-4 p-4 md:p-6">
+        <div className="grid grid-cols-2 gap-3">
+          {slide.images.map(imageEl)}
+        </div>
+        <div>
+          {slide.title && <h4 className="mb-2 font-semibold">{slide.title}</h4>}
+          <div
+            className="prose prose-invert max-w-none text-sm"
+            dangerouslySetInnerHTML={{ __html: slide.html }}
+          />
+        </div>
+      </div>
+    );
+  }
+
+  if (sideBySide) {
+    return (
+      <div
+        className={cn(
+          // PowerPoint-style split: image panel left, caption right, divided on
+          // the golden ratio — the major column goes to the image or the text
+          // depending on the screenshot's orientation (see `columns`).
+          "grid items-stretch gap-6 p-4 md:gap-8 md:p-6",
+          columns,
+          frame,
+        )}
+      >
+        {slide.layout === "image-right" ? (
+          <>
+            {caption("min-w-0")}
+            {imageEl(image)}
+          </>
+        ) : (
+          <>
+            {imageEl(image)}
+            {caption("min-w-0")}
+          </>
+        )}
+      </div>
+    );
+  }
+
+  // Text-only slide: a centred, measure-constrained block — reads like a
+  // section title card rather than a wall of full-width text.
   return (
-    <div
-      className={cn(
-        "p-4 md:p-6",
-        sideBySide && "grid items-start gap-6 md:grid-cols-2",
-      )}
-    >
-      {slide.layout === "image-right" ? (
-        <>
-          {caption}
-          {image && imageEl(image)}
-        </>
-      ) : slide.layout === "grid" ? (
-        <>
-          <div className="mb-4 grid grid-cols-2 gap-3">
-            {slide.images.map(imageEl)}
-          </div>
-          {caption}
-        </>
-      ) : (
-        <>
-          {image && slide.layout !== "text" && (
-            <div className={cn(!sideBySide && "mb-4")}>{imageEl(image)}</div>
-          )}
-          {caption}
-        </>
-      )}
+    <div className={cn("flex flex-col p-4 md:p-8", frame)}>
+      {caption("w-full flex-1", "mx-auto max-w-[55ch]")}
     </div>
   );
 }

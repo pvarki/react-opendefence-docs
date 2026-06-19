@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "0a519f56-17c5-4ae5-92f7-b6834a5fcde0",
+  "slug": "skicka-varningar-7EOgWJupXv",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Skicka varningar",
+  "breadcrumb": [
+    "Platforms",
+    "TAK Tracker - Apple",
+    "TAK-funktioner",
+    "Skicka varningar"
+  ],
+  "createdAt": "2026-06-18T19:45:50.401Z",
+  "updatedAt": "2026-06-18T20:27:36.240Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/send-alerts-jz5xQsdpbH",
+    "fi": "/fi/guides/tak-guide/laheta-halytyksia-oXpOorNrag",
+    "sv": "/sv/guides/tak-guide/skicka-varningar-7EOgWJupXv"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>(Den här fliken ska inte visas)</p>"
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "locale": "en",
-  "generatedAt": "2026-06-18T16:54:09.476Z",
+  "generatedAt": "2026-06-19T14:40:25.959Z",
   "collections": [
     {
       "slug": "deploy-app",
@@ -191,6 +191,13 @@
       "description": "Contribute across the pvarki repositories",
       "section": "dev",
       "order": 11
+    },
+    {
+      "slug": "working-with-tak",
+      "label": "Working with TAK",
+      "description": "Develop for TAK: plugins, TAK Server integration, and federation",
+      "section": "dev",
+      "order": 12
     }
   ],
   "pages": [
@@ -204,7 +211,7 @@
         "Introduction"
       ],
       "path": "/content/en/pages/deploy-app/introduction-d1XzfzOkpz.json",
-      "updatedAt": "2026-06-13T22:14:07.337Z",
+      "updatedAt": "2026-06-18T20:38:49.397Z",
       "order": 0
     },
     {
@@ -352,7 +359,7 @@
         "Joining a Deploy App"
       ],
       "path": "/content/en/pages/deploy-app/joining-a-deploy-app-A7hCnp5D1b.json",
-      "updatedAt": "2026-06-13T23:41:54.927Z",
+      "updatedAt": "2026-06-18T20:38:53.673Z",
       "order": 8,
       "platform": "ios",
       "clientId": "ios-8ux4fDfFeI",
@@ -371,7 +378,7 @@
         "Using applications"
       ],
       "path": "/content/en/pages/deploy-app/using-applications-FFuT98Qlcv.json",
-      "updatedAt": "2026-06-13T22:59:18.455Z",
+      "updatedAt": "2026-06-18T20:38:55.528Z",
       "order": 9,
       "platform": "ios",
       "clientId": "ios-8ux4fDfFeI",
@@ -390,7 +397,7 @@
         "Interface"
       ],
       "path": "/content/en/pages/deploy-app/interface-pyG1Ln1MfU.json",
-      "updatedAt": "2026-06-13T22:59:18.388Z",
+      "updatedAt": "2026-06-18T20:38:56.803Z",
       "order": 10,
       "platform": "ios",
       "clientId": "ios-8ux4fDfFeI",
@@ -409,7 +416,7 @@
         "First Login"
       ],
       "path": "/content/en/pages/deploy-app/first-login-oKodQDb6I1.json",
-      "updatedAt": "2026-06-13T23:41:55.293Z",
+      "updatedAt": "2026-06-18T20:39:00.101Z",
       "order": 11,
       "platform": "ios",
       "clientId": "ios-8ux4fDfFeI",
@@ -428,7 +435,7 @@
         "Adding Users"
       ],
       "path": "/content/en/pages/deploy-app/adding-users-LKw6wrsELi.json",
-      "updatedAt": "2026-06-13T22:59:19.878Z",
+      "updatedAt": "2026-06-18T20:39:01.775Z",
       "order": 12,
       "platform": "ios",
       "clientId": "ios-8ux4fDfFeI",
@@ -447,7 +454,7 @@
         "Managing Users"
       ],
       "path": "/content/en/pages/deploy-app/managing-users-nWgFG3XzMv.json",
-      "updatedAt": "2026-06-13T22:59:19.817Z",
+      "updatedAt": "2026-06-18T20:39:03.381Z",
       "order": 13,
       "platform": "ios",
       "clientId": "ios-8ux4fDfFeI",
@@ -466,7 +473,7 @@
         "Access External Services"
       ],
       "path": "/content/en/pages/deploy-app/access-external-services-wQy9bpe1aE.json",
-      "updatedAt": "2026-06-13T22:59:19.762Z",
+      "updatedAt": "2026-06-18T20:39:05.498Z",
       "order": 14,
       "platform": "ios",
       "clientId": "ios-8ux4fDfFeI",
@@ -485,7 +492,7 @@
         "Join a Deploy App"
       ],
       "path": "/content/en/pages/deploy-app/join-a-deploy-app-Ns73TcVodz.json",
-      "updatedAt": "2026-02-25T07:36:23.881Z",
+      "updatedAt": "2026-06-18T20:39:10.614Z",
       "order": 15,
       "platform": "windows",
       "clientId": "windows-7LrSmQmqQ6",
@@ -504,7 +511,7 @@
         "Admin First Login"
       ],
       "path": "/content/en/pages/deploy-app/admin-first-login-1wjrnFERNt.json",
-      "updatedAt": "2026-02-18T13:22:09.062Z",
+      "updatedAt": "2026-06-18T20:39:13.396Z",
       "order": 16,
       "platform": "windows",
       "clientId": "windows-7LrSmQmqQ6",
@@ -521,7 +528,7 @@
         "What is TAK?"
       ],
       "path": "/content/en/pages/guides/tak-guide/what-is-tak-Vy8mUPLS87.json",
-      "updatedAt": "2026-06-14T08:53:34.806Z",
+      "updatedAt": "2026-06-18T20:12:56.187Z",
       "order": 0
     },
     {
@@ -536,7 +543,7 @@
         "Start from Deploy App"
       ],
       "path": "/content/en/pages/guides/tak-guide/start-from-deploy-app-aFY9LCZCf0.json",
-      "updatedAt": "2026-06-16T10:53:12.957Z",
+      "updatedAt": "2026-06-18T20:13:01.421Z",
       "order": 1,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
@@ -555,7 +562,7 @@
         "Make sure you have the ATAK App"
       ],
       "path": "/content/en/pages/guides/tak-guide/make-sure-you-have-the-atak-app-bJC3Opax4P.json",
-      "updatedAt": "2026-06-16T10:53:18.151Z",
+      "updatedAt": "2026-06-18T20:13:36.896Z",
       "order": 2,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
@@ -574,7 +581,7 @@
         "Importing Server Connection"
       ],
       "path": "/content/en/pages/guides/tak-guide/importing-server-connection-PQ4dCV2SYR.json",
-      "updatedAt": "2026-06-16T10:52:36.409Z",
+      "updatedAt": "2026-06-18T20:13:38.334Z",
       "order": 3,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
@@ -593,7 +600,7 @@
         "Load ATAK Plugins"
       ],
       "path": "/content/en/pages/guides/tak-guide/load-atak-plugins-xBeVkYsFjI.json",
-      "updatedAt": "2026-06-16T10:52:44.205Z",
+      "updatedAt": "2026-06-18T20:13:39.695Z",
       "order": 4,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
@@ -612,7 +619,7 @@
         "Basic view, tools and toolbar"
       ],
       "path": "/content/en/pages/guides/tak-guide/basic-view-tools-and-toolbar-juXbYsGMih.json",
-      "updatedAt": "2026-06-15T19:39:09.221Z",
+      "updatedAt": "2026-06-18T20:13:42.571Z",
       "order": 5,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
@@ -631,7 +638,7 @@
         "Blue force tracking"
       ],
       "path": "/content/en/pages/guides/tak-guide/blue-force-tracking-vZTVlgAzX8.json",
-      "updatedAt": "2026-06-16T12:10:36.174Z",
+      "updatedAt": "2026-06-18T20:13:46.289Z",
       "order": 6,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
@@ -650,7 +657,7 @@
         "Feeds with Data Sync"
       ],
       "path": "/content/en/pages/guides/tak-guide/feeds-with-data-sync-thmayduqMx.json",
-      "updatedAt": "2026-06-16T21:54:01.872Z",
+      "updatedAt": "2026-06-18T20:13:47.748Z",
       "order": 7,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
@@ -669,7 +676,7 @@
         "Point Dropper - Markers"
       ],
       "path": "/content/en/pages/guides/tak-guide/point-dropper-markers-lsYmFrTvqH.json",
-      "updatedAt": "2026-06-14T10:56:07.469Z",
+      "updatedAt": "2026-06-18T20:13:49.189Z",
       "order": 8,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
@@ -688,7 +695,7 @@
         "Sending a Marker"
       ],
       "path": "/content/en/pages/guides/tak-guide/sending-a-marker-tbLPq64DLE.json",
-      "updatedAt": "2026-06-16T10:12:54.991Z",
+      "updatedAt": "2026-06-18T20:13:50.775Z",
       "order": 9,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
@@ -707,7 +714,7 @@
         "Point Dropper - Quick Pic"
       ],
       "path": "/content/en/pages/guides/tak-guide/point-dropper-quick-pic-gxAsonzSXL.json",
-      "updatedAt": "2026-06-16T10:13:07.442Z",
+      "updatedAt": "2026-06-18T20:13:52.174Z",
       "order": 10,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
@@ -726,7 +733,7 @@
         "GeoChat"
       ],
       "path": "/content/en/pages/guides/tak-guide/geochat-SMWfbwNItT.json",
-      "updatedAt": "2026-06-15T19:42:23.236Z",
+      "updatedAt": "2026-06-18T20:13:53.593Z",
       "order": 11,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
@@ -745,7 +752,7 @@
         "Clear Content"
       ],
       "path": "/content/en/pages/guides/tak-guide/clear-content-lzrtCD0MdO.json",
-      "updatedAt": "2026-06-15T19:39:13.557Z",
+      "updatedAt": "2026-06-18T20:13:55.096Z",
       "order": 12,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
@@ -764,7 +771,7 @@
         "Create & Manage Feeds"
       ],
       "path": "/content/en/pages/guides/tak-guide/create-manage-feeds-z2CpC9Lpan.json",
-      "updatedAt": "2026-06-16T21:54:46.926Z",
+      "updatedAt": "2026-06-18T20:13:57.845Z",
       "order": 13,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
@@ -783,7 +790,7 @@
         "Add to & Work a Feed"
       ],
       "path": "/content/en/pages/guides/tak-guide/add-to-work-a-feed-QUjMOBwISe.json",
-      "updatedAt": "2026-06-16T18:02:36.847Z",
+      "updatedAt": "2026-06-18T20:13:59.216Z",
       "order": 14,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
@@ -802,7 +809,7 @@
         "Draw & share Plans"
       ],
       "path": "/content/en/pages/guides/tak-guide/draw-share-plans-fxjT3hDZ5p.json",
-      "updatedAt": "2026-06-16T10:15:20.448Z",
+      "updatedAt": "2026-06-18T20:14:00.606Z",
       "order": 15,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
@@ -821,7 +828,7 @@
         "Feed Timeline View"
       ],
       "path": "/content/en/pages/guides/tak-guide/feed-timeline-view-Ykwnn1hgWm.json",
-      "updatedAt": "2026-06-16T18:02:43.877Z",
+      "updatedAt": "2026-06-18T20:14:03.694Z",
       "order": 16,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
@@ -840,7 +847,7 @@
         "Draw Shapes & Graphics"
       ],
       "path": "/content/en/pages/guides/tak-guide/draw-shapes-graphics-OSECv6soAB.json",
-      "updatedAt": "2026-06-15T21:18:56.309Z",
+      "updatedAt": "2026-06-18T20:14:37.927Z",
       "order": 17,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
@@ -859,7 +866,7 @@
         "Geofences"
       ],
       "path": "/content/en/pages/guides/tak-guide/geofences-wgaLkSEvef.json",
-      "updatedAt": "2026-06-14T12:14:43.049Z",
+      "updatedAt": "2026-06-18T20:14:39.591Z",
       "order": 18,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
@@ -878,7 +885,7 @@
         "Lasso to add into Feed"
       ],
       "path": "/content/en/pages/guides/tak-guide/lasso-to-add-into-feed-Mt0Vykodea.json",
-      "updatedAt": "2026-06-14T12:14:27.795Z",
+      "updatedAt": "2026-06-18T20:14:41.188Z",
       "order": 19,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
@@ -897,7 +904,7 @@
         "Overlay Manager - How to manage the views"
       ],
       "path": "/content/en/pages/guides/tak-guide/overlay-manager-how-to-manage-the-views-BVRnLCM7ME.json",
-      "updatedAt": "2026-06-15T19:44:32.792Z",
+      "updatedAt": "2026-06-18T20:14:42.579Z",
       "order": 20,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
@@ -916,7 +923,7 @@
         "Create Routes and use VNS"
       ],
       "path": "/content/en/pages/guides/tak-guide/create-routes-and-use-vns-uymW3nDSPE.json",
-      "updatedAt": "2026-06-15T19:42:33.761Z",
+      "updatedAt": "2026-06-18T20:14:44.548Z",
       "order": 21,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
@@ -935,7 +942,7 @@
         "Downloading Maps for Offline use"
       ],
       "path": "/content/en/pages/guides/tak-guide/downloading-maps-for-offline-use-AhUMNQ8mmS.json",
-      "updatedAt": "2026-06-15T19:43:05.391Z",
+      "updatedAt": "2026-06-18T20:14:51.153Z",
       "order": 22,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
@@ -954,7 +961,7 @@
         "How to manage ATAK Tools and Toolbars"
       ],
       "path": "/content/en/pages/guides/tak-guide/how-to-manage-atak-tools-and-toolbars-PbkLQcvrCe.json",
-      "updatedAt": "2026-06-15T19:44:07.321Z",
+      "updatedAt": "2026-06-18T20:15:10.782Z",
       "order": 23,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
@@ -973,7 +980,7 @@
         "Customize Markers & Icons"
       ],
       "path": "/content/en/pages/guides/tak-guide/customize-markers-icons-TGz9RiGwju.json",
-      "updatedAt": "2026-06-15T21:18:55.337Z",
+      "updatedAt": "2026-06-18T20:15:12.452Z",
       "order": 24,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
@@ -992,7 +999,7 @@
         "Drop a CASEVAC 9-Line"
       ],
       "path": "/content/en/pages/guides/tak-guide/drop-a-casevac-9-line-sstaZDEz76.json",
-      "updatedAt": "2026-06-15T21:18:55.858Z",
+      "updatedAt": "2026-06-18T20:15:14.011Z",
       "order": 25,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
@@ -1011,7 +1018,7 @@
         "Manage Contacts"
       ],
       "path": "/content/en/pages/guides/tak-guide/manage-contacts-URumWb83Ox.json",
-      "updatedAt": "2026-06-15T21:18:56.790Z",
+      "updatedAt": "2026-06-18T20:15:18.972Z",
       "order": 26,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
@@ -1030,7 +1037,7 @@
         "Digital Pointer"
       ],
       "path": "/content/en/pages/guides/tak-guide/digital-pointer-0K1KdydAeq.json",
-      "updatedAt": "2026-06-15T21:18:57.274Z",
+      "updatedAt": "2026-06-18T20:15:48.777Z",
       "order": 27,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
@@ -1049,7 +1056,7 @@
         "Broadcast Emergency Alert"
       ],
       "path": "/content/en/pages/guides/tak-guide/broadcast-emergency-alert-UUcvlpUGMg.json",
-      "updatedAt": "2026-06-15T21:18:57.709Z",
+      "updatedAt": "2026-06-18T20:15:56.211Z",
       "order": 28,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
@@ -1068,7 +1075,7 @@
         "Overview"
       ],
       "path": "/content/en/pages/guides/tak-guide/overview-CVNzKhRcKY.json",
-      "updatedAt": "2026-06-16T12:20:28.018Z",
+      "updatedAt": "2026-06-18T20:16:34.560Z",
       "order": 29,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
@@ -1088,7 +1095,7 @@
         "What you get & send"
       ],
       "path": "/content/en/pages/guides/tak-guide/what-you-get-send-MhsXXsmVxN.json",
-      "updatedAt": "2026-06-16T12:23:41.539Z",
+      "updatedAt": "2026-06-18T20:17:01.968Z",
       "order": 30,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
@@ -1108,7 +1115,7 @@
         "Use RECON Feed"
       ],
       "path": "/content/en/pages/guides/tak-guide/use-recon-feed-1eKYHfIBys.json",
-      "updatedAt": "2026-06-14T13:12:56.341Z",
+      "updatedAt": "2026-06-18T20:17:03.983Z",
       "order": 31,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
@@ -1128,7 +1135,7 @@
         "Use Geochat for comms"
       ],
       "path": "/content/en/pages/guides/tak-guide/use-geochat-for-comms-s20PZmRGw8.json",
-      "updatedAt": "2026-06-16T12:25:47.763Z",
+      "updatedAt": "2026-06-18T20:17:35.582Z",
       "order": 32,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
@@ -1148,7 +1155,7 @@
         "RECON Feed Management"
       ],
       "path": "/content/en/pages/guides/tak-guide/recon-feed-management-y1O0x1g2sf.json",
-      "updatedAt": "2026-06-14T13:16:24.218Z",
+      "updatedAt": "2026-06-18T20:18:23.323Z",
       "order": 33,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
@@ -1168,7 +1175,7 @@
         "Go To Coordinates"
       ],
       "path": "/content/en/pages/guides/tak-guide/go-to-coordinates-x7AdN7ZMgn.json",
-      "updatedAt": "2026-06-15T20:53:46.342Z",
+      "updatedAt": "2026-06-18T20:18:51.180Z",
       "order": 34,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
@@ -1188,7 +1195,7 @@
         "Get Coordinates with Center Designator"
       ],
       "path": "/content/en/pages/guides/tak-guide/get-coordinates-with-center-designator-B4pKmxr0H0.json",
-      "updatedAt": "2026-06-15T20:53:47.228Z",
+      "updatedAt": "2026-06-18T20:19:01.758Z",
       "order": 35,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
@@ -1208,7 +1215,7 @@
         "Navigate a Route"
       ],
       "path": "/content/en/pages/guides/tak-guide/navigate-a-route-zHde8FSxCb.json",
-      "updatedAt": "2026-06-15T20:53:48.642Z",
+      "updatedAt": "2026-06-18T20:19:03.877Z",
       "order": 36,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
@@ -1228,7 +1235,7 @@
         "Resection (No-GPS Location)"
       ],
       "path": "/content/en/pages/guides/tak-guide/resection-no-gps-location-YjW4JqiWQJ.json",
-      "updatedAt": "2026-06-15T20:53:49.610Z",
+      "updatedAt": "2026-06-18T20:19:10.299Z",
       "order": 37,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
@@ -1248,7 +1255,7 @@
         "Get Location with Red X"
       ],
       "path": "/content/en/pages/guides/tak-guide/get-location-with-red-x-14YkJ0qaz7.json",
-      "updatedAt": "2026-06-15T20:53:46.785Z",
+      "updatedAt": "2026-06-18T20:19:17.954Z",
       "order": 38,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
@@ -1268,7 +1275,7 @@
         "Off-Screen Marker Indicators"
       ],
       "path": "/content/en/pages/guides/tak-guide/off-screen-marker-indicators-OwR2HB0xVZ.json",
-      "updatedAt": "2026-06-15T20:53:47.674Z",
+      "updatedAt": "2026-06-18T20:19:34.800Z",
       "order": 39,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
@@ -1288,7 +1295,7 @@
         "Control Location Providers"
       ],
       "path": "/content/en/pages/guides/tak-guide/control-location-providers-WuJJaCfIYG.json",
-      "updatedAt": "2026-06-15T20:53:48.159Z",
+      "updatedAt": "2026-06-18T20:19:48.011Z",
       "order": 40,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
@@ -1308,7 +1315,7 @@
         "Track to a Target with Bloodhound"
       ],
       "path": "/content/en/pages/guides/tak-guide/track-to-a-target-with-bloodhound-CRgoGZzBqb.json",
-      "updatedAt": "2026-06-15T20:53:49.114Z",
+      "updatedAt": "2026-06-18T20:20:03.373Z",
       "order": 41,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
@@ -1328,7 +1335,7 @@
         "Track Movement (GPS Tracks)"
       ],
       "path": "/content/en/pages/guides/tak-guide/track-movement-gps-tracks-ncPNa8dv8K.json",
-      "updatedAt": "2026-06-15T21:18:58.177Z",
+      "updatedAt": "2026-06-18T20:20:09.054Z",
       "order": 42,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
@@ -1348,7 +1355,7 @@
         "Measure Range & Bearing"
       ],
       "path": "/content/en/pages/guides/tak-guide/measure-range-bearing-vEAV62W7O1.json",
-      "updatedAt": "2026-06-16T10:20:34.612Z",
+      "updatedAt": "2026-06-18T20:20:39.833Z",
       "order": 43,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
@@ -1368,7 +1375,7 @@
         "Dynamic Range & Bearing"
       ],
       "path": "/content/en/pages/guides/tak-guide/dynamic-range-bearing-HMYy8mVdNk.json",
-      "updatedAt": "2026-06-15T20:53:50.553Z",
+      "updatedAt": "2026-06-18T20:20:41.503Z",
       "order": 44,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
@@ -1388,7 +1395,7 @@
         "Range Rings & Bullseye"
       ],
       "path": "/content/en/pages/guides/tak-guide/range-rings-bullseye-NHJCYsh6xN.json",
-      "updatedAt": "2026-06-15T20:53:51.011Z",
+      "updatedAt": "2026-06-18T20:20:43.349Z",
       "order": 45,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
@@ -1408,7 +1415,7 @@
         "Use 3D Terrain View"
       ],
       "path": "/content/en/pages/guides/tak-guide/use-3d-terrain-view-nTeTbi2I5K.json",
-      "updatedAt": "2026-06-15T20:53:52.840Z",
+      "updatedAt": "2026-06-18T20:20:47.261Z",
       "order": 46,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
@@ -1428,7 +1435,7 @@
         "Add 3D Models to Map"
       ],
       "path": "/content/en/pages/guides/tak-guide/add-3d-models-to-map-bp5Bo7T0oI.json",
-      "updatedAt": "2026-06-15T20:53:53.270Z",
+      "updatedAt": "2026-06-18T20:20:48.958Z",
       "order": 47,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
@@ -1448,7 +1455,7 @@
         "Scout with First-Person View"
       ],
       "path": "/content/en/pages/guides/tak-guide/scout-with-first-person-view-tZ27WjeppE.json",
-      "updatedAt": "2026-06-15T20:53:53.693Z",
+      "updatedAt": "2026-06-18T20:20:51.103Z",
       "order": 48,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
@@ -1468,7 +1475,7 @@
         "Elevation & Viewshed Tools"
       ],
       "path": "/content/en/pages/guides/tak-guide/elevation-viewshed-tools-Vqje1Ybg0d.json",
-      "updatedAt": "2026-06-15T20:53:54.113Z",
+      "updatedAt": "2026-06-18T20:20:59.232Z",
       "order": 49,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
@@ -1488,7 +1495,7 @@
         "Manage Elevation Sources"
       ],
       "path": "/content/en/pages/guides/tak-guide/manage-elevation-sources-1DMW21VzzP.json",
-      "updatedAt": "2026-06-15T20:53:54.561Z",
+      "updatedAt": "2026-06-18T20:21:26.726Z",
       "order": 50,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
@@ -1508,7 +1515,7 @@
         "Georeference an Image (Rubber Sheet)"
       ],
       "path": "/content/en/pages/guides/tak-guide/georeference-an-image-rubber-sheet-TgWDRF45Bd.json",
-      "updatedAt": "2026-06-15T20:53:54.994Z",
+      "updatedAt": "2026-06-18T20:21:29.269Z",
       "order": 51,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
@@ -1528,7 +1535,7 @@
         "Import Files & Remote Resources"
       ],
       "path": "/content/en/pages/guides/tak-guide/import-files-remote-resources-yjaTiWVKHl.json",
-      "updatedAt": "2026-06-15T21:18:58.658Z",
+      "updatedAt": "2026-06-18T20:21:30.696Z",
       "order": 52,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
@@ -1548,7 +1555,7 @@
         "Play & Capture Video"
       ],
       "path": "/content/en/pages/guides/tak-guide/play-capture-video-hWmpN6dj9t.json",
-      "updatedAt": "2026-06-15T19:46:26.259Z",
+      "updatedAt": "2026-06-18T20:21:34.316Z",
       "order": 53,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
@@ -1568,7 +1575,7 @@
         "Install UAS Tool Plugin"
       ],
       "path": "/content/en/pages/guides/tak-guide/install-uas-tool-plugin-BDPcnhvDgk.json",
-      "updatedAt": "2026-06-16T10:28:43.907Z",
+      "updatedAt": "2026-06-18T20:21:38.878Z",
       "order": 54,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
@@ -1588,7 +1595,7 @@
         "Auto-connect UAS Tool to MediaMTX"
       ],
       "path": "/content/en/pages/guides/tak-guide/auto-connect-uas-tool-to-mediamtx-MahzGHsEdu.json",
-      "updatedAt": "2026-06-16T10:31:04.825Z",
+      "updatedAt": "2026-06-18T20:21:40.194Z",
       "order": 55,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
@@ -1608,7 +1615,7 @@
         "Open UAS Tool & Read Telemetry"
       ],
       "path": "/content/en/pages/guides/tak-guide/open-uas-tool-read-telemetry-CvGSGecLE1.json",
-      "updatedAt": "2026-06-15T19:49:07.036Z",
+      "updatedAt": "2026-06-18T20:21:41.565Z",
       "order": 56,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
@@ -1628,7 +1635,7 @@
         "Watch & Control Drone Camera"
       ],
       "path": "/content/en/pages/guides/tak-guide/watch-control-drone-camera-45LPQNKdqn.json",
-      "updatedAt": "2026-06-15T19:50:22.907Z",
+      "updatedAt": "2026-06-18T20:21:43.001Z",
       "order": 57,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
@@ -1648,7 +1655,7 @@
         "Capture & Broadcast Drone Video"
       ],
       "path": "/content/en/pages/guides/tak-guide/capture-broadcast-drone-video-UfMEqBjxec.json",
-      "updatedAt": "2026-06-15T19:47:54.506Z",
+      "updatedAt": "2026-06-18T20:21:44.552Z",
       "order": 58,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
@@ -1668,7 +1675,7 @@
         "Send Drone to a Location"
       ],
       "path": "/content/en/pages/guides/tak-guide/send-drone-to-a-location-vwYPd2cbEC.json",
-      "updatedAt": "2026-06-15T19:49:52.364Z",
+      "updatedAt": "2026-06-18T20:21:46.694Z",
       "order": 59,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
@@ -1688,7 +1695,7 @@
         "Plan Drone Missions"
       ],
       "path": "/content/en/pages/guides/tak-guide/plan-drone-missions-lNvEkDE1kE.json",
-      "updatedAt": "2026-06-15T19:49:36.760Z",
+      "updatedAt": "2026-06-18T20:21:48.662Z",
       "order": 60,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
@@ -1708,7 +1715,7 @@
         "Launch, Stop & Return Drone"
       ],
       "path": "/content/en/pages/guides/tak-guide/launch-stop-return-drone-H6yqQ4Gyc5.json",
-      "updatedAt": "2026-06-15T19:48:14.422Z",
+      "updatedAt": "2026-06-18T20:21:51.337Z",
       "order": 61,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
@@ -1728,7 +1735,7 @@
         "Create a Grid (GRG Builder)"
       ],
       "path": "/content/en/pages/guides/tak-guide/create-a-grid-grg-builder-RD3vtzu9yS.json",
-      "updatedAt": "2026-06-15T20:51:13.205Z",
+      "updatedAt": "2026-06-18T20:22:18.181Z",
       "order": 62,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
@@ -1748,7 +1755,7 @@
         "Annotate & Style a Grid"
       ],
       "path": "/content/en/pages/guides/tak-guide/annotate-style-a-grid-xSjKDtDtsj.json",
-      "updatedAt": "2026-06-15T19:51:40.057Z",
+      "updatedAt": "2026-06-18T20:22:28.006Z",
       "order": 63,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
@@ -1768,7 +1775,7 @@
         "Export a Grid (GRG Builder)"
       ],
       "path": "/content/en/pages/guides/tak-guide/export-a-grid-grg-builder-EcpaE7LkX1.json",
-      "updatedAt": "2026-06-15T20:51:18.981Z",
+      "updatedAt": "2026-06-18T20:22:29.942Z",
       "order": 64,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
@@ -1788,7 +1795,7 @@
         "Create a Report"
       ],
       "path": "/content/en/pages/guides/tak-guide/create-a-report-FB38XVNhaL.json",
-      "updatedAt": "2026-06-15T19:50:29.608Z",
+      "updatedAt": "2026-06-18T20:22:32.604Z",
       "order": 65,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
@@ -1808,7 +1815,7 @@
         "Save, Send & Share a Report"
       ],
       "path": "/content/en/pages/guides/tak-guide/save-send-share-a-report-FCSrRHNkjC.json",
-      "updatedAt": "2026-06-15T19:50:55.066Z",
+      "updatedAt": "2026-06-18T20:22:34.931Z",
       "order": 66,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
@@ -1828,7 +1835,7 @@
         "Find Reports on the Server"
       ],
       "path": "/content/en/pages/guides/tak-guide/find-reports-on-the-server-QTVm3SETE8.json",
-      "updatedAt": "2026-06-15T19:50:47.363Z",
+      "updatedAt": "2026-06-18T20:22:37.075Z",
       "order": 67,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
@@ -1848,7 +1855,7 @@
         "Build a Custom Report Template"
       ],
       "path": "/content/en/pages/guides/tak-guide/build-a-custom-report-template-VVphDLVbW3.json",
-      "updatedAt": "2026-06-15T19:50:39.995Z",
+      "updatedAt": "2026-06-18T20:22:38.587Z",
       "order": 68,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
@@ -1868,7 +1875,7 @@
         "Configure Report Settings"
       ],
       "path": "/content/en/pages/guides/tak-guide/configure-report-settings-kQmMR0hmn5.json",
-      "updatedAt": "2026-06-15T19:51:31.064Z",
+      "updatedAt": "2026-06-18T20:22:41.007Z",
       "order": 69,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
@@ -1888,7 +1895,7 @@
         "Connect to PRC-152 / Rover Radio"
       ],
       "path": "/content/en/pages/guides/tak-guide/connect-to-prc-152-rover-radio-h4TQ7hwPw2.json",
-      "updatedAt": "2026-06-15T21:18:59.901Z",
+      "updatedAt": "2026-06-18T20:22:45.085Z",
       "order": 70,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
@@ -1908,7 +1915,7 @@
         "Setup Encrypted Mesh Comms"
       ],
       "path": "/content/en/pages/guides/tak-guide/setup-encrypted-mesh-comms-ytYOQTVxVo.json",
-      "updatedAt": "2026-06-15T21:19:00.420Z",
+      "updatedAt": "2026-06-18T20:22:46.456Z",
       "order": 71,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
@@ -1926,7 +1933,7 @@
         "TROUBLESHOOTING"
       ],
       "path": "/content/en/pages/guides/tak-guide/troubleshooting-IC3Nd5qZHr.json",
-      "updatedAt": "2026-06-13T23:47:24.046Z",
+      "updatedAt": "2026-06-18T20:22:47.876Z",
       "order": 72,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
@@ -1945,7 +1952,7 @@
         "Set language & localization for WinTAK"
       ],
       "path": "/content/en/pages/guides/tak-guide/set-language-localization-for-wintak-GstcQifMVj.json",
-      "updatedAt": "2026-06-16T10:55:48.465Z",
+      "updatedAt": "2026-06-18T20:22:53.160Z",
       "order": 73,
       "platform": "windows",
       "clientId": "wintak-w8mKUfaRBP",
@@ -1964,7 +1971,7 @@
         "Download & install WinTAK"
       ],
       "path": "/content/en/pages/guides/tak-guide/download-install-wintak-qfu2aB0W9u.json",
-      "updatedAt": "2026-06-16T10:55:51.358Z",
+      "updatedAt": "2026-06-18T20:22:54.547Z",
       "order": 74,
       "platform": "windows",
       "clientId": "wintak-w8mKUfaRBP",
@@ -1983,7 +1990,7 @@
         "Import the client package to WinTAK"
       ],
       "path": "/content/en/pages/guides/tak-guide/import-the-client-package-to-wintak-kCXH9p8keg.json",
-      "updatedAt": "2026-06-16T10:55:54.193Z",
+      "updatedAt": "2026-06-18T20:23:24.488Z",
       "order": 75,
       "platform": "windows",
       "clientId": "wintak-w8mKUfaRBP",
@@ -2002,7 +2009,7 @@
         "Load Plugins & Finish Setup"
       ],
       "path": "/content/en/pages/guides/tak-guide/load-plugins-finish-setup-xa2huv9Wmn.json",
-      "updatedAt": "2026-06-16T10:55:57.533Z",
+      "updatedAt": "2026-06-18T20:23:29.206Z",
       "order": 76,
       "platform": "windows",
       "clientId": "wintak-w8mKUfaRBP",
@@ -2021,7 +2028,7 @@
         "Setting up your own location"
       ],
       "path": "/content/en/pages/guides/tak-guide/setting-up-your-own-location-IAAAIJTiqZ.json",
-      "updatedAt": "2026-06-15T13:52:39.481Z",
+      "updatedAt": "2026-06-18T20:23:32.006Z",
       "order": 77,
       "platform": "windows",
       "clientId": "wintak-w8mKUfaRBP",
@@ -2040,7 +2047,7 @@
         "Blue force tracking"
       ],
       "path": "/content/en/pages/guides/tak-guide/blue-force-tracking-uv3kHr7LSr.json",
-      "updatedAt": "2026-06-15T13:53:00.074Z",
+      "updatedAt": "2026-06-18T20:23:34.011Z",
       "order": 78,
       "platform": "windows",
       "clientId": "wintak-w8mKUfaRBP",
@@ -2059,7 +2066,7 @@
         "Data Sync"
       ],
       "path": "/content/en/pages/guides/tak-guide/data-sync-VswHZNexYA.json",
-      "updatedAt": "2026-06-14T17:11:31.500Z",
+      "updatedAt": "2026-06-18T20:23:36.556Z",
       "order": 79,
       "platform": "windows",
       "clientId": "wintak-w8mKUfaRBP",
@@ -2078,7 +2085,7 @@
         "Point Dropper - add markers"
       ],
       "path": "/content/en/pages/guides/tak-guide/point-dropper-add-markers-wwYK8iDf5w.json",
-      "updatedAt": "2026-06-15T13:52:40.858Z",
+      "updatedAt": "2026-06-18T20:23:37.906Z",
       "order": 80,
       "platform": "windows",
       "clientId": "wintak-w8mKUfaRBP",
@@ -2097,7 +2104,7 @@
         "Use GeoChat"
       ],
       "path": "/content/en/pages/guides/tak-guide/use-geochat-G4fqV0Y4fg.json",
-      "updatedAt": "2026-06-15T13:52:58.519Z",
+      "updatedAt": "2026-06-18T20:23:39.735Z",
       "order": 81,
       "platform": "windows",
       "clientId": "wintak-w8mKUfaRBP",
@@ -2116,7 +2123,7 @@
         "Plugin Management"
       ],
       "path": "/content/en/pages/guides/tak-guide/plugin-management-EphDON8hEX.json",
-      "updatedAt": "2026-06-14T17:11:33.654Z",
+      "updatedAt": "2026-06-18T20:23:41.683Z",
       "order": 82,
       "platform": "windows",
       "clientId": "wintak-w8mKUfaRBP",
@@ -2135,7 +2142,7 @@
         "Clear Content"
       ],
       "path": "/content/en/pages/guides/tak-guide/clear-content-gLcPrq5b5J.json",
-      "updatedAt": "2026-06-14T17:11:33.276Z",
+      "updatedAt": "2026-06-18T20:23:43.290Z",
       "order": 83,
       "platform": "windows",
       "clientId": "wintak-w8mKUfaRBP",
@@ -2154,7 +2161,7 @@
         "Create Feeds"
       ],
       "path": "/content/en/pages/guides/tak-guide/create-feeds-0jPr4Cah1Z.json",
-      "updatedAt": "2026-06-15T13:53:06.432Z",
+      "updatedAt": "2026-06-18T20:23:47.495Z",
       "order": 84,
       "platform": "windows",
       "clientId": "wintak-w8mKUfaRBP",
@@ -2173,7 +2180,7 @@
         "Manage Feeds"
       ],
       "path": "/content/en/pages/guides/tak-guide/manage-feeds-62IWBYODOd.json",
-      "updatedAt": "2026-06-15T13:53:06.856Z",
+      "updatedAt": "2026-06-18T20:23:48.943Z",
       "order": 85,
       "platform": "windows",
       "clientId": "wintak-w8mKUfaRBP",
@@ -2192,7 +2199,7 @@
         "Draw & share Plans"
       ],
       "path": "/content/en/pages/guides/tak-guide/draw-share-plans-gUzuEffh5v.json",
-      "updatedAt": "2026-06-15T13:52:58.978Z",
+      "updatedAt": "2026-06-18T20:23:50.774Z",
       "order": 86,
       "platform": "windows",
       "clientId": "wintak-w8mKUfaRBP",
@@ -2211,7 +2218,7 @@
         "Get alerts with Geofences"
       ],
       "path": "/content/en/pages/guides/tak-guide/get-alerts-with-geofences-Y1Bgr7UInI.json",
-      "updatedAt": "2026-06-15T13:52:59.404Z",
+      "updatedAt": "2026-06-18T20:23:52.229Z",
       "order": 87,
       "platform": "windows",
       "clientId": "wintak-w8mKUfaRBP",
@@ -2230,7 +2237,7 @@
         "Overview"
       ],
       "path": "/content/en/pages/guides/tak-guide/overview-G0keHC8NbD.json",
-      "updatedAt": "2026-06-14T14:30:47.115Z",
+      "updatedAt": "2026-06-18T20:23:55.736Z",
       "order": 88,
       "platform": "windows",
       "clientId": "wintak-w8mKUfaRBP",
@@ -2249,7 +2256,7 @@
         "Fighter"
       ],
       "path": "/content/en/pages/guides/tak-guide/fighter-ZxrplBIys6.json",
-      "updatedAt": "2026-06-14T17:11:18.112Z",
+      "updatedAt": "2026-06-18T20:24:28.653Z",
       "order": 89,
       "platform": "windows",
       "clientId": "wintak-w8mKUfaRBP",
@@ -2269,7 +2276,7 @@
         "Produce RECON feed"
       ],
       "path": "/content/en/pages/guides/tak-guide/produce-recon-feed-B7h9QJzZVd.json",
-      "updatedAt": "2026-06-15T13:52:41.610Z",
+      "updatedAt": "2026-06-18T20:24:32.926Z",
       "order": 90,
       "platform": "windows",
       "clientId": "wintak-w8mKUfaRBP",
@@ -2289,7 +2296,7 @@
         "Record events"
       ],
       "path": "/content/en/pages/guides/tak-guide/record-events-2LJeWe6cPW.json",
-      "updatedAt": "2026-06-16T10:21:06.430Z",
+      "updatedAt": "2026-06-18T20:24:40.562Z",
       "order": 91,
       "platform": "windows",
       "clientId": "wintak-w8mKUfaRBP",
@@ -2309,7 +2316,7 @@
         "Play a recording"
       ],
       "path": "/content/en/pages/guides/tak-guide/play-a-recording-uLch9lAImn.json",
-      "updatedAt": "2026-06-16T10:21:26.006Z",
+      "updatedAt": "2026-06-18T20:24:42.953Z",
       "order": 92,
       "platform": "windows",
       "clientId": "wintak-w8mKUfaRBP",
@@ -2329,7 +2336,7 @@
         "Export, download & manage"
       ],
       "path": "/content/en/pages/guides/tak-guide/export-download-manage-0NPPYBJSNP.json",
-      "updatedAt": "2026-06-16T10:21:30.269Z",
+      "updatedAt": "2026-06-18T20:24:45.504Z",
       "order": 93,
       "platform": "windows",
       "clientId": "wintak-w8mKUfaRBP",
@@ -2349,7 +2356,7 @@
         "Create & edit a GRG"
       ],
       "path": "/content/en/pages/guides/tak-guide/create-edit-a-grg-Xui0ilYenu.json",
-      "updatedAt": "2026-06-16T10:20:30.412Z",
+      "updatedAt": "2026-06-18T20:24:49.974Z",
       "order": 94,
       "platform": "windows",
       "clientId": "wintak-w8mKUfaRBP",
@@ -2369,7 +2376,7 @@
         "Add features & markers"
       ],
       "path": "/content/en/pages/guides/tak-guide/add-features-markers-9dYxguZls8.json",
-      "updatedAt": "2026-06-16T10:20:36.340Z",
+      "updatedAt": "2026-06-18T20:24:51.878Z",
       "order": 95,
       "platform": "windows",
       "clientId": "wintak-w8mKUfaRBP",
@@ -2389,7 +2396,7 @@
         "Export & share a GRG"
       ],
       "path": "/content/en/pages/guides/tak-guide/export-share-a-grg-OP1CAaNJhC.json",
-      "updatedAt": "2026-06-16T10:20:40.632Z",
+      "updatedAt": "2026-06-18T20:24:53.497Z",
       "order": 96,
       "platform": "windows",
       "clientId": "wintak-w8mKUfaRBP",
@@ -2409,7 +2416,7 @@
         "Create a report"
       ],
       "path": "/content/en/pages/guides/tak-guide/create-a-report-mhCCLqyMaU.json",
-      "updatedAt": "2026-06-16T10:20:49.489Z",
+      "updatedAt": "2026-06-18T20:24:56.791Z",
       "order": 97,
       "platform": "windows",
       "clientId": "wintak-w8mKUfaRBP",
@@ -2429,7 +2436,7 @@
         "Browse the reports database"
       ],
       "path": "/content/en/pages/guides/tak-guide/browse-the-reports-database-unYDjhwqXD.json",
-      "updatedAt": "2026-06-16T10:20:52.951Z",
+      "updatedAt": "2026-06-18T20:24:58.253Z",
       "order": 98,
       "platform": "windows",
       "clientId": "wintak-w8mKUfaRBP",
@@ -2449,7 +2456,7 @@
         "Custom report templates"
       ],
       "path": "/content/en/pages/guides/tak-guide/custom-report-templates-8bCilJEujm.json",
-      "updatedAt": "2026-06-16T10:20:58.483Z",
+      "updatedAt": "2026-06-18T20:24:59.780Z",
       "order": 99,
       "platform": "windows",
       "clientId": "wintak-w8mKUfaRBP",
@@ -2469,7 +2476,7 @@
         "Create a VNS route"
       ],
       "path": "/content/en/pages/guides/tak-guide/create-a-vns-route-gfIlnjXwN2.json",
-      "updatedAt": "2026-06-16T10:21:36.565Z",
+      "updatedAt": "2026-06-18T20:25:29.365Z",
       "order": 100,
       "platform": "windows",
       "clientId": "wintak-w8mKUfaRBP",
@@ -2487,7 +2494,7 @@
         "Troubleshooting"
       ],
       "path": "/content/en/pages/guides/tak-guide/troubleshooting-T4SvHjOYgd.json",
-      "updatedAt": "2026-06-14T17:11:29.599Z",
+      "updatedAt": "2026-06-18T20:25:30.874Z",
       "order": 101,
       "platform": "windows",
       "clientId": "wintak-w8mKUfaRBP",
@@ -2506,7 +2513,7 @@
         "Start from Download"
       ],
       "path": "/content/en/pages/guides/tak-guide/start-from-download-vQGTWj6wET.json",
-      "updatedAt": "2026-06-16T10:58:01.341Z",
+      "updatedAt": "2026-06-18T20:25:38.601Z",
       "order": 102,
       "platform": "ios",
       "clientId": "itak-bwDYWvqdnY",
@@ -2525,7 +2532,7 @@
         "iTAK Already Installed"
       ],
       "path": "/content/en/pages/guides/tak-guide/itak-already-installed-DeEex1hIH2.json",
-      "updatedAt": "2026-02-20T22:13:14.287Z",
+      "updatedAt": "2026-06-18T20:25:41.086Z",
       "order": 103,
       "platform": "ios",
       "clientId": "itak-bwDYWvqdnY",
@@ -2544,7 +2551,7 @@
         "Blue force tracking"
       ],
       "path": "/content/en/pages/guides/tak-guide/blue-force-tracking-NOzCSj3j64.json",
-      "updatedAt": "2026-02-22T13:49:19.366Z",
+      "updatedAt": "2026-06-18T20:25:46.211Z",
       "order": 104,
       "platform": "ios",
       "clientId": "itak-bwDYWvqdnY",
@@ -2563,7 +2570,7 @@
         "Data Sync"
       ],
       "path": "/content/en/pages/guides/tak-guide/data-sync-U4cc7UE9hg.json",
-      "updatedAt": "2026-02-20T20:51:41.284Z",
+      "updatedAt": "2026-06-18T20:25:48.398Z",
       "order": 105,
       "platform": "ios",
       "clientId": "itak-bwDYWvqdnY",
@@ -2582,7 +2589,7 @@
         "Create Symbols & Quick Pics"
       ],
       "path": "/content/en/pages/guides/tak-guide/create-symbols-quick-pics-elqHqV8SW7.json",
-      "updatedAt": "2026-02-22T13:49:37.259Z",
+      "updatedAt": "2026-06-18T20:25:50.480Z",
       "order": 106,
       "platform": "ios",
       "clientId": "itak-bwDYWvqdnY",
@@ -2601,7 +2608,7 @@
         "Use GeoChat"
       ],
       "path": "/content/en/pages/guides/tak-guide/use-geochat-r99lJsOLnK.json",
-      "updatedAt": "2026-02-22T13:49:42.545Z",
+      "updatedAt": "2026-06-18T20:25:53.180Z",
       "order": 107,
       "platform": "ios",
       "clientId": "itak-bwDYWvqdnY",
@@ -2620,7 +2627,7 @@
         "Overview"
       ],
       "path": "/content/en/pages/guides/tak-guide/overview-bPeWx0MdZQ.json",
-      "updatedAt": "2025-12-05T22:06:10.622Z",
+      "updatedAt": "2026-06-18T20:25:56.967Z",
       "order": 108,
       "platform": "ios",
       "clientId": "itak-bwDYWvqdnY",
@@ -2639,7 +2646,7 @@
         "Fighter"
       ],
       "path": "/content/en/pages/guides/tak-guide/fighter-rf4mMCmmWV.json",
-      "updatedAt": "2025-12-05T22:06:10.581Z",
+      "updatedAt": "2026-06-18T20:25:58.459Z",
       "order": 109,
       "platform": "ios",
       "clientId": "itak-bwDYWvqdnY",
@@ -2658,7 +2665,7 @@
         "Command Post"
       ],
       "path": "/content/en/pages/guides/tak-guide/command-post-YxjX9bA9iG.json",
-      "updatedAt": "2025-12-05T22:06:10.535Z",
+      "updatedAt": "2026-06-18T20:25:59.992Z",
       "order": 110,
       "platform": "ios",
       "clientId": "itak-bwDYWvqdnY",
@@ -2676,7 +2683,7 @@
         "Troubleshooting"
       ],
       "path": "/content/en/pages/guides/tak-guide/troubleshooting-Pj64UaHAJW.json",
-      "updatedAt": "2025-12-05T22:06:10.255Z",
+      "updatedAt": "2026-06-18T20:26:01.423Z",
       "order": 111,
       "platform": "ios",
       "clientId": "itak-bwDYWvqdnY",
@@ -2695,7 +2702,7 @@
         "Start from Download"
       ],
       "path": "/content/en/pages/guides/tak-guide/start-from-download-x9ve2aL7oC.json",
-      "updatedAt": "2026-06-16T17:04:53.537Z",
+      "updatedAt": "2026-06-18T20:26:32.088Z",
       "order": 112,
       "platform": "android",
       "clientId": "tak-tracker-android-JCZw3YH2nW",
@@ -2714,7 +2721,7 @@
         "TAK Tracker Already Installed"
       ],
       "path": "/content/en/pages/guides/tak-guide/tak-tracker-already-installed-DoVQOAKWVB.json",
-      "updatedAt": "2026-06-16T17:04:58.486Z",
+      "updatedAt": "2026-06-18T20:26:34.155Z",
       "order": 113,
       "platform": "android",
       "clientId": "tak-tracker-android-JCZw3YH2nW",
@@ -2733,7 +2740,7 @@
         "Importing Server Connection"
       ],
       "path": "/content/en/pages/guides/tak-guide/importing-server-connection-URmd6F0UU5.json",
-      "updatedAt": "2026-02-21T10:42:40.160Z",
+      "updatedAt": "2026-06-18T20:26:36.226Z",
       "order": 114,
       "platform": "android",
       "clientId": "tak-tracker-android-JCZw3YH2nW",
@@ -2752,7 +2759,7 @@
         "Read Your Status & Location"
       ],
       "path": "/content/en/pages/guides/tak-guide/read-your-status-location-xFbq6tWEQC.json",
-      "updatedAt": "2026-06-16T16:21:25.766Z",
+      "updatedAt": "2026-06-18T20:26:41.874Z",
       "order": 115,
       "platform": "android",
       "clientId": "tak-tracker-android-JCZw3YH2nW",
@@ -2771,7 +2778,7 @@
         "Send an Emergency Alert Beacon"
       ],
       "path": "/content/en/pages/guides/tak-guide/send-an-emergency-alert-beacon-rmQFqQnNJC.json",
-      "updatedAt": "2026-06-16T16:21:26.673Z",
+      "updatedAt": "2026-06-18T20:26:44.860Z",
       "order": 116,
       "platform": "android",
       "clientId": "tak-tracker-android-JCZw3YH2nW",
@@ -2790,7 +2797,7 @@
         "Chat With Your Team"
       ],
       "path": "/content/en/pages/guides/tak-guide/chat-with-your-team-y6xwtxc8G9.json",
-      "updatedAt": "2026-06-16T16:21:26.224Z",
+      "updatedAt": "2026-06-18T20:26:47.487Z",
       "order": 117,
       "platform": "android",
       "clientId": "tak-tracker-android-JCZw3YH2nW",
@@ -2809,7 +2816,7 @@
         "Options & Settings"
       ],
       "path": "/content/en/pages/guides/tak-guide/options-settings-XyYcsDAVCo.json",
-      "updatedAt": "2026-06-16T16:21:27.142Z",
+      "updatedAt": "2026-06-18T20:26:51.328Z",
       "order": 118,
       "platform": "android",
       "clientId": "tak-tracker-android-JCZw3YH2nW",
@@ -2828,7 +2835,7 @@
         "Overview"
       ],
       "path": "/content/en/pages/guides/tak-guide/overview-4sA7lVWVtw.json",
-      "updatedAt": "2026-02-21T08:40:53.162Z",
+      "updatedAt": "2026-06-18T20:26:55.930Z",
       "order": 119,
       "platform": "android",
       "clientId": "tak-tracker-android-JCZw3YH2nW",
@@ -2847,7 +2854,7 @@
         "Fighter"
       ],
       "path": "/content/en/pages/guides/tak-guide/fighter-gUAGHKAtVV.json",
-      "updatedAt": "2026-02-21T08:40:54.745Z",
+      "updatedAt": "2026-06-18T20:26:57.519Z",
       "order": 120,
       "platform": "android",
       "clientId": "tak-tracker-android-JCZw3YH2nW",
@@ -2866,7 +2873,7 @@
         "Command Post"
       ],
       "path": "/content/en/pages/guides/tak-guide/command-post-t2fdgSrk3R.json",
-      "updatedAt": "2026-02-21T08:40:56.130Z",
+      "updatedAt": "2026-06-18T20:26:59.051Z",
       "order": 121,
       "platform": "android",
       "clientId": "tak-tracker-android-JCZw3YH2nW",
@@ -2885,7 +2892,7 @@
         "Start from Download"
       ],
       "path": "/content/en/pages/guides/tak-guide/start-from-download-5tAQBOfF65.json",
-      "updatedAt": "2026-02-21T08:37:32.546Z",
+      "updatedAt": "2026-06-18T20:27:29.593Z",
       "order": 122,
       "platform": "ios",
       "clientId": "tak-tracker-apple-PmHvleNK0F",
@@ -2904,7 +2911,7 @@
         "TAK Tracker Already Installed"
       ],
       "path": "/content/en/pages/guides/tak-guide/tak-tracker-already-installed-DmWqDN5jLp.json",
-      "updatedAt": "2026-02-21T08:38:01.138Z",
+      "updatedAt": "2026-06-18T20:27:31.236Z",
       "order": 123,
       "platform": "ios",
       "clientId": "tak-tracker-apple-PmHvleNK0F",
@@ -2923,7 +2930,7 @@
         "Send alerts"
       ],
       "path": "/content/en/pages/guides/tak-guide/send-alerts-jz5xQsdpbH.json",
-      "updatedAt": "2026-02-21T08:40:22.498Z",
+      "updatedAt": "2026-06-18T20:27:34.994Z",
       "order": 124,
       "platform": "ios",
       "clientId": "tak-tracker-apple-PmHvleNK0F",
@@ -2942,7 +2949,7 @@
         "Overview"
       ],
       "path": "/content/en/pages/guides/tak-guide/overview-vqWEyyCxy8.json",
-      "updatedAt": "2026-02-21T08:40:26.953Z",
+      "updatedAt": "2026-06-18T20:27:41.155Z",
       "order": 125,
       "platform": "ios",
       "clientId": "tak-tracker-apple-PmHvleNK0F",
@@ -2961,7 +2968,7 @@
         "Fighter"
       ],
       "path": "/content/en/pages/guides/tak-guide/fighter-xKivECWhVS.json",
-      "updatedAt": "2026-02-21T08:40:29.184Z",
+      "updatedAt": "2026-06-18T20:27:43.896Z",
       "order": 126,
       "platform": "ios",
       "clientId": "tak-tracker-apple-PmHvleNK0F",
@@ -2980,7 +2987,7 @@
         "Command Post"
       ],
       "path": "/content/en/pages/guides/tak-guide/command-post-aX04WiqaZf.json",
-      "updatedAt": "2026-02-21T08:40:31.192Z",
+      "updatedAt": "2026-06-18T20:27:45.436Z",
       "order": 127,
       "platform": "ios",
       "clientId": "tak-tracker-apple-PmHvleNK0F",
@@ -2998,7 +3005,7 @@
         "Troubleshooting"
       ],
       "path": "/content/en/pages/guides/tak-guide/troubleshooting-4heIv7ZV7m.json",
-      "updatedAt": "2026-02-21T08:40:35.190Z",
+      "updatedAt": "2026-06-18T20:27:48.346Z",
       "order": 128,
       "platform": "ios",
       "clientId": "tak-tracker-apple-PmHvleNK0F",
@@ -3117,7 +3124,7 @@
         "Set up Element (desktop)"
       ],
       "path": "/content/en/pages/guides/matrix-guide/set-up-element-desktop-tagwindows-tagmacos-taglinux-KspjTxDpoH.json",
-      "updatedAt": "2026-06-15T17:52:25.452Z",
+      "updatedAt": "2026-06-18T20:37:50.152Z",
       "order": 0,
       "platforms": [
         "windows",
@@ -3137,7 +3144,7 @@
         "Set up Element (mobile)"
       ],
       "path": "/content/en/pages/guides/matrix-guide/set-up-element-mobile-tagios-tagandroid-QacQsNprmb.json",
-      "updatedAt": "2026-06-15T17:52:27.597Z",
+      "updatedAt": "2026-06-18T20:37:51.497Z",
       "order": 1,
       "platforms": [
         "ios",
@@ -3156,7 +3163,7 @@
         "Messaging in Matrix"
       ],
       "path": "/content/en/pages/guides/matrix-guide/messaging-in-matrix-MFNQHEi50M.json",
-      "updatedAt": "2026-06-15T17:52:31.351Z",
+      "updatedAt": "2026-06-18T20:37:53.993Z",
       "order": 2,
       "chapterId": "basic-features-jotC7n1wbz",
       "chapterLabel": "Basic Features"
@@ -3171,7 +3178,7 @@
         "Unit rooms & organisation"
       ],
       "path": "/content/en/pages/guides/matrix-guide/unit-rooms-organisation-krWteO9e37.json",
-      "updatedAt": "2026-06-15T17:52:34.732Z",
+      "updatedAt": "2026-06-18T20:37:56.818Z",
       "order": 3,
       "chapterId": "usage-in-unit-yVodEGlu1v",
       "chapterLabel": "Usage in Unit"
@@ -3186,7 +3193,7 @@
         "Getting started with CryptPad"
       ],
       "path": "/content/en/pages/guides/cryptpad-guide/getting-started-with-cryptpad-JznoTt1R8B.json",
-      "updatedAt": "2026-06-15T17:52:39.856Z",
+      "updatedAt": "2026-06-18T20:37:59.334Z",
       "order": 0,
       "chapterId": "connect-to-server-52H4m1TfNt",
       "chapterLabel": "Connect to Server"
@@ -3201,7 +3208,7 @@
         "Documents"
       ],
       "path": "/content/en/pages/guides/cryptpad-guide/documents-1QGExPEBr9.json",
-      "updatedAt": "2026-06-15T17:52:43.697Z",
+      "updatedAt": "2026-06-18T20:38:02.023Z",
       "order": 1,
       "chapterId": "basic-features-BTiSy0beMJ",
       "chapterLabel": "Basic Features"
@@ -3216,7 +3223,7 @@
         "Kanban boards"
       ],
       "path": "/content/en/pages/guides/cryptpad-guide/kanban-boards-U2wuelSn6Z.json",
-      "updatedAt": "2026-06-15T17:52:44.963Z",
+      "updatedAt": "2026-06-18T20:38:03.882Z",
       "order": 2,
       "chapterId": "basic-features-BTiSy0beMJ",
       "chapterLabel": "Basic Features"
@@ -3231,7 +3238,7 @@
         "Presentations"
       ],
       "path": "/content/en/pages/guides/cryptpad-guide/presentations-gWIWMzfeXq.json",
-      "updatedAt": "2026-06-15T17:52:46.180Z",
+      "updatedAt": "2026-06-18T20:38:05.374Z",
       "order": 3,
       "chapterId": "basic-features-BTiSy0beMJ",
       "chapterLabel": "Basic Features"
@@ -3246,7 +3253,7 @@
         "Set up a unit team"
       ],
       "path": "/content/en/pages/guides/cryptpad-guide/set-up-a-unit-team-acg83EqeNh.json",
-      "updatedAt": "2026-06-15T18:30:03.990Z",
+      "updatedAt": "2026-06-18T20:38:08.639Z",
       "order": 4,
       "chapterId": "usage-in-unit-jfKfzdcfOY",
       "chapterLabel": "Usage in Unit"
@@ -3261,7 +3268,7 @@
         "Shared calendar"
       ],
       "path": "/content/en/pages/guides/cryptpad-guide/shared-calendar-uEIsdBqGNk.json",
-      "updatedAt": "2026-06-15T18:30:09.642Z",
+      "updatedAt": "2026-06-18T20:38:10.074Z",
       "order": 5,
       "chapterId": "usage-in-unit-jfKfzdcfOY",
       "chapterLabel": "Usage in Unit"
@@ -3276,7 +3283,7 @@
         "Back up your data"
       ],
       "path": "/content/en/pages/guides/cryptpad-guide/back-up-your-data-xYdkRa1Tms.json",
-      "updatedAt": "2026-06-15T18:30:12.779Z",
+      "updatedAt": "2026-06-18T20:38:47.437Z",
       "order": 6,
       "chapterId": "usage-in-unit-jfKfzdcfOY",
       "chapterLabel": "Usage in Unit"
@@ -4361,6 +4368,666 @@
       "path": "/content/en/pages/contribute-to-project/releases-versioning-KNjehwFcnX.json",
       "updatedAt": "2026-06-16T17:04:33.949Z",
       "order": 3
+    },
+    {
+      "id": "ec1ce3f8-2ce9-4840-b015-f6685afffd72",
+      "slug": "how-atak-plugins-work-GtuYZlJSnX",
+      "collection": "working-with-tak",
+      "title": "How ATAK plugins work",
+      "breadcrumb": [
+        "ATAK Plugin Development",
+        "How ATAK plugins work"
+      ],
+      "path": "/content/en/pages/working-with-tak/how-atak-plugins-work-GtuYZlJSnX.json",
+      "updatedAt": "2026-06-16T22:49:08.755Z",
+      "order": 0,
+      "chapterId": "atak-plugin-development-dkaULfWXcf",
+      "chapterLabel": "ATAK Plugin Development"
+    },
+    {
+      "id": "ec24c460-7658-4c24-a5ae-b56571752320",
+      "slug": "set-up-your-development-environment-NfbAKB4XTl",
+      "collection": "working-with-tak",
+      "title": "Set up your development environment",
+      "breadcrumb": [
+        "ATAK Plugin Development",
+        "Set up your development environment"
+      ],
+      "path": "/content/en/pages/working-with-tak/set-up-your-development-environment-NfbAKB4XTl.json",
+      "updatedAt": "2026-06-16T22:49:09.131Z",
+      "order": 1,
+      "chapterId": "atak-plugin-development-dkaULfWXcf",
+      "chapterLabel": "ATAK Plugin Development"
+    },
+    {
+      "id": "4bed2626-6eb3-4f2c-a1b5-6d1b42b066fd",
+      "slug": "create-your-first-plugin-from-the-template-cHtMhyb8Ma",
+      "collection": "working-with-tak",
+      "title": "Create your first plugin from the template",
+      "breadcrumb": [
+        "ATAK Plugin Development",
+        "Create your first plugin from the template"
+      ],
+      "path": "/content/en/pages/working-with-tak/create-your-first-plugin-from-the-template-cHtMhyb8Ma.json",
+      "updatedAt": "2026-06-16T22:49:09.382Z",
+      "order": 2,
+      "chapterId": "atak-plugin-development-dkaULfWXcf",
+      "chapterLabel": "ATAK Plugin Development"
+    },
+    {
+      "id": "1d5025be-2209-42c9-871a-1a833da77992",
+      "slug": "the-plugin-lifecycle-0Jf1BJ7g7O",
+      "collection": "working-with-tak",
+      "title": "The plugin lifecycle",
+      "breadcrumb": [
+        "ATAK Plugin Development",
+        "The plugin lifecycle"
+      ],
+      "path": "/content/en/pages/working-with-tak/the-plugin-lifecycle-0Jf1BJ7g7O.json",
+      "updatedAt": "2026-06-16T22:49:09.719Z",
+      "order": 3,
+      "chapterId": "atak-plugin-development-dkaULfWXcf",
+      "chapterLabel": "ATAK Plugin Development"
+    },
+    {
+      "id": "962d21f5-32b3-4131-b837-b20cf1a56f3b",
+      "slug": "build-a-ui-the-dropdown-panel-kaH71FJeG8",
+      "collection": "working-with-tak",
+      "title": "Build a UI: the DropDown panel",
+      "breadcrumb": [
+        "ATAK Plugin Development",
+        "Build a UI: the DropDown panel"
+      ],
+      "path": "/content/en/pages/working-with-tak/build-a-ui-the-dropdown-panel-kaH71FJeG8.json",
+      "updatedAt": "2026-06-16T23:04:19.506Z",
+      "order": 4,
+      "chapterId": "atak-plugin-development-dkaULfWXcf",
+      "chapterLabel": "ATAK Plugin Development"
+    },
+    {
+      "id": "06140657-d978-4153-a164-010bbf40170b",
+      "slug": "writing-plugins-in-kotlin-compose-Q4YEtk2N7A",
+      "collection": "working-with-tak",
+      "title": "Writing plugins in Kotlin & Compose",
+      "breadcrumb": [
+        "ATAK Plugin Development",
+        "Writing plugins in Kotlin & Compose"
+      ],
+      "path": "/content/en/pages/working-with-tak/writing-plugins-in-kotlin-compose-Q4YEtk2N7A.json",
+      "updatedAt": "2026-06-16T23:04:18.619Z",
+      "order": 5,
+      "chapterId": "atak-plugin-development-dkaULfWXcf",
+      "chapterLabel": "ATAK Plugin Development"
+    },
+    {
+      "id": "f4439087-2b73-458e-b0d1-ddbb7813c3e0",
+      "slug": "working-with-the-map-cot-JmDIw4jN8e",
+      "collection": "working-with-tak",
+      "title": "Working with the map & CoT",
+      "breadcrumb": [
+        "ATAK Plugin Development",
+        "Working with the map & CoT"
+      ],
+      "path": "/content/en/pages/working-with-tak/working-with-the-map-cot-JmDIw4jN8e.json",
+      "updatedAt": "2026-06-17T01:52:07.376Z",
+      "order": 6,
+      "chapterId": "atak-plugin-development-dkaULfWXcf",
+      "chapterLabel": "ATAK Plugin Development"
+    },
+    {
+      "id": "26367ada-3e7f-428a-9ac3-3d8e0eea9fae",
+      "slug": "map-items-groups-graphics-ZmQRXcNeqF",
+      "collection": "working-with-tak",
+      "title": "Map items, groups & graphics",
+      "breadcrumb": [
+        "ATAK Plugin Development",
+        "Map items, groups & graphics"
+      ],
+      "path": "/content/en/pages/working-with-tak/map-items-groups-graphics-ZmQRXcNeqF.json",
+      "updatedAt": "2026-06-17T01:52:06.271Z",
+      "order": 7,
+      "chapterId": "atak-plugin-development-dkaULfWXcf",
+      "chapterLabel": "ATAK Plugin Development"
+    },
+    {
+      "id": "57dfa2cf-76f0-48e1-8371-7ee6979c3c2c",
+      "slug": "handling-map-events-KDHLfTLGfS",
+      "collection": "working-with-tak",
+      "title": "Handling map events",
+      "breadcrumb": [
+        "ATAK Plugin Development",
+        "Handling map events"
+      ],
+      "path": "/content/en/pages/working-with-tak/handling-map-events-KDHLfTLGfS.json",
+      "updatedAt": "2026-06-17T01:52:06.549Z",
+      "order": 8,
+      "chapterId": "atak-plugin-development-dkaULfWXcf",
+      "chapterLabel": "ATAK Plugin Development"
+    },
+    {
+      "id": "07da26db-2a88-425e-8338-86f44002bd00",
+      "slug": "cot-in-depth-listening-sending-custom-details-nTudtLfqX9",
+      "collection": "working-with-tak",
+      "title": "CoT in depth: listening, sending & custom details",
+      "breadcrumb": [
+        "ATAK Plugin Development",
+        "CoT in depth: listening, sending & custom details"
+      ],
+      "path": "/content/en/pages/working-with-tak/cot-in-depth-listening-sending-custom-details-nTudtLfqX9.json",
+      "updatedAt": "2026-06-17T01:52:06.794Z",
+      "order": 9,
+      "chapterId": "atak-plugin-development-dkaULfWXcf",
+      "chapterLabel": "ATAK Plugin Development"
+    },
+    {
+      "id": "5d1a6ced-e5b0-4d13-afba-0187de3b3b27",
+      "slug": "advanced-practical-apis-2XMWIolD6S",
+      "collection": "working-with-tak",
+      "title": "Advanced & practical APIs",
+      "breadcrumb": [
+        "ATAK Plugin Development",
+        "Advanced & practical APIs"
+      ],
+      "path": "/content/en/pages/working-with-tak/advanced-practical-apis-2XMWIolD6S.json",
+      "updatedAt": "2026-06-17T01:52:07.074Z",
+      "order": 10,
+      "chapterId": "atak-plugin-development-dkaULfWXcf",
+      "chapterLabel": "ATAK Plugin Development"
+    },
+    {
+      "id": "9d082b3c-d23c-45a2-a87e-24b52c82a1c3",
+      "slug": "build-install-run-fWfgBZRkux",
+      "collection": "working-with-tak",
+      "title": "Build, install & run",
+      "breadcrumb": [
+        "ATAK Plugin Development",
+        "Build, install & run"
+      ],
+      "path": "/content/en/pages/working-with-tak/build-install-run-fWfgBZRkux.json",
+      "updatedAt": "2026-06-16T22:49:10.554Z",
+      "order": 11,
+      "chapterId": "atak-plugin-development-dkaULfWXcf",
+      "chapterLabel": "ATAK Plugin Development"
+    },
+    {
+      "id": "f8f488de-d822-4d2f-b2a0-c57482afb420",
+      "slug": "test-debug-your-plugin-78jPxzFzjK",
+      "collection": "working-with-tak",
+      "title": "Test & debug your plugin",
+      "breadcrumb": [
+        "ATAK Plugin Development",
+        "Test & debug your plugin"
+      ],
+      "path": "/content/en/pages/working-with-tak/test-debug-your-plugin-78jPxzFzjK.json",
+      "updatedAt": "2026-06-16T22:49:10.789Z",
+      "order": 12,
+      "chapterId": "atak-plugin-development-dkaULfWXcf",
+      "chapterLabel": "ATAK Plugin Development"
+    },
+    {
+      "id": "6ba7d761-ea9b-4627-90ec-3ffe6b326bcc",
+      "slug": "packaging-distribution-overview-Yfof5rViqj",
+      "collection": "working-with-tak",
+      "title": "Packaging & distribution (overview)",
+      "breadcrumb": [
+        "ATAK Plugin Development",
+        "Packaging & distribution (overview)"
+      ],
+      "path": "/content/en/pages/working-with-tak/packaging-distribution-overview-Yfof5rViqj.json",
+      "updatedAt": "2026-06-16T22:57:03.224Z",
+      "order": 13,
+      "chapterId": "atak-plugin-development-dkaULfWXcf",
+      "chapterLabel": "ATAK Plugin Development"
+    },
+    {
+      "id": "96ac355f-560d-4fbf-8139-f576fcb7c2cc",
+      "slug": "references-attribution-n8JEv3i895",
+      "collection": "working-with-tak",
+      "title": "References & attribution",
+      "breadcrumb": [
+        "ATAK Plugin Development",
+        "References & attribution"
+      ],
+      "path": "/content/en/pages/working-with-tak/references-attribution-n8JEv3i895.json",
+      "updatedAt": "2026-06-17T01:52:07.755Z",
+      "order": 14,
+      "chapterId": "atak-plugin-development-dkaULfWXcf",
+      "chapterLabel": "ATAK Plugin Development"
+    },
+    {
+      "id": "056115ec-4b6a-495a-b48b-19464067f204",
+      "slug": "how-tak-server-works-a3STsGkoWB",
+      "collection": "working-with-tak",
+      "title": "How TAK Server works",
+      "breadcrumb": [
+        "Integrating to TAK Server",
+        "How TAK Server works"
+      ],
+      "path": "/content/en/pages/working-with-tak/how-tak-server-works-a3STsGkoWB.json",
+      "updatedAt": "2026-06-17T18:40:23.782Z",
+      "order": 15,
+      "chapterId": "integrating-to-tak-server-i19y5KVtNV",
+      "chapterLabel": "Integrating to TAK Server"
+    },
+    {
+      "id": "811ea809-6373-461e-a9bd-bc3e3c4d9f0d",
+      "slug": "the-marti-api-the-spec-zWa3vFfeKt",
+      "collection": "working-with-tak",
+      "title": "The Marti API (the spec)",
+      "breadcrumb": [
+        "Integrating to TAK Server",
+        "The Marti API (the spec)"
+      ],
+      "path": "/content/en/pages/working-with-tak/the-marti-api-the-spec-zWa3vFfeKt.json",
+      "updatedAt": "2026-06-17T18:33:30.384Z",
+      "order": 16,
+      "chapterId": "integrating-to-tak-server-i19y5KVtNV",
+      "chapterLabel": "Integrating to TAK Server"
+    },
+    {
+      "id": "768f3122-cc47-4d3a-ab80-77b82e0e0483",
+      "slug": "getting-data-from-tak-server-hszJWvv9UM",
+      "collection": "working-with-tak",
+      "title": "Getting data from TAK Server",
+      "breadcrumb": [
+        "Integrating to TAK Server",
+        "Getting data from TAK Server"
+      ],
+      "path": "/content/en/pages/working-with-tak/getting-data-from-tak-server-hszJWvv9UM.json",
+      "updatedAt": "2026-06-17T18:33:30.659Z",
+      "order": 17,
+      "chapterId": "integrating-to-tak-server-i19y5KVtNV",
+      "chapterLabel": "Integrating to TAK Server"
+    },
+    {
+      "id": "4bdea93b-3a5a-46e4-97f4-a30414c7ed8b",
+      "slug": "pushing-data-to-tak-server-WDTB0ov6LS",
+      "collection": "working-with-tak",
+      "title": "Pushing data to TAK Server",
+      "breadcrumb": [
+        "Integrating to TAK Server",
+        "Pushing data to TAK Server"
+      ],
+      "path": "/content/en/pages/working-with-tak/pushing-data-to-tak-server-WDTB0ov6LS.json",
+      "updatedAt": "2026-06-17T18:33:30.940Z",
+      "order": 18,
+      "chapterId": "integrating-to-tak-server-i19y5KVtNV",
+      "chapterLabel": "Integrating to TAK Server"
+    },
+    {
+      "id": "203db72c-d1a5-4a61-b14d-d9c6c791d72d",
+      "slug": "authentication-the-deploy-app-identity-layer-ENSHL0S08d",
+      "collection": "working-with-tak",
+      "title": "Authentication: the Deploy App identity layer",
+      "breadcrumb": [
+        "Integrating to TAK Server",
+        "Authentication: the Deploy App identity layer"
+      ],
+      "path": "/content/en/pages/working-with-tak/authentication-the-deploy-app-identity-layer-ENSHL0S08d.json",
+      "updatedAt": "2026-06-17T18:21:50.594Z",
+      "order": 19,
+      "chapterId": "integrating-to-tak-server-i19y5KVtNV",
+      "chapterLabel": "Integrating to TAK Server"
+    },
+    {
+      "id": "fd617030-5259-4f27-888c-f92fbcc5701a",
+      "slug": "enrolling-getting-a-client-certificate-vze3g7Eshz",
+      "collection": "working-with-tak",
+      "title": "Enrolling & getting a client certificate",
+      "breadcrumb": [
+        "Integrating to TAK Server",
+        "Enrolling & getting a client certificate"
+      ],
+      "path": "/content/en/pages/working-with-tak/enrolling-getting-a-client-certificate-vze3g7Eshz.json",
+      "updatedAt": "2026-06-17T18:21:50.829Z",
+      "order": 20,
+      "chapterId": "integrating-to-tak-server-i19y5KVtNV",
+      "chapterLabel": "Integrating to TAK Server"
+    },
+    {
+      "id": "e723f417-1ef3-4077-99ed-c3b74e226cb7",
+      "slug": "keycloak-identity-groups-WXsDTvK7H8",
+      "collection": "working-with-tak",
+      "title": "Keycloak: identity & groups",
+      "breadcrumb": [
+        "Integrating to TAK Server",
+        "Keycloak: identity & groups"
+      ],
+      "path": "/content/en/pages/working-with-tak/keycloak-identity-groups-WXsDTvK7H8.json",
+      "updatedAt": "2026-06-17T18:40:24.258Z",
+      "order": 21,
+      "chapterId": "integrating-to-tak-server-i19y5KVtNV",
+      "chapterLabel": "Integrating to TAK Server"
+    },
+    {
+      "id": "660791e8-bb81-4394-98b7-d29e591d52a4",
+      "slug": "end-to-end-integration-EOUZgpAdh0",
+      "collection": "working-with-tak",
+      "title": "End-to-end integration",
+      "breadcrumb": [
+        "Integrating to TAK Server",
+        "End-to-end integration"
+      ],
+      "path": "/content/en/pages/working-with-tak/end-to-end-integration-EOUZgpAdh0.json",
+      "updatedAt": "2026-06-17T18:21:51.351Z",
+      "order": 22,
+      "chapterId": "integrating-to-tak-server-i19y5KVtNV",
+      "chapterLabel": "Integrating to TAK Server"
+    },
+    {
+      "id": "f7af3295-c9b1-4745-afef-28227f66acc1",
+      "slug": "references-J0wEJwIM8Z",
+      "collection": "working-with-tak",
+      "title": "References",
+      "breadcrumb": [
+        "Integrating to TAK Server",
+        "References"
+      ],
+      "path": "/content/en/pages/working-with-tak/references-J0wEJwIM8Z.json",
+      "updatedAt": "2026-06-17T18:40:24.583Z",
+      "order": 23,
+      "chapterId": "integrating-to-tak-server-i19y5KVtNV",
+      "chapterLabel": "Integrating to TAK Server"
+    },
+    {
+      "id": "b5bc24dc-8036-4094-b1d7-f241451a4c13",
+      "slug": "how-the-federation-hub-works-kfYEsVehxZ",
+      "collection": "working-with-tak",
+      "title": "How the Federation Hub works",
+      "breadcrumb": [
+        "Federation Hub: connecting multiple TAK Servers",
+        "How the Federation Hub works"
+      ],
+      "path": "/content/en/pages/working-with-tak/how-the-federation-hub-works-kfYEsVehxZ.json",
+      "updatedAt": "2026-06-17T19:13:33.578Z",
+      "order": 24,
+      "chapterId": "federation-hub-connecting-multiple-tak-servers-pfBog3Q9uI",
+      "chapterLabel": "Federation Hub: connecting multiple TAK Servers"
+    },
+    {
+      "id": "7ea941af-463b-46fb-b726-cecf31b2038d",
+      "slug": "install-run-the-federation-hub-Qq2V1k9VZ2",
+      "collection": "working-with-tak",
+      "title": "Install & run the Federation Hub",
+      "breadcrumb": [
+        "Federation Hub: connecting multiple TAK Servers",
+        "Install & run the Federation Hub"
+      ],
+      "path": "/content/en/pages/working-with-tak/install-run-the-federation-hub-Qq2V1k9VZ2.json",
+      "updatedAt": "2026-06-17T19:13:33.958Z",
+      "order": 25,
+      "chapterId": "federation-hub-connecting-multiple-tak-servers-pfBog3Q9uI",
+      "chapterLabel": "Federation Hub: connecting multiple TAK Servers"
+    },
+    {
+      "id": "5d364152-9f0f-4c1c-bfe5-430c61d2630e",
+      "slug": "establish-trust-share-cas-sUaHBtGVfZ",
+      "collection": "working-with-tak",
+      "title": "Establish trust (share CAs)",
+      "breadcrumb": [
+        "Federation Hub: connecting multiple TAK Servers",
+        "Establish trust (share CAs)"
+      ],
+      "path": "/content/en/pages/working-with-tak/establish-trust-share-cas-sUaHBtGVfZ.json",
+      "updatedAt": "2026-06-17T19:13:34.319Z",
+      "order": 26,
+      "chapterId": "federation-hub-connecting-multiple-tak-servers-pfBog3Q9uI",
+      "chapterLabel": "Federation Hub: connecting multiple TAK Servers"
+    },
+    {
+      "id": "8217eeb5-9f02-4e3b-a1af-96a747c0e015",
+      "slug": "define-the-federation-policy-uaAcGzSU3h",
+      "collection": "working-with-tak",
+      "title": "Define the federation policy",
+      "breadcrumb": [
+        "Federation Hub: connecting multiple TAK Servers",
+        "Define the federation policy"
+      ],
+      "path": "/content/en/pages/working-with-tak/define-the-federation-policy-uaAcGzSU3h.json",
+      "updatedAt": "2026-06-17T19:13:34.713Z",
+      "order": 27,
+      "chapterId": "federation-hub-connecting-multiple-tak-servers-pfBog3Q9uI",
+      "chapterLabel": "Federation Hub: connecting multiple TAK Servers"
+    },
+    {
+      "id": "b51649b6-dffd-46ae-9efd-1f89ff18219f",
+      "slug": "control-what-crosses-group-filtering-DKvIW89bZD",
+      "collection": "working-with-tak",
+      "title": "Control what crosses (group filtering)",
+      "breadcrumb": [
+        "Federation Hub: connecting multiple TAK Servers",
+        "Control what crosses (group filtering)"
+      ],
+      "path": "/content/en/pages/working-with-tak/control-what-crosses-group-filtering-DKvIW89bZD.json",
+      "updatedAt": "2026-06-17T19:13:34.997Z",
+      "order": 28,
+      "chapterId": "federation-hub-connecting-multiple-tak-servers-pfBog3Q9uI",
+      "chapterLabel": "Federation Hub: connecting multiple TAK Servers"
+    },
+    {
+      "id": "8410acfb-6970-4135-83d2-23ec0d7222bb",
+      "slug": "connect-a-deploy-app-tak-server-nTjT0SDPzw",
+      "collection": "working-with-tak",
+      "title": "Connect a Deploy App TAK Server",
+      "breadcrumb": [
+        "Federation Hub: connecting multiple TAK Servers",
+        "Connect a Deploy App TAK Server"
+      ],
+      "path": "/content/en/pages/working-with-tak/connect-a-deploy-app-tak-server-nTjT0SDPzw.json",
+      "updatedAt": "2026-06-17T19:13:35.688Z",
+      "order": 29,
+      "chapterId": "federation-hub-connecting-multiple-tak-servers-pfBog3Q9uI",
+      "chapterLabel": "Federation Hub: connecting multiple TAK Servers"
+    },
+    {
+      "id": "4a4e6bd9-7384-4e83-9b6c-4d9cabab1ca3",
+      "slug": "operate-troubleshoot-B5LoRqtcMh",
+      "collection": "working-with-tak",
+      "title": "Operate & troubleshoot",
+      "breadcrumb": [
+        "Federation Hub: connecting multiple TAK Servers",
+        "Operate & troubleshoot"
+      ],
+      "path": "/content/en/pages/working-with-tak/operate-troubleshoot-B5LoRqtcMh.json",
+      "updatedAt": "2026-06-17T19:13:36.458Z",
+      "order": 30,
+      "chapterId": "federation-hub-connecting-multiple-tak-servers-pfBog3Q9uI",
+      "chapterLabel": "Federation Hub: connecting multiple TAK Servers"
+    },
+    {
+      "id": "d54dac88-8f0d-4ede-8e8b-60ce204bb76f",
+      "slug": "references-jcEIPLZieK",
+      "collection": "working-with-tak",
+      "title": "References",
+      "breadcrumb": [
+        "Federation Hub: connecting multiple TAK Servers",
+        "References"
+      ],
+      "path": "/content/en/pages/working-with-tak/references-jcEIPLZieK.json",
+      "updatedAt": "2026-06-17T20:21:46.713Z",
+      "order": 31,
+      "chapterId": "federation-hub-connecting-multiple-tak-servers-pfBog3Q9uI",
+      "chapterLabel": "Federation Hub: connecting multiple TAK Servers"
+    },
+    {
+      "id": "87ff9599-50e7-420c-bd0b-639c7f7b5708",
+      "slug": "the-iac-trust-model-oJJLybgejE",
+      "collection": "working-with-tak",
+      "title": "The IaC trust model",
+      "breadcrumb": [
+        "Wire up Deploy App TAK Servers via a Federation Hub (IaC)",
+        "The IaC trust model"
+      ],
+      "path": "/content/en/pages/working-with-tak/the-iac-trust-model-oJJLybgejE.json",
+      "updatedAt": "2026-06-19T14:18:51.383Z",
+      "order": 32,
+      "chapterId": "wire-up-deploy-app-tak-servers-via-a-federation-hub-iac-7b653SFdyn",
+      "chapterLabel": "Wire up Deploy App TAK Servers via a Federation Hub"
+    },
+    {
+      "id": "8444e045-43a2-42ac-a18b-a59eabe65a47",
+      "slug": "the-tak-server-side-bCErH3lFoW",
+      "collection": "working-with-tak",
+      "title": "The TAK Server side",
+      "breadcrumb": [
+        "Wire up Deploy App TAK Servers via a Federation Hub (IaC)",
+        "The TAK Server side"
+      ],
+      "path": "/content/en/pages/working-with-tak/the-tak-server-side-bCErH3lFoW.json",
+      "updatedAt": "2026-06-19T14:18:51.772Z",
+      "order": 33,
+      "chapterId": "wire-up-deploy-app-tak-servers-via-a-federation-hub-iac-7b653SFdyn",
+      "chapterLabel": "Wire up Deploy App TAK Servers via a Federation Hub"
+    },
+    {
+      "id": "a8dcab49-1e6f-4223-b0b2-800ebd0bbb43",
+      "slug": "keycloak-groups-as-code-KGceqCKPVN",
+      "collection": "working-with-tak",
+      "title": "Keycloak groups as code",
+      "breadcrumb": [
+        "Wire up Deploy App TAK Servers via a Federation Hub (IaC)",
+        "Keycloak groups as code"
+      ],
+      "path": "/content/en/pages/working-with-tak/keycloak-groups-as-code-KGceqCKPVN.json",
+      "updatedAt": "2026-06-19T14:18:52.180Z",
+      "order": 34,
+      "chapterId": "wire-up-deploy-app-tak-servers-via-a-federation-hub-iac-7b653SFdyn",
+      "chapterLabel": "Wire up Deploy App TAK Servers via a Federation Hub"
+    },
+    {
+      "id": "289e23d8-999f-4615-803e-5427d0d18190",
+      "slug": "deploy-the-federation-hub-as-iac-pyaoAuGHbr",
+      "collection": "working-with-tak",
+      "title": "Deploy the Federation Hub as IaC",
+      "breadcrumb": [
+        "Wire up Deploy App TAK Servers via a Federation Hub (IaC)",
+        "Deploy the Federation Hub as IaC"
+      ],
+      "path": "/content/en/pages/working-with-tak/deploy-the-federation-hub-as-iac-pyaoAuGHbr.json",
+      "updatedAt": "2026-06-19T14:18:52.662Z",
+      "order": 35,
+      "chapterId": "wire-up-deploy-app-tak-servers-via-a-federation-hub-iac-7b653SFdyn",
+      "chapterLabel": "Wire up Deploy App TAK Servers via a Federation Hub"
+    },
+    {
+      "id": "7d6a35cd-0562-449e-8234-e6c6babfca00",
+      "slug": "the-federation-policy-as-code-iza8fDoAU8",
+      "collection": "working-with-tak",
+      "title": "The federation policy as code",
+      "breadcrumb": [
+        "Wire up Deploy App TAK Servers via a Federation Hub (IaC)",
+        "The federation policy as code"
+      ],
+      "path": "/content/en/pages/working-with-tak/the-federation-policy-as-code-iza8fDoAU8.json",
+      "updatedAt": "2026-06-19T14:18:52.992Z",
+      "order": 36,
+      "chapterId": "wire-up-deploy-app-tak-servers-via-a-federation-hub-iac-7b653SFdyn",
+      "chapterLabel": "Wire up Deploy App TAK Servers via a Federation Hub"
+    },
+    {
+      "id": "c6fee472-625f-4dd6-a2ab-9857e55e0ffe",
+      "slug": "bring-up-sequence-verification-ydtDk00K2h",
+      "collection": "working-with-tak",
+      "title": "Bring-up sequence & verification",
+      "breadcrumb": [
+        "Wire up Deploy App TAK Servers via a Federation Hub (IaC)",
+        "Bring-up sequence & verification"
+      ],
+      "path": "/content/en/pages/working-with-tak/bring-up-sequence-verification-ydtDk00K2h.json",
+      "updatedAt": "2026-06-19T14:18:53.352Z",
+      "order": 37,
+      "chapterId": "wire-up-deploy-app-tak-servers-via-a-federation-hub-iac-7b653SFdyn",
+      "chapterLabel": "Wire up Deploy App TAK Servers via a Federation Hub"
+    },
+    {
+      "id": "b71c66a6-4b6e-48a0-8747-24137d68f22d",
+      "slug": "references-KdqJO1rcQ0",
+      "collection": "working-with-tak",
+      "title": "References",
+      "breadcrumb": [
+        "Wire up Deploy App TAK Servers via a Federation Hub (IaC)",
+        "References"
+      ],
+      "path": "/content/en/pages/working-with-tak/references-KdqJO1rcQ0.json",
+      "updatedAt": "2026-06-19T14:18:53.723Z",
+      "order": 38,
+      "chapterId": "wire-up-deploy-app-tak-servers-via-a-federation-hub-iac-7b653SFdyn",
+      "chapterLabel": "Wire up Deploy App TAK Servers via a Federation Hub"
+    },
+    {
+      "id": "641da670-e20e-41b0-ae04-9a829e8b3ecb",
+      "slug": "hub-to-hub-trust-and-connection-VIV7jDwrDx",
+      "collection": "working-with-tak",
+      "title": "Hub-to-hub trust and connection",
+      "breadcrumb": [
+        "Wire up two Federation Hubs (IaC)",
+        "Hub-to-hub trust and connection"
+      ],
+      "path": "/content/en/pages/working-with-tak/hub-to-hub-trust-and-connection-VIV7jDwrDx.json",
+      "updatedAt": "2026-06-19T14:18:54.666Z",
+      "order": 39,
+      "chapterId": "wire-up-two-federation-hubs-iac-fzNcHRftqI",
+      "chapterLabel": "Wire up two Federation Hubs"
+    },
+    {
+      "id": "bdab2509-9294-44c3-ab86-3513a3fe9fbd",
+      "slug": "policy-and-group-filtering-across-hubs-MvZAotZIQl",
+      "collection": "working-with-tak",
+      "title": "Policy and group filtering across hubs",
+      "breadcrumb": [
+        "Wire up two Federation Hubs (IaC)",
+        "Policy and group filtering across hubs"
+      ],
+      "path": "/content/en/pages/working-with-tak/policy-and-group-filtering-across-hubs-MvZAotZIQl.json",
+      "updatedAt": "2026-06-19T14:18:55.106Z",
+      "order": 40,
+      "chapterId": "wire-up-two-federation-hubs-iac-fzNcHRftqI",
+      "chapterLabel": "Wire up two Federation Hubs"
+    },
+    {
+      "id": "4894fe52-07da-4392-9191-d162fa215e41",
+      "slug": "bring-up-and-verification-4g1mSzoPjs",
+      "collection": "working-with-tak",
+      "title": "Bring-up and verification",
+      "breadcrumb": [
+        "Wire up two Federation Hubs (IaC)",
+        "Bring-up and verification"
+      ],
+      "path": "/content/en/pages/working-with-tak/bring-up-and-verification-4g1mSzoPjs.json",
+      "updatedAt": "2026-06-19T14:18:55.519Z",
+      "order": 41,
+      "chapterId": "wire-up-two-federation-hubs-iac-fzNcHRftqI",
+      "chapterLabel": "Wire up two Federation Hubs"
+    },
+    {
+      "id": "5abdcea3-fd19-407d-b267-87bfa7062171",
+      "slug": "scaling-to-many-groups-5hLiku0O4u",
+      "collection": "working-with-tak",
+      "title": "Scaling to many groups",
+      "breadcrumb": [
+        "Wire up two Federation Hubs (IaC)",
+        "Scaling to many groups"
+      ],
+      "path": "/content/en/pages/working-with-tak/scaling-to-many-groups-5hLiku0O4u.json",
+      "updatedAt": "2026-06-19T14:18:55.781Z",
+      "order": 42,
+      "chapterId": "wire-up-two-federation-hubs-iac-fzNcHRftqI",
+      "chapterLabel": "Wire up two Federation Hubs"
+    },
+    {
+      "id": "fb920d3e-0b9e-41fa-960c-e28e7f15ec2f",
+      "slug": "references-n9W8lB6Gpz",
+      "collection": "working-with-tak",
+      "title": "References",
+      "breadcrumb": [
+        "Wire up two Federation Hubs (IaC)",
+        "References"
+      ],
+      "path": "/content/en/pages/working-with-tak/references-n9W8lB6Gpz.json",
+      "updatedAt": "2026-06-19T14:18:56.060Z",
+      "order": 43,
+      "chapterId": "wire-up-two-federation-hubs-iac-fzNcHRftqI",
+      "chapterLabel": "Wire up two Federation Hubs"
     }
   ]
 }

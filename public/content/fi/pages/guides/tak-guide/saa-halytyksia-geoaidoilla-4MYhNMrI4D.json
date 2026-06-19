@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "166d61a1-6834-4a01-bff3-833962305c7f",
+  "slug": "saa-halytyksia-geoaidoilla-4MYhNMrI4D",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Saa hälytyksiä geoaidoilla",
+  "breadcrumb": [
+    "Platforms",
+    "WinTAK",
+    "EDISTYNEET YDINOMINAISUUDET",
+    "Saa hälytyksiä geoaidoilla"
+  ],
+  "createdAt": "2026-06-18T19:33:29.608Z",
+  "updatedAt": "2026-06-18T20:23:52.917Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/get-alerts-with-geofences-Y1Bgr7UInI",
+    "fi": "/fi/guides/tak-guide/saa-halytyksia-geoaidoilla-4MYhNMrI4D",
+    "sv": "/sv/guides/tak-guide/fa-varningar-med-geostangsel-YvTX3n2Ucj"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Geoaita on kartalle piirtämäsi raja, joka antaa hälytyksen, kun jokin ylittää sen — näin voit valvoa aluetta tuijottamatta ruutua.</p>\n<blockquote>\n<p>Luonnos: kirjoitettu ilman kuvakaappauksia. Lisää WinTAK-geoaitojen kuvakaappaukset, kun niitä on saatavilla.</p>\n</blockquote>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Mitä geoaita tekee",
+          "layout": "text",
+          "html": "<p>Geoaita valvoo kartalla olevaa muotoa ja ilmoittaa sinulle, kun seurattava kohde <strong>saapuu</strong> siihen tai <strong>poistuu</strong> siitä. Käytä sitä lähestymisreitin, rajan tai kielletyn alueen valvontaan.</p>",
+          "images": []
+        },
+        {
+          "title": "Luo geoaita",
+          "layout": "text",
+          "html": "<p>Piirrä <strong>alue</strong> (ympyrä tai monikulmio) piirtotyökaluilla ja muunna se sitten geoaidaksi sen asetuksista. Geoaita on sidottu kyseiseen muotoon.</p>",
+          "images": []
+        },
+        {
+          "title": "Aseta hälytysehdot",
+          "layout": "text",
+          "html": "<p>Valitse, mikä laukaisee hälytyksen — saapuminen ja/tai poistuminen — ja mitä kohteita valvotaan (esimerkiksi viholliset tai tuntemattomat kohteet). Säädä se niin, että saat hyödyllisiä hälytyksiä etkä turhaa kohinaa.</p>",
+          "images": []
+        },
+        {
+          "title": "Vastaanota hälytykset",
+          "layout": "text",
+          "html": "<p>Kun ehto täyttyy, WinTAK hälyttää sinua ja korostaa rajan ylityksen kartalla. Kuittaa se, arvioi tilanne ja raportoi RECON-syötteen tai viestintätyökalujesi kautta tarpeen mukaan.</p>",
+          "images": []
+        }
+      ]
+    }
+  ]
+}

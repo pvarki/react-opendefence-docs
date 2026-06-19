@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "f8f488de-d822-4d2f-b2a0-c57482afb420",
+  "slug": "test-debug-your-plugin-78jPxzFzjK",
+  "collection": "working-with-tak",
+  "locale": "en",
+  "title": "Test & debug your plugin",
+  "breadcrumb": [
+    "ATAK Plugin Development",
+    "Test & debug your plugin"
+  ],
+  "createdAt": "2026-06-16T22:49:07.276Z",
+  "updatedAt": "2026-06-16T22:49:10.789Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Debugging",
+      "id": "debugging"
+    },
+    {
+      "depth": 2,
+      "text": "Testing",
+      "id": "testing"
+    },
+    {
+      "depth": 2,
+      "text": "Common pitfalls",
+      "id": "common-pitfalls"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Because a plugin runs inside ATAK's process, you debug it like any Android app attached to ATAK, and you test it with standard Android tooling.</p>\n<h2 id=\"debugging\"><a href=\"#debugging\">Debugging</a></h2>\n<ul>\n<li><strong>Logcat.</strong> Use ATAK's logging (<code>com.atakmap.coremap.log.Log</code>) or Android's <code>android.util.Log</code> and filter logcat by your <code>TAG</code>. The example logs lifecycle transitions (<code>onStart</code>, <code>onResume</code>, …) and receiver activity — keep that habit; it makes the load/enable sequence visible.</li>\n<li><strong>Attach the debugger.</strong> Install the debug build (<code>installCivDebug</code>), launch ATAK, then <strong>Attach Debugger to Android Process</strong> in Android Studio and pick the ATAK process. Breakpoints in your plugin code work normally because your classes are loaded into that process.</li>\n<li><strong>Iterate.</strong> Re-run <code>installCivDebug</code> to push a new build; restart ATAK so it reloads the plugin.</li>\n</ul>\n<h2 id=\"testing\"><a href=\"#testing\">Testing</a></h2>\n<p>The example ships both instrumentation and unit tests, which are a good model:</p>\n<ul>\n<li><code>app/src/androidTest/…</code> — <strong>instrumentation tests</strong> that run on a device/emulator with ATAK present (e.g. <code>MapTest</code>, <code>GeocoordTest</code>, and a <code>HelloWorldRobot</code> helper that drives the plugin UI).</li>\n<li><code>app/src/test/…</code> — <strong>local unit tests</strong> for logic that doesn't need the device.</li>\n</ul>\n<p>Run them with the usual Gradle test tasks (matching your flavor), e.g. <code>./gradlew testCivDebugUnitTest</code> for unit tests and <code>./gradlew connectedCivDebugAndroidTest</code> for instrumentation tests on a connected device.</p>\n<h2 id=\"common-pitfalls\"><a href=\"#common-pitfalls\">Common pitfalls</a></h2>\n<table>\n<thead>\n<tr>\n<th>Symptom</th>\n<th>Likely cause</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><code>AlertDialog</code>/<code>Toast</code> crashes instantly</td>\n<td>Built with the <strong>plugin context</strong> instead of <code>getMapView().getContext()</code>.</td>\n</tr>\n<tr>\n<td>Plugin never appears in ATAK</td>\n<td>API marker mismatch, or the <code>com.atakmap.app.component</code> discovery hook is missing/renamed inconsistently.</td>\n</tr>\n<tr>\n<td>Resources not found (<code>R.layout</code>/<code>R.drawable</code> null)</td>\n<td>Inflated/loaded with the MapView context instead of the <strong>plugin context</strong>.</td>\n</tr>\n<tr>\n<td>Works in debug, breaks in release</td>\n<td>ProGuard stripped/renamed classes referenced reflectively or via <code>plugin.xml</code>; add keep rules in <code>proguard-gradle.txt</code>.</td>\n</tr>\n<tr>\n<td>Duplicate panels stack up</td>\n<td>Missing the <code>isClosed()</code> / <code>unhideDropDown()</code> re-open guard in <code>onReceive</code>.</td>\n</tr>\n<tr>\n<td>Theme looks wrong</td>\n<td><code>context.setTheme(R.style.ATAKPluginTheme)</code> not called in <code>MapComponent.onCreate</code>.</td>\n</tr>\n</tbody>\n</table>\n<p>→ Next: <a href=\"/en/working-with-tak/packaging-distribution-overview-Yfof5rViqj\">Packaging &#x26; distribution</a>.</p>"
+    }
+  ]
+}

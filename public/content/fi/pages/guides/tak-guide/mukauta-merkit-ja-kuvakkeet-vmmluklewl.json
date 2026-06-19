@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "id": "9905d47e-ebee-420e-a38a-15a857209579",
+  "slug": "mukauta-merkit-ja-kuvakkeet-vmmluklewl",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Mukauta merkit ja kuvakkeet",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "Edistyneet ydintoiminnot",
+    "Mukauta merkit ja kuvakkeet"
+  ],
+  "createdAt": "2026-06-18T19:27:15.350Z",
+  "updatedAt": "2026-06-18T20:15:12.955Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/customize-markers-icons-TGz9RiGwju",
+    "fi": "/fi/guides/tak-guide/mukauta-merkit-ja-kuvakkeet-vmmluklewl",
+    "sv": "/sv/guides/tak-guide/anpassa-markorer-och-ikoner-kfkJXTKO8b"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Valitse oikea symboli sille, mitä raportoit, vaihda tehtäväkohtaisiin kuvakesarjoihin ja säädä oma Self-Marker-merkkisi niin, että ryhmä tunnistaa sinut yhdellä silmäyksellä.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Valitse merkin alityyppi",
+          "layout": "image-bottom",
+          "html": "<p>Kun olet valinnut merkin, napauta alityyppikenttää avataksesi <strong>Select Subtype</strong> ja valitse tarvitsemasi liittymä. Käytä <strong>Search</strong>-toimintoa hypätäksesi suoraan alityyppiin sen sijaan, että selaisit listaa.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/377dc3d0016dbbf9.webp",
+              "width": 267,
+              "height": 165
+            }
+          ]
+        },
+        {
+          "title": "Vaihda tehtäväkuvakesarjaan",
+          "layout": "image-bottom",
+          "html": "<p>Pyyhkäise kuvakesarja-aluetta tai napauta <strong>Iconset Name</strong> -kenttää avataksesi paletin listan ja valitse sitten <strong>Mission</strong> tehtäväkohtaisille symboleille, kuten Contact Point (CP), Initial Point (IP) ja Observation Point (OP).</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/88309ebe5bcf3eb9.webp",
+              "width": 221,
+              "height": 166
+            }
+          ]
+        },
+        {
+          "title": "Mukauta oma Self-Marker-merkkisi",
+          "layout": "image-bottom",
+          "html": "<p>Aseta merkin koko, pääväri ja ääriviiva kohdassa <strong>Settings > Display Preferences > My Location Color/Size</strong>. Käytä <strong>Change/Create Icon Main Custom Color</strong>- ja <strong>Change/Create Icon Outline Custom Color</strong> -liukusäätimiä saadaksesi sen erottumaan kartalla.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/3912ff240588c91e.webp",
+              "width": 254,
+              "height": 211
+            }
+          ]
+        },
+        {
+          "title": "Sijoita se Fine Adjustilla",
+          "layout": "image-bottom",
+          "html": "<p>Paina pitkään <strong>Fine Adjust</strong> Self-Marker-pikavalikossa avataksesi alipikavalikon. Syötä tarkka <strong>MGRS Location</strong> tai koordinaatti sijoittaaksesi itsesi täsmälleen sen sijaan, että luottaisit GPS-poikkeamaan.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/571a196b0e34856b.webp",
+              "width": 170,
+              "height": 148
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

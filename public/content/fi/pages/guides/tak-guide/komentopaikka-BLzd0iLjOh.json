@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "b05c3000-8eb8-49a9-9330-1c6d8b24e2dc",
+  "slug": "komentopaikka-BLzd0iLjOh",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Komentopaikka",
+  "breadcrumb": [
+    "Platforms",
+    "TAK Tracker - Android",
+    "KÄYTTÖ ROOLEITTAIN",
+    "Komentopaikka"
+  ],
+  "createdAt": "2026-06-18T19:44:16.386Z",
+  "updatedAt": "2026-06-18T20:26:59.682Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/command-post-t2fdgSrk3R",
+    "fi": "/fi/guides/tak-guide/komentopaikka-BLzd0iLjOh",
+    "sv": "/sv/guides/tak-guide/kommandoplats-NyhTmwJFEe"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>(Tätä välilehteä ei pitäisi näyttää)</p>"
+    }
+  ]
+}

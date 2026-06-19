@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "id": "dd9d0236-0270-4234-b69a-e86e9f2e5be4",
+  "slug": "lue-tilasi-ja-sijaintisi-2FUEtnpZg4",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Lue tilasi ja sijaintisi",
+  "breadcrumb": [
+    "Platforms",
+    "TAK Tracker - Android",
+    "PERUSTOIMINNOT",
+    "Lue tilasi ja sijaintisi"
+  ],
+  "createdAt": "2026-06-18T19:44:11.375Z",
+  "updatedAt": "2026-06-18T20:26:43.749Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/read-your-status-location-xFbq6tWEQC",
+    "fi": "/fi/guides/tak-guide/lue-tilasi-ja-sijaintisi-2FUEtnpZg4",
+    "sv": "/sv/guides/tak-guide/las-av-din-status-och-position-Vl9DXPZ7S8"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Kun olet liittynyt, TAK Trackerin pääikkuna näyttää sijaintisi, yhteyden tilan ja liiketietosi yhdellä silmäyksellä. Se toimii pysty- tai vaaka-asennossa.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Avaa pääikkuna",
+          "layout": "image-bottom",
+          "html": "<p>Liittymisen jälkeen pääikkuna täyttyy reaaliaikaisella datalla. Jokainen ruutu päivittyy itsenäisesti — napauta ruutua vaihtaaksesi sen näyttämää tietoa tai käytettyä yksikköä.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/cb231cb764dcceaa.webp",
+              "width": 266,
+              "height": 116
+            }
+          ]
+        },
+        {
+          "title": "Lue koordinaattisi",
+          "layout": "image-bottom",
+          "html": "<p>Sijaintiruutu näyttää koordinaattisi. Oletusmuoto on <strong>degrees / minutes / seconds (DMS)</strong> — napauta ruutua vaihtaaksesi sen muotoon <strong>MGRS</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/638b19d7f6f8bdc7.webp",
+              "width": 174,
+              "height": 67
+            }
+          ]
+        },
+        {
+          "title": "Tarkista yhteytesi",
+          "layout": "image-bottom",
+          "html": "<p>Yhteysruutu näyttää kolme tilailmaisinta:</p>\n<ul>\n<li><strong>Server</strong> — näyttää virheen, jos liittyminen epäonnistui</li>\n<li><strong>GPS</strong> — näyttää <em>not available</em>, kunnes otat sijaintipalvelut käyttöön Androidin alasvedettävästä valikosta</li>\n<li><strong>Compass</strong> — ihanteellisesti <strong>High</strong>; <em>Moderate</em> tai <em>Unreliable</em> tarkoittaa yleensä magneettista häiriötä</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/571fa1a015eeaae4.webp",
+              "width": 239,
+              "height": 133
+            }
+          ]
+        },
+        {
+          "title": "Lue korkeus, nopeus, kompassi ja suunta",
+          "layout": "image-bottom",
+          "html": "<p>Muut neljä ruutua näyttävät liiketietosi. Napauta mitä tahansa ruutua vaihtaaksesi sen yksiköitä:</p>\n<ul>\n<li><strong>Altitude</strong> — m tai ft</li>\n<li><strong>Speed</strong> — m/s, kps, fps tai mph</li>\n<li><strong>Compass</strong> ja <strong>Heading</strong> — °MN tai °TN</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/48c378e1bcf7961a.webp",
+              "width": 150,
+              "height": 127
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

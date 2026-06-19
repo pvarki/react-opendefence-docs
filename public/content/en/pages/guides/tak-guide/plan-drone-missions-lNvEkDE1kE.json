@@ -8,13 +8,18 @@
   "breadcrumb": [
     "Platforms",
     "ATAK",
-    "Supported Plugins",
+    "SUPPORTED PLUGINS",
     "UAS Tool",
     "Plan Drone Missions"
   ],
   "createdAt": "2026-06-15T19:49:36.760Z",
-  "updatedAt": "2026-06-15T19:49:36.760Z",
+  "updatedAt": "2026-06-18T20:21:48.662Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/plan-drone-missions-lNvEkDE1kE",
+    "fi": "/fi/guides/tak-guide/suunnittele-lennokkitehtavat-emxgZTF3x4",
+    "sv": "/sv/guides/tak-guide/planera-dronaruppdrag-fOPXznHLwt"
+  },
   "blocks": [
     {
       "type": "html",
@@ -75,7 +80,7 @@
         {
           "title": "Create a MAVLink mission",
           "layout": "image-bottom",
-          "html": "<p>For step-by-step tasking, open the Add Task Menu (the <strong>+</strong>) and select <strong>Add</strong>. Use the <strong>MISSION</strong> tab for the flight, <strong>FENCE</strong> for geofences, and <strong>RALLY</strong> for rally points.</p>",
+          "html": "<p>For step-by-step tasking, open the Add Task Menu (the <strong>+</strong>) and select <strong>Add</strong>.</p>\n<ul>\n<li>Use the <strong>MISSION</strong> tab for the flight, <strong>FENCE</strong> for geofences, and <strong>RALLY</strong> for rally points.</li>\n</ul>",
           "images": [
             {
               "src": "/content/images/en/attachments/db50b1677519014a.webp",

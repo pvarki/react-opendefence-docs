@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "e01d1754-6846-4799-8e35-5d3ca37e0304",
+  "slug": "felsokning-4GY9QUGGmF",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Felsökning",
+  "breadcrumb": [
+    "Platforms",
+    "TAK Tracker - Apple",
+    "Felsökning"
+  ],
+  "createdAt": "2026-06-18T19:45:53.217Z",
+  "updatedAt": "2026-06-18T20:27:49.650Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/troubleshooting-4heIv7ZV7m",
+    "fi": "/fi/guides/tak-guide/vianmaaritys-MchVmRHKOC",
+    "sv": "/sv/guides/tak-guide/felsokning-4GY9QUGGmF"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>(Den här fliken ska inte visas)</p>"
+    }
+  ]
+}

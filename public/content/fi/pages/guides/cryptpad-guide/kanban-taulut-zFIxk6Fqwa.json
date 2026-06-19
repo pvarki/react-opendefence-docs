@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "id": "f8ced10f-e7f1-431d-af1f-4d169f70ca67",
+  "slug": "kanban-taulut-zFIxk6Fqwa",
+  "collection": "guides/cryptpad-guide",
+  "locale": "fi",
+  "title": "Kanban-taulut",
+  "breadcrumb": [
+    "Perustoiminnot",
+    "Kanban-taulut"
+  ],
+  "createdAt": "2026-06-18T20:34:38.317Z",
+  "updatedAt": "2026-06-18T20:38:04.371Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/cryptpad-guide/kanban-boards-U2wuelSn6Z",
+    "fi": "/fi/guides/cryptpad-guide/kanban-taulut-zFIxk6Fqwa",
+    "sv": "/sv/guides/cryptpad-guide/kanban-tavlor-qoIqgWi2fK"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>CryptPadin Kanban-sovellus on kuin muistilappujen taulu. Järjestä tehtävät valmistumisvaiheen mukaan tai ylläpidä yksikkösi tilannetaulua.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Luo Kanban-taulu",
+          "layout": "image-bottom",
+          "html": "<p>Napsauta <strong>+</strong> ja valitse <strong>Kanban</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/a2efd8a3607bc944.webp",
+              "width": 1356,
+              "height": 1170
+            }
+          ]
+        },
+        {
+          "title": "Muokkaa taulua",
+          "layout": "image-bottom",
+          "html": "<p>Luo sarakkeita työnkulun vaiheille ja lisää kortteja tehtäville. Tässä näkyy esimerkki tehtävien valmistumisen seurantataulusta.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/b8949f211da2411e.webp",
+              "width": 1972,
+              "height": 791
+            }
+          ]
+        },
+        {
+          "title": "Hallitse tehtäväkortteja",
+          "layout": "image-bottom",
+          "html": "<p>Napsauta korttia lisätäksesi tietoja. Voit myös lisätä kortteihin kuvia. Vedä ja pudota kortteja sarakkeiden välillä päivittääksesi niiden tilan.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/16b9fe15c2fbec04.webp",
+              "width": 1978,
+              "height": 1026
+            }
+          ]
+        },
+        {
+          "title": "Tilannetaulu",
+          "layout": "image-bottom",
+          "html": "<p>Kanban-sovellusta voi käyttää myös tilannetauluna. Seuraa yksiköiden tehtävien edistymistä, tehtäviä ja vihollistilannetta korteissa ja jaa tilannekuvasi johtokeskuksen kanssa.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/c5fbd98a6a588076.webp",
+              "width": 1805,
+              "height": 1148
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

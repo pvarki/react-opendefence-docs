@@ -1,0 +1,192 @@
+{
+  "schemaVersion": 1,
+  "id": "ad49b71f-6f00-47bd-a0fa-d7efd33b72ef",
+  "slug": "geochat-5kOdqvslhn",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "GeoChat",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "Perustoiminnot",
+    "GeoChat"
+  ],
+  "createdAt": "2026-06-18T19:26:13.858Z",
+  "updatedAt": "2026-06-18T20:13:54.065Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/geochat-SMWfbwNItT",
+    "fi": "/fi/guides/tak-guide/geochat-5kOdqvslhn",
+    "sv": "/sv/guides/tak-guide/geochat-HOCGG8SkvO"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "1. Mikä on GeoChat?",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>TAK:n sisäänrakennettu GeoChat tarjoaa perustason tekstiviestinnän.</li>\n<li>Aloita napauttamalla <strong>Chat icon</strong> -kuvaketta.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/fdd5d3739fd86ef9.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "2. Viestien näyttäminen",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Aloitusnäkymä näyttää aiemmat lähettäjät.</li>\n<li>Aloita valitsemalla yksi.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/455d339c722c509a.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "3. Viestien lähettäminen ryhmille",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Lähetä ja vastaanota tekstiä helposti.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/ab2f24ffaf33f0da.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "4. Pikalausepainikkeiden sitominen",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Viestinnän nopeuttamiseksi voit sitoa <strong>Quick Phrase Buttons.</strong></li>\n<li>Aloita pitämällä yhtä painettuna.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/7582790dadbb4137.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "5. Näin teet: pikalause",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>'Name' on se, miten teksti näkyy painikkeessa. 'Value' on se, minkä painike kirjoittaa.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/6205ae560ab9b2c2.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "6. Suosittelemamme lauseet",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Suosittelemme seuraavia: sido \"This is OMA KUTSUSI, \", \"Roger\", \"Radio check\", RC OK muodossa \"Loud and clear.\"</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/87a80d5f3139ff7e.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "7. Selaa kaikkia mahdollisia vastaanottajia",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Näe kaikki mahdolliset vastaanottajat napauttamalla GeoChatin päävalikossa <strong>Plus symbol</strong> -kuvaketta.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/8373b375c881afbe.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "8. Lähetä rooleille",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Napauttamalla <strong>HQ</strong> voit lähettää kaikille palvelimesi HQ-rooliin asetetuille käyttäjille.</li>\n<li>Tämä on hyödyllistä TAK:n vakiokäyttömallissa, jossa yksiköt viestivät HQ-roolissa oleville CP-käyttäjille.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/a4862fb7b3800583.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "9. Lähetä ryhmälle",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li><strong>Sending to Team</strong> antaa lähettää koko esim. BLUE-ryhmän käyttäjille.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/d0068e29c594c820.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "10. Lähetä suoraviestejä",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Tarvitsetko jutella vain yhden kanssa? Valitse hänet valikosta sitä varten.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/f7781f14134bfa0f.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "11. Lähetä syötteeseen",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li><strong>Send to Feed</strong> esim. silloin, kun aiot lähettää kuvan syötteeseen ja haluat selittää miksi.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/6d8268cd06b95bd0.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "GeoChatin rajoitukset",
+          "layout": "text",
+          "html": "<p>GeoChatissa on kolme rajoitusta:</p>\n<ul>\n<li>\n<ol>\n<li>Älä yritä lähettää kuvia / liitteitä, tämä ei toimi käytännössä. Lähetä ne syötteeseen sen sijaan.</li>\n</ol>\n</li>\n<li>\n<ol start=\"2\">\n<li>Vastaanottajan TAK-sovelluksen on oltava auki tai taustalla, jotta hän voi vastaanottaa viestisi.</li>\n</ol>\n</li>\n<li>\n<ol start=\"3\">\n<li>iTAK on epäluotettava GeoChatin ryhmäkeskustelussa, etenkin WinTAK &#x3C;-> iTAK -yhteydessä. Näistä syistä suosittelemme käyttämään Matrixia (Element) yksikön viestintään Deploy Appin kanssa.</li>\n</ol>\n</li>\n</ul>\n<p>Kun olet testannut GeoChatin onnistuneesti, jatka kohtaan <a href=\"/doc/685f6f0f-e7ca-4ba3-807f-568582663e95\">ATAK</a></p>",
+          "images": []
+        },
+        {
+          "title": "Tarkista lukutila",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Jokainen suoraviesti näyttää <strong>read</strong>-merkin: täytetty valkoinen valintamerkki tarkoittaa, että vastaanottaja on avannut sen, ja täyttämätön tarkoittaa toimitettua mutta ei vielä luettua.</li>\n<li><strong>Messages</strong>-luettelo merkitsee tiloja kuten \"sent to offline user\", jotta tiedät, menikö viestisi perille.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/89257cabbbe2780f.webp",
+              "width": 192,
+              "height": 163
+            }
+          ]
+        },
+        {
+          "title": "Luo ryhmä tai lisää ryhmään",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Valitse <strong>Contacts</strong>-näkymässä <strong>Group</strong>-kuvake luodaksesi uuden keskusteluryhmän verkossa olevista ja offline-tilassa olevista käyttäjistä; anna <strong>group name</strong> ja paina <strong>Select</strong>.</li>\n<li>Valitse <strong>Select an Existing Group</strong> lisätäksesi käyttäjiä jo olemassa olevaan ryhmään, myös silloin kun he ovat offline-tilassa.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/267e23a144e8f3cf.webp",
+              "width": 198,
+              "height": 197
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

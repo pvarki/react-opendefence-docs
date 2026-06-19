@@ -1,0 +1,154 @@
+{
+  "schemaVersion": 1,
+  "id": "c791aa54-95c2-41ab-b3a5-d63093902abb",
+  "slug": "overlay-manager-hantera-vyerna-AJGahEsnDr",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Overlay Manager - hantera vyerna",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "Avancerade kärnfunktioner",
+    "Overlay Manager - hantera vyerna"
+  ],
+  "createdAt": "2026-06-18T19:26:22.228Z",
+  "updatedAt": "2026-06-18T20:14:44.066Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/overlay-manager-how-to-manage-the-views-BVRnLCM7ME",
+    "fi": "/fi/guides/tak-guide/overlay-manager-nakymien-hallinta-L14bpp02nM",
+    "sv": "/sv/guides/tak-guide/overlay-manager-hantera-vyerna-AJGahEsnDr"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Overlay Manager sorterar allt på kartan i kategorier så att du kan rensa upp lägesbilden, snabbt hitta en markör och exakt styra vad du ser.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Öppna Overlay Manager",
+          "layout": "image-bottom",
+          "html": "<p>Välj ikonen <strong>Overlay Manager</strong> för att öppna kategorilistan: Team, Markers, Alerts, Data Packages, Navigation, Shapes, Hashtags med mera. Tryck på en kategori för att gå in i dess objekt.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/799226c30d9e7680.webp",
+              "width": 276,
+              "height": 348
+            }
+          ]
+        },
+        {
+          "title": "Visa eller dölj lager",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på knappen <strong>Visibility</strong> (öga) för att slå på eller av ett lager.</p>\n<ul>\n<li>Ett vitt öga betyder synligt, ett konturerat öga betyder att vissa objekt är dolda, och ett överstruket öga betyder dolt.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/406c9451d5252967.webp",
+              "width": 224,
+              "height": 131
+            }
+          ]
+        },
+        {
+          "title": "Filtrera markörer efter sida och domän",
+          "layout": "image-bottom",
+          "html": "<p>I kategorin Markers väljer du <strong>Slicer</strong>.</p>\n<ul>\n<li>Tryck på <strong>F</strong>, <strong>N</strong> och de andra för att växla mellan egna, neutrala, fientliga och okända; de övre bokstäverna täcker rymd, luft, mark, sjö och undervattens.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/36c179bfad6b4520.webp",
+              "width": 325,
+              "height": 154
+            }
+          ]
+        },
+        {
+          "title": "Visa endast dina egna markörer",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på <strong>List</strong> och sedan <strong>Filters</strong>. Slå på <strong>Self Authored</strong> för att visa endast markörer du placerat på denna enhet och dölja allas andras, tryck sedan på <strong>OK</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/2762f211082c1f9a.webp",
+              "width": 171,
+              "height": 96
+            }
+          ]
+        },
+        {
+          "title": "Sök bland överlagren",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på ikonen <strong>Search</strong> i Overlay Managers verktygsrad för att hitta ett överlager efter namn. Välj först en kategori för att begränsa resultaten.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/7453787700a0eaff.webp",
+              "width": 285,
+              "height": 173
+            }
+          ]
+        },
+        {
+          "title": "Rensa tillfälliga objekt med COP Refresh",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på <strong>COP Refresh</strong> för att rensa tillfälliga objekt från kartan: andra användares egna markörer, deras SPI:er och ADSB-flygspår. Bekräfta i fönstret som visas.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/38472422770b6434.webp",
+              "width": 326,
+              "height": 32
+            }
+          ]
+        },
+        {
+          "title": "Märk objekt med Hashtags",
+          "layout": "image-bottom",
+          "html": "<p>Öppna kategorin <strong>Hashtags</strong> och tryck på <strong>+</strong> för att skapa en tagg. Hashtags grupperar relaterade objekt så att du kan söka och filtrera efter dem senare; lägg till taggen och välj <strong>Done</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/3519c2735f0ec1f6.webp",
+              "width": 305,
+              "height": 87
+            }
+          ]
+        },
+        {
+          "title": "Slå på MGRS-rutnätet",
+          "layout": "image-bottom",
+          "html": "<p>Öppna <strong>Other Overlays</strong> i Overlay Manager och växla <strong>Grid Lines</strong> med dess ögonikon. MGRS-rutnätet ritas över kartan och justeras automatiskt när du zoomar.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/ac247a9aa8e49a30.webp",
+              "width": 400,
+              "height": 194
+            }
+          ]
+        },
+        {
+          "title": "Växla Heatmap-överlagret",
+          "layout": "image-bottom",
+          "html": "<p>I <strong>Other Overlays</strong> växlar du <strong>Heatmap Overlay</strong> för att skugga terrängen efter höjd.</p>\n<ul>\n<li>Off-Screen Indicators kan också växlas här och pekar mot närliggande markörer precis utanför din vy.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/d6879fdc07334ec1.webp",
+              "width": 400,
+              "height": 194
+            }
+          ]
+        },
+        {
+          "title": "Redigera överlagrets färg och tjocklek",
+          "layout": "image-bottom",
+          "html": "<p>För filöverlager (Shapefile, KMZ, DRW) trycker du på <strong>Edit</strong> (pennikonen) i listan. Dra reglaget <strong>Line Thickness</strong> och välj en <strong>Color</strong> för att göra överlagret lättare att läsa.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/3b2ad0aa64eb4cb5.webp",
+              "width": 229,
+              "height": 125
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

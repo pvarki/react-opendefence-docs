@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "81c3fb4d-b8fd-4930-bf3b-56cf4c439c3b",
+  "slug": "kayta-geochatia-F9hZhCTnub",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Käytä GeoChatia",
+  "breadcrumb": [
+    "Platforms",
+    "WinTAK",
+    "PERUSTOIMINNOT",
+    "Käytä GeoChatia"
+  ],
+  "createdAt": "2026-06-18T19:33:25.399Z",
+  "updatedAt": "2026-06-18T20:23:40.216Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/use-geochat-G4fqV0Y4fg",
+    "fi": "/fi/guides/tak-guide/kayta-geochatia-F9hZhCTnub",
+    "sv": "/sv/guides/tak-guide/anvand-geochat-D5tfU0DNdl"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>GeoChat on WinTAKin sisäänrakennettu tekstiviestintä. Käytä sitä koordinointiin yksikkösi kanssa poistumatta kartalta.</p>\n<blockquote>\n<p>Luonnos: kirjoitettu ilman kuvakaappauksia. Lisää WinTAKin GeoChat-kuvakaappaukset, kun niitä on saatavilla.</p>\n</blockquote>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Avaa GeoChat",
+          "layout": "text",
+          "html": "<p>Avaa <strong>GeoChat</strong> WinTAKin työkalupalkista.</p>\n<ul>\n<li>Se luettelee keskustelusi — yhteiskeskustelu, tiimit/ryhmät ja yksittäiset käyttäjät.</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "Valitse, kenelle viestit",
+          "layout": "text",
+          "html": "<p>Valitse vastaanottaja: koko verkko (<strong>All Chat Rooms</strong>), tietty <strong>team / group</strong> tai yksittäinen <strong>user</strong>. Lähettäminen oikealle vastaanottajajoukolle pitää verkon selkeänä ja kunnioittaa OPSEC-periaatteita.</p>",
+          "images": []
+        },
+        {
+          "title": "Lähetä viesti",
+          "layout": "text",
+          "html": "<p>Kirjoita viestisi ja lähetä. Pidä se lyhyenä ja yksiselitteisenä; noudata yksikkösi raportointimuotoa ja käytä peitetermejä arkaluonteisissa yksityiskohdissa.</p>",
+          "images": []
+        },
+        {
+          "title": "Viestit ja kartta",
+          "layout": "text",
+          "html": "<p>GeoChat on paikkatietoinen — viestit voivat sisältää sijainnin, ja viestistä voi hypätä sen viittaamaan pisteeseen kartalla. Pidempään tai muotoiltuun raportointiin käytä yksikkösi pysyväismääräysten mukaisia viestintävälineitä.</p>",
+          "images": []
+        }
+      ]
+    }
+  ]
+}

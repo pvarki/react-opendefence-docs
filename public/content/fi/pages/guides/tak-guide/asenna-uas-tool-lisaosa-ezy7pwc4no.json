@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "63a76d47-45b8-4cbd-a40f-a5f870df934d",
+  "slug": "asenna-uas-tool-lisaosa-ezy7pwc4no",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Asenna UAS Tool -lisäosa",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "TUETUT LISÄOSAT",
+    "UAS-työkalu",
+    "Asenna UAS Tool -lisäosa"
+  ],
+  "createdAt": "2026-06-18T19:30:23.746Z",
+  "updatedAt": "2026-06-18T20:21:39.317Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/install-uas-tool-plugin-BDPcnhvDgk",
+    "fi": "/fi/guides/tak-guide/asenna-uas-tool-lisaosa-ezy7pwc4no",
+    "sv": "/sv/guides/tak-guide/installera-uas-tool-plugin-VxIbbgH2nd"
+  },
+  "blocks": []
+}

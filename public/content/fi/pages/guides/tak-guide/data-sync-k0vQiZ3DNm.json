@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "id": "95febac5-2440-4058-a847-9a32b71ab872",
+  "slug": "data-sync-k0vQiZ3DNm",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Data Sync",
+  "breadcrumb": [
+    "Platforms",
+    "WinTAK",
+    "PERUSTOIMINNOT",
+    "Data Sync"
+  ],
+  "createdAt": "2026-06-18T19:32:31.971Z",
+  "updatedAt": "2026-06-18T20:23:36.999Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/data-sync-VswHZNexYA",
+    "fi": "/fi/guides/tak-guide/data-sync-k0vQiZ3DNm",
+    "sv": "/sv/guides/tak-guide/data-sync-d2tAXDXHwO"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "1. Lue syötteitä Data Syncillä",
+          "layout": "text",
+          "html": "<ul>\n<li>Data Syncillä voit lukea (ja jakaa) karttamerkkejä ja paljon muuta.</li>\n<li>Syötteet ovat kuin karttatasoja: tilaa ne ja merkitse ruutu nähdäksesi tai poistaaksesi ne käytöstä.</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "2. Katso, mitä syötteitä on saatavilla",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Valitse Data Sync (nuolikuvake) työkalupalkista</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/7079e1cb26097f5d.webp",
+              "width": 853,
+              "height": 348
+            }
+          ]
+        },
+        {
+          "title": "Tilaa RECON-syöte",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Valitse TAK-palvelimesi (jos sinulla on useita)</li>\n<li>Valitse RECON-syöte</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/452827eba167ad9d.webp",
+              "width": 348,
+              "height": 135
+            }
+          ]
+        },
+        {
+          "title": "Lataa ja synkronoi",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Valitse Download and stay synced</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/0f2754820054de57.webp",
+              "width": 393,
+              "height": 241
+            }
+          ]
+        },
+        {
+          "title": "Syöte - Yhdistetty",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Tarkista, että RECON-syötteen ilmaisin on vihreä</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/f635a664a6b9fa68.webp",
+              "width": 348,
+              "height": 237
+            }
+          ]
+        },
+        {
+          "title": "Tässä on lisää",
+          "layout": "text",
+          "html": "<ul>\n<li>Syötteiden luominen, jakaminen ja tilaaminen, esimerkiksi tehtävän suunnittelua ja toteutusta varten, on helppoa.</li>\n<li>Tarjoamme valmiin kokoonpanon sotilasyksikön tehokkaaseen tiedonjakoon.</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "Valmis",
+          "layout": "text",
+          "html": "<ul>\n<li>Voit sulkea tämän oppaan.</li>\n</ul>\n<hr>",
+          "images": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 1,
+  "id": "db2d2ac4-8a2e-4eec-a7bd-2d52103ba287",
+  "slug": "laheta-lennokki-sijaintiin-mKsB4aikwV",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Lähetä lennokki sijaintiin",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "TUETUT LISÄOSAT",
+    "UAS-työkalu",
+    "Lähetä lennokki sijaintiin"
+  ],
+  "createdAt": "2026-06-18T19:30:27.786Z",
+  "updatedAt": "2026-06-18T20:21:47.190Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/send-drone-to-a-location-vwYPd2cbEC",
+    "fi": "/fi/guides/tak-guide/laheta-lennokki-sijaintiin-mKsB4aikwV",
+    "sv": "/sv/guides/tak-guide/skicka-dronaren-till-en-plats-mPUY0sUiR3"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Lähetä lennokki mihin tahansa pisteeseen kartalla, kierrä kohdetta tai anna sen seurata sinua, kaikki suoraan Quick Flight Toolbar -työkalupalkista ilman reitin rakentamista.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Avaa Quick Task",
+          "layout": "image-bottom",
+          "html": "<p>Napauta kartalla kohtaa, johon haluat lähettää lennokin.</p>\n<ul>\n<li><strong>Quick Task</strong> avautuu sijainti valmiina ja kolme vaihtoehtoa: <strong>Cancel</strong>, <strong>Go Now</strong>, <strong>Orbit</strong>.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/c3fe23149220c4cb.webp",
+              "width": 1428,
+              "height": 725
+            }
+          ]
+        },
+        {
+          "title": "Lennä sinne heti",
+          "layout": "image-bottom",
+          "html": "<p>Napauta <strong>Go Now</strong>. Lennokki nousee tarvittaessa ilmaan ja lentää pisteeseen pitäen nykyisen korkeutensa (<strong>HAL</strong>, Height Above Launch).</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/c3fe23149220c4cb.webp",
+              "width": 1428,
+              "height": 725
+            }
+          ]
+        },
+        {
+          "title": "Aseta tarkka koordinaatti",
+          "layout": "image-bottom",
+          "html": "<p>Tarkkaa pistettä varten napauta <strong>Selected Coordinate</strong> -kenttää ja kirjoita ruutukoordinaatti ja korkeus. Tämä on tarkempi kuin karttaa napauttamalla.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/c3fe23149220c4cb.webp",
+              "width": 1428,
+              "height": 725
+            }
+          ]
+        },
+        {
+          "title": "Kierrä kohdetta",
+          "layout": "image-bottom",
+          "html": "<p>Napauta <strong>Orbit</strong> kiertääksesi pistettä ja tarkkaillaksesi sitä. Ikkunassa voit asettaa kiertosäteen ja nopeuden; sen jälkeen voit ohjaussauvoilla suurentaa tai pienentää kehää ja vaihtaa suuntaa lennon aikana.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/c3fe23149220c4cb.webp",
+              "width": 1428,
+              "height": 725
+            }
+          ]
+        },
+        {
+          "title": "Follow Me",
+          "layout": "image-bottom",
+          "html": "<p>Napauta <strong>Follow Me</strong> UAS Tool -työkalussa. Lennokki lukittuu ATAK GPS -omamerkkiisi ja pitää saman etäisyyden ja suunnan, kun liikut.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/0a863b0a122572b2.webp",
+              "width": 114,
+              "height": 114
+            }
+          ]
+        },
+        {
+          "title": "Aseta seurantaetäisyys",
+          "layout": "image-bottom",
+          "html": "<p>Pidä <strong>Follow Me</strong> pohjassa avataksesi valintaikkunan. Siellä voit valita seurattavaksi toisen merkin ja asettaa turvaetäisyyden.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/0a863b0a122572b2.webp",
+              "width": 114,
+              "height": 114
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "schemaVersion": 1,
+  "id": "c0637320-5f88-4ea2-aeee-629286092385",
+  "slug": "oman-sijainnin-asettaminen-17jf00ekir",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Oman sijainnin asettaminen",
+  "breadcrumb": [
+    "Platforms",
+    "WinTAK",
+    "PERUSTOIMINNOT",
+    "Oman sijainnin asettaminen"
+  ],
+  "createdAt": "2026-06-18T19:32:30.692Z",
+  "updatedAt": "2026-06-18T20:23:32.451Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/setting-up-your-own-location-IAAAIJTiqZ",
+    "fi": "/fi/guides/tak-guide/oman-sijainnin-asettaminen-17jf00ekir",
+    "sv": "/sv/guides/tak-guide/ange-din-egen-position-V1XPioLt64"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>WinTAK näyttää sinut ja kaikki ryhmäsi jäsenet samalla jaetulla kartalla — tätä kutsutaan blue force trackingiksi. Näin luet karttaa, näet ryhmäsi ja asetat oman sijaintisi, kun PC:ssäsi ei ole GPS:ää.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Aloitussijainti",
+          "layout": "image-bottom",
+          "html": "<p>Jos PC:ssäsi ei ole GPS:ää, WinTAK käynnistyy koordinaateissa 0/0. Siirrät kartan alueellesi ja asetat sijaintisi käsin.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/f4ca39fb2c4570d3.webp",
+              "width": 656,
+              "height": 433
+            }
+          ]
+        },
+        {
+          "title": "Liikuta ja zoomaa karttaa",
+          "layout": "image-bottom",
+          "html": "<p>Liikuta karttaa <strong>hiirellä</strong> kohti Suomea.</p>\n<ul>\n<li>Zoomaa hiiren rullalla, plus/miinus-näppäimillä tai näytön painikkeilla.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/e37892a9bd5c9b69.webp",
+              "width": 656,
+              "height": 427
+            }
+          ]
+        },
+        {
+          "title": "Suorista kartta",
+          "layout": "image-bottom",
+          "html": "<p>Napsauta <strong>kompassikuvaketta (N)</strong> suoristaaksesi kartan pohjoinen ylöspäin.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/c779ef046110d795.webp",
+              "width": 656,
+              "height": 427
+            }
+          ]
+        },
+        {
+          "title": "Näe ryhmäsi",
+          "layout": "image-bottom",
+          "html": "<p>Muut ryhmäsi käyttäjät näkyvät värillisinä kuvakkeina. Kunkin kuvakkeen väri on se väri, jonka käyttäjä on itselleen asettanut.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/ed7e71e66c22109c.webp",
+              "width": 184,
+              "height": 134
+            }
+          ]
+        },
+        {
+          "title": "Aseta sijaintisi käsin",
+          "layout": "image-bottom",
+          "html": "<p>Jos laitteessasi ei ole GPS:ää, aseta oma sijaintisi: paina oikeassa alakulmassa olevaa <strong>punaista tietokenttää</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/851482830646f9ec.webp",
+              "width": 428,
+              "height": 156
+            }
+          ]
+        },
+        {
+          "title": "Valitse sijaintisi",
+          "layout": "image-bottom",
+          "html": "<p>Etsi sijaintisi kartalta ja napsauta sitä. Oma merkkisi ilmestyy tämän jälkeen — ja tulee näkyväksi muille käyttäjille.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/e941a2bab03c4da8.webp",
+              "width": 284,
+              "height": 188
+            }
+          ]
+        },
+        {
+          "title": "Vaihda sijaintiasi",
+          "layout": "image-bottom",
+          "html": "<p>Siirtääksesi itsesi myöhemmin napsauta omaa merkkiäsi (<strong>nuolisymbolia</strong>) ja napsauta sitten uutta sijaintia.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/2adf69f8cfdbb5a9.webp",
+              "width": 428,
+              "height": 120
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,286 @@
+{
+  "schemaVersion": 1,
+  "id": "0572cbe9-3292-4b00-9832-ee67c379108e",
+  "slug": "varmista-etta-sinulla-on-atak-sovellus-ceMKXWjxoQ",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Varmista, että sinulla on ATAK-sovellus",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "ALOITA JA YHDISTÄ",
+    "Varmista, että sinulla on ATAK-sovellus"
+  ],
+  "createdAt": "2026-06-18T19:25:11.122Z",
+  "updatedAt": "2026-06-18T20:13:37.347Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/make-sure-you-have-the-atak-app-bJC3Opax4P",
+    "fi": "/fi/guides/tak-guide/varmista-etta-sinulla-on-atak-sovellus-ceMKXWjxoQ",
+    "sv": "/sv/guides/tak-guide/se-till-att-du-har-atak-appen-ep7TvO7XkN"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Asenna ATAK Play Storesta tai APK:na",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Aloittaaksesi ATAKin käytön sinun täytyy asentaa sovellus Google Playsta.</li>\n<li>Deploy Appin TAK-sivu tarjoaa sinulle <a href=\"https://play.google.com/store/apps/details?id=com.atakmap.app.civ\" target=\"_blank\" rel=\"noopener noreferrer\">linkin siihen</a>.</li>\n<li>ATAK/CivTAK-sovellus on täysin sama sovellus kuin niin kutsuttu MilTAK - ero on siinä, että MilTAK-sovellus hyväksyy MilTAK-allekirjoitetut lisäosat.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/d456b61755f60acf.webp",
+              "width": 860,
+              "height": 384
+            }
+          ]
+        },
+        {
+          "title": "1. Avaa ATAK ja anna käyttöoikeudet",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Kun asennus on valmis, etsi TAK-kuvake puhelimestasi ja avaa sovellus.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/a2fe7303e7840f32.webp",
+              "width": 246,
+              "height": 246
+            }
+          ]
+        },
+        {
+          "title": "Käyttöoikeudet 1",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>EULA-lisenssisopimus tulee näkyviin.</li>\n<li>Napauta <strong>I agree</strong>.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/bb74b8a7832f37d2.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "Käyttöoikeudet 2",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>ATAK-sovellus pyytää useita käyttöoikeuksia puhelimessasi.</li>\n<li>Käyttöoikeuksien perustelu selittää, ettei mitään käyttäjän tietoja päädy TAKin kehittäjille (U.S. TPC).</li>\n<li>Nämä käyttöoikeudet mahdollistavat sen, että TAK-tietosi kulkevat <strong>oman yksikkösi</strong> TAK-palvelimelle, jota operoi esim. PV.</li>\n<li>Tässä on kyse vain siitä, mitä ATAKissa tapahtuu - ei mistään muista tiedoista.</li>\n<li>Napauta <strong>I understand</strong> jatkaaksesi.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/1b64bf072a4658a4.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "Käyttöoikeudet 3",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Salli ATAKin ottaa kuvia tai videota.</li>\n<li>Tämä vaaditaan Quick Pic- ja videonjako-ominaisuuksiin.</li>\n<li>Valitse <strong>While using the app.</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/b5a9c08cc99a2a16.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "Käyttöoikeudet 4",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Salli ATAKin käyttää sijaintia.</li>\n<li>Tämä vaaditaan, jotta Blue force tracking toimii eli jotta symbolisi näkyy kartalla.</li>\n<li>Valitse <strong>Precise</strong> ja <strong>While using app.</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/a86c87be2b44ef64.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "Käyttöoikeudet 5",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Salli ATAKin tallentaa ääntä.</li>\n<li>Tämä vaaditaan ATAKista käynnistettäviin puheluihin tovereille.</li>\n<li>Valitse <strong>While using the app.</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/4a0e92d613797b57.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "Käyttöoikeudet 6",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Salli ATAKin löytää lähellä olevat laitteet.</li>\n<li>Tämä vaaditaan ATAKin käyttöön broadcast-tilassa (yhteys muihin ATAKeihin lähiverkossa, WiFin tai esim. radioyhteyden kautta).</li>\n<li>Valitse <strong>Allow.</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/b534c325a40d6b0b.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "Käyttöoikeudet 7",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Salli ATAKin lähettää ilmoituksia.</li>\n<li>Tämä vaaditaan, jotta saat ilmoituksia ATAKista.</li>\n<li>Valitse <strong>Allow.</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/75114a3236a0faa6.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "Käyttöoikeudet 8",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Salli ATAKin soittaa puheluita ja hallita puheluita.</li>\n<li>Tämä vaaditaan ATAKista käynnistettäviin puheluihin tovereille.</li>\n<li>Valitse <strong>Allow.</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/3c25040084131abf.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "Käyttöoikeudet 9",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Salli ATAKin käyttää musiikkia ja äänitiedostoja.</li>\n<li>Tämä vaaditaan, jotta voit lähettää ääniviestejä TAK-palvelimen kautta.</li>\n<li>Valitse <strong>Allow.</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/5997b500b0595461.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "Käyttöoikeudet 10",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Salli ATAKin käyttää valokuvia ja videoita.</li>\n<li>Tämä vaaditaan Quick Pic- ja videonjako-ominaisuuksiin.</li>\n<li>Valitse <strong>Allow all.</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/1ba90c6f48f42fb6.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "Käyttöoikeudet 11",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Salli ATAKin käyttää sijaintia taustalla.</li>\n<li>Tämä vaaditaan, jotta Blue force tracking toimii eli jotta symbolisi näkyy kartalla.</li>\n<li>Valitse <strong>I understand.</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/847ccec2aa5a90c4.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "Käyttöoikeudet 12",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Hyväksy Android 11+:n varoitus taustalla tapahtuvasta sijainnin käytöstä.</li>\n<li>Valitse <strong>OK.</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/e4d5d79829f2ebf2.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "Käyttöoikeudet 13",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>ATAK pyytää sinua muuttamaan sijaintikäyttöoikeuden Androidin asetuksista, jotta Blue force tracking -ominaisuus toimii.</li>\n<li>Lue ohjeet ja tee vaiheet seuraavasti. Napauta <strong>I understand</strong> jatkaaksesi.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/e25a3a66bee6fac7.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "Käyttöoikeudet 14",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Androidin sovellustietojen asetus avautuu automaattisesti.</li>\n<li>Napauta <strong>Permissions.</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/ab2300beaeac7e85.webp",
+              "width": 2256,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Käyttöoikeudet 15",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Napauta seuraavaksi <strong>App permission.</strong></li>\n<li>Napauta sitten <strong>Location</strong> avataksesi sijaintikäyttöoikeuden asetukset.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/770b056e3d14d651.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "Käyttöoikeudet 16",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Napauta sijaintikäyttöoikeuden valikossa <strong>Allow all the time.</strong></li>\n<li>Tämä mahdollistaa, että ATAK lähettää sijaintiasi jatkuvasti TAK-palvelimelle, mikä vaaditaan blue force tracking -ominaisuuden toimintaan.</li>\n<li>Tämän jälkeen palaa ATAKiin.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/785e38231c71b974.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "Käyttöoikeudet 17",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Jos käynnistät ATAKin ensimmäistä kertaa, TAK Device Setup -valikko tulee näkyviin.</li>\n<li>Emme tarvitse täältä mitään, joten sulje se napauttamalla <strong>Done.</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/b04353af5bd411fb.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "Käyttöoikeudet 18",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Lopuksi sovellus pyytää sinua poistamaan Androidin akun optimointi -ominaisuuden käytöstä.</li>\n<li>Tämä on tärkeää, sillä Android voi muuten satunnaisesti estää ATAKia lähettämästä ja vastaanottamasta sijaintitietoja.</li>\n<li>Paina OK, jotta seuraava valintaikkuna avautuu.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/1363c65a7b52cdd1.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "Käyttöoikeudet 19",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Android kysyy, lopetetaanko akun käytön optimointi.</li>\n<li>Napauta <strong>Allow.</strong></li>\n<li>Tämä päättää käyttöoikeuksien asettamisen juuri asentamassasi ATAK-sovelluksessa.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/a775d9a29860bff9.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "html",
+      "html": "<p>ATAKin asennuksen ja alustuksen jälkeen jatka kohtaan <a href=\"/doc/c8842f7a-f533-4bfe-9027-88f165d16ddb\">ATAK Already Installed</a></p>"
+    }
+  ]
+}

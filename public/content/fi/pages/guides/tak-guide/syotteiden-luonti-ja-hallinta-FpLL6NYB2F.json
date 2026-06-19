@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "id": "6a06d5cd-87d0-4955-a2d5-262ec8d17aac",
+  "slug": "syotteiden-luonti-ja-hallinta-FpLL6NYB2F",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Syötteiden luonti ja hallinta",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "Edistyneet ydintoiminnot",
+    "Syötteiden luonti ja hallinta"
+  ],
+  "createdAt": "2026-06-18T19:26:16.138Z",
+  "updatedAt": "2026-06-18T20:13:58.291Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/create-manage-feeds-z2CpC9Lpan",
+    "fi": "/fi/guides/tak-guide/syotteiden-luonti-ja-hallinta-FpLL6NYB2F",
+    "sv": "/sv/guides/tak-guide/skapa-och-hantera-floden-xFQ1Aqteke"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Syötteiden luominen",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Luo syötteitä joko suunnitelmiesi jakamiseen tai tietojen jatkuvaan jakamiseen.</li>\n<li>Aloita napauttamalla <strong>Feed symbol</strong> -kuvaketta.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/c09ee1fb0e31cfa8.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Datasync-aloitusnäkymä - Overlay Manager",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Datasync-aloitusnäkymä näyttää kaikki syötteet niillä palvelimilla, joihin olet yhteydessä.</li>\n<li>Luo uusi syöte napauttamalla <strong>Plus symbol</strong> -kuvaketta.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/5f8b389b72416f9b.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Syötteen luominen",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Napauta <strong>Create feed.</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/a7ccff6cbe91f629.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Syötteen luominen - Asetukset",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Ensin annamme uudelle syötteellesi nimen.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/4c13e87fa2d1086e.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Nimeä syötteesi",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Anna kuvaava nimi. Esimerkkinimi kertoo, että syöte sisältää suunnitelmasi FRAGO3-käskyä varten.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/25d8adf32e029005.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Valitse oletusrooli",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Napauta seuraavaksi Default Role -valitsinta valitaksesi, kuka pääsee syötteeseesi.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/b860b25fc7d71850.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Syötteen oletuskäyttöoikeus",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Valitse tarkoituksiisi parhaiten sopiva vaihtoehto.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/7c5ef679f81f228b.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Kuvaile syötteesi",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Napauttamalla Description voit kuvailla syötettäsi hieman. Siitä on apua.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/ccae7c9da23020d6.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Aihetunnisteet",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Voit halutessasi kirjoittaa syötteellesi aihetunnisteita. Niistä voi olla apua palvelimesi tietojen analysoinnissa.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/e5b817603ea67a6e.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Uusi syöte luotu!",
+          "layout": "text",
+          "html": "<ul>\n<li>Uusi syötteesi on nyt täällä!</li>\n<li>Jos oletusrooli ei ole Admin, palvelimesi käyttäjät voivat nyt tilata syötteesi.</li>\n</ul>\n<p>Kun olet testannut syötteiden luonnin ja hallinnan onnistuneesti, jatka kohtaan <a href=\"/doc/2676ebbb-83f4-4569-a7a2-7050395f28c8\">Draw &#x26; share Plans</a></p>\n<p>Data Sync Default Role Owner -kuvaus korjattu:\\nKäyttäjästä tulee oletuksena syötteen Admin Data Sync -feedille. Tämän ominaisuuden käyttöä ei suositella, sillä uusi omistaja voi</p>",
+          "images": []
+        },
+        {
+          "title": "Vahvista Data Sync -luettelosta",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Avaa Data Sync uudelleen. Uusi syötteesi näkyy nyt luettelossa kutsutunnuksineen ja kohteiden lukumäärineen.</li>\n<li>Napauta sen vieressä olevaa <strong>eye icon</strong> -kuvaketta vaihtaaksesi näkyvyyttä kartalla.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/c53a9f2ed53348e3.webp",
+              "width": 250,
+              "height": 197
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

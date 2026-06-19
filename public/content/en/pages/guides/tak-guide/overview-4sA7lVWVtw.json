@@ -6,14 +6,19 @@
   "locale": "en",
   "title": "Overview",
   "breadcrumb": [
-    "TAK Clients",
+    "Platforms",
     "TAK Tracker - Android",
-    "Usage by Role",
+    "USAGE BY ROLE",
     "Overview"
   ],
   "createdAt": "2025-12-20T00:47:06.954Z",
-  "updatedAt": "2026-02-21T08:40:53.162Z",
+  "updatedAt": "2026-06-18T20:26:55.930Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/overview-4sA7lVWVtw",
+    "fi": "/fi/guides/tak-guide/yleiskatsaus-awMobw9EkE",
+    "sv": "/sv/guides/tak-guide/oversikt-WnJ9NYZa3M"
+  },
   "blocks": [
     {
       "type": "html",

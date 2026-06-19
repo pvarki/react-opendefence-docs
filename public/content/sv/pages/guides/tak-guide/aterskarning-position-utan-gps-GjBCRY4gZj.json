@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "id": "ba16786a-7202-4289-b4a9-274b825327a6",
+  "slug": "aterskarning-position-utan-gps-GjBCRY4gZj",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Återskärning (position utan GPS)",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "YTTERLIGARE FUNKTIONER",
+    "Navigering och koordinater",
+    "Återskärning (position utan GPS)"
+  ],
+  "createdAt": "2026-06-18T19:28:21.146Z",
+  "updatedAt": "2026-06-18T20:19:15.878Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/resection-no-gps-location-YjW4JqiWQJ",
+    "fi": "/fi/guides/tak-guide/takaisinleikkaus-sijainti-ilman-gpsaa-ScxwqM908E",
+    "sv": "/sv/guides/tak-guide/aterskarning-position-utan-gps-GjBCRY4gZj"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Ingen GPS-signal? Ta bäringar till två eller flera kända landmärken så räknar ATAK ut var du befinner dig.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Öppna återskärningsverktyget",
+          "layout": "image-bottom",
+          "html": "<p>Öppna <strong>Resection Tool</strong>.</p>\n<ul>\n<li>Panelen listar varje landmärke med dess <strong>Location</strong> och <strong>Bearing</strong>, plus ett tomt <strong>Intersection</strong>-fält längst ner.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/b97d072c0a27fd52.webp",
+              "width": 139,
+              "height": 112
+            }
+          ]
+        },
+        {
+          "title": "Placera ett landmärke och ange dess bäring",
+          "layout": "image-bottom",
+          "html": "<p>Stå stilla, vänd dig mot ett landmärke du ser på kartan och tryck på punktsläppsikonen för att placera det. En kompass visas så att du kan justera bäringen från din position till det landmärket.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/c3e0e56c372d36ab.webp",
+              "width": 139,
+              "height": 102
+            }
+          ]
+        },
+        {
+          "title": "Rita ut skärningspunkten",
+          "layout": "image-bottom",
+          "html": "<p>Placera två eller flera landmärken. Tryck sedan på ikonen <strong>Plot Intersection</strong> för att släppa en markör vid den beräknade skärningspunkten. Markören märks med enhetens anropssignal.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/2af6ca3ede3fac38.webp",
+              "width": 252,
+              "height": 164
+            }
+          ]
+        },
+        {
+          "title": "Flytta, ta bort eller rensa landmärken",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Flytta en punkt genom att långtrycka på den på kartan och välja en ny plats.</li>\n<li>Ta bort en enskild punkt genom att trycka på den på kartan och välja <strong>Delete</strong>.</li>\n<li>Ta bort alla genom att trycka på ikonen <strong>Clear Landmarks</strong> och bekräfta.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/2af6ca3ede3fac38.webp",
+              "width": 252,
+              "height": 164
+            }
+          ]
+        },
+        {
+          "title": "Uppdatera din position och avsluta",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på <strong>Back</strong> för att avsluta.</p>\n<ul>\n<li>När du tillfrågas om att uppdatera din plats väljer du <strong>Yes</strong> för att flytta din egen markör (Self-Marker) till uppskattningen och sända ut den, eller <strong>No</strong> för att lämna den oförändrad.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/eab817e259c77713.webp",
+              "width": 174,
+              "height": 74
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "id": "16070c90-60f9-4478-900a-c361459f083c",
+  "slug": "atak-geofences-lisaominaisuudet-Odn3KhETfp",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "ATAK - Geofences - Lisaominaisuudet",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "Edistyneet ydintoiminnot",
+    "ATAK - Geofences - Lisaominaisuudet"
+  ],
+  "createdAt": "2026-06-18T19:26:20.615Z",
+  "updatedAt": "2026-06-18T20:14:40.209Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "ATAK yhdistettyna takserver-palvelimeen - Geofences",
+      "id": "atak-yhdistettyna-takserver-palvelimeen---geofences"
+    }
+  ],
+  "translations": {
+    "en": "/en/guides/tak-guide/geofences-wgaLkSEvef",
+    "fi": "/fi/guides/tak-guide/atak-geofences-lisaominaisuudet-Odn3KhETfp",
+    "sv": "/sv/guides/tak-guide/atak-geofences-avancerade-funktioner-qCwlfoPPsc"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<h1 id=\"atak---geofences---lisaominaisuudet\"><a href=\"#atak---geofences---lisaominaisuudet\">ATAK - Geofences - Lisaominaisuudet</a></h1>\n<h2 id=\"atak-yhdistettyna-takserver-palvelimeen---geofences\"><a href=\"#atak-yhdistettyna-takserver-palvelimeen---geofences\">ATAK yhdistettyna takserver-palvelimeen - Geofences</a></h2>"
+    },
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Valvonta Geofences-aitojen avulla",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Geofences-aidat auttavat valvomaan liikkeita ja tapahtumia tietyilla alueilla.</li>\n<li>Aloita piirtamalla aluemuoto Drawing Tools -tyokaluilla.</li>\n<li>Valitse sitten Geofence-kuvake ja napauta sita.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/fdd6bca67f66f7ff.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Mista muutoksesta meidan tulisi saada halytys?",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Napauta muutosvalitsinta muokataksesi, mika muutos aiheuttaa meille halytyksen.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/cf66ed64a0387ce4.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Halytysvaihtoehdot",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Valitse tarpeisiisi parhaiten sopiva.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/f8dff3c7200bab31.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Mitka kohteet aiheuttavat halytyksen?",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Mika geofence-alueella ilmestyva asia aiheuttaa halytyksen? Valitse tarpeesi mukaan.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/945a62013c9d842f.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Vaihtoehdot: aseta ja laheta",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Jos haluat lahettaa uuden Geofence-aitasi, tee se tavallisella vastaanottajavalintaikkunalla.</li>\n<li>Voit lahettaa sen syotteeseen (Feed). Syote kutsuu automaattisesti kayttajat, jotka laukaisevat Geofence-aidan.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/ca187847ce9848b9.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Tarkastele tilannetta",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Paavalikon Geofences-valilehdelta voit tarkastella kaikkia kaytossa olevia aitoja.</li>\n<li>Jos Geofences-valilehti ei nay valikossasi, napauta keltaista kynaa loytaaksesi ja aktivoidaksesi sen.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/d755dc29a4557507.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Geofences-aitojen luettelo",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Naet luettelon aidoista, niiden nimista ja tiloista.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/1d4c4647354a2937.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Halytys!",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Saat halytyksen rajan ylityksesta maaritystesi mukaisesti.</li>\n<li>Tarkastele niita: Geofences -> kyseinen aita.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/3b610c296faea346.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Tarkastele aitasi halytyksia",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Tarkastele halytyksia aidan nakymassa. Paina roskakoria poistaaksesi tai poistaaksesi halytyksen kaytosta.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/3143b16ad62405e3.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Poista halytys kaytosta tai poista se",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Valitse, ja siina kaikki!</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/6b6f03778686f4ab.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "html",
+      "html": "<p>\\nKun olet onnistuneesti testannut Geofences-aitoja, jatka kohtaan</p>"
+    }
+  ]
+}

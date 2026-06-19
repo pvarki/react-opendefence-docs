@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "1ca68991-e76c-4342-8fc9-021887033dd5",
+  "slug": "selaa-raporttitietokantaa-RmpgkBAbfQ",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Selaa raporttitietokantaa",
+  "breadcrumb": [
+    "Platforms",
+    "WinTAK",
+    "Tuetut lisäosat",
+    "Raportit",
+    "Selaa raporttitietokantaa"
+  ],
+  "createdAt": "2026-06-18T19:35:24.987Z",
+  "updatedAt": "2026-06-18T20:24:58.760Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/browse-the-reports-database-unYDjhwqXD",
+    "fi": "/fi/guides/tak-guide/selaa-raporttitietokantaa-RmpgkBAbfQ",
+    "sv": "/sv/guides/tak-guide/bladdra-i-rapportdatabasen-qj3OotLB4i"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>TAK-palvelimelle tallennettuja raportteja voi hakea, suodattaa ja visualisoida.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Suodata ja järjestä raportteja",
+          "layout": "image-bottom",
+          "html": "<p>Valitse <strong>Filter</strong>-kuvake rajataksesi listaa nykyisen karttanäkymän, aikavälin, raporttityypin, tilan, tärkeyden tai käyttäjän kutsutunnuksen mukaan; <strong>Clear Filters</strong> näyttää jälleen kaiken.</p>\n<ul>\n<li>Valitse <strong>Sort</strong> järjestääksesi listan päivämäärän, käyttäjän kutsutunnuksen, tärkeyden, tilan, otsikon tai tyypin mukaan — napsauta valintaa uudelleen kääntääksesi järjestyksen.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/5e3bf90b2eaae81b.webp",
+              "width": 241,
+              "height": 548
+            }
+          ]
+        },
+        {
+          "title": "Rakenna raporttien koontinäyttö",
+          "layout": "image-bottom",
+          "html": "<p>Avaa <strong>Dashboard</strong> työkalupalkista ja suodata haluamasi raportit esiin. Valitse <strong>Create New Chart</strong>, valitse ryhmittelyperuste (tärkeys, mittakaava, tila, tyyppi tai käyttäjän kutsutunnus) sekä ympyrä- tai pylväskaavio, ja paina sitten <strong>Create</strong>. Useita kaavioita voi olla rinnakkain, kullakin omat suodattimensa.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/01a40ce39c3aa870.webp",
+              "width": 378,
+              "height": 339
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

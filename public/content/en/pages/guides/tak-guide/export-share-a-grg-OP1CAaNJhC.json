@@ -8,13 +8,18 @@
   "breadcrumb": [
     "Platforms",
     "WinTAK",
-    "Supported Plugins",
+    "SUPPORTED PLUGINS",
     "GRG Builder",
     "Export & share a GRG"
   ],
   "createdAt": "2026-06-16T10:20:40.632Z",
-  "updatedAt": "2026-06-16T10:20:40.632Z",
+  "updatedAt": "2026-06-18T20:24:53.497Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/export-share-a-grg-OP1CAaNJhC",
+    "fi": "/fi/guides/tak-guide/grgn-vienti-ja-jakaminen-ydjlUkJ7Pg",
+    "sv": "/sv/guides/tak-guide/exportera-och-dela-en-grg-nNP5db39f3"
+  },
   "blocks": [
     {
       "type": "html",
@@ -39,7 +44,7 @@
         {
           "title": "Send a GRG & set preferences",
           "layout": "text",
-          "html": "<p>If you exported as JSON, select <strong>Send GRG</strong> on the GRG Builder panel to send it to contacts. To clear everything placed this session, use <strong>Delete</strong> at the top of the panel. Configure <strong>Auto Import GRG</strong>, the JSON directory and <strong>Set GRG Spacing Intervals</strong> under <strong>Edit GRG > Edit GRG Components > Open Preferences</strong>.</p>",
+          "html": "<p>If you exported as JSON, select <strong>Send GRG</strong> on the GRG Builder panel to send it to contacts.</p>\n<ul>\n<li>To clear everything placed this session, use <strong>Delete</strong> at the top of the panel.</li>\n<li>Configure <strong>Auto Import GRG</strong>, the JSON directory and <strong>Set GRG Spacing Intervals</strong> under <strong>Edit GRG > Edit GRG Components > Open Preferences</strong>.</li>\n</ul>",
           "images": []
         }
       ]

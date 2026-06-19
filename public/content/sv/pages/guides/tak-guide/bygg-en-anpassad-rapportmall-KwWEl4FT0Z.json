@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "id": "b2d2f879-440c-4d7f-8d41-cb854a29af60",
+  "slug": "bygg-en-anpassad-rapportmall-KwWEl4FT0Z",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Bygg en anpassad rapportmall",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "TILLÄGG SOM STÖDS",
+    "Rapporter",
+    "Bygg en anpassad rapportmall"
+  ],
+  "createdAt": "2026-06-18T19:31:37.761Z",
+  "updatedAt": "2026-06-18T20:22:40.530Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/build-a-custom-report-template-VVphDLVbW3",
+    "fi": "/fi/guides/tak-guide/rakenna-mukautettu-raporttimalli-yCSiu6uhpP",
+    "sv": "/sv/guides/tak-guide/bygg-en-anpassad-rapportmall-KwWEl4FT0Z"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Skapa ett eget rapportformulär så att fälten matchar det som ditt team faktiskt behöver skicka.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Öppna editorn",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på <strong>Editor</strong> i Reports-panelen. Detta öppnar en ny tom mall som du kan bygga från grunden.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/9d58fe854259f743.webp",
+              "width": 422,
+              "height": 51
+            }
+          ]
+        },
+        {
+          "title": "Börja med en tom mall",
+          "layout": "image-bottom",
+          "html": "<p>Den tomma mallen börjar med en titel och en <strong>+</strong>-knapp. Tryck på <strong>+</strong> för att lägga till ditt första fält.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/47198f8f30669ace.webp",
+              "width": 800,
+              "height": 297
+            }
+          ]
+        },
+        {
+          "title": "Välj en fälttyp",
+          "layout": "image-bottom",
+          "html": "<p>Välj den fälttyp du behöver i listan, till exempel <strong>Section</strong>, <strong>Text Field</strong>, <strong>Location Field</strong> eller <strong>Dropdown List(Single Selection)</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/369bee9569c31724.webp",
+              "width": 693,
+              "height": 752
+            }
+          ]
+        },
+        {
+          "title": "Lägg till och ordna fält",
+          "layout": "image-bottom",
+          "html": "<p>Varje fält får en <strong>Field Title</strong> och en <strong>Required</strong>-växel. Tryck på <strong>+</strong> igen för att fortsätta lägga till fält tills rapporten är klar.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/5f44caa28e2bb318.webp",
+              "width": 800,
+              "height": 387
+            }
+          ]
+        },
+        {
+          "title": "Spara, exportera eller importera",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på trepunktsmenyn och sedan:</p>\n<ul>\n<li><strong>Save Template</strong> för att spara den för användning</li>\n<li><strong>Export Template</strong> för att dela den som en XML-fil</li>\n<li><strong>Import Template</strong> för att läsa in en XML-mall som någon har skickat till dig</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/5ec261548ffe0e93.webp",
+              "width": 800,
+              "height": 654
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

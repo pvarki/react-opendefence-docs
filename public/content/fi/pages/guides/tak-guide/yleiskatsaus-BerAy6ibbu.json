@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "1a49cc30-ad6f-48a5-b013-70671bcd2c08",
+  "slug": "yleiskatsaus-BerAy6ibbu",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Yleiskatsaus",
+  "breadcrumb": [
+    "Platforms",
+    "TAK Tracker - Apple",
+    "Käyttö roolin mukaan",
+    "Yleiskatsaus"
+  ],
+  "createdAt": "2026-06-18T19:45:51.318Z",
+  "updatedAt": "2026-06-18T20:27:41.590Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/overview-vqWEyyCxy8",
+    "fi": "/fi/guides/tak-guide/yleiskatsaus-BerAy6ibbu",
+    "sv": "/sv/guides/tak-guide/oversikt-IAwj5j49ia"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>(Tätä välilehteä ei pitäisi näyttää)</p>"
+    }
+  ]
+}

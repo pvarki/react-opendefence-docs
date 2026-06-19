@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "1dee787c-2738-4b8a-98c1-873c41e90443",
+  "slug": "omien-joukkojen-seuranta-g7RxW8tHH6",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Omien joukkojen seuranta",
+  "breadcrumb": [
+    "Platforms",
+    "iTAK",
+    "Perustoiminnot",
+    "Omien joukkojen seuranta"
+  ],
+  "createdAt": "2026-06-18T19:35:31.284Z",
+  "updatedAt": "2026-06-18T20:25:47.444Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/blue-force-tracking-NOzCSj3j64",
+    "fi": "/fi/guides/tak-guide/omien-joukkojen-seuranta-g7RxW8tHH6",
+    "sv": "/sv/guides/tak-guide/sparning-av-egna-styrkor-pi3AVYT4mX"
+  },
+  "blocks": [
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#ABB2BF\">(</span><span style=\"color:#E06C75\">Tätä</span><span style=\"color:#E06C75\"> välilehteä</span><span style=\"color:#E06C75\"> ei</span><span style=\"color:#E06C75\"> pitäisi</span><span style=\"color:#E06C75\"> näyttää</span><span style=\"color:#ABB2BF\">)</span></span></code></pre>",
+      "lang": "javascript"
+    }
+  ]
+}

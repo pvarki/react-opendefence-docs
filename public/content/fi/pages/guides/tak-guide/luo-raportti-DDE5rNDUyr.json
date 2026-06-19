@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "id": "39828d94-f400-4fea-81d8-7b9b652b3b07",
+  "slug": "luo-raportti-DDE5rNDUyr",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Luo raportti",
+  "breadcrumb": [
+    "Platforms",
+    "WinTAK",
+    "Tuetut lisäosat",
+    "Raportit",
+    "Luo raportti"
+  ],
+  "createdAt": "2026-06-18T19:34:34.699Z",
+  "updatedAt": "2026-06-18T20:24:57.360Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/create-a-report-mhCCLqyMaU",
+    "fi": "/fi/guides/tak-guide/luo-raportti-DDE5rNDUyr",
+    "sv": "/sv/guides/tak-guide/skapa-en-rapport-YA4jfgqpea"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Reports-laajennoksella voit luoda, sijoittaa, muokata ja ladata monenlaisia kenttäraportteja valmiilla tai mukautetuilla malleilla. Kun raportti on luotu, kuvake merkitsee kartalle paikan, jossa se laadittiin.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Avaa Reports-työkalu",
+          "layout": "image-bottom",
+          "html": "<p>Valitse työkalupalkista <strong>Reports</strong>. Ikkunassa luetellaan TAK Serveriltä ladatut raportit sekä laitteen paikalliset raportit. Raportin luominen ei vaadi palvelinyhteyttä, mutta muiden käyttäjien laatimien raporttien lataaminen, lähettäminen tai etsiminen vaatii sen.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/c44e79370c4168e5.webp",
+              "width": 203,
+              "height": 221
+            }
+          ]
+        },
+        {
+          "title": "Valitse raporttimalli",
+          "layout": "image-bottom",
+          "html": "<p>Avaa raporttimallien luettelo valitsemalla <strong>+</strong> ja aloita valitsemalla yksi. Jokaisessa mallissa on ennalta määritetyt kentät; kaikki <strong>Required</strong>-merkityt kentät on täytettävä ennen kuin raportin voi lähettää. Voit sulkea ja tallentaa raportin paikallisesti täyttämättä kaikkia kenttiä.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/cb01f77c840ef2ce.webp",
+              "width": 196,
+              "height": 180
+            }
+          ]
+        },
+        {
+          "title": "Täytä raportti",
+          "layout": "image-bottom",
+          "html": "<p>Täytä raportin kentät — Title, Importance, kuvaukset ja niin edelleen. Oletussijainti on paikallisen laitteen Self-Marker. Tuo sijaintikenttä näkyviin valitsemalla <strong>Pan-To</strong> ja muuta sijaintia valitsemalla <strong>Edit</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/b3e875499c258fe3.webp",
+              "width": 351,
+              "height": 466
+            }
+          ]
+        },
+        {
+          "title": "Aseta raportin sijainti",
+          "layout": "image-bottom",
+          "html": "<p>Aseta sijainti yhdellä seuraavista: <strong>Use my current location</strong>, <strong>Based on map click</strong>, <strong>Enter coordinates</strong> (MGRS, Deg, DM, DMS, UTM tai Address), <strong>Use current map view</strong>, <strong>Define location boundary</strong> (piirrä monikulmio) tai <strong>Define route</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/d87b4a4908106a5c.webp",
+              "width": 345,
+              "height": 200
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

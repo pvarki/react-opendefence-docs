@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 1,
+  "id": "dba32565-12e3-4c47-83e9-b779512e07a3",
+  "slug": "kaynnista-pysayta-ja-palauta-lennokki-ramp5QBORo",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Käynnistä, pysäytä ja palauta lennokki",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "TUETUT LISÄOSAT",
+    "UAS-työkalu",
+    "Käynnistä, pysäytä ja palauta lennokki"
+  ],
+  "createdAt": "2026-06-18T19:31:23.724Z",
+  "updatedAt": "2026-06-18T20:21:51.964Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/launch-stop-return-drone-H6yqQ4Gyc5",
+    "fi": "/fi/guides/tak-guide/kaynnista-pysayta-ja-palauta-lennokki-ramp5QBORo",
+    "sv": "/sv/guides/tak-guide/starta-stoppa-och-hamta-hem-dronaren-5IlxUaDKae"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Quick Flight -työkalupalkilla nostat lennokin ilmaan, tuot sen kotiin ja pysäytät sen nopeasti, kun jokin menee pieleen. Tässä on turvallinen lentojärjestys.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Löydä Quick Flight -työkalupalkki",
+          "layout": "image-bottom",
+          "html": "<p>Työkalupalkki on UAS-valikon yläreunassa lentoonlähdön jälkeen.</p>\n<ul>\n<li>Vasemmalta lukien: <strong>Set Altitude</strong>, <strong>Emergency Stop</strong>, <strong>Return To Home</strong>, <strong>Quick Task</strong>, <strong>Follow EUD/Recon</strong>, <strong>Mission Manager</strong>.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/9b47a9f4c89d6e45.webp",
+              "width": 738,
+              "height": 140
+            }
+          ]
+        },
+        {
+          "title": "Aseta korkeus",
+          "layout": "image-bottom",
+          "html": "<p>Napauta <strong>Set Altitude</strong>, vedä liukusäädin haluamaasi korkeuteen ja vahvista napauttamalla <strong>Set Altitude</strong>.</p>\n<ul>\n<li>Lue korkeus muodossa <strong>AGL</strong> (maanpinnan yläpuolella), <strong>HAL</strong> (lähtöpisteen yläpuolella) tai <strong>MSL</strong> (merenpinnasta).</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/c6cd7fa8485b7c2b.webp",
+              "width": 800,
+              "height": 326
+            }
+          ]
+        },
+        {
+          "title": "Lentoonlähtö",
+          "layout": "image-bottom",
+          "html": "<p>Maassa Set Altitude -painikkeessa näkyy vihreä <strong>GO</strong>-ympyrä nimeltä <strong>Takeoff Now</strong>. Napauta sitä, niin lennokki lähtee ilmaan ja nousee asettamaasi korkeuteen.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/7bd02e8ff2a402c3.webp",
+              "width": 800,
+              "height": 324
+            }
+          ]
+        },
+        {
+          "title": "Emergency Stop",
+          "layout": "image-bottom",
+          "html": "<p>Napauta <strong>Emergency Stop</strong> keskeyttääksesi käynnissä olevan tehtävän ja napauta sitten kehotteessa <strong>OK</strong>.</p>\n<ul>\n<li>Se peruuttaa Quick Task -tehtävät, reitit ja korkeudensiirrot, mutta ei manuaalista sauvaohjausta.</li>\n<li>VAROITUS: jotkin ilma-alukset ajelehtivat tai palaavat takaisin ennen pysähtymistä.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/41d974ab869aa2ec.webp",
+              "width": 800,
+              "height": 336
+            }
+          ]
+        },
+        {
+          "title": "Return to Home",
+          "layout": "image-bottom",
+          "html": "<p>Napauta <strong>Return To Home</strong> (painike 3) lyhyesti lentääksesi takaisin lähtöpisteeseen. Pidä pohjassa avataksesi <strong>Home Position Follow Options</strong>, jolloin lennokki seuraa liikkuvaa sijaintiasi.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/4cb7bbce0e08308c.webp",
+              "width": 249,
+              "height": 141
+            }
+          ]
+        },
+        {
+          "title": "Laskeudu ja sammuta paikalleen",
+          "layout": "image-bottom",
+          "html": "<p>Set Altitude -valintaikkunassa <strong>Land-Now</strong> tuo lennokin suoraan alas siihen kohtaan, missä se leijuu. Laskeutuminen ja moottorien sammutus vaihtelevat alustan mukaan:</p>\n<ul>\n<li>DJI-ilma-alukset leijuvat matalalla ja tarvitsevat fyysisen Ground Control Stationin (GCS) laskeutumiseen ja moottorien sammutukseen.</li>\n<li>Jotkin MAVLink-ilma-alukset palaavat takaisin ennen laskeutumista.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/7bd02e8ff2a402c3.webp",
+              "width": 800,
+              "height": 324
+            }
+          ]
+        },
+        {
+          "title": "Siirrä toiselle paikalle Quick Taskilla",
+          "layout": "image-bottom",
+          "html": "<p>Napauta <strong>Quick Task</strong> ja napauta sitten pistettä kartalla.</p>\n<ul>\n<li>Valitse <strong>Go Now</strong> lentääksesi sinne nykyisellä korkeudella tai <strong>Orbit</strong> kiertääksesi sitä.</li>\n<li><strong>Selected Coordinate</strong> -kenttään voit kirjoittaa tarkat koordinaatit.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/c3fe23149220c4cb.webp",
+              "width": 1428,
+              "height": 725
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

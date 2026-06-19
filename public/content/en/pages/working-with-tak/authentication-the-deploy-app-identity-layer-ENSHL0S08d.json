@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "203db72c-d1a5-4a61-b14d-d9c6c791d72d",
+  "slug": "authentication-the-deploy-app-identity-layer-ENSHL0S08d",
+  "collection": "working-with-tak",
+  "locale": "en",
+  "title": "Authentication: the Deploy App identity layer",
+  "breadcrumb": [
+    "Integrating to TAK Server",
+    "Authentication: the Deploy App identity layer"
+  ],
+  "createdAt": "2026-06-17T18:21:47.674Z",
+  "updatedAt": "2026-06-17T18:21:50.594Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "What Deploy App is (for an integrator)",
+      "id": "what-deploy-app-is-for-an-integrator"
+    },
+    {
+      "depth": 2,
+      "text": "The pieces",
+      "id": "the-pieces"
+    },
+    {
+      "depth": 2,
+      "text": "How you authenticate",
+      "id": "how-you-authenticate"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>TAK Server trusts <strong>certificates and groups</strong>. On a Deploy App deployment you don't manage either by hand — Deploy App is the identity layer that issues your certificate and governs your groups, and TAK Server is wired to trust it.</p>\n<h2 id=\"what-deploy-app-is-for-an-integrator\"><a href=\"#what-deploy-app-is-for-an-integrator\">What Deploy App is (for an integrator)</a></h2>\n<p>Deploy App brings several products (chat, situational awareness/TAK, video, logging…) together behind <strong>one identity</strong> and <strong>one secure web UI</strong>. Its shape is:</p>\n<blockquote>\n<p><strong>one identity provider (Keycloak) · one hub API (RASENMAEHER / \"rmapi\") · a web UI · several products · a certificate/trust layer that lets them talk securely.</strong></p>\n</blockquote>\n<p>The defining rule: a user <strong>enrolls once, authenticates with an mTLS client certificate, and reaches every product they are entitled to.</strong> The hub fans user-lifecycle events out to each product over mTLS — so revoking a user in one place revokes them everywhere. TAK Server is one of those products.</p>\n<h2 id=\"the-pieces\"><a href=\"#the-pieces\">The pieces</a></h2>\n<table>\n<thead>\n<tr>\n<th>Piece</th>\n<th>Role</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>RASENMAEHER (rmapi)</strong></td>\n<td>The hub API (<code>pvarki/python-rasenmaeher-api</code>). Owns the authoritative <strong>user and certificate</strong> state: enrollment, invite/approval, CSR signing, revocation, token issuance.</td>\n</tr>\n<tr>\n<td><strong>Keycloak</strong></td>\n<td>The OIDC identity provider, and the place where <strong>groups</strong> are managed (which then flow to TAK Server).</td>\n</tr>\n<tr>\n<td><strong>Certificate / trust layer</strong></td>\n<td>The CA that signs your client cert. Differs per stack: Legacy (Docker Compose) uses <strong>CFSSL</strong> behind an nginx ingress; Kubernetes (<code>opendefence-platform</code>, alpha) uses <strong>cert-manager + trust-manager + opendefense-pki</strong> behind Traefik.</td>\n</tr>\n<tr>\n<td><strong>Products</strong></td>\n<td>TAK Server, Matrix, etc. Each trusts the Deploy App CA and the groups Keycloak asserts.</td>\n</tr>\n</tbody>\n</table>\n<h2 id=\"how-you-authenticate\"><a href=\"#how-you-authenticate\">How you authenticate</a></h2>\n<p>The Deploy App Core API (rmapi) recognises these credentials (from its OpenAPI <code>securitySchemes</code>):</p>\n<ul>\n<li><strong>mTLS client certificate</strong> — the primary credential. The ingress/proxy <strong>terminates mTLS and forwards the verified identity as a header</strong> to the services (<code>MTLSHeader</code> / <code>MTLSorJWT</code> / <code>ValidUser</code> schemes). The <em>same</em> certificate authenticates you to <strong>TAK Server</strong> and to <strong>Keycloak</strong>.</li>\n<li><strong>JWT bearer</strong> (<code>JWTBearer</code>) — a token for API calls where a cert isn't convenient (e.g. UI-driven flows). Obtained via the token endpoints (see <a href=\"/en/working-with-tak/enrolling-getting-a-client-certificate-vze3g7Eshz\">Enrolling &#x26; getting a client certificate</a>).</li>\n</ul>\n<p>So the integration story is: <strong>get a Deploy App client certificate once</strong>, then present it to TAK Server's Marti API and CoT stream like any other TAK client — and let Keycloak groups decide what you can see and send.</p>\n<blockquote>\n<p>The Deploy App Core API is documented on this site's own API reference (codename <em>RASENMAEHER</em>); its OpenAPI lives at <code>public/api-specs/rasenmaeher/</code> in this repo and is served in the embedded reference.</p>\n</blockquote>\n<p>→ Next: <a href=\"/en/working-with-tak/enrolling-getting-a-client-certificate-vze3g7Eshz\">Enrolling &#x26; getting a client certificate</a>.</p>"
+    }
+  ]
+}

@@ -1,0 +1,258 @@
+{
+  "schemaVersion": 1,
+  "id": "c4b3173a-287e-4f8d-b4e0-cdcc33f7ceb0",
+  "slug": "borja-med-nedladdning-syCbgRYiOo",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Börja med nedladdning",
+  "breadcrumb": [
+    "Platforms",
+    "TAK Tracker - Apple",
+    "KOM IGÅNG OCH ANSLUT",
+    "Börja med nedladdning"
+  ],
+  "createdAt": "2026-06-18T19:44:18.459Z",
+  "updatedAt": "2026-06-18T20:27:30.609Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/start-from-download-5tAQBOfF65",
+    "fi": "/fi/guides/tak-guide/aloita-lataamalla-GKdhN7JWfS",
+    "sv": "/sv/guides/tak-guide/borja-med-nedladdning-syCbgRYiOo"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Installera iTAK från App Store",
+          "layout": "text",
+          "html": "<ul>\n<li><a href=\"https://apps.apple.com/fi/app/tak-tracker/id6455684671\" target=\"_blank\" rel=\"noopener noreferrer\">https://apps.apple.com/fi/app/tak-tracker/id6455684671</a></li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "Öppna TAK Tracker-appen",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Hitta ikonen för TAK Tracker och starta appen. Tillåt inte appen att hitta andra enheter i det lokala nätverket. TAK Tracker krypterar inte trafik i ett LAN.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/228e60492645f7cd.webp",
+              "width": 1179,
+              "height": 2556
+            }
+          ]
+        },
+        {
+          "title": "Platsbehörigheter",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Tryck på knappen <em>Set Location Permissions</em></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/7b4ff26a8d55ecec.webp",
+              "width": 1179,
+              "height": 2556
+            }
+          ]
+        },
+        {
+          "title": "Tillåt platsspårning",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Välj <em>Allow While Using App</em></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/cfd721cf5ce2840e.webp",
+              "width": 1179,
+              "height": 2556
+            }
+          ]
+        },
+        {
+          "title": "Platsspårning i bakgrunden",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Tryck på knappen <em>Enable Backround Tracking</em></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/9948ec9068033f7f.webp",
+              "width": 1179,
+              "height": 2556
+            }
+          ]
+        },
+        {
+          "title": "Tillåt platsspårning i bakgrunden",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Välj <em>Change to Always Allow</em></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/0579fc1b2618966a.webp",
+              "width": 1179,
+              "height": 2556
+            }
+          ]
+        },
+        {
+          "title": "Användarinformation",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Tryck på knappen <em>Next</em></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/023bc46cbd628fbd.webp",
+              "width": 1179,
+              "height": 2556
+            }
+          ]
+        },
+        {
+          "title": "Konfiguration av användarinformation",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Konfigurera: anropssignal (Call Sign) och lagfärg enligt den information du har fått</li>\n<li>Standardvärdet för roll (Role) är Team Member</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/cf67eff580a7e99d.webp",
+              "width": 1179,
+              "height": 2556
+            }
+          ]
+        },
+        {
+          "title": "Serveranslutning",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Välj <em>Connect to a TAK Server</em></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/7939f4638beba1b5.webp",
+              "width": 1179,
+              "height": 2556
+            }
+          ]
+        },
+        {
+          "title": "Metod för serveranslutning",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Tryck på knappen * Upload a Data Package*</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/e91c43e7b18aa10a.webp",
+              "width": 1179,
+              "height": 2556
+            }
+          ]
+        },
+        {
+          "title": "Konfigurationsfil",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Navigera till mappen där du laddade ner konfigurationsfilen.</li>\n<li>Välj filen du laddade ner från Deployment App</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/bc5a9cba27296c32.webp",
+              "width": 1179,
+              "height": 2556
+            }
+          ]
+        },
+        {
+          "title": "Paketet behandlat",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Tryck på knapparna <em>OK</em> och <em>Next</em></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/cc2ec5c824824f38.webp",
+              "width": 1179,
+              "height": 2556
+            }
+          ]
+        },
+        {
+          "title": "Onboarding klar",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Tryck på knappen <em>Close Onboarding</em></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/97889f5563eaff15.webp",
+              "width": 1179,
+              "height": 2556
+            }
+          ]
+        },
+        {
+          "title": "TAK Tracker ansluten",
+          "layout": "image-left",
+          "html": "<ul>\n<li>TAK Tracker är nu ansluten till en server!</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/20d85d72cf0aeff8.webp",
+              "width": 1179,
+              "height": 2556
+            }
+          ]
+        },
+        {
+          "title": "Konfiguration av enheter",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Du kan konfigurera värdeenheter genom att klicka på ett värde-\"fönster\"</li>\n<li>Ändra platsenhet till MGRS och hastighetsenhet till km/h</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/2ce8beccf72ff98f.webp",
+              "width": 1179,
+              "height": 2556
+            }
+          ]
+        },
+        {
+          "title": "TAK Tracker konfigurerad",
+          "layout": "text",
+          "html": "<ul>\n<li>TAK Tracker är nu konfigurerad</li>\n<li>Om en karta behövs kan den aktiveras från inställningarna</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "Inställningar",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Navigera till inställningarna (kugghjulsikonen)</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/72a6d18a3ba0b580.webp",
+              "width": 1179,
+              "height": 2556
+            }
+          ]
+        },
+        {
+          "title": "Konfiguration av inställningar",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Navigera till Situational Awareness</li>\n<li>Användarinformation kan också ändras från denna vy.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/066154e86975a24a.webp",
+              "width": 1179,
+              "height": 2556
+            }
+          ]
+        },
+        {
+          "title": "Situational Awareness",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Aktivera kartvisning</li>\n<li>Välj den karttyp du vill använda.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/ba4e4580a353d1fd.webp",
+              "width": 1179,
+              "height": 2556
+            }
+          ]
+        },
+        {
+          "title": "Konfigurerad och karta i bruk",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Konfigurationen är nu klar och kartvyn är också i bruk.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/2de0f99caa953855.webp",
+              "width": 1179,
+              "height": 2556
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

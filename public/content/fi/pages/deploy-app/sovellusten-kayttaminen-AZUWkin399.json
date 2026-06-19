@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "id": "5be62a4d-4647-4305-aa47-b23a0511ba31",
+  "slug": "sovellusten-kayttaminen-AZUWkin399",
+  "collection": "deploy-app",
+  "locale": "fi",
+  "title": "Sovellusten käyttäminen",
+  "breadcrumb": [
+    "Platforms",
+    "iOS",
+    "Käyttäjäohjeet",
+    "Sovellusten käyttäminen"
+  ],
+  "createdAt": "2026-06-18T20:34:52.998Z",
+  "updatedAt": "2026-06-18T20:38:55.954Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/deploy-app/using-applications-FFuT98Qlcv",
+    "fi": "/fi/deploy-app/sovellusten-kayttaminen-AZUWkin399",
+    "sv": "/sv/deploy-app/anvanda-applikationer-TmM85VECUH"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Sovellusten käyttäminen",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Palvelimellasi käytettävissä olevat sovellukset luetellaan etusivulla.</li>\n<li>Voit avata sovelluksen napsauttamalla \"Open\"-painiketta.</li>\n<li>Saatavilla on myös \"Docs\"-vaihtoehto. Se linkittää Product Guide -oppaaseen Docs-sovelluksessa.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/25c1580a29c70523.webp",
+              "width": 2560,
+              "height": 5712
+            }
+          ]
+        },
+        {
+          "title": "Sovellusten käyttäminen",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Useimmissa sovelluksissa on käyttöönotto-oppaat, jotka opastavat sinut jokaisen keskeisen ominaisuuden läpi.</li>\n<li>Tältä sivustolta löydät myös <strong>Product Guides</strong> -oppaat, joiden avulla opit perusteet nopeasti, tai <strong>Product Wikis</strong> -wikit, joiden avulla hallitset ne täysin.\nIdentiteettisi Deploy Appissa toimii tunnuksenasi ('SSO') kaikissa sovelluksissa. Kun roolisi tai käyttöoikeutesi muuttuvat Deploy Appissa, ne muuttuvat kaikissa sovelluksissa.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/45b76255f58fe7c7.webp",
+              "width": 2560,
+              "height": 5712
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

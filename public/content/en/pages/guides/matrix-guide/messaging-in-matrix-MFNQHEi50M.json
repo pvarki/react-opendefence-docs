@@ -10,8 +10,13 @@
     "Messaging in Matrix"
   ],
   "createdAt": "2026-06-15T14:06:52.989Z",
-  "updatedAt": "2026-06-15T17:52:31.351Z",
+  "updatedAt": "2026-06-18T20:37:53.993Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/matrix-guide/messaging-in-matrix-MFNQHEi50M",
+    "fi": "/fi/guides/matrix-guide/viestinta-matrixissa-3mOCfe4cEL",
+    "sv": "/sv/guides/matrix-guide/meddelanden-i-matrix-YJPlgJrmpr"
+  },
   "blocks": [
     {
       "type": "html",

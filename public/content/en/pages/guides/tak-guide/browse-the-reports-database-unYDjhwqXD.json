@@ -8,13 +8,18 @@
   "breadcrumb": [
     "Platforms",
     "WinTAK",
-    "Supported Plugins",
+    "SUPPORTED PLUGINS",
     "Reports",
     "Browse the reports database"
   ],
   "createdAt": "2026-06-16T10:20:52.951Z",
-  "updatedAt": "2026-06-16T10:20:52.951Z",
+  "updatedAt": "2026-06-18T20:24:58.253Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/browse-the-reports-database-unYDjhwqXD",
+    "fi": "/fi/guides/tak-guide/selaa-raporttitietokantaa-RmpgkBAbfQ",
+    "sv": "/sv/guides/tak-guide/bladdra-i-rapportdatabasen-qj3OotLB4i"
+  },
   "blocks": [
     {
       "type": "html",
@@ -27,7 +32,7 @@
         {
           "title": "Filter & sort reports",
           "layout": "image-bottom",
-          "html": "<p>Select the <strong>Filter</strong> icon to limit the list by current map view, date range, report type, status, importance or user callsign; <strong>Clear Filters</strong> shows everything again. Select <strong>Sort</strong> to order the list by Date, User Callsign, Importance, Status, Title or Type — click a choice again to reverse it.</p>",
+          "html": "<p>Select the <strong>Filter</strong> icon to limit the list by current map view, date range, report type, status, importance or user callsign; <strong>Clear Filters</strong> shows everything again.</p>\n<ul>\n<li>Select <strong>Sort</strong> to order the list by Date, User Callsign, Importance, Status, Title or Type — click a choice again to reverse it.</li>\n</ul>",
           "images": [
             {
               "src": "/content/images/en/attachments/5e3bf90b2eaae81b.webp",

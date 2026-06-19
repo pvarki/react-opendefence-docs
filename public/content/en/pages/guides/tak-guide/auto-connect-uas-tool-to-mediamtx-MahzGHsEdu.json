@@ -8,12 +8,17 @@
   "breadcrumb": [
     "Platforms",
     "ATAK",
-    "Supported Plugins",
+    "SUPPORTED PLUGINS",
     "UAS Tool",
     "Auto-connect UAS Tool to MediaMTX"
   ],
   "createdAt": "2026-06-16T10:31:04.825Z",
-  "updatedAt": "2026-06-16T10:31:04.825Z",
+  "updatedAt": "2026-06-18T20:21:40.194Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/auto-connect-uas-tool-to-mediamtx-MahzGHsEdu",
+    "fi": "/fi/guides/tak-guide/yhdista-uas-tool-automaattisesti-mediamtxaan-OxrZY5V7EQ",
+    "sv": "/sv/guides/tak-guide/anslut-uas-tool-automatiskt-till-mediamtx-HeWL5goTM5"
+  },
   "blocks": []
 }

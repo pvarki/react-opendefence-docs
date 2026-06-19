@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "id": "4e2bc628-4a3c-498d-b10f-b7f18ba483b2",
+  "slug": "kom-igang-med-cryptpad-hiXBJRERid",
+  "collection": "guides/cryptpad-guide",
+  "locale": "sv",
+  "title": "Kom igång med CryptPad",
+  "breadcrumb": [
+    "Anslut till servern",
+    "Kom igång med CryptPad"
+  ],
+  "createdAt": "2026-06-18T20:34:32.194Z",
+  "updatedAt": "2026-06-18T20:38:00.236Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/cryptpad-guide/getting-started-with-cryptpad-JznoTt1R8B",
+    "fi": "/fi/guides/cryptpad-guide/cryptpadin-kayton-aloittaminen-hQ7vIKZoxX",
+    "sv": "/sv/guides/cryptpad-guide/kom-igang-med-cryptpad-hiXBJRERid"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>CryptPad är ditt teams säkra, totalsträckskrypterade samarbetssvit. Den här guiden hjälper dig att logga in och skapa ditt första dokument.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Välkommen till CryptPad",
+          "layout": "image-bottom",
+          "html": "<p>CryptPad är en säker, totalsträckskrypterad samarbetssvit. Ditt team kan skapa och tillsammans redigera dokument samt dela filer säkert. Den här Deploy App-servern kör ditt teams egna, decentraliserade CryptPad-tjänst.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/e71eaeb23b57ae18.webp",
+              "width": 1918,
+              "height": 1111
+            }
+          ]
+        },
+        {
+          "title": "Varför CryptPad är säkert",
+          "layout": "image-bottom",
+          "html": "<p>CryptPad säkerställer att inte ens serveradministratören kan läsa dina filer. Du bestämmer vem du delar med — även andra användare på den här Deploy App-servern behöver en inbjudan från dig för att kunna läsa dina filer.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/8490a8a6267faa7e.webp",
+              "width": 1918,
+              "height": 1111
+            }
+          ]
+        },
+        {
+          "title": "Logga in med Deploy App",
+          "layout": "image-bottom",
+          "html": "<p>CryptPad är integrerat med Deploy Apps certifikatbaserade autentisering. Klicka på <strong>Log in to CryptPad</strong> så autentiseras du automatiskt med dina Deploy App-uppgifter — inget separat konto eller lösenord behövs.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/df5186655c4944a4.webp",
+              "width": 2162,
+              "height": 1346
+            }
+          ]
+        },
+        {
+          "title": "Din CryptPad-instrumentpanel",
+          "layout": "image-bottom",
+          "html": "<p>När du har loggat in ser du din CryptPad-instrumentpanel. Härifrån kan du skapa nya dokument, komma åt senaste filer, hantera din CryptDrive och samarbeta med teammedlemmar.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/b26541fcf0a18e34.webp",
+              "width": 1834,
+              "height": 1139
+            }
+          ]
+        },
+        {
+          "title": "Skapa ditt första dokument",
+          "layout": "image-bottom",
+          "html": "<p>Klicka på <strong>+</strong>-knappen på din instrumentpanel för att skapa ett nytt dokument. Välj bland bland annat rik text, kod, kalkylblad, kanban-tavlor, presentationer, whiteboards och formulär. Alla dokument krypteras automatiskt.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/940d325323062037.webp",
+              "width": 1827,
+              "height": 1134
+            }
+          ]
+        },
+        {
+          "title": "Dela med ditt team",
+          "layout": "image-bottom",
+          "html": "<p>För att dela ett dokument klickar du på delningsknappen i verktygsfältet. Dela med specifika teammedlemmar eller skapa en länk. Flera användare kan redigera samtidigt och se varandras ändringar i realtid.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/8207d147e97d7674.webp",
+              "width": 1820,
+              "height": 1133
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

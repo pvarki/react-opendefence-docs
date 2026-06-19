@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "43531964-5fe1-4438-a13e-dd8b325bc1a7",
+  "slug": "sparning-av-egna-styrkor-pi3AVYT4mX",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Spårning av egna styrkor",
+  "breadcrumb": [
+    "Platforms",
+    "iTAK",
+    "Grundfunktioner",
+    "Spårning av egna styrkor"
+  ],
+  "createdAt": "2026-06-18T19:35:31.581Z",
+  "updatedAt": "2026-06-18T20:25:47.904Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/blue-force-tracking-NOzCSj3j64",
+    "fi": "/fi/guides/tak-guide/omien-joukkojen-seuranta-g7RxW8tHH6",
+    "sv": "/sv/guides/tak-guide/sparning-av-egna-styrkor-pi3AVYT4mX"
+  },
+  "blocks": [
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#ABB2BF\">(</span><span style=\"color:#E06C75\">Den</span><span style=\"color:#E06C75\"> här</span><span style=\"color:#E06C75\"> fliken</span><span style=\"color:#E06C75\"> ska</span><span style=\"color:#E06C75\"> inte</span><span style=\"color:#E06C75\"> visas</span><span style=\"color:#ABB2BF\">)</span></span></code></pre>",
+      "lang": "javascript"
+    }
+  ]
+}

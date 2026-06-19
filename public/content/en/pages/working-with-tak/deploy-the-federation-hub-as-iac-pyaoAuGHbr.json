@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "id": "289e23d8-999f-4615-803e-5427d0d18190",
+  "slug": "deploy-the-federation-hub-as-iac-pyaoAuGHbr",
+  "collection": "working-with-tak",
+  "locale": "en",
+  "title": "Deploy the Federation Hub as IaC",
+  "breadcrumb": [
+    "Wire up Deploy App TAK Servers via a Federation Hub (IaC)",
+    "Deploy the Federation Hub as IaC"
+  ],
+  "createdAt": "2026-06-17T20:25:58.042Z",
+  "updatedAt": "2026-06-19T14:18:52.662Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "The artifacts",
+      "id": "the-artifacts"
+    },
+    {
+      "depth": 2,
+      "text": "1. Certificate and trust",
+      "id": "1-certificate-and-trust"
+    },
+    {
+      "depth": 2,
+      "text": "2. Authorized admins",
+      "id": "2-authorized-admins"
+    },
+    {
+      "depth": 2,
+      "text": "3. Admin auth via Keycloak (optional)",
+      "id": "3-admin-auth-via-keycloak-optional"
+    },
+    {
+      "depth": 2,
+      "text": "4. Token-auth port (optional)",
+      "id": "4-token-auth-port-optional"
+    },
+    {
+      "depth": 2,
+      "text": "5. MongoDB for MFDT (optional)",
+      "id": "5-mongodb-for-mfdt-optional"
+    },
+    {
+      "depth": 2,
+      "text": "Ports to expose",
+      "id": "ports-to-expose"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>The Federation Hub is not part of the stock Deploy App stack, so this is the new piece. It is still file- and CLI-driven, so none of it needs the UI. Bake each item into the image, volume, config-map, or secret that your pipeline manages.</p>\n<h2 id=\"the-artifacts\"><a href=\"#the-artifacts\">The artifacts</a></h2>\n<p>The hub reads two YAML configs under <code>/opt/tak/federation-hub/configs/</code>:</p>\n<ul>\n<li><code>federation-hub-broker.yml</code> — federation and messaging: keystore/truststore names, the token-auth servers, optional MongoDB (for MFDT), and the policy the broker loads.</li>\n<li><code>federation-hub-ui.yml</code> — admin UI access, the authorized-users file location, and optional Keycloak OAuth for admin login.</li>\n</ul>\n<p>Template both from your topology and secrets.</p>\n<h2 id=\"1-certificate-and-trust\"><a href=\"#1-certificate-and-trust\">1. Certificate and trust</a></h2>\n<ul>\n<li>Hub identity: enroll the hub as a Deploy App product and get its server/client certs via RASENMAEHER <code>sign_csr</code> (or generate them with the bundled <code>/opt/tak/federation-hub/certs</code> scripts). Put them where the YAML expects them (<code>takserver.jks</code> keystore by default; set <code>keyAlias</code> to match).</li>\n<li>Trust the servers: import each deployment's <code>root_ca.pem</code> into the hub's federation truststore (<code>fed-truststore.jks</code> by default). Your pipeline already has these PEMs (see <a href=\"/en/working-with-tak/the-iac-trust-model-oJJLybgejE\">the trust model</a>).</li>\n</ul>\n<h2 id=\"2-authorized-admins\"><a href=\"#2-authorized-admins\">2. Authorized admins</a></h2>\n<p>The hub authorizes admin identities from a file written by a CLI, which suits a one-shot pipeline job:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#61AFEF\">java</span><span style=\"color:#D19A66\"> -jar</span><span style=\"color:#98C379\"> /opt/tak/federation-hub/jars/federation-hub-manager.jar</span><span style=\"color:#56B6C2\"> \\</span></span>\n<span class=\"line\"><span style=\"color:#98C379\">  /opt/tak/federation-hub/certs/files/</span><span style=\"color:#ABB2BF\">&#x3C;</span><span style=\"color:#98C379\">admi</span><span style=\"color:#ABB2BF\">n></span><span style=\"color:#98C379\">.pem</span></span>\n<span class=\"line\"><span style=\"color:#7F848E;font-style:italic\"># writes /opt/tak/federation-hub/authorized_users.yml</span></span></code></pre>",
+      "lang": "bash"
+    },
+    {
+      "type": "html",
+      "html": "<p>Run it as an init/bootstrap container so <code>authorized_users.yml</code> exists before the UI service starts. You rarely need a human admin once the policy is templated, but authorize at least one cert for break-glass access.</p>\n<h2 id=\"3-admin-auth-via-keycloak-optional\"><a href=\"#3-admin-auth-via-keycloak-optional\">3. Admin auth via Keycloak (optional)</a></h2>\n<p>Point the hub UI at the deployment's Keycloak so admin login uses Deploy App identity, in <code>federation-hub-ui.yml</code>:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#E06C75\">allowOauth</span><span style=\"color:#ABB2BF\">: </span><span style=\"color:#D19A66\">true</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">oauthPort</span><span style=\"color:#ABB2BF\">: </span><span style=\"color:#D19A66\">9099</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">keycloakClaimName</span><span style=\"color:#ABB2BF\">: </span><span style=\"color:#98C379\">groups</span><span style=\"color:#7F848E;font-style:italic\">        # token attribute</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">keycloakAdminClaimValue</span><span style=\"color:#ABB2BF\">: </span><span style=\"color:#98C379\">admin</span><span style=\"color:#7F848E;font-style:italic\">   # group that grants hub admin</span></span>\n<span class=\"line\"><span style=\"color:#7F848E;font-style:italic\"># keycloakServerName / keycloakClientId / keycloakSecret / endpoints from your Keycloak</span></span></code></pre>",
+      "lang": "yaml"
+    },
+    {
+      "type": "html",
+      "html": "<p>A user in the <code>admin</code> group can then administer the hub, with no separate hub credentials.</p>\n<h2 id=\"4-token-auth-port-optional\"><a href=\"#4-token-auth-port-optional\">4. Token-auth port (optional)</a></h2>\n<p>If a link cannot do full mTLS (for example a network running break-and-inspect), enable a token-auth port in <code>federation-hub-broker.yml</code>:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#E06C75\">federationTokenAuthServers</span><span style=\"color:#ABB2BF\">:</span></span>\n<span class=\"line\"><span style=\"color:#ABB2BF\">  - </span><span style=\"color:#E06C75\">type</span><span style=\"color:#ABB2BF\">: </span><span style=\"color:#98C379\">jwt</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">    port</span><span style=\"color:#ABB2BF\">: </span><span style=\"color:#D19A66\">9103</span></span></code></pre>",
+      "lang": "yaml"
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"5-mongodb-for-mfdt-optional\"><a href=\"#5-mongodb-for-mfdt-optional\">5. MongoDB for MFDT (optional)</a></h2>\n<p>For store-and-forward of mission/Data-Sync changes across disrupted links, run MongoDB and set its credentials in <code>federation-hub-broker.yml</code>.</p>\n<h2 id=\"ports-to-expose\"><a href=\"#ports-to-expose\">Ports to expose</a></h2>\n<p>9100 (admin UI), 9102 (v2 federation, which servers connect to), and 9103 if you enabled token auth. Open them in the firewall or security groups via IaC.</p>\n<p>The policy (which servers may talk, and what crosses) is the last artifact, covered next.</p>\n<p>→ Next: <a href=\"/en/working-with-tak/the-federation-policy-as-code-iza8fDoAU8\">The federation policy as code</a>.</p>"
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "id": "741b0bc5-a906-47f5-b60e-c7dac6813f8d",
+  "slug": "tiedostojen-ja-etaresurssien-tuonti-c3dqZ2juww",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Tiedostojen ja etäresurssien tuonti",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "LISÄOMINAISUUDET",
+    "Korkeus, maasto ja karttatyökalut",
+    "Tiedostojen ja etäresurssien tuonti"
+  ],
+  "createdAt": "2026-06-18T19:30:19.789Z",
+  "updatedAt": "2026-06-18T20:21:31.168Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/import-files-remote-resources-yjaTiWVKHl",
+    "fi": "/fi/guides/tak-guide/tiedostojen-ja-etaresurssien-tuonti-c3dqZ2juww",
+    "sv": "/sv/guides/tak-guide/importera-filer-och-fjarresurser-RIt6IYBJfn"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Tuo karttoja, kuvamateriaalia ja datapaketteja ATAKiin laitteeltasi tai liitä verkkolinkki, joka päivittyy itsestään.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Avaa tuonti ja valitse lähde",
+          "layout": "image-bottom",
+          "html": "<p>Napauta <strong>Import</strong>-kuvaketta. Valitse <strong>Select Import Type</strong> -ikkunassa <strong>Local SD</strong>, <strong>Gallery</strong>, <strong>KML Link</strong>, <strong>HTTP URL</strong> tai <strong>Choose App</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/03949903f00012bc.webp",
+              "width": 232,
+              "height": 92
+            }
+          ]
+        },
+        {
+          "title": "Tuo laitteen muistista",
+          "layout": "image-bottom",
+          "html": "<p>Valitse <strong>Local SD</strong>, etsi tiedosto ja napauta <strong>OK</strong>. ATAK ottaa vastaan asetukset, datapaketit, korkeustiedot, kuvamateriaalin ja peittokuvat; jotkin tyypit pyytävät sinua valitsemaan käsittelijän.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/fb7955722d5c042f.webp",
+              "width": 186,
+              "height": 103
+            }
+          ]
+        },
+        {
+          "title": "Valitse tuontitapa",
+          "layout": "image-bottom",
+          "html": "<p>Kerro ATAKille, miten tiedostoa käsitellään. <strong>Copy</strong> kopioi sen ATAK-hakemistoon, <strong>Move</strong> siirtää sen ja <strong>Use in Place</strong> jättää sen paikalleen.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/3d724c2ac23016fc.webp",
+              "width": 224,
+              "height": 118
+            }
+          ]
+        },
+        {
+          "title": "Lisää verkkolinkkiresurssi",
+          "layout": "image-bottom",
+          "html": "<p>Valitse <strong>KML Link</strong> tai <strong>HTTP URL</strong>, syötä <strong>Name</strong> ja <strong>URL</strong>, aseta päivitysväli ja napauta sitten <strong>Add</strong>. Linkki voi päivittyä automaattisesti ja tyhjentää paikallisen sisällön sammutettaessa.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/148f6d8f61edf0fc.webp",
+              "width": 248,
+              "height": 150
+            }
+          ]
+        },
+        {
+          "title": "Lataa ja seuraa etäresursseja",
+          "layout": "image-bottom",
+          "html": "<p>Lisätyt linkit näkyvät Overlay Managerin kohdassa <strong>Remote Resources</strong>.</p>\n<ul>\n<li>Punainen piste tarkoittaa, ettei latausta ole vielä tehty; napauta <strong>Download</strong> ladataksesi.</li>\n<li>Vihreä tarkoittaa, että se on ladattu ja ajan tasalla.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/17744d1ab1f41071.webp",
+              "width": 248,
+              "height": 109
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

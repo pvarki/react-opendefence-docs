@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "cf3e7de2-21f1-4150-a1a8-96afcdf5f636",
+  "slug": "rita-och-dela-planer-C7UNuLt8oq",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Rita och dela planer",
+  "breadcrumb": [
+    "Platforms",
+    "WinTAK",
+    "AVANCERADE KÄRNFUNKTIONER",
+    "Rita och dela planer"
+  ],
+  "createdAt": "2026-06-18T19:33:29.330Z",
+  "updatedAt": "2026-06-18T20:23:51.645Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/draw-share-plans-gUzuEffh5v",
+    "fi": "/fi/guides/tak-guide/piirra-ja-jaa-suunnitelmia-yKzNNsotOO",
+    "sv": "/sv/guides/tak-guide/rita-och-dela-planer-C7UNuLt8oq"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>WinTAK:s ritverktyg låter dig skissa planer — rutter, områden och ledningsåtgärder — och dela dem med din enhet via ett flöde.</p>\n<blockquote>\n<p>Utkast: skrivet utan skärmbilder. Lägg till skärmbilder av WinTAK:s ritverktyg när de finns tillgängliga.</p>\n</blockquote>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Öppna ritverktygen",
+          "layout": "text",
+          "html": "<p>Öppna ritverktygen från WinTAK:s verktygsfält. Du kan placera linjer, rutter, former och frihandsteckningar direkt på kartan.</p>",
+          "images": []
+        },
+        {
+          "title": "Rita rutter och områden",
+          "layout": "text",
+          "html": "<p>Rita det som planen kräver — en marsch- eller patrullrutt (<strong>route</strong>), ett område (<strong>area</strong>, polygon/cirkel) för en sektor eller ett mål, eller ledningsåtgärder. Fäst punkter på kartan och justera dem efter behov.</p>",
+          "images": []
+        },
+        {
+          "title": "Namnge och formge",
+          "layout": "text",
+          "html": "<p>Ge varje teckning ett tydligt namn (<strong>name</strong>) och ställ in dess färg så att planen kan läsas med en blick och stämmer med din enhets konventioner.</p>",
+          "images": []
+        },
+        {
+          "title": "Dela till ett flöde",
+          "layout": "text",
+          "html": "<p>Skicka den färdiga planen till ett <strong>Data Sync</strong>-flöde (till exempel ett PLAN-flöde) så att hela enheten tar emot den och hålls synkroniserad när du uppdaterar den.</p>",
+          "images": []
+        }
+      ]
+    }
+  ]
+}

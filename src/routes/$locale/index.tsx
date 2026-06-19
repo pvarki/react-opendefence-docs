@@ -9,6 +9,7 @@ import {
   Zap,
 } from "lucide-react";
 import { BookCard } from "@/components/shell/BookCard";
+import { AgentFriendlyNote } from "@/components/shell/AgentFriendlyNote";
 import { CARD_IMAGES } from "@/lib/cardImages";
 import { withBase } from "@/lib/base";
 
@@ -178,6 +179,8 @@ function HomeFooter() {
             </p>
           ))}
         </div>
+
+        <AgentFriendlyNote example={t("agentNote.exampleHome")} />
       </div>
     </footer>
   );

@@ -13,8 +13,13 @@
     "Use RECON Feed"
   ],
   "createdAt": "2026-01-23T21:12:33.341Z",
-  "updatedAt": "2026-06-14T13:12:56.341Z",
+  "updatedAt": "2026-06-18T20:17:03.983Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/use-recon-feed-1eKYHfIBys",
+    "fi": "/fi/guides/tak-guide/kayta-recon-syotetta-RorUr3qVJs",
+    "sv": "/sv/guides/tak-guide/anvand-recon-flodet-MjbNU9jIF7"
+  },
   "blocks": [
     {
       "type": "slideset",

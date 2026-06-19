@@ -12,8 +12,13 @@
     "Add to & Work a Feed"
   ],
   "createdAt": "2026-06-16T18:02:36.847Z",
-  "updatedAt": "2026-06-16T18:02:36.847Z",
+  "updatedAt": "2026-06-18T20:13:59.216Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/add-to-work-a-feed-QUjMOBwISe",
+    "fi": "/fi/guides/tak-guide/lisaa-syotteeseen-ja-kayta-sita-zgUEPZIdvs",
+    "sv": "/sv/guides/tak-guide/lagg-till-i-och-arbeta-med-ett-flode-ipP0eWsr0q"
+  },
   "blocks": [
     {
       "type": "html",
@@ -26,7 +31,7 @@
         {
           "title": "Open the feed dashboard",
           "layout": "image-bottom",
-          "html": "<p>Tap a feed to open its dashboard. The tools across the top are <strong>Add Items</strong>, <strong>Timeline</strong>, <strong>Download</strong>, <strong>Feed Settings</strong> and <strong>Search</strong>. Items are grouped into <strong>Map Items</strong>, <strong>Photos</strong> and <strong>Files</strong>.</p>",
+          "html": "<p>Tap a feed to open its dashboard.</p>\n<ul>\n<li>The tools across the top are <strong>Add Items</strong>, <strong>Timeline</strong>, <strong>Download</strong>, <strong>Feed Settings</strong> and <strong>Search</strong>.</li>\n<li>Items are grouped into <strong>Map Items</strong>, <strong>Photos</strong> and <strong>Files</strong>.</li>\n</ul>",
           "images": [
             {
               "src": "/content/images/en/attachments/1dca104e83b4b195.webp",
@@ -38,7 +43,7 @@
         {
           "title": "Add items to a feed",
           "layout": "image-bottom",
-          "html": "<p>Tap <strong>Add Items</strong>, then choose how to add: <strong>Map Select</strong>, <strong>Overlays</strong>, <strong>File Select</strong> or <strong>User Log</strong>. The same menu has <strong>Invite</strong> (add teammates) and <strong>Geofence</strong> — anyone whose marker crosses a feed's geofence is invited automatically.</p>",
+          "html": "<p>Tap <strong>Add Items</strong>, then choose how to add: <strong>Map Select</strong>, <strong>Overlays</strong>, <strong>File Select</strong> or <strong>User Log</strong>.</p>\n<ul>\n<li>The same menu has <strong>Invite</strong> (add teammates) and <strong>Geofence</strong> — anyone whose marker crosses a feed's geofence is invited automatically.</li>\n</ul>",
           "images": [
             {
               "src": "/content/images/en/attachments/f7be9455c9ab8fce.webp",
@@ -50,7 +55,7 @@
         {
           "title": "Update shared items",
           "layout": "image-bottom",
-          "html": "<p>Move or edit a shared item and you're asked to <strong>publish</strong> the change. Changed items show in <strong>red</strong>; tap <strong>Mark Read</strong> to clear them. If two people edit the same item offline, a deconfliction prompt lets you keep the version you want.</p>",
+          "html": "<p>Move or edit a shared item and you're asked to <strong>publish</strong> the change.</p>\n<ul>\n<li>Changed items show in <strong>red</strong>; tap <strong>Mark Read</strong> to clear them.</li>\n<li>If two people edit the same item offline, a deconfliction prompt lets you keep the version you want.</li>\n</ul>",
           "images": [
             {
               "src": "/content/images/en/attachments/27581627618d5542.webp",

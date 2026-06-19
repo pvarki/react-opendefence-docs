@@ -12,8 +12,13 @@
     "Importing Server Connection"
   ],
   "createdAt": "2025-12-05T22:06:23.582Z",
-  "updatedAt": "2026-06-16T10:52:36.409Z",
+  "updatedAt": "2026-06-18T20:13:38.334Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/importing-server-connection-PQ4dCV2SYR",
+    "fi": "/fi/guides/tak-guide/palvelinyhteyden-tuonti-orW4BArnHi",
+    "sv": "/sv/guides/tak-guide/importera-serveranslutning-Heo41dBNko"
+  },
   "blocks": [
     {
       "type": "slideset",

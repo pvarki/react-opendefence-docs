@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "f4439087-2b73-458e-b0d1-ddbb7813c3e0",
+  "slug": "working-with-the-map-cot-JmDIw4jN8e",
+  "collection": "working-with-tak",
+  "locale": "en",
+  "title": "Working with the map & CoT",
+  "breadcrumb": [
+    "ATAK Plugin Development",
+    "Working with the map & CoT"
+  ],
+  "createdAt": "2026-06-16T22:49:06.730Z",
+  "updatedAt": "2026-06-17T01:52:07.376Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "The map model in one minute",
+      "id": "the-map-model-in-one-minute"
+    },
+    {
+      "depth": 2,
+      "text": "What CoT is",
+      "id": "what-cot-is"
+    },
+    {
+      "depth": 2,
+      "text": "Internal vs external dispatch",
+      "id": "internal-vs-external-dispatch"
+    },
+    {
+      "depth": 2,
+      "text": "Receiving CoT and custom detail tags",
+      "id": "receiving-cot-and-custom-detail-tags"
+    },
+    {
+      "depth": 2,
+      "text": "Going deeper",
+      "id": "going-deeper"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Two capabilities cover most of what plugins actually do: putting things on the <strong>map</strong>, and exchanging <strong>Cursor-on-Target (CoT)</strong> messages with the rest of the TAK network.</p>\n<h2 id=\"the-map-model-in-one-minute\"><a href=\"#the-map-model-in-one-minute\">The map model in one minute</a></h2>\n<ul>\n<li><code>**MapView**</code> — the map surface. Reach it from a receiver with <code>getMapView()</code>.</li>\n<li><code>**MapGroup**</code> — a container/tree of map items. <code>getMapView().getRootGroup()</code> is the top of the tree; you can nest your own groups under it.</li>\n<li><code>**MapItem**</code> — anything on the map. <code>Marker</code> (a point with an icon/callsign) is the most common; there are also shapes, routes, rectangles, associations, etc.</li>\n<li><code>**GeoPoint**</code> — a lat/lon(/altitude) coordinate.</li>\n</ul>\n<p>Adding an item to a group makes it appear (as we did in <a href=\"/en/working-with-tak/build-a-ui-the-dropdown-panel-kaH71FJeG8\">Build a UI</a>); removing it hides it. That's the whole loop.</p>\n<h2 id=\"what-cot-is\"><a href=\"#what-cot-is\">What CoT is</a></h2>\n<p><strong>Cursor-on-Target (CoT)</strong> is the lingua franca of the TAK ecosystem — a compact event format describing <em>what</em> is <em>where</em>, <em>when</em>, by <em>whom</em>. Markers, drawings, routes, chat, and sensor data all travel between TAK clients and servers as CoT events. As a plugin author you rarely hand-write CoT XML; you convert ATAK map items to <code>CotEvent</code>s and hand them to a <strong>dispatcher</strong>.</p>\n<h2 id=\"internal-vs-external-dispatch\"><a href=\"#internal-vs-external-dispatch\">Internal vs external dispatch</a></h2>\n<p>ATAK exposes two dispatchers through <code>CotMapComponent</code>, and the distinction matters:</p>\n<ul>\n<li><strong>External dispatcher</strong> — sends the event <em>out over the network</em> to configured outputs (other clients, a TAK Server). Use this to share something with the team.</li>\n<li><strong>Internal dispatcher</strong> — routes the event through ATAK's <em>own</em> internal bus, as if the local app had just received it over the network. Use this to make the local ATAK process an event without transmitting it.</li>\n</ul>\n<p>The example dispatches a drawing to the network like this:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#7F848E;font-style:italic\">// Convert an ATAK map item into a CoT event, then broadcast it externally.</span></span>\n<span class=\"line\"><span style=\"color:#C678DD\">final</span><span style=\"color:#E5C07B\"> CotEvent</span><span style=\"color:#E06C75\"> cotEvent </span><span style=\"color:#56B6C2\">=</span><span style=\"color:#E5C07B\"> CotEventFactory</span><span style=\"color:#ABB2BF\">.</span><span style=\"color:#61AFEF\">createCotEvent</span><span style=\"color:#ABB2BF\">(drawingRectangle);</span></span>\n<span class=\"line\"><span style=\"color:#E5C07B\">CotMapComponent</span><span style=\"color:#ABB2BF\">.</span><span style=\"color:#61AFEF\">getExternalDispatcher</span><span style=\"color:#ABB2BF\">().</span><span style=\"color:#61AFEF\">dispatchToBroadcast</span><span style=\"color:#ABB2BF\">(cotEvent);</span></span></code></pre>",
+      "lang": "java"
+    },
+    {
+      "type": "html",
+      "html": "<ul>\n<li><code>**CotEventFactory.createCotEvent(mapItem)**</code> turns a <code>MapItem</code> into a <code>CotEvent</code> — you don't build the XML by hand.</li>\n<li><code>**dispatchToBroadcast(cotEvent)**</code> sends to <em>all</em> configured network outputs. There are also more targeted dispatch methods when you want to send to specific contacts rather than broadcasting.</li>\n</ul>\n<p>To send to a specific TAK contact, the example builds on <code>TAKContactSender</code> / <code>CotServiceRemote</code> and ATAK's contact list rather than broadcasting to everyone — see <code>HelloWorldContactSender</code> in the example.</p>\n<h2 id=\"receiving-cot-and-custom-detail-tags\"><a href=\"#receiving-cot-and-custom-detail-tags\">Receiving CoT and custom detail tags</a></h2>\n<p>Incoming CoT is delivered to ATAK and turned into map items automatically. When you need to attach <strong>custom data</strong> to events — your own XML \"detail\" sub-elements that ATAK doesn't understand natively — register a <code>CotDetailHandler</code> with the <code>CotDetailManager</code>:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#E5C07B\">CotDetailManager</span><span style=\"color:#ABB2BF\">.</span><span style=\"color:#61AFEF\">getInstance</span><span style=\"color:#ABB2BF\">().</span><span style=\"color:#61AFEF\">registerHandler</span><span style=\"color:#ABB2BF\">(</span></span>\n<span class=\"line\"><span style=\"color:#C678DD\">    new</span><span style=\"color:#61AFEF\"> CotDetailHandler</span><span style=\"color:#ABB2BF\">(</span><span style=\"color:#98C379\">\"__myDetail\"</span><span style=\"color:#ABB2BF\">) {</span></span>\n<span class=\"line\"><span style=\"color:#7F848E;font-style:italic\">        // INBOUND: a received CoT carried your detail → copy it onto the map item</span></span>\n<span class=\"line\"><span style=\"color:#ABB2BF\">        @</span><span style=\"color:#E5C07B\">Override</span></span>\n<span class=\"line\"><span style=\"color:#C678DD\">        public</span><span style=\"color:#E5C07B\"> CommsMapComponent</span><span style=\"color:#ABB2BF\">.</span><span style=\"color:#E5C07B\">ImportResult</span><span style=\"color:#61AFEF\"> toItemMetadata</span><span style=\"color:#ABB2BF\">(</span></span>\n<span class=\"line\"><span style=\"color:#E5C07B\">                MapItem</span><span style=\"color:#E06C75;font-style:italic\"> item</span><span style=\"color:#ABB2BF\">, </span><span style=\"color:#E5C07B\">CotEvent</span><span style=\"color:#E06C75;font-style:italic\"> event</span><span style=\"color:#ABB2BF\">, </span><span style=\"color:#E5C07B\">CotDetail</span><span style=\"color:#E06C75;font-style:italic\"> detail</span><span style=\"color:#ABB2BF\">)</span><span style=\"color:#ABB2BF\"> {</span></span>\n<span class=\"line\"><span style=\"color:#7F848E;font-style:italic\">            // read detail, set metadata on item</span></span>\n<span class=\"line\"><span style=\"color:#C678DD\">            return</span><span style=\"color:#E5C07B\"> CommsMapComponent</span><span style=\"color:#ABB2BF\">.</span><span style=\"color:#E5C07B\">ImportResult</span><span style=\"color:#ABB2BF\">.</span><span style=\"color:#E5C07B\">SUCCESS</span><span style=\"color:#ABB2BF\">;</span></span>\n<span class=\"line\"><span style=\"color:#ABB2BF\">        }</span></span>\n<span class=\"line\"></span>\n<span class=\"line\"><span style=\"color:#7F848E;font-style:italic\">        // OUTBOUND: an item is being turned into CoT → add your detail element</span></span>\n<span class=\"line\"><span style=\"color:#ABB2BF\">        @</span><span style=\"color:#E5C07B\">Override</span></span>\n<span class=\"line\"><span style=\"color:#C678DD\">        public</span><span style=\"color:#C678DD\"> boolean</span><span style=\"color:#61AFEF\"> toCotDetail</span><span style=\"color:#ABB2BF\">(</span><span style=\"color:#E5C07B\">MapItem</span><span style=\"color:#E06C75;font-style:italic\"> item</span><span style=\"color:#ABB2BF\">, </span><span style=\"color:#E5C07B\">CotEvent</span><span style=\"color:#E06C75;font-style:italic\"> event</span><span style=\"color:#ABB2BF\">, </span><span style=\"color:#E5C07B\">CotDetail</span><span style=\"color:#E06C75;font-style:italic\"> root</span><span style=\"color:#ABB2BF\">)</span><span style=\"color:#ABB2BF\"> {</span></span>\n<span class=\"line\"><span style=\"color:#7F848E;font-style:italic\">            // append your &#x3C;__myDetail .../> element to root</span></span>\n<span class=\"line\"><span style=\"color:#C678DD\">            return</span><span style=\"color:#D19A66\"> true</span><span style=\"color:#ABB2BF\">;</span></span>\n<span class=\"line\"><span style=\"color:#ABB2BF\">        }</span></span>\n<span class=\"line\"><span style=\"color:#ABB2BF\">    });</span></span></code></pre>",
+      "lang": "java"
+    },
+    {
+      "type": "html",
+      "html": "<p>This handler pair — <code>toItemMetadata</code> (inbound) and <code>toCotDetail</code> (outbound) — is how a plugin teaches ATAK to round-trip its own data through the CoT network without breaking interoperability with other clients.</p>\n<blockquote>\n<p>Register detail handlers in your <code>MapComponent.onCreate</code> and unregister them in your cleanup, so they live exactly as long as your plugin does.</p>\n</blockquote>\n<h2 id=\"going-deeper\"><a href=\"#going-deeper\">Going deeper</a></h2>\n<p>This page is the concept overview. For the working API references, see:</p>\n<ul>\n<li><a href=\"/en/working-with-tak/map-items-groups-graphics-ZmQRXcNeqF\">Map items, groups &#x26; graphics</a> — <code>MapGroup</code>/<code>MapItem</code>, markers, polylines, <code>PlacePointTool</code>, deleting remote items, focus/radial intents.</li>\n<li><a href=\"/en/working-with-tak/handling-map-events-KDHLfTLGfS\">Handling map events</a> — <code>MapEventDispatcher</code> and the listener stack.</li>\n<li><a href=\"/en/working-with-tak/cot-in-depth-listening-sending-custom-details-nTudtLfqX9\">CoT in depth</a> — detail handlers, Marshal/Importer, dispatch.</li>\n<li><a href=\"/en/working-with-tak/advanced-practical-apis-2XMWIolD6S\">Advanced &#x26; practical APIs</a> — Import API, IO abstraction, radial menus, projections, <code>PluginSpinner</code>, native code, release/emulator tips.</li>\n</ul>\n<p>→ Next: <a href=\"/en/working-with-tak/build-install-run-fWfgBZRkux\">Build, install &#x26; run</a>.</p>"
+    }
+  ]
+}

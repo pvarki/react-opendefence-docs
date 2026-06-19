@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 1,
+  "id": "65d9c6f1-a48d-48b0-bc60-293a4f0bb07f",
+  "slug": "navigera-en-rutt-NOneSaVoN3",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Navigera en rutt",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "YTTERLIGARE FUNKTIONER",
+    "Navigering och koordinater",
+    "Navigera en rutt"
+  ],
+  "createdAt": "2026-06-18T19:28:20.469Z",
+  "updatedAt": "2026-06-18T20:19:08.462Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/navigate-a-route-zHde8FSxCb",
+    "fi": "/fi/guides/tak-guide/navigoi-reittia-V9h7ubqj5x",
+    "sv": "/sv/guides/tak-guide/navigera-en-rutt-NOneSaVoN3"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Följ en befintlig rutt till ditt mål med avstånds-, riktnings- och svänganvisningar på skärmen.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Starta navigering på en rutt",
+          "layout": "image-bottom",
+          "html": "<p>Välj ruttens radialalternativ för navigering, eller tryck på dess <strong>Navigation</strong>-ikon i ruttlistan. Navigeringsinformationen visas sedan i det övre vänstra hörnet. (För att först bygga en rutt, se Create Routes och använd VNS.)</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/fc5e3c34fc6eb9e4.webp",
+              "width": 98,
+              "height": 71
+            }
+          ]
+        },
+        {
+          "title": "Läs navigeringsinformationen",
+          "layout": "image-bottom",
+          "html": "<p>Fältet visar avstånd, aktuell hastighet och nästa kontrollpunkt, till exempel <strong>Next: CP1 Continue Straight</strong>. Tryck på den översta raden i visningen för att fälla ihop den och frigöra skärmutrymme.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/0649bc01e20d4a2e.webp",
+              "width": 245,
+              "height": 98
+            }
+          ]
+        },
+        {
+          "title": "Anvisningar, ljud av och enheter",
+          "layout": "image-bottom",
+          "html": "<p>När du närmar dig en kontrollpunkt visas dess anvisning; höj volymen för att höra röstanvisningar, eller tryck på <strong>Mute</strong>-ikonen för att tysta dem. Tryck på avståndet eller hastigheten för att växla mellan enheter (mph, km/h, kn, m/s).</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/0649bc01e20d4a2e.webp",
+              "width": 245,
+              "height": 98
+            }
+          ]
+        },
+        {
+          "title": "Flytta mellan kontrollpunkter och avsluta",
+          "layout": "image-bottom",
+          "html": "<p>Använd pilarna på vardera sidan om informationen för att stega till nästa eller föregående kontrollpunkt. Välj <strong>x</strong> för att avsluta navigeringen.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/0649bc01e20d4a2e.webp",
+              "width": 245,
+              "height": 98
+            }
+          ]
+        },
+        {
+          "title": "Navigera lutad i 3D med skyltar",
+          "layout": "image-bottom",
+          "html": "<p>När du navigerar i 3D visas en markörs bifogade bild som en skylt när du kommer inom dess renderingsavstånd, och försvinner sedan när du passerar. Justera detta under <strong>Settings > Tool Preferences > Specific Tool Preferences > Route Preferences > Billboard Render Distance</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/7b33163f75e1cb54.webp",
+              "width": 380,
+              "height": 201
+            }
+          ]
+        },
+        {
+          "title": "Quick Nav till valfri punkt (bloodhound)",
+          "layout": "image-bottom",
+          "html": "<p>Välj <strong>Quick Nav</strong>-ikonen för att bloodhound rakt till valfri punkt, objekt eller rutt. En kopplingslinje ritas och nere till vänster visas tid, hastighet och avstånd till nästa kontrollpunkt medan du rör dig.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/7b33163f75e1cb54.webp",
+              "width": 380,
+              "height": 201
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

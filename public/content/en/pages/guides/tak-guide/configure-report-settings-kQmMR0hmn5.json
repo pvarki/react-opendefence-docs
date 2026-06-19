@@ -8,13 +8,18 @@
   "breadcrumb": [
     "Platforms",
     "ATAK",
-    "Supported Plugins",
+    "SUPPORTED PLUGINS",
     "Reports",
     "Configure Report Settings"
   ],
   "createdAt": "2026-06-15T19:51:31.064Z",
-  "updatedAt": "2026-06-15T19:51:31.064Z",
+  "updatedAt": "2026-06-18T20:22:41.007Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/configure-report-settings-kQmMR0hmn5",
+    "fi": "/fi/guides/tak-guide/maarita-raporttiasetukset-irT9AFQtCl",
+    "sv": "/sv/guides/tak-guide/konfigurera-rapportinstallningar-SdPkG0kE3I"
+  },
   "blocks": [
     {
       "type": "html",
@@ -27,7 +32,7 @@
         {
           "title": "Set how reports are sent",
           "layout": "image-bottom",
-          "html": "<p>In <strong>General Settings</strong>, turn on <strong>Allow sending to ATAK users over Data Package</strong> to be prompted for a send method, and <strong>Send Report Data Package To All Contacts Automatically</strong> to push to everyone on the network. Use <strong>Always Show Queried Reports</strong> to keep server results on screen.</p>",
+          "html": "<p>In <strong>General Settings</strong>, turn on <strong>Allow sending to ATAK users over Data Package</strong> to be prompted for a send method, and <strong>Send Report Data Package To All Contacts Automatically</strong> to push to everyone on the network.</p>\n<ul>\n<li>Use <strong>Always Show Queried Reports</strong> to keep server results on screen.</li>\n</ul>",
           "images": [
             {
               "src": "/content/images/en/attachments/1671ece168e75125.webp",
@@ -63,7 +68,7 @@
         {
           "title": "Pick a default report template",
           "layout": "image-bottom",
-          "html": "<p>In <strong>Report Templates</strong>, set <strong>Default Report Type</strong> to the template you create most. Use <strong>Overwrite Reports with Defaults</strong> to customize reports made with that type.</p>",
+          "html": "<p>In <strong>Report Templates</strong>, set <strong>Default Report Type</strong> to the template you create most.</p>\n<ul>\n<li>Use <strong>Overwrite Reports with Defaults</strong> to customize reports made with that type.</li>\n</ul>",
           "images": [
             {
               "src": "/content/images/en/attachments/0b9f6fd975c7ce3d.webp",
@@ -75,7 +80,7 @@
         {
           "title": "Set PDF export options",
           "layout": "image-bottom",
-          "html": "<p>Under <strong>Export to PDF</strong>, turn on <strong>Automatically Open PDFs</strong> to view each PDF as soon as it is created. Use <strong>Watermark Preferences</strong> to set the watermark to default, custom, or none.</p>",
+          "html": "<p>Under <strong>Export to PDF</strong>, turn on <strong>Automatically Open PDFs</strong> to view each PDF as soon as it is created.</p>\n<ul>\n<li>Use <strong>Watermark Preferences</strong> to set the watermark to default, custom, or none.</li>\n</ul>",
           "images": [
             {
               "src": "/content/images/en/attachments/bade3d6907a7b1b4.webp",

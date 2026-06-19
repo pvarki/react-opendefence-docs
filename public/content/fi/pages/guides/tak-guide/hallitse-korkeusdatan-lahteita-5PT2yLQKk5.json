@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "dfbbbc4a-b022-42a0-a98b-df55c4d51033",
+  "slug": "hallitse-korkeusdatan-lahteita-5PT2yLQKk5",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Hallitse korkeusdatan lähteitä",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "LISÄOMINAISUUDET",
+    "Korkeus, maasto ja karttatyökalut",
+    "Hallitse korkeusdatan lähteitä"
+  ],
+  "createdAt": "2026-06-18T19:29:24.984Z",
+  "updatedAt": "2026-06-18T20:21:28.313Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/manage-elevation-sources-1DMW21VzzP",
+    "fi": "/fi/guides/tak-guide/hallitse-korkeusdatan-lahteita-5PT2yLQKk5",
+    "sv": "/sv/guides/tak-guide/hantera-hojddatakallor-NcbELJNAnv"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Hae tarkat maaston korkeustiedot 3D-näkymiä ja näkyvyysalueita varten suoratoistamalla ja vaihtamalla korkeusdataa laitteellasi.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Valitse, miten korkeusdata ladataan",
+          "layout": "image-bottom",
+          "html": "<p>Mene kohtaan <strong>Settings</strong> > <strong>Tool Preferences</strong> > <strong>Specific Tool Preferences</strong> > <strong>Elevation Overlays Preferences</strong>. Oletuksena ATAK suoratoistaa dataa (DTED, SRTM) tarpeen mukaan; poista valinta <strong>Stream Elevation Data</strong>, jos haluat pakottaa täydet lataukset sen sijaan.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/0deb95b6245dbcbc.webp",
+              "width": 332,
+              "height": 398
+            }
+          ]
+        },
+        {
+          "title": "Tarkista kattavuus Overlay Managerissa",
+          "layout": "image-bottom",
+          "html": "<p>Avaa <strong>Overlay Manager</strong> ja merkitse <strong>DTED</strong>-tason rajausvalinta. Kartan keltaiset ruudukot näyttävät tarkalleen, mihin DTED0-data on jo ladattu.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/1e3b3ae178532c26.webp",
+              "width": 400,
+              "height": 226
+            }
+          ]
+        },
+        {
+          "title": "Vaihda ja priorisoi lähteitä",
+          "layout": "image-bottom",
+          "html": "<p><strong>Elevation Manager</strong> luettelee lähteesi (DTED, <strong>TAK Terrain</strong>, <strong>TAK Bathy</strong>).</p>\n<ul>\n<li>Järjestä taso uudelleen nuolipainikkeilla asettaaksesi prioriteetin (ylin voittaa) ja kytke kukin lähde päälle tai pois näkyvyyspainikkeilla.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/02917e1c8b4769b6.webp",
+              "width": 470,
+              "height": 679
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

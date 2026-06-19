@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 1,
+  "id": "ba04670f-45bd-444d-b28b-a5e878437f63",
+  "slug": "spara-rorelse-gps-spar-bWXVbzW6gA",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Spåra rörelse (GPS-spår)",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "YTTERLIGARE FUNKTIONER",
+    "Navigering och koordinater",
+    "Spåra rörelse (GPS-spår)"
+  ],
+  "createdAt": "2026-06-18T19:29:17.525Z",
+  "updatedAt": "2026-06-18T20:20:37.306Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/track-movement-gps-tracks-ncPNa8dv8K",
+    "fi": "/fi/guides/tak-guide/liikkeen-jaljitys-gps-jaljet-Kfbctffcg5",
+    "sv": "/sv/guides/tak-guide/spara-rorelse-gps-spar-bWXVbzW6gA"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Spela in var du har varit som ett GPS-spår, och visa, färglägg om och dela det spåret med ditt team eller en TAK-server.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Starta ett nytt spår",
+          "layout": "image-bottom",
+          "html": "<p>Öppna verktyget <strong>Track History</strong> för att se <strong>Track Details</strong> för ditt aktiva spår. Tryck på ikonen <strong>Add Track</strong> för att starta ett nytt GPS-spår. En GPS-position måste vara fastställd innan spårningen börjar.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/2007ac2a0f34cc8d.webp",
+              "width": 220,
+              "height": 248
+            }
+          ]
+        },
+        {
+          "title": "Namnge och bekräfta spåret",
+          "layout": "image-bottom",
+          "html": "<p>Behåll det förvalda spårnamnet eller skriv ditt eget, och tryck sedan på <strong>OK</strong>. Din position spelas nu in som spårpunkter i den nya spårfilen.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/29d539466a9e263f.webp",
+              "width": 220,
+              "height": 101
+            }
+          ]
+        },
+        {
+          "title": "Visa dina tidigare spår",
+          "layout": "image-bottom",
+          "html": "<p>Öppna <strong>Track List</strong> för att se spår som sparats på enheten eller hämtats från en TAK-server. Tryck på ett spår i listan för att välja det och visa det på kartan.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/99fb32717d4acbd5.webp",
+              "width": 448,
+              "height": 218
+            }
+          ]
+        },
+        {
+          "title": "Sök efter ett sparat spår",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på ikonen <strong>Track Search</strong> för att hitta äldre spår. Ange anropssignalen och tidsintervallet <strong>Start</strong> och <strong>End</strong>, markera <strong>Server Search</strong> för att inkludera servern, och tryck sedan på <strong>Search</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/0f7ebbcfa66cd987.webp",
+              "width": 207,
+              "height": 156
+            }
+          ]
+        },
+        {
+          "title": "Ändra spårets färg",
+          "layout": "image-bottom",
+          "html": "<p>Välj spåret, och tryck sedan i <strong>Track Details</strong> på färgrutan <strong>Style</strong> för att färglägga det om. Använd <strong>Arrows</strong> för att visa färdriktningen längs linjen.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/2007ac2a0f34cc8d.webp",
+              "width": 220,
+              "height": 248
+            }
+          ]
+        },
+        {
+          "title": "Exportera eller dela spåret",
+          "layout": "image-bottom",
+          "html": "<p>Använd ikonerna i nederkanten för att exportera spåret som KML, KMZ, GPX eller CSV med <strong>Export</strong>, eller för att skicka det till en TAK-server med <strong>Send</strong>. Ange ett filnamn, tryck på <strong>Next</strong>, välj formatet, och tryck sedan på <strong>Done</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/2007ac2a0f34cc8d.webp",
+              "width": 220,
+              "height": 248
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

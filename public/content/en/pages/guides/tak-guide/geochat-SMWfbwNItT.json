@@ -12,8 +12,13 @@
     "GeoChat"
   ],
   "createdAt": "2025-12-05T22:06:22.269Z",
-  "updatedAt": "2026-06-15T19:42:23.236Z",
+  "updatedAt": "2026-06-18T20:13:53.593Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/geochat-SMWfbwNItT",
+    "fi": "/fi/guides/tak-guide/geochat-5kOdqvslhn",
+    "sv": "/sv/guides/tak-guide/geochat-HOCGG8SkvO"
+  },
   "blocks": [
     {
       "type": "slideset",

@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "id": "26367ada-3e7f-428a-9ac3-3d8e0eea9fae",
+  "slug": "map-items-groups-graphics-ZmQRXcNeqF",
+  "collection": "working-with-tak",
+  "locale": "en",
+  "title": "Map items, groups & graphics",
+  "breadcrumb": [
+    "ATAK Plugin Development",
+    "Map items, groups & graphics"
+  ],
+  "createdAt": "2026-06-17T01:52:05.074Z",
+  "updatedAt": "2026-06-17T01:52:06.271Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "The model: MapView → MapGroup → MapItem",
+      "id": "the-model-mapview--mapgroup--mapitem"
+    },
+    {
+      "depth": 2,
+      "text": "Adding a Marker",
+      "id": "adding-a-marker"
+    },
+    {
+      "depth": 3,
+      "text": "Marker the CoT-aware way: PlacePointTool.MarkerCreator",
+      "id": "marker-the-cot-aware-way-placepointtoolmarkercreator"
+    },
+    {
+      "depth": 2,
+      "text": "Adding a Polyline (line or polygon)",
+      "id": "adding-a-polyline-line-or-polygon"
+    },
+    {
+      "depth": 2,
+      "text": "Removing an item — locally and remotely",
+      "id": "removing-an-item--locally-and-remotely"
+    },
+    {
+      "depth": 2,
+      "text": "Focusing and showing the radial menu",
+      "id": "focusing-and-showing-the-radial-menu"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p><a href=\"/en/working-with-tak/working-with-the-map-cot-JmDIw4jN8e\">Working with the map &#x26; CoT</a> introduced the map model; this page is the working reference for putting things on the map and manipulating them.</p>\n<h2 id=\"the-model-mapview--mapgroup--mapitem\"><a href=\"#the-model-mapview--mapgroup--mapitem\">The model: MapView → MapGroup → MapItem</a></h2>\n<ul>\n<li><code>**MapView**</code> — the map surface (<code>getMapView()</code> from a receiver).</li>\n<li><code>**MapGroup**</code> — a container that holds map items in a hierarchy (no cycles). The root is <code>getMapView().getRootGroup()</code>. A group's contents are only drawn once the group is the root group or a descendant of it.</li>\n<li><code>**MapItem**</code> — anything on the map. The base class (<code>com.atakmap.android.maps.MapItem</code>) carries metadata (UID, type, title) and arbitrary custom attribution via <code>setMetaXxx(String, …)</code> / <code>getMetaXxx(String, …)</code>.</li>\n</ul>\n<p>The built-in graphics in <code>com.atakmap.android.maps</code> all extend <code>MapItem</code>: <code>**Marker**</code> (symbols), <code>**Polyline**</code> (line/polygon), <code>**Ellipse**</code>, <code>**Rectangle**</code>, <code>**Arrow**</code>.</p>\n<blockquote>\n<p><strong>API note (version drift).</strong> The 5.x open-source <code>helloworld</code> uses <code>getMapView().getRootGroup()</code>. Older docs/code may show <code>MapView.getRootMapGroup()</code> and <code>addGroup(...)</code> — confirm the exact accessor in the SDK you target.</p>\n</blockquote>\n<p>A plugin that owns a set of graphics typically creates its <strong>own</strong> <code>MapGroup</code> in <code>MapComponent.onCreate(...)</code> and adds its items there, so it can manage/remove them as a unit:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#E5C07B\">MapGroup</span><span style=\"color:#E06C75\"> root </span><span style=\"color:#56B6C2\">=</span><span style=\"color:#61AFEF\"> getMapView</span><span style=\"color:#E06C75\">()</span><span style=\"color:#ABB2BF\">.</span><span style=\"color:#61AFEF\">getRootGroup</span><span style=\"color:#ABB2BF\">();</span></span>\n<span class=\"line\"><span style=\"color:#E5C07B\">MapGroup</span><span style=\"color:#E06C75\"> myGroup </span><span style=\"color:#56B6C2\">=</span><span style=\"color:#C678DD\"> new</span><span style=\"color:#61AFEF\"> DefaultMapGroup</span><span style=\"color:#E06C75\">(</span><span style=\"color:#98C379\">\"my-plugin\"</span><span style=\"color:#E06C75\">)</span><span style=\"color:#ABB2BF\">;</span><span style=\"color:#7F848E;font-style:italic\">   // com.atakmap.android.maps.DefaultMapGroup</span></span>\n<span class=\"line\"><span style=\"color:#E5C07B\">root</span><span style=\"color:#ABB2BF\">.</span><span style=\"color:#61AFEF\">addGroup</span><span style=\"color:#ABB2BF\">(myGroup);</span></span></code></pre>",
+      "lang": "java"
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"adding-a-marker\"><a href=\"#adding-a-marker\">Adding a Marker</a></h2>\n<p>The lowest-level path (verified in the open-source <code>helloworld</code> example):</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#E5C07B\">String</span><span style=\"color:#E06C75\"> uid </span><span style=\"color:#56B6C2\">=</span><span style=\"color:#E5C07B\"> UUID</span><span style=\"color:#ABB2BF\">.</span><span style=\"color:#61AFEF\">randomUUID</span><span style=\"color:#ABB2BF\">().</span><span style=\"color:#61AFEF\">toString</span><span style=\"color:#ABB2BF\">();</span></span>\n<span class=\"line\"><span style=\"color:#E5C07B\">GeoPoint</span><span style=\"color:#E06C75\"> location </span><span style=\"color:#56B6C2\">=</span><span style=\"color:#61AFEF\"> getMapView</span><span style=\"color:#E06C75\">()</span><span style=\"color:#ABB2BF\">.</span><span style=\"color:#61AFEF\">getCenterPoint</span><span style=\"color:#ABB2BF\">().</span><span style=\"color:#61AFEF\">get</span><span style=\"color:#ABB2BF\">();</span></span>\n<span class=\"line\"></span>\n<span class=\"line\"><span style=\"color:#E5C07B\">Marker</span><span style=\"color:#E06C75\"> marker </span><span style=\"color:#56B6C2\">=</span><span style=\"color:#C678DD\"> new</span><span style=\"color:#61AFEF\"> Marker</span><span style=\"color:#E06C75\">(location</span><span style=\"color:#ABB2BF\">,</span><span style=\"color:#E06C75\"> uid)</span><span style=\"color:#ABB2BF\">;</span></span>\n<span class=\"line\"><span style=\"color:#E5C07B\">marker</span><span style=\"color:#ABB2BF\">.</span><span style=\"color:#61AFEF\">setTitle</span><span style=\"color:#ABB2BF\">(</span><span style=\"color:#98C379\">\"My point\"</span><span style=\"color:#ABB2BF\">);</span></span>\n<span class=\"line\"><span style=\"color:#E5C07B\">marker</span><span style=\"color:#ABB2BF\">.</span><span style=\"color:#61AFEF\">setType</span><span style=\"color:#ABB2BF\">(</span><span style=\"color:#98C379\">\"a-u-G\"</span><span style=\"color:#ABB2BF\">);</span><span style=\"color:#7F848E;font-style:italic\">                 // CoT type → drives icon + affiliation colour</span></span>\n<span class=\"line\"><span style=\"color:#61AFEF\">getMapView</span><span style=\"color:#E06C75\">()</span><span style=\"color:#ABB2BF\">.</span><span style=\"color:#61AFEF\">getRootGroup</span><span style=\"color:#ABB2BF\">().</span><span style=\"color:#61AFEF\">addItem</span><span style=\"color:#ABB2BF\">(marker);</span><span style=\"color:#7F848E;font-style:italic\">   // appears immediately</span></span></code></pre>",
+      "lang": "java"
+    },
+    {
+      "type": "html",
+      "html": "<p>Icons are referenced by URI (lets ATAK manage image memory): <code>marker.setIcon(new Icon(symbolUri))</code>.</p>\n<h3 id=\"marker-the-cot-aware-way-placepointtoolmarkercreator\"><a href=\"#marker-the-cot-aware-way-placepointtoolmarkercreator\">Marker the CoT-aware way: <code>PlacePointTool.MarkerCreator</code></a></h3>\n<p>For markers that should behave like first-class Cursor-on-Target items (auto icon from type, callsign, affiliation), use <code>PlacePointTool.MarkerCreator</code> (<code>com.atakmap.android.user.PlacePointTool</code>) — also used in <code>helloworld</code>:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#E5C07B\">PlacePointTool</span><span style=\"color:#ABB2BF\">.</span><span style=\"color:#E5C07B\">MarkerCreator</span><span style=\"color:#E06C75\"> mc </span><span style=\"color:#56B6C2\">=</span><span style=\"color:#C678DD\"> new</span><span style=\"color:#E06C75\"> PlacePointTool</span><span style=\"color:#ABB2BF\">.</span><span style=\"color:#61AFEF\">MarkerCreator</span><span style=\"color:#ABB2BF\">(location);</span></span>\n<span class=\"line\"><span style=\"color:#E5C07B\">mc</span><span style=\"color:#ABB2BF\">.</span><span style=\"color:#61AFEF\">setUid</span><span style=\"color:#ABB2BF\">(uid);</span></span>\n<span class=\"line\"><span style=\"color:#E5C07B\">mc</span><span style=\"color:#ABB2BF\">.</span><span style=\"color:#61AFEF\">setCallsign</span><span style=\"color:#ABB2BF\">(</span><span style=\"color:#98C379\">\"Hello\"</span><span style=\"color:#ABB2BF\">);</span></span>\n<span class=\"line\"><span style=\"color:#E5C07B\">mc</span><span style=\"color:#ABB2BF\">.</span><span style=\"color:#61AFEF\">setType</span><span style=\"color:#ABB2BF\">(</span><span style=\"color:#98C379\">\"a-f-G\"</span><span style=\"color:#ABB2BF\">);</span><span style=\"color:#7F848E;font-style:italic\">                      // e.g. friendly ground; \"a-h-G\" hostile</span></span>\n<span class=\"line\"><span style=\"color:#E5C07B\">Marker</span><span style=\"color:#E06C75\"> marker </span><span style=\"color:#56B6C2\">=</span><span style=\"color:#E5C07B\"> mc</span><span style=\"color:#ABB2BF\">.</span><span style=\"color:#61AFEF\">placePoint</span><span style=\"color:#ABB2BF\">();</span></span>\n<span class=\"line\"><span style=\"color:#E5C07B\">myGroup</span><span style=\"color:#ABB2BF\">.</span><span style=\"color:#61AFEF\">addItem</span><span style=\"color:#ABB2BF\">(marker);</span></span></code></pre>",
+      "lang": "java"
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"adding-a-polyline-line-or-polygon\"><a href=\"#adding-a-polyline-line-or-polygon\">Adding a Polyline (line or polygon)</a></h2>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#E5C07B\">Polyline</span><span style=\"color:#E06C75\"> line </span><span style=\"color:#56B6C2\">=</span><span style=\"color:#C678DD\"> new</span><span style=\"color:#61AFEF\"> Polyline</span><span style=\"color:#E06C75\">(</span><span style=\"color:#E5C07B\">UUID</span><span style=\"color:#ABB2BF\">.</span><span style=\"color:#61AFEF\">randomUUID</span><span style=\"color:#ABB2BF\">().</span><span style=\"color:#61AFEF\">toString</span><span style=\"color:#ABB2BF\">()</span><span style=\"color:#E06C75\">)</span><span style=\"color:#ABB2BF\">;</span></span>\n<span class=\"line\"><span style=\"color:#E5C07B\">line</span><span style=\"color:#ABB2BF\">.</span><span style=\"color:#61AFEF\">setPoints</span><span style=\"color:#ABB2BF\">(points);</span><span style=\"color:#7F848E;font-style:italic\">                   // GeoPoint[]</span></span>\n<span class=\"line\"><span style=\"color:#E5C07B\">line</span><span style=\"color:#ABB2BF\">.</span><span style=\"color:#61AFEF\">setStrokeColor</span><span style=\"color:#ABB2BF\">(strokeColor);</span><span style=\"color:#7F848E;font-style:italic\">         // 32-bit packed ARGB</span></span>\n<span class=\"line\"><span style=\"color:#E5C07B\">line</span><span style=\"color:#ABB2BF\">.</span><span style=\"color:#61AFEF\">setStrokeWidth</span><span style=\"color:#ABB2BF\">(strokeWidth);</span><span style=\"color:#7F848E;font-style:italic\">         // pixels (GLES may cap max width)</span></span>\n<span class=\"line\"><span style=\"color:#E5C07B\">myGroup</span><span style=\"color:#ABB2BF\">.</span><span style=\"color:#61AFEF\">addItem</span><span style=\"color:#ABB2BF\">(line);</span></span></code></pre>",
+      "lang": "java"
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"removing-an-item--locally-and-remotely\"><a href=\"#removing-an-item--locally-and-remotely\">Removing an item — locally and remotely</a></h2>\n<p>Locally, remove the item from its group (<code>group.removeItem(item)</code>), or delete the whole group you own.</p>\n<p>To <strong>delete an item on a remote device</strong>, send a CoT \"delete\" event (type <code>t-x-d-d</code>) whose <code>&#x3C;detail></code> links the target UID and carries <code>&#x3C;__forcedelete/></code>:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#ABB2BF\">&#x3C;</span><span style=\"color:#E06C75\">event</span><span style=\"color:#D19A66\"> version</span><span style=\"color:#ABB2BF\">=</span><span style=\"color:#98C379\">\"2.0\"</span><span style=\"color:#D19A66\"> uid</span><span style=\"color:#ABB2BF\">=</span><span style=\"color:#98C379\">\"any-unique\"</span><span style=\"color:#D19A66\"> type</span><span style=\"color:#ABB2BF\">=</span><span style=\"color:#98C379\">\"t-x-d-d\"</span><span style=\"color:#D19A66\"> how</span><span style=\"color:#ABB2BF\">=</span><span style=\"color:#98C379\">\"m-g\"</span></span>\n<span class=\"line\"><span style=\"color:#D19A66\">       start</span><span style=\"color:#ABB2BF\">=</span><span style=\"color:#98C379\">\"...\"</span><span style=\"color:#D19A66\"> time</span><span style=\"color:#ABB2BF\">=</span><span style=\"color:#98C379\">\"...\"</span><span style=\"color:#D19A66\"> stale</span><span style=\"color:#ABB2BF\">=</span><span style=\"color:#98C379\">\"...\"</span><span style=\"color:#ABB2BF\">></span></span>\n<span class=\"line\"><span style=\"color:#ABB2BF\">  &#x3C;</span><span style=\"color:#E06C75\">detail</span><span style=\"color:#ABB2BF\">></span></span>\n<span class=\"line\"><span style=\"color:#ABB2BF\">    &#x3C;</span><span style=\"color:#E06C75\">link</span><span style=\"color:#D19A66\"> uid</span><span style=\"color:#ABB2BF\">=</span><span style=\"color:#98C379\">\"the-uid-of-the-map-item-to-remove\"</span><span style=\"color:#D19A66\"> relation</span><span style=\"color:#ABB2BF\">=</span><span style=\"color:#98C379\">\"none\"</span><span style=\"color:#D19A66\"> type</span><span style=\"color:#ABB2BF\">=</span><span style=\"color:#98C379\">\"none\"</span><span style=\"color:#ABB2BF\">/></span></span>\n<span class=\"line\"><span style=\"color:#ABB2BF\">    &#x3C;</span><span style=\"color:#E06C75\">__forcedelete</span><span style=\"color:#ABB2BF\">/></span></span>\n<span class=\"line\"><span style=\"color:#ABB2BF\">  &#x3C;/</span><span style=\"color:#E06C75\">detail</span><span style=\"color:#ABB2BF\">></span></span>\n<span class=\"line\"><span style=\"color:#ABB2BF\">  &#x3C;</span><span style=\"color:#E06C75\">point</span><span style=\"color:#D19A66\"> lat</span><span style=\"color:#ABB2BF\">=</span><span style=\"color:#98C379\">\"36.789783\"</span><span style=\"color:#D19A66\"> lon</span><span style=\"color:#ABB2BF\">=</span><span style=\"color:#98C379\">\"-115.471535\"</span><span style=\"color:#D19A66\"> hae</span><span style=\"color:#ABB2BF\">=</span><span style=\"color:#98C379\">\"4433.0\"</span><span style=\"color:#D19A66\"> ce</span><span style=\"color:#ABB2BF\">=</span><span style=\"color:#98C379\">\"9999999\"</span><span style=\"color:#D19A66\"> le</span><span style=\"color:#ABB2BF\">=</span><span style=\"color:#98C379\">\"9999999\"</span><span style=\"color:#ABB2BF\">/></span></span>\n<span class=\"line\"><span style=\"color:#ABB2BF\">&#x3C;/</span><span style=\"color:#E06C75\">event</span><span style=\"color:#ABB2BF\">></span></span></code></pre>",
+      "lang": "xml"
+    },
+    {
+      "type": "html",
+      "html": "<p>Dispatch it like any CoT event (see <a href=\"/en/working-with-tak/cot-in-depth-listening-sending-custom-details-nTudtLfqX9\">CoT in depth</a>).</p>\n<h2 id=\"focusing-and-showing-the-radial-menu\"><a href=\"#focusing-and-showing-the-radial-menu\">Focusing and showing the radial menu</a></h2>\n<p>You can ask ATAK to pan/zoom to an item, or open its radial menu, by broadcasting intents with the item's UID:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#E5C07B\">String</span><span style=\"color:#E06C75\"> uid </span><span style=\"color:#56B6C2\">=</span><span style=\"color:#E5C07B\"> myItem</span><span style=\"color:#ABB2BF\">.</span><span style=\"color:#61AFEF\">getUID</span><span style=\"color:#ABB2BF\">();</span></span>\n<span class=\"line\"></span>\n<span class=\"line\"><span style=\"color:#E5C07B\">Intent</span><span style=\"color:#E06C75\"> focus </span><span style=\"color:#56B6C2\">=</span><span style=\"color:#C678DD\"> new</span><span style=\"color:#61AFEF\"> Intent</span><span style=\"color:#E06C75\">(</span><span style=\"color:#98C379\">\"com.atakmap.android.maps.FOCUS\"</span><span style=\"color:#E06C75\">)</span><span style=\"color:#ABB2BF\">;</span></span>\n<span class=\"line\"><span style=\"color:#E5C07B\">focus</span><span style=\"color:#ABB2BF\">.</span><span style=\"color:#61AFEF\">putExtra</span><span style=\"color:#ABB2BF\">(</span><span style=\"color:#98C379\">\"uid\"</span><span style=\"color:#ABB2BF\">, uid);</span></span>\n<span class=\"line\"><span style=\"color:#E5C07B\">AtakBroadcast</span><span style=\"color:#ABB2BF\">.</span><span style=\"color:#61AFEF\">getInstance</span><span style=\"color:#ABB2BF\">().</span><span style=\"color:#61AFEF\">sendBroadcast</span><span style=\"color:#ABB2BF\">(focus);</span></span>\n<span class=\"line\"></span>\n<span class=\"line\"><span style=\"color:#E5C07B\">Intent</span><span style=\"color:#E06C75\"> menu </span><span style=\"color:#56B6C2\">=</span><span style=\"color:#C678DD\"> new</span><span style=\"color:#61AFEF\"> Intent</span><span style=\"color:#E06C75\">(</span><span style=\"color:#98C379\">\"com.atakmap.android.maps.SHOW_MENU\"</span><span style=\"color:#E06C75\">)</span><span style=\"color:#ABB2BF\">;</span></span>\n<span class=\"line\"><span style=\"color:#E5C07B\">menu</span><span style=\"color:#ABB2BF\">.</span><span style=\"color:#61AFEF\">putExtra</span><span style=\"color:#ABB2BF\">(</span><span style=\"color:#98C379\">\"uid\"</span><span style=\"color:#ABB2BF\">, uid);</span></span>\n<span class=\"line\"><span style=\"color:#E5C07B\">AtakBroadcast</span><span style=\"color:#ABB2BF\">.</span><span style=\"color:#61AFEF\">getInstance</span><span style=\"color:#ABB2BF\">().</span><span style=\"color:#61AFEF\">sendBroadcast</span><span style=\"color:#ABB2BF\">(menu);</span></span></code></pre>",
+      "lang": "java"
+    },
+    {
+      "type": "html",
+      "html": "<p>For building your <em>own</em> radial menus, see the Radial Menu API in <a href=\"/en/working-with-tak/advanced-practical-apis-2XMWIolD6S\">Advanced &#x26; practical APIs</a>.</p>\n<p>→ Next: <a href=\"/en/working-with-tak/handling-map-events-KDHLfTLGfS\">Handling map events</a>.</p>"
+    }
+  ]
+}

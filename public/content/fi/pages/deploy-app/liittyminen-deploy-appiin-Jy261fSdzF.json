@@ -1,0 +1,186 @@
+{
+  "schemaVersion": 1,
+  "id": "46afbe5e-3d09-4684-b2fd-c6e946eb5fb6",
+  "slug": "liittyminen-deploy-appiin-Jy261fSdzF",
+  "collection": "deploy-app",
+  "locale": "fi",
+  "title": "Liittyminen Deploy Appiin",
+  "breadcrumb": [
+    "Platforms",
+    "iOS",
+    "Käyttäjäohjeet",
+    "Liittyminen Deploy Appiin"
+  ],
+  "createdAt": "2026-06-18T20:34:52.250Z",
+  "updatedAt": "2026-06-18T20:38:54.238Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/deploy-app/joining-a-deploy-app-A7hCnp5D1b",
+    "fi": "/fi/deploy-app/liittyminen-deploy-appiin-Jy261fSdzF",
+    "sv": "/sv/deploy-app/ansluta-till-en-deploy-app-rDiRCLSL8s"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Pääsyn saaminen",
+          "layout": "image-left",
+          "html": "<p>Voit liittyä instanssiin saamalla kutsulinkin:</p>\n<ul>\n<li>skannaamalla QR-koodin (avaa seuraavan sivun heti)</li>\n<li>vastaanottamalla kutsulinkin (avaa seuraavan sivun heti)</li>\n<li>vastaanottamalla linkin + manuaalisen koodin (avaa vasemmalla olevan sivun).</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/11432f12e365f28d.webp",
+              "width": 2560,
+              "height": 5712
+            }
+          ]
+        },
+        {
+          "title": "Kutsumanimi",
+          "layout": "image-left",
+          "html": "<p>Kutsun avulla voit antaa itsellesi kutsumanimen ja liittyä odotushuoneeseen.</p>\n<ul>\n<li>Kutsumanimen tulisi olla jotain, jolla organisaatiosi tunnistaa sinut.</li>\n<li>Tämä kutsumanimi on sinun kaikissa palveluissa.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/26fbe762461e7c63.webp",
+              "width": 2560,
+              "height": 5712
+            }
+          ]
+        },
+        {
+          "title": "Odotushuone",
+          "layout": "image-left",
+          "html": "<p>Deploy App -palvelimesi ylläpitäjän on hyväksyttävä sinut henkilökohtaisesti kutsun jälkeen.</p>\n<ul>\n<li>Näytä QR-koodisi ylläpitäjälle tai jaa linkki hänen kanssaan.</li>\n<li>Kun ylläpitäjä on hyväksynyt sinut, voit jatkaa.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/f986a88040c9fdcf.webp",
+              "width": 2561,
+              "height": 5712
+            }
+          ]
+        },
+        {
+          "title": "Ohjeet",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Deploy App sisältää valmiit ohjeet, jotka opastavat käyttäjiä ja korostavat keskeisiä ominaisuuksia.</li>\n<li>Tämä opas käy läpi varmenteen asennuksen.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/1bf91f34810aec36.webp",
+              "width": 2561,
+              "height": 5712
+            }
+          ]
+        },
+        {
+          "title": "Lataa varmenne",
+          "layout": "image-left",
+          "html": "<p>Lataa asiakasvarmenteesi (mTLS), joka asennetaan laitteeseesi.</p>\n<ul>\n<li>Tämä toimii pääsynäsi palveluihin.</li>\n<li>Et tarvitse salasanoja Deploy Appin kanssa, sillä varmenne toimii henkilöllisyytenäsi.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/5f4af02a9a230a03.webp",
+              "width": 1290,
+              "height": 2796
+            }
+          ]
+        },
+        {
+          "title": "Siirry asetuksiin",
+          "layout": "image-left",
+          "html": "<p>iOS:ssä varmenne asennetaan siirtymällä asetuksiin (Settings).</p>\n<ul>\n<li>Etsi Settings.</li>\n<li>Esim. pyyhkäise hieman ylöspäin tuodaksesi esiin Search-haun, kirjoita sitten Settings ja napauta asetuskuvaketta.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/398dbbd7142bcf32.webp",
+              "width": 1290,
+              "height": 2796
+            }
+          ]
+        },
+        {
+          "title": "Napauta 'Profile Downloaded'",
+          "layout": "image-left",
+          "html": "<p>Koska latasit juuri varmenteen, Settings ilmoittaa siitä.</p>\n<ul>\n<li>Paina 'Profile Downloaded' -ilmoitusta asentaaksesi varmenteen.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/c905d16e044fd170.webp",
+              "width": 1290,
+              "height": 2796
+            }
+          ]
+        },
+        {
+          "title": "Napauta Install",
+          "layout": "image-left",
+          "html": "<p>Paina <strong>Install</strong> tämän ponnahdusikkunan oikeasta yläkulmasta.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/a92a3fff866069d6.webp",
+              "width": 1290,
+              "height": 2796
+            }
+          ]
+        },
+        {
+          "title": "Kirjoita pääsykoodisi",
+          "layout": "image-left",
+          "html": "<p>Jatkaaksesi iOS pyytää laitteesi pääsykoodia.</p>\n<ul>\n<li>Kirjoita pääsykoodisi jatkaaksesi.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/4c0f3f83b869addb.webp",
+              "width": 1290,
+              "height": 2796
+            }
+          ]
+        },
+        {
+          "title": "Hyväksy varoitus",
+          "layout": "image-left",
+          "html": "<p>iOS ilmoittaa, että tätä varmennetta ei ole allekirjoittanut mikään puhelimesi jo luotettavaksi tuntema myöntäjä.</p>\n<ul>\n<li>Hyväksy varoitus (tämän varmenteen allekirjoittaja on Deploy App -palvelimesi, esim. 'golden-monkey.example.com'.)</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/6031d4a541ad77bf.webp",
+              "width": 1290,
+              "height": 2796
+            }
+          ]
+        },
+        {
+          "title": "Kirjoita varmenteen salasana, aina kutsumanimi",
+          "layout": "image-left",
+          "html": "<p>Sinun on kirjoitettava varmenteen salasana. Tämä on aina <strong>täsmälleen sama kuin kutsumanimesi.</strong></p>\n<ul>\n<li>Varmenteen salasanalla ei ole tässä mitään turvallisuusmerkitystä.</li>\n<li>Salasana vaaditaan vain siksi, että käyttämämme varmennetiedostotyyppi edellyttää jonkin salasanan yhteensopivuussyistä.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/80adff6535609c96.webp",
+              "width": 1290,
+              "height": 2796
+            }
+          ]
+        },
+        {
+          "title": "Onnistui - palaa selaimeen",
+          "layout": "image-left",
+          "html": "<p>iOS ilmoittaa, että asiakasvarmenne on nyt asennettu laitteeseesi.</p>\n<ul>\n<li>Nyt voit palata selaimeesi.</li>\n<li>Asiakasvarmenteesi säilyy laitteessasi, joten et voi menettää pääsyä palvelimelle, ellei sinua poisteta (mikä mitätöi varmenteesi pääsyn.)</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/486cd868e3cbd019.webp",
+              "width": 1290,
+              "height": 2796
+            }
+          ]
+        },
+        {
+          "title": "Paina Continue with Cert",
+          "layout": "image-left",
+          "html": "<p>Violetin Continue with Cert -painikkeen painaminen nyt päästää sinut sovellukseen.</p>\n<ul>\n<li>Huomio: jos painoit kyseistä painiketta ennen varmenteen asentamista, saat mTLS-virheen.</li>\n<li>Poistaaksesi virheen sulje selain pyyhkäisemällä ylös ja pyyhkäise selain pois. Siirry sitten takaisin palvelimelle ja paina Continue with Cert.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/7be0856bcc320b45.webp",
+              "width": 1290,
+              "height": 2796
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

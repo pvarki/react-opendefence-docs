@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "id": "4cef37a6-5cc4-44d4-b515-496d3ff7bd66",
+  "slug": "lagga-till-anvandare-yQNQQKKHyp",
+  "collection": "deploy-app",
+  "locale": "sv",
+  "title": "Lägga till användare",
+  "breadcrumb": [
+    "Platforms",
+    "iOS",
+    "Administratörsguide",
+    "Lägga till användare"
+  ],
+  "createdAt": "2026-06-18T20:35:44.145Z",
+  "updatedAt": "2026-06-18T20:39:02.953Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/deploy-app/adding-users-LKw6wrsELi",
+    "fi": "/fi/deploy-app/kayttajien-lisaaminen-A97x9tyG2o",
+    "sv": "/sv/deploy-app/lagga-till-anvandare-yQNQQKKHyp"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Lägga till användare",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Administratörsverktygen är lätt åtkomliga från sidofältet.</li>\n<li>Bjud in nya användare genom att välja \"Add Users.\"</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/541c758c07d68394.webp",
+              "width": 2560,
+              "height": 5712
+            }
+          ]
+        },
+        {
+          "title": "Inbjudningskoder",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Välj antingen en befintlig inbjudningskod eller skapa en ny.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/38e3b6a543cc81ca.webp",
+              "width": 2560,
+              "height": 5712
+            }
+          ]
+        },
+        {
+          "title": "Använda inbjudningskoderna",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Användarna kan skanna QR-koden från din enhet.</li>\n<li>Du kan också kopiera och dela <strong>en inbjudningslänk</strong> eller skapa en lättutskriven PDF med inbjudnings-QR-koden.</li>\n<li>Med inbjudan kan användarna nå <strong>väntrummet</strong>.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/73fade7b10dde60f.webp",
+              "width": 2560,
+              "height": 5712
+            }
+          ]
+        },
+        {
+          "title": "Godkänna användare",
+          "layout": "image-left",
+          "html": "<p>Efter att du har visat dina användare inbjudnings-QR-koden eller skickat dem länken bör du nu ha användare i <strong>väntrummet</strong>.</p>\n<ul>\n<li>Du kan kontrollera detta genom att navigera dit från sidofältet.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/a2871c27a37df94d.webp",
+              "width": 2560,
+              "height": 5712
+            }
+          ]
+        },
+        {
+          "title": "Godkänna användare",
+          "layout": "image-left",
+          "html": "<p>Du har några alternativ för att godkänna användare:</p>\n<ul>\n<li><strong>Skanna QR-koden</strong> som visas på deras enheter personligen (rekommenderas).</li>\n<li>Be dina användare att kopiera och skicka sin <strong>Approve Link</strong> till dig. Genom att navigera till den kan du acceptera dem direkt.</li>\n<li>Om QR-koden eller godkännandelänken av någon anledning inte är tillgänglig kan du trycka på användaren i <strong>Approve Users-menyn</strong> och ange godkännandekoden som visas på deras enhet.\nNär du accepterar användare (särskilt via länkar) ska du vara 100 % säker på att personen är den du tror. Att acceptera dem ger åtkomst till till exempel truppositioner om TAK används.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/a9752158f1a0d710.webp",
+              "width": 2560,
+              "height": 5712
+            }
+          ]
+        },
+        {
+          "title": "Stänga en inbjudningskod",
+          "layout": "image-left",
+          "html": "<ul>\n<li>För ökad säkerhet är det klokt att antingen stänga eller inaktivera inbjudningskoder när de inte behövs.</li>\n<li>Kodhanteringen öppnas genom att trycka på knappen bredvid koden.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/c8e9356a6514c842.webp",
+              "width": 2561,
+              "height": 5712
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

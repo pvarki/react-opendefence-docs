@@ -8,13 +8,18 @@
   "breadcrumb": [
     "Platforms",
     "ATAK",
-    "Supported Plugins",
+    "SUPPORTED PLUGINS",
     "GRG Builder",
     "Export a Grid (GRG Builder)"
   ],
   "createdAt": "2026-06-15T20:51:18.981Z",
-  "updatedAt": "2026-06-15T20:51:18.981Z",
+  "updatedAt": "2026-06-18T20:22:29.942Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/export-a-grid-grg-builder-EcpaE7LkX1",
+    "fi": "/fi/guides/tak-guide/vie-ruudukko-grg-builder-yx2Y3RPY0C",
+    "sv": "/sv/guides/tak-guide/exportera-ett-rutnat-grg-builder-NhQ9Zf06Wn"
+  },
   "blocks": [
     {
       "type": "html",
@@ -27,7 +32,7 @@
         {
           "title": "Save the grid",
           "layout": "image-bottom",
-          "html": "<p>When your edits are done, select <strong>Save</strong> and tick any combination of <strong>KMZ</strong>, <strong>PDF</strong>, <strong>JPEG</strong> or <strong>Settings (JSON)</strong>. <strong>KMZ</strong> with <strong>Flatten map items to image</strong> drops the grid onto the map and into Overlay Manager; <strong>PDF</strong> can <strong>Append to PDF</strong>, <strong>Include geospatial data</strong> or <strong>Create multiple pages</strong>; <strong>JPEG</strong> can <strong>Create multiple images</strong>.</p>",
+          "html": "<p>When your edits are done, select <strong>Save</strong> and tick any combination of <strong>KMZ</strong>, <strong>PDF</strong>, <strong>JPEG</strong> or <strong>Settings (JSON)</strong>.</p>\n<ul>\n<li><strong>KMZ</strong> with <strong>Flatten map items to image</strong> drops the grid onto the map and into Overlay Manager</li>\n<li><strong>PDF</strong> can <strong>Append to PDF</strong>, <strong>Include geospatial data</strong> or <strong>Create multiple pages</strong></li>\n<li><strong>JPEG</strong> can <strong>Create multiple images</strong></li>\n</ul>",
           "images": [
             {
               "src": "/content/images/en/attachments/6b6154a9d232b8c0.webp",

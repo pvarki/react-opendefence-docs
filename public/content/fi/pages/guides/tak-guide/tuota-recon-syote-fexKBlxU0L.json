@@ -1,0 +1,221 @@
+{
+  "schemaVersion": 1,
+  "id": "4b0fdbfb-ea02-4170-880e-b3c58191bbdb",
+  "slug": "tuota-recon-syote-fexKBlxU0L",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Tuota RECON-syöte",
+  "breadcrumb": [
+    "Platforms",
+    "WinTAK",
+    "KÄYTTÖ ROOLEITTAIN",
+    "Komentopaikka",
+    "Tuota RECON-syöte"
+  ],
+  "createdAt": "2026-06-18T19:34:25.398Z",
+  "updatedAt": "2026-06-18T20:24:33.425Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/produce-recon-feed-B7h9QJzZVd",
+    "fi": "/fi/guides/tak-guide/tuota-recon-syote-fexKBlxU0L",
+    "sv": "/sv/guides/tak-guide/producera-recon-flode-azFNrXh6Wi"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Komentopaikkana luot ja ylläpidät yksikön RECON-syötettä: luot sen, hankit muut CP-käyttäjät tilaajiksi ja käsittelet sitten saapuvat havainnot ja lähetät käsitellyt merkit takaisin syötteeseen.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Etsi Data Sync -työkalut",
+          "layout": "image-bottom",
+          "html": "<p>WinTAKin työkalupalkissa <strong>Home tab</strong> sisältää Data Sync -työkalut.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/75592f7d41559b8e.webp",
+              "width": 232,
+              "height": 140
+            }
+          ]
+        },
+        {
+          "title": "Luo uusi syöte",
+          "layout": "image-bottom",
+          "html": "<p>Komentopaikkana toimien sinä luot syötteet. Paina <strong>New Feed</strong>.</p>\n<p>Komentopaikalla <em>yksi</em> käyttäjä luo syötteet; muut CP-käyttäjät ja muu yksikkö tilaavat ne.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/efb43e3ffc065395.webp",
+              "width": 389,
+              "height": 395
+            }
+          ]
+        },
+        {
+          "title": "Nimeä syöte",
+          "layout": "image-bottom",
+          "html": "<p>Luo syöte näin:</p>\n<ul>\n<li><strong>Name</strong>: Recon</li>\n<li><strong>Group</strong>: tak_default</li>\n<li><strong>Default Role</strong>: Read Only</li>\n</ul>\n<p>Vaihda oletusryhmäksi <strong>tak_default</strong> ja oletusrooliksi <strong>Read Only</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/f83d0813c902f8a7.webp",
+              "width": 428,
+              "height": 140
+            }
+          ]
+        },
+        {
+          "title": "Syöte luotu",
+          "layout": "image-bottom",
+          "html": "<p>Syöte luodaan ja se näkyy heti tilattuna sen luojan <strong>Data Sync</strong> -valikossa. Muut komentopaikan käyttäjät tilaavat sen nyt (yleensä <strong>RECON</strong>-syötteen).</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/b5780912cf35c46f.webp",
+              "width": 286,
+              "height": 106
+            }
+          ]
+        },
+        {
+          "title": "Tilaa: lataa ja pidä synkronoituna",
+          "layout": "image-bottom",
+          "html": "<p>Syötteen näkymässä muut CP-käyttäjät valitsevat <strong>Download and stay synced</strong>. Syöte näkyy sen jälkeen heidän <strong>Data Sync</strong> -valikossaan.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/b7ce4ae16f1f3392.webp",
+              "width": 286,
+              "height": 170
+            }
+          ]
+        },
+        {
+          "title": "Vastaanota ilmoituksia",
+          "layout": "image-bottom",
+          "html": "<p>WinTAK näyttää tällaisia ilmoituksia, kun uusia havaintoja saapuu.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/fe52afd7a11b7b6b.webp",
+              "width": 318,
+              "height": 78
+            }
+          ]
+        },
+        {
+          "title": "Avaa Notifications-näkymä",
+          "layout": "image-bottom",
+          "html": "<p>Avaa <strong>Notifications</strong>-näkymä painamalla <strong>yellow flag</strong> -symbolia. Se luettelee vastaanotetut ilmoitukset — käsittele jokainen alla kuvatulla tavalla ja lähetä se sitten RECON-syötteeseen.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/b623460171585dec.webp",
+              "width": 428,
+              "height": 366
+            }
+          ]
+        },
+        {
+          "title": "Avaa havainto",
+          "layout": "image-bottom",
+          "html": "<p>Havainnot avataan ja käsitellään kartalta. Avaa havainto, jonka haluat käsitellä.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/96d5e675a58aed7a.webp",
+              "width": 428,
+              "height": 420
+            }
+          ]
+        },
+        {
+          "title": "Avaa Marker Details",
+          "layout": "image-bottom",
+          "html": "<p>Valitse ympyrävalikosta <strong>Marker Details</strong> -kuvake (roskakorin oikealla puolella). <strong>Marker Details</strong> -näkymä avautuu.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/9c54e2777c473095.webp",
+              "width": 256,
+              "height": 622
+            }
+          ]
+        },
+        {
+          "title": "Kirjaa johtopäätöksesi",
+          "layout": "text",
+          "html": "<p>Kun kirjaat tulkintoja, pidä johtopäätöksesi erillään alkuperäisestä kuvauksesta — käytä merkintää <em>HQ CONCLUSION: (arviosi)</em>.</p>\n<p>Huomioi OPSEC: älä laita tähän operatiivista vihollistietoa — käytä peitenimiä.</p>",
+          "images": []
+        },
+        {
+          "title": "Vaihda kuuluvuus",
+          "layout": "image-bottom",
+          "html": "<p>Vaihda Marker Details -näkymässä havainnon tyyppi (tuntematon, ystävä, oma, neutraali) vastaamaan johtopäätöstäsi painamalla <strong>Change Affiliation</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/3b49b9a861a5eae7.webp",
+              "width": 428,
+              "height": 162
+            }
+          ]
+        },
+        {
+          "title": "Valitse uusi tyyppi",
+          "layout": "text",
+          "html": "<p><strong>Change Affiliation</strong> -painikkeen jälkeen <strong>Type menu</strong> avautuu — aseta merkki johtopäätöksesi mukaan. Merkki päivittyy sen jälkeen.</p>",
+          "images": []
+        },
+        {
+          "title": "Merkitse käsitellyksi",
+          "layout": "image-bottom",
+          "html": "<p>Lisää merkin otsikkoon merkintä — <strong>alaviiva eteen</strong> — osoittamaan, että komentopaikka on käsitellyt sen.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/d8858a9075935f03.webp",
+              "width": 428,
+              "height": 144
+            }
+          ]
+        },
+        {
+          "title": "Päätä välittömästä raportoinnista",
+          "layout": "text",
+          "html": "<p>Määritä, onko havainto <em>välittömästi raportoitava asia</em>.</p>\n<p>TÄRKEÄÄ: jos on, lähetä raportti määrätyillä viestityökaluilla määrätyille vastaanottajille — älä luota pelkkään syötteeseen.</p>",
+          "images": []
+        },
+        {
+          "title": "Lähetä merkki syötteeseen",
+          "layout": "image-bottom",
+          "html": "<p>Jotta koko joukko näkee käsitellyn merkin, paina <strong>Send</strong> Marker Details -valikossa.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/02debf8302f606b3.webp",
+              "width": 270,
+              "height": 94
+            }
+          ]
+        },
+        {
+          "title": "Sisällytä liitteet",
+          "layout": "image-bottom",
+          "html": "<p>Valitse <strong>Yes</strong> <em>Include Attachments</em> -kysymykseen.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/aed016ed7c4e284a.webp",
+              "width": 428,
+              "height": 198
+            }
+          ]
+        },
+        {
+          "title": "Valitse RECON-syöte",
+          "layout": "image-bottom",
+          "html": "<p><strong>Send To</strong> -valikko avautuu oikealle — lähetä merkki <strong>RECON</strong>-syötteeseen. Käy jokainen käsitelty havainto läpi samalla tavalla.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/3381ffe3725912b1.webp",
+              "width": 428,
+              "height": 290
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

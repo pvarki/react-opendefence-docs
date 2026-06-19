@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 1,
+  "id": "f7cabcfe-e29b-4b4a-95bb-84bcc1646640",
+  "slug": "kuvaa-ja-laheta-lennokin-videota-rjbcDzCyvV",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Kuvaa ja lähetä lennokin videota",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "TUETUT LISÄOSAT",
+    "UAS-työkalu",
+    "Kuvaa ja lähetä lennokin videota"
+  ],
+  "createdAt": "2026-06-18T19:30:26.951Z",
+  "updatedAt": "2026-06-18T20:21:45.765Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/capture-broadcast-drone-video-UfMEqBjxec",
+    "fi": "/fi/guides/tak-guide/kuvaa-ja-laheta-lennokin-videota-rjbcDzCyvV",
+    "sv": "/sv/guides/tak-guide/fanga-och-sand-dronarvideo-81f1fTM3IL"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Jaa lennokin videosyöte koko ryhmälle, ota pysäytyskuvia ja tallenna videota laitteellesi suoraan UAS Tool -työkalupalkista.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Avaa lennokin lisätoiminnot",
+          "layout": "image-bottom",
+          "html": "<p>Avaa kuvaustyökalut napauttamalla alatyökalupalkin <strong>Drone Utilities</strong> -jakoavainkuvaketta: Broadcast Video, Map Shot, Drone Shot, Record Video ja Platform Settings.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/7d9a7786064a3b4e.webp",
+              "width": 2101,
+              "height": 1010
+            }
+          ]
+        },
+        {
+          "title": "Lähetä video ryhmälle",
+          "layout": "image-bottom",
+          "html": "<p>Napauta <strong>Broadcast ON</strong>, jolloin syöte lähetetään muille TAK-käyttäjille Wi-Fin tai taktisen radion välityksellä.</p>\n<ul>\n<li>Painike muuttuu vihreäksi, kun lähetys on käynnissä.</li>\n<li>Joukkuetoverit avaavat sen UAS-karttamerkin säteittäisvalikon <strong>Video</strong>-toiminnolla.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/7d9a7786064a3b4e.webp",
+              "width": 2101,
+              "height": 1010
+            }
+          ]
+        },
+        {
+          "title": "Määritä lähetysasetukset",
+          "layout": "image-bottom",
+          "html": "<p>Avaa lähetysasetukset pitämällä <strong>Broadcast On</strong> -painiketta pohjassa. Aseta <strong>Broadcast Size</strong>, <strong>Broadcast Bitrate</strong> ja <strong>Video Broadcast Destination</strong> verkkoosi sopiviksi.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/7d9a7786064a3b4e.webp",
+              "width": 2101,
+              "height": 1010
+            }
+          ]
+        },
+        {
+          "title": "Pudota Mapshot kartalle",
+          "layout": "image-bottom",
+          "html": "<p>Napauta <strong>Mapshot</strong>, jolloin nykyisestä syötteestä otetaan kuva ja se pudotetaan kuvamerkiksi kartalle. Kehote antaa sinun lähettää sen ryhmälle, ja se asettuu siihen kohtaan, jota lennokki katsoi.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/7d9a7786064a3b4e.webp",
+              "width": 2101,
+              "height": 1010
+            }
+          ]
+        },
+        {
+          "title": "Ota pysäytyskuva Drone Shotilla",
+          "layout": "image-bottom",
+          "html": "<p>Napauta <strong>Drone Shot</strong> -kuvaketta, jolloin otetaan pysäytyskuva suoraan alustan sensorista ja tallennetaan se laitteelle.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/d805541f680adf29.webp",
+              "width": 118,
+              "height": 117
+            }
+          ]
+        },
+        {
+          "title": "Tallenna videota paikallisesti",
+          "layout": "image-bottom",
+          "html": "<p>Aloita ja lopeta saapuvan syötteen tallennus napauttamalla <strong>Record Video</strong>.</p>\n<ul>\n<li>Leikkeet tallentuvat EUD-laitteelle ja näkyvät ATAK:n Video Player -toiminnossa.</li>\n<li>Pidä painiketta pohjassa tallentaaksesi EUD-laitteelle, lennokin SD-kortille tai molempiin.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/7d9a7786064a3b4e.webp",
+              "width": 2101,
+              "height": 1010
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

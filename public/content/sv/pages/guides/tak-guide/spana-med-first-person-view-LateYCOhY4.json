@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "id": "aa30f42d-c8ad-4959-9041-c416e82d534e",
+  "slug": "spana-med-first-person-view-LateYCOhY4",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Spana med First-Person View",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "YTTERLIGARE FUNKTIONER",
+    "Höjd, terräng och kartverktyg",
+    "Spana med First-Person View"
+  ],
+  "createdAt": "2026-06-18T19:29:23.872Z",
+  "updatedAt": "2026-06-18T20:20:53.116Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/scout-with-first-person-view-tZ27WjeppE",
+    "fi": "/fi/guides/tak-guide/tiedustele-first-person-viewlla-dG5GsFs9is",
+    "sv": "/sv/guides/tak-guide/spana-med-first-person-view-LateYCOhY4"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>First-Person View sänker kameran till marknivå så att du kan spana terräng, siktlinjer och skydd på samma sätt som du faktiskt skulle se dem på marken.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Öppna First-Person-verktyget",
+          "layout": "image-bottom",
+          "html": "<p>Öppna <strong>First-Person</strong>-verktyget från menyn <strong>Additional Tools</strong> och <strong>Settings</strong>.</p>\n<ul>\n<li>Det placerar knappar högst upp på kartan och två mjuka styrspakar till höger och vänster.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/d44bccb6a9d47e48.webp",
+              "width": 311,
+              "height": 143
+            }
+          ]
+        },
+        {
+          "title": "Aktivera och välj din synvinkel",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på knappen <strong>First-Person View</strong> och tryck sedan på den punkt på kartan som du vill titta från.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/92d7ffc40b67939f.webp",
+              "width": 266,
+              "height": 123
+            }
+          ]
+        },
+        {
+          "title": "Flytta och luta kameran",
+          "layout": "image-bottom",
+          "html": "<p>Använd den högra styrspaken för att spana. Den växlar mellan <strong>DRIVE</strong> för att flytta och <strong>TILT</strong> för att vinkla kameran.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/990e13acf1ab2aa3.webp",
+              "width": 266,
+              "height": 123
+            }
+          ]
+        },
+        {
+          "title": "Justera din höjd",
+          "layout": "image-bottom",
+          "html": "<p>Använd den vänstra styrspaken för att höja eller sänka din ögonhöjd. Höjden går ovanför marknivå och under marken för en underjordisk vy.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/d44bccb6a9d47e48.webp",
+              "width": 311,
+              "height": 143
+            }
+          ]
+        },
+        {
+          "title": "Lämna First-Person View",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på <strong>First-Person</strong>-ikonen igen för att lämna perspektivet och återgå till standardvyn med kartan sedd ovanifrån.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/990e13acf1ab2aa3.webp",
+              "width": 266,
+              "height": 123
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -13,8 +13,13 @@
     "Measure Range & Bearing"
   ],
   "createdAt": "2026-06-15T19:41:11.866Z",
-  "updatedAt": "2026-06-16T10:20:34.612Z",
+  "updatedAt": "2026-06-18T20:20:39.833Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/measure-range-bearing-vEAV62W7O1",
+    "fi": "/fi/guides/tak-guide/mittaa-etaisyys-ja-suuntakulma-DUBmCeWCli",
+    "sv": "/sv/guides/tak-guide/mat-avstand-och-baring-eegRo4EznT"
+  },
   "blocks": [
     {
       "type": "html",

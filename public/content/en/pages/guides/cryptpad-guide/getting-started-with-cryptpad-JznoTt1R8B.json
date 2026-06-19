@@ -10,8 +10,13 @@
     "Getting started with CryptPad"
   ],
   "createdAt": "2026-06-15T14:07:43.314Z",
-  "updatedAt": "2026-06-15T17:52:39.856Z",
+  "updatedAt": "2026-06-18T20:37:59.334Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/cryptpad-guide/getting-started-with-cryptpad-JznoTt1R8B",
+    "fi": "/fi/guides/cryptpad-guide/cryptpadin-kayton-aloittaminen-hQ7vIKZoxX",
+    "sv": "/sv/guides/cryptpad-guide/kom-igang-med-cryptpad-hiXBJRERid"
+  },
   "blocks": [
     {
       "type": "html",

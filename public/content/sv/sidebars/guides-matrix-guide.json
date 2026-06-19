@@ -4,6 +4,60 @@
   "slug": "guides/matrix-guide",
   "items": [
     {
+      "type": "toporg",
+      "id": "anslut-till-servern-h75na7Kh6x",
+      "label": "Anslut till servern",
+      "children": [
+        {
+          "type": "doc",
+          "id": "installera-element-skrivbord-tagwindows-tagmacos-taglinux-CzxXo6adUl",
+          "label": "Installera Element",
+          "slug": "installera-element-skrivbord-tagwindows-tagmacos-taglinux-CzxXo6adUl",
+          "platforms": [
+            "windows",
+            "macos",
+            "linux"
+          ]
+        },
+        {
+          "type": "doc",
+          "id": "konfigurera-element-mobil-tagios-tagandroid-dPrhAGHVpH",
+          "label": "Konfigurera Element",
+          "slug": "konfigurera-element-mobil-tagios-tagandroid-dPrhAGHVpH",
+          "platforms": [
+            "ios",
+            "android"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "toporg",
+      "id": "grundfunktioner-x8E3hEQTiv",
+      "label": "Grundfunktioner",
+      "children": [
+        {
+          "type": "doc",
+          "id": "meddelanden-i-matrix-YJPlgJrmpr",
+          "label": "Meddelanden i Matrix",
+          "slug": "meddelanden-i-matrix-YJPlgJrmpr"
+        }
+      ]
+    },
+    {
+      "type": "toporg",
+      "id": "anvandning-i-enheten-JaeGWbfeLs",
+      "label": "Användning i enheten",
+      "children": [
+        {
+          "type": "doc",
+          "id": "enhetens-rum-och-organisation-u4QesBL0bv",
+          "label": "Enhetens rum och organisation",
+          "slug": "enhetens-rum-och-organisation-u4QesBL0bv"
+        }
+      ]
+    },
+    {
       "type": "doc",
       "id": "deploy-app-matrix-srCgmEoYC5",
       "label": "Deploy App - Matrix",

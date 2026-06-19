@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "18aa9de5-d29e-4d75-b58a-2acaba195601",
+  "slug": "kayttoliittyma-AYxx37RhPK",
+  "collection": "deploy-app",
+  "locale": "fi",
+  "title": "Käyttöliittymä",
+  "breadcrumb": [
+    "Platforms",
+    "iOS",
+    "Käyttäjäohjeet",
+    "Käyttöliittymä"
+  ],
+  "createdAt": "2026-06-18T20:34:53.522Z",
+  "updatedAt": "2026-06-18T20:38:57.205Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/deploy-app/interface-pyG1Ln1MfU",
+    "fi": "/fi/deploy-app/kayttoliittyma-AYxx37RhPK",
+    "sv": "/sv/deploy-app/granssnitt-fbWb4p1Ea6"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Sovellusten tila",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Oikeasta yläkulmasta näet palveluiden tilan.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/75918bc3b5397f8e.webp",
+              "width": 2560,
+              "height": 5712
+            }
+          ]
+        },
+        {
+          "title": "Kaikki vihreällä, kaikki kunnossa",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Tästä voi olla apua ongelmatilanteissa sen selvittämiseen, missä vika on.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/11df166e36d1746c.webp",
+              "width": 2560,
+              "height": 5712
+            }
+          ]
+        },
+        {
+          "title": "Palautteen lähettäminen",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Voit lähettää meille palautetta sivun alaosasta.</li>\n<li>Arvostamme kaikkea saamaamme palautetta.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/bb6f6a8670c2b25c.webp",
+              "width": 5120,
+              "height": 5782
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

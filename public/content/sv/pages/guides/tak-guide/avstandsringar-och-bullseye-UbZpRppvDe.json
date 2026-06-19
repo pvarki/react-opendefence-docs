@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "id": "85d063e7-c836-4375-98d5-7a2f53e4b928",
+  "slug": "avstandsringar-och-bullseye-UbZpRppvDe",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Avståndsringar och bullseye",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "YTTERLIGARE FUNKTIONER",
+    "Avstånds- och bäringsverktyg",
+    "Avståndsringar och bullseye"
+  ],
+  "createdAt": "2026-06-18T19:29:20.545Z",
+  "updatedAt": "2026-06-18T20:20:44.948Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/range-rings-bullseye-NHJCYsh6xN",
+    "fi": "/fi/guides/tak-guide/etaisyysrenkaat-ja-bullseye-VVnbPZDiAy",
+    "sv": "/sv/guides/tak-guide/avstandsringar-och-bullseye-UbZpRppvDe"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Lägg avståndsringar eller ett bullseye-rutnät på kartan för att bedöma avstånd och sektor till en punkt, och dela den sedan med din grupp.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Lägg till en avståndsringscirkel",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på <strong>Circle</strong>-ikonen i verktygsfältet för att aktivera cirkelverktyget (gult), och tryck sedan på kartan för centrum. Tryck på cirkelns centrum för att öppna dess radialmeny.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/7d9031fef93fb31a.webp",
+              "width": 228,
+              "height": 209
+            }
+          ]
+        },
+        {
+          "title": "Ställ in radie och antal ringar",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på <strong>Details</strong> i radialmenyn. Ställ in <strong>Radius</strong>, antalet <strong>Rings</strong> och enhet. Cirkeln ritas om enligt specifikationen och kan skickas eller sändas till andra användare.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/31e2a2101114961c.webp",
+              "width": 183,
+              "height": 202
+            }
+          ]
+        },
+        {
+          "title": "Lägg till ett bullseye-rutnät",
+          "layout": "image-bottom",
+          "html": "<p><strong>Bullseye</strong>-verktyget lägger till ett cirkulärt rutnät med bäringslinjer var 30:e grad. Vinklar avläses antingen <strong>From Center</strong> (rött, bort) eller mot centrumpunkten (grönt).</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/7522e73b31c8f85d.webp",
+              "width": 270,
+              "height": 154
+            }
+          ]
+        },
+        {
+          "title": "Justera bullseye",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på bullseyens centrum för dess radialmeny.</p>\n<ul>\n<li>Använd <strong>Range Rings</strong> för att lägga till ringar, <strong>Angle Bearing Units</strong> för att byta enheter och <strong>Fine Adjust</strong> för att finjustera centrum.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/8cf64fccd6867c20.webp",
+              "width": 225,
+              "height": 192
+            }
+          ]
+        },
+        {
+          "title": "Ställ in riktning och skicka",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på <strong>Details</strong>. Ställ in <strong>Direction</strong> (From Center eller mot det), vinkelenheterna och <strong>Show Range Rings</strong>. Tryck på <strong>Send</strong> för att sända bullseyen till andra användare.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/1587c4e2b57b5b78.webp",
+              "width": 186,
+              "height": 204
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

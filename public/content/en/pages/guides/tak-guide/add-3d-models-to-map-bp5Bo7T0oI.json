@@ -13,8 +13,13 @@
     "Add 3D Models to Map"
   ],
   "createdAt": "2026-06-15T19:42:19.354Z",
-  "updatedAt": "2026-06-15T20:53:53.270Z",
+  "updatedAt": "2026-06-18T20:20:48.958Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/add-3d-models-to-map-bp5Bo7T0oI",
+    "fi": "/fi/guides/tak-guide/lisaa-3d-malleja-kartalle-48R5EqaMl7",
+    "sv": "/sv/guides/tak-guide/lagg-till-3d-modeller-pa-kartan-RXNe4OasVf"
+  },
   "blocks": [
     {
       "type": "html",

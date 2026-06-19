@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "id": "5610378c-6a9d-4fc2-b8bd-59f167b9ccf5",
+  "slug": "suunnittele-lennokkitehtavat-emxgZTF3x4",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Suunnittele lennokkitehtävät",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "TUETUT LISÄOSAT",
+    "UAS-työkalu",
+    "Suunnittele lennokkitehtävät"
+  ],
+  "createdAt": "2026-06-18T19:30:28.597Z",
+  "updatedAt": "2026-06-18T20:21:50.080Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/plan-drone-missions-lNvEkDE1kE",
+    "fi": "/fi/guides/tak-guide/suunnittele-lennokkitehtavat-emxgZTF3x4",
+    "sv": "/sv/guides/tak-guide/planera-dronaruppdrag-fOPXznHLwt"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Suunnittele lennokin lento ennen lentoonlähtöä, jotta ilma-alus lentää reittisi, kehäsi tai kartoitusalueesi itsenäisesti.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Avaa Mission Manager",
+          "layout": "image-bottom",
+          "html": "<p>Aloitusnäytöltä <strong>swipe left</strong> päästäksesi kohtaan <strong>Stored Tasks</strong> ja avaa sitten <strong>Mission Manager</strong>. Voit suunnitella täällä ilman, että UAS on yhdistettynä.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/0b0cfd9aa9fb6002.webp",
+              "width": 800,
+              "height": 381
+            }
+          ]
+        },
+        {
+          "title": "Rakenna reitti",
+          "layout": "image-bottom",
+          "html": "<p>Valitse <strong>Route</strong> asettaaksesi monipisteisen polun, jota ilma-alus seuraa. Napauta kutakin pistettä kartalla ja napauta sitten <strong>Save</strong>. <strong>Existing Route</strong> muuntaa ATAK-reitin samalla tavalla.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/0b0cfd9aa9fb6002.webp",
+              "width": 800,
+              "height": 381
+            }
+          ]
+        },
+        {
+          "title": "Rakenna kehä",
+          "layout": "image-bottom",
+          "html": "<p>Valitse <strong>Perimeter</strong> lentääksesi suljetun muodon. Ilma-alus seuraa ääriviivaa ja palaa ensimmäiseen reittipisteeseen. Napauta <strong>Save</strong>, kun muoto on valmis.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/5f79161bba86aa7e.webp",
+              "width": 800,
+              "height": 380
+            }
+          ]
+        },
+        {
+          "title": "Rakenna kartoitus",
+          "layout": "image-bottom",
+          "html": "<p>Valitse <strong>Survey</strong> kattaaksesi koko alueen edestakaisella ruudukolla. Aseta <strong>Task Name</strong> ja <strong>Task Altitude (AGL)</strong> ja napauta sitten <strong>Create Task</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/3c55a25ac1471b7b.webp",
+              "width": 800,
+              "height": 381
+            }
+          ]
+        },
+        {
+          "title": "Luo MAVLink-tehtävä",
+          "layout": "image-bottom",
+          "html": "<p>Vaiheittaista tehtävittämistä varten avaa Add Task Menu (<strong>+</strong>) ja valitse <strong>Add</strong>.</p>\n<ul>\n<li>Käytä <strong>MISSION</strong>-välilehteä lentoon, <strong>FENCE</strong>-välilehteä geoaitoihin ja <strong>RALLY</strong>-välilehteä kokoontumispisteisiin.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/db50b1677519014a.webp",
+              "width": 1064,
+              "height": 697
+            }
+          ]
+        },
+        {
+          "title": "Lisää lentoonlähtö ja reittipisteet",
+          "layout": "image-bottom",
+          "html": "<p>Napauta <strong>Pencil Icon</strong> lisätäksesi tehtäväkohteita kartalle. Lisää <strong>Takeoff</strong> virittääksesi ja nostaaksesi ilma-aluksen tiettyyn korkeuteen, lisää sitten <strong>Waypoint</strong>-pisteitä, joihin ilma-aluksen tulee lentää (nopeus, korkeus, kääntö, gimbaali).</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/db50b1677519014a.webp",
+              "width": 1064,
+              "height": 697
+            }
+          ]
+        },
+        {
+          "title": "Aseta ROI kohteeseen",
+          "layout": "image-bottom",
+          "html": "<p>Lisää <strong>ROI (Region of Interest)</strong> lukitaksesi gimbaalin kohteeseen. Lisää <strong>Cancel ROI</strong> ennen tehtävän päättymistä, tai ilma-alus jatkaa kohteen seuraamista käsiohjatussa lennossa.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/db50b1677519014a.webp",
+              "width": 1064,
+              "height": 697
+            }
+          ]
+        },
+        {
+          "title": "Päätä toiminnolla Land tai Return to Launch",
+          "layout": "image-bottom",
+          "html": "<p>Päätä tehtävä toiminnolla <strong>Land</strong> asettaaksesi laskeutumisreittipisteen, tai <strong>Return to Launch</strong> lentääksesi takaisin lentoonlähtöpaikkaan ja laskeutuaksesi. Napauta <strong>Save</strong> tallentaaksesi tehtävän ja suorita se sitten <strong>Onboard</strong>-luettelosta.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/db50b1677519014a.webp",
+              "width": 1064,
+              "height": 697
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

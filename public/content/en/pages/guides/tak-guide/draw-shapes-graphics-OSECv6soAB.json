@@ -12,8 +12,13 @@
     "Draw Shapes & Graphics"
   ],
   "createdAt": "2026-06-15T19:43:14.006Z",
-  "updatedAt": "2026-06-15T21:18:56.309Z",
+  "updatedAt": "2026-06-18T20:14:37.927Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/draw-shapes-graphics-OSECv6soAB",
+    "fi": "/fi/guides/tak-guide/piirra-muotoja-ja-grafiikkaa-xS2vkzkOyP",
+    "sv": "/sv/guides/tak-guide/rita-figurer-och-grafik-ZwcLI2SNBB"
+  },
   "blocks": [
     {
       "type": "html",

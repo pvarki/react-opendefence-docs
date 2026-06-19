@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "4874c1de-0f8b-4022-995a-c0f0d31b86e2",
+  "slug": "vianmaaritys-MchVmRHKOC",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Vianmääritys",
+  "breadcrumb": [
+    "Platforms",
+    "TAK Tracker - Apple",
+    "Vianmääritys"
+  ],
+  "createdAt": "2026-06-18T19:45:52.962Z",
+  "updatedAt": "2026-06-18T20:27:48.924Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/troubleshooting-4heIv7ZV7m",
+    "fi": "/fi/guides/tak-guide/vianmaaritys-MchVmRHKOC",
+    "sv": "/sv/guides/tak-guide/felsokning-4GY9QUGGmF"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>(Tätä välilehteä ei pitäisi näyttää)</p>"
+    }
+  ]
+}

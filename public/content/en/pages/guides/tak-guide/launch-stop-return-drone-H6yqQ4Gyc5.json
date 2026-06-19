@@ -8,13 +8,18 @@
   "breadcrumb": [
     "Platforms",
     "ATAK",
-    "Supported Plugins",
+    "SUPPORTED PLUGINS",
     "UAS Tool",
     "Launch, Stop & Return Drone"
   ],
   "createdAt": "2026-06-15T19:48:14.422Z",
-  "updatedAt": "2026-06-15T19:48:14.422Z",
+  "updatedAt": "2026-06-18T20:21:51.337Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/launch-stop-return-drone-H6yqQ4Gyc5",
+    "fi": "/fi/guides/tak-guide/kaynnista-pysayta-ja-palauta-lennokki-ramp5QBORo",
+    "sv": "/sv/guides/tak-guide/starta-stoppa-och-hamta-hem-dronaren-5IlxUaDKae"
+  },
   "blocks": [
     {
       "type": "html",
@@ -27,7 +32,7 @@
         {
           "title": "Find the Quick Flight Toolbar",
           "layout": "image-bottom",
-          "html": "<p>The toolbar sits at the top of the UAS menu after takeoff. From left: <strong>Set Altitude</strong>, <strong>Emergency Stop</strong>, <strong>Return To Home</strong>, <strong>Quick Task</strong>, <strong>Follow EUD/Recon</strong>, <strong>Mission Manager</strong>.</p>",
+          "html": "<p>The toolbar sits at the top of the UAS menu after takeoff.</p>\n<ul>\n<li>From left: <strong>Set Altitude</strong>, <strong>Emergency Stop</strong>, <strong>Return To Home</strong>, <strong>Quick Task</strong>, <strong>Follow EUD/Recon</strong>, <strong>Mission Manager</strong>.</li>\n</ul>",
           "images": [
             {
               "src": "/content/images/en/attachments/9b47a9f4c89d6e45.webp",
@@ -39,7 +44,7 @@
         {
           "title": "Set your altitude",
           "layout": "image-bottom",
-          "html": "<p>Tap <strong>Set Altitude</strong>, drag the slider to the height you want, then tap <strong>Set Altitude</strong> to confirm. Read the height as <strong>AGL</strong> (above ground), <strong>HAL</strong> (above launch) or <strong>MSL</strong> (sea level).</p>",
+          "html": "<p>Tap <strong>Set Altitude</strong>, drag the slider to the height you want, then tap <strong>Set Altitude</strong> to confirm.</p>\n<ul>\n<li>Read the height as <strong>AGL</strong> (above ground), <strong>HAL</strong> (above launch) or <strong>MSL</strong> (sea level).</li>\n</ul>",
           "images": [
             {
               "src": "/content/images/en/attachments/c6cd7fa8485b7c2b.webp",
@@ -63,7 +68,7 @@
         {
           "title": "Emergency Stop",
           "layout": "image-bottom",
-          "html": "<p>Tap <strong>Emergency Stop</strong> to kill the current task, then <strong>OK</strong> on the prompt. It cancels Quick Tasks, Routes and altitude moves but not manual stick control. WARNING: some aircraft drift or backtrack before stopping.</p>",
+          "html": "<p>Tap <strong>Emergency Stop</strong> to kill the current task, then <strong>OK</strong> on the prompt.</p>\n<ul>\n<li>It cancels Quick Tasks, Routes and altitude moves but not manual stick control.</li>\n<li>WARNING: some aircraft drift or backtrack before stopping.</li>\n</ul>",
           "images": [
             {
               "src": "/content/images/en/attachments/41d974ab869aa2ec.webp",
@@ -99,7 +104,7 @@
         {
           "title": "Reposition with Quick Task",
           "layout": "image-bottom",
-          "html": "<p>Tap <strong>Quick Task</strong>, then tap a point on the map. Choose <strong>Go Now</strong> to fly there at current height, or <strong>Orbit</strong> to circle it. The <strong>Selected Coordinate</strong> field lets you type exact coordinates.</p>",
+          "html": "<p>Tap <strong>Quick Task</strong>, then tap a point on the map.</p>\n<ul>\n<li>Choose <strong>Go Now</strong> to fly there at current height, or <strong>Orbit</strong> to circle it.</li>\n<li>The <strong>Selected Coordinate</strong> field lets you type exact coordinates.</li>\n</ul>",
           "images": [
             {
               "src": "/content/images/en/attachments/c3fe23149220c4cb.webp",

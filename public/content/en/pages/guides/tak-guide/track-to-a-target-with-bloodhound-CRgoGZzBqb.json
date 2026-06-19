@@ -13,8 +13,13 @@
     "Track to a Target with Bloodhound"
   ],
   "createdAt": "2026-06-15T19:42:09.526Z",
-  "updatedAt": "2026-06-15T20:53:49.114Z",
+  "updatedAt": "2026-06-18T20:20:03.373Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/track-to-a-target-with-bloodhound-CRgoGZzBqb",
+    "fi": "/fi/guides/tak-guide/seuraa-kohdetta-bloodhoundilla-GHDj89NBpo",
+    "sv": "/sv/guides/tak-guide/spara-ett-mal-med-bloodhound-BsuEbHZ6jT"
+  },
   "blocks": [
     {
       "type": "html",
@@ -39,7 +44,7 @@
         {
           "title": "Set tracker and target",
           "layout": "image-bottom",
-          "html": "<p>Tap <strong>From Reticle</strong> to pick the tracker (defaults to your own Self-Marker), then tap <strong>To Reticle</strong> to pick the target. The target can be another user, a DP, a CoT marker or any map point. Use <strong>Quick Select DP</strong> to grab a DP fast.</p>",
+          "html": "<p>Tap <strong>From Reticle</strong> to pick the tracker (defaults to your own Self-Marker), then tap <strong>To Reticle</strong> to pick the target.</p>\n<ul>\n<li>The target can be another user, a DP, a CoT marker or any map point.</li>\n<li>Use <strong>Quick Select DP</strong> to grab a DP fast.</li>\n</ul>",
           "images": [
             {
               "src": "/content/images/en/attachments/73bb4fb07230f64d.webp",

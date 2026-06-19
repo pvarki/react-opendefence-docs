@@ -4,6 +4,60 @@
   "slug": "guides/matrix-guide",
   "items": [
     {
+      "type": "toporg",
+      "id": "yhdista-palvelimeen-9Y5uV0Gnae",
+      "label": "Yhdistä palvelimeen",
+      "children": [
+        {
+          "type": "doc",
+          "id": "asenna-element-tyopoyta-tagwindows-tagmacos-taglinux-Zn1epPrcp6",
+          "label": "Asenna Element",
+          "slug": "asenna-element-tyopoyta-tagwindows-tagmacos-taglinux-Zn1epPrcp6",
+          "platforms": [
+            "windows",
+            "macos",
+            "linux"
+          ]
+        },
+        {
+          "type": "doc",
+          "id": "ota-element-kayttoon-mobiili-tagios-tagandroid-GKkxWww3O0",
+          "label": "Ota Element käyttöön",
+          "slug": "ota-element-kayttoon-mobiili-tagios-tagandroid-GKkxWww3O0",
+          "platforms": [
+            "ios",
+            "android"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "toporg",
+      "id": "perustoiminnot-78ualZZbi1",
+      "label": "Perustoiminnot",
+      "children": [
+        {
+          "type": "doc",
+          "id": "viestinta-matrixissa-3mOCfe4cEL",
+          "label": "Viestintä Matrixissa",
+          "slug": "viestinta-matrixissa-3mOCfe4cEL"
+        }
+      ]
+    },
+    {
+      "type": "toporg",
+      "id": "kaytto-yksikossa-56G4Kbv5Qx",
+      "label": "Käyttö yksikössä",
+      "children": [
+        {
+          "type": "doc",
+          "id": "yksikon-huoneet-ja-organisointi-9VvNjfff1H",
+          "label": "Yksikön huoneet ja organisointi",
+          "slug": "yksikon-huoneet-ja-organisointi-9VvNjfff1H"
+        }
+      ]
+    },
+    {
       "type": "doc",
       "id": "deploy-app-matrix-R3ReKx6Qsk",
       "label": "Deploy App - Matrix",

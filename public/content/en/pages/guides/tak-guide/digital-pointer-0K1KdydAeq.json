@@ -12,8 +12,13 @@
     "Digital Pointer"
   ],
   "createdAt": "2026-06-15T19:40:15.484Z",
-  "updatedAt": "2026-06-15T21:18:57.274Z",
+  "updatedAt": "2026-06-18T20:15:48.777Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/digital-pointer-0K1KdydAeq",
+    "fi": "/fi/guides/tak-guide/digital-pointer-d8AjEWxuxZ",
+    "sv": "/sv/guides/tak-guide/digital-pointer-0Wr9d9JlFL"
+  },
   "blocks": [
     {
       "type": "html",

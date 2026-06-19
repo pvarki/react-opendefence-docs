@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 1,
+  "id": "e2bcb771-67a9-465e-8715-1f48021cb3b9",
+  "slug": "katso-ja-ohjaa-dronen-kameraa-rh95KbaTpe",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Katso ja ohjaa dronen kameraa",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "TUETUT LISÄOSAT",
+    "UAS-työkalu",
+    "Katso ja ohjaa dronen kameraa"
+  ],
+  "createdAt": "2026-06-18T19:30:26.086Z",
+  "updatedAt": "2026-06-18T20:21:43.483Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/watch-control-drone-camera-45LPQNKdqn",
+    "fi": "/fi/guides/tak-guide/katso-ja-ohjaa-dronen-kameraa-rh95KbaTpe",
+    "sv": "/sv/guides/tak-guide/titta-pa-och-styr-dronarens-kamera-cazTd6XReH"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Katso dronen reaaliaikaista videokuvaa, suuntaa kamera ja ota karttaruutu siitä, mitä näet.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Avaa reaaliaikainen videosyöte",
+          "layout": "image-bottom",
+          "html": "<p>Avaa Full Motion Video (FMV) -syöte ja kartta painamalla <strong>Play</strong> UAS Tool -aloitusnäytöllä. Dronen merkki, sen <strong>SPoI</strong> (Sensor Point of Interest) ja kameran näkökenttä näkyvät kartalla.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/7d9a7786064a3b4e.webp",
+              "width": 2101,
+              "height": 1010
+            }
+          ]
+        },
+        {
+          "title": "Käännä ja kallista kameraa",
+          "layout": "image-bottom",
+          "html": "<p>Avaa gimbaalityökalupalkki painamalla <strong>Gimbal Control</strong>. Suuntaa kamera vetämällä <strong>Pan/Tilt</strong>-liukusäätimiä ja siirry lähemmäs tai kauemmas painikkeilla <strong>Zoom In</strong> / <strong>Zoom Out</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/f018ccb2fb7a19df.webp",
+              "width": 2111,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "Lukitse gimbaali",
+          "layout": "image-bottom",
+          "html": "<p>Lukitse kameran suuntakulma painamalla <strong>Gimbal Lock</strong> (kohde 7 alatyökalupalkissa), jotta se pysyy suunnattuna eikä käänny dronen mukana.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/b3d16402361aa6d0.webp",
+              "width": 800,
+              "height": 86
+            }
+          ]
+        },
+        {
+          "title": "Vaihda lämpö- tai näkyvän valon kuvaan",
+          "layout": "image-bottom",
+          "html": "<p>Avaa <strong>Camera</strong>-asetukset, paina <strong>Select Video Stream</strong> ja valitse <strong>Frontal</strong> (näkyvä valo) tai <strong>Thermal</strong>. Käytä lämpökuvaa hämärässä tai lämmönlähteiden erottamiseen.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/c97489654937a42a.webp",
+              "width": 800,
+              "height": 588
+            }
+          ]
+        },
+        {
+          "title": "Lue tähtäin (SPoI)",
+          "layout": "image-bottom",
+          "html": "<p>Keskellä oleva tähtäin osoittaa, mihin kamera katsoo. Se näyttää <strong>Grid Coordinates</strong> -koordinaatit, <strong>Range</strong> (viistoetäisyys pisteeseen) ja <strong>Bearing</strong> (kulma dronesta). Käytä tätä karttaruudun ilmoittamiseen.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/3ed22463bd8c92b6.webp",
+              "width": 708,
+              "height": 561
+            }
+          ]
+        },
+        {
+          "title": "Keskitä kartta droneen",
+          "layout": "image-bottom",
+          "html": "<p>Siirrä karttanäkymä dronen sijaintiin painamalla <strong>Pan-To</strong>. Pitkä painallus <strong>Pan-To</strong> lukitsee kartan dronen merkkiin niin, että se seuraa mukana.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/faaabd21a33493a7.webp",
+              "width": 369,
+              "height": 374
+            }
+          ]
+        },
+        {
+          "title": "Vaihda koko- tai puolinäyttöön",
+          "layout": "image-bottom",
+          "html": "<p>Vaihda <strong>Half screen</strong> (iso kartta, pieni video) ja <strong>Full screen</strong> (iso video pienoiskartalla) välillä painamalla näytön koon painiketta. Vaihda takaisin painamalla sitä uudelleen.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/27a1155b72bffd95.webp",
+              "width": 2111,
+              "height": 1010
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

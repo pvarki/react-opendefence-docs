@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "5d364152-9f0f-4c1c-bfe5-430c61d2630e",
+  "slug": "establish-trust-share-cas-sUaHBtGVfZ",
+  "collection": "working-with-tak",
+  "locale": "en",
+  "title": "Establish trust (share CAs)",
+  "breadcrumb": [
+    "Federation Hub: connecting multiple TAK Servers",
+    "Establish trust (share CAs)"
+  ],
+  "createdAt": "2026-06-17T19:13:30.707Z",
+  "updatedAt": "2026-06-17T19:13:34.319Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "The two CAs to exchange, per deployment",
+      "id": "the-two-cas-to-exchange-per-deployment"
+    },
+    {
+      "depth": 2,
+      "text": "Authorizing hub admins",
+      "id": "authorizing-hub-admins"
+    },
+    {
+      "depth": 3,
+      "text": "Optional: admin login via Keycloak",
+      "id": "optional-admin-login-via-keycloak"
+    },
+    {
+      "depth": 2,
+      "text": "When mTLS isn't possible: token auth",
+      "id": "when-mtls-isnt-possible-token-auth"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>The hub authenticates connections with <strong>X.509 mutual TLS</strong>, so the hub and each TAK Server must <strong>trust each other's Certificate Authority (CA)</strong>. On Deploy App this matters because <strong>each deployment has its own CA</strong> (Legacy/Docker stacks use CFSSL; Kubernetes uses opendefence-pki) — there's no shared trust until you create it.</p>\n<blockquote>\n<p>Run <strong>unique certificates per server</strong>. Sharing one CA across deployments makes the hub treat them as interconnected (see <a href=\"/en/working-with-tak/define-the-federation-policy-uaAcGzSU3h\">policy</a>) and share everything — the opposite of controlled federation.</p>\n</blockquote>\n<h2 id=\"the-two-cas-to-exchange-per-deployment\"><a href=\"#the-two-cas-to-exchange-per-deployment\">The two CAs to exchange, per deployment</a></h2>\n<p>For each Deploy App TAK Server you connect:</p>\n<ol>\n<li><strong>Give the hub the server's CA.</strong> Each TAK Server's CA is at <code>/opt/tak/certs/files/ca.pem</code>. In the hub UI's <strong>Certificate Manager (CA Manager)</strong>, <em>Choose File → Upload</em> it. It's added to the hub's federation truststore and then becomes available as a <strong>CA Group</strong> on the policy graph. <em>(Adding a CA restarts the federation server.)</em></li>\n<li><strong>Give the server the hub's CA.</strong> Download the hub's <code>ca.pem</code> from the UI <strong>Settings → Download Self CA</strong> (or copy <code>/opt/tak/federation-hub/certs/files/ca.pem</code>). On the TAK Server, upload it under <strong>Configuration → Manage Federate Certificate Authorities</strong> so the server trusts the hub for federation.</li>\n</ol>\n<p>Once both directions are in place, the two can authenticate; the <a href=\"/en/working-with-tak/define-the-federation-policy-uaAcGzSU3h\">policy</a> then decides whether they actually exchange data.</p>\n<h2 id=\"authorizing-hub-admins\"><a href=\"#authorizing-hub-admins\">Authorizing hub admins</a></h2>\n<p>The hub also uses X.509 client certs to authorize <strong>administrators</strong> (who may open the policy UI). Generate hub certs from <code>/opt/tak/federation-hub/certs</code> (<code>makeRootCa.sh</code>, <code>makeCert.sh server &#x3C;name></code>, <code>makeCert.sh client &#x3C;user></code>), then authorize an admin cert:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#61AFEF\">sudo</span><span style=\"color:#98C379\"> su</span><span style=\"color:#98C379\"> tak</span></span>\n<span class=\"line\"><span style=\"color:#61AFEF\">java</span><span style=\"color:#D19A66\"> -jar</span><span style=\"color:#98C379\"> /opt/tak/federation-hub/jars/federation-hub-manager.jar</span><span style=\"color:#56B6C2\"> \\</span></span>\n<span class=\"line\"><span style=\"color:#98C379\">  /opt/tak/federation-hub/certs/files/</span><span style=\"color:#ABB2BF\">&#x3C;</span><span style=\"color:#98C379\">admi</span><span style=\"color:#ABB2BF\">n></span><span style=\"color:#98C379\">.pem</span></span></code></pre>",
+      "lang": "bash"
+    },
+    {
+      "type": "html",
+      "html": "<p>This writes the admin to <code>/opt/tak/federation-hub/authorized_users.yml</code> (the location is referenced in <code>federation-hub-ui.yml</code>).</p>\n<h3 id=\"optional-admin-login-via-keycloak\"><a href=\"#optional-admin-login-via-keycloak\">Optional: admin login via Keycloak</a></h3>\n<p>The hub UI can authenticate admins through <strong>Keycloak</strong> (OAuth) instead of/in addition to client certs — handy on a Deploy App deployment that already runs Keycloak. In <code>federation-hub-ui.yml</code>:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#E06C75\">allowOauth</span><span style=\"color:#ABB2BF\">: </span><span style=\"color:#D19A66\">true</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">oauthPort</span><span style=\"color:#ABB2BF\">: </span><span style=\"color:#D19A66\">9099</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">keycloakClaimName</span><span style=\"color:#ABB2BF\">: </span><span style=\"color:#98C379\">groups</span><span style=\"color:#7F848E;font-style:italic\">        # token attribute to read</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">keycloakAdminClaimValue</span><span style=\"color:#ABB2BF\">: </span><span style=\"color:#98C379\">admin</span><span style=\"color:#7F848E;font-style:italic\">   # value that grants admin</span></span>\n<span class=\"line\"><span style=\"color:#7F848E;font-style:italic\"># keycloakServerName / keycloakClientId / keycloakSecret / endpoints …</span></span></code></pre>",
+      "lang": "yaml"
+    },
+    {
+      "type": "html",
+      "html": "<p>So a user whose Keycloak token carries the <code>admin</code> group can administer the hub.</p>\n<h2 id=\"when-mtls-isnt-possible-token-auth\"><a href=\"#when-mtls-isnt-possible-token-auth\">When mTLS isn't possible: token auth</a></h2>\n<p>On networks that break-and-inspect TLS, full mTLS can't work. The hub supports <strong>token (JWT) auth</strong> on a dedicated port (<code>9103</code> by default). You enable it per-CA (<strong>Allow Token Auth</strong> on a CA Group node) or via a <strong>Token Group</strong> node whose tokens you distribute manually — both covered in <a href=\"/en/working-with-tak/define-the-federation-policy-uaAcGzSU3h\">Define the federation policy</a>.</p>\n<p>→ Next: <a href=\"/en/working-with-tak/define-the-federation-policy-uaAcGzSU3h\">Define the federation policy</a>.</p>"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "ef1e49fe-2f98-479a-b6d2-59645d01ddd4",
+  "slug": "johdanto-pVdcEzIB4j",
+  "collection": "deploy-app",
+  "locale": "fi",
+  "title": "Johdanto",
+  "breadcrumb": [
+    "Platforms",
+    "Johdanto"
+  ],
+  "createdAt": "2026-06-18T20:34:50.100Z",
+  "updatedAt": "2026-06-18T20:38:49.834Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/deploy-app/introduction-d1XzfzOkpz",
+    "fi": "/fi/deploy-app/johdanto-pVdcEzIB4j",
+    "sv": "/sv/deploy-app/introduktion-8VdRmYg8Vp"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<hr>"
+    },
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Mikä on Deploy App",
+          "layout": "image-left",
+          "html": "<p>Deploy App antaa sinulle helpon pääsyn yksikkösi C2-palvelimelle.</p>\n<ul>\n<li>Voit helposti lisätä, hallita ja poistaa käyttäjiä palvelimeltasi, 0-2 minuutin työ.</li>\n<li>Deploy App -instanssin pystyttäminen pilveen tai paikallisesti on automatisoitu työ, joka vie kymmenen minuuttia. Ei manuaalista konfigurointia.\nDeploy App sisältää siihen integroituja sovelluksia. Monia sovelluksia voidaan kehittää toimimaan Deploy Appin kanssa.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/25c1580a29c70523.webp",
+              "width": 2560,
+              "height": 5712
+            }
+          ]
+        },
+        {
+          "title": "Hallitse käyttäjiä",
+          "layout": "image-left",
+          "html": "<p>Lisää käyttäjiä helposti QR-koodeilla tai linkeillä. Hallitse heidän rooliaan ja poista heidät tarvittaessa.</p>\n<ul>\n<li>Kutsutut käyttäjät saavat laitteeseensa asiakasvarmenteen.</li>\n<li>Asiakasvarmenne toimii heidän identiteettinään ja pääsynään yksikkösi Deploy App -palvelimelle ja -palveluihin.\nAsiakasvarmenteet ovat koeteltu ja luotettava korkean turvallisuuden työkalu. Todennäköisesti esimerkiksi tavallinen työpaikkasi henkilökortti sisältää sellaisen.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/408823f815c4d338.webp",
+              "width": 2560,
+              "height": 5712
+            }
+          ]
+        },
+        {
+          "title": "Kehitetty laajennettavaksi",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Sovelluskehittäjät voivat tehdä sovelluksensa toimimaan Deploy Appin kanssa.</li>\n<li>Tämä pyrkii yksinkertaistamaan sitä, miten saat sovelluksesi sotilaille, sekä sotilaiden että sinun näkökulmastasi.\nTutustu Deploy Appin käyttöön seuraavasta oppaasta.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/51dfa90a783a5717.webp",
+              "width": 512,
+              "height": 512
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

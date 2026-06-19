@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 1,
+  "id": "194ed975-77eb-4565-a162-f36ac0ccbb53",
+  "slug": "mark-och-formatera-ett-rutnat-YcEKrvC397",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Märk och formatera ett rutnät",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "TILLÄGG SOM STÖDS",
+    "GRG-byggare",
+    "Märk och formatera ett rutnät"
+  ],
+  "createdAt": "2026-06-18T19:31:26.516Z",
+  "updatedAt": "2026-06-18T20:22:29.295Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/annotate-style-a-grid-xSjKDtDtsj",
+    "fi": "/fi/guides/tak-guide/merkitse-ja-muotoile-ruudukko-fA3HwgfjjV",
+    "sv": "/sv/guides/tak-guide/mark-och-formatera-ett-rutnat-YcEKrvC397"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>När en GRG-fångst är skapad är det här du märker den, formaterar den och lägger till de markeringar din grupp behöver innan du delar den.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Öppna GRG-redigeringsvyn",
+          "layout": "image-bottom",
+          "html": "<p>Efter bearbetningen öppnas redigeringsvyn <strong>GRG Capture</strong>.</p>\n<ul>\n<li>Kryssrutorna till höger slår på eller av varje funktion; tryck på en funktions namn för att öppna dess redigerare.</li>\n<li>Dra inforutan eller punktlistan för att flytta dem.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/d3c379fd34f9f723.webp",
+              "width": 783,
+              "height": 464
+            }
+          ]
+        },
+        {
+          "title": "Formatera rutnätet",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på <strong>Edit Grid</strong> för att ange <strong>Label Style</strong> (<strong>MGRS</strong>, <strong>Letter/Number</strong> eller <strong>Both</strong>), rutnätets <strong>Color</strong> och <strong>Spacing</strong>.</p>\n<ul>\n<li>Växla <strong>Show Labels</strong> och <strong>Additional Labels</strong> för export i flera sidor.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/02f0b5d4ea0f57fc.webp",
+              "width": 624,
+              "height": 355
+            }
+          ]
+        },
+        {
+          "title": "Hantera punktlistan",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på <strong>Point List</strong> för att ange <strong>Text Color</strong> och <strong>Text Align</strong>.</p>\n<ul>\n<li>Använd ögonikonen på varje punkt för att visa eller dölja den på fångsten; radioknapparna flyttar listans position.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/70d90848f969b8b6.webp",
+              "width": 624,
+              "height": 455
+            }
+          ]
+        },
+        {
+          "title": "Ställ in hårkorset",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på <strong>Crosshair</strong> för att ändra dess <strong>Color</strong>, ljusstyrka och <strong>Size</strong>. Håll det läsbart mot din bildmaterial.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/4768f782cb4bb8bb.webp",
+              "width": 800,
+              "height": 366
+            }
+          ]
+        },
+        {
+          "title": "Redigera inforutan",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på <strong>Info Box</strong> för att ange <strong>Title</strong>, <strong>Location</strong>, <strong>Date</strong> och <strong>Classification</strong>, samt <strong>Style</strong> (<strong>Box</strong> eller <strong>Banner</strong>) och <strong>Text Align</strong>.</p>\n<ul>\n<li>Textfärgen för varje post kan ställas in till höger.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/de881fa11c8fe32a.webp",
+              "width": 800,
+              "height": 580
+            }
+          ]
+        },
+        {
+          "title": "Lägg till en kompass",
+          "layout": "image-bottom",
+          "html": "<p>Kryssa i rutan <strong>Compass</strong> för att visa den, tryck sedan på <strong>Compass</strong> för att välja <strong>Style</strong> (<strong>True + Mag</strong> eller <strong>Full</strong>) och <strong>Color</strong>.</p>\n<ul>\n<li>Använd <strong>Left</strong> eller <strong>Right</strong> för att ställa in vilken sida av rutnätet den hamnar på.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/1e7cdfaa0ed505cc.webp",
+              "width": 800,
+              "height": 364
+            }
+          ]
+        },
+        {
+          "title": "Lägg till en skalstock",
+          "layout": "image-bottom",
+          "html": "<p>Kryssa i rutan för skalstocken, tryck sedan på <strong>Scale Bar</strong> för att ange <strong>Style</strong> (<strong>Map Range</strong> eller <strong>Cell Range</strong>), <strong>Unit</strong>, <strong>Size</strong> och <strong>Segment every</strong>. Tryck på <strong>Save</strong> i redigeringsvyn för att behålla dina ändringar.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/c130c90a2d0b9a87.webp",
+              "width": 800,
+              "height": 486
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

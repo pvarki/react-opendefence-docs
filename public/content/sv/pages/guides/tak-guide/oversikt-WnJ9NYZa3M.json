@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "4177e84c-d182-4008-8662-3e04ab1f1850",
+  "slug": "oversikt-WnJ9NYZa3M",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Översikt",
+  "breadcrumb": [
+    "Platforms",
+    "TAK Tracker - Android",
+    "ANVÄNDNING PER ROLL",
+    "Översikt"
+  ],
+  "createdAt": "2026-06-18T19:44:15.630Z",
+  "updatedAt": "2026-06-18T20:26:57.019Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/overview-4sA7lVWVtw",
+    "fi": "/fi/guides/tak-guide/yleiskatsaus-awMobw9EkE",
+    "sv": "/sv/guides/tak-guide/oversikt-WnJ9NYZa3M"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>(Den här fliken ska inte visas)</p>"
+    }
+  ]
+}

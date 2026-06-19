@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "8404e106-d015-4438-a21f-fa52b22d7fd2",
+  "slug": "toista-nauhoitus-IzwZSK6kdC",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Toista nauhoitus",
+  "breadcrumb": [
+    "Platforms",
+    "WinTAK",
+    "Tuetut lisäosat",
+    "TAK Replay",
+    "Toista nauhoitus"
+  ],
+  "createdAt": "2026-06-18T19:34:28.950Z",
+  "updatedAt": "2026-06-18T20:24:43.414Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/play-a-recording-uLch9lAImn",
+    "fi": "/fi/guides/tak-guide/toista-nauhoitus-IzwZSK6kdC",
+    "sv": "/sv/guides/tak-guide/spela-upp-en-inspelning-MxUtx9oUiU"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Mikä tahansa tallennettu nauhoitus voidaan toistaa Timeline Viewer -näkymässä.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Avaa ja toista nauhoitus",
+          "layout": "image-bottom",
+          "html": "<p>Valitse tiedostonimen vierestä <strong>Open</strong> avataksesi Timeline Viewer -näkymän kartan alareunaan.</p>\n<ul>\n<li>Se näyttää alku- ja loppuajan sekä kokonaiskeston, toistonopeuden, nykyisen ja kuluneen ajan sekä vihreän merkin jokaisesta tapahtumasta.</li>\n<li>Nauhoituksen aikana lähetetyt tai vastaanotetut viestit näkyvät paneelissa näkymän vieressä.</li>\n<li>Aloita valitsemalla <strong>Play</strong>; vain nauhoitusalueen sisällä olevat tapahtumat näkyvät sillä ajanhetkellä, jona ne tapahtuivat.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/e2d23de5da9553f3.webp",
+              "width": 480,
+              "height": 265
+            }
+          ]
+        },
+        {
+          "title": "Säädä toistonopeutta",
+          "layout": "image-bottom",
+          "html": "<p>Jokainen pikakelaus eteen- tai taaksepäin muuttaa nopeutta enintään arvoon <strong>64x</strong> tai alaspäin arvoon <strong>−64x</strong>; negatiivinen nopeus toistaa taaksepäin kohti alkua. Rastita <strong>Pan to Map Events</strong> (oletuksena pois päältä) pitääksesi toistetut tapahtumat näkyvissä niiden toistuessa.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/7d36a5fcc69c63ce.webp",
+              "width": 448,
+              "height": 81
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

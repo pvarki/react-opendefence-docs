@@ -1,0 +1,144 @@
+{
+  "schemaVersion": 1,
+  "id": "c43bafac-a66b-4765-aefa-0a4f614b06f5",
+  "slug": "hantera-floden-Qyvi9XK881",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Hantera flöden",
+  "breadcrumb": [
+    "Platforms",
+    "WinTAK",
+    "AVANCERADE KÄRNFUNKTIONER",
+    "Hantera flöden"
+  ],
+  "createdAt": "2026-06-18T19:33:28.715Z",
+  "updatedAt": "2026-06-18T20:23:49.970Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/manage-feeds-62IWBYODOd",
+    "fi": "/fi/guides/tak-guide/hallinnoi-syotteita-dbaSnOdqqc",
+    "sv": "/sv/guides/tak-guide/hantera-floden-Qyvi9XK881"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Hantera Data Sync-flöden",
+          "layout": "text",
+          "html": "<ul>\n<li>Som ägare av ett dataflöde kan du redigera data feed-inställningar.</li>\n<li>Ändra användarroller</li>\n<li>Bjuda in användare till ett flöde</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "Öppna flödesinställningar",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Öppna flödesinställningar</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/7c4f2ae98746c229.webp",
+              "width": 349,
+              "height": 229
+            }
+          ]
+        },
+        {
+          "title": "Flödesinställningar",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Flödesinställningar</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/1d323b2fda10f320.webp",
+              "width": 458,
+              "height": 418
+            }
+          ]
+        },
+        {
+          "title": "Flödets standardroll",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Du kan ändra standardrollen för nya användare</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/10c37e6dbeda685e.webp",
+              "width": 358,
+              "height": 113
+            }
+          ]
+        },
+        {
+          "title": "Flödesmedlemmar",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Öppna menyn Feed Members för att redigera nuvarande användare eller bjuda in nya användare</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/f1c9c90c8c751d59.webp",
+              "width": 441,
+              "height": 70
+            }
+          ]
+        },
+        {
+          "title": "Ändra roller",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Ändra rollerna för användare som är online</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/a71e08e6483fb4fa.webp",
+              "width": 381,
+              "height": 414
+            }
+          ]
+        },
+        {
+          "title": "Redigera roller",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Redigera rollerna för användare som är online</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/d259a8a0ed44b356.webp",
+              "width": 318,
+              "height": 162
+            }
+          ]
+        },
+        {
+          "title": "Bjud in nya användare",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Öppna funktionen Invite Others</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/036085cd99094e34.webp",
+              "width": 401,
+              "height": 421
+            }
+          ]
+        },
+        {
+          "title": "Sök och lägg till nya användare",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Sök och filtrera användare</li>\n<li>Lägg till nya användare</li>\n<li>Inbjudan skickas automatiskt till användaren</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/35b229cd0462f444.webp",
+              "width": 535,
+              "height": 592
+            }
+          ]
+        },
+        {
+          "title": "Övriga inställningar",
+          "layout": "text",
+          "html": "<ul>\n<li>Du kan även redigera andra inställningar, till exempel hashtaggar och automatisk datasändning.</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "Klar",
+          "layout": "text",
+          "html": "<ul>\n<li>Du kan stänga den här guiden</li>\n</ul>\n<hr>",
+          "images": []
+        }
+      ]
+    }
+  ]
+}

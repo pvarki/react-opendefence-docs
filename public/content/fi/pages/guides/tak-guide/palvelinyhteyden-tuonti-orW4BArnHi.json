@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 1,
+  "id": "10bde822-a52c-4b45-b555-facc61d49f5d",
+  "slug": "palvelinyhteyden-tuonti-orW4BArnHi",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Palvelinyhteyden tuonti",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "ALOITA JA YHDISTÄ",
+    "Palvelinyhteyden tuonti"
+  ],
+  "createdAt": "2026-06-18T19:25:11.736Z",
+  "updatedAt": "2026-06-18T20:13:38.815Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/importing-server-connection-PQ4dCV2SYR",
+    "fi": "/fi/guides/tak-guide/palvelinyhteyden-tuonti-orW4BArnHi",
+    "sv": "/sv/guides/tak-guide/importera-serveranslutning-Heo41dBNko"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Yhteyden muodostaminen",
+          "layout": "text",
+          "html": "<ul>\n<li>Deploy Appilla voit käyttää Deploy Appin TAK-sivun <strong>'Auto Import Connection'</strong> -toimintoa palvelimeen yhdistämiseen.</li>\n<li>Tällä yhteystavalla pääset vihreään yhteyteen kahdella napautuksella.</li>\n<li>Deploy Appista voit myös ladata asiakasohjelman asetuspaketin.\nTämä opas käsittelee vain nopean tavan, sillä ATAKin ja Deploy Appin kanssa ei tarvitse käsin pyöritellä asiakaspakkauksia, salasanoja tai vastaavia.</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "1. Avaa Deploy App - TAK",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Napauta Deploy Appissa <strong>TAK->Launch.</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/c5aa5935ab7bc584.webp",
+              "width": 1080,
+              "height": 2340
+            }
+          ]
+        },
+        {
+          "title": "2. Napauta Auto Import -pakettia",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Napauta sitten <strong>ATAK: Auto import package.</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/ff6080f3b330fd56.webp",
+              "width": 1080,
+              "height": 2340
+            }
+          ]
+        },
+        {
+          "title": "3. ATAK Auto-Import",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Auto-Import-painike pyytää avaamaan ATAK-sovelluksesi ja tuomaan siihen automaattisesti palvelimen asetuspaketin.</li>\n<li>Tee tämä painamalla <strong>Open ATAK and connect to server</strong> -painiketta.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/2eb1508d89ef7f24.webp",
+              "width": 1080,
+              "height": 2340
+            }
+          ]
+        },
+        {
+          "title": "3. Hyväksy palvelimen asetusten lataaminen",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>ATAKin pitäisi avautua ja kysyä paketin tuomisesta pitkällä linkillä.</li>\n<li>Jatka napauttamalla <strong>Yes</strong>.</li>\n<li>Jos ATAK avautuu mutta valintaikkunaa ei näy, kokeile Auto-Importia uudelleen. Se toimii nyt.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/dfc75ec072099b39.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "4. Siinä se! Olet yhteydessä.",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Siinä se!</li>\n<li>Näytön vihreä TAK-kuvake osoittaa, että olet nyt yhteydessä yksikkösi Deploy App TAK -palvelimeen.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/7b0db9fb8f123439.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "html",
+      "html": "<p>Kun yhteys takserveriin on muodostettu onnistuneesti, jatka kohtaan <a href=\"/doc/ce3ace12-abf3-4d66-a94b-8a5cbccfeebb\">Receive Feeds</a></p>"
+    }
+  ]
+}

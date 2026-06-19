@@ -13,7 +13,7 @@
     "RECON Feed Management"
   ],
   "createdAt": "2026-01-23T21:19:17.944Z",
-  "updatedAt": "2026-06-14T13:16:24.218Z",
+  "updatedAt": "2026-06-18T20:18:23.323Z",
   "headings": [
     {
       "depth": 2,
@@ -21,6 +21,11 @@
       "id": "pictures"
     }
   ],
+  "translations": {
+    "en": "/en/guides/tak-guide/recon-feed-management-y1O0x1g2sf",
+    "fi": "/fi/guides/tak-guide/recon-syotteen-hallinta-BcuC80sRrk",
+    "sv": "/sv/guides/tak-guide/hantering-av-recon-flodet-7quTutquFB"
+  },
   "blocks": [
     {
       "type": "slideset",

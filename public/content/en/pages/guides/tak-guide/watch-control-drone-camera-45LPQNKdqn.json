@@ -8,13 +8,18 @@
   "breadcrumb": [
     "Platforms",
     "ATAK",
-    "Supported Plugins",
+    "SUPPORTED PLUGINS",
     "UAS Tool",
     "Watch & Control Drone Camera"
   ],
   "createdAt": "2026-06-15T19:50:22.907Z",
-  "updatedAt": "2026-06-15T19:50:22.907Z",
+  "updatedAt": "2026-06-18T20:21:43.001Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/watch-control-drone-camera-45LPQNKdqn",
+    "fi": "/fi/guides/tak-guide/katso-ja-ohjaa-dronen-kameraa-rh95KbaTpe",
+    "sv": "/sv/guides/tak-guide/titta-pa-och-styr-dronarens-kamera-cazTd6XReH"
+  },
   "blocks": [
     {
       "type": "html",

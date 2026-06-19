@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "id": "ec24c460-7658-4c24-a5ae-b56571752320",
+  "slug": "set-up-your-development-environment-NfbAKB4XTl",
+  "collection": "working-with-tak",
+  "locale": "en",
+  "title": "Set up your development environment",
+  "breadcrumb": [
+    "ATAK Plugin Development",
+    "Set up your development environment"
+  ],
+  "createdAt": "2026-06-16T22:49:05.531Z",
+  "updatedAt": "2026-06-16T22:49:09.131Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "You are building a plugin, not ATAK core",
+      "id": "you-are-building-a-plugin-not-atak-core"
+    },
+    {
+      "depth": 2,
+      "text": "What you actually need",
+      "id": "what-you-actually-need"
+    },
+    {
+      "depth": 2,
+      "text": "Get the SDK and the example plugins",
+      "id": "get-the-sdk-and-the-example-plugins"
+    },
+    {
+      "depth": 2,
+      "text": "Tell Gradle where the SDK is (local.properties)",
+      "id": "tell-gradle-where-the-sdk-is-localproperties"
+    },
+    {
+      "depth": 3,
+      "text": "Signing: debug works out of the box",
+      "id": "signing-debug-works-out-of-the-box"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Building a plugin is much lighter than building ATAK itself. This is the most common point of confusion, so let's clear it up first.</p>\n<h2 id=\"you-are-building-a-plugin-not-atak-core\"><a href=\"#you-are-building-a-plugin-not-atak-core\">You are building a <em>plugin</em>, not ATAK core</a></h2>\n<p>The repository's <code>BUILDING.md</code> lists some heavy native prerequisites — <strong>NDK r12b, CMake 3.14.7, Conan</strong>, and modified copies of <strong>GDAL, ASSIMP, and tinygltf</strong>. Those are for compiling <strong>ATAK core from source</strong>. A <em>plugin</em> does <strong>not</strong> need any of them.</p>\n<p>A plugin builds against the <strong>ATAK Plugin SDK</strong>, which ships the ATAK API as a prebuilt artifact. Your plugin's Gradle build pulls that API in; you never compile the C/C++ engine. So your toolchain is just a normal Android one plus the SDK.</p>\n<h2 id=\"what-you-actually-need\"><a href=\"#what-you-actually-need\">What you actually need</a></h2>\n<table>\n<thead>\n<tr>\n<th>Tool</th>\n<th>Notes</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Android Studio</strong></td>\n<td>The recommended IDE. A recent stable version is fine.</td>\n</tr>\n<tr>\n<td><strong>JDK 17</strong></td>\n<td>ATAK 5.x plugins compile against Java 17 (<code>sourceCompatibility</code>/<code>targetCompatibility = VERSION_17</code>).</td>\n</tr>\n<tr>\n<td><strong>Android SDK</strong></td>\n<td>Installed via Android Studio's SDK Manager. The 5.x example targets <code>compileSdk 36</code>, <code>targetSdkVersion 34</code>, <code>minSdkVersion 21</code>. Build-tools are managed by the Android Gradle Plugin — no pinned <code>buildToolsVersion</code>.</td>\n</tr>\n<tr>\n<td><strong>The ATAK Plugin SDK</strong></td>\n<td><code>pluginsdk.zip</code> from the repo root, or the SDK matching your target ATAK version (the example targets <code>ATAK_VERSION 5.6.0</code>).</td>\n</tr>\n<tr>\n<td><strong>The</strong> <code>**atak-gradle-takdev**</code> <strong>plugin</strong></td>\n<td>The Gradle plugin that teaches your build how to find and link the ATAK API. The 5.x example uses the <code>3.x</code> line (<code>takdevVersion = '3.+'</code>), or a local <code>atak-gradle-takdev.jar</code>.</td>\n</tr>\n<tr>\n<td><strong>A signing key</strong></td>\n<td>Debug signing works out of the box — <code>atak-gradle-takdev</code> generates a development keystore for you (see below).</td>\n</tr>\n<tr>\n<td><strong>A device/emulator with ATAK installed</strong></td>\n<td>The matching <strong>CIV</strong> build, since the plugin loads <em>into</em> ATAK.</td>\n</tr>\n</tbody>\n</table>\n<blockquote>\n<p>The <code>ndk { abiFilters \"armeabi-v7a\", \"arm64-v8a\", \"x86\" }</code> block you'll see in the plugin's <code>build.gradle</code> only filters which ABIs any <em>bundled</em> native libraries are packaged for. Unless your plugin ships its own <code>.so</code> files, you are not compiling native code and do not need the full NDK-r12b toolchain.</p>\n</blockquote>\n<h2 id=\"get-the-sdk-and-the-example-plugins\"><a href=\"#get-the-sdk-and-the-example-plugins\">Get the SDK and the example plugins</a></h2>\n<p>From the open-source repository:</p>\n<ul>\n<li><code>**pluginsdk.zip**</code> — the Plugin SDK (API artifact + <code>atak-gradle-takdev.jar</code>).</li>\n<li><code>**plugin-examples/helloworld**</code> — a complete, working skeleton plugin. The best starting point and the source of every example in this guide.</li>\n<li><code>**plugin-examples/plugintemplate**</code> — a minimal template if you'd rather start from near-empty.</li>\n</ul>\n<p>Unzip the SDK somewhere stable; you'll point Gradle at it next.</p>\n<h2 id=\"tell-gradle-where-the-sdk-is-localproperties\"><a href=\"#tell-gradle-where-the-sdk-is-localproperties\">Tell Gradle where the SDK is (<code>local.properties</code>)</a></h2>\n<p>The plugin build reads everything environment-specific from <code>local.properties</code> at the project root. There are two ways it locates the ATAK API:</p>\n<ul>\n<li><strong>DevKit / repository mode</strong> — set <code>takrepo.url</code> (plus <code>takrepo.user</code> / <code>takrepo.password</code>) to point at an ATAK SDK Maven repository. When <code>takrepo.url</code> is present, the build uses the published <code>atak-gradle-takdev</code> plugin and pulls the API from that repo.</li>\n<li><strong>Local-jar mode</strong> — if <code>takrepo.url</code> is <em>not</em> set, the build falls back to a local <code>atak-gradle-takdev.jar</code> (by default expected near the project, at <code>../../atak-gradle-takdev.jar</code>) and the local SDK.</li>\n</ul>\n<h3 id=\"signing-debug-works-out-of-the-box\"><a href=\"#signing-debug-works-out-of-the-box\">Signing: debug works out of the box</a></h3>\n<p>In the ATAK 5.x example the <strong>debug</strong> build is already configured to sign with a development keystore that the <code>atak-gradle-takdev</code> plugin generates under the module's build directory — so you no longer have to set <code>takDebug*</code> keys in <code>local.properties</code> just to get a debug build running and installed. For <strong>release</strong> builds you supply and configure your own keystore (see <a href=\"/en/working-with-tak/packaging-distribution-overview-Yfof5rViqj\">Packaging &#x26; distribution</a>).</p>\n<p>That means a minimal <code>local.properties</code> only needs to point Gradle at the SDK:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span># SDK location (repository mode)</span></span>\n<span class=\"line\"><span>takrepo.url=&#x3C;your ATAK SDK maven repo URL></span></span>\n<span class=\"line\"><span>takrepo.user=&#x3C;user></span></span>\n<span class=\"line\"><span>takrepo.password=&#x3C;password></span></span></code></pre>",
+      "lang": "plaintext"
+    },
+    {
+      "type": "html",
+      "html": "<blockquote>\n<p>Older ATAK 4.x plugins instead <strong>required</strong> <code>takDebugKeyFile</code> / <code>takReleaseKeyFile</code> (and their passwords/aliases) in <code>local.properties</code>, failing the build with <code>No signing key configured!</code> if absent. If you're porting a 4.x plugin you can drop that debug-key boilerplate.</p>\n</blockquote>\n<blockquote>\n<p><code>gradle.properties</code> in the example sets <code>android.useAndroidX=true</code> and <code>android.enableR8=false</code> — leave these as the SDK ships them unless you have a specific reason to change them.</p>\n</blockquote>\n<p>→ Next: <a href=\"/en/working-with-tak/create-your-first-plugin-from-the-template-cHtMhyb8Ma\">Create your first plugin from the template</a>.</p>"
+    }
+  ]
+}

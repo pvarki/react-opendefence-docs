@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "8be8ff89-43d5-41b1-bb73-a8b34b952b0e",
+  "slug": "laheta-halytyksia-oXpOorNrag",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Lähetä hälytyksiä",
+  "breadcrumb": [
+    "Platforms",
+    "TAK Tracker - Apple",
+    "TAK-toiminnot",
+    "Lähetä hälytyksiä"
+  ],
+  "createdAt": "2026-06-18T19:45:50.118Z",
+  "updatedAt": "2026-06-18T20:27:35.677Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/send-alerts-jz5xQsdpbH",
+    "fi": "/fi/guides/tak-guide/laheta-halytyksia-oXpOorNrag",
+    "sv": "/sv/guides/tak-guide/skicka-varningar-7EOgWJupXv"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>(Tätä välilehteä ei pitäisi näyttää)</p>"
+    }
+  ]
+}

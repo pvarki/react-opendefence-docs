@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "4352e3d6-ce97-4256-852a-d48c6357cccf",
+  "slug": "taistelija-Rco9ioLaEE",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Taistelija",
+  "breadcrumb": [
+    "Platforms",
+    "iTAK",
+    "Käyttö roolin mukaan",
+    "Taistelija"
+  ],
+  "createdAt": "2026-06-18T19:39:01.052Z",
+  "updatedAt": "2026-06-18T20:25:58.968Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/fighter-rf4mMCmmWV",
+    "fi": "/fi/guides/tak-guide/taistelija-Rco9ioLaEE",
+    "sv": "/sv/guides/tak-guide/soldat-zS7E1xGRtx"
+  },
+  "blocks": []
+}

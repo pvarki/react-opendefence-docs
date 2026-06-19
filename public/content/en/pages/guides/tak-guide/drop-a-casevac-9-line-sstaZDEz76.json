@@ -12,8 +12,13 @@
     "Drop a CASEVAC 9-Line"
   ],
   "createdAt": "2026-06-15T19:40:22.630Z",
-  "updatedAt": "2026-06-15T21:18:55.858Z",
+  "updatedAt": "2026-06-18T20:15:14.011Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/drop-a-casevac-9-line-sstaZDEz76",
+    "fi": "/fi/guides/tak-guide/tee-casevac-9-line-ilmoitus-biscwQ9Tt9",
+    "sv": "/sv/guides/tak-guide/gor-en-casevac-9-line-rapport-gRMiZFjKj2"
+  },
   "blocks": [
     {
       "type": "html",
@@ -62,7 +67,7 @@
         {
           "title": "Fill the nine lines",
           "layout": "image-bottom",
-          "html": "<p>Work down lines 1 to 9: location, callsign, <strong>Patient by Precedence</strong>, <strong>Patient by Type</strong>, enemy in area, and <strong>Patients by Nationality</strong>. Add free text under <strong>Remarks</strong>.</p>",
+          "html": "<p>Work down lines 1 to 9: location, callsign, <strong>Patient by Precedence</strong>, <strong>Patient by Type</strong>, enemy in area, and <strong>Patients by Nationality</strong>.</p>\n<ul>\n<li>Add free text under <strong>Remarks</strong>.</li>\n</ul>",
           "images": [
             {
               "src": "/content/images/en/attachments/9636a2dc4ef53de0.webp",
@@ -74,7 +79,7 @@
         {
           "title": "Add a ZMIST report",
           "layout": "image-bottom",
-          "html": "<p>Next to <strong>ZMIST</strong>, select <strong>Add</strong> to attach a ZMIST report (ZAP number, Mechanism, Injury, Signs, Treatment). Tap <strong>Add</strong> again for more casualties; use <strong>Delete</strong> to remove one.</p>",
+          "html": "<p>Next to <strong>ZMIST</strong>, select <strong>Add</strong> to attach a ZMIST report (ZAP number, Mechanism, Injury, Signs, Treatment).</p>\n<ul>\n<li>Tap <strong>Add</strong> again for more casualties; use <strong>Delete</strong> to remove one.</li>\n</ul>",
           "images": [
             {
               "src": "/content/images/en/attachments/9636a2dc4ef53de0.webp",

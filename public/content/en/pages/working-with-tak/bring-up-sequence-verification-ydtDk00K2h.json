@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "id": "c6fee472-625f-4dd6-a2ab-9857e55e0ffe",
+  "slug": "bring-up-sequence-verification-ydtDk00K2h",
+  "collection": "working-with-tak",
+  "locale": "en",
+  "title": "Bring-up sequence & verification",
+  "breadcrumb": [
+    "Wire up Deploy App TAK Servers via a Federation Hub (IaC)",
+    "Bring-up sequence & verification"
+  ],
+  "createdAt": "2026-06-17T20:25:58.686Z",
+  "updatedAt": "2026-06-19T14:18:53.352Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Order of operations",
+      "id": "order-of-operations"
+    },
+    {
+      "depth": 2,
+      "text": "Verify without clicking",
+      "id": "verify-without-clicking"
+    },
+    {
+      "depth": 2,
+      "text": "Idempotent reconcile",
+      "id": "idempotent-reconcile"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Put the pieces in dependency order so one pipeline run brings the federation up with no manual step. Since we have not demoed this yet, treat the sequence as the intended order to validate.</p>\n<h2 id=\"order-of-operations\"><a href=\"#order-of-operations\">Order of operations</a></h2>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span>1. PKI            each deployment's RASENMAEHER/CA up</span></span>\n<span class=\"line\"><span>                  → collect each deployment's root_ca.pem</span></span>\n<span class=\"line\"><span>                  → enroll the hub (sign_csr) → hub cert + hub CA</span></span>\n<span class=\"line\"><span>2. Identity       provision the shared group taxonomy (tak_SHARED_COP, …)</span></span>\n<span class=\"line\"><span>                  in every deployment's Keycloak</span></span>\n<span class=\"line\"><span>3. TAK servers    deploy the Deploy App TAK servers</span></span>\n<span class=\"line\"><span>                  → inject the hub CA into each /ca_public  (federation already on)</span></span>\n<span class=\"line\"><span>4. Fed Hub        deploy with templated broker.yml + ui.yml,</span></span>\n<span class=\"line\"><span>                  hub certs, the server CAs in fed-truststore,</span></span>\n<span class=\"line\"><span>                  authorized_users (bootstrap), the policy (templated or apply job),</span></span>\n<span class=\"line\"><span>                  ports 9100/9102 open</span></span>\n<span class=\"line\"><span>5. Connect        hub Outgoing nodes connect to each server:9001  (or servers dial hub:9102)</span></span>\n<span class=\"line\"><span>                  → mTLS succeeds (CAs cross-trusted) → policy admits them</span></span>\n<span class=\"line\"><span>6. Verify         assert connections + selective data flow (below)</span></span></code></pre>",
+      "lang": "plaintext"
+    },
+    {
+      "type": "html",
+      "html": "<p>Steps 1 and 2 are prerequisites; 3 and 4 can run in parallel once their inputs exist; 5 is automatic; 6 is an automated gate.</p>\n<h2 id=\"verify-without-clicking\"><a href=\"#verify-without-clicking\">Verify without clicking</a></h2>\n<p>Make the pipeline assert the outcome instead of a person checking the UI:</p>\n<ul>\n<li>Connections up. Check the hub's Active Connections; expect one <code>FEDERATION_TAK_CLIENT</code> link per server and green policy nodes. Use the policy-manager endpoint behind the UI, or a scripted check (see the <a href=\"/en/working-with-tak/operate-troubleshoot-B5LoRqtcMh\">Federation Hub guide</a>).</li>\n<li>Shared data crosses. Inject a <code>SHARED_COP</code>-tagged event on one deployment and assert it appears on the others. A small TAK client or the Marti API from the <a href=\"/en/working-with-tak/getting-data-from-tak-server-hszJWvv9UM\">Integrating guide</a> works as a probe.</li>\n<li>Local data does not cross. Inject a <code>*_LOCAL</code>-tagged event and assert it does not appear on the others, which proves the group filter holds.</li>\n</ul>\n<p>Fail the pipeline if any assertion fails.</p>\n<h2 id=\"idempotent-reconcile\"><a href=\"#idempotent-reconcile\">Idempotent reconcile</a></h2>\n<p>Everything above is derived from the topology, so re-running the pipeline is safe and is how you change the federation:</p>\n<ul>\n<li>Add a deployment: its CA is collected and fanned out, a CA Group plus edges are added to the policy, and it is re-applied. The new server joins on the next connect.</li>\n<li>Remove one: drop its CA Group and edges and re-apply; the hub stops admitting it.</li>\n<li>Rotate a CA: re-issue via RASENMAEHER, re-fan the new PEM, re-apply.</li>\n</ul>\n<p>The only manual action is break-glass: an authorized admin cert to open the hub UI if you need to inspect a live problem.</p>\n<p>→ Next: <a href=\"/en/working-with-tak/references-KdqJO1rcQ0\">References</a>.</p>"
+    }
+  ]
+}

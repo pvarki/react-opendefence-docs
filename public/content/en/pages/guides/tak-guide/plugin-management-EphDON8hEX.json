@@ -8,13 +8,17 @@
   "breadcrumb": [
     "Platforms",
     "WinTAK",
-    "USING WINTAK FEATURES",
-    "Basic Features",
+    "BASIC CORE FEATURES",
     "Plugin Management"
   ],
   "createdAt": "2026-02-21T19:59:37.122Z",
-  "updatedAt": "2026-06-14T17:11:33.654Z",
+  "updatedAt": "2026-06-18T20:23:41.683Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/plugin-management-EphDON8hEX",
+    "fi": "/fi/guides/tak-guide/wintak-laajennusten-hallinta-qaHLBdWwfw",
+    "sv": "/sv/guides/tak-guide/hantering-av-wintak-tillagg-9iOqPxCmwd"
+  },
   "blocks": [
     {
       "type": "slideset",

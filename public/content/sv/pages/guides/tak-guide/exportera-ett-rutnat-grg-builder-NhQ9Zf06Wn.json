@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "id": "2181f360-e856-4f40-aedf-960bbe05ab5c",
+  "slug": "exportera-ett-rutnat-grg-builder-NhQ9Zf06Wn",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Exportera ett rutnät (GRG Builder)",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "TILLÄGG SOM STÖDS",
+    "GRG-byggare",
+    "Exportera ett rutnät (GRG Builder)"
+  ],
+  "createdAt": "2026-06-18T19:31:27.136Z",
+  "updatedAt": "2026-06-18T20:22:30.857Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/export-a-grid-grg-builder-EcpaE7LkX1",
+    "fi": "/fi/guides/tak-guide/vie-ruudukko-grg-builder-yx2Y3RPY0C",
+    "sv": "/sv/guides/tak-guide/exportera-ett-rutnat-grg-builder-NhQ9Zf06Wn"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Gör om rutnätet du byggt till en fil som du kan dela eller skriva ut, och rensa sedan kartan.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Spara rutnätet",
+          "layout": "image-bottom",
+          "html": "<p>När dina ändringar är klara väljer du <strong>Save</strong> och bockar för valfri kombination av <strong>KMZ</strong>, <strong>PDF</strong>, <strong>JPEG</strong> eller <strong>Settings (JSON)</strong>.</p>\n<ul>\n<li><strong>KMZ</strong> tillsammans med <strong>Flatten map items to image</strong> lägger rutnätet på kartan och i Overlay Manager</li>\n<li><strong>PDF</strong> kan använda <strong>Append to PDF</strong>, <strong>Include geospatial data</strong> eller <strong>Create multiple pages</strong></li>\n<li><strong>JPEG</strong> kan använda <strong>Create multiple images</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/6b6154a9d232b8c0.webp",
+              "width": 800,
+              "height": 519
+            }
+          ]
+        },
+        {
+          "title": "Öppna inspelningsinställningar",
+          "layout": "image-bottom",
+          "html": "<p>Välj <strong>Settings</strong> (kugghjul) i verktygsfältet för att konfigurera hur GRG fångas.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/c3a51e185c872841.webp",
+              "width": 432,
+              "height": 71
+            }
+          ]
+        },
+        {
+          "title": "Konfigurera inspelningen",
+          "layout": "image-bottom",
+          "html": "<p>Ställ in <strong>Auto-import GRG capture</strong>, välj en <strong>Resolution</strong> (<strong>Low</strong> eller <strong>High</strong>) och aktivera <strong>Scaled Printable Map</strong> för att välja en <strong>Page Size</strong>. Välj <strong>Done</strong> för att bekräfta. Obs: Scaled Printable Map kan begränsa dina anpassningsmöjligheter för GRG.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/4fd7562c0d5d2d61.webp",
+              "width": 800,
+              "height": 481
+            }
+          ]
+        },
+        {
+          "title": "Ta bort kartobjekt",
+          "layout": "image-bottom",
+          "html": "<p>För att rensa kartobjekten du placerade när du byggde GRG, välj <strong>Delete</strong> (papperskorg) i verktygsfältet.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/565591385cd6d27d.webp",
+              "width": 432,
+              "height": 71
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

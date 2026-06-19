@@ -10,8 +10,13 @@
     "Unit rooms & organisation"
   ],
   "createdAt": "2026-06-15T14:07:35.419Z",
-  "updatedAt": "2026-06-15T17:52:34.732Z",
+  "updatedAt": "2026-06-18T20:37:56.818Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/matrix-guide/unit-rooms-organisation-krWteO9e37",
+    "fi": "/fi/guides/matrix-guide/yksikon-huoneet-ja-organisointi-9VvNjfff1H",
+    "sv": "/sv/guides/matrix-guide/enhetens-rum-och-organisation-u4QesBL0bv"
+  },
   "blocks": [
     {
       "type": "html",

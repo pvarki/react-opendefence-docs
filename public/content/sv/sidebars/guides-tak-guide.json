@@ -2,5 +2,1100 @@
   "schemaVersion": 1,
   "label": "TAK Guide",
   "slug": "guides/tak-guide",
-  "items": []
+  "items": [
+    {
+      "type": "doc",
+      "id": "vad-ar-tak-Y5ZYfcXyh8",
+      "label": "Vad är TAK?",
+      "slug": "vad-ar-tak-Y5ZYfcXyh8"
+    },
+    {
+      "type": "toporg",
+      "id": "starta-och-anslut-bWhWQ5j7Yg",
+      "label": "STARTA OCH ANSLUT",
+      "clientId": "atak-FSQuzFTpnF",
+      "children": [
+        {
+          "type": "doc",
+          "id": "borja-fran-deploy-app-05KDQT0EcH",
+          "label": "Börja från Deploy App",
+          "slug": "borja-fran-deploy-app-05KDQT0EcH"
+        },
+        {
+          "type": "doc",
+          "id": "se-till-att-du-har-atak-appen-ep7TvO7XkN",
+          "label": "Se till att du har ATAK-appen",
+          "slug": "se-till-att-du-har-atak-appen-ep7TvO7XkN"
+        },
+        {
+          "type": "doc",
+          "id": "importera-serveranslutning-Heo41dBNko",
+          "label": "Importera serveranslutning",
+          "slug": "importera-serveranslutning-Heo41dBNko"
+        },
+        {
+          "type": "doc",
+          "id": "ladda-atak-plugins-TpJcLrKsGu",
+          "label": "Ladda ATAK-plugins",
+          "slug": "ladda-atak-plugins-TpJcLrKsGu"
+        }
+      ]
+    },
+    {
+      "type": "toporg",
+      "id": "grundlaggande-funktioner-HSV0X3IMVc",
+      "label": "Grundläggande funktioner",
+      "clientId": "atak-FSQuzFTpnF",
+      "children": [
+        {
+          "type": "doc",
+          "id": "grundvy-verktyg-och-verktygsfalt-Lpm8S3bYgv",
+          "label": "Grundvy, verktyg och verktygsfält",
+          "slug": "grundvy-verktyg-och-verktygsfalt-Lpm8S3bYgv"
+        },
+        {
+          "type": "doc",
+          "id": "blue-force-tracking-8BMZxsbnV0",
+          "label": "Blue Force Tracking",
+          "slug": "blue-force-tracking-8BMZxsbnV0"
+        },
+        {
+          "type": "doc",
+          "id": "feeds-with-data-sync-5yGpc2vgBg",
+          "label": "Feeds with Data Sync",
+          "slug": "feeds-with-data-sync-5yGpc2vgBg"
+        },
+        {
+          "type": "doc",
+          "id": "point-dropper-markorer-ADzjTFD2zi",
+          "label": "Point Dropper - Markörer",
+          "slug": "point-dropper-markorer-ADzjTFD2zi"
+        },
+        {
+          "type": "doc",
+          "id": "skicka-en-markor-4WZtvP60ax",
+          "label": "Skicka en markör",
+          "slug": "skicka-en-markor-4WZtvP60ax"
+        },
+        {
+          "type": "doc",
+          "id": "point-dropper-quick-pic-sTBDsrUhIs",
+          "label": "Point Dropper - Quick Pic",
+          "slug": "point-dropper-quick-pic-sTBDsrUhIs"
+        },
+        {
+          "type": "doc",
+          "id": "geochat-HOCGG8SkvO",
+          "label": "GeoChat",
+          "slug": "geochat-HOCGG8SkvO"
+        },
+        {
+          "type": "doc",
+          "id": "rensa-innehall-q4qalpFEan",
+          "label": "Rensa innehåll",
+          "slug": "rensa-innehall-q4qalpFEan"
+        }
+      ]
+    },
+    {
+      "type": "toporg",
+      "id": "avancerade-karnfunktioner-mIhF8w1JrV",
+      "label": "Avancerade kärnfunktioner",
+      "clientId": "atak-FSQuzFTpnF",
+      "children": [
+        {
+          "type": "doc",
+          "id": "skapa-och-hantera-floden-xFQ1Aqteke",
+          "label": "Skapa och hantera flöden",
+          "slug": "skapa-och-hantera-floden-xFQ1Aqteke"
+        },
+        {
+          "type": "doc",
+          "id": "lagg-till-i-och-arbeta-med-ett-flode-ipP0eWsr0q",
+          "label": "Lägg till i och arbeta med ett flöde",
+          "slug": "lagg-till-i-och-arbeta-med-ett-flode-ipP0eWsr0q"
+        },
+        {
+          "type": "doc",
+          "id": "rita-och-dela-planer-WlqKBF7FKe",
+          "label": "Rita och dela planer",
+          "slug": "rita-och-dela-planer-WlqKBF7FKe"
+        },
+        {
+          "type": "doc",
+          "id": "tidslinjevy-mXMCZ7CwsA",
+          "label": "Tidslinjevy",
+          "slug": "tidslinjevy-mXMCZ7CwsA"
+        },
+        {
+          "type": "doc",
+          "id": "rita-figurer-och-grafik-ZwcLI2SNBB",
+          "label": "Rita figurer och grafik",
+          "slug": "rita-figurer-och-grafik-ZwcLI2SNBB"
+        },
+        {
+          "type": "doc",
+          "id": "atak-geofences-avancerade-funktioner-qCwlfoPPsc",
+          "label": "ATAK - Geofences - Avancerade funktioner",
+          "slug": "atak-geofences-avancerade-funktioner-qCwlfoPPsc"
+        },
+        {
+          "type": "doc",
+          "id": "lagg-till-i-flode-med-lasso-wA9WruroCt",
+          "label": "Lägg till i flöde med Lasso",
+          "slug": "lagg-till-i-flode-med-lasso-wA9WruroCt"
+        },
+        {
+          "type": "doc",
+          "id": "overlay-manager-hantera-vyerna-AJGahEsnDr",
+          "label": "Overlay Manager - hantera vyerna",
+          "slug": "overlay-manager-hantera-vyerna-AJGahEsnDr"
+        },
+        {
+          "type": "doc",
+          "id": "skapa-rutter-och-anvand-vns-KURI7xcoXM",
+          "label": "Skapa rutter och använd VNS",
+          "slug": "skapa-rutter-och-anvand-vns-KURI7xcoXM"
+        },
+        {
+          "type": "doc",
+          "id": "ladda-ner-kartor-for-offline-anvandning-uKJz92KfHd",
+          "label": "Ladda ner kartor för offline-användning",
+          "slug": "ladda-ner-kartor-for-offline-anvandning-uKJz92KfHd"
+        },
+        {
+          "type": "doc",
+          "id": "hantera-atak-verktyg-och-verktygsfalt-vbXQ19z45z",
+          "label": "Hantera ATAK-verktyg och verktygsfält",
+          "slug": "hantera-atak-verktyg-och-verktygsfalt-vbXQ19z45z"
+        },
+        {
+          "type": "doc",
+          "id": "anpassa-markorer-och-ikoner-kfkJXTKO8b",
+          "label": "Anpassa markörer och ikoner",
+          "slug": "anpassa-markorer-och-ikoner-kfkJXTKO8b"
+        },
+        {
+          "type": "doc",
+          "id": "gor-en-casevac-9-line-rapport-gRMiZFjKj2",
+          "label": "Gör en CASEVAC 9-line-rapport",
+          "slug": "gor-en-casevac-9-line-rapport-gRMiZFjKj2"
+        },
+        {
+          "type": "doc",
+          "id": "hantera-kontakter-pclrRIp366",
+          "label": "Hantera kontakter",
+          "slug": "hantera-kontakter-pclrRIp366"
+        },
+        {
+          "type": "doc",
+          "id": "digital-pointer-0Wr9d9JlFL",
+          "label": "Digital Pointer",
+          "slug": "digital-pointer-0Wr9d9JlFL"
+        },
+        {
+          "type": "doc",
+          "id": "sand-nodlarm-cSlVtIcpdv",
+          "label": "Sänd nödlarm",
+          "slug": "sand-nodlarm-cSlVtIcpdv"
+        }
+      ]
+    },
+    {
+      "type": "toporg",
+      "id": "anvandning-efter-roll-0BrC67iYlV",
+      "label": "ANVÄNDNING EFTER ROLL",
+      "clientId": "atak-FSQuzFTpnF",
+      "children": [
+        {
+          "type": "doc",
+          "id": "oversikt-RdC8FOmUJv",
+          "label": "Översikt",
+          "slug": "oversikt-RdC8FOmUJv"
+        },
+        {
+          "type": "group",
+          "id": "stridande-6w3nAaoWke",
+          "label": "Stridande",
+          "clientId": "atak-FSQuzFTpnF",
+          "children": [
+            {
+              "type": "doc",
+              "id": "vad-du-far-och-skickar-8NvaGg4aKo",
+              "label": "Vad du får och skickar",
+              "slug": "vad-du-far-och-skickar-8NvaGg4aKo"
+            },
+            {
+              "type": "doc",
+              "id": "anvand-recon-flodet-MjbNU9jIF7",
+              "label": "Använd RECON-flödet",
+              "slug": "anvand-recon-flodet-MjbNU9jIF7"
+            },
+            {
+              "type": "doc",
+              "id": "anvand-geochat-for-kommunikation-HR8qIoirSR",
+              "label": "Använd Geochat för kommunikation",
+              "slug": "anvand-geochat-for-kommunikation-HR8qIoirSR"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "id": "kommandopost-eoSWDyLrcb",
+          "label": "Kommandopost",
+          "clientId": "atak-FSQuzFTpnF",
+          "children": [
+            {
+              "type": "doc",
+              "id": "hantering-av-recon-flodet-7quTutquFB",
+              "label": "Hantering av RECON-flödet",
+              "slug": "hantering-av-recon-flodet-7quTutquFB"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "toporg",
+      "id": "ytterligare-funktioner-2jyiSD8zZy",
+      "label": "YTTERLIGARE FUNKTIONER",
+      "clientId": "atak-FSQuzFTpnF",
+      "children": [
+        {
+          "type": "group",
+          "id": "navigering-och-koordinater-Sthq0qC4Gj",
+          "label": "Navigering och koordinater",
+          "clientId": "atak-FSQuzFTpnF",
+          "children": [
+            {
+              "type": "doc",
+              "id": "ga-till-koordinater-go-to-yXumpULR0j",
+              "label": "Gå till koordinater",
+              "slug": "ga-till-koordinater-go-to-yXumpULR0j"
+            },
+            {
+              "type": "doc",
+              "id": "hamta-koordinater-med-center-designator-52VvAun2JK",
+              "label": "Hämta koordinater med Center Designator",
+              "slug": "hamta-koordinater-med-center-designator-52VvAun2JK"
+            },
+            {
+              "type": "doc",
+              "id": "navigera-en-rutt-NOneSaVoN3",
+              "label": "Navigera en rutt",
+              "slug": "navigera-en-rutt-NOneSaVoN3"
+            },
+            {
+              "type": "doc",
+              "id": "aterskarning-position-utan-gps-GjBCRY4gZj",
+              "label": "Återskärning",
+              "slug": "aterskarning-position-utan-gps-GjBCRY4gZj"
+            },
+            {
+              "type": "doc",
+              "id": "hamta-plats-med-red-x-Xs9y10bYwP",
+              "label": "Hämta plats med Red X",
+              "slug": "hamta-plats-med-red-x-Xs9y10bYwP"
+            },
+            {
+              "type": "doc",
+              "id": "indikatorer-for-markorer-utanfor-skarmen-74d7IKYhZz",
+              "label": "Indikatorer för markörer utanför skärmen",
+              "slug": "indikatorer-for-markorer-utanfor-skarmen-74d7IKYhZz"
+            },
+            {
+              "type": "doc",
+              "id": "hantera-positionskallor-bfhTDCM6Kg",
+              "label": "Hantera positionskällor",
+              "slug": "hantera-positionskallor-bfhTDCM6Kg"
+            },
+            {
+              "type": "doc",
+              "id": "spara-ett-mal-med-bloodhound-BsuEbHZ6jT",
+              "label": "Spåra ett mål med Bloodhound",
+              "slug": "spara-ett-mal-med-bloodhound-BsuEbHZ6jT"
+            },
+            {
+              "type": "doc",
+              "id": "spara-rorelse-gps-spar-bWXVbzW6gA",
+              "label": "Spåra rörelse",
+              "slug": "spara-rorelse-gps-spar-bWXVbzW6gA"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "id": "avstands-och-baringsverktyg-EQaCzjO3Tw",
+          "label": "Avstånds- och bäringsverktyg",
+          "clientId": "atak-FSQuzFTpnF",
+          "children": [
+            {
+              "type": "doc",
+              "id": "mat-avstand-och-baring-eegRo4EznT",
+              "label": "Mät avstånd och bäring",
+              "slug": "mat-avstand-och-baring-eegRo4EznT"
+            },
+            {
+              "type": "doc",
+              "id": "dynamiskt-avstand-och-baring-36cC0xw4Kn",
+              "label": "Dynamiskt avstånd och bäring",
+              "slug": "dynamiskt-avstand-och-baring-36cC0xw4Kn"
+            },
+            {
+              "type": "doc",
+              "id": "avstandsringar-och-bullseye-UbZpRppvDe",
+              "label": "Avståndsringar och bullseye",
+              "slug": "avstandsringar-och-bullseye-UbZpRppvDe"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "id": "hojd-terrang-och-kartverktyg-Lr5Wl8mZIt",
+          "label": "Höjd, terräng och kartverktyg",
+          "clientId": "atak-FSQuzFTpnF",
+          "children": [
+            {
+              "type": "doc",
+              "id": "anvand-3d-terrangvyn-Z4Tf8cVmbg",
+              "label": "Använd 3D-terrängvyn",
+              "slug": "anvand-3d-terrangvyn-Z4Tf8cVmbg"
+            },
+            {
+              "type": "doc",
+              "id": "lagg-till-3d-modeller-pa-kartan-RXNe4OasVf",
+              "label": "Lägg till 3D-modeller på kartan",
+              "slug": "lagg-till-3d-modeller-pa-kartan-RXNe4OasVf"
+            },
+            {
+              "type": "doc",
+              "id": "spana-med-first-person-view-LateYCOhY4",
+              "label": "Spana med First-Person View",
+              "slug": "spana-med-first-person-view-LateYCOhY4"
+            },
+            {
+              "type": "doc",
+              "id": "hojd-och-siktverktyg-i9f2Drimqi",
+              "label": "Höjd- och siktverktyg",
+              "slug": "hojd-och-siktverktyg-i9f2Drimqi"
+            },
+            {
+              "type": "doc",
+              "id": "hantera-hojddatakallor-NcbELJNAnv",
+              "label": "Hantera höjddatakällor",
+              "slug": "hantera-hojddatakallor-NcbELJNAnv"
+            },
+            {
+              "type": "doc",
+              "id": "georeferera-en-bild-rubber-sheet-WijOqzcbZT",
+              "label": "Georeferera en bild",
+              "slug": "georeferera-en-bild-rubber-sheet-WijOqzcbZT"
+            },
+            {
+              "type": "doc",
+              "id": "importera-filer-och-fjarresurser-RIt6IYBJfn",
+              "label": "Importera filer och fjärresurser",
+              "slug": "importera-filer-och-fjarresurser-RIt6IYBJfn"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "id": "video-i-atak-2uLwdv55nS",
+          "label": "Video i ATAK",
+          "clientId": "atak-FSQuzFTpnF",
+          "children": [
+            {
+              "type": "doc",
+              "id": "spela-upp-och-fanga-video-2fFwRMj9g4",
+              "label": "Spela upp och fånga video",
+              "slug": "spela-upp-och-fanga-video-2fFwRMj9g4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "toporg",
+      "id": "tillagg-som-stods-qNTkFlOhAy",
+      "label": "TILLÄGG SOM STÖDS",
+      "clientId": "atak-FSQuzFTpnF",
+      "children": [
+        {
+          "type": "group",
+          "id": "uas-verktyg-Etk5q203aR",
+          "label": "UAS-verktyg",
+          "clientId": "atak-FSQuzFTpnF",
+          "children": [
+            {
+              "type": "doc",
+              "id": "installera-uas-tool-plugin-VxIbbgH2nd",
+              "label": "Installera UAS Tool-plugin",
+              "slug": "installera-uas-tool-plugin-VxIbbgH2nd"
+            },
+            {
+              "type": "doc",
+              "id": "anslut-uas-tool-automatiskt-till-mediamtx-HeWL5goTM5",
+              "label": "Anslut UAS Tool automatiskt till MediaMTX",
+              "slug": "anslut-uas-tool-automatiskt-till-mediamtx-HeWL5goTM5"
+            },
+            {
+              "type": "doc",
+              "id": "oppna-uas-verktyget-och-las-telemetri-wdcDijyRka",
+              "label": "Öppna UAS-verktyget och läs telemetri",
+              "slug": "oppna-uas-verktyget-och-las-telemetri-wdcDijyRka"
+            },
+            {
+              "type": "doc",
+              "id": "titta-pa-och-styr-dronarens-kamera-cazTd6XReH",
+              "label": "Titta på och styr dronarens kamera",
+              "slug": "titta-pa-och-styr-dronarens-kamera-cazTd6XReH"
+            },
+            {
+              "type": "doc",
+              "id": "fanga-och-sand-dronarvideo-81f1fTM3IL",
+              "label": "Fånga och sänd dronarvideo",
+              "slug": "fanga-och-sand-dronarvideo-81f1fTM3IL"
+            },
+            {
+              "type": "doc",
+              "id": "skicka-dronaren-till-en-plats-mPUY0sUiR3",
+              "label": "Skicka drönaren till en plats",
+              "slug": "skicka-dronaren-till-en-plats-mPUY0sUiR3"
+            },
+            {
+              "type": "doc",
+              "id": "planera-dronaruppdrag-fOPXznHLwt",
+              "label": "Planera drönaruppdrag",
+              "slug": "planera-dronaruppdrag-fOPXznHLwt"
+            },
+            {
+              "type": "doc",
+              "id": "starta-stoppa-och-hamta-hem-dronaren-5IlxUaDKae",
+              "label": "Starta, stoppa och hämta hem drönaren",
+              "slug": "starta-stoppa-och-hamta-hem-dronaren-5IlxUaDKae"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "id": "grg-byggare-6p77tJHRnU",
+          "label": "GRG-byggare",
+          "clientId": "atak-FSQuzFTpnF",
+          "children": [
+            {
+              "type": "doc",
+              "id": "skapa-ett-rutnat-grg-builder-n8gH3EgojQ",
+              "label": "Skapa ett rutnät",
+              "slug": "skapa-ett-rutnat-grg-builder-n8gH3EgojQ"
+            },
+            {
+              "type": "doc",
+              "id": "mark-och-formatera-ett-rutnat-YcEKrvC397",
+              "label": "Märk och formatera ett rutnät",
+              "slug": "mark-och-formatera-ett-rutnat-YcEKrvC397"
+            },
+            {
+              "type": "doc",
+              "id": "exportera-ett-rutnat-grg-builder-NhQ9Zf06Wn",
+              "label": "Exportera ett rutnät",
+              "slug": "exportera-ett-rutnat-grg-builder-NhQ9Zf06Wn"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "id": "rapporter-6mfsOlekKd",
+          "label": "Rapporter",
+          "clientId": "atak-FSQuzFTpnF",
+          "children": [
+            {
+              "type": "doc",
+              "id": "skapa-en-rapport-YpiHRTtIiL",
+              "label": "Skapa en rapport",
+              "slug": "skapa-en-rapport-YpiHRTtIiL"
+            },
+            {
+              "type": "doc",
+              "id": "spara-skicka-och-dela-en-rapport-gU4Iv71nZV",
+              "label": "Spara, skicka och dela en rapport",
+              "slug": "spara-skicka-och-dela-en-rapport-gU4Iv71nZV"
+            },
+            {
+              "type": "doc",
+              "id": "hitta-rapporter-pa-servern-Nt8T6THdnt",
+              "label": "Hitta rapporter på servern",
+              "slug": "hitta-rapporter-pa-servern-Nt8T6THdnt"
+            },
+            {
+              "type": "doc",
+              "id": "bygg-en-anpassad-rapportmall-KwWEl4FT0Z",
+              "label": "Bygg en anpassad rapportmall",
+              "slug": "bygg-en-anpassad-rapportmall-KwWEl4FT0Z"
+            },
+            {
+              "type": "doc",
+              "id": "konfigurera-rapportinstallningar-SdPkG0kE3I",
+              "label": "Konfigurera rapportinställningar",
+              "slug": "konfigurera-rapportinstallningar-SdPkG0kE3I"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "id": "anslut-radio-med-hammer-cctXvarhS1",
+          "label": "Anslut radio med HAMMER",
+          "clientId": "atak-FSQuzFTpnF",
+          "children": [
+            {
+              "type": "doc",
+              "id": "anslut-till-prc-152-rover-radio-cMfvASinoQ",
+              "label": "Anslut till PRC-152- / Rover-radio",
+              "slug": "anslut-till-prc-152-rover-radio-cMfvASinoQ"
+            },
+            {
+              "type": "doc",
+              "id": "konfigurera-krypterad-mesh-kommunikation-UBh0LRJGg5",
+              "label": "Konfigurera krypterad mesh-kommunikation",
+              "slug": "konfigurera-krypterad-mesh-kommunikation-UBh0LRJGg5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "atak-FSQuzFTpnF",
+      "label": "ATAK",
+      "clientId": "atak-FSQuzFTpnF",
+      "children": [
+        {
+          "type": "doc",
+          "id": "felsokning-6aAV1qqTyn",
+          "label": "Felsökning",
+          "slug": "felsokning-6aAV1qqTyn"
+        }
+      ]
+    },
+    {
+      "type": "toporg",
+      "id": "starta-och-anslut-37CazxgkWa",
+      "label": "STARTA OCH ANSLUT",
+      "clientId": "wintak-hFAHKHVsGW",
+      "children": [
+        {
+          "type": "doc",
+          "id": "stall-in-sprak-och-lokalisering-for-wintak-20Oabj2Esq",
+          "label": "Ställ in språk och lokalisering för WinTAK",
+          "slug": "stall-in-sprak-och-lokalisering-for-wintak-20Oabj2Esq"
+        },
+        {
+          "type": "doc",
+          "id": "ladda-ner-och-installera-wintak-hTsXUKMaCS",
+          "label": "Ladda ner och installera WinTAK",
+          "slug": "ladda-ner-och-installera-wintak-hTsXUKMaCS"
+        },
+        {
+          "type": "doc",
+          "id": "importera-client-package-till-wintak-LKNdCcucrD",
+          "label": "Importera Client Package till WinTAK",
+          "slug": "importera-client-package-till-wintak-LKNdCcucrD"
+        },
+        {
+          "type": "doc",
+          "id": "ladda-tillagg-och-slutfor-installationen-q0zNv80GFR",
+          "label": "Ladda tillägg och slutför installationen",
+          "slug": "ladda-tillagg-och-slutfor-installationen-q0zNv80GFR"
+        }
+      ]
+    },
+    {
+      "type": "toporg",
+      "id": "grundlaggande-karnfunktioner-hgekCtcvVV",
+      "label": "GRUNDLÄGGANDE KÄRNFUNKTIONER",
+      "clientId": "wintak-hFAHKHVsGW",
+      "children": [
+        {
+          "type": "doc",
+          "id": "ange-din-egen-position-V1XPioLt64",
+          "label": "Ange din egen position",
+          "slug": "ange-din-egen-position-V1XPioLt64"
+        },
+        {
+          "type": "doc",
+          "id": "sparning-av-egna-styrkor-bRtgJ9hDGR",
+          "label": "Spårning av egna styrkor",
+          "slug": "sparning-av-egna-styrkor-bRtgJ9hDGR"
+        },
+        {
+          "type": "doc",
+          "id": "data-sync-d2tAXDXHwO",
+          "label": "Data Sync",
+          "slug": "data-sync-d2tAXDXHwO"
+        },
+        {
+          "type": "doc",
+          "id": "point-dropper-lagg-till-markorer-scEnZfp72C",
+          "label": "Point Dropper - lägg till markörer",
+          "slug": "point-dropper-lagg-till-markorer-scEnZfp72C"
+        },
+        {
+          "type": "doc",
+          "id": "anvand-geochat-D5tfU0DNdl",
+          "label": "Använd GeoChat",
+          "slug": "anvand-geochat-D5tfU0DNdl"
+        },
+        {
+          "type": "doc",
+          "id": "hantering-av-wintak-tillagg-9iOqPxCmwd",
+          "label": "Hantering av WinTAK-tillägg",
+          "slug": "hantering-av-wintak-tillagg-9iOqPxCmwd"
+        },
+        {
+          "type": "doc",
+          "id": "rensa-innehall-ELxCoba17F",
+          "label": "Rensa innehåll",
+          "slug": "rensa-innehall-ELxCoba17F"
+        }
+      ]
+    },
+    {
+      "type": "toporg",
+      "id": "avancerade-karnfunktioner-XEJHYDDYvW",
+      "label": "AVANCERADE KÄRNFUNKTIONER",
+      "clientId": "wintak-hFAHKHVsGW",
+      "children": [
+        {
+          "type": "doc",
+          "id": "skapa-floden-12E0nv0B4a",
+          "label": "Skapa flöden",
+          "slug": "skapa-floden-12E0nv0B4a"
+        },
+        {
+          "type": "doc",
+          "id": "hantera-floden-Qyvi9XK881",
+          "label": "Hantera flöden",
+          "slug": "hantera-floden-Qyvi9XK881"
+        },
+        {
+          "type": "doc",
+          "id": "rita-och-dela-planer-C7UNuLt8oq",
+          "label": "Rita och dela planer",
+          "slug": "rita-och-dela-planer-C7UNuLt8oq"
+        },
+        {
+          "type": "doc",
+          "id": "fa-varningar-med-geostangsel-YvTX3n2Ucj",
+          "label": "Få varningar med geostängsel",
+          "slug": "fa-varningar-med-geostangsel-YvTX3n2Ucj"
+        }
+      ]
+    },
+    {
+      "type": "toporg",
+      "id": "anvandning-enligt-roll-UKkZd4qqVu",
+      "label": "ANVÄNDNING ENLIGT ROLL",
+      "clientId": "wintak-hFAHKHVsGW",
+      "children": [
+        {
+          "type": "doc",
+          "id": "opendefence-standardmodellen-Rlu6i4aeXg",
+          "label": "OpenDefence-standardmodellen",
+          "slug": "opendefence-standardmodellen-Rlu6i4aeXg"
+        },
+        {
+          "type": "doc",
+          "id": "soldat-UXKA1Unk59",
+          "label": "Soldat",
+          "slug": "soldat-UXKA1Unk59"
+        },
+        {
+          "type": "group",
+          "id": "kommandoplats-TI7jE0Zq8b",
+          "label": "Kommandoplats",
+          "clientId": "wintak-hFAHKHVsGW",
+          "children": [
+            {
+              "type": "doc",
+              "id": "producera-recon-flode-azFNrXh6Wi",
+              "label": "Producera RECON-flöde",
+              "slug": "producera-recon-flode-azFNrXh6Wi"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "toporg",
+      "id": "plugin-program-som-stods-Zc12eFPsbD",
+      "label": "Plugin-program som stöds",
+      "clientId": "wintak-hFAHKHVsGW",
+      "children": [
+        {
+          "type": "group",
+          "id": "tak-replay-SkNdLzBFi9",
+          "label": "TAK Replay",
+          "clientId": "wintak-hFAHKHVsGW",
+          "children": [
+            {
+              "type": "doc",
+              "id": "spela-in-handelser-ByDTrXbank",
+              "label": "Spela in händelser",
+              "slug": "spela-in-handelser-ByDTrXbank"
+            },
+            {
+              "type": "doc",
+              "id": "spela-upp-en-inspelning-MxUtx9oUiU",
+              "label": "Spela upp en inspelning",
+              "slug": "spela-upp-en-inspelning-MxUtx9oUiU"
+            },
+            {
+              "type": "doc",
+              "id": "exportera-ladda-ner-och-hantera-FzlSjRgi1p",
+              "label": "Exportera, ladda ner och hantera",
+              "slug": "exportera-ladda-ner-och-hantera-FzlSjRgi1p"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "id": "grg-builder-D4Ny5b82F2",
+          "label": "GRG Builder",
+          "clientId": "wintak-hFAHKHVsGW",
+          "children": [
+            {
+              "type": "doc",
+              "id": "skapa-och-redigera-en-grg-rDfydLOMtb",
+              "label": "Skapa och redigera en GRG",
+              "slug": "skapa-och-redigera-en-grg-rDfydLOMtb"
+            },
+            {
+              "type": "doc",
+              "id": "lagg-till-funktioner-och-markorer-BLXzkd3BHF",
+              "label": "Lägg till funktioner och markörer",
+              "slug": "lagg-till-funktioner-och-markorer-BLXzkd3BHF"
+            },
+            {
+              "type": "doc",
+              "id": "exportera-och-dela-en-grg-nNP5db39f3",
+              "label": "Exportera och dela en GRG",
+              "slug": "exportera-och-dela-en-grg-nNP5db39f3"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "id": "rapporter-Z4mAym2v1S",
+          "label": "Rapporter",
+          "clientId": "wintak-hFAHKHVsGW",
+          "children": [
+            {
+              "type": "doc",
+              "id": "skapa-en-rapport-YA4jfgqpea",
+              "label": "Skapa en rapport",
+              "slug": "skapa-en-rapport-YA4jfgqpea"
+            },
+            {
+              "type": "doc",
+              "id": "bladdra-i-rapportdatabasen-qj3OotLB4i",
+              "label": "Bläddra i rapportdatabasen",
+              "slug": "bladdra-i-rapportdatabasen-qj3OotLB4i"
+            },
+            {
+              "type": "doc",
+              "id": "anpassade-rapportmallar-BetIS5kccv",
+              "label": "Anpassade rapportmallar",
+              "slug": "anpassade-rapportmallar-BetIS5kccv"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "id": "vns-fordonsnavigeringssystem-fgmWSrBGOI",
+          "label": "VNS - Fordonsnavigeringssystem",
+          "clientId": "wintak-hFAHKHVsGW",
+          "children": [
+            {
+              "type": "doc",
+              "id": "skapa-en-vns-rutt-B6iV1MgGN7",
+              "label": "Skapa en VNS-rutt",
+              "slug": "skapa-en-vns-rutt-B6iV1MgGN7"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "wintak-hFAHKHVsGW",
+      "label": "WinTAK",
+      "clientId": "wintak-hFAHKHVsGW",
+      "children": [
+        {
+          "type": "doc",
+          "id": "felsokning-FGKrOPGWwr",
+          "label": "Felsökning",
+          "slug": "felsokning-FGKrOPGWwr"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "start-KwmezzKrdE",
+      "label": "Start",
+      "clientId": "itak-Ic4xJNBg1l",
+      "children": [
+        {
+          "type": "doc",
+          "id": "borja-fran-nedladdning-TsV7d2JP5F",
+          "label": "Börja från nedladdning",
+          "slug": "borja-fran-nedladdning-TsV7d2JP5F"
+        },
+        {
+          "type": "doc",
+          "id": "itak-redan-installerat-HPGjec95O1",
+          "label": "iTAK redan installerat",
+          "slug": "itak-redan-installerat-HPGjec95O1"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "grundfunktioner-PrjaQuQBVq",
+      "label": "Grundfunktioner",
+      "clientId": "itak-Ic4xJNBg1l",
+      "children": [
+        {
+          "type": "doc",
+          "id": "sparning-av-egna-styrkor-pi3AVYT4mX",
+          "label": "Spårning av egna styrkor",
+          "slug": "sparning-av-egna-styrkor-pi3AVYT4mX"
+        },
+        {
+          "type": "doc",
+          "id": "datasynkronisering-sfvICpIRhr",
+          "label": "Datasynkronisering",
+          "slug": "datasynkronisering-sfvICpIRhr"
+        },
+        {
+          "type": "doc",
+          "id": "skapa-symboler-och-snabbilder-I7NbGCaG2R",
+          "label": "Skapa symboler och snabbilder",
+          "slug": "skapa-symboler-och-snabbilder-I7NbGCaG2R"
+        },
+        {
+          "type": "doc",
+          "id": "anvand-geochat-3YfBvaPUdo",
+          "label": "Använd GeoChat",
+          "slug": "anvand-geochat-3YfBvaPUdo"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "anvandning-efter-roll-IJYD3a1A1k",
+      "label": "Användning efter roll",
+      "clientId": "itak-Ic4xJNBg1l",
+      "children": [
+        {
+          "type": "doc",
+          "id": "oversikt-nzDS5OWw0k",
+          "label": "Översikt",
+          "slug": "oversikt-nzDS5OWw0k"
+        },
+        {
+          "type": "doc",
+          "id": "soldat-zS7E1xGRtx",
+          "label": "Soldat",
+          "slug": "soldat-zS7E1xGRtx"
+        },
+        {
+          "type": "doc",
+          "id": "kommandoplats-nXnVNhBp5i",
+          "label": "Kommandoplats",
+          "slug": "kommandoplats-nXnVNhBp5i"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "itak-Ic4xJNBg1l",
+      "label": "iTAK",
+      "clientId": "itak-Ic4xJNBg1l",
+      "children": [
+        {
+          "type": "doc",
+          "id": "felsokning-hCbMpa5tPi",
+          "label": "Felsökning",
+          "slug": "felsokning-hCbMpa5tPi"
+        }
+      ]
+    },
+    {
+      "type": "toporg",
+      "id": "starta-och-anslut-o8Z7FCd6i9",
+      "label": "STARTA OCH ANSLUT",
+      "clientId": "tak-tracker-android-ZmUQV0eZYK",
+      "children": [
+        {
+          "type": "doc",
+          "id": "borja-fran-nedladdning-I073Y0t0UQ",
+          "label": "Börja från nedladdning",
+          "slug": "borja-fran-nedladdning-I073Y0t0UQ"
+        },
+        {
+          "type": "doc",
+          "id": "tak-tracker-redan-installerad-hDp4E0FkY6",
+          "label": "TAK Tracker redan installerad",
+          "slug": "tak-tracker-redan-installerad-hDp4E0FkY6"
+        },
+        {
+          "type": "doc",
+          "id": "importera-serveranslutning-yxBJHAG8As",
+          "label": "Importera serveranslutning",
+          "slug": "importera-serveranslutning-yxBJHAG8As"
+        }
+      ]
+    },
+    {
+      "type": "toporg",
+      "id": "grundfunktioner-H4SVkbafub",
+      "label": "GRUNDFUNKTIONER",
+      "clientId": "tak-tracker-android-ZmUQV0eZYK",
+      "children": [
+        {
+          "type": "doc",
+          "id": "las-av-din-status-och-position-Vl9DXPZ7S8",
+          "label": "Läs av din status och position",
+          "slug": "las-av-din-status-och-position-Vl9DXPZ7S8"
+        },
+        {
+          "type": "doc",
+          "id": "skicka-en-nodsignal-P8pYX5tKLu",
+          "label": "Skicka en nödsignal",
+          "slug": "skicka-en-nodsignal-P8pYX5tKLu"
+        },
+        {
+          "type": "doc",
+          "id": "chatta-med-ditt-team-xB04rNQEjp",
+          "label": "Chatta med ditt team",
+          "slug": "chatta-med-ditt-team-xB04rNQEjp"
+        }
+      ]
+    },
+    {
+      "type": "toporg",
+      "id": "avancerade-funktioner-KMfa0DzejP",
+      "label": "AVANCERADE FUNKTIONER",
+      "clientId": "tak-tracker-android-ZmUQV0eZYK",
+      "children": [
+        {
+          "type": "doc",
+          "id": "alternativ-och-installningar-0TFdbCddgQ",
+          "label": "Alternativ och inställningar",
+          "slug": "alternativ-och-installningar-0TFdbCddgQ"
+        }
+      ]
+    },
+    {
+      "type": "toporg",
+      "id": "anvandning-per-roll-xsjXHh4sak",
+      "label": "ANVÄNDNING PER ROLL",
+      "clientId": "tak-tracker-android-ZmUQV0eZYK",
+      "children": [
+        {
+          "type": "doc",
+          "id": "oversikt-WnJ9NYZa3M",
+          "label": "Översikt",
+          "slug": "oversikt-WnJ9NYZa3M"
+        },
+        {
+          "type": "doc",
+          "id": "soldat-Mq5QiVrMr1",
+          "label": "Soldat",
+          "slug": "soldat-Mq5QiVrMr1"
+        },
+        {
+          "type": "doc",
+          "id": "kommandoplats-NyhTmwJFEe",
+          "label": "Kommandoplats",
+          "slug": "kommandoplats-NyhTmwJFEe"
+        }
+      ]
+    },
+    {
+      "type": "toporg",
+      "id": "kom-igang-och-anslut-ip0DOpuzex",
+      "label": "KOM IGÅNG OCH ANSLUT",
+      "clientId": "tak-tracker-apple-RIzneI62k8",
+      "children": [
+        {
+          "type": "doc",
+          "id": "borja-med-nedladdning-syCbgRYiOo",
+          "label": "Börja med nedladdning",
+          "slug": "borja-med-nedladdning-syCbgRYiOo"
+        },
+        {
+          "type": "doc",
+          "id": "tak-tracker-redan-installerad-b0bOMabOne",
+          "label": "TAK Tracker redan installerad",
+          "slug": "tak-tracker-redan-installerad-b0bOMabOne"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "tak-funktioner-j5H0xYZtp5",
+      "label": "TAK-funktioner",
+      "clientId": "tak-tracker-apple-RIzneI62k8",
+      "children": [
+        {
+          "type": "doc",
+          "id": "skicka-varningar-7EOgWJupXv",
+          "label": "Skicka varningar",
+          "slug": "skicka-varningar-7EOgWJupXv"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "anvandning-efter-roll-hDH9aJKX0o",
+      "label": "Användning efter roll",
+      "clientId": "tak-tracker-apple-RIzneI62k8",
+      "children": [
+        {
+          "type": "doc",
+          "id": "oversikt-IAwj5j49ia",
+          "label": "Översikt",
+          "slug": "oversikt-IAwj5j49ia"
+        },
+        {
+          "type": "doc",
+          "id": "soldat-4gafoPRROP",
+          "label": "Soldat",
+          "slug": "soldat-4gafoPRROP"
+        },
+        {
+          "type": "doc",
+          "id": "ledningsplats-uoVsr9jP0D",
+          "label": "Ledningsplats",
+          "slug": "ledningsplats-uoVsr9jP0D"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "tak-tracker-apple-RIzneI62k8",
+      "label": "TAK Tracker - Apple",
+      "clientId": "tak-tracker-apple-RIzneI62k8",
+      "children": [
+        {
+          "type": "doc",
+          "id": "felsokning-4GY9QUGGmF",
+          "label": "Felsökning",
+          "slug": "felsokning-4GY9QUGGmF"
+        }
+      ]
+    }
+  ]
 }

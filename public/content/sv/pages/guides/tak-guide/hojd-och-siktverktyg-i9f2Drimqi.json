@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "id": "4fac3b18-ffc5-4182-86e2-e52088563d86",
+  "slug": "hojd-och-siktverktyg-i9f2Drimqi",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Höjd- och siktverktyg",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "YTTERLIGARE FUNKTIONER",
+    "Höjd, terräng och kartverktyg",
+    "Höjd- och siktverktyg"
+  ],
+  "createdAt": "2026-06-18T19:29:24.631Z",
+  "updatedAt": "2026-06-18T20:21:24.622Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/elevation-viewshed-tools-Vqje1Ybg0d",
+    "fi": "/fi/guides/tak-guide/korkeus-ja-nakyvyystyokalut-K38iegcAlI",
+    "sv": "/sv/guides/tak-guide/hojd-och-siktverktyg-i9f2Drimqi"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Läs terrängen innan du förflyttar dig: skugga terrängen efter höjd eller lutning, kontrollera vad en position faktiskt kan se och lägg ut höjdkurvor. Kräver att höjddata (DTED, SRTM eller liknande) är inläst.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Skugga terrängen efter höjd",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på ikonen <strong>Elevation Tools</strong> och bocka sedan för <strong>Show</strong> på fliken <strong>Heatmap</strong>.</p>\n<ul>\n<li>Låg terräng visas blå, hög terräng röd.</li>\n<li>Justera <strong>Intensity</strong>, <strong>Saturation</strong> och <strong>Value</strong> efter behag.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/e07bd0af70135334.webp",
+              "width": 497,
+              "height": 226
+            }
+          ]
+        },
+        {
+          "title": "Se den branta terrängen",
+          "layout": "image-bottom",
+          "html": "<p>Byt valet i rutan <strong>Heatmap</strong> till <strong>Terrain Slope</strong>.</p>\n<ul>\n<li>Svaga lutningar visas gula, brant terräng visas svart.</li>\n<li>Dra i <strong>Intensity</strong> för att göra det tydligare.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/a9beadee890172dc.webp",
+              "width": 496,
+              "height": 225
+            }
+          ]
+        },
+        {
+          "title": "Lägg ut en siktlinjeszon",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på <strong>Place Viewshed</strong> (ögat) på fliken <strong>Viewshed</strong> och tryck sedan på en plats eller markör.</p>\n<ul>\n<li>Grönt = synligt därifrån, rött = skymt.</li>\n<li>Zooma in om bara ögonikonen visas.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/1207561beb07e562.webp",
+              "width": 207,
+              "height": 420
+            }
+          ]
+        },
+        {
+          "title": "Justera vad den kan se",
+          "layout": "image-bottom",
+          "html": "<p>Ställ in <strong>Height Above marker</strong> och <strong>Radius</strong> för positionen.</p>\n<ul>\n<li>Växla <strong>Source</strong> mellan Terrain och Surface och använd skjutreglagen <strong>Seen</strong> / <strong>Unseen</strong> för att tona ner respektive område.</li>\n<li><strong>Remove Viewshed</strong> tar bort den.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/1207561beb07e562.webp",
+              "width": 207,
+              "height": 420
+            }
+          ]
+        },
+        {
+          "title": "Lägg ut höjdkurvor",
+          "layout": "image-bottom",
+          "html": "<p>Ställ in <strong>Interval</strong> och enheter (m eller ft) på fliken <strong>Contour</strong> och tryck sedan på <strong>Generate</strong> när du har zoomat till en användbar skala.</p>\n<ul>\n<li>Växla <strong>Lines</strong> och <strong>Minor Lines</strong> på och av med deras <strong>SHOW</strong>-knappar.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/1ac7bc7784ccc351.webp",
+              "width": 517,
+              "height": 299
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "id": "cd985fe6-b37c-4259-9a50-9052b1803b06",
+  "slug": "siirry-koordinaatteihin-go-to-x2wAmIQ8Sd",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Siirry koordinaatteihin (Go To)",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "LISÄOMINAISUUDET",
+    "Navigointi ja koordinaatit",
+    "Siirry koordinaatteihin (Go To)"
+  ],
+  "createdAt": "2026-06-18T19:28:18.433Z",
+  "updatedAt": "2026-06-18T20:19:00.063Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/go-to-coordinates-x7AdN7ZMgn",
+    "fi": "/fi/guides/tak-guide/siirry-koordinaatteihin-go-to-x2wAmIQ8Sd",
+    "sv": "/sv/guides/tak-guide/ga-till-koordinater-go-to-yXumpULR0j"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Siirrä kartta suoraan koordinaattiin, lat-lon-pisteeseen tai katuosoitteeseen - ja pudota siihen tarvittaessa merkki.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Avaa Go To ja valitse muoto",
+          "layout": "image-bottom",
+          "html": "<p>Valitse <strong>Go To</strong> -kuvake.</p>\n<ul>\n<li>Valitse muotovälilehti: <strong>MGRS</strong> (koordinaatisto), <strong>DD</strong> / <strong>DM</strong> / <strong>DMS</strong> (lat-lon), <strong>UTM</strong> tai <strong>ADDR</strong> (osoite).</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/cde56dc1fb341efa.webp",
+              "width": 249,
+              "height": 162
+            }
+          ]
+        },
+        {
+          "title": "Syötä koordinaatit",
+          "layout": "image-bottom",
+          "html": "<p>Kirjoita sijainti kenttiin. Napauta <strong>Cycle</strong> yhdistääksesi Easting/Northing yhteen kenttään ja sitten koko koordinaatin yhteen suureen kenttään nopeaa syöttöä varten.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/457be0f5970b3ee9.webp",
+              "width": 224,
+              "height": 57
+            }
+          ]
+        },
+        {
+          "title": "Aseta korkeus",
+          "layout": "image-bottom",
+          "html": "<p>Syötä korkeus sille varattuun tilaan tai napauta <strong>Pull Elevation</strong> täyttääksesi sen kartan korkeuslähteestä, jos sellainen on ladattu.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/cde56dc1fb341efa.webp",
+              "width": 249,
+              "height": 162
+            }
+          ]
+        },
+        {
+          "title": "Siirry osoitteeseen",
+          "layout": "image-bottom",
+          "html": "<p>Kirjoita <strong>ADDR</strong>-välilehdellä osoite ja napauta <strong>Find</strong>. Se pudottaa merkin tai panoroi kartan siihen kohtaan. Rastita <strong>Set the address as the title</strong>, jos haluat käyttää osoitetta merkin nimenä.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/b6d2f7ab5a39c7d7.webp",
+              "width": 336,
+              "height": 45
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

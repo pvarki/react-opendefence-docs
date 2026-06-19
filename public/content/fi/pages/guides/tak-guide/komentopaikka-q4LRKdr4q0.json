@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "162e90de-5073-4a4f-9bce-c828289a5d7a",
+  "slug": "komentopaikka-q4LRKdr4q0",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Komentopaikka",
+  "breadcrumb": [
+    "Platforms",
+    "TAK Tracker - Apple",
+    "Käyttö roolin mukaan",
+    "Komentopaikka"
+  ],
+  "createdAt": "2026-06-18T19:45:52.437Z",
+  "updatedAt": "2026-06-18T20:27:46.434Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/command-post-aX04WiqaZf",
+    "fi": "/fi/guides/tak-guide/komentopaikka-q4LRKdr4q0",
+    "sv": "/sv/guides/tak-guide/ledningsplats-uoVsr9jP0D"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>(Tätä välilehteä ei pitäisi näyttää)</p>"
+    }
+  ]
+}

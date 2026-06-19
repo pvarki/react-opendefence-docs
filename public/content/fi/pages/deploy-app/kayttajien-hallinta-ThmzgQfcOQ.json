@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "400cc76d-3f55-4c04-8006-86e367e83b8f",
+  "slug": "kayttajien-hallinta-ThmzgQfcOQ",
+  "collection": "deploy-app",
+  "locale": "fi",
+  "title": "Käyttäjien hallinta",
+  "breadcrumb": [
+    "Platforms",
+    "iOS",
+    "Ylläpitäjäohjeet",
+    "Käyttäjien hallinta"
+  ],
+  "createdAt": "2026-06-18T20:35:44.442Z",
+  "updatedAt": "2026-06-18T20:39:04.127Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/deploy-app/managing-users-nWgFG3XzMv",
+    "fi": "/fi/deploy-app/kayttajien-hallinta-ThmzgQfcOQ",
+    "sv": "/sv/deploy-app/hantera-anvandare-l24qOTAPIQ"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Käyttäjien hallinta",
+          "layout": "image-left",
+          "html": "<p>Tällä hetkellä voit hallita käyttäjän käyttöoikeustasoa ja poistaa hänet Deploy App -sovelluksesta ja kaikista palveluista.</p>\n<ul>\n<li>Käyttäjien hallintaan pääsee sivupalkista.</li>\n<li>Valitse \"Manage Users\".</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/408823f815c4d338.webp",
+              "width": 2560,
+              "height": 5712
+            }
+          ]
+        },
+        {
+          "title": "Käyttäjien hallinta",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Käyttäjää napsauttamalla avautuvat käytettävissä olevat toiminnot.</li>\n<li>Toiminnot riippuvat käyttäjän nykyisestä roolista (admin / fighter).</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/852167e2ab81088f.webp",
+              "width": 2560,
+              "height": 5712
+            }
+          ]
+        },
+        {
+          "title": "Toiminnot",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Fighter-käyttäjät voidaan poistaa tai ylentää \"admin\"-rooliin.</li>\n<li>Admin-käyttäjät voidaan poistaa tai alentaa \"fighter\"-rooliin.\nKäyttäjäryhmien hallinta on tulossa oleva ominaisuus. Tällä hetkellä, jos tiedät mitä teet, voit muokata niitä seuraavaksi käsiteltävän Keycloak-käyttöliittymän kautta.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/a03b290d698f994c.webp",
+              "width": 2560,
+              "height": 5712
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

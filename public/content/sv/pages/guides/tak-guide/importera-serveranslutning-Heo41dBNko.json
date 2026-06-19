@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 1,
+  "id": "d67c228d-562b-4ff9-97d0-790b8ce1dda6",
+  "slug": "importera-serveranslutning-Heo41dBNko",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Importera serveranslutning",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "STARTA OCH ANSLUT",
+    "Importera serveranslutning"
+  ],
+  "createdAt": "2026-06-18T19:25:12.071Z",
+  "updatedAt": "2026-06-18T20:13:39.269Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/importing-server-connection-PQ4dCV2SYR",
+    "fi": "/fi/guides/tak-guide/palvelinyhteyden-tuonti-orW4BArnHi",
+    "sv": "/sv/guides/tak-guide/importera-serveranslutning-Heo41dBNko"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Anslut till nätet",
+          "layout": "text",
+          "html": "<ul>\n<li>Med Deploy App kan du använda <strong>'Auto Import Connection'</strong> från Deploy Apps TAK-sida för att ansluta till servern.</li>\n<li>Med den här anslutningsmetoden får du grön anslutning med två tryck.</li>\n<li>Från Deploy App kan du även ladda ner klientens konfigurationspaket.\nDen här guiden tar endast upp det snabba sättet, eftersom du med ATAK och Deploy App inte behöver hantera klient-zippar, lösenord och liknande för hand.</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "1. Öppna Deploy App - TAK",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Tryck på <strong>TAK->Launch</strong> i Deploy App.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/c5aa5935ab7bc584.webp",
+              "width": 1080,
+              "height": 2340
+            }
+          ]
+        },
+        {
+          "title": "2. Tryck på Auto Import-paketet",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Tryck sedan på <strong>ATAK: Auto import package.</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/ff6080f3b330fd56.webp",
+              "width": 1080,
+              "height": 2340
+            }
+          ]
+        },
+        {
+          "title": "3. ATAK Auto-Import",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Auto-Import-knappen ber om att få öppna din ATAK-app och automatiskt importera ett serverkonfigurationspaket till den.</li>\n<li>Tryck på knappen <strong>Open ATAK and connect to server</strong> för att göra det.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/2eb1508d89ef7f24.webp",
+              "width": 1080,
+              "height": 2340
+            }
+          ]
+        },
+        {
+          "title": "3. Godkänn inläsning av serverkonfigurationen",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>ATAK bör öppnas och fråga om import av ett paket med en lång länk.</li>\n<li>Tryck på <strong>Yes</strong> för att fortsätta.</li>\n<li>Om ATAK öppnas men ingen dialogruta visas, prova Auto-Import igen. Det fungerar nu.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/dfc75ec072099b39.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "4. Klart! Du är ansluten.",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Klart!</li>\n<li>Den gröna TAK-ikonen på skärmen visar att du nu är ansluten till din enhets Deploy App TAK-server.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/7b0db9fb8f123439.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "html",
+      "html": "<p>När anslutningen till takservern har lyckats, fortsätt till <a href=\"/doc/ce3ace12-abf3-4d66-a94b-8a5cbccfeebb\">Receive Feeds</a></p>"
+    }
+  ]
+}

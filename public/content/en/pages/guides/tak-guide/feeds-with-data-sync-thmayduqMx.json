@@ -12,8 +12,13 @@
     "Feeds with Data Sync"
   ],
   "createdAt": "2025-12-05T22:06:22.487Z",
-  "updatedAt": "2026-06-16T21:54:01.872Z",
+  "updatedAt": "2026-06-18T20:13:47.748Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/feeds-with-data-sync-thmayduqMx",
+    "fi": "/fi/guides/tak-guide/feeds-with-data-sync-EMnuDBTzRY",
+    "sv": "/sv/guides/tak-guide/feeds-with-data-sync-5yGpc2vgBg"
+  },
   "blocks": [
     {
       "type": "slideset",

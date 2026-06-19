@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "id": "69f94115-0ef9-43b8-b410-e7a8ebf90d5d",
+  "slug": "anpassade-rapportmallar-BetIS5kccv",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Anpassade rapportmallar",
+  "breadcrumb": [
+    "Platforms",
+    "WinTAK",
+    "Plugin-program som stöds",
+    "Rapporter",
+    "Anpassade rapportmallar"
+  ],
+  "createdAt": "2026-06-18T19:35:26.039Z",
+  "updatedAt": "2026-06-18T20:25:00.758Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/custom-report-templates-8bCilJEujm",
+    "fi": "/fi/guides/tak-guide/mukautetut-raporttipohjat-ArfvIcUuY3",
+    "sv": "/sv/guides/tak-guide/anpassade-rapportmallar-BetIS5kccv"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Förkonfigurerade rapportmallar kan redigeras, och du kan bygga egna från grunden.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Starta en anpassad mall",
+          "layout": "image-bottom",
+          "html": "<p>För att redigera en standardmall, välj rapporttypen och välj <strong>Edit</strong> bredvid den — den öppnas i redigeraren för att sparas som en ny anpassad mall. För att bygga en ny, välj <strong>+</strong> bredvid kategorin <strong>Custom</strong>; detta skapar en tom mall med en sektion och ett textfält.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/d664252fecb158df.webp",
+              "width": 224,
+              "height": 205
+            }
+          ]
+        },
+        {
+          "title": "Namnge den och lägg till sektioner",
+          "layout": "image-bottom",
+          "html": "<p>Ange ett namn i fältet <strong>Template Type</strong> (detta blir den sparade mallens namn).</p>\n<ul>\n<li>Använd redigeraren för att lägga till sektioner och fält, ta bort en sektion eller ett fält, märka en sektion <strong>Required</strong> eller rensa mallen med <strong>Clear</strong>.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/ae93f14c8d8e1847.webp",
+              "width": 224,
+              "height": 183
+            }
+          ]
+        },
+        {
+          "title": "Lägg till fälttyper",
+          "layout": "image-bottom",
+          "html": "<p>Välj <strong>+</strong> inom en sektion för att lägga till ett fält: Options, Multi-Select Options, Section, Checkbox, Date, Location, Number with Units, Number, Range, Route, Text eller Time.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/6002d87be513d362.webp",
+              "width": 347,
+              "height": 566
+            }
+          ]
+        },
+        {
+          "title": "Spara mallen",
+          "layout": "image-bottom",
+          "html": "<p>Dra ut fönstret för att se en live-förhandsgranskning till höger medan du bygger.</p>\n<ul>\n<li>Välj <strong>Save</strong> för att spara den under Custom med dess titel, <strong>Save As</strong> för att ge den ett nytt namn, eller <strong>Save / Fill Out</strong> för att spara den och genast starta en rapport från den.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/13a5fa24076e6565.webp",
+              "width": 407,
+              "height": 536
+            }
+          ]
+        },
+        {
+          "title": "Rapportinställningar",
+          "layout": "image-bottom",
+          "html": "<p>Anpassa rapportlayouten under <strong>Settings > Tool Preferences > Reporting Preferences</strong>: <strong>Allow sending to TAK users over Data Package</strong>, skicka datapaket automatiskt till alla kontakter samt visa eller dölj fälten Importance, Scale, Scale Description och User Description.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/ccd7eb372a082524.webp",
+              "width": 339,
+              "height": 467
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

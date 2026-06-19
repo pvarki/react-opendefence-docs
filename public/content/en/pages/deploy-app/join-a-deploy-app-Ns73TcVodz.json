@@ -6,13 +6,19 @@
   "locale": "en",
   "title": "Join a Deploy App",
   "breadcrumb": [
+    "Platforms",
     "Windows",
     "User Guide",
     "Join a Deploy App"
   ],
   "createdAt": "2026-01-23T20:08:59.818Z",
-  "updatedAt": "2026-02-25T07:36:23.881Z",
+  "updatedAt": "2026-06-18T20:39:10.614Z",
   "headings": [],
+  "translations": {
+    "en": "/en/deploy-app/join-a-deploy-app-Ns73TcVodz",
+    "fi": "/fi/deploy-app/liity-deploy-app-sovellukseen-h2y5oF7JN4",
+    "sv": "/sv/deploy-app/anslut-till-en-deploy-app-LSYhrD19yJ"
+  },
   "blocks": [
     {
       "type": "html",

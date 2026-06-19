@@ -13,8 +13,13 @@
     "Import Files & Remote Resources"
   ],
   "createdAt": "2026-06-15T19:44:13.035Z",
-  "updatedAt": "2026-06-15T21:18:58.658Z",
+  "updatedAt": "2026-06-18T20:21:30.696Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/import-files-remote-resources-yjaTiWVKHl",
+    "fi": "/fi/guides/tak-guide/tiedostojen-ja-etaresurssien-tuonti-c3dqZ2juww",
+    "sv": "/sv/guides/tak-guide/importera-filer-och-fjarresurser-RIt6IYBJfn"
+  },
   "blocks": [
     {
       "type": "html",
@@ -75,7 +80,7 @@
         {
           "title": "Download and track remote resources",
           "layout": "image-bottom",
-          "html": "<p>Added links appear under <strong>Remote Resources</strong> in Overlay Manager. A red dot means not yet downloaded; tap <strong>Download</strong> to fetch it. Green means it is in and up to date.</p>",
+          "html": "<p>Added links appear under <strong>Remote Resources</strong> in Overlay Manager.</p>\n<ul>\n<li>A red dot means not yet downloaded; tap <strong>Download</strong> to fetch it.</li>\n<li>Green means it is in and up to date.</li>\n</ul>",
           "images": [
             {
               "src": "/content/images/en/attachments/17744d1ab1f41071.webp",

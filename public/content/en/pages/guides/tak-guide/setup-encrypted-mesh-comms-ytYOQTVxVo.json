@@ -8,13 +8,18 @@
   "breadcrumb": [
     "Platforms",
     "ATAK",
-    "Supported Plugins",
-    "Radios & Hardware",
+    "SUPPORTED PLUGINS",
+    "Connect radio with HAMMER",
     "Setup Encrypted Mesh Comms"
   ],
   "createdAt": "2026-06-15T19:45:19.190Z",
-  "updatedAt": "2026-06-15T21:19:00.420Z",
+  "updatedAt": "2026-06-18T20:22:46.456Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/setup-encrypted-mesh-comms-ytYOQTVxVo",
+    "fi": "/fi/guides/tak-guide/salatun-mesh-viestinnan-kayttoonotto-l34tbseLan",
+    "sv": "/sv/guides/tak-guide/konfigurera-krypterad-mesh-kommunikation-UBh0LRJGg5"
+  },
   "blocks": [
     {
       "type": "html",

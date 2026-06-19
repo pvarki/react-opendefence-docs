@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "id": "2427f63d-b62a-420f-8218-4225245e41e5",
+  "slug": "rakenna-mukautettu-raporttimalli-yCSiu6uhpP",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Rakenna mukautettu raporttimalli",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "TUETUT LISÄOSAT",
+    "Raportit",
+    "Rakenna mukautettu raporttimalli"
+  ],
+  "createdAt": "2026-06-18T19:31:37.305Z",
+  "updatedAt": "2026-06-18T20:22:39.187Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/build-a-custom-report-template-VVphDLVbW3",
+    "fi": "/fi/guides/tak-guide/rakenna-mukautettu-raporttimalli-yCSiu6uhpP",
+    "sv": "/sv/guides/tak-guide/bygg-en-anpassad-rapportmall-KwWEl4FT0Z"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Tee oma raporttilomake, jotta kentät vastaavat sitä, mitä ryhmäsi todella tarvitsee lähettää.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Avaa editori",
+          "layout": "image-bottom",
+          "html": "<p>Napauta Reports-paneelissa <strong>Editor</strong>. Tämä avaa uuden tyhjän mallin, jonka voit rakentaa alusta alkaen.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/9d58fe854259f743.webp",
+              "width": 422,
+              "height": 51
+            }
+          ]
+        },
+        {
+          "title": "Aloita tyhjästä mallista",
+          "layout": "image-bottom",
+          "html": "<p>Tyhjä malli alkaa otsikolla ja <strong>+</strong>-painikkeella. Napauta <strong>+</strong> lisätäksesi ensimmäisen kentän.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/47198f8f30669ace.webp",
+              "width": 800,
+              "height": 297
+            }
+          ]
+        },
+        {
+          "title": "Valitse kenttätyyppi",
+          "layout": "image-bottom",
+          "html": "<p>Valitse tarvitsemasi kenttätyyppi listasta, esimerkiksi <strong>Section</strong>, <strong>Text Field</strong>, <strong>Location Field</strong> tai <strong>Dropdown List(Single Selection)</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/369bee9569c31724.webp",
+              "width": 693,
+              "height": 752
+            }
+          ]
+        },
+        {
+          "title": "Lisää ja järjestä kenttiä",
+          "layout": "image-bottom",
+          "html": "<p>Jokainen kenttä saa <strong>Field Title</strong> -nimen ja <strong>Required</strong>-kytkimen. Napauta <strong>+</strong> uudelleen jatkaaksesi kenttien lisäämistä, kunnes raportti on valmis.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/5f44caa28e2bb318.webp",
+              "width": 800,
+              "height": 387
+            }
+          ]
+        },
+        {
+          "title": "Tallenna, vie tai tuo",
+          "layout": "image-bottom",
+          "html": "<p>Napauta kolmen pisteen valikkoa ja sitten:</p>\n<ul>\n<li><strong>Save Template</strong> tallentaaksesi sen käyttöä varten</li>\n<li><strong>Export Template</strong> jakaaksesi sen XML-tiedostona</li>\n<li><strong>Import Template</strong> ladataksesi jonkun sinulle lähettämän XML-mallin</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/5ec261548ffe0e93.webp",
+              "width": 800,
+              "height": 654
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

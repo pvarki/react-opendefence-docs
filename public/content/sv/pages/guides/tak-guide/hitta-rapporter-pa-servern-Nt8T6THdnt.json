@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "id": "e3d00ad3-7581-4bd2-9c09-f2c0d0656a9b",
+  "slug": "hitta-rapporter-pa-servern-Nt8T6THdnt",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Hitta rapporter på servern",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "TILLÄGG SOM STÖDS",
+    "Rapporter",
+    "Hitta rapporter på servern"
+  ],
+  "createdAt": "2026-06-18T19:31:36.972Z",
+  "updatedAt": "2026-06-18T20:22:38.011Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/find-reports-on-the-server-QTVm3SETE8",
+    "fi": "/fi/guides/tak-guide/etsi-raportteja-palvelimelta-fgWGDji6qC",
+    "sv": "/sv/guides/tak-guide/hitta-rapporter-pa-servern-Nt8T6THdnt"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Hämta rapporter som andra enheter skickat till TAK Server, avgränsa dem och spara de du behöver till din egen enhet.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Sök på servern",
+          "layout": "image-bottom",
+          "html": "<p>Du behöver en aktiv anslutning till TAK Server. Välj <strong>Search</strong>, skriv in din text och kör sökningen genom att välja <strong>Search</strong> igen. Matchande rapporter fyller listan och gröna ikoner markerar deras platser på kartan.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/5774cf8de3b5964e.webp",
+              "width": 800,
+              "height": 561
+            }
+          ]
+        },
+        {
+          "title": "Avgränsa med filter",
+          "layout": "image-bottom",
+          "html": "<p>Välj <strong>Filter</strong> för att lägga till parametrar som <strong>Current Map View</strong>, <strong>Date Range</strong>, <strong>Limit Shown To</strong> eller <strong>Report Type</strong>. Du kan kombinera flera samtidigt och sedan uppdatera resultaten genom att välja <strong>Confirm</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/643415a2b393deaa.webp",
+              "width": 800,
+              "height": 718
+            }
+          ]
+        },
+        {
+          "title": "Ladda ned en rapport",
+          "layout": "image-bottom",
+          "html": "<p>Välj en rapport i listan för att fälla ut dess sammanfattning och panorera till den på kartan. Välj <strong>Download</strong> till höger om posten för att spara en lokal kopia. Kartikonen ändras från grön till vit när den har sparats.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/be983a1b06fc461e.webp",
+              "width": 800,
+              "height": 314
+            }
+          ]
+        },
+        {
+          "title": "Redigera en lokal rapport",
+          "layout": "image-bottom",
+          "html": "<p>Öppna den sparade rapporten från Reports-panelen. Välj <strong>Details</strong> (från listan eller markörens radialmeny på kartan) för att visa och redigera den, ändra de fält du behöver och välj sedan <strong>Save Draft</strong> för en lokal kopia eller <strong>Upload</strong> för att spara och skicka.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/dd7ec43088ae27a5.webp",
+              "width": 422,
+              "height": 219
+            }
+          ]
+        },
+        {
+          "title": "Visa eller dölj på kartan",
+          "layout": "image-bottom",
+          "html": "<p>Välj knappen <strong>Visibility</strong> för att växla om rapporten visas på kartan. Använd den för att rensa bort röran utan att ta bort din lokala kopia.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/dd7ec43088ae27a5.webp",
+              "width": 422,
+              "height": 219
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

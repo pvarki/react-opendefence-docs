@@ -1,0 +1,154 @@
+{
+  "schemaVersion": 1,
+  "id": "6c69bef2-4e5f-49f1-990a-a440733369ba",
+  "slug": "overlay-manager-nakymien-hallinta-L14bpp02nM",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Overlay Manager - näkymien hallinta",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "Edistyneet ydintoiminnot",
+    "Overlay Manager - näkymien hallinta"
+  ],
+  "createdAt": "2026-06-18T19:26:21.835Z",
+  "updatedAt": "2026-06-18T20:14:43.618Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/overlay-manager-how-to-manage-the-views-BVRnLCM7ME",
+    "fi": "/fi/guides/tak-guide/overlay-manager-nakymien-hallinta-L14bpp02nM",
+    "sv": "/sv/guides/tak-guide/overlay-manager-hantera-vyerna-AJGahEsnDr"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Overlay Manager lajittelee kaiken kartalla olevan luokkiin, jotta voit selkeyttää tilannekuvaa, löytää merkin nopeasti ja hallita tarkasti sitä, mitä näet.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Avaa Overlay Manager",
+          "layout": "image-bottom",
+          "html": "<p>Avaa luokkalista valitsemalla <strong>Overlay Manager</strong> -kuvake: Team, Markers, Alerts, Data Packages, Navigation, Shapes, Hashtags ja muita. Napauta luokkaa porautuaksesi sen kohteisiin.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/799226c30d9e7680.webp",
+              "width": 276,
+              "height": 348
+            }
+          ]
+        },
+        {
+          "title": "Näytä tai piilota tasoja",
+          "layout": "image-bottom",
+          "html": "<p>Napauta <strong>Visibility</strong> (silmä) -painiketta kytkeäksesi tason päälle tai pois.</p>\n<ul>\n<li>Valkoinen silmä tarkoittaa näkyvää, ääriviivasilmä tarkoittaa, että osa kohteista on piilotettu, ja yliviivattu silmä tarkoittaa piilotettua.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/406c9451d5252967.webp",
+              "width": 224,
+              "height": 131
+            }
+          ]
+        },
+        {
+          "title": "Suodata merkit puolen ja toimintaympäristön mukaan",
+          "layout": "image-bottom",
+          "html": "<p>Valitse Markers-luokassa <strong>Slicer</strong>.</p>\n<ul>\n<li>Napauta <strong>F</strong>, <strong>N</strong> ja muita kytkeäksesi omat, neutraalit, viholliset ja tuntemattomat; yläkirjaimet kattavat avaruuden, ilman, maan, meren ja vedenalaisen.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/36c179bfad6b4520.webp",
+              "width": 325,
+              "height": 154
+            }
+          ]
+        },
+        {
+          "title": "Näytä vain omat merkkisi",
+          "layout": "image-bottom",
+          "html": "<p>Napauta <strong>List</strong> ja sitten <strong>Filters</strong>. Kytke <strong>Self Authored</strong> päälle näyttääksesi vain tällä laitteella sijoittamasi merkit ja piilottaaksesi muiden merkit, napauta sitten <strong>OK</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/2762f211082c1f9a.webp",
+              "width": 171,
+              "height": 96
+            }
+          ]
+        },
+        {
+          "title": "Hae päällystasoista",
+          "layout": "image-bottom",
+          "html": "<p>Napauta <strong>Search</strong>-kuvaketta Overlay Managerin työkalupalkissa löytääksesi päällystason nimen perusteella. Valitse ensin luokka rajataksesi tuloksia.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/7453787700a0eaff.webp",
+              "width": 285,
+              "height": 173
+            }
+          ]
+        },
+        {
+          "title": "Tyhjennä väliaikaiset kohteet COP Refreshillä",
+          "layout": "image-bottom",
+          "html": "<p>Napauta <strong>COP Refresh</strong> tyhjentääksesi väliaikaiset kohteet kartalta: muiden käyttäjien omamerkit, heidän SPI-pisteensä ja ADSB-ilma-alusten jäljet. Vahvista avautuvassa ikkunassa.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/38472422770b6434.webp",
+              "width": 326,
+              "height": 32
+            }
+          ]
+        },
+        {
+          "title": "Merkitse kohteet Hashtags-tunnisteilla",
+          "layout": "image-bottom",
+          "html": "<p>Avaa <strong>Hashtags</strong>-luokka ja napauta <strong>+</strong> luodaksesi tunnisteen. Hashtagit ryhmittelevät toisiinsa liittyvät kohteet, jotta voit hakea ja suodattaa niiden mukaan myöhemmin; lisää tunniste ja valitse <strong>Done</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/3519c2735f0ec1f6.webp",
+              "width": 305,
+              "height": 87
+            }
+          ]
+        },
+        {
+          "title": "Ota MGRS-ruudukko käyttöön",
+          "layout": "image-bottom",
+          "html": "<p>Avaa Overlay Managerissa <strong>Other Overlays</strong> ja kytke <strong>Grid Lines</strong> sen silmäkuvakkeella. MGRS-ruudukko piirretään kartan päälle ja mukautuu automaattisesti zoomatessasi.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/ac247a9aa8e49a30.webp",
+              "width": 400,
+              "height": 194
+            }
+          ]
+        },
+        {
+          "title": "Kytke Heatmap-päällystaso",
+          "layout": "image-bottom",
+          "html": "<p>Kytke <strong>Other Overlays</strong> -valikossa <strong>Heatmap Overlay</strong> varjostaaksesi maaston korkeuden mukaan.</p>\n<ul>\n<li>Tässä voi kytkeä myös Off-Screen Indicators -ilmaisimet, jotka osoittavat lähellä oleviin merkkeihin juuri näkymäsi ulkopuolella.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/d6879fdc07334ec1.webp",
+              "width": 400,
+              "height": 194
+            }
+          ]
+        },
+        {
+          "title": "Muokkaa päällystason väriä ja paksuutta",
+          "layout": "image-bottom",
+          "html": "<p>Tiedostopäällystasoille (Shapefile, KMZ, DRW) napauta listauksessa <strong>Edit</strong> (kynäkuvake). Vedä <strong>Line Thickness</strong> -liukusäädintä ja valitse <strong>Color</strong> tehdäksesi päällystasosta helpommin luettavan.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/3b2ad0aa64eb4cb5.webp",
+              "width": 229,
+              "height": 125
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

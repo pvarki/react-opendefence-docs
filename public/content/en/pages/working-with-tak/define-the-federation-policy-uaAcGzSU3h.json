@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "8217eeb5-9f02-4e3b-a1af-96a747c0e015",
+  "slug": "define-the-federation-policy-uaAcGzSU3h",
+  "collection": "working-with-tak",
+  "locale": "en",
+  "title": "Define the federation policy",
+  "breadcrumb": [
+    "Federation Hub: connecting multiple TAK Servers",
+    "Define the federation policy"
+  ],
+  "createdAt": "2026-06-17T19:13:31.318Z",
+  "updatedAt": "2026-06-17T19:13:34.713Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Open the Policy Manager",
+      "id": "open-the-policy-manager"
+    },
+    {
+      "depth": 2,
+      "text": "The node types",
+      "id": "the-node-types"
+    },
+    {
+      "depth": 3,
+      "text": "CA Group",
+      "id": "ca-group"
+    },
+    {
+      "depth": 3,
+      "text": "Outgoing",
+      "id": "outgoing"
+    },
+    {
+      "depth": 3,
+      "text": "Token Group",
+      "id": "token-group"
+    },
+    {
+      "depth": 2,
+      "text": "Connect nodes with edges",
+      "id": "connect-nodes-with-edges"
+    },
+    {
+      "depth": 2,
+      "text": "Activate the policy",
+      "id": "activate-the-policy"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>The <strong>policy</strong> is the heart of the hub: a graph that says which connected servers exist and how data may flow between them. Until a policy is active, nothing federates — and the hub <strong>denies any server not in the active policy</strong>.</p>\n<h2 id=\"open-the-policy-manager\"><a href=\"#open-the-policy-manager\">Open the Policy Manager</a></h2>\n<p>In a browser go to <code>**https://&#x3C;hub>:9100/index.html**</code> and authenticate with the cert (or Keycloak admin) you authorized in <a href=\"/en/working-with-tak/establish-trust-share-cas-sUaHBtGVfZ\">Establish trust</a>. Choose <strong>New</strong> to start a blank policy, or <strong>Load</strong> an existing one. You're then in the <strong>Policy Editor</strong> — a drag-and-drop graph canvas.</p>\n<h2 id=\"the-node-types\"><a href=\"#the-node-types\">The node types</a></h2>\n<p>Drag these from the palette onto the canvas:</p>\n<h3 id=\"ca-group\"><a href=\"#ca-group\">CA Group</a></h3>\n<p>Represents the <strong>CA of a TAK Server</strong> (or another hub) that wants to connect. Pick the CA you uploaded earlier (by issuer/subject). Two options:</p>\n<ul>\n<li><strong>Interconnected</strong> — if several servers share the <em>same</em> CA, they auto-link and share <em>all</em> data. Usually <strong>off</strong> (run unique certs per server).</li>\n<li><strong>Allow Token Auth</strong> — auto-accept incoming connections that present a client cert over TLS and receive a token (instead of full mTLS). <em>Token Auth Duration</em> <code>-1</code> = never expires.</li>\n</ul>\n<p>Each Deploy App TAK Server you federate gets <strong>one CA Group node</strong>.</p>\n<h3 id=\"outgoing\"><a href=\"#outgoing\">Outgoing</a></h3>\n<p>A connection initiated <strong>from this hub to</strong> another TAK Server or hub (this is what enables <strong>multi-hop</strong>). Enter the remote <strong>Host</strong> and <strong>Port</strong>, optionally use token auth, and tick <strong>Outgoing Enabled</strong> when ready.</p>\n<h3 id=\"token-group\"><a href=\"#token-group\">Token Group</a></h3>\n<p>A set of <strong>tokens</strong> that servers can use to connect to this hub. Generate and manage tokens here (<code>-1</code> = no expiry). Unlike a CA Group's <em>Allow Token Auth</em> (a server is auto-issued a token by presenting its cert), a Token Group is <strong>manual</strong> — you send each server's admin a token, and a fresh one when it expires.</p>\n<h2 id=\"connect-nodes-with-edges\"><a href=\"#connect-nodes-with-edges\">Connect nodes with edges</a></h2>\n<p>Draw <strong>edges</strong> between nodes to begin federating data. Edges are <strong>unidirectional</strong> — drag from the <strong>source</strong> node and drop on the <strong>destination</strong>; the arrow shows the direction data flows. To make a two-way link, draw an edge each way. When you create an edge, a form asks how to <strong>filter</strong> what crosses it — see <a href=\"/en/working-with-tak/control-what-crosses-group-filtering-DKvIW89bZD\">Control what crosses</a>.</p>\n<p>So \"Server A may send to Server B\" is: a CA Group for A, a CA Group for B, and an edge A → B with the filtering you choose.</p>\n<h2 id=\"activate-the-policy\"><a href=\"#activate-the-policy\">Activate the policy</a></h2>\n<p>Edits to the graph aren't live until you <strong>save and upload</strong> the policy — click the <strong>cloud icon</strong> in the top toolbar. Once active:</p>\n<ul>\n<li>Federates in the policy may connect (the hub <strong>denies</strong> anyone not in it).</li>\n<li>A <strong>green node</strong> indicates a successful connection.</li>\n</ul>\n<p>Re-upload after every change (add/edit/delete a node, add a connection, generate tokens) for it to take effect.</p>\n<p>→ Next: <a href=\"/en/working-with-tak/control-what-crosses-group-filtering-DKvIW89bZD\">Control what crosses (group filtering)</a>.</p>"
+    }
+  ]
+}

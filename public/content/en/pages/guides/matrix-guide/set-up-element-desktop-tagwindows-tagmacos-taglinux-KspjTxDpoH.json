@@ -10,8 +10,13 @@
     "Set up Element (desktop)"
   ],
   "createdAt": "2026-06-15T14:06:36.702Z",
-  "updatedAt": "2026-06-15T17:52:25.452Z",
+  "updatedAt": "2026-06-18T20:37:50.152Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/matrix-guide/set-up-element-desktop-tagwindows-tagmacos-taglinux-KspjTxDpoH",
+    "fi": "/fi/guides/matrix-guide/asenna-element-tyopoyta-tagwindows-tagmacos-taglinux-Zn1epPrcp6",
+    "sv": "/sv/guides/matrix-guide/installera-element-skrivbord-tagwindows-tagmacos-taglinux-CzxXo6adUl"
+  },
   "blocks": [
     {
       "type": "html",

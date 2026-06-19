@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 1,
+  "id": "d84df484-a8e7-4888-9e3a-a1f034a261d2",
+  "slug": "stall-in-sprak-och-lokalisering-for-wintak-20Oabj2Esq",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Ställ in språk och lokalisering för WinTAK",
+  "breadcrumb": [
+    "Platforms",
+    "WinTAK",
+    "STARTA OCH ANSLUT",
+    "Ställ in språk och lokalisering för WinTAK"
+  ],
+  "createdAt": "2026-06-18T19:32:27.481Z",
+  "updatedAt": "2026-06-18T20:22:54.057Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/set-language-localization-for-wintak-GstcQifMVj",
+    "fi": "/fi/guides/tak-guide/aseta-wintakn-kieli-ja-lokalisointi-h2H6q8rgOi",
+    "sv": "/sv/guides/tak-guide/stall-in-sprak-och-lokalisering-for-wintak-20Oabj2Esq"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>WinTAK kräver att Windows är inställt på <strong>English</strong> med regionen <strong>United States</strong> — gör detta <em>innan</em> du installerar appen. Arbeta i par om du kan: en läser, en styr.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Sök efter Time and Language",
+          "layout": "image-bottom",
+          "html": "<p>Öppna Windows-inställningarna: skriv <strong>Time and Language</strong> i sökfältet (längst ner till vänster).</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/b591cd09ae92c086.webp",
+              "width": 320,
+              "height": 202
+            }
+          ]
+        },
+        {
+          "title": "Öppna Region-inställningarna",
+          "layout": "image-bottom",
+          "html": "<p>Ändra först regionen. Välj <strong>Region</strong> i sidofältet under <strong>Time and Language</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/487040977533ee91.webp",
+              "width": 418,
+              "height": 174
+            }
+          ]
+        },
+        {
+          "title": "Ställ in regionen till United States",
+          "layout": "image-bottom",
+          "html": "<p>Ställ in land eller region till <strong>United States</strong>. Se till att även det regionala formatet är <strong>English (United States)</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/6cf7b296d8f78493.webp",
+              "width": 656,
+              "height": 330
+            }
+          ]
+        },
+        {
+          "title": "Ställ in visningsspråket till English (US)",
+          "layout": "image-bottom",
+          "html": "<p>Välj <strong>Language</strong> i sidofältet igen. Ställ in Windows visningsspråk till <strong>English (United States)</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/c96a80f0dfa8ce4b.webp",
+              "width": 428,
+              "height": 278
+            }
+          ]
+        },
+        {
+          "title": "Logga ut och in igen",
+          "layout": "image-bottom",
+          "html": "<p>Slutför ändringen av visningsspråket genom att logga ut och logga in igen.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/fd1b084648d45844.webp",
+              "width": 306,
+              "height": 428
+            }
+          ]
+        },
+        {
+          "title": "Språk inställt",
+          "layout": "image-bottom",
+          "html": "<p>Om English nu är ditt visningsspråk är lokaliseringen klar. Om English <strong>inte</strong> gick att välja lägger de följande två stegen till det — annars är du redo att installera WinTAK.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/3b6397c0e3004325.webp",
+              "width": 428,
+              "height": 98
+            }
+          ]
+        },
+        {
+          "title": "Om English saknas: lägg till ett språkpaket",
+          "layout": "image-bottom",
+          "html": "<p>Om English inte finns i listan över visningsspråk trycker du på <strong>Add a language</strong>, söker efter English och trycker på <strong>Install language pack</strong>. Vänta tills det har installerats.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/c2ee5ce82a350c99.webp",
+              "width": 306,
+              "height": 428
+            }
+          ]
+        },
+        {
+          "title": "Välj English, logga sedan ut och in",
+          "layout": "image-bottom",
+          "html": "<p>När det har installerats väljer du English som visningsspråk enligt ovan och loggar sedan ut och in igen. Windows är nu lokaliserat — ladda sedan ner och installera WinTAK.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/12ebe55adc2ea8e3.webp",
+              "width": 428,
+              "height": 118
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

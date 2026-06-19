@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "id": "b5bc24dc-8036-4094-b1d7-f241451a4c13",
+  "slug": "how-the-federation-hub-works-kfYEsVehxZ",
+  "collection": "working-with-tak",
+  "locale": "en",
+  "title": "How the Federation Hub works",
+  "breadcrumb": [
+    "Federation Hub: connecting multiple TAK Servers",
+    "How the Federation Hub works"
+  ],
+  "createdAt": "2026-06-17T19:13:28.627Z",
+  "updatedAt": "2026-06-17T19:13:33.578Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Hub-and-spoke, multi-hop",
+      "id": "hub-and-spoke-multi-hop"
+    },
+    {
+      "depth": 2,
+      "text": "Ports",
+      "id": "ports"
+    },
+    {
+      "depth": 2,
+      "text": "Authentication",
+      "id": "authentication"
+    },
+    {
+      "depth": 2,
+      "text": "The policy gate",
+      "id": "the-policy-gate"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<h2 id=\"hub-and-spoke-multi-hop\"><a href=\"#hub-and-spoke-multi-hop\">Hub-and-spoke, multi-hop</a></h2>\n<p>The FedHub enables forwarding of federated TAK data in a <strong>hub-and-spoke</strong> topology, and supports <strong>multi-hop</strong> setups (a hub can connect onward to another TAK Server <em>or another FedHub</em>). Instead of TAK Servers federating with each other directly, each connects to the hub, and the hub performs <strong>connection and trust management</strong> and brokers data according to an administrator-defined <strong>policy</strong>.</p>\n<p>It runs <strong>independently of TAK Server</strong> and consists of three micro-services managed by a single system service (<code>federation-hub</code>):</p>\n<table>\n<thead>\n<tr>\n<th>Micro-service</th>\n<th>Role</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Policy manager</strong></td>\n<td>Holds and enforces the federation policy.</td>\n</tr>\n<tr>\n<td><strong>Administrative UI</strong></td>\n<td>Web app to build the policy graph, manage CAs, view connections/metrics.</td>\n</tr>\n<tr>\n<td><strong>Messaging broker</strong></td>\n<td>Moves the federated data between connected servers per policy.</td>\n</tr>\n</tbody>\n</table>\n<h2 id=\"ports\"><a href=\"#ports\">Ports</a></h2>\n<p>The FedHub uses these TCP ports by default (configurable in <code>federation-hub-broker.yml</code> / <code>federation-hub-ui.yml</code>):</p>\n<table>\n<thead>\n<tr>\n<th>Port</th>\n<th>Purpose</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>9100</strong></td>\n<td>Administrative UI (the Policy Manager web app).</td>\n</tr>\n<tr>\n<td><strong>9101</strong></td>\n<td><strong>V1</strong> federation (<strong>deprecated</strong>).</td>\n</tr>\n<tr>\n<td><strong>9102</strong></td>\n<td><strong>V2</strong> federation — what current TAK Servers connect to.</td>\n</tr>\n<tr>\n<td><strong>9103</strong></td>\n<td>Optional <strong>token-auth</strong> federation port (when you enable token auth).</td>\n</tr>\n<tr>\n<td><strong>9099</strong></td>\n<td>Optional <strong>OAuth</strong> port for Keycloak admin login (see <a href=\"/en/working-with-tak/establish-trust-share-cas-sUaHBtGVfZ\">Establish trust</a>).</td>\n</tr>\n</tbody>\n</table>\n<p>Open at least <strong>9100</strong> and <strong>9102</strong> on the firewall / cloud security groups.</p>\n<blockquote>\n<p>These are the <strong>hub's</strong> ports. A TAK Server's <em>own</em> direct-federation ports are 9000 (v1) / 9001 (v2) — different numbers; don't confuse them. When a TAK Server connects to the hub it targets the hub's <strong>9102</strong>.</p>\n</blockquote>\n<h2 id=\"authentication\"><a href=\"#authentication\">Authentication</a></h2>\n<ul>\n<li>\n<p><strong>X.509 mutual TLS (mTLS)</strong> — the primary and most secure option. The hub and each federate must trust each other's <strong>CA</strong> (<a href=\"/en/working-with-tak/establish-trust-share-cas-sUaHBtGVfZ\">Establish trust</a>).</p>\n</li>\n<li>\n<p><strong>Tokens (JWT)</strong> — an alternative for networks where mTLS isn't possible (e.g. break-and-inspect on all TLS). A federate presents its client cert over TLS and uses a token instead of full mTLS. Configured on a token-auth port:</p>\n<pre><code class=\"language-yaml\"># federation-hub-broker.yml\nfederationTokenAuthServers:\n  - type: jwt\n    port: 9103\n</code></pre>\n<p>Token auth comes in two flavours, set in the policy: <strong>Automatic</strong> (per-CA — the CA Group node's <em>Allow Token Auth</em>) and <strong>Manual</strong> (a <em>Token Group</em> node whose tokens you hand to other admins). See <a href=\"/en/working-with-tak/define-the-federation-policy-uaAcGzSU3h\">Define the federation policy</a>.</p>\n</li>\n</ul>\n<h2 id=\"the-policy-gate\"><a href=\"#the-policy-gate\">The policy gate</a></h2>\n<p>Nothing federates until you publish a <strong>policy</strong>. Once a policy is active, federates listed in it may connect; <strong>the hub denies connections from any server not in the policy</strong>. The policy is also where you decide <em>which data</em> crosses between which servers (<a href=\"/en/working-with-tak/control-what-crosses-group-filtering-DKvIW89bZD\">Control what crosses</a>).</p>\n<p>→ Next: <a href=\"/en/working-with-tak/install-run-the-federation-hub-Qq2V1k9VZ2\">Install &#x26; run the Federation Hub</a>.</p>"
+    }
+  ]
+}

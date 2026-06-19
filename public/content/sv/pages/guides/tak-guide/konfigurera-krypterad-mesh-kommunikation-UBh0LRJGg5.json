@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "id": "71f49908-5ca9-4a82-b941-76eb6ade5071",
+  "slug": "konfigurera-krypterad-mesh-kommunikation-UBh0LRJGg5",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Konfigurera krypterad mesh-kommunikation",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "TILLÄGG SOM STÖDS",
+    "Anslut radio med HAMMER",
+    "Konfigurera krypterad mesh-kommunikation"
+  ],
+  "createdAt": "2026-06-18T19:32:24.929Z",
+  "updatedAt": "2026-06-18T20:22:47.370Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/setup-encrypted-mesh-comms-ytYOQTVxVo",
+    "fi": "/fi/guides/tak-guide/salatun-mesh-viestinnan-kayttoonotto-l34tbseLan",
+    "sv": "/sv/guides/tak-guide/konfigurera-krypterad-mesh-kommunikation-UBh0LRJGg5"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Lås ditt mesh-nät så att bara ditt eget lag kan se din position, chatt och datapaket. Krypterade enheter kan inte kommunicera med okrypterade, och tvärtom.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Öppna inställningarna för mesh-kryptering",
+          "layout": "image-bottom",
+          "html": "<p>Gå till <strong>Settings</strong> > <strong>Network Preferences</strong> > <strong>Network Connection Preferences</strong> > <strong>Configure AES-256 Mesh Encryption</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/2ba6dcc5a91d311e.webp",
+              "width": 305,
+              "height": 143
+            }
+          ]
+        },
+        {
+          "title": "Skapa en nyckel",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på <strong>Generate Key</strong> för att skapa en ny AES-256-krypteringsnyckel för laget.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/2ba6dcc5a91d311e.webp",
+              "width": 305,
+              "height": 143
+            }
+          ]
+        },
+        {
+          "title": "Namnge och spara nyckeln",
+          "layout": "image-bottom",
+          "html": "<p>Ange ett filnamn (utan filändelse) och välj <strong>OK</strong>. Nyckeln sparas i mappen <code>atak/config/prefs</code>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/df3b48cd693a460b.webp",
+              "width": 307,
+              "height": 127
+            }
+          ]
+        },
+        {
+          "title": "Ladda och dela nyckeln",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på <strong>Load Key</strong> på varje enhet och bläddra till nyckelfilen. Dela samma nyckel med alla innan du aktiverar krypteringen, eller förladda den på enheterna.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/b1028ed72be7cc9f.webp",
+              "width": 306,
+              "height": 126
+            }
+          ]
+        },
+        {
+          "title": "Återgå till okrypterat",
+          "layout": "image-bottom",
+          "html": "<p>För att ta bort krypteringen och återgå till vanlig mesh-trafik, tryck på <strong>Forget Key</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/2ba6dcc5a91d311e.webp",
+              "width": 305,
+              "height": 143
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

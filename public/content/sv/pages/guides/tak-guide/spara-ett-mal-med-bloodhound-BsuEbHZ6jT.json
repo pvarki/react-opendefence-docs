@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "id": "cfab6b06-2383-431b-8fd3-4371159b0844",
+  "slug": "spara-ett-mal-med-bloodhound-BsuEbHZ6jT",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Spåra ett mål med Bloodhound",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "YTTERLIGARE FUNKTIONER",
+    "Navigering och koordinater",
+    "Spåra ett mål med Bloodhound"
+  ],
+  "createdAt": "2026-06-18T19:29:16.586Z",
+  "updatedAt": "2026-06-18T20:20:05.141Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/track-to-a-target-with-bloodhound-CRgoGZzBqb",
+    "fi": "/fi/guides/tak-guide/seuraa-kohdetta-bloodhoundilla-GHDj89NBpo",
+    "sv": "/sv/guides/tak-guide/spara-ett-mal-med-bloodhound-BsuEbHZ6jT"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Bloodhound låser en spårpunkt på ett mål och ger dig avstånd, bäring och beräknad ankomsttid i realtid medan du närmar dig.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Öppna Bloodhound-verktyget",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på <strong>Bloodhound</strong>-ikonen för att öppna verktyget. Uppmaningen <strong>Setup Bloodhound</strong> visas så att du kan välja din spårpunkt och ditt mål.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/73bb4fb07230f64d.webp",
+              "width": 299,
+              "height": 100
+            }
+          ]
+        },
+        {
+          "title": "Ange spårpunkt och mål",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på <strong>From Reticle</strong> för att välja spårpunkten (förvalt din egen Self-Marker), tryck sedan på <strong>To Reticle</strong> för att välja målet.</p>\n<ul>\n<li>Målet kan vara en annan användare, en DP, en CoT-markör eller vilken kartpunkt som helst.</li>\n<li>Använd <strong>Quick Select DP</strong> för att snabbt välja en DP.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/73bb4fb07230f64d.webp",
+              "width": 299,
+              "height": 100
+            }
+          ]
+        },
+        {
+          "title": "Aktivera spårningen",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på <strong>OK</strong> för att aktivera. En grön linje dras från dig till målet. Om du tryckte på tom karta i stället för ett objekt placerar Bloodhound en waypoint där och spårar till den.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/68a499821086477f.webp",
+              "width": 336,
+              "height": 272
+            }
+          ]
+        },
+        {
+          "title": "Läs av avstånd, bäring och ankomsttid",
+          "layout": "image-bottom",
+          "html": "<p>Den gröna widgeten nere till vänster visar <strong>Range</strong>, <strong>Bearing</strong> och <strong>ETA</strong> i realtid. När någon av punkterna förflyttar sig och du navigerar mot målet uppdateras dessa värden i realtid.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/68a499821086477f.webp",
+              "width": 336,
+              "height": 272
+            }
+          ]
+        },
+        {
+          "title": "Bevaka linjens färg",
+          "layout": "image-bottom",
+          "html": "<p>Linjen blinkar utifrån ankomsttid: grönt blinkar 6 minuter bort, sedan 3 minuter, övergår till blinkande gult vid 1 minut och blinkar rött tills du når målet. Justera detta under <strong>Settings > Tool Preferences > Specific Tool Preferences > Bloodhound Preferences</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/68a499821086477f.webp",
+              "width": 336,
+              "height": 272
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

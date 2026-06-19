@@ -1,0 +1,298 @@
+{
+  "schemaVersion": 1,
+  "id": "4d167b04-c331-4e7b-8c5f-efb921e180c0",
+  "slug": "point-dropper-markorer-ADzjTFD2zi",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Point Dropper - Markörer",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "Grundläggande funktioner",
+    "Point Dropper - Markörer"
+  ],
+  "createdAt": "2026-06-18T19:25:16.924Z",
+  "updatedAt": "2026-06-18T20:13:50.328Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/point-dropper-markers-lsYmFrTvqH",
+    "fi": "/fi/guides/tak-guide/point-dropper-merkit-9yamK9nyOX",
+    "sv": "/sv/guides/tak-guide/point-dropper-markorer-ADzjTFD2zi"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "1. Rita markörer med Point Dropper",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li><strong>Point Dropper</strong> är verktyget för att rita markörer på kartan.</li>\n<li>Markörer du ritar skickas <strong>inte</strong> automatiskt någonstans. Se <strong>Sending a Marker</strong> för anvisning om hur du skickar dem.</li>\n<li>Tryck på Point Dropper när du vill rita markörer på kartan.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/fcbc28e3f39dba58.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "2. Ange markörtyp",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Tryck på \"Ground\" för att precisera markörens undertyp ytterligare om du vill.</li>\n<li>Du kan redigera markörens typer senare också.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/cef319194a1ab305.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "3. Välj markörens tillhörighet",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Tryck på Unknown, Neutral, Enemy eller Friendly för tillhörighet och för att börja placera ut din nya markör.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/f94932d1d0cc0787.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "4. Tryck på kartan för att släppa pekaren",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Pekaren skapas vid tryck.</li>\n<li>Den finns tills vidare bara på din egen enhet - se anvisningen <strong>Sending a Marker</strong> för delningsalternativ.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/800f50867119bce1.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "5. Välj markör för redigering eller sändning",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Tryck på markören för att öppna <strong>action menu.</strong></li>\n<li>Tryck på ikonen <strong>details</strong>. Den finns precis bredvid raderingsikonen; med den fyller du i uppgifter.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/065beedcc732fe61.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "6. Öppna namndialogen",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Tryck på <strong>det genererade namnet på din markör</strong> för att redigera det.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/32dffe6bfad84813.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "7. Namnge din markör",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Namnge din markör enligt din enhets konvention.</li>\n<li>Detta exempel följer följande schema: <em><strong>\"Rapporterande enhets namn, beskrivande titel.\"</strong></em></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/9b044bced7fe5bd1.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "8. Ändra typ",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Tryck på <strong>Type</strong> för att redigera markörens undertyp, på samma sätt som tidigare.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/359315bda5a120bc.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "9. Typval",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Det finns gott om val av markörundertyper. Ange din, om det är tillämpligt.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/3c8da9ce18abf3f5.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "10. Ange platsfel (valfritt)",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Du kan ange platsfelet för din symbol om det är tillämpligt.</li>\n<li>Det beskriver hur exakt din markörs positionering är. Detta är viktigt om markören skulle kunna vara ett mål för eld.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/b53d51659a4fc177.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "11. Val av platsfel",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Enligt NATO-standard kan du ange felet från CAT1 (lägst) till CAT6 (högst fel).</li>\n<li>CAT1: 0-6 m. CAT2: 7-15 m. CAT3: 16-30 m. CAT4: 31-91 m. CAT5: 92-305 m. CAT6: 305+ m.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/e0656e14a669a60b.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "12. Ange markörstorlek (valfritt)",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Om din markörs undertyp är \"Unit\" kan du ange markörens storleksangivelse (t.ex. grupp, pluton, kompani).</li>\n<li>Tryck på <strong>Unit Modifier/Echelon</strong> för att göra det.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/9753780f6468bd55.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "13. Ange markörstorlek (valfritt)",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Välj markörens storlek efter vad som är tillämpligt.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/7d54f6c083697174.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "14. Fyll i uppgifter med Remarks",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Skriv uppgifter om markören genom att skrolla ner och trycka på <strong>pen icon.</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/93c6f13b88084d0c.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "15. Fyll i uppgifterna",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Fyll i uppgifter efter behov.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/867e504cb2851701.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "16. Redigera markörens Status",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Vid behov kan du ändra Status på den här markören.</li>\n<li>Detta är användbart om du redigerar en befintlig markör för att återspegla en förändring, eller planerar en förväntad åtgärd.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/bbbae7db87d64f6d.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "17. Redigera spaningssensorer",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Om du råkar ha en sensor, t.ex. en videoström, igång mot målet kan du fylla i det genom att trycka på \"play\"-ikonen.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/74189d6500b4fdd3.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "18. Lägg till en videosensor till en markör",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Anslut en ström till den här markören, antingen en ström från Deploy Apps MediaMTX [separat anvisning] eller från en plattform som YouTube.</li>\n<li>Du måste ange adress, port, protokoll och eventuellt ett lösenord för att strömmen ska kunna visas i ATAK.</li>\n<li>Detta instrueras i anvisningen Deploy App MediaMTX.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/db8613213e120ded.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "19. Lägga till bilagor",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Du kan lägga till bilagor, t.ex. bilder, till din markör.</li>\n<li>Tryck på <strong>pin icon</strong> för att göra det.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/f4b56d58f5e31c58.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "20. Lägga till en bilaga",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Du kan t.ex. ta en ny bild eller välja bland dina bilder med <strong>Image File.</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/652f4eb200dbcab0.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "21. Lägga till en bild",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>När du är klar med att lägga till bilagor, gå tillbaka till markörens huvudvy med uppgifter via <strong>back arrow.</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/5976abeb0a204f9d.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "22. Kom ihåg: det finns ingen automatisk sändning",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Varje markör du ritar finns bara på din enhet, om du inte skickar markören till någon.</li>\n<li>Se nästa anvisningssida för sändningsalternativ för markörer.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/427fcd0c7ca57743.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "html",
+      "html": "<p>När du har testat Point Dropper med framgång, fortsätt till <a href=\"/doc/1ddce881-2116-41eb-9980-f201fcc06f27\">Use GeoChat</a></p>"
+    }
+  ]
+}

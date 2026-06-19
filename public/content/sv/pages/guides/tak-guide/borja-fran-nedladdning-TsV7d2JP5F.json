@@ -1,0 +1,346 @@
+{
+  "schemaVersion": 1,
+  "id": "9bbba706-425e-46b3-a76a-528812c56cd5",
+  "slug": "borja-fran-nedladdning-TsV7d2JP5F",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Börja från nedladdning",
+  "breadcrumb": [
+    "Platforms",
+    "iTAK",
+    "Start",
+    "Börja från nedladdning"
+  ],
+  "createdAt": "2026-06-18T19:35:29.937Z",
+  "updatedAt": "2026-06-18T20:25:40.635Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/start-from-download-vQGTWj6wET",
+    "fi": "/fi/guides/tak-guide/aloita-lataamisesta-qtXafhRjdo",
+    "sv": "/sv/guides/tak-guide/borja-fran-nedladdning-TsV7d2JP5F"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Installera iTAK från App Store",
+          "layout": "text",
+          "html": "<ul>\n<li><a href=\"https://apps.apple.com/us/app/itak/id1561656396\" target=\"_blank\" rel=\"noopener noreferrer\">https://apps.apple.com/us/app/itak/id1561656396</a></li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "Öppna iTAK-appen",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Hitta iTAK-ikonen och starta appen. Tillåt inte att appen söker efter andra enheter i det lokala nätverket. iTAK krypterar inte trafik i ett LAN.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/d2b86a0e4da37de8.webp",
+              "width": 1179,
+              "height": 2556
+            }
+          ]
+        },
+        {
+          "title": "Starta iTAK-installationsflödet",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Starta iTAK-installationsflödet.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/4bc489751e28b47d.webp",
+              "width": 1179,
+              "height": 2556
+            }
+          ]
+        },
+        {
+          "title": "Inställningar för anropssignal",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Ange din anropssignal i fältet Callsign. Lämna fältet Phone tomt.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/179742443855f7bd.webp",
+              "width": 1179,
+              "height": 2556
+            }
+          ]
+        },
+        {
+          "title": "Inställningar för Team/Roll",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Välj ditt Team och din Role.</li>\n<li>Lagets färg ska ha meddelats dig. Standardroll är Team Member</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/25a884ed6dc00676.webp",
+              "width": 1179,
+              "height": 2556
+            }
+          ]
+        },
+        {
+          "title": "Sekretessinställningar",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Aktivera aviseringar (Notifications) och platstjänster (Location Services)</li>\n<li>OBS! Godkänn alla iTAK-frågor om aviseringsutskick och platsanvändning.</li>\n<li>VIKTIGT! Tillåt platsanvändning även när du inte använder appen.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/60c55560970d34f8.webp",
+              "width": 1179,
+              "height": 2556
+            }
+          ]
+        },
+        {
+          "title": "iTAK öppnas / Återstående steg",
+          "layout": "text",
+          "html": "<ol>\n<li>Inställningar / Enhetsinställningar</li>\n<li>Serveranslutning / Paketimport</li>\n<li>Datasync-aktivering</li>\n<li>Kartinställningar</li>\n</ol>",
+          "images": []
+        },
+        {
+          "title": "iTAK-inställningar",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Öppna iTAK-inställningarna</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/8c1929e22a527c6e.webp",
+              "width": 1179,
+              "height": 2556
+            }
+          ]
+        },
+        {
+          "title": "iTAK Preferences-inställningar",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Öppna menyn <em>Preferences</em></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/ad672d1b8c61f6d9.webp",
+              "width": 1179,
+              "height": 2556
+            }
+          ]
+        },
+        {
+          "title": "iTAK Preferences enheter",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Öppna menyn <em>Unit of Measure</em></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/b1f7aa523dc46ad3.webp",
+              "width": 1179,
+              "height": 2556
+            }
+          ]
+        },
+        {
+          "title": "iTAK-enheter 1/2",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Välj följande enhetsformat.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/a7c0e607aa9afe83.webp",
+              "width": 1179,
+              "height": 2556
+            }
+          ]
+        },
+        {
+          "title": "iTAK-enheter 2/2",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Välj följande enhetsformat.</li>\n<li>Stäng inställningsfönstret</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/524c4c95f7dc4a7d.webp",
+              "width": 1179,
+              "height": 2556
+            }
+          ]
+        },
+        {
+          "title": "iTAK Packages / Importera konfiguration",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Navigera till Packages-funktionen</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/0eaf05e585e36850.webp",
+              "width": 1179,
+              "height": 2556
+            }
+          ]
+        },
+        {
+          "title": "iTAK importera paket",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Tryck på +-tecknet för att lägga till ett paket</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/2793eb64889d2e76.webp",
+              "width": 1179,
+              "height": 2556
+            }
+          ]
+        },
+        {
+          "title": "Lägg till uppdragspaket (Mission Package)",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Navigera till mappen på din enhet där du tidigare laddade ner en konfigurations-zip-fil.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/095f5897fa1210b0.webp",
+              "width": 1179,
+              "height": 2556
+            }
+          ]
+        },
+        {
+          "title": "Välj zip-filen",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Välj filen du laddade ner tidigare.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/c7159bfe8dd36b43.webp",
+              "width": 1179,
+              "height": 2556
+            }
+          ]
+        },
+        {
+          "title": "Paket importerat",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Importen lyckades när ett servernamn blir synligt</li>\n<li>Stäng Packages-fönstret.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/886151d89dfe7c5a.webp",
+              "width": 1179,
+              "height": 2556
+            }
+          ]
+        },
+        {
+          "title": "Serveranslutning och DataSync",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Serveranslutningen är nu CONNECTED</li>\n<li>Fortsätt till Data Sync-konfigurationen</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/919414ee0b73a1d2.webp",
+              "width": 1179,
+              "height": 2556
+            }
+          ]
+        },
+        {
+          "title": "Data Sync prenumerera på uppdrag",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Prenumerera på ett uppdrag (Mission) via +-tecknet</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/87481ce66a072a28.webp",
+              "width": 1179,
+              "height": 2556
+            }
+          ]
+        },
+        {
+          "title": "Tillgängliga uppdrag",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Du får en lista över tillgängliga uppdrag (Mission).</li>\n<li>Standarduppdraget att beställa är RECON.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/0df098efc62c5dda.webp",
+              "width": 1179,
+              "height": 2556
+            }
+          ]
+        },
+        {
+          "title": "Uppdragsinformation",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Återgå till Data Sync-sidan.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/807a0f0653c27ebe.webp",
+              "width": 1179,
+              "height": 2556
+            }
+          ]
+        },
+        {
+          "title": "Synkronisera uppdragsdata",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Tryck på cirkelpilarna för att göra en fullständig synkronisering av ett uppdrag</li>\n<li>Stäng Data Sync-vyn.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/3fe1150893e530f4.webp",
+              "width": 1179,
+              "height": 2556
+            }
+          ]
+        },
+        {
+          "title": "iTAK-konfigurationen klar",
+          "layout": "text",
+          "html": "<ul>\n<li>Vid behov kan du redigera:</li>\n<li>kartkälla (MAP Source)</li>\n<li>användarinställningar (User Preferences)</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "Kartkälla (Map Source)",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Gå till inställningarna (kugghjulsikonen)</li>\n<li>Gå till Map source</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/bcf5e5ebe13a5378.webp",
+              "width": 1179,
+              "height": 2556
+            }
+          ]
+        },
+        {
+          "title": "Ändra kartkälla",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Du får en vy över tillgängliga kartkällor</li>\n<li>Ändra kartkälla</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/b11423a782352344.webp",
+              "width": 1179,
+              "height": 2556
+            }
+          ]
+        },
+        {
+          "title": "Användarinställningar (User Preferences)",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Gå till inställningarna (kugghjulsikonen)</li>\n<li>Gå till User Preferences</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/3310d2100c68ae89.webp",
+              "width": 1179,
+              "height": 2556
+            }
+          ]
+        },
+        {
+          "title": "Redigera användarinställningar",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Redigera användarinställningarna vid behov</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/ebb7e48bd111a1db.webp",
+              "width": 1179,
+              "height": 2556
+            }
+          ]
+        },
+        {
+          "title": "Klart",
+          "layout": "text",
+          "html": "<ul>\n<li>Du kan stänga den här guiden.</li>\n</ul>",
+          "images": []
+        }
+      ]
+    },
+    {
+      "type": "html",
+      "html": "<p>När inställningarna har genomförts och anslutningen till takservern är klar, fortsätt till <a href=\"/doc/dc7f6de4-b754-457d-a704-dd1c792152af\">Receive Feeds</a></p>"
+    }
+  ]
+}

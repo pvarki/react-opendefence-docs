@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 1,
+  "id": "d0c6be08-127b-419f-a9d0-2a2204d1b67b",
+  "slug": "spara-skicka-och-dela-en-rapport-gU4Iv71nZV",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Spara, skicka och dela en rapport",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "TILLÄGG SOM STÖDS",
+    "Rapporter",
+    "Spara, skicka och dela en rapport"
+  ],
+  "createdAt": "2026-06-18T19:31:35.752Z",
+  "updatedAt": "2026-06-18T20:22:36.145Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/save-send-share-a-report-FCSrRHNkjC",
+    "fi": "/fi/guides/tak-guide/tallenna-laheta-ja-jaa-raportti-seWPZi6Bfz",
+    "sv": "/sv/guides/tak-guide/spara-skicka-och-dela-en-rapport-gU4Iv71nZV"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>När en rapport är ifylld gör du så här för att spara en kopia, skicka den till servern och få fram den till dem som behöver den.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Spara en lokal kopia eller ladda upp",
+          "layout": "image-bottom",
+          "html": "<p>Välj <strong>Save &#x26; Close</strong> längst ner i rapporten för att spara en lokal kopia, eller uppladdningsikonen för att ladda upp (<strong>Upload</strong>) till TAK Server. Om flera servrar är konfigurerade väljer du en; efter uppladdningen gråas knappen ut tills du ändrar något.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/e3df4f92a1bd6213.webp",
+              "width": 424,
+              "height": 375
+            }
+          ]
+        },
+        {
+          "title": "Lägg till eller ta bort bilagor",
+          "layout": "image-bottom",
+          "html": "<p>Välj <strong>Add New Attachment</strong> för att lägga till ett foto, en video eller en fil i rapporten. Välj <strong>Delete</strong>-papperskorgsikonen bredvid en fil för att ta bort den.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/40a838387550224b.webp",
+              "width": 526,
+              "height": 184
+            }
+          ]
+        },
+        {
+          "title": "Skicka rapporten",
+          "layout": "image-bottom",
+          "html": "<p>Välj uppladdnings- eller skickaikonen för att välja hur rapporten skickas iväg:</p>\n<ul>\n<li>till en <strong>Contact</strong>, <strong>Select Server</strong>, <strong>Cloud/FTP</strong>, <strong>Choose App</strong> eller <strong>Export</strong>.</li>\n<li>Data Sync och Cloud/FTP visas bara om de tilläggen är installerade.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/b8b6eb329179698a.webp",
+              "width": 800,
+              "height": 244
+            }
+          ]
+        },
+        {
+          "title": "Skicka via TAK Chat eller kopiera texten",
+          "layout": "image-bottom",
+          "html": "<p>Välj knappen <strong>Send</strong> för att se skickaalternativen.</p>\n<ul>\n<li><strong>TAK Chat</strong> skickar rapporten till användare på nätverket; <strong>Copy</strong> lägger den på urklipp för att klistras in i valfri chatt.</li>\n<li>För Data Sync, välj <strong>Data Sync Upload</strong>, välj ett flöde och tryck sedan på <strong>Send</strong>.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/894ec543cf32e4bc.webp",
+              "width": 511,
+              "height": 206
+            }
+          ]
+        },
+        {
+          "title": "Hantera dina sparade rapporter",
+          "layout": "image-bottom",
+          "html": "<p>Sparade kopior finns i Reports-panelen.</p>\n<ul>\n<li>Varje rapport har sin egen rad med ikoner: <strong>Upload</strong>, <strong>Details</strong>, <strong>PDF</strong>, <strong>Copy to Clipboard</strong>, <strong>Share</strong>, <strong>Visibility</strong> och <strong>Delete</strong>.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/dd7ec43088ae27a5.webp",
+              "width": 422,
+              "height": 219
+            }
+          ]
+        },
+        {
+          "title": "Skapa en PDF eller kopiera texten",
+          "layout": "image-bottom",
+          "html": "<p>Välj <strong>PDF</strong> för att skapa en PDF av rapporten. Välj <strong>Copy to Clipboard</strong> för att lägga rapporten som ren text i valfri Free Text- eller Contacts-kanal.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/dd7ec43088ae27a5.webp",
+              "width": 422,
+              "height": 219
+            }
+          ]
+        },
+        {
+          "title": "Dela via appar eller ta bort",
+          "layout": "image-bottom",
+          "html": "<p>Välj <strong>Share</strong> för att lämna över rapporten till valfri installerad app som kan skicka den.</p>\n<ul>\n<li>Välj <strong>Delete</strong> för att ta bort rapporten från enheten.</li>\n<li><strong>Visibility</strong> växlar rapportmarkören på kartan på eller av.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/dd7ec43088ae27a5.webp",
+              "width": 422,
+              "height": 219
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 1,
+  "id": "80ac7e08-4d91-44d7-b1a4-f44f08a5143a",
+  "slug": "skapa-en-rapport-YpiHRTtIiL",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Skapa en rapport",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "TILLÄGG SOM STÖDS",
+    "Rapporter",
+    "Skapa en rapport"
+  ],
+  "createdAt": "2026-06-18T19:31:28.317Z",
+  "updatedAt": "2026-06-18T20:22:34.471Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/create-a-report-FB38XVNhaL",
+    "fi": "/fi/guides/tak-guide/luo-raportti-ATqNeF4S9c",
+    "sv": "/sv/guides/tak-guide/skapa-en-rapport-YpiHRTtIiL"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Skapa och skicka en strukturerad rapport från ATAK så att ditt högkvarter får lägesbilden i ett känt format, sparad lokalt eller skickad direkt till TAK Server.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Öppna Reports-verktyget",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på <strong>Reports</strong> i verktygsfältet.</p>\n<ul>\n<li>Reports-panelen öppnas med <strong>Search</strong>, <strong>Multi-select</strong>, <strong>Sort</strong>, <strong>Create A Report</strong>, <strong>Editor</strong>, <strong>Visibility</strong> och <strong>Delete All</strong>.</li>\n<li>Du behöver ingen anslutning till TAK Server för att skapa en.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/9d58fe854259f743.webp",
+              "width": 422,
+              "height": 51
+            }
+          ]
+        },
+        {
+          "title": "Starta en ny rapport",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på <strong>Create A Report</strong>. Prompten <strong>Report Category</strong> visas. Välj den rapporttyp som passar, till exempel <strong>Counter Intel</strong>, <strong>DHS</strong>, <strong>Surveillance</strong> eller <strong>Custom</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/f7cd973673176e13.webp",
+              "width": 540,
+              "height": 271
+            }
+          ]
+        },
+        {
+          "title": "Fyll i fälten",
+          "layout": "image-bottom",
+          "html": "<p>Gå igenom formuläret och fyll i varje fält. Obligatoriska fält visas med <strong>röd text</strong> tills de är ifyllda. Lägg till en <strong>Title</strong>, kontrollera <strong>DateTime</strong> och använd <strong>Tags</strong> för att göra rapporten lätt att hitta senare.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/e3df4f92a1bd6213.webp",
+              "width": 424,
+              "height": 375
+            }
+          ]
+        },
+        {
+          "title": "Ange platsen",
+          "layout": "image-bottom",
+          "html": "<p>Använd <strong>penn</strong>-ikonen på <strong>Location</strong>-raden för att ange eller ändra rapportens position, och lägg sedan till en <strong>Location Description</strong> om det hjälper. Rutkoordinaten fylls i automatiskt.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/e3df4f92a1bd6213.webp",
+              "width": 424,
+              "height": 375
+            }
+          ]
+        },
+        {
+          "title": "Lägg till bilagor",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på <strong>+ Add New Attachment</strong> för att bifoga ett foto, en video eller en fil från enheten. Tryck på <strong>Delete</strong>-ikonen bredvid ett objekt för att ta bort det.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/40a838387550224b.webp",
+              "width": 526,
+              "height": 184
+            }
+          ]
+        },
+        {
+          "title": "Spara, ladda upp eller skicka",
+          "layout": "image-bottom",
+          "html": "<p>När du är klar trycker du på <strong>Save &#x26; Close</strong> för att behålla en lokal kopia, eller <strong>Upload</strong> för att publicera till <strong>TAK Server</strong>. Send-dialogen kan även skicka rapporten till en <strong>Contact</strong>, <strong>Cloud/FTP</strong>, en annan app, eller <strong>Export</strong>era den.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/b8b6eb329179698a.webp",
+              "width": 800,
+              "height": 244
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

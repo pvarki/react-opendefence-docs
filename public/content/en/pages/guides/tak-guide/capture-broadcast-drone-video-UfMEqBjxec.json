@@ -8,13 +8,18 @@
   "breadcrumb": [
     "Platforms",
     "ATAK",
-    "Supported Plugins",
+    "SUPPORTED PLUGINS",
     "UAS Tool",
     "Capture & Broadcast Drone Video"
   ],
   "createdAt": "2026-06-15T19:47:54.506Z",
-  "updatedAt": "2026-06-15T19:47:54.506Z",
+  "updatedAt": "2026-06-18T20:21:44.552Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/capture-broadcast-drone-video-UfMEqBjxec",
+    "fi": "/fi/guides/tak-guide/kuvaa-ja-laheta-lennokin-videota-rjbcDzCyvV",
+    "sv": "/sv/guides/tak-guide/fanga-och-sand-dronarvideo-81f1fTM3IL"
+  },
   "blocks": [
     {
       "type": "html",
@@ -39,7 +44,7 @@
         {
           "title": "Broadcast video to the team",
           "layout": "image-bottom",
-          "html": "<p>Tap <strong>Broadcast ON</strong> to stream the feed to other TAK users over Wi-Fi or tactical radio. The button turns green when the stream is live. Teammates open it with <strong>Video</strong> on the UAS map marker radial.</p>",
+          "html": "<p>Tap <strong>Broadcast ON</strong> to stream the feed to other TAK users over Wi-Fi or tactical radio.</p>\n<ul>\n<li>The button turns green when the stream is live.</li>\n<li>Teammates open it with <strong>Video</strong> on the UAS map marker radial.</li>\n</ul>",
           "images": [
             {
               "src": "/content/images/en/attachments/7d9a7786064a3b4e.webp",
@@ -87,7 +92,7 @@
         {
           "title": "Record video locally",
           "layout": "image-bottom",
-          "html": "<p>Tap <strong>Record Video</strong> to start and stop recording the incoming feed. Clips save to the EUD and show up in ATAK's Video Player. Long-press the button to record to the EUD, the drone's SD card, or both.</p>",
+          "html": "<p>Tap <strong>Record Video</strong> to start and stop recording the incoming feed.</p>\n<ul>\n<li>Clips save to the EUD and show up in ATAK's Video Player.</li>\n<li>Long-press the button to record to the EUD, the drone's SD card, or both.</li>\n</ul>",
           "images": [
             {
               "src": "/content/images/en/attachments/7d9a7786064a3b4e.webp",

@@ -19,14 +19,14 @@
     "userCard": "Käytän Deploy Appia",
     "userCardDesc": "Aloita, kirjaudu ja käytä palveluita kentällä",
     "guidesCard": "Tarvitsen tuoteoppaan",
-    "guidesCardDesc": "Vaiheittaiset ohjeet virallisiin tuoteintegraatioihin, kuten TAK",
+    "guidesCardDesc": "Virallisten tuoteintegraatioiden käyttöohjeet - TAK ja muut",
     "devCard": "Kehitän tai operoin",
-    "devCardDesc": "Arkkitehtuuri, integraatiot, API-referenssi, ohjeet",
+    "devCardDesc": "Arkkitehtuuri, integraatiot, API-spec, ohjeet",
     "continueReading": "Jatka lukemista",
     "powerCard": "Olen tehokäyttäjä",
     "powerCardDesc": "Käytä tuotteita edistyneillä tavoilla",
     "demoCard": "Kokeile demoa",
-    "demoCardDesc": "Katso, miten Deploy App toimii ja tuntuu"
+    "demoCardDesc": "Kokeile, miten Deploy App toimii ja miltä se tuntuu"
   },
   "reader": {
     "pageOf": "Sivu {{current}} / {{total}}",
@@ -132,6 +132,14 @@
   },
   "advancedFooter": {
     "lead": "Nämä wikit tarjoavat edistynyttä tietoa tuotteista syventääkseen ymmärrystäsi niistä ja niiden ominaisuuksista. Niitä kehittävät yhteisömme vanhemmat asiantuntijat."
+  },
+  "agentNote": {
+    "label": "Olen agenttiystävällinen.",
+    "lead": "Osoita tekoälyagenttisi tälle sivustolle ja pyydä apua — esimerkiksi:",
+    "link": "Agentit aloittavat osoitteesta /llms.txt",
+    "exampleHome": "Mikä Deploy App on ja miten pääsen alkuun?",
+    "exampleGuides": "Miten yhdistän ATAKin Deploy App -palvelimeeni?",
+    "exampleDev": "Miten rakennan ja julkaisen OpenDefence-integraation?"
   },
   "contents": {
     "siteTitle": "Sivuston sisältö",

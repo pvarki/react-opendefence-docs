@@ -12,8 +12,13 @@
     "Interface"
   ],
   "createdAt": "2026-06-13T22:59:18.388Z",
-  "updatedAt": "2026-06-13T22:59:18.388Z",
+  "updatedAt": "2026-06-18T20:38:56.803Z",
   "headings": [],
+  "translations": {
+    "en": "/en/deploy-app/interface-pyG1Ln1MfU",
+    "fi": "/fi/deploy-app/kayttoliittyma-AYxx37RhPK",
+    "sv": "/sv/deploy-app/granssnitt-fbWb4p1Ea6"
+  },
   "blocks": [
     {
       "type": "slideset",

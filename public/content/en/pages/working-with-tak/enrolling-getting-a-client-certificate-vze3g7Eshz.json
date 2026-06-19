@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "id": "fd617030-5259-4f27-888c-f92fbcc5701a",
+  "slug": "enrolling-getting-a-client-certificate-vze3g7Eshz",
+  "collection": "working-with-tak",
+  "locale": "en",
+  "title": "Enrolling & getting a client certificate",
+  "breadcrumb": [
+    "Integrating to TAK Server",
+    "Enrolling & getting a client certificate"
+  ],
+  "createdAt": "2026-06-17T18:21:47.971Z",
+  "updatedAt": "2026-06-17T18:21:50.829Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "The human flow first",
+      "id": "the-human-flow-first"
+    },
+    {
+      "depth": 2,
+      "text": "Getting the certificate (CSR signing)",
+      "id": "getting-the-certificate-csr-signing"
+    },
+    {
+      "depth": 2,
+      "text": "Tokens (JWT) when a cert isn't convenient",
+      "id": "tokens-jwt-when-a-cert-isnt-convenient"
+    },
+    {
+      "depth": 2,
+      "text": "Building a product integration (vs. a user client)",
+      "id": "building-a-product-integration-vs-a-user-client"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>This is the concrete flow for obtaining the <strong>mTLS client certificate</strong> (and, where needed, a <strong>JWT</strong>) that authenticates you to TAK Server on a Deploy App deployment. The operations are in the <strong>Deploy App Core API (RASENMAEHER)</strong> spec under <code>/api/v1/…</code>.</p>\n<h2 id=\"the-human-flow-first\"><a href=\"#the-human-flow-first\">The human flow first</a></h2>\n<p>Deploy App's onboarding is invite-and-approve:</p>\n<ol>\n<li><strong>An operator stands up the stack and creates the first admin.</strong> Bootstrapping uses a one-time code — <code>rasenmaeher_api addcode</code> on the server, paired with the <code>GET /api/v1/firstuser/check-code</code> and <code>POST /api/v1/firstuser/add-admin</code> endpoints.</li>\n<li><strong>Admins invite users</strong> — invite codes and verification codes: <code>POST /api/v1/enrollment/invitecode/create</code>, <code>POST /api/v1/enrollment/generate-verification-code</code>.</li>\n<li><strong>A user enrolls</strong> with that code: <code>POST /api/v1/enrollment/init</code>, then polls <code>GET /api/v1/enrollment/have-i-been-accepted</code> / <code>…/status</code>.</li>\n<li><strong>An admin approves</strong> the waiting user: <code>POST /api/v1/enrollment/accept</code> (admins can also <code>promote</code> / <code>demote</code> / <code>lock</code>).</li>\n</ol>\n<p>Once accepted, the identity becomes <strong>certificate-backed</strong>.</p>\n<h2 id=\"getting-the-certificate-csr-signing\"><a href=\"#getting-the-certificate-csr-signing\">Getting the certificate (CSR signing)</a></h2>\n<p>Your client (or service) generates a key pair and a <strong>CSR</strong>, and Deploy App's CA signs it:</p>\n<ul>\n<li><code>POST /api/v1/product/sign_csr</code> — submit a CSR, get back the signed client certificate <strong>and the CA chain</strong>.</li>\n<li><code>POST /api/v1/product/sign_csr/mtls</code> — the mTLS-authenticated variant (renew/issue when you already hold a cert).</li>\n<li><code>POST /api/v1/product/renew_csr</code> — renew before expiry.</li>\n<li><code>POST /api/v1/product/revoke/mtls</code> — revoke.</li>\n</ul>\n<p>The returned certificate + CA chain is exactly what you load into your TLS client to present to <strong>TAK Server</strong> (Marti API and the CoT stream) and to <strong>Keycloak</strong>.</p>\n<h2 id=\"tokens-jwt-when-a-cert-isnt-convenient\"><a href=\"#tokens-jwt-when-a-cert-isnt-convenient\">Tokens (JWT) when a cert isn't convenient</a></h2>\n<p>For flows that use a bearer token instead of (or alongside) the cert:</p>\n<ul>\n<li><code>POST /api/v1/token/jwt/exchange</code> — exchange a credential for a JWT.</li>\n<li><code>GET /api/v1/token/jwt/refresh</code> — refresh it.</li>\n<li><code>POST /api/v1/token/code/generate</code> + <code>POST /api/v1/token/code/exchange</code> — the login-code pattern (generate a short code, exchange it for a token) used by UI/device onboarding.</li>\n</ul>\n<p>Verify whichever you hold with the <code>check-auth</code> endpoints: <code>/api/v1/check-auth/mtls</code>, <code>/check-auth/jwt</code>, <code>/check-auth/mtls_or_jwt</code>, <code>/check-auth/validuser</code>.</p>\n<h2 id=\"building-a-product-integration-vs-a-user-client\"><a href=\"#building-a-product-integration-vs-a-user-client\">Building a product integration (vs. a user client)</a></h2>\n<p>If you're registering a <strong>new product/service</strong> with Deploy App (not just connecting as a user), the core also exposes a <strong>product proxy</strong> (<code>/api/v1/product/proxy/&#x3C;short_name>/…</code>) and an <strong>outbound callback contract</strong> — the hub calls your integration over mTLS on every user change so you stay in sync. That side is its own topic (Deploy App's <em>Build an Integration</em> book); for talking to TAK Server you typically just need the client certificate above.</p>\n<blockquote>\n<p>Full request/response shapes are in the <strong>Deploy App Core API</strong> reference (<code>public/api-specs/rasenmaeher/</code>). Treat the endpoint names here as the map; the spec is the territory.</p>\n</blockquote>\n<p>→ Next: <a href=\"/en/working-with-tak/keycloak-identity-groups-WXsDTvK7H8\">Keycloak: identity &#x26; groups</a>.</p>"
+    }
+  ]
+}

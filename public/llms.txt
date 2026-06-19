@@ -1,0 +1,56 @@
+# OpenDefence Docs (docs.opendefence.fi)
+
+> Documentation for Deploy App and the OpenDefence stack — an FDF-serving,
+> open-source command-and-control platform. Operators use Deploy App to deploy
+> services (TAK, Matrix, MediaMTX, CryptPad) to soldiers; soldiers use those
+> services with no special training. This file tells an AI agent how to work
+> with this site, in either of two modes:
+>   1. HELP a user use the products (Deploy App, TAK, Matrix, MediaMTX, CryptPad).
+>   2. DEVELOP or OPERATE the stack.
+
+This site is a static, offline-capable docs reader (a React SPA). The rendered
+HTML is just a shell — do not scrape it. All content is published as structured
+JSON you can fetch directly, described below. Locales are `en`, `fi`, and `sv`;
+use `en` if unsure. Replace `{locale}` in any path with one of those.
+
+## Start here — enumerate the content
+
+- [Site manifest](https://docs.opendefence.fi/content/en/manifest.json): the index of every book (collection) — its slug, label, section, platforms/clients, and page list. Begin here to discover what exists.
+- Book outline (sidebar / page tree): `https://docs.opendefence.fi/content/{locale}/sidebars/{sidebar-file}.json`. One file per book; the file name is the book slug with `/` replaced by `-` (e.g. book slug `guides/tak-guide` → [`guides-tak-guide.json`](https://docs.opendefence.fi/content/en/sidebars/guides-tak-guide.json)).
+- Page content: `https://docs.opendefence.fi/content/{locale}/pages/{book-slug}/{page-slug}.json` — a page's title, breadcrumb, and content blocks (HTML and picture-and-text "slidesets"). Here `{book-slug}` keeps its `/` (e.g. `guides/tak-guide`).
+- Human-readable page URL (same content, rendered): `https://docs.opendefence.fi/{locale}/{book-slug}/{page-slug}`.
+
+## Mode 1 — Helping a user with the products
+
+Answer "how do I…" questions from the guides. Map the question to a book, read
+its sidebar to find the right page, then fetch that page's JSON. Books:
+
+- **Deploy App** — the hub: join a server, manage users and roles, deploy services. Pages under `/content/en/pages/deploy-app/`.
+- **TAK Guide** (ATAK / iTAK / WinTAK) — situational awareness and a shared map. Pages under `/content/en/pages/guides/tak-guide/`.
+- **Matrix Guide** — secure, federated messaging (Element X + Synapse). Pages under `/content/en/pages/guides/matrix-guide/`.
+- **MTX Guide** (MediaMTX) — low-latency live video from drones and phones. Pages under `/content/en/pages/guides/mtx-guide/`.
+- **CryptPad Guide** — end-to-end-encrypted collaboration and file sharing. Pages under `/content/en/pages/guides/cryptpad-guide/`.
+- **Advanced wikis** (TAK, MTX) — deeper technical reference for power users. Pages under `/content/en/pages/wikis/`.
+
+## Mode 2 — Developing or operating the stack
+
+Read the per-repo `AGENTS.md` FIRST — those files are the source of truth for
+building, running, and operating each deployment target. Pick the one that
+matches the target the user is working with:
+
+- [docker-rasenmaeher-integration — AGENTS.md](https://github.com/pvarki/docker-rasenmaeher-integration/blob/main/AGENTS.md): the Docker Compose Deploy App stack (RASENMAEHER core + bundled product integrations). Start here for single-host / air-gapped deployments. ([repo root](https://github.com/pvarki/docker-rasenmaeher-integration))
+- [opendefence-platform — AGENTS.md](https://github.com/pvarki/opendefence-platform/blob/main/AGENTS.md): the Kubernetes platform. Start here for clustered / production-scale deployments. ([repo root](https://github.com/pvarki/opendefence-platform))
+
+Then use the developer documentation and references on this site:
+
+- **Developer books** — enumerate collections with `"section": "dev"` in the manifest; their pages live under `/content/en/pages/{book-slug}/`. Known books: `introduction` (what Deploy App is, choosing a platform), `operate` (deploy and run), `develop-deploy-app` (work on the core/rmapi), `build-an-integration`, and `contribute-to-project`.
+- [API reference manifest](https://docs.opendefence.fi/api-specs/manifest.json): OpenAPI specs for the rmapi and integration APIs, under `/api-specs/` (rendered at `/en/dev/api`).
+- [Release & changelog manifest](https://docs.opendefence.fi/release-docs/manifest.json): per-component releases and changelogs, under `/release-docs/` (rendered at `/en/dev/releases`).
+- Integration starting points: [python-integration-template](https://github.com/pvarki/python-integration-template) (scaffold an rmapi integration) and [python-matrix-rmapi](https://github.com/pvarki/python-matrix-rmapi) (a worked example).
+
+## Notes for agents
+
+- Content is authored in Outline and synced into the site as JSON; you do not have write access to the live site. To change docs, edit in Outline (see the "Writing docs" guides) — not the JSON.
+- Prefer the JSON endpoints above over rendering the SPA. Fetch `manifest.json`, walk the sidebars, then read page JSON.
+- A Pagefind full-text index is published under `/pagefind/` if your runtime can use it; otherwise enumerate via the manifest.
+- All product integrations shown here are open source. Code lives in the [pvarki GitHub organization](https://github.com/pvarki).

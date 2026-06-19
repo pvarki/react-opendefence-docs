@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 1,
+  "id": "73477c7c-6ad3-4efc-8e5a-e50ea4f452eb",
+  "slug": "skapa-rutter-och-anvand-vns-KURI7xcoXM",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Skapa rutter och använd VNS",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "Avancerade kärnfunktioner",
+    "Skapa rutter och använd VNS"
+  ],
+  "createdAt": "2026-06-18T19:27:13.294Z",
+  "updatedAt": "2026-06-18T20:14:47.799Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/create-routes-and-use-vns-uymW3nDSPE",
+    "fi": "/fi/guides/tak-guide/luo-reitteja-ja-kayta-vnsaa-JMeuuWETPf",
+    "sv": "/sv/guides/tak-guide/skapa-rutter-och-anvand-vns-KURI7xcoXM"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>VNS-tillägget fäster dina rutter mot verkliga vägar och ger sväng-för-sväng-ledning med ljud och bild, plus omdirigering i farten om du kommer av rutten.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Öppna Routes-verktyget",
+          "layout": "image-bottom",
+          "html": "<p>Öppna <strong>Routes</strong>-verktyget och välj <strong>+</strong>-knappen för att starta en ny rutt. Med VNS laddat öppnas ruttplaneringsdialogen i stället för den vanliga markördialogen.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/d8a37c13a3405e63.webp",
+              "width": 546,
+              "height": 94
+            }
+          ]
+        },
+        {
+          "title": "Ange adresser och välj ruttmetod",
+          "layout": "image-bottom",
+          "html": "<p>Fyll i fälten för start, en eller flera <strong>waypoint</strong> och <strong>destination</strong>.</p>\n<ul>\n<li>Välj <strong>Google Routing</strong>, <strong>Offline Routing</strong> eller <strong>Private Routing Server</strong>, kryssa i önskade <strong>Avoid Ferries / Highways / Tolls</strong>-rutor och välj sedan <strong>Create</strong>.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/98914f15e152b704.webp",
+              "width": 763,
+              "height": 1475
+            }
+          ]
+        },
+        {
+          "title": "Ställ in varje adress för hand",
+          "layout": "image-bottom",
+          "html": "<p>Välj <strong>Menu</strong>-knappen bredvid valfritt adressfält för att välja hur det ska ställas in: ange via <strong>GoTo</strong>, <strong>map select</strong>, rensa fältet eller välj en <strong>recent address</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/c5f27427c934e909.webp",
+              "width": 418,
+              "height": 263
+            }
+          ]
+        },
+        {
+          "title": "Rutta runt regioner",
+          "layout": "image-bottom",
+          "html": "<p>För offline-ruttning, kryssa i <strong>Route around geofences?</strong> för att undvika alla geofences, eller kryssa i <strong>Route around regions in region manager?</strong> och välj <strong>Open Route Around Region Manager</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/18890bc8def202cd.webp",
+              "width": 800,
+              "height": 622
+            }
+          ]
+        },
+        {
+          "title": "Hantera formerna att undvika",
+          "layout": "image-bottom",
+          "html": "<p>Välj befintliga former att rutta runt, lägg till nya med <strong>+</strong>-knappen eller ta bort en form med dess papperskorgsikon. Välj <strong>Done</strong> när du är klar.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/fa3c942d53113175.webp",
+              "width": 800,
+              "height": 609
+            }
+          ]
+        },
+        {
+          "title": "Namnge, ställ in kontrollpunkter och ledtrådar",
+          "layout": "image-bottom",
+          "html": "<p>I ruttdetaljerna kan du byta namn på rutten, ställa in <strong>Route Details</strong>-typ (infil/exfil, primär/sekundär), namnge kontrollpunkter, ställa in en <strong>Navigation Cue</strong> per kontrollpunkt och göra <strong>VNS Recalculate</strong> för hela rutten eller en enskild sträcka. Välj <strong>GO</strong> för att börja navigera.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/a4b2abaaf7ad6e27.webp",
+              "width": 800,
+              "height": 959
+            }
+          ]
+        },
+        {
+          "title": "VNS-omräkna en manuell rutt",
+          "layout": "image-bottom",
+          "html": "<p>För att omvandla en handritad rutt, öppna dess detaljer, ställ in den som en bilrutt i <strong>Route Details Dropdown</strong> och välj sedan <strong>VNS Recalculate</strong> uppe till höger för hela rutten, eller på en kontrollpunktsrad för bara den sträckan.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/87069ff4e3894237.webp",
+              "width": 800,
+              "height": 284
+            }
+          ]
+        },
+        {
+          "title": "Omdirigering och Quick Nav-säkra punkter",
+          "layout": "image-bottom",
+          "html": "<p>Under navigering blir <strong>Re-routing</strong>-ikonens kant grön när funktionen är aktiverad, så att ATAK räknar om ifall du kommer av rutten. Fördefiniera säkra punkter under <strong>Additional Tools</strong> > <strong>VNS</strong> > <strong>Set Quick Nav Points</strong>, namnge dem med <strong>Add new Quick Nav point</strong> och tryck sedan på <strong>Quick Nav</strong> under navigering för att rutta till en.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/2a1bce24cde940fe.webp",
+              "width": 800,
+              "height": 381
+            }
+          ]
+        },
+        {
+          "title": "Ladda ner offline-ruttningsdata",
+          "layout": "image-bottom",
+          "html": "<p>Offline-ruttning och -omdirigering kräver ett lokalt dataset. Gå till <strong>Additional Tools</strong> > <strong>VNS</strong> > <strong>Manage Offline Areas</strong> och välj sedan <strong>Download</strong> för att hämta ett dataset till enheten eller <strong>Delete</strong> för att ta bort ett.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/8f29cfaeff23f184.webp",
+              "width": 800,
+              "height": 319
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "id": "341ff94e-c4b1-4fdf-8411-ea82f4c4cd40",
+  "slug": "mat-avstand-och-baring-eegRo4EznT",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Mät avstånd och bäring",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "YTTERLIGARE FUNKTIONER",
+    "Avstånds- och bäringsverktyg",
+    "Mät avstånd och bäring"
+  ],
+  "createdAt": "2026-06-18T19:29:18.955Z",
+  "updatedAt": "2026-06-18T20:20:40.968Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/measure-range-bearing-vEAV62W7O1",
+    "fi": "/fi/guides/tak-guide/mittaa-etaisyys-ja-suuntakulma-DUBmCeWCli",
+    "sv": "/sv/guides/tak-guide/mat-avstand-och-baring-eegRo4EznT"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Dra en tvåpunktslinje på kartan för att få exakt avstånd och azimut mellan en start- och en slutpunkt — grunden för eldledning och spaningsrapporter.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Rita Range&Bearing-linjen",
+          "layout": "image-bottom",
+          "html": "<p>Öppna verktygsfältet <strong>Range Tools</strong> från <strong>Additional Tools &#x26; Plugins</strong> och tryck sedan på ikonen <strong>R&#x26;B Line</strong> så att den blir gul. Tryck på din startpunkt och tryck sedan på en andra punkt för att lägga ut linjen.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/1827d04a68014926.webp",
+              "width": 250,
+              "height": 208
+            }
+          ]
+        },
+        {
+          "title": "Läs av avstånd och azimut",
+          "layout": "image-bottom",
+          "html": "<p>Linjens etikett visar <strong>azimuth</strong> (azimut) och <strong>distance</strong> (avstånd) mellan de två punkterna (till exempel <code>68°M  12.21 km</code>). Linjen ligger kvar tills du tar bort den.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/5987b70235dd5bf6.webp",
+              "width": 244,
+              "height": 68
+            }
+          ]
+        },
+        {
+          "title": "Flytta med en Dynamic R&B Line",
+          "layout": "image-bottom",
+          "html": "<p>Använd i stället <strong>Dynamic R&#x26;B Line</strong> för att dra en ändpunkt och mäta om i farten. När den är där du vill ha den, tryck på linjens mitt och använd <strong>Pin</strong> för att låsa linjen på plats.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/47abd3f788f1958e.webp",
+              "width": 250,
+              "height": 181
+            }
+          ]
+        },
+        {
+          "title": "Välj dina bäringsenheter",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på en ändpunkt och sedan på radialmenyn <strong>Angle Bearing Units</strong> för att ändra hur azimuten läses av. Välj den enhet som ditt eldnät använder:</p>\n<ul>\n<li>Degrees True / Mils True</li>\n<li>Degrees Magnetic / Mils Magnetic</li>\n<li>Degrees Grid / Mils Grid</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/d02bb29b8fedd5d4.webp",
+              "width": 200,
+              "height": 181
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

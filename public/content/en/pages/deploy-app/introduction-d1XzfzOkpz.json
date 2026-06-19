@@ -10,8 +10,13 @@
     "Introduction"
   ],
   "createdAt": "2026-06-12T23:07:43.260Z",
-  "updatedAt": "2026-06-13T22:14:07.337Z",
+  "updatedAt": "2026-06-18T20:38:49.397Z",
   "headings": [],
+  "translations": {
+    "en": "/en/deploy-app/introduction-d1XzfzOkpz",
+    "fi": "/fi/deploy-app/johdanto-pVdcEzIB4j",
+    "sv": "/sv/deploy-app/introduktion-8VdRmYg8Vp"
+  },
   "blocks": [
     {
       "type": "html",

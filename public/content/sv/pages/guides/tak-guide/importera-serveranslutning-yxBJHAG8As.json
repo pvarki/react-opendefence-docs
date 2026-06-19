@@ -1,0 +1,118 @@
+{
+  "schemaVersion": 1,
+  "id": "34f8a476-be76-4186-98f2-7d4cae355ae3",
+  "slug": "importera-serveranslutning-yxBJHAG8As",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Importera serveranslutning",
+  "breadcrumb": [
+    "Platforms",
+    "TAK Tracker - Android",
+    "STARTA OCH ANSLUT",
+    "Importera serveranslutning"
+  ],
+  "createdAt": "2026-06-18T19:39:05.465Z",
+  "updatedAt": "2026-06-18T20:26:38.685Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/importing-server-connection-URmd6F0UU5",
+    "fi": "/fi/guides/tak-guide/palvelinyhteyden-tuonti-se5nhvhcj0",
+    "sv": "/sv/guides/tak-guide/importera-serveranslutning-yxBJHAG8As"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Öppna TAK Tracker",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Hitta TAK Tracker-ikonen och starta appen.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/8d5d065c3a7b66c6.webp",
+              "width": 225,
+              "height": 225
+            }
+          ]
+        },
+        {
+          "title": "Öppna TAK Tracker-appen",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Öppna Settings längst upp till höger.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/f188b0342fad947c.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "Importera serverpaket 1",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Välj importverktyget längst upp till höger.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/5f9d159d3e0512e5.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "Importera serverpaket 2",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Ge TAK Tracker åtkomst till filer på enheten.</li>\n<li>Callsign-Server-Instance.zip</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/9387df0a4aa077ea.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "Importera serverpaket 3",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Gå till enhetens Downloads-mapp och välj Deploy App-paketet.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/7aa40b9621466c3a.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "Kontrollera inställningarna",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Kontrollera att inställningarna har importerats till TAK Tracker</li>\n<li>Välj Done</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/a669809e16da962d.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "Öppna TAK Tracker-appen",
+          "layout": "image-left",
+          "html": "<ul>\n<li>På enheten ska det nu stå Server: Connected.</li>\n</ul>\n<hr>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/b1b8bd8adcaaae83.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "html",
+      "html": "<p>När TAK Tracker är ansluten till servern, fortsätt till…</p>"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "23f98cb7-b38b-4f44-8bfc-a8a467c412eb",
+  "slug": "soldat-Mq5QiVrMr1",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Soldat",
+  "breadcrumb": [
+    "Platforms",
+    "TAK Tracker - Android",
+    "ANVÄNDNING PER ROLL",
+    "Soldat"
+  ],
+  "createdAt": "2026-06-18T19:44:16.130Z",
+  "updatedAt": "2026-06-18T20:26:58.610Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/fighter-gUAGHKAtVV",
+    "fi": "/fi/guides/tak-guide/taistelija-jkvrnZXkli",
+    "sv": "/sv/guides/tak-guide/soldat-Mq5QiVrMr1"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>(Den här fliken ska inte visas)</p>"
+    }
+  ]
+}

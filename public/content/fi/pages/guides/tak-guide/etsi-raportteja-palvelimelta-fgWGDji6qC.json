@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "id": "29740247-087a-4d50-a9f3-7421d1f59b90",
+  "slug": "etsi-raportteja-palvelimelta-fgWGDji6qC",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Etsi raportteja palvelimelta",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "TUETUT LISÄOSAT",
+    "Raportit",
+    "Etsi raportteja palvelimelta"
+  ],
+  "createdAt": "2026-06-18T19:31:36.455Z",
+  "updatedAt": "2026-06-18T20:22:37.560Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/find-reports-on-the-server-QTVm3SETE8",
+    "fi": "/fi/guides/tak-guide/etsi-raportteja-palvelimelta-fgWGDji6qC",
+    "sv": "/sv/guides/tak-guide/hitta-rapporter-pa-servern-Nt8T6THdnt"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Hae muiden yksiköiden TAK Serverille lähettämiä raportteja, rajaa niitä ja tallenna tarvitsemasi omalle laitteellesi.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Hae palvelimelta",
+          "layout": "image-bottom",
+          "html": "<p>Tarvitset toimivan TAK Server -yhteyden. Valitse <strong>Search</strong>, kirjoita teksti ja suorita haku valitsemalla <strong>Search</strong> uudelleen. Täsmäävät raportit täyttävät luettelon, ja vihreät kuvakkeet merkitsevät niiden sijainnit kartalle.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/5774cf8de3b5964e.webp",
+              "width": 800,
+              "height": 561
+            }
+          ]
+        },
+        {
+          "title": "Rajaa suodattimilla",
+          "layout": "image-bottom",
+          "html": "<p>Valitse <strong>Filter</strong> lisätäksesi parametreja, kuten <strong>Current Map View</strong>, <strong>Date Range</strong>, <strong>Limit Shown To</strong> tai <strong>Report Type</strong>. Voit yhdistää useita kerralla ja päivittää tulokset valitsemalla <strong>Confirm</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/643415a2b393deaa.webp",
+              "width": 800,
+              "height": 718
+            }
+          ]
+        },
+        {
+          "title": "Lataa raportti",
+          "layout": "image-bottom",
+          "html": "<p>Valitse raportti luettelosta laajentaaksesi sen yhteenvedon ja siirtyäksesi siihen kartalla. Tallenna paikallinen kopio valitsemalla merkinnän oikealla puolella oleva <strong>Download</strong>. Karttakuvake muuttuu vihreästä valkoiseksi tallennuksen jälkeen.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/be983a1b06fc461e.webp",
+              "width": 800,
+              "height": 314
+            }
+          ]
+        },
+        {
+          "title": "Muokkaa paikallista raporttia",
+          "layout": "image-bottom",
+          "html": "<p>Avaa tallennettu raportti Reports-paneelista. Valitse <strong>Details</strong> (luettelosta tai karttamerkin säteittäisvalikosta) tarkastellaksesi ja muokataksesi sitä, muuta tarvitsemasi kentät ja valitse sitten <strong>Save Draft</strong> paikallista kopiota varten tai <strong>Upload</strong> tallentaaksesi ja lähettääksesi sen.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/dd7ec43088ae27a5.webp",
+              "width": 422,
+              "height": 219
+            }
+          ]
+        },
+        {
+          "title": "Näytä tai piilota kartalla",
+          "layout": "image-bottom",
+          "html": "<p>Valitse <strong>Visibility</strong>-painike vaihtaaksesi, näkyykö raportti kartalla. Käytä sitä karsiaksesi sekavuutta poistamatta paikallista kopiotasi.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/dd7ec43088ae27a5.webp",
+              "width": 422,
+              "height": 219
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

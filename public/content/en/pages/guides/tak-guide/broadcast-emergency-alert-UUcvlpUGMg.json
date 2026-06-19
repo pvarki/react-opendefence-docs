@@ -12,8 +12,13 @@
     "Broadcast Emergency Alert"
   ],
   "createdAt": "2026-06-15T19:39:42.888Z",
-  "updatedAt": "2026-06-15T21:18:57.709Z",
+  "updatedAt": "2026-06-18T20:15:56.211Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/broadcast-emergency-alert-UUcvlpUGMg",
+    "fi": "/fi/guides/tak-guide/laheta-hatahalytys-qv6woTAZ5H",
+    "sv": "/sv/guides/tak-guide/sand-nodlarm-cSlVtIcpdv"
+  },
   "blocks": [
     {
       "type": "html",

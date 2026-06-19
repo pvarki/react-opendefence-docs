@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "1f301b06-a1b5-47eb-8da4-813148a22548",
+  "slug": "tallenna-tapahtumat-qjxLc57ea2",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Tallenna tapahtumat",
+  "breadcrumb": [
+    "Platforms",
+    "WinTAK",
+    "Tuetut lisäosat",
+    "TAK Replay",
+    "Tallenna tapahtumat"
+  ],
+  "createdAt": "2026-06-18T19:34:28.168Z",
+  "updatedAt": "2026-06-18T20:24:41.221Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/record-events-2LJeWe6cPW",
+    "fi": "/fi/guides/tak-guide/tallenna-tapahtumat-qjxLc57ea2",
+    "sv": "/sv/guides/tak-guide/spela-in-handelser-ByDTrXbank"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>TAK Replay tallentaa karttatapahtumat ja viestit reaaliajassa, jotta voit toistaa ne myöhemmin. Aloita avaamalla WinTAK-työkalupalkin lisäosavälilehti.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Aloita tallennus",
+          "layout": "image-bottom",
+          "html": "<p>Valitse <strong>Record</strong> tallentaaksesi kaikki karttatapahtumat ja viestit, tai avaa <strong>TAK Replay</strong> -pääpaneeli (<strong>Recordings</strong>-kohdan kautta) tarkempaa hallintaa varten. Tallennus voidaan keskeyttää, jatkaa tai pysäyttää työkalupalkista.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/036190631addd755.webp",
+              "width": 349,
+              "height": 151
+            }
+          ]
+        },
+        {
+          "title": "Valitse tallennusalue",
+          "layout": "image-bottom",
+          "html": "<p>Kun valitset <strong>Record</strong>, valitse tallennettava alue: <strong>Select Map View</strong> (vain näkyvissä oleva alue, zoomaustaso säilytettynä), <strong>Select Existing Shape</strong>, <strong>Select Polygon Region</strong> tai <strong>Select Rectangular Region</strong>. Käytä <strong>Reset Region Selection</strong> -toimintoa valitaksesi toisen aluetyypin.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/a132944160d2eff0.webp",
+              "width": 351,
+              "height": 343
+            }
+          ]
+        },
+        {
+          "title": "Tallenna tapahtumat ja viestit",
+          "layout": "image-bottom",
+          "html": "<p>Valitse <strong>Start Recording</strong>, säilytä tai vaihda otsikko ja valitse <strong>OK</strong>.</p>\n<ul>\n<li>Laskuri näyttää kuluneen ajan sekä tapahtumien, karttakohteiden ja viestien määrät ja päivittyy, kunnes pysäytät tallennuksen.</li>\n<li>Valitse Overlay Managerista, mitkä kohteet tallennetaan.</li>\n<li>Valitse <strong>Stop Recording</strong> lopettaaksesi — Timeline Viewer avautuu automaattisesti.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/aeeb99b00aa0608d.webp",
+              "width": 448,
+              "height": 255
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "id": "6b450a83-2ee4-445c-bd26-f6f75f46c214",
+  "slug": "piirra-muotoja-ja-grafiikkaa-xS2vkzkOyP",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Piirrä muotoja ja grafiikkaa",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "Edistyneet ydintoiminnot",
+    "Piirrä muotoja ja grafiikkaa"
+  ],
+  "createdAt": "2026-06-18T19:26:19.841Z",
+  "updatedAt": "2026-06-18T20:14:38.513Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/draw-shapes-graphics-OSECv6soAB",
+    "fi": "/fi/guides/tak-guide/piirra-muotoja-ja-grafiikkaa-xS2vkzkOyP",
+    "sv": "/sv/guides/tak-guide/rita-figurer-och-grafik-ZwcLI2SNBB"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Piirtotyokaluilla voit merkitä karttaan muotoja, vapaakätisiä luonnoksia ja tilannekuvagrafiikkaa. Luo muoto ja avaa sitten sen säädinvalikko ja <strong>Details</strong> napauttamalla muotoa.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Piirrä ympyrä tai ellipsi",
+          "layout": "image-bottom",
+          "html": "<p>Valitse <strong>Circle</strong>- tai <strong>Ellipse</strong>-kuvake, napauta keskipistettä ja napauta sitten uudelleen asettaaksesi säteen tai reunan. Avaa <strong>Details</strong> asettaaksesi tarkan säteen, kehät, värin ja viivan paksuuden; <strong>Label</strong> ja <strong>Center</strong> kytkevät kartalla näkyvät merkit päälle ja pois.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/a0cbee814e6ff8f8.webp",
+              "width": 400,
+              "height": 184
+            }
+          ]
+        },
+        {
+          "title": "Piirrä suorakulmio",
+          "layout": "image-bottom",
+          "html": "<p>Valitse <strong>Rectangle</strong>-kuvake ja napauta sitten kolmea kulmaa asettaaksesi leveyden, pituuden ja syvyyden. Rastita <strong>Details</strong>-paneelissa <strong>Tactical Overlay</strong> värikoodataksesi rakenteen: valkoinen on etupuoli, musta takapuoli.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/41d7528587fa2de7.webp",
+              "width": 480,
+              "height": 233
+            }
+          ]
+        },
+        {
+          "title": "Piirrä vapaamuotoinen monikulmio tai murtoviiva",
+          "layout": "image-bottom",
+          "html": "<p>Valitse <strong>Free Form</strong> -kuvake ja napauta pudottaaksesi kunkin kulmapisteen. Napauta ensimmäistä kulmapistettä sulkeaksesi monikulmion tai valitse <strong>End Shape</strong> avoimen murtoviivan luomiseksi. Poista viimeinen linkki valitsemalla <strong>Undo</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/8fd4734675824459.webp",
+              "width": 480,
+              "height": 233
+            }
+          ]
+        },
+        {
+          "title": "Luonnostele vapaakätisesti Telestrate-työkalulla",
+          "layout": "image-bottom",
+          "html": "<p>Valitse <strong>Telestrate</strong>-kuvake piirtääksesi vapaakätisesti sormella tai kynällä; kartan vieritys on lukittu työkalun ollessa päällä. Poista viimeinen veto valitsemalla <strong>Undo</strong> tai tallenna luonnos yhtenä murtoviivakokonaisuutena valitsemalla <strong>End</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/149a6b28edd88c00.webp",
+              "width": 482,
+              "height": 212
+            }
+          ]
+        },
+        {
+          "title": "Sijoita tilannekuvagrafiikkaa",
+          "layout": "image-bottom",
+          "html": "<p>Tilannekuvagrafiikat ja taktiset symbolit sijoitetaan kuten tavalliset muodot: valitse symbolin tyyppi ja piirrä se sitten karttaan. Valittu tyyppi näkyy muodon <strong>Details</strong>-paneelissa, jossa voit vaihtaa tai poistaa sen.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/ca6c525dba920195.webp",
+              "width": 427,
+              "height": 235
+            }
+          ]
+        },
+        {
+          "title": "Lisää vähimmäisturvaetäisyysvyöhyke",
+          "layout": "image-bottom",
+          "html": "<p>Valitse sijoitetun muodon säädinvalikosta <strong>Minimum Safe Distance</strong>. Aseta <strong>Range</strong> ja rastita <strong>Enabled</strong> piirtääksesi puskurivyöhykkeen muodon reunan ympärille. Tallenna se <strong>Favorites</strong>-suosikkeihin <strong>+</strong>-painikkeella käyttääksesi sitä uudelleen muissa muodoissa.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/69b3e54222d145f3.webp",
+              "width": 311,
+              "height": 171
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

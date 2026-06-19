@@ -12,8 +12,13 @@
     "Joining a Deploy App"
   ],
   "createdAt": "2026-06-13T22:59:18.510Z",
-  "updatedAt": "2026-06-13T23:41:54.927Z",
+  "updatedAt": "2026-06-18T20:38:53.673Z",
   "headings": [],
+  "translations": {
+    "en": "/en/deploy-app/joining-a-deploy-app-A7hCnp5D1b",
+    "fi": "/fi/deploy-app/liittyminen-deploy-appiin-Jy261fSdzF",
+    "sv": "/sv/deploy-app/ansluta-till-en-deploy-app-rDiRCLSL8s"
+  },
   "blocks": [
     {
       "type": "slideset",

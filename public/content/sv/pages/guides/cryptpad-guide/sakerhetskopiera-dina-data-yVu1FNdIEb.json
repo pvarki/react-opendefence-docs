@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "id": "5aa08b76-acdf-4061-9245-187ac9717841",
+  "slug": "sakerhetskopiera-dina-data-yVu1FNdIEb",
+  "collection": "guides/cryptpad-guide",
+  "locale": "sv",
+  "title": "Säkerhetskopiera dina data",
+  "breadcrumb": [
+    "Användning i enheten",
+    "Säkerhetskopiera dina data"
+  ],
+  "createdAt": "2026-06-18T20:34:49.833Z",
+  "updatedAt": "2026-06-18T20:38:48.607Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/cryptpad-guide/back-up-your-data-xYdkRa1Tms",
+    "fi": "/fi/guides/cryptpad-guide/varmuuskopioi-tietosi-DQfftbWf4c",
+    "sv": "/sv/guides/cryptpad-guide/sakerhetskopiera-dina-data-yVu1FNdIEb"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>När ett uppdrag avslutas, säkerhetskopiera ditt teams delade CryptDrive så att du kan föra över den till din nästa Deploy App-server — eller ta den ur bruk på ett säkert sätt.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Säkerhetskopiera dina data",
+          "layout": "image-bottom",
+          "html": "<p>Från teamets <strong>Settings</strong>-meny kan du enkelt säkerhetskopiera teamets delade CryptDrive. När ditt uppdrag avslutas, ta en säkerhetskopia — du kan ladda upp den till din nästa Deploy App CryptPad-server eller till ett annat system vid behov. Kom ihåg säker datahantering!</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/d0659582699d9524.webp",
+              "width": 1460,
+              "height": 1332
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

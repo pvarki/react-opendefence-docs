@@ -10,8 +10,13 @@
     "Set up Element (mobile)"
   ],
   "createdAt": "2026-06-15T14:06:45.286Z",
-  "updatedAt": "2026-06-15T17:52:27.597Z",
+  "updatedAt": "2026-06-18T20:37:51.497Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/matrix-guide/set-up-element-mobile-tagios-tagandroid-QacQsNprmb",
+    "fi": "/fi/guides/matrix-guide/ota-element-kayttoon-mobiili-tagios-tagandroid-GKkxWww3O0",
+    "sv": "/sv/guides/matrix-guide/konfigurera-element-mobil-tagios-tagandroid-dPrhAGHVpH"
+  },
   "blocks": [
     {
       "type": "html",

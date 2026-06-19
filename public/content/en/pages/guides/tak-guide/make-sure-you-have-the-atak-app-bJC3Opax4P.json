@@ -12,8 +12,13 @@
     "Make sure you have the ATAK App"
   ],
   "createdAt": "2025-12-05T22:06:23.638Z",
-  "updatedAt": "2026-06-16T10:53:18.151Z",
+  "updatedAt": "2026-06-18T20:13:36.896Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/make-sure-you-have-the-atak-app-bJC3Opax4P",
+    "fi": "/fi/guides/tak-guide/varmista-etta-sinulla-on-atak-sovellus-ceMKXWjxoQ",
+    "sv": "/sv/guides/tak-guide/se-till-att-du-har-atak-appen-ep7TvO7XkN"
+  },
   "blocks": [
     {
       "type": "slideset",

@@ -8,13 +8,17 @@
   "breadcrumb": [
     "Platforms",
     "WinTAK",
-    "USING WINTAK FEATURES",
-    "Basic Features",
+    "BASIC CORE FEATURES",
     "Setting up your own location"
   ],
   "createdAt": "2025-12-05T22:05:59.668Z",
-  "updatedAt": "2026-06-15T13:52:39.481Z",
+  "updatedAt": "2026-06-18T20:23:32.006Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/setting-up-your-own-location-IAAAIJTiqZ",
+    "fi": "/fi/guides/tak-guide/oman-sijainnin-asettaminen-17jf00ekir",
+    "sv": "/sv/guides/tak-guide/ange-din-egen-position-V1XPioLt64"
+  },
   "blocks": [
     {
       "type": "html",
@@ -39,7 +43,7 @@
         {
           "title": "Move and zoom the map",
           "layout": "image-bottom",
-          "html": "<p>Move the map <strong>with the mouse</strong> toward Finland. Zoom with the mouse wheel, the plus/minus keys, or the on-screen buttons.</p>",
+          "html": "<p>Move the map <strong>with the mouse</strong> toward Finland.</p>\n<ul>\n<li>Zoom with the mouse wheel, the plus/minus keys, or the on-screen buttons.</li>\n</ul>",
           "images": [
             {
               "src": "/content/images/en/attachments/e37892a9bd5c9b69.webp",

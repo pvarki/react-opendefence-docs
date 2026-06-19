@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "8444e045-43a2-42ac-a18b-a59eabe65a47",
+  "slug": "the-tak-server-side-bCErH3lFoW",
+  "collection": "working-with-tak",
+  "locale": "en",
+  "title": "The TAK Server side",
+  "breadcrumb": [
+    "Wire up Deploy App TAK Servers via a Federation Hub (IaC)",
+    "The TAK Server side"
+  ],
+  "createdAt": "2026-06-17T20:25:57.218Z",
+  "updatedAt": "2026-06-19T14:18:51.772Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "What's already in the template",
+      "id": "whats-already-in-the-template"
+    },
+    {
+      "depth": 2,
+      "text": "What your IaC injects",
+      "id": "what-your-iac-injects"
+    },
+    {
+      "depth": 3,
+      "text": "Who initiates",
+      "id": "who-initiates"
+    },
+    {
+      "depth": 2,
+      "text": "Groups are already wired to Keycloak",
+      "id": "groups-are-already-wired-to-keycloak"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Most of this is already done by Deploy App's <code>CoreConfig.tpl</code>. Your IaC adds two small, templated things: the hub's CA (for trust) and, only if the servers initiate the connection, an outgoing federation entry.</p>\n<h2 id=\"whats-already-in-the-template\"><a href=\"#whats-already-in-the-template\">What's already in the template</a></h2>\n<p>Deploy App's <code>CoreConfig.tpl</code> renders (with env substitution) a federation-ready server:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#ABB2BF\">&#x3C;</span><span style=\"color:#E06C75\">federation</span><span style=\"color:#D19A66\"> allowFederatedDelete</span><span style=\"color:#ABB2BF\">=</span><span style=\"color:#98C379\">\"false\"</span><span style=\"color:#D19A66\"> allowMissionFederation</span><span style=\"color:#ABB2BF\">=</span><span style=\"color:#98C379\">\"true\"</span></span>\n<span class=\"line\"><span style=\"color:#D19A66\">            allowDataFeedFederation</span><span style=\"color:#ABB2BF\">=</span><span style=\"color:#98C379\">\"true\"</span></span>\n<span class=\"line\"><span style=\"color:#D19A66\">            enableMissionFederationDisruptionTolerance</span><span style=\"color:#ABB2BF\">=</span><span style=\"color:#98C379\">\"true\"</span></span>\n<span class=\"line\"><span style=\"color:#D19A66\">            missionFederationDisruptionToleranceRecencySeconds</span><span style=\"color:#ABB2BF\">=</span><span style=\"color:#98C379\">\"43200\"</span></span>\n<span class=\"line\"><span style=\"color:#D19A66\">            enableFederation</span><span style=\"color:#ABB2BF\">=</span><span style=\"color:#98C379\">\"true\"</span><span style=\"color:#ABB2BF\"> ... ></span></span>\n<span class=\"line\"><span style=\"color:#ABB2BF\">  &#x3C;</span><span style=\"color:#E06C75\">federation-server</span><span style=\"color:#D19A66\"> port</span><span style=\"color:#ABB2BF\">=</span><span style=\"color:#98C379\">\"9000\"</span><span style=\"color:#D19A66\"> coreVersion</span><span style=\"color:#ABB2BF\">=</span><span style=\"color:#98C379\">\"2\"</span></span>\n<span class=\"line\"><span style=\"color:#D19A66\">                     v1enabled</span><span style=\"color:#ABB2BF\">=</span><span style=\"color:#98C379\">\"false\"</span><span style=\"color:#D19A66\"> v2port</span><span style=\"color:#ABB2BF\">=</span><span style=\"color:#98C379\">\"9001\"</span><span style=\"color:#D19A66\"> v2enabled</span><span style=\"color:#ABB2BF\">=</span><span style=\"color:#98C379\">\"true\"</span></span>\n<span class=\"line\"><span style=\"color:#D19A66\">                     webBaseUrl</span><span style=\"color:#ABB2BF\">=</span><span style=\"color:#98C379\">\"https://{{.Env.TAK_SERVER_ADDRESS}}:8443/Marti\"</span><span style=\"color:#ABB2BF\">></span></span>\n<span class=\"line\"><span style=\"color:#ABB2BF\">    &#x3C;</span><span style=\"color:#E06C75\">tls</span><span style=\"color:#D19A66\"> keystoreFile</span><span style=\"color:#ABB2BF\">=</span><span style=\"color:#98C379\">\"certs/files/takserver.jks\"</span></span>\n<span class=\"line\"><span style=\"color:#D19A66\">         truststoreFile</span><span style=\"color:#ABB2BF\">=</span><span style=\"color:#98C379\">\"certs/files/fed-truststore.jks\"</span><span style=\"color:#ABB2BF\"> .../>   </span><span style=\"color:#7F848E;font-style:italic\">&#x3C;!-- the fed truststore --></span></span>\n<span class=\"line\"><span style=\"color:#ABB2BF\">    &#x3C;</span><span style=\"color:#E06C75\">federation-token-authentication</span><span style=\"color:#D19A66\"> enabled</span><span style=\"color:#ABB2BF\">=</span><span style=\"color:#98C379\">\"true\"</span><span style=\"color:#D19A66\"> tls</span><span style=\"color:#ABB2BF\">=</span><span style=\"color:#98C379\">\"true\"</span><span style=\"color:#D19A66\"> port</span><span style=\"color:#ABB2BF\">=</span><span style=\"color:#98C379\">\"9002\"</span><span style=\"color:#ABB2BF\">/></span></span>\n<span class=\"line\"><span style=\"color:#ABB2BF\">  &#x3C;/</span><span style=\"color:#E06C75\">federation-server</span><span style=\"color:#ABB2BF\">></span></span>\n<span class=\"line\"><span style=\"color:#ABB2BF\">  &#x3C;</span><span style=\"color:#E06C75\">fileFilter</span><span style=\"color:#ABB2BF\">>&#x3C;</span><span style=\"color:#E06C75\">fileExtension</span><span style=\"color:#ABB2BF\">>pref&#x3C;/</span><span style=\"color:#E06C75\">fileExtension</span><span style=\"color:#ABB2BF\">>&#x3C;/</span><span style=\"color:#E06C75\">fileFilter</span><span style=\"color:#ABB2BF\">>     </span><span style=\"color:#7F848E;font-style:italic\">&#x3C;!-- blocks .pref crossing --></span></span>\n<span class=\"line\"><span style=\"color:#ABB2BF\">&#x3C;/</span><span style=\"color:#E06C75\">federation</span><span style=\"color:#ABB2BF\">></span></span></code></pre>",
+      "lang": "xml"
+    },
+    {
+      "type": "html",
+      "html": "<p>So you already have federation enabled, v2 on 9001, token auth on 9002, MFDT on, and a <code>.pref</code> file blocker. Leave all of it in place.</p>\n<h2 id=\"what-your-iac-injects\"><a href=\"#what-your-iac-injects\">What your IaC injects</a></h2>\n<ol>\n<li>\n<p>Trust the hub. Drop the hub's CA PEM into <code>/ca_public/</code> (for example <code>fedhub_ca.pem</code>) before first run, so it's imported into <code>fed-truststore.jks</code> (see <a href=\"/en/working-with-tak/the-iac-trust-model-oJJLybgejE\">the trust model</a>). This is the only trust change needed if the hub initiates the connection.</p>\n</li>\n<li>\n<p>Optional outgoing entry. If you want the server to initiate to the hub instead, template a <code>&#x3C;federation-outgoing></code> inside <code>&#x3C;federation></code> pointing at the hub's v2 port (9102):</p>\n<pre><code class=\"language-xml\">&#x3C;federation-outgoing displayName=\"central-hub\" port=\"9102\"\n                     address=\"{{.Env.FEDHUB_ADDRESS}}\" protocolVersion=\"2\"\n                     reconnectInterval=\"30\" enabled=\"true\"/>\n</code></pre>\n</li>\n</ol>\n<h3 id=\"who-initiates\"><a href=\"#who-initiates\">Who initiates</a></h3>\n<p>Either side can open the connection; only one should. For IaC across many deployments, let the hub initiate (an Outgoing node in the hub policy connects to each server's 9001). Then each server needs no per-hub config, only the hub CA in its trust store, and the hub is the single place that holds the topology.</p>\n<h2 id=\"groups-are-already-wired-to-keycloak\"><a href=\"#groups-are-already-wired-to-keycloak\">Groups are already wired to Keycloak</a></h2>\n<p>The template's <code>&#x3C;auth default=\"ldap\" x509groups=\"true\" x509addAnonymous=\"false\"></code> means a federate or client cert's CN becomes the username, which is looked up in LDAP for its groups. LDAP is backed by Keycloak/RASENMAEHER, and groups are named <code>tak_&#x3C;group></code> (the <code>tak_</code> prefix is stripped, so TAK sees <code>&#x3C;group></code>). That <code>&#x3C;group></code> name is what the hub's federation filtering matches, which is the next page.</p>\n<p>→ Next: <a href=\"/en/working-with-tak/keycloak-groups-as-code-KGceqCKPVN\">Keycloak groups as code</a>.</p>"
+    }
+  ]
+}

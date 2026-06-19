@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "id": "93f08644-295f-48cf-b760-d996d541130c",
+  "slug": "hantera-kontakter-pclrRIp366",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Hantera kontakter",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "Avancerade kärnfunktioner",
+    "Hantera kontakter"
+  ],
+  "createdAt": "2026-06-18T19:27:17.128Z",
+  "updatedAt": "2026-06-18T20:15:40.323Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/manage-contacts-URumWb83Ox",
+    "fi": "/fi/guides/tak-guide/hallitse-kontakteja-qN5FTP2SPr",
+    "sv": "/sv/guides/tak-guide/hantera-kontakter-pclrRIp366"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Ta reda på vem du kan nå och hur, och öppna en anropssignals uppgifter utan att lämna kartan.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Öppna Contacts-listan",
+          "layout": "image-bottom",
+          "html": "<p>Öppna verktyget Contacts för att se alla i nätverket.</p>\n<ul>\n<li>Den sista kolumnen visar varje anropssignals standardkommunikationstyp.</li>\n<li>Använd <strong>Unread Only</strong> och <strong>Show All</strong> längst ner för att begränsa listan.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/b62f7fec1b4a8100.webp",
+              "width": 189,
+              "height": 192
+            }
+          ]
+        },
+        {
+          "title": "Filtrera efter kommunikationstyp",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på pilen bredvid <strong>Contacts</strong> högst upp i listan. Välj en typ — <strong>Data Package</strong>, <strong>GeoChat</strong>, <strong>Email</strong>, <strong>Phone</strong>, <strong>SMS</strong>, <strong>VoIP</strong> eller <strong>XMPP</strong> — för att bara visa de anropssignaler som kan nås på det sättet.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/846f358d5092baf8.webp",
+              "width": 175,
+              "height": 219
+            }
+          ]
+        },
+        {
+          "title": "Filtrera och favoritmarkera anropssignaler",
+          "layout": "image-bottom",
+          "html": "<p>Använd flerval för att kryssa i anropssignaler och ta bort dem från listan och kartan; aktivera <strong>Hide Filtered Contacts</strong> för att hålla dem dolda. För att favoritmarkera en kontakt, tryck på ikonen <strong>Star</strong>, tryck på ikonen <strong>+</strong>, välj kontakten/kontakterna och tryck sedan på <strong>Add</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/4222d8488a125ceb.webp",
+              "width": 196,
+              "height": 196
+            }
+          ]
+        },
+        {
+          "title": "Sortera och sök",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på ikonen <strong>Sort</strong> för att ordna om listan — alfabetiskt, efter anslutningsstatus, efter olästa meddelanden eller efter avstånd från dig.</p>\n<ul>\n<li>Varje tryckning ändrar sorteringen.</li>\n<li>Tryck på ikonen <strong>Search</strong> och skriv för att hoppa till en specifik anropssignal.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/550b421a93bc6ad0.webp",
+              "width": 189,
+              "height": 157
+            }
+          ]
+        },
+        {
+          "title": "Öppna en kontakts profilkort",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på den näst sista kolumnen för en anropssignal för att öppna dess profilkort.</p>\n<ul>\n<li>Det visar roll, programvaruversion, nodtyp, standardanslutning, tidpunkt för senaste rapport, batteri, position och de kommunikationstyper som finns tillgängliga för den kontakten.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/934bfbdf0fc9ebd2.webp",
+              "width": 178,
+              "height": 200
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

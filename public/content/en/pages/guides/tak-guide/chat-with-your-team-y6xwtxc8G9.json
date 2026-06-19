@@ -12,8 +12,13 @@
     "Chat With Your Team"
   ],
   "createdAt": "2026-06-16T16:18:11.840Z",
-  "updatedAt": "2026-06-16T16:21:26.224Z",
+  "updatedAt": "2026-06-18T20:26:47.487Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/chat-with-your-team-y6xwtxc8G9",
+    "fi": "/fi/guides/tak-guide/keskustele-tiimisi-kanssa-gTr7e8bLbF",
+    "sv": "/sv/guides/tak-guide/chatta-med-ditt-team-xB04rNQEjp"
+  },
   "blocks": [
     {
       "type": "html",

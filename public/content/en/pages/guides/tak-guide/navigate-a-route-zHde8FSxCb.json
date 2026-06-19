@@ -13,8 +13,13 @@
     "Navigate a Route"
   ],
   "createdAt": "2026-06-15T19:41:19.003Z",
-  "updatedAt": "2026-06-15T20:53:48.642Z",
+  "updatedAt": "2026-06-18T20:19:03.877Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/navigate-a-route-zHde8FSxCb",
+    "fi": "/fi/guides/tak-guide/navigoi-reittia-V9h7ubqj5x",
+    "sv": "/sv/guides/tak-guide/navigera-en-rutt-NOneSaVoN3"
+  },
   "blocks": [
     {
       "type": "html",

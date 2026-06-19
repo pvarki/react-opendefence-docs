@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "dc81c21d-4114-4502-8bd6-746b952c2755",
+  "slug": "esitykset-k6gHQmskUS",
+  "collection": "guides/cryptpad-guide",
+  "locale": "fi",
+  "title": "Esitykset",
+  "breadcrumb": [
+    "Perustoiminnot",
+    "Esitykset"
+  ],
+  "createdAt": "2026-06-18T20:34:40.314Z",
+  "updatedAt": "2026-06-18T20:38:05.802Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/cryptpad-guide/presentations-gWIWMzfeXq",
+    "fi": "/fi/guides/cryptpad-guide/esitykset-k6gHQmskUS",
+    "sv": "/sv/guides/cryptpad-guide/presentationer-26fnbdHVfs"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>CryptPad sisältää Markdown-pohjaisen esitystyökalun. Kirjoitat esityksesi tekstinä, ja työkalu asettelee sen dioiksi.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Aloita esitys",
+          "layout": "image-bottom",
+          "html": "<p>Napsauta <strong>+</strong> ja valitse <strong>Slide</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/a053f62be8cb42ea.webp",
+              "width": 1450,
+              "height": 1252
+            }
+          ]
+        },
+        {
+          "title": "Kirjoita ja esitä diat",
+          "layout": "image-bottom",
+          "html": "<p>Kirjoita diasi tekstinä vasemmalle. Erota diat toisistaan merkinnällä <code>---</code>. Napsauta <strong>Present</strong> siirtyäksesi koko näytön tilaan, ja siirry diasta toiseen nuolinäppäimillä.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/82ccb028d62e5ce2.webp",
+              "width": 1825,
+              "height": 1131
+            }
+          ]
+        },
+        {
+          "title": "Muut tiedostomuodot",
+          "layout": "text",
+          "html": "<p>CryptPad ei tue reaaliaikaista selainmuokkausta esimerkiksi PowerPoint-muodoille, mutta voit jakaa kyseiset tiedostot CryptDrivessa sekä muokata ja esittää niitä paikallisesti.</p>",
+          "images": []
+        }
+      ]
+    }
+  ]
+}

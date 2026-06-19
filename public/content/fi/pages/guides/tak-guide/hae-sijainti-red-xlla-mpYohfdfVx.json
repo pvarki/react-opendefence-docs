@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "id": "9083dd22-a8a7-492e-b191-eb5cb2b259ec",
+  "slug": "hae-sijainti-red-xlla-mpYohfdfVx",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Hae sijainti Red X:llä",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "LISÄOMINAISUUDET",
+    "Navigointi ja koordinaatit",
+    "Hae sijainti Red X:llä"
+  ],
+  "createdAt": "2026-06-18T19:28:21.520Z",
+  "updatedAt": "2026-06-18T20:19:21.722Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/get-location-with-red-x-14YkJ0qaz7",
+    "fi": "/fi/guides/tak-guide/hae-sijainti-red-xlla-mpYohfdfVx",
+    "sv": "/sv/guides/tak-guide/hamta-plats-med-red-x-Xs9y10bYwP"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Lue minkä tahansa kartan pisteen tarkat koordinaatit ja korkeus pudottamalla siihen Red X.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Ota Red X -työkalu käyttöön",
+          "layout": "image-bottom",
+          "html": "<p>Napauta työkalupalkin <strong>White X</strong> -kuvaketta, niin Red X -työkalu siirtyy liikuteltavaan tilaan. Kuvake muuttuu keltaiseksi.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/2ddeb4d931832a3b.webp",
+              "width": 385,
+              "height": 187
+            }
+          ]
+        },
+        {
+          "title": "Napauta lukeaksesi sijainnin",
+          "layout": "image-bottom",
+          "html": "<p>Kun kuvake on keltainen, napauta mitä tahansa kohtaa kartalla, ja Red X hyppää siihen. Oikean yläkulman näyttö esittää kyseisen pisteen koordinaatit, korkeuden sekä etäisyyden ja suuntiman.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/2ddeb4d931832a3b.webp",
+              "width": 385,
+              "height": 187
+            }
+          ]
+        },
+        {
+          "title": "Lukitse tai poista käytöstä",
+          "layout": "image-bottom",
+          "html": "<p>Napauta työkalupalkin kuvaketta uudelleen lukitaksesi Red X:n nykyiseen kohtaansa.</p>\n<ul>\n<li>Pitkä painallus työkalupalkin <strong>Red X</strong> -kuvakkeesta poistaa työkalun käytöstä.</li>\n<li>Huomaa: Red X ei tallennu, kun ATAK suljetaan ja avataan uudelleen.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/2ddeb4d931832a3b.webp",
+              "width": 385,
+              "height": 187
+            }
+          ]
+        },
+        {
+          "title": "Avaa rengasvalikko lisätoimintoja varten",
+          "layout": "image-bottom",
+          "html": "<p>Napauta kartalla olevaa <strong>Red X</strong> -kuvaketta avataksesi sen rengasvalikon. Täältä voit:</p>\n<ul>\n<li>tehdä sijainnin <strong>Fine Adjust</strong> -hienosäädön</li>\n<li>pudottaa <strong>Range and Bearing Line</strong> -etäisyys- ja suuntimalinjan</li>\n<li>ottaa käyttöön <strong>Compass Overlay</strong> -kompassipeiton tai <strong>Polar Coordinates</strong> -napakoordinaatit</li>\n<li>käyttää <strong>Pair to Self</strong> -toimintoa tai <strong>Place a Marker</strong> -toimintoa</li>\n</ul>\n<p>Pitkällä painalluksella keltaisesta nuolesta pääset alavalikkoihin.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/a73e4b6e1f10e24f.webp",
+              "width": 250,
+              "height": 207
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

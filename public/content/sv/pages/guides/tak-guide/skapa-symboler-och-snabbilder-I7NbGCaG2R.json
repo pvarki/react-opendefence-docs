@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "6ae925d5-9a45-485a-8478-b6cd2e2b5009",
+  "slug": "skapa-symboler-och-snabbilder-I7NbGCaG2R",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Skapa symboler och snabbilder",
+  "breadcrumb": [
+    "Platforms",
+    "iTAK",
+    "Grundfunktioner",
+    "Skapa symboler och snabbilder"
+  ],
+  "createdAt": "2026-06-18T19:38:58.765Z",
+  "updatedAt": "2026-06-18T20:25:52.300Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/create-symbols-quick-pics-elqHqV8SW7",
+    "fi": "/fi/guides/tak-guide/luo-symboleja-ja-pikakuvia-sHjyCvAf4P",
+    "sv": "/sv/guides/tak-guide/skapa-symboler-och-snabbilder-I7NbGCaG2R"
+  },
+  "blocks": [
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#ABB2BF\">(</span><span style=\"color:#E06C75\">Den</span><span style=\"color:#E06C75\"> här</span><span style=\"color:#E06C75\"> fliken</span><span style=\"color:#E06C75\"> ska</span><span style=\"color:#E06C75\"> inte</span><span style=\"color:#E06C75\"> visas</span><span style=\"color:#ABB2BF\">)</span></span></code></pre>",
+      "lang": "javascript"
+    }
+  ]
+}

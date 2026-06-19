@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "id": "7a7580d9-986c-4235-b69c-f75785e05d69",
+  "slug": "lisaa-syotteeseen-ja-kayta-sita-zgUEPZIdvs",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Lisää syötteeseen ja käytä sitä",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "Edistyneet ydintoiminnot",
+    "Lisää syötteeseen ja käytä sitä"
+  ],
+  "createdAt": "2026-06-18T19:26:16.962Z",
+  "updatedAt": "2026-06-18T20:13:59.654Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/add-to-work-a-feed-QUjMOBwISe",
+    "fi": "/fi/guides/tak-guide/lisaa-syotteeseen-ja-kayta-sita-zgUEPZIdvs",
+    "sv": "/sv/guides/tak-guide/lagg-till-i-och-arbeta-med-ett-flode-ipP0eWsr0q"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Kun omistat syötteen tai olet liittynyt siihen, hallintanäkymä on paikka, jossa lisäät sisältöä ja pidät sen synkronoituna.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Avaa syötteen hallintanäkymä",
+          "layout": "image-bottom",
+          "html": "<p>Avaa syötteen hallintanäkymä napauttamalla syötettä.</p>\n<ul>\n<li>Yläreunan työkalut ovat <strong>Add Items</strong>, <strong>Timeline</strong>, <strong>Download</strong>, <strong>Feed Settings</strong> ja <strong>Search</strong>.</li>\n<li>Kohteet on ryhmitelty: <strong>Map Items</strong>, <strong>Photos</strong> ja <strong>Files</strong>.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/1dca104e83b4b195.webp",
+              "width": 800,
+              "height": 662
+            }
+          ]
+        },
+        {
+          "title": "Lisää kohteita syötteeseen",
+          "layout": "image-bottom",
+          "html": "<p>Napauta <strong>Add Items</strong> ja valitse lisäystapa: <strong>Map Select</strong>, <strong>Overlays</strong>, <strong>File Select</strong> tai <strong>User Log</strong>.</p>\n<ul>\n<li>Samassa valikossa ovat <strong>Invite</strong> (lisää joukkuetovereita) ja <strong>Geofence</strong> — kuka tahansa, jonka merkki ylittää syötteen geoaidan, kutsutaan automaattisesti.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/f7be9455c9ab8fce.webp",
+              "width": 800,
+              "height": 415
+            }
+          ]
+        },
+        {
+          "title": "Päivitä jaetut kohteet",
+          "layout": "image-bottom",
+          "html": "<p>Kun siirrät tai muokkaat jaettua kohdetta, sinua pyydetään julkaisemaan (<strong>publish</strong>) muutos.</p>\n<ul>\n<li>Muuttuneet kohteet näkyvät <strong>punaisina</strong>; tyhjennä ne napauttamalla <strong>Mark Read</strong>.</li>\n<li>Jos kaksi henkilöä muokkaa samaa kohdetta offline-tilassa, ristiriidan ratkaisukehote antaa sinun säilyttää haluamasi version.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/27581627618d5542.webp",
+              "width": 800,
+              "height": 664
+            }
+          ]
+        },
+        {
+          "title": "Poista syöte tai peruuta tilaus",
+          "layout": "image-bottom",
+          "html": "<p>Napauta syötteen kohdalla <strong>Delete</strong> ja valitse <strong>Unsubscribe</strong> (lopeta päivitykset, säilytä sisältö), <strong>Delete local content</strong> tai <strong>Delete from server</strong> (vain omistajat). Liu'uta <strong>molemmat</strong> kytkimet lukittuun asentoon ja vahvista.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/5e8d16730da02067.webp",
+              "width": 404,
+              "height": 253
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

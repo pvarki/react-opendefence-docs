@@ -6,14 +6,19 @@
   "locale": "en",
   "title": "Overview",
   "breadcrumb": [
-    "TAK Clients",
+    "Platforms",
     "TAK Tracker - Apple",
     "Usage by Role",
     "Overview"
   ],
   "createdAt": "2025-12-05T20:41:45.561Z",
-  "updatedAt": "2026-02-21T08:40:26.953Z",
+  "updatedAt": "2026-06-18T20:27:41.155Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/overview-vqWEyyCxy8",
+    "fi": "/fi/guides/tak-guide/yleiskatsaus-BerAy6ibbu",
+    "sv": "/sv/guides/tak-guide/oversikt-IAwj5j49ia"
+  },
   "blocks": [
     {
       "type": "html",

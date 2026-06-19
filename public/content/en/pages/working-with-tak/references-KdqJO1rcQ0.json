@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "id": "b71c66a6-4b6e-48a0-8747-24137d68f22d",
+  "slug": "references-KdqJO1rcQ0",
+  "collection": "working-with-tak",
+  "locale": "en",
+  "title": "References",
+  "breadcrumb": [
+    "Wire up Deploy App TAK Servers via a Federation Hub (IaC)",
+    "References"
+  ],
+  "createdAt": "2026-06-17T20:25:58.968Z",
+  "updatedAt": "2026-06-19T14:18:53.723Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Deploy App artifacts",
+      "id": "deploy-app-artifacts"
+    },
+    {
+      "depth": 2,
+      "text": "Official guides",
+      "id": "official-guides"
+    },
+    {
+      "depth": 2,
+      "text": "Companion guides (this site)",
+      "id": "companion-guides-this-site"
+    },
+    {
+      "depth": 2,
+      "text": "Open item to confirm",
+      "id": "open-item-to-confirm"
+    },
+    {
+      "depth": 2,
+      "text": "Status and scope",
+      "id": "status-and-scope"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<h2 id=\"deploy-app-artifacts\"><a href=\"#deploy-app-artifacts\">Deploy App artifacts</a></h2>\n<p>From <code>pvarki/docker-rasenmaeher-integration</code>:</p>\n<ul>\n<li><code>takserver/templates/CoreConfig.tpl</code> — the templated TAK Server config: federation already enabled (v2 9001, token auth 9002, MFDT on), <code>fed-truststore.jks</code>, the <code>&#x3C;auth default=\"ldap\" x509groups=\"true\"></code> block with the <code>tak_&#x3C;group></code> LDAP mapping, and the <code>.pref</code> file filter.</li>\n<li><code>takserver/scripts/firstrun_rm.sh</code> — builds <code>takserver.jks</code> from the RASENMAEHER-issued cert and the truststore from <code>/ca_public/{root,intermediate,miniwerk}_ca.pem</code>, then copies it to <code>fed-truststore.jks</code> (the trust-injection hook).</li>\n<li><code>takintegration</code> — enrolls the TAK Server as a product and signs its cert via <code>…/api/v1/product/sign_csr/mtls</code>.</li>\n<li>Keycloak, <code>kc_client_init</code>, and the RASENMAEHER LDAP backend — the source of the <code>tak_&#x3C;group></code> groups.</li>\n</ul>\n<h2 id=\"official-guides\"><a href=\"#official-guides\">Official guides</a></h2>\n<ul>\n<li>Federation Hub Configuration Guide (public release) — ports (9100/9101/9102/9103), <code>federation-hub-broker.yml</code> and <code>federation-hub-ui.yml</code>, <code>federation-hub-manager.jar</code> (authorized users), Keycloak admin OAuth, and the policy.</li>\n<li>TAK Server Configuration Guide — §12 Federation, the <code>CoreConfig.xml</code> <code>&#x3C;federation></code> schema (including <code>&#x3C;federation-outgoing></code>), and the recommendation to keep a separate federation truststore.</li>\n</ul>\n<h2 id=\"companion-guides-this-site\"><a href=\"#companion-guides-this-site\">Companion guides (this site)</a></h2>\n<ul>\n<li><a href=\"/en/working-with-tak/federation-hub-connecting-multiple-tak-servers-pfBog3Q9uI\">Federation Hub</a> — the concepts behind the policy graph, CA groups, edges, and group filtering.</li>\n<li><a href=\"/en/working-with-tak/integrating-to-tak-server-i19y5KVtNV\">Integrating to TAK Server</a> — the Marti API and group model used by the verification probes.</li>\n<li><a href=\"/en/working-with-tak/wire-up-two-federation-hubs-iac-fzNcHRftqI\">Wire up two Federation Hubs (IaC)</a> — connecting hub domains, for larger setups with many groups of servers.</li>\n</ul>\n<h2 id=\"open-item-to-confirm\"><a href=\"#open-item-to-confirm\">Open item to confirm</a></h2>\n<p>The Federation Hub policy artifact (its persisted file path and schema, or the policy-manager apply endpoint), referenced from <code>federation-hub-broker.yml</code>. Confirm it once for your build, then policy generation is just another templated artifact.</p>\n<h2 id=\"status-and-scope\"><a href=\"#status-and-scope\">Status and scope</a></h2>\n<p>Draft / proposed design, not yet demoed. Based on Deploy App's <code>docker-rasenmaeher-integration</code> templates and the public TAK Server and Federation Hub configuration guides. Civilian; no TAK-MIL content. Confirm ports and paths against the versions you run.</p>"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "dc87c7d4-cd77-4795-98c4-770bfad5b4fb",
+  "slug": "indikatorer-for-markorer-utanfor-skarmen-74d7IKYhZz",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Indikatorer för markörer utanför skärmen",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "YTTERLIGARE FUNKTIONER",
+    "Navigering och koordinater",
+    "Indikatorer för markörer utanför skärmen"
+  ],
+  "createdAt": "2026-06-18T19:28:22.786Z",
+  "updatedAt": "2026-06-18T20:19:43.007Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/off-screen-marker-indicators-OwR2HB0xVZ",
+    "fi": "/fi/guides/tak-guide/karttanakyman-ulkopuolisten-merkkien-ilmaisimet-vv4SxScO6n",
+    "sv": "/sv/guides/tak-guide/indikatorer-for-markorer-utanfor-skarmen-74d7IKYhZz"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Slå på pilar som pekar mot närliggande markörer som ligger precis utanför kanten av din kartvy, så att du vet vad som finns runt omkring dig utan att zooma ut.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Open Other Overlays",
+          "layout": "image-bottom",
+          "html": "<p>Öppna <strong>Overlay Manager</strong> och tryck sedan på <strong>Other Overlays</strong>. Varje rad har en ögonikon som du trycker på för att aktivera eller inaktivera det lagret.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/f28caa1685cb737c.webp",
+              "width": 400,
+              "height": 191
+            }
+          ]
+        },
+        {
+          "title": "Toggle Off-Screen Indicators",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på ögonikonen på raden <strong>Off-Screen Indicators</strong> för att slå på den. Pilar visas sedan vid kartkanten och pekar mot nyligen placerade eller mottagna markörer som finns i närheten men utanför din nuvarande vy (hur nära beror på zoomnivån).</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/d6879fdc07334ec1.webp",
+              "width": 400,
+              "height": 194
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

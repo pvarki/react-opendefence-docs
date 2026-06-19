@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "7dbfad9f-b43b-4985-8682-57526e597b75",
+  "slug": "anvand-geochat-3YfBvaPUdo",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Använd GeoChat",
+  "breadcrumb": [
+    "Platforms",
+    "iTAK",
+    "Grundfunktioner",
+    "Använd GeoChat"
+  ],
+  "createdAt": "2026-06-18T19:38:59.290Z",
+  "updatedAt": "2026-06-18T20:25:54.065Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/use-geochat-r99lJsOLnK",
+    "fi": "/fi/guides/tak-guide/kayta-geochatia-1MmA1emqhu",
+    "sv": "/sv/guides/tak-guide/anvand-geochat-3YfBvaPUdo"
+  },
+  "blocks": [
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#ABB2BF\">(</span><span style=\"color:#E06C75\">Den</span><span style=\"color:#E06C75\"> här</span><span style=\"color:#E06C75\"> fliken</span><span style=\"color:#E06C75\"> ska</span><span style=\"color:#E06C75\"> inte</span><span style=\"color:#E06C75\"> visas</span><span style=\"color:#ABB2BF\">)</span></span></code></pre>",
+      "lang": "javascript"
+    }
+  ]
+}

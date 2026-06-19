@@ -1,0 +1,168 @@
+{
+  "schemaVersion": 1,
+  "id": "7d73a5f0-8443-4e1d-a322-ac13c58014ac",
+  "slug": "point-dropper-lagg-till-markorer-scEnZfp72C",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Point Dropper - lägg till markörer",
+  "breadcrumb": [
+    "Platforms",
+    "WinTAK",
+    "GRUNDLÄGGANDE KÄRNFUNKTIONER",
+    "Point Dropper - lägg till markörer"
+  ],
+  "createdAt": "2026-06-18T19:33:25.124Z",
+  "updatedAt": "2026-06-18T20:23:39.095Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/point-dropper-add-markers-wwYK8iDf5w",
+    "fi": "/fi/guides/tak-guide/point-dropper-lisaa-merkintoja-oCa76CxmxW",
+    "sv": "/sv/guides/tak-guide/point-dropper-lagg-till-markorer-scEnZfp72C"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Skapa markörer",
+          "layout": "text",
+          "html": "<ul>\n<li>När du behöver skapa information på kartan och dela den med andra användare är grundverktyget för detta Point Dropper.</li>\n<li>Med Point Dropper kan du lägga till taktiska markeringar på kartan.</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "1. Point Dropper",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Aktivera Point Dropper</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/e06306a28b9a837d.webp",
+              "width": 150,
+              "height": 86
+            }
+          ]
+        },
+        {
+          "title": "2. Markörer",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Välj de markörer eller ikoner du vill använda</li>\n<li>Som standard är taktiska ikoner det du behöver</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/7ba80f9c6b6d5e0a.webp",
+              "width": 350,
+              "height": 228
+            }
+          ]
+        },
+        {
+          "title": "3. Lägg till markör",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Välj en markör du vill använda</li>\n<li>Zooma kartan och hitta platsen där du vill lägga till en markör</li>\n<li>Tryck på kartan för att lägga till en markering.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/bb713e3d37e6dc4d.webp",
+              "width": 1243,
+              "height": 279
+            }
+          ]
+        },
+        {
+          "title": "Sluta lägga till markörer",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Avmarkera ikonen till höger för att sluta lägga till nya markeringar på kartan.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/5984039ec61503be.webp",
+              "width": 568,
+              "height": 310
+            }
+          ]
+        },
+        {
+          "title": "Redigera markörens detaljer",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>För att redigera en tillagd markör, tryck på markören</li>\n<li>Radial Menu öppnas</li>\n<li>Välj undermenyn \"Detail\"</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/09b2aa65bab569df.webp",
+              "width": 315,
+              "height": 309
+            }
+          ]
+        },
+        {
+          "title": "Markörens detaljmeny",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Saker att redigera</li>\n<li>Type: Redigera typ, redigera till exempel till infanteri</li>\n<li>Remarks: Lägg till din egen information om markören / situationen</li>\n<li>Add Attachments</li>\n<li>Send Marker</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/b0906938c547f776.webp",
+              "width": 345,
+              "height": 852
+            }
+          ]
+        },
+        {
+          "title": "Redigera markörens typ",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Du kommer in i typredigeringen genom att trycka på fältet Type</li>\n<li>Navigera mellan olika typer genom att använda More och bakåtpilen.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/197326b7194d66d7.webp",
+              "width": 446,
+              "height": 387
+            }
+          ]
+        },
+        {
+          "title": "Redigera markörens anmärkningar",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Tryck på anmärkningsfältet för att lägga till text</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/00d36894acac1733.webp",
+              "width": 346,
+              "height": 48
+            }
+          ]
+        },
+        {
+          "title": "Lägg till bilagor till en markör",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Tryck på gemikonen för att öppna Attachments</li>\n<li>Lägg till bilagor via +-tecknet</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/04316090ef4c9167.webp",
+              "width": 343,
+              "height": 205
+            }
+          ]
+        },
+        {
+          "title": "Skicka markör",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Du kan skicka en markör till:</li>\n<li>En enskild användare</li>\n<li>Grupp</li>\n<li>Team</li>\n<li>Data Sync-flöde</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/a7ddaeecd254ed90.webp",
+              "width": 349,
+              "height": 280
+            }
+          ]
+        },
+        {
+          "title": "Andra funktioner för en markör",
+          "layout": "text",
+          "html": "<ul>\n<li>Via undermenyerna kan du utföra följande viktiga åtgärder på en markör:</li>\n<li>Delete</li>\n<li>Change location</li>\n<li>Measure</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "Klart",
+          "layout": "text",
+          "html": "<ul>\n<li>Du kan stänga den här guiden.</li>\n</ul>\n<hr>",
+          "images": []
+        }
+      ]
+    }
+  ]
+}

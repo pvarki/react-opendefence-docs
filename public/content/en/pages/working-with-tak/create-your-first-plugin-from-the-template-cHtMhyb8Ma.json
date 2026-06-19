@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "4bed2626-6eb3-4f2c-a1b5-6d1b42b066fd",
+  "slug": "create-your-first-plugin-from-the-template-cHtMhyb8Ma",
+  "collection": "working-with-tak",
+  "locale": "en",
+  "title": "Create your first plugin from the template",
+  "breadcrumb": [
+    "ATAK Plugin Development",
+    "Create your first plugin from the template"
+  ],
+  "createdAt": "2026-06-16T22:49:05.817Z",
+  "updatedAt": "2026-06-16T22:49:09.382Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Project layout",
+      "id": "project-layout"
+    },
+    {
+      "depth": 2,
+      "text": "Rename it to your plugin",
+      "id": "rename-it-to-your-plugin"
+    },
+    {
+      "depth": 2,
+      "text": "The manifest, piece by piece",
+      "id": "the-manifest-piece-by-piece"
+    },
+    {
+      "depth": 2,
+      "text": "The plugin.xml wiring",
+      "id": "the-pluginxml-wiring"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>The fastest, most reliable way to start is to copy the <code>helloworld</code> example (or the leaner <code>plugintemplate</code>) and rename it. Both already contain the manifest, the <code>plugin.xml</code>, the four plumbing classes, and a working Gradle build.</p>\n<h2 id=\"project-layout\"><a href=\"#project-layout\">Project layout</a></h2>\n<p>A plugin is a standard single-module Android Gradle project:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span>helloworld/</span></span>\n<span class=\"line\"><span>├── build.gradle            # top-level: SDK location, takdev plugin, repos</span></span>\n<span class=\"line\"><span>├── settings.gradle         # include ':app'</span></span>\n<span class=\"line\"><span>├── gradle.properties       # android.useAndroidX=true, enableR8=false</span></span>\n<span class=\"line\"><span>├── gradlew / gradlew.bat</span></span>\n<span class=\"line\"><span>└── app/</span></span>\n<span class=\"line\"><span>    ├── build.gradle        # the plugin module: flavors, signing, deps</span></span>\n<span class=\"line\"><span>    ├── proguard-gradle.txt</span></span>\n<span class=\"line\"><span>    └── src/main/</span></span>\n<span class=\"line\"><span>        ├── AndroidManifest.xml</span></span>\n<span class=\"line\"><span>        ├── assets/</span></span>\n<span class=\"line\"><span>        │   └── plugin.xml   # declares the IPlugin entry point (ATAK 5.x)</span></span>\n<span class=\"line\"><span>        ├── java/com/atakmap/android/helloworld/</span></span>\n<span class=\"line\"><span>        │   ├── plugin/</span></span>\n<span class=\"line\"><span>        │   │   ├── HelloWorldLifecycle.java   # entry point (extends AbstractPlugin)</span></span>\n<span class=\"line\"><span>        │   │   └── HelloWorldTool.java        # toolbar button</span></span>\n<span class=\"line\"><span>        │   ├── HelloWorldMapComponent.java    # functionality</span></span>\n<span class=\"line\"><span>        │   └── HelloWorldDropDownReceiver.java# UI panel</span></span>\n<span class=\"line\"><span>        └── res/             # layouts, drawables, strings</span></span></code></pre>",
+      "lang": "plaintext"
+    },
+    {
+      "type": "html",
+      "html": "<p>By convention the two entry-point classes live in a <code>…/plugin/</code> sub-package, separate from your feature code, purely for readability.</p>\n<h2 id=\"rename-it-to-your-plugin\"><a href=\"#rename-it-to-your-plugin\">Rename it to your plugin</a></h2>\n<p>When you copy the template, change these in lockstep so nothing collides with the example or with other installed plugins:</p>\n<ol>\n<li><code>**rootProject.name**</code> in <code>settings.gradle</code> (this also names your output APK).</li>\n<li>The <strong>Java package</strong> (<code>com.atakmap.android.helloworld</code> → your own), and the matching <code>**namespace**</code> in <code>app/build.gradle</code>. (In ATAK 5.x the package lives in the <code>namespace</code> property, not as a <code>package=\"…\"</code> attribute in the manifest.)</li>\n<li>The <strong>class names</strong> (<code>HelloWorld*</code> → <code>YourPlugin*</code>) and the <code>impl</code> reference in <code>plugin.xml</code>.</li>\n<li>The <strong>broadcast action string</strong> that opens your panel (the example uses <code>com.atakmap.android.helloworld.SHOW_HELLO_WORLD</code>) — give it your own namespace.</li>\n<li><code>app_name</code> / <code>app_desc</code> in <code>res/values/strings.xml</code>, and the launcher icon.</li>\n</ol>\n<h2 id=\"the-manifest-piece-by-piece\"><a href=\"#the-manifest-piece-by-piece\">The manifest, piece by piece</a></h2>\n<p><code>AndroidManifest.xml</code> does three plugin-specific jobs (everything else is ordinary Android):</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#ABB2BF\">&#x3C;</span><span style=\"color:#E06C75\">application</span><span style=\"color:#ABB2BF\"> ... </span><span style=\"color:#D19A66\">android:icon</span><span style=\"color:#ABB2BF\">=</span><span style=\"color:#98C379\">\"@drawable/ic_launcher\"</span><span style=\"color:#D19A66\"> android:label</span><span style=\"color:#ABB2BF\">=</span><span style=\"color:#98C379\">\"@string/app_name\"</span><span style=\"color:#ABB2BF\">></span></span>\n<span class=\"line\"></span>\n<span class=\"line\"><span style=\"color:#7F848E;font-style:italic\">    &#x3C;!-- 1. Which ATAK API this plugin targets (filled by the build flavor) --></span></span>\n<span class=\"line\"><span style=\"color:#ABB2BF\">    &#x3C;</span><span style=\"color:#E06C75\">meta-data</span><span style=\"color:#D19A66\"> android:name</span><span style=\"color:#ABB2BF\">=</span><span style=\"color:#98C379\">\"plugin-api\"</span><span style=\"color:#D19A66\"> android:value</span><span style=\"color:#ABB2BF\">=</span><span style=\"color:#98C379\">\"${atakApiVersion}\"</span><span style=\"color:#ABB2BF\">/></span></span>\n<span class=\"line\"><span style=\"color:#ABB2BF\">    &#x3C;</span><span style=\"color:#E06C75\">meta-data</span><span style=\"color:#D19A66\"> android:name</span><span style=\"color:#ABB2BF\">=</span><span style=\"color:#98C379\">\"app_desc\"</span><span style=\"color:#D19A66\">   android:value</span><span style=\"color:#ABB2BF\">=</span><span style=\"color:#98C379\">\"@string/app_desc\"</span><span style=\"color:#ABB2BF\">/></span></span>\n<span class=\"line\"></span>\n<span class=\"line\"><span style=\"color:#7F848E;font-style:italic\">    &#x3C;!-- 2. Any services/activities your plugin needs are normal Android components --></span></span>\n<span class=\"line\"></span>\n<span class=\"line\"><span style=\"color:#7F848E;font-style:italic\">    &#x3C;!-- 3. The discovery hook that makes ATAK treat this APK as a plugin --></span></span>\n<span class=\"line\"><span style=\"color:#ABB2BF\">    &#x3C;</span><span style=\"color:#E06C75\">activity</span><span style=\"color:#D19A66\"> android:name</span><span style=\"color:#ABB2BF\">=</span><span style=\"color:#98C379\">\"com.atakmap.app.component\"</span></span>\n<span class=\"line\"><span style=\"color:#D19A66\">        tools:ignore</span><span style=\"color:#ABB2BF\">=</span><span style=\"color:#98C379\">\"MissingClass\"</span><span style=\"color:#ABB2BF\">></span></span>\n<span class=\"line\"><span style=\"color:#ABB2BF\">        &#x3C;</span><span style=\"color:#E06C75\">intent-filter</span><span style=\"color:#D19A66\"> android:label</span><span style=\"color:#ABB2BF\">=</span><span style=\"color:#98C379\">\"@string/app_name\"</span><span style=\"color:#ABB2BF\">></span></span>\n<span class=\"line\"><span style=\"color:#ABB2BF\">            &#x3C;</span><span style=\"color:#E06C75\">action</span><span style=\"color:#D19A66\"> android:name</span><span style=\"color:#ABB2BF\">=</span><span style=\"color:#98C379\">\"com.atakmap.app.component\"</span><span style=\"color:#ABB2BF\"> /></span></span>\n<span class=\"line\"><span style=\"color:#ABB2BF\">        &#x3C;/</span><span style=\"color:#E06C75\">intent-filter</span><span style=\"color:#ABB2BF\">></span></span>\n<span class=\"line\"><span style=\"color:#ABB2BF\">    &#x3C;/</span><span style=\"color:#E06C75\">activity</span><span style=\"color:#ABB2BF\">></span></span>\n<span class=\"line\"><span style=\"color:#ABB2BF\">&#x3C;/</span><span style=\"color:#E06C75\">application</span><span style=\"color:#ABB2BF\">></span></span></code></pre>",
+      "lang": "xml"
+    },
+    {
+      "type": "html",
+      "html": "<p>You do not implement a class for <code>com.atakmap.app.component</code> — the <code>tools:ignore</code> attribute is there precisely because the class lives in ATAK, not your APK. It is only a discovery marker.</p>\n<h2 id=\"the-pluginxml-wiring\"><a href=\"#the-pluginxml-wiring\">The <code>plugin.xml</code> wiring</a></h2>\n<p><code>app/src/main/assets/plugin.xml</code> is what actually connects your code to ATAK. In ATAK 5.x it declares a <strong>single</strong> extension — your plugin entry point, of type <code>gov.tak.api.plugin.IPlugin</code>:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#ABB2BF\">&#x3C;?</span><span style=\"color:#E06C75\">xml</span><span style=\"color:#D19A66\"> version</span><span style=\"color:#ABB2BF\">=</span><span style=\"color:#98C379\">\"1.0\"</span><span style=\"color:#D19A66\"> encoding</span><span style=\"color:#ABB2BF\">=</span><span style=\"color:#98C379\">\"utf-8\"</span><span style=\"color:#ABB2BF\">?></span></span>\n<span class=\"line\"><span style=\"color:#7F848E;font-style:italic\">&#x3C;!-- if you change this file, make sure to tick the versionCode in AndroidManifest. --></span></span>\n<span class=\"line\"><span style=\"color:#ABB2BF\">&#x3C;</span><span style=\"color:#E06C75\">plugin</span><span style=\"color:#ABB2BF\">></span></span>\n<span class=\"line\"><span style=\"color:#ABB2BF\">    &#x3C;</span><span style=\"color:#E06C75\">extension</span></span>\n<span class=\"line\"><span style=\"color:#D19A66\">        type</span><span style=\"color:#ABB2BF\">=</span><span style=\"color:#98C379\">\"gov.tak.api.plugin.IPlugin\"</span></span>\n<span class=\"line\"><span style=\"color:#D19A66\">        impl</span><span style=\"color:#ABB2BF\">=</span><span style=\"color:#98C379\">\"com.atakmap.android.helloworld.plugin.HelloWorldLifecycle\"</span></span>\n<span class=\"line\"><span style=\"color:#D19A66\">        singleton</span><span style=\"color:#ABB2BF\">=</span><span style=\"color:#98C379\">\"true\"</span><span style=\"color:#ABB2BF\"> /></span></span>\n<span class=\"line\"><span style=\"color:#ABB2BF\">&#x3C;/</span><span style=\"color:#E06C75\">plugin</span><span style=\"color:#ABB2BF\">></span></span></code></pre>",
+      "lang": "xml"
+    },
+    {
+      "type": "html",
+      "html": "<p>Point the <code>impl</code> at <em>your</em> renamed entry-point class. That's the whole contract: ATAK reads <code>plugin.xml</code> and instantiates your entry point (an <code>AbstractPlugin</code>), which in turn registers your toolbar button and your functionality — covered next.</p>\n<p>With the skeleton renamed and wired, the next step is to understand what those two classes do.</p>\n<p>→ Next: <a href=\"/en/working-with-tak/the-plugin-lifecycle-0Jf1BJ7g7O\">The plugin lifecycle</a>.</p>"
+    }
+  ]
+}

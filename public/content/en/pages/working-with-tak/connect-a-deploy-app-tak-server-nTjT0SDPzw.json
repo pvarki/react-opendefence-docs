@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "8410acfb-6970-4135-83d2-23ec0d7222bb",
+  "slug": "connect-a-deploy-app-tak-server-nTjT0SDPzw",
+  "collection": "working-with-tak",
+  "locale": "en",
+  "title": "Connect a Deploy App TAK Server",
+  "breadcrumb": [
+    "Federation Hub: connecting multiple TAK Servers",
+    "Connect a Deploy App TAK Server"
+  ],
+  "createdAt": "2026-06-17T19:13:32.168Z",
+  "updatedAt": "2026-06-17T19:13:35.688Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "On the hub (recap)",
+      "id": "on-the-hub-recap"
+    },
+    {
+      "depth": 2,
+      "text": "On the TAK Server",
+      "id": "on-the-tak-server"
+    },
+    {
+      "depth": 2,
+      "text": "Verify",
+      "id": "verify"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>With the hub running, trust exchanged, and a policy published, point each Deploy App TAK Server at the hub. Do this once per deployment.</p>\n<h2 id=\"on-the-hub-recap\"><a href=\"#on-the-hub-recap\">On the hub (recap)</a></h2>\n<ul>\n<li>The deployment's CA (<code>/opt/tak/certs/files/ca.pem</code>) is <strong>uploaded</strong> to the hub (<a href=\"/en/working-with-tak/establish-trust-share-cas-sUaHBtGVfZ\">Establish trust</a>).</li>\n<li>The deployment has a <strong>CA Group node</strong> in the <strong>active</strong> policy, with edges + group filtering to the deployments it should share with (<a href=\"/en/working-with-tak/define-the-federation-policy-uaAcGzSU3h\">policy</a>, <a href=\"/en/working-with-tak/control-what-crosses-group-filtering-DKvIW89bZD\">filtering</a>). Without this, the hub <strong>denies</strong> the connection.</li>\n</ul>\n<h2 id=\"on-the-tak-server\"><a href=\"#on-the-tak-server\">On the TAK Server</a></h2>\n<ol>\n<li>\n<p><strong>Enable federation.</strong> In the TAK Server UI, <strong>Configuration → Manage Federates</strong>, and if federation isn't on yet, <strong>Edit Configuration</strong> and enable it (ensure <strong>v2</strong> is enabled).</p>\n</li>\n<li>\n<p><strong>Trust the hub's CA.</strong> Under <strong>Manage Federate Certificate Authorities</strong>, upload the hub's <code>ca.pem</code> (from the hub's <em>Settings → Download Self CA</em>) so it goes into the server's <strong>federation truststore</strong>.</p>\n</li>\n<li>\n<p><strong>Create the outgoing connection to the hub.</strong> On <strong>Manage Federates → Create Outgoing Connection</strong>, set:</p>\n<ul>\n<li><strong>Address</strong> = the hub's host</li>\n<li><strong>Port</strong> = <strong>9102</strong> (the hub's V2 federation port)</li>\n<li><strong>Protocol version</strong> = v2, plus a reconnect interval, and enable it.</li>\n</ul>\n<p>(Only <strong>one</strong> side needs to initiate. Alternatively, add an <strong>Outgoing</strong> node on the <em>hub's</em> policy graph pointing at the TAK Server instead — don't do both.)</p>\n</li>\n<li>\n<p><strong>Map federated groups</strong> (optional). The server's own <strong>federated group mapping</strong> (Manage Groups per federate) controls which groups it offers out / accepts in; the hub's edge filtering then applies on top. For selective sharing, line these up with the <a href=\"/en/working-with-tak/control-what-crosses-group-filtering-DKvIW89bZD\">group-filtering plan</a>.</p>\n</li>\n</ol>\n<h2 id=\"verify\"><a href=\"#verify\">Verify</a></h2>\n<ul>\n<li>On the hub, the deployment's <strong>policy node turns green</strong>, and it appears under <strong>Active Connections</strong> (as a <code>FEDERATION_TAK_CLIENT</code>).</li>\n<li>Generate something tagged with the shared group on one deployment and confirm it appears on the other. If it connects but nothing flows, it's almost always <a href=\"/en/working-with-tak/control-what-crosses-group-filtering-DKvIW89bZD\">group filtering / group mapping</a>.</li>\n</ul>\n<p>Repeat for every Deploy App deployment you want in the federation — each just plugs into the same hub.</p>\n<p>→ Next: <a href=\"/en/working-with-tak/operate-troubleshoot-B5LoRqtcMh\">Operate &#x26; troubleshoot</a>.</p>"
+    }
+  ]
+}

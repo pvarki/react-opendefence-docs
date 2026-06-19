@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "id": "4d57fcd7-836b-4249-aaca-b7b679cc7052",
+  "slug": "oppna-uas-verktyget-och-las-telemetri-wdcDijyRka",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Öppna UAS-verktyget och läs telemetri",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "TILLÄGG SOM STÖDS",
+    "UAS-verktyg",
+    "Öppna UAS-verktyget och läs telemetri"
+  ],
+  "createdAt": "2026-06-18T19:30:25.704Z",
+  "updatedAt": "2026-06-18T20:21:42.534Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/open-uas-tool-read-telemetry-CvGSGecLE1",
+    "fi": "/fi/guides/tak-guide/avaa-uas-tyokalu-ja-lue-telemetria-z5ZZMLVliu",
+    "sv": "/sv/guides/tak-guide/oppna-uas-verktyget-och-las-telemetri-wdcDijyRka"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Hitta en drönare i nätverket, öppna dess videoflöde och läs av dess höjd, batteri och länk utan att lämna ATAK.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Öppna drönarlistan",
+          "layout": "image-bottom",
+          "html": "<p>UAS Tool-startskärmen listar varje drönare i nätverket under <strong>Network UAS</strong>.</p>\n<ul>\n<li>Drönare i läget <strong>UAS Observer</strong> har svart bakgrund; en <strong>Operator Connected</strong>-drönare ligger överst med blå bakgrund.</li>\n<li>Varje post visar signalstyrka och batteri med en snabb blick.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/e9c077ded52295a1.webp",
+              "width": 1067,
+              "height": 718
+            }
+          ]
+        },
+        {
+          "title": "Välj en plattform",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på en drönare för att välja den och öppna dess menyrad.</p>\n<ul>\n<li>Menyraden ger tillgång till <strong>Platform Settings</strong>, <strong>Platform Health</strong>, <strong>Platform Information</strong> och <strong>Pan To</strong>.</li>\n<li>Endast en drönare kan väljas åt gången.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/0d6ec954c43b358a.webp",
+              "width": 1058,
+              "height": 860
+            }
+          ]
+        },
+        {
+          "title": "Öppna UAS Display",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på <strong>Play</strong>-knappen för att öppna UAS Full Motion Video (FMV)-displayen.</p>\n<ul>\n<li>Videon fyller skärmen med <strong>Quick Flight Toolbar</strong> överst, <strong>Instrument Panel</strong> (kurs, horisont, GPS-fix) till höger och <strong>Lower Toolbar</strong> längs nederkanten.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/fec9ac33dde3223c.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Läs av statusöverlägget",
+          "layout": "image-bottom",
+          "html": "<p><strong>sUAS Metadata</strong> uppe till vänster ger dig livesiffrorna: återstående batteri, anslutningsstyrka, räckvidd och bäring från din position samt höjd (<strong>AGL</strong>). Kontrollera dessa före och under varje flygning.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/be8704e99d6e5ef9.webp",
+              "width": 720,
+              "height": 183
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

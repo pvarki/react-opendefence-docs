@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "83573802-5949-47c1-96d6-5ec3821cf64b",
+  "slug": "vie-lataa-ja-hallitse-FEIam7G2GU",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Vie, lataa ja hallitse",
+  "breadcrumb": [
+    "Platforms",
+    "WinTAK",
+    "Tuetut lisäosat",
+    "TAK Replay",
+    "Vie, lataa ja hallitse"
+  ],
+  "createdAt": "2026-06-18T19:34:30.433Z",
+  "updatedAt": "2026-06-18T20:24:46.124Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/export-download-manage-0NPPYBJSNP",
+    "fi": "/fi/guides/tak-guide/vie-lataa-ja-hallitse-FEIam7G2GU",
+    "sv": "/sv/guides/tak-guide/exportera-ladda-ner-och-hantera-FzlSjRgi1p"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Tallennetut jäljet voidaan viedä, hakea TAK-palvelimelta ja hallita tallennekansiosta.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Vie jälkiä",
+          "layout": "image-bottom",
+          "html": "<p>Vie tallenteen liikkuneiden merkkien jäljet muodossa <strong>GPX</strong>, <strong>KML</strong> tai <strong>KMZ</strong> sijaintiin <strong>Documents > WinTAK > Export</strong>. Kaikki merkkityypit ovat tuettuja paitsi Vehicle Outlines ja Vehicle Models. Uudelleen tuotu jälki näkyy kartalla, ja sen merkki seuraa jälkeä toiston aikana.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/feb224de8f57550b.webp",
+              "width": 336,
+              "height": 196
+            }
+          ]
+        },
+        {
+          "title": "Lataa tapahtumia TAK-palvelimelta",
+          "layout": "image-bottom",
+          "html": "<p>Luo tallenne palvelimen aiemmista tapahtumista (24 tunnin ikkunan sisällä). Määritä kartta-alue, valitse <strong>Start</strong>- ja <strong>End</strong>-päivämäärä/-aika (oletuksena kahden tunnin jakso, joka päättyy nyt), valitse <strong>Server</strong>, jos liitettynä on useampi kuin yksi, ja paina sitten <strong>Download</strong> ja <strong>OK</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/4d6a449c80919394.webp",
+              "width": 207,
+              "height": 287
+            }
+          ]
+        },
+        {
+          "title": "Hallitse tallenteita ja asetuksia",
+          "layout": "image-bottom",
+          "html": "<p>Tallenteet (.cpr) säilytetään sijainnissa <strong>AppData > Roaming > WinTAK > Databases > TakReplay</strong>; käytä <strong>Open Recordings Folder</strong> -toimintoa niiden tarkasteluun — voit myös pudottaa .cpr-tiedostoja suoraan kansioon.</p>\n<ul>\n<li>Aseta kohdassa <strong>Settings / Preferences</strong> <strong>Auto Record</strong> (tallennus käynnistyksessä), <strong>Pan to Map Events</strong> ja <strong>Recordings Directory</strong>.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/08e997c3ea2e456e.webp",
+              "width": 356,
+              "height": 279
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

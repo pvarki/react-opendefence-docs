@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "id": "f9334da8-9115-490b-ab3b-f4345f8db1bf",
+  "slug": "rensa-innehall-q4qalpFEan",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Rensa innehåll",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "Grundläggande funktioner",
+    "Rensa innehåll"
+  ],
+  "createdAt": "2026-06-18T19:26:15.067Z",
+  "updatedAt": "2026-06-18T20:13:55.925Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/clear-content-lzrtCD0MdO",
+    "fi": "/fi/guides/tak-guide/sisallon-tyhjentaminen-RTDgPCCE8y",
+    "sv": "/sv/guides/tak-guide/rensa-innehall-q4qalpFEan"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "1. Rensa innehåll",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Alla kartobjekt du har skapat i ATAK eller tagit emot som datapaket lagras på din enhet.</li>\n<li>Rensa innehållet vid ENDEX för att hålla ordning och undvika att data ackumuleras (opsec).</li>\n<li>Tryck på <strong>Trashcan icon</strong> i huvudmenyn för att göra det.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/802490de29695a84.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "2. Är du säker?",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Tryck på de två väljarna för att aktivera rensningen.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/f4b2b0bfecd49805.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "3. Klart!",
+          "layout": "text",
+          "html": "<ul>\n<li>Clear Content tömmer allt och stänger appen. Klart!</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "Lås båda reglagen för att rensa",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Svep båda reglagen åt höger tills de visar <strong>LOCKED</strong>; detta aktiverar den röda <strong>Clear Now</strong>-knappen.</li>\n<li>Bocka i <strong>Clear maps &#x26; imagery</strong> först om du även vill ta bort offlinekartor. ATAK avslutas när rensningen är klar.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/788bec790a8247dc.webp",
+              "width": 249,
+              "height": 169
+            }
+          ]
+        },
+        {
+          "title": "Ta bort bara vissa objekt",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Istället för att rensa allt, tryck på <strong>Select Items</strong> för att öppna Overlay Manager-flervalsverktyget och välj exakt vad som ska tas bort.</li>\n<li>Tryck på <strong>Cancel</strong> för att gå tillbaka till kartan. Borttagen fildata förvanskas på disken, så återställning är inte möjlig.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/c7f82fa573862bd0.webp",
+              "width": 250,
+              "height": 170
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

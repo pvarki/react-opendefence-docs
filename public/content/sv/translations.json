@@ -1,1 +1,752 @@
-{}
+{
+  "introduktion-8VdRmYg8Vp": {
+    "en": "/en/deploy-app/introduction-d1XzfzOkpz",
+    "fi": "/fi/deploy-app/johdanto-pVdcEzIB4j",
+    "sv": "/sv/deploy-app/introduktion-8VdRmYg8Vp"
+  },
+  "ansluta-till-en-deploy-app-rDiRCLSL8s": {
+    "en": "/en/deploy-app/joining-a-deploy-app-A7hCnp5D1b",
+    "fi": "/fi/deploy-app/liittyminen-deploy-appiin-Jy261fSdzF",
+    "sv": "/sv/deploy-app/ansluta-till-en-deploy-app-rDiRCLSL8s"
+  },
+  "anvanda-applikationer-TmM85VECUH": {
+    "en": "/en/deploy-app/using-applications-FFuT98Qlcv",
+    "fi": "/fi/deploy-app/sovellusten-kayttaminen-AZUWkin399",
+    "sv": "/sv/deploy-app/anvanda-applikationer-TmM85VECUH"
+  },
+  "granssnitt-fbWb4p1Ea6": {
+    "en": "/en/deploy-app/interface-pyG1Ln1MfU",
+    "fi": "/fi/deploy-app/kayttoliittyma-AYxx37RhPK",
+    "sv": "/sv/deploy-app/granssnitt-fbWb4p1Ea6"
+  },
+  "forsta-inloggningen-ZynVs60T8M": {
+    "en": "/en/deploy-app/first-login-oKodQDb6I1",
+    "fi": "/fi/deploy-app/ensimmainen-kirjautuminen-6xSLnWbWmV",
+    "sv": "/sv/deploy-app/forsta-inloggningen-ZynVs60T8M"
+  },
+  "lagga-till-anvandare-yQNQQKKHyp": {
+    "en": "/en/deploy-app/adding-users-LKw6wrsELi",
+    "fi": "/fi/deploy-app/kayttajien-lisaaminen-A97x9tyG2o",
+    "sv": "/sv/deploy-app/lagga-till-anvandare-yQNQQKKHyp"
+  },
+  "hantera-anvandare-l24qOTAPIQ": {
+    "en": "/en/deploy-app/managing-users-nWgFG3XzMv",
+    "fi": "/fi/deploy-app/kayttajien-hallinta-ThmzgQfcOQ",
+    "sv": "/sv/deploy-app/hantera-anvandare-l24qOTAPIQ"
+  },
+  "externa-tjanster-0NmqWJBmQK": {
+    "en": "/en/deploy-app/access-external-services-wQy9bpe1aE",
+    "fi": "/fi/deploy-app/ulkoiset-palvelut-SIWRaQtmte",
+    "sv": "/sv/deploy-app/externa-tjanster-0NmqWJBmQK"
+  },
+  "anslut-till-en-deploy-app-LSYhrD19yJ": {
+    "en": "/en/deploy-app/join-a-deploy-app-Ns73TcVodz",
+    "fi": "/fi/deploy-app/liity-deploy-app-sovellukseen-h2y5oF7JN4",
+    "sv": "/sv/deploy-app/anslut-till-en-deploy-app-LSYhrD19yJ"
+  },
+  "forsta-inloggningen-30j0MZLvzy": {
+    "en": "/en/deploy-app/admin-first-login-1wjrnFERNt",
+    "fi": "/fi/deploy-app/ensimmainen-kirjautuminen-w6ucKbFHSI",
+    "sv": "/sv/deploy-app/forsta-inloggningen-30j0MZLvzy"
+  },
+  "vad-ar-tak-Y5ZYfcXyh8": {
+    "en": "/en/guides/tak-guide/what-is-tak-Vy8mUPLS87",
+    "fi": "/fi/guides/tak-guide/mika-on-tak-u19DIbyqfY",
+    "sv": "/sv/guides/tak-guide/vad-ar-tak-Y5ZYfcXyh8"
+  },
+  "borja-fran-deploy-app-05KDQT0EcH": {
+    "en": "/en/guides/tak-guide/start-from-deploy-app-aFY9LCZCf0",
+    "fi": "/fi/guides/tak-guide/aloita-deploy-app-sovelluksesta-R0jCXhuEn5",
+    "sv": "/sv/guides/tak-guide/borja-fran-deploy-app-05KDQT0EcH"
+  },
+  "se-till-att-du-har-atak-appen-ep7TvO7XkN": {
+    "en": "/en/guides/tak-guide/make-sure-you-have-the-atak-app-bJC3Opax4P",
+    "fi": "/fi/guides/tak-guide/varmista-etta-sinulla-on-atak-sovellus-ceMKXWjxoQ",
+    "sv": "/sv/guides/tak-guide/se-till-att-du-har-atak-appen-ep7TvO7XkN"
+  },
+  "importera-serveranslutning-Heo41dBNko": {
+    "en": "/en/guides/tak-guide/importing-server-connection-PQ4dCV2SYR",
+    "fi": "/fi/guides/tak-guide/palvelinyhteyden-tuonti-orW4BArnHi",
+    "sv": "/sv/guides/tak-guide/importera-serveranslutning-Heo41dBNko"
+  },
+  "ladda-atak-plugins-TpJcLrKsGu": {
+    "en": "/en/guides/tak-guide/load-atak-plugins-xBeVkYsFjI",
+    "fi": "/fi/guides/tak-guide/lataa-atak-liitannaiset-CrjCC07xf1",
+    "sv": "/sv/guides/tak-guide/ladda-atak-plugins-TpJcLrKsGu"
+  },
+  "grundvy-verktyg-och-verktygsfalt-Lpm8S3bYgv": {
+    "en": "/en/guides/tak-guide/basic-view-tools-and-toolbar-juXbYsGMih",
+    "fi": "/fi/guides/tak-guide/perusnakyma-tyokalut-ja-tyokalupalkki-5cY07BjmD4",
+    "sv": "/sv/guides/tak-guide/grundvy-verktyg-och-verktygsfalt-Lpm8S3bYgv"
+  },
+  "blue-force-tracking-8BMZxsbnV0": {
+    "en": "/en/guides/tak-guide/blue-force-tracking-vZTVlgAzX8",
+    "fi": "/fi/guides/tak-guide/omien-joukkojen-seuranta-xwhLFahQPe",
+    "sv": "/sv/guides/tak-guide/blue-force-tracking-8BMZxsbnV0"
+  },
+  "feeds-with-data-sync-5yGpc2vgBg": {
+    "en": "/en/guides/tak-guide/feeds-with-data-sync-thmayduqMx",
+    "fi": "/fi/guides/tak-guide/feeds-with-data-sync-EMnuDBTzRY",
+    "sv": "/sv/guides/tak-guide/feeds-with-data-sync-5yGpc2vgBg"
+  },
+  "point-dropper-markorer-ADzjTFD2zi": {
+    "en": "/en/guides/tak-guide/point-dropper-markers-lsYmFrTvqH",
+    "fi": "/fi/guides/tak-guide/point-dropper-merkit-9yamK9nyOX",
+    "sv": "/sv/guides/tak-guide/point-dropper-markorer-ADzjTFD2zi"
+  },
+  "skicka-en-markor-4WZtvP60ax": {
+    "en": "/en/guides/tak-guide/sending-a-marker-tbLPq64DLE",
+    "fi": "/fi/guides/tak-guide/merkin-lahettaminen-VFvhZ3yMfm",
+    "sv": "/sv/guides/tak-guide/skicka-en-markor-4WZtvP60ax"
+  },
+  "point-dropper-quick-pic-sTBDsrUhIs": {
+    "en": "/en/guides/tak-guide/point-dropper-quick-pic-gxAsonzSXL",
+    "fi": "/fi/guides/tak-guide/point-dropper-quick-pic-dnyOSYWlOg",
+    "sv": "/sv/guides/tak-guide/point-dropper-quick-pic-sTBDsrUhIs"
+  },
+  "geochat-HOCGG8SkvO": {
+    "en": "/en/guides/tak-guide/geochat-SMWfbwNItT",
+    "fi": "/fi/guides/tak-guide/geochat-5kOdqvslhn",
+    "sv": "/sv/guides/tak-guide/geochat-HOCGG8SkvO"
+  },
+  "rensa-innehall-q4qalpFEan": {
+    "en": "/en/guides/tak-guide/clear-content-lzrtCD0MdO",
+    "fi": "/fi/guides/tak-guide/sisallon-tyhjentaminen-RTDgPCCE8y",
+    "sv": "/sv/guides/tak-guide/rensa-innehall-q4qalpFEan"
+  },
+  "skapa-och-hantera-floden-xFQ1Aqteke": {
+    "en": "/en/guides/tak-guide/create-manage-feeds-z2CpC9Lpan",
+    "fi": "/fi/guides/tak-guide/syotteiden-luonti-ja-hallinta-FpLL6NYB2F",
+    "sv": "/sv/guides/tak-guide/skapa-och-hantera-floden-xFQ1Aqteke"
+  },
+  "lagg-till-i-och-arbeta-med-ett-flode-ipP0eWsr0q": {
+    "en": "/en/guides/tak-guide/add-to-work-a-feed-QUjMOBwISe",
+    "fi": "/fi/guides/tak-guide/lisaa-syotteeseen-ja-kayta-sita-zgUEPZIdvs",
+    "sv": "/sv/guides/tak-guide/lagg-till-i-och-arbeta-med-ett-flode-ipP0eWsr0q"
+  },
+  "rita-och-dela-planer-WlqKBF7FKe": {
+    "en": "/en/guides/tak-guide/draw-share-plans-fxjT3hDZ5p",
+    "fi": "/fi/guides/tak-guide/suunnitelmien-piirtaminen-ja-jakaminen-6PjOAXGBff",
+    "sv": "/sv/guides/tak-guide/rita-och-dela-planer-WlqKBF7FKe"
+  },
+  "tidslinjevy-mXMCZ7CwsA": {
+    "en": "/en/guides/tak-guide/feed-timeline-view-Ykwnn1hgWm",
+    "fi": "/fi/guides/tak-guide/aikajananakyma-DKl8eVn3bU",
+    "sv": "/sv/guides/tak-guide/tidslinjevy-mXMCZ7CwsA"
+  },
+  "rita-figurer-och-grafik-ZwcLI2SNBB": {
+    "en": "/en/guides/tak-guide/draw-shapes-graphics-OSECv6soAB",
+    "fi": "/fi/guides/tak-guide/piirra-muotoja-ja-grafiikkaa-xS2vkzkOyP",
+    "sv": "/sv/guides/tak-guide/rita-figurer-och-grafik-ZwcLI2SNBB"
+  },
+  "atak-geofences-avancerade-funktioner-qCwlfoPPsc": {
+    "en": "/en/guides/tak-guide/geofences-wgaLkSEvef",
+    "fi": "/fi/guides/tak-guide/atak-geofences-lisaominaisuudet-Odn3KhETfp",
+    "sv": "/sv/guides/tak-guide/atak-geofences-avancerade-funktioner-qCwlfoPPsc"
+  },
+  "lagg-till-i-flode-med-lasso-wA9WruroCt": {
+    "en": "/en/guides/tak-guide/lasso-to-add-into-feed-Mt0Vykodea",
+    "fi": "/fi/guides/tak-guide/lassolla-lisaaminen-syotteeseen-a6typO1eEd",
+    "sv": "/sv/guides/tak-guide/lagg-till-i-flode-med-lasso-wA9WruroCt"
+  },
+  "overlay-manager-hantera-vyerna-AJGahEsnDr": {
+    "en": "/en/guides/tak-guide/overlay-manager-how-to-manage-the-views-BVRnLCM7ME",
+    "fi": "/fi/guides/tak-guide/overlay-manager-nakymien-hallinta-L14bpp02nM",
+    "sv": "/sv/guides/tak-guide/overlay-manager-hantera-vyerna-AJGahEsnDr"
+  },
+  "skapa-rutter-och-anvand-vns-KURI7xcoXM": {
+    "en": "/en/guides/tak-guide/create-routes-and-use-vns-uymW3nDSPE",
+    "fi": "/fi/guides/tak-guide/luo-reitteja-ja-kayta-vnsaa-JMeuuWETPf",
+    "sv": "/sv/guides/tak-guide/skapa-rutter-och-anvand-vns-KURI7xcoXM"
+  },
+  "ladda-ner-kartor-for-offline-anvandning-uKJz92KfHd": {
+    "en": "/en/guides/tak-guide/downloading-maps-for-offline-use-AhUMNQ8mmS",
+    "fi": "/fi/guides/tak-guide/karttojen-lataaminen-offline-kayttoon-HWp5pbjscs",
+    "sv": "/sv/guides/tak-guide/ladda-ner-kartor-for-offline-anvandning-uKJz92KfHd"
+  },
+  "hantera-atak-verktyg-och-verktygsfalt-vbXQ19z45z": {
+    "en": "/en/guides/tak-guide/how-to-manage-atak-tools-and-toolbars-PbkLQcvrCe",
+    "fi": "/fi/guides/tak-guide/atak-tyokalujen-ja-tyokalupalkkien-hallinta-BExrl8NVtl",
+    "sv": "/sv/guides/tak-guide/hantera-atak-verktyg-och-verktygsfalt-vbXQ19z45z"
+  },
+  "anpassa-markorer-och-ikoner-kfkJXTKO8b": {
+    "en": "/en/guides/tak-guide/customize-markers-icons-TGz9RiGwju",
+    "fi": "/fi/guides/tak-guide/mukauta-merkit-ja-kuvakkeet-vmmluklewl",
+    "sv": "/sv/guides/tak-guide/anpassa-markorer-och-ikoner-kfkJXTKO8b"
+  },
+  "gor-en-casevac-9-line-rapport-gRMiZFjKj2": {
+    "en": "/en/guides/tak-guide/drop-a-casevac-9-line-sstaZDEz76",
+    "fi": "/fi/guides/tak-guide/tee-casevac-9-line-ilmoitus-biscwQ9Tt9",
+    "sv": "/sv/guides/tak-guide/gor-en-casevac-9-line-rapport-gRMiZFjKj2"
+  },
+  "hantera-kontakter-pclrRIp366": {
+    "en": "/en/guides/tak-guide/manage-contacts-URumWb83Ox",
+    "fi": "/fi/guides/tak-guide/hallitse-kontakteja-qN5FTP2SPr",
+    "sv": "/sv/guides/tak-guide/hantera-kontakter-pclrRIp366"
+  },
+  "digital-pointer-0Wr9d9JlFL": {
+    "en": "/en/guides/tak-guide/digital-pointer-0K1KdydAeq",
+    "fi": "/fi/guides/tak-guide/digital-pointer-d8AjEWxuxZ",
+    "sv": "/sv/guides/tak-guide/digital-pointer-0Wr9d9JlFL"
+  },
+  "sand-nodlarm-cSlVtIcpdv": {
+    "en": "/en/guides/tak-guide/broadcast-emergency-alert-UUcvlpUGMg",
+    "fi": "/fi/guides/tak-guide/laheta-hatahalytys-qv6woTAZ5H",
+    "sv": "/sv/guides/tak-guide/sand-nodlarm-cSlVtIcpdv"
+  },
+  "oversikt-RdC8FOmUJv": {
+    "en": "/en/guides/tak-guide/overview-CVNzKhRcKY",
+    "fi": "/fi/guides/tak-guide/yleiskatsaus-dSxmQoNuM0",
+    "sv": "/sv/guides/tak-guide/oversikt-RdC8FOmUJv"
+  },
+  "vad-du-far-och-skickar-8NvaGg4aKo": {
+    "en": "/en/guides/tak-guide/what-you-get-send-MhsXXsmVxN",
+    "fi": "/fi/guides/tak-guide/mita-saat-ja-lahetat-fb846unh6t",
+    "sv": "/sv/guides/tak-guide/vad-du-far-och-skickar-8NvaGg4aKo"
+  },
+  "anvand-recon-flodet-MjbNU9jIF7": {
+    "en": "/en/guides/tak-guide/use-recon-feed-1eKYHfIBys",
+    "fi": "/fi/guides/tak-guide/kayta-recon-syotetta-RorUr3qVJs",
+    "sv": "/sv/guides/tak-guide/anvand-recon-flodet-MjbNU9jIF7"
+  },
+  "anvand-geochat-for-kommunikation-HR8qIoirSR": {
+    "en": "/en/guides/tak-guide/use-geochat-for-comms-s20PZmRGw8",
+    "fi": "/fi/guides/tak-guide/kayta-geochatia-viestintaan-u0VBv8IjJy",
+    "sv": "/sv/guides/tak-guide/anvand-geochat-for-kommunikation-HR8qIoirSR"
+  },
+  "hantering-av-recon-flodet-7quTutquFB": {
+    "en": "/en/guides/tak-guide/recon-feed-management-y1O0x1g2sf",
+    "fi": "/fi/guides/tak-guide/recon-syotteen-hallinta-BcuC80sRrk",
+    "sv": "/sv/guides/tak-guide/hantering-av-recon-flodet-7quTutquFB"
+  },
+  "ga-till-koordinater-go-to-yXumpULR0j": {
+    "en": "/en/guides/tak-guide/go-to-coordinates-x7AdN7ZMgn",
+    "fi": "/fi/guides/tak-guide/siirry-koordinaatteihin-go-to-x2wAmIQ8Sd",
+    "sv": "/sv/guides/tak-guide/ga-till-koordinater-go-to-yXumpULR0j"
+  },
+  "hamta-koordinater-med-center-designator-52VvAun2JK": {
+    "en": "/en/guides/tak-guide/get-coordinates-with-center-designator-B4pKmxr0H0",
+    "fi": "/fi/guides/tak-guide/hae-koordinaatit-center-designatorilla-yaOIpaeTv4",
+    "sv": "/sv/guides/tak-guide/hamta-koordinater-med-center-designator-52VvAun2JK"
+  },
+  "navigera-en-rutt-NOneSaVoN3": {
+    "en": "/en/guides/tak-guide/navigate-a-route-zHde8FSxCb",
+    "fi": "/fi/guides/tak-guide/navigoi-reittia-V9h7ubqj5x",
+    "sv": "/sv/guides/tak-guide/navigera-en-rutt-NOneSaVoN3"
+  },
+  "aterskarning-position-utan-gps-GjBCRY4gZj": {
+    "en": "/en/guides/tak-guide/resection-no-gps-location-YjW4JqiWQJ",
+    "fi": "/fi/guides/tak-guide/takaisinleikkaus-sijainti-ilman-gpsaa-ScxwqM908E",
+    "sv": "/sv/guides/tak-guide/aterskarning-position-utan-gps-GjBCRY4gZj"
+  },
+  "hamta-plats-med-red-x-Xs9y10bYwP": {
+    "en": "/en/guides/tak-guide/get-location-with-red-x-14YkJ0qaz7",
+    "fi": "/fi/guides/tak-guide/hae-sijainti-red-xlla-mpYohfdfVx",
+    "sv": "/sv/guides/tak-guide/hamta-plats-med-red-x-Xs9y10bYwP"
+  },
+  "indikatorer-for-markorer-utanfor-skarmen-74d7IKYhZz": {
+    "en": "/en/guides/tak-guide/off-screen-marker-indicators-OwR2HB0xVZ",
+    "fi": "/fi/guides/tak-guide/karttanakyman-ulkopuolisten-merkkien-ilmaisimet-vv4SxScO6n",
+    "sv": "/sv/guides/tak-guide/indikatorer-for-markorer-utanfor-skarmen-74d7IKYhZz"
+  },
+  "hantera-positionskallor-bfhTDCM6Kg": {
+    "en": "/en/guides/tak-guide/control-location-providers-WuJJaCfIYG",
+    "fi": "/fi/guides/tak-guide/hallitse-sijaintilahteita-RakVzDRlad",
+    "sv": "/sv/guides/tak-guide/hantera-positionskallor-bfhTDCM6Kg"
+  },
+  "spara-ett-mal-med-bloodhound-BsuEbHZ6jT": {
+    "en": "/en/guides/tak-guide/track-to-a-target-with-bloodhound-CRgoGZzBqb",
+    "fi": "/fi/guides/tak-guide/seuraa-kohdetta-bloodhoundilla-GHDj89NBpo",
+    "sv": "/sv/guides/tak-guide/spara-ett-mal-med-bloodhound-BsuEbHZ6jT"
+  },
+  "spara-rorelse-gps-spar-bWXVbzW6gA": {
+    "en": "/en/guides/tak-guide/track-movement-gps-tracks-ncPNa8dv8K",
+    "fi": "/fi/guides/tak-guide/liikkeen-jaljitys-gps-jaljet-Kfbctffcg5",
+    "sv": "/sv/guides/tak-guide/spara-rorelse-gps-spar-bWXVbzW6gA"
+  },
+  "mat-avstand-och-baring-eegRo4EznT": {
+    "en": "/en/guides/tak-guide/measure-range-bearing-vEAV62W7O1",
+    "fi": "/fi/guides/tak-guide/mittaa-etaisyys-ja-suuntakulma-DUBmCeWCli",
+    "sv": "/sv/guides/tak-guide/mat-avstand-och-baring-eegRo4EznT"
+  },
+  "dynamiskt-avstand-och-baring-36cC0xw4Kn": {
+    "en": "/en/guides/tak-guide/dynamic-range-bearing-HMYy8mVdNk",
+    "fi": "/fi/guides/tak-guide/dynaaminen-etaisyys-ja-suuntima-MocHzAMYao",
+    "sv": "/sv/guides/tak-guide/dynamiskt-avstand-och-baring-36cC0xw4Kn"
+  },
+  "avstandsringar-och-bullseye-UbZpRppvDe": {
+    "en": "/en/guides/tak-guide/range-rings-bullseye-NHJCYsh6xN",
+    "fi": "/fi/guides/tak-guide/etaisyysrenkaat-ja-bullseye-VVnbPZDiAy",
+    "sv": "/sv/guides/tak-guide/avstandsringar-och-bullseye-UbZpRppvDe"
+  },
+  "anvand-3d-terrangvyn-Z4Tf8cVmbg": {
+    "en": "/en/guides/tak-guide/use-3d-terrain-view-nTeTbi2I5K",
+    "fi": "/fi/guides/tak-guide/kayta-3d-maastonakymaa-MvrevSdk5j",
+    "sv": "/sv/guides/tak-guide/anvand-3d-terrangvyn-Z4Tf8cVmbg"
+  },
+  "lagg-till-3d-modeller-pa-kartan-RXNe4OasVf": {
+    "en": "/en/guides/tak-guide/add-3d-models-to-map-bp5Bo7T0oI",
+    "fi": "/fi/guides/tak-guide/lisaa-3d-malleja-kartalle-48R5EqaMl7",
+    "sv": "/sv/guides/tak-guide/lagg-till-3d-modeller-pa-kartan-RXNe4OasVf"
+  },
+  "spana-med-first-person-view-LateYCOhY4": {
+    "en": "/en/guides/tak-guide/scout-with-first-person-view-tZ27WjeppE",
+    "fi": "/fi/guides/tak-guide/tiedustele-first-person-viewlla-dG5GsFs9is",
+    "sv": "/sv/guides/tak-guide/spana-med-first-person-view-LateYCOhY4"
+  },
+  "hojd-och-siktverktyg-i9f2Drimqi": {
+    "en": "/en/guides/tak-guide/elevation-viewshed-tools-Vqje1Ybg0d",
+    "fi": "/fi/guides/tak-guide/korkeus-ja-nakyvyystyokalut-K38iegcAlI",
+    "sv": "/sv/guides/tak-guide/hojd-och-siktverktyg-i9f2Drimqi"
+  },
+  "hantera-hojddatakallor-NcbELJNAnv": {
+    "en": "/en/guides/tak-guide/manage-elevation-sources-1DMW21VzzP",
+    "fi": "/fi/guides/tak-guide/hallitse-korkeusdatan-lahteita-5PT2yLQKk5",
+    "sv": "/sv/guides/tak-guide/hantera-hojddatakallor-NcbELJNAnv"
+  },
+  "georeferera-en-bild-rubber-sheet-WijOqzcbZT": {
+    "en": "/en/guides/tak-guide/georeference-an-image-rubber-sheet-TgWDRF45Bd",
+    "fi": "/fi/guides/tak-guide/georeferoi-kuva-rubber-sheet-onZsR99V8e",
+    "sv": "/sv/guides/tak-guide/georeferera-en-bild-rubber-sheet-WijOqzcbZT"
+  },
+  "importera-filer-och-fjarresurser-RIt6IYBJfn": {
+    "en": "/en/guides/tak-guide/import-files-remote-resources-yjaTiWVKHl",
+    "fi": "/fi/guides/tak-guide/tiedostojen-ja-etaresurssien-tuonti-c3dqZ2juww",
+    "sv": "/sv/guides/tak-guide/importera-filer-och-fjarresurser-RIt6IYBJfn"
+  },
+  "spela-upp-och-fanga-video-2fFwRMj9g4": {
+    "en": "/en/guides/tak-guide/play-capture-video-hWmpN6dj9t",
+    "fi": "/fi/guides/tak-guide/toista-ja-kaappaa-videota-xag7zBmlMd",
+    "sv": "/sv/guides/tak-guide/spela-upp-och-fanga-video-2fFwRMj9g4"
+  },
+  "installera-uas-tool-plugin-VxIbbgH2nd": {
+    "en": "/en/guides/tak-guide/install-uas-tool-plugin-BDPcnhvDgk",
+    "fi": "/fi/guides/tak-guide/asenna-uas-tool-lisaosa-ezy7pwc4no",
+    "sv": "/sv/guides/tak-guide/installera-uas-tool-plugin-VxIbbgH2nd"
+  },
+  "anslut-uas-tool-automatiskt-till-mediamtx-HeWL5goTM5": {
+    "en": "/en/guides/tak-guide/auto-connect-uas-tool-to-mediamtx-MahzGHsEdu",
+    "fi": "/fi/guides/tak-guide/yhdista-uas-tool-automaattisesti-mediamtxaan-OxrZY5V7EQ",
+    "sv": "/sv/guides/tak-guide/anslut-uas-tool-automatiskt-till-mediamtx-HeWL5goTM5"
+  },
+  "oppna-uas-verktyget-och-las-telemetri-wdcDijyRka": {
+    "en": "/en/guides/tak-guide/open-uas-tool-read-telemetry-CvGSGecLE1",
+    "fi": "/fi/guides/tak-guide/avaa-uas-tyokalu-ja-lue-telemetria-z5ZZMLVliu",
+    "sv": "/sv/guides/tak-guide/oppna-uas-verktyget-och-las-telemetri-wdcDijyRka"
+  },
+  "titta-pa-och-styr-dronarens-kamera-cazTd6XReH": {
+    "en": "/en/guides/tak-guide/watch-control-drone-camera-45LPQNKdqn",
+    "fi": "/fi/guides/tak-guide/katso-ja-ohjaa-dronen-kameraa-rh95KbaTpe",
+    "sv": "/sv/guides/tak-guide/titta-pa-och-styr-dronarens-kamera-cazTd6XReH"
+  },
+  "fanga-och-sand-dronarvideo-81f1fTM3IL": {
+    "en": "/en/guides/tak-guide/capture-broadcast-drone-video-UfMEqBjxec",
+    "fi": "/fi/guides/tak-guide/kuvaa-ja-laheta-lennokin-videota-rjbcDzCyvV",
+    "sv": "/sv/guides/tak-guide/fanga-och-sand-dronarvideo-81f1fTM3IL"
+  },
+  "skicka-dronaren-till-en-plats-mPUY0sUiR3": {
+    "en": "/en/guides/tak-guide/send-drone-to-a-location-vwYPd2cbEC",
+    "fi": "/fi/guides/tak-guide/laheta-lennokki-sijaintiin-mKsB4aikwV",
+    "sv": "/sv/guides/tak-guide/skicka-dronaren-till-en-plats-mPUY0sUiR3"
+  },
+  "planera-dronaruppdrag-fOPXznHLwt": {
+    "en": "/en/guides/tak-guide/plan-drone-missions-lNvEkDE1kE",
+    "fi": "/fi/guides/tak-guide/suunnittele-lennokkitehtavat-emxgZTF3x4",
+    "sv": "/sv/guides/tak-guide/planera-dronaruppdrag-fOPXznHLwt"
+  },
+  "starta-stoppa-och-hamta-hem-dronaren-5IlxUaDKae": {
+    "en": "/en/guides/tak-guide/launch-stop-return-drone-H6yqQ4Gyc5",
+    "fi": "/fi/guides/tak-guide/kaynnista-pysayta-ja-palauta-lennokki-ramp5QBORo",
+    "sv": "/sv/guides/tak-guide/starta-stoppa-och-hamta-hem-dronaren-5IlxUaDKae"
+  },
+  "skapa-ett-rutnat-grg-builder-n8gH3EgojQ": {
+    "en": "/en/guides/tak-guide/create-a-grid-grg-builder-RD3vtzu9yS",
+    "fi": "/fi/guides/tak-guide/luo-ruudukko-grg-builder-z0VfhByVKA",
+    "sv": "/sv/guides/tak-guide/skapa-ett-rutnat-grg-builder-n8gH3EgojQ"
+  },
+  "mark-och-formatera-ett-rutnat-YcEKrvC397": {
+    "en": "/en/guides/tak-guide/annotate-style-a-grid-xSjKDtDtsj",
+    "fi": "/fi/guides/tak-guide/merkitse-ja-muotoile-ruudukko-fA3HwgfjjV",
+    "sv": "/sv/guides/tak-guide/mark-och-formatera-ett-rutnat-YcEKrvC397"
+  },
+  "exportera-ett-rutnat-grg-builder-NhQ9Zf06Wn": {
+    "en": "/en/guides/tak-guide/export-a-grid-grg-builder-EcpaE7LkX1",
+    "fi": "/fi/guides/tak-guide/vie-ruudukko-grg-builder-yx2Y3RPY0C",
+    "sv": "/sv/guides/tak-guide/exportera-ett-rutnat-grg-builder-NhQ9Zf06Wn"
+  },
+  "skapa-en-rapport-YpiHRTtIiL": {
+    "en": "/en/guides/tak-guide/create-a-report-FB38XVNhaL",
+    "fi": "/fi/guides/tak-guide/luo-raportti-ATqNeF4S9c",
+    "sv": "/sv/guides/tak-guide/skapa-en-rapport-YpiHRTtIiL"
+  },
+  "spara-skicka-och-dela-en-rapport-gU4Iv71nZV": {
+    "en": "/en/guides/tak-guide/save-send-share-a-report-FCSrRHNkjC",
+    "fi": "/fi/guides/tak-guide/tallenna-laheta-ja-jaa-raportti-seWPZi6Bfz",
+    "sv": "/sv/guides/tak-guide/spara-skicka-och-dela-en-rapport-gU4Iv71nZV"
+  },
+  "hitta-rapporter-pa-servern-Nt8T6THdnt": {
+    "en": "/en/guides/tak-guide/find-reports-on-the-server-QTVm3SETE8",
+    "fi": "/fi/guides/tak-guide/etsi-raportteja-palvelimelta-fgWGDji6qC",
+    "sv": "/sv/guides/tak-guide/hitta-rapporter-pa-servern-Nt8T6THdnt"
+  },
+  "bygg-en-anpassad-rapportmall-KwWEl4FT0Z": {
+    "en": "/en/guides/tak-guide/build-a-custom-report-template-VVphDLVbW3",
+    "fi": "/fi/guides/tak-guide/rakenna-mukautettu-raporttimalli-yCSiu6uhpP",
+    "sv": "/sv/guides/tak-guide/bygg-en-anpassad-rapportmall-KwWEl4FT0Z"
+  },
+  "konfigurera-rapportinstallningar-SdPkG0kE3I": {
+    "en": "/en/guides/tak-guide/configure-report-settings-kQmMR0hmn5",
+    "fi": "/fi/guides/tak-guide/maarita-raporttiasetukset-irT9AFQtCl",
+    "sv": "/sv/guides/tak-guide/konfigurera-rapportinstallningar-SdPkG0kE3I"
+  },
+  "anslut-till-prc-152-rover-radio-cMfvASinoQ": {
+    "en": "/en/guides/tak-guide/connect-to-prc-152-rover-radio-h4TQ7hwPw2",
+    "fi": "/fi/guides/tak-guide/yhdista-prc-152-rover-radioon-hoINotQoqb",
+    "sv": "/sv/guides/tak-guide/anslut-till-prc-152-rover-radio-cMfvASinoQ"
+  },
+  "konfigurera-krypterad-mesh-kommunikation-UBh0LRJGg5": {
+    "en": "/en/guides/tak-guide/setup-encrypted-mesh-comms-ytYOQTVxVo",
+    "fi": "/fi/guides/tak-guide/salatun-mesh-viestinnan-kayttoonotto-l34tbseLan",
+    "sv": "/sv/guides/tak-guide/konfigurera-krypterad-mesh-kommunikation-UBh0LRJGg5"
+  },
+  "felsokning-6aAV1qqTyn": {
+    "en": "/en/guides/tak-guide/troubleshooting-IC3Nd5qZHr",
+    "fi": "/fi/guides/tak-guide/vianmaaritys-mum1CL1yac",
+    "sv": "/sv/guides/tak-guide/felsokning-6aAV1qqTyn"
+  },
+  "stall-in-sprak-och-lokalisering-for-wintak-20Oabj2Esq": {
+    "en": "/en/guides/tak-guide/set-language-localization-for-wintak-GstcQifMVj",
+    "fi": "/fi/guides/tak-guide/aseta-wintakn-kieli-ja-lokalisointi-h2H6q8rgOi",
+    "sv": "/sv/guides/tak-guide/stall-in-sprak-och-lokalisering-for-wintak-20Oabj2Esq"
+  },
+  "ladda-ner-och-installera-wintak-hTsXUKMaCS": {
+    "en": "/en/guides/tak-guide/download-install-wintak-qfu2aB0W9u",
+    "fi": "/fi/guides/tak-guide/lataa-ja-asenna-wintak-Xx7Wycg9gb",
+    "sv": "/sv/guides/tak-guide/ladda-ner-och-installera-wintak-hTsXUKMaCS"
+  },
+  "importera-client-package-till-wintak-LKNdCcucrD": {
+    "en": "/en/guides/tak-guide/import-the-client-package-to-wintak-kCXH9p8keg",
+    "fi": "/fi/guides/tak-guide/tuo-client-package-wintakiin-4r7he3cxqW",
+    "sv": "/sv/guides/tak-guide/importera-client-package-till-wintak-LKNdCcucrD"
+  },
+  "ladda-tillagg-och-slutfor-installationen-q0zNv80GFR": {
+    "en": "/en/guides/tak-guide/load-plugins-finish-setup-xa2huv9Wmn",
+    "fi": "/fi/guides/tak-guide/lataa-lisaosat-ja-viimeistele-asennus-Tb3fKqrK2B",
+    "sv": "/sv/guides/tak-guide/ladda-tillagg-och-slutfor-installationen-q0zNv80GFR"
+  },
+  "ange-din-egen-position-V1XPioLt64": {
+    "en": "/en/guides/tak-guide/setting-up-your-own-location-IAAAIJTiqZ",
+    "fi": "/fi/guides/tak-guide/oman-sijainnin-asettaminen-17jf00ekir",
+    "sv": "/sv/guides/tak-guide/ange-din-egen-position-V1XPioLt64"
+  },
+  "sparning-av-egna-styrkor-bRtgJ9hDGR": {
+    "en": "/en/guides/tak-guide/blue-force-tracking-uv3kHr7LSr",
+    "fi": "/fi/guides/tak-guide/omien-joukkojen-seuranta-tKICHJUF25",
+    "sv": "/sv/guides/tak-guide/sparning-av-egna-styrkor-bRtgJ9hDGR"
+  },
+  "data-sync-d2tAXDXHwO": {
+    "en": "/en/guides/tak-guide/data-sync-VswHZNexYA",
+    "fi": "/fi/guides/tak-guide/data-sync-k0vQiZ3DNm",
+    "sv": "/sv/guides/tak-guide/data-sync-d2tAXDXHwO"
+  },
+  "point-dropper-lagg-till-markorer-scEnZfp72C": {
+    "en": "/en/guides/tak-guide/point-dropper-add-markers-wwYK8iDf5w",
+    "fi": "/fi/guides/tak-guide/point-dropper-lisaa-merkintoja-oCa76CxmxW",
+    "sv": "/sv/guides/tak-guide/point-dropper-lagg-till-markorer-scEnZfp72C"
+  },
+  "anvand-geochat-D5tfU0DNdl": {
+    "en": "/en/guides/tak-guide/use-geochat-G4fqV0Y4fg",
+    "fi": "/fi/guides/tak-guide/kayta-geochatia-F9hZhCTnub",
+    "sv": "/sv/guides/tak-guide/anvand-geochat-D5tfU0DNdl"
+  },
+  "hantering-av-wintak-tillagg-9iOqPxCmwd": {
+    "en": "/en/guides/tak-guide/plugin-management-EphDON8hEX",
+    "fi": "/fi/guides/tak-guide/wintak-laajennusten-hallinta-qaHLBdWwfw",
+    "sv": "/sv/guides/tak-guide/hantering-av-wintak-tillagg-9iOqPxCmwd"
+  },
+  "rensa-innehall-ELxCoba17F": {
+    "en": "/en/guides/tak-guide/clear-content-gLcPrq5b5J",
+    "fi": "/fi/guides/tak-guide/tyhjenna-sisalto-WetdafA5DU",
+    "sv": "/sv/guides/tak-guide/rensa-innehall-ELxCoba17F"
+  },
+  "skapa-floden-12E0nv0B4a": {
+    "en": "/en/guides/tak-guide/create-feeds-0jPr4Cah1Z",
+    "fi": "/fi/guides/tak-guide/syotteiden-luominen-RQLTfV45mi",
+    "sv": "/sv/guides/tak-guide/skapa-floden-12E0nv0B4a"
+  },
+  "hantera-floden-Qyvi9XK881": {
+    "en": "/en/guides/tak-guide/manage-feeds-62IWBYODOd",
+    "fi": "/fi/guides/tak-guide/hallinnoi-syotteita-dbaSnOdqqc",
+    "sv": "/sv/guides/tak-guide/hantera-floden-Qyvi9XK881"
+  },
+  "rita-och-dela-planer-C7UNuLt8oq": {
+    "en": "/en/guides/tak-guide/draw-share-plans-gUzuEffh5v",
+    "fi": "/fi/guides/tak-guide/piirra-ja-jaa-suunnitelmia-yKzNNsotOO",
+    "sv": "/sv/guides/tak-guide/rita-och-dela-planer-C7UNuLt8oq"
+  },
+  "fa-varningar-med-geostangsel-YvTX3n2Ucj": {
+    "en": "/en/guides/tak-guide/get-alerts-with-geofences-Y1Bgr7UInI",
+    "fi": "/fi/guides/tak-guide/saa-halytyksia-geoaidoilla-4MYhNMrI4D",
+    "sv": "/sv/guides/tak-guide/fa-varningar-med-geostangsel-YvTX3n2Ucj"
+  },
+  "opendefence-standardmodellen-Rlu6i4aeXg": {
+    "en": "/en/guides/tak-guide/overview-G0keHC8NbD",
+    "fi": "/fi/guides/tak-guide/opendefence-vakiomalli-x5SMy8a7WS",
+    "sv": "/sv/guides/tak-guide/opendefence-standardmodellen-Rlu6i4aeXg"
+  },
+  "soldat-UXKA1Unk59": {
+    "en": "/en/guides/tak-guide/fighter-ZxrplBIys6",
+    "fi": "/fi/guides/tak-guide/taistelija-trgkL4SaDk",
+    "sv": "/sv/guides/tak-guide/soldat-UXKA1Unk59"
+  },
+  "producera-recon-flode-azFNrXh6Wi": {
+    "en": "/en/guides/tak-guide/produce-recon-feed-B7h9QJzZVd",
+    "fi": "/fi/guides/tak-guide/tuota-recon-syote-fexKBlxU0L",
+    "sv": "/sv/guides/tak-guide/producera-recon-flode-azFNrXh6Wi"
+  },
+  "spela-in-handelser-ByDTrXbank": {
+    "en": "/en/guides/tak-guide/record-events-2LJeWe6cPW",
+    "fi": "/fi/guides/tak-guide/tallenna-tapahtumat-qjxLc57ea2",
+    "sv": "/sv/guides/tak-guide/spela-in-handelser-ByDTrXbank"
+  },
+  "spela-upp-en-inspelning-MxUtx9oUiU": {
+    "en": "/en/guides/tak-guide/play-a-recording-uLch9lAImn",
+    "fi": "/fi/guides/tak-guide/toista-nauhoitus-IzwZSK6kdC",
+    "sv": "/sv/guides/tak-guide/spela-upp-en-inspelning-MxUtx9oUiU"
+  },
+  "exportera-ladda-ner-och-hantera-FzlSjRgi1p": {
+    "en": "/en/guides/tak-guide/export-download-manage-0NPPYBJSNP",
+    "fi": "/fi/guides/tak-guide/vie-lataa-ja-hallitse-FEIam7G2GU",
+    "sv": "/sv/guides/tak-guide/exportera-ladda-ner-och-hantera-FzlSjRgi1p"
+  },
+  "skapa-och-redigera-en-grg-rDfydLOMtb": {
+    "en": "/en/guides/tak-guide/create-edit-a-grg-Xui0ilYenu",
+    "fi": "/fi/guides/tak-guide/luo-ja-muokkaa-grg-Fpt8jedvMz",
+    "sv": "/sv/guides/tak-guide/skapa-och-redigera-en-grg-rDfydLOMtb"
+  },
+  "lagg-till-funktioner-och-markorer-BLXzkd3BHF": {
+    "en": "/en/guides/tak-guide/add-features-markers-9dYxguZls8",
+    "fi": "/fi/guides/tak-guide/lisaa-ominaisuuksia-ja-merkintoja-6rG5M5SnNo",
+    "sv": "/sv/guides/tak-guide/lagg-till-funktioner-och-markorer-BLXzkd3BHF"
+  },
+  "exportera-och-dela-en-grg-nNP5db39f3": {
+    "en": "/en/guides/tak-guide/export-share-a-grg-OP1CAaNJhC",
+    "fi": "/fi/guides/tak-guide/grgn-vienti-ja-jakaminen-ydjlUkJ7Pg",
+    "sv": "/sv/guides/tak-guide/exportera-och-dela-en-grg-nNP5db39f3"
+  },
+  "skapa-en-rapport-YA4jfgqpea": {
+    "en": "/en/guides/tak-guide/create-a-report-mhCCLqyMaU",
+    "fi": "/fi/guides/tak-guide/luo-raportti-DDE5rNDUyr",
+    "sv": "/sv/guides/tak-guide/skapa-en-rapport-YA4jfgqpea"
+  },
+  "bladdra-i-rapportdatabasen-qj3OotLB4i": {
+    "en": "/en/guides/tak-guide/browse-the-reports-database-unYDjhwqXD",
+    "fi": "/fi/guides/tak-guide/selaa-raporttitietokantaa-RmpgkBAbfQ",
+    "sv": "/sv/guides/tak-guide/bladdra-i-rapportdatabasen-qj3OotLB4i"
+  },
+  "anpassade-rapportmallar-BetIS5kccv": {
+    "en": "/en/guides/tak-guide/custom-report-templates-8bCilJEujm",
+    "fi": "/fi/guides/tak-guide/mukautetut-raporttipohjat-ArfvIcUuY3",
+    "sv": "/sv/guides/tak-guide/anpassade-rapportmallar-BetIS5kccv"
+  },
+  "skapa-en-vns-rutt-B6iV1MgGN7": {
+    "en": "/en/guides/tak-guide/create-a-vns-route-gfIlnjXwN2",
+    "fi": "/fi/guides/tak-guide/luo-vns-reitti-Njd2diVcZY",
+    "sv": "/sv/guides/tak-guide/skapa-en-vns-rutt-B6iV1MgGN7"
+  },
+  "felsokning-FGKrOPGWwr": {
+    "en": "/en/guides/tak-guide/troubleshooting-T4SvHjOYgd",
+    "fi": "/fi/guides/tak-guide/vianmaaritys-HIBgMyBeHy",
+    "sv": "/sv/guides/tak-guide/felsokning-FGKrOPGWwr"
+  },
+  "borja-fran-nedladdning-TsV7d2JP5F": {
+    "en": "/en/guides/tak-guide/start-from-download-vQGTWj6wET",
+    "fi": "/fi/guides/tak-guide/aloita-lataamisesta-qtXafhRjdo",
+    "sv": "/sv/guides/tak-guide/borja-fran-nedladdning-TsV7d2JP5F"
+  },
+  "itak-redan-installerat-HPGjec95O1": {
+    "en": "/en/guides/tak-guide/itak-already-installed-DeEex1hIH2",
+    "fi": "/fi/guides/tak-guide/itak-on-jo-asennettu-b7KB36fpA7",
+    "sv": "/sv/guides/tak-guide/itak-redan-installerat-HPGjec95O1"
+  },
+  "sparning-av-egna-styrkor-pi3AVYT4mX": {
+    "en": "/en/guides/tak-guide/blue-force-tracking-NOzCSj3j64",
+    "fi": "/fi/guides/tak-guide/omien-joukkojen-seuranta-g7RxW8tHH6",
+    "sv": "/sv/guides/tak-guide/sparning-av-egna-styrkor-pi3AVYT4mX"
+  },
+  "datasynkronisering-sfvICpIRhr": {
+    "en": "/en/guides/tak-guide/data-sync-U4cc7UE9hg",
+    "fi": "/fi/guides/tak-guide/datan-synkronointi-lzOCvJIN5S",
+    "sv": "/sv/guides/tak-guide/datasynkronisering-sfvICpIRhr"
+  },
+  "skapa-symboler-och-snabbilder-I7NbGCaG2R": {
+    "en": "/en/guides/tak-guide/create-symbols-quick-pics-elqHqV8SW7",
+    "fi": "/fi/guides/tak-guide/luo-symboleja-ja-pikakuvia-sHjyCvAf4P",
+    "sv": "/sv/guides/tak-guide/skapa-symboler-och-snabbilder-I7NbGCaG2R"
+  },
+  "anvand-geochat-3YfBvaPUdo": {
+    "en": "/en/guides/tak-guide/use-geochat-r99lJsOLnK",
+    "fi": "/fi/guides/tak-guide/kayta-geochatia-1MmA1emqhu",
+    "sv": "/sv/guides/tak-guide/anvand-geochat-3YfBvaPUdo"
+  },
+  "oversikt-nzDS5OWw0k": {
+    "en": "/en/guides/tak-guide/overview-bPeWx0MdZQ",
+    "fi": "/fi/guides/tak-guide/yleiskatsaus-UB5rRp5Nz5",
+    "sv": "/sv/guides/tak-guide/oversikt-nzDS5OWw0k"
+  },
+  "soldat-zS7E1xGRtx": {
+    "en": "/en/guides/tak-guide/fighter-rf4mMCmmWV",
+    "fi": "/fi/guides/tak-guide/taistelija-Rco9ioLaEE",
+    "sv": "/sv/guides/tak-guide/soldat-zS7E1xGRtx"
+  },
+  "kommandoplats-nXnVNhBp5i": {
+    "en": "/en/guides/tak-guide/command-post-YxjX9bA9iG",
+    "fi": "/fi/guides/tak-guide/komentopaikka-7qMzKheq4Z",
+    "sv": "/sv/guides/tak-guide/kommandoplats-nXnVNhBp5i"
+  },
+  "felsokning-hCbMpa5tPi": {
+    "en": "/en/guides/tak-guide/troubleshooting-Pj64UaHAJW",
+    "fi": "/fi/guides/tak-guide/vianmaaritys-LtZ3uqW6vO",
+    "sv": "/sv/guides/tak-guide/felsokning-hCbMpa5tPi"
+  },
+  "borja-fran-nedladdning-I073Y0t0UQ": {
+    "en": "/en/guides/tak-guide/start-from-download-x9ve2aL7oC",
+    "fi": "/fi/guides/tak-guide/aloita-lataamisesta-HDrpxKE5fj",
+    "sv": "/sv/guides/tak-guide/borja-fran-nedladdning-I073Y0t0UQ"
+  },
+  "tak-tracker-redan-installerad-hDp4E0FkY6": {
+    "en": "/en/guides/tak-guide/tak-tracker-already-installed-DoVQOAKWVB",
+    "fi": "/fi/guides/tak-guide/tak-tracker-on-jo-asennettu-kdeS68J3Ln",
+    "sv": "/sv/guides/tak-guide/tak-tracker-redan-installerad-hDp4E0FkY6"
+  },
+  "importera-serveranslutning-yxBJHAG8As": {
+    "en": "/en/guides/tak-guide/importing-server-connection-URmd6F0UU5",
+    "fi": "/fi/guides/tak-guide/palvelinyhteyden-tuonti-se5nhvhcj0",
+    "sv": "/sv/guides/tak-guide/importera-serveranslutning-yxBJHAG8As"
+  },
+  "las-av-din-status-och-position-Vl9DXPZ7S8": {
+    "en": "/en/guides/tak-guide/read-your-status-location-xFbq6tWEQC",
+    "fi": "/fi/guides/tak-guide/lue-tilasi-ja-sijaintisi-2FUEtnpZg4",
+    "sv": "/sv/guides/tak-guide/las-av-din-status-och-position-Vl9DXPZ7S8"
+  },
+  "skicka-en-nodsignal-P8pYX5tKLu": {
+    "en": "/en/guides/tak-guide/send-an-emergency-alert-beacon-rmQFqQnNJC",
+    "fi": "/fi/guides/tak-guide/laheta-hatamajakka-1C1ahU2CXe",
+    "sv": "/sv/guides/tak-guide/skicka-en-nodsignal-P8pYX5tKLu"
+  },
+  "chatta-med-ditt-team-xB04rNQEjp": {
+    "en": "/en/guides/tak-guide/chat-with-your-team-y6xwtxc8G9",
+    "fi": "/fi/guides/tak-guide/keskustele-tiimisi-kanssa-gTr7e8bLbF",
+    "sv": "/sv/guides/tak-guide/chatta-med-ditt-team-xB04rNQEjp"
+  },
+  "alternativ-och-installningar-0TFdbCddgQ": {
+    "en": "/en/guides/tak-guide/options-settings-XyYcsDAVCo",
+    "fi": "/fi/guides/tak-guide/asetukset-ja-valinnat-kNYxhiyRlR",
+    "sv": "/sv/guides/tak-guide/alternativ-och-installningar-0TFdbCddgQ"
+  },
+  "oversikt-WnJ9NYZa3M": {
+    "en": "/en/guides/tak-guide/overview-4sA7lVWVtw",
+    "fi": "/fi/guides/tak-guide/yleiskatsaus-awMobw9EkE",
+    "sv": "/sv/guides/tak-guide/oversikt-WnJ9NYZa3M"
+  },
+  "soldat-Mq5QiVrMr1": {
+    "en": "/en/guides/tak-guide/fighter-gUAGHKAtVV",
+    "fi": "/fi/guides/tak-guide/taistelija-jkvrnZXkli",
+    "sv": "/sv/guides/tak-guide/soldat-Mq5QiVrMr1"
+  },
+  "kommandoplats-NyhTmwJFEe": {
+    "en": "/en/guides/tak-guide/command-post-t2fdgSrk3R",
+    "fi": "/fi/guides/tak-guide/komentopaikka-BLzd0iLjOh",
+    "sv": "/sv/guides/tak-guide/kommandoplats-NyhTmwJFEe"
+  },
+  "borja-med-nedladdning-syCbgRYiOo": {
+    "en": "/en/guides/tak-guide/start-from-download-5tAQBOfF65",
+    "fi": "/fi/guides/tak-guide/aloita-lataamalla-GKdhN7JWfS",
+    "sv": "/sv/guides/tak-guide/borja-med-nedladdning-syCbgRYiOo"
+  },
+  "tak-tracker-redan-installerad-b0bOMabOne": {
+    "en": "/en/guides/tak-guide/tak-tracker-already-installed-DmWqDN5jLp",
+    "fi": "/fi/guides/tak-guide/tak-tracker-on-jo-asennettu-9ULjLI5HIp",
+    "sv": "/sv/guides/tak-guide/tak-tracker-redan-installerad-b0bOMabOne"
+  },
+  "skicka-varningar-7EOgWJupXv": {
+    "en": "/en/guides/tak-guide/send-alerts-jz5xQsdpbH",
+    "fi": "/fi/guides/tak-guide/laheta-halytyksia-oXpOorNrag",
+    "sv": "/sv/guides/tak-guide/skicka-varningar-7EOgWJupXv"
+  },
+  "oversikt-IAwj5j49ia": {
+    "en": "/en/guides/tak-guide/overview-vqWEyyCxy8",
+    "fi": "/fi/guides/tak-guide/yleiskatsaus-BerAy6ibbu",
+    "sv": "/sv/guides/tak-guide/oversikt-IAwj5j49ia"
+  },
+  "soldat-4gafoPRROP": {
+    "en": "/en/guides/tak-guide/fighter-xKivECWhVS",
+    "fi": "/fi/guides/tak-guide/taistelija-Qgf88CxnWl",
+    "sv": "/sv/guides/tak-guide/soldat-4gafoPRROP"
+  },
+  "ledningsplats-uoVsr9jP0D": {
+    "en": "/en/guides/tak-guide/command-post-aX04WiqaZf",
+    "fi": "/fi/guides/tak-guide/komentopaikka-q4LRKdr4q0",
+    "sv": "/sv/guides/tak-guide/ledningsplats-uoVsr9jP0D"
+  },
+  "felsokning-4GY9QUGGmF": {
+    "en": "/en/guides/tak-guide/troubleshooting-4heIv7ZV7m",
+    "fi": "/fi/guides/tak-guide/vianmaaritys-MchVmRHKOC",
+    "sv": "/sv/guides/tak-guide/felsokning-4GY9QUGGmF"
+  },
+  "installera-element-skrivbord-tagwindows-tagmacos-taglinux-CzxXo6adUl": {
+    "en": "/en/guides/matrix-guide/set-up-element-desktop-tagwindows-tagmacos-taglinux-KspjTxDpoH",
+    "fi": "/fi/guides/matrix-guide/asenna-element-tyopoyta-tagwindows-tagmacos-taglinux-Zn1epPrcp6",
+    "sv": "/sv/guides/matrix-guide/installera-element-skrivbord-tagwindows-tagmacos-taglinux-CzxXo6adUl"
+  },
+  "konfigurera-element-mobil-tagios-tagandroid-dPrhAGHVpH": {
+    "en": "/en/guides/matrix-guide/set-up-element-mobile-tagios-tagandroid-QacQsNprmb",
+    "fi": "/fi/guides/matrix-guide/ota-element-kayttoon-mobiili-tagios-tagandroid-GKkxWww3O0",
+    "sv": "/sv/guides/matrix-guide/konfigurera-element-mobil-tagios-tagandroid-dPrhAGHVpH"
+  },
+  "meddelanden-i-matrix-YJPlgJrmpr": {
+    "en": "/en/guides/matrix-guide/messaging-in-matrix-MFNQHEi50M",
+    "fi": "/fi/guides/matrix-guide/viestinta-matrixissa-3mOCfe4cEL",
+    "sv": "/sv/guides/matrix-guide/meddelanden-i-matrix-YJPlgJrmpr"
+  },
+  "enhetens-rum-och-organisation-u4QesBL0bv": {
+    "en": "/en/guides/matrix-guide/unit-rooms-organisation-krWteO9e37",
+    "fi": "/fi/guides/matrix-guide/yksikon-huoneet-ja-organisointi-9VvNjfff1H",
+    "sv": "/sv/guides/matrix-guide/enhetens-rum-och-organisation-u4QesBL0bv"
+  },
+  "kom-igang-med-cryptpad-hiXBJRERid": {
+    "en": "/en/guides/cryptpad-guide/getting-started-with-cryptpad-JznoTt1R8B",
+    "fi": "/fi/guides/cryptpad-guide/cryptpadin-kayton-aloittaminen-hQ7vIKZoxX",
+    "sv": "/sv/guides/cryptpad-guide/kom-igang-med-cryptpad-hiXBJRERid"
+  },
+  "dokument-oIwKFvuvn3": {
+    "en": "/en/guides/cryptpad-guide/documents-1QGExPEBr9",
+    "fi": "/fi/guides/cryptpad-guide/dokumentit-vYaxLgXJyf",
+    "sv": "/sv/guides/cryptpad-guide/dokument-oIwKFvuvn3"
+  },
+  "kanban-tavlor-qoIqgWi2fK": {
+    "en": "/en/guides/cryptpad-guide/kanban-boards-U2wuelSn6Z",
+    "fi": "/fi/guides/cryptpad-guide/kanban-taulut-zFIxk6Fqwa",
+    "sv": "/sv/guides/cryptpad-guide/kanban-tavlor-qoIqgWi2fK"
+  },
+  "presentationer-26fnbdHVfs": {
+    "en": "/en/guides/cryptpad-guide/presentations-gWIWMzfeXq",
+    "fi": "/fi/guides/cryptpad-guide/esitykset-k6gHQmskUS",
+    "sv": "/sv/guides/cryptpad-guide/presentationer-26fnbdHVfs"
+  },
+  "skapa-ett-team-for-din-enhet-5WZecY2ggu": {
+    "en": "/en/guides/cryptpad-guide/set-up-a-unit-team-acg83EqeNh",
+    "fi": "/fi/guides/cryptpad-guide/luo-tiimi-yksikollesi-rh5NTKB48E",
+    "sv": "/sv/guides/cryptpad-guide/skapa-ett-team-for-din-enhet-5WZecY2ggu"
+  },
+  "delad-kalender-Wyukwg6DLG": {
+    "en": "/en/guides/cryptpad-guide/shared-calendar-uEIsdBqGNk",
+    "fi": "/fi/guides/cryptpad-guide/jaettu-kalenteri-O7sH9Zra69",
+    "sv": "/sv/guides/cryptpad-guide/delad-kalender-Wyukwg6DLG"
+  },
+  "sakerhetskopiera-dina-data-yVu1FNdIEb": {
+    "en": "/en/guides/cryptpad-guide/back-up-your-data-xYdkRa1Tms",
+    "fi": "/fi/guides/cryptpad-guide/varmuuskopioi-tietosi-DQfftbWf4c",
+    "sv": "/sv/guides/cryptpad-guide/sakerhetskopiera-dina-data-yVu1FNdIEb"
+  }
+}

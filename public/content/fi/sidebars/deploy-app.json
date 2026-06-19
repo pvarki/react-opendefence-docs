@@ -4,6 +4,12 @@
   "slug": "deploy-app",
   "items": [
     {
+      "type": "doc",
+      "id": "johdanto-pVdcEzIB4j",
+      "label": "Johdanto",
+      "slug": "johdanto-pVdcEzIB4j"
+    },
+    {
       "type": "group",
       "id": "kayttajaohjeet-KILDyYvVV0",
       "label": "Käyttäjäohjeet",
@@ -58,6 +64,92 @@
           "id": "kayta-ulkoisia-palveluita-3RiDEDjjg0",
           "label": "Käytä ulkoisia palveluita",
           "slug": "kayta-ulkoisia-palveluita-3RiDEDjjg0"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "kayttajaohjeet-tmHgIS6QIb",
+      "label": "Käyttäjäohjeet",
+      "clientId": "ios-W14a7ZsDI4",
+      "children": [
+        {
+          "type": "doc",
+          "id": "liittyminen-deploy-appiin-Jy261fSdzF",
+          "label": "Liittyminen Deploy Appiin",
+          "slug": "liittyminen-deploy-appiin-Jy261fSdzF"
+        },
+        {
+          "type": "doc",
+          "id": "sovellusten-kayttaminen-AZUWkin399",
+          "label": "Sovellusten käyttäminen",
+          "slug": "sovellusten-kayttaminen-AZUWkin399"
+        },
+        {
+          "type": "doc",
+          "id": "kayttoliittyma-AYxx37RhPK",
+          "label": "Käyttöliittymä",
+          "slug": "kayttoliittyma-AYxx37RhPK"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "yllapitajaohjeet-opJgK00Rlw",
+      "label": "Ylläpitäjäohjeet",
+      "clientId": "ios-W14a7ZsDI4",
+      "children": [
+        {
+          "type": "doc",
+          "id": "ensimmainen-kirjautuminen-6xSLnWbWmV",
+          "label": "Ensimmäinen kirjautuminen",
+          "slug": "ensimmainen-kirjautuminen-6xSLnWbWmV"
+        },
+        {
+          "type": "doc",
+          "id": "kayttajien-lisaaminen-A97x9tyG2o",
+          "label": "Käyttäjien lisääminen",
+          "slug": "kayttajien-lisaaminen-A97x9tyG2o"
+        },
+        {
+          "type": "doc",
+          "id": "kayttajien-hallinta-ThmzgQfcOQ",
+          "label": "Käyttäjien hallinta",
+          "slug": "kayttajien-hallinta-ThmzgQfcOQ"
+        },
+        {
+          "type": "doc",
+          "id": "ulkoiset-palvelut-SIWRaQtmte",
+          "label": "Ulkoiset palvelut",
+          "slug": "ulkoiset-palvelut-SIWRaQtmte"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "kayttajaohjeet-0lLKAWitYN",
+      "label": "Käyttäjäohjeet",
+      "clientId": "windows-KjeSm52R8U",
+      "children": [
+        {
+          "type": "doc",
+          "id": "liity-deploy-app-sovellukseen-h2y5oF7JN4",
+          "label": "Liity Deploy App -sovellukseen",
+          "slug": "liity-deploy-app-sovellukseen-h2y5oF7JN4"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "yllapitajaohjeet-2fmjvQns4a",
+      "label": "Ylläpitäjäohjeet",
+      "clientId": "windows-KjeSm52R8U",
+      "children": [
+        {
+          "type": "doc",
+          "id": "ensimmainen-kirjautuminen-w6ucKbFHSI",
+          "label": "Ensimmäinen kirjautuminen",
+          "slug": "ensimmainen-kirjautuminen-w6ucKbFHSI"
         }
       ]
     }

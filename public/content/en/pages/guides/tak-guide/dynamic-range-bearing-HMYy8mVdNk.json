@@ -13,8 +13,13 @@
     "Dynamic Range & Bearing"
   ],
   "createdAt": "2026-06-15T19:43:19.220Z",
-  "updatedAt": "2026-06-15T20:53:50.553Z",
+  "updatedAt": "2026-06-18T20:20:41.503Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/dynamic-range-bearing-HMYy8mVdNk",
+    "fi": "/fi/guides/tak-guide/dynaaminen-etaisyys-ja-suuntima-MocHzAMYao",
+    "sv": "/sv/guides/tak-guide/dynamiskt-avstand-och-baring-36cC0xw4Kn"
+  },
   "blocks": [
     {
       "type": "html",

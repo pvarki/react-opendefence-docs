@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "id": "e723f417-1ef3-4077-99ed-c3b74e226cb7",
+  "slug": "keycloak-identity-groups-WXsDTvK7H8",
+  "collection": "working-with-tak",
+  "locale": "en",
+  "title": "Keycloak: identity & groups",
+  "breadcrumb": [
+    "Integrating to TAK Server",
+    "Keycloak: identity & groups"
+  ],
+  "createdAt": "2026-06-17T18:21:48.281Z",
+  "updatedAt": "2026-06-17T18:40:24.258Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Keycloak's two jobs",
+      "id": "keycloaks-two-jobs"
+    },
+    {
+      "depth": 2,
+      "text": "Logging into Keycloak",
+      "id": "logging-into-keycloak"
+    },
+    {
+      "depth": 2,
+      "text": "How TAK Server groups work",
+      "id": "how-tak-server-groups-work"
+    },
+    {
+      "depth": 2,
+      "text": "How your certificate maps to groups",
+      "id": "how-your-certificate-maps-to-groups"
+    },
+    {
+      "depth": 2,
+      "text": "What this means for your integration",
+      "id": "what-this-means-for-your-integration"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Your certificate gets you <em>in</em>; your <strong>groups</strong> decide what you can <em>do</em>. On a Deploy App deployment, groups live in <strong>Keycloak</strong> and are relayed to TAK Server — so Keycloak is where access to TAK data is actually shaped.</p>\n<h2 id=\"keycloaks-two-jobs\"><a href=\"#keycloaks-two-jobs\">Keycloak's two jobs</a></h2>\n<ol>\n<li><strong>OIDC identity provider.</strong> Keycloak is the OpenID Connect IdP for the deployment. TAK Server's <strong>OAuth API</strong> consumes it — the spec's OAuth endpoints (<code>getOpenIdConfiguration</code>, <code>getAccessToken</code>, <code>handleAuthRequest</code>, <code>getAuthServerName</code>) are how TAK Server discovers Keycloak's OIDC configuration and accepts tokens from it. This is what lets a Keycloak-authenticated user reach TAK Server without a separate login. Concretely, TAK Server runs the <strong>OAuth2 Password flow</strong> and exposes a token endpoint at <code>**https://&#x3C;server>:8446/oauth/token**</code>, issuing <strong>JWTs signed by the server certificate</strong> (so external systems can validate them against the server's trust chain). Certificate auth uses port <strong>8443</strong>; OAuth/username-password (incl. WebTAK) uses <strong>8446</strong>.</li>\n<li><strong>Group management.</strong> Keycloak is where a deployment's user <strong>groups</strong> are defined and assigned. <em>\"The current Deploy App environment uses Keycloak to manage user groups. These groups are relayed to TAK Server and connected users get them automatically.\"</em></li>\n</ol>\n<h2 id=\"logging-into-keycloak\"><a href=\"#logging-into-keycloak\">Logging into Keycloak</a></h2>\n<p>Admins reach Keycloak with the <strong>mTLS certificate</strong> issued by RASENMAEHER (the same one from <a href=\"/en/working-with-tak/enrolling-getting-a-client-certificate-vze3g7Eshz\">the previous page</a>):</p>\n<ul>\n<li>Open <code>kc.&#x3C;your-server></code> (e.g. <code>kc.your-server.fi</code>) and authenticate with the mTLS client certificate.</li>\n<li>Go to <strong>Groups</strong> in the sidebar → the <strong>tak</strong> groups to manage TAK access.</li>\n</ul>\n<h2 id=\"how-tak-server-groups-work\"><a href=\"#how-tak-server-groups-work\">How TAK Server groups work</a></h2>\n<p>TAK Server uses groups to decide <strong>who sees what</strong> — users in the same group share and view each other's information. Membership has a <strong>direction</strong>:</p>\n<table>\n<thead>\n<tr>\n<th>Membership</th>\n<th>Meaning</th>\n<th>Keycloak group</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>In</strong></td>\n<td>the user <strong>sends (writes)</strong> data to the group</td>\n<td><code>&#x3C;group>_WRITE</code></td>\n</tr>\n<tr>\n<td><strong>Out</strong></td>\n<td>the user <strong>receives (reads)</strong> data from the group</td>\n<td><code>&#x3C;group>_READ</code></td>\n</tr>\n<tr>\n<td><strong>Both</strong></td>\n<td>the user both sends and receives</td>\n<td><code>&#x3C;group></code></td>\n</tr>\n</tbody>\n</table>\n<ul>\n<li>Everyone starts in the <strong>default</strong> group; admins move users as needed, and a user can be in <strong>multiple</strong> groups.</li>\n<li><strong>Basic users don't see or change groups</strong> — group management is an <strong>admin</strong> task, visible through TAK tools and the TAK Server admin UI.</li>\n</ul>\n<p>This direction model is why a push can silently go nowhere: to <em>send</em> into a group you need <strong>In</strong> (<code>_WRITE</code>) membership; to <em>read</em> it you need <strong>Out</strong> (<code>_READ</code>).</p>\n<h2 id=\"how-your-certificate-maps-to-groups\"><a href=\"#how-your-certificate-maps-to-groups\">How your certificate maps to groups</a></h2>\n<p>TAK Server can assign a connection's groups three ways: from the <strong>input</strong> (a <code>&#x3C;filtergroup></code> on the listening port), from an <strong>authentication message</strong> (the client sends username/password), or from the <strong>client certificate</strong> (<code>auth=\"x509\"</code>). The Deploy App path is the <strong>client-certificate</strong> one, and it works like this:</p>\n<ol>\n<li>You connect with your <strong>mTLS client certificate</strong>.</li>\n<li>TAK Server reads the <strong>CN from the certificate's DN</strong> and treats it as your <strong>username</strong> — e.g. <code>CN=jkirk, O=TAK, C=US</code> → username <code>jkirk</code>.</li>\n<li>It looks that username up in its <strong>authentication backend</strong> and applies the groups found there (the <code>&#x3C;group></code> / <code>&#x3C;group>_WRITE</code> / <code>&#x3C;group>_READ</code> memberships managed via Keycloak).</li>\n<li>If <strong>no groups</strong> are found, the connection lands in the default <code>**__ANON__**</code> group (two underscores each side).</li>\n</ol>\n<p>So there's a clean chain: <strong>your Deploy App cert's CN → username → group lookup → the In/Out/Both memberships Keycloak manages</strong>. Changing your groups in Keycloak changes what that certificate can see and send on TAK Server — no new certificate required.</p>\n<h2 id=\"what-this-means-for-your-integration\"><a href=\"#what-this-means-for-your-integration\">What this means for your integration</a></h2>\n<ul>\n<li>The certificate identity you enrolled is subject to the <strong>same group rules</strong> as any user. Put your integration's identity in the right groups (In/Out/Both) for the data it must send and receive.</li>\n<li>Need your bridge to <em>publish</em> to a team? Give it <strong>In</strong> on that group. Need it to <em>ingest</em> a team's traffic? Give it <strong>Out</strong>. A two-way relay needs <strong>Both</strong>.</li>\n<li>Changing a user's (or service's) TAK visibility is done in <strong>Keycloak</strong>, not on TAK Server directly — the change is relayed automatically.</li>\n</ul>\n<p>→ Next: <a href=\"/en/working-with-tak/end-to-end-integration-EOUZgpAdh0\">End-to-end integration</a>.</p>"
+    }
+  ]
+}

@@ -1,0 +1,186 @@
+{
+  "schemaVersion": 1,
+  "id": "1fe5d874-1b38-4f80-9cab-3462eb2c6a01",
+  "slug": "ansluta-till-en-deploy-app-rDiRCLSL8s",
+  "collection": "deploy-app",
+  "locale": "sv",
+  "title": "Ansluta till en Deploy App",
+  "breadcrumb": [
+    "Platforms",
+    "iOS",
+    "Användarguide",
+    "Ansluta till en Deploy App"
+  ],
+  "createdAt": "2026-06-18T20:34:52.742Z",
+  "updatedAt": "2026-06-18T20:38:55.103Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/deploy-app/joining-a-deploy-app-A7hCnp5D1b",
+    "fi": "/fi/deploy-app/liittyminen-deploy-appiin-Jy261fSdzF",
+    "sv": "/sv/deploy-app/ansluta-till-en-deploy-app-rDiRCLSL8s"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Få åtkomst",
+          "layout": "image-left",
+          "html": "<p>Du kan ansluta till en instans genom att skaffa en inbjudningslänk:</p>\n<ul>\n<li>genom att skanna en QR-kod (öppnar nästa sida direkt)</li>\n<li>genom att ta emot en inbjudningslänk (öppnar nästa sida direkt)</li>\n<li>genom att ta emot en länk + manuell kod (öppnar sidan till vänster).</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/11432f12e365f28d.webp",
+              "width": 2560,
+              "height": 5712
+            }
+          ]
+        },
+        {
+          "title": "Anropssignal",
+          "layout": "image-left",
+          "html": "<p>Inbjudan låter dig ge dig själv en anropssignal och ansluta till väntrummet.</p>\n<ul>\n<li>Anropssignalen bör vara något som din organisation kan identifiera dig med.</li>\n<li>Denna anropssignal är din i alla tjänster.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/26fbe762461e7c63.webp",
+              "width": 2560,
+              "height": 5712
+            }
+          ]
+        },
+        {
+          "title": "Väntrum",
+          "layout": "image-left",
+          "html": "<p>Administratören för din Deploy App-server måste godkänna dig personligen efter en inbjudan.</p>\n<ul>\n<li>Visa din QR-kod för en administratör eller dela länken med dem.</li>\n<li>När en administratör har godkänt dig kan du fortsätta.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/f986a88040c9fdcf.webp",
+              "width": 2561,
+              "height": 5712
+            }
+          ]
+        },
+        {
+          "title": "Instruktioner",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Deploy App har inbyggda instruktioner som vägleder användare och lyfter fram viktiga funktioner.</li>\n<li>Den här guiden går igenom installation av certifikatet.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/1bf91f34810aec36.webp",
+              "width": 2561,
+              "height": 5712
+            }
+          ]
+        },
+        {
+          "title": "Ladda ner certifikatet",
+          "layout": "image-left",
+          "html": "<p>Ladda ner ditt klientcertifikat (mTLS) som ska installeras på din enhet.</p>\n<ul>\n<li>Detta fungerar som ditt sätt att komma åt tjänsterna.</li>\n<li>Du behöver inga lösenord med Deploy App, eftersom certifikatet är din identitet.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/5f4af02a9a230a03.webp",
+              "width": 1290,
+              "height": 2796
+            }
+          ]
+        },
+        {
+          "title": "Gå till inställningar",
+          "layout": "image-left",
+          "html": "<p>På iOS måste du gå till inställningarna (Settings) för att installera certifikatet.</p>\n<ul>\n<li>Leta efter Settings.</li>\n<li>T.ex. svep lite uppåt för att ta fram Search, skriv sedan Settings och tryck på inställningsikonen.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/398dbbd7142bcf32.webp",
+              "width": 1290,
+              "height": 2796
+            }
+          ]
+        },
+        {
+          "title": "Tryck på 'Profile Downloaded'",
+          "layout": "image-left",
+          "html": "<p>Eftersom du just laddade ner ett certifikat meddelar Settings dig om det.</p>\n<ul>\n<li>Tryck på aviseringen 'Profile Downloaded' för att installera certifikatet.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/c905d16e044fd170.webp",
+              "width": 1290,
+              "height": 2796
+            }
+          ]
+        },
+        {
+          "title": "Tryck på Install",
+          "layout": "image-left",
+          "html": "<p>Tryck på <strong>Install</strong> uppe till höger i denna popup.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/a92a3fff866069d6.webp",
+              "width": 1290,
+              "height": 2796
+            }
+          ]
+        },
+        {
+          "title": "Skriv din lösenkod",
+          "layout": "image-left",
+          "html": "<p>För att fortsätta ber iOS om din enhets lösenkod.</p>\n<ul>\n<li>Skriv din lösenkod för att fortsätta.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/4c0f3f83b869addb.webp",
+              "width": 1290,
+              "height": 2796
+            }
+          ]
+        },
+        {
+          "title": "Bekräfta varningen",
+          "layout": "image-left",
+          "html": "<p>iOS meddelar dig att detta certifikat inte är signerat av någon utfärdare som din telefon redan litar på.</p>\n<ul>\n<li>Bekräfta varningen (den som signerat detta certifikat är din Deploy App-server, t.ex. 'golden-monkey.example.com'.)</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/6031d4a541ad77bf.webp",
+              "width": 1290,
+              "height": 2796
+            }
+          ]
+        },
+        {
+          "title": "Skriv certifikatets lösenord, alltid anropssignalen",
+          "layout": "image-left",
+          "html": "<p>Du måste skriva certifikatets lösenord. Detta är alltid <strong>exakt samma som din anropssignal.</strong></p>\n<ul>\n<li>Certifikatets lösenord har ingen säkerhetsbetydelse här.</li>\n<li>Lösenordet krävs endast för att den certifikatfiltyp vi använder kräver något lösenord av kompatibilitetsskäl.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/80adff6535609c96.webp",
+              "width": 1290,
+              "height": 2796
+            }
+          ]
+        },
+        {
+          "title": "Klart - gå tillbaka till webbläsaren",
+          "layout": "image-left",
+          "html": "<p>iOS meddelar dig att klientcertifikatet nu är installerat på din enhet.</p>\n<ul>\n<li>Nu kan du gå tillbaka till din webbläsare.</li>\n<li>Ditt klientcertifikat finns kvar på din enhet, så du kan inte förlora åtkomsten till servern om du inte tas bort (vilket ogiltigförklarar certifikatets åtkomst.)</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/486cd868e3cbd019.webp",
+              "width": 1290,
+              "height": 2796
+            }
+          ]
+        },
+        {
+          "title": "Tryck på Continue with Cert",
+          "layout": "image-left",
+          "html": "<p>Att trycka på den lila knappen Continue with Cert nu släpper in dig i applikationen.</p>\n<ul>\n<li>Varning: om du tryckte på den knappen innan certifikatet är installerat får du felet mTLS-fel.</li>\n<li>För att rensa det felet, stäng webbläsaren genom att svepa uppåt och svepa bort webbläsaren. Navigera sedan tillbaka till servern och tryck på Continue with Cert.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/7be0856bcc320b45.webp",
+              "width": 1290,
+              "height": 2796
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

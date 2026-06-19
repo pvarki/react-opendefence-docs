@@ -6,14 +6,19 @@
   "locale": "en",
   "title": "iTAK Already Installed",
   "breadcrumb": [
-    "TAK Clients",
+    "Platforms",
     "iTAK",
     "Start",
     "iTAK Already Installed"
   ],
   "createdAt": "2025-12-05T22:06:11.340Z",
-  "updatedAt": "2026-02-20T22:13:14.287Z",
+  "updatedAt": "2026-06-18T20:25:41.086Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/itak-already-installed-DeEex1hIH2",
+    "fi": "/fi/guides/tak-guide/itak-on-jo-asennettu-b7KB36fpA7",
+    "sv": "/sv/guides/tak-guide/itak-redan-installerat-HPGjec95O1"
+  },
   "blocks": [
     {
       "type": "slideset",

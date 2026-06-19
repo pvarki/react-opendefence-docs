@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 1,
+  "id": "11797e39-4efe-49f5-9f7e-54f13e5b55e4",
+  "slug": "anvand-geochat-for-kommunikation-HR8qIoirSR",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Använd Geochat för kommunikation",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "ANVÄNDNING EFTER ROLL",
+    "Stridande",
+    "Använd Geochat för kommunikation"
+  ],
+  "createdAt": "2026-06-18T19:28:15.132Z",
+  "updatedAt": "2026-06-18T20:17:51.713Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/use-geochat-for-comms-s20PZmRGw8",
+    "fi": "/fi/guides/tak-guide/kayta-geochatia-viestintaan-u0VBv8IjJy",
+    "sv": "/sv/guides/tak-guide/anvand-geochat-for-kommunikation-HR8qIoirSR"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "1. Använd Geochat för kommunikation",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>TAK:s Geochat erbjuder enkel kommunikation via textkanaler.</li>\n<li>Använd den <strong>om din enhet har beordrat det.</strong> Ett alternativ till Geochat är Deploy Apps Matrix, som är mer robust men kräver att du använder <strong>Element</strong>-appen vid sidan av ATAK.</li>\n<li>Guide för Matrix/Element finns under Guides → Matrix.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/4673d7d14af04ebb.webp",
+              "width": 200,
+              "height": 166
+            }
+          ]
+        },
+        {
+          "title": "OpenDefences standardmodell",
+          "layout": "image-bottom",
+          "html": "<p>Låt oss ha <strong>fyra</strong> kanaler i vår enhet, t.ex. kompani:</p>\n<ul>\n<li>COMMAND-kanal</li>\n<li>BLUFOR-kanal</li>\n<li>RECON-kanal</li>\n<li>COMMON-kanal Vid sidan av dessa, använd direktmeddelanden.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/5b3baa45e81b5736.webp",
+              "width": 224,
+              "height": 228
+            }
+          ]
+        },
+        {
+          "title": "COMMAND-kanal",
+          "layout": "text",
+          "html": "<ul>\n<li>Syfte: Ta emot och besvara order</li>\n<li>Sändningsrättigheter: Ledare</li>\n<li>Övriga: Kvittering. Annars endast läsning. Skicka utförandestatus till Blufor-kanalen.</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "Exempel på COMMAND-kanal",
+          "layout": "text",
+          "html": "<p>Typisk användning:</p>\n<ul>\n<li>Enheten utför ett uppdrag.</li>\n<li>Ledaren skickar det förplanerade kodordet \"BLUE43 prepare to execute AXE\" på COMMAND-kanalen.</li>\n<li>Underställd kvitterar.</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "BLUFOR-kanal",
+          "layout": "text",
+          "html": "<ul>\n<li>Syfte: Skicka och ta emot utförandestatus</li>\n<li>Sändningsrättigheter: Alla</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "Exempel på BLUFOR-kanal",
+          "layout": "text",
+          "html": "<p>Typisk användning:</p>\n<ul>\n<li>Underställd rapporterar: \"Ready to execute AXE.\"</li>\n<li>Ledaren kvitterar.</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "RECON-kanal",
+          "layout": "text",
+          "html": "<ul>\n<li>Syfte: Skicka och ta emot observationer från operationsområdet</li>\n<li>Särskilt: Anmäl alltid här om du har uppdaterat OBSERVATION-flödet.</li>\n<li>Sändningsrättigheter: Alla</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "Exempel på RECON-kanal",
+          "layout": "text",
+          "html": "<p>Typisk användning:</p>\n<ul>\n<li>Underställd rapporterar: \"Observed BOLO list car AAA-000 around GRY 4. Sent in OBS feed.\"</li>\n<li>Spaningspersonal vid CP kvitterar.</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "COMMON-kanal",
+          "layout": "text",
+          "html": "<ul>\n<li>Syfte: All kommunikation som inte passar in i något av ovanstående men ändå behöver läsas av alla.</li>\n<li>Sändningsrättigheter: Alla</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "Exempel på COMMON-kanal",
+          "layout": "text",
+          "html": "<p>Typisk användning:</p>\n<ul>\n<li>Ledaren informerar: \"Gear arrived to BLUE 0 - get yours as ordered by 26JAN.\"</li>\n<li>Underställda kvitterar.</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "Användning av direktmeddelanden",
+          "layout": "image-bottom",
+          "html": "<p>Använd direktmeddelanden för kommunikation som bara rör dig. <strong>Tumregeln:</strong> Det som inte är till nytta för någon annan än dig och mottagaren bör skickas som DM.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/89257cabbbe2780f.webp",
+              "width": 192,
+              "height": 163
+            }
+          ]
+        },
+        {
+          "title": "Exempel på DM",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Underställd frågar: \"Is BLUE 50 available? Need service to a generator.\"</li>\n<li>Kommandoposten svarar: \"Will relay and report answer.\"</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/e7cd7378de07ff3d.webp",
+              "width": 213,
+              "height": 177
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

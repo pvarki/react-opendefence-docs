@@ -8,13 +8,18 @@
   "breadcrumb": [
     "Platforms",
     "ATAK",
-    "Supported Plugins",
+    "SUPPORTED PLUGINS",
     "GRG Builder",
     "Create a Grid (GRG Builder)"
   ],
   "createdAt": "2026-06-15T20:51:13.205Z",
-  "updatedAt": "2026-06-15T20:51:13.205Z",
+  "updatedAt": "2026-06-18T20:22:18.181Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/create-a-grid-grg-builder-RD3vtzu9yS",
+    "fi": "/fi/guides/tak-guide/luo-ruudukko-grg-builder-z0VfhByVKA",
+    "sv": "/sv/guides/tak-guide/skapa-ett-rutnat-grg-builder-n8gH3EgojQ"
+  },
   "blocks": [
     {
       "type": "html",
@@ -39,7 +44,7 @@
         {
           "title": "Set spacing and color, then place it",
           "layout": "image-bottom",
-          "html": "<p>In the <strong>Select Grid Spacing and Color</strong> window choose spacing, color, size and datum, then select <strong>Done</strong> to drop the grid. Long-press the center crosshair to move it; a short tap opens a radial with <strong>Enter Coordinate</strong>, <strong>MGRS Location</strong> or <strong>Delete</strong>.</p>",
+          "html": "<p>In the <strong>Select Grid Spacing and Color</strong> window choose spacing, color, size and datum, then select <strong>Done</strong> to drop the grid.</p>\n<ul>\n<li>Long-press the center crosshair to move it; a short tap opens a radial with <strong>Enter Coordinate</strong>, <strong>MGRS Location</strong> or <strong>Delete</strong>.</li>\n</ul>",
           "images": [
             {
               "src": "/content/images/en/attachments/fb2bbc9f1f7981c0.webp",
@@ -75,7 +80,7 @@
         {
           "title": "Edit the GRG Capture",
           "layout": "image-bottom",
-          "html": "<p>The <strong>GRG Capture</strong> edit screen opens. Tick a feature's check box to remove it; tap the box itself to edit it. Drag the info box or point list to re-position them on the capture.</p>",
+          "html": "<p>The <strong>GRG Capture</strong> edit screen opens.</p>\n<ul>\n<li>Tick a feature's check box to remove it; tap the box itself to edit it.</li>\n<li>Drag the info box or point list to re-position them on the capture.</li>\n</ul>",
           "images": [
             {
               "src": "/content/images/en/attachments/d3c379fd34f9f723.webp",
@@ -87,7 +92,7 @@
         {
           "title": "Adjust the grid in Edit Grid",
           "layout": "image-bottom",
-          "html": "<p>Select <strong>Edit Grid</strong> to set <strong>Label Style</strong> (MGRS, Letter/Number or Both), grid color and spacing. Toggle <strong>Show Labels</strong> on or off, and <strong>Additional Labels</strong> to split the export across multiple image files or a multi-page PDF.</p>",
+          "html": "<p>Select <strong>Edit Grid</strong> to set <strong>Label Style</strong> (MGRS, Letter/Number or Both), grid color and spacing.</p>\n<ul>\n<li>Toggle <strong>Show Labels</strong> on or off, and <strong>Additional Labels</strong> to split the export across multiple image files or a multi-page PDF.</li>\n</ul>",
           "images": [
             {
               "src": "/content/images/en/attachments/02f0b5d4ea0f57fc.webp",
@@ -99,7 +104,7 @@
         {
           "title": "Edit the point labels",
           "layout": "image-bottom",
-          "html": "<p>Select <strong>Point List</strong> to open <strong>Edit Point List</strong>. Set <strong>Text Color</strong> and <strong>Text Align</strong> (<strong>Left</strong>, <strong>Center</strong>, <strong>Right</strong>), and tap a point in the list to show or hide it on the capture.</p>",
+          "html": "<p>Select <strong>Point List</strong> to open <strong>Edit Point List</strong>.</p>\n<ul>\n<li>Set <strong>Text Color</strong> and <strong>Text Align</strong> (<strong>Left</strong>, <strong>Center</strong>, <strong>Right</strong>), and tap a point in the list to show or hide it on the capture.</li>\n</ul>",
           "images": [
             {
               "src": "/content/images/en/attachments/70d90848f969b8b6.webp",

@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "3e632fbf-3667-4897-8257-bec692ca559c",
+  "slug": "yleiskatsaus-UB5rRp5Nz5",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Yleiskatsaus",
+  "breadcrumb": [
+    "Platforms",
+    "iTAK",
+    "Käyttö roolin mukaan",
+    "Yleiskatsaus"
+  ],
+  "createdAt": "2026-06-18T19:39:00.481Z",
+  "updatedAt": "2026-06-18T20:25:57.427Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/overview-bPeWx0MdZQ",
+    "fi": "/fi/guides/tak-guide/yleiskatsaus-UB5rRp5Nz5",
+    "sv": "/sv/guides/tak-guide/oversikt-nzDS5OWw0k"
+  },
+  "blocks": []
+}

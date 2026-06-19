@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "f1e04fa8-fdb2-4a57-9011-79bf4b9eb2a8",
+  "slug": "skapa-och-redigera-en-grg-rDfydLOMtb",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Skapa och redigera en GRG",
+  "breadcrumb": [
+    "Platforms",
+    "WinTAK",
+    "Plugin-program som stöds",
+    "GRG Builder",
+    "Skapa och redigera en GRG"
+  ],
+  "createdAt": "2026-06-18T19:34:32.062Z",
+  "updatedAt": "2026-06-18T20:24:51.273Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/create-edit-a-grg-Xui0ilYenu",
+    "fi": "/fi/guides/tak-guide/luo-ja-muokkaa-grg-Fpt8jedvMz",
+    "sv": "/sv/guides/tak-guide/skapa-och-redigera-en-grg-rDfydLOMtb"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>GRG Builder skapar en GRG (Gridded Reference Graphic — en KMZ) från en ögonblicksbild av högupplöst kartbild. Rutnätet kan även innehålla kartobjekt, en skala, kompass, hårkors och ett MGRS-rutnät.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Skapa en GRG",
+          "layout": "image-bottom",
+          "html": "<p>Välj en kartkälla från <strong>Maps &#x26; Favorites</strong> och panorera/zooma till ditt intresseområde. Välj ikonen <strong>GRG Builder</strong> på fliken Creation och sedan <strong>Add GRG (+)</strong> för att placera ett rutnät på kartan. Välj <strong>Add GRG</strong> igen för att placera fler. För att byta namn på ett rutnät, välj <strong>Edit GRG</strong> (penna) > <strong>Change GRG Name</strong> > <strong>Rename</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/583bdf391ad9d3d6.webp",
+              "width": 224,
+              "height": 128
+            }
+          ]
+        },
+        {
+          "title": "Redigera rutnätet",
+          "layout": "image-bottom",
+          "html": "<p>Välj <strong>Edit GRG</strong> > <strong>Edit GRG Components</strong> > <strong>Edit Grid</strong>.</p>\n<ul>\n<li><strong>Move Grid</strong> centrerar om det; ändra <strong>Height x Width</strong> och <strong>Spacing</strong> för att ändra storlek på cellerna (eller <strong>Add Size</strong> för en anpassad layout), och ställ in rutnätets <strong>Color</strong> och opacitet med skjutreglaget.</li>\n<li>För att forma om täckningsytan, använd <strong>Redefine GRG</strong>: högerklicka på ett hörn, vänsterklicka på en ny punkt och välj sedan <strong>Done Editing</strong> för att spara.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/d7fcd03d2bce1f1e.webp",
+              "width": 224,
+              "height": 118
+            }
+          ]
+        },
+        {
+          "title": "Märk rutnätet",
+          "layout": "image-bottom",
+          "html": "<p>Öppna <strong>Grid Label</strong> för att förse rutnätet med bokstäver och siffror.</p>\n<ul>\n<li>Välj <strong>Alphanumeric</strong>, <strong>MGRS</strong> eller <strong>Both</strong>; för MGRS, ställ in orientering, färger och <strong>Precision</strong>.</li>\n<li>Visa eller dölj etiketter med kryssrutan <strong>Show Grid Labels</strong>.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/10365331d1b37b8b.webp",
+              "width": 192,
+              "height": 160
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

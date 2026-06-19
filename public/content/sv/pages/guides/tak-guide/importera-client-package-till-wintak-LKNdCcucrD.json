@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 1,
+  "id": "4c3f811d-70e2-4863-85ca-8076d0f8e9b5",
+  "slug": "importera-client-package-till-wintak-LKNdCcucrD",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Importera Client Package till WinTAK",
+  "breadcrumb": [
+    "Platforms",
+    "WinTAK",
+    "STARTA OCH ANSLUT",
+    "Importera Client Package till WinTAK"
+  ],
+  "createdAt": "2026-06-18T19:32:28.940Z",
+  "updatedAt": "2026-06-18T20:23:28.076Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/import-the-client-package-to-wintak-kCXH9p8keg",
+    "fi": "/fi/guides/tak-guide/tuo-client-package-wintakiin-4r7he3cxqW",
+    "sv": "/sv/guides/tak-guide/importera-client-package-till-wintak-LKNdCcucrD"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>När WinTAK är installerat öppnar du det för första gången och ansluter det till enhetens TAK-server genom att importera det Client Package du laddade ner.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Öppna WinTAK",
+          "layout": "image-bottom",
+          "html": "<p>Öppna programmet <strong>WinTAK</strong> från skrivbordet.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/79a6bb8767bf3d58.webp",
+              "width": 88,
+              "height": 114
+            }
+          ]
+        },
+        {
+          "title": "Godkänn EULA",
+          "layout": "image-bottom",
+          "html": "<p>Efter ett ögonblick öppnas <strong>Device Setup Wizard</strong>. Dess första steg är att godkänna <strong>EULA</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/8e12e26181a305e0.webp",
+              "width": 428,
+              "height": 318
+            }
+          ]
+        },
+        {
+          "title": "Importera ditt Client Package",
+          "layout": "image-bottom",
+          "html": "<p>Guiden frågar om ett datapaket ska importeras — detta är ditt <strong>Client Package</strong> (<code>Name.zip</code>) som laddats ner från den här appens startsida. Välj <strong>Yes</strong> och peka ut Client Package bland dina nedladdningar.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/2d5fea49b6aeb184.webp",
+              "width": 428,
+              "height": 198
+            }
+          ]
+        },
+        {
+          "title": "Välj en importstrategi",
+          "layout": "image-bottom",
+          "html": "<p>När du har valt paketet och tryckt på <strong>Open</strong> öppnas fönstret <strong>Select Import Strategy</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/ce16efd0433fc825.webp",
+              "width": 428,
+              "height": 270
+            }
+          ]
+        },
+        {
+          "title": "Välj UserPreferenceImportStrategy",
+          "layout": "image-bottom",
+          "html": "<p>Välj <strong>UserPreferenceImportStrategy</strong> och tryck på <strong>OK</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/69ab4f1ee687b607.webp",
+              "width": 428,
+              "height": 270
+            }
+          ]
+        },
+        {
+          "title": "Välj en kartbas",
+          "layout": "image-bottom",
+          "html": "<p>Paketet kan innehålla flera <strong>kartbaser</strong>. Välj den du föredrar — du kan ändra den senare.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/dd8073840bd5be9a.webp",
+              "width": 428,
+              "height": 156
+            }
+          ]
+        },
+        {
+          "title": "Ange din anropssignal",
+          "layout": "image-bottom",
+          "html": "<p>Guiden frågar om din anropssignal ska anges. Välj <strong>Yes</strong> och ange din <strong>tilldelade anropssignal</strong>. Därefter frågar den efter ytterligare WMS-kartkällor.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/b3cd94ffd6dc7a08.webp",
+              "width": 428,
+              "height": 206
+            }
+          ]
+        },
+        {
+          "title": "Hoppa över extra WMS-källor",
+          "layout": "image-bottom",
+          "html": "<p>Extra WMS-källor behövs inte — rensa rutorna och tryck på <strong>OK</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/9e147b44d330b7ba.webp",
+              "width": 428,
+              "height": 276
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

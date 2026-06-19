@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "1f3097a9-8f25-4f3f-a87f-76d151c50ae6",
+  "slug": "sparning-av-egna-styrkor-bRtgJ9hDGR",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Spårning av egna styrkor",
+  "breadcrumb": [
+    "Platforms",
+    "WinTAK",
+    "GRUNDLÄGGANDE KÄRNFUNKTIONER",
+    "Spårning av egna styrkor"
+  ],
+  "createdAt": "2026-06-18T19:32:31.654Z",
+  "updatedAt": "2026-06-18T20:23:35.779Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/blue-force-tracking-uv3kHr7LSr",
+    "fi": "/fi/guides/tak-guide/omien-joukkojen-seuranta-tKICHJUF25",
+    "sv": "/sv/guides/tak-guide/sparning-av-egna-styrkor-bRtgJ9hDGR"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>När du är ansluten och syns på kartan visar WinTAK alla i din enhet i realtid. Den här delade lägesbilden — vem som är var — är spårning av egna styrkor (blue force tracking).</p>\n<blockquote>\n<p>Utkast: skrivet utan skärmbilder. Lägg till bilder på TAK-användare på kartan och ett öppnat användarkort när de finns tillgängliga.</p>\n</blockquote>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Alla på en karta",
+          "layout": "text",
+          "html": "<p>Andra TAK-användare i din grupp visas på kartan som ikoner. När de rör sig (eller uppdaterar sin position) flyttas även deras ikoner, så att hela enheten delar en levande lägesbild över var alla befinner sig.</p>",
+          "images": []
+        },
+        {
+          "title": "Vad färgerna berättar",
+          "layout": "text",
+          "html": "<p>Varje användares ikon visas i den färg som användaren (eller deras grupp) har ställt in för sig själv. Använd färgerna för att skilja grupper åt med en blick — egna enheter, underenheter, ledningsplats.</p>",
+          "images": []
+        },
+        {
+          "title": "Läs en användares uppgifter",
+          "layout": "text",
+          "html": "<p>Klicka på en användares ikon för att öppna deras kort.</p>\n<ul>\n<li>Därifrån kan du läsa den information de delar — vanligtvis deras <strong>callsign</strong>, <strong>team</strong> och <strong>role</strong> samt <strong>när deras position senast uppdaterades</strong>.</li>\n<li>En föråldrad uppdateringstid kan vara ett tecken på att deras anslutning är nere.</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "Håll din egen position synlig",
+          "layout": "text",
+          "html": "<p>Spårning av egna styrkor fungerar bara om alla finns på kartan — se därför till att din egen position är inställd (se <strong>Setting up your own location</strong>). Om en gruppmedlem saknas är de kanske inte anslutna ännu, eller behöver ställa in sin position manuellt.</p>",
+          "images": []
+        }
+      ]
+    }
+  ]
+}

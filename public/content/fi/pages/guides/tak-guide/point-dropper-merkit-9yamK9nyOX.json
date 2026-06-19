@@ -1,0 +1,298 @@
+{
+  "schemaVersion": 1,
+  "id": "b71e6e53-a979-4cf4-b2ad-b309e53c7020",
+  "slug": "point-dropper-merkit-9yamK9nyOX",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Point Dropper - Merkit",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "Perustoiminnot",
+    "Point Dropper - Merkit"
+  ],
+  "createdAt": "2026-06-18T19:25:16.565Z",
+  "updatedAt": "2026-06-18T20:13:49.713Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/point-dropper-markers-lsYmFrTvqH",
+    "fi": "/fi/guides/tak-guide/point-dropper-merkit-9yamK9nyOX",
+    "sv": "/sv/guides/tak-guide/point-dropper-markorer-ADzjTFD2zi"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "1. Merkkien piirtäminen Point Dropperilla",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li><strong>Point Dropper</strong> on työkalu merkkien piirtämiseen kartalle.</li>\n<li>Piirtämiäsi merkkejä <strong>ei</strong> lähetetä automaattisesti minnekään. Katso lähetysohjeet kohdasta <strong>Sending a Marker</strong>.</li>\n<li>Napauta Point Dropperia, kun haluat piirtää merkkejä kartalle.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/fcbc28e3f39dba58.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "2. Määritä merkin tyyppi",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Napauta \"Ground\" tarkentaaksesi merkin alatyyppiä, jos haluat.</li>\n<li>Voit muokata merkin tyyppejä myöhemminkin.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/cef319194a1ab305.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "3. Valitse merkin osapuoli",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Napauta Unknown, Neutral, Enemy tai Friendly valitaksesi osapuolen ja aloittaaksesi uuden merkin pudottamisen.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/f94932d1d0cc0787.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "4. Napauta karttaa pudottaaksesi osoittimen",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Osoitin ilmestyy napautuksesta.</li>\n<li>Se on toistaiseksi vain omalla laitteellasi - katso jakovaihtoehdot ohjeesta <strong>Sending a Marker</strong>.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/800f50867119bce1.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "5. Valitse merkki muokkausta tai lähetystä varten",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Napauta merkkiä avataksesi <strong>action menu.</strong></li>\n<li>Napauta <strong>details</strong>-kuvaketta. Se on heti poistokuvakkeen vieressä; sillä täytät tiedot.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/065beedcc732fe61.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "6. Avaa nimivalintaikkuna",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Napauta <strong>merkkisi luotua nimeä</strong> muokataksesi sitä.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/32dffe6bfad84813.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "7. Nimeä merkkisi",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Nimeä merkkisi yksikkösi käytännön mukaisesti.</li>\n<li>Tämä esimerkki noudattaa seuraavaa kaavaa: <em><strong>\"Raportoivan yksikön nimi, kuvaava otsikko.\"</strong></em></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/9b044bced7fe5bd1.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "8. Muuta tyyppiä",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Napauta <strong>Type</strong> muokataksesi merkin alatyyppiä, samaan tapaan kuin aiemmin.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/359315bda5a120bc.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "9. Tyyppivalinnat",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Merkkien alatyyppejä on runsaasti valittavana. Määritä omasi, jos sovellettavissa.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/3c8da9ce18abf3f5.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "10. Aseta paikkavirhe (valinnainen)",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Voit määrittää symbolisi paikkavirheen, jos se on sovellettavissa.</li>\n<li>Se kuvaa, kuinka tarkka merkkisi paikannus on. Tämä on tärkeää siltä varalta, että merkki voisi olla tulen maali.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/b53d51659a4fc177.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "11. Paikkavirheen valinnat",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>NATO-standardin mukaisesti voit määrittää virheen välillä CAT1 (pienin) ja CAT6 (suurin virhe).</li>\n<li>CAT1: 0-6 m. CAT2: 7-15 m. CAT3: 16-30 m. CAT4: 31-91 m. CAT5: 92-305 m. CAT6: 305+ m.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/e0656e14a669a60b.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "12. Määritä merkin koko (valinnainen)",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Jos merkkisi alatyyppi on \"Unit\", voit määrittää merkin kokoluokituksen (esim. ryhmä, joukkue, komppania).</li>\n<li>Tee se napauttamalla <strong>Unit Modifier/Echelon</strong>.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/9753780f6468bd55.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "13. Määritä merkin koko (valinnainen)",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Valitse merkin koko sen mukaan kuin on sovellettavissa.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/7d54f6c083697174.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "14. Täytä tiedot Remarks-kentässä",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Kirjoita tietoja merkistä vierittämällä alas ja napauttamalla <strong>pen icon.</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/93c6f13b88084d0c.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "15. Täytä tiedot",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Täytä tiedot tarpeen mukaan.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/867e504cb2851701.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "16. Muokkaa merkin Status-tilaa",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Tarvittaessa voit muuttaa tämän merkin Status-tilaa.</li>\n<li>Tämä on hyödyllistä, kun muokkaat olemassa olevaa merkkiä heijastamaan muutosta tai suunnittelet ennakoitua toimintaa.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/bbbae7db87d64f6d.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "17. Muokkaa havaintosensoreita",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Jos sinulla sattuu olemaan sensori, esim. videovirta, käynnissä maalia kohti, voit täyttää sen napauttamalla \"play\"-kuvaketta.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/74189d6500b4fdd3.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "18. Lisää videosensori merkkiin",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Liitä virta tähän merkkiin, joko Deploy Appin MediaMTX:stä [erillinen ohje] tai alustalta kuten YouTube.</li>\n<li>Sinun on määritettävä osoite, portti, protokolla ja mahdollisesti salasana, jotta virta voidaan näyttää ATAK:ssa.</li>\n<li>Tähän opastetaan Deploy App MediaMTX -ohjeessa.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/db8613213e120ded.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "19. Liitteiden lisääminen",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Voit lisätä merkkiin liitteitä, esim. kuvia.</li>\n<li>Tee se napauttamalla <strong>pin icon.</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/f4b56d58f5e31c58.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "20. Liitteen lisääminen",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Voit esim. ottaa tuoreen kuvan tai valita kuvistasi käyttämällä <strong>Image File.</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/652f4eb200dbcab0.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "21. Kuvan lisääminen",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Kun olet lisännyt liitteet, palaa merkin päätietonäkymään kohdasta <strong>back arrow.</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/5976abeb0a204f9d.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "22. Muista: automaattista lähetystä ei ole",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Jokainen piirtämäsi merkki on vain laitteellasi, ellet lähetä merkkiä jollekulle.</li>\n<li>Katso merkkien lähetysvaihtoehdot seuraavalta ohjesivulta.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/427fcd0c7ca57743.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "html",
+      "html": "<p>Kun olet testannut Point Dropperin onnistuneesti, jatka kohtaan <a href=\"/doc/1ddce881-2116-41eb-9980-f201fcc06f27\">Use GeoChat</a></p>"
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 1,
+  "id": "1ae38b2e-d0c9-4fdb-ba3d-b1bd79f8d899",
+  "slug": "skicka-dronaren-till-en-plats-mPUY0sUiR3",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Skicka drönaren till en plats",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "TILLÄGG SOM STÖDS",
+    "UAS-verktyg",
+    "Skicka drönaren till en plats"
+  ],
+  "createdAt": "2026-06-18T19:30:28.132Z",
+  "updatedAt": "2026-06-18T20:21:47.817Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/send-drone-to-a-location-vwYPd2cbEC",
+    "fi": "/fi/guides/tak-guide/laheta-lennokki-sijaintiin-mKsB4aikwV",
+    "sv": "/sv/guides/tak-guide/skicka-dronaren-till-en-plats-mPUY0sUiR3"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Skicka drönaren till valfri punkt på kartan, cirkla runt ett mål eller låt den följa dig, allt direkt från Quick Flight Toolbar utan att bygga en rutt.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Öppna Quick Task",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på en punkt på kartan för att skicka drönaren dit.</p>\n<ul>\n<li><strong>Quick Task</strong> öppnas med platsen klar och tre alternativ: <strong>Cancel</strong>, <strong>Go Now</strong>, <strong>Orbit</strong>.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/c3fe23149220c4cb.webp",
+              "width": 1428,
+              "height": 725
+            }
+          ]
+        },
+        {
+          "title": "Flyg dit nu",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på <strong>Go Now</strong>. Drönaren lyfter vid behov och flyger till punkten medan den håller sin nuvarande höjd (<strong>HAL</strong>, Height Above Launch).</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/c3fe23149220c4cb.webp",
+              "width": 1428,
+              "height": 725
+            }
+          ]
+        },
+        {
+          "title": "Ange en exakt koordinat",
+          "layout": "image-bottom",
+          "html": "<p>För en exakt punkt, tryck på fältet <strong>Selected Coordinate</strong> och skriv in rutreferensen och höjden. Detta är mer exakt än att trycka på kartan.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/c3fe23149220c4cb.webp",
+              "width": 1428,
+              "height": 725
+            }
+          ]
+        },
+        {
+          "title": "Cirkla runt ett mål",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på <strong>Orbit</strong> för att cirkla runt punkten och bevaka den. Ett fönster låter dig ställa in cirkelradien och hastigheten; använd sedan spakarna för att öka eller minska cirkeln och byta riktning under flygningen.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/c3fe23149220c4cb.webp",
+              "width": 1428,
+              "height": 725
+            }
+          ]
+        },
+        {
+          "title": "Follow Me",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på <strong>Follow Me</strong> i UAS Tool. Drönaren låser på din ATAK GPS-egenmarkör och håller samma avstånd och bäring när du rör dig.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/0a863b0a122572b2.webp",
+              "width": 114,
+              "height": 114
+            }
+          ]
+        },
+        {
+          "title": "Ställ in följavståndet",
+          "layout": "image-bottom",
+          "html": "<p>Långtryck på <strong>Follow Me</strong> för att öppna en dialog. Där kan du välja en annan markör att följa och ställa in skyddsavståndet.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/0a863b0a122572b2.webp",
+              "width": 114,
+              "height": 114
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -6,13 +6,18 @@
   "locale": "en",
   "title": "Fighter",
   "breadcrumb": [
-    "TAK Clients",
+    "Platforms",
     "iTAK",
     "Usage by Role",
     "Fighter"
   ],
   "createdAt": "2025-12-05T22:06:10.581Z",
-  "updatedAt": "2025-12-05T22:06:10.581Z",
+  "updatedAt": "2026-06-18T20:25:58.459Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/fighter-rf4mMCmmWV",
+    "fi": "/fi/guides/tak-guide/taistelija-Rco9ioLaEE",
+    "sv": "/sv/guides/tak-guide/soldat-zS7E1xGRtx"
+  },
   "blocks": []
 }

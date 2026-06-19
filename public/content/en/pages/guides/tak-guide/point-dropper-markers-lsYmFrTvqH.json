@@ -8,13 +8,17 @@
   "breadcrumb": [
     "Platforms",
     "ATAK",
-    "USING ATAK FEATURES",
-    "Basic Features",
+    "Basic Core Features",
     "Point Dropper - Markers"
   ],
   "createdAt": "2025-12-05T22:06:22.373Z",
-  "updatedAt": "2026-06-14T10:56:07.469Z",
+  "updatedAt": "2026-06-18T20:13:49.189Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/point-dropper-markers-lsYmFrTvqH",
+    "fi": "/fi/guides/tak-guide/point-dropper-merkit-9yamK9nyOX",
+    "sv": "/sv/guides/tak-guide/point-dropper-markorer-ADzjTFD2zi"
+  },
   "blocks": [
     {
       "type": "slideset",

@@ -8,13 +8,17 @@
   "breadcrumb": [
     "Platforms",
     "WinTAK",
-    "USING WINTAK FEATURES",
-    "Basic Features",
+    "BASIC CORE FEATURES",
     "Data Sync"
   ],
   "createdAt": "2025-12-05T22:05:59.535Z",
-  "updatedAt": "2026-06-14T17:11:31.500Z",
+  "updatedAt": "2026-06-18T20:23:36.556Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/data-sync-VswHZNexYA",
+    "fi": "/fi/guides/tak-guide/data-sync-k0vQiZ3DNm",
+    "sv": "/sv/guides/tak-guide/data-sync-d2tAXDXHwO"
+  },
   "blocks": [
     {
       "type": "slideset",
