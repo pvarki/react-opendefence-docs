@@ -12,8 +12,13 @@
     "Basic view, tools and toolbar"
   ],
   "createdAt": "2025-12-05T22:06:23.431Z",
-  "updatedAt": "2026-06-15T19:39:09.221Z",
+  "updatedAt": "2026-06-18T20:13:42.571Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/basic-view-tools-and-toolbar-juXbYsGMih",
+    "fi": "/fi/guides/tak-guide/perusnakyma-tyokalut-ja-tyokalupalkki-5cY07BjmD4",
+    "sv": "/sv/guides/tak-guide/grundvy-verktyg-och-verktygsfalt-Lpm8S3bYgv"
+  },
   "blocks": [
     {
       "type": "slideset",

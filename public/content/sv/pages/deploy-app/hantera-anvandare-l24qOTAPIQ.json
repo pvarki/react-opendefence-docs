@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "5f3fbc46-2f0d-451b-9426-6933e6eb379c",
+  "slug": "hantera-anvandare-l24qOTAPIQ",
+  "collection": "deploy-app",
+  "locale": "sv",
+  "title": "Hantera användare",
+  "breadcrumb": [
+    "Platforms",
+    "iOS",
+    "Administratörsguide",
+    "Hantera användare"
+  ],
+  "createdAt": "2026-06-18T20:35:44.714Z",
+  "updatedAt": "2026-06-18T20:39:04.855Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/deploy-app/managing-users-nWgFG3XzMv",
+    "fi": "/fi/deploy-app/kayttajien-hallinta-ThmzgQfcOQ",
+    "sv": "/sv/deploy-app/hantera-anvandare-l24qOTAPIQ"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Hantera användare",
+          "layout": "image-left",
+          "html": "<p>För närvarande kan du hantera en användares åtkomstnivå och ta bort denne från din Deploy App och alla tjänster.</p>\n<ul>\n<li>Användarhantering nås från sidofältet.</li>\n<li>Välj \"Manage Users\".</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/408823f815c4d338.webp",
+              "width": 2560,
+              "height": 5712
+            }
+          ]
+        },
+        {
+          "title": "Hantera användare",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Genom att klicka på en användare öppnas de tillgängliga åtgärderna.</li>\n<li>Åtgärderna beror på användarens nuvarande roll (admin / fighter).</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/852167e2ab81088f.webp",
+              "width": 2560,
+              "height": 5712
+            }
+          ]
+        },
+        {
+          "title": "Åtgärder",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Fighter-användare kan tas bort eller befordras till \"admin\".</li>\n<li>Admin-användare kan tas bort eller degraderas till \"fighter\".\nHantering av användargrupper är en kommande funktion. För närvarande kan du, om du vet vad du gör, ändra dem via Keycloak-gränssnittet som behandlas härnäst.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/a03b290d698f994c.webp",
+              "width": 2560,
+              "height": 5712
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

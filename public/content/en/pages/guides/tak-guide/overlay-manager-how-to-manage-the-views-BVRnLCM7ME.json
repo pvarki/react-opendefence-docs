@@ -12,8 +12,13 @@
     "Overlay Manager - How to manage the views"
   ],
   "createdAt": "2026-01-25T10:04:00.819Z",
-  "updatedAt": "2026-06-15T19:44:32.792Z",
+  "updatedAt": "2026-06-18T20:14:42.579Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/overlay-manager-how-to-manage-the-views-BVRnLCM7ME",
+    "fi": "/fi/guides/tak-guide/overlay-manager-nakymien-hallinta-L14bpp02nM",
+    "sv": "/sv/guides/tak-guide/overlay-manager-hantera-vyerna-AJGahEsnDr"
+  },
   "blocks": [
     {
       "type": "html",
@@ -38,7 +43,7 @@
         {
           "title": "Show or hide layers",
           "layout": "image-bottom",
-          "html": "<p>Tap the <strong>Visibility</strong> (eye) button to toggle a layer on or off. A white eye means visible, an outlined eye means some items are hidden, and an eye with a line through it means hidden.</p>",
+          "html": "<p>Tap the <strong>Visibility</strong> (eye) button to toggle a layer on or off.</p>\n<ul>\n<li>A white eye means visible, an outlined eye means some items are hidden, and an eye with a line through it means hidden.</li>\n</ul>",
           "images": [
             {
               "src": "/content/images/en/attachments/406c9451d5252967.webp",
@@ -50,7 +55,7 @@
         {
           "title": "Filter markers by side and domain",
           "layout": "image-bottom",
-          "html": "<p>In the Markers category select <strong>Slicer</strong>. Tap <strong>F</strong>, <strong>N</strong> and the others to toggle Friendly, Neutral, Hostile and Unknown; the top letters cover Space, Air, Ground, Sea and Subsurface.</p>",
+          "html": "<p>In the Markers category select <strong>Slicer</strong>.</p>\n<ul>\n<li>Tap <strong>F</strong>, <strong>N</strong> and the others to toggle Friendly, Neutral, Hostile and Unknown; the top letters cover Space, Air, Ground, Sea and Subsurface.</li>\n</ul>",
           "images": [
             {
               "src": "/content/images/en/attachments/36c179bfad6b4520.webp",
@@ -122,7 +127,7 @@
         {
           "title": "Toggle the Heatmap overlay",
           "layout": "image-bottom",
-          "html": "<p>In <strong>Other Overlays</strong>, toggle <strong>Heatmap Overlay</strong> to shade the terrain by elevation. Off-Screen Indicators can be toggled here too, pointing to nearby markers just outside your view.</p>",
+          "html": "<p>In <strong>Other Overlays</strong>, toggle <strong>Heatmap Overlay</strong> to shade the terrain by elevation.</p>\n<ul>\n<li>Off-Screen Indicators can be toggled here too, pointing to nearby markers just outside your view.</li>\n</ul>",
           "images": [
             {
               "src": "/content/images/en/attachments/d6879fdc07334ec1.webp",

@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "id": "9a32a8e6-f5b9-4757-a93c-5527dbb2ee67",
+  "slug": "skapa-och-hantera-floden-xFQ1Aqteke",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Skapa och hantera flöden",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "Avancerade kärnfunktioner",
+    "Skapa och hantera flöden"
+  ],
+  "createdAt": "2026-06-18T19:26:16.478Z",
+  "updatedAt": "2026-06-18T20:13:58.760Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/create-manage-feeds-z2CpC9Lpan",
+    "fi": "/fi/guides/tak-guide/syotteiden-luonti-ja-hallinta-FpLL6NYB2F",
+    "sv": "/sv/guides/tak-guide/skapa-och-hantera-floden-xFQ1Aqteke"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Skapa flöden",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Skapa flöden antingen för att leverera dina planer eller för att börja dela information kontinuerligt.</li>\n<li>Tryck på <strong>Feed symbol</strong> för att börja.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/c09ee1fb0e31cfa8.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Datasync-startvyn - Overlay Manager",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Datasync-startvyn visar alla befintliga flöden på de servrar du är ansluten till.</li>\n<li>Tryck på <strong>Plus symbol</strong> för att skapa ett nytt flöde.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/5f8b389b72416f9b.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Skapa ett flöde",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Tryck på <strong>Create feed.</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/a7ccff6cbe91f629.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Skapa flöde - Alternativ",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Först ger vi ditt nya flöde ett namn.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/4c13e87fa2d1086e.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Namnge ditt flöde",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Var beskrivande. Exempelnamnet visar att flödet innehåller din plan för FRAGO3-ordern.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/25d8adf32e029005.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Välj standardroll",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Tryck sedan på väljaren Default Role för att välja vem som kan komma åt ditt flöde.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/b860b25fc7d71850.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Standardåtkomst för flödet",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Välj det som passar dina syften bäst.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/7c5ef679f81f228b.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Beskriv ditt flöde",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Genom att trycka på Description kan du beskriva ditt flöde lite. Det hjälper.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/ccae7c9da23020d6.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Hashtaggar",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Du kan om du vill skriva några hashtaggar för ditt flöde. Det kan hjälpa till att analysera data på din server.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/e5b817603ea67a6e.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Nytt flöde skapat!",
+          "layout": "text",
+          "html": "<ul>\n<li>Ditt nya flöde finns nu här!</li>\n<li>Om standardrollen inte är Admin kan personer från din server nu prenumerera på ditt flöde.</li>\n</ul>\n<p>När du har testat Skapa och hantera flöden, fortsätt till <a href=\"/doc/2676ebbb-83f4-4569-a7a2-7050395f28c8\">Draw &#x26; share Plans</a></p>\n<p>Data Sync Default Role Owner-beskrivning korrigerad:\\nAnvändaren blir som standard Admin för Data Sync-flödet. Denna funktion rekommenderas inte att användas, den nya ägaren kan</p>",
+          "images": []
+        },
+        {
+          "title": "Bekräfta i Data Sync-listan",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Öppna Data Sync igen. Ditt nya flöde visas nu i listan med sin anropssignal och antal objekt.</li>\n<li>Tryck på <strong>eye icon</strong> bredvid det för att växla synligheten på kartan.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/c53a9f2ed53348e3.webp",
+              "width": 250,
+              "height": 197
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

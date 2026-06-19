@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "c381435e-66e3-4115-b8aa-077f5b453b0f",
+  "slug": "taistelija-jkvrnZXkli",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Taistelija",
+  "breadcrumb": [
+    "Platforms",
+    "TAK Tracker - Android",
+    "KÄYTTÖ ROOLEITTAIN",
+    "Taistelija"
+  ],
+  "createdAt": "2026-06-18T19:44:15.879Z",
+  "updatedAt": "2026-06-18T20:26:58.062Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/fighter-gUAGHKAtVV",
+    "fi": "/fi/guides/tak-guide/taistelija-jkvrnZXkli",
+    "sv": "/sv/guides/tak-guide/soldat-Mq5QiVrMr1"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>(Tätä välilehteä ei pitäisi näyttää)</p>"
+    }
+  ]
+}

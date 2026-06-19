@@ -13,8 +13,13 @@
     "Scout with First-Person View"
   ],
   "createdAt": "2026-06-15T19:45:13.081Z",
-  "updatedAt": "2026-06-15T20:53:53.693Z",
+  "updatedAt": "2026-06-18T20:20:51.103Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/scout-with-first-person-view-tZ27WjeppE",
+    "fi": "/fi/guides/tak-guide/tiedustele-first-person-viewlla-dG5GsFs9is",
+    "sv": "/sv/guides/tak-guide/spana-med-first-person-view-LateYCOhY4"
+  },
   "blocks": [
     {
       "type": "html",
@@ -27,7 +32,7 @@
         {
           "title": "Open the First-Person tool",
           "layout": "image-bottom",
-          "html": "<p>Open the <strong>First-Person</strong> tool from the <strong>Additional Tools</strong> and <strong>Settings</strong> menu. It places buttons at the top of the map and two soft joysticks on the right and left.</p>",
+          "html": "<p>Open the <strong>First-Person</strong> tool from the <strong>Additional Tools</strong> and <strong>Settings</strong> menu.</p>\n<ul>\n<li>It places buttons at the top of the map and two soft joysticks on the right and left.</li>\n</ul>",
           "images": [
             {
               "src": "/content/images/en/attachments/d44bccb6a9d47e48.webp",

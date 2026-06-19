@@ -12,8 +12,13 @@
     "Set language & localization for WinTAK"
   ],
   "createdAt": "2025-12-05T22:05:59.853Z",
-  "updatedAt": "2026-06-16T10:55:48.465Z",
+  "updatedAt": "2026-06-18T20:22:53.160Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/set-language-localization-for-wintak-GstcQifMVj",
+    "fi": "/fi/guides/tak-guide/aseta-wintakn-kieli-ja-lokalisointi-h2H6q8rgOi",
+    "sv": "/sv/guides/tak-guide/stall-in-sprak-och-lokalisering-for-wintak-20Oabj2Esq"
+  },
   "blocks": [
     {
       "type": "html",

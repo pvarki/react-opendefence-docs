@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "id": "d81cda58-83ac-41c4-9802-07af725deefe",
+  "slug": "kayta-3d-maastonakymaa-MvrevSdk5j",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Käytä 3D-maastonäkymää",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "LISÄOMINAISUUDET",
+    "Korkeus, maasto ja karttatyökalut",
+    "Käytä 3D-maastonäkymää"
+  ],
+  "createdAt": "2026-06-18T19:29:21.449Z",
+  "updatedAt": "2026-06-18T20:20:47.776Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/use-3d-terrain-view-nTeTbi2I5K",
+    "fi": "/fi/guides/tak-guide/kayta-3d-maastonakymaa-MvrevSdk5j",
+    "sv": "/sv/guides/tak-guide/anvand-3d-terrangvyn-Z4Tf8cVmbg"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Kallista kartta 3D-näkymään, jotta näet maaston, rinteet ja kuolleen maan. Tarvitset asennetut korkeustiedot (DTED, SRTM tai Quantized Mesh).</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Avaa 3D-valikko",
+          "layout": "image-bottom",
+          "html": "<p>Paina pitkään <strong>North Arrow</strong> -kuvaketta avataksesi lisäpainikkeet ja valitse sitten <strong>3D</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/b3500e627e1d5c59.webp",
+              "width": 152,
+              "height": 52
+            }
+          ]
+        },
+        {
+          "title": "Aloita litteästä kartasta",
+          "layout": "image-bottom",
+          "html": "<p>3D:n ollessa päällä <strong>North Arrow</strong> -kuvakkeen ympärille ilmestyy kallistuskulman ilmaisin. Kartta näyttää edelleen litteältä, kunnes kallistat sitä.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/9b7ac349d4cebcd9.webp",
+              "width": 373,
+              "height": 173
+            }
+          ]
+        },
+        {
+          "title": "Kallistus kahdella sormella",
+          "layout": "image-bottom",
+          "html": "<p>Kosketa näyttöä kahdella sormella ja pyyhkäise ylös tai alas kallistaaksesi näkymää. Kohteet, joille on määritetty korkeus, kohoavat pinnan yläpuolelle. Kallista 90 asteeseen katsoaksesi merkkiä suoraan ylhäältä.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/7e43c4ed0a91d87e.webp",
+              "width": 373,
+              "height": 185
+            }
+          ]
+        },
+        {
+          "title": "Lukitse 3D-näkymä",
+          "layout": "image-bottom",
+          "html": "<p>Kun kulma on oikea, valitse <strong>3D Lock</strong> -kuvake. 3D-näkymä pysyy lukittuna, kun panoroit karttaa.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/02dc7ffe0f7584ba.webp",
+              "width": 152,
+              "height": 52
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

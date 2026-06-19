@@ -10,8 +10,13 @@
     "Presentations"
   ],
   "createdAt": "2026-06-15T14:07:59.179Z",
-  "updatedAt": "2026-06-15T17:52:46.180Z",
+  "updatedAt": "2026-06-18T20:38:05.374Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/cryptpad-guide/presentations-gWIWMzfeXq",
+    "fi": "/fi/guides/cryptpad-guide/esitykset-k6gHQmskUS",
+    "sv": "/sv/guides/cryptpad-guide/presentationer-26fnbdHVfs"
+  },
   "blocks": [
     {
       "type": "html",

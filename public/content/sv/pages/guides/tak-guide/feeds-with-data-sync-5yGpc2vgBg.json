@@ -1,0 +1,144 @@
+{
+  "schemaVersion": 1,
+  "id": "9470832b-7765-4e92-acfc-48440644ccf9",
+  "slug": "feeds-with-data-sync-5yGpc2vgBg",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Feeds with Data Sync",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "Grundläggande funktioner",
+    "Feeds with Data Sync"
+  ],
+  "createdAt": "2026-06-18T19:25:16.195Z",
+  "updatedAt": "2026-06-18T20:13:48.689Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/feeds-with-data-sync-thmayduqMx",
+    "fi": "/fi/guides/tak-guide/feeds-with-data-sync-EMnuDBTzRY",
+    "sv": "/sv/guides/tak-guide/feeds-with-data-sync-5yGpc2vgBg"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Se vilka flöden som är tillgängliga",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Data Sync låter dig läsa (och dela) kartmarkörer med mera enklare.</li>\n<li>Flöden fungerar som kartlager: prenumerera och bocka sedan för att visa eller inaktivera dem.</li>\n<li>Välj Data Sync (pilikon) i verktygsfältet.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/5e32c5f54248b72d.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "Prenumerera på RECON-flödet",
+          "layout": "image-bottom",
+          "html": "<p>Deploy App TAK skapar automatiskt ett RECON-flöde. Det är avsett för soldater att ta emot en sammanhängande spaningsbild från CP:n som upprätthåller det.</p>\n<ul>\n<li>Välj din takserver (om det finns flera)</li>\n<li>Välj RECON-flödet.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/6b7e8960e01ec760.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "Download & Sync",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Välj <strong>Download &#x26; Sync</strong> för att prenumerera på detta flöde.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/4ca381418b7341b0.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "Flöde - Anslutet",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Kontrollera nu att RECON-flödets symbol (till vänster om flödets 'RECON'-titel) är grön.</li>\n<li>Detta visar att prenumerationen lyckades och att du tar emot detta flöde kontinuerligt.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/761f96f700f37fa1.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "Skapa, hantera och prenumerera på flöden",
+          "layout": "text",
+          "html": "<ul>\n<li>Att skapa, dela och prenumerera på flöden för t.ex. att dela en plan för ett uppdrag är enkelt.</li>\n<li>Se Avancerade funktioner - <strong>'Create &#x26; Manage Feeds'</strong> för mer information.</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "Skapa ett Data Package",
+          "layout": "image-bottom",
+          "html": "<p>Buntar ihop markörer, former och rutter i ett Data Package så att hela teamet delar samma bild.</p>\n<ul>\n<li>Öppna <strong>Data Package</strong>, välj <strong>+</strong> och välj sedan <strong>Map Select</strong>, <strong>File Select</strong>, <strong>Overlays</strong> eller <strong>Lasso</strong> för att lägga till objekt.</li>\n<li>Tryck på objekt på kartan (eller bläddra bland filer) för att lägga till dem i paketet.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/94a86f56455541ce.webp",
+              "width": 400,
+              "height": 185
+            }
+          ]
+        },
+        {
+          "title": "Spara Data Package",
+          "layout": "image-bottom",
+          "html": "<p>En röd asterisk på paketnamnet betyder att det finns osparade ändringar.</p>\n<ul>\n<li>Ange ett <strong>Name</strong> och eventuella <strong>Remarks</strong> och välj sedan <strong>Done</strong>.</li>\n<li>Välj <strong>Save</strong>-ikonen för att lagra paketet på din enhet.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/c0fbb4907e86065e.webp",
+              "width": 236,
+              "height": 126
+            }
+          ]
+        },
+        {
+          "title": "Skicka det till andra",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Välj <strong>Send</strong>-ikonen bredvid paketet och välj sedan hur du vill dela det.</li>\n<li>Skicka till en <strong>Contact</strong> (TAK Contact), skicka det till <strong>Select Server</strong>, lämna över det till en annan app med <strong>Choose App</strong>, eller <strong>Export</strong> filen.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/53fa5bb12234bad2.webp",
+              "width": 220,
+              "height": 82
+            }
+          ]
+        },
+        {
+          "title": "Ladda ner ett paket från servern",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>I Data Package, välj <strong>Download</strong>-ikonen för att lista paket som lagrats på TAK Server.</li>\n<li>Välj ett paket från <strong>Available Packages</strong> för att hämta det till din enhet.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/29ac7189339d6a1c.webp",
+              "width": 310,
+              "height": 224
+            }
+          ]
+        },
+        {
+          "title": "Läs av flödets statusfärger",
+          "layout": "image-bottom",
+          "html": "<p>Den färgade synkroniseringsikonen bredvid varje flöde visar dess status med en blick:</p>\n<ul>\n<li><strong>Grön</strong> — nedladdat och uppdaterat.</li>\n<li><strong>Gul</strong> — anslutet men efter (t.ex. en stor fil som fortfarande ska hämtas).</li>\n<li><strong>Grå</strong> — nedladdat, men söker inte efter uppdateringar.</li>\n<li><strong>Röd</strong> — nedladdat, men du är offline; återanslut för att synkronisera.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/99fe9ba85772009b.webp",
+              "width": 800,
+              "height": 664
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

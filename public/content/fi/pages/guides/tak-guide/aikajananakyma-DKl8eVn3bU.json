@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "82bb1fde-08a4-42e3-a34e-8c60bc2e9a09",
+  "slug": "aikajananakyma-DKl8eVn3bU",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Aikajananäkymä",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "Edistyneet ydintoiminnot",
+    "Aikajananäkymä"
+  ],
+  "createdAt": "2026-06-18T19:26:18.498Z",
+  "updatedAt": "2026-06-18T20:14:27.793Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/feed-timeline-view-Ykwnn1hgWm",
+    "fi": "/fi/guides/tak-guide/aikajananakyma-DKl8eVn3bU",
+    "sv": "/sv/guides/tak-guide/tidslinjevy-mXMCZ7CwsA"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Aikajananäkymä esittää syötteen kohteet vieritettävänä tilannekuvien pinona — kätevä tapa nähdä nopeasti, mikä on muuttunut.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Avaa aikajana",
+          "layout": "image-bottom",
+          "html": "<p>Napauta <strong>Timeline</strong>-kuvaketta syöteluettelosta tai syötteen koontinäkymästä. Vaihda <strong>portrait</strong>-tilaan, kun sitä pyydetään. Valitse syöteruutu tai <strong>All</strong> nähdäksesi kaikki seuraamasi syötteet.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/0087614f5756a67b.webp",
+              "width": 800,
+              "height": 270
+            }
+          ]
+        },
+        {
+          "title": "Lue ja toimi tilannekuvien perusteella",
+          "layout": "image-bottom",
+          "html": "<p>Jokainen tilannekuva näyttää <strong>callsign</strong>-tunnuksen, ajan, sijainnin ja karttakaappauksen; napauta sitä näyttääksesi kohteen kartalla.</p>\n<ul>\n<li>Napauta tilannekuvan <strong>⋮</strong>-painiketta toimintoihin <strong>View Details → History</strong> (palaa aiempaan versioon), <strong>Save screenshot</strong>, <strong>Contact Author</strong> tai <strong>Undo</strong>.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/8d81d2ed4a45a4eb.webp",
+              "width": 800,
+              "height": 1473
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

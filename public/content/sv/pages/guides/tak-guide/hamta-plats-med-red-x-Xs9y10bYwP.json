@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "id": "5a7a904c-e20d-466d-afaa-b38039200459",
+  "slug": "hamta-plats-med-red-x-Xs9y10bYwP",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Hämta plats med Red X",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "YTTERLIGARE FUNKTIONER",
+    "Navigering och koordinater",
+    "Hämta plats med Red X"
+  ],
+  "createdAt": "2026-06-18T19:28:21.911Z",
+  "updatedAt": "2026-06-18T20:19:27.288Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/get-location-with-red-x-14YkJ0qaz7",
+    "fi": "/fi/guides/tak-guide/hae-sijainti-red-xlla-mpYohfdfVx",
+    "sv": "/sv/guides/tak-guide/hamta-plats-med-red-x-Xs9y10bYwP"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Läs av exakta koordinater och höjd för vilken punkt som helst på kartan genom att placera Red X på den.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Aktivera Red X-verktyget",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på <strong>White X</strong> i verktygsfältet för att ställa Red X-verktyget i flyttbart läge. Ikonen blir gul.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/2ddeb4d931832a3b.webp",
+              "width": 385,
+              "height": 187
+            }
+          ]
+        },
+        {
+          "title": "Tryck för att läsa av en plats",
+          "layout": "image-bottom",
+          "html": "<p>Medan ikonen är gul, tryck var som helst på kartan så hoppar Red X dit. Widgeten uppe till höger visar punktens koordinater, höjd samt avstånd och bäring.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/2ddeb4d931832a3b.webp",
+              "width": 385,
+              "height": 187
+            }
+          ]
+        },
+        {
+          "title": "Lås eller inaktivera den",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på ikonen i verktygsfältet igen för att låsa Red X på dess nuvarande plats.</p>\n<ul>\n<li>Tryck och håll in <strong>Red X</strong>-ikonen i verktygsfältet för att inaktivera verktyget.</li>\n<li>Obs: Red X sparas inte när ATAK stängs och öppnas igen.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/2ddeb4d931832a3b.webp",
+              "width": 385,
+              "height": 187
+            }
+          ]
+        },
+        {
+          "title": "Öppna radialmenyn för fler val",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på <strong>Red X</strong> på kartan för att öppna dess radialmeny. Härifrån kan du:</p>\n<ul>\n<li><strong>Fine Adjust</strong> för att finjustera positionen</li>\n<li>placera en <strong>Range and Bearing Line</strong></li>\n<li>aktivera <strong>Compass Overlay</strong> eller <strong>Polar Coordinates</strong></li>\n<li>använda <strong>Pair to Self</strong> eller <strong>Place a Marker</strong></li>\n</ul>\n<p>Tryck och håll in den gula pilen för att nå undermenyerna.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/a73e4b6e1f10e24f.webp",
+              "width": 250,
+              "height": 207
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

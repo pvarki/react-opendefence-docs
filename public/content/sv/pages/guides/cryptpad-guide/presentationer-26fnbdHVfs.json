@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "708e5a83-8f1d-4146-8498-129b445c8c76",
+  "slug": "presentationer-26fnbdHVfs",
+  "collection": "guides/cryptpad-guide",
+  "locale": "sv",
+  "title": "Presentationer",
+  "breadcrumb": [
+    "Grundfunktioner",
+    "Presentationer"
+  ],
+  "createdAt": "2026-06-18T20:34:43.216Z",
+  "updatedAt": "2026-06-18T20:38:06.731Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/cryptpad-guide/presentations-gWIWMzfeXq",
+    "fi": "/fi/guides/cryptpad-guide/esitykset-k6gHQmskUS",
+    "sv": "/sv/guides/cryptpad-guide/presentationer-26fnbdHVfs"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>CryptPad innehåller ett Markdown-baserat presentationsverktyg. Du skriver din presentation som text och verktyget lägger ut den i bilder.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Starta en presentation",
+          "layout": "image-bottom",
+          "html": "<p>Klicka på <strong>+</strong> och välj <strong>Slide</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/a053f62be8cb42ea.webp",
+              "width": 1450,
+              "height": 1252
+            }
+          ]
+        },
+        {
+          "title": "Skriv och presentera bilder",
+          "layout": "image-bottom",
+          "html": "<p>Skriv dina bilder som text till vänster. Separera bilder med <code>---</code>. Klicka på <strong>Present</strong> för att gå till helskärmsläge och bläddra mellan bilderna med piltangenterna.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/82ccb028d62e5ce2.webp",
+              "width": 1825,
+              "height": 1131
+            }
+          ]
+        },
+        {
+          "title": "Andra filformat",
+          "layout": "text",
+          "html": "<p>CryptPad har inte stöd för realtidsredigering i webbläsaren av format som PowerPoint, men du kan dela sådana filer på CryptDrive och redigera och presentera dem lokalt.</p>",
+          "images": []
+        }
+      ]
+    }
+  ]
+}

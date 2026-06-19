@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "id": "e0e68a7d-44b3-4294-855d-703fc4d1abf4",
+  "slug": "forsta-inloggningen-30j0MZLvzy",
+  "collection": "deploy-app",
+  "locale": "sv",
+  "title": "Första inloggningen",
+  "breadcrumb": [
+    "Platforms",
+    "Windows",
+    "Administratörsguide",
+    "Första inloggningen"
+  ],
+  "createdAt": "2026-06-18T20:35:48.097Z",
+  "updatedAt": "2026-06-18T20:39:47.811Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/deploy-app/admin-first-login-1wjrnFERNt",
+    "fi": "/fi/deploy-app/ensimmainen-kirjautuminen-w6ucKbFHSI",
+    "sv": "/sv/deploy-app/forsta-inloggningen-30j0MZLvzy"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Första inloggningen",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Du bör ha adressen till din Deploy App-instans och en första administratörskod.</li>\n<li>Logga in med den angivna koden.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/883672fe27c04b72.webp",
+              "width": 2048,
+              "height": 1432
+            }
+          ]
+        },
+        {
+          "title": "Anropssignal",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Ge dig själv en anropssignal.</li>\n<li>Den används i alla tjänster.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/84bf77d98ee966a4.webp",
+              "width": 2054,
+              "height": 1420
+            }
+          ]
+        },
+        {
+          "title": "Instruktioner",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Deploy App har inbyggda instruktioner som vägleder användare och lyfter fram viktiga funktioner.</li>\n<li>Den här guiden går igenom installationen av certifikatet.</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "Ladda ner certifikatet",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Detta fungerar som din väg till tjänsterna.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/edf6c9211e881a13.webp",
+              "width": 2050,
+              "height": 1510
+            }
+          ]
+        },
+        {
+          "title": "Installera ditt certifikat",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Din anropssignal fungerar som ditt lösenord.</li>\n<li>Skriv in den och tryck på <strong>OK</strong> tills du är tillbaka i Deploy App.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/cdec9e11d1ffdeaa.webp",
+              "width": 2052,
+              "height": 1432
+            }
+          ]
+        },
+        {
+          "title": "Logga in med certifikatet",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Tryck på <strong>Navigate with your key</strong>.</li>\n<li>När du ombeds välja ett certifikat, kontrollera att din anropssignal är vald och tryck på <strong>Select</strong> för att logga in.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/cd4aec232634c66a.webp",
+              "width": 2050,
+              "height": 1436
+            }
+          ]
+        },
+        {
+          "title": "Klart",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Nu kan du börja använda apparna samt registrera användare.</li>\n<li>Deploy App visar dig några instruktioner första gången, eller så kan du titta på instruktionerna i den här wikin.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/22b750e5d71b437e.webp",
+              "width": 2054,
+              "height": 1438
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

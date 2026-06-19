@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "id": "7c2648d0-a32c-4fb3-a67f-d7fc1b5fcc2e",
+  "slug": "yleiskatsaus-dSxmQoNuM0",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Yleiskatsaus",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "KÄYTTÖ ROOLEITTAIN",
+    "Yleiskatsaus"
+  ],
+  "createdAt": "2026-06-18T19:27:19.270Z",
+  "updatedAt": "2026-06-18T20:16:58.840Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/overview-CVNzKhRcKY",
+    "fi": "/fi/guides/tak-guide/yleiskatsaus-dSxmQoNuM0",
+    "sv": "/sv/guides/tak-guide/oversikt-RdC8FOmUJv"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>(This tab should not be shown)</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "OpenDefence-vakiomalli",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>TAK:ia voi käyttää monella tavalla. Tarjoamme käyttömallin, joka tuottaa hyötyä ilman monimutkaisuutta.</li>\n<li><strong>Tavoite:</strong> koko yksikkö on tietoinen olennaisista tapahtumista minuuttien kuluessa havainnosta.</li>\n<li><strong>Havaintotiedon kulku:</strong> taistelija havaitsee jotain raportoitavaa, ilmoittaa siitä omalle ryhmälleen ja lähettää merkin <strong>HQ-roolille</strong> (komentopaikalle). Komentopaikka varmistaa ja tulkitsee sen, minkä jälkeen se julkaisee sen <strong>tiedustelusyötteeseen</strong> (Recon Feed) — johon jokainen käyttäjä on tilannut.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/26c9f9d12b8a6fac.webp",
+              "width": 2066,
+              "height": 1602
+            }
+          ]
+        },
+        {
+          "title": "TAK:in käyttö taistelijana",
+          "layout": "image-bottom",
+          "html": "<ol>\n<li>Kun teet havainnon, luo merkki ja <strong>lähetä se HQ-roolille</strong>.</li>\n<li>Raportoi käsketyllä tavalla.</li>\n<li>Merkin lähettämisen lisäksi tee havainto tunnetuksi muiden kanavien kautta käsketyllä tavalla (viestintä, esim. TAK GeoChat tai Deploy App:in Matrix RECON -kanava).</li>\n</ol>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/a984073033cdf039.webp",
+              "width": 2176,
+              "height": 954
+            }
+          ]
+        },
+        {
+          "title": "Taistelijat seuraavat syötteitä…",
+          "layout": "image-bottom",
+          "html": "<ol start=\"3\">\n<li>Seuraa <strong>tiedustelusyötettä</strong> (Recon Feed) — komentopaikkasi (HQ) luo ja päivittää sen yksiköllesi.</li>\n<li>Se sisältää yksikkösi havaintojen, myös sinun, tulkitun tiedustelun tilannekuvan.</li>\n</ol>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/9990aa9707a9ab73.webp",
+              "width": 2278,
+              "height": 1014
+            }
+          ]
+        },
+        {
+          "title": "…ja komentopaikka tuottaa ne",
+          "layout": "image-bottom",
+          "html": "<ol>\n<li>TAK kerää tietoa joukolta ja jakaa sen takaisin sille.</li>\n<li><strong>Komentopaikkana</strong> luot yksikön <strong>syötteet</strong> ja käytät <strong>HQ</strong>-tiimiroolia vastaanottaaksesi ja tulkitaksesi taistelijoiden havaintoja.</li>\n<li>Tulkinta: vahvista havainto sen lähettäjän kanssa, tee johtopäätökset mikäli mahdollista, ja lisää sitten vahvistetut havainnot <strong>tiedustelusyötteeseen</strong> (Recon Feed).</li>\n</ol>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/10ce7a6b98a9baed.webp",
+              "width": 2604,
+              "height": 1012
+            }
+          ]
+        },
+        {
+          "title": "Muiden syötteiden tuottaminen komentopaikkana",
+          "layout": "image-bottom",
+          "html": "<ol start=\"4\">\n<li>Ylläpidä <strong>tiedustelusyötettä</strong> (Recon Feed): lähetä siihen merkkejä, päivitä niiden tietoja ja poista ne, kun tieto tai tilanne muuttuu.</li>\n</ol>\n<ul>\n<li>\n<p>Komentopaikka tuottaa ja kuratoi muut syötteet — <strong>RECON</strong>, <strong>PLAN</strong> ja <strong>BLUFOR</strong>.</p>\n<p>\\</p>\n</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/a5b8303c5ef0853c.webp",
+              "width": 2444,
+              "height": 936
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

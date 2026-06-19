@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "id": "602f317b-19ef-4d08-a82c-e7963b02dd95",
+  "slug": "konfigurera-rapportinstallningar-SdPkG0kE3I",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Konfigurera rapportinställningar",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "TILLÄGG SOM STÖDS",
+    "Rapporter",
+    "Konfigurera rapportinställningar"
+  ],
+  "createdAt": "2026-06-18T19:31:38.432Z",
+  "updatedAt": "2026-06-18T20:22:42.177Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/configure-report-settings-kQmMR0hmn5",
+    "fi": "/fi/guides/tak-guide/maarita-raporttiasetukset-irT9AFQtCl",
+    "sv": "/sv/guides/tak-guide/konfigurera-rapportinstallningar-SdPkG0kE3I"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Ställ in Reports en gång så att varje rapport du skickar använder rätt standardvärden utan extra tryck i fält. Öppna <strong>Settings > Tool Preferences > Specific Tool Preferences > Reporting Preferences</strong>.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Ställ in hur rapporter skickas",
+          "layout": "image-bottom",
+          "html": "<p>I <strong>General Settings</strong> aktiverar du <strong>Allow sending to ATAK users over Data Package</strong> för att bli tillfrågad om en sändningsmetod, och <strong>Send Report Data Package To All Contacts Automatically</strong> för att skicka till alla i nätverket.</p>\n<ul>\n<li>Använd <strong>Always Show Queried Reports</strong> för att behålla serverresultaten på skärmen.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/1671ece168e75125.webp",
+              "width": 800,
+              "height": 176
+            }
+          ]
+        },
+        {
+          "title": "Sätt rapportplatsen till dig själv som standard",
+          "layout": "image-bottom",
+          "html": "<p>Aktivera <strong>Set report location to self marker by default</strong> så att varje ny rapport placeras på din egen position. Sparar dig från att placera markören för hand varje gång.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/1671ece168e75125.webp",
+              "width": 800,
+              "height": 176
+            }
+          ]
+        },
+        {
+          "title": "Ställ in standardvikt och standardskala",
+          "layout": "image-bottom",
+          "html": "<p>Under <strong>Default Information</strong> ställer du in <strong>Importance</strong> för <strong>Default Report Importance</strong> och <strong>Event Scale</strong> för <strong>Default Report Event Scale</strong>. Nya rapporter börjar med dessa värden.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/35c176c6a758d5d2.webp",
+              "width": 634,
+              "height": 243
+            }
+          ]
+        },
+        {
+          "title": "Välj en standardrapportmall",
+          "layout": "image-bottom",
+          "html": "<p>I <strong>Report Templates</strong> ställer du in <strong>Default Report Type</strong> till den mall du skapar oftast.</p>\n<ul>\n<li>Använd <strong>Overwrite Reports with Defaults</strong> för att anpassa rapporter som skapats med den typen.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/0b9f6fd975c7ce3d.webp",
+              "width": 635,
+              "height": 233
+            }
+          ]
+        },
+        {
+          "title": "Ställ in alternativ för PDF-export",
+          "layout": "image-bottom",
+          "html": "<p>Under <strong>Export to PDF</strong> aktiverar du <strong>Automatically Open PDFs</strong> för att se varje PDF så snart den har skapats.</p>\n<ul>\n<li>Använd <strong>Watermark Preferences</strong> för att ställa in vattenstämpeln till standard, anpassad eller ingen.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/bade3d6907a7b1b4.webp",
+              "width": 800,
+              "height": 357
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

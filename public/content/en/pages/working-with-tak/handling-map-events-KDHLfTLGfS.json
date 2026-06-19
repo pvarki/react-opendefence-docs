@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "57dfa2cf-76f0-48e1-8371-7ee6979c3c2c",
+  "slug": "handling-map-events-KDHLfTLGfS",
+  "collection": "working-with-tak",
+  "locale": "en",
+  "title": "Handling map events",
+  "breadcrumb": [
+    "ATAK Plugin Development",
+    "Handling map events"
+  ],
+  "createdAt": "2026-06-17T01:52:05.412Z",
+  "updatedAt": "2026-06-17T01:52:06.549Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Subscribing",
+      "id": "subscribing"
+    },
+    {
+      "depth": 2,
+      "text": "The listener stack (suppressing other handlers)",
+      "id": "the-listener-stack-suppressing-other-handlers"
+    },
+    {
+      "depth": 3,
+      "text": "Typical pattern: a one-shot \"pick an item\" workflow",
+      "id": "typical-pattern-a-one-shot-pick-an-item-workflow"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p><code>MapEventDispatcher</code> is ATAK's event bus for high-level map events (clicks, item added/removed, etc.). You get it from the <code>MapView</code>:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#E5C07B\">MapEventDispatcher</span><span style=\"color:#E06C75\"> dispatcher </span><span style=\"color:#56B6C2\">=</span><span style=\"color:#61AFEF\"> getMapView</span><span style=\"color:#E06C75\">()</span><span style=\"color:#ABB2BF\">.</span><span style=\"color:#61AFEF\">getMapEventDispatcher</span><span style=\"color:#ABB2BF\">();</span></span></code></pre>",
+      "lang": "java"
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"subscribing\"><a href=\"#subscribing\">Subscribing</a></h2>\n<p>There are three subscription granularities:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#7F848E;font-style:italic\">// 1. ALL events, all items, all types</span></span>\n<span class=\"line\"><span style=\"color:#E5C07B\">dispatcher</span><span style=\"color:#ABB2BF\">.</span><span style=\"color:#61AFEF\">addMapEventListener</span><span style=\"color:#ABB2BF\">(listener);</span></span>\n<span class=\"line\"></span>\n<span class=\"line\"><span style=\"color:#7F848E;font-style:italic\">// 2. Only events of a specific type</span></span>\n<span class=\"line\"><span style=\"color:#E5C07B\">dispatcher</span><span style=\"color:#ABB2BF\">.</span><span style=\"color:#61AFEF\">addMapEventListener</span><span style=\"color:#ABB2BF\">(</span><span style=\"color:#E5C07B\">MapEvent</span><span style=\"color:#ABB2BF\">.</span><span style=\"color:#E5C07B\">ITEM_CLICK</span><span style=\"color:#ABB2BF\">, listener);</span></span>\n<span class=\"line\"></span>\n<span class=\"line\"><span style=\"color:#7F848E;font-style:italic\">// 3. Only events for one specific MapItem</span></span>\n<span class=\"line\"><span style=\"color:#E5C07B\">dispatcher</span><span style=\"color:#ABB2BF\">.</span><span style=\"color:#61AFEF\">addMapItemEventListener</span><span style=\"color:#ABB2BF\">(mapItem, onMapEventListener);</span></span></code></pre>",
+      "lang": "java"
+    },
+    {
+      "type": "html",
+      "html": "<p>Each has a matching <code>removeMapEventListener(...)</code>. Always unregister in your <code>MapComponent</code> teardown (<code>onDestroyImpl</code>) so listeners don't outlive the plugin.</p>\n<h2 id=\"the-listener-stack-suppressing-other-handlers\"><a href=\"#the-listener-stack-suppressing-other-handlers\">The listener stack (suppressing other handlers)</a></h2>\n<p><code>MapEventDispatcher</code> manages its listeners as a <strong>stack</strong>, and <em>only the listeners on top of the stack receive events</em>. This is how a tool can temporarily take over an event (e.g. \"the next map-item click belongs to me\") without other handlers also reacting:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#E5C07B\">dispatcher</span><span style=\"color:#ABB2BF\">.</span><span style=\"color:#61AFEF\">pushListeners</span><span style=\"color:#ABB2BF\">();</span><span style=\"color:#7F848E;font-style:italic\">   // copy current listeners onto a new top-of-stack</span></span>\n<span class=\"line\"><span style=\"color:#7F848E;font-style:italic\">// clear/replace listeners so only yours are active, then handle your one event...</span></span>\n<span class=\"line\"><span style=\"color:#7F848E;font-style:italic\">// when done:</span></span>\n<span class=\"line\"><span style=\"color:#E5C07B\">dispatcher</span><span style=\"color:#ABB2BF\">.</span><span style=\"color:#61AFEF\">popListeners</span><span style=\"color:#ABB2BF\">();</span><span style=\"color:#7F848E;font-style:italic\">    // discard your temporary set, restore the prior state</span></span></code></pre>",
+      "lang": "java"
+    },
+    {
+      "type": "html",
+      "html": "<ul>\n<li><code>**pushListeners()**</code> copies the current top set and pushes the copy — your changes apply only to that copy.</li>\n<li><code>**popListeners()**</code> discards the top set and restores the subscription state from before the matching push.</li>\n</ul>\n<h3 id=\"typical-pattern-a-one-shot-pick-an-item-workflow\"><a href=\"#typical-pattern-a-one-shot-pick-an-item-workflow\">Typical pattern: a one-shot \"pick an item\" workflow</a></h3>\n<p>A widget that needs the user to click one item, then go back to normal:</p>\n<ol>\n<li>On activate: <code>pushListeners()</code>, then register a single item-click listener (and optionally clear others) so nothing else reacts.</li>\n<li>On the click: handle it, then <code>popListeners()</code> to restore normal map behaviour.</li>\n</ol>\n<p>This keeps your transient interaction from firing every other map handler in the app.</p>\n<p>→ Next: <a href=\"/en/working-with-tak/cot-in-depth-listening-sending-custom-details-nTudtLfqX9\">CoT in depth</a>.</p>"
+    }
+  ]
+}

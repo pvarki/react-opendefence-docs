@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 1,
+  "id": "24605dfa-ac58-4ebd-90f0-7c7f01f62fa4",
+  "slug": "lisaa-ominaisuuksia-ja-merkintoja-6rG5M5SnNo",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Lisää ominaisuuksia ja merkintöjä",
+  "breadcrumb": [
+    "Platforms",
+    "WinTAK",
+    "Tuetut lisäosat",
+    "GRG Builder",
+    "Lisää ominaisuuksia ja merkintöjä"
+  ],
+  "createdAt": "2026-06-18T19:34:32.417Z",
+  "updatedAt": "2026-06-18T20:24:52.642Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/add-features-markers-9dYxguZls8",
+    "fi": "/fi/guides/tak-guide/lisaa-ominaisuuksia-ja-merkintoja-6rG5M5SnNo",
+    "sv": "/sv/guides/tak-guide/lagg-till-funktioner-och-markorer-BLXzkd3BHF"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Itse ruudukon lisäksi GRG voi sisältää karttaviitteitä ja merkintöjä. Avaa <strong>Edit GRG > Edit GRG Components</strong> ja laajenna kukin kohde lisätäksesi sen.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Lisää tähtäysristi",
+          "layout": "image-bottom",
+          "html": "<p><strong>Crosshair</strong> asettaa tähtäysristin ruudukolle. Siirrä sitä toiminnolla <strong>Move Crosshair</strong>, aseta sen väri ja läpinäkyvyys sekä säädä kokoa. Kytke se päälle ja pois valintaruudusta <strong>Show Crosshair</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/a2c1c8ef2e90e531.webp",
+              "width": 192,
+              "height": 95
+            }
+          ]
+        },
+        {
+          "title": "Lisää tietolaatikko",
+          "layout": "image-bottom",
+          "html": "<p><strong>InfoBox</strong> näyttää nimetyn laatikon ruudukolla. Muokkaa kenttien <strong>Title</strong>, <strong>Location</strong>, <strong>Date</strong> ja <strong>Classification</strong> tekstiä ja värejä; aseta Theme, Style, Placement ja Text Alignment. Kytke se päälle ja pois valintaruudusta <strong>Show Info Box</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/b334153ae9e6eb32.webp",
+              "width": 201,
+              "height": 283
+            }
+          ]
+        },
+        {
+          "title": "Lisää mittakaavajana",
+          "layout": "image-bottom",
+          "html": "<p><strong>ScaleBar</strong> lisää mittakaavan, joka näyttää joko ruutuvälin tai karttavälin. Ruutuvälin arvo on oletuksena Edit Grid -ruudukkoväli; säädä karttavälin koko ja jaksoarvot mieltymyksesi mukaan. Kytke se päälle ja pois valintaruudusta <strong>Show Scale Bar</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/bb60a55890a28356.webp",
+              "width": 224,
+              "height": 116
+            }
+          ]
+        },
+        {
+          "title": "Lisää kompassi",
+          "layout": "image-bottom",
+          "html": "<p><strong>Compass</strong> lisää pohjoisviitteen. Valitse tyyli (<strong>Full</strong> tai <strong>True + Mag</strong>), sen sijainti ja eranto; True + Mag -tyylillä voit asettaa myös värin. Kytke se päälle ja pois valintaruudusta <strong>Show Compass</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/576dc52c687eea2d.webp",
+              "width": 224,
+              "height": 151
+            }
+          ]
+        },
+        {
+          "title": "Lisää merkintöjä Point Dropper -työkalulla",
+          "layout": "image-bottom",
+          "html": "<p>Valitse <strong>Open Point Dropper</strong> asettaaksesi merkintöjä ruudukolle — valitse merkintätyyppi ja napauta sijaintia; käytä nuolia saadaksesi lisää tyyppejä.</p>\n<ul>\n<li>Asetetut merkinnät näkyvät kohdassa <strong>Recently Added</strong>, jossa ne voidaan lähettää, muokata tai poistaa.</li>\n<li>Toiminnolla <strong>Edit Grid Markers > Name Markers</strong> voit nimetä pistemerkinnät automaattisesti uudelleen sen ruudun mukaan, johon ne osuvat.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/5185b111cacafb99.webp",
+              "width": 354,
+              "height": 386
+            }
+          ]
+        },
+        {
+          "title": "Tuo pisteet tiedostosta",
+          "layout": "image-bottom",
+          "html": "<p>Tuo merkinnät <strong>.csv</strong>- tai <strong>.xlsx</strong>-tiedostosta toiminnolla <strong>Import Points</strong>.</p>\n<ul>\n<li>Sarakkeet Name, Prefix ja Location (Lat/Long tai MGRS) ovat pakollisia; Elevation, Remarks, Color ja Type ovat valinnaisia.</li>\n<li>Jos sarake ei täsmää, ikkunassa <strong>Assign Columns</strong> voit yhdistää kunkin sarakkeen — tai vaihtaa merkinnän tyypin — ennen tuontia.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/ce6cce34c43d139a.webp",
+              "width": 256,
+              "height": 227
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "id": "56bc49b8-b7bb-473a-b74c-e1bf9a6b84f2",
+  "slug": "avaa-uas-tyokalu-ja-lue-telemetria-z5ZZMLVliu",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Avaa UAS-työkalu ja lue telemetria",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "TUETUT LISÄOSAT",
+    "UAS-työkalu",
+    "Avaa UAS-työkalu ja lue telemetria"
+  ],
+  "createdAt": "2026-06-18T19:30:25.321Z",
+  "updatedAt": "2026-06-18T20:21:42.061Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/open-uas-tool-read-telemetry-CvGSGecLE1",
+    "fi": "/fi/guides/tak-guide/avaa-uas-tyokalu-ja-lue-telemetria-z5ZZMLVliu",
+    "sv": "/sv/guides/tak-guide/oppna-uas-verktyget-och-las-telemetri-wdcDijyRka"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Etsi lennokki verkosta, avaa sen kuvavirta ja lue sen korkeus, akku ja yhteys poistumatta ATAK:sta.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Avaa lennokkiluettelo",
+          "layout": "image-bottom",
+          "html": "<p>UAS Tool -aloitusnäyttö luettelee jokaisen verkossa olevan lennokin kohdassa <strong>Network UAS</strong>.</p>\n<ul>\n<li><strong>UAS Observer</strong> -tilassa olevilla lennokeilla on musta tausta; <strong>Operator Connected</strong> -lennokki on päällimmäisenä sinisellä taustalla.</li>\n<li>Jokainen rivi näyttää signaalin voimakkuuden ja akun yhdellä silmäyksellä.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/e9c077ded52295a1.webp",
+              "width": 1067,
+              "height": 718
+            }
+          ]
+        },
+        {
+          "title": "Valitse alusta",
+          "layout": "image-bottom",
+          "html": "<p>Napauta lennokkia valitaksesi sen ja avataksesi sen valikkonauhan.</p>\n<ul>\n<li>Valikkonauha tarjoaa <strong>Platform Settings</strong>, <strong>Platform Health</strong>, <strong>Platform Information</strong> ja <strong>Pan To</strong>.</li>\n<li>Vain yksi lennokki voidaan valita kerrallaan.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/0d6ec954c43b358a.webp",
+              "width": 1058,
+              "height": 860
+            }
+          ]
+        },
+        {
+          "title": "Avaa UAS Display",
+          "layout": "image-bottom",
+          "html": "<p>Napauta <strong>Play</strong>-painiketta avataksesi UAS Full Motion Video (FMV) -näytön.</p>\n<ul>\n<li>Video täyttää ruudun: <strong>Quick Flight Toolbar</strong> ylhäällä, <strong>Instrument Panel</strong> (suunta, horisontti, GPS-kiinnitys) oikealla ja <strong>Lower Toolbar</strong> alareunassa.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/fec9ac33dde3223c.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Lue tilapeite",
+          "layout": "image-bottom",
+          "html": "<p>Vasemmassa yläkulmassa oleva <strong>sUAS Metadata</strong> antaa reaaliaikaiset luvut: jäljellä oleva akku, yhteyden voimakkuus, etäisyys ja suuntima omasta sijainnistasi sekä korkeus (<strong>AGL</strong>). Tarkista nämä ennen jokaista lentoa ja sen aikana.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/be8704e99d6e5ef9.webp",
+              "width": 720,
+              "height": 183
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

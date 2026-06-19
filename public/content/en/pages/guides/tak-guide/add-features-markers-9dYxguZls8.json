@@ -8,13 +8,18 @@
   "breadcrumb": [
     "Platforms",
     "WinTAK",
-    "Supported Plugins",
+    "SUPPORTED PLUGINS",
     "GRG Builder",
     "Add features & markers"
   ],
   "createdAt": "2026-06-16T10:20:36.340Z",
-  "updatedAt": "2026-06-16T10:20:36.340Z",
+  "updatedAt": "2026-06-18T20:24:51.878Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/add-features-markers-9dYxguZls8",
+    "fi": "/fi/guides/tak-guide/lisaa-ominaisuuksia-ja-merkintoja-6rG5M5SnNo",
+    "sv": "/sv/guides/tak-guide/lagg-till-funktioner-och-markorer-BLXzkd3BHF"
+  },
   "blocks": [
     {
       "type": "html",
@@ -75,7 +80,7 @@
         {
           "title": "Add markers with Point Dropper",
           "layout": "image-bottom",
-          "html": "<p>Select <strong>Open Point Dropper</strong> to place markers on the grid — choose a marker type and tap a position; use the arrows for more types. Placed markers appear under <strong>Recently Added</strong>, where they can be sent, edited or deleted. Use <strong>Edit Grid Markers > Name Markers</strong> to auto-rename spot markers by the quadrant they fall in.</p>",
+          "html": "<p>Select <strong>Open Point Dropper</strong> to place markers on the grid — choose a marker type and tap a position; use the arrows for more types.</p>\n<ul>\n<li>Placed markers appear under <strong>Recently Added</strong>, where they can be sent, edited or deleted.</li>\n<li>Use <strong>Edit Grid Markers > Name Markers</strong> to auto-rename spot markers by the quadrant they fall in.</li>\n</ul>",
           "images": [
             {
               "src": "/content/images/en/attachments/5185b111cacafb99.webp",
@@ -87,7 +92,7 @@
         {
           "title": "Import points from a file",
           "layout": "image-bottom",
-          "html": "<p>Import markers from a <strong>.csv</strong> or <strong>.xlsx</strong> with <strong>Import Points</strong>. Name, Prefix and Location (Lat/Long or MGRS) columns are required; Elevation, Remarks, Color and Type are optional. If a column doesn't match, the <strong>Assign Columns</strong> window lets you map each column — or change a marker's type — before importing.</p>",
+          "html": "<p>Import markers from a <strong>.csv</strong> or <strong>.xlsx</strong> with <strong>Import Points</strong>.</p>\n<ul>\n<li>Name, Prefix and Location (Lat/Long or MGRS) columns are required; Elevation, Remarks, Color and Type are optional.</li>\n<li>If a column doesn't match, the <strong>Assign Columns</strong> window lets you map each column — or change a marker's type — before importing.</li>\n</ul>",
           "images": [
             {
               "src": "/content/images/en/attachments/ce6cce34c43d139a.webp",

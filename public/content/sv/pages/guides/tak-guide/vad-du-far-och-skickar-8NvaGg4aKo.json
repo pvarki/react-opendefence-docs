@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "11b0cddb-cb1d-4fb4-94e3-4084631f3f1b",
+  "slug": "vad-du-far-och-skickar-8NvaGg4aKo",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Vad du får och skickar",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "ANVÄNDNING EFTER ROLL",
+    "Stridande",
+    "Vad du får och skickar"
+  ],
+  "createdAt": "2026-06-18T19:27:21.194Z",
+  "updatedAt": "2026-06-18T20:17:03.242Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/what-you-get-send-MhsXXsmVxN",
+    "fi": "/fi/guides/tak-guide/mita-saat-ja-lahetat-fb846unh6t",
+    "sv": "/sv/guides/tak-guide/vad-du-far-och-skickar-8NvaGg4aKo"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Översikt - Soldaten skickar",
+          "layout": "image-bottom",
+          "html": "<ol>\n<li>Skicka meddelanden enligt vad som beordrats i din enhet, t.ex. Matrix eller GeoChat. Meddelanden går till COMMAND, RECON, BLUFOR eller COMMON beroende på innehållet.</li>\n<li>Skicka dina markörer till HQ-rollen för CP:ns tolkning.</li>\n<li>Om din enhet har beordrat det, skicka även spaningsobservationer till OBSERVATIONS-flödet.</li>\n</ol>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/a984073033cdf039.webp",
+              "width": 2176,
+              "height": 954
+            }
+          ]
+        },
+        {
+          "title": "Översikt - Soldaten tar emot",
+          "layout": "image-bottom",
+          "html": "<ol start=\"4\">\n<li>\n<p>Ta emot det CP-producerade RECON-flödet för att få veta vad vi vet om insatsområdet.</p>\n</li>\n<li>\n<p>Ta emot uppdragets PLAN-flöden för marschvägar, patrullvägar, geostängselvarningar...</p>\n</li>\n<li>\n<p>Ta emot BLUFOR-flödet med t.ex. anflygningsvägar till egna positioner.</p>\n</li>\n<li>\n<p>Bevaka det meddelandeverktyg som valts i din enhet (Geochat, Matrix eller andra).</p>\n<p>\\</p>\n</li>\n</ol>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/9990aa9707a9ab73.webp",
+              "width": 2278,
+              "height": 1014
+            }
+          ]
+        },
+        {
+          "title": "Hur gör jag?",
+          "layout": "text",
+          "html": "<ol>\n<li>Följande guide <strong>Use RECON Feed</strong> visar hur du skickar och tar emot markörer.</li>\n<li>Guiden <strong>Use Geochat for comms</strong> visar hur du använder TAK:s Geochat för meddelanden.</li>\n<li>Guiden <strong>Use Matrix Element for comms</strong> visar hur du använder en app utanför TAK, Matrix Element, för meddelanden. Det är det rekommenderade alternativet till TAK:s Geochat.</li>\n</ol>",
+          "images": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "cbbe0084-4302-4c2b-90b1-b3f24ee2d22d",
+  "slug": "yleiskatsaus-awMobw9EkE",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Yleiskatsaus",
+  "breadcrumb": [
+    "Platforms",
+    "TAK Tracker - Android",
+    "KÄYTTÖ ROOLEITTAIN",
+    "Yleiskatsaus"
+  ],
+  "createdAt": "2026-06-18T19:44:15.363Z",
+  "updatedAt": "2026-06-18T20:26:56.596Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/overview-4sA7lVWVtw",
+    "fi": "/fi/guides/tak-guide/yleiskatsaus-awMobw9EkE",
+    "sv": "/sv/guides/tak-guide/oversikt-WnJ9NYZa3M"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>(Tätä välilehteä ei pitäisi näyttää)</p>"
+    }
+  ]
+}

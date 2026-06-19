@@ -1,0 +1,128 @@
+{
+  "schemaVersion": 1,
+  "id": "968bb492-d536-4284-a756-c0b7be370652",
+  "slug": "skapa-ett-team-for-din-enhet-5WZecY2ggu",
+  "collection": "guides/cryptpad-guide",
+  "locale": "sv",
+  "title": "Skapa ett team för din enhet",
+  "breadcrumb": [
+    "Användning i enheten",
+    "Skapa ett team för din enhet"
+  ],
+  "createdAt": "2026-06-18T20:34:46.036Z",
+  "updatedAt": "2026-06-18T20:38:09.680Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/cryptpad-guide/set-up-a-unit-team-acg83EqeNh",
+    "fi": "/fi/guides/cryptpad-guide/luo-tiimi-yksikollesi-rh5NTKB48E",
+    "sv": "/sv/guides/cryptpad-guide/skapa-ett-team-for-din-enhet-5WZecY2ggu"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Den här CryptPad-instansen är unik — den finns endast på den här Deploy App-servern. All data stannar på din egen infrastruktur och försvinner helt när servern stängs av. Här följer ett enkelt och effektivt sätt att använda CryptPad i din enhet: som ansvarig för ledningssystemet börjar du med att skapa ett team på toppnivå.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Skapa ett team för din enhet (1/8)",
+          "layout": "image-bottom",
+          "html": "<p>Skapa ett team för din enhet i CryptPad. På så sätt får du enkelt en delad enhet och kalender. Börja med att hitta <strong>Teams</strong>-menyn i det övre högra hörnet.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/4f152362b1aa2d59.webp",
+              "width": 1464,
+              "height": 832
+            }
+          ]
+        },
+        {
+          "title": "Skapa ett team för din enhet (2/8)",
+          "layout": "image-bottom",
+          "html": "<p>Teams-menyn visar de CryptPad-team du tillhör. Skapa ett nytt.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/8bd4aa05a29ed558.webp",
+              "width": 1482,
+              "height": 1050
+            }
+          ]
+        },
+        {
+          "title": "Skapa ett team för din enhet (3/8)",
+          "layout": "image-bottom",
+          "html": "<p>Ge ditt team ett beskrivande namn och fortsätt.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/55bdb55717d2c692.webp",
+              "width": 1460,
+              "height": 844
+            }
+          ]
+        },
+        {
+          "title": "Skapa ett team för din enhet (4/8)",
+          "layout": "image-bottom",
+          "html": "<p>Ditt team är skapat och syns i teammenyn. Fortsätt genom att klicka på ditt teams ikon.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/6265e38fbe94f397.webp",
+              "width": 1440,
+              "height": 1140
+            }
+          ]
+        },
+        {
+          "title": "Skapa ett team för din enhet (5/8)",
+          "layout": "image-bottom",
+          "html": "<p>Här hittar du ditt teams delade enhet. Gå sedan till <strong>Members</strong>-menyn för att skapa en inbjudan till ditt team.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/80ed7c71b542afc3.webp",
+              "width": 1470,
+              "height": 952
+            }
+          ]
+        },
+        {
+          "title": "Skapa ett team för din enhet (6/8)",
+          "layout": "image-bottom",
+          "html": "<p>För att låta andra ansluta till ditt team skapar du en inbjudningslänk. Bilden visar våra rekommenderade inställningar. Tryck på <strong>Create link</strong> för att skapa en delbar inbjudningslänk.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/66d8c31b2c80943a.webp",
+              "width": 1394,
+              "height": 1156
+            }
+          ]
+        },
+        {
+          "title": "Skapa ett team för din enhet (7/8)",
+          "layout": "image-bottom",
+          "html": "<p>Kopiera länken och dela den via din föredragna meddelandetjänst. Mottagaren måste finnas på din enhets Deploy App-server — utan Deploy Apps mTLS-certifikat går det av säkerhetsskäl inte att komma åt din CryptPad.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/d8d8fb051d38c2ab.webp",
+              "width": 1180,
+              "height": 662
+            }
+          ]
+        },
+        {
+          "title": "Skapa ett team för din enhet (8/8)",
+          "layout": "image-bottom",
+          "html": "<p>Så här ser den anslutande medlemmens vy ut. Därefter ser de ditt teams delade enhet.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/7805443f8bbba537.webp",
+              "width": 1282,
+              "height": 1328
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

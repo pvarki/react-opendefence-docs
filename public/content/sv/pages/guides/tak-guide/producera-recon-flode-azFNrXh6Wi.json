@@ -1,0 +1,221 @@
+{
+  "schemaVersion": 1,
+  "id": "0b10d22c-c36f-4f21-9242-caaa4f022208",
+  "slug": "producera-recon-flode-azFNrXh6Wi",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Producera RECON-flöde",
+  "breadcrumb": [
+    "Platforms",
+    "WinTAK",
+    "ANVÄNDNING ENLIGT ROLL",
+    "Kommandoplats",
+    "Producera RECON-flöde"
+  ],
+  "createdAt": "2026-06-18T19:34:25.952Z",
+  "updatedAt": "2026-06-18T20:24:33.896Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/produce-recon-feed-B7h9QJzZVd",
+    "fi": "/fi/guides/tak-guide/tuota-recon-syote-fexKBlxU0L",
+    "sv": "/sv/guides/tak-guide/producera-recon-flode-azFNrXh6Wi"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Som ledningsplats skapar och underhåller du enhetens RECON-flöde: du skapar det, ser till att de andra CP-användarna prenumererar och bearbetar sedan inkommande observationer och skickar de bearbetade markörerna tillbaka till flödet.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Hitta Data Sync-verktygen",
+          "layout": "image-bottom",
+          "html": "<p>I WinTAK:s verktygsfält innehåller <strong>Home tab</strong> Data Sync-verktygen.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/75592f7d41559b8e.webp",
+              "width": 232,
+              "height": 140
+            }
+          ]
+        },
+        {
+          "title": "Skapa ett nytt flöde",
+          "layout": "image-bottom",
+          "html": "<p>När du arbetar som ledningsplats är det du som skapar flödena. Tryck på <strong>New Feed</strong>.</p>\n<p>På ledningsplatsen skapar <em>en</em> användare flödena; de övriga CP-användarna och resten av enheten prenumererar på dem.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/efb43e3ffc065395.webp",
+              "width": 389,
+              "height": 395
+            }
+          ]
+        },
+        {
+          "title": "Namnge flödet",
+          "layout": "image-bottom",
+          "html": "<p>Skapa flödet med:</p>\n<ul>\n<li><strong>Name</strong>: Recon</li>\n<li><strong>Group</strong>: tak_default</li>\n<li><strong>Default Role</strong>: Read Only</li>\n</ul>\n<p>Ändra standardgruppen till <strong>tak_default</strong> och standardrollen till <strong>Read Only</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/f83d0813c902f8a7.webp",
+              "width": 428,
+              "height": 140
+            }
+          ]
+        },
+        {
+          "title": "Flödet skapat",
+          "layout": "image-bottom",
+          "html": "<p>Flödet skapas och visas omedelbart som prenumererat i skaparens <strong>Data Sync</strong>-meny. De andra ledningsplatsanvändarna prenumererar nu på det (vanligtvis <strong>RECON</strong>-flödet).</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/b5780912cf35c46f.webp",
+              "width": 286,
+              "height": 106
+            }
+          ]
+        },
+        {
+          "title": "Prenumerera: ladda ner och håll synkroniserat",
+          "layout": "image-bottom",
+          "html": "<p>I flödets vy väljer de andra CP-användarna <strong>Download and stay synced</strong>. Flödet visas därefter i deras <strong>Data Sync</strong>-meny.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/b7ce4ae16f1f3392.webp",
+              "width": 286,
+              "height": 170
+            }
+          ]
+        },
+        {
+          "title": "Ta emot aviseringar",
+          "layout": "image-bottom",
+          "html": "<p>WinTAK visar aviseringar som dessa när nya observationer anländer.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/fe52afd7a11b7b6b.webp",
+              "width": 318,
+              "height": 78
+            }
+          ]
+        },
+        {
+          "title": "Öppna Notifications-vyn",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på symbolen <strong>yellow flag</strong> för att öppna <strong>Notifications</strong>-vyn. Den listar mottagna aviseringar — bearbeta var och en enligt nedan och skicka den sedan till RECON-flödet.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/b623460171585dec.webp",
+              "width": 428,
+              "height": 366
+            }
+          ]
+        },
+        {
+          "title": "Öppna en observation",
+          "layout": "image-bottom",
+          "html": "<p>Observationer öppnas och bearbetas från kartan. Öppna den observation du vill bearbeta.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/96d5e675a58aed7a.webp",
+              "width": 428,
+              "height": 420
+            }
+          ]
+        },
+        {
+          "title": "Öppna Marker Details",
+          "layout": "image-bottom",
+          "html": "<p>Välj ikonen <strong>Marker Details</strong> från cirkelmenyn (till höger om papperskorgen). Vyn <strong>Marker Details</strong> öppnas.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/9c54e2777c473095.webp",
+              "width": 256,
+              "height": 622
+            }
+          ]
+        },
+        {
+          "title": "Anteckna din slutsats",
+          "layout": "text",
+          "html": "<p>När du antecknar tolkningar, håll din slutsats åtskild från den ursprungliga beskrivningen — använd notationen <em>HQ CONCLUSION: (din bedömning)</em>.</p>\n<p>Tänk på OPSEC: lägg inte operativ fiendeinformation här — använd täcktermer.</p>",
+          "images": []
+        },
+        {
+          "title": "Ändra tillhörigheten",
+          "layout": "image-bottom",
+          "html": "<p>I Marker Details ändrar du observationens typ (okänd, vän, egen, neutral) så att den matchar din slutsats genom att trycka på <strong>Change Affiliation</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/3b49b9a861a5eae7.webp",
+              "width": 428,
+              "height": 162
+            }
+          ]
+        },
+        {
+          "title": "Välj den nya typen",
+          "layout": "text",
+          "html": "<p>Efter <strong>Change Affiliation</strong> öppnas <strong>Type menu</strong> — ställ in markören enligt din slutsats. Markören uppdateras därefter.</p>",
+          "images": []
+        },
+        {
+          "title": "Markera den som bearbetad",
+          "layout": "image-bottom",
+          "html": "<p>Lägg till en notation i markörens titel — ett <strong>understreck framför</strong> — för att visa att ledningsplatsen har bearbetat den.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/d8858a9075935f03.webp",
+              "width": 428,
+              "height": 144
+            }
+          ]
+        },
+        {
+          "title": "Besluta om omedelbar rapportering",
+          "layout": "text",
+          "html": "<p>Avgör om observationen är en <em>omedelbart rapporteringspliktig fråga</em>.</p>\n<p>VIKTIGT: om så är fallet, skicka en rapport med de föreskrivna meddelandeverktygen till de föreskrivna mottagarna — förlita dig inte enbart på flödet.</p>",
+          "images": []
+        },
+        {
+          "title": "Skicka markören till flödet",
+          "layout": "image-bottom",
+          "html": "<p>För att hela styrkan ska se den bearbetade markören, tryck på <strong>Send</strong> i Marker Details-menyn.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/02debf8302f606b3.webp",
+              "width": 270,
+              "height": 94
+            }
+          ]
+        },
+        {
+          "title": "Inkludera bilagor",
+          "layout": "image-bottom",
+          "html": "<p>Välj <strong>Yes</strong> på frågan <em>Include Attachments</em>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/aed016ed7c4e284a.webp",
+              "width": 428,
+              "height": 198
+            }
+          ]
+        },
+        {
+          "title": "Välj RECON-flödet",
+          "layout": "image-bottom",
+          "html": "<p>Menyn <strong>Send To</strong> öppnas till höger — skicka markören till <strong>RECON</strong>-flödet. Arbeta igenom varje bearbetad observation på samma sätt.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/3381ffe3725912b1.webp",
+              "width": 428,
+              "height": 290
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

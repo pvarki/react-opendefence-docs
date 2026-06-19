@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "55ddc3bc-308c-4f64-9bee-9b77d6b2908a",
+  "slug": "kommandoplats-NyhTmwJFEe",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Kommandoplats",
+  "breadcrumb": [
+    "Platforms",
+    "TAK Tracker - Android",
+    "ANVÄNDNING PER ROLL",
+    "Kommandoplats"
+  ],
+  "createdAt": "2026-06-18T19:44:16.629Z",
+  "updatedAt": "2026-06-18T20:27:00.153Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/command-post-t2fdgSrk3R",
+    "fi": "/fi/guides/tak-guide/komentopaikka-BLzd0iLjOh",
+    "sv": "/sv/guides/tak-guide/kommandoplats-NyhTmwJFEe"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>(Den här fliken ska inte visas)</p>"
+    }
+  ]
+}

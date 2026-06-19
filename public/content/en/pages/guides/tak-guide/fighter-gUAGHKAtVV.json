@@ -6,14 +6,19 @@
   "locale": "en",
   "title": "Fighter",
   "breadcrumb": [
-    "TAK Clients",
+    "Platforms",
     "TAK Tracker - Android",
-    "Usage by Role",
+    "USAGE BY ROLE",
     "Fighter"
   ],
   "createdAt": "2025-12-20T00:47:06.902Z",
-  "updatedAt": "2026-02-21T08:40:54.745Z",
+  "updatedAt": "2026-06-18T20:26:57.519Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/fighter-gUAGHKAtVV",
+    "fi": "/fi/guides/tak-guide/taistelija-jkvrnZXkli",
+    "sv": "/sv/guides/tak-guide/soldat-Mq5QiVrMr1"
+  },
   "blocks": [
     {
       "type": "html",

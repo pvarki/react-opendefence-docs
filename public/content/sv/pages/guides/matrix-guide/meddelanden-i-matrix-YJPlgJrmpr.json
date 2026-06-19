@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "id": "b3a6e51c-9cb3-4f09-b855-2c948da60ffe",
+  "slug": "meddelanden-i-matrix-YJPlgJrmpr",
+  "collection": "guides/matrix-guide",
+  "locale": "sv",
+  "title": "Meddelanden i Matrix",
+  "breadcrumb": [
+    "Grundfunktioner",
+    "Meddelanden i Matrix"
+  ],
+  "createdAt": "2026-06-18T20:34:12.228Z",
+  "updatedAt": "2026-06-18T20:37:54.876Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/matrix-guide/messaging-in-matrix-MFNQHEi50M",
+    "fi": "/fi/guides/matrix-guide/viestinta-matrixissa-3mOCfe4cEL",
+    "sv": "/sv/guides/matrix-guide/meddelanden-i-matrix-YJPlgJrmpr"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Element täcker alla dina meddelandebehov — text, röstmeddelanden, samtal och video. Här är vad du kan göra när du har loggat in.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Meddelanden i Element",
+          "layout": "image-bottom",
+          "html": "<p>Element stöder textmeddelanden, röstmeddelanden, röst- och videosamtal samt videokonferenser. Dessa fungerar i vilket rum eller direktmeddelandekonversation som helst.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/058da610d673915a.webp",
+              "width": 2134,
+              "height": 1354
+            }
+          ]
+        },
+        {
+          "title": "Space och rum",
+          "layout": "image-bottom",
+          "html": "<p>Du ansluter automatiskt till den här serverns Space som medlem. Space inkluderar alla serverns medlemmar och har förskapade rum, så du kan börja kommunicera direkt.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/5622ffc866250369.webp",
+              "width": 2140,
+              "height": 1356
+            }
+          ]
+        },
+        {
+          "title": "Meddelanden i rum",
+          "layout": "image-bottom",
+          "html": "<p>Skicka meddelanden i vilket rum som helst eller starta ett direktmeddelande med andra medlemmar. Du kan också skapa nya rum som antingen är upptäckbara av alla Space-medlemmar eller endast kan anslutas med inbjudan.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/d610ca2877e8006f.webp",
+              "width": 2132,
+              "height": 1346
+            }
+          ]
+        },
+        {
+          "title": "Röst- och videosamtal",
+          "layout": "image-bottom",
+          "html": "<p>Starta ett röst- eller videosamtal direkt från vilket rum eller direktmeddelande som helst — bekvämt för snabba konversationer utan att behöva ställa in ett möte.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/38ff9ddc1744c800.webp",
+              "width": 1906,
+              "height": 1356
+            }
+          ]
+        },
+        {
+          "title": "Gruppvideosamtal",
+          "layout": "image-bottom",
+          "html": "<p>Element stöder högkvalitativa gruppvideosamtal i rum — fullt likvärdiga med Microsoft Teams, Skype eller andra liknande tjänster.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/ea3d84d1cd630aba.webp",
+              "width": 2140,
+              "height": 1360
+            }
+          ]
+        },
+        {
+          "title": "Kryptering",
+          "layout": "image-bottom",
+          "html": "<p>En central funktion i Matrix är stark end-to-end-kryptering: utomstående — inklusive servern själv — kan inte komma åt dina privata meddelanden eller gruppmeddelanden.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/878eba1d705d4ba7.webp",
+              "width": 2254,
+              "height": 1442
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

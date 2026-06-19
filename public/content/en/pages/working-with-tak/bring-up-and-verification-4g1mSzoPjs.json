@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "id": "4894fe52-07da-4392-9191-d162fa215e41",
+  "slug": "bring-up-and-verification-4g1mSzoPjs",
+  "collection": "working-with-tak",
+  "locale": "en",
+  "title": "Bring-up and verification",
+  "breadcrumb": [
+    "Wire up two Federation Hubs (IaC)",
+    "Bring-up and verification"
+  ],
+  "createdAt": "2026-06-17T20:26:00.064Z",
+  "updatedAt": "2026-06-19T14:18:55.519Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Order of operations",
+      "id": "order-of-operations"
+    },
+    {
+      "depth": 2,
+      "text": "Verify without clicking",
+      "id": "verify-without-clicking"
+    },
+    {
+      "depth": 2,
+      "text": "Idempotent reconcile",
+      "id": "idempotent-reconcile"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>A hub-to-hub link is a thin layer on top of two working hub domains. Bring each domain up with the single-hub guide, then add the inter-hub link. We have not demoed this, so treat the order below as the intended sequence to validate.</p>\n<h2 id=\"order-of-operations\"><a href=\"#order-of-operations\">Order of operations</a></h2>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span>1. Per domain     stand up HUB A + its servers, and HUB B + its servers,</span></span>\n<span class=\"line\"><span>                  each via the single-hub IaC guide (certs, /ca_public trust,</span></span>\n<span class=\"line\"><span>                  Keycloak tak_ groups, templated configs + policy)</span></span>\n<span class=\"line\"><span>2. Shared groups  ensure the shared taxonomy (tak_SHARED_COP, …) exists in every</span></span>\n<span class=\"line\"><span>                  deployment's Keycloak across both domains</span></span>\n<span class=\"line\"><span>3. Cross-trust    fan HUB A CA → HUB B fed-truststore, and HUB B CA → HUB A fed-truststore</span></span>\n<span class=\"line\"><span>4. Inter-hub link add to each hub's policy: peer-hub CA Group + (one side) an Outgoing</span></span>\n<span class=\"line\"><span>                  node to peer:9102 + edges filtered to Allowed Groups = SHARED_COP;</span></span>\n<span class=\"line\"><span>                  re-apply both policies</span></span>\n<span class=\"line\"><span>5. Connect        the initiating hub connects to peer:9102 → mTLS succeeds → both policies admit</span></span>\n<span class=\"line\"><span>6. Verify         assert the inter-hub link + selective cross-domain flow (below)</span></span></code></pre>",
+      "lang": "plaintext"
+    },
+    {
+      "type": "html",
+      "html": "<p>Steps 1 and 2 are the prerequisite domains; 3 and 4 are the only new IaC; 5 is automatic.</p>\n<h2 id=\"verify-without-clicking\"><a href=\"#verify-without-clicking\">Verify without clicking</a></h2>\n<ul>\n<li>Inter-hub link up. On each hub's Active Connections, the peer appears (one side as a hub-server, the other as a hub-client). Script the check via the policy-manager endpoint behind the UI.</li>\n<li>Shared data crosses domains. Inject a <code>SHARED_COP</code>-tagged event on a server under HUB A and assert it reaches a server under HUB B, and back. Use a probe client or the Marti API.</li>\n<li>Local data does not cross. Inject a <code>*_LOCAL</code> event in domain A and assert it never appears in domain B, which proves the inter-hub filter holds at the boundary.</li>\n</ul>\n<p>Gate the pipeline on all three.</p>\n<h2 id=\"idempotent-reconcile\"><a href=\"#idempotent-reconcile\">Idempotent reconcile</a></h2>\n<p>The inter-hub link is derived state too:</p>\n<ul>\n<li>Add a hub: cross-trust its CA with the central hub, add a peer-hub CA Group plus a filtered edge to the central hub's policy, and re-apply. The new domain joins.</li>\n<li>Change what is shared: edit the allowed/disallowed groups on the inter-hub edges and re-apply on both hubs.</li>\n<li>Rotate a hub CA: re-issue via RASENMAEHER, re-fan the new PEM to the peer's truststore, and re-apply.</li>\n</ul>\n<p>→ Next: <a href=\"/en/working-with-tak/scaling-to-many-groups-5hLiku0O4u\">Scaling to many groups</a>.</p>"
+    }
+  ]
+}

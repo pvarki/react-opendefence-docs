@@ -12,8 +12,13 @@
     "Sending a Marker"
   ],
   "createdAt": "2026-06-14T10:36:11.851Z",
-  "updatedAt": "2026-06-16T10:12:54.991Z",
+  "updatedAt": "2026-06-18T20:13:50.775Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/sending-a-marker-tbLPq64DLE",
+    "fi": "/fi/guides/tak-guide/merkin-lahettaminen-VFvhZ3yMfm",
+    "sv": "/sv/guides/tak-guide/skicka-en-markor-4WZtvP60ax"
+  },
   "blocks": [
     {
       "type": "slideset",

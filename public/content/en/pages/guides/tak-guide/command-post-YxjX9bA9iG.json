@@ -6,13 +6,18 @@
   "locale": "en",
   "title": "Command Post",
   "breadcrumb": [
-    "TAK Clients",
+    "Platforms",
     "iTAK",
     "Usage by Role",
     "Command Post"
   ],
   "createdAt": "2025-12-05T22:06:10.535Z",
-  "updatedAt": "2025-12-05T22:06:10.535Z",
+  "updatedAt": "2026-06-18T20:25:59.992Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/command-post-YxjX9bA9iG",
+    "fi": "/fi/guides/tak-guide/komentopaikka-7qMzKheq4Z",
+    "sv": "/sv/guides/tak-guide/kommandoplats-nXnVNhBp5i"
+  },
   "blocks": []
 }

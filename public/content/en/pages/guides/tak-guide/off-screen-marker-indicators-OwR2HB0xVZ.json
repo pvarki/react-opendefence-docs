@@ -13,8 +13,13 @@
     "Off-Screen Marker Indicators"
   ],
   "createdAt": "2026-06-15T19:41:23.270Z",
-  "updatedAt": "2026-06-15T20:53:47.674Z",
+  "updatedAt": "2026-06-18T20:19:34.800Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/off-screen-marker-indicators-OwR2HB0xVZ",
+    "fi": "/fi/guides/tak-guide/karttanakyman-ulkopuolisten-merkkien-ilmaisimet-vv4SxScO6n",
+    "sv": "/sv/guides/tak-guide/indikatorer-for-markorer-utanfor-skarmen-74d7IKYhZz"
+  },
   "blocks": [
     {
       "type": "html",

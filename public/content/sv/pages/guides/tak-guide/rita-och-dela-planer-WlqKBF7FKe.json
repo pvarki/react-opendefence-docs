@@ -1,0 +1,160 @@
+{
+  "schemaVersion": 1,
+  "id": "ffe9e5e3-c1a6-4645-a85c-97917118188b",
+  "slug": "rita-och-dela-planer-WlqKBF7FKe",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Rita och dela planer",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "Avancerade kärnfunktioner",
+    "Rita och dela planer"
+  ],
+  "createdAt": "2026-06-18T19:26:18.204Z",
+  "updatedAt": "2026-06-18T20:14:01.507Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/draw-share-plans-fxjT3hDZ5p",
+    "fi": "/fi/guides/tak-guide/suunnitelmien-piirtaminen-ja-jakaminen-6PjOAXGBff",
+    "sv": "/sv/guides/tak-guide/rita-och-dela-planer-WlqKBF7FKe"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Rita och dela planer",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>ATAK har de militära ritverktyg du behöver. Börja med att öppna huvudmenyn (hamburgermenyn).</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/64805fb53e2f9091.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Välj ritverktyg",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Leta efter symbolen för ritverktyg.</li>\n<li>Om den inte syns i din meny, tryck på den gulaktiga pennan och aktivera ritverktygen i din meny.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/290e2d69343f71ff.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Ritverktyg",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Välj det verktyg som passar ditt behov.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/34645de4727b037d.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Rita en marschrutt (1)",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>I vårt exempel ritar vi en marschrutt med verktyget Point-by-point line.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/0a4cc7a796110cd6.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Rita en marschrutt (2)",
+          "layout": "image-bottom",
+          "html": "",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/5022607bb448e50b.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Rita en marschrutt (3)",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Vi trycker på End för att slutföra figuren.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/91f711a157b3211f.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Redigera och visa detaljer",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Tryck på figuren för att öppna menyn. Tryck på Edit-ikonen för att redigera detaljerna.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/0227e6ec3eb8af18.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Visa detaljer",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Användbart för en marschrutt: visar linjens längd.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/4aec2c6d6b1c6305.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Redigera en figur",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Bläddra nedåt i Edit-menyn för att ändra linjens färg, tjocklek och stil.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/e53b25d163eb7f4f.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Andra verktyg",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Förutom ritverktygen har Point Dropper också andra symboler än militära, för din bekvämlighet.</li>\n<li>Använd t.ex. symboluppsättningen \"Spot Map\" för att rita punkter.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/29b64f26a183afb7.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Klart",
+          "layout": "text",
+          "html": "<ul>\n<li>Du kan stänga den här guiden.</li>\n</ul>",
+          "images": []
+        }
+      ]
+    },
+    {
+      "type": "html",
+      "html": "<p>När du har testat Rita och dela planer med gott resultat, fortsätt till <a href=\"/doc/7df31ecb-1092-4d8c-9013-b168feec84ba\">Geofences</a></p>"
+    }
+  ]
+}

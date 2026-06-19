@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 1,
+  "id": "ad4d001c-afab-4a49-91c2-06757c870159",
+  "slug": "lagg-till-i-flode-med-lasso-wA9WruroCt",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Lägg till i flöde med Lasso",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "Avancerade kärnfunktioner",
+    "Lägg till i flöde med Lasso"
+  ],
+  "createdAt": "2026-06-18T19:26:21.491Z",
+  "updatedAt": "2026-06-18T20:14:42.094Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/lasso-to-add-into-feed-Mt0Vykodea",
+    "fi": "/fi/guides/tak-guide/lassolla-lisaaminen-syotteeseen-a6typO1eEd",
+    "sv": "/sv/guides/tak-guide/lagg-till-i-flode-med-lasso-wA9WruroCt"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Använd Lasso",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Lasso-verktyget är praktiskt för att snabbt lägga till dina ritningar i ett flöde (Feed).</li>\n<li>Börja med att gå till huvudmenyn.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/64805fb53e2f9091.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Välj Lasso",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Välj <strong>Lasso</strong> i huvudverktygsfältet.</li>\n<li>Om Lasso saknas i ditt huvudverktygsfält, tryck på den gula pennikonen för att hitta och aktivera det.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/88424a3e47d76a8e.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Använd Lasso",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Ringa in det du vill skicka med Lasso.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/24d0e431bbea8113.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Vad ska inkluderas?",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Lasso frågar vad du vill inkludera.</li>\n<li>I det här exemplet väljer vi markörer (Markers), eftersom vi redan har skickat den formen till målflödet.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/9509cf3e03322baa.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Välj Lasso-åtgärd",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Send (to Feed) är vad vi vanligtvis vill göra. Välj det.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/4ab99bdb72063eaa.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Välj mottagare",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Mottagare erbjuds. Tryck på Feeds för att välja vilket flöde detta ska gå till.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/6fa4e1cccb2792c1.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Lista över flöden",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>De flöden som du har prenumererat på och kan skriva till visas i listan.</li>\n<li>I det här exemplet har vi ringat in FRAGO3:s planritning med Lasso, så vi skickar den till dess flöde.</li>\n<li>Dina markörer och ritningar delas nu via ett flöde (Feed).</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/ae82441be003c278.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "19ca65cb-0cf0-4552-af3f-3050978973a8",
+  "slug": "asetukset-ja-valinnat-kNYxhiyRlR",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Asetukset ja valinnat",
+  "breadcrumb": [
+    "Platforms",
+    "TAK Tracker - Android",
+    "LISÄOMINAISUUDET",
+    "Asetukset ja valinnat"
+  ],
+  "createdAt": "2026-06-18T19:44:14.111Z",
+  "updatedAt": "2026-06-18T20:26:52.427Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/options-settings-XyYcsDAVCo",
+    "fi": "/fi/guides/tak-guide/asetukset-ja-valinnat-kNYxhiyRlR",
+    "sv": "/sv/guides/tak-guide/alternativ-och-installningar-0TFdbCddgQ"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Asetukset-ikkunassa määritetään, miten näyt verkossa ja miten TAK Tracker toimii. Avaa se milloin tahansa muuttaaksesi kutsutunnustasi, liittymistäsi tai näkymääsi.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Avaa asetukset",
+          "layout": "image-bottom",
+          "html": "<p>Avaa Connection Settings -ikkuna napauttamalla <strong>Settings</strong>. Täältä voit:</p>\n<ul>\n<li>Muuttaa <strong>callsign</strong>-tunnustasi, <strong>team color</strong> -väriä tai <strong>role</strong>-roolia</li>\n<li>Liittyä <strong>username and password</strong> -tunnuksilla tai tuoda <strong>SSL certificate</strong> -varmenteen</li>\n<li>Ottaa käyttöön <strong>Service on Boot</strong>, jolloin TAK Tracker käynnistyy aina laitteen käynnistyessä</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/c3fdf294917ad30f.webp",
+              "width": 179,
+              "height": 234
+            }
+          ]
+        },
+        {
+          "title": "Siisti näkymä",
+          "layout": "text",
+          "html": "<p>Kaksi asetusta määrittää, kuinka paljon pääikkunasta näkyy:</p>\n<ul>\n<li><strong>Hide Quit Button</strong> — poistaa Quit-painikkeen; näytä se uudelleen poistamalla valinta kohdasta <strong>Settings</strong></li>\n<li><strong>Limited View Mode</strong> — näyttää vain yhteyslaatikon; poista valinta kohdasta <strong>Settings</strong> näyttääksesi kaikki laatikot uudelleen</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "Lukitse asetukset ja tuo varmenteet",
+          "layout": "text",
+          "html": "<ul>\n<li>Aseta asetuksiasi suojaava salasana napauttamalla työkalupalkin <strong>Lock</strong>-painiketta</li>\n<li>Liity tuomalla SSL-varmenteen <code>.zip</code>-tiedosto napauttamalla työkalupalkin <strong>Import</strong>-painiketta</li>\n</ul>\n<p>Jos TAK Trackerille ei ole myönnetty pääsyä Androidin tiedostojärjestelmään, tähän avautuu kehote sen sallimiseksi.</p>",
+          "images": []
+        }
+      ]
+    }
+  ]
+}

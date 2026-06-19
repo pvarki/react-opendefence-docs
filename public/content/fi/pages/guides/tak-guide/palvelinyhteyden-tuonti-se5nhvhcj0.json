@@ -1,0 +1,118 @@
+{
+  "schemaVersion": 1,
+  "id": "f4610ffd-e0f4-42cb-938f-5bde18060dfa",
+  "slug": "palvelinyhteyden-tuonti-se5nhvhcj0",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Palvelinyhteyden tuonti",
+  "breadcrumb": [
+    "Platforms",
+    "TAK Tracker - Android",
+    "ALOITA JA YHDISTÄ",
+    "Palvelinyhteyden tuonti"
+  ],
+  "createdAt": "2026-06-18T19:39:05.193Z",
+  "updatedAt": "2026-06-18T20:26:36.775Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/importing-server-connection-URmd6F0UU5",
+    "fi": "/fi/guides/tak-guide/palvelinyhteyden-tuonti-se5nhvhcj0",
+    "sv": "/sv/guides/tak-guide/importera-serveranslutning-yxBJHAG8As"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Avaa TAK Tracker",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Etsi TAK Tracker -kuvake ja käynnistä sovellus.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/8d5d065c3a7b66c6.webp",
+              "width": 225,
+              "height": 225
+            }
+          ]
+        },
+        {
+          "title": "Avaa TAK Tracker -sovellus",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Avaa Settings oikeasta yläkulmasta.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/f188b0342fad947c.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "Tuo palvelinpaketti 1",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Valitse tuontityökalu oikeasta yläkulmasta.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/5f9d159d3e0512e5.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "Tuo palvelinpaketti 2",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Salli TAK Trackerille pääsy laitteen tiedostoihin.</li>\n<li>Callsign-Server-Instance.zip</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/9387df0a4aa077ea.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "Tuo palvelinpaketti 3",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Siirry laitteen Downloads-kansioon ja valitse Deploy App -paketti.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/7aa40b9621466c3a.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "Tarkista asetukset",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Tarkista, että asetukset on tuotu TAK Trackeriin</li>\n<li>Valitse Done</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/a669809e16da962d.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "Avaa TAK Tracker -sovellus",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Laitteessa pitäisi nyt lukea Server: Connected.</li>\n</ul>\n<hr>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/b1b8bd8adcaaae83.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "html",
+      "html": "<p>Kun TAK Tracker on yhdistetty palvelimeen, jatka kohtaan…</p>"
+    }
+  ]
+}

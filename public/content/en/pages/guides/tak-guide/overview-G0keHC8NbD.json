@@ -12,8 +12,13 @@
     "Overview"
   ],
   "createdAt": "2025-12-05T22:05:58.824Z",
-  "updatedAt": "2026-06-14T14:30:47.115Z",
+  "updatedAt": "2026-06-18T20:23:55.736Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/overview-G0keHC8NbD",
+    "fi": "/fi/guides/tak-guide/opendefence-vakiomalli-x5SMy8a7WS",
+    "sv": "/sv/guides/tak-guide/opendefence-standardmodellen-Rlu6i4aeXg"
+  },
   "blocks": [
     {
       "type": "slideset",

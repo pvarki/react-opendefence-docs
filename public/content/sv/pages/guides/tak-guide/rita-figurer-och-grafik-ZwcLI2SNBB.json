@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "id": "7318ebca-10da-498c-80e1-56c3ce41f05f",
+  "slug": "rita-figurer-och-grafik-ZwcLI2SNBB",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Rita figurer och grafik",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "Avancerade kärnfunktioner",
+    "Rita figurer och grafik"
+  ],
+  "createdAt": "2026-06-18T19:26:20.281Z",
+  "updatedAt": "2026-06-18T20:14:39.053Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/draw-shapes-graphics-OSECv6soAB",
+    "fi": "/fi/guides/tak-guide/piirra-muotoja-ja-grafiikkaa-xS2vkzkOyP",
+    "sv": "/sv/guides/tak-guide/rita-figurer-och-grafik-ZwcLI2SNBB"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Med ritverktygen kan du märka ut figurer, frihandsskisser och briefinggrafik på kartan. Skapa en figur och tryck sedan på den för att öppna dess radialmeny och <strong>Details</strong>.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Rita en cirkel eller ellips",
+          "layout": "image-bottom",
+          "html": "<p>Välj ikonen <strong>Circle</strong> eller <strong>Ellipse</strong>, tryck på mittpunkten och tryck sedan igen för att ange radien eller kanten. Öppna <strong>Details</strong> för att ange exakt radie, ringar, färg och linjetjocklek; <strong>Label</strong> och <strong>Center</strong> slår på och av markörerna på kartan.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/a0cbee814e6ff8f8.webp",
+              "width": 400,
+              "height": 184
+            }
+          ]
+        },
+        {
+          "title": "Rita en rektangel",
+          "layout": "image-bottom",
+          "html": "<p>Välj ikonen <strong>Rectangle</strong> och tryck sedan på tre hörn för att ange bredd, längd och djup. Bocka i <strong>Tactical Overlay</strong> i <strong>Details</strong> för att färgkoda strukturen: vitt är framsidan, svart baksidan.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/41d7528587fa2de7.webp",
+              "width": 480,
+              "height": 233
+            }
+          ]
+        },
+        {
+          "title": "Rita en friformspolygon eller polylinje",
+          "layout": "image-bottom",
+          "html": "<p>Välj ikonen <strong>Free Form</strong> och tryck för att placera varje hörnpunkt. Tryck på den första hörnpunkten för att sluta en polygon, eller välj <strong>End Shape</strong> för en öppen polylinje. Använd <strong>Undo</strong> för att ta bort den senaste länken.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/8fd4734675824459.webp",
+              "width": 480,
+              "height": 233
+            }
+          ]
+        },
+        {
+          "title": "Skissa på frihand med Telestrate",
+          "layout": "image-bottom",
+          "html": "<p>Välj ikonen <strong>Telestrate</strong> för att rita på frihand med ett finger eller en penna; kartrullningen är låst medan verktyget är på. Välj <strong>Undo</strong> för att ta bort det senaste draget, eller <strong>End</strong> för att spara skissen som en enda multipolylinje.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/149a6b28edd88c00.webp",
+              "width": 482,
+              "height": 212
+            }
+          ]
+        },
+        {
+          "title": "Placera briefinggrafik",
+          "layout": "image-bottom",
+          "html": "<p>Briefinggrafik och taktiska symboler placeras som vanliga figurer: välj symboltyp och rita den sedan på kartan. Den valda typen visas i figurens <strong>Details</strong>-panel, där du kan ändra eller rensa den.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/ca6c525dba920195.webp",
+              "width": 427,
+              "height": 235
+            }
+          ]
+        },
+        {
+          "title": "Lägg till en minsta säkerhetsavståndszon",
+          "layout": "image-bottom",
+          "html": "<p>På en placerad figur väljer du <strong>Minimum Safe Distance</strong> från dess radialmeny. Ange <strong>Range</strong> och bocka i <strong>Enabled</strong> för att rita en buffertzon runt figurens kant. Spara den i <strong>Favorites</strong> med <strong>+</strong> för att återanvända den på andra figurer.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/69b3e54222d145f3.webp",
+              "width": 311,
+              "height": 171
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

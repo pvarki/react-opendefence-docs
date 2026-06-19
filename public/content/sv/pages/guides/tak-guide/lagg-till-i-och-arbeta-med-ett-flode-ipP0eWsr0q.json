@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "id": "08027dac-5060-4537-9a67-68a971f1c212",
+  "slug": "lagg-till-i-och-arbeta-med-ett-flode-ipP0eWsr0q",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Lägg till i och arbeta med ett flöde",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "Avancerade kärnfunktioner",
+    "Lägg till i och arbeta med ett flöde"
+  ],
+  "createdAt": "2026-06-18T19:26:17.502Z",
+  "updatedAt": "2026-06-18T20:14:00.092Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/add-to-work-a-feed-QUjMOBwISe",
+    "fi": "/fi/guides/tak-guide/lisaa-syotteeseen-ja-kayta-sita-zgUEPZIdvs",
+    "sv": "/sv/guides/tak-guide/lagg-till-i-och-arbeta-med-ett-flode-ipP0eWsr0q"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>När du äger ett flöde eller har gått med i ett är instrumentpanelen platsen där du lägger till innehåll och håller det synkroniserat.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Öppna flödets instrumentpanel",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på ett flöde för att öppna dess instrumentpanel.</p>\n<ul>\n<li>Verktygen längst upp är <strong>Add Items</strong>, <strong>Timeline</strong>, <strong>Download</strong>, <strong>Feed Settings</strong> och <strong>Search</strong>.</li>\n<li>Objekten är grupperade i <strong>Map Items</strong>, <strong>Photos</strong> och <strong>Files</strong>.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/1dca104e83b4b195.webp",
+              "width": 800,
+              "height": 662
+            }
+          ]
+        },
+        {
+          "title": "Lägg till objekt i ett flöde",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på <strong>Add Items</strong> och välj sedan hur du vill lägga till: <strong>Map Select</strong>, <strong>Overlays</strong>, <strong>File Select</strong> eller <strong>User Log</strong>.</p>\n<ul>\n<li>Samma meny har <strong>Invite</strong> (lägg till lagkamrater) och <strong>Geofence</strong> — alla vars markör korsar ett flödes geofence bjuds in automatiskt.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/f7be9455c9ab8fce.webp",
+              "width": 800,
+              "height": 415
+            }
+          ]
+        },
+        {
+          "title": "Uppdatera delade objekt",
+          "layout": "image-bottom",
+          "html": "<p>Flytta eller redigera ett delat objekt så ombeds du att publicera (<strong>publish</strong>) ändringen.</p>\n<ul>\n<li>Ändrade objekt visas i <strong>rött</strong>; tryck på <strong>Mark Read</strong> för att rensa dem.</li>\n<li>Om två personer redigerar samma objekt offline låter en konfliktlösningsdialog dig behålla den version du vill ha.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/27581627618d5542.webp",
+              "width": 800,
+              "height": 664
+            }
+          ]
+        },
+        {
+          "title": "Ta bort eller avprenumerera ett flöde",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på <strong>Delete</strong> på ett flöde och välj <strong>Unsubscribe</strong> (sluta ta emot uppdateringar, behåll innehåll), <strong>Delete local content</strong> eller <strong>Delete from server</strong> (endast ägare). Skjut <strong>båda</strong> reglagen till låst läge och bekräfta sedan.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/5e8d16730da02067.webp",
+              "width": 404,
+              "height": 253
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

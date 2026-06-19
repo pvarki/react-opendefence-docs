@@ -12,8 +12,13 @@
     "Using applications"
   ],
   "createdAt": "2026-06-13T22:59:18.455Z",
-  "updatedAt": "2026-06-13T22:59:18.455Z",
+  "updatedAt": "2026-06-18T20:38:55.528Z",
   "headings": [],
+  "translations": {
+    "en": "/en/deploy-app/using-applications-FFuT98Qlcv",
+    "fi": "/fi/deploy-app/sovellusten-kayttaminen-AZUWkin399",
+    "sv": "/sv/deploy-app/anvanda-applikationer-TmM85VECUH"
+  },
   "blocks": [
     {
       "type": "slideset",

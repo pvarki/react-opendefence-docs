@@ -10,8 +10,13 @@
     "What is TAK?"
   ],
   "createdAt": "2026-06-13T23:47:59.586Z",
-  "updatedAt": "2026-06-14T08:53:34.806Z",
+  "updatedAt": "2026-06-18T20:12:56.187Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/what-is-tak-Vy8mUPLS87",
+    "fi": "/fi/guides/tak-guide/mika-on-tak-u19DIbyqfY",
+    "sv": "/sv/guides/tak-guide/vad-ar-tak-Y5ZYfcXyh8"
+  },
   "blocks": [
     {
       "type": "slideset",

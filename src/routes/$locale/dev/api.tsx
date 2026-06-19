@@ -22,11 +22,14 @@ export interface SpecManifest {
 }
 
 // Scalar is a heavy chunk: loaded only on this route, bundled (not CDN) so
-// the reference works in air-gapped deployments.
+// the reference works in air-gapped deployments. Its stylesheet is imported
+// here (not globally) so it stays in this lazy chunk — without it the
+// reference renders completely unstyled (giant icons, no layout).
 const ApiReference = lazy(() =>
-  import("@scalar/api-reference-react").then((m) => ({
-    default: m.ApiReferenceReact,
-  })),
+  Promise.all([
+    import("@scalar/api-reference-react"),
+    import("@scalar/api-reference-react/style.css"),
+  ]).then(([m]) => ({ default: m.ApiReferenceReact })),
 );
 
 export const Route = createFileRoute("/$locale/dev/api")({

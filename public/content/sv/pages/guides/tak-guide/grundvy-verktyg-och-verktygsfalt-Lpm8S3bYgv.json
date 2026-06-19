@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 1,
+  "id": "a9979711-9672-4008-bab3-331107520a07",
+  "slug": "grundvy-verktyg-och-verktygsfalt-Lpm8S3bYgv",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Grundvy, verktyg och verktygsfält",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "Grundläggande funktioner",
+    "Grundvy, verktyg och verktygsfält"
+  ],
+  "createdAt": "2026-06-18T19:25:14.515Z",
+  "updatedAt": "2026-06-18T20:13:45.763Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/basic-view-tools-and-toolbar-juXbYsGMih",
+    "fi": "/fi/guides/tak-guide/perusnakyma-tyokalut-ja-tyokalupalkki-5cY07BjmD4",
+    "sv": "/sv/guides/tak-guide/grundvy-verktyg-och-verktygsfalt-Lpm8S3bYgv"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Grundvy",
+          "layout": "image-bottom",
+          "html": "<p>Följande bilder visar dig ATAK:s grundläggande gränssnitt och betydelsen av de olika knapparna.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/458ff245c9efc6aa.webp",
+              "width": 1600,
+              "height": 900
+            }
+          ]
+        },
+        {
+          "title": "Grundläggande verktygsfält",
+          "layout": "image-bottom",
+          "html": "",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/9363adfff4357768.webp",
+              "width": 1600,
+              "height": 900
+            }
+          ]
+        },
+        {
+          "title": "Grundläggande verktyg 1",
+          "layout": "image-bottom",
+          "html": "",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/1fdd0d15f1c6d1cf.webp",
+              "width": 1600,
+              "height": 900
+            }
+          ]
+        },
+        {
+          "title": "Grundläggande verktyg 2",
+          "layout": "image-bottom",
+          "html": "",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/0e4e9f6fe6181a4a.webp",
+              "width": 1600,
+              "height": 900
+            }
+          ]
+        },
+        {
+          "title": "Kompass: North-Up vs Track-Up",
+          "layout": "image-bottom",
+          "html": "<p><strong>Compass</strong> sitter i det övre vänstra hörnet. Tryck en gång på den för att växla mellan <strong>North Up</strong> (norr stannar högst upp) och <strong>Track Up</strong> (kartan vrids efter din kurs så att den egna markören (Self-Marker) pekar framåt).</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/f62653e74f549bb8.webp",
+              "width": 142,
+              "height": 86
+            }
+          ]
+        },
+        {
+          "title": "Vrid kartan för hand",
+          "layout": "image-bottom",
+          "html": "<p>Tryck länge på <strong>Compass</strong> och välj <strong>Manual Orientation</strong>, dra sedan med två fingrar på kartan för att vrida den till valfri bäring.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/385e94853490e4e1.webp",
+              "width": 229,
+              "height": 84
+            }
+          ]
+        },
+        {
+          "title": "Lås kartans rotation",
+          "layout": "image-bottom",
+          "html": "<p>För att låsa kartan i dess aktuella vinkel, tryck länge på <strong>Compass</strong> och tryck på <strong>Manual Orientation</strong> igen. Hänglåsikonen bekräftar att orienteringen är låst; tryck en gång till för att låsa upp.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/1751fe73910cdd76.webp",
+              "width": 152,
+              "height": 56
+            }
+          ]
+        },
+        {
+          "title": "Byt skärmens orientering",
+          "layout": "image-bottom",
+          "html": "<p>Välj <strong>Orientation</strong> för att växla skärmen mellan liggande och stående läge, oberoende av hur du håller enheten. Att byta stänger eventuella öppna rullgardinsmenyer så att de ritas om korrekt.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/5498c3e67f68b52a.webp",
+              "width": 170,
+              "height": 336
+            }
+          ]
+        },
+        {
+          "title": "Justera ljusstyrkan för dag eller natt",
+          "layout": "image-bottom",
+          "html": "<p>Välj <strong>Brightness</strong> och använd reglaget för att dämpa eller höja kartans ljusstyrka för dagsljus eller svagt ljus. Endast kartan dämpas; markörer och rullgardinsmenyer förblir fullt synliga.</p>\n<p>När du har sett grundvyn, verktygsfältet och verktygen, fortsätt till <a href=\"/doc/6bf5c875-5082-4f7c-b28c-26b5eea8b0c5\">Blue force tracking</a></p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/fc88141492e86a6f.webp",
+              "width": 1275,
+              "height": 199
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

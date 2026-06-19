@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "id": "a8dcab49-1e6f-4223-b0b2-800ebd0bbb43",
+  "slug": "keycloak-groups-as-code-KGceqCKPVN",
+  "collection": "working-with-tak",
+  "locale": "en",
+  "title": "Keycloak groups as code",
+  "breadcrumb": [
+    "Wire up Deploy App TAK Servers via a Federation Hub (IaC)",
+    "Keycloak groups as code"
+  ],
+  "createdAt": "2026-06-17T20:25:57.495Z",
+  "updatedAt": "2026-06-19T14:18:52.180Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "How a group name travels",
+      "id": "how-a-group-name-travels"
+    },
+    {
+      "depth": 2,
+      "text": "Provision one taxonomy across all deployments",
+      "id": "provision-one-taxonomy-across-all-deployments"
+    },
+    {
+      "depth": 2,
+      "text": "Keep it deterministic",
+      "id": "keep-it-deterministic"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Federation filtering matches on group names. If the deployments don't share a consistent group taxonomy, \"share only the common operating picture\" quietly fails. Because you provision Keycloak, you can make the names consistent everywhere, so this is worth doing carefully.</p>\n<h2 id=\"how-a-group-name-travels\"><a href=\"#how-a-group-name-travels\">How a group name travels</a></h2>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span>Keycloak group  \"tak_SHARED_COP\"</span></span>\n<span class=\"line\"><span>      │  (RASENMAEHER LDAP backend exposes it under ou=groups…)</span></span>\n<span class=\"line\"><span>      ▼</span></span>\n<span class=\"line\"><span>TAK Server reads LDAP, strips the \"tak_\" prefix  →  group \"SHARED_COP\"</span></span>\n<span class=\"line\"><span>      │  (assigned to a connection via the cert CN → username → group lookup)</span></span>\n<span class=\"line\"><span>      ▼</span></span>\n<span class=\"line\"><span>Federation Hub edge filter matches  \"SHARED_COP\"</span></span></code></pre>",
+      "lang": "plaintext"
+    },
+    {
+      "type": "html",
+      "html": "<p>The <code>tak_</code> prefix and the strip come from Deploy App's <code>CoreConfig.tpl</code> LDAP settings (<code>groupprefix=\"CN=tak_\"</code>, and <code>groupNameExtractorRegex</code> removes it). So a Keycloak group <code>tak_SHARED_COP</code> becomes TAK group <code>SHARED_COP</code>, and the hub filters on <code>SHARED_COP</code>.</p>\n<h2 id=\"provision-one-taxonomy-across-all-deployments\"><a href=\"#provision-one-taxonomy-across-all-deployments\">Provision one taxonomy across all deployments</a></h2>\n<p>Define the shared group set once and have the pipeline create the same groups in each deployment's Keycloak. For a set of peer deployments sharing a common picture:</p>\n<table>\n<thead>\n<tr>\n<th>Keycloak group</th>\n<th>TAK group</th>\n<th>Purpose</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><code>tak_SHARED_COP</code></td>\n<td><code>SHARED_COP</code></td>\n<td>The shared common operating picture that crosses federation.</td>\n</tr>\n<tr>\n<td><code>tak_GROUP_A_LOCAL</code>, <code>tak_GROUP_B_LOCAL</code>, …</td>\n<td><code>GROUP_A_LOCAL</code>, …</td>\n<td>Each deployment's internal traffic, not federated.</td>\n</tr>\n</tbody>\n</table>\n<p>Then:</p>\n<ul>\n<li>Assign users to groups through Deploy App's enrollment and Keycloak group management. You do not touch TAK Server for this. Users in <code>tak_SHARED_COP</code> produce data tagged <code>SHARED_COP</code>.</li>\n<li>The hub edges use Allowed Groups = <code>SHARED_COP</code>, so only that picture crosses; each deployment's <code>*_LOCAL</code> traffic stays home (see <a href=\"/en/working-with-tak/the-federation-policy-as-code-iza8fDoAU8\">policy as code</a>).</li>\n</ul>\n<h2 id=\"keep-it-deterministic\"><a href=\"#keep-it-deterministic\">Keep it deterministic</a></h2>\n<ul>\n<li>Keep the group list in your IaC (a variable or module), not typed per environment.</li>\n<li>Create groups before users enroll, so assignments resolve.</li>\n<li>The names must match exactly across deployments; a federation filter only matches an identical name. (<code>__ANON__</code> is the default group and can be referenced explicitly if needed.)</li>\n</ul>\n<p>You can add finer-grained sharing later (for example <code>SHARED_FIRES</code>, <code>SHARED_MEDEVAC</code>). Each is another standardized Keycloak group plus an allowed-group on the relevant edge.</p>\n<p>→ Next: <a href=\"/en/working-with-tak/deploy-the-federation-hub-as-iac-pyaoAuGHbr\">Deploy the Federation Hub as IaC</a>.</p>"
+    }
+  ]
+}

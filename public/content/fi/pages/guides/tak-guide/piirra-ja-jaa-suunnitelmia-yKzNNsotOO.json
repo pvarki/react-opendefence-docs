@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "9a4df5b6-93a1-48e3-964e-1b34412c08d2",
+  "slug": "piirra-ja-jaa-suunnitelmia-yKzNNsotOO",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Piirrä ja jaa suunnitelmia",
+  "breadcrumb": [
+    "Platforms",
+    "WinTAK",
+    "EDISTYNEET YDINOMINAISUUDET",
+    "Piirrä ja jaa suunnitelmia"
+  ],
+  "createdAt": "2026-06-18T19:33:29.043Z",
+  "updatedAt": "2026-06-18T20:23:51.193Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/draw-share-plans-gUzuEffh5v",
+    "fi": "/fi/guides/tak-guide/piirra-ja-jaa-suunnitelmia-yKzNNsotOO",
+    "sv": "/sv/guides/tak-guide/rita-och-dela-planer-C7UNuLt8oq"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>WinTAKin piirtotyökaluilla voit hahmotella suunnitelmia — reittejä, alueita ja johtamistoimenpiteitä — ja jakaa ne yksikkösi kanssa syötteen kautta.</p>\n<blockquote>\n<p>Luonnos: kirjoitettu ilman kuvakaappauksia. Lisää WinTAKin piirtotyökalujen kuvakaappaukset, kun niitä on saatavilla.</p>\n</blockquote>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Avaa piirtotyökalut",
+          "layout": "text",
+          "html": "<p>Avaa piirtotyökalut WinTAKin työkalupalkista. Voit asettaa viivoja, reittejä, muotoja ja vapaalla kädellä piirrettyjä kuvioita suoraan kartalle.</p>",
+          "images": []
+        },
+        {
+          "title": "Piirrä reittejä ja alueita",
+          "layout": "text",
+          "html": "<p>Piirrä se, mitä suunnitelma vaatii — marssi- tai partioreitti (<strong>route</strong>), alue (<strong>area</strong>, monikulmio/ympyrä) sektoria tai maalia varten tai johtamistoimenpiteitä. Naksauta pisteet kartalle ja säädä niitä tarpeen mukaan.</p>",
+          "images": []
+        },
+        {
+          "title": "Nimeä ja muotoile",
+          "layout": "text",
+          "html": "<p>Anna jokaiselle piirrokselle selkeä nimi (<strong>name</strong>) ja aseta sen väri, jotta suunnitelma on luettavissa yhdellä silmäyksellä ja vastaa yksikkösi käytäntöjä.</p>",
+          "images": []
+        },
+        {
+          "title": "Jaa syötteeseen",
+          "layout": "text",
+          "html": "<p>Lähetä valmis suunnitelma <strong>Data Sync</strong> -syötteeseen (esimerkiksi PLAN-syötteeseen), jotta koko yksikkö saa sen ja pysyy ajan tasalla, kun päivität sitä.</p>",
+          "images": []
+        }
+      ]
+    }
+  ]
+}

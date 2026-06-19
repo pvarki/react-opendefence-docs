@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 1,
+  "id": "4842fe1a-bee8-4775-8450-396bf82351a9",
+  "slug": "fanga-och-sand-dronarvideo-81f1fTM3IL",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Fånga och sänd dronarvideo",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "TILLÄGG SOM STÖDS",
+    "UAS-verktyg",
+    "Fånga och sänd dronarvideo"
+  ],
+  "createdAt": "2026-06-18T19:30:27.360Z",
+  "updatedAt": "2026-06-18T20:21:46.226Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/capture-broadcast-drone-video-UfMEqBjxec",
+    "fi": "/fi/guides/tak-guide/kuvaa-ja-laheta-lennokin-videota-rjbcDzCyvV",
+    "sv": "/sv/guides/tak-guide/fanga-och-sand-dronarvideo-81f1fTM3IL"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Sänd ut dronarens videoflöde till hela gruppen, ta stillbilder och spela in video till din enhet direkt från verktygsfältet i UAS Tool.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Öppna dronarens hjälpverktyg",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på skiftnyckelsikonen <strong>Drone Utilities</strong> i det nedre verktygsfältet för att öppna inspelningsverktygen: Broadcast Video, Map Shot, Drone Shot, Record Video och Platform Settings.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/7d9a7786064a3b4e.webp",
+              "width": 2101,
+              "height": 1010
+            }
+          ]
+        },
+        {
+          "title": "Sänd ut video till gruppen",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på <strong>Broadcast ON</strong> för att strömma flödet till andra TAK-användare via Wi-Fi eller taktisk radio.</p>\n<ul>\n<li>Knappen blir grön när strömmen är igång.</li>\n<li>Gruppmedlemmarna öppnar den med <strong>Video</strong> i UAS-kartmarkörens radialmeny.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/7d9a7786064a3b4e.webp",
+              "width": 2101,
+              "height": 1010
+            }
+          ]
+        },
+        {
+          "title": "Ställ in sändningen",
+          "layout": "image-bottom",
+          "html": "<p>Håll <strong>Broadcast On</strong> intryckt för att öppna sändningsinställningarna. Ställ in <strong>Broadcast Size</strong>, <strong>Broadcast Bitrate</strong> och <strong>Video Broadcast Destination</strong> så att de passar ditt nätverk.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/7d9a7786064a3b4e.webp",
+              "width": 2101,
+              "height": 1010
+            }
+          ]
+        },
+        {
+          "title": "Släpp en Mapshot på kartan",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på <strong>Mapshot</strong> för att fånga den aktuella flödesbilden och släppa den som en bildmarkör på kartan. En dialogruta låter dig skicka den till gruppen, och den hamnar på den plats som dronaren tittade på.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/7d9a7786064a3b4e.webp",
+              "width": 2101,
+              "height": 1010
+            }
+          ]
+        },
+        {
+          "title": "Ta en stillbild med Drone Shot",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på ikonen <strong>Drone Shot</strong> för att fånga en stillbild direkt från plattformens sensor och spara den på enheten.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/d805541f680adf29.webp",
+              "width": 118,
+              "height": 117
+            }
+          ]
+        },
+        {
+          "title": "Spela in video lokalt",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på <strong>Record Video</strong> för att starta och stoppa inspelningen av det inkommande flödet.</p>\n<ul>\n<li>Klippen sparas på EUD:n och visas i ATAK:s Video Player.</li>\n<li>Håll knappen intryckt för att spela in till EUD:n, dronarens SD-kort eller båda.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/7d9a7786064a3b4e.webp",
+              "width": 2101,
+              "height": 1010
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

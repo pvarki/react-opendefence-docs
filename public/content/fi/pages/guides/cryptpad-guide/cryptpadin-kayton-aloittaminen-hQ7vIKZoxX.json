@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "id": "18a6c05e-ce32-43c0-9664-e62c8f113b3b",
+  "slug": "cryptpadin-kayton-aloittaminen-hQ7vIKZoxX",
+  "collection": "guides/cryptpad-guide",
+  "locale": "fi",
+  "title": "CryptPadin käytön aloittaminen",
+  "breadcrumb": [
+    "Yhdistä palvelimeen",
+    "CryptPadin käytön aloittaminen"
+  ],
+  "createdAt": "2026-06-18T20:34:31.294Z",
+  "updatedAt": "2026-06-18T20:37:59.786Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/cryptpad-guide/getting-started-with-cryptpad-JznoTt1R8B",
+    "fi": "/fi/guides/cryptpad-guide/cryptpadin-kayton-aloittaminen-hQ7vIKZoxX",
+    "sv": "/sv/guides/cryptpad-guide/kom-igang-med-cryptpad-hiXBJRERid"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>CryptPad on tiimisi turvallinen, päästä päähän salattu yhteistyöpaketti. Tämä opas auttaa sinua kirjautumaan sisään ja luomaan ensimmäisen asiakirjasi.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Tervetuloa CryptPadiin",
+          "layout": "image-bottom",
+          "html": "<p>CryptPad on turvallinen, päästä päähän salattu yhteistyöpaketti. Tiimisi voi luoda ja yhdessä muokata asiakirjoja sekä jakaa tiedostoja turvallisesti. Tämä Deploy App -palvelin pyörittää tiimisi omaa, hajautettua CryptPad-palvelua.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/e71eaeb23b57ae18.webp",
+              "width": 1918,
+              "height": 1111
+            }
+          ]
+        },
+        {
+          "title": "Miksi CryptPad on turvallinen",
+          "layout": "image-bottom",
+          "html": "<p>CryptPad varmistaa, ettei edes palvelimen ylläpitäjä voi lukea tiedostojasi. Sinä päätät, kenen kanssa jaat — myös muut tämän Deploy App -palvelimen käyttäjät tarvitsevat sinulta kutsun voidakseen lukea tiedostojasi.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/8490a8a6267faa7e.webp",
+              "width": 1918,
+              "height": 1111
+            }
+          ]
+        },
+        {
+          "title": "Kirjaudu sisään Deploy Appilla",
+          "layout": "image-bottom",
+          "html": "<p>CryptPad on integroitu Deploy Appin varmennepohjaiseen todennukseen. Napsauta <strong>Log in to CryptPad</strong>, niin sinut todennetaan automaattisesti Deploy App -tunnuksillasi — erillistä tiliä tai salasanaa ei tarvita.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/df5186655c4944a4.webp",
+              "width": 2162,
+              "height": 1346
+            }
+          ]
+        },
+        {
+          "title": "CryptPad-työpöytäsi",
+          "layout": "image-bottom",
+          "html": "<p>Sisäänkirjautumisen jälkeen näet CryptPad-työpöytäsi. Täältä voit luoda uusia asiakirjoja, avata viimeaikaisia tiedostoja, hallita CryptDriveasi ja tehdä yhteistyötä tiimin jäsenten kanssa.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/b26541fcf0a18e34.webp",
+              "width": 1834,
+              "height": 1139
+            }
+          ]
+        },
+        {
+          "title": "Luo ensimmäinen asiakirjasi",
+          "layout": "image-bottom",
+          "html": "<p>Napsauta työpöydän <strong>+</strong>-painiketta luodaksesi uuden asiakirjan. Valitse muun muassa muotoiltu teksti, koodi, taulukot, kanban-taulut, esitykset, valkotaulut ja lomakkeet. Kaikki asiakirjat salataan automaattisesti.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/940d325323062037.webp",
+              "width": 1827,
+              "height": 1134
+            }
+          ]
+        },
+        {
+          "title": "Jaa tiimisi kanssa",
+          "layout": "image-bottom",
+          "html": "<p>Jaa asiakirja napsauttamalla työkalurivin jakopainiketta. Jaa tietyille tiimin jäsenille tai luo linkki. Useat käyttäjät voivat muokata samanaikaisesti ja nähdä toistensa muutokset reaaliajassa.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/8207d147e97d7674.webp",
+              "width": 1820,
+              "height": 1133
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 1,
+  "id": "86b9cb34-6355-4a80-ab96-03d92d4c6d0f",
+  "slug": "starta-stoppa-och-hamta-hem-dronaren-5IlxUaDKae",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Starta, stoppa och hämta hem drönaren",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "TILLÄGG SOM STÖDS",
+    "UAS-verktyg",
+    "Starta, stoppa och hämta hem drönaren"
+  ],
+  "createdAt": "2026-06-18T19:31:24.159Z",
+  "updatedAt": "2026-06-18T20:21:52.457Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/launch-stop-return-drone-H6yqQ4Gyc5",
+    "fi": "/fi/guides/tak-guide/kaynnista-pysayta-ja-palauta-lennokki-ramp5QBORo",
+    "sv": "/sv/guides/tak-guide/starta-stoppa-och-hamta-hem-dronaren-5IlxUaDKae"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Med verktygsfältet Quick Flight får du upp drönaren i luften, hämtar hem den och stoppar den snabbt när något går fel. Här är den säkra ordningen att flyga i.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Hitta verktygsfältet Quick Flight",
+          "layout": "image-bottom",
+          "html": "<p>Verktygsfältet sitter högst upp i UAS-menyn efter starten.</p>\n<ul>\n<li>Från vänster: <strong>Set Altitude</strong>, <strong>Emergency Stop</strong>, <strong>Return To Home</strong>, <strong>Quick Task</strong>, <strong>Follow EUD/Recon</strong>, <strong>Mission Manager</strong>.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/9b47a9f4c89d6e45.webp",
+              "width": 738,
+              "height": 140
+            }
+          ]
+        },
+        {
+          "title": "Ställ in din höjd",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på <strong>Set Altitude</strong>, dra skjutreglaget till önskad höjd och tryck sedan på <strong>Set Altitude</strong> för att bekräfta.</p>\n<ul>\n<li>Avläs höjden som <strong>AGL</strong> (över marken), <strong>HAL</strong> (över startpunkten) eller <strong>MSL</strong> (över havet).</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/c6cd7fa8485b7c2b.webp",
+              "width": 800,
+              "height": 326
+            }
+          ]
+        },
+        {
+          "title": "Start",
+          "layout": "image-bottom",
+          "html": "<p>På marken visar knappen Set Altitude en grön <strong>GO</strong>-cirkel som kallas <strong>Takeoff Now</strong>. Tryck på den så lyfter drönaren och stiger till den höjd du ställde in.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/7bd02e8ff2a402c3.webp",
+              "width": 800,
+              "height": 324
+            }
+          ]
+        },
+        {
+          "title": "Emergency Stop",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på <strong>Emergency Stop</strong> för att avbryta den pågående uppgiften och tryck sedan på <strong>OK</strong> i frågan.</p>\n<ul>\n<li>Den avbryter Quick Task-uppgifter, rutter och höjdförflyttningar men inte manuell spakstyrning.</li>\n<li>VARNING: vissa luftfarkoster driver iväg eller backar innan de stoppar.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/41d974ab869aa2ec.webp",
+              "width": 800,
+              "height": 336
+            }
+          ]
+        },
+        {
+          "title": "Return to Home",
+          "layout": "image-bottom",
+          "html": "<p>Tryck kort på <strong>Return To Home</strong> (knapp 3) för att flyga tillbaka till startpunkten. Håll in den länge för att öppna <strong>Home Position Follow Options</strong> så att drönaren i stället följer din rörliga position.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/4cb7bbce0e08308c.webp",
+              "width": 249,
+              "height": 141
+            }
+          ]
+        },
+        {
+          "title": "Landa och stäng av på plats",
+          "layout": "image-bottom",
+          "html": "<p>I dialogrutan Set Altitude tar <strong>Land-Now</strong> drönaren rakt ned där den svävar. Landning och avstängning varierar mellan plattformar:</p>\n<ul>\n<li>DJI-farkoster svävar lågt och behöver den fysiska Ground Control Station (GCS) för att landa och stänga av.</li>\n<li>Vissa MAVLink-farkoster backar innan de landar.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/7bd02e8ff2a402c3.webp",
+              "width": 800,
+              "height": 324
+            }
+          ]
+        },
+        {
+          "title": "Flytta om med Quick Task",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på <strong>Quick Task</strong> och tryck sedan på en punkt på kartan.</p>\n<ul>\n<li>Välj <strong>Go Now</strong> för att flyga dit på nuvarande höjd, eller <strong>Orbit</strong> för att cirkla runt den.</li>\n<li>I fältet <strong>Selected Coordinate</strong> kan du skriva in exakta koordinater.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/c3fe23149220c4cb.webp",
+              "width": 1428,
+              "height": 725
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

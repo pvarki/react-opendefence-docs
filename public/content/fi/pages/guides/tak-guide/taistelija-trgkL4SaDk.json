@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "id": "5d42135e-3bde-4786-8a39-72c83c06bbea",
+  "slug": "taistelija-trgkL4SaDk",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Taistelija",
+  "breadcrumb": [
+    "Platforms",
+    "WinTAK",
+    "KÄYTTÖ ROOLEITTAIN",
+    "Taistelija"
+  ],
+  "createdAt": "2026-06-18T19:33:31.267Z",
+  "updatedAt": "2026-06-18T20:24:29.259Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/fighter-ZxrplBIys6",
+    "fi": "/fi/guides/tak-guide/taistelija-trgkL4SaDk",
+    "sv": "/sv/guides/tak-guide/soldat-UXKA1Unk59"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Taistelijana WinTAK pitää sinut yhteisellä kartalla ja antaa sinun syöttää havaintoja komentopaikalle. Tässä on, mitä lähetät ja mitä saat.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Mitä taistelija lähettää",
+          "layout": "text",
+          "html": "<ul>\n<li><strong>Reaaliaikaisen sijaintisi</strong>, jotta yksikkö näkee sinut kartalla (blue force tracking).</li>\n<li><strong>Havaintomerkit</strong> — luo merkki ja lähetä se HQ-roolille / havaintosyötteeseen.</li>\n<li><strong>Raportit</strong> määrätyillä viestintävälineillä komento-, tiedustelu-, BLUFOR- ja yhteiskanavilla.</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "Mitä taistelija saa",
+          "layout": "text",
+          "html": "<ul>\n<li>CP:n tuottama <strong>RECON Feed</strong> — mitä yksikkö tietää toiminta-alueesta.</li>\n<li>Tehtävän <strong>PLAN</strong>-syötteet — marssireitit, partioreitit, geoaitahälytykset.</li>\n<li>Muiden käyttäjien sijainnit kartalla.</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "Miten se tehdään",
+          "layout": "text",
+          "html": "<ul>\n<li>Katso <strong>Blue force tracking</strong> löytääksesi itsesi, lukeaksesi karttaa ja asettaaksesi sijaintisi, kun sinulla ei ole GPS:ää.</li>\n<li>Varmista ensin, että olet yhteydessä — <strong>vihreä pilvi</strong> TAK Network Status -näkymässä tarkoittaa, että palvelinyhteys on toiminnassa; jos RECON-syötteesi on tyhjä, tarkista yhteys uudelleen (katso Start-opas).</li>\n</ul>",
+          "images": []
+        }
+      ]
+    }
+  ]
+}

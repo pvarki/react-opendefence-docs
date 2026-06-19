@@ -12,8 +12,13 @@
     "Customize Markers & Icons"
   ],
   "createdAt": "2026-06-15T19:40:09.699Z",
-  "updatedAt": "2026-06-15T21:18:55.337Z",
+  "updatedAt": "2026-06-18T20:15:12.452Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/customize-markers-icons-TGz9RiGwju",
+    "fi": "/fi/guides/tak-guide/mukauta-merkit-ja-kuvakkeet-vmmluklewl",
+    "sv": "/sv/guides/tak-guide/anpassa-markorer-och-ikoner-kfkJXTKO8b"
+  },
   "blocks": [
     {
       "type": "html",

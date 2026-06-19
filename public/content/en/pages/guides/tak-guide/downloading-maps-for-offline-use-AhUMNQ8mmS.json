@@ -12,8 +12,13 @@
     "Downloading Maps for Offline use"
   ],
   "createdAt": "2026-01-25T10:14:38.710Z",
-  "updatedAt": "2026-06-15T19:43:05.391Z",
+  "updatedAt": "2026-06-18T20:14:51.153Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/downloading-maps-for-offline-use-AhUMNQ8mmS",
+    "fi": "/fi/guides/tak-guide/karttojen-lataaminen-offline-kayttoon-HWp5pbjscs",
+    "sv": "/sv/guides/tak-guide/ladda-ner-kartor-for-offline-anvandning-uKJz92KfHd"
+  },
   "blocks": [
     {
       "type": "html",
@@ -26,7 +31,7 @@
         {
           "title": "Open Maps & Favorites",
           "layout": "image-bottom",
-          "html": "<p>Tap the <strong>Maps &#x26; Favorites</strong> icon. It has three tabs: <strong>Imagery</strong>, <strong>Mobile</strong> and <strong>FAVS</strong> (favourites).</p>",
+          "html": "<p>Tap the <strong>Maps &#x26; Favorites</strong> icon.</p>\n<ul>\n<li>It has three tabs: <strong>Imagery</strong>, <strong>Mobile</strong> and <strong>FAVS</strong> (favourites).</li>\n</ul>",
           "images": [
             {
               "src": "/content/images/en/attachments/0eaa4d299fd7efcd.webp",
@@ -38,7 +43,7 @@
         {
           "title": "Mark the area to download",
           "layout": "image-bottom",
-          "html": "<p>On the <strong>Mobile</strong> tab toggle to <strong>Online</strong>, then tap <strong>Select Area</strong>. Pick <strong>Rectangle</strong>, <strong>Free Form</strong>, <strong>Lasso</strong> or <strong>Map Select</strong> and draw your region.</p>",
+          "html": "<p>On the <strong>Mobile</strong> tab toggle to <strong>Online</strong>, then tap <strong>Select Area</strong>.</p>\n<ul>\n<li>Pick <strong>Rectangle</strong>, <strong>Free Form</strong>, <strong>Lasso</strong> or <strong>Map Select</strong> and draw your region.</li>\n</ul>",
           "images": [
             {
               "src": "/content/images/en/attachments/95fa01e8259285c0.webp",
@@ -50,7 +55,7 @@
         {
           "title": "Set the resolution",
           "layout": "image-bottom",
-          "html": "<p>Drag the slider ends to set detail — <strong>coarse</strong> for fewer tiles, <strong>fine</strong> for sharper maps. ATAK shows the tile count; the limit is 850,000 tiles per download.</p>",
+          "html": "<p>Drag the slider ends to set detail — <strong>coarse</strong> for fewer tiles, <strong>fine</strong> for sharper maps.</p>\n<ul>\n<li>ATAK shows the tile count; the limit is 850,000 tiles per download.</li>\n</ul>",
           "images": [
             {
               "src": "/content/images/en/attachments/bb7aba1816fd05a0.webp",
@@ -62,7 +67,7 @@
         {
           "title": "Name it and download",
           "layout": "image-bottom",
-          "html": "<p>Tap <strong>Download</strong>, name the tileset and tap <strong>OK</strong>. A progress bar appears; <strong>Cancel</strong> stops it. You can also add tiles to an existing set or save an overlay.</p>",
+          "html": "<p>Tap <strong>Download</strong>, name the tileset and tap <strong>OK</strong>.</p>\n<ul>\n<li>A progress bar appears; <strong>Cancel</strong> stops it.</li>\n<li>You can also add tiles to an existing set or save an overlay.</li>\n</ul>",
           "images": [
             {
               "src": "/content/images/en/attachments/233202f64b766362.webp",
@@ -86,7 +91,7 @@
         {
           "title": "Manage and share imagery",
           "layout": "image-bottom",
-          "html": "<p>The <strong>Imagery</strong> tab lists all your maps. Expand a category to <strong>Send</strong> a layer to other users or delete it. The <strong>Outline</strong> checkbox shows each layer's border.</p>",
+          "html": "<p>The <strong>Imagery</strong> tab lists all your maps.</p>\n<ul>\n<li>Expand a category to <strong>Send</strong> a layer to other users or delete it.</li>\n<li>The <strong>Outline</strong> checkbox shows each layer's border.</li>\n</ul>",
           "images": [
             {
               "src": "/content/images/en/attachments/6a7e67ec50bffd9c.webp",

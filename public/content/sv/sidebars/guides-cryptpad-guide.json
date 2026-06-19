@@ -4,6 +4,69 @@
   "slug": "guides/cryptpad-guide",
   "items": [
     {
+      "type": "toporg",
+      "id": "anslut-till-servern-RnU8CA6cXG",
+      "label": "Anslut till servern",
+      "children": [
+        {
+          "type": "doc",
+          "id": "kom-igang-med-cryptpad-hiXBJRERid",
+          "label": "Kom igång med CryptPad",
+          "slug": "kom-igang-med-cryptpad-hiXBJRERid"
+        }
+      ]
+    },
+    {
+      "type": "toporg",
+      "id": "grundfunktioner-sGWNWAvFGG",
+      "label": "Grundfunktioner",
+      "children": [
+        {
+          "type": "doc",
+          "id": "dokument-oIwKFvuvn3",
+          "label": "Dokument",
+          "slug": "dokument-oIwKFvuvn3"
+        },
+        {
+          "type": "doc",
+          "id": "kanban-tavlor-qoIqgWi2fK",
+          "label": "Kanban-tavlor",
+          "slug": "kanban-tavlor-qoIqgWi2fK"
+        },
+        {
+          "type": "doc",
+          "id": "presentationer-26fnbdHVfs",
+          "label": "Presentationer",
+          "slug": "presentationer-26fnbdHVfs"
+        }
+      ]
+    },
+    {
+      "type": "toporg",
+      "id": "anvandning-i-enheten-OEdx9a6SR0",
+      "label": "Användning i enheten",
+      "children": [
+        {
+          "type": "doc",
+          "id": "skapa-ett-team-for-din-enhet-5WZecY2ggu",
+          "label": "Skapa ett team för din enhet",
+          "slug": "skapa-ett-team-for-din-enhet-5WZecY2ggu"
+        },
+        {
+          "type": "doc",
+          "id": "delad-kalender-Wyukwg6DLG",
+          "label": "Delad kalender",
+          "slug": "delad-kalender-Wyukwg6DLG"
+        },
+        {
+          "type": "doc",
+          "id": "sakerhetskopiera-dina-data-yVu1FNdIEb",
+          "label": "Säkerhetskopiera dina data",
+          "slug": "sakerhetskopiera-dina-data-yVu1FNdIEb"
+        }
+      ]
+    },
+    {
       "type": "doc",
       "id": "deploy-app-cryptpad-2vc1rIjtVc",
       "label": "Deploy App - CryptPad",

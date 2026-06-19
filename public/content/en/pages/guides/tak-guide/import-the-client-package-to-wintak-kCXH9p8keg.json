@@ -12,8 +12,13 @@
     "Import the client package to WinTAK"
   ],
   "createdAt": "2025-12-05T22:05:59.798Z",
-  "updatedAt": "2026-06-16T10:55:54.193Z",
+  "updatedAt": "2026-06-18T20:23:24.488Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/import-the-client-package-to-wintak-kCXH9p8keg",
+    "fi": "/fi/guides/tak-guide/tuo-client-package-wintakiin-4r7he3cxqW",
+    "sv": "/sv/guides/tak-guide/importera-client-package-till-wintak-LKNdCcucrD"
+  },
   "blocks": [
     {
       "type": "html",

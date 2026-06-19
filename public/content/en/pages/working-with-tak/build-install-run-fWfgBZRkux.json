@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "id": "9d082b3c-d23c-45a2-a87e-24b52c82a1c3",
+  "slug": "build-install-run-fWfgBZRkux",
+  "collection": "working-with-tak",
+  "locale": "en",
+  "title": "Build, install & run",
+  "breadcrumb": [
+    "ATAK Plugin Development",
+    "Build, install & run"
+  ],
+  "createdAt": "2026-06-16T22:49:06.997Z",
+  "updatedAt": "2026-06-16T22:49:10.554Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "The build setup",
+      "id": "the-build-setup"
+    },
+    {
+      "depth": 2,
+      "text": "Product flavors: pick the right one",
+      "id": "product-flavors-pick-the-right-one"
+    },
+    {
+      "depth": 2,
+      "text": "Build & install commands",
+      "id": "build--install-commands"
+    },
+    {
+      "depth": 2,
+      "text": "Run it",
+      "id": "run-it"
+    },
+    {
+      "depth": 2,
+      "text": "When the plugin won't load",
+      "id": "when-the-plugin-wont-load"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>A plugin is built with Gradle through the <code>atak-gradle-takdev</code> plugin, signed, and installed as an APK onto a device that already has a matching ATAK build.</p>\n<h2 id=\"the-build-setup\"><a href=\"#the-build-setup\">The build setup</a></h2>\n<p>The top-level <code>build.gradle</code> applies the takdev plugin and declares the values that pin your plugin to an ATAK API:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span>buildscript {</span></span>\n<span class=\"line\"><span>    ext.PLUGIN_VERSION = \"1.0\"      // your plugin's version</span></span>\n<span class=\"line\"><span>    ext.ATAK_VERSION   = '5.6.0'    // the ATAK API you build against</span></span>\n<span class=\"line\"><span>    def takdevVersion  = '3.+'      // the atak-gradle-takdev plugin line</span></span>\n<span class=\"line\"><span>    // ...resolves the SDK from takrepo.url, or a local atak-gradle-takdev.jar</span></span>\n<span class=\"line\"><span>}</span></span>\n<span class=\"line\"><span></span></span>\n<span class=\"line\"><span>plugins {</span></span>\n<span class=\"line\"><span>    id(\"com.android.application\")</span></span>\n<span class=\"line\"><span>}</span></span>\n<span class=\"line\"><span>apply {</span></span>\n<span class=\"line\"><span>    plugin(\"atak-takdev-plugin\")</span></span>\n<span class=\"line\"><span>}</span></span></code></pre>",
+      "lang": "plaintext"
+    },
+    {
+      "type": "html",
+      "html": "<p>The module <code>app/build.gradle</code> sets the Android values — <code>compileSdk 36</code>, <code>targetSdkVersion 34</code>, <code>minSdkVersion 21</code>, and <strong>Java 17</strong> — and its <strong>debug</strong> signing is preconfigured by the takdev plugin (see <a href=\"/en/working-with-tak/set-up-your-development-environment-NfbAKB4XTl\">Set up your environment</a>). It also names the output APK:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span>ATAK-Plugin-&#x3C;projectName>-&#x3C;PLUGIN_VERSION>-&#x3C;versionName>-&#x3C;ATAK_VERSION>.apk</span></span></code></pre>",
+      "lang": "plaintext"
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"product-flavors-pick-the-right-one\"><a href=\"#product-flavors-pick-the-right-one\">Product flavors: pick the right one</a></h2>\n<p>The 5.x example defines a compact set of flavors — <code>**civ**</code> (default), <code>**mil**</code>, and <code>**gov**</code> — generated from a <code>supportedFlavors</code> list. Each sets the manifest's <code>plugin-api</code> marker to the matching ATAK API:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span>def supportedFlavors = [</span></span>\n<span class=\"line\"><span>    [ name: 'civ', default: true ],</span></span>\n<span class=\"line\"><span>    [ name: 'mil' ],</span></span>\n<span class=\"line\"><span>    [ name: 'gov' ],</span></span>\n<span class=\"line\"><span>]</span></span>\n<span class=\"line\"><span>// for each flavor:</span></span>\n<span class=\"line\"><span>//   def pluginApiFlavor = flav.name.equals('gov') ? 'CIV' : flav.name.toUpperCase()</span></span>\n<span class=\"line\"><span>//   manifestPlaceholders = [atakApiVersion: \"com.atakmap.app@\" + ATAK_VERSION + \".${pluginApiFlavor}\"]</span></span></code></pre>",
+      "lang": "plaintext"
+    },
+    {
+      "type": "html",
+      "html": "<p>For open-source development you build the <code>**civ**</code> flavor, because you install alongside <strong>ATAK-CIV</strong> (<code>gov</code> maps its API marker to <code>CIV</code> too). The plugin's API marker must match the ATAK build on the device or ATAK will refuse to load it.</p>\n<blockquote>\n<p>ATAK 4.x shipped a much longer flavor list (<code>fvey</code>, <code>aus</code>, <code>nzl</code>, <code>swe</code>, …); 5.x's example trims it to <code>civ</code>/<code>mil</code>/<code>gov</code>. The build-task names below are unaffected.</p>\n</blockquote>\n<h2 id=\"build--install-commands\"><a href=\"#build--install-commands\">Build &#x26; install commands</a></h2>\n<p>Gradle tasks combine the <strong>flavor</strong> and the <strong>build type</strong> (<code>Debug</code> / <code>Release</code>):</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#7F848E;font-style:italic\"># Build a debug APK for the CIV variant</span></span>\n<span class=\"line\"><span style=\"color:#61AFEF\">./gradlew</span><span style=\"color:#98C379\"> assembleCivDebug</span></span>\n<span class=\"line\"></span>\n<span class=\"line\"><span style=\"color:#7F848E;font-style:italic\"># Build AND install it onto the connected device/emulator</span></span>\n<span class=\"line\"><span style=\"color:#61AFEF\">./gradlew</span><span style=\"color:#98C379\"> installCivDebug</span></span>\n<span class=\"line\"></span>\n<span class=\"line\"><span style=\"color:#7F848E;font-style:italic\"># Release build (minified + proguard, release signing key)</span></span>\n<span class=\"line\"><span style=\"color:#61AFEF\">./gradlew</span><span style=\"color:#98C379\"> assembleCivRelease</span></span></code></pre>",
+      "lang": "bash"
+    },
+    {
+      "type": "html",
+      "html": "<p>Substitute the flavor for other variants (<code>assembleMilDebug</code>, etc.). Debug builds are <code>debuggable</code> and skip minification; release builds run ProGuard (<code>proguard-gradle.txt</code>) and sign with your release key.</p>\n<h2 id=\"run-it\"><a href=\"#run-it\">Run it</a></h2>\n<ol>\n<li>Install the <strong>matching ATAK-CIV</strong> build on the device/emulator first. The plugin does nothing on its own — it loads <em>into</em> ATAK.</li>\n<li><code>./gradlew installCivDebug</code> to push the plugin APK.</li>\n<li>Launch ATAK. It enumerates installed plugin APKs (via the <code>com.atakmap.app.component</code> discovery hook) and, on first run, will typically prompt to <strong>load/enable</strong> the new plugin. Accept it.</li>\n<li>Your <strong>tool button</strong> appears in the toolbar; tapping it fires your <code>SHOW_…</code> action and your DropDown slides in.</li>\n</ol>\n<blockquote>\n<p><strong>Development-build watermark.</strong> Unkeyed developer builds of the host TAK app display a <em>\"Development Build\"</em> watermark across the map. That's expected for SDK development-tier ATAK and is unrelated to your plugin.</p>\n</blockquote>\n<h2 id=\"when-the-plugin-wont-load\"><a href=\"#when-the-plugin-wont-load\">When the plugin won't load</a></h2>\n<ul>\n<li><strong>API mismatch</strong> — the plugin's <code>plugin-api</code> marker doesn't match the running ATAK. Rebuild with the flavor/<code>ATAK_VERSION</code> that matches the installed app.</li>\n<li><strong>Signing</strong> — a release build can't find a signing key: configure your own release keystore (debug is signed automatically by the takdev plugin). See <a href=\"/en/working-with-tak/packaging-distribution-overview-Yfof5rViqj\">Packaging &#x26; distribution</a>.</li>\n<li><strong>Not discovered</strong> — the <code>com.atakmap.app.component</code> activity/intent-filter is missing or the package was renamed inconsistently. Re-check the manifest and <code>plugin.xml</code>.</li>\n</ul>\n<p>→ Next: <a href=\"/en/working-with-tak/test-debug-your-plugin-78jPxzFzjK\">Test &#x26; debug your plugin</a>.</p>"
+    }
+  ]
+}

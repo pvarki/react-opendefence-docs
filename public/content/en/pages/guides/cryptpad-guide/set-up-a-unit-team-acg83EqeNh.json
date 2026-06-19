@@ -10,8 +10,13 @@
     "Set up a unit team"
   ],
   "createdAt": "2026-06-15T17:20:33.297Z",
-  "updatedAt": "2026-06-15T18:30:03.990Z",
+  "updatedAt": "2026-06-18T20:38:08.639Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/cryptpad-guide/set-up-a-unit-team-acg83EqeNh",
+    "fi": "/fi/guides/cryptpad-guide/luo-tiimi-yksikollesi-rh5NTKB48E",
+    "sv": "/sv/guides/cryptpad-guide/skapa-ett-team-for-din-enhet-5WZecY2ggu"
+  },
   "blocks": [
     {
       "type": "html",

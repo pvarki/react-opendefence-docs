@@ -12,8 +12,13 @@
     "Read Your Status & Location"
   ],
   "createdAt": "2026-06-16T16:18:07.922Z",
-  "updatedAt": "2026-06-16T16:21:25.766Z",
+  "updatedAt": "2026-06-18T20:26:41.874Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/read-your-status-location-xFbq6tWEQC",
+    "fi": "/fi/guides/tak-guide/lue-tilasi-ja-sijaintisi-2FUEtnpZg4",
+    "sv": "/sv/guides/tak-guide/las-av-din-status-och-position-Vl9DXPZ7S8"
+  },
   "blocks": [
     {
       "type": "html",

@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "84ee4e7c-b537-4f87-8713-3fbe42864dbb",
+  "slug": "hae-koordinaatit-center-designatorilla-yaOIpaeTv4",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Hae koordinaatit Center Designatorilla",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "LISÄOMINAISUUDET",
+    "Navigointi ja koordinaatit",
+    "Hae koordinaatit Center Designatorilla"
+  ],
+  "createdAt": "2026-06-18T19:28:19.145Z",
+  "updatedAt": "2026-06-18T20:19:02.406Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/get-coordinates-with-center-designator-B4pKmxr0H0",
+    "fi": "/fi/guides/tak-guide/hae-koordinaatit-center-designatorilla-yaOIpaeTv4",
+    "sv": "/sv/guides/tak-guide/hamta-koordinater-med-center-designator-52VvAun2JK"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Ota Center Designator käyttöön lukeaksesi tarkat koordinaatit ja korkeuden kartan keskipisteen alta.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Ota Center Designator käyttöön",
+          "layout": "image-bottom",
+          "html": "<p>Avaa <strong>Overlay Manager</strong> ja sitten <strong>Other Overlays</strong>. Napauta <strong>Center Designator</strong> -kohdan vieressä olevaa silmäkuvaketta ottaaksesi sen käyttöön.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/f28caa1685cb737c.webp",
+              "width": 400,
+              "height": 191
+            }
+          ]
+        },
+        {
+          "title": "Lue koordinaatit kartan keskeltä",
+          "layout": "image-bottom",
+          "html": "<p>Vasemmassa alakulmassa oleva näyttökenttä näyttää nyt kartan keskipisteen koordinaatit ja korkeuden. Siirrä karttaa lukeaksesi minkä tahansa pisteen.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/ac247a9aa8e49a30.webp",
+              "width": 400,
+              "height": 194
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

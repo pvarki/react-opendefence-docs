@@ -1,0 +1,346 @@
+{
+  "schemaVersion": 1,
+  "id": "021af034-5c85-4937-9aa7-b68f90bffe3e",
+  "slug": "aloita-lataamisesta-qtXafhRjdo",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Aloita lataamisesta",
+  "breadcrumb": [
+    "Platforms",
+    "iTAK",
+    "Aloitus",
+    "Aloita lataamisesta"
+  ],
+  "createdAt": "2026-06-18T19:35:29.641Z",
+  "updatedAt": "2026-06-18T20:25:40.143Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/start-from-download-vQGTWj6wET",
+    "fi": "/fi/guides/tak-guide/aloita-lataamisesta-qtXafhRjdo",
+    "sv": "/sv/guides/tak-guide/borja-fran-nedladdning-TsV7d2JP5F"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Asenna iTAK App Storesta",
+          "layout": "text",
+          "html": "<ul>\n<li><a href=\"https://apps.apple.com/us/app/itak/id1561656396\" target=\"_blank\" rel=\"noopener noreferrer\">https://apps.apple.com/us/app/itak/id1561656396</a></li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "Avaa iTAK-sovellus",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Etsi iTAK-kuvake ja käynnistä sovellus. Älä salli sovelluksen etsiä muita laitteita lähiverkosta. iTAK ei salaa liikennettä lähiverkossa (LAN).</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/d2b86a0e4da37de8.webp",
+              "width": 1179,
+              "height": 2556
+            }
+          ]
+        },
+        {
+          "title": "Aloita iTAKin käyttöönotto",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Aloita iTAKin käyttöönotto.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/4bc489751e28b47d.webp",
+              "width": 1179,
+              "height": 2556
+            }
+          ]
+        },
+        {
+          "title": "Kutsutunnuksen asetukset",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Anna kutsutunnuksesi Callsign-kenttään. Jätä Phone-kenttä tyhjäksi.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/179742443855f7bd.webp",
+              "width": 1179,
+              "height": 2556
+            }
+          ]
+        },
+        {
+          "title": "Ryhmän/roolin asetukset",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Valitse ryhmäsi (Team) ja roolisi (Role).</li>\n<li>Ryhmän väri on pitänyt kertoa sinulle. Oletusrooli on Team Member</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/25a884ed6dc00676.webp",
+              "width": 1179,
+              "height": 2556
+            }
+          ]
+        },
+        {
+          "title": "Yksityisyysasetukset",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Ota käyttöön ilmoitukset (Notifications) ja paikannuspalvelut (Location Services)</li>\n<li>HUOMIO! Hyväksy kaikki iTAKin ilmoitusten lähetystä ja paikannuksen käyttöä koskevat kysymykset.</li>\n<li>TÄRKEÄÄ! Salli paikannuksen käyttö myös silloin, kun et käytä sovellusta.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/60c55560970d34f8.webp",
+              "width": 1179,
+              "height": 2556
+            }
+          ]
+        },
+        {
+          "title": "iTAK avautuu / Jäljellä olevat vaiheet",
+          "layout": "text",
+          "html": "<ol>\n<li>Asetukset / Yksikköasetukset</li>\n<li>Palvelinyhteys / Paketin tuonti</li>\n<li>Datasync-aktivointi</li>\n<li>Karttäasetukset</li>\n</ol>",
+          "images": []
+        },
+        {
+          "title": "iTAK-asetukset",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Avaa iTAKin asetukset</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/8c1929e22a527c6e.webp",
+              "width": 1179,
+              "height": 2556
+            }
+          ]
+        },
+        {
+          "title": "iTAKin Preferences-asetukset",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Avaa <em>Preferences</em>-valikko</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/ad672d1b8c61f6d9.webp",
+              "width": 1179,
+              "height": 2556
+            }
+          ]
+        },
+        {
+          "title": "iTAK Preferences -yksiköt",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Avaa <em>Unit of Measure</em> -valikko</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/b1f7aa523dc46ad3.webp",
+              "width": 1179,
+              "height": 2556
+            }
+          ]
+        },
+        {
+          "title": "iTAK-yksiköt 1/2",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Valitse seuraavat yksikkömuodot.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/a7c0e607aa9afe83.webp",
+              "width": 1179,
+              "height": 2556
+            }
+          ]
+        },
+        {
+          "title": "iTAK-yksiköt 2/2",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Valitse seuraavat yksikkömuodot.</li>\n<li>Sulje asetusikkuna</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/524c4c95f7dc4a7d.webp",
+              "width": 1179,
+              "height": 2556
+            }
+          ]
+        },
+        {
+          "title": "iTAK Packages / Tuo konfiguraatio",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Siirry Packages-toimintoon</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/0eaf05e585e36850.webp",
+              "width": 1179,
+              "height": 2556
+            }
+          ]
+        },
+        {
+          "title": "iTAK tuo paketit",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Lisää paketti painamalla +-merkkiä</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/2793eb64889d2e76.webp",
+              "width": 1179,
+              "height": 2556
+            }
+          ]
+        },
+        {
+          "title": "Lisää tehtäväpaketti (Mission Package)",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Siirry laitteesi kansioon, johon latasit aiemmin konfiguraation zip-tiedoston.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/095f5897fa1210b0.webp",
+              "width": 1179,
+              "height": 2556
+            }
+          ]
+        },
+        {
+          "title": "Valitse zip-tiedosto",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Valitse aiemmin lataamasi tiedosto.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/c7159bfe8dd36b43.webp",
+              "width": 1179,
+              "height": 2556
+            }
+          ]
+        },
+        {
+          "title": "Paketti tuotu",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Tuonti onnistui, kun palvelimen nimi tulee näkyviin</li>\n<li>Sulje Packages-ikkuna.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/886151d89dfe7c5a.webp",
+              "width": 1179,
+              "height": 2556
+            }
+          ]
+        },
+        {
+          "title": "Palvelinyhteys ja DataSync",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Palvelinyhteys on nyt CONNECTED</li>\n<li>Jatka Data Sync -määrityksiin</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/919414ee0b73a1d2.webp",
+              "width": 1179,
+              "height": 2556
+            }
+          ]
+        },
+        {
+          "title": "Data Sync -tehtävän tilaus",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Tilaa tehtävä (Mission) +-merkistä</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/87481ce66a072a28.webp",
+              "width": 1179,
+              "height": 2556
+            }
+          ]
+        },
+        {
+          "title": "Saatavilla olevat tehtävät",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Saat listan saatavilla olevista tehtävistä (Mission).</li>\n<li>Oletustilattava tehtävä on RECON.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/0df098efc62c5dda.webp",
+              "width": 1179,
+              "height": 2556
+            }
+          ]
+        },
+        {
+          "title": "Tehtävän tiedot",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Palaa Data Sync -sivulle.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/807a0f0653c27ebe.webp",
+              "width": 1179,
+              "height": 2556
+            }
+          ]
+        },
+        {
+          "title": "Synkronoi tehtävän tiedot",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Tee tehtävälle täysi synkronointi painamalla ympyränuolia</li>\n<li>Sulje Data Sync -näkymä.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/3fe1150893e530f4.webp",
+              "width": 1179,
+              "height": 2556
+            }
+          ]
+        },
+        {
+          "title": "iTAK-konfiguraatio valmis",
+          "layout": "text",
+          "html": "<ul>\n<li>Tarvittaessa voit muokata:</li>\n<li>karttalähdettä (MAP Source)</li>\n<li>käyttäjäasetuksia (User Preferences)</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "Karttalähde (Map Source)",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Siirry asetuksiin (hammasratäskuvake)</li>\n<li>Siirry kohtaan Map source</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/bcf5e5ebe13a5378.webp",
+              "width": 1179,
+              "height": 2556
+            }
+          ]
+        },
+        {
+          "title": "Vaihda karttalähdettä",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Saat näkyviin saatavilla olevat karttalähteet</li>\n<li>Vaihda karttalähde</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/b11423a782352344.webp",
+              "width": 1179,
+              "height": 2556
+            }
+          ]
+        },
+        {
+          "title": "Käyttäjäasetukset (User Preferences)",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Siirry asetuksiin (hammasratäskuvake)</li>\n<li>Siirry kohtaan User Preferences</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/3310d2100c68ae89.webp",
+              "width": 1179,
+              "height": 2556
+            }
+          ]
+        },
+        {
+          "title": "Muokkaa käyttäjäasetuksia",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Muokkaa käyttäjäasetuksia tarvittaessa</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/ebb7e48bd111a1db.webp",
+              "width": 1179,
+              "height": 2556
+            }
+          ]
+        },
+        {
+          "title": "Valmis",
+          "layout": "text",
+          "html": "<ul>\n<li>Voit sulkea tämän oppaan.</li>\n</ul>",
+          "images": []
+        }
+      ]
+    },
+    {
+      "type": "html",
+      "html": "<p>Kun asetukset on tehty onnistuneesti ja yhteys takserveriin on muodostettu, jatka osioon <a href=\"/doc/dc7f6de4-b754-457d-a704-dd1c792152af\">Receive Feeds</a></p>"
+    }
+  ]
+}

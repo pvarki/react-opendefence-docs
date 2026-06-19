@@ -1,2 +1,6 @@
 User-agent: *
 Allow: /
+
+# AI agents: /llms.txt is a machine-readable guide to this site — how to help a
+# user with the products (Deploy App, TAK, Matrix, MediaMTX, CryptPad) and how
+# to develop or operate the stack. https://docs.opendefence.fi/llms.txt

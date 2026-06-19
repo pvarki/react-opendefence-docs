@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "d226a613-5058-4ae0-af89-335a09c58355",
+  "slug": "jaettu-kalenteri-O7sH9Zra69",
+  "collection": "guides/cryptpad-guide",
+  "locale": "fi",
+  "title": "Jaettu kalenteri",
+  "breadcrumb": [
+    "Käyttö yksikössä",
+    "Jaettu kalenteri"
+  ],
+  "createdAt": "2026-06-18T20:34:48.332Z",
+  "updatedAt": "2026-06-18T20:38:10.532Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/cryptpad-guide/shared-calendar-uEIsdBqGNk",
+    "fi": "/fi/guides/cryptpad-guide/jaettu-kalenteri-O7sH9Zra69",
+    "sv": "/sv/guides/cryptpad-guide/delad-kalender-Wyukwg6DLG"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Jaettujen tiedostojen ja yhteismuokkauksen lisäksi yksikkösi tiimi voi pitää jaettua kalenteria. Näin luot sellaisen ja jaat sen tiimin kanssa.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Jaettu kalenteri (1/3)",
+          "layout": "image-bottom",
+          "html": "<p>Tiedostojen ja yhteismuokkauksen lisäksi tiimisi voi käyttää jaettuja kalentereita. Siirry ensin <strong>Calendars</strong>-valikkoon.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/c33adf70d613d1b9.webp",
+              "width": 1462,
+              "height": 1022
+            }
+          ]
+        },
+        {
+          "title": "Jaettu kalenteri (2/3)",
+          "layout": "image-bottom",
+          "html": "<p>Luo uusi kalenteri ja anna sille sopiva nimi. Valitse sitten <strong>Sharing</strong>-valikko.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/6cf48a40b61289a5.webp",
+              "width": 1468,
+              "height": 1180
+            }
+          ]
+        },
+        {
+          "title": "Jaettu kalenteri (3/3)",
+          "layout": "image-bottom",
+          "html": "<p>Jaa kalenteri tiimin kanssa. Tiimisi jäsenet löytävät tämän jaetun kalenterin sitten omasta Calendars-valikostaan.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/206f8be3ff9dc2bd.webp",
+              "width": 1462,
+              "height": 1214
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

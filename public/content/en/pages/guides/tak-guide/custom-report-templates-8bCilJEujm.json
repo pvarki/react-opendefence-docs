@@ -8,13 +8,18 @@
   "breadcrumb": [
     "Platforms",
     "WinTAK",
-    "Supported Plugins",
+    "SUPPORTED PLUGINS",
     "Reports",
     "Custom report templates"
   ],
   "createdAt": "2026-06-16T10:20:58.483Z",
-  "updatedAt": "2026-06-16T10:20:58.483Z",
+  "updatedAt": "2026-06-18T20:24:59.780Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/custom-report-templates-8bCilJEujm",
+    "fi": "/fi/guides/tak-guide/mukautetut-raporttipohjat-ArfvIcUuY3",
+    "sv": "/sv/guides/tak-guide/anpassade-rapportmallar-BetIS5kccv"
+  },
   "blocks": [
     {
       "type": "html",
@@ -39,7 +44,7 @@
         {
           "title": "Name it and add sections",
           "layout": "image-bottom",
-          "html": "<p>Enter a name in the <strong>Template Type</strong> field (this becomes the stored template name). Use the editor to add sections and fields, delete a section or field, mark a section <strong>Required</strong>, or <strong>Clear</strong> the template.</p>",
+          "html": "<p>Enter a name in the <strong>Template Type</strong> field (this becomes the stored template name).</p>\n<ul>\n<li>Use the editor to add sections and fields, delete a section or field, mark a section <strong>Required</strong>, or <strong>Clear</strong> the template.</li>\n</ul>",
           "images": [
             {
               "src": "/content/images/en/attachments/ae93f14c8d8e1847.webp",
@@ -63,7 +68,7 @@
         {
           "title": "Save the template",
           "layout": "image-bottom",
-          "html": "<p>Drag the window out to see a live preview on the right as you build. Select <strong>Save</strong> to store it under Custom using its title, <strong>Save As</strong> to give it a new name, or <strong>Save / Fill Out</strong> to store it and immediately start a report from it.</p>",
+          "html": "<p>Drag the window out to see a live preview on the right as you build.</p>\n<ul>\n<li>Select <strong>Save</strong> to store it under Custom using its title, <strong>Save As</strong> to give it a new name, or <strong>Save / Fill Out</strong> to store it and immediately start a report from it.</li>\n</ul>",
           "images": [
             {
               "src": "/content/images/en/attachments/13a5fa24076e6565.webp",

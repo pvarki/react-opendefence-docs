@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 1,
+  "id": "dc5d7d9c-de57-47e2-a8cf-ec8dabc55673",
+  "slug": "yksikon-huoneet-ja-organisointi-9VvNjfff1H",
+  "collection": "guides/matrix-guide",
+  "locale": "fi",
+  "title": "Yksikön huoneet ja organisointi",
+  "breadcrumb": [
+    "Käyttö yksikössä",
+    "Yksikön huoneet ja organisointi"
+  ],
+  "createdAt": "2026-06-18T20:34:19.962Z",
+  "updatedAt": "2026-06-18T20:37:57.242Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/matrix-guide/unit-rooms-organisation-krWteO9e37",
+    "fi": "/fi/guides/matrix-guide/yksikon-huoneet-ja-organisointi-9VvNjfff1H",
+    "sv": "/sv/guides/matrix-guide/enhetens-rum-och-organisation-u4QesBL0bv"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Matrix toimii hyvin yksikkösi ensisijaisena viestintävälineenä. Tämä on suositeltu tapa jäsentää huoneesi — käsittele jokaista huonetta kuin radiokanavaa.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Helppo ensisijainen viestintäväline",
+          "layout": "image-bottom",
+          "html": "<p>Matrix täyttää kaikki viestintä- ja videopuhelutarpeet hyvin. Kaikki tämän palvelimen jäsenet ovat automaattisesti palvelimesi Spacen jäseniä, joten voit aloittaa viestinnän tiimisi kanssa heti.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/00bbdf3e264749e7.webp",
+              "width": 2306,
+              "height": 1444
+            }
+          ]
+        },
+        {
+          "title": "Hyvä huonerakenne",
+          "layout": "image-bottom",
+          "html": "<p>Automaattisesti luotujen huoneiden lisäksi suosittelemme luomaan seuraavat huoneet ja kutsumaan niihin sopivat jäsenet. Perusajatus on ajatella huoneita radiokanavina.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/008ce475a318f511.webp",
+              "width": 2312,
+              "height": 1442
+            }
+          ]
+        },
+        {
+          "title": "Komentohuone",
+          "layout": "image-bottom",
+          "html": "<p>Kutsu ryhmänjohtajasi <strong>Command</strong>-kanavalle. Se toimii kuin radion komentokanava — käskyjä ja niiden kuittauksia varten. Sitä voidaan käyttää myös tiedotuksiin videoneuvotteluna.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/af4773fccb6ca2b8.webp",
+              "width": 2302,
+              "height": 1446
+            }
+          ]
+        },
+        {
+          "title": "Omien tilanne -huone",
+          "layout": "image-bottom",
+          "html": "<p>Kutsu vähintään ryhmänjohtajasi ja varajohtajat <strong>Friendly situation</strong> -huoneeseen. Käytä sitä tehtäväsi suorituksen viestintään — missä omat joukot liikkuvat ja miten tehtävän suoritus etenee.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/6a7d2f2720dc26b1.webp",
+              "width": 2314,
+              "height": 1452
+            }
+          ]
+        },
+        {
+          "title": "Tiedusteluhuone",
+          "layout": "image-bottom",
+          "html": "<p>Kutsu vähintään ryhmänjohtajasi ja varajohtajat <strong>Recon</strong> -huoneeseen. Käytä sitä tiedustelun ja vihollishavaintojen viestintään.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/0e6f89ecfb767dfc.webp",
+              "width": 2303,
+              "height": 1449
+            }
+          ]
+        },
+        {
+          "title": "Vartiohuone",
+          "layout": "image-bottom",
+          "html": "<p>Perusta <strong>Guard</strong> -huone niin, että kuka tahansa voi liittyä siihen vapaasti Spacesta. Vartio- tai partiotehtävää aloittavat toimijat liittyvät tehtävänsä ajaksi, jolloin komentopaikalla on suora yhteys heihin.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/f79376cb94ddaeb2.webp",
+              "width": 2314,
+              "height": 1438
+            }
+          ]
+        },
+        {
+          "title": "Muut huonesuositukset",
+          "layout": "text",
+          "html": "<p>Muita suositeltuja huoneita ovat <strong>Call for Fires</strong> -huone ja <strong>Fires Management</strong> -huone tulenjohtoa ja tulen koordinointia varten.</p>",
+          "images": []
+        },
+        {
+          "title": "Käyttäjähallinta",
+          "layout": "text",
+          "html": "<p>Deploy Appissa ylläpitäjäksi asetettu käyttäjä saa automaattisesti ylläpito-oikeudet Spaceen ja sen huoneisiin ja lisätään admin-huoneeseen. Deploy Appista poistettu käyttäjä menettää pääsyn Matrixiin.</p>",
+          "images": []
+        },
+        {
+          "title": "Yhteistyö muiden Matrix-palvelinten kanssa",
+          "layout": "text",
+          "html": "<p>Oletuksena voit kutsua käyttäjiä muilta Matrix-palvelimilta huoneisiisi. Tämä mahdollistaa yhteistyön muiden Deploy Appia käyttävien tiimien kanssa tai Naton liittolaisten kanssa, jotka myös käyttävät Matrixia — esimerkiksi NI2CE-sovelluksen kautta.</p>",
+          "images": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 1,
+  "id": "aa57ef66-9c10-4b58-8c54-9288fa19cf9f",
+  "slug": "kayta-geochatia-viestintaan-u0VBv8IjJy",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Käytä Geochatia viestintään",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "KÄYTTÖ ROOLEITTAIN",
+    "Taistelija",
+    "Käytä Geochatia viestintään"
+  ],
+  "createdAt": "2026-06-18T19:28:14.665Z",
+  "updatedAt": "2026-06-18T20:17:46.051Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/use-geochat-for-comms-s20PZmRGw8",
+    "fi": "/fi/guides/tak-guide/kayta-geochatia-viestintaan-u0VBv8IjJy",
+    "sv": "/sv/guides/tak-guide/anvand-geochat-for-kommunikation-HR8qIoirSR"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "1. Käytä Geochatia viestintään",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>TAK:n Geochat tarjoaa yksinkertaisen tekstikanavaviestinnän.</li>\n<li>Käytä sitä <strong>jos yksikkösi on käskenyt niin.</strong> Vaihtoehto Geochatin käytölle on Deploy Appin Matrix, joka on vakaampi mutta edellyttää <strong>Element</strong>-sovelluksen käyttöä ATAK:n rinnalla.</li>\n<li>Matrix/Element-ohjeen löydät kohdasta Guides → Matrix.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/4673d7d14af04ebb.webp",
+              "width": 200,
+              "height": 166
+            }
+          ]
+        },
+        {
+          "title": "OpenDefencen vakiomalli",
+          "layout": "image-bottom",
+          "html": "<p>Käytetään yksikössämme, esim. komppaniassa, <strong>neljää</strong> kanavaa:</p>\n<ul>\n<li>COMMAND-kanava</li>\n<li>BLUFOR-kanava</li>\n<li>RECON-kanava</li>\n<li>COMMON-kanava Näiden lisäksi käytä suoraviestejä.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/5b3baa45e81b5736.webp",
+              "width": 224,
+              "height": 228
+            }
+          ]
+        },
+        {
+          "title": "COMMAND-kanava",
+          "layout": "text",
+          "html": "<ul>\n<li>Tarkoitus: Vastaanota ja vastaa käskyihin</li>\n<li>Lähetysoikeudet: Johtajat</li>\n<li>Muut: Kuittaaminen. Muuten vain luku. Lähetä suorituksen tilanne Blufor-kanavalle.</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "COMMAND-kanavan esimerkki",
+          "layout": "text",
+          "html": "<p>Tyypillinen käyttö:</p>\n<ul>\n<li>Yksikkö suorittaa tehtävää.</li>\n<li>Johtaja lähettää ennalta sovitun koodisanan \"BLUE43 prepare to execute AXE\" COMMAND-kanavalla.</li>\n<li>Alainen kuittaa.</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "BLUFOR-kanava",
+          "layout": "text",
+          "html": "<ul>\n<li>Tarkoitus: Lähetä ja vastaanota suorituksen tilanne</li>\n<li>Lähetysoikeudet: Kaikki</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "BLUFOR-kanavan esimerkki",
+          "layout": "text",
+          "html": "<p>Tyypillinen käyttö:</p>\n<ul>\n<li>Alainen raportoi: \"Ready to execute AXE.\"</li>\n<li>Johtaja kuittaa.</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "RECON-kanava",
+          "layout": "text",
+          "html": "<ul>\n<li>Tarkoitus: Lähetä ja vastaanota havaintoja toiminta-alueelta</li>\n<li>Erityisesti: Ilmoita aina tänne, jos olet päivittänyt OBSERVATION-syötettä.</li>\n<li>Lähetysoikeudet: Kaikki</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "RECON-kanavan esimerkki",
+          "layout": "text",
+          "html": "<p>Tyypillinen käyttö:</p>\n<ul>\n<li>Alainen raportoi: \"Observed BOLO list car AAA-000 around GRY 4. Sent in OBS feed.\"</li>\n<li>Komentopaikan tiedusteluhenkilöstö kuittaa.</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "COMMON-kanava",
+          "layout": "text",
+          "html": "<ul>\n<li>Tarkoitus: Kaikki viestintä, joka ei sovi mihinkään edellä mainituista mutta jonka kaikkien on silti luettava.</li>\n<li>Lähetysoikeudet: Kaikki</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "COMMON-kanavan esimerkki",
+          "layout": "text",
+          "html": "<p>Tyypillinen käyttö:</p>\n<ul>\n<li>Johtaja ilmoittaa: \"Gear arrived to BLUE 0 - get yours as ordered by 26JAN.\"</li>\n<li>Alaiset kuittaavat.</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "Suoraviestien käyttö",
+          "layout": "image-bottom",
+          "html": "<p>Käytä suoraviestejä vain sinua koskevaan viestintään. <strong>Nyrkkisääntö:</strong> Se mistä ei ole hyötyä kenellekään muulle kuin sinulle ja vastaanottajalle, kannattaa lähettää suoraviestinä (DM).</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/89257cabbbe2780f.webp",
+              "width": 192,
+              "height": 163
+            }
+          ]
+        },
+        {
+          "title": "Suoraviestin esimerkki",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Alainen kysyy: \"Is BLUE 50 available? Need service to a generator.\"</li>\n<li>Komentopaikka vastaa: \"Will relay and report answer.\"</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/e7cd7378de07ff3d.webp",
+              "width": 213,
+              "height": 177
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

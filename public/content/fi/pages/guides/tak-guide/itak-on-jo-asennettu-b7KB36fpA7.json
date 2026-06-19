@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "162642b1-e1f1-46c2-9a95-8b6166f0ae78",
+  "slug": "itak-on-jo-asennettu-b7KB36fpA7",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "iTAK on jo asennettu",
+  "breadcrumb": [
+    "Platforms",
+    "iTAK",
+    "Aloitus",
+    "iTAK on jo asennettu"
+  ],
+  "createdAt": "2026-06-18T19:35:30.218Z",
+  "updatedAt": "2026-06-18T20:25:41.869Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/itak-already-installed-DeEex1hIH2",
+    "fi": "/fi/guides/tak-guide/itak-on-jo-asennettu-b7KB36fpA7",
+    "sv": "/sv/guides/tak-guide/itak-redan-installerat-HPGjec95O1"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Poista iTAK, jos se on asennettu",
+          "layout": "text",
+          "html": "<ul>\n<li>iTAKin poistaminen on helpoin tapa pyyhkiä vanhat asetukset ja palvelinyhteydet</li>\n</ul>\n<hr>",
+          "images": []
+        }
+      ]
+    },
+    {
+      "type": "html",
+      "html": "<p>iTAKin poistamisen jälkeen jatka kohtaan <a href=\"/doc/c703f1ac-61bf-48e2-9c03-36cfb7f72360\">Start from Download</a></p>"
+    }
+  ]
+}

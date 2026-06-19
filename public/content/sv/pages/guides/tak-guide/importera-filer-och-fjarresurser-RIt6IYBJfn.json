@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "id": "04cbc206-2904-49e5-8a61-b1942bbf9c93",
+  "slug": "importera-filer-och-fjarresurser-RIt6IYBJfn",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Importera filer och fjärresurser",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "YTTERLIGARE FUNKTIONER",
+    "Höjd, terräng och kartverktyg",
+    "Importera filer och fjärresurser"
+  ],
+  "createdAt": "2026-06-18T19:30:20.203Z",
+  "updatedAt": "2026-06-18T20:21:31.595Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/import-files-remote-resources-yjaTiWVKHl",
+    "fi": "/fi/guides/tak-guide/tiedostojen-ja-etaresurssien-tuonti-c3dqZ2juww",
+    "sv": "/sv/guides/tak-guide/importera-filer-och-fjarresurser-RIt6IYBJfn"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Importera kartor, bildmaterial och datapaket till ATAK från din enhet, eller koppla in en nätverkslänk som uppdaterar sig själv.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Öppna import och välj en källa",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på ikonen <strong>Import</strong>. I fönstret <strong>Select Import Type</strong> väljer du <strong>Local SD</strong>, <strong>Gallery</strong>, <strong>KML Link</strong>, <strong>HTTP URL</strong> eller <strong>Choose App</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/03949903f00012bc.webp",
+              "width": 232,
+              "height": 92
+            }
+          ]
+        },
+        {
+          "title": "Importera från enhetens lagring",
+          "layout": "image-bottom",
+          "html": "<p>Välj <strong>Local SD</strong>, bläddra till filen och tryck på <strong>OK</strong>. ATAK tar emot konfiguration, datapaket, höjddata, bildmaterial och överlägg; vissa typer ber dig välja en hanterare.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/fb7955722d5c042f.webp",
+              "width": 186,
+              "height": 103
+            }
+          ]
+        },
+        {
+          "title": "Välj en importstrategi",
+          "layout": "image-bottom",
+          "html": "<p>Tala om för ATAK hur filen ska hanteras. <strong>Copy</strong> kopierar den till ATAK-katalogen, <strong>Move</strong> flyttar den och <strong>Use in Place</strong> lämnar den där den är.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/3d724c2ac23016fc.webp",
+              "width": 224,
+              "height": 118
+            }
+          ]
+        },
+        {
+          "title": "Lägg till en nätverkslänkresurs",
+          "layout": "image-bottom",
+          "html": "<p>Välj <strong>KML Link</strong> eller <strong>HTTP URL</strong>, ange ett <strong>Name</strong> och en <strong>URL</strong>, ställ in ett uppdateringsintervall och tryck sedan på <strong>Add</strong>. Länken kan uppdateras automatiskt och rensa lokalt innehåll vid avstängning.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/148f6d8f61edf0fc.webp",
+              "width": 248,
+              "height": 150
+            }
+          ]
+        },
+        {
+          "title": "Ladda ner och följ fjärresurser",
+          "layout": "image-bottom",
+          "html": "<p>Tillagda länkar visas under <strong>Remote Resources</strong> i Overlay Manager.</p>\n<ul>\n<li>En röd punkt betyder att den ännu inte är nedladdad; tryck på <strong>Download</strong> för att hämta den.</li>\n<li>Grön betyder att den är nedladdad och uppdaterad.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/17744d1ab1f41071.webp",
+              "width": 248,
+              "height": 109
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "id": "31f5eb75-619c-4e27-ae46-53acc18c3f29",
+  "slug": "mukautetut-raporttipohjat-ArfvIcUuY3",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Mukautetut raporttipohjat",
+  "breadcrumb": [
+    "Platforms",
+    "WinTAK",
+    "Tuetut lisäosat",
+    "Raportit",
+    "Mukautetut raporttipohjat"
+  ],
+  "createdAt": "2026-06-18T19:35:25.628Z",
+  "updatedAt": "2026-06-18T20:25:00.292Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/custom-report-templates-8bCilJEujm",
+    "fi": "/fi/guides/tak-guide/mukautetut-raporttipohjat-ArfvIcUuY3",
+    "sv": "/sv/guides/tak-guide/anpassade-rapportmallar-BetIS5kccv"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Esimääriteltyjä raporttipohjia voi muokata, ja voit myös rakentaa omasi alusta alkaen.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Aloita mukautettu pohja",
+          "layout": "image-bottom",
+          "html": "<p>Muokataksesi oletuspohjaa valitse raporttityyppi ja valitse sen vierestä <strong>Edit</strong> — pohja avautuu editorissa tallennettavaksi uutena mukautettuna pohjana. Rakentaaksesi uuden valitse <strong>+</strong> <strong>Custom</strong>-luokan vierestä; tämä luo tyhjän pohjan, jossa on yksi osio ja tekstikenttä.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/d664252fecb158df.webp",
+              "width": 224,
+              "height": 205
+            }
+          ]
+        },
+        {
+          "title": "Nimeä se ja lisää osioita",
+          "layout": "image-bottom",
+          "html": "<p>Anna nimi <strong>Template Type</strong> -kenttään (tästä tulee tallennetun pohjan nimi).</p>\n<ul>\n<li>Lisää editorilla osioita ja kenttiä, poista osio tai kenttä, merkitse osio <strong>Required</strong> tai tyhjennä pohja painikkeella <strong>Clear</strong>.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/ae93f14c8d8e1847.webp",
+              "width": 224,
+              "height": 183
+            }
+          ]
+        },
+        {
+          "title": "Lisää kenttätyyppejä",
+          "layout": "image-bottom",
+          "html": "<p>Valitse osion sisällä <strong>+</strong> lisätäksesi kentän: Options, Multi-Select Options, Section, Checkbox, Date, Location, Number with Units, Number, Range, Route, Text tai Time.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/6002d87be513d362.webp",
+              "width": 347,
+              "height": 566
+            }
+          ]
+        },
+        {
+          "title": "Tallenna pohja",
+          "layout": "image-bottom",
+          "html": "<p>Vedä ikkuna ulos nähdäksesi reaaliaikaisen esikatselun oikealla rakentaessasi.</p>\n<ul>\n<li>Valitse <strong>Save</strong> tallentaaksesi sen Custom-luokkaan sen otsikolla, <strong>Save As</strong> antaaksesi sille uuden nimen tai <strong>Save / Fill Out</strong> tallentaaksesi sen ja aloittaaksesi heti raportin sen pohjalta.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/13a5fa24076e6565.webp",
+              "width": 407,
+              "height": 536
+            }
+          ]
+        },
+        {
+          "title": "Raporttiasetukset",
+          "layout": "image-bottom",
+          "html": "<p>Mukauta raportin asettelu kohdassa <strong>Settings > Tool Preferences > Reporting Preferences</strong>: <strong>Allow sending to TAK users over Data Package</strong>, lähetä datapaketit automaattisesti kaikille kontakteille sekä näytä tai piilota Importance-, Scale-, Scale Description- ja User Description -kentät.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/ccd7eb372a082524.webp",
+              "width": 339,
+              "height": 467
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

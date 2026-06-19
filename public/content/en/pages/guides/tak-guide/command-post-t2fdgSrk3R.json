@@ -6,14 +6,19 @@
   "locale": "en",
   "title": "Command Post",
   "breadcrumb": [
-    "TAK Clients",
+    "Platforms",
     "TAK Tracker - Android",
-    "Usage by Role",
+    "USAGE BY ROLE",
     "Command Post"
   ],
   "createdAt": "2025-12-20T00:47:06.850Z",
-  "updatedAt": "2026-02-21T08:40:56.130Z",
+  "updatedAt": "2026-06-18T20:26:59.051Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/command-post-t2fdgSrk3R",
+    "fi": "/fi/guides/tak-guide/komentopaikka-BLzd0iLjOh",
+    "sv": "/sv/guides/tak-guide/kommandoplats-NyhTmwJFEe"
+  },
   "blocks": [
     {
       "type": "html",

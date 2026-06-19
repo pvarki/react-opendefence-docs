@@ -13,8 +13,13 @@
     "Go To Coordinates"
   ],
   "createdAt": "2026-06-15T19:40:37.539Z",
-  "updatedAt": "2026-06-15T20:53:46.342Z",
+  "updatedAt": "2026-06-18T20:18:51.180Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/go-to-coordinates-x7AdN7ZMgn",
+    "fi": "/fi/guides/tak-guide/siirry-koordinaatteihin-go-to-x2wAmIQ8Sd",
+    "sv": "/sv/guides/tak-guide/ga-till-koordinater-go-to-yXumpULR0j"
+  },
   "blocks": [
     {
       "type": "html",
@@ -27,7 +32,7 @@
         {
           "title": "Open Go To and pick a format",
           "layout": "image-bottom",
-          "html": "<p>Select the <strong>Go To</strong> icon. Pick your format tab: <strong>MGRS</strong> (grid), <strong>DD</strong> / <strong>DM</strong> / <strong>DMS</strong> (lat-lon), <strong>UTM</strong>, or <strong>ADDR</strong> (address).</p>",
+          "html": "<p>Select the <strong>Go To</strong> icon.</p>\n<ul>\n<li>Pick your format tab: <strong>MGRS</strong> (grid), <strong>DD</strong> / <strong>DM</strong> / <strong>DMS</strong> (lat-lon), <strong>UTM</strong>, or <strong>ADDR</strong> (address).</li>\n</ul>",
           "images": [
             {
               "src": "/content/images/en/attachments/cde56dc1fb341efa.webp",

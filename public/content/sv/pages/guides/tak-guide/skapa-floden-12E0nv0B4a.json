@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "id": "251fe053-e124-44b1-adc5-e168e38603da",
+  "slug": "skapa-floden-12E0nv0B4a",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Skapa flöden",
+  "breadcrumb": [
+    "Platforms",
+    "WinTAK",
+    "AVANCERADE KÄRNFUNKTIONER",
+    "Skapa flöden"
+  ],
+  "createdAt": "2026-06-18T19:33:28.072Z",
+  "updatedAt": "2026-06-18T20:23:48.464Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/create-feeds-0jPr4Cah1Z",
+    "fi": "/fi/guides/tak-guide/syotteiden-luominen-RQLTfV45mi",
+    "sv": "/sv/guides/tak-guide/skapa-floden-12E0nv0B4a"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Användare på kommandoplats?",
+          "layout": "text",
+          "html": "<ul>\n<li>När du använder WinTAK är du mycket sannolikt en användare på kommandoplats / stab.</li>\n<li>Du ansvarar för att hantera och skapa flöden.</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "Skapa flöden",
+          "layout": "text",
+          "html": "<ul>\n<li>Skapa flöden antingen för att leverera dina planer eller för att starta en kontinuerlig delning av information.</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "Data Sync-startvyn - Overlay Manager",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Tryck på Data Sync-symbolen för nytt flöde för att börja.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/7d43be69d5f05b10.webp",
+              "width": 166,
+              "height": 100
+            }
+          ]
+        },
+        {
+          "title": "Skapa flöde - Alternativ",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Formulär för att skapa nytt flöde</li>\n<li>På följande sidor finns mer detaljerade beskrivningar</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/297eac18aa76195d.webp",
+              "width": 384,
+              "height": 418
+            }
+          ]
+        },
+        {
+          "title": "Namnge ditt flöde",
+          "layout": "text",
+          "html": "<ul>\n<li>Namn: Var beskrivande. Exempelnamnet visar att flödet innehåller en plan för logistik.</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "Välj grupp",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Tryck sedan på <strong>Group</strong>-väljaren för att välja vilken grupp som kan komma åt ditt flöde.</li>\n<li>Standardvärdet använder standard (alla TAK-användare)</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/5ab0f68b09312587.webp",
+              "width": 380,
+              "height": 178
+            }
+          ]
+        },
+        {
+          "title": "Välj standardroll",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Välj det som passar ditt syfte bäst.</li>\n<li><strong>Subscriber</strong> innebär att alla användare kan skicka till och läsa från ett flöde.</li>\n<li><strong>Read-only</strong> innebär att endast ägare kan skicka till flödet.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/10c37e6dbeda685e.webp",
+              "width": 358,
+              "height": 113
+            }
+          ]
+        },
+        {
+          "title": "Lösenord",
+          "layout": "text",
+          "html": "<ul>\n<li>Du kan valfritt ange ett lösenord för ditt flöde för att begränsa åtkomsten.</li>\n<li>Du bör noga överväga när ett lösenord ska användas.</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "Beskriv ditt flöde",
+          "layout": "text",
+          "html": "<ul>\n<li>Genom att trycka på <strong>Description</strong> kan du beskriva ditt flöde. Det hjälper.</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "Hashtaggar",
+          "layout": "text",
+          "html": "<ul>\n<li>Du kan valfritt skriva några hashtaggar för ditt flöde. Det kan hjälpa till att analysera data på din server.</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "Nytt flöde skapat!",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Skapa flöde!</li>\n<li>Personer från din server kan nu prenumerera på ditt flöde.</li>\n</ul>\n<hr>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/f101e12b1767b4a0.webp",
+              "width": 398,
+              "height": 424
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

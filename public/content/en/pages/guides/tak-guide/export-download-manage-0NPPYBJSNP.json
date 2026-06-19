@@ -8,13 +8,18 @@
   "breadcrumb": [
     "Platforms",
     "WinTAK",
-    "Supported Plugins",
+    "SUPPORTED PLUGINS",
     "TAK Replay",
     "Export, download & manage"
   ],
   "createdAt": "2026-06-16T10:21:30.269Z",
-  "updatedAt": "2026-06-16T10:21:30.269Z",
+  "updatedAt": "2026-06-18T20:24:45.504Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/export-download-manage-0NPPYBJSNP",
+    "fi": "/fi/guides/tak-guide/vie-lataa-ja-hallitse-FEIam7G2GU",
+    "sv": "/sv/guides/tak-guide/exportera-ladda-ner-och-hantera-FzlSjRgi1p"
+  },
   "blocks": [
     {
       "type": "html",
@@ -51,7 +56,7 @@
         {
           "title": "Manage recordings & preferences",
           "layout": "image-bottom",
-          "html": "<p>Recordings (.cpr) are stored under <strong>AppData > Roaming > WinTAK > Databases > TakReplay</strong>; use <strong>Open Recordings Folder</strong> to view them — you can also drop .cpr files in directly. In <strong>Settings / Preferences</strong> set <strong>Auto Record</strong> (record on startup), <strong>Pan to Map Events</strong>, and the <strong>Recordings Directory</strong>.</p>",
+          "html": "<p>Recordings (.cpr) are stored under <strong>AppData > Roaming > WinTAK > Databases > TakReplay</strong>; use <strong>Open Recordings Folder</strong> to view them — you can also drop .cpr files in directly.</p>\n<ul>\n<li>In <strong>Settings / Preferences</strong> set <strong>Auto Record</strong> (record on startup), <strong>Pan to Map Events</strong>, and the <strong>Recordings Directory</strong>.</li>\n</ul>",
           "images": [
             {
               "src": "/content/images/en/attachments/08e997c3ea2e456e.webp",

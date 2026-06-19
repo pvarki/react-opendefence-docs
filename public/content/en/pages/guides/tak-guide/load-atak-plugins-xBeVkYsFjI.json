@@ -12,8 +12,13 @@
     "Load ATAK Plugins"
   ],
   "createdAt": "2026-01-24T18:32:30.639Z",
-  "updatedAt": "2026-06-16T10:52:44.205Z",
+  "updatedAt": "2026-06-18T20:13:39.695Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/load-atak-plugins-xBeVkYsFjI",
+    "fi": "/fi/guides/tak-guide/lataa-atak-liitannaiset-CrjCC07xf1",
+    "sv": "/sv/guides/tak-guide/ladda-atak-plugins-TpJcLrKsGu"
+  },
   "blocks": [
     {
       "type": "slideset",

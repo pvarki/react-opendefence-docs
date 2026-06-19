@@ -10,8 +10,13 @@
     "Shared calendar"
   ],
   "createdAt": "2026-06-15T18:30:09.642Z",
-  "updatedAt": "2026-06-15T18:30:09.642Z",
+  "updatedAt": "2026-06-18T20:38:10.074Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/cryptpad-guide/shared-calendar-uEIsdBqGNk",
+    "fi": "/fi/guides/cryptpad-guide/jaettu-kalenteri-O7sH9Zra69",
+    "sv": "/sv/guides/cryptpad-guide/delad-kalender-Wyukwg6DLG"
+  },
   "blocks": [
     {
       "type": "html",

@@ -12,8 +12,13 @@
     "Options & Settings"
   ],
   "createdAt": "2026-06-16T16:18:19.274Z",
-  "updatedAt": "2026-06-16T16:21:27.142Z",
+  "updatedAt": "2026-06-18T20:26:51.328Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/options-settings-XyYcsDAVCo",
+    "fi": "/fi/guides/tak-guide/asetukset-ja-valinnat-kNYxhiyRlR",
+    "sv": "/sv/guides/tak-guide/alternativ-och-installningar-0TFdbCddgQ"
+  },
   "blocks": [
     {
       "type": "html",

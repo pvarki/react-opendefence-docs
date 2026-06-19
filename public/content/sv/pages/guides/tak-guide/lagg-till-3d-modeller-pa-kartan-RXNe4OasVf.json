@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "74ab1a2e-bd72-4b39-9212-fc70365b3639",
+  "slug": "lagg-till-3d-modeller-pa-kartan-RXNe4OasVf",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Lägg till 3D-modeller på kartan",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "YTTERLIGARE FUNKTIONER",
+    "Höjd, terräng och kartverktyg",
+    "Lägg till 3D-modeller på kartan"
+  ],
+  "createdAt": "2026-06-18T19:29:22.950Z",
+  "updatedAt": "2026-06-18T20:20:50.418Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/add-3d-models-to-map-bp5Bo7T0oI",
+    "fi": "/fi/guides/tak-guide/lisaa-3d-malleja-kartalle-48R5EqaMl7",
+    "sv": "/sv/guides/tak-guide/lagg-till-3d-modeller-pa-kartan-RXNe4OasVf"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Släpp en 3D-modell (som en Pix4D-skanning) på kartan så att terräng och byggnader visas i korrekt relief.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Importera modellfilen",
+          "layout": "image-bottom",
+          "html": "<p>Öppna <strong>Import Manager</strong>, bläddra till din <strong>.OBJ</strong>-fil eller en <strong>.ZIP</strong> som innehåller den och importera endast den filen. Du kan också släppa <strong>.ZIP</strong>-filen i mappen <strong>atak/overlays</strong> för att ladda den vid uppstart.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/9b7ac349d4cebcd9.webp",
+              "width": 373,
+              "height": 173
+            }
+          ]
+        },
+        {
+          "title": "Se den på kartan",
+          "layout": "image-bottom",
+          "html": "<p>Zooma in så laddas modellen in på kartan. Svep uppåt eller nedåt med två fingrar för att luta vyn och se den upphöjd ovanför ytan.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/7e43c4ed0a91d87e.webp",
+              "width": 373,
+              "height": 185
+            }
+          ]
+        },
+        {
+          "title": "Lås 3D-vyn",
+          "layout": "image-bottom",
+          "html": "<p>Tryck och håll in <strong>North Arrow</strong> och välj <strong>3D</strong> för att växla till 3D-vy. Tryck på <strong>3D Lock</strong> för att behålla lutningsvinkeln medan du panorerar kartan.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/b3500e627e1d5c59.webp",
+              "width": 152,
+              "height": 52
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

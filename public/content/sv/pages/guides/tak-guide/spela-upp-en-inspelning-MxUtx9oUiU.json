@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "50af7a7c-1050-4174-8906-197a01567a4d",
+  "slug": "spela-upp-en-inspelning-MxUtx9oUiU",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Spela upp en inspelning",
+  "breadcrumb": [
+    "Platforms",
+    "WinTAK",
+    "Plugin-program som stöds",
+    "TAK Replay",
+    "Spela upp en inspelning"
+  ],
+  "createdAt": "2026-06-18T19:34:29.611Z",
+  "updatedAt": "2026-06-18T20:24:44.385Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/play-a-recording-uLch9lAImn",
+    "fi": "/fi/guides/tak-guide/toista-nauhoitus-IzwZSK6kdC",
+    "sv": "/sv/guides/tak-guide/spela-upp-en-inspelning-MxUtx9oUiU"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Alla sparade inspelningar kan spelas upp i Timeline Viewer.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Öppna och spela upp en inspelning",
+          "layout": "image-bottom",
+          "html": "<p>Välj <strong>Open</strong> bredvid ett filnamn för att öppna Timeline Viewer längst ner på kartan.</p>\n<ul>\n<li>Den visar start- och sluttid samt total tid, uppspelningshastighet, aktuell och förfluten tid samt en grön markering för varje händelse.</li>\n<li>Chattar som skickats eller tagits emot under inspelningen visas i en panel bredvid visaren.</li>\n<li>Välj <strong>Play</strong> för att starta; endast händelser inom inspelningsområdet visas, vid den tidpunkt då de inträffade.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/e2d23de5da9553f3.webp",
+              "width": 480,
+              "height": 265
+            }
+          ]
+        },
+        {
+          "title": "Styr uppspelningshastigheten",
+          "layout": "image-bottom",
+          "html": "<p>Varje tryck på snabbspolning framåt eller bakåt ändrar hastigheten upp till <strong>64x</strong> eller ner till <strong>−64x</strong>; en negativ hastighet spelar upp baklänges mot början. Bocka för <strong>Pan to Map Events</strong> (av som standard) för att hålla de uppspelade händelserna i vy medan de spelas upp.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/7d36a5fcc69c63ce.webp",
+              "width": 448,
+              "height": 81
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

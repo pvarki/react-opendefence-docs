@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "9590c6fe-df3b-4385-8c55-af677865e986",
+  "slug": "alternativ-och-installningar-0TFdbCddgQ",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Alternativ och inställningar",
+  "breadcrumb": [
+    "Platforms",
+    "TAK Tracker - Android",
+    "AVANCERADE FUNKTIONER",
+    "Alternativ och inställningar"
+  ],
+  "createdAt": "2026-06-18T19:44:14.416Z",
+  "updatedAt": "2026-06-18T20:26:53.029Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/options-settings-XyYcsDAVCo",
+    "fi": "/fi/guides/tak-guide/asetukset-ja-valinnat-kNYxhiyRlR",
+    "sv": "/sv/guides/tak-guide/alternativ-och-installningar-0TFdbCddgQ"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Fönstret Inställningar styr hur du syns i nätverket och hur TAK Tracker beter sig. Öppna det när som helst för att ändra din anropssignal, anslutning eller vy.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Öppna inställningar",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på <strong>Settings</strong> för att öppna fönstret Connection Settings. Härifrån kan du:</p>\n<ul>\n<li>Ändra din <strong>callsign</strong>, <strong>team color</strong> eller <strong>role</strong></li>\n<li>Ansluta med <strong>username and password</strong> eller importera ett <strong>SSL certificate</strong></li>\n<li>Aktivera <strong>Service on Boot</strong> så att TAK Tracker körs varje gång enheten startar</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/c3fdf294917ad30f.webp",
+              "width": 179,
+              "height": 234
+            }
+          ]
+        },
+        {
+          "title": "Städa upp vyn",
+          "layout": "text",
+          "html": "<p>Två alternativ styr hur mycket av huvudfönstret du ser:</p>\n<ul>\n<li><strong>Hide Quit Button</strong> — tar bort Quit-knappen; visa den igen genom att avmarkera rutan i <strong>Settings</strong></li>\n<li><strong>Limited View Mode</strong> — visar endast anslutningsrutan; avmarkera den i <strong>Settings</strong> för att visa alla rutor igen</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "Lås inställningar och importera certifikat",
+          "layout": "text",
+          "html": "<ul>\n<li>Tryck på <strong>Lock</strong> i verktygsfältet för att ange ett lösenord som skyddar dina inställningar</li>\n<li>Tryck på <strong>Import</strong> i verktygsfältet för att ansluta genom att importera en SSL-certifikatfil <code>.zip</code></li>\n</ul>\n<p>Om TAK Tracker inte har beviljats åtkomst till Androids filsystem öppnas här en uppmaning om att tillåta det.</p>",
+          "images": []
+        }
+      ]
+    }
+  ]
+}

@@ -8,13 +8,18 @@
   "breadcrumb": [
     "Platforms",
     "WinTAK",
-    "Supported Plugins",
-    "Vehicle Navigation System",
+    "SUPPORTED PLUGINS",
+    "VNS - Vehicle Navigation System",
     "Create a VNS route"
   ],
   "createdAt": "2026-06-16T10:21:36.565Z",
-  "updatedAt": "2026-06-16T10:21:36.565Z",
+  "updatedAt": "2026-06-18T20:25:29.365Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/create-a-vns-route-gfIlnjXwN2",
+    "fi": "/fi/guides/tak-guide/luo-vns-reitti-Njd2diVcZY",
+    "sv": "/sv/guides/tak-guide/skapa-en-vns-rutt-B6iV1MgGN7"
+  },
   "blocks": [
     {
       "type": "html",
@@ -51,7 +56,7 @@
         {
           "title": "Work with the route details",
           "layout": "image-bottom",
-          "html": "<p>The <strong>Route Details</strong> pane opens after creation. From here you can rename the route, pick its color, set the route type (primary/secondary, infil/exfil), add remarks, name checkpoints, attach files, set a navigation cue per checkpoint, view the elevation profile, <strong>Send</strong> the route to other devices, or press <strong>GO</strong> to begin navigation.</p>",
+          "html": "<p>The <strong>Route Details</strong> pane opens after creation.</p>\n<ul>\n<li>From here you can rename the route, pick its color, set the route type (primary/secondary, infil/exfil), add remarks, name checkpoints, attach files, set a navigation cue per checkpoint, view the elevation profile, <strong>Send</strong> the route to other devices, or press <strong>GO</strong> to begin navigation.</li>\n</ul>",
           "images": [
             {
               "src": "/content/images/en/attachments/d755d59454946e3b.webp",

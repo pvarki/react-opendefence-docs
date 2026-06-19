@@ -8,13 +8,18 @@
   "breadcrumb": [
     "Platforms",
     "ATAK",
-    "Supported Plugins",
+    "SUPPORTED PLUGINS",
     "Reports",
     "Build a Custom Report Template"
   ],
   "createdAt": "2026-06-15T19:50:39.995Z",
-  "updatedAt": "2026-06-15T19:50:39.995Z",
+  "updatedAt": "2026-06-18T20:22:38.587Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/build-a-custom-report-template-VVphDLVbW3",
+    "fi": "/fi/guides/tak-guide/rakenna-mukautettu-raporttimalli-yCSiu6uhpP",
+    "sv": "/sv/guides/tak-guide/bygg-en-anpassad-rapportmall-KwWEl4FT0Z"
+  },
   "blocks": [
     {
       "type": "html",

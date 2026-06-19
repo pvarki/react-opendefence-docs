@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 1,
+  "id": "d134e99b-5355-46ab-84f8-4ee726df339b",
+  "slug": "point-dropper-quick-pic-sTBDsrUhIs",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Point Dropper - Quick Pic",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "Grundläggande funktioner",
+    "Point Dropper - Quick Pic"
+  ],
+  "createdAt": "2026-06-18T19:26:13.378Z",
+  "updatedAt": "2026-06-18T20:13:53.115Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/point-dropper-quick-pic-gxAsonzSXL",
+    "fi": "/fi/guides/tak-guide/point-dropper-quick-pic-dnyOSYWlOg",
+    "sv": "/sv/guides/tak-guide/point-dropper-quick-pic-sTBDsrUhIs"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "1. Ta bilder och dela",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Quick Pic låter dig ta och dela bilder direkt.</li>\n<li>Välj <strong>Camera icon</strong> för att börja.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/9109cc5bb272b903.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Kameran öppnas",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Ta en bild som du vill.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/d6d74241e5e1b0f7.webp",
+              "width": 1080,
+              "height": 2340
+            }
+          ]
+        },
+        {
+          "title": "Fyll i detaljer",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Genom att trycka på <strong>Pen icon</strong> kan du fylla i detaljer på bilden.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/9149da436f4c2709.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Fyller i...",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Beskriv detaljerna som du vill.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/94d9e291cef5c019.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Byt namn på bilden",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Genom att trycka på <strong>Edit Name icon</strong> kan du byta namn på bilden.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/6c2f87cd6f97b770.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Byter namn...",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Ett beskrivande namn rekommenderas.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/620823070e61033d.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Dela via Send",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Liksom markörer finns Quick Pics endast på din enhet. Skicka till en Feed eller en Role (eller en användare).</li>\n<li>Deploy App x TAK:s standardmodell för delning hittas under Usage by Role.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/a3a3a3210e81ea7e.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Bifoga en fil till en markör",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Öppna en markör och välj ikonen <strong>Attachments</strong> (gem) för att lägga till en bild, video eller fil.</li>\n<li>Kryssa i <strong>Auto Send</strong> för att hålla markören uppdaterad mot nätverket ungefär var 60:e sekund.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/029fe4cc0794346f.webp",
+              "width": 349,
+              "height": 198
+            }
+          ]
+        },
+        {
+          "title": "Granska i Gallery",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Öppna verktyget <strong>Gallery</strong> för att bläddra bland alla mediabilagor med filnamn och länkat kartobjekt.</li>\n<li>Tryck på en bild och tryck sedan på raden högst upp för att lägga till en bildtext.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/2782222a4a682e38.webp",
+              "width": 425,
+              "height": 206
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

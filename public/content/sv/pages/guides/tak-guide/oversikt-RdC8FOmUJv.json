@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "id": "2d0a8e45-1ce2-469a-80f8-0da94eed3ef8",
+  "slug": "oversikt-RdC8FOmUJv",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Översikt",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "ANVÄNDNING EFTER ROLL",
+    "Översikt"
+  ],
+  "createdAt": "2026-06-18T19:27:20.021Z",
+  "updatedAt": "2026-06-18T20:16:59.666Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/overview-CVNzKhRcKY",
+    "fi": "/fi/guides/tak-guide/yleiskatsaus-dSxmQoNuM0",
+    "sv": "/sv/guides/tak-guide/oversikt-RdC8FOmUJv"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>(This tab should not be shown)</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "OpenDefence-standardmodellen",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Det finns många sätt att använda TAK. Vi erbjuder en användningsmodell som ger värde utan komplexitet.</li>\n<li><strong>Mål:</strong> hela enheten är medveten om väsentliga händelser inom några minuter efter observationen.</li>\n<li><strong>Observationsdataflöde:</strong> en soldat observerar något rapporterbart, informerar sin egen grupp och skickar en markör till <strong>HQ-rollen</strong> (kommandoplatsen). Kommandoplatsen verifierar och tolkar den och publicerar den sedan i <strong>spaningsflödet</strong> (Recon Feed) — som varje användare prenumererar på.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/26c9f9d12b8a6fac.webp",
+              "width": 2066,
+              "height": 1602
+            }
+          ]
+        },
+        {
+          "title": "Använda TAK som soldat",
+          "layout": "image-bottom",
+          "html": "<ol>\n<li>När du gör en observation, skapa en markör och <strong>skicka den till HQ-rollen</strong>.</li>\n<li>Rapportera enligt order.</li>\n<li>Utöver att skicka markören, gör observationen känd via andra medier enligt vad du blivit tillsagd (meddelanden, t.ex. med TAK GeoChat eller Deploy App:s Matrix RECON-kanal).</li>\n</ol>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/a984073033cdf039.webp",
+              "width": 2176,
+              "height": 954
+            }
+          ]
+        },
+        {
+          "title": "Soldater följer flödena…",
+          "layout": "image-bottom",
+          "html": "<ol start=\"3\">\n<li>Följ <strong>spaningsflödet</strong> (Recon Feed) — din kommandoplats (HQ) skapar och uppdaterar det för din enhet.</li>\n<li>Det innehåller den tolkade underrättelselägesbilden av din enhets observationer, inklusive dina.</li>\n</ol>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/9990aa9707a9ab73.webp",
+              "width": 2278,
+              "height": 1014
+            }
+          ]
+        },
+        {
+          "title": "…och kommandoplatsen producerar dem",
+          "layout": "image-bottom",
+          "html": "<ol>\n<li>TAK samlar in information från styrkan och distribuerar den tillbaka till dem.</li>\n<li><strong>Som kommandoplats</strong> skapar du enhetens <strong>flöden</strong> och använder <strong>HQ</strong>-teamrollen för att ta emot och tolka soldaternas observationer.</li>\n<li>För att tolka: bekräfta observationen med dess avsändare, dra slutsatser om möjligt, och lägg sedan till bekräftade observationer i <strong>spaningsflödet</strong> (Recon Feed).</li>\n</ol>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/10ce7a6b98a9baed.webp",
+              "width": 2604,
+              "height": 1012
+            }
+          ]
+        },
+        {
+          "title": "Producera de övriga flödena som CP",
+          "layout": "image-bottom",
+          "html": "<ol start=\"4\">\n<li>Underhåll <strong>spaningsflödet</strong> (Recon Feed): skicka markörer till det, uppdatera deras information och ta bort dem när informationen eller situationen förändras.</li>\n</ol>\n<ul>\n<li>\n<p>Kommandoplatsen producerar och kurerar de övriga flödena — <strong>RECON</strong>, <strong>PLAN</strong> och <strong>BLUFOR</strong>.</p>\n<p>\\</p>\n</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/a5b8303c5ef0853c.webp",
+              "width": 2444,
+              "height": 936
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

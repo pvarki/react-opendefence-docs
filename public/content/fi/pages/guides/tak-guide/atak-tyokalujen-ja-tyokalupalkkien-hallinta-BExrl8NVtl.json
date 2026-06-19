@@ -1,0 +1,118 @@
+{
+  "schemaVersion": 1,
+  "id": "6a8a3657-d2f0-4573-947d-f60962c48ecb",
+  "slug": "atak-tyokalujen-ja-tyokalupalkkien-hallinta-BExrl8NVtl",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "ATAK-työkalujen ja työkalupalkkien hallinta",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "Edistyneet ydintoiminnot",
+    "ATAK-työkalujen ja työkalupalkkien hallinta"
+  ],
+  "createdAt": "2026-06-18T19:27:14.540Z",
+  "updatedAt": "2026-06-18T20:15:11.332Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/how-to-manage-atak-tools-and-toolbars-PbkLQcvrCe",
+    "fi": "/fi/guides/tak-guide/atak-tyokalujen-ja-tyokalupalkkien-hallinta-BExrl8NVtl",
+    "sv": "/sv/guides/tak-guide/hantera-atak-verktyg-och-verktygsfalt-vbXQ19z45z"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Mukauta ATAK-työkalupalkki niin, että usein käyttämäsi työkalut ovat yhden napautuksen päässä, ja vaihda asetteluja nopeasti kentällä.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Avaa lisätyökalut",
+          "layout": "image-bottom",
+          "html": "<p>Napauta työkalupalkin vieressä olevaa <strong>Additional Tools</strong> -painiketta päästäksesi työkaluihin, jotka eivät ole palkissa. Ne avautuvat oletuksena ruudukkona.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/35e140ca871255f4.webp",
+              "width": 224,
+              "height": 32
+            }
+          ]
+        },
+        {
+          "title": "Vaihda luettelonäkymään",
+          "layout": "image-bottom",
+          "html": "<p>Napauta työkalupaneelissa <strong>List View</strong> nähdäksesi jokaisen työkalun nimineen pystysuorana luettelona. Helpompi lukea, kun vasta opettelet kuvakkeita.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/2ae607069497d712.webp",
+              "width": 121,
+              "height": 157
+            }
+          ]
+        },
+        {
+          "title": "Vaihda takaisin ruudukkonäkymään",
+          "layout": "image-bottom",
+          "html": "<p>Napauta <strong>Grid View</strong> pakataksesi työkalut takaisin tiiviiksi kuvakeruudukoksi. Käytä sitä asettelua, jonka koet nopeammaksi.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/9805c5db41d2281e.webp",
+              "width": 110,
+              "height": 156
+            }
+          ]
+        },
+        {
+          "title": "Muokkaa työkalupalkkia",
+          "layout": "image-bottom",
+          "html": "<p>Napauta <strong>Edit Toolbar</strong> siirtyäksesi muokkaustilaan. Oletustyökalupalkkia ei voi muuttaa, joten siitä tehdään sinulle kopio. Jos haluat aloittaa puhtaalta pöydältä, käytä <strong>Add Toolbar</strong> -toimintoa työkalupalkkien luettelossa.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/7d959b51feeccd7d.webp",
+              "width": 349,
+              "height": 163
+            }
+          ]
+        },
+        {
+          "title": "Lisää tai poista työkalu",
+          "layout": "image-bottom",
+          "html": "<p>Muokkaustilassa voit:</p>\n<ul>\n<li>Painaa pitkään ja vetää työkalun palkkiin, jolloin se <strong>lisätään</strong>.</li>\n<li>Vetää työkalun varatun paikan päälle, jolloin se <strong>korvataan</strong>.</li>\n<li>Painaa pitkään ja nimetä työkalun uudelleen sen nimikkeen kohdalta.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/352c0cf24ccac67c.webp",
+              "width": 400,
+              "height": 157
+            }
+          ]
+        },
+        {
+          "title": "Poista työkalu ja tallenna",
+          "layout": "image-bottom",
+          "html": "<p>Vedä työkalu roskakoriin, jolloin se <strong>poistetaan</strong> palkista ja palautetaan työkaluluetteloon. Kun olet valmis, napauta <strong>Save</strong>, ja työkalupalkki liittyy käytettävissä olevien luetteloon.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/a9e7e27ed2f07c43.webp",
+              "width": 207,
+              "height": 150
+            }
+          ]
+        },
+        {
+          "title": "Hallitse ja valitse työkalupalkkeja",
+          "layout": "image-bottom",
+          "html": "<p>Napauta <strong>Toolbar Manager</strong> nähdäksesi kaikki työkalupalkkisi.</p>\n<ul>\n<li>Valitse <strong>aktiivinen</strong> työkalupalkki valintapainikkeella, <strong>Edit</strong> tai <strong>Delete</strong> mikä tahansa rivi, ja käytä <strong>Export Toolbar</strong> / <strong>Import Toolbar</strong> jakaaksesi asettelun toisen TAK-käyttäjän kanssa.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/ae6d25344c1544fd.webp",
+              "width": 190,
+              "height": 194
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

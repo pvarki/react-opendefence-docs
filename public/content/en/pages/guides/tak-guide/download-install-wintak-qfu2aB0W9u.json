@@ -12,8 +12,13 @@
     "Download & install WinTAK"
   ],
   "createdAt": "2026-06-14T14:29:35.209Z",
-  "updatedAt": "2026-06-16T10:55:51.358Z",
+  "updatedAt": "2026-06-18T20:22:54.547Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/download-install-wintak-qfu2aB0W9u",
+    "fi": "/fi/guides/tak-guide/lataa-ja-asenna-wintak-Xx7Wycg9gb",
+    "sv": "/sv/guides/tak-guide/ladda-ner-och-installera-wintak-hTsXUKMaCS"
+  },
   "blocks": [
     {
       "type": "html",
@@ -26,7 +31,7 @@
         {
           "title": "Open Deploy App's TAK page",
           "layout": "text",
-          "html": "<p>Open Deploy App and go to the <strong>TAK</strong> page. It gives WinTAK users two downloads: the WinTAK application and your Client Package.</p>",
+          "html": "<p>Open Deploy App and go to the <strong>TAK</strong> page.</p>\n<ul>\n<li>It gives WinTAK users two downloads: the WinTAK application and your Client Package.</li>\n</ul>",
           "images": []
         },
         {

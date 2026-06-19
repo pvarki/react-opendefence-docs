@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "id": "88c3d986-0b1d-4fba-9b8e-bc17ed3649cc",
+  "slug": "rensa-innehall-ELxCoba17F",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Rensa innehåll",
+  "breadcrumb": [
+    "Platforms",
+    "WinTAK",
+    "GRUNDLÄGGANDE KÄRNFUNKTIONER",
+    "Rensa innehåll"
+  ],
+  "createdAt": "2026-06-18T19:33:26.901Z",
+  "updatedAt": "2026-06-18T20:23:45.667Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/clear-content-gLcPrq5b5J",
+    "fi": "/fi/guides/tak-guide/tyhjenna-sisalto-WetdafA5DU",
+    "sv": "/sv/guides/tak-guide/rensa-innehall-ELxCoba17F"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "1. Öppna WinTAK",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Öppna WinTAK-applikationen</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/cfea40303acd6836.webp",
+              "width": 84,
+              "height": 109
+            }
+          ]
+        },
+        {
+          "title": "2. Öppna WinTAK Clean Content-funktionen",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Öppna menyn från hamburgerikonen</li>\n<li>Öppna Clean Content</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/eb5517e521dd5f87.webp",
+              "width": 219,
+              "height": 437
+            }
+          ]
+        },
+        {
+          "title": "3. WinTAK Clear Content",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Gör dina val</li>\n<li>Aktivera Clear Now!</li>\n<li>Vänta tills data har raderats och applikationen stängs</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/2d27af1e79864820.webp",
+              "width": 320,
+              "height": 255
+            }
+          ]
+        },
+        {
+          "title": "Klart",
+          "layout": "text",
+          "html": "<ul>\n<li>Du kan stänga den här guiden.</li>\n</ul>\n<hr>",
+          "images": []
+        }
+      ]
+    },
+    {
+      "type": "html",
+      "html": "<p>Fortsätt aktiveringen: <a href=\"/doc/8d02b881-5071-435c-b1f3-7d3de6e70f63\">Start from Download</a></p>"
+    }
+  ]
+}

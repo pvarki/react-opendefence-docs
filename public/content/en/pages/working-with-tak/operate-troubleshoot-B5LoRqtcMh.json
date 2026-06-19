@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "id": "4a4e6bd9-7384-4e83-9b6c-4d9cabab1ca3",
+  "slug": "operate-troubleshoot-B5LoRqtcMh",
+  "collection": "working-with-tak",
+  "locale": "en",
+  "title": "Operate & troubleshoot",
+  "breadcrumb": [
+    "Federation Hub: connecting multiple TAK Servers",
+    "Operate & troubleshoot"
+  ],
+  "createdAt": "2026-06-17T19:13:32.486Z",
+  "updatedAt": "2026-06-17T19:13:36.458Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Watch the federation",
+      "id": "watch-the-federation"
+    },
+    {
+      "depth": 2,
+      "text": "Resilience: Mission Federation Disruption Tolerance (MFDT)",
+      "id": "resilience-mission-federation-disruption-tolerance-mfdt"
+    },
+    {
+      "depth": 2,
+      "text": "Blocking files across the federation",
+      "id": "blocking-files-across-the-federation"
+    },
+    {
+      "depth": 2,
+      "text": "Settings",
+      "id": "settings"
+    },
+    {
+      "depth": 2,
+      "text": "Troubleshooting",
+      "id": "troubleshooting"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<h2 id=\"watch-the-federation\"><a href=\"#watch-the-federation\">Watch the federation</a></h2>\n<ul>\n<li><strong>Active Connections</strong> — the double-arrow toolbar icon (or a node → <em>Show Active Connections</em>) lists every live link: connection id, local/remote type (<code>FEDERATION_HUB_SERVER</code> ↔ <code>FEDERATION_TAK_CLIENT</code>), remote address, federation protocol version, and <strong>group identities</strong>. You can <strong>Disconnect</strong> a federate here.</li>\n<li><strong>Metrics Dashboard</strong> — heap, CPU, <strong>total connections</strong>, and network I/O (reads/writes), with a short history.</li>\n</ul>\n<h2 id=\"resilience-mission-federation-disruption-tolerance-mfdt\"><a href=\"#resilience-mission-federation-disruption-tolerance-mfdt\">Resilience: Mission Federation Disruption Tolerance (MFDT)</a></h2>\n<p>If you enabled the optional <strong>MongoDB</strong>, the hub <strong>stores and forwards Data Sync / mission changes</strong> that happen while a federate (or another hub) is disconnected, and delivers them on reconnect. Without it, mission changes during an outage are lost. Enable it when deployments federate over unreliable links.</p>\n<h2 id=\"blocking-files-across-the-federation\"><a href=\"#blocking-files-across-the-federation\">Blocking files across the federation</a></h2>\n<p>Federated <strong>data packages and missions</strong> can carry files you may not want crossing deployments. TAK Server's <strong>Data Package and Mission File Blocker</strong> blocks configured file extensions in federated content (default <code>**.pref**</code>, since device-profile prefs shouldn't leak between deployments). Configure it on the federating TAK Servers.</p>\n<h2 id=\"settings\"><a href=\"#settings\">Settings</a></h2>\n<p>The hub <strong>Settings</strong> page offers <strong>Download Self CA</strong> (grab <code>ca.pem</code> from the browser) and <strong>Restart Broker</strong> (restart the messaging micro-service).</p>\n<h2 id=\"troubleshooting\"><a href=\"#troubleshooting\">Troubleshooting</a></h2>\n<table>\n<thead>\n<tr>\n<th>Symptom</th>\n<th>Likely cause</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Federate <strong>can't connect</strong> / connection refused</td>\n<td>The server isn't in the <strong>active</strong> policy. Add its CA Group and <strong>re-upload</strong> the policy (cloud icon).</td>\n</tr>\n<tr>\n<td>Connects (green node) but <strong>no data flows</strong></td>\n<td>Group filtering. For anything beyond <em>Allow All</em>, the <strong>source must run group mapping</strong>; check the edge's Allowed/Disallowed groups and that both sides use the <strong>same group names</strong>.</td>\n</tr>\n<tr>\n<td>TLS / cert errors</td>\n<td>CA not shared <strong>both</strong> ways — re-check <a href=\"/en/working-with-tak/establish-trust-share-cas-sUaHBtGVfZ\">Establish trust</a> (server CA → hub, hub CA → server's federation truststore).</td>\n</tr>\n<tr>\n<td>Changes don't take effect</td>\n<td>You edited the graph but didn't <strong>save + upload</strong> the policy.</td>\n</tr>\n<tr>\n<td>mTLS impossible on the network</td>\n<td>Switch that link to <strong>token auth</strong> (port 9103; CA Group <em>Allow Token Auth</em> or a <em>Token Group</em>).</td>\n</tr>\n<tr>\n<td>Mission edits lost after an outage</td>\n<td>Enable <strong>MFDT</strong> (MongoDB).</td>\n</tr>\n</tbody>\n</table>\n<p>→ Next: <a href=\"/en/working-with-tak/references-jcEIPLZieK\">References</a>.</p>"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "id": "768f3122-cc47-4d3a-ab80-77b82e0e0483",
+  "slug": "getting-data-from-tak-server-hszJWvv9UM",
+  "collection": "working-with-tak",
+  "locale": "en",
+  "title": "Getting data from TAK Server",
+  "breadcrumb": [
+    "Integrating to TAK Server",
+    "Getting data from TAK Server"
+  ],
+  "createdAt": "2026-06-17T18:21:47.006Z",
+  "updatedAt": "2026-06-17T18:33:30.659Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Live CoT (subscriptions)",
+      "id": "live-cot-subscriptions"
+    },
+    {
+      "depth": 2,
+      "text": "Missions (Data Sync)",
+      "id": "missions-data-sync"
+    },
+    {
+      "depth": 3,
+      "text": "Roles & groups on a mission",
+      "id": "roles--groups-on-a-mission"
+    },
+    {
+      "depth": 3,
+      "text": "The RECON feed (Deploy App convention)",
+      "id": "the-recon-feed-deploy-app-convention"
+    },
+    {
+      "depth": 2,
+      "text": "Files & data packages (Enterprise Sync)",
+      "id": "files--data-packages-enterprise-sync"
+    },
+    {
+      "depth": 2,
+      "text": "Groups, data feeds & config (read)",
+      "id": "groups-data-feeds--config-read"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>There are two ways to read: <strong>subscribe</strong> to the live CoT stream, or <strong>pull</strong> persisted data through the Marti API. Most integrations use both — the stream for \"what's happening now,\" the API for \"what's stored.\"</p>\n<p>All paths below are under your TAK Server host; confirm exact parameters and response shapes in <a href=\"/en/working-with-tak/the-marti-api-the-spec-zWa3vFfeKt\">the spec</a>. Every request carries your mTLS client certificate.</p>\n<h2 id=\"live-cot-subscriptions\"><a href=\"#live-cot-subscriptions\">Live CoT (subscriptions)</a></h2>\n<p>To receive real-time events, you act as a TAK client: open the <strong>TLS streaming</strong> connection and you'll receive the CoT for the groups you read from. The Marti API lets you register and shape subscriptions:</p>\n<ul>\n<li><code>POST /Marti/api/subscriptions/add</code> — add a subscription.</li>\n<li><code>PUT</code> / <code>DELETE /Marti/api/subscriptions/{clientUid}/filter</code> — set or clear a server-side filter for a client (limit what's delivered).</li>\n<li><code>POST /Marti/api/subscriptions/incognito/{uid}</code> — subscribe without announcing presence.</li>\n<li><code>GET /Marti/api/subscriptions/all</code> (and related) — inspect current subscriptions.</li>\n</ul>\n<p>What you receive is always scoped by your <strong>groups</strong> — you can't subscribe your way past access control.</p>\n<h2 id=\"missions-data-sync\"><a href=\"#missions-data-sync\">Missions (Data Sync)</a></h2>\n<p>Missions are the main store of shared, structured content. To read:</p>\n<ul>\n<li><code>GET /Marti/api/missions</code> — list missions you can see.</li>\n<li><code>GET /Marti/api/missions/{name}</code> (or <code>…/guid/{missionGuid}</code>) — a mission's details.</li>\n<li>Its <strong>contents</strong> (files, CoT, attachments), <strong>layers</strong>, <strong>logs</strong>, <strong>role</strong>, and <strong>subscription</strong> are exposed as sub-resources, e.g. <code>GET /Marti/api/missions/{missionName}/subscription</code>, <code>GET /Marti/api/missions/{missionName}/role</code>.</li>\n<li><strong>Subscribe to a mission</strong> to be notified of changes: <code>PUT /Marti/api/missions/{missionName}/subscription</code>.</li>\n</ul>\n<p>Missions can be <strong>nested</strong> (parent/child) and protected by <strong>role</strong>, <strong>password</strong>, and <strong>keywords</strong> — all visible in the spec.</p>\n<h3 id=\"roles--groups-on-a-mission\"><a href=\"#roles--groups-on-a-mission\">Roles &#x26; groups on a mission</a></h3>\n<p>Two things decide what you can do with a mission, and both surface in the API and in the <strong>Mission Manager</strong> UI (<code>https://&#x3C;server>:8443/Marti/MissionManager.html</code>):</p>\n<ul>\n<li><code>**defaultRole**</code> — the permission a subscriber gets by default: <strong>ReadOnly</strong>, <strong>ReadWrite</strong>, or <strong>Owner</strong>. To read content you need at least ReadOnly; to write you need ReadWrite/Owner.</li>\n<li><strong>Groups</strong> — which TAK Server groups can see and subscribe to the mission at all (see <a href=\"/en/working-with-tak/keycloak-identity-groups-WXsDTvK7H8\">Keycloak: identity &#x26; groups</a>). Group visibility gates access <em>before</em> role does.</li>\n</ul>\n<p>So \"subscribe → read\" works only if your identity is in a group the mission is shared to <strong>and</strong> your role is at least ReadOnly.</p>\n<h3 id=\"the-recon-feed-deploy-app-convention\"><a href=\"#the-recon-feed-deploy-app-convention\">The RECON feed (Deploy App convention)</a></h3>\n<p>On a Deploy App / PVARKI deployment there's a standard server-wide mission called the <strong>RECON feed</strong> — for reviewed, verified intelligence that command wants everyone to see. By convention every user subscribes to it (read), while command/HQ roles maintain it (write). For an integration it's the obvious feed to <strong>subscribe to</strong> for a live picture of vetted friendly/enemy information — and, if your service is a command tool, the place to <strong>publish</strong> vetted observations. See the <em>Takserver RECON feed</em> and <em>Mission Manager (Data Sync)</em> wiki pages for the operator view.</p>\n<h2 id=\"files--data-packages-enterprise-sync\"><a href=\"#files--data-packages-enterprise-sync\">Files &#x26; data packages (Enterprise Sync)</a></h2>\n<p>TAK Server's Enterprise Sync is a <strong>content-addressed</strong> store: every file is referenced by a <strong>hash</strong>. To read:</p>\n<ul>\n<li>Fetch a stored file by its hash (the Enterprise Sync content endpoint — see the spec for the exact path/params).</li>\n<li><code>…/Marti/api/sync/metadata/{hash}/…</code> and <code>/Marti/api/files/{hash}/metadata</code> — read/set metadata, keywords, expiration for a stored object.</li>\n</ul>\n<p>Mission contents typically reference Enterprise Sync hashes, so \"list a mission's contents → fetch each by hash\" is a common read loop.</p>\n<h2 id=\"groups-data-feeds--config-read\"><a href=\"#groups-data-feeds--config-read\">Groups, data feeds &#x26; config (read)</a></h2>\n<ul>\n<li><code>GET /Marti/api/groups</code> (and <code>/groups/active…</code>) — the groups you belong to / are active.</li>\n<li><code>GET /Marti/api/datafeeds/{name}</code> — inspect configured data feeds.</li>\n<li><code>GET /Marti/api/inputs/config</code>, <code>GET /Marti/api/federationconfig</code>, etc. — server-side configuration (admin-scoped).</li>\n</ul>\n<p>→ Next: <a href=\"/en/working-with-tak/pushing-data-to-tak-server-WDTB0ov6LS\">Pushing data to TAK Server</a>.</p>"
+    }
+  ]
+}

@@ -8,13 +8,17 @@
   "breadcrumb": [
     "Platforms",
     "WinTAK",
-    "USING WINTAK FEATURES",
-    "Basic Features",
+    "BASIC CORE FEATURES",
     "Use GeoChat"
   ],
   "createdAt": "2025-12-05T22:05:59.366Z",
-  "updatedAt": "2026-06-15T13:52:58.519Z",
+  "updatedAt": "2026-06-18T20:23:39.735Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/use-geochat-G4fqV0Y4fg",
+    "fi": "/fi/guides/tak-guide/kayta-geochatia-F9hZhCTnub",
+    "sv": "/sv/guides/tak-guide/anvand-geochat-D5tfU0DNdl"
+  },
   "blocks": [
     {
       "type": "html",
@@ -27,7 +31,7 @@
         {
           "title": "Open GeoChat",
           "layout": "text",
-          "html": "<p>Open <strong>GeoChat</strong> from the WinTAK toolbar. It lists your conversations — all-chat, teams/groups, and individual users.</p>",
+          "html": "<p>Open <strong>GeoChat</strong> from the WinTAK toolbar.</p>\n<ul>\n<li>It lists your conversations — all-chat, teams/groups, and individual users.</li>\n</ul>",
           "images": []
         },
         {

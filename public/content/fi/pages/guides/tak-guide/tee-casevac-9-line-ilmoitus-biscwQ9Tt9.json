@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "id": "4fc19f4d-bc37-4345-966a-600ff7dbae4a",
+  "slug": "tee-casevac-9-line-ilmoitus-biscwQ9Tt9",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Tee CASEVAC 9-line -ilmoitus",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "Edistyneet ydintoiminnot",
+    "Tee CASEVAC 9-line -ilmoitus"
+  ],
+  "createdAt": "2026-06-18T19:27:16.111Z",
+  "updatedAt": "2026-06-18T20:15:14.599Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/drop-a-casevac-9-line-sstaZDEz76",
+    "fi": "/fi/guides/tak-guide/tee-casevac-9-line-ilmoitus-biscwQ9Tt9",
+    "sv": "/sv/guides/tak-guide/gor-en-casevac-9-line-rapport-gRMiZFjKj2"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Merkitse loukkaantunut kartalle ja lähetä täydellinen 9-line- / ZMIST-raportti esikunnalle.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Aseta CASEVAC-merkki",
+          "layout": "image-bottom",
+          "html": "<p>Avaa lisätyökalujen valikko, valitse <strong>CASEVAC</strong>-kuvake ja napauta sitten loukkaantuneen sijaintia kartalla asettaaksesi merkin.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/6739363f95c82b43.webp",
+              "width": 241,
+              "height": 205
+            }
+          ]
+        },
+        {
+          "title": "Tarkenna sijaintia",
+          "layout": "image-bottom",
+          "html": "<p>Merkki avaa säteittäisvalikon. Käytä <strong>Fine Adjust</strong> -toimintoa siirtääksesi pisteen tarkalleen oikeaan kohtaan. Paina keltaisia nuolia pitkään hienosäätöä varten.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/6739363f95c82b43.webp",
+              "width": 241,
+              "height": 205
+            }
+          ]
+        },
+        {
+          "title": "Avaa CASEVAC-tiedot",
+          "layout": "image-bottom",
+          "html": "<p>Valitse säteittäisvalikosta <strong>Details</strong>-kuvake avataksesi CASEVAC-tietoikkunan, jossa täytät raportin.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/6739363f95c82b43.webp",
+              "width": 241,
+              "height": 205
+            }
+          ]
+        },
+        {
+          "title": "Täytä yhdeksän riviä",
+          "layout": "image-bottom",
+          "html": "<p>Käy läpi rivit 1–9: sijainti, kutsutunnus, <strong>Patient by Precedence</strong>, <strong>Patient by Type</strong>, vihollinen alueella ja <strong>Patients by Nationality</strong>.</p>\n<ul>\n<li>Lisää vapaata tekstiä kohtaan <strong>Remarks</strong>.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/9636a2dc4ef53de0.webp",
+              "width": 281,
+              "height": 485
+            }
+          ]
+        },
+        {
+          "title": "Lisää ZMIST-raportti",
+          "layout": "image-bottom",
+          "html": "<p>Valitse <strong>ZMIST</strong>-kohdan vierestä <strong>Add</strong> liittääksesi ZMIST-raportin (ZAP-numero, Mechanism, Injury, Signs, Treatment).</p>\n<ul>\n<li>Napauta <strong>Add</strong> uudelleen lisätäksesi useampia loukkaantuneita; poista yksi valitsemalla <strong>Delete</strong>.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/9636a2dc4ef53de0.webp",
+              "width": 281,
+              "height": 485
+            }
+          ]
+        },
+        {
+          "title": "Liitä tiedostot ja lähetä",
+          "layout": "image-bottom",
+          "html": "<p>Valitse <strong>Attachment</strong> (paperiliitin) -kuvake lisätäksesi valokuvia tai tiedostoja. Kun raportti on valmis, valitse <strong>Send</strong> lähettääksesi CASEVAC-raportin kontakteillesi.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/9636a2dc4ef53de0.webp",
+              "width": 281,
+              "height": 485
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

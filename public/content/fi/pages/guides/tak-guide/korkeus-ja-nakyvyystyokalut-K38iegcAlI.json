@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "id": "d0f303b3-1c20-4814-a16d-daefe588acf9",
+  "slug": "korkeus-ja-nakyvyystyokalut-K38iegcAlI",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Korkeus- ja näkyvyystyökalut",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "LISÄOMINAISUUDET",
+    "Korkeus, maasto ja karttatyökalut",
+    "Korkeus- ja näkyvyystyökalut"
+  ],
+  "createdAt": "2026-06-18T19:29:24.259Z",
+  "updatedAt": "2026-06-18T20:21:23.199Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/elevation-viewshed-tools-Vqje1Ybg0d",
+    "fi": "/fi/guides/tak-guide/korkeus-ja-nakyvyystyokalut-K38iegcAlI",
+    "sv": "/sv/guides/tak-guide/hojd-och-siktverktyg-i9f2Drimqi"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Lue maasto ennen liikkumista: varjosta maasto korkeuden tai jyrkkyyden mukaan, tarkista mitä asemasta todella näkee ja piirrä korkeuskäyrät. Vaatii korkeustietojen (DTED, SRTM tai vastaava) lataamisen.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Varjosta maasto korkeuden mukaan",
+          "layout": "image-bottom",
+          "html": "<p>Napauta <strong>Elevation Tools</strong> -kuvaketta ja rastita <strong>Heatmap</strong>-välilehdellä <strong>Show</strong>.</p>\n<ul>\n<li>Matala maasto näkyy sinisenä, korkea maasto punaisena.</li>\n<li>Säädä <strong>Intensity</strong>, <strong>Saturation</strong> ja <strong>Value</strong> mieleiseksi.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/e07bd0af70135334.webp",
+              "width": 497,
+              "height": 226
+            }
+          ]
+        },
+        {
+          "title": "Näe jyrkkä maasto",
+          "layout": "image-bottom",
+          "html": "<p>Vaihda <strong>Heatmap</strong>-ruudussa valinnaksi <strong>Terrain Slope</strong>.</p>\n<ul>\n<li>Loivat rinteet näkyvät keltaisina, jyrkkä maasto mustana.</li>\n<li>Vedä <strong>Intensity</strong> selventääksesi kuvaa.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/a9beadee890172dc.webp",
+              "width": 496,
+              "height": 225
+            }
+          ]
+        },
+        {
+          "title": "Aseta näkyvyysalue",
+          "layout": "image-bottom",
+          "html": "<p>Napauta <strong>Viewshed</strong>-välilehdellä <strong>Place Viewshed</strong> (silmä) ja napauta sitten paikkaa tai merkkiä.</p>\n<ul>\n<li>Vihreä = näkyy sieltä, punainen = peittyy.</li>\n<li>Lähennä, jos vain silmäkuvake näkyy.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/1207561beb07e562.webp",
+              "width": 207,
+              "height": 420
+            }
+          ]
+        },
+        {
+          "title": "Säädä mitä se näkee",
+          "layout": "image-bottom",
+          "html": "<p>Aseta asemalle <strong>Height Above marker</strong> ja <strong>Radius</strong>.</p>\n<ul>\n<li>Vaihda <strong>Source</strong> maaston (Terrain) ja pinnan (Surface) välillä ja häivytä kumpaakin aluetta <strong>Seen</strong> / <strong>Unseen</strong> -liukusäätimillä.</li>\n<li><strong>Remove Viewshed</strong> poistaa sen.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/1207561beb07e562.webp",
+              "width": 207,
+              "height": 420
+            }
+          ]
+        },
+        {
+          "title": "Piirrä korkeuskäyrät",
+          "layout": "image-bottom",
+          "html": "<p>Aseta <strong>Contour</strong>-välilehdellä <strong>Interval</strong> ja yksiköt (m tai ft) ja napauta sitten <strong>Generate</strong>, kun olet lähentänyt käyttökelpoiseen mittakaavaan.</p>\n<ul>\n<li>Vaihda <strong>Lines</strong> ja <strong>Minor Lines</strong> päälle ja pois niiden <strong>SHOW</strong>-painikkeilla.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/1ac7bc7784ccc351.webp",
+              "width": 517,
+              "height": 299
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

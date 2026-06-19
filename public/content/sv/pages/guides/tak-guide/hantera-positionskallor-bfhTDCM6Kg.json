@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "9e50019c-471b-43d9-b11c-fea30ef36580",
+  "slug": "hantera-positionskallor-bfhTDCM6Kg",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Hantera positionskällor",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "YTTERLIGARE FUNKTIONER",
+    "Navigering och koordinater",
+    "Hantera positionskällor"
+  ],
+  "createdAt": "2026-06-18T19:28:23.591Z",
+  "updatedAt": "2026-06-18T20:19:59.687Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/control-location-providers-WuJJaCfIYG",
+    "fi": "/fi/guides/tak-guide/hallitse-sijaintilahteita-RakVzDRlad",
+    "sv": "/sv/guides/tak-guide/hantera-positionskallor-bfhTDCM6Kg"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Välj varifrån ATAK hämtar din position — intern GPS, Wi-Fi/mobilnät eller en extern mottagare — så att din punkt på kartan förblir korrekt.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Välj din positionskälla",
+          "layout": "image-bottom",
+          "html": "<p>Öppna <strong>Location Input Manager</strong> för att se varje källa med en kort beskrivning. Markera <strong>Enabled</strong>-kryssrutan för att slå på eller av en källa:</p>\n<ul>\n<li><strong>Internal GNSS/GPS Receiver</strong> — enhetens egna GPS-chip.</li>\n<li><strong>WiFi/Cell Signal Derived (NETD)</strong> — position från mobilmaster och Wi-Fi.</li>\n<li><strong>Serial Monitor Input</strong> — en extern GPS-mottagare via seriellt gränssnitt.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/c7f96abb7f4c2edb.webp",
+              "width": 299,
+              "height": 314
+            }
+          ]
+        },
+        {
+          "title": "Ställ in prioritetsordningen",
+          "layout": "image-bottom",
+          "html": "<p>Dra det grå fältet till vänster om en källa uppåt eller nedåt för att ändra ordningen. ATAK använder den första källan i listan och växlar till nästa om den inte får någon positionsbestämning.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/c7f96abb7f4c2edb.webp",
+              "width": 299,
+              "height": 314
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

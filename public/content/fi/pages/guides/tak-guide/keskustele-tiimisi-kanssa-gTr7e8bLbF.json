@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "id": "84921950-7102-42cd-acc1-a2de7de41309",
+  "slug": "keskustele-tiimisi-kanssa-gTr7e8bLbF",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Keskustele tiimisi kanssa",
+  "breadcrumb": [
+    "Platforms",
+    "TAK Tracker - Android",
+    "PERUSTOIMINNOT",
+    "Keskustele tiimisi kanssa"
+  ],
+  "createdAt": "2026-06-18T19:44:12.892Z",
+  "updatedAt": "2026-06-18T20:26:48.210Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/chat-with-your-team-y6xwtxc8G9",
+    "fi": "/fi/guides/tak-guide/keskustele-tiimisi-kanssa-gTr7e8bLbF",
+    "sv": "/sv/guides/tak-guide/chatta-med-ditt-team-xB04rNQEjp"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>TAK Tracker voi lähettää ja vastaanottaa tekstiviestejä kaikkien palvelimella olevien kanssa — niin ATAK-, WinTAK- kuin muidenkin TAK Tracker -käyttäjien.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Avaa Chat ja lähetä viesti",
+          "layout": "image-bottom",
+          "html": "<p>Avaa viesti-ikkuna napauttamalla työkalupalkin <strong>Chat</strong>-painiketta, kirjoita viestisi ja lähetä se. Kuka tahansa samalle palvelimelle liittynyt voi lukea sen ja vastata.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/f320db307bcbc020.webp",
+              "width": 114,
+              "height": 170
+            }
+          ]
+        },
+        {
+          "title": "Huomaa lukemattomat viestit",
+          "layout": "text",
+          "html": "<p><strong>Chat</strong>-kuvake näyttää lukemattomien viestien määrän punaisella. Napauta sitä avataksesi keskustelun ja nollataksesi laskurin.</p>",
+          "images": []
+        }
+      ]
+    }
+  ]
+}

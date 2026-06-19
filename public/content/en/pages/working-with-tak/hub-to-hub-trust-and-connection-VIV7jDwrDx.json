@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "id": "641da670-e20e-41b0-ae04-9a829e8b3ecb",
+  "slug": "hub-to-hub-trust-and-connection-VIV7jDwrDx",
+  "collection": "working-with-tak",
+  "locale": "en",
+  "title": "Hub-to-hub trust and connection",
+  "breadcrumb": [
+    "Wire up two Federation Hubs (IaC)",
+    "Hub-to-hub trust and connection"
+  ],
+  "createdAt": "2026-06-17T20:25:59.514Z",
+  "updatedAt": "2026-06-19T14:18:54.666Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Cross-trust the two hub CAs",
+      "id": "cross-trust-the-two-hub-cas"
+    },
+    {
+      "depth": 2,
+      "text": "Who initiates the link",
+      "id": "who-initiates-the-link"
+    },
+    {
+      "depth": 2,
+      "text": "When mTLS cannot traverse the link",
+      "id": "when-mtls-cannot-traverse-the-link"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>A hub-to-hub link is another mutual-TLS federation connection, so the same rule applies: each hub must trust the other's CA, and one side initiates.</p>\n<h2 id=\"cross-trust-the-two-hub-cas\"><a href=\"#cross-trust-the-two-hub-cas\">Cross-trust the two hub CAs</a></h2>\n<p>Each hub already trusts its own servers' CAs (from the single-hub guide). To link the hubs, add one CA each way, via your pipeline:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span>   HUB A CA  ─────▶  HUB B federation truststore</span></span>\n<span class=\"line\"><span>   HUB B CA  ─────▶  HUB A federation truststore</span></span></code></pre>",
+      "lang": "plaintext"
+    },
+    {
+      "type": "html",
+      "html": "<ul>\n<li>Each hub's CA is the one you established when you gave it an identity (enrolled as a Deploy App product via RASENMAEHER <code>sign_csr</code>, or its own CA).</li>\n<li>Import the peer hub's <code>ca.pem</code> into this hub's <code>fed-truststore.jks</code> (the same truststore the broker uses). Your IaC has both PEMs, so this is fanning out two CAs.</li>\n</ul>\n<p>No server-side change is needed. The servers behind a hub do not need to know the other hub exists; they trust their own hub, and the hubs trust each other.</p>\n<h2 id=\"who-initiates-the-link\"><a href=\"#who-initiates-the-link\">Who initiates the link</a></h2>\n<p>In each hub's policy, an Outgoing node initiates a connection from that hub to another TAK Server or hub. For a hub-to-hub link, add an Outgoing node on one hub pointing at the other hub's v2 federation port 9102:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span>  HUB A policy:  Outgoing → HUB B  (host = hub-b, port = 9102, enabled)</span></span></code></pre>",
+      "lang": "plaintext"
+    },
+    {
+      "type": "html",
+      "html": "<p>Only one side initiates. Pick the side with the more stable or forward network position and apply it consistently (for example, the central hub connects to the group hubs, or the reverse). The other hub accepts the inbound connection because it trusts hub A's CA.</p>\n<h2 id=\"when-mtls-cannot-traverse-the-link\"><a href=\"#when-mtls-cannot-traverse-the-link\">When mTLS cannot traverse the link</a></h2>\n<p>Links between sites are the ones most likely to hit break-and-inspect middleboxes. If full mTLS cannot pass, use token authentication on the inter-hub link instead:</p>\n<ul>\n<li>Enable a token-auth port (9103) on the accepting hub (<code>federationTokenAuthServers: [{type: jwt, port: 9103}]</code>).</li>\n<li>On the initiating hub's Outgoing node, set Use Token Authentication and supply a token (Automatic via the peer's Allow Token Auth CA Group, or a Token Group token your pipeline mints and injects).</li>\n</ul>\n<p>mTLS remains the default and the more secure choice for links you control end to end.</p>\n<p>→ Next: <a href=\"/en/working-with-tak/policy-and-group-filtering-across-hubs-MvZAotZIQl\">Policy and group filtering across hubs</a>.</p>"
+    }
+  ]
+}

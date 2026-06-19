@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "c6a05d39-fcff-4119-85ef-2986ff865569",
+  "slug": "ledningsplats-uoVsr9jP0D",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Ledningsplats",
+  "breadcrumb": [
+    "Platforms",
+    "TAK Tracker - Apple",
+    "Användning efter roll",
+    "Ledningsplats"
+  ],
+  "createdAt": "2026-06-18T19:45:52.695Z",
+  "updatedAt": "2026-06-18T20:27:47.571Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/command-post-aX04WiqaZf",
+    "fi": "/fi/guides/tak-guide/komentopaikka-q4LRKdr4q0",
+    "sv": "/sv/guides/tak-guide/ledningsplats-uoVsr9jP0D"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>(Den här fliken ska inte visas)</p>"
+    }
+  ]
+}

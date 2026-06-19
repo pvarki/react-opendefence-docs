@@ -8,13 +8,17 @@
   "breadcrumb": [
     "Platforms",
     "WinTAK",
-    "USING WINTAK FEATURES",
-    "Advanced Features",
+    "ADVANCED CORE FEATURES",
     "Draw & share Plans"
   ],
   "createdAt": "2025-12-05T22:05:59.301Z",
-  "updatedAt": "2026-06-15T13:52:58.978Z",
+  "updatedAt": "2026-06-18T20:23:50.774Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/draw-share-plans-gUzuEffh5v",
+    "fi": "/fi/guides/tak-guide/piirra-ja-jaa-suunnitelmia-yKzNNsotOO",
+    "sv": "/sv/guides/tak-guide/rita-och-dela-planer-C7UNuLt8oq"
+  },
   "blocks": [
     {
       "type": "html",

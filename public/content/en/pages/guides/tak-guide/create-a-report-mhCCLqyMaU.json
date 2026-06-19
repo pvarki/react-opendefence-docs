@@ -8,13 +8,18 @@
   "breadcrumb": [
     "Platforms",
     "WinTAK",
-    "Supported Plugins",
+    "SUPPORTED PLUGINS",
     "Reports",
     "Create a report"
   ],
   "createdAt": "2026-06-16T10:20:49.489Z",
-  "updatedAt": "2026-06-16T10:20:49.489Z",
+  "updatedAt": "2026-06-18T20:24:56.791Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/create-a-report-mhCCLqyMaU",
+    "fi": "/fi/guides/tak-guide/luo-raportti-DDE5rNDUyr",
+    "sv": "/sv/guides/tak-guide/skapa-en-rapport-YA4jfgqpea"
+  },
   "blocks": [
     {
       "type": "html",

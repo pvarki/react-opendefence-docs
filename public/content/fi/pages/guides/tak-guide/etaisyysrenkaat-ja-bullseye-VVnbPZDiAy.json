@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "id": "a86836d7-d6b0-4a30-9540-12751b6a5aba",
+  "slug": "etaisyysrenkaat-ja-bullseye-VVnbPZDiAy",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Etäisyysrenkaat ja bullseye",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "LISÄOMINAISUUDET",
+    "Etäisyys- ja suuntimatyökalut",
+    "Etäisyysrenkaat ja bullseye"
+  ],
+  "createdAt": "2026-06-18T19:29:20.193Z",
+  "updatedAt": "2026-06-18T20:20:44.487Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/range-rings-bullseye-NHJCYsh6xN",
+    "fi": "/fi/guides/tak-guide/etaisyysrenkaat-ja-bullseye-VVnbPZDiAy",
+    "sv": "/sv/guides/tak-guide/avstandsringar-och-bullseye-UbZpRppvDe"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Lisää kartalle etäisyysrenkaita tai bullseye-ruudukko arvioidaksesi etäisyyttä ja suuntaa pisteeseen, ja jaa se sitten ryhmällesi.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Lisää etäisyysrengasympyrä",
+          "layout": "image-bottom",
+          "html": "<p>Napauta työkalupalkin <strong>Circle</strong>-kuvaketta ottaaksesi ympyrätyökalun käyttöön (keltainen), ja napauta sitten karttaa keskipisteen asettamiseksi. Napauta ympyrän keskipistettä avataksesi sen säteittäisvalikon.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/7d9031fef93fb31a.webp",
+              "width": 228,
+              "height": 209
+            }
+          ]
+        },
+        {
+          "title": "Aseta säde ja renkaiden määrä",
+          "layout": "image-bottom",
+          "html": "<p>Napauta säteittäisvalikossa <strong>Details</strong>. Aseta <strong>Radius</strong>, <strong>Rings</strong>-määrä ja yksikkö. Ympyrä piirtyy uudelleen määritysten mukaan ja se voidaan lähettää tai jakaa muille käyttäjille.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/31e2a2101114961c.webp",
+              "width": 183,
+              "height": 202
+            }
+          ]
+        },
+        {
+          "title": "Lisää bullseye-ruudukko",
+          "layout": "image-bottom",
+          "html": "<p><strong>Bullseye</strong>-työkalu lisää ympyrämäisen ruudukon, jossa suuntaviivat 30 asteen välein. Kulmat luetaan joko <strong>From Center</strong> (punainen, poispäin) tai keskipistettä kohti (vihreä).</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/7522e73b31c8f85d.webp",
+              "width": 270,
+              "height": 154
+            }
+          ]
+        },
+        {
+          "title": "Säädä bullseye",
+          "layout": "image-bottom",
+          "html": "<p>Napauta bullseyen keskipistettä avataksesi sen säteittäisvalikon.</p>\n<ul>\n<li>Käytä <strong>Range Rings</strong> lisätäksesi renkaita, <strong>Angle Bearing Units</strong> vaihtaaksesi yksikköjä ja <strong>Fine Adjust</strong> siirtääksesi keskipistettä hienovaraisesti.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/8cf64fccd6867c20.webp",
+              "width": 225,
+              "height": 192
+            }
+          ]
+        },
+        {
+          "title": "Aseta suunta ja lähetä",
+          "layout": "image-bottom",
+          "html": "<p>Napauta <strong>Details</strong>. Aseta <strong>Direction</strong> (From Center tai sitä kohti), kulmayksiköt ja <strong>Show Range Rings</strong>. Napauta <strong>Send</strong> jakaaksesi bullseyen muille käyttäjille.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/1587c4e2b57b5b78.webp",
+              "width": 186,
+              "height": 204
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "id": "4c0c2cdb-161f-4838-822b-a00857491827",
+  "slug": "laheta-hatahalytys-qv6woTAZ5H",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Lähetä hätähälytys",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "Edistyneet ydintoiminnot",
+    "Lähetä hätähälytys"
+  ],
+  "createdAt": "2026-06-18T19:27:18.056Z",
+  "updatedAt": "2026-06-18T20:15:58.890Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/broadcast-emergency-alert-UUcvlpUGMg",
+    "fi": "/fi/guides/tak-guide/laheta-hatahalytys-qv6woTAZ5H",
+    "sv": "/sv/guides/tak-guide/sand-nodlarm-cSlVtIcpdv"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Lähetä hätäsignaali kaikille verkossa oleville, jotta he näkevät sijaintisi ja millaisessa pulassa olet.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Avaa hälytystyökalu",
+          "layout": "image-bottom",
+          "html": "<p>Napauta <strong>Alert</strong>-kuvaketta (varoituskolmio) avataksesi hälytystyökalun. Se asettaa hätäsignaalin sijaintiisi kartalla.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/a18d1db2c75023bc.webp",
+              "width": 475,
+              "height": 219
+            }
+          ]
+        },
+        {
+          "title": "Valitse hätätilanteen tyyppi",
+          "layout": "image-bottom",
+          "html": "<p>Avaa <strong>Select the type of emergency</strong> -pudotusvalikko ja valitse yksi:</p>\n<ul>\n<li><strong>911 Alert</strong> — tarvitsen apua heti</li>\n<li><strong>Ring The Bell</strong> — kiinnitä huomio sijaintiisi</li>\n<li><strong>Geo-fence Breached</strong> — raja on ylitetty</li>\n<li><strong>In Contact</strong> — taistelukosketuksessa vihollisen kanssa</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/ded64bace244a9ac.webp",
+              "width": 150,
+              "height": 162
+            }
+          ]
+        },
+        {
+          "title": "Lähetä ottamalla molemmat kytkimet käyttöön",
+          "layout": "image-bottom",
+          "html": "<p>Kun olet valinnut tyypin, käännä molemmat <strong>LOCKED</strong>-kytkimet päälle. TAK Server lähettää tämän jälkeen signaalisi kaikille verkon yhteyshenkilöille. Signaali jatkaa lähettämistä, vaikka laitteesi sammutettaisiin.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/a18d1db2c75023bc.webp",
+              "width": 475,
+              "height": 219
+            }
+          ]
+        },
+        {
+          "title": "Peruuta signaali",
+          "layout": "image-bottom",
+          "html": "<p>Lopettaaksesi palaa <strong>Alert</strong>-työkaluun ja käännä molemmat kytkimet pois päältä. Tämä peruuttaa signaalin ja poistaa sen kartalta.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/a18d1db2c75023bc.webp",
+              "width": 475,
+              "height": 219
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

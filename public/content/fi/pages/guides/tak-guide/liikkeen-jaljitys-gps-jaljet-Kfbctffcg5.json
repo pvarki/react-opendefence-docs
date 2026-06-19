@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 1,
+  "id": "27c61be4-b3b6-40ad-ad48-8b849df1b02f",
+  "slug": "liikkeen-jaljitys-gps-jaljet-Kfbctffcg5",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Liikkeen jäljitys (GPS-jäljet)",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "LISÄOMINAISUUDET",
+    "Navigointi ja koordinaatit",
+    "Liikkeen jäljitys (GPS-jäljet)"
+  ],
+  "createdAt": "2026-06-18T19:29:17.070Z",
+  "updatedAt": "2026-06-18T20:20:36.020Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/track-movement-gps-tracks-ncPNa8dv8K",
+    "fi": "/fi/guides/tak-guide/liikkeen-jaljitys-gps-jaljet-Kfbctffcg5",
+    "sv": "/sv/guides/tak-guide/spara-rorelse-gps-spar-bWXVbzW6gA"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Tallenna kulkemasi reitti GPS-jälkenä, ja katsele, väritä uudelleen ja jaa jälki ryhmäsi tai TAK-palvelimen kanssa.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Aloita uusi jälki",
+          "layout": "image-bottom",
+          "html": "<p>Avaa <strong>Track History</strong> -työkalu nähdäksesi aktiivisen jälkesi tiedot kohdassa <strong>Track Details</strong>. Aloita uusi GPS-jälki napauttamalla <strong>Add Track</strong> -kuvaketta. GPS-sijainnin on oltava määritetty ennen kuin jäljen tallennus alkaa.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/2007ac2a0f34cc8d.webp",
+              "width": 220,
+              "height": 248
+            }
+          ]
+        },
+        {
+          "title": "Nimeä ja vahvista jälki",
+          "layout": "image-bottom",
+          "html": "<p>Säilytä oletusnimi tai kirjoita oma nimesi, ja napauta sitten <strong>OK</strong>. Sijaintisi tallennetaan nyt jälkinä uuteen jälkitiedostoon.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/29d539466a9e263f.webp",
+              "width": 220,
+              "height": 101
+            }
+          ]
+        },
+        {
+          "title": "Katsele aiempia jälkiäsi",
+          "layout": "image-bottom",
+          "html": "<p>Avaa <strong>Track List</strong> nähdäksesi laitteelle tallennetut tai TAK-palvelimelta haetut jäljet. Napauta jälkeä listassa valitaksesi sen ja näyttääksesi sen kartalla.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/99fb32717d4acbd5.webp",
+              "width": 448,
+              "height": 218
+            }
+          ]
+        },
+        {
+          "title": "Hae tallennettua jälkeä",
+          "layout": "image-bottom",
+          "html": "<p>Napauta <strong>Track Search</strong> -kuvaketta löytääksesi vanhempia jälkiä. Aseta kutsumerkki sekä aikaväli <strong>Start</strong> ja <strong>End</strong>, valitse <strong>Server Search</strong> sisällyttääksesi palvelimen, ja napauta sitten <strong>Search</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/0f7ebbcfa66cd987.webp",
+              "width": 207,
+              "height": 156
+            }
+          ]
+        },
+        {
+          "title": "Vaihda jäljen väri",
+          "layout": "image-bottom",
+          "html": "<p>Valitse jälki ja napauta sitten <strong>Track Details</strong> -näkymässä <strong>Style</strong>-värimallia värittääksesi sen uudelleen. Käytä <strong>Arrows</strong>-vaihtoehtoa näyttääksesi kulkusuunnan viivaa pitkin.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/2007ac2a0f34cc8d.webp",
+              "width": 220,
+              "height": 248
+            }
+          ]
+        },
+        {
+          "title": "Vie tai jaa jälki",
+          "layout": "image-bottom",
+          "html": "<p>Käytä alareunan kuvakkeita viedäksesi jäljen muodossa KML, KMZ, GPX tai CSV toiminnolla <strong>Export</strong>, tai lähettääksesi sen TAK-palvelimelle toiminnolla <strong>Send</strong>. Anna tiedostonimi, napauta <strong>Next</strong>, valitse muoto, ja napauta sitten <strong>Done</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/2007ac2a0f34cc8d.webp",
+              "width": 220,
+              "height": 248
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

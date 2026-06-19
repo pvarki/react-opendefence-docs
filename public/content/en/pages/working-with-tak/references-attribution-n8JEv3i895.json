@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "id": "96ac355f-560d-4fbf-8139-f576fcb7c2cc",
+  "slug": "references-attribution-n8JEv3i895",
+  "collection": "working-with-tak",
+  "locale": "en",
+  "title": "References & attribution",
+  "breadcrumb": [
+    "ATAK Plugin Development",
+    "References & attribution"
+  ],
+  "createdAt": "2026-06-16T22:49:08.189Z",
+  "updatedAt": "2026-06-17T01:52:07.755Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Primary source",
+      "id": "primary-source"
+    },
+    {
+      "depth": 2,
+      "text": "Concepts referenced (public)",
+      "id": "concepts-referenced-public"
+    },
+    {
+      "depth": 2,
+      "text": "Licensing & attribution notes",
+      "id": "licensing--attribution-notes"
+    },
+    {
+      "depth": 2,
+      "text": "ATAK API deep-dive pages (12–15)",
+      "id": "atak-api-deep-dive-pages-1215"
+    },
+    {
+      "depth": 2,
+      "text": "Out of scope (intentionally not covered)",
+      "id": "out-of-scope-intentionally-not-covered"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>This guide is <strong>original writing</strong>, grounded in the public, open-source ATAK-CIV codebase. The code snippets are taken from (or trimmed from) the open-source <code>helloworld</code> example plugin and are reproduced here for instructional purposes.</p>\n<h2 id=\"primary-source\"><a href=\"#primary-source\">Primary source</a></h2>\n<ul>\n<li><strong>TAK-Product-Center/atak-civ</strong> — U.S. Government / TAK Product Center, open source, <strong>active</strong> <a href=\"https://github.com/TAK-Product-Center/atak-civ\" target=\"_blank\" rel=\"noopener noreferrer\">https://github.com/TAK-Product-Center/atak-civ</a>\n<ul>\n<li>Code referenced here is from release tag <code>**5.5.1.10**</code> (current line 5.5.x). Note <code>main</code> is an older 4.6.x baseline — the current code lives on the per-release <code>upstream/5.5.x</code> branches and matching tags.</li>\n<li><code>README.md</code>, <code>BUILDING.md</code>, <code>CONTRIBUTING.md</code>, <code>LICENSE.md</code>, <code>THIRDPARTY.md</code></li>\n<li><code>pluginsdk.zip</code> (the ATAK Plugin SDK + <code>atak-gradle-takdev</code> 3.x)</li>\n<li><code>plugin-examples/helloworld</code> — the skeleton/example used throughout:\n<ul>\n<li><code>app/build.gradle</code> — ATAK_VERSION 5.6.0, compileSdk 36, Java 17, flavors civ/mil/gov</li>\n<li><code>app/src/main/assets/plugin.xml</code> — single <code>gov.tak.api.plugin.IPlugin</code> extension</li>\n<li><code>app/src/main/AndroidManifest.xml</code></li>\n<li><code>…/plugin/HelloWorldLifecycle.java</code> — <code>extends AbstractPlugin</code>, <code>IServiceController</code></li>\n<li><code>…/plugin/HelloWorldTool.java</code> — <code>extends AbstractPluginTool</code></li>\n<li><code>HelloWorldMapComponent.java</code>, <code>HelloWorldDropDownReceiver.java</code>, <code>sender/HelloWorldContactSender.java</code></li>\n</ul>\n</li>\n<li><code>plugin-examples/plugintemplate</code> — minimal starting template</li>\n<li><code>plugin-examples/plugintemplate-compose</code> — <strong>Kotlin + Jetpack Compose</strong> template; source of the <a href=\"/en/working-with-tak/writing-plugins-in-kotlin-compose-Q4YEtk2N7A\">Kotlin &#x26; Compose page</a>:\n<ul>\n<li><code>app/build.gradle</code> — <code>org.jetbrains.kotlin.android</code> + <code>…kotlin.plugin.compose</code>, <code>buildFeatures.compose</code>, Compose BOM</li>\n<li><code>…/PluginTemplateDropDownReceiver.kt</code> — Kotlin/Compose UI receiver (+ the <code>ComposeContext</code> two-context wrapper)</li>\n<li><code>…/plugin/PluginTemplateLifecycle.java</code>, <code>PluginTemplateTool.java</code> (Java plumbing)</li>\n</ul>\n</li>\n</ul>\n</li>\n<li><strong>Superseded:</strong> <code>deptofdefense/AndroidTacticalAssaultKit-CIV</code> — archived read-only (May 2025); targeted ATAK 4.6 with the older <code>transapps</code> <code>Lifecycle</code> + <code>ToolDescriptor</code> plugin model.</li>\n</ul>\n<h2 id=\"concepts-referenced-public\"><a href=\"#concepts-referenced-public\">Concepts referenced (public)</a></h2>\n<ul>\n<li><strong>Cursor-on-Target (CoT)</strong> — the TAK event format; <code>takproto</code> (open source) documents the wire protocol: <a href=\"https://github.com/deptofdefense/AndroidTacticalAssaultKit-CIV\" target=\"_blank\" rel=\"noopener noreferrer\">https://github.com/deptofdefense/AndroidTacticalAssaultKit-CIV</a> (<code>takproto/</code>) and <a href=\"https://takproto.readthedocs.io\" target=\"_blank\" rel=\"noopener noreferrer\">https://takproto.readthedocs.io</a>.</li>\n<li><strong>MIL-STD-2525 / CoT type codes</strong> — marker affiliation/type scheme (e.g. <code>a-f-G-U-C</code>).</li>\n</ul>\n<h2 id=\"licensing--attribution-notes\"><a href=\"#licensing--attribution-notes\">Licensing &#x26; attribution notes</a></h2>\n<ul>\n<li>ATAK-CIV is released as <strong>open source</strong> by the U.S. DoD and is <strong>EAR99</strong> under the EAR. Work by U.S. Federal employees is generally <strong>public domain</strong> in the U.S.; elsewhere it is licensed per the repo's <code>LICENSE.md</code>.</li>\n<li>⚠️ <strong>Preserve vendor markings.</strong> Several example source files carry a <strong>PAR Government Systems \"Unlimited Rights\"</strong> copyright header. Those legends state that any reproduction of the software (or portions) <strong>must reproduce the markings</strong>. If you copy example source into your own project, keep the original headers.</li>\n<li>Always consult <code>**THIRDPARTY.md**</code> for the licenses of bundled dependencies before redistributing anything that includes them.</li>\n</ul>\n<h2 id=\"atak-api-deep-dive-pages-1215\"><a href=\"#atak-api-deep-dive-pages-1215\">ATAK API deep-dive pages (12–15)</a></h2>\n<p>The deep-dive API pages — <a href=\"/en/working-with-tak/map-items-groups-graphics-ZmQRXcNeqF\">Map items &#x26; graphics</a>, <a href=\"/en/working-with-tak/handling-map-events-KDHLfTLGfS\">Map events</a>, <a href=\"/en/working-with-tak/cot-in-depth-listening-sending-custom-details-nTudtLfqX9\">CoT in depth</a>, and <a href=\"/en/working-with-tak/advanced-practical-apis-2XMWIolD6S\">Advanced &#x26; practical APIs</a> — adapt the <strong>civilian</strong> topics under tak.gov's <em>ATAK Developer Guide</em> (Creating Graphics, Map Event Handling, Custom CoT Details, Listening to / Sending CoT, Import API, IO Abstraction Layer, Radial Menu API, Map Projections, Spinners, Working with Native Code, etc.) into original prose. Every class/method was cross-checked against the open-source <code>helloworld</code> example where it appears there; where the open-source code and the docs differ (e.g. <code>getRootGroup()</code> vs <code>getRootMapGroup()</code>), the open-source form is used and the difference noted. <strong>No TAK-MIL content</strong> is reproduced.</p>\n<h2 id=\"out-of-scope-intentionally-not-covered\"><a href=\"#out-of-scope-intentionally-not-covered\">Out of scope (intentionally not covered)</a></h2>\n<p>This guide deliberately excludes anything that is <strong>not</strong> publicly redistributable: the gated tak.gov developer documentation, the <strong>Military SDK</strong> / TAK-MIL, interface control documents, and the keyed / Foreign-Military-Sales distribution pipeline. For those, go through <strong>tak.gov</strong> with appropriate government sponsorship — see TAK.gov's <em>\"Our Process\"</em> page for distribution, licensing, and export policy.</p>"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "id": "c76012d6-83e4-4aa0-8c23-2172bbd6e99e",
+  "slug": "varmuuskopioi-tietosi-DQfftbWf4c",
+  "collection": "guides/cryptpad-guide",
+  "locale": "fi",
+  "title": "Varmuuskopioi tietosi",
+  "breadcrumb": [
+    "Käyttö yksikössä",
+    "Varmuuskopioi tietosi"
+  ],
+  "createdAt": "2026-06-18T20:34:49.322Z",
+  "updatedAt": "2026-06-18T20:38:48.109Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/cryptpad-guide/back-up-your-data-xYdkRa1Tms",
+    "fi": "/fi/guides/cryptpad-guide/varmuuskopioi-tietosi-DQfftbWf4c",
+    "sv": "/sv/guides/cryptpad-guide/sakerhetskopiera-dina-data-yVu1FNdIEb"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Kun tehtävä päättyy, varmuuskopioi tiimisi jaettu CryptDrive, jotta voit siirtää sen seuraavalle Deploy App -palvelimellesi — tai poistaa sen turvallisesti käytöstä.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Varmuuskopioi tietosi",
+          "layout": "image-bottom",
+          "html": "<p>Tiimin <strong>Settings</strong>-valikosta voit helposti varmuuskopioida tiimin jaetun CryptDriven. Kun tehtäväsi päättyy, ota varmuuskopio — voit ladata sen seuraavalle Deploy App CryptPad -palvelimellesi tai tarvittaessa toiseen järjestelmään. Muista turvallinen tietojen käsittely!</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/d0659582699d9524.webp",
+              "width": 1460,
+              "height": 1332
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

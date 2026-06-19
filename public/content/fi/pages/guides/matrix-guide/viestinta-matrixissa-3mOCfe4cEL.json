@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "id": "d1fa966f-0e47-4c77-a8e4-d956369a6ba3",
+  "slug": "viestinta-matrixissa-3mOCfe4cEL",
+  "collection": "guides/matrix-guide",
+  "locale": "fi",
+  "title": "Viestintä Matrixissa",
+  "breadcrumb": [
+    "Perustoiminnot",
+    "Viestintä Matrixissa"
+  ],
+  "createdAt": "2026-06-18T20:34:08.086Z",
+  "updatedAt": "2026-06-18T20:37:54.420Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/matrix-guide/messaging-in-matrix-MFNQHEi50M",
+    "fi": "/fi/guides/matrix-guide/viestinta-matrixissa-3mOCfe4cEL",
+    "sv": "/sv/guides/matrix-guide/meddelanden-i-matrix-YJPlgJrmpr"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Element kattaa kaikki viestintätarpeesi — tekstin, ääniviestit, puhelut ja videon. Tässä on, mitä voit tehdä, kun olet kirjautunut sisään.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Viestintä Elementissä",
+          "layout": "image-bottom",
+          "html": "<p>Element tukee tekstiviestejä, ääniviestejä, ääni- ja videopuheluita sekä videoneuvotteluita. Nämä toimivat missä tahansa huoneessa tai yksityisviestikeskustelussa.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/058da610d673915a.webp",
+              "width": 2134,
+              "height": 1354
+            }
+          ]
+        },
+        {
+          "title": "Space ja huoneet",
+          "layout": "image-bottom",
+          "html": "<p>Liityt automaattisesti tämän palvelimen Space-tilaan jäsenenä. Space sisältää kaikki palvelimen jäsenet ja siinä on valmiiksi luotuja huoneita, joten voit aloittaa viestinnän heti.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/5622ffc866250369.webp",
+              "width": 2140,
+              "height": 1356
+            }
+          ]
+        },
+        {
+          "title": "Viestintä huoneissa",
+          "layout": "image-bottom",
+          "html": "<p>Lähetä viestejä missä tahansa huoneessa tai aloita yksityisviesti muiden jäsenten kanssa. Voit myös luoda uusia huoneita, jotka ovat joko kaikkien Space-jäsenten löydettävissä tai vain kutsulla liityttäviä.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/d610ca2877e8006f.webp",
+              "width": 2132,
+              "height": 1346
+            }
+          ]
+        },
+        {
+          "title": "Ääni- ja videopuhelut",
+          "layout": "image-bottom",
+          "html": "<p>Aloita ääni- tai videopuhelu suoraan mistä tahansa huoneesta tai yksityisviestistä — kätevää nopeisiin keskusteluihin ilman kokouksen järjestämistä.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/38ff9ddc1744c800.webp",
+              "width": 1906,
+              "height": 1356
+            }
+          ]
+        },
+        {
+          "title": "Ryhmävideopuhelu",
+          "layout": "image-bottom",
+          "html": "<p>Element tukee korkealaatuisia ryhmävideopuheluita huoneissa — täysin vastaavia kuin Microsoft Teams, Skype tai muut vastaavat palvelut.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/ea3d84d1cd630aba.webp",
+              "width": 2140,
+              "height": 1360
+            }
+          ]
+        },
+        {
+          "title": "Salaus",
+          "layout": "image-bottom",
+          "html": "<p>Matrixin keskeinen ominaisuus on vahva päästä päähän -salaus: ulkopuoliset — mukaan lukien palvelin itse — eivät pääse käsiksi yksityisviesteihisi tai ryhmäviesteihisi.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/878eba1d705d4ba7.webp",
+              "width": 2254,
+              "height": 1442
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

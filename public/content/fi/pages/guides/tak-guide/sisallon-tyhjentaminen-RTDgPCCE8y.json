@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "id": "a0f332b7-266a-46e8-9c2b-f613cfb06964",
+  "slug": "sisallon-tyhjentaminen-RTDgPCCE8y",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Sisällön tyhjentäminen",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "Perustoiminnot",
+    "Sisällön tyhjentäminen"
+  ],
+  "createdAt": "2026-06-18T19:26:14.601Z",
+  "updatedAt": "2026-06-18T20:13:55.527Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/clear-content-lzrtCD0MdO",
+    "fi": "/fi/guides/tak-guide/sisallon-tyhjentaminen-RTDgPCCE8y",
+    "sv": "/sv/guides/tak-guide/rensa-innehall-q4qalpFEan"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "1. Sisällön tyhjentäminen",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Kaikki ATAKissa luomasi tai datapaketteina vastaanottamasi karttakohteet tallentuvat laitteeseesi.</li>\n<li>Tyhjennä sisältö harjoituksen päätyttyä (ENDEX) selkeyden säilyttämiseksi ja datan kertymisen välttämiseksi (opsec).</li>\n<li>Tee se napauttamalla päävalikon <strong>Trashcan icon</strong> -kuvaketta.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/802490de29695a84.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "2. Oletko varma?",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Ota tyhjennys käyttöön napauttamalla kahta valitsinta.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/f4b2b0bfecd49805.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "3. Valmis!",
+          "layout": "text",
+          "html": "<ul>\n<li>Clear Content tyhjentää kaiken ja sulkee sovelluksen. Valmista!</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "Lukitse molemmat kytkimet tyhjentääksesi",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Pyyhkäise molemmat kytkimet oikealle, kunnes niissä lukee <strong>LOCKED</strong>; tämä aktivoi punaisen <strong>Clear Now</strong> -painikkeen.</li>\n<li>Rastita ensin <strong>Clear maps &#x26; imagery</strong>, jos haluat poistaa myös offline-kartat. ATAK sulkeutuu, kun tyhjennys on valmis.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/788bec790a8247dc.webp",
+              "width": 249,
+              "height": 169
+            }
+          ]
+        },
+        {
+          "title": "Poista vain osa kohteista",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Sen sijaan, että tyhjentäisit kaiken, napauta <strong>Select Items</strong> avataksesi Overlay Manager -monivalintatyökalun ja valitse tarkalleen, mitä poistetaan.</li>\n<li>Napauta <strong>Cancel</strong> palataksesi kartalle. Poistettujen tiedostojen data turmellaan levyllä, joten palautus ei ole mahdollista.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/c7f82fa573862bd0.webp",
+              "width": 250,
+              "height": 170
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

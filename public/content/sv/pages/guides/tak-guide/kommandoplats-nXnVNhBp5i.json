@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "6348f35e-7e8a-4198-8d02-a01c1f9d6d80",
+  "slug": "kommandoplats-nXnVNhBp5i",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Kommandoplats",
+  "breadcrumb": [
+    "Platforms",
+    "iTAK",
+    "Användning efter roll",
+    "Kommandoplats"
+  ],
+  "createdAt": "2026-06-18T19:39:01.929Z",
+  "updatedAt": "2026-06-18T20:26:00.920Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/command-post-YxjX9bA9iG",
+    "fi": "/fi/guides/tak-guide/komentopaikka-7qMzKheq4Z",
+    "sv": "/sv/guides/tak-guide/kommandoplats-nXnVNhBp5i"
+  },
+  "blocks": []
+}

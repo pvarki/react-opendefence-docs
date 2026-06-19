@@ -12,8 +12,13 @@
     "How to manage ATAK Tools and Toolbars"
   ],
   "createdAt": "2026-01-25T09:59:52.395Z",
-  "updatedAt": "2026-06-15T19:44:07.321Z",
+  "updatedAt": "2026-06-18T20:15:10.782Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/how-to-manage-atak-tools-and-toolbars-PbkLQcvrCe",
+    "fi": "/fi/guides/tak-guide/atak-tyokalujen-ja-tyokalupalkkien-hallinta-BExrl8NVtl",
+    "sv": "/sv/guides/tak-guide/hantera-atak-verktyg-och-verktygsfalt-vbXQ19z45z"
+  },
   "blocks": [
     {
       "type": "html",
@@ -98,7 +103,7 @@
         {
           "title": "Manage and select toolbars",
           "layout": "image-bottom",
-          "html": "<p>Tap <strong>Toolbar Manager</strong> to see all your toolbars. Use the radio toggle to pick the <strong>active</strong> toolbar, <strong>Edit</strong> or <strong>Delete</strong> any line, and use <strong>Export Toolbar</strong> / <strong>Import Toolbar</strong> to share a layout with another TAK user.</p>",
+          "html": "<p>Tap <strong>Toolbar Manager</strong> to see all your toolbars.</p>\n<ul>\n<li>Use the radio toggle to pick the <strong>active</strong> toolbar, <strong>Edit</strong> or <strong>Delete</strong> any line, and use <strong>Export Toolbar</strong> / <strong>Import Toolbar</strong> to share a layout with another TAK user.</li>\n</ul>",
           "images": [
             {
               "src": "/content/images/en/attachments/ae6d25344c1544fd.webp",

@@ -13,8 +13,13 @@
     "Get Coordinates with Center Designator"
   ],
   "createdAt": "2026-06-15T19:39:47.401Z",
-  "updatedAt": "2026-06-15T20:53:47.228Z",
+  "updatedAt": "2026-06-18T20:19:01.758Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/get-coordinates-with-center-designator-B4pKmxr0H0",
+    "fi": "/fi/guides/tak-guide/hae-koordinaatit-center-designatorilla-yaOIpaeTv4",
+    "sv": "/sv/guides/tak-guide/hamta-koordinater-med-center-designator-52VvAun2JK"
+  },
   "blocks": [
     {
       "type": "html",

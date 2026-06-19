@@ -1,0 +1,144 @@
+{
+  "schemaVersion": 1,
+  "id": "79181696-83f2-4fc5-bd50-10e961b69b28",
+  "slug": "feeds-with-data-sync-EMnuDBTzRY",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Feeds with Data Sync",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "Perustoiminnot",
+    "Feeds with Data Sync"
+  ],
+  "createdAt": "2026-06-18T19:25:15.462Z",
+  "updatedAt": "2026-06-18T20:13:48.209Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/feeds-with-data-sync-thmayduqMx",
+    "fi": "/fi/guides/tak-guide/feeds-with-data-sync-EMnuDBTzRY",
+    "sv": "/sv/guides/tak-guide/feeds-with-data-sync-5yGpc2vgBg"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Katso, mitä syötteitä on saatavilla",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Data Sync auttaa lukemaan (ja jakamaan) karttamerkkejä ja muuta helpommin.</li>\n<li>Syötteet ovat kuin karttatasoja: tilaa ja merkitse rasti nähdäksesi tai poistaaksesi ne käytöstä.</li>\n<li>Valitse Data Sync (nuolikuvake) työkalupalkista.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/5e32c5f54248b72d.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "Tilaa RECON-syöte",
+          "layout": "image-bottom",
+          "html": "<p>Deploy App TAK luo automaattisesti RECON-syötteen. Se on tarkoitettu taistelijoille yhtenäisen tiedustelukuvan vastaanottamiseen sitä ylläpitävältä CP:ltä.</p>\n<ul>\n<li>Valitse takserver (jos useita)</li>\n<li>Valitse RECON-syöte.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/6b7e8960e01ec760.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "Download & Sync",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Valitse <strong>Download &#x26; Sync</strong> tilataksesi tämän syötteen.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/4ca381418b7341b0.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "Syöte - Yhdistetty",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Tarkista nyt, että RECON-syötteen symboli (syötteen 'RECON'-otsikon vasemmalla puolella) on vihreä.</li>\n<li>Tämä osoittaa, että tilaus onnistui ja vastaanotat tätä syötettä jatkuvasti.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/761f96f700f37fa1.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "Syötteiden luominen, hallinta ja tilaaminen",
+          "layout": "text",
+          "html": "<ul>\n<li>Syötteiden luominen, jakaminen ja tilaaminen esim. suunnitelman jakamiseksi tehtävää varten on helppoa.</li>\n<li>Katso lisätietoja kohdasta Lisäominaisuudet - <strong>'Create &#x26; Manage Feeds'</strong>.</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "Luo Data Package",
+          "layout": "image-bottom",
+          "html": "<p>Niputa merkit, muodot ja reitit Data Packageen, jotta koko ryhmä jakaa saman tilannekuvan.</p>\n<ul>\n<li>Avaa <strong>Data Package</strong>, valitse <strong>+</strong> ja valitse sitten <strong>Map Select</strong>, <strong>File Select</strong>, <strong>Overlays</strong> tai <strong>Lasso</strong> lisätäksesi kohteita.</li>\n<li>Napauta kohteita kartalla (tai selaa tiedostoja) lisätäksesi ne pakettiin.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/94a86f56455541ce.webp",
+              "width": 400,
+              "height": 185
+            }
+          ]
+        },
+        {
+          "title": "Tallenna Data Package",
+          "layout": "image-bottom",
+          "html": "<p>Punainen tähti paketin nimessä tarkoittaa, että on tallentamattomia muutoksia.</p>\n<ul>\n<li>Aseta <strong>Name</strong> ja mahdolliset <strong>Remarks</strong> ja valitse sitten <strong>Done</strong>.</li>\n<li>Valitse <strong>Save</strong>-kuvake tallentaaksesi paketin laitteellesi.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/c0fbb4907e86065e.webp",
+              "width": 236,
+              "height": 126
+            }
+          ]
+        },
+        {
+          "title": "Lähetä se muille",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Valitse paketin vieressä oleva <strong>Send</strong>-kuvake ja valitse sitten, miten jaat sen.</li>\n<li>Lähetä <strong>Contact</strong>-yhteyshenkilölle (TAK Contact), työnnä se palvelimelle <strong>Select Server</strong>, anna se toiseen sovellukseen <strong>Choose App</strong> -toiminnolla tai <strong>Export</strong> tiedosto.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/53fa5bb12234bad2.webp",
+              "width": 220,
+              "height": 82
+            }
+          ]
+        },
+        {
+          "title": "Lataa paketti palvelimelta",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Valitse Data Packagessa <strong>Download</strong>-kuvake luetellaksesi TAK Serverille tallennetut paketit.</li>\n<li>Valitse paketti kohdasta <strong>Available Packages</strong> ladataksesi sen laitteellesi.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/29ac7189339d6a1c.webp",
+              "width": 310,
+              "height": 224
+            }
+          ]
+        },
+        {
+          "title": "Lue syötteen tilavärit",
+          "layout": "image-bottom",
+          "html": "<p>Kunkin syötteen vieressä oleva värillinen synkronointikuvake kertoo sen tilan yhdellä silmäyksellä:</p>\n<ul>\n<li><strong>Vihreä</strong> — ladattu ja ajan tasalla.</li>\n<li><strong>Keltainen</strong> — yhdistetty mutta jäljessä (esim. iso tiedosto vielä ladattavana).</li>\n<li><strong>Harmaa</strong> — ladattu, mutta päivityksiä ei tarkisteta.</li>\n<li><strong>Punainen</strong> — ladattu, mutta olet offline-tilassa; yhdistä uudelleen synkronoidaksesi.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/99fe9ba85772009b.webp",
+              "width": 800,
+              "height": 664
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

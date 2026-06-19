@@ -13,8 +13,13 @@
     "Resection (No-GPS Location)"
   ],
   "createdAt": "2026-06-15T19:45:06.507Z",
-  "updatedAt": "2026-06-15T20:53:49.610Z",
+  "updatedAt": "2026-06-18T20:19:10.299Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/resection-no-gps-location-YjW4JqiWQJ",
+    "fi": "/fi/guides/tak-guide/takaisinleikkaus-sijainti-ilman-gpsaa-ScxwqM908E",
+    "sv": "/sv/guides/tak-guide/aterskarning-position-utan-gps-GjBCRY4gZj"
+  },
   "blocks": [
     {
       "type": "html",
@@ -27,7 +32,7 @@
         {
           "title": "Open the Resection Tool",
           "layout": "image-bottom",
-          "html": "<p>Open the <strong>Resection Tool</strong>. The panel lists each landmark with its <strong>Location</strong> and <strong>Bearing</strong>, plus an empty <strong>Intersection</strong> field at the bottom.</p>",
+          "html": "<p>Open the <strong>Resection Tool</strong>.</p>\n<ul>\n<li>The panel lists each landmark with its <strong>Location</strong> and <strong>Bearing</strong>, plus an empty <strong>Intersection</strong> field at the bottom.</li>\n</ul>",
           "images": [
             {
               "src": "/content/images/en/attachments/b97d072c0a27fd52.webp",
@@ -75,7 +80,7 @@
         {
           "title": "Update your position and exit",
           "layout": "image-bottom",
-          "html": "<p>Tap <strong>Back</strong> to exit. When asked to update your location, select <strong>Yes</strong> to move your Self-Marker to the estimate and broadcast it, or <strong>No</strong> to leave it.</p>",
+          "html": "<p>Tap <strong>Back</strong> to exit.</p>\n<ul>\n<li>When asked to update your location, select <strong>Yes</strong> to move your Self-Marker to the estimate and broadcast it, or <strong>No</strong> to leave it.</li>\n</ul>",
           "images": [
             {
               "src": "/content/images/en/attachments/eab817e259c77713.webp",

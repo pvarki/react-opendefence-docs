@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "id": "9f603aee-a390-408f-b97c-d35365703bc5",
+  "slug": "anvanda-applikationer-TmM85VECUH",
+  "collection": "deploy-app",
+  "locale": "sv",
+  "title": "Använda applikationer",
+  "breadcrumb": [
+    "Platforms",
+    "iOS",
+    "Användarguide",
+    "Använda applikationer"
+  ],
+  "createdAt": "2026-06-18T20:34:53.270Z",
+  "updatedAt": "2026-06-18T20:38:56.381Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/deploy-app/using-applications-FFuT98Qlcv",
+    "fi": "/fi/deploy-app/sovellusten-kayttaminen-AZUWkin399",
+    "sv": "/sv/deploy-app/anvanda-applikationer-TmM85VECUH"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Använda applikationer",
+          "layout": "image-left",
+          "html": "<ul>\n<li>De applikationer som är tillgängliga för dig på din server listas på framsidan.</li>\n<li>Du kan öppna applikationen genom att klicka på knappen \"Open\".</li>\n<li>Det finns även alternativet \"Docs\". Det länkar till en Product Guide i Docs-appen.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/25c1580a29c70523.webp",
+              "width": 2560,
+              "height": 5712
+            }
+          ]
+        },
+        {
+          "title": "Använda applikationer",
+          "layout": "image-left",
+          "html": "<ul>\n<li>De flesta applikationer har introduktionsguider som leder dig genom varje viktig funktion.</li>\n<li>På den här webbplatsen hittar du även <strong>Product Guides</strong> för att snabbt lära dig grunderna eller <strong>Product Wikis</strong> för att bemästra dem.\nDin identitet i Deploy App fungerar som ditt id ('SSO') i alla applikationer. När din roll eller åtkomst ändras i Deploy App, ändras den i alla appar.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/45b76255f58fe7c7.webp",
+              "width": 2560,
+              "height": 5712
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

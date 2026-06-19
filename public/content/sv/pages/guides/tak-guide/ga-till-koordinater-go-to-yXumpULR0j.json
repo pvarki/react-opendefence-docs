@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "id": "62b47e9a-af97-42cb-90b7-810aaeba3f5f",
+  "slug": "ga-till-koordinater-go-to-yXumpULR0j",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Gå till koordinater (Go To)",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "YTTERLIGARE FUNKTIONER",
+    "Navigering och koordinater",
+    "Gå till koordinater (Go To)"
+  ],
+  "createdAt": "2026-06-18T19:28:18.829Z",
+  "updatedAt": "2026-06-18T20:19:01.028Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/go-to-coordinates-x7AdN7ZMgn",
+    "fi": "/fi/guides/tak-guide/siirry-koordinaatteihin-go-to-x2wAmIQ8Sd",
+    "sv": "/sv/guides/tak-guide/ga-till-koordinater-go-to-yXumpULR0j"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Hoppa direkt med kartan till en koordinat, lat-lon-punkt eller gatuadress - och placera en markör där om du vill.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Öppna Go To och välj format",
+          "layout": "image-bottom",
+          "html": "<p>Välj ikonen <strong>Go To</strong>.</p>\n<ul>\n<li>Välj din formatflik: <strong>MGRS</strong> (rutnät), <strong>DD</strong> / <strong>DM</strong> / <strong>DMS</strong> (lat-lon), <strong>UTM</strong> eller <strong>ADDR</strong> (adress).</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/cde56dc1fb341efa.webp",
+              "width": 249,
+              "height": 162
+            }
+          ]
+        },
+        {
+          "title": "Ange koordinaterna",
+          "layout": "image-bottom",
+          "html": "<p>Skriv in platsen i fälten. Tryck på <strong>Cycle</strong> för att slå ihop Easting/Northing till ett fält, och sedan hela koordinaten till ett enda stort fält för snabb inmatning.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/457be0f5970b3ee9.webp",
+              "width": 224,
+              "height": 57
+            }
+          ]
+        },
+        {
+          "title": "Ställ in höjden",
+          "layout": "image-bottom",
+          "html": "<p>Ange höjden i det avsedda fältet, eller tryck på <strong>Pull Elevation</strong> för att fylla i den från kartans höjdkälla om en sådan är inläst.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/cde56dc1fb341efa.webp",
+              "width": 249,
+              "height": 162
+            }
+          ]
+        },
+        {
+          "title": "Hoppa till en adress",
+          "layout": "image-bottom",
+          "html": "<p>På fliken <strong>ADDR</strong>, skriv in adressen och tryck på <strong>Find</strong>. Den placerar en markör eller panorerar kartan dit. Kryssa i <strong>Set the address as the title</strong> för att använda adressen som markörens namn.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/b6d2f7ab5a39c7d7.webp",
+              "width": 336,
+              "height": 45
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

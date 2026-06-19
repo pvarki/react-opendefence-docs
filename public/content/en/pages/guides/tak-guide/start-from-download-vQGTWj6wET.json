@@ -12,8 +12,13 @@
     "Start from Download"
   ],
   "createdAt": "2025-12-05T22:06:11.383Z",
-  "updatedAt": "2026-06-16T10:58:01.341Z",
+  "updatedAt": "2026-06-18T20:25:38.601Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/start-from-download-vQGTWj6wET",
+    "fi": "/fi/guides/tak-guide/aloita-lataamisesta-qtXafhRjdo",
+    "sv": "/sv/guides/tak-guide/borja-fran-nedladdning-TsV7d2JP5F"
+  },
   "blocks": [
     {
       "type": "slideset",

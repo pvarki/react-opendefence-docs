@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 1,
+  "id": "789eadfb-dc28-4086-8d09-9385e6b4bcba",
+  "slug": "asenna-element-tyopoyta-tagwindows-tagmacos-taglinux-Zn1epPrcp6",
+  "collection": "guides/matrix-guide",
+  "locale": "fi",
+  "title": "Asenna Element (työpöytä)",
+  "breadcrumb": [
+    "Yhdistä palvelimeen",
+    "Asenna Element (työpöytä)"
+  ],
+  "createdAt": "2026-06-18T20:33:49.254Z",
+  "updatedAt": "2026-06-18T20:37:50.598Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/matrix-guide/set-up-element-desktop-tagwindows-tagmacos-taglinux-KspjTxDpoH",
+    "fi": "/fi/guides/matrix-guide/asenna-element-tyopoyta-tagwindows-tagmacos-taglinux-Zn1epPrcp6",
+    "sv": "/sv/guides/matrix-guide/installera-element-skrivbord-tagwindows-tagmacos-taglinux-CzxXo6adUl"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Asenna Element-sovellus tietokoneellesi ja yhdistä se yksikkösi Matrix-kotipalvelimeen. Tässä oppaassa käytetään Elementiä, mutta vaiheet ovat samankaltaiset missä tahansa Matrix-sovelluksessa. Kestää noin viisi minuuttia.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Tervetuloa Matrixiin",
+          "layout": "image-bottom",
+          "html": "<p>Tässä oppaassa käytetään Element-sovellusta, mutta voit käyttää mitä tahansa Matrix-sovellusta — vaiheet ovat samankaltaiset muuallakin.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/5239bfbb830a52b8.webp",
+              "width": 1918,
+              "height": 1113
+            }
+          ]
+        },
+        {
+          "title": "Esivaatimukset",
+          "layout": "image-bottom",
+          "html": "<p>Kopioi kotipalvelimen osoite (1). Voit palata tähän oppaaseen milloin tahansa oikeasta alakulmasta (2).</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/fce8ba119e6c9bf8.webp",
+              "width": 6013,
+              "height": 3525
+            }
+          ]
+        },
+        {
+          "title": "Kirjaudu sisään Elementiin",
+          "layout": "image-bottom",
+          "html": "<p>Avaa Element ja valitse <strong>Log in</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/7b7808cd50ac49f6.webp",
+              "width": 6006,
+              "height": 3526
+            }
+          ]
+        },
+        {
+          "title": "Muokkaa kotipalvelinta",
+          "layout": "image-bottom",
+          "html": "<p>Paina <strong>Edit</strong> kotipalvelimen osoitteen vieressä.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/eed18535001dfe59.webp",
+              "width": 6006,
+              "height": 3526
+            }
+          ]
+        },
+        {
+          "title": "Liitä palvelimen osoite",
+          "layout": "image-bottom",
+          "html": "<p>Liitä aiemmin kopioimasi palvelimen osoite ja paina sitten <strong>Continue</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/19d056702ecb3e94.webp",
+              "width": 6006,
+              "height": 3526
+            }
+          ]
+        },
+        {
+          "title": "Tunnistaudu Keycloakilla",
+          "layout": "image-bottom",
+          "html": "<p>Paina <strong>Continue with Keycloak</strong>. Jatka selaimessasi, joka pyytää todennäköisesti mTLS-varmennettasi muutaman kerran — tunnistaudu mTLS-varmenteellasi.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/aae0a2dfde68c631.webp",
+              "width": 6006,
+              "height": 3526
+            }
+          ]
+        },
+        {
+          "title": "Elementin kotinäkymä",
+          "layout": "image-bottom",
+          "html": "<p>Olet nyt kirjautunut sisään ja voit käyttää Matrixia. Tarkastele tai luo Spaces-tiloja sivupalkista (1) ja näe tai aloita yksityisviestejä vasemmasta paneelista (2).</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/67b5165ce3509fde.webp",
+              "width": 6013,
+              "height": 3525
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

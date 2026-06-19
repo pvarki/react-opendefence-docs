@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 1,
+  "id": "2936078e-8d2c-4836-9e8a-0181fe284bb4",
+  "slug": "aloita-lataamisesta-HDrpxKE5fj",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Aloita lataamisesta",
+  "breadcrumb": [
+    "Platforms",
+    "TAK Tracker - Android",
+    "ALOITA JA YHDISTÄ",
+    "Aloita lataamisesta"
+  ],
+  "createdAt": "2026-06-18T19:39:04.069Z",
+  "updatedAt": "2026-06-18T20:26:33.145Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/start-from-download-x9ve2aL7oC",
+    "fi": "/fi/guides/tak-guide/aloita-lataamisesta-HDrpxKE5fj",
+    "sv": "/sv/guides/tak-guide/borja-fran-nedladdning-I073Y0t0UQ"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Asenna TAK Tracker Play Storesta",
+          "layout": "text",
+          "html": "<ul>\n<li><a href=\"https://play.google.com/store/search?q=tak%20tracker&#x26;c=apps\" target=\"_blank\" rel=\"noopener noreferrer\">https://play.google.com/store/search?q=tak%20tracker&#x26;c=apps</a></li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "Avaa TAK Tracker -sovellus",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Etsi TAK Tracker -kuvake ja käynnistä sovellus.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/8d5d065c3a7b66c6.webp",
+              "width": 225,
+              "height": 225
+            }
+          ]
+        },
+        {
+          "title": "TAK Tracker -sovelluksen käyttöoikeudet 1",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Lopeta akun käytön optimointi.</li>\n<li>Salli.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/ee88bc416b724ab3.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "TAK Tracker -sovelluksen käyttöoikeudet 2",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Käytä sijaintiasi taustalla -tieto.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/5fb1d0de14ead3db.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "TAK Tracker -sovelluksen käyttöoikeudet 3",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Käytä sijaintiasi taustalla.</li>\n<li>Salli tarkka sijainti. Sovellusta käytettäessä.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/1b80ee34368ca5fc.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "TAK Tracker -sovelluksen käyttöoikeudet 4",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Sovelluksen tiedot</li>\n<li>Käyttöoikeudet</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/f173cdca1c314884.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "TAK Tracker -sovelluksen käyttöoikeudet 5",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Sovelluksen käyttöoikeudet</li>\n<li>Sijainti</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/ea4269a513c88814.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "TAK Tracker -sovelluksen käyttöoikeudet 6",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Sijainnin käyttöoikeudet</li>\n<li>Salli aina</li>\n<li>Palaa TAK Trackeriin</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/6d64fa41738950ad.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "TAK Tracker -sovelluksen käyttöoikeudet 7",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Salli TAK Trackerin lähettää sinulle ilmoituksia.</li>\n<li>Salli</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/c4135da73dbff018.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "Käyttöoikeudet on nyt käsitelty",
+          "layout": "image-left",
+          "html": "<ul>\n<li>TAK Tracker on nyt asennettu.</li>\n<li>Siirry palvelinyhteyden tuomiseen.</li>\n</ul>\n<hr>",
+          "images": []
+        }
+      ]
+    },
+    {
+      "type": "html",
+      "html": "<p>TAK Trackerin asentamisen jälkeen jatka kohtaan <a href=\"/doc/91c58ae9-39c3-4623-8099-ce1c85401757\">Palvelinyhteyden tuominen</a></p>"
+    }
+  ]
+}

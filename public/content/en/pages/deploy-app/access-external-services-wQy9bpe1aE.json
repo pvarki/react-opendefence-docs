@@ -12,8 +12,13 @@
     "Access External Services"
   ],
   "createdAt": "2026-06-13T22:59:19.762Z",
-  "updatedAt": "2026-06-13T22:59:19.762Z",
+  "updatedAt": "2026-06-18T20:39:05.498Z",
   "headings": [],
+  "translations": {
+    "en": "/en/deploy-app/access-external-services-wQy9bpe1aE",
+    "fi": "/fi/deploy-app/ulkoiset-palvelut-SIWRaQtmte",
+    "sv": "/sv/deploy-app/externa-tjanster-0NmqWJBmQK"
+  },
   "blocks": [
     {
       "type": "slideset",

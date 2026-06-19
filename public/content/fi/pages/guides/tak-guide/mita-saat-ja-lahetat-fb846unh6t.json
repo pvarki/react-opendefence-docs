@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "c9a26689-0dfc-4fd1-baee-6eccd67f2475",
+  "slug": "mita-saat-ja-lahetat-fb846unh6t",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Mitä saat ja lähetät",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "KÄYTTÖ ROOLEITTAIN",
+    "Taistelija",
+    "Mitä saat ja lähetät"
+  ],
+  "createdAt": "2026-06-18T19:27:20.883Z",
+  "updatedAt": "2026-06-18T20:17:02.615Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/what-you-get-send-MhsXXsmVxN",
+    "fi": "/fi/guides/tak-guide/mita-saat-ja-lahetat-fb846unh6t",
+    "sv": "/sv/guides/tak-guide/vad-du-far-och-skickar-8NvaGg4aKo"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Yleiskatsaus - Taistelija lähettää",
+          "layout": "image-bottom",
+          "html": "<ol>\n<li>Lähetä viestejä yksikössäsi käsketyllä tavalla, esim. Matrix tai GeoChat. Viestit menevät COMMAND-, RECON-, BLUFOR- tai COMMON-kanavalle sisällöstä riippuen.</li>\n<li>Lähetä merkkisi HQ-roolille CP:n tulkintaa varten.</li>\n<li>Jos yksikössäsi on niin käsketty, lähetä tiedusteluhavainnot myös OBSERVATIONS-syötteeseen.</li>\n</ol>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/a984073033cdf039.webp",
+              "width": 2176,
+              "height": 954
+            }
+          ]
+        },
+        {
+          "title": "Yleiskatsaus - Taistelija vastaanottaa",
+          "layout": "image-bottom",
+          "html": "<ol start=\"4\">\n<li>\n<p>Vastaanota CP:n tuottama RECON-syöte saadaksesi tietoomme tulleet havainnot toiminta-alueelta.</p>\n</li>\n<li>\n<p>Vastaanota tehtävän PLAN-syötteet marssireittejä, partioreittejä, geoaitahälytyksiä varten...</p>\n</li>\n<li>\n<p>Vastaanota BLUFOR-syöte esim. lähestymisreiteillä omiin asemiin.</p>\n</li>\n<li>\n<p>Seuraa yksikkösi valitsemaa viestintätyökalua (Geochat, Matrix tai muut).</p>\n<p>\\</p>\n</li>\n</ol>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/9990aa9707a9ab73.webp",
+              "width": 2278,
+              "height": 1014
+            }
+          ]
+        },
+        {
+          "title": "Kuinka toimin?",
+          "layout": "text",
+          "html": "<ol>\n<li>Seuraava <strong>Use RECON Feed</strong> -opas neuvoo, kuinka lähetät ja vastaanotat merkkejä.</li>\n<li><strong>Use Geochat for comms</strong> -opas neuvoo, kuinka käytät TAK:n Geochatia viestintään.</li>\n<li><strong>Use Matrix Element for comms</strong> -opas neuvoo, kuinka käytät TAK:n ulkopuolista sovellusta, Matrix Elementiä, viestintään. Se on suositeltu vaihtoehto TAK:n Geochatille.</li>\n</ol>",
+          "images": []
+        }
+      ]
+    }
+  ]
+}

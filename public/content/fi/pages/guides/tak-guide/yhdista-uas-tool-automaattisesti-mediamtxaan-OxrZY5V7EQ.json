@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "6a4a786d-7a7a-4b33-8858-e96bbf6e13f2",
+  "slug": "yhdista-uas-tool-automaattisesti-mediamtxaan-OxrZY5V7EQ",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Yhdistä UAS Tool automaattisesti MediaMTX:ään",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "TUETUT LISÄOSAT",
+    "UAS-työkalu",
+    "Yhdistä UAS Tool automaattisesti MediaMTX:ään"
+  ],
+  "createdAt": "2026-06-18T19:30:24.420Z",
+  "updatedAt": "2026-06-18T20:21:40.617Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/auto-connect-uas-tool-to-mediamtx-MahzGHsEdu",
+    "fi": "/fi/guides/tak-guide/yhdista-uas-tool-automaattisesti-mediamtxaan-OxrZY5V7EQ",
+    "sv": "/sv/guides/tak-guide/anslut-uas-tool-automatiskt-till-mediamtx-HeWL5goTM5"
+  },
+  "blocks": []
+}

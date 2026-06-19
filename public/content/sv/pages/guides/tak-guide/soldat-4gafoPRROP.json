@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "50f5c43a-9fca-43f9-8372-6945facca93f",
+  "slug": "soldat-4gafoPRROP",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Soldat",
+  "breadcrumb": [
+    "Platforms",
+    "TAK Tracker - Apple",
+    "Användning efter roll",
+    "Soldat"
+  ],
+  "createdAt": "2026-06-18T19:45:52.160Z",
+  "updatedAt": "2026-06-18T20:27:44.831Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/fighter-xKivECWhVS",
+    "fi": "/fi/guides/tak-guide/taistelija-Qgf88CxnWl",
+    "sv": "/sv/guides/tak-guide/soldat-4gafoPRROP"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>(Den här fliken ska inte visas)</p>"
+    }
+  ]
+}

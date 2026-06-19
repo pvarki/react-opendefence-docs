@@ -1,0 +1,118 @@
+{
+  "schemaVersion": 1,
+  "id": "9550f48c-1213-4eeb-9011-f187cbfd2c60",
+  "slug": "karttojen-lataaminen-offline-kayttoon-HWp5pbjscs",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Karttojen lataaminen offline-käyttöön",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "Edistyneet ydintoiminnot",
+    "Karttojen lataaminen offline-käyttöön"
+  ],
+  "createdAt": "2026-06-18T19:27:13.675Z",
+  "updatedAt": "2026-06-18T20:15:09.602Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/downloading-maps-for-offline-use-AhUMNQ8mmS",
+    "fi": "/fi/guides/tak-guide/karttojen-lataaminen-offline-kayttoon-HWp5pbjscs",
+    "sv": "/sv/guides/tak-guide/ladda-ner-kartor-for-offline-anvandning-uKJz92KfHd"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Lataa karttaruudut puhelimeesi, jotta kartta toimii ilman yhteyttä.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Avaa Maps & Favorites",
+          "layout": "image-bottom",
+          "html": "<p>Napauta <strong>Maps &#x26; Favorites</strong> -kuvaketta.</p>\n<ul>\n<li>Siinä on kolme välilehteä: <strong>Imagery</strong>, <strong>Mobile</strong> ja <strong>FAVS</strong> (suosikit).</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/0eaa4d299fd7efcd.webp",
+              "width": 189,
+              "height": 126
+            }
+          ]
+        },
+        {
+          "title": "Merkitse ladattava alue",
+          "layout": "image-bottom",
+          "html": "<p>Vaihda <strong>Mobile</strong>-välilehdellä tilaan <strong>Online</strong> ja napauta sitten <strong>Select Area</strong>.</p>\n<ul>\n<li>Valitse <strong>Rectangle</strong>, <strong>Free Form</strong>, <strong>Lasso</strong> tai <strong>Map Select</strong> ja piirrä alueesi.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/95fa01e8259285c0.webp",
+              "width": 367,
+              "height": 170
+            }
+          ]
+        },
+        {
+          "title": "Aseta tarkkuus",
+          "layout": "image-bottom",
+          "html": "<p>Vedä liukusäätimen päistä asettaaksesi tarkkuuden — <strong>coarse</strong> vähemmille ruuduille, <strong>fine</strong> tarkemmille kartoille.</p>\n<ul>\n<li>ATAK näyttää ruutujen määrän; raja on 850 000 ruutua latausta kohden.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/bb7aba1816fd05a0.webp",
+              "width": 220,
+              "height": 100
+            }
+          ]
+        },
+        {
+          "title": "Nimeä ja lataa",
+          "layout": "image-bottom",
+          "html": "<p>Napauta <strong>Download</strong>, nimeä ruutusarja ja napauta <strong>OK</strong>.</p>\n<ul>\n<li>Edistymispalkki ilmestyy; <strong>Cancel</strong> keskeyttää sen.</li>\n<li>Voit myös lisätä ruutuja olemassa olevaan sarjaan tai tallentaa peitekerroksen.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/233202f64b766362.webp",
+              "width": 220,
+              "height": 145
+            }
+          ]
+        },
+        {
+          "title": "Vaihda offline-karttoihin",
+          "layout": "image-bottom",
+          "html": "<p>Vaihda tilaan <strong>Local</strong> luetellaksesi ladatut tasosi, lähimmät ensin. Napauta yhtä käyttääksesi sitä kartan lähteenä — kartta toimii nyt ilman yhteyttä.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/95d8e7d780f95ad1.webp",
+              "width": 196,
+              "height": 181
+            }
+          ]
+        },
+        {
+          "title": "Hallitse ja jaa karttakuvia",
+          "layout": "image-bottom",
+          "html": "<p><strong>Imagery</strong>-välilehti luettelee kaikki karttasi.</p>\n<ul>\n<li>Laajenna luokka lähettääksesi tason muille käyttäjille (<strong>Send</strong>) tai poistaaksesi sen.</li>\n<li><strong>Outline</strong>-valintaruutu näyttää kunkin tason reunan.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/6a7e67ec50bffd9c.webp",
+              "width": 245,
+              "height": 192
+            }
+          ]
+        },
+        {
+          "title": "Lisää näkymä kirjanmerkiksi",
+          "layout": "image-bottom",
+          "html": "<p>Napauta <strong>FAVS</strong>-välilehdellä <strong>Add Current View</strong> tallentaaksesi sijaintisi ja sen karttakuvat. Napauta tallennettua näkymää palataksesi siihen, tai lähetä se (<strong>Send</strong>) jaettavaksi joukkueesi kanssa.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/6012d9b47815dff7.webp",
+              "width": 203,
+              "height": 188
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

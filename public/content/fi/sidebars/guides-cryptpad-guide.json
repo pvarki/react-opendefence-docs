@@ -4,6 +4,69 @@
   "slug": "guides/cryptpad-guide",
   "items": [
     {
+      "type": "toporg",
+      "id": "yhdista-palvelimeen-OB9gA93P2o",
+      "label": "Yhdistä palvelimeen",
+      "children": [
+        {
+          "type": "doc",
+          "id": "cryptpadin-kayton-aloittaminen-hQ7vIKZoxX",
+          "label": "CryptPadin käytön aloittaminen",
+          "slug": "cryptpadin-kayton-aloittaminen-hQ7vIKZoxX"
+        }
+      ]
+    },
+    {
+      "type": "toporg",
+      "id": "perustoiminnot-FFfD6juoNA",
+      "label": "Perustoiminnot",
+      "children": [
+        {
+          "type": "doc",
+          "id": "dokumentit-vYaxLgXJyf",
+          "label": "Dokumentit",
+          "slug": "dokumentit-vYaxLgXJyf"
+        },
+        {
+          "type": "doc",
+          "id": "kanban-taulut-zFIxk6Fqwa",
+          "label": "Kanban-taulut",
+          "slug": "kanban-taulut-zFIxk6Fqwa"
+        },
+        {
+          "type": "doc",
+          "id": "esitykset-k6gHQmskUS",
+          "label": "Esitykset",
+          "slug": "esitykset-k6gHQmskUS"
+        }
+      ]
+    },
+    {
+      "type": "toporg",
+      "id": "kaytto-yksikossa-1rC1yGUkPs",
+      "label": "Käyttö yksikössä",
+      "children": [
+        {
+          "type": "doc",
+          "id": "luo-tiimi-yksikollesi-rh5NTKB48E",
+          "label": "Luo tiimi yksiköllesi",
+          "slug": "luo-tiimi-yksikollesi-rh5NTKB48E"
+        },
+        {
+          "type": "doc",
+          "id": "jaettu-kalenteri-O7sH9Zra69",
+          "label": "Jaettu kalenteri",
+          "slug": "jaettu-kalenteri-O7sH9Zra69"
+        },
+        {
+          "type": "doc",
+          "id": "varmuuskopioi-tietosi-DQfftbWf4c",
+          "label": "Varmuuskopioi tietosi",
+          "slug": "varmuuskopioi-tietosi-DQfftbWf4c"
+        }
+      ]
+    },
+    {
       "type": "doc",
       "id": "deploy-app-cryptpad-2C27HtLUGm",
       "label": "Deploy App - CryptPad",

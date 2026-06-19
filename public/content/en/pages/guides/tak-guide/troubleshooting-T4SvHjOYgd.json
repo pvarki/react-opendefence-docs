@@ -11,8 +11,13 @@
     "Troubleshooting"
   ],
   "createdAt": "2025-12-05T22:05:58.415Z",
-  "updatedAt": "2026-06-14T17:11:29.599Z",
+  "updatedAt": "2026-06-18T20:25:30.874Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/troubleshooting-T4SvHjOYgd",
+    "fi": "/fi/guides/tak-guide/vianmaaritys-HIBgMyBeHy",
+    "sv": "/sv/guides/tak-guide/felsokning-FGKrOPGWwr"
+  },
   "blocks": [
     {
       "type": "html",

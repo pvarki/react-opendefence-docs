@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 1,
+  "id": "5aed709e-d4c9-4a69-ad89-fd1bd6c9d01a",
+  "slug": "tallenna-laheta-ja-jaa-raportti-seWPZi6Bfz",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Tallenna, lähetä ja jaa raportti",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "TUETUT LISÄOSAT",
+    "Raportit",
+    "Tallenna, lähetä ja jaa raportti"
+  ],
+  "createdAt": "2026-06-18T19:31:28.765Z",
+  "updatedAt": "2026-06-18T20:22:35.403Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/save-send-share-a-report-FCSrRHNkjC",
+    "fi": "/fi/guides/tak-guide/tallenna-laheta-ja-jaa-raportti-seWPZi6Bfz",
+    "sv": "/sv/guides/tak-guide/spara-skicka-och-dela-en-rapport-gU4Iv71nZV"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Kun raportti on täytetty, näin säilytät siitä kopion, lähetät sen palvelimelle ja saat sen niille, jotka sitä tarvitsevat.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Tallenna paikallinen kopio tai lähetä palvelimelle",
+          "layout": "image-bottom",
+          "html": "<p>Valitse raportin alareunasta <strong>Save &#x26; Close</strong> säilyttääksesi paikallisen kopion tai lähetyskuvake ladataksesi raportin (<strong>Upload</strong>) TAK Server -palvelimelle. Jos käytössä on useita palvelimia, valitset yhden niistä. Lähetyksen jälkeen painike harmaantuu, kunnes muutat jotakin.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/e3df4f92a1bd6213.webp",
+              "width": 424,
+              "height": 375
+            }
+          ]
+        },
+        {
+          "title": "Lisää tai poista liitteitä",
+          "layout": "image-bottom",
+          "html": "<p>Valitse <strong>Add New Attachment</strong> lisätäksesi raporttiin valokuvan, videon tai tiedoston. Valitse tiedoston vierellä oleva <strong>Delete</strong>-roskakorikuvake poistaaksesi sen.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/40a838387550224b.webp",
+              "width": 526,
+              "height": 184
+            }
+          ]
+        },
+        {
+          "title": "Lähetä raportti",
+          "layout": "image-bottom",
+          "html": "<p>Valitse lähetyskuvake valitaksesi, miten raportti lähtee:</p>\n<ul>\n<li>vastaanottajalle (<strong>Contact</strong>), <strong>Select Server</strong>, <strong>Cloud/FTP</strong>, <strong>Choose App</strong> tai <strong>Export</strong>.</li>\n<li>Data Sync ja Cloud/FTP näkyvät vain, jos kyseiset laajennukset on asennettu.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/b8b6eb329179698a.webp",
+              "width": 800,
+              "height": 244
+            }
+          ]
+        },
+        {
+          "title": "Lähetä TAK Chatin kautta tai kopioi teksti",
+          "layout": "image-bottom",
+          "html": "<p>Valitse <strong>Send</strong>-painike nähdäksesi lähetysvaihtoehdot.</p>\n<ul>\n<li><strong>TAK Chat</strong> lähettää raportin verkon käyttäjille; <strong>Copy</strong> kopioi sen leikepöydälle liitettäväksi mihin tahansa keskusteluun.</li>\n<li>Data Syncia varten valitse <strong>Data Sync Upload</strong>, valitse syöte ja paina sitten <strong>Send</strong>.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/894ec543cf32e4bc.webp",
+              "width": 511,
+              "height": 206
+            }
+          ]
+        },
+        {
+          "title": "Hallitse tallennettuja raportteja",
+          "layout": "image-bottom",
+          "html": "<p>Tallennetut kopiot ovat Reports-paneelissa.</p>\n<ul>\n<li>Jokaisella raportilla on oma rivinsä kuvakkeita: <strong>Upload</strong>, <strong>Details</strong>, <strong>PDF</strong>, <strong>Copy to Clipboard</strong>, <strong>Share</strong>, <strong>Visibility</strong> ja <strong>Delete</strong>.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/dd7ec43088ae27a5.webp",
+              "width": 422,
+              "height": 219
+            }
+          ]
+        },
+        {
+          "title": "Luo PDF tai kopioi teksti",
+          "layout": "image-bottom",
+          "html": "<p>Valitse <strong>PDF</strong> luodaksesi raportista PDF-tiedoston. Valitse <strong>Copy to Clipboard</strong> lisätäksesi raportin pelkkänä tekstinä mihin tahansa Free Text- tai Contacts-kanavaan.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/dd7ec43088ae27a5.webp",
+              "width": 422,
+              "height": 219
+            }
+          ]
+        },
+        {
+          "title": "Jaa sovellusten kautta tai poista",
+          "layout": "image-bottom",
+          "html": "<p>Valitse <strong>Share</strong> välittääksesi raportin mille tahansa asennetulle sovellukselle, joka voi lähettää sen.</p>\n<ul>\n<li>Valitse <strong>Delete</strong> poistaaksesi raportin laitteelta.</li>\n<li><strong>Visibility</strong> kytkee raporttimerkinnän kartalla päälle tai pois.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/dd7ec43088ae27a5.webp",
+              "width": 422,
+              "height": 219
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "id": "2fcc1e04-68f4-4c15-96ae-8cd8a93e0759",
+  "slug": "dynaaminen-etaisyys-ja-suuntima-MocHzAMYao",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Dynaaminen etäisyys ja suuntima",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "LISÄOMINAISUUDET",
+    "Etäisyys- ja suuntimatyökalut",
+    "Dynaaminen etäisyys ja suuntima"
+  ],
+  "createdAt": "2026-06-18T19:29:19.487Z",
+  "updatedAt": "2026-06-18T20:20:42.026Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/dynamic-range-bearing-HMYy8mVdNk",
+    "fi": "/fi/guides/tak-guide/dynaaminen-etaisyys-ja-suuntima-MocHzAMYao",
+    "sv": "/sv/guides/tak-guide/dynamiskt-avstand-och-baring-36cC0xw4Kn"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Etäisyys- ja suuntimaviiva, jonka voit pudottaa, kiinnittää paikalleen ja siirtää kartalla tilanteen muuttuessa — toisin kuin kiinteä kahden pisteen mittaviiva.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Pudota viiva",
+          "layout": "image-bottom",
+          "html": "<p>Valitse Range Tools -työkalupalkista <strong>Dynamic R&#x26;B Line</strong> -kuvake. Napauta kerran aloituspisteen asettamiseksi, napauta uudelleen toista pistettä varten. Viiva pysyy lukitsemattomana, joten voit jatkaa sen siirtämistä.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/47abd3f788f1958e.webp",
+              "width": 250,
+              "height": 181
+            }
+          ]
+        },
+        {
+          "title": "Kiinnitä se paikalleen",
+          "layout": "image-bottom",
+          "html": "<p>Napauta viivan keskikohtaa ja kiinnitä sijainti radiaalivalikon <strong>Pin</strong>-painikkeella. Kiinnitetty viiva näyttää atsimuutin ja etäisyyden ja pysyy paikallaan, vaikka Dynamic R&#x26;B Line kytkettäisiin pois päältä.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/5987b70235dd5bf6.webp",
+              "width": 244,
+              "height": 68
+            }
+          ]
+        },
+        {
+          "title": "Siirrä viivaa tai avaa päätepisteen radiaalivalikko",
+          "layout": "image-bottom",
+          "html": "<p>Siirrä kiinnitettyä viivaa painamalla jompaakumpaa päätä pitkään ja napauttamalla uutta sijaintia. Säädä yhtä päätä tarkasti valitsemalla kyseinen pää radiaalivalikon avaamiseksi ja napauttamalla <strong>Fine Adjust</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/c85d0d5788f4f2d3.webp",
+              "width": 331,
+              "height": 183
+            }
+          ]
+        },
+        {
+          "title": "Hienosäädä päätä",
+          "layout": "image-bottom",
+          "html": "<p>Suurennetun alueen päälle ilmestyy hiusristikko. Vedä sormella sen sisällä asettaaksesi pään tarkasti, ja valitse sitten <strong>Confirm</strong> hyväksyäksesi tai <strong>Cancel</strong> hylätäksesi.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/09d27cfb477cb9ed.webp",
+              "width": 331,
+              "height": 178
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

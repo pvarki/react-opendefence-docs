@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 1,
+  "id": "6e8ce34f-2013-4042-a91c-414723e32130",
+  "slug": "luo-reitteja-ja-kayta-vnsaa-JMeuuWETPf",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Luo reittejä ja käytä VNS:ää",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "Edistyneet ydintoiminnot",
+    "Luo reittejä ja käytä VNS:ää"
+  ],
+  "createdAt": "2026-06-18T19:27:12.868Z",
+  "updatedAt": "2026-06-18T20:14:46.358Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/create-routes-and-use-vns-uymW3nDSPE",
+    "fi": "/fi/guides/tak-guide/luo-reitteja-ja-kayta-vnsaa-JMeuuWETPf",
+    "sv": "/sv/guides/tak-guide/skapa-rutter-och-anvand-vns-KURI7xcoXM"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>VNS-laajennus napsauttaa reittisi todellisille teille ja antaa käännös käännökseltä ääni- ja näköopastusta sekä reitin uudelleenlaskennan lennossa, jos poikkeat reitiltä.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Avaa Routes-työkalu",
+          "layout": "image-bottom",
+          "html": "<p>Avaa <strong>Routes</strong>-työkalu ja aloita uusi reitti valitsemalla <strong>+</strong>-painike. Kun VNS on ladattu, reittisuunnitteluvalintaikkuna avautuu tavallisen merkkivalintaikkunan sijaan.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/d8a37c13a3405e63.webp",
+              "width": 546,
+              "height": 94
+            }
+          ]
+        },
+        {
+          "title": "Syötä osoitteet ja valitse reititystapa",
+          "layout": "image-bottom",
+          "html": "<p>Täytä lähtö-, yksi tai useampi <strong>waypoint</strong>- ja <strong>destination</strong>-kenttä.</p>\n<ul>\n<li>Valitse <strong>Google Routing</strong>, <strong>Offline Routing</strong> tai <strong>Private Routing Server</strong>, rastita haluamasi <strong>Avoid Ferries / Highways / Tolls</strong> -ruudut ja valitse sitten <strong>Create</strong>.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/98914f15e152b704.webp",
+              "width": 763,
+              "height": 1475
+            }
+          ]
+        },
+        {
+          "title": "Aseta jokainen osoite käsin",
+          "layout": "image-bottom",
+          "html": "<p>Valitse minkä tahansa osoitekentän vierestä <strong>Menu</strong>-painike valitaksesi, miten asetat sen: syötä <strong>GoTo</strong>-toiminnolla, <strong>map select</strong> -valinnalla, tyhjennä kenttä tai valitse <strong>recent address</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/c5f27427c934e909.webp",
+              "width": 418,
+              "height": 263
+            }
+          ]
+        },
+        {
+          "title": "Reititä alueiden ympäri",
+          "layout": "image-bottom",
+          "html": "<p>Offline-reitityksessä rastita <strong>Route around geofences?</strong> välttääksesi kaikki geoaidat, tai rastita <strong>Route around regions in region manager?</strong> ja valitse <strong>Open Route Around Region Manager</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/18890bc8def202cd.webp",
+              "width": 800,
+              "height": 622
+            }
+          ]
+        },
+        {
+          "title": "Hallitse väistettäviä muotoja",
+          "layout": "image-bottom",
+          "html": "<p>Valitse olemassa olevat muodot, joiden ympäri reititetään, lisää uusia <strong>+</strong>-painikkeella tai poista muoto sen roskakorikuvakkeella. Valitse <strong>Done</strong>, kun olet valmis.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/fa3c942d53113175.webp",
+              "width": 800,
+              "height": 609
+            }
+          ]
+        },
+        {
+          "title": "Nimeä, aseta tarkistuspisteet ja opasteet",
+          "layout": "image-bottom",
+          "html": "<p>Reitin tiedoissa voit nimetä reitin uudelleen, asettaa <strong>Route Details</strong> -tyypin (infil/exfil, ensisijainen/toissijainen), nimetä tarkistuspisteet, asettaa <strong>Navigation Cue</strong> -opasteen kullekin tarkistuspisteelle ja tehdä <strong>VNS Recalculate</strong> -uudelleenlaskennan koko reitille tai yksittäiselle osuudelle. Aloita navigointi valitsemalla <strong>GO</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/a4b2abaaf7ad6e27.webp",
+              "width": 800,
+              "height": 959
+            }
+          ]
+        },
+        {
+          "title": "Tee VNS-uudelleenlaskenta käsin piirretylle reitille",
+          "layout": "image-bottom",
+          "html": "<p>Muuntaaksesi käsin piirretyn reitin avaa sen tiedot, aseta se ajoreitiksi <strong>Route Details Dropdown</strong> -valikossa ja valitse sitten <strong>VNS Recalculate</strong> oikeasta yläkulmasta koko reitille tai tarkistuspisterivillä vain kyseiselle osuudelle.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/87069ff4e3894237.webp",
+              "width": 800,
+              "height": 284
+            }
+          ]
+        },
+        {
+          "title": "Uudelleenreititys ja Quick Nav -turvapisteet",
+          "layout": "image-bottom",
+          "html": "<p>Navigoinnin aikana <strong>Re-routing</strong>-kuvakkeen reuna muuttuu vihreäksi, kun toiminto on käytössä, jolloin ATAK laskee uudelleen, jos poikkeat reitiltä. Esimäärittele turvapisteet kohdassa <strong>Additional Tools</strong> > <strong>VNS</strong> > <strong>Set Quick Nav Points</strong>, nimeä ne valinnalla <strong>Add new Quick Nav point</strong> ja napauta sitten navigoinnin aikana <strong>Quick Nav</strong> reitittääksesi johonkin niistä.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/2a1bce24cde940fe.webp",
+              "width": 800,
+              "height": 381
+            }
+          ]
+        },
+        {
+          "title": "Lataa offline-reititysdata",
+          "layout": "image-bottom",
+          "html": "<p>Offline-reititys ja -uudelleenreititys tarvitsevat paikallisen data-aineiston. Siirry kohtaan <strong>Additional Tools</strong> > <strong>VNS</strong> > <strong>Manage Offline Areas</strong> ja valitse sitten <strong>Download</strong> ladataksesi aineiston laitteelle tai <strong>Delete</strong> poistaaksesi sen.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/8f29cfaeff23f184.webp",
+              "width": 800,
+              "height": 319
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

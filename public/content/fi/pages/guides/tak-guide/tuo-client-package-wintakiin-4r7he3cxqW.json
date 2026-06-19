@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 1,
+  "id": "4e39c62c-3796-4d5c-8344-26a1569abf6a",
+  "slug": "tuo-client-package-wintakiin-4r7he3cxqW",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Tuo Client Package WinTAKiin",
+  "breadcrumb": [
+    "Platforms",
+    "WinTAK",
+    "ALOITA JA YHDISTÄ",
+    "Tuo Client Package WinTAKiin"
+  ],
+  "createdAt": "2026-06-18T19:32:28.513Z",
+  "updatedAt": "2026-06-18T20:23:26.312Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/import-the-client-package-to-wintak-kCXH9p8keg",
+    "fi": "/fi/guides/tak-guide/tuo-client-package-wintakiin-4r7he3cxqW",
+    "sv": "/sv/guides/tak-guide/importera-client-package-till-wintak-LKNdCcucrD"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Kun WinTAK on asennettu, avaa se ensimmäistä kertaa ja yhdistä se yksikkösi TAK-palvelimeen tuomalla lataamasi Client Package.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Avaa WinTAK",
+          "layout": "image-bottom",
+          "html": "<p>Avaa <strong>WinTAK</strong>-sovellus työpöydältä.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/79a6bb8767bf3d58.webp",
+              "width": 88,
+              "height": 114
+            }
+          ]
+        },
+        {
+          "title": "Hyväksy EULA",
+          "layout": "image-bottom",
+          "html": "<p>Hetken kuluttua avautuu <strong>Device Setup Wizard</strong>. Sen ensimmäinen vaihe on hyväksyä <strong>EULA</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/8e12e26181a305e0.webp",
+              "width": 428,
+              "height": 318
+            }
+          ]
+        },
+        {
+          "title": "Tuo Client Package",
+          "layout": "image-bottom",
+          "html": "<p>Ohjattu toiminto kysyy, tuodaanko datapaketti — tämä on tämän sovelluksen etusivulta lataamasi <strong>Client Package</strong> (<code>Name.zip</code>). Valitse <strong>Yes</strong> ja osoita Client Package latauksissasi.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/2d5fea49b6aeb184.webp",
+              "width": 428,
+              "height": 198
+            }
+          ]
+        },
+        {
+          "title": "Valitse tuontistrategia",
+          "layout": "image-bottom",
+          "html": "<p>Kun olet valinnut paketin ja painanut <strong>Open</strong>, avautuu <strong>Select Import Strategy</strong> -ikkuna.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/ce16efd0433fc825.webp",
+              "width": 428,
+              "height": 270
+            }
+          ]
+        },
+        {
+          "title": "Valitse UserPreferenceImportStrategy",
+          "layout": "image-bottom",
+          "html": "<p>Valitse <strong>UserPreferenceImportStrategy</strong> ja paina <strong>OK</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/69ab4f1ee687b607.webp",
+              "width": 428,
+              "height": 270
+            }
+          ]
+        },
+        {
+          "title": "Valitse karttapohja",
+          "layout": "image-bottom",
+          "html": "<p>Paketti voi sisältää useita <strong>karttapohjia</strong>. Valitse haluamasi — voit vaihtaa sitä myöhemmin.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/dd8073840bd5be9a.webp",
+              "width": 428,
+              "height": 156
+            }
+          ]
+        },
+        {
+          "title": "Aseta kutsutunnuksesi",
+          "layout": "image-bottom",
+          "html": "<p>Ohjattu toiminto kysyy, määritetäänkö kutsutunnuksesi. Valitse <strong>Yes</strong> ja syötä <strong>sinulle annettu kutsutunnus</strong>. Tämän jälkeen se kysyy lisää WMS-karttapalvelulähteitä.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/b3cd94ffd6dc7a08.webp",
+              "width": 428,
+              "height": 206
+            }
+          ]
+        },
+        {
+          "title": "Ohita ylimääräiset WMS-lähteet",
+          "layout": "image-bottom",
+          "html": "<p>Ylimääräisiä WMS-lähteitä ei tarvita — tyhjennä ruudut ja paina <strong>OK</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/9e147b44d330b7ba.webp",
+              "width": 428,
+              "height": 276
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

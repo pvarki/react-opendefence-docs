@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "d4cc80ca-6e48-4385-b274-afd2fd36a219",
+  "slug": "ulkoiset-palvelut-SIWRaQtmte",
+  "collection": "deploy-app",
+  "locale": "fi",
+  "title": "Ulkoiset palvelut",
+  "breadcrumb": [
+    "Platforms",
+    "iOS",
+    "Ylläpitäjäohjeet",
+    "Ulkoiset palvelut"
+  ],
+  "createdAt": "2026-06-18T20:35:45.008Z",
+  "updatedAt": "2026-06-18T20:39:06.357Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/deploy-app/access-external-services-wQy9bpe1aE",
+    "fi": "/fi/deploy-app/ulkoiset-palvelut-SIWRaQtmte",
+    "sv": "/sv/deploy-app/externa-tjanster-0NmqWJBmQK"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Ulkoiset palvelut",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Ulkoiset palvelut linkittävät sinut muihin Deploy App -instanssissasi saatavilla oleviin sivustoihin.</li>\n<li>Näitä ei välttämättä tarvita päivittäisessä käytössä, mutta ne tarjoavat lisäominaisuuksia tehokäyttäjille.</li>\n<li>Tällä hetkellä näistä on eniten hyötyä TAK- ja TAK Plugin -käyttäjille.</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "Ulkoisten palveluiden käyttö",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Ulkoisia palveluita pääsee käyttämään sivupalkista.</li>\n<li>Valitse <strong>\"Admin Tools\"</strong> ja sitten <strong>\"External Services\".</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/7d126d3d3daf2488.webp",
+              "width": 2560,
+              "height": 5712
+            }
+          ]
+        },
+        {
+          "title": "Saatavilla olevat palvelut",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Saatavilla olevat palvelut vaihtelevat käyttöönotosta toiseen sen mukaan, mitä palveluita olet tilannut.</li>\n<li>Jokaisella tulisi olla lyhyt kuvaus siitä, mitä se tekee.</li>\n<li>Ne avautuvat niitä klikkaamalla ja niiden tulisi pyytää mTLS-varmennettasi turvallista kirjautumista varten.</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "Keycloak",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Tällä hetkellä Keycloakin kautta voit hallita käyttäjien ryhmiä.</li>\n<li>Tämä vaikuttaa TAK-käyttäjiin, sillä tämä ryhmämääritys synkronoidaan TAK-palvelimelle.</li>\n<li>Odotetussa käytössä sinun ei tarvitse koskea Keycloakiin lainkaan.</li>\n<li>Kokeneet käyttäjät voivat tehdä paljon, esim. liittää ulkoisia sovelluksia Deploy Appiisi.</li>\n</ul>",
+          "images": []
+        }
+      ]
+    }
+  ]
+}

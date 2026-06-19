@@ -13,8 +13,13 @@
     "Produce RECON feed"
   ],
   "createdAt": "2026-02-22T09:36:24.092Z",
-  "updatedAt": "2026-06-15T13:52:41.610Z",
+  "updatedAt": "2026-06-18T20:24:32.926Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/produce-recon-feed-B7h9QJzZVd",
+    "fi": "/fi/guides/tak-guide/tuota-recon-syote-fexKBlxU0L",
+    "sv": "/sv/guides/tak-guide/producera-recon-flode-azFNrXh6Wi"
+  },
   "blocks": [
     {
       "type": "html",

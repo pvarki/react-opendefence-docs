@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "5d1a6ced-e5b0-4d13-afba-0187de3b3b27",
+  "slug": "advanced-practical-apis-2XMWIolD6S",
+  "collection": "working-with-tak",
+  "locale": "en",
+  "title": "Advanced & practical APIs",
+  "breadcrumb": [
+    "ATAK Plugin Development",
+    "Advanced & practical APIs"
+  ],
+  "createdAt": "2026-06-17T01:52:05.975Z",
+  "updatedAt": "2026-06-17T01:52:07.074Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Importing data",
+      "id": "importing-data"
+    },
+    {
+      "depth": 2,
+      "text": "IO Abstraction Layer",
+      "id": "io-abstraction-layer"
+    },
+    {
+      "depth": 2,
+      "text": "Radial Menu API",
+      "id": "radial-menu-api"
+    },
+    {
+      "depth": 2,
+      "text": "Map projections & coordinate transforms",
+      "id": "map-projections--coordinate-transforms"
+    },
+    {
+      "depth": 2,
+      "text": "Gotcha: use PluginSpinner, not android.widget.Spinner",
+      "id": "gotcha-use-pluginspinner-not-androidwidgetspinner"
+    },
+    {
+      "depth": 2,
+      "text": "Working with native code (JNI/NDK)",
+      "id": "working-with-native-code-jnindk"
+    },
+    {
+      "depth": 2,
+      "text": "Release builds & obfuscation",
+      "id": "release-builds--obfuscation"
+    },
+    {
+      "depth": 2,
+      "text": "Developing on an emulator",
+      "id": "developing-on-an-emulator"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>A grab-bag of capabilities and gotchas you'll reach for once the basics work.</p>\n<h2 id=\"importing-data\"><a href=\"#importing-data\">Importing data</a></h2>\n<p>ATAK's import framework is pluggable. The simplest path is to broadcast an import intent and let ATAK auto-detect the content:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#E5C07B\">Intent</span><span style=\"color:#E06C75\"> i </span><span style=\"color:#56B6C2\">=</span><span style=\"color:#C678DD\"> new</span><span style=\"color:#61AFEF\"> Intent</span><span style=\"color:#E06C75\">(</span><span style=\"color:#E5C07B\">ImportExportMapComponent</span><span style=\"color:#ABB2BF\">.</span><span style=\"color:#E5C07B\">ACTION_IMPORT_DATA</span><span style=\"color:#E06C75\">)</span><span style=\"color:#ABB2BF\">;</span></span>\n<span class=\"line\"><span style=\"color:#E5C07B\">i</span><span style=\"color:#ABB2BF\">.</span><span style=\"color:#61AFEF\">putExtra</span><span style=\"color:#ABB2BF\">(</span><span style=\"color:#E5C07B\">ImportReceiver</span><span style=\"color:#ABB2BF\">.</span><span style=\"color:#E5C07B\">EXTRA_URI</span><span style=\"color:#ABB2BF\">, </span><span style=\"color:#E5C07B\">Uri</span><span style=\"color:#ABB2BF\">.</span><span style=\"color:#61AFEF\">fromFile</span><span style=\"color:#ABB2BF\">(f).</span><span style=\"color:#61AFEF\">toString</span><span style=\"color:#ABB2BF\">());</span></span>\n<span class=\"line\"><span style=\"color:#7F848E;font-style:italic\">// optional: EXTRA_CONTENT, EXTRA_MIME_TYPE (else auto-discovered),</span></span>\n<span class=\"line\"><span style=\"color:#7F848E;font-style:italic\">//           EXTRA_SHOW_NOTIFICATIONS, EXTRA_ZOOM_TO_FILE</span></span>\n<span class=\"line\"><span style=\"color:#E5C07B\">AtakBroadcast</span><span style=\"color:#ABB2BF\">.</span><span style=\"color:#61AFEF\">getInstance</span><span style=\"color:#ABB2BF\">().</span><span style=\"color:#61AFEF\">sendBroadcast</span><span style=\"color:#ABB2BF\">(i);</span></span></code></pre>",
+      "lang": "java"
+    },
+    {
+      "type": "html",
+      "html": "<p>Either <code>EXTRA_URI</code> or <code>EXTRA_URI_LIST</code> is required; everything else is optional.</p>\n<p>To teach ATAK a <strong>new</strong> content/MIME type, implement <code>Importer</code> + <code>Marshal</code> and register them: <code>ImporterManager.registerImporter(...)</code>, <code>MarshalManager.registerMarshal(...)</code>, and <code>ImportExportMapComponent.getInstance().addImporterClasses(...)</code>.</p>\n<h2 id=\"io-abstraction-layer\"><a href=\"#io-abstraction-layer\">IO Abstraction Layer</a></h2>\n<p>For plugins that need to mediate <strong>filesystem and database access</strong> (e.g. to add encryption), the <code>IOProvider</code> interface abstracts both <code>java.io.File</code>-style operations and SQLite database construction. Inject one via <code>IOProviderFactory.registerProvider(...)</code> (stack-based — <code>unregisterProvider(...)</code> pops and restores the previous one).</p>\n<ul>\n<li>Databases are returned as <code>DatabaseIface</code> (close to Android's <code>SQLiteDatabase</code>), and ATAK's SQLite ships the <strong>SpatiaLite</strong> extension — a compliant provider must keep it available.</li>\n<li>Only <strong>one</strong> provider is active at a time; switching providers clears state loaded under the previous one. Register custom providers early (in your lifecycle), before anything touches storage.</li>\n</ul>\n<p>This is an advanced, whole-app hook — most plugins never need it.</p>\n<h2 id=\"radial-menu-api\"><a href=\"#radial-menu-api\">Radial Menu API</a></h2>\n<p>You can build/compose radial menus in code: <code>MapMenuWidget</code> (a menu), <code>MapMenuButtonWidget</code> (a button), with button <code>onClick</code> behaviour assigned via objects implementing <code>MapAction</code>, and submenus assigned as nested <code>MapMenuWidget</code>s. XML menu assets remain fully supported (unchanged schema).</p>\n<p>Layout is weight-driven (like Android's <code>layout_weight</code>): button spans come from the menu XML <code>buttonSpan</code>, or default to <code>1</code> for dynamically-added buttons — so mixing asset-defined and dynamic buttons needs matching weights. Menu geometry is controlled by <code>startAngle</code> (default <code>-90</code>, bottom), <code>coveredAngle</code> (default <code>360</code> for a primary menu), and <code>clockwiseWinding</code> (default counter-clockwise).</p>\n<h2 id=\"map-projections--coordinate-transforms\"><a href=\"#map-projections--coordinate-transforms\">Map projections &#x26; coordinate transforms</a></h2>\n<p>ATAK displays two projections, both on the <strong>WGS84</strong> datum: <strong>Equirectangular (EPSG:4326)</strong> for the flat map and <strong>ECEF (EPSG:4978)</strong> for the globe. Data is normalized to WGS84 on ingest (or reprojected at render) via <strong>Proj.4</strong>.</p>\n<p>The <code>com.atakmap.map.projection.Projection</code> interface exposes the EPSG <code>spatialReferenceID</code> and <code>forward</code> / <code>inverse</code> transforms (WGS84 ↔ projection x/y/z). Get instances from <code>ProjectionFactory</code>; add your own by implementing <code>ProjectionSpi</code>.</p>\n<h2 id=\"gotcha-use-pluginspinner-not-androidwidgetspinner\"><a href=\"#gotcha-use-pluginspinner-not-androidwidgetspinner\">Gotcha: use <code>PluginSpinner</code>, not <code>android.widget.Spinner</code></a></h2>\n<p>A plain Android <code>Spinner</code> <strong>fails in a plugin</strong> because of how it uses its <code>Context</code> (the two-context problem again — see <a href=\"/en/working-with-tak/how-atak-plugins-work-GtuYZlJSnX\">How ATAK plugins work</a>). Use the drop-in replacement <code>com.atakmap.android.gui.PluginSpinner</code>:</p>\n<ul>\n<li>In XML layouts: replace <code>android.widget.Spinner</code> with <code>com.atakmap.android.gui.PluginSpinner</code>.</li>\n<li>In code: usage is identical to <code>Spinner</code>. Build the <code>ArrayAdapter</code> with the plugin context, set the dropdown view resource, then <code>setAdapter(...)</code>.</li>\n</ul>\n<p>(Several ATAK widgets have <code>Plugin…</code> variants for the same reason — reach for them when a stock widget misbehaves in a plugin.)</p>\n<h2 id=\"working-with-native-code-jnindk\"><a href=\"#working-with-native-code-jnindk\">Working with native code (JNI/NDK)</a></h2>\n<p>Plugins can ship native libraries. ATAK includes native libs for <strong>x86, armeabi-v7a, arm64-v8a</strong> — target those ABIs. Native code that depends on ATAK's bundled shared objects must be built with <strong>NDK r12b</strong> (the version ATAK core uses); otherwise you may use a newer NDK.</p>\n<ul>\n<li>Android loads native deps <strong>explicitly and in order</strong> (unlike desktop Java). Load each dependency before the library that needs it.</li>\n<li>If you use <code>**PluginNativeLoader**</code>, call <code>PluginNativeLoader.init(Context)</code> with the <strong>plugin context</strong> before loading any library.</li>\n<li>The <code>hellojni</code> example demonstrates building/deploying a JNI library in a plugin.</li>\n</ul>\n<h2 id=\"release-builds--obfuscation\"><a href=\"#release-builds--obfuscation\">Release builds &#x26; obfuscation</a></h2>\n<p>Run <code>./gradlew assemble&#x3C;Flavor>Release</code> periodically during development — the release build is ProGuard-obfuscated and surfaces issues a debug build hides:</p>\n<ul>\n<li>Account for all <strong>reflection</strong> in <code>proguard-gradle.txt</code> (keep rules).</li>\n<li><strong>Lambdas</strong> for ATAK inner interfaces are known to break under obfuscation — use explicit anonymous classes there.</li>\n<li>Anything using <strong>gson</strong> or other serialization needs keep rules too.</li>\n</ul>\n<h2 id=\"developing-on-an-emulator\"><a href=\"#developing-on-an-emulator\">Developing on an emulator</a></h2>\n<p>ATAK leans on hardware-accelerated graphics, so stock AVDs may not run it. Tips:</p>\n<ul>\n<li>The emulator needs <strong>GLES 3.0+</strong> (Settings → Advanced → <em>Open GL ES API Level</em>); on Windows the <strong>ANGLE</strong> renderer options tend to work best.</li>\n<li>If a bad GPU choice stops it booting: <code>emulator -avd &#x3C;NAME> -gpu host</code>.</li>\n<li>DNS issues: <code>emulator @&#x3C;NAME> -dns-server 8.8.8.8</code>.</li>\n<li>If no AVD configuration works, the <strong>x86 Android VM</strong> (android-x86.org) is a viable alternative.</li>\n</ul>\n<p>→ Back to <a href=\"/en/working-with-tak/references-attribution-n8JEv3i895\">References &#x26; attribution</a>.</p>"
+    }
+  ]
+}

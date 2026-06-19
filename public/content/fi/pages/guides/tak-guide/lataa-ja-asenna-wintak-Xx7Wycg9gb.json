@@ -1,0 +1,124 @@
+{
+  "schemaVersion": 1,
+  "id": "b13f4bbb-57dd-4085-bdba-f029f49b6492",
+  "slug": "lataa-ja-asenna-wintak-Xx7Wycg9gb",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Lataa ja asenna WinTAK",
+  "breadcrumb": [
+    "Platforms",
+    "WinTAK",
+    "ALOITA JA YHDISTÄ",
+    "Lataa ja asenna WinTAK"
+  ],
+  "createdAt": "2026-06-18T19:32:27.789Z",
+  "updatedAt": "2026-06-18T20:22:55.648Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/download-install-wintak-qfu2aB0W9u",
+    "fi": "/fi/guides/tak-guide/lataa-ja-asenna-wintak-Xx7Wycg9gb",
+    "sv": "/sv/guides/tak-guide/ladda-ner-och-installera-wintak-hTsXUKMaCS"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Kaikki WinTAKin asennukseen tarvittava löytyy Deploy Appin <strong>TAK</strong>-sivulta — WinTAK-asennusohjelma ja henkilökohtainen Client Package. Lataa molemmat ja suorita sitten asennusohjelma.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Avaa Deploy Appin TAK-sivu",
+          "layout": "text",
+          "html": "<p>Avaa Deploy App ja siirry <strong>TAK</strong>-sivulle.</p>\n<ul>\n<li>Se tarjoaa WinTAK-käyttäjille kaksi latausta: WinTAK-sovelluksen ja henkilökohtaisen Client Packagen.</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "Lataa WinTAK",
+          "layout": "text",
+          "html": "<p>Lataa WinTAK-sovellus <strong>Puolustusvoimien osoittamasta sijainnista</strong> — linkki on TAK-sivulla.</p>\n<p>Tärkeää: lataa Windows-sovelluksia vain ohjeistetusta sijainnista.</p>",
+          "images": []
+        },
+        {
+          "title": "Lataa henkilökohtainen Client Package",
+          "layout": "text",
+          "html": "<p>Paina vihreää <strong>Download your Client Package</strong> -painiketta (myös etusivulla) ja tallenna <code>.zip</code>-tiedosto. Osoitat WinTAKille tämän paketin asennuksen jälkeen.</p>",
+          "images": []
+        },
+        {
+          "title": "Pura paketti ja etsi asennusohjelma",
+          "layout": "image-bottom",
+          "html": "<p>Etsi ladattu WinTAK <code>.zip</code>, pura se ja paikanna <code>.msi</code>-asennusohjelma zipin <strong>Products</strong>-kansiosta. Avaa asennusohjelma kaksoisnapsauttamalla <code>.msi</code>-tiedostoa.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/a837f7266418b504.webp",
+              "width": 356,
+              "height": 32
+            }
+          ]
+        },
+        {
+          "title": "Suorita ohjattu asennus",
+          "layout": "image-bottom",
+          "html": "<p>Asenna WinTAK ohjatulla asennustoiminnolla. Paina <strong>Next</strong> ja valitse sitten asennuskansio.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/dd306d17588aaf12.webp",
+              "width": 428,
+              "height": 340
+            }
+          ]
+        },
+        {
+          "title": "Valitse asennuskansio",
+          "layout": "image-bottom",
+          "html": "<p>Vaihda kansio halutessasi painikkeella <strong>Browse</strong> ja paina sitten <strong>Next</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/2b1f95692aab5d36.webp",
+              "width": 428,
+              "height": 340
+            }
+          ]
+        },
+        {
+          "title": "Valitse komponentit — sisällytä Data Sync",
+          "layout": "image-bottom",
+          "html": "<p>Valitse asennettavat komponentit. Valitse <strong>vähintään</strong>:</p>\n<ul>\n<li><strong>Data Sync</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/c87276ce4ad45cd0.webp",
+              "width": 428,
+              "height": 340
+            }
+          ]
+        },
+        {
+          "title": "Asenna",
+          "layout": "image-bottom",
+          "html": "<p>Paina <strong>Next</strong>. Kun ohjattu toiminto on valmis, paina <strong>Install</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/b825f25aa95d2406.webp",
+              "width": 428,
+              "height": 340
+            }
+          ]
+        },
+        {
+          "title": "Viimeistele",
+          "layout": "image-bottom",
+          "html": "<p>Viimeistele painamalla <strong>Next</strong>. WinTAK on nyt asennettu — avaa se seuraavaksi ja tuo henkilökohtainen Client Package.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/88a7bedf95dacbcc.webp",
+              "width": 428,
+              "height": 338
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

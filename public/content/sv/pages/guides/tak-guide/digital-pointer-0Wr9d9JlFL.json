@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "id": "5c5332fd-fda5-45a1-8ddd-abccd072d3d1",
+  "slug": "digital-pointer-0Wr9d9JlFL",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Digital Pointer",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "Avancerade kärnfunktioner",
+    "Digital Pointer"
+  ],
+  "createdAt": "2026-06-18T19:27:17.756Z",
+  "updatedAt": "2026-06-18T20:15:53.757Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/digital-pointer-0K1KdydAeq",
+    "fi": "/fi/guides/tak-guide/digital-pointer-d8AjEWxuxZ",
+    "sv": "/sv/guides/tak-guide/digital-pointer-0Wr9d9JlFL"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Peka på en plats på kartan så ser alla i ditt nätverk den i realtid, med avstånd och bäring från dig och valfria hotringar.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Släpp en pekare i realtid",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på ikonen <strong>Digital Pointer</strong> och sedan på <strong>Pointer</strong> för att släppa en markör på kartan. Alla i ditt nätverk ser den dyka upp och får en avisering, med en linje som löper tillbaka till dig.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/cbdeb87085572763.webp",
+              "width": 236,
+              "height": 186
+            }
+          ]
+        },
+        {
+          "title": "Visa avstånd, bäring och hotringar",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på din egen pekare för att öppna dess radialmeny. Välj <strong>Range and Bearing Line</strong> för att visa avstånd och riktning från dig, eller <strong>Custom Threat Rings</strong> för att lägga till fararingar runt platsen.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/cbdeb87085572763.webp",
+              "width": 236,
+              "height": 186
+            }
+          ]
+        },
+        {
+          "title": "Använd en lagkamrats pekare",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på någon annans pekare för fler alternativ:</p>\n<ul>\n<li><strong>Lock to Self</strong> håller den centrerad på din position</li>\n<li><strong>Bloodhound Tool</strong> navigerar till den</li>\n<li><strong>Track Breadcrumbs</strong> följer dess spår</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/7c6e87c1d423d079.webp",
+              "width": 223,
+              "height": 183
+            }
+          ]
+        },
+        {
+          "title": "Peka på en exakt ruta",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på <strong>GoTo MGRS</strong> i verktygsfältet för Digital Pointer för att skriva in en 10-siffrig östlig och nordlig koordinat för hand. Pekaren släpps på exakt den rutan för den aktuella kartvyn.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/7c6e87c1d423d079.webp",
+              "width": 223,
+              "height": 183
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

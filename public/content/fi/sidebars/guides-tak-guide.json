@@ -5,9 +5,1097 @@
   "items": [
     {
       "type": "doc",
-      "id": "platforms-tZOlEzNVd6",
-      "label": "Platforms",
-      "slug": "platforms-tZOlEzNVd6"
+      "id": "mika-on-tak-u19DIbyqfY",
+      "label": "Mikä on TAK?",
+      "slug": "mika-on-tak-u19DIbyqfY"
+    },
+    {
+      "type": "toporg",
+      "id": "aloita-ja-yhdista-TBgwOqNqrQ",
+      "label": "ALOITA JA YHDISTÄ",
+      "clientId": "atak-cIgl1ujs22",
+      "children": [
+        {
+          "type": "doc",
+          "id": "aloita-deploy-app-sovelluksesta-R0jCXhuEn5",
+          "label": "Aloita Deploy App -sovelluksesta",
+          "slug": "aloita-deploy-app-sovelluksesta-R0jCXhuEn5"
+        },
+        {
+          "type": "doc",
+          "id": "varmista-etta-sinulla-on-atak-sovellus-ceMKXWjxoQ",
+          "label": "Varmista, että sinulla on ATAK-sovellus",
+          "slug": "varmista-etta-sinulla-on-atak-sovellus-ceMKXWjxoQ"
+        },
+        {
+          "type": "doc",
+          "id": "palvelinyhteyden-tuonti-orW4BArnHi",
+          "label": "Palvelinyhteyden tuonti",
+          "slug": "palvelinyhteyden-tuonti-orW4BArnHi"
+        },
+        {
+          "type": "doc",
+          "id": "lataa-atak-liitannaiset-CrjCC07xf1",
+          "label": "Lataa ATAK-liitännäiset",
+          "slug": "lataa-atak-liitannaiset-CrjCC07xf1"
+        }
+      ]
+    },
+    {
+      "type": "toporg",
+      "id": "perustoiminnot-qYjIME1DFH",
+      "label": "Perustoiminnot",
+      "clientId": "atak-cIgl1ujs22",
+      "children": [
+        {
+          "type": "doc",
+          "id": "perusnakyma-tyokalut-ja-tyokalupalkki-5cY07BjmD4",
+          "label": "Perusnäkymä, työkalut ja työkalupalkki",
+          "slug": "perusnakyma-tyokalut-ja-tyokalupalkki-5cY07BjmD4"
+        },
+        {
+          "type": "doc",
+          "id": "omien-joukkojen-seuranta-xwhLFahQPe",
+          "label": "Omien joukkojen seuranta",
+          "slug": "omien-joukkojen-seuranta-xwhLFahQPe"
+        },
+        {
+          "type": "doc",
+          "id": "feeds-with-data-sync-EMnuDBTzRY",
+          "label": "Feeds with Data Sync",
+          "slug": "feeds-with-data-sync-EMnuDBTzRY"
+        },
+        {
+          "type": "doc",
+          "id": "point-dropper-merkit-9yamK9nyOX",
+          "label": "Point Dropper - Merkit",
+          "slug": "point-dropper-merkit-9yamK9nyOX"
+        },
+        {
+          "type": "doc",
+          "id": "merkin-lahettaminen-VFvhZ3yMfm",
+          "label": "Merkin lähettäminen",
+          "slug": "merkin-lahettaminen-VFvhZ3yMfm"
+        },
+        {
+          "type": "doc",
+          "id": "point-dropper-quick-pic-dnyOSYWlOg",
+          "label": "Point Dropper - Quick Pic",
+          "slug": "point-dropper-quick-pic-dnyOSYWlOg"
+        },
+        {
+          "type": "doc",
+          "id": "geochat-5kOdqvslhn",
+          "label": "GeoChat",
+          "slug": "geochat-5kOdqvslhn"
+        },
+        {
+          "type": "doc",
+          "id": "sisallon-tyhjentaminen-RTDgPCCE8y",
+          "label": "Sisällön tyhjentäminen",
+          "slug": "sisallon-tyhjentaminen-RTDgPCCE8y"
+        }
+      ]
+    },
+    {
+      "type": "toporg",
+      "id": "edistyneet-ydintoiminnot-evxX7cFEJr",
+      "label": "Edistyneet ydintoiminnot",
+      "clientId": "atak-cIgl1ujs22",
+      "children": [
+        {
+          "type": "doc",
+          "id": "syotteiden-luonti-ja-hallinta-FpLL6NYB2F",
+          "label": "Syötteiden luonti ja hallinta",
+          "slug": "syotteiden-luonti-ja-hallinta-FpLL6NYB2F"
+        },
+        {
+          "type": "doc",
+          "id": "lisaa-syotteeseen-ja-kayta-sita-zgUEPZIdvs",
+          "label": "Lisää syötteeseen ja käytä sitä",
+          "slug": "lisaa-syotteeseen-ja-kayta-sita-zgUEPZIdvs"
+        },
+        {
+          "type": "doc",
+          "id": "suunnitelmien-piirtaminen-ja-jakaminen-6PjOAXGBff",
+          "label": "Suunnitelmien piirtäminen ja jakaminen",
+          "slug": "suunnitelmien-piirtaminen-ja-jakaminen-6PjOAXGBff"
+        },
+        {
+          "type": "doc",
+          "id": "aikajananakyma-DKl8eVn3bU",
+          "label": "Aikajananäkymä",
+          "slug": "aikajananakyma-DKl8eVn3bU"
+        },
+        {
+          "type": "doc",
+          "id": "piirra-muotoja-ja-grafiikkaa-xS2vkzkOyP",
+          "label": "Piirrä muotoja ja grafiikkaa",
+          "slug": "piirra-muotoja-ja-grafiikkaa-xS2vkzkOyP"
+        },
+        {
+          "type": "doc",
+          "id": "atak-geofences-lisaominaisuudet-Odn3KhETfp",
+          "label": "ATAK - Geofences - Lisaominaisuudet",
+          "slug": "atak-geofences-lisaominaisuudet-Odn3KhETfp"
+        },
+        {
+          "type": "doc",
+          "id": "lassolla-lisaaminen-syotteeseen-a6typO1eEd",
+          "label": "Lassolla lisääminen syötteeseen",
+          "slug": "lassolla-lisaaminen-syotteeseen-a6typO1eEd"
+        },
+        {
+          "type": "doc",
+          "id": "overlay-manager-nakymien-hallinta-L14bpp02nM",
+          "label": "Overlay Manager - näkymien hallinta",
+          "slug": "overlay-manager-nakymien-hallinta-L14bpp02nM"
+        },
+        {
+          "type": "doc",
+          "id": "luo-reitteja-ja-kayta-vnsaa-JMeuuWETPf",
+          "label": "Luo reittejä ja käytä VNS:ää",
+          "slug": "luo-reitteja-ja-kayta-vnsaa-JMeuuWETPf"
+        },
+        {
+          "type": "doc",
+          "id": "karttojen-lataaminen-offline-kayttoon-HWp5pbjscs",
+          "label": "Karttojen lataaminen offline-käyttöön",
+          "slug": "karttojen-lataaminen-offline-kayttoon-HWp5pbjscs"
+        },
+        {
+          "type": "doc",
+          "id": "atak-tyokalujen-ja-tyokalupalkkien-hallinta-BExrl8NVtl",
+          "label": "ATAK-työkalujen ja työkalupalkkien hallinta",
+          "slug": "atak-tyokalujen-ja-tyokalupalkkien-hallinta-BExrl8NVtl"
+        },
+        {
+          "type": "doc",
+          "id": "mukauta-merkit-ja-kuvakkeet-vmmluklewl",
+          "label": "Mukauta merkit ja kuvakkeet",
+          "slug": "mukauta-merkit-ja-kuvakkeet-vmmluklewl"
+        },
+        {
+          "type": "doc",
+          "id": "tee-casevac-9-line-ilmoitus-biscwQ9Tt9",
+          "label": "Tee CASEVAC 9-line -ilmoitus",
+          "slug": "tee-casevac-9-line-ilmoitus-biscwQ9Tt9"
+        },
+        {
+          "type": "doc",
+          "id": "hallitse-kontakteja-qN5FTP2SPr",
+          "label": "Hallitse kontakteja",
+          "slug": "hallitse-kontakteja-qN5FTP2SPr"
+        },
+        {
+          "type": "doc",
+          "id": "digital-pointer-d8AjEWxuxZ",
+          "label": "Digital Pointer",
+          "slug": "digital-pointer-d8AjEWxuxZ"
+        },
+        {
+          "type": "doc",
+          "id": "laheta-hatahalytys-qv6woTAZ5H",
+          "label": "Lähetä hätähälytys",
+          "slug": "laheta-hatahalytys-qv6woTAZ5H"
+        }
+      ]
+    },
+    {
+      "type": "toporg",
+      "id": "kaytto-rooleittain-WKnbDNKGHe",
+      "label": "KÄYTTÖ ROOLEITTAIN",
+      "clientId": "atak-cIgl1ujs22",
+      "children": [
+        {
+          "type": "doc",
+          "id": "yleiskatsaus-dSxmQoNuM0",
+          "label": "Yleiskatsaus",
+          "slug": "yleiskatsaus-dSxmQoNuM0"
+        },
+        {
+          "type": "group",
+          "id": "taistelija-JPrcc1wzdD",
+          "label": "Taistelija",
+          "clientId": "atak-cIgl1ujs22",
+          "children": [
+            {
+              "type": "doc",
+              "id": "mita-saat-ja-lahetat-fb846unh6t",
+              "label": "Mitä saat ja lähetät",
+              "slug": "mita-saat-ja-lahetat-fb846unh6t"
+            },
+            {
+              "type": "doc",
+              "id": "kayta-recon-syotetta-RorUr3qVJs",
+              "label": "Käytä RECON-syötettä",
+              "slug": "kayta-recon-syotetta-RorUr3qVJs"
+            },
+            {
+              "type": "doc",
+              "id": "kayta-geochatia-viestintaan-u0VBv8IjJy",
+              "label": "Käytä Geochatia viestintään",
+              "slug": "kayta-geochatia-viestintaan-u0VBv8IjJy"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "id": "komentopaikka-oeAqXVrdBa",
+          "label": "Komentopaikka",
+          "clientId": "atak-cIgl1ujs22",
+          "children": [
+            {
+              "type": "doc",
+              "id": "recon-syotteen-hallinta-BcuC80sRrk",
+              "label": "RECON-syötteen hallinta",
+              "slug": "recon-syotteen-hallinta-BcuC80sRrk"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "toporg",
+      "id": "lisaominaisuudet-d3fBOdqRzw",
+      "label": "LISÄOMINAISUUDET",
+      "clientId": "atak-cIgl1ujs22",
+      "children": [
+        {
+          "type": "group",
+          "id": "navigointi-ja-koordinaatit-4dzwkZgyXl",
+          "label": "Navigointi ja koordinaatit",
+          "clientId": "atak-cIgl1ujs22",
+          "children": [
+            {
+              "type": "doc",
+              "id": "siirry-koordinaatteihin-go-to-x2wAmIQ8Sd",
+              "label": "Siirry koordinaatteihin",
+              "slug": "siirry-koordinaatteihin-go-to-x2wAmIQ8Sd"
+            },
+            {
+              "type": "doc",
+              "id": "hae-koordinaatit-center-designatorilla-yaOIpaeTv4",
+              "label": "Hae koordinaatit Center Designatorilla",
+              "slug": "hae-koordinaatit-center-designatorilla-yaOIpaeTv4"
+            },
+            {
+              "type": "doc",
+              "id": "navigoi-reittia-V9h7ubqj5x",
+              "label": "Navigoi reittiä",
+              "slug": "navigoi-reittia-V9h7ubqj5x"
+            },
+            {
+              "type": "doc",
+              "id": "takaisinleikkaus-sijainti-ilman-gpsaa-ScxwqM908E",
+              "label": "Takaisinleikkaus",
+              "slug": "takaisinleikkaus-sijainti-ilman-gpsaa-ScxwqM908E"
+            },
+            {
+              "type": "doc",
+              "id": "hae-sijainti-red-xlla-mpYohfdfVx",
+              "label": "Hae sijainti Red X:llä",
+              "slug": "hae-sijainti-red-xlla-mpYohfdfVx"
+            },
+            {
+              "type": "doc",
+              "id": "karttanakyman-ulkopuolisten-merkkien-ilmaisimet-vv4SxScO6n",
+              "label": "Karttanäkymän ulkopuolisten merkkien ilmaisimet",
+              "slug": "karttanakyman-ulkopuolisten-merkkien-ilmaisimet-vv4SxScO6n"
+            },
+            {
+              "type": "doc",
+              "id": "hallitse-sijaintilahteita-RakVzDRlad",
+              "label": "Hallitse sijaintilähteitä",
+              "slug": "hallitse-sijaintilahteita-RakVzDRlad"
+            },
+            {
+              "type": "doc",
+              "id": "seuraa-kohdetta-bloodhoundilla-GHDj89NBpo",
+              "label": "Seuraa kohdetta Bloodhoundilla",
+              "slug": "seuraa-kohdetta-bloodhoundilla-GHDj89NBpo"
+            },
+            {
+              "type": "doc",
+              "id": "liikkeen-jaljitys-gps-jaljet-Kfbctffcg5",
+              "label": "Liikkeen jäljitys",
+              "slug": "liikkeen-jaljitys-gps-jaljet-Kfbctffcg5"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "id": "etaisyys-ja-suuntimatyokalut-GNPpKxnT6a",
+          "label": "Etäisyys- ja suuntimatyökalut",
+          "clientId": "atak-cIgl1ujs22",
+          "children": [
+            {
+              "type": "doc",
+              "id": "mittaa-etaisyys-ja-suuntakulma-DUBmCeWCli",
+              "label": "Mittaa etäisyys ja suuntakulma",
+              "slug": "mittaa-etaisyys-ja-suuntakulma-DUBmCeWCli"
+            },
+            {
+              "type": "doc",
+              "id": "dynaaminen-etaisyys-ja-suuntima-MocHzAMYao",
+              "label": "Dynaaminen etäisyys ja suuntima",
+              "slug": "dynaaminen-etaisyys-ja-suuntima-MocHzAMYao"
+            },
+            {
+              "type": "doc",
+              "id": "etaisyysrenkaat-ja-bullseye-VVnbPZDiAy",
+              "label": "Etäisyysrenkaat ja bullseye",
+              "slug": "etaisyysrenkaat-ja-bullseye-VVnbPZDiAy"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "id": "korkeus-maasto-ja-karttatyokalut-euqzbtzIuC",
+          "label": "Korkeus, maasto ja karttatyökalut",
+          "clientId": "atak-cIgl1ujs22",
+          "children": [
+            {
+              "type": "doc",
+              "id": "kayta-3d-maastonakymaa-MvrevSdk5j",
+              "label": "Käytä 3D-maastonäkymää",
+              "slug": "kayta-3d-maastonakymaa-MvrevSdk5j"
+            },
+            {
+              "type": "doc",
+              "id": "lisaa-3d-malleja-kartalle-48R5EqaMl7",
+              "label": "Lisää 3D-malleja kartalle",
+              "slug": "lisaa-3d-malleja-kartalle-48R5EqaMl7"
+            },
+            {
+              "type": "doc",
+              "id": "tiedustele-first-person-viewlla-dG5GsFs9is",
+              "label": "Tiedustele First-Person View'lla",
+              "slug": "tiedustele-first-person-viewlla-dG5GsFs9is"
+            },
+            {
+              "type": "doc",
+              "id": "korkeus-ja-nakyvyystyokalut-K38iegcAlI",
+              "label": "Korkeus- ja näkyvyystyökalut",
+              "slug": "korkeus-ja-nakyvyystyokalut-K38iegcAlI"
+            },
+            {
+              "type": "doc",
+              "id": "hallitse-korkeusdatan-lahteita-5PT2yLQKk5",
+              "label": "Hallitse korkeusdatan lähteitä",
+              "slug": "hallitse-korkeusdatan-lahteita-5PT2yLQKk5"
+            },
+            {
+              "type": "doc",
+              "id": "georeferoi-kuva-rubber-sheet-onZsR99V8e",
+              "label": "Georeferoi kuva",
+              "slug": "georeferoi-kuva-rubber-sheet-onZsR99V8e"
+            },
+            {
+              "type": "doc",
+              "id": "tiedostojen-ja-etaresurssien-tuonti-c3dqZ2juww",
+              "label": "Tiedostojen ja etäresurssien tuonti",
+              "slug": "tiedostojen-ja-etaresurssien-tuonti-c3dqZ2juww"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "id": "video-atakissa-yxjKtpJULG",
+          "label": "Video ATAKissa",
+          "clientId": "atak-cIgl1ujs22",
+          "children": [
+            {
+              "type": "doc",
+              "id": "toista-ja-kaappaa-videota-xag7zBmlMd",
+              "label": "Toista ja kaappaa videota",
+              "slug": "toista-ja-kaappaa-videota-xag7zBmlMd"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "toporg",
+      "id": "tuetut-lisaosat-yEpN8BHtv5",
+      "label": "TUETUT LISÄOSAT",
+      "clientId": "atak-cIgl1ujs22",
+      "children": [
+        {
+          "type": "group",
+          "id": "uas-tyokalu-cVivwBox3e",
+          "label": "UAS-työkalu",
+          "clientId": "atak-cIgl1ujs22",
+          "children": [
+            {
+              "type": "doc",
+              "id": "asenna-uas-tool-lisaosa-ezy7pwc4no",
+              "label": "Asenna UAS Tool -lisäosa",
+              "slug": "asenna-uas-tool-lisaosa-ezy7pwc4no"
+            },
+            {
+              "type": "doc",
+              "id": "yhdista-uas-tool-automaattisesti-mediamtxaan-OxrZY5V7EQ",
+              "label": "Yhdistä UAS Tool automaattisesti MediaMTX:ään",
+              "slug": "yhdista-uas-tool-automaattisesti-mediamtxaan-OxrZY5V7EQ"
+            },
+            {
+              "type": "doc",
+              "id": "avaa-uas-tyokalu-ja-lue-telemetria-z5ZZMLVliu",
+              "label": "Avaa UAS-työkalu ja lue telemetria",
+              "slug": "avaa-uas-tyokalu-ja-lue-telemetria-z5ZZMLVliu"
+            },
+            {
+              "type": "doc",
+              "id": "katso-ja-ohjaa-dronen-kameraa-rh95KbaTpe",
+              "label": "Katso ja ohjaa dronen kameraa",
+              "slug": "katso-ja-ohjaa-dronen-kameraa-rh95KbaTpe"
+            },
+            {
+              "type": "doc",
+              "id": "kuvaa-ja-laheta-lennokin-videota-rjbcDzCyvV",
+              "label": "Kuvaa ja lähetä lennokin videota",
+              "slug": "kuvaa-ja-laheta-lennokin-videota-rjbcDzCyvV"
+            },
+            {
+              "type": "doc",
+              "id": "laheta-lennokki-sijaintiin-mKsB4aikwV",
+              "label": "Lähetä lennokki sijaintiin",
+              "slug": "laheta-lennokki-sijaintiin-mKsB4aikwV"
+            },
+            {
+              "type": "doc",
+              "id": "suunnittele-lennokkitehtavat-emxgZTF3x4",
+              "label": "Suunnittele lennokkitehtävät",
+              "slug": "suunnittele-lennokkitehtavat-emxgZTF3x4"
+            },
+            {
+              "type": "doc",
+              "id": "kaynnista-pysayta-ja-palauta-lennokki-ramp5QBORo",
+              "label": "Käynnistä, pysäytä ja palauta lennokki",
+              "slug": "kaynnista-pysayta-ja-palauta-lennokki-ramp5QBORo"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "id": "grg-rakennustyokalu-0B3MV9dSbC",
+          "label": "GRG-rakennustyökalu",
+          "clientId": "atak-cIgl1ujs22",
+          "children": [
+            {
+              "type": "doc",
+              "id": "luo-ruudukko-grg-builder-z0VfhByVKA",
+              "label": "Luo ruudukko",
+              "slug": "luo-ruudukko-grg-builder-z0VfhByVKA"
+            },
+            {
+              "type": "doc",
+              "id": "merkitse-ja-muotoile-ruudukko-fA3HwgfjjV",
+              "label": "Merkitse ja muotoile ruudukko",
+              "slug": "merkitse-ja-muotoile-ruudukko-fA3HwgfjjV"
+            },
+            {
+              "type": "doc",
+              "id": "vie-ruudukko-grg-builder-yx2Y3RPY0C",
+              "label": "Vie ruudukko",
+              "slug": "vie-ruudukko-grg-builder-yx2Y3RPY0C"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "id": "raportit-ClRZUR1lAp",
+          "label": "Raportit",
+          "clientId": "atak-cIgl1ujs22",
+          "children": [
+            {
+              "type": "doc",
+              "id": "luo-raportti-ATqNeF4S9c",
+              "label": "Luo raportti",
+              "slug": "luo-raportti-ATqNeF4S9c"
+            },
+            {
+              "type": "doc",
+              "id": "tallenna-laheta-ja-jaa-raportti-seWPZi6Bfz",
+              "label": "Tallenna, lähetä ja jaa raportti",
+              "slug": "tallenna-laheta-ja-jaa-raportti-seWPZi6Bfz"
+            },
+            {
+              "type": "doc",
+              "id": "etsi-raportteja-palvelimelta-fgWGDji6qC",
+              "label": "Etsi raportteja palvelimelta",
+              "slug": "etsi-raportteja-palvelimelta-fgWGDji6qC"
+            },
+            {
+              "type": "doc",
+              "id": "rakenna-mukautettu-raporttimalli-yCSiu6uhpP",
+              "label": "Rakenna mukautettu raporttimalli",
+              "slug": "rakenna-mukautettu-raporttimalli-yCSiu6uhpP"
+            },
+            {
+              "type": "doc",
+              "id": "maarita-raporttiasetukset-irT9AFQtCl",
+              "label": "Määritä raporttiasetukset",
+              "slug": "maarita-raporttiasetukset-irT9AFQtCl"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "id": "yhdista-radio-hammer-sovelluksella-lbJQmjj1Y1",
+          "label": "Yhdistä radio HAMMER-sovelluksella",
+          "clientId": "atak-cIgl1ujs22",
+          "children": [
+            {
+              "type": "doc",
+              "id": "yhdista-prc-152-rover-radioon-hoINotQoqb",
+              "label": "Yhdistä PRC-152- / Rover-radioon",
+              "slug": "yhdista-prc-152-rover-radioon-hoINotQoqb"
+            },
+            {
+              "type": "doc",
+              "id": "salatun-mesh-viestinnan-kayttoonotto-l34tbseLan",
+              "label": "Salatun mesh-viestinnän käyttöönotto",
+              "slug": "salatun-mesh-viestinnan-kayttoonotto-l34tbseLan"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "atak-cIgl1ujs22",
+      "label": "ATAK",
+      "clientId": "atak-cIgl1ujs22",
+      "children": [
+        {
+          "type": "doc",
+          "id": "vianmaaritys-mum1CL1yac",
+          "label": "Vianmääritys",
+          "slug": "vianmaaritys-mum1CL1yac"
+        }
+      ]
+    },
+    {
+      "type": "toporg",
+      "id": "aloita-ja-yhdista-ChEG1h3e8E",
+      "label": "ALOITA JA YHDISTÄ",
+      "clientId": "wintak-gOdRRMN4lI",
+      "children": [
+        {
+          "type": "doc",
+          "id": "aseta-wintakn-kieli-ja-lokalisointi-h2H6q8rgOi",
+          "label": "Aseta WinTAK:n kieli ja lokalisointi",
+          "slug": "aseta-wintakn-kieli-ja-lokalisointi-h2H6q8rgOi"
+        },
+        {
+          "type": "doc",
+          "id": "lataa-ja-asenna-wintak-Xx7Wycg9gb",
+          "label": "Lataa ja asenna WinTAK",
+          "slug": "lataa-ja-asenna-wintak-Xx7Wycg9gb"
+        },
+        {
+          "type": "doc",
+          "id": "tuo-client-package-wintakiin-4r7he3cxqW",
+          "label": "Tuo Client Package WinTAKiin",
+          "slug": "tuo-client-package-wintakiin-4r7he3cxqW"
+        },
+        {
+          "type": "doc",
+          "id": "lataa-lisaosat-ja-viimeistele-asennus-Tb3fKqrK2B",
+          "label": "Lataa lisäosat ja viimeistele asennus",
+          "slug": "lataa-lisaosat-ja-viimeistele-asennus-Tb3fKqrK2B"
+        }
+      ]
+    },
+    {
+      "type": "toporg",
+      "id": "perustoiminnot-D1WjpOWQsF",
+      "label": "PERUSTOIMINNOT",
+      "clientId": "wintak-gOdRRMN4lI",
+      "children": [
+        {
+          "type": "doc",
+          "id": "oman-sijainnin-asettaminen-17jf00ekir",
+          "label": "Oman sijainnin asettaminen",
+          "slug": "oman-sijainnin-asettaminen-17jf00ekir"
+        },
+        {
+          "type": "doc",
+          "id": "omien-joukkojen-seuranta-tKICHJUF25",
+          "label": "Omien joukkojen seuranta",
+          "slug": "omien-joukkojen-seuranta-tKICHJUF25"
+        },
+        {
+          "type": "doc",
+          "id": "data-sync-k0vQiZ3DNm",
+          "label": "Data Sync",
+          "slug": "data-sync-k0vQiZ3DNm"
+        },
+        {
+          "type": "doc",
+          "id": "point-dropper-lisaa-merkintoja-oCa76CxmxW",
+          "label": "Point Dropper - lisää merkintöjä",
+          "slug": "point-dropper-lisaa-merkintoja-oCa76CxmxW"
+        },
+        {
+          "type": "doc",
+          "id": "kayta-geochatia-F9hZhCTnub",
+          "label": "Käytä GeoChatia",
+          "slug": "kayta-geochatia-F9hZhCTnub"
+        },
+        {
+          "type": "doc",
+          "id": "wintak-laajennusten-hallinta-qaHLBdWwfw",
+          "label": "WinTAK-laajennusten hallinta",
+          "slug": "wintak-laajennusten-hallinta-qaHLBdWwfw"
+        },
+        {
+          "type": "doc",
+          "id": "tyhjenna-sisalto-WetdafA5DU",
+          "label": "Tyhjennä sisältö",
+          "slug": "tyhjenna-sisalto-WetdafA5DU"
+        }
+      ]
+    },
+    {
+      "type": "toporg",
+      "id": "edistyneet-ydinominaisuudet-phbBAipJR3",
+      "label": "EDISTYNEET YDINOMINAISUUDET",
+      "clientId": "wintak-gOdRRMN4lI",
+      "children": [
+        {
+          "type": "doc",
+          "id": "syotteiden-luominen-RQLTfV45mi",
+          "label": "Syötteiden luominen",
+          "slug": "syotteiden-luominen-RQLTfV45mi"
+        },
+        {
+          "type": "doc",
+          "id": "hallinnoi-syotteita-dbaSnOdqqc",
+          "label": "Hallinnoi syötteitä",
+          "slug": "hallinnoi-syotteita-dbaSnOdqqc"
+        },
+        {
+          "type": "doc",
+          "id": "piirra-ja-jaa-suunnitelmia-yKzNNsotOO",
+          "label": "Piirrä ja jaa suunnitelmia",
+          "slug": "piirra-ja-jaa-suunnitelmia-yKzNNsotOO"
+        },
+        {
+          "type": "doc",
+          "id": "saa-halytyksia-geoaidoilla-4MYhNMrI4D",
+          "label": "Saa hälytyksiä geoaidoilla",
+          "slug": "saa-halytyksia-geoaidoilla-4MYhNMrI4D"
+        }
+      ]
+    },
+    {
+      "type": "toporg",
+      "id": "kaytto-rooleittain-KV9kd7JRcO",
+      "label": "KÄYTTÖ ROOLEITTAIN",
+      "clientId": "wintak-gOdRRMN4lI",
+      "children": [
+        {
+          "type": "doc",
+          "id": "opendefence-vakiomalli-x5SMy8a7WS",
+          "label": "OpenDefence-vakiomalli",
+          "slug": "opendefence-vakiomalli-x5SMy8a7WS"
+        },
+        {
+          "type": "doc",
+          "id": "taistelija-trgkL4SaDk",
+          "label": "Taistelija",
+          "slug": "taistelija-trgkL4SaDk"
+        },
+        {
+          "type": "group",
+          "id": "komentopaikka-PbnlzDbEe6",
+          "label": "Komentopaikka",
+          "clientId": "wintak-gOdRRMN4lI",
+          "children": [
+            {
+              "type": "doc",
+              "id": "tuota-recon-syote-fexKBlxU0L",
+              "label": "Tuota RECON-syöte",
+              "slug": "tuota-recon-syote-fexKBlxU0L"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "toporg",
+      "id": "tuetut-lisaosat-DVZfMXnqA9",
+      "label": "Tuetut lisäosat",
+      "clientId": "wintak-gOdRRMN4lI",
+      "children": [
+        {
+          "type": "group",
+          "id": "tak-replay-zL0VTQCC8K",
+          "label": "TAK Replay",
+          "clientId": "wintak-gOdRRMN4lI",
+          "children": [
+            {
+              "type": "doc",
+              "id": "tallenna-tapahtumat-qjxLc57ea2",
+              "label": "Tallenna tapahtumat",
+              "slug": "tallenna-tapahtumat-qjxLc57ea2"
+            },
+            {
+              "type": "doc",
+              "id": "toista-nauhoitus-IzwZSK6kdC",
+              "label": "Toista nauhoitus",
+              "slug": "toista-nauhoitus-IzwZSK6kdC"
+            },
+            {
+              "type": "doc",
+              "id": "vie-lataa-ja-hallitse-FEIam7G2GU",
+              "label": "Vie, lataa ja hallitse",
+              "slug": "vie-lataa-ja-hallitse-FEIam7G2GU"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "id": "grg-builder-ClsND0zeco",
+          "label": "GRG Builder",
+          "clientId": "wintak-gOdRRMN4lI",
+          "children": [
+            {
+              "type": "doc",
+              "id": "luo-ja-muokkaa-grg-Fpt8jedvMz",
+              "label": "Luo ja muokkaa GRG",
+              "slug": "luo-ja-muokkaa-grg-Fpt8jedvMz"
+            },
+            {
+              "type": "doc",
+              "id": "lisaa-ominaisuuksia-ja-merkintoja-6rG5M5SnNo",
+              "label": "Lisää ominaisuuksia ja merkintöjä",
+              "slug": "lisaa-ominaisuuksia-ja-merkintoja-6rG5M5SnNo"
+            },
+            {
+              "type": "doc",
+              "id": "grgn-vienti-ja-jakaminen-ydjlUkJ7Pg",
+              "label": "GRG:n vienti ja jakaminen",
+              "slug": "grgn-vienti-ja-jakaminen-ydjlUkJ7Pg"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "id": "raportit-0dBn1xdifl",
+          "label": "Raportit",
+          "clientId": "wintak-gOdRRMN4lI",
+          "children": [
+            {
+              "type": "doc",
+              "id": "luo-raportti-DDE5rNDUyr",
+              "label": "Luo raportti",
+              "slug": "luo-raportti-DDE5rNDUyr"
+            },
+            {
+              "type": "doc",
+              "id": "selaa-raporttitietokantaa-RmpgkBAbfQ",
+              "label": "Selaa raporttitietokantaa",
+              "slug": "selaa-raporttitietokantaa-RmpgkBAbfQ"
+            },
+            {
+              "type": "doc",
+              "id": "mukautetut-raporttipohjat-ArfvIcUuY3",
+              "label": "Mukautetut raporttipohjat",
+              "slug": "mukautetut-raporttipohjat-ArfvIcUuY3"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "id": "vns-ajoneuvon-navigointijarjestelma-xBTc9MgBEc",
+          "label": "VNS - Ajoneuvon navigointijärjestelmä",
+          "clientId": "wintak-gOdRRMN4lI",
+          "children": [
+            {
+              "type": "doc",
+              "id": "luo-vns-reitti-Njd2diVcZY",
+              "label": "Luo VNS-reitti",
+              "slug": "luo-vns-reitti-Njd2diVcZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "wintak-gOdRRMN4lI",
+      "label": "WinTAK",
+      "clientId": "wintak-gOdRRMN4lI",
+      "children": [
+        {
+          "type": "doc",
+          "id": "vianmaaritys-HIBgMyBeHy",
+          "label": "Vianmääritys",
+          "slug": "vianmaaritys-HIBgMyBeHy"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "aloitus-r6ZvF4Ztdj",
+      "label": "Aloitus",
+      "clientId": "itak-pzOFxqFSem",
+      "children": [
+        {
+          "type": "doc",
+          "id": "aloita-lataamisesta-qtXafhRjdo",
+          "label": "Aloita lataamisesta",
+          "slug": "aloita-lataamisesta-qtXafhRjdo"
+        },
+        {
+          "type": "doc",
+          "id": "itak-on-jo-asennettu-b7KB36fpA7",
+          "label": "iTAK on jo asennettu",
+          "slug": "itak-on-jo-asennettu-b7KB36fpA7"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "perustoiminnot-AR7DoihPBU",
+      "label": "Perustoiminnot",
+      "clientId": "itak-pzOFxqFSem",
+      "children": [
+        {
+          "type": "doc",
+          "id": "omien-joukkojen-seuranta-g7RxW8tHH6",
+          "label": "Omien joukkojen seuranta",
+          "slug": "omien-joukkojen-seuranta-g7RxW8tHH6"
+        },
+        {
+          "type": "doc",
+          "id": "datan-synkronointi-lzOCvJIN5S",
+          "label": "Datan synkronointi",
+          "slug": "datan-synkronointi-lzOCvJIN5S"
+        },
+        {
+          "type": "doc",
+          "id": "luo-symboleja-ja-pikakuvia-sHjyCvAf4P",
+          "label": "Luo symboleja ja pikakuvia",
+          "slug": "luo-symboleja-ja-pikakuvia-sHjyCvAf4P"
+        },
+        {
+          "type": "doc",
+          "id": "kayta-geochatia-1MmA1emqhu",
+          "label": "Käytä GeoChatia",
+          "slug": "kayta-geochatia-1MmA1emqhu"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "kaytto-roolin-mukaan-vm304ASeSS",
+      "label": "Käyttö roolin mukaan",
+      "clientId": "itak-pzOFxqFSem",
+      "children": [
+        {
+          "type": "doc",
+          "id": "yleiskatsaus-UB5rRp5Nz5",
+          "label": "Yleiskatsaus",
+          "slug": "yleiskatsaus-UB5rRp5Nz5"
+        },
+        {
+          "type": "doc",
+          "id": "taistelija-Rco9ioLaEE",
+          "label": "Taistelija",
+          "slug": "taistelija-Rco9ioLaEE"
+        },
+        {
+          "type": "doc",
+          "id": "komentopaikka-7qMzKheq4Z",
+          "label": "Komentopaikka",
+          "slug": "komentopaikka-7qMzKheq4Z"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "itak-pzOFxqFSem",
+      "label": "iTAK",
+      "clientId": "itak-pzOFxqFSem",
+      "children": [
+        {
+          "type": "doc",
+          "id": "vianmaaritys-LtZ3uqW6vO",
+          "label": "Vianmääritys",
+          "slug": "vianmaaritys-LtZ3uqW6vO"
+        }
+      ]
+    },
+    {
+      "type": "toporg",
+      "id": "aloita-ja-yhdista-12ZYUnFSaG",
+      "label": "ALOITA JA YHDISTÄ",
+      "clientId": "tak-tracker-android-E5prGxCUhh",
+      "children": [
+        {
+          "type": "doc",
+          "id": "aloita-lataamisesta-HDrpxKE5fj",
+          "label": "Aloita lataamisesta",
+          "slug": "aloita-lataamisesta-HDrpxKE5fj"
+        },
+        {
+          "type": "doc",
+          "id": "tak-tracker-on-jo-asennettu-kdeS68J3Ln",
+          "label": "TAK Tracker on jo asennettu",
+          "slug": "tak-tracker-on-jo-asennettu-kdeS68J3Ln"
+        },
+        {
+          "type": "doc",
+          "id": "palvelinyhteyden-tuonti-se5nhvhcj0",
+          "label": "Palvelinyhteyden tuonti",
+          "slug": "palvelinyhteyden-tuonti-se5nhvhcj0"
+        }
+      ]
+    },
+    {
+      "type": "toporg",
+      "id": "perustoiminnot-STBYPn8qJ6",
+      "label": "PERUSTOIMINNOT",
+      "clientId": "tak-tracker-android-E5prGxCUhh",
+      "children": [
+        {
+          "type": "doc",
+          "id": "lue-tilasi-ja-sijaintisi-2FUEtnpZg4",
+          "label": "Lue tilasi ja sijaintisi",
+          "slug": "lue-tilasi-ja-sijaintisi-2FUEtnpZg4"
+        },
+        {
+          "type": "doc",
+          "id": "laheta-hatamajakka-1C1ahU2CXe",
+          "label": "Lähetä hätämajakka",
+          "slug": "laheta-hatamajakka-1C1ahU2CXe"
+        },
+        {
+          "type": "doc",
+          "id": "keskustele-tiimisi-kanssa-gTr7e8bLbF",
+          "label": "Keskustele tiimisi kanssa",
+          "slug": "keskustele-tiimisi-kanssa-gTr7e8bLbF"
+        }
+      ]
+    },
+    {
+      "type": "toporg",
+      "id": "lisaominaisuudet-zDxTIvOwBi",
+      "label": "LISÄOMINAISUUDET",
+      "clientId": "tak-tracker-android-E5prGxCUhh",
+      "children": [
+        {
+          "type": "doc",
+          "id": "asetukset-ja-valinnat-kNYxhiyRlR",
+          "label": "Asetukset ja valinnat",
+          "slug": "asetukset-ja-valinnat-kNYxhiyRlR"
+        }
+      ]
+    },
+    {
+      "type": "toporg",
+      "id": "kaytto-rooleittain-CjDF6P8IaC",
+      "label": "KÄYTTÖ ROOLEITTAIN",
+      "clientId": "tak-tracker-android-E5prGxCUhh",
+      "children": [
+        {
+          "type": "doc",
+          "id": "yleiskatsaus-awMobw9EkE",
+          "label": "Yleiskatsaus",
+          "slug": "yleiskatsaus-awMobw9EkE"
+        },
+        {
+          "type": "doc",
+          "id": "taistelija-jkvrnZXkli",
+          "label": "Taistelija",
+          "slug": "taistelija-jkvrnZXkli"
+        },
+        {
+          "type": "doc",
+          "id": "komentopaikka-BLzd0iLjOh",
+          "label": "Komentopaikka",
+          "slug": "komentopaikka-BLzd0iLjOh"
+        }
+      ]
+    },
+    {
+      "type": "toporg",
+      "id": "aloitus-ja-yhteyden-muodostaminen-zNOY45PsbD",
+      "label": "ALOITUS JA YHTEYDEN MUODOSTAMINEN",
+      "clientId": "tak-tracker-apple-fLXmWaMemp",
+      "children": [
+        {
+          "type": "doc",
+          "id": "aloita-lataamalla-GKdhN7JWfS",
+          "label": "Aloita lataamalla",
+          "slug": "aloita-lataamalla-GKdhN7JWfS"
+        },
+        {
+          "type": "doc",
+          "id": "tak-tracker-on-jo-asennettu-9ULjLI5HIp",
+          "label": "TAK Tracker on jo asennettu",
+          "slug": "tak-tracker-on-jo-asennettu-9ULjLI5HIp"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "tak-toiminnot-d65wlJ4o4J",
+      "label": "TAK-toiminnot",
+      "clientId": "tak-tracker-apple-fLXmWaMemp",
+      "children": [
+        {
+          "type": "doc",
+          "id": "laheta-halytyksia-oXpOorNrag",
+          "label": "Lähetä hälytyksiä",
+          "slug": "laheta-halytyksia-oXpOorNrag"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "kaytto-roolin-mukaan-XcyWT5erP6",
+      "label": "Käyttö roolin mukaan",
+      "clientId": "tak-tracker-apple-fLXmWaMemp",
+      "children": [
+        {
+          "type": "doc",
+          "id": "yleiskatsaus-BerAy6ibbu",
+          "label": "Yleiskatsaus",
+          "slug": "yleiskatsaus-BerAy6ibbu"
+        },
+        {
+          "type": "doc",
+          "id": "taistelija-Qgf88CxnWl",
+          "label": "Taistelija",
+          "slug": "taistelija-Qgf88CxnWl"
+        },
+        {
+          "type": "doc",
+          "id": "komentopaikka-q4LRKdr4q0",
+          "label": "Komentopaikka",
+          "slug": "komentopaikka-q4LRKdr4q0"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "tak-tracker-apple-fLXmWaMemp",
+      "label": "TAK Tracker - Apple",
+      "clientId": "tak-tracker-apple-fLXmWaMemp",
+      "children": [
+        {
+          "type": "doc",
+          "id": "vianmaaritys-MchVmRHKOC",
+          "label": "Vianmääritys",
+          "slug": "vianmaaritys-MchVmRHKOC"
+        }
+      ]
     }
   ]
 }

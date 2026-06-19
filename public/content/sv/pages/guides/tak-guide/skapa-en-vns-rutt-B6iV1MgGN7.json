@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "id": "442f9c24-e87b-48ef-801c-4f3544931db0",
+  "slug": "skapa-en-vns-rutt-B6iV1MgGN7",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Skapa en VNS-rutt",
+  "breadcrumb": [
+    "Platforms",
+    "WinTAK",
+    "Plugin-program som stöds",
+    "VNS - Fordonsnavigeringssystem",
+    "Skapa en VNS-rutt"
+  ],
+  "createdAt": "2026-06-18T19:35:27.319Z",
+  "updatedAt": "2026-06-18T20:25:30.331Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/create-a-vns-route-gfIlnjXwN2",
+    "fi": "/fi/guides/tak-guide/luo-vns-reitti-Njd2diVcZY",
+    "sv": "/sv/guides/tak-guide/skapa-en-vns-rutt-B6iV1MgGN7"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Tillägget VNS (Vehicle Navigation System) ger WinTAKs ruttplanering vägbunden fordonsruttning och röstanvisningar steg för steg. Efter installationen finns det bakom ikonen <strong>Routes</strong>.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Öppna Routes-verktyget",
+          "layout": "image-bottom",
+          "html": "<p>Öppna verktyget <strong>Routes</strong> i WinTAKs verktygsfält och välj <strong>+</strong> för att börja en ny rutt. När VNS är aktivt öppnas planeringsdialogen New Route i stället för dialogen för manuell placering.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/705d55ba0f6065ce.webp",
+              "width": 348,
+              "height": 72
+            }
+          ]
+        },
+        {
+          "title": "Ange adresser och ruttmetod",
+          "layout": "image-bottom",
+          "html": "<p>Skriv in <strong>Start Address</strong> och <strong>Destination Address</strong>, eller använd hårkorsen för att placera dem på kartan. Ställ in <strong>Routing Method</strong> på <strong>Google Route Planner</strong> och kryssa i önskade undantag (<strong>Avoid Ferries / Highways / Tolls</strong>), välj sedan <strong>Create</strong> — rutten binds till vägarna och ritas på kartan. Om du i stället vill placera en manuell punkt-till-punkt-rutt med WinTAKs grundverktyg, välj <strong>Manual</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/cb9d0eac9cac12fe.webp",
+              "width": 409,
+              "height": 363
+            }
+          ]
+        },
+        {
+          "title": "Arbeta med ruttdetaljerna",
+          "layout": "image-bottom",
+          "html": "<p>Rutan <strong>Route Details</strong> öppnas efter att rutten skapats.</p>\n<ul>\n<li>Härifrån kan du byta namn på rutten, välja färg, ange rutttyp (primär/sekundär, infil/exfil), lägga till anmärkningar, namnge kontrollpunkter, bifoga filer, ange en navigeringsanvisning per kontrollpunkt, visa höjdprofilen, skicka rutten till andra enheter (<strong>Send</strong>) eller trycka på <strong>GO</strong> för att börja navigera.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/d755d59454946e3b.webp",
+              "width": 350,
+              "height": 561
+            }
+          ]
+        },
+        {
+          "title": "Ange API-nyckeln för Google Directions",
+          "layout": "image-bottom",
+          "html": "<p>VNS använder Googles ruttmotor. Ange din nyckel under <strong>Settings > Tool Preferences > VNS Preferences</strong> — organisationer licensierar sin egen Google Directions API-nyckel.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/2543c2aa7a4ddde7.webp",
+              "width": 269,
+              "height": 136
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

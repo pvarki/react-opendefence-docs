@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "id": "1ab0ea42-ce81-4a5d-9cf8-2d735d7c24c1",
+  "slug": "planera-dronaruppdrag-fOPXznHLwt",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Planera drönaruppdrag",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "TILLÄGG SOM STÖDS",
+    "UAS-verktyg",
+    "Planera drönaruppdrag"
+  ],
+  "createdAt": "2026-06-18T19:30:29.029Z",
+  "updatedAt": "2026-06-18T20:21:50.719Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/plan-drone-missions-lNvEkDE1kE",
+    "fi": "/fi/guides/tak-guide/suunnittele-lennokkitehtavat-emxgZTF3x4",
+    "sv": "/sv/guides/tak-guide/planera-dronaruppdrag-fOPXznHLwt"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Planera en drönarflygning före start så att luftfarkosten flyger din rutt, perimeter eller karteringsområde på egen hand.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Öppna Mission Manager",
+          "layout": "image-bottom",
+          "html": "<p>Från startskärmen, <strong>swipe left</strong> för att nå <strong>Stored Tasks</strong>, och öppna sedan <strong>Mission Manager</strong>. Du kan planera här utan att någon UAS är ansluten.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/0b0cfd9aa9fb6002.webp",
+              "width": 800,
+              "height": 381
+            }
+          ]
+        },
+        {
+          "title": "Bygg en rutt",
+          "layout": "image-bottom",
+          "html": "<p>Välj <strong>Route</strong> för att lägga ut en flerpunktsbana som luftfarkosten ska följa. Tryck på varje punkt på kartan och tryck sedan på <strong>Save</strong>. <strong>Existing Route</strong> konverterar en ATAK-rutt på samma sätt.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/0b0cfd9aa9fb6002.webp",
+              "width": 800,
+              "height": 381
+            }
+          ]
+        },
+        {
+          "title": "Bygg en perimeter",
+          "layout": "image-bottom",
+          "html": "<p>Välj <strong>Perimeter</strong> för att flyga en sluten form. Luftfarkosten följer konturen och återvänder till den första waypointen. Tryck på <strong>Save</strong> när formen är klar.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/5f79161bba86aa7e.webp",
+              "width": 800,
+              "height": 380
+            }
+          ]
+        },
+        {
+          "title": "Bygg en kartering",
+          "layout": "image-bottom",
+          "html": "<p>Välj <strong>Survey</strong> för att täcka ett helt område med ett fram-och-tillbaka-rutnät. Ange <strong>Task Name</strong> och <strong>Task Altitude (AGL)</strong> och tryck sedan på <strong>Create Task</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/3c55a25ac1471b7b.webp",
+              "width": 800,
+              "height": 381
+            }
+          ]
+        },
+        {
+          "title": "Skapa ett MAVLink-uppdrag",
+          "layout": "image-bottom",
+          "html": "<p>För stegvis uppgiftstilldelning, öppna Add Task Menu (<strong>+</strong>) och välj <strong>Add</strong>.</p>\n<ul>\n<li>Använd fliken <strong>MISSION</strong> för flygningen, <strong>FENCE</strong> för geofences och <strong>RALLY</strong> för samlingspunkter.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/db50b1677519014a.webp",
+              "width": 1064,
+              "height": 697
+            }
+          ]
+        },
+        {
+          "title": "Lägg till start och waypoints",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på <strong>Pencil Icon</strong> för att lägga till uppdragsobjekt på kartan. Lägg till <strong>Takeoff</strong> för att aktivera och stiga till en höjd, lägg sedan till <strong>Waypoint</strong>-punkter som luftfarkosten ska flyga till (hastighet, höjd, gir, gimbal).</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/db50b1677519014a.webp",
+              "width": 1064,
+              "height": 697
+            }
+          ]
+        },
+        {
+          "title": "Ställ in ROI på ett mål",
+          "layout": "image-bottom",
+          "html": "<p>Lägg till <strong>ROI (Region of Interest)</strong> för att låsa gimbalen på en punkt. Lägg till <strong>Cancel ROI</strong> innan uppdraget slutar, annars fortsätter luftfarkosten att följa målet i manuell flygning.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/db50b1677519014a.webp",
+              "width": 1064,
+              "height": 697
+            }
+          ]
+        },
+        {
+          "title": "Avsluta med Land eller Return to Launch",
+          "layout": "image-bottom",
+          "html": "<p>Avsluta uppdraget med <strong>Land</strong> för att ange en landningswaypoint, eller <strong>Return to Launch</strong> för att flyga tillbaka till starten och landa. Tryck på <strong>Save</strong> för att spara uppdraget och kör det sedan från <strong>Onboard</strong>-listan.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/db50b1677519014a.webp",
+              "width": 1064,
+              "height": 697
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

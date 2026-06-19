@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 1,
+  "id": "d9dc958f-f34a-48d9-ba9e-0349404a8406",
+  "slug": "datan-synkronointi-lzOCvJIN5S",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Datan synkronointi",
+  "breadcrumb": [
+    "Platforms",
+    "iTAK",
+    "Perustoiminnot",
+    "Datan synkronointi"
+  ],
+  "createdAt": "2026-06-18T19:35:31.856Z",
+  "updatedAt": "2026-06-18T20:25:49.448Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/data-sync-U4cc7UE9hg",
+    "fi": "/fi/guides/tak-guide/datan-synkronointi-lzOCvJIN5S",
+    "sv": "/sv/guides/tak-guide/datasynkronisering-sfvICpIRhr"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Data Sync -määritys",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Siirry Data Sync -toimintoon</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/feecfd08d805f472.webp",
+              "width": 1179,
+              "height": 599
+            }
+          ]
+        },
+        {
+          "title": "Lisää tehtäviä",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Paina + -merkkiä tilataksesi tehtäviä</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/8fc535a64cf14580.webp",
+              "width": 1179,
+              "height": 1253
+            }
+          ]
+        },
+        {
+          "title": "Tilaa tehtäviä",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Tilaa</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/01f76e13b94c8cb0.webp",
+              "width": 1179,
+              "height": 1249
+            }
+          ]
+        },
+        {
+          "title": "Saatavilla olevat tehtävät",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Valitse ohjeistettu saatavilla oleva tehtävä</li>\n<li>Oletustehtävä on RECON</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/0367758ac6410f10.webp",
+              "width": 1179,
+              "height": 1253
+            }
+          ]
+        },
+        {
+          "title": "Tehtävän tiedot",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>näkymä esittää tehtävän tiedot ja tehtävässä saatavilla olevan datan.</li>\n<li>Palaa edelliseen näkymään.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/b20947f3eb07b21b.webp",
+              "width": 1179,
+              "height": 1246
+            }
+          ]
+        },
+        {
+          "title": "Mission Sync",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Varmista, että tehtävän data on päivitetty</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/6c66f841da75293e.webp",
+              "width": 1179,
+              "height": 1253
+            }
+          ]
+        },
+        {
+          "title": "Full Sync",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Salli Full Sync</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/76b97aa304418702.webp",
+              "width": 1179,
+              "height": 1515
+            }
+          ]
+        },
+        {
+          "title": "iTAK-määritys valmis",
+          "layout": "text",
+          "html": "",
+          "images": []
+        }
+      ]
+    }
+  ]
+}

@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 import { Braces, ChevronRight, Code2 } from "lucide-react";
 import type { ManifestCollection } from "@shared/content-schema";
 import { BookCard } from "@/components/shell/BookCard";
+import { AgentFriendlyNote } from "@/components/shell/AgentFriendlyNote";
 import { ShelfHero } from "@/components/shell/ShelfHero";
 import { CARD_IMAGES } from "@/lib/cardImages";
 import { withBase } from "@/lib/base";
@@ -31,6 +32,32 @@ export interface RelComponent {
   name: string;
   hasReleases: boolean;
   hasChangelog: boolean;
+}
+
+// "Working with TAK" — three deep-link tabs into the single working-with-tak
+// collection. Each card links to that guide chapter's first page.
+const TAK_COLLECTION = "working-with-tak";
+const TAK_CHAPTERS: { titleKey: string; descKey: string; chapter: string }[] = [
+  {
+    titleKey: "takShelf.pluginDevTitle",
+    descKey: "takShelf.pluginDevDesc",
+    chapter: "ATAK Plugin Development",
+  },
+  {
+    titleKey: "takShelf.integratingTitle",
+    descKey: "takShelf.integratingDesc",
+    chapter: "Integrating to TAK Server",
+  },
+  {
+    titleKey: "takShelf.federationTitle",
+    descKey: "takShelf.federationDesc",
+    chapter: "Federation Hub: connecting multiple TAK Servers",
+  },
+];
+export interface TakTab {
+  titleKey: string;
+  descKey: string;
+  splat: string;
 }
 
 export const Route = createFileRoute("/$locale/dev/")({
@@ -65,7 +92,25 @@ export const Route = createFileRoute("/$locale/dev/")({
       // release docs are optional; the shelf still renders
     }
 
-    return { books, firstPages, relComponents };
+    const takTabs = TAK_CHAPTERS.map((c): TakTab | null => {
+      const first = manifest.pages
+        .filter(
+          (p) =>
+            p.collection === TAK_COLLECTION &&
+            p.chapterLabel === c.chapter &&
+            !p.hidden,
+        )
+        .sort((a, b) => a.order - b.order)[0];
+      return first
+        ? {
+            titleKey: c.titleKey,
+            descKey: c.descKey,
+            splat: `${TAK_COLLECTION}/${first.slug}`,
+          }
+        : null;
+    }).filter((t): t is TakTab => t !== null);
+
+    return { books, firstPages, relComponents, takTabs };
   },
   component: DevShelf,
 });
@@ -116,7 +161,7 @@ function ComponentRow({
 function DevShelf() {
   const { t } = useTranslation();
   const { locale } = Route.useParams();
-  const { books, firstPages, relComponents } = Route.useLoaderData();
+  const { books, firstPages, relComponents, takTabs } = Route.useLoaderData();
 
   const bookCard = (book: ManifestCollection) => {
     const first = firstPages[book.slug];
@@ -205,6 +250,25 @@ function DevShelf() {
             </div>
           </>
         )}
+
+        {takTabs.length > 0 && (
+          <>
+            <SectionHeading>{t("devShelf.workingWithTak")}</SectionHeading>
+            <div className="grid grid-cols-1 gap-2.5 md:grid-cols-2 md:gap-3">
+              {takTabs.map((tab) => (
+                <BookCard
+                  key={tab.splat}
+                  locale={locale}
+                  to="/$locale/$"
+                  splat={tab.splat}
+                  icon={Code2}
+                  title={t(tab.titleKey)}
+                  description={t(tab.descKey)}
+                />
+              ))}
+            </div>
+          </>
+        )}
       </div>
       <DevFooter />
     </div>
@@ -224,6 +288,8 @@ function DevFooter() {
           </strong>
           {t("devFooter.leadAfter")}
         </p>
+
+        <AgentFriendlyNote example={t("agentNote.exampleDev")} />
       </div>
     </footer>
   );

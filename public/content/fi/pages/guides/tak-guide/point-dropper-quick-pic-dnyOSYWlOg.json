@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 1,
+  "id": "74085c34-90d6-47ef-a23d-f2895998048a",
+  "slug": "point-dropper-quick-pic-dnyOSYWlOg",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Point Dropper - Quick Pic",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "Perustoiminnot",
+    "Point Dropper - Quick Pic"
+  ],
+  "createdAt": "2026-06-18T19:26:12.560Z",
+  "updatedAt": "2026-06-18T20:13:52.628Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/point-dropper-quick-pic-gxAsonzSXL",
+    "fi": "/fi/guides/tak-guide/point-dropper-quick-pic-dnyOSYWlOg",
+    "sv": "/sv/guides/tak-guide/point-dropper-quick-pic-sTBDsrUhIs"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "1. Ota kuvia ja jaa",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Quick Pic antaa ottaa ja jakaa kuvia heti.</li>\n<li>Aloita valitsemalla <strong>Camera icon</strong>.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/9109cc5bb272b903.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Kamera avautuu",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Ota kuva haluamallasi tavalla.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/d6d74241e5e1b0f7.webp",
+              "width": 1080,
+              "height": 2340
+            }
+          ]
+        },
+        {
+          "title": "Täytä tiedot",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Napauttamalla <strong>Pen icon</strong> voit täyttää kuvan tiedot.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/9149da436f4c2709.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Täytetään...",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Kuvaile tiedot haluamallasi tavalla.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/94d9e291cef5c019.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Nimeä kuva uudelleen",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Napauttamalla <strong>Edit Name icon</strong> voit nimetä kuvan uudelleen.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/6c2f87cd6f97b770.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Nimetään uudelleen...",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Kuvaava nimi on suositeltava.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/620823070e61033d.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Jakaminen Send-toiminnolla",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Kuten merkinnät, myös Quick Pic -kuvat ovat vain omassa laitteessasi. Lähetä syötteeseen (Feed) tai roolille (Role) (tai käyttäjälle).</li>\n<li>Deploy App x TAK:n vakiomalli jakamisessa löytyy kohdasta Usage by Role.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/a3a3a3210e81ea7e.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Liitä tiedosto merkintään",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Avaa merkintä ja valitse <strong>Attachments</strong> (paperiliitin) -kuvake lisätäksesi kuvan, videon tai tiedoston.</li>\n<li>Rastita <strong>Auto Send</strong>, niin merkintä päivittyy verkkoon noin 60 sekunnin välein.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/029fe4cc0794346f.webp",
+              "width": 349,
+              "height": 198
+            }
+          ]
+        },
+        {
+          "title": "Tarkastele Gallery-näkymässä",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Avaa <strong>Gallery</strong>-työkalu selataksesi jokaisen medialiitteen tiedostonimineen ja siihen linkitettyine karttakohteineen.</li>\n<li>Napauta kuvaa ja napauta sitten yläreunan riviä lisätäksesi kuvatekstin.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/2782222a4a682e38.webp",
+              "width": 425,
+              "height": 206
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

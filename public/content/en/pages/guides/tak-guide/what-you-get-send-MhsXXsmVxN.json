@@ -13,8 +13,13 @@
     "What you get & send"
   ],
   "createdAt": "2026-06-14T13:34:51.124Z",
-  "updatedAt": "2026-06-16T12:23:41.539Z",
+  "updatedAt": "2026-06-18T20:17:01.968Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/what-you-get-send-MhsXXsmVxN",
+    "fi": "/fi/guides/tak-guide/mita-saat-ja-lahetat-fb846unh6t",
+    "sv": "/sv/guides/tak-guide/vad-du-far-och-skickar-8NvaGg4aKo"
+  },
   "blocks": [
     {
       "type": "slideset",

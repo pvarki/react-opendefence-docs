@@ -12,8 +12,13 @@
     "Load Plugins & Finish Setup"
   ],
   "createdAt": "2026-06-14T14:30:40.979Z",
-  "updatedAt": "2026-06-16T10:55:57.533Z",
+  "updatedAt": "2026-06-18T20:23:29.206Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/load-plugins-finish-setup-xa2huv9Wmn",
+    "fi": "/fi/guides/tak-guide/lataa-lisaosat-ja-viimeistele-asennus-Tb3fKqrK2B",
+    "sv": "/sv/guides/tak-guide/ladda-tillagg-och-slutfor-installationen-q0zNv80GFR"
+  },
   "blocks": [
     {
       "type": "html",

@@ -12,6 +12,7 @@ import {
 } from "lucide-react";
 import type { ManifestCollection } from "@shared/content-schema";
 import { BookCard } from "@/components/shell/BookCard";
+import { AgentFriendlyNote } from "@/components/shell/AgentFriendlyNote";
 import { ShelfHero } from "@/components/shell/ShelfHero";
 import { CARD_IMAGES } from "@/lib/cardImages";
 import { loadManifest } from "@/lib/content/loader";
@@ -152,6 +153,8 @@ function GuidesFooter() {
             </p>
           </div>
         </details>
+
+        <AgentFriendlyNote example={t("agentNote.exampleGuides")} />
       </div>
     </footer>
   );

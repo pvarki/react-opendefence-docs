@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "8c6747a1-4c2b-4952-8e49-b8379b85d01c",
+  "slug": "anslut-till-en-deploy-app-LSYhrD19yJ",
+  "collection": "deploy-app",
+  "locale": "sv",
+  "title": "Anslut till en Deploy App",
+  "breadcrumb": [
+    "Platforms",
+    "Windows",
+    "Användarguide",
+    "Anslut till en Deploy App"
+  ],
+  "createdAt": "2026-06-18T20:35:46.997Z",
+  "updatedAt": "2026-06-18T20:39:11.609Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/deploy-app/join-a-deploy-app-Ns73TcVodz",
+    "fi": "/fi/deploy-app/liity-deploy-app-sovellukseen-h2y5oF7JN4",
+    "sv": "/sv/deploy-app/anslut-till-en-deploy-app-LSYhrD19yJ"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<ul>\n<li>Ta emot inbjudningslänk eller skanna QR-kod\n<ul>\n<li>Ange anropssignal (Callsign)\n<ul>\n<li>Öppna filen Callsign.pfx och importera den\n<ul>\n<li>Anslut till Deploy App med certifikat\n<ul>\n<li>Använd applikationerna</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>"
+    }
+  ]
+}

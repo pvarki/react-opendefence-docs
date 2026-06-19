@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "id": "07da26db-2a88-425e-8338-86f44002bd00",
+  "slug": "cot-in-depth-listening-sending-custom-details-nTudtLfqX9",
+  "collection": "working-with-tak",
+  "locale": "en",
+  "title": "CoT in depth: listening, sending & custom details",
+  "breadcrumb": [
+    "ATAK Plugin Development",
+    "CoT in depth: listening, sending & custom details"
+  ],
+  "createdAt": "2026-06-17T01:52:05.672Z",
+  "updatedAt": "2026-06-17T01:52:06.794Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Sending CoT",
+      "id": "sending-cot"
+    },
+    {
+      "depth": 2,
+      "text": "Listening to CoT",
+      "id": "listening-to-cot"
+    },
+    {
+      "depth": 3,
+      "text": "1. Custom detail handlers (most common)",
+      "id": "1-custom-detail-handlers-most-common"
+    },
+    {
+      "depth": 3,
+      "text": "2. Marshal + Importer (inspect/route whole events)",
+      "id": "2-marshal--importer-inspectroute-whole-events"
+    },
+    {
+      "depth": 3,
+      "text": "Which hook to use?",
+      "id": "which-hook-to-use"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p><a href=\"/en/working-with-tak/working-with-the-map-cot-JmDIw4jN8e\">Working with the map &#x26; CoT</a> covered the concept; this is the working reference for hooking the CoT bus.</p>\n<h2 id=\"sending-cot\"><a href=\"#sending-cot\">Sending CoT</a></h2>\n<p>Convert a map item to a <code>CotEvent</code> and hand it to a dispatcher (verified in the open-source <code>helloworld</code>):</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#C678DD\">final</span><span style=\"color:#E5C07B\"> CotEvent</span><span style=\"color:#E06C75\"> cotEvent </span><span style=\"color:#56B6C2\">=</span><span style=\"color:#E5C07B\"> CotEventFactory</span><span style=\"color:#ABB2BF\">.</span><span style=\"color:#61AFEF\">createCotEvent</span><span style=\"color:#ABB2BF\">(mapItem);</span></span>\n<span class=\"line\"><span style=\"color:#E5C07B\">CotMapComponent</span><span style=\"color:#ABB2BF\">.</span><span style=\"color:#61AFEF\">getExternalDispatcher</span><span style=\"color:#ABB2BF\">().</span><span style=\"color:#61AFEF\">dispatchToBroadcast</span><span style=\"color:#ABB2BF\">(cotEvent);</span><span style=\"color:#7F848E;font-style:italic\">   // out to the network</span></span></code></pre>",
+      "lang": "java"
+    },
+    {
+      "type": "html",
+      "html": "<ul>\n<li><strong>External dispatcher</strong> (<code>CotMapComponent.getExternalDispatcher()</code>) → sends to network outputs. <code>dispatchToBroadcast(...)</code> goes to all of them; targeted <code>dispatch(...)</code> variants send to specific contacts.</li>\n<li><strong>Internal dispatcher</strong> (<code>CotMapComponent.getInternalDispatcher()</code>) → routes the event through ATAK's own bus, as if it had just arrived over the network (no transmission).</li>\n</ul>\n<h2 id=\"listening-to-cot\"><a href=\"#listening-to-cot\">Listening to CoT</a></h2>\n<p>There are three complementary hooks.</p>\n<h3 id=\"1-custom-detail-handlers-most-common\"><a href=\"#1-custom-detail-handlers-most-common\">1. Custom detail handlers (most common)</a></h3>\n<p>Register a handler for a specific <code>&#x3C;detail></code> child tag, so your plugin can read/write custom data on the CoT round-trip. The <strong>general</strong> form (verified in <code>helloworld</code>'s <code>MapComponent</code>) works for any <code>MapItem</code>:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#E5C07B\">CotDetailManager</span><span style=\"color:#ABB2BF\">.</span><span style=\"color:#61AFEF\">getInstance</span><span style=\"color:#ABB2BF\">().</span><span style=\"color:#61AFEF\">registerHandler</span><span style=\"color:#ABB2BF\">(</span><span style=\"color:#C678DD\">new</span><span style=\"color:#61AFEF\"> CotDetailHandler</span><span style=\"color:#ABB2BF\">(</span><span style=\"color:#98C379\">\"__aaa\"</span><span style=\"color:#ABB2BF\">) {</span></span>\n<span class=\"line\"><span style=\"color:#ABB2BF\">    @</span><span style=\"color:#E5C07B\">Override</span></span>\n<span class=\"line\"><span style=\"color:#C678DD\">    public</span><span style=\"color:#E5C07B\"> CommsMapComponent</span><span style=\"color:#ABB2BF\">.</span><span style=\"color:#E5C07B\">ImportResult</span><span style=\"color:#61AFEF\"> toItemMetadata</span><span style=\"color:#ABB2BF\">(   </span><span style=\"color:#7F848E;font-style:italic\">// INBOUND: CoT → item</span></span>\n<span class=\"line\"><span style=\"color:#E5C07B\">            MapItem</span><span style=\"color:#E06C75;font-style:italic\"> item</span><span style=\"color:#ABB2BF\">, </span><span style=\"color:#E5C07B\">CotEvent</span><span style=\"color:#E06C75;font-style:italic\"> event</span><span style=\"color:#ABB2BF\">, </span><span style=\"color:#E5C07B\">CotDetail</span><span style=\"color:#E06C75;font-style:italic\"> detail</span><span style=\"color:#ABB2BF\">)</span><span style=\"color:#ABB2BF\"> {</span></span>\n<span class=\"line\"><span style=\"color:#7F848E;font-style:italic\">        // read 'detail', set metadata on 'item'</span></span>\n<span class=\"line\"><span style=\"color:#C678DD\">        return</span><span style=\"color:#E5C07B\"> CommsMapComponent</span><span style=\"color:#ABB2BF\">.</span><span style=\"color:#E5C07B\">ImportResult</span><span style=\"color:#ABB2BF\">.</span><span style=\"color:#E5C07B\">SUCCESS</span><span style=\"color:#ABB2BF\">;</span></span>\n<span class=\"line\"><span style=\"color:#ABB2BF\">    }</span></span>\n<span class=\"line\"><span style=\"color:#ABB2BF\">    @</span><span style=\"color:#E5C07B\">Override</span></span>\n<span class=\"line\"><span style=\"color:#C678DD\">    public</span><span style=\"color:#C678DD\"> boolean</span><span style=\"color:#61AFEF\"> toCotDetail</span><span style=\"color:#ABB2BF\">(                             </span><span style=\"color:#7F848E;font-style:italic\">// OUTBOUND: item → CoT</span></span>\n<span class=\"line\"><span style=\"color:#E5C07B\">            MapItem</span><span style=\"color:#E06C75;font-style:italic\"> item</span><span style=\"color:#ABB2BF\">, </span><span style=\"color:#E5C07B\">CotEvent</span><span style=\"color:#E06C75;font-style:italic\"> event</span><span style=\"color:#ABB2BF\">, </span><span style=\"color:#E5C07B\">CotDetail</span><span style=\"color:#E06C75;font-style:italic\"> root</span><span style=\"color:#ABB2BF\">)</span><span style=\"color:#ABB2BF\"> {</span></span>\n<span class=\"line\"><span style=\"color:#7F848E;font-style:italic\">        // append your &#x3C;__aaa .../> element to 'root'</span></span>\n<span class=\"line\"><span style=\"color:#C678DD\">        return</span><span style=\"color:#D19A66\"> true</span><span style=\"color:#ABB2BF\">;</span></span>\n<span class=\"line\"><span style=\"color:#ABB2BF\">    }</span></span>\n<span class=\"line\"><span style=\"color:#ABB2BF\">});</span></span></code></pre>",
+      "lang": "java"
+    },
+    {
+      "type": "html",
+      "html": "<p>There's also a simpler <code>**MarkerDetailHandler**</code> variant (the <code>helloworld</code> <code>SpecialDetailHandler</code> for the <code>__special</code> tag) when you only care about <code>Marker</code>s — its methods are <code>toCotDetail(Marker, CotDetail)</code> and <code>toMarkerMetadata(Marker, CotEvent, CotDetail)</code>.</p>\n<p>Register in <code>MapComponent.onCreate(...)</code> and <strong>unregister in teardown</strong>:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#E5C07B\">CotDetailManager</span><span style=\"color:#ABB2BF\">.</span><span style=\"color:#61AFEF\">getInstance</span><span style=\"color:#ABB2BF\">().</span><span style=\"color:#61AFEF\">unregisterHandler</span><span style=\"color:#ABB2BF\">(handler);</span></span></code></pre>",
+      "lang": "java"
+    },
+    {
+      "type": "html",
+      "html": "<blockquote>\n<p><strong>Convention:</strong> prefix non-standard detail tags with a <strong>double underscore</strong> (<code>__special</code>, <code>__aaa</code>). Keep <code>toItemMetadata</code>/<code>toCotDetail</code> 1:1 so data round-trips losslessly.</p>\n</blockquote>\n<h3 id=\"2-marshal--importer-inspectroute-whole-events\"><a href=\"#2-marshal--importer-inspectroute-whole-events\">2. Marshal + Importer (inspect/route whole events)</a></h3>\n<p>To inspect an incoming CoT event and route it into the import framework, pair an <code>AbstractCotEventMarshal</code> (decides whether to accept an event, by type) with an <code>AbstractCotEventImporter</code> (does the import):</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#E5C07B\">MarshalManager</span><span style=\"color:#ABB2BF\">.</span><span style=\"color:#61AFEF\">registerMarshal</span><span style=\"color:#ABB2BF\">(</span><span style=\"color:#C678DD\">new</span><span style=\"color:#61AFEF\"> AbstractCotEventMarshal</span><span style=\"color:#ABB2BF\">(</span><span style=\"color:#98C379\">\"MyCustomType\"</span><span style=\"color:#ABB2BF\">) {</span></span>\n<span class=\"line\"><span style=\"color:#ABB2BF\">    @</span><span style=\"color:#E5C07B\">Override</span><span style=\"color:#C678DD\"> protected</span><span style=\"color:#C678DD\"> boolean</span><span style=\"color:#61AFEF\"> accept</span><span style=\"color:#ABB2BF\">(</span><span style=\"color:#E5C07B\">CotEvent</span><span style=\"color:#E06C75;font-style:italic\"> event</span><span style=\"color:#ABB2BF\">)</span><span style=\"color:#ABB2BF\"> {</span></span>\n<span class=\"line\"><span style=\"color:#C678DD\">        return</span><span style=\"color:#E5C07B\"> event</span><span style=\"color:#ABB2BF\">.</span><span style=\"color:#61AFEF\">getType</span><span style=\"color:#ABB2BF\">().</span><span style=\"color:#61AFEF\">startsWith</span><span style=\"color:#ABB2BF\">(</span><span style=\"color:#98C379\">\"u-O-G-R\"</span><span style=\"color:#ABB2BF\">);</span></span>\n<span class=\"line\"><span style=\"color:#ABB2BF\">    }</span></span>\n<span class=\"line\"><span style=\"color:#ABB2BF\">    @</span><span style=\"color:#E5C07B\">Override</span><span style=\"color:#C678DD\"> public</span><span style=\"color:#C678DD\"> int</span><span style=\"color:#61AFEF\"> getPriorityLevel</span><span style=\"color:#ABB2BF\">()</span><span style=\"color:#ABB2BF\"> { </span><span style=\"color:#C678DD\">return</span><span style=\"color:#D19A66\"> 2</span><span style=\"color:#ABB2BF\">; }</span></span>\n<span class=\"line\"><span style=\"color:#ABB2BF\">});</span></span>\n<span class=\"line\"></span>\n<span class=\"line\"><span style=\"color:#E5C07B\">ImporterManager</span><span style=\"color:#ABB2BF\">.</span><span style=\"color:#61AFEF\">registerImporter</span><span style=\"color:#ABB2BF\">(</span><span style=\"color:#C678DD\">new</span><span style=\"color:#61AFEF\"> AbstractCotEventImporter</span><span style=\"color:#ABB2BF\">(pluginContext, </span><span style=\"color:#98C379\">\"GG-COT\"</span><span style=\"color:#ABB2BF\">) {</span></span>\n<span class=\"line\"><span style=\"color:#ABB2BF\">    @</span><span style=\"color:#E5C07B\">Override</span><span style=\"color:#C678DD\"> public</span><span style=\"color:#E5C07B\"> Set</span><span style=\"color:#ABB2BF\">&#x3C;</span><span style=\"color:#E5C07B\">String</span><span style=\"color:#ABB2BF\">></span><span style=\"color:#61AFEF\"> getSupportedMIMETypes</span><span style=\"color:#ABB2BF\">()</span><span style=\"color:#ABB2BF\"> {</span></span>\n<span class=\"line\"><span style=\"color:#C678DD\">        return</span><span style=\"color:#C678DD\"> new</span><span style=\"color:#E5C07B\"> LinkedHashSet</span><span style=\"color:#ABB2BF\">&#x3C;>(</span><span style=\"color:#E5C07B\">List</span><span style=\"color:#ABB2BF\">.</span><span style=\"color:#61AFEF\">of</span><span style=\"color:#ABB2BF\">(</span><span style=\"color:#98C379\">\"application/cot+xml\"</span><span style=\"color:#ABB2BF\">));</span></span>\n<span class=\"line\"><span style=\"color:#ABB2BF\">    }</span></span>\n<span class=\"line\"><span style=\"color:#ABB2BF\">    @</span><span style=\"color:#E5C07B\">Override</span><span style=\"color:#C678DD\"> public</span><span style=\"color:#E5C07B\"> CommsMapComponent</span><span style=\"color:#ABB2BF\">.</span><span style=\"color:#E5C07B\">ImportResult</span><span style=\"color:#61AFEF\"> importData</span><span style=\"color:#ABB2BF\">(</span><span style=\"color:#E5C07B\">CotEvent</span><span style=\"color:#E06C75;font-style:italic\"> event</span><span style=\"color:#ABB2BF\">, </span><span style=\"color:#E5C07B\">Bundle</span><span style=\"color:#E06C75;font-style:italic\"> b</span><span style=\"color:#ABB2BF\">)</span><span style=\"color:#ABB2BF\"> {</span></span>\n<span class=\"line\"><span style=\"color:#7F848E;font-style:italic\">        // process accepted events</span></span>\n<span class=\"line\"><span style=\"color:#C678DD\">        return</span><span style=\"color:#E5C07B\"> CommsMapComponent</span><span style=\"color:#ABB2BF\">.</span><span style=\"color:#E5C07B\">ImportResult</span><span style=\"color:#ABB2BF\">.</span><span style=\"color:#E5C07B\">SUCCESS</span><span style=\"color:#ABB2BF\">;</span></span>\n<span class=\"line\"><span style=\"color:#ABB2BF\">    }</span></span>\n<span class=\"line\"><span style=\"color:#ABB2BF\">});</span></span></code></pre>",
+      "lang": "java"
+    },
+    {
+      "type": "html",
+      "html": "<h3 id=\"which-hook-to-use\"><a href=\"#which-hook-to-use\">Which hook to use?</a></h3>\n<ul>\n<li>Need to attach/extract <strong>custom fields</strong> on items that otherwise behave normally → <strong>detail handler</strong> (#1).</li>\n<li>Need to <strong>recognize and ingest</strong> a whole class of events your own way → <strong>Marshal + Importer</strong> (#2).</li>\n</ul>\n<p>→ Next: <a href=\"/en/working-with-tak/advanced-practical-apis-2XMWIolD6S\">Advanced &#x26; practical APIs</a>.</p>"
+    }
+  ]
+}

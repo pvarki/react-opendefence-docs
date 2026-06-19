@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "id": "aaee6064-3b13-482c-9d32-494985b20fbc",
+  "slug": "sand-nodlarm-cSlVtIcpdv",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Sänd nödlarm",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "Avancerade kärnfunktioner",
+    "Sänd nödlarm"
+  ],
+  "createdAt": "2026-06-18T19:27:18.351Z",
+  "updatedAt": "2026-06-18T20:16:01.902Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/broadcast-emergency-alert-UUcvlpUGMg",
+    "fi": "/fi/guides/tak-guide/laheta-hatahalytys-qv6woTAZ5H",
+    "sv": "/sv/guides/tak-guide/sand-nodlarm-cSlVtIcpdv"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Skicka en nödsignal till alla i nätverket så att de ser din position och vilken typ av problem du befinner dig i.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Öppna larmverktyget",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på <strong>Alert</strong>-ikonen (varningstriangel) för att öppna larmverktyget. Det placerar en nödsignal på din position på kartan.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/a18d1db2c75023bc.webp",
+              "width": 475,
+              "height": 219
+            }
+          ]
+        },
+        {
+          "title": "Välj typ av nödsituation",
+          "layout": "image-bottom",
+          "html": "<p>Öppna rullgardinsmenyn <strong>Select the type of emergency</strong> och välj en:</p>\n<ul>\n<li><strong>911 Alert</strong> — behöver hjälp nu</li>\n<li><strong>Ring The Bell</strong> — dra uppmärksamhet till din position</li>\n<li><strong>Geo-fence Breached</strong> — en gräns har överskridits</li>\n<li><strong>In Contact</strong> — i strid med fienden</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/ded64bace244a9ac.webp",
+              "width": 150,
+              "height": 162
+            }
+          ]
+        },
+        {
+          "title": "Aktivera båda reglagen för att sända",
+          "layout": "image-bottom",
+          "html": "<p>När du har valt typ, slå på båda <strong>LOCKED</strong>-reglagen. TAK Server sänder sedan din signal till alla kontakter i nätverket. Signalen fortsätter att sända även om din enhet stängs av.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/a18d1db2c75023bc.webp",
+              "width": 475,
+              "height": 219
+            }
+          ]
+        },
+        {
+          "title": "Avbryt signalen",
+          "layout": "image-bottom",
+          "html": "<p>För att avsluta, gå tillbaka till <strong>Alert</strong>-verktyget och slå av båda reglagen. Detta avbryter signalen och tar bort den från kartan.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/a18d1db2c75023bc.webp",
+              "width": 475,
+              "height": 219
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

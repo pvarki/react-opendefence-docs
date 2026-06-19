@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "62884c98-c096-4ee9-b0b3-256a306203a1",
+  "slug": "oversikt-nzDS5OWw0k",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Översikt",
+  "breadcrumb": [
+    "Platforms",
+    "iTAK",
+    "Användning efter roll",
+    "Översikt"
+  ],
+  "createdAt": "2026-06-18T19:39:00.786Z",
+  "updatedAt": "2026-06-18T20:25:57.954Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/overview-bPeWx0MdZQ",
+    "fi": "/fi/guides/tak-guide/yleiskatsaus-UB5rRp5Nz5",
+    "sv": "/sv/guides/tak-guide/oversikt-nzDS5OWw0k"
+  },
+  "blocks": []
+}

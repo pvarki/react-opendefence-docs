@@ -13,8 +13,13 @@
     "Control Location Providers"
   ],
   "createdAt": "2026-06-15T19:40:03.611Z",
-  "updatedAt": "2026-06-15T20:53:48.159Z",
+  "updatedAt": "2026-06-18T20:19:48.011Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/control-location-providers-WuJJaCfIYG",
+    "fi": "/fi/guides/tak-guide/hallitse-sijaintilahteita-RakVzDRlad",
+    "sv": "/sv/guides/tak-guide/hantera-positionskallor-bfhTDCM6Kg"
+  },
   "blocks": [
     {
       "type": "html",

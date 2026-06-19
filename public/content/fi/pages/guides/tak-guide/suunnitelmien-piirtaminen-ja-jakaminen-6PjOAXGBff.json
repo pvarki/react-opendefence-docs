@@ -1,0 +1,160 @@
+{
+  "schemaVersion": 1,
+  "id": "bfabdef0-9803-4641-a5df-209a20164afd",
+  "slug": "suunnitelmien-piirtaminen-ja-jakaminen-6PjOAXGBff",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Suunnitelmien piirtäminen ja jakaminen",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "Edistyneet ydintoiminnot",
+    "Suunnitelmien piirtäminen ja jakaminen"
+  ],
+  "createdAt": "2026-06-18T19:26:17.934Z",
+  "updatedAt": "2026-06-18T20:14:01.051Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/draw-share-plans-fxjT3hDZ5p",
+    "fi": "/fi/guides/tak-guide/suunnitelmien-piirtaminen-ja-jakaminen-6PjOAXGBff",
+    "sv": "/sv/guides/tak-guide/rita-och-dela-planer-WlqKBF7FKe"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Suunnitelmien piirtäminen ja jakaminen",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>ATAKissa on tarvitsemasi sotilaalliset piirtotyökalut. Aloita avaamalla päävalikko (hampurilaisvalikko).</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/64805fb53e2f9091.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Valitse piirtotyökalut",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Etsi piirtotyökalujen symboli.</li>\n<li>Jos sitä ei näy valikossasi, paina kellertävää kynää ja ota piirtotyökalut käyttöön valikossasi.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/290e2d69343f71ff.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Piirtotyökalut",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Valitse tarpeeseesi sopiva työkalu.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/34645de4727b037d.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Marssireitin piirtäminen (1)",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Esimerkissämme piirrämme marssireitin Point-by-point line -työkalulla.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/0a4cc7a796110cd6.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Marssireitin piirtäminen (2)",
+          "layout": "image-bottom",
+          "html": "",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/5022607bb448e50b.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Marssireitin piirtäminen (3)",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Painamme End viimeistelläksemme kuvion.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/91f711a157b3211f.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Muokkaa ja katso tietoja",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Napauta kuviota avataksesi valikon. Paina Edit-kuvaketta muokataksesi tietoja.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/0227e6ec3eb8af18.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Tietojen katselu",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Hyödyllistä marssireitillä: näyttää viivan pituuden.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/4aec2c6d6b1c6305.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Kuvion muokkaaminen",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Vieritä Edit-valikossa alaspäin muuttaaksesi viivan väriä, paksuutta ja tyyliä.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/e53b25d163eb7f4f.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Muut työkalut",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Piirtotyökalujen lisäksi Point Dropper sisältää sotilaallisten symbolien ohella muitakin symboleita mukavuudeksesi.</li>\n<li>Käytä esim. \"Spot Map\" -symbolisarjaa pisteiden piirtämiseen.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/29b64f26a183afb7.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Valmis",
+          "layout": "text",
+          "html": "<ul>\n<li>Voit sulkea tämän ohjeen.</li>\n</ul>",
+          "images": []
+        }
+      ]
+    },
+    {
+      "type": "html",
+      "html": "<p>Kun olet testannut Suunnitelmien piirtämisen ja jakamisen onnistuneesti, jatka kohtaan <a href=\"/doc/7df31ecb-1092-4d8c-9013-b168feec84ba\">Geofences</a></p>"
+    }
+  ]
+}

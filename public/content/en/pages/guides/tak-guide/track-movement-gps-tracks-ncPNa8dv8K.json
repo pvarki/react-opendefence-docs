@@ -13,8 +13,13 @@
     "Track Movement (GPS Tracks)"
   ],
   "createdAt": "2026-06-15T19:45:32.812Z",
-  "updatedAt": "2026-06-15T21:18:58.177Z",
+  "updatedAt": "2026-06-18T20:20:09.054Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/track-movement-gps-tracks-ncPNa8dv8K",
+    "fi": "/fi/guides/tak-guide/liikkeen-jaljitys-gps-jaljet-Kfbctffcg5",
+    "sv": "/sv/guides/tak-guide/spara-rorelse-gps-spar-bWXVbzW6gA"
+  },
   "blocks": [
     {
       "type": "html",

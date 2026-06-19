@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 1,
+  "id": "1feb6e69-47b2-461e-b9d1-273c3ddd1377",
+  "slug": "lassolla-lisaaminen-syotteeseen-a6typO1eEd",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Lassolla lisääminen syötteeseen",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "Edistyneet ydintoiminnot",
+    "Lassolla lisääminen syötteeseen"
+  ],
+  "createdAt": "2026-06-18T19:26:21.206Z",
+  "updatedAt": "2026-06-18T20:14:41.637Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/lasso-to-add-into-feed-Mt0Vykodea",
+    "fi": "/fi/guides/tak-guide/lassolla-lisaaminen-syotteeseen-a6typO1eEd",
+    "sv": "/sv/guides/tak-guide/lagg-till-i-flode-med-lasso-wA9WruroCt"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Käytä Lasso-työkalua",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Lasso-työkalulla saat lisättyä piirroksesi nopeasti syötteeseen (Feed).</li>\n<li>Aloita siirtymällä päävalikkoon.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/64805fb53e2f9091.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Valitse Lasso",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Valitse <strong>Lasso</strong> päätyökaluriviltä.</li>\n<li>Jos päätyökaluriviltäsi puuttuu Lasso, napauta keltaista kynäkuvaketta etsiäksesi ja ottaaksesi sen käyttöön.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/88424a3e47d76a8e.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Käytä Lasso-työkalua",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Rajaa Lassolla se, minkä haluat lähettää.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/24d0e431bbea8113.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Mitä sisällytetään?",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Lasso kysyy, mitä haluat sisällyttää.</li>\n<li>Tässä esimerkissä valitsemme merkit (Markers), koska olemme jo lähettäneet sen muodon kohdesyötteeseen.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/9509cf3e03322baa.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Valitse Lasso-toiminto",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Send (to Feed) on yleensä se, mitä haluamme tehdä. Valitse se.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/4ab99bdb72063eaa.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Valitse vastaanottaja",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Vastaanottajia tarjotaan. Napauta Feeds valitaksesi, mihin syötteeseen tämä menee.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/6fa4e1cccb2792c1.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Syötteiden luettelo",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Syötteet, joihin olet tilannut ja joihin voit kirjoittaa, näkyvät luettelossa.</li>\n<li>Tässä esimerkissä olemme rajanneet Lassolla FRAGO3:n suunnitelmapiirroksen, joten lähetämme sen sen syötteeseen.</li>\n<li>Merkkisi ja piirroksesi jaetaan nyt syötteen (Feed) kautta.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/ae82441be003c278.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

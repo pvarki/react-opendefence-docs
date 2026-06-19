@@ -6,14 +6,19 @@
   "locale": "en",
   "title": "Command Post",
   "breadcrumb": [
-    "TAK Clients",
+    "Platforms",
     "TAK Tracker - Apple",
     "Usage by Role",
     "Command Post"
   ],
   "createdAt": "2025-12-05T20:41:41.964Z",
-  "updatedAt": "2026-02-21T08:40:31.192Z",
+  "updatedAt": "2026-06-18T20:27:45.436Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/command-post-aX04WiqaZf",
+    "fi": "/fi/guides/tak-guide/komentopaikka-q4LRKdr4q0",
+    "sv": "/sv/guides/tak-guide/ledningsplats-uoVsr9jP0D"
+  },
   "blocks": [
     {
       "type": "html",

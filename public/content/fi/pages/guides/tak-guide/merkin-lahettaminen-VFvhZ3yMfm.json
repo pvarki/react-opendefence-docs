@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 1,
+  "id": "f02574d8-063c-496d-9688-9c2f03f43329",
+  "slug": "merkin-lahettaminen-VFvhZ3yMfm",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Merkin lähettäminen",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "Perustoiminnot",
+    "Merkin lähettäminen"
+  ],
+  "createdAt": "2026-06-18T19:25:17.511Z",
+  "updatedAt": "2026-06-18T20:13:51.248Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/sending-a-marker-tbLPq64DLE",
+    "fi": "/fi/guides/tak-guide/merkin-lahettaminen-VFvhZ3yMfm",
+    "sv": "/sv/guides/tak-guide/skicka-en-markor-4WZtvP60ax"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Merkkien lähettäminen",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Ellet erikseen lähetä karttamerkkejä, ne ovat olemassa vain <strong>omassa laitteessasi.</strong></li>\n<li>Lähetä merkkejä napauttamalla merkkiä ja valitsemalla <strong>Details</strong>-kuvake ja</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/065beedcc732fe61.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Paina Send nähdäksesi lähetysvaihtoehdot",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Vasemmassa alakulmassa oleva <strong>SEND-painike</strong> mahdollistaa merkkiesi lähettämisen.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/16f13f5fd95b46ee.webp",
+              "width": 1080,
+              "height": 2340
+            }
+          ]
+        },
+        {
+          "title": "Lähetysvaihtoehdot",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Voit lähettää merkkejä suoraan syötteisiin (Feeds), GeoChat-ryhmiin, rooleihin, ryhmiin (henkilöt, joilla on sama merkkiväri kuin sinulla) ja yksittäisille henkilöille.</li>\n<li>OpenDefence-standardimalli TAK:lle suosittelee lähettämään tämänkaltaiset tiedustelumerkit <strong>roolille -> HQ</strong> (kuten kuvassa näkyy) tai havaintosyötteeseen.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/13ed3f60a7fb002f.webp",
+              "width": 1080,
+              "height": 2340
+            }
+          ]
+        },
+        {
+          "title": "Kuka vastaanottaa?",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Syötteeseen lähettäminen jakaa merkkisi kaikille syötteen tilaajille.</li>\n<li>Roolille lähettäminen lähettää sen kaikille kyseisen roolin haltijoille.</li>\n</ul>\n<p>Kuvassa oleva merkki, joka lähetetään HQ-roolille, päätyy komentopaikan (Command Post) henkilöstön analysoitavaksi.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/224048abc6268778.webp",
+              "width": 1290,
+              "height": 2796
+            }
+          ]
+        },
+        {
+          "title": "Merkin vastaanottaminen",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Tässä esimerkkikuvassa HQ-roolissa oleva komentopaikan käyttäjä on juuri vastaanottanut aiemmin lähettämämme symbolin ja lisää sitä nyt <strong>Recon Feed</strong> -syötteeseen kaikkien nähtäväksi.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/0348a5da252e244d.webp",
+              "width": 1080,
+              "height": 2340
+            }
+          ]
+        },
+        {
+          "title": "Syötteet ovat paras työkalu merkkien jakamiseen",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Merkkien lähettäminen käyttäjille tukkii heidän karttansa nopeasti.</li>\n<li>Paras tapa on joko lisätä merkit suoraan syötteeseen...</li>\n<li>...tai kuten standardimallimme ohjeistaa, lähettää ne ensin komentopaikalle (CP), joka vastaa RECON-syötteen laadusta, jotta kaikki sieltä lukemasi on kuratoitua.</li>\n</ul>\n<p>Tuoreesti lisätty merkkimme käyttäjältä Blue43 näkyy tässä RECON-syötteessä.</p>\n<p>RECON-syötteen ymmärtämisen jälkeen jatka kohtaan</p>\n<p>Lue lisää RECON-syötteestä TAK Wikistä <a href=\"/doc/bf3416b5-d2ca-4dc6-89a2-b48cfca69618\">Takserver RECON feed</a></p>\n<p>Lue lisää havaintojen välittämisestä komentopaikalle TAK WIKIstä <a href=\"/doc/58a46804-6639-4b5e-a7c0-3056309cb411\">Forwarding Observations</a></p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/22ab27310be30c0d.webp",
+              "width": 1080,
+              "height": 2340
+            }
+          ]
+        },
+        {
+          "title": "Avaa merkin säteittäisvalikko",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Napauta merkkiä avataksesi sen säteittäisvalikon.</li>\n<li>Valitse <strong>Details</strong> muokataksesi sitä tai <strong>Fine Adjust</strong> ja <strong>Polar Coordinates</strong> tarkentaaksesi sen sijaintia.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/00c599f6b62e304e.webp",
+              "width": 256,
+              "height": 198
+            }
+          ]
+        },
+        {
+          "title": "Aseta tila ja muokkaimet",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Aseta <strong>Details</strong>-näkymässä <strong>Status</strong>-kenttä (esimerkiksi <strong>Present/Damaged</strong>), jotta merkin alle ilmestyy tilailmaisin.</li>\n<li>Rastita <strong>Show Modifiers</strong> tallentaaksesi liikkeen suunnan, nopeuden ja sijainnin, ja lähetä sitten päivitys painikkeella <strong>Send</strong> tai <strong>Auto Send</strong>.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/029fe4cc0794346f.webp",
+              "width": 349,
+              "height": 198
+            }
+          ]
+        },
+        {
+          "title": "Muokkaa tyyppiä ja kuuluvuutta",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Käytä näkymän vasemmassa yläkulmassa olevaa merkkikuvaketta muuttaaksesi <strong>Affiliation</strong>-asetusta.</li>\n<li>Valitse <strong>Type</strong> valitaksesi luettelosta tarkemman kategorian.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/0ace50673d861f2c.webp",
+              "width": 426,
+              "height": 210
+            }
+          ]
+        },
+        {
+          "title": "Fine Adjust siirtää sen tarkasti",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Valitse säteittäisvalikosta <strong>Fine Adjust</strong> siirtääksesi merkin täsmälleen oikeaan paikkaan.</li>\n<li>Paina <strong>Fine Adjust</strong> pitkään avataksesi alavalikon ja syöttääksesi suoraan <strong>MGRS</strong>- tai koordinaattisijainnin.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/482f1a04596e73be.webp",
+              "width": 256,
+              "height": 192
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

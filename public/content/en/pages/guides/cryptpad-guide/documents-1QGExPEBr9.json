@@ -10,8 +10,13 @@
     "Documents"
   ],
   "createdAt": "2026-06-15T14:07:49.099Z",
-  "updatedAt": "2026-06-15T17:52:43.697Z",
+  "updatedAt": "2026-06-18T20:38:02.023Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/cryptpad-guide/documents-1QGExPEBr9",
+    "fi": "/fi/guides/cryptpad-guide/dokumentit-vYaxLgXJyf",
+    "sv": "/sv/guides/cryptpad-guide/dokument-oIwKFvuvn3"
+  },
   "blocks": [
     {
       "type": "html",

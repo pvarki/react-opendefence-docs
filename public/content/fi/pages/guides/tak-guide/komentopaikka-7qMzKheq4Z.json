@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "84ea854e-a3d5-4af0-8273-9aa0be721b73",
+  "slug": "komentopaikka-7qMzKheq4Z",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Komentopaikka",
+  "breadcrumb": [
+    "Platforms",
+    "iTAK",
+    "Käyttö roolin mukaan",
+    "Komentopaikka"
+  ],
+  "createdAt": "2026-06-18T19:39:01.661Z",
+  "updatedAt": "2026-06-18T20:26:00.444Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/command-post-YxjX9bA9iG",
+    "fi": "/fi/guides/tak-guide/komentopaikka-7qMzKheq4Z",
+    "sv": "/sv/guides/tak-guide/kommandoplats-nXnVNhBp5i"
+  },
+  "blocks": []
+}

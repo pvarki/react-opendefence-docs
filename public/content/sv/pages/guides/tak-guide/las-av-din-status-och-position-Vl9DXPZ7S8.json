@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "id": "5b941b3f-8043-41e0-aced-b93b11125556",
+  "slug": "las-av-din-status-och-position-Vl9DXPZ7S8",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Läs av din status och position",
+  "breadcrumb": [
+    "Platforms",
+    "TAK Tracker - Android",
+    "GRUNDFUNKTIONER",
+    "Läs av din status och position"
+  ],
+  "createdAt": "2026-06-18T19:44:11.874Z",
+  "updatedAt": "2026-06-18T20:26:44.224Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/read-your-status-location-xFbq6tWEQC",
+    "fi": "/fi/guides/tak-guide/lue-tilasi-ja-sijaintisi-2FUEtnpZg4",
+    "sv": "/sv/guides/tak-guide/las-av-din-status-och-position-Vl9DXPZ7S8"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>När du har anslutit visar TAK Trackers huvudfönster din position, anslutningens status och rörelsedata med en blick. Det fungerar i stående eller liggande läge.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Öppna huvudfönstret",
+          "layout": "image-bottom",
+          "html": "<p>Efter anslutningen fylls huvudfönstret med realtidsdata. Varje ruta uppdateras självständigt — tryck på en ruta för att ändra vad den visar eller vilka enheter den använder.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/cb231cb764dcceaa.webp",
+              "width": 266,
+              "height": 116
+            }
+          ]
+        },
+        {
+          "title": "Läs av dina koordinater",
+          "layout": "image-bottom",
+          "html": "<p>Positionsrutan visar dina koordinater. Standardformatet är <strong>degrees / minutes / seconds (DMS)</strong> — tryck på rutan för att växla till <strong>MGRS</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/638b19d7f6f8bdc7.webp",
+              "width": 174,
+              "height": 67
+            }
+          ]
+        },
+        {
+          "title": "Kontrollera din anslutning",
+          "layout": "image-bottom",
+          "html": "<p>Anslutningsrutan visar tre statusindikatorer:</p>\n<ul>\n<li><strong>Server</strong> — visar ett fel om anslutningen misslyckades</li>\n<li><strong>GPS</strong> — visar <em>not available</em> tills du aktiverar platstjänster från Androids nedrullningsbara meny</li>\n<li><strong>Compass</strong> — helst <strong>High</strong>; <em>Moderate</em> eller <em>Unreliable</em> betyder vanligtvis magnetisk störning</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/571fa1a015eeaae4.webp",
+              "width": 239,
+              "height": 133
+            }
+          ]
+        },
+        {
+          "title": "Läs av höjd, hastighet, kompass och kurs",
+          "layout": "image-bottom",
+          "html": "<p>De andra fyra rutorna visar dina rörelsedata. Tryck på valfri ruta för att ändra dess enheter:</p>\n<ul>\n<li><strong>Altitude</strong> — m eller ft</li>\n<li><strong>Speed</strong> — m/s, kps, fps eller mph</li>\n<li><strong>Compass</strong> och <strong>Heading</strong> — °MN eller °TN</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/48c378e1bcf7961a.webp",
+              "width": 150,
+              "height": 127
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

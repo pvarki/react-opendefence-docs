@@ -10,8 +10,13 @@
     "Back up your data"
   ],
   "createdAt": "2026-06-15T18:30:12.779Z",
-  "updatedAt": "2026-06-15T18:30:12.779Z",
+  "updatedAt": "2026-06-18T20:38:47.437Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/cryptpad-guide/back-up-your-data-xYdkRa1Tms",
+    "fi": "/fi/guides/cryptpad-guide/varmuuskopioi-tietosi-DQfftbWf4c",
+    "sv": "/sv/guides/cryptpad-guide/sakerhetskopiera-dina-data-yVu1FNdIEb"
+  },
   "blocks": [
     {
       "type": "html",

@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "id": "018c0695-81ac-4d0c-8b29-8257101c36de",
+  "slug": "aloita-deploy-app-sovelluksesta-R0jCXhuEn5",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Aloita Deploy App -sovelluksesta",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "ALOITA JA YHDISTÄ",
+    "Aloita Deploy App -sovelluksesta"
+  ],
+  "createdAt": "2026-06-18T19:25:10.458Z",
+  "updatedAt": "2026-06-18T20:13:06.613Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/start-from-deploy-app-aFY9LCZCf0",
+    "fi": "/fi/guides/tak-guide/aloita-deploy-app-sovelluksesta-R0jCXhuEn5",
+    "sv": "/sv/guides/tak-guide/borja-fran-deploy-app-05KDQT0EcH"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<hr>\n<hr>"
+    },
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Avaa Deploy App",
+          "layout": "image-left",
+          "html": "<p>Saat yhteyden TAK-palvelimeen avaamalla Deploy App -sovelluksen.</p>\n<ul>\n<li>Siirry Home-näkymään</li>\n<li>Käynnistä TAK.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/39e3203ec464c0c4.webp",
+              "width": 1080,
+              "height": 2176
+            }
+          ]
+        },
+        {
+          "title": "TAK-sivu - Ohjeet",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Kun avaat TAK-sivun ensimmäistä kertaa, näet pikaohjeet.</li>\n<li>Sivun pitäisi tunnistaa laitteesi alusta. Tarvittaessa voit vaihtaa laitteen alustan manuaalisesti.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/af5434650d44fa8f.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "TAK-sivu - Yleistä",
+          "layout": "image-left",
+          "html": "<ul>\n<li>TAK-sivulta saat palvelinyhteyden TAK-asiakassovellukseesi.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/8aed2f1d854150ea.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "TAK-sivu - Alusta",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Sivun pitäisi tunnistaa laitteesi automaattisesti.</li>\n<li>Jos haluat paketin toiselle alustalle, voit vaihtaa sen tästä.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/21c4b55de8d8f216.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "TAK-sivu - ATAK-paketti",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Android-ATAK:lla voit yhdistää TAK-palvelimeen kahdella napautuksella. Helppoa!</li>\n<li>Napauta vain <strong>Auto-import package</strong> - se on ensimmäinen napautus.</li>\n<li>Muilla alustoilla sinun täytyy ladata <strong>Client Package</strong> ja tuoda se sovellukseesi.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/c64a910e5c3ee339.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "TAK-sivu - Ohjeet",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Jos haluat nähdä ensikäytön ohjeet uudelleen, napauta \"info\"-painiketta oikeassa alakulmassa.</li>\n<li>Jos haluat nähdä lisää ohjeita sovelluksessa, napauta \"Open instructions.\"</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/491b30932fc1abef.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "html",
+      "html": "<p>\\nKun olet tutustunut Deploy App - TAK -osioon, jatka kohtaan <a href=\"/doc/1dce6fa1-0bff-48cf-86ab-531187b9dd3d\">TAK Clients</a></p>"
+    }
+  ]
+}

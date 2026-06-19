@@ -12,8 +12,13 @@
     "Start from Deploy App"
   ],
   "createdAt": "2026-02-21T13:52:09.303Z",
-  "updatedAt": "2026-06-16T10:53:12.957Z",
+  "updatedAt": "2026-06-18T20:13:01.421Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/start-from-deploy-app-aFY9LCZCf0",
+    "fi": "/fi/guides/tak-guide/aloita-deploy-app-sovelluksesta-R0jCXhuEn5",
+    "sv": "/sv/guides/tak-guide/borja-fran-deploy-app-05KDQT0EcH"
+  },
   "blocks": [
     {
       "type": "slideset",
@@ -95,7 +100,7 @@
     },
     {
       "type": "html",
-      "html": "<p>After seeing Deploy App - TAK, continue to <a href=\"/doc/1dce6fa1-0bff-48cf-86ab-531187b9dd3d\">TAK Clients</a></p>"
+      "html": "<p>\\nAfter seeing Deploy App - TAK, continue to <a href=\"/doc/1dce6fa1-0bff-48cf-86ab-531187b9dd3d\">TAK Clients</a></p>"
     }
   ]
 }

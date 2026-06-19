@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "id": "1dbe71f2-1828-40aa-8ac4-2ca4c3fcda1d",
+  "slug": "anpassa-markorer-och-ikoner-kfkJXTKO8b",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Anpassa markörer och ikoner",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "Avancerade kärnfunktioner",
+    "Anpassa markörer och ikoner"
+  ],
+  "createdAt": "2026-06-18T19:27:15.793Z",
+  "updatedAt": "2026-06-18T20:15:13.489Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/customize-markers-icons-TGz9RiGwju",
+    "fi": "/fi/guides/tak-guide/mukauta-merkit-ja-kuvakkeet-vmmluklewl",
+    "sv": "/sv/guides/tak-guide/anpassa-markorer-och-ikoner-kfkJXTKO8b"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Välj rätt symbol för det du rapporterar, byt till uppdragsspecifika ikonuppsättningar och justera din egen Self-Marker så att gruppen kan läsa av dig med en blick.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Välj en undertyp för markören",
+          "layout": "image-bottom",
+          "html": "<p>Efter att du valt en markör, tryck på undertypsfältet för att öppna <strong>Select Subtype</strong> och välj sedan den tillhörighet du behöver. Använd <strong>Search</strong> för att hoppa direkt till en undertyp istället för att bläddra i listan.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/377dc3d0016dbbf9.webp",
+              "width": 267,
+              "height": 165
+            }
+          ]
+        },
+        {
+          "title": "Byt till en uppdragsikonuppsättning",
+          "layout": "image-bottom",
+          "html": "<p>Svep över ikonuppsättningsområdet eller tryck på fältet <strong>Iconset Name</strong> för att öppna palettlistan, och välj sedan <strong>Mission</strong> för uppdragsspecifika symboler som Contact Point (CP), Initial Point (IP) och Observation Point (OP).</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/88309ebe5bcf3eb9.webp",
+              "width": 221,
+              "height": 166
+            }
+          ]
+        },
+        {
+          "title": "Anpassa din Self-Marker",
+          "layout": "image-bottom",
+          "html": "<p>Ställ in markörens storlek, huvudfärg och kontur under <strong>Settings > Display Preferences > My Location Color/Size</strong>. Använd reglagen <strong>Change/Create Icon Main Custom Color</strong> och <strong>Change/Create Icon Outline Custom Color</strong> för att få den att sticka ut på kartan.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/3912ff240588c91e.webp",
+              "width": 254,
+              "height": 211
+            }
+          ]
+        },
+        {
+          "title": "Placera den med Fine Adjust",
+          "layout": "image-bottom",
+          "html": "<p>Tryck länge på <strong>Fine Adjust</strong> i Self-Marker-radialen för att öppna underradialen. Ange en exakt <strong>MGRS Location</strong> eller koordinat för att placera dig själv precist istället för att förlita dig på GPS-drift.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/571a196b0e34856b.webp",
+              "width": 170,
+              "height": 148
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

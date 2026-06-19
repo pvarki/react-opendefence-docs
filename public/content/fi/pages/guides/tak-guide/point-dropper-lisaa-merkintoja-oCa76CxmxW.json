@@ -1,0 +1,168 @@
+{
+  "schemaVersion": 1,
+  "id": "49d4fe96-da94-4f80-a7fa-8065a3a3d5a4",
+  "slug": "point-dropper-lisaa-merkintoja-oCa76CxmxW",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Point Dropper - lisää merkintöjä",
+  "breadcrumb": [
+    "Platforms",
+    "WinTAK",
+    "PERUSTOIMINNOT",
+    "Point Dropper - lisää merkintöjä"
+  ],
+  "createdAt": "2026-06-18T19:33:24.864Z",
+  "updatedAt": "2026-06-18T20:23:38.486Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/point-dropper-add-markers-wwYK8iDf5w",
+    "fi": "/fi/guides/tak-guide/point-dropper-lisaa-merkintoja-oCa76CxmxW",
+    "sv": "/sv/guides/tak-guide/point-dropper-lagg-till-markorer-scEnZfp72C"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Luo merkintöjä",
+          "layout": "text",
+          "html": "<ul>\n<li>Kun haluat luoda tietoa kartalle ja jakaa sen muiden käyttäjien kanssa, perustyökalu tähän on Point Dropper.</li>\n<li>Point Dropperilla voit lisätä taktisia merkintöjä kartalle.</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "1. Point Dropper",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Aktivoi Point Dropper</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/e06306a28b9a837d.webp",
+              "width": 150,
+              "height": 86
+            }
+          ]
+        },
+        {
+          "title": "2. Merkinnät",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Valitse merkinnät tai kuvakkeet, joita haluat käyttää</li>\n<li>Oletuksena taktiset kuvakkeet ovat se, mitä tarvitset</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/7ba80f9c6b6d5e0a.webp",
+              "width": 350,
+              "height": 228
+            }
+          ]
+        },
+        {
+          "title": "3. Lisää merkintä",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Valitse merkintä, jota haluat käyttää</li>\n<li>Zoomaa karttaa ja etsi sijainti, johon haluat lisätä merkinnän</li>\n<li>Napauta karttaa lisätäksesi merkinnän.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/bb713e3d37e6dc4d.webp",
+              "width": 1243,
+              "height": 279
+            }
+          ]
+        },
+        {
+          "title": "Lopeta merkintöjen lisääminen",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Poista oikealla oleva kuvake valinnasta lopettaaksesi uusien merkintöjen lisäämisen kartalle.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/5984039ec61503be.webp",
+              "width": 568,
+              "height": 310
+            }
+          ]
+        },
+        {
+          "title": "Muokkaa merkinnän tietoja",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Muokataksesi lisättyä merkintää, napauta merkintää</li>\n<li>Radial Menu avautuu</li>\n<li>Valitse \"Detail\"-alavalikko</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/09b2aa65bab569df.webp",
+              "width": 315,
+              "height": 309
+            }
+          ]
+        },
+        {
+          "title": "Merkinnän tietovalikko",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Muokattavat asiat</li>\n<li>Type: Muokkaa tyyppiä, esimerkiksi muuta jalkaväeksi</li>\n<li>Remarks: Lisää omat tietosi merkinnästä / tilanteesta</li>\n<li>Add Attachments</li>\n<li>Send Marker</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/b0906938c547f776.webp",
+              "width": 345,
+              "height": 852
+            }
+          ]
+        },
+        {
+          "title": "Muokkaa merkinnän tyyppiä",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Pääset tyypin muokkaukseen napauttamalla Type-kenttää</li>\n<li>Liiku eri tyyppien välillä käyttämällä More-painiketta ja takaisin-nuolta.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/197326b7194d66d7.webp",
+              "width": 446,
+              "height": 387
+            }
+          ]
+        },
+        {
+          "title": "Muokkaa merkinnän huomautuksia",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Napauta huomautuskenttää lisätäksesi tekstiä</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/00d36894acac1733.webp",
+              "width": 346,
+              "height": 48
+            }
+          ]
+        },
+        {
+          "title": "Lisää liitteitä merkintään",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Napauta paperiliittimen kuvaketta avataksesi Attachments</li>\n<li>Lisää liitteitä +-merkin kautta</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/04316090ef4c9167.webp",
+              "width": 343,
+              "height": 205
+            }
+          ]
+        },
+        {
+          "title": "Lähetä merkintä",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Voit lähettää merkinnän:</li>\n<li>Yksittäiselle käyttäjälle</li>\n<li>Ryhmälle</li>\n<li>Tiimille</li>\n<li>Data Sync -syötteeseen</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/a7ddaeecd254ed90.webp",
+              "width": 349,
+              "height": 280
+            }
+          ]
+        },
+        {
+          "title": "Muut merkinnän toiminnot",
+          "layout": "text",
+          "html": "<ul>\n<li>Alavalikoiden kautta voit suorittaa merkinnälle seuraavat tärkeät toiminnot:</li>\n<li>Delete</li>\n<li>Change location</li>\n<li>Measure</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "Valmis",
+          "layout": "text",
+          "html": "<ul>\n<li>Voit sulkea tämän oppaan.</li>\n</ul>\n<hr>",
+          "images": []
+        }
+      ]
+    }
+  ]
+}

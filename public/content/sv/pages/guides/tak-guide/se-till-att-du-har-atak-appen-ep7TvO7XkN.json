@@ -1,0 +1,286 @@
+{
+  "schemaVersion": 1,
+  "id": "533c534c-83ea-4469-8a21-9d7fe4118baa",
+  "slug": "se-till-att-du-har-atak-appen-ep7TvO7XkN",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Se till att du har ATAK-appen",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "STARTA OCH ANSLUT",
+    "Se till att du har ATAK-appen"
+  ],
+  "createdAt": "2026-06-18T19:25:11.423Z",
+  "updatedAt": "2026-06-18T20:13:37.803Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/make-sure-you-have-the-atak-app-bJC3Opax4P",
+    "fi": "/fi/guides/tak-guide/varmista-etta-sinulla-on-atak-sovellus-ceMKXWjxoQ",
+    "sv": "/sv/guides/tak-guide/se-till-att-du-har-atak-appen-ep7TvO7XkN"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Installera ATAK från Play Store eller som APK",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>För att börja använda ATAK måste du installera appen från Google Play.</li>\n<li>Deploy Apps TAK-sida ger dig <a href=\"https://play.google.com/store/apps/details?id=com.atakmap.app.civ\" target=\"_blank\" rel=\"noopener noreferrer\">länken till den</a>.</li>\n<li>ATAK/CivTAK-applikationen är exakt samma app som den så kallade MilTAK - skillnaden är att MilTAK-appen accepterar MilTAK-signerade insticksprogram.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/d456b61755f60acf.webp",
+              "width": 860,
+              "height": 384
+            }
+          ]
+        },
+        {
+          "title": "1. Öppna ATAK och ge behörigheter",
+          "layout": "image-left",
+          "html": "<ul>\n<li>När installationen är klar, hitta TAK-ikonen på din telefon och öppna applikationen.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/a2fe7303e7840f32.webp",
+              "width": 246,
+              "height": 246
+            }
+          ]
+        },
+        {
+          "title": "Behörigheter 1",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>EULA-licensavtalet dyker upp.</li>\n<li>Tryck på <strong>I agree</strong>.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/bb74b8a7832f37d2.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "Behörigheter 2",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>ATAK-appen begär ett antal behörigheter i din telefon.</li>\n<li>Behörighetsmotiveringen förklarar att ingen användardata hamnar hos TAK-utvecklarna (U.S. TPC).</li>\n<li>Det dessa behörigheter möjliggör är att din TAK-data flödar till <strong>din enhets</strong> TAK-server, som drivs av t.ex. försvarsmakten.</li>\n<li>Det handlar här endast om det som sker i ATAK - ingen annan data berörs.</li>\n<li>Tryck på <strong>I understand</strong> för att fortsätta.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/1b64bf072a4658a4.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "Behörigheter 3",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Tillåt ATAK att ta bilder eller video.</li>\n<li>Detta krävs för funktionerna Quick Pic och videodelning.</li>\n<li>Välj <strong>While using the app.</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/b5a9c08cc99a2a16.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "Behörigheter 4",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Tillåt ATAK att komma åt platsen.</li>\n<li>Detta krävs för att Blue force tracking ska fungera, dvs. för att din symbol ska visas på kartan.</li>\n<li>Välj <strong>Precise</strong> och <strong>While using app.</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/a86c87be2b44ef64.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "Behörigheter 5",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Tillåt ATAK att spela in ljud.</li>\n<li>Detta krävs för samtal till medspelare som startas från ATAK.</li>\n<li>Välj <strong>While using the app.</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/4a0e92d613797b57.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "Behörigheter 6",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Tillåt ATAK att hitta enheter i närheten.</li>\n<li>Detta krävs för att använda ATAK i broadcast-läge (kommunicera med andra ATAK i lokalt nätverk, WiFi eller t.ex. radioförbindelse).</li>\n<li>Välj <strong>Allow.</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/b534c325a40d6b0b.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "Behörigheter 7",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Tillåt ATAK att skicka aviseringar.</li>\n<li>Detta krävs för att få aviseringar från ATAK.</li>\n<li>Välj <strong>Allow.</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/75114a3236a0faa6.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "Behörigheter 8",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Tillåt ATAK att ringa och hantera samtal.</li>\n<li>Detta krävs för samtal till medspelare som startas från ATAK.</li>\n<li>Välj <strong>Allow.</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/3c25040084131abf.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "Behörigheter 9",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Tillåt ATAK att komma åt musik och ljudfiler.</li>\n<li>Detta krävs för att kunna skicka ljudmeddelanden över TAK-servern.</li>\n<li>Välj <strong>Allow.</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/5997b500b0595461.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "Behörigheter 10",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Tillåt ATAK att komma åt foton och videor.</li>\n<li>Detta krävs för funktionerna Quick Pic och videodelning.</li>\n<li>Välj <strong>Allow all.</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/1ba90c6f48f42fb6.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "Behörigheter 11",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Tillåt ATAK att använda platsen i bakgrunden.</li>\n<li>Detta krävs för att Blue force tracking ska fungera, dvs. för att din symbol ska visas på kartan.</li>\n<li>Välj <strong>I understand.</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/847ccec2aa5a90c4.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "Behörigheter 12",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Bekräfta Android 11+-varningen om platsanvändning i bakgrunden.</li>\n<li>Välj <strong>OK.</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/e4d5d79829f2ebf2.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "Behörigheter 13",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>ATAK behöver att du ändrar en platsbehörighet i Android-inställningarna för att funktionen Blue force tracking ska fungera.</li>\n<li>Läs instruktionerna och utför stegen enligt följande. Tryck på <strong>I understand</strong> för att fortsätta.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/e25a3a66bee6fac7.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "Behörigheter 14",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Android-inställningen för Appinfo öppnas automatiskt.</li>\n<li>Tryck på <strong>Permissions.</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/ab2300beaeac7e85.webp",
+              "width": 2256,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Behörigheter 15",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Tryck därefter på <strong>App permission.</strong></li>\n<li>Tryck sedan på <strong>Location</strong> för att öppna inställningarna för platsbehörighet.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/770b056e3d14d651.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "Behörigheter 16",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Tryck på <strong>Allow all the time.</strong> i menyn för platsbehörighet.</li>\n<li>Detta gör att ATAK kontinuerligt kan skicka din plats till TAK-servern, vilket krävs för att funktionen blue force tracking ska fungera.</li>\n<li>Återgå till ATAK efter att du gjort detta.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/785e38231c71b974.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "Behörigheter 17",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Om du startar ATAK för första gången visas menyn TAK Device Setup.</li>\n<li>Vi behöver inget härifrån, så stäng den genom att trycka på <strong>Done.</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/b04353af5bd411fb.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "Behörigheter 18",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Slutligen ber appen dig att inaktivera Androids batterioptimeringsfunktion.</li>\n<li>Detta är viktigt, eftersom Android annars slumpmässigt kan blockera ATAK från att skicka och ta emot platsdata.</li>\n<li>Tryck på OK för att nästa dialogruta ska öppnas.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/1363c65a7b52cdd1.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "Behörigheter 19",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Android frågar om batterianvändningen ska sluta optimeras.</li>\n<li>Tryck på <strong>Allow.</strong></li>\n<li>Detta avslutar inställningen av behörigheter i din nyligen installerade ATAK-app.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/a775d9a29860bff9.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "html",
+      "html": "<p>Efter installation och initialisering av ATAK, fortsätt till <a href=\"/doc/c8842f7a-f533-4bfe-9027-88f165d16ddb\">ATAK Already Installed</a></p>"
+    }
+  ]
+}

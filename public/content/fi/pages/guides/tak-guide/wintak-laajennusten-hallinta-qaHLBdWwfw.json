@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "id": "69db6555-7f64-4136-94bf-995e42cea62a",
+  "slug": "wintak-laajennusten-hallinta-qaHLBdWwfw",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "WinTAK-laajennusten hallinta",
+  "breadcrumb": [
+    "Platforms",
+    "WinTAK",
+    "PERUSTOIMINNOT",
+    "WinTAK-laajennusten hallinta"
+  ],
+  "createdAt": "2026-06-18T19:33:25.937Z",
+  "updatedAt": "2026-06-18T20:23:42.249Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/plugin-management-EphDON8hEX",
+    "fi": "/fi/guides/tak-guide/wintak-laajennusten-hallinta-qaHLBdWwfw",
+    "sv": "/sv/guides/tak-guide/hantering-av-wintak-tillagg-9iOqPxCmwd"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "WinTAK-laajennusten hallinta",
+          "layout": "text",
+          "html": "<ul>\n<li>Lisätäksesi tai päivittääksesi WinTAK-laajennuksia lataa asennustiedostot Deploy-sovelluksesta.</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "1. Avaa WinTAKin tuontitoiminto",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Avaa valikko hampurilaiskuvakkeesta</li>\n<li>Avaa Import files -toiminto</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/c89fb3cfc2ff4804.webp",
+              "width": 461,
+              "height": 429
+            }
+          ]
+        },
+        {
+          "title": "2. Valitse laajennukset",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Siirry kansioon, johon latasit laajennustiedostot.</li>\n<li>Valitse asennettavat tai päivitettävät laajennukset</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/6ab695625e3d98e1.webp",
+              "width": 944,
+              "height": 528
+            }
+          ]
+        },
+        {
+          "title": "3. Tuonti onnistui",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Onnistuneen tuonnin jälkeen käynnistä WinTAK uudelleen</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/8b6953cdd0d8b8fe.webp",
+              "width": 346,
+              "height": 267
+            }
+          ]
+        },
+        {
+          "title": "4. Plugin Manager",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Avaa Plugin Manager</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/57b3ac49dbf6569f.webp",
+              "width": 165,
+              "height": 426
+            }
+          ]
+        },
+        {
+          "title": "5. Laajennusten hallinta",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Plugin Managerissa voit ladata ja poistaa käytöstä asennettuja laajennuksia.</li>\n<li>Voit myös tarkistaa laajennuksen tiedot</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/c9206fe4e35e5298.webp",
+              "width": 349,
+              "height": 503
+            }
+          ]
+        },
+        {
+          "title": "Valmis",
+          "layout": "text",
+          "html": "<ul>\n<li>Voit sulkea tämän oppaan.</li>\n</ul>\n<hr>",
+          "images": []
+        }
+      ]
+    },
+    {
+      "type": "html",
+      "html": "<p>Seuraava vaihe on määrittää <a href=\"/doc/cf69db54-b795-412a-b111-f201fbd18211\">Data Sync</a></p>"
+    }
+  ]
+}

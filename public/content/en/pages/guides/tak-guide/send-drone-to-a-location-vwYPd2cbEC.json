@@ -8,13 +8,18 @@
   "breadcrumb": [
     "Platforms",
     "ATAK",
-    "Supported Plugins",
+    "SUPPORTED PLUGINS",
     "UAS Tool",
     "Send Drone to a Location"
   ],
   "createdAt": "2026-06-15T19:49:52.364Z",
-  "updatedAt": "2026-06-15T19:49:52.364Z",
+  "updatedAt": "2026-06-18T20:21:46.694Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/send-drone-to-a-location-vwYPd2cbEC",
+    "fi": "/fi/guides/tak-guide/laheta-lennokki-sijaintiin-mKsB4aikwV",
+    "sv": "/sv/guides/tak-guide/skicka-dronaren-till-en-plats-mPUY0sUiR3"
+  },
   "blocks": [
     {
       "type": "html",
@@ -27,7 +32,7 @@
         {
           "title": "Open Quick Task",
           "layout": "image-bottom",
-          "html": "<p>Tap a spot on the map to send the drone there. <strong>Quick Task</strong> opens with the location ready and three options: <strong>Cancel</strong>, <strong>Go Now</strong>, <strong>Orbit</strong>.</p>",
+          "html": "<p>Tap a spot on the map to send the drone there.</p>\n<ul>\n<li><strong>Quick Task</strong> opens with the location ready and three options: <strong>Cancel</strong>, <strong>Go Now</strong>, <strong>Orbit</strong>.</li>\n</ul>",
           "images": [
             {
               "src": "/content/images/en/attachments/c3fe23149220c4cb.webp",

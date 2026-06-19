@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "id": "e57665e0-cb4c-4be9-96c0-d9ca568d1cc2",
+  "slug": "exportera-och-dela-en-grg-nNP5db39f3",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Exportera och dela en GRG",
+  "breadcrumb": [
+    "Platforms",
+    "WinTAK",
+    "Plugin-program som stöds",
+    "GRG Builder",
+    "Exportera och dela en GRG"
+  ],
+  "createdAt": "2026-06-18T19:34:33.682Z",
+  "updatedAt": "2026-06-18T20:24:54.559Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/export-share-a-grg-OP1CAaNJhC",
+    "fi": "/fi/guides/tak-guide/grgn-vienti-ja-jakaminen-ydjlUkJ7Pg",
+    "sv": "/sv/guides/tak-guide/exportera-och-dela-en-grg-nNP5db39f3"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>När din GRG är klar, exportera den som en fil eller skicka den direkt till ditt team.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Exportera GRG",
+          "layout": "image-bottom",
+          "html": "<p>Välj <strong>Export</strong>-ikonen och välj <strong>Export as KMZ</strong> eller <strong>Export as JSON</strong>. Filen sparas som standard i <strong>Documents > WinTAK > Export</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/3b41a437e4a2a2f7.webp",
+              "width": 225,
+              "height": 96
+            }
+          ]
+        },
+        {
+          "title": "Skicka en GRG och ställ in inställningar",
+          "layout": "text",
+          "html": "<p>Om du exporterade som JSON, välj <strong>Send GRG</strong> i GRG Builder-panelen för att skicka den till kontakter.</p>\n<ul>\n<li>För att rensa allt som placerats under den här sessionen, använd <strong>Delete</strong> högst upp i panelen.</li>\n<li>Konfigurera <strong>Auto Import GRG</strong>, JSON-katalogen och <strong>Set GRG Spacing Intervals</strong> under <strong>Edit GRG > Edit GRG Components > Open Preferences</strong>.</li>\n</ul>",
+          "images": []
+        }
+      ]
+    }
+  ]
+}

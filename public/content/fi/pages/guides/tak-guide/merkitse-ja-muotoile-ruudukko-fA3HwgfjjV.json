@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 1,
+  "id": "1d0b00dd-91ad-44f5-ba3c-40e7cc4dbe23",
+  "slug": "merkitse-ja-muotoile-ruudukko-fA3HwgfjjV",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Merkitse ja muotoile ruudukko",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "TUETUT LISÄOSAT",
+    "GRG-rakennustyökalu",
+    "Merkitse ja muotoile ruudukko"
+  ],
+  "createdAt": "2026-06-18T19:31:26.175Z",
+  "updatedAt": "2026-06-18T20:22:28.870Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/annotate-style-a-grid-xSjKDtDtsj",
+    "fi": "/fi/guides/tak-guide/merkitse-ja-muotoile-ruudukko-fA3HwgfjjV",
+    "sv": "/sv/guides/tak-guide/mark-och-formatera-ett-rutnat-YcEKrvC397"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Kun GRG-kaappaus on luotu, täällä merkitset sen, muotoilet sen ulkoasun ja lisäät ryhmäsi tarvitsemat merkinnät ennen jakamista.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Avaa GRG:n muokkausnäkymä",
+          "layout": "image-bottom",
+          "html": "<p>Käsittelyn jälkeen avautuu <strong>GRG Capture</strong> -muokkausnäkymä.</p>\n<ul>\n<li>Oikealla olevat valintaruudut kytkevät kunkin ominaisuuden päälle tai pois; ominaisuuden nimeä napauttamalla avautuu sen muokkain.</li>\n<li>Vedä tietoruutua tai pisteluetteloa siirtääksesi niitä.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/d3c379fd34f9f723.webp",
+              "width": 783,
+              "height": 464
+            }
+          ]
+        },
+        {
+          "title": "Muotoile ruudukko",
+          "layout": "image-bottom",
+          "html": "<p>Napauta <strong>Edit Grid</strong> asettaaksesi <strong>Label Style</strong> (<strong>MGRS</strong>, <strong>Letter/Number</strong> tai <strong>Both</strong>), ruudukon <strong>Color</strong> ja <strong>Spacing</strong>.</p>\n<ul>\n<li>Kytke <strong>Show Labels</strong> ja <strong>Additional Labels</strong> monisivuisia vientejä varten.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/02f0b5d4ea0f57fc.webp",
+              "width": 624,
+              "height": 355
+            }
+          ]
+        },
+        {
+          "title": "Hallitse pisteluetteloa",
+          "layout": "image-bottom",
+          "html": "<p>Napauta <strong>Point List</strong> asettaaksesi <strong>Text Color</strong> ja <strong>Text Align</strong>.</p>\n<ul>\n<li>Käytä kunkin pisteen silmäkuvaketta näyttääksesi tai piilottaaksesi sen kaappauksessa; valintapainikkeet siirtävät luettelon sijaintia.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/70d90848f969b8b6.webp",
+              "width": 624,
+              "height": 455
+            }
+          ]
+        },
+        {
+          "title": "Aseta tähtäin",
+          "layout": "image-bottom",
+          "html": "<p>Napauta <strong>Crosshair</strong> muuttaaksesi sen asetuksia <strong>Color</strong>, kirkkaus ja <strong>Size</strong>. Pidä se luettavana kuvamateriaalia vasten.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/4768f782cb4bb8bb.webp",
+              "width": 800,
+              "height": 366
+            }
+          ]
+        },
+        {
+          "title": "Muokkaa tietoruutua",
+          "layout": "image-bottom",
+          "html": "<p>Napauta <strong>Info Box</strong> asettaaksesi <strong>Title</strong>, <strong>Location</strong>, <strong>Date</strong> ja <strong>Classification</strong> sekä <strong>Style</strong> (<strong>Box</strong> tai <strong>Banner</strong>) ja <strong>Text Align</strong>.</p>\n<ul>\n<li>Kunkin merkinnän tekstin värin voi asettaa oikealla.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/de881fa11c8fe32a.webp",
+              "width": 800,
+              "height": 580
+            }
+          ]
+        },
+        {
+          "title": "Lisää kompassi",
+          "layout": "image-bottom",
+          "html": "<p>Rastita <strong>Compass</strong>-ruutu näyttääksesi sen ja napauta sitten <strong>Compass</strong> valitaksesi <strong>Style</strong> (<strong>True + Mag</strong> tai <strong>Full</strong>) ja <strong>Color</strong>.</p>\n<ul>\n<li>Käytä <strong>Left</strong> tai <strong>Right</strong> asettaaksesi sen puolen ruudukolla.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/1e7cdfaa0ed505cc.webp",
+              "width": 800,
+              "height": 364
+            }
+          ]
+        },
+        {
+          "title": "Lisää mittakaavajana",
+          "layout": "image-bottom",
+          "html": "<p>Rastita mittakaavajanan ruutu ja napauta sitten <strong>Scale Bar</strong> asettaaksesi <strong>Style</strong> (<strong>Map Range</strong> tai <strong>Cell Range</strong>), <strong>Unit</strong>, <strong>Size</strong> ja <strong>Segment every</strong>. Napauta muokkausnäkymässä <strong>Save</strong> tallentaaksesi muutoksesi.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/c130c90a2d0b9a87.webp",
+              "width": 800,
+              "height": 486
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

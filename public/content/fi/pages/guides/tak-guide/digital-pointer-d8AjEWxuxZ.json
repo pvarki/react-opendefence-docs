@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "id": "ec14fd4f-2dab-4d01-ba38-4a54bf85eb15",
+  "slug": "digital-pointer-d8AjEWxuxZ",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Digital Pointer",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "Edistyneet ydintoiminnot",
+    "Digital Pointer"
+  ],
+  "createdAt": "2026-06-18T19:27:17.452Z",
+  "updatedAt": "2026-06-18T20:15:51.268Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/digital-pointer-0K1KdydAeq",
+    "fi": "/fi/guides/tak-guide/digital-pointer-d8AjEWxuxZ",
+    "sv": "/sv/guides/tak-guide/digital-pointer-0Wr9d9JlFL"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Osoita kartalta kohtaa, ja kaikki verkkosi käyttäjät näkevät sen reaaliajassa, etäisyytenä ja suuntana sinusta sekä halutessasi uhkarenkaineen.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Pudota reaaliaikainen osoitin",
+          "layout": "image-bottom",
+          "html": "<p>Napauta <strong>Digital Pointer</strong> -kuvaketta ja sitten <strong>Pointer</strong> pudottaaksesi merkin kartalle. Kaikki verkkosi käyttäjät näkevät sen ilmestyvän ja saavat ilmoituksen, ja siitä piirtyy viiva takaisin sinuun.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/cbdeb87085572763.webp",
+              "width": 236,
+              "height": 186
+            }
+          ]
+        },
+        {
+          "title": "Näytä etäisyys, suunta ja uhkarenkaat",
+          "layout": "image-bottom",
+          "html": "<p>Napauta omaa osoitintasi avataksesi sen säteittäisvalikon. Valitse <strong>Range and Bearing Line</strong> näyttääksesi etäisyyden ja suunnan sinusta, tai <strong>Custom Threat Rings</strong> lisätäksesi vaararenkaita kohdan ympärille.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/cbdeb87085572763.webp",
+              "width": 236,
+              "height": 186
+            }
+          ]
+        },
+        {
+          "title": "Käytä joukkuetoverin osoitinta",
+          "layout": "image-bottom",
+          "html": "<p>Napauta jonkun toisen osoitinta saadaksesi lisätoimintoja:</p>\n<ul>\n<li><strong>Lock to Self</strong> pitää sen keskitettynä omaan sijaintiisi</li>\n<li><strong>Bloodhound Tool</strong> navigoi sen luo</li>\n<li><strong>Track Breadcrumbs</strong> seuraa sen jälkiä</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/7c6e87c1d423d079.webp",
+              "width": 223,
+              "height": 183
+            }
+          ]
+        },
+        {
+          "title": "Osoita tarkkaan ruutuun",
+          "layout": "image-bottom",
+          "html": "<p>Napauta <strong>GoTo MGRS</strong> Digital Pointer -työkalupalkissa syöttääksesi käsin 10-numeroisen itäkoordinaatin ja pohjoiskoordinaatin. Osoitin putoaa juuri siihen ruutuun nykyisessä karttanäkymässä.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/7c6e87c1d423d079.webp",
+              "width": 223,
+              "height": 183
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 1,
+  "id": "135d7682-d3f6-4c38-bcb8-c4355ca4efb5",
+  "slug": "perusnakyma-tyokalut-ja-tyokalupalkki-5cY07BjmD4",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Perusnäkymä, työkalut ja työkalupalkki",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "Perustoiminnot",
+    "Perusnäkymä, työkalut ja työkalupalkki"
+  ],
+  "createdAt": "2026-06-18T19:25:14.100Z",
+  "updatedAt": "2026-06-18T20:13:44.289Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/basic-view-tools-and-toolbar-juXbYsGMih",
+    "fi": "/fi/guides/tak-guide/perusnakyma-tyokalut-ja-tyokalupalkki-5cY07BjmD4",
+    "sv": "/sv/guides/tak-guide/grundvy-verktyg-och-verktygsfalt-Lpm8S3bYgv"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Perusnäkymä",
+          "layout": "image-bottom",
+          "html": "<p>Seuraavat kuvat opastavat ATAKin perusnäkymän käyttöä ja kertovat eri painikkeiden merkityksen.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/458ff245c9efc6aa.webp",
+              "width": 1600,
+              "height": 900
+            }
+          ]
+        },
+        {
+          "title": "Perustyökalupalkki",
+          "layout": "image-bottom",
+          "html": "",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/9363adfff4357768.webp",
+              "width": 1600,
+              "height": 900
+            }
+          ]
+        },
+        {
+          "title": "Perustyökalut 1",
+          "layout": "image-bottom",
+          "html": "",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/1fdd0d15f1c6d1cf.webp",
+              "width": 1600,
+              "height": 900
+            }
+          ]
+        },
+        {
+          "title": "Perustyökalut 2",
+          "layout": "image-bottom",
+          "html": "",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/0e4e9f6fe6181a4a.webp",
+              "width": 1600,
+              "height": 900
+            }
+          ]
+        },
+        {
+          "title": "Kompassi: North-Up vs Track-Up",
+          "layout": "image-bottom",
+          "html": "<p><strong>Compass</strong> sijaitsee vasemmassa yläkulmassa. Yhdellä painalluksella vaihdat tilojen <strong>North Up</strong> (pohjoinen pysyy ylhäällä) ja <strong>Track Up</strong> (kartta kääntyy kulkusuuntasi mukaan ja oma merkki (Self-Marker) osoittaa eteenpäin) välillä.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/f62653e74f549bb8.webp",
+              "width": 142,
+              "height": 86
+            }
+          ]
+        },
+        {
+          "title": "Kartan kääntäminen käsin",
+          "layout": "image-bottom",
+          "html": "<p>Paina <strong>Compass</strong> pitkään ja valitse <strong>Manual Orientation</strong>, vedä sitten kahdella sormella kartalla kääntääksesi sen haluamaasi suuntimaan.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/385e94853490e4e1.webp",
+              "width": 229,
+              "height": 84
+            }
+          ]
+        },
+        {
+          "title": "Kartan kierron lukitseminen",
+          "layout": "image-bottom",
+          "html": "<p>Lukitaksesi kartan nykyiseen kulmaan paina <strong>Compass</strong> pitkään ja napauta <strong>Manual Orientation</strong> uudelleen. Riippulukon kuvake vahvistaa, että suuntaus on lukittu; avaa lukitus napauttamalla vielä kerran.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/1751fe73910cdd76.webp",
+              "width": 152,
+              "height": 56
+            }
+          ]
+        },
+        {
+          "title": "Näytön suunnan vaihtaminen",
+          "layout": "image-bottom",
+          "html": "<p>Valitse <strong>Orientation</strong> vaihtaaksesi näytön vaaka- ja pystysuunnan välillä riippumatta siitä, miten pidät laitetta. Vaihtaminen sulkee avoinna olevat pudotusvalikot, jotta ne piirtyvät oikein uudelleen.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/5498c3e67f68b52a.webp",
+              "width": 170,
+              "height": 336
+            }
+          ]
+        },
+        {
+          "title": "Kirkkauden säätäminen päivä- tai yökäyttöön",
+          "layout": "image-bottom",
+          "html": "<p>Valitse <strong>Brightness</strong> ja säädä liukukytkimellä karttaa himmeämmäksi tai kirkkaammaksi päivänvalo- tai hämäräkäyttöä varten. Vain kartta himmenee; merkit ja pudotusvalikot pysyvät täysin näkyvinä.</p>\n<p>Kun olet tutustunut perusnäkymään, työkalupalkkiin ja työkaluihin, jatka kohtaan <a href=\"/doc/6bf5c875-5082-4f7c-b28c-26b5eea8b0c5\">Blue force tracking</a></p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/fc88141492e86a6f.webp",
+              "width": 1275,
+              "height": 199
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

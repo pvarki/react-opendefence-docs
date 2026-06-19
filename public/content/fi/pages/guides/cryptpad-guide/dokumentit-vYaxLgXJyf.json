@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "id": "f3783de4-f5ef-4c66-9109-f7a96e0bbd6e",
+  "slug": "dokumentit-vYaxLgXJyf",
+  "collection": "guides/cryptpad-guide",
+  "locale": "fi",
+  "title": "Dokumentit",
+  "breadcrumb": [
+    "Perustoiminnot",
+    "Dokumentit"
+  ],
+  "createdAt": "2026-06-18T20:34:36.194Z",
+  "updatedAt": "2026-06-18T20:38:02.879Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/cryptpad-guide/documents-1QGExPEBr9",
+    "fi": "/fi/guides/cryptpad-guide/dokumentit-vYaxLgXJyf",
+    "sv": "/sv/guides/cryptpad-guide/dokument-oIwKFvuvn3"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>CryptPad tukee Rich Text -dokumenttien luomista ja muokkaamista reaaliajassa suoraan selaimessa. Näin luot dokumentin, teet siihen yhteistyötä ja keskustelet siitä.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Luo dokumentti",
+          "layout": "image-bottom",
+          "html": "<p>Napsauta hallintapaneelissa <strong>+</strong> ja valitse <strong>Rich Text</strong>. Uusi salattu dokumentti luodaan.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/cd7134912cd62e80.webp",
+              "width": 1830,
+              "height": 1140
+            }
+          ]
+        },
+        {
+          "title": "Reaaliaikainen yhteistyö",
+          "layout": "image-bottom",
+          "html": "<p>Kirjoita dokumenttia samanaikaisesti muiden kanssa — kaikki näkevät muutokset heti niiden tapahtuessa.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/f4b4d7d1028d66b6.webp",
+              "width": 1815,
+              "height": 1143
+            }
+          ]
+        },
+        {
+          "title": "Keskustele dokumentista",
+          "layout": "image-bottom",
+          "html": "<p>Voit myös keskustella dokumentista suoraan dokumentin muokkausnäkymässä.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/c32f00bcd15e726a.webp",
+              "width": 1821,
+              "height": 1135
+            }
+          ]
+        },
+        {
+          "title": "Muut tiedostomuodot",
+          "layout": "text",
+          "html": "<p>CryptPad ei tue reaaliaikaista selainmuokkausta esimerkiksi <code>.docx</code>-muodoille, mutta voit jakaa tällaiset tiedostot CryptDrivessa ja muokata niitä paikallisesti.</p>",
+          "images": []
+        }
+      ]
+    }
+  ]
+}

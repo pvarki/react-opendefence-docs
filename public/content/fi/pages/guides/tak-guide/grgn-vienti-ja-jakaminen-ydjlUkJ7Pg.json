@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "id": "0077d43b-e010-421f-844a-c79029a53845",
+  "slug": "grgn-vienti-ja-jakaminen-ydjlUkJ7Pg",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "GRG:n vienti ja jakaminen",
+  "breadcrumb": [
+    "Platforms",
+    "WinTAK",
+    "Tuetut lisäosat",
+    "GRG Builder",
+    "GRG:n vienti ja jakaminen"
+  ],
+  "createdAt": "2026-06-18T19:34:33.378Z",
+  "updatedAt": "2026-06-18T20:24:54.053Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/export-share-a-grg-OP1CAaNJhC",
+    "fi": "/fi/guides/tak-guide/grgn-vienti-ja-jakaminen-ydjlUkJ7Pg",
+    "sv": "/sv/guides/tak-guide/exportera-och-dela-en-grg-nNP5db39f3"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Kun GRG on valmis, vie se tiedostona tai lähetä se suoraan ryhmällesi.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "GRG:n vienti",
+          "layout": "image-bottom",
+          "html": "<p>Valitse <strong>Export</strong>-kuvake ja valitse <strong>Export as KMZ</strong> tai <strong>Export as JSON</strong>. Tiedosto tallennetaan oletuksena kansioon <strong>Documents > WinTAK > Export</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/3b41a437e4a2a2f7.webp",
+              "width": 225,
+              "height": 96
+            }
+          ]
+        },
+        {
+          "title": "GRG:n lähettäminen ja asetukset",
+          "layout": "text",
+          "html": "<p>Jos veit tiedoston JSON-muodossa, valitse GRG Builder -paneelista <strong>Send GRG</strong> lähettääksesi sen yhteystiedoille.</p>\n<ul>\n<li>Tyhjentääksesi kaiken tämän istunnon aikana asetetun käytä <strong>Delete</strong>-painiketta paneelin yläosassa.</li>\n<li>Määritä <strong>Auto Import GRG</strong>, JSON-hakemisto ja <strong>Set GRG Spacing Intervals</strong> kohdassa <strong>Edit GRG > Edit GRG Components > Open Preferences</strong>.</li>\n</ul>",
+          "images": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 1,
+  "id": "5e96dc61-6582-4bb8-b10b-bf517883af23",
+  "slug": "spela-upp-och-fanga-video-2fFwRMj9g4",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Spela upp och fånga video",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "YTTERLIGARE FUNKTIONER",
+    "Video i ATAK",
+    "Spela upp och fånga video"
+  ],
+  "createdAt": "2026-06-18T19:30:21.923Z",
+  "updatedAt": "2026-06-18T20:21:35.456Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/play-capture-video-hWmpN6dj9t",
+    "fi": "/fi/guides/tak-guide/toista-ja-kaappaa-videota-xag7zBmlMd",
+    "sv": "/sv/guides/tak-guide/spela-upp-och-fanga-video-2fFwRMj9g4"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Titta på direktsända videoflöden från IP-kamera, Rover5 och H.264 i ATAK, ta en stillbild, spela in klipp och lägg flödet på kartan.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Öppna en video och spela upp den",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på ikonen <strong>Video Player</strong> för att öppna listan över flöden. Välj ett videoalias eller filnamn för att börja spela upp.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/ab045f72d0899194.webp",
+              "width": 225,
+              "height": 184
+            }
+          ]
+        },
+        {
+          "title": "Använd uppspelningskontrollerna",
+          "layout": "image-bottom",
+          "html": "<p>Videon visas i halvskärm med <strong>play/pause</strong>, förfluten tid och <strong>mute/unmute</strong>. Dra i draglisten för att gå till helskärm; tryck på enhetens <strong>Back</strong>-knapp för att återgå.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/60c4f50814886e59.webp",
+              "width": 241,
+              "height": 197
+            }
+          ]
+        },
+        {
+          "title": "Ta en stillbild av en bildruta",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på ikonen <strong>Snapshot</strong> för att spara den aktuella bildrutan som JPEG; ikonen blinkar grönt när det är klart. Tryck på stillbildsikonen för att öppna galleriet <strong>Video Snapshots</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/b6a49d1f7d6ae1d2.webp",
+              "width": 266,
+              "height": 210
+            }
+          ]
+        },
+        {
+          "title": "Skicka en stillbild",
+          "layout": "image-bottom",
+          "html": "<p>Öppna en stillbild och tryck sedan på <strong>Send</strong> för att skicka den till en annan TAK-användare, TAK-servern eller en tredjepartsapp. Använd <strong>Arrow</strong> för att bläddra till nästa stillbild.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/9b516c1553436f27.webp",
+              "width": 266,
+              "height": 219
+            }
+          ]
+        },
+        {
+          "title": "Spela in flödet till en fil",
+          "layout": "image-bottom",
+          "html": "<p>För en direktsänd UDP- eller RTSP-ström trycker du på <strong>Record</strong> för att starta; den blir en grön fyrkant under inspelningen. Tryck på <strong>Record</strong> igen för att stoppa. Klippen sparas i /atak/tools/videos/.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/709c6d58e6fead76.webp",
+              "width": 185,
+              "height": 50
+            }
+          ]
+        },
+        {
+          "title": "Visa flödet på kartan",
+          "layout": "image-bottom",
+          "html": "<p>Om strömmen bär hörnmetadata trycker du på ikonen <strong>Globe</strong> uppe till höger i videofönstret. Jordgloben blir grön och flödet överlagras direkt på kartan.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/5272d32cd8e564b3.webp",
+              "width": 582,
+              "height": 325
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 1,
+  "id": "9317320f-d7dd-481e-baff-81846551cae6",
+  "slug": "aseta-wintakn-kieli-ja-lokalisointi-h2H6q8rgOi",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Aseta WinTAK:n kieli ja lokalisointi",
+  "breadcrumb": [
+    "Platforms",
+    "WinTAK",
+    "ALOITA JA YHDISTÄ",
+    "Aseta WinTAK:n kieli ja lokalisointi"
+  ],
+  "createdAt": "2026-06-18T19:32:27.113Z",
+  "updatedAt": "2026-06-18T20:22:53.603Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/set-language-localization-for-wintak-GstcQifMVj",
+    "fi": "/fi/guides/tak-guide/aseta-wintakn-kieli-ja-lokalisointi-h2H6q8rgOi",
+    "sv": "/sv/guides/tak-guide/stall-in-sprak-och-lokalisering-for-wintak-20Oabj2Esq"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>WinTAK edellyttää, että Windows on asetettu <strong>English</strong>-kielelle ja <strong>United States</strong> -alueeksi — tee tämä <em>ennen</em> sovelluksen asentamista. Työskentele pareittain, jos voit: toinen lukee, toinen ohjaa.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Etsi Time and Language",
+          "layout": "image-bottom",
+          "html": "<p>Avaa Windowsin asetukset: kirjoita <strong>Time and Language</strong> hakupalkkiin (vasemmassa alakulmassa).</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/b591cd09ae92c086.webp",
+              "width": 320,
+              "height": 202
+            }
+          ]
+        },
+        {
+          "title": "Avaa Region-asetukset",
+          "layout": "image-bottom",
+          "html": "<p>Muuta ensin alue. Valitse <strong>Time and Language</strong> -kohdassa sivupalkista <strong>Region</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/487040977533ee91.webp",
+              "width": 418,
+              "height": 174
+            }
+          ]
+        },
+        {
+          "title": "Aseta alueeksi United States",
+          "layout": "image-bottom",
+          "html": "<p>Aseta maaksi tai alueeksi <strong>United States</strong>. Varmista, että myös alueellinen muoto on <strong>English (United States)</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/6cf7b296d8f78493.webp",
+              "width": 656,
+              "height": 330
+            }
+          ]
+        },
+        {
+          "title": "Aseta näyttökieleksi English (US)",
+          "layout": "image-bottom",
+          "html": "<p>Valitse sivupalkista takaisin <strong>Language</strong>. Aseta Windowsin näyttökieleksi <strong>English (United States)</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/c96a80f0dfa8ce4b.webp",
+              "width": 428,
+              "height": 278
+            }
+          ]
+        },
+        {
+          "title": "Kirjaudu ulos ja takaisin sisään",
+          "layout": "image-bottom",
+          "html": "<p>Viimeistele näyttökielen muutos kirjautumalla ulos ja takaisin sisään.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/fd1b084648d45844.webp",
+              "width": 306,
+              "height": 428
+            }
+          ]
+        },
+        {
+          "title": "Kieli asetettu",
+          "layout": "image-bottom",
+          "html": "<p>Jos English on nyt näyttökielesi, lokalisointi on valmis. Jos Englantia <strong>ei</strong> ollut valittavissa, seuraavat kaksi vaihetta lisäävät sen — muuten olet valmis asentamaan WinTAK:n.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/3b6397c0e3004325.webp",
+              "width": 428,
+              "height": 98
+            }
+          ]
+        },
+        {
+          "title": "Jos English puuttuu: lisää kielipaketti",
+          "layout": "image-bottom",
+          "html": "<p>Jos English ei ole näyttökielten listalla, paina <strong>Add a language</strong>, hae Englantia ja paina <strong>Install language pack</strong>. Odota, että se asentuu.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/c2ee5ce82a350c99.webp",
+              "width": 306,
+              "height": 428
+            }
+          ]
+        },
+        {
+          "title": "Valitse English, kirjaudu sitten ulos ja sisään",
+          "layout": "image-bottom",
+          "html": "<p>Kun se on asennettu, valitse English näyttökieleksi yllä kuvatulla tavalla ja kirjaudu sitten ulos ja takaisin sisään. Windows on nyt lokalisoitu — seuraavaksi lataa ja asenna WinTAK.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/12ebe55adc2ea8e3.webp",
+              "width": 428,
+              "height": 118
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

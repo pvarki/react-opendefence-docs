@@ -1,0 +1,306 @@
+{
+  "schemaVersion": 1,
+  "label": "Working with TAK",
+  "slug": "working-with-tak",
+  "items": [
+    {
+      "type": "group",
+      "id": "atak-plugin-development-dkaULfWXcf",
+      "label": "ATAK Plugin Development",
+      "children": [
+        {
+          "type": "doc",
+          "id": "how-atak-plugins-work-GtuYZlJSnX",
+          "label": "How ATAK plugins work",
+          "slug": "how-atak-plugins-work-GtuYZlJSnX"
+        },
+        {
+          "type": "doc",
+          "id": "set-up-your-development-environment-NfbAKB4XTl",
+          "label": "Set up your development environment",
+          "slug": "set-up-your-development-environment-NfbAKB4XTl"
+        },
+        {
+          "type": "doc",
+          "id": "create-your-first-plugin-from-the-template-cHtMhyb8Ma",
+          "label": "Create your first plugin from the template",
+          "slug": "create-your-first-plugin-from-the-template-cHtMhyb8Ma"
+        },
+        {
+          "type": "doc",
+          "id": "the-plugin-lifecycle-0Jf1BJ7g7O",
+          "label": "The plugin lifecycle",
+          "slug": "the-plugin-lifecycle-0Jf1BJ7g7O"
+        },
+        {
+          "type": "doc",
+          "id": "build-a-ui-the-dropdown-panel-kaH71FJeG8",
+          "label": "Build a UI: the DropDown panel",
+          "slug": "build-a-ui-the-dropdown-panel-kaH71FJeG8"
+        },
+        {
+          "type": "doc",
+          "id": "writing-plugins-in-kotlin-compose-Q4YEtk2N7A",
+          "label": "Writing plugins in Kotlin & Compose",
+          "slug": "writing-plugins-in-kotlin-compose-Q4YEtk2N7A"
+        },
+        {
+          "type": "doc",
+          "id": "working-with-the-map-cot-JmDIw4jN8e",
+          "label": "Working with the map & CoT",
+          "slug": "working-with-the-map-cot-JmDIw4jN8e"
+        },
+        {
+          "type": "doc",
+          "id": "map-items-groups-graphics-ZmQRXcNeqF",
+          "label": "Map items, groups & graphics",
+          "slug": "map-items-groups-graphics-ZmQRXcNeqF"
+        },
+        {
+          "type": "doc",
+          "id": "handling-map-events-KDHLfTLGfS",
+          "label": "Handling map events",
+          "slug": "handling-map-events-KDHLfTLGfS"
+        },
+        {
+          "type": "doc",
+          "id": "cot-in-depth-listening-sending-custom-details-nTudtLfqX9",
+          "label": "CoT in depth: listening, sending & custom details",
+          "slug": "cot-in-depth-listening-sending-custom-details-nTudtLfqX9"
+        },
+        {
+          "type": "doc",
+          "id": "advanced-practical-apis-2XMWIolD6S",
+          "label": "Advanced & practical APIs",
+          "slug": "advanced-practical-apis-2XMWIolD6S"
+        },
+        {
+          "type": "doc",
+          "id": "build-install-run-fWfgBZRkux",
+          "label": "Build, install & run",
+          "slug": "build-install-run-fWfgBZRkux"
+        },
+        {
+          "type": "doc",
+          "id": "test-debug-your-plugin-78jPxzFzjK",
+          "label": "Test & debug your plugin",
+          "slug": "test-debug-your-plugin-78jPxzFzjK"
+        },
+        {
+          "type": "doc",
+          "id": "packaging-distribution-overview-Yfof5rViqj",
+          "label": "Packaging & distribution",
+          "slug": "packaging-distribution-overview-Yfof5rViqj"
+        },
+        {
+          "type": "doc",
+          "id": "references-attribution-n8JEv3i895",
+          "label": "References & attribution",
+          "slug": "references-attribution-n8JEv3i895"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "integrating-to-tak-server-i19y5KVtNV",
+      "label": "Integrating to TAK Server",
+      "children": [
+        {
+          "type": "doc",
+          "id": "how-tak-server-works-a3STsGkoWB",
+          "label": "How TAK Server works",
+          "slug": "how-tak-server-works-a3STsGkoWB"
+        },
+        {
+          "type": "doc",
+          "id": "the-marti-api-the-spec-zWa3vFfeKt",
+          "label": "The Marti API",
+          "slug": "the-marti-api-the-spec-zWa3vFfeKt"
+        },
+        {
+          "type": "doc",
+          "id": "getting-data-from-tak-server-hszJWvv9UM",
+          "label": "Getting data from TAK Server",
+          "slug": "getting-data-from-tak-server-hszJWvv9UM"
+        },
+        {
+          "type": "doc",
+          "id": "pushing-data-to-tak-server-WDTB0ov6LS",
+          "label": "Pushing data to TAK Server",
+          "slug": "pushing-data-to-tak-server-WDTB0ov6LS"
+        },
+        {
+          "type": "doc",
+          "id": "authentication-the-deploy-app-identity-layer-ENSHL0S08d",
+          "label": "Authentication: the Deploy App identity layer",
+          "slug": "authentication-the-deploy-app-identity-layer-ENSHL0S08d"
+        },
+        {
+          "type": "doc",
+          "id": "enrolling-getting-a-client-certificate-vze3g7Eshz",
+          "label": "Enrolling & getting a client certificate",
+          "slug": "enrolling-getting-a-client-certificate-vze3g7Eshz"
+        },
+        {
+          "type": "doc",
+          "id": "keycloak-identity-groups-WXsDTvK7H8",
+          "label": "Keycloak: identity & groups",
+          "slug": "keycloak-identity-groups-WXsDTvK7H8"
+        },
+        {
+          "type": "doc",
+          "id": "end-to-end-integration-EOUZgpAdh0",
+          "label": "End-to-end integration",
+          "slug": "end-to-end-integration-EOUZgpAdh0"
+        },
+        {
+          "type": "doc",
+          "id": "references-J0wEJwIM8Z",
+          "label": "References",
+          "slug": "references-J0wEJwIM8Z"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "federation-hub-connecting-multiple-tak-servers-pfBog3Q9uI",
+      "label": "Federation Hub: connecting multiple TAK Servers",
+      "children": [
+        {
+          "type": "doc",
+          "id": "how-the-federation-hub-works-kfYEsVehxZ",
+          "label": "How the Federation Hub works",
+          "slug": "how-the-federation-hub-works-kfYEsVehxZ"
+        },
+        {
+          "type": "doc",
+          "id": "install-run-the-federation-hub-Qq2V1k9VZ2",
+          "label": "Install & run the Federation Hub",
+          "slug": "install-run-the-federation-hub-Qq2V1k9VZ2"
+        },
+        {
+          "type": "doc",
+          "id": "establish-trust-share-cas-sUaHBtGVfZ",
+          "label": "Establish trust",
+          "slug": "establish-trust-share-cas-sUaHBtGVfZ"
+        },
+        {
+          "type": "doc",
+          "id": "define-the-federation-policy-uaAcGzSU3h",
+          "label": "Define the federation policy",
+          "slug": "define-the-federation-policy-uaAcGzSU3h"
+        },
+        {
+          "type": "doc",
+          "id": "control-what-crosses-group-filtering-DKvIW89bZD",
+          "label": "Control what crosses",
+          "slug": "control-what-crosses-group-filtering-DKvIW89bZD"
+        },
+        {
+          "type": "doc",
+          "id": "connect-a-deploy-app-tak-server-nTjT0SDPzw",
+          "label": "Connect a Deploy App TAK Server",
+          "slug": "connect-a-deploy-app-tak-server-nTjT0SDPzw"
+        },
+        {
+          "type": "doc",
+          "id": "operate-troubleshoot-B5LoRqtcMh",
+          "label": "Operate & troubleshoot",
+          "slug": "operate-troubleshoot-B5LoRqtcMh"
+        },
+        {
+          "type": "doc",
+          "id": "references-jcEIPLZieK",
+          "label": "References",
+          "slug": "references-jcEIPLZieK"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "wire-up-deploy-app-tak-servers-via-a-federation-hub-iac-7b653SFdyn",
+      "label": "Wire up Deploy App TAK Servers via a Federation Hub",
+      "children": [
+        {
+          "type": "doc",
+          "id": "the-iac-trust-model-oJJLybgejE",
+          "label": "The IaC trust model",
+          "slug": "the-iac-trust-model-oJJLybgejE"
+        },
+        {
+          "type": "doc",
+          "id": "the-tak-server-side-bCErH3lFoW",
+          "label": "The TAK Server side",
+          "slug": "the-tak-server-side-bCErH3lFoW"
+        },
+        {
+          "type": "doc",
+          "id": "keycloak-groups-as-code-KGceqCKPVN",
+          "label": "Keycloak groups as code",
+          "slug": "keycloak-groups-as-code-KGceqCKPVN"
+        },
+        {
+          "type": "doc",
+          "id": "deploy-the-federation-hub-as-iac-pyaoAuGHbr",
+          "label": "Deploy the Federation Hub as IaC",
+          "slug": "deploy-the-federation-hub-as-iac-pyaoAuGHbr"
+        },
+        {
+          "type": "doc",
+          "id": "the-federation-policy-as-code-iza8fDoAU8",
+          "label": "The federation policy as code",
+          "slug": "the-federation-policy-as-code-iza8fDoAU8"
+        },
+        {
+          "type": "doc",
+          "id": "bring-up-sequence-verification-ydtDk00K2h",
+          "label": "Bring-up sequence & verification",
+          "slug": "bring-up-sequence-verification-ydtDk00K2h"
+        },
+        {
+          "type": "doc",
+          "id": "references-KdqJO1rcQ0",
+          "label": "References",
+          "slug": "references-KdqJO1rcQ0"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "wire-up-two-federation-hubs-iac-fzNcHRftqI",
+      "label": "Wire up two Federation Hubs",
+      "children": [
+        {
+          "type": "doc",
+          "id": "hub-to-hub-trust-and-connection-VIV7jDwrDx",
+          "label": "Hub-to-hub trust and connection",
+          "slug": "hub-to-hub-trust-and-connection-VIV7jDwrDx"
+        },
+        {
+          "type": "doc",
+          "id": "policy-and-group-filtering-across-hubs-MvZAotZIQl",
+          "label": "Policy and group filtering across hubs",
+          "slug": "policy-and-group-filtering-across-hubs-MvZAotZIQl"
+        },
+        {
+          "type": "doc",
+          "id": "bring-up-and-verification-4g1mSzoPjs",
+          "label": "Bring-up and verification",
+          "slug": "bring-up-and-verification-4g1mSzoPjs"
+        },
+        {
+          "type": "doc",
+          "id": "scaling-to-many-groups-5hLiku0O4u",
+          "label": "Scaling to many groups",
+          "slug": "scaling-to-many-groups-5hLiku0O4u"
+        },
+        {
+          "type": "doc",
+          "id": "references-n9W8lB6Gpz",
+          "label": "References",
+          "slug": "references-n9W8lB6Gpz"
+        }
+      ]
+    }
+  ]
+}

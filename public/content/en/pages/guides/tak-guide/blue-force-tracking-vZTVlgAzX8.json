@@ -12,8 +12,13 @@
     "Blue force tracking"
   ],
   "createdAt": "2025-12-21T10:34:26.068Z",
-  "updatedAt": "2026-06-16T12:10:36.174Z",
+  "updatedAt": "2026-06-18T20:13:46.289Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/blue-force-tracking-vZTVlgAzX8",
+    "fi": "/fi/guides/tak-guide/omien-joukkojen-seuranta-xwhLFahQPe",
+    "sv": "/sv/guides/tak-guide/blue-force-tracking-8BMZxsbnV0"
+  },
   "blocks": [
     {
       "type": "slideset",
@@ -59,7 +64,7 @@
     },
     {
       "type": "html",
-      "html": "<p>After successful testing Blue force tracking, continue to <a href=\"/doc/ee9de6aa-bd12-414f-9e31-cfc8ecddda21\">Point Dropper - Markers</a></p>"
+      "html": "<p>\\nAfter successful testing Blue force tracking, continue to <a href=\"/doc/ee9de6aa-bd12-414f-9e31-cfc8ecddda21\">Point Dropper - Markers</a></p>"
     }
   ]
 }

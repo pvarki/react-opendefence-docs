@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 1,
+  "id": "d2b390c5-bc6e-4df3-9e17-bb0934a31ab6",
+  "slug": "skicka-en-markor-4WZtvP60ax",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Skicka en markör",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "Grundläggande funktioner",
+    "Skicka en markör"
+  ],
+  "createdAt": "2026-06-18T19:26:12.190Z",
+  "updatedAt": "2026-06-18T20:13:51.685Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/sending-a-marker-tbLPq64DLE",
+    "fi": "/fi/guides/tak-guide/merkin-lahettaminen-VFvhZ3yMfm",
+    "sv": "/sv/guides/tak-guide/skicka-en-markor-4WZtvP60ax"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Skicka markörer",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Om du inte uttryckligen skickar kartmarkörer finns de bara <strong>i din egen enhet.</strong></li>\n<li>Skicka markörer genom att trycka på en markör och välja ikonen <strong>Details</strong> och</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/065beedcc732fe61.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Tryck på Send för att se sändningsalternativen",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Knappen <strong>SEND</strong> längst ner till vänster låter dig skicka dina markörer.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/16f13f5fd95b46ee.webp",
+              "width": 1080,
+              "height": 2340
+            }
+          ]
+        },
+        {
+          "title": "Sändningsalternativ",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Du kan skicka markörer direkt till flöden (Feeds), GeoChat-grupper, roller, grupper (personer med samma markörfärg som du) och enskilda personer.</li>\n<li>OpenDefence-standardmodellen för TAK rekommenderar att skicka spaningsmarkörer som denna <strong>till en roll -> HQ</strong> (som visas i bilden) eller till ett observationsflöde.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/13ed3f60a7fb002f.webp",
+              "width": 1080,
+              "height": 2340
+            }
+          ]
+        },
+        {
+          "title": "Vem tar emot?",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Att skicka till ett flöde sprider din markör till alla flödesprenumeranter.</li>\n<li>Att skicka till en roll skickar den till alla som innehar den rollen.</li>\n</ul>\n<p>Markören i bilden, som skickas till HQ-rollen, hamnar hos kommandoplatsens (Command Post) personal för analys.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/224048abc6268778.webp",
+              "width": 1290,
+              "height": 2796
+            }
+          ]
+        },
+        {
+          "title": "Ta emot en markör",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>I den här exempelbilden har en kommandoplatsanvändare i HQ-rollen just tagit emot symbolen vi skickade tidigare och lägger nu till den i <strong>Recon Feed</strong> så att alla kan se den.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/0348a5da252e244d.webp",
+              "width": 1080,
+              "height": 2340
+            }
+          ]
+        },
+        {
+          "title": "Flöden är det bästa verktyget för att dela markörer",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Att skicka markörer till användare täpper snabbt igen deras kartor.</li>\n<li>Det bästa sättet är att antingen lägga markörer direkt i ett flöde...</li>\n<li>...eller, som vår standardmodell föreskriver, först skicka dem till CP som ansvarar för kvaliteten på RECON-flödet, så att allt du läser därifrån är kurerat.</li>\n</ul>\n<p>Vår nyss tillagda markör från Blue43 syns här i RECON-flödet.</p>\n<p>När du har förstått RECON-flödet, fortsätt till</p>\n<p>Läs mer om RECON-flödet på TAK Wiki <a href=\"/doc/bf3416b5-d2ca-4dc6-89a2-b48cfca69618\">Takserver RECON feed</a></p>\n<p>Läs mer om att vidarebefordra observationer till kommandoplatsen på TAK WIKI <a href=\"/doc/58a46804-6639-4b5e-a7c0-3056309cb411\">Forwarding Observations</a></p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/22ab27310be30c0d.webp",
+              "width": 1080,
+              "height": 2340
+            }
+          ]
+        },
+        {
+          "title": "Öppna markörens radialmeny",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Tryck på en markör för att öppna dess radialmeny.</li>\n<li>Välj <strong>Details</strong> för att redigera den, eller <strong>Fine Adjust</strong> och <strong>Polar Coordinates</strong> för att finjustera dess position.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/00c599f6b62e304e.webp",
+              "width": 256,
+              "height": 198
+            }
+          ]
+        },
+        {
+          "title": "Ange status och modifierare",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>I <strong>Details</strong>, ange fältet <strong>Status</strong> (till exempel <strong>Present/Damaged</strong>) för att visa en statusindikator under markören.</li>\n<li>Bocka i <strong>Show Modifiers</strong> för att registrera rörelseriktning, hastighet och plats, och skicka sedan uppdateringen med <strong>Send</strong> eller <strong>Auto Send</strong>.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/029fe4cc0794346f.webp",
+              "width": 349,
+              "height": 198
+            }
+          ]
+        },
+        {
+          "title": "Redigera typ och tillhörighet",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Använd markörikonen längst upp till vänster i rutan för att ändra <strong>Affiliation</strong>.</li>\n<li>Välj <strong>Type</strong> för att välja en mer specifik kategori i listan.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/0ace50673d861f2c.webp",
+              "width": 426,
+              "height": 210
+            }
+          ]
+        },
+        {
+          "title": "Fine Adjust för att flytta den exakt",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Välj <strong>Fine Adjust</strong> i radialmenyn för att putta markören till exakt rätt placering.</li>\n<li>Tryck och håll på <strong>Fine Adjust</strong> för att öppna undermenyn och skriva in en <strong>MGRS</strong>- eller koordinatposition direkt.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/482f1a04596e73be.webp",
+              "width": 256,
+              "height": 192
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

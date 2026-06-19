@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "ed49facb-14c9-489c-9023-e10a3816786d",
+  "slug": "spela-in-handelser-ByDTrXbank",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Spela in händelser",
+  "breadcrumb": [
+    "Platforms",
+    "WinTAK",
+    "Plugin-program som stöds",
+    "TAK Replay",
+    "Spela in händelser"
+  ],
+  "createdAt": "2026-06-18T19:34:28.595Z",
+  "updatedAt": "2026-06-18T20:24:42.283Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/record-events-2LJeWe6cPW",
+    "fi": "/fi/guides/tak-guide/tallenna-tapahtumat-qjxLc57ea2",
+    "sv": "/sv/guides/tak-guide/spela-in-handelser-ByDTrXbank"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>TAK Replay spelar in karthändelser och chattar i realtid så att du kan spela upp dem senare. Öppna fliken för insticksprogram i WinTAK-verktygsfältet för att börja.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Starta inspelning",
+          "layout": "image-bottom",
+          "html": "<p>Välj <strong>Record</strong> för att fånga alla karthändelser och chattar, eller öppna huvudpanelen <strong>TAK Replay</strong> (via <strong>Recordings</strong>) för mer kontroll. En inspelning kan pausas, återupptas eller stoppas från verktygsfältet.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/036190631addd755.webp",
+              "width": 349,
+              "height": 151
+            }
+          ]
+        },
+        {
+          "title": "Välj ett inspelningsområde",
+          "layout": "image-bottom",
+          "html": "<p>När du väljer <strong>Record</strong> väljer du vilket område som ska fångas: <strong>Select Map View</strong> (endast det som syns, med zoomnivån bevarad), <strong>Select Existing Shape</strong>, <strong>Select Polygon Region</strong> eller <strong>Select Rectangular Region</strong>. Använd <strong>Reset Region Selection</strong> för att välja en annan områdestyp.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/a132944160d2eff0.webp",
+              "width": 351,
+              "height": 343
+            }
+          ]
+        },
+        {
+          "title": "Spela in händelser och chattar",
+          "layout": "image-bottom",
+          "html": "<p>Välj <strong>Start Recording</strong>, behåll eller ändra titeln och välj <strong>OK</strong>.</p>\n<ul>\n<li>En räknare visar förfluten tid och antalet händelser, kartobjekt och chattmeddelanden, och uppdateras tills du stoppar.</li>\n<li>Växla vilka objekt som spelas in via Overlay Manager.</li>\n<li>Välj <strong>Stop Recording</strong> för att avsluta — Timeline Viewer öppnas automatiskt.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/aeeb99b00aa0608d.webp",
+              "width": 448,
+              "height": 255
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

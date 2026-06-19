@@ -6,14 +6,19 @@
   "locale": "en",
   "title": "TAK Tracker Already Installed",
   "breadcrumb": [
-    "TAK Clients",
+    "Platforms",
     "TAK Tracker - Apple",
-    "Start",
+    "START & CONNECT",
     "TAK Tracker Already Installed"
   ],
   "createdAt": "2025-12-05T20:40:48.111Z",
-  "updatedAt": "2026-02-21T08:38:01.138Z",
+  "updatedAt": "2026-06-18T20:27:31.236Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/tak-tracker-already-installed-DmWqDN5jLp",
+    "fi": "/fi/guides/tak-guide/tak-tracker-on-jo-asennettu-9ULjLI5HIp",
+    "sv": "/sv/guides/tak-guide/tak-tracker-redan-installerad-b0bOMabOne"
+  },
   "blocks": [
     {
       "type": "slideset",

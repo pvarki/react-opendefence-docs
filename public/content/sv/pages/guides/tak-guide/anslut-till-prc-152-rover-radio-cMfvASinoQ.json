@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 1,
+  "id": "0b59f206-85ae-4766-bd9d-c96e6b0ef1d6",
+  "slug": "anslut-till-prc-152-rover-radio-cMfvASinoQ",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Anslut till PRC-152- / Rover-radio",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "TILLÄGG SOM STÖDS",
+    "Anslut radio med HAMMER",
+    "Anslut till PRC-152- / Rover-radio"
+  ],
+  "createdAt": "2026-06-18T19:32:24.222Z",
+  "updatedAt": "2026-06-18T20:22:46.017Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/connect-to-prc-152-rover-radio-h4TQ7hwPw2",
+    "fi": "/fi/guides/tak-guide/yhdista-prc-152-rover-radioon-hoINotQoqb",
+    "sv": "/sv/guides/tak-guide/anslut-till-prc-152-rover-radio-cMfvASinoQ"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Anslut din telefon till en Harris PRC-152-radio och en Rover-videolänk så att du kan tala punkt-till-punkt och se direktsänd flygvideo på kartan.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Öppna radiokontrollerna",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på <strong>Radio</strong>-ikonen för att öppna <strong>Radio Controls</strong>.</p>\n<ul>\n<li><strong>Harris SA</strong> är PRC-152:s tal- och dataradio; <strong>Rover</strong> är ISRV-videolänken.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/064a87db54be9c9a.webp",
+              "width": 262,
+              "height": 175
+            }
+          ]
+        },
+        {
+          "title": "Ställ in PRC-152-kabeln",
+          "layout": "image-bottom",
+          "html": "<p>Anslut PRC-152-kabeln och tryck sedan på kugghjulsikonen <strong>Harris SA</strong>. Välj din kabel i <strong>Cable Configuration</strong> (t.ex. <strong>PRC-152A Cable</strong>) och tryck på <strong>OK</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/3e1d2f7bc4f92e4e.webp",
+              "width": 277,
+              "height": 214
+            }
+          ]
+        },
+        {
+          "title": "Anslut PRC-152",
+          "layout": "image-bottom",
+          "html": "<p>Skjut växlingsknappen <strong>Harris SA</strong> från <strong>OFF</strong> till <strong>ON</strong>. När anslutningen är klar visas andra radioapparater i samma nät på kartan när bruset dämpas.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/59dff00e909edf4d.webp",
+              "width": 336,
+              "height": 139
+            }
+          ]
+        },
+        {
+          "title": "Anslut Rover",
+          "layout": "image-bottom",
+          "html": "<p>Skjut växlingsknappen <strong>Rover</strong> från <strong>OFF</strong> till <strong>ON</strong>. ATAK söker efter en signal; antennikonen blir grön och visar <strong>Connected</strong> när videolänken är aktiv.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/d093929ac08f9981.webp",
+              "width": 357,
+              "height": 164
+            }
+          ]
+        },
+        {
+          "title": "Öppna Rover-kontrollerna",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på menyalternativet <strong>Rover</strong> för att öppna <strong>Rover Controls</strong>.</p>\n<ul>\n<li>Den aktuella frekvensen och vågformen visas högst upp.</li>\n<li>Använd <strong>Scan</strong> och <strong>Next</strong> för att stega igenom signalerna.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/7c0f821ce387b52b.webp",
+              "width": 243,
+              "height": 253
+            }
+          ]
+        },
+        {
+          "title": "Ställ in frekvens och vågform",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på <strong>Scan</strong> för att öppna <strong>Scan Frequency Range</strong>. Ange en <strong>Start Freq Code</strong> och en <strong>End Freq Code</strong>, välj <strong>Waveform</strong> (t.ex. ANALOG, DDL) och tryck på <strong>OK</strong>, tryck sedan på <strong>Next</strong> för att gå vidare.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/e1f84335cbd03acc.webp",
+              "width": 271,
+              "height": 221
+            }
+          ]
+        },
+        {
+          "title": "Titta på videon",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på <strong>Watch</strong> för att öppna direktsändningen. Videon visar flygplanets sensorsignal med målruta och koordinater pålagda.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/78f3cbf6f8c0f8f7.webp",
+              "width": 379,
+              "height": 354
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

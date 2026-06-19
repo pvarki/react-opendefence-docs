@@ -129,6 +129,17 @@ export const DEV_BOOK_COLLECTIONS: CollectionConfig[] = [
     section: "dev",
     description: "Contribute across the pvarki repositories",
   },
+  {
+    // "TAK developing guide" (urlId gpIDFeGwRZ). English-only; one collection
+    // holding the Working-with-TAK guides (Plugin Development, Integrating to
+    // TAK Server, Working with Federation Hub + the IaC how-tos).
+    collectionId: "74d6c3aa-0666-44a7-ae41-73632c67c30a",
+    label: "Working with TAK",
+    slug: "working-with-tak",
+    section: "dev",
+    description:
+      "Develop for TAK: plugins, TAK Server integration, and federation",
+  },
 ];
 
 export const ALL_COLLECTIONS: CollectionConfig[] = [

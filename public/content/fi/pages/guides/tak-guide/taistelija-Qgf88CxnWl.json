@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "0cbcd6dd-cd52-4c1d-941e-0e748e88344b",
+  "slug": "taistelija-Qgf88CxnWl",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Taistelija",
+  "breadcrumb": [
+    "Platforms",
+    "TAK Tracker - Apple",
+    "Käyttö roolin mukaan",
+    "Taistelija"
+  ],
+  "createdAt": "2026-06-18T19:45:51.893Z",
+  "updatedAt": "2026-06-18T20:27:44.355Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/fighter-xKivECWhVS",
+    "fi": "/fi/guides/tak-guide/taistelija-Qgf88CxnWl",
+    "sv": "/sv/guides/tak-guide/soldat-4gafoPRROP"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>(Tätä välilehteä ei pitäisi näyttää)</p>"
+    }
+  ]
+}

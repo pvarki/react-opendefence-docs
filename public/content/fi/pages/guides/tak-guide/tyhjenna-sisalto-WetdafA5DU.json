@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "id": "e42fb82f-8296-4a74-9b90-996810de7486",
+  "slug": "tyhjenna-sisalto-WetdafA5DU",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Tyhjennä sisältö",
+  "breadcrumb": [
+    "Platforms",
+    "WinTAK",
+    "PERUSTOIMINNOT",
+    "Tyhjennä sisältö"
+  ],
+  "createdAt": "2026-06-18T19:33:26.523Z",
+  "updatedAt": "2026-06-18T20:23:45.245Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/clear-content-gLcPrq5b5J",
+    "fi": "/fi/guides/tak-guide/tyhjenna-sisalto-WetdafA5DU",
+    "sv": "/sv/guides/tak-guide/rensa-innehall-ELxCoba17F"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "1. Avaa WinTAK",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Avaa WinTAK-sovellus</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/cfea40303acd6836.webp",
+              "width": 84,
+              "height": 109
+            }
+          ]
+        },
+        {
+          "title": "2. Avaa WinTAKin Clean Content -toiminto",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Avaa valikko hampurilaiskuvakkeesta</li>\n<li>Avaa Clean Content</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/eb5517e521dd5f87.webp",
+              "width": 219,
+              "height": 437
+            }
+          ]
+        },
+        {
+          "title": "3. WinTAK Clear Content",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Tee valinnat</li>\n<li>Aktivoi Clear Now!</li>\n<li>Odota, kunnes tiedot on poistettu ja sovellus sulkeutuu</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/2d27af1e79864820.webp",
+              "width": 320,
+              "height": 255
+            }
+          ]
+        },
+        {
+          "title": "Valmis",
+          "layout": "text",
+          "html": "<ul>\n<li>Voit sulkea tämän oppaan.</li>\n</ul>\n<hr>",
+          "images": []
+        }
+      ]
+    },
+    {
+      "type": "html",
+      "html": "<p>Jatka aktivointia: <a href=\"/doc/8d02b881-5071-435c-b1f3-7d3de6e70f63\">Start from Download</a></p>"
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 1,
+  "id": "4e1315da-0e8e-40fe-baf4-75fd3c8a9846",
+  "slug": "ladda-tillagg-och-slutfor-installationen-q0zNv80GFR",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Ladda tillägg och slutför installationen",
+  "breadcrumb": [
+    "Platforms",
+    "WinTAK",
+    "STARTA OCH ANSLUT",
+    "Ladda tillägg och slutför installationen"
+  ],
+  "createdAt": "2026-06-18T19:32:29.819Z",
+  "updatedAt": "2026-06-18T20:23:30.177Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/load-plugins-finish-setup-xa2huv9Wmn",
+    "fi": "/fi/guides/tak-guide/lataa-lisaosat-ja-viimeistele-asennus-Tb3fKqrK2B",
+    "sv": "/sv/guides/tak-guide/ladda-tillagg-och-slutfor-installationen-q0zNv80GFR"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Slutför enhetens installationsguide genom att aktivera Data Sync-tillägget och höjddata, granska sedan dina inställningar och ange måttenheterna.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Installera Data Sync-tillägget",
+          "layout": "image-bottom",
+          "html": "<p>Applikationen frågar om tillägg ska installeras. Välj <strong>DataSync</strong> och tryck på <strong>OK</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/029f11bf3e10f495.webp",
+              "width": 428,
+              "height": 168
+            }
+          ]
+        },
+        {
+          "title": "Ladda ner höjddata (DTED-0)",
+          "layout": "image-bottom",
+          "html": "<p>WinTAK frågar sedan om DTED-0-höjdmodeller ska laddas ner automatiskt. Välj <strong>Yes</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/88039349514be5fe.webp",
+              "width": 428,
+              "height": 194
+            }
+          ]
+        },
+        {
+          "title": "Granska My Preferences",
+          "layout": "image-bottom",
+          "html": "<p>Grundinställningen är klar — kontrollera <strong>My Preferences</strong>. Ditt <strong>Callsign</strong>, lagfärg (<strong>My Team</strong>) och roll (<strong>My Role</strong>) ska stämma överens med det du tilldelades, och <strong>My Display Type</strong> ska vara <strong>Ground</strong>.</p>\n<p>Om du är användare på en kommandoplats ska din roll vara <strong>HQ</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/3e80491a5937ce95.webp",
+              "width": 408,
+              "height": 428
+            }
+          ]
+        },
+        {
+          "title": "Kontrollera TAK Network Status",
+          "layout": "image-bottom",
+          "html": "<p>Kontrollera <strong>TAK Network Status</strong>: ett grönt moln betyder att serveranslutningen är OK, rött betyder frånkopplad. Om det förblir rött, kontrollera din internetanslutning och starta om WinTAK (se Felsökning).</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/047e001151462738.webp",
+              "width": 228,
+              "height": 48
+            }
+          ]
+        },
+        {
+          "title": "Öppna enhetsinställningar",
+          "layout": "image-bottom",
+          "html": "<p>Ställ nu in måttenheterna. Tryck på <strong>hamburgermenyn</strong> (tre staplade linjer) i det övre vänstra hörnet och välj sedan <strong>Settings</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/505604de49718539.webp",
+              "width": 162,
+              "height": 428
+            }
+          ]
+        },
+        {
+          "title": "Öppna Display Preferences",
+          "layout": "image-bottom",
+          "html": "<p>Välj <strong>Display Preferences</strong> och öppna sedan <strong>Unit Display Format Preferences</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/8caa66e01ac7ab6d.webp",
+              "width": 426,
+              "height": 428
+            }
+          ]
+        },
+        {
+          "title": "Ange enhetsformatet",
+          "layout": "image-bottom",
+          "html": "<p>Kontrollera att enhetsinställningarna stämmer överens med bilden och ändra dem vid behov.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/8b7b8a374e2bf818.webp",
+              "width": 428,
+              "height": 156
+            }
+          ]
+        },
+        {
+          "title": "WinTAK är installerat",
+          "layout": "image-bottom",
+          "html": "<p>WinTAK är nu installerat. Användarguiden enligt standardmodellen finns under <strong>Usage by Role</strong> — och på den här Deploy-appens startsidesmeny under <strong>Usage</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/7004acd42562d400.webp",
+              "width": 338,
+              "height": 682
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

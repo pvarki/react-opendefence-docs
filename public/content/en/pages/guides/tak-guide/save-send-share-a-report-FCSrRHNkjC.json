@@ -8,13 +8,18 @@
   "breadcrumb": [
     "Platforms",
     "ATAK",
-    "Supported Plugins",
+    "SUPPORTED PLUGINS",
     "Reports",
     "Save, Send & Share a Report"
   ],
   "createdAt": "2026-06-15T19:50:55.066Z",
-  "updatedAt": "2026-06-15T19:50:55.066Z",
+  "updatedAt": "2026-06-18T20:22:34.931Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/save-send-share-a-report-FCSrRHNkjC",
+    "fi": "/fi/guides/tak-guide/tallenna-laheta-ja-jaa-raportti-seWPZi6Bfz",
+    "sv": "/sv/guides/tak-guide/spara-skicka-och-dela-en-rapport-gU4Iv71nZV"
+  },
   "blocks": [
     {
       "type": "html",
@@ -51,7 +56,7 @@
         {
           "title": "Send the report",
           "layout": "image-bottom",
-          "html": "<p>Select the upload or send icon to choose how the report goes out: to a <strong>Contact</strong>, <strong>Select Server</strong>, <strong>Cloud/FTP</strong>, <strong>Choose App</strong>, or <strong>Export</strong>. Data Sync and Cloud/FTP only show up if those plug-ins are installed.</p>",
+          "html": "<p>Select the upload or send icon to choose how the report goes out:</p>\n<ul>\n<li>to a <strong>Contact</strong>, <strong>Select Server</strong>, <strong>Cloud/FTP</strong>, <strong>Choose App</strong>, or <strong>Export</strong>.</li>\n<li>Data Sync and Cloud/FTP only show up if those plug-ins are installed.</li>\n</ul>",
           "images": [
             {
               "src": "/content/images/en/attachments/b8b6eb329179698a.webp",
@@ -63,7 +68,7 @@
         {
           "title": "Send via TAK Chat or copy the text",
           "layout": "image-bottom",
-          "html": "<p>Select the <strong>Send</strong> button for sending options. <strong>TAK Chat</strong> pushes the report to users on the network; <strong>Copy</strong> puts it on the clipboard to paste into any chat. For Data Sync, pick <strong>Data Sync Upload</strong>, choose a feed, then <strong>Send</strong>.</p>",
+          "html": "<p>Select the <strong>Send</strong> button for sending options.</p>\n<ul>\n<li><strong>TAK Chat</strong> pushes the report to users on the network; <strong>Copy</strong> puts it on the clipboard to paste into any chat.</li>\n<li>For Data Sync, pick <strong>Data Sync Upload</strong>, choose a feed, then <strong>Send</strong>.</li>\n</ul>",
           "images": [
             {
               "src": "/content/images/en/attachments/894ec543cf32e4bc.webp",
@@ -75,7 +80,7 @@
         {
           "title": "Manage your saved reports",
           "layout": "image-bottom",
-          "html": "<p>Saved copies live in the Reports panel. Each report has its own row of icons: <strong>Upload</strong>, <strong>Details</strong>, <strong>PDF</strong>, <strong>Copy to Clipboard</strong>, <strong>Share</strong>, <strong>Visibility</strong>, and <strong>Delete</strong>.</p>",
+          "html": "<p>Saved copies live in the Reports panel.</p>\n<ul>\n<li>Each report has its own row of icons: <strong>Upload</strong>, <strong>Details</strong>, <strong>PDF</strong>, <strong>Copy to Clipboard</strong>, <strong>Share</strong>, <strong>Visibility</strong>, and <strong>Delete</strong>.</li>\n</ul>",
           "images": [
             {
               "src": "/content/images/en/attachments/dd7ec43088ae27a5.webp",
@@ -99,7 +104,7 @@
         {
           "title": "Share via apps or delete",
           "layout": "image-bottom",
-          "html": "<p>Select <strong>Share</strong> to hand the report to any installed app that can send it. Select <strong>Delete</strong> to remove the report from the device. <strong>Visibility</strong> toggles the report marker on the map.</p>",
+          "html": "<p>Select <strong>Share</strong> to hand the report to any installed app that can send it.</p>\n<ul>\n<li>Select <strong>Delete</strong> to remove the report from the device.</li>\n<li><strong>Visibility</strong> toggles the report marker on the map.</li>\n</ul>",
           "images": [
             {
               "src": "/content/images/en/attachments/dd7ec43088ae27a5.webp",

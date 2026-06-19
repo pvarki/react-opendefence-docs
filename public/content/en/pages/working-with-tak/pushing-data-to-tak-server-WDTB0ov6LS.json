@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "id": "4bdea93b-3a5a-46e4-97f4-a30414c7ed8b",
+  "slug": "pushing-data-to-tak-server-WDTB0ov6LS",
+  "collection": "working-with-tak",
+  "locale": "en",
+  "title": "Pushing data to TAK Server",
+  "breadcrumb": [
+    "Integrating to TAK Server",
+    "Pushing data to TAK Server"
+  ],
+  "createdAt": "2026-06-17T18:21:47.332Z",
+  "updatedAt": "2026-06-17T18:33:30.940Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Sending live CoT",
+      "id": "sending-live-cot"
+    },
+    {
+      "depth": 2,
+      "text": "Creating & updating missions",
+      "id": "creating--updating-missions"
+    },
+    {
+      "depth": 2,
+      "text": "Uploading files (Enterprise Sync)",
+      "id": "uploading-files-enterprise-sync"
+    },
+    {
+      "depth": 2,
+      "text": "Provisioning & other writes",
+      "id": "provisioning--other-writes"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Writing mirrors reading: stream <strong>CoT</strong> for live events, or <strong>persist</strong> structured content through the Marti API. Confirm exact request bodies in <a href=\"/en/working-with-tak/the-marti-api-the-spec-zWa3vFfeKt\">the spec</a>; every request carries your mTLS client certificate, and what you write is scoped to the <strong>groups</strong> you send to.</p>\n<h2 id=\"sending-live-cot\"><a href=\"#sending-live-cot\">Sending live CoT</a></h2>\n<p>The most direct way to put a position/marker/chat onto the map of every connected client is to <strong>send CoT</strong> over the streaming connection (the same link you subscribe on). As an integrating service you connect as a client and emit CoT events; they fan out to clients in the groups you write to.</p>\n<p>For ingest from external systems, TAK Server can also pull/accept events through configured <strong>inputs</strong> and <strong>data feeds</strong>:</p>\n<ul>\n<li><code>PUT /Marti/api/inputs/{id}</code>, <code>GET/PUT /Marti/api/inputs/config</code> — manage inputs.</li>\n<li><code>GET/PUT/POST/DELETE /Marti/api/datafeeds/{name}</code>, <code>PUT/POST /Marti/api/datafeeds/predicate</code> — manage data feeds and their predicates.</li>\n<li><code>GET/PUT/POST /Marti/api/outgoingconnections</code> — push events to external endpoints.</li>\n</ul>\n<h2 id=\"creating--updating-missions\"><a href=\"#creating--updating-missions\">Creating &#x26; updating missions</a></h2>\n<p>To share structured content with a team, write to a mission:</p>\n<ul>\n<li><code>POST</code> / <code>PUT /Marti/api/missions/{name}</code> — create or update a mission (<code>DELETE</code> to remove).</li>\n<li><code>PUT /Marti/api/missions/{name}/contents</code> — add content (e.g. references to Enterprise Sync hashes); <code>DELETE</code> to remove content.</li>\n<li><code>PUT /Marti/api/missions/{name}/contents/missionpackage</code> — add a <strong>Mission Package</strong> (a zipped data package) to the mission.</li>\n<li>Manage <strong>layers</strong> (<code>/maplayers</code>, <code>/layers</code>), <strong>keywords</strong>, <strong>invites</strong> (<code>/invite/{type}/{invitee}</code>), <strong>password</strong>, <strong>expiration</strong>, and <strong>nesting</strong> (<code>/parent/{parentName}</code>) via their sub-resources.</li>\n<li><code>PUT/POST /Marti/api/missions/logs/entries</code> — append to a mission log.</li>\n</ul>\n<h2 id=\"uploading-files-enterprise-sync\"><a href=\"#uploading-files-enterprise-sync\">Uploading files (Enterprise Sync)</a></h2>\n<p>Store a file/data package in Enterprise Sync and you get back a <strong>hash</strong> you can then reference from missions or CoT:</p>\n<ul>\n<li>Upload the content to the Enterprise Sync store (see the spec for the exact upload path and the <code>hash</code>/<code>name</code> parameters).</li>\n<li><code>PUT /Marti/api/sync/metadata/{hash}/{metadata}</code>, <code>…/{hash}/keywords</code>, <code>…/{hash}/expiration</code> — attach/adjust metadata after upload.</li>\n</ul>\n<h2 id=\"provisioning--other-writes\"><a href=\"#provisioning--other-writes\">Provisioning &#x26; other writes</a></h2>\n<ul>\n<li><code>GET/PUT/POST /Marti/api/device/profile/{name}</code> (+ <code>/file</code>, <code>/directories/{…}</code>) — <strong>device profiles</strong> that provision connecting EUDs (mainly ATAK). They push EUD settings — Update Server config, maps, toolbars — to users in specified groups, applied <strong>on enrollment</strong> (when a device first gets its certificate) or <strong>on connection</strong> (whenever it reconnects). The settings are typically <code>.pref</code> files inside a TAK <strong>data package</strong> (so ATAK auto-imports them). See the <em>Device Profiles</em> wiki page for the operator view.</li>\n<li><code>POST /Marti/api/tls/signClient</code> / <code>…/v2</code> — TAK Server can sign a client CSR directly. On a Deploy App deployment you normally get your cert from Deploy App instead — see <a href=\"/en/working-with-tak/enrolling-getting-a-client-certificate-vze3g7Eshz\">Enrolling &#x26; getting a client certificate</a>.</li>\n</ul>\n<blockquote>\n<p><strong>Group discipline.</strong> Writing to a group you don't have <strong>write</strong> (<code>In</code>) membership in won't reach anyone. If a push \"succeeds\" but no one sees it, check your group membership first (<a href=\"/en/working-with-tak/keycloak-identity-groups-WXsDTvK7H8\">Keycloak: identity &#x26; groups</a>). Writing <strong>into a mission</strong> additionally needs a <strong>ReadWrite</strong> or <strong>Owner</strong> role on that mission (see <a href=\"/en/working-with-tak/getting-data-from-tak-server-hszJWvv9UM\">Getting data → roles &#x26; groups</a>).</p>\n</blockquote>\n<p>→ Next: <a href=\"/en/working-with-tak/authentication-the-deploy-app-identity-layer-ENSHL0S08d\">Authentication: the Deploy App identity layer</a>.</p>"
+    }
+  ]
+}

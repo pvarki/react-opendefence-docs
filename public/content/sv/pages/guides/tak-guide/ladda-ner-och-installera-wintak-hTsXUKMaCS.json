@@ -1,0 +1,124 @@
+{
+  "schemaVersion": 1,
+  "id": "d1de7e2d-9f00-4ec4-9ad5-4600b548bad0",
+  "slug": "ladda-ner-och-installera-wintak-hTsXUKMaCS",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Ladda ner och installera WinTAK",
+  "breadcrumb": [
+    "Platforms",
+    "WinTAK",
+    "STARTA OCH ANSLUT",
+    "Ladda ner och installera WinTAK"
+  ],
+  "createdAt": "2026-06-18T19:32:28.113Z",
+  "updatedAt": "2026-06-18T20:23:15.004Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/download-install-wintak-qfu2aB0W9u",
+    "fi": "/fi/guides/tak-guide/lataa-ja-asenna-wintak-Xx7Wycg9gb",
+    "sv": "/sv/guides/tak-guide/ladda-ner-och-installera-wintak-hTsXUKMaCS"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Allt du behöver för att installera WinTAK finns på Deploy Apps <strong>TAK</strong>-sida — WinTAK-installationsprogrammet och ditt personliga Client Package. Ladda ner båda och kör sedan installationsprogrammet.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Öppna Deploy Apps TAK-sida",
+          "layout": "text",
+          "html": "<p>Öppna Deploy App och gå till <strong>TAK</strong>-sidan.</p>\n<ul>\n<li>Den ger WinTAK-användare två nedladdningar: WinTAK-applikationen och ditt Client Package.</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "Ladda ner WinTAK",
+          "layout": "text",
+          "html": "<p>Ladda ner WinTAK-applikationen från <strong>Försvarsmaktens anvisade plats</strong> — länken finns på TAK-sidan.</p>\n<p>Viktigt: ladda endast ner Windows-applikationer från den anvisade platsen.</p>",
+          "images": []
+        },
+        {
+          "title": "Ladda ner ditt Client Package",
+          "layout": "text",
+          "html": "<p>Tryck på den gröna knappen <strong>Download your Client Package</strong> (även på startsidan) och spara <code>.zip</code>-filen. Du pekar WinTAK mot detta paket efter installationen.</p>",
+          "images": []
+        },
+        {
+          "title": "Packa upp paketet och hitta installationsprogrammet",
+          "layout": "image-bottom",
+          "html": "<p>Hitta den nedladdade WinTAK <code>.zip</code>-filen, packa upp den och leta reda på <code>.msi</code>-installationsprogrammet i zip-filens <strong>Products</strong>-mapp. Dubbelklicka på <code>.msi</code>-filen för att öppna installationsprogrammet.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/a837f7266418b504.webp",
+              "width": 356,
+              "height": 32
+            }
+          ]
+        },
+        {
+          "title": "Kör installationsguiden",
+          "layout": "image-bottom",
+          "html": "<p>Installera WinTAK med installationsguiden. Tryck på <strong>Next</strong> och välj sedan installationsmappen.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/dd306d17588aaf12.webp",
+              "width": 428,
+              "height": 340
+            }
+          ]
+        },
+        {
+          "title": "Välj installationsmapp",
+          "layout": "image-bottom",
+          "html": "<p>Ändra mappen vid behov med <strong>Browse</strong> och tryck sedan på <strong>Next</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/2b1f95692aab5d36.webp",
+              "width": 428,
+              "height": 340
+            }
+          ]
+        },
+        {
+          "title": "Välj komponenter — inkludera Data Sync",
+          "layout": "image-bottom",
+          "html": "<p>Välj komponenterna som ska installeras. Välj <strong>åtminstone</strong>:</p>\n<ul>\n<li><strong>Data Sync</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/c87276ce4ad45cd0.webp",
+              "width": 428,
+              "height": 340
+            }
+          ]
+        },
+        {
+          "title": "Installera",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på <strong>Next</strong>. När guiden är redo trycker du på <strong>Install</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/b825f25aa95d2406.webp",
+              "width": 428,
+              "height": 340
+            }
+          ]
+        },
+        {
+          "title": "Slutför",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på <strong>Next</strong> för att slutföra. WinTAK är nu installerat — öppna det härnäst och importera ditt Client Package.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/88a7bedf95dacbcc.webp",
+              "width": 428,
+              "height": 338
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

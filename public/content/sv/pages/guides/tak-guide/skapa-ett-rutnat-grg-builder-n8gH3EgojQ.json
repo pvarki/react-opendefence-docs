@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 1,
+  "id": "abe3d4c7-43d5-47bb-82cc-f1c56ed466fb",
+  "slug": "skapa-ett-rutnat-grg-builder-n8gH3EgojQ",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Skapa ett rutnät (GRG Builder)",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "TILLÄGG SOM STÖDS",
+    "GRG-byggare",
+    "Skapa ett rutnät (GRG Builder)"
+  ],
+  "createdAt": "2026-06-18T19:31:25.836Z",
+  "updatedAt": "2026-06-18T20:22:26.166Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/create-a-grid-grg-builder-RD3vtzu9yS",
+    "fi": "/fi/guides/tak-guide/luo-ruudukko-grg-builder-z0VfhByVKA",
+    "sv": "/sv/guides/tak-guide/skapa-ett-rutnat-grg-builder-n8gH3EgojQ"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Bygg en rutnätsindelad kartgrafik (GRG) över ett kartområde så att alla kan benämna rutorna med samma bokstav/siffra.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Öppna GRG Builder och starta ett rutnät",
+          "layout": "image-bottom",
+          "html": "<p>Öppna ikonen <strong>GRG Builder</strong> från menyn <strong>Additional Tools</strong>. Verktygsfältet visas i åtgärdsfältet. Panorera och zooma till ditt område och välj sedan ikonen <strong>Grid</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/fb2bbc9f1f7981c0.webp",
+              "width": 345,
+              "height": 57
+            }
+          ]
+        },
+        {
+          "title": "Ställ in avstånd och färg, placera sedan rutnätet",
+          "layout": "image-bottom",
+          "html": "<p>I fönstret <strong>Select Grid Spacing and Color</strong> väljer du avstånd, färg, storlek och datum, och väljer sedan <strong>Done</strong> för att släppa rutnätet.</p>\n<ul>\n<li>Tryck länge på hårkorset i mitten för att flytta det; en kort tryckning öppnar en radialmeny med <strong>Enter Coordinate</strong>, <strong>MGRS Location</strong> eller <strong>Delete</strong>.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/fb2bbc9f1f7981c0.webp",
+              "width": 345,
+              "height": 57
+            }
+          ]
+        },
+        {
+          "title": "Lägg till markörer i rutnätet",
+          "layout": "image-bottom",
+          "html": "<p>Välj ikonen <strong>Label</strong> för att släppa markörer på rutnätet. Skjut markörpaletten åt höger och vänster för fler markörval.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/87c3458b29b69b19.webp",
+              "width": 350,
+              "height": 59
+            }
+          ]
+        },
+        {
+          "title": "Exportera GRG",
+          "layout": "image-bottom",
+          "html": "<p>När rutnätet ser rätt ut väljer du ikonen <strong>Export</strong> för att bearbeta bilden till en GRG-fil (KMZ).</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/aa79c89744a65f37.webp",
+              "width": 349,
+              "height": 62
+            }
+          ]
+        },
+        {
+          "title": "Redigera GRG-fångsten",
+          "layout": "image-bottom",
+          "html": "<p>Redigeringsskärmen <strong>GRG Capture</strong> öppnas.</p>\n<ul>\n<li>Bocka för en funktions kryssruta för att ta bort den; tryck på själva rutan för att redigera den.</li>\n<li>Dra infrutan eller punktlistan för att flytta dem på fångsten.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/d3c379fd34f9f723.webp",
+              "width": 783,
+              "height": 464
+            }
+          ]
+        },
+        {
+          "title": "Justera rutnätet i Edit Grid",
+          "layout": "image-bottom",
+          "html": "<p>Välj <strong>Edit Grid</strong> för att ställa in <strong>Label Style</strong> (MGRS, Letter/Number eller Both), rutnätets färg och avstånd.</p>\n<ul>\n<li>Slå <strong>Show Labels</strong> på eller av, och <strong>Additional Labels</strong> för att dela upp exporten i flera bildfiler eller en flersidig PDF.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/02f0b5d4ea0f57fc.webp",
+              "width": 624,
+              "height": 355
+            }
+          ]
+        },
+        {
+          "title": "Redigera punktetiketterna",
+          "layout": "image-bottom",
+          "html": "<p>Välj <strong>Point List</strong> för att öppna <strong>Edit Point List</strong>.</p>\n<ul>\n<li>Ställ in <strong>Text Color</strong> och <strong>Text Align</strong> (<strong>Left</strong>, <strong>Center</strong>, <strong>Right</strong>), och tryck på en punkt i listan för att visa eller dölja den på fångsten.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/70d90848f969b8b6.webp",
+              "width": 624,
+              "height": 455
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

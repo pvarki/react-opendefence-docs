@@ -12,8 +12,13 @@
     "Overview"
   ],
   "createdAt": "2025-12-05T22:06:21.752Z",
-  "updatedAt": "2026-06-16T12:20:28.018Z",
+  "updatedAt": "2026-06-18T20:16:34.560Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/overview-CVNzKhRcKY",
+    "fi": "/fi/guides/tak-guide/yleiskatsaus-dSxmQoNuM0",
+    "sv": "/sv/guides/tak-guide/oversikt-RdC8FOmUJv"
+  },
   "blocks": [
     {
       "type": "html",

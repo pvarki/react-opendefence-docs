@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 1,
+  "id": "ca5fc0ae-010d-4670-94fb-b4fb51ec806d",
+  "slug": "konfigurera-element-mobil-tagios-tagandroid-dPrhAGHVpH",
+  "collection": "guides/matrix-guide",
+  "locale": "sv",
+  "title": "Konfigurera Element (mobil)",
+  "breadcrumb": [
+    "Anslut till servern",
+    "Konfigurera Element (mobil)"
+  ],
+  "createdAt": "2026-06-18T20:33:57.308Z",
+  "updatedAt": "2026-06-18T20:37:52.382Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/matrix-guide/set-up-element-mobile-tagios-tagandroid-QacQsNprmb",
+    "fi": "/fi/guides/matrix-guide/ota-element-kayttoon-mobiili-tagios-tagandroid-GKkxWww3O0",
+    "sv": "/sv/guides/matrix-guide/konfigurera-element-mobil-tagios-tagandroid-dPrhAGHVpH"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Installera Element på din telefon och anslut den till din enhets Matrix-hemserver. Den här guiden använder Element Classic, men stegen är likartade i nästan alla Matrix-applikationer. Tar ungefär fem minuter.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Välkommen till Matrix",
+          "layout": "image-bottom",
+          "html": "<p>Den här guiden använder applikationen Element Classic, men du kan använda nästan vilken Matrix-applikation som helst — stegen är likartade även på andra håll.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/5239bfbb830a52b8.webp",
+              "width": 1918,
+              "height": 1113
+            }
+          ]
+        },
+        {
+          "title": "Förutsättningar",
+          "layout": "image-bottom",
+          "html": "<p>Kopiera hemserverns adress (1). Du kan när som helst återvända till den här guiden från det nedre högra hörnet (2).</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/fce8ba119e6c9bf8.webp",
+              "width": 6013,
+              "height": 3525
+            }
+          ]
+        },
+        {
+          "title": "Logga in på Element Classic",
+          "layout": "image-bottom",
+          "html": "<p>Öppna Element och välj <strong>Sign in</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/d3d387ad950f47e2.webp",
+              "width": 2880,
+              "height": 1820
+            }
+          ]
+        },
+        {
+          "title": "Redigera hemservern",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på <strong>Edit</strong> bredvid hemserverns adress.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/e149492ede84d08b.webp",
+              "width": 2880,
+              "height": 1820
+            }
+          ]
+        },
+        {
+          "title": "Klistra in serveradressen",
+          "layout": "image-bottom",
+          "html": "<p>Klistra in serveradressen du kopierade tidigare och tryck sedan på <strong>Next</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/71fb6f7a4d40f83a.webp",
+              "width": 2880,
+              "height": 1820
+            }
+          ]
+        },
+        {
+          "title": "Autentisera med Keycloak",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på <strong>Continue with Keycloak</strong>. Fortsätt i din webbläsare, som bör be om ditt mTLS-certifikat — autentisera med ditt mTLS-certifikat.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/8f1288ca414bd9ba.webp",
+              "width": 2880,
+              "height": 1820
+            }
+          ]
+        },
+        {
+          "title": "Element Classics startvy",
+          "layout": "image-bottom",
+          "html": "<p>Du är nu inloggad och kan använda Matrix. Sök efter användare och rum från det övre högra hörnet (1) och starta en konversation från det nedre högra hörnet (2).</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/d324ea41bfd3cea3.webp",
+              "width": 2880,
+              "height": 1820
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

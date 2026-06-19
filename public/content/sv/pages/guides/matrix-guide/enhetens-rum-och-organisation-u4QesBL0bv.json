@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 1,
+  "id": "5df89415-7db8-43f9-896c-b60fb5f24c49",
+  "slug": "enhetens-rum-och-organisation-u4QesBL0bv",
+  "collection": "guides/matrix-guide",
+  "locale": "sv",
+  "title": "Enhetens rum och organisation",
+  "breadcrumb": [
+    "Användning i enheten",
+    "Enhetens rum och organisation"
+  ],
+  "createdAt": "2026-06-18T20:34:24.898Z",
+  "updatedAt": "2026-06-18T20:37:57.686Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/matrix-guide/unit-rooms-organisation-krWteO9e37",
+    "fi": "/fi/guides/matrix-guide/yksikon-huoneet-ja-organisointi-9VvNjfff1H",
+    "sv": "/sv/guides/matrix-guide/enhetens-rum-och-organisation-u4QesBL0bv"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Matrix fungerar väl som din enhets primära meddelandeverktyg. Detta är ett rekommenderat sätt att strukturera dina rum — behandla varje rum som en radiokanal.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Enkelt primärt meddelandeverktyg",
+          "layout": "image-bottom",
+          "html": "<p>Matrix uppfyller alla behov av meddelanden och videosamtal väl. Alla medlemmar på den här servern är automatiskt medlemmar i serverns Space, så du kan börja kommunicera med ditt team omedelbart.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/00bbdf3e264749e7.webp",
+              "width": 2306,
+              "height": 1444
+            }
+          ]
+        },
+        {
+          "title": "En bra rumsstruktur",
+          "layout": "image-bottom",
+          "html": "<p>Utöver de automatiskt skapade rummen rekommenderar vi att du skapar följande rum och bjuder in lämpliga medlemmar. Grundtanken är att tänka på rum som radiokanaler.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/008ce475a318f511.webp",
+              "width": 2312,
+              "height": 1442
+            }
+          ]
+        },
+        {
+          "title": "Kommandorum",
+          "layout": "image-bottom",
+          "html": "<p>Bjud in dina gruppledare till <strong>Command</strong>-kanalen. Den fungerar som en radioledningskanal — för order och kvitteringar av dem. Den kan också användas för genomgångar via videokonferens.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/af4773fccb6ca2b8.webp",
+              "width": 2302,
+              "height": 1446
+            }
+          ]
+        },
+        {
+          "title": "Rum för egen lägesbild",
+          "layout": "image-bottom",
+          "html": "<p>Bjud in åtminstone dina gruppledare och ställföreträdare till rummet <strong>Friendly situation</strong>. Använd det för att kommunicera genomförandet av ditt uppdrag — var egna styrkor rör sig och hur uppdragets utförande fortskrider.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/6a7d2f2720dc26b1.webp",
+              "width": 2314,
+              "height": 1452
+            }
+          ]
+        },
+        {
+          "title": "Spaningsrum",
+          "layout": "image-bottom",
+          "html": "<p>Bjud in åtminstone dina gruppledare och ställföreträdare till rummet <strong>Recon</strong>. Använd det för att kommunicera spaning och fiendeobservationer.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/0e6f89ecfb767dfc.webp",
+              "width": 2303,
+              "height": 1449
+            }
+          ]
+        },
+        {
+          "title": "Vaktrum",
+          "layout": "image-bottom",
+          "html": "<p>Skapa rummet <strong>Guard</strong> så att vem som helst fritt kan gå med från Space. Aktörer som påbörjar vakt- eller patrulluppgifter går med under sin uppgift, vilket ger kommandoplatsen en direkt förbindelse till dem.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/f79376cb94ddaeb2.webp",
+              "width": 2314,
+              "height": 1438
+            }
+          ]
+        },
+        {
+          "title": "Andra rumsrekommendationer",
+          "layout": "text",
+          "html": "<p>Andra rekommenderade rum är ett <strong>Call for Fires</strong>-rum och ett <strong>Fires Management</strong>-rum för eldledning och eldsamordning.</p>",
+          "images": []
+        },
+        {
+          "title": "Användarhantering",
+          "layout": "text",
+          "html": "<p>En användare som anges som administratör i Deploy App får automatiskt administratörsrättigheter till Space och dess rum och läggs till i admin-rummet. En användare som tas bort från Deploy App förlorar åtkomsten till Matrix.</p>",
+          "images": []
+        },
+        {
+          "title": "Samarbete med andra Matrix-servrar",
+          "layout": "text",
+          "html": "<p>Som standard kan du bjuda in användare från andra Matrix-servrar till dina rum. Detta möjliggör samarbete med andra team som använder Deploy App, eller med Nato-allierade som också använder Matrix — till exempel via applikationen NI2CE.</p>",
+          "images": []
+        }
+      ]
+    }
+  ]
+}

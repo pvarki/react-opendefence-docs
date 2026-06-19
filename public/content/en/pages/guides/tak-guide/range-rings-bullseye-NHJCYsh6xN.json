@@ -13,8 +13,13 @@
     "Range Rings & Bullseye"
   ],
   "createdAt": "2026-06-15T19:41:29.958Z",
-  "updatedAt": "2026-06-15T20:53:51.011Z",
+  "updatedAt": "2026-06-18T20:20:43.349Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/range-rings-bullseye-NHJCYsh6xN",
+    "fi": "/fi/guides/tak-guide/etaisyysrenkaat-ja-bullseye-VVnbPZDiAy",
+    "sv": "/sv/guides/tak-guide/avstandsringar-och-bullseye-UbZpRppvDe"
+  },
   "blocks": [
     {
       "type": "html",
@@ -63,7 +68,7 @@
         {
           "title": "Adjust the bullseye",
           "layout": "image-bottom",
-          "html": "<p>Tap the bullseye centre for its radial. Use <strong>Range Rings</strong> to add rings, <strong>Angle Bearing Units</strong> to switch units, and <strong>Fine Adjust</strong> to nudge the centre.</p>",
+          "html": "<p>Tap the bullseye centre for its radial.</p>\n<ul>\n<li>Use <strong>Range Rings</strong> to add rings, <strong>Angle Bearing Units</strong> to switch units, and <strong>Fine Adjust</strong> to nudge the centre.</li>\n</ul>",
           "images": [
             {
               "src": "/content/images/en/attachments/8cf64fccd6867c20.webp",

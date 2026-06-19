@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "id": "b01710e5-4725-4ecc-a74d-97751622efce",
+  "slug": "kanban-tavlor-qoIqgWi2fK",
+  "collection": "guides/cryptpad-guide",
+  "locale": "sv",
+  "title": "Kanban-tavlor",
+  "breadcrumb": [
+    "Grundfunktioner",
+    "Kanban-tavlor"
+  ],
+  "createdAt": "2026-06-18T20:34:38.979Z",
+  "updatedAt": "2026-06-18T20:38:04.918Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/cryptpad-guide/kanban-boards-U2wuelSn6Z",
+    "fi": "/fi/guides/cryptpad-guide/kanban-taulut-zFIxk6Fqwa",
+    "sv": "/sv/guides/cryptpad-guide/kanban-tavlor-qoIqgWi2fK"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>CryptPads Kanban-app är som en tavla med klisterlappar. Ordna uppgifter efter slutförandestadium eller upprätthåll en lägestavla för din enhet.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Skapa en Kanban-tavla",
+          "layout": "image-bottom",
+          "html": "<p>Klicka på <strong>+</strong> och välj <strong>Kanban</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/a2efd8a3607bc944.webp",
+              "width": 1356,
+              "height": 1170
+            }
+          ]
+        },
+        {
+          "title": "Redigera tavlan",
+          "layout": "image-bottom",
+          "html": "<p>Skapa kolumner för arbetsflödets stadier och lägg till kort för uppgifter. Här visas en exempeltavla för uppföljning av slutförda uppgifter.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/b8949f211da2411e.webp",
+              "width": 1972,
+              "height": 791
+            }
+          ]
+        },
+        {
+          "title": "Hantera uppgiftskort",
+          "layout": "image-bottom",
+          "html": "<p>Klicka på ett kort för att lägga till detaljer. Du kan även lägga till bilder på korten. Dra och släpp kort mellan kolumner för att uppdatera deras status.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/16b9fe15c2fbec04.webp",
+              "width": 1978,
+              "height": 1026
+            }
+          ]
+        },
+        {
+          "title": "Lägestavla",
+          "layout": "image-bottom",
+          "html": "<p>Kanban-appen kan även användas som en lägestavla. Följ enheternas uppdragsförlopp, uppgifter och fiendeläget i kort och dela din lägesbild med ledningscentralen.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/c5fbd98a6a588076.webp",
+              "width": 1805,
+              "height": 1148
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

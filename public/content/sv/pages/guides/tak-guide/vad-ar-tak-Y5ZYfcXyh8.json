@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 1,
+  "id": "96b3978d-590d-4cbd-9292-7ccf91a4365f",
+  "slug": "vad-ar-tak-Y5ZYfcXyh8",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Vad är TAK?",
+  "breadcrumb": [
+    "Platforms",
+    "Vad är TAK?"
+  ],
+  "createdAt": "2026-06-18T19:25:08.945Z",
+  "updatedAt": "2026-06-18T20:12:57.064Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/what-is-tak-Vy8mUPLS87",
+    "fi": "/fi/guides/tak-guide/mika-on-tak-u19DIbyqfY",
+    "sv": "/sv/guides/tak-guide/vad-ar-tak-Y5ZYfcXyh8"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Vad är TAK?",
+          "layout": "image-left",
+          "html": "<ul>\n<li>TAK är det situationsmedvetenhetsekosystem som USA:s försvarsdepartement föredrar.</li>\n<li>ATAK for Android är huvudklienten, men det finns klienter för alla plattformar, som iOS och Windows.</li>\n<li>Eftersom TAK till sina huvuddelar är öppen källkod kan vi i hög grad utnyttja det suveränt.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/4354584791162239.webp",
+              "width": 400,
+              "height": 400
+            }
+          ]
+        },
+        {
+          "title": "Introduktion: vad du kan göra med TAK",
+          "layout": "image-left",
+          "html": "<ul>\n<li>TAK är ett oerhört kapabelt verktyg.</li>\n<li>Till största delen begränsas dina fördelar av TAK av användarens skicklighet att arbeta med det.</li>\n<li>OpenDefence-guiden försöker hjälpa dig en aning med detta.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/e0c950f756a2ca75.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Spårning av egna styrkor (Blue-force Tracking)",
+          "layout": "image-left",
+          "html": "<p>Med TAK kan du göra spårning av egna styrkor (Blue-force Tracking) direkt vid leverans.</p>\n<ul>\n<li>Detta innebär att du ser var du är och var dina lagkamrater är på kartan.</li>\n<li>Detta gör det möjligt för ledare att fatta bättre beslut med korrekt realtidsinformation.</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "Placera och dela ut markörer",
+          "layout": "image-left",
+          "html": "<p>TAK låter dig placera och hantera markörer för att bygga upp en lägesbild på kartan.</p>\n<ul>\n<li>Placera markörer på kartan (fiender, egna styrkor, övrigt: sjukhus, försörjningspunkter osv.)</li>\n<li>Skicka markörerna till användare och grupper.</li>\n<li>OpenDefences standardmodell som beskrivs senare erbjuder ett enkelt sätt att säkerställa att din enhet använder markörfunktionen effektivt.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/b53d51659a4fc177.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Data Sync",
+          "layout": "image-left",
+          "html": "<p>TAK låter dig synkronisera data från din TAK Server utan manuellt arbete.</p>\n<ul>\n<li>Synkronisera chatt, kartmarkörer och filer mellan användare och server.</li>\n<li>Data visas även i offline-läge, ändringar kan göras och uppdateras automatiskt när du är online.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/6b7e8960e01ec760.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "Planering",
+          "layout": "image-left",
+          "html": "<p>TAK låter dig rita och dela ut georefererade planer för dina trupper.</p>\n<ul>\n<li>Planer för t.ex. enhetsplaceringar, förflyttningar samt ansvars- och operationsområden.</li>\n<li>Planer kan förberedas i förväg och delas ut till användare vid behov.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/e5b817603ea67a6e.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Chattfunktioner",
+          "layout": "image-left",
+          "html": "<p>TAK innehåller grundläggande chattfunktioner direkt vid leverans.</p>\n<ul>\n<li>Skicka meddelanden till andra användare och grupper via TAK.</li>\n<li>Skicka text, bilder, filer och datapaket.</li>\n<li>Använd TAK Geochat om din enhet inte använder mer avancerade verktyg som Matrix.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/ab2f24ffaf33f0da.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Du behöver en server",
+          "layout": "image-left",
+          "html": "<ul>\n<li>För att få dessa fördelar av TAK behöver du en server. Deploy Apps TAK ger dig en med toppmodern enkel åtkomst.</li>\n<li>TAK-klientappar som är anslutna till servern skickar automatiskt sin position till servern.</li>\n<li>Med serveråtkomst kan du enkelt dela och ta emot data, såsom situationsmedvetenhetsprodukter som din CP skapar i form av TAK Feeds.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/777836b658dd16dd.webp",
+              "width": 1488,
+              "height": 1068
+            }
+          ]
+        },
+        {
+          "title": "Deploy App automatiserar serverhanteringen",
+          "layout": "image-left",
+          "html": "<p>Med Deploy App behöver du aldrig konfigurera din TAK Server manuellt.</p>\n<ul>\n<li>En Deploy App-instans startar en medföljande server av officiell typ, en TAK Server.</li>\n<li>Du och dina soldater kommer åt den med två tryck från Deploy App.\nVi anser att soldater ska agera, inte mixtra med servrar. Deploy App tar bort manuell konfiguration med ett mycket säkert utförande.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/2eb1508d89ef7f24.webp",
+              "width": 1080,
+              "height": 2340
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

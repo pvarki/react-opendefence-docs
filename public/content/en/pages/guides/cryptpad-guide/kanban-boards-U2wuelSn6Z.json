@@ -10,8 +10,13 @@
     "Kanban boards"
   ],
   "createdAt": "2026-06-15T14:07:55.466Z",
-  "updatedAt": "2026-06-15T17:52:44.963Z",
+  "updatedAt": "2026-06-18T20:38:03.882Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/cryptpad-guide/kanban-boards-U2wuelSn6Z",
+    "fi": "/fi/guides/cryptpad-guide/kanban-taulut-zFIxk6Fqwa",
+    "sv": "/sv/guides/cryptpad-guide/kanban-tavlor-qoIqgWi2fK"
+  },
   "blocks": [
     {
       "type": "html",

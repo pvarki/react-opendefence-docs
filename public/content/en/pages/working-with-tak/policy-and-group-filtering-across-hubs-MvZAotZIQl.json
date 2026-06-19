@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "bdab2509-9294-44c3-ab86-3513a3fe9fbd",
+  "slug": "policy-and-group-filtering-across-hubs-MvZAotZIQl",
+  "collection": "working-with-tak",
+  "locale": "en",
+  "title": "Policy and group filtering across hubs",
+  "breadcrumb": [
+    "Wire up two Federation Hubs (IaC)",
+    "Policy and group filtering across hubs"
+  ],
+  "createdAt": "2026-06-17T20:25:59.785Z",
+  "updatedAt": "2026-06-19T14:18:55.106Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "The policy additions, per hub",
+      "id": "the-policy-additions-per-hub"
+    },
+    {
+      "depth": 2,
+      "text": "Filtering happens at each hop",
+      "id": "filtering-happens-at-each-hop"
+    },
+    {
+      "depth": 2,
+      "text": "One taxonomy across both domains",
+      "id": "one-taxonomy-across-both-domains"
+    },
+    {
+      "depth": 2,
+      "text": "Releasability across the boundary",
+      "id": "releasability-across-the-boundary"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>The inter-hub link, like every federation link, is governed by policy edges with group filtering. The boundary between two hub domains is where you enforce \"share the common picture, keep everything else local.\"</p>\n<h2 id=\"the-policy-additions-per-hub\"><a href=\"#the-policy-additions-per-hub\">The policy additions, per hub</a></h2>\n<p>Beyond each hub's existing intra-domain policy, add:</p>\n<ul>\n<li>A CA Group node for the peer hub, identified by the peer hub's CA (the one you cross-trusted in <a href=\"/en/working-with-tak/hub-to-hub-trust-and-connection-VIV7jDwrDx\">trust and connection</a>).</li>\n<li>The Outgoing node to the peer hub, on the initiating side, port 9102.</li>\n<li>Edges between the peer-hub CA group and this hub's local CA groups, with group filtering set to Allowed Groups <code>SHARED_COP</code>. Direction is data flow; add both directions if the picture should be mutual.</li>\n</ul>\n<p>On HUB A:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span>  [TAK-A1]┐                      ┌─ Outgoing → HUB B:9102</span></span>\n<span class=\"line\"><span>  [TAK-A2]┼─(local, full)─ … ────┤</span></span>\n<span class=\"line\"><span>  [TAK-A3]┘                      └─[CA Group: HUB B] ──Allowed Groups: SHARED_COP──▶</span></span></code></pre>",
+      "lang": "plaintext"
+    },
+    {
+      "type": "html",
+      "html": "<p>with the mirror on HUB B. Now <code>SHARED_COP</code> data reaches across, and each domain's <code>*_LOCAL</code> groups never leave their hub.</p>\n<h2 id=\"filtering-happens-at-each-hop\"><a href=\"#filtering-happens-at-each-hop\">Filtering happens at each hop</a></h2>\n<p>Data crossing two hubs is filtered twice, once leaving HUB A and once entering HUB B, so both policies must allow <code>SHARED_COP</code> on the inter-hub edge. That is useful: either hub can stop sharing by tightening its own edge, without touching the other.</p>\n<blockquote>\n<p>As in the single-hub guide, filtering beyond Allow All needs the source to run group mapping, which is true on Deploy App (<code>x509groups=\"true\"</code>). The hub denies any peer not in the active policy, so apply the policy (templated file or bootstrap apply-job) on both hubs before they try to connect.</p>\n</blockquote>\n<h2 id=\"one-taxonomy-across-both-domains\"><a href=\"#one-taxonomy-across-both-domains\">One taxonomy across both domains</a></h2>\n<p>The shared group only matches if its name is identical everywhere, so the <a href=\"/en/working-with-tak/keycloak-groups-as-code-KGceqCKPVN\">group taxonomy</a> (<code>tak_SHARED_COP</code> → <code>SHARED_COP</code>) must be provisioned into every deployment's Keycloak in both hub domains. With one shared group module in your IaC, that is the same standardization you already do per hub, applied across all the domains.</p>\n<h2 id=\"releasability-across-the-boundary\"><a href=\"#releasability-across-the-boundary\">Releasability across the boundary</a></h2>\n<p>The inter-hub edge is the natural place to enforce need-to-know between domains:</p>\n<ul>\n<li>Allowed Groups: only the explicitly shared groups cross (the default posture).</li>\n<li>Disallowed Groups: additionally guarantee a sensitive group never crosses, even if someone widens an allowed list later.</li>\n</ul>\n<p>Keep the inter-hub edge narrow (one or a few shared groups) and widen it deliberately.</p>\n<p>→ Next: <a href=\"/en/working-with-tak/bring-up-and-verification-4g1mSzoPjs\">Bring-up and verification</a>.</p>"
+    }
+  ]
+}

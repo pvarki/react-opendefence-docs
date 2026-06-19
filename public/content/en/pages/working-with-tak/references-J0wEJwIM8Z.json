@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "id": "f7af3295-c9b1-4745-afef-28227f66acc1",
+  "slug": "references-J0wEJwIM8Z",
+  "collection": "working-with-tak",
+  "locale": "en",
+  "title": "References",
+  "breadcrumb": [
+    "Integrating to TAK Server",
+    "References"
+  ],
+  "createdAt": "2026-06-17T18:21:48.944Z",
+  "updatedAt": "2026-06-17T18:40:24.583Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "TAK Server API",
+      "id": "tak-server-api"
+    },
+    {
+      "depth": 2,
+      "text": "Deploy App (OpenDefence / pvarki)",
+      "id": "deploy-app-opendefence--pvarki"
+    },
+    {
+      "depth": 2,
+      "text": "Key concepts referenced",
+      "id": "key-concepts-referenced"
+    },
+    {
+      "depth": 2,
+      "text": "Scope & sourcing",
+      "id": "scope--sourcing"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<h2 id=\"tak-server-api\"><a href=\"#tak-server-api\">TAK Server API</a></h2>\n<ul>\n<li><strong>TAK Server API spec (Redoc, versioned)</strong> — the authoritative reference: <a href=\"https://docs.tak.gov/api/takserver\" target=\"_blank\" rel=\"noopener noreferrer\">https://docs.tak.gov/api/takserver</a>\n<ul>\n<li>Raw OpenAPI per version: <code>https://docs.tak.gov/api/takserver/&#x3C;version>/openapispec.json</code> (this guide tracks <strong>5.6-RELEASE-14</strong>).</li>\n<li>Public; ~300 operations under <code>/Marti/api/…</code>.</li>\n</ul>\n</li>\n<li><strong>TAK Server source</strong> (U.S. Government / TAK Product Center): <a href=\"https://github.com/TAK-Product-Center/Server\" target=\"_blank\" rel=\"noopener noreferrer\">https://github.com/TAK-Product-Center/Server</a></li>\n<li><strong>TAK Server Configuration Guide</strong> (official; civilian) — the authoritative reference for ports, certificate/TLS security, group assignment (input / auth-message / x509 client-cert), authentication backends (File / LDAP), OAuth2, federation, and device profiles. The facts on ports, the <code>__ANON__</code> default group, the CN→username→group mapping, and the <code>:8446/oauth/token</code> endpoint in this guide come from it.</li>\n</ul>\n<h2 id=\"deploy-app-opendefence--pvarki\"><a href=\"#deploy-app-opendefence--pvarki\">Deploy App (OpenDefence / pvarki)</a></h2>\n<ul>\n<li><strong>Deploy App Core API (RASENMAEHER)</strong> — the enrollment/cert/token API used here. Its OpenAPI ships in this repo at <code>public/api-specs/rasenmaeher/</code> and is served in the site's embedded API reference. Source: <code>pvarki/python-rasenmaeher-api</code>.\n<ul>\n<li>Key surfaces: <code>/api/v1/enrollment/*</code>, <code>/api/v1/product/sign_csr</code> (+ <code>/renew_csr</code>, <code>/revoke/mtls</code>), <code>/api/v1/token/jwt/*</code>, <code>/api/v1/firstuser/*</code>, <code>/api/v1/check-auth/*</code>. Auth schemes: <code>JWTBearer</code>, <code>MTLSHeader</code>, <code>MTLSorJWT</code>, <code>ValidUser</code>.</li>\n</ul>\n</li>\n<li><strong>Related Deploy App docs</strong> (this site): <em>What is Deploy App</em>, <em>Architecture orientation</em>, the <em>Develop Deploy App</em> and <em>Build an Integration</em> books.</li>\n<li><strong>TAK wiki pages</strong> (this site) — operator/admin view of the server-side concepts this guide integrates with: <strong>Takserver Groups</strong>, <strong>Keycloak – Group Management</strong>, <strong>Mission Manager (Data Sync)</strong> (Mission Manager UI at <code>:8443/Marti/MissionManager.html</code>; <code>defaultRole</code> / Groups), <strong>Takserver RECON feed</strong>, <strong>Device Profiles</strong>, and <strong>Update Server (OTA)</strong>.</li>\n</ul>\n<h2 id=\"key-concepts-referenced\"><a href=\"#key-concepts-referenced\">Key concepts referenced</a></h2>\n<ul>\n<li><strong>Cursor-on-Target (CoT)</strong> — the TAK event format (see the ATAK plugin guide's <a href=\"/en/working-with-tak/cot-in-depth-listening-sending-custom-details-nTudtLfqX9\">CoT in depth</a>).</li>\n<li><strong>mTLS</strong> — mutual-TLS client-certificate authentication.</li>\n<li><strong>OIDC / Keycloak</strong> — OpenID Connect identity, consumed by TAK Server's OAuth API.</li>\n</ul>\n<h2 id=\"scope--sourcing\"><a href=\"#scope--sourcing\">Scope &#x26; sourcing</a></h2>\n<p>This guide points to the <strong>public</strong> TAK Server API spec and describes the <strong>civilian</strong> integration surface, combined with OpenDefence's own Deploy App Core API and docs. No TAK-MIL / restricted material is reproduced. Endpoint names are a map to the specs — the specs are authoritative for exact request/response shapes, and both TAK Server and the Deploy App API are versioned, so confirm against the version you target.</p>"
+    }
+  ]
+}

@@ -12,8 +12,13 @@
     "TAK Tracker Already Installed"
   ],
   "createdAt": "2026-02-21T08:38:28.017Z",
-  "updatedAt": "2026-06-16T17:04:58.486Z",
+  "updatedAt": "2026-06-18T20:26:34.155Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/tak-tracker-already-installed-DoVQOAKWVB",
+    "fi": "/fi/guides/tak-guide/tak-tracker-on-jo-asennettu-kdeS68J3Ln",
+    "sv": "/sv/guides/tak-guide/tak-tracker-redan-installerad-hDp4E0FkY6"
+  },
   "blocks": [
     {
       "type": "slideset",

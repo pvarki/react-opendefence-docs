@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 1,
+  "id": "3a4c0280-7d00-4729-bcfb-6ce0c9283e2a",
+  "slug": "mika-on-tak-u19DIbyqfY",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Mikä on TAK?",
+  "breadcrumb": [
+    "Platforms",
+    "Mikä on TAK?"
+  ],
+  "createdAt": "2026-06-18T19:25:08.555Z",
+  "updatedAt": "2026-06-18T20:12:56.627Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/what-is-tak-Vy8mUPLS87",
+    "fi": "/fi/guides/tak-guide/mika-on-tak-u19DIbyqfY",
+    "sv": "/sv/guides/tak-guide/vad-ar-tak-Y5ZYfcXyh8"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Mikä on TAK?",
+          "layout": "image-left",
+          "html": "<ul>\n<li>TAK on Yhdysvaltain puolustusministeriön suosima tilannekuvan ekosysteemi.</li>\n<li>ATAK for Android on pääasiallinen sovellus, mutta saatavilla on sovelluksia kaikille alustoille, kuten iOS ja Windows.</li>\n<li>Koska TAK on pääosiltaan avointa lähdekoodia, voimme hyödyntää sitä suuressa määrin omavaraisesti.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/4354584791162239.webp",
+              "width": 400,
+              "height": 400
+            }
+          ]
+        },
+        {
+          "title": "Johdanto: mitä TAKilla voi tehdä",
+          "layout": "image-left",
+          "html": "<ul>\n<li>TAK on valtavan kyvykäs työkalu.</li>\n<li>Suurimmaksi osaksi TAKista saatavia hyötyjä rajoittaa käyttäjän taito työskennellä sen kanssa.</li>\n<li>OpenDefence-opas pyrkii auttamaan sinua tässä hieman.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/e0c950f756a2ca75.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Omien joukkojen seuranta (Blue-force Tracking)",
+          "layout": "image-left",
+          "html": "<p>TAKilla voit tehdä omien joukkojen seurantaa (Blue-force Tracking) heti käyttöönotosta.</p>\n<ul>\n<li>Tämä tarkoittaa sitä, että näet kartalla missä itse olet ja missä joukkuetoverisi ovat.</li>\n<li>Tämä mahdollistaa johtajille parempien päätösten tekemisen ajantasaisen tiedon avulla.</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "Karttamerkkien asettaminen ja jakaminen",
+          "layout": "image-left",
+          "html": "<p>TAK antaa sinun asettaa ja hallita karttamerkkejä, joilla rakennat tilannekuvaa kartalle.</p>\n<ul>\n<li>Aseta karttamerkkejä kartalle (viholliset, omat joukot, muut: sairaalat, huoltopisteet jne.)</li>\n<li>Lähetä karttamerkit käyttäjille ja ryhmille.</li>\n<li>Myöhemmin ohjeistettu OpenDefencen vakiomalli tarjoaa yksinkertaisen tavan varmistaa, että yksikkösi käyttää karttamerkkitoimintoa tehokkaasti.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/b53d51659a4fc177.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Data Sync",
+          "layout": "image-left",
+          "html": "<p>TAK antaa sinun synkronoida tietoja TAK Serveriltä ilman manuaalista työtä.</p>\n<ul>\n<li>Synkronoi keskustelut, karttamerkit ja tiedostot käyttäjien ja palvelimen välillä.</li>\n<li>Tiedot näytetään myös offline-tilassa, muutoksia voidaan tehdä ja ne päivittyvät automaattisesti, kun yhteys palaa.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/6b7e8960e01ec760.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "Suunnittelu",
+          "layout": "image-left",
+          "html": "<p>TAK antaa sinun piirtää ja jakaa georeferoituja suunnitelmia joukoillesi.</p>\n<ul>\n<li>Suunnitelmia esim. yksiköiden sijoittelusta, liikkeistä sekä vastuu- ja toiminta-alueista.</li>\n<li>Suunnitelmat voidaan valmistella etukäteen ja jakaa käyttäjille tarvittaessa.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/e5b817603ea67a6e.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Keskusteluominaisuudet",
+          "layout": "image-left",
+          "html": "<p>TAK sisältää perustason keskusteluominaisuudet heti käyttöönotosta.</p>\n<ul>\n<li>Viesti muille käyttäjille ja ryhmille TAKin kautta.</li>\n<li>Lähetä tekstiä, kuvia, tiedostoja ja datapaketteja.</li>\n<li>Käytä TAK Geochatia, jos yksikkösi ei käytä edistyneempiä työkaluja kuten Matrix.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/ab2f24ffaf33f0da.webp",
+              "width": 2340,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "Tarvitset palvelimen",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Saadaksesi nämä hyödyt TAKista tarvitset palvelimen. Deploy Appin TAK tarjoaa sinulle sellaisen huippuluokan helpolla käytöllä.</li>\n<li>Palvelimeen yhdistetyt TAK-sovellukset lähettävät sijaintinsa automaattisesti palvelimelle.</li>\n<li>Palvelinyhteyden avulla voit helposti jakaa ja vastaanottaa tietoja, kuten komentopaikkasi tuottamia tilannekuvatuotteita TAK Feedeinä.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/777836b658dd16dd.webp",
+              "width": 1488,
+              "height": 1068
+            }
+          ]
+        },
+        {
+          "title": "Deploy App automatisoi palvelimen hallinnan",
+          "layout": "image-left",
+          "html": "<p>Deploy Appin avulla sinun ei koskaan tarvitse määrittää TAK Serveriäsi manuaalisesti.</p>\n<ul>\n<li>Deploy App -instanssi käynnistää mukana toimitetun virallisluonteisen TAK Serverin.</li>\n<li>Sinä ja taistelijasi pääsette siihen kahdella napautuksella Deploy Appista.\nUskomme, että sotilaiden tulisi toimia, ei säätää palvelimia. Deploy App poistaa manuaalisen määrityksen erittäin turvallisella toteutuksella.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/2eb1508d89ef7f24.webp",
+              "width": 1080,
+              "height": 2340
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -12,8 +12,13 @@
     "Point Dropper - Quick Pic"
   ],
   "createdAt": "2026-01-24T17:45:22.298Z",
-  "updatedAt": "2026-06-16T10:13:07.442Z",
+  "updatedAt": "2026-06-18T20:13:52.174Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/point-dropper-quick-pic-gxAsonzSXL",
+    "fi": "/fi/guides/tak-guide/point-dropper-quick-pic-dnyOSYWlOg",
+    "sv": "/sv/guides/tak-guide/point-dropper-quick-pic-sTBDsrUhIs"
+  },
   "blocks": [
     {
       "type": "slideset",

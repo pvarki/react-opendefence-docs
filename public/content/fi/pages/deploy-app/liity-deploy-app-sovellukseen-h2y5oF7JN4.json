@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "40d58df4-c74a-41ab-86c8-f770f2161996",
+  "slug": "liity-deploy-app-sovellukseen-h2y5oF7JN4",
+  "collection": "deploy-app",
+  "locale": "fi",
+  "title": "Liity Deploy App -sovellukseen",
+  "breadcrumb": [
+    "Platforms",
+    "Windows",
+    "Käyttäjäohjeet",
+    "Liity Deploy App -sovellukseen"
+  ],
+  "createdAt": "2026-06-18T20:35:46.726Z",
+  "updatedAt": "2026-06-18T20:39:11.159Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/deploy-app/join-a-deploy-app-Ns73TcVodz",
+    "fi": "/fi/deploy-app/liity-deploy-app-sovellukseen-h2y5oF7JN4",
+    "sv": "/sv/deploy-app/anslut-till-en-deploy-app-LSYhrD19yJ"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<ul>\n<li>Vastaanota kutsulinkki tai skannaa QR-koodi\n<ul>\n<li>Syötä kutsutunnus (Callsign)\n<ul>\n<li>Avaa Callsign.pfx-tiedosto ja tuo se\n<ul>\n<li>Yhdistä Deploy App -sovellukseen varmenteella\n<ul>\n<li>Käytä sovelluksia</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>"
+    }
+  ]
+}

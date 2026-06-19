@@ -8,13 +8,18 @@
   "breadcrumb": [
     "Platforms",
     "ATAK",
-    "Supported Plugins",
+    "SUPPORTED PLUGINS",
     "GRG Builder",
     "Annotate & Style a Grid"
   ],
   "createdAt": "2026-06-15T19:51:40.057Z",
-  "updatedAt": "2026-06-15T19:51:40.057Z",
+  "updatedAt": "2026-06-18T20:22:28.006Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/annotate-style-a-grid-xSjKDtDtsj",
+    "fi": "/fi/guides/tak-guide/merkitse-ja-muotoile-ruudukko-fA3HwgfjjV",
+    "sv": "/sv/guides/tak-guide/mark-och-formatera-ett-rutnat-YcEKrvC397"
+  },
   "blocks": [
     {
       "type": "html",
@@ -27,7 +32,7 @@
         {
           "title": "Open the GRG edit screen",
           "layout": "image-bottom",
-          "html": "<p>After processing, the <strong>GRG Capture</strong> edit screen opens. The check boxes on the right turn each feature on or off; tapping a feature's name opens its editor. Drag the info box or point list to reposition them.</p>",
+          "html": "<p>After processing, the <strong>GRG Capture</strong> edit screen opens.</p>\n<ul>\n<li>The check boxes on the right turn each feature on or off; tapping a feature's name opens its editor.</li>\n<li>Drag the info box or point list to reposition them.</li>\n</ul>",
           "images": [
             {
               "src": "/content/images/en/attachments/d3c379fd34f9f723.webp",
@@ -39,7 +44,7 @@
         {
           "title": "Restyle the grid",
           "layout": "image-bottom",
-          "html": "<p>Tap <strong>Edit Grid</strong> to set <strong>Label Style</strong> (<strong>MGRS</strong>, <strong>Letter/Number</strong> or <strong>Both</strong>), grid <strong>Color</strong> and <strong>Spacing</strong>. Toggle <strong>Show Labels</strong> and <strong>Additional Labels</strong> for multi-page exports.</p>",
+          "html": "<p>Tap <strong>Edit Grid</strong> to set <strong>Label Style</strong> (<strong>MGRS</strong>, <strong>Letter/Number</strong> or <strong>Both</strong>), grid <strong>Color</strong> and <strong>Spacing</strong>.</p>\n<ul>\n<li>Toggle <strong>Show Labels</strong> and <strong>Additional Labels</strong> for multi-page exports.</li>\n</ul>",
           "images": [
             {
               "src": "/content/images/en/attachments/02f0b5d4ea0f57fc.webp",
@@ -51,7 +56,7 @@
         {
           "title": "Manage the point list",
           "layout": "image-bottom",
-          "html": "<p>Tap <strong>Point List</strong> to set <strong>Text Color</strong> and <strong>Text Align</strong>. Use the eye icon on each point to show or hide it on the capture; the radio buttons move the list's position.</p>",
+          "html": "<p>Tap <strong>Point List</strong> to set <strong>Text Color</strong> and <strong>Text Align</strong>.</p>\n<ul>\n<li>Use the eye icon on each point to show or hide it on the capture; the radio buttons move the list's position.</li>\n</ul>",
           "images": [
             {
               "src": "/content/images/en/attachments/70d90848f969b8b6.webp",
@@ -75,7 +80,7 @@
         {
           "title": "Edit the info box",
           "layout": "image-bottom",
-          "html": "<p>Tap <strong>Info Box</strong> to set <strong>Title</strong>, <strong>Location</strong>, <strong>Date</strong> and <strong>Classification</strong>, plus <strong>Style</strong> (<strong>Box</strong> or <strong>Banner</strong>) and <strong>Text Align</strong>. Each entry's text color can be set on the right.</p>",
+          "html": "<p>Tap <strong>Info Box</strong> to set <strong>Title</strong>, <strong>Location</strong>, <strong>Date</strong> and <strong>Classification</strong>, plus <strong>Style</strong> (<strong>Box</strong> or <strong>Banner</strong>) and <strong>Text Align</strong>.</p>\n<ul>\n<li>Each entry's text color can be set on the right.</li>\n</ul>",
           "images": [
             {
               "src": "/content/images/en/attachments/de881fa11c8fe32a.webp",
@@ -87,7 +92,7 @@
         {
           "title": "Add a compass",
           "layout": "image-bottom",
-          "html": "<p>Tick the <strong>Compass</strong> box to show it, then tap <strong>Compass</strong> to pick <strong>Style</strong> (<strong>True + Mag</strong> or <strong>Full</strong>) and <strong>Color</strong>. Use <strong>Left</strong> or <strong>Right</strong> to set its side of the grid.</p>",
+          "html": "<p>Tick the <strong>Compass</strong> box to show it, then tap <strong>Compass</strong> to pick <strong>Style</strong> (<strong>True + Mag</strong> or <strong>Full</strong>) and <strong>Color</strong>.</p>\n<ul>\n<li>Use <strong>Left</strong> or <strong>Right</strong> to set its side of the grid.</li>\n</ul>",
           "images": [
             {
               "src": "/content/images/en/attachments/1e7cdfaa0ed505cc.webp",

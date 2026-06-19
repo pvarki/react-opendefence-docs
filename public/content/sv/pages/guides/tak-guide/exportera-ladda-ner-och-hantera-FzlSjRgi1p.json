@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "cbb744b8-c4a9-4cb1-89d5-ffbb7571093d",
+  "slug": "exportera-ladda-ner-och-hantera-FzlSjRgi1p",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Exportera, ladda ner och hantera",
+  "breadcrumb": [
+    "Platforms",
+    "WinTAK",
+    "Plugin-program som stöds",
+    "TAK Replay",
+    "Exportera, ladda ner och hantera"
+  ],
+  "createdAt": "2026-06-18T19:34:30.808Z",
+  "updatedAt": "2026-06-18T20:24:46.625Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/export-download-manage-0NPPYBJSNP",
+    "fi": "/fi/guides/tak-guide/vie-lataa-ja-hallitse-FEIam7G2GU",
+    "sv": "/sv/guides/tak-guide/exportera-ladda-ner-och-hantera-FzlSjRgi1p"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Inspelade spår kan exporteras, hämtas från en TAK-server och hanteras från inspelningsmappen.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Exportera spår",
+          "layout": "image-bottom",
+          "html": "<p>Exportera en inspelnings spår av flyttade markörer som <strong>GPX</strong>, <strong>KML</strong> eller <strong>KMZ</strong> till <strong>Documents > WinTAK > Export</strong>. Alla markörtyper stöds utom Vehicle Outlines och Vehicle Models. Ett återimporterat spår visas på kartan, och dess markör följer spåret under uppspelning.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/feb224de8f57550b.webp",
+              "width": 336,
+              "height": 196
+            }
+          ]
+        },
+        {
+          "title": "Ladda ner händelser från en TAK-server",
+          "layout": "image-bottom",
+          "html": "<p>Skapa en inspelning från tidigare serverhändelser (inom ett 24-timmarsfönster). Definiera en kartregion, välj ett <strong>Start</strong>- och <strong>End</strong>-datum/tid (förvalt är ett tvåtimmarsblock som slutar nu), välj <strong>Server</strong> om fler än en är ansluten, och tryck sedan <strong>Download</strong> och <strong>OK</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/4d6a449c80919394.webp",
+              "width": 207,
+              "height": 287
+            }
+          ]
+        },
+        {
+          "title": "Hantera inspelningar och inställningar",
+          "layout": "image-bottom",
+          "html": "<p>Inspelningar (.cpr) lagras under <strong>AppData > Roaming > WinTAK > Databases > TakReplay</strong>; använd <strong>Open Recordings Folder</strong> för att visa dem — du kan också släppa .cpr-filer direkt i mappen.</p>\n<ul>\n<li>I <strong>Settings / Preferences</strong> ställer du in <strong>Auto Record</strong> (spela in vid start), <strong>Pan to Map Events</strong> och <strong>Recordings Directory</strong>.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/08e997c3ea2e456e.webp",
+              "width": 356,
+              "height": 279
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

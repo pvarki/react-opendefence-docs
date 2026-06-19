@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "ec1ce3f8-2ce9-4840-b015-f6685afffd72",
+  "slug": "how-atak-plugins-work-GtuYZlJSnX",
+  "collection": "working-with-tak",
+  "locale": "en",
+  "title": "How ATAK plugins work",
+  "breadcrumb": [
+    "ATAK Plugin Development",
+    "How ATAK plugins work"
+  ],
+  "createdAt": "2026-06-16T22:49:05.208Z",
+  "updatedAt": "2026-06-16T22:49:08.755Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "A plugin is a separate APK",
+      "id": "a-plugin-is-a-separate-apk"
+    },
+    {
+      "depth": 2,
+      "text": "How ATAK discovers a plugin",
+      "id": "how-atak-discovers-a-plugin"
+    },
+    {
+      "depth": 2,
+      "text": "The four building blocks",
+      "id": "the-four-building-blocks"
+    },
+    {
+      "depth": 2,
+      "text": "The one rule that trips everyone up: two Contexts",
+      "id": "the-one-rule-that-trips-everyone-up-two-contexts"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Before writing any code, it helps to understand what an ATAK plugin actually is and how ATAK finds and runs it. The model is small — once it clicks, the rest of the guide is just detail.</p>\n<h2 id=\"a-plugin-is-a-separate-apk\"><a href=\"#a-plugin-is-a-separate-apk\">A plugin is a separate APK</a></h2>\n<p>An ATAK plugin is <strong>its own Android application (APK)</strong>, built and signed separately from ATAK, and installed alongside it on the device. It is <em>not</em> compiled into ATAK. At runtime ATAK discovers installed plugin APKs, loads their code into its own process, and calls into them.</p>\n<p>Because the plugin runs <em>inside</em> ATAK's process, it gets direct access to ATAK's APIs — the map, CoT messaging, overlays, preferences, and so on. The trade-off is that this internal API can change between ATAK versions, so a plugin is built against a specific ATAK API version (more on that in <a href=\"/en/working-with-tak/build-install-run-fWfgBZRkux\">Build, install &#x26; run</a>).</p>\n<h2 id=\"how-atak-discovers-a-plugin\"><a href=\"#how-atak-discovers-a-plugin\">How ATAK discovers a plugin</a></h2>\n<p>Two things make an installed APK visible to ATAK as a plugin:</p>\n<ol>\n<li>\n<p><strong>A discovery entry in</strong> <code>**AndroidManifest.xml**</code><strong>.</strong> The plugin declares an activity for the well-known action <code>com.atakmap.app.component</code>, which is how ATAK enumerates installed plugins:</p>\n<pre><code class=\"language-xml\">&#x3C;!-- allow for plugin discovery -->\n&#x3C;activity android:name=\"com.atakmap.app.component\"\n    tools:ignore=\"MissingClass\">\n    &#x3C;intent-filter android:label=\"@string/app_name\">\n        &#x3C;action android:name=\"com.atakmap.app.component\" />\n    &#x3C;/intent-filter>\n&#x3C;/activity>\n</code></pre>\n</li>\n<li>\n<p><strong>An API-version marker</strong>, also in the manifest, that tells ATAK which API this plugin was built for:</p>\n<pre><code class=\"language-xml\">&#x3C;meta-data android:name=\"plugin-api\" android:value=\"${atakApiVersion}\"/>\n</code></pre>\n<p><code>${atakApiVersion}</code> is filled in at build time by the Gradle product flavor you build (e.g. <code>com.atakmap.app@5.6.0.CIV</code>). ATAK refuses to load a plugin whose API marker doesn't match the running app — this is the compatibility gate.</p>\n</li>\n</ol>\n<h2 id=\"the-four-building-blocks\"><a href=\"#the-four-building-blocks\">The four building blocks</a></h2>\n<p>Every plugin is assembled from the same handful of classes. The <a href=\"/en/working-with-tak/references-attribution-n8JEv3i895\">official <code>helloworld</code> example</a> defines exactly four small \"plumbing\" classes; everything else is your own feature code.</p>\n<table>\n<thead>\n<tr>\n<th>Block</th>\n<th>Base class</th>\n<th>Role</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Plugin (Lifecycle)</strong></td>\n<td><code>AbstractPlugin</code> (implements <code>gov.tak.api.plugin.IPlugin</code>)</td>\n<td>Entry point. ATAK's service controller constructs it; <strong>it wires in your Tool and MapComponent(s)</strong>.</td>\n</tr>\n<tr>\n<td><strong>MapComponent</strong></td>\n<td><code>DropDownMapComponent</code></td>\n<td>The unit of functionality. Registers receivers, hooks map/CoT events, cleans up.</td>\n</tr>\n<tr>\n<td><strong>Tool</strong></td>\n<td><code>AbstractPluginTool</code></td>\n<td>The toolbar/nav button the user taps to open your plugin.</td>\n</tr>\n<tr>\n<td><strong>DropDown receiver</strong></td>\n<td><code>DropDownReceiver</code></td>\n<td>Your UI panel that slides in, plus the actions that drive it.</td>\n</tr>\n</tbody>\n</table>\n<p>These are bound to ATAK through a small <code>**assets/plugin.xml**</code> file. In ATAK 5.x it declares a <strong>single</strong> extension — your plugin entry point, of type <code>gov.tak.api.plugin.IPlugin</code>:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#ABB2BF\">&#x3C;</span><span style=\"color:#E06C75\">plugin</span><span style=\"color:#ABB2BF\">></span></span>\n<span class=\"line\"><span style=\"color:#ABB2BF\">    &#x3C;</span><span style=\"color:#E06C75\">extension</span></span>\n<span class=\"line\"><span style=\"color:#D19A66\">        type</span><span style=\"color:#ABB2BF\">=</span><span style=\"color:#98C379\">\"gov.tak.api.plugin.IPlugin\"</span></span>\n<span class=\"line\"><span style=\"color:#D19A66\">        impl</span><span style=\"color:#ABB2BF\">=</span><span style=\"color:#98C379\">\"com.atakmap.android.helloworld.plugin.HelloWorldLifecycle\"</span></span>\n<span class=\"line\"><span style=\"color:#D19A66\">        singleton</span><span style=\"color:#ABB2BF\">=</span><span style=\"color:#98C379\">\"true\"</span><span style=\"color:#ABB2BF\"> /></span></span>\n<span class=\"line\"><span style=\"color:#ABB2BF\">&#x3C;/</span><span style=\"color:#E06C75\">plugin</span><span style=\"color:#ABB2BF\">></span></span></code></pre>",
+      "lang": "xml"
+    },
+    {
+      "type": "html",
+      "html": "<p>That one class (an <code>AbstractPlugin</code>) constructs and registers your <strong>Tool</strong> (the button) and your <strong>MapComponent(s)</strong> in code — so unlike older ATAK, the Tool is <em>not</em> declared separately in <code>plugin.xml</code>. We build it in <a href=\"/en/working-with-tak/the-plugin-lifecycle-0Jf1BJ7g7O\">The plugin lifecycle</a> and the UI in <a href=\"/en/working-with-tak/build-a-ui-the-dropdown-panel-kaH71FJeG8\">Build a UI</a>.</p>\n<blockquote>\n<p><strong>Changed in ATAK 5.x.</strong> ATAK 4.x used the <code>transapps</code> framework and declared <em>two</em> <code>plugin.xml</code> extensions — a <code>transapps.maps.plugin.lifecycle.Lifecycle</code> and a <code>transapps.maps.plugin.tool.ToolDescriptor</code>. ATAK 5.x replaces both with the single <code>gov.tak.api.plugin.IPlugin</code> entry point shown above. If you're reading an older tutorial or a 4.x plugin, that's the key difference to translate.</p>\n</blockquote>\n<h2 id=\"the-one-rule-that-trips-everyone-up-two-contexts\"><a href=\"#the-one-rule-that-trips-everyone-up-two-contexts\">The one rule that trips everyone up: two Contexts</a></h2>\n<p>A plugin lives in two worlds at once, so <strong>two different</strong> <code>**android.content.Context**</code> <strong>objects are in play</strong>, and they are not interchangeable:</p>\n<ul>\n<li><strong>The plugin context</strong> resolves resources (layouts, drawables, strings) from <em>your plugin's</em> APK.</li>\n<li><strong>The MapView context</strong> is ATAK's own UI context, used for anything that touches the screen — <code>AlertDialog</code>, <code>Toast</code>, etc.</li>\n</ul>\n<blockquote>\n<p>⚠️ <strong>Using the plugin context to construct an</strong> <code>**AlertDialog**</code> <strong>will throw a runtime error.</strong> Inflate <em>your</em> layouts and load <em>your</em> resources with the plugin context; show dialogs and toasts with the MapView context (<code>getMapView().getContext()</code>).</p>\n</blockquote>\n<p>Keep this distinction in mind from the start — it is the single most common source of crashes in new plugins, and it's called out explicitly in the example plugin's own README.</p>\n<p>→ Next: <a href=\"/en/working-with-tak/set-up-your-development-environment-NfbAKB4XTl\">Set up your development environment</a>.</p>"
+    }
+  ]
+}

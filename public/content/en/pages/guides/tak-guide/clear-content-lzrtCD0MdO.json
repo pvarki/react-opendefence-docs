@@ -12,8 +12,13 @@
     "Clear Content"
   ],
   "createdAt": "2026-01-24T12:18:25.164Z",
-  "updatedAt": "2026-06-15T19:39:13.557Z",
+  "updatedAt": "2026-06-18T20:13:55.096Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/clear-content-lzrtCD0MdO",
+    "fi": "/fi/guides/tak-guide/sisallon-tyhjentaminen-RTDgPCCE8y",
+    "sv": "/sv/guides/tak-guide/rensa-innehall-q4qalpFEan"
+  },
   "blocks": [
     {
       "type": "slideset",

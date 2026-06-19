@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "c83fe0a4-2e45-4982-b283-342507774102",
+  "slug": "hantera-hojddatakallor-NcbELJNAnv",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Hantera höjddatakällor",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "YTTERLIGARE FUNKTIONER",
+    "Höjd, terräng och kartverktyg",
+    "Hantera höjddatakällor"
+  ],
+  "createdAt": "2026-06-18T19:29:25.301Z",
+  "updatedAt": "2026-06-18T20:21:28.784Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/manage-elevation-sources-1DMW21VzzP",
+    "fi": "/fi/guides/tak-guide/hallitse-korkeusdatan-lahteita-5PT2yLQKk5",
+    "sv": "/sv/guides/tak-guide/hantera-hojddatakallor-NcbELJNAnv"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Få exakta terränghöjder för 3D och siktlinjer genom att strömma och växla höjddata på din enhet.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Välj hur höjddata laddas",
+          "layout": "image-bottom",
+          "html": "<p>Gå till <strong>Settings</strong> > <strong>Tool Preferences</strong> > <strong>Specific Tool Preferences</strong> > <strong>Elevation Overlays Preferences</strong>. Som standard strömmar ATAK data (DTED, SRTM) vid behov; avmarkera <strong>Stream Elevation Data</strong> för att i stället tvinga fram fullständiga nedladdningar.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/0deb95b6245dbcbc.webp",
+              "width": 332,
+              "height": 398
+            }
+          ]
+        },
+        {
+          "title": "Kontrollera täckningen i Overlay Manager",
+          "layout": "image-bottom",
+          "html": "<p>Öppna <strong>Overlay Manager</strong> och markera kryssrutan för konturen på lagret <strong>DTED</strong>. De gula rutnäten på kartan visar exakt var DTED0-data redan har laddats ned.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/1e3b3ae178532c26.webp",
+              "width": 400,
+              "height": 226
+            }
+          ]
+        },
+        {
+          "title": "Växla och prioritera källor",
+          "layout": "image-bottom",
+          "html": "<p><strong>Elevation Manager</strong> listar dina källor (DTED, <strong>TAK Terrain</strong>, <strong>TAK Bathy</strong>).</p>\n<ul>\n<li>Ändra ordning på ett lager med pilknapparna för att ställa in prioritet (det översta vinner) och använd synlighetsknapparna för att slå på eller av varje källa.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/02917e1c8b4769b6.webp",
+              "width": 470,
+              "height": 679
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

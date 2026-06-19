@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "id": "1914bdb1-b1d8-47e5-8438-623d4ad37f14",
+  "slug": "dokument-oIwKFvuvn3",
+  "collection": "guides/cryptpad-guide",
+  "locale": "sv",
+  "title": "Dokument",
+  "breadcrumb": [
+    "Grundfunktioner",
+    "Dokument"
+  ],
+  "createdAt": "2026-06-18T20:34:36.907Z",
+  "updatedAt": "2026-06-18T20:38:03.362Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/cryptpad-guide/documents-1QGExPEBr9",
+    "fi": "/fi/guides/cryptpad-guide/dokumentit-vYaxLgXJyf",
+    "sv": "/sv/guides/cryptpad-guide/dokument-oIwKFvuvn3"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>CryptPad har stöd för att skapa och redigera Rich Text-dokument i realtid, direkt i din webbläsare. Så här skapar du ett dokument, samarbetar kring det och diskuterar det.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Skapa ett dokument",
+          "layout": "image-bottom",
+          "html": "<p>Klicka på <strong>+</strong> i instrumentpanelen och välj <strong>Rich Text</strong>. Ett nytt krypterat dokument skapas.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/cd7134912cd62e80.webp",
+              "width": 1830,
+              "height": 1140
+            }
+          ]
+        },
+        {
+          "title": "Samarbete i realtid",
+          "layout": "image-bottom",
+          "html": "<p>Skriv ett dokument samtidigt med andra — alla ser ändringarna när de sker.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/f4b4d7d1028d66b6.webp",
+              "width": 1815,
+              "height": 1143
+            }
+          ]
+        },
+        {
+          "title": "Diskutera dokumentet",
+          "layout": "image-bottom",
+          "html": "<p>Du kan också diskutera dokumentet direkt i dokumentets redigeringsvy.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/c32f00bcd15e726a.webp",
+              "width": 1821,
+              "height": 1135
+            }
+          ]
+        },
+        {
+          "title": "Andra filformat",
+          "layout": "text",
+          "html": "<p>CryptPad har inte stöd för redigering i realtid i webbläsaren av format som <code>.docx</code>, men du kan dela sådana filer på CryptDrive och redigera dem lokalt.</p>",
+          "images": []
+        }
+      ]
+    }
+  ]
+}

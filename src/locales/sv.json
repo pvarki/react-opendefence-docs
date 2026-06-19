@@ -133,6 +133,14 @@
   "advancedFooter": {
     "lead": "Dessa wikier ger avancerad information om produkter i syfte att fördjupa din förståelse för dem och deras kapacitet. De utvecklas av våra seniora experter i communityn."
   },
+  "agentNote": {
+    "label": "Jag är agentvänlig.",
+    "lead": "Rikta din AI-agent mot den här webbplatsen och be om hjälp — till exempel:",
+    "link": "Agenter börjar på /llms.txt",
+    "exampleHome": "Vad är Deploy App och hur kommer jag igång?",
+    "exampleGuides": "Hur ansluter jag ATAK till min Deploy App-server?",
+    "exampleDev": "Hur bygger och distribuerar jag en OpenDefence-integration?"
+  },
   "contents": {
     "siteTitle": "Webbplatsens innehåll",
     "guidesTitle": "Tillgängliga guider"

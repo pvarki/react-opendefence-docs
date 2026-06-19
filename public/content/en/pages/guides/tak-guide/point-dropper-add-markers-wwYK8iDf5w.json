@@ -8,13 +8,17 @@
   "breadcrumb": [
     "Platforms",
     "WinTAK",
-    "USING WINTAK FEATURES",
-    "Basic Features",
+    "BASIC CORE FEATURES",
     "Point Dropper - add markers"
   ],
   "createdAt": "2025-12-05T22:05:59.482Z",
-  "updatedAt": "2026-06-15T13:52:40.858Z",
+  "updatedAt": "2026-06-18T20:23:37.906Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/point-dropper-add-markers-wwYK8iDf5w",
+    "fi": "/fi/guides/tak-guide/point-dropper-lisaa-merkintoja-oCa76CxmxW",
+    "sv": "/sv/guides/tak-guide/point-dropper-lagg-till-markorer-scEnZfp72C"
+  },
   "blocks": [
     {
       "type": "slideset",

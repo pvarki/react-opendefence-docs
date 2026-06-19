@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "811ea809-6373-461e-a9bd-bc3e3c4d9f0d",
+  "slug": "the-marti-api-the-spec-zWa3vFfeKt",
+  "collection": "working-with-tak",
+  "locale": "en",
+  "title": "The Marti API (the spec)",
+  "breadcrumb": [
+    "Integrating to TAK Server",
+    "The Marti API (the spec)"
+  ],
+  "createdAt": "2026-06-17T18:21:46.539Z",
+  "updatedAt": "2026-06-17T18:33:30.384Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "How the spec is published",
+      "id": "how-the-spec-is-published"
+    },
+    {
+      "depth": 2,
+      "text": "Base URL & how to call it",
+      "id": "base-url--how-to-call-it"
+    },
+    {
+      "depth": 2,
+      "text": "Reading the spec efficiently",
+      "id": "reading-the-spec-efficiently"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>The authoritative reference for everything in this guide is the official TAK Server API spec. <strong>Bookmark it:</strong></p>\n<blockquote>\n<p><strong><a href=\"https://docs.tak.gov/api/takserver\" target=\"_blank\" rel=\"noopener noreferrer\">https://docs.tak.gov/api/takserver</a></strong></p>\n</blockquote>\n<h2 id=\"how-the-spec-is-published\"><a href=\"#how-the-spec-is-published\">How the spec is published</a></h2>\n<ul>\n<li>\n<p>It's rendered with <strong>Redoc</strong> and is <strong>versioned</strong> — a dropdown at the top selects the TAK Server build (this guide tracks <strong>5.6-RELEASE-14</strong>). Pick the version that matches the server you integrate with; endpoints and fields change between versions.</p>\n</li>\n<li>\n<p>The raw OpenAPI document for a version is fetchable directly — useful for codegen or tooling:</p>\n<pre><code>https://docs.tak.gov/api/takserver/&#x3C;version>/openapispec.json\n# e.g. https://docs.tak.gov/api/takserver/5.6-RELEASE-14/openapispec.json\n</code></pre>\n</li>\n<li>\n<p>The spec is <strong>public</strong> (no login needed) and describes ~300 operations, all under <code>/Marti/api/…</code>.</p>\n</li>\n</ul>\n<h2 id=\"base-url--how-to-call-it\"><a href=\"#base-url--how-to-call-it\">Base URL &#x26; how to call it</a></h2>\n<ul>\n<li>Every path is rooted at <code>**/Marti/api/…**</code> on your TAK Server host. The spec's default <code>https://127.0.0.1:17655</code> is just the local admin example; on a real deployment you call the server's <strong>certificate-auth HTTPS port</strong>. On a Deploy App / PVARKI deployment that is <strong>port</strong> <code>**8443**</code>, e.g. <code>https://&#x3C;server>:8443/Marti/api/…</code> — and the same host:port serves the <strong>Mission Manager</strong> admin UI at <code>https://&#x3C;server>:8443/Marti/MissionManager.html</code>.</li>\n<li><strong>Auth is at the transport layer.</strong> Most operations don't show an API key/bearer in the spec because access is granted by your <strong>mTLS client certificate</strong> (and, where configured, an <strong>OAuth/OIDC</strong> token). Present your client cert on every request — see <a href=\"/en/working-with-tak/enrolling-getting-a-client-certificate-vze3g7Eshz\">Enrolling &#x26; getting a client certificate</a>.</li>\n<li>Responses are JSON; many list endpoints return a <code>{ \"version\", \"type\", \"data\": […] }</code> envelope typical of Marti.</li>\n</ul>\n<h2 id=\"reading-the-spec-efficiently\"><a href=\"#reading-the-spec-efficiently\">Reading the spec efficiently</a></h2>\n<p>Group the endpoints by what you're trying to do:</p>\n<ul>\n<li><strong>Move data with a team</strong> → the <strong>Missions / Data Sync</strong> endpoints (<code>/Marti/api/missions/…</code>). Start here for most integrations.</li>\n<li><strong>Store/fetch files &#x26; data packages</strong> → <strong>Enterprise Sync</strong> (<code>/Marti/api/sync/…</code>, <code>/Marti/api/files/…</code>), addressed by content hash.</li>\n<li><strong>Live CoT</strong> → <strong>Subscriptions</strong> (<code>/Marti/api/subscriptions/…</code>) plus the streaming port for the actual event flow.</li>\n<li><strong>Who sees what</strong> → <strong>Groups</strong> (<code>/Marti/api/groups/…</code>).</li>\n<li><strong>Wire in external sources/sinks</strong> → <strong>Inputs</strong>, <strong>Data Feeds</strong>, <strong>Outgoing connections</strong>.</li>\n</ul>\n<p>The next two pages walk the common read and write paths; both defer to the spec for the exact request/response shapes and query parameters.</p>\n<p>→ Next: <a href=\"/en/working-with-tak/getting-data-from-tak-server-hszJWvv9UM\">Getting data from TAK Server</a>.</p>"
+    }
+  ]
+}

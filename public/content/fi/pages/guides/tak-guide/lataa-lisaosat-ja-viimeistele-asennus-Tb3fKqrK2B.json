@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 1,
+  "id": "666ff535-0b6e-489c-98d2-9481fa57bd9b",
+  "slug": "lataa-lisaosat-ja-viimeistele-asennus-Tb3fKqrK2B",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Lataa lisäosat ja viimeistele asennus",
+  "breadcrumb": [
+    "Platforms",
+    "WinTAK",
+    "ALOITA JA YHDISTÄ",
+    "Lataa lisäosat ja viimeistele asennus"
+  ],
+  "createdAt": "2026-06-18T19:32:29.440Z",
+  "updatedAt": "2026-06-18T20:23:29.698Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/load-plugins-finish-setup-xa2huv9Wmn",
+    "fi": "/fi/guides/tak-guide/lataa-lisaosat-ja-viimeistele-asennus-Tb3fKqrK2B",
+    "sv": "/sv/guides/tak-guide/ladda-tillagg-och-slutfor-installationen-q0zNv80GFR"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Viimeistele laitteen ohjattu asennus ottamalla käyttöön Data Sync -lisäosa ja korkeustiedot, tarkista sitten asetukset ja määritä mittayksiköt.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Asenna Data Sync -lisäosa",
+          "layout": "image-bottom",
+          "html": "<p>Sovellus kysyy, asennetaanko lisäosia. Valitse <strong>DataSync</strong> ja paina <strong>OK</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/029f11bf3e10f495.webp",
+              "width": 428,
+              "height": 168
+            }
+          ]
+        },
+        {
+          "title": "Lataa korkeustiedot (DTED-0)",
+          "layout": "image-bottom",
+          "html": "<p>WinTAK kysyy seuraavaksi, ladataanko DTED-0-korkeusmallit automaattisesti. Valitse <strong>Yes</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/88039349514be5fe.webp",
+              "width": 428,
+              "height": 194
+            }
+          ]
+        },
+        {
+          "title": "Tarkista My Preferences",
+          "layout": "image-bottom",
+          "html": "<p>Perusasetukset on tehty — tarkista <strong>My Preferences</strong>. <strong>Callsign</strong>, ryhmän väri (<strong>My Team</strong>) ja rooli (<strong>My Role</strong>) tulee vastata sinulle määritettyjä, ja <strong>My Display Type</strong> -asetuksen tulee olla <strong>Ground</strong>.</p>\n<p>Jos olet komentopaikan käyttäjä, roolisi tulee olla <strong>HQ</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/3e80491a5937ce95.webp",
+              "width": 408,
+              "height": 428
+            }
+          ]
+        },
+        {
+          "title": "Tarkista TAK Network Status",
+          "layout": "image-bottom",
+          "html": "<p>Tarkista <strong>TAK Network Status</strong>: vihreä pilvi tarkoittaa, että palvelinyhteys on kunnossa, punainen tarkoittaa katkennutta yhteyttä. Jos se pysyy punaisena, tarkista internetyhteytesi ja käynnistä WinTAK uudelleen (katso Vianmääritys).</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/047e001151462738.webp",
+              "width": 228,
+              "height": 48
+            }
+          ]
+        },
+        {
+          "title": "Avaa yksikköasetukset",
+          "layout": "image-bottom",
+          "html": "<p>Määritä nyt mittayksiköt. Paina <strong>hampurilaisvalikkoa</strong> (kolme päällekkäistä viivaa) vasemmassa yläkulmassa ja valitse sitten <strong>Settings</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/505604de49718539.webp",
+              "width": 162,
+              "height": 428
+            }
+          ]
+        },
+        {
+          "title": "Avaa Display Preferences",
+          "layout": "image-bottom",
+          "html": "<p>Valitse <strong>Display Preferences</strong> ja avaa sitten <strong>Unit Display Format Preferences</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/8caa66e01ac7ab6d.webp",
+              "width": 426,
+              "height": 428
+            }
+          ]
+        },
+        {
+          "title": "Aseta yksikkömuoto",
+          "layout": "image-bottom",
+          "html": "<p>Tarkista, että yksikköasetukset vastaavat kuvaa, ja muuta niitä tarvittaessa.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/8b7b8a374e2bf818.webp",
+              "width": 428,
+              "height": 156
+            }
+          ]
+        },
+        {
+          "title": "WinTAK on valmis",
+          "layout": "image-bottom",
+          "html": "<p>WinTAK on nyt asennettu. Vakiomallin mukainen käyttöohje löytyy kohdasta <strong>Usage by Role</strong> — ja tämän Deploy Appin etusivun valikosta kohdasta <strong>Usage</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/7004acd42562d400.webp",
+              "width": 338,
+              "height": 682
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

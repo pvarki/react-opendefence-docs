@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "dd47faf7-c825-4ae9-b7dc-dab819ddfb79",
+  "slug": "vianmaaritys-mum1CL1yac",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Vianmääritys",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "Vianmääritys"
+  ],
+  "createdAt": "2026-06-18T19:32:25.218Z",
+  "updatedAt": "2026-06-18T20:22:48.373Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/troubleshooting-IC3Nd5qZHr",
+    "fi": "/fi/guides/tak-guide/vianmaaritys-mum1CL1yac",
+    "sv": "/sv/guides/tak-guide/felsokning-6aAV1qqTyn"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>(Tätä välilehteä ei pitäisi näyttää)</p>"
+    }
+  ]
+}

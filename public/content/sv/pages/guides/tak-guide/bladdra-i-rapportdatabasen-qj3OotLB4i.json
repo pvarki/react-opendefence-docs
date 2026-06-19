@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "c668ac87-0951-4f36-ab5f-72d0c20bc072",
+  "slug": "bladdra-i-rapportdatabasen-qj3OotLB4i",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Bläddra i rapportdatabasen",
+  "breadcrumb": [
+    "Platforms",
+    "WinTAK",
+    "Plugin-program som stöds",
+    "Rapporter",
+    "Bläddra i rapportdatabasen"
+  ],
+  "createdAt": "2026-06-18T19:35:25.300Z",
+  "updatedAt": "2026-06-18T20:24:59.305Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/browse-the-reports-database-unYDjhwqXD",
+    "fi": "/fi/guides/tak-guide/selaa-raporttitietokantaa-RmpgkBAbfQ",
+    "sv": "/sv/guides/tak-guide/bladdra-i-rapportdatabasen-qj3OotLB4i"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Rapporter som lagras på TAK-servern kan sökas, filtreras och visualiseras.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Filtrera och sortera rapporter",
+          "layout": "image-bottom",
+          "html": "<p>Välj ikonen <strong>Filter</strong> för att begränsa listan efter aktuell kartvy, datumintervall, rapporttyp, status, prioritet eller användarens anropssignal; <strong>Clear Filters</strong> visar allt igen.</p>\n<ul>\n<li>Välj <strong>Sort</strong> för att ordna listan efter datum, användarens anropssignal, prioritet, status, titel eller typ — klicka på ett val igen för att vända ordningen.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/5e3bf90b2eaae81b.webp",
+              "width": 241,
+              "height": 548
+            }
+          ]
+        },
+        {
+          "title": "Bygg en rapportinstrumentpanel",
+          "layout": "image-bottom",
+          "html": "<p>Öppna <strong>Dashboard</strong> från verktygsfältet och filtrera fram de rapporter du vill ha. Välj <strong>Create New Chart</strong>, välj hur den ska grupperas (prioritet, skala, status, typ eller användarens anropssignal) och ett cirkel- eller stapeldiagram, och tryck sedan på <strong>Create</strong>. Flera diagram kan visas sida vid sida, vart och ett med egna filter.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/01a40ce39c3aa870.webp",
+              "width": 378,
+              "height": 339
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

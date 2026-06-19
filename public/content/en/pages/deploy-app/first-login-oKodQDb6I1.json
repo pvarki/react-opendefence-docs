@@ -12,8 +12,13 @@
     "First Login"
   ],
   "createdAt": "2026-06-13T22:59:19.940Z",
-  "updatedAt": "2026-06-13T23:41:55.293Z",
+  "updatedAt": "2026-06-18T20:39:00.101Z",
   "headings": [],
+  "translations": {
+    "en": "/en/deploy-app/first-login-oKodQDb6I1",
+    "fi": "/fi/deploy-app/ensimmainen-kirjautuminen-6xSLnWbWmV",
+    "sv": "/sv/deploy-app/forsta-inloggningen-ZynVs60T8M"
+  },
   "blocks": [
     {
       "type": "slideset",

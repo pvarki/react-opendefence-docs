@@ -1,0 +1,118 @@
+{
+  "schemaVersion": 1,
+  "id": "d1ea32ed-7149-456c-b935-c8c91b48b7e7",
+  "slug": "hantera-atak-verktyg-och-verktygsfalt-vbXQ19z45z",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Hantera ATAK-verktyg och verktygsfält",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "Avancerade kärnfunktioner",
+    "Hantera ATAK-verktyg och verktygsfält"
+  ],
+  "createdAt": "2026-06-18T19:27:14.966Z",
+  "updatedAt": "2026-06-18T20:15:11.918Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/how-to-manage-atak-tools-and-toolbars-PbkLQcvrCe",
+    "fi": "/fi/guides/tak-guide/atak-tyokalujen-ja-tyokalupalkkien-hallinta-BExrl8NVtl",
+    "sv": "/sv/guides/tak-guide/hantera-atak-verktyg-och-verktygsfalt-vbXQ19z45z"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Ställ in ditt ATAK-verktygsfält så att verktygen du faktiskt använder finns ett tryck bort, och byt layout snabbt i fält.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Öppna extraverktygen",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på knappen <strong>Additional Tools</strong> bredvid verktygsfältet för att nå verktygen som inte finns i fältet. De öppnas som ett rutnät som standard.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/35e140ca871255f4.webp",
+              "width": 224,
+              "height": 32
+            }
+          ]
+        },
+        {
+          "title": "Växla till listvy",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på <strong>List View</strong> i verktygspanelen för att se varje verktyg med sitt namn i en vertikal lista. Lättare att läsa när du håller på att lära dig ikonerna.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/2ae607069497d712.webp",
+              "width": 121,
+              "height": 157
+            }
+          ]
+        },
+        {
+          "title": "Växla tillbaka till rutnätsvy",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på <strong>Grid View</strong> för att packa tillbaka verktygen i ett kompakt ikonrutnät. Använd den layout du tycker är snabbast.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/9805c5db41d2281e.webp",
+              "width": 110,
+              "height": 156
+            }
+          ]
+        },
+        {
+          "title": "Redigera verktygsfältet",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på <strong>Edit Toolbar</strong> för att gå in i redigeringsläge. Standardverktygsfältet kan inte ändras, så en kopia skapas åt dig. För en ren start, använd <strong>Add Toolbar</strong> i listan över verktygsfält i stället.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/7d959b51feeccd7d.webp",
+              "width": 349,
+              "height": 163
+            }
+          ]
+        },
+        {
+          "title": "Lägg till eller ta bort ett verktyg",
+          "layout": "image-bottom",
+          "html": "<p>I redigeringsläget kan du:</p>\n<ul>\n<li>Trycka länge och dra ett verktyg till fältet för att <strong>lägga till</strong> det.</li>\n<li>Dra ett verktyg till en upptagen plats för att <strong>ersätta</strong> det.</li>\n<li>Trycka länge och byta namn på ett verktyg via dess etikett.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/352c0cf24ccac67c.webp",
+              "width": 400,
+              "height": 157
+            }
+          ]
+        },
+        {
+          "title": "Ta bort ett verktyg och spara",
+          "layout": "image-bottom",
+          "html": "<p>Dra ett verktyg till papperskorgen för att <strong>ta bort</strong> det från fältet och skicka tillbaka det till verktygslistan. När du är klar trycker du på <strong>Save</strong> och verktygsfältet läggs till i din tillgängliga lista.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/a9e7e27ed2f07c43.webp",
+              "width": 207,
+              "height": 150
+            }
+          ]
+        },
+        {
+          "title": "Hantera och välj verktygsfält",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på <strong>Toolbar Manager</strong> för att se alla dina verktygsfält.</p>\n<ul>\n<li>Använd radioväljaren för att välja <strong>aktivt</strong> verktygsfält, <strong>Edit</strong> eller <strong>Delete</strong> valfri rad, och använd <strong>Export Toolbar</strong> / <strong>Import Toolbar</strong> för att dela en layout med en annan TAK-användare.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/ae6d25344c1544fd.webp",
+              "width": 190,
+              "height": 194
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

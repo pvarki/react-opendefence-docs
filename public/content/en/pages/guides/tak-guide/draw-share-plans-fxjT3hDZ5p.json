@@ -12,8 +12,13 @@
     "Draw & share Plans"
   ],
   "createdAt": "2025-12-05T22:06:22.115Z",
-  "updatedAt": "2026-06-16T10:15:20.448Z",
+  "updatedAt": "2026-06-18T20:14:00.606Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/draw-share-plans-fxjT3hDZ5p",
+    "fi": "/fi/guides/tak-guide/suunnitelmien-piirtaminen-ja-jakaminen-6PjOAXGBff",
+    "sv": "/sv/guides/tak-guide/rita-och-dela-planer-WlqKBF7FKe"
+  },
   "blocks": [
     {
       "type": "slideset",

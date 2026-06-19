@@ -1,0 +1,174 @@
+{
+  "schemaVersion": 1,
+  "id": "bdc23558-cb3b-442b-8477-aad8c6cd7a07",
+  "slug": "lataa-atak-liitannaiset-CrjCC07xf1",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Lataa ATAK-liitännäiset",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "ALOITA JA YHDISTÄ",
+    "Lataa ATAK-liitännäiset"
+  ],
+  "createdAt": "2026-06-18T19:25:12.759Z",
+  "updatedAt": "2026-06-18T20:13:40.153Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/load-atak-plugins-xBeVkYsFjI",
+    "fi": "/fi/guides/tak-guide/lataa-atak-liitannaiset-CrjCC07xf1",
+    "sv": "/sv/guides/tak-guide/ladda-atak-plugins-TpJcLrKsGu"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Liitännäiset",
+          "layout": "text",
+          "html": "<ul>\n<li>ATAK:n ominaisuuksia voi laajentaa erilaisilla liitännäisillä.</li>\n<li>Deploy Appin TAK tarjoaa sinulle automaattisesti joukon liitännäisiä, jotka sinun on ladattava käynnistyksen yhteydessä.</li>\n<li>Seuraavat liitännäisten asennus- ja lataustoimet <strong>tarvitsee tehdä vain kerran.</strong></li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "1. Data Sync - Missing",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Data Sync -liitännäinen on tärkein ladattava liitännäinen.</li>\n<li>Jos Data Sync puuttuu työkalupalkista, se on ladattava.</li>\n<li>Valitse tätä varten ensin oikeasta yläkulmasta <strong>hamburger menu.</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/49e065be1c38ff46.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "2. Data Sync - Tools Menu",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Valitse <strong>Plugins.</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/959670dee9b0050b.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "3. Data Sync - TAK Package Mgmt",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Avaa asennusvalintaikkuna napauttamalla <strong>Data Sync 'Not Installed'.</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/73ffe372020899e4.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "4. Data Sync - Install Product Plugin",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Valitse <strong>OK</strong> kohdassa Installing 'Product Data Sync.'</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/86500dea7e683f75.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "5. Data Sync - Permission to install",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Valintaikkuna kysyy, haluatko asentaa tämän sovelluksen.</li>\n<li>Valitse <strong>Install.</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/3aa2c36d7d52db85.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "6. Data Sync - Permission missing 1",
+          "layout": "image-bottom",
+          "html": "<p>Tämä ja seuraava tehtävä vaaditaan vain, jos saat ilmoituksen, ettei asentaminen tuntemattomista sovelluksista ATAK:n kautta ole sallittua.</p>\n<ul>\n<li>Valitse <strong>Settings.</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/8f122306b7c7489f.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "7. Data Sync - Permission missing 2",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Napauta <strong>Install unknown apps.</strong></li>\n<li><strong>Allow</strong> käyttöoikeudet ATAK:lle.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/e9d640992c63039a.webp",
+              "width": 2256,
+              "height": 1080
+            }
+          ]
+        },
+        {
+          "title": "8. Data Sync - Install",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Data Sync -liitännäisen asennusvalintaikkuna näyttää tietoja liitännäisestä.</li>\n<li>Jatka valitsemalla <strong>Install.</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/98e4f0bfd6f70f83.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "9. Data Sync - Permission to install",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Valintaikkuna kysyy: 'Do you want to install this app?'</li>\n<li>Valitse <strong>Install.</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/3aa2c36d7d52db85.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "10. Data Sync - Installed 1",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Valintaikkuna ilmoittaa, että liitännäinen on asennettu.</li>\n<li>Valitse <strong>Done.</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/1ddf34aa91adfc00.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "11. Data Sync - Installed 2",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Tarkista Plugins-valikosta, että Data Sync on asennettu ja ladattu.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/d76d8d18f5129d03.webp",
+              "width": 2256,
+              "height": 1009
+            }
+          ]
+        },
+        {
+          "title": "Lataa muut liitännäiset",
+          "layout": "text",
+          "html": "<p>Lataa samalla tavalla muut vakioliitännäiset:</p>\n<ul>\n<li><strong>OpenTAKICU:</strong> Georeferoitu videolähetys TAK:ssa.</li>\n<li><strong>TAK VNS:</strong> Käytä tätä Google Mapsin sijasta reititykseen määränpäähän.</li>\n<li><strong>UAS Tool:</strong>: Asenna, jos sinun on ohjattava droneja ja lähetettävä niistä videokuvaa ryhmällesi.</li>\n</ul>",
+          "images": []
+        }
+      ]
+    }
+  ]
+}

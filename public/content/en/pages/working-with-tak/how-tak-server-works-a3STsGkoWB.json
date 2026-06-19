@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "056115ec-4b6a-495a-b48b-19464067f204",
+  "slug": "how-tak-server-works-a3STsGkoWB",
+  "collection": "working-with-tak",
+  "locale": "en",
+  "title": "How TAK Server works",
+  "breadcrumb": [
+    "Integrating to TAK Server",
+    "How TAK Server works"
+  ],
+  "createdAt": "2026-06-17T18:21:46.006Z",
+  "updatedAt": "2026-06-17T18:40:23.782Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "1. Real-time CoT streaming",
+      "id": "1-real-time-cot-streaming"
+    },
+    {
+      "depth": 2,
+      "text": "2. The Marti REST API",
+      "id": "2-the-marti-rest-api"
+    },
+    {
+      "depth": 2,
+      "text": "Authentication model",
+      "id": "authentication-model"
+    },
+    {
+      "depth": 2,
+      "text": "Ports & protocols",
+      "id": "ports--protocols"
+    },
+    {
+      "depth": 2,
+      "text": "Federation (server-to-server)",
+      "id": "federation-server-to-server"
+    },
+    {
+      "depth": 2,
+      "text": "How the pieces relate",
+      "id": "how-the-pieces-relate"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>TAK Server is the hub that TAK clients (ATAK, WinTAK, iTAK, TAK Tracker) connect to in order to share situational awareness. For an integrator it has <strong>two interfaces</strong>, and you'll usually use both.</p>\n<h2 id=\"1-real-time-cot-streaming\"><a href=\"#1-real-time-cot-streaming\">1. Real-time CoT streaming</a></h2>\n<p>The live heartbeat of TAK is <strong>Cursor-on-Target (CoT)</strong> — compact event messages (\"what is where, when, by whom\": positions, markers, chat, sensor data). Clients open a persistent <strong>TCP/TLS streaming</strong> connection to TAK Server and exchange CoT continuously.</p>\n<ul>\n<li>Transport is <strong>TLS with mutual authentication</strong> (the client presents an X.509 certificate). The streaming port is configured per deployment (commonly 8089).</li>\n<li>What you receive is filtered by your <strong>groups</strong> (see <a href=\"/en/working-with-tak/keycloak-identity-groups-WXsDTvK7H8\">Keycloak: identity &#x26; groups</a>) — you only see traffic for groups you read from.</li>\n<li>As an integrator you can act as a \"client\": connect, subscribe, and send/receive CoT just like an ATAK device would.</li>\n</ul>\n<p>CoT itself is covered from the client side in the ATAK plugin guide (<a href=\"/en/working-with-tak/cot-in-depth-listening-sending-custom-details-nTudtLfqX9\">CoT in depth</a>); the wire format is the same on the server link.</p>\n<h2 id=\"2-the-marti-rest-api\"><a href=\"#2-the-marti-rest-api\">2. The Marti REST API</a></h2>\n<p>Everything that isn't the live CoT stream — managing shared data, files, missions, groups, feeds, federation — is done through TAK Server's REST API, historically called <strong>Marti</strong>. Every endpoint lives under <code>**/Marti/api/…**</code> and is documented in the spec.</p>\n<p>The main capability areas (tags in the spec):</p>\n<table>\n<thead>\n<tr>\n<th>Area</th>\n<th>What it's for</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Missions / Data Sync</strong> (<code>/Marti/api/missions/…</code>)</td>\n<td>Shared, persistent \"missions\": collections of map content, files, layers, logs — the primary way to share structured data with a team. Supports nesting, roles, invites, passwords, keywords.</td>\n</tr>\n<tr>\n<td><strong>Enterprise Sync</strong> (<code>/Marti/api/sync/…</code>, <code>/files/…</code>)</td>\n<td>Content-addressed file store — data packages, attachments, imagery — referenced by <strong>hash</strong>.</td>\n</tr>\n<tr>\n<td><strong>Subscriptions</strong> (<code>/Marti/api/subscriptions/…</code>)</td>\n<td>Register/inspect CoT subscriptions and per-client filters.</td>\n</tr>\n<tr>\n<td><strong>Groups</strong> (<code>/Marti/api/groups/…</code>)</td>\n<td>The access-control partitions that decide who sees/sends what.</td>\n</tr>\n<tr>\n<td><strong>Inputs / Data Feeds / Outgoing connections</strong></td>\n<td>Configure how data enters and leaves the server (ports, feeds, predicates).</td>\n</tr>\n<tr>\n<td><strong>Federation</strong> (<code>/Marti/api/federation…</code>)</td>\n<td>Connect TAK Servers together so missions/data flow between them.</td>\n</tr>\n<tr>\n<td><strong>Video, Device Profiles, Metadata, Retention, ExCheck</strong></td>\n<td>Video feeds, client provisioning profiles, metadata, data-lifecycle, checklists.</td>\n</tr>\n<tr>\n<td><strong>OAuth API</strong> (OIDC)</td>\n<td>Token-based auth + OpenID Connect configuration — how TAK Server federates identity to an IdP like Keycloak.</td>\n</tr>\n</tbody>\n</table>\n<h2 id=\"authentication-model\"><a href=\"#authentication-model\">Authentication model</a></h2>\n<p>TAK Server is <strong>certificate-first</strong>:</p>\n<ul>\n<li><strong>mTLS client certificates</strong> are the primary credential, for both the CoT stream and the Marti API. Your certificate identifies you and ties you to your groups.</li>\n<li>TAK Server can also issue client certs itself (<code>POST /Marti/api/tls/signClient</code>), but on a Deploy App deployment <strong>you get your certificate from Deploy App</strong> instead (see <a href=\"/en/working-with-tak/enrolling-getting-a-client-certificate-vze3g7Eshz\">Enrolling &#x26; getting a client certificate</a>).</li>\n<li><strong>OAuth/OIDC</strong> is supported for token-based access and browser logins; TAK Server reads an OpenID provider's configuration (Keycloak, in a Deploy App deployment).</li>\n</ul>\n<h2 id=\"ports--protocols\"><a href=\"#ports--protocols\">Ports &#x26; protocols</a></h2>\n<p>TAK Server listens on several ports; the ones an integrator touches:</p>\n<table>\n<thead>\n<tr>\n<th>Port</th>\n<th>Purpose</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>8089</strong></td>\n<td>CoT <strong>TCP+TLS streaming</strong> — the encrypted real-time client connection (a <code>tls</code> input).</td>\n</tr>\n<tr>\n<td><strong>8443</strong></td>\n<td><strong>HTTPS with X.509 client-certificate</strong> auth — the <strong>Marti API</strong>, the admin UI, and WebTAK.</td>\n</tr>\n<tr>\n<td><strong>8446</strong></td>\n<td><strong>HTTPS with OAuth / username-password</strong> — including the OAuth2 token endpoint <code>/oauth/token</code>.</td>\n</tr>\n<tr>\n<td><strong>9000 / 9001</strong></td>\n<td><strong>Federation</strong> (protocol v1 / v2) — server-to-server only, not for clients.</td>\n</tr>\n</tbody>\n</table>\n<p>The default ports to open for a basic deployment are <strong>8089</strong> and <strong>8443</strong>. (On a Deploy App deployment the Marti API is reached at <code>https://&#x3C;server>:8443/Marti/…</code>.)</p>\n<p>Streaming <strong>inputs</strong> can use different protocols: <code>**tls**</code> (encrypted — what real clients use, on 8089), <code>stcp</code> (unencrypted streaming, <em>testing only</em>), and <code>tcp</code>/<code>udp</code>/<code>mcast</code> (unencrypted). Use <code>tls</code> for anything real — the unencrypted protocols are a security risk.</p>\n<h2 id=\"federation-server-to-server\"><a href=\"#federation-server-to-server\">Federation (server-to-server)</a></h2>\n<p>Separate TAK Servers — possibly run by different organizations — can <strong>federate</strong> so subsets of their users share data, without either side exposing its internal structure or allowing the other's clients to connect directly. Each side controls what it shares via <strong>federated group mapping</strong>. It's an admin/server topic rather than a client integration, but it's why data may reach you from a server other than your own.</p>\n<h2 id=\"how-the-pieces-relate\"><a href=\"#how-the-pieces-relate\">How the pieces relate</a></h2>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span>TAK clients ──CoT over TLS──▶  TAK Server  ◀──REST (/Marti/api)── your integration</span></span>\n<span class=\"line\"><span>                                  │</span></span>\n<span class=\"line\"><span>                          groups decide visibility</span></span>\n<span class=\"line\"><span>                                  │</span></span>\n<span class=\"line\"><span>                              Keycloak (OIDC, groups)</span></span>\n<span class=\"line\"><span>                                  ▲</span></span>\n<span class=\"line\"><span>                     Deploy App / RASENMAEHER issues the mTLS cert</span></span></code></pre>",
+      "lang": "plaintext"
+    },
+    {
+      "type": "html",
+      "html": "<p>→ Next: <a href=\"/en/working-with-tak/the-marti-api-the-spec-zWa3vFfeKt\">The Marti API (the spec)</a>.</p>"
+    }
+  ]
+}

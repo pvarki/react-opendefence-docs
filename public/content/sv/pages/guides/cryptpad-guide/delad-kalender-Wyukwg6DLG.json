@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "9886c932-2183-42b6-8604-a5caae9653a7",
+  "slug": "delad-kalender-Wyukwg6DLG",
+  "collection": "guides/cryptpad-guide",
+  "locale": "sv",
+  "title": "Delad kalender",
+  "breadcrumb": [
+    "Användning i enheten",
+    "Delad kalender"
+  ],
+  "createdAt": "2026-06-18T20:34:48.836Z",
+  "updatedAt": "2026-06-18T20:38:10.939Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/cryptpad-guide/shared-calendar-uEIsdBqGNk",
+    "fi": "/fi/guides/cryptpad-guide/jaettu-kalenteri-O7sH9Zra69",
+    "sv": "/sv/guides/cryptpad-guide/delad-kalender-Wyukwg6DLG"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Utöver delade filer och samarbetsredigering kan ditt enhetsteam hålla en delad kalender. Så här skapar du en och delar den med teamet.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Delad kalender (1/3)",
+          "layout": "image-bottom",
+          "html": "<p>Utöver filer och samarbetsredigering kan ditt team använda delade kalendrar. Gå först till menyn <strong>Calendars</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/c33adf70d613d1b9.webp",
+              "width": 1462,
+              "height": 1022
+            }
+          ]
+        },
+        {
+          "title": "Delad kalender (2/3)",
+          "layout": "image-bottom",
+          "html": "<p>Skapa en ny kalender och ge den ett lämpligt namn. Välj sedan menyn <strong>Sharing</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/6cf48a40b61289a5.webp",
+              "width": 1468,
+              "height": 1180
+            }
+          ]
+        },
+        {
+          "title": "Delad kalender (3/3)",
+          "layout": "image-bottom",
+          "html": "<p>Dela kalendern med teamet. Dina teammedlemmar hittar sedan denna delade kalender i sin egen Calendars-meny.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/206f8be3ff9dc2bd.webp",
+              "width": 1462,
+              "height": 1214
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

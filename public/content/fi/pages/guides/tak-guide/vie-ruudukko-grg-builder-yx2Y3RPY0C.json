@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "id": "ac96996c-117e-4acf-86b8-3a097194e464",
+  "slug": "vie-ruudukko-grg-builder-yx2Y3RPY0C",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Vie ruudukko (GRG Builder)",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "TUETUT LISÄOSAT",
+    "GRG-rakennustyökalu",
+    "Vie ruudukko (GRG Builder)"
+  ],
+  "createdAt": "2026-06-18T19:31:26.816Z",
+  "updatedAt": "2026-06-18T20:22:30.403Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/export-a-grid-grg-builder-EcpaE7LkX1",
+    "fi": "/fi/guides/tak-guide/vie-ruudukko-grg-builder-yx2Y3RPY0C",
+    "sv": "/sv/guides/tak-guide/exportera-ett-rutnat-grg-builder-NhQ9Zf06Wn"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Muunna rakentamasi ruudukko tiedostoksi, jonka voit jakaa tai tulostaa, ja siivoa kartta sen jälkeen.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Tallenna ruudukko",
+          "layout": "image-bottom",
+          "html": "<p>Kun muokkaukset ovat valmiit, valitse <strong>Save</strong> ja rastita haluamasi yhdistelmä vaihtoehdoista <strong>KMZ</strong>, <strong>PDF</strong>, <strong>JPEG</strong> tai <strong>Settings (JSON)</strong>.</p>\n<ul>\n<li><strong>KMZ</strong> yhdessä toiminnon <strong>Flatten map items to image</strong> kanssa siirtää ruudukon kartalle ja Overlay Manageriin</li>\n<li><strong>PDF</strong> voi käyttää toimintoja <strong>Append to PDF</strong>, <strong>Include geospatial data</strong> tai <strong>Create multiple pages</strong></li>\n<li><strong>JPEG</strong> voi käyttää toimintoa <strong>Create multiple images</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/6b6154a9d232b8c0.webp",
+              "width": 800,
+              "height": 519
+            }
+          ]
+        },
+        {
+          "title": "Avaa kaappausasetukset",
+          "layout": "image-bottom",
+          "html": "<p>Valitse työkalupalkista <strong>Settings</strong> (hammasratas) -kuvake määrittääksesi, miten GRG kaapataan.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/c3a51e185c872841.webp",
+              "width": 432,
+              "height": 71
+            }
+          ]
+        },
+        {
+          "title": "Määritä kaappaus",
+          "layout": "image-bottom",
+          "html": "<p>Aseta <strong>Auto-import GRG capture</strong>, valitse <strong>Resolution</strong> (<strong>Low</strong> tai <strong>High</strong>) ja ota käyttöön <strong>Scaled Printable Map</strong> valitaksesi <strong>Page Size</strong>. Vahvista valitsemalla <strong>Done</strong>. Huomaa: Scaled Printable Map voi rajoittaa GRG:n mukautusvaihtoehtoja.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/4fd7562c0d5d2d61.webp",
+              "width": 800,
+              "height": 481
+            }
+          ]
+        },
+        {
+          "title": "Poista karttamerkinnät",
+          "layout": "image-bottom",
+          "html": "<p>Tyhjentääksesi karttamerkinnät, jotka asetit GRG:tä rakentaessasi, valitse työkalupalkista <strong>Delete</strong> (roskakori).</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/565591385cd6d27d.webp",
+              "width": 432,
+              "height": 71
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

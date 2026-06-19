@@ -1,5 +1,6 @@
 /// <reference types="vitest/config" />
 import { execSync } from "node:child_process";
+import fs from "node:fs";
 import path from "node:path";
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
@@ -99,6 +100,17 @@ export default defineConfig({
         ],
       },
     }),
+    {
+      // GitHub Pages has no SPA rewrite: copy the app shell to 404.html so deep
+      // links and refreshes (e.g. /en/working-with-tak/...) resolve on first
+      // load, before the service worker's navigateFallback is active.
+      name: "gh-pages-spa-404",
+      closeBundle() {
+        const idx = path.resolve(__dirname, "dist", "index.html");
+        if (fs.existsSync(idx))
+          fs.copyFileSync(idx, path.resolve(__dirname, "dist", "404.html"));
+      },
+    },
   ],
   resolve: {
     alias: {

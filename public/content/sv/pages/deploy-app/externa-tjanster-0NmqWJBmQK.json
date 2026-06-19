@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "8a83a1ae-6a9b-4380-98ea-7b18d47a661a",
+  "slug": "externa-tjanster-0NmqWJBmQK",
+  "collection": "deploy-app",
+  "locale": "sv",
+  "title": "Externa tjänster",
+  "breadcrumb": [
+    "Platforms",
+    "iOS",
+    "Administratörsguide",
+    "Externa tjänster"
+  ],
+  "createdAt": "2026-06-18T20:35:45.266Z",
+  "updatedAt": "2026-06-18T20:39:06.776Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/deploy-app/access-external-services-wQy9bpe1aE",
+    "fi": "/fi/deploy-app/ulkoiset-palvelut-SIWRaQtmte",
+    "sv": "/sv/deploy-app/externa-tjanster-0NmqWJBmQK"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Externa tjänster",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Externa tjänster länkar dig till andra webbplatser som är tillgängliga i din Deploy App-instans.</li>\n<li>Dessa behövs inte nödvändigtvis i den dagliga driften, men ger fler funktioner för avancerade användare.</li>\n<li>För närvarande är dessa mest användbara för TAK- och TAK Plugin-användare.</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "Komma åt externa tjänster",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Externa tjänster kan nås från sidofältet.</li>\n<li>Välj <strong>\"Admin Tools\"</strong> och sedan <strong>\"External Services\".</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/7d126d3d3daf2488.webp",
+              "width": 2560,
+              "height": 5712
+            }
+          ]
+        },
+        {
+          "title": "Tillgängliga tjänster",
+          "layout": "image-left",
+          "html": "<ul>\n<li>De tillgängliga tjänsterna varierar från distribution till distribution beroende på vilka tjänster du har beställt.</li>\n<li>Var och en bör ha en kort beskrivning av vad den gör.</li>\n<li>De öppnas genom att du klickar på dem och bör be om ditt mTLS-certifikat för säker inloggning.</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "Keycloak",
+          "layout": "image-left",
+          "html": "<ul>\n<li>För närvarande kan du via Keycloak hantera grupper som användare tillhör.</li>\n<li>Detta påverkar TAK-användare eftersom denna gruppkonfiguration synkroniseras till TAK-servern.</li>\n<li>Vid förväntad användning behöver du inte röra Keycloak alls.</li>\n<li>Erfarna användare kan göra mycket, t.ex. ansluta externa applikationer till din Deploy App.</li>\n</ul>",
+          "images": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "53be0a64-c44d-4813-8068-50f0a350250f",
+  "slug": "hamta-koordinater-med-center-designator-52VvAun2JK",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Hämta koordinater med Center Designator",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "YTTERLIGARE FUNKTIONER",
+    "Navigering och koordinater",
+    "Hämta koordinater med Center Designator"
+  ],
+  "createdAt": "2026-06-18T19:28:19.610Z",
+  "updatedAt": "2026-06-18T20:19:03.038Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/get-coordinates-with-center-designator-B4pKmxr0H0",
+    "fi": "/fi/guides/tak-guide/hae-koordinaatit-center-designatorilla-yaOIpaeTv4",
+    "sv": "/sv/guides/tak-guide/hamta-koordinater-med-center-designator-52VvAun2JK"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Slå på Center Designator för att läsa de exakta koordinaterna och höjden under kartans mitt.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Aktivera Center Designator",
+          "layout": "image-bottom",
+          "html": "<p>Öppna <strong>Overlay Manager</strong> och sedan <strong>Other Overlays</strong>. Tryck på ögonikonen bredvid <strong>Center Designator</strong> för att slå på den.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/f28caa1685cb737c.webp",
+              "width": 400,
+              "height": 191
+            }
+          ]
+        },
+        {
+          "title": "Läs koordinaterna vid kartans mitt",
+          "layout": "image-bottom",
+          "html": "<p>Avläsningsrutan längst ned till vänster visar nu koordinaterna och höjden vid kartans mitt. Panorera kartan för att läsa valfri punkt.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/ac247a9aa8e49a30.webp",
+              "width": 400,
+              "height": 194
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

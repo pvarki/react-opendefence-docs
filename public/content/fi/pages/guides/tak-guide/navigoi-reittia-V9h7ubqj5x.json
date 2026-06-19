@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 1,
+  "id": "a708920a-f4ae-4af0-967e-40831a5268b5",
+  "slug": "navigoi-reittia-V9h7ubqj5x",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Navigoi reittiä",
+  "breadcrumb": [
+    "Platforms",
+    "ATAK",
+    "LISÄOMINAISUUDET",
+    "Navigointi ja koordinaatit",
+    "Navigoi reittiä"
+  ],
+  "createdAt": "2026-06-18T19:28:20.023Z",
+  "updatedAt": "2026-06-18T20:19:05.535Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/navigate-a-route-zHde8FSxCb",
+    "fi": "/fi/guides/tak-guide/navigoi-reittia-V9h7ubqj5x",
+    "sv": "/sv/guides/tak-guide/navigera-en-rutt-NOneSaVoN3"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Seuraa olemassa olevaa reittiä kohteeseesi näytöllä näkyvien etäisyys-, suunta- ja käännösohjeiden avulla.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Aloita navigointi reitillä",
+          "layout": "image-bottom",
+          "html": "<p>Valitse reitin navigoinnin sädevalikkovaihtoehto tai napauta sen <strong>Navigation</strong>-kuvaketta reittiluettelossa. Navigointitiedot ilmestyvät tämän jälkeen vasempaan yläkulmaan. (Jos haluat ensin rakentaa reitin, katso Create Routes ja käytä VNS:ää.)</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/fc5e3c34fc6eb9e4.webp",
+              "width": 98,
+              "height": 71
+            }
+          ]
+        },
+        {
+          "title": "Lue navigointitiedot",
+          "layout": "image-bottom",
+          "html": "<p>Palkki näyttää etäisyyden, nykyisen nopeuden ja seuraavan tarkastuspisteen, esimerkiksi <strong>Next: CP1 Continue Straight</strong>. Napauta näytön ylimmäistä riviä tiivistääksesi sen ja vapauttaaksesi näyttötilaa.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/0649bc01e20d4a2e.webp",
+              "width": 245,
+              "height": 98
+            }
+          ]
+        },
+        {
+          "title": "Ohjeet, mykistys ja yksiköt",
+          "layout": "image-bottom",
+          "html": "<p>Kun lähestyt tarkastuspistettä, sen ohje tulee näkyviin; nosta äänenvoimakkuutta kuullaksesi ääniohjeet tai napauta <strong>Mute</strong>-kuvaketta vaimentaaksesi ne. Napauta etäisyyttä tai nopeutta vaihtaaksesi yksiköitä (mph, km/h, kn, m/s).</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/0649bc01e20d4a2e.webp",
+              "width": 245,
+              "height": 98
+            }
+          ]
+        },
+        {
+          "title": "Siirry tarkastuspisteiden välillä ja lopeta",
+          "layout": "image-bottom",
+          "html": "<p>Käytä tietojen molemmilla puolilla olevia nuolia siirtyäksesi seuraavaan tai edelliseen tarkastuspisteeseen. Valitse <strong>x</strong> lopettaaksesi navigoinnin.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/0649bc01e20d4a2e.webp",
+              "width": 245,
+              "height": 98
+            }
+          ]
+        },
+        {
+          "title": "Navigoi kallistettuna 3D-näkymässä mainostauluilla",
+          "layout": "image-bottom",
+          "html": "<p>Kun navigoit 3D-tilassa, karttamerkkiin liitetty kuva ponnahtaa esiin mainostauluna, kun tulet sen renderöintietäisyydelle, ja häviää, kun ohitat sen. Säädä sitä kohdasta <strong>Settings > Tool Preferences > Specific Tool Preferences > Route Preferences > Billboard Render Distance</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/7b33163f75e1cb54.webp",
+              "width": 380,
+              "height": 201
+            }
+          ]
+        },
+        {
+          "title": "Quick Nav mihin tahansa pisteeseen (bloodhound)",
+          "layout": "image-bottom",
+          "html": "<p>Valitse <strong>Quick Nav</strong> -kuvake seurataksesi bloodhound-tyyliin suoraan mihin tahansa pisteeseen, kohteeseen tai reittiin. Esiin piirtyy yhdysviiva, ja vasemmassa alakulmassa näkyy aika, nopeus ja etäisyys seuraavaan tarkastuspisteeseen liikkuessasi.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/7b33163f75e1cb54.webp",
+              "width": 380,
+              "height": 201
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

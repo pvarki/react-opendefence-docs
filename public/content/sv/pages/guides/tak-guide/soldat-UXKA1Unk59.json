@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "id": "e17f3e71-5d22-40a1-95a8-01066d03fecd",
+  "slug": "soldat-UXKA1Unk59",
+  "collection": "guides/tak-guide",
+  "locale": "sv",
+  "title": "Soldat",
+  "breadcrumb": [
+    "Platforms",
+    "WinTAK",
+    "ANVÄNDNING ENLIGT ROLL",
+    "Soldat"
+  ],
+  "createdAt": "2026-06-18T19:33:31.522Z",
+  "updatedAt": "2026-06-18T20:24:29.856Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/fighter-ZxrplBIys6",
+    "fi": "/fi/guides/tak-guide/taistelija-trgkL4SaDk",
+    "sv": "/sv/guides/tak-guide/soldat-UXKA1Unk59"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Som soldat håller WinTAK dig på den gemensamma kartan och låter dig mata observationer till kommandoplatsen. Här är vad du skickar och vad du får.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Vad en soldat skickar",
+          "layout": "text",
+          "html": "<ul>\n<li>Din <strong>liveposition</strong>, så att enheten ser dig på kartan (blue force tracking).</li>\n<li><strong>Observationsmarkörer</strong> — skapa en markör och skicka den till HQ-rollen / observationsflödet.</li>\n<li><strong>Rapporter</strong> via de föreskrivna meddelandeverktygen, på kommando-, spanings-, BLUFOR- och gemensamma kanaler.</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "Vad en soldat får",
+          "layout": "text",
+          "html": "<ul>\n<li>Det CP-producerade <strong>RECON Feed</strong> — vad enheten vet om insatsområdet.</li>\n<li>Uppdragets <strong>PLAN</strong>-flöden — marschvägar, patrullvägar, geofence-larm.</li>\n<li>Andra användares positioner på kartan.</li>\n</ul>",
+          "images": []
+        },
+        {
+          "title": "Hur du gör det",
+          "layout": "text",
+          "html": "<ul>\n<li>Se <strong>Blue force tracking</strong> för att hitta dig själv, läsa kartan och ange din position när du saknar GPS.</li>\n<li>Säkerställ först att du är ansluten — ett <strong>grönt moln</strong> i TAK Network Status betyder att serveranslutningen är uppe; om ditt RECON-flöde är tomt, kontrollera anslutningen igen (se Start-guiden).</li>\n</ul>",
+          "images": []
+        }
+      ]
+    }
+  ]
+}

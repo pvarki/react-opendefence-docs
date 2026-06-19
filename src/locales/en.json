@@ -63,7 +63,16 @@
     "introduction": "Introduction",
     "operate": "Operate",
     "contribute": "Contribute",
-    "integrate": "Integrate"
+    "integrate": "Integrate",
+    "workingWithTak": "Working with TAK"
+  },
+  "takShelf": {
+    "pluginDevTitle": "Plugin Development",
+    "pluginDevDesc": "Build ATAK plugins in Java and Kotlin.",
+    "integratingTitle": "Integrating to TAK Server",
+    "integratingDesc": "Use the Marti API and Deploy App authentication.",
+    "federationTitle": "Working with Federation Hub",
+    "federationDesc": "Federate multiple Deploy App TAK Servers."
   },
   "releases": {
     "title": "Releases",
@@ -132,6 +141,14 @@
   },
   "advancedFooter": {
     "lead": "These wikis provide advanced information about products that aim to deepen your understanding on them and their capabilities. They are developed by our community senior experts."
+  },
+  "agentNote": {
+    "label": "I'm agent-friendly.",
+    "lead": "Point your AI agent at this site and ask it to help — for example:",
+    "link": "Agents start at /llms.txt",
+    "exampleHome": "What is Deploy App and how do I get started?",
+    "exampleGuides": "How do I connect ATAK to my Deploy App server?",
+    "exampleDev": "How do I build and deploy an OpenDefence integration?"
   },
   "contents": {
     "siteTitle": "Contents of the site",

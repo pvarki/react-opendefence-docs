@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "0de0128d-a395-4263-b423-b5b9cfa75636",
+  "slug": "kayta-geochatia-1MmA1emqhu",
+  "collection": "guides/tak-guide",
+  "locale": "fi",
+  "title": "Käytä GeoChatia",
+  "breadcrumb": [
+    "Platforms",
+    "iTAK",
+    "Perustoiminnot",
+    "Käytä GeoChatia"
+  ],
+  "createdAt": "2026-06-18T19:38:59.016Z",
+  "updatedAt": "2026-06-18T20:25:53.609Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/use-geochat-r99lJsOLnK",
+    "fi": "/fi/guides/tak-guide/kayta-geochatia-1MmA1emqhu",
+    "sv": "/sv/guides/tak-guide/anvand-geochat-3YfBvaPUdo"
+  },
+  "blocks": [
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#ABB2BF\">(</span><span style=\"color:#E06C75\">Tätä</span><span style=\"color:#E06C75\"> välilehteä</span><span style=\"color:#E06C75\"> ei</span><span style=\"color:#E06C75\"> pitäisi</span><span style=\"color:#E06C75\"> näyttää</span><span style=\"color:#ABB2BF\">)</span></span></code></pre>",
+      "lang": "javascript"
+    }
+  ]
+}

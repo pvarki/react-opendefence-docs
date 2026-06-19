@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "id": "660791e8-bb81-4394-98b7-d29e591d52a4",
+  "slug": "end-to-end-integration-EOUZgpAdh0",
+  "collection": "working-with-tak",
+  "locale": "en",
+  "title": "End-to-end integration",
+  "breadcrumb": [
+    "Integrating to TAK Server",
+    "End-to-end integration"
+  ],
+  "createdAt": "2026-06-17T18:21:48.591Z",
+  "updatedAt": "2026-06-17T18:21:51.351Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "The sequence",
+      "id": "the-sequence"
+    },
+    {
+      "depth": 2,
+      "text": "Walkthrough",
+      "id": "walkthrough"
+    },
+    {
+      "depth": 2,
+      "text": "A few practical notes",
+      "id": "a-few-practical-notes"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Putting the pieces together: from zero to a service that exchanges data with TAK clients through a Deploy App TAK Server.</p>\n<h2 id=\"the-sequence\"><a href=\"#the-sequence\">The sequence</a></h2>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span>1. ENROLL (once)         Deploy App / RASENMAEHER</span></span>\n<span class=\"line\"><span>   invite code ─▶ enrollment/init ─▶ admin accept</span></span>\n<span class=\"line\"><span></span></span>\n<span class=\"line\"><span>2. GET A CERTIFICATE     RASENMAEHER signs your CSR</span></span>\n<span class=\"line\"><span>   generate keypair+CSR ─▶ product/sign_csr ─▶ client cert + CA chain</span></span>\n<span class=\"line\"><span></span></span>\n<span class=\"line\"><span>3. GET GROUPS            Keycloak (admin)</span></span>\n<span class=\"line\"><span>   place your identity in the right tak groups (In / Out / Both)</span></span>\n<span class=\"line\"><span></span></span>\n<span class=\"line\"><span>4. CONNECT TO TAK SERVER using the mTLS cert</span></span>\n<span class=\"line\"><span>   ├─ CoT stream (TLS) ──▶ live events for groups you read</span></span>\n<span class=\"line\"><span>   └─ Marti API (/Marti/api) ──▶ missions, files, subscriptions</span></span>\n<span class=\"line\"><span></span></span>\n<span class=\"line\"><span>5. EXCHANGE DATA</span></span>\n<span class=\"line\"><span>   read:  subscriptions + GET missions/contents (by hash)</span></span>\n<span class=\"line\"><span>   write: send CoT + PUT mission contents / upload to Enterprise Sync</span></span></code></pre>",
+      "lang": "plaintext"
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"walkthrough\"><a href=\"#walkthrough\">Walkthrough</a></h2>\n<ol>\n<li><strong>Enroll with Deploy App.</strong> Use an invite/verification code to <code>POST /api/v1/enrollment/init</code>; an admin approves you (<code>POST /api/v1/enrollment/accept</code>). See <a href=\"/en/working-with-tak/enrolling-getting-a-client-certificate-vze3g7Eshz\">Enrolling &#x26; getting a client certificate</a>.</li>\n<li><strong>Get your client certificate.</strong> Generate a key pair + CSR, call <code>POST /api/v1/product/sign_csr</code>, and keep the returned <strong>certificate + CA chain</strong>. This is your TAK identity.</li>\n<li><strong>Get your groups right (Keycloak).</strong> In <code>kc.&#x3C;your-server></code>, put your identity in the <code>tak</code> groups it needs — <strong>In</strong> (<code>_WRITE</code>) for groups you publish to, <strong>Out</strong> (<code>_READ</code>) for groups you ingest, <strong>Both</strong> for a two-way relay. See <a href=\"/en/working-with-tak/keycloak-identity-groups-WXsDTvK7H8\">Keycloak: identity &#x26; groups</a>.</li>\n<li><strong>Connect to TAK Server with the cert.</strong>\n<ul>\n<li>For <strong>live data</strong>, open the TLS <strong>CoT stream</strong> and subscribe — you'll receive the traffic for your read groups, and CoT you emit fans out to your write groups.</li>\n<li>For <strong>stored data</strong>, call the <strong>Marti API</strong> at <code>/Marti/api/…</code> presenting the same client certificate.</li>\n</ul>\n</li>\n<li><strong>Read and write.</strong>\n<ul>\n<li><em>Read:</em> manage <a href=\"/en/working-with-tak/getting-data-from-tak-server-hszJWvv9UM\">subscriptions</a>, and <code>GET</code> missions + their contents, fetching files from Enterprise Sync by hash.</li>\n<li><em>Write:</em> <a href=\"/en/working-with-tak/pushing-data-to-tak-server-WDTB0ov6LS\">send CoT</a>, <code>PUT</code> mission contents / add a mission package, and upload files to Enterprise Sync.</li>\n</ul>\n</li>\n</ol>\n<h2 id=\"a-few-practical-notes\"><a href=\"#a-few-practical-notes\">A few practical notes</a></h2>\n<ul>\n<li><strong>One identity, everywhere.</strong> The same cert reaches TAK Server <em>and</em> Keycloak <em>and</em> any other Deploy App product — and revocation in Deploy App cuts all of them at once.</li>\n<li><strong>Match the spec version.</strong> Develop against the <a href=\"/en/working-with-tak/the-marti-api-the-spec-zWa3vFfeKt\">spec</a> version that matches the target server (this guide tracks 5.6-RELEASE-14).</li>\n<li><strong>If data \"disappears,\" check groups before code.</strong> Most \"it connected but nothing happens\" issues are group direction (In vs Out), not the API call.</li>\n<li><strong>Renew before you expire.</strong> Use <code>product/renew_csr</code>; an expired cert drops both the CoT stream and Marti API access.</li>\n</ul>\n<p>→ Next: <a href=\"/en/working-with-tak/references-J0wEJwIM8Z\">References</a>.</p>"
+    }
+  ]
+}
