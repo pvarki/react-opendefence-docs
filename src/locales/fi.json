@@ -4,6 +4,7 @@
     "tagline": "Opi Deploy App ja OpenDefence-pino"
   },
   "docsBuild": "Dokumentaation koonti {{date}} · {{commit}}",
+  "guideIssues": "Ongelmia? Toiveita? Tee issue →",
   "nav": {
     "home": "Etusivu",
     "deployApp": "Deploy App",

@@ -4,6 +4,7 @@
     "tagline": "Lär dig Deploy App och OpenDefence-stacken"
   },
   "docsBuild": "Dokumentationsbygge {{date}} · {{commit}}",
+  "guideIssues": "Problem? Önskemål? Skapa ett ärende →",
   "nav": {
     "home": "Hem",
     "deployApp": "Deploy App",

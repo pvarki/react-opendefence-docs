@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import i18n from "@/lib/i18n";
+import { GuideIssuesLink } from "@/components/shell/GuideIssuesLink";
 
 interface PageFooterProps {
   collection: string;
@@ -22,6 +23,9 @@ export function PageFooter({ collection, clientId }: PageFooterProps) {
 
   return (
     <footer className="mt-8 border-t border-border pt-6 text-sm leading-relaxed text-muted-foreground">
+      <div className="mb-3 flex justify-end">
+        <GuideIssuesLink collection={collection} />
+      </div>
       <p className="mb-3 text-center text-xs text-muted-foreground/70">
         {t("docsBuild", {
           date: __BUILD_DATE__,

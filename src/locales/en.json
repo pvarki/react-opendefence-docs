@@ -4,6 +4,7 @@
     "tagline": "Learn Deploy App and the OpenDefence stack"
   },
   "docsBuild": "Docs build {{date}} · {{commit}}",
+  "guideIssues": "Issues? Needs? Post an issue →",
   "nav": {
     "home": "Home",
     "deployApp": "Deploy App",

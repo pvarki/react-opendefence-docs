@@ -16,6 +16,7 @@ import {
 import { usePlatform } from "@/lib/platform";
 import { usePlatformPicker } from "@/lib/usePlatformPicker";
 import { PlatformList } from "@/components/shell/PlatformList";
+import { GuideIssuesLink } from "@/components/shell/GuideIssuesLink";
 import type { ReaderData } from "@/routes/$locale/$";
 
 interface ContentsSheetProps {
@@ -71,9 +72,12 @@ export function ContentsSheet({
   return (
     <Drawer open={open} onOpenChange={onOpenChange}>
       <DrawerContent className="max-h-[85dvh]">
-        <DrawerTitle className="px-4 pt-2 pb-1 text-base">
-          {sidebar?.label ?? t("nav.contents")}
-        </DrawerTitle>
+        <div className="flex items-center justify-between gap-3 px-4 pt-2 pb-1">
+          <DrawerTitle className="text-base">
+            {sidebar?.label ?? t("nav.contents")}
+          </DrawerTitle>
+          <GuideIssuesLink collection={reader.collection} />
+        </div>
         <DrawerDescription className="sr-only" />
         <nav className="overflow-y-auto px-4 pb-8">
           {hasClients && (
