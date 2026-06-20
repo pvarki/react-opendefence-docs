@@ -27,9 +27,12 @@ describe("isPageUnderConstruction", () => {
     ).toBe(true);
   });
 
-  it("flags every page in the power-user wikis", () => {
+  it("flags every page in the power-user wikis and the MTX guide", () => {
     expect(isPageUnderConstruction({ collection: "wikis/tak" })).toBe(true);
     expect(isPageUnderConstruction({ collection: "wikis/mtx" })).toBe(true);
+    expect(isPageUnderConstruction({ collection: "guides/mtx-guide" })).toBe(
+      true,
+    );
   });
 
   it("flags only the SUPPORTED PLUGINS chapters in the TAK guide", () => {

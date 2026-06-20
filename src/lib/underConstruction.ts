@@ -24,6 +24,8 @@ const SCOPES: Scope[] = [
   // Power-user wikis — the whole books and everything in them.
   { collection: "wikis/tak" },
   { collection: "wikis/mtx" },
+  // MTX guide — the whole book.
+  { collection: "guides/mtx-guide" },
   // TAK plugin guides — the SUPPORTED PLUGINS chapters (ATAK + WinTAK).
   // ponytail: chapters listed by id; if a SUPPORTED PLUGINS toporg gains a
   // chapter, add its chapterId here.
