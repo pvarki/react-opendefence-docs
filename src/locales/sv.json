@@ -4,6 +4,7 @@
     "tagline": "Lär dig Deploy App och OpenDefence-stacken"
   },
   "docsBuild": "Dokumentationsbygge {{date}} · {{commit}}",
+  "guideIssues": "Problem? Önskemål? Skapa ett ärende →",
   "nav": {
     "home": "Hem",
     "deployApp": "Deploy App",
@@ -36,6 +37,10 @@
     "endOfBook": "Du har läst klart {{book}}",
     "notTranslated": "Denna sida är inte översatt ännu. Visar engelskt innehåll.",
     "comingSoon": "Denna sida är under arbete",
+    "underConstruction": {
+      "title": "Under uppbyggnad.",
+      "body": "Det här innehållet eller den här vyn är under uppbyggnad. Det uppfyller ännu inte våra kvalitetskrav och kan innehålla föråldrad information eller visas på ett förvirrande sätt. Titta in igen senare!"
+    },
     "pageAnnouncement": "Sida: {{title}} — {{current}} av {{total}}",
     "nextPage": "Nästa sida"
   },

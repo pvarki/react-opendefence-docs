@@ -4,6 +4,7 @@
     "tagline": "Opi Deploy App ja OpenDefence-pino"
   },
   "docsBuild": "Dokumentaation koonti {{date}} · {{commit}}",
+  "guideIssues": "Ongelmia? Toiveita? Tee issue →",
   "nav": {
     "home": "Etusivu",
     "deployApp": "Deploy App",
@@ -26,7 +27,7 @@
     "powerCard": "Olen tehokäyttäjä",
     "powerCardDesc": "Käytä tuotteita edistyneillä tavoilla",
     "demoCard": "Kokeile demoa",
-    "demoCardDesc": "Kokeile, miten Deploy App toimii ja miltä se tuntuu"
+    "demoCardDesc": "KoOkeile, miten Deploy App toimii ja miltä se tuntuu"
   },
   "reader": {
     "pageOf": "Sivu {{current}} / {{total}}",
@@ -36,6 +37,10 @@
     "endOfBook": "Sait valmiiksi: {{book}}",
     "notTranslated": "Tätä sivua ei ole vielä suomennettu. Näytetään englanninkielinen sisältö.",
     "comingSoon": "Tämä sivu on työn alla",
+    "underConstruction": {
+      "title": "Työn alla.",
+      "body": "Tämä sisältö tai näkymä on työn alla. Se ei vielä täytä laatuvaatimuksiamme ja saattaa sisältää vanhentunutta tietoa tai näkyä sekavasti. Palaa asiaan myöhemmin!"
+    },
     "pageAnnouncement": "Sivu: {{title}} — {{current}} / {{total}}",
     "nextPage": "Seuraava sivu"
   },

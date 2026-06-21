@@ -26,6 +26,8 @@ import {
   resolveSplat,
 } from "@/lib/content/neighbors";
 import { downloadCollectionImages } from "@/lib/pwa/offline-download";
+import { isCoverUnderConstruction } from "@/lib/underConstruction";
+import { UnderConstructionBanner } from "@/components/reader/UnderConstructionBanner";
 import { setClientForBook, setPlatform, useReadingView } from "@/lib/platform";
 import { usePlatformPicker } from "@/lib/usePlatformPicker";
 import { PageSwiper } from "@/components/reader/PageSwiper";
@@ -253,6 +255,9 @@ function BookCover({
           hero ? "py-4 md:py-8" : "py-5 md:py-12"
         }`}
       >
+        {isCoverUnderConstruction(data.collection, active?.platform) && (
+          <UnderConstructionBanner />
+        )}
         {!hero && (
           <h1 className="text-xl font-bold md:text-3xl">{bookLabel}</h1>
         )}

@@ -7,6 +7,7 @@ import { ShelfHero } from "@/components/shell/ShelfHero";
 import { CARD_IMAGES } from "@/lib/cardImages";
 import { loadManifest } from "@/lib/content/loader";
 import { siteSections } from "@/lib/siteSections";
+import { UnderConstructionBanner } from "@/components/reader/UnderConstructionBanner";
 
 export const Route = createFileRoute("/$locale/advanced/")({
   loader: async ({ context }) => {
@@ -28,6 +29,7 @@ function AdvancedShelf() {
     <div className="h-full overflow-y-auto">
       <ShelfHero src="/images/poweruser.jpg" title={t("nav.advanced")} />
       <div className="mx-auto max-w-3xl px-4 py-4 md:py-8">
+        <UnderConstructionBanner />
         <p className="text-sm text-muted-foreground">
           {t("home.powerCardDesc")}
         </p>

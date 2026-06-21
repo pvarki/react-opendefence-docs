@@ -3,7 +3,9 @@ import { useTranslation } from "react-i18next";
 import type { ManifestPage, PageDoc } from "@shared/content-schema";
 import type { PagePosition } from "@/lib/content/neighbors";
 import { loadPage } from "@/lib/content/loader";
+import { isPageUnderConstruction } from "@/lib/underConstruction";
 import { BlockRenderer } from "@/components/blocks/BlockRenderer";
+import { UnderConstructionBanner } from "@/components/reader/UnderConstructionBanner";
 import { PrevNextBar } from "@/components/reader/PrevNextBar";
 import { EndOfBookCard } from "@/components/reader/EndOfBookCard";
 import { PageFooter } from "@/components/reader/PageFooter";
@@ -78,6 +80,7 @@ export function PagePane({
           <h1 className="mb-2 text-xl font-bold md:mb-6 md:text-3xl">
             {page.title}
           </h1>
+          {isPageUnderConstruction(page) && <UnderConstructionBanner />}
           {doc ? (
             doc.underDevelopment ? (
               <p className="rounded-lg border border-border bg-card px-4 py-6 text-muted-foreground">
