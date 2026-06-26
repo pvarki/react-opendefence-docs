@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "locale": "en",
-  "generatedAt": "2026-06-26T12:33:33.744Z",
+  "generatedAt": "2026-06-26T14:06:38.337Z",
   "collections": [
     {
       "slug": "deploy-app",
@@ -4825,7 +4825,7 @@
         "References"
       ],
       "path": "/content/en/pages/working-with-tak/references-jcEIPLZieK.json",
-      "updatedAt": "2026-06-17T20:21:46.713Z",
+      "updatedAt": "2026-06-26T14:06:02.603Z",
       "order": 31,
       "chapterId": "federation-hub-connecting-multiple-tak-servers-pfBog3Q9uI",
       "chapterLabel": "Federation Hub: connecting multiple TAK Servers"
@@ -4930,7 +4930,7 @@
         "References"
       ],
       "path": "/content/en/pages/working-with-tak/references-KdqJO1rcQ0.json",
-      "updatedAt": "2026-06-19T14:18:53.723Z",
+      "updatedAt": "2026-06-26T14:06:01.982Z",
       "order": 38,
       "chapterId": "wire-up-deploy-app-tak-servers-via-a-federation-hub-iac-7b653SFdyn",
       "chapterLabel": "Wire up Deploy App TAK Servers via a Federation Hub"
@@ -5005,7 +5005,7 @@
         "References"
       ],
       "path": "/content/en/pages/working-with-tak/references-n9W8lB6Gpz.json",
-      "updatedAt": "2026-06-19T14:18:56.060Z",
+      "updatedAt": "2026-06-26T14:06:03.214Z",
       "order": 43,
       "chapterId": "wire-up-two-federation-hubs-iac-fzNcHRftqI",
       "chapterLabel": "Wire up two Federation Hubs"
