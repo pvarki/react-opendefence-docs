@@ -5,6 +5,7 @@
   },
   "docsBuild": "Dokumentaation koonti {{date}} · {{commit}}",
   "guideIssues": "Ongelmia? Toiveita? Tee issue →",
+  "suggestEdit": "Ehdota muokkausta →",
   "nav": {
     "home": "Etusivu",
     "deployApp": "Deploy App",
@@ -17,17 +18,43 @@
     "breadcrumb": "Murupolku"
   },
   "home": {
+    "org": {
+      "whatIs": "Mikä on OpenDefence?",
+      "guides": "Lue oppaat",
+      "develop": "Kehitä"
+    },
+    "introCard": "Johdanto",
+    "introCardDesc": "Käyttöönotettava, yhteentoimiva C2-alusta taisteluun",
     "userCard": "Käytän Deploy Appia",
     "userCardDesc": "Aloita, kirjaudu ja käytä palveluita kentällä",
     "guidesCard": "Tarvitsen tuoteoppaan",
     "guidesCardDesc": "Virallisten tuoteintegraatioiden käyttöohjeet - TAK ja muut",
-    "devCard": "Kehitän tai operoin",
+    "devCard": "Kehitän",
     "devCardDesc": "Arkkitehtuuri, integraatiot, API-spec, ohjeet",
     "continueReading": "Jatka lukemista",
     "powerCard": "Olen tehokäyttäjä",
     "powerCardDesc": "Käytä tuotteita edistyneillä tavoilla",
     "demoCard": "Kokeile demoa",
     "demoCardDesc": "KoOkeile, miten Deploy App toimii ja miltä se tuntuu"
+  },
+  "intro": {
+    "back": "Takaisin",
+    "next": "Seuraava",
+    "finish": "Aloita",
+    "revisit": "Tietoa sivustosta",
+    "slide1": {
+      "title": "Tervetuloa OpenDefence-dokumentaatioon",
+      "body": "OpenDefence on Puolustusvoimia palveleva kansallisen puolustuksen avoimen lähdekoodin projekti, jonka tavoitteena on tarjota monitoimialueen operaatioihin kykeneviä C2-palveluita sotilaille helposti ja yhteentoimivasti. Täältä löydät ohjeet sen käyttöön, integrointiin ja kehittämiseen."
+    },
+    "slide2": {
+      "title": "Sotilaan alusta",
+      "body": "OpenDefence Deploy Appilla otat hajautetut palvelut käyttöön sotilaille yhtenä kokonaisuutena. Toimita TAK, Matrix ja videon suoratoisto mahdollistaaksesi modernin, taistelunkestävän C2:n. Integroi tuotteesi siihen toimittaaksesi sen sotilaille."
+    },
+    "slide3": {
+      "title": "Oppaat käyttöön tai kehitykseen",
+      "body": "Tämä dokumentaatiosivusto sisältää loppukäyttäjien oppaita sekä dokumentaatiota osallistujille, integroijille ja operoijille. Tervetuloa OpenDefenceen — tehdään työtä liittoutuneiden puolustuksen puolesta.",
+      "contact": "Yhteystieto: Yhteyspiste tulossa."
+    }
   },
   "reader": {
     "pageOf": "Sivu {{current}} / {{total}}",
@@ -115,7 +142,9 @@
     "readMore": "Lue lisää OpenDefencestä, visiosta ja siitä, miten voit osallistua:",
     "qualityTitle": "Tavoitteena korkea laatu ja turvallisuus",
     "qualityBody": "Deploy Appin ja kaikkien virallisten tuoteintegraatioiden on kestettävä todellista sotaa — ei yhtään vähempää. Se vaatii ensiluokkaista laatua, yksinkertaisuutta ja todellisuuspohjaista turvallisuutta. Emme kehitä tai julkaise ominaisuuksia, jotka eivät täytä näitä vaatimuksia — olemme mieluummin ilman niitä.",
-    "siteUnderDev": "Verkkosivusto on kehitteillä."
+    "siteUnderDev": "Verkkosivusto on kehitteillä.",
+    "contributeHeadline": "Haluatko osallistua, integroida tai operoida?",
+    "contributeBody": "Meille yhteentoimivuus ei ole markkinointislogan. Toivotamme tervetulleiksi kehittäjät, tuoteintegroijat ja organisaatiot, jotka haluavat hyödyntää OpenDefenceä. Tuote on Suomen ja liittoutuneiden puolustuksen hyväksi."
   },
   "guidesFooter": {
     "lead": "Deploy Appissa on useita virallisia tuoteintegraatioita, joista jokaista kehittää tällä hetkellä OpenDefence. Täältä löydät oppaat virallisten tuotteiden tehokkaaseen käyttöön.",

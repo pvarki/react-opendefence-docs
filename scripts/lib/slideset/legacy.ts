@@ -289,13 +289,21 @@ function parseSlide(
     if (/^[*+-]\s+pic\d+!\[\]\(/.test(trimmed)) continue;
     if (trimmed.startsWith("#")) continue;
 
-    if (trimmed.length > 0) content.push(trimmed);
+    // Keep blank lines: a blank between a bullet list and following prose is
+    // the paragraph break that makes the prose its own block (with a gap)
+    // instead of lazy-joining onto the last bullet.
+    content.push(trimmed);
   }
 
   return {
     title,
     layout: resolveLayout(layoutRaw, imageRefs.length),
-    bodyMarkdown: content.join("\n"),
+    // Collapse blank-line runs and trim the edges so only intentional
+    // single-blank paragraph breaks survive.
+    bodyMarkdown: content
+      .join("\n")
+      .replace(/\n{3,}/g, "\n\n")
+      .trim(),
     imageRefs,
   };
 }

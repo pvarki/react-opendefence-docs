@@ -30,7 +30,10 @@ function AdvancedShelf() {
       <ShelfHero src="/images/poweruser.jpg" title={t("nav.advanced")} />
       <div className="mx-auto max-w-3xl px-4 py-4 md:py-8">
         <UnderConstructionBanner />
-        <p className="text-sm text-muted-foreground">
+        <p className="text-sm leading-relaxed text-foreground">
+          {t("advancedFooter.lead")}
+        </p>
+        <p className="mt-1.5 text-sm text-muted-foreground">
           {t("home.powerCardDesc")}
         </p>
         {sections.map((section) => (
@@ -52,21 +55,6 @@ function AdvancedShelf() {
           </Fragment>
         ))}
       </div>
-      <AdvancedFooter />
     </div>
-  );
-}
-
-/** Advanced-page footer, styled like the Guides and Develop footers. */
-function AdvancedFooter() {
-  const { t } = useTranslation();
-  return (
-    <footer className="mt-4 border-t border-border bg-card md:mt-8">
-      <div className="mx-auto max-w-3xl px-4 py-6 md:py-10">
-        <p className="text-sm leading-relaxed text-foreground">
-          {t("advancedFooter.lead")}
-        </p>
-      </div>
-    </footer>
   );
 }

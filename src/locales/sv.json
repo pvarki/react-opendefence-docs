@@ -5,6 +5,7 @@
   },
   "docsBuild": "Dokumentationsbygge {{date}} · {{commit}}",
   "guideIssues": "Problem? Önskemål? Skapa ett ärende →",
+  "suggestEdit": "Föreslå en ändring →",
   "nav": {
     "home": "Hem",
     "deployApp": "Deploy App",
@@ -17,17 +18,43 @@
     "breadcrumb": "Sökväg"
   },
   "home": {
+    "org": {
+      "whatIs": "Vad är OpenDefence?",
+      "guides": "Läs guiderna",
+      "develop": "Utveckla"
+    },
+    "introCard": "Introduktion",
+    "introCardDesc": "En driftbar, interoperabel C2-plattform för strid",
     "userCard": "Jag använder Deploy App",
     "userCardDesc": "Kom igång, logga in och använd tjänster i fält",
     "guidesCard": "Jag behöver en produktguide",
     "guidesCardDesc": "Steg-för-steg-guider för officiella produktintegrationer som TAK",
-    "devCard": "Jag utvecklar eller driftar",
+    "devCard": "Jag utvecklar",
     "devCardDesc": "Arkitektur, integrationer, API-referens, driftguider",
     "continueReading": "Fortsätt läsa",
     "powerCard": "Jag är en avancerad användare",
     "powerCardDesc": "Använd produkterna på avancerade sätt",
     "demoCard": "Prova demon",
     "demoCardDesc": "Se hur Deploy App fungerar och känns"
+  },
+  "intro": {
+    "back": "Tillbaka",
+    "next": "Nästa",
+    "finish": "Kom igång",
+    "revisit": "Om webbplatsen",
+    "slide1": {
+      "title": "Välkommen till OpenDefence Docs",
+      "body": "OpenDefence är ett FDF-tjänande nationellt försvarsprojekt med öppen källkod som syftar till att erbjuda C2-tjänster med kapacitet för operationer i flera domäner till soldater på ett enkelt och interoperabelt sätt. Här hittar du dokumentation för att använda, integrera och utveckla det."
+    },
+    "slide2": {
+      "title": "Soldatens plattform",
+      "body": "Med OpenDefence Deploy App kan du driftsätta decentraliserade tjänster till soldater som en enhet. Leverera TAK, Matrix och videoströmning för att möjliggöra ett modernt, stridståligt C2. Integrera din produkt med det för att leverera den till soldater."
+    },
+    "slide3": {
+      "title": "Guider att använda eller arbeta med",
+      "body": "Den här dokumentationswebbplatsen innehåller guider för slutanvändare samt dokumentation för bidragsgivare, integratörer och operatörer. Välkommen till OpenDefence — låt oss arbeta för allierat försvar.",
+      "contact": "Kontakt: Kontaktpunkt kommer."
+    }
   },
   "reader": {
     "pageOf": "Sida {{current}} av {{total}}",
@@ -115,7 +142,9 @@
     "readMore": "Läs mer om OpenDefence, visionen och hur du kan bidra:",
     "qualityTitle": "Målet: hög kvalitet och säkerhet",
     "qualityBody": "Deploy App och alla officiella produktintegrationer måste klara ett verkligt krig — inget mindre. Det kräver främsta kvalitet, enkelhet och verklighetsbaserad säkerhet. Vi utvecklar eller släpper inte funktioner som inte håller dessa krav — då är vi hellre utan dem.",
-    "siteUnderDev": "Webbplatsen är under utveckling."
+    "siteUnderDev": "Webbplatsen är under utveckling.",
+    "contributeHeadline": "Vill du bidra, integrera eller drifta?",
+    "contributeBody": "För oss är interoperabilitet inte en marknadsföringsslogan. Vi välkomnar utvecklare, produktintegratörer och organisationer som vill använda OpenDefence. Produkten är till gagn för finskt och allierat försvar."
   },
   "guidesFooter": {
     "lead": "Deploy App har ett antal officiella produktintegrationer, som var och en för närvarande utvecklas av OpenDefence. Här hittar du guider för att använda de officiella produkterna effektivt.",

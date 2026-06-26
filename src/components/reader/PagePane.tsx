@@ -99,7 +99,12 @@ export function PagePane({
           )}
           <PrevNextBar locale={locale} position={position} />
           {isLast && nextBook && <EndOfBookCard nextBook={nextBook} />}
-          <PageFooter collection={page.collection} clientId={activeClientId} />
+          <PageFooter
+            collection={page.collection}
+            clientId={activeClientId}
+            title={page.title}
+            docId={page.id}
+          />
         </article>
       </div>
     </div>

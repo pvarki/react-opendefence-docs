@@ -151,7 +151,7 @@ export function MobileSlideShow({ block }: { block: SlidesetBlock }) {
                   <h4 className="mb-1 text-sm font-semibold">{slide.title}</h4>
                 )}
                 <div
-                  className="prose prose-invert max-w-none text-[13px] leading-snug"
+                  className="slide-prose prose prose-invert max-w-none text-[13px] leading-snug"
                   dangerouslySetInnerHTML={{ __html: slide.html }}
                 />
               </div>

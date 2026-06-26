@@ -67,7 +67,7 @@ export function SiteContentsSheet({
               .filter((section) => isHome || section.shelf === shelf.key)
               .map((section) => (
                 <div key={section.titleKey}>
-                  <p className="px-1 pt-4 pb-1 text-[11px] font-semibold tracking-widest text-muted-foreground uppercase">
+                  <p className="px-1 pt-4 pb-1 text-[11px] font-semibold tracking-widest text-primary uppercase">
                     {t(section.titleKey)}
                   </p>
                   <ul className="space-y-0.5">

@@ -117,7 +117,7 @@ export const Route = createFileRoute("/$locale/dev/")({
 
 function SectionHeading({ children }: { children: ReactNode }) {
   return (
-    <h2 className="px-1 pt-6 pb-2 text-[11px] font-semibold tracking-widest text-foreground uppercase">
+    <h2 className="px-1 pt-6 pb-2 text-[11px] font-semibold tracking-widest text-primary uppercase">
       {children}
     </h2>
   );
@@ -191,6 +191,13 @@ function DevShelf() {
         position="object-[center_80%]"
       />
       <div className="mx-auto max-w-3xl px-4 py-4 md:py-8">
+        <p className="text-sm leading-relaxed text-foreground">
+          {t("devFooter.leadBefore")}
+          <strong className="font-semibold text-primary">
+            {t("devFooter.leadEmphasis")}
+          </strong>
+          {t("devFooter.leadAfter")}
+        </p>
         {GROUPS.map((g) => {
           const groupBooks = g.slugs
             .map((s) => books.find((b) => b.slug === s))
@@ -275,22 +282,12 @@ function DevShelf() {
   );
 }
 
-/** Develop-page footer, styled like the Deploy App (home) footer. */
+/** Develop-page foot: the lead now sits up top; only the agent note remains. */
 function DevFooter() {
   const { t } = useTranslation();
   return (
-    <footer className="mt-4 border-t border-border bg-card md:mt-8">
-      <div className="mx-auto max-w-3xl px-4 py-6 md:py-10">
-        <p className="text-sm leading-relaxed text-foreground">
-          {t("devFooter.leadBefore")}
-          <strong className="font-semibold text-primary">
-            {t("devFooter.leadEmphasis")}
-          </strong>
-          {t("devFooter.leadAfter")}
-        </p>
-
-        <AgentFriendlyNote example={t("agentNote.exampleDev")} />
-      </div>
-    </footer>
+    <div className="mx-auto max-w-3xl px-4 pb-8">
+      <AgentFriendlyNote example={t("agentNote.exampleDev")} />
+    </div>
   );
 }

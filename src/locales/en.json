@@ -5,6 +5,7 @@
   },
   "docsBuild": "Docs build {{date}} · {{commit}}",
   "guideIssues": "Issues? Needs? Post an issue →",
+  "suggestEdit": "Suggest an edit →",
   "nav": {
     "home": "Home",
     "deployApp": "Deploy App",
@@ -17,17 +18,43 @@
     "breadcrumb": "Breadcrumb"
   },
   "home": {
+    "org": {
+      "whatIs": "What is OpenDefence?",
+      "guides": "Read the Guides",
+      "develop": "Develop"
+    },
+    "introCard": "Introduction",
+    "introCardDesc": "A deployable, interoperable C2 platform for combat",
     "userCard": "I use Deploy App",
     "userCardDesc": "Get started, log in, use products in the field",
     "guidesCard": "I need a product guide",
     "guidesCardDesc": "Step-by-step guides for official products",
-    "devCard": "I develop or operate",
+    "devCard": "I develop",
     "devCardDesc": "All you need to run, develop or integrate",
     "continueReading": "Continue reading",
     "powerCard": "I'm a power user",
     "powerCardDesc": "Use the products in advanced ways",
     "demoCard": "Try the demo",
     "demoCardDesc": "See how Deploy App works and feels like"
+  },
+  "intro": {
+    "back": "Back",
+    "next": "Next",
+    "finish": "Get started",
+    "revisit": "About this site",
+    "slide1": {
+      "title": "Welcome to OpenDefence Docs",
+      "body": "OpenDefence is an FDF-serving national defence open-source project that aims to offer multi-domain-operation-capable C2 services to soldiers in an easy and interoperable way. Here you will find docs to use, integrate and develop it."
+    },
+    "slide2": {
+      "title": "Soldier's platform",
+      "body": "With OpenDefence Deploy App, you can deploy decentralized services to soldiers as one. Deliver TAK, Matrix, video streaming to enable a modern, combat-resilient C2. Integrate your product to it to deliver it to soldiers."
+    },
+    "slide3": {
+      "title": "Guides to use or work on",
+      "body": "This docs site features end user guides as well as docs for contributors, integrators and operators. You're welcome to OpenDefence — let's work for Allied defence.",
+      "contact": "Contact: Contact point upcoming."
+    }
   },
   "reader": {
     "pageOf": "Page {{current}} of {{total}}",
@@ -124,7 +151,9 @@
     "readMore": "Read more about OpenDefence, the vision and how to contribute:",
     "qualityTitle": "Goal of great quality and security",
     "qualityBody": "Deploy App and all official product integrations must withstand actual war — nothing less. That demands paramount quality, simplicity and reality-based security. We don't develop or release features that fall short of these standards; we'd rather go without them.",
-    "siteUnderDev": "Website under development."
+    "siteUnderDev": "Website under development.",
+    "contributeHeadline": "Want to contribute, integrate or operate?",
+    "contributeBody": "For us, interoperability is not a marketing slogan. We welcome developers, product integrators and organizations willing to utilize OpenDefence. The product is for good of Finnish and Allied defence."
   },
   "guidesFooter": {
     "lead": "Deploy App has a number of official product integrations, each currently developed by OpenDefence. Here you can find guides to use the official products efficiently.",

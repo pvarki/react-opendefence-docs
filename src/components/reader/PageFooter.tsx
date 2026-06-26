@@ -1,10 +1,14 @@
 import { useTranslation } from "react-i18next";
 import i18n from "@/lib/i18n";
 import { GuideIssuesLink } from "@/components/shell/GuideIssuesLink";
+import { SuggestEditLink } from "@/components/shell/SuggestEditLink";
 
 interface PageFooterProps {
   collection: string;
   clientId?: string;
+  /** This page's title + Outline doc id, for the "Suggest an edit" link. */
+  title?: string;
+  docId?: string;
 }
 
 /**
@@ -12,7 +16,12 @@ interface PageFooterProps {
  * Renders the guide's lead blurb and, when defined, a product/client blurb
  * (e.g. what ATAK is, its flavors, etc.).
  */
-export function PageFooter({ collection, clientId }: PageFooterProps) {
+export function PageFooter({
+  collection,
+  clientId,
+  title,
+  docId,
+}: PageFooterProps) {
   const { t } = useTranslation();
   const slug = collection.replace(/^guides\//, "");
   const guideKey = `guideFooter.${slug}.lead`;
@@ -23,7 +32,14 @@ export function PageFooter({ collection, clientId }: PageFooterProps) {
 
   return (
     <footer className="mt-8 border-t border-border pt-6 text-sm leading-relaxed text-muted-foreground">
-      <div className="mb-3 flex justify-end">
+      <div className="mb-3 flex flex-wrap justify-end gap-x-4 gap-y-1">
+        {title && (
+          <SuggestEditLink
+            collection={collection}
+            title={title}
+            docId={docId}
+          />
+        )}
         <GuideIssuesLink collection={collection} />
       </div>
       <p className="mb-3 text-center text-xs text-muted-foreground/70">

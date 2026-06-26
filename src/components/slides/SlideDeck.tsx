@@ -336,7 +336,7 @@ function SlideContent({
           )}
           <div
             style={{ fontSize: "inherit" }}
-            className="prose prose-invert max-w-none leading-snug"
+            className="slide-prose prose prose-invert max-w-none leading-snug"
             dangerouslySetInnerHTML={{ __html: slide.html }}
           />
         </div>
@@ -360,7 +360,7 @@ function SlideContent({
         <div>
           {slide.title && <h4 className="mb-2 font-semibold">{slide.title}</h4>}
           <div
-            className="prose prose-invert max-w-none text-sm"
+            className="slide-prose prose prose-invert max-w-none text-sm"
             dangerouslySetInnerHTML={{ __html: slide.html }}
           />
         </div>

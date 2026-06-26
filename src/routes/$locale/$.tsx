@@ -15,8 +15,7 @@ import {
   type ManifestPage,
   type SidebarConfig,
 } from "@shared/content-schema";
-import { CARD_IMAGES, COVER_HEROES } from "@/lib/cardImages";
-import { withBase } from "@/lib/base";
+import { COVER_HEROES } from "@/lib/cardImages";
 import i18n from "@/lib/i18n";
 import { loadManifest, loadPage, loadSidebar } from "@/lib/content/loader";
 import {
@@ -261,6 +260,7 @@ function BookCover({
         {!hero && (
           <h1 className="text-xl font-bold md:text-3xl">{bookLabel}</h1>
         )}
+        <GuideFooter collection={data.collection} />
         {collection?.description && (
           <p className="mt-1.5 text-sm text-muted-foreground md:text-base">
             {collection.description}
@@ -268,7 +268,7 @@ function BookCover({
         )}
         {hasClients && (
           <div className="mt-4 md:mt-6">
-            <p className="pb-1.5 text-[11px] font-semibold tracking-widest text-muted-foreground uppercase">
+            <p className="pb-1.5 text-[11px] font-semibold tracking-widest text-primary uppercase">
               {t("platform.available")}
             </p>
             <PlatformList
@@ -324,7 +324,6 @@ function BookCover({
           </Button>
         )}
       </div>
-      <GuideFooter collection={data.collection} />
       {/* Scroll-end clearance: the floating Start reading / back buttons
           hover here instead of covering the last content. */}
       <div aria-hidden className="h-16 md:hidden" />
@@ -332,15 +331,17 @@ function BookCover({
   );
 }
 
+/**
+ * Product intro shown at the top of a book cover, below the headline: the
+ * lead blurb, an expandable "Tell me more" (core + goals), and copyright.
+ * Renders nothing for covers without a `guideFooter.<slug>` entry.
+ */
 function GuideFooter({ collection }: { collection: string }) {
   const { t } = useTranslation();
   const slug = collection.replace(/^guides\//, "");
   const kp = `guideFooter.${slug}`;
 
   if (!i18n.exists(`${kp}.lead`)) return null;
-
-  const cardImage = CARD_IMAGES[collection];
-  const hasPhoto = !!cardImage && !cardImage.logo;
 
   const goals = [
     { title: `${kp}.goal1Title`, body: `${kp}.goal1Body` },
@@ -349,71 +350,42 @@ function GuideFooter({ collection }: { collection: string }) {
   ];
 
   return (
-    <footer className="mt-4 border-t border-border bg-card md:mt-8">
-      <div className="relative overflow-hidden">
-        {hasPhoto && (
-          <>
-            <img
-              src={withBase(cardImage.src)}
-              alt=""
-              aria-hidden
-              className="absolute inset-0 h-full w-full object-cover object-[center_30%]"
-            />
-            <div className="absolute inset-0 bg-black/60" />
-          </>
-        )}
-        <div
-          className={
-            hasPhoto
-              ? "relative mx-auto max-w-2xl px-4 py-8 md:py-12"
-              : "mx-auto max-w-2xl px-4 py-6 md:py-8"
-          }
-        >
-          <p
-            className={
-              hasPhoto
-                ? "text-sm leading-relaxed text-white"
-                : "text-sm leading-relaxed text-foreground"
-            }
-          >
-            {t(`${kp}.lead`)}
-          </p>
-        </div>
-      </div>
+    <section className="mt-3 md:mt-4">
+      <p className="text-sm leading-relaxed text-foreground">
+        {t(`${kp}.lead`)}
+      </p>
 
-      <div className="mx-auto max-w-2xl px-4 pb-6 md:pb-10">
-        <details className="group mt-5 rounded-lg border border-border bg-background">
-          <summary className="flex cursor-pointer list-none items-center justify-between gap-2 px-4 py-3 text-base font-semibold select-none [&::-webkit-details-marker]:hidden">
-            {t("footer.tellMore")}
-            <ChevronDown className="size-4 shrink-0 text-muted-foreground transition-transform group-open:rotate-180" />
-          </summary>
-          <div className="px-4 pb-4">
-            <p className="text-sm leading-relaxed text-muted-foreground">
-              {t(`${kp}.core`)}
-            </p>
-            {goals.map(({ title, body }) => (
-              <div key={title}>
-                <p className="mt-4 text-[11px] font-semibold tracking-widest text-primary uppercase">
-                  {t(title)}
-                </p>
-                <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
-                  {t(body)}
-                </p>
-              </div>
-            ))}
-          </div>
-        </details>
-
-        <div className="mt-6 space-y-0.5 border-t border-border pt-4">
-          <p className="text-[11px] text-muted-foreground/80">
-            {t(`${kp}.copyright`)}
+      <details className="group mt-4 rounded-lg border border-border bg-card">
+        <summary className="flex cursor-pointer list-none items-center justify-between gap-2 px-4 py-3 text-base font-semibold select-none [&::-webkit-details-marker]:hidden">
+          {t("footer.tellMore")}
+          <ChevronDown className="size-4 shrink-0 text-muted-foreground transition-transform group-open:rotate-180" />
+        </summary>
+        <div className="px-4 pb-4">
+          <p className="text-sm leading-relaxed text-muted-foreground">
+            {t(`${kp}.core`)}
           </p>
-          <p className="text-[11px] text-muted-foreground/80">
-            {t("guideFooter.maintainedBy")}
-          </p>
+          {goals.map(({ title, body }) => (
+            <div key={title}>
+              <p className="mt-4 text-[11px] font-semibold tracking-widest text-primary uppercase">
+                {t(title)}
+              </p>
+              <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
+                {t(body)}
+              </p>
+            </div>
+          ))}
         </div>
+      </details>
+
+      <div className="mt-4 space-y-0.5 border-t border-border pt-3">
+        <p className="text-[11px] text-muted-foreground/80">
+          {t(`${kp}.copyright`)}
+        </p>
+        <p className="text-[11px] text-muted-foreground/80">
+          {t("guideFooter.maintainedBy")}
+        </p>
       </div>
-    </footer>
+    </section>
   );
 }
 
