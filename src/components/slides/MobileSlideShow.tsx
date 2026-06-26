@@ -2,7 +2,12 @@ import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "@tanstack/react-router";
 import useEmblaCarousel from "embla-carousel-react";
 import { useTranslation } from "react-i18next";
-import { ChevronLeft, ChevronRight, ChevronsRight } from "lucide-react";
+import {
+  ChevronLeft,
+  ChevronRight,
+  ChevronsRight,
+  Maximize2,
+} from "lucide-react";
 import type { SlidesetBlock } from "@shared/content-schema";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
@@ -11,6 +16,7 @@ import { useImagePreloader } from "@/components/slides/useImagePreloader";
 import { useEdgePageFlow } from "@/components/slides/useEdgePageFlow";
 import { useReaderData } from "@/lib/useReaderData";
 import { useReadingView } from "@/lib/platform";
+import { useIsLargeText } from "@/lib/textScale";
 import { resolveGlobalPosition } from "@/lib/content/neighbors";
 
 /**
@@ -29,6 +35,9 @@ export function MobileSlideShow({ block }: { block: SlidesetBlock }) {
 
   const [selected, setSelected] = useState(0);
   const [enlarged, setEnlarged] = useState<{ src: string; alt?: string }>();
+  // At large text steps, shrink the image so the (now bigger) caption fits, and
+  // surface an explicit "Enlarge the image" button instead of tap-anywhere.
+  const largeText = useIsLargeText();
 
   const [viewportRef, embla] = useEmblaCarousel({
     axis: "x",
@@ -114,15 +123,11 @@ export function MobileSlideShow({ block }: { block: SlidesetBlock }) {
               className="flex h-full min-w-0 flex-[0_0_100%] flex-col"
             >
               {slide.images[0] && (
-                <button
-                  type="button"
-                  className="relative min-h-0 flex-1 bg-muted/20 p-2"
-                  onClick={() =>
-                    setEnlarged({
-                      src: slide.images[0].src,
-                      alt: slide.images[0].alt,
-                    })
-                  }
+                <div
+                  className={cn(
+                    "relative bg-muted/20 p-2",
+                    largeText ? "h-28 shrink-0" : "min-h-0 flex-1",
+                  )}
                 >
                   {!preloader.isLoaded(slide.images[0].src) && (
                     <span className="absolute inset-0 flex items-center justify-center">
@@ -139,19 +144,48 @@ export function MobileSlideShow({ block }: { block: SlidesetBlock }) {
                         : "opacity-0",
                     )}
                   />
-                </button>
+                  <button
+                    type="button"
+                    onClick={() =>
+                      setEnlarged({
+                        src: slide.images[0].src,
+                        alt: slide.images[0].alt,
+                      })
+                    }
+                    aria-label={t("slides.enlarge")}
+                    className={cn(
+                      "absolute outline-none focus-visible:ring-2 focus-visible:ring-ring",
+                      largeText
+                        ? "top-3 left-3 flex items-center gap-1.5 rounded-md bg-black/60 px-2.5 py-1.5 text-xs font-medium text-white"
+                        : "inset-0 flex items-start justify-end p-2",
+                    )}
+                  >
+                    {largeText ? (
+                      <>
+                        <Maximize2 className="size-3.5" />
+                        {t("slides.enlarge")}
+                      </>
+                    ) : (
+                      <span className="rounded-md bg-black/50 p-1.5 text-white opacity-70">
+                        <Maximize2 className="size-4" />
+                      </span>
+                    )}
+                  </button>
+                </div>
               )}
               <div
                 className={cn(
-                  "shrink-0 overflow-y-auto border-t border-border px-3 py-2",
-                  slide.images[0] ? "max-h-[42%]" : "min-h-0 flex-1",
+                  "overflow-y-auto border-t border-border px-3 py-2",
+                  !slide.images[0] || largeText
+                    ? "min-h-0 flex-1"
+                    : "max-h-[42%] shrink-0",
                 )}
               >
                 {slide.title && (
                   <h4 className="mb-1 text-sm font-semibold">{slide.title}</h4>
                 )}
                 <div
-                  className="slide-prose prose prose-invert max-w-none text-[13px] leading-snug"
+                  className="slide-prose prose prose-invert max-w-none text-[0.8125rem] leading-snug"
                   dangerouslySetInnerHTML={{ __html: slide.html }}
                 />
               </div>

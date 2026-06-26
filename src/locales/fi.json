@@ -167,7 +167,13 @@
     "stepOf": "Vaihe {{current}} / {{total}}",
     "fullscreen": "Koko näyttö",
     "exitFullscreen": "Poistu koko näytöstä",
-    "imageMissing": "Kuva puuttuu"
+    "imageMissing": "Kuva puuttuu",
+    "enlarge": "Suurenna kuva"
+  },
+  "textSize": {
+    "label": "Tekstin koko",
+    "smaller": "Pienennä tekstiä",
+    "larger": "Suurenna tekstiä"
   },
   "search": {
     "placeholder": "Hae ohjeista…",

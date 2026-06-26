@@ -167,7 +167,13 @@
     "stepOf": "Step {{current}} of {{total}}",
     "fullscreen": "Fullscreen",
     "exitFullscreen": "Exit fullscreen",
-    "imageMissing": "Image missing"
+    "imageMissing": "Image missing",
+    "enlarge": "Enlarge the image"
+  },
+  "textSize": {
+    "label": "Text size",
+    "smaller": "Smaller text",
+    "larger": "Larger text"
   },
   "search": {
     "placeholder": "Search docs…",

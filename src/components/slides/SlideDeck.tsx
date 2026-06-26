@@ -12,6 +12,7 @@ import { useEdgePageFlow } from "@/components/slides/useEdgePageFlow";
 import { useFitText } from "@/components/slides/useFitText";
 import { useReaderData } from "@/lib/useReaderData";
 import { useReadingView } from "@/lib/platform";
+import { useTextScaleMult } from "@/lib/textScale";
 import { resolveGlobalPosition } from "@/lib/content/neighbors";
 
 interface SlideDeckProps {
@@ -284,9 +285,11 @@ function SlideContent({
   // The caption scales up to fill its column but is clamped so even the most
   // verbose slide always fits — the box owns a fixed height, so the fit is
   // stable. Sparse slides grow into bold headlines; fullscreen gets more room.
+  // The clamps follow the global text-size control so deck captions scale too.
+  const textScale = useTextScaleMult();
   const { boxRef, contentRef, fontSize } = useFitText({
-    min: 13,
-    max: fullscreen ? 24 : 19,
+    min: Math.round(13 * textScale),
+    max: Math.round((fullscreen ? 24 : 19) * textScale),
   });
 
   const imageEl = (img: {

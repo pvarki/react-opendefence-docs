@@ -4,6 +4,7 @@ import { DEFAULT_LOCALE } from "@shared/content-schema";
 import { withBase } from "@/lib/base";
 import { LocaleSwitcher } from "@/components/shell/LocaleSwitcher";
 import { PlatformSelector } from "@/components/shell/PlatformSelector";
+import { TextSizeControl } from "@/components/shell/TextSizeControl";
 import { CommandMenu } from "@/components/search/CommandMenu";
 
 const NAV_ITEMS = [
@@ -51,6 +52,7 @@ export function Header() {
 
       <div className="flex shrink-0 items-center gap-1.5">
         <CommandMenu />
+        <TextSizeControl />
         <PlatformSelector />
         <LocaleSwitcher />
       </div>

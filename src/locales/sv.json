@@ -167,7 +167,13 @@
     "stepOf": "Steg {{current}} av {{total}}",
     "fullscreen": "Helskärm",
     "exitFullscreen": "Avsluta helskärm",
-    "imageMissing": "Bild saknas"
+    "imageMissing": "Bild saknas",
+    "enlarge": "Förstora bilden"
+  },
+  "textSize": {
+    "label": "Textstorlek",
+    "smaller": "Mindre text",
+    "larger": "Större text"
   },
   "search": {
     "placeholder": "Sök i dokumentationen…",
