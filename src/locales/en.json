@@ -113,9 +113,9 @@
         "a1": "Building or operating a defence startup",
         "a2": "From a defence prime",
         "a3": "Just a person with an idea",
-        "a1Body": "Deploy App is permanently open source, backed by a foundation and serving FDF interests. We want to be the way for you to get your thing into trials and usage in a matter of weeks, not years. Remember to honour the licenses — they are not viral and do not force you to open source your own product.",
-        "a2Body": "Deploy App is permanently open source, backed by a foundation and serving FDF interests. We welcome you to work on our platform and to further develop it, for the good of national and Allied defence. Remember to honour the licenses — they are not viral and do not force you to open source your own product.",
-        "a3Body": "Deploy App is permanently open source, backed by a foundation and serving FDF interests. The licenses are not viral and do not force you to open source your own product. Feel free to try out what you can do."
+        "a1Body": "Deploy App and the OpenDefence stack is permanently open source. Its objective is to support the FDF, national security and the Allies. We want to be the way for you to get your thing into trials and usage in a matter of weeks, not years. Remember to honour the licenses — they are not viral and do not force you to open source your own product.",
+        "a2Body": "Deploy App and the OpenDefence stack is permanently open source. Its objective is to support the FDF, national security and the Allies. We welcome you to work on our platform and to further develop it, for the good of national and Allied defence. Remember to honour the licenses — they are not viral and do not force you to open source your own product.",
+        "a3Body": "Deploy App and the OpenDefence stack is permanently open source. Its objective is to support the FDF, national security and the Allies. The licenses are not viral and do not force you to open source your own product. Feel free to try out what you can do."
       },
       "q2": {
         "prompt": "Where would you like to start?",
@@ -128,7 +128,7 @@
     },
     "operate": {
       "title": "Operate",
-      "lead": "Deploy App lets your organization stand up and run a full stack of interoperable services for soldiers. It is permanently open source, backed by a foundation and serving FDF interests.",
+      "lead": "Deploy App lets your organization stand up and run a full stack of interoperable services for soldiers. It is permanently open source, and its objective is to support the FDF, national security and the Allies.",
       "q1": {
         "prompt": "Are you…",
         "a1": "Evaluating Deploy App for my unit or organization",
@@ -136,7 +136,7 @@
         "a3": "Just exploring what operating it involves",
         "a1Body": "Deploy App is built to be stood up by a real organization for real soldiers. It bundles official product integrations so you can deliver TAK, Matrix, video and more as one. Start with the operator quickstart to see what running it involves.",
         "a2Body": "You can deploy Deploy App with Docker Compose or on Kubernetes, with day-2 operations and audit logging covered. Remember to honour the licenses — they are not viral. The docs below get you from zero to a running stack.",
-        "a3Body": "Deploy App is permanently open source, backed by a foundation and serving FDF interests. Have a look at how operators deploy and run it — no commitment needed."
+        "a3Body": "Deploy App and the OpenDefence stack is permanently open source. Its objective is to support the FDF, national security and the Allies. Have a look at how operators deploy and run it — no commitment needed."
       },
       "q2": {
         "prompt": "Where would you like to start?",

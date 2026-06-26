@@ -113,9 +113,9 @@
         "a1": "Rakentamassa tai operoimassa puolustusalan startupia",
         "a2": "Puolustusalan suuryrityksestä (prime)",
         "a3": "Vain henkilö, jolla on idea",
-        "a1Body": "Deploy App on pysyvästi avointa lähdekoodia, säätiön tukema ja Puolustusvoimien etuja palveleva. Haluamme olla tapa, jolla saat tuotteesi kokeiluun ja käyttöön viikoissa, ei vuosissa. Muista kunnioittaa lisenssejä — ne eivät ole tarttuvia eivätkä pakota sinua avaamaan oman tuotteesi lähdekoodia.",
-        "a2Body": "Deploy App on pysyvästi avointa lähdekoodia, säätiön tukema ja Puolustusvoimien etuja palveleva. Toivotamme sinut tervetulleeksi työskentelemään alustallamme ja myös kehittämään sitä edelleen kansallisen ja liittoutuneiden puolustuksen hyväksi. Muista kunnioittaa lisenssejä — ne eivät ole tarttuvia eivätkä pakota sinua avaamaan oman tuotteesi lähdekoodia.",
-        "a3Body": "Deploy App on pysyvästi avointa lähdekoodia, säätiön tukema ja Puolustusvoimien etuja palveleva. Lisenssit eivät ole tarttuvia eivätkä pakota sinua avaamaan oman tuotteesi lähdekoodia. Kokeile vapaasti, mitä voit tehdä."
+        "a1Body": "Deploy App ja OpenDefence-pino on pysyvästi avointa lähdekoodia. Sen tavoitteena on tukea Puolustusvoimia, kansallista turvallisuutta ja liittolaisia. Haluamme olla tapa, jolla saat tuotteesi kokeiluun ja käyttöön viikoissa, ei vuosissa. Muista kunnioittaa lisenssejä — ne eivät ole tarttuvia eivätkä pakota sinua avaamaan oman tuotteesi lähdekoodia.",
+        "a2Body": "Deploy App ja OpenDefence-pino on pysyvästi avointa lähdekoodia. Sen tavoitteena on tukea Puolustusvoimia, kansallista turvallisuutta ja liittolaisia. Toivotamme sinut tervetulleeksi työskentelemään alustallamme ja myös kehittämään sitä edelleen kansallisen ja liittoutuneiden puolustuksen hyväksi. Muista kunnioittaa lisenssejä — ne eivät ole tarttuvia eivätkä pakota sinua avaamaan oman tuotteesi lähdekoodia.",
+        "a3Body": "Deploy App ja OpenDefence-pino on pysyvästi avointa lähdekoodia. Sen tavoitteena on tukea Puolustusvoimia, kansallista turvallisuutta ja liittolaisia. Lisenssit eivät ole tarttuvia eivätkä pakota sinua avaamaan oman tuotteesi lähdekoodia. Kokeile vapaasti, mitä voit tehdä."
       },
       "q2": {
         "prompt": "Mistä haluaisit aloittaa?",
@@ -128,7 +128,7 @@
     },
     "operate": {
       "title": "Operoi",
-      "lead": "Deploy Appin avulla organisaatiosi voi pystyttää ja ylläpitää täyden, yhteentoimivien palveluiden kokonaisuuden sotilaille. Se on pysyvästi avointa lähdekoodia, säätiön tukema ja Puolustusvoimien etuja palveleva.",
+      "lead": "Deploy Appin avulla organisaatiosi voi pystyttää ja ylläpitää täyden, yhteentoimivien palveluiden kokonaisuuden sotilaille. Se on pysyvästi avointa lähdekoodia, ja sen tavoitteena on tukea Puolustusvoimia, kansallista turvallisuutta ja liittolaisia.",
       "q1": {
         "prompt": "Oletko…",
         "a1": "Arvioimassa Deploy Appia yksikölleni tai organisaatiolleni",
@@ -136,7 +136,7 @@
         "a3": "Vain tutkimassa, mitä operointi tarkoittaa",
         "a1Body": "Deploy App on rakennettu todellisen organisaation pystytettäväksi todellisille sotilaille. Se niputtaa viralliset tuoteintegraatiot, jotta voit toimittaa TAKin, Matrixin, videon ja muuta yhtenä kokonaisuutena. Aloita operaattorin pikaoppaasta nähdäksesi, mitä sen käyttö vaatii.",
         "a2Body": "Voit ottaa Deploy Appin käyttöön Docker Composella tai Kubernetesissa, ja day-2-operointi sekä lokitus ja valvonta on katettu. Muista kunnioittaa lisenssejä — ne eivät ole tarttuvia. Alla olevat dokumentit vievät sinut nollasta toimivaan kokonaisuuteen.",
-        "a3Body": "Deploy App on pysyvästi avointa lähdekoodia, säätiön tukema ja Puolustusvoimien etuja palveleva. Katso, miten operaattorit ottavat sen käyttöön ja ylläpitävät sitä — ilman sitoumuksia."
+        "a3Body": "Deploy App ja OpenDefence-pino on pysyvästi avointa lähdekoodia. Sen tavoitteena on tukea Puolustusvoimia, kansallista turvallisuutta ja liittolaisia. Katso, miten operaattorit ottavat sen käyttöön ja ylläpitävät sitä — ilman sitoumuksia."
       },
       "q2": {
         "prompt": "Mistä haluaisit aloittaa?",

@@ -113,9 +113,9 @@
         "a1": "Bygger eller driver en försvarsstartup",
         "a2": "Från en stor försvarsleverantör (prime)",
         "a3": "Bara en person med en idé",
-        "a1Body": "Deploy App är permanent öppen källkod, stödd av en stiftelse och tjänar FDF:s intressen. Vi vill vara sättet för dig att få ut din grej i tester och användning på veckor, inte år. Kom ihåg att respektera licenserna — de är inte virala och tvingar dig inte att öppna källkoden för din egen produkt.",
-        "a2Body": "Deploy App är permanent öppen källkod, stödd av en stiftelse och tjänar FDF:s intressen. Vi välkomnar dig att arbeta på vår plattform och även att vidareutveckla den, till gagn för nationellt och allierat försvar. Kom ihåg att respektera licenserna — de är inte virala och tvingar dig inte att öppna källkoden för din egen produkt.",
-        "a3Body": "Deploy App är permanent öppen källkod, stödd av en stiftelse och tjänar FDF:s intressen. Licenserna är inte virala och tvingar dig inte att öppna källkoden för din egen produkt. Prova gärna vad du kan göra."
+        "a1Body": "Deploy App och OpenDefence-stacken är permanent öppen källkod. Dess syfte är att stödja FDF, den nationella säkerheten och de allierade. Vi vill vara sättet för dig att få ut din grej i tester och användning på veckor, inte år. Kom ihåg att respektera licenserna — de är inte virala och tvingar dig inte att öppna källkoden för din egen produkt.",
+        "a2Body": "Deploy App och OpenDefence-stacken är permanent öppen källkod. Dess syfte är att stödja FDF, den nationella säkerheten och de allierade. Vi välkomnar dig att arbeta på vår plattform och även att vidareutveckla den, till gagn för nationellt och allierat försvar. Kom ihåg att respektera licenserna — de är inte virala och tvingar dig inte att öppna källkoden för din egen produkt.",
+        "a3Body": "Deploy App och OpenDefence-stacken är permanent öppen källkod. Dess syfte är att stödja FDF, den nationella säkerheten och de allierade. Licenserna är inte virala och tvingar dig inte att öppna källkoden för din egen produkt. Prova gärna vad du kan göra."
       },
       "q2": {
         "prompt": "Var vill du börja?",
@@ -128,7 +128,7 @@
     },
     "operate": {
       "title": "Drifta",
-      "lead": "Med Deploy App kan din organisation sätta upp och driva en komplett uppsättning interoperabla tjänster för soldater. Det är permanent öppen källkod, stött av en stiftelse och tjänar FDF:s intressen.",
+      "lead": "Med Deploy App kan din organisation sätta upp och driva en komplett uppsättning interoperabla tjänster för soldater. Det är permanent öppen källkod, och dess syfte är att stödja FDF, den nationella säkerheten och de allierade.",
       "q1": {
         "prompt": "Är du…",
         "a1": "Utvärderar Deploy App för min enhet eller organisation",
@@ -136,7 +136,7 @@
         "a3": "Bara utforskar vad drift innebär",
         "a1Body": "Deploy App är byggt för att sättas upp av en verklig organisation för verkliga soldater. Det buntar ihop officiella produktintegrationer så att du kan leverera TAK, Matrix, video och mer som en enhet. Börja med operatörens snabbstart för att se vad drift innebär.",
         "a2Body": "Du kan driftsätta Deploy App med Docker Compose eller på Kubernetes, med day 2-drift och loggning samt observerbarhet täckt. Kom ihåg att respektera licenserna — de är inte virala. Dokumentationen nedan tar dig från noll till en körande stack.",
-        "a3Body": "Deploy App är permanent öppen källkod, stött av en stiftelse och tjänar FDF:s intressen. Ta en titt på hur operatörer driftsätter och driver det — utan åtagande."
+        "a3Body": "Deploy App och OpenDefence-stacken är permanent öppen källkod. Dess syfte är att stödja FDF, den nationella säkerheten och de allierade. Ta en titt på hur operatörer driftsätter och driver det — utan åtagande."
       },
       "q2": {
         "prompt": "Var vill du börja?",
