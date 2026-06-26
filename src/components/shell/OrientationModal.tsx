@@ -26,7 +26,7 @@ import {
 } from "@/lib/orientationFlows";
 
 const optionClass =
-  "flex items-center justify-between gap-2 rounded-lg border border-border bg-background px-3.5 py-2.5 text-left text-sm font-medium text-foreground transition-colors hover:border-primary hover:text-primary focus-visible:ring-2 focus-visible:ring-ring focus-visible:outline-none";
+  "flex items-center justify-between gap-2 rounded-lg border border-border bg-background px-4 py-3.5 text-left text-base font-medium text-foreground transition-colors hover:border-primary hover:text-primary focus-visible:ring-2 focus-visible:ring-ring focus-visible:outline-none";
 
 /**
  * RPG-style orientation flow: a short branching questionnaire that ends by
@@ -173,28 +173,13 @@ export function OrientationModal({
       )}
 
       <div className="flex items-center justify-between gap-3 pt-1">
-        {track ? (
-          <div className="flex gap-1.5" aria-hidden>
-            {FLOWS[track].map((q, i) => (
-              <span
-                key={q.promptKey}
-                className={cn(
-                  "size-1.5 rounded-full transition-colors",
-                  i === qIndex ? "bg-primary" : "bg-muted-foreground/30",
-                )}
-              />
-            ))}
-          </div>
-        ) : (
-          <span />
-        )}
         <div className="flex gap-2">
-          <Button variant="outline" onClick={goBack}>
+          <Button size="lg" variant="outline" onClick={goBack}>
             <ChevronLeft />
             {t("orient.back")}
           </Button>
           {chosenTarget ? (
-            <Button asChild>
+            <Button size="lg" asChild>
               <Link
                 to={chosenTarget.to}
                 params={
@@ -210,13 +195,28 @@ export function OrientationModal({
             </Button>
           ) : (
             bodyKey && (
-              <Button onClick={goNext}>
+              <Button size="lg" onClick={goNext}>
                 {t("orient.continue")}
                 <ChevronRight />
               </Button>
             )
           )}
         </div>
+        {track ? (
+          <div className="flex gap-1.5" aria-hidden>
+            {FLOWS[track].map((q, i) => (
+              <span
+                key={q.promptKey}
+                className={cn(
+                  "size-1.5 rounded-full transition-colors",
+                  i === qIndex ? "bg-primary" : "bg-muted-foreground/30",
+                )}
+              />
+            ))}
+          </div>
+        ) : (
+          <span />
+        )}
       </div>
     </div>
   );

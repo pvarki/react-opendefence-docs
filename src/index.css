@@ -86,6 +86,9 @@
   /* Layout contract shared by the app shell and PageSwiper panes */
   --header-h: 3rem;
   --tabbar-h: 0px;
+
+  /* Reader text-size control (src/lib/textScale.ts) scales every rem. */
+  --text-scale: 1;
 }
 
 /* Mobile bottom tab bar reserves space below the main area */
@@ -98,6 +101,10 @@
 @layer base {
   * {
     @apply border-border outline-ring/50;
+  }
+  html {
+    /* Global reader text-size: scales every rem-based size on the page. */
+    font-size: calc(100% * var(--text-scale, 1));
   }
   html,
   body {
