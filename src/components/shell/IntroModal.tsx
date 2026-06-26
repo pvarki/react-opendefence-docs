@@ -116,6 +116,26 @@ export function IntroModal() {
       )}
 
       <div className="flex items-center justify-between gap-3 pt-1">
+        <div className="flex gap-2">
+          <Button
+            size="lg"
+            variant="outline"
+            onClick={() => setStep((s) => Math.max(0, s - 1))}
+            disabled={step === 0}
+          >
+            <ChevronLeft />
+            {t("intro.back")}
+          </Button>
+          <Button
+            size="lg"
+            onClick={() =>
+              isLast ? handleOpenChange(false) : setStep((s) => s + 1)
+            }
+          >
+            {isLast ? t("intro.finish") : t("intro.next")}
+            <ChevronRight />
+          </Button>
+        </div>
         <div className="flex gap-1.5" aria-hidden>
           {SLIDES.map((s, i) => (
             <span
@@ -126,24 +146,6 @@ export function IntroModal() {
               )}
             />
           ))}
-        </div>
-        <div className="flex gap-2">
-          <Button
-            variant="outline"
-            onClick={() => setStep((s) => Math.max(0, s - 1))}
-            disabled={step === 0}
-          >
-            <ChevronLeft />
-            {t("intro.back")}
-          </Button>
-          <Button
-            onClick={() =>
-              isLast ? handleOpenChange(false) : setStep((s) => s + 1)
-            }
-          >
-            {isLast ? t("intro.finish") : t("intro.next")}
-            <ChevronRight />
-          </Button>
         </div>
       </div>
     </div>

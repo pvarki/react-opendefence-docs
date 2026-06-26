@@ -1,7 +1,7 @@
 {
   "app": {
     "title": "OpenDefence Docs",
-    "tagline": "Opi Deploy App ja OpenDefence-pino"
+    "tagline": "Opi käyttämään Deploy Appia ja OpenDefence-pinoa"
   },
   "docsBuild": "Dokumentaation koonti {{date}} · {{commit}}",
   "guideIssues": "Ongelmia? Toiveita? Tee issue →",
@@ -35,7 +35,7 @@
     "powerCard": "Olen tehokäyttäjä",
     "powerCardDesc": "Käytä tuotteita edistyneillä tavoilla",
     "demoCard": "Kokeile demoa",
-    "demoCardDesc": "KoOkeile, miten Deploy App toimii ja miltä se tuntuu"
+    "demoCardDesc": "Kokeile, miten Deploy App toimii ja miltä se tuntuu"
   },
   "intro": {
     "back": "Takaisin",
@@ -44,7 +44,7 @@
     "revisit": "Tietoa sivustosta",
     "slide1": {
       "title": "Tervetuloa OpenDefence-dokumentaatioon",
-      "body": "OpenDefence on Puolustusvoimia palveleva kansallisen puolustuksen avoimen lähdekoodin projekti, jonka tavoitteena on tarjota monitoimialueen operaatioihin kykeneviä C2-palveluita sotilaille helposti ja yhteentoimivasti. Täältä löydät ohjeet sen käyttöön, integrointiin ja kehittämiseen."
+      "body": "OpenDefence on Puolustusvoimia palveleva kansallisen puolustuksen avoimen lähdekoodin projekti, jonka tavoitteena on tarjota monialueoperaatioihin kykeneviä C2-palveluita sotilaille helposti ja yhteentoimivasti. Täältä löydät ohjeet sen käyttöön, integrointiin ja kehittämiseen."
     },
     "slide2": {
       "title": "Sotilaan alusta",
@@ -52,7 +52,7 @@
     },
     "slide3": {
       "title": "Oppaat käyttöön tai kehitykseen",
-      "body": "Tämä dokumentaatiosivusto sisältää loppukäyttäjien oppaita sekä dokumentaatiota osallistujille, integroijille ja operoijille. Tervetuloa OpenDefenceen — tehdään työtä liittoutuneiden puolustuksen puolesta.",
+      "body": "Tämä dokumentaatiosivusto sisältää loppukäyttäjien oppaita sekä dokumentaatiota osallistujille, integroijille ja operaattoreille. Tervetuloa OpenDefenceen — tehdään työtä liittoutuneiden puolustuksen puolesta.",
       "contact": "Yhteystieto: Yhteyspiste tulossa."
     }
   },
@@ -78,7 +78,7 @@
         "a1": "Suomen kansalainen",
         "a2": "Nato-maasta tai Ukrainasta",
         "a3": "muualta?",
-        "a1Body": "Rakennamme Puolustusvoimien ohjaamaa kehittäjä- ja käyttäjäyhteisöä, joka kehittää OpenDefenceä. Suomen kansalaisena olet tervetullut mukaan.\n\nYhteisönhallintamme on kuitenkin vielä rakenteilla. Siksi yhteisö on toistaiseksi kutsuilla toimiva — käy katsomassa hieman myöhemmin! Avoimen lähdekoodin osallistuminen auttaa sinua yhdistymään kanssamme, ja se on erittäin tervetullutta.",
+        "a1Body": "Rakennamme Puolustusvoimien ohjaamaa kehittäjä- ja käyttäjäyhteisöä, joka kehittää OpenDefenceä. Suomen kansalaisena olet tervetullut mukaan.\n\nYhteisönhallintamme on kuitenkin vielä rakenteilla. Siksi yhteisö on toistaiseksi avoin vain kutsutuille — käy katsomassa hieman myöhemmin! Avoimen lähdekoodin osallistuminen auttaa sinua luomaan yhteyden meihin, ja se on erittäin tervetullutta.",
         "a2Body": "Rakennamme Puolustusvoimien ohjaamaa kehittäjä- ja käyttäjäyhteisöä, joka kehittää OpenDefenceä. Nato-jäsenmaan tai Ukrainan kansalaisena olet tervetullut mukaan.\n\nYhteisönhallintamme on kuitenkin rakenteilla, ja ydinkehittäjäyhteisömme toimii suomeksi. Kehitämme keinoja avoimeen osallistumiseen ja yhteydenpitoon englanniksi — käy katsomassa myöhemmin. Avoimen lähdekoodin osallistuminen ja issuet ovat jo nyt erittäin tervetulleita.",
         "a3Body": "Ydinkehittäjä- ja käyttäjäyhteisömme on avoin Nato-jäsenmaiden ja Ukrainan kansalaisille. Avoimen lähdekoodin osallistuminen ja issuet ovat silti tervetulleita."
       },
@@ -86,28 +86,28 @@
         "prompt": "Olen…",
         "lead": "Etsimme osallistujia näistä taustoista.",
         "a1": "Ohjelmistoammattilainen",
-        "a2": "Reserviläinen, jota motivoi kehittää uusia tapoja taistella (mutta ei ohjelmistoammattilainen)",
+        "a2": "Reserviläinen, jota motivoi uusien taistelutapojen kehittäminen (mutta ei ohjelmistoammattilainen)",
         "a3": "Sotilasammattilainen",
         "a4": "Ei mikään näistä",
         "a1Body": "OpenDefence pyrkii olemaan paras tapa tehdä vapaaehtoista maanpuolustusta ammattitaidollasi. Haluamme tehdä merkityksellisestä osallistumisesta helppoa emmekä rasittaa sinua turhalla näpertelyllä. Olet juuri se kohderyhmä, jolle tätä rakennamme.",
-        "a2Body": "Otamme erittäin mielellämme mukaan reserviläiset, jotka ovat innoissaan kehittämässä sitä, miten taistelemme. Sinut on kutsuttu testaamaan ja antamaan palautetta OpenDefencestä sekä osallistumaan uusien ominaisuuksien ideointiin osaksi stackia.",
-        "a3Body": "Innokkaiden reserviläisten tavoin sotilasammattilaiset ovat erittäin tervetulleita antamaan palautetta ja ideoimaan uusia ominaisuuksia osaksi stackia. Suosittelemme ottamaan yhteyttä projektin Puolustusvoimien vastuuhenkilöön edetäksesi.",
-        "a4Body": "Jos satut olemaan kiinnostunut ohjelmistokehityksestä, ei ole parempaa paikkaa aloittaa kuin avoin lähdekoodi. Kokeile lukea näitä dokumentteja — erityisesti parhaita käytäntöjämme — hioaksesi taitojasi. Toivotamme aloittelevat osallistujat tervetulleiksi vahvassa uskossa, että sinusta tulee loistava tehtävässä tekemällä sitä."
+        "a2Body": "Otamme erittäin mielellämme mukaan reserviläiset, jotka ovat innoissaan kehittämässä sitä, miten taistelemme. Sinut on kutsuttu testaamaan ja antamaan palautetta OpenDefencestä sekä ideoimaan pinoon uusia ominaisuuksia.",
+        "a3Body": "Innokkaiden reserviläisten tavoin sotilasammattilaiset ovat erittäin tervetulleita antamaan palautetta ja ideoimaan pinoon uusia ominaisuuksia. Suosittelemme ottamaan yhteyttä projektin vastuuhenkilöön Puolustusvoimissa edetäksesi.",
+        "a4Body": "Jos satut olemaan kiinnostunut ohjelmistokehityksestä, ei ole parempaa paikkaa aloittaa kuin avoin lähdekoodi. Kokeile lukea näitä dokumentteja — erityisesti parhaita käytäntöjämme — hioaksesi taitojasi. Toivotamme aloittelevat osallistujat tervetulleiksi vahvassa uskossa, että työ tekijäänsä opettaa."
       },
       "q3": {
         "prompt": "Mikä sisältö kiinnostaa sinua ensin?",
-        "lead": "Kehittäjädokumentaatiomme on rakenteilla, mutta pyrimme tarjoamaan sinulle täyden kokonaisuuden ymmärtää avointa lähdekoodiamme tarpeisiisi.",
+        "lead": "Kehittäjädokumentaatiomme on rakenteilla, mutta pyrimme tarjoamaan sinulle kattavan kokonaisuuden, jonka avulla ymmärrät avointa lähdekoodiamme tarpeitasi varten.",
         "a1": "Yleiskatsaus kehittäjädokumentaatioon",
         "a2": "Miten kloonata ja pystyttää kehitysympäristö",
         "a3": "Yleiskatsaus arkkitehtuuriin",
         "a4": "Tutustu parhaisiin käytäntöihimme",
         "a5": "Miten tuoda osallistumiseni PR:nä",
-        "a6": "Lue lisää TAKin kehittämisestä, joka on keskeinen toimitettava tuote"
+        "a6": "Lue lisää TAKin – keskeisen toimitettavan tuotteen – kehittämisestä"
       }
     },
     "integrate": {
       "title": "Integroi",
-      "lead": "OpenDefence-stack pyrkii olemaan rajapinta, jonka kautta tuotekehittäjät saavat ratkaisunsa sotilaille. Jos haluat voittaa tulevaisuuden taistelukentän ratkaisuilla, käytä meitä tapana toimittaa tuotteesi sotilaille tavalla, joka täyttää todelliset sotilaalliset vaatimukset.",
+      "lead": "OpenDefence-pino pyrkii olemaan rajapinta, jonka kautta tuotekehittäjät saavat ratkaisunsa sotilaille. Jos haluat voittaa tulevaisuuden taistelukentän ratkaisuilla, käytä meitä tapana toimittaa tuotteesi sotilaille tavalla, joka täyttää todelliset sotilaalliset vaatimukset.",
       "q1": {
         "prompt": "Oletko…",
         "a1": "Rakentamassa tai operoimassa puolustusalan startupia",
@@ -121,14 +121,14 @@
         "prompt": "Mistä haluaisit aloittaa?",
         "lead": "Näin rakennat integraation.",
         "a1": "Integraation yleiskatsaus",
-        "a2": "Pohjusta mallipohjasta",
+        "a2": "Luo runko mallipohjasta",
         "a3": "Käytännön esimerkki: Matrix",
         "a4": "Integraation käytännöt ja vältettävät asiat"
       }
     },
     "operate": {
       "title": "Operoi",
-      "lead": "Deploy Appin avulla organisaatiosi voi pystyttää ja ylläpitää täyden, yhteentoimivien palveluiden kokonaisuuden sotilaille. Se on pysyvästi avointa lähdekoodia, ja sen tavoitteena on tukea Puolustusvoimia, kansallista turvallisuutta ja liittolaisia.",
+      "lead": "Deploy Appin avulla organisaatiosi voi pystyttää ja ylläpitää täyden yhteentoimivien palveluiden kokonaisuuden sotilaille. Se on pysyvästi avointa lähdekoodia, ja sen tavoitteena on tukea Puolustusvoimia, kansallista turvallisuutta ja liittolaisia.",
       "q1": {
         "prompt": "Oletko…",
         "a1": "Arvioimassa Deploy Appia yksikölleni tai organisaatiolleni",
@@ -223,7 +223,7 @@
   },
   "footer": {
     "lead": "OpenDefence on Puolustusvoimia palveleva kansallisen puolustuksen avoimen lähdekoodin hanke, jonka tavoitteena on tarjota sotilaille monialueoperaatioihin kykeneviä johtamispalveluita helposti ja yhteentoimivasti.",
-    "lead2": "Hankkeen kulmakivi on Deploy App, joka ottaa vastaan tuoteintegraatioita, määrittää miten niiden kanssa käynnistetään palvelimia ja antaa sotilaiden käyttää niitä helposti.",
+    "lead2": "Hankkeen kulmakivi on Deploy App, joka ottaa vastaan tuoteintegraatioita, määrittää, miten niiden kanssa käynnistetään palvelimia ja antaa sotilaiden käyttää niitä helposti.",
     "tellMore": "Kerro lisää",
     "core": "OpenDefence-pinon ydin on Deploy App. Käyttäjille se on helpoiten kuvattuna sovellus käyttäjien lisäämiseen ja hallintaan; kehittäjille rajapinta, jonka kautta oma sovellus integroidaan ja saadaan sotilaiden käyttöön.",
     "easyTitle": "Tavoitteena helppo pääsy",
@@ -274,21 +274,21 @@
   "guideFooter": {
     "maintainedBy": "Tämän integraation kehittää ja ylläpitää OpenDefence.",
     "tak-guide": {
-      "lead": "TAK (Team Awareness Kit) on Yhdysvaltain hallituksen taistelutestattua tilannekuvaalusta, joka antaa sotilaille jaetun operatiivisen kuvan Android-, iOS- ja Windows-laitteiden välillä kentällä.",
+      "lead": "TAK (Team Awareness Kit) on Yhdysvaltain hallituksen taistelutestattu tilannekuva-alusta, joka antaa sotilaille jaetun operatiivisen kuvan Android-, iOS- ja Windows-laitteiden välillä kentällä.",
       "core": "OpenDefencen TAK-integraatio mahdollistaa TAK-palvelinten käyttöönoton Deploy Appin kautta ja tuo vaiheittaiset ohjeet suoraan sotilaiden käyttöön — kattaen asiakasohjelmiston asennuksen, palvelimen konfiguraation ja päivittäisen käytön.",
       "goal1Title": "Yhteinen operatiivinen kuva",
-      "goal1Body": "TAK pitää kaikki yksikön jäsenet samalla kartalla reaaliajassa. OpenDefencen integraatio varmistaa, että palvelinpuoli on asetettu oikein ja yhtenäisesti niin, että kuva on aina tarkka kun se eniten merkitsee.",
+      "goal1Body": "TAK pitää kaikki yksikön jäsenet samalla kartalla reaaliajassa. OpenDefencen integraatio varmistaa, että palvelinpuoli on asetettu oikein ja yhtenäisesti niin, että kuva on aina tarkka, kun se eniten merkitsee.",
       "goal2Title": "Monialustatuki",
-      "goal2Body": "ATAK:lla, iTAK:lla ja WinTAK:lla on omat asennusvirtansa. Tämä opas käy läpi jokaisen asiakkaan, jotta yksikään sotilas ei jää jälkeen laitteestaan riippumatta.",
+      "goal2Body": "ATAK:lla, iTAK:lla ja WinTAK:lla on kullakin oma asennusprosessinsa. Tämä opas käy läpi jokaisen asiakkaan, jotta yksikään sotilas ei jää jälkeen laitteestaan riippumatta.",
       "goal3Title": "Kenttäkelpoinen laatu",
       "goal3Body": "Jokainen tämän oppaan vaihe on validoitu todellisissa käyttöönottotilanteissa. Mitään ei sisällytetä, ellei se toimi luotettavasti operatiivisissa olosuhteissa.",
       "copyright": "TAK: © TAK Product Center, U.S. Government organization"
     },
     "mtx-guide": {
-      "lead": "MediaMTX on riippumaton mediapalvelin ja välityspalvelin, joka käsittelee RTSP-, RTMP-, HLS-, WebRTC- ja SRT-striimejä — suunniteltu viiveherkkään videoon kenttäolosuhteissa.",
+      "lead": "MediaMTX on riippuvuudeton mediapalvelin ja välityspalvelin, joka käsittelee RTSP-, RTMP-, HLS-, WebRTC- ja SRT-striimejä — suunniteltu viiveherkkään videoon kenttäolosuhteissa.",
       "core": "OpenDefencen MediaMTX-integraatio tarjoaa Deploy App -yhteensopivan mediapalvelimen käyttöönoton ja tiiviin oppaan kenttäkameroiden livevideon välittämiseen sotilaiden laitteille mahdollisimman vähällä konfiguraatiolla.",
       "goal1Title": "Pieni viive",
-      "goal1Body": "Alle sekunnin viive on ratkaisevaa, kun lähetys tulee UAV:lta kiistanalueella. MediaMTX saavuttaa tämän oletuksena; integraatio pitää konfigurointipolun mahdollisimman lyhyenä.",
+      "goal1Body": "Alle sekunnin viive on ratkaisevaa, kun lähetys tulee UAV:lta kiistanalaisella alueella. MediaMTX saavuttaa tämän oletuksena; integraatio pitää konfigurointipolun mahdollisimman lyhyenä.",
       "goal2Title": "Protokollajoustavuus",
       "goal2Body": "Eri asiakkaat tukevat eri protokollia. MediaMTX silloittaa RTSP-lähteet WebRTC-katsojille ilman lisäkoodausta, pitäen suorittimen käytön minimissä kenttälaitteistolla.",
       "goal3Title": "Yksinkertainen käyttöönotto",
@@ -301,7 +301,7 @@
       "goal1Title": "Oma viestintä",
       "goal1Body": "Yksikkösi viestit pysyvät omalla palvelimellasi. Yhdistäminen mahdollistaa viestinnän muiden yksiköiden palvelimien kanssa ilman, että yksikään organisaatio hallitsee koko verkostoa.",
       "goal2Title": "Päästä-päähän-salaus",
-      "goal2Body": "Matrixin E2EE tarkoittaa, että edes kotipalvelimen ylläpitäjä ei voi lukea viestien sisältöä. Tämä opas kattaa avaimen varmistamisvaiheet niin, että salaus on käytännössä aito, ei vain teoriassa.",
+      "goal2Body": "Matrixin E2EE tarkoittaa, että edes kotipalvelimen ylläpitäjä ei voi lukea viestien sisältöä. Tämä opas kattaa avainten varmennusvaiheet niin, että salaus on käytännössä aito, ei vain teoriassa.",
       "goal3Title": "Kestävä rakenne",
       "goal3Body": "Matrix-kotipalvelimet on suunniteltu selviytymään verkkokatkoista ja yhdistymään uudelleen sujuvasti. Käyttöönottokonfiguraatio on viritetty kenttäolosuhteissa tyypilliselle katkonaiselle yhteydelle.",
       "copyright": "Matrix: © The Matrix.org Foundation"
@@ -320,7 +320,7 @@
   },
   "clientFooter": {
     "atak": {
-      "lead": "ATAK on TAK-ekosysteemin lippulaivasovellus. ATAK:sta on muutamia niin sanottuja makuja — CIVTAK, MilTAK ja kansalliset TAK-sovellukset. Ne ovat sama sovellus, mutta hyväksyvät vain tietyllä tavalla allekirjoitettuja liitännäisiä: MilTAK-asennus hyväksyy MilTAK-allekirjoitetut liitännäiset ja hylkää muut."
+      "lead": "ATAK on TAK-ekosysteemin lippulaivasovellus. ATAK:sta on muutamia niin sanottuja muunnelmia — CIVTAK, MilTAK ja kansalliset TAK-sovellukset. Ne ovat sama sovellus, mutta hyväksyvät vain tietyllä tavalla allekirjoitettuja liitännäisiä: MilTAK-asennus hyväksyy MilTAK-allekirjoitetut liitännäiset ja hylkää muut."
     },
     "itak": {
       "lead": "iTAK on ATAK:n iOS-versio, joka tuo täyden TAK-tilannekuvakokemuksen iPhoneen ja iPadiin. Se käyttää samoja palvelinprotokollia ja tietomuotoja kuin ATAK, joten ATAK- ja iTAK-käyttäjät näkevät toisensa samalla kartalla."
