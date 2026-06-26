@@ -1,24 +1,19 @@
 {
   "schemaVersion": 1,
   "id": "45a3e50c-b7c2-45d3-927d-bf2e2d97cbbf",
-  "slug": "make-sure-you-have-the-atak-app-bJC3Opax4P",
+  "slug": "download-the-app-bJC3Opax4P",
   "collection": "guides/tak-guide",
   "locale": "en",
-  "title": "Make sure you have the ATAK App",
+  "title": "Download the App",
   "breadcrumb": [
     "Platforms",
     "ATAK",
     "START & CONNECT",
-    "Make sure you have the ATAK App"
+    "Download the App"
   ],
   "createdAt": "2025-12-05T22:06:23.638Z",
-  "updatedAt": "2026-06-18T20:13:36.896Z",
+  "updatedAt": "2026-06-26T11:52:06.715Z",
   "headings": [],
-  "translations": {
-    "en": "/en/guides/tak-guide/make-sure-you-have-the-atak-app-bJC3Opax4P",
-    "fi": "/fi/guides/tak-guide/varmista-etta-sinulla-on-atak-sovellus-ceMKXWjxoQ",
-    "sv": "/sv/guides/tak-guide/se-till-att-du-har-atak-appen-ep7TvO7XkN"
-  },
   "blocks": [
     {
       "type": "slideset",
@@ -63,7 +58,7 @@
         {
           "title": "Permissions 2",
           "layout": "image-bottom",
-          "html": "<ul>\n<li>ATAK app asks a number of permissions within your phone.</li>\n<li>The permission rationale explains, that none of user data ends up to the TAK developers (U.S. TPC).</li>\n<li>What these permissions enable is to make your TAK data to flow to <strong>your unit's</strong> TAK Server, which is operated by eg. FDF.</li>\n<li>No other data than what happens in ATAK is concerned here.</li>\n<li>Tap <strong>I understand</strong> to continue.</li>\n</ul>",
+          "html": "<ul>\n<li>\n<p>ATAK app asks a number of permissions within your phone.</p>\n</li>\n<li>\n<p>The permission rationale explains, that none of user data ends up to the TAK developers (U.S. TPC).</p>\n</li>\n<li>\n<p>What these permissions enable is to make your TAK data to flow to <strong>your unit's</strong> TAK Server, which is operated by eg. FDF.</p>\n</li>\n<li>\n<p>No other data than what happens in ATAK is concerned here.</p>\n</li>\n<li>\n<p>Tap <strong>I understand</strong> to continue.</p>\n</li>\n</ul>",
           "images": [
             {
               "src": "/content/images/en/attachments/1b64bf072a4658a4.webp",

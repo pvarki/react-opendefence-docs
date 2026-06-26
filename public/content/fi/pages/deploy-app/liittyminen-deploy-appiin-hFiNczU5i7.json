@@ -6,6 +6,7 @@
   "locale": "fi",
   "title": "Liittyminen Deploy Appiin",
   "breadcrumb": [
+    "Platforms",
     "Android",
     "Käyttäjäohjeet",
     "Liittyminen Deploy Appiin"
@@ -21,7 +22,7 @@
         {
           "title": "Pääsyn saaminen",
           "layout": "image-left",
-          "html": "<p>Instanssiin liittymiseen on useita vaihtoehtoja:</p>\n<ul>\n<li>QR-koodin skannaaminen (Avaa seuraavan sivun välittömästi)</li>\n<li>Linkki (Avaa seuraavan sivun välittömästi)</li>\n<li>Linkki + manuaalinen koodi (Avaa vasemmalla olevan sivun)\nKäytä mitä tahansa organisaatiossasi käytössä olevaa menetelmää.</li>\n</ul>",
+          "html": "<p>Instanssiin liittymiseen on useita vaihtoehtoja:</p>\n<ul>\n<li>QR-koodin skannaaminen (Avaa seuraavan sivun välittömästi)</li>\n<li>Linkki (Avaa seuraavan sivun välittömästi)</li>\n<li>Linkki + manuaalinen koodi (Avaa vasemmalla olevan sivun)</li>\n</ul>\n<p>Käytä mitä tahansa organisaatiossasi käytössä olevaa menetelmää.</p>",
           "images": [
             {
               "src": "/content/images/fi/attachments/7dcca9a65e3947c3.webp",

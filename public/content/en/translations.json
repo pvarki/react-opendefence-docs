@@ -1,74 +1,4 @@
 {
-  "introduction-d1XzfzOkpz": {
-    "en": "/en/deploy-app/introduction-d1XzfzOkpz",
-    "fi": "/fi/deploy-app/johdanto-pVdcEzIB4j",
-    "sv": "/sv/deploy-app/introduktion-8VdRmYg8Vp"
-  },
-  "joining-a-deploy-app-A7hCnp5D1b": {
-    "en": "/en/deploy-app/joining-a-deploy-app-A7hCnp5D1b",
-    "fi": "/fi/deploy-app/liittyminen-deploy-appiin-Jy261fSdzF",
-    "sv": "/sv/deploy-app/ansluta-till-en-deploy-app-rDiRCLSL8s"
-  },
-  "using-applications-FFuT98Qlcv": {
-    "en": "/en/deploy-app/using-applications-FFuT98Qlcv",
-    "fi": "/fi/deploy-app/sovellusten-kayttaminen-AZUWkin399",
-    "sv": "/sv/deploy-app/anvanda-applikationer-TmM85VECUH"
-  },
-  "interface-pyG1Ln1MfU": {
-    "en": "/en/deploy-app/interface-pyG1Ln1MfU",
-    "fi": "/fi/deploy-app/kayttoliittyma-AYxx37RhPK",
-    "sv": "/sv/deploy-app/granssnitt-fbWb4p1Ea6"
-  },
-  "first-login-oKodQDb6I1": {
-    "en": "/en/deploy-app/first-login-oKodQDb6I1",
-    "fi": "/fi/deploy-app/ensimmainen-kirjautuminen-6xSLnWbWmV",
-    "sv": "/sv/deploy-app/forsta-inloggningen-ZynVs60T8M"
-  },
-  "adding-users-LKw6wrsELi": {
-    "en": "/en/deploy-app/adding-users-LKw6wrsELi",
-    "fi": "/fi/deploy-app/kayttajien-lisaaminen-A97x9tyG2o",
-    "sv": "/sv/deploy-app/lagga-till-anvandare-yQNQQKKHyp"
-  },
-  "managing-users-nWgFG3XzMv": {
-    "en": "/en/deploy-app/managing-users-nWgFG3XzMv",
-    "fi": "/fi/deploy-app/kayttajien-hallinta-ThmzgQfcOQ",
-    "sv": "/sv/deploy-app/hantera-anvandare-l24qOTAPIQ"
-  },
-  "access-external-services-wQy9bpe1aE": {
-    "en": "/en/deploy-app/access-external-services-wQy9bpe1aE",
-    "fi": "/fi/deploy-app/ulkoiset-palvelut-SIWRaQtmte",
-    "sv": "/sv/deploy-app/externa-tjanster-0NmqWJBmQK"
-  },
-  "join-a-deploy-app-Ns73TcVodz": {
-    "en": "/en/deploy-app/join-a-deploy-app-Ns73TcVodz",
-    "fi": "/fi/deploy-app/liity-deploy-app-sovellukseen-h2y5oF7JN4",
-    "sv": "/sv/deploy-app/anslut-till-en-deploy-app-LSYhrD19yJ"
-  },
-  "admin-first-login-1wjrnFERNt": {
-    "en": "/en/deploy-app/admin-first-login-1wjrnFERNt",
-    "fi": "/fi/deploy-app/ensimmainen-kirjautuminen-w6ucKbFHSI",
-    "sv": "/sv/deploy-app/forsta-inloggningen-30j0MZLvzy"
-  },
-  "what-is-tak-Vy8mUPLS87": {
-    "en": "/en/guides/tak-guide/what-is-tak-Vy8mUPLS87",
-    "fi": "/fi/guides/tak-guide/mika-on-tak-u19DIbyqfY",
-    "sv": "/sv/guides/tak-guide/vad-ar-tak-Y5ZYfcXyh8"
-  },
-  "start-from-deploy-app-aFY9LCZCf0": {
-    "en": "/en/guides/tak-guide/start-from-deploy-app-aFY9LCZCf0",
-    "fi": "/fi/guides/tak-guide/aloita-deploy-app-sovelluksesta-R0jCXhuEn5",
-    "sv": "/sv/guides/tak-guide/borja-fran-deploy-app-05KDQT0EcH"
-  },
-  "make-sure-you-have-the-atak-app-bJC3Opax4P": {
-    "en": "/en/guides/tak-guide/make-sure-you-have-the-atak-app-bJC3Opax4P",
-    "fi": "/fi/guides/tak-guide/varmista-etta-sinulla-on-atak-sovellus-ceMKXWjxoQ",
-    "sv": "/sv/guides/tak-guide/se-till-att-du-har-atak-appen-ep7TvO7XkN"
-  },
-  "importing-server-connection-PQ4dCV2SYR": {
-    "en": "/en/guides/tak-guide/importing-server-connection-PQ4dCV2SYR",
-    "fi": "/fi/guides/tak-guide/palvelinyhteyden-tuonti-orW4BArnHi",
-    "sv": "/sv/guides/tak-guide/importera-serveranslutning-Heo41dBNko"
-  },
   "load-atak-plugins-xBeVkYsFjI": {
     "en": "/en/guides/tak-guide/load-atak-plugins-xBeVkYsFjI",
     "fi": "/fi/guides/tak-guide/lataa-atak-liitannaiset-CrjCC07xf1",
@@ -748,5 +678,60 @@
     "en": "/en/guides/cryptpad-guide/back-up-your-data-xYdkRa1Tms",
     "fi": "/fi/guides/cryptpad-guide/varmuuskopioi-tietosi-DQfftbWf4c",
     "sv": "/sv/guides/cryptpad-guide/sakerhetskopiera-dina-data-yVu1FNdIEb"
+  },
+  "what-is-tak-Vy8mUPLS87": {
+    "en": "/en/guides/tak-guide/what-is-tak-Vy8mUPLS87",
+    "fi": "/fi/guides/tak-guide/mika-on-tak-u19DIbyqfY",
+    "sv": "/sv/guides/tak-guide/vad-ar-tak-Y5ZYfcXyh8"
+  },
+  "introduction-d1XzfzOkpz": {
+    "en": "/en/deploy-app/introduction-d1XzfzOkpz",
+    "fi": "/fi/deploy-app/johdanto-pVdcEzIB4j",
+    "sv": "/sv/deploy-app/introduktion-8VdRmYg8Vp"
+  },
+  "joining-a-deploy-app-A7hCnp5D1b": {
+    "en": "/en/deploy-app/joining-a-deploy-app-A7hCnp5D1b",
+    "fi": "/fi/deploy-app/liittyminen-deploy-appiin-Jy261fSdzF",
+    "sv": "/sv/deploy-app/ansluta-till-en-deploy-app-rDiRCLSL8s"
+  },
+  "using-applications-FFuT98Qlcv": {
+    "en": "/en/deploy-app/using-applications-FFuT98Qlcv",
+    "fi": "/fi/deploy-app/sovellusten-kayttaminen-AZUWkin399",
+    "sv": "/sv/deploy-app/anvanda-applikationer-TmM85VECUH"
+  },
+  "interface-pyG1Ln1MfU": {
+    "en": "/en/deploy-app/interface-pyG1Ln1MfU",
+    "fi": "/fi/deploy-app/kayttoliittyma-AYxx37RhPK",
+    "sv": "/sv/deploy-app/granssnitt-fbWb4p1Ea6"
+  },
+  "first-login-oKodQDb6I1": {
+    "en": "/en/deploy-app/first-login-oKodQDb6I1",
+    "fi": "/fi/deploy-app/ensimmainen-kirjautuminen-6xSLnWbWmV",
+    "sv": "/sv/deploy-app/forsta-inloggningen-ZynVs60T8M"
+  },
+  "adding-users-LKw6wrsELi": {
+    "en": "/en/deploy-app/adding-users-LKw6wrsELi",
+    "fi": "/fi/deploy-app/kayttajien-lisaaminen-A97x9tyG2o",
+    "sv": "/sv/deploy-app/lagga-till-anvandare-yQNQQKKHyp"
+  },
+  "managing-users-nWgFG3XzMv": {
+    "en": "/en/deploy-app/managing-users-nWgFG3XzMv",
+    "fi": "/fi/deploy-app/kayttajien-hallinta-ThmzgQfcOQ",
+    "sv": "/sv/deploy-app/hantera-anvandare-l24qOTAPIQ"
+  },
+  "access-external-services-wQy9bpe1aE": {
+    "en": "/en/deploy-app/access-external-services-wQy9bpe1aE",
+    "fi": "/fi/deploy-app/ulkoiset-palvelut-SIWRaQtmte",
+    "sv": "/sv/deploy-app/externa-tjanster-0NmqWJBmQK"
+  },
+  "join-a-deploy-app-Ns73TcVodz": {
+    "en": "/en/deploy-app/join-a-deploy-app-Ns73TcVodz",
+    "fi": "/fi/deploy-app/liity-deploy-app-sovellukseen-h2y5oF7JN4",
+    "sv": "/sv/deploy-app/anslut-till-en-deploy-app-LSYhrD19yJ"
+  },
+  "admin-first-login-1wjrnFERNt": {
+    "en": "/en/deploy-app/admin-first-login-1wjrnFERNt",
+    "fi": "/fi/deploy-app/ensimmainen-kirjautuminen-w6ucKbFHSI",
+    "sv": "/sv/deploy-app/forsta-inloggningen-30j0MZLvzy"
   }
 }

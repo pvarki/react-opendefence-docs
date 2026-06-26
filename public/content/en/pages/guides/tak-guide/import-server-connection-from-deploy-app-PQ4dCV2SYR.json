@@ -1,24 +1,19 @@
 {
   "schemaVersion": 1,
   "id": "c8842f7a-f533-4bfe-9027-88f165d16ddb",
-  "slug": "importing-server-connection-PQ4dCV2SYR",
+  "slug": "import-server-connection-from-deploy-app-PQ4dCV2SYR",
   "collection": "guides/tak-guide",
   "locale": "en",
-  "title": "Importing Server Connection",
+  "title": "Import Server Connection from Deploy App",
   "breadcrumb": [
     "Platforms",
     "ATAK",
     "START & CONNECT",
-    "Importing Server Connection"
+    "Import Server Connection from Deploy App"
   ],
   "createdAt": "2025-12-05T22:06:23.582Z",
-  "updatedAt": "2026-06-18T20:13:38.334Z",
+  "updatedAt": "2026-06-26T11:52:07.115Z",
   "headings": [],
-  "translations": {
-    "en": "/en/guides/tak-guide/importing-server-connection-PQ4dCV2SYR",
-    "fi": "/fi/guides/tak-guide/palvelinyhteyden-tuonti-orW4BArnHi",
-    "sv": "/sv/guides/tak-guide/importera-serveranslutning-Heo41dBNko"
-  },
   "blocks": [
     {
       "type": "slideset",
@@ -27,7 +22,7 @@
         {
           "title": "Getting online",
           "layout": "text",
-          "html": "<ul>\n<li>With Deploy App, you can use <strong>'Auto Import Connection'</strong> from Deploy App's TAK page to connect to server.</li>\n<li>This connection method takes you two taps for green connection.</li>\n<li>From Deploy App you can also download the client configuration package.\nThis guide covers only the quick way, as with ATAK &#x26; Deploy App there is no need to manually to juggle with client zips nor passwords and so on.</li>\n</ul>",
+          "html": "<ul>\n<li>With Deploy App, you can use <strong>'Auto Import Connection'</strong> from Deploy App's TAK page to connect to server.</li>\n<li>This connection method takes you two taps for green connection.</li>\n<li>From Deploy App you can also download the client configuration package.</li>\n</ul>\n<p>This guide covers only the quick way, as with ATAK &#x26; Deploy App there is no need to manually to juggle with client zips nor passwords and so on.</p>",
           "images": []
         },
         {

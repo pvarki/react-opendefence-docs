@@ -17,21 +17,15 @@
       "children": [
         {
           "type": "doc",
-          "id": "start-from-deploy-app-aFY9LCZCf0",
-          "label": "Start from Deploy App",
-          "slug": "start-from-deploy-app-aFY9LCZCf0"
+          "id": "download-the-app-bJC3Opax4P",
+          "label": "Download the App",
+          "slug": "download-the-app-bJC3Opax4P"
         },
         {
           "type": "doc",
-          "id": "make-sure-you-have-the-atak-app-bJC3Opax4P",
-          "label": "Make sure you have the ATAK App",
-          "slug": "make-sure-you-have-the-atak-app-bJC3Opax4P"
-        },
-        {
-          "type": "doc",
-          "id": "importing-server-connection-PQ4dCV2SYR",
-          "label": "Importing Server Connection",
-          "slug": "importing-server-connection-PQ4dCV2SYR"
+          "id": "import-server-connection-from-deploy-app-PQ4dCV2SYR",
+          "label": "Import Server Connection from Deploy App",
+          "slug": "import-server-connection-from-deploy-app-PQ4dCV2SYR"
         },
         {
           "type": "doc",

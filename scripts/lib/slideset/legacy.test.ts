@@ -248,3 +248,25 @@ describe("non-slide content safety", () => {
     expect(markdown).toContain("![standalone](/img/keep.webp)");
   });
 });
+
+describe("blank lines in slide bodies", () => {
+  it("keeps a blank line between a bullet list and following prose", () => {
+    const body = [
+      "# Gap Slide",
+      "- bullet one",
+      "- bullet two",
+      "",
+      "A trailing sentence.",
+      "---",
+      "# Second Slide",
+      "- another",
+    ].join("\n");
+    const { slidesets } = extractLegacySlidesets(fence(body));
+    const set = slidesets.get("legacy-0");
+    // The blank line survives so the sentence is its own paragraph (with a
+    // gap) rather than lazy-joining onto the last bullet.
+    expect(set?.slides[0].bodyMarkdown).toBe(
+      "- bullet one\n- bullet two\n\nA trailing sentence.",
+    );
+  });
+});

@@ -17,21 +17,15 @@
       "children": [
         {
           "type": "doc",
-          "id": "aloita-deploy-app-sovelluksesta-R0jCXhuEn5",
-          "label": "Aloita Deploy App -sovelluksesta",
-          "slug": "aloita-deploy-app-sovelluksesta-R0jCXhuEn5"
+          "id": "lataa-sovellus-ceMKXWjxoQ",
+          "label": "Lataa sovellus",
+          "slug": "lataa-sovellus-ceMKXWjxoQ"
         },
         {
           "type": "doc",
-          "id": "varmista-etta-sinulla-on-atak-sovellus-ceMKXWjxoQ",
-          "label": "Varmista, että sinulla on ATAK-sovellus",
-          "slug": "varmista-etta-sinulla-on-atak-sovellus-ceMKXWjxoQ"
-        },
-        {
-          "type": "doc",
-          "id": "palvelinyhteyden-tuonti-orW4BArnHi",
-          "label": "Palvelinyhteyden tuonti",
-          "slug": "palvelinyhteyden-tuonti-orW4BArnHi"
+          "id": "tuo-palvelinyhteys-deploy-appista-orW4BArnHi",
+          "label": "Tuo palvelinyhteys Deploy Appista",
+          "slug": "tuo-palvelinyhteys-deploy-appista-orW4BArnHi"
         },
         {
           "type": "doc",

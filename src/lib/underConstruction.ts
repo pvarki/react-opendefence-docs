@@ -26,6 +26,9 @@ const SCOPES: Scope[] = [
   { collection: "wikis/mtx" },
   // MTX guide — the whole book.
   { collection: "guides/mtx-guide" },
+  // TAK guide — the iOS guides (iTAK + TAK Tracker - Apple) are the only
+  // ios-platform clients, so this flags exactly those two.
+  { collection: "guides/tak-guide", platform: "ios" },
   // TAK plugin guides — the SUPPORTED PLUGINS chapters (ATAK + WinTAK).
   // ponytail: chapters listed by id; if a SUPPORTED PLUGINS toporg gains a
   // chapter, add its chapterId here.

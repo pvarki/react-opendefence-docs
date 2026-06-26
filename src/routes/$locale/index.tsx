@@ -1,14 +1,19 @@
+import { Fragment, useState, type ReactNode } from "react";
 import { createFileRoute } from "@tanstack/react-router";
 import { useTranslation } from "react-i18next";
 import {
   BookOpen,
   ChevronDown,
   Code2,
+  Info,
   MonitorPlay,
   Smartphone,
   Zap,
 } from "lucide-react";
+import type { LucideIcon } from "lucide-react";
 import { BookCard } from "@/components/shell/BookCard";
+import { OrientationModal } from "@/components/shell/OrientationModal";
+import { markOrientationSeen, type TrackKey } from "@/lib/orientationFlows";
 import { AgentFriendlyNote } from "@/components/shell/AgentFriendlyNote";
 import { CARD_IMAGES } from "@/lib/cardImages";
 import { withBase } from "@/lib/base";
@@ -17,32 +22,84 @@ export const Route = createFileRoute("/$locale/")({
   component: HomePage,
 });
 
-const CARDS = [
+interface HomeCard {
+  /** Internal route target (literal path) — mutually exclusive with href. */
+  to?: string;
+  /** External URL — opens in a new tab. */
+  href?: string;
+  icon: LucideIcon;
+  titleKey: string;
+  descKey: string;
+  /** CARD_IMAGES key for an optional card backdrop. */
+  img?: string;
+}
+
+// Three toporg-style organizers tell the story: what it is, how to read the
+// guides, how to develop. Headings render orange like the ATAK guide toporgs.
+const ORGANIZERS: { titleKey: string; cards: HomeCard[] }[] = [
   {
-    to: "deploy-app",
-    icon: Smartphone,
-    titleKey: "home.userCard",
-    descKey: "home.userCardDesc",
+    titleKey: "home.org.whatIs",
+    cards: [
+      {
+        href: "https://demo.opendefence.fi",
+        icon: MonitorPlay,
+        titleKey: "home.demoCard",
+        descKey: "home.demoCardDesc",
+      },
+      {
+        to: "/$locale/deploy-app/introduction-d1XzfzOkpz",
+        icon: Info,
+        titleKey: "home.introCard",
+        descKey: "home.introCardDesc",
+      },
+    ],
   },
   {
-    to: "guides",
-    icon: BookOpen,
-    titleKey: "home.guidesCard",
-    descKey: "home.guidesCardDesc",
+    titleKey: "home.org.guides",
+    cards: [
+      {
+        to: "/$locale/deploy-app",
+        icon: Smartphone,
+        titleKey: "home.userCard",
+        descKey: "home.userCardDesc",
+        img: "deploy-app",
+      },
+      {
+        to: "/$locale/guides",
+        icon: BookOpen,
+        titleKey: "home.guidesCard",
+        descKey: "home.guidesCardDesc",
+        img: "guides",
+      },
+    ],
   },
   {
-    to: "advanced",
-    icon: Zap,
-    titleKey: "home.powerCard",
-    descKey: "home.powerCardDesc",
+    titleKey: "home.org.develop",
+    cards: [
+      {
+        to: "/$locale/advanced",
+        icon: Zap,
+        titleKey: "home.powerCard",
+        descKey: "home.powerCardDesc",
+        img: "advanced",
+      },
+      {
+        to: "/$locale/dev",
+        icon: Code2,
+        titleKey: "home.devCard",
+        descKey: "home.devCardDesc",
+      },
+    ],
   },
-  {
-    to: "dev",
-    icon: Code2,
-    titleKey: "home.devCard",
-    descKey: "home.devCardDesc",
-  },
-] as const;
+];
+
+function SectionHeading({ children }: { children: ReactNode }) {
+  return (
+    <h2 className="px-1 pt-5 pb-2 text-[11px] font-semibold tracking-widest text-primary uppercase">
+      {children}
+    </h2>
+  );
+}
 
 function HomePage() {
   const { t } = useTranslation();
@@ -67,28 +124,26 @@ function HomePage() {
         </div>
       </div>
       <div className="mx-auto max-w-2xl px-4 py-4 md:py-8">
-        <div className="grid grid-cols-1 gap-2.5 md:grid-cols-2 md:gap-3">
-          {CARDS.map(({ to, icon, titleKey, descKey }) => (
-            <BookCard
-              key={to}
-              locale={locale}
-              to={`/$locale/${to}`}
-              icon={icon}
-              title={t(titleKey)}
-              description={t(descKey)}
-              image={CARD_IMAGES[to]}
-              size="tall"
-            />
-          ))}
-          <BookCard
-            locale={locale}
-            href="https://demo.opendefence.fi"
-            icon={MonitorPlay}
-            title={t("home.demoCard")}
-            description={t("home.demoCardDesc")}
-            size="tall"
-          />
-        </div>
+        {ORGANIZERS.map((org) => (
+          <Fragment key={org.titleKey}>
+            <SectionHeading>{t(org.titleKey)}</SectionHeading>
+            <div className="grid grid-cols-1 gap-2.5 md:grid-cols-2 md:gap-3">
+              {org.cards.map((card) => (
+                <BookCard
+                  key={card.titleKey}
+                  locale={locale}
+                  to={card.to}
+                  href={card.href}
+                  icon={card.icon}
+                  title={t(card.titleKey)}
+                  description={t(card.descKey)}
+                  image={card.img ? CARD_IMAGES[card.img] : undefined}
+                  size="tall"
+                />
+              ))}
+            </div>
+          </Fragment>
+        ))}
       </div>
       <HomeFooter />
     </div>
@@ -107,8 +162,16 @@ const COPYRIGHT_LINES = [
   "CryptPad: © XWiki SAS",
 ];
 
+// The contribute/integrate/operate doors — each opens a guided orientation flow.
+const CONTRIBUTE_DOORS: { track: TrackKey; labelKey: string }[] = [
+  { track: "contribute", labelKey: "devShelf.contribute" },
+  { track: "integrate", labelKey: "devShelf.integrate" },
+  { track: "operate", labelKey: "devShelf.operate" },
+];
+
 function HomeFooter() {
   const { t } = useTranslation();
+  const [orient, setOrient] = useState<TrackKey | null>(null);
 
   const goals = [
     { title: "footer.easyTitle", body: "footer.easyBody" },
@@ -171,6 +234,39 @@ function HomeFooter() {
             </p>
           </div>
         </details>
+
+        {/* The three doors for people who want to do more than read. */}
+        <div className="mt-8">
+          <h3 className="text-base font-semibold text-foreground">
+            {t("footer.contributeHeadline")}
+          </h3>
+          <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+            {t("footer.contributeBody")}
+          </p>
+          <div className="mt-3 flex flex-wrap gap-2">
+            {CONTRIBUTE_DOORS.map(({ track, labelKey }) => (
+              <button
+                key={track}
+                type="button"
+                onClick={() => {
+                  markOrientationSeen();
+                  setOrient(track);
+                }}
+                className="rounded-full border border-border px-3 py-1 text-sm text-foreground transition-colors hover:border-primary hover:text-primary"
+              >
+                {t(labelKey)}
+              </button>
+            ))}
+          </div>
+        </div>
+
+        <OrientationModal
+          open={orient !== null}
+          start={orient ?? "contribute"}
+          onOpenChange={(o) => {
+            if (!o) setOrient(null);
+          }}
+        />
 
         <div className="mt-6 space-y-0.5 border-t border-border pt-4">
           {COPYRIGHT_LINES.map((line) => (

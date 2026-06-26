@@ -1,24 +1,19 @@
 {
   "schemaVersion": 1,
   "id": "0572cbe9-3292-4b00-9832-ee67c379108e",
-  "slug": "varmista-etta-sinulla-on-atak-sovellus-ceMKXWjxoQ",
+  "slug": "lataa-sovellus-ceMKXWjxoQ",
   "collection": "guides/tak-guide",
   "locale": "fi",
-  "title": "Varmista, että sinulla on ATAK-sovellus",
+  "title": "Lataa sovellus",
   "breadcrumb": [
     "Platforms",
     "ATAK",
     "ALOITA JA YHDISTÄ",
-    "Varmista, että sinulla on ATAK-sovellus"
+    "Lataa sovellus"
   ],
   "createdAt": "2026-06-18T19:25:11.122Z",
-  "updatedAt": "2026-06-18T20:13:37.347Z",
+  "updatedAt": "2026-06-26T11:52:08.505Z",
   "headings": [],
-  "translations": {
-    "en": "/en/guides/tak-guide/make-sure-you-have-the-atak-app-bJC3Opax4P",
-    "fi": "/fi/guides/tak-guide/varmista-etta-sinulla-on-atak-sovellus-ceMKXWjxoQ",
-    "sv": "/sv/guides/tak-guide/se-till-att-du-har-atak-appen-ep7TvO7XkN"
-  },
   "blocks": [
     {
       "type": "slideset",
@@ -63,7 +58,7 @@
         {
           "title": "Käyttöoikeudet 2",
           "layout": "image-bottom",
-          "html": "<ul>\n<li>ATAK-sovellus pyytää useita käyttöoikeuksia puhelimessasi.</li>\n<li>Käyttöoikeuksien perustelu selittää, ettei mitään käyttäjän tietoja päädy TAKin kehittäjille (U.S. TPC).</li>\n<li>Nämä käyttöoikeudet mahdollistavat sen, että TAK-tietosi kulkevat <strong>oman yksikkösi</strong> TAK-palvelimelle, jota operoi esim. PV.</li>\n<li>Tässä on kyse vain siitä, mitä ATAKissa tapahtuu - ei mistään muista tiedoista.</li>\n<li>Napauta <strong>I understand</strong> jatkaaksesi.</li>\n</ul>",
+          "html": "<ul>\n<li>\n<p>ATAK-sovellus pyytää useita käyttöoikeuksia puhelimessasi.</p>\n</li>\n<li>\n<p>Käyttöoikeuksien perustelu selittää, ettei mitään käyttäjän tietoja päädy TAKin kehittäjille (U.S. TPC).</p>\n</li>\n<li>\n<p>Nämä käyttöoikeudet mahdollistavat sen, että TAK-tietosi kulkevat <strong>oman yksikkösi</strong> TAK-palvelimelle, jota operoi esim. PV.</p>\n</li>\n<li>\n<p>Tässä on kyse vain siitä, mitä ATAKissa tapahtuu - ei mistään muista tiedoista.</p>\n</li>\n<li>\n<p>Napauta <strong>I understand</strong> jatkaaksesi.</p>\n</li>\n</ul>",
           "images": [
             {
               "src": "/content/images/fi/attachments/1b64bf072a4658a4.webp",

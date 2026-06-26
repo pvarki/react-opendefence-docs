@@ -1,24 +1,19 @@
 {
   "schemaVersion": 1,
   "id": "533c534c-83ea-4469-8a21-9d7fe4118baa",
-  "slug": "se-till-att-du-har-atak-appen-ep7TvO7XkN",
+  "slug": "ladda-ner-appen-ep7TvO7XkN",
   "collection": "guides/tak-guide",
   "locale": "sv",
-  "title": "Se till att du har ATAK-appen",
+  "title": "Ladda ner appen",
   "breadcrumb": [
     "Platforms",
     "ATAK",
     "STARTA OCH ANSLUT",
-    "Se till att du har ATAK-appen"
+    "Ladda ner appen"
   ],
   "createdAt": "2026-06-18T19:25:11.423Z",
-  "updatedAt": "2026-06-18T20:13:37.803Z",
+  "updatedAt": "2026-06-26T11:52:09.961Z",
   "headings": [],
-  "translations": {
-    "en": "/en/guides/tak-guide/make-sure-you-have-the-atak-app-bJC3Opax4P",
-    "fi": "/fi/guides/tak-guide/varmista-etta-sinulla-on-atak-sovellus-ceMKXWjxoQ",
-    "sv": "/sv/guides/tak-guide/se-till-att-du-har-atak-appen-ep7TvO7XkN"
-  },
   "blocks": [
     {
       "type": "slideset",
@@ -63,7 +58,7 @@
         {
           "title": "Behörigheter 2",
           "layout": "image-bottom",
-          "html": "<ul>\n<li>ATAK-appen begär ett antal behörigheter i din telefon.</li>\n<li>Behörighetsmotiveringen förklarar att ingen användardata hamnar hos TAK-utvecklarna (U.S. TPC).</li>\n<li>Det dessa behörigheter möjliggör är att din TAK-data flödar till <strong>din enhets</strong> TAK-server, som drivs av t.ex. försvarsmakten.</li>\n<li>Det handlar här endast om det som sker i ATAK - ingen annan data berörs.</li>\n<li>Tryck på <strong>I understand</strong> för att fortsätta.</li>\n</ul>",
+          "html": "<ul>\n<li>\n<p>ATAK-appen begär ett antal behörigheter i din telefon.</p>\n</li>\n<li>\n<p>Behörighetsmotiveringen förklarar att ingen användardata hamnar hos TAK-utvecklarna (U.S. TPC).</p>\n</li>\n<li>\n<p>Det dessa behörigheter möjliggör är att din TAK-data flödar till <strong>din enhets</strong> TAK-server, som drivs av t.ex. försvarsmakten.</p>\n</li>\n<li>\n<p>Det handlar här endast om det som sker i ATAK - ingen annan data berörs.</p>\n</li>\n<li>\n<p>Tryck på <strong>I understand</strong> för att fortsätta.</p>\n</li>\n</ul>",
           "images": [
             {
               "src": "/content/images/sv/attachments/1b64bf072a4658a4.webp",
