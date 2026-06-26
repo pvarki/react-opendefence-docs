@@ -1,9 +1,4 @@
 {
-  "introduktion-8VdRmYg8Vp": {
-    "en": "/en/deploy-app/introduction-d1XzfzOkpz",
-    "fi": "/fi/deploy-app/johdanto-pVdcEzIB4j",
-    "sv": "/sv/deploy-app/introduktion-8VdRmYg8Vp"
-  },
   "ansluta-till-en-deploy-app-rDiRCLSL8s": {
     "en": "/en/deploy-app/joining-a-deploy-app-A7hCnp5D1b",
     "fi": "/fi/deploy-app/liittyminen-deploy-appiin-Jy261fSdzF",
@@ -53,21 +48,6 @@
     "en": "/en/guides/tak-guide/what-is-tak-Vy8mUPLS87",
     "fi": "/fi/guides/tak-guide/mika-on-tak-u19DIbyqfY",
     "sv": "/sv/guides/tak-guide/vad-ar-tak-Y5ZYfcXyh8"
-  },
-  "borja-fran-deploy-app-05KDQT0EcH": {
-    "en": "/en/guides/tak-guide/start-from-deploy-app-aFY9LCZCf0",
-    "fi": "/fi/guides/tak-guide/aloita-deploy-app-sovelluksesta-R0jCXhuEn5",
-    "sv": "/sv/guides/tak-guide/borja-fran-deploy-app-05KDQT0EcH"
-  },
-  "se-till-att-du-har-atak-appen-ep7TvO7XkN": {
-    "en": "/en/guides/tak-guide/make-sure-you-have-the-atak-app-bJC3Opax4P",
-    "fi": "/fi/guides/tak-guide/varmista-etta-sinulla-on-atak-sovellus-ceMKXWjxoQ",
-    "sv": "/sv/guides/tak-guide/se-till-att-du-har-atak-appen-ep7TvO7XkN"
-  },
-  "importera-serveranslutning-Heo41dBNko": {
-    "en": "/en/guides/tak-guide/importing-server-connection-PQ4dCV2SYR",
-    "fi": "/fi/guides/tak-guide/palvelinyhteyden-tuonti-orW4BArnHi",
-    "sv": "/sv/guides/tak-guide/importera-serveranslutning-Heo41dBNko"
   },
   "ladda-atak-plugins-TpJcLrKsGu": {
     "en": "/en/guides/tak-guide/load-atak-plugins-xBeVkYsFjI",
@@ -748,5 +728,10 @@
     "en": "/en/guides/cryptpad-guide/back-up-your-data-xYdkRa1Tms",
     "fi": "/fi/guides/cryptpad-guide/varmuuskopioi-tietosi-DQfftbWf4c",
     "sv": "/sv/guides/cryptpad-guide/sakerhetskopiera-dina-data-yVu1FNdIEb"
+  },
+  "introduktion-8VdRmYg8Vp": {
+    "en": "/en/deploy-app/introduction-d1XzfzOkpz",
+    "fi": "/fi/deploy-app/johdanto-pVdcEzIB4j",
+    "sv": "/sv/deploy-app/introduktion-8VdRmYg8Vp"
   }
 }

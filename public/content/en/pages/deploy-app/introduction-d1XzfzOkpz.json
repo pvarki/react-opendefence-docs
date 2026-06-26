@@ -10,7 +10,7 @@
     "Introduction"
   ],
   "createdAt": "2026-06-12T23:07:43.260Z",
-  "updatedAt": "2026-06-18T20:38:49.397Z",
+  "updatedAt": "2026-06-26T10:37:13.315Z",
   "headings": [],
   "translations": {
     "en": "/en/deploy-app/introduction-d1XzfzOkpz",
@@ -29,7 +29,7 @@
         {
           "title": "What is Deploy App",
           "layout": "image-left",
-          "html": "<p>Deploy App lets you access your unit's C2 server easily.</p>\n<ul>\n<li>You can easily add, manage and remove users from your server, in 0-2 minutes a job.</li>\n<li>Spawning a Deploy App instance to cloud or on-prem is an automated job taking ten minutes. No manual configuration.\nDeploy App contains apps integrated into it. Many apps can be developed to work with Deploy App.</li>\n</ul>",
+          "html": "<p>Deploy App lets you access your unit's C2 server easily.</p>\n<ul>\n<li>You can easily add, manage and remove users from your server, in 0-2 minutes a job.</li>\n<li>Spawning a Deploy App instance to cloud or on-prem is an automated job taking ten minutes. No manual configuration.</li>\n</ul>\n<p>Deploy App contains apps integrated into it. Many apps can be developed to work with Deploy App.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/25c1580a29c70523.webp",
@@ -41,7 +41,7 @@
         {
           "title": "Manage users",
           "layout": "image-left",
-          "html": "<p>Add users with QR-codes or links with ease. Manage their role and remove them by need.</p>\n<ul>\n<li>When invited, incoming users get a client certificate to their device.</li>\n<li>The client cert will be their identity and access to your unit's Deploy App server and services.\nClient certs are tried and true high-security tool. Chances are that eg. your usual enterprise identity card hosts one.</li>\n</ul>",
+          "html": "<p>Add users with QR-codes or links with ease. Manage their role and remove them by need.</p>\n<ul>\n<li>When invited, incoming users get a client certificate to their device.</li>\n<li>The client cert will be their identity and access to your unit's Deploy App server and services.</li>\n</ul>\n<p>Client certs are tried and true high-security tool. Chances are that eg. your usual enterprise identity card hosts one.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/408823f815c4d338.webp",
@@ -53,7 +53,7 @@
         {
           "title": "Developed to be augmented",
           "layout": "image-left",
-          "html": "<ul>\n<li>App developers can make their app to work with Deploy App.</li>\n<li>This aims to simplify how you get your app to soldiers, both from soldiers' and your viewpoints.\nFamiliarize yourself on how to use Deploy App from the following guide.</li>\n</ul>",
+          "html": "<ul>\n<li>App developers can make their app to work with Deploy App.</li>\n<li>This aims to simplify how you get your app to soldiers, both from soldiers' and your viewpoints.</li>\n</ul>\n<p>Familiarize yourself on how to use Deploy App from the following guide.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/51dfa90a783a5717.webp",

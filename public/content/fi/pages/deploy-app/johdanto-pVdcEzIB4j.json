@@ -29,7 +29,7 @@
         {
           "title": "Mikä on Deploy App",
           "layout": "image-left",
-          "html": "<p>Deploy App antaa sinulle helpon pääsyn yksikkösi C2-palvelimelle.</p>\n<ul>\n<li>Voit helposti lisätä, hallita ja poistaa käyttäjiä palvelimeltasi, 0-2 minuutin työ.</li>\n<li>Deploy App -instanssin pystyttäminen pilveen tai paikallisesti on automatisoitu työ, joka vie kymmenen minuuttia. Ei manuaalista konfigurointia.\nDeploy App sisältää siihen integroituja sovelluksia. Monia sovelluksia voidaan kehittää toimimaan Deploy Appin kanssa.</li>\n</ul>",
+          "html": "<p>Deploy App antaa sinulle helpon pääsyn yksikkösi C2-palvelimelle.</p>\n<ul>\n<li>Voit helposti lisätä, hallita ja poistaa käyttäjiä palvelimeltasi, 0-2 minuutin työ.</li>\n<li>Deploy App -instanssin pystyttäminen pilveen tai paikallisesti on automatisoitu työ, joka vie kymmenen minuuttia. Ei manuaalista konfigurointia.</li>\n</ul>\n<p>Deploy App sisältää siihen integroituja sovelluksia. Monia sovelluksia voidaan kehittää toimimaan Deploy Appin kanssa.</p>",
           "images": [
             {
               "src": "/content/images/fi/attachments/25c1580a29c70523.webp",
@@ -41,7 +41,7 @@
         {
           "title": "Hallitse käyttäjiä",
           "layout": "image-left",
-          "html": "<p>Lisää käyttäjiä helposti QR-koodeilla tai linkeillä. Hallitse heidän rooliaan ja poista heidät tarvittaessa.</p>\n<ul>\n<li>Kutsutut käyttäjät saavat laitteeseensa asiakasvarmenteen.</li>\n<li>Asiakasvarmenne toimii heidän identiteettinään ja pääsynään yksikkösi Deploy App -palvelimelle ja -palveluihin.\nAsiakasvarmenteet ovat koeteltu ja luotettava korkean turvallisuuden työkalu. Todennäköisesti esimerkiksi tavallinen työpaikkasi henkilökortti sisältää sellaisen.</li>\n</ul>",
+          "html": "<p>Lisää käyttäjiä helposti QR-koodeilla tai linkeillä. Hallitse heidän rooliaan ja poista heidät tarvittaessa.</p>\n<ul>\n<li>Kutsutut käyttäjät saavat laitteeseensa asiakasvarmenteen.</li>\n<li>Asiakasvarmenne toimii heidän identiteettinään ja pääsynään yksikkösi Deploy App -palvelimelle ja -palveluihin.</li>\n</ul>\n<p>Asiakasvarmenteet ovat koeteltu ja luotettava korkean turvallisuuden työkalu. Todennäköisesti esimerkiksi tavallinen työpaikkasi henkilökortti sisältää sellaisen.</p>",
           "images": [
             {
               "src": "/content/images/fi/attachments/408823f815c4d338.webp",
@@ -53,7 +53,7 @@
         {
           "title": "Kehitetty laajennettavaksi",
           "layout": "image-left",
-          "html": "<ul>\n<li>Sovelluskehittäjät voivat tehdä sovelluksensa toimimaan Deploy Appin kanssa.</li>\n<li>Tämä pyrkii yksinkertaistamaan sitä, miten saat sovelluksesi sotilaille, sekä sotilaiden että sinun näkökulmastasi.\nTutustu Deploy Appin käyttöön seuraavasta oppaasta.</li>\n</ul>",
+          "html": "<ul>\n<li>Sovelluskehittäjät voivat tehdä sovelluksensa toimimaan Deploy Appin kanssa.</li>\n<li>Tämä pyrkii yksinkertaistamaan sitä, miten saat sovelluksesi sotilaille, sekä sotilaiden että sinun näkökulmastasi.</li>\n</ul>\n<p>Tutustu Deploy Appin käyttöön seuraavasta oppaasta.</p>",
           "images": [
             {
               "src": "/content/images/fi/attachments/51dfa90a783a5717.webp",

@@ -75,7 +75,7 @@
         {
           "title": "Käyttäjien hyväksyminen",
           "layout": "image-left",
-          "html": "<p>Käyttäjien hyväksymiseen on muutamia vaihtoehtoja:</p>\n<ul>\n<li><strong>Skannaa heidän laitteillaan näkyvä QR-koodi</strong> henkilökohtaisesti (suositeltava).</li>\n<li>Pyydä käyttäjiä kopioimaan ja lähettämään sinulle <strong>Approve Link</strong> -linkkinsä. Siihen siirtymällä voit hyväksyä heidät heti.</li>\n<li>Jos QR-koodia tai hyväksymislinkkiä ei jostain syystä voi käyttää, voit napauttaa käyttäjää <strong>Approve Users -valikossa</strong> ja syöttää heidän laitteellaan näkyvän hyväksymiskoodin.\nKun hyväksyt käyttäjiä (etenkin linkkien avulla), ole 100-prosenttisen varma siitä, että henkilö on se, joksi häntä luulet. Hyväksyminen antaa heille pääsyn esimerkiksi joukkojen sijainteihin, jos käytössä on TAK.</li>\n</ul>",
+          "html": "<p>Käyttäjien hyväksymiseen on muutamia vaihtoehtoja:</p>\n<ul>\n<li><strong>Skannaa heidän laitteillaan näkyvä QR-koodi</strong> henkilökohtaisesti (suositeltava).</li>\n<li>Pyydä käyttäjiä kopioimaan ja lähettämään sinulle <strong>Approve Link</strong> -linkkinsä. Siihen siirtymällä voit hyväksyä heidät heti.</li>\n<li>Jos QR-koodia tai hyväksymislinkkiä ei jostain syystä voi käyttää, voit napauttaa käyttäjää <strong>Approve Users -valikossa</strong> ja syöttää heidän laitteellaan näkyvän hyväksymiskoodin.</li>\n</ul>\n<p>Kun hyväksyt käyttäjiä (etenkin linkkien avulla), ole 100-prosenttisen varma siitä, että henkilö on se, joksi häntä luulet. Hyväksyminen antaa heille pääsyn esimerkiksi joukkojen sijainteihin, jos käytössä on TAK.</p>",
           "images": [
             {
               "src": "/content/images/fi/attachments/a9752158f1a0d710.webp",

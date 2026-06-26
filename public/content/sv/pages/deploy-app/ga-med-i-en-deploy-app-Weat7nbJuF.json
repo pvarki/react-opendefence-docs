@@ -6,6 +6,7 @@
   "locale": "sv",
   "title": "Gå med i en Deploy App",
   "breadcrumb": [
+    "Platforms",
     "Android",
     "Användarguide",
     "Gå med i en Deploy App"
@@ -21,7 +22,7 @@
         {
           "title": "Få åtkomst",
           "layout": "image-left",
-          "html": "<p>Det finns flera alternativ för att gå med i instansen:</p>\n<ul>\n<li>Skanna QR-kod (Öppnar nästa sida omedelbart)</li>\n<li>Länk (Öppnar nästa sida omedelbart)</li>\n<li>Länk + manuell kod (Öppnar sidan till vänster)\nAnvänd den metod som används inom din organisation.</li>\n</ul>",
+          "html": "<p>Det finns flera alternativ för att gå med i instansen:</p>\n<ul>\n<li>Skanna QR-kod (Öppnar nästa sida omedelbart)</li>\n<li>Länk (Öppnar nästa sida omedelbart)</li>\n<li>Länk + manuell kod (Öppnar sidan till vänster)</li>\n</ul>\n<p>Använd den metod som används inom din organisation.</p>",
           "images": [
             {
               "src": "/content/images/sv/attachments/dadcfbd89ded782d.webp",

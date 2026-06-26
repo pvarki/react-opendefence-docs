@@ -1,24 +1,19 @@
 {
   "schemaVersion": 1,
   "id": "10bde822-a52c-4b45-b555-facc61d49f5d",
-  "slug": "palvelinyhteyden-tuonti-orW4BArnHi",
+  "slug": "tuo-palvelinyhteys-deploy-appista-orW4BArnHi",
   "collection": "guides/tak-guide",
   "locale": "fi",
-  "title": "Palvelinyhteyden tuonti",
+  "title": "Tuo palvelinyhteys Deploy Appista",
   "breadcrumb": [
     "Platforms",
     "ATAK",
     "ALOITA JA YHDISTÄ",
-    "Palvelinyhteyden tuonti"
+    "Tuo palvelinyhteys Deploy Appista"
   ],
   "createdAt": "2026-06-18T19:25:11.736Z",
-  "updatedAt": "2026-06-18T20:13:38.815Z",
+  "updatedAt": "2026-06-26T11:52:09.105Z",
   "headings": [],
-  "translations": {
-    "en": "/en/guides/tak-guide/importing-server-connection-PQ4dCV2SYR",
-    "fi": "/fi/guides/tak-guide/palvelinyhteyden-tuonti-orW4BArnHi",
-    "sv": "/sv/guides/tak-guide/importera-serveranslutning-Heo41dBNko"
-  },
   "blocks": [
     {
       "type": "slideset",
@@ -27,7 +22,7 @@
         {
           "title": "Yhteyden muodostaminen",
           "layout": "text",
-          "html": "<ul>\n<li>Deploy Appilla voit käyttää Deploy Appin TAK-sivun <strong>'Auto Import Connection'</strong> -toimintoa palvelimeen yhdistämiseen.</li>\n<li>Tällä yhteystavalla pääset vihreään yhteyteen kahdella napautuksella.</li>\n<li>Deploy Appista voit myös ladata asiakasohjelman asetuspaketin.\nTämä opas käsittelee vain nopean tavan, sillä ATAKin ja Deploy Appin kanssa ei tarvitse käsin pyöritellä asiakaspakkauksia, salasanoja tai vastaavia.</li>\n</ul>",
+          "html": "<ul>\n<li>Deploy Appilla voit käyttää Deploy Appin TAK-sivun <strong>'Auto Import Connection'</strong> -toimintoa palvelimeen yhdistämiseen.</li>\n<li>Tällä yhteystavalla pääset vihreään yhteyteen kahdella napautuksella.</li>\n<li>Deploy Appista voit myös ladata asiakasohjelman asetuspaketin.</li>\n</ul>\n<p>Tämä opas käsittelee vain nopean tavan, sillä ATAKin ja Deploy Appin kanssa ei tarvitse käsin pyöritellä asiakaspakkauksia, salasanoja tai vastaavia.</p>",
           "images": []
         },
         {

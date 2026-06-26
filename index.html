@@ -20,6 +20,18 @@
   </head>
   <body>
     <div id="root"></div>
+    <!-- Static fallback served on every route (incl. the 404.html SPA fallback)
+         so agents/crawlers that don't run JS still find the machine-readable
+         guide. React fills #root and leaves this <noscript> untouched. -->
+    <noscript>
+      <h1>OpenDefence Docs</h1>
+      <p>Documentation for Deploy App and the OpenDefence stack.</p>
+      <p>
+        AI agents: read <a href="/llms.txt">/llms.txt</a> for how to work with
+        this site. All content is published as JSON — start at the
+        <a href="/content/en/manifest.json">content manifest</a>.
+      </p>
+    </noscript>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

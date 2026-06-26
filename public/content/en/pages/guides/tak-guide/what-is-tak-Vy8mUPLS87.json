@@ -10,7 +10,7 @@
     "What is TAK?"
   ],
   "createdAt": "2026-06-13T23:47:59.586Z",
-  "updatedAt": "2026-06-18T20:12:56.187Z",
+  "updatedAt": "2026-06-26T10:42:03.667Z",
   "headings": [],
   "translations": {
     "en": "/en/guides/tak-guide/what-is-tak-Vy8mUPLS87",
@@ -115,7 +115,7 @@
         {
           "title": "Deploy App automates Server management",
           "layout": "image-left",
-          "html": "<p>With Deploy App, you never have to configure your TAK Server manually.</p>\n<ul>\n<li>A Deploy App instance brings up a bundled official-flavor TAK Server.</li>\n<li>You and your fighters can access it with two taps from Deploy App.\nWe believe soldiers should operate, not to rub servers. Deploy App removes manual config with a highly secure execution.</li>\n</ul>",
+          "html": "<p>With Deploy App, you never have to configure your TAK Server manually.</p>\n<ul>\n<li>A Deploy App instance brings up a bundled official-flavor TAK Server.</li>\n<li>You and your fighters can access it with two taps from Deploy App.</li>\n</ul>\n<p>We believe soldiers should operate, not to rub servers. Deploy App removes manual config with a highly secure execution.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/2eb1508d89ef7f24.webp",

@@ -56,6 +56,98 @@
       "contact": "Kontakt: Kontaktpunkt kommer."
     }
   },
+  "orient": {
+    "continue": "Fortsätt",
+    "back": "Tillbaka",
+    "revisit": "Hitta din startpunkt",
+    "confirm": "Fortsätta till det föreslagna materialet?",
+    "selector": {
+      "title": "Välkommen till utvecklardokumentationen",
+      "lead": "Vilket av alternativen nedan intresserar dig mest?",
+      "contribute": "Bidra till det här projektet",
+      "integrate": "Leverera min produkt till soldater med Deploy App / OpenDefence",
+      "operate": "Drifta Deploy App i min organisation",
+      "skip": "Visa bara dokumentationen",
+      "transition": "Toppen! Vi ställer några frågor härnäst för att orientera dig och hjälpa dig hitta det innehåll du behöver…"
+    },
+    "contribute": {
+      "title": "Bidra",
+      "lead": "Vi välkomnar bidragsgivare med öppen källkod. Några frågor för att orientera dig och hjälpa dig hitta var du ska börja.",
+      "q1": {
+        "prompt": "Är du…",
+        "a1": "finsk medborgare",
+        "a2": "från ett Nato-land eller Ukraina",
+        "a3": "någon annanstans ifrån?",
+        "a1Body": "Vi bygger en utvecklar- och användargemenskap, ledd av Försvarsmakten (FDF), som utvecklar OpenDefence. Som finsk medborgare är du välkommen att gå med.\n\nVår gemenskapsförvaltning är dock under uppbyggnad. Därför är gemenskapen tills vidare endast tillgänglig via inbjudan — kom tillbaka lite senare! Att bidra med öppen källkod hjälper dig att få kontakt med oss, och det är mycket välkommet.",
+        "a2Body": "Vi bygger en utvecklar- och användargemenskap, ledd av Försvarsmakten (FDF), som utvecklar OpenDefence. Som medborgare i ett Nato-land eller Ukraina är du välkommen att gå med.\n\nVår gemenskapsförvaltning är dock under uppbyggnad och vår centrala utvecklargemenskap arbetar på finska. Vi utvecklar sätt för öppet bidragande och kontakt på engelska — kom tillbaka senare. Bidrag med öppen källkod och issues är redan nu mycket välkomna.",
+        "a3Body": "Vår centrala utvecklar- och användargemenskap är öppen för medborgare i Nato-länder och Ukraina. Bidrag med öppen källkod och issues är ändå välkomna."
+      },
+      "q2": {
+        "prompt": "Jag är…",
+        "lead": "Vi söker bidragsgivare med dessa bakgrunder.",
+        "a1": "Mjukvaruproffs",
+        "a2": "En reservist motiverad att utveckla nya sätt att strida (men inte mjukvaruproffs)",
+        "a3": "Yrkesmilitär",
+        "a4": "Ingen av ovanstående",
+        "a1Body": "OpenDefence vill vara det självklara sättet att utföra frivilligt nationellt försvar med dina yrkeskunskaper. Vi vill göra meningsfulla bidrag enkla och slippa tynga dig med onödigt arbete. Du är precis den målgrupp vi bygger det här för.",
+        "a2Body": "Vi inkluderar mer än gärna reservister som är entusiastiska över att utveckla hur vi strider. Du är inbjuden att testa och ge feedback på OpenDefence samt att delta i att utforma nya funktioner i stacken.",
+        "a3Body": "Liksom entusiastiska reservister är yrkesmilitärer mer än välkomna att ge feedback och hjälpa till att utforma nya funktioner i stacken. Vi föreslår att du kontaktar projektets ansvariga vid Försvarsmakten för att gå vidare.",
+        "a4Body": "Om du råkar vara intresserad av att utveckla mjukvara finns det ingen bättre plats att börja på än öppen källkod. Prova att läsa den här dokumentationen — och särskilt våra bästa praxis — för att slipa dina färdigheter. Vi välkomnar juniora bidragsgivare i fast övertygelse om att du blir stjärnlik i en uppgift genom att göra den."
+      },
+      "q3": {
+        "prompt": "Vilket innehåll intresserar dig först?",
+        "lead": "Vår utvecklardokumentation är under uppbyggnad, men vi strävar efter att ge dig en komplett uppsättning för att förstå vår öppna källkod efter dina behov.",
+        "a1": "Översikt över vår utvecklardokumentation",
+        "a2": "Hur man klonar och sätter upp din utvecklingsmiljö",
+        "a3": "Översikt över arkitekturen",
+        "a4": "Kolla in våra bästa praxis",
+        "a5": "Se hur du lämnar in ditt bidrag som en PR",
+        "a6": "Läs mer om att utveckla TAK, en central driftsättbar produkt"
+      }
+    },
+    "integrate": {
+      "title": "Integrera",
+      "lead": "OpenDefence-stacken vill vara gränssnittet genom vilket produktutvecklare får ut sin lösning till soldater. Om du vill vinna framtidens slagfält med lösningar, använd oss som vägen att leverera din produkt till soldater på ett sätt som uppfyller verkliga militära krav.",
+      "q1": {
+        "prompt": "Är du…",
+        "a1": "Bygger eller driver en försvarsstartup",
+        "a2": "Från en stor försvarsleverantör (prime)",
+        "a3": "Bara en person med en idé",
+        "a1Body": "Deploy App är permanent öppen källkod, stödd av en stiftelse och tjänar FDF:s intressen. Vi vill vara sättet för dig att få ut din grej i tester och användning på veckor, inte år. Kom ihåg att respektera licenserna — de är inte virala och tvingar dig inte att öppna källkoden för din egen produkt.",
+        "a2Body": "Deploy App är permanent öppen källkod, stödd av en stiftelse och tjänar FDF:s intressen. Vi välkomnar dig att arbeta på vår plattform och även att vidareutveckla den, till gagn för nationellt och allierat försvar. Kom ihåg att respektera licenserna — de är inte virala och tvingar dig inte att öppna källkoden för din egen produkt.",
+        "a3Body": "Deploy App är permanent öppen källkod, stödd av en stiftelse och tjänar FDF:s intressen. Licenserna är inte virala och tvingar dig inte att öppna källkoden för din egen produkt. Prova gärna vad du kan göra."
+      },
+      "q2": {
+        "prompt": "Var vill du börja?",
+        "lead": "Så här bygger du en integration.",
+        "a1": "Översikt över integration",
+        "a2": "Utgå från mallen",
+        "a3": "Praktiskt exempel: Matrix",
+        "a4": "Integrationskonventioner och vad man inte ska göra"
+      }
+    },
+    "operate": {
+      "title": "Drifta",
+      "lead": "Med Deploy App kan din organisation sätta upp och driva en komplett uppsättning interoperabla tjänster för soldater. Det är permanent öppen källkod, stött av en stiftelse och tjänar FDF:s intressen.",
+      "q1": {
+        "prompt": "Är du…",
+        "a1": "Utvärderar Deploy App för min enhet eller organisation",
+        "a2": "Ansvarar för IT eller drift och redo att driftsätta det",
+        "a3": "Bara utforskar vad drift innebär",
+        "a1Body": "Deploy App är byggt för att sättas upp av en verklig organisation för verkliga soldater. Det buntar ihop officiella produktintegrationer så att du kan leverera TAK, Matrix, video och mer som en enhet. Börja med operatörens snabbstart för att se vad drift innebär.",
+        "a2Body": "Du kan driftsätta Deploy App med Docker Compose eller på Kubernetes, med day 2-drift och loggning samt observerbarhet täckt. Kom ihåg att respektera licenserna — de är inte virala. Dokumentationen nedan tar dig från noll till en körande stack.",
+        "a3Body": "Deploy App är permanent öppen källkod, stött av en stiftelse och tjänar FDF:s intressen. Ta en titt på hur operatörer driftsätter och driver det — utan åtagande."
+      },
+      "q2": {
+        "prompt": "Var vill du börja?",
+        "lead": "Vår operatörsdokumentation är under uppbyggnad, men här kan du börja.",
+        "a1": "Operatörens snabbstart",
+        "a2": "Driftsätt med Docker Compose",
+        "a3": "Driftsätt på Kubernetes",
+        "a4": "Loggning och observerbarhet"
+      }
+    }
+  },
   "reader": {
     "pageOf": "Sida {{current}} av {{total}}",
     "previous": "Föregående",

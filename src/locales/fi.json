@@ -56,6 +56,98 @@
       "contact": "Yhteystieto: Yhteyspiste tulossa."
     }
   },
+  "orient": {
+    "continue": "Jatka",
+    "back": "Takaisin",
+    "revisit": "Löydä aloituspisteesi",
+    "confirm": "Jatketaanko ehdotettuun sisältöön?",
+    "selector": {
+      "title": "Tervetuloa kehittäjädokumentaatioon",
+      "lead": "Mikä alla olevista kiinnostaa sinua eniten?",
+      "contribute": "Osallistuminen tähän projektiin",
+      "integrate": "Tuotteeni toimittaminen sotilaille Deploy Appin / OpenDefencen avulla",
+      "operate": "Deploy Appin operointi organisaatiossani",
+      "skip": "Näytä vain dokumentaatio",
+      "transition": "Hienoa! Esitämme seuraavaksi muutaman kysymyksen orientoidaksemme sinut ja auttaaksemme löytämään tarvitsemasi sisällön…"
+    },
+    "contribute": {
+      "title": "Osallistu",
+      "lead": "Toivotamme avoimen lähdekoodin osallistujat tervetulleiksi. Muutama kysymys orientoi sinut ja auttaa löytämään, mistä aloittaa.",
+      "q1": {
+        "prompt": "Oletko…",
+        "a1": "Suomen kansalainen",
+        "a2": "Nato-maasta tai Ukrainasta",
+        "a3": "muualta?",
+        "a1Body": "Rakennamme Puolustusvoimien ohjaamaa kehittäjä- ja käyttäjäyhteisöä, joka kehittää OpenDefenceä. Suomen kansalaisena olet tervetullut mukaan.\n\nYhteisönhallintamme on kuitenkin vielä rakenteilla. Siksi yhteisö on toistaiseksi kutsuilla toimiva — käy katsomassa hieman myöhemmin! Avoimen lähdekoodin osallistuminen auttaa sinua yhdistymään kanssamme, ja se on erittäin tervetullutta.",
+        "a2Body": "Rakennamme Puolustusvoimien ohjaamaa kehittäjä- ja käyttäjäyhteisöä, joka kehittää OpenDefenceä. Nato-jäsenmaan tai Ukrainan kansalaisena olet tervetullut mukaan.\n\nYhteisönhallintamme on kuitenkin rakenteilla, ja ydinkehittäjäyhteisömme toimii suomeksi. Kehitämme keinoja avoimeen osallistumiseen ja yhteydenpitoon englanniksi — käy katsomassa myöhemmin. Avoimen lähdekoodin osallistuminen ja issuet ovat jo nyt erittäin tervetulleita.",
+        "a3Body": "Ydinkehittäjä- ja käyttäjäyhteisömme on avoin Nato-jäsenmaiden ja Ukrainan kansalaisille. Avoimen lähdekoodin osallistuminen ja issuet ovat silti tervetulleita."
+      },
+      "q2": {
+        "prompt": "Olen…",
+        "lead": "Etsimme osallistujia näistä taustoista.",
+        "a1": "Ohjelmistoammattilainen",
+        "a2": "Reserviläinen, jota motivoi kehittää uusia tapoja taistella (mutta ei ohjelmistoammattilainen)",
+        "a3": "Sotilasammattilainen",
+        "a4": "Ei mikään näistä",
+        "a1Body": "OpenDefence pyrkii olemaan paras tapa tehdä vapaaehtoista maanpuolustusta ammattitaidollasi. Haluamme tehdä merkityksellisestä osallistumisesta helppoa emmekä rasittaa sinua turhalla näpertelyllä. Olet juuri se kohderyhmä, jolle tätä rakennamme.",
+        "a2Body": "Otamme erittäin mielellämme mukaan reserviläiset, jotka ovat innoissaan kehittämässä sitä, miten taistelemme. Sinut on kutsuttu testaamaan ja antamaan palautetta OpenDefencestä sekä osallistumaan uusien ominaisuuksien ideointiin osaksi stackia.",
+        "a3Body": "Innokkaiden reserviläisten tavoin sotilasammattilaiset ovat erittäin tervetulleita antamaan palautetta ja ideoimaan uusia ominaisuuksia osaksi stackia. Suosittelemme ottamaan yhteyttä projektin Puolustusvoimien vastuuhenkilöön edetäksesi.",
+        "a4Body": "Jos satut olemaan kiinnostunut ohjelmistokehityksestä, ei ole parempaa paikkaa aloittaa kuin avoin lähdekoodi. Kokeile lukea näitä dokumentteja — erityisesti parhaita käytäntöjämme — hioaksesi taitojasi. Toivotamme aloittelevat osallistujat tervetulleiksi vahvassa uskossa, että sinusta tulee loistava tehtävässä tekemällä sitä."
+      },
+      "q3": {
+        "prompt": "Mikä sisältö kiinnostaa sinua ensin?",
+        "lead": "Kehittäjädokumentaatiomme on rakenteilla, mutta pyrimme tarjoamaan sinulle täyden kokonaisuuden ymmärtää avointa lähdekoodiamme tarpeisiisi.",
+        "a1": "Yleiskatsaus kehittäjädokumentaatioon",
+        "a2": "Miten kloonata ja pystyttää kehitysympäristö",
+        "a3": "Yleiskatsaus arkkitehtuuriin",
+        "a4": "Tutustu parhaisiin käytäntöihimme",
+        "a5": "Miten tuoda osallistumiseni PR:nä",
+        "a6": "Lue lisää TAKin kehittämisestä, joka on keskeinen toimitettava tuote"
+      }
+    },
+    "integrate": {
+      "title": "Integroi",
+      "lead": "OpenDefence-stack pyrkii olemaan rajapinta, jonka kautta tuotekehittäjät saavat ratkaisunsa sotilaille. Jos haluat voittaa tulevaisuuden taistelukentän ratkaisuilla, käytä meitä tapana toimittaa tuotteesi sotilaille tavalla, joka täyttää todelliset sotilaalliset vaatimukset.",
+      "q1": {
+        "prompt": "Oletko…",
+        "a1": "Rakentamassa tai operoimassa puolustusalan startupia",
+        "a2": "Puolustusalan suuryrityksestä (prime)",
+        "a3": "Vain henkilö, jolla on idea",
+        "a1Body": "Deploy App on pysyvästi avointa lähdekoodia, säätiön tukema ja Puolustusvoimien etuja palveleva. Haluamme olla tapa, jolla saat tuotteesi kokeiluun ja käyttöön viikoissa, ei vuosissa. Muista kunnioittaa lisenssejä — ne eivät ole tarttuvia eivätkä pakota sinua avaamaan oman tuotteesi lähdekoodia.",
+        "a2Body": "Deploy App on pysyvästi avointa lähdekoodia, säätiön tukema ja Puolustusvoimien etuja palveleva. Toivotamme sinut tervetulleeksi työskentelemään alustallamme ja myös kehittämään sitä edelleen kansallisen ja liittoutuneiden puolustuksen hyväksi. Muista kunnioittaa lisenssejä — ne eivät ole tarttuvia eivätkä pakota sinua avaamaan oman tuotteesi lähdekoodia.",
+        "a3Body": "Deploy App on pysyvästi avointa lähdekoodia, säätiön tukema ja Puolustusvoimien etuja palveleva. Lisenssit eivät ole tarttuvia eivätkä pakota sinua avaamaan oman tuotteesi lähdekoodia. Kokeile vapaasti, mitä voit tehdä."
+      },
+      "q2": {
+        "prompt": "Mistä haluaisit aloittaa?",
+        "lead": "Näin rakennat integraation.",
+        "a1": "Integraation yleiskatsaus",
+        "a2": "Pohjusta mallipohjasta",
+        "a3": "Käytännön esimerkki: Matrix",
+        "a4": "Integraation käytännöt ja vältettävät asiat"
+      }
+    },
+    "operate": {
+      "title": "Operoi",
+      "lead": "Deploy Appin avulla organisaatiosi voi pystyttää ja ylläpitää täyden, yhteentoimivien palveluiden kokonaisuuden sotilaille. Se on pysyvästi avointa lähdekoodia, säätiön tukema ja Puolustusvoimien etuja palveleva.",
+      "q1": {
+        "prompt": "Oletko…",
+        "a1": "Arvioimassa Deploy Appia yksikölleni tai organisaatiolleni",
+        "a2": "Vastaamassa IT:stä tai operoinnista ja valmis ottamaan sen käyttöön",
+        "a3": "Vain tutkimassa, mitä operointi tarkoittaa",
+        "a1Body": "Deploy App on rakennettu todellisen organisaation pystytettäväksi todellisille sotilaille. Se niputtaa viralliset tuoteintegraatiot, jotta voit toimittaa TAKin, Matrixin, videon ja muuta yhtenä kokonaisuutena. Aloita operaattorin pikaoppaasta nähdäksesi, mitä sen käyttö vaatii.",
+        "a2Body": "Voit ottaa Deploy Appin käyttöön Docker Composella tai Kubernetesissa, ja day-2-operointi sekä lokitus ja valvonta on katettu. Muista kunnioittaa lisenssejä — ne eivät ole tarttuvia. Alla olevat dokumentit vievät sinut nollasta toimivaan kokonaisuuteen.",
+        "a3Body": "Deploy App on pysyvästi avointa lähdekoodia, säätiön tukema ja Puolustusvoimien etuja palveleva. Katso, miten operaattorit ottavat sen käyttöön ja ylläpitävät sitä — ilman sitoumuksia."
+      },
+      "q2": {
+        "prompt": "Mistä haluaisit aloittaa?",
+        "lead": "Operaattoridokumentaatiomme on rakenteilla, mutta tästä voit aloittaa.",
+        "a1": "Operaattorin pikaopas",
+        "a2": "Käyttöönotto Docker Composella",
+        "a3": "Käyttöönotto Kubernetesissa",
+        "a4": "Lokitus ja havainnoitavuus"
+      }
+    }
+  },
   "reader": {
     "pageOf": "Sivu {{current}} / {{total}}",
     "previous": "Edellinen",

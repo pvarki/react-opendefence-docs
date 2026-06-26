@@ -1,24 +1,19 @@
 {
   "schemaVersion": 1,
   "id": "d67c228d-562b-4ff9-97d0-790b8ce1dda6",
-  "slug": "importera-serveranslutning-Heo41dBNko",
+  "slug": "importera-serveranslutning-fran-deploy-app-Heo41dBNko",
   "collection": "guides/tak-guide",
   "locale": "sv",
-  "title": "Importera serveranslutning",
+  "title": "Importera serveranslutning från Deploy App",
   "breadcrumb": [
     "Platforms",
     "ATAK",
     "STARTA OCH ANSLUT",
-    "Importera serveranslutning"
+    "Importera serveranslutning från Deploy App"
   ],
   "createdAt": "2026-06-18T19:25:12.071Z",
-  "updatedAt": "2026-06-18T20:13:39.269Z",
+  "updatedAt": "2026-06-26T11:52:10.267Z",
   "headings": [],
-  "translations": {
-    "en": "/en/guides/tak-guide/importing-server-connection-PQ4dCV2SYR",
-    "fi": "/fi/guides/tak-guide/palvelinyhteyden-tuonti-orW4BArnHi",
-    "sv": "/sv/guides/tak-guide/importera-serveranslutning-Heo41dBNko"
-  },
   "blocks": [
     {
       "type": "slideset",
@@ -27,7 +22,7 @@
         {
           "title": "Anslut till nätet",
           "layout": "text",
-          "html": "<ul>\n<li>Med Deploy App kan du använda <strong>'Auto Import Connection'</strong> från Deploy Apps TAK-sida för att ansluta till servern.</li>\n<li>Med den här anslutningsmetoden får du grön anslutning med två tryck.</li>\n<li>Från Deploy App kan du även ladda ner klientens konfigurationspaket.\nDen här guiden tar endast upp det snabba sättet, eftersom du med ATAK och Deploy App inte behöver hantera klient-zippar, lösenord och liknande för hand.</li>\n</ul>",
+          "html": "<ul>\n<li>Med Deploy App kan du använda <strong>'Auto Import Connection'</strong> från Deploy Apps TAK-sida för att ansluta till servern.</li>\n<li>Med den här anslutningsmetoden får du grön anslutning med två tryck.</li>\n<li>Från Deploy App kan du även ladda ner klientens konfigurationspaket.</li>\n</ul>\n<p>Den här guiden tar endast upp det snabba sättet, eftersom du med ATAK och Deploy App inte behöver hantera klient-zippar, lösenord och liknande för hand.</p>",
           "images": []
         },
         {

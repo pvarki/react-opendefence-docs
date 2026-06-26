@@ -1,5 +1,5 @@
-import { Fragment, type ReactNode } from "react";
-import { Link, createFileRoute } from "@tanstack/react-router";
+import { Fragment, useState, type ReactNode } from "react";
+import { createFileRoute } from "@tanstack/react-router";
 import { useTranslation } from "react-i18next";
 import {
   BookOpen,
@@ -12,6 +12,8 @@ import {
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import { BookCard } from "@/components/shell/BookCard";
+import { OrientationModal } from "@/components/shell/OrientationModal";
+import { markOrientationSeen, type TrackKey } from "@/lib/orientationFlows";
 import { AgentFriendlyNote } from "@/components/shell/AgentFriendlyNote";
 import { CARD_IMAGES } from "@/lib/cardImages";
 import { withBase } from "@/lib/base";
@@ -160,16 +162,16 @@ const COPYRIGHT_LINES = [
   "CryptPad: © XWiki SAS",
 ];
 
-// The contribute/integrate/operate doors — each a dev-section collection cover.
-const CONTRIBUTE_LINKS = [
-  { splat: "contribute-to-project", labelKey: "devShelf.contribute" },
-  { splat: "build-an-integration", labelKey: "devShelf.integrate" },
-  { splat: "operate", labelKey: "devShelf.operate" },
-] as const;
+// The contribute/integrate/operate doors — each opens a guided orientation flow.
+const CONTRIBUTE_DOORS: { track: TrackKey; labelKey: string }[] = [
+  { track: "contribute", labelKey: "devShelf.contribute" },
+  { track: "integrate", labelKey: "devShelf.integrate" },
+  { track: "operate", labelKey: "devShelf.operate" },
+];
 
 function HomeFooter() {
   const { t } = useTranslation();
-  const { locale } = Route.useParams();
+  const [orient, setOrient] = useState<TrackKey | null>(null);
 
   const goals = [
     { title: "footer.easyTitle", body: "footer.easyBody" },
@@ -242,18 +244,29 @@ function HomeFooter() {
             {t("footer.contributeBody")}
           </p>
           <div className="mt-3 flex flex-wrap gap-2">
-            {CONTRIBUTE_LINKS.map(({ splat, labelKey }) => (
-              <Link
-                key={splat}
-                to="/$locale/$"
-                params={{ locale, _splat: splat }}
+            {CONTRIBUTE_DOORS.map(({ track, labelKey }) => (
+              <button
+                key={track}
+                type="button"
+                onClick={() => {
+                  markOrientationSeen();
+                  setOrient(track);
+                }}
                 className="rounded-full border border-border px-3 py-1 text-sm text-foreground transition-colors hover:border-primary hover:text-primary"
               >
                 {t(labelKey)}
-              </Link>
+              </button>
             ))}
           </div>
         </div>
+
+        <OrientationModal
+          open={orient !== null}
+          start={orient ?? "contribute"}
+          onOpenChange={(o) => {
+            if (!o) setOrient(null);
+          }}
+        />
 
         <div className="mt-6 space-y-0.5 border-t border-border pt-4">
           {COPYRIGHT_LINES.map((line) => (

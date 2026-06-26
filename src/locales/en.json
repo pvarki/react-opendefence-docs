@@ -56,6 +56,98 @@
       "contact": "Contact: Contact point upcoming."
     }
   },
+  "orient": {
+    "continue": "Continue",
+    "back": "Back",
+    "revisit": "Find your starting point",
+    "confirm": "Continue to the suggested material?",
+    "selector": {
+      "title": "Welcome to Developer Documentation",
+      "lead": "Which of the below interests you the most?",
+      "contribute": "Contributing to this project",
+      "integrate": "Delivering my product to soldiers using Deploy App / OpenDefence",
+      "operate": "Operating Deploy App in my organization",
+      "skip": "Just show me the docs",
+      "transition": "Great! We'll ask you a few questions next to orient you and help you find the content you need…"
+    },
+    "contribute": {
+      "title": "Contribute",
+      "lead": "We welcome open source contributors. A few questions to orient you and help you find where to start.",
+      "q1": {
+        "prompt": "Are you…",
+        "a1": "a Finnish national",
+        "a2": "from a NATO country or Ukraine",
+        "a3": "elsewhere?",
+        "a1Body": "We are building a developer and user community, guided by the FDF, that develops OpenDefence. As a Finnish national, you are welcome to join.\n\nHowever, our community management function is under construction. Because of that, the community is invite-only for now — check back a bit later! Performing open source contributions helps you connect with us, and they are very welcome.",
+        "a2Body": "We are building a developer and user community, guided by the FDF, that develops OpenDefence. As a NATO member or Ukrainian national, you are welcome to join.\n\nHowever, our community management function is under construction and our core developer community works in Finnish. We're developing means for open contribution and connection in English — check back later. Open source contributions and issues are very welcome already.",
+        "a3Body": "Our core developer and user community is open to NATO member state and Ukrainian nationals. Open source contributions and issues are welcome regardless."
+      },
+      "q2": {
+        "prompt": "I am a…",
+        "lead": "We're looking for contributors across these backgrounds.",
+        "a1": "Software professional",
+        "a2": "A reservist motivated to develop new ways to fight (but not a software professional)",
+        "a3": "Professional military",
+        "a4": "None of the above",
+        "a1Body": "OpenDefence aims to be the go-to way to perform voluntary national defence with your professional skills. We want to make meaningful contribution easy and avoid bogging you down with unnecessary busywork. You're exactly the group we're building this for.",
+        "a2Body": "We're more than happy to include reservists who are enthusiastic about developing how we fight. You're invited to test and give feedback on OpenDefence, as well as to take part in conceiving new features for the stack.",
+        "a3Body": "Like enthusiastic reservists, military professionals are more than welcome to give feedback and help conceive new features for the stack. We suggest you contact the project's steward at the FDF to proceed.",
+        "a4Body": "If you happen to be interested in developing software, there's no better place to start than open source. Try reading these docs — and particularly our best practices — to hone your skills. We welcome junior contributors in the firm belief that you'll become stellar at a task by doing it."
+      },
+      "q3": {
+        "prompt": "What content interests you first?",
+        "lead": "Our developer documentation is under construction, but we aim to give you a complete set to understand our open source for your needs.",
+        "a1": "Overview our dev docs",
+        "a2": "Know how to clone & set up your dev environment",
+        "a3": "Overview the architecture",
+        "a4": "Check our best practices",
+        "a5": "See how to bring your contribution as a PR",
+        "a6": "Learn more about developing TAK, a core deployable product"
+      }
+    },
+    "integrate": {
+      "title": "Integrate",
+      "lead": "The OpenDefence stack aims to be the interface for product developers to get your solution to soldiers. If you want to win the future battlefield with solutions, use us as the way to deploy your product to soldiers in a way that fills real military requirements.",
+      "q1": {
+        "prompt": "Are you…",
+        "a1": "Building or operating a defence startup",
+        "a2": "From a defence prime",
+        "a3": "Just a person with an idea",
+        "a1Body": "Deploy App is permanently open source, backed by a foundation and serving FDF interests. We want to be the way for you to get your thing into trials and usage in a matter of weeks, not years. Remember to honour the licenses — they are not viral and do not force you to open source your own product.",
+        "a2Body": "Deploy App is permanently open source, backed by a foundation and serving FDF interests. We welcome you to work on our platform and to further develop it, for the good of national and Allied defence. Remember to honour the licenses — they are not viral and do not force you to open source your own product.",
+        "a3Body": "Deploy App is permanently open source, backed by a foundation and serving FDF interests. The licenses are not viral and do not force you to open source your own product. Feel free to try out what you can do."
+      },
+      "q2": {
+        "prompt": "Where would you like to start?",
+        "lead": "Here's how to build an integration.",
+        "a1": "Integration overview",
+        "a2": "Scaffold from the template",
+        "a3": "Worked example: Matrix",
+        "a4": "Integration conventions & don'ts"
+      }
+    },
+    "operate": {
+      "title": "Operate",
+      "lead": "Deploy App lets your organization stand up and run a full stack of interoperable services for soldiers. It is permanently open source, backed by a foundation and serving FDF interests.",
+      "q1": {
+        "prompt": "Are you…",
+        "a1": "Evaluating Deploy App for my unit or organization",
+        "a2": "Running IT or operations and ready to deploy it",
+        "a3": "Just exploring what operating it involves",
+        "a1Body": "Deploy App is built to be stood up by a real organization for real soldiers. It bundles official product integrations so you can deliver TAK, Matrix, video and more as one. Start with the operator quickstart to see what running it involves.",
+        "a2Body": "You can deploy Deploy App with Docker Compose or on Kubernetes, with day-2 operations and audit logging covered. Remember to honour the licenses — they are not viral. The docs below get you from zero to a running stack.",
+        "a3Body": "Deploy App is permanently open source, backed by a foundation and serving FDF interests. Have a look at how operators deploy and run it — no commitment needed."
+      },
+      "q2": {
+        "prompt": "Where would you like to start?",
+        "lead": "Our operator documentation is under construction, but here's where to begin.",
+        "a1": "Operator quickstart",
+        "a2": "Deploy with Docker Compose",
+        "a3": "Deploy on Kubernetes",
+        "a4": "Audit logging & observability"
+      }
+    }
+  },
   "reader": {
     "pageOf": "Page {{current}} of {{total}}",
     "previous": "Previous",

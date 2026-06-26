@@ -17,21 +17,15 @@
       "children": [
         {
           "type": "doc",
-          "id": "borja-fran-deploy-app-05KDQT0EcH",
-          "label": "Börja från Deploy App",
-          "slug": "borja-fran-deploy-app-05KDQT0EcH"
+          "id": "ladda-ner-appen-ep7TvO7XkN",
+          "label": "Ladda ner appen",
+          "slug": "ladda-ner-appen-ep7TvO7XkN"
         },
         {
           "type": "doc",
-          "id": "se-till-att-du-har-atak-appen-ep7TvO7XkN",
-          "label": "Se till att du har ATAK-appen",
-          "slug": "se-till-att-du-har-atak-appen-ep7TvO7XkN"
-        },
-        {
-          "type": "doc",
-          "id": "importera-serveranslutning-Heo41dBNko",
-          "label": "Importera serveranslutning",
-          "slug": "importera-serveranslutning-Heo41dBNko"
+          "id": "importera-serveranslutning-fran-deploy-app-Heo41dBNko",
+          "label": "Importera serveranslutning från Deploy App",
+          "slug": "importera-serveranslutning-fran-deploy-app-Heo41dBNko"
         },
         {
           "type": "doc",
