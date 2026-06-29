@@ -182,7 +182,9 @@ function ReaderRoute() {
           bookLabel={bookLabel}
           breadcrumb={currentPage?.breadcrumb}
         />
-        {data.fallback && <FallbackBanner />}
+        {/* Dev docs are canonically English and won't be translated, so the
+            en-fallback is the intended state, not a missing translation. */}
+        {data.fallback && !isDevSection && <FallbackBanner />}
         <div className="min-h-0 flex-1">
           {data.kind === "cover" || !data.slug ? (
             <BookCover data={data} bookLabel={bookLabel} />

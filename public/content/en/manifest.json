@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "locale": "en",
-  "generatedAt": "2026-06-29T18:14:27.564Z",
+  "generatedAt": "2026-06-29T18:22:18.016Z",
   "collections": [
     {
       "slug": "deploy-app",
@@ -3927,7 +3927,7 @@
         "Choose your platform: legacy Docker vs Kubernetes"
       ],
       "path": "/content/en/pages/introduction/choose-your-platform-legacy-docker-vs-kubernetes-HMH7bBbZTO.json",
-      "updatedAt": "2026-06-29T18:07:31.122Z",
+      "updatedAt": "2026-06-29T18:18:59.078Z",
       "order": 1
     },
     {
@@ -3975,7 +3975,7 @@
         "Audit logging & observability"
       ],
       "path": "/content/en/pages/operate/audit-logging-observability-Va3sP3XTgz.json",
-      "updatedAt": "2026-06-13T16:12:34.185Z",
+      "updatedAt": "2026-06-29T18:22:14.799Z",
       "order": 1
     },
     {
