@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "locale": "en",
-  "generatedAt": "2026-06-26T14:06:38.337Z",
+  "generatedAt": "2026-06-29T18:08:51.470Z",
   "collections": [
     {
       "slug": "deploy-app",
@@ -3915,7 +3915,7 @@
         "What is Deploy App"
       ],
       "path": "/content/en/pages/introduction/what-is-deploy-app-HGko2yWWay.json",
-      "updatedAt": "2026-06-16T11:05:30.985Z",
+      "updatedAt": "2026-06-29T18:07:30.524Z",
       "order": 0
     },
     {
@@ -3927,7 +3927,7 @@
         "Choose your platform: legacy Docker vs Kubernetes"
       ],
       "path": "/content/en/pages/introduction/choose-your-platform-legacy-docker-vs-kubernetes-HMH7bBbZTO.json",
-      "updatedAt": "2026-06-13T13:20:28.722Z",
+      "updatedAt": "2026-06-29T18:07:31.122Z",
       "order": 1
     },
     {
@@ -3987,7 +3987,7 @@
         "Troubleshooting & teardown"
       ],
       "path": "/content/en/pages/operate/troubleshooting-teardown-H4UicAUh4c.json",
-      "updatedAt": "2026-06-16T16:36:32.235Z",
+      "updatedAt": "2026-06-29T18:07:39.353Z",
       "order": 2
     },
     {
@@ -4019,7 +4019,7 @@
         "Day-2 operations (Docker Compose)"
       ],
       "path": "/content/en/pages/operate/day-2-operations-docker-compose-FJFEoqvs6b.json",
-      "updatedAt": "2026-06-16T16:41:48.704Z",
+      "updatedAt": "2026-06-29T18:07:37.555Z",
       "order": 4,
       "platform": "docker-rasenmaeher-integration",
       "clientId": "docker-compose-legacy-V5BNgGudas",
@@ -4037,7 +4037,7 @@
         "Deploy on Kubernetes"
       ],
       "path": "/content/en/pages/operate/deploy-on-kubernetes-S5cwJYQzPu.json",
-      "updatedAt": "2026-06-13T14:30:09.549Z",
+      "updatedAt": "2026-06-29T18:07:38.578Z",
       "order": 5,
       "platform": "opendefence-k8s",
       "clientId": "kubernetes-rEPhr2GWLF",
@@ -4055,7 +4055,7 @@
         "Day-2 operations (Kubernetes)"
       ],
       "path": "/content/en/pages/operate/day-2-operations-kubernetes-lDjKap3DpF.json",
-      "updatedAt": "2026-06-13T13:20:34.953Z",
+      "updatedAt": "2026-06-29T18:07:38.050Z",
       "order": 6,
       "platform": "opendefence-k8s",
       "clientId": "kubernetes-rEPhr2GWLF",
@@ -4083,7 +4083,7 @@
         "Core APIs & the rmapi contract"
       ],
       "path": "/content/en/pages/develop-deploy-app/core-apis-the-rmapi-contract-RUcNFLQRXT.json",
-      "updatedAt": "2026-06-13T14:30:10.324Z",
+      "updatedAt": "2026-06-29T18:07:35.380Z",
       "order": 1
     },
     {
@@ -4095,7 +4095,7 @@
         "Testing conventions"
       ],
       "path": "/content/en/pages/develop-deploy-app/testing-conventions-rhTvWtij7I.json",
-      "updatedAt": "2026-06-16T16:47:00.198Z",
+      "updatedAt": "2026-06-29T18:07:37.047Z",
       "order": 2
     },
     {
@@ -4139,7 +4139,7 @@
         "Iterate on the core API (Docker Compose)"
       ],
       "path": "/content/en/pages/develop-deploy-app/iterate-on-the-core-api-docker-compose-qhg7EpPTbA.json",
-      "updatedAt": "2026-06-13T14:30:11.043Z",
+      "updatedAt": "2026-06-29T18:07:35.945Z",
       "order": 5,
       "platform": "docker-rasenmaeher-integration",
       "clientId": "docker-compose-legacy-nhqHtxFBvx",
@@ -4175,7 +4175,7 @@
         "Iterate on the core API (mirrord)"
       ],
       "path": "/content/en/pages/develop-deploy-app/iterate-on-the-core-api-mirrord-lzshevUc4T.json",
-      "updatedAt": "2026-06-13T13:21:28.222Z",
+      "updatedAt": "2026-06-29T18:07:36.488Z",
       "order": 7,
       "platform": "opendefence-k8s",
       "clientId": "kubernetes-plT6WHkYy5",
@@ -4191,7 +4191,7 @@
         "Integration overview"
       ],
       "path": "/content/en/pages/build-an-integration/integration-overview-unDmuW0qFc.json",
-      "updatedAt": "2026-06-13T13:21:32.551Z",
+      "updatedAt": "2026-06-29T17:26:03.918Z",
       "order": 0
     },
     {
@@ -4215,7 +4215,7 @@
         "Worked example: Matrix"
       ],
       "path": "/content/en/pages/build-an-integration/worked-example-matrix-918lI88Lsy.json",
-      "updatedAt": "2026-06-13T13:21:33.271Z",
+      "updatedAt": "2026-06-29T17:26:04.469Z",
       "order": 2
     },
     {
@@ -4259,7 +4259,7 @@
         "Register your integration (Docker Compose)"
       ],
       "path": "/content/en/pages/build-an-integration/register-your-integration-docker-compose-W6oMGCVsAt.json",
-      "updatedAt": "2026-06-13T14:30:11.999Z",
+      "updatedAt": "2026-06-29T18:07:31.640Z",
       "order": 5,
       "platform": "docker-rasenmaeher-integration",
       "clientId": "docker-compose-legacy-XHGf0sQykt",
@@ -4277,7 +4277,7 @@
         "Set up your dev environment (Kubernetes)"
       ],
       "path": "/content/en/pages/build-an-integration/set-up-your-dev-environment-kubernetes-XEyoKN31OD.json",
-      "updatedAt": "2026-06-13T13:21:35.682Z",
+      "updatedAt": "2026-06-29T18:07:32.799Z",
       "order": 6,
       "platform": "opendefence-k8s",
       "clientId": "kubernetes-p5xIRYVegQ",
@@ -4295,7 +4295,7 @@
         "Register your integration (Kubernetes)"
       ],
       "path": "/content/en/pages/build-an-integration/register-your-integration-kubernetes-wjtpPdtQ2k.json",
-      "updatedAt": "2026-06-13T13:21:36.042Z",
+      "updatedAt": "2026-06-29T18:07:32.237Z",
       "order": 7,
       "platform": "opendefence-k8s",
       "clientId": "kubernetes-p5xIRYVegQ",
@@ -4311,7 +4311,7 @@
         "Contributing"
       ],
       "path": "/content/en/pages/contribute-to-project/contributing-dsXGjtdXG8.json",
-      "updatedAt": "2026-06-13T13:21:40.742Z",
+      "updatedAt": "2026-06-29T18:07:33.331Z",
       "order": 0
     },
     {
@@ -4323,7 +4323,7 @@
         "Reporting issues & support"
       ],
       "path": "/content/en/pages/contribute-to-project/reporting-issues-support-MIgxRA5dFF.json",
-      "updatedAt": "2026-06-13T13:21:41.422Z",
+      "updatedAt": "2026-06-29T18:07:34.341Z",
       "order": 1
     },
     {
@@ -4335,7 +4335,7 @@
         "Security policy & reporting"
       ],
       "path": "/content/en/pages/contribute-to-project/security-policy-reporting-UmTyYXQA5Z.json",
-      "updatedAt": "2026-06-16T17:03:37.751Z",
+      "updatedAt": "2026-06-29T18:07:34.885Z",
       "order": 2
     },
     {
@@ -4347,7 +4347,7 @@
         "Releases & versioning"
       ],
       "path": "/content/en/pages/contribute-to-project/releases-versioning-KNjehwFcnX.json",
-      "updatedAt": "2026-06-16T17:04:33.949Z",
+      "updatedAt": "2026-06-29T18:07:33.826Z",
       "order": 3
     },
     {

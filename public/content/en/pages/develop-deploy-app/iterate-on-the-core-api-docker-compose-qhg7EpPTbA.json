@@ -11,7 +11,7 @@
     "Iterate on the core API (Docker Compose)"
   ],
   "createdAt": "2026-06-13T13:20:41.420Z",
-  "updatedAt": "2026-06-13T14:30:11.043Z",
+  "updatedAt": "2026-06-29T18:07:35.945Z",
   "headings": [
     {
       "depth": 2,
@@ -83,7 +83,7 @@
     },
     {
       "type": "html",
-      "html": "<blockquote>\n<p><strong>TODO:</strong> confirm the exact pytest invocation for the integration suite (host vs. inside the <code>rmapi</code> container) and document it here.</p>\n</blockquote>\n<p>After any <code>down -v</code>, regenerate the first admin invite code before onboarding again:</p>"
+      "html": "<blockquote>\n<p><strong>Not yet documented.</strong> The exact <code>pytest</code> invocation for the integration suite — run on the host or inside the <code>rmapi</code> container — is still to be written here.</p>\n</blockquote>\n<p>After any <code>down -v</code>, regenerate the first admin invite code before onboarding again:</p>"
     },
     {
       "type": "code",

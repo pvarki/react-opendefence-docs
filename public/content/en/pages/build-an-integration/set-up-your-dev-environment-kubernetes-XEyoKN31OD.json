@@ -11,7 +11,7 @@
     "Set up your dev environment (Kubernetes)"
   ],
   "createdAt": "2026-06-13T13:21:35.682Z",
-  "updatedAt": "2026-06-13T13:21:35.682Z",
+  "updatedAt": "2026-06-29T18:07:32.799Z",
   "headings": [
     {
       "depth": 2,
@@ -92,7 +92,7 @@
     },
     {
       "type": "html",
-      "html": "<blockquote>\n<p><strong>TODO:</strong> confirm whether a mirrord-style hot-reload flow is also documented for product integration APIs, or whether iterating means rebuilding the image and re-running <code>task deploy</code>.</p>\n</blockquote>"
+      "html": "<blockquote>\n<p><strong>Not yet documented.</strong> Whether product integration APIs get a mirrord-style hot-reload flow, or whether iterating means rebuilding the image and re-running <code>task deploy</code>, is still to be written here.</p>\n</blockquote>"
     }
   ]
 }

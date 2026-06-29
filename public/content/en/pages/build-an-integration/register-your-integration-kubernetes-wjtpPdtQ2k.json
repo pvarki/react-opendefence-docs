@@ -11,7 +11,7 @@
     "Register your integration (Kubernetes)"
   ],
   "createdAt": "2026-06-13T13:21:36.042Z",
-  "updatedAt": "2026-06-13T13:21:36.042Z",
+  "updatedAt": "2026-06-29T18:07:32.237Z",
   "headings": [
     {
       "depth": 2,
@@ -115,7 +115,7 @@
     },
     {
       "type": "html",
-      "html": "<blockquote>\n<p><strong>TODO:</strong> confirm the exact product-discovery mechanism the K8s core rmapi uses to learn about a newly added integration (manifest entry in the shared <code>/pvarki</code> data vs. a config field), since there is no <code>MW_PRODUCTS</code> list on this stack.</p>\n</blockquote>"
+      "html": "<blockquote>\n<p><strong>Not yet documented.</strong> How the K8s core rmapi discovers a newly added integration — a manifest entry in the shared <code>/pvarki</code> data versus a config field — is still to be written here. There is no <code>MW_PRODUCTS</code> list on this stack, so the legacy mechanism does not apply.</p>\n</blockquote>"
     }
   ]
 }

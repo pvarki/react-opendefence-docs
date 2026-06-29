@@ -43,16 +43,16 @@
     "finish": "Aloita",
     "revisit": "Tietoa sivustosta",
     "slide1": {
-      "title": "Tervetuloa OpenDefence-dokumentaatioon",
-      "body": "OpenDefence on Puolustusvoimia palveleva kansallisen puolustuksen avoimen lähdekoodin projekti, jonka tavoitteena on tarjota monialueoperaatioihin kykeneviä C2-palveluita sotilaille helposti ja yhteentoimivasti. Täältä löydät ohjeet sen käyttöön, integrointiin ja kehittämiseen."
+      "title": "Tervetuloa OpenDefenceen",
+      "body": "OpenDefence on Puolustusvoimia palveleva avoimen lähdekoodin projekti, jonka tavoitteena on tarjota multidomain-operaatioihin kykeneviä johtamisjärjestelmäpalveluita sotilaille helposti ja yhteentoimivasti. Täältä löydät ohjeet OpenDefence-projektin käyttöön, integrointiin ja kehittämiseen."
     },
     "slide2": {
       "title": "Sotilaan alusta",
-      "body": "OpenDefence Deploy Appilla otat hajautetut palvelut käyttöön sotilaille yhtenä kokonaisuutena. Toimita TAK, Matrix ja videon suoratoisto mahdollistaaksesi modernin, taistelunkestävän C2:n. Integroi tuotteesi siihen toimittaaksesi sen sotilaille."
+      "body": "OpenDefence **Deploy Appilla** otat hajautetut palvelut käyttöön sotilaille yhtenä kokonaisuutena. Taistelijat pääsevät käyttämään mm. TAK:ia, Matrixia ja videonjakoa yhdestä selkeästä käyttöliittymästä. Näin mahdollistuu moderni ja taistelunkestävä eli helppo JOJÄ. Deploy App hyväksyy itseensä uusia tuotteita - rakenna integraatio tuotteellesi toimittaaksesi sen sotilaille."
     },
     "slide3": {
       "title": "Oppaat käyttöön tai kehitykseen",
-      "body": "Tämä dokumentaatiosivusto sisältää loppukäyttäjien oppaita sekä dokumentaatiota osallistujille, integroijille ja operaattoreille. Tervetuloa OpenDefenceen — tehdään työtä liittoutuneiden puolustuksen puolesta.",
+      "body": "Tämä ohjeisivusto sisältää loppukäyttäjien oppaita sekä dokumentaatiota OpenDefence-projektin kehittämisestä vapaaehtoisen maanpuolustuksen merkeissä kiinnostuneille, tuotteidensa integroinnista kiinnostuneille sekä näiden palveluiden operoijille Tervetuloa OpenDefenceen — teknologia maanpuolustuksen puolesta.",
       "contact": "Yhteystieto: Yhteyspiste tulossa."
     }
   },
@@ -78,7 +78,7 @@
         "a1": "Suomen kansalainen",
         "a2": "Nato-maasta tai Ukrainasta",
         "a3": "muualta?",
-        "a1Body": "Rakennamme Puolustusvoimien ohjaamaa kehittäjä- ja käyttäjäyhteisöä, joka kehittää OpenDefenceä. Suomen kansalaisena olet tervetullut mukaan.\n\nYhteisönhallintamme on kuitenkin vielä rakenteilla. Siksi yhteisö on toistaiseksi avoin vain kutsutuille — käy katsomassa hieman myöhemmin! Avoimen lähdekoodin osallistuminen auttaa sinua luomaan yhteyden meihin, ja se on erittäin tervetullutta.",
+        "a1Body": "Rakennamme Puolustusvoimien ohjaamaa kehittäjä- ja käyttäjäyhteisöä, joka kehittää OpenDefenceä. Suomen kansalaisena olet tervetullut mukaan.\n\nYhteisönhallintamme on kuitenkin vielä rakenteilla. Siksi yhteisö on toistaiseksi avoin vain kutsutuille — käy katsomassa hieman myöhemmin! Sillä välin avoimen lähdekoodin kontribuointi auttaa sinua luomaan yhteyden meihin, ja tämä on erittäin tervetullutta.",
         "a2Body": "Rakennamme Puolustusvoimien ohjaamaa kehittäjä- ja käyttäjäyhteisöä, joka kehittää OpenDefenceä. Nato-jäsenmaan tai Ukrainan kansalaisena olet tervetullut mukaan.\n\nYhteisönhallintamme on kuitenkin rakenteilla, ja ydinkehittäjäyhteisömme toimii suomeksi. Kehitämme keinoja avoimeen osallistumiseen ja yhteydenpitoon englanniksi — käy katsomassa myöhemmin. Avoimen lähdekoodin osallistuminen ja issuet ovat jo nyt erittäin tervetulleita.",
         "a3Body": "Ydinkehittäjä- ja käyttäjäyhteisömme on avoin Nato-jäsenmaiden ja Ukrainan kansalaisille. Avoimen lähdekoodin osallistuminen ja issuet ovat silti tervetulleita."
       },
@@ -86,8 +86,8 @@
         "prompt": "Olen…",
         "lead": "Etsimme osallistujia näistä taustoista.",
         "a1": "Ohjelmistoammattilainen",
-        "a2": "Reserviläinen, jota motivoi uusien taistelutapojen kehittäminen (mutta ei ohjelmistoammattilainen)",
-        "a3": "Sotilasammattilainen",
+        "a2": "Reserviläinen, jota motivoi uusien taistelutapojen kehittäminen (mutta ei ohjelmistokehitys",
+        "a3": "Ammattisotilas",
         "a4": "Ei mikään näistä",
         "a1Body": "OpenDefence pyrkii olemaan paras tapa tehdä vapaaehtoista maanpuolustusta ammattitaidollasi. Haluamme tehdä merkityksellisestä osallistumisesta helppoa emmekä rasittaa sinua turhalla näpertelyllä. Olet juuri se kohderyhmä, jolle tätä rakennamme.",
         "a2Body": "Otamme erittäin mielellämme mukaan reserviläiset, jotka ovat innoissaan kehittämässä sitä, miten taistelemme. Sinut on kutsuttu testaamaan ja antamaan palautetta OpenDefencestä sekä ideoimaan pinoon uusia ominaisuuksia.",
@@ -98,7 +98,7 @@
         "prompt": "Mikä sisältö kiinnostaa sinua ensin?",
         "lead": "Kehittäjädokumentaatiomme on rakenteilla, mutta pyrimme tarjoamaan sinulle kattavan kokonaisuuden, jonka avulla ymmärrät avointa lähdekoodiamme tarpeitasi varten.",
         "a1": "Yleiskatsaus kehittäjädokumentaatioon",
-        "a2": "Miten kloonata ja pystyttää kehitysympäristö",
+        "a2": "Miten kloonata ja pystyttää oma kehitysympäristö",
         "a3": "Yleiskatsaus arkkitehtuuriin",
         "a4": "Tutustu parhaisiin käytäntöihimme",
         "a5": "Miten tuoda osallistumiseni PR:nä",
@@ -107,7 +107,7 @@
     },
     "integrate": {
       "title": "Integroi",
-      "lead": "OpenDefence-pino pyrkii olemaan rajapinta, jonka kautta tuotekehittäjät saavat ratkaisunsa sotilaille. Jos haluat voittaa tulevaisuuden taistelukentän ratkaisuilla, käytä meitä tapana toimittaa tuotteesi sotilaille tavalla, joka täyttää todelliset sotilaalliset vaatimukset.",
+      "lead": "OpenDefence-pino pyrkii olemaan rajapinta, jonka kautta tuotekehittäjät saavat ratkaisunsa sotilaille. Jos haluat voittaa tulevaisuuden taistelukentän ratkaisuilla, käytä meitä tapana toimittaa tuotteesi sotilaille tavalla, joka täyttää sotilaiden oikeat vaatimukset.",
       "q1": {
         "prompt": "Oletko…",
         "a1": "Rakentamassa tai operoimassa puolustusalan startupia",

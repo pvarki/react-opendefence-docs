@@ -11,7 +11,7 @@
     "Deploy on Kubernetes"
   ],
   "createdAt": "2026-06-13T13:20:34.601Z",
-  "updatedAt": "2026-06-13T14:30:09.549Z",
+  "updatedAt": "2026-06-29T18:07:38.578Z",
   "headings": [
     {
       "depth": 2,
@@ -92,7 +92,7 @@
     },
     {
       "type": "html",
-      "html": "<p>Do not document CFSSL or miniwerk as part of this platform — they belong to the legacy Docker Compose stack only.</p>\n<blockquote>\n<p><strong>TODO:</strong> the local <code>opendefense-system</code> base still contains a miniwerk <em>job</em> configured for mkcert (<code>MW_MKCERT=true</code>) used for local cert bootstrapping. Confirm whether this is a transitional local-only artifact; the canonical CA/trust path on this platform is cert-manager + trust-manager + <code>opendefense-pki</code>, and Let's Encrypt-style miniwerk certificate provisioning is <strong>not</strong> part of it.</p>\n</blockquote>\n<h2 id=\"other-supporting-operators\"><a href=\"#other-supporting-operators\">Other supporting operators</a></h2>\n<p>The platform also runs cloudnative-pg (PostgreSQL), keycloak-operator, external-secrets-operator, projectcontour, longhorn (storage), and the prometheus/grafana operators, each as its own <code>k8s/&#x3C;component>/</code> Kustomize unit composed in via <code>k8s/main/&#x3C;env>/</code>.</p>\n<h2 id=\"cloud-deploy-with-zarf\"><a href=\"#cloud-deploy-with-zarf\">Cloud deploy with Zarf</a></h2>\n<p>For an external cluster, build a Zarf package from the cloud overlays and deploy it. The build renders the same four cloud phases and bundles their manifests:</p>"
+      "html": "<p>Do not document CFSSL or miniwerk as part of this platform — they belong to the legacy Docker Compose stack only.</p>\n<blockquote>\n<p><strong>Not yet documented.</strong> The local <code>opendefense-system</code> base still contains a miniwerk <em>job</em> configured for mkcert (<code>MW_MKCERT=true</code>) for local cert bootstrapping. Whether that is a transitional local-only artifact is still to be written up here. The canonical CA/trust path on this platform is cert-manager + trust-manager + <code>opendefense-pki</code>; Let's Encrypt-style miniwerk certificate provisioning is <strong>not</strong> part of it.</p>\n</blockquote>\n<h2 id=\"other-supporting-operators\"><a href=\"#other-supporting-operators\">Other supporting operators</a></h2>\n<p>The platform also runs cloudnative-pg (PostgreSQL), keycloak-operator, external-secrets-operator, projectcontour, longhorn (storage), and the prometheus/grafana operators, each as its own <code>k8s/&#x3C;component>/</code> Kustomize unit composed in via <code>k8s/main/&#x3C;env>/</code>.</p>\n<h2 id=\"cloud-deploy-with-zarf\"><a href=\"#cloud-deploy-with-zarf\">Cloud deploy with Zarf</a></h2>\n<p>For an external cluster, build a Zarf package from the cloud overlays and deploy it. The build renders the same four cloud phases and bundles their manifests:</p>"
     },
     {
       "type": "code",
@@ -119,7 +119,7 @@
     },
     {
       "type": "html",
-      "html": "<blockquote>\n<p><strong>TODO:</strong> confirm the exact in-container invocation on k8s (whether the virtualenv must be activated, e.g. <code>source /.venv/bin/activate &#x26;&#x26; rasenmaeher_api addcode</code>, as it is in some legacy modes). The command name (<code>rasenmaeher_api addcode</code>) and target deployment are confirmed; the shell wrapper is not.</p>\n</blockquote>\n<p>Then follow the shared in-UI flow in <strong>Operator quickstart</strong>. For ongoing operations on this platform see <strong>Day-2 operations (Kubernetes)</strong>; for development against a running platform (mirrord), see <strong>Develop Deploy App</strong>.</p>"
+      "html": "<blockquote>\n<p><strong>Not yet documented.</strong> The exact in-container invocation on k8s — whether the virtualenv must be activated first (e.g. <code>source /.venv/bin/activate &#x26;&#x26; rasenmaeher_api addcode</code>, as in some legacy modes) — is still to be written here. The command name (<code>rasenmaeher_api addcode</code>) and target deployment are settled; only the shell wrapper is open.</p>\n</blockquote>\n<p>Then follow the shared in-UI flow in <strong>Operator quickstart</strong>. For ongoing operations on this platform see <strong>Day-2 operations (Kubernetes)</strong>; for development against a running platform (mirrord), see <strong>Develop Deploy App</strong>.</p>"
     }
   ]
 }
