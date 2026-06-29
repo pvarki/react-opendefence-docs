@@ -11,7 +11,7 @@
     "Day-2 operations (Kubernetes)"
   ],
   "createdAt": "2026-06-13T13:20:34.953Z",
-  "updatedAt": "2026-06-29T18:07:38.050Z",
+  "updatedAt": "2026-06-29T18:13:16.312Z",
   "headings": [
     {
       "depth": 2,
@@ -52,7 +52,7 @@
   "blocks": [
     {
       "type": "html",
-      "html": "<p>Day-2 operations for a Deploy App instance on the Kubernetes platform (<a href=\"https://github.com/pvarki/opendefence-platform\" target=\"_blank\" rel=\"noopener noreferrer\"><code>pvarki/opendefence-platform</code></a>, <strong>alpha</strong>): redeploying, managing secrets, rotating certificates/CA, the database, upgrades, and teardown. This stack uses Kubernetes-native operators rather than the legacy miniwerk/CFSSL pieces. For initial standup see <strong>Deploy on Kubernetes</strong>; for failure modes see <strong>Troubleshooting &#x26; teardown</strong>.</p>\n<h2 id=\"redeploy--apply-changes\"><a href=\"#redeploy--apply-changes\">Redeploy / apply changes</a></h2>\n<p>The canonical interface is <code>task</code>. To re-apply the full phased stack to the current cluster:</p>"
+      "html": "<blockquote>\n<p><strong>⚠️ Closed alpha — provisional docs.</strong> OpenDefence on Kubernetes (<code>opendefence-platform</code>) is in <strong>closed alpha</strong> and under rapid, breaking development. This page describes a moving target and will most likely be <strong>superseded by the documentation that ships with the first public release</strong> — treat everything here as provisional, and do not rely on it for a production deployment.</p>\n</blockquote>\n<p>Day-2 operations for a Deploy App instance on the Kubernetes platform (<a href=\"https://github.com/pvarki/opendefence-platform\" target=\"_blank\" rel=\"noopener noreferrer\"><code>pvarki/opendefence-platform</code></a>, <strong>alpha</strong>): redeploying, managing secrets, rotating certificates/CA, the database, upgrades, and teardown. This stack uses Kubernetes-native operators rather than the legacy miniwerk/CFSSL pieces. For initial standup see <strong>Deploy on Kubernetes</strong>; for failure modes see <strong>Troubleshooting &#x26; teardown</strong>.</p>\n<h2 id=\"redeploy--apply-changes\"><a href=\"#redeploy--apply-changes\">Redeploy / apply changes</a></h2>\n<p>The canonical interface is <code>task</code>. To re-apply the full phased stack to the current cluster:</p>"
     },
     {
       "type": "code",

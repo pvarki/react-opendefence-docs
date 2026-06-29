@@ -11,7 +11,7 @@
     "Iterate on the core API (mirrord)"
   ],
   "createdAt": "2026-06-13T13:21:28.222Z",
-  "updatedAt": "2026-06-29T18:07:36.488Z",
+  "updatedAt": "2026-06-29T18:13:14.095Z",
   "headings": [
     {
       "depth": 2,
@@ -47,7 +47,7 @@
   "blocks": [
     {
       "type": "html",
-      "html": "<p>On the Kubernetes stack the inner loop does not run uvicorn inside the cluster. Instead you keep the full stack running in <code>kind</code> (see <strong>Set up your dev environment (Kubernetes)</strong>) and use <strong>mirrord</strong> to make your <em>local</em> core process handle the cluster's traffic for <code>deployment/opendefense-rmapi</code>. You edit code on your machine, uvicorn reloads locally, and the running cluster routes real requests to it. This is the platform repo's \"Developing using mirrord\" workflow.</p>\n<h2 id=\"prerequisites\"><a href=\"#prerequisites\">Prerequisites</a></h2>\n<ul>\n<li>The platform stack up locally: <code>task up</code> against the <code>opendefense-kind</code> cluster, with <code>opendefense-rmapi</code> healthy in namespace <code>opendefense-system</code>.</li>\n<li>A local checkout of the <strong>rasenmaeher</strong> repo (<code>pvarki/python-rasenmaeher-api</code>) with its dependencies installed via Poetry — you run mirrord <em>from that repo</em>, not from the platform repo.</li>\n<li><code>mirrord</code> installed locally.</li>\n</ul>\n<h2 id=\"the-mirrord-inner-loop\"><a href=\"#the-mirrord-inner-loop\">The mirrord inner loop</a></h2>\n<p>From the rasenmaeher repo, run your local core under uvicorn but stolen into the cluster target:</p>"
+      "html": "<blockquote>\n<p><strong>⚠️ Closed alpha — provisional docs.</strong> OpenDefence on Kubernetes (<code>opendefence-platform</code>) is in <strong>closed alpha</strong> and under rapid, breaking development. This page describes a moving target and will most likely be <strong>superseded by the documentation that ships with the first public release</strong> — treat everything here as provisional, and do not rely on it for a production deployment.</p>\n</blockquote>\n<p>On the Kubernetes stack the inner loop does not run uvicorn inside the cluster. Instead you keep the full stack running in <code>kind</code> (see <strong>Set up your dev environment (Kubernetes)</strong>) and use <strong>mirrord</strong> to make your <em>local</em> core process handle the cluster's traffic for <code>deployment/opendefense-rmapi</code>. You edit code on your machine, uvicorn reloads locally, and the running cluster routes real requests to it. This is the platform repo's \"Developing using mirrord\" workflow.</p>\n<h2 id=\"prerequisites\"><a href=\"#prerequisites\">Prerequisites</a></h2>\n<ul>\n<li>The platform stack up locally: <code>task up</code> against the <code>opendefense-kind</code> cluster, with <code>opendefense-rmapi</code> healthy in namespace <code>opendefense-system</code>.</li>\n<li>A local checkout of the <strong>rasenmaeher</strong> repo (<code>pvarki/python-rasenmaeher-api</code>) with its dependencies installed via Poetry — you run mirrord <em>from that repo</em>, not from the platform repo.</li>\n<li><code>mirrord</code> installed locally.</li>\n</ul>\n<h2 id=\"the-mirrord-inner-loop\"><a href=\"#the-mirrord-inner-loop\">The mirrord inner loop</a></h2>\n<p>From the rasenmaeher repo, run your local core under uvicorn but stolen into the cluster target:</p>"
     },
     {
       "type": "code",

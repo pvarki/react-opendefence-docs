@@ -11,7 +11,7 @@
     "Set up your dev environment (Kubernetes)"
   ],
   "createdAt": "2026-06-13T13:21:35.682Z",
-  "updatedAt": "2026-06-29T18:07:32.799Z",
+  "updatedAt": "2026-06-29T18:13:14.731Z",
   "headings": [
     {
       "depth": 2,
@@ -47,7 +47,7 @@
   "blocks": [
     {
       "type": "html",
-      "html": "<p>This page covers running your product integration API as a workload on the <strong>Kubernetes stack</strong> (<a href=\"https://github.com/pvarki/opendefence-platform\" target=\"_blank\" rel=\"noopener noreferrer\">pvarki/opendefence-platform</a>, alpha). The stack is Kustomize-based: each service has a <code>base/</code> plus <code>overlays/&#x3C;env>/</code>. There is <strong>no miniwerk-driven</strong> <code>**MW_PRODUCTS**</code> <strong>registration</strong> — your integration is composed in by manifests. The manifest wiring is in <strong>Register your integration (Kubernetes)</strong>; this page is about the toolchain and getting a local cluster running.</p>\n<blockquote>\n<p><strong>Platform scope: k8s (Kubernetes only).</strong> The compose aliases (<code>rmlocal</code>/<code>rmdev</code>), the local <code>:5050</code> registry, and miniwerk's <code>MW_PRODUCTS</code> do <strong>not</strong> apply — see <strong>Set up your dev environment (Docker Compose)</strong> for the legacy stack.</p>\n</blockquote>\n<h2 id=\"toolchain\"><a href=\"#toolchain\">Toolchain</a></h2>\n<p>The repo pins tools with <a href=\"https://mise.jdx.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">mise</a> and drives the cluster with <a href=\"https://taskfile.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">Taskfile</a>:</p>"
+      "html": "<blockquote>\n<p><strong>⚠️ Closed alpha — provisional docs.</strong> OpenDefence on Kubernetes (<code>opendefence-platform</code>) is in <strong>closed alpha</strong> and under rapid, breaking development. This page describes a moving target and will most likely be <strong>superseded by the documentation that ships with the first public release</strong> — treat everything here as provisional, and do not rely on it for a production deployment.</p>\n</blockquote>\n<p>This page covers running your product integration API as a workload on the <strong>Kubernetes stack</strong> (<a href=\"https://github.com/pvarki/opendefence-platform\" target=\"_blank\" rel=\"noopener noreferrer\">pvarki/opendefence-platform</a>, alpha). The stack is Kustomize-based: each service has a <code>base/</code> plus <code>overlays/&#x3C;env>/</code>. There is <strong>no miniwerk-driven</strong> <code>**MW_PRODUCTS**</code> <strong>registration</strong> — your integration is composed in by manifests. The manifest wiring is in <strong>Register your integration (Kubernetes)</strong>; this page is about the toolchain and getting a local cluster running.</p>\n<blockquote>\n<p><strong>Platform scope: k8s (Kubernetes only).</strong> The compose aliases (<code>rmlocal</code>/<code>rmdev</code>), the local <code>:5050</code> registry, and miniwerk's <code>MW_PRODUCTS</code> do <strong>not</strong> apply — see <strong>Set up your dev environment (Docker Compose)</strong> for the legacy stack.</p>\n</blockquote>\n<h2 id=\"toolchain\"><a href=\"#toolchain\">Toolchain</a></h2>\n<p>The repo pins tools with <a href=\"https://mise.jdx.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">mise</a> and drives the cluster with <a href=\"https://taskfile.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">Taskfile</a>:</p>"
     },
     {
       "type": "code",

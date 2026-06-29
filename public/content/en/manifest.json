@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "locale": "en",
-  "generatedAt": "2026-06-29T18:08:51.470Z",
+  "generatedAt": "2026-06-29T18:14:27.564Z",
   "collections": [
     {
       "slug": "deploy-app",
@@ -4037,7 +4037,7 @@
         "Deploy on Kubernetes"
       ],
       "path": "/content/en/pages/operate/deploy-on-kubernetes-S5cwJYQzPu.json",
-      "updatedAt": "2026-06-29T18:07:38.578Z",
+      "updatedAt": "2026-06-29T18:13:15.736Z",
       "order": 5,
       "platform": "opendefence-k8s",
       "clientId": "kubernetes-rEPhr2GWLF",
@@ -4055,7 +4055,7 @@
         "Day-2 operations (Kubernetes)"
       ],
       "path": "/content/en/pages/operate/day-2-operations-kubernetes-lDjKap3DpF.json",
-      "updatedAt": "2026-06-29T18:07:38.050Z",
+      "updatedAt": "2026-06-29T18:13:16.312Z",
       "order": 6,
       "platform": "opendefence-k8s",
       "clientId": "kubernetes-rEPhr2GWLF",
@@ -4157,7 +4157,7 @@
         "Set up your dev environment (Kubernetes)"
       ],
       "path": "/content/en/pages/develop-deploy-app/set-up-your-dev-environment-kubernetes-z9YF0C0oH4.json",
-      "updatedAt": "2026-06-13T13:21:27.879Z",
+      "updatedAt": "2026-06-29T18:13:13.562Z",
       "order": 6,
       "platform": "opendefence-k8s",
       "clientId": "kubernetes-plT6WHkYy5",
@@ -4175,7 +4175,7 @@
         "Iterate on the core API (mirrord)"
       ],
       "path": "/content/en/pages/develop-deploy-app/iterate-on-the-core-api-mirrord-lzshevUc4T.json",
-      "updatedAt": "2026-06-29T18:07:36.488Z",
+      "updatedAt": "2026-06-29T18:13:14.095Z",
       "order": 7,
       "platform": "opendefence-k8s",
       "clientId": "kubernetes-plT6WHkYy5",
@@ -4277,7 +4277,7 @@
         "Set up your dev environment (Kubernetes)"
       ],
       "path": "/content/en/pages/build-an-integration/set-up-your-dev-environment-kubernetes-XEyoKN31OD.json",
-      "updatedAt": "2026-06-29T18:07:32.799Z",
+      "updatedAt": "2026-06-29T18:13:14.731Z",
       "order": 6,
       "platform": "opendefence-k8s",
       "clientId": "kubernetes-p5xIRYVegQ",
@@ -4295,7 +4295,7 @@
         "Register your integration (Kubernetes)"
       ],
       "path": "/content/en/pages/build-an-integration/register-your-integration-kubernetes-wjtpPdtQ2k.json",
-      "updatedAt": "2026-06-29T18:07:32.237Z",
+      "updatedAt": "2026-06-29T18:13:15.240Z",
       "order": 7,
       "platform": "opendefence-k8s",
       "clientId": "kubernetes-p5xIRYVegQ",

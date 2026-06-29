@@ -11,7 +11,7 @@
     "Register your integration (Kubernetes)"
   ],
   "createdAt": "2026-06-13T13:21:36.042Z",
-  "updatedAt": "2026-06-29T18:07:32.237Z",
+  "updatedAt": "2026-06-29T18:13:15.240Z",
   "headings": [
     {
       "depth": 2,
@@ -52,7 +52,7 @@
   "blocks": [
     {
       "type": "html",
-      "html": "<p>On the Kubernetes stack, registering a product is done entirely with <strong>manifests</strong> — there is no miniwerk and no <code>MW_PRODUCTS</code>. You add a Kustomize overlay with a Traefik <code>IngressRoute</code>, cert-manager <code>Certificate</code>s, and the in-cluster trust bundle, then compose your overlay into the aggregator. The <a href=\"https://github.com/pvarki/python-mediamtx-rmmtxauthz\" target=\"_blank\" rel=\"noopener noreferrer\">MediaMTX integration</a> under <code>k8s/mtx</code> is the worked model.</p>\n<blockquote>\n<p><strong>Platform scope: k8s (Kubernetes only).</strong> For the Docker Compose equivalent (miniwerk, <code>MW_PRODUCTS</code>, nginx upstreams), see <strong>Register your integration (Docker Compose)</strong>.</p>\n</blockquote>\n<h2 id=\"1-compose-your-overlay-into-the-aggregator\"><a href=\"#1-compose-your-overlay-into-the-aggregator\">1. Compose your overlay into the aggregator</a></h2>\n<p>The local stack composes products in <code>k8s/main/local/opendefense/kustomization.yaml</code>:</p>"
+      "html": "<blockquote>\n<p><strong>⚠️ Closed alpha — provisional docs.</strong> OpenDefence on Kubernetes (<code>opendefence-platform</code>) is in <strong>closed alpha</strong> and under rapid, breaking development. This page describes a moving target and will most likely be <strong>superseded by the documentation that ships with the first public release</strong> — treat everything here as provisional, and do not rely on it for a production deployment.</p>\n</blockquote>\n<p>On the Kubernetes stack, registering a product is done entirely with <strong>manifests</strong> — there is no miniwerk and no <code>MW_PRODUCTS</code>. You add a Kustomize overlay with a Traefik <code>IngressRoute</code>, cert-manager <code>Certificate</code>s, and the in-cluster trust bundle, then compose your overlay into the aggregator. The <a href=\"https://github.com/pvarki/python-mediamtx-rmmtxauthz\" target=\"_blank\" rel=\"noopener noreferrer\">MediaMTX integration</a> under <code>k8s/mtx</code> is the worked model.</p>\n<blockquote>\n<p><strong>Platform scope: k8s (Kubernetes only).</strong> For the Docker Compose equivalent (miniwerk, <code>MW_PRODUCTS</code>, nginx upstreams), see <strong>Register your integration (Docker Compose)</strong>.</p>\n</blockquote>\n<h2 id=\"1-compose-your-overlay-into-the-aggregator\"><a href=\"#1-compose-your-overlay-into-the-aggregator\">1. Compose your overlay into the aggregator</a></h2>\n<p>The local stack composes products in <code>k8s/main/local/opendefense/kustomization.yaml</code>:</p>"
     },
     {
       "type": "code",
