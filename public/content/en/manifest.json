@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "locale": "en",
-  "generatedAt": "2026-06-29T18:22:18.016Z",
+  "generatedAt": "2026-06-30T18:04:30.611Z",
   "collections": [
     {
       "slug": "deploy-app",
@@ -3939,7 +3939,7 @@
         "Architecture orientation"
       ],
       "path": "/content/en/pages/introduction/architecture-orientation-H9Vndl9nba.json",
-      "updatedAt": "2026-06-16T16:21:31.291Z",
+      "updatedAt": "2026-06-30T18:04:16.002Z",
       "order": 2
     },
     {
@@ -3951,7 +3951,7 @@
         "Glossary"
       ],
       "path": "/content/en/pages/introduction/glossary-bM0nAcqNkN.json",
-      "updatedAt": "2026-06-13T13:20:29.553Z",
+      "updatedAt": "2026-06-30T18:04:16.519Z",
       "order": 3
     },
     {
@@ -3987,7 +3987,7 @@
         "Troubleshooting & teardown"
       ],
       "path": "/content/en/pages/operate/troubleshooting-teardown-H4UicAUh4c.json",
-      "updatedAt": "2026-06-29T18:07:39.353Z",
+      "updatedAt": "2026-06-30T18:04:17.091Z",
       "order": 2
     },
     {
@@ -4311,7 +4311,7 @@
         "Contributing"
       ],
       "path": "/content/en/pages/contribute-to-project/contributing-dsXGjtdXG8.json",
-      "updatedAt": "2026-06-29T18:07:33.331Z",
+      "updatedAt": "2026-06-30T18:04:17.598Z",
       "order": 0
     },
     {

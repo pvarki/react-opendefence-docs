@@ -9,7 +9,7 @@
     "Troubleshooting & teardown"
   ],
   "createdAt": "2026-06-13T13:20:32.542Z",
-  "updatedAt": "2026-06-29T18:07:39.353Z",
+  "updatedAt": "2026-06-30T18:04:17.091Z",
   "headings": [
     {
       "depth": 2,
@@ -58,7 +58,7 @@
     },
     {
       "type": "html",
-      "html": "<p>Use <code>down -v</code> only when you genuinely want a clean slate — for example resetting a dev environment, or before running the integration test suite (which expects a clean database). On a real instance, treat <code>-v</code> as \"destroy this instance.\"</p>\n<h2 id=\"teardown--kubernetes\"><a href=\"#teardown--kubernetes\">Teardown — Kubernetes</a></h2>\n<p>For a local <code>kind</code> instance, the project's <code>task</code> interface deletes the whole cluster (and therefore all instance data):</p>"
+      "html": "<p>Use <code>down -v</code> only when you genuinely want a clean slate — for example resetting a dev environment, or before running the integration test suite (which expects a clean database). On a real instance, treat <code>-v</code> as \"destroy this instance.\"</p>\n<h2 id=\"teardown--kubernetes\"><a href=\"#teardown--kubernetes\">Teardown — Kubernetes</a></h2>\n<blockquote>\n<p><strong>⚠️ Closed alpha.</strong> OpenDefence on Kubernetes (<code>opendefence-platform</code>) is in <strong>closed alpha</strong>, under rapid and breaking development, and will most likely be <strong>superseded by the documentation that ships with the first public release</strong>. Treat the Kubernetes content here as provisional — not a production target.</p>\n</blockquote>\n<p>For a local <code>kind</code> instance, the project's <code>task</code> interface deletes the whole cluster (and therefore all instance data):</p>"
     },
     {
       "type": "code",
