@@ -11,7 +11,7 @@
     "Set up your dev environment (Kubernetes)"
   ],
   "createdAt": "2026-06-13T13:21:27.879Z",
-  "updatedAt": "2026-06-13T13:21:27.879Z",
+  "updatedAt": "2026-06-29T18:13:13.562Z",
   "headings": [
     {
       "depth": 2,
@@ -62,7 +62,7 @@
   "blocks": [
     {
       "type": "html",
-      "html": "<p>This is the first thing a core developer does on the new Kubernetes stack (<code>pvarki/opendefence-platform</code>, <strong>alpha</strong>): stand up a local <code>kind</code> cluster running the full Deploy App stack, so you can later point your local core code at it. Unlike the legacy stack there is no miniwerk and no CFSSL here — trust is provided by <code>cert-manager</code>, <code>trust-manager</code>, and the <code>opendefense-pki</code> resources, and the whole lifecycle is driven by <code>task</code>. Everything below comes from the platform repo's <code>README.md</code> and <code>taskfile.yaml</code>.</p>\n<h2 id=\"prerequisites\"><a href=\"#prerequisites\">Prerequisites</a></h2>\n<ul>\n<li><strong>Docker</strong> (kind runs Kubernetes in Docker).</li>\n<li><strong>kind</strong> — Kubernetes in Docker.</li>\n<li><strong>kubectl</strong> — the Kubernetes CLI.</li>\n<li><strong>mise</strong> — tool version manager (recommended; it pins the exact tool versions for this repo).</li>\n</ul>\n<p>The pinned tool versions live in <code>mise.toml</code>:</p>"
+      "html": "<blockquote>\n<p><strong>⚠️ Closed alpha — provisional docs.</strong> OpenDefence on Kubernetes (<code>opendefence-platform</code>) is in <strong>closed alpha</strong> and under rapid, breaking development. This page describes a moving target and will most likely be <strong>superseded by the documentation that ships with the first public release</strong> — treat everything here as provisional, and do not rely on it for a production deployment.</p>\n</blockquote>\n<p>This is the first thing a core developer does on the new Kubernetes stack (<code>pvarki/opendefence-platform</code>, <strong>alpha</strong>): stand up a local <code>kind</code> cluster running the full Deploy App stack, so you can later point your local core code at it. Unlike the legacy stack there is no miniwerk and no CFSSL here — trust is provided by <code>cert-manager</code>, <code>trust-manager</code>, and the <code>opendefense-pki</code> resources, and the whole lifecycle is driven by <code>task</code>. Everything below comes from the platform repo's <code>README.md</code> and <code>taskfile.yaml</code>.</p>\n<h2 id=\"prerequisites\"><a href=\"#prerequisites\">Prerequisites</a></h2>\n<ul>\n<li><strong>Docker</strong> (kind runs Kubernetes in Docker).</li>\n<li><strong>kind</strong> — Kubernetes in Docker.</li>\n<li><strong>kubectl</strong> — the Kubernetes CLI.</li>\n<li><strong>mise</strong> — tool version manager (recommended; it pins the exact tool versions for this repo).</li>\n</ul>\n<p>The pinned tool versions live in <code>mise.toml</code>:</p>"
     },
     {
       "type": "code",

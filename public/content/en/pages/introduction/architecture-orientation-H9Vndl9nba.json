@@ -9,7 +9,7 @@
     "Architecture orientation"
   ],
   "createdAt": "2026-06-13T13:20:29.180Z",
-  "updatedAt": "2026-06-16T16:21:31.291Z",
+  "updatedAt": "2026-06-30T18:04:16.002Z",
   "headings": [
     {
       "depth": 2,
@@ -63,7 +63,7 @@
     },
     {
       "type": "html",
-      "html": "<p><strong>Kubernetes</strong> (<code>opendefence-platform</code>, alpha) — Traefik ingress, with cert-manager + trust-manager + opendefense-pki providing the CA and trust:</p>"
+      "html": "<blockquote>\n<p><strong>⚠️ Closed alpha.</strong> OpenDefence on Kubernetes (<code>opendefence-platform</code>) is in <strong>closed alpha</strong>, under rapid and breaking development, and will most likely be <strong>superseded by the documentation that ships with the first public release</strong>. Treat the Kubernetes content here as provisional — not a production target.</p>\n</blockquote>\n<p><strong>Kubernetes</strong> (<code>opendefence-platform</code>, alpha) — Traefik ingress, with cert-manager + trust-manager + opendefense-pki providing the CA and trust:</p>"
     },
     {
       "type": "mermaid",
