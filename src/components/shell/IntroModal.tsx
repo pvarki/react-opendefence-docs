@@ -16,6 +16,7 @@ import {
   DrawerTitle,
 } from "@/components/ui/drawer";
 import { Button } from "@/components/ui/button";
+import { PwaInstallPrompt } from "@/components/shell/PwaInstallPrompt";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { useReaderData } from "@/lib/useReaderData";
 import { stripBase, withBase } from "@/lib/base";
@@ -110,9 +111,12 @@ export function IntroModal() {
         {t(`intro.${slide.key}.body`)}
       </p>
       {isLast && (
-        <p className="text-xs text-muted-foreground/70">
-          {t("intro.slide3.contact")}
-        </p>
+        <>
+          <PwaInstallPrompt />
+          <p className="text-xs text-muted-foreground/70">
+            {t("intro.slide3.contact")}
+          </p>
+        </>
       )}
 
       <div className="flex items-center justify-between gap-3 pt-1">

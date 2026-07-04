@@ -216,6 +216,11 @@
     "changelog": "Changelog",
     "nothingYet": "Nothing to show here yet."
   },
+  "pwa": {
+    "lead": "Install this site as an app on your device — once installed it also works offline.",
+    "install": "Install app",
+    "iosHint": "On iPhone or iPad: tap Share, then \"Add to Home Screen\"."
+  },
   "common": {
     "loading": "Loading…",
     "error": "Something went wrong",

@@ -15,6 +15,7 @@ import { BookCard } from "@/components/shell/BookCard";
 import { OrientationModal } from "@/components/shell/OrientationModal";
 import { markOrientationSeen, type TrackKey } from "@/lib/orientationFlows";
 import { AgentFriendlyNote } from "@/components/shell/AgentFriendlyNote";
+import { PwaInstallPrompt } from "@/components/shell/PwaInstallPrompt";
 import { CARD_IMAGES } from "@/lib/cardImages";
 import { withBase } from "@/lib/base";
 
@@ -267,6 +268,10 @@ function HomeFooter() {
             if (!o) setOrient(null);
           }}
         />
+
+        <div className="mt-8">
+          <PwaInstallPrompt />
+        </div>
 
         <div className="mt-6 space-y-0.5 border-t border-border pt-4">
           {COPYRIGHT_LINES.map((line) => (
