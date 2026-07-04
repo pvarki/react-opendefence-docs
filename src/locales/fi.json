@@ -207,6 +207,11 @@
     "changelog": "Muutosloki",
     "nothingYet": "Täällä ei ole vielä mitään näytettävää."
   },
+  "pwa": {
+    "lead": "Asenna tämä sivusto sovellukseksi laitteellesi — asennettuna se toimii myös ilman verkkoyhteyttä.",
+    "install": "Asenna sovellus",
+    "iosHint": "iPhonella tai iPadilla: napauta Jaa ja valitse \"Lisää Koti-valikkoon\"."
+  },
   "common": {
     "loading": "Ladataan…",
     "error": "Jokin meni vikaan",

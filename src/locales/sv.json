@@ -207,6 +207,11 @@
     "changelog": "Ändringslogg",
     "nothingYet": "Det finns inget att visa här ännu."
   },
+  "pwa": {
+    "lead": "Installera den här webbplatsen som en app på din enhet — installerad fungerar den även utan nätverk.",
+    "install": "Installera appen",
+    "iosHint": "På iPhone eller iPad: tryck på Dela och välj \"Lägg till på hemskärmen\"."
+  },
   "common": {
     "loading": "Laddar…",
     "error": "Något gick fel",
