@@ -185,9 +185,11 @@
   },
   "devShelf": {
     "introduction": "Introduktion",
+    "architecture": "Arkitektur",
     "operate": "Drift",
     "contribute": "Bidra",
-    "integrate": "Integrera"
+    "integrate": "Integrera",
+    "officialIntegrations": "Officiella integrationer"
   },
   "apiRef": {
     "title": "API-referens",

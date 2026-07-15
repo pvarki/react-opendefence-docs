@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "label": "Matrix",
+  "slug": "matrix",
+  "items": [
+    {
+      "type": "doc",
+      "id": "what-the-matrix-integration-is-eVlSeQ6EE7",
+      "label": "What the Matrix integration is",
+      "slug": "what-the-matrix-integration-is-eVlSeQ6EE7"
+    },
+    {
+      "type": "doc",
+      "id": "matrix-stack-kubernetes-KULarUCYri",
+      "label": "Matrix stack",
+      "slug": "matrix-stack-kubernetes-KULarUCYri"
+    }
+  ]
+}

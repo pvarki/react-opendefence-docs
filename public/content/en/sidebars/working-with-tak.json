@@ -267,6 +267,19 @@
     },
     {
       "type": "group",
+      "id": "tak-on-the-opendefence-platform-1bxWRZBOMb",
+      "label": "TAK on the OpenDefence Platform",
+      "children": [
+        {
+          "type": "doc",
+          "id": "tak-stack-kubernetes-ab0AvFHVX5",
+          "label": "TAK stack",
+          "slug": "tak-stack-kubernetes-ab0AvFHVX5"
+        }
+      ]
+    },
+    {
+      "type": "group",
       "id": "wire-up-two-federation-hubs-iac-fzNcHRftqI",
       "label": "Wire up two Federation Hubs",
       "children": [

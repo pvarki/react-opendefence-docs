@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "locale": "en",
-  "generatedAt": "2026-06-30T18:04:30.611Z",
+  "generatedAt": "2026-07-15T14:33:48.070Z",
   "collections": [
     {
       "slug": "deploy-app",
@@ -129,11 +129,30 @@
       "order": 7
     },
     {
+      "slug": "architecture",
+      "label": "Architecture",
+      "description": "How the platform works: components, networking, PKI, and deployment",
+      "section": "dev",
+      "order": 8,
+      "clients": [
+        {
+          "id": "docker-compose-legacy-ZdyMQ8TrXJ",
+          "label": "Docker Compose",
+          "platform": "docker-rasenmaeher-integration"
+        },
+        {
+          "id": "kubernetes-GVRMfSVcxG",
+          "label": "Kubernetes",
+          "platform": "opendefence-k8s"
+        }
+      ]
+    },
+    {
       "slug": "operate",
       "label": "Operate",
       "description": "Deploy and run Deploy App",
       "section": "dev",
-      "order": 8,
+      "order": 9,
       "clients": [
         {
           "id": "docker-compose-legacy-V5BNgGudas",
@@ -152,7 +171,7 @@
       "label": "Develop Deploy App",
       "description": "Work on the Deploy App core (rmapi)",
       "section": "dev",
-      "order": 9,
+      "order": 10,
       "clients": [
         {
           "id": "docker-compose-legacy-nhqHtxFBvx",
@@ -171,7 +190,7 @@
       "label": "Build an Integration",
       "description": "Build a product integration API for Deploy App",
       "section": "dev",
-      "order": 10,
+      "order": 11,
       "clients": [
         {
           "id": "docker-compose-legacy-XHGf0sQykt",
@@ -190,14 +209,28 @@
       "label": "Contribute to Project",
       "description": "Contribute across the pvarki repositories",
       "section": "dev",
-      "order": 11
+      "order": 12
     },
     {
       "slug": "working-with-tak",
       "label": "Working with TAK",
       "description": "Develop for TAK: plugins, TAK Server integration, and federation",
       "section": "dev",
-      "order": 12
+      "order": 13
+    },
+    {
+      "slug": "mediamtx",
+      "label": "MediaMTX",
+      "description": "The MediaMTX video streaming integration: architecture and internals",
+      "section": "dev",
+      "order": 14
+    },
+    {
+      "slug": "matrix",
+      "label": "Matrix",
+      "description": "The Matrix messaging integration: architecture and internals",
+      "section": "dev",
+      "order": 15
     }
   ],
   "pages": [
@@ -3939,7 +3972,7 @@
         "Architecture orientation"
       ],
       "path": "/content/en/pages/introduction/architecture-orientation-H9Vndl9nba.json",
-      "updatedAt": "2026-06-30T18:04:16.002Z",
+      "updatedAt": "2026-07-15T14:30:03.830Z",
       "order": 2
     },
     {
@@ -3953,6 +3986,258 @@
       "path": "/content/en/pages/introduction/glossary-bM0nAcqNkN.json",
       "updatedAt": "2026-06-30T18:04:16.519Z",
       "order": 3
+    },
+    {
+      "id": "95bd83e8-1df4-48fb-9c0d-295e7cabb474",
+      "slug": "legacy-stack-overview-FKheql7C43",
+      "collection": "architecture",
+      "title": "Legacy stack overview",
+      "breadcrumb": [
+        "Platforms",
+        "Docker Compose (legacy)",
+        "Legacy stack overview"
+      ],
+      "path": "/content/en/pages/architecture/legacy-stack-overview-FKheql7C43.json",
+      "updatedAt": "2026-07-15T14:29:28.142Z",
+      "order": 0,
+      "platform": "docker-rasenmaeher-integration",
+      "clientId": "docker-compose-legacy-ZdyMQ8TrXJ",
+      "chapterId": "docker-compose-legacy-ZdyMQ8TrXJ",
+      "chapterLabel": "Docker Compose"
+    },
+    {
+      "id": "f6cff340-96cd-42af-bef7-ff943328318a",
+      "slug": "core-services-products-legacy-P1SXnuQ1bu",
+      "collection": "architecture",
+      "title": "Core services & products (legacy)",
+      "breadcrumb": [
+        "Platforms",
+        "Docker Compose (legacy)",
+        "Core services & products (legacy)"
+      ],
+      "path": "/content/en/pages/architecture/core-services-products-legacy-P1SXnuQ1bu.json",
+      "updatedAt": "2026-07-15T14:29:28.648Z",
+      "order": 1,
+      "platform": "docker-rasenmaeher-integration",
+      "clientId": "docker-compose-legacy-ZdyMQ8TrXJ",
+      "chapterId": "docker-compose-legacy-ZdyMQ8TrXJ",
+      "chapterLabel": "Docker Compose"
+    },
+    {
+      "id": "46b60159-426b-4856-8137-3055e0bba761",
+      "slug": "pki-cfssl-miniwerk-legacy-eMoyrdRmtO",
+      "collection": "architecture",
+      "title": "PKI: CFSSL & miniwerk (legacy)",
+      "breadcrumb": [
+        "Platforms",
+        "Docker Compose (legacy)",
+        "PKI: CFSSL & miniwerk (legacy)"
+      ],
+      "path": "/content/en/pages/architecture/pki-cfssl-miniwerk-legacy-eMoyrdRmtO.json",
+      "updatedAt": "2026-07-15T14:29:29.132Z",
+      "order": 2,
+      "platform": "docker-rasenmaeher-integration",
+      "clientId": "docker-compose-legacy-ZdyMQ8TrXJ",
+      "chapterId": "docker-compose-legacy-ZdyMQ8TrXJ",
+      "chapterLabel": "Docker Compose"
+    },
+    {
+      "id": "5b0c5d07-12b5-4d17-9a37-cdefb5868642",
+      "slug": "networking-subdomains-legacy-sLqEtnbI80",
+      "collection": "architecture",
+      "title": "Networking & subdomains (legacy)",
+      "breadcrumb": [
+        "Platforms",
+        "Docker Compose (legacy)",
+        "Networking & subdomains (legacy)"
+      ],
+      "path": "/content/en/pages/architecture/networking-subdomains-legacy-sLqEtnbI80.json",
+      "updatedAt": "2026-07-15T14:29:29.762Z",
+      "order": 3,
+      "platform": "docker-rasenmaeher-integration",
+      "clientId": "docker-compose-legacy-ZdyMQ8TrXJ",
+      "chapterId": "docker-compose-legacy-ZdyMQ8TrXJ",
+      "chapterLabel": "Docker Compose"
+    },
+    {
+      "id": "27c0ac8f-5d90-411f-b061-4051fad9cb99",
+      "slug": "platform-overview-f9bvJwMCcY",
+      "collection": "architecture",
+      "title": "Platform overview",
+      "breadcrumb": [
+        "Platforms",
+        "Kubernetes",
+        "Platform overview"
+      ],
+      "path": "/content/en/pages/architecture/platform-overview-f9bvJwMCcY.json",
+      "updatedAt": "2026-07-15T14:29:30.562Z",
+      "order": 4,
+      "platform": "opendefence-k8s",
+      "clientId": "kubernetes-GVRMfSVcxG",
+      "chapterId": "kubernetes-GVRMfSVcxG",
+      "chapterLabel": "Kubernetes"
+    },
+    {
+      "id": "330b8d17-91d9-418b-ac5d-770866b65569",
+      "slug": "deployment-model-PAchCIUark",
+      "collection": "architecture",
+      "title": "Deployment model",
+      "breadcrumb": [
+        "Platforms",
+        "Kubernetes",
+        "Deployment model"
+      ],
+      "path": "/content/en/pages/architecture/deployment-model-PAchCIUark.json",
+      "updatedAt": "2026-07-15T14:29:31.324Z",
+      "order": 5,
+      "platform": "opendefence-k8s",
+      "clientId": "kubernetes-GVRMfSVcxG",
+      "chapterId": "kubernetes-GVRMfSVcxG",
+      "chapterLabel": "Kubernetes"
+    },
+    {
+      "id": "62f1dcb1-3e44-4d24-9aac-92578a31d172",
+      "slug": "pki-trust-4ImIJOGVIZ",
+      "collection": "architecture",
+      "title": "PKI & trust",
+      "breadcrumb": [
+        "Platforms",
+        "Kubernetes",
+        "PKI & trust"
+      ],
+      "path": "/content/en/pages/architecture/pki-trust-4ImIJOGVIZ.json",
+      "updatedAt": "2026-07-15T14:29:31.964Z",
+      "order": 6,
+      "platform": "opendefence-k8s",
+      "clientId": "kubernetes-GVRMfSVcxG",
+      "chapterId": "kubernetes-GVRMfSVcxG",
+      "chapterLabel": "Kubernetes"
+    },
+    {
+      "id": "97660817-0ddd-4874-942b-4090330be1e5",
+      "slug": "ingress-network-edge-OGlnomxrzV",
+      "collection": "architecture",
+      "title": "Ingress & network edge",
+      "breadcrumb": [
+        "Platforms",
+        "Kubernetes",
+        "Ingress & network edge"
+      ],
+      "path": "/content/en/pages/architecture/ingress-network-edge-OGlnomxrzV.json",
+      "updatedAt": "2026-07-15T14:29:32.429Z",
+      "order": 7,
+      "platform": "opendefence-k8s",
+      "clientId": "kubernetes-GVRMfSVcxG",
+      "chapterId": "kubernetes-GVRMfSVcxG",
+      "chapterLabel": "Kubernetes"
+    },
+    {
+      "id": "450bd68f-ebed-4c5e-bda8-96a8e01cbd8d",
+      "slug": "edge-mtls-callsign-checks-lnct0AUxig",
+      "collection": "architecture",
+      "title": "Edge mTLS & callsign checks",
+      "breadcrumb": [
+        "Platforms",
+        "Kubernetes",
+        "Edge mTLS & callsign checks"
+      ],
+      "path": "/content/en/pages/architecture/edge-mtls-callsign-checks-lnct0AUxig.json",
+      "updatedAt": "2026-07-15T14:29:32.906Z",
+      "order": 8,
+      "platform": "opendefence-k8s",
+      "clientId": "kubernetes-GVRMfSVcxG",
+      "chapterId": "kubernetes-GVRMfSVcxG",
+      "chapterLabel": "Kubernetes"
+    },
+    {
+      "id": "eb0cb583-10fb-43d7-a985-4d3077d4e1d0",
+      "slug": "service-mesh-linkerd-xuI2Sn9cC9",
+      "collection": "architecture",
+      "title": "Service mesh (Linkerd)",
+      "breadcrumb": [
+        "Platforms",
+        "Kubernetes",
+        "Service mesh (Linkerd)"
+      ],
+      "path": "/content/en/pages/architecture/service-mesh-linkerd-xuI2Sn9cC9.json",
+      "updatedAt": "2026-07-15T14:29:33.383Z",
+      "order": 9,
+      "platform": "opendefence-k8s",
+      "clientId": "kubernetes-GVRMfSVcxG",
+      "chapterId": "kubernetes-GVRMfSVcxG",
+      "chapterLabel": "Kubernetes"
+    },
+    {
+      "id": "1b829a91-390f-4491-b468-6022dcb7fbd5",
+      "slug": "core-services-pAmGXLhao1",
+      "collection": "architecture",
+      "title": "Core services",
+      "breadcrumb": [
+        "Platforms",
+        "Kubernetes",
+        "Core services"
+      ],
+      "path": "/content/en/pages/architecture/core-services-pAmGXLhao1.json",
+      "updatedAt": "2026-07-15T14:29:33.877Z",
+      "order": 10,
+      "platform": "opendefence-k8s",
+      "clientId": "kubernetes-GVRMfSVcxG",
+      "chapterId": "kubernetes-GVRMfSVcxG",
+      "chapterLabel": "Kubernetes"
+    },
+    {
+      "id": "2bf03c43-4887-46ff-819f-cebb2e8364ae",
+      "slug": "integration-pattern-apg75p44wu",
+      "collection": "architecture",
+      "title": "Integration pattern",
+      "breadcrumb": [
+        "Platforms",
+        "Kubernetes",
+        "Integration pattern"
+      ],
+      "path": "/content/en/pages/architecture/integration-pattern-apg75p44wu.json",
+      "updatedAt": "2026-07-15T14:29:34.398Z",
+      "order": 11,
+      "platform": "opendefence-k8s",
+      "clientId": "kubernetes-GVRMfSVcxG",
+      "chapterId": "kubernetes-GVRMfSVcxG",
+      "chapterLabel": "Kubernetes"
+    },
+    {
+      "id": "478c30a0-2fb6-46e1-8184-eb93f1dc5880",
+      "slug": "data-secrets-P2GTaGOZFb",
+      "collection": "architecture",
+      "title": "Data & secrets",
+      "breadcrumb": [
+        "Platforms",
+        "Kubernetes",
+        "Data & secrets"
+      ],
+      "path": "/content/en/pages/architecture/data-secrets-P2GTaGOZFb.json",
+      "updatedAt": "2026-07-15T14:29:34.953Z",
+      "order": 12,
+      "platform": "opendefence-k8s",
+      "clientId": "kubernetes-GVRMfSVcxG",
+      "chapterId": "kubernetes-GVRMfSVcxG",
+      "chapterLabel": "Kubernetes"
+    },
+    {
+      "id": "bfa17ad6-6598-4ce9-bc3a-2aa6bf03e14e",
+      "slug": "observability-pipeline-rtVtxQILXS",
+      "collection": "architecture",
+      "title": "Observability pipeline",
+      "breadcrumb": [
+        "Platforms",
+        "Kubernetes",
+        "Observability pipeline"
+      ],
+      "path": "/content/en/pages/architecture/observability-pipeline-rtVtxQILXS.json",
+      "updatedAt": "2026-07-15T14:29:35.712Z",
+      "order": 13,
+      "platform": "opendefence-k8s",
+      "clientId": "kubernetes-GVRMfSVcxG",
+      "chapterId": "kubernetes-GVRMfSVcxG",
+      "chapterLabel": "Kubernetes"
     },
     {
       "id": "c4ffc11f-cea6-40d2-94cc-bb8c0a692e4d",
@@ -4037,7 +4322,7 @@
         "Deploy on Kubernetes"
       ],
       "path": "/content/en/pages/operate/deploy-on-kubernetes-S5cwJYQzPu.json",
-      "updatedAt": "2026-06-29T18:13:15.736Z",
+      "updatedAt": "2026-07-15T14:30:04.875Z",
       "order": 5,
       "platform": "opendefence-k8s",
       "clientId": "kubernetes-rEPhr2GWLF",
@@ -4055,7 +4340,7 @@
         "Day-2 operations (Kubernetes)"
       ],
       "path": "/content/en/pages/operate/day-2-operations-kubernetes-lDjKap3DpF.json",
-      "updatedAt": "2026-06-29T18:13:16.312Z",
+      "updatedAt": "2026-07-15T14:30:05.961Z",
       "order": 6,
       "platform": "opendefence-k8s",
       "clientId": "kubernetes-rEPhr2GWLF",
@@ -4191,7 +4476,7 @@
         "Integration overview"
       ],
       "path": "/content/en/pages/build-an-integration/integration-overview-unDmuW0qFc.json",
-      "updatedAt": "2026-06-29T17:26:03.918Z",
+      "updatedAt": "2026-07-15T14:30:06.764Z",
       "order": 0
     },
     {
@@ -4215,7 +4500,7 @@
         "Worked example: Matrix"
       ],
       "path": "/content/en/pages/build-an-integration/worked-example-matrix-918lI88Lsy.json",
-      "updatedAt": "2026-06-29T17:26:04.469Z",
+      "updatedAt": "2026-07-15T14:30:07.472Z",
       "order": 2
     },
     {
@@ -4936,6 +5221,21 @@
       "chapterLabel": "Wire up Deploy App TAK Servers via a Federation Hub"
     },
     {
+      "id": "7c1e4821-0822-40d1-97ad-3de4a83a6981",
+      "slug": "tak-stack-kubernetes-ab0AvFHVX5",
+      "collection": "working-with-tak",
+      "title": "TAK stack (Kubernetes)",
+      "breadcrumb": [
+        "TAK on the OpenDefence Platform",
+        "TAK stack (Kubernetes)"
+      ],
+      "path": "/content/en/pages/working-with-tak/tak-stack-kubernetes-ab0AvFHVX5.json",
+      "updatedAt": "2026-07-15T14:29:38.317Z",
+      "order": 39,
+      "chapterId": "tak-on-the-opendefence-platform-1bxWRZBOMb",
+      "chapterLabel": "TAK on the OpenDefence Platform"
+    },
+    {
       "id": "641da670-e20e-41b0-ae04-9a829e8b3ecb",
       "slug": "hub-to-hub-trust-and-connection-VIV7jDwrDx",
       "collection": "working-with-tak",
@@ -4946,7 +5246,7 @@
       ],
       "path": "/content/en/pages/working-with-tak/hub-to-hub-trust-and-connection-VIV7jDwrDx.json",
       "updatedAt": "2026-06-19T14:18:54.666Z",
-      "order": 39,
+      "order": 40,
       "chapterId": "wire-up-two-federation-hubs-iac-fzNcHRftqI",
       "chapterLabel": "Wire up two Federation Hubs"
     },
@@ -4961,7 +5261,7 @@
       ],
       "path": "/content/en/pages/working-with-tak/policy-and-group-filtering-across-hubs-MvZAotZIQl.json",
       "updatedAt": "2026-06-19T14:18:55.106Z",
-      "order": 40,
+      "order": 41,
       "chapterId": "wire-up-two-federation-hubs-iac-fzNcHRftqI",
       "chapterLabel": "Wire up two Federation Hubs"
     },
@@ -4976,7 +5276,7 @@
       ],
       "path": "/content/en/pages/working-with-tak/bring-up-and-verification-4g1mSzoPjs.json",
       "updatedAt": "2026-06-19T14:18:55.519Z",
-      "order": 41,
+      "order": 42,
       "chapterId": "wire-up-two-federation-hubs-iac-fzNcHRftqI",
       "chapterLabel": "Wire up two Federation Hubs"
     },
@@ -4991,7 +5291,7 @@
       ],
       "path": "/content/en/pages/working-with-tak/scaling-to-many-groups-5hLiku0O4u.json",
       "updatedAt": "2026-06-19T14:18:55.781Z",
-      "order": 42,
+      "order": 43,
       "chapterId": "wire-up-two-federation-hubs-iac-fzNcHRftqI",
       "chapterLabel": "Wire up two Federation Hubs"
     },
@@ -5006,9 +5306,57 @@
       ],
       "path": "/content/en/pages/working-with-tak/references-n9W8lB6Gpz.json",
       "updatedAt": "2026-06-26T14:06:03.214Z",
-      "order": 43,
+      "order": 44,
       "chapterId": "wire-up-two-federation-hubs-iac-fzNcHRftqI",
       "chapterLabel": "Wire up two Federation Hubs"
+    },
+    {
+      "id": "be93bd0b-ed6c-46df-bb0b-25a5e9da2f08",
+      "slug": "what-the-mediamtx-integration-is-7RFb5bt5El",
+      "collection": "mediamtx",
+      "title": "What the MediaMTX integration is",
+      "breadcrumb": [
+        "What the MediaMTX integration is"
+      ],
+      "path": "/content/en/pages/mediamtx/what-the-mediamtx-integration-is-7RFb5bt5El.json",
+      "updatedAt": "2026-07-15T14:29:36.255Z",
+      "order": 0
+    },
+    {
+      "id": "c4a9bef0-7d08-4e65-b5eb-fc06ad2d7561",
+      "slug": "mediamtx-stack-kubernetes-TcMZZqx9nj",
+      "collection": "mediamtx",
+      "title": "MediaMTX stack (Kubernetes)",
+      "breadcrumb": [
+        "MediaMTX stack (Kubernetes)"
+      ],
+      "path": "/content/en/pages/mediamtx/mediamtx-stack-kubernetes-TcMZZqx9nj.json",
+      "updatedAt": "2026-07-15T14:29:36.909Z",
+      "order": 1
+    },
+    {
+      "id": "01b7895b-92d3-47c0-b578-aaecde218f83",
+      "slug": "what-the-matrix-integration-is-eVlSeQ6EE7",
+      "collection": "matrix",
+      "title": "What the Matrix integration is",
+      "breadcrumb": [
+        "What the Matrix integration is"
+      ],
+      "path": "/content/en/pages/matrix/what-the-matrix-integration-is-eVlSeQ6EE7.json",
+      "updatedAt": "2026-07-15T14:29:37.348Z",
+      "order": 0
+    },
+    {
+      "id": "d21bfc9e-cf90-497a-93c0-72266cc0f3c5",
+      "slug": "matrix-stack-kubernetes-KULarUCYri",
+      "collection": "matrix",
+      "title": "Matrix stack (Kubernetes)",
+      "breadcrumb": [
+        "Matrix stack (Kubernetes)"
+      ],
+      "path": "/content/en/pages/matrix/matrix-stack-kubernetes-KULarUCYri.json",
+      "updatedAt": "2026-07-15T14:29:37.854Z",
+      "order": 1
     }
   ]
 }

@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "id": "01b7895b-92d3-47c0-b578-aaecde218f83",
+  "slug": "what-the-matrix-integration-is-eVlSeQ6EE7",
+  "collection": "matrix",
+  "locale": "en",
+  "title": "What the Matrix integration is",
+  "breadcrumb": [
+    "What the Matrix integration is"
+  ],
+  "createdAt": "2026-07-15T14:29:07.056Z",
+  "updatedAt": "2026-07-15T14:29:37.348Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "What Matrix does here",
+      "id": "what-matrix-does-here"
+    },
+    {
+      "depth": 2,
+      "text": "The pieces",
+      "id": "the-pieces"
+    },
+    {
+      "depth": 2,
+      "text": "How it relates to the platform",
+      "id": "how-it-relates-to-the-platform"
+    },
+    {
+      "depth": 2,
+      "text": "Where to go next",
+      "id": "where-to-go-next"
+    },
+    {
+      "depth": 2,
+      "text": "Related pages",
+      "id": "related-pages"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>This page orients you on what the Matrix integration is and how it fits into the OpenDefence platform — read it before the runtime-architecture deep dive. It is for developers and operators; end users should head straight to the <strong>Matrix Guide</strong> book on the Guides shelf.</p>\n<h2 id=\"what-matrix-does-here\"><a href=\"#what-matrix-does-here\">What Matrix does here</a></h2>\n<p>Matrix is the platform's secure messaging product: a <a href=\"https://github.com/element-hq/synapse\" target=\"_blank\" rel=\"noopener noreferrer\">Synapse</a> homeserver per deployment, used by the unit through <strong>Element</strong> clients (desktop and mobile). Voice and video come from <strong>Element Call</strong>, backed by a bundled <strong>LiveKit</strong> SFU. On first login every user is auto-joined to a deployment space with <code>general</code>, <code>helpdesk</code> and <code>offtopic</code> rooms, so a fresh deployment is immediately usable.</p>\n<p>One deliberate design choice matters more than any other: <strong>federation is disabled</strong>. Both shipped overlays set <code>SYNAPSE_FEDERATION=off</code>, which renders an empty <code>federation_domain_whitelist</code> into <code>homeserver.yaml</code> — no server-to-server traffic with any other Matrix homeserver. Each deployment is a closed messaging island for its unit; the entrypoint also supports an open mode (<code>SYNAPSE_FEDERATION=*</code> or unset) and a comma-separated allowlist mode, but nothing in the repo uses them.</p>\n<h2 id=\"the-pieces\"><a href=\"#the-pieces\">The pieces</a></h2>\n<p>Everything runs in one pod (Deployment <code>matrix</code>, namespace <code>app-matrix</code>):</p>\n<table>\n<thead>\n<tr>\n<th>Piece</th>\n<th>Role</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><code>synapse-server</code></td>\n<td>The Matrix homeserver (Synapse), client API on <code>:8008</code>, delegating auth to MAS</td>\n</tr>\n<tr>\n<td><code>mas</code></td>\n<td>Matrix Authentication Service — handles Matrix login as an OIDC client of the platform's Keycloak (realm <code>RASENMAEHER</code>); registers its own client in Keycloak on first boot</td>\n</tr>\n<tr>\n<td><code>matrixrmapi</code></td>\n<td>The integration API on <code>:8012</code> — speaks the rmapi product contract, provisions Matrix users, and publishes the product UI files</td>\n</tr>\n<tr>\n<td><code>livekit</code> + <code>matrix-rtc</code></td>\n<td>LiveKit SFU for Element Call media, plus <code>lk-jwt-service</code> (<code>:6080</code>) minting the LiveKit access tokens</td>\n</tr>\n<tr>\n<td><code>matrix-ui-nginx</code></td>\n<td>Serves the product UI at <code>/ui/matrix</code> and the <code>.well-known/matrix/{server,client}</code> discovery files</td>\n</tr>\n</tbody>\n</table>\n<p>The essence in one picture:</p>"
+    },
+    {
+      "type": "mermaid",
+      "code": "flowchart LR\n  element[\"Element clients<br/>(desktop / mobile)\"]\n  ecall[\"Element Call<br/>(voice / video)\"]\n  subgraph matrixpod[\"app-matrix\"]\n    synapse[\"synapse-server :8008\"]\n    mas[\"MAS :8080\"]\n    rtc[\"lk-jwt-service :6080\"]\n    livekit[\"LiveKit SFU\"]\n    mrmapi[\"matrixrmapi :8012\"]\n  end\n  kc[\"Keycloak<br/>(platform identity)\"]\n  rmapi[\"rmapi<br/>(Deploy App core)\"]\n  element --> synapse\n  element -->|\"login (OIDC)\"| mas\n  mas -->|\"OIDC\"| kc\n  ecall -->|\"get token\"| rtc\n  ecall -->|\"media\"| livekit\n  rmapi -->|\"product API\"| mrmapi\n  mrmapi -.->|\"callbacks\"| rmapi"
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"how-it-relates-to-the-platform\"><a href=\"#how-it-relates-to-the-platform\">How it relates to the platform</a></h2>\n<p>Matrix is a product integration like TAK and MediaMTX, not a standalone install. The core registers it as product <code>matrix</code> in the <code>kraftwerk-rasenmaeher-init</code> ConfigMap, pointing at <code>http://matrix.app-matrix.svc.cluster.local:8012/</code> with the expected Linkerd identity pinned — the standard hub-and-spoke wiring described in <a href=\"/en/architecture/integration-pattern-apg75p44wu\">Integration pattern</a>.</p>\n<p>Users are never created in Matrix directly. Identity lives in the platform's Keycloak/LDAP (see <a href=\"/en/architecture/core-services-pAmGXLhao1\">Core services</a>): a user enrolls through Deploy App, and Element login flows through MAS to that same Keycloak account via OIDC. One enrollment, every product.</p>\n<p>Matrix is also the <strong>reference worked example</strong> for integration authors — if you are building your own product integration, follow it step by step in <a href=\"/en/build-an-integration/worked-example-matrix-918lI88Lsy\">Worked example: Matrix</a> rather than reverse-engineering the manifests.</p>\n<h2 id=\"where-to-go-next\"><a href=\"#where-to-go-next\">Where to go next</a></h2>\n<ul>\n<li><strong>Using Matrix as an end user</strong> — the <strong>Matrix Guide</strong> book on the Guides shelf covers setting up Element on desktop and mobile and day-to-day use.</li>\n<li><strong>Runtime architecture</strong> — containers, ingress hosts, databases and secrets are on <a href=\"/en/matrix/matrix-stack-kubernetes-KULarUCYri\">Matrix stack (Kubernetes)</a>. Note that page describes the <strong>closed-alpha</strong> Kubernetes platform (<a href=\"https://github.com/pvarki/opendefence-platform\" target=\"_blank\" rel=\"noopener noreferrer\"><code>pvarki/opendefence-platform</code></a>) and is provisional.</li>\n</ul>\n<h2 id=\"related-pages\"><a href=\"#related-pages\">Related pages</a></h2>\n<ul>\n<li><a href=\"/en/matrix/matrix-stack-kubernetes-KULarUCYri\">Matrix stack (Kubernetes)</a></li>\n<li><a href=\"/en/architecture/integration-pattern-apg75p44wu\">Integration pattern</a></li>\n<li><a href=\"/en/architecture/core-services-pAmGXLhao1\">Core services</a></li>\n<li><a href=\"/en/build-an-integration/worked-example-matrix-918lI88Lsy\">Worked example: Matrix</a></li>\n<li><a href=\"/en/build-an-integration/integration-overview-unDmuW0qFc\">Integration overview</a></li>\n</ul>"
+    }
+  ]
+}

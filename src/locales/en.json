@@ -191,12 +191,15 @@
   },
   "devShelf": {
     "introduction": "Introduction",
+    "architecture": "Architecture",
     "operate": "Operate",
     "contribute": "Contribute",
     "integrate": "Integrate",
-    "workingWithTak": "Working with TAK"
+    "officialIntegrations": "Official integrations"
   },
   "takShelf": {
+    "platformTitle": "Platform Architecture",
+    "platformDesc": "How TAK runs on the OpenDefence Kubernetes platform.",
     "pluginDevTitle": "Plugin Development",
     "pluginDevDesc": "Build ATAK plugins in Java and Kotlin.",
     "integratingTitle": "Integrating to TAK Server",
