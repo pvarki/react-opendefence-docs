@@ -185,9 +185,11 @@
   },
   "devShelf": {
     "introduction": "Johdanto",
+    "architecture": "Arkkitehtuuri",
     "operate": "Operointi",
     "contribute": "Osallistu",
-    "integrate": "Integroi"
+    "integrate": "Integroi",
+    "officialIntegrations": "Viralliset integraatiot"
   },
   "apiRef": {
     "title": "API-referenssi",

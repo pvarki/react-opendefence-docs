@@ -102,6 +102,16 @@ export const DEV_BOOK_COLLECTIONS: CollectionConfig[] = [
     description: "Start here: what Deploy App is and how to choose a platform",
   },
   {
+    // Deep architecture book; carries the Docker↔K8s platform toggle
+    // (Kubernetes side ~10 pages, legacy side a minimal set).
+    collectionId: "c3cc2b52-4197-4eee-aa6c-076c74e488ef",
+    label: "Architecture",
+    slug: "architecture",
+    section: "dev",
+    description:
+      "How the platform works: components, networking, PKI, and deployment",
+  },
+  {
     collectionId: "05529a3a-64f0-475a-9078-00c101d9b551",
     label: "Operate",
     slug: "operate",
@@ -134,11 +144,27 @@ export const DEV_BOOK_COLLECTIONS: CollectionConfig[] = [
     // holding the Working-with-TAK guides (Plugin Development, Integrating to
     // TAK Server, Working with Federation Hub + the IaC how-tos).
     collectionId: "74d6c3aa-0666-44a7-ae41-73632c67c30a",
-    label: "Working with TAK",
+    label: "TAK",
     slug: "working-with-tak",
     section: "dev",
     description:
       "Develop for TAK: plugins, TAK Server integration, and federation",
+  },
+  // Official integration books (Develop shelf "Official integrations").
+  {
+    collectionId: "5792017f-a097-4177-bfd6-487e00b96f13",
+    label: "MediaMTX",
+    slug: "mediamtx",
+    section: "dev",
+    description:
+      "The MediaMTX video streaming integration: architecture and internals",
+  },
+  {
+    collectionId: "5a946890-4e54-4aad-9331-b0cb36557dce",
+    label: "Matrix",
+    slug: "matrix",
+    section: "dev",
+    description: "The Matrix messaging integration: architecture and internals",
   },
 ];
 

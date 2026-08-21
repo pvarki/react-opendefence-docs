@@ -1,9 +1,10 @@
-import { useEffect, useState } from "react";
+import { Fragment, useEffect, useState } from "react";
 import { Link, useRouterState } from "@tanstack/react-router";
 import { useTranslation } from "react-i18next";
 import { Braces, Tag } from "lucide-react";
 import type { Locale, LocaleManifest } from "@shared/content-schema";
 import { loadManifest } from "@/lib/content/loader";
+import { devBookGroups } from "@/lib/devGroups";
 import { siteSections } from "@/lib/siteSections";
 import { stripBase } from "@/lib/base";
 import { useShelfContext } from "@/lib/useShelfContext";
@@ -71,17 +72,38 @@ export function SiteContentsSheet({
                     {t(section.titleKey)}
                   </p>
                   <ul className="space-y-0.5">
-                    {section.books.map((book) => (
-                      <li key={book.slug}>
-                        <Link
-                          to="/$locale/$"
-                          params={{ locale, _splat: book.slug }}
-                          onClick={() => onOpenChange(false)}
-                          className="block rounded-md px-2 py-1.5 text-sm text-muted-foreground hover:bg-muted hover:text-foreground"
-                        >
-                          {book.label}
-                        </Link>
-                      </li>
+                    {(section.shelf === "developer"
+                      ? [
+                          {
+                            label: "Deploy App",
+                            books: devBookGroups(section.books).deployApp,
+                          },
+                          {
+                            label: "Official integrations",
+                            books: devBookGroups(section.books).integrations,
+                          },
+                        ]
+                      : [{ label: undefined, books: section.books }]
+                    ).map((group) => (
+                      <Fragment key={group.label ?? "all"}>
+                        {group.label && group.books.length > 0 && (
+                          <li className="px-1 pt-2 pb-0.5 text-[10px] font-semibold tracking-widest text-muted-foreground uppercase">
+                            {group.label}
+                          </li>
+                        )}
+                        {group.books.map((book) => (
+                          <li key={book.slug}>
+                            <Link
+                              to="/$locale/$"
+                              params={{ locale, _splat: book.slug }}
+                              onClick={() => onOpenChange(false)}
+                              className="block rounded-md px-2 py-1.5 text-sm text-muted-foreground hover:bg-muted hover:text-foreground"
+                            >
+                              {book.label}
+                            </Link>
+                          </li>
+                        ))}
+                      </Fragment>
                     ))}
                     {section.withApiReference && (
                       <li>

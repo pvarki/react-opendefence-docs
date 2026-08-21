@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 1,
+  "label": "Architecture",
+  "slug": "architecture",
+  "items": [
+    {
+      "type": "group",
+      "id": "docker-compose-legacy-ZdyMQ8TrXJ",
+      "label": "Docker Compose",
+      "clientId": "docker-compose-legacy-ZdyMQ8TrXJ",
+      "children": [
+        {
+          "type": "doc",
+          "id": "legacy-stack-overview-FKheql7C43",
+          "label": "Legacy stack overview",
+          "slug": "legacy-stack-overview-FKheql7C43"
+        },
+        {
+          "type": "doc",
+          "id": "core-services-products-legacy-P1SXnuQ1bu",
+          "label": "Core services & products",
+          "slug": "core-services-products-legacy-P1SXnuQ1bu"
+        },
+        {
+          "type": "doc",
+          "id": "pki-cfssl-miniwerk-legacy-eMoyrdRmtO",
+          "label": "PKI: CFSSL & miniwerk",
+          "slug": "pki-cfssl-miniwerk-legacy-eMoyrdRmtO"
+        },
+        {
+          "type": "doc",
+          "id": "networking-subdomains-legacy-sLqEtnbI80",
+          "label": "Networking & subdomains",
+          "slug": "networking-subdomains-legacy-sLqEtnbI80"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "kubernetes-GVRMfSVcxG",
+      "label": "Kubernetes",
+      "clientId": "kubernetes-GVRMfSVcxG",
+      "children": [
+        {
+          "type": "doc",
+          "id": "platform-overview-f9bvJwMCcY",
+          "label": "Platform overview",
+          "slug": "platform-overview-f9bvJwMCcY"
+        },
+        {
+          "type": "doc",
+          "id": "deployment-model-PAchCIUark",
+          "label": "Deployment model",
+          "slug": "deployment-model-PAchCIUark"
+        },
+        {
+          "type": "doc",
+          "id": "pki-trust-4ImIJOGVIZ",
+          "label": "PKI & trust",
+          "slug": "pki-trust-4ImIJOGVIZ"
+        },
+        {
+          "type": "doc",
+          "id": "ingress-network-edge-OGlnomxrzV",
+          "label": "Ingress & network edge",
+          "slug": "ingress-network-edge-OGlnomxrzV"
+        },
+        {
+          "type": "doc",
+          "id": "edge-mtls-callsign-checks-lnct0AUxig",
+          "label": "Edge mTLS & callsign checks",
+          "slug": "edge-mtls-callsign-checks-lnct0AUxig"
+        },
+        {
+          "type": "doc",
+          "id": "service-mesh-linkerd-xuI2Sn9cC9",
+          "label": "Service mesh",
+          "slug": "service-mesh-linkerd-xuI2Sn9cC9"
+        },
+        {
+          "type": "doc",
+          "id": "core-services-pAmGXLhao1",
+          "label": "Core services",
+          "slug": "core-services-pAmGXLhao1"
+        },
+        {
+          "type": "doc",
+          "id": "integration-pattern-apg75p44wu",
+          "label": "Integration pattern",
+          "slug": "integration-pattern-apg75p44wu"
+        },
+        {
+          "type": "doc",
+          "id": "data-secrets-P2GTaGOZFb",
+          "label": "Data & secrets",
+          "slug": "data-secrets-P2GTaGOZFb"
+        },
+        {
+          "type": "doc",
+          "id": "observability-pipeline-rtVtxQILXS",
+          "label": "Observability pipeline",
+          "slug": "observability-pipeline-rtVtxQILXS"
+        }
+      ]
+    }
+  ]
+}

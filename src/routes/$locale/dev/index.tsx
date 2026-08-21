@@ -21,6 +21,7 @@ const RESERVED_SLUGS = new Set(["dev", "guides", "advanced"]);
 // Toporg-style grouping of the Develop shelf (separate from the manifest order).
 const GROUPS: { headingKey: string; slugs: string[] }[] = [
   { headingKey: "devShelf.introduction", slugs: ["introduction"] },
+  { headingKey: "devShelf.architecture", slugs: ["architecture"] },
   { headingKey: "devShelf.operate", slugs: ["operate"] },
   {
     headingKey: "devShelf.contribute",
@@ -36,10 +37,15 @@ export interface RelComponent {
   hasChangelog: boolean;
 }
 
-// "Working with TAK" — three deep-link tabs into the single working-with-tak
-// collection. Each card links to that guide chapter's first page.
+// TAK cards under "Official integrations" — deep-link tabs into the single
+// working-with-tak collection. Each card links to that chapter's first page.
 const TAK_COLLECTION = "working-with-tak";
 const TAK_CHAPTERS: { titleKey: string; descKey: string; chapter: string }[] = [
+  {
+    titleKey: "takShelf.platformTitle",
+    descKey: "takShelf.platformDesc",
+    chapter: "TAK on the OpenDefence Platform",
+  },
   {
     titleKey: "takShelf.pluginDevTitle",
     descKey: "takShelf.pluginDevDesc",
@@ -125,6 +131,15 @@ function SectionHeading({ children }: { children: ReactNode }) {
   );
 }
 
+/** Top-level shelf separator (white, above the orange group headings). */
+function ShelfDivider({ children }: { children: ReactNode }) {
+  return (
+    <h2 className="mt-8 border-t border-border px-1 pt-5 text-sm font-bold tracking-widest text-foreground uppercase">
+      {children}
+    </h2>
+  );
+}
+
 function ComponentRow({
   locale,
   comp,
@@ -166,6 +181,11 @@ function DevShelf() {
   const { books, firstPages, relComponents, takTabs } = Route.useLoaderData();
   // Auto-open the orientation flow once per visitor (lazy init, like IntroModal).
   const [orientOpen, setOrientOpen] = useState(() => !orientationSeen());
+
+  // Product books shown under "Official integrations" (hidden until synced).
+  const integrationBooks = ["mediamtx", "matrix"]
+    .map((s) => books.find((b) => b.slug === s))
+    .filter((b): b is ManifestCollection => Boolean(b));
 
   const bookCard = (book: ManifestCollection) => {
     const first = firstPages[book.slug];
@@ -210,6 +230,7 @@ function DevShelf() {
           <Compass className="size-3.5 text-primary" />
           {t("orient.revisit")}
         </button>
+        <ShelfDivider>Deploy App</ShelfDivider>
         {GROUPS.map((g) => {
           const groupBooks = g.slugs
             .map((s) => books.find((b) => b.slug === s))
@@ -224,6 +245,39 @@ function DevShelf() {
             </Fragment>
           );
         })}
+
+        {/* Official integrations: per-product tabs into the integration books. */}
+        {(takTabs.length > 0 || integrationBooks.length > 0) && (
+          <div>
+            <ShelfDivider>{t("devShelf.officialIntegrations")}</ShelfDivider>
+            {takTabs.length > 0 && (
+              <>
+                <SectionHeading>TAK</SectionHeading>
+                <div className="grid grid-cols-1 gap-2.5 md:grid-cols-2 md:gap-3">
+                  {takTabs.map((tab) => (
+                    <BookCard
+                      key={tab.splat}
+                      locale={locale}
+                      to="/$locale/$"
+                      splat={tab.splat}
+                      icon={Code2}
+                      title={t(tab.titleKey)}
+                      description={t(tab.descKey)}
+                    />
+                  ))}
+                </div>
+              </>
+            )}
+            {integrationBooks.map((book) => (
+              <Fragment key={book.slug}>
+                <SectionHeading>{book.label}</SectionHeading>
+                <div className="grid grid-cols-1 gap-2.5 md:grid-cols-2 md:gap-3">
+                  {bookCard(book)}
+                </div>
+              </Fragment>
+            ))}
+          </div>
+        )}
 
         <SectionHeading>{t("releases.sectionTitle")}</SectionHeading>
         <div className="grid grid-cols-1 gap-2.5 md:grid-cols-2 md:gap-3">
@@ -264,25 +318,6 @@ function DevShelf() {
                   comp={c}
                   tab="changelog"
                   available={c.hasChangelog}
-                />
-              ))}
-            </div>
-          </>
-        )}
-
-        {takTabs.length > 0 && (
-          <>
-            <SectionHeading>{t("devShelf.workingWithTak")}</SectionHeading>
-            <div className="grid grid-cols-1 gap-2.5 md:grid-cols-2 md:gap-3">
-              {takTabs.map((tab) => (
-                <BookCard
-                  key={tab.splat}
-                  locale={locale}
-                  to="/$locale/$"
-                  splat={tab.splat}
-                  icon={Code2}
-                  title={t(tab.titleKey)}
-                  description={t(tab.descKey)}
                 />
               ))}
             </div>

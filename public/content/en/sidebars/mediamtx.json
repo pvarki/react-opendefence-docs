@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "label": "MediaMTX",
+  "slug": "mediamtx",
+  "items": [
+    {
+      "type": "doc",
+      "id": "what-the-mediamtx-integration-is-7RFb5bt5El",
+      "label": "What the MediaMTX integration is",
+      "slug": "what-the-mediamtx-integration-is-7RFb5bt5El"
+    },
+    {
+      "type": "doc",
+      "id": "mediamtx-stack-kubernetes-TcMZZqx9nj",
+      "label": "MediaMTX stack",
+      "slug": "mediamtx-stack-kubernetes-TcMZZqx9nj"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "id": "be93bd0b-ed6c-46df-bb0b-25a5e9da2f08",
+  "slug": "what-the-mediamtx-integration-is-7RFb5bt5El",
+  "collection": "mediamtx",
+  "locale": "en",
+  "title": "What the MediaMTX integration is",
+  "breadcrumb": [
+    "What the MediaMTX integration is"
+  ],
+  "createdAt": "2026-07-15T14:29:03.527Z",
+  "updatedAt": "2026-07-15T19:33:06.307Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "What MediaMTX does here",
+      "id": "what-mediamtx-does-here"
+    },
+    {
+      "depth": 2,
+      "text": "The integration API: mtxrmapi",
+      "id": "the-integration-api-mtxrmapi"
+    },
+    {
+      "depth": 2,
+      "text": "How it fits into the platform",
+      "id": "how-it-fits-into-the-platform"
+    },
+    {
+      "depth": 2,
+      "text": "Where to go next",
+      "id": "where-to-go-next"
+    },
+    {
+      "depth": 2,
+      "text": "Related pages",
+      "id": "related-pages"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>This page orients developers and operators on what the MediaMTX integration is in the OpenDefence context: what the streaming server does, what the integration API adds, and how the product plugs into the Deploy App core. Runtime detail lives in the <a href=\"/en/mediamtx/mediamtx-stack-kubernetes-TcMZZqx9nj\">MediaMTX stack (Kubernetes)</a> page, which describes the <strong>closed-alpha</strong> <code>opendefence-platform</code> and is provisional.</p>\n<h2 id=\"what-mediamtx-does-here\"><a href=\"#what-mediamtx-does-here\">What MediaMTX does here</a></h2>\n<p>The streaming server itself is upstream <a href=\"https://github.com/bluenviron/mediamtx\" target=\"_blank\" rel=\"noopener noreferrer\">MediaMTX</a> (<code>bluenviron/mediamtx</code>), an off-the-shelf single-binary media server. In an OpenDefence deployment it is the live-video product: field units <strong>publish</strong> streams — a drone feed, a phone camera — over <strong>RTMPS</strong>, <strong>RTSPS</strong> or <strong>SRT</strong>, and anyone who needs the picture <strong>views</strong> them over <strong>HLS</strong> (low-latency variant) or <strong>WebRTC</strong> in a plain browser. Plaintext RTSP and RTMP are switched off, so those transports are TLS-only; SRT carries its own optional encryption. The config keys behind this live on the <a href=\"/en/mediamtx/mediamtx-stack-kubernetes-TcMZZqx9nj\">MediaMTX stack (Kubernetes)</a> page.</p>\n<p>What vanilla MediaMTX lacks is any notion of <em>who</em> is streaming. The OpenDefence integration closes that gap: MediaMTX runs with <code>authMethod: http</code>, so <strong>every publish and every read</strong> triggers an authorization callback to the integration API (<code>/api/v1/mediamtx/auth</code>) before any media flows. The credentials being checked are provisioned per enrolled user, so stream access follows the same callsign identity that gates everything else in Deploy App. The essence in one picture:</p>"
+    },
+    {
+      "type": "mermaid",
+      "code": "flowchart LR\n  pub[\"Publishers<br/>drones, phones<br/>RTMPS / RTSPS / SRT\"] --> mtx[\"MediaMTX<br/>streaming server\"]\n  mtx --> view[\"Viewers<br/>HLS / WebRTC\"]\n  mtx -.->|\"auth callback on every publish and read\"| gate[\"mtxrmapi<br/>integration API :8005\"]\n  gate -.->|\"callsign identity\"| core[\"rmapi<br/>Deploy App core\"]"
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"the-integration-api-mtxrmapi\"><a href=\"#the-integration-api-mtxrmapi\">The integration API: mtxrmapi</a></h2>\n<p><code>mtxrmapi</code> (image <code>ghcr.io/pvarki/mediamtx-integration</code>, listening on port <code>8005</code>) is the piece that connects MediaMTX to the Deploy App core. It runs as a sidecar-style container in the same pod as the <code>mediamtx</code> server and plays three roles:</p>\n<ul>\n<li><strong>Product API for the core</strong> — it implements the integration contract that <code>rmapi</code> calls to initialize the product and provision users as they are added or revoked, plus the standard <code>/api/v1/healthcheck</code>. Its state lives in its own database (CNPG cluster <code>mtx-postgres</code>).</li>\n<li><strong>Auth backend for MediaMTX</strong> — it answers the per-connection auth callbacks described above, deciding each publish/read against the credentials it manages.</li>\n<li><strong>Product UI</strong> — it ships the MTX web UI files (connection details, per-user credentials), which a companion nginx container serves to enrolled users under <code>/ui/mtx</code> on the mTLS host.</li>\n</ul>\n<p>It only accepts core calls from <code>rmapi</code>'s pinned service-mesh identity; the environment variables that configure this are on the stack page.</p>\n<h2 id=\"how-it-fits-into-the-platform\"><a href=\"#how-it-fits-into-the-platform\">How it fits into the platform</a></h2>\n<p>MediaMTX is registered as product <code>mtx</code> in the core's kraftwerk registry, and core and product pin each other's mesh identities — the full pattern, shared by TAK and Matrix, is described in <a href=\"/en/architecture/integration-pattern-apg75p44wu\">Integration pattern</a>.</p>\n<p>Per-user access rides the callsign identity: users enroll through the core, <code>rmapi</code> mints them a client certificate whose CN is their callsign, and behind that mTLS gate they pick up the personal streaming credentials that <code>mtxrmapi</code> issued for the same callsign. How the core issues and validates those identities is covered in <a href=\"/en/architecture/core-services-pAmGXLhao1\">Core services</a>. The raw streaming ports themselves bypass the HTTP edge entirely — how that works, port by port, is the stack page's job.</p>\n<h2 id=\"where-to-go-next\"><a href=\"#where-to-go-next\">Where to go next</a></h2>\n<ul>\n<li><strong>Using MediaMTX as an end user</strong> (getting your stream credentials, publishing from an app, watching a feed): see the <strong>MTX Guide</strong> book on the Guides shelf of this site.</li>\n<li><strong>How it actually runs</strong> — pod layout, exposed ports, TLS material, database, honest rough edges: <a href=\"/en/mediamtx/mediamtx-stack-kubernetes-TcMZZqx9nj\">MediaMTX stack (Kubernetes)</a>.</li>\n<li><strong>Building something like this for your own product</strong>: the MediaMTX integration is a good model of a mid-complexity integration — start at the <a href=\"/en/build-an-integration/integration-overview-unDmuW0qFc\">integration overview</a>.</li>\n</ul>\n<h2 id=\"related-pages\"><a href=\"#related-pages\">Related pages</a></h2>\n<ul>\n<li><a href=\"/en/architecture/integration-pattern-apg75p44wu\">Integration pattern</a> — the kraftwerk registry and mesh-identity pinning shared by all products</li>\n<li><a href=\"/en/architecture/core-services-pAmGXLhao1\">Core services</a> — how callsign identities are issued and validated</li>\n<li><a href=\"https://github.com/pvarki/opendefence-platform\" target=\"_blank\" rel=\"noopener noreferrer\">pvarki/opendefence-platform</a> — the manifests (<code>k8s/app-mtx/</code>)</li>\n</ul>"
+    }
+  ]
+}
