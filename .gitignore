@@ -7,6 +7,7 @@ node_modules/
 # Build output
 /dist/
 public/pagefind/
+/exports/
 
 # Test artifacts
 playwright-report/

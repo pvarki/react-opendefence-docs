@@ -9,6 +9,7 @@ import type {
   SidebarItem,
 } from "@shared/content-schema";
 import { loadSidebar } from "@/lib/content/loader";
+import { devBookGroups } from "@/lib/devGroups";
 import {
   filterSidebarByClient,
   filterSidebarByPlatform,
@@ -392,6 +393,20 @@ export function DevDocsNavBody({
     };
   }, [contentLocale, manifest]);
 
+  const groups = devBookGroups(devBooks);
+  const renderBook = (book: (typeof devBooks)[number]) => (
+    <DevBookGroup
+      key={book.slug}
+      book={book}
+      sidebar={sidebars[book.slug]}
+      locale={locale}
+      isCurrent={book.slug === currentCollection}
+      currentSlug={book.slug === currentCollection ? currentSlug : undefined}
+      clientId={book.slug === currentCollection ? clientId : undefined}
+      onNavigate={onNavigate}
+    />
+  );
+
   return (
     <div>
       <Link
@@ -403,20 +418,18 @@ export function DevDocsNavBody({
         <ChevronLeft className="size-3.5 shrink-0" />
         All developer docs
       </Link>
-      {devBooks.map((book) => (
-        <DevBookGroup
-          key={book.slug}
-          book={book}
-          sidebar={sidebars[book.slug]}
-          locale={locale}
-          isCurrent={book.slug === currentCollection}
-          currentSlug={
-            book.slug === currentCollection ? currentSlug : undefined
-          }
-          clientId={book.slug === currentCollection ? clientId : undefined}
-          onNavigate={onNavigate}
-        />
-      ))}
+      <p className="px-2 pt-2 pb-1 text-[10px] font-semibold tracking-widest text-muted-foreground uppercase">
+        Deploy App
+      </p>
+      {groups.deployApp.map(renderBook)}
+      {groups.integrations.length > 0 && (
+        <>
+          <p className="mt-3 border-t border-sidebar-border px-2 pt-3 pb-1 text-[10px] font-semibold tracking-widest text-muted-foreground uppercase">
+            Official integrations
+          </p>
+          {groups.integrations.map(renderBook)}
+        </>
+      )}
     </div>
   );
 }

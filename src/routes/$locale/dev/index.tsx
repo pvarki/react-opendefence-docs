@@ -131,6 +131,15 @@ function SectionHeading({ children }: { children: ReactNode }) {
   );
 }
 
+/** Top-level shelf separator (white, above the orange group headings). */
+function ShelfDivider({ children }: { children: ReactNode }) {
+  return (
+    <h2 className="mt-8 border-t border-border px-1 pt-5 text-sm font-bold tracking-widest text-foreground uppercase">
+      {children}
+    </h2>
+  );
+}
+
 function ComponentRow({
   locale,
   comp,
@@ -221,6 +230,7 @@ function DevShelf() {
           <Compass className="size-3.5 text-primary" />
           {t("orient.revisit")}
         </button>
+        <ShelfDivider>Deploy App</ShelfDivider>
         {GROUPS.map((g) => {
           const groupBooks = g.slugs
             .map((s) => books.find((b) => b.slug === s))
@@ -238,10 +248,8 @@ function DevShelf() {
 
         {/* Official integrations: per-product tabs into the integration books. */}
         {(takTabs.length > 0 || integrationBooks.length > 0) && (
-          <div className="mt-10 border-t border-border pt-2">
-            <h2 className="px-1 pt-4 pb-1 text-xs font-bold tracking-widest text-primary uppercase">
-              {t("devShelf.officialIntegrations")}
-            </h2>
+          <div>
+            <ShelfDivider>{t("devShelf.officialIntegrations")}</ShelfDivider>
             {takTabs.length > 0 && (
               <>
                 <SectionHeading>TAK</SectionHeading>

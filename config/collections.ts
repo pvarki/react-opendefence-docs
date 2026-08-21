@@ -144,7 +144,7 @@ export const DEV_BOOK_COLLECTIONS: CollectionConfig[] = [
     // holding the Working-with-TAK guides (Plugin Development, Integrating to
     // TAK Server, Working with Federation Hub + the IaC how-tos).
     collectionId: "74d6c3aa-0666-44a7-ae41-73632c67c30a",
-    label: "Working with TAK",
+    label: "TAK",
     slug: "working-with-tak",
     section: "dev",
     description:

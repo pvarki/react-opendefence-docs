@@ -1,8 +1,21 @@
 {
   "schemaVersion": 1,
-  "label": "Working with TAK",
+  "label": "TAK",
   "slug": "working-with-tak",
   "items": [
+    {
+      "type": "group",
+      "id": "tak-on-the-opendefence-platform-1bxWRZBOMb",
+      "label": "TAK on the OpenDefence Platform",
+      "children": [
+        {
+          "type": "doc",
+          "id": "tak-stack-kubernetes-ab0AvFHVX5",
+          "label": "TAK stack",
+          "slug": "tak-stack-kubernetes-ab0AvFHVX5"
+        }
+      ]
+    },
     {
       "type": "group",
       "id": "atak-plugin-development-dkaULfWXcf",
@@ -262,19 +275,6 @@
           "id": "references-KdqJO1rcQ0",
           "label": "References",
           "slug": "references-KdqJO1rcQ0"
-        }
-      ]
-    },
-    {
-      "type": "group",
-      "id": "tak-on-the-opendefence-platform-1bxWRZBOMb",
-      "label": "TAK on the OpenDefence Platform",
-      "children": [
-        {
-          "type": "doc",
-          "id": "tak-stack-kubernetes-ab0AvFHVX5",
-          "label": "TAK stack",
-          "slug": "tak-stack-kubernetes-ab0AvFHVX5"
         }
       ]
     },

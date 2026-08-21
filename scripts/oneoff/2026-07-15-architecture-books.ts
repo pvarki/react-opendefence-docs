@@ -292,16 +292,13 @@ async function main() {
     });
     console.log(`  page ${p.key}`);
   }
-  // Append the chapter as the LAST sibling without touching existing order.
-  const takSiblings = await client.listDocuments({
-    collectionId: WORKING_WITH_TAK_ID,
-    parentDocumentId: takEn.id,
-  });
+  // Platform-integration chapter FIRST; existing TAK-dev chapters keep their
+  // relative order below it.
   await client.moveDocument({
     id: takChapter,
     collectionId: WORKING_WITH_TAK_ID,
     parentDocumentId: takEn.id,
-    index: Math.max(0, takSiblings.length - 1),
+    index: 0,
   });
   await sleep(120);
 

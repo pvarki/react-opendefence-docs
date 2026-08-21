@@ -44,7 +44,7 @@
     "revisit": "About this site",
     "slide1": {
       "title": "Welcome to OpenDefence Docs",
-      "body": "OpenDefence is an FDF-serving national defence open-source project that aims to offer multi-domain-operation-capable C2 services to soldiers in an easy and interoperable way. Here you will find docs to use, integrate and develop it."
+      "body": "OpenDefence is an open-source project that serves Finnish Defence Forces and Allied defence needs. It aims to offer multi-domain-operation-capable C2 services to soldiers in an easy and interoperable way. Here you will find docs to use, integrate and develop it."
     },
     "slide2": {
       "title": "Soldier's platform",
