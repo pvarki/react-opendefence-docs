@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "locale": "en",
-  "generatedAt": "2026-07-15T19:57:02.186Z",
+  "generatedAt": "2026-08-22T20:41:45.988Z",
   "collections": [
     {
       "slug": "deploy-app",
@@ -4855,7 +4855,7 @@
         "Packaging & distribution (overview)"
       ],
       "path": "/content/en/pages/working-with-tak/packaging-distribution-overview-Yfof5rViqj.json",
-      "updatedAt": "2026-06-16T22:57:03.224Z",
+      "updatedAt": "2026-08-22T20:29:20.460Z",
       "order": 14,
       "chapterId": "atak-plugin-development-dkaULfWXcf",
       "chapterLabel": "ATAK Plugin Development"
