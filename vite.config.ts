@@ -76,6 +76,9 @@ export default defineConfig({
         navigateFallback: `${base}index.html`,
         navigateFallbackDenylist: [
           new RegExp(`^${baseRe}(content|api-specs|release-docs|pagefind)/`),
+          // Root-level static files (llms.txt, robots.txt, …) must bypass the
+          // SPA shell so browsers can open them directly.
+          new RegExp(`^${baseRe}[^/]+\\.(txt|xml|json)$`),
         ],
         cleanupOutdatedCaches: true,
         runtimeCaching: [
