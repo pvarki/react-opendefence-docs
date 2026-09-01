@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "id": "d13b32b4-a754-43ac-9e2d-c219b7949e28",
+  "slug": "what-you-can-show-in-tak-clients-Vu9crgcRkE",
+  "collection": "working-with-tak",
+  "locale": "en",
+  "title": "What you can show in TAK clients",
+  "breadcrumb": [
+    "Bringing your data to TAK",
+    "What you can show in TAK clients"
+  ],
+  "createdAt": "2026-09-01T09:30:37.108Z",
+  "updatedAt": "2026-09-01T09:30:37.108Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "The map",
+      "id": "the-map"
+    },
+    {
+      "depth": 2,
+      "text": "CoT events — anything alive",
+      "id": "cot-events--anything-alive"
+    },
+    {
+      "depth": 2,
+      "text": "KML/KMZ vectors — tappable overlays",
+      "id": "kmlkmz-vectors--tappable-overlays"
+    },
+    {
+      "depth": 2,
+      "text": "GRG rasters — one GroundOverlay per KMZ",
+      "id": "grg-rasters--one-groundoverlay-per-kmz"
+    },
+    {
+      "depth": 2,
+      "text": "Basemaps — custom map source XML",
+      "id": "basemaps--custom-map-source-xml"
+    },
+    {
+      "depth": 2,
+      "text": "Distribution — Mission Packages, missions, Enterprise Sync",
+      "id": "distribution--mission-packages-missions-enterprise-sync"
+    },
+    {
+      "depth": 2,
+      "text": "Device profiles — push-on-connect",
+      "id": "device-profiles--push-on-connect"
+    },
+    {
+      "depth": 2,
+      "text": "Mentions: video, WFS, network KML",
+      "id": "mentions-video-wfs-network-kml"
+    },
+    {
+      "depth": 2,
+      "text": "What core ATAK cannot do",
+      "id": "what-core-atak-cannot-do"
+    },
+    {
+      "depth": 2,
+      "text": "Related pages",
+      "id": "related-pages"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<blockquote>\n<p>⚠️ <strong>Closed alpha — provisional docs.</strong> The opendefense-platform is under breaking development; verify against the code before relying on details.</p>\n</blockquote>\n<p>Core ATAK renders only a handful of data shapes natively, and each shape has exactly one mechanism that carries it well — pick the wrong vehicle and ATAK will mosaic your rasters, silently drop your placemarks, or ask the operator to hand-place a PNG on the map. This page is the shape → mechanism → delivery map, so you choose the vehicle <em>before</em> writing code. Everything here was verified on an ATAK-CIV 5.7 client enrolled against the platform's TAK stack (see <a href=\"/en/working-with-tak/tak-stack-kubernetes-ab0AvFHVX5\">TAK stack (Kubernetes)</a>); the working example behind it is the <strong>Worked example: drone weather in ATAK</strong> sibling page, with full source at <a href=\"https://github.com/fdfinfohack/opendefense-platform/tree/feat/dronewx-demo/scripts/dronewx\" target=\"_blank\" rel=\"noopener noreferrer\"><code>scripts/dronewx</code></a>.</p>\n<h2 id=\"the-map\"><a href=\"#the-map\">The map</a></h2>"
+    },
+    {
+      "type": "mermaid",
+      "code": "flowchart LR\n    feed[\"Your live feed<br/>(CoT generator)\"]\n    pipe[\"Your pipeline<br/>(dronewx.py → package.py → upload.sh)\"]\n    zip[\"Enrollment zip\"]\n    subgraph tak[\"TAK Server (Deployment tak-server, namespace app-tak)\"]\n        cot[\"CoT TLS input :8089\"]\n        marti[\"Marti REST :8443<br/>missions + Enterprise Sync\"]\n        prof[\"Device profiles<br/>(Default-ATAK, apply on connect)\"]\n    end\n    subgraph atak[\"ATAK client\"]\n        sa[\"Live SA markers<br/>(fade at stale time)\"]\n        ov[\"Overlays: KMZ vectors<br/>+ GRG rasters\"]\n        base[\"Basemaps<br/>(map source XML)\"]\n        cfg[\"Prefs + files\"]\n    end\n    feed -->|\"CoT XML over TLS\"| cot --> sa\n    pipe -->|\"Mission Package upload\"| marti -->|\"Available Packages /<br/>mission subscription\"| ov\n    prof -->|\"on first connect\"| cfg\n    prof --> base\n    zip --> base"
+    },
+    {
+      "type": "html",
+      "html": "<table>\n<thead>\n<tr>\n<th>Data shape</th>\n<th>Native vehicle</th>\n<th>Arrives on the client via</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Live, moving, expiring objects — units, tracks, detections, alerts</td>\n<td><strong>CoT event</strong></td>\n<td>TLS stream on port 8089 (or a runtime input on 8090–8094)</td>\n</tr>\n<tr>\n<td>Tappable vectors — polygons, lines, points with a details view</td>\n<td><strong>KML/KMZ</strong>, vectors only</td>\n<td>Mission Package → mission / Available Packages; lands in <code>atak/overlays/</code></td>\n</tr>\n<tr>\n<td>Georeferenced raster — heatmap, scanned map, imagery chip</td>\n<td><strong>GRG KMZ</strong> — exactly one GroundOverlay</td>\n<td>Mission Package; lands in <code>atak/grg/</code></td>\n</tr>\n<tr>\n<td>Basemap tile pyramid (XYZ/WMTS)</td>\n<td><strong>custom map source XML</strong></td>\n<td>Enrollment zip + Default-ATAK device profile</td>\n</tr>\n<tr>\n<td>Settings and files every device must have</td>\n<td><strong>Device profile package</strong></td>\n<td>Pushed automatically on connect</td>\n</tr>\n<tr>\n<td>Self-refreshing overlay from your own HTTP server</td>\n<td><strong>Network KML link</strong></td>\n<td>Import Tool → [KML Link], per device, with a refresh interval</td>\n</tr>\n</tbody>\n</table>\n<h2 id=\"cot-events--anything-alive\"><a href=\"#cot-events--anything-alive\">CoT events — anything alive</a></h2>\n<p><strong>Cursor-on-Target</strong> over the port-8089 TLS input is the live SA feed: every marker on the map is a CoT event, and each event carries <code>time</code>/<code>start</code>/<code>stale</code> timestamps — when <code>stale</code> passes, the client fades and drops the marker on its own. That expiry semantic is what makes CoT the vehicle for anything <em>moving or perishable</em> (we verified Digitraffic train and AIS vessel feeds this way); it is the wrong vehicle for a 576-polygon overlay. Any enrolled client certificate can open the 8089 stream — see <a href=\"/en/working-with-tak/pushing-data-to-tak-server-WDTB0ov6LS\">Pushing data to TAK server</a>. Extra inputs can be created at runtime with <code>POST /Marti/api/inputs</code> on the spare ports 8090–8094, but they are <strong>not persisted to CoreConfig.xml</strong> — gone on pod restart, so re-POST each run and treat the 500 \"Input name already exists\" as success.</p>\n<h2 id=\"kmlkmz-vectors--tappable-overlays\"><a href=\"#kmlkmz-vectors--tappable-overlays\">KML/KMZ vectors — tappable overlays</a></h2>\n<p>Polygons, LineStrings and Points in a KMZ render as an Overlay Manager layer: tap a polygon and its <code>description</code> opens in Details (several within tap radius → a deconfliction list). Two hard rules, both learned the painful way: descriptions are <strong>plain text plus</strong> <code>**&#x3C;br/>**</code> <strong>only</strong> (all other HTML is stripped — a <code>&#x3C;table></code> collapses to a run-on string), and <strong>omit</strong> <code>**IconStyle**</code><strong>/</strong><code>**LabelStyle**</code> <strong>entirely</strong> or every polygon grows a white centre dot. Where layers overlap, the topmost fill wins the tap — hide the layer above to reach the one below. The full authoring detail lives in the sibling page <strong>What you can show in TAK clients</strong>.</p>\n<h2 id=\"grg-rasters--one-groundoverlay-per-kmz\"><a href=\"#grg-rasters--one-groundoverlay-per-kmz\">GRG rasters — one GroundOverlay per KMZ</a></h2>\n<p>A <code>GroundOverlay</code> (PNG + <code>LatLonBox</code>) imports as a <strong>GRG</strong> — a georeferenced graphic, individually toggleable per file. The trap: a KMZ mixing several GroundOverlays with Placemarks still imports as one GRG — the rasters get <strong>mosaicked into a single image and every placemark is silently dropped</strong>. Ship one GroundOverlay per KMZ, and keep vectors in their own KMZ. This is why the demonstrator emits <code>cells.kmz</code> plus separate <code>gust_h00/03/06/12.kmz</code> instead of one combined file.</p>\n<h2 id=\"basemaps--custom-map-source-xml\"><a href=\"#basemaps--custom-map-source-xml\">Basemaps — custom map source XML</a></h2>\n<p>Base imagery is not an overlay at all: it is an ATAK <code>&#x3C;customMapSource></code> XML naming an XYZ/WMTS tile URL. This is how the Finnish <strong>MML</strong> maps ship on the platform today — <code>MML_Peruskartta.xml</code> / <code>MML_Ortoilmakuva.xml</code> (Maanmittauslaitos raster via the kapsi.fi community mirror, zoom 2–19) ride inside every enrollment zip <em>and</em> in the Default-ATAK device profile's Maps package, so every client gets them without operator action. How to add your own is the sibling page <strong>Defining standard data sources</strong>.</p>\n<h2 id=\"distribution--mission-packages-missions-enterprise-sync\"><a href=\"#distribution--mission-packages-missions-enterprise-sync\">Distribution — Mission Packages, missions, Enterprise Sync</a></h2>\n<p>Files reach clients wrapped in a <strong>Mission Package</strong>: a zip with <code>MANIFEST/manifest.xml</code> (<code>MissionPackageManifest</code> version 2, a stable <code>uid</code>, <code>onReceiveImport=true</code> so ATAK imports on download). Never upload a raw KMZ as a package — ATAK unzips it file-by-file and asks the operator to place each PNG by hand (\"Select a location on the map to place: h00.png\"). Publishing is three idempotent Marti calls (the whole of <code>upload.sh</code>):</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span>PUT  /Marti/api/missions/dronewx?creatorUid=...&#x26;defaultRole=MISSION_SUBSCRIBER</span></span>\n<span class=\"line\"><span>POST /Marti/sync/missionupload?hash=&#x3C;sha256>&#x26;filename=...&#x26;creatorUid=...   # multipart, field 'assetfile'</span></span>\n<span class=\"line\"><span>PUT  /Marti/api/missions/dronewx/contents                                  # {\"hashes\":[\"&#x3C;sha256>\"]}</span></span></code></pre>",
+      "lang": "plaintext"
+    },
+    {
+      "type": "html",
+      "html": "<p>Every <code>missionupload</code> is listed for <strong>all</strong> users in ATAK's Data Packages → Available Packages (<code>GET /Marti/sync/search</code>, Tool: public) even without a mission subscription; subscribers additionally get mission change notifications. Endpoint detail: <a href=\"/en/working-with-tak/the-marti-api-the-spec-zWa3vFfeKt\">The Marti API (the spec)</a>.</p>\n<h2 id=\"device-profiles--push-on-connect\"><a href=\"#device-profiles--push-on-connect\">Device profiles — push-on-connect</a></h2>\n<p>A <strong>connection device profile</strong> (<code>apply_on_connect=true</code>) pushes packages the moment a client first connects — the platform's Default-ATAK profile delivers default settings, the toolbar, and the Maps package this way; the enrollment zip enables it with <code>deviceProfileEnableOnConnect=true</code>. Right vehicle for configuration and must-have files, wrong one for changing data: profile uploads <strong>dedupe by file name</strong>, so changed content under the same name is never re-pushed. How a client gets the zip in the first place — programmatically or via the RASENMAEHER UI — is the sibling page <strong>Importing a data source programmatically</strong>, plus <a href=\"/en/working-with-tak/enrolling-getting-a-client-certificate-vze3g7Eshz\">Enrolling &#x26; getting a client certificate</a>.</p>\n<h2 id=\"mentions-video-wfs-network-kml\"><a href=\"#mentions-video-wfs-network-kml\">Mentions: video, WFS, network KML</a></h2>\n<p>TAK Server can also register <strong>video streams</strong> and serve <strong>WFS</strong> feature layers to clients — neither has been exercised on this platform yet, so verify before depending on them. The Import Tool's <strong>[KML Link]</strong> accepts a network KML URL with a refresh interval, and <strong>[HTTP URL]</strong> fetches other files (Remote Resources in Overlay Manager) — the only native client-pull mechanisms, configured per device by hand. Note the enrollment templates also cover iTAK, WinTAK and TAK Tracker, but the rendering behaviours above were verified on ATAK-CIV 5.7 only.</p>\n<h2 id=\"what-core-atak-cannot-do\"><a href=\"#what-core-atak-cannot-do\">What core ATAK cannot do</a></h2>\n<ul>\n<li><strong>No time slider, no animation.</strong> Confirmed against the full feature list — KML <code>TimeSpan</code> changes nothing. Native workaround: one raster per planning step, individually toggleable, plus the per-cell hourly table behind a tap.</li>\n<li><strong>No rich HTML in details.</strong> Descriptions are plain text + <code>&#x3C;br/></code>; design your data readouts accordingly.</li>\n<li><strong>No live HTTP polling from the client.</strong> The closest native thing is the per-device [KML Link] refresh. Anything smarter — client-side fetch loops, custom renderers, real timelines — is plugin territory: <a href=\"/en/working-with-tak/how-atak-plugins-work-GtuYZlJSnX\">How ATAK plugins work</a>. The server-push pattern (re-publish a Mission Package on a timer) covers most refresh needs without one.</li>\n</ul>\n<h2 id=\"related-pages\"><a href=\"#related-pages\">Related pages</a></h2>\n<ul>\n<li><a href=\"/en/working-with-tak/pushing-data-to-tak-server-WDTB0ov6LS\">Pushing data to TAK server</a> — the CoT injection mechanics behind the 8089 row</li>\n<li><a href=\"/en/working-with-tak/the-marti-api-the-spec-zWa3vFfeKt\">The Marti API (the spec)</a> — missions, Enterprise Sync, and inputs endpoints in full</li>\n<li><a href=\"/en/working-with-tak/enrolling-getting-a-client-certificate-vze3g7Eshz\">Enrolling &#x26; getting a client certificate</a> — how a client earns its way onto 8089 at all</li>\n<li><a href=\"/en/working-with-tak/how-atak-plugins-work-GtuYZlJSnX\">How ATAK plugins work</a> — where to go when the native mechanisms run out</li>\n</ul>"
+    }
+  ]
+}

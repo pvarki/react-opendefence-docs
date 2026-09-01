@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "id": "fe25c548-32da-421a-b2a1-4ae43071d75f",
+  "slug": "defining-standard-data-sources-SCE43vcdNF",
+  "collection": "working-with-tak",
+  "locale": "en",
+  "title": "Defining standard data sources",
+  "breadcrumb": [
+    "Bringing your data to TAK",
+    "Defining standard data sources"
+  ],
+  "createdAt": "2026-09-01T09:30:40.643Z",
+  "updatedAt": "2026-09-01T09:30:40.643Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "Channel A — the enrollment zip",
+      "id": "channel-a--the-enrollment-zip"
+    },
+    {
+      "depth": 2,
+      "text": "Channel B — environment packages via device profile",
+      "id": "channel-b--environment-packages-via-device-profile"
+    },
+    {
+      "depth": 2,
+      "text": "Adding your own source",
+      "id": "adding-your-own-source"
+    },
+    {
+      "depth": 2,
+      "text": "The dedupe trap",
+      "id": "the-dedupe-trap"
+    },
+    {
+      "depth": 2,
+      "text": "What standard sources are — and are not — for",
+      "id": "what-standard-sources-are--and-are-not--for"
+    },
+    {
+      "depth": 2,
+      "text": "Related pages",
+      "id": "related-pages"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<blockquote>\n<p>⚠️ <strong>Closed alpha — provisional docs.</strong> The opendefense-platform is under breaking development; verify against the code before relying on details.</p>\n</blockquote>\n<p>Enrol any client through RASENMAEHER and it wakes up with the Finnish MML basemaps — Peruskartta and Ortoilmakuva, plus the Google set — already in its map switcher, without anyone touching the Import tool. This page dissects how that works and how to make your own layer equally automatic: a <strong>standard data source</strong> that every deployment hands to every client out of the box. Notably, nothing in the <code>opendefense-platform</code> repo defines the MML maps — they ship inside the takrmapi image (<code>ghcr.io/pvarki/tak-integration</code>, built from <a href=\"https://github.com/pvarki/python-tak-rmapi\" target=\"_blank\" rel=\"noopener noreferrer\"><code>pvarki/python-tak-rmapi</code></a>) through two separate channels.</p>\n<h2 id=\"channel-a--the-enrollment-zip\"><a href=\"#channel-a--the-enrollment-zip\">Channel A — the enrollment zip</a></h2>\n<p>When takrmapi builds a client's onboarding package (the <code>client-zip</code> endpoint — see <a href=\"/en/working-with-tak/enrolling-getting-a-client-certificate-vze3g7Eshz\">Enrolling &#x26; getting a client certificate</a>), it renders the template tree <code>src/takrmapi/templates/tak_missionpkg/default/</code> — one folder per client variant: <code>atak</code>, <code>itak</code>, <code>wintak</code>, <code>tak-tracker</code>. Each folder holds <code>server.pref.tpl</code>, the map-source XMLs, and a <code>MANIFEST/manifest.xml.tpl</code> that lists them. Whatever sits in the variant folder <em>and</em> has a manifest line lands in every new client's zip.</p>\n<p>The map sources themselves are nothing exotic — plain ATAK <code>&#x3C;customMapSource></code> XYZ tile definitions. <code>MML_Peruskartta.xml</code> declares <strong>\"1 MML Peruskartta\"</strong> at <code>https://tiles.kartat.kapsi.fi/peruskartta/{$z}/{$x}/{$y}.jpg</code>, zoom 2–19; <code>MML_Ortoilmakuva.xml</code> points at the same host's <code>ortokuva</code> path. That is Maanmittauslaitos raster served via the kapsi.fi community mirror, not MML directly — worth knowing before you bet an exercise on its availability.</p>\n<h2 id=\"channel-b--environment-packages-via-device-profile\"><a href=\"#channel-b--environment-packages-via-device-profile\">Channel B — environment packages via device profile</a></h2>\n<p>At startup, takrmapi's <code>setup_tak_defaults()</code> (<code>takutils/tak_init.py</code>) creates the <code>**Default-ATAK**</code> connection profile in TAK Server with <code>apply_on_connect=true</code>, and uploads into it zips built from <code>templates/tak_datapackage/default/environment-packages/</code>. Which folders become zips is <strong>hard-coded</strong> in <code>config.py</code> as <code>TAK_DATAPACKAGE_ADDON_FOLDER_ZIP_PACKAGES</code>; the set includes <code>Maps</code>, carrying the same MML/Google XMLs plus a <code>Map_defaults.pref</code>. Every client that connects receives these packages automatically — the enrollment zip's <code>server.pref</code> sets <code>deviceProfileEnableOnConnect=true</code>, so ATAK asks for the profile on connect.</p>\n<p>The two channels are deliberate belt-and-braces: the zip gives a brand-new client its maps before it ever reaches the server; the profile catches every client that connects — including ones enrolled before a package existed. Both channels also set <code>eud_api_sync_mapsources=false</code> (in <code>server.pref</code> and <code>Map_defaults.pref</code> respectively), so clients do <em>not</em> pull map sources from TAK's own EUD sync API — these two paths are the delivery mechanism, full stop.</p>"
+    },
+    {
+      "type": "mermaid",
+      "code": "flowchart LR\n    subgraph img[\"takrmapi image — ghcr.io/pvarki/tak-integration (python-tak-rmapi)\"]\n        mp[\"templates/tak_missionpkg/default/<br/>atak · itak · wintak · tak-tracker<br/>map XMLs + manifest.xml.tpl\"]\n        dp[\"templates/tak_datapackage/default/<br/>environment-packages/ — Maps, ...\"]\n    end\n    zip[\"Enrollment zip<br/>(client-zip endpoint)\"]\n    prof[\"TAK device profile Default-ATAK<br/>apply_on_connect=true\"]\n    client[\"ATAK / iTAK / WinTAK client\"]\n    mp -->|\"rendered per callsign<br/>at zip request\"| zip\n    dp -->|\"setup_tak_defaults()<br/>at takrmapi startup\"| prof\n    zip -->|\"Import > Local SD\"| client\n    prof -->|\"pushed automatically<br/>on connect (:8089)\"| client"
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"adding-your-own-source\"><a href=\"#adding-your-own-source\">Adding your own source</a></h2>\n<p><strong>The upstream route</strong> — the one that makes a source standard for everyone. In <code>python-tak-rmapi</code>, add <code>MySource.xml</code> plus its manifest line under <strong>both</strong> template trees: each client-variant folder in <code>tak_missionpkg/default/</code> (and its <code>manifest.xml.tpl</code>), and the <code>Maps</code> folder in <code>tak_datapackage/default/environment-packages/</code>. Miss a variant folder and iTAK/WinTAK users silently go without. Rebuild <code>ghcr.io/pvarki/tak-integration</code>, then bump the tag in both overlays:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#7F848E;font-style:italic\"># k8s/app-tak/overlays/{local,cloud}/kustomization.yaml</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">images</span><span style=\"color:#ABB2BF\">:</span></span>\n<span class=\"line\"><span style=\"color:#ABB2BF\">- </span><span style=\"color:#E06C75\">name</span><span style=\"color:#ABB2BF\">: </span><span style=\"color:#98C379\">tak-rmapi-image</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">  newName</span><span style=\"color:#ABB2BF\">: </span><span style=\"color:#98C379\">ghcr.io/pvarki/tak-integration</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">  newTag</span><span style=\"color:#ABB2BF\">: </span><span style=\"color:#98C379\">1.14.3-260822</span><span style=\"color:#7F848E;font-style:italic\">   # &#x3C;- your rebuilt tag</span></span></code></pre>",
+      "lang": "yaml"
+    },
+    {
+      "type": "html",
+      "html": "<p><strong>The platform-side route</strong> — no fork required. takrmapi's <code>config.py</code> settings are env-overridable with the <code>TI_</code> prefix, and the overlays already merge literals into <code>takrmapi-config</code> via a <code>configMapGenerator</code>. Point the template folders at your own tree, mounted from a ConfigMap:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#E06C75\">configMapGenerator</span><span style=\"color:#ABB2BF\">:</span></span>\n<span class=\"line\"><span style=\"color:#ABB2BF\">- </span><span style=\"color:#E06C75\">name</span><span style=\"color:#ABB2BF\">: </span><span style=\"color:#98C379\">takrmapi-config</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">  behavior</span><span style=\"color:#ABB2BF\">: </span><span style=\"color:#98C379\">merge</span></span>\n<span class=\"line\"><span style=\"color:#E06C75\">  literals</span><span style=\"color:#ABB2BF\">:</span></span>\n<span class=\"line\"><span style=\"color:#ABB2BF\">  - </span><span style=\"color:#98C379\">TI_TAK_MISSIONPKG_TEMPLATES_FOLDER=/custom-templates/tak_missionpkg</span></span>\n<span class=\"line\"><span style=\"color:#ABB2BF\">  - </span><span style=\"color:#98C379\">TI_TAK_DATAPACKAGE_TEMPLATES_FOLDER=/custom-templates/tak_datapackage</span></span></code></pre>",
+      "lang": "yaml"
+    },
+    {
+      "type": "html",
+      "html": "<p>Two caveats make this less pleasant than it looks. First, <strong>you own the whole tree</strong>: takrmapi reads only the folder you point it at, so you must replicate every stock file — <code>server.pref.tpl</code>, all four variant folders, the manifests — and you stop receiving upstream template fixes. Second, <code>TAK_DATAPACKAGE_ADDON_FOLDER_ZIP_PACKAGES</code> is hard-coded, <em>not</em> env-overridable — you can change what is inside the existing packages (<code>Maps</code>), but adding a brand-new environment-package zip needs the upstream route.</p>\n<h2 id=\"the-dedupe-trap\"><a href=\"#the-dedupe-trap\">The dedupe trap</a></h2>\n<p>Device-profile uploads <strong>dedupe by file name</strong>. Ship changed content under the same <code>Maps.zip</code> and an existing deployment never re-pushes it — clients keep the old sources indefinitely. Either give the package folder a new name (an upstream change, since the folder list is hard-coded), or delete the stale file from the <code>Default-ATAK</code> profile in TAK so the next takrmapi startup uploads it fresh.</p>\n<h2 id=\"what-standard-sources-are--and-are-not--for\"><a href=\"#what-standard-sources-are--and-are-not--for\">What standard sources are — and are not — for</a></h2>\n<p>Standard sources are for <strong>slow-changing content</strong>: basemaps and reference layers that should exist on day one and rarely change, because every change rides an image rebuild or a template-tree edit plus the dedupe dance above. Anything dynamic — refreshing weather grids, live overlays, anything on a cron — belongs in mission packages published over the Marti API instead; that loop is covered in <em>Publishing data programmatically</em> in this chapter, and demonstrated end-to-end by the <a href=\"https://github.com/fdfinfohack/opendefense-platform/tree/feat/dronewx-demo/scripts/dronewx\" target=\"_blank\" rel=\"noopener noreferrer\"><code>scripts/dronewx</code></a> pipeline.</p>\n<h2 id=\"related-pages\"><a href=\"#related-pages\">Related pages</a></h2>\n<ul>\n<li><a href=\"/en/working-with-tak/enrolling-getting-a-client-certificate-vze3g7Eshz\">Enrolling &#x26; getting a client certificate</a> — where the enrollment zip comes from and what else is inside it</li>\n<li><a href=\"/en/working-with-tak/tak-stack-kubernetes-ab0AvFHVX5\">TAK stack (Kubernetes)</a> — the takrmapi sidecar, the overlays, and <code>takrmapi-config</code></li>\n<li><a href=\"/en/working-with-tak/pushing-data-to-tak-server-WDTB0ov6LS\">Pushing data to TAK server</a> — the server-side primitives for dynamic content</li>\n<li><a href=\"/en/working-with-tak/the-marti-api-the-spec-zWa3vFfeKt\">The Marti API (the spec)</a> — the REST surface the device-profile and mission machinery sits on</li>\n</ul>"
+    }
+  ]
+}

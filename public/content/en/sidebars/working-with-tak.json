@@ -5,6 +5,43 @@
   "items": [
     {
       "type": "group",
+      "id": "bringing-your-data-to-tak-Y7eWAUpnkB",
+      "label": "Bringing your data to TAK",
+      "children": [
+        {
+          "type": "doc",
+          "id": "what-you-can-show-in-tak-clients-Vu9crgcRkE",
+          "label": "What you can show in TAK clients",
+          "slug": "what-you-can-show-in-tak-clients-Vu9crgcRkE"
+        },
+        {
+          "type": "doc",
+          "id": "importing-a-data-source-manually-ny92YOteXv",
+          "label": "Importing a data source manually",
+          "slug": "importing-a-data-source-manually-ny92YOteXv"
+        },
+        {
+          "type": "doc",
+          "id": "importing-a-data-source-programmatically-hGVXI6beGi",
+          "label": "Importing a data source programmatically",
+          "slug": "importing-a-data-source-programmatically-hGVXI6beGi"
+        },
+        {
+          "type": "doc",
+          "id": "defining-standard-data-sources-SCE43vcdNF",
+          "label": "Defining standard data sources",
+          "slug": "defining-standard-data-sources-SCE43vcdNF"
+        },
+        {
+          "type": "doc",
+          "id": "worked-example-drone-weather-in-atak-Xeapd2kZdo",
+          "label": "Worked example: drone weather in ATAK",
+          "slug": "worked-example-drone-weather-in-atak-Xeapd2kZdo"
+        }
+      ]
+    },
+    {
+      "type": "group",
       "id": "tak-on-the-opendefence-platform-1bxWRZBOMb",
       "label": "TAK on the OpenDefence Platform",
       "children": [

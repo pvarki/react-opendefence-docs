@@ -47,6 +47,11 @@ const TAK_CHAPTERS: { titleKey: string; descKey: string; chapter: string }[] = [
     chapter: "TAK on the OpenDefence Platform",
   },
   {
+    titleKey: "takShelf.bringDataTitle",
+    descKey: "takShelf.bringDataDesc",
+    chapter: "Bringing your data to TAK",
+  },
+  {
     titleKey: "takShelf.pluginDevTitle",
     descKey: "takShelf.pluginDevDesc",
     chapter: "ATAK Plugin Development",
