@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "id": "337b8c32-483b-43a5-92e1-dc3dde7468f5",
+  "slug": "importing-a-data-source-manually-ny92YOteXv",
+  "collection": "working-with-tak",
+  "locale": "en",
+  "title": "Importing a data source manually",
+  "breadcrumb": [
+    "Bringing your data to TAK",
+    "Importing a data source manually"
+  ],
+  "createdAt": "2026-09-01T09:30:38.309Z",
+  "updatedAt": "2026-09-01T09:30:38.309Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "A fresh client is not empty",
+      "id": "a-fresh-client-is-not-empty"
+    },
+    {
+      "depth": 2,
+      "text": "The Import Tool: ad-hoc, on-device",
+      "id": "the-import-tool-ad-hoc-on-device"
+    },
+    {
+      "depth": 2,
+      "text": "Data Packages: pulling what the server holds",
+      "id": "data-packages-pulling-what-the-server-holds"
+    },
+    {
+      "depth": 2,
+      "text": "Toggling layers",
+      "id": "toggling-layers"
+    },
+    {
+      "depth": 2,
+      "text": "Related pages",
+      "id": "related-pages"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<blockquote>\n<p>⚠️ <strong>Closed alpha — provisional docs.</strong> The opendefense-platform is under breaking development; verify against the code before relying on details.</p>\n</blockquote>\n<p>This page covers what an end user can do <strong>on the device itself</strong> — no admin access, no kubectl, no Marti credentials — to get data into ATAK: the <strong>Import Tool</strong> for ad-hoc files and network links, and the <strong>Data Packages</strong> tool for pulling anything an integrator has published to the server. Read it even if you never touch a tablet: every action here has a server API twin (the subject of <em>Publishing a data source programmatically</em>), and watching what the UI does is the fastest way to understand what those API calls do to a client.</p>\n<h2 id=\"a-fresh-client-is-not-empty\"><a href=\"#a-fresh-client-is-not-empty\">A fresh client is not empty</a></h2>\n<p>The enrollment zip (see <a href=\"/en/working-with-tak/enrolling-getting-a-client-certificate-vze3g7Eshz\">Enrolling — getting a client certificate</a>) is itself a data package: alongside <code>server.pref</code> and the client <code>.p12</code> it carries the standard map sources — <code>MML_Peruskartta.xml</code>, <code>MML_Ortoilmakuva.xml</code>, <code>Google_Roadmap/Hybrid/Satellite.xml</code> — so a just-enrolled ATAK already has the Maanmittauslaitos base maps. On the first TLS connect the server's <strong>Default-ATAK device profile</strong> additionally pushes <code>ATAK-default-settings.zip</code> and the team-member toolbar automatically. One detail worth knowing: <code>server.pref</code> sets <code>eud_api_sync_mapsources=false</code> — the map list is baked into the package, not synced live from the server. How those defaults are defined and extended platform-side is the subject of <em>Defining standard data sources</em>.</p>\n<h2 id=\"the-import-tool-ad-hoc-on-device\"><a href=\"#the-import-tool-ad-hoc-on-device\">The Import Tool: ad-hoc, on-device</a></h2>"
+    },
+    {
+      "type": "image",
+      "src": "/content/images/en/attachments/835b633144d08b1a.webp",
+      "alt": "ATAK Import Tool — Select Import Type dialog",
+      "width": 2400,
+      "height": 1080
+    },
+    {
+      "type": "html",
+      "html": "<p>The Import Tool (<strong>Import</strong> in the toolbox) offers three paths:</p>\n<ul>\n<li><strong>[Local SD]</strong> — a file browser over local storage. Pick the file, then a strategy: <strong>Copy</strong> (source file stays where it is) or <strong>Move</strong>. This is the same path the enrollment zip goes through, and it accepts anything ATAK has an importer for — KML/KMZ, GPX, GeoTIFF, data-package zips, map-source XMLs, <code>.pref</code> files.</li>\n<li><strong>[KML Link]</strong> — a network KML URL plus a <strong>refresh interval</strong>. The result lands under <strong>Remote Resources</strong> in Overlay Manager and re-fetches on the interval — the only self-updating feed an end user can set up without any server-side help.</li>\n<li><strong>[HTTP URL]</strong> — a one-shot fetch of any other importable file over HTTP.</li>\n</ul>\n<p>Import is type-sniffed, and the resulting category matters more than you'd expect: a KMZ that is a <code>GroundOverlay</code> raster lands under <strong>GRG</strong> (georeferenced graphics), a vector KMZ under overlays — and a KMZ mixing both gets its rasters mosaicked and its placemarks <strong>silently dropped</strong>. Those rendering rules, learned the hard way, are the subject of <em>Making your data render natively in ATAK</em>.</p>\n<h2 id=\"data-packages-pulling-what-the-server-holds\"><a href=\"#data-packages-pulling-what-the-server-holds\">Data Packages: pulling what the server holds</a></h2>"
+    },
+    {
+      "type": "image",
+      "src": "/content/images/en/attachments/1b8de01dda3b23f8.webp",
+      "alt": "Data Packages — Available Packages listing dronewx from the server",
+      "width": 2400,
+      "height": 1080
+    },
+    {
+      "type": "html",
+      "html": "<p>The <strong>Data Packages</strong> tool is how a user receives anything an integrator has published. Tap the <strong>download</strong> icon → pick the server → the <strong>Available Packages</strong> list (TAK calls this store <strong>Enterprise Sync</strong>) → select → <strong>Download</strong>. Every file uploaded via <code>/Marti/sync/missionupload</code> appears here for <em>all</em> users (<code>Tool: public</code>) — no mission subscription required.</p>"
+    },
+    {
+      "type": "mermaid",
+      "code": "flowchart LR\n    integ[\"Integrator<br/>upload.sh / Marti REST\"]\n    sync[\"Enterprise Sync store<br/>(dedupes by sha256)\"]\n    dp[\"ATAK Data Packages<br/>Available Packages\"]\n    om[\"Overlay Manager<br/>atak/overlays + atak/grg\"]\n    integ -->|\"POST /Marti/sync/missionupload\"| sync\n    dp -->|\"download icon → pick server → list\"| sync\n    sync -->|\"Download → import per MANIFEST/manifest.xml\"| om"
+    },
+    {
+      "type": "html",
+      "html": "<p>Download imports the package per its <code>MANIFEST/manifest.xml</code> (<code>onReceiveImport=true</code> means no further prompts). From <em>The drone weather demonstrator</em> (<a href=\"https://github.com/fdfinfohack/opendefense-platform/tree/feat/dronewx-demo/scripts/dronewx\" target=\"_blank\" rel=\"noopener noreferrer\">scripts/dronewx</a>, branch <code>feat/dronewx-demo</code>): <code>cells.kmz</code> and <code>routewx.kmz</code> land as <code>atak/overlays/…</code>, the gust rasters as <code>atak/grg/…</code>. The server-side twin is three Marti calls:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#61AFEF\">PUT</span><span style=\"color:#98C379\">  /Marti/api/missions/dronewx?creatorUid=...</span><span style=\"color:#ABB2BF\">&#x26;</span><span style=\"color:#E06C75\">defaultRole</span><span style=\"color:#56B6C2\">=</span><span style=\"color:#98C379\">MISSION_SUBSCRIBER</span></span>\n<span class=\"line\"><span style=\"color:#61AFEF\">POST</span><span style=\"color:#98C379\"> /Marti/sync/missionupload?hash=</span><span style=\"color:#ABB2BF\">&#x3C;</span><span style=\"color:#98C379\">sha25</span><span style=\"color:#ABB2BF\">6>&#x26;</span><span style=\"color:#98C379\">filename=...</span><span style=\"color:#7F848E;font-style:italic\">   # multipart, field: assetfile</span></span>\n<span class=\"line\"><span style=\"color:#61AFEF\">PUT</span><span style=\"color:#98C379\">  /Marti/api/missions/dronewx/contents</span><span style=\"color:#7F848E;font-style:italic\">                   # {\"hashes\":[\"&#x3C;sha256>\"]}</span></span></code></pre>",
+      "lang": "bash"
+    },
+    {
+      "type": "html",
+      "html": "<p>Be candid with your integrator when it goes wrong: a raw KMZ uploaded without a manifest gets unzipped <strong>file-by-file</strong> on download, and ATAK asks the user to hand-place every PNG (\"Select a location on the map to place: h00.png\"). The fix is server-side — wrap content in a proper Mission Package — never something the user can work around on the device.</p>\n<p>Sharing works the other way too: select a local package and <strong>SEND</strong> to push it to teammates via the server.</p>\n<h2 id=\"toggling-layers\"><a href=\"#toggling-layers\">Toggling layers</a></h2>\n<p>Each imported KMZ is its own layer. The package contents panel and <strong>Overlay Manager</strong> both show <strong>eye icons</strong> per entry — from the demonstrator, the four gust rasters (<code>+00h/+03h/+06h/+12h</code>) toggle individually. One behaviour to internalize: with overlapping vector fills, <strong>the topmost fill wins the tap</strong> — to tap a route corridor lying under the weather cells, hide the cells layer first.</p>\n<h2 id=\"related-pages\"><a href=\"#related-pages\">Related pages</a></h2>\n<ul>\n<li><a href=\"/en/working-with-tak/pushing-data-to-tak-server-WDTB0ov6LS\">Pushing data to TAK Server</a> — the CoT-level way in, when your data is events rather than files</li>\n<li><a href=\"/en/working-with-tak/the-marti-api-the-spec-zWa3vFfeKt\">The Marti API — the spec</a> — the API surface behind Available Packages</li>\n<li><a href=\"/en/working-with-tak/enrolling-getting-a-client-certificate-vze3g7Eshz\">Enrolling — getting a client certificate</a> — where the enrollment zip comes from</li>\n<li><a href=\"/en/working-with-tak/getting-data-from-tak-server-hszJWvv9UM\">Getting data from TAK Server</a> — reading back what clients produce</li>\n</ul>"
+    }
+  ]
+}

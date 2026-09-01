@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "locale": "en",
-  "generatedAt": "2026-07-15T19:57:02.186Z",
+  "generatedAt": "2026-09-01T09:32:08.853Z",
   "collections": [
     {
       "slug": "deploy-app",
@@ -4636,6 +4636,81 @@
       "order": 3
     },
     {
+      "id": "d13b32b4-a754-43ac-9e2d-c219b7949e28",
+      "slug": "what-you-can-show-in-tak-clients-Vu9crgcRkE",
+      "collection": "working-with-tak",
+      "title": "What you can show in TAK clients",
+      "breadcrumb": [
+        "Bringing your data to TAK",
+        "What you can show in TAK clients"
+      ],
+      "path": "/content/en/pages/working-with-tak/what-you-can-show-in-tak-clients-Vu9crgcRkE.json",
+      "updatedAt": "2026-09-01T09:30:37.108Z",
+      "order": 0,
+      "chapterId": "bringing-your-data-to-tak-Y7eWAUpnkB",
+      "chapterLabel": "Bringing your data to TAK"
+    },
+    {
+      "id": "337b8c32-483b-43a5-92e1-dc3dde7468f5",
+      "slug": "importing-a-data-source-manually-ny92YOteXv",
+      "collection": "working-with-tak",
+      "title": "Importing a data source manually",
+      "breadcrumb": [
+        "Bringing your data to TAK",
+        "Importing a data source manually"
+      ],
+      "path": "/content/en/pages/working-with-tak/importing-a-data-source-manually-ny92YOteXv.json",
+      "updatedAt": "2026-09-01T09:30:38.309Z",
+      "order": 1,
+      "chapterId": "bringing-your-data-to-tak-Y7eWAUpnkB",
+      "chapterLabel": "Bringing your data to TAK"
+    },
+    {
+      "id": "d2d35cd6-d72d-4fe9-b184-8b1f9777e017",
+      "slug": "importing-a-data-source-programmatically-hGVXI6beGi",
+      "collection": "working-with-tak",
+      "title": "Importing a data source programmatically",
+      "breadcrumb": [
+        "Bringing your data to TAK",
+        "Importing a data source programmatically"
+      ],
+      "path": "/content/en/pages/working-with-tak/importing-a-data-source-programmatically-hGVXI6beGi.json",
+      "updatedAt": "2026-09-01T09:30:39.451Z",
+      "order": 2,
+      "chapterId": "bringing-your-data-to-tak-Y7eWAUpnkB",
+      "chapterLabel": "Bringing your data to TAK"
+    },
+    {
+      "id": "fe25c548-32da-421a-b2a1-4ae43071d75f",
+      "slug": "defining-standard-data-sources-SCE43vcdNF",
+      "collection": "working-with-tak",
+      "title": "Defining standard data sources",
+      "breadcrumb": [
+        "Bringing your data to TAK",
+        "Defining standard data sources"
+      ],
+      "path": "/content/en/pages/working-with-tak/defining-standard-data-sources-SCE43vcdNF.json",
+      "updatedAt": "2026-09-01T09:30:40.643Z",
+      "order": 3,
+      "chapterId": "bringing-your-data-to-tak-Y7eWAUpnkB",
+      "chapterLabel": "Bringing your data to TAK"
+    },
+    {
+      "id": "ed86b392-3a29-4c43-84d1-7dc119e68ac3",
+      "slug": "worked-example-drone-weather-in-atak-Xeapd2kZdo",
+      "collection": "working-with-tak",
+      "title": "Worked example: drone weather in ATAK",
+      "breadcrumb": [
+        "Bringing your data to TAK",
+        "Worked example: drone weather in ATAK"
+      ],
+      "path": "/content/en/pages/working-with-tak/worked-example-drone-weather-in-atak-Xeapd2kZdo.json",
+      "updatedAt": "2026-09-01T09:30:41.935Z",
+      "order": 4,
+      "chapterId": "bringing-your-data-to-tak-Y7eWAUpnkB",
+      "chapterLabel": "Bringing your data to TAK"
+    },
+    {
       "id": "7c1e4821-0822-40d1-97ad-3de4a83a6981",
       "slug": "tak-stack-kubernetes-ab0AvFHVX5",
       "collection": "working-with-tak",
@@ -4646,7 +4721,7 @@
       ],
       "path": "/content/en/pages/working-with-tak/tak-stack-kubernetes-ab0AvFHVX5.json",
       "updatedAt": "2026-07-15T19:33:07.993Z",
-      "order": 0,
+      "order": 5,
       "chapterId": "tak-on-the-opendefence-platform-1bxWRZBOMb",
       "chapterLabel": "TAK on the OpenDefence Platform"
     },
@@ -4661,7 +4736,7 @@
       ],
       "path": "/content/en/pages/working-with-tak/how-atak-plugins-work-GtuYZlJSnX.json",
       "updatedAt": "2026-06-16T22:49:08.755Z",
-      "order": 1,
+      "order": 6,
       "chapterId": "atak-plugin-development-dkaULfWXcf",
       "chapterLabel": "ATAK Plugin Development"
     },
@@ -4676,7 +4751,7 @@
       ],
       "path": "/content/en/pages/working-with-tak/set-up-your-development-environment-NfbAKB4XTl.json",
       "updatedAt": "2026-06-16T22:49:09.131Z",
-      "order": 2,
+      "order": 7,
       "chapterId": "atak-plugin-development-dkaULfWXcf",
       "chapterLabel": "ATAK Plugin Development"
     },
@@ -4691,7 +4766,7 @@
       ],
       "path": "/content/en/pages/working-with-tak/create-your-first-plugin-from-the-template-cHtMhyb8Ma.json",
       "updatedAt": "2026-06-16T22:49:09.382Z",
-      "order": 3,
+      "order": 8,
       "chapterId": "atak-plugin-development-dkaULfWXcf",
       "chapterLabel": "ATAK Plugin Development"
     },
@@ -4706,7 +4781,7 @@
       ],
       "path": "/content/en/pages/working-with-tak/the-plugin-lifecycle-0Jf1BJ7g7O.json",
       "updatedAt": "2026-06-16T22:49:09.719Z",
-      "order": 4,
+      "order": 9,
       "chapterId": "atak-plugin-development-dkaULfWXcf",
       "chapterLabel": "ATAK Plugin Development"
     },
@@ -4721,7 +4796,7 @@
       ],
       "path": "/content/en/pages/working-with-tak/build-a-ui-the-dropdown-panel-kaH71FJeG8.json",
       "updatedAt": "2026-06-16T23:04:19.506Z",
-      "order": 5,
+      "order": 10,
       "chapterId": "atak-plugin-development-dkaULfWXcf",
       "chapterLabel": "ATAK Plugin Development"
     },
@@ -4736,7 +4811,7 @@
       ],
       "path": "/content/en/pages/working-with-tak/writing-plugins-in-kotlin-compose-Q4YEtk2N7A.json",
       "updatedAt": "2026-06-16T23:04:18.619Z",
-      "order": 6,
+      "order": 11,
       "chapterId": "atak-plugin-development-dkaULfWXcf",
       "chapterLabel": "ATAK Plugin Development"
     },
@@ -4751,7 +4826,7 @@
       ],
       "path": "/content/en/pages/working-with-tak/working-with-the-map-cot-JmDIw4jN8e.json",
       "updatedAt": "2026-06-17T01:52:07.376Z",
-      "order": 7,
+      "order": 12,
       "chapterId": "atak-plugin-development-dkaULfWXcf",
       "chapterLabel": "ATAK Plugin Development"
     },
@@ -4766,7 +4841,7 @@
       ],
       "path": "/content/en/pages/working-with-tak/map-items-groups-graphics-ZmQRXcNeqF.json",
       "updatedAt": "2026-06-17T01:52:06.271Z",
-      "order": 8,
+      "order": 13,
       "chapterId": "atak-plugin-development-dkaULfWXcf",
       "chapterLabel": "ATAK Plugin Development"
     },
@@ -4781,7 +4856,7 @@
       ],
       "path": "/content/en/pages/working-with-tak/handling-map-events-KDHLfTLGfS.json",
       "updatedAt": "2026-06-17T01:52:06.549Z",
-      "order": 9,
+      "order": 14,
       "chapterId": "atak-plugin-development-dkaULfWXcf",
       "chapterLabel": "ATAK Plugin Development"
     },
@@ -4796,7 +4871,7 @@
       ],
       "path": "/content/en/pages/working-with-tak/cot-in-depth-listening-sending-custom-details-nTudtLfqX9.json",
       "updatedAt": "2026-06-17T01:52:06.794Z",
-      "order": 10,
+      "order": 15,
       "chapterId": "atak-plugin-development-dkaULfWXcf",
       "chapterLabel": "ATAK Plugin Development"
     },
@@ -4811,7 +4886,7 @@
       ],
       "path": "/content/en/pages/working-with-tak/advanced-practical-apis-2XMWIolD6S.json",
       "updatedAt": "2026-06-17T01:52:07.074Z",
-      "order": 11,
+      "order": 16,
       "chapterId": "atak-plugin-development-dkaULfWXcf",
       "chapterLabel": "ATAK Plugin Development"
     },
@@ -4826,7 +4901,7 @@
       ],
       "path": "/content/en/pages/working-with-tak/build-install-run-fWfgBZRkux.json",
       "updatedAt": "2026-06-16T22:49:10.554Z",
-      "order": 12,
+      "order": 17,
       "chapterId": "atak-plugin-development-dkaULfWXcf",
       "chapterLabel": "ATAK Plugin Development"
     },
@@ -4841,7 +4916,7 @@
       ],
       "path": "/content/en/pages/working-with-tak/test-debug-your-plugin-78jPxzFzjK.json",
       "updatedAt": "2026-06-16T22:49:10.789Z",
-      "order": 13,
+      "order": 18,
       "chapterId": "atak-plugin-development-dkaULfWXcf",
       "chapterLabel": "ATAK Plugin Development"
     },
@@ -4855,8 +4930,8 @@
         "Packaging & distribution (overview)"
       ],
       "path": "/content/en/pages/working-with-tak/packaging-distribution-overview-Yfof5rViqj.json",
-      "updatedAt": "2026-06-16T22:57:03.224Z",
-      "order": 14,
+      "updatedAt": "2026-08-22T20:29:20.460Z",
+      "order": 19,
       "chapterId": "atak-plugin-development-dkaULfWXcf",
       "chapterLabel": "ATAK Plugin Development"
     },
@@ -4871,7 +4946,7 @@
       ],
       "path": "/content/en/pages/working-with-tak/references-attribution-n8JEv3i895.json",
       "updatedAt": "2026-06-17T01:52:07.755Z",
-      "order": 15,
+      "order": 20,
       "chapterId": "atak-plugin-development-dkaULfWXcf",
       "chapterLabel": "ATAK Plugin Development"
     },
@@ -4886,7 +4961,7 @@
       ],
       "path": "/content/en/pages/working-with-tak/how-tak-server-works-a3STsGkoWB.json",
       "updatedAt": "2026-06-17T18:40:23.782Z",
-      "order": 16,
+      "order": 21,
       "chapterId": "integrating-to-tak-server-i19y5KVtNV",
       "chapterLabel": "Integrating to TAK Server"
     },
@@ -4901,7 +4976,7 @@
       ],
       "path": "/content/en/pages/working-with-tak/the-marti-api-the-spec-zWa3vFfeKt.json",
       "updatedAt": "2026-06-17T18:33:30.384Z",
-      "order": 17,
+      "order": 22,
       "chapterId": "integrating-to-tak-server-i19y5KVtNV",
       "chapterLabel": "Integrating to TAK Server"
     },
@@ -4916,7 +4991,7 @@
       ],
       "path": "/content/en/pages/working-with-tak/getting-data-from-tak-server-hszJWvv9UM.json",
       "updatedAt": "2026-06-17T18:33:30.659Z",
-      "order": 18,
+      "order": 23,
       "chapterId": "integrating-to-tak-server-i19y5KVtNV",
       "chapterLabel": "Integrating to TAK Server"
     },
@@ -4931,7 +5006,7 @@
       ],
       "path": "/content/en/pages/working-with-tak/pushing-data-to-tak-server-WDTB0ov6LS.json",
       "updatedAt": "2026-06-17T18:33:30.940Z",
-      "order": 19,
+      "order": 24,
       "chapterId": "integrating-to-tak-server-i19y5KVtNV",
       "chapterLabel": "Integrating to TAK Server"
     },
@@ -4946,7 +5021,7 @@
       ],
       "path": "/content/en/pages/working-with-tak/authentication-the-deploy-app-identity-layer-ENSHL0S08d.json",
       "updatedAt": "2026-06-17T18:21:50.594Z",
-      "order": 20,
+      "order": 25,
       "chapterId": "integrating-to-tak-server-i19y5KVtNV",
       "chapterLabel": "Integrating to TAK Server"
     },
@@ -4961,7 +5036,7 @@
       ],
       "path": "/content/en/pages/working-with-tak/enrolling-getting-a-client-certificate-vze3g7Eshz.json",
       "updatedAt": "2026-06-17T18:21:50.829Z",
-      "order": 21,
+      "order": 26,
       "chapterId": "integrating-to-tak-server-i19y5KVtNV",
       "chapterLabel": "Integrating to TAK Server"
     },
@@ -4976,7 +5051,7 @@
       ],
       "path": "/content/en/pages/working-with-tak/keycloak-identity-groups-WXsDTvK7H8.json",
       "updatedAt": "2026-06-17T18:40:24.258Z",
-      "order": 22,
+      "order": 27,
       "chapterId": "integrating-to-tak-server-i19y5KVtNV",
       "chapterLabel": "Integrating to TAK Server"
     },
@@ -4991,7 +5066,7 @@
       ],
       "path": "/content/en/pages/working-with-tak/end-to-end-integration-EOUZgpAdh0.json",
       "updatedAt": "2026-06-17T18:21:51.351Z",
-      "order": 23,
+      "order": 28,
       "chapterId": "integrating-to-tak-server-i19y5KVtNV",
       "chapterLabel": "Integrating to TAK Server"
     },
@@ -5006,7 +5081,7 @@
       ],
       "path": "/content/en/pages/working-with-tak/references-J0wEJwIM8Z.json",
       "updatedAt": "2026-06-17T18:40:24.583Z",
-      "order": 24,
+      "order": 29,
       "chapterId": "integrating-to-tak-server-i19y5KVtNV",
       "chapterLabel": "Integrating to TAK Server"
     },
@@ -5021,7 +5096,7 @@
       ],
       "path": "/content/en/pages/working-with-tak/how-the-federation-hub-works-kfYEsVehxZ.json",
       "updatedAt": "2026-06-17T19:13:33.578Z",
-      "order": 25,
+      "order": 30,
       "chapterId": "federation-hub-connecting-multiple-tak-servers-pfBog3Q9uI",
       "chapterLabel": "Federation Hub: connecting multiple TAK Servers"
     },
@@ -5036,7 +5111,7 @@
       ],
       "path": "/content/en/pages/working-with-tak/install-run-the-federation-hub-Qq2V1k9VZ2.json",
       "updatedAt": "2026-06-17T19:13:33.958Z",
-      "order": 26,
+      "order": 31,
       "chapterId": "federation-hub-connecting-multiple-tak-servers-pfBog3Q9uI",
       "chapterLabel": "Federation Hub: connecting multiple TAK Servers"
     },
@@ -5051,7 +5126,7 @@
       ],
       "path": "/content/en/pages/working-with-tak/establish-trust-share-cas-sUaHBtGVfZ.json",
       "updatedAt": "2026-06-17T19:13:34.319Z",
-      "order": 27,
+      "order": 32,
       "chapterId": "federation-hub-connecting-multiple-tak-servers-pfBog3Q9uI",
       "chapterLabel": "Federation Hub: connecting multiple TAK Servers"
     },
@@ -5066,7 +5141,7 @@
       ],
       "path": "/content/en/pages/working-with-tak/define-the-federation-policy-uaAcGzSU3h.json",
       "updatedAt": "2026-06-17T19:13:34.713Z",
-      "order": 28,
+      "order": 33,
       "chapterId": "federation-hub-connecting-multiple-tak-servers-pfBog3Q9uI",
       "chapterLabel": "Federation Hub: connecting multiple TAK Servers"
     },
@@ -5081,7 +5156,7 @@
       ],
       "path": "/content/en/pages/working-with-tak/control-what-crosses-group-filtering-DKvIW89bZD.json",
       "updatedAt": "2026-06-17T19:13:34.997Z",
-      "order": 29,
+      "order": 34,
       "chapterId": "federation-hub-connecting-multiple-tak-servers-pfBog3Q9uI",
       "chapterLabel": "Federation Hub: connecting multiple TAK Servers"
     },
@@ -5096,7 +5171,7 @@
       ],
       "path": "/content/en/pages/working-with-tak/connect-a-deploy-app-tak-server-nTjT0SDPzw.json",
       "updatedAt": "2026-06-17T19:13:35.688Z",
-      "order": 30,
+      "order": 35,
       "chapterId": "federation-hub-connecting-multiple-tak-servers-pfBog3Q9uI",
       "chapterLabel": "Federation Hub: connecting multiple TAK Servers"
     },
@@ -5111,7 +5186,7 @@
       ],
       "path": "/content/en/pages/working-with-tak/operate-troubleshoot-B5LoRqtcMh.json",
       "updatedAt": "2026-06-17T19:13:36.458Z",
-      "order": 31,
+      "order": 36,
       "chapterId": "federation-hub-connecting-multiple-tak-servers-pfBog3Q9uI",
       "chapterLabel": "Federation Hub: connecting multiple TAK Servers"
     },
@@ -5126,7 +5201,7 @@
       ],
       "path": "/content/en/pages/working-with-tak/references-jcEIPLZieK.json",
       "updatedAt": "2026-06-26T14:06:02.603Z",
-      "order": 32,
+      "order": 37,
       "chapterId": "federation-hub-connecting-multiple-tak-servers-pfBog3Q9uI",
       "chapterLabel": "Federation Hub: connecting multiple TAK Servers"
     },
@@ -5141,7 +5216,7 @@
       ],
       "path": "/content/en/pages/working-with-tak/the-iac-trust-model-oJJLybgejE.json",
       "updatedAt": "2026-06-19T14:18:51.383Z",
-      "order": 33,
+      "order": 38,
       "chapterId": "wire-up-deploy-app-tak-servers-via-a-federation-hub-iac-7b653SFdyn",
       "chapterLabel": "Wire up Deploy App TAK Servers via a Federation Hub"
     },
@@ -5156,7 +5231,7 @@
       ],
       "path": "/content/en/pages/working-with-tak/the-tak-server-side-bCErH3lFoW.json",
       "updatedAt": "2026-06-19T14:18:51.772Z",
-      "order": 34,
+      "order": 39,
       "chapterId": "wire-up-deploy-app-tak-servers-via-a-federation-hub-iac-7b653SFdyn",
       "chapterLabel": "Wire up Deploy App TAK Servers via a Federation Hub"
     },
@@ -5171,7 +5246,7 @@
       ],
       "path": "/content/en/pages/working-with-tak/keycloak-groups-as-code-KGceqCKPVN.json",
       "updatedAt": "2026-06-19T14:18:52.180Z",
-      "order": 35,
+      "order": 40,
       "chapterId": "wire-up-deploy-app-tak-servers-via-a-federation-hub-iac-7b653SFdyn",
       "chapterLabel": "Wire up Deploy App TAK Servers via a Federation Hub"
     },
@@ -5186,7 +5261,7 @@
       ],
       "path": "/content/en/pages/working-with-tak/deploy-the-federation-hub-as-iac-pyaoAuGHbr.json",
       "updatedAt": "2026-06-19T14:18:52.662Z",
-      "order": 36,
+      "order": 41,
       "chapterId": "wire-up-deploy-app-tak-servers-via-a-federation-hub-iac-7b653SFdyn",
       "chapterLabel": "Wire up Deploy App TAK Servers via a Federation Hub"
     },
@@ -5201,7 +5276,7 @@
       ],
       "path": "/content/en/pages/working-with-tak/the-federation-policy-as-code-iza8fDoAU8.json",
       "updatedAt": "2026-06-19T14:18:52.992Z",
-      "order": 37,
+      "order": 42,
       "chapterId": "wire-up-deploy-app-tak-servers-via-a-federation-hub-iac-7b653SFdyn",
       "chapterLabel": "Wire up Deploy App TAK Servers via a Federation Hub"
     },
@@ -5216,7 +5291,7 @@
       ],
       "path": "/content/en/pages/working-with-tak/bring-up-sequence-verification-ydtDk00K2h.json",
       "updatedAt": "2026-06-19T14:18:53.352Z",
-      "order": 38,
+      "order": 43,
       "chapterId": "wire-up-deploy-app-tak-servers-via-a-federation-hub-iac-7b653SFdyn",
       "chapterLabel": "Wire up Deploy App TAK Servers via a Federation Hub"
     },
@@ -5231,7 +5306,7 @@
       ],
       "path": "/content/en/pages/working-with-tak/references-KdqJO1rcQ0.json",
       "updatedAt": "2026-06-26T14:06:01.982Z",
-      "order": 39,
+      "order": 44,
       "chapterId": "wire-up-deploy-app-tak-servers-via-a-federation-hub-iac-7b653SFdyn",
       "chapterLabel": "Wire up Deploy App TAK Servers via a Federation Hub"
     },
@@ -5246,7 +5321,7 @@
       ],
       "path": "/content/en/pages/working-with-tak/hub-to-hub-trust-and-connection-VIV7jDwrDx.json",
       "updatedAt": "2026-06-19T14:18:54.666Z",
-      "order": 40,
+      "order": 45,
       "chapterId": "wire-up-two-federation-hubs-iac-fzNcHRftqI",
       "chapterLabel": "Wire up two Federation Hubs"
     },
@@ -5261,7 +5336,7 @@
       ],
       "path": "/content/en/pages/working-with-tak/policy-and-group-filtering-across-hubs-MvZAotZIQl.json",
       "updatedAt": "2026-06-19T14:18:55.106Z",
-      "order": 41,
+      "order": 46,
       "chapterId": "wire-up-two-federation-hubs-iac-fzNcHRftqI",
       "chapterLabel": "Wire up two Federation Hubs"
     },
@@ -5276,7 +5351,7 @@
       ],
       "path": "/content/en/pages/working-with-tak/bring-up-and-verification-4g1mSzoPjs.json",
       "updatedAt": "2026-06-19T14:18:55.519Z",
-      "order": 42,
+      "order": 47,
       "chapterId": "wire-up-two-federation-hubs-iac-fzNcHRftqI",
       "chapterLabel": "Wire up two Federation Hubs"
     },
@@ -5291,7 +5366,7 @@
       ],
       "path": "/content/en/pages/working-with-tak/scaling-to-many-groups-5hLiku0O4u.json",
       "updatedAt": "2026-06-19T14:18:55.781Z",
-      "order": 43,
+      "order": 48,
       "chapterId": "wire-up-two-federation-hubs-iac-fzNcHRftqI",
       "chapterLabel": "Wire up two Federation Hubs"
     },
@@ -5306,7 +5381,7 @@
       ],
       "path": "/content/en/pages/working-with-tak/references-n9W8lB6Gpz.json",
       "updatedAt": "2026-06-26T14:06:03.214Z",
-      "order": 44,
+      "order": 49,
       "chapterId": "wire-up-two-federation-hubs-iac-fzNcHRftqI",
       "chapterLabel": "Wire up two Federation Hubs"
     },

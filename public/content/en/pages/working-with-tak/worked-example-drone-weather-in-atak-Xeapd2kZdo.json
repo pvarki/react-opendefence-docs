@@ -1,0 +1,167 @@
+{
+  "schemaVersion": 1,
+  "id": "ed86b392-3a29-4c43-84d1-7dc119e68ac3",
+  "slug": "worked-example-drone-weather-in-atak-Xeapd2kZdo",
+  "collection": "working-with-tak",
+  "locale": "en",
+  "title": "Worked example: drone weather in ATAK",
+  "breadcrumb": [
+    "Bringing your data to TAK",
+    "Worked example: drone weather in ATAK"
+  ],
+  "createdAt": "2026-09-01T09:30:41.935Z",
+  "updatedAt": "2026-09-01T09:30:41.935Z",
+  "headings": [
+    {
+      "depth": 2,
+      "text": "What it is",
+      "id": "what-it-is"
+    },
+    {
+      "depth": 2,
+      "text": "The pipeline",
+      "id": "the-pipeline"
+    },
+    {
+      "depth": 2,
+      "text": "What the operator sees",
+      "id": "what-the-operator-sees"
+    },
+    {
+      "depth": 2,
+      "text": "Route weather",
+      "id": "route-weather"
+    },
+    {
+      "depth": 2,
+      "text": "Swapping in real data",
+      "id": "swapping-in-real-data"
+    },
+    {
+      "depth": 2,
+      "text": "Honest rough edges",
+      "id": "honest-rough-edges"
+    },
+    {
+      "depth": 2,
+      "text": "Related pages",
+      "id": "related-pages"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<blockquote>\n<p>⚠️ <strong>Closed alpha — provisional docs.</strong> The opendefense-platform is under breaking development; verify against the code before relying on details.</p>\n</blockquote>\n<p>This page walks the chapter's demonstrator end to end: external weather data flowing into the deployed TAK server and rendering natively in ATAK — <strong>no plugin, no fork, stdlib Python only</strong>. The result is a translucent go/no-go heatmap on the real 1 km MGRS grid, hourly planning-step layers, tap-any-square point forecasts, and ETA-aware route weather. The mechanics behind each stage have their own pages in this chapter — ATAK import behaviours, Publishing with the Marti API, Importing a data source programmatically, and Defining standard data sources — this page just runs the whole distance once so you can see the shape of it. Full source: <a href=\"https://github.com/fdfinfohack/opendefense-platform/tree/feat/dronewx-demo/scripts/dronewx\" target=\"_blank\" rel=\"noopener noreferrer\"><code>scripts/dronewx</code></a> on branch <code>feat/dronewx-demo</code>.</p>\n<h2 id=\"what-it-is\"><a href=\"#what-it-is\">What it is</a></h2>\n<p>A <strong>1 km go/no-go heatmap</strong> for a light quadcopter (&#x3C;2 kg class) over a 24×24 km AOI around Helsinki — 576 cells, one forecast point per cell, refreshed on a cron. Each cell is a real <strong>1 km MGRS square</strong>: cell edges sit on whole-km UTM eastings/northings, so the grid matches what ATAK's own coordinate display calls <code>35V LG 84 72</code>. The WGS84↔UTM conversion (Krueger series) plus the MGRS 100 km letter scheme is ~60 lines of stdlib math in <code>dronewx.py</code> — no pyproj, no GDAL, no PIL.</p>\n<p>Banding is deliberately crude — three gust thresholds and two weather bumps, not a flight-physics model: <strong>green</strong> &#x3C;8, <strong>yellow</strong> &#x3C;12, <strong>orange</strong> &#x3C;16, <strong>red</strong> ≥16 m/s gust; bumped one band by rain >0.5 mm/h or temperature &#x3C;−10 °C, straight to red by rain >4 mm/h or &#x3C;−20 °C. It is a placeholder on purpose — see <a href=\"#swapping-in-real-data\">Swapping in real data</a>.</p>\n<h2 id=\"the-pipeline\"><a href=\"#the-pipeline\">The pipeline</a></h2>\n<p>Four small pieces, each replaceable on its own:</p>"
+    },
+    {
+      "type": "mermaid",
+      "code": "flowchart LR\n    om[\"Open-Meteo<br/>MET Nordic, 1 km native\"]\n    dw[\"dronewx.py<br/>fetch_grid() + band()\"]\n    cells[\"cells.kmz<br/>576 tappable polygons\"]\n    rast[\"gust_h00/03/06/12.kmz<br/>one GroundOverlay each\"]\n    pkg[\"package.py<br/>dronewx-pkg.zip\"]\n    up[\"upload.sh<br/>3 Marti calls\"]\n    tak[\"TAK mission dronewx\"]\n    atak[\"ATAK<br/>Available Packages\"]\n    om --> dw\n    dw --> cells --> pkg\n    dw --> rast --> pkg\n    pkg --> up --> tak --> atak"
+    },
+    {
+      "type": "html",
+      "html": "<p><strong>Fetch.</strong> <code>fetch_grid()</code> asks Open-Meteo for <code>models=metno_nordic</code> (MET Nordic — 1 km native resolution over Fennoscandia, so one point per km square is honest sampling, not interpolation theatre), batched ≤96 coordinates per request — more and the URI blows past the length cap with an HTTP 414.</p>\n<p><strong>Build.</strong> The output is deliberately split: <code>cells.kmz</code> carries only vector polygons, <code>gust_hXX.kmz</code> carries exactly <strong>one GroundOverlay each</strong>. This is the GRG trap: a KMZ mixing multiple GroundOverlays and Placemarks imports as a <strong>GRG</strong> (georeferenced graphic) — rasters mosaicked into one image, every placemark <strong>silently dropped</strong>. Each raster pixel is mapped lat/lon → UTM → cell, so the axis-aligned PNG still lands exactly on the MGRS grid. The polygons carry no IconStyle or LabelStyle at all — include either (even at scale 0) and every cell grows a white centre dot.</p>\n<p><strong>Package.</strong> <code>package.py</code> wraps everything in one Mission Package: <code>MANIFEST/manifest.xml</code> (MissionPackageManifest v2, <code>onReceiveImport=true</code>, uid a stable <code>uuid5</code> so every refresh is the same package). This step is not optional — upload a raw KMZ as a server package and ATAK unzips it file-by-file and asks the operator to <em>\"Select a location on the map to place: h00.png\"</em>.</p>\n<p><strong>Publish.</strong> <code>upload.sh</code> pulls the <code>tak-server-admin</code> client certificate straight from the cluster Secret (namespace <code>app-tak</code>) and makes three Marti REST calls:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#E06C75\">HASH</span><span style=\"color:#56B6C2\">=</span><span style=\"color:#98C379\">\"$(</span><span style=\"color:#61AFEF\">shasum</span><span style=\"color:#D19A66\"> -a</span><span style=\"color:#D19A66\"> 256</span><span style=\"color:#98C379\"> \"</span><span style=\"color:#E06C75\">$FILE</span><span style=\"color:#98C379\">\" </span><span style=\"color:#ABB2BF\">|</span><span style=\"color:#61AFEF\"> cut</span><span style=\"color:#D19A66\"> -d</span><span style=\"color:#98C379\">' ' </span><span style=\"color:#D19A66\">-f1</span><span style=\"color:#98C379\">)\"</span></span>\n<span class=\"line\"><span style=\"color:#7F848E;font-style:italic\"># 1. create the mission — 201 first time, 409 after, both fine</span></span>\n<span class=\"line\"><span style=\"color:#61AFEF\">curl</span><span style=\"color:#98C379\"> ...</span><span style=\"color:#D19A66\"> -X</span><span style=\"color:#98C379\"> PUT</span><span style=\"color:#98C379\"> \"https://</span><span style=\"color:#E06C75\">$HOST</span><span style=\"color:#98C379\">:8443/Marti/api/missions/dronewx?creatorUid=dronewx&#x26;defaultRole=MISSION_SUBSCRIBER\"</span></span>\n<span class=\"line\"><span style=\"color:#7F848E;font-style:italic\"># 2. upload to Enterprise Sync — dedupes on hash</span></span>\n<span class=\"line\"><span style=\"color:#61AFEF\">curl</span><span style=\"color:#98C379\"> ...</span><span style=\"color:#D19A66\"> -F</span><span style=\"color:#98C379\"> \"assetfile=@</span><span style=\"color:#E06C75\">$FILE</span><span style=\"color:#98C379\">\"</span><span style=\"color:#98C379\"> \"https://</span><span style=\"color:#E06C75\">$HOST</span><span style=\"color:#98C379\">:8443/Marti/sync/missionupload?hash=</span><span style=\"color:#E06C75\">$HASH</span><span style=\"color:#98C379\">&#x26;filename=</span><span style=\"color:#E06C75\">$FILE</span><span style=\"color:#98C379\">&#x26;creatorUid=dronewx\"</span></span>\n<span class=\"line\"><span style=\"color:#7F848E;font-style:italic\"># 3. attach to the mission</span></span>\n<span class=\"line\"><span style=\"color:#61AFEF\">curl</span><span style=\"color:#98C379\"> ...</span><span style=\"color:#D19A66\"> -X</span><span style=\"color:#98C379\"> PUT</span><span style=\"color:#D19A66\"> -H</span><span style=\"color:#98C379\"> \"Content-Type: application/json\"</span><span style=\"color:#D19A66\"> -d</span><span style=\"color:#98C379\"> \"{</span><span style=\"color:#56B6C2\">\\\"</span><span style=\"color:#98C379\">hashes</span><span style=\"color:#56B6C2\">\\\"</span><span style=\"color:#98C379\">:[</span><span style=\"color:#56B6C2\">\\\"</span><span style=\"color:#E06C75\">$HASH</span><span style=\"color:#56B6C2\">\\\"</span><span style=\"color:#98C379\">]}\"</span><span style=\"color:#56B6C2\"> \\</span></span>\n<span class=\"line\"><span style=\"color:#98C379\">  \"https://</span><span style=\"color:#E06C75\">$HOST</span><span style=\"color:#98C379\">:8443/Marti/api/missions/dronewx/contents?creatorUid=dronewx\"</span></span></code></pre>",
+      "lang": "bash"
+    },
+    {
+      "type": "html",
+      "html": "<p>The whole thing is idempotent, so it doubles as the refresh path. Note that every <code>missionupload</code> is listed as <code>Tool: public</code> in <code>/Marti/sync/search</code> — clients see it under <strong>Available Packages</strong> even without subscribing to the mission.</p>\n<p><strong>Pull.</strong> On an enrolled ATAK client (see <a href=\"/en/working-with-tak/enrolling-getting-a-client-certificate-vze3g7Eshz\">Enrolling: getting a client certificate</a>): Data Packages tool → download icon → pick the server → <code>dronewx-pkg.zip</code> → Download. Files land as <code>atak/overlays/cells.kmz</code> and <code>atak/grg/gust_h*.kmz</code> — verified on ATAK-CIV 5.7.0.6 against TAK Server 5.8.69-RELEASE.</p>\n<h2 id=\"what-the-operator-sees\"><a href=\"#what-the-operator-sees\">What the operator sees</a></h2>"
+    },
+    {
+      "type": "image",
+      "src": "/content/images/en/attachments/1e67354d1342347b.webp",
+      "alt": "the go/no-go grid aligned to the MGRS kilometer grid",
+      "width": 2400,
+      "height": 1080
+    },
+    {
+      "type": "html",
+      "html": "<p>The package imports as one overlay group — <code>cells.kmz</code> plus the hour rasters, each with its own eye toggle. The fills are translucent by design so the basemap stays readable underneath.</p>"
+    },
+    {
+      "type": "image",
+      "src": "/content/images/en/attachments/f06f2a6740b8b6d2.webp",
+      "alt": "tap deconfliction lists squares by MGRS reference",
+      "width": 2400,
+      "height": 1080
+    },
+    {
+      "type": "html",
+      "html": "<p>Tapping where several polygons fall within tap radius opens ATAK's deconfliction list — each entry is the cell's MGRS reference, which is the whole point of aligning the grid: the operator reads <code>35V LG 82 68</code> off the list and it <em>is</em> the square on their map.</p>"
+    },
+    {
+      "type": "image",
+      "src": "/content/images/en/attachments/f35eea65ccbc076d.webp",
+      "alt": "a square's hourly forecast in Details",
+      "width": 2400,
+      "height": 1080
+    },
+    {
+      "type": "html",
+      "html": "<p>Radial menu → bottom icon opens Details: plain-text hourly rows — <code>00:00Z gust 11  wind 5 ↑  RH 95%  17C  rain 2.0  [orange]</code>.</p>"
+    },
+    {
+      "type": "image",
+      "src": "/content/images/en/attachments/39f58976e76c9ac2.webp",
+      "alt": "the full 24 h table under METADATA, route corridor visible behind",
+      "width": 2400,
+      "height": 1080
+    },
+    {
+      "type": "html",
+      "html": "<p>The full 24 h table is readable under METADATA. This is the hourly lookup mechanism — a tap, not a slider.</p>"
+    },
+    {
+      "type": "image",
+      "src": "/content/images/en/attachments/20754b745326b501.webp",
+      "alt": "planning-step rasters as toggleable layers",
+      "width": 2400,
+      "height": 1080
+    },
+    {
+      "type": "html",
+      "html": "<p>The planning steps (+00h/+03h/+06h/+12h) are four separate rasters, individually toggleable in Overlay Manager.</p>"
+    },
+    {
+      "type": "image",
+      "src": "/content/images/en/attachments/9fae071c7718b3d7.webp",
+      "alt": "the wide view over the Helsinki region",
+      "width": 2400,
+      "height": 1080
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"route-weather\"><a href=\"#route-weather\">Route weather</a></h2>\n<p><code>routewx.py</code> closes the loop: plan a route in ATAK, export it as KML, then</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#61AFEF\">python3</span><span style=\"color:#98C379\"> routewx.py</span><span style=\"color:#98C379\"> route.kml</span><span style=\"color:#98C379\"> 2026-08-31T16:00+00:00</span><span style=\"color:#D19A66\"> 12</span></span>\n<span class=\"line\"><span style=\"color:#7F848E;font-style:italic\"># routewx.kmz: 4 legs, 13.5 km, 19 min, takeoff 16:00Z, worst band: orange</span></span></code></pre>",
+      "lang": "bash"
+    },
+    {
+      "type": "html",
+      "html": "<p>Each leg gets its ETA from cumulative distance / speed and samples the <strong>same forecast at that hour</strong> — the weather you will actually meet, not the weather right now. Legs render as wide colored LineStrings; each carries <code>ETA 16:04Z (fc 16:00Z): gust 10 m/s, wind 6 m/s ↗, RH 96%, 18 C, rain 0.0 mm</code>. One caveat: the topmost fill wins the tap, so to tap a corridor leg under the weather cells, <strong>hide the cells layer first</strong>.</p>\n<h2 id=\"swapping-in-real-data\"><a href=\"#swapping-in-real-data\">Swapping in real data</a></h2>\n<p>A collaborator replaces exactly two functions in <code>dronewx.py</code> and keeps everything else:</p>\n<ul>\n<li><code>**fetch_grid()**</code> — must return one dict per cell centre (row-major over the grid) with hourly arrays under <code>[\"hourly\"][&#x3C;variable>][h]</code> for the six variables the pipeline reads (gust, wind speed/direction, humidity, temperature, precipitation). Where the numbers come from is your business.</li>\n<li><code>**band()**</code> — the airframe envelope:</li>\n</ul>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#C678DD\">def</span><span style=\"color:#61AFEF\"> band</span><span style=\"color:#ABB2BF\">(</span><span style=\"color:#D19A66;font-style:italic\">gust</span><span style=\"color:#ABB2BF\">, </span><span style=\"color:#D19A66;font-style:italic\">precip</span><span style=\"color:#ABB2BF\">=</span><span style=\"color:#D19A66\">0.0</span><span style=\"color:#ABB2BF\">, </span><span style=\"color:#D19A66;font-style:italic\">temp</span><span style=\"color:#ABB2BF\">=</span><span style=\"color:#D19A66\">15.0</span><span style=\"color:#ABB2BF\">):</span></span>\n<span class=\"line\"><span style=\"color:#98C379\">    \"\"\"Go/no-go band for a &#x3C;2 kg quadcopter.\"\"\"</span></span>\n<span class=\"line\"><span style=\"color:#ABB2BF\">    i </span><span style=\"color:#56B6C2\">=</span><span style=\"color:#ABB2BF\"> (gust </span><span style=\"color:#56B6C2\">>=</span><span style=\"color:#D19A66\"> 8</span><span style=\"color:#ABB2BF\">) </span><span style=\"color:#56B6C2\">+</span><span style=\"color:#ABB2BF\"> (gust </span><span style=\"color:#56B6C2\">>=</span><span style=\"color:#D19A66\"> 12</span><span style=\"color:#ABB2BF\">) </span><span style=\"color:#56B6C2\">+</span><span style=\"color:#ABB2BF\"> (gust </span><span style=\"color:#56B6C2\">>=</span><span style=\"color:#D19A66\"> 16</span><span style=\"color:#ABB2BF\">)   </span><span style=\"color:#7F848E;font-style:italic\"># wind is the primary factor</span></span>\n<span class=\"line\"><span style=\"color:#C678DD\">    if</span><span style=\"color:#ABB2BF\"> precip </span><span style=\"color:#56B6C2\">></span><span style=\"color:#D19A66\"> 4</span><span style=\"color:#C678DD\"> or</span><span style=\"color:#ABB2BF\"> temp </span><span style=\"color:#56B6C2\">&#x3C;</span><span style=\"color:#56B6C2\"> -</span><span style=\"color:#D19A66\">20</span><span style=\"color:#ABB2BF\">:</span></span>\n<span class=\"line\"><span style=\"color:#ABB2BF\">        i </span><span style=\"color:#56B6C2\">=</span><span style=\"color:#D19A66\"> 3</span></span>\n<span class=\"line\"><span style=\"color:#C678DD\">    elif</span><span style=\"color:#ABB2BF\"> precip </span><span style=\"color:#56B6C2\">></span><span style=\"color:#D19A66\"> 0.5</span><span style=\"color:#C678DD\"> or</span><span style=\"color:#ABB2BF\"> temp </span><span style=\"color:#56B6C2\">&#x3C;</span><span style=\"color:#56B6C2\"> -</span><span style=\"color:#D19A66\">10</span><span style=\"color:#ABB2BF\">:</span></span>\n<span class=\"line\"><span style=\"color:#ABB2BF\">        i </span><span style=\"color:#56B6C2\">=</span><span style=\"color:#56B6C2\"> min</span><span style=\"color:#ABB2BF\">(i </span><span style=\"color:#56B6C2\">+</span><span style=\"color:#D19A66\"> 1</span><span style=\"color:#ABB2BF\">, </span><span style=\"color:#D19A66\">3</span><span style=\"color:#ABB2BF\">)</span></span>\n<span class=\"line\"><span style=\"color:#C678DD\">    return</span><span style=\"color:#D19A66\"> BANDS</span><span style=\"color:#ABB2BF\">[i]</span></span></code></pre>",
+      "lang": "python"
+    },
+    {
+      "type": "html",
+      "html": "<p>Anything that maps a cell-hour to <code>green</code>/<code>yellow</code>/<code>orange</code>/<code>red</code> works. The grid geometry, KMZ writers, packaging and publishing don't care. The refresh loop is a plain cron — idempotency in <code>upload.sh</code> makes re-publishing free:</p>"
+    },
+    {
+      "type": "code",
+      "html": "<pre class=\"shiki one-dark-pro\" style=\"background-color:#282c34;color:#abb2bf\" tabindex=\"0\"><code><span class=\"line\"><span style=\"color:#ABB2BF\">*/30 * * * *  cd .../scripts/dronewx &#x26;&#x26; </span><span style=\"color:#61AFEF\">python3</span><span style=\"color:#98C379\"> dronewx.py</span><span style=\"color:#56B6C2\"> \\</span></span>\n<span class=\"line\"><span style=\"color:#ABB2BF\">  &#x26;&#x26; </span><span style=\"color:#61AFEF\">python3</span><span style=\"color:#98C379\"> package.py</span><span style=\"color:#98C379\"> cells.kmz</span><span style=\"color:#98C379\"> gust_h</span><span style=\"color:#E5C07B\">*</span><span style=\"color:#98C379\">.kmz</span><span style=\"color:#ABB2BF\"> &#x26;&#x26; </span><span style=\"color:#61AFEF\">./upload.sh</span><span style=\"color:#98C379\"> dronewx-pkg.zip</span></span></code></pre>",
+      "lang": "bash"
+    },
+    {
+      "type": "html",
+      "html": "<h2 id=\"honest-rough-edges\"><a href=\"#honest-rough-edges\">Honest rough edges</a></h2>\n<ul>\n<li><strong>No time slider.</strong> Core ATAK has no timeline/playback at all (verified against the full feature list; KML <code>TimeSpan</code> changes nothing). Hour steps are separate toggleable layers plus the per-cell table — native, but not an animation.</li>\n<li><strong>HTML is stripped</strong> from KML descriptions in Details — a <code>&#x3C;table></code> collapses to a run-on string. The \"table\" you see is plain text joined with <code>&#x3C;br/></code>, the only markup that survives.</li>\n<li><strong>API-created inputs are not persisted.</strong> If you extend this to streaming CoT, <code>/Marti/api/inputs</code> POSTs are gone on pod restart — re-POST each run (a 500 \"Input name already exists\" is fine). See <a href=\"/en/working-with-tak/pushing-data-to-tak-server-WDTB0ov6LS\">Pushing data to TAK Server</a>.</li>\n<li><strong>TAK is slow after a restart</strong> — the Marti API takes minutes to come up after the <code>tak-server</code> pod (namespace <code>app-tak</code>) restarts, and takrmapi client-zip requests 500 with a TimeoutError until it does. Don't debug your script during that window.</li>\n</ul>\n<h2 id=\"related-pages\"><a href=\"#related-pages\">Related pages</a></h2>\n<ul>\n<li><a href=\"/en/working-with-tak/pushing-data-to-tak-server-WDTB0ov6LS\">Pushing data to TAK Server</a> — the Marti write paths this demo uses, in depth</li>\n<li><a href=\"/en/working-with-tak/the-marti-api-the-spec-zWa3vFfeKt\">The Marti API: the spec</a> — endpoint reference for missions and Enterprise Sync</li>\n<li><a href=\"/en/working-with-tak/enrolling-getting-a-client-certificate-vze3g7Eshz\">Enrolling: getting a client certificate</a> — how the demo ATAK client got its identity</li>\n<li><a href=\"/en/working-with-tak/how-atak-plugins-work-GtuYZlJSnX\">How ATAK plugins work</a> — what the plugin route buys you when native rendering isn't enough</li>\n</ul>"
+    }
+  ]
+}

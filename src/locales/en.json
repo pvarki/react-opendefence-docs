@@ -200,6 +200,8 @@
   "takShelf": {
     "platformTitle": "Platform Architecture",
     "platformDesc": "How TAK runs on the OpenDefence Kubernetes platform.",
+    "bringDataTitle": "Bringing your data to TAK",
+    "bringDataDesc": "Show your data in ATAK: ad hoc, programmatic, and standard sources.",
     "pluginDevTitle": "Plugin Development",
     "pluginDevDesc": "Build ATAK plugins in Java and Kotlin.",
     "integratingTitle": "Integrating to TAK Server",
