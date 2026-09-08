@@ -1,47 +1,88 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, type ReactNode } from "react";
 import { Link } from "@tanstack/react-router";
-import { ChevronDown, ChevronLeft } from "lucide-react";
+import { useTranslation } from "react-i18next";
+import { ChevronDown } from "lucide-react";
 import type {
   Locale,
   LocaleManifest,
-  ManifestCollection,
   SidebarConfig,
   SidebarItem,
 } from "@shared/content-schema";
 import { loadSidebar } from "@/lib/content/loader";
-import { devBookGroups } from "@/lib/devGroups";
+import {
+  devNavSections,
+  loadDevRefs,
+  type DevRef,
+  type DevRefsByBook,
+} from "@/lib/devNav";
 import {
   filterSidebarByClient,
   filterSidebarByPlatform,
+  resolveClient,
 } from "@/lib/content/neighbors";
-import { usePlatform } from "@/lib/platform";
+import { useReadingView } from "@/lib/platform";
 import { cn } from "@/lib/utils";
 import { GuideIssuesLink } from "@/components/shell/GuideIssuesLink";
 
-interface SidebarNavProps {
+export interface SidebarProps {
   locale: string;
   /** Locale whose sidebar JSON to load (en when falling back). */
   contentLocale: Locale;
+  manifest: LocaleManifest;
   collection: string;
   currentSlug?: string;
-  /** Active client id for this book (filters client-tagged sections). */
-  clientId?: string;
+  onNavigate?: () => void;
+}
+
+function isDevBook(manifest: LocaleManifest, collection: string): boolean {
+  return (
+    manifest.collections.find((c) => c.slug === collection)?.section === "dev"
+  );
 }
 
 /**
- * Desktop book tree (current collection only — the shelf tabs switch books).
- * Groups collapse, but nesting never exceeds group > page by construction:
- * the sync pipeline flattens deeper Outline trees.
+ * Desktop book tree. A dev-section book gets the cross-book developer spine
+ * instead of its own tree, so the reader can jump between books.
  */
-export function SidebarNav({
+export function SidebarNav(props: SidebarProps) {
+  const { t } = useTranslation();
+  const meta = props.manifest.collections.find(
+    (c) => c.slug === props.collection,
+  );
+  const isDev = meta?.section === "dev";
+
+  return (
+    <aside className="hidden w-64 shrink-0 overflow-y-auto border-r border-sidebar-border bg-sidebar md:block">
+      <nav className="px-3 py-4">
+        <p className="px-2 pb-1 text-xs font-semibold tracking-wider text-muted-foreground uppercase">
+          {isDev ? t("devNav.title") : (meta?.label ?? props.collection)}
+        </p>
+        <GuideIssuesLink collection={props.collection} className="mb-2 px-2" />
+        <SidebarBody {...props} />
+      </nav>
+    </aside>
+  );
+}
+
+/** The tree itself, no aside chrome — desktop aside + mobile contents sheet. */
+export function SidebarBody(props: SidebarProps) {
+  return isDevBook(props.manifest, props.collection) ? (
+    <DevDocsNav {...props} />
+  ) : (
+    <BookNav {...props} />
+  );
+}
+
+function BookNav({
   locale,
   contentLocale,
+  manifest,
   collection,
   currentSlug,
-  clientId,
-}: SidebarNavProps) {
+  onNavigate,
+}: SidebarProps) {
+  const view = useReadingView();
   const [sidebar, setSidebar] = useState<SidebarConfig>();
-  const platform = usePlatform();
 
   useEffect(() => {
     let cancelled = false;
@@ -57,29 +98,20 @@ export function SidebarNav({
     };
   }, [contentLocale, collection]);
 
-  if (!sidebar)
-    return (
-      <aside className="hidden w-64 shrink-0 border-r border-sidebar-border bg-sidebar md:block" />
-    );
+  if (!sidebar) return null;
+  const client = resolveClient(manifest, collection, view);
 
   return (
-    <aside className="hidden w-64 shrink-0 overflow-y-auto border-r border-sidebar-border bg-sidebar md:block">
-      <nav className="px-3 py-4">
-        <p className="px-2 pb-1 text-xs font-semibold tracking-wider text-muted-foreground uppercase">
-          {sidebar.label}
-        </p>
-        <GuideIssuesLink collection={collection} className="mb-2 px-2" />
-        <SidebarItems
-          items={filterSidebarByPlatform(
-            filterSidebarByClient(sidebar.items, clientId),
-            platform,
-          )}
-          locale={locale}
-          collection={collection}
-          currentSlug={currentSlug}
-        />
-      </nav>
-    </aside>
+    <SidebarItems
+      items={filterSidebarByPlatform(
+        filterSidebarByClient(sidebar.items, client?.id),
+        view.platform,
+      )}
+      locale={locale}
+      collection={collection}
+      currentSlug={currentSlug}
+      onNavigate={onNavigate}
+    />
   );
 }
 
@@ -238,6 +270,9 @@ function SidebarGroup({
   currentSlug,
   onNavigate,
   defaultOpen = false,
+  href,
+  extra,
+  active,
 }: {
   item: SidebarItem;
   locale: string;
@@ -245,44 +280,82 @@ function SidebarGroup({
   currentSlug?: string;
   onNavigate?: () => void;
   defaultOpen?: boolean;
+  /** Splat to the group's own page; given, the label becomes a link. */
+  href?: string;
+  /** Rendered above the children (a book's API reference / changelog). */
+  extra?: ReactNode;
+  /** The reader is inside this group even when no child page is active. */
+  active?: boolean;
 }) {
-  const containsCurrent = !!item.children?.some((c) => c.slug === currentSlug);
-  const [open, setOpen] = useState(defaultOpen || containsCurrent);
+  const inside = containsSlug(item.children, currentSlug) || !!active;
+  const [open, setOpen] = useState(defaultOpen || inside);
 
   // Reveal the group when navigation lands inside it (swipe, search, link) —
   // the render-time "adjust state on prop change" pattern.
-  const [prevContains, setPrevContains] = useState(containsCurrent);
-  if (containsCurrent !== prevContains) {
-    setPrevContains(containsCurrent);
-    if (containsCurrent) setOpen(true);
+  const [prevInside, setPrevInside] = useState(inside);
+  if (inside !== prevInside) {
+    setPrevInside(inside);
+    if (inside) setOpen(true);
   }
+
+  const chevron = (
+    <ChevronDown
+      className={cn(
+        "size-4 shrink-0 text-muted-foreground transition-transform",
+        !open && "-rotate-90",
+      )}
+    />
+  );
 
   return (
     <li>
-      <button
-        type="button"
-        onClick={() => setOpen((o) => !o)}
-        aria-expanded={open}
-        className="flex w-full items-center justify-between gap-1 rounded-md px-2 py-1.5 text-left text-sm font-medium text-muted-foreground hover:bg-muted hover:text-foreground"
-      >
-        {item.label}
-        <ChevronDown
-          className={cn(
-            "size-4 shrink-0 text-muted-foreground transition-transform",
-            !open && "-rotate-90",
-          )}
-        />
-      </button>
-      {open && item.children && (
+      {href ? (
+        <div className="flex items-center">
+          <Link
+            to="/$locale/$"
+            params={{ locale, _splat: href }}
+            onClick={onNavigate}
+            className={cn(
+              "min-w-0 flex-1 rounded-md px-2 py-1.5 text-sm font-medium hover:bg-muted hover:text-foreground",
+              inside ? "text-foreground" : "text-muted-foreground",
+            )}
+          >
+            {item.label}
+          </Link>
+          <button
+            type="button"
+            onClick={() => setOpen((o) => !o)}
+            aria-expanded={open}
+            aria-label={item.label}
+            className="rounded-md p-1 hover:bg-muted"
+          >
+            {chevron}
+          </button>
+        </div>
+      ) : (
+        <button
+          type="button"
+          onClick={() => setOpen((o) => !o)}
+          aria-expanded={open}
+          className="flex w-full items-center justify-between gap-1 rounded-md px-2 py-1.5 text-left text-sm font-medium text-muted-foreground hover:bg-muted hover:text-foreground"
+        >
+          {item.label}
+          {chevron}
+        </button>
+      )}
+      {open && (!!extra || !!item.children?.length) && (
         <div className="mt-0.5 ml-2 border-l border-sidebar-border pl-2">
-          <SidebarItems
-            items={item.children}
-            locale={locale}
-            collection={collection}
-            currentSlug={currentSlug}
-            onNavigate={onNavigate}
-            defaultOpen={defaultOpen}
-          />
+          {extra}
+          {item.children && (
+            <SidebarItems
+              items={item.children}
+              locale={locale}
+              collection={collection}
+              currentSlug={currentSlug}
+              onNavigate={onNavigate}
+              defaultOpen={defaultOpen}
+            />
+          )}
         </div>
       )}
     </li>
@@ -290,92 +363,74 @@ function SidebarGroup({
 }
 
 // ---------------------------------------------------------------------------
-// Cross-book developer-docs nav: inside any "dev" section book, show the whole
-// developer-docs tree (every dev book collapsible, current one expanded) so the
-// reader can jump across books and back to the Develop shelf.
+// Cross-book developer-docs nav: the whole dev spine, so the reader can jump
+// across books and back to the Develop shelf.
 // ---------------------------------------------------------------------------
 
-interface DevDocsNavProps {
-  locale: string;
-  contentLocale: Locale;
-  manifest: LocaleManifest;
-  currentCollection: string;
-  currentSlug?: string;
-  /** Active client id for the CURRENT book (filters its platform sections). */
-  clientId?: string;
-  onNavigate?: () => void;
-}
+const NO_REFS: DevRefsByBook = new Map();
 
-function DevBookGroup({
-  book,
-  sidebar,
+const REF_LINK_CLASS =
+  "block rounded-md px-2 py-1.5 text-sm text-muted-foreground hover:bg-muted hover:text-foreground";
+
+function DevRefLink({
   locale,
-  isCurrent,
-  currentSlug,
-  clientId,
+  item,
   onNavigate,
 }: {
-  book: ManifestCollection;
-  sidebar?: SidebarConfig;
   locale: string;
-  isCurrent: boolean;
-  currentSlug?: string;
-  clientId?: string;
+  item: DevRef;
   onNavigate?: () => void;
 }) {
-  const [open, setOpen] = useState(isCurrent);
-  const items = sidebar ? filterSidebarByClient(sidebar.items, clientId) : [];
+  const { t } = useTranslation();
+  if (item.kind === "api") {
+    return (
+      <li>
+        <Link
+          to="/$locale/dev/api"
+          params={{ locale }}
+          search={{ s: item.id }}
+          onClick={onNavigate}
+          className={REF_LINK_CLASS}
+        >
+          {t("apiRef.title")}
+        </Link>
+      </li>
+    );
+  }
   return (
-    <div className="pt-1">
-      <button
-        type="button"
-        onClick={() => setOpen((o) => !o)}
-        aria-expanded={open}
-        className="flex w-full items-center justify-between rounded-md px-2 py-1.5 text-[11px] font-semibold tracking-widest text-primary uppercase hover:bg-muted"
+    <li>
+      <Link
+        to="/$locale/dev/releases"
+        params={{ locale }}
+        search={{ c: item.id, tab: "changelog" as const }}
+        onClick={onNavigate}
+        className={REF_LINK_CLASS}
       >
-        <span className="truncate">{book.label}</span>
-        <ChevronDown
-          className={cn(
-            "size-3.5 shrink-0 transition-transform",
-            open ? "" : "-rotate-90",
-          )}
-        />
-      </button>
-      {open && items.length > 0 && (
-        <SidebarItems
-          items={items}
-          locale={locale}
-          collection={book.slug}
-          currentSlug={currentSlug}
-          onNavigate={onNavigate}
-        />
-      )}
-    </div>
+        {t("releases.changelog")}
+      </Link>
+    </li>
   );
 }
 
-/** The cross-book dev nav body (no chrome) — used by desktop + mobile. */
-export function DevDocsNavBody({
+function DevDocsNav({
   locale,
   contentLocale,
   manifest,
-  currentCollection,
+  collection,
   currentSlug,
-  clientId,
   onNavigate,
-}: DevDocsNavProps) {
-  const devBooks = manifest.collections
-    .filter((c) => c.section === "dev")
-    .slice()
-    .sort((a, b) => a.order - b.order);
+}: SidebarProps) {
+  const { t } = useTranslation();
+  const view = useReadingView();
   const [sidebars, setSidebars] = useState<Record<string, SidebarConfig>>({});
+  const [refs, setRefs] = useState<DevRefsByBook>(NO_REFS);
 
   useEffect(() => {
     let cancelled = false;
     const slugs = manifest.collections
       .filter((c) => c.section === "dev")
       .map((c) => c.slug);
-    Promise.all(
+    void Promise.all(
       slugs.map((slug) =>
         loadSidebar(contentLocale, slug).then(
           (sb) => [slug, sb] as const,
@@ -393,57 +448,74 @@ export function DevDocsNavBody({
     };
   }, [contentLocale, manifest]);
 
-  const groups = devBookGroups(devBooks);
-  const renderBook = (book: (typeof devBooks)[number]) => (
-    <DevBookGroup
-      key={book.slug}
-      book={book}
-      sidebar={sidebars[book.slug]}
-      locale={locale}
-      isCurrent={book.slug === currentCollection}
-      currentSlug={book.slug === currentCollection ? currentSlug : undefined}
-      clientId={book.slug === currentCollection ? clientId : undefined}
-      onNavigate={onNavigate}
-    />
-  );
+  useEffect(() => {
+    let cancelled = false;
+    void loadDevRefs().then((loaded) => {
+      if (!cancelled) setRefs(loaded);
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, []);
 
   return (
     <div>
-      <Link
-        to="/$locale/dev"
-        params={{ locale }}
-        onClick={onNavigate}
-        className="mb-1 flex items-center gap-1.5 rounded-md px-2 py-1.5 text-xs font-medium text-muted-foreground hover:text-foreground"
-      >
-        <ChevronLeft className="size-3.5 shrink-0" />
-        All developer docs
-      </Link>
-      <p className="px-2 pt-2 pb-1 text-[10px] font-semibold tracking-widest text-muted-foreground uppercase">
-        Deploy App
-      </p>
-      {groups.deployApp.map(renderBook)}
-      {groups.integrations.length > 0 && (
-        <>
-          <p className="mt-3 border-t border-sidebar-border px-2 pt-3 pb-1 text-[10px] font-semibold tracking-widest text-muted-foreground uppercase">
-            Official integrations
+      {devNavSections(manifest, refs).map((section) => (
+        <div key={section.key} className="pt-3">
+          <p className="px-2 pb-1 text-[11px] font-semibold tracking-widest text-primary uppercase">
+            {t(section.labelKey)}
           </p>
-          {groups.integrations.map(renderBook)}
-        </>
-      )}
+          <ul className="space-y-0.5">
+            {section.books.map(({ book, refs: bookRefs }) => {
+              const sidebar = sidebars[book.slug];
+              const client = resolveClient(manifest, book.slug, view);
+              const items = sidebar
+                ? filterSidebarByPlatform(
+                    filterSidebarByClient(sidebar.items, client?.id),
+                    view.platform,
+                  )
+                : [];
+              return (
+                <SidebarGroup
+                  key={book.slug}
+                  item={{
+                    type: "group",
+                    id: book.slug,
+                    label: book.label,
+                    children: items,
+                  }}
+                  locale={locale}
+                  collection={book.slug}
+                  currentSlug={currentSlug}
+                  href={book.slug}
+                  active={book.slug === collection}
+                  extra={
+                    bookRefs.length > 0 ? (
+                      <ul
+                        className={cn(
+                          "space-y-0.5",
+                          items.length > 0 &&
+                            "mb-1 border-b border-sidebar-border pb-1",
+                        )}
+                      >
+                        {bookRefs.map((ref) => (
+                          <DevRefLink
+                            key={`${ref.kind}:${ref.id}`}
+                            locale={locale}
+                            item={ref}
+                            onNavigate={onNavigate}
+                          />
+                        ))}
+                      </ul>
+                    ) : undefined
+                  }
+                  onNavigate={onNavigate}
+                />
+              );
+            })}
+          </ul>
+        </div>
+      ))}
     </div>
-  );
-}
-
-/** Desktop aside variant of the cross-book dev nav. */
-export function DevDocsSidebar(props: DevDocsNavProps) {
-  return (
-    <aside className="hidden w-64 shrink-0 overflow-y-auto border-r border-sidebar-border bg-sidebar md:block">
-      <nav className="px-3 py-4">
-        <p className="px-2 pb-2 text-xs font-semibold tracking-wider text-foreground uppercase">
-          Developer docs
-        </p>
-        <DevDocsNavBody {...props} />
-      </nav>
-    </aside>
   );
 }

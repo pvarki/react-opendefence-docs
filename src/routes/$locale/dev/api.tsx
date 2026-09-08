@@ -33,6 +33,9 @@ const ApiReference = lazy(() =>
 );
 
 export const Route = createFileRoute("/$locale/dev/api")({
+  validateSearch: (search: Record<string, unknown>): { s?: string } => ({
+    s: typeof search.s === "string" ? search.s : undefined,
+  }),
   loader: async (): Promise<SpecManifest> => {
     try {
       const res = await fetch(withBase("/api-specs/manifest.json"));
@@ -57,7 +60,10 @@ function ApiReferencePage() {
       specUrl: `/api-specs/${source.id}/${v.specFile}`,
     })),
   );
-  const [selected, setSelected] = useState(all[0]?.key);
+  const { s } = Route.useSearch();
+  const [selected, setSelected] = useState(
+    all.find((spec) => spec.key.startsWith(`${s}/`))?.key ?? all[0]?.key,
+  );
   const active = all.find((s) => s.key === selected) ?? all[0];
 
   if (all.length === 0) {

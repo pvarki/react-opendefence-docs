@@ -189,6 +189,14 @@
     "descGuides": "rasenmaeher-api & integration APIs (OpenAPI)",
     "descDev": "Core rmapi & product integration APIs (OpenAPI)"
   },
+  "devNav": {
+    "title": "Developer docs",
+    "start": "Start here",
+    "platform": "Platform",
+    "core": "Core",
+    "integrations": "Integrations",
+    "project": "Project"
+  },
   "devShelf": {
     "introduction": "Introduction",
     "architecture": "Architecture",

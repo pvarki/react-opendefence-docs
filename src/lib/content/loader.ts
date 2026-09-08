@@ -103,14 +103,25 @@ export function loadPage(path: string): Promise<PageDoc> {
   return cached;
 }
 
+const sidebarCache = new Map<string, Promise<SidebarConfig>>();
+
 export function loadSidebar(
   locale: Locale,
   collection: string,
 ): Promise<SidebarConfig> {
   const file = collection.replace(/\//g, "-");
-  return fetchJson(`/content/${locale}/sidebars/${file}.json`).then((data) =>
-    SidebarConfigSchema.parse(data),
-  );
+  const key = `${locale}/${file}`;
+  let cached = sidebarCache.get(key);
+  if (!cached) {
+    cached = fetchJson(`/content/${locale}/sidebars/${file}.json`)
+      .then((data) => SidebarConfigSchema.parse(data))
+      .catch((err: unknown) => {
+        sidebarCache.delete(key);
+        throw err;
+      });
+    sidebarCache.set(key, cached);
+  }
+  return cached;
 }
 
 export function loadTranslations(locale: Locale): Promise<TranslationsFile> {
