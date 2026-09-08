@@ -19,7 +19,11 @@ import { Kbd } from "@/components/ui/kbd";
 import { Button } from "@/components/ui/button";
 import { searchDocs, type SearchHit } from "@/lib/search/pagefind-client";
 
-/** Desktop search: header button + ⌘K command palette over pagefind. */
+const HOTKEY_LABEL = /mac|iphone|ipad|ipod/i.test(navigator.userAgent)
+  ? "⌘K"
+  : "⌃K";
+
+/** Desktop search: header button + command palette over pagefind. */
 export function CommandMenu() {
   const { t } = useTranslation();
   const navigate = useNavigate();
@@ -59,7 +63,7 @@ export function CommandMenu() {
       >
         <Search className="size-4" />
         {t("search.placeholder")}
-        <Kbd>⌘K</Kbd>
+        <Kbd>{HOTKEY_LABEL}</Kbd>
       </Button>
       <Dialog open={open} onOpenChange={setOpen}>
         <DialogContent className="overflow-hidden p-0" showCloseButton={false}>

@@ -154,6 +154,7 @@ function ApiView({ source }: { source?: SpecSource }) {
               hideTestRequestButton: true,
               // Scalar shows a Configure/Share toolbar on localhost; never here.
               showDeveloperTools: "never",
+              searchHotKey: "i",
             }}
           />
         </Suspense>
