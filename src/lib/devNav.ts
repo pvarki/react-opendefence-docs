@@ -7,7 +7,7 @@ import { withBase } from "@/lib/base";
 
 /** The developer-docs spine, shared by the sidebar, the shelf and the sheets. */
 
-export type DevSectionKey =
+type DevSectionKey =
   | "start"
   | "platform"
   | "core"
@@ -55,7 +55,7 @@ export interface DevRef {
 
 export type DevRefsByBook = ReadonlyMap<string, DevRef[]>;
 
-export interface DevNavBook {
+interface DevNavBook {
   book: ManifestCollection;
   refs: DevRef[];
 }
