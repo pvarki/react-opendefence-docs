@@ -1,10 +1,9 @@
 import { Fragment, useEffect, useState } from "react";
 import { Link, useRouterState } from "@tanstack/react-router";
 import { useTranslation } from "react-i18next";
-import { Braces, Tag } from "lucide-react";
 import type { Locale, LocaleManifest } from "@shared/content-schema";
 import { loadManifest } from "@/lib/content/loader";
-import { devBookGroups } from "@/lib/devGroups";
+import { devNavSections } from "@/lib/devNav";
 import { siteSections } from "@/lib/siteSections";
 import { stripBase } from "@/lib/base";
 import { useShelfContext } from "@/lib/useShelfContext";
@@ -73,16 +72,10 @@ export function SiteContentsSheet({
                   </p>
                   <ul className="space-y-0.5">
                     {(section.shelf === "developer"
-                      ? [
-                          {
-                            label: "Deploy App",
-                            books: devBookGroups(section.books).deployApp,
-                          },
-                          {
-                            label: "Official integrations",
-                            books: devBookGroups(section.books).integrations,
-                          },
-                        ]
+                      ? devNavSections(manifest).map((s) => ({
+                          label: t(s.labelKey),
+                          books: s.books.map((b) => b.book),
+                        }))
                       : [{ label: undefined, books: section.books }]
                     ).map((group) => (
                       <Fragment key={group.label ?? "all"}>
@@ -105,32 +98,6 @@ export function SiteContentsSheet({
                         ))}
                       </Fragment>
                     ))}
-                    {section.withApiReference && (
-                      <li>
-                        <Link
-                          to="/$locale/dev/api"
-                          params={{ locale }}
-                          onClick={() => onOpenChange(false)}
-                          className="flex items-center gap-2 rounded-md px-2 py-1.5 text-sm text-muted-foreground hover:bg-muted hover:text-foreground"
-                        >
-                          <Braces className="size-3.5" />
-                          {t("apiRef.title")}
-                        </Link>
-                      </li>
-                    )}
-                    {section.withReleases && (
-                      <li>
-                        <Link
-                          to="/$locale/dev/releases"
-                          params={{ locale }}
-                          onClick={() => onOpenChange(false)}
-                          className="flex items-center gap-2 rounded-md px-2 py-1.5 text-sm text-muted-foreground hover:bg-muted hover:text-foreground"
-                        >
-                          <Tag className="size-3.5" />
-                          {t("releases.title")}
-                        </Link>
-                      </li>
-                    )}
                   </ul>
                 </div>
               ))}

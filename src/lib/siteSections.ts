@@ -9,10 +9,6 @@ export interface SiteSection {
   /** Which shelf page lists this section. */
   shelf: "guides" | "advanced" | "developer";
   books: ManifestCollection[];
-  /** Append the API Reference entry (Developer section). */
-  withApiReference?: boolean;
-  /** Append the Releases entry (Developer section). */
-  withReleases?: boolean;
 }
 
 /**
@@ -40,11 +36,7 @@ export function siteSections(manifest: LocaleManifest): SiteSection[] {
       titleKey: "sections.developer",
       shelf: "developer",
       books: bySection("dev"),
-      withApiReference: true,
-      withReleases: true,
     },
   ];
-  return sections.filter(
-    (s) => s.books.length > 0 || s.withApiReference || s.withReleases,
-  );
+  return sections.filter((s) => s.books.length > 0);
 }

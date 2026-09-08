@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { SCHEMA_VERSION, type LocaleManifest } from "@shared/content-schema";
-import { devNavSections, type DevRefsByBook } from "./devNav";
+import { devNavSections, refsFrom, type DevRefsByBook } from "./devNav";
 
 const manifest = (devSlugs: string[]): LocaleManifest => ({
   schemaVersion: SCHEMA_VERSION,
@@ -61,12 +61,12 @@ describe("devNavSections", () => {
 
   it("attaches a spec or changelog to its own book", () => {
     const refs: DevRefsByBook = new Map([
-      ["matrix", [{ kind: "changelog" as const, id: "python-matrix-rmapi" }]],
+      ["matrix", [{ kind: "changelog" as const, book: "matrix" }]],
     ]);
     const sections = devNavSections(manifest(ALL_DEV), refs);
     const books = sections.flatMap((s) => s.books);
     expect(books.find((b) => b.book.slug === "matrix")?.refs).toEqual([
-      { kind: "changelog", id: "python-matrix-rmapi" },
+      { kind: "changelog", book: "matrix" },
     ]);
     expect(books.find((b) => b.book.slug === "mediamtx")?.refs).toEqual([]);
   });
@@ -79,5 +79,28 @@ describe("devNavSections", () => {
     expect(sections.at(-1)?.books.map((b) => b.book.slug)).toContain(
       "surprise",
     );
+  });
+});
+
+describe("refsFrom", () => {
+  it("emits a ref only for views that have content", () => {
+    const refs = refsFrom(
+      [{ id: "rasenmaeher", name: "core", versions: [] }],
+      [
+        {
+          id: "python-matrix-rmapi",
+          name: "Matrix",
+          releases: [{ tag: "v1", file: "v1.json" }],
+          changelogFile: "changelog.json",
+        },
+      ],
+    );
+    // matrix: releases + changelog, but no notes; the spec has no versions, so
+    // develop-deploy-app gets nothing.
+    expect(refs.get("matrix")?.map((r) => r.kind)).toEqual([
+      "releases",
+      "changelog",
+    ]);
+    expect(refs.get("develop-deploy-app")).toBeUndefined();
   });
 });
