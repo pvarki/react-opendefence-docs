@@ -251,6 +251,8 @@ export interface SpecOverlay {
 export interface ApiSpecSource {
   id: string;
   name: string;
+  /** Dev book slug this spec documents; absent = belongs to no single book. */
+  book?: string;
   kind: "gh-pages" | "release-assets";
   /** gh-pages: direct URL to openapi.json. */
   url?: string;
@@ -266,6 +268,7 @@ export const API_SPEC_SOURCES: ApiSpecSource[] = [
   {
     id: "rasenmaeher",
     name: "Deploy App Core API",
+    book: "develop-deploy-app",
     kind: "gh-pages",
     url: "https://pvarki.github.io/docker-rasenmaeher-integration/openapi.json",
     overlay: {
@@ -312,6 +315,30 @@ export const API_SPEC_SOURCES: ApiSpecSource[] = [
       ],
     },
   },
+  {
+    id: "tak",
+    name: "TAK Integration API",
+    book: "working-with-tak",
+    kind: "release-assets",
+    repo: "pvarki/python-tak-rmapi",
+    assetPath: "openapi.json",
+  },
+  {
+    id: "mediamtx",
+    name: "MediaMTX Integration API",
+    book: "mediamtx",
+    kind: "release-assets",
+    repo: "pvarki/python-mediamtx-rmmtxauthz",
+    assetPath: "openapi.json",
+  },
+  {
+    id: "matrix",
+    name: "Matrix Integration API",
+    book: "matrix",
+    kind: "release-assets",
+    repo: "pvarki/python-matrix-rmapi",
+    assetPath: "openapi.json",
+  },
 ];
 
 /** Release-dependent doc sources fetched from each pvarki component repo. */
@@ -320,6 +347,8 @@ export interface ReleaseDocSource {
   id: string;
   /** Display name on the Releases page. */
   name: string;
+  /** Dev book slug these releases belong to; absent = Releases page only. */
+  book?: string;
   /** GitHub repo "owner/name". */
   repo: string;
   /** Default branch for raw CHANGELOG/RELEASE_NOTES fetches. Default "main". */
@@ -339,23 +368,33 @@ export interface ReleaseDocSource {
  */
 export const RELEASE_DOC_SOURCES: ReleaseDocSource[] = [
   {
-    id: "docker-rasenmaeher-integration",
-    name: "Deploy App Core (RASENMAEHER, legacy)",
-    repo: "pvarki/docker-rasenmaeher-integration",
-  },
-  {
     id: "opendefence-platform",
     name: "OpenDefence Platform (K8s)",
+    book: "operate",
     repo: "pvarki/opendefence-platform",
   },
   {
     id: "python-integration-template",
     name: "Integration Template (rmapi)",
+    book: "build-an-integration",
     repo: "pvarki/python-integration-template",
   },
   {
+    id: "python-tak-rmapi",
+    name: "TAK Integration",
+    book: "working-with-tak",
+    repo: "pvarki/python-tak-rmapi",
+  },
+  {
+    id: "python-mediamtx-rmmtxauthz",
+    name: "MediaMTX Integration",
+    book: "mediamtx",
+    repo: "pvarki/python-mediamtx-rmmtxauthz",
+  },
+  {
     id: "python-matrix-rmapi",
-    name: "Matrix Integration (example)",
+    name: "Matrix Integration",
+    book: "matrix",
     repo: "pvarki/python-matrix-rmapi",
   },
   // NB: deployapp-runbook is an Outline export, not a GitHub repo — its content
