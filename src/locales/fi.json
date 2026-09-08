@@ -183,6 +183,14 @@
   "blocks": {
     "youtubeTitle": "YouTube-video"
   },
+  "devNav": {
+    "title": "Kehittäjän dokumentaatio",
+    "start": "Aloita tästä",
+    "platform": "Alusta",
+    "core": "Ydin",
+    "integrations": "Integraatiot",
+    "project": "Projekti"
+  },
   "devShelf": {
     "introduction": "Johdanto",
     "architecture": "Arkkitehtuuri",

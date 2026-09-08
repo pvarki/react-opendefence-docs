@@ -33,11 +33,7 @@ import { PageSwiper } from "@/components/reader/PageSwiper";
 import { NotFound } from "@/components/shell/NotFound";
 import { PlatformList } from "@/components/shell/PlatformList";
 import { ShelfHero } from "@/components/shell/ShelfHero";
-import {
-  DevDocsSidebar,
-  SidebarItems,
-  SidebarNav,
-} from "@/components/shell/SidebarNav";
+import { SidebarItems, SidebarNav } from "@/components/shell/SidebarNav";
 import { ReaderBar } from "@/components/shell/ReaderBar";
 import { Button } from "@/components/ui/button";
 
@@ -157,24 +153,13 @@ function ReaderRoute() {
 
   return (
     <div className="flex h-full">
-      {isDevSection ? (
-        <DevDocsSidebar
-          locale={locale}
-          contentLocale={data.contentLocale}
-          manifest={data.manifest}
-          currentCollection={data.collection}
-          currentSlug={data.slug}
-          clientId={activeClient?.id}
-        />
-      ) : (
-        <SidebarNav
-          locale={locale}
-          contentLocale={data.contentLocale}
-          collection={data.collection}
-          currentSlug={data.slug}
-          clientId={activeClient?.id}
-        />
-      )}
+      <SidebarNav
+        locale={locale}
+        contentLocale={data.contentLocale}
+        manifest={data.manifest}
+        collection={data.collection}
+        currentSlug={data.slug}
+      />
       <div className="flex min-w-0 flex-1 flex-col">
         <ReaderBar
           locale={locale}

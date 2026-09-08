@@ -1,19 +1,11 @@
-import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
-import type { SidebarConfig } from "@shared/content-schema";
-import { loadSidebar } from "@/lib/content/loader";
 import {
   Drawer,
   DrawerContent,
   DrawerDescription,
   DrawerTitle,
 } from "@/components/ui/drawer";
-import { DevDocsNavBody, SidebarItems } from "@/components/shell/SidebarNav";
-import {
-  filterSidebarByClient,
-  filterSidebarByPlatform,
-} from "@/lib/content/neighbors";
-import { usePlatform } from "@/lib/platform";
+import { SidebarBody } from "@/components/shell/SidebarNav";
 import { usePlatformPicker } from "@/lib/usePlatformPicker";
 import { PlatformList } from "@/components/shell/PlatformList";
 import { GuideIssuesLink } from "@/components/shell/GuideIssuesLink";
@@ -29,9 +21,8 @@ interface ContentsSheetProps {
 /**
  * Mobile book TOC bottom sheet (opened from the bottom bar's Contents
  * button). Books with selectable clients (e.g. the TAK guide) lead with an
- * "Available platforms" switcher; the chapter tree below is filtered to the
- * active platform. Wikis and dev books have no clients, so they show the
- * whole TOC.
+ * "Available platforms" switcher; below it is the same tree the desktop
+ * sidebar renders.
  */
 export function ContentsSheet({
   open,
@@ -40,41 +31,20 @@ export function ContentsSheet({
   reader,
 }: ContentsSheetProps) {
   const { t } = useTranslation();
-  const [sidebar, setSidebar] = useState<SidebarConfig>();
-  const platform = usePlatform();
   const { options, active, pick, hasClients } = usePlatformPicker(reader);
-
-  useEffect(() => {
-    let cancelled = false;
-    loadSidebar(reader.contentLocale, reader.collection)
-      .then((config) => {
-        if (!cancelled) setSidebar(config);
-      })
-      .catch(() => {});
-    return () => {
-      cancelled = true;
-    };
-  }, [reader.contentLocale, reader.collection]);
-
-  const items = sidebar
-    ? filterSidebarByPlatform(
-        filterSidebarByClient(
-          sidebar.items,
-          hasClients ? active?.id : undefined,
-        ),
-        platform,
-      )
-    : [];
-  const isDev =
-    reader.manifest.collections.find((c) => c.slug === reader.collection)
-      ?.section === "dev";
+  const collection = reader.manifest.collections.find(
+    (c) => c.slug === reader.collection,
+  );
+  const isDev = collection?.section === "dev";
 
   return (
     <Drawer open={open} onOpenChange={onOpenChange}>
       <DrawerContent className="max-h-[85dvh]">
         <div className="flex items-center justify-between gap-3 px-4 pt-2 pb-1">
           <DrawerTitle className="text-base">
-            {sidebar?.label ?? t("nav.contents")}
+            {isDev
+              ? t("devNav.title")
+              : (collection?.label ?? t("nav.contents"))}
           </DrawerTitle>
           <GuideIssuesLink collection={reader.collection} />
         </div>
@@ -95,25 +65,14 @@ export function ContentsSheet({
               />
             </>
           )}
-          {isDev ? (
-            <DevDocsNavBody
-              locale={locale}
-              contentLocale={reader.contentLocale}
-              manifest={reader.manifest}
-              currentCollection={reader.collection}
-              currentSlug={reader.slug}
-              clientId={hasClients ? active?.id : undefined}
-              onNavigate={() => onOpenChange(false)}
-            />
-          ) : (
-            <SidebarItems
-              items={items}
-              locale={locale}
-              collection={reader.collection}
-              currentSlug={reader.slug}
-              onNavigate={() => onOpenChange(false)}
-            />
-          )}
+          <SidebarBody
+            locale={locale}
+            contentLocale={reader.contentLocale}
+            manifest={reader.manifest}
+            collection={reader.collection}
+            currentSlug={reader.slug}
+            onNavigate={() => onOpenChange(false)}
+          />
         </nav>
       </DrawerContent>
     </Drawer>

@@ -183,6 +183,14 @@
   "blocks": {
     "youtubeTitle": "YouTube-video"
   },
+  "devNav": {
+    "title": "Utvecklardokumentation",
+    "start": "Börja här",
+    "platform": "Plattform",
+    "core": "Kärna",
+    "integrations": "Integrationer",
+    "project": "Projekt"
+  },
   "devShelf": {
     "introduction": "Introduktion",
     "architecture": "Arkitektur",
