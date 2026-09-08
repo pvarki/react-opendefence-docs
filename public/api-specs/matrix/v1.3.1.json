@@ -1,0 +1,902 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "FastAPI",
+    "version": "1.3.1"
+  },
+  "paths": {
+    "/api/v1/users/created": {
+      "post": {
+        "tags": [
+          "users"
+        ],
+        "summary": "User Created",
+        "description": "New device cert created — force-join user to space and public rooms.",
+        "operationId": "user_created_api_v1_users_created_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserCRUDRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/OperationResultResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "MTLSHeader": []
+          }
+        ]
+      }
+    },
+    "/api/v1/users/revoked": {
+      "post": {
+        "tags": [
+          "users"
+        ],
+        "summary": "User Revoked",
+        "description": "Device cert revoked — deactivate user in MAS (MAS erases them from Synapse\nand invalidates their sessions).",
+        "operationId": "user_revoked_api_v1_users_revoked_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserCRUDRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/OperationResultResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "MTLSHeader": []
+          }
+        ]
+      }
+    },
+    "/api/v1/users/promoted": {
+      "post": {
+        "tags": [
+          "users"
+        ],
+        "summary": "User Promoted",
+        "description": "User promoted to admin — power level 100 in public rooms, invite to admin channel.",
+        "operationId": "user_promoted_api_v1_users_promoted_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserCRUDRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/OperationResultResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "MTLSHeader": []
+          }
+        ]
+      }
+    },
+    "/api/v1/users/demoted": {
+      "post": {
+        "tags": [
+          "users"
+        ],
+        "summary": "User Demoted",
+        "description": "User demoted from admin — remove power level 100, kick from admin channel.",
+        "operationId": "user_demoted_api_v1_users_demoted_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserCRUDRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/OperationResultResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "MTLSHeader": []
+          }
+        ]
+      }
+    },
+    "/api/v1/users/updated": {
+      "put": {
+        "tags": [
+          "users"
+        ],
+        "summary": "User Updated",
+        "description": "Callsign updated — no-op (callsign change requires a new Matrix account).",
+        "operationId": "user_updated_api_v1_users_updated_put",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserCRUDRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/OperationResultResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "MTLSHeader": []
+          }
+        ]
+      }
+    },
+    "/api/v1/clients/fragment": {
+      "post": {
+        "tags": [
+          "clients"
+        ],
+        "summary": "Client Instruction Fragment",
+        "description": "Return user instructions, we use POST because the integration layer might not keep\ntrack of callsigns and certs by UUID and will probably need both for the instructions",
+        "operationId": "client_instruction_fragment_api_v1_clients_fragment_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserCRUDRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "items": {
+                    "additionalProperties": {
+                      "type": "string"
+                    },
+                    "type": "object"
+                  },
+                  "type": "array",
+                  "title": "Response Client Instruction Fragment Api V1 Clients Fragment Post"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "deprecated": true,
+        "security": [
+          {
+            "MTLSHeader": []
+          }
+        ]
+      }
+    },
+    "/api/v1/admins/fragment": {
+      "get": {
+        "tags": [
+          "admins"
+        ],
+        "summary": "Admin Instruction Fragment",
+        "description": "Return user instructions, we use POST because the integration layer might not keep\ntrack of callsigns and certs by UUID and will probably need both for the instructions",
+        "operationId": "admin_instruction_fragment_api_v1_admins_fragment_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserInstructionFragment"
+                }
+              }
+            }
+          }
+        },
+        "deprecated": true,
+        "security": [
+          {
+            "MTLSHeader": []
+          }
+        ]
+      }
+    },
+    "/api/v1/healthcheck": {
+      "get": {
+        "tags": [
+          "healthcheck"
+        ],
+        "summary": "Request Healthcheck",
+        "description": "Check that the Matrix integration is initialised and Synapse and MAS respond\n\nEnsures all workers are ready to handle UserCRUD (mas + synapse credentials )",
+        "operationId": "request_healthcheck_api_v1_healthcheck_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProductHealthCheckResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/description/{language}": {
+      "get": {
+        "tags": [
+          "description"
+        ],
+        "summary": "Return Product Description",
+        "description": "Fetch description from each product in manifest",
+        "operationId": "return_product_description_api_v1_description__language__get",
+        "parameters": [
+          {
+            "name": "language",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Language"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProductDescription"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/instructions/{language}": {
+      "post": {
+        "tags": [
+          "instructions"
+        ],
+        "summary": "User Intructions",
+        "description": "return user instructions",
+        "operationId": "user_intructions_api_v1_instructions__language__post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserCRUDRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": {
+                    "type": "string"
+                  },
+                  "type": "object",
+                  "title": "Response User Intructions Api V1 Instructions  Language  Post"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "MTLSHeader": []
+          }
+        ]
+      }
+    },
+    "/api/v2/description/{language}": {
+      "get": {
+        "tags": [
+          "description"
+        ],
+        "summary": "Return Product Description Extended",
+        "description": "Fetch description from each product in manifest",
+        "operationId": "return_product_description_extended_api_v2_description__language__get",
+        "parameters": [
+          {
+            "name": "language",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Language"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProductDescriptionExtended"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v2/clients/{language}/info.md": {
+      "post": {
+        "tags": [
+          "clients"
+        ],
+        "summary": "Get Info",
+        "description": "Return customized markdown",
+        "operationId": "get_info_api_v2_clients__language__info_md_post",
+        "security": [
+          {
+            "MTLSHeader": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "language",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Language"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserCRUDRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "HTTPValidationError": {
+        "properties": {
+          "detail": {
+            "items": {
+              "$ref": "#/components/schemas/ValidationError"
+            },
+            "type": "array",
+            "title": "Detail"
+          }
+        },
+        "type": "object",
+        "title": "HTTPValidationError"
+      },
+      "OperationResultResponse": {
+        "properties": {
+          "success": {
+            "type": "boolean",
+            "title": "Success",
+            "description": "Was the operation a success, used in addition to http status code"
+          },
+          "extra": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Extra",
+            "description": "Extra information",
+            "nullable": true
+          },
+          "error": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Error",
+            "description": "Error message if any",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "success"
+        ],
+        "title": "OperationResultResponse",
+        "description": "Communicate result of operation",
+        "examples": [
+          {
+            "success": true
+          },
+          {
+            "error": "Things went wrong",
+            "success": false
+          },
+          {
+            "extra": "Tell the user they're awesome",
+            "success": true
+          }
+        ]
+      },
+      "ProductComponent": {
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "link",
+              "markdown",
+              "component"
+            ],
+            "title": "Type"
+          },
+          "ref": {
+            "type": "string",
+            "title": "Ref"
+          }
+        },
+        "type": "object",
+        "required": [
+          "type",
+          "ref"
+        ],
+        "title": "ProductComponent",
+        "description": "Project component info"
+      },
+      "ProductDescription": {
+        "properties": {
+          "shortname": {
+            "type": "string",
+            "title": "Shortname",
+            "description": "Short name for the product, used as slug/key in dicts and urls"
+          },
+          "title": {
+            "type": "string",
+            "title": "Title",
+            "description": "Fancy name for the product"
+          },
+          "icon": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Icon",
+            "description": "URL for icon"
+          },
+          "description": {
+            "type": "string",
+            "title": "Description",
+            "description": "Short-ish description of the product"
+          },
+          "language": {
+            "type": "string",
+            "title": "Language",
+            "description": "Language of this response"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "shortname",
+          "title",
+          "icon",
+          "description",
+          "language"
+        ],
+        "title": "ProductDescription",
+        "description": "Description of a product"
+      },
+      "ProductDescriptionExtended": {
+        "properties": {
+          "shortname": {
+            "type": "string",
+            "title": "Shortname",
+            "description": "Short name for the product, used as slug/key in dicts and urls"
+          },
+          "title": {
+            "type": "string",
+            "title": "Title",
+            "description": "Fancy name for the product"
+          },
+          "icon": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Icon",
+            "description": "URL for icon"
+          },
+          "description": {
+            "type": "string",
+            "title": "Description",
+            "description": "Short-ish description of the product"
+          },
+          "language": {
+            "type": "string",
+            "title": "Language",
+            "description": "Language of this response"
+          },
+          "docs": {
+            "type": "string",
+            "title": "Docs",
+            "description": "Link to documentation"
+          },
+          "component": {
+            "$ref": "#/components/schemas/ProductComponent",
+            "description": "Component type and ref"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "shortname",
+          "title",
+          "icon",
+          "description",
+          "language",
+          "docs",
+          "component"
+        ],
+        "title": "ProductDescriptionExtended",
+        "description": "Description of a product"
+      },
+      "ProductHealthCheckResponse": {
+        "properties": {
+          "healthy": {
+            "type": "boolean",
+            "title": "Healthy",
+            "description": "Everything is good, ready to serve"
+          },
+          "extra": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Extra",
+            "description": "Extra information",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "healthy"
+        ],
+        "title": "ProductHealthCheckResponse",
+        "description": "Healthcheck response for product integration apis\n\nThe extra info might be used by a human to debug things but RASENMAEHER will not use it",
+        "examples": [
+          {
+            "healthy": true
+          },
+          {
+            "extra": "Things went wrong",
+            "healthy": false
+          }
+        ]
+      },
+      "UserCRUDRequest": {
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "title": "Uuid",
+            "description": "RASENMAEHER UUID for this user"
+          },
+          "callsign": {
+            "type": "string",
+            "title": "Callsign",
+            "description": "Callsign of the user"
+          },
+          "x509cert": {
+            "type": "string",
+            "title": "X509Cert",
+            "description": "Certificate encoded with CFSSL conventions (newlines escaped)"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "uuid",
+          "callsign",
+          "x509cert"
+        ],
+        "title": "UserCRUDRequest",
+        "description": "Request to create user",
+        "examples": [
+          {
+            "callsign": "ROTTA01a",
+            "uuid": "3ede23ae-eff2-4aa8-b7ef-7fac68c39988",
+            "x509cert": "-----BEGIN CERTIFICATE-----\\nMIIEwjCC...\\n-----END CERTIFICATE-----\\n"
+          }
+        ]
+      },
+      "UserInstructionFragment": {
+        "properties": {
+          "html": {
+            "type": "string",
+            "title": "Html",
+            "description": "The HTML content will be shown for this products instructions"
+          },
+          "inject_css": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Inject Css",
+            "description": "If extra stylesheet is needed, set the fully qualified URI",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "html"
+        ],
+        "title": "UserInstructionFragment",
+        "description": "Product instructions for user",
+        "examples": [
+          {
+            "html": "<p>Hello World!</p>"
+          },
+          {
+            "html": "<p class=\"hello\">Hello World!</p>",
+            "inject_css": "http://example.com/mystyle.css"
+          }
+        ]
+      },
+      "ValidationError": {
+        "properties": {
+          "loc": {
+            "items": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                }
+              ]
+            },
+            "type": "array",
+            "title": "Location"
+          },
+          "msg": {
+            "type": "string",
+            "title": "Message"
+          },
+          "type": {
+            "type": "string",
+            "title": "Error Type"
+          },
+          "input": {
+            "title": "Input"
+          },
+          "ctx": {
+            "type": "object",
+            "title": "Context"
+          }
+        },
+        "type": "object",
+        "required": [
+          "loc",
+          "msg",
+          "type"
+        ],
+        "title": "ValidationError"
+      }
+    },
+    "securitySchemes": {
+      "MTLSHeader": {
+        "type": "http",
+        "scheme": "header"
+      }
+    }
+  }
+}
