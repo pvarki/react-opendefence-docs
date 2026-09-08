@@ -43,9 +43,9 @@ matches the target the user is working with:
 
 Then use the developer documentation and references on this site:
 
-- **Developer books** — enumerate collections with `"section": "dev"` in the manifest; their pages live under `/content/en/pages/{book-slug}/`. Known books: `introduction` (what Deploy App is, choosing a platform), `operate` (deploy and run), `develop-deploy-app` (work on the core/rmapi), `build-an-integration`, and `contribute-to-project`.
-- [API reference manifest](https://docs.opendefence.fi/api-specs/manifest.json): OpenAPI specs for the rmapi and integration APIs, under `/api-specs/` (rendered at `/en/dev/api`).
-- [Release & changelog manifest](https://docs.opendefence.fi/release-docs/manifest.json): per-component releases and changelogs, under `/release-docs/` (rendered at `/en/dev/releases`).
+- **Developer books** — enumerate collections with `"section": "dev"` in the manifest; their pages live under `/content/en/pages/{book-slug}/`. Known books: `introduction` (what Deploy App is, choosing a platform), `architecture`, `operate` (deploy and run), `develop-deploy-app` (work on the core/rmapi), `build-an-integration`, `working-with-tak`, `mediamtx`, `matrix`, and `contribute-to-project`.
+- [API reference manifest](https://docs.opendefence.fi/api-specs/manifest.json): OpenAPI specs for the rmapi and integration APIs, under `/api-specs/`. Each spec is rendered per book at `/en/dev/{book-slug}/api` (e.g. `/en/dev/develop-deploy-app/api` for the core); the `book` field on each source names the book.
+- [Release & changelog manifest](https://docs.opendefence.fi/release-docs/manifest.json): per-component releases, release notes and changelogs, under `/release-docs/`. Rendered per book at `/en/dev/{book-slug}/releases`, `/notes` and `/changelog` (e.g. `/en/dev/matrix/changelog`); the `book` field on each component names the book.
 - Integration starting points: [python-integration-template](https://github.com/pvarki/python-integration-template) (scaffold an rmapi integration) and [python-matrix-rmapi](https://github.com/pvarki/python-matrix-rmapi) (a worked example).
 
 ## Notes for agents

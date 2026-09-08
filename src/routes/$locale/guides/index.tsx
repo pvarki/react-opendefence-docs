@@ -4,11 +4,9 @@ import { useTranslation } from "react-i18next";
 import {
   BookOpen,
   BookText,
-  Braces,
   ChevronDown,
   Code2,
   Smartphone,
-  Tag,
 } from "lucide-react";
 import type { ManifestCollection } from "@shared/content-schema";
 import { BookCard } from "@/components/shell/BookCard";
@@ -75,24 +73,6 @@ function GuidesShelf() {
                   image={CARD_IMAGES[book.slug]}
                 />
               ))}
-              {section.withApiReference && (
-                <BookCard
-                  locale={locale}
-                  to="/$locale/dev/api"
-                  icon={Braces}
-                  title={t("apiRef.title")}
-                  description={t("apiRef.descGuides")}
-                />
-              )}
-              {section.withReleases && (
-                <BookCard
-                  locale={locale}
-                  to="/$locale/dev/releases"
-                  icon={Tag}
-                  title={t("releases.title")}
-                  description={t("releases.desc")}
-                />
-              )}
             </div>
           </Fragment>
         ))}

@@ -192,26 +192,17 @@
     "project": "Projekt"
   },
   "devShelf": {
-    "introduction": "Introduktion",
-    "architecture": "Arkitektur",
     "operate": "Drift",
     "contribute": "Bidra",
-    "integrate": "Integrera",
-    "officialIntegrations": "Officiella integrationer"
+    "integrate": "Integrera"
   },
   "apiRef": {
     "title": "API-referens",
-    "empty": "Inga API-specifikationer har synkroniserats ännu.",
-    "descGuides": "rasenmaeher-api och integrations-API:er (OpenAPI)",
-    "descDev": "Kärn-rmapi och produktintegrations-API:er (OpenAPI)"
+    "empty": "Inga API-specifikationer har synkroniserats ännu."
   },
   "releases": {
     "title": "Versioner",
     "empty": "Inga versioner har synkroniserats ännu.",
-    "desc": "Ändringsloggar och versionsinformation per komponent",
-    "sectionTitle": "API-referens och versioner",
-    "changelogs": "Ändringsloggar",
-    "underDevelopment": "Under utveckling",
     "releaseNotes": "Versionsinformation",
     "notes": "Anteckningar",
     "changelog": "Ändringslogg",

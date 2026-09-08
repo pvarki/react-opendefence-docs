@@ -192,26 +192,17 @@
     "project": "Projekti"
   },
   "devShelf": {
-    "introduction": "Johdanto",
-    "architecture": "Arkkitehtuuri",
     "operate": "Operointi",
     "contribute": "Osallistu",
-    "integrate": "Integroi",
-    "officialIntegrations": "Viralliset integraatiot"
+    "integrate": "Integroi"
   },
   "apiRef": {
     "title": "API-referenssi",
-    "empty": "API-määrityksiä ei ole vielä synkronoitu.",
-    "descGuides": "rasenmaeher-api ja integraatioiden API:t (OpenAPI)",
-    "descDev": "rmapi-ydin ja tuoteintegraatioiden API:t (OpenAPI)"
+    "empty": "API-määrityksiä ei ole vielä synkronoitu."
   },
   "releases": {
     "title": "Julkaisut",
     "empty": "Julkaisuja ei ole vielä synkronoitu.",
-    "desc": "Muutoslokit ja julkaisutiedot komponenteittain",
-    "sectionTitle": "API-referenssi ja julkaisut",
-    "changelogs": "Muutoslokit",
-    "underDevelopment": "Kehitteillä",
     "releaseNotes": "Julkaisutiedot",
     "notes": "Muistiinpanot",
     "changelog": "Muutosloki",

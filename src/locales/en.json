@@ -185,9 +185,7 @@
   },
   "apiRef": {
     "title": "API Reference",
-    "empty": "No API specs have been synced yet.",
-    "descGuides": "rasenmaeher-api & integration APIs (OpenAPI)",
-    "descDev": "Core rmapi & product integration APIs (OpenAPI)"
+    "empty": "No API specs have been synced yet."
   },
   "devNav": {
     "title": "Developer docs",
@@ -198,32 +196,13 @@
     "project": "Project"
   },
   "devShelf": {
-    "introduction": "Introduction",
-    "architecture": "Architecture",
     "operate": "Operate",
     "contribute": "Contribute",
-    "integrate": "Integrate",
-    "officialIntegrations": "Official integrations"
-  },
-  "takShelf": {
-    "platformTitle": "Platform Architecture",
-    "platformDesc": "How TAK runs on the OpenDefence Kubernetes platform.",
-    "bringDataTitle": "Bringing your data to TAK",
-    "bringDataDesc": "Show your data in ATAK: ad hoc, programmatic, and standard sources.",
-    "pluginDevTitle": "Plugin Development",
-    "pluginDevDesc": "Build ATAK plugins in Java and Kotlin.",
-    "integratingTitle": "Integrating to TAK Server",
-    "integratingDesc": "Use the Marti API and Deploy App authentication.",
-    "federationTitle": "Working with Federation Hub",
-    "federationDesc": "Federate multiple Deploy App TAK Servers."
+    "integrate": "Integrate"
   },
   "releases": {
     "title": "Releases",
     "empty": "No releases have been synced yet.",
-    "desc": "Changelogs & release notes per component",
-    "sectionTitle": "API ref & releases",
-    "changelogs": "Changelogs",
-    "underDevelopment": "Under development",
     "releaseNotes": "Release notes",
     "notes": "Notes",
     "changelog": "Changelog",

@@ -1,7 +1,14 @@
 import { useEffect, useState, type ReactNode } from "react";
 import { Link } from "@tanstack/react-router";
 import { useTranslation } from "react-i18next";
-import { ChevronDown } from "lucide-react";
+import {
+  Braces,
+  ChevronDown,
+  FileText,
+  History,
+  Tag,
+  type LucideIcon,
+} from "lucide-react";
 import type {
   Locale,
   LocaleManifest,
@@ -12,6 +19,7 @@ import { loadSidebar } from "@/lib/content/loader";
 import {
   devNavSections,
   loadDevRefs,
+  REF_LABEL_KEY,
   type DevRef,
   type DevRefsByBook,
 } from "@/lib/devNav";
@@ -369,46 +377,102 @@ function SidebarGroup({
 
 const NO_REFS: DevRefsByBook = new Map();
 
-const REF_LINK_CLASS =
-  "block rounded-md px-2 py-1.5 text-sm text-muted-foreground hover:bg-muted hover:text-foreground";
+const REF_ICON: Record<DevRef["kind"], LucideIcon> = {
+  api: Braces,
+  releases: Tag,
+  notes: FileText,
+  changelog: History,
+};
+
+const REF_ROW_CLASS =
+  "flex items-center gap-2 rounded-md px-2 py-1.5 text-sm text-muted-foreground hover:bg-muted hover:text-foreground";
+
+const REF_BUTTON_CLASS =
+  "inline-flex items-center gap-2 rounded-md border border-border bg-card px-3 py-2 text-sm font-medium text-foreground transition-colors hover:border-primary";
 
 function DevRefLink({
   locale,
   item,
+  variant,
   onNavigate,
 }: {
   locale: string;
   item: DevRef;
+  variant: "row" | "button";
   onNavigate?: () => void;
 }) {
   const { t } = useTranslation();
-  if (item.kind === "api") {
+  const Icon = REF_ICON[item.kind];
+  const className = variant === "button" ? REF_BUTTON_CLASS : REF_ROW_CLASS;
+  const body = (
+    <>
+      <Icon className="size-4 shrink-0 text-primary" />
+      {t(REF_LABEL_KEY[item.kind])}
+    </>
+  );
+
+  return (
+    <Link
+      to="/$locale/dev/$book/$view"
+      params={{ locale, book: item.book, view: item.kind }}
+      onClick={onNavigate}
+      className={className}
+    >
+      {body}
+    </Link>
+  );
+}
+
+/** A book's reference material: rows in the sidebar, buttons on the cover. */
+export function DevRefList({
+  locale,
+  refs,
+  divider,
+  variant = "row",
+  onNavigate,
+}: {
+  locale: string;
+  refs: DevRef[];
+  divider?: boolean;
+  variant?: "row" | "button";
+  onNavigate?: () => void;
+}) {
+  if (refs.length === 0) return null;
+
+  if (variant === "button") {
     return (
-      <li>
-        <Link
-          to="/$locale/dev/api"
-          params={{ locale }}
-          search={{ s: item.id }}
-          onClick={onNavigate}
-          className={REF_LINK_CLASS}
-        >
-          {t("apiRef.title")}
-        </Link>
-      </li>
+      <div className="flex flex-wrap items-center gap-2">
+        {refs.map((ref) => (
+          <DevRefLink
+            key={ref.kind}
+            locale={locale}
+            item={ref}
+            variant="button"
+            onNavigate={onNavigate}
+          />
+        ))}
+      </div>
     );
   }
+
   return (
-    <li>
-      <Link
-        to="/$locale/dev/releases"
-        params={{ locale }}
-        search={{ c: item.id, tab: "changelog" as const }}
-        onClick={onNavigate}
-        className={REF_LINK_CLASS}
-      >
-        {t("releases.changelog")}
-      </Link>
-    </li>
+    <ul
+      className={cn(
+        "space-y-0.5",
+        divider && "mb-1 border-b border-border pb-1",
+      )}
+    >
+      {refs.map((ref) => (
+        <li key={ref.kind}>
+          <DevRefLink
+            locale={locale}
+            item={ref}
+            variant="row"
+            onNavigate={onNavigate}
+          />
+        </li>
+      ))}
+    </ul>
   );
 }
 
@@ -490,24 +554,12 @@ function DevDocsNav({
                   href={book.slug}
                   active={book.slug === collection}
                   extra={
-                    bookRefs.length > 0 ? (
-                      <ul
-                        className={cn(
-                          "space-y-0.5",
-                          items.length > 0 &&
-                            "mb-1 border-b border-sidebar-border pb-1",
-                        )}
-                      >
-                        {bookRefs.map((ref) => (
-                          <DevRefLink
-                            key={`${ref.kind}:${ref.id}`}
-                            locale={locale}
-                            item={ref}
-                            onNavigate={onNavigate}
-                          />
-                        ))}
-                      </ul>
-                    ) : undefined
+                    <DevRefList
+                      locale={locale}
+                      refs={bookRefs}
+                      divider={items.length > 0}
+                      onNavigate={onNavigate}
+                    />
                   }
                   onNavigate={onNavigate}
                 />

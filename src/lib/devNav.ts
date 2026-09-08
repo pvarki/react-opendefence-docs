@@ -38,10 +38,19 @@ const SECTIONS: {
   },
 ];
 
+export type DevRefKind = "api" | "releases" | "notes" | "changelog";
+
+export const REF_LABEL_KEY: Record<DevRefKind, string> = {
+  api: "apiRef.title",
+  releases: "releases.title",
+  notes: "releases.releaseNotes",
+  changelog: "releases.changelog",
+};
+
 export interface DevRef {
-  kind: "api" | "changelog";
-  /** Manifest id — the spec source / release component to open. */
-  id: string;
+  kind: DevRefKind;
+  /** Dev book slug — the URL segment, and the key back to the config source. */
+  book: string;
 }
 
 export type DevRefsByBook = ReadonlyMap<string, DevRef[]>;
@@ -57,16 +66,19 @@ export interface DevNavSection {
   books: DevNavBook[];
 }
 
-interface SpecsManifest {
-  sources?: { id: string; versions?: unknown[] }[];
+// Exported so the generated route tree can name the loader's return type.
+export interface SpecSource {
+  id: string;
+  name: string;
+  versions: { tag: string; specFile: string }[];
 }
-interface ReleasesManifest {
-  components?: {
-    id: string;
-    releases?: unknown[];
-    changelogFile?: string;
-    releaseNotesFile?: string;
-  }[];
+
+export interface ReleaseComponent {
+  id: string;
+  name: string;
+  releases: { tag: string; file: string; prerelease?: boolean }[];
+  changelogFile?: string;
+  releaseNotesFile?: string;
 }
 
 async function fetchJson<T>(path: string): Promise<T | undefined> {
@@ -78,6 +90,39 @@ async function fetchJson<T>(path: string): Promise<T | undefined> {
   }
 }
 
+// Static files: fetched once per session, shared by the nav and the ref pages.
+let specs: Promise<SpecSource[]> | undefined;
+let components: Promise<ReleaseComponent[]> | undefined;
+
+function loadSpecs(): Promise<SpecSource[]> {
+  specs ??= fetchJson<{ sources?: SpecSource[] }>(
+    "/api-specs/manifest.json",
+  ).then((m) => m?.sources ?? []);
+  return specs;
+}
+
+function loadComponents(): Promise<ReleaseComponent[]> {
+  components ??= fetchJson<{ components?: ReleaseComponent[] }>(
+    "/release-docs/manifest.json",
+  ).then((m) => m?.components ?? []);
+  return components;
+}
+
+/** The spec / release component documenting a book, via the config join. */
+export async function specForBook(
+  book: string,
+): Promise<SpecSource | undefined> {
+  const id = API_SPEC_SOURCES.find((s) => s.book === book)?.id;
+  return (await loadSpecs()).find((s) => s.id === id);
+}
+
+export async function releasesForBook(
+  book: string,
+): Promise<ReleaseComponent | undefined> {
+  const id = RELEASE_DOC_SOURCES.find((s) => s.book === book)?.id;
+  return (await loadComponents()).find((c) => c.id === id);
+}
+
 let cached: Promise<DevRefsByBook> | undefined;
 
 /** Book slug -> its reference pages, limited to what has synced content. */
@@ -86,51 +131,47 @@ export function loadDevRefs(): Promise<DevRefsByBook> {
   return cached;
 }
 
-async function build(): Promise<DevRefsByBook> {
-  const [specs, releases] = await Promise.all([
-    fetchJson<SpecsManifest>("/api-specs/manifest.json"),
-    fetchJson<ReleasesManifest>("/release-docs/manifest.json"),
-  ]);
-
+/** One ref per view that has content, so a link never lands on an empty tab. */
+export function refsFrom(
+  specs: SpecSource[],
+  components: ReleaseComponent[],
+): DevRefsByBook {
   const withSpec = new Set(
-    (specs?.sources ?? [])
-      .filter((s) => (s.versions?.length ?? 0) > 0)
-      .map((s) => s.id),
+    specs.filter((s) => s.versions.length > 0).map((s) => s.id),
   );
-  const withReleases = new Set(
-    (releases?.components ?? [])
-      .filter(
-        (c) =>
-          (c.releases?.length ?? 0) > 0 ||
-          !!c.changelogFile ||
-          !!c.releaseNotesFile,
-      )
-      .map((c) => c.id),
-  );
-
+  const byId = new Map(components.map((c) => [c.id, c] as const));
   const byBook = new Map<string, DevRef[]>();
-  const add = (book: string | undefined, ref: DevRef) => {
+  const add = (book: string | undefined, kind: DevRefKind) => {
     if (!book) return;
-    const list = byBook.get(book);
-    if (list) list.push(ref);
-    else byBook.set(book, [ref]);
+    const list = byBook.get(book) ?? [];
+    list.push({ kind, book });
+    byBook.set(book, list);
   };
 
   for (const source of API_SPEC_SOURCES) {
-    if (withSpec.has(source.id))
-      add(source.book, { kind: "api", id: source.id });
+    if (withSpec.has(source.id)) add(source.book, "api");
   }
   for (const source of RELEASE_DOC_SOURCES) {
-    if (withReleases.has(source.id)) {
-      add(source.book, { kind: "changelog", id: source.id });
-    }
+    const c = byId.get(source.id);
+    if (!c) continue;
+    if (c.releases.length > 0) add(source.book, "releases");
+    if (c.releaseNotesFile) add(source.book, "notes");
+    if (c.changelogFile) add(source.book, "changelog");
   }
   return byBook;
 }
 
+async function build(): Promise<DevRefsByBook> {
+  const [specs, components] = await Promise.all([
+    loadSpecs(),
+    loadComponents(),
+  ]);
+  return refsFrom(specs, components);
+}
+
 export function devNavSections(
   manifest: LocaleManifest,
-  refs: DevRefsByBook,
+  refs: DevRefsByBook = new Map(),
 ): DevNavSection[] {
   const bySlug = new Map(
     manifest.collections

@@ -33,7 +33,12 @@ import { PageSwiper } from "@/components/reader/PageSwiper";
 import { NotFound } from "@/components/shell/NotFound";
 import { PlatformList } from "@/components/shell/PlatformList";
 import { ShelfHero } from "@/components/shell/ShelfHero";
-import { SidebarItems, SidebarNav } from "@/components/shell/SidebarNav";
+import {
+  DevRefList,
+  SidebarItems,
+  SidebarNav,
+} from "@/components/shell/SidebarNav";
+import { loadDevRefs, type DevRef } from "@/lib/devNav";
 import { ReaderBar } from "@/components/shell/ReaderBar";
 import { Button } from "@/components/ui/button";
 
@@ -231,6 +236,19 @@ function BookCover({
     };
   }, [data.contentLocale, data.collection]);
 
+  // The cover is the book's TOC, so it lists the same reference rows the
+  // sidebar puts under this book.
+  const [refs, setRefs] = useState<DevRef[]>([]);
+  useEffect(() => {
+    let cancelled = false;
+    void loadDevRefs().then((byBook) => {
+      if (!cancelled) setRefs(byBook.get(data.collection) ?? []);
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, [data.collection]);
+
   return (
     <div className="h-full overflow-y-auto">
       {hero && (
@@ -282,6 +300,11 @@ function BookCover({
             collection={data.collection}
           />
         </div>
+        {refs.length > 0 && (
+          <div className="mt-3">
+            <DevRefList locale={locale} refs={refs} variant="button" />
+          </div>
+        )}
         <nav aria-label={t("nav.contents")} className="mt-5 md:mt-8">
           {sidebar && (
             <SidebarItems
