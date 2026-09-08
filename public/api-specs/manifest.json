@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-12T20:39:28.328Z",
+  "generatedAt": "2026-09-08T10:29:07.207Z",
   "sources": [
     {
       "id": "rasenmaeher",
@@ -8,6 +8,47 @@
         {
           "tag": "latest",
           "specFile": "latest.json"
+        }
+      ]
+    },
+    {
+      "id": "tak",
+      "name": "TAK Integration API",
+      "versions": []
+    },
+    {
+      "id": "mediamtx",
+      "name": "MediaMTX Integration API",
+      "versions": []
+    },
+    {
+      "id": "matrix",
+      "name": "Matrix Integration API",
+      "versions": [
+        {
+          "tag": "v1.3.2",
+          "specFile": "v1.3.2.json",
+          "publishedAt": "2026-08-22T00:08:04Z"
+        },
+        {
+          "tag": "v1.3.1",
+          "specFile": "v1.3.1.json",
+          "publishedAt": "2026-08-03T06:01:40Z"
+        },
+        {
+          "tag": "v1.3.0",
+          "specFile": "v1.3.0.json",
+          "publishedAt": "2026-07-14T10:33:57Z"
+        },
+        {
+          "tag": "v1.2.2",
+          "specFile": "v1.2.2.json",
+          "publishedAt": "2026-07-02T11:58:34Z"
+        },
+        {
+          "tag": "v1.2.1",
+          "specFile": "v1.2.1.json",
+          "publishedAt": "2026-06-14T13:48:54Z"
         }
       ]
     }

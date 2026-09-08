@@ -1,12 +1,6 @@
 {
-  "generatedAt": "2026-09-12T20:39:31.834Z",
+  "generatedAt": "2026-09-08T10:29:11.492Z",
   "components": [
-    {
-      "id": "docker-rasenmaeher-integration",
-      "name": "Deploy App Core (RASENMAEHER, legacy)",
-      "repo": "pvarki/docker-rasenmaeher-integration",
-      "releases": []
-    },
     {
       "id": "opendefence-platform",
       "name": "OpenDefence Platform (K8s)",
@@ -20,8 +14,20 @@
       "releases": []
     },
     {
+      "id": "python-tak-rmapi",
+      "name": "TAK Integration",
+      "repo": "pvarki/python-tak-rmapi",
+      "releases": []
+    },
+    {
+      "id": "python-mediamtx-rmmtxauthz",
+      "name": "MediaMTX Integration",
+      "repo": "pvarki/python-mediamtx-rmmtxauthz",
+      "releases": []
+    },
+    {
       "id": "python-matrix-rmapi",
-      "name": "Matrix Integration (example)",
+      "name": "Matrix Integration",
       "repo": "pvarki/python-matrix-rmapi",
       "releases": [
         {
