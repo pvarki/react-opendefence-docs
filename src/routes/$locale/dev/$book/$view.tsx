@@ -33,6 +33,7 @@ const ApiReference = lazy(() =>
   Promise.all([
     import("@scalar/api-reference-react"),
     import("@scalar/api-reference-react/style.css"),
+    import("@/scalar-theme.css"),
   ]).then(([m]) => ({ default: m.ApiReferenceReact })),
 );
 
@@ -148,6 +149,9 @@ function ApiView({ source }: { source?: SpecSource }) {
               hideDarkModeToggle: true,
               forceDarkModeState: "dark",
               hideClientButton: true,
+              agent: { disabled: true },
+              // Can't work: templated server host, and the API wants mTLS.
+              hideTestRequestButton: true,
               // Scalar shows a Configure/Share toolbar on localhost; never here.
               showDeveloperTools: "never",
             }}
