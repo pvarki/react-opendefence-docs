@@ -24,7 +24,7 @@ export function GuideIssuesLink({
   collection,
   className,
 }: {
-  collection: string;
+  collection?: string;
   className?: string;
 }) {
   const { t } = useTranslation();
