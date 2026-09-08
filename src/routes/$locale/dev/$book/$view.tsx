@@ -2,6 +2,10 @@ import { Suspense, lazy, useEffect, useState } from "react";
 import { createFileRoute, notFound } from "@tanstack/react-router";
 import { useTranslation } from "react-i18next";
 import { Braces } from "lucide-react";
+import { DEFAULT_LOCALE } from "@shared/content-schema";
+import { loadManifest } from "@/lib/content/loader";
+import { SidebarNav } from "@/components/shell/SidebarNav";
+import { ReaderBar } from "@/components/shell/ReaderBar";
 import {
   Select,
   SelectContent,
@@ -33,22 +37,59 @@ const ApiReference = lazy(() =>
 );
 
 export const Route = createFileRoute("/$locale/dev/$book/$view")({
-  loader: async ({ params }) => {
+  loader: async ({ context, params }) => {
     const view = VIEWS.find((v) => v === params.view);
     if (!view) throw notFound();
-    return view === "api"
-      ? ({ view, source: await specForBook(params.book) } as const)
-      : ({ view, component: await releasesForBook(params.book) } as const);
+
+    // fi/sv manifests carry no dev books; fall back to en like the reader.
+    const own = await loadManifest(context.locale);
+    const contentLocale = own.collections.some((c) => c.slug === params.book)
+      ? context.locale
+      : DEFAULT_LOCALE;
+
+    // Both lookups read manifests the sidebar loads here anyway.
+    return {
+      view,
+      contentLocale,
+      manifest: await loadManifest(contentLocale),
+      source: await specForBook(params.book),
+      component: await releasesForBook(params.book),
+    };
   },
   component: DevRefPage,
 });
 
 function DevRefPage() {
+  const { t } = useTranslation();
   const data = Route.useLoaderData();
-  return data.view === "api" ? (
-    <ApiView source={data.source} />
-  ) : (
-    <ReleaseView view={data.view} component={data.component} />
+  const { locale, book, view } = Route.useParams();
+  const label =
+    data.manifest.collections.find((c) => c.slug === book)?.label ?? book;
+
+  return (
+    <div className="flex h-full">
+      <SidebarNav
+        locale={locale}
+        contentLocale={data.contentLocale}
+        manifest={data.manifest}
+        collection={book}
+      />
+      <div className="flex min-w-0 flex-1 flex-col">
+        <ReaderBar
+          locale={locale}
+          collection={book}
+          bookLabel={label}
+          breadcrumb={[t(REF_LABEL_KEY[view as DevRefKind])]}
+        />
+        <div className="min-h-0 flex-1">
+          {data.view === "api" ? (
+            <ApiView source={data.source} />
+          ) : (
+            <ReleaseView view={data.view} component={data.component} />
+          )}
+        </div>
+      </div>
+    </div>
   );
 }
 
