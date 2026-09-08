@@ -31,8 +31,9 @@ import {
 import { useReadingView } from "@/lib/platform";
 import { cn } from "@/lib/utils";
 import { GuideIssuesLink } from "@/components/shell/GuideIssuesLink";
+import { Button } from "@/components/ui/button";
 
-export interface SidebarProps {
+interface SidebarProps {
   locale: string;
   /** Locale whose sidebar JSON to load (en when falling back). */
   contentLocale: Locale;
@@ -387,9 +388,6 @@ const REF_ICON: Record<DevRef["kind"], LucideIcon> = {
 const REF_ROW_CLASS =
   "flex items-center gap-2 rounded-md px-2 py-1.5 text-sm text-muted-foreground hover:bg-muted hover:text-foreground";
 
-const REF_BUTTON_CLASS =
-  "inline-flex items-center gap-2 rounded-md border border-border bg-card px-3 py-2 text-sm font-medium text-foreground transition-colors hover:border-primary";
-
 function DevRefLink({
   locale,
   item,
@@ -403,23 +401,24 @@ function DevRefLink({
 }) {
   const { t } = useTranslation();
   const Icon = REF_ICON[item.kind];
-  const className = variant === "button" ? REF_BUTTON_CLASS : REF_ROW_CLASS;
-  const body = (
-    <>
-      <Icon className="size-4 shrink-0 text-primary" />
-      {t(REF_LABEL_KEY[item.kind])}
-    </>
-  );
-
-  return (
+  const link = (
     <Link
       to="/$locale/dev/$book/$view"
       params={{ locale, book: item.book, view: item.kind }}
       onClick={onNavigate}
-      className={className}
+      className={variant === "row" ? REF_ROW_CLASS : undefined}
     >
-      {body}
+      <Icon className="size-4 shrink-0 text-primary" />
+      {t(REF_LABEL_KEY[item.kind])}
     </Link>
+  );
+
+  return variant === "button" ? (
+    <Button asChild variant="outline">
+      {link}
+    </Button>
+  ) : (
+    link
   );
 }
 

@@ -306,6 +306,9 @@ function BookCover({
           </div>
         )}
         <nav aria-label={t("nav.contents")} className="mt-5 md:mt-8">
+          <p className="pb-1.5 text-[11px] font-semibold tracking-widest text-primary uppercase">
+            {t("nav.contents")}
+          </p>
           {sidebar && (
             <SidebarItems
               items={filterSidebarByClient(
