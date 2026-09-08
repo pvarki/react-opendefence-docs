@@ -38,15 +38,22 @@ interface SidebarProps {
   /** Locale whose sidebar JSON to load (en when falling back). */
   contentLocale: Locale;
   manifest: LocaleManifest;
-  collection: string;
+  /** The open book, if any — the Develop shelf has none. */
+  collection?: string;
+  /** Forces the dev spine where no book identifies the section. */
+  section?: "dev";
   currentSlug?: string;
   onNavigate?: () => void;
 }
 
-function isDevBook(manifest: LocaleManifest, collection: string): boolean {
+function isDevBook(manifest: LocaleManifest, collection?: string): boolean {
   return (
     manifest.collections.find((c) => c.slug === collection)?.section === "dev"
   );
+}
+
+function isDevSpine(props: SidebarProps): boolean {
+  return props.section === "dev" || isDevBook(props.manifest, props.collection);
 }
 
 /**
@@ -58,7 +65,7 @@ export function SidebarNav(props: SidebarProps) {
   const meta = props.manifest.collections.find(
     (c) => c.slug === props.collection,
   );
-  const isDev = meta?.section === "dev";
+  const isDev = isDevSpine(props);
 
   return (
     <aside className="hidden w-64 shrink-0 overflow-y-auto border-r border-sidebar-border bg-sidebar md:block">
@@ -75,11 +82,7 @@ export function SidebarNav(props: SidebarProps) {
 
 /** The tree itself, no aside chrome — desktop aside + mobile contents sheet. */
 export function SidebarBody(props: SidebarProps) {
-  return isDevBook(props.manifest, props.collection) ? (
-    <DevDocsNav {...props} />
-  ) : (
-    <BookNav {...props} />
-  );
+  return isDevSpine(props) ? <DevDocsNav {...props} /> : <BookNav {...props} />;
 }
 
 function BookNav({
@@ -94,6 +97,7 @@ function BookNav({
   const [sidebar, setSidebar] = useState<SidebarConfig>();
 
   useEffect(() => {
+    if (!collection) return;
     let cancelled = false;
     loadSidebar(contentLocale, collection)
       .then((config) => {
@@ -107,7 +111,7 @@ function BookNav({
     };
   }, [contentLocale, collection]);
 
-  if (!sidebar) return null;
+  if (!sidebar || !collection) return null;
   const client = resolveClient(manifest, collection, view);
 
   return (

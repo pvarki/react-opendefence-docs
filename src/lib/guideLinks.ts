@@ -15,8 +15,8 @@ const ISSUES_URL: Record<string, string> = {
   // "guides/tak-guide": "https://github.com/pvarki/<repo>/issues/new",
 };
 
-export function issuesUrl(collection: string): string {
-  return ISSUES_URL[collection] ?? DEFAULT_ISSUES_URL;
+export function issuesUrl(collection?: string): string {
+  return (collection ? ISSUES_URL[collection] : undefined) ?? DEFAULT_ISSUES_URL;
 }
 
 /**
