@@ -181,7 +181,14 @@
     "searching": "Searching…"
   },
   "blocks": {
-    "youtubeTitle": "YouTube video"
+    "youtubeTitle": "YouTube video",
+    "copy": "Copy code",
+    "copied": "Copied",
+    "expandDiagram": "Expand diagram",
+    "diagram": "Diagram",
+    "zoomIn": "Zoom in",
+    "zoomOut": "Zoom out",
+    "zoomReset": "Reset zoom"
   },
   "apiRef": {
     "title": "API Reference",

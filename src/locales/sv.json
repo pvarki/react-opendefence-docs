@@ -181,7 +181,14 @@
     "searching": "Söker…"
   },
   "blocks": {
-    "youtubeTitle": "YouTube-video"
+    "youtubeTitle": "YouTube-video",
+    "copy": "Kopiera kod",
+    "copied": "Kopierat",
+    "expandDiagram": "Förstora diagram",
+    "diagram": "Diagram",
+    "zoomIn": "Zooma in",
+    "zoomOut": "Zooma ut",
+    "zoomReset": "Återställ zoom"
   },
   "devNav": {
     "title": "Utvecklardokumentation",

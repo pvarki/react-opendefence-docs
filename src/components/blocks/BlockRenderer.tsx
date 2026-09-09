@@ -1,8 +1,49 @@
+import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
+import { Check, Copy } from "lucide-react";
 import type { Block } from "@shared/content-schema";
+import { BlockAction } from "@/components/blocks/BlockAction";
 import { HtmlBlock } from "@/components/blocks/HtmlBlock";
 import { MermaidBlock } from "@/components/blocks/MermaidBlock";
 import { Slideset } from "@/components/slides/Slideset";
+
+const CAN_COPY = typeof navigator !== "undefined" && !!navigator.clipboard;
+
+function CodeBlock({ html }: { html: string }) {
+  const { t } = useTranslation();
+  const ref = useRef<HTMLDivElement>(null);
+  const [copied, setCopied] = useState(false);
+
+  useEffect(() => {
+    if (!copied) return;
+    const timer = setTimeout(() => setCopied(false), 2000);
+    return () => clearTimeout(timer);
+  }, [copied]);
+
+  const copy = () => {
+    const code = ref.current?.querySelector("code")?.textContent;
+    if (!code) return;
+    void navigator.clipboard.writeText(code).then(() => setCopied(true));
+  };
+
+  return (
+    <div className="relative my-6 text-sm">
+      <div
+        ref={ref}
+        // shiki output, generated and sanitized at build time
+        dangerouslySetInnerHTML={{ __html: html }}
+      />
+      {CAN_COPY && (
+        <BlockAction
+          icon={copied ? Check : Copy}
+          label={copied ? t("blocks.copied") : t("blocks.copy")}
+          active={copied}
+          onClick={copy}
+        />
+      )}
+    </div>
+  );
+}
 
 export function BlockRenderer({ blocks }: { blocks: Block[] }) {
   const { t } = useTranslation();
@@ -42,14 +83,7 @@ export function BlockRenderer({ blocks }: { blocks: Block[] }) {
               </figure>
             );
           case "code":
-            return (
-              <div
-                key={i}
-                className="my-6 text-sm"
-                // shiki output, generated and sanitized at build time
-                dangerouslySetInnerHTML={{ __html: block.html }}
-              />
-            );
+            return <CodeBlock key={i} html={block.html} />;
           case "mermaid":
             return (
               <MermaidBlock key={i} code={block.code} title={block.title} />
