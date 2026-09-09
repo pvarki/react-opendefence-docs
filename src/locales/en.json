@@ -206,7 +206,8 @@
     "releaseNotes": "Release notes",
     "notes": "Notes",
     "changelog": "Changelog",
-    "nothingYet": "Nothing to show here yet."
+    "nothingYet": "Nothing to show here yet.",
+    "loadFailed": "This document could not be loaded. Check your connection and try again."
   },
   "pwa": {
     "lead": "Install this site as an app on your device — once installed it also works offline.",

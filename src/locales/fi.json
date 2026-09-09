@@ -206,7 +206,8 @@
     "releaseNotes": "Julkaisutiedot",
     "notes": "Muistiinpanot",
     "changelog": "Muutosloki",
-    "nothingYet": "Täällä ei ole vielä mitään näytettävää."
+    "nothingYet": "Täällä ei ole vielä mitään näytettävää.",
+    "loadFailed": "Asiakirjan lataaminen ei onnistunut. Tarkista verkkoyhteys ja yritä uudelleen."
   },
   "pwa": {
     "lead": "Asenna tämä sivusto sovellukseksi laitteellesi — asennettuna se toimii myös ilman verkkoyhteyttä.",

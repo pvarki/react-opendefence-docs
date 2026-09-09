@@ -7,12 +7,7 @@ import { withBase } from "@/lib/base";
 
 /** The developer-docs spine, shared by the sidebar, the shelf and the sheets. */
 
-type DevSectionKey =
-  | "start"
-  | "platform"
-  | "core"
-  | "integrations"
-  | "project";
+type DevSectionKey = "start" | "platform" | "core" | "integrations" | "project";
 
 const SECTIONS: {
   key: DevSectionKey;
@@ -81,7 +76,7 @@ export interface ReleaseComponent {
   releaseNotesFile?: string;
 }
 
-async function fetchJson<T>(path: string): Promise<T | undefined> {
+export async function fetchJson<T>(path: string): Promise<T | undefined> {
   try {
     const res = await fetch(withBase(path));
     return res.ok ? ((await res.json()) as T) : undefined;
@@ -121,6 +116,46 @@ export async function releasesForBook(
 ): Promise<ReleaseComponent | undefined> {
   const id = RELEASE_DOC_SOURCES.find((s) => s.book === book)?.id;
   return (await loadComponents()).find((c) => c.id === id);
+}
+
+/** The version a ?v= tag selects, falling back to the newest. */
+export function resolveVersion<T extends { tag: string }>(
+  versions: T[],
+  tag?: string,
+): T | undefined {
+  return versions.find((v) => v.tag === tag) ?? versions[0];
+}
+
+/** Path of a pre-rendered release doc, or undefined when there is none. */
+export function refDocPath(
+  component: ReleaseComponent,
+  view: Exclude<DevRefKind, "api">,
+  release?: { file: string },
+): string | undefined {
+  const base = `/release-docs/${component.id}`;
+  if (view === "releases") {
+    return release ? `${base}/releases/${release.file}` : undefined;
+  }
+  const file =
+    view === "changelog" ? component.changelogFile : component.releaseNotesFile;
+  return file ? `${base}/${file}` : undefined;
+}
+
+const docs = new Map<string, Promise<{ html: string } | undefined>>();
+
+/** Fetched once per session; a failure is not cached, so it can retry. */
+export function loadRefDoc(
+  path: string,
+): Promise<{ html: string } | undefined> {
+  let doc = docs.get(path);
+  if (!doc) {
+    doc = fetchJson<{ html: string }>(path).then((loaded) => {
+      if (!loaded) docs.delete(path);
+      return loaded;
+    });
+    docs.set(path, doc);
+  }
+  return doc;
 }
 
 let cached: Promise<DevRefsByBook> | undefined;

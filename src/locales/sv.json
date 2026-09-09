@@ -206,7 +206,8 @@
     "releaseNotes": "Versionsinformation",
     "notes": "Anteckningar",
     "changelog": "Ändringslogg",
-    "nothingYet": "Det finns inget att visa här ännu."
+    "nothingYet": "Det finns inget att visa här ännu.",
+    "loadFailed": "Dokumentet kunde inte läsas in. Kontrollera anslutningen och försök igen."
   },
   "pwa": {
     "lead": "Installera den här webbplatsen som en app på din enhet — installerad fungerar den även utan nätverk.",
