@@ -27,6 +27,7 @@ import path from "node:path";
 import { pathToFileURL } from "node:url";
 
 import {
+  DEFAULT_LOCALE,
   LOCALES,
   PageDocSchema,
   type Locale,
@@ -86,9 +87,15 @@ function issue(
 const HREF_PATTERN = /href="([^"]*)"/g;
 const IMG_SRC_PATTERN = /<img\b[^>]*?\bsrc="([^"]*)"/g;
 
-// Real app routes that are not content pages (so they aren't in the manifest);
-// links to them are valid. Keyed without the /{locale}/ prefix.
-const NON_CONTENT_ROUTES = new Set(["dev/api", "dev/releases"]);
+const DEV_REF_VIEWS = new Set(["api", "releases", "notes", "changelog"]);
+
+/** The dev reference route /{locale}/dev/{book}/{view}, if the key is one. */
+export function parseDevRefRoute(
+  routeKey: string,
+): { book: string; view: string } | undefined {
+  const match = routeKey.match(/^dev\/([^/]+)\/([^/]+)$/);
+  return match ? { book: match[1], view: match[2] } : undefined;
+}
 
 function extractAll(pattern: RegExp, html: string): string[] {
   const out: string[] = [];
@@ -292,7 +299,26 @@ export async function validateDocs(
       for (const href of collectHrefs(page)) {
         const route = parseRouteHref(href);
         if (!route) continue;
-        if (NON_CONTENT_ROUTES.has(route.routeKey)) continue;
+        const devRef = parseDevRefRoute(route.routeKey);
+        if (devRef) {
+          // Dev books are en-only, and the route falls back to en like the reader.
+          const hasBook = [route.locale, DEFAULT_LOCALE].some((l) =>
+            manifests.get(l)?.collections?.some((c) => c.slug === devRef.book),
+          );
+          if (!DEV_REF_VIEWS.has(devRef.view) || !hasBook) {
+            issues.push(
+              issue(
+                "error",
+                "broken-internal-link",
+                `Link "${href}" is not a dev reference route`,
+                locale,
+                page.collection,
+                page.slug,
+              ),
+            );
+          }
+          continue;
+        }
         if (!routeSets.get(route.locale)?.has(route.routeKey)) {
           issues.push(
             issue(
