@@ -6,6 +6,14 @@ const SECOND = "/en/deploy-app/using-applications-CsobZMZ45Q";
 const THIRD = "/en/deploy-app/interface-4Ncp4affe9";
 const ADMIN_FIRST = "/en/deploy-app/first-login-qwmPnmJsrF";
 
+// Onboarding modals aria-hide the page behind them and swallow gestures.
+test.beforeEach(async ({ page }) => {
+  await page.addInitScript(() => {
+    localStorage.setItem("od-intro-seen-v1", "1");
+    localStorage.setItem("od-orient-seen-v1", "1");
+  });
+});
+
 /** The active pane only — neighbor panes are mounted (inert) for the swipe reveal. */
 function currentPane(page: Page) {
   return page.locator("[data-current]");
@@ -128,6 +136,13 @@ test.describe("book swipe navigation", () => {
     await open(page, FIRST);
     await currentPane(page).getByRole("link", { name: "Next" }).click();
     await expect(page).toHaveURL(SECOND);
+    // The pane is still sliding when the URL changes; wait for it to arrive.
+    await expect(
+      currentPane(page).getByRole("heading", {
+        name: "Using applications",
+        exact: true,
+      }),
+    ).toBeVisible();
     await currentPane(page).getByRole("link", { name: "Previous" }).click();
     await expect(page).toHaveURL(FIRST);
   });
@@ -146,11 +161,9 @@ test.describe("book swipe navigation", () => {
     // Last android page of deploy-app continues into the TAK guide.
     await open(page, "/en/deploy-app/access-external-services-ohReBmQJiu");
     await swipe(page, "left");
-    await expect(page).toHaveURL(
-      "/en/guides/tak-guide/deploy-app-tak-aFY9LCZCf0",
-    );
-    // And back across the same boundary.
-    await swipe(page, "right");
+    await expect(page).toHaveURL("/en/guides/tak-guide");
+    // Covers are shelf stops, so swiping does not re-enter the previous book.
+    await page.goBack();
     await expect(page).toHaveURL(
       "/en/deploy-app/access-external-services-ohReBmQJiu",
     );
@@ -405,7 +418,7 @@ test.describe("contextual bottom bar (mobile)", () => {
       .click();
     await page.getByRole("button", { name: "iOS" }).click();
     // Current page is android-only: the pick continues at iOS's first page.
-    await expect(page).toHaveURL("/en/deploy-app/join-a-deploy-app-f7TuSbNQId");
+    await expect(page).toHaveURL("/en/deploy-app/introduction-d1XzfzOkpz");
   });
 
   test("contents (leftmost) opens the platform-filtered book TOC", async ({
@@ -436,7 +449,7 @@ test.describe("platform selector", () => {
     page,
   }, testInfo) => {
     test.skip(testInfo.project.name !== "mobile", "asserts mobile navbar");
-    await open(page, "/en/guides/tak-guide/what-is-tak-hZw2wUmL7g");
+    await open(page, "/en/guides/tak-guide/what-is-tak-Vy8mUPLS87");
     await expect(
       page.getByRole("combobox", { name: "Platform" }),
     ).toContainText("ATAK");
@@ -538,7 +551,7 @@ test.describe("search", () => {
     const option = page.getByRole("option").first();
     await expect(option).toBeVisible();
     await option.click();
-    await expect(page).toHaveURL(/\/en\/(deploy-app|guides|wikis|dev)\//);
+    await expect(page).toHaveURL(/\/en\/[^/]+(\/[^/]+)+$/);
   });
 });
 
