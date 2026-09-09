@@ -58,6 +58,7 @@ export const Route = createFileRoute("/$locale/dev/$book/$view")({
 
     return {
       view,
+      collection: params.book,
       contentLocale: inOwn ? context.locale : DEFAULT_LOCALE,
       manifest,
       source: await specForBook(params.book),
