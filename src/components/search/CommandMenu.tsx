@@ -85,7 +85,7 @@ export function CommandMenu() {
                   value={hit.url}
                   onSelect={() => {
                     setOpen(false);
-                    void navigate({ to: hit.url });
+                    void navigate({ to: hit.to, search: hit.search });
                   }}
                 >
                   <div className="min-w-0">

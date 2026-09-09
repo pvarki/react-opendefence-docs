@@ -9,6 +9,9 @@
 
 export interface SearchHit {
   url: string;
+  /** url split for the router: a query string in `to` is not parsed. */
+  to: string;
+  search: Record<string, string>;
   title: string;
   collection: string;
   excerpt: string;
@@ -64,8 +67,17 @@ export async function searchDocs(
   const top = await Promise.all(results.slice(0, limit).map((r) => r.data()));
   return top.map((data) => ({
     url: data.url,
+    ...splitUrl(data.url),
     title: data.meta.title ?? data.url,
     collection: data.meta.collection ?? "",
     excerpt: data.excerpt,
   }));
+}
+
+export function splitUrl(url: string): {
+  to: string;
+  search: Record<string, string>;
+} {
+  const [to, query] = url.split("?");
+  return { to, search: Object.fromEntries(new URLSearchParams(query)) };
 }

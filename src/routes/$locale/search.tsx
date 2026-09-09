@@ -52,7 +52,8 @@ function SearchPage() {
             {hits.map((hit) => (
               <li key={hit.url}>
                 <Link
-                  to={hit.url}
+                  to={hit.to}
+                  search={hit.search}
                   className="block rounded-lg px-3 py-2.5 hover:bg-card"
                 >
                   <p className="font-medium">{hit.title}</p>
