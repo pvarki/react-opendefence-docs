@@ -181,7 +181,14 @@
     "searching": "Haetaan…"
   },
   "blocks": {
-    "youtubeTitle": "YouTube-video"
+    "youtubeTitle": "YouTube-video",
+    "copy": "Kopioi koodi",
+    "copied": "Kopioitu",
+    "expandDiagram": "Suurenna kaavio",
+    "diagram": "Kaavio",
+    "zoomIn": "Lähennä",
+    "zoomOut": "Loitonna",
+    "zoomReset": "Palauta zoomaus"
   },
   "devNav": {
     "title": "Kehittäjän dokumentaatio",
