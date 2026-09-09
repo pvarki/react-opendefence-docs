@@ -51,8 +51,12 @@ function entry(slug: string, locale: string, order: number): ManifestPage {
   };
 }
 
-function manifest(locale: "en" | "fi", pages: ManifestPage[]): LocaleManifest {
-  return { schemaVersion: 1, locale, generatedAt: NOW, collections: [], pages };
+function manifest(
+  locale: "en" | "fi",
+  pages: ManifestPage[],
+  collections: LocaleManifest["collections"] = [],
+): LocaleManifest {
+  return { schemaVersion: 1, locale, generatedAt: NOW, collections, pages };
 }
 
 describe("validateDocs", () => {
@@ -79,14 +83,25 @@ describe("validateDocs", () => {
     // en manifest: welcome, two duplicate-base slugs, slides, empty, ghost (no file)
     await writeJson(
       path.join(en, "manifest.json"),
-      manifest("en", [
-        entry("welcome-Aa11111111", "en", 0),
-        entry("dup-Aa12345678", "en", 1),
-        entry("dup-Bb87654321", "en", 2),
-        entry("slides-Ee11111111", "en", 3),
-        entry("empty-Ff11111111", "en", 4),
-        entry("ghost-Cc11111111", "en", 5), // missing-page-file
-      ]),
+      manifest(
+        "en",
+        [
+          entry("welcome-Aa11111111", "en", 0),
+          entry("dup-Aa12345678", "en", 1),
+          entry("dup-Bb87654321", "en", 2),
+          entry("slides-Ee11111111", "en", 3),
+          entry("empty-Ff11111111", "en", 4),
+          entry("ghost-Cc11111111", "en", 5), // missing-page-file
+        ],
+        [
+          {
+            slug: "architecture",
+            label: "Architecture",
+            section: "dev",
+            order: 0,
+          },
+        ],
+      ),
     );
     await writeJson(
       path.join(fi, "manifest.json"),
@@ -105,6 +120,11 @@ describe("validateDocs", () => {
             html:
               '<p><a href="/fi/deploy-app/sivu-Bb22222222">ok</a>' +
               '<a href="/en/deploy-app/nope-Zz99999999">broken</a>' +
+              '<a href="/en/dev/architecture/api">dev ref ok</a>' +
+              '<a href="/fi/dev/architecture/changelog">dev ref en fallback</a>' +
+              '<a href="/en/dev/architecture/nope">bad view</a>' +
+              '<a href="/en/dev/not-a-book/api">bad book</a>' +
+              '<a href="/en/dev/api">retired route</a>' +
               '<a href="https://example.com/x">external</a>' +
               '<a href="#anchor">anchor</a>' +
               '<img src="/content/images/en/attachments/missing.webp"></p>',
@@ -179,13 +199,19 @@ describe("validateDocs", () => {
 
   it("flags broken internal links but accepts resolvable/external/anchor hrefs", () => {
     const broken = byCode("broken-internal-link");
-    expect(broken).toHaveLength(1);
+    expect(broken).toHaveLength(4);
     expect(broken[0]).toMatchObject({
       level: "error",
       locale: "en",
       slug: "welcome-Aa11111111",
     });
-    expect(broken[0].message).toContain("/en/deploy-app/nope-Zz99999999");
+    const messages = broken.map((i) => i.message).join("\n");
+    expect(messages).toContain("/en/deploy-app/nope-Zz99999999");
+    expect(messages).toContain("/en/dev/architecture/nope");
+    expect(messages).toContain("/en/dev/not-a-book/api");
+    expect(messages).toContain('"/en/dev/api"');
+    expect(messages).not.toContain("/en/dev/architecture/api");
+    expect(messages).not.toContain("/fi/dev/architecture/changelog");
   });
 
   it("flags missing image files (inline <img> included)", () => {
