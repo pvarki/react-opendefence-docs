@@ -1,6 +1,13 @@
 import { describe, expect, it } from "vitest";
 import { SCHEMA_VERSION, type LocaleManifest } from "@shared/content-schema";
-import { devNavSections, refsFrom, type DevRefsByBook } from "./devNav";
+import {
+  devNavSections,
+  refDocPath,
+  refsFrom,
+  resolveVersion,
+  type DevRefsByBook,
+  type ReleaseComponent,
+} from "./devNav";
 
 const manifest = (devSlugs: string[]): LocaleManifest => ({
   schemaVersion: SCHEMA_VERSION,
@@ -102,5 +109,37 @@ describe("refsFrom", () => {
       "changelog",
     ]);
     expect(refs.get("develop-deploy-app")).toBeUndefined();
+  });
+});
+
+describe("resolveVersion", () => {
+  const versions = [{ tag: "v2" }, { tag: "v1" }];
+
+  it("picks the tagged version, else the newest", () => {
+    expect(resolveVersion(versions, "v1")).toEqual({ tag: "v1" });
+    expect(resolveVersion(versions, "nope")).toEqual({ tag: "v2" });
+    expect(resolveVersion(versions)).toEqual({ tag: "v2" });
+    expect(resolveVersion([], "v1")).toBeUndefined();
+  });
+});
+
+describe("refDocPath", () => {
+  const component: ReleaseComponent = {
+    id: "python-matrix-rmapi",
+    name: "Matrix",
+    releases: [{ tag: "v1.3.2", file: "v1.3.2.json" }],
+    changelogFile: "changelog.json",
+  };
+
+  it("builds a path per view, and none when the file is absent", () => {
+    expect(refDocPath(component, "releases", { file: "v1.3.2.json" })).toBe(
+      "/release-docs/python-matrix-rmapi/releases/v1.3.2.json",
+    );
+    expect(refDocPath(component, "changelog")).toBe(
+      "/release-docs/python-matrix-rmapi/changelog.json",
+    );
+    // No release picked, and no release-notes file synced.
+    expect(refDocPath(component, "releases")).toBeUndefined();
+    expect(refDocPath(component, "notes")).toBeUndefined();
   });
 });
