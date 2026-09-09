@@ -16,6 +16,7 @@ import {
   type SidebarConfig,
 } from "@shared/content-schema";
 import { COVER_HEROES } from "@/lib/cardImages";
+import type { BookContext } from "@/lib/bookContext";
 import i18n from "@/lib/i18n";
 import { loadManifest, loadPage, loadSidebar } from "@/lib/content/loader";
 import {
@@ -42,15 +43,10 @@ import { loadDevRefs, type DevRef } from "@/lib/devNav";
 import { ReaderBar } from "@/components/shell/ReaderBar";
 import { Button } from "@/components/ui/button";
 
-export interface ReaderData {
+export interface ReaderData extends BookContext {
   kind: "cover" | "page";
-  manifest: LocaleManifest;
-  /** Locale the content actually comes from (en when falling back). */
-  contentLocale: Locale;
   /** True when the URL locale has no translation and en content is shown. */
   fallback: boolean;
-  collection: string;
-  slug?: string;
   pages: ManifestPage[];
 }
 

@@ -14,6 +14,7 @@ import {
   useReadingView,
 } from "@/lib/platform";
 import { resolveClient } from "@/lib/content/neighbors";
+import { useBookContext } from "@/lib/bookContext";
 import { useReaderData } from "@/lib/useReaderData";
 import { ContentsSheet } from "@/components/shell/ContentsDrawer";
 import { PlatformIcon } from "@/components/shell/PlatformIcon";
@@ -36,6 +37,7 @@ export function TabBar() {
   const locale = params.locale ?? DEFAULT_LOCALE;
   const contentLocale = normalizeLocale(locale) ?? DEFAULT_LOCALE;
   const reader = useReaderData();
+  const book = useBookContext();
   const view = useReadingView();
   const router = useRouter();
   const canGoBack = useCanGoBack();
@@ -139,12 +141,12 @@ export function TabBar() {
           </Link>
         </div>
 
-        {reader ? (
+        {book ? (
           <ContentsSheet
             open={contentsOpen}
             onOpenChange={setContentsOpen}
             locale={locale}
-            reader={reader}
+            book={book}
           />
         ) : (
           <SiteContentsSheet

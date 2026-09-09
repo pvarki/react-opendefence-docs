@@ -12,7 +12,7 @@ import {
 } from "@/lib/platform";
 import { stripBase } from "@/lib/base";
 import { readingOrder, resolveClient } from "@/lib/content/neighbors";
-import type { ReaderData } from "@/routes/$locale/$";
+import type { BookContext } from "@/lib/bookContext";
 
 /**
  * One source for platform/client switching, shared by the navbar selector,
@@ -21,7 +21,7 @@ import type { ReaderData } from "@/routes/$locale/$";
  * generic platform list. Picking while reading a page that doesn't exist in
  * the chosen view relocates to that view's first page of the current book.
  */
-export function usePlatformPicker(reader?: ReaderData) {
+export function usePlatformPicker(reader?: BookContext) {
   const view = useReadingView();
   const navigate = useNavigate();
   const params = useParams({ strict: false });

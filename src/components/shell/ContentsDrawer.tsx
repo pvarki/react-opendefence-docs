@@ -9,13 +9,13 @@ import { SidebarBody } from "@/components/shell/SidebarNav";
 import { usePlatformPicker } from "@/lib/usePlatformPicker";
 import { PlatformList } from "@/components/shell/PlatformList";
 import { GuideIssuesLink } from "@/components/shell/GuideIssuesLink";
-import type { ReaderData } from "@/routes/$locale/$";
+import type { BookContext } from "@/lib/bookContext";
 
 interface ContentsSheetProps {
   open: boolean;
   onOpenChange: (open: boolean) => void;
   locale: string;
-  reader: ReaderData;
+  book: BookContext;
 }
 
 /**
@@ -28,12 +28,12 @@ export function ContentsSheet({
   open,
   onOpenChange,
   locale,
-  reader,
+  book,
 }: ContentsSheetProps) {
   const { t } = useTranslation();
-  const { options, active, pick, hasClients } = usePlatformPicker(reader);
-  const collection = reader.manifest.collections.find(
-    (c) => c.slug === reader.collection,
+  const { options, active, pick, hasClients } = usePlatformPicker(book);
+  const collection = book.manifest.collections.find(
+    (c) => c.slug === book.collection,
   );
   const isDev = collection?.section === "dev";
 
@@ -46,7 +46,7 @@ export function ContentsSheet({
               ? t("devNav.title")
               : (collection?.label ?? t("nav.contents"))}
           </DrawerTitle>
-          <GuideIssuesLink collection={reader.collection} />
+          <GuideIssuesLink collection={book.collection} />
         </div>
         <DrawerDescription className="sr-only" />
         <nav className="overflow-y-auto px-4 pb-8">
@@ -67,10 +67,10 @@ export function ContentsSheet({
           )}
           <SidebarBody
             locale={locale}
-            contentLocale={reader.contentLocale}
-            manifest={reader.manifest}
-            collection={reader.collection}
-            currentSlug={reader.slug}
+            contentLocale={book.contentLocale}
+            manifest={book.manifest}
+            collection={book.collection}
+            currentSlug={book.slug}
             onNavigate={() => onOpenChange(false)}
           />
         </nav>
