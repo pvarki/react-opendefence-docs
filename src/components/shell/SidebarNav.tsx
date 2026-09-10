@@ -135,6 +135,7 @@ export function SidebarItems({
   currentSlug,
   onNavigate,
   defaultOpen = false,
+  variant = "rail",
 }: {
   items: SidebarItem[];
   locale: string;
@@ -143,7 +144,11 @@ export function SidebarItems({
   onNavigate?: () => void;
   /** Open all groups initially (used by the book cover's full TOC). */
   defaultOpen?: boolean;
+  /** "cover" marks pages with an icon so they read as links, not plain text. */
+  variant?: "rail" | "cover";
 }) {
+  const cover = variant === "cover";
+
   return (
     <ul className="space-y-0.5">
       {items.map((item) =>
@@ -156,6 +161,7 @@ export function SidebarItems({
             currentSlug={currentSlug}
             onNavigate={onNavigate}
             defaultOpen={defaultOpen}
+            variant={variant}
           />
         ) : item.type === "group" ? (
           <SidebarGroup
@@ -166,6 +172,7 @@ export function SidebarItems({
             currentSlug={currentSlug}
             onNavigate={onNavigate}
             defaultOpen={defaultOpen}
+            variant={variant}
           />
         ) : item.type === "doc" && item.slug ? (
           <li key={item.id}>
@@ -174,12 +181,18 @@ export function SidebarItems({
               params={{ locale, _splat: `${collection}/${item.slug}` }}
               onClick={onNavigate}
               className={cn(
-                "block rounded-md px-2 py-1.5 text-sm transition-colors",
+                "rounded-md px-2 py-1.5 text-sm transition-colors",
+                cover ? "group flex items-center gap-2" : "block",
                 item.slug === currentSlug
                   ? "bg-muted font-medium text-foreground"
-                  : "text-muted-foreground hover:bg-muted hover:text-foreground",
+                  : cover
+                    ? "text-foreground/90 hover:bg-muted hover:text-primary"
+                    : "text-muted-foreground hover:bg-muted hover:text-foreground",
               )}
             >
+              {cover && (
+                <FileText className="size-3.5 shrink-0 text-primary/70 transition-colors group-hover:text-primary" />
+              )}
               {item.label}
             </Link>
           </li>
@@ -223,6 +236,7 @@ function SidebarToporg({
   currentSlug,
   onNavigate,
   defaultOpen = false,
+  variant = "rail",
 }: {
   item: SidebarItem;
   locale: string;
@@ -230,6 +244,7 @@ function SidebarToporg({
   currentSlug?: string;
   onNavigate?: () => void;
   defaultOpen?: boolean;
+  variant?: "rail" | "cover";
 }) {
   const hasDirectChapter = !!item.children?.some(
     (c) => c.type === "doc" || c.type === "link",
@@ -270,6 +285,7 @@ function SidebarToporg({
           currentSlug={currentSlug}
           onNavigate={onNavigate}
           defaultOpen={defaultOpen}
+          variant={variant}
         />
       )}
     </li>
@@ -283,6 +299,7 @@ function SidebarGroup({
   currentSlug,
   onNavigate,
   defaultOpen = false,
+  variant = "rail",
   href,
   extra,
   active,
@@ -293,6 +310,7 @@ function SidebarGroup({
   currentSlug?: string;
   onNavigate?: () => void;
   defaultOpen?: boolean;
+  variant?: "rail" | "cover";
   /** Splat to the group's own page; given, the label becomes a link. */
   href?: string;
   /** Rendered above the children (a book's API reference / changelog). */
@@ -367,6 +385,7 @@ function SidebarGroup({
               currentSlug={currentSlug}
               onNavigate={onNavigate}
               defaultOpen={defaultOpen}
+              variant={variant}
             />
           )}
         </div>
@@ -418,7 +437,12 @@ function DevRefLink({
   );
 
   return variant === "button" ? (
-    <Button asChild variant="outline">
+    <Button
+      asChild
+      variant="ghost"
+      size="sm"
+      className="rounded-full border border-border text-muted-foreground hover:border-primary hover:text-primary"
+    >
       {link}
     </Button>
   ) : (

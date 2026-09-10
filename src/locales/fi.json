@@ -153,6 +153,7 @@
     "previous": "Edellinen",
     "next": "Seuraava",
     "startReading": "Aloita lukeminen",
+    "offline": "Offline",
     "endOfBook": "Sait valmiiksi: {{book}}",
     "notTranslated": "Tätä sivua ei ole vielä suomennettu. Näytetään englanninkielinen sisältö.",
     "comingSoon": "Tämä sivu on työn alla",

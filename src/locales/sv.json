@@ -153,6 +153,7 @@
     "previous": "Föregående",
     "next": "Nästa",
     "startReading": "Börja läsa",
+    "offline": "Offline",
     "endOfBook": "Du har läst klart {{book}}",
     "notTranslated": "Denna sida är inte översatt ännu. Visar engelskt innehåll.",
     "comingSoon": "Denna sida är under arbete",
