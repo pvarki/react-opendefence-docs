@@ -21,6 +21,7 @@ import i18n from "@/lib/i18n";
 import { loadManifest, loadPage, loadSidebar } from "@/lib/content/loader";
 import {
   filterSidebarByClient,
+  filterSidebarByPlatform,
   readingOrder,
   resolveClient,
   resolveSplat,
@@ -297,7 +298,7 @@ function BookCover({
           />
         </div>
         {refs.length > 0 && (
-          <div className="mt-3">
+          <div className="mt-2.5">
             <DevRefList locale={locale} refs={refs} variant="button" />
           </div>
         )}
@@ -307,12 +308,16 @@ function BookCover({
           </p>
           {sidebar && (
             <SidebarItems
-              items={filterSidebarByClient(
-                sidebar.items,
-                hasClients ? active?.id : undefined,
+              items={filterSidebarByPlatform(
+                filterSidebarByClient(
+                  sidebar.items,
+                  hasClients ? active?.id : undefined,
+                ),
+                view.platform,
               )}
               locale={locale}
               collection={data.collection}
+              variant="cover"
             />
           )}
         </nav>
@@ -405,6 +410,7 @@ function OfflineDownloadButton({
   manifest: LocaleManifest;
   collection: string;
 }) {
+  const { t } = useTranslation();
   const [state, setState] = useState<
     | { phase: "idle" }
     | { phase: "downloading"; done: number; total: number }
@@ -428,7 +434,7 @@ function OfflineDownloadButton({
       {state.phase === "done" ? <Check /> : <Download />}
       {state.phase === "downloading"
         ? `${state.done}/${state.total || "…"}`
-        : "Offline"}
+        : t("reader.offline")}
     </Button>
   );
 }

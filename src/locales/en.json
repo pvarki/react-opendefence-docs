@@ -153,6 +153,7 @@
     "previous": "Previous",
     "next": "Next",
     "startReading": "Start reading",
+    "offline": "Offline",
     "endOfBook": "You finished {{book}}",
     "notTranslated": "This page is not yet translated. Showing English content.",
     "comingSoon": "This page is under development",
