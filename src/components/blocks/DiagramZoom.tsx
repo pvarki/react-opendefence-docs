@@ -45,18 +45,19 @@ function Controls() {
 export default function DiagramZoom({ svg }: { svg: string }) {
   return (
     <TransformWrapper
-      minScale={0.25}
+      minScale={1}
       maxScale={8}
       centerOnInit
       doubleClick={{ mode: "reset" }}
+      wheel={{ step: 0.002 }}
     >
       <Controls />
       <TransformComponent
-        wrapperClass="!h-full !w-full"
-        contentClass="!h-full !w-full items-center justify-center"
+        wrapperClass="h-full! w-full!"
+        contentClass="h-full! w-full! items-center justify-center"
       >
         <div
-          className="[&_svg]:max-w-none! [&_svg]:h-auto"
+          className="flex h-full w-full items-center justify-center [&_svg]:h-full [&_svg]:w-full [&_svg]:max-w-none!"
           dangerouslySetInnerHTML={{ __html: svg }}
         />
       </TransformComponent>

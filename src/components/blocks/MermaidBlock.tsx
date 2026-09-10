@@ -1,9 +1,10 @@
 import { Suspense, lazy, useEffect, useId, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { Maximize2 } from "lucide-react";
+import { Maximize2, X } from "lucide-react";
 import { BlockAction } from "@/components/blocks/BlockAction";
 import {
   Dialog,
+  DialogClose,
   DialogContent,
   DialogDescription,
   DialogTitle,
@@ -86,13 +87,20 @@ export function MermaidBlock({
       <Dialog open={expanded} onOpenChange={setExpanded}>
         <DialogContent
           data-swipe-scope="diagram"
-          showCloseButton
-          className="h-[95dvh] w-[95vw] max-w-none p-0 sm:max-w-none"
+          showCloseButton={false}
+          className="h-[96dvh] w-[97vw] max-w-none border-none p-0 sm:max-w-none"
+          onOpenAutoFocus={(e) => e.preventDefault()}
         >
           <DialogTitle className="sr-only">
             {title ?? t("blocks.diagram")}
           </DialogTitle>
           <DialogDescription className="sr-only" />
+          <DialogClose
+            aria-label={t("common.close")}
+            className="absolute top-2 right-2 z-20 rounded-md border border-border bg-card/90 p-1.5 text-muted-foreground backdrop-blur hover:text-foreground focus-visible:ring-2 focus-visible:ring-ring focus-visible:outline-none"
+          >
+            <X className="size-4" />
+          </DialogClose>
           <Suspense fallback={null}>
             {expanded && svg && <DiagramZoom svg={svg} />}
           </Suspense>
