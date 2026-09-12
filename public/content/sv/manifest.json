@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "locale": "sv",
-  "generatedAt": "2026-09-12T20:11:22.574Z",
+  "generatedAt": "2026-09-12T20:41:11.673Z",
   "collections": [
     {
       "slug": "deploy-app",
@@ -133,7 +133,7 @@
         "Introduktion"
       ],
       "path": "/content/sv/pages/deploy-app/introduktion-8VdRmYg8Vp.json",
-      "updatedAt": "2026-09-12T19:58:54.840Z",
+      "updatedAt": "2026-09-12T20:40:07.841Z",
       "order": 0
     },
     {

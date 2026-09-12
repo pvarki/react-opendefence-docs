@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "locale": "fi",
-  "generatedAt": "2026-09-12T20:11:22.574Z",
+  "generatedAt": "2026-09-12T20:41:11.673Z",
   "collections": [
     {
       "slug": "deploy-app",
@@ -133,7 +133,7 @@
         "Johdanto"
       ],
       "path": "/content/fi/pages/deploy-app/johdanto-pVdcEzIB4j.json",
-      "updatedAt": "2026-09-12T19:58:54.645Z",
+      "updatedAt": "2026-09-12T20:40:07.669Z",
       "order": 0
     },
     {

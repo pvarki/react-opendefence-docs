@@ -699,11 +699,6 @@
     "fi": "/fi/guides/cryptpad-guide/varmuuskopioi-tietosi-DQfftbWf4c",
     "sv": "/sv/guides/cryptpad-guide/sakerhetskopiera-dina-data-yVu1FNdIEb"
   },
-  "introduktion-8VdRmYg8Vp": {
-    "en": "/en/deploy-app/introduction-d1XzfzOkpz",
-    "fi": "/fi/deploy-app/johdanto-pVdcEzIB4j",
-    "sv": "/sv/deploy-app/introduktion-8VdRmYg8Vp"
-  },
   "grundvy-verktyg-och-verktygsfalt-Lpm8S3bYgv": {
     "en": "/en/guides/tak-guide/basic-view-tools-and-toolbar-juXbYsGMih",
     "fi": "/fi/guides/tak-guide/perusnakyma-tyokalut-ja-tyokalupalkki-5cY07BjmD4",
@@ -733,5 +728,10 @@
     "en": "/en/guides/tak-guide/clear-content-lzrtCD0MdO",
     "fi": "/fi/guides/tak-guide/sisallon-tyhjentaminen-RTDgPCCE8y",
     "sv": "/sv/guides/tak-guide/rensa-innehall-q4qalpFEan"
+  },
+  "introduktion-8VdRmYg8Vp": {
+    "en": "/en/deploy-app/introduction-d1XzfzOkpz",
+    "fi": "/fi/deploy-app/johdanto-pVdcEzIB4j",
+    "sv": "/sv/deploy-app/introduktion-8VdRmYg8Vp"
   }
 }

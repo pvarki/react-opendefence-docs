@@ -699,11 +699,6 @@
     "fi": "/fi/deploy-app/ensimmainen-kirjautuminen-w6ucKbFHSI",
     "sv": "/sv/deploy-app/forsta-inloggningen-30j0MZLvzy"
   },
-  "johdanto-pVdcEzIB4j": {
-    "en": "/en/deploy-app/introduction-d1XzfzOkpz",
-    "fi": "/fi/deploy-app/johdanto-pVdcEzIB4j",
-    "sv": "/sv/deploy-app/introduktion-8VdRmYg8Vp"
-  },
   "perusnakyma-tyokalut-ja-tyokalupalkki-5cY07BjmD4": {
     "en": "/en/guides/tak-guide/basic-view-tools-and-toolbar-juXbYsGMih",
     "fi": "/fi/guides/tak-guide/perusnakyma-tyokalut-ja-tyokalupalkki-5cY07BjmD4",
@@ -733,5 +728,10 @@
     "en": "/en/guides/tak-guide/clear-content-lzrtCD0MdO",
     "fi": "/fi/guides/tak-guide/sisallon-tyhjentaminen-RTDgPCCE8y",
     "sv": "/sv/guides/tak-guide/rensa-innehall-q4qalpFEan"
+  },
+  "johdanto-pVdcEzIB4j": {
+    "en": "/en/deploy-app/introduction-d1XzfzOkpz",
+    "fi": "/fi/deploy-app/johdanto-pVdcEzIB4j",
+    "sv": "/sv/deploy-app/introduktion-8VdRmYg8Vp"
   }
 }
