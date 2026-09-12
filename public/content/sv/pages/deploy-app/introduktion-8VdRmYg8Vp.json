@@ -10,7 +10,7 @@
     "Introduktion"
   ],
   "createdAt": "2026-06-18T20:34:50.644Z",
-  "updatedAt": "2026-09-12T19:58:54.840Z",
+  "updatedAt": "2026-09-12T20:40:07.841Z",
   "headings": [],
   "translations": {
     "en": "/en/deploy-app/introduction-d1XzfzOkpz",
@@ -56,9 +56,9 @@
           "html": "<ul>\n<li>Apputvecklare kan göra så att deras app fungerar med Deploy App.</li>\n<li>Detta syftar till att förenkla hur du får ut din app till soldater, både ur soldaternas och ditt perspektiv.</li>\n</ul>\n<p>Bekanta dig med hur du använder Deploy App i följande guide.</p>",
           "images": [
             {
-              "src": "/content/images/sv/attachments/25c1580a29c70523.webp",
-              "width": 2560,
-              "height": 5712
+              "src": "/content/images/sv/attachments/c61f923de7d54d2f.webp",
+              "width": 3360,
+              "height": 1240
             }
           ]
         }
