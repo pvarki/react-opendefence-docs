@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "locale": "fi",
-  "generatedAt": "2026-09-01T16:08:52.470Z",
+  "generatedAt": "2026-09-12T20:11:22.574Z",
   "collections": [
     {
       "slug": "deploy-app",
@@ -133,7 +133,7 @@
         "Johdanto"
       ],
       "path": "/content/fi/pages/deploy-app/johdanto-pVdcEzIB4j.json",
-      "updatedAt": "2026-06-18T20:38:49.834Z",
+      "updatedAt": "2026-09-12T19:58:54.645Z",
       "order": 0
     },
     {
@@ -522,7 +522,7 @@
         "Perusnäkymä, työkalut ja työkalupalkki"
       ],
       "path": "/content/fi/pages/guides/tak-guide/perusnakyma-tyokalut-ja-tyokalupalkki-5cY07BjmD4.json",
-      "updatedAt": "2026-06-18T20:13:44.289Z",
+      "updatedAt": "2026-09-12T19:58:55.295Z",
       "order": 4,
       "platform": "android",
       "clientId": "atak-cIgl1ujs22",
@@ -560,7 +560,7 @@
         "Feeds with Data Sync"
       ],
       "path": "/content/fi/pages/guides/tak-guide/feeds-with-data-sync-EMnuDBTzRY.json",
-      "updatedAt": "2026-06-18T20:13:48.209Z",
+      "updatedAt": "2026-09-12T19:58:55.839Z",
       "order": 6,
       "platform": "android",
       "clientId": "atak-cIgl1ujs22",
@@ -598,7 +598,7 @@
         "Merkin lähettäminen"
       ],
       "path": "/content/fi/pages/guides/tak-guide/merkin-lahettaminen-VFvhZ3yMfm.json",
-      "updatedAt": "2026-06-18T20:13:51.248Z",
+      "updatedAt": "2026-09-12T19:58:56.407Z",
       "order": 8,
       "platform": "android",
       "clientId": "atak-cIgl1ujs22",
@@ -617,7 +617,7 @@
         "Point Dropper - Quick Pic"
       ],
       "path": "/content/fi/pages/guides/tak-guide/point-dropper-quick-pic-dnyOSYWlOg.json",
-      "updatedAt": "2026-06-18T20:13:52.628Z",
+      "updatedAt": "2026-09-12T19:58:56.948Z",
       "order": 9,
       "platform": "android",
       "clientId": "atak-cIgl1ujs22",
@@ -636,7 +636,7 @@
         "GeoChat"
       ],
       "path": "/content/fi/pages/guides/tak-guide/geochat-5kOdqvslhn.json",
-      "updatedAt": "2026-06-18T20:13:54.065Z",
+      "updatedAt": "2026-09-12T19:58:57.485Z",
       "order": 10,
       "platform": "android",
       "clientId": "atak-cIgl1ujs22",
@@ -655,7 +655,7 @@
         "Sisällön tyhjentäminen"
       ],
       "path": "/content/fi/pages/guides/tak-guide/sisallon-tyhjentaminen-RTDgPCCE8y.json",
-      "updatedAt": "2026-06-18T20:13:55.527Z",
+      "updatedAt": "2026-09-12T19:58:58.039Z",
       "order": 11,
       "platform": "android",
       "clientId": "atak-cIgl1ujs22",

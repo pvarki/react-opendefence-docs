@@ -12,7 +12,7 @@
     "Sisällön tyhjentäminen"
   ],
   "createdAt": "2026-06-18T19:26:14.601Z",
-  "updatedAt": "2026-06-18T20:13:55.527Z",
+  "updatedAt": "2026-09-12T19:58:58.039Z",
   "headings": [],
   "translations": {
     "en": "/en/guides/tak-guide/clear-content-lzrtCD0MdO",
@@ -53,30 +53,6 @@
           "layout": "text",
           "html": "<ul>\n<li>Clear Content tyhjentää kaiken ja sulkee sovelluksen. Valmista!</li>\n</ul>",
           "images": []
-        },
-        {
-          "title": "Lukitse molemmat kytkimet tyhjentääksesi",
-          "layout": "image-bottom",
-          "html": "<ul>\n<li>Pyyhkäise molemmat kytkimet oikealle, kunnes niissä lukee <strong>LOCKED</strong>; tämä aktivoi punaisen <strong>Clear Now</strong> -painikkeen.</li>\n<li>Rastita ensin <strong>Clear maps &#x26; imagery</strong>, jos haluat poistaa myös offline-kartat. ATAK sulkeutuu, kun tyhjennys on valmis.</li>\n</ul>",
-          "images": [
-            {
-              "src": "/content/images/fi/attachments/788bec790a8247dc.webp",
-              "width": 249,
-              "height": 169
-            }
-          ]
-        },
-        {
-          "title": "Poista vain osa kohteista",
-          "layout": "image-bottom",
-          "html": "<ul>\n<li>Sen sijaan, että tyhjentäisit kaiken, napauta <strong>Select Items</strong> avataksesi Overlay Manager -monivalintatyökalun ja valitse tarkalleen, mitä poistetaan.</li>\n<li>Napauta <strong>Cancel</strong> palataksesi kartalle. Poistettujen tiedostojen data turmellaan levyllä, joten palautus ei ole mahdollista.</li>\n</ul>",
-          "images": [
-            {
-              "src": "/content/images/fi/attachments/c7f82fa573862bd0.webp",
-              "width": 250,
-              "height": 170
-            }
-          ]
         }
       ]
     }

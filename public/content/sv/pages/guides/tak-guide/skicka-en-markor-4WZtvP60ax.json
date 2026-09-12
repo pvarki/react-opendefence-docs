@@ -12,7 +12,7 @@
     "Skicka en markör"
   ],
   "createdAt": "2026-06-18T19:26:12.190Z",
-  "updatedAt": "2026-06-18T20:13:51.685Z",
+  "updatedAt": "2026-09-12T19:58:56.586Z",
   "headings": [],
   "translations": {
     "en": "/en/guides/tak-guide/sending-a-marker-tbLPq64DLE",
@@ -93,54 +93,6 @@
               "src": "/content/images/sv/attachments/22ab27310be30c0d.webp",
               "width": 1080,
               "height": 2340
-            }
-          ]
-        },
-        {
-          "title": "Öppna markörens radialmeny",
-          "layout": "image-bottom",
-          "html": "<ul>\n<li>Tryck på en markör för att öppna dess radialmeny.</li>\n<li>Välj <strong>Details</strong> för att redigera den, eller <strong>Fine Adjust</strong> och <strong>Polar Coordinates</strong> för att finjustera dess position.</li>\n</ul>",
-          "images": [
-            {
-              "src": "/content/images/sv/attachments/00c599f6b62e304e.webp",
-              "width": 256,
-              "height": 198
-            }
-          ]
-        },
-        {
-          "title": "Ange status och modifierare",
-          "layout": "image-bottom",
-          "html": "<ul>\n<li>I <strong>Details</strong>, ange fältet <strong>Status</strong> (till exempel <strong>Present/Damaged</strong>) för att visa en statusindikator under markören.</li>\n<li>Bocka i <strong>Show Modifiers</strong> för att registrera rörelseriktning, hastighet och plats, och skicka sedan uppdateringen med <strong>Send</strong> eller <strong>Auto Send</strong>.</li>\n</ul>",
-          "images": [
-            {
-              "src": "/content/images/sv/attachments/029fe4cc0794346f.webp",
-              "width": 349,
-              "height": 198
-            }
-          ]
-        },
-        {
-          "title": "Redigera typ och tillhörighet",
-          "layout": "image-bottom",
-          "html": "<ul>\n<li>Använd markörikonen längst upp till vänster i rutan för att ändra <strong>Affiliation</strong>.</li>\n<li>Välj <strong>Type</strong> för att välja en mer specifik kategori i listan.</li>\n</ul>",
-          "images": [
-            {
-              "src": "/content/images/sv/attachments/0ace50673d861f2c.webp",
-              "width": 426,
-              "height": 210
-            }
-          ]
-        },
-        {
-          "title": "Fine Adjust för att flytta den exakt",
-          "layout": "image-bottom",
-          "html": "<ul>\n<li>Välj <strong>Fine Adjust</strong> i radialmenyn för att putta markören till exakt rätt placering.</li>\n<li>Tryck och håll på <strong>Fine Adjust</strong> för att öppna undermenyn och skriva in en <strong>MGRS</strong>- eller koordinatposition direkt.</li>\n</ul>",
-          "images": [
-            {
-              "src": "/content/images/sv/attachments/482f1a04596e73be.webp",
-              "width": 256,
-              "height": 192
             }
           ]
         }

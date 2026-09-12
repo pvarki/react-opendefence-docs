@@ -10,7 +10,7 @@
     "Johdanto"
   ],
   "createdAt": "2026-06-18T20:34:50.100Z",
-  "updatedAt": "2026-06-18T20:38:49.834Z",
+  "updatedAt": "2026-09-12T19:58:54.645Z",
   "headings": [],
   "translations": {
     "en": "/en/deploy-app/introduction-d1XzfzOkpz",
@@ -56,9 +56,9 @@
           "html": "<ul>\n<li>Sovelluskehittäjät voivat tehdä sovelluksensa toimimaan Deploy Appin kanssa.</li>\n<li>Tämä pyrkii yksinkertaistamaan sitä, miten saat sovelluksesi sotilaille, sekä sotilaiden että sinun näkökulmastasi.</li>\n</ul>\n<p>Tutustu Deploy Appin käyttöön seuraavasta oppaasta.</p>",
           "images": [
             {
-              "src": "/content/images/fi/attachments/51dfa90a783a5717.webp",
-              "width": 512,
-              "height": 512
+              "src": "/content/images/fi/attachments/25c1580a29c70523.webp",
+              "width": 2560,
+              "height": 5712
             }
           ]
         }

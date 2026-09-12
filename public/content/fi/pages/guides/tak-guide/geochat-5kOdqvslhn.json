@@ -12,7 +12,7 @@
     "GeoChat"
   ],
   "createdAt": "2026-06-18T19:26:13.858Z",
-  "updatedAt": "2026-06-18T20:13:54.065Z",
+  "updatedAt": "2026-09-12T19:58:57.485Z",
   "headings": [],
   "translations": {
     "en": "/en/guides/tak-guide/geochat-SMWfbwNItT",
@@ -161,30 +161,6 @@
           "layout": "text",
           "html": "<p>GeoChatissa on kolme rajoitusta:</p>\n<ul>\n<li>\n<ol>\n<li>Älä yritä lähettää kuvia / liitteitä, tämä ei toimi käytännössä. Lähetä ne syötteeseen sen sijaan.</li>\n</ol>\n</li>\n<li>\n<ol start=\"2\">\n<li>Vastaanottajan TAK-sovelluksen on oltava auki tai taustalla, jotta hän voi vastaanottaa viestisi.</li>\n</ol>\n</li>\n<li>\n<ol start=\"3\">\n<li>iTAK on epäluotettava GeoChatin ryhmäkeskustelussa, etenkin WinTAK &#x3C;-> iTAK -yhteydessä. Näistä syistä suosittelemme käyttämään Matrixia (Element) yksikön viestintään Deploy Appin kanssa.</li>\n</ol>\n</li>\n</ul>\n<p>Kun olet testannut GeoChatin onnistuneesti, jatka kohtaan <a href=\"/doc/685f6f0f-e7ca-4ba3-807f-568582663e95\">ATAK</a></p>",
           "images": []
-        },
-        {
-          "title": "Tarkista lukutila",
-          "layout": "image-bottom",
-          "html": "<ul>\n<li>Jokainen suoraviesti näyttää <strong>read</strong>-merkin: täytetty valkoinen valintamerkki tarkoittaa, että vastaanottaja on avannut sen, ja täyttämätön tarkoittaa toimitettua mutta ei vielä luettua.</li>\n<li><strong>Messages</strong>-luettelo merkitsee tiloja kuten \"sent to offline user\", jotta tiedät, menikö viestisi perille.</li>\n</ul>",
-          "images": [
-            {
-              "src": "/content/images/fi/attachments/89257cabbbe2780f.webp",
-              "width": 192,
-              "height": 163
-            }
-          ]
-        },
-        {
-          "title": "Luo ryhmä tai lisää ryhmään",
-          "layout": "image-bottom",
-          "html": "<ul>\n<li>Valitse <strong>Contacts</strong>-näkymässä <strong>Group</strong>-kuvake luodaksesi uuden keskusteluryhmän verkossa olevista ja offline-tilassa olevista käyttäjistä; anna <strong>group name</strong> ja paina <strong>Select</strong>.</li>\n<li>Valitse <strong>Select an Existing Group</strong> lisätäksesi käyttäjiä jo olemassa olevaan ryhmään, myös silloin kun he ovat offline-tilassa.</li>\n</ul>",
-          "images": [
-            {
-              "src": "/content/images/fi/attachments/267e23a144e8f3cf.webp",
-              "width": 198,
-              "height": 197
-            }
-          ]
         }
       ]
     }

@@ -263,12 +263,12 @@ function SidebarGroup({
         type="button"
         onClick={() => setOpen((o) => !o)}
         aria-expanded={open}
-        className="flex w-full items-center justify-between rounded-md px-2 py-1.5 text-sm font-medium text-muted-foreground hover:bg-muted hover:text-foreground"
+        className="flex w-full items-center justify-between gap-1 rounded-md px-2 py-1.5 text-left text-sm font-medium text-muted-foreground hover:bg-muted hover:text-foreground"
       >
         {item.label}
         <ChevronDown
           className={cn(
-            "size-4 text-muted-foreground transition-transform",
+            "size-4 shrink-0 text-muted-foreground transition-transform",
             !open && "-rotate-90",
           )}
         />

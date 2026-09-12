@@ -12,7 +12,7 @@
     "Clear Content"
   ],
   "createdAt": "2026-01-24T12:18:25.164Z",
-  "updatedAt": "2026-06-18T20:13:55.096Z",
+  "updatedAt": "2026-09-12T19:58:57.865Z",
   "headings": [],
   "translations": {
     "en": "/en/guides/tak-guide/clear-content-lzrtCD0MdO",
@@ -53,30 +53,6 @@
           "layout": "text",
           "html": "<ul>\n<li>Clear Content empties everything and closes the app. Done!</li>\n</ul>",
           "images": []
-        },
-        {
-          "title": "Lock Both Switches to Wipe",
-          "layout": "image-bottom",
-          "html": "<ul>\n<li>Swipe both switches to the right until they read <strong>LOCKED</strong>; this arms the red <strong>Clear Now</strong> button.</li>\n<li>Tick <strong>Clear maps &#x26; imagery</strong> first if you also want offline maps removed. ATAK exits once the wipe finishes.</li>\n</ul>",
-          "images": [
-            {
-              "src": "/content/images/en/attachments/788bec790a8247dc.webp",
-              "width": 249,
-              "height": 169
-            }
-          ]
-        },
-        {
-          "title": "Delete Only Some Items",
-          "layout": "image-bottom",
-          "html": "<ul>\n<li>Instead of wiping everything, tap <strong>Select Items</strong> to open the Overlay Manager multi-select tool and pick exactly what to remove.</li>\n<li>Tap <strong>Cancel</strong> to back out to the map. Deleted file data is corrupted on disk, so recovery is not possible.</li>\n</ul>",
-          "images": [
-            {
-              "src": "/content/images/en/attachments/c7f82fa573862bd0.webp",
-              "width": 250,
-              "height": 170
-            }
-          ]
         }
       ]
     }

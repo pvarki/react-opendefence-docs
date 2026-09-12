@@ -12,7 +12,7 @@
     "Point Dropper - Quick Pic"
   ],
   "createdAt": "2026-06-18T19:26:12.560Z",
-  "updatedAt": "2026-06-18T20:13:52.628Z",
+  "updatedAt": "2026-09-12T19:58:56.948Z",
   "headings": [],
   "translations": {
     "en": "/en/guides/tak-guide/point-dropper-quick-pic-gxAsonzSXL",
@@ -105,30 +105,6 @@
               "src": "/content/images/fi/attachments/a3a3a3210e81ea7e.webp",
               "width": 2340,
               "height": 1080
-            }
-          ]
-        },
-        {
-          "title": "Liitä tiedosto merkintään",
-          "layout": "image-bottom",
-          "html": "<ul>\n<li>Avaa merkintä ja valitse <strong>Attachments</strong> (paperiliitin) -kuvake lisätäksesi kuvan, videon tai tiedoston.</li>\n<li>Rastita <strong>Auto Send</strong>, niin merkintä päivittyy verkkoon noin 60 sekunnin välein.</li>\n</ul>",
-          "images": [
-            {
-              "src": "/content/images/fi/attachments/029fe4cc0794346f.webp",
-              "width": 349,
-              "height": 198
-            }
-          ]
-        },
-        {
-          "title": "Tarkastele Gallery-näkymässä",
-          "layout": "image-bottom",
-          "html": "<ul>\n<li>Avaa <strong>Gallery</strong>-työkalu selataksesi jokaisen medialiitteen tiedostonimineen ja siihen linkitettyine karttakohteineen.</li>\n<li>Napauta kuvaa ja napauta sitten yläreunan riviä lisätäksesi kuvatekstin.</li>\n</ul>",
-          "images": [
-            {
-              "src": "/content/images/fi/attachments/2782222a4a682e38.webp",
-              "width": 425,
-              "height": 206
             }
           ]
         }
