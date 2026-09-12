@@ -4,45 +4,15 @@
     "fi": "/fi/guides/tak-guide/lataa-atak-liitannaiset-CrjCC07xf1",
     "sv": "/sv/guides/tak-guide/ladda-atak-plugins-TpJcLrKsGu"
   },
-  "basic-view-tools-and-toolbar-juXbYsGMih": {
-    "en": "/en/guides/tak-guide/basic-view-tools-and-toolbar-juXbYsGMih",
-    "fi": "/fi/guides/tak-guide/perusnakyma-tyokalut-ja-tyokalupalkki-5cY07BjmD4",
-    "sv": "/sv/guides/tak-guide/grundvy-verktyg-och-verktygsfalt-Lpm8S3bYgv"
-  },
   "blue-force-tracking-vZTVlgAzX8": {
     "en": "/en/guides/tak-guide/blue-force-tracking-vZTVlgAzX8",
     "fi": "/fi/guides/tak-guide/omien-joukkojen-seuranta-xwhLFahQPe",
     "sv": "/sv/guides/tak-guide/blue-force-tracking-8BMZxsbnV0"
   },
-  "feeds-with-data-sync-thmayduqMx": {
-    "en": "/en/guides/tak-guide/feeds-with-data-sync-thmayduqMx",
-    "fi": "/fi/guides/tak-guide/feeds-with-data-sync-EMnuDBTzRY",
-    "sv": "/sv/guides/tak-guide/feeds-with-data-sync-5yGpc2vgBg"
-  },
   "point-dropper-markers-lsYmFrTvqH": {
     "en": "/en/guides/tak-guide/point-dropper-markers-lsYmFrTvqH",
     "fi": "/fi/guides/tak-guide/point-dropper-merkit-9yamK9nyOX",
     "sv": "/sv/guides/tak-guide/point-dropper-markorer-ADzjTFD2zi"
-  },
-  "sending-a-marker-tbLPq64DLE": {
-    "en": "/en/guides/tak-guide/sending-a-marker-tbLPq64DLE",
-    "fi": "/fi/guides/tak-guide/merkin-lahettaminen-VFvhZ3yMfm",
-    "sv": "/sv/guides/tak-guide/skicka-en-markor-4WZtvP60ax"
-  },
-  "point-dropper-quick-pic-gxAsonzSXL": {
-    "en": "/en/guides/tak-guide/point-dropper-quick-pic-gxAsonzSXL",
-    "fi": "/fi/guides/tak-guide/point-dropper-quick-pic-dnyOSYWlOg",
-    "sv": "/sv/guides/tak-guide/point-dropper-quick-pic-sTBDsrUhIs"
-  },
-  "geochat-SMWfbwNItT": {
-    "en": "/en/guides/tak-guide/geochat-SMWfbwNItT",
-    "fi": "/fi/guides/tak-guide/geochat-5kOdqvslhn",
-    "sv": "/sv/guides/tak-guide/geochat-HOCGG8SkvO"
-  },
-  "clear-content-lzrtCD0MdO": {
-    "en": "/en/guides/tak-guide/clear-content-lzrtCD0MdO",
-    "fi": "/fi/guides/tak-guide/sisallon-tyhjentaminen-RTDgPCCE8y",
-    "sv": "/sv/guides/tak-guide/rensa-innehall-q4qalpFEan"
   },
   "create-manage-feeds-z2CpC9Lpan": {
     "en": "/en/guides/tak-guide/create-manage-feeds-z2CpC9Lpan",
@@ -684,11 +654,6 @@
     "fi": "/fi/guides/tak-guide/mika-on-tak-u19DIbyqfY",
     "sv": "/sv/guides/tak-guide/vad-ar-tak-Y5ZYfcXyh8"
   },
-  "introduction-d1XzfzOkpz": {
-    "en": "/en/deploy-app/introduction-d1XzfzOkpz",
-    "fi": "/fi/deploy-app/johdanto-pVdcEzIB4j",
-    "sv": "/sv/deploy-app/introduktion-8VdRmYg8Vp"
-  },
   "joining-a-deploy-app-A7hCnp5D1b": {
     "en": "/en/deploy-app/joining-a-deploy-app-A7hCnp5D1b",
     "fi": "/fi/deploy-app/liittyminen-deploy-appiin-Jy261fSdzF",
@@ -733,5 +698,40 @@
     "en": "/en/deploy-app/admin-first-login-1wjrnFERNt",
     "fi": "/fi/deploy-app/ensimmainen-kirjautuminen-w6ucKbFHSI",
     "sv": "/sv/deploy-app/forsta-inloggningen-30j0MZLvzy"
+  },
+  "introduction-d1XzfzOkpz": {
+    "en": "/en/deploy-app/introduction-d1XzfzOkpz",
+    "fi": "/fi/deploy-app/johdanto-pVdcEzIB4j",
+    "sv": "/sv/deploy-app/introduktion-8VdRmYg8Vp"
+  },
+  "basic-view-tools-and-toolbar-juXbYsGMih": {
+    "en": "/en/guides/tak-guide/basic-view-tools-and-toolbar-juXbYsGMih",
+    "fi": "/fi/guides/tak-guide/perusnakyma-tyokalut-ja-tyokalupalkki-5cY07BjmD4",
+    "sv": "/sv/guides/tak-guide/grundvy-verktyg-och-verktygsfalt-Lpm8S3bYgv"
+  },
+  "feeds-with-data-sync-thmayduqMx": {
+    "en": "/en/guides/tak-guide/feeds-with-data-sync-thmayduqMx",
+    "fi": "/fi/guides/tak-guide/feeds-with-data-sync-EMnuDBTzRY",
+    "sv": "/sv/guides/tak-guide/feeds-with-data-sync-5yGpc2vgBg"
+  },
+  "sending-a-marker-tbLPq64DLE": {
+    "en": "/en/guides/tak-guide/sending-a-marker-tbLPq64DLE",
+    "fi": "/fi/guides/tak-guide/merkin-lahettaminen-VFvhZ3yMfm",
+    "sv": "/sv/guides/tak-guide/skicka-en-markor-4WZtvP60ax"
+  },
+  "point-dropper-quick-pic-gxAsonzSXL": {
+    "en": "/en/guides/tak-guide/point-dropper-quick-pic-gxAsonzSXL",
+    "fi": "/fi/guides/tak-guide/point-dropper-quick-pic-dnyOSYWlOg",
+    "sv": "/sv/guides/tak-guide/point-dropper-quick-pic-sTBDsrUhIs"
+  },
+  "geochat-SMWfbwNItT": {
+    "en": "/en/guides/tak-guide/geochat-SMWfbwNItT",
+    "fi": "/fi/guides/tak-guide/geochat-5kOdqvslhn",
+    "sv": "/sv/guides/tak-guide/geochat-HOCGG8SkvO"
+  },
+  "clear-content-lzrtCD0MdO": {
+    "en": "/en/guides/tak-guide/clear-content-lzrtCD0MdO",
+    "fi": "/fi/guides/tak-guide/sisallon-tyhjentaminen-RTDgPCCE8y",
+    "sv": "/sv/guides/tak-guide/rensa-innehall-q4qalpFEan"
   }
 }

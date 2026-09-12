@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "locale": "en",
-  "generatedAt": "2026-09-01T16:08:52.470Z",
+  "generatedAt": "2026-09-12T20:11:22.574Z",
   "collections": [
     {
       "slug": "deploy-app",
@@ -244,7 +244,7 @@
         "Introduction"
       ],
       "path": "/content/en/pages/deploy-app/introduction-d1XzfzOkpz.json",
-      "updatedAt": "2026-06-26T10:37:13.315Z",
+      "updatedAt": "2026-09-12T19:58:54.452Z",
       "order": 0
     },
     {
@@ -633,7 +633,7 @@
         "Basic view, tools and toolbar"
       ],
       "path": "/content/en/pages/guides/tak-guide/basic-view-tools-and-toolbar-juXbYsGMih.json",
-      "updatedAt": "2026-06-18T20:13:42.571Z",
+      "updatedAt": "2026-09-12T19:58:55.062Z",
       "order": 4,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
@@ -671,7 +671,7 @@
         "Feeds with Data Sync"
       ],
       "path": "/content/en/pages/guides/tak-guide/feeds-with-data-sync-thmayduqMx.json",
-      "updatedAt": "2026-06-18T20:13:47.748Z",
+      "updatedAt": "2026-09-12T19:58:55.664Z",
       "order": 6,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
@@ -709,7 +709,7 @@
         "Sending a Marker"
       ],
       "path": "/content/en/pages/guides/tak-guide/sending-a-marker-tbLPq64DLE.json",
-      "updatedAt": "2026-06-18T20:13:50.775Z",
+      "updatedAt": "2026-09-12T19:58:56.214Z",
       "order": 8,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
@@ -728,7 +728,7 @@
         "Point Dropper - Quick Pic"
       ],
       "path": "/content/en/pages/guides/tak-guide/point-dropper-quick-pic-gxAsonzSXL.json",
-      "updatedAt": "2026-06-18T20:13:52.174Z",
+      "updatedAt": "2026-09-12T19:58:56.769Z",
       "order": 9,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
@@ -747,7 +747,7 @@
         "GeoChat"
       ],
       "path": "/content/en/pages/guides/tak-guide/geochat-SMWfbwNItT.json",
-      "updatedAt": "2026-06-18T20:13:53.593Z",
+      "updatedAt": "2026-09-12T19:58:57.302Z",
       "order": 10,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",
@@ -766,7 +766,7 @@
         "Clear Content"
       ],
       "path": "/content/en/pages/guides/tak-guide/clear-content-lzrtCD0MdO.json",
-      "updatedAt": "2026-06-18T20:13:55.096Z",
+      "updatedAt": "2026-09-12T19:58:57.865Z",
       "order": 11,
       "platform": "android",
       "clientId": "atak-sGxUIXpQlU",

@@ -12,7 +12,7 @@
     "GeoChat"
   ],
   "createdAt": "2026-06-18T19:26:14.296Z",
-  "updatedAt": "2026-06-18T20:13:54.546Z",
+  "updatedAt": "2026-09-12T19:58:57.680Z",
   "headings": [],
   "translations": {
     "en": "/en/guides/tak-guide/geochat-SMWfbwNItT",
@@ -161,30 +161,6 @@
           "layout": "text",
           "html": "<p>Det finns tre begränsningar med GeoChat:</p>\n<ul>\n<li>\n<ol>\n<li>Försök inte skicka bilder / bilagor, detta fungerar inte i praktiken. Skicka dem till ett flöde i stället.</li>\n</ol>\n</li>\n<li>\n<ol start=\"2\">\n<li>Mottagaren behöver ha sin TAK-app öppen eller i bakgrunden för att kunna ta emot dig.</li>\n</ol>\n</li>\n<li>\n<ol start=\"3\">\n<li>iTAK är opålitlig med GeoChats gruppchatt, särskilt med WinTAK &#x3C;-> iTAK. Av dessa skäl rekommenderar vi att använda Matrix (Element) för enhetskommunikation med Deploy App.</li>\n</ol>\n</li>\n</ul>\n<p>När du har testat GeoChat framgångsrikt, fortsätt till <a href=\"/doc/685f6f0f-e7ca-4ba3-807f-568582663e95\">ATAK</a></p>",
           "images": []
-        },
-        {
-          "title": "Kontrollera lässtatus",
-          "layout": "image-bottom",
-          "html": "<ul>\n<li>Varje direktmeddelande visar en <strong>read</strong>-bock: en ifylld vit bock betyder att mottagaren har öppnat det, en ofylld betyder levererat men ännu inte läst.</li>\n<li><strong>Messages</strong>-listan flaggar tillstånd som \"sent to offline user\" så att du vet om ditt meddelande nådde fram.</li>\n</ul>",
-          "images": [
-            {
-              "src": "/content/images/sv/attachments/89257cabbbe2780f.webp",
-              "width": 192,
-              "height": 163
-            }
-          ]
-        },
-        {
-          "title": "Skapa eller lägg till i en grupp",
-          "layout": "image-bottom",
-          "html": "<ul>\n<li>Välj <strong>Group</strong>-ikonen i <strong>Contacts</strong> för att skapa en ny chattgrupp av anslutna och offline-användare; ange ett <strong>group name</strong> och tryck <strong>Select</strong>.</li>\n<li>Välj <strong>Select an Existing Group</strong> för att lägga till fler användare i en grupp du redan har, även medan de är offline.</li>\n</ul>",
-          "images": [
-            {
-              "src": "/content/images/sv/attachments/267e23a144e8f3cf.webp",
-              "width": 198,
-              "height": 197
-            }
-          ]
         }
       ]
     }

@@ -12,7 +12,7 @@
     "GeoChat"
   ],
   "createdAt": "2025-12-05T22:06:22.269Z",
-  "updatedAt": "2026-06-18T20:13:53.593Z",
+  "updatedAt": "2026-09-12T19:58:57.302Z",
   "headings": [],
   "translations": {
     "en": "/en/guides/tak-guide/geochat-SMWfbwNItT",
@@ -161,30 +161,6 @@
           "layout": "text",
           "html": "<p>There are three limitations with Geochat:</p>\n<ul>\n<li>\n<ol>\n<li>Do not attempt to send images / attachments, this is not usable. Send them to a Feed instead.</li>\n</ol>\n</li>\n<li>\n<ol start=\"2\">\n<li>Recipient needs to have their TAK app open or in background to receive you.</li>\n</ol>\n</li>\n<li>\n<ol start=\"3\">\n<li>iTAK is unreliable with GeoChat group chat, especially with WinTAK &#x3C;-> iTAK. For these reasons, we recommend to use Matrix (Element) for unit comms with Deploy App.</li>\n</ol>\n</li>\n</ul>\n<p>After successful testing GeoChat, continue to <a href=\"/doc/685f6f0f-e7ca-4ba3-807f-568582663e95\">ATAK</a></p>",
           "images": []
-        },
-        {
-          "title": "Check Read Status",
-          "layout": "image-bottom",
-          "html": "<ul>\n<li>Each direct message shows a <strong>read</strong> tick: a filled white checkmark means the recipient has opened it, an unfilled one means delivered but not yet read.</li>\n<li>The <strong>Messages</strong> list flags states like \"sent to offline user\" so you know if your message landed.</li>\n</ul>",
-          "images": [
-            {
-              "src": "/content/images/en/attachments/89257cabbbe2780f.webp",
-              "width": 192,
-              "height": 163
-            }
-          ]
-        },
-        {
-          "title": "Create or Add to a Group",
-          "layout": "image-bottom",
-          "html": "<ul>\n<li>In <strong>Contacts</strong>, select the <strong>Group</strong> icon to make a new chat group of online and offline users; enter a <strong>group name</strong> and <strong>Select</strong>.</li>\n<li>Pick <strong>Select an Existing Group</strong> to drop more users into a group you already have, even while they are offline.</li>\n</ul>",
-          "images": [
-            {
-              "src": "/content/images/en/attachments/267e23a144e8f3cf.webp",
-              "width": 198,
-              "height": 197
-            }
-          ]
         }
       ]
     }

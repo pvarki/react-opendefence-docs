@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "locale": "sv",
-  "generatedAt": "2026-09-01T16:08:52.470Z",
+  "generatedAt": "2026-09-12T20:11:22.574Z",
   "collections": [
     {
       "slug": "deploy-app",
@@ -133,7 +133,7 @@
         "Introduktion"
       ],
       "path": "/content/sv/pages/deploy-app/introduktion-8VdRmYg8Vp.json",
-      "updatedAt": "2026-06-18T20:38:50.263Z",
+      "updatedAt": "2026-09-12T19:58:54.840Z",
       "order": 0
     },
     {
@@ -522,7 +522,7 @@
         "Grundvy, verktyg och verktygsfält"
       ],
       "path": "/content/sv/pages/guides/tak-guide/grundvy-verktyg-och-verktygsfalt-Lpm8S3bYgv.json",
-      "updatedAt": "2026-06-18T20:13:45.763Z",
+      "updatedAt": "2026-09-12T19:58:55.486Z",
       "order": 4,
       "platform": "android",
       "clientId": "atak-FSQuzFTpnF",
@@ -560,7 +560,7 @@
         "Feeds with Data Sync"
       ],
       "path": "/content/sv/pages/guides/tak-guide/feeds-with-data-sync-5yGpc2vgBg.json",
-      "updatedAt": "2026-06-18T20:13:48.689Z",
+      "updatedAt": "2026-09-12T19:58:56.013Z",
       "order": 6,
       "platform": "android",
       "clientId": "atak-FSQuzFTpnF",
@@ -598,7 +598,7 @@
         "Skicka en markör"
       ],
       "path": "/content/sv/pages/guides/tak-guide/skicka-en-markor-4WZtvP60ax.json",
-      "updatedAt": "2026-06-18T20:13:51.685Z",
+      "updatedAt": "2026-09-12T19:58:56.586Z",
       "order": 8,
       "platform": "android",
       "clientId": "atak-FSQuzFTpnF",
@@ -617,7 +617,7 @@
         "Point Dropper - Quick Pic"
       ],
       "path": "/content/sv/pages/guides/tak-guide/point-dropper-quick-pic-sTBDsrUhIs.json",
-      "updatedAt": "2026-06-18T20:13:53.115Z",
+      "updatedAt": "2026-09-12T19:58:57.125Z",
       "order": 9,
       "platform": "android",
       "clientId": "atak-FSQuzFTpnF",
@@ -636,7 +636,7 @@
         "GeoChat"
       ],
       "path": "/content/sv/pages/guides/tak-guide/geochat-HOCGG8SkvO.json",
-      "updatedAt": "2026-06-18T20:13:54.546Z",
+      "updatedAt": "2026-09-12T19:58:57.680Z",
       "order": 10,
       "platform": "android",
       "clientId": "atak-FSQuzFTpnF",
@@ -655,7 +655,7 @@
         "Rensa innehåll"
       ],
       "path": "/content/sv/pages/guides/tak-guide/rensa-innehall-q4qalpFEan.json",
-      "updatedAt": "2026-06-18T20:13:55.925Z",
+      "updatedAt": "2026-09-12T19:58:58.238Z",
       "order": 11,
       "platform": "android",
       "clientId": "atak-FSQuzFTpnF",

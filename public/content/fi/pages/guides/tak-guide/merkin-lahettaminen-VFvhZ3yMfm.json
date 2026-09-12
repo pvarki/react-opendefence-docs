@@ -12,7 +12,7 @@
     "Merkin lähettäminen"
   ],
   "createdAt": "2026-06-18T19:25:17.511Z",
-  "updatedAt": "2026-06-18T20:13:51.248Z",
+  "updatedAt": "2026-09-12T19:58:56.407Z",
   "headings": [],
   "translations": {
     "en": "/en/guides/tak-guide/sending-a-marker-tbLPq64DLE",
@@ -93,54 +93,6 @@
               "src": "/content/images/fi/attachments/22ab27310be30c0d.webp",
               "width": 1080,
               "height": 2340
-            }
-          ]
-        },
-        {
-          "title": "Avaa merkin säteittäisvalikko",
-          "layout": "image-bottom",
-          "html": "<ul>\n<li>Napauta merkkiä avataksesi sen säteittäisvalikon.</li>\n<li>Valitse <strong>Details</strong> muokataksesi sitä tai <strong>Fine Adjust</strong> ja <strong>Polar Coordinates</strong> tarkentaaksesi sen sijaintia.</li>\n</ul>",
-          "images": [
-            {
-              "src": "/content/images/fi/attachments/00c599f6b62e304e.webp",
-              "width": 256,
-              "height": 198
-            }
-          ]
-        },
-        {
-          "title": "Aseta tila ja muokkaimet",
-          "layout": "image-bottom",
-          "html": "<ul>\n<li>Aseta <strong>Details</strong>-näkymässä <strong>Status</strong>-kenttä (esimerkiksi <strong>Present/Damaged</strong>), jotta merkin alle ilmestyy tilailmaisin.</li>\n<li>Rastita <strong>Show Modifiers</strong> tallentaaksesi liikkeen suunnan, nopeuden ja sijainnin, ja lähetä sitten päivitys painikkeella <strong>Send</strong> tai <strong>Auto Send</strong>.</li>\n</ul>",
-          "images": [
-            {
-              "src": "/content/images/fi/attachments/029fe4cc0794346f.webp",
-              "width": 349,
-              "height": 198
-            }
-          ]
-        },
-        {
-          "title": "Muokkaa tyyppiä ja kuuluvuutta",
-          "layout": "image-bottom",
-          "html": "<ul>\n<li>Käytä näkymän vasemmassa yläkulmassa olevaa merkkikuvaketta muuttaaksesi <strong>Affiliation</strong>-asetusta.</li>\n<li>Valitse <strong>Type</strong> valitaksesi luettelosta tarkemman kategorian.</li>\n</ul>",
-          "images": [
-            {
-              "src": "/content/images/fi/attachments/0ace50673d861f2c.webp",
-              "width": 426,
-              "height": 210
-            }
-          ]
-        },
-        {
-          "title": "Fine Adjust siirtää sen tarkasti",
-          "layout": "image-bottom",
-          "html": "<ul>\n<li>Valitse säteittäisvalikosta <strong>Fine Adjust</strong> siirtääksesi merkin täsmälleen oikeaan paikkaan.</li>\n<li>Paina <strong>Fine Adjust</strong> pitkään avataksesi alavalikon ja syöttääksesi suoraan <strong>MGRS</strong>- tai koordinaattisijainnin.</li>\n</ul>",
-          "images": [
-            {
-              "src": "/content/images/fi/attachments/482f1a04596e73be.webp",
-              "width": 256,
-              "height": 192
             }
           ]
         }

@@ -12,7 +12,7 @@
     "Sending a Marker"
   ],
   "createdAt": "2026-06-14T10:36:11.851Z",
-  "updatedAt": "2026-06-18T20:13:50.775Z",
+  "updatedAt": "2026-09-12T19:58:56.214Z",
   "headings": [],
   "translations": {
     "en": "/en/guides/tak-guide/sending-a-marker-tbLPq64DLE",
@@ -93,54 +93,6 @@
               "src": "/content/images/en/attachments/22ab27310be30c0d.webp",
               "width": 1080,
               "height": 2340
-            }
-          ]
-        },
-        {
-          "title": "Open the marker radial",
-          "layout": "image-bottom",
-          "html": "<ul>\n<li>Tap a marker to bring up its radial menu.</li>\n<li>Pick <strong>Details</strong> to edit it, or <strong>Fine Adjust</strong> and <strong>Polar Coordinates</strong> to refine its position.</li>\n</ul>",
-          "images": [
-            {
-              "src": "/content/images/en/attachments/00c599f6b62e304e.webp",
-              "width": 256,
-              "height": 198
-            }
-          ]
-        },
-        {
-          "title": "Set status and modifiers",
-          "layout": "image-bottom",
-          "html": "<ul>\n<li>In <strong>Details</strong>, set the <strong>Status</strong> field (for example <strong>Present/Damaged</strong>) to show a status indicator under the marker.</li>\n<li>Tick <strong>Show Modifiers</strong> to record direction of movement, speed and location, then send the update with <strong>Send</strong> or <strong>Auto Send</strong>.</li>\n</ul>",
-          "images": [
-            {
-              "src": "/content/images/en/attachments/029fe4cc0794346f.webp",
-              "width": 349,
-              "height": 198
-            }
-          ]
-        },
-        {
-          "title": "Edit type and affiliation",
-          "layout": "image-bottom",
-          "html": "<ul>\n<li>Use the marker icon in the top-left of the pane to change the <strong>Affiliation</strong>.</li>\n<li>Select <strong>Type</strong> to choose a more specific category from the list.</li>\n</ul>",
-          "images": [
-            {
-              "src": "/content/images/en/attachments/0ace50673d861f2c.webp",
-              "width": 426,
-              "height": 210
-            }
-          ]
-        },
-        {
-          "title": "Fine Adjust to move it precisely",
-          "layout": "image-bottom",
-          "html": "<ul>\n<li>Select <strong>Fine Adjust</strong> on the radial to nudge the marker into exact placement.</li>\n<li>Long-press <strong>Fine Adjust</strong> to open the sub-radial and type an <strong>MGRS</strong> or coordinate location directly.</li>\n</ul>",
-          "images": [
-            {
-              "src": "/content/images/en/attachments/482f1a04596e73be.webp",
-              "width": 256,
-              "height": 192
             }
           ]
         }
