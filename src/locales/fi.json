@@ -356,5 +356,8 @@
     "wintak": {
       "lead": "WinTAK on TAK-ekosysteemin Windows-työpöytäasiakas, joka on suunniteltu käytettäväksi komentopaikoissa ja operaatiokeskuksissa, joissa koko näytön karttakäyttöliittymä ja näppäimistöpohjainen työnkulku ovat mobiililaitetta mieluisampia."
     }
+  },
+  "videoPlaylists": {
+    "heading": "Katso YouTubessa"
   }
 }

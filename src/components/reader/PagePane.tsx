@@ -4,7 +4,8 @@ import type { ManifestPage, PageDoc } from "@shared/content-schema";
 import type { PagePosition } from "@/lib/content/neighbors";
 import { loadPage } from "@/lib/content/loader";
 import { isPageUnderConstruction } from "@/lib/underConstruction";
-import { usePageVideo } from "@/lib/videos";
+import { useIsOnline, usePageVideo } from "@/lib/videos";
+import { useMediaPref } from "@/lib/videoPref";
 import { BlockRenderer } from "@/components/blocks/BlockRenderer";
 import { UnderConstructionBanner } from "@/components/reader/UnderConstructionBanner";
 import { PrevNextBar } from "@/components/reader/PrevNextBar";
@@ -68,6 +69,12 @@ export function PagePane({
     doc?.locale === "en" && video !== undefined
       ? video.docsUpdatedAt !== doc.updatedAt
       : false;
+  // Decided here, not only inside BlockRenderer, because the navigation bar
+  // below also needs to know: a video leaves the page short enough that the
+  // bar would otherwise sit below the fold.
+  const mediaPref = useMediaPref();
+  const isOnline = useIsOnline();
+  const showVideo = video !== undefined && mediaPref === "videos" && isOnline;
   const scrollRef = useScrollMemory(
     `${locale}:${page.collection}:${page.slug}`,
   );
@@ -111,7 +118,7 @@ export function PagePane({
               <Skeleton className="h-4 w-2/3" />
             </div>
           )}
-          <PrevNextBar locale={locale} position={position} />
+          <PrevNextBar locale={locale} position={position} sticky={showVideo} />
           {isLast && nextBook && <EndOfBookCard nextBook={nextBook} />}
           <PageFooter
             collection={page.collection}

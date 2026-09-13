@@ -356,5 +356,8 @@
     "wintak": {
       "lead": "WinTAK is the Windows desktop client for the TAK ecosystem, designed for use in command posts and operations centers where a full-screen map interface and keyboard-driven workflow are preferred over a mobile device."
     }
+  },
+  "videoPlaylists": {
+    "heading": "Watch on YouTube"
   }
 }

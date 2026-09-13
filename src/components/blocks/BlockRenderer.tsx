@@ -1,7 +1,7 @@
 import { Fragment, useEffect, useRef, useState, type ReactNode } from "react";
 import { useTranslation } from "react-i18next";
 import { Check, ChevronDown, Copy } from "lucide-react";
-import type { Block } from "@shared/content-schema";
+import type { Block, SlidesetBlock } from "@shared/content-schema";
 import { BlockAction } from "@/components/blocks/BlockAction";
 import { useMediaPref } from "@/lib/videoPref";
 import { useIsOnline, type VideoEntry } from "@/lib/videos";
@@ -66,9 +66,12 @@ interface BlockRendererProps {
  */
 function MediaCard({
   label,
+  isCurrent,
   children,
 }: {
   label: string;
+  /** Offscreen panes render the summary but never mount what is behind it. */
+  isCurrent: boolean;
   children: ReactNode;
 }) {
   const [open, setOpen] = useState(false);
@@ -76,13 +79,22 @@ function MediaCard({
   return (
     <details
       className="group mt-8 rounded-lg border border-border bg-card"
-      onToggle={(e) => setOpen(e.currentTarget.open)}
+      onToggle={(e) => {
+        const opened = e.currentTarget.open;
+        setOpen(opened);
+        // A nested deck is taller than the space left below the summary, so
+        // without this most of it — including its pager — opens below the
+        // fold. Instant, not smooth: smooth fights an in-flight page swipe.
+        if (opened) e.currentTarget.scrollIntoView({ block: "start" });
+      }}
     >
       <summary className="flex cursor-pointer list-none items-center justify-between gap-2 px-4 py-3 text-base font-semibold select-none [&::-webkit-details-marker]:hidden">
         {label}
         <ChevronDown className="size-4 shrink-0 text-muted-foreground transition-transform group-open:rotate-180" />
       </summary>
-      {open && <div className="pb-4">{children}</div>}
+      {open && isCurrent && (
+        <div className="px-4 pb-4 [&>*:first-child]:mt-0">{children}</div>
+      )}
     </details>
   );
 }
@@ -103,15 +115,20 @@ export function BlockRenderer({
   // video for a page that has a slideset. Offline the iframe would be a dead
   // box, so the slides win instead.
   const hasVideo = video !== undefined && firstSlideset !== -1;
-  // `inert` hides the neighbour panes from the tab order but does not stop an
-  // iframe loading, and lazy-loading's viewport margin is wider than a phone —
-  // so without this every swipe would pull three YouTube embeds.
-  const showVideo = hasVideo && pref === "videos" && isOnline && isCurrent;
+  const showVideo = hasVideo && pref === "videos" && isOnline;
   const blockedByOffline = hasVideo && pref === "videos" && !isOnline;
 
   const player = video && (
     <>
-      <YoutubeBlock videoId={video.videoId} />
+      {isCurrent ? (
+        <YoutubeBlock videoId={video.videoId} />
+      ) : (
+        // Offscreen neighbour: the same 16:9 box, no iframe. `inert` does not
+        // stop an iframe loading and lazy-loading's margin is wider than a
+        // phone, so only the pane in view may pull an embed — but it must
+        // still reserve the layout, or arriving on the page shifts it.
+        <div className="my-6 aspect-video rounded-lg border border-border bg-muted" />
+      )}
       {videoStale && (
         <p className="mb-6 text-sm text-muted-foreground">{t("media.stale")}</p>
       )}
@@ -188,21 +205,25 @@ export function BlockRenderer({
       })}
 
       {/* Offline the card would only offer a dead player, so it stays away. */}
-      {hasVideo && isOnline && isCurrent && (
-        <MediaCard label={showVideo ? t("media.readSlides") : t("media.watch")}>
-          {showVideo
-            ? blocks.map((block, i) =>
-                block.type === "slideset" ? (
-                  // The card holds the only deck mounted in video mode, so it
-                  // is the one that must honour and update ?slide=N.
-                  <Slideset
-                    key={i}
-                    block={block}
-                    bindSlideParam={i === firstSlideset}
-                  />
-                ) : null,
-              )
-            : player}
+      {hasVideo && isOnline && (
+        // Keyed on the medium so flipping the navbar preference while the card
+        // is open remounts it closed — otherwise switching to slides would
+        // silently mount a YouTube iframe nobody asked for.
+        <MediaCard
+          key={showVideo ? "slides" : "video"}
+          isCurrent={isCurrent}
+          label={showVideo ? t("media.readSlides") : t("media.watch")}
+        >
+          {showVideo ? (
+            // The card holds the only deck mounted in video mode, so it is the
+            // one that must honour and update ?slide=N.
+            <Slideset
+              block={blocks[firstSlideset] as SlidesetBlock}
+              bindSlideParam
+            />
+          ) : (
+            player
+          )}
         </MediaCard>
       )}
     </>

@@ -14,15 +14,27 @@ const VideoEntrySchema = z.object({
 });
 export type VideoEntry = z.infer<typeof VideoEntrySchema>;
 
+/** A YouTube playlist for one product and platform, linked from the shelf. */
+const VideoPlaylistSchema = z.object({
+  collection: z.string(),
+  title: z.string(),
+  url: z.string(),
+  videos: z.number().int().nonnegative(),
+});
+export type VideoPlaylist = z.infer<typeof VideoPlaylistSchema>;
+
 const VideosManifestSchema = z.object({
   generatedAt: z.string(),
+  // Tolerated per entry and defaulted, so an older manifest without the field
+  // still parses and the shelf simply shows no links.
+  playlists: z.array(VideoPlaylistSchema).catch([]).default([]),
   // Per-entry tolerance on purpose: the manifest is generated in another repo,
   // so one drifted row must cost that page its video and nothing more.
   videos: z.record(z.string(), VideoEntrySchema.optional().catch(undefined)),
 });
 export type VideosManifest = z.infer<typeof VideosManifestSchema>;
 
-const EMPTY: VideosManifest = { generatedAt: "", videos: {} };
+const EMPTY: VideosManifest = { generatedAt: "", playlists: [], videos: {} };
 
 let cached: Promise<VideosManifest> | undefined;
 /** The settled manifest, so a pane's first render already knows the answer. */

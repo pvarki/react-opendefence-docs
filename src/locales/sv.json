@@ -356,5 +356,8 @@
     "wintak": {
       "lead": "WinTAK är Windows-skrivbordsklienten för TAK-ekosystemet, utformad för användning i kommandoplatser och ledningscentraler där ett helskärmskartgränssnitt och ett tangentbordsdrivet arbetsflöde föredras framför en mobil enhet."
     }
+  },
+  "videoPlaylists": {
+    "heading": "Se på YouTube"
   }
 }
