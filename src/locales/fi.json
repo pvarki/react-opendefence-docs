@@ -183,6 +183,13 @@
   "blocks": {
     "youtubeTitle": "YouTube-video"
   },
+  "media": {
+    "label": "Näytä video vaiheiden sijaan",
+    "stale": "Tämä video on tehty sivun vanhemmasta versiosta.",
+    "needsConnection": "Video vaatii verkkoyhteyden — näytetään vaiheet sen sijaan.",
+    "watch": "Katso video",
+    "readSlides": "Lue vaiheet"
+  },
   "devShelf": {
     "introduction": "Johdanto",
     "architecture": "Arkkitehtuuri",

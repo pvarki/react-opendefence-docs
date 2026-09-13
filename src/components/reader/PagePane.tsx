@@ -4,6 +4,7 @@ import type { ManifestPage, PageDoc } from "@shared/content-schema";
 import type { PagePosition } from "@/lib/content/neighbors";
 import { loadPage } from "@/lib/content/loader";
 import { isPageUnderConstruction } from "@/lib/underConstruction";
+import { usePageVideo } from "@/lib/videos";
 import { BlockRenderer } from "@/components/blocks/BlockRenderer";
 import { UnderConstructionBanner } from "@/components/reader/UnderConstructionBanner";
 import { PrevNextBar } from "@/components/reader/PrevNextBar";
@@ -59,6 +60,14 @@ export function PagePane({
 }: PagePaneProps) {
   const { t } = useTranslation();
   const doc = usePageDoc(page);
+  const video = usePageVideo(doc);
+  // Only an english page carries the updatedAt the video was rendered from; a
+  // translated page has its own timestamp, so it never claims staleness rather
+  // than fetching the english manifest just to compare.
+  const videoStale =
+    doc?.locale === "en" && video !== undefined
+      ? video.docsUpdatedAt !== doc.updatedAt
+      : false;
   const scrollRef = useScrollMemory(
     `${locale}:${page.collection}:${page.slug}`,
   );
@@ -87,7 +96,12 @@ export function PagePane({
                 {t("reader.comingSoon")}
               </p>
             ) : (
-              <BlockRenderer blocks={doc.blocks} />
+              <BlockRenderer
+                blocks={doc.blocks}
+                video={video}
+                videoStale={videoStale}
+                isCurrent={isCurrent}
+              />
             )
           ) : (
             <div className="space-y-3" aria-busy="true">
