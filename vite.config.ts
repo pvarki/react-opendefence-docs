@@ -68,6 +68,7 @@ export default defineConfig({
         globPatterns: [
           "**/*.{js,css,html,ico,svg,woff2}",
           "content/**/*.json",
+          "videos.json",
           "pagefind/**/*",
           "api-specs/manifest.json",
           "release-docs/manifest.json",
