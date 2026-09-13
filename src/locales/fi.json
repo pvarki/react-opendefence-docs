@@ -199,6 +199,13 @@
     "integrations": "Integraatiot",
     "project": "Projekti"
   },
+  "media": {
+    "label": "Näytä video vaiheiden sijaan",
+    "stale": "Tämä video on tehty sivun vanhemmasta versiosta.",
+    "needsConnection": "Video vaatii verkkoyhteyden — näytetään vaiheet sen sijaan.",
+    "watch": "Katso video",
+    "readSlides": "Lue vaiheet"
+  },
   "devShelf": {
     "operate": "Operointi",
     "contribute": "Osallistu",
