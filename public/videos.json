@@ -1,0 +1,551 @@
+{
+  "generatedAt": "2026-09-13T14:17:26.267Z",
+  "videos": {
+    "deploy-app/introduction-d1XzfzOkpz": {
+      "videoId": "F_7SlX4MfWk",
+      "docsUpdatedAt": "2026-09-12T20:40:07.498Z",
+      "slides": 3,
+      "duration": 40
+    },
+    "deploy-app/joining-a-deploy-app-p9htrbBL4S": {
+      "videoId": "4zhW_-XrcSM",
+      "docsUpdatedAt": "2026-06-13T22:32:24.669Z",
+      "slides": 8,
+      "duration": 77
+    },
+    "deploy-app/using-applications-CsobZMZ45Q": {
+      "videoId": "Tu0y6esC3fg",
+      "docsUpdatedAt": "2026-06-13T22:25:14.378Z",
+      "slides": 2,
+      "duration": 21
+    },
+    "deploy-app/interface-4Ncp4affe9": {
+      "videoId": "DrM3aY8coeU",
+      "docsUpdatedAt": "2026-06-13T22:26:08.125Z",
+      "slides": 3,
+      "duration": 18
+    },
+    "deploy-app/first-login-qwmPnmJsrF": {
+      "videoId": "mB2fitTFDHk",
+      "docsUpdatedAt": "2026-06-13T22:33:32.026Z",
+      "slides": 7,
+      "duration": 66
+    },
+    "deploy-app/adding-users-GhHcn1knBJ": {
+      "videoId": "dcHvTFULm1Y",
+      "docsUpdatedAt": "2026-06-13T22:41:10.211Z",
+      "slides": 6,
+      "duration": 50
+    },
+    "deploy-app/managing-users-V110s1QF2l": {
+      "videoId": "HeYPTlphl3o",
+      "docsUpdatedAt": "2026-06-13T22:42:56.425Z",
+      "slides": 3,
+      "duration": 30
+    },
+    "deploy-app/access-external-services-ohReBmQJiu": {
+      "videoId": "gPaEvu1P_Vw",
+      "docsUpdatedAt": "2026-06-13T22:51:04.465Z",
+      "slides": 4,
+      "duration": 37
+    },
+    "deploy-app/joining-a-deploy-app-A7hCnp5D1b": {
+      "videoId": "W18myBA6k2Y",
+      "docsUpdatedAt": "2026-06-18T20:38:53.673Z",
+      "slides": 13,
+      "duration": 117
+    },
+    "deploy-app/using-applications-FFuT98Qlcv": {
+      "videoId": "iSG4vKbO08U",
+      "docsUpdatedAt": "2026-06-18T20:38:55.528Z",
+      "slides": 2,
+      "duration": 21
+    },
+    "deploy-app/interface-pyG1Ln1MfU": {
+      "videoId": "LYv7-ujmVbI",
+      "docsUpdatedAt": "2026-06-18T20:38:56.803Z",
+      "slides": 3,
+      "duration": 18
+    },
+    "deploy-app/first-login-oKodQDb6I1": {
+      "videoId": "NXcSCQn0yIM",
+      "docsUpdatedAt": "2026-06-18T20:39:00.101Z",
+      "slides": 12,
+      "duration": 108
+    },
+    "deploy-app/adding-users-LKw6wrsELi": {
+      "videoId": "e2OmQb5OZZE",
+      "docsUpdatedAt": "2026-06-18T20:39:01.775Z",
+      "slides": 6,
+      "duration": 50
+    },
+    "deploy-app/managing-users-nWgFG3XzMv": {
+      "videoId": "HM0AzvVgkw8",
+      "docsUpdatedAt": "2026-06-18T20:39:03.381Z",
+      "slides": 3,
+      "duration": 30
+    },
+    "deploy-app/access-external-services-wQy9bpe1aE": {
+      "videoId": "ceHwMY5rk4E",
+      "docsUpdatedAt": "2026-06-18T20:39:05.498Z",
+      "slides": 4,
+      "duration": 37
+    },
+    "deploy-app/join-a-deploy-app-Ns73TcVodz": {
+      "videoId": "reh-DX8Tlmk",
+      "docsUpdatedAt": "2026-06-18T20:39:10.614Z",
+      "slides": 5,
+      "duration": 48
+    },
+    "deploy-app/admin-first-login-1wjrnFERNt": {
+      "videoId": "RwXeYtrmViM",
+      "docsUpdatedAt": "2026-06-18T20:39:13.396Z",
+      "slides": 7,
+      "duration": 52
+    },
+    "guides/cryptpad-guide/getting-started-with-cryptpad-JznoTt1R8B": {
+      "videoId": "KlKvvAPtWOw",
+      "docsUpdatedAt": "2026-06-18T20:37:59.334Z",
+      "slides": 6,
+      "duration": 56
+    },
+    "guides/cryptpad-guide/documents-1QGExPEBr9": {
+      "videoId": "UPktiTNPgtY",
+      "docsUpdatedAt": "2026-06-18T20:38:02.023Z",
+      "slides": 4,
+      "duration": 31
+    },
+    "guides/cryptpad-guide/kanban-boards-U2wuelSn6Z": {
+      "videoId": "y5lU6kZOows",
+      "docsUpdatedAt": "2026-06-18T20:38:03.882Z",
+      "slides": 4,
+      "duration": 30
+    },
+    "guides/cryptpad-guide/presentations-gWIWMzfeXq": {
+      "videoId": "3w6PHOiyl2Y",
+      "docsUpdatedAt": "2026-06-18T20:38:05.374Z",
+      "slides": 3,
+      "duration": 21
+    },
+    "guides/cryptpad-guide/set-up-a-unit-team-acg83EqeNh": {
+      "videoId": "8BRTfJPSH8g",
+      "docsUpdatedAt": "2026-06-18T20:38:08.639Z",
+      "slides": 8,
+      "duration": 58
+    },
+    "guides/cryptpad-guide/shared-calendar-uEIsdBqGNk": {
+      "videoId": "Yj4ujAhBeU8",
+      "docsUpdatedAt": "2026-06-18T20:38:10.074Z",
+      "slides": 3,
+      "duration": 17
+    },
+    "guides/cryptpad-guide/back-up-your-data-xYdkRa1Tms": {
+      "videoId": "3EIy4oORkMI",
+      "docsUpdatedAt": "2026-06-18T20:38:47.437Z",
+      "slides": 1,
+      "duration": 12
+    },
+    "guides/matrix-guide/set-up-element-desktop-tagwindows-tagmacos-taglinux-KspjTxDpoH": {
+      "videoId": "r3kCZBanBrQ",
+      "docsUpdatedAt": "2026-06-18T20:37:50.152Z",
+      "slides": 7,
+      "duration": 58
+    },
+    "guides/matrix-guide/set-up-element-mobile-tagios-tagandroid-QacQsNprmb": {
+      "videoId": "SDf8D82jzRE",
+      "docsUpdatedAt": "2026-06-18T20:37:51.497Z",
+      "slides": 7,
+      "duration": 48
+    },
+    "guides/matrix-guide/messaging-in-matrix-MFNQHEi50M": {
+      "videoId": "V_f-hNH37ck",
+      "docsUpdatedAt": "2026-06-18T20:37:53.993Z",
+      "slides": 6,
+      "duration": 51
+    },
+    "guides/matrix-guide/unit-rooms-organisation-krWteO9e37": {
+      "videoId": "Kzs7joffun8",
+      "docsUpdatedAt": "2026-06-18T20:37:56.818Z",
+      "slides": 9,
+      "duration": 96
+    },
+    "guides/tak-guide/what-is-tak-Vy8mUPLS87": {
+      "videoId": "JbBP2r0e2TU",
+      "docsUpdatedAt": "2026-06-26T10:42:03.667Z",
+      "slides": 9,
+      "duration": 101
+    },
+    "guides/tak-guide/download-the-app-bJC3Opax4P": {
+      "videoId": "1CikzhTibg8",
+      "docsUpdatedAt": "2026-06-26T11:52:06.715Z",
+      "slides": 21,
+      "duration": 170
+    },
+    "guides/tak-guide/import-server-connection-from-deploy-app-PQ4dCV2SYR": {
+      "videoId": "QUZ8dwGYXXA",
+      "docsUpdatedAt": "2026-06-26T11:52:07.115Z",
+      "slides": 6,
+      "duration": 45
+    },
+    "guides/tak-guide/load-atak-plugins-xBeVkYsFjI": {
+      "videoId": "ZswC8Fmu2tE",
+      "docsUpdatedAt": "2026-06-18T20:13:39.695Z",
+      "slides": 13,
+      "duration": 86
+    },
+    "guides/tak-guide/basic-view-tools-and-toolbar-juXbYsGMih": {
+      "videoId": "kDD4YbvcDSQ",
+      "docsUpdatedAt": "2026-09-12T19:58:55.062Z",
+      "slides": 4,
+      "duration": 32
+    },
+    "guides/tak-guide/blue-force-tracking-vZTVlgAzX8": {
+      "videoId": "pjiLlWcs0YI",
+      "docsUpdatedAt": "2026-06-18T20:13:46.289Z",
+      "slides": 3,
+      "duration": 27
+    },
+    "guides/tak-guide/feeds-with-data-sync-thmayduqMx": {
+      "videoId": "GrVloxrrKkI",
+      "docsUpdatedAt": "2026-09-12T19:58:55.664Z",
+      "slides": 5,
+      "duration": 44
+    },
+    "guides/tak-guide/point-dropper-markers-lsYmFrTvqH": {
+      "videoId": "lTpLVK1QyFY",
+      "docsUpdatedAt": "2026-06-18T20:13:49.189Z",
+      "slides": 22,
+      "duration": 146
+    },
+    "guides/tak-guide/sending-a-marker-tbLPq64DLE": {
+      "videoId": "Gg-YdxrVaco",
+      "docsUpdatedAt": "2026-09-12T19:58:56.214Z",
+      "slides": 6,
+      "duration": 53
+    },
+    "guides/tak-guide/point-dropper-quick-pic-gxAsonzSXL": {
+      "videoId": "jnTjMK2UE5k",
+      "docsUpdatedAt": "2026-09-12T19:58:56.769Z",
+      "slides": 7,
+      "duration": 34
+    },
+    "guides/tak-guide/geochat-SMWfbwNItT": {
+      "videoId": "jAnRC2ZLswM",
+      "docsUpdatedAt": "2026-09-12T19:58:57.302Z",
+      "slides": 12,
+      "duration": 78
+    },
+    "guides/tak-guide/clear-content-lzrtCD0MdO": {
+      "videoId": "9hLYyWEvIjY",
+      "docsUpdatedAt": "2026-09-12T19:58:57.865Z",
+      "slides": 3,
+      "duration": 23
+    },
+    "guides/tak-guide/create-manage-feeds-z2CpC9Lpan": {
+      "videoId": "JKbPMw8fZXA",
+      "docsUpdatedAt": "2026-06-18T20:13:57.845Z",
+      "slides": 11,
+      "duration": 71
+    },
+    "guides/tak-guide/add-to-work-a-feed-QUjMOBwISe": {
+      "videoId": "JvB-WlFwyWs",
+      "docsUpdatedAt": "2026-06-18T20:13:59.216Z",
+      "slides": 4,
+      "duration": 39
+    },
+    "guides/tak-guide/draw-share-plans-fxjT3hDZ5p": {
+      "videoId": "K1f-S6PPzIQ",
+      "docsUpdatedAt": "2026-06-18T20:14:00.606Z",
+      "slides": 11,
+      "duration": 58
+    },
+    "guides/tak-guide/feed-timeline-view-Ykwnn1hgWm": {
+      "videoId": "Jt9Jng3AzaU",
+      "docsUpdatedAt": "2026-06-18T20:14:03.694Z",
+      "slides": 2,
+      "duration": 22
+    },
+    "guides/tak-guide/draw-shapes-graphics-OSECv6soAB": {
+      "videoId": "DkIfRfoyFB4",
+      "docsUpdatedAt": "2026-06-18T20:14:37.927Z",
+      "slides": 6,
+      "duration": 55
+    },
+    "guides/tak-guide/geofences-wgaLkSEvef": {
+      "videoId": "cdML3dRuVsA",
+      "docsUpdatedAt": "2026-06-18T20:14:39.591Z",
+      "slides": 10,
+      "duration": 59
+    },
+    "guides/tak-guide/lasso-to-add-into-feed-Mt0Vykodea": {
+      "videoId": "ouiHQIoxSwE",
+      "docsUpdatedAt": "2026-06-18T20:14:41.188Z",
+      "slides": 7,
+      "duration": 44
+    },
+    "guides/tak-guide/overlay-manager-how-to-manage-the-views-BVRnLCM7ME": {
+      "videoId": "Ab6PcMOWXAw",
+      "docsUpdatedAt": "2026-06-18T20:14:42.579Z",
+      "slides": 10,
+      "duration": 85
+    },
+    "guides/tak-guide/create-routes-and-use-vns-uymW3nDSPE": {
+      "videoId": "AWhrU6Eh6Nk",
+      "docsUpdatedAt": "2026-06-18T20:14:44.548Z",
+      "slides": 9,
+      "duration": 84
+    },
+    "guides/tak-guide/downloading-maps-for-offline-use-AhUMNQ8mmS": {
+      "videoId": "r1JB3Jl78Zs",
+      "docsUpdatedAt": "2026-06-18T20:14:51.153Z",
+      "slides": 7,
+      "duration": 62
+    },
+    "guides/tak-guide/how-to-manage-atak-tools-and-toolbars-PbkLQcvrCe": {
+      "videoId": "VKSYrgsDQvY",
+      "docsUpdatedAt": "2026-06-18T20:15:10.782Z",
+      "slides": 7,
+      "duration": 58
+    },
+    "guides/tak-guide/customize-markers-icons-TGz9RiGwju": {
+      "videoId": "du7tfY1E24I",
+      "docsUpdatedAt": "2026-06-18T20:15:12.452Z",
+      "slides": 4,
+      "duration": 33
+    },
+    "guides/tak-guide/drop-a-casevac-9-line-sstaZDEz76": {
+      "videoId": "UkCUS04TrKU",
+      "docsUpdatedAt": "2026-06-18T20:15:14.011Z",
+      "slides": 6,
+      "duration": 52
+    },
+    "guides/tak-guide/manage-contacts-URumWb83Ox": {
+      "videoId": "fiSKdnhqt3c",
+      "docsUpdatedAt": "2026-06-18T20:15:18.972Z",
+      "slides": 5,
+      "duration": 49
+    },
+    "guides/tak-guide/digital-pointer-0K1KdydAeq": {
+      "videoId": "mGGsozQBVYE",
+      "docsUpdatedAt": "2026-06-18T20:15:48.777Z",
+      "slides": 4,
+      "duration": 37
+    },
+    "guides/tak-guide/broadcast-emergency-alert-UUcvlpUGMg": {
+      "videoId": "XiJedWlgQVc",
+      "docsUpdatedAt": "2026-06-18T20:15:56.211Z",
+      "slides": 4,
+      "duration": 38
+    },
+    "guides/tak-guide/overview-CVNzKhRcKY": {
+      "videoId": "Fc28IvkeOJE",
+      "docsUpdatedAt": "2026-06-18T20:16:34.560Z",
+      "slides": 5,
+      "duration": 52
+    },
+    "guides/tak-guide/what-you-get-send-MhsXXsmVxN": {
+      "videoId": "rO3J8VgRCdA",
+      "docsUpdatedAt": "2026-06-18T20:17:01.968Z",
+      "slides": 3,
+      "duration": 27
+    },
+    "guides/tak-guide/use-recon-feed-1eKYHfIBys": {
+      "videoId": "u5fPZoz2nZ8",
+      "docsUpdatedAt": "2026-06-18T20:17:03.983Z",
+      "slides": 6,
+      "duration": 57
+    },
+    "guides/tak-guide/use-geochat-for-comms-s20PZmRGw8": {
+      "videoId": "iPMrxuTjtXM",
+      "docsUpdatedAt": "2026-06-18T20:17:35.582Z",
+      "slides": 12,
+      "duration": 96
+    },
+    "guides/tak-guide/recon-feed-management-y1O0x1g2sf": {
+      "videoId": "1Pr6cWfr66A",
+      "docsUpdatedAt": "2026-06-18T20:18:23.323Z",
+      "slides": 6,
+      "duration": 57
+    },
+    "guides/tak-guide/set-language-localization-for-wintak-GstcQifMVj": {
+      "videoId": "MRCEKOU2cEk",
+      "docsUpdatedAt": "2026-06-18T20:22:53.160Z",
+      "slides": 8,
+      "duration": 63
+    },
+    "guides/tak-guide/download-install-wintak-qfu2aB0W9u": {
+      "videoId": "KCodHi7Mns0",
+      "docsUpdatedAt": "2026-06-18T20:22:54.547Z",
+      "slides": 9,
+      "duration": 64
+    },
+    "guides/tak-guide/import-the-client-package-to-wintak-kCXH9p8keg": {
+      "videoId": "AE8PScGWbHw",
+      "docsUpdatedAt": "2026-06-18T20:23:24.488Z",
+      "slides": 8,
+      "duration": 50
+    },
+    "guides/tak-guide/load-plugins-finish-setup-xa2huv9Wmn": {
+      "videoId": "tLC_1jDmNpA",
+      "docsUpdatedAt": "2026-06-18T20:23:29.206Z",
+      "slides": 8,
+      "duration": 61
+    },
+    "guides/tak-guide/setting-up-your-own-location-IAAAIJTiqZ": {
+      "videoId": "jGenpcR8nXo",
+      "docsUpdatedAt": "2026-06-18T20:23:32.006Z",
+      "slides": 7,
+      "duration": 47
+    },
+    "guides/tak-guide/blue-force-tracking-uv3kHr7LSr": {
+      "videoId": "mD8PX9TIGRo",
+      "docsUpdatedAt": "2026-06-18T20:23:34.011Z",
+      "slides": 4,
+      "duration": 38
+    },
+    "guides/tak-guide/data-sync-VswHZNexYA": {
+      "videoId": "DXdY_1FOEYs",
+      "docsUpdatedAt": "2026-06-18T20:23:36.556Z",
+      "slides": 7,
+      "duration": 39
+    },
+    "guides/tak-guide/point-dropper-add-markers-wwYK8iDf5w": {
+      "videoId": "yfgfZpb2YPc",
+      "docsUpdatedAt": "2026-06-18T20:23:37.906Z",
+      "slides": 13,
+      "duration": 77
+    },
+    "guides/tak-guide/use-geochat-G4fqV0Y4fg": {
+      "videoId": "VYk4ZEeGcwQ",
+      "docsUpdatedAt": "2026-06-18T20:23:39.735Z",
+      "slides": 4,
+      "duration": 35
+    },
+    "guides/tak-guide/plugin-management-EphDON8hEX": {
+      "videoId": "L94ctLgXTns",
+      "docsUpdatedAt": "2026-06-18T20:23:41.683Z",
+      "slides": 7,
+      "duration": 38
+    },
+    "guides/tak-guide/clear-content-gLcPrq5b5J": {
+      "videoId": "HMG09Z3j8MI",
+      "docsUpdatedAt": "2026-06-18T20:23:43.290Z",
+      "slides": 4,
+      "duration": 21
+    },
+    "guides/tak-guide/create-feeds-0jPr4Cah1Z": {
+      "videoId": "Qh1W_WBXrFg",
+      "docsUpdatedAt": "2026-06-18T20:23:47.495Z",
+      "slides": 11,
+      "duration": 71
+    },
+    "guides/tak-guide/manage-feeds-62IWBYODOd": {
+      "videoId": "vuPaxcdLVLI",
+      "docsUpdatedAt": "2026-06-18T20:23:48.943Z",
+      "slides": 11,
+      "duration": 52
+    },
+    "guides/tak-guide/draw-share-plans-gUzuEffh5v": {
+      "videoId": "s1QOES-rl0s",
+      "docsUpdatedAt": "2026-06-18T20:23:50.774Z",
+      "slides": 4,
+      "duration": 33
+    },
+    "guides/tak-guide/get-alerts-with-geofences-Y1Bgr7UInI": {
+      "videoId": "1yUzkMAn-qU",
+      "docsUpdatedAt": "2026-06-18T20:23:52.229Z",
+      "slides": 4,
+      "duration": 36
+    },
+    "guides/tak-guide/overview-G0keHC8NbD": {
+      "videoId": "-Up0A22yzoM",
+      "docsUpdatedAt": "2026-06-18T20:23:55.736Z",
+      "slides": 4,
+      "duration": 38
+    },
+    "guides/tak-guide/fighter-ZxrplBIys6": {
+      "videoId": "uJWa9lEKA6o",
+      "docsUpdatedAt": "2026-06-18T20:24:28.653Z",
+      "slides": 3,
+      "duration": 28
+    },
+    "guides/tak-guide/produce-recon-feed-B7h9QJzZVd": {
+      "videoId": "e4kVFDDeHgE",
+      "docsUpdatedAt": "2026-06-18T20:24:32.926Z",
+      "slides": 17,
+      "duration": 122
+    },
+    "guides/tak-guide/start-from-download-vQGTWj6wET": {
+      "videoId": "2a8rDXNm6A8",
+      "docsUpdatedAt": "2026-06-18T20:25:38.601Z",
+      "slides": 28,
+      "duration": 148
+    },
+    "guides/tak-guide/itak-already-installed-DeEex1hIH2": {
+      "videoId": "myJ1hqAuwOU",
+      "docsUpdatedAt": "2026-06-18T20:25:41.086Z",
+      "slides": 1,
+      "duration": 13
+    },
+    "guides/tak-guide/data-sync-U4cc7UE9hg": {
+      "videoId": "PHDiEF_VDpI",
+      "docsUpdatedAt": "2026-06-18T20:25:48.398Z",
+      "slides": 8,
+      "duration": 36
+    },
+    "guides/tak-guide/start-from-download-x9ve2aL7oC": {
+      "videoId": "4-G_F1U8Drk",
+      "docsUpdatedAt": "2026-06-18T20:26:32.088Z",
+      "slides": 10,
+      "duration": 51
+    },
+    "guides/tak-guide/tak-tracker-already-installed-DoVQOAKWVB": {
+      "videoId": "5D0iKjM3B_U",
+      "docsUpdatedAt": "2026-06-18T20:26:34.155Z",
+      "slides": 1,
+      "duration": 13
+    },
+    "guides/tak-guide/importing-server-connection-URmd6F0UU5": {
+      "videoId": "YT3S1fBvL18",
+      "docsUpdatedAt": "2026-06-18T20:26:36.226Z",
+      "slides": 7,
+      "duration": 33
+    },
+    "guides/tak-guide/read-your-status-location-xFbq6tWEQC": {
+      "videoId": "TAahOA7Szog",
+      "docsUpdatedAt": "2026-06-18T20:26:41.874Z",
+      "slides": 4,
+      "duration": 40
+    },
+    "guides/tak-guide/send-an-emergency-alert-beacon-rmQFqQnNJC": {
+      "videoId": "XDwJeA2AEKE",
+      "docsUpdatedAt": "2026-06-18T20:26:44.860Z",
+      "slides": 4,
+      "duration": 39
+    },
+    "guides/tak-guide/chat-with-your-team-y6xwtxc8G9": {
+      "videoId": "V6OEkdmsvOM",
+      "docsUpdatedAt": "2026-06-18T20:26:47.487Z",
+      "slides": 2,
+      "duration": 18
+    },
+    "guides/tak-guide/options-settings-XyYcsDAVCo": {
+      "videoId": "fGnWqKDpCV8",
+      "docsUpdatedAt": "2026-06-18T20:26:51.328Z",
+      "slides": 3,
+      "duration": 27
+    },
+    "guides/tak-guide/start-from-download-5tAQBOfF65": {
+      "videoId": "ZrZ59mjPhhI",
+      "docsUpdatedAt": "2026-06-18T20:27:29.593Z",
+      "slides": 20,
+      "duration": 98
+    },
+    "guides/tak-guide/tak-tracker-already-installed-DmWqDN5jLp": {
+      "videoId": "YB_qVHtiRaQ",
+      "docsUpdatedAt": "2026-06-18T20:27:31.236Z",
+      "slides": 1,
+      "duration": 13
+    }
+  }
+}
