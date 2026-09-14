@@ -1,5 +1,32 @@
 # Changelog
 
+## [0.4.0](https://github.com/pvarki/react-opendefence-docs/compare/0.3.0...0.4.0) (2026-09-14)
+
+
+### Features
+
+* add dev sidebar sections for changelog & api ref ([aa6e2c0](https://github.com/pvarki/react-opendefence-docs/commit/aa6e2c0abb7c523ba6aaab4884f5c75d3dd876d0))
+* **config:** connect API specs / changelogs to pages ([d8b0804](https://github.com/pvarki/react-opendefence-docs/commit/d8b0804f703dda236e883c2201a4c140bc81bb52))
+* copy code blocks and zoom diagrams ([a303c58](https://github.com/pvarki/react-opendefence-docs/commit/a303c58fa2c66db10e238bf1745c1b2573c0d5c5))
+* improve book content page ([a330fd2](https://github.com/pvarki/react-opendefence-docs/commit/a330fd24c8bac3d6170253fb79b26f5e3d3dc33b))
+* index api spec + releases for search ([4a4bab6](https://github.com/pvarki/react-opendefence-docs/commit/4a4bab6643ac0ab711e298e1bc3972fbfed8b01c))
+* per-book URLs for API reference, releases and changelogs ([156d3f1](https://github.com/pvarki/react-opendefence-docs/commit/156d3f1d8db79c2828753b0ce443ac796915f6d2))
+* show sidebar at developer docs home ([dee47ac](https://github.com/pvarki/react-opendefence-docs/commit/dee47ac371b862522db80c88eeafffa33865cc12))
+
+
+### Bug Fixes
+
+* ci ([0be9ab8](https://github.com/pvarki/react-opendefence-docs/commit/0be9ab842d214446d0069015824e7d30454247f7))
+* conflicting search shortcuts ([2af316f](https://github.com/pvarki/react-opendefence-docs/commit/2af316ff11fc910f346387035c4af6aba630d894))
+* include version in url for api/releases ([685b561](https://github.com/pvarki/react-opendefence-docs/commit/685b561a8524395721d5ca54511ad872b87baf17))
+* integration page ([289d4b2](https://github.com/pvarki/react-opendefence-docs/commit/289d4b24608e9b7b84911f16197feabb5c132141))
+* mermaid diagram size in popup ([701e33a](https://github.com/pvarki/react-opendefence-docs/commit/701e33ad34ceed838b006d440fda5f79ee25c82d))
+* mobile nav on api/releases pages ([df7de79](https://github.com/pvarki/react-opendefence-docs/commit/df7de79cded0da1cb9158bbea255ca8ec6cc32d3))
+* move about this site to bottom right corner ([86d5a45](https://github.com/pvarki/react-opendefence-docs/commit/86d5a45d591401b9e028d3a71da093cd30c752a9))
+* redirect legacy api/releases paths ([c0f7fbc](https://github.com/pvarki/react-opendefence-docs/commit/c0f7fbc8be0e251018a20dc35fbd9b1b30daf4d7))
+* show sidebar on api/changelog pages ([6320aa4](https://github.com/pvarki/react-opendefence-docs/commit/6320aa4811f548c0fd11b2d4b8d50da452340c7b))
+* validate api/release links ([99b117c](https://github.com/pvarki/react-opendefence-docs/commit/99b117ccf74c0c2eab2768885c610cb31fa4fa5d))
+
 ## [0.3.0](https://github.com/pvarki/react-opendefence-docs/compare/0.2.1...0.3.0) (2026-08-21)
 
 
