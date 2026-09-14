@@ -199,6 +199,13 @@
     "integrations": "Integrationer",
     "project": "Projekt"
   },
+  "media": {
+    "label": "Visa video i stället för steg",
+    "stale": "Videon är gjord från en äldre version av den här sidan.",
+    "needsConnection": "Videon kräver nätverksanslutning — stegen visas i stället.",
+    "watch": "Se videon",
+    "readSlides": "Läs stegen"
+  },
   "devShelf": {
     "operate": "Drift",
     "contribute": "Bidra",
@@ -349,5 +356,8 @@
     "wintak": {
       "lead": "WinTAK är Windows-skrivbordsklienten för TAK-ekosystemet, utformad för användning i kommandoplatser och ledningscentraler där ett helskärmskartgränssnitt och ett tangentbordsdrivet arbetsflöde föredras framför en mobil enhet."
     }
+  },
+  "videoPlaylists": {
+    "heading": "Se på YouTube"
   }
 }

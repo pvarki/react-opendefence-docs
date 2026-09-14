@@ -83,6 +83,20 @@ export function PageSwiper({
   );
   const startIndex = windowIndex === 0 ? 0 : 1;
 
+  // Which pane the reader is actually looking at.
+  //
+  // windowKey only advances on Embla's `settle`, which fires around a second
+  // after the incoming pane has visually stopped — the easing asymptotes
+  // sub-pixel. Keying "current" to it meant the page on screen stayed `inert`
+  // for that whole window: Chrome retargets hit testing out of an inert
+  // subtree, so a drag meant for the slideset was reported against the page
+  // carousel and turned the page instead. The URL is right as soon as the turn
+  // is committed, so follow it and let windowKey keep doing its real job,
+  // which is holding the outgoing pane mounted for the animation.
+  const currentKey = windowPages.some((p) => keyOf(p) === urlKey)
+    ? urlKey
+    : windowKey;
+
   const navLockRef = useRef(false);
   // navLockRef is read inside Embla's watchDrag at gesture time, never during
   // render; the react-hooks/refs rule can't see across the factory boundary.
@@ -170,6 +184,12 @@ export function PageSwiper({
       };
       embla.on("settle", onSettle);
       embla.scrollTo(adjacentIndex, false);
+      // Without this, a navigation arriving before the previous turn settles
+      // leaves a stale listener that later drags windowKey to a page the
+      // reader has already left.
+      return () => {
+        embla.off("settle", onSettle);
+      };
     } else {
       setWindowKey(urlKey);
     }
@@ -286,7 +306,7 @@ export function PageSwiper({
                   view,
                 ) ?? position
               }
-              isCurrent={keyOf(page) === windowKey}
+              isCurrent={keyOf(page) === currentKey}
               nextBook={nextBook}
               activeClientId={
                 view

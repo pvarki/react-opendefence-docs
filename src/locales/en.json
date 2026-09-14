@@ -191,6 +191,13 @@
     "zoomOut": "Zoom out",
     "zoomReset": "Reset zoom"
   },
+  "media": {
+    "label": "Play videos instead of slides",
+    "stale": "This video was made from an older version of this page.",
+    "needsConnection": "The video needs a network connection — showing the slides instead.",
+    "watch": "Watch the video",
+    "readSlides": "Read the slides"
+  },
   "apiRef": {
     "title": "API Reference",
     "empty": "No API specs have been synced yet."
@@ -349,5 +356,8 @@
     "wintak": {
       "lead": "WinTAK is the Windows desktop client for the TAK ecosystem, designed for use in command posts and operations centers where a full-screen map interface and keyboard-driven workflow are preferred over a mobile device."
     }
+  },
+  "videoPlaylists": {
+    "heading": "Watch on YouTube"
   }
 }
