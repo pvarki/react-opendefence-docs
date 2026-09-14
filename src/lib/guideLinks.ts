@@ -16,7 +16,9 @@ const ISSUES_URL: Record<string, string> = {
 };
 
 export function issuesUrl(collection?: string): string {
-  return (collection ? ISSUES_URL[collection] : undefined) ?? DEFAULT_ISSUES_URL;
+  return (
+    (collection ? ISSUES_URL[collection] : undefined) ?? DEFAULT_ISSUES_URL
+  );
 }
 
 /**
