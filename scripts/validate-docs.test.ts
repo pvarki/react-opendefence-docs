@@ -199,7 +199,7 @@ describe("validateDocs", () => {
 
   it("flags broken internal links but accepts resolvable/external/anchor hrefs", () => {
     const broken = byCode("broken-internal-link");
-    expect(broken).toHaveLength(4);
+    expect(broken).toHaveLength(3);
     expect(broken[0]).toMatchObject({
       level: "error",
       locale: "en",
@@ -209,7 +209,7 @@ describe("validateDocs", () => {
     expect(messages).toContain("/en/deploy-app/nope-Zz99999999");
     expect(messages).toContain("/en/dev/architecture/nope");
     expect(messages).toContain("/en/dev/not-a-book/api");
-    expect(messages).toContain('"/en/dev/api"');
+    expect(messages).not.toContain('"/en/dev/api"');
     expect(messages).not.toContain("/en/dev/architecture/api");
     expect(messages).not.toContain("/fi/dev/architecture/changelog");
   });

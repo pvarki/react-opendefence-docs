@@ -17,6 +17,8 @@ import { Route as LocaleSplatRouteImport } from './routes/$locale/$'
 import { Route as LocaleGuidesIndexRouteImport } from './routes/$locale/guides/index'
 import { Route as LocaleDevIndexRouteImport } from './routes/$locale/dev/index'
 import { Route as LocaleAdvancedIndexRouteImport } from './routes/$locale/advanced/index'
+import { Route as LocaleDevReleasesRouteImport } from './routes/$locale/dev/releases'
+import { Route as LocaleDevApiRouteImport } from './routes/$locale/dev/api'
 import { Route as LocaleDevBookViewRouteImport } from './routes/$locale/dev/$book/$view'
 
 const LocaleRouteRoute = LocaleRouteRouteImport.update({
@@ -59,6 +61,16 @@ const LocaleAdvancedIndexRoute = LocaleAdvancedIndexRouteImport.update({
   path: '/advanced/',
   getParentRoute: () => LocaleRouteRoute,
 } as any)
+const LocaleDevReleasesRoute = LocaleDevReleasesRouteImport.update({
+  id: '/dev/releases',
+  path: '/dev/releases',
+  getParentRoute: () => LocaleRouteRoute,
+} as any)
+const LocaleDevApiRoute = LocaleDevApiRouteImport.update({
+  id: '/dev/api',
+  path: '/dev/api',
+  getParentRoute: () => LocaleRouteRoute,
+} as any)
 const LocaleDevBookViewRoute = LocaleDevBookViewRouteImport.update({
   id: '/dev/$book/$view',
   path: '/dev/$book/$view',
@@ -71,6 +83,8 @@ export interface FileRoutesByFullPath {
   '/$locale/$': typeof LocaleSplatRoute
   '/$locale/search': typeof LocaleSearchRoute
   '/$locale/': typeof LocaleIndexRoute
+  '/$locale/dev/api': typeof LocaleDevApiRoute
+  '/$locale/dev/releases': typeof LocaleDevReleasesRoute
   '/$locale/advanced/': typeof LocaleAdvancedIndexRoute
   '/$locale/dev/': typeof LocaleDevIndexRoute
   '/$locale/guides/': typeof LocaleGuidesIndexRoute
@@ -81,6 +95,8 @@ export interface FileRoutesByTo {
   '/$locale/$': typeof LocaleSplatRoute
   '/$locale/search': typeof LocaleSearchRoute
   '/$locale': typeof LocaleIndexRoute
+  '/$locale/dev/api': typeof LocaleDevApiRoute
+  '/$locale/dev/releases': typeof LocaleDevReleasesRoute
   '/$locale/advanced': typeof LocaleAdvancedIndexRoute
   '/$locale/dev': typeof LocaleDevIndexRoute
   '/$locale/guides': typeof LocaleGuidesIndexRoute
@@ -93,6 +109,8 @@ export interface FileRoutesById {
   '/$locale/$': typeof LocaleSplatRoute
   '/$locale/search': typeof LocaleSearchRoute
   '/$locale/': typeof LocaleIndexRoute
+  '/$locale/dev/api': typeof LocaleDevApiRoute
+  '/$locale/dev/releases': typeof LocaleDevReleasesRoute
   '/$locale/advanced/': typeof LocaleAdvancedIndexRoute
   '/$locale/dev/': typeof LocaleDevIndexRoute
   '/$locale/guides/': typeof LocaleGuidesIndexRoute
@@ -106,6 +124,8 @@ export interface FileRouteTypes {
     | '/$locale/$'
     | '/$locale/search'
     | '/$locale/'
+    | '/$locale/dev/api'
+    | '/$locale/dev/releases'
     | '/$locale/advanced/'
     | '/$locale/dev/'
     | '/$locale/guides/'
@@ -116,6 +136,8 @@ export interface FileRouteTypes {
     | '/$locale/$'
     | '/$locale/search'
     | '/$locale'
+    | '/$locale/dev/api'
+    | '/$locale/dev/releases'
     | '/$locale/advanced'
     | '/$locale/dev'
     | '/$locale/guides'
@@ -127,6 +149,8 @@ export interface FileRouteTypes {
     | '/$locale/$'
     | '/$locale/search'
     | '/$locale/'
+    | '/$locale/dev/api'
+    | '/$locale/dev/releases'
     | '/$locale/advanced/'
     | '/$locale/dev/'
     | '/$locale/guides/'
@@ -196,6 +220,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof LocaleAdvancedIndexRouteImport
       parentRoute: typeof LocaleRouteRoute
     }
+    '/$locale/dev/releases': {
+      id: '/$locale/dev/releases'
+      path: '/dev/releases'
+      fullPath: '/$locale/dev/releases'
+      preLoaderRoute: typeof LocaleDevReleasesRouteImport
+      parentRoute: typeof LocaleRouteRoute
+    }
+    '/$locale/dev/api': {
+      id: '/$locale/dev/api'
+      path: '/dev/api'
+      fullPath: '/$locale/dev/api'
+      preLoaderRoute: typeof LocaleDevApiRouteImport
+      parentRoute: typeof LocaleRouteRoute
+    }
     '/$locale/dev/$book/$view': {
       id: '/$locale/dev/$book/$view'
       path: '/dev/$book/$view'
@@ -210,6 +248,8 @@ interface LocaleRouteRouteChildren {
   LocaleSplatRoute: typeof LocaleSplatRoute
   LocaleSearchRoute: typeof LocaleSearchRoute
   LocaleIndexRoute: typeof LocaleIndexRoute
+  LocaleDevApiRoute: typeof LocaleDevApiRoute
+  LocaleDevReleasesRoute: typeof LocaleDevReleasesRoute
   LocaleAdvancedIndexRoute: typeof LocaleAdvancedIndexRoute
   LocaleDevIndexRoute: typeof LocaleDevIndexRoute
   LocaleGuidesIndexRoute: typeof LocaleGuidesIndexRoute
@@ -220,6 +260,8 @@ const LocaleRouteRouteChildren: LocaleRouteRouteChildren = {
   LocaleSplatRoute: LocaleSplatRoute,
   LocaleSearchRoute: LocaleSearchRoute,
   LocaleIndexRoute: LocaleIndexRoute,
+  LocaleDevApiRoute: LocaleDevApiRoute,
+  LocaleDevReleasesRoute: LocaleDevReleasesRoute,
   LocaleAdvancedIndexRoute: LocaleAdvancedIndexRoute,
   LocaleDevIndexRoute: LocaleDevIndexRoute,
   LocaleGuidesIndexRoute: LocaleGuidesIndexRoute,

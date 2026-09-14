@@ -89,6 +89,9 @@ const IMG_SRC_PATTERN = /<img\b[^>]*?\bsrc="([^"]*)"/g;
 
 const DEV_REF_VIEWS = new Set(["api", "releases", "notes", "changelog"]);
 
+// Pre-per-book reference pages, kept as redirect routes; links to them resolve.
+const LEGACY_DEV_ROUTES = new Set(["dev/api", "dev/releases"]);
+
 /** The dev reference route /{locale}/dev/{book}/{view}, if the key is one. */
 export function parseDevRefRoute(
   routeKey: string,
@@ -299,6 +302,7 @@ export async function validateDocs(
       for (const href of collectHrefs(page)) {
         const route = parseRouteHref(href);
         if (!route) continue;
+        if (LEGACY_DEV_ROUTES.has(route.routeKey)) continue;
         const devRef = parseDevRefRoute(route.routeKey);
         if (devRef) {
           // Dev books are en-only, and the route falls back to en like the reader.
