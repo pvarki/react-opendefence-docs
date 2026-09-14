@@ -42,7 +42,7 @@ function introSeen(): boolean {
 /**
  * First-visit welcome modal: three slides telling the OpenDefence story.
  * Auto-opens once on the homepage (localStorage-gated), and stays reachable
- * everywhere via a fixed bottom-left button so it can be revisited. A Drawer
+ * everywhere via a fixed bottom-right button so it can be revisited. A Drawer
  * on mobile, a Dialog on desktop — like react-rasenmaeher-ui-v2's onboarding.
  * Each slide image opens fullscreen on click.
  */
@@ -192,13 +192,13 @@ export function IntroModal() {
         </Dialog>
       )}
 
-      {/* Revisit button — bottom-left, above the mobile tab bar. Hidden on
-          mobile reader pages where the floating back button sits at left-3. */}
+      {/* Revisit button — bottom-right, above the mobile tab bar. Hidden on
+          mobile reader pages to keep the page's bottom edge clear. */}
       <button
         type="button"
         onClick={reopen}
         className={cn(
-          "fixed bottom-4 left-4 z-40 flex items-center gap-1.5 rounded-full border border-border bg-card/95 px-3 py-2 text-xs font-medium text-muted-foreground shadow-lg backdrop-blur transition-colors hover:border-primary hover:text-primary max-md:bottom-[calc(var(--tabbar-h)+0.75rem)] max-md:left-3",
+          "fixed right-4 bottom-4 z-40 flex items-center gap-1.5 rounded-full border border-border bg-card/95 px-3 py-2 text-xs font-medium text-muted-foreground shadow-lg backdrop-blur transition-colors hover:border-primary hover:text-primary max-md:right-3 max-md:bottom-[calc(var(--tabbar-h)+0.75rem)]",
           inReader && "max-md:hidden",
         )}
       >
