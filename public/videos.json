@@ -1,17 +1,65 @@
 {
-  "generatedAt": "2026-09-13T15:07:47.540Z",
+  "generatedAt": "2026-09-14T12:43:26.291Z",
   "playlists": [
     {
       "collection": "deploy-app",
-      "title": "Deploy App — Android",
+      "title": "Deploy App - Android",
       "url": "https://www.youtube.com/playlist?list=PLAxrxPvyym0Y",
       "videos": 8
     },
     {
       "collection": "deploy-app",
-      "title": "Deploy App — iOS",
+      "title": "Deploy App - iOS",
       "url": "https://www.youtube.com/playlist?list=PLPB8TzVUEItw",
       "videos": 8
+    },
+    {
+      "collection": "deploy-app",
+      "title": "Deploy App - Windows",
+      "url": "https://www.youtube.com/playlist?list=PLEPOHkcJI3vU",
+      "videos": 3
+    },
+    {
+      "collection": "guides/cryptpad-guide",
+      "title": "CryptPad",
+      "url": "https://www.youtube.com/playlist?list=PLSxP0sQjjDzs",
+      "videos": 7
+    },
+    {
+      "collection": "guides/matrix-guide",
+      "title": "Matrix",
+      "url": "https://www.youtube.com/playlist?list=PLKGY7Rnoi-DY",
+      "videos": 4
+    },
+    {
+      "collection": "guides/tak-guide",
+      "title": "ATAK - Android",
+      "url": "https://www.youtube.com/playlist?list=PLLmjQqVFo4gk",
+      "videos": 33
+    },
+    {
+      "collection": "guides/tak-guide",
+      "title": "WinTAK - Windows",
+      "url": "https://www.youtube.com/playlist?list=PLSbEsJ9DfpFI",
+      "videos": 19
+    },
+    {
+      "collection": "guides/tak-guide",
+      "title": "iTAK - iOS",
+      "url": "https://www.youtube.com/playlist?list=PLHocYQAisBBY",
+      "videos": 4
+    },
+    {
+      "collection": "guides/tak-guide",
+      "title": "TAK Tracker - Android",
+      "url": "https://www.youtube.com/playlist?list=PLVUC2WmU9N94",
+      "videos": 8
+    },
+    {
+      "collection": "guides/tak-guide",
+      "title": "TAK Tracker - iOS",
+      "url": "https://www.youtube.com/playlist?list=PLZuwsGRNpYbc",
+      "videos": 3
     }
   ],
   "videos": {
