@@ -13,15 +13,12 @@ import {
   type Locale,
   type LocaleManifest,
   type ManifestPage,
-  type SidebarConfig,
 } from "@shared/content-schema";
 import { COVER_HEROES } from "@/lib/cardImages";
 import type { BookContext } from "@/lib/bookContext";
 import i18n from "@/lib/i18n";
-import { loadManifest, loadPage, loadSidebar } from "@/lib/content/loader";
+import { loadManifest, loadPage } from "@/lib/content/loader";
 import {
-  filterSidebarByClient,
-  filterSidebarByPlatform,
   readingOrder,
   resolveClient,
   resolveSplat,
@@ -35,11 +32,7 @@ import { PageSwiper } from "@/components/reader/PageSwiper";
 import { NotFound } from "@/components/shell/NotFound";
 import { PlatformList } from "@/components/shell/PlatformList";
 import { ShelfHero } from "@/components/shell/ShelfHero";
-import {
-  DevRefList,
-  SidebarItems,
-  SidebarNav,
-} from "@/components/shell/SidebarNav";
+import { DevRefList, SidebarNav } from "@/components/shell/SidebarNav";
 import { loadDevRefs, type DevRef } from "@/lib/devNav";
 import { ReaderBar } from "@/components/shell/ReaderBar";
 import { Button } from "@/components/ui/button";
@@ -218,23 +211,7 @@ function BookCover({
   const pages = readingOrder(data.manifest, data.collection, view);
   const first = pages[0];
 
-  // The cover IS the book's table of contents: the same grouped chapter tree
-  // as the Contents sheet, chapters collapsed for a scannable overview.
-  const [sidebar, setSidebar] = useState<SidebarConfig>();
-  useEffect(() => {
-    let cancelled = false;
-    loadSidebar(data.contentLocale, data.collection)
-      .then((config) => {
-        if (!cancelled) setSidebar(config);
-      })
-      .catch(() => {});
-    return () => {
-      cancelled = true;
-    };
-  }, [data.contentLocale, data.collection]);
-
-  // The cover is the book's TOC, so it lists the same reference rows the
-  // sidebar puts under this book.
+  // Reference rows the sidebar puts under this book.
   const [refs, setRefs] = useState<DevRef[]>([]);
   useEffect(() => {
     let cancelled = false;
@@ -302,25 +279,6 @@ function BookCover({
             <DevRefList locale={locale} refs={refs} variant="button" />
           </div>
         )}
-        <nav aria-label={t("nav.contents")} className="mt-5 md:mt-8">
-          <p className="pb-1.5 text-[11px] font-semibold tracking-widest text-primary uppercase">
-            {t("nav.contents")}
-          </p>
-          {sidebar && (
-            <SidebarItems
-              items={filterSidebarByPlatform(
-                filterSidebarByClient(
-                  sidebar.items,
-                  hasClients ? active?.id : undefined,
-                ),
-                view.platform,
-              )}
-              locale={locale}
-              collection={data.collection}
-              variant="cover"
-            />
-          )}
-        </nav>
         {/* Thumb-reach Start reading: floats bottom-left above the tab bar,
             next to the floating back button. */}
         {first && (
@@ -369,7 +327,10 @@ function GuideFooter({ collection }: { collection: string }) {
         {t(`${kp}.lead`)}
       </p>
 
-      <details className="group mt-4 rounded-lg border border-border bg-card">
+      <details
+        open
+        className="group mt-4 rounded-lg border border-border bg-card"
+      >
         <summary className="flex cursor-pointer list-none items-center justify-between gap-2 px-4 py-3 text-base font-semibold select-none [&::-webkit-details-marker]:hidden">
           {t("footer.tellMore")}
           <ChevronDown className="size-4 shrink-0 text-muted-foreground transition-transform group-open:rotate-180" />
