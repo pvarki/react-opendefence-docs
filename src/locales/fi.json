@@ -257,7 +257,9 @@
     "qualityBody": "Deploy Appin ja kaikkien virallisten tuoteintegraatioiden on kestettävä todellista sotaa — ei yhtään vähempää. Se vaatii ensiluokkaista laatua, yksinkertaisuutta ja todellisuuspohjaista turvallisuutta. Emme kehitä tai julkaise ominaisuuksia, jotka eivät täytä näitä vaatimuksia — olemme mieluummin ilman niitä.",
     "siteUnderDev": "Verkkosivusto on kehitteillä.",
     "contributeHeadline": "Haluatko osallistua, integroida tai operoida?",
-    "contributeBody": "Meille yhteentoimivuus ei ole markkinointislogan. Toivotamme tervetulleiksi kehittäjät, tuoteintegroijat ja organisaatiot, jotka haluavat hyödyntää OpenDefenceä. Tuote on Suomen ja liittoutuneiden puolustuksen hyväksi."
+    "contributeBody": "Meille yhteentoimivuus ei ole markkinointislogan. Toivotamme tervetulleiksi kehittäjät, tuoteintegroijat ja organisaatiot, jotka haluavat hyödyntää OpenDefenceä. Tuote on Suomen ja liittoutuneiden puolustuksen hyväksi.",
+    "orgTitle": "OpenDefence organisaationa",
+    "orgBody": "OpenDefence-hanketta hallinnoi Puolustusinnovaatiosäätiö sr (Defence Innovation Foundation, y-tunnus 3628671-7), suomalainen voittoa tavoittelematon, yleishyödyllinen säätiö, jonka tarkoituksena on tukea kansallisia ja yleisiä turvallisuustarpeita sekä Puolustusvoimia. Ota yhteyttä: contact@opendefence.fi."
   },
   "guidesFooter": {
     "lead": "Deploy Appissa on useita virallisia tuoteintegraatioita, joista jokaista kehittää tällä hetkellä OpenDefence. Täältä löydät oppaat virallisten tuotteiden tehokkaaseen käyttöön.",

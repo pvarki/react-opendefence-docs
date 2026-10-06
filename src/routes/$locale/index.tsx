@@ -261,6 +261,15 @@ function HomeFooter() {
           </div>
         </div>
 
+        <div className="mt-8">
+          <h3 className="text-base font-semibold text-foreground">
+            {t("footer.orgTitle")}
+          </h3>
+          <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+            {t("footer.orgBody")}
+          </p>
+        </div>
+
         <OrientationModal
           open={orient !== null}
           start={orient ?? "contribute"}
