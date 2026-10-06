@@ -476,28 +476,17 @@ test.describe("platform selector", () => {
   });
 });
 
-test.describe("book cover TOC", () => {
-  test("cover lists chapters collapsed; expanding reveals pages", async ({
+test.describe("book cover", () => {
+  test("Tell me more is expanded and the contents live only in the sidebar", async ({
     page,
   }) => {
     await page.goto("/en/deploy-app");
-    const cover = page.getByRole("navigation", { name: "Contents" });
-    const userGuide = cover.getByRole("button", { name: "User Guide" });
-    await expect(userGuide).toBeVisible();
-    await expect(userGuide).toHaveAttribute("aria-expanded", "false");
-    await userGuide.click();
-    const link = cover.getByRole("link", {
-      name: "Joining a Deploy App",
-      exact: true,
-    });
-    if (await link.isVisible().catch(() => false)) {
-      await link.click();
-      await expect(page).toHaveURL(FIRST);
-    } else {
-      // Platform defaulted elsewhere (e.g. macOS on desktop): its own
-      // chapters expand the same way.
-      await expect(cover.getByRole("link").first()).toBeVisible();
-    }
+    await expect(
+      page.locator("details", { hasText: "Tell me more" }),
+    ).toHaveJSProperty("open", true);
+    await expect(
+      page.getByRole("navigation", { name: "Contents" }),
+    ).toHaveCount(0);
   });
 });
 
