@@ -282,7 +282,7 @@ export const API_SPEC_SOURCES: ApiSpecSource[] = [
         "## Base URL",
         "",
         "All endpoints live under `/api/v1`. The host is assigned per deployment",
-        "(for example `your-deployment.pvarki.fi`) — pick it in the server",
+        "(for example `your-deployment.example.org`) — pick it in the server",
         "selector above or substitute your own instance's hostname.",
         "",
         "## Authentication",
@@ -300,15 +300,14 @@ export const API_SPEC_SOURCES: ApiSpecSource[] = [
       ].join("\n"),
       servers: [
         {
-          url: "https://{deployment}.pvarki.fi",
+          url: "https://{deployment}",
           description:
             "Your Deploy App deployment. The host is assigned per installation; " +
             "replace {deployment} with your instance's hostname.",
           variables: {
             deployment: {
-              default: "your-deployment",
-              description:
-                "Deployment hostname prefix assigned to your Deploy App instance.",
+              default: "your-deployment.example.org",
+              description: "Hostname assigned to your Deploy App instance.",
             },
           },
         },
