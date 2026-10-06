@@ -265,7 +265,7 @@ function HomeFooter() {
           <h3 className="text-base font-semibold text-foreground">
             {t("footer.orgTitle")}
           </h3>
-          <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+          <p className="mt-2 text-sm leading-relaxed whitespace-pre-line text-muted-foreground">
             {t("footer.orgBody")}
           </p>
         </div>
