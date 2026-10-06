@@ -7,9 +7,9 @@ import { useSyncExternalStore } from "react";
 
 const STORAGE_KEY = "textScale";
 
-/** Root-font multipliers. Index 1 is the normal default. */
+/** Root-font multipliers. Index 2 is the normal default. */
 export const TEXT_SCALE_STEPS = [0.9, 1, 1.2, 1.45] as const;
-const DEFAULT_INDEX = 1;
+const DEFAULT_INDEX = 2;
 /** At/above this step, mobile slideset images shrink to give captions room. */
 const LARGE_INDEX = 2;
 
