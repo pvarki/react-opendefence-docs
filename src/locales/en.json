@@ -259,7 +259,7 @@
     "contributeHeadline": "Want to contribute, integrate or operate?",
     "contributeBody": "For us, interoperability is not a marketing slogan. We welcome developers, product integrators and organizations willing to utilize OpenDefence. The product is for good of Finnish and Allied defence.",
     "orgTitle": "OpenDefence as an organization",
-    "orgBody": "The OpenDefence project is managed by Defence Innovation Foundation (Finnish: Puolustusinnovaatiosäätiö sr, business id 3628671-7) a Finnish non-profit, public-good foundation dedicated to support national and public security needs & Finnish Defence Forces. Contact us at contact@opendefence.fi."
+    "orgBody": "The OpenDefence project is managed by Defence Innovation Foundation (Finnish: Puolustusinnovaatiosäätiö sr, business id 3628671-7) a Finnish non-profit, public-good foundation dedicated to support national and public security & Finnish Defence Forces in technology matters.\n\nContact us at contact@opendefence.fi."
   },
   "guidesFooter": {
     "lead": "Deploy App has a number of official product integrations, each currently developed by OpenDefence. Here you can find guides to use the official products efficiently.",
