@@ -163,6 +163,15 @@ const COPYRIGHT_LINES = [
   "CryptPad: © XWiki SAS",
 ];
 
+// Legal entity behind the project; names and address are not translated.
+const FOUNDATION_LINES = [
+  "The OpenDefence Project",
+  "Defence Innovation Foundation sr",
+  "FI: Puolustusinnovaatiosäätiö sr",
+  "3628671-7",
+  "Annankatu 19, 00120 Helsinki",
+];
+
 // The contribute/integrate/operate doors — each opens a guided orientation flow.
 const CONTRIBUTE_DOORS: { track: TrackKey; labelKey: string }[] = [
   { track: "contribute", labelKey: "devShelf.contribute" },
@@ -284,6 +293,12 @@ function HomeFooter() {
 
         <div className="mt-6 space-y-0.5 border-t border-border pt-4">
           {COPYRIGHT_LINES.map((line) => (
+            <p key={line} className="text-[11px] text-muted-foreground/80">
+              {line}
+            </p>
+          ))}
+          <div aria-hidden className="h-3" />
+          {FOUNDATION_LINES.map((line) => (
             <p key={line} className="text-[11px] text-muted-foreground/80">
               {line}
             </p>
