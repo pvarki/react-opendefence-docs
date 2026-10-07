@@ -259,7 +259,7 @@
     "contributeHeadline": "Vill du bidra, integrera eller drifta?",
     "contributeBody": "För oss är interoperabilitet inte en marknadsföringsslogan. Vi välkomnar utvecklare, produktintegratörer och organisationer som vill använda OpenDefence. Produkten är till gagn för finskt och allierat försvar.",
     "orgTitle": "OpenDefence som organisation",
-    "orgBody": "OpenDefence-projektet förvaltas av Defence Innovation Foundation (finska: Puolustusinnovaatiosäätiö sr, FO-nummer 3628671-7), en finsk icke-vinstdrivande stiftelse för allmännyttan som stöder säkerhetsmyndigheterna och Försvarsmakten i teknikfrågor.\n\nKontakta oss på contact@opendefence.fi."
+    "orgBody": "OpenDefence-projektet förvaltas av Defence Innovation Foundation. Stiftelsen är en finsk icke-vinstdrivande organisation för allmännyttan som stöder nationell och allmän säkerhet samt Försvarsmakten i teknikfrågor, i första hand med öppen källkod.\n\nKontakta oss på contact@opendefence.fi."
   },
   "guidesFooter": {
     "lead": "Deploy App har ett antal officiella produktintegrationer, som var och en för närvarande utvecklas av OpenDefence. Här hittar du guider för att använda de officiella produkterna effektivt.",
