@@ -101,6 +101,44 @@ export default defineConfig({
       },
     }),
     {
+      // Vite blocks module imports from public/ in dev, so serve pagefind statically.
+      name: "pagefind-dev-static",
+      apply: "serve",
+      configureServer(server) {
+        const root = path.resolve(__dirname, "public", "pagefind");
+        const prefix = `${base}pagefind/`;
+        const types: Record<string, string> = {
+          ".js": "text/javascript",
+          ".css": "text/css",
+          ".json": "application/json",
+        };
+        server.middlewares.use((req, res, next) => {
+          const url = (req.url ?? "").split("?")[0];
+          if (!url.startsWith(prefix)) return next();
+          let file: string;
+          try {
+            file = path.resolve(
+              root,
+              decodeURIComponent(url.slice(prefix.length)),
+            );
+          } catch {
+            file = "";
+          }
+          if (!file.startsWith(root + path.sep) || !fs.existsSync(file)) {
+            // No index until `pnpm build`; search just finds nothing.
+            res.statusCode = 404;
+            res.end();
+            return;
+          }
+          res.setHeader(
+            "Content-Type",
+            types[path.extname(file)] ?? "application/octet-stream",
+          );
+          fs.createReadStream(file).pipe(res);
+        });
+      },
+    },
+    {
       // GitHub Pages has no SPA rewrite: copy the app shell to 404.html so deep
       // links and refreshes (e.g. /en/working-with-tak/...) resolve on first
       // load, before the service worker's navigateFallback is active.

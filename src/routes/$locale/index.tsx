@@ -1,4 +1,4 @@
-import { Fragment, useState, type ReactNode } from "react";
+import { Fragment, useState } from "react";
 import { createFileRoute } from "@tanstack/react-router";
 import { useTranslation } from "react-i18next";
 import {
@@ -14,10 +14,15 @@ import type { LucideIcon } from "lucide-react";
 import { BookCard } from "@/components/shell/BookCard";
 import { OrientationModal } from "@/components/shell/OrientationModal";
 import { markOrientationSeen, type TrackKey } from "@/lib/orientationFlows";
-import { AgentFriendlyNote } from "@/components/shell/AgentFriendlyNote";
 import { PwaInstallPrompt } from "@/components/shell/PwaInstallPrompt";
-import { CARD_IMAGES } from "@/lib/cardImages";
+import { ShelfIndicator } from "@/components/shell/ShelfIndicator";
+import { SiteFooter } from "@/components/shell/SiteFooter";
+import { Button } from "@/components/ui/button";
+import { SectionLabel } from "@/components/ui/section-label";
 import { withBase } from "@/lib/base";
+import { CONTACT_EMAIL } from "@/lib/introModal";
+import { PAGE_FRAME } from "@/lib/pageFrame";
+import { cn } from "@/lib/utils";
 
 export const Route = createFileRoute("/$locale/")({
   component: HomePage,
@@ -31,12 +36,8 @@ interface HomeCard {
   icon: LucideIcon;
   titleKey: string;
   descKey: string;
-  /** CARD_IMAGES key for an optional card backdrop. */
-  img?: string;
 }
 
-// Three toporg-style organizers tell the story: what it is, how to read the
-// guides, how to develop. Headings render orange like the ATAK guide toporgs.
 const ORGANIZERS: { titleKey: string; cards: HomeCard[] }[] = [
   {
     titleKey: "home.org.whatIs",
@@ -63,26 +64,23 @@ const ORGANIZERS: { titleKey: string; cards: HomeCard[] }[] = [
         icon: Smartphone,
         titleKey: "home.userCard",
         descKey: "home.userCardDesc",
-        img: "deploy-app",
       },
       {
         to: "/$locale/guides",
         icon: BookOpen,
         titleKey: "home.guidesCard",
         descKey: "home.guidesCardDesc",
-        img: "guides",
       },
     ],
   },
   {
-    titleKey: "home.org.develop",
+    titleKey: "home.org.further",
     cards: [
       {
         to: "/$locale/advanced",
         icon: Zap,
         titleKey: "home.powerCard",
         descKey: "home.powerCardDesc",
-        img: "advanced",
       },
       {
         to: "/$locale/dev",
@@ -94,41 +92,37 @@ const ORGANIZERS: { titleKey: string; cards: HomeCard[] }[] = [
   },
 ];
 
-function SectionHeading({ children }: { children: ReactNode }) {
-  return (
-    <h2 className="px-1 pt-5 pb-2 text-[11px] font-semibold tracking-widest text-primary uppercase">
-      {children}
-    </h2>
-  );
-}
-
 function HomePage() {
   const { t } = useTranslation();
   const { locale } = Route.useParams();
 
   return (
-    <div className="h-full overflow-y-auto">
-      {/* Hero: title over a tinted full-width image. */}
-      <div className="relative h-40 overflow-hidden border-b border-border md:h-56">
+    <div className="flex h-full flex-col overflow-y-auto">
+      <div className="relative h-20 shrink-0 overflow-hidden md:h-28">
         <img
           src={withBase("/images/poweruser.jpg")}
           alt=""
           aria-hidden
           className="absolute inset-0 h-full w-full object-cover object-[center_30%]"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-background/20" />
-        <div className="absolute inset-x-0 bottom-0 mx-auto w-full max-w-2xl px-4 pb-3 md:pb-5">
-          <h1 className="text-2xl font-bold md:text-4xl">{t("app.title")}</h1>
-          <p className="mt-0.5 text-sm text-muted-foreground md:mt-1 md:text-base">
-            {t("app.tagline")}
-          </p>
-        </div>
+        <div className="absolute inset-0 bg-gradient-to-t from-background to-background/30" />
       </div>
-      <div className="mx-auto max-w-2xl px-4 py-4 md:py-8">
+      <header className={cn(PAGE_FRAME, "-mt-6 md:-mt-8")}>
+        <ShelfIndicator className="relative -ml-1 mb-1" />
+        <h1 className="relative text-2xl font-bold tracking-tight break-words md:text-3xl">
+          {t("app.title")}
+        </h1>
+        <p className="relative mt-1.5 text-sm text-muted-foreground md:text-base">
+          {t("app.tagline")}
+        </p>
+      </header>
+      <div className={cn(PAGE_FRAME, "pt-2 pb-8 md:pb-10")}>
         {ORGANIZERS.map((org) => (
           <Fragment key={org.titleKey}>
-            <SectionHeading>{t(org.titleKey)}</SectionHeading>
-            <div className="grid grid-cols-1 gap-2.5 md:grid-cols-2 md:gap-3">
+            <SectionLabel className="px-1 pt-6 pb-2">
+              {t(org.titleKey)}
+            </SectionLabel>
+            <div className="grid grid-cols-1 gap-2.5 sm:grid-cols-2 md:gap-3">
               {org.cards.map((card) => (
                 <BookCard
                   key={card.titleKey}
@@ -138,39 +132,21 @@ function HomePage() {
                   icon={card.icon}
                   title={t(card.titleKey)}
                   description={t(card.descKey)}
-                  image={card.img ? CARD_IMAGES[card.img] : undefined}
                   size="tall"
                 />
               ))}
             </div>
           </Fragment>
         ))}
+        <HomeAbout />
       </div>
-      <HomeFooter />
+      <SiteFooter agentExample={t("agentNote.exampleHome")} />
     </div>
   );
 }
 
 /** Set at build time (e.g. repo variable LANDING_URL) — hidden when unset. */
 const LANDING_URL = import.meta.env.VITE_LANDING_URL;
-
-const COPYRIGHT_LINES = [
-  "Deploy App & this site: © OpenDefence",
-  "FDF images: © Finnish Defence Forces",
-  "TAK: © TAK Product Center, a U.S. Government organization",
-  "Matrix: © The Matrix.org Foundation",
-  "MediaMTX: © aler9",
-  "CryptPad: © XWiki SAS",
-];
-
-// Legal entity behind the project; names and address are not translated.
-const FOUNDATION_LINES = [
-  "The OpenDefence Project",
-  "Defence Innovation Foundation sr",
-  "FI: Puolustusinnovaatiosäätiö sr",
-  "3628671-7",
-  "Annankatu 19, 00120 Helsinki",
-];
 
 // The contribute/integrate/operate doors — each opens a guided orientation flow.
 const CONTRIBUTE_DOORS: { track: TrackKey; labelKey: string }[] = [
@@ -179,7 +155,24 @@ const CONTRIBUTE_DOORS: { track: TrackKey; labelKey: string }[] = [
   { track: "operate", labelKey: "devShelf.operate" },
 ];
 
-function HomeFooter() {
+function WithContactLink({ text }: { text: string }) {
+  const [before, ...rest] = text.split(CONTACT_EMAIL);
+  if (rest.length === 0) return <>{text}</>;
+  return (
+    <>
+      {before}
+      <a
+        href={`mailto:${CONTACT_EMAIL}`}
+        className="text-primary underline-offset-2 hover:underline"
+      >
+        {CONTACT_EMAIL}
+      </a>
+      {rest.join(CONTACT_EMAIL)}
+    </>
+  );
+}
+
+function HomeAbout() {
   const { t } = useTranslation();
   const [orient, setOrient] = useState<TrackKey | null>(null);
 
@@ -190,123 +183,105 @@ function HomeFooter() {
   ];
 
   return (
-    <footer className="mt-4 border-t border-border bg-card md:mt-8">
-      <div className="mx-auto max-w-2xl px-4 py-6 md:py-10">
-        <p className="text-sm leading-relaxed text-foreground">
-          {t("footer.lead")}
-        </p>
-        <p className="mt-3 text-sm leading-relaxed text-foreground">
-          {t("footer.lead2")}
-        </p>
+    <section className="mt-10 max-w-3xl border-t border-border pt-8 md:mt-12">
+      <p className="text-sm leading-relaxed text-foreground md:text-base">
+        {t("footer.lead")}
+      </p>
+      <p className="mt-3 text-sm leading-relaxed text-foreground md:text-base">
+        {t("footer.lead2")}
+      </p>
 
-        {/* Collapsed by default; native disclosure keeps it JS-free. */}
-        <details className="group mt-5 rounded-lg border border-border bg-background">
-          <summary className="flex cursor-pointer list-none items-center justify-between gap-2 px-4 py-3 text-base font-semibold select-none [&::-webkit-details-marker]:hidden">
-            {t("footer.tellMore")}
-            <ChevronDown className="size-4 shrink-0 text-muted-foreground transition-transform group-open:rotate-180" />
-          </summary>
-          <div className="px-4 pb-4">
-            <p className="text-sm leading-relaxed text-muted-foreground">
-              {t("footer.core")}
-            </p>
-
-            {goals.map(({ title, body }) => (
-              <div key={title}>
-                <p className="mt-4 text-[11px] font-semibold tracking-widest text-primary uppercase">
-                  {t(title)}
-                </p>
-                <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
-                  {t(body)}
-                </p>
-              </div>
-            ))}
-
-            <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-              {t("footer.maintain")}
-            </p>
-
-            <p className="mt-4 text-sm">
-              {t("footer.readMore")}{" "}
-              {LANDING_URL ? (
-                <a
-                  href={LANDING_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-primary underline-offset-2 hover:underline"
-                >
-                  {LANDING_URL.replace(/^https?:\/\//, "")}
-                </a>
-              ) : (
-                <span className="text-muted-foreground italic">
-                  {t("footer.siteUnderDev")}
-                </span>
-              )}
-            </p>
-          </div>
-        </details>
-
-        {/* The three doors for people who want to do more than read. */}
-        <div className="mt-8">
-          <h3 className="text-base font-semibold text-foreground">
-            {t("footer.contributeHeadline")}
-          </h3>
-          <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-            {t("footer.contributeBody")}
+      {/* Collapsed by default; native disclosure keeps it JS-free. */}
+      <details className="group mt-5 rounded-lg border border-border bg-card">
+        <summary className="flex cursor-pointer list-none items-center justify-between gap-2 px-4 py-3 text-base font-semibold select-none [&::-webkit-details-marker]:hidden">
+          {t("footer.tellMore")}
+          <ChevronDown className="size-4 shrink-0 text-muted-foreground transition-transform group-open:rotate-180" />
+        </summary>
+        <div className="px-4 pb-4">
+          <p className="text-sm leading-relaxed text-muted-foreground">
+            {t("footer.core")}
           </p>
-          <div className="mt-3 flex flex-wrap gap-2">
-            {CONTRIBUTE_DOORS.map(({ track, labelKey }) => (
-              <button
-                key={track}
-                type="button"
-                onClick={() => {
-                  markOrientationSeen();
-                  setOrient(track);
-                }}
-                className="rounded-full border border-border px-3 py-1 text-sm text-foreground transition-colors hover:border-primary hover:text-primary"
+
+          {goals.map(({ title, body }) => (
+            <div key={title}>
+              <SectionLabel as="h3" className="mt-4">
+                {t(title)}
+              </SectionLabel>
+              <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
+                {t(body)}
+              </p>
+            </div>
+          ))}
+
+          <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+            {t("footer.maintain")}
+          </p>
+
+          <p className="mt-4 text-sm">
+            {t("footer.readMore")}{" "}
+            {LANDING_URL ? (
+              <a
+                href={LANDING_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary underline-offset-2 hover:underline"
               >
-                {t(labelKey)}
-              </button>
-            ))}
-          </div>
-        </div>
-
-        <div className="mt-8">
-          <h3 className="text-base font-semibold text-foreground">
-            {t("footer.orgTitle")}
-          </h3>
-          <p className="mt-2 text-sm leading-relaxed whitespace-pre-line text-muted-foreground">
-            {t("footer.orgBody")}
+                {LANDING_URL.replace(/^https?:\/\//, "")}
+              </a>
+            ) : (
+              <span className="text-muted-foreground italic">
+                {t("footer.siteUnderDev")}
+              </span>
+            )}
           </p>
         </div>
+      </details>
 
-        <OrientationModal
-          open={orient !== null}
-          start={orient ?? "contribute"}
-          onOpenChange={(o) => {
-            if (!o) setOrient(null);
-          }}
-        />
-
-        <div className="mt-8">
-          <PwaInstallPrompt />
-        </div>
-
-        <div className="mt-6 space-y-0.5 border-t border-border pt-4">
-          {COPYRIGHT_LINES.map((line) => (
-            <p key={line} className="text-[11px] text-muted-foreground/80">
-              {line}
-            </p>
+      {/* The three doors for people who want to do more than read. */}
+      <div className="mt-8">
+        <h2 className="text-base font-semibold text-foreground">
+          {t("footer.contributeHeadline")}
+        </h2>
+        <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+          {t("footer.contributeBody")}
+        </p>
+        <div className="mt-3 flex flex-wrap gap-2">
+          {CONTRIBUTE_DOORS.map(({ track, labelKey }) => (
+            <Button
+              key={track}
+              variant="outline"
+              size="sm"
+              onClick={() => {
+                markOrientationSeen();
+                setOrient(track);
+              }}
+            >
+              {t(labelKey)}
+            </Button>
           ))}
-          <div aria-hidden className="h-3" />
-          {FOUNDATION_LINES.map((line) => (
-            <p key={line} className="text-[11px] text-muted-foreground/80">
-              {line}
-            </p>
-          ))}
         </div>
-
-        <AgentFriendlyNote example={t("agentNote.exampleHome")} />
       </div>
-    </footer>
+
+      <div className="mt-8">
+        <h2 className="text-base font-semibold text-foreground">
+          {t("footer.orgTitle")}
+        </h2>
+        <p className="mt-2 text-sm leading-relaxed whitespace-pre-line text-muted-foreground">
+          <WithContactLink text={t("footer.orgBody")} />
+        </p>
+      </div>
+
+      <OrientationModal
+        open={orient !== null}
+        start={orient ?? "contribute"}
+        onOpenChange={(o) => {
+          if (!o) setOrient(null);
+        }}
+      />
+
+      <div className="mt-8">
+        <PwaInstallPrompt />
+      </div>
+    </section>
   );
 }

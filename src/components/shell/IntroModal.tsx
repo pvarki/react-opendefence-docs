@@ -1,7 +1,7 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useParams, useRouterState } from "@tanstack/react-router";
 import { useTranslation } from "react-i18next";
-import { ChevronLeft, ChevronRight, Info, Maximize2 } from "lucide-react";
+import { ChevronLeft, ChevronRight, Maximize2 } from "lucide-react";
 import { DEFAULT_LOCALE } from "@shared/content-schema";
 import {
   Dialog,
@@ -18,7 +18,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { PwaInstallPrompt } from "@/components/shell/PwaInstallPrompt";
 import { useIsMobile } from "@/hooks/use-mobile";
-import { useReaderData } from "@/lib/useReaderData";
+import { CONTACT_EMAIL, OPEN_INTRO_EVENT } from "@/lib/introModal";
 import { stripBase, withBase } from "@/lib/base";
 import { cn } from "@/lib/utils";
 
@@ -39,13 +39,7 @@ function introSeen(): boolean {
   }
 }
 
-/**
- * First-visit welcome modal: three slides telling the OpenDefence story.
- * Auto-opens once on the homepage (localStorage-gated), and stays reachable
- * everywhere via a fixed bottom-right button so it can be revisited. A Drawer
- * on mobile, a Dialog on desktop — like react-rasenmaeher-ui-v2's onboarding.
- * Each slide image opens fullscreen on click.
- */
+/** First-visit welcome modal; reopened via openIntroModal(). */
 export function IntroModal() {
   const { t } = useTranslation();
   const params = useParams({ strict: false });
@@ -54,11 +48,10 @@ export function IntroModal() {
     select: (s) => stripBase(s.location.pathname),
   });
   const isHome = pathname.replace(/\/$/, "") === `/${locale}`;
-  const inReader = !!useReaderData();
   const isMobile = useIsMobile();
 
   // Open once on the homepage when never seen. Closing marks it seen, so it
-  // never reappears unless reopened from the button. Lazy init (not an
+  // never reappears unless reopened via openIntroModal(). Lazy init (not an
   // effect) — IntroModal mounts once at root.
   const [open, setOpen] = useState(() => isHome && !introSeen());
   const [step, setStep] = useState(0);
@@ -77,10 +70,14 @@ export function IntroModal() {
     if (!next) markSeen();
   };
 
-  const reopen = () => {
-    setStep(0);
-    setOpen(true);
-  };
+  useEffect(() => {
+    const reopen = () => {
+      setStep(0);
+      setOpen(true);
+    };
+    window.addEventListener(OPEN_INTRO_EVENT, reopen);
+    return () => window.removeEventListener(OPEN_INTRO_EVENT, reopen);
+  }, []);
 
   const slide = SLIDES[step];
   const isLast = step === SLIDES.length - 1;
@@ -113,8 +110,14 @@ export function IntroModal() {
       {isLast && (
         <>
           <PwaInstallPrompt />
-          <p className="text-xs text-muted-foreground/70">
-            {t("intro.slide3.contact")}
+          <p className="text-xs text-muted-foreground">
+            {t("intro.slide3.contact")}{" "}
+            <a
+              href={`mailto:${CONTACT_EMAIL}`}
+              className="text-primary underline-offset-2 hover:underline"
+            >
+              {CONTACT_EMAIL}
+            </a>
           </p>
         </>
       )}
@@ -162,21 +165,21 @@ export function IntroModal() {
         <DialogContent
           showCloseButton={false}
           onClick={() => setEnlarged(false)}
-          className="flex h-[95vh] max-w-[95vw] items-center justify-center border-none bg-black/95 p-2 sm:max-w-[95vw]"
+          className="flex h-[95dvh] max-w-[95vw] items-center justify-center border-none bg-black/95 p-2 sm:max-w-[95vw]"
         >
           <DialogTitle className="sr-only">{title}</DialogTitle>
           <DialogDescription className="sr-only" />
           <img
             src={imageSrc}
             alt={title}
-            className="max-h-[90vh] max-w-[90vw] object-contain"
+            className="max-h-[90dvh] max-w-[90vw] object-contain"
           />
         </DialogContent>
       </Dialog>
 
       {isMobile ? (
         <Drawer open={open} onOpenChange={handleOpenChange}>
-          <DrawerContent className="max-h-[90vh]">
+          <DrawerContent className="max-h-[90dvh]">
             <DrawerTitle className="sr-only">{title}</DrawerTitle>
             <DrawerDescription className="sr-only" />
             <div className="overflow-y-auto p-4 pb-8">{content}</div>
@@ -184,27 +187,13 @@ export function IntroModal() {
         </Drawer>
       ) : (
         <Dialog open={open} onOpenChange={handleOpenChange}>
-          <DialogContent className="flex max-h-[90vh] max-w-lg flex-col overflow-y-auto">
+          <DialogContent className="flex max-h-[90dvh] max-w-lg flex-col overflow-y-auto">
             <DialogTitle className="sr-only">{title}</DialogTitle>
             <DialogDescription className="sr-only" />
             {content}
           </DialogContent>
         </Dialog>
       )}
-
-      {/* Revisit button — bottom-right, above the mobile tab bar. Hidden on
-          mobile reader pages to keep the page's bottom edge clear. */}
-      <button
-        type="button"
-        onClick={reopen}
-        className={cn(
-          "fixed right-4 bottom-4 z-40 flex items-center gap-1.5 rounded-full border border-border bg-card/95 px-3 py-2 text-xs font-medium text-muted-foreground shadow-lg backdrop-blur transition-colors hover:border-primary hover:text-primary max-md:right-3 max-md:bottom-[calc(var(--tabbar-h)+0.75rem)]",
-          inReader && "max-md:hidden",
-        )}
-      >
-        <Info className="size-4 text-primary" />
-        {t("intro.revisit")}
-      </button>
     </>
   );
 }

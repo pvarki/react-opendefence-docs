@@ -15,13 +15,16 @@
     "contents": "Innehåll",
     "back": "Tillbaka",
     "advanced": "Avancerat",
-    "breadcrumb": "Sökväg"
+    "breadcrumb": "Sökväg",
+    "shelves": "Startsidor",
+    "settings": "Inställningar"
   },
   "home": {
     "org": {
       "whatIs": "Vad är OpenDefence?",
       "guides": "Läs guiderna",
-      "develop": "Utveckla"
+      "develop": "Utveckla",
+      "further": "Gå vidare"
     },
     "introCard": "Introduktion",
     "introCardDesc": "En driftbar, interoperabel C2-plattform för strid",
@@ -53,7 +56,7 @@
     "slide3": {
       "title": "Guider att använda eller arbeta med",
       "body": "Den här dokumentationswebbplatsen innehåller guider för slutanvändare samt dokumentation för bidragsgivare, integratörer och operatörer. Välkommen till OpenDefence — låt oss arbeta för allierat försvar.",
-      "contact": "Kontakt: Kontaktpunkt kommer."
+      "contact": "Kontakt:"
     }
   },
   "orient": {
@@ -162,6 +165,7 @@
       "body": "Det här innehållet eller den här vyn är under uppbyggnad. Det uppfyller ännu inte våra kvalitetskrav och kan innehålla föråldrad information eller visas på ett förvirrande sätt. Titta in igen senare!"
     },
     "pageAnnouncement": "Sida: {{title}} — {{current}} av {{total}}",
+    "previousPage": "Föregående sida",
     "nextPage": "Nästa sida"
   },
   "slides": {
@@ -169,7 +173,11 @@
     "fullscreen": "Helskärm",
     "exitFullscreen": "Avsluta helskärm",
     "imageMissing": "Bild saknas",
-    "enlarge": "Förstora bilden"
+    "enlarge": "Förstora bilden",
+    "prevStep": "Föregående steg",
+    "nextStep": "Nästa steg",
+    "skip": "Hoppa över",
+    "skipToNextPage": "Hoppa till nästa sida"
   },
   "textSize": {
     "label": "Textstorlek",
@@ -179,7 +187,9 @@
   "search": {
     "placeholder": "Sök i dokumentationen…",
     "noResults": "Inga resultat",
-    "searching": "Söker…"
+    "searching": "Söker…",
+    "suggested": "Prova att söka efter",
+    "browse": "Eller bläddra"
   },
   "blocks": {
     "youtubeTitle": "YouTube-video",
@@ -289,6 +299,17 @@
     "exampleHome": "Vad är Deploy App och hur kommer jag igång?",
     "exampleGuides": "Hur ansluter jag ATAK till min Deploy App-server?",
     "exampleDev": "Hur bygger och distribuerar jag en OpenDefence-integration?"
+  },
+  "sidebar": {
+    "allGuides": "Alla guider",
+    "toggleGroup": "Visa eller dölj {{label}}"
+  },
+  "siteFooter": {
+    "docs": "Dokumentation",
+    "organization": "Organisation",
+    "copyright": "Upphovsrätt",
+    "businessId": "FO-nummer",
+    "contact": "Kontakt"
   },
   "contents": {
     "siteTitle": "Webbplatsens innehåll",

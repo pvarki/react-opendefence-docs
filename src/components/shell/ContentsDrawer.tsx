@@ -5,10 +5,11 @@ import {
   DrawerDescription,
   DrawerTitle,
 } from "@/components/ui/drawer";
-import { SidebarBody } from "@/components/shell/SidebarNav";
+import { ShelfBackLink, SidebarBody } from "@/components/shell/SidebarNav";
 import { usePlatformPicker } from "@/lib/usePlatformPicker";
 import { PlatformList } from "@/components/shell/PlatformList";
 import { GuideIssuesLink } from "@/components/shell/GuideIssuesLink";
+import { SectionLabel } from "@/components/ui/section-label";
 import type { BookContext } from "@/lib/bookContext";
 
 interface ContentsSheetProps {
@@ -36,34 +37,45 @@ export function ContentsSheet({
     (c) => c.slug === book.collection,
   );
   const isDev = collection?.section === "dev";
+  const close = () => onOpenChange(false);
 
   return (
     <Drawer open={open} onOpenChange={onOpenChange}>
       <DrawerContent className="max-h-[85dvh]">
-        <div className="flex items-center justify-between gap-3 px-4 pt-2 pb-1">
-          <DrawerTitle className="text-base">
+        <div className="px-4 pt-2 pb-1">
+          <ShelfBackLink
+            locale={locale}
+            contentLocale={book.contentLocale}
+            manifest={book.manifest}
+            collection={book.collection}
+            onNavigate={close}
+          />
+          <DrawerTitle className="mt-0.5 text-base">
             {isDev
               ? t("devNav.title")
               : (collection?.label ?? t("nav.contents"))}
           </DrawerTitle>
-          <GuideIssuesLink collection={book.collection} />
         </div>
         <DrawerDescription className="sr-only" />
-        <nav className="overflow-y-auto px-4 pb-8">
+        <nav className="overflow-y-auto px-4 pb-6">
           {hasClients && (
-            <>
-              <p className="px-1 pt-3 pb-1.5 text-[11px] font-semibold tracking-widest text-muted-foreground uppercase">
+            <div className="pt-2">
+              <SectionLabel as="p" className="px-1 pb-2">
                 {t("platform.available")}
-              </p>
+              </SectionLabel>
               <PlatformList
+                variant="chips"
                 options={options}
                 activeId={active?.id}
                 onPick={(option) => {
-                  onOpenChange(false);
+                  close();
                   pick(option);
                 }}
               />
-            </>
+              <SectionLabel as="p" className="px-1 pt-5 pb-1.5">
+                {t("nav.contents")}
+              </SectionLabel>
+            </div>
           )}
           <SidebarBody
             locale={locale}
@@ -71,8 +83,11 @@ export function ContentsSheet({
             manifest={book.manifest}
             collection={book.collection}
             currentSlug={book.slug}
-            onNavigate={() => onOpenChange(false)}
+            onNavigate={close}
           />
+          <div className="mt-4 border-t border-border px-1 pt-3">
+            <GuideIssuesLink collection={book.collection} />
+          </div>
         </nav>
       </DrawerContent>
     </Drawer>

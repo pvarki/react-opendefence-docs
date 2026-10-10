@@ -11,7 +11,7 @@ const STORAGE_KEY = "textScale";
 export const TEXT_SCALE_STEPS = [0.9, 1, 1.2, 1.45] as const;
 const DEFAULT_INDEX = 2;
 /** At/above this step, mobile slideset images shrink to give captions room. */
-const LARGE_INDEX = 2;
+const LARGE_INDEX = 3;
 
 export const TEXT_SCALE_MIN = 0;
 export const TEXT_SCALE_MAX = TEXT_SCALE_STEPS.length - 1;
@@ -22,7 +22,9 @@ function clamp(i: number): number {
 
 function readStored(): number {
   try {
-    const raw = Number(localStorage.getItem(STORAGE_KEY));
+    const stored = localStorage.getItem(STORAGE_KEY);
+    // Number(null) is 0, which would silently pick the smallest step.
+    const raw = stored === null ? NaN : Number(stored);
     if (Number.isInteger(raw) && raw >= TEXT_SCALE_MIN && raw <= TEXT_SCALE_MAX)
       return raw;
   } catch {

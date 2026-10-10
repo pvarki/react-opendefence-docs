@@ -6,7 +6,7 @@ import type {
   Platform,
   SidebarItem,
 } from "@shared/content-schema";
-import type { ReadingView } from "@/lib/platform";
+import { PLATFORM_LABELS, type ReadingView } from "@/lib/platform";
 
 /**
  * The active client (selector entry) for a book: the remembered explicit
@@ -155,6 +155,32 @@ export function resolveSplat(
     }
   }
   return undefined;
+}
+
+/** Title of Outline's "Platforms" wrapper organizer (META: platforms-container). */
+const PLATFORMS_CONTAINER = "platforms";
+
+/** Outline breadcrumb minus the Platforms wrapper and client organizers. */
+export function readerBreadcrumb(
+  manifest: LocaleManifest,
+  page: ManifestPage,
+): string[] {
+  const clients =
+    manifest.collections.find((c) => c.slug === page.collection)?.clients ?? [];
+  const hidden = new Set<string>([
+    ...clients.map((c) => c.label.toLowerCase()),
+    ...Object.values(PLATFORM_LABELS).map((l) => l.toLowerCase()),
+  ]);
+  const ancestors = page.breadcrumb.slice(0, -1);
+  const title = page.breadcrumb.at(-1) ?? page.title;
+  return [
+    ...ancestors.filter((part, i) => {
+      const key = part.trim().toLowerCase();
+      if (i === 0 && key === PLATFORMS_CONTAINER) return false;
+      return !hidden.has(key);
+    }),
+    title,
+  ];
 }
 
 export function pageRoute(locale: Locale, page: ManifestPage): string {

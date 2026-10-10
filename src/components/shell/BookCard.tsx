@@ -14,7 +14,7 @@ interface BookCardProps {
   icon: LucideIcon;
   title: string;
   description?: string;
-  /** Optional backdrop (public/images/...), tinted so text stays readable. */
+  /** Brand mark from public/images/. */
   image?: CardImage;
   /** "tall" for sparse pages (home); default stays shelf-compact. */
   size?: "default" | "tall";
@@ -22,8 +22,6 @@ interface BookCardProps {
 
 /**
  * Compact section/book card: a low row so whole shelves fit one screen.
- * The optional background image fades out under a card-colored gradient
- * that is solid behind the text and reveals the image to the right.
  * Pass `href` for an external card (opens in a new tab); otherwise `to`.
  */
 export function BookCard({
@@ -37,45 +35,32 @@ export function BookCard({
   image,
   size = "default",
 }: BookCardProps) {
-  const wrapperClass = "group block focus-visible:outline-none";
+  const wrapperClass = "group block h-full focus-visible:outline-none";
   const inner = (
     <div
       className={cn(
-        "relative flex items-center gap-3 overflow-hidden rounded-xl border border-border bg-card px-3.5 transition-colors group-hover:border-primary group-focus-visible:ring-2 group-focus-visible:ring-ring md:px-4",
-        size === "tall" ? "h-20 md:h-24" : "h-[4.25rem] md:h-20",
+        "flex h-full items-center gap-3 rounded-xl border border-border bg-card px-3.5 py-3 transition-colors group-hover:border-primary group-focus-visible:ring-2 group-focus-visible:ring-ring md:px-4",
+        size === "tall" ? "min-h-20 md:min-h-24" : "min-h-17 md:min-h-20",
       )}
     >
-      {image &&
-        (image.logo ? (
-          // Brand marks: contained on the right, faint — never stretched.
-          <img
-            src={withBase(image.src)}
-            alt=""
-            aria-hidden
-            loading="lazy"
-            className="absolute inset-y-2 right-3 h-[calc(100%-1rem)] w-2/5 object-contain object-right opacity-20"
-          />
-        ) : (
-          <>
-            <img
-              src={withBase(image.src)}
-              alt=""
-              aria-hidden
-              loading="lazy"
-              className="absolute inset-0 h-full w-full object-cover object-[center_30%] opacity-60"
-            />
-            <div className="absolute inset-0 bg-gradient-to-r from-card via-card/85 to-card/25" />
-          </>
-        ))}
-      <Icon className="relative size-5 shrink-0 text-primary" />
-      <div className="relative min-w-0">
+      <Icon className="size-5 shrink-0 text-primary" />
+      <div className="min-w-0 flex-1">
         <p className="truncate text-sm font-semibold">{title}</p>
         {description && (
-          <p className="truncate text-xs text-muted-foreground">
+          <p className="mt-0.5 line-clamp-2 text-xs leading-snug text-muted-foreground">
             {description}
           </p>
         )}
       </div>
+      {image && (
+        <img
+          src={withBase(image.src)}
+          alt=""
+          aria-hidden
+          loading="lazy"
+          className="size-8 shrink-0 object-contain opacity-80 md:size-9"
+        />
+      )}
     </div>
   );
 

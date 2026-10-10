@@ -14,21 +14,13 @@ import {
   SelectTrigger,
 } from "@/components/ui/select";
 
-/**
- * Navbar platform/client switcher. Auto-picked from the user agent on first
- * visit, always remembered. Inside a book the options are the book's own
- * clients (e.g. ATAK / iTAK / WinTAK / TAK Tracker in the TAK guide) and
- * carry a red "Incomplete" tag when the client's organizer doc in Outline
- * says so.
- */
 export function PlatformSelector() {
   const { t } = useTranslation();
   const view = useReadingView();
   const reader = useReaderData();
-  const { options, active, pick } = usePlatformPicker(reader);
+  const { options, active, pick, hasClients } = usePlatformPicker(reader);
 
-  // Platform-agnostic book: no Platforms organizer in Outline → hide selector.
-  if (!options.length) return null;
+  if (!hasClients) return null;
 
   return (
     <Select

@@ -15,13 +15,16 @@
     "contents": "Contents",
     "back": "Back",
     "advanced": "Advanced",
-    "breadcrumb": "Breadcrumb"
+    "breadcrumb": "Breadcrumb",
+    "shelves": "Landing pages",
+    "settings": "Settings"
   },
   "home": {
     "org": {
       "whatIs": "What is OpenDefence?",
       "guides": "Read the Guides",
-      "develop": "Develop"
+      "develop": "Develop",
+      "further": "Go further"
     },
     "introCard": "Introduction",
     "introCardDesc": "A deployable, interoperable C2 platform for combat",
@@ -53,7 +56,7 @@
     "slide3": {
       "title": "Guides to use or work on",
       "body": "This docs site features end user guides as well as docs for contributors, integrators and operators. You're welcome to OpenDefence — let's work for Allied defence.",
-      "contact": "Contact: Contact point upcoming."
+      "contact": "Contact:"
     }
   },
   "orient": {
@@ -162,6 +165,7 @@
       "body": "This content or view is under construction. It does not hold up to our quality standards yet and might contain outdated information or show up in a disorientating way. Check it out later!"
     },
     "pageAnnouncement": "Page: {{title}} — {{current}} of {{total}}",
+    "previousPage": "Previous page",
     "nextPage": "Next page"
   },
   "slides": {
@@ -169,7 +173,11 @@
     "fullscreen": "Fullscreen",
     "exitFullscreen": "Exit fullscreen",
     "imageMissing": "Image missing",
-    "enlarge": "Enlarge the image"
+    "enlarge": "Enlarge the image",
+    "prevStep": "Previous step",
+    "nextStep": "Next step",
+    "skip": "Skip",
+    "skipToNextPage": "Skip to next page"
   },
   "textSize": {
     "label": "Text size",
@@ -179,7 +187,9 @@
   "search": {
     "placeholder": "Search docs…",
     "noResults": "No results",
-    "searching": "Searching…"
+    "searching": "Searching…",
+    "suggested": "Try searching for",
+    "browse": "Or browse"
   },
   "blocks": {
     "youtubeTitle": "YouTube video",
@@ -289,6 +299,17 @@
     "exampleHome": "What is Deploy App and how do I get started?",
     "exampleGuides": "How do I connect ATAK to my Deploy App server?",
     "exampleDev": "How do I build and deploy an OpenDefence integration?"
+  },
+  "sidebar": {
+    "allGuides": "All guides",
+    "toggleGroup": "Show or hide {{label}}"
+  },
+  "siteFooter": {
+    "docs": "Docs",
+    "organization": "Organization",
+    "copyright": "Copyright",
+    "businessId": "Business ID",
+    "contact": "Contact"
   },
   "contents": {
     "siteTitle": "Contents of the site",

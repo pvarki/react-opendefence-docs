@@ -58,12 +58,14 @@ export function CommandMenu() {
       <Button
         variant="outline"
         size="sm"
-        className="hidden gap-2 text-muted-foreground md:flex"
+        className="hidden justify-start gap-2 text-muted-foreground md:flex lg:w-52 xl:w-72"
         onClick={() => setOpen(true)}
       >
         <Search className="size-4" />
-        {t("search.placeholder")}
-        <Kbd>{HOTKEY_LABEL}</Kbd>
+        <span className="sr-only lg:not-sr-only">
+          {t("search.placeholder")}
+        </span>
+        <Kbd className="ml-auto hidden lg:inline-flex">{HOTKEY_LABEL}</Kbd>
       </Button>
       <Dialog open={open} onOpenChange={setOpen}>
         <DialogContent className="overflow-hidden p-0" showCloseButton={false}>
@@ -73,6 +75,8 @@ export function CommandMenu() {
           <Command shouldFilter={false}>
             <CommandInput
               placeholder={t("search.placeholder")}
+              // iPad Safari zooms into inputs under 16px.
+              className="text-[max(16px,0.875rem)]"
               onValueChange={onQuery}
             />
             <CommandList>

@@ -15,7 +15,6 @@ import type { ReadingView } from "@/lib/platform";
 import { loadPage } from "@/lib/content/loader";
 import {
   globalReadingOrder,
-  resolveClient,
   resolveGlobalPosition,
   resolveSplat,
 } from "@/lib/content/neighbors";
@@ -288,11 +287,6 @@ export function PageSwiper({
               }
               isCurrent={keyOf(page) === windowKey}
               nextBook={nextBook}
-              activeClientId={
-                view
-                  ? resolveClient(manifest, page.collection, view)?.id
-                  : undefined
-              }
             />
           ))}
         </div>

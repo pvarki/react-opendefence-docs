@@ -148,6 +148,19 @@
   font-size: 0.875rem;
   color: var(--primary);
   font-family: var(--font-mono);
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+/* Long URLs, paths and env vars must wrap or they widen the page on phones. */
+.prose :where(a, :not(pre) > code) {
+  overflow-wrap: anywhere;
+}
+
+.prose table {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
 }
 
 .prose pre {
@@ -337,6 +350,8 @@
   ::view-transition-new(shelf-main) {
     animation-duration: 0.3s;
     animation-timing-function: cubic-bezier(0.22, 0.61, 0.36, 1);
+    /* Without a fill the old snapshot flashes back for a frame at the end. */
+    animation-fill-mode: both;
     /* Both panes occupy the same box and slide past each other (no fade). */
     mix-blend-mode: normal;
   }

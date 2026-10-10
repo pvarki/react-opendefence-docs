@@ -25,6 +25,14 @@ export const SHELF_STOPS: ShelfStop[] = [
   { id: "dev", path: "dev" },
 ];
 
+export const SHELF_LABEL_KEYS: Record<ShelfStopId, string> = {
+  home: "nav.home",
+  "deploy-app": "nav.deployApp",
+  guides: "nav.guides",
+  advanced: "nav.advanced",
+  dev: "nav.develop",
+};
+
 /**
  * Index of the landing stop the pathname is *exactly* on, or -1 elsewhere
  * (incl. content pages like /deploy-app/foo or /dev/api, which keep the
