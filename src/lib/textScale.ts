@@ -22,9 +22,19 @@ function clamp(i: number): number {
 
 function readStored(): number {
   try {
-    const raw = Number(localStorage.getItem(STORAGE_KEY));
-    if (Number.isInteger(raw) && raw >= TEXT_SCALE_MIN && raw <= TEXT_SCALE_MAX)
-      return raw;
+    // Guard the raw string first: Number(null) is 0, which is a valid index,
+    // so coercing before the null check silently gave every first-time visitor
+    // the smallest text size instead of the default.
+    const stored = localStorage.getItem(STORAGE_KEY);
+    if (stored !== null) {
+      const raw = Number(stored);
+      if (
+        Number.isInteger(raw) &&
+        raw >= TEXT_SCALE_MIN &&
+        raw <= TEXT_SCALE_MAX
+      )
+        return raw;
+    }
   } catch {
     // storage unavailable (private mode etc.) — fall through to default
   }

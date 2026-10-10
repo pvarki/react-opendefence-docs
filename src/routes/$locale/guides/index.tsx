@@ -10,6 +10,7 @@ import {
 } from "lucide-react";
 import type { ManifestCollection } from "@shared/content-schema";
 import { BookCard } from "@/components/shell/BookCard";
+import { PlaylistLinks } from "@/components/shell/PlaylistLinks";
 import { AgentFriendlyNote } from "@/components/shell/AgentFriendlyNote";
 import { ShelfHero } from "@/components/shell/ShelfHero";
 import { CARD_IMAGES } from "@/lib/cardImages";
@@ -101,6 +102,8 @@ function GuidesFooter() {
         </p>
 
         {/* Collapsed by default; native disclosure keeps it JS-free. */}
+        <PlaylistLinks />
+
         <details className="group mt-5 rounded-lg border border-border bg-background">
           <summary className="flex cursor-pointer list-none items-center justify-between gap-2 px-4 py-3 text-base font-semibold select-none [&::-webkit-details-marker]:hidden">
             {t("footer.tellMore")}
