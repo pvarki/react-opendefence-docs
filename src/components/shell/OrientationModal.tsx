@@ -223,7 +223,7 @@ export function OrientationModal({
 
   return isMobile ? (
     <Drawer open={open} onOpenChange={onOpenChange}>
-      <DrawerContent className="max-h-[90vh]">
+      <DrawerContent className="max-h-[90dvh]">
         <DrawerTitle className="sr-only">{headerTitle}</DrawerTitle>
         <DrawerDescription className="sr-only" />
         <div className="overflow-y-auto p-4 pb-8">{content}</div>
@@ -231,7 +231,7 @@ export function OrientationModal({
     </Drawer>
   ) : (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="flex max-h-[90vh] max-w-lg flex-col overflow-y-auto">
+      <DialogContent className="flex max-h-[90dvh] max-w-lg flex-col overflow-y-auto">
         <DialogTitle className="sr-only">{headerTitle}</DialogTitle>
         <DialogDescription className="sr-only" />
         {content}

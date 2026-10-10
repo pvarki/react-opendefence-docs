@@ -158,6 +158,8 @@ export function SlideDeck({ block, bindSlideParam = false }: SlideDeckProps) {
       onKeyDown={onKeyDown}
       className={cn(
         "my-8 rounded-xl border border-border bg-card outline-none focus-visible:ring-2 focus-visible:ring-ring",
+        // Widens into the pane's spare width; needs @container on PagePane.
+        !fullscreen && "md:mx-[calc(-1*clamp(0px,(100cqi_-_48rem)/2,10rem))]",
         fullscreen &&
           "flex h-full flex-col justify-center rounded-none bg-background",
       )}
@@ -167,13 +169,11 @@ export function SlideDeck({ block, bindSlideParam = false }: SlideDeckProps) {
           {block.title && (
             <h3 className="truncate font-semibold">{block.title}</h3>
           )}
-          <p className="text-xs font-semibold tracking-wider text-muted-foreground uppercase">
+          <p className="text-xs text-muted-foreground tabular-nums">
             {t("slides.stepOf", {
               current: selected + 1,
               total: block.slides.length,
             })}
-            {preloader.loadedCount < preloader.total &&
-              ` · ${preloader.loadedCount}/${preloader.total}`}
           </p>
         </div>
         <Button
@@ -218,9 +218,16 @@ export function SlideDeck({ block, bindSlideParam = false }: SlideDeckProps) {
           disabled={selected === 0}
         >
           <ChevronLeft />
-          {t("reader.previous")}
+          {t("slides.prevStep")}
         </Button>
-        <div className="flex items-center gap-1.5" role="tablist">
+        <div
+          className="flex items-center gap-1.5"
+          role="tablist"
+          aria-label={t("slides.stepOf", {
+            current: selected + 1,
+            total: block.slides.length,
+          })}
+        >
           {block.slides.map((_, i) => (
             <button
               key={i}
@@ -244,7 +251,9 @@ export function SlideDeck({ block, bindSlideParam = false }: SlideDeckProps) {
           onClick={goForward}
           disabled={isLast && !position?.next}
         >
-          {isLast && position?.next ? t("reader.nextPage") : t("reader.next")}
+          {isLast && position?.next
+            ? t("reader.nextPage")
+            : t("slides.nextStep")}
           <ChevronRight />
         </Button>
       </div>
@@ -301,7 +310,7 @@ function SlideContent({
     <button
       key={img.src}
       type="button"
-      className="group relative flex h-full min-h-0 w-full min-w-0 items-center justify-center overflow-hidden rounded-xl border border-border bg-muted/20 p-3 transition-colors hover:border-primary/40 md:p-4"
+      className="group relative flex h-full min-h-0 w-full min-w-0 cursor-zoom-in items-center justify-center rounded-md outline-none focus-visible:ring-2 focus-visible:ring-ring"
       onClick={() => onEnlarge(img.src, img.alt)}
     >
       {!imageLoaded(img.src) && (

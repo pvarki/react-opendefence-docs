@@ -1,50 +1,43 @@
 import { useTranslation } from "react-i18next";
-import { AArrowDown, AArrowUp } from "lucide-react";
 import {
   useTextScaleIndex,
   setTextScaleIndex,
-  TEXT_SCALE_MIN,
-  TEXT_SCALE_MAX,
+  TEXT_SCALE_STEPS,
 } from "@/lib/textScale";
 import { cn } from "@/lib/utils";
 
-/**
- * Smaller / larger text control for the navbar. Visible on mobile too (the
- * Header is). Scales all rem-based text site-wide via the --text-scale root
- * variable; the slideset adapts its image size separately at large steps.
- */
+// Fixed px so the preview sizes ignore the text scale.
+const PREVIEW_PX = [12, 14, 17, 20];
+
 export function TextSizeControl() {
   const { t } = useTranslation();
   const index = useTextScaleIndex();
 
-  const btn =
-    "flex size-8 items-center justify-center text-muted-foreground transition-colors hover:text-foreground focus-visible:ring-2 focus-visible:ring-ring focus-visible:outline-none disabled:pointer-events-none disabled:opacity-40";
-
   return (
     <div
-      role="group"
+      role="radiogroup"
       aria-label={t("textSize.label")}
-      className="flex items-center rounded-md border border-input"
+      className="grid grid-cols-4 gap-1 rounded-md bg-muted/60 p-1"
     >
-      <button
-        type="button"
-        onClick={() => setTextScaleIndex(index - 1)}
-        disabled={index <= TEXT_SCALE_MIN}
-        aria-label={t("textSize.smaller")}
-        className={cn(btn, "rounded-l-md")}
-      >
-        <AArrowDown className="size-4" />
-      </button>
-      <span className="h-4 w-px bg-border" aria-hidden />
-      <button
-        type="button"
-        onClick={() => setTextScaleIndex(index + 1)}
-        disabled={index >= TEXT_SCALE_MAX}
-        aria-label={t("textSize.larger")}
-        className={cn(btn, "rounded-r-md")}
-      >
-        <AArrowUp className="size-5" />
-      </button>
+      {TEXT_SCALE_STEPS.map((step, i) => (
+        <button
+          key={step}
+          type="button"
+          role="radio"
+          aria-checked={i === index}
+          aria-label={`${Math.round(step * 100)} %`}
+          onClick={() => setTextScaleIndex(i)}
+          className={cn(
+            "flex h-8 items-center justify-center rounded font-semibold leading-none transition-colors outline-none focus-visible:ring-2 focus-visible:ring-ring",
+            i === index
+              ? "bg-background text-foreground shadow-sm"
+              : "text-muted-foreground hover:text-foreground",
+          )}
+          style={{ fontSize: PREVIEW_PX[i] }}
+        >
+          A
+        </button>
+      ))}
     </div>
   );
 }

@@ -14,11 +14,11 @@ import {
   type LocaleManifest,
   type ManifestPage,
 } from "@shared/content-schema";
-import { COVER_HEROES } from "@/lib/cardImages";
 import type { BookContext } from "@/lib/bookContext";
 import i18n from "@/lib/i18n";
 import { loadManifest, loadPage } from "@/lib/content/loader";
 import {
+  readerBreadcrumb,
   readingOrder,
   resolveClient,
   resolveSplat,
@@ -32,10 +32,14 @@ import { PageSwiper } from "@/components/reader/PageSwiper";
 import { NotFound } from "@/components/shell/NotFound";
 import { PlatformList } from "@/components/shell/PlatformList";
 import { ShelfHero } from "@/components/shell/ShelfHero";
+import { SiteFooter } from "@/components/shell/SiteFooter";
 import { DevRefList, SidebarNav } from "@/components/shell/SidebarNav";
 import { loadDevRefs, type DevRef } from "@/lib/devNav";
 import { ReaderBar } from "@/components/shell/ReaderBar";
 import { Button } from "@/components/ui/button";
+import { SectionLabel } from "@/components/ui/section-label";
+import { PAGE_FRAME } from "@/lib/pageFrame";
+import { cn } from "@/lib/utils";
 
 export interface ReaderData extends BookContext {
   kind: "cover" | "page";
@@ -160,7 +164,11 @@ function ReaderRoute() {
           locale={locale}
           collection={data.collection}
           bookLabel={bookLabel}
-          breadcrumb={currentPage?.breadcrumb}
+          breadcrumb={
+            currentPage
+              ? readerBreadcrumb(data.manifest, currentPage)
+              : undefined
+          }
         />
         {/* Dev docs are canonically English and won't be translated, so the
             en-fallback is the intended state, not a missing translation. */}
@@ -206,10 +214,10 @@ function BookCover({
   const collection = data.manifest.collections.find(
     (c) => c.slug === data.collection,
   );
-  const hero = COVER_HEROES[data.collection];
   const { options, active, pick, hasClients } = usePlatformPicker(data);
   const pages = readingOrder(data.manifest, data.collection, view);
   const first = pages[0];
+  const intro = guideIntroKey(data.collection);
 
   // Reference rows the sidebar puts under this book.
   const [refs, setRefs] = useState<DevRef[]>([]);
@@ -224,126 +232,91 @@ function BookCover({
   }, [data.collection]);
 
   return (
-    <div className="h-full overflow-y-auto">
-      {hero && (
-        <ShelfHero src={hero.src} title={bookLabel} position={hero.position} />
-      )}
-      <div
-        className={`mx-auto max-w-3xl px-4 ${
-          hero ? "py-4 md:py-8" : "py-5 md:py-12"
-        }`}
-      >
-        {isCoverUnderConstruction(data.collection, active?.platform) && (
-          <UnderConstructionBanner />
-        )}
-        {!hero && (
-          <h1 className="text-xl font-bold md:text-3xl">{bookLabel}</h1>
-        )}
-        <GuideFooter collection={data.collection} />
-        {collection?.description && (
-          <p className="mt-1.5 text-sm text-muted-foreground md:text-base">
-            {collection.description}
-          </p>
-        )}
-        {hasClients && (
-          <div className="mt-4 md:mt-6">
-            <p className="pb-1.5 text-[11px] font-semibold tracking-widest text-primary uppercase">
-              {t("platform.available")}
+    <div className="flex h-full flex-col overflow-y-auto">
+      <ShelfHero title={bookLabel} subtitle={collection?.description} />
+      <div className={cn(PAGE_FRAME, "flex-1 pt-4 pb-10 md:pt-6")}>
+        <div className="max-w-3xl">
+          {isCoverUnderConstruction(data.collection, active?.platform) && (
+            <UnderConstructionBanner />
+          )}
+          {intro && (
+            <p className="text-sm leading-relaxed text-foreground md:text-base">
+              {t(`${intro}.lead`)}
             </p>
-            <PlatformList
-              options={options}
-              activeId={active?.id}
-              onPick={pick}
+          )}
+          {hasClients && (
+            <div className="mt-5 md:mt-6">
+              <SectionLabel className="pb-1.5">
+                {t("platform.available")}
+              </SectionLabel>
+              <PlatformList
+                options={options}
+                activeId={active?.id}
+                onPick={pick}
+              />
+            </div>
+          )}
+          <div className="mt-4 flex flex-wrap items-center gap-3 md:mt-5">
+            {first && (
+              <Button asChild>
+                <Link
+                  to="/$locale/$"
+                  params={{
+                    locale,
+                    _splat: `${data.collection}/${first.slug}`,
+                  }}
+                >
+                  {t("reader.startReading")}
+                  <ChevronRight />
+                </Link>
+              </Button>
+            )}
+            <OfflineDownloadButton
+              manifest={data.manifest}
+              collection={data.collection}
             />
           </div>
-        )}
-        <div className="mt-4 flex flex-wrap items-center gap-3 md:mt-6">
-          {first && (
-            <Button asChild className="hidden md:inline-flex">
-              <Link
-                to="/$locale/$"
-                params={{ locale, _splat: `${data.collection}/${first.slug}` }}
-              >
-                {t("reader.startReading")}
-                <ChevronRight />
-              </Link>
-            </Button>
+          {refs.length > 0 && (
+            <div className="mt-2.5">
+              <DevRefList locale={locale} refs={refs} variant="button" />
+            </div>
           )}
-          <OfflineDownloadButton
-            manifest={data.manifest}
-            collection={data.collection}
-          />
+          {intro && <GuideIntro intro={intro} />}
         </div>
-        {refs.length > 0 && (
-          <div className="mt-2.5">
-            <DevRefList locale={locale} refs={refs} variant="button" />
-          </div>
-        )}
-        {/* Thumb-reach Start reading: floats bottom-left above the tab bar,
-            next to the floating back button. */}
-        {first && (
-          <Button
-            asChild
-            className="fixed bottom-[calc(var(--tabbar-h)+0.75rem)] left-16 z-40 shadow-lg md:hidden"
-          >
-            <Link
-              to="/$locale/$"
-              params={{ locale, _splat: `${data.collection}/${first.slug}` }}
-            >
-              {t("reader.startReading")}
-              <ChevronRight />
-            </Link>
-          </Button>
-        )}
       </div>
-      {/* Scroll-end clearance: the floating Start reading / back buttons
-          hover here instead of covering the last content. */}
-      <div aria-hidden className="h-16 md:hidden" />
+      <SiteFooter />
     </div>
   );
 }
 
-/**
- * Product intro shown at the top of a book cover, below the headline: the
- * lead blurb, an expandable "Tell me more" (core + goals), and copyright.
- * Renders nothing for covers without a `guideFooter.<slug>` entry.
- */
-function GuideFooter({ collection }: { collection: string }) {
+function guideIntroKey(collection: string): string | undefined {
+  const kp = `guideFooter.${collection.replace(/^guides\//, "")}`;
+  return i18n.exists(`${kp}.lead`) ? kp : undefined;
+}
+
+function GuideIntro({ intro }: { intro: string }) {
   const { t } = useTranslation();
-  const slug = collection.replace(/^guides\//, "");
-  const kp = `guideFooter.${slug}`;
-
-  if (!i18n.exists(`${kp}.lead`)) return null;
-
-  const goals = [
-    { title: `${kp}.goal1Title`, body: `${kp}.goal1Body` },
-    { title: `${kp}.goal2Title`, body: `${kp}.goal2Body` },
-    { title: `${kp}.goal3Title`, body: `${kp}.goal3Body` },
-  ];
+  const goals = [1, 2, 3].map((n) => ({
+    title: `${intro}.goal${n}Title`,
+    body: `${intro}.goal${n}Body`,
+  }));
 
   return (
-    <section className="mt-3 md:mt-4">
-      <p className="text-sm leading-relaxed text-foreground">
-        {t(`${kp}.lead`)}
-      </p>
-
-      <details
-        open
-        className="group mt-4 rounded-lg border border-border bg-card"
-      >
+    <section className="mt-8 md:mt-10">
+      <details className="group rounded-lg border border-border bg-card">
         <summary className="flex cursor-pointer list-none items-center justify-between gap-2 px-4 py-3 text-base font-semibold select-none [&::-webkit-details-marker]:hidden">
           {t("footer.tellMore")}
           <ChevronDown className="size-4 shrink-0 text-muted-foreground transition-transform group-open:rotate-180" />
         </summary>
         <div className="px-4 pb-4">
           <p className="text-sm leading-relaxed text-muted-foreground">
-            {t(`${kp}.core`)}
+            {t(`${intro}.core`)}
           </p>
           {goals.map(({ title, body }) => (
             <div key={title}>
-              <p className="mt-4 text-[11px] font-semibold tracking-widest text-primary uppercase">
+              <SectionLabel as="h3" className="mt-4">
                 {t(title)}
-              </p>
+              </SectionLabel>
               <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
                 {t(body)}
               </p>
@@ -352,11 +325,11 @@ function GuideFooter({ collection }: { collection: string }) {
         </div>
       </details>
 
-      <div className="mt-4 space-y-0.5 border-t border-border pt-3">
-        <p className="text-[11px] text-muted-foreground/80">
-          {t(`${kp}.copyright`)}
+      <div className="mt-4 space-y-0.5">
+        <p className="text-xs text-muted-foreground">
+          {t(`${intro}.copyright`)}
         </p>
-        <p className="text-[11px] text-muted-foreground/80">
+        <p className="text-xs text-muted-foreground">
           {t("guideFooter.maintainedBy")}
         </p>
       </div>

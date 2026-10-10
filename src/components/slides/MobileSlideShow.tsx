@@ -178,7 +178,7 @@ export function MobileSlideShow({ block }: { block: SlidesetBlock }) {
                   "overflow-y-auto border-t border-border px-3 py-2",
                   !slide.images[0] || largeText
                     ? "min-h-0 flex-1"
-                    : "max-h-[42%] shrink-0",
+                    : "max-h-[50%] shrink-0",
                 )}
               >
                 {slide.title && (
@@ -200,7 +200,7 @@ export function MobileSlideShow({ block }: { block: SlidesetBlock }) {
           size="icon-sm"
           onClick={() => embla?.scrollPrev()}
           disabled={selected === 0}
-          aria-label={t("reader.previous")}
+          aria-label={t("slides.prevStep")}
         >
           <ChevronLeft />
         </Button>
@@ -223,25 +223,26 @@ export function MobileSlideShow({ block }: { block: SlidesetBlock }) {
             ))}
           </div>
         </div>
-        <div className="flex items-center">
+        <div className="flex items-center gap-1">
           {!isLast && nextPage && (
             <Button
               variant="ghost"
               size="sm"
-              className="size-8 px-0 text-muted-foreground"
+              className="h-8 gap-0.5 px-2 text-xs text-muted-foreground"
               onClick={() => goToPage(nextPage)}
-              aria-label={t("reader.nextPage")}
+              aria-label={t("slides.skipToNextPage")}
             >
-              <ChevronsRight />
+              {t("slides.skip")}
+              <ChevronsRight className="size-3.5" />
             </Button>
           )}
           <Button
-            variant={isLast && nextPage ? "default" : "ghost"}
+            variant={isLast && nextPage ? "default" : "outline"}
             size="sm"
             className={cn(!(isLast && nextPage) && "size-8 px-0")}
             onClick={goForward}
             disabled={isLast && !nextPage}
-            aria-label={isLast ? t("reader.nextPage") : t("reader.next")}
+            aria-label={isLast ? t("reader.nextPage") : t("slides.nextStep")}
           >
             {isLast && nextPage && (
               <span className="text-xs">{t("reader.nextPage")}</span>

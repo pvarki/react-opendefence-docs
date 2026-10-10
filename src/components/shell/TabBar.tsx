@@ -21,12 +21,9 @@ import { PlatformIcon } from "@/components/shell/PlatformIcon";
 import { SiteContentsSheet } from "@/components/shell/SiteContentsSheet";
 import { PlatformSheet } from "@/components/shell/PlatformSheet";
 import { useShelfContext } from "@/lib/useShelfContext";
+import { IS_STANDALONE } from "@/lib/standalone";
 
 /**
- * Mobile bottom bar — five controls in the same places everywhere:
- * Contents (leftmost, larger, border-separated) · Home · shelf · Platform ·
- * Search. Phones ride in the right hand, so Contents and the floating back
- * button above it sit on the LEFT, clear of the thumb's resting side.
  * Two slots are context-aware: Contents opens the current book's TOC in a
  * reader and the site-wide TOC elsewhere; the shelf slot is Guides,
  * Advanced or Developer depending on what's being read.
@@ -50,23 +47,20 @@ export function TabBar() {
   const platformLabel = activeClient
     ? stripPlatformSuffix(activeClient.label)
     : PLATFORM_LABELS[view.platform];
-  // Hide the platform button when inside a platform-agnostic book (no Platforms
-  // organizer in Outline). Outside a book the button is always shown so users
-  // can set their OS preference.
   const bookClients = reader?.manifest.collections.find(
     (c) => c.slug === reader.collection,
   )?.clients;
-  const showPlatformButton = !reader || !!bookClients?.length;
+  const showPlatformButton = !!bookClients?.length;
   const shelf = useShelfContext();
   const ShelfIcon = shelf.icon;
 
+  // activeProps drops TanStack's "active" class, so style off aria-current.
   const itemClass =
-    "flex flex-1 flex-col items-center justify-center gap-0.5 text-muted-foreground transition-colors [&.active]:text-primary";
+    "flex flex-1 flex-col items-center justify-center gap-0.5 text-muted-foreground transition-colors aria-[current=page]:text-primary";
 
   return (
     <>
-      {/* History back, floating above Home — reachable with the thumb. */}
-      {canGoBack && (
+      {canGoBack && IS_STANDALONE && (
         <button
           type="button"
           onClick={() => router.history.back()}
@@ -85,11 +79,11 @@ export function TabBar() {
           <button
             type="button"
             onClick={() => setContentsOpen(true)}
-            className="flex shrink-0 flex-col items-center justify-center gap-0.5 border-r border-border px-6 text-foreground"
+            className="flex shrink-0 flex-col items-center justify-center gap-0.5 border-r border-border px-6 text-muted-foreground transition-colors hover:text-foreground"
             aria-label={t("nav.contents")}
           >
-            <TableOfContents className="size-6 text-primary" />
-            <span className="text-[11px] leading-none font-medium">
+            <TableOfContents className="size-6" />
+            <span className="text-[11px] leading-none">
               {t("nav.contents")}
             </span>
           </button>

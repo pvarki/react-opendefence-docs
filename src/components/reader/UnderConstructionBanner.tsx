@@ -10,11 +10,11 @@ export function UnderConstructionBanner() {
   return (
     <div
       role="note"
-      className="mb-4 flex items-start gap-2 rounded-lg border border-warning/40 bg-warning/10 px-4 py-3 text-sm text-warning md:mb-6"
+      className="mb-4 flex items-start gap-2.5 rounded-lg border border-l-3 border-border border-l-warning bg-muted/40 px-4 py-3 text-sm text-muted-foreground md:mb-6"
     >
-      <Construction className="mt-0.5 size-4 shrink-0" />
+      <Construction className="mt-0.5 size-4 shrink-0 text-warning" />
       <p>
-        <span className="font-semibold">
+        <span className="font-semibold text-foreground">
           {t("reader.underConstruction.title")}
         </span>{" "}
         {t("reader.underConstruction.body")}

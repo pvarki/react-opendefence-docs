@@ -1,6 +1,11 @@
 import { describe, expect, it } from "vitest";
 import type { LocaleManifest } from "@shared/content-schema";
-import { readingOrder, resolvePosition, resolveSplat } from "./neighbors";
+import {
+  readerBreadcrumb,
+  readingOrder,
+  resolvePosition,
+  resolveSplat,
+} from "./neighbors";
 
 const page = (
   slug: string,
@@ -102,5 +107,56 @@ describe("resolveSplat", () => {
     expect(resolveSplat(manifest, "deploy-app/")).toEqual({
       collection: "deploy-app",
     });
+  });
+});
+
+describe("readerBreadcrumb", () => {
+  const withClients: LocaleManifest = {
+    ...manifest,
+    collections: [
+      {
+        ...manifest.collections[0],
+        clients: [
+          { id: "android-x", platform: "android", label: "Android" },
+          {
+            id: "tracker-x",
+            platform: "android",
+            label: "TAK Tracker - Android",
+          },
+        ],
+      },
+    ],
+  };
+  const at = (breadcrumb: string[]) => ({
+    ...page("p", "deploy-app", 0),
+    title: breadcrumb.at(-1)!,
+    breadcrumb,
+  });
+
+  it("drops the Platforms wrapper and the client organizer", () => {
+    expect(
+      readerBreadcrumb(
+        withClients,
+        at(["Platforms", "Android", "User Guide", "Joining"]),
+      ),
+    ).toEqual(["User Guide", "Joining"]);
+    expect(
+      readerBreadcrumb(
+        withClients,
+        at(["Platforms", "TAK Tracker - Android", "START", "Connect"]),
+      ),
+    ).toEqual(["START", "Connect"]);
+  });
+
+  it("drops a bare platform name even outside the client list", () => {
+    expect(
+      readerBreadcrumb(manifest, at(["Platforms", "iOS", "Introduction"])),
+    ).toEqual(["Introduction"]);
+  });
+
+  it("keeps real chapters of platform-agnostic books", () => {
+    expect(readerBreadcrumb(manifest, at(["Basic Features", "Rooms"]))).toEqual(
+      ["Basic Features", "Rooms"],
+    );
   });
 });

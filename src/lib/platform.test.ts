@@ -6,6 +6,8 @@ describe("stripPlatformSuffix", () => {
     expect(stripPlatformSuffix("TAK Tracker - Android")).toBe("TAK Tracker");
     expect(stripPlatformSuffix("TAK Tracker - Apple")).toBe("TAK Tracker");
     expect(stripPlatformSuffix("TAK Tracker – iOS")).toBe("TAK Tracker");
+    expect(stripPlatformSuffix("ATAK - Android TAK")).toBe("ATAK");
+    expect(stripPlatformSuffix("WinTAK - Windows TAK")).toBe("WinTAK");
   });
 
   it("leaves plain client names alone", () => {

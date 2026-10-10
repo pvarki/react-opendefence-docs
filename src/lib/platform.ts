@@ -134,7 +134,7 @@ export const PLATFORM_LABELS: Record<Platform, string> = {
 export function stripPlatformSuffix(label: string): string {
   const stripped = label
     .replace(
-      /\s*[-–—]\s*(android|apple|ios|ipados|windows|macos|linux)\s*$/i,
+      /\s*[-–—]\s*(android|apple|ios|ipados|windows|macos|linux)(\s+tak)?\s*$/i,
       "",
     )
     .trim();

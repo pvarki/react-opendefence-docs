@@ -1,9 +1,10 @@
 import { useEffect, useState, type ReactNode } from "react";
-import { Link } from "@tanstack/react-router";
+import { Link, useRouterState } from "@tanstack/react-router";
 import { useTranslation } from "react-i18next";
 import {
   Braces,
-  ChevronDown,
+  ChevronLeft,
+  ChevronRight,
   FileText,
   History,
   Tag,
@@ -12,6 +13,7 @@ import {
 import type {
   Locale,
   LocaleManifest,
+  ManifestCollection,
   SidebarConfig,
   SidebarItem,
 } from "@shared/content-schema";
@@ -29,9 +31,12 @@ import {
   resolveClient,
 } from "@/lib/content/neighbors";
 import { useReadingView } from "@/lib/platform";
+import { parentShelf } from "@/lib/siteSections";
+import { stripBase } from "@/lib/base";
 import { cn } from "@/lib/utils";
 import { GuideIssuesLink } from "@/components/shell/GuideIssuesLink";
 import { Button } from "@/components/ui/button";
+import { SectionLabel } from "@/components/ui/section-label";
 
 interface SidebarProps {
   locale: string;
@@ -56,26 +61,86 @@ function isDevSpine(props: SidebarProps): boolean {
   return props.section === "dev" || isDevBook(props.manifest, props.collection);
 }
 
-/**
- * Desktop book tree. A dev-section book gets the cross-book developer spine
- * instead of its own tree, so the reader can jump between books.
- */
-export function SidebarNav(props: SidebarProps) {
-  const { t } = useTranslation();
-  const meta = props.manifest.collections.find(
-    (c) => c.slug === props.collection,
+function sidebarSection(props: SidebarProps): ManifestCollection["section"] {
+  if (isDevSpine(props)) return "dev";
+  return (
+    props.manifest.collections.find((c) => c.slug === props.collection)
+      ?.section ?? "guides"
   );
+}
+
+function useSidebarTitle(props: SidebarProps): string {
+  const { t } = useTranslation();
+  if (isDevSpine(props)) return t("devNav.title");
+  return (
+    props.manifest.collections.find((c) => c.slug === props.collection)
+      ?.label ??
+    props.collection ??
+    t("nav.contents")
+  );
+}
+
+function useCurrentPath(): string {
+  return useRouterState({
+    select: (s) => stripBase(s.location.pathname).replace(/\/$/, ""),
+  });
+}
+
+export function ShelfBackLink({
+  onNavigate,
+  className,
+  ...props
+}: SidebarProps & { className?: string }) {
+  const { t } = useTranslation();
+  const shelf = parentShelf(sidebarSection(props));
+  return (
+    <Link
+      to={shelf.to}
+      params={{ locale: props.locale }}
+      onClick={onNavigate}
+      className={cn(
+        "-ml-1 inline-flex items-center gap-0.5 rounded-md py-0.5 pr-1.5 text-xs text-muted-foreground transition-colors hover:text-foreground",
+        className,
+      )}
+    >
+      <ChevronLeft className="size-3.5 shrink-0" />
+      {t(shelf.labelKey)}
+    </Link>
+  );
+}
+
+export function SidebarNav(props: SidebarProps) {
+  const title = useSidebarTitle(props);
   const isDev = isDevSpine(props);
 
   return (
-    <aside className="hidden w-64 shrink-0 overflow-y-auto border-r border-sidebar-border bg-sidebar md:block">
-      <nav className="px-3 py-4">
-        <p className="px-2 pb-1 text-xs font-semibold tracking-wider text-muted-foreground uppercase">
-          {isDev ? t("devNav.title") : (meta?.label ?? props.collection)}
-        </p>
-        <GuideIssuesLink collection={props.collection} className="mb-2 px-2" />
+    <aside className="hidden w-64 shrink-0 flex-col border-r border-sidebar-border bg-sidebar md:flex">
+      <nav
+        aria-label={title}
+        className="min-h-0 flex-1 overflow-y-auto px-3 py-4"
+      >
+        <div className="px-2 pb-3">
+          <ShelfBackLink {...props} />
+          {isDev || !props.collection ? (
+            <p className="mt-1 text-base leading-snug font-semibold text-foreground">
+              {title}
+            </p>
+          ) : (
+            <Link
+              to="/$locale/$"
+              params={{ locale: props.locale, _splat: props.collection }}
+              onClick={props.onNavigate}
+              className="mt-1 block text-base leading-snug font-semibold text-foreground transition-colors hover:text-primary"
+            >
+              {title}
+            </Link>
+          )}
+        </div>
         <SidebarBody {...props} />
       </nav>
+      <div className="shrink-0 border-t border-sidebar-border px-5 py-3">
+        <GuideIssuesLink collection={props.collection} />
+      </div>
     </aside>
   );
 }
@@ -128,6 +193,23 @@ function BookNav({
   );
 }
 
+// px-2 + chevron + gap, so leaf labels line up with chevron rows.
+const CHEVRON_GUTTER = "pl-7";
+
+const ACTIVE_ROW = "bg-primary/10 font-medium text-primary";
+
+function Disclosure({ open }: { open: boolean }) {
+  return (
+    <ChevronRight
+      aria-hidden
+      className={cn(
+        "size-3.5 shrink-0 text-muted-foreground/70 transition-transform",
+        open && "rotate-90",
+      )}
+    />
+  );
+}
+
 export function SidebarItems({
   items,
   locale,
@@ -136,6 +218,7 @@ export function SidebarItems({
   onNavigate,
   defaultOpen = false,
   variant = "rail",
+  gutter,
 }: {
   items: SidebarItem[];
   locale: string;
@@ -146,8 +229,14 @@ export function SidebarItems({
   defaultOpen?: boolean;
   /** "cover" marks pages with an icon so they read as links, not plain text. */
   variant?: "rail" | "cover";
+  /** Indent leaf rows past the chevron column; by default when a sibling has one. */
+  gutter?: boolean;
 }) {
   const cover = variant === "cover";
+  const indent =
+    gutter ??
+    items.some((item) => item.type === "group" || item.type === "toporg");
+  const leafPad = indent ? CHEVRON_GUTTER : "pl-2";
 
   return (
     <ul className="space-y-0.5">
@@ -181,10 +270,12 @@ export function SidebarItems({
               params={{ locale, _splat: `${collection}/${item.slug}` }}
               onClick={onNavigate}
               className={cn(
-                "rounded-md px-2 py-1.5 text-sm transition-colors",
-                cover ? "group flex items-center gap-2" : "block",
+                "rounded-md py-1.5 pr-2 text-sm transition-colors",
+                cover
+                  ? "group flex items-center gap-2 pl-2"
+                  : `block ${leafPad}`,
                 item.slug === currentSlug
-                  ? "bg-muted font-medium text-foreground"
+                  ? ACTIVE_ROW
                   : cover
                     ? "text-foreground/90 hover:bg-muted hover:text-primary"
                     : "text-muted-foreground hover:bg-muted hover:text-foreground",
@@ -202,7 +293,10 @@ export function SidebarItems({
               href={item.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="block rounded-md px-2 py-1.5 text-sm text-muted-foreground hover:bg-muted hover:text-foreground"
+              className={cn(
+                "block rounded-md py-1.5 pr-2 text-sm text-muted-foreground hover:bg-muted hover:text-foreground",
+                leafPad,
+              )}
             >
               {item.label}
             </a>
@@ -222,13 +316,7 @@ function containsSlug(
   return items.some((c) => c.slug === slug || containsSlug(c.children, slug));
 }
 
-/**
- * A toporg is a top-level section grouping chapters (META: toporg in Outline).
- * Collapsible and orange (primary) to stand apart from chapters/the active
- * page. Open by default only when it holds chapters directly — sections that
- * are purely sub-folder containers (e.g. "Additional Features") start collapsed
- * to keep the tree scannable. The section holding the current page always opens.
- */
+/** Top-level section from META: toporg in Outline. */
 function SidebarToporg({
   item,
   locale,
@@ -267,15 +355,12 @@ function SidebarToporg({
         type="button"
         onClick={() => setOpen((o) => !o)}
         aria-expanded={open}
-        className="flex w-full items-center justify-between rounded-md px-2 py-1 text-[11px] font-semibold tracking-widest text-primary uppercase hover:bg-muted"
+        className="flex w-full items-center gap-1.5 rounded-md px-2 py-1 text-left hover:bg-muted"
       >
-        <span className="truncate">{item.label}</span>
-        <ChevronDown
-          className={cn(
-            "size-3.5 shrink-0 transition-transform",
-            !open && "-rotate-90",
-          )}
-        />
+        <Disclosure open={open} />
+        <SectionLabel as="span" className="truncate">
+          {item.label}
+        </SectionLabel>
       </button>
       {open && item.children && (
         <SidebarItems
@@ -286,6 +371,7 @@ function SidebarToporg({
           onNavigate={onNavigate}
           defaultOpen={defaultOpen}
           variant={variant}
+          gutter
         />
       )}
     </li>
@@ -303,6 +389,7 @@ function SidebarGroup({
   href,
   extra,
   active,
+  current,
 }: {
   item: SidebarItem;
   locale: string;
@@ -317,9 +404,12 @@ function SidebarGroup({
   extra?: ReactNode;
   /** The reader is inside this group even when no child page is active. */
   active?: boolean;
+  current?: boolean;
 }) {
+  const { t } = useTranslation();
   const inside = containsSlug(item.children, currentSlug) || !!active;
   const [open, setOpen] = useState(defaultOpen || inside);
+  const expandable = !!extra || !!item.children?.length;
 
   // Reveal the group when navigation lands inside it (swipe, search, link) —
   // the render-time "adjust state on prop change" pattern.
@@ -329,53 +419,59 @@ function SidebarGroup({
     if (inside) setOpen(true);
   }
 
-  const chevron = (
-    <ChevronDown
-      className={cn(
-        "size-4 shrink-0 text-muted-foreground transition-transform",
-        !open && "-rotate-90",
-      )}
-    />
-  );
+  if (!href && !expandable) return null;
+
+  const tone = current
+    ? ACTIVE_ROW
+    : inside
+      ? "text-foreground hover:bg-muted"
+      : "text-muted-foreground hover:bg-muted hover:text-foreground";
 
   return (
     <li>
       {href ? (
         <div className="flex items-center">
+          {expandable && (
+            <button
+              type="button"
+              onClick={() => setOpen((o) => !o)}
+              aria-expanded={open}
+              aria-label={t("sidebar.toggleGroup", { label: item.label })}
+              className="ml-1 shrink-0 rounded-md p-1 hover:bg-muted"
+            >
+              <Disclosure open={open} />
+            </button>
+          )}
           <Link
             to="/$locale/$"
             params={{ locale, _splat: href }}
             onClick={onNavigate}
+            aria-current={current ? "page" : undefined}
             className={cn(
-              "min-w-0 flex-1 rounded-md px-2 py-1.5 text-sm font-medium hover:bg-muted hover:text-foreground",
-              inside ? "text-foreground" : "text-muted-foreground",
+              "min-w-0 flex-1 rounded-md py-1.5 pr-2 text-sm font-medium transition-colors",
+              expandable ? "pl-0.5" : CHEVRON_GUTTER,
+              tone,
             )}
           >
             {item.label}
           </Link>
-          <button
-            type="button"
-            onClick={() => setOpen((o) => !o)}
-            aria-expanded={open}
-            aria-label={item.label}
-            className="rounded-md p-1 hover:bg-muted"
-          >
-            {chevron}
-          </button>
         </div>
       ) : (
         <button
           type="button"
           onClick={() => setOpen((o) => !o)}
           aria-expanded={open}
-          className="flex w-full items-center justify-between gap-1 rounded-md px-2 py-1.5 text-left text-sm font-medium text-muted-foreground hover:bg-muted hover:text-foreground"
+          className={cn(
+            "flex w-full items-center gap-1.5 rounded-md px-2 py-1.5 text-left text-sm font-medium transition-colors",
+            tone,
+          )}
         >
+          <Disclosure open={open} />
           {item.label}
-          {chevron}
         </button>
       )}
-      {open && (!!extra || !!item.children?.length) && (
-        <div className="mt-0.5 ml-2 border-l border-sidebar-border pl-2">
+      {open && expandable && (
+        <div className="mt-0.5 ml-3.5 border-l border-sidebar-border pl-2">
           {extra}
           {item.children && (
             <SidebarItems
@@ -513,6 +609,7 @@ function DevDocsNav({
 }: SidebarProps) {
   const { t } = useTranslation();
   const view = useReadingView();
+  const path = useCurrentPath();
   const [sidebars, setSidebars] = useState<Record<string, SidebarConfig>>({});
   const [refs, setRefs] = useState<DevRefsByBook>(NO_REFS);
 
@@ -553,9 +650,9 @@ function DevDocsNav({
     <div>
       {devNavSections(manifest, refs).map((section) => (
         <div key={section.key} className="pt-3">
-          <p className="px-2 pb-1 text-[11px] font-semibold tracking-widest text-primary uppercase">
+          <SectionLabel as="p" className="px-2 pb-1">
             {t(section.labelKey)}
-          </p>
+          </SectionLabel>
           <ul className="space-y-0.5">
             {section.books.map(({ book, refs: bookRefs }) => {
               const sidebar = sidebars[book.slug];
@@ -580,6 +677,7 @@ function DevDocsNav({
                   currentSlug={currentSlug}
                   href={book.slug}
                   active={book.slug === collection}
+                  current={path === `/${locale}/${book.slug}`}
                   extra={
                     <DevRefList
                       locale={locale}

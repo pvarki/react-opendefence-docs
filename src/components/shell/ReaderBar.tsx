@@ -9,10 +9,7 @@ interface ReaderBarProps {
   breadcrumb?: string[];
 }
 
-/**
- * Where-am-I path, desktop only and deliberately tiny — content space is
- * the priority. Mobile gets its bearings from the bottom chapter bar.
- */
+/** Desktop-only breadcrumb; expects the trail from readerBreadcrumb. */
 export function ReaderBar({
   locale,
   collection,
@@ -36,8 +33,11 @@ export function ReaderBar({
       </Link>
       {pageTitle && (
         <>
-          {breadcrumb!.slice(0, -1).map((part) => (
-            <span key={part} className="flex min-w-0 items-center gap-1">
+          {breadcrumb!.slice(0, -1).map((part, i) => (
+            <span
+              key={`${i}:${part}`}
+              className="flex min-w-0 items-center gap-1"
+            >
               <ChevronRight className="size-3 shrink-0" />
               <span className="truncate">{part}</span>
             </span>

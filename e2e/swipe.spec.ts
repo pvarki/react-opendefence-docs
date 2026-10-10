@@ -26,19 +26,17 @@ async function open(page: Page, url: string) {
   await expect(currentPane(page).getByRole("heading").first()).toBeVisible();
 }
 
-/**
- * Horizontal drag in the title zone just below the header (outside the 32px
- * edge dead zones, above the slideset deck, which rightly owns its own
- * gestures). Embla listens to pointer events, so a mouse drag exercises the
- * same gesture path as touch.
- */
+// Embla uses pointer events, so a mouse drag matches touch.
 async function swipe(page: Page, direction: "left" | "right") {
   const viewport = page.viewportSize();
   if (!viewport) throw new Error("no viewport");
-  const y = 80;
-  const from =
-    direction === "left" ? viewport.width * 0.8 : viewport.width * 0.2;
-  const to = direction === "left" ? viewport.width * 0.2 : viewport.width * 0.8;
+  const title = await currentPane(page).locator("h1").first().boundingBox();
+  const pane = await currentPane(page).boundingBox();
+  const y = title ? title.y + title.height / 2 : 80;
+  const left = pane?.x ?? 0;
+  const width = pane?.width ?? viewport.width;
+  const from = left + width * (direction === "left" ? 0.8 : 0.2);
+  const to = left + width * (direction === "left" ? 0.2 : 0.8);
   await page.mouse.move(from, y);
   await page.mouse.down();
   await page.mouse.move(to, y, { steps: 8 });
@@ -363,24 +361,32 @@ test.describe("contextual bottom bar (mobile)", () => {
     page,
   }, testInfo) => {
     test.skip(testInfo.project.name !== "mobile", "bottom bar is mobile-only");
-    for (const url of ["/en", FIRST]) {
-      await page.goto(url);
-      const bar = page.locator("nav.fixed");
-      const boxes = [];
-      for (const [role, name] of [
-        ["button", "Contents"],
-        ["link", "Home"],
-        ["link", "Guides"],
-        ["button", "Platform"],
-        ["link", "Search"],
-      ] as const) {
-        const el = bar.getByRole(role, { name });
-        await expect(el).toBeVisible();
-        boxes.push((await el.boundingBox())!.x);
-      }
-      // Left-to-right exactly in this order.
-      expect([...boxes].sort((a, b) => a - b)).toEqual(boxes);
+    await page.goto(FIRST);
+    const bar = page.locator("nav.fixed");
+    const boxes = [];
+    for (const [role, name] of [
+      ["button", "Contents"],
+      ["link", "Home"],
+      ["link", "Guides"],
+      ["button", "Platform"],
+      ["link", "Search"],
+    ] as const) {
+      const el = bar.getByRole(role, { name });
+      await expect(el).toBeVisible();
+      boxes.push((await el.boundingBox())!.x);
     }
+    // Left-to-right exactly in this order.
+    expect([...boxes].sort((a, b) => a - b)).toEqual(boxes);
+  });
+
+  test("platform button only appears inside books with platforms", async ({
+    page,
+  }, testInfo) => {
+    test.skip(testInfo.project.name !== "mobile", "bottom bar is mobile-only");
+    await page.goto("/en");
+    const bar = page.locator("nav.fixed");
+    await expect(bar.getByRole("link", { name: "Search" })).toBeVisible();
+    await expect(bar.getByRole("button", { name: "Platform" })).toHaveCount(0);
   });
 
   test("the shelf slot is context-aware: Advanced in wikis, Developer in dev", async ({
@@ -445,13 +451,13 @@ test.describe("platform selector", () => {
     ).toContainText("Android");
   });
 
-  test("navbar shows the active client label on mobile (ATAK in TAK guide)", async ({
+  test("bottom bar shows the active client label on mobile (ATAK in TAK guide)", async ({
     page,
   }, testInfo) => {
-    test.skip(testInfo.project.name !== "mobile", "asserts mobile navbar");
+    test.skip(testInfo.project.name !== "mobile", "asserts mobile bottom bar");
     await open(page, "/en/guides/tak-guide/what-is-tak-Vy8mUPLS87");
     await expect(
-      page.getByRole("combobox", { name: "Platform" }),
+      page.locator("nav.fixed").getByRole("button", { name: "Platform" }),
     ).toContainText("ATAK");
   });
 
@@ -477,13 +483,16 @@ test.describe("platform selector", () => {
 });
 
 test.describe("book cover", () => {
-  test("Tell me more is expanded and the contents live only in the sidebar", async ({
+  test("Start reading is up top, Tell me more collapsed, contents only in the sidebar", async ({
     page,
   }) => {
     await page.goto("/en/deploy-app");
     await expect(
+      page.getByRole("link", { name: "Start reading" }),
+    ).toBeInViewport();
+    await expect(
       page.locator("details", { hasText: "Tell me more" }),
-    ).toHaveJSProperty("open", true);
+    ).toHaveJSProperty("open", false);
     await expect(
       page.getByRole("navigation", { name: "Contents" }),
     ).toHaveCount(0);
@@ -562,15 +571,33 @@ test.describe("unified guides page and back button", () => {
     await expect(main.getByRole("link", { name: /TAK Wiki/ })).toBeVisible();
   });
 
-  test("floating back button above Contents returns to the earlier place", async ({
+  test("installed app: floating back button returns to the earlier place", async ({
+    page,
+  }, testInfo) => {
+    test.skip(testInfo.project.name !== "mobile", "back button is mobile-only");
+    // The button only shows in the installed app.
+    await page.addInitScript(() => {
+      const real = window.matchMedia.bind(window);
+      window.matchMedia = (q: string) =>
+        q.includes("display-mode: standalone")
+          ? ({ ...real(q), matches: true } as MediaQueryList)
+          : real(q);
+    });
+    await page.goto("/en");
+    await page.getByRole("link", { name: /power user/i }).click();
+    await expect(page).toHaveURL("/en/advanced");
+    await page.getByRole("button", { name: "Back" }).click();
+    await expect(page).toHaveURL("/en");
+  });
+
+  test("in a browser there is no floating back button", async ({
     page,
   }, testInfo) => {
     test.skip(testInfo.project.name !== "mobile", "back button is mobile-only");
     await page.goto("/en");
     await page.getByRole("link", { name: /power user/i }).click();
     await expect(page).toHaveURL("/en/advanced");
-    await page.getByRole("button", { name: "Back" }).click();
-    await expect(page).toHaveURL("/en");
+    await expect(page.getByRole("button", { name: "Back" })).toHaveCount(0);
   });
 });
 

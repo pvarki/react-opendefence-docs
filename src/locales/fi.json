@@ -15,13 +15,16 @@
     "contents": "Sisällys",
     "back": "Takaisin",
     "advanced": "Edistyneille",
-    "breadcrumb": "Murupolku"
+    "breadcrumb": "Murupolku",
+    "shelves": "Aloitussivut",
+    "settings": "Asetukset"
   },
   "home": {
     "org": {
       "whatIs": "Mikä on OpenDefence?",
       "guides": "Lue oppaat",
-      "develop": "Kehitä"
+      "develop": "Kehitä",
+      "further": "Syvemmälle"
     },
     "introCard": "Johdanto",
     "introCardDesc": "Käyttöönotettava, yhteentoimiva C2-alusta taisteluun",
@@ -53,7 +56,7 @@
     "slide3": {
       "title": "Oppaat käyttöön tai kehitykseen",
       "body": "Tämä ohjeisivusto sisältää loppukäyttäjien oppaita sekä dokumentaatiota OpenDefence-projektin kehittämisestä vapaaehtoisen maanpuolustuksen merkeissä kiinnostuneille, tuotteidensa integroinnista kiinnostuneille sekä näiden palveluiden operoijille Tervetuloa OpenDefenceen — teknologia maanpuolustuksen puolesta.",
-      "contact": "Yhteystieto: Yhteyspiste tulossa."
+      "contact": "Yhteystieto:"
     }
   },
   "orient": {
@@ -162,6 +165,7 @@
       "body": "Tämä sisältö tai näkymä on työn alla. Se ei vielä täytä laatuvaatimuksiamme ja saattaa sisältää vanhentunutta tietoa tai näkyä sekavasti. Palaa asiaan myöhemmin!"
     },
     "pageAnnouncement": "Sivu: {{title}} — {{current}} / {{total}}",
+    "previousPage": "Edellinen sivu",
     "nextPage": "Seuraava sivu"
   },
   "slides": {
@@ -169,7 +173,11 @@
     "fullscreen": "Koko näyttö",
     "exitFullscreen": "Poistu koko näytöstä",
     "imageMissing": "Kuva puuttuu",
-    "enlarge": "Suurenna kuva"
+    "enlarge": "Suurenna kuva",
+    "prevStep": "Edellinen vaihe",
+    "nextStep": "Seuraava vaihe",
+    "skip": "Ohita",
+    "skipToNextPage": "Ohita ja siirry seuraavalle sivulle"
   },
   "textSize": {
     "label": "Tekstin koko",
@@ -179,7 +187,9 @@
   "search": {
     "placeholder": "Hae ohjeista…",
     "noResults": "Ei tuloksia",
-    "searching": "Haetaan…"
+    "searching": "Haetaan…",
+    "suggested": "Kokeile hakea",
+    "browse": "Tai selaa"
   },
   "blocks": {
     "youtubeTitle": "YouTube-video",
@@ -289,6 +299,17 @@
     "exampleHome": "Mikä Deploy App on ja miten pääsen alkuun?",
     "exampleGuides": "Miten yhdistän ATAKin Deploy App -palvelimeeni?",
     "exampleDev": "Miten rakennan ja julkaisen OpenDefence-integraation?"
+  },
+  "sidebar": {
+    "allGuides": "Kaikki oppaat",
+    "toggleGroup": "Näytä tai piilota: {{label}}"
+  },
+  "siteFooter": {
+    "docs": "Dokumentaatio",
+    "organization": "Organisaatio",
+    "copyright": "Tekijänoikeudet",
+    "businessId": "Y-tunnus",
+    "contact": "Yhteystiedot"
   },
   "contents": {
     "siteTitle": "Sivuston sisältö",

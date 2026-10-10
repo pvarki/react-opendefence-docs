@@ -9,6 +9,7 @@ import { UnderConstructionBanner } from "@/components/reader/UnderConstructionBa
 import { PrevNextBar } from "@/components/reader/PrevNextBar";
 import { EndOfBookCard } from "@/components/reader/EndOfBookCard";
 import { PageFooter } from "@/components/reader/PageFooter";
+import { SiteFooter } from "@/components/shell/SiteFooter";
 import { Skeleton } from "@/components/ui/skeleton";
 import { useScrollMemory } from "@/components/reader/useScrollMemory";
 
@@ -40,7 +41,6 @@ interface PagePaneProps {
   position: PagePosition;
   isCurrent: boolean;
   nextBook?: { label: string; href: string };
-  activeClientId?: string;
 }
 
 /**
@@ -55,7 +55,6 @@ export function PagePane({
   position,
   isCurrent,
   nextBook,
-  activeClientId,
 }: PagePaneProps) {
   const { t } = useTranslation();
   const doc = usePageDoc(page);
@@ -74,7 +73,7 @@ export function PagePane({
         ref={scrollRef}
         data-page-scroll
         tabIndex={-1}
-        className="h-full overflow-y-auto overscroll-y-contain px-4 outline-none md:px-8"
+        className="@container h-full overflow-y-auto overscroll-y-contain px-4 outline-none md:px-8"
       >
         <article className="mx-auto max-w-3xl py-2 md:py-8">
           <h1 className="mb-2 text-xl font-bold md:mb-6 md:text-3xl">
@@ -101,10 +100,10 @@ export function PagePane({
           {isLast && nextBook && <EndOfBookCard nextBook={nextBook} />}
           <PageFooter
             collection={page.collection}
-            clientId={activeClientId}
             title={page.title}
             docId={page.id}
           />
+          <SiteFooter compact />
         </article>
       </div>
     </div>

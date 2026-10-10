@@ -7,6 +7,7 @@ interface PlatformListProps {
   options: ClientInfo[];
   activeId?: string;
   onPick: (option: ClientInfo) => void;
+  variant?: "grid" | "chips";
 }
 
 /**
@@ -15,7 +16,45 @@ interface PlatformListProps {
  * apart. The active client is highlighted; clients whose Outline organizer
  * is flagged incomplete carry a red tag.
  */
-export function PlatformList({ options, activeId, onPick }: PlatformListProps) {
+export function PlatformList({
+  options,
+  activeId,
+  onPick,
+  variant = "grid",
+}: PlatformListProps) {
+  if (variant === "chips") {
+    return (
+      <ul className="flex flex-wrap gap-2">
+        {options.map((option) => {
+          const active = option.id === activeId;
+          return (
+            <li key={option.id} className="shrink-0">
+              <button
+                type="button"
+                onClick={() => onPick(option)}
+                aria-pressed={active}
+                aria-label={option.label}
+                className={cn(
+                  "flex h-9 items-center gap-1.5 rounded-full border px-3.5 text-sm whitespace-nowrap transition-colors",
+                  active
+                    ? "border-primary bg-primary/10 font-medium text-foreground"
+                    : "border-border text-muted-foreground hover:text-foreground",
+                )}
+              >
+                <PlatformIcon
+                  platform={option.platform}
+                  className="size-4 shrink-0"
+                />
+                {stripPlatformSuffix(option.label)}
+                {option.underDevelopment && <IncompleteBadge />}
+              </button>
+            </li>
+          );
+        })}
+      </ul>
+    );
+  }
+
   return (
     <ul
       className={cn(
