@@ -290,6 +290,8 @@ export class OutlineApiClient {
       collectionId?: string;
       parentDocumentId?: string;
       limit?: number;
+      /** Also list unpublished drafts; Outline lists published documents only by default. */
+      includeDrafts?: boolean;
     } = {},
   ): Promise<Array<{ id: string; title: string }>> {
     const data = await this.post<{
@@ -300,6 +302,7 @@ export class OutlineApiClient {
         ? { parentDocumentId: opts.parentDocumentId }
         : {}),
       limit: opts.limit ?? 100,
+      ...(opts.includeDrafts ? { statusFilter: ["published", "draft"] } : {}),
     });
     return data.data.map((doc) => ({ id: doc.id, title: doc.title }));
   }
