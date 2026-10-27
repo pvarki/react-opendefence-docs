@@ -22,6 +22,9 @@ const matrixCollectionId = GUIDE_COLLECTIONS.find(
 const cryptpadCollectionId = GUIDE_COLLECTIONS.find(
   (c) => c.slug === "guides/cryptpad-guide",
 )!.collectionId;
+const pluginsCollectionId = GUIDE_COLLECTIONS.find(
+  (c) => c.slug === "guides/opendefence-plugins",
+)!.collectionId;
 
 export interface PlatformTarget {
   /** Platform/client key used on the CLI (e.g. "android", "atak"). */
@@ -122,6 +125,13 @@ export const PRODUCTS: Record<string, ProductTarget> = {
     label: "CryptPad Guide",
     collectionId: cryptpadCollectionId,
     // Platform-agnostic: pages hang off the En locale root.
+    platforms: [],
+  },
+  "opendefence-plugins": {
+    key: "opendefence-plugins",
+    label: "OpenDefence Plugins",
+    collectionId: pluginsCollectionId,
+    // Platform-agnostic: one chapter per plugin under the En locale root.
     platforms: [],
   },
 };
