@@ -5,6 +5,7 @@ import {
   cleanLabel,
   cleanTitle,
   detectPlatform,
+  indexDocRoutes,
   platformFromTitle,
   slugFromUrl,
   type OutlineNavNode,
@@ -350,6 +351,39 @@ describe("label/title cleanup", () => {
     expect(detectPlatform("TAK Tracker - Apple")).toBe("ios");
     expect(detectPlatform("MacOS")).toBe("macos");
     expect(detectPlatform("User Guide")).toBeUndefined();
+  });
+
+  it("indexDocRoutes resolves pages by slug and id, not organizers", () => {
+    const root: OutlineNavNode = {
+      id: "root",
+      url: "/doc/en-root-Ab12Cd34Ef",
+      title: "en",
+      children: [
+        {
+          id: "1a4e123c-b1fc-4835-a345-6cc0b4b63eff",
+          url: "/doc/parent-Qq2V1k9VZ2",
+          title: "Parent",
+          children: [
+            {
+              id: "2586e9d1-9343-4b54-9218-b6d5b9659a12",
+              url: "/doc/child-PQ4dCV2SYR",
+              title: "Child",
+              children: [],
+            },
+          ],
+        },
+      ],
+    };
+    const index = new Map<string, string>();
+    const count = indexDocRoutes(root, (slug) => `/en/x/${slug}`, index);
+    expect(count).toBe(2);
+    expect(index.get("child-PQ4dCV2SYR")).toBe("/en/x/child-PQ4dCV2SYR");
+    expect(index.get("2586e9d1-9343-4b54-9218-b6d5b9659a12")).toBe(
+      "/en/x/child-PQ4dCV2SYR",
+    );
+    expect(index.has("root")).toBe(false);
+    expect(index.has("parent-Qq2V1k9VZ2")).toBe(false);
+    expect(index.has("1a4e123c-b1fc-4835-a345-6cc0b4b63eff")).toBe(false);
   });
 
   it("slugFromUrl keeps the shortid suffix", () => {
