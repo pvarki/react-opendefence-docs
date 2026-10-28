@@ -81,6 +81,37 @@ const mdText = (node: MdNode): string =>
 // ---------------------------------------------------------------------------
 
 /**
+ * Outline image "titles" are size markers like " =1080x2006", not captions.
+ * Outline omits the height (" =218x") when only the width was set.
+ */
+const SIZE_TITLE_RE = /^\s*=(\d+)x(\d*)\s*$/;
+
+/**
+ * Inline <img> carry the Outline size marker as their title (a "=469x366"
+ * tooltip); move it to width/height instead.
+ */
+function rehypeOutlineImageSizes() {
+  return (tree: unknown) => {
+    const visit = (node: HastNode): void => {
+      if (node.type === "element" && node.tagName === "img") {
+        const { title, ...rest } = node.properties ?? {};
+        const match =
+          typeof title === "string" ? SIZE_TITLE_RE.exec(title) : null;
+        if (match) {
+          node.properties = {
+            ...rest,
+            width: Number(match[1]),
+            ...(match[2] ? { height: Number(match[2]) } : {}),
+          };
+        }
+      }
+      for (const child of node.children ?? []) visit(child);
+    };
+    visit(tree as HastNode);
+  };
+}
+
+/**
  * External (http/https) links open in a new tab; internal /-prefixed links
  * are left alone for the router. Applied pre-sanitize so the schema's
  * target/rel allowlist is the single gate.
@@ -150,6 +181,7 @@ const htmlProcessor = unified()
   .use(rehypeSlug)
   .use(rehypeAutolinkHeadings, { behavior: "wrap" })
   .use(rehypeExternalLinks)
+  .use(rehypeOutlineImageSizes)
   .use(rehypeSanitize, SANITIZE_SCHEMA)
   .use(rehypeStringify);
 
@@ -205,8 +237,6 @@ function dropAfterTripleHr(md: string): string {
 // ---------------------------------------------------------------------------
 
 const SLIDESET_PLACEHOLDER_RE = /^%%SLIDESET:([A-Za-z0-9_-]+)%%$/;
-/** Outline image "titles" are size markers like " =1080x2006", not captions. */
-const SIZE_TITLE_RE = /^\s*=(\d+)x(\d+)\s*$/;
 
 /** Highlightable languages (shiki full-bundle ids/aliases); others render as plaintext. */
 const CODE_LANGS = new Set([
