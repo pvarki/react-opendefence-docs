@@ -84,6 +84,13 @@ describe("normalizeOutlineMarkdown", () => {
     );
   });
 
+  it("drops indented lone-backslash lines inside lists", () => {
+    const input = "- Item one\n  \\\n- Item two\n";
+    expect(normalizeOutlineMarkdown(input, ctx())).toBe(
+      "- Item one\n\n- Item two\n",
+    );
+  });
+
   it("collapses 3+ blank lines and ends with a single newline", () => {
     const out = normalizeOutlineMarkdown("a\n\n\n\nb\n\n\n", ctx());
     expect(out).toBe("a\n\nb\n");
