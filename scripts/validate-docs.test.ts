@@ -127,12 +127,23 @@ describe("validateDocs", () => {
               '<a href="/en/dev/api">retired route</a>' +
               '<a href="https://example.com/x">external</a>' +
               '<a href="#anchor">anchor</a>' +
+              '<a href="/doc/1a4e123c-b1fc-4835-a345-6cc0b4b63eff">uuid</a>' +
+              '<a href="https://pvarki.getoutline.com/doc/x-Ab12Cd34Ef">abs</a>' +
+              '<a href="https://example.com/doc/manual">other site</a>' +
+              '<img alt="==a==" src="data:x==">' +
+              "Soft\\nbreak <code>a\\nb</code> ==YouTube==" +
               '<img src="/content/images/en/attachments/missing.webp"></p>',
           },
           {
             type: "image",
             src: "/content/images/en/attachments/ok.webp",
             alt: "ok",
+          },
+          {
+            type: "image",
+            src: "/content/images/en/attachments/ok.webp",
+            alt: "",
+            caption: "=218x",
           },
         ] as Block[],
       }),
@@ -212,6 +223,32 @@ describe("validateDocs", () => {
     expect(messages).not.toContain('"/en/dev/api"');
     expect(messages).not.toContain("/en/dev/architecture/api");
     expect(messages).not.toContain("/fi/dev/architecture/changelog");
+  });
+
+  it("warns about Outline links the sync could not rewrite", () => {
+    const unresolved = byCode("unresolved-outline-link");
+    expect(unresolved).toHaveLength(2);
+    expect(unresolved[0]).toMatchObject({
+      level: "warning",
+      slug: "welcome-Aa11111111",
+    });
+  });
+
+  it("warns about links into another locale", () => {
+    const cross = byCode("cross-locale-link");
+    expect(cross.map((i) => [i.locale, i.slug])).toEqual([
+      ["en", "welcome-Aa11111111"],
+      ["fi", "sivu-Bb22222222"],
+    ]);
+  });
+
+  it("warns about Outline export leftovers outside code", () => {
+    const messages = byCode("outline-artifact").map((i) => i.message);
+    expect(messages).toEqual([
+      "Outline export leftover: image size marker shown as caption",
+      "Outline export leftover: literal \\n shown as text",
+      "Outline export leftover: ==highlight== marker shown",
+    ]);
   });
 
   it("flags missing image files (inline <img> included)", () => {
