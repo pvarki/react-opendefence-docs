@@ -11,7 +11,11 @@
  * default locale and the pilot scope. Add fi/sv organizer ids here when those
  * platform trees exist in Outline.
  */
-import { MAIN_COLLECTION, GUIDE_COLLECTIONS } from "../../config/collections";
+import {
+  MAIN_COLLECTION,
+  GUIDE_COLLECTIONS,
+  WIKI_COLLECTIONS,
+} from "../../config/collections";
 
 const takCollectionId = GUIDE_COLLECTIONS.find(
   (c) => c.slug === "guides/tak-guide",
@@ -22,8 +26,8 @@ const matrixCollectionId = GUIDE_COLLECTIONS.find(
 const cryptpadCollectionId = GUIDE_COLLECTIONS.find(
   (c) => c.slug === "guides/cryptpad-guide",
 )!.collectionId;
-const pluginsCollectionId = GUIDE_COLLECTIONS.find(
-  (c) => c.slug === "guides/opendefence-plugins",
+const pluginsCollectionId = WIKI_COLLECTIONS.find(
+  (c) => c.slug === "wikis/opendefence-plugins",
 )!.collectionId;
 
 export interface PlatformTarget {

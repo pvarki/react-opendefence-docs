@@ -62,13 +62,6 @@ export const GUIDE_COLLECTIONS: CollectionConfig[] = [
     section: "guides",
     description: "Learn how to share files and work together with CryptPad",
   },
-  {
-    collectionId: "9c2c3f4f-0f61-4eb0-8bef-0c42e7553fa0",
-    label: "OpenDefence Plugins",
-    slug: "guides/opendefence-plugins",
-    section: "guides",
-    description: "Learn how to use the OpenDefence plugins for ATAK",
-  },
 ];
 
 export const WIKI_COLLECTIONS: CollectionConfig[] = [
@@ -85,6 +78,13 @@ export const WIKI_COLLECTIONS: CollectionConfig[] = [
     slug: "wikis/mtx",
     section: "wikis",
     description: "MTX technical reference",
+  },
+  {
+    collectionId: "9c2c3f4f-0f61-4eb0-8bef-0c42e7553fa0",
+    label: "OpenDefence Plugins",
+    slug: "wikis/opendefence-plugins",
+    section: "wikis",
+    description: "Learn how to use the OpenDefence plugins for ATAK",
   },
 ];
 
