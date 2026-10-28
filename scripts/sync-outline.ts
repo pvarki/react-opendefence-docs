@@ -38,7 +38,7 @@ import {
 import { createTimer, formatDuration } from "./lib/utils";
 import {
   buildBook,
-  slugFromUrl,
+  indexDocRoutes,
   type BookPageRef,
   type OutlineNavNode,
 } from "./lib/sidebar-generator";
@@ -833,15 +833,11 @@ async function main() {
     for (const locale of LOCALES) {
       const root = structure[locale];
       if (!root) continue;
-      const walk = (node: OutlineNavNode) => {
-        const slug = slugFromUrl(node.url);
-        slugRouteIndex.set(slug, `/${locale}/${collection.slug}/${slug}`);
-        totalDocs++;
-        for (const child of node.children ?? []) walk(child);
-      };
-      // The locale root (or synthetic noLocale root) is a wrapper, not a page.
-      for (const child of (root.children ?? []) as OutlineNavNode[])
-        walk(child);
+      totalDocs += indexDocRoutes(
+        root as OutlineNavNode,
+        (slug) => `/${locale}/${collection.slug}/${slug}`,
+        slugRouteIndex,
+      );
     }
   }
 

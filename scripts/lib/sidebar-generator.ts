@@ -106,6 +106,33 @@ export function slugFromUrl(url: string): string {
 }
 
 /**
+ * Index every page under a locale root by Outline slug and by document id:
+ * authors' internal links use either `/doc/<slug>` or `/doc/<uuid>`. Only
+ * leaves become pages (buildBook); an organizer has no route, so a link to
+ * it stays unresolved for validation to report instead of becoming a 404.
+ * Returns the number of docs walked.
+ */
+export function indexDocRoutes(
+  root: OutlineNavNode,
+  route: (slug: string) => string,
+  index: Map<string, string>,
+): number {
+  let count = 0;
+  const walk = (node: OutlineNavNode) => {
+    count++;
+    if ((node.children ?? []).length === 0) {
+      const slug = slugFromUrl(node.url);
+      index.set(slug, route(slug));
+      index.set(node.id, route(slug));
+    }
+    for (const child of node.children ?? []) walk(child);
+  };
+  // The locale root (or synthetic noLocale root) is a wrapper, not a page.
+  for (const child of root.children ?? []) walk(child);
+  return count;
+}
+
+/**
  * Sidebar label cleanup, ported from the old wiki's cleanLabel (regexes kept
  * byte-identical — they encode years of Outline title quirks): surrounding
  * brackets, "#tag:..." markers and trailing parentheticals are authoring
