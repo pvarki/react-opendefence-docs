@@ -84,7 +84,7 @@ const mdText = (node: MdNode): string =>
  * Outline image "titles" are size markers like " =1080x2006", not captions.
  * Outline omits the height (" =218x") when only the width was set.
  */
-const SIZE_TITLE_RE = /^\s*=(\d+)x(\d*)\s*$/;
+export const SIZE_TITLE_RE = /^\s*=(\d+)x(\d*)\s*$/;
 
 /**
  * Inline <img> carry the Outline size marker as their title (a "=469x366"

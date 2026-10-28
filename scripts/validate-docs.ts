@@ -16,6 +16,9 @@
  *   warning  legacy-slideset-format   slideset emitted from a legacy authoring format
  *   warning  slideset-step-missing-image  non-text slide without any image
  *   warning  empty-doc                page with no blocks
+ *   warning  unresolved-outline-link  /doc/... href the sync could not rewrite
+ *   warning  cross-locale-link        link to a page in another locale
+ *   warning  outline-artifact         Outline export markup shown as text
  *
  * Usage:
  *   pnpm validate:docs                       # exit 1 only on errors
@@ -35,6 +38,7 @@ import {
   type PageDoc,
 } from "../shared/content-schema";
 import { ALL_COLLECTIONS } from "../config/collections";
+import { SIZE_TITLE_RE } from "./lib/block-emitter";
 import { readJsonIfExists } from "./lib/sync-helpers";
 
 export const OUTLINE_DOC_BASE = "https://pvarki.getoutline.com/doc/";
@@ -119,6 +123,36 @@ export function collectHrefs(page: PageDoc): string[] {
     }
   }
   return hrefs;
+}
+
+const CODE_HTML_PATTERN = /<(pre|code)\b[\s\S]*?<\/\1>/g;
+const TAG_PATTERN = /<[^>]*>/g;
+
+/**
+ * Outline export markup that leaked into rendered text: image size markers
+ * as captions, literal \n soft breaks and ==highlight== markers.
+ */
+export function findOutlineArtifacts(page: PageDoc): string[] {
+  const found = new Set<string>();
+  const htmls: string[] = [];
+  for (const block of page.blocks) {
+    if (block.type === "image" && block.caption) {
+      if (SIZE_TITLE_RE.test(block.caption)) {
+        found.add("image size marker shown as caption");
+      }
+    } else if (block.type === "html") {
+      htmls.push(block.html);
+    } else if (block.type === "slideset") {
+      htmls.push(...block.slides.map((s) => s.html));
+    }
+  }
+  for (const html of htmls) {
+    // Visible text only: code keeps its \n, attributes may hold "==".
+    const text = html.replace(CODE_HTML_PATTERN, "").replace(TAG_PATTERN, "");
+    if (text.includes("\\n")) found.add("literal \\n shown as text");
+    if (/==[^=\s][^=]*==/.test(text)) found.add("==highlight== marker shown");
+  }
+  return [...found];
 }
 
 /** All local asset srcs (images, pdfs) referenced by a page. */
@@ -300,6 +334,19 @@ export async function validateDocs(
 
       // broken-internal-link
       for (const href of collectHrefs(page)) {
+        if (href.startsWith("/doc/") || href.startsWith(OUTLINE_DOC_BASE)) {
+          issues.push(
+            issue(
+              "warning",
+              "unresolved-outline-link",
+              `Link "${href}" points to an Outline document with no page here (not synced, or a section organizer)`,
+              locale,
+              page.collection,
+              page.slug,
+            ),
+          );
+          continue;
+        }
         const route = parseRouteHref(href);
         if (!route) continue;
         if (LEGACY_DEV_ROUTES.has(route.routeKey)) continue;
@@ -322,6 +369,18 @@ export async function validateDocs(
             );
           }
           continue;
+        }
+        if (route.locale !== locale) {
+          issues.push(
+            issue(
+              "warning",
+              "cross-locale-link",
+              `Link "${href}" leads to the ${route.locale} version; link the ${locale} page instead`,
+              locale,
+              page.collection,
+              page.slug,
+            ),
+          );
         }
         if (!routeSets.get(route.locale)?.has(route.routeKey)) {
           issues.push(
@@ -384,6 +443,19 @@ export async function validateDocs(
             ),
           );
         }
+      }
+
+      for (const artifact of findOutlineArtifacts(page)) {
+        issues.push(
+          issue(
+            "warning",
+            "outline-artifact",
+            `Outline export leftover: ${artifact}`,
+            locale,
+            page.collection,
+            page.slug,
+          ),
+        );
       }
 
       // empty-doc
