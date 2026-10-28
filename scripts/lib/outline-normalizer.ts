@@ -159,6 +159,60 @@ function unescapeMarkdown(markdown: string): string {
   );
 }
 
+/** Fenced code blocks (captured, so split() keeps them) and inline code spans. */
+const CODE_FENCE_RE = /(^[ \t]*```[\s\S]*?^[ \t]*```[ \t]*$)/m;
+const INLINE_CODE_RE = /`[^`\n]+`/g;
+
+/** Literal `\n` runs and the spaces after them; an escaped `\\n` is text. */
+const SOFT_BREAK_RE = /(?<!\\)(?:\\n)+[ \t]*/;
+
+/**
+ * Escape a heading, quote, list, fence or rule marker at the start of text
+ * that followed a soft break. Outline escapes these only at a real line
+ * start, and the text now begins a line.
+ */
+function escapeBlockStart(text: string): string {
+  return text
+    .replace(/^(#{1,6}(?=[ \t]|$)|>|[-+*](?=[ \t]|$)|```|~~~)/, "\\$1")
+    .replace(/^(\d{1,9})([.)])(?=[ \t]|$)/, "$1\\$2")
+    .replace(/^([-=*_])(?=[-=*_ \t]*$)/, "\\$1");
+}
+
+/**
+ * Outline exports a soft line break (Shift+Enter) as a literal `\n` unless
+ * the export runs in CommonMark mode (HardBreak.toMarkdown in Outline's
+ * editor; tables get `<br>` instead). Turn them into markdown hard breaks
+ * outside code (a space in headings), and drop one at a line end, where a
+ * newline follows anyway.
+ */
+function convertLiteralLineBreaks(markdown: string): string {
+  const convertLine = (line: string): string => {
+    // Mask inline code so a `\n` inside it survives (NUL never occurs in text).
+    const spans: string[] = [];
+    const masked = line.replace(
+      INLINE_CODE_RE,
+      (span) => `\0${spans.push(span) - 1}\0`,
+    );
+    const [first, ...rest] = masked.split(SOFT_BREAK_RE);
+    // A heading can't hold a hard break (a trailing "\" shows as text).
+    const heading = /^[ \t]{0,3}#{1,6}[ \t]/.test(first);
+    let out = first;
+    for (const part of rest) {
+      if (part === "") continue;
+      if (heading) out += ` ${part}`;
+      else if (out.trim() === "") out += escapeBlockStart(part);
+      else out += `\\\n${escapeBlockStart(part)}`;
+    }
+    return out.replace(/\0(\d+)\0/g, (_, i: string) => spans[Number(i)]);
+  };
+  return markdown
+    .split(CODE_FENCE_RE)
+    .map((segment, i) =>
+      i % 2 === 1 ? segment : segment.split("\n").map(convertLine).join("\n"),
+    )
+    .join("");
+}
+
 /** Collapse 3+ blank lines, strip trailing line whitespace, single final newline. */
 function fixMarkdownIssues(markdown: string): string {
   return markdown
@@ -209,6 +263,7 @@ export function normalizeOutlineMarkdown(
   result = replaceRawLinks(result);
   result = removeEmptyImages(result);
   result = unescapeMarkdown(result);
+  result = convertLiteralLineBreaks(result);
   result = stripEmojisFromHeadings(result);
   result = fixMarkdownIssues(result);
   result = replaceInternalLinks(result, ctx.slugToRoute);

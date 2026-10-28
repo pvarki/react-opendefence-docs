@@ -91,6 +91,58 @@ describe("normalizeOutlineMarkdown", () => {
     );
   });
 
+  it("turns literal \\n soft breaks into hard breaks outside code", () => {
+    const input = String.raw`Types:\n• Map Items\n\n• Files\n` + "\n";
+    expect(normalizeOutlineMarkdown(input, ctx())).toBe(
+      "Types:\\\n• Map Items\\\n• Files\n",
+    );
+  });
+
+  it("keeps text after a soft break from starting a new block", () => {
+    const input =
+      String.raw`Note:\n- one\n# two\n1. three\n---\n**bold** and ` +
+      "`code`" +
+      String.raw`\n> four` +
+      "\n";
+    expect(normalizeOutlineMarkdown(input, ctx())).toBe(
+      [
+        "Note:\\",
+        "\\- one\\",
+        "\\# two\\",
+        "1\\. three\\",
+        "\\---\\",
+        "**bold** and `code`\\",
+        "\\> four",
+        "",
+      ].join("\n"),
+    );
+  });
+
+  it("breaks next to inline code and joins heading lines with a space", () => {
+    const input =
+      String.raw`On:\n` +
+      "`https://a/`" +
+      String.raw`\n` +
+      "`https://b/`\n" +
+      String.raw`### Tools:\nNone\n` +
+      "\n";
+    expect(normalizeOutlineMarkdown(input, ctx())).toBe(
+      "On:\\\n`https://a/`\\\n`https://b/`\n### Tools: None\n",
+    );
+  });
+
+  it("keeps literal \\n in code and escaped backslashes", () => {
+    const input = [
+      "```mermaid",
+      String.raw`A["core\nrmapi"]`,
+      "```",
+      "",
+      "Run `printf 'a\\n'` or C:\\\\new",
+      "",
+    ].join("\n");
+    expect(normalizeOutlineMarkdown(input, ctx())).toBe(input);
+  });
+
   it("collapses 3+ blank lines and ends with a single newline", () => {
     const out = normalizeOutlineMarkdown("a\n\n\n\nb\n\n\n", ctx());
     expect(out).toBe("a\n\nb\n");
