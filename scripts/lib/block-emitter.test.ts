@@ -171,6 +171,28 @@ describe("emitBlocks end-to-end", () => {
     expect(blocks[2]).toMatchObject({ width: 640, height: 480 });
   });
 
+  it("treats width-only Outline size titles as size, not caption", async () => {
+    const { blocks } = await emitBlocks(
+      '![](/content/images/en/attachments/abc.webp " =218x")\n',
+      ctx(),
+    );
+    expect(blocks[0]).toEqual({
+      type: "image",
+      src: "/content/images/en/attachments/abc.webp",
+      alt: "",
+      width: 218,
+    });
+  });
+
+  it("moves inline image size titles to width/height", async () => {
+    const html = await renderInlineMarkdown(
+      'Text ![](/a.webp " =469x366") and ![](/b.webp " =218x")',
+    );
+    expect(html).not.toContain("title=");
+    expect(html).toContain('width="469" height="366"');
+    expect(html).toContain('<img src="/b.webp" alt="" width="218">');
+  });
+
   it("emits youtube and pdf blocks", async () => {
     const { blocks } = await emitBlocks(FIXTURE, ctx());
     expect(blocks[3]).toEqual({ type: "youtube", videoId: "dQw4w9WgXcQ" });
