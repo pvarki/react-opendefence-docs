@@ -95,6 +95,8 @@ export interface OutlineDocumentInfo {
   collectionId: string;
   createdAt: string;
   updatedAt: string;
+  /** Markdown body (documents.info `text`), read for authoring markers. */
+  text: string;
 }
 
 /**

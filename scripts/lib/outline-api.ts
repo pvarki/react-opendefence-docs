@@ -317,7 +317,7 @@ export class OutlineApiClient {
   // ==========================================================================
 
   /**
-   * Fetch document info (metadata) by ID
+   * Fetch document info (metadata and markdown body) by ID
    *
    * @param documentId - The document UUID
    */
@@ -330,6 +330,7 @@ export class OutlineApiClient {
         collectionId: string;
         createdAt: string;
         updatedAt: string;
+        text?: string;
       };
     }>("/documents.info", { id: documentId });
 
@@ -340,6 +341,7 @@ export class OutlineApiClient {
       collectionId: data.data.collectionId,
       createdAt: data.data.createdAt,
       updatedAt: data.data.updatedAt,
+      text: data.data.text ?? "",
     };
   }
 

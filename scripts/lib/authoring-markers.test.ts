@@ -2,6 +2,8 @@ import { describe, it, expect } from "vitest";
 
 import {
   findMarkerVariants,
+  hasContentBesidesHideMarker,
+  hasHideMarker,
   HIDE_MARKER,
   UNDER_DEVELOPMENT_MARKER,
 } from "./authoring-markers";
@@ -87,5 +89,37 @@ describe("findMarkerVariants", () => {
     expect(findMarkerVariants("(Tätä sivua ei näytetä)")).toEqual([
       { found: "(Tätä sivua ei näytetä)", official: HIDE_MARKER },
     ]);
+  });
+});
+
+describe("hasHideMarker", () => {
+  it("finds the marker in any case, also inside a code block", () => {
+    expect(hasHideMarker("```\n(THIS TAB SHOULD NOT BE SHOWN)\n```")).toBe(
+      true,
+    );
+    expect(hasHideMarker("(Tätä välilehteä ei pitäisi näyttää)")).toBe(false);
+  });
+});
+
+describe("hasContentBesidesHideMarker", () => {
+  it("ignores the marker, Translations block, rules and fences", () => {
+    const body = [
+      "* Translations:",
+      "  * fi: [Yleiskatsaus](/doc/yleiskatsaus-dSxmQoNuM0)",
+      "---",
+      "```",
+      "(This tab should not be shown)",
+      "```",
+      "\\",
+    ].join("\n");
+    expect(hasContentBesidesHideMarker(body)).toBe(false);
+  });
+
+  it("reports real content", () => {
+    expect(
+      hasContentBesidesHideMarker(
+        "(This tab should not be shown)\n\nOpen the stream in VLC.",
+      ),
+    ).toBe(true);
   });
 });
