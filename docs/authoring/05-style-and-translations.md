@@ -53,6 +53,10 @@ sv docs, in any letter case. Other wordings and translations are not
 recognised, and validation reports them as `marker-variant`. Delete
 the line when the page is ready.
 
+The hide marker `(This tab should not be shown)` works the same way:
+one English phrase in every language. A translated copy hides
+nothing. See [Start here](01-start-here.md#not-meant-for-readers-hide-it).
+
 ## Images
 
 - **Paste screenshots directly into Outline.** No upload service, no
