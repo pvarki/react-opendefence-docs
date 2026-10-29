@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "locale": "en",
-  "generatedAt": "2026-10-29T12:08:50.768Z",
+  "generatedAt": "2026-10-29T18:44:56.126Z",
   "collections": [
     {
       "slug": "deploy-app",
@@ -400,16 +400,16 @@
       "breadcrumb": [
         "Platforms",
         "Android",
-        "Advanced",
+        "Admin Guide",
         "MDM Setup"
       ],
       "path": "/content/en/pages/deploy-app/mdm-setup-CqNOaahyKB.json",
-      "updatedAt": "2026-10-29T11:59:43.056Z",
+      "updatedAt": "2026-10-29T18:42:44.640Z",
       "order": 8,
       "platform": "android",
       "clientId": "android-MENReFAfCN",
-      "chapterId": "advanced-iB16OtgQbJ",
-      "chapterLabel": "Advanced"
+      "chapterId": "admin-guide-V5Hs1rBdRL",
+      "chapterLabel": "Admin Guide"
     },
     {
       "id": "a7f6b598-93e8-4c0e-85fb-d7a062499d91",
@@ -419,16 +419,16 @@
       "breadcrumb": [
         "Platforms",
         "Android",
-        "Advanced",
+        "Admin Guide",
         "MDM Devices"
       ],
       "path": "/content/en/pages/deploy-app/mdm-devices-c9ipLyHRe9.json",
-      "updatedAt": "2026-10-29T11:59:44.121Z",
+      "updatedAt": "2026-10-29T18:42:45.108Z",
       "order": 9,
       "platform": "android",
       "clientId": "android-MENReFAfCN",
-      "chapterId": "advanced-iB16OtgQbJ",
-      "chapterLabel": "Advanced"
+      "chapterId": "admin-guide-V5Hs1rBdRL",
+      "chapterLabel": "Admin Guide"
     },
     {
       "id": "149ddbd8-3815-4fd5-82d9-dbe57518256f",
@@ -438,16 +438,16 @@
       "breadcrumb": [
         "Platforms",
         "Android",
-        "Advanced",
+        "Admin Guide",
         "MDM Enrolment"
       ],
       "path": "/content/en/pages/deploy-app/mdm-enrolment-S69TrSf5OW.json",
-      "updatedAt": "2026-10-29T12:06:46.125Z",
+      "updatedAt": "2026-10-29T18:42:45.548Z",
       "order": 10,
       "platform": "android",
       "clientId": "android-MENReFAfCN",
-      "chapterId": "advanced-iB16OtgQbJ",
-      "chapterLabel": "Advanced"
+      "chapterId": "admin-guide-V5Hs1rBdRL",
+      "chapterLabel": "Admin Guide"
     },
     {
       "id": "cdde88ea-2777-42c6-b918-b9726de6926a",
