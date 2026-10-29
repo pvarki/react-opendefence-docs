@@ -160,7 +160,7 @@
     "endOfBook": "Sait valmiiksi: {{book}}",
     "notTranslated": "Tätä sivua ei ole vielä suomennettu. Näytetään englanninkielinen sisältö.",
     "underConstruction": {
-      "title": "Työn alla.",
+      "title": "Työn alla",
       "body": "Tämä sisältö tai näkymä on työn alla. Se ei vielä täytä laatuvaatimuksiamme ja saattaa sisältää vanhentunutta tietoa tai näkyä sekavasti. Palaa asiaan myöhemmin!"
     },
     "pageAnnouncement": "Sivu: {{title}} — {{current}} / {{total}}",

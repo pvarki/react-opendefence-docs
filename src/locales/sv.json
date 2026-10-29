@@ -160,7 +160,7 @@
     "endOfBook": "Du har läst klart {{book}}",
     "notTranslated": "Denna sida är inte översatt ännu. Visar engelskt innehåll.",
     "underConstruction": {
-      "title": "Under uppbyggnad.",
+      "title": "Under uppbyggnad",
       "body": "Det här innehållet eller den här vyn är under uppbyggnad. Det uppfyller ännu inte våra kvalitetskrav och kan innehålla föråldrad information eller visas på ett förvirrande sätt. Titta in igen senare!"
     },
     "pageAnnouncement": "Sida: {{title}} — {{current}} av {{total}}",
