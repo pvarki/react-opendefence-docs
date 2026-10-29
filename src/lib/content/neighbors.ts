@@ -45,9 +45,9 @@ function pageMatchesView(
 }
 
 /**
- * A collection's pages in reading order (hidden pages excluded). With a
- * view, only the active client's pages plus client-agnostic ones — the
- * reader swipes through everything for THIS view, start to finish.
+ * A collection's pages in reading order. With a view, only the active
+ * client's pages plus client-agnostic ones — the reader swipes through
+ * everything for THIS view, start to finish.
  */
 export function readingOrder(
   manifest: LocaleManifest,
@@ -57,10 +57,7 @@ export function readingOrder(
   const client = view ? resolveClient(manifest, collection, view) : undefined;
   return manifest.pages
     .filter(
-      (p) =>
-        p.collection === collection &&
-        !p.hidden &&
-        pageMatchesView(p, client, view),
+      (p) => p.collection === collection && pageMatchesView(p, client, view),
     )
     .sort((a, b) => a.order - b.order);
 }

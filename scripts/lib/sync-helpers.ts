@@ -145,8 +145,6 @@ export interface BookEntryInput {
   /** Fresh updatedAt from documents.info (undefined when the info call failed). */
   updatedAt?: string;
   status: DocSyncStatus;
-  /** From emitBlocks, only meaningful for status "processed". */
-  underDevelopment?: boolean;
   /** Previous manifest entry matched by document id. */
   previous?: ManifestPage;
 }
@@ -173,10 +171,6 @@ export function buildBookManifestPages(
       continue;
     }
 
-    const hidden =
-      status === "processed"
-        ? input.underDevelopment === true
-        : previous?.hidden;
     const updatedAt = input.updatedAt ?? previous?.updatedAt;
     if (!updatedAt) continue; // No info and no history: nothing trustworthy to record.
 
@@ -189,7 +183,6 @@ export function buildBookManifestPages(
       path: `/content/${locale}/pages/${collectionSlug}/${ref.slug}.json`,
       updatedAt,
       order: pages.length,
-      ...(hidden ? { hidden: true } : {}),
       ...(ref.platform ? { platform: ref.platform } : {}),
       ...(ref.platforms ? { platforms: ref.platforms } : {}),
       ...(ref.clientId ? { clientId: ref.clientId } : {}),

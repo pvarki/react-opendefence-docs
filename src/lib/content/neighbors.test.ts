@@ -7,12 +7,7 @@ import {
   resolveSplat,
 } from "./neighbors";
 
-const page = (
-  slug: string,
-  collection: string,
-  order: number,
-  hidden = false,
-) => ({
+const page = (slug: string, collection: string, order: number) => ({
   id: `id-${slug}`,
   slug,
   collection,
@@ -21,7 +16,6 @@ const page = (
   path: `/content/en/pages/${collection}/${slug}.json`,
   updatedAt: "2026-01-01T00:00:00.000Z",
   order,
-  ...(hidden ? { hidden } : {}),
 });
 
 const manifest: LocaleManifest = {
@@ -45,16 +39,17 @@ const manifest: LocaleManifest = {
   pages: [
     page("c-third", "deploy-app", 2),
     page("a-first", "deploy-app", 0),
-    page("b-hidden", "deploy-app", 1, true),
+    page("b-second", "deploy-app", 1),
     page("d-fourth", "deploy-app", 3),
     page("tak-intro", "guides/tak-guide", 0),
   ],
 };
 
 describe("readingOrder", () => {
-  it("sorts by order and drops hidden pages", () => {
+  it("sorts by order", () => {
     expect(readingOrder(manifest, "deploy-app").map((p) => p.slug)).toEqual([
       "a-first",
+      "b-second",
       "c-third",
       "d-fourth",
     ]);
@@ -62,12 +57,12 @@ describe("readingOrder", () => {
 });
 
 describe("resolvePosition", () => {
-  it("returns neighbors skipping hidden pages", () => {
+  it("returns neighbors in reading order", () => {
     const pos = resolvePosition(manifest, "deploy-app", "c-third");
-    expect(pos?.prev?.slug).toBe("a-first");
+    expect(pos?.prev?.slug).toBe("b-second");
     expect(pos?.next?.slug).toBe("d-fourth");
-    expect(pos?.index).toBe(1);
-    expect(pos?.total).toBe(3);
+    expect(pos?.index).toBe(2);
+    expect(pos?.total).toBe(4);
   });
 
   it("has no prev at book start and no next at book end", () => {
