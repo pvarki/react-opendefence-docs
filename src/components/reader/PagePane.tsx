@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { useTranslation } from "react-i18next";
 import type { ManifestPage, PageDoc } from "@shared/content-schema";
 import type { PagePosition } from "@/lib/content/neighbors";
 import { loadPage } from "@/lib/content/loader";
@@ -56,7 +55,6 @@ export function PagePane({
   isCurrent,
   nextBook,
 }: PagePaneProps) {
-  const { t } = useTranslation();
   const doc = usePageDoc(page);
   const scrollRef = useScrollMemory(
     `${locale}:${page.collection}:${page.slug}`,
@@ -79,15 +77,11 @@ export function PagePane({
           <h1 className="mb-2 text-xl font-bold md:mb-6 md:text-3xl">
             {page.title}
           </h1>
-          {isPageUnderConstruction(page) && <UnderConstructionBanner />}
+          {(isPageUnderConstruction(page) || doc?.underDevelopment) && (
+            <UnderConstructionBanner />
+          )}
           {doc ? (
-            doc.underDevelopment ? (
-              <p className="rounded-lg border border-border bg-card px-4 py-6 text-muted-foreground">
-                {t("reader.comingSoon")}
-              </p>
-            ) : (
-              <BlockRenderer blocks={doc.blocks} />
-            )
+            <BlockRenderer blocks={doc.blocks} />
           ) : (
             <div className="space-y-3" aria-busy="true">
               <Skeleton className="h-4 w-full" />

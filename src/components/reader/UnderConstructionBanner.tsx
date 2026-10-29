@@ -3,7 +3,8 @@ import { Construction } from "lucide-react";
 
 /**
  * Non-blocking notice shown above content that hasn't met the quality bar yet.
- * Render it when isPageUnderConstruction / isCoverUnderConstruction is true.
+ * Render it when isPageUnderConstruction / isCoverUnderConstruction is true,
+ * or when the page carries the draft marker (PageDoc.underDevelopment).
  */
 export function UnderConstructionBanner() {
   const { t } = useTranslation();
