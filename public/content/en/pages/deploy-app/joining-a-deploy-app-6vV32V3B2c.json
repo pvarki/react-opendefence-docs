@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 1,
+  "id": "a9bcfda1-6bbb-44dd-8d56-68e68adeb6a6",
+  "slug": "joining-a-deploy-app-6vV32V3B2c",
+  "collection": "deploy-app",
+  "locale": "en",
+  "title": "Joining a Deploy App",
+  "breadcrumb": [
+    "Platforms",
+    "macOS",
+    "User Guide",
+    "Joining a Deploy App"
+  ],
+  "createdAt": "2026-10-22T12:32:09.202Z",
+  "updatedAt": "2026-10-22T13:25:44.109Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/deploy-app/joining-a-deploy-app-6vV32V3B2c",
+    "fi": "/fi/deploy-app/liittyminen-deploy-appiin-8n0VWdIQS7",
+    "sv": "/sv/deploy-app/ga-med-i-en-deploy-app-PgNnzg4Vyj"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Open your invite",
+          "layout": "image-left",
+          "html": "<p>Open the invite link or scan the QR code you got. Deploy App opens with your invite code filled in.</p>\n<ul>\n<li>Only got a code? Type it in <strong>Enter your code</strong> and press <strong>Login with Code</strong>.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/e632e30c9ebedee0.webp",
+              "width": 1614,
+              "height": 1600
+            }
+          ]
+        },
+        {
+          "title": "Choose your callsign",
+          "layout": "image-left",
+          "html": "<p>Type a callsign your unit knows you by and press <strong>Continue</strong>.</p>\n<ul>\n<li>You use the same callsign in every service.</li>\n<li>It is also your certificate password.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/29286f194fadfa90.webp",
+              "width": 1612,
+              "height": 1454
+            }
+          ]
+        },
+        {
+          "title": "Get approved",
+          "layout": "image-left",
+          "html": "<p>An admin has to approve you.</p>\n<ul>\n<li>Admin next to you: show them the QR code.</li>\n<li>Admin somewhere else: press <strong>Copy link</strong> and paste it into a message to your admin.</li>\n<li>Leave the page open. It moves on by itself once you are approved.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/4ab5aee93f3e0622.webp",
+              "width": 1920,
+              "height": 1752
+            }
+          ]
+        },
+        {
+          "title": "Get your key",
+          "layout": "image-left",
+          "html": "<p>Press <strong>Download key</strong>. The key is a file you install on this Mac.</p>\n<ul>\n<li>Safari asks the first time. Press <strong>Allow</strong>.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/af9d9be5ba3950d5.webp",
+              "width": 2060,
+              "height": 1576
+            }
+          ]
+        },
+        {
+          "title": "Install the key",
+          "layout": "image-left",
+          "html": "<ol>\n<li>Open the downloaded file.</li>\n<li>Unlock with Touch ID or your Mac password.</li>\n<li>Enter your callsign as the password and press <strong>OK</strong>.</li>\n</ol>\n<p>Keychain Access opens. Come back to the browser and press <strong>Installed – continue</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/67969354afeca9bc.webp",
+              "width": 2068,
+              "height": 2032
+            }
+          ]
+        },
+        {
+          "title": "Keychain: open the certificate",
+          "layout": "image-left",
+          "html": "<p>In Keychain Access:</p>\n<ol>\n<li>Choose <strong>My Certificates</strong>.</li>\n<li>Search for your callsign. ⌘V pastes it.</li>\n<li>Double-click your callsign row.</li>\n</ol>\n<p>The certificate only shows up after you search for it. Press <strong>Done – next</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/ceb71a0e3fe72db7.webp",
+              "width": 2060,
+              "height": 1832
+            }
+          ]
+        },
+        {
+          "title": "Keychain: trust the certificate",
+          "layout": "image-left",
+          "html": "<ol>\n<li>Open <strong>Trust</strong>.</li>\n<li>Set <strong>When using this certificate</strong> to <strong>Always Trust</strong>.</li>\n<li>Close the window and confirm with Touch ID or your password.</li>\n</ol>\n<p>Press <strong>Done – next</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/12815dd675726628.webp",
+              "width": 2060,
+              "height": 1752
+            }
+          ]
+        },
+        {
+          "title": "Keychain: allow use of the key",
+          "layout": "image-left",
+          "html": "<ol>\n<li>Open the arrow left of your callsign row.</li>\n<li>Double-click <strong>Imported Private Key</strong>.</li>\n<li>Choose <strong>Access Control</strong>.</li>\n<li>Select <strong>Allow all applications to access this item</strong>.</li>\n<li>Press <strong>Save Changes</strong>. Enter your Mac password (not Touch ID) and press <strong>Allow</strong>.</li>\n<li>Close the window and Keychain Access.</li>\n</ol>\n<p>Press <strong>Ready – continue</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/dcaac53b130e8bd1.webp",
+              "width": 2060,
+              "height": 2052
+            }
+          ]
+        },
+        {
+          "title": "Go to the service",
+          "layout": "image-left",
+          "html": "<p>Press <strong>Go to the service</strong>. Select your callsign and press <strong>OK</strong>.</p>\n<ul>\n<li>If your Mac asks for a password, enter your Mac password and choose <strong>Always Allow</strong>.</li>\n<li>In Safari, press <strong>Go to the service</strong>, then <strong>Login with Certificate</strong>. Select your callsign and press <strong>Continue</strong>.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/4b884a3c31c883b1.webp",
+              "width": 2060,
+              "height": 1736
+            }
+          ]
+        },
+        {
+          "title": "You're in",
+          "layout": "image-left",
+          "html": "<p>Deploy App opens. A short guide shows the first time. Press <strong>Next</strong> to go through it, or close it.</p>\n<ul>\n<li>Tick <strong>Do not show me guides automatically</strong> if you don't want guides to pop up.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/9cf2cf67b68e1aea.webp",
+              "width": 2200,
+              "height": 2200
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

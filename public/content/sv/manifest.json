@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "locale": "sv",
-  "generatedAt": "2026-09-12T20:41:11.673Z",
+  "generatedAt": "2026-10-29T11:59:13.033Z",
   "collections": [
     {
       "slug": "deploy-app",
@@ -27,6 +27,18 @@
           "label": "Windows",
           "platform": "windows",
           "os": "windows"
+        },
+        {
+          "id": "macos-r83HBftnNj",
+          "label": "macOS",
+          "platform": "macos",
+          "os": "macos"
+        },
+        {
+          "id": "linux-BE02dZtlab",
+          "label": "Linux",
+          "platform": "linux",
+          "os": "linux"
         }
       ]
     },
@@ -148,7 +160,7 @@
         "Gå med i en Deploy App"
       ],
       "path": "/content/sv/pages/deploy-app/ga-med-i-en-deploy-app-Weat7nbJuF.json",
-      "updatedAt": "2026-02-18T05:50:24.087Z",
+      "updatedAt": "2026-10-22T13:25:49.432Z",
       "order": 1,
       "platform": "android",
       "clientId": "android-yFEMlNyGOI",
@@ -205,7 +217,7 @@
         "Första inloggningen"
       ],
       "path": "/content/sv/pages/deploy-app/forsta-inloggningen-X4xEQb7jxr.json",
-      "updatedAt": "2026-02-25T07:33:30.334Z",
+      "updatedAt": "2026-10-22T13:25:49.890Z",
       "order": 4,
       "platform": "android",
       "clientId": "android-yFEMlNyGOI",
@@ -281,7 +293,7 @@
         "Ansluta till en Deploy App"
       ],
       "path": "/content/sv/pages/deploy-app/ansluta-till-en-deploy-app-rDiRCLSL8s.json",
-      "updatedAt": "2026-06-18T20:38:55.103Z",
+      "updatedAt": "2026-10-22T13:25:50.253Z",
       "order": 8,
       "platform": "ios",
       "clientId": "ios-DxdsS15Cw5",
@@ -338,7 +350,7 @@
         "Första inloggningen"
       ],
       "path": "/content/sv/pages/deploy-app/forsta-inloggningen-ZynVs60T8M.json",
-      "updatedAt": "2026-06-18T20:39:01.079Z",
+      "updatedAt": "2026-10-22T13:25:50.596Z",
       "order": 11,
       "platform": "ios",
       "clientId": "ios-DxdsS15Cw5",
@@ -414,7 +426,7 @@
         "Anslut till en Deploy App"
       ],
       "path": "/content/sv/pages/deploy-app/anslut-till-en-deploy-app-LSYhrD19yJ.json",
-      "updatedAt": "2026-06-18T20:39:11.609Z",
+      "updatedAt": "2026-10-22T13:25:50.950Z",
       "order": 15,
       "platform": "windows",
       "clientId": "windows-50bH36irMT",
@@ -433,11 +445,87 @@
         "Första inloggningen"
       ],
       "path": "/content/sv/pages/deploy-app/forsta-inloggningen-30j0MZLvzy.json",
-      "updatedAt": "2026-06-18T20:39:47.811Z",
+      "updatedAt": "2026-10-22T13:25:51.294Z",
       "order": 16,
       "platform": "windows",
       "clientId": "windows-50bH36irMT",
       "chapterId": "administratorsguide-fYeYwXUSeF",
+      "chapterLabel": "Administratörsguide"
+    },
+    {
+      "id": "ce35da37-49ac-4b8b-9e0d-76b034669cb4",
+      "slug": "ga-med-i-en-deploy-app-PgNnzg4Vyj",
+      "collection": "deploy-app",
+      "title": "Gå med i en Deploy App",
+      "breadcrumb": [
+        "Platforms",
+        "macOS",
+        "Användarguide",
+        "Gå med i en Deploy App"
+      ],
+      "path": "/content/sv/pages/deploy-app/ga-med-i-en-deploy-app-PgNnzg4Vyj.json",
+      "updatedAt": "2026-10-22T13:25:51.681Z",
+      "order": 17,
+      "platform": "macos",
+      "clientId": "macos-r83HBftnNj",
+      "chapterId": "anvandarguide-e44lJN5YeL",
+      "chapterLabel": "Användarguide"
+    },
+    {
+      "id": "64f82de8-6c25-4046-a664-714df0cfc6c2",
+      "slug": "forsta-inloggningen-H4UfzjTACY",
+      "collection": "deploy-app",
+      "title": "Första inloggningen",
+      "breadcrumb": [
+        "Platforms",
+        "macOS",
+        "Administratörsguide",
+        "Första inloggningen"
+      ],
+      "path": "/content/sv/pages/deploy-app/forsta-inloggningen-H4UfzjTACY.json",
+      "updatedAt": "2026-10-22T13:25:52.026Z",
+      "order": 18,
+      "platform": "macos",
+      "clientId": "macos-r83HBftnNj",
+      "chapterId": "administratorsguide-QWPQakirgn",
+      "chapterLabel": "Administratörsguide"
+    },
+    {
+      "id": "8721c13d-b6e8-459a-8ea7-363c337614c0",
+      "slug": "ga-med-i-en-deploy-app-lacRVxkAna",
+      "collection": "deploy-app",
+      "title": "Gå med i en Deploy App",
+      "breadcrumb": [
+        "Platforms",
+        "Linux",
+        "Användarguide",
+        "Gå med i en Deploy App"
+      ],
+      "path": "/content/sv/pages/deploy-app/ga-med-i-en-deploy-app-lacRVxkAna.json",
+      "updatedAt": "2026-10-22T13:25:52.396Z",
+      "order": 19,
+      "platform": "linux",
+      "clientId": "linux-BE02dZtlab",
+      "chapterId": "anvandarguide-MB1QM3EmzM",
+      "chapterLabel": "Användarguide"
+    },
+    {
+      "id": "1abcfe06-98d3-4afa-9a3d-c97d834109b6",
+      "slug": "forsta-inloggningen-XyuCJZR2T3",
+      "collection": "deploy-app",
+      "title": "Första inloggningen",
+      "breadcrumb": [
+        "Platforms",
+        "Linux",
+        "Administratörsguide",
+        "Första inloggningen"
+      ],
+      "path": "/content/sv/pages/deploy-app/forsta-inloggningen-XyuCJZR2T3.json",
+      "updatedAt": "2026-10-22T13:25:52.764Z",
+      "order": 20,
+      "platform": "linux",
+      "clientId": "linux-BE02dZtlab",
+      "chapterId": "administratorsguide-EN6YC81pX9",
       "chapterLabel": "Administratörsguide"
     },
     {

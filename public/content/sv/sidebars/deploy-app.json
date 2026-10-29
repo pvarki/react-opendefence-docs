@@ -152,6 +152,62 @@
           "slug": "forsta-inloggningen-30j0MZLvzy"
         }
       ]
+    },
+    {
+      "type": "group",
+      "id": "anvandarguide-e44lJN5YeL",
+      "label": "Användarguide",
+      "clientId": "macos-r83HBftnNj",
+      "children": [
+        {
+          "type": "doc",
+          "id": "ga-med-i-en-deploy-app-PgNnzg4Vyj",
+          "label": "Gå med i en Deploy App",
+          "slug": "ga-med-i-en-deploy-app-PgNnzg4Vyj"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "administratorsguide-QWPQakirgn",
+      "label": "Administratörsguide",
+      "clientId": "macos-r83HBftnNj",
+      "children": [
+        {
+          "type": "doc",
+          "id": "forsta-inloggningen-H4UfzjTACY",
+          "label": "Första inloggningen",
+          "slug": "forsta-inloggningen-H4UfzjTACY"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "anvandarguide-MB1QM3EmzM",
+      "label": "Användarguide",
+      "clientId": "linux-BE02dZtlab",
+      "children": [
+        {
+          "type": "doc",
+          "id": "ga-med-i-en-deploy-app-lacRVxkAna",
+          "label": "Gå med i en Deploy App",
+          "slug": "ga-med-i-en-deploy-app-lacRVxkAna"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "administratorsguide-EN6YC81pX9",
+      "label": "Administratörsguide",
+      "clientId": "linux-BE02dZtlab",
+      "children": [
+        {
+          "type": "doc",
+          "id": "forsta-inloggningen-XyuCJZR2T3",
+          "label": "Första inloggningen",
+          "slug": "forsta-inloggningen-XyuCJZR2T3"
+        }
+      ]
     }
   ]
 }

@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "id": "1abcfe06-98d3-4afa-9a3d-c97d834109b6",
+  "slug": "forsta-inloggningen-XyuCJZR2T3",
+  "collection": "deploy-app",
+  "locale": "sv",
+  "title": "Första inloggningen",
+  "breadcrumb": [
+    "Platforms",
+    "Linux",
+    "Administratörsguide",
+    "Första inloggningen"
+  ],
+  "createdAt": "2026-10-22T12:32:18.178Z",
+  "updatedAt": "2026-10-22T13:25:52.764Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/deploy-app/first-login-2tKlcGkU7E",
+    "fi": "/fi/deploy-app/ensimmainen-kirjautuminen-GpGTPGBu3t",
+    "sv": "/sv/deploy-app/forsta-inloggningen-XyuCJZR2T3"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Logga in med koden för första administratören",
+          "layout": "image-left",
+          "html": "<p>Öppna adressen till din Deploy App. Skriv koden för första administratören som du fått av tjänsteleverantören i <strong>Ange din kod</strong> och tryck <strong>Logga in med kod</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/e91cd561c15608a8.webp",
+              "width": 1614,
+              "height": 1600
+            }
+          ]
+        },
+        {
+          "title": "Välj din anropssignal",
+          "layout": "image-left",
+          "html": "<p>Skriv en anropssignal som din enhet känner igen dig på och tryck <strong>Fortsätt</strong>.</p>\n<ul>\n<li>Du använder samma anropssignal i alla tjänster.</li>\n<li>Den är också lösenordet till ditt certifikat.</li>\n<li>Som första administratör hoppar du över väntrummet.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/e9c6b72ad64e1c36.webp",
+              "width": 1612,
+              "height": 1454
+            }
+          ]
+        },
+        {
+          "title": "Hämta din nyckel",
+          "layout": "image-left",
+          "html": "<p>Tryck <strong>Ladda ner nyckel</strong>. Nyckeln är en fil som du lägger till i webbläsaren.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/1dfc4ac566413382.webp",
+              "width": 2060,
+              "height": 1576
+            }
+          ]
+        },
+        {
+          "title": "Lägg till nyckeln i webbläsaren",
+          "layout": "image-left",
+          "html": "<ol>\n<li>Tryck <strong>Kopiera adress</strong> och öppna den i ett nytt fönster: <strong>Ctrl+N</strong>, <strong>Ctrl+V</strong>, <strong>Enter</strong>.</li>\n<li>Tryck <strong>Importera</strong>.</li>\n<li>Öppna Hämtningar, välj din nyckelfil och tryck <strong>Välj</strong>.</li>\n<li>Ange din anropssignal som lösenord och tryck <strong>OK</strong>.</li>\n<li>Kom tillbaka till det här fönstret och tryck <strong>Installerad – fortsätt</strong>.</li>\n</ol>\n<ul>\n<li>I Firefox är stegen liknande. Deploy App visar dem för Firefox.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/b9b5df0274d683d1.webp",
+              "width": 2068,
+              "height": 1906
+            }
+          ]
+        },
+        {
+          "title": "Gå till tjänsten",
+          "layout": "image-left",
+          "html": "<p>Tryck <strong>Gå till tjänsten</strong>. Webbläsaren ber om ett certifikat och din anropssignal är redan vald. Tryck <strong>OK</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/ae071b7996fb7cc7.webp",
+              "width": 2060,
+              "height": 1682
+            }
+          ]
+        },
+        {
+          "title": "Du är inne",
+          "layout": "image-left",
+          "html": "<p>Deploy App öppnas med administratörsverktygen. En kort guide visas första gången. Tryck <strong>Nästa</strong> för att gå igenom den, eller stäng den.</p>\n<ul>\n<li>Lägg sedan till dina användare. Se <strong>Lägga till användare</strong>.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/72d0e1e3c87bbd49.webp",
+              "width": 2200,
+              "height": 2200
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

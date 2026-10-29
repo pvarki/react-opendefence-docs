@@ -69,6 +69,20 @@
     },
     {
       "type": "group",
+      "id": "android-MENReFAfCN",
+      "label": "Android",
+      "clientId": "android-MENReFAfCN",
+      "children": [
+        {
+          "type": "doc",
+          "id": "advanced-iB16OtgQbJ",
+          "label": "Advanced",
+          "slug": "advanced-iB16OtgQbJ"
+        }
+      ]
+    },
+    {
+      "type": "group",
       "id": "user-guide-aRTF5enbWV",
       "label": "User Guide",
       "clientId": "ios-8ux4fDfFeI",
@@ -150,6 +164,62 @@
           "id": "admin-first-login-1wjrnFERNt",
           "label": "Admin First Login",
           "slug": "admin-first-login-1wjrnFERNt"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "user-guide-NcVBuKVflZ",
+      "label": "User Guide",
+      "clientId": "macos-z5DmedU8xk",
+      "children": [
+        {
+          "type": "doc",
+          "id": "joining-a-deploy-app-6vV32V3B2c",
+          "label": "Joining a Deploy App",
+          "slug": "joining-a-deploy-app-6vV32V3B2c"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "admin-guide-zqZyytPQuA",
+      "label": "Admin Guide",
+      "clientId": "macos-z5DmedU8xk",
+      "children": [
+        {
+          "type": "doc",
+          "id": "first-login-bi15QH96SC",
+          "label": "First Login",
+          "slug": "first-login-bi15QH96SC"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "user-guide-s0mbljRohP",
+      "label": "User Guide",
+      "clientId": "linux-1sNJpibOcB",
+      "children": [
+        {
+          "type": "doc",
+          "id": "joining-a-deploy-app-0kPsFcJ37S",
+          "label": "Joining a Deploy App",
+          "slug": "joining-a-deploy-app-0kPsFcJ37S"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "admin-guide-XWvSppdQcs",
+      "label": "Admin Guide",
+      "clientId": "linux-1sNJpibOcB",
+      "children": [
+        {
+          "type": "doc",
+          "id": "first-login-2tKlcGkU7E",
+          "label": "First Login",
+          "slug": "first-login-2tKlcGkU7E"
         }
       ]
     }
