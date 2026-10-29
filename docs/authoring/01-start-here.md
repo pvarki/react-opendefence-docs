@@ -74,6 +74,31 @@ and the page goes live on the next sync.
 This means you can draft freely in Outline without half-finished
 pages leaking to readers.
 
+## Not meant for readers? Hide it
+
+Put this exact phrase anywhere in the document body, a code block
+included:
+
+```
+(This tab should not be shown)
+```
+
+The page is then left out of the site completely: no sidebar entry,
+no page, no search result. Use it for old, badly unfinished or wrong
+content. The same rules as above apply: English in every language,
+any letter case, and a translation such as
+`(Tätä välilehteä ei pitäisi näyttää)` hides nothing and gets a
+`marker-variant` warning.
+
+- A sidebar group whose pages are all hidden disappears too.
+- The marker on an organizer doc does nothing: organizers are not
+  pages, so the pages under it stay visible. The sync log says so.
+- A link to a hidden page turns into plain text, and the sync log
+  names the page that has it. A link to it in a Translations list is
+  dropped without a warning.
+- The sync log lists hidden pages that still have content besides
+  the marker, so nothing useful stays hidden by accident.
+
 ## Organizer markers: platforms, clients and section headings
 
 Organizer docs (docs that only nest other docs) shape navigation. Three

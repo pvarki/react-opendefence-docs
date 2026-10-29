@@ -56,6 +56,12 @@ The codes you'll actually see:
 (There are also `invalid-page` and `missing-page-file` errors — those
 indicate pipeline trouble, not authoring mistakes. Ping a developer.)
 
+A few warnings come from the sync run itself, not from the report:
+hidden pages that still have content, links to hidden pages, and
+markers on organizer docs. Find them in the run's log under
+**Actions** → **Scheduled Outline Sync** (lines marked ⚠ and the
+"Warnings" list in the completion report).
+
 ## Who merges, and when it deploys
 
 A developer reviews the sync PR — mainly skimming the report for new
