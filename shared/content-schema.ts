@@ -233,8 +233,6 @@ export const ManifestPageSchema = z.object({
   updatedAt: z.string(),
   /** Position in the collection's reading order (0 = book cover side). */
   order: z.number().int().nonnegative(),
-  /** Under development / explicitly hidden: excluded from reading order & search. */
-  hidden: z.boolean().optional(),
   /** Platform this page belongs to; absent = shown on every platform. */
   platform: PlatformSchema.optional(),
   /**

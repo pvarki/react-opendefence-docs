@@ -125,9 +125,10 @@ describe("rebuildLocaleManifest", () => {
     expect(manifest!.pages.map((p) => p.order)).toEqual([0, 1, 2]);
   });
 
-  it("derives hidden from underDevelopment and carries platform", () => {
+  it("keeps draft pages in the reading order and carries platform", () => {
     const c = manifest!.pages.find((p) => p.slug === "c-Cc33333333");
-    expect(c?.hidden).toBe(true);
+    expect(c).toBeDefined();
+    expect(c).not.toHaveProperty("hidden");
     const a = manifest!.pages.find((p) => p.slug === "a-Aa11111111");
     expect(a?.platform).toBe("ios");
   });

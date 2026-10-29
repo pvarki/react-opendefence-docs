@@ -311,8 +311,8 @@ async function main() {
       targets.push(page);
     }
   } else {
-    // All mode: every visible page; pages without slides are skipped silently.
-    targets = manifest.pages.filter((p) => !p.hidden);
+    // All mode: every page; pages without slides are skipped silently.
+    targets = manifest.pages;
   }
 
   await ensureDirAsync(outDir);

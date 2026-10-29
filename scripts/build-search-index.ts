@@ -171,7 +171,6 @@ async function main() {
     const manifest = LocaleManifestSchema.parse(JSON.parse(manifestRaw));
 
     for (const page of manifest.pages) {
-      if (page.hidden) continue;
       const doc = PageDocSchema.parse(
         JSON.parse(
           await fs.readFile(

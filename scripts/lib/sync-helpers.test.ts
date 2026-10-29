@@ -110,19 +110,13 @@ describe("buildBookManifestPages", () => {
     const previous = manifestPage({
       id: "id-b",
       slug: "b",
-      hidden: true,
       updatedAt: "old",
       order: 7,
     });
     const failedPrev = manifestPage({ id: "id-c", slug: "c", order: 9 });
 
     const inputs: BookEntryInput[] = [
-      {
-        ref: ref("a"),
-        updatedAt: "t-a",
-        status: "processed",
-        underDevelopment: true,
-      },
+      { ref: ref("a"), updatedAt: "t-a", status: "processed" },
       { ref: ref("b"), updatedAt: "t-b", status: "skipped", previous },
       {
         ref: ref("c"),
@@ -137,15 +131,14 @@ describe("buildBookManifestPages", () => {
     expect(pages.map((p) => p.slug)).toEqual(["a", "b", "c"]);
     expect(pages.map((p) => p.order)).toEqual([0, 1, 2]);
 
-    // processed: hidden from emit result, fresh updatedAt
+    // processed: fresh updatedAt
     expect(pages[0]).toMatchObject({
       id: "id-a",
-      hidden: true,
       updatedAt: "t-a",
       path: "/content/en/pages/deploy-app/a.json",
     });
-    // skipped: hidden carried from previous entry, fresh updatedAt
-    expect(pages[1]).toMatchObject({ hidden: true, updatedAt: "t-b" });
+    // skipped: previous entry's fields, fresh updatedAt
+    expect(pages[1]).toMatchObject({ id: "id-b", updatedAt: "t-b" });
     // failed: previous entry preserved (retried next run), reordered
     expect(pages[2]).toMatchObject({
       id: "id-c",

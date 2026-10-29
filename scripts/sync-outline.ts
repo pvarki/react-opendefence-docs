@@ -222,7 +222,6 @@ interface SyncStats {
 
 interface ProcessResult {
   images: number;
-  underDevelopment: boolean;
   /** Text of each link that pointed to a hidden page (now plain text). */
   hiddenLinks: string[];
   translationLinks: Partial<Record<Locale, string>>;
@@ -302,7 +301,6 @@ async function processDocument(
 
   return {
     images: processedImages.size,
-    underDevelopment: emitted.underDevelopment,
     hiddenLinks,
     translationLinks,
     title: ref.title,
@@ -668,7 +666,6 @@ async function syncCollection(
       ref,
       updatedAt: documentInfoCache.get(ref.docId)?.updatedAt,
       status: docStatus.get(ref.docId) ?? "failed",
-      underDevelopment: processResults.get(ref.docId)?.underDevelopment,
       previous: prevById.get(ref.docId),
     }));
     const entries = buildBookManifestPages(

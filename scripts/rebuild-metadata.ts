@@ -154,7 +154,6 @@ export async function rebuildLocaleManifest(
           path: `/content/${locale}/pages/${page.collection}/${page.slug}.json`,
           updatedAt: page.updatedAt,
           order,
-          ...(page.underDevelopment ? { hidden: true } : {}),
           // platform only exists in the manifest (parsed from the Outline
           // title at sync time) — carry it over from the previous manifest.
           ...(prev?.platform ? { platform: prev.platform } : {}),
