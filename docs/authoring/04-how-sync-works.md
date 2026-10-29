@@ -51,6 +51,7 @@ The codes you'll actually see:
 | `legacy-slideset-format`      | A slideshow still uses the old code-fence format — convert it to `META: slides`.                    |
 | `slideset-step-missing-image` | A step in a slideset expects an image but has none.                                                 |
 | `empty-doc`                   | The page has no content at all.                                                                     |
+| `marker-variant`              | A marker in the wrong form, e.g. translated, reworded or mistyped — use the official phrase.        |
 
 (There are also `invalid-page` and `missing-page-file` errors — those
 indicate pipeline trouble, not authoring mistakes. Ping a developer.)

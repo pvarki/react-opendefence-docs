@@ -45,11 +45,13 @@ body and the page renders as "Coming Soon", hidden from reading
 order and search:
 
 ```
-(this page is under development)
+(This tab is under development)
 ```
 
-`(this tab is under development)` works too. Delete the line when
-the page is ready.
+Don't translate it: the marker is the same English phrase in fi and
+sv docs, in any letter case. Other wordings and translations are not
+recognised, and validation reports them as `marker-variant`. Delete
+the line when the page is ready.
 
 ## Images
 
