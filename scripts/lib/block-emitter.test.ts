@@ -24,7 +24,7 @@ describe("emitBlocks end-to-end", () => {
   const FIXTURE = [
     "# Page Title",
     "",
-    "(this page is under development)",
+    "(This tab is under development)",
     "",
     "---",
     "",
@@ -108,6 +108,28 @@ describe("emitBlocks end-to-end", () => {
       .map((b) => b.html)
       .join("");
     expect(allHtml.toLowerCase()).not.toContain("under development");
+  });
+
+  it("does not treat other wordings as the under-development marker", async () => {
+    const { blocks, underDevelopment } = await emitBlocks(
+      "Body\n\n(this page is under development)\n",
+      ctx(),
+    );
+    expect(underDevelopment).toBe(false);
+    expect(JSON.stringify(blocks)).toContain(
+      "(this page is under development)",
+    );
+  });
+
+  it("strips the marker in any letter case, also mid-sentence", async () => {
+    const { blocks, underDevelopment } = await emitBlocks(
+      "Body (THIS TAB IS UNDER DEVELOPMENT) text\n",
+      ctx(),
+    );
+    expect(underDevelopment).toBe(true);
+    expect(JSON.stringify(blocks).toLowerCase()).not.toContain(
+      "under development",
+    );
   });
 
   it("strips the first H1, the Translations block and the post-triple-HR tail", async () => {

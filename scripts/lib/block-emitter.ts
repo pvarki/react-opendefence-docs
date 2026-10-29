@@ -31,6 +31,7 @@ import type {
   Slide,
   SlideImage,
 } from "../../shared/content-schema";
+import { markerSource, UNDER_DEVELOPMENT_MARKER } from "./authoring-markers";
 import { extractCanonicalSlideset } from "./slideset/canonical";
 import { extractLegacySlidesets } from "./slideset/legacy";
 import type { RawSlideset } from "./slideset/types";
@@ -202,17 +203,15 @@ const mdParser = unified().use(remarkParse).use(remarkGfm);
  * organizer (platform) doc bodies, which never reach emitBlocks.
  */
 export function isUnderDevelopment(content: string): boolean {
-  const lower = content.toLowerCase();
-  return (
-    lower.includes("(this tab is under development)") ||
-    lower.includes("(this page is under development)")
-  );
+  return content.toLowerCase().includes(UNDER_DEVELOPMENT_MARKER.toLowerCase());
 }
+
+const UNDER_DEVELOPMENT = markerSource(UNDER_DEVELOPMENT_MARKER);
 
 function stripUnderDevelopmentMarkers(md: string): string {
   return md
-    .replace(/^\(this (?:tab|page) is under development\)\s*$/gim, "")
-    .replace(/\(this (?:tab|page) is under development\)/gi, "");
+    .replace(new RegExp(`^${UNDER_DEVELOPMENT}\\s*$`, "gim"), "")
+    .replace(new RegExp(UNDER_DEVELOPMENT, "gi"), "");
 }
 
 /** Remove the "* Translations:" block (already harvested by extractTranslationLinks). */

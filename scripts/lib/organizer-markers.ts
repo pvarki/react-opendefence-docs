@@ -23,10 +23,9 @@
  *   META: incomplete            — this client's content has gaps; readers
  *                                 see a red "Incomplete" tag in platform
  *                                 lists. "(incomplete)" anywhere in the body
- *                                 and the legacy under-development phrases
- *                                 work too.
- *   (this tab/page is under development)
- *                               — legacy form of the same flag.
+ *                                 and the under-development marker work too.
+ *   (This tab is under development)
+ *                               — the under-development marker; same flag.
  */
 import { PLATFORMS, type Platform } from "../../shared/content-schema";
 import { isUnderDevelopment } from "./block-emitter";
