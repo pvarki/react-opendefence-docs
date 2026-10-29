@@ -1,0 +1,73 @@
+name: PR preview
+
+# Serves each PR's build at
+# https://pvarki.github.io/react-opendefence-docs-preview/pr-<N>/ and removes it
+# when the PR closes. Production (docs.opendefence.fi) is untouched: only
+# deploy-pages.yml deploys there, and its github-pages environment allows main only.
+# Needs the public repo pvarki/react-opendefence-docs-preview serving Pages from
+# its gh-pages branch, and that repo's write deploy key as PREVIEW_DEPLOY_KEY here.
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, closed]
+
+permissions:
+  contents: read
+  pull-requests: write
+
+concurrency:
+  group: pr-preview-${{ github.event.number }}
+  cancel-in-progress: true
+
+env:
+  PREVIEW_DIR: pr-${{ github.event.number }}
+  PREVIEW_URL: https://pvarki.github.io/react-opendefence-docs-preview/pr-${{ github.event.number }}/
+
+jobs:
+  preview:
+    # Fork PRs get no secrets, so previews are for branches in this repo only.
+    if: github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        if: github.event.action != 'closed'
+      - uses: pnpm/action-setup@v4
+        if: github.event.action != 'closed'
+      - uses: actions/setup-node@v4
+        if: github.event.action != 'closed'
+        with:
+          node-version: 22
+          cache: pnpm
+      - name: Build
+        if: github.event.action != 'closed'
+        run: |
+          pnpm install --frozen-lockfile
+          pnpm build
+        env:
+          BASE_PATH: /react-opendefence-docs-preview/${{ env.PREVIEW_DIR }}/
+          VITE_LANDING_URL: ${{ vars.LANDING_URL }}
+      - uses: actions/checkout@v4
+        with:
+          repository: pvarki/react-opendefence-docs-preview
+          ref: gh-pages
+          ssh-key: ${{ secrets.PREVIEW_DEPLOY_KEY }}
+          path: preview
+      # Other PRs push to their own folders, so a rejected push only needs a rebase.
+      - name: Publish
+        working-directory: preview
+        run: |
+          rm -rf "$PREVIEW_DIR"
+          if [ "${{ github.event.action }}" != closed ]; then cp -r ../dist "$PREVIEW_DIR"; fi
+          touch .nojekyll
+          git add -A
+          git -c user.name="github-actions[bot]" \
+            -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+            commit -q -m "${{ github.event.action }} $PREVIEW_DIR" || exit 0
+          for _ in 1 2 3; do git push -q && exit 0; git pull -q --rebase; done
+          exit 1
+      - name: Link the preview
+        if: github.event.action == 'opened' || github.event.action == 'reopened'
+        run: |
+          gh pr comment "${{ github.event.number }}" -R "${{ github.repository }}" --body "Preview: $PREVIEW_URL"
+        env:
+          GH_TOKEN: ${{ github.token }}
