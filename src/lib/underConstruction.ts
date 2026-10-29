@@ -7,7 +7,9 @@ import type { ManifestPage, Platform } from "@shared/content-schema";
  *   - { collection }                  → the whole book + all its pages
  *   - { collection, platform }        → only that platform's pages in the book
  *   - { collection, chapterIds }      → only those chapters' pages
- * Edit this list to flag/unflag views — no content re-sync needed.
+ * Edit this list to flag/unflag views — no content re-sync needed. A single
+ * page can also flag itself in Outline with the draft marker
+ * (PageDoc.underDevelopment).
  */
 interface Scope {
   /** Collection slug, e.g. "deploy-app" or "guides/tak-guide". */
