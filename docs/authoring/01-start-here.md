@@ -67,12 +67,15 @@ translation, are not recognised: they show up on the page as plain
 text, and validation warns about them as `marker-variant` (for
 organizer docs, the sync log warns).
 
-The page then renders as "Coming Soon" on the site and is excluded
-from the reading order and search. Remove the marker when you're done,
-and the page goes live on the next sync.
+The page is still published: readers see its content with an "Under
+construction" banner above it, in the language of the site they are
+reading, and the page stays in the reading order and search. Remove
+the marker when you're done, and the banner goes away on the next
+sync.
 
-This means you can draft freely in Outline without half-finished
-pages leaking to readers.
+So mark pages that readers can already use but that are not finished.
+A page that is not fit to read yet should be hidden instead (next
+section).
 
 ## Not meant for readers? Hide it
 
@@ -128,7 +131,7 @@ though both run on Android.
 1. Open the right collection in Outline.
 2. Create the document under the correct locale root (`en`, `fi`, `sv`).
 3. Drag it to the right spot in the sidebar.
-4. Add `(This tab is under development)` if it's a draft.
+4. Add `(This tab is under development)` if it's not finished yet.
 5. Write. Paste screenshots directly. Done.
 
 ## What's next

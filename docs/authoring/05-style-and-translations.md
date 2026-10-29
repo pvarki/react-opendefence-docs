@@ -41,8 +41,8 @@ the old `se` code still works, but don't start new docs with it.
 ## The under-development marker
 
 Drafting in the open is fine. Add this exact phrase anywhere in the
-body and the page renders as "Coming Soon", hidden from reading
-order and search:
+body and the page shows with an "Under construction" banner, still in
+the reading order and search:
 
 ```
 (This tab is under development)
