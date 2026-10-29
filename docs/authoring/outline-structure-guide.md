@@ -78,7 +78,7 @@ Renders the organizer as a non-clickable **section heading** in the sidebar, gro
 META: incomplete
 ```
 
-Marks a platform or chapter as work in progress. Shows a red "Incomplete" tag in the platform selector and hides pages from the reading order.
+Marks a platform or chapter as work in progress. Shows a red "Incomplete" tag in the platform selector; the pages under it stay in the reading order.
 
 ### In any leaf page body
 
