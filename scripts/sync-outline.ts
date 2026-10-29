@@ -30,7 +30,11 @@ import {
   normalizeOutlineMarkdown,
   extractTranslationLinks,
 } from "./lib/outline-normalizer";
-import { findMarkerVariants } from "./lib/authoring-markers";
+import {
+  findMarkerVariants,
+  hasContentBesidesHideMarker,
+  hasHideMarker,
+} from "./lib/authoring-markers";
 import { emitBlocks } from "./lib/block-emitter";
 import {
   parseOrganizerMarkers,
@@ -40,6 +44,7 @@ import { createTimer, formatDuration } from "./lib/utils";
 import {
   buildBook,
   indexDocRoutes,
+  pruneHiddenPages,
   type BookPageRef,
   type OutlineNavNode,
 } from "./lib/sidebar-generator";
@@ -306,7 +311,8 @@ interface BookSyncResult {
   clients: ClientInfo[];
 }
 
-// Sync a single collection across all locales using a pre-fetched structure.
+// Sync a single collection across all locales using a pre-fetched structure
+// (hidden pages already pruned).
 async function syncCollection(
   client: OutlineClient,
   collection: CollectionConfig,
@@ -392,6 +398,11 @@ async function syncCollection(
               `"${title}": "${found}" looks like the marker "${official}", if it is meant as one write it exactly like that`,
             );
           }
+          if (hasHideMarker(body)) {
+            markerWarnings.push(
+              `"${title}": the hide marker does nothing on an organizer, its pages stay visible`,
+            );
+          }
         } catch {
           // Best-effort: an unreadable organizer just has no markers.
           organizerMarkersCache.set(docId, {
@@ -453,17 +464,6 @@ async function syncCollection(
         ? { underDevelopment: true }
         : {}),
     }));
-
-    // Pre-fetch all document info in parallel to populate cache
-    const infoSpinner = createSpinner(
-      `Fetching document info for ${locale} (${book.readingOrder.length} docs)`,
-      args.ci,
-    );
-    const infoTasks = book.readingOrder.map(
-      (ref) => () => getCachedDocumentInfo(client, ref.docId),
-    );
-    await runWithConcurrency(infoTasks, INFO_CONCURRENCY);
-    infoSpinner.succeed(`Document info fetched for ${locale}`);
 
     // Previous manifest entries by document id (slug renames still match).
     const prevById = new Map<string, ManifestPage>();
@@ -845,19 +845,108 @@ async function main() {
           collection.slug,
         );
     structureCache.set(collection.collectionId, structure);
+  }
 
+  structureSpinner.succeed("Document structures collected");
+
+  // Hidden pages: leaves whose body carries the hide marker. documents.info
+  // returns the body, so one info call per page (cached for the incremental
+  // check) finds them before any sidebar, page or link is built.
+  const leaves: {
+    node: OutlineNavNode;
+    locale: Locale;
+    collection: CollectionConfig;
+  }[] = [];
+  const collectLeaves = (
+    node: OutlineNavNode,
+    locale: Locale,
+    collection: CollectionConfig,
+  ) => {
+    if (node.children.length === 0) leaves.push({ node, locale, collection });
+    for (const child of node.children) collectLeaves(child, locale, collection);
+  };
+  for (const collection of collectionsToSync) {
+    const structure = structureCache.get(collection.collectionId)!;
+    for (const locale of LOCALES) {
+      for (const child of structure[locale]?.children ?? []) {
+        collectLeaves(child as OutlineNavNode, locale, collection);
+      }
+    }
+  }
+
+  const infoSpinner = createSpinner(
+    `Fetching document info (${leaves.length} pages)`,
+    args.ci,
+  );
+  await runWithConcurrency(
+    leaves.map(
+      ({ node }) =>
+        () =>
+          getCachedDocumentInfo(client, node.id),
+    ),
+    INFO_CONCURRENCY,
+  );
+  infoSpinner.succeed(`Document info fetched (${leaves.length} pages)`);
+
+  const previousIds = new Set(
+    [...previousManifests.values()].flatMap(
+      (manifest) => manifest?.pages.map((p) => p.id) ?? [],
+    ),
+  );
+  const hiddenIds = new Set<string>();
+  const hiddenWithContent: string[] = [];
+  // Kept hidden only for lack of info (shown ones are reported as errors).
+  const keptHidden: string[] = [];
+  for (const { node, locale, collection } of leaves) {
+    const info = documentInfoCache.get(node.id);
+    // Without the body, a page keeps its previous state: shown if it was on
+    // the site, else hidden (a new page cannot sync without it anyway).
+    const isHidden = info
+      ? hasHideMarker(info.text)
+      : !previousIds.has(node.id);
+    if (!isHidden) continue;
+    hiddenIds.add(node.id);
+    if (!info) keptHidden.push(`${locale}/${collection.slug} "${node.title}"`);
+    if (info && hasContentBesidesHideMarker(info.text)) {
+      hiddenWithContent.push(`${locale}/${collection.slug} "${node.title}"`);
+    }
+  }
+  console.log(
+    `  ${chalk.blue("ℹ")} ${chalk.gray(`${hiddenIds.size} pages hidden by the hide marker`)}`,
+  );
+  for (const page of keptHidden) {
+    console.log(
+      `  ${chalk.yellow("⚠")} ${chalk.gray(`documents.info failed, kept hidden: ${page}`)}`,
+    );
+  }
+  for (const page of hiddenWithContent) {
+    console.log(
+      `  ${chalk.yellow("⚠")} ${chalk.gray(`Hidden page has content: ${page}`)}`,
+    );
+  }
+
+  // Prune hidden pages (and organizers left empty), then index the routes
+  // that remain: a link to a hidden page then has nowhere to go.
+  for (const collection of collectionsToSync) {
+    const structure = structureCache.get(collection.collectionId)!;
     for (const locale of LOCALES) {
       const root = structure[locale];
       if (!root) continue;
+      const pruned: OutlineNavNode = {
+        ...root,
+        children: pruneHiddenPages(root.children, hiddenIds),
+      };
+      structure[locale] = pruned;
       totalDocs += indexDocRoutes(
-        root as OutlineNavNode,
+        pruned,
         (slug) => `/${locale}/${collection.slug}/${slug}`,
         slugRouteIndex,
       );
     }
   }
-
-  structureSpinner.succeed(`Found ${chalk.bold(totalDocs)} total documents`);
+  console.log(
+    `  ${chalk.blue("ℹ")} ${chalk.gray(`${totalDocs} documents to sync`)}`,
+  );
 
   // Second pass: sync each collection (using cached structures)
   const syncedBooks = new Map<Locale, Map<string, ManifestPage[]>>();

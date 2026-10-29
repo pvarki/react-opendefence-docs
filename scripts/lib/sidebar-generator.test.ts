@@ -7,6 +7,7 @@ import {
   detectPlatform,
   indexDocRoutes,
   platformFromTitle,
+  pruneHiddenPages,
   slugFromUrl,
   type OutlineNavNode,
 } from "./sidebar-generator";
@@ -384,6 +385,23 @@ describe("label/title cleanup", () => {
     expect(index.has("root")).toBe(false);
     expect(index.has("parent-Qq2V1k9VZ2")).toBe(false);
     expect(index.has("1a4e123c-b1fc-4835-a345-6cc0b4b63eff")).toBe(false);
+  });
+
+  it("pruneHiddenPages drops hidden pages and emptied organizers only", () => {
+    const hiddenA = node("Overview", "overview-Hh11111111");
+    const hiddenB = node("Fighter", "fighter-Hh22222222");
+    const kept = node("Command Post", "command-post-Kk11111111");
+    const emptyOrganizer = node("Platforms", "platforms-Pp11111111");
+    const tree = [
+      node("Usage by Role", "usage-by-role-Uu11111111", [hiddenA, hiddenB]),
+      node("Start", "start-Ss11111111", [hiddenA, kept]),
+      emptyOrganizer,
+    ];
+    const hidden = new Set([hiddenA.id, hiddenB.id, tree[1].id]);
+    const pruned = pruneHiddenPages(tree, hidden);
+    expect(pruned.map((n) => n.title)).toEqual(["Start", "Platforms"]);
+    expect(pruned[0].children).toEqual([kept]);
+    expect(pruned[1]).toBe(emptyOrganizer);
   });
 
   it("slugFromUrl keeps the shortid suffix", () => {

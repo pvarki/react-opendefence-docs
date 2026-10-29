@@ -69,3 +69,25 @@ export function findMarkerVariants(text: string): MarkerVariant[] {
   }
   return variants;
 }
+
+/** Whether a document body carries the hide marker. */
+export function hasHideMarker(text: string): boolean {
+  return text.toLowerCase().includes(HIDE_MARKER.toLowerCase());
+}
+
+/**
+ * Whether a hide-marked body has more than the marker: anything besides
+ * the marker, the Translations block, rules, fences and lone backslashes.
+ */
+export function hasContentBesidesHideMarker(text: string): boolean {
+  return (
+    text
+      .replace(new RegExp(markerSource(HIDE_MARKER), "gi"), "")
+      .replace(
+        /^[ \t]*\\?[-*][ \t]+(?:Translations:|[a-z]{2}:[ \t]*\[).*$/gim,
+        "",
+      )
+      .replace(/^[ \t]*(?:-{3,}|`{3,}|\\)[ \t]*$/gm, "")
+      .trim().length > 0
+  );
+}

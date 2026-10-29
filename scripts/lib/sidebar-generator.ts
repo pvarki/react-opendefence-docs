@@ -106,6 +106,27 @@ export function slugFromUrl(url: string): string {
 }
 
 /**
+ * Drop hidden pages from a nav tree, and the organizers left without
+ * children by that. A marker on an organizer hides nothing: organizers are
+ * not pages, so only leaf ids in `hiddenIds` count.
+ */
+export function pruneHiddenPages(
+  nodes: OutlineNavNode[],
+  hiddenIds: ReadonlySet<string>,
+): OutlineNavNode[] {
+  const kept: OutlineNavNode[] = [];
+  for (const node of nodes) {
+    if (node.children.length === 0) {
+      if (!hiddenIds.has(node.id)) kept.push(node);
+      continue;
+    }
+    const children = pruneHiddenPages(node.children, hiddenIds);
+    if (children.length > 0) kept.push({ ...node, children });
+  }
+  return kept;
+}
+
+/**
  * Index every page under a locale root by Outline slug and by document id:
  * authors' internal links use either `/doc/<slug>` or `/doc/<uuid>`. Only
  * leaves become pages (buildBook); an organizer has no route, so a link to
