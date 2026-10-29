@@ -202,7 +202,7 @@ async function scaffoldBook(
   const leaf = (key: string) =>
     drafts[key]?.trim()
       ? drafts[key]
-      : "This page is a stub.\n\n(this page is under development)\n";
+      : "This page is a stub.\n\n(This tab is under development)\n";
 
   const enId = await createDoc(collectionId, undefined, "en", "");
   console.log(`  en root → ${enId}`);

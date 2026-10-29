@@ -21,10 +21,17 @@ describe("parseOrganizerMarkers", () => {
     ).toBe(true);
   });
 
-  it("keeps the legacy under-development phrase working", () => {
+  it("flags the under-development marker in any case", () => {
     expect(
       parseOrganizerMarkers("(this tab is under development)").underDevelopment,
     ).toBe(true);
+  });
+
+  it("does not flag other under-development wordings", () => {
+    expect(
+      parseOrganizerMarkers("(this page is under development)")
+        .underDevelopment,
+    ).toBe(false);
   });
 
   it("does not flag the bare word incomplete in prose", () => {
