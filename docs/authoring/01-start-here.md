@@ -57,10 +57,15 @@ So don't build deep trees. Two levels is the sweet spot.
 Put this exact phrase anywhere in the document body:
 
 ```
-(this page is under development)
+(This tab is under development)
 ```
 
-(`(this tab is under development)` also works.)
+Write it in English in every language (fi and sv docs too); upper or
+lower case doesn't matter. Other wordings, such as
+`(this page is under development)`, `(Under development)` or a
+translation, are not recognised: they show up on the page as plain
+text, and validation warns about them as `marker-variant` (for
+organizer docs, the sync log warns).
 
 The page then renders as "Coming Soon" on the site and is excluded
 from the reading order and search. Remove the marker when you're done,
@@ -84,7 +89,7 @@ Android` are detected automatically. Use the marker when the name alone
   `ATAK`, a toporg `INTRODUCTION` holding the intro page and the `Start`
   chapter, then `USING ATAK FEATURES` holding Basic Features, Advanced
   Features and Supported Plugins, then `USAGE BY ROLE`.
-- `(this page is under development)` — on a client organizer this shows an
+- `(This tab is under development)` — on a client organizer this shows an
   "Under development" tag in the platform selector, telling readers this
   client still has sections missing compared to the others.
 
@@ -98,7 +103,7 @@ though both run on Android.
 1. Open the right collection in Outline.
 2. Create the document under the correct locale root (`en`, `fi`, `sv`).
 3. Drag it to the right spot in the sidebar.
-4. Add `(this page is under development)` if it's a draft.
+4. Add `(This tab is under development)` if it's a draft.
 5. Write. Paste screenshots directly. Done.
 
 ## What's next
