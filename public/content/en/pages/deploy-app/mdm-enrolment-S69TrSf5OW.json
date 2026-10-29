@@ -1,0 +1,169 @@
+{
+  "schemaVersion": 1,
+  "id": "149ddbd8-3815-4fd5-82d9-dbe57518256f",
+  "slug": "mdm-enrolment-S69TrSf5OW",
+  "collection": "deploy-app",
+  "locale": "en",
+  "title": "MDM Enrolment",
+  "breadcrumb": [
+    "Platforms",
+    "Android",
+    "Advanced",
+    "MDM Enrolment"
+  ],
+  "createdAt": "2026-10-29T10:36:03.712Z",
+  "updatedAt": "2026-10-29T12:06:46.125Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Get the enrolment link",
+          "layout": "image-bottom",
+          "html": "<p>In Fleet, open your team and choose <strong>Add hosts</strong>, then <strong>Android</strong>. Copy the link to the phone. A phone Fleet has seen before keeps its old team: move it to yours first.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/be65720cb87b22b7.webp",
+              "width": 2128,
+              "height": 1326
+            }
+          ]
+        },
+        {
+          "title": "Open the link on the phone",
+          "layout": "image-bottom",
+          "html": "<p>Open the link and tap <strong>Enroll</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/13980932ec6c3a74.webp",
+              "width": 912,
+              "height": 1804
+            }
+          ]
+        },
+        {
+          "title": "Set up the work profile",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Next</strong>, then <strong>Continue</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/e7f89bb3db7e6a4b.webp",
+              "width": 912,
+              "height": 1804
+            }
+          ]
+        },
+        {
+          "title": "Accept",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Accept &#x26; continue</strong> and wait a minute.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/e0d676c54c6c7569.webp",
+              "width": 912,
+              "height": 1804
+            }
+          ]
+        },
+        {
+          "title": "Done",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Done</strong>. The apps arrive in the work profile.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/6ff5b74a5a7be991.webp",
+              "width": 912,
+              "height": 1804
+            }
+          ]
+        },
+        {
+          "title": "Name the phone in Fleet",
+          "layout": "image-bottom",
+          "html": "<p>In Fleet, open the phone's host and choose <strong>Edit user</strong>. Enter its device name from Deploy App, such as <code>RECON1@J2LA9U8O</code>. <strong>Save</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/dbc3c4691c818009.webp",
+              "width": 2128,
+              "height": 1152
+            }
+          ]
+        },
+        {
+          "title": "Deliver the certificate",
+          "layout": "image-bottom",
+          "html": "<p>Run <code>rmscep mdm-apply --force-certificate</code>. Within minutes Fleet shows the certificate installed.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/2040e481b4257f80.webp",
+              "width": 2128,
+              "height": 498
+            }
+          ]
+        },
+        {
+          "title": "Open Deploy App",
+          "layout": "image-bottom",
+          "html": "<p>On the phone, open the <strong>Work</strong> apps and tap <strong>Deploy App</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/84840932117af60e.webp",
+              "width": 912,
+              "height": 1804
+            }
+          ]
+        },
+        {
+          "title": "Chrome's first start",
+          "layout": "image-bottom",
+          "html": "<p>The first time, tap <strong>Stay signed out</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/0c9c55b572c71199.webp",
+              "width": 912,
+              "height": 1804
+            }
+          ]
+        },
+        {
+          "title": "Choose the certificate",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Select</strong>. The certificate carries the phone's callsign.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/efdb1153e07ab530.webp",
+              "width": 912,
+              "height": 1804
+            }
+          ]
+        },
+        {
+          "title": "Signed in",
+          "layout": "image-bottom",
+          "html": "<p>Deploy App opens as the phone's callsign.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/8b76ca5323968e64.webp",
+              "width": 912,
+              "height": 1804
+            }
+          ]
+        },
+        {
+          "title": "The phone is enrolled",
+          "layout": "image-bottom",
+          "html": "<p>In Deploy App, the phone now shows as <strong>Enrolled</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/852e3c5577522e85.webp",
+              "width": 912,
+              "height": 1804
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

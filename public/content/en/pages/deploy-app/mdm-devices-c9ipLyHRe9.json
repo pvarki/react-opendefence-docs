@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "id": "a7f6b598-93e8-4c0e-85fb-d7a062499d91",
+  "slug": "mdm-devices-c9ipLyHRe9",
+  "collection": "deploy-app",
+  "locale": "en",
+  "title": "MDM Devices",
+  "breadcrumb": [
+    "Platforms",
+    "Android",
+    "Advanced",
+    "MDM Devices"
+  ],
+  "createdAt": "2026-10-29T10:35:51.931Z",
+  "updatedAt": "2026-10-29T11:59:44.121Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Add callsigns",
+          "layout": "image-bottom",
+          "html": "<p>Type the callsigns, one per line. Tap <strong>Add</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/1cc45298657981b3.webp",
+              "width": 912,
+              "height": 1804
+            }
+          ]
+        },
+        {
+          "title": "Copy the device names",
+          "layout": "image-bottom",
+          "html": "<p>Each phone gets a name like <code>RECON1@J2LA9U8O</code>. Copy it: you give it to the phone in your MDM.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/42442282c4586d46.webp",
+              "width": 912,
+              "height": 1804
+            }
+          ]
+        },
+        {
+          "title": "Open enrolment",
+          "layout": "image-bottom",
+          "html": "<p>When the phones are ready, tap <strong>Open for 24 hours</strong>. Until then, no phone can enrol.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/3dee350ee9443e58.webp",
+              "width": 912,
+              "height": 1804
+            }
+          ]
+        },
+        {
+          "title": "Enrolment is open",
+          "layout": "image-bottom",
+          "html": "<p>It closes itself after 24 hours. Tap <strong>Close now</strong> to end it sooner.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/4ad413bea68c1462.webp",
+              "width": 912,
+              "height": 1804
+            }
+          ]
+        },
+        {
+          "title": "Reject a device",
+          "layout": "image-bottom",
+          "html": "<p>Planned one by mistake? Tap <strong>Reject</strong>. That phone can then never enrol, and its callsign is spent.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/f24dd19fe68552c6.webp",
+              "width": 912,
+              "height": 1804
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -69,15 +69,27 @@
     },
     {
       "type": "group",
-      "id": "android-MENReFAfCN",
-      "label": "Android",
+      "id": "advanced-iB16OtgQbJ",
+      "label": "Advanced",
       "clientId": "android-MENReFAfCN",
       "children": [
         {
           "type": "doc",
-          "id": "advanced-iB16OtgQbJ",
-          "label": "Advanced",
-          "slug": "advanced-iB16OtgQbJ"
+          "id": "mdm-setup-CqNOaahyKB",
+          "label": "MDM Setup",
+          "slug": "mdm-setup-CqNOaahyKB"
+        },
+        {
+          "type": "doc",
+          "id": "mdm-devices-c9ipLyHRe9",
+          "label": "MDM Devices",
+          "slug": "mdm-devices-c9ipLyHRe9"
+        },
+        {
+          "type": "doc",
+          "id": "mdm-enrolment-S69TrSf5OW",
+          "label": "MDM Enrolment",
+          "slug": "mdm-enrolment-S69TrSf5OW"
         }
       ]
     },
