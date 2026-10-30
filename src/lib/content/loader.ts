@@ -124,8 +124,18 @@ export function loadSidebar(
   return cached;
 }
 
+const translationsCache = new Map<Locale, Promise<TranslationsFile>>();
+
 export function loadTranslations(locale: Locale): Promise<TranslationsFile> {
-  return fetchJson(`/content/${locale}/translations.json`).then((data) =>
-    TranslationsFileSchema.parse(data),
-  );
+  let cached = translationsCache.get(locale);
+  if (!cached) {
+    cached = fetchJson(`/content/${locale}/translations.json`)
+      .then((data) => TranslationsFileSchema.parse(data))
+      .catch((err: unknown) => {
+        translationsCache.delete(locale); // don't cache failures
+        throw err;
+      });
+    translationsCache.set(locale, cached);
+  }
+  return cached;
 }
