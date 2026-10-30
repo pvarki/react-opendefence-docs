@@ -158,7 +158,10 @@
     "startReading": "Aloita lukeminen",
     "offline": "Offline",
     "endOfBook": "Sait valmiiksi: {{book}}",
-    "notTranslated": "Tätä sivua ei ole vielä suomennettu. Näytetään englanninkielinen sisältö.",
+    "notTranslated": {
+      "en": "Tätä sivua ei ole vielä suomeksi. Näytetään englanninkielinen versio.",
+      "sv": "Tätä sivua ei ole vielä suomeksi. Näytetään ruotsinkielinen versio."
+    },
     "underConstruction": {
       "title": "Työn alla",
       "body": "Tämä sisältö tai näkymä on työn alla. Se ei vielä täytä laatuvaatimuksiamme ja saattaa sisältää vanhentunutta tietoa tai näkyä sekavasti. Palaa asiaan myöhemmin!"

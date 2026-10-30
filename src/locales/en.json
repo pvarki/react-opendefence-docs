@@ -158,7 +158,10 @@
     "startReading": "Start reading",
     "offline": "Offline",
     "endOfBook": "You finished {{book}}",
-    "notTranslated": "This page is not yet translated. Showing English content.",
+    "notTranslated": {
+      "fi": "This page is not available in English yet. Showing the Finnish version.",
+      "sv": "This page is not available in English yet. Showing the Swedish version."
+    },
     "underConstruction": {
       "title": "Under construction",
       "body": "This content or view is under construction. It does not hold up to our quality standards yet and might contain outdated information or show up in a disorientating way. Check it out later!"
