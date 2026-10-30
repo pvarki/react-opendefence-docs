@@ -34,6 +34,11 @@ link for you. The list itself is stripped from the published page;
 the site uses it to power the language switcher, so readers can flip
 between languages on the same page.
 
+Without a link to the chosen language, the switcher goes to the
+English version instead, and without that, the reader stays on the
+same page. A banner then says which language the page is shown in.
+A link to a hidden page counts as no link.
+
 Maintain the list in every variant (the English doc links fi and sv,
 the Finnish doc links en and sv, and so on). Use `sv` for Swedish —
 the old `se` code still works, but don't start new docs with it.
