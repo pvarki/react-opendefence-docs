@@ -37,7 +37,8 @@ between languages on the same page.
 Without a link to the chosen language, the switcher goes to the
 English version instead, and without that, the reader stays on the
 same page. A banner then says which language the page is shown in.
-A link to a hidden page counts as no link.
+A link to a hidden page counts as no link. Validation lists pages
+without a link as `missing-translation`.
 
 Maintain the list in every variant (the English doc links fi and sv,
 the Finnish doc links en and sv, and so on). Use `sv` for Swedish —
