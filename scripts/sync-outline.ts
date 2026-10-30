@@ -30,6 +30,7 @@ import {
   normalizeOutlineMarkdown,
   extractTranslationLinks,
 } from "./lib/outline-normalizer";
+import { findMarkerVariants } from "./lib/authoring-markers";
 import { emitBlocks } from "./lib/block-emitter";
 import {
   parseOrganizerMarkers,
@@ -354,6 +355,9 @@ async function syncCollection(
     // organizers in the top three levels (root / wrapper / client children).
     const navChildren = (localeRoot.children ?? []) as OutlineNavNode[];
     const organizerIds: string[] = [];
+    // Titles of real organizers (with children), for marker warnings; leaves
+    // are covered by validate-docs.
+    const organizerTitles = new Map<string, string>();
     // Collect up to 4 levels deep: locale root / platforms-container /
     // platform organizer / chapter organizer.
     // Depth-1 leaf nodes (direct children of locale root) are always included
@@ -363,6 +367,7 @@ async function syncCollection(
       for (const node of nodes) {
         if (node.children.length === 0 && depth > 1) continue;
         organizerIds.push(node.id);
+        if (node.children.length > 0) organizerTitles.set(node.id, node.title);
         if (node.children.length > 0 && depth < 4)
           collectOrganizers(node.children, depth + 1);
       }
@@ -373,12 +378,20 @@ async function syncCollection(
       `Reading organizer markers for ${locale} (${organizerIds.length} organizers)`,
       args.ci,
     );
+    const markerWarnings: string[] = [];
     await runWithConcurrency(
       organizerIds.map((docId) => async () => {
         if (organizerMarkersCache.has(docId)) return;
         try {
           const body = await client.getDocumentAsMarkdown(docId);
           organizerMarkersCache.set(docId, parseOrganizerMarkers(body));
+          const title = organizerTitles.get(docId);
+          if (title === undefined) return;
+          for (const { found, official } of findMarkerVariants(body)) {
+            markerWarnings.push(
+              `"${title}": "${found}" looks like the marker "${official}", if it is meant as one write it exactly like that`,
+            );
+          }
         } catch {
           // Best-effort: an unreadable organizer just has no markers.
           organizerMarkersCache.set(docId, {
@@ -392,6 +405,9 @@ async function syncCollection(
       INFO_CONCURRENCY,
     );
     markerSpinner.succeed(`Organizer markers read for ${locale}`);
+    for (const warning of markerWarnings) {
+      console.log(`  ${chalk.yellow("⚠")} ${chalk.gray(warning)}`);
+    }
 
     const toporgIds = new Set<string>();
     const platformByDocId = new Map<string, Platform>();

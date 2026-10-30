@@ -167,7 +167,11 @@ describe("validateDocs", () => {
             source: "legacy",
             slides: [
               { layout: "image-left", html: "<p>step</p>", images: [] },
-              { layout: "text", html: "<p>text only is fine</p>", images: [] },
+              {
+                layout: "text",
+                html: "<p>text only is fine (Under <b>development</b>)</p>",
+                images: [],
+              },
             ],
           },
         ] as Block[],
@@ -195,7 +199,10 @@ describe("validateDocs", () => {
         blocks: [
           {
             type: "html",
-            html: '<a href="/en/deploy-app/welcome-Aa11111111">en</a>',
+            html:
+              '<a href="/en/deploy-app/welcome-Aa11111111">en</a>' +
+              "<p>(this tab should not be shown)</p>" +
+              "<p>(Tätä välilehteä ei pitäisi näyttää)</p>",
           },
         ] as Block[],
       }),
@@ -291,6 +298,18 @@ describe("validateDocs", () => {
     expect(byCode("empty-doc").map((i) => i.slug)).toEqual([
       "empty-Ff11111111",
     ]);
+  });
+
+  it("warns about marker look-alikes but not the official form", () => {
+    const variants = byCode("marker-variant");
+    expect(variants.map((i) => [i.locale, i.slug])).toEqual([
+      ["en", "slides-Ee11111111"],
+      ["fi", "sivu-Bb22222222"],
+    ]);
+    expect(variants[0].message).toContain(
+      '"(Under development)" looks like the marker',
+    );
+    expect(variants[1].message).toContain('"(This tab should not be shown)"');
   });
 
   it("reports missing locale roots as info", () => {
