@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
 import {
   extractTranslationLinks,
+  linkedDocKeys,
   normalizeOutlineMarkdown,
   stripEmojis,
   type NormalizeContext,
@@ -82,6 +83,37 @@ describe("normalizeOutlineMarkdown", () => {
     expect(normalizeOutlineMarkdown(input, ctx(routes))).toContain(
       "[Guide](/en/docs/guides/tak-guide/guide-xY12#setup)",
     );
+  });
+
+  it("turns links to hidden pages into plain text and reports them", () => {
+    const reported: string[] = [];
+    const input =
+      "See [Overview](/doc/overview-Hh11111111) and " +
+      "[VLC](https://pvarki.getoutline.com/doc/vlc-player-Hh22222222#open).\n";
+    const out = normalizeOutlineMarkdown(input, {
+      ...ctx(),
+      hiddenDocKeys: new Set(["overview-Hh11111111", "vlc-player-Hh22222222"]),
+      onHiddenLink: (text, key) => reported.push(`${text} -> ${key}`),
+    });
+    expect(out).toBe("See Overview and VLC.\n");
+    expect(reported).toEqual([
+      "Overview -> overview-Hh11111111",
+      "VLC -> vlc-player-Hh22222222",
+    ]);
+  });
+
+  it("does not report hidden links in the Translations list", () => {
+    const reported: string[] = [];
+    const input =
+      "* Translations:\n  * en: [en](/doc/fighter-Hh33333333)\n\n" +
+      "Read [Fighter](/doc/fighter-Hh33333333).\n";
+    const out = normalizeOutlineMarkdown(input, {
+      ...ctx(),
+      hiddenDocKeys: new Set(["fighter-Hh33333333"]),
+      onHiddenLink: (text) => reported.push(text),
+    });
+    expect(out).toContain("* en: en\n");
+    expect(reported).toEqual(["Fighter"]);
   });
 
   it("drops indented lone-backslash lines inside lists", () => {
@@ -201,5 +233,20 @@ describe("extractTranslationLinks", () => {
     expect(extractTranslationLinks(input)).toEqual({
       en: "end-of-file-Ab12Cd34",
     });
+  });
+});
+
+describe("linkedDocKeys", () => {
+  it("collects the slug or id of each internal link once", () => {
+    const input = [
+      "See [setup](/doc/setup-Ab12Cd34Ef#step-2) and",
+      "[setup again](https://pvarki.getoutline.com/doc/setup-Ab12Cd34Ef).",
+      "[By id](/doc/0f8e6a52-3c1b-4d2e-9a7f-5b6c7d8e9f01)",
+      "Not a link: /doc/bare-Zz99Yy88Xx",
+    ].join("\n");
+    expect([...linkedDocKeys(input)]).toEqual([
+      "setup-Ab12Cd34Ef",
+      "0f8e6a52-3c1b-4d2e-9a7f-5b6c7d8e9f01",
+    ]);
   });
 });

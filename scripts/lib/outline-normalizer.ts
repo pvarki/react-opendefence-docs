@@ -16,6 +16,13 @@ export interface NormalizeContext {
   collectionSlug: string;
   /** Resolves an Outline slug (incl. shortid, e.g. "first-login-qwmPnmJsrF") to a route path. */
   slugToRoute: (outlineSlug: string) => string | undefined;
+  /** Slugs and ids of hidden pages: links to them become plain text. */
+  hiddenDocKeys?: ReadonlySet<string>;
+  /**
+   * Told about each body link that pointed to a hidden page. Translations
+   * list links are not reported: the list is not shown on the page.
+   */
+  onHiddenLink?: (linkText: string, docKey: string) => void;
 }
 
 // ---------------------------------------------------------------------------
@@ -226,24 +233,40 @@ function removeExistingFrontmatter(markdown: string): string {
   return markdown.replace(/^---\n[\s\S]*?\n---\n*/, "");
 }
 
+/** The "* Translations:" bullet list; every line must end with \n. */
+const TRANSLATIONS_LIST = /\* Translations:\s*\n((?:\s*\*\s+\w+:.*\n)+)/;
+
+/** `[text](/doc/<key>#anchor)`, with or without the Outline host. */
+const INTERNAL_LINK =
+  /\[([^\]]+)\]\((?:https?:\/\/[^/]+)?\/doc\/([^)#]+)(#[^)]+)?\)/g;
+
+/** Keys (slugs or ids) of the Outline docs that `markdown` links to. */
+export function linkedDocKeys(markdown: string): Set<string> {
+  return new Set(Array.from(markdown.matchAll(INTERNAL_LINK), (m) => m[2]));
+}
+
 /**
  * Rewrite Outline internal links to app routes.
  * Matches `[text](/doc/slug-shortid)` and
  * `[text](https://anything.getoutline.com/doc/slug-shortid)`, with optional
  * `#anchor`. Unresolvable links are left unchanged (the doc may be in a
- * collection we don't sync).
+ * collection we don't sync). A link to a hidden page keeps only its text.
  */
-function replaceInternalLinks(
-  markdown: string,
-  slugToRoute: (outlineSlug: string) => string | undefined,
-): string {
-  const internalLinkPattern =
-    /\[([^\]]+)\]\((?:https?:\/\/[^/]+)?\/doc\/([^)#]+)(#[^)]+)?\)/g;
+function replaceInternalLinks(markdown: string, ctx: NormalizeContext): string {
+  const list = `${markdown}\n`.match(TRANSLATIONS_LIST);
+  const inList = (offset: number) =>
+    list?.index !== undefined &&
+    offset >= list.index &&
+    offset < list.index + list[0].length;
 
   return markdown.replace(
-    internalLinkPattern,
-    (match, linkText, docKey, anchor) => {
-      const route = slugToRoute(docKey);
+    INTERNAL_LINK,
+    (match, linkText, docKey, anchor, offset: number) => {
+      if (ctx.hiddenDocKeys?.has(docKey)) {
+        if (!inList(offset)) ctx.onHiddenLink?.(linkText, docKey);
+        return linkText;
+      }
+      const route = ctx.slugToRoute(docKey);
       if (!route) return match;
       return `[${linkText}](${route}${anchor || ""})`;
     },
@@ -266,7 +289,7 @@ export function normalizeOutlineMarkdown(
   result = convertLiteralLineBreaks(result);
   result = stripEmojisFromHeadings(result);
   result = fixMarkdownIssues(result);
-  result = replaceInternalLinks(result, ctx.slugToRoute);
+  result = replaceInternalLinks(result, ctx);
   return result;
 }
 
@@ -291,10 +314,8 @@ export function normalizeOutlineMarkdown(
 export function extractTranslationLinks(
   markdown: string,
 ): Partial<Record<Locale, string>> {
-  // The block regex requires every bullet line to end with \n.
   const input = markdown.endsWith("\n") ? markdown : `${markdown}\n`;
-  const translationRegex = /\* Translations:\s*\n((?:\s*\*\s+\w+:.*\n)+)/;
-  const match = input.match(translationRegex);
+  const match = input.match(TRANSLATIONS_LIST);
   if (!match) return {};
 
   const translations: Partial<Record<Locale, string>> = {};

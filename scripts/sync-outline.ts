@@ -29,6 +29,7 @@ import {
 import {
   normalizeOutlineMarkdown,
   extractTranslationLinks,
+  linkedDocKeys,
 } from "./lib/outline-normalizer";
 import {
   findMarkerVariants,
@@ -45,6 +46,7 @@ import {
   buildBook,
   indexDocRoutes,
   pruneHiddenPages,
+  slugFromUrl,
   type BookPageRef,
   type OutlineNavNode,
 } from "./lib/sidebar-generator";
@@ -221,6 +223,8 @@ interface SyncStats {
 interface ProcessResult {
   images: number;
   underDevelopment: boolean;
+  /** Text of each link that pointed to a hidden page (now plain text). */
+  hiddenLinks: string[];
   translationLinks: Partial<Record<Locale, string>>;
   title: string;
 }
@@ -232,6 +236,7 @@ async function processDocument(
   collection: CollectionConfig,
   locale: Locale,
   slugRouteIndex: Map<string, string>,
+  hiddenDocKeys: ReadonlySet<string>,
 ): Promise<ProcessResult> {
   const info = await getCachedDocumentInfo(client, ref.docId);
 
@@ -246,10 +251,13 @@ async function processDocument(
   }
 
   // Text-level Outline fixups; cross-doc links resolve via the structure index.
+  const hiddenLinks: string[] = [];
   markdown = normalizeOutlineMarkdown(markdown, {
     locale,
     collectionSlug: collection.slug,
     slugToRoute: (outlineSlug) => slugRouteIndex.get(outlineSlug),
+    hiddenDocKeys,
+    onHiddenLink: (linkText) => hiddenLinks.push(linkText),
   });
 
   // Bare outline slugs from the "* Translations:" block.
@@ -295,6 +303,7 @@ async function processDocument(
   return {
     images: processedImages.size,
     underDevelopment: emitted.underDevelopment,
+    hiddenLinks,
     translationLinks,
     title: ref.title,
   };
@@ -311,6 +320,17 @@ interface BookSyncResult {
   clients: ClientInfo[];
 }
 
+/** Pages carrying the hide marker, found before any collection syncs. */
+interface HiddenPages {
+  /** Outline slugs and ids of every hidden page. */
+  keys: Set<string>;
+  /**
+   * Slugs and ids of pages hidden since the previous sync, or shown that
+   * were not on the site before: pages linking to them are re-rendered.
+   */
+  relinkKeys: Set<string>;
+}
+
 // Sync a single collection across all locales using a pre-fetched structure
 // (hidden pages already pruned).
 async function syncCollection(
@@ -320,6 +340,7 @@ async function syncCollection(
   args: SyncArgs,
   previousManifests: Map<Locale, LocaleManifest | undefined>,
   slugRouteIndex: Map<string, string>,
+  hidden: HiddenPages,
 ): Promise<{ stats: CollectionSyncStats; books: Map<Locale, BookSyncResult> }> {
   const timer = createTimer();
   const stats: CollectionSyncStats = {
@@ -330,6 +351,7 @@ async function syncCollection(
     documentsSkipped: 0,
     imagesSaved: 0,
     errors: [],
+    warnings: [],
   };
   const books = new Map<Locale, BookSyncResult>();
 
@@ -492,7 +514,12 @@ async function syncCollection(
         );
       const localUpdatedAt =
         previous && fileOk ? previous.updatedAt : undefined;
-      if (shouldSyncDoc(info.updatedAt, localUpdatedAt, args.force)) {
+      // A link to a page that was hidden or shown since the previous sync
+      // must be rewritten, so the page holding it is re-rendered.
+      if (
+        shouldSyncDoc(info.updatedAt, localUpdatedAt, args.force) ||
+        [...linkedDocKeys(info.text)].some((key) => hidden.relinkKeys.has(key))
+      ) {
         docsToProcess.push(ref);
       } else {
         docStatus.set(ref.docId, "skipped");
@@ -563,6 +590,7 @@ async function syncCollection(
             collection,
             locale,
             slugRouteIndex,
+            hidden.keys,
           );
 
           processed++;
@@ -655,6 +683,11 @@ async function syncCollection(
       const result = processResults.get(ref.docId);
       if (!result) continue;
       processedSlugs.add(ref.slug);
+      for (const linkText of result.hiddenLinks) {
+        stats.warnings.push(
+          `${locale} "${ref.title}": link "${linkText}" points to a hidden page, shown as plain text`,
+        );
+      }
       if (Object.keys(result.translationLinks).length > 0) {
         translationLinks.set(ref.slug, result.translationLinks);
       }
@@ -712,6 +745,13 @@ function printCompletionReport(stats: SyncStats): void {
       console.log(`    ${chalk.red("Errors:")}`);
       for (const err of collection.errors) {
         console.log(`      ${chalk.red("✖")} ${err}`);
+      }
+    }
+
+    if (collection.warnings.length > 0) {
+      console.log(`    ${chalk.yellow("Warnings:")}`);
+      for (const warning of collection.warnings) {
+        console.log(`      ${chalk.yellow("⚠")} ${warning}`);
       }
     }
   }
@@ -894,6 +934,7 @@ async function main() {
     ),
   );
   const hiddenIds = new Set<string>();
+  const hidden: HiddenPages = { keys: new Set(), relinkKeys: new Set() };
   const hiddenWithContent: string[] = [];
   // Kept hidden only for lack of info (shown ones are reported as errors).
   const keptHidden: string[] = [];
@@ -904,8 +945,13 @@ async function main() {
     const isHidden = info
       ? hasHideMarker(info.text)
       : !previousIds.has(node.id);
+    const keys = [slugFromUrl(node.url), node.id];
+    if (isHidden === previousIds.has(node.id)) {
+      for (const key of keys) hidden.relinkKeys.add(key);
+    }
     if (!isHidden) continue;
     hiddenIds.add(node.id);
+    for (const key of keys) hidden.keys.add(key);
     if (!info) keptHidden.push(`${locale}/${collection.slug} "${node.title}"`);
     if (info && hasContentBesidesHideMarker(info.text)) {
       hiddenWithContent.push(`${locale}/${collection.slug} "${node.title}"`);
@@ -972,6 +1018,7 @@ async function main() {
         args,
         previousManifests,
         slugRouteIndex,
+        hidden,
       );
 
       stats.collections.push(collectionStats);
