@@ -142,6 +142,7 @@ export interface CollectionSyncStats {
   documentsSkipped: number;
   imagesSaved: number;
   errors: string[];
+  warnings: string[];
 }
 
 /** Overall sync statistics. */
