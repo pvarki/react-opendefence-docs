@@ -510,7 +510,21 @@ test.describe("locale fallback", () => {
         .getByRole("heading", { name: "Joining a Deploy App" }),
     ).toBeVisible();
     await expect(
-      page.getByText("Tätä sivua ei ole vielä suomennettu", { exact: false }),
+      page.getByText("Tätä sivua ei ole vielä suomeksi", { exact: false }),
+    ).toBeVisible();
+  });
+
+  test("page without an English version shows the Finnish one", async ({
+    page,
+  }) => {
+    await page.goto("/en/deploy-app/liittyminen-deploy-appiin-hFiNczU5i7");
+    await expect(
+      page
+        .locator("[data-current]")
+        .getByRole("heading", { name: "Liittyminen Deploy Appiin" }),
+    ).toBeVisible();
+    await expect(
+      page.getByText("Showing the Finnish version", { exact: false }),
     ).toBeVisible();
   });
 

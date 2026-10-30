@@ -10,6 +10,7 @@ import {
 } from "lucide-react";
 import {
   DEFAULT_LOCALE,
+  LOCALES,
   type Locale,
   type LocaleManifest,
   type ManifestPage,
@@ -43,7 +44,7 @@ import { cn } from "@/lib/utils";
 
 export interface ReaderData extends BookContext {
   kind: "cover" | "page";
-  /** True when the URL locale has no translation and en content is shown. */
+  /** True when the URL locale has no translation and another locale's content is shown. */
   fallback: boolean;
   pages: ManifestPage[];
 }
@@ -94,11 +95,15 @@ export const Route = createFileRoute("/$locale/$")({
     const own = await resolveForLocale(context.locale, splat);
     if (own) return { ...own, contentLocale: context.locale, fallback: false };
 
-    // Untranslated page or book: serve English with a banner rather than 404 —
-    // fi/sv coverage trails en and gaps must not look like missing docs.
-    if (context.locale !== DEFAULT_LOCALE) {
-      const en = await resolveForLocale(DEFAULT_LOCALE, splat);
-      if (en) return { ...en, contentLocale: DEFAULT_LOCALE, fallback: true };
+    // Untranslated page or book: serve another locale's content with a banner
+    // rather than 404, English first. Page slugs are unique across locales,
+    // so a page only resolves in its own locale.
+    const others = [DEFAULT_LOCALE, ...LOCALES].filter(
+      (l, i, all) => l !== context.locale && all.indexOf(l) === i,
+    );
+    for (const other of others) {
+      const found = await resolveForLocale(other, splat);
+      if (found) return { ...found, contentLocale: other, fallback: true };
     }
     throw notFound();
   },
@@ -172,7 +177,9 @@ function ReaderRoute() {
         />
         {/* Dev docs are canonically English and won't be translated, so the
             en-fallback is the intended state, not a missing translation. */}
-        {data.fallback && !isDevSection && <FallbackBanner />}
+        {data.fallback && !isDevSection && (
+          <FallbackBanner contentLocale={data.contentLocale} />
+        )}
         <div className="min-h-0 flex-1">
           {data.kind === "cover" || !data.slug ? (
             <BookCover data={data} bookLabel={bookLabel} />
@@ -191,12 +198,12 @@ function ReaderRoute() {
   );
 }
 
-function FallbackBanner() {
+function FallbackBanner({ contentLocale }: { contentLocale: Locale }) {
   const { t } = useTranslation();
   return (
     <p className="flex shrink-0 items-center gap-2 border-b border-border bg-warning/10 px-4 py-2 text-xs text-warning md:px-6">
       <Languages className="size-3.5 shrink-0" />
-      {t("reader.notTranslated")}
+      {t(`reader.notTranslated.${contentLocale}`)}
     </p>
   );
 }
