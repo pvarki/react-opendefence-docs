@@ -12,7 +12,7 @@
     "MDM Setup"
   ],
   "createdAt": "2026-10-29T10:35:43.762Z",
-  "updatedAt": "2026-10-29T18:42:44.640Z",
+  "updatedAt": "2026-10-30T17:55:20.380Z",
   "headings": [],
   "blocks": [
     {
@@ -34,36 +34,36 @@
         {
           "title": "Copy the SCEP details",
           "layout": "image-bottom",
-          "html": "<p>Copy the <strong>SCEP URL</strong> and the <strong>Challenge</strong>. Your MDM needs both.</p>",
+          "html": "<p>Copy the <strong>SCEP URL</strong> and the <strong>Challenge</strong>. Your MDM needs both. Keep the challenge to yourself: while enrolment is open, it is what lets a phone join.</p>",
           "images": [
             {
-              "src": "/content/images/en/attachments/7bf334ff5e37e648.webp",
+              "src": "/content/images/en/attachments/1e4e7000716aed9d.webp",
               "width": 912,
               "height": 1804
             }
           ]
         },
         {
-          "title": "Connect Fleet",
+          "title": "Prepare two Fleet teams",
           "layout": "image-bottom",
-          "html": "<p>On a computer, run <code>rmscep mdm-apply</code> with the challenge and your Fleet token. Fleet now knows this deployment. With another MDM, add a SCEP authority by hand.</p>",
+          "html": "<p>Once per deployment, set up two teams with the same apps, policy and <strong>Deploy App</strong> icon: a <strong>preparation</strong> team without a certificate, and a <strong>Deploy App</strong> team whose certificate names each phone after its user. <code>rmscep mdm-apply</code> sets both up.</p>",
           "images": [
             {
-              "src": "/content/images/en/attachments/15a658b711bf2529.webp",
+              "src": "/content/images/en/attachments/8a3500acbc57ac54.webp",
               "width": 2128,
-              "height": 1180
+              "height": 488
             }
           ]
         },
         {
-          "title": "Check the team",
+          "title": "Phones without names",
           "layout": "image-bottom",
-          "html": "<p>The same command sets up your team: the certificate, the apps and a <strong>Deploy App</strong> icon. Run it before any phone enrols: apps install only then.</p>",
+          "html": "<p>If names do not matter, use a team whose certificate takes the phone's enrollment ID instead. Phones then join under that ID as soon as they enrol.</p>",
           "images": [
             {
-              "src": "/content/images/en/attachments/7a169b964c0c5298.webp",
-              "width": 2128,
-              "height": 1014
+              "src": "/content/images/en/attachments/a577d2102710e476.webp",
+              "width": 912,
+              "height": 1804
             }
           ]
         }

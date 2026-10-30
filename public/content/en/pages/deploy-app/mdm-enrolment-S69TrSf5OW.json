@@ -12,7 +12,7 @@
     "MDM Enrolment"
   ],
   "createdAt": "2026-10-29T10:36:03.712Z",
-  "updatedAt": "2026-10-29T18:42:45.548Z",
+  "updatedAt": "2026-10-30T17:55:31.416Z",
   "headings": [],
   "blocks": [
     {
@@ -20,86 +20,50 @@
       "source": "canonical",
       "slides": [
         {
-          "title": "Get the enrolment link",
+          "title": "Open enrolment",
           "layout": "image-bottom",
-          "html": "<p>In Fleet, open your team and choose <strong>Add hosts</strong>, then <strong>Android</strong>. Copy the link to the phone. A phone Fleet has seen before keeps its old team: move it to yours first.</p>",
+          "html": "<p>In Deploy App, open <strong>MDM</strong> and tap <strong>Open for 2 hours</strong>. Do this before the transfer: a phone that asks while enrolment is closed is turned away until you transfer it out and back again.</p>",
           "images": [
             {
-              "src": "/content/images/en/attachments/be65720cb87b22b7.webp",
+              "src": "/content/images/en/attachments/b5d4bd107bb4855f.webp",
+              "width": 912,
+              "height": 1804
+            }
+          ]
+        },
+        {
+          "title": "Select the named phones",
+          "layout": "image-bottom",
+          "html": "<p>In Fleet, tick the named phones in your preparation team and choose <strong>Transfer</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/204f06c0dd5db585.webp",
               "width": 2128,
-              "height": 1326
+              "height": 290
             }
           ]
         },
         {
-          "title": "Open the link on the phone",
+          "title": "Transfer them to Deploy App",
           "layout": "image-bottom",
-          "html": "<p>Open the link and tap <strong>Enroll</strong>.</p>",
+          "html": "<p>Choose the <strong>Deploy App</strong> team and tap <strong>Transfer</strong>.</p>",
           "images": [
             {
-              "src": "/content/images/en/attachments/13980932ec6c3a74.webp",
-              "width": 912,
-              "height": 1804
-            }
-          ]
-        },
-        {
-          "title": "Set up the work profile",
-          "layout": "image-bottom",
-          "html": "<p>Tap <strong>Next</strong>, then <strong>Continue</strong>.</p>",
-          "images": [
-            {
-              "src": "/content/images/en/attachments/e7f89bb3db7e6a4b.webp",
-              "width": 912,
-              "height": 1804
-            }
-          ]
-        },
-        {
-          "title": "Accept",
-          "layout": "image-bottom",
-          "html": "<p>Tap <strong>Accept &#x26; continue</strong> and wait a minute.</p>",
-          "images": [
-            {
-              "src": "/content/images/en/attachments/e0d676c54c6c7569.webp",
-              "width": 912,
-              "height": 1804
-            }
-          ]
-        },
-        {
-          "title": "Done",
-          "layout": "image-bottom",
-          "html": "<p>Tap <strong>Done</strong>. The apps arrive in the work profile.</p>",
-          "images": [
-            {
-              "src": "/content/images/en/attachments/6ff5b74a5a7be991.webp",
-              "width": 912,
-              "height": 1804
-            }
-          ]
-        },
-        {
-          "title": "Name the phone in Fleet",
-          "layout": "image-bottom",
-          "html": "<p>In Fleet, open the phone's host and choose <strong>Edit user</strong>. Enter its device name from Deploy App, such as <code>RECON1@J2LA9U8O</code>. <strong>Save</strong>.</p>",
-          "images": [
-            {
-              "src": "/content/images/en/attachments/dbc3c4691c818009.webp",
+              "src": "/content/images/en/attachments/80b224e7ffe15bee.webp",
               "width": 2128,
-              "height": 1152
+              "height": 1210
             }
           ]
         },
         {
-          "title": "Deliver the certificate",
+          "title": "Wait for the phones",
           "layout": "image-bottom",
-          "html": "<p>Run <code>rmscep mdm-apply --force-certificate</code>. Within minutes Fleet shows the certificate installed.</p>",
+          "html": "<p>Within about 15 minutes each phone gets its certificate and appears here under its callsign. When all are in, tap <strong>Close now</strong>.</p>",
           "images": [
             {
-              "src": "/content/images/en/attachments/2040e481b4257f80.webp",
-              "width": 2128,
-              "height": 498
+              "src": "/content/images/en/attachments/f696b94f6eeafb1a.webp",
+              "width": 912,
+              "height": 1804
             }
           ]
         },
@@ -128,36 +92,12 @@
           ]
         },
         {
-          "title": "Choose the certificate",
-          "layout": "image-bottom",
-          "html": "<p>Tap <strong>Select</strong>. The certificate carries the phone's callsign.</p>",
-          "images": [
-            {
-              "src": "/content/images/en/attachments/efdb1153e07ab530.webp",
-              "width": 912,
-              "height": 1804
-            }
-          ]
-        },
-        {
           "title": "Signed in",
           "layout": "image-bottom",
           "html": "<p>Deploy App opens as the phone's callsign.</p>",
           "images": [
             {
-              "src": "/content/images/en/attachments/8b76ca5323968e64.webp",
-              "width": 912,
-              "height": 1804
-            }
-          ]
-        },
-        {
-          "title": "The phone is enrolled",
-          "layout": "image-bottom",
-          "html": "<p>In Deploy App, the phone now shows as <strong>Enrolled</strong>.</p>",
-          "images": [
-            {
-              "src": "/content/images/en/attachments/852e3c5577522e85.webp",
+              "src": "/content/images/en/attachments/0e281f149b1dc049.webp",
               "width": 912,
               "height": 1804
             }

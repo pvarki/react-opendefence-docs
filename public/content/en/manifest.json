@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "locale": "en",
-  "generatedAt": "2026-10-29T18:44:56.126Z",
+  "generatedAt": "2026-10-30T17:57:38.113Z",
   "collections": [
     {
       "slug": "deploy-app",
@@ -404,7 +404,7 @@
         "MDM Setup"
       ],
       "path": "/content/en/pages/deploy-app/mdm-setup-CqNOaahyKB.json",
-      "updatedAt": "2026-10-29T18:42:44.640Z",
+      "updatedAt": "2026-10-30T17:55:20.380Z",
       "order": 8,
       "platform": "android",
       "clientId": "android-MENReFAfCN",
@@ -423,7 +423,7 @@
         "MDM Devices"
       ],
       "path": "/content/en/pages/deploy-app/mdm-devices-c9ipLyHRe9.json",
-      "updatedAt": "2026-10-29T18:42:45.108Z",
+      "updatedAt": "2026-10-30T17:55:25.210Z",
       "order": 9,
       "platform": "android",
       "clientId": "android-MENReFAfCN",
@@ -442,7 +442,7 @@
         "MDM Enrolment"
       ],
       "path": "/content/en/pages/deploy-app/mdm-enrolment-S69TrSf5OW.json",
-      "updatedAt": "2026-10-29T18:42:45.548Z",
+      "updatedAt": "2026-10-30T17:55:31.416Z",
       "order": 10,
       "platform": "android",
       "clientId": "android-MENReFAfCN",
