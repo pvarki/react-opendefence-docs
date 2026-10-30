@@ -20,6 +20,7 @@
  *   warning  cross-locale-link        link to a page in another locale
  *   warning  outline-artifact         Outline export markup shown as text
  *   warning  marker-variant           look-alike of an authoring marker
+ *   warning  missing-translation      no translation link to a locale that has the book
  *
  * Usage:
  *   pnpm validate:docs                       # exit 1 only on errors
@@ -253,6 +254,15 @@ export async function validateDocs(
       locale,
       new Set(manifest.pages.map((p) => `${p.collection}/${p.slug}`)),
     );
+  }
+
+  // Locales each book has pages in: a page should link its translation there.
+  const bookLocales = new Map<string, Set<Locale>>();
+  for (const [locale, manifest] of manifests) {
+    for (const { collection } of manifest.pages) {
+      const locales = bookLocales.get(collection) ?? new Set<Locale>();
+      bookLocales.set(collection, locales.add(locale));
+    }
   }
 
   for (const locale of LOCALES) {
@@ -489,6 +499,32 @@ export async function validateDocs(
         );
       }
 
+      // missing-translation: the link must reach a page in that locale.
+      // The sync drops links to hidden or unsynced docs, so those count too.
+      const untranslated = [...(bookLocales.get(page.collection) ?? [])].filter(
+        (other) => {
+          if (other === locale) return false;
+          const target = parseRouteHref(page.translations?.[other] ?? "");
+          return !(
+            target?.locale === other &&
+            routeSets.get(other)?.has(target.routeKey)
+          );
+        },
+      );
+      if (untranslated.length > 0) {
+        const pages = untranslated.length > 1 ? "pages" : "page";
+        issues.push(
+          issue(
+            "warning",
+            "missing-translation",
+            `No working translation link to the ${untranslated.join(" and ")} ${pages} — add the link to the Translations list, and check that the target is published and not hidden`,
+            locale,
+            page.collection,
+            page.slug,
+          ),
+        );
+      }
+
       // marker-variant
       for (const { found, official } of findMarkerVariants(collectText(page))) {
         issues.push(
@@ -508,14 +544,10 @@ export async function validateDocs(
   // --- cross-locale: missing-locale-root ---------------------------------
   for (const collection of ALL_COLLECTIONS) {
     if (collection.noLocale) continue; // en-only by design
-    const present = LOCALES.filter((locale) =>
-      manifests
-        .get(locale)
-        ?.pages.some((p) => p.collection === collection.slug),
-    );
-    if (present.length === 0) continue; // not synced at all — nothing to report
+    const present = bookLocales.get(collection.slug);
+    if (!present) continue; // not synced at all — nothing to report
     for (const locale of LOCALES) {
-      if (!present.includes(locale)) {
+      if (!present.has(locale)) {
         issues.push(
           issue(
             "info",
