@@ -114,6 +114,7 @@ describe("validateDocs", () => {
       page({
         id: "id-welcome",
         slug: "welcome-Aa11111111",
+        translations: { fi: "/fi/deploy-app/sivu-Bb22222222" },
         blocks: [
           {
             type: "html",
@@ -150,11 +151,19 @@ describe("validateDocs", () => {
     );
     await writeJson(
       path.join(pages, "dup-Aa12345678.json"),
-      page({ id: "id-dup-a", slug: "dup-Aa12345678" }),
+      page({
+        id: "id-dup-a",
+        slug: "dup-Aa12345678",
+        translations: { fi: "/fi/deploy-app/gone-Zz99999999" },
+      }),
     );
     await writeJson(
       path.join(pages, "dup-Bb87654321.json"),
-      page({ id: "id-dup-b", slug: "dup-Bb87654321" }),
+      page({
+        id: "id-dup-b",
+        slug: "dup-Bb87654321",
+        translations: { fi: "/en/deploy-app/welcome-Aa11111111" },
+      }),
     );
     await writeJson(
       path.join(pages, "slides-Ee11111111.json"),
@@ -196,6 +205,7 @@ describe("validateDocs", () => {
         id: "id-sivu",
         slug: "sivu-Bb22222222",
         locale: "fi",
+        translations: { en: "/en/deploy-app/welcome-Aa11111111" },
         blocks: [
           {
             type: "html",
@@ -310,6 +320,20 @@ describe("validateDocs", () => {
       '"(Under development)" looks like the marker',
     );
     expect(variants[1].message).toContain('"(This tab should not be shown)"');
+  });
+
+  it("warns about pages without a working translation link", () => {
+    const missing = byCode("missing-translation");
+    const slugs = missing.map((i) => i.slug);
+    // dup-A links a page that is gone, dup-B links the wrong locale.
+    expect(slugs).toEqual(
+      expect.arrayContaining(["dup-Aa12345678", "dup-Bb87654321"]),
+    );
+    expect(slugs).not.toContain("welcome-Aa11111111");
+    expect(slugs).not.toContain("sivu-Bb22222222");
+    expect(missing[0].message).toContain(
+      "No working translation link to the fi page",
+    );
   });
 
   it("reports missing locale roots as info", () => {
