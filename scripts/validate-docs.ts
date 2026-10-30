@@ -19,6 +19,7 @@
  *   warning  unresolved-outline-link  /doc/... href the sync could not rewrite
  *   warning  cross-locale-link        link to a page in another locale
  *   warning  outline-artifact         Outline export markup shown as text
+ *   warning  marker-variant           look-alike of an authoring marker
  *
  * Usage:
  *   pnpm validate:docs                       # exit 1 only on errors
@@ -38,6 +39,7 @@ import {
   type PageDoc,
 } from "../shared/content-schema";
 import { ALL_COLLECTIONS } from "../config/collections";
+import { findMarkerVariants } from "./lib/authoring-markers";
 import { SIZE_TITLE_RE } from "./lib/block-emitter";
 import { readJsonIfExists } from "./lib/sync-helpers";
 
@@ -153,6 +155,21 @@ export function findOutlineArtifacts(page: PageDoc): string[] {
     if (/==[^=\s][^=]*==/.test(text)) found.add("==highlight== marker shown");
   }
   return [...found];
+}
+
+/** Visible text of a page's html, code and slide blocks, tags stripped. */
+function collectText(page: PageDoc): string {
+  const parts: string[] = [];
+  for (const block of page.blocks) {
+    if (block.type === "html" || block.type === "code") {
+      parts.push(block.html);
+    } else if (block.type === "slideset") {
+      for (const slide of block.slides) {
+        parts.push(slide.title ?? "", slide.html);
+      }
+    }
+  }
+  return parts.join("\n").replace(TAG_PATTERN, "");
 }
 
 /** All local asset srcs (images, pdfs) referenced by a page. */
@@ -465,6 +482,20 @@ export async function validateDocs(
             "warning",
             "empty-doc",
             "Page has no content blocks",
+            locale,
+            page.collection,
+            page.slug,
+          ),
+        );
+      }
+
+      // marker-variant
+      for (const { found, official } of findMarkerVariants(collectText(page))) {
+        issues.push(
+          issue(
+            "warning",
+            "marker-variant",
+            `"${found}" looks like the marker "${official}" — if it is meant as one, write it exactly like that (English in every locale)`,
             locale,
             page.collection,
             page.slug,
