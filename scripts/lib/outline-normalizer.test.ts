@@ -324,3 +324,47 @@ describe("linkedDocKeys", () => {
     ]);
   });
 });
+
+describe("normalizeOutlineMarkdown inline code emphasis", () => {
+  it("moves bold and italic out of inline code", () => {
+    const input = [
+      "Run `**rmapi**` and `*callsign*`, or (`***both***`).",
+      "| `**MapView**` | `plain` |",
+      "",
+    ].join("\n");
+    expect(normalizeOutlineMarkdown(input, ctx())).toBe(
+      [
+        "Run **`rmapi`** and *`callsign`*, or (***`both`***).",
+        "| **`MapView`** | `plain` |",
+        "",
+      ].join("\n"),
+    );
+  });
+
+  it("splits code spans the editor wrote next to each other", () => {
+    const input =
+      "URL: `https://``**host.example**``:9888/live/``**Callsign**``/` done\n";
+    expect(normalizeOutlineMarkdown(input, ctx())).toBe(
+      "URL: `https://`**`host.example`**`:9888/live/`**`Callsign`**`/` done\n",
+    );
+  });
+
+  it("leaves real code with asterisks alone", () => {
+    const input = [
+      "Globs `**/*.ts`, `**/dist/**`, `*_LOCAL`, `/api/v1/users/*`.",
+      "Spaced `** x **` and double `` `**a**` `` ticks.",
+      "",
+      "```",
+      "`**not inline**`",
+      "```",
+      "",
+    ].join("\n");
+    expect(normalizeOutlineMarkdown(input, ctx())).toBe(input);
+  });
+
+  it("drops the bold when a letter touches the code span", () => {
+    expect(normalizeOutlineMarkdown("x`**a**`y and `**b**`\n", ctx())).toBe(
+      "x`a`y and **`b`**\n",
+    );
+  });
+});

@@ -170,6 +170,94 @@ function unescapeMarkdown(markdown: string): string {
 const CODE_FENCE_RE = /(^[ \t]*```[\s\S]*?^[ \t]*```[ \t]*$)/m;
 const INLINE_CODE_RE = /`[^`\n]+`/g;
 
+/** `**x**`, `*x*` or `***x***`: emphasis written inside a code span. */
+const EMPHASIS_IN_CODE_RE = /^(\*{1,3})([^*\s](?:[^*]*[^*\s])?)\1$/;
+
+/** A letter or digit next to a moved `**` would keep it from opening or closing. */
+const WORD_CHAR_RE = /[\p{L}\p{N}]/u;
+
+/**
+ * Rewrite one single-backtick code span (its content without the ticks).
+ * The editor splits code at a formatting change into spans written next
+ * to each other, so `a``**b**``c` is three spans, which CommonMark reads
+ * as one. Each piece in emphasis gets the asterisks outside its own span;
+ * the plain pieces next to each other are joined into one span.
+ */
+function rewriteCodeSpan(
+  content: string,
+  before: string,
+  after: string,
+): string {
+  const parts = content.split("``");
+  if (parts.includes("")) return `\`${content}\``; // not the editor's form
+  const pieces = parts.map((piece) => {
+    const m = EMPHASIS_IN_CODE_RE.exec(piece);
+    // A glob such as **, then /dir/, then ** again is code, not bold.
+    const glob = m && m[2].startsWith("/") && m[2].endsWith("/");
+    return m && !glob
+      ? { delim: m[1], text: m[2] }
+      : { delim: "", text: piece };
+  });
+  const groups: { delim: string; text: string }[] = [];
+  for (const piece of pieces) {
+    const last = groups[groups.length - 1];
+    if (last && last.delim === piece.delim) last.text += piece.text;
+    else groups.push({ ...piece });
+  }
+  const first = groups[0].delim !== "" && WORD_CHAR_RE.test(before);
+  const last =
+    groups[groups.length - 1].delim !== "" && WORD_CHAR_RE.test(after);
+  if (first || last) {
+    // The asterisks would show as text: drop the emphasis, keep the code.
+    return `\`${groups.map((g) => g.text).join("")}\``;
+  }
+  return groups.map((g) => `${g.delim}\`${g.text}\`${g.delim}`).join("");
+}
+
+/**
+ * Outline's markdown export writes bold or italic inline code with the
+ * asterisks inside the backticks (its schema puts Code before Bold, and
+ * the serializer writes the last mark innermost), so the page showed
+ * `**rmapi**` with the stars. Move them outside: **`rmapi`**. Only a span
+ * (or a piece of a split span) that is all bold or italic changes; a glob
+ * that only starts with `**` and double-backtick spans stay as they are.
+ */
+function moveEmphasisOutOfCode(markdown: string): string {
+  const convertLine = (line: string): string => {
+    const runs = Array.from(line.matchAll(/`+/g));
+    let out = "";
+    let pos = 0;
+    for (let i = 0; i < runs.length; i++) {
+      const open = runs[i];
+      // CommonMark: a code span closes at the next run of the same length.
+      const j = runs.findIndex(
+        (run, k) => k > i && run[0].length === open[0].length,
+      );
+      if (j === -1) continue; // an unmatched run is text
+      const close = runs[j];
+      const end = close.index + close[0].length;
+      const content = line.slice(open.index + open[0].length, close.index);
+      if (
+        open[0].length === 1 &&
+        (content.includes("``") || EMPHASIS_IN_CODE_RE.test(content))
+      ) {
+        out +=
+          line.slice(pos, open.index) +
+          rewriteCodeSpan(content, line[open.index - 1] ?? "", line[end] ?? "");
+        pos = end;
+      }
+      i = j;
+    }
+    return out + line.slice(pos);
+  };
+  return markdown
+    .split(CODE_FENCE_RE)
+    .map((segment, i) =>
+      i % 2 === 1 ? segment : segment.split("\n").map(convertLine).join("\n"),
+    )
+    .join("");
+}
+
 /** Literal `\n` runs and the spaces after them; an escaped `\\n` is text. */
 const SOFT_BREAK_RE = /(?<!\\)(?:\\n)+[ \t]*/;
 
@@ -375,6 +463,7 @@ export function normalizeOutlineMarkdown(
   result = replaceRawLinks(result);
   result = removeEmptyImages(result);
   result = unescapeMarkdown(result);
+  result = moveEmphasisOutOfCode(result);
   result = convertLiteralLineBreaks(result);
   result = joinHeadingBreaks(result);
   result = stripEmojisFromHeadings(result);
