@@ -1,5 +1,10 @@
 import { useEffect, useRef, useState } from "react";
-import { Link, createFileRoute, notFound } from "@tanstack/react-router";
+import {
+  Link,
+  createFileRoute,
+  notFound,
+  redirect,
+} from "@tanstack/react-router";
 import { useTranslation } from "react-i18next";
 import {
   Check,
@@ -21,6 +26,7 @@ import { loadManifest, loadPage } from "@/lib/content/loader";
 import {
   readerBreadcrumb,
   readingOrder,
+  resolveByUrlId,
   resolveClient,
   resolveSplat,
 } from "@/lib/content/neighbors";
@@ -90,7 +96,7 @@ export const Route = createFileRoute("/$locale/$")({
     const slide = Number(search.slide);
     return Number.isInteger(slide) && slide >= 1 ? { slide } : {};
   },
-  loader: async ({ context, params }): Promise<ReaderData> => {
+  loader: async ({ context, params, location }): Promise<ReaderData> => {
     const splat = params._splat ?? "";
     const own = await resolveForLocale(context.locale, splat);
     if (own) return { ...own, contentLocale: context.locale, fallback: false };
@@ -104,6 +110,27 @@ export const Route = createFileRoute("/$locale/$")({
     for (const other of others) {
       const found = await resolveForLocale(other, splat);
       if (found) return { ...found, contentLocale: other, fallback: true };
+    }
+
+    // A renamed or moved page: same Outline urlId, new slug. Redirect to its
+    // current URL (same URL locale, slide kept) instead of a 404.
+    for (const l of [context.locale, ...others]) {
+      const manifest = await loadManifest(l).catch(() => undefined);
+      const page = manifest && resolveByUrlId(manifest, splat);
+      const target = page && `${page.collection}/${page.slug}`;
+      // Already its URL yet unresolved (its book is missing): 404, not a loop.
+      if (target && target !== splat.replace(/\/+$/, "")) {
+        throw redirect({
+          to: "/$locale/$",
+          params: {
+            locale: context.locale,
+            _splat: target,
+          },
+          search: location.search,
+          hash: location.hash,
+          replace: true,
+        });
+      }
     }
     throw notFound();
   },
