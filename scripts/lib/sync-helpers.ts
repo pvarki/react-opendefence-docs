@@ -344,6 +344,27 @@ export function buildSlugRouteMap(
   return routes;
 }
 
+/**
+ * Add the routes of pages carried over from the previous manifests (their
+ * collection was not synced this run) to the link index, so links to them
+ * keep resolving. Keys already indexed from this run's structures win.
+ */
+export function addCarriedOverRoutes(
+  index: Map<string, string>,
+  manifests: Iterable<LocaleManifest | undefined>,
+  syncedCollections: ReadonlySet<string>,
+): void {
+  for (const manifest of manifests) {
+    if (!manifest) continue;
+    for (const page of manifest.pages) {
+      if (syncedCollections.has(page.collection)) continue;
+      const route = `/${manifest.locale}/${page.collection}/${page.slug}`;
+      if (!index.has(page.slug)) index.set(page.slug, route);
+      if (!index.has(page.id)) index.set(page.id, route);
+    }
+  }
+}
+
 // ---------------------------------------------------------------------------
 // Stale page cleanup
 // ---------------------------------------------------------------------------

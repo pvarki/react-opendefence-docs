@@ -20,7 +20,7 @@ import ora from "ora";
 import cliProgress from "cli-progress";
 import chalk from "chalk";
 
-import { createOutlineClient } from "./lib/outline-api";
+import { createOutlineClient, isAccessError } from "./lib/outline-api";
 import type { CollectionSyncStats } from "./lib/script-types";
 import {
   processDocumentImages,
@@ -59,6 +59,7 @@ import {
   buildLocaleManifest,
   buildTranslationsFile,
   buildSlugRouteMap,
+  addCarriedOverRoutes,
   staleSlugs,
   writeJson,
   readJsonIfExists,
@@ -216,6 +217,8 @@ interface SyncStats {
   totalImages: number;
   deletedPages: number;
   collections: CollectionSyncStats[];
+  /** "Label (slug): error" of collections skipped as unreadable. */
+  unreachableCollections: string[];
 }
 
 // Document processing
@@ -753,6 +756,15 @@ function printCompletionReport(stats: SyncStats): void {
     }
   }
 
+  if (stats.unreachableCollections.length > 0) {
+    console.log(
+      `\n${chalk.yellow("Skipped collections")} ${chalk.gray("(previous content kept):")}`,
+    );
+    for (const line of stats.unreachableCollections) {
+      console.log(`  ${chalk.yellow("⚠")} ${line}`);
+    }
+  }
+
   console.log(`\n${chalk.bold("Summary:")}`);
   console.log(chalk.gray("─".repeat(60)));
   console.log(
@@ -844,6 +856,7 @@ async function main() {
     totalImages: 0,
     deletedPages: 0,
     collections: [],
+    unreachableCollections: [],
   };
 
   // Load the previously committed manifests; they drive the incremental
@@ -870,21 +883,50 @@ async function main() {
   const slugRouteIndex = new Map<string, string>();
   let totalDocs = 0;
 
+  // A collection Outline refuses or no longer has (403/404: deleted, or the
+  // API key has no access) is skipped and keeps its previous content, so one
+  // collection cannot stop the whole sync. Other errors still fail the run.
+  const reachable: CollectionConfig[] = [];
+  const unreachable: string[] = [];
   for (const collection of collectionsToSync) {
-    const structure = collection.noLocale
-      ? await client.getCollectionStructureFlat(
-          collection.collectionId,
-          collection.slug,
-          collection.label,
-        )
-      : await client.getCollectionStructure(
-          collection.collectionId,
-          collection.slug,
-        );
-    structureCache.set(collection.collectionId, structure);
+    try {
+      const structure = collection.noLocale
+        ? await client.getCollectionStructureFlat(
+            collection.collectionId,
+            collection.slug,
+            collection.label,
+          )
+        : await client.getCollectionStructure(
+            collection.collectionId,
+            collection.slug,
+          );
+      structureCache.set(collection.collectionId, structure);
+      reachable.push(collection);
+    } catch (error) {
+      if (!isAccessError(error)) throw error;
+      unreachable.push(
+        `${collection.label} (${collection.slug}): ${(error as Error).message}`,
+      );
+    }
   }
 
+  if (reachable.length === 0) {
+    structureSpinner.fail("No collection could be read from Outline");
+    for (const line of unreachable) {
+      console.error(`  ${chalk.red("✖")} ${line}`);
+    }
+    process.exit(1);
+  }
   structureSpinner.succeed("Document structures collected");
+  for (const line of unreachable) {
+    const warning = `Skipped, previous content kept: ${line}`;
+    console.log(`  ${chalk.yellow("⚠")} ${chalk.gray(warning)}`);
+    // Shown on the run's summary page in GitHub Actions.
+    if (process.env.GITHUB_ACTIONS === "true") {
+      console.log(`::warning title=Outline sync::${warning}`);
+    }
+  }
+  stats.unreachableCollections = unreachable;
 
   // Hidden pages: leaves whose body carries the hide marker. documents.info
   // returns the body, so one info call per page (cached for the incremental
@@ -902,7 +944,7 @@ async function main() {
     if (node.children.length === 0) leaves.push({ node, locale, collection });
     for (const child of node.children) collectLeaves(child, locale, collection);
   };
-  for (const collection of collectionsToSync) {
+  for (const collection of reachable) {
     const structure = structureCache.get(collection.collectionId)!;
     for (const locale of LOCALES) {
       for (const child of structure[locale]?.children ?? []) {
@@ -970,7 +1012,7 @@ async function main() {
 
   // Prune hidden pages (and organizers left empty), then index the routes
   // that remain: a link to a hidden page then has nowhere to go.
-  for (const collection of collectionsToSync) {
+  for (const collection of reachable) {
     const structure = structureCache.get(collection.collectionId)!;
     for (const locale of LOCALES) {
       const root = structure[locale];
@@ -987,6 +1029,12 @@ async function main() {
       );
     }
   }
+  // Pages carried over from collections not synced this run stay link targets.
+  addCarriedOverRoutes(
+    slugRouteIndex,
+    previousManifests.values(),
+    new Set(reachable.map((c) => c.slug)),
+  );
   console.log(
     `  ${chalk.blue("ℹ")} ${chalk.gray(`${totalDocs} documents to sync`)}`,
   );
@@ -1006,7 +1054,7 @@ async function main() {
     translationLinksByLocale.set(locale, new Map());
   }
 
-  for (const collection of collectionsToSync) {
+  for (const collection of reachable) {
     try {
       const { stats: collectionStats, books } = await syncCollection(
         client,
