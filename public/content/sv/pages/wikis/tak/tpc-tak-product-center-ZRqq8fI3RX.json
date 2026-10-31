@@ -23,12 +23,16 @@
       "id": "kontaktuppgifter"
     }
   ],
+  "translations": {
+    "en": "/en/wikis/tak/tpc-tak-product-center-CYKrI5BZFA",
+    "fi": "/fi/wikis/tak/tpc-tak-product-center-BAsOmaQorN",
+    "sv": "/sv/wikis/tak/tpc-tak-product-center-ZRqq8fI3RX"
+  },
   "blocks": [
     {
       "type": "image",
       "src": "/content/images/sv/attachments/a27d2138cd9878f2.webp",
       "alt": "",
-      "caption": "=225x",
       "width": 225,
       "height": 225
     },

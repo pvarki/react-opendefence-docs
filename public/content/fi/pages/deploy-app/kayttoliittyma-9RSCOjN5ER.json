@@ -14,6 +14,11 @@
   "createdAt": "2026-02-17T06:55:27.250Z",
   "updatedAt": "2026-02-25T07:32:33.936Z",
   "headings": [],
+  "translations": {
+    "en": "/en/deploy-app/interface-4Ncp4affe9",
+    "fi": "/fi/deploy-app/kayttoliittyma-9RSCOjN5ER",
+    "sv": "/sv/deploy-app/granssnitt-vx5s9QUx7Y"
+  },
   "blocks": [
     {
       "type": "slideset",

@@ -34,13 +34,13 @@
         {
           "title": "RECON-syötteen perusteet",
           "layout": "text",
-          "html": "<ul>\n<li>RECON Feed on tarkoitettu komentopaikan (Command Post) hallinnoitavaksi.</li>\n<li>Taistelijoilla on siihen vain lukuoikeus.</li>\n<li>Jokainen Deploy App TAK -palvelimen ATAK-käyttäjä tilaa RECON Feedin automaattisesti.\nValmiina oleva ja tilattu Recon Feed näkyy tässä.</li>\n</ul>",
+          "html": "<ul>\n<li>RECON Feed on tarkoitettu komentopaikan (Command Post) hallinnoitavaksi.</li>\n<li>Taistelijoilla on siihen vain lukuoikeus.</li>\n<li>Jokainen Deploy App TAK -palvelimen ATAK-käyttäjä tilaa RECON Feedin automaattisesti.</li>\n</ul>\n<p>Valmiina oleva ja tilattu Recon Feed näkyy tässä.</p>",
           "images": []
         },
         {
           "title": "RECON-syötteen tietojen päivittäminen 1",
           "layout": "image-bottom",
-          "html": "<ul>\n<li>Taistelijat lähettävät havainnot komentopaikalle GeoChatin kautta HQ-roolin käyttäjille tai havaintosyötteen (Observations feed) kautta, jos yksiköllänne on sellainen käytössä.</li>\n<li>Lähetä merkkisi joko <strong>to role -> HQ</strong> (näkyy kuvassa) tai havaintosyötteeseen.\nBlue43 lähettää tässä uuden merkkinsä HQ-roolille.</li>\n</ul>",
+          "html": "<ul>\n<li>Taistelijat lähettävät havainnot komentopaikalle GeoChatin kautta HQ-roolin käyttäjille tai havaintosyötteen (Observations feed) kautta, jos yksiköllänne on sellainen käytössä.</li>\n<li>Lähetä merkkisi joko <strong>to role -> HQ</strong> (näkyy kuvassa) tai havaintosyötteeseen.</li>\n</ul>\n<p>Blue43 lähettää tässä uuden merkkinsä HQ-roolille.</p>",
           "images": [
             {
               "src": "/content/images/fi/attachments/13ed3f60a7fb002f.webp",
@@ -52,7 +52,7 @@
         {
           "title": "RECON-syötteen tietojen päivittäminen 2",
           "layout": "image-bottom",
-          "html": "<ul>\n<li>Komentopaikka tarkistaa vastaanotetut tiedot, varmentaa ne ja välittää tarvittaessa olennaiset tiedot RECON Feediin.</li>\n<li>Komentopaikka myös seuraa syötteen tietoja, ja vanhat, epäolennaiset tiedot poistetaan syötteestä.\nKomentopaikkana toimiva iTAK HQ -käyttäjä näkyy tässä lisäämässä Blue43:n merkkiä RECON-syötteeseen.</li>\n</ul>",
+          "html": "<ul>\n<li>Komentopaikka tarkistaa vastaanotetut tiedot, varmentaa ne ja välittää tarvittaessa olennaiset tiedot RECON Feediin.</li>\n<li>Komentopaikka myös seuraa syötteen tietoja, ja vanhat, epäolennaiset tiedot poistetaan syötteestä.</li>\n</ul>\n<p>Komentopaikkana toimiva iTAK HQ -käyttäjä näkyy tässä lisäämässä Blue43:n merkkiä RECON-syötteeseen.</p>",
           "images": [
             {
               "src": "/content/images/fi/attachments/224048abc6268778.webp",
@@ -64,7 +64,7 @@
         {
           "title": "RECON-syötteen tietojen päivittäminen 3",
           "layout": "image-bottom",
-          "html": "<ul>\n<li>Lisätyt tiedot näkyvät kaikille käyttäjille</li>\n<li>Poistetut tiedot katoavat käyttäjiltä.\nVasta lisätty merkkimme Blue43:lta näytettynä RECON-syötteestä.</li>\n</ul>",
+          "html": "<ul>\n<li>Lisätyt tiedot näkyvät kaikille käyttäjille</li>\n<li>Poistetut tiedot katoavat käyttäjiltä.</li>\n</ul>\n<p>Vasta lisätty merkkimme Blue43:lta näytettynä RECON-syötteestä.</p>",
           "images": [
             {
               "src": "/content/images/fi/attachments/0348a5da252e244d.webp",
@@ -76,7 +76,7 @@
         {
           "title": "RECON-syötteen kierrätys",
           "layout": "image-bottom",
-          "html": "<ul>\n<li>RECON-syötteeseen kertyy aktiivisessa käytössä paljon tietoa, ja se on kierrätettävä vanhojen tietojen poistamiseksi.</li>\n<li>Kierrätyksen tekee komentopaikka, ja taistelijat kutsutaan uusiin syötteisiin säännöllisin väliajoin.\nTässä näkyy päivitetty, käytettävissä oleva RECON-syöte.</li>\n</ul>",
+          "html": "<ul>\n<li>RECON-syötteeseen kertyy aktiivisessa käytössä paljon tietoa, ja se on kierrätettävä vanhojen tietojen poistamiseksi.</li>\n<li>Kierrätyksen tekee komentopaikka, ja taistelijat kutsutaan uusiin syötteisiin säännöllisin väliajoin.</li>\n</ul>\n<p>Tässä näkyy päivitetty, käytettävissä oleva RECON-syöte.</p>",
           "images": [
             {
               "src": "/content/images/fi/attachments/22ab27310be30c0d.webp",
@@ -89,7 +89,7 @@
     },
     {
       "type": "html",
-      "html": "<p>Kun RECON-syöte on selvillä, jatka kohtaan</p>\n<p>Lue lisää RECON-syötteestä TAK Wikistä <a href=\"/doc/bf3416b5-d2ca-4dc6-89a2-b48cfca69618\">Takserver RECON feed</a></p>\n<p>Lue lisää havaintojen välittämisestä komentopaikalle TAK WIKIstä <a href=\"/doc/58a46804-6639-4b5e-a7c0-3056309cb411\">Forwarding Observations</a></p>"
+      "html": "<p>Kun RECON-syöte on selvillä, jatka kohtaan</p>\n<p>Lue lisää RECON-syötteestä TAK Wikistä <a href=\"/en/wikis/tak/takserver-recon-feed-6S3IuBlBTY\">Takserver RECON feed</a></p>\n<p>Lue lisää havaintojen välittämisestä komentopaikalle TAK WIKIstä <a href=\"/en/wikis/tak/forwarding-observations-K5fcmMIAnp\">Forwarding Observations</a></p>"
     }
   ]
 }

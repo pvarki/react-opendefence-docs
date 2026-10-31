@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 1,
+  "id": "993a8f3f-5aef-47b4-828e-6a025e2495a0",
+  "slug": "ensimmainen-kirjautuminen-76Ni4wUAga",
+  "collection": "deploy-app",
+  "locale": "fi",
+  "title": "Ensimmäinen kirjautuminen",
+  "breadcrumb": [
+    "Platforms",
+    "macOS",
+    "Ylläpitäjäohjeet",
+    "Ensimmäinen kirjautuminen"
+  ],
+  "createdAt": "2026-10-22T12:32:12.310Z",
+  "updatedAt": "2026-10-22T13:25:48.260Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/deploy-app/first-login-bi15QH96SC",
+    "fi": "/fi/deploy-app/ensimmainen-kirjautuminen-76Ni4wUAga",
+    "sv": "/sv/deploy-app/forsta-inloggningen-H4UfzjTACY"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Kirjaudu ensimmäisen ylläpitäjän koodilla",
+          "layout": "image-left",
+          "html": "<p>Avaa Deploy Appin osoite. Kirjoita palveluntarjoajalta saamasi ensimmäisen ylläpitäjän koodi kenttään <strong>Syötä koodi</strong> ja paina <strong>Kirjaudu koodilla</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/9fea3045e9489c9c.webp",
+              "width": 1614,
+              "height": 1580
+            }
+          ]
+        },
+        {
+          "title": "Valitse kutsutunnus",
+          "layout": "image-left",
+          "html": "<p>Kirjoita kutsutunnus, josta yksikkösi tunnistaa sinut, ja paina <strong>Jatka</strong>.</p>\n<ul>\n<li>Käytät samaa kutsutunnusta kaikissa palveluissa.</li>\n<li>Se on myös varmenteesi salasana.</li>\n<li>Ensimmäisenä ylläpitäjänä ohitat odotushuoneen.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/63fccf7cda0fd94d.webp",
+              "width": 1612,
+              "height": 1454
+            }
+          ]
+        },
+        {
+          "title": "Hae avaimesi",
+          "layout": "image-left",
+          "html": "<p>Paina <strong>Lataa avain</strong>. Avain on tiedosto, jonka asennat tälle Macille.</p>\n<ul>\n<li>Safari kysyy ensimmäisellä kerralla. Paina <strong>Salli</strong>.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/630295e02b74e02a.webp",
+              "width": 2060,
+              "height": 1576
+            }
+          ]
+        },
+        {
+          "title": "Asenna avain",
+          "layout": "image-left",
+          "html": "<ol>\n<li>Avaa ladattu tiedosto.</li>\n<li>Avaa lukitus Touch ID:llä tai Macin salasanalla.</li>\n<li>Anna salasanaksi kutsutunnuksesi ja paina <strong>OK</strong>.</li>\n</ol>\n<p>Avainnippu aukeaa. Palaa selaimeen ja paina <strong>Asennettu – jatka</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/e8aa4f790a593ba5.webp",
+              "width": 2068,
+              "height": 2008
+            }
+          ]
+        },
+        {
+          "title": "Avainnippu: avaa varmenne",
+          "layout": "image-left",
+          "html": "<p>Avainnipussa:</p>\n<ol>\n<li>Valitse <strong>Omat varmenteet</strong>.</li>\n<li>Hae kutsutunnustasi. ⌘V liittää sen.</li>\n<li>Kaksoisklikkaa kutsutunnuksesi riviä.</li>\n</ol>\n<p>Varmenne näkyy listassa vasta, kun haet sitä. Paina <strong>Tehty – seuraava</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/271c895df05773bf.webp",
+              "width": 2060,
+              "height": 1832
+            }
+          ]
+        },
+        {
+          "title": "Avainnippu: luota varmenteeseen",
+          "layout": "image-left",
+          "html": "<ol>\n<li>Avaa <strong>Luottamus</strong>.</li>\n<li>Valitse kohtaan <strong>Varmennetta käytettäessä</strong> vaihtoehto <strong>Luota aina</strong>.</li>\n<li>Sulje ikkuna ja vahvista Touch ID:llä tai salasanalla.</li>\n</ol>\n<p>Paina <strong>Tehty – seuraava</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/4eff90ecab15449a.webp",
+              "width": 2060,
+              "height": 1752
+            }
+          ]
+        },
+        {
+          "title": "Avainnippu: salli avaimen käyttö",
+          "layout": "image-left",
+          "html": "<ol>\n<li>Avaa nuoli kutsutunnuksesi rivin vasemmalta puolelta.</li>\n<li>Kaksoisklikkaa <strong>Imported Private Key</strong>.</li>\n<li>Valitse <strong>Pääsynhallinta</strong>.</li>\n<li>Valitse <strong>Salli kaikkien appien käyttää tätä kohdetta</strong>.</li>\n<li>Paina <strong>Tallenna muutokset</strong>. Anna Macin salasana (ei Touch ID) ja paina <strong>Salli</strong>.</li>\n<li>Sulje ikkuna ja Avainnippu.</li>\n</ol>\n<p>Paina <strong>Valmis – jatka</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/858ec71b20aab4ea.webp",
+              "width": 2060,
+              "height": 2046
+            }
+          ]
+        },
+        {
+          "title": "Siirry palveluun",
+          "layout": "image-left",
+          "html": "<p>Paina <strong>Siirry palveluun</strong>. Valitse kutsutunnuksesi ja paina <strong>OK</strong>.</p>\n<ul>\n<li>Jos Mac kysyy salasanaa, anna Macin salasana ja valitse <strong>Salli aina</strong>.</li>\n<li>Safarissa paina <strong>Siirry palveluun</strong> ja sitten <strong>Kirjaudu varmenteella</strong>. Valitse kutsutunnuksesi ja paina <strong>Jatka</strong>.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/0a116987778ba4fe.webp",
+              "width": 2060,
+              "height": 1730
+            }
+          ]
+        },
+        {
+          "title": "Olet sisällä",
+          "layout": "image-left",
+          "html": "<p>Deploy App aukeaa ylläpitäjän työkaluineen. Lyhyt opastus näkyy ensimmäisellä kerralla. Paina <strong>Seuraava</strong> käydäksesi sen läpi, tai sulje se.</p>\n<ul>\n<li>Lisää seuraavaksi käyttäjät. Katso ohje käyttäjien lisäämisestä.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/72a076655b11cbc6.webp",
+              "width": 2200,
+              "height": 2200
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

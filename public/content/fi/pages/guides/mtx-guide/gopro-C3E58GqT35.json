@@ -18,6 +18,11 @@
       "id": "gopro-striimaus-gopro-quick-sovelluksella"
     }
   ],
+  "translations": {
+    "en": "/en/guides/mtx-guide/gopro-gDG1IhzxmJ",
+    "fi": "/fi/guides/mtx-guide/gopro-C3E58GqT35",
+    "sv": "/sv/guides/mtx-guide/gopro-2PrQ7u3goE"
+  },
   "blocks": [
     {
       "type": "html",

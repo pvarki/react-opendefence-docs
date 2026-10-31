@@ -19,10 +19,15 @@
       "id": "tak-tools-used"
     }
   ],
+  "translations": {
+    "en": "/en/wikis/tak/takserver-groups-fywzxIBI9A",
+    "fi": "/fi/wikis/tak/takserver-ryhmat-6chJPiJi7g",
+    "sv": "/sv/wikis/tak/takserver-grupper-zHjvp8incO"
+  },
   "blocks": [
     {
       "type": "html",
-      "html": "<p>Groups are used to manage who sees what. Users in the same group will share and view information about themselves and others. In the PVARKI setup, at the start every user is in the default group, and admins can change them when needed. A user can be part of multiple groups.</p>\n<p>A user can belong to a group in three ways:</p>\n<ul>\n<li><strong>In</strong> – the user sends (writes) data to the group</li>\n<li><strong>Out</strong> – the user receives (reads) data from the group</li>\n<li><strong>Both</strong> – the user both sends and receives data within the group</li>\n</ul>\n<p>These are managed with group (Both), group_WRITE (In) and group_READ (Out). See Keycloak instructions for how to manage groups in PVARKI.</p>\n<p>Basic users don't see the groups and cannot change them. Group management is for admin users, and they can view the groups through different TAK tools and the takserver admin UI.</p>\n<h2 id=\"tak-tools-used\"><a href=\"#tak-tools-used\">TAK Tools used:</a></h2>\n<ul>\n<li>Not used</li>\n</ul>"
+      "html": "<p>Groups are used to manage who sees what. Users in the same group will share and view information about themselves and others. In the PVARKI setup, at the start every user is in the default group, and admins can change them when needed. A user can be part of multiple groups.</p>\n<p>A user can belong to a group in three ways:</p>\n<ul>\n<li><strong>In</strong> – the user sends (writes) data to the group</li>\n<li><strong>Out</strong> – the user receives (reads) data from the group</li>\n<li><strong>Both</strong> – the user both sends and receives data within the group</li>\n</ul>\n<p>These are managed with group (Both), group_WRITE (In) and group_READ (Out). See Keycloak instructions for how to manage groups in PVARKI.</p>\n<p>Basic users don’t see the groups and cannot change them. Group management is for admin users, and they can view the groups through different TAK tools and the takserver admin UI.</p>\n<h2 id=\"tak-tools-used\"><a href=\"#tak-tools-used\">TAK Tools used:</a></h2>\n<ul>\n<li>Not used</li>\n</ul>"
     }
   ]
 }

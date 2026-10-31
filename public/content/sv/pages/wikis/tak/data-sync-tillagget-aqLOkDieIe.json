@@ -30,10 +30,21 @@
       "id": "data-sync-tilläggets-användarhandbok-för-atak"
     }
   ],
+  "translations": {
+    "en": "/en/wikis/tak/data-sync-plugin-Ux2V5Gdsry",
+    "fi": "/fi/wikis/tak/data-sync-lisaosa-knb4IdgXyb"
+  },
   "blocks": [
     {
+      "type": "image",
+      "src": "/content/images/sv/attachments/5c6d780d65fe7f7b.webp",
+      "alt": "",
+      "width": 192,
+      "height": 192
+    },
+    {
       "type": "html",
-      "html": "<p><img src=\"/content/images/sv/attachments/5c6d780d65fe7f7b.webp\" alt=\"\">\\n</p>\n<h2 id=\"tilläggsbeskrivning\"><a href=\"#tilläggsbeskrivning\"><strong>Tilläggsbeskrivning</strong></a></h2>\n<p>Data Synchronization-tillägget används för att synkronisera flera ATAK-enheter som deltar i samma övning eller händelse. Detta tillägg kräver TAK Server version 1.3.3 eller senare. TAK Server lagrar all <em>mission</em>-data i serverns databas. Klientenheter kan ansluta sig till en mission för att få dynamiska uppdateringar i takt med att uppdraget förändras, eller för att synkronisera data som missats när enheten varit frånkopplad.</p>\n<p>Tillägget stöder för närvarande följande datatyper:</p>\n<p>• <strong>Kartobjekt (CoT-data)</strong> – såsom markeringar, former, rutter osv.\\n• <strong>Filer</strong> – valfri fil kan synkroniseras, inklusive bilder, GRG:er, konfigurationsfiler m.m.\\n• <strong>Loggar</strong> – Mission- eller Recce-loggar är tidsstämplade händelser kopplade till ett uppdrag\\n• <strong>Chat</strong> – Varje mission har ett permanent uppdragsbaserat chattrum</p>\n<p>Godtyckliga CoT/UID:er kan knytas till en mission så att alla uppdateringar av dessa objekt automatiskt synkroniseras till alla prenumeranter.\\nTillägget möjliggör även export av hela missionen som ett mission-paket (zip-fil) för arkivering eller delning med andra system. Det erbjuder dessutom <em>dead reckoning</em>-navigeringsförmåga för situationer där GPS eller annan positionering inte är tillgänglig.</p>\n<h2 id=\"instruktionsvideor\"><a href=\"#instruktionsvideor\">Instruktionsvideor</a></h2>\n<h4 id=\"data-sync-plugin-for-atak-45min\"><a href=\"#data-sync-plugin-for-atak-45min\">Data Sync Plugin for ATAK (45min)</a></h4>"
+      "html": "<h2 id=\"tilläggsbeskrivning\"><a href=\"#tilläggsbeskrivning\"><strong>Tilläggsbeskrivning</strong></a></h2>\n<p>Data Synchronization-tillägget används för att synkronisera flera ATAK-enheter som deltar i samma övning eller händelse. Detta tillägg kräver TAK Server version 1.3.3 eller senare. TAK Server lagrar all <em>mission</em>-data i serverns databas. Klientenheter kan ansluta sig till en mission för att få dynamiska uppdateringar i takt med att uppdraget förändras, eller för att synkronisera data som missats när enheten varit frånkopplad.</p>\n<p>Tillägget stöder för närvarande följande datatyper:</p>\n<p>• <strong>Kartobjekt (CoT-data)</strong> – såsom markeringar, former, rutter osv.\n• <strong>Filer</strong> – valfri fil kan synkroniseras, inklusive bilder, GRG:er, konfigurationsfiler m.m.\n• <strong>Loggar</strong> – Mission- eller Recce-loggar är tidsstämplade händelser kopplade till ett uppdrag\n• <strong>Chat</strong> – Varje mission har ett permanent uppdragsbaserat chattrum</p>\n<p>Godtyckliga CoT/UID:er kan knytas till en mission så att alla uppdateringar av dessa objekt automatiskt synkroniseras till alla prenumeranter.\nTillägget möjliggör även export av hela missionen som ett mission-paket (zip-fil) för arkivering eller delning med andra system. Det erbjuder dessutom <em>dead reckoning</em>-navigeringsförmåga för situationer där GPS eller annan positionering inte är tillgänglig.</p>\n<h2 id=\"instruktionsvideor\"><a href=\"#instruktionsvideor\">Instruktionsvideor</a></h2>\n<h4 id=\"data-sync-plugin-for-atak-45min\"><a href=\"#data-sync-plugin-for-atak-45min\">Data Sync Plugin for ATAK (45min)</a></h4>"
     },
     {
       "type": "youtube",

@@ -30,12 +30,15 @@
       "id": "toolbar-verktygets-avsnitt-i-atak-manualen"
     }
   ],
+  "translations": {
+    "en": "/en/wikis/tak/toolbar-tool-EKByDYLVSo",
+    "fi": "/fi/wikis/tak/toolbar-tyokalu-bYyF756MBb"
+  },
   "blocks": [
     {
       "type": "image",
       "src": "/content/images/sv/attachments/9dfc62f372874a37.webp",
       "alt": "",
-      "caption": "=224x",
       "width": 224,
       "height": 32
     },

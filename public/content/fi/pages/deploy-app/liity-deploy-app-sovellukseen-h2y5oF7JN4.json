@@ -12,7 +12,7 @@
     "Liity Deploy App -sovellukseen"
   ],
   "createdAt": "2026-06-18T20:35:46.726Z",
-  "updatedAt": "2026-06-18T20:39:11.159Z",
+  "updatedAt": "2026-10-22T13:25:47.184Z",
   "headings": [],
   "translations": {
     "en": "/en/deploy-app/join-a-deploy-app-Ns73TcVodz",
@@ -21,8 +21,94 @@
   },
   "blocks": [
     {
-      "type": "html",
-      "html": "<ul>\n<li>Vastaanota kutsulinkki tai skannaa QR-koodi\n<ul>\n<li>Syötä kutsutunnus (Callsign)\n<ul>\n<li>Avaa Callsign.pfx-tiedosto ja tuo se\n<ul>\n<li>Yhdistä Deploy App -sovellukseen varmenteella\n<ul>\n<li>Käytä sovelluksia</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>"
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Avaa kutsu",
+          "layout": "image-left",
+          "html": "<p>Avaa saamasi kutsulinkki tai skannaa QR-koodi. Deploy App aukeaa kutsukoodi valmiiksi täytettynä.</p>\n<ul>\n<li>Sait pelkän koodin? Kirjoita se kenttään <strong>Syötä koodi</strong> ja paina <strong>Kirjaudu koodilla</strong>.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/fa31e2f598759212.webp",
+              "width": 1614,
+              "height": 1580
+            }
+          ]
+        },
+        {
+          "title": "Valitse kutsutunnus",
+          "layout": "image-left",
+          "html": "<p>Kirjoita kutsutunnus, josta yksikkösi tunnistaa sinut, ja paina <strong>Jatka</strong>.</p>\n<ul>\n<li>Käytät samaa kutsutunnusta kaikissa palveluissa.</li>\n<li>Se on myös varmenteesi salasana.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/8d3277691ea2ddea.webp",
+              "width": 1612,
+              "height": 1454
+            }
+          ]
+        },
+        {
+          "title": "Pyydä hyväksyntä",
+          "layout": "image-left",
+          "html": "<p>Ylläpitäjän pitää hyväksyä sinut.</p>\n<ul>\n<li>Ylläpitäjä vieressäsi: näytä hänelle QR-koodi.</li>\n<li>Ylläpitäjä muualla: paina <strong>Kopioi linkki</strong> ja liitä se viestiin ylläpitäjälle.</li>\n<li>Jätä sivu auki. Se jatkaa itsestään, kun sinut on hyväksytty.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/4a0447d672c3dc36.webp",
+              "width": 1920,
+              "height": 1752
+            }
+          ]
+        },
+        {
+          "title": "Hae avaimesi",
+          "layout": "image-left",
+          "html": "<p>Paina <strong>Lataa avain</strong>. Avain on tiedosto, jonka asennat tälle tietokoneelle.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/b90c83fc556af89d.webp",
+              "width": 2060,
+              "height": 1576
+            }
+          ]
+        },
+        {
+          "title": "Asenna avain",
+          "layout": "image-left",
+          "html": "<p>Avaa tiedosto selaimen latauksista oikeasta yläkulmasta. <strong>Ohjattu varmenteiden tuominen</strong> -ikkunassa:</p>\n<ol>\n<li>Paina <strong>Seuraava</strong> kahdesti.</li>\n<li>Anna salasanaksi kutsutunnuksesi.</li>\n<li>Paina <strong>Seuraava</strong> kahdesti, sitten <strong>Valmis</strong> ja <strong>OK</strong>.</li>\n</ol>\n<p>Palaa selaimeen ja paina <strong>Asennettu – jatka</strong>.</p>\n<ul>\n<li>Firefoxissa Deploy App näyttää lisävaiheen, jossa avain lisätään Firefoxiin.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/7dd9ad63c01b2ecf.webp",
+              "width": 2068,
+              "height": 2200
+            }
+          ]
+        },
+        {
+          "title": "Siirry palveluun",
+          "layout": "image-left",
+          "html": "<p>Paina <strong>Siirry palveluun</strong>. Kun selain kysyy varmennetta, valitse kutsutunnuksesi ja paina <strong>OK</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/473cac4de4595533.webp",
+              "width": 2060,
+              "height": 1678
+            }
+          ]
+        },
+        {
+          "title": "Olet sisällä",
+          "layout": "image-left",
+          "html": "<p>Deploy App aukeaa. Lyhyt opastus näkyy ensimmäisellä kerralla. Paina <strong>Seuraava</strong> käydäksesi sen läpi, tai sulje se.</p>\n<ul>\n<li>Valitse <strong>Älä näytä minulle ohjeita automaattisesti</strong>, jos et halua ohjeiden aukeavan itsestään.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/f5a439ede34d615d.webp",
+              "width": 2200,
+              "height": 2200
+            }
+          ]
+        }
+      ]
     }
   ]
 }

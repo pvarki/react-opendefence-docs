@@ -30,6 +30,10 @@
       "id": "toolbar--tool-section-from-atak-manual"
     }
   ],
+  "translations": {
+    "en": "/en/wikis/tak/toolbar-tool-EKByDYLVSo",
+    "fi": "/fi/wikis/tak/toolbar-tyokalu-bYyF756MBb"
+  },
   "blocks": [
     {
       "type": "image",

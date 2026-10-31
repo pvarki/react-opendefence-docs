@@ -35,6 +35,10 @@
       "id": "point-dropper--tool-section-from-atak-manual"
     }
   ],
+  "translations": {
+    "en": "/en/wikis/tak/point-dropper-tool-6BNurdPXpp",
+    "fi": "/fi/wikis/tak/point-dropper-tyokalu-eM4UMc4BBc"
+  },
   "blocks": [
     {
       "type": "image",

@@ -135,7 +135,7 @@
         {
           "title": "New Feed Created!",
           "layout": "text",
-          "html": "<ul>\n<li>Your new feed is now here!</li>\n<li>If the default role is not Admin, people from your server can now subscribe your feed.</li>\n</ul>\n<p>After successful testing Create &#x26; Manage Feeds, continue to <a href=\"/doc/2676ebbb-83f4-4569-a7a2-7050395f28c8\">Draw &#x26; share Plans</a></p>\n<p>Korjataan Data Sync Default Role Owner kuvaus:\\nKäyttäjästä tulee oletuksena Admin Data Sync feedille. Tätä ominaisuutta ei suositella käytettäväksi, uusi omistaja voi</p>",
+          "html": "<ul>\n<li>Your new feed is now here!</li>\n<li>If the default role is not Admin, people from your server can now subscribe your feed.</li>\n</ul>\n<p>After successful testing Create &#x26; Manage Feeds, continue to <a href=\"/en/guides/tak-guide/draw-share-plans-fxjT3hDZ5p\">Draw &#x26; share Plans</a></p>\n<p>Korjataan Data Sync Default Role Owner kuvaus:\nKäyttäjästä tulee oletuksena Admin Data Sync feedille. Tätä ominaisuutta ei suositella käytettäväksi, uusi omistaja voi</p>",
           "images": []
         },
         {

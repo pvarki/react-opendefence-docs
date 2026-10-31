@@ -18,6 +18,11 @@
       "id": "publish-stream-with-uas-tool"
     }
   ],
+  "translations": {
+    "en": "/en/guides/mtx-guide/uas-tool-DwT6M5lj9c",
+    "fi": "/fi/guides/mtx-guide/uas-tool-CX4y0uY0IF",
+    "sv": "/sv/guides/mtx-guide/uas-tool-97tr5ME3hk"
+  },
   "blocks": [
     {
       "type": "html",

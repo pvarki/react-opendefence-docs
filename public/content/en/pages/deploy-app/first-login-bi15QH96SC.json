@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 1,
+  "id": "e35f5be2-0c5d-488d-8462-7cab245ce501",
+  "slug": "first-login-bi15QH96SC",
+  "collection": "deploy-app",
+  "locale": "en",
+  "title": "First Login",
+  "breadcrumb": [
+    "Platforms",
+    "macOS",
+    "Admin Guide",
+    "First Login"
+  ],
+  "createdAt": "2026-10-22T12:32:09.811Z",
+  "updatedAt": "2026-10-22T13:25:44.496Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/deploy-app/first-login-bi15QH96SC",
+    "fi": "/fi/deploy-app/ensimmainen-kirjautuminen-76Ni4wUAga",
+    "sv": "/sv/deploy-app/forsta-inloggningen-H4UfzjTACY"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Log in with the first-admin code",
+          "layout": "image-left",
+          "html": "<p>Open your Deploy App address. Type the first-admin code from your service operator in <strong>Enter your code</strong> and press <strong>Login with Code</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/345cdff96de0712f.webp",
+              "width": 1614,
+              "height": 1600
+            }
+          ]
+        },
+        {
+          "title": "Choose your callsign",
+          "layout": "image-left",
+          "html": "<p>Type a callsign your unit knows you by and press <strong>Continue</strong>.</p>\n<ul>\n<li>You use the same callsign in every service.</li>\n<li>It is also your certificate password.</li>\n<li>As the first admin you skip the waiting room.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/235ac24e7ce72469.webp",
+              "width": 1612,
+              "height": 1454
+            }
+          ]
+        },
+        {
+          "title": "Get your key",
+          "layout": "image-left",
+          "html": "<p>Press <strong>Download key</strong>. The key is a file you install on this Mac.</p>\n<ul>\n<li>Safari asks the first time. Press <strong>Allow</strong>.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/af9d9be5ba3950d5.webp",
+              "width": 2060,
+              "height": 1576
+            }
+          ]
+        },
+        {
+          "title": "Install the key",
+          "layout": "image-left",
+          "html": "<ol>\n<li>Open the downloaded file.</li>\n<li>Unlock with Touch ID or your Mac password.</li>\n<li>Enter your callsign as the password and press <strong>OK</strong>.</li>\n</ol>\n<p>Keychain Access opens. Come back to the browser and press <strong>Installed – continue</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/42987ca6309c71fa.webp",
+              "width": 2068,
+              "height": 2032
+            }
+          ]
+        },
+        {
+          "title": "Keychain: open the certificate",
+          "layout": "image-left",
+          "html": "<p>In Keychain Access:</p>\n<ol>\n<li>Choose <strong>My Certificates</strong>.</li>\n<li>Search for your callsign. ⌘V pastes it.</li>\n<li>Double-click your callsign row.</li>\n</ol>\n<p>The certificate only shows up after you search for it. Press <strong>Done – next</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/5390ef66e31537ab.webp",
+              "width": 2060,
+              "height": 1832
+            }
+          ]
+        },
+        {
+          "title": "Keychain: trust the certificate",
+          "layout": "image-left",
+          "html": "<ol>\n<li>Open <strong>Trust</strong>.</li>\n<li>Set <strong>When using this certificate</strong> to <strong>Always Trust</strong>.</li>\n<li>Close the window and confirm with Touch ID or your password.</li>\n</ol>\n<p>Press <strong>Done – next</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/d60479d5342f6072.webp",
+              "width": 2060,
+              "height": 1752
+            }
+          ]
+        },
+        {
+          "title": "Keychain: allow use of the key",
+          "layout": "image-left",
+          "html": "<ol>\n<li>Open the arrow left of your callsign row.</li>\n<li>Double-click <strong>Imported Private Key</strong>.</li>\n<li>Choose <strong>Access Control</strong>.</li>\n<li>Select <strong>Allow all applications to access this item</strong>.</li>\n<li>Press <strong>Save Changes</strong>. Enter your Mac password (not Touch ID) and press <strong>Allow</strong>.</li>\n<li>Close the window and Keychain Access.</li>\n</ol>\n<p>Press <strong>Ready – continue</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/f6298c0279259f83.webp",
+              "width": 2060,
+              "height": 2052
+            }
+          ]
+        },
+        {
+          "title": "Go to the service",
+          "layout": "image-left",
+          "html": "<p>Press <strong>Go to the service</strong>. Select your callsign and press <strong>OK</strong>.</p>\n<ul>\n<li>If your Mac asks for a password, enter your Mac password and choose <strong>Always Allow</strong>.</li>\n<li>In Safari, press <strong>Go to the service</strong>, then <strong>Login with Certificate</strong>. Select your callsign and press <strong>Continue</strong>.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/6e5b6be7ccb16c93.webp",
+              "width": 2060,
+              "height": 1736
+            }
+          ]
+        },
+        {
+          "title": "You're in",
+          "layout": "image-left",
+          "html": "<p>Deploy App opens with the admin tools. A short guide shows the first time. Press <strong>Next</strong> to go through it, or close it.</p>\n<ul>\n<li>Next, add your users. See <strong>Adding Users</strong>.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/cb985ac4e3ca7cca.webp",
+              "width": 2200,
+              "height": 2200
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

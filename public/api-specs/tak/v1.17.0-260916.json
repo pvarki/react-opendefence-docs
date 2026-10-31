@@ -1,0 +1,1356 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "FastAPI",
+    "version": "1.17.0+260916"
+  },
+  "paths": {
+    "/api/v1/users/created": {
+      "post": {
+        "tags": [
+          "users"
+        ],
+        "summary": "User Created",
+        "description": "New device cert was created",
+        "operationId": "user_created_api_v1_users_created_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserCRUDRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/OperationResultResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "MTLSHeader": []
+          }
+        ]
+      }
+    },
+    "/api/v1/users/revoked": {
+      "post": {
+        "tags": [
+          "users"
+        ],
+        "summary": "User Revoked",
+        "description": "Device cert was revoked",
+        "operationId": "user_revoked_api_v1_users_revoked_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserCRUDRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/OperationResultResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "MTLSHeader": []
+          }
+        ]
+      }
+    },
+    "/api/v1/users/promoted": {
+      "post": {
+        "tags": [
+          "users"
+        ],
+        "summary": "User Promoted",
+        "description": "Device cert was promoted to admin privileges",
+        "operationId": "user_promoted_api_v1_users_promoted_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserCRUDRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/OperationResultResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "MTLSHeader": []
+          }
+        ]
+      }
+    },
+    "/api/v1/users/demoted": {
+      "post": {
+        "tags": [
+          "users"
+        ],
+        "summary": "User Demoted",
+        "description": "Device cert was demoted to standard privileges",
+        "operationId": "user_demoted_api_v1_users_demoted_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserCRUDRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/OperationResultResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "MTLSHeader": []
+          }
+        ]
+      }
+    },
+    "/api/v1/users/updated": {
+      "put": {
+        "tags": [
+          "users"
+        ],
+        "summary": "User Updated",
+        "description": "Device callsign updated",
+        "operationId": "user_updated_api_v1_users_updated_put",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserCRUDRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/OperationResultResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "MTLSHeader": []
+          }
+        ]
+      }
+    },
+    "/api/v1/clients/fragment": {
+      "post": {
+        "tags": [
+          "clients"
+        ],
+        "summary": "Client Instruction Fragment",
+        "description": "Return zip package containing client config and certificates",
+        "operationId": "client_instruction_fragment_api_v1_clients_fragment_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserCRUDRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "items": {
+                    "additionalProperties": {
+                      "type": "string"
+                    },
+                    "type": "object"
+                  },
+                  "type": "array",
+                  "title": "Response Client Instruction Fragment Api V1 Clients Fragment Post"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "deprecated": true,
+        "security": [
+          {
+            "MTLSHeader": []
+          }
+        ]
+      }
+    },
+    "/api/v1/admins/fragment": {
+      "get": {
+        "tags": [
+          "admins"
+        ],
+        "summary": "Admin Instruction Fragment",
+        "description": "Return user instructions, we use POST because the integration layer might not keep\ntrack of callsigns and certs by UUID and will probably need both for the instructions",
+        "operationId": "admin_instruction_fragment_api_v1_admins_fragment_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserInstructionFragment"
+                }
+              }
+            }
+          }
+        },
+        "deprecated": true,
+        "security": [
+          {
+            "MTLSHeader": []
+          }
+        ]
+      }
+    },
+    "/api/v1/healthcheck": {
+      "get": {
+        "tags": [
+          "healthcheck"
+        ],
+        "summary": "Get Healthcheck Delivery Status",
+        "description": "Return 200 when api is ready to deliver",
+        "operationId": "get_healthcheck_delivery_status_api_v1_healthcheck_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProductHealthCheckResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/description/{language}": {
+      "get": {
+        "tags": [
+          "description"
+        ],
+        "summary": "Return Product Description",
+        "description": "Fetch description from each product in manifest",
+        "operationId": "return_product_description_api_v1_description__language__get",
+        "parameters": [
+          {
+            "name": "language",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Language"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProductDescription"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/instructions/{language}": {
+      "post": {
+        "tags": [
+          "instructions"
+        ],
+        "summary": "User Intructions",
+        "description": "return user instructions",
+        "operationId": "user_intructions_api_v1_instructions__language__post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserCRUDRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": {
+                    "type": "string"
+                  },
+                  "type": "object",
+                  "title": "Response User Intructions Api V1 Instructions  Language  Post"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "MTLSHeader": []
+          }
+        ]
+      }
+    },
+    "/api/v1/tak-datapackages/client-package/{package_path}": {
+      "get": {
+        "tags": [
+          "tak-datapackages"
+        ],
+        "summary": "Return Clientpackage Zip",
+        "description": "Return zip package from folder contents under requested path, use folder name as package name",
+        "operationId": "return_clientpackage_zip_api_v1_tak_datapackages_client_package__package_path__get",
+        "security": [
+          {
+            "MTLSHeader": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "package_path",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "path",
+              "title": "Package Path"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/tak-datapackages/client-file/{file_path}": {
+      "get": {
+        "tags": [
+          "tak-datapackages"
+        ],
+        "summary": "Return Clientpackage File",
+        "description": "Return single file from tak_datapackages. If file ends with .tpl, return rendered file",
+        "operationId": "return_clientpackage_file_api_v1_tak_datapackages_client_file__file_path__get",
+        "security": [
+          {
+            "MTLSHeader": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "file_path",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "path",
+              "title": "File Path"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/tak-datapackages/environment-package/{package_path}": {
+      "get": {
+        "tags": [
+          "tak-datapackages"
+        ],
+        "summary": "Return Envpackage Zip",
+        "description": "Return zip package from folder contents under requested path, use folder name as package name",
+        "operationId": "return_envpackage_zip_api_v1_tak_datapackages_environment_package__package_path__get",
+        "security": [
+          {
+            "MTLSHeader": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "package_path",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "path",
+              "title": "Package Path"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/tak-datapackages/package-list": {
+      "get": {
+        "tags": [
+          "tak-datapackages"
+        ],
+        "summary": "Return Available Packages",
+        "description": "Return available datapackages",
+        "operationId": "return_available_packages_api_v1_tak_datapackages_package_list_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TAKAdminPackageListResponse"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "MTLSHeader": []
+          }
+        ]
+      }
+    },
+    "/api/v1/tak-missionpackages/client-zip/{variant}.zip": {
+      "post": {
+        "tags": [
+          "tak-missionpackages"
+        ],
+        "summary": "Return Tak Zip",
+        "description": "Return TAK client zip file proxied from rm api",
+        "operationId": "return_tak_zip_api_v1_tak_missionpackages_client_zip__variant__zip_post",
+        "security": [
+          {
+            "MTLSHeader": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "variant",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Variant"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserCRUDRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/tak-missionpackages/ephemeral/{variant}": {
+      "post": {
+        "tags": [
+          "tak-missionpackages"
+        ],
+        "summary": "Return Ephemeral Dl Link",
+        "description": "Return an ephemeral download link to get the TAK client zip file",
+        "operationId": "return_ephemeral_dl_link_api_v1_tak_missionpackages_ephemeral__variant__post",
+        "security": [
+          {
+            "MTLSHeader": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "variant",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Variant"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserCRUDRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": {
+                    "type": "string"
+                  },
+                  "title": "Response Return Ephemeral Dl Link Api V1 Tak Missionpackages Ephemeral  Variant  Post"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v2/description/{language}": {
+      "get": {
+        "tags": [
+          "description"
+        ],
+        "summary": "Return Product Description Extended",
+        "description": "Fetch description from each product in manifest",
+        "operationId": "return_product_description_extended_api_v2_description__language__get",
+        "parameters": [
+          {
+            "name": "language",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Language"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProductDescriptionExtended"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v2/admin/description/{language}": {
+      "get": {
+        "tags": [
+          "description"
+        ],
+        "summary": "Return Admin Product Description Extended",
+        "description": "Fetch admin description from each product in manifest",
+        "operationId": "return_admin_product_description_extended_api_v2_admin_description__language__get",
+        "security": [
+          {
+            "MTLSHeader": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "language",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Language"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProductDescriptionExtended"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v2/clients/data": {
+      "post": {
+        "tags": [
+          "clients"
+        ],
+        "summary": "Client Instruction Fragment",
+        "description": "Return zip package containing client config and certificates",
+        "operationId": "client_instruction_fragment_api_v2_clients_data_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserCRUDRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ClientInstructionResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "deprecated": true,
+        "security": [
+          {
+            "MTLSHeader": []
+          }
+        ]
+      }
+    },
+    "/ephemeral/api/v1/tak-missionpackages/ephemeral/{ephemeral_str}/{zipfile_name}.zip": {
+      "get": {
+        "tags": [
+          "ephemeral-tak-missionpackages"
+        ],
+        "summary": "Return Ephemeral Tak Zip",
+        "description": "Return the TAK client zip file using an ephemeral link",
+        "operationId": "return_ephemeral_tak_zip_ephemeral_api_v1_tak_missionpackages_ephemeral__ephemeral_str___zipfile_name__zip_get",
+        "parameters": [
+          {
+            "name": "ephemeral_str",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Ephemeral Str"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "ClientInstructionData": {
+        "properties": {
+          "tak_zips": {
+            "items": {
+              "$ref": "#/components/schemas/TakZipFile"
+            },
+            "type": "array",
+            "title": "Tak Zips",
+            "description": "List of packaged mission zip files."
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "tak_zips"
+        ],
+        "title": "ClientInstructionData",
+        "description": "Container for a list of mission-related ZIP files sent to a client."
+      },
+      "ClientInstructionResponse": {
+        "properties": {
+          "data": {
+            "$ref": "#/components/schemas/ClientInstructionData",
+            "description": "Container object for returned data."
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "data"
+        ],
+        "title": "ClientInstructionResponse",
+        "description": "Response schema for returning client mission instructions."
+      },
+      "HTTPValidationError": {
+        "properties": {
+          "detail": {
+            "items": {
+              "$ref": "#/components/schemas/ValidationError"
+            },
+            "type": "array",
+            "title": "Detail"
+          }
+        },
+        "type": "object",
+        "title": "HTTPValidationError"
+      },
+      "OperationResultResponse": {
+        "properties": {
+          "success": {
+            "type": "boolean",
+            "title": "Success",
+            "description": "Was the operation a success, used in addition to http status code"
+          },
+          "extra": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Extra",
+            "description": "Extra information",
+            "nullable": true
+          },
+          "error": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Error",
+            "description": "Error message if any",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "success"
+        ],
+        "title": "OperationResultResponse",
+        "description": "Communicate result of operation",
+        "examples": [
+          {
+            "success": true
+          },
+          {
+            "error": "Things went wrong",
+            "success": false
+          },
+          {
+            "extra": "Tell the user they're awesome",
+            "success": true
+          }
+        ]
+      },
+      "ProductComponent": {
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "link",
+              "markdown",
+              "component"
+            ],
+            "title": "Type"
+          },
+          "ref": {
+            "type": "string",
+            "title": "Ref"
+          }
+        },
+        "type": "object",
+        "required": [
+          "type",
+          "ref"
+        ],
+        "title": "ProductComponent",
+        "description": "Project component info"
+      },
+      "ProductDescription": {
+        "properties": {
+          "shortname": {
+            "type": "string",
+            "title": "Shortname",
+            "description": "Short name for the product, used as slug/key in dicts and urls"
+          },
+          "title": {
+            "type": "string",
+            "title": "Title",
+            "description": "Fancy name for the product"
+          },
+          "icon": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Icon",
+            "description": "URL for icon"
+          },
+          "description": {
+            "type": "string",
+            "title": "Description",
+            "description": "Short-ish description of the product"
+          },
+          "language": {
+            "type": "string",
+            "title": "Language",
+            "description": "Language of this response"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "shortname",
+          "title",
+          "icon",
+          "description",
+          "language"
+        ],
+        "title": "ProductDescription",
+        "description": "Description of a product"
+      },
+      "ProductDescriptionExtended": {
+        "properties": {
+          "shortname": {
+            "type": "string",
+            "title": "Shortname",
+            "description": "Short name for the product, used as slug/key in dicts and urls"
+          },
+          "title": {
+            "type": "string",
+            "title": "Title",
+            "description": "Fancy name for the product"
+          },
+          "icon": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Icon",
+            "description": "URL for icon"
+          },
+          "description": {
+            "type": "string",
+            "title": "Description",
+            "description": "Short-ish description of the product"
+          },
+          "language": {
+            "type": "string",
+            "title": "Language",
+            "description": "Language of this response"
+          },
+          "docs": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Docs",
+            "description": "Link to documentation"
+          },
+          "component": {
+            "$ref": "#/components/schemas/ProductComponent",
+            "description": "Component type and ref"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "shortname",
+          "title",
+          "icon",
+          "description",
+          "language",
+          "docs",
+          "component"
+        ],
+        "title": "ProductDescriptionExtended",
+        "description": "Description of a product"
+      },
+      "ProductHealthCheckResponse": {
+        "properties": {
+          "healthy": {
+            "type": "boolean",
+            "title": "Healthy",
+            "description": "Everything is good, ready to serve"
+          },
+          "extra": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Extra",
+            "description": "Extra information",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "healthy"
+        ],
+        "title": "ProductHealthCheckResponse",
+        "description": "Healthcheck response for product integration apis\n\nThe extra info might be used by a human to debug things but RASENMAEHER will not use it",
+        "examples": [
+          {
+            "healthy": true
+          },
+          {
+            "extra": "Things went wrong",
+            "healthy": false
+          }
+        ]
+      },
+      "TAKAdminPackageListResponse": {
+        "properties": {
+          "data": {
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Data",
+            "description": "Response dict containing available packages"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "data"
+        ],
+        "title": "TAKAdminPackageListResponse",
+        "description": "Response schema for returning available TAK datapackages."
+      },
+      "TakZipFile": {
+        "properties": {
+          "title": {
+            "type": "string",
+            "title": "Title",
+            "description": "Original filename or title of the zip file."
+          },
+          "filename": {
+            "type": "string",
+            "title": "Filename",
+            "description": "Filename used for download, includes user callsign."
+          },
+          "data": {
+            "type": "string",
+            "title": "Data",
+            "description": "Base64-encoded zip file contents",
+            "examples": [
+              "data:application/zip;base64,UEsDBBQAAAAI..."
+            ]
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "title",
+          "filename",
+          "data"
+        ],
+        "title": "TakZipFile",
+        "description": "Represents a single ZIP file containing mission data or product instructions."
+      },
+      "UserCRUDRequest": {
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "title": "Uuid",
+            "description": "RASENMAEHER UUID for this user"
+          },
+          "callsign": {
+            "type": "string",
+            "title": "Callsign",
+            "description": "Callsign of the user"
+          },
+          "x509cert": {
+            "type": "string",
+            "title": "X509Cert",
+            "description": "Certificate encoded with CFSSL conventions (newlines escaped)"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "uuid",
+          "callsign",
+          "x509cert"
+        ],
+        "title": "UserCRUDRequest",
+        "description": "Request to create user",
+        "examples": [
+          {
+            "callsign": "ROTTA01a",
+            "uuid": "3ede23ae-eff2-4aa8-b7ef-7fac68c39988",
+            "x509cert": "-----BEGIN CERTIFICATE-----\\nMIIEwjCC...\\n-----END CERTIFICATE-----\\n"
+          }
+        ]
+      },
+      "UserInstructionFragment": {
+        "properties": {
+          "html": {
+            "type": "string",
+            "title": "Html",
+            "description": "The HTML content will be shown for this products instructions"
+          },
+          "inject_css": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Inject Css",
+            "description": "If extra stylesheet is needed, set the fully qualified URI",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "html"
+        ],
+        "title": "UserInstructionFragment",
+        "description": "Product instructions for user",
+        "examples": [
+          {
+            "html": "<p>Hello World!</p>"
+          },
+          {
+            "html": "<p class=\"hello\">Hello World!</p>",
+            "inject_css": "http://example.com/mystyle.css"
+          }
+        ]
+      },
+      "ValidationError": {
+        "properties": {
+          "loc": {
+            "items": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                }
+              ]
+            },
+            "type": "array",
+            "title": "Location"
+          },
+          "msg": {
+            "type": "string",
+            "title": "Message"
+          },
+          "type": {
+            "type": "string",
+            "title": "Error Type"
+          },
+          "input": {
+            "title": "Input"
+          },
+          "ctx": {
+            "type": "object",
+            "title": "Context"
+          }
+        },
+        "type": "object",
+        "required": [
+          "loc",
+          "msg",
+          "type"
+        ],
+        "title": "ValidationError"
+      }
+    },
+    "securitySchemes": {
+      "MTLSHeader": {
+        "type": "http",
+        "scheme": "header"
+      }
+    }
+  }
+}

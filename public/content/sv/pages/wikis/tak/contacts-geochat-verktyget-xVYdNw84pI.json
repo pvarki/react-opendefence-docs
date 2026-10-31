@@ -25,12 +25,16 @@
       "id": "contacts--geochat-avsnittet-i-wintak-manualen"
     }
   ],
+  "translations": {
+    "en": "/en/wikis/tak/contacts-geochat-tool-He6gLKQ18V",
+    "fi": "/fi/wikis/tak/contacts-geochat-tyokalu-isdG7ytN8I",
+    "sv": "/sv/wikis/tak/contacts-geochat-verktyget-xVYdNw84pI"
+  },
   "blocks": [
     {
       "type": "image",
       "src": "/content/images/sv/attachments/25e331c17ee17a21.webp",
       "alt": "",
-      "caption": "=218x",
       "width": 218,
       "height": 161
     },

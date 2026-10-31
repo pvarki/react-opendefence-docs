@@ -23,6 +23,11 @@
       "id": "contacts"
     }
   ],
+  "translations": {
+    "en": "/en/wikis/tak/tpc-tak-product-center-CYKrI5BZFA",
+    "fi": "/fi/wikis/tak/tpc-tak-product-center-BAsOmaQorN",
+    "sv": "/sv/wikis/tak/tpc-tak-product-center-ZRqq8fI3RX"
+  },
   "blocks": [
     {
       "type": "image",

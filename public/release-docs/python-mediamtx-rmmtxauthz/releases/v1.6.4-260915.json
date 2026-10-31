@@ -1,0 +1,5 @@
+{
+  "tag": "v1.6.4+260915",
+  "publishedAt": "2026-09-16T06:28:58Z",
+  "html": "<h2 id=\"164260915-2026-09-16\"><a href=\"#164260915-2026-09-16\">1.6.4+260915 (2026-09-16)</a></h2>\n<h3 id=\"features\"><a href=\"#features\">Features</a></h3>\n<ul>\n<li>generate per version openapi json (<a href=\"https://github.com/pvarki/python-mediamtx-rmmtxauthz/commit/12ac725bcc45b0fe00164fea65081d2baa64f082\" target=\"_blank\" rel=\"noopener noreferrer\">12ac725</a>)</li>\n<li>tag and release from main (<a href=\"https://github.com/pvarki/python-mediamtx-rmmtxauthz/commit/a172899926edd3e5a7aa40ec1e654fe6030d31d7\" target=\"_blank\" rel=\"noopener noreferrer\">a172899</a>)</li>\n</ul>\n<h3 id=\"fixes\"><a href=\"#fixes\">Fixes</a></h3>\n<ul>\n<li>use arc-runner-set for image building (<a href=\"https://github.com/pvarki/python-mediamtx-rmmtxauthz/commit/52be86bc41992755b7058d5e1069924151e0cea9\" target=\"_blank\" rel=\"noopener noreferrer\">52be86b</a>)</li>\n</ul>"
+}

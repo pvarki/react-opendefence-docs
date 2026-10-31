@@ -45,12 +45,15 @@
       "id": "uas-tool-fpv-configuration"
     }
   ],
+  "translations": {
+    "en": "/en/wikis/tak/uas-tool-plugin-Q5Mzhv56VO",
+    "fi": "/fi/wikis/tak/uas-tool-lisaosa-BXzO8q7CVq"
+  },
   "blocks": [
     {
       "type": "image",
       "src": "/content/images/fi/attachments/6e0082cb2a785620.webp",
       "alt": "",
-      "caption": "=671x",
       "width": 671,
       "height": 675
     },

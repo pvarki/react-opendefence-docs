@@ -23,6 +23,11 @@
       "id": "jos-haluat-että-videolähetys-käynnistyy-automaattisesti-kun-drone-yhdistetään-voit-lisätä-tämän-komennon"
     }
   ],
+  "translations": {
+    "en": "/en/wikis/mtx/uas-tool-streaming-nxo5zBYr3D",
+    "fi": "/fi/wikis/mtx/uas-tool-striimaus-7enOQTR7tf",
+    "sv": "/sv/wikis/mtx/uas-tool-stromning-5JeQ6TxVVy"
+  },
   "blocks": [
     {
       "type": "html",

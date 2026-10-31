@@ -18,6 +18,11 @@
       "id": "tak-product-pages-for-tool"
     }
   ],
+  "translations": {
+    "en": "/en/wikis/tak/bloodhound-tool-1JvEjCG9ha",
+    "fi": "/fi/wikis/tak/bloodhound-tyokalu-EutttuAMqj",
+    "sv": "/sv/wikis/tak/bloodhound-verktyg-QY0hBa9P21"
+  },
   "blocks": [
     {
       "type": "image",
@@ -28,7 +33,7 @@
     },
     {
       "type": "html",
-      "html": "<p>The Bloodhound Tool provides support for tracking and intercepting a map item. It allows for the selection of two points on the map, and/or map objects, and displays Range &#x26; Bearing information between the chosen tracker and the target.</p>\n<h2 id=\"tak-product-pages-for-tool\"><a href=\"#tak-product-pages-for-tool\">TAK Product pages for Tool</a></h2>\n<ul>\n<li>ATAK <a href=\"/doc/a1ae2d75-dc23-443b-aa26-526a47a1c85f\">Bloodhound tool</a></li>\n</ul>"
+      "html": "<p>The Bloodhound Tool provides support for tracking and intercepting a map item. It allows for the selection of two points on the map, and/or map objects, and displays Range &#x26; Bearing information between the chosen tracker and the target.</p>\n<h2 id=\"tak-product-pages-for-tool\"><a href=\"#tak-product-pages-for-tool\">TAK Product pages for Tool</a></h2>\n<ul>\n<li>ATAK <a href=\"/en/wikis/tak/bloodhound-tool-kZ8MTy07YY\">Bloodhound tool</a></li>\n</ul>"
     }
   ]
 }

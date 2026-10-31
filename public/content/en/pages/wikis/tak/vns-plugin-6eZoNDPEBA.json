@@ -35,6 +35,10 @@
       "id": "atak-vns-google-routes-api-key"
     }
   ],
+  "translations": {
+    "en": "/en/wikis/tak/vns-plugin-6eZoNDPEBA",
+    "fi": "/fi/wikis/tak/vns-lisaosa-Hnpl0Xgv25"
+  },
   "blocks": [
     {
       "type": "image",

@@ -202,12 +202,6 @@
       "clientId": "atak-cIgl1ujs22",
       "children": [
         {
-          "type": "doc",
-          "id": "yleiskatsaus-dSxmQoNuM0",
-          "label": "Yleiskatsaus",
-          "slug": "yleiskatsaus-dSxmQoNuM0"
-        },
-        {
           "type": "group",
           "id": "taistelija-JPrcc1wzdD",
           "label": "Taistelija",
@@ -558,20 +552,6 @@
       ]
     },
     {
-      "type": "group",
-      "id": "atak-cIgl1ujs22",
-      "label": "ATAK",
-      "clientId": "atak-cIgl1ujs22",
-      "children": [
-        {
-          "type": "doc",
-          "id": "vianmaaritys-mum1CL1yac",
-          "label": "Vianmääritys",
-          "slug": "vianmaaritys-mum1CL1yac"
-        }
-      ]
-    },
-    {
       "type": "toporg",
       "id": "aloita-ja-yhdista-ChEG1h3e8E",
       "label": "ALOITA JA YHDISTÄ",
@@ -821,20 +801,6 @@
     },
     {
       "type": "group",
-      "id": "wintak-gOdRRMN4lI",
-      "label": "WinTAK",
-      "clientId": "wintak-gOdRRMN4lI",
-      "children": [
-        {
-          "type": "doc",
-          "id": "vianmaaritys-HIBgMyBeHy",
-          "label": "Vianmääritys",
-          "slug": "vianmaaritys-HIBgMyBeHy"
-        }
-      ]
-    },
-    {
-      "type": "group",
       "id": "aloitus-r6ZvF4Ztdj",
       "label": "Aloitus",
       "clientId": "itak-pzOFxqFSem",
@@ -861,27 +827,9 @@
       "children": [
         {
           "type": "doc",
-          "id": "omien-joukkojen-seuranta-g7RxW8tHH6",
-          "label": "Omien joukkojen seuranta",
-          "slug": "omien-joukkojen-seuranta-g7RxW8tHH6"
-        },
-        {
-          "type": "doc",
           "id": "datan-synkronointi-lzOCvJIN5S",
           "label": "Datan synkronointi",
           "slug": "datan-synkronointi-lzOCvJIN5S"
-        },
-        {
-          "type": "doc",
-          "id": "luo-symboleja-ja-pikakuvia-sHjyCvAf4P",
-          "label": "Luo symboleja ja pikakuvia",
-          "slug": "luo-symboleja-ja-pikakuvia-sHjyCvAf4P"
-        },
-        {
-          "type": "doc",
-          "id": "kayta-geochatia-1MmA1emqhu",
-          "label": "Käytä GeoChatia",
-          "slug": "kayta-geochatia-1MmA1emqhu"
         }
       ]
     },
@@ -993,32 +941,6 @@
     },
     {
       "type": "toporg",
-      "id": "kaytto-rooleittain-CjDF6P8IaC",
-      "label": "KÄYTTÖ ROOLEITTAIN",
-      "clientId": "tak-tracker-android-E5prGxCUhh",
-      "children": [
-        {
-          "type": "doc",
-          "id": "yleiskatsaus-awMobw9EkE",
-          "label": "Yleiskatsaus",
-          "slug": "yleiskatsaus-awMobw9EkE"
-        },
-        {
-          "type": "doc",
-          "id": "taistelija-jkvrnZXkli",
-          "label": "Taistelija",
-          "slug": "taistelija-jkvrnZXkli"
-        },
-        {
-          "type": "doc",
-          "id": "komentopaikka-BLzd0iLjOh",
-          "label": "Komentopaikka",
-          "slug": "komentopaikka-BLzd0iLjOh"
-        }
-      ]
-    },
-    {
-      "type": "toporg",
       "id": "aloitus-ja-yhteyden-muodostaminen-zNOY45PsbD",
       "label": "ALOITUS JA YHTEYDEN MUODOSTAMINEN",
       "clientId": "tak-tracker-apple-fLXmWaMemp",
@@ -1034,60 +956,6 @@
           "id": "tak-tracker-on-jo-asennettu-9ULjLI5HIp",
           "label": "TAK Tracker on jo asennettu",
           "slug": "tak-tracker-on-jo-asennettu-9ULjLI5HIp"
-        }
-      ]
-    },
-    {
-      "type": "group",
-      "id": "tak-toiminnot-d65wlJ4o4J",
-      "label": "TAK-toiminnot",
-      "clientId": "tak-tracker-apple-fLXmWaMemp",
-      "children": [
-        {
-          "type": "doc",
-          "id": "laheta-halytyksia-oXpOorNrag",
-          "label": "Lähetä hälytyksiä",
-          "slug": "laheta-halytyksia-oXpOorNrag"
-        }
-      ]
-    },
-    {
-      "type": "group",
-      "id": "kaytto-roolin-mukaan-XcyWT5erP6",
-      "label": "Käyttö roolin mukaan",
-      "clientId": "tak-tracker-apple-fLXmWaMemp",
-      "children": [
-        {
-          "type": "doc",
-          "id": "yleiskatsaus-BerAy6ibbu",
-          "label": "Yleiskatsaus",
-          "slug": "yleiskatsaus-BerAy6ibbu"
-        },
-        {
-          "type": "doc",
-          "id": "taistelija-Qgf88CxnWl",
-          "label": "Taistelija",
-          "slug": "taistelija-Qgf88CxnWl"
-        },
-        {
-          "type": "doc",
-          "id": "komentopaikka-q4LRKdr4q0",
-          "label": "Komentopaikka",
-          "slug": "komentopaikka-q4LRKdr4q0"
-        }
-      ]
-    },
-    {
-      "type": "group",
-      "id": "tak-tracker-apple-fLXmWaMemp",
-      "label": "TAK Tracker - Apple",
-      "clientId": "tak-tracker-apple-fLXmWaMemp",
-      "children": [
-        {
-          "type": "doc",
-          "id": "vianmaaritys-MchVmRHKOC",
-          "label": "Vianmääritys",
-          "slug": "vianmaaritys-MchVmRHKOC"
         }
       ]
     }

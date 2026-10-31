@@ -115,7 +115,7 @@
         {
           "title": "Deploy App automatisoi palvelimen hallinnan",
           "layout": "image-left",
-          "html": "<p>Deploy Appin avulla sinun ei koskaan tarvitse määrittää TAK Serveriäsi manuaalisesti.</p>\n<ul>\n<li>Deploy App -instanssi käynnistää mukana toimitetun virallisluonteisen TAK Serverin.</li>\n<li>Sinä ja taistelijasi pääsette siihen kahdella napautuksella Deploy Appista.\nUskomme, että sotilaiden tulisi toimia, ei säätää palvelimia. Deploy App poistaa manuaalisen määrityksen erittäin turvallisella toteutuksella.</li>\n</ul>",
+          "html": "<p>Deploy Appin avulla sinun ei koskaan tarvitse määrittää TAK Serveriäsi manuaalisesti.</p>\n<ul>\n<li>Deploy App -instanssi käynnistää mukana toimitetun virallisluonteisen TAK Serverin.</li>\n<li>Sinä ja taistelijasi pääsette siihen kahdella napautuksella Deploy Appista.</li>\n</ul>\n<p>Uskomme, että sotilaiden tulisi toimia, ei säätää palvelimia. Deploy App poistaa manuaalisen määrityksen erittäin turvallisella toteutuksella.</p>",
           "images": [
             {
               "src": "/content/images/fi/attachments/2eb1508d89ef7f24.webp",

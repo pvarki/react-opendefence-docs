@@ -40,13 +40,13 @@
         {
           "title": "Grunderna i RECON-flödet",
           "layout": "text",
-          "html": "<ul>\n<li>RECON-flödet är avsett att hanteras av ledningsplatsen (Command Post).</li>\n<li>Soldater har endast läsbehörighet till det.</li>\n<li>Varje ATAK-användare på en Deploy App TAK-server prenumererar automatiskt på RECON-flödet.\nEtt färdigt och prenumererat RECON-flöde visas här.</li>\n</ul>",
+          "html": "<ul>\n<li>RECON-flödet är avsett att hanteras av ledningsplatsen (Command Post).</li>\n<li>Soldater har endast läsbehörighet till det.</li>\n<li>Varje ATAK-användare på en Deploy App TAK-server prenumererar automatiskt på RECON-flödet.</li>\n</ul>\n<p>Ett färdigt och prenumererat RECON-flöde visas här.</p>",
           "images": []
         },
         {
           "title": "Uppdatering av information i RECON-flödet 1",
           "layout": "image-bottom",
-          "html": "<ul>\n<li>VIKTIG FÖRUTSÄTTNING för att vår modell ska fungera: som ledningsplats, <strong>ställ in din ATAK-roll som HQ.</strong></li>\n<li>Soldater skickar observationer till dig genom att <strong>skicka till användare med HQ-roll</strong>, eller via ett offentligt redigerbart Observations-flöde om du har skapat och anvisat ett sådant för användning.\nBlue43 skickar här sin nya markör (Marker) till dig i HQ-rollen.</li>\n</ul>",
+          "html": "<ul>\n<li>VIKTIG FÖRUTSÄTTNING för att vår modell ska fungera: som ledningsplats, <strong>ställ in din ATAK-roll som HQ.</strong></li>\n<li>Soldater skickar observationer till dig genom att <strong>skicka till användare med HQ-roll</strong>, eller via ett offentligt redigerbart Observations-flöde om du har skapat och anvisat ett sådant för användning.</li>\n</ul>\n<p>Blue43 skickar här sin nya markör (Marker) till dig i HQ-rollen.</p>",
           "images": [
             {
               "src": "/content/images/sv/attachments/13ed3f60a7fb002f.webp",
@@ -58,7 +58,7 @@
         {
           "title": "Uppdatering av information i RECON-flödet 2",
           "layout": "image-bottom",
-          "html": "<ul>\n<li>Ledningsplatsen granskar den mottagna informationen, verifierar den och vidarebefordrar vid behov relevant information till RECON-flödet.</li>\n<li>Ledningsplatsen håller även koll på informationen i flödet, och gammal, irrelevant information tas bort från flödet.\nEn iTAK HQ-användare som agerar ledningsplats visas här när den lägger till Blue43:s markör i RECON-flödet.</li>\n</ul>",
+          "html": "<ul>\n<li>Ledningsplatsen granskar den mottagna informationen, verifierar den och vidarebefordrar vid behov relevant information till RECON-flödet.</li>\n<li>Ledningsplatsen håller även koll på informationen i flödet, och gammal, irrelevant information tas bort från flödet.</li>\n</ul>\n<p>En iTAK HQ-användare som agerar ledningsplats visas här när den lägger till Blue43:s markör i RECON-flödet.</p>",
           "images": [
             {
               "src": "/content/images/sv/attachments/224048abc6268778.webp",
@@ -70,7 +70,7 @@
         {
           "title": "Uppdatering av information i RECON-flödet 3",
           "layout": "image-bottom",
-          "html": "<ul>\n<li>Tillagd information visas för alla användare</li>\n<li>Borttagen information försvinner från användarna.\nVår nyligen tillagda markör från Blue43 visad i RECON-flödet.</li>\n</ul>",
+          "html": "<ul>\n<li>Tillagd information visas för alla användare</li>\n<li>Borttagen information försvinner från användarna.</li>\n</ul>\n<p>Vår nyligen tillagda markör från Blue43 visad i RECON-flödet.</p>",
           "images": [
             {
               "src": "/content/images/sv/attachments/0348a5da252e244d.webp",
@@ -82,7 +82,7 @@
         {
           "title": "Återvinning av RECON-flödet",
           "layout": "image-bottom",
-          "html": "<ul>\n<li>Mycket information placeras i RECON-flödet under aktiv användning, och det behöver återvinnas för att rensa bort gammal information.</li>\n<li>Återvinningen görs av ledningsplatsen, och soldater bjuds in till de nya flödena med jämna mellanrum.\nEtt uppdaterat och tillgängligt RECON-flöde visas här.</li>\n</ul>",
+          "html": "<ul>\n<li>Mycket information placeras i RECON-flödet under aktiv användning, och det behöver återvinnas för att rensa bort gammal information.</li>\n<li>Återvinningen görs av ledningsplatsen, och soldater bjuds in till de nya flödena med jämna mellanrum.</li>\n</ul>\n<p>Ett uppdaterat och tillgängligt RECON-flöde visas här.</p>",
           "images": [
             {
               "src": "/content/images/sv/attachments/22ab27310be30c0d.webp",

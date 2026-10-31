@@ -48,10 +48,15 @@
       "id": "vr-headsets-supported"
     }
   ],
+  "translations": {
+    "en": "/en/wikis/tak/vr-tak-virtualreality-tak-SDd4LXGE4i",
+    "fi": "/fi/wikis/tak/vr-tak-virtuaalitodellisuus-tak-zpNoc3jnF4",
+    "sv": "/sv/wikis/tak/vr-tak-virtuell-verklighet-for-tak-yNkWIh46xk"
+  },
   "blocks": [
     {
       "type": "html",
-      "html": "<p><img src=\"/content/images/en/attachments/a7b97d37bfac4ece.webp\" alt=\"\" title=\" =720x688\"> <img src=\"/content/images/en/attachments/f2c2ddc91e208d09.webp\" alt=\"\" title=\" =1400x788\"></p>\n<h2 id=\"available-from\"><a href=\"#available-from\">Available from</a></h2>\n<p><a href=\"https://tak.gov/products/vr-tak\" target=\"_blank\" rel=\"noopener noreferrer\">https://tak.gov/products/vr-tak</a></p>\n<p><a href=\"https://github.com/TAK-Product-Center/VR\" target=\"_blank\" rel=\"noopener noreferrer\">https://github.com/TAK-Product-Center/VR</a></p>\n<h2 id=\"product-manual\"><a href=\"#product-manual\">Product manual</a></h2>"
+      "html": "<p><img src=\"/content/images/en/attachments/a7b97d37bfac4ece.webp\" alt=\"\" width=\"720\" height=\"688\"> <img src=\"/content/images/en/attachments/f2c2ddc91e208d09.webp\" alt=\"\" width=\"1400\" height=\"788\"></p>\n<h2 id=\"available-from\"><a href=\"#available-from\">Available from</a></h2>\n<p><a href=\"https://tak.gov/products/vr-tak\" target=\"_blank\" rel=\"noopener noreferrer\">https://tak.gov/products/vr-tak</a></p>\n<p><a href=\"https://github.com/TAK-Product-Center/VR\" target=\"_blank\" rel=\"noopener noreferrer\">https://github.com/TAK-Product-Center/VR</a></p>\n<h2 id=\"product-manual\"><a href=\"#product-manual\">Product manual</a></h2>"
     },
     {
       "type": "pdf",

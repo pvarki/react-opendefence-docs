@@ -12,7 +12,7 @@
     "Anslut till en Deploy App"
   ],
   "createdAt": "2026-06-18T20:35:46.997Z",
-  "updatedAt": "2026-06-18T20:39:11.609Z",
+  "updatedAt": "2026-10-22T13:25:50.950Z",
   "headings": [],
   "translations": {
     "en": "/en/deploy-app/join-a-deploy-app-Ns73TcVodz",
@@ -21,8 +21,94 @@
   },
   "blocks": [
     {
-      "type": "html",
-      "html": "<ul>\n<li>Ta emot inbjudningslänk eller skanna QR-kod\n<ul>\n<li>Ange anropssignal (Callsign)\n<ul>\n<li>Öppna filen Callsign.pfx och importera den\n<ul>\n<li>Anslut till Deploy App med certifikat\n<ul>\n<li>Använd applikationerna</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>"
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Öppna din inbjudan",
+          "layout": "image-left",
+          "html": "<p>Öppna inbjudningslänken eller skanna QR-koden du fick. Deploy App öppnas med inbjudningskoden ifylld.</p>\n<ul>\n<li>Fick du bara en kod? Skriv den i <strong>Ange din kod</strong> och tryck <strong>Logga in med kod</strong>.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/0cec419f1436856d.webp",
+              "width": 1614,
+              "height": 1600
+            }
+          ]
+        },
+        {
+          "title": "Välj din anropssignal",
+          "layout": "image-left",
+          "html": "<p>Skriv en anropssignal som din enhet känner igen dig på och tryck <strong>Fortsätt</strong>.</p>\n<ul>\n<li>Du använder samma anropssignal i alla tjänster.</li>\n<li>Den är också lösenordet till ditt certifikat.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/9833f086a436bcf8.webp",
+              "width": 1612,
+              "height": 1454
+            }
+          ]
+        },
+        {
+          "title": "Bli godkänd",
+          "layout": "image-left",
+          "html": "<p>En administratör måste godkänna dig.</p>\n<ul>\n<li>Administratören bredvid dig: visa QR-koden.</li>\n<li>Administratören någon annanstans: tryck <strong>Kopiera länk</strong> och klistra in den i ett meddelande till hen.</li>\n<li>Låt sidan vara öppen. Den går vidare av sig själv när du är godkänd.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/88929979f7edd7b6.webp",
+              "width": 1920,
+              "height": 1776
+            }
+          ]
+        },
+        {
+          "title": "Hämta din nyckel",
+          "layout": "image-left",
+          "html": "<p>Tryck <strong>Ladda ner nyckel</strong>. Nyckeln är en fil som du installerar på den här datorn.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/a77d714b684a24ba.webp",
+              "width": 2060,
+              "height": 1576
+            }
+          ]
+        },
+        {
+          "title": "Installera nyckeln",
+          "layout": "image-left",
+          "html": "<p>Öppna filen från webbläsarens nedladdningar uppe till höger. I <strong>Guiden Importera certifikat</strong>:</p>\n<ol>\n<li>Tryck <strong>Nästa</strong> två gånger.</li>\n<li>Ange din anropssignal som lösenord.</li>\n<li>Tryck <strong>Nästa</strong> två gånger, sedan <strong>Slutför</strong> och <strong>OK</strong>.</li>\n</ol>\n<p>Tillbaka i webbläsaren, tryck <strong>Installerad – fortsätt</strong>.</p>\n<ul>\n<li>I Firefox visar Deploy App ett extra steg för att lägga till nyckeln i Firefox.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/124d79b85d4dc418.webp",
+              "width": 2068,
+              "height": 2200
+            }
+          ]
+        },
+        {
+          "title": "Gå till tjänsten",
+          "layout": "image-left",
+          "html": "<p>Tryck <strong>Gå till tjänsten</strong>. När webbläsaren ber om ett certifikat, välj din anropssignal och tryck <strong>OK</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/66bca96278b2614c.webp",
+              "width": 2060,
+              "height": 1696
+            }
+          ]
+        },
+        {
+          "title": "Du är inne",
+          "layout": "image-left",
+          "html": "<p>Deploy App öppnas. En kort guide visas första gången. Tryck <strong>Nästa</strong> för att gå igenom den, eller stäng den.</p>\n<ul>\n<li>Kryssa i <strong>Visa inte guider automatiskt för mig</strong> om du inte vill att guider ska dyka upp.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/784e13840dc83e6f.webp",
+              "width": 2200,
+              "height": 2200
+            }
+          ]
+        }
+      ]
     }
   ]
 }

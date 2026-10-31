@@ -1,0 +1,5 @@
+{
+  "tag": "v1.17.0+260921",
+  "publishedAt": "2026-09-24T06:17:07Z",
+  "html": "<h2 id=\"1170260921-2026-09-24\"><a href=\"#1170260921-2026-09-24\">1.17.0+260921 (2026-09-24)</a></h2>\n<h3 id=\"turn-off-automatic-guides-159\"><a href=\"#turn-off-automatic-guides-159\">Turn off automatic guides (<a href=\"https://github.com/pvarki/python-tak-rmapi/pull/159\" target=\"_blank\" rel=\"noopener noreferrer\">#159</a>)</a></h3>\n<p>The first page of the guide now has a \"do not show me guides automatically\"\r\noption. Picking it closes the guide and stops guides opening on their own\r\nhere and elsewhere in Deploy App. The info button still opens the guide when\r\nyou want it.</p>\n<h2 id=\"changelog\"><a href=\"#changelog\">Changelog</a></h2>\n<h3 id=\"features\"><a href=\"#features\">Features</a></h3>\n<ul>\n<li>honour the Deploy App guide opt-out (<a href=\"https://github.com/pvarki/python-tak-rmapi/commit/2c5526046a1fd62e821392484a1b833d42bb91fd\" target=\"_blank\" rel=\"noopener noreferrer\">2c55260</a>)</li>\n</ul>"
+}

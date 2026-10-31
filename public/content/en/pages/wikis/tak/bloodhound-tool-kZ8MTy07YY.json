@@ -35,6 +35,10 @@
       "id": "bloodhound--tool-section-from-atak-manual"
     }
   ],
+  "translations": {
+    "en": "/en/wikis/tak/bloodhound-tool-kZ8MTy07YY",
+    "fi": "/fi/wikis/tak/bloodhound-tyokalu-6Upz4LkrO9"
+  },
   "blocks": [
     {
       "type": "image",

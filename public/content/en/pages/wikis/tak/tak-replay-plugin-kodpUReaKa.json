@@ -25,6 +25,11 @@
       "id": "tak-replay-plugin-manual-for-wintak"
     }
   ],
+  "translations": {
+    "en": "/en/wikis/tak/tak-replay-plugin-kodpUReaKa",
+    "fi": "/fi/wikis/tak/tak-replay-lisaosa-xEHeK6Wly9",
+    "sv": "/sv/wikis/tak/tak-replay-tillagget-W56dg3ltjm"
+  },
   "blocks": [
     {
       "type": "image",

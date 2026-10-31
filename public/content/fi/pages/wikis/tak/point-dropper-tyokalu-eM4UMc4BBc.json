@@ -35,10 +35,21 @@
       "id": "point-dropper--työkalun-osio-atak-käyttöohjeesta"
     }
   ],
+  "translations": {
+    "en": "/en/wikis/tak/point-dropper-tool-6BNurdPXpp",
+    "fi": "/fi/wikis/tak/point-dropper-tyokalu-eM4UMc4BBc"
+  },
   "blocks": [
     {
+      "type": "image",
+      "src": "/content/images/fi/attachments/4535799356955bab.webp",
+      "alt": "",
+      "width": 189,
+      "height": 190
+    },
+    {
       "type": "html",
-      "html": "<p><img src=\"/content/images/fi/attachments/4535799356955bab.webp\" alt=\"\">\\n</p>\n<h2 id=\"työkalun-kuvaus\"><a href=\"#työkalun-kuvaus\"><strong>Työkalun kuvaus</strong></a></h2>\n<p>Kiinnostavat sijainnit voidaan syöttää Point Dropper -työkalun avulla. Valitse Point Dropper -ikoni asettaaksesi kansainvälisesti standardoituja markkereita ja muita ikoneita kartalle, muokataksesi niiden tietoja sekä jakaaksesi markkerit muiden verkon käyttäjien kanssa.</p>\n<h2 id=\"opastusvideot\"><a href=\"#opastusvideot\">Opastusvideot</a></h2>\n<h3 id=\"point-dropper-tool-5min\"><a href=\"#point-dropper-tool-5min\">Point Dropper tool (5min)</a></h3>"
+      "html": "<h2 id=\"työkalun-kuvaus\"><a href=\"#työkalun-kuvaus\"><strong>Työkalun kuvaus</strong></a></h2>\n<p>Kiinnostavat sijainnit voidaan syöttää Point Dropper -työkalun avulla. Valitse Point Dropper -ikoni asettaaksesi kansainvälisesti standardoituja markkereita ja muita ikoneita kartalle, muokataksesi niiden tietoja sekä jakaaksesi markkerit muiden verkon käyttäjien kanssa.</p>\n<h2 id=\"opastusvideot\"><a href=\"#opastusvideot\">Opastusvideot</a></h2>\n<h3 id=\"point-dropper-tool-5min\"><a href=\"#point-dropper-tool-5min\">Point Dropper tool (5min)</a></h3>"
     },
     {
       "type": "youtube",

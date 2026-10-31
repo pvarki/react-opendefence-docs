@@ -23,6 +23,11 @@
       "id": "if-you-want-to-have-the-video-stream-broadcasting-to-start-automatically-when-drone-is-connected-you-can-add-this-command"
     }
   ],
+  "translations": {
+    "en": "/en/wikis/mtx/uas-tool-streaming-nxo5zBYr3D",
+    "fi": "/fi/wikis/mtx/uas-tool-striimaus-7enOQTR7tf",
+    "sv": "/sv/wikis/mtx/uas-tool-stromning-5JeQ6TxVVy"
+  },
   "blocks": [
     {
       "type": "html",

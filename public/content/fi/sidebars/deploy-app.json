@@ -152,6 +152,62 @@
           "slug": "ensimmainen-kirjautuminen-w6ucKbFHSI"
         }
       ]
+    },
+    {
+      "type": "group",
+      "id": "kayttajaohjeet-gvn2RugGcy",
+      "label": "Käyttäjäohjeet",
+      "clientId": "macos-vSliVFbYey",
+      "children": [
+        {
+          "type": "doc",
+          "id": "liittyminen-deploy-appiin-8n0VWdIQS7",
+          "label": "Liittyminen Deploy Appiin",
+          "slug": "liittyminen-deploy-appiin-8n0VWdIQS7"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "yllapitajaohjeet-P9wW76YULL",
+      "label": "Ylläpitäjäohjeet",
+      "clientId": "macos-vSliVFbYey",
+      "children": [
+        {
+          "type": "doc",
+          "id": "ensimmainen-kirjautuminen-76Ni4wUAga",
+          "label": "Ensimmäinen kirjautuminen",
+          "slug": "ensimmainen-kirjautuminen-76Ni4wUAga"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "kayttajaohjeet-BmrPbX1LzT",
+      "label": "Käyttäjäohjeet",
+      "clientId": "linux-r2m8sbVwwu",
+      "children": [
+        {
+          "type": "doc",
+          "id": "liittyminen-deploy-appiin-8BJGmgSYG7",
+          "label": "Liittyminen Deploy Appiin",
+          "slug": "liittyminen-deploy-appiin-8BJGmgSYG7"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "yllapitajaohjeet-O3AI1KCgUO",
+      "label": "Ylläpitäjäohjeet",
+      "clientId": "linux-r2m8sbVwwu",
+      "children": [
+        {
+          "type": "doc",
+          "id": "ensimmainen-kirjautuminen-GpGTPGBu3t",
+          "label": "Ensimmäinen kirjautuminen",
+          "slug": "ensimmainen-kirjautuminen-GpGTPGBu3t"
+        }
+      ]
     }
   ]
 }

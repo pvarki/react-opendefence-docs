@@ -29,6 +29,11 @@
       "id": "avancerade-instruktioner-write--eller-read-grupper"
     }
   ],
+  "translations": {
+    "en": "/en/wikis/tak/keycloak-group-management-HbnhaALE1M",
+    "fi": "/fi/wikis/tak/keycloak-ryhmien-hallinta-iRtHPKXbsh",
+    "sv": "/sv/wikis/tak/keycloak-grupphantering-ejTxo0JEa8"
+  },
   "blocks": [
     {
       "type": "image",

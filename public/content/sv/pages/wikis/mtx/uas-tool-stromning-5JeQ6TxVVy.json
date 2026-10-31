@@ -23,6 +23,11 @@
       "id": "om-du-vill-att-videoströmmen-ska-börja-sändas-automatiskt-när-drönaren-ansluts-kan-du-lägga-till-detta-kommando"
     }
   ],
+  "translations": {
+    "en": "/en/wikis/mtx/uas-tool-streaming-nxo5zBYr3D",
+    "fi": "/fi/wikis/mtx/uas-tool-striimaus-7enOQTR7tf",
+    "sv": "/sv/wikis/mtx/uas-tool-stromning-5JeQ6TxVVy"
+  },
   "blocks": [
     {
       "type": "html",

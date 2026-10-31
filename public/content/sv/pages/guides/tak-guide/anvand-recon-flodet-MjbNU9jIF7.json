@@ -34,13 +34,13 @@
         {
           "title": "Grunderna i RECON-flödet",
           "layout": "text",
-          "html": "<ul>\n<li>RECON Feed är avsett att hanteras av kommandoplatsen (Command Post).</li>\n<li>Soldater har endast läsbehörighet till det.</li>\n<li>Varje ATAK-användare på en Deploy App TAK-server prenumererar automatiskt på RECON Feed.\nEtt färdigt och prenumererat Recon Feed visas här.</li>\n</ul>",
+          "html": "<ul>\n<li>RECON Feed är avsett att hanteras av kommandoplatsen (Command Post).</li>\n<li>Soldater har endast läsbehörighet till det.</li>\n<li>Varje ATAK-användare på en Deploy App TAK-server prenumererar automatiskt på RECON Feed.</li>\n</ul>\n<p>Ett färdigt och prenumererat Recon Feed visas här.</p>",
           "images": []
         },
         {
           "title": "Uppdatera information i RECON-flödet 1",
           "layout": "image-bottom",
-          "html": "<ul>\n<li>Soldater skickar observationer till kommandoplatsen via GeoChat till användare med HQ-roll, eller via ett observationsflöde (Observations feed) om er enhet använder ett sådant.</li>\n<li>Skicka din markör antingen till <strong>to role -> HQ</strong> (visas i bilden) eller till ett observationsflöde.\nBlue43 skickar här sin nya markör till HQ-rollen.</li>\n</ul>",
+          "html": "<ul>\n<li>Soldater skickar observationer till kommandoplatsen via GeoChat till användare med HQ-roll, eller via ett observationsflöde (Observations feed) om er enhet använder ett sådant.</li>\n<li>Skicka din markör antingen till <strong>to role -> HQ</strong> (visas i bilden) eller till ett observationsflöde.</li>\n</ul>\n<p>Blue43 skickar här sin nya markör till HQ-rollen.</p>",
           "images": [
             {
               "src": "/content/images/sv/attachments/13ed3f60a7fb002f.webp",
@@ -52,7 +52,7 @@
         {
           "title": "Uppdatera information i RECON-flödet 2",
           "layout": "image-bottom",
-          "html": "<ul>\n<li>Kommandoplatsen granskar den mottagna informationen, verifierar den och vidarebefordrar vid behov relevant information till RECON Feed.</li>\n<li>Kommandoplatsen håller även koll på informationen i flödet, och gammal, irrelevant information tas bort från flödet.\nEn iTAK HQ-användare som agerar kommandoplats visas här när hen lägger till Blue43:s markör i RECON-flödet.</li>\n</ul>",
+          "html": "<ul>\n<li>Kommandoplatsen granskar den mottagna informationen, verifierar den och vidarebefordrar vid behov relevant information till RECON Feed.</li>\n<li>Kommandoplatsen håller även koll på informationen i flödet, och gammal, irrelevant information tas bort från flödet.</li>\n</ul>\n<p>En iTAK HQ-användare som agerar kommandoplats visas här när hen lägger till Blue43:s markör i RECON-flödet.</p>",
           "images": [
             {
               "src": "/content/images/sv/attachments/224048abc6268778.webp",
@@ -64,7 +64,7 @@
         {
           "title": "Uppdatera information i RECON-flödet 3",
           "layout": "image-bottom",
-          "html": "<ul>\n<li>Tillagd information visas för alla användare</li>\n<li>Borttagen information försvinner för användarna.\nVår nyss tillagda markör från Blue43 visad från RECON-flödet.</li>\n</ul>",
+          "html": "<ul>\n<li>Tillagd information visas för alla användare</li>\n<li>Borttagen information försvinner för användarna.</li>\n</ul>\n<p>Vår nyss tillagda markör från Blue43 visad från RECON-flödet.</p>",
           "images": [
             {
               "src": "/content/images/sv/attachments/0348a5da252e244d.webp",
@@ -76,7 +76,7 @@
         {
           "title": "Återvinning av RECON-flödet",
           "layout": "image-bottom",
-          "html": "<ul>\n<li>Mycket information hamnar i RECON-flödet vid aktiv användning, och det behöver återvinnas för att rensa ut gammal information.</li>\n<li>Återvinningen görs av kommandoplatsen, och soldater bjuds in till de nya flödena med jämna mellanrum.\nEtt uppdaterat och tillgängligt RECON-flöde visas här.</li>\n</ul>",
+          "html": "<ul>\n<li>Mycket information hamnar i RECON-flödet vid aktiv användning, och det behöver återvinnas för att rensa ut gammal information.</li>\n<li>Återvinningen görs av kommandoplatsen, och soldater bjuds in till de nya flödena med jämna mellanrum.</li>\n</ul>\n<p>Ett uppdaterat och tillgängligt RECON-flöde visas här.</p>",
           "images": [
             {
               "src": "/content/images/sv/attachments/22ab27310be30c0d.webp",
@@ -89,7 +89,7 @@
     },
     {
       "type": "html",
-      "html": "<p>När RECON-flödet är klart för dig, fortsätt till</p>\n<p>Läs mer om RECON-flödet på TAK Wiki <a href=\"/doc/bf3416b5-d2ca-4dc6-89a2-b48cfca69618\">Takserver RECON feed</a></p>\n<p>Läs mer om att vidarebefordra observationer till kommandoplatsen på TAK WIKI <a href=\"/doc/58a46804-6639-4b5e-a7c0-3056309cb411\">Forwarding Observations</a></p>"
+      "html": "<p>När RECON-flödet är klart för dig, fortsätt till</p>\n<p>Läs mer om RECON-flödet på TAK Wiki <a href=\"/en/wikis/tak/takserver-recon-feed-6S3IuBlBTY\">Takserver RECON feed</a></p>\n<p>Läs mer om att vidarebefordra observationer till kommandoplatsen på TAK WIKI <a href=\"/en/wikis/tak/forwarding-observations-K5fcmMIAnp\">Forwarding Observations</a></p>"
     }
   ]
 }

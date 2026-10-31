@@ -53,12 +53,16 @@
       "id": "systemkrav"
     }
   ],
+  "translations": {
+    "en": "/en/wikis/tak/tak-tracker-lightweight-tak-pGihrJitAY",
+    "fi": "/fi/wikis/tak/tak-tracker-kevyt-tak-android-ja-apple-H2Bj8HNmnv",
+    "sv": "/sv/wikis/tak/tak-tracker-latt-tak-android-och-apple-Ldi7s2rHHY"
+  },
   "blocks": [
     {
       "type": "image",
       "src": "/content/images/sv/attachments/8d5d065c3a7b66c6.webp",
       "alt": "",
-      "caption": "=225x",
       "width": 225,
       "height": 225
     },
@@ -70,7 +74,6 @@
       "type": "image",
       "src": "/content/images/sv/attachments/762b4dfb8f6098ed.webp",
       "alt": "",
-      "caption": "=2220x",
       "width": 2220,
       "height": 1080
     },
@@ -91,7 +94,6 @@
       "type": "image",
       "src": "/content/images/sv/attachments/5ebef74498d0cdcf.webp",
       "alt": "",
-      "caption": "=643x",
       "width": 643,
       "height": 297
     },

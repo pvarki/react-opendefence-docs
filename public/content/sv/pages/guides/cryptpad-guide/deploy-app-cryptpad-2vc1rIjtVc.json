@@ -17,6 +17,10 @@
       "id": "cryptpad-introduktion"
     }
   ],
+  "translations": {
+    "fi": "/fi/guides/cryptpad-guide/deploy-app-cryptpad-2C27HtLUGm",
+    "sv": "/sv/guides/cryptpad-guide/deploy-app-cryptpad-2vc1rIjtVc"
+  },
   "blocks": [
     {
       "type": "html",

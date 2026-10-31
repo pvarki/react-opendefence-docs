@@ -50,6 +50,10 @@
       "id": "contacts--geochat--työkalun-osio-atak-käyttöoppaasta"
     }
   ],
+  "translations": {
+    "en": "/en/wikis/tak/contacts-geochat-tool-3FdJAdO1R7",
+    "fi": "/fi/wikis/tak/contacts-geochat-tyokalu-3p3x279r0s"
+  },
   "blocks": [
     {
       "type": "html",

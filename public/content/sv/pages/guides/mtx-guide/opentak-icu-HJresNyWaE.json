@@ -18,6 +18,11 @@
       "id": "publicera-streamen-med-opentak-icu"
     }
   ],
+  "translations": {
+    "en": "/en/guides/mtx-guide/opentak-icu-xN1NdJaGa8",
+    "fi": "/fi/guides/mtx-guide/opentak-icu-f0iwedgGde",
+    "sv": "/sv/guides/mtx-guide/opentak-icu-HJresNyWaE"
+  },
   "blocks": [
     {
       "type": "html",

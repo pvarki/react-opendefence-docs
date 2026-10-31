@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 1,
+  "id": "e5e5b62e-5f7c-47a7-a38c-c6bfff6fe7bc",
+  "slug": "joining-a-deploy-app-0kPsFcJ37S",
+  "collection": "deploy-app",
+  "locale": "en",
+  "title": "Joining a Deploy App",
+  "breadcrumb": [
+    "Platforms",
+    "Linux",
+    "User Guide",
+    "Joining a Deploy App"
+  ],
+  "createdAt": "2026-10-22T12:32:10.404Z",
+  "updatedAt": "2026-10-22T13:25:44.884Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/deploy-app/joining-a-deploy-app-0kPsFcJ37S",
+    "fi": "/fi/deploy-app/liittyminen-deploy-appiin-8BJGmgSYG7",
+    "sv": "/sv/deploy-app/ga-med-i-en-deploy-app-lacRVxkAna"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Open your invite",
+          "layout": "image-left",
+          "html": "<p>Open the invite link or scan the QR code you got. Deploy App opens with your invite code filled in.</p>\n<ul>\n<li>Only got a code? Type it in <strong>Enter your code</strong> and press <strong>Login with Code</strong>.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/e632e30c9ebedee0.webp",
+              "width": 1614,
+              "height": 1600
+            }
+          ]
+        },
+        {
+          "title": "Choose your callsign",
+          "layout": "image-left",
+          "html": "<p>Type a callsign your unit knows you by and press <strong>Continue</strong>.</p>\n<ul>\n<li>You use the same callsign in every service.</li>\n<li>It is also your certificate password.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/29286f194fadfa90.webp",
+              "width": 1612,
+              "height": 1454
+            }
+          ]
+        },
+        {
+          "title": "Get approved",
+          "layout": "image-left",
+          "html": "<p>An admin has to approve you.</p>\n<ul>\n<li>Admin next to you: show them the QR code.</li>\n<li>Admin somewhere else: press <strong>Copy link</strong> and paste it into a message to your admin.</li>\n<li>Leave the page open. It moves on by itself once you are approved.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/46ea656a7054ba08.webp",
+              "width": 1920,
+              "height": 1752
+            }
+          ]
+        },
+        {
+          "title": "Get your key",
+          "layout": "image-left",
+          "html": "<p>Press <strong>Download key</strong>. The key is a file you add to your browser.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/6d0ad1c25f750cf5.webp",
+              "width": 2060,
+              "height": 1576
+            }
+          ]
+        },
+        {
+          "title": "Add the key to your browser",
+          "layout": "image-left",
+          "html": "<ol>\n<li>Press <strong>Copy address</strong> and open it in a new window: <strong>Ctrl+N</strong>, <strong>Ctrl+V</strong>, <strong>Enter</strong>.</li>\n<li>Press <strong>Import</strong>.</li>\n<li>Open Downloads, select your key file and press <strong>Select</strong>.</li>\n<li>Enter your callsign as the password and press <strong>OK</strong>.</li>\n<li>Come back to this window and press <strong>Installed – continue</strong>.</li>\n</ol>\n<ul>\n<li>On Firefox the steps are similar. Deploy App shows them for Firefox.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/e7d742f5709be3f8.webp",
+              "width": 2068,
+              "height": 1906
+            }
+          ]
+        },
+        {
+          "title": "Go to the service",
+          "layout": "image-left",
+          "html": "<p>Press <strong>Go to the service</strong>. The browser asks for a certificate with your callsign already selected. Press <strong>OK</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/47c8e493a576253b.webp",
+              "width": 2060,
+              "height": 1700
+            }
+          ]
+        },
+        {
+          "title": "You're in",
+          "layout": "image-left",
+          "html": "<p>Deploy App opens. A short guide shows the first time. Press <strong>Next</strong> to go through it, or close it.</p>\n<ul>\n<li>Tick <strong>Do not show me guides automatically</strong> if you don't want guides to pop up.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/9cf2cf67b68e1aea.webp",
+              "width": 2200,
+              "height": 2200
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

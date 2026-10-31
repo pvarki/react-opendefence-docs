@@ -29,10 +29,15 @@
       "id": "framtidsplan-preliminär"
     }
   ],
+  "translations": {
+    "en": "/en/wikis/tak/update-server-ota-hyp4E4fwtQ",
+    "fi": "/fi/wikis/tak/update-server-ota-mhNw2v3VQk",
+    "sv": "/sv/wikis/tak/update-server-ota-4LRd5gZA7O"
+  },
   "blocks": [
     {
       "type": "html",
-      "html": "<p>Takserver har en funktion som gör det möjligt att tillhandahålla uppdateringar för ATAK-appar och tillägg via takserveranslutningen. När användare är anslutna till takservern och tjänsten är aktiverad kan de uppdatera och installera appar och tillägg via <strong>Plugins Tools (TAK Package Mgmt)</strong>.</p>\n<p>För närvarande erbjuder <strong>PVARKI</strong> följande paket för installation och uppdatering:</p>\n<ul>\n<li><strong>ATAK-applikationen</strong></li>\n<li><strong>Data Sync-tillägget</strong></li>\n</ul>\n<p>En portal planeras där administratörer skulle kunna uppdatera, lägga till och ta bort .apk-filer som distribueras till klienter, men denna funktion har ännu ingen tidsplan. <a href=\"/doc/69aa0a8f-4443-4727-b37a-51ab64149b0b\">Lisäosa listaus</a>.</p>\n<h3 id=\"nuvarande-metod-för-att-hantera-tillägg-i-deploy-app-miljön\"><a href=\"#nuvarande-metod-för-att-hantera-tillägg-i-deploy-app-miljön\"><strong>Nuvarande metod för att hantera tillägg i Deploy App-miljön</strong></a></h3>\n<p>Administratören behöver SSH root-behörighet till servern!</p>\n<p>Lägg .apk-filerna i katalogen <code>/tmp/update</code> och kör kommandot <code>taktool pp</code> i den katalogen. Flytta sedan den skapade mappen till rätt plats och justera rättigheterna.</p>"
+      "html": "<p>Takserver har en funktion som gör det möjligt att tillhandahålla uppdateringar för ATAK-appar och tillägg via takserveranslutningen. När användare är anslutna till takservern och tjänsten är aktiverad kan de uppdatera och installera appar och tillägg via <strong>Plugins Tools (TAK Package Mgmt)</strong>.</p>\n<p>För närvarande erbjuder <strong>PVARKI</strong> följande paket för installation och uppdatering:</p>\n<ul>\n<li><strong>ATAK-applikationen</strong></li>\n<li><strong>Data Sync-tillägget</strong></li>\n</ul>\n<p>En portal planeras där administratörer skulle kunna uppdatera, lägga till och ta bort .apk-filer som distribueras till klienter, men denna funktion har ännu ingen tidsplan. <a href=\"/sv/wikis/tak/tillaggslista-kvscGDLbSf\">Lisäosa listaus</a>.</p>\n<h3 id=\"nuvarande-metod-för-att-hantera-tillägg-i-deploy-app-miljön\"><a href=\"#nuvarande-metod-för-att-hantera-tillägg-i-deploy-app-miljön\"><strong>Nuvarande metod för att hantera tillägg i Deploy App-miljön</strong></a></h3>\n<p>Administratören behöver SSH root-behörighet till servern!</p>\n<p>Lägg .apk-filerna i katalogen <code>/tmp/update</code> och kör kommandot <code>taktool pp</code> i den katalogen. Flytta sedan den skapade mappen till rätt plats och justera rättigheterna.</p>"
     },
     {
       "type": "code",

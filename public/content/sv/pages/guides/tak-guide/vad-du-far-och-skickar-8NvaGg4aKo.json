@@ -40,7 +40,7 @@
         {
           "title": "Översikt - Soldaten tar emot",
           "layout": "image-bottom",
-          "html": "<ol start=\"4\">\n<li>\n<p>Ta emot det CP-producerade RECON-flödet för att få veta vad vi vet om insatsområdet.</p>\n</li>\n<li>\n<p>Ta emot uppdragets PLAN-flöden för marschvägar, patrullvägar, geostängselvarningar...</p>\n</li>\n<li>\n<p>Ta emot BLUFOR-flödet med t.ex. anflygningsvägar till egna positioner.</p>\n</li>\n<li>\n<p>Bevaka det meddelandeverktyg som valts i din enhet (Geochat, Matrix eller andra).</p>\n<p>\\</p>\n</li>\n</ol>",
+          "html": "<ol start=\"4\">\n<li>Ta emot det CP-producerade RECON-flödet för att få veta vad vi vet om insatsområdet.</li>\n<li>Ta emot uppdragets PLAN-flöden för marschvägar, patrullvägar, geostängselvarningar...</li>\n<li>Ta emot BLUFOR-flödet med t.ex. anflygningsvägar till egna positioner.</li>\n<li>Bevaka det meddelandeverktyg som valts i din enhet (Geochat, Matrix eller andra).</li>\n</ol>",
           "images": [
             {
               "src": "/content/images/sv/attachments/9990aa9707a9ab73.webp",

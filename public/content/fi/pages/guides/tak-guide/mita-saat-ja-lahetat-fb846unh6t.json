@@ -40,7 +40,7 @@
         {
           "title": "Yleiskatsaus - Taistelija vastaanottaa",
           "layout": "image-bottom",
-          "html": "<ol start=\"4\">\n<li>\n<p>Vastaanota CP:n tuottama RECON-syöte saadaksesi tietoomme tulleet havainnot toiminta-alueelta.</p>\n</li>\n<li>\n<p>Vastaanota tehtävän PLAN-syötteet marssireittejä, partioreittejä, geoaitahälytyksiä varten...</p>\n</li>\n<li>\n<p>Vastaanota BLUFOR-syöte esim. lähestymisreiteillä omiin asemiin.</p>\n</li>\n<li>\n<p>Seuraa yksikkösi valitsemaa viestintätyökalua (Geochat, Matrix tai muut).</p>\n<p>\\</p>\n</li>\n</ol>",
+          "html": "<ol start=\"4\">\n<li>Vastaanota CP:n tuottama RECON-syöte saadaksesi tietoomme tulleet havainnot toiminta-alueelta.</li>\n<li>Vastaanota tehtävän PLAN-syötteet marssireittejä, partioreittejä, geoaitahälytyksiä varten...</li>\n<li>Vastaanota BLUFOR-syöte esim. lähestymisreiteillä omiin asemiin.</li>\n<li>Seuraa yksikkösi valitsemaa viestintätyökalua (Geochat, Matrix tai muut).</li>\n</ol>",
           "images": [
             {
               "src": "/content/images/fi/attachments/9990aa9707a9ab73.webp",

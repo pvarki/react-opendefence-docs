@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 1,
+  "id": "ce35da37-49ac-4b8b-9e0d-76b034669cb4",
+  "slug": "ga-med-i-en-deploy-app-PgNnzg4Vyj",
+  "collection": "deploy-app",
+  "locale": "sv",
+  "title": "Gå med i en Deploy App",
+  "breadcrumb": [
+    "Platforms",
+    "macOS",
+    "Användarguide",
+    "Gå med i en Deploy App"
+  ],
+  "createdAt": "2026-10-22T12:32:14.260Z",
+  "updatedAt": "2026-10-22T13:25:51.681Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/deploy-app/joining-a-deploy-app-6vV32V3B2c",
+    "fi": "/fi/deploy-app/liittyminen-deploy-appiin-8n0VWdIQS7",
+    "sv": "/sv/deploy-app/ga-med-i-en-deploy-app-PgNnzg4Vyj"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Öppna din inbjudan",
+          "layout": "image-left",
+          "html": "<p>Öppna inbjudningslänken eller skanna QR-koden du fick. Deploy App öppnas med inbjudningskoden ifylld.</p>\n<ul>\n<li>Fick du bara en kod? Skriv den i <strong>Ange din kod</strong> och tryck <strong>Logga in med kod</strong>.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/0cec419f1436856d.webp",
+              "width": 1614,
+              "height": 1600
+            }
+          ]
+        },
+        {
+          "title": "Välj din anropssignal",
+          "layout": "image-left",
+          "html": "<p>Skriv en anropssignal som din enhet känner igen dig på och tryck <strong>Fortsätt</strong>.</p>\n<ul>\n<li>Du använder samma anropssignal i alla tjänster.</li>\n<li>Den är också lösenordet till ditt certifikat.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/d9cbc306122686ea.webp",
+              "width": 1612,
+              "height": 1454
+            }
+          ]
+        },
+        {
+          "title": "Bli godkänd",
+          "layout": "image-left",
+          "html": "<p>En administratör måste godkänna dig.</p>\n<ul>\n<li>Administratören bredvid dig: visa QR-koden.</li>\n<li>Administratören någon annanstans: tryck <strong>Kopiera länk</strong> och klistra in den i ett meddelande till hen.</li>\n<li>Låt sidan vara öppen. Den går vidare av sig själv när du är godkänd.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/aefe3e91486c84b4.webp",
+              "width": 1920,
+              "height": 1776
+            }
+          ]
+        },
+        {
+          "title": "Hämta din nyckel",
+          "layout": "image-left",
+          "html": "<p>Tryck <strong>Ladda ner nyckel</strong>. Nyckeln är en fil som du installerar på den här Macen.</p>\n<ul>\n<li>Safari frågar första gången. Tryck <strong>Tillåt</strong>.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/95a82335b3fb2fde.webp",
+              "width": 2060,
+              "height": 1576
+            }
+          ]
+        },
+        {
+          "title": "Installera nyckeln",
+          "layout": "image-left",
+          "html": "<ol>\n<li>Öppna den hämtade filen.</li>\n<li>Lås upp med Touch ID eller Macens lösenord.</li>\n<li>Ange din anropssignal som lösenord och tryck <strong>OK</strong>.</li>\n</ol>\n<p>Nyckelringsåtkomst öppnas. Kom tillbaka till webbläsaren och tryck <strong>Installerad – fortsätt</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/f5462462ede949d6.webp",
+              "width": 2068,
+              "height": 2032
+            }
+          ]
+        },
+        {
+          "title": "Nyckelring: öppna certifikatet",
+          "layout": "image-left",
+          "html": "<p>I Nyckelringsåtkomst:</p>\n<ol>\n<li>Välj <strong>Mina certifikat</strong>.</li>\n<li>Sök efter din anropssignal. ⌘V klistrar in den.</li>\n<li>Dubbelklicka på raden med din anropssignal.</li>\n</ol>\n<p>Certifikatet syns först när du söker efter det. Tryck <strong>Klart – nästa</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/fbc58828ce0cd7bd.webp",
+              "width": 2060,
+              "height": 1852
+            }
+          ]
+        },
+        {
+          "title": "Nyckelring: lita på certifikatet",
+          "layout": "image-left",
+          "html": "<ol>\n<li>Öppna <strong>Lita på</strong>.</li>\n<li>Ställ in <strong>Vid användning av certifikatet</strong> på <strong>Lita alltid på</strong>.</li>\n<li>Stäng fönstret och bekräfta med Touch ID eller lösenord.</li>\n</ol>\n<p>Tryck <strong>Klart – nästa</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/6a1d3ae635905917.webp",
+              "width": 2060,
+              "height": 1752
+            }
+          ]
+        },
+        {
+          "title": "Nyckelring: tillåt användning av nyckeln",
+          "layout": "image-left",
+          "html": "<ol>\n<li>Öppna pilen till vänster om raden med din anropssignal.</li>\n<li>Dubbelklicka på <strong>Imported Private Key</strong>.</li>\n<li>Välj <strong>Åtkomstkontroll</strong>.</li>\n<li>Välj <strong>Tillåt alla appar att använda objektet</strong>.</li>\n<li>Tryck <strong>Spara ändringar</strong>. Ange Macens lösenord (inte Touch ID) och tryck <strong>Tillåt</strong>.</li>\n<li>Stäng fönstret och Nyckelringsåtkomst.</li>\n</ol>\n<p>Tryck <strong>Klart – fortsätt</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/00d4c7f48d37a0e9.webp",
+              "width": 2060,
+              "height": 2082
+            }
+          ]
+        },
+        {
+          "title": "Gå till tjänsten",
+          "layout": "image-left",
+          "html": "<p>Tryck <strong>Gå till tjänsten</strong>. Välj din anropssignal och tryck <strong>OK</strong>.</p>\n<ul>\n<li>Om din Mac frågar efter lösenord, ange Macens lösenord och välj <strong>Tillåt alltid</strong>.</li>\n<li>I Safari: tryck <strong>Gå till tjänsten</strong> och sedan <strong>Logga in med certifikat</strong>. Välj din anropssignal och tryck <strong>Fortsätt</strong>.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/d96bd2a0310e435f.webp",
+              "width": 2060,
+              "height": 1754
+            }
+          ]
+        },
+        {
+          "title": "Du är inne",
+          "layout": "image-left",
+          "html": "<p>Deploy App öppnas. En kort guide visas första gången. Tryck <strong>Nästa</strong> för att gå igenom den, eller stäng den.</p>\n<ul>\n<li>Kryssa i <strong>Visa inte guider automatiskt för mig</strong> om du inte vill att guider ska dyka upp.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/784e13840dc83e6f.webp",
+              "width": 2200,
+              "height": 2200
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

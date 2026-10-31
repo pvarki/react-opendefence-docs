@@ -17,10 +17,15 @@
       "id": "dokumentation"
     }
   ],
+  "translations": {
+    "en": "/en/wikis/mtx/what-is-mtx-dfU8aHguP1",
+    "fi": "/fi/wikis/mtx/mika-on-mtx-2htQJ88VC2",
+    "sv": "/sv/wikis/mtx/vad-ar-mtx-vrCxWzeqRf"
+  },
   "blocks": [
     {
       "type": "html",
-      "html": "<p>MTX = MediaMTX är en färdig att använda och beroendefri live-mediaserver och medierele. Den är utformad som en \"medie-buss\" som dirigerar mediastreamar från ände till ände.</p>"
+      "html": "<p>MTX = MediaMTX är en färdig att använda och beroendefri live-mediaserver och medierele. Den är utformad som en ”medie-buss” som dirigerar mediastreamar från ände till ände.</p>"
     },
     {
       "type": "image",

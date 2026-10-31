@@ -1,0 +1,5 @@
+{
+  "tag": "v1.17.1+261027",
+  "publishedAt": "2026-10-27T21:40:53Z",
+  "html": "<h2 id=\"1171261027-2026-10-27\"><a href=\"#1171261027-2026-10-27\">1.17.1+261027 (2026-10-27)</a></h2>\n<h3 id=\"fixes\"><a href=\"#fixes\">Fixes</a></h3>\n<ul>\n<li><strong>deps:</strong> patch remaining locked advisories (<a href=\"https://github.com/pvarki/python-tak-rmapi/commit/5ed069c534ed6acb6bfd89681ab6764af2008477\" target=\"_blank\" rel=\"noopener noreferrer\">5ed069c</a>)</li>\n<li><strong>deps:</strong> update Python security pins (<a href=\"https://github.com/pvarki/python-tak-rmapi/commit/12ef94a882390043c938391b04c61063ee02f0fa\" target=\"_blank\" rel=\"noopener noreferrer\">12ef94a</a>)</li>\n</ul>\n<h3 id=\"other-changes\"><a href=\"#other-changes\">Other changes</a></h3>\n<ul>\n<li><strong>docker:</strong> normalize stage keyword casing (<a href=\"https://github.com/pvarki/python-tak-rmapi/commit/7d4de6063de3dafac8fbad49d6c847fe6531ee37\" target=\"_blank\" rel=\"noopener noreferrer\">7d4de60</a>)</li>\n</ul>"
+}

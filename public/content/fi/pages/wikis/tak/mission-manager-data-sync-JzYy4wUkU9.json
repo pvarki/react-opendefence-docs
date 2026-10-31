@@ -39,10 +39,15 @@
       "id": "käyttäjäoikeuksien-muuttaminen"
     }
   ],
+  "translations": {
+    "en": "/en/wikis/tak/mission-manager-data-sync-HdRqCuoE2v",
+    "fi": "/fi/wikis/tak/mission-manager-data-sync-JzYy4wUkU9",
+    "sv": "/sv/wikis/tak/mission-manager-data-sync-iCzglz3Qre"
+  },
   "blocks": [
     {
       "type": "html",
-      "html": "<p>Missions (Data Sync -syötteet) hallitaan takserverin käyttöliittymän Mission Manager -osion kautta.\\nMission Manager löytyy<a> osoitteesta:</a>\\n<a><strong>https://tak.server.fi:8443/Marti/MissionManager.ht</strong></a><a href=\"https://tak.server.fi:8443/Marti/MissionManager.html\" target=\"_blank\" rel=\"noopener noreferrer\"><strong>ml</strong></a></p>"
+      "html": "<p>Missions (Data Sync -syötteet) hallitaan takserverin käyttöliittymän Mission Manager -osion kautta.\nMission Manager löytyy<a> osoitteesta:</a>\n<a><strong>https://tak.server.fi:8443/Marti/MissionManager.ht</strong></a><a href=\"https://tak.server.fi:8443/Marti/MissionManager.html\" target=\"_blank\" rel=\"noopener noreferrer\"><strong>ml</strong></a></p>"
     },
     {
       "type": "image",
@@ -75,7 +80,7 @@
     },
     {
       "type": "html",
-      "html": "<h3 id=\"missionin-poistaminen--arkistointi\"><a href=\"#missionin-poistaminen--arkistointi\"><strong>Missionin poistaminen / Arkistointi</strong></a></h3>\n<p>Missionien poistaminen tehdään valitsemalla halutut syötteet ja painamalla <strong>Delete</strong>.\\nPoistetut syötteet siirtyvät <strong>Archived Missions</strong> -osioon, joten niiden dataa ei poisteta palvelimelta.</p>"
+      "html": "<h3 id=\"missionin-poistaminen--arkistointi\"><a href=\"#missionin-poistaminen--arkistointi\"><strong>Missionin poistaminen / Arkistointi</strong></a></h3>\n<p>Missionien poistaminen tehdään valitsemalla halutut syötteet ja painamalla <strong>Delete</strong>.\nPoistetut syötteet siirtyvät <strong>Archived Missions</strong> -osioon, joten niiden dataa ei poisteta palvelimelta.</p>"
     },
     {
       "type": "image",
@@ -86,7 +91,7 @@
     },
     {
       "type": "html",
-      "html": "<h3 id=\"missionin-muokkaaminen\"><a href=\"#missionin-muokkaaminen\"><strong>Missionin muokkaaminen</strong></a></h3>\n<p>Missionin muokkaus takserverissä tehdään Mission Manager -näkymästä.\\nValitse syötteet, joita haluat muuttaa, ja säädä asetuksia tarpeen mukaan.</p>\n<p>Kun muutokset on tehty, valitse <strong>Save and Close</strong>.</p>"
+      "html": "<h3 id=\"missionin-muokkaaminen\"><a href=\"#missionin-muokkaaminen\"><strong>Missionin muokkaaminen</strong></a></h3>\n<p>Missionin muokkaus takserverissä tehdään Mission Manager -näkymästä.\nValitse syötteet, joita haluat muuttaa, ja säädä asetuksia tarpeen mukaan.</p>\n<p>Kun muutokset on tehty, valitse <strong>Save and Close</strong>.</p>"
     },
     {
       "type": "image",
@@ -97,7 +102,7 @@
     },
     {
       "type": "html",
-      "html": "<h3 id=\"käyttäjäoikeuksien-muuttaminen\"><a href=\"#käyttäjäoikeuksien-muuttaminen\"><strong>Käyttäjäoikeuksien muuttaminen</strong></a></h3>\n<p>Jos <strong>RECON</strong>-syötteen halutaan olevan tavallisille käyttäjille vain <em>ReadOnly</em>, vähintään yksi ylläpitäjä täytyy asettaa syötteen <strong>Owner</strong>-rooliin, jotta hän voi hallita sitä.</p>\n<p>Saadaksesi käyttäjän Owner-rooliin takserverin kautta:</p>\n<ol>\n<li>Aseta mission <strong>defaultRole</strong> tilapäisesti arvoon <strong>Owner</strong></li>\n<li>Pyydä haluttua käyttäjää tilaamaan syöte (subscribe) → hän saa Owner-oikeudet</li>\n<li>Kun kaikilla tarvittavilla käyttäjillä on halutut roolit, voit palauttaa defaultRole-asetuksen haluttuun tilaan</li>\n</ol>\n<p><strong>Owner-käyttäjät voivat data sync -lisäosassa:</strong></p>\n<ul>\n<li>muuttaa muiden käyttäjien rooleja</li>\n<li>hallita käyttäjiä kutsumalla heitä missioniin tai poistamalla heidät siitä</li>\n</ul>\n<p>Roolin muuttaminen tehdään syötteen asetuksissa <strong>Active Members</strong> -valikon kautta, käyttämällä avain-kuvaketta.</p>\n<p><img src=\"/content/images/fi/attachments/b49066f9459187ed.webp\" alt=\"\" title=\" =602x1073\"> <img src=\"/content/images/fi/attachments/ecc18a14361c6156.webp\" alt=\"\" title=\" =1080x1981\"></p>"
+      "html": "<h3 id=\"käyttäjäoikeuksien-muuttaminen\"><a href=\"#käyttäjäoikeuksien-muuttaminen\"><strong>Käyttäjäoikeuksien muuttaminen</strong></a></h3>\n<p>Jos <strong>RECON</strong>-syötteen halutaan olevan tavallisille käyttäjille vain <em>ReadOnly</em>, vähintään yksi ylläpitäjä täytyy asettaa syötteen <strong>Owner</strong>-rooliin, jotta hän voi hallita sitä.</p>\n<p>Saadaksesi käyttäjän Owner-rooliin takserverin kautta:</p>\n<ol>\n<li>Aseta mission <strong>defaultRole</strong> tilapäisesti arvoon <strong>Owner</strong></li>\n<li>Pyydä haluttua käyttäjää tilaamaan syöte (subscribe) → hän saa Owner-oikeudet</li>\n<li>Kun kaikilla tarvittavilla käyttäjillä on halutut roolit, voit palauttaa defaultRole-asetuksen haluttuun tilaan</li>\n</ol>\n<p><strong>Owner-käyttäjät voivat data sync -lisäosassa:</strong></p>\n<ul>\n<li>muuttaa muiden käyttäjien rooleja</li>\n<li>hallita käyttäjiä kutsumalla heitä missioniin tai poistamalla heidät siitä</li>\n</ul>\n<p>Roolin muuttaminen tehdään syötteen asetuksissa <strong>Active Members</strong> -valikon kautta, käyttämällä avain-kuvaketta.</p>\n<p><img src=\"/content/images/fi/attachments/b49066f9459187ed.webp\" alt=\"\" width=\"602\" height=\"1073\"> <img src=\"/content/images/fi/attachments/ecc18a14361c6156.webp\" alt=\"\" width=\"1080\" height=\"1981\"></p>"
     }
   ]
 }

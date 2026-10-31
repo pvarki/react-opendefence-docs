@@ -1,0 +1,5 @@
+{
+  "tag": "v1.16.1+260915",
+  "publishedAt": "2026-09-16T06:39:08Z",
+  "html": "<h2 id=\"1161260915-2026-09-16\"><a href=\"#1161260915-2026-09-16\">1.16.1+260915 (2026-09-16)</a></h2>\n<h3 id=\"features\"><a href=\"#features\">Features</a></h3>\n<ul>\n<li>generate per version openapi json (<a href=\"https://github.com/pvarki/python-tak-rmapi/commit/7939e45ce7472c21b2c1227116cd0991e2feb36d\" target=\"_blank\" rel=\"noopener noreferrer\">7939e45</a>)</li>\n<li>tag and release from main (<a href=\"https://github.com/pvarki/python-tak-rmapi/commit/a42e0244ed35075ed32fb1cc2cdac47e17aae5e0\" target=\"_blank\" rel=\"noopener noreferrer\">a42e024</a>)</li>\n</ul>"
+}

@@ -33,12 +33,16 @@
       "id": "järjestelmävaatimukset"
     }
   ],
+  "translations": {
+    "en": "/en/wikis/tak/tak-aware-apple-tak-3TrdXhARBh",
+    "fi": "/fi/wikis/tak/tak-aware-apple-tak-Kca1qYUDAO",
+    "sv": "/sv/wikis/tak/tak-aware-apple-tak-hKeKsxr1ZQ"
+  },
   "blocks": [
     {
       "type": "image",
       "src": "/content/images/fi/attachments/1f2bd5472620dcd2.webp",
       "alt": "",
-      "caption": "=430x",
       "width": 430,
       "height": 430
     },
@@ -46,7 +50,6 @@
       "type": "image",
       "src": "/content/images/fi/attachments/0866292196270644.webp",
       "alt": "",
-      "caption": "=1024x",
       "width": 1024,
       "height": 471
     },

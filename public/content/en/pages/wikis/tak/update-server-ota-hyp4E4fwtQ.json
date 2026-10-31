@@ -29,10 +29,15 @@
       "id": "future-plan-preliminary"
     }
   ],
+  "translations": {
+    "en": "/en/wikis/tak/update-server-ota-hyp4E4fwtQ",
+    "fi": "/fi/wikis/tak/update-server-ota-mhNw2v3VQk",
+    "sv": "/sv/wikis/tak/update-server-ota-4LRd5gZA7O"
+  },
   "blocks": [
     {
       "type": "html",
-      "html": "<p>Takserver has a feature to provide updates to ATAK applications and plugins with takserver connection. When users are connected to takserver with the service enabled, they can update and install applications and plugins from Plugins Tools (TAK Package Mgmt).</p>\n<p>Currently PVARKI is providing the following for installing and updating.</p>\n<ul>\n<li>ATAK -app</li>\n<li>Data Sync -plugin</li>\n</ul>\n<p>There is a plan to have a portal for admin to update/add/remove the .apk files shared to clients but this function is not on the road map yet. List on some of the available plugins is <a href=\"/doc/52717df5-11ce-4d08-a777-5c8154b451a4\">Plugin list</a>.</p>\n<h3 id=\"current-way-of-managing-plugins-inside-deploy-app\"><a href=\"#current-way-of-managing-plugins-inside-deploy-app\">Current way of managing plugins inside Deploy App</a></h3>\n<p>Admin need ssh root access to server!</p>\n<p>Add .apk' to <code>/tmp/update</code> and run <code>taktool pp</code>, inside the folder. Move the folder to mapped location and fix permissions.</p>"
+      "html": "<p>Takserver has a feature to provide updates to ATAK applications and plugins with takserver connection. When users are connected to takserver with the service enabled, they can update and install applications and plugins from Plugins Tools (TAK Package Mgmt).</p>\n<p>Currently PVARKI is providing the following for installing and updating.</p>\n<ul>\n<li>ATAK -app</li>\n<li>Data Sync -plugin</li>\n</ul>\n<p>There is a plan to have a portal for admin to update/add/remove the .apk files shared to clients but this function is not on the road map yet. List on some of the available plugins is <a href=\"/en/wikis/tak/plugin-list-cr2xfMYu9V\">Plugin list</a>.</p>\n<h3 id=\"current-way-of-managing-plugins-inside-deploy-app\"><a href=\"#current-way-of-managing-plugins-inside-deploy-app\">Current way of managing plugins inside Deploy App</a></h3>\n<p>Admin need ssh root access to server!</p>\n<p>Add .apk’ to <code>/tmp/update</code> and run <code>taktool pp</code>, inside the folder. Move the folder to mapped location and fix permissions.</p>"
     },
     {
       "type": "code",
