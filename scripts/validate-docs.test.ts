@@ -437,5 +437,79 @@ describe("helpers", () => {
     expect(report).toContain("## deploy-app");
     expect(report).toContain("## guides/tak-guide");
     expect(report).toContain(`(${OUTLINE_DOC_BASE}a-Aa11111111)`);
+    expect(report).not.toContain("## Skipped collections");
+    expect(report).not.toContain("Report cut");
+  });
+
+  it("renderReport lists skipped collections right after the summary", () => {
+    const issues: ValidationIssue[] = [
+      {
+        level: "warning",
+        code: "empty-doc",
+        message: "No blocks",
+        locale: "en",
+        collection: "deploy-app",
+        slug: "a-Aa11111111",
+        outlineUrl: `${OUTLINE_DOC_BASE}a-Aa11111111`,
+      },
+    ];
+    const sync = {
+      generatedAt: "2026-10-31T12:00:00.000Z",
+      skippedCollections: ["Architecture (architecture): 403 Forbidden"],
+    };
+    const report = renderReport(issues, sync);
+    const skipped = report.indexOf("## Skipped collections");
+    expect(skipped).toBeGreaterThan(report.indexOf("## Summary"));
+    expect(skipped).toBeLessThan(report.indexOf("## deploy-app"));
+    expect(report).toContain("- Architecture (architecture): 403 Forbidden");
+    expect(renderReport([], sync)).toContain("## Skipped collections");
+  });
+
+  it("renderReport cuts a long report, keeping the summary and all errors", () => {
+    const warning = (n: number): ValidationIssue => ({
+      level: "warning",
+      code: "empty-doc",
+      message: `No blocks ${"x".repeat(80)}`,
+      locale: "en",
+      collection: "a-book",
+      slug: `w${n}-Ww${String(n).padStart(8, "0")}`,
+      outlineUrl: `${OUTLINE_DOC_BASE}w${n}`,
+    });
+    const issues: ValidationIssue[] = [
+      ...Array.from({ length: 200 }, (_, n) => warning(n)),
+      {
+        level: "error",
+        code: "broken-internal-link",
+        message: "Link broken",
+        locale: "fi",
+        collection: "z-book",
+        slug: "e-Ee11111111",
+        outlineUrl: `${OUTLINE_DOC_BASE}e-Ee11111111`,
+      },
+    ];
+    const maxChars = 5_000;
+    const sync = {
+      generatedAt: "2026-10-31T12:00:00.000Z",
+      skippedCollections: ["Architecture (architecture): 403 Forbidden"],
+    };
+    const report = renderReport(issues, sync, maxChars);
+    expect(report.length).toBeLessThanOrEqual(maxChars);
+    expect(report).toContain("| warning | `empty-doc` | 200 |");
+    // The error of the last collection comes before any warning.
+    const errors = report.indexOf("## Errors");
+    expect(errors).toBeGreaterThan(report.indexOf("## Skipped collections"));
+    expect(report.indexOf("## Skipped collections")).toBeGreaterThan(
+      report.indexOf("## Summary"),
+    );
+    expect(report).toContain("[z-book fi/e-Ee11111111]");
+    expect(errors).toBeLessThan(report.indexOf("## a-book"));
+    const listed = report
+      .split("\n")
+      .filter((l) => l.startsWith("- **")).length;
+    expect(report).toContain(
+      `Report cut to fit the PR body: ${listed} of 201 issues listed.`,
+    );
+    expect(listed).toBeGreaterThan(1);
+    expect(listed).toBeLessThan(201);
   });
 });

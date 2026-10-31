@@ -30,6 +30,11 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 import { pathToFileURL } from "node:url";
+import {
+  readSyncWarnings,
+  renderSyncWarnings,
+  type SyncWarnings,
+} from "./lib/sync-warnings";
 
 import {
   DEFAULT_LOCALE,
@@ -569,13 +574,42 @@ export async function validateDocs(
 // Reporting
 // ---------------------------------------------------------------------------
 
-/** Markdown report for the sync PR body. */
-export function renderReport(issues: ValidationIssue[]): string {
+/**
+ * Longest report written for the sync PR body. GitHub caps a PR body at
+ * 65,536 characters, and the workflow passes the body to the PR action as
+ * an environment variable, which Linux caps at 128 KiB.
+ */
+export const REPORT_MAX_CHARS = 60_000;
+
+const LEVEL_RANK: Record<IssueLevel, number> = {
+  error: 0,
+  warning: 1,
+  info: 2,
+};
+
+function issueLine(i: ValidationIssue, withCollection = false): string {
+  const link = i.slug ? ` ([open in Outline](${i.outlineUrl}))` : "";
+  const where = `${withCollection ? `${i.collection || "(no collection)"} ` : ""}${i.locale}${i.slug ? `/${i.slug}` : ""}`;
+  return `- **${i.level}** \`${i.code}\` [${where}] — ${i.message}${link}`;
+}
+
+/**
+ * Markdown report for the sync PR body. Skipped collections from the last
+ * sync come right after the summary. When the full report is longer than
+ * `maxChars`, it is cut: the summary and skipped collections stay whole,
+ * all errors come next, then the other issues per collection until the
+ * budget runs out. The run log still lists every issue.
+ */
+export function renderReport(
+  issues: ValidationIssue[],
+  syncWarnings?: SyncWarnings,
+  maxChars = REPORT_MAX_CHARS,
+): string {
   const lines: string[] = ["# Docs validation report", ""];
   lines.push(`Generated: ${new Date().toISOString()}`, "");
 
   if (issues.length === 0) {
-    lines.push("No issues found.", "");
+    lines.push("No issues found.", "", ...renderSyncWarnings(syncWarnings));
     return lines.join("\n");
   }
 
@@ -590,14 +624,9 @@ export function renderReport(issues: ValidationIssue[]): string {
     entry.count++;
     counts.set(key, entry);
   }
-  const levelRank: Record<IssueLevel, number> = {
-    error: 0,
-    warning: 1,
-    info: 2,
-  };
   const summary = [...counts.values()].sort(
     (a, b) =>
-      levelRank[a.level] - levelRank[b.level] || a.code.localeCompare(b.code),
+      LEVEL_RANK[a.level] - LEVEL_RANK[b.level] || a.code.localeCompare(b.code),
   );
 
   lines.push(
@@ -609,31 +638,80 @@ export function renderReport(issues: ValidationIssue[]): string {
   for (const row of summary) {
     lines.push(`| ${row.level} | \`${row.code}\` | ${row.count} |`);
   }
-  lines.push("");
+  lines.push("", ...renderSyncWarnings(syncWarnings));
 
   // Per-collection sections with Outline deep links
-  const byCollection = new Map<string, ValidationIssue[]>();
-  for (const i of issues) {
-    const key = i.collection || "(no collection)";
-    byCollection.set(key, [...(byCollection.get(key) ?? []), i]);
-  }
-  for (const [collection, collectionIssues] of [...byCollection.entries()].sort(
-    (a, b) => a[0].localeCompare(b[0]),
-  )) {
-    lines.push(`## ${collection}`, "");
-    const sorted = [...collectionIssues].sort(
-      (a, b) =>
-        levelRank[a.level] - levelRank[b.level] || a.code.localeCompare(b.code),
-    );
-    for (const i of sorted) {
-      const link = i.slug ? ` ([open in Outline](${i.outlineUrl}))` : "";
-      lines.push(
-        `- **${i.level}** \`${i.code}\` [${i.locale}${i.slug ? `/${i.slug}` : ""}] — ${i.message}${link}`,
-      );
+  const byLevel = (a: ValidationIssue, b: ValidationIssue) =>
+    LEVEL_RANK[a.level] - LEVEL_RANK[b.level] || a.code.localeCompare(b.code);
+  const byCollection = (only: (i: ValidationIssue) => boolean) => {
+    const groups = new Map<string, ValidationIssue[]>();
+    for (const i of issues.filter(only)) {
+      const key = i.collection || "(no collection)";
+      groups.set(key, [...(groups.get(key) ?? []), i]);
     }
-    lines.push("");
-  }
+    return [...groups.entries()]
+      .sort((a, b) => a[0].localeCompare(b[0]))
+      .map(([collection, group]) => ({
+        title: `## ${collection}`,
+        items: [...group].sort(byLevel),
+      }));
+  };
 
+  const full = [...lines];
+  for (const section of byCollection(() => true)) {
+    full.push(section.title, "", ...section.items.map((i) => issueLine(i)), "");
+  }
+  const fullReport = full.join("\n");
+  if (fullReport.length <= maxChars) return fullReport;
+
+  // Too long: errors first, then the rest per collection, while they fit.
+  const errors = issues.filter((i) => i.level === "error");
+  const sections = [
+    ...(errors.length > 0
+      ? [
+          {
+            title: "## Errors",
+            items: [...errors].sort(byLevel),
+            withCollection: true,
+          },
+        ]
+      : []),
+    ...byCollection((i) => i.level !== "error").map((s) => ({
+      ...s,
+      withCollection: false,
+    })),
+  ];
+  const noteFor = (listed: number) =>
+    `_Report cut to fit the PR body: ${listed} of ${issues.length} issues listed. The run log (Actions → Scheduled Outline Sync → "Sync content from Outline") lists all of them._`;
+  // Room for the note, whatever the counts turn out to be.
+  const budget = maxChars - noteFor(issues.length).length - 2;
+  let length = lines.join("\n").length;
+  const fits = (text: string) => length + 1 + text.length <= budget;
+  const add = (text: string) => {
+    lines.push(text);
+    length += 1 + text.length;
+  };
+
+  let listed = 0;
+  outer: for (const section of sections) {
+    const first = section.items[0];
+    const heading = [
+      section.title,
+      "",
+      issueLine(first, section.withCollection),
+    ];
+    if (!fits(heading.join("\n"))) break;
+    for (const text of heading.slice(0, 2)) add(text);
+    for (const issue of section.items) {
+      const text = issueLine(issue, section.withCollection);
+      if (!fits(text)) break outer;
+      add(text);
+      listed++;
+    }
+    add("");
+  }
+  if (lines[lines.length - 1] !== "") add("");
+  lines.push(noteFor(listed), "");
   return lines.join("\n");
 }
 
@@ -673,7 +751,12 @@ async function main() {
 
   if (reportFile) {
     await fs.mkdir(path.dirname(path.resolve(reportFile)), { recursive: true });
-    await fs.writeFile(path.resolve(reportFile), renderReport(issues), "utf-8");
+    const syncWarnings = await readSyncWarnings();
+    await fs.writeFile(
+      path.resolve(reportFile),
+      renderReport(issues, syncWarnings),
+      "utf-8",
+    );
     console.log(`Report written to ${reportFile}`);
   }
 

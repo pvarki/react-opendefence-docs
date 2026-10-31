@@ -39,6 +39,12 @@ fixing — click it, fix the doc, done. The fix lands on the next sync.
 Levels: **error** (broken for readers, fix it), **warning** (works
 but degraded), **info** (FYI).
 
+A PR body holds about 60,000 characters. When the report is longer,
+it is cut: the summary and any skipped collections stay whole, all
+errors come first, and the rest of the issues follow until the space
+runs out. A note at the end says how many were listed; the run's log
+under **Actions** → **Scheduled Outline Sync** lists all of them.
+
 The codes you'll actually see:
 
 | Code                          | Meaning                                                                                             |
@@ -62,6 +68,13 @@ hidden pages that still have content, links to hidden pages, and
 markers on organizer docs. Find them in the run's log under
 **Actions** → **Scheduled Outline Sync** (lines marked ⚠ and the
 "Warnings" list in the completion report).
+
+If a collection can't be read at all (deleted in Outline, or the API
+key has no access to it), the sync skips it and keeps its current
+content on the site. The sync PR body lists it under **Skipped
+collections**, right after the summary, and the run's summary page
+shows a warning too. Fix the access or remove the collection from
+[config/collections.ts](../../config/collections.ts).
 
 ## Who merges, and when it deploys
 

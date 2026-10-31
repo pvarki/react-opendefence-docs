@@ -23,6 +23,29 @@ import type {
 // into script-types.
 export type { OutlineNavNode } from "./script-types";
 
+/** A non-2xx response from the Outline API; `status` is the HTTP status. */
+export class OutlineApiError extends Error {
+  constructor(
+    readonly status: number,
+    statusText: string,
+    body: string,
+  ) {
+    super(`Outline API error: ${status} ${statusText} - ${body}`);
+    this.name = "OutlineApiError";
+  }
+}
+
+/**
+ * True when Outline refused access (403) or the target no longer exists
+ * (404): retrying will not help, unlike network errors or 5xx.
+ */
+export function isAccessError(error: unknown): boolean {
+  return (
+    error instanceof OutlineApiError &&
+    (error.status === 403 || error.status === 404)
+  );
+}
+
 // Configuration
 
 const DEFAULT_API_BASE = "https://pvarki.getoutline.com/api";
@@ -83,8 +106,10 @@ export class OutlineApiClient {
 
     if (!response.ok) {
       const errorText = await response.text().catch(() => "Unknown error");
-      throw new Error(
-        `Outline API error: ${response.status} ${response.statusText} - ${errorText}`,
+      throw new OutlineApiError(
+        response.status,
+        response.statusText,
+        errorText,
       );
     }
 
@@ -108,8 +133,10 @@ export class OutlineApiClient {
 
     if (!response.ok) {
       const errorText = await response.text().catch(() => "Unknown error");
-      throw new Error(
-        `Outline API error: ${response.status} ${response.statusText} - ${errorText}`,
+      throw new OutlineApiError(
+        response.status,
+        response.statusText,
+        errorText,
       );
     }
 
