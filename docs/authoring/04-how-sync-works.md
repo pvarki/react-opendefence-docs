@@ -40,7 +40,8 @@ Levels: **error** (broken for readers, fix it), **warning** (works
 but degraded), **info** (FYI).
 
 A PR body holds about 60,000 characters. When the report is longer,
-it is cut: the summary and any skipped collections stay whole, all
+it is cut: the summary and any skipped collections or failed pages
+stay whole, all
 errors come first, and the rest of the issues follow until the space
 runs out. A note at the end says how many were listed; the run's log
 under **Actions** → **Scheduled Outline Sync** lists all of them.
@@ -75,6 +76,17 @@ content on the site. The sync PR body lists it under **Skipped
 collections**, right after the summary, and the run's summary page
 shows a warning too. Fix the access or remove the collection from
 [config/collections.ts](../../config/collections.ts).
+
+If a single page can't be downloaded, the page keeps its current
+content on the site and the sync PR body lists it under **Failed
+pages**, with Outline's error message. The run's log shows the error
+as soon as it happens. A permission or not-found error (4xx) is not
+retried, because retrying won't change the answer. Server errors
+(5xx) are retried a few times with a growing wait (about a minute in
+all), and the sync then tries any still-failing pages twice more at
+the end of the run. If no page could be downloaded at all, the run
+fails with the errors instead of opening a PR. That almost always
+means the API key or the bot user lost access.
 
 ## Who merges, and when it deploys
 

@@ -12,6 +12,8 @@ import {
   buildTranslationsFile,
   buildSlugRouteMap,
   addCarriedOverRoutes,
+  groupErrorMessages,
+  syncDownloadedNothing,
   staleSlugs,
   runWithConcurrency,
   writeJson,
@@ -334,5 +336,27 @@ describe("writeJson", () => {
     const content = await fs.readFile(file, "utf-8");
     expect(content).toBe(`{\n  "a": 1\n}\n`);
     await fs.rm(dir, { recursive: true, force: true });
+  });
+});
+
+describe("groupErrorMessages", () => {
+  it("folds identical messages, most frequent first", () => {
+    expect(groupErrorMessages(["b", "a", "a", "c", "a", "b"])).toEqual([
+      "a (×3)",
+      "b (×2)",
+      "c",
+    ]);
+  });
+
+  it("returns nothing for no messages", () => {
+    expect(groupErrorMessages([])).toEqual([]);
+  });
+});
+
+describe("syncDownloadedNothing", () => {
+  it("is true only when pages failed and none downloaded", () => {
+    expect(syncDownloadedNothing(0, 3)).toBe(true);
+    expect(syncDownloadedNothing(1, 3)).toBe(false);
+    expect(syncDownloadedNothing(0, 0)).toBe(false);
   });
 });

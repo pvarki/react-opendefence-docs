@@ -11,7 +11,7 @@
  * - Configurable requests per window (default 100/min, matching Outline)
  * - Automatic retry on 429 responses
  * - Respects Retry-After and RateLimit-* headers
- * - Exponential backoff on transient 5xx errors
+ * - Exponential backoff on transient 5xx errors (a few retries, then throw)
  */
 
 // Types
@@ -21,12 +21,23 @@ export interface RateLimitConfig {
   maxRequestsPerWindow: number;
   /** Rate limit window in milliseconds (default: 60000 = 1 minute) */
   windowMs: number;
-  /** Maximum number of retries on 429/5xx responses (default: 60, effectively unlimited) */
+  /** Maximum number of retries on 429 responses (default: 60, effectively unlimited) */
   maxRetries: number;
+  /**
+   * Maximum number of retries on 5xx responses (default: 5, about a minute
+   * of backoff). Kept short: a page that keeps failing is retried again by
+   * the sync's own retry passes, and a long backoff here only stalls the run.
+   */
+  maxServerErrorRetries: number;
   /** Buffer time in ms to add when waiting (default: 100) */
   bufferMs: number;
   /** Suppress console output for rate limit waits (default: false) */
   quiet: boolean;
+  /**
+   * Even when quiet, print waits at least this long (ms). The CI sync log
+   * uses it so long pauses have a visible reason. Unset: quiet is silent.
+   */
+  logWaitsFromMs?: number;
   /** Initial backoff in ms for exponential backoff on errors (default: 2000) */
   initialBackoffMs: number;
   /** Maximum backoff in ms (default: 120000 = 2 minutes) */
@@ -50,6 +61,7 @@ const DEFAULT_CONFIG: RateLimitConfig = {
   maxRequestsPerWindow: 100,
   windowMs: 60_000, // 1 minute
   maxRetries: 60, // effectively unlimited – keep retrying until success
+  maxServerErrorRetries: 5, // 2s + 4s + 8s + 16s + 32s
   bufferMs: 100,
   quiet: false,
   initialBackoffMs: 2_000,
@@ -78,6 +90,14 @@ export class RateLimitedFetcher {
       serverResetTime: null,
       serverLimit: null,
     };
+  }
+
+  /** Print a wait unless quiet; when quiet, only waits of logWaitsFromMs+. */
+  private notice(waitMs: number, message: string): void {
+    const { quiet, logWaitsFromMs } = this.config;
+    if (!quiet || (logWaitsFromMs !== undefined && waitMs >= logWaitsFromMs)) {
+      console.log(message);
+    }
   }
 
   /**
@@ -159,11 +179,10 @@ export class RateLimitedFetcher {
       const oldestTimestamp = this.state.requestTimestamps[0];
       const waitTime =
         oldestTimestamp + this.config.windowMs - now + this.config.bufferMs;
-      if (!this.config.quiet) {
-        console.log(
-          `  Local rate limit reached. Waiting ${Math.ceil(waitTime / 1000)}s...`,
-        );
-      }
+      this.notice(
+        waitTime,
+        `  Local rate limit reached. Waiting ${Math.ceil(waitTime / 1000)}s...`,
+      );
       await this.sleep(waitTime);
       return this.waitForLocalRateLimit();
     }
@@ -177,11 +196,10 @@ export class RateLimitedFetcher {
   private async waitForServerRateLimit(): Promise<void> {
     const serverWaitTime = this.getServerWaitTime();
     if (serverWaitTime > 0) {
-      if (!this.config.quiet) {
-        console.log(
-          `  Server rate limit. Waiting ${Math.ceil(serverWaitTime / 1000)}s...`,
-        );
-      }
+      this.notice(
+        serverWaitTime,
+        `  Server rate limit. Waiting ${Math.ceil(serverWaitTime / 1000)}s...`,
+      );
       await this.sleep(serverWaitTime);
     }
   }
@@ -211,6 +229,7 @@ export class RateLimitedFetcher {
     url: string,
     options: RequestInit = {},
     retryCount = 0,
+    serverErrorRetries = 0,
   ): Promise<Response> {
     await this.waitForLocalRateLimit();
     await this.waitForServerRateLimit();
@@ -235,43 +254,42 @@ export class RateLimitedFetcher {
         waitMs = serverWaitTime > 0 ? serverWaitTime : 1000;
       }
 
-      if (!this.config.quiet) {
-        console.log(
-          `  Rate limited (429). Waiting ${Math.ceil(waitMs / 1000)}s before retry ${retryCount + 1}/${this.config.maxRetries}...`,
-        );
-      }
+      this.notice(
+        waitMs,
+        `  Rate limited (429). Waiting ${Math.ceil(waitMs / 1000)}s before retry ${retryCount + 1}/${this.config.maxRetries}...`,
+      );
       await this.sleep(waitMs);
 
-      return this.fetch(url, options, retryCount + 1);
+      return this.fetch(url, options, retryCount + 1, serverErrorRetries);
     }
 
     // Retry on transient server errors (5xx) with exponential backoff.
-    // We NEVER give up permanently – if maxRetries is exhausted we throw so
-    // the outer document-level retry loop (MAX_DOC_RETRY_PASSES) can try the
-    // full request again from scratch after all other pending docs are done.
+    // When maxServerErrorRetries is exhausted we throw, so the sync's
+    // document-level retry passes (MAX_DOC_RETRY_PASSES) can try the request
+    // again after all other pending docs are done.
     if (response.status >= 500) {
-      if (retryCount >= this.config.maxRetries) {
+      const { maxServerErrorRetries } = this.config;
+      if (serverErrorRetries >= maxServerErrorRetries) {
         const errorText = await response.text().catch(() => "");
         throw new Error(
-          `Server error ${response.status} after ${this.config.maxRetries} retries – will retry later. ${errorText.slice(0, 120)}`,
+          `Server error ${response.status} after ${maxServerErrorRetries} retries. ${errorText.slice(0, 120)}`.trim(),
         );
       }
 
-      // Exponential backoff: initialBackoffMs * 2^retryCount, capped at maxBackoffMs
-      // e.g. 2s, 4s, 8s, 16s, 32s, 60s, 60s, … for a 503
+      // Exponential backoff: initialBackoffMs * 2^n, capped at maxBackoffMs
+      // e.g. 2s, 4s, 8s, 16s, 32s for a 503
       const backoffMs = Math.min(
-        this.config.initialBackoffMs * Math.pow(2, retryCount),
+        this.config.initialBackoffMs * Math.pow(2, serverErrorRetries),
         this.config.maxBackoffMs,
       );
 
-      if (!this.config.quiet) {
-        console.log(
-          `  Server error (${response.status}). Waiting ${Math.ceil(backoffMs / 1000)}s before retry ${retryCount + 1}/${this.config.maxRetries}...`,
-        );
-      }
+      this.notice(
+        backoffMs,
+        `  Server error (${response.status}). Waiting ${Math.ceil(backoffMs / 1000)}s before retry ${serverErrorRetries + 1}/${maxServerErrorRetries}...`,
+      );
       await this.sleep(backoffMs);
 
-      return this.fetch(url, options, retryCount + 1);
+      return this.fetch(url, options, retryCount, serverErrorRetries + 1);
     }
 
     return response;
@@ -302,7 +320,12 @@ let defaultFetcher: RateLimitedFetcher | null = null;
  */
 function getDefaultFetcher(): RateLimitedFetcher {
   if (!defaultFetcher) {
-    defaultFetcher = new RateLimitedFetcher({ quiet: true });
+    // In GitHub Actions there is no progress bar to corrupt, so long waits
+    // are printed: a minute-long pause in the sync log then has a reason.
+    defaultFetcher = new RateLimitedFetcher({
+      quiet: true,
+      logWaitsFromMs: process.env.GITHUB_ACTIONS === "true" ? 5_000 : undefined,
+    });
   }
   return defaultFetcher;
 }

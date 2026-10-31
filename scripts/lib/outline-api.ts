@@ -46,6 +46,22 @@ export function isAccessError(error: unknown): boolean {
   );
 }
 
+/**
+ * True for a client error that waiting will not fix: a 4xx answer other
+ * than 408 (timeout) and 429 (rate limit, already retried by the fetcher).
+ * A bad key (401), missing rights (403) or a gone document (404) fail the
+ * same way on every retry pass.
+ */
+export function isPermanentError(error: unknown): boolean {
+  return (
+    error instanceof OutlineApiError &&
+    error.status >= 400 &&
+    error.status < 500 &&
+    error.status !== 408 &&
+    error.status !== 429
+  );
+}
+
 // Configuration
 
 const DEFAULT_API_BASE = "https://pvarki.getoutline.com/api";

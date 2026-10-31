@@ -140,17 +140,76 @@ describe("RateLimitedFetcher", () => {
     await assertion;
   });
 
-  it("throws after maxRetries consecutive 5xx", async () => {
-    stubFetch([res(503), res(503), res(503)]);
+  it("throws after maxServerErrorRetries consecutive 5xx", async () => {
+    const { calls } = stubFetch([res(503), res(503), res(503)]);
     const fetcher = new RateLimitedFetcher({
       quiet: true,
-      maxRetries: 2,
+      maxServerErrorRetries: 2,
       initialBackoffMs: 10,
     });
 
     const promise = fetcher.fetch("https://example.test/api");
-    const assertion = expect(promise).rejects.toThrow(/Server error 503/);
+    const assertion = expect(promise).rejects.toThrow(
+      "Server error 503 after 2 retries",
+    );
     await vi.runAllTimersAsync();
     await assertion;
+    expect(calls).toHaveLength(3);
+  });
+
+  it("gives up on 5xx after about a minute by default", async () => {
+    const { calls } = stubFetch(Array.from({ length: 7 }, () => res(500)));
+    const fetcher = new RateLimitedFetcher({ quiet: true });
+
+    const t0 = Date.now();
+    const promise = fetcher.fetch("https://example.test/api");
+    const assertion = expect(promise).rejects.toThrow(/after 5 retries/);
+    await vi.runAllTimersAsync();
+    await assertion;
+
+    // One try plus five retries, waiting 2+4+8+16+32 s in between.
+    expect(calls.map((t) => t - t0)).toEqual([
+      0, 2_000, 6_000, 14_000, 30_000, 62_000,
+    ]);
+  });
+
+  it("counts 429 and 5xx retries separately", async () => {
+    stubFetch([
+      res(503),
+      res(429, { "Retry-After": "1" }),
+      res(503),
+      res(429, { "Retry-After": "1" }),
+      res(200),
+    ]);
+    const fetcher = new RateLimitedFetcher({
+      quiet: true,
+      maxRetries: 2,
+      maxServerErrorRetries: 2,
+      initialBackoffMs: 10,
+    });
+
+    const promise = fetcher.fetch("https://example.test/api");
+    await vi.runAllTimersAsync();
+    expect((await promise).status).toBe(200);
+  });
+
+  it("prints only long waits when quiet with logWaitsFromMs", async () => {
+    const log = vi.spyOn(console, "log").mockImplementation(() => {});
+    stubFetch([res(503), res(503), res(503), res(200)]);
+    const fetcher = new RateLimitedFetcher({
+      quiet: true,
+      initialBackoffMs: 2_000,
+      maxBackoffMs: 10_000,
+      logWaitsFromMs: 5_000,
+    });
+
+    const promise = fetcher.fetch("https://example.test/api");
+    await vi.runAllTimersAsync();
+    await promise;
+
+    // Waits 2s, 4s, 8s: only the 8s one is printed.
+    expect(log).toHaveBeenCalledTimes(1);
+    expect(log.mock.calls[0][0]).toContain("Waiting 8s");
+    log.mockRestore();
   });
 });

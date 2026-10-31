@@ -1,7 +1,7 @@
 /**
  * Hand-off from the sync run to the validation report: the sync writes
- * which collections it had to skip, `validate:docs --report` puts them in
- * the sync PR body. The file is git-ignored and rewritten on every sync.
+ * which collections it had to skip and which pages it could not download,
+ * `validate:docs --report` puts them in the sync PR body. The file is git-ignored and rewritten on every sync.
  */
 import fs from "node:fs/promises";
 import path from "node:path";
@@ -12,7 +12,12 @@ export interface SyncWarnings {
   generatedAt: string;
   /** "Label (slug): error" of collections skipped as unreadable. */
   skippedCollections: string[];
+  /** "Collection: page title: error" of pages that kept their old content. */
+  failedPages?: string[];
 }
+
+/** Failed pages listed in the PR body; the run log has the rest. */
+export const MAX_FAILED_PAGES_LISTED = 50;
 
 export function syncWarningsPath(cwd = process.cwd()): string {
   return path.join(cwd, SYNC_WARNINGS_FILE);
@@ -51,17 +56,38 @@ export async function readSyncWarnings(
   return undefined;
 }
 
-/** Report section for the sync PR body; empty when nothing was skipped. */
+/** Report sections for the sync PR body; empty when nothing went wrong. */
 export function renderSyncWarnings(
   warnings: SyncWarnings | undefined,
 ): string[] {
-  if (!warnings || warnings.skippedCollections.length === 0) return [];
-  return [
-    "## Skipped collections",
-    "",
-    `The sync at ${warnings.generatedAt} could not read these collections from Outline, so their content on the site was not updated:`,
-    "",
-    ...warnings.skippedCollections.map((line) => `- ${line}`),
-    "",
-  ];
+  if (!warnings) return [];
+  const lines: string[] = [];
+  if (warnings.skippedCollections.length > 0) {
+    lines.push(
+      "## Skipped collections",
+      "",
+      `The sync at ${warnings.generatedAt} could not read these collections from Outline, so their content on the site was not updated:`,
+      "",
+      ...warnings.skippedCollections.map((line) => `- ${line}`),
+      "",
+    );
+  }
+  const failed = warnings.failedPages ?? [];
+  if (failed.length > 0) {
+    const listed = failed.slice(0, MAX_FAILED_PAGES_LISTED);
+    lines.push(
+      "## Failed pages",
+      "",
+      `The sync at ${warnings.generatedAt} could not download these pages from Outline, so they keep their previous content on the site:`,
+      "",
+      ...listed.map((line) => `- ${line}`),
+    );
+    if (failed.length > listed.length) {
+      lines.push(
+        `- …and ${failed.length - listed.length} more, listed in the run log.`,
+      );
+    }
+    lines.push("");
+  }
+  return lines;
 }
