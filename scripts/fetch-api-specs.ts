@@ -29,7 +29,7 @@ import {
   type ApiSpecSource,
   type SpecOverlay,
 } from "../config/collections";
-import { writeJson } from "./lib/sync-helpers";
+import { writeJson, writeJsonKeepingTimestamp } from "./lib/sync-helpers";
 
 const DEFAULT_MAX_VERSIONS = 5;
 
@@ -260,8 +260,10 @@ export async function fetchApiSpecs(
     generatedAt: new Date().toISOString(),
     sources: manifestSources,
   };
-  await writeJson(path.join(outDir, "manifest.json"), manifest);
-  return manifest;
+  return writeJsonKeepingTimestamp(
+    path.join(outDir, "manifest.json"),
+    manifest,
+  );
 }
 
 async function main() {

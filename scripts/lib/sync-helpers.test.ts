@@ -15,6 +15,8 @@ import {
   staleSlugs,
   runWithConcurrency,
   writeJson,
+  keepGeneratedAtIfUnchanged,
+  writeJsonKeepingTimestamp,
   type BookEntryInput,
 } from "./sync-helpers";
 import type { BookPageRef } from "./sidebar-generator";
@@ -323,6 +325,47 @@ describe("runWithConcurrency", () => {
       "fulfilled",
     ]);
     expect(results[3]).toMatchObject({ value: 40 });
+  });
+});
+
+describe("keepGeneratedAtIfUnchanged", () => {
+  const OLD = "2026-10-31T19:30:39.474Z";
+  const NEW = "2026-10-31T22:24:10.118Z";
+
+  it("keeps the previous timestamp when nothing else changed", () => {
+    const next = { generatedAt: NEW, pages: [{ slug: "a", n: 1 }] };
+    const previous = { pages: [{ n: 1, slug: "a" }], generatedAt: OLD };
+    expect(keepGeneratedAtIfUnchanged(next, previous).generatedAt).toBe(OLD);
+  });
+
+  it("uses the new timestamp when the content changed", () => {
+    const next = { generatedAt: NEW, pages: [{ slug: "a" }, { slug: "b" }] };
+    const previous = { generatedAt: OLD, pages: [{ slug: "a" }] };
+    expect(keepGeneratedAtIfUnchanged(next, previous)).toBe(next);
+  });
+
+  it("uses the new timestamp when there is no usable previous file", () => {
+    const next = { generatedAt: NEW };
+    expect(keepGeneratedAtIfUnchanged(next, undefined)).toBe(next);
+    expect(keepGeneratedAtIfUnchanged(next, { other: 1 })).toBe(next);
+  });
+});
+
+describe("writeJsonKeepingTimestamp", () => {
+  it("leaves an unchanged file byte for byte as it was", async () => {
+    const dir = await fs.mkdtemp(path.join(os.tmpdir(), "sync-helpers-"));
+    const file = path.join(dir, "manifest.json");
+    await writeJson(file, { generatedAt: "2026-10-31T19:30:39.474Z", a: 1 });
+    const before = await fs.readFile(file, "utf-8");
+
+    const written = await writeJsonKeepingTimestamp(file, {
+      generatedAt: "2026-10-31T22:24:10.118Z",
+      a: 1,
+    });
+
+    expect(written.generatedAt).toBe("2026-10-31T19:30:39.474Z");
+    expect(await fs.readFile(file, "utf-8")).toBe(before);
+    await fs.rm(dir, { recursive: true, force: true });
   });
 });
 

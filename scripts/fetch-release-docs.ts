@@ -36,7 +36,7 @@ import {
   type ReleaseDocSource,
 } from "../config/collections";
 import { renderInlineMarkdown } from "./lib/block-emitter";
-import { writeJson } from "./lib/sync-helpers";
+import { writeJson, writeJsonKeepingTimestamp } from "./lib/sync-helpers";
 
 const DEFAULT_MAX_VERSIONS = 10;
 const DEFAULT_BRANCH = "main";
@@ -255,8 +255,10 @@ export async function fetchReleaseDocs(
     generatedAt: new Date().toISOString(),
     components,
   };
-  await writeJson(path.join(outDir, "manifest.json"), manifest);
-  return manifest;
+  return writeJsonKeepingTimestamp(
+    path.join(outDir, "manifest.json"),
+    manifest,
+  );
 }
 
 async function main() {
