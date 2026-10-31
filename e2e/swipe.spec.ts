@@ -156,15 +156,26 @@ test.describe("book swipe navigation", () => {
   test("swipe flows across book boundaries (Deploy App -> TAK Guide)", async ({
     page,
   }) => {
-    // Last android page of deploy-app continues into the TAK guide.
-    await open(page, "/en/deploy-app/access-external-services-ohReBmQJiu");
+    // Last android page of deploy-app continues into the TAK guide. Read it
+    // from the manifest: new Outline pages move it on every sync.
+    const response = await page.request.get("/content/en/manifest.json");
+    const manifest = (await response.json()) as {
+      pages: { collection: string; slug: string; breadcrumb: string[] }[];
+    };
+    const lastAndroid = manifest.pages
+      .filter(
+        (p) =>
+          p.collection === "deploy-app" && p.breadcrumb.includes("Android"),
+      )
+      .at(-1);
+    if (!lastAndroid) throw new Error("no android page in deploy-app");
+    const last = `/en/deploy-app/${lastAndroid.slug}`;
+    await open(page, last);
     await swipe(page, "left");
     await expect(page).toHaveURL("/en/guides/tak-guide");
     // Covers are shelf stops, so swiping does not re-enter the previous book.
     await page.goBack();
-    await expect(page).toHaveURL(
-      "/en/deploy-app/access-external-services-ohReBmQJiu",
-    );
+    await expect(page).toHaveURL(last);
   });
 
   test("drags inside the slideshow turn slides, never the page", async ({
@@ -623,8 +634,16 @@ test.describe("slideshow flows into the book", () => {
     await open(page, FIRST);
     const scope = page.locator("[data-current] [data-swipe-scope]").first();
     // Jump to the last slide via its dot, then drag forward past the edge.
-    await scope.getByRole("button", { name: "8", exact: true }).click();
-    await expect(scope.getByText("8/8")).toBeVisible();
+    // The slide count comes from the "1/N" counter, so content edits in
+    // Outline do not break the test.
+    const counter = await scope
+      .getByText(/^1\/\d+$/)
+      .first()
+      .textContent();
+    const total = counter?.split("/")[1];
+    if (!total) throw new Error("slide counter not found");
+    await scope.getByRole("button", { name: total, exact: true }).click();
+    await expect(scope.getByText(`${total}/${total}`)).toBeVisible();
     await page.waitForTimeout(500); // let the deck settle on the last slide
     const box = await scope.boundingBox();
     if (!box) throw new Error("deck not visible");
