@@ -25,6 +25,8 @@ coverage/
 
 # Logs
 *.log
+# Written by the sync for the validation report (scripts/lib/sync-warnings.ts)
+/sync-warnings.json
 pnpm-debug.log*
 backups/
 .prettier_cache

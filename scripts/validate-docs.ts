@@ -30,6 +30,11 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 import { pathToFileURL } from "node:url";
+import {
+  readSyncWarnings,
+  renderSyncWarnings,
+  type SyncWarnings,
+} from "./lib/sync-warnings";
 
 import {
   DEFAULT_LOCALE,
@@ -569,13 +574,20 @@ export async function validateDocs(
 // Reporting
 // ---------------------------------------------------------------------------
 
-/** Markdown report for the sync PR body. */
-export function renderReport(issues: ValidationIssue[]): string {
+/**
+ * Markdown report for the sync PR body. Skipped collections from the last
+ * sync come right after the summary, before the long per-collection lists,
+ * so they survive when GitHub cuts a long PR body.
+ */
+export function renderReport(
+  issues: ValidationIssue[],
+  syncWarnings?: SyncWarnings,
+): string {
   const lines: string[] = ["# Docs validation report", ""];
   lines.push(`Generated: ${new Date().toISOString()}`, "");
 
   if (issues.length === 0) {
-    lines.push("No issues found.", "");
+    lines.push("No issues found.", "", ...renderSyncWarnings(syncWarnings));
     return lines.join("\n");
   }
 
@@ -609,7 +621,7 @@ export function renderReport(issues: ValidationIssue[]): string {
   for (const row of summary) {
     lines.push(`| ${row.level} | \`${row.code}\` | ${row.count} |`);
   }
-  lines.push("");
+  lines.push("", ...renderSyncWarnings(syncWarnings));
 
   // Per-collection sections with Outline deep links
   const byCollection = new Map<string, ValidationIssue[]>();
@@ -673,7 +685,12 @@ async function main() {
 
   if (reportFile) {
     await fs.mkdir(path.dirname(path.resolve(reportFile)), { recursive: true });
-    await fs.writeFile(path.resolve(reportFile), renderReport(issues), "utf-8");
+    const syncWarnings = await readSyncWarnings();
+    await fs.writeFile(
+      path.resolve(reportFile),
+      renderReport(issues, syncWarnings),
+      "utf-8",
+    );
     console.log(`Report written to ${reportFile}`);
   }
 

@@ -21,6 +21,7 @@ import cliProgress from "cli-progress";
 import chalk from "chalk";
 
 import { createOutlineClient, isAccessError } from "./lib/outline-api";
+import { clearSyncWarnings, writeSyncWarnings } from "./lib/sync-warnings";
 import type { CollectionSyncStats } from "./lib/script-types";
 import {
   processDocumentImages,
@@ -820,6 +821,8 @@ async function main() {
     process.exit(1);
   }
 
+  // Rewritten below; cleared first so a failed run leaves no stale warnings.
+  await clearSyncWarnings();
   const client = createOutlineClient();
 
   // Filter collections if specified
@@ -927,6 +930,10 @@ async function main() {
     }
   }
   stats.unreachableCollections = unreachable;
+  await writeSyncWarnings({
+    generatedAt: new Date().toISOString(),
+    skippedCollections: unreachable,
+  });
 
   // Hidden pages: leaves whose body carries the hide marker. documents.info
   // returns the body, so one info call per page (cached for the incremental
