@@ -41,6 +41,7 @@ import { Button } from "@/components/ui/button";
 import { SectionLabel } from "@/components/ui/section-label";
 import { PAGE_FRAME } from "@/lib/pageFrame";
 import { cn } from "@/lib/utils";
+import { bookDescription } from "@/lib/bookDescription";
 
 export interface ReaderData extends BookContext {
   kind: "cover" | "page";
@@ -240,7 +241,10 @@ function BookCover({
 
   return (
     <div className="flex h-full flex-col overflow-y-auto">
-      <ShelfHero title={bookLabel} subtitle={collection?.description} />
+      <ShelfHero
+        title={bookLabel}
+        subtitle={collection && bookDescription(t, collection)}
+      />
       <div className={cn(PAGE_FRAME, "flex-1 pt-4 pb-10 md:pt-6")}>
         <div className="max-w-3xl">
           {isCoverUnderConstruction(data.collection, active?.platform) && (

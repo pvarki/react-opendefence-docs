@@ -13,6 +13,7 @@ import type {
   LocaleManifest,
   ManifestCollection,
 } from "@shared/content-schema";
+import { bookDescription } from "@/lib/bookDescription";
 import { loadManifest } from "@/lib/content/loader";
 import { devNavSections } from "@/lib/devNav";
 import { siteSections } from "@/lib/siteSections";
@@ -154,6 +155,8 @@ function BookRow({
   current: boolean;
   onNavigate: () => void;
 }) {
+  const { t } = useTranslation();
+  const description = bookDescription(t, book);
   return (
     <Link
       to="/$locale/$"
@@ -178,9 +181,9 @@ function BookRow({
         >
           {book.label}
         </span>
-        {book.description && (
+        {description && (
           <span className="mt-0.5 line-clamp-2 block text-xs text-muted-foreground">
-            {book.description}
+            {description}
           </span>
         )}
       </span>
