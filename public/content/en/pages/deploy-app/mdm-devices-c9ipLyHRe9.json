@@ -12,7 +12,7 @@
     "MDM Devices"
   ],
   "createdAt": "2026-10-29T10:35:51.931Z",
-  "updatedAt": "2026-10-30T17:55:25.210Z",
+  "updatedAt": "2026-10-31T11:12:25.278Z",
   "headings": [],
   "blocks": [
     {
@@ -22,7 +22,7 @@
         {
           "title": "Get the enrolment link",
           "layout": "image-bottom",
-          "html": "<p>In Fleet, open your <strong>preparation</strong> team and choose <strong>Add hosts</strong>, then <strong>Android</strong>. Copy the link to the phones. A phone Fleet has seen before keeps its old team: transfer it to the preparation team first.</p>",
+          "html": "<p>In Fleet, open your <strong>preparation</strong> team and choose <strong>Add hosts</strong>, then <strong>Android</strong>. Copy the link to the phones. A phone Fleet has seen before keeps its old team and its old name: transfer it to the preparation team first, and give it a new name below.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/be65720cb87b22b7.webp",
@@ -46,7 +46,7 @@
         {
           "title": "Set up the work profile",
           "layout": "image-bottom",
-          "html": "<p>Tap <strong>Next</strong>, then <strong>Continue</strong>.</p>",
+          "html": "<p>Tap <strong>Next</strong>, and <strong>Continue</strong> if asked.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/e7f89bb3db7e6a4b.webp",
@@ -58,7 +58,7 @@
         {
           "title": "Accept",
           "layout": "image-bottom",
-          "html": "<p>Tap <strong>Accept &#x26; continue</strong> and wait a minute.</p>",
+          "html": "<p>Tap <strong>Accept &#x26; continue</strong>, then <strong>Next</strong> if asked, and wait a minute.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/e0d676c54c6c7569.webp",
@@ -82,7 +82,7 @@
         {
           "title": "Name each phone",
           "layout": "image-bottom",
-          "html": "<p>In Fleet, open the phone's host, choose <strong>Edit user</strong> and type its callsign, such as <code>OTTER4</code>: 3–32 letters, digits or hyphens. <strong>Save</strong>.</p>",
+          "html": "<p>In Fleet, open the phone's host, choose <strong>Edit user</strong> and type its callsign, such as <code>OTTER4</code>: 3–32 letters, digits or hyphens. <strong>Save</strong>. Renaming a phone that already has its certificate gives it a second callsign; revoke the old one in Deploy App.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/864752cd63281309.webp",

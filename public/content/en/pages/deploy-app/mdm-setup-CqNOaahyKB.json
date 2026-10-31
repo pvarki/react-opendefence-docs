@@ -12,7 +12,7 @@
     "MDM Setup"
   ],
   "createdAt": "2026-10-29T10:35:43.762Z",
-  "updatedAt": "2026-10-30T17:55:20.380Z",
+  "updatedAt": "2026-10-31T11:12:19.610Z",
   "headings": [],
   "blocks": [
     {
@@ -46,7 +46,7 @@
         {
           "title": "Prepare two Fleet teams",
           "layout": "image-bottom",
-          "html": "<p>Once per deployment, set up two teams with the same apps, policy and <strong>Deploy App</strong> icon: a <strong>preparation</strong> team without a certificate, and a <strong>Deploy App</strong> team whose certificate names each phone after its user. <code>rmscep mdm-apply</code> sets both up.</p>",
+          "html": "<p>Once per deployment, set up two teams with the same apps, policy and <strong>Deploy App</strong> icon: a <strong>preparation</strong> team without a certificate, and a <strong>Deploy App</strong> team whose certificate names each phone after its user. <code>rmscep mdm-apply --team \"Deploy App\" --prep-team Preparation</code> sets up both. The icon has to be the same one in both teams: a phone keeps the apps it enrolled with, and loses an icon the other team does not share.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/8a3500acbc57ac54.webp",

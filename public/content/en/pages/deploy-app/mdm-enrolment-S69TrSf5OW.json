@@ -12,7 +12,7 @@
     "MDM Enrolment"
   ],
   "createdAt": "2026-10-29T10:36:03.712Z",
-  "updatedAt": "2026-10-30T17:55:31.416Z",
+  "updatedAt": "2026-10-31T11:12:31.695Z",
   "headings": [],
   "blocks": [
     {
@@ -58,7 +58,7 @@
         {
           "title": "Wait for the phones",
           "layout": "image-bottom",
-          "html": "<p>Within about 15 minutes each phone gets its certificate and appears here under its callsign. When all are in, tap <strong>Close now</strong>.</p>",
+          "html": "<p>Within about 15 minutes each phone gets its certificate and appears here under its callsign. When all are in, tap <strong>Close now</strong>. A phone missing after that shows <strong>SCEP enrollment failed</strong> in Fleet: its name breaks the rule or is already taken. Correct it with <strong>Edit user</strong>, then transfer the phone out and back.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/f696b94f6eeafb1a.webp",
