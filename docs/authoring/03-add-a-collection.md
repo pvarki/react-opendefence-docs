@@ -64,9 +64,16 @@ Add the entry to the matching array (`GUIDE_COLLECTIONS`,
 Optional: `noLocale: true` for collections without en/fi/sv roots
 (everything is treated as English).
 
+The `description` is the English one-liner under the book's title on
+the shelf and cover. To translate it, add the slug under
+`bookDescriptions` in `src/locales/fi.json` and `src/locales/sv.json`
+(a `/` in the slug nests: `guides/recon-guide` →
+`"guides": { "recon-guide": "…" }`). Without a translation the
+English text is shown.
+
 ## 5. Open a PR
 
-Commit the one-file change and open a PR against `main`. A duplicate
+Commit the change and open a PR against `main`. A duplicate
 UUID, duplicate slug, or malformed UUID fails validation, so typos
 get caught before merge.
 
