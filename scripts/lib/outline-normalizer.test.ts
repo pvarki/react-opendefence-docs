@@ -175,6 +175,80 @@ describe("normalizeOutlineMarkdown", () => {
     expect(normalizeOutlineMarkdown(input, ctx())).toBe(input);
   });
 
+  it("keeps trailing-space hard breaks from the CommonMark export", () => {
+    // Outline's API export writes Shift+Enter as two trailing spaces.
+    const input = [
+      "Types:  ",
+      "• Map Items   ",
+      "• Files",
+      "",
+      "- Item  ",
+      "  more of the item",
+      "",
+      "> Quote  ",
+      "> more",
+      "",
+    ].join("\n");
+    expect(normalizeOutlineMarkdown(input, ctx())).toBe(
+      [
+        "Types:  ",
+        "• Map Items  ",
+        "• Files",
+        "",
+        "- Item  ",
+        "  more of the item",
+        "",
+        "> Quote  ",
+        "> more",
+        "",
+      ].join("\n"),
+    );
+  });
+
+  it("strips trailing spaces where CommonMark has no hard break", () => {
+    const input = [
+      "End of a paragraph  ",
+      "",
+      "- one  ",
+      "- two  ",
+      "  - nested",
+      "Before a heading  ",
+      "## Heading",
+      "| a | b |  ",
+      "| - | - |",
+      "```",
+      "code  ",
+      "more",
+      "```",
+      "",
+    ].join("\n");
+    expect(normalizeOutlineMarkdown(input, ctx())).toBe(
+      [
+        "End of a paragraph",
+        "",
+        "- one",
+        "- two",
+        "  - nested",
+        "Before a heading",
+        "## Heading",
+        "| a | b |",
+        "| - | - |",
+        "```",
+        "code",
+        "more",
+        "```",
+        "",
+      ].join("\n"),
+    );
+  });
+
+  it("joins a trailing-space break in a heading with a space", () => {
+    const input = "## Tools:  \nNone  \nat all\n\nText\n";
+    expect(normalizeOutlineMarkdown(input, ctx())).toBe(
+      "## Tools: None at all\n\nText\n",
+    );
+  });
+
   it("collapses 3+ blank lines and ends with a single newline", () => {
     const out = normalizeOutlineMarkdown("a\n\n\n\nb\n\n\n", ctx());
     expect(out).toBe("a\n\nb\n");

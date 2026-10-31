@@ -220,12 +220,101 @@ function convertLiteralLineBreaks(markdown: string): string {
     .join("");
 }
 
+/** Two or more spaces at a line end: a CommonMark hard break. */
+const TRAILING_SPACE_BREAK_RE = / {2,}$/;
+
+/**
+ * A line that CommonMark reads as a new block, not as more text of the
+ * line above: blank, a list item, heading, fence, rule or table row. The
+ * optional prefix is a list item's indent or quote markers. (Two spaces
+ * kept before a new block are harmless: CommonMark ignores them.)
+ */
+const NEW_BLOCK_LINE_RE =
+  /^[ \t]*(?:>[ \t]?)*[ \t]*(?:$|[-+*][ \t]|\d{1,9}[.)](?:[ \t]|$)|#{1,6}(?:[ \t]|$)|```|~~~|\||[-*_](?:[ \t]*[-*_]){2,}[ \t]*$)/;
+
+const HEADING_LINE_RE = /^[ \t]{0,3}#{1,6}[ \t]/;
+
+/**
+ * Whether `line` ends in a hard break that CommonMark keeps: two or more
+ * trailing spaces, and the next line goes on with the same text. Outline's
+ * API export runs in CommonMark mode, which writes a soft line break
+ * (Shift+Enter) this way (HardBreak.toMarkdown in Outline's editor).
+ */
+function endsInHardBreak(line: string, next: string | undefined): boolean {
+  return (
+    next !== undefined &&
+    TRAILING_SPACE_BREAK_RE.test(line) &&
+    line.trim() !== "" &&
+    !line.trimStart().startsWith("|") &&
+    !NEW_BLOCK_LINE_RE.test(next)
+  );
+}
+
+/** Apply `convert` to the lines outside fenced code blocks. */
+function mapLinesOutsideCode(
+  markdown: string,
+  convert: (lines: string[]) => string[],
+  convertCode: (fence: string) => string = (fence) => fence,
+): string {
+  return markdown
+    .split(CODE_FENCE_RE)
+    .map((segment, i) =>
+      i % 2 === 1
+        ? convertCode(segment)
+        : convert(segment.split("\n")).join("\n"),
+    )
+    .join("");
+}
+
+/**
+ * A heading can't hold a hard break, so join the line after a trailing-space
+ * break onto the heading with a space, as convertLiteralLineBreaks does.
+ * Runs before stripEmojisFromHeadings, which trims the trailing spaces.
+ */
+function joinHeadingBreaks(markdown: string): string {
+  return mapLinesOutsideCode(markdown, (lines) => {
+    const out: string[] = [];
+    for (const line of lines) {
+      const prev = out[out.length - 1];
+      if (
+        prev !== undefined &&
+        HEADING_LINE_RE.test(prev) &&
+        endsInHardBreak(prev, line)
+      ) {
+        // Keep this line's own trailing spaces: it may break again.
+        out[out.length - 1] =
+          `${prev.replace(TRAILING_SPACE_BREAK_RE, "")} ${line.trimStart()}`;
+      } else {
+        out.push(line);
+      }
+    }
+    return out;
+  });
+}
+
+/**
+ * Strip trailing line whitespace, except a hard break outside code, which
+ * keeps two spaces: stripping it would turn the break into a space.
+ */
+function stripTrailingWhitespace(markdown: string): string {
+  return mapLinesOutsideCode(
+    markdown,
+    (lines) =>
+      lines.map((line, i) =>
+        endsInHardBreak(line, lines[i + 1])
+          ? line.replace(TRAILING_SPACE_BREAK_RE, "  ")
+          : line.replace(/[ \t]+$/, ""),
+      ),
+    (fence) => fence.replace(/[ \t]+$/gm, ""),
+  );
+}
+
 /** Collapse 3+ blank lines, strip trailing line whitespace, single final newline. */
 function fixMarkdownIssues(markdown: string): string {
-  return markdown
-    .replace(/\n{3,}/g, "\n\n")
-    .replace(/[ \t]+$/gm, "")
-    .replace(/\n*$/, "\n");
+  return stripTrailingWhitespace(markdown.replace(/\n{3,}/g, "\n\n")).replace(
+    /\n*$/,
+    "\n",
+  );
 }
 
 /** Remove a leading YAML frontmatter block if present (defensive; raw API exports usually have none). */
@@ -287,6 +376,7 @@ export function normalizeOutlineMarkdown(
   result = removeEmptyImages(result);
   result = unescapeMarkdown(result);
   result = convertLiteralLineBreaks(result);
+  result = joinHeadingBreaks(result);
   result = stripEmojisFromHeadings(result);
   result = fixMarkdownIssues(result);
   result = replaceInternalLinks(result, ctx);
