@@ -1,9 +1,4 @@
 {
-  "ansluta-till-en-deploy-app-rDiRCLSL8s": {
-    "en": "/en/deploy-app/joining-a-deploy-app-A7hCnp5D1b",
-    "fi": "/fi/deploy-app/liittyminen-deploy-appiin-Jy261fSdzF",
-    "sv": "/sv/deploy-app/ansluta-till-en-deploy-app-rDiRCLSL8s"
-  },
   "anvanda-applikationer-TmM85VECUH": {
     "en": "/en/deploy-app/using-applications-FFuT98Qlcv",
     "fi": "/fi/deploy-app/sovellusten-kayttaminen-AZUWkin399",
@@ -13,11 +8,6 @@
     "en": "/en/deploy-app/interface-pyG1Ln1MfU",
     "fi": "/fi/deploy-app/kayttoliittyma-AYxx37RhPK",
     "sv": "/sv/deploy-app/granssnitt-fbWb4p1Ea6"
-  },
-  "forsta-inloggningen-ZynVs60T8M": {
-    "en": "/en/deploy-app/first-login-oKodQDb6I1",
-    "fi": "/fi/deploy-app/ensimmainen-kirjautuminen-6xSLnWbWmV",
-    "sv": "/sv/deploy-app/forsta-inloggningen-ZynVs60T8M"
   },
   "lagga-till-anvandare-yQNQQKKHyp": {
     "en": "/en/deploy-app/adding-users-LKw6wrsELi",
@@ -33,16 +23,6 @@
     "en": "/en/deploy-app/access-external-services-wQy9bpe1aE",
     "fi": "/fi/deploy-app/ulkoiset-palvelut-SIWRaQtmte",
     "sv": "/sv/deploy-app/externa-tjanster-0NmqWJBmQK"
-  },
-  "anslut-till-en-deploy-app-LSYhrD19yJ": {
-    "en": "/en/deploy-app/join-a-deploy-app-Ns73TcVodz",
-    "fi": "/fi/deploy-app/liity-deploy-app-sovellukseen-h2y5oF7JN4",
-    "sv": "/sv/deploy-app/anslut-till-en-deploy-app-LSYhrD19yJ"
-  },
-  "forsta-inloggningen-30j0MZLvzy": {
-    "en": "/en/deploy-app/admin-first-login-1wjrnFERNt",
-    "fi": "/fi/deploy-app/ensimmainen-kirjautuminen-w6ucKbFHSI",
-    "sv": "/sv/deploy-app/forsta-inloggningen-30j0MZLvzy"
   },
   "vad-ar-tak-Y5ZYfcXyh8": {
     "en": "/en/guides/tak-guide/what-is-tak-Vy8mUPLS87",
@@ -733,5 +713,55 @@
     "en": "/en/deploy-app/introduction-d1XzfzOkpz",
     "fi": "/fi/deploy-app/johdanto-pVdcEzIB4j",
     "sv": "/sv/deploy-app/introduktion-8VdRmYg8Vp"
+  },
+  "ga-med-i-en-deploy-app-Weat7nbJuF": {
+    "en": "/en/deploy-app/joining-a-deploy-app-p9htrbBL4S",
+    "fi": "/fi/deploy-app/liittyminen-deploy-appiin-hFiNczU5i7",
+    "sv": "/sv/deploy-app/ga-med-i-en-deploy-app-Weat7nbJuF"
+  },
+  "forsta-inloggningen-X4xEQb7jxr": {
+    "en": "/en/deploy-app/first-login-qwmPnmJsrF",
+    "fi": "/fi/deploy-app/ensimmainen-kirjautuminen-VB4kdcfIUZ",
+    "sv": "/sv/deploy-app/forsta-inloggningen-X4xEQb7jxr"
+  },
+  "ansluta-till-en-deploy-app-rDiRCLSL8s": {
+    "en": "/en/deploy-app/joining-a-deploy-app-A7hCnp5D1b",
+    "fi": "/fi/deploy-app/liittyminen-deploy-appiin-Jy261fSdzF",
+    "sv": "/sv/deploy-app/ansluta-till-en-deploy-app-rDiRCLSL8s"
+  },
+  "forsta-inloggningen-ZynVs60T8M": {
+    "en": "/en/deploy-app/first-login-oKodQDb6I1",
+    "fi": "/fi/deploy-app/ensimmainen-kirjautuminen-6xSLnWbWmV",
+    "sv": "/sv/deploy-app/forsta-inloggningen-ZynVs60T8M"
+  },
+  "anslut-till-en-deploy-app-LSYhrD19yJ": {
+    "en": "/en/deploy-app/join-a-deploy-app-Ns73TcVodz",
+    "fi": "/fi/deploy-app/liity-deploy-app-sovellukseen-h2y5oF7JN4",
+    "sv": "/sv/deploy-app/anslut-till-en-deploy-app-LSYhrD19yJ"
+  },
+  "forsta-inloggningen-30j0MZLvzy": {
+    "en": "/en/deploy-app/admin-first-login-1wjrnFERNt",
+    "fi": "/fi/deploy-app/ensimmainen-kirjautuminen-w6ucKbFHSI",
+    "sv": "/sv/deploy-app/forsta-inloggningen-30j0MZLvzy"
+  },
+  "ga-med-i-en-deploy-app-PgNnzg4Vyj": {
+    "en": "/en/deploy-app/joining-a-deploy-app-6vV32V3B2c",
+    "fi": "/fi/deploy-app/liittyminen-deploy-appiin-8n0VWdIQS7",
+    "sv": "/sv/deploy-app/ga-med-i-en-deploy-app-PgNnzg4Vyj"
+  },
+  "forsta-inloggningen-H4UfzjTACY": {
+    "en": "/en/deploy-app/first-login-bi15QH96SC",
+    "fi": "/fi/deploy-app/ensimmainen-kirjautuminen-76Ni4wUAga",
+    "sv": "/sv/deploy-app/forsta-inloggningen-H4UfzjTACY"
+  },
+  "ga-med-i-en-deploy-app-lacRVxkAna": {
+    "en": "/en/deploy-app/joining-a-deploy-app-0kPsFcJ37S",
+    "fi": "/fi/deploy-app/liittyminen-deploy-appiin-8BJGmgSYG7",
+    "sv": "/sv/deploy-app/ga-med-i-en-deploy-app-lacRVxkAna"
+  },
+  "forsta-inloggningen-XyuCJZR2T3": {
+    "en": "/en/deploy-app/first-login-2tKlcGkU7E",
+    "fi": "/fi/deploy-app/ensimmainen-kirjautuminen-GpGTPGBu3t",
+    "sv": "/sv/deploy-app/forsta-inloggningen-XyuCJZR2T3"
   }
 }

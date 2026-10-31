@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "locale": "en",
-  "generatedAt": "2026-09-12T20:41:11.673Z",
+  "generatedAt": "2026-10-31T11:14:38.490Z",
   "collections": [
     {
       "slug": "deploy-app",
@@ -27,6 +27,18 @@
           "label": "Windows",
           "platform": "windows",
           "os": "windows"
+        },
+        {
+          "id": "macos-z5DmedU8xk",
+          "label": "macOS",
+          "platform": "macos",
+          "os": "macos"
+        },
+        {
+          "id": "linux-1sNJpibOcB",
+          "label": "Linux",
+          "platform": "linux",
+          "os": "linux"
         }
       ]
     },
@@ -259,7 +271,7 @@
         "Joining a Deploy App"
       ],
       "path": "/content/en/pages/deploy-app/joining-a-deploy-app-p9htrbBL4S.json",
-      "updatedAt": "2026-06-13T22:32:24.669Z",
+      "updatedAt": "2026-10-22T13:25:41.526Z",
       "order": 1,
       "platform": "android",
       "clientId": "android-MENReFAfCN",
@@ -316,7 +328,7 @@
         "First Login"
       ],
       "path": "/content/en/pages/deploy-app/first-login-qwmPnmJsrF.json",
-      "updatedAt": "2026-06-13T22:33:32.026Z",
+      "updatedAt": "2026-10-22T13:25:41.985Z",
       "order": 4,
       "platform": "android",
       "clientId": "android-MENReFAfCN",
@@ -381,6 +393,63 @@
       "chapterLabel": "Admin Guide"
     },
     {
+      "id": "d706bafa-974a-4a29-b8b5-ac5a0c1fa2e9",
+      "slug": "mdm-setup-CqNOaahyKB",
+      "collection": "deploy-app",
+      "title": "MDM Setup",
+      "breadcrumb": [
+        "Platforms",
+        "Android",
+        "Admin Guide",
+        "MDM Setup"
+      ],
+      "path": "/content/en/pages/deploy-app/mdm-setup-CqNOaahyKB.json",
+      "updatedAt": "2026-10-31T11:12:19.610Z",
+      "order": 8,
+      "platform": "android",
+      "clientId": "android-MENReFAfCN",
+      "chapterId": "admin-guide-V5Hs1rBdRL",
+      "chapterLabel": "Admin Guide"
+    },
+    {
+      "id": "a7f6b598-93e8-4c0e-85fb-d7a062499d91",
+      "slug": "mdm-devices-c9ipLyHRe9",
+      "collection": "deploy-app",
+      "title": "MDM Devices",
+      "breadcrumb": [
+        "Platforms",
+        "Android",
+        "Admin Guide",
+        "MDM Devices"
+      ],
+      "path": "/content/en/pages/deploy-app/mdm-devices-c9ipLyHRe9.json",
+      "updatedAt": "2026-10-31T11:12:25.278Z",
+      "order": 9,
+      "platform": "android",
+      "clientId": "android-MENReFAfCN",
+      "chapterId": "admin-guide-V5Hs1rBdRL",
+      "chapterLabel": "Admin Guide"
+    },
+    {
+      "id": "149ddbd8-3815-4fd5-82d9-dbe57518256f",
+      "slug": "mdm-enrolment-S69TrSf5OW",
+      "collection": "deploy-app",
+      "title": "MDM Enrolment",
+      "breadcrumb": [
+        "Platforms",
+        "Android",
+        "Admin Guide",
+        "MDM Enrolment"
+      ],
+      "path": "/content/en/pages/deploy-app/mdm-enrolment-S69TrSf5OW.json",
+      "updatedAt": "2026-10-31T11:12:31.695Z",
+      "order": 10,
+      "platform": "android",
+      "clientId": "android-MENReFAfCN",
+      "chapterId": "admin-guide-V5Hs1rBdRL",
+      "chapterLabel": "Admin Guide"
+    },
+    {
       "id": "cdde88ea-2777-42c6-b918-b9726de6926a",
       "slug": "joining-a-deploy-app-A7hCnp5D1b",
       "collection": "deploy-app",
@@ -392,8 +461,8 @@
         "Joining a Deploy App"
       ],
       "path": "/content/en/pages/deploy-app/joining-a-deploy-app-A7hCnp5D1b.json",
-      "updatedAt": "2026-06-18T20:38:53.673Z",
-      "order": 8,
+      "updatedAt": "2026-10-22T13:25:42.376Z",
+      "order": 11,
       "platform": "ios",
       "clientId": "ios-8ux4fDfFeI",
       "chapterId": "user-guide-aRTF5enbWV",
@@ -412,7 +481,7 @@
       ],
       "path": "/content/en/pages/deploy-app/using-applications-FFuT98Qlcv.json",
       "updatedAt": "2026-06-18T20:38:55.528Z",
-      "order": 9,
+      "order": 12,
       "platform": "ios",
       "clientId": "ios-8ux4fDfFeI",
       "chapterId": "user-guide-aRTF5enbWV",
@@ -431,7 +500,7 @@
       ],
       "path": "/content/en/pages/deploy-app/interface-pyG1Ln1MfU.json",
       "updatedAt": "2026-06-18T20:38:56.803Z",
-      "order": 10,
+      "order": 13,
       "platform": "ios",
       "clientId": "ios-8ux4fDfFeI",
       "chapterId": "user-guide-aRTF5enbWV",
@@ -449,8 +518,8 @@
         "First Login"
       ],
       "path": "/content/en/pages/deploy-app/first-login-oKodQDb6I1.json",
-      "updatedAt": "2026-06-18T20:39:00.101Z",
-      "order": 11,
+      "updatedAt": "2026-10-22T13:25:42.775Z",
+      "order": 14,
       "platform": "ios",
       "clientId": "ios-8ux4fDfFeI",
       "chapterId": "admin-guide-mVE2SN7j33",
@@ -469,7 +538,7 @@
       ],
       "path": "/content/en/pages/deploy-app/adding-users-LKw6wrsELi.json",
       "updatedAt": "2026-06-18T20:39:01.775Z",
-      "order": 12,
+      "order": 15,
       "platform": "ios",
       "clientId": "ios-8ux4fDfFeI",
       "chapterId": "admin-guide-mVE2SN7j33",
@@ -488,7 +557,7 @@
       ],
       "path": "/content/en/pages/deploy-app/managing-users-nWgFG3XzMv.json",
       "updatedAt": "2026-06-18T20:39:03.381Z",
-      "order": 13,
+      "order": 16,
       "platform": "ios",
       "clientId": "ios-8ux4fDfFeI",
       "chapterId": "admin-guide-mVE2SN7j33",
@@ -507,7 +576,7 @@
       ],
       "path": "/content/en/pages/deploy-app/access-external-services-wQy9bpe1aE.json",
       "updatedAt": "2026-06-18T20:39:05.498Z",
-      "order": 14,
+      "order": 17,
       "platform": "ios",
       "clientId": "ios-8ux4fDfFeI",
       "chapterId": "admin-guide-mVE2SN7j33",
@@ -525,8 +594,8 @@
         "Join a Deploy App"
       ],
       "path": "/content/en/pages/deploy-app/join-a-deploy-app-Ns73TcVodz.json",
-      "updatedAt": "2026-06-18T20:39:10.614Z",
-      "order": 15,
+      "updatedAt": "2026-10-22T13:25:43.326Z",
+      "order": 18,
       "platform": "windows",
       "clientId": "windows-7LrSmQmqQ6",
       "chapterId": "user-guide-irnHx8wSE7",
@@ -544,11 +613,87 @@
         "Admin First Login"
       ],
       "path": "/content/en/pages/deploy-app/admin-first-login-1wjrnFERNt.json",
-      "updatedAt": "2026-06-18T20:39:13.396Z",
-      "order": 16,
+      "updatedAt": "2026-10-22T13:25:43.695Z",
+      "order": 19,
       "platform": "windows",
       "clientId": "windows-7LrSmQmqQ6",
       "chapterId": "admin-guide-vhfls732g4",
+      "chapterLabel": "Admin Guide"
+    },
+    {
+      "id": "a9bcfda1-6bbb-44dd-8d56-68e68adeb6a6",
+      "slug": "joining-a-deploy-app-6vV32V3B2c",
+      "collection": "deploy-app",
+      "title": "Joining a Deploy App",
+      "breadcrumb": [
+        "Platforms",
+        "macOS",
+        "User Guide",
+        "Joining a Deploy App"
+      ],
+      "path": "/content/en/pages/deploy-app/joining-a-deploy-app-6vV32V3B2c.json",
+      "updatedAt": "2026-10-22T13:25:44.109Z",
+      "order": 20,
+      "platform": "macos",
+      "clientId": "macos-z5DmedU8xk",
+      "chapterId": "user-guide-NcVBuKVflZ",
+      "chapterLabel": "User Guide"
+    },
+    {
+      "id": "e35f5be2-0c5d-488d-8462-7cab245ce501",
+      "slug": "first-login-bi15QH96SC",
+      "collection": "deploy-app",
+      "title": "First Login",
+      "breadcrumb": [
+        "Platforms",
+        "macOS",
+        "Admin Guide",
+        "First Login"
+      ],
+      "path": "/content/en/pages/deploy-app/first-login-bi15QH96SC.json",
+      "updatedAt": "2026-10-22T13:25:44.496Z",
+      "order": 21,
+      "platform": "macos",
+      "clientId": "macos-z5DmedU8xk",
+      "chapterId": "admin-guide-zqZyytPQuA",
+      "chapterLabel": "Admin Guide"
+    },
+    {
+      "id": "e5e5b62e-5f7c-47a7-a38c-c6bfff6fe7bc",
+      "slug": "joining-a-deploy-app-0kPsFcJ37S",
+      "collection": "deploy-app",
+      "title": "Joining a Deploy App",
+      "breadcrumb": [
+        "Platforms",
+        "Linux",
+        "User Guide",
+        "Joining a Deploy App"
+      ],
+      "path": "/content/en/pages/deploy-app/joining-a-deploy-app-0kPsFcJ37S.json",
+      "updatedAt": "2026-10-22T13:25:44.884Z",
+      "order": 22,
+      "platform": "linux",
+      "clientId": "linux-1sNJpibOcB",
+      "chapterId": "user-guide-s0mbljRohP",
+      "chapterLabel": "User Guide"
+    },
+    {
+      "id": "b21518c7-dcf1-4d55-bf57-c1a574b04e01",
+      "slug": "first-login-2tKlcGkU7E",
+      "collection": "deploy-app",
+      "title": "First Login",
+      "breadcrumb": [
+        "Platforms",
+        "Linux",
+        "Admin Guide",
+        "First Login"
+      ],
+      "path": "/content/en/pages/deploy-app/first-login-2tKlcGkU7E.json",
+      "updatedAt": "2026-10-22T13:25:45.232Z",
+      "order": 23,
+      "platform": "linux",
+      "clientId": "linux-1sNJpibOcB",
+      "chapterId": "admin-guide-XWvSppdQcs",
       "chapterLabel": "Admin Guide"
     },
     {

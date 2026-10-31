@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "id": "d706bafa-974a-4a29-b8b5-ac5a0c1fa2e9",
+  "slug": "mdm-setup-CqNOaahyKB",
+  "collection": "deploy-app",
+  "locale": "en",
+  "title": "MDM Setup",
+  "breadcrumb": [
+    "Platforms",
+    "Android",
+    "Admin Guide",
+    "MDM Setup"
+  ],
+  "createdAt": "2026-10-29T10:35:43.762Z",
+  "updatedAt": "2026-10-31T11:12:19.610Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Open the MDM page",
+          "layout": "image-bottom",
+          "html": "<p>Open <strong>☰</strong>, then <strong>User Management</strong>, then <strong>MDM</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/8096e7b2a2de9748.webp",
+              "width": 912,
+              "height": 1804
+            }
+          ]
+        },
+        {
+          "title": "Copy the SCEP details",
+          "layout": "image-bottom",
+          "html": "<p>Copy the <strong>SCEP URL</strong> and the <strong>Challenge</strong>. Your MDM needs both. Keep the challenge to yourself: while enrolment is open, it is what lets a phone join.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/1e4e7000716aed9d.webp",
+              "width": 912,
+              "height": 1804
+            }
+          ]
+        },
+        {
+          "title": "Prepare two Fleet teams",
+          "layout": "image-bottom",
+          "html": "<p>Once per deployment, set up two teams with the same apps, policy and <strong>Deploy App</strong> icon: a <strong>preparation</strong> team without a certificate, and a <strong>Deploy App</strong> team whose certificate names each phone after its user. <code>rmscep mdm-apply --team \"Deploy App\" --prep-team Preparation</code> sets up both. The icon has to be the same one in both teams: a phone keeps the apps it enrolled with, and loses an icon the other team does not share.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/8a3500acbc57ac54.webp",
+              "width": 2128,
+              "height": 488
+            }
+          ]
+        },
+        {
+          "title": "Phones without names",
+          "layout": "image-bottom",
+          "html": "<p>If names do not matter, use a team whose certificate takes the phone's enrollment ID instead. Phones then join under that ID as soon as they enrol.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/a577d2102710e476.webp",
+              "width": 912,
+              "height": 1804
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -654,11 +654,6 @@
     "fi": "/fi/guides/cryptpad-guide/varmuuskopioi-tietosi-DQfftbWf4c",
     "sv": "/sv/guides/cryptpad-guide/sakerhetskopiera-dina-data-yVu1FNdIEb"
   },
-  "liittyminen-deploy-appiin-Jy261fSdzF": {
-    "en": "/en/deploy-app/joining-a-deploy-app-A7hCnp5D1b",
-    "fi": "/fi/deploy-app/liittyminen-deploy-appiin-Jy261fSdzF",
-    "sv": "/sv/deploy-app/ansluta-till-en-deploy-app-rDiRCLSL8s"
-  },
   "sovellusten-kayttaminen-AZUWkin399": {
     "en": "/en/deploy-app/using-applications-FFuT98Qlcv",
     "fi": "/fi/deploy-app/sovellusten-kayttaminen-AZUWkin399",
@@ -668,11 +663,6 @@
     "en": "/en/deploy-app/interface-pyG1Ln1MfU",
     "fi": "/fi/deploy-app/kayttoliittyma-AYxx37RhPK",
     "sv": "/sv/deploy-app/granssnitt-fbWb4p1Ea6"
-  },
-  "ensimmainen-kirjautuminen-6xSLnWbWmV": {
-    "en": "/en/deploy-app/first-login-oKodQDb6I1",
-    "fi": "/fi/deploy-app/ensimmainen-kirjautuminen-6xSLnWbWmV",
-    "sv": "/sv/deploy-app/forsta-inloggningen-ZynVs60T8M"
   },
   "kayttajien-lisaaminen-A97x9tyG2o": {
     "en": "/en/deploy-app/adding-users-LKw6wrsELi",
@@ -688,16 +678,6 @@
     "en": "/en/deploy-app/access-external-services-wQy9bpe1aE",
     "fi": "/fi/deploy-app/ulkoiset-palvelut-SIWRaQtmte",
     "sv": "/sv/deploy-app/externa-tjanster-0NmqWJBmQK"
-  },
-  "liity-deploy-app-sovellukseen-h2y5oF7JN4": {
-    "en": "/en/deploy-app/join-a-deploy-app-Ns73TcVodz",
-    "fi": "/fi/deploy-app/liity-deploy-app-sovellukseen-h2y5oF7JN4",
-    "sv": "/sv/deploy-app/anslut-till-en-deploy-app-LSYhrD19yJ"
-  },
-  "ensimmainen-kirjautuminen-w6ucKbFHSI": {
-    "en": "/en/deploy-app/admin-first-login-1wjrnFERNt",
-    "fi": "/fi/deploy-app/ensimmainen-kirjautuminen-w6ucKbFHSI",
-    "sv": "/sv/deploy-app/forsta-inloggningen-30j0MZLvzy"
   },
   "perusnakyma-tyokalut-ja-tyokalupalkki-5cY07BjmD4": {
     "en": "/en/guides/tak-guide/basic-view-tools-and-toolbar-juXbYsGMih",
@@ -733,5 +713,55 @@
     "en": "/en/deploy-app/introduction-d1XzfzOkpz",
     "fi": "/fi/deploy-app/johdanto-pVdcEzIB4j",
     "sv": "/sv/deploy-app/introduktion-8VdRmYg8Vp"
+  },
+  "liittyminen-deploy-appiin-hFiNczU5i7": {
+    "en": "/en/deploy-app/joining-a-deploy-app-p9htrbBL4S",
+    "fi": "/fi/deploy-app/liittyminen-deploy-appiin-hFiNczU5i7",
+    "sv": "/sv/deploy-app/ga-med-i-en-deploy-app-Weat7nbJuF"
+  },
+  "ensimmainen-kirjautuminen-VB4kdcfIUZ": {
+    "en": "/en/deploy-app/first-login-qwmPnmJsrF",
+    "fi": "/fi/deploy-app/ensimmainen-kirjautuminen-VB4kdcfIUZ",
+    "sv": "/sv/deploy-app/forsta-inloggningen-X4xEQb7jxr"
+  },
+  "liittyminen-deploy-appiin-Jy261fSdzF": {
+    "en": "/en/deploy-app/joining-a-deploy-app-A7hCnp5D1b",
+    "fi": "/fi/deploy-app/liittyminen-deploy-appiin-Jy261fSdzF",
+    "sv": "/sv/deploy-app/ansluta-till-en-deploy-app-rDiRCLSL8s"
+  },
+  "ensimmainen-kirjautuminen-6xSLnWbWmV": {
+    "en": "/en/deploy-app/first-login-oKodQDb6I1",
+    "fi": "/fi/deploy-app/ensimmainen-kirjautuminen-6xSLnWbWmV",
+    "sv": "/sv/deploy-app/forsta-inloggningen-ZynVs60T8M"
+  },
+  "liity-deploy-app-sovellukseen-h2y5oF7JN4": {
+    "en": "/en/deploy-app/join-a-deploy-app-Ns73TcVodz",
+    "fi": "/fi/deploy-app/liity-deploy-app-sovellukseen-h2y5oF7JN4",
+    "sv": "/sv/deploy-app/anslut-till-en-deploy-app-LSYhrD19yJ"
+  },
+  "ensimmainen-kirjautuminen-w6ucKbFHSI": {
+    "en": "/en/deploy-app/admin-first-login-1wjrnFERNt",
+    "fi": "/fi/deploy-app/ensimmainen-kirjautuminen-w6ucKbFHSI",
+    "sv": "/sv/deploy-app/forsta-inloggningen-30j0MZLvzy"
+  },
+  "liittyminen-deploy-appiin-8n0VWdIQS7": {
+    "en": "/en/deploy-app/joining-a-deploy-app-6vV32V3B2c",
+    "fi": "/fi/deploy-app/liittyminen-deploy-appiin-8n0VWdIQS7",
+    "sv": "/sv/deploy-app/ga-med-i-en-deploy-app-PgNnzg4Vyj"
+  },
+  "ensimmainen-kirjautuminen-76Ni4wUAga": {
+    "en": "/en/deploy-app/first-login-bi15QH96SC",
+    "fi": "/fi/deploy-app/ensimmainen-kirjautuminen-76Ni4wUAga",
+    "sv": "/sv/deploy-app/forsta-inloggningen-H4UfzjTACY"
+  },
+  "liittyminen-deploy-appiin-8BJGmgSYG7": {
+    "en": "/en/deploy-app/joining-a-deploy-app-0kPsFcJ37S",
+    "fi": "/fi/deploy-app/liittyminen-deploy-appiin-8BJGmgSYG7",
+    "sv": "/sv/deploy-app/ga-med-i-en-deploy-app-lacRVxkAna"
+  },
+  "ensimmainen-kirjautuminen-GpGTPGBu3t": {
+    "en": "/en/deploy-app/first-login-2tKlcGkU7E",
+    "fi": "/fi/deploy-app/ensimmainen-kirjautuminen-GpGTPGBu3t",
+    "sv": "/sv/deploy-app/forsta-inloggningen-XyuCJZR2T3"
   }
 }

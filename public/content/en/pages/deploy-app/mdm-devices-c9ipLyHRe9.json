@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "id": "a7f6b598-93e8-4c0e-85fb-d7a062499d91",
+  "slug": "mdm-devices-c9ipLyHRe9",
+  "collection": "deploy-app",
+  "locale": "en",
+  "title": "MDM Devices",
+  "breadcrumb": [
+    "Platforms",
+    "Android",
+    "Admin Guide",
+    "MDM Devices"
+  ],
+  "createdAt": "2026-10-29T10:35:51.931Z",
+  "updatedAt": "2026-10-31T11:12:25.278Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Get the enrolment link",
+          "layout": "image-bottom",
+          "html": "<p>In Fleet, open your <strong>preparation</strong> team and choose <strong>Add hosts</strong>, then <strong>Android</strong>. Copy the link to the phones. A phone Fleet has seen before keeps its old team and its old name: transfer it to the preparation team first, and give it a new name below.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/be65720cb87b22b7.webp",
+              "width": 2128,
+              "height": 1326
+            }
+          ]
+        },
+        {
+          "title": "Open the link on the phone",
+          "layout": "image-bottom",
+          "html": "<p>Open the link and tap <strong>Enroll</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/13980932ec6c3a74.webp",
+              "width": 912,
+              "height": 1804
+            }
+          ]
+        },
+        {
+          "title": "Set up the work profile",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Next</strong>, and <strong>Continue</strong> if asked.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/e7f89bb3db7e6a4b.webp",
+              "width": 912,
+              "height": 1804
+            }
+          ]
+        },
+        {
+          "title": "Accept",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Accept &#x26; continue</strong>, then <strong>Next</strong> if asked, and wait a minute.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/e0d676c54c6c7569.webp",
+              "width": 912,
+              "height": 1804
+            }
+          ]
+        },
+        {
+          "title": "Done",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Done</strong>. The apps arrive in the work profile.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/6ff5b74a5a7be991.webp",
+              "width": 912,
+              "height": 1804
+            }
+          ]
+        },
+        {
+          "title": "Name each phone",
+          "layout": "image-bottom",
+          "html": "<p>In Fleet, open the phone's host, choose <strong>Edit user</strong> and type its callsign, such as <code>OTTER4</code>: 3–32 letters, digits or hyphens. <strong>Save</strong>. Renaming a phone that already has its certificate gives it a second callsign; revoke the old one in Deploy App.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/864752cd63281309.webp",
+              "width": 2128,
+              "height": 1150
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

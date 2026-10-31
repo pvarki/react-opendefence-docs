@@ -12,102 +12,101 @@
     "Joining a Deploy App"
   ],
   "createdAt": "2025-12-06T09:26:50.859Z",
-  "updatedAt": "2026-06-13T22:32:24.669Z",
+  "updatedAt": "2026-10-22T13:25:41.526Z",
   "headings": [],
+  "translations": {
+    "en": "/en/deploy-app/joining-a-deploy-app-p9htrbBL4S",
+    "fi": "/fi/deploy-app/liittyminen-deploy-appiin-hFiNczU5i7",
+    "sv": "/sv/deploy-app/ga-med-i-en-deploy-app-Weat7nbJuF"
+  },
   "blocks": [
     {
       "type": "slideset",
       "source": "legacy",
       "slides": [
         {
-          "title": "Gaining Access",
+          "title": "Open your invite",
           "layout": "image-left",
-          "html": "<p>You can join a instance via obtaining a invite link:</p>\n<ul>\n<li>by scanning a QR Code (Opens the next page straight away)</li>\n<li>by receiving an invite link (Opens the next page straight away)</li>\n<li>by receiving a link + Manual Code (Opens page on the left).</li>\n</ul>",
+          "html": "<p>Open the invite link or scan the QR code you got. Deploy App opens with your invite code filled in.</p>\n<ul>\n<li>Only got a code? Type it in <strong>Enter your code</strong> and press <strong>Login with Code</strong>.</li>\n</ul>",
           "images": [
             {
-              "src": "/content/images/en/attachments/11432f12e365f28d.webp",
-              "width": 2560,
-              "height": 5712
+              "src": "/content/images/en/attachments/3a1300ffd86f3d1b.webp",
+              "width": 824,
+              "height": 1830
             }
           ]
         },
         {
-          "title": "Callsign",
+          "title": "Choose your callsign",
           "layout": "image-left",
-          "html": "<p>The invite lets you give yourself a callsign &#x26; join the waiting room.</p>\n<ul>\n<li>The callsign should be something your organization can identify you with.</li>\n<li>This callsign will be yours across all services.</li>\n</ul>",
+          "html": "<p>Type a callsign your unit knows you by and press <strong>Continue</strong>.</p>\n<ul>\n<li>You use the same callsign in every service.</li>\n<li>It is also your certificate password.</li>\n</ul>",
           "images": [
             {
-              "src": "/content/images/en/attachments/26fbe762461e7c63.webp",
-              "width": 2560,
-              "height": 5712
+              "src": "/content/images/en/attachments/f2753fb289e887f4.webp",
+              "width": 824,
+              "height": 1830
             }
           ]
         },
         {
-          "title": "Waiting Room",
+          "title": "Get approved",
           "layout": "image-left",
-          "html": "<p>Your Deploy App server's admin have to accept you in personally after an invite.</p>\n<ul>\n<li>Show your QR code to an admin or share the link with them.</li>\n<li>Once an admin has approved you, you will be able to continue.</li>\n</ul>",
+          "html": "<p>An admin has to approve you.</p>\n<ul>\n<li>Admin next to you: show them the QR code.</li>\n<li>Admin somewhere else: press <strong>Send link</strong> and pick them in Signal, for example.</li>\n<li>Leave the page open. It moves on by itself once you are approved.</li>\n</ul>",
           "images": [
             {
-              "src": "/content/images/en/attachments/f986a88040c9fdcf.webp",
-              "width": 2561,
-              "height": 5712
+              "src": "/content/images/en/attachments/463a5a00ee689427.webp",
+              "width": 824,
+              "height": 1830
             }
           ]
         },
         {
-          "title": "Instructions",
+          "title": "Get your key",
           "layout": "image-left",
-          "html": "<ul>\n<li>Deploy App has built-in instructions to instruct users and highlight key features.</li>\n<li>This guide will go through certificate installation.</li>\n</ul>",
+          "html": "<p>Press <strong>Download key</strong>. Deploy App copies your callsign for you. It is the password for the key.</p>",
           "images": [
             {
-              "src": "/content/images/en/attachments/1bf91f34810aec36.webp",
-              "width": 2561,
-              "height": 5712
+              "src": "/content/images/en/attachments/df899a05850e1fb1.webp",
+              "width": 824,
+              "height": 1830
             }
           ]
         },
         {
-          "title": "Download the certificate",
+          "title": "Install the key",
           "layout": "image-left",
-          "html": "<p>Download your client certificate (mTLS) that is to be installed in your device.</p>\n<ul>\n<li>This will act as your way to access the services.</li>\n<li>You do not need passwords with Deploy App, as the cert will be your ID.</li>\n</ul>",
+          "html": "<p>Android asks for the password on top of this screen. Paste your callsign and press <strong>OK</strong> twice.</p>\n<ul>\n<li>No dialog? Open the file from your downloads.</li>\n<li>Then press <strong>Installed – continue</strong>.</li>\n</ul>",
           "images": [
             {
-              "src": "/content/images/en/attachments/a44f44059bc33636.webp",
-              "width": 2560,
-              "height": 5712
+              "src": "/content/images/en/attachments/400b614e4f4938e8.webp",
+              "width": 824,
+              "height": 1830
             }
           ]
         },
         {
-          "title": "Install your certificate",
+          "title": "Go to the service",
           "layout": "image-left",
-          "html": "<p>With Android, installing the cert is straightforward.</p>\n<ul>\n<li>Your callsign acts as your password.</li>\n<li>Type it and press OK until you are back in Deploy App.</li>\n</ul>",
+          "html": "<p>Press <strong>Go to the service</strong>. When Android asks for your certificate, pick your callsign and tap <strong>Select</strong>.</p>",
           "images": [
             {
-              "src": "/content/images/en/attachments/9c6fb95f15899e24.webp",
-              "width": 2560,
-              "height": 5712
+              "src": "/content/images/en/attachments/d258a77c0d0d5c3a.webp",
+              "width": 824,
+              "height": 1830
             }
           ]
         },
         {
-          "title": "Login with the certificate",
+          "title": "You're in",
           "layout": "image-left",
-          "html": "<ul>\n<li>Press \"Navigate with your key\".</li>\n<li>When prompted to choose a certificate, check that your callsign is selected and press \"Select\" to login.</li>\n</ul>",
+          "html": "<p>Deploy App opens. A short guide shows the first time. Press <strong>Next</strong> to go through it, or close it.</p>\n<ul>\n<li>Tick <strong>Do not show me guides automatically</strong> if you don't want guides to pop up.</li>\n</ul>",
           "images": [
             {
-              "src": "/content/images/en/attachments/6080288dfa0d5c07.webp",
-              "width": 2560,
-              "height": 5712
+              "src": "/content/images/en/attachments/c3ee0a3611cce643.webp",
+              "width": 824,
+              "height": 1830
             }
           ]
-        },
-        {
-          "title": "Success",
-          "layout": "image-left",
-          "html": "<ul>\n<li>Now you can start using apps.</li>\n<li>Deploy App shows you some instructions the first time. To see them again, tap the book icon in bottom right.</li>\n</ul>",
-          "images": []
         }
       ]
     }
