@@ -20,7 +20,11 @@ import ora from "ora";
 import cliProgress from "cli-progress";
 import chalk from "chalk";
 
-import { createOutlineClient, isAccessError } from "./lib/outline-api";
+import {
+  createOutlineClient,
+  isAccessError,
+  isPermanentError,
+} from "./lib/outline-api";
 import { clearSyncWarnings, writeSyncWarnings } from "./lib/sync-warnings";
 import type { CollectionSyncStats } from "./lib/script-types";
 import {
@@ -65,6 +69,8 @@ import {
   writeJson,
   readJsonIfExists,
   listJsonSlugs,
+  groupErrorMessages,
+  syncDownloadedNothing,
   type SyncArgs,
   type BookEntryInput,
   type DocSyncStatus,
@@ -102,11 +108,12 @@ const INFO_CONCURRENCY = 8;
 const DOWNLOAD_CONCURRENCY = 4;
 
 /**
- * Maximum number of full retry passes for failed documents.
- * Each pass attempts every previously-failed document again.
- * With unlimited retries in rate-limited-fetch this is the outer guard.
+ * Maximum number of full retry passes for documents that failed with a
+ * transient error (network, 5xx). Each pass attempts them again. The
+ * fetcher already retries 429 and 5xx per request, and permanent 4xx
+ * errors are not retried at all, so two passes are enough.
  */
-const MAX_DOC_RETRY_PASSES = 10;
+const MAX_DOC_RETRY_PASSES = 2;
 
 /** Breather between retry passes to let Outline rate limits reset. */
 const RETRY_BREATHER_MS = 5_000;
@@ -162,6 +169,10 @@ async function getCachedDocumentInfo(
 }
 
 // CI-aware logging helpers
+
+function errorMessage(error: unknown): string {
+  return error instanceof Error ? error.message : String(error);
+}
 
 // Returns a [HH:MM:SS] timestamp prefix for CI log lines.
 function ciTimestamp(): string {
@@ -427,8 +438,17 @@ async function syncCollection(
               `"${title}": the hide marker does nothing on an organizer, its pages stay visible`,
             );
           }
-        } catch {
-          // Best-effort: an unreadable organizer just has no markers.
+        } catch (error) {
+          // Best-effort: an unreadable organizer just has no markers, but
+          // say so: its markers (hide, under development) are lost too.
+          // Depth-1 leaves are candidates only; their failure shows when
+          // the page itself is downloaded.
+          const title = organizerTitles.get(docId);
+          if (title !== undefined) {
+            markerWarnings.push(
+              `"${title}": could not read the organizer, its markers are ignored: ${errorMessage(error)}`,
+            );
+          }
           organizerMarkersCache.set(docId, {
             toporg: false,
             platformsContainer: false,
@@ -586,14 +606,25 @@ async function syncCollection(
 
         // Process documents with concurrency pool
         const processTasks = pendingDocs.map((ref) => async () => {
-          const result = await processDocument(
-            client,
-            ref,
-            collection,
-            locale,
-            slugRouteIndex,
-            hidden.keys,
-          );
+          let result: ProcessResult;
+          try {
+            result = await processDocument(
+              client,
+              ref,
+              collection,
+              locale,
+              slugRouteIndex,
+              hidden.keys,
+            );
+          } catch (error) {
+            // Say why at once (CI log); retry passes only print a summary.
+            if (pass === 0 && !progressBar) {
+              console.log(
+                `[${ciTimestamp()}] ${chalk.red("✗")} ${ref.title}: ${errorMessage(error)}`,
+              );
+            }
+            throw error;
+          }
 
           processed++;
           const elapsed = (Date.now() - startMs) / 1000;
@@ -629,7 +660,9 @@ async function syncCollection(
           DOWNLOAD_CONCURRENCY,
         );
 
-        // Collect truly-failed docs for next retry pass
+        // Collect failed docs. A permanent error (4xx) fails the doc now;
+        // only transient ones (network, 5xx) go to the next retry pass.
+        const passMessages: string[] = [];
         for (let i = 0; i < results.length; i++) {
           const settled = results[i];
           if (settled.status === "fulfilled") {
@@ -637,15 +670,27 @@ async function syncCollection(
             processResults.set(ref.docId, result);
             docStatus.set(ref.docId, "processed");
           } else {
+            const message = errorMessage(settled.reason);
+            passMessages.push(message);
+            if (isPermanentError(settled.reason)) {
+              docStatus.set(pendingDocs[i].docId, "failed");
+              stats.errors.push(`${pendingDocs[i].title}: ${message}`);
+              continue;
+            }
             passFailedDocs.push(pendingDocs[i]);
-            const message =
-              settled.reason instanceof Error
-                ? settled.reason.message
-                : String(settled.reason);
             // Only add to stats.errors on the final pass
             if (pass === MAX_DOC_RETRY_PASSES) {
               stats.errors.push(`${pendingDocs[i].title}: ${message}`);
             }
+          }
+        }
+        if (passMessages.length > 0) {
+          progressBar?.stop();
+          console.log(
+            `  ${chalk.red("✗")} ${passMessages.length} ${passMessages.length === 1 ? "document" : "documents"} failed in ${locale.toUpperCase()}${pass > 0 ? ` (retry pass ${pass})` : ""}:`,
+          );
+          for (const line of groupErrorMessages(passMessages)) {
+            console.log(`    ${chalk.gray(line)}`);
           }
         }
 
@@ -1098,6 +1143,32 @@ async function main() {
       );
       stats.failedSyncs++;
     }
+  }
+
+  const failedPages = stats.collections.flatMap((c) =>
+    c.errors.map((e) => `${c.label}: ${e}`),
+  );
+  if (failedPages.length > 0) {
+    await writeSyncWarnings({
+      generatedAt: new Date().toISOString(),
+      skippedCollections: unreachable,
+      failedPages,
+    });
+  }
+
+  if (syncDownloadedNothing(stats.successfulSyncs, stats.failedSyncs)) {
+    // Every page this run tried was refused: fail before writing anything,
+    // so no sync PR opens and the run's log shows the reason.
+    const errors = stats.collections.flatMap((c) =>
+      c.errors.map((e) => e.slice(e.indexOf(": ") + 2)),
+    );
+    console.error(
+      `\n${chalk.red("✖")} No document could be downloaded (${stats.failedSyncs} failed):`,
+    );
+    for (const line of groupErrorMessages(errors)) {
+      console.error(`  ${line}`);
+    }
+    process.exit(1);
   }
 
   // Write manifests (all locales; non-synced collections carried over).

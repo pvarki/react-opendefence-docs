@@ -410,3 +410,32 @@ export async function listJsonSlugs(dir: string): Promise<string[]> {
     return [];
   }
 }
+
+// ---------------------------------------------------------------------------
+// Failure reporting
+// ---------------------------------------------------------------------------
+
+/**
+ * Identical error messages folded into one line each, most frequent first:
+ * "message" or "message (×21)". A run where every page fails the same way
+ * reads as one line instead of hundreds.
+ */
+export function groupErrorMessages(messages: Iterable<string>): string[] {
+  const counts = new Map<string, number>();
+  for (const message of messages) {
+    counts.set(message, (counts.get(message) ?? 0) + 1);
+  }
+  return [...counts.entries()]
+    .sort((a, b) => b[1] - a[1])
+    .map(([message, count]) =>
+      count > 1 ? `${message} (×${count})` : message,
+    );
+}
+
+/**
+ * A run that downloaded nothing but had failures should fail instead of
+ * opening a sync PR that changes nothing: every page it tried was refused.
+ */
+export function syncDownloadedNothing(processed: number, failed: number) {
+  return processed === 0 && failed > 0;
+}

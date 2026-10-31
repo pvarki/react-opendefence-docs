@@ -1,5 +1,9 @@
 import { describe, expect, it } from "vitest";
-import { OutlineApiError, isAccessError } from "./outline-api";
+import {
+  OutlineApiError,
+  isAccessError,
+  isPermanentError,
+} from "./outline-api";
 
 describe("isAccessError", () => {
   it("is true for 403 and 404 from Outline", () => {
@@ -25,5 +29,22 @@ describe("isAccessError", () => {
     expect(new OutlineApiError(403, "Forbidden", "body").message).toBe(
       "Outline API error: 403 Forbidden - body",
     );
+  });
+});
+
+describe("isPermanentError", () => {
+  it("is true for client errors that do not heal on retry", () => {
+    for (const status of [400, 401, 403, 404]) {
+      expect(isPermanentError(new OutlineApiError(status, "x", ""))).toBe(true);
+    }
+  });
+
+  it("is false for timeouts, rate limits, 5xx and other errors", () => {
+    for (const status of [408, 429, 500, 503]) {
+      expect(isPermanentError(new OutlineApiError(status, "x", ""))).toBe(
+        false,
+      );
+    }
+    expect(isPermanentError(new Error("fetch failed"))).toBe(false);
   });
 });

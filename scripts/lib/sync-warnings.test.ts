@@ -4,6 +4,7 @@ import os from "node:os";
 import path from "node:path";
 
 import {
+  MAX_FAILED_PAGES_LISTED,
   clearSyncWarnings,
   readSyncWarnings,
   renderSyncWarnings,
@@ -55,5 +56,45 @@ describe("renderSyncWarnings", () => {
     expect(lines[0]).toBe("## Skipped collections");
     expect(lines).toContain("- A (a): 403");
     expect(lines).toContain("- B (b): 404");
+  });
+});
+
+describe("renderSyncWarnings failed pages", () => {
+  it("lists failed pages after skipped collections", () => {
+    const lines = renderSyncWarnings({
+      generatedAt: "2026-10-31T12:00:00.000Z",
+      skippedCollections: ["A (a): 403"],
+      failedPages: ["TAK Guide: Overview: Outline API error: 403"],
+    });
+    const skipped = lines.indexOf("## Skipped collections");
+    const failed = lines.indexOf("## Failed pages");
+    expect(skipped).toBe(0);
+    expect(failed).toBeGreaterThan(skipped);
+    expect(lines).toContain("- TAK Guide: Overview: Outline API error: 403");
+  });
+
+  it("renders failed pages without skipped collections", () => {
+    const lines = renderSyncWarnings({
+      generatedAt: "now",
+      skippedCollections: [],
+      failedPages: ["A: x: boom"],
+    });
+    expect(lines[0]).toBe("## Failed pages");
+  });
+
+  it("caps the list and points to the run log", () => {
+    const failedPages = Array.from(
+      { length: MAX_FAILED_PAGES_LISTED + 3 },
+      (_, i) => `A: page ${i}: boom`,
+    );
+    const lines = renderSyncWarnings({
+      generatedAt: "now",
+      skippedCollections: [],
+      failedPages,
+    });
+    expect(lines.filter((l) => l.startsWith("- A: page"))).toHaveLength(
+      MAX_FAILED_PAGES_LISTED,
+    );
+    expect(lines).toContain("- …and 3 more, listed in the run log.");
   });
 });
