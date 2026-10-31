@@ -437,5 +437,30 @@ describe("helpers", () => {
     expect(report).toContain("## deploy-app");
     expect(report).toContain("## guides/tak-guide");
     expect(report).toContain(`(${OUTLINE_DOC_BASE}a-Aa11111111)`);
+    expect(report).not.toContain("## Skipped collections");
+  });
+
+  it("renderReport lists skipped collections right after the summary", () => {
+    const issues: ValidationIssue[] = [
+      {
+        level: "warning",
+        code: "empty-doc",
+        message: "No blocks",
+        locale: "en",
+        collection: "deploy-app",
+        slug: "a-Aa11111111",
+        outlineUrl: `${OUTLINE_DOC_BASE}a-Aa11111111`,
+      },
+    ];
+    const sync = {
+      generatedAt: "2026-10-31T12:00:00.000Z",
+      skippedCollections: ["Architecture (architecture): 403 Forbidden"],
+    };
+    const report = renderReport(issues, sync);
+    const skipped = report.indexOf("## Skipped collections");
+    expect(skipped).toBeGreaterThan(report.indexOf("## Summary"));
+    expect(skipped).toBeLessThan(report.indexOf("## deploy-app"));
+    expect(report).toContain("- Architecture (architecture): 403 Forbidden");
+    expect(renderReport([], sync)).toContain("## Skipped collections");
   });
 });
