@@ -29,6 +29,10 @@ updates) a PR titled "docs: sync content from Outline". It contains:
 - refreshed API specs,
 - and, as the **PR body**, the validation report.
 
+A manifest's `generatedAt` time only changes when something else in it
+changes. So when nothing in Outline or the releases changed, the run
+leaves the files as they were and opens no PR.
+
 ## Reading the validation report
 
 The report starts with a summary table (level, code, count), then

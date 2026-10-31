@@ -71,6 +71,7 @@ import {
   addCarriedOverRoutes,
   staleSlugs,
   writeJson,
+  writeJsonKeepingTimestamp,
   readJsonIfExists,
   listJsonSlugs,
   groupErrorMessages,
@@ -1229,8 +1230,10 @@ async function main() {
         generatedAt,
       }),
     );
-    await writeJson(manifestFilePath(locale), manifest);
-    newManifests.set(locale, manifest);
+    newManifests.set(
+      locale,
+      await writeJsonKeepingTimestamp(manifestFilePath(locale), manifest),
+    );
     manifestSpinner.text = `Manifest written for ${locale} (${manifest.pages.length} pages)`;
   }
   manifestSpinner.succeed("Locale manifests written");

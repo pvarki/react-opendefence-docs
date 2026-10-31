@@ -399,6 +399,50 @@ export async function readJsonIfExists<T>(
   }
 }
 
+/** JSON with object keys sorted, for comparing data regardless of key order. */
+function stableJson(value: unknown): string {
+  return JSON.stringify(value, (_key, v: unknown) =>
+    v !== null && typeof v === "object" && !Array.isArray(v)
+      ? Object.fromEntries(
+          Object.entries(v).sort(([a], [b]) => (a < b ? -1 : a > b ? 1 : 0)),
+        )
+      : v,
+  );
+}
+
+/**
+ * Keep the previous generatedAt when nothing else in the data changed, so
+ * a run that changed nothing leaves the file as it was. Otherwise every
+ * scheduled sync would open a PR made only of new timestamps.
+ */
+export function keepGeneratedAtIfUnchanged<T extends { generatedAt: string }>(
+  next: T,
+  previous: unknown,
+): T {
+  if (previous === null || typeof previous !== "object") return next;
+  const previousAt = (previous as { generatedAt?: unknown }).generatedAt;
+  if (typeof previousAt !== "string") return next;
+  const unchanged =
+    stableJson({ ...previous, generatedAt: "" }) ===
+    stableJson({ ...next, generatedAt: "" });
+  return unchanged ? { ...next, generatedAt: previousAt } : next;
+}
+
+/**
+ * Write a manifest-like file whose generatedAt only changes when its other
+ * content does (see keepGeneratedAtIfUnchanged). Returns what was written.
+ */
+export async function writeJsonKeepingTimestamp<
+  T extends { generatedAt: string },
+>(filePath: string, data: T): Promise<T> {
+  const written = keepGeneratedAtIfUnchanged(
+    data,
+    await readJsonIfExists<unknown>(filePath),
+  );
+  await writeJson(filePath, written);
+  return written;
+}
+
 /** List the page slugs (basenames of *.json files) in a directory. */
 export async function listJsonSlugs(dir: string): Promise<string[]> {
   try {
