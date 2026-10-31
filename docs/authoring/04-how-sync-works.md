@@ -39,6 +39,12 @@ fixing — click it, fix the doc, done. The fix lands on the next sync.
 Levels: **error** (broken for readers, fix it), **warning** (works
 but degraded), **info** (FYI).
 
+A PR body holds about 60,000 characters. When the report is longer,
+it is cut: the summary and any skipped collections stay whole, all
+errors come first, and the rest of the issues follow until the space
+runs out. A note at the end says how many were listed; the run's log
+under **Actions** → **Scheduled Outline Sync** lists all of them.
+
 The codes you'll actually see:
 
 | Code                          | Meaning                                                                                             |
