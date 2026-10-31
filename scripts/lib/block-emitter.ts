@@ -19,6 +19,7 @@ import remarkParse from "remark-parse";
 import remarkGfm from "remark-gfm";
 import remarkRehype from "remark-rehype";
 import rehypeSlug from "rehype-slug";
+import GithubSlugger from "github-slugger";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import rehypeSanitize, { defaultSchema } from "rehype-sanitize";
 import rehypeStringify from "rehype-stringify";
@@ -136,6 +137,42 @@ function rehypeExternalLinks() {
   };
 }
 
+/** Text of a hast node and its descendants (what rehype-slug slugs). */
+const hastText = (node: HastNode & { value?: string }): string =>
+  node.type === "text"
+    ? (node.value ?? "")
+    : (node.children ?? []).map(hastText).join("");
+
+/**
+ * Heading ids from one slugger for the whole page. A page is rendered in
+ * pieces (the prose between images, code and slides, and each slide body),
+ * and rehype-slug starts counting again in every piece, so two headings
+ * with the same text in different pieces got the same id and the TOC link
+ * to the second one opened the first. The caller passes the page's slugger
+ * in the file data; rehype-slug then skips headings that already have an
+ * id, and still slugs a render without one.
+ */
+function rehypePageSlugs() {
+  return (tree: unknown, file: { data: Record<string, unknown> }) => {
+    const slugger = file.data.slugger;
+    if (!(slugger instanceof GithubSlugger)) return;
+    const visit = (node: HastNode): void => {
+      if (
+        node.type === "element" &&
+        /^h[1-6]$/.test(node.tagName ?? "") &&
+        !node.properties?.id
+      ) {
+        node.properties = {
+          ...node.properties,
+          id: slugger.slug(hastText(node)),
+        };
+      }
+      for (const child of node.children ?? []) visit(child);
+    };
+    visit(tree as HastNode);
+  };
+}
+
 /**
  * GitHub default schema, extended:
  * - "id" removed from the clobber list so rehype-slug heading ids survive
@@ -179,6 +216,7 @@ const htmlProcessor = unified()
   .use(remarkParse)
   .use(remarkGfm)
   .use(remarkRehype)
+  .use(rehypePageSlugs)
   .use(rehypeSlug)
   .use(rehypeAutolinkHeadings, { behavior: "wrap" })
   .use(rehypeExternalLinks)
@@ -186,9 +224,19 @@ const htmlProcessor = unified()
   .use(rehypeSanitize, SANITIZE_SCHEMA)
   .use(rehypeStringify);
 
-/** Render a markdown fragment to sanitized HTML (shared pipeline). */
-export async function renderInlineMarkdown(markdown: string): Promise<string> {
-  const file = await htmlProcessor.process(markdown);
+/**
+ * Render a markdown fragment to sanitized HTML (shared pipeline). Pass the
+ * page's `slugger` when the fragment is one piece of a page, so heading ids
+ * stay unique across the pieces.
+ */
+export async function renderInlineMarkdown(
+  markdown: string,
+  slugger?: GithubSlugger,
+): Promise<string> {
+  const file = await htmlProcessor.process({
+    value: markdown,
+    data: slugger ? { slugger } : {},
+  });
   return String(file).trim();
 }
 
@@ -381,6 +429,7 @@ function imageBlock(img: MdNode, ctx: EmitContext): Block {
 async function renderSlidesetBlock(
   raw: RawSlideset,
   ctx: EmitContext,
+  slugger: GithubSlugger,
 ): Promise<Block> {
   const slides: Slide[] = [];
   for (const slide of raw.slides) {
@@ -388,7 +437,7 @@ async function renderSlidesetBlock(
       ...(slide.title ? { title: slide.title } : {}),
       layout: slide.layout,
       html: slide.bodyMarkdown
-        ? await renderInlineMarkdown(slide.bodyMarkdown)
+        ? await renderInlineMarkdown(slide.bodyMarkdown, slugger)
         : "",
       images: slide.imageRefs.map((src) =>
         withDims(src, ctx.imageDims.get(src)),
@@ -412,6 +461,7 @@ async function toSpecialBlock(
   node: MdNode,
   ctx: EmitContext,
   slidesets: Map<string, RawSlideset>,
+  renderSlides: (raw: RawSlideset) => Promise<Block>,
 ): Promise<Block | undefined> {
   if (node.type === "code") return renderCodeBlock(node);
   if (node.type !== "paragraph") return undefined;
@@ -424,7 +474,7 @@ async function toSpecialBlock(
     const match = SLIDESET_PLACEHOLDER_RE.exec((child.value ?? "").trim());
     if (match) {
       const raw = slidesets.get(match[1]);
-      if (raw) return renderSlidesetBlock(raw, ctx);
+      if (raw) return renderSlides(raw);
     }
     return undefined;
   }
@@ -455,7 +505,7 @@ async function toSpecialBlock(
 // ---------------------------------------------------------------------------
 
 /**
- * Pair mdast h2/h3 nodes of a prose run with the ids rehype-slug assigned in
+ * Pair mdast h2/h3 nodes of a prose run with the heading ids in
  * the rendered HTML (same document order on both sides), so TOC anchors are
  * exact by construction instead of re-implementing the slugger.
  */
@@ -519,6 +569,7 @@ export async function emitBlocks(
   const root = mdParser.parse(md) as unknown as MdNode;
   const blocks: Block[] = [];
   const headings: Heading[] = [];
+  const slugger = new GithubSlugger();
   let run: MdNode[] = [];
 
   const flushRun = async (): Promise<void> => {
@@ -531,14 +582,19 @@ export async function emitBlocks(
         : run.map(mdText).join("\n\n");
     const nodes = run;
     run = [];
-    const html = await renderInlineMarkdown(slice);
+    const html = await renderInlineMarkdown(slice, slugger);
     if (!html) return;
     headings.push(...collectHeadings(nodes, html));
     blocks.push({ type: "html", html });
   };
 
+  const renderSlides = async (raw: RawSlideset): Promise<Block> => {
+    await flushRun(); // the prose above takes its heading ids first
+    return renderSlidesetBlock(raw, ctx, slugger);
+  };
+
   for (const node of root.children ?? []) {
-    const special = await toSpecialBlock(node, ctx, slidesets);
+    const special = await toSpecialBlock(node, ctx, slidesets, renderSlides);
     if (special) {
       await flushRun();
       blocks.push(special);

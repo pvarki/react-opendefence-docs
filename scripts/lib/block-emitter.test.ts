@@ -162,6 +162,64 @@ describe("emitBlocks end-to-end", () => {
     expect(intro.html).toContain('id="section-one"');
   });
 
+  it("keeps same-named heading ids unique across an image", async () => {
+    const input = [
+      "## Android version",
+      "",
+      "### Settings",
+      "",
+      "![](/content/images/en/attachments/abc.webp)",
+      "",
+      "## iOS version",
+      "",
+      "### Settings",
+      "",
+      "## Settings",
+      "",
+    ].join("\n");
+    const { blocks, headings } = await emitBlocks(input, ctx());
+    expect(blockTypes(blocks)).toEqual(["html", "image", "html"]);
+    expect(headings.map((h) => h.id)).toEqual([
+      "android-version",
+      "settings",
+      "ios-version",
+      "settings-1",
+      "settings-2",
+    ]);
+    const second = blocks[2];
+    if (second.type !== "html") throw new Error("expected html block");
+    expect(second.html).toContain('<h3 id="settings-1"><a href="#settings-1">');
+  });
+
+  it("keeps slide body heading ids apart from the page's headings", async () => {
+    const input = [
+      "META: slides",
+      "",
+      "### Note",
+      "",
+      "## Step one",
+      "",
+      "### Note",
+      "",
+      "Body.",
+      "",
+    ].join("\n");
+    const { blocks } = await emitBlocks(input, ctx());
+    const slideset = blocks[1];
+    if (slideset.type !== "slideset") throw new Error("expected slideset");
+    expect(blocks[0]).toMatchObject({
+      html: expect.stringContaining('id="note"'),
+    });
+    expect(slideset.slides[0].html).toContain('id="note-1"');
+  });
+
+  it("starts each page with fresh heading ids", async () => {
+    const page = "## Settings\n\n![](/a.webp)\n\n## Settings\n";
+    await emitBlocks(page, ctx());
+    const { headings } = await emitBlocks(page, ctx());
+    expect(headings.map((h) => h.id)).toEqual(["settings", "settings-1"]);
+  });
+
   it("renders code fences with shiki (one-dark-pro)", async () => {
     const { blocks } = await emitBlocks(FIXTURE, ctx());
     const code = blocks[1];
