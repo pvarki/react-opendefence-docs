@@ -39,6 +39,11 @@ fixing — click it, fix the doc, done. The fix lands on the next sync.
 Levels: **error** (broken for readers, fix it), **warning** (works
 but degraded), **info** (FYI).
 
+A link to a section organizer (a doc with pages under it, e.g.
+"Publish Stream") leads to the section's first visible page. If every
+page in the section is hidden, the link is shown as plain text, like a
+link to a hidden page.
+
 A PR body holds about 60,000 characters. When the report is longer,
 it is cut: the summary and any skipped collections or failed pages
 stay whole, all

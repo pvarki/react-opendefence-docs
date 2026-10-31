@@ -5,7 +5,10 @@ import {
   cleanLabel,
   cleanTitle,
   detectPlatform,
+  docLinkKeys,
   indexDocRoutes,
+  indexOrganizerRoutes,
+  organizersWithPagesIn,
   platformFromTitle,
   pruneHiddenPages,
   slugFromUrl,
@@ -411,5 +414,61 @@ describe("label/title cleanup", () => {
     expect(slugFromUrl("guides/tak-guide/foo-Bar1234567")).toBe(
       "foo-Bar1234567",
     );
+  });
+});
+
+describe("organizer links", () => {
+  // MTX Guide shape: "Publish Stream" with visible pages, "Watch Stream"
+  // whose pages are all hidden.
+  const gopro = node("GoPro", "gopro-Gg11111111");
+  const icu = node("OpenTAK ICU", "opentak-icu-Ii11111111");
+  const publish = node("Publish Stream", "publish-stream-Pp11111111", [
+    gopro,
+    icu,
+  ]);
+  const browser = node("Browser", "browser-Bb11111111");
+  const vlc = node("VLC player", "vlc-player-Vv11111111");
+  const watch = node("Watch Stream", "watch-stream-Ww11111111", [browser, vlc]);
+  const guide = node("MTX Guide", "mtx-guide-Mm11111111", [publish, watch]);
+  const root: OutlineNavNode = {
+    id: "root",
+    url: "deploy-app/en-Rr11111111",
+    title: "en",
+    children: [guide],
+  };
+  const hiddenIds = new Set([browser.id, vlc.id]);
+
+  it("points an organizer link at its first visible page", () => {
+    const pruned: OutlineNavNode = {
+      ...root,
+      children: pruneHiddenPages(root.children, hiddenIds),
+    };
+    const index = new Map<string, string>();
+    indexDocRoutes(pruned, (slug) => `/en/x/${slug}`, index);
+    indexOrganizerRoutes(pruned, index);
+
+    const goproRoute = "/en/x/gopro-Gg11111111";
+    for (const key of docLinkKeys(publish)) {
+      expect(index.get(key)).toBe(goproRoute);
+    }
+    for (const key of docLinkKeys(guide)) {
+      expect(index.get(key)).toBe(goproRoute);
+    }
+    for (const key of docLinkKeys(watch)) expect(index.has(key)).toBe(false);
+  });
+
+  it("keeps an existing route for an organizer key", () => {
+    const index = new Map([[publish.id, "/en/x/elsewhere"]]);
+    indexDocRoutes(root, (slug) => `/en/x/${slug}`, index);
+    indexOrganizerRoutes(root, index);
+    expect(index.get(publish.id)).toBe("/en/x/elsewhere");
+  });
+
+  it("finds organizers whose pages are all, or partly, in a set", () => {
+    expect(organizersWithPagesIn(root, hiddenIds)).toEqual([watch]);
+    expect(
+      organizersWithPagesIn(root, new Set([browser.id]), { any: true }),
+    ).toEqual([watch, guide]);
+    expect(organizersWithPagesIn(root, new Set([browser.id]))).toEqual([]);
   });
 });
