@@ -54,6 +54,7 @@
     "embla-carousel": "8.6.0",
     "embla-carousel-react": "8.6.0",
     "embla-carousel-wheel-gestures": "^8.1.0",
+    "github-slugger": "^2.0.0",
     "i18next": "^25.10.10",
     "lucide-react": "^1.17.0",
     "mermaid": "^11.15.0",
