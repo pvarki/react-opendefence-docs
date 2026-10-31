@@ -16,6 +16,7 @@ import {
   type ClientInfo,
   type TranslationsFile,
 } from "../../shared/content-schema";
+import { outlineUrlId } from "../../shared/outline-url-id";
 import type { CollectionConfig } from "../../config/collections";
 import type { BookPageRef } from "./sidebar-generator";
 
@@ -359,8 +360,10 @@ export function addCarriedOverRoutes(
     for (const page of manifest.pages) {
       if (syncedCollections.has(page.collection)) continue;
       const route = `/${manifest.locale}/${page.collection}/${page.slug}`;
-      if (!index.has(page.slug)) index.set(page.slug, route);
-      if (!index.has(page.id)) index.set(page.id, route);
+      const urlId = outlineUrlId(page.slug);
+      for (const key of [page.slug, page.id, ...(urlId ? [urlId] : [])]) {
+        if (!index.has(key)) index.set(key, route);
+      }
     }
   }
 }

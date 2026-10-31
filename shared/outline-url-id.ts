@@ -20,3 +20,13 @@ export function outlineUrlId(key: string): string | undefined {
   if (UUID.test(key)) return undefined;
   return key.match(SLUG_URL_ID)?.[1];
 }
+
+/**
+ * Lookup keys for an Outline doc key (slug, uuid or urlId): the key itself,
+ * then its urlId — a link or Translations entry written before a rename
+ * still carries the old title in its slug.
+ */
+export function docKeys(key: string): string[] {
+  const urlId = outlineUrlId(key);
+  return urlId && urlId !== key ? [key, urlId] : [key];
+}
