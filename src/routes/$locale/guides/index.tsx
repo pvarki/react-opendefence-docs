@@ -14,6 +14,7 @@ import { ShelfHero } from "@/components/shell/ShelfHero";
 import { SiteFooter } from "@/components/shell/SiteFooter";
 import { SectionLabel } from "@/components/ui/section-label";
 import { CARD_IMAGES } from "@/lib/cardImages";
+import { bookDescription } from "@/lib/bookDescription";
 import { loadManifest } from "@/lib/content/loader";
 import { PAGE_FRAME } from "@/lib/pageFrame";
 import { siteSections } from "@/lib/siteSections";
@@ -68,7 +69,7 @@ function GuidesShelf() {
                   splat={book.slug}
                   icon={bookIcon(section.titleKey)}
                   title={book.label}
-                  description={book.description}
+                  description={bookDescription(t, book)}
                   image={CARD_IMAGES[book.slug]}
                 />
               ))}

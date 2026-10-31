@@ -317,6 +317,19 @@
     "siteTitle": "Webbplatsens innehåll",
     "guidesTitle": "Tillgängliga guider"
   },
+  "bookDescriptions": {
+    "deploy-app": "Lär dig ansluta till en server och lägga till användare",
+    "guides": {
+      "tak-guide": "Lär dig använda TAK för lägesuppfattning",
+      "mtx-guide": "Lär dig strömma och titta på video från drönare och telefoner",
+      "matrix-guide": "Lär dig använda Matrix för säkra meddelanden med Deploy App",
+      "cryptpad-guide": "Lär dig dela filer och samarbeta med CryptPad"
+    },
+    "wikis": {
+      "tak": "Teknisk referens för TAK",
+      "mtx": "Teknisk referens för MTX"
+    }
+  },
   "guideFooter": {
     "maintainedBy": "Den här integrationen utvecklas och underhålls av OpenDefence.",
     "tak-guide": {

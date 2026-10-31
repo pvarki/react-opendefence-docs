@@ -6,6 +6,7 @@ import { BookCard } from "@/components/shell/BookCard";
 import { ShelfHero } from "@/components/shell/ShelfHero";
 import { SiteFooter } from "@/components/shell/SiteFooter";
 import { CARD_IMAGES } from "@/lib/cardImages";
+import { bookDescription } from "@/lib/bookDescription";
 import { loadManifest } from "@/lib/content/loader";
 import { PAGE_FRAME } from "@/lib/pageFrame";
 import { siteSections } from "@/lib/siteSections";
@@ -49,7 +50,7 @@ function AdvancedShelf() {
                   splat={book.slug}
                   icon={BookText}
                   title={book.label}
-                  description={book.description}
+                  description={bookDescription(t, book)}
                   image={CARD_IMAGES[book.slug]}
                 />
               ))}

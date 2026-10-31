@@ -317,6 +317,19 @@
     "siteTitle": "Sivuston sisältö",
     "guidesTitle": "Saatavilla olevat oppaat"
   },
+  "bookDescriptions": {
+    "deploy-app": "Opi liittymään palvelimelle ja lisäämään sille käyttäjiä",
+    "guides": {
+      "tak-guide": "Opi muodostamaan tilannekuva TAK-sovelluksilla",
+      "mtx-guide": "Opi lähettämään ja katsomaan videokuvaa lennokeista ja puhelimista",
+      "matrix-guide": "Opi käyttämään Matrixia turvalliseen viestintään Deploy Appin kanssa",
+      "cryptpad-guide": "Opi jakamaan tiedostoja ja tekemään yhteistyötä CryptPadilla"
+    },
+    "wikis": {
+      "tak": "TAK – tekninen käsikirja",
+      "mtx": "MTX – tekninen käsikirja"
+    }
+  },
   "guideFooter": {
     "maintainedBy": "Tämän integraation kehittää ja ylläpitää OpenDefence.",
     "tak-guide": {
