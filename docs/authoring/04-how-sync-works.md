@@ -86,6 +86,20 @@ deployments).
 Warnings don't block a merge. Errors usually mean someone clicks the
 Outline links, fixes the docs, and re-runs the sync before merging.
 
+## Renaming or moving a page
+
+A page's URL ends in its Outline slug: the title plus a short id, e.g.
+`takserver-groups-PQ4dCV2SYR`. Renaming a page changes the title part
+on the next sync, but the id stays, so nothing breaks:
+
+- old URLs and bookmarks redirect to the page's new URL,
+- links and Translations entries in other Outline docs that still
+  carry the old title keep working.
+
+Moving a page to another book works the same way. Deleting a page and
+writing it again as a new doc gives it a new id: links to the old one
+break.
+
 ## TL;DR
 
 1. Edit in Outline whenever you like.
