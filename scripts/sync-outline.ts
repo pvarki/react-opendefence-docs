@@ -45,7 +45,10 @@ import {
 import { createTimer, formatDuration } from "./lib/utils";
 import {
   buildBook,
+  docLinkKeys,
   indexDocRoutes,
+  indexOrganizerRoutes,
+  organizersWithPagesIn,
   pruneHiddenPages,
   slugFromUrl,
   type BookPageRef,
@@ -1024,6 +1027,17 @@ async function main() {
     for (const locale of LOCALES) {
       const root = structure[locale];
       if (!root) continue;
+      // A section whose pages are all hidden is hidden too: links to it
+      // become plain text, like links to a hidden page. When one of its
+      // pages changes state, pages linking to the section are relinked.
+      for (const organizer of organizersWithPagesIn(root, hiddenIds)) {
+        for (const key of docLinkKeys(organizer)) hidden.keys.add(key);
+      }
+      for (const organizer of organizersWithPagesIn(root, hidden.relinkKeys, {
+        any: true,
+      })) {
+        for (const key of docLinkKeys(organizer)) hidden.relinkKeys.add(key);
+      }
       const pruned: OutlineNavNode = {
         ...root,
         children: pruneHiddenPages(root.children, hiddenIds),
@@ -1034,6 +1048,7 @@ async function main() {
         (slug) => `/${locale}/${collection.slug}/${slug}`,
         slugRouteIndex,
       );
+      indexOrganizerRoutes(pruned, slugRouteIndex);
     }
   }
   // Pages carried over from collections not synced this run stay link targets.

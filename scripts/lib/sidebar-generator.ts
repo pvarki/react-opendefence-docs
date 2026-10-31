@@ -169,6 +169,68 @@ export function cleanLabel(label: string): string {
   );
 }
 
+/** Organizer nodes (docs with children) under a root, children first. */
+function organizersOf(root: OutlineNavNode): OutlineNavNode[] {
+  const out: OutlineNavNode[] = [];
+  const walk = (node: OutlineNavNode) => {
+    const children = node.children ?? [];
+    if (children.length === 0) return;
+    for (const child of children) walk(child);
+    out.push(node);
+  };
+  for (const child of root.children ?? []) walk(child);
+  return out;
+}
+
+/** Leaf descendants of a node, in tree (reading) order. */
+function leavesOf(node: OutlineNavNode): OutlineNavNode[] {
+  const children = node.children ?? [];
+  return children.length === 0 ? [node] : children.flatMap(leavesOf);
+}
+
+/** The keys an internal link can use for a doc: its slug and its id. */
+export function docLinkKeys(node: OutlineNavNode): string[] {
+  return [slugFromUrl(node.url), node.id];
+}
+
+/**
+ * Point links to an organizer (a section such as "Publish Stream") at its
+ * first page, so they don't stay unresolved. Run on the pruned tree after
+ * indexDocRoutes: the first page is then the first visible one. Keys that
+ * already have a route are left alone.
+ */
+export function indexOrganizerRoutes(
+  root: OutlineNavNode,
+  index: Map<string, string>,
+): void {
+  for (const organizer of organizersOf(root)) {
+    const first = leavesOf(organizer)
+      .map((leaf) => index.get(leaf.id))
+      .find((route) => route !== undefined);
+    if (first === undefined) continue;
+    for (const key of docLinkKeys(organizer)) {
+      if (!index.has(key)) index.set(key, first);
+    }
+  }
+}
+
+/**
+ * Organizers whose pages all match `ids` (e.g. all hidden). Run on the
+ * unpruned tree. With `any`, organizers with at least one matching page.
+ */
+export function organizersWithPagesIn(
+  root: OutlineNavNode,
+  ids: ReadonlySet<string>,
+  { any = false }: { any?: boolean } = {},
+): OutlineNavNode[] {
+  return organizersOf(root).filter((organizer) => {
+    const leaves = leavesOf(organizer);
+    return any
+      ? leaves.some((leaf) => ids.has(leaf.id))
+      : leaves.every((leaf) => ids.has(leaf.id));
+  });
+}
+
 /**
  * Platform detection for organizer titles. Exact client names map onto their
  * platform (ported concept from the old wiki's platform-filter label map:
