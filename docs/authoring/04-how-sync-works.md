@@ -63,6 +63,13 @@ The codes you'll actually see:
 (There are also `invalid-page` and `missing-page-file` errors — those
 indicate pipeline trouble, not authoring mistakes. Ping a developer.)
 
+A link in a Finnish or Swedish page that points to the English version
+of a page is pointed to its Finnish or Swedish counterpart by the sync,
+when a Translations block names one. The `cross-locale-link` warning
+lists only the links that have no known counterpart: add the
+Translations link to the target page, or link the right page in
+Outline.
+
 A few warnings come from the sync run itself, not from the report:
 hidden pages that still have content, links to hidden pages, and
 markers on organizer docs. Find them in the run's log under
