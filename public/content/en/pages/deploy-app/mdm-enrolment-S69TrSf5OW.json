@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "id": "149ddbd8-3815-4fd5-82d9-dbe57518256f",
+  "slug": "mdm-enrolment-S69TrSf5OW",
+  "collection": "deploy-app",
+  "locale": "en",
+  "title": "MDM Enrolment",
+  "breadcrumb": [
+    "Platforms",
+    "Android",
+    "Admin Guide",
+    "MDM Enrolment"
+  ],
+  "createdAt": "2026-10-29T10:36:03.712Z",
+  "updatedAt": "2026-10-31T11:12:31.695Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Open enrolment",
+          "layout": "image-bottom",
+          "html": "<p>In Deploy App, open <strong>MDM</strong> and tap <strong>Open for 2 hours</strong>. Do this before the transfer: a phone that asks while enrolment is closed is turned away until you transfer it out and back again.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/b5d4bd107bb4855f.webp",
+              "width": 912,
+              "height": 1804
+            }
+          ]
+        },
+        {
+          "title": "Select the named phones",
+          "layout": "image-bottom",
+          "html": "<p>In Fleet, tick the named phones in your preparation team and choose <strong>Transfer</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/204f06c0dd5db585.webp",
+              "width": 2128,
+              "height": 290
+            }
+          ]
+        },
+        {
+          "title": "Transfer them to Deploy App",
+          "layout": "image-bottom",
+          "html": "<p>Choose the <strong>Deploy App</strong> team and tap <strong>Transfer</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/80b224e7ffe15bee.webp",
+              "width": 2128,
+              "height": 1210
+            }
+          ]
+        },
+        {
+          "title": "Wait for the phones",
+          "layout": "image-bottom",
+          "html": "<p>Within about 15 minutes each phone gets its certificate and appears here under its callsign. When all are in, tap <strong>Close now</strong>. A phone missing after that shows <strong>SCEP enrollment failed</strong> in Fleet: its name breaks the rule or is already taken. Correct it with <strong>Edit user</strong>, then transfer the phone out and back.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/f696b94f6eeafb1a.webp",
+              "width": 912,
+              "height": 1804
+            }
+          ]
+        },
+        {
+          "title": "Open Deploy App",
+          "layout": "image-bottom",
+          "html": "<p>On the phone, open the <strong>Work</strong> apps and tap <strong>Deploy App</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/84840932117af60e.webp",
+              "width": 912,
+              "height": 1804
+            }
+          ]
+        },
+        {
+          "title": "Chrome's first start",
+          "layout": "image-bottom",
+          "html": "<p>The first time, tap <strong>Stay signed out</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/0c9c55b572c71199.webp",
+              "width": 912,
+              "height": 1804
+            }
+          ]
+        },
+        {
+          "title": "Signed in",
+          "layout": "image-bottom",
+          "html": "<p>Deploy App opens as the phone's callsign.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/0e281f149b1dc049.webp",
+              "width": 912,
+              "height": 1804
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

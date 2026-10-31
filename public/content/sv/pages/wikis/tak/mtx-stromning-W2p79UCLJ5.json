@@ -24,10 +24,15 @@
       "id": "nuvarande-protokoll-som-stöds-eller-utvärderas"
     }
   ],
+  "translations": {
+    "en": "/en/wikis/tak/mtx-streaming-QXfsZsE0cX",
+    "fi": "/fi/wikis/tak/mtx-striimaus-HtFtvSo9pk",
+    "sv": "/sv/wikis/tak/mtx-stromning-W2p79UCLJ5"
+  },
   "blocks": [
     {
       "type": "html",
-      "html": "<p>MTX = <strong>MediaMTX</strong> är en färdig att använda, fristående live-mediaserver och mediaproxy utan externa beroenden. Den är utformad som en \"mediarouter\" som vidarebefordrar mediastreamar från ände till ände.</p>"
+      "html": "<p>MTX = <strong>MediaMTX</strong> är en färdig att använda, fristående live-mediaserver och mediaproxy utan externa beroenden. Den är utformad som en ”mediarouter” som vidarebefordrar mediastreamar från ände till ände.</p>"
     },
     {
       "type": "image",

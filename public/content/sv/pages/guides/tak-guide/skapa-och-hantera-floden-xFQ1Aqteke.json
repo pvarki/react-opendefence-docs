@@ -135,7 +135,7 @@
         {
           "title": "Nytt flöde skapat!",
           "layout": "text",
-          "html": "<ul>\n<li>Ditt nya flöde finns nu här!</li>\n<li>Om standardrollen inte är Admin kan personer från din server nu prenumerera på ditt flöde.</li>\n</ul>\n<p>När du har testat Skapa och hantera flöden, fortsätt till <a href=\"/doc/2676ebbb-83f4-4569-a7a2-7050395f28c8\">Draw &#x26; share Plans</a></p>\n<p>Data Sync Default Role Owner-beskrivning korrigerad:\\nAnvändaren blir som standard Admin för Data Sync-flödet. Denna funktion rekommenderas inte att användas, den nya ägaren kan</p>",
+          "html": "<ul>\n<li>Ditt nya flöde finns nu här!</li>\n<li>Om standardrollen inte är Admin kan personer från din server nu prenumerera på ditt flöde.</li>\n</ul>\n<p>När du har testat Skapa och hantera flöden, fortsätt till <a href=\"/en/guides/tak-guide/draw-share-plans-fxjT3hDZ5p\">Draw &#x26; share Plans</a></p>\n<p>Data Sync Default Role Owner-beskrivning korrigerad:\nAnvändaren blir som standard Admin för Data Sync-flödet. Denna funktion rekommenderas inte att användas, den nya ägaren kan</p>",
           "images": []
         },
         {

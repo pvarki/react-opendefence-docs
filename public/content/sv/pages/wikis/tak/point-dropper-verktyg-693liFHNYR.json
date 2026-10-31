@@ -18,18 +18,22 @@
       "id": "tak-produktsidor-för-verktyget"
     }
   ],
+  "translations": {
+    "en": "/en/wikis/tak/point-dropper-tool-IUEAOayhVJ",
+    "fi": "/fi/wikis/tak/point-dropper-tyokalu-Fcqd6h1N2g",
+    "sv": "/sv/wikis/tak/point-dropper-verktyg-693liFHNYR"
+  },
   "blocks": [
     {
       "type": "image",
       "src": "/content/images/sv/attachments/4535799356955bab.webp",
       "alt": "",
-      "caption": "=189x",
       "width": 189,
       "height": 190
     },
     {
       "type": "html",
-      "html": "<p>Intressanta positioner kan anges med Point Dropper-verktyget. Positioner på kartan kan visas med olika ikoner (t.ex. MIL-STD-2525-symboler) för att underlätta identifiering. Ikonerna kan också förses med information, såsom anteckningar eller \"senast sedd\"-uppgifter, för ytterligare funktioner.</p>\n<h2 id=\"tak-produktsidor-för-verktyget\"><a href=\"#tak-produktsidor-för-verktyget\">TAK-produktsidor för verktyget</a></h2>\n<ul>\n<li>ATAK <a href=\"/doc/3cfb86e9-62cd-4416-ad8c-6b87171cbf18\">Point Dropper -työkalu</a></li>\n</ul>"
+      "html": "<p>Intressanta positioner kan anges med Point Dropper-verktyget. Positioner på kartan kan visas med olika ikoner (t.ex. MIL-STD-2525-symboler) för att underlätta identifiering. Ikonerna kan också förses med information, såsom anteckningar eller ”senast sedd”-uppgifter, för ytterligare funktioner.</p>\n<h2 id=\"tak-produktsidor-för-verktyget\"><a href=\"#tak-produktsidor-för-verktyget\">TAK-produktsidor för verktyget</a></h2>\n<ul>\n<li>ATAK <a href=\"/sv/wikis/tak/point-dropper-verktyget-xa1yEIE7Bn\">Point Dropper -työkalu</a></li>\n</ul>"
     }
   ]
 }

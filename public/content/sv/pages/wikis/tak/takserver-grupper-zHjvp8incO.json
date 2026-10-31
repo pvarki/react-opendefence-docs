@@ -15,14 +15,19 @@
   "headings": [
     {
       "depth": 3,
-      "text": "Använda TAK-verktyg:\\nInga används.",
-      "id": "använda-tak-verktygninga-används"
+      "text": "Använda TAK-verktyg:",
+      "id": "använda-tak-verktyg"
     }
   ],
+  "translations": {
+    "en": "/en/wikis/tak/takserver-groups-fywzxIBI9A",
+    "fi": "/fi/wikis/tak/takserver-ryhmat-6chJPiJi7g",
+    "sv": "/sv/wikis/tak/takserver-grupper-zHjvp8incO"
+  },
   "blocks": [
     {
       "type": "html",
-      "html": "<p>Med hjälp av grupper styr man vem som ser vad. Användare som tillhör samma grupp delar och ser information om sig själva och varandra. I en PVARKI-installation tillhör varje användare initialt standardgruppen, och administratörer kan ändra gruppmedlemskap vid behov. En användare kan tillhöra flera grupper.</p>\n<p>En användare kan tillhöra en grupp på tre sätt:</p>\n<ul>\n<li><strong>In</strong> – användaren skickar (write) data till gruppen</li>\n<li><strong>Out</strong> – användaren tar emot (read) data från gruppen</li>\n<li><strong>Both</strong> – användaren skickar och tar emot data i gruppen</li>\n</ul>\n<p>Dessa styrs genom gruppnamn: <strong>group</strong> (Both), <strong>group_WRITE</strong> (In) och <strong>group_READ</strong> (Out).\\nGrunderna för grupphantering i PVARKI med Keycloak beskrivs separat där.</p>\n<p>Vanliga användare ser inte grupper och kan inte ändra dem. Gruphantering är för admin-användare, som kan granska grupper via olika TAK-verktyg och i takserverns administrationsgränssnitt.</p>\n<h3 id=\"använda-tak-verktygninga-används\"><a href=\"#använda-tak-verktygninga-används\"><strong>Använda TAK-verktyg:</strong>\\nInga används.</a></h3>"
+      "html": "<p>Med hjälp av grupper styr man vem som ser vad. Användare som tillhör samma grupp delar och ser information om sig själva och varandra. I en PVARKI-installation tillhör varje användare initialt standardgruppen, och administratörer kan ändra gruppmedlemskap vid behov. En användare kan tillhöra flera grupper.</p>\n<p>En användare kan tillhöra en grupp på tre sätt:</p>\n<ul>\n<li><strong>In</strong> – användaren skickar (write) data till gruppen</li>\n<li><strong>Out</strong> – användaren tar emot (read) data från gruppen</li>\n<li><strong>Both</strong> – användaren skickar och tar emot data i gruppen</li>\n</ul>\n<p>Dessa styrs genom gruppnamn: <strong>group</strong> (Both), <strong>group_WRITE</strong> (In) och <strong>group_READ</strong> (Out).\nGrunderna för grupphantering i PVARKI med Keycloak beskrivs separat där.</p>\n<p>Vanliga användare ser inte grupper och kan inte ändra dem. Gruphantering är för admin-användare, som kan granska grupper via olika TAK-verktyg och i takserverns administrationsgränssnitt.</p>\n<h3 id=\"använda-tak-verktyg\"><a href=\"#använda-tak-verktyg\"><strong>Använda TAK-verktyg:</strong></a></h3>\n<p>Inga används.</p>"
     }
   ]
 }

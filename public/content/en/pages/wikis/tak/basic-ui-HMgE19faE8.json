@@ -13,6 +13,11 @@
   "createdAt": "2025-09-07T12:34:30.519Z",
   "updatedAt": "2026-02-19T13:42:48.355Z",
   "headings": [],
+  "translations": {
+    "en": "/en/wikis/tak/basic-ui-HMgE19faE8",
+    "fi": "/fi/wikis/tak/perus-kayttoliittyma-2HXcY5vRCG",
+    "sv": "/sv/wikis/tak/grundlaggande-anvandargranssnitt-h2BJMcZND4"
+  },
   "blocks": [
     {
       "type": "html",
@@ -27,7 +32,7 @@
     },
     {
       "type": "html",
-      "html": "<p>The dropdown menu on the right side is where the functions can found and the official tak.gov documentatio  is at the end \"Documentation\".</p>"
+      "html": "<p>The dropdown menu on the right side is where the functions can found and the official tak.gov documentatio  is at the end “Documentation”.</p>"
     },
     {
       "type": "image",

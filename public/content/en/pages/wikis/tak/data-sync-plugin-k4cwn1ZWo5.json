@@ -18,6 +18,11 @@
       "id": "tak-product-pages-for-plugin"
     }
   ],
+  "translations": {
+    "en": "/en/wikis/tak/data-sync-plugin-k4cwn1ZWo5",
+    "fi": "/fi/wikis/tak/data-sync-lisaosa-FDSZf8s4dN",
+    "sv": "/sv/wikis/tak/data-sync-tillagg-izVIiIaHkF"
+  },
   "blocks": [
     {
       "type": "image",
@@ -28,7 +33,7 @@
     },
     {
       "type": "html",
-      "html": "<p>The Data Synchronization plug-in is used to synchronize multiple TAK devices involved in the same exercise or event. This plug-in requires TAK Server 1.3.3+. TAK Server stores all data for a \"mission\" in a server side database. Clients may subscribe to a mission to receive dynamic updates when a mission changes, or to synchronize data missed while a given device was disconnected.</p>\n<h2 id=\"tak-product-pages-for-plugin\"><a href=\"#tak-product-pages-for-plugin\">TAK Product pages for Plugin</a></h2>\n<ul>\n<li>WinTAK <a href=\"/doc/1b678546-43f3-4641-aacd-9c031cab7439\">Data Sync -plugin</a></li>\n<li>ATAK <a href=\"/doc/7b0492b3-42b0-46d2-b2a9-ade55453f2f4\">Data Sync -plugin</a></li>\n</ul>"
+      "html": "<p>The Data Synchronization plug-in is used to synchronize multiple TAK devices involved in the same exercise or event. This plug-in requires TAK Server 1.3.3+. TAK Server stores all data for a \"mission\" in a server side database. Clients may subscribe to a mission to receive dynamic updates when a mission changes, or to synchronize data missed while a given device was disconnected.</p>\n<h2 id=\"tak-product-pages-for-plugin\"><a href=\"#tak-product-pages-for-plugin\">TAK Product pages for Plugin</a></h2>\n<ul>\n<li>WinTAK <a href=\"/en/wikis/tak/data-sync-plugin-ahRu25V5Yh\">Data Sync -plugin</a></li>\n<li>ATAK <a href=\"/en/wikis/tak/data-sync-plugin-Ux2V5Gdsry\">Data Sync -plugin</a></li>\n</ul>"
     }
   ]
 }

@@ -13,6 +13,11 @@
   "createdAt": "2025-12-08T03:03:36.751Z",
   "updatedAt": "2026-02-19T13:24:27.609Z",
   "headings": [],
+  "translations": {
+    "en": "/en/wikis/tak/plugin-list-9AXN24oAyB",
+    "fi": "/fi/wikis/tak/lisaosa-listaus-W9iA7LSPv4",
+    "sv": "/sv/wikis/tak/tillaggslista-GbaWi7AwS9"
+  },
   "blocks": [
     {
       "type": "html",

@@ -18,10 +18,15 @@
       "id": "tak-product-pages-for-tool"
     }
   ],
+  "translations": {
+    "en": "/en/wikis/tak/contacts-geochat-tool-Yk0UD4AmWE",
+    "fi": "/fi/wikis/tak/contacts-geochat-tyokalu-3WnDMNrvne",
+    "sv": "/sv/wikis/tak/contacts-geochat-verktyg-gLh2UFdoEc"
+  },
   "blocks": [
     {
       "type": "html",
-      "html": "<p><img src=\"/content/images/en/attachments/25e331c17ee17a21.webp\" alt=\"\" title=\" =218x161\">Contacts Tool includes the users and other contact functions inside TAK. This tool can be used to chat, send packages and contact other users/functions in TAK.</p>\n<h2 id=\"tak-product-pages-for-tool\"><a href=\"#tak-product-pages-for-tool\">TAK Product pages for Tool</a></h2>\n<ul>\n<li>WinTAK <a href=\"/doc/9d111355-07d3-411a-90b3-33c5c560a1e6\">Contacts / GeoChat tool</a></li>\n<li>ATAK <a href=\"/doc/c6ae417f-9cb1-47cd-b53e-dff9db30e24d\">Contacts / GeoChat tool</a></li>\n</ul>"
+      "html": "<p><img src=\"/content/images/en/attachments/25e331c17ee17a21.webp\" alt=\"\" width=\"218\" height=\"161\">Contacts Tool includes the users and other contact functions inside TAK. This tool can be used to chat, send packages and contact other users/functions in TAK.</p>\n<h2 id=\"tak-product-pages-for-tool\"><a href=\"#tak-product-pages-for-tool\">TAK Product pages for Tool</a></h2>\n<ul>\n<li>WinTAK <a href=\"/en/wikis/tak/contacts-geochat-tool-He6gLKQ18V\">Contacts / GeoChat tool</a></li>\n<li>ATAK <a href=\"/en/wikis/tak/contacts-geochat-tool-3FdJAdO1R7\">Contacts / GeoChat tool</a></li>\n</ul>"
     }
   ]
 }

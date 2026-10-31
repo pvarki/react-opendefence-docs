@@ -1,0 +1,5 @@
+{
+  "tag": "v1.6.5+260921",
+  "publishedAt": "2026-09-24T06:18:21Z",
+  "html": "<h2 id=\"165260921-2026-09-24\"><a href=\"#165260921-2026-09-24\">1.6.5+260921 (2026-09-24)</a></h2>\n<h3 id=\"turn-off-automatic-guides-62\"><a href=\"#turn-off-automatic-guides-62\">Turn off automatic guides (<a href=\"https://github.com/pvarki/python-mediamtx-rmmtxauthz/pull/62\" target=\"_blank\" rel=\"noopener noreferrer\">#62</a>)</a></h3>\n<p>The first page of the guide now has a \"do not show me guides automatically\"\r\noption. Picking it closes the guide and stops guides opening on their own\r\nhere and elsewhere in Deploy App. The info button still opens the guide when\r\nyou want it.</p>\n<h2 id=\"changelog\"><a href=\"#changelog\">Changelog</a></h2>\n<h3 id=\"features\"><a href=\"#features\">Features</a></h3>\n<ul>\n<li>honour the Deploy App guide opt-out (<a href=\"https://github.com/pvarki/python-mediamtx-rmmtxauthz/commit/ec8e8ce1ad489f28581d5438646c2b05674ed400\" target=\"_blank\" rel=\"noopener noreferrer\">ec8e8ce</a>)</li>\n</ul>"
+}

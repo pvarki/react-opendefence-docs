@@ -29,10 +29,15 @@
       "id": "tulevaisuuden-suunnitelma-alustava"
     }
   ],
+  "translations": {
+    "en": "/en/wikis/tak/update-server-ota-hyp4E4fwtQ",
+    "fi": "/fi/wikis/tak/update-server-ota-mhNw2v3VQk",
+    "sv": "/sv/wikis/tak/update-server-ota-4LRd5gZA7O"
+  },
   "blocks": [
     {
       "type": "html",
-      "html": "<p>Takserverissä on ominaisuus, jonka avulla se voi tarjota ATAK-sovellusten ja lisäosien päivityksiä takserver-yhteyden kautta. Kun käyttäjät ovat yhteydessä takserveriin ja palvelu on käytössä, he voivat päivittää ja asentaa sovelluksia sekä lisäosia <strong>Plugins Tools (TAK Package Mgmt)</strong> -toiminnon kautta.</p>\n<p>Tällä hetkellä <strong>PVARKI</strong> tarjoaa asennettavaksi ja päivitettäväksi seuraavat paketit:</p>\n<ul>\n<li><strong>ATAK-sovellus</strong></li>\n<li><strong>Data Sync -lisäosa</strong></li>\n</ul>\n<p>Suunnitteilla on portaali, jonka kautta ylläpitäjä voisi päivittää, lisätä ja poistaa asiakkaille jaettavia .apk-tiedostoja, mutta tätä ominaisuutta ei ole vielä aikataulutettu toteutukseen. <a href=\"/doc/6afaee14-68de-47b5-826c-ca68b557a975\">Lisäosa listaus</a>.</p>\n<h3 id=\"nykyinen-tapa-hallita-lisäosia-deploy-app-ympäristössä\"><a href=\"#nykyinen-tapa-hallita-lisäosia-deploy-app-ympäristössä\"><strong>Nykyinen tapa hallita lisäosia Deploy App-ympäristössä</strong></a></h3>\n<p>Ylläpitäjä tarvitsee SSH root -oikeudet palvelimelle!</p>\n<p>Lisää .apk-tiedostot hakemistoon <code>/tmp/update</code> ja aja komento <code>taktool pp</code> kyseisessä hakemistossa. Siirrä sen jälkeen muodostunut kansio määriteltyyn sijaintiin ja korjaa käyttöoikeudet.</p>"
+      "html": "<p>Takserverissä on ominaisuus, jonka avulla se voi tarjota ATAK-sovellusten ja lisäosien päivityksiä takserver-yhteyden kautta. Kun käyttäjät ovat yhteydessä takserveriin ja palvelu on käytössä, he voivat päivittää ja asentaa sovelluksia sekä lisäosia <strong>Plugins Tools (TAK Package Mgmt)</strong> -toiminnon kautta.</p>\n<p>Tällä hetkellä <strong>PVARKI</strong> tarjoaa asennettavaksi ja päivitettäväksi seuraavat paketit:</p>\n<ul>\n<li><strong>ATAK-sovellus</strong></li>\n<li><strong>Data Sync -lisäosa</strong></li>\n</ul>\n<p>Suunnitteilla on portaali, jonka kautta ylläpitäjä voisi päivittää, lisätä ja poistaa asiakkaille jaettavia .apk-tiedostoja, mutta tätä ominaisuutta ei ole vielä aikataulutettu toteutukseen. <a href=\"/fi/wikis/tak/lisaosa-listaus-N4znkanSPj\">Lisäosa listaus</a>.</p>\n<h3 id=\"nykyinen-tapa-hallita-lisäosia-deploy-app-ympäristössä\"><a href=\"#nykyinen-tapa-hallita-lisäosia-deploy-app-ympäristössä\"><strong>Nykyinen tapa hallita lisäosia Deploy App-ympäristössä</strong></a></h3>\n<p>Ylläpitäjä tarvitsee SSH root -oikeudet palvelimelle!</p>\n<p>Lisää .apk-tiedostot hakemistoon <code>/tmp/update</code> ja aja komento <code>taktool pp</code> kyseisessä hakemistossa. Siirrä sen jälkeen muodostunut kansio määriteltyyn sijaintiin ja korjaa käyttöoikeudet.</p>"
     },
     {
       "type": "code",

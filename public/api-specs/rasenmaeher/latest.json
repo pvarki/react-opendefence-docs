@@ -2139,7 +2139,7 @@
         "examples": [
           {
             "healthcheck": "success",
-            "dns": "sleepy-sloth.example.org",
+            "dns": "sleepy-sloth.pvarki.fi",
             "deployment": "sleepy-sloth",
             "version": "1.0.0"
           }
@@ -3071,8 +3071,8 @@
         "examples": [
           {
             "product": "tak",
-            "apiurl": "https://tak.sleepy-sloth.example.org:4625/",
-            "url": "https://tak.sleepy-sloth.example.org:8443/"
+            "apiurl": "https://tak.sleepy-sloth.pvarki.fi:4625/",
+            "url": "https://tak.sleepy-sloth.pvarki.fi:8443/"
           }
         ]
       },

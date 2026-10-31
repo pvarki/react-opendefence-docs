@@ -202,12 +202,6 @@
       "clientId": "atak-sGxUIXpQlU",
       "children": [
         {
-          "type": "doc",
-          "id": "overview-CVNzKhRcKY",
-          "label": "Overview",
-          "slug": "overview-CVNzKhRcKY"
-        },
-        {
           "type": "group",
           "id": "fighter-Jaxg9FOHAs",
           "label": "Fighter",
@@ -558,20 +552,6 @@
       ]
     },
     {
-      "type": "group",
-      "id": "atak-sGxUIXpQlU",
-      "label": "ATAK",
-      "clientId": "atak-sGxUIXpQlU",
-      "children": [
-        {
-          "type": "doc",
-          "id": "troubleshooting-IC3Nd5qZHr",
-          "label": "TROUBLESHOOTING",
-          "slug": "troubleshooting-IC3Nd5qZHr"
-        }
-      ]
-    },
-    {
       "type": "toporg",
       "id": "start-connect-c27Zc4YePw",
       "label": "START & CONNECT",
@@ -821,20 +801,6 @@
     },
     {
       "type": "group",
-      "id": "wintak-w8mKUfaRBP",
-      "label": "WinTAK",
-      "clientId": "wintak-w8mKUfaRBP",
-      "children": [
-        {
-          "type": "doc",
-          "id": "troubleshooting-T4SvHjOYgd",
-          "label": "Troubleshooting",
-          "slug": "troubleshooting-T4SvHjOYgd"
-        }
-      ]
-    },
-    {
-      "type": "group",
       "id": "start-sLRG2uavSv",
       "label": "Start",
       "clientId": "itak-bwDYWvqdnY",
@@ -861,27 +827,9 @@
       "children": [
         {
           "type": "doc",
-          "id": "blue-force-tracking-NOzCSj3j64",
-          "label": "Blue force tracking",
-          "slug": "blue-force-tracking-NOzCSj3j64"
-        },
-        {
-          "type": "doc",
           "id": "data-sync-U4cc7UE9hg",
           "label": "Data Sync",
           "slug": "data-sync-U4cc7UE9hg"
-        },
-        {
-          "type": "doc",
-          "id": "create-symbols-quick-pics-elqHqV8SW7",
-          "label": "Create Symbols & Quick Pics",
-          "slug": "create-symbols-quick-pics-elqHqV8SW7"
-        },
-        {
-          "type": "doc",
-          "id": "use-geochat-r99lJsOLnK",
-          "label": "Use GeoChat",
-          "slug": "use-geochat-r99lJsOLnK"
         }
       ]
     },
@@ -993,32 +941,6 @@
     },
     {
       "type": "toporg",
-      "id": "usage-by-role-KxtjmbM9B1",
-      "label": "USAGE BY ROLE",
-      "clientId": "tak-tracker-android-JCZw3YH2nW",
-      "children": [
-        {
-          "type": "doc",
-          "id": "overview-4sA7lVWVtw",
-          "label": "Overview",
-          "slug": "overview-4sA7lVWVtw"
-        },
-        {
-          "type": "doc",
-          "id": "fighter-gUAGHKAtVV",
-          "label": "Fighter",
-          "slug": "fighter-gUAGHKAtVV"
-        },
-        {
-          "type": "doc",
-          "id": "command-post-t2fdgSrk3R",
-          "label": "Command Post",
-          "slug": "command-post-t2fdgSrk3R"
-        }
-      ]
-    },
-    {
-      "type": "toporg",
       "id": "start-connect-oZzAX4X7Er",
       "label": "START & CONNECT",
       "clientId": "tak-tracker-apple-PmHvleNK0F",
@@ -1034,60 +956,6 @@
           "id": "tak-tracker-already-installed-DmWqDN5jLp",
           "label": "TAK Tracker Already Installed",
           "slug": "tak-tracker-already-installed-DmWqDN5jLp"
-        }
-      ]
-    },
-    {
-      "type": "group",
-      "id": "tak-features-2eQ2Stir9U",
-      "label": "TAK Features",
-      "clientId": "tak-tracker-apple-PmHvleNK0F",
-      "children": [
-        {
-          "type": "doc",
-          "id": "send-alerts-jz5xQsdpbH",
-          "label": "Send alerts",
-          "slug": "send-alerts-jz5xQsdpbH"
-        }
-      ]
-    },
-    {
-      "type": "group",
-      "id": "usage-by-role-FfcECbKYmK",
-      "label": "Usage by Role",
-      "clientId": "tak-tracker-apple-PmHvleNK0F",
-      "children": [
-        {
-          "type": "doc",
-          "id": "overview-vqWEyyCxy8",
-          "label": "Overview",
-          "slug": "overview-vqWEyyCxy8"
-        },
-        {
-          "type": "doc",
-          "id": "fighter-xKivECWhVS",
-          "label": "Fighter",
-          "slug": "fighter-xKivECWhVS"
-        },
-        {
-          "type": "doc",
-          "id": "command-post-aX04WiqaZf",
-          "label": "Command Post",
-          "slug": "command-post-aX04WiqaZf"
-        }
-      ]
-    },
-    {
-      "type": "group",
-      "id": "tak-tracker-apple-PmHvleNK0F",
-      "label": "TAK Tracker - Apple",
-      "clientId": "tak-tracker-apple-PmHvleNK0F",
-      "children": [
-        {
-          "type": "doc",
-          "id": "troubleshooting-4heIv7ZV7m",
-          "label": "Troubleshooting",
-          "slug": "troubleshooting-4heIv7ZV7m"
         }
       ]
     }

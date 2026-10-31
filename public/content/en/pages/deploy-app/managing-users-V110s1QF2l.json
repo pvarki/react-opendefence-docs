@@ -14,6 +14,11 @@
   "createdAt": "2025-12-06T09:38:19.326Z",
   "updatedAt": "2026-06-13T22:42:56.425Z",
   "headings": [],
+  "translations": {
+    "en": "/en/deploy-app/managing-users-V110s1QF2l",
+    "fi": "/fi/deploy-app/hallitse-kayttajia-YrSqUxRf2V",
+    "sv": "/sv/deploy-app/hantera-anvandare-ROwlDqFUYe"
+  },
   "blocks": [
     {
       "type": "slideset",

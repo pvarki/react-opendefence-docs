@@ -35,10 +35,21 @@
       "id": "atak-vns-google-routes-api-key"
     }
   ],
+  "translations": {
+    "en": "/en/wikis/tak/vns-plugin-6eZoNDPEBA",
+    "fi": "/fi/wikis/tak/vns-lisaosa-Hnpl0Xgv25"
+  },
   "blocks": [
     {
+      "type": "image",
+      "src": "/content/images/fi/attachments/0aed24c4dd22ccae.webp",
+      "alt": "",
+      "width": 741,
+      "height": 754
+    },
+    {
       "type": "html",
-      "html": "<p><img src=\"/content/images/fi/attachments/0aed24c4dd22ccae.webp\" alt=\"\">\\n</p>\n<h2 id=\"lisäosan-kuvaus\"><a href=\"#lisäosan-kuvaus\"><strong>Lisäosan kuvaus</strong></a></h2>\n<p>Vehicle Navigation System (VNS) -lisäosa suorittaa kaksi päätoimintoa. Ensinnäkin se mahdollistaa ATAK:ssa reittien kohdistamisen tieverkkoon. Toiseksi se välittää Augmented Reality System–Navigation (ARES-N) -sovellukselle keskeisiä tietoja, kuten laitteen sijainnin, tilannetietoisuutta parantavat merkit sekä käännös käännökseltä etenevät ajo-ohjeet.</p>\n<p>Tieverkkoaineisto hankitaan käyttämällä PAR osm-routing-engine -projektia.</p>\n<h2 id=\"opastusvideot\"><a href=\"#opastusvideot\">Opastusvideot</a></h2>\n<h4 id=\"atak-vns-plugin\"><a href=\"#atak-vns-plugin\">ATAK VNS PLUGIN</a></h4>"
+      "html": "<h2 id=\"lisäosan-kuvaus\"><a href=\"#lisäosan-kuvaus\"><strong>Lisäosan kuvaus</strong></a></h2>\n<p>Vehicle Navigation System (VNS) -lisäosa suorittaa kaksi päätoimintoa. Ensinnäkin se mahdollistaa ATAK:ssa reittien kohdistamisen tieverkkoon. Toiseksi se välittää Augmented Reality System–Navigation (ARES-N) -sovellukselle keskeisiä tietoja, kuten laitteen sijainnin, tilannetietoisuutta parantavat merkit sekä käännös käännökseltä etenevät ajo-ohjeet.</p>\n<p>Tieverkkoaineisto hankitaan käyttämällä PAR osm-routing-engine -projektia.</p>\n<h2 id=\"opastusvideot\"><a href=\"#opastusvideot\">Opastusvideot</a></h2>\n<h4 id=\"atak-vns-plugin\"><a href=\"#atak-vns-plugin\">ATAK VNS PLUGIN</a></h4>"
     },
     {
       "type": "youtube",

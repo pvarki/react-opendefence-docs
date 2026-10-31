@@ -202,12 +202,6 @@
       "clientId": "atak-FSQuzFTpnF",
       "children": [
         {
-          "type": "doc",
-          "id": "oversikt-RdC8FOmUJv",
-          "label": "Översikt",
-          "slug": "oversikt-RdC8FOmUJv"
-        },
-        {
           "type": "group",
           "id": "stridande-6w3nAaoWke",
           "label": "Stridande",
@@ -558,20 +552,6 @@
       ]
     },
     {
-      "type": "group",
-      "id": "atak-FSQuzFTpnF",
-      "label": "ATAK",
-      "clientId": "atak-FSQuzFTpnF",
-      "children": [
-        {
-          "type": "doc",
-          "id": "felsokning-6aAV1qqTyn",
-          "label": "Felsökning",
-          "slug": "felsokning-6aAV1qqTyn"
-        }
-      ]
-    },
-    {
       "type": "toporg",
       "id": "starta-och-anslut-37CazxgkWa",
       "label": "STARTA OCH ANSLUT",
@@ -821,20 +801,6 @@
     },
     {
       "type": "group",
-      "id": "wintak-hFAHKHVsGW",
-      "label": "WinTAK",
-      "clientId": "wintak-hFAHKHVsGW",
-      "children": [
-        {
-          "type": "doc",
-          "id": "felsokning-FGKrOPGWwr",
-          "label": "Felsökning",
-          "slug": "felsokning-FGKrOPGWwr"
-        }
-      ]
-    },
-    {
-      "type": "group",
       "id": "start-KwmezzKrdE",
       "label": "Start",
       "clientId": "itak-Ic4xJNBg1l",
@@ -861,27 +827,9 @@
       "children": [
         {
           "type": "doc",
-          "id": "sparning-av-egna-styrkor-pi3AVYT4mX",
-          "label": "Spårning av egna styrkor",
-          "slug": "sparning-av-egna-styrkor-pi3AVYT4mX"
-        },
-        {
-          "type": "doc",
           "id": "datasynkronisering-sfvICpIRhr",
           "label": "Datasynkronisering",
           "slug": "datasynkronisering-sfvICpIRhr"
-        },
-        {
-          "type": "doc",
-          "id": "skapa-symboler-och-snabbilder-I7NbGCaG2R",
-          "label": "Skapa symboler och snabbilder",
-          "slug": "skapa-symboler-och-snabbilder-I7NbGCaG2R"
-        },
-        {
-          "type": "doc",
-          "id": "anvand-geochat-3YfBvaPUdo",
-          "label": "Använd GeoChat",
-          "slug": "anvand-geochat-3YfBvaPUdo"
         }
       ]
     },
@@ -993,32 +941,6 @@
     },
     {
       "type": "toporg",
-      "id": "anvandning-per-roll-xsjXHh4sak",
-      "label": "ANVÄNDNING PER ROLL",
-      "clientId": "tak-tracker-android-ZmUQV0eZYK",
-      "children": [
-        {
-          "type": "doc",
-          "id": "oversikt-WnJ9NYZa3M",
-          "label": "Översikt",
-          "slug": "oversikt-WnJ9NYZa3M"
-        },
-        {
-          "type": "doc",
-          "id": "soldat-Mq5QiVrMr1",
-          "label": "Soldat",
-          "slug": "soldat-Mq5QiVrMr1"
-        },
-        {
-          "type": "doc",
-          "id": "kommandoplats-NyhTmwJFEe",
-          "label": "Kommandoplats",
-          "slug": "kommandoplats-NyhTmwJFEe"
-        }
-      ]
-    },
-    {
-      "type": "toporg",
       "id": "kom-igang-och-anslut-ip0DOpuzex",
       "label": "KOM IGÅNG OCH ANSLUT",
       "clientId": "tak-tracker-apple-RIzneI62k8",
@@ -1034,60 +956,6 @@
           "id": "tak-tracker-redan-installerad-b0bOMabOne",
           "label": "TAK Tracker redan installerad",
           "slug": "tak-tracker-redan-installerad-b0bOMabOne"
-        }
-      ]
-    },
-    {
-      "type": "group",
-      "id": "tak-funktioner-j5H0xYZtp5",
-      "label": "TAK-funktioner",
-      "clientId": "tak-tracker-apple-RIzneI62k8",
-      "children": [
-        {
-          "type": "doc",
-          "id": "skicka-varningar-7EOgWJupXv",
-          "label": "Skicka varningar",
-          "slug": "skicka-varningar-7EOgWJupXv"
-        }
-      ]
-    },
-    {
-      "type": "group",
-      "id": "anvandning-efter-roll-hDH9aJKX0o",
-      "label": "Användning efter roll",
-      "clientId": "tak-tracker-apple-RIzneI62k8",
-      "children": [
-        {
-          "type": "doc",
-          "id": "oversikt-IAwj5j49ia",
-          "label": "Översikt",
-          "slug": "oversikt-IAwj5j49ia"
-        },
-        {
-          "type": "doc",
-          "id": "soldat-4gafoPRROP",
-          "label": "Soldat",
-          "slug": "soldat-4gafoPRROP"
-        },
-        {
-          "type": "doc",
-          "id": "ledningsplats-uoVsr9jP0D",
-          "label": "Ledningsplats",
-          "slug": "ledningsplats-uoVsr9jP0D"
-        }
-      ]
-    },
-    {
-      "type": "group",
-      "id": "tak-tracker-apple-RIzneI62k8",
-      "label": "TAK Tracker - Apple",
-      "clientId": "tak-tracker-apple-RIzneI62k8",
-      "children": [
-        {
-          "type": "doc",
-          "id": "felsokning-4GY9QUGGmF",
-          "label": "Felsökning",
-          "slug": "felsokning-4GY9QUGGmF"
         }
       ]
     }

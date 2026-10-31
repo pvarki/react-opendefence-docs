@@ -25,6 +25,11 @@
       "id": "contacts--geochat--tool-section-from-wintak-manual"
     }
   ],
+  "translations": {
+    "en": "/en/wikis/tak/contacts-geochat-tool-He6gLKQ18V",
+    "fi": "/fi/wikis/tak/contacts-geochat-tyokalu-isdG7ytN8I",
+    "sv": "/sv/wikis/tak/contacts-geochat-verktyget-xVYdNw84pI"
+  },
   "blocks": [
     {
       "type": "image",

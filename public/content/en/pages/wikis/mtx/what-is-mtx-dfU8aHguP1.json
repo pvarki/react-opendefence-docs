@@ -17,10 +17,15 @@
       "id": "documentation"
     }
   ],
+  "translations": {
+    "en": "/en/wikis/mtx/what-is-mtx-dfU8aHguP1",
+    "fi": "/fi/wikis/mtx/mika-on-mtx-2htQJ88VC2",
+    "sv": "/sv/wikis/mtx/vad-ar-mtx-vrCxWzeqRf"
+  },
   "blocks": [
     {
       "type": "html",
-      "html": "<p>MTX = MediaMTX is a ready-to-use and zero-dependency live media server and media proxy. It has been conceived as a \"media router\" that routes media streams from one end to the other.</p>"
+      "html": "<p>MTX = MediaMTX is a ready-to-use and zero-dependency live media server and media proxy. It has been conceived as a “media router” that routes media streams from one end to the other.</p>"
     },
     {
       "type": "image",

@@ -18,18 +18,22 @@
       "id": "tak-produktsidor-för-tillägget"
     }
   ],
+  "translations": {
+    "en": "/en/wikis/tak/data-sync-plugin-k4cwn1ZWo5",
+    "fi": "/fi/wikis/tak/data-sync-lisaosa-FDSZf8s4dN",
+    "sv": "/sv/wikis/tak/data-sync-tillagg-izVIiIaHkF"
+  },
   "blocks": [
     {
       "type": "image",
       "src": "/content/images/sv/attachments/5c6d780d65fe7f7b.webp",
       "alt": "",
-      "caption": "=192x",
       "width": 192,
       "height": 192
     },
     {
       "type": "html",
-      "html": "<p>Data Synchronization-tillägget används för att synkronisera flera TAK-enheter som deltar i samma övning eller händelse. Detta tillägg kräver TAK Server version 1.3.3 eller senare. TAK Server lagrar all <em>mission</em>-data i serverns databas. Klientenheter kan prenumerera på missionen för att få dynamiska uppdateringar när uppdraget förändras, eller för att synkronisera data som missades när enheten varit utan anslutning.</p>\n<h2 id=\"tak-produktsidor-för-tillägget\"><a href=\"#tak-produktsidor-för-tillägget\">TAK-produktsidor för tillägget</a></h2>\n<ul>\n<li>WinTAK <a href=\"/doc/62398a9a-e125-4af9-973b-40d4669fc4c6\">Data Sync -lisäosa</a></li>\n<li>ATAK <a href=\"/doc/799dae9d-ebd5-4143-9e25-b97d18746975\">Data Sync -lisäosa</a></li>\n</ul>"
+      "html": "<p>Data Synchronization-tillägget används för att synkronisera flera TAK-enheter som deltar i samma övning eller händelse. Detta tillägg kräver TAK Server version 1.3.3 eller senare. TAK Server lagrar all <em>mission</em>-data i serverns databas. Klientenheter kan prenumerera på missionen för att få dynamiska uppdateringar när uppdraget förändras, eller för att synkronisera data som missades när enheten varit utan anslutning.</p>\n<h2 id=\"tak-produktsidor-för-tillägget\"><a href=\"#tak-produktsidor-för-tillägget\">TAK-produktsidor för tillägget</a></h2>\n<ul>\n<li>WinTAK <a href=\"/sv/wikis/tak/data-sync-tillagget-tjH0fMfWva\">Data Sync -lisäosa</a></li>\n<li>ATAK <a href=\"/sv/wikis/tak/data-sync-tillagget-aqLOkDieIe\">Data Sync -lisäosa</a></li>\n</ul>"
     }
   ]
 }

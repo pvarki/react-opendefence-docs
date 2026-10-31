@@ -18,18 +18,22 @@
       "id": "tak-produktsidor-för-verktyget"
     }
   ],
+  "translations": {
+    "en": "/en/wikis/tak/contacts-geochat-tool-Yk0UD4AmWE",
+    "fi": "/fi/wikis/tak/contacts-geochat-tyokalu-3WnDMNrvne",
+    "sv": "/sv/wikis/tak/contacts-geochat-verktyg-gLh2UFdoEc"
+  },
   "blocks": [
     {
       "type": "image",
       "src": "/content/images/sv/attachments/25e331c17ee17a21.webp",
       "alt": "",
-      "caption": "=218x",
       "width": 218,
       "height": 161
     },
     {
       "type": "html",
-      "html": "<p>Contacts-verktyget innehåller användare och andra kontaktfunktioner inom TAK-systemet. Med detta verktyg kan man chatta, skicka paket och kommunicera med andra användare/funktioner i TAK.</p>\n<h2 id=\"tak-produktsidor-för-verktyget\"><a href=\"#tak-produktsidor-för-verktyget\">TAK-produktsidor för verktyget</a></h2>\n<ul>\n<li>WinTAK <a href=\"/doc/756a4b36-f15a-4ee5-a222-a4e707552634\">Contacts / GeoChat -työkalu</a></li>\n<li>ATAK <a href=\"/doc/62cbe6ce-ead5-4043-9b36-8f46282aa06a\">Contacts / GeoChat -työkalu</a></li>\n</ul>"
+      "html": "<p>Contacts-verktyget innehåller användare och andra kontaktfunktioner inom TAK-systemet. Med detta verktyg kan man chatta, skicka paket och kommunicera med andra användare/funktioner i TAK.</p>\n<h2 id=\"tak-produktsidor-för-verktyget\"><a href=\"#tak-produktsidor-för-verktyget\">TAK-produktsidor för verktyget</a></h2>\n<ul>\n<li>WinTAK <a href=\"/sv/wikis/tak/contacts-geochat-verktyget-xVYdNw84pI\">Contacts / GeoChat -työkalu</a></li>\n<li>ATAK <a href=\"/sv/wikis/tak/contacts-geochat-verktyget-cpj9rNVTxW\">Contacts / GeoChat -työkalu</a></li>\n</ul>"
     }
   ]
 }

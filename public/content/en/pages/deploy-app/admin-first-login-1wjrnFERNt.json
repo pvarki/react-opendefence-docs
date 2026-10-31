@@ -12,7 +12,7 @@
     "Admin First Login"
   ],
   "createdAt": "2026-01-23T20:08:17.856Z",
-  "updatedAt": "2026-06-18T20:39:13.396Z",
+  "updatedAt": "2026-10-22T13:25:43.695Z",
   "headings": [],
   "translations": {
     "en": "/en/deploy-app/admin-first-login-1wjrnFERNt",
@@ -25,80 +25,74 @@
       "source": "legacy",
       "slides": [
         {
-          "title": "Initial Access",
-          "layout": "image-bottom",
-          "html": "<ul>\n<li>You should have the address to your Deploy App instance and a first admin code.</li>\n<li>Login with the code provided.</li>\n</ul>",
+          "title": "Log in with the first-admin code",
+          "layout": "image-left",
+          "html": "<p>Open your Deploy App address. Type the first-admin code from your service operator in <strong>Enter your code</strong> and press <strong>Login with Code</strong>.</p>",
           "images": [
             {
-              "src": "/content/images/en/attachments/883672fe27c04b72.webp",
-              "width": 2048,
-              "height": 1432
+              "src": "/content/images/en/attachments/a1fd09f78ddf998d.webp",
+              "width": 1614,
+              "height": 1600
             }
           ]
         },
         {
-          "title": "Callsign",
-          "layout": "image-bottom",
-          "html": "<ul>\n<li>Give yourself a callsign.</li>\n<li>It will be used across all services.</li>\n</ul>",
+          "title": "Choose your callsign",
+          "layout": "image-left",
+          "html": "<p>Type a callsign your unit knows you by and press <strong>Continue</strong>.</p>\n<ul>\n<li>You use the same callsign in every service.</li>\n<li>It is also your certificate password.</li>\n<li>As the first admin you skip the waiting room.</li>\n</ul>",
           "images": [
             {
-              "src": "/content/images/en/attachments/84bf77d98ee966a4.webp",
-              "width": 2054,
-              "height": 1420
+              "src": "/content/images/en/attachments/235ac24e7ce72469.webp",
+              "width": 1612,
+              "height": 1454
             }
           ]
         },
         {
-          "title": "Instructions",
-          "layout": "image-bottom",
-          "html": "<ul>\n<li>Deploy App has built in instructions to instruct users and highlight key features.</li>\n<li>This guide will go through certificate installation.</li>\n</ul>",
-          "images": []
-        },
-        {
-          "title": "Download the certificate",
-          "layout": "image-bottom",
-          "html": "<ul>\n<li>This will act as your way to access the services.</li>\n</ul>",
+          "title": "Get your key",
+          "layout": "image-left",
+          "html": "<p>Press <strong>Download key</strong>. The key is a file you install on this computer.</p>",
           "images": [
             {
-              "src": "/content/images/en/attachments/edf6c9211e881a13.webp",
-              "width": 2050,
-              "height": 1510
+              "src": "/content/images/en/attachments/cae5a17bcf29f399.webp",
+              "width": 2060,
+              "height": 1576
             }
           ]
         },
         {
-          "title": "Install your certificate",
-          "layout": "image-bottom",
-          "html": "<ul>\n<li>Your callsign acts as your password.</li>\n<li>Type it and press OK untill you are back in Deploy App.</li>\n</ul>",
+          "title": "Install the key",
+          "layout": "image-left",
+          "html": "<p>Open the file from your browser's downloads in the top-right corner. In the <strong>Certificate Import Wizard</strong>:</p>\n<ol>\n<li>Press <strong>Next</strong> twice.</li>\n<li>Enter your callsign as the password.</li>\n<li>Press <strong>Next</strong> twice, then <strong>Finish</strong> and <strong>OK</strong>.</li>\n</ol>\n<p>Back in the browser, press <strong>Installed – continue</strong>.</p>\n<ul>\n<li>On Firefox, Deploy App shows one more step for adding the key to Firefox.</li>\n</ul>",
           "images": [
             {
-              "src": "/content/images/en/attachments/cdec9e11d1ffdeaa.webp",
-              "width": 2052,
-              "height": 1432
+              "src": "/content/images/en/attachments/d3c6699786b6a25b.webp",
+              "width": 2068,
+              "height": 2200
             }
           ]
         },
         {
-          "title": "Login the certificate",
-          "layout": "image-bottom",
-          "html": "<ul>\n<li>Press \"Navigate with your key\".</li>\n<li>When prompted to choose a certificate, check that your callsign is selected and press \"Select\" to login.</li>\n</ul>",
+          "title": "Go to the service",
+          "layout": "image-left",
+          "html": "<p>Press <strong>Go to the service</strong>. When the browser asks for a certificate, select your callsign and press <strong>OK</strong>.</p>",
           "images": [
             {
-              "src": "/content/images/en/attachments/cd4aec232634c66a.webp",
-              "width": 2050,
-              "height": 1436
+              "src": "/content/images/en/attachments/86b1bbcc2030803b.webp",
+              "width": 2060,
+              "height": 1678
             }
           ]
         },
         {
-          "title": "Success",
-          "layout": "image-bottom",
-          "html": "<ul>\n<li>Now you can start using apps as well as enrolling users.</li>\n<li>Deploy App shows you some instructions the first time, or you can look at the instructions on this wiki.</li>\n</ul>",
+          "title": "You're in",
+          "layout": "image-left",
+          "html": "<p>Deploy App opens with the admin tools. A short guide shows the first time. Press <strong>Next</strong> to go through it, or close it.</p>\n<ul>\n<li>Next, add your users. See <strong>Adding Users</strong>.</li>\n</ul>",
           "images": [
             {
-              "src": "/content/images/en/attachments/22b750e5d71b437e.webp",
-              "width": 2054,
-              "height": 1438
+              "src": "/content/images/en/attachments/cb985ac4e3ca7cca.webp",
+              "width": 2200,
+              "height": 2200
             }
           ]
         }

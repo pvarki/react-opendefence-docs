@@ -40,7 +40,7 @@
         {
           "title": "Overview - Fighter Gets",
           "layout": "image-bottom",
-          "html": "<ol start=\"4\">\n<li>\n<p>Receive the CP-produced RECON Feed to get what we know of the AO</p>\n</li>\n<li>\n<p>Receive Mission PLAN Feeds for marching routes, patrol routes, geofence alerts...</p>\n</li>\n<li>\n<p>Receive the BLUFOR Feed with eg. approach routes to friendly positions</p>\n</li>\n<li>\n<p>Monitor the Messaging tool of choice in your unit (Geochat, Matrix or others).</p>\n<p>\\</p>\n</li>\n</ol>",
+          "html": "<ol start=\"4\">\n<li>Receive the CP-produced RECON Feed to get what we know of the AO</li>\n<li>Receive Mission PLAN Feeds for marching routes, patrol routes, geofence alerts...</li>\n<li>Receive the BLUFOR Feed with eg. approach routes to friendly positions</li>\n<li>Monitor the Messaging tool of choice in your unit (Geochat, Matrix or others).</li>\n</ol>",
           "images": [
             {
               "src": "/content/images/en/attachments/9990aa9707a9ab73.webp",

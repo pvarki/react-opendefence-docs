@@ -11,25 +11,6 @@
     },
     {
       "type": "group",
-      "id": "katso-striimia-x57r3upJZ4",
-      "label": "Katso Striimiä",
-      "children": [
-        {
-          "type": "doc",
-          "id": "selain-0MrE4uNLAM",
-          "label": "Selain",
-          "slug": "selain-0MrE4uNLAM"
-        },
-        {
-          "type": "doc",
-          "id": "vlc-player-fUPdjIb8kS",
-          "label": "VLC Player",
-          "slug": "vlc-player-fUPdjIb8kS"
-        }
-      ]
-    },
-    {
-      "type": "group",
       "id": "julkaise-striimia-sIbGhTUkad",
       "label": "Julkaise Striimiä",
       "children": [
@@ -38,12 +19,6 @@
           "id": "gopro-C3E58GqT35",
           "label": "GoPro",
           "slug": "gopro-C3E58GqT35"
-        },
-        {
-          "type": "doc",
-          "id": "opentak-icu-manuaalinen-tapa-KeJeyn2JV6",
-          "label": "OpenTAK ICU - Manuaalinen tapa",
-          "slug": "opentak-icu-manuaalinen-tapa-KeJeyn2JV6"
         },
         {
           "type": "doc",

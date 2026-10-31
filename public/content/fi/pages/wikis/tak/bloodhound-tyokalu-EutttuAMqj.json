@@ -18,6 +18,11 @@
       "id": "tak-tuotesivut-työkalulle"
     }
   ],
+  "translations": {
+    "en": "/en/wikis/tak/bloodhound-tool-1JvEjCG9ha",
+    "fi": "/fi/wikis/tak/bloodhound-tyokalu-EutttuAMqj",
+    "sv": "/sv/wikis/tak/bloodhound-verktyg-QY0hBa9P21"
+  },
   "blocks": [
     {
       "type": "image",
@@ -28,7 +33,7 @@
     },
     {
       "type": "html",
-      "html": "<p>Bloodhound-työkalu tarjoaa tuen karttakohteen seuraamiseen ja sieppaamiseen. Sen avulla voidaan valita kaksi pistettä kartalta ja/tai karttaobjekteja, ja se näyttää etäisyys- ja suuntimatiedot valitun seuraajan ja kohteen välillä.</p>\n<h2 id=\"tak-tuotesivut-työkalulle\"><a href=\"#tak-tuotesivut-työkalulle\">TAK-tuotesivut työkalulle</a></h2>\n<ul>\n<li>ATAK <a href=\"/doc/35d0cc01-38f5-4e3e-bdc2-86cc58a8b015\">Bloodhound-työkalu</a></li>\n</ul>"
+      "html": "<p>Bloodhound-työkalu tarjoaa tuen karttakohteen seuraamiseen ja sieppaamiseen. Sen avulla voidaan valita kaksi pistettä kartalta ja/tai karttaobjekteja, ja se näyttää etäisyys- ja suuntimatiedot valitun seuraajan ja kohteen välillä.</p>\n<h2 id=\"tak-tuotesivut-työkalulle\"><a href=\"#tak-tuotesivut-työkalulle\">TAK-tuotesivut työkalulle</a></h2>\n<ul>\n<li>ATAK <a href=\"/fi/wikis/tak/bloodhound-tyokalu-6Upz4LkrO9\">Bloodhound-työkalu</a></li>\n</ul>"
     }
   ]
 }

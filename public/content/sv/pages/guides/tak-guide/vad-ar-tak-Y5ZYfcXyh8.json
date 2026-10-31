@@ -115,7 +115,7 @@
         {
           "title": "Deploy App automatiserar serverhanteringen",
           "layout": "image-left",
-          "html": "<p>Med Deploy App behöver du aldrig konfigurera din TAK Server manuellt.</p>\n<ul>\n<li>En Deploy App-instans startar en medföljande server av officiell typ, en TAK Server.</li>\n<li>Du och dina soldater kommer åt den med två tryck från Deploy App.\nVi anser att soldater ska agera, inte mixtra med servrar. Deploy App tar bort manuell konfiguration med ett mycket säkert utförande.</li>\n</ul>",
+          "html": "<p>Med Deploy App behöver du aldrig konfigurera din TAK Server manuellt.</p>\n<ul>\n<li>En Deploy App-instans startar en medföljande server av officiell typ, en TAK Server.</li>\n<li>Du och dina soldater kommer åt den med två tryck från Deploy App.</li>\n</ul>\n<p>Vi anser att soldater ska agera, inte mixtra med servrar. Deploy App tar bort manuell konfiguration med ett mycket säkert utförande.</p>",
           "images": [
             {
               "src": "/content/images/sv/attachments/2eb1508d89ef7f24.webp",

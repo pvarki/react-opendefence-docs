@@ -13,6 +13,11 @@
   "createdAt": "2025-12-08T03:03:35.929Z",
   "updatedAt": "2026-02-19T13:43:43.818Z",
   "headings": [],
+  "translations": {
+    "en": "/en/wikis/tak/basic-ui-HMgE19faE8",
+    "fi": "/fi/wikis/tak/perus-kayttoliittyma-2HXcY5vRCG",
+    "sv": "/sv/wikis/tak/grundlaggande-anvandargranssnitt-h2BJMcZND4"
+  },
   "blocks": [
     {
       "type": "html",
@@ -27,7 +32,7 @@
     },
     {
       "type": "html",
-      "html": "<p>Alla funktioner finns i rullgardinsmenyn till höger, och längst ned i menyn finns den officiella tak.gov-dokumentationen under posten <strong>\"Documentation\"</strong>.</p>"
+      "html": "<p>Alla funktioner finns i rullgardinsmenyn till höger, och längst ned i menyn finns den officiella tak.gov-dokumentationen under posten <strong>”Documentation”</strong>.</p>"
     },
     {
       "type": "image",

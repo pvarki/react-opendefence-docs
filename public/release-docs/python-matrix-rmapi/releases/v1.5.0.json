@@ -1,0 +1,5 @@
+{
+  "tag": "v1.5.0",
+  "publishedAt": "2026-10-31T14:35:14Z",
+  "html": "<h2 id=\"150-2026-10-31\"><a href=\"#150-2026-10-31\">1.5.0 (2026-10-31)</a></h2>\n<h3 id=\"features\"><a href=\"#features\">Features</a></h3>\n<ul>\n<li>support room version 12 (<a href=\"https://github.com/pvarki/python-matrix-rmapi/commit/8d3973a319d82e506f24358bf0b1fe79d5e9bbc0\" target=\"_blank\" rel=\"noopener noreferrer\">8d3973a</a>)</li>\n</ul>\n<h3 id=\"other-changes\"><a href=\"#other-changes\">Other changes</a></h3>\n<ul>\n<li><strong>main:</strong> release 1.5.0 (<a href=\"https://github.com/pvarki/python-matrix-rmapi/commit/e04a4c39e43317893e36ed571e35bb2660475ea9\" target=\"_blank\" rel=\"noopener noreferrer\">e04a4c3</a>)</li>\n</ul>"
+}

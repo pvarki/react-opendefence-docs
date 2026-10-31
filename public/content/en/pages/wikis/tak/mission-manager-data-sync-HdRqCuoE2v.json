@@ -39,6 +39,11 @@
       "id": "changing-user-rights"
     }
   ],
+  "translations": {
+    "en": "/en/wikis/tak/mission-manager-data-sync-HdRqCuoE2v",
+    "fi": "/fi/wikis/tak/mission-manager-data-sync-JzYy4wUkU9",
+    "sv": "/sv/wikis/tak/mission-manager-data-sync-iCzglz3Qre"
+  },
   "blocks": [
     {
       "type": "html",
@@ -75,7 +80,7 @@
     },
     {
       "type": "html",
-      "html": "<h3 id=\"delete-mission--archive\"><a href=\"#delete-mission--archive\">Delete Mission / Archive</a></h3>\n<p>Deleting Missions is done with selecting the feeds and choosing Delete. The deleted feeds are kept in the <strong>Archived Missions</strong> so the data hasn't been removed from the server.</p>"
+      "html": "<h3 id=\"delete-mission--archive\"><a href=\"#delete-mission--archive\">Delete Mission / Archive</a></h3>\n<p>Deleting Missions is done with selecting the feeds and choosing Delete. The deleted feeds are kept in the <strong>Archived Missions</strong> so the data hasn’t been removed from the server.</p>"
     },
     {
       "type": "image",
@@ -97,7 +102,7 @@
     },
     {
       "type": "html",
-      "html": "<h3 id=\"changing-user-rights\"><a href=\"#changing-user-rights\"><strong>Changing User Rights</strong></a></h3>\n<p>If the <strong>RECON</strong> feed needs to be <em>ReadOnly</em> for regular users, at least one administrator must be assigned the <strong>Owner</strong> role for the feed so they can manage it.</p>\n<p>To assign a user the Owner role through Takserver:</p>\n<ol>\n<li>Temporarily set the mission's <strong>defaultRole</strong> to <strong>Owner</strong></li>\n<li>Have the desired user subscribe to the feed → they will receive Owner rights ( Example one command post user)</li>\n<li>Once all required users have the appropriate roles, you may return the defaultRole setting to the desired value for other users</li>\n</ol>\n<p><strong>Owner users can, withing the Data Sync plugin:</strong></p>\n<ul>\n<li>change other users' roles</li>\n<li>manage users by inviting them to the mission or removing them from it</li>\n</ul>\n<p>Changing roles is done in the feed settings under the <strong>Active Members</strong> menu using the key icon.</p>"
+      "html": "<h3 id=\"changing-user-rights\"><a href=\"#changing-user-rights\"><strong>Changing User Rights</strong></a></h3>\n<p>If the <strong>RECON</strong> feed needs to be <em>ReadOnly</em> for regular users, at least one administrator must be assigned the <strong>Owner</strong> role for the feed so they can manage it.</p>\n<p>To assign a user the Owner role through Takserver:</p>\n<ol>\n<li>Temporarily set the mission’s <strong>defaultRole</strong> to <strong>Owner</strong></li>\n<li>Have the desired user subscribe to the feed → they will receive Owner rights ( Example one command post user)</li>\n<li>Once all required users have the appropriate roles, you may return the defaultRole setting to the desired value for other users</li>\n</ol>\n<p><strong>Owner users can, withing the Data Sync plugin:</strong></p>\n<ul>\n<li>change other users’ roles</li>\n<li>manage users by inviting them to the mission or removing them from it</li>\n</ul>\n<p>Changing roles is done in the feed settings under the <strong>Active Members</strong> menu using the key icon.</p>"
     },
     {
       "type": "image",
@@ -130,7 +135,7 @@
     },
     {
       "type": "html",
-      "html": "<ul>\n<li>\n<p>Feed Members</p>\n<p><img src=\"/content/images/en/attachments/1d323b2fda10f320.webp\" alt=\"\" title=\" =458x418\"></p>\n</li>\n<li>\n<p>Change roles</p>\n<p><img src=\"/content/images/en/attachments/a71e08e6483fb4fa.webp\" alt=\"\" title=\" =381x414\"></p>\n</li>\n<li>\n<p>Edit roles</p>\n</li>\n</ul>"
+      "html": "<ul>\n<li>\n<p>Feed Members</p>\n<p><img src=\"/content/images/en/attachments/1d323b2fda10f320.webp\" alt=\"\" width=\"458\" height=\"418\"></p>\n</li>\n<li>\n<p>Change roles</p>\n<p><img src=\"/content/images/en/attachments/a71e08e6483fb4fa.webp\" alt=\"\" width=\"381\" height=\"414\"></p>\n</li>\n<li>\n<p>Edit roles</p>\n</li>\n</ul>"
     },
     {
       "type": "image",

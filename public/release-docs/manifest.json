@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-08T10:29:11.492Z",
+  "generatedAt": "2026-10-31T19:30:50.138Z",
   "components": [
     {
       "id": "opendefence-platform",
@@ -17,19 +17,81 @@
       "id": "python-tak-rmapi",
       "name": "TAK Integration",
       "repo": "pvarki/python-tak-rmapi",
-      "releases": []
+      "releases": [
+        {
+          "file": "v1.17.3-261029.json",
+          "tag": "v1.17.3+261029",
+          "publishedAt": "2026-10-31T09:30:17Z"
+        },
+        {
+          "file": "v1.17.2-261028.json",
+          "tag": "v1.17.2+261028",
+          "publishedAt": "2026-10-28T16:42:33Z"
+        },
+        {
+          "file": "v1.17.1-261027.json",
+          "tag": "v1.17.1+261027",
+          "publishedAt": "2026-10-27T21:40:53Z"
+        },
+        {
+          "file": "v1.17.0-260921.json",
+          "tag": "v1.17.0+260921",
+          "publishedAt": "2026-09-24T06:17:07Z"
+        },
+        {
+          "file": "v1.17.0-260916.json",
+          "tag": "v1.17.0+260916",
+          "publishedAt": "2026-09-21T10:59:23Z"
+        },
+        {
+          "file": "v1.16.1-260915.json",
+          "tag": "v1.16.1+260915",
+          "publishedAt": "2026-09-16T06:39:08Z"
+        }
+      ]
     },
     {
       "id": "python-mediamtx-rmmtxauthz",
       "name": "MediaMTX Integration",
       "repo": "pvarki/python-mediamtx-rmmtxauthz",
-      "releases": []
+      "releases": [
+        {
+          "file": "v1.7.1-261027.json",
+          "tag": "v1.7.1+261027",
+          "publishedAt": "2026-10-27T19:22:14Z"
+        },
+        {
+          "file": "v1.7.0-261027.json",
+          "tag": "v1.7.0+261027",
+          "publishedAt": "2026-10-27T12:06:39Z"
+        },
+        {
+          "file": "v1.6.5-260921.json",
+          "tag": "v1.6.5+260921",
+          "publishedAt": "2026-09-24T06:18:21Z"
+        },
+        {
+          "file": "v1.6.4-260915.json",
+          "tag": "v1.6.4+260915",
+          "publishedAt": "2026-09-16T06:28:58Z"
+        }
+      ]
     },
     {
       "id": "python-matrix-rmapi",
       "name": "Matrix Integration",
       "repo": "pvarki/python-matrix-rmapi",
       "releases": [
+        {
+          "file": "v1.5.0.json",
+          "tag": "v1.5.0",
+          "publishedAt": "2026-10-31T14:35:14Z"
+        },
+        {
+          "file": "v1.4.0.json",
+          "tag": "v1.4.0",
+          "publishedAt": "2026-10-30T14:10:45Z"
+        },
         {
           "file": "v1.3.2.json",
           "tag": "v1.3.2",

@@ -24,10 +24,15 @@
       "id": "current-protocols-supported-or-in-evaluation"
     }
   ],
+  "translations": {
+    "en": "/en/wikis/tak/mtx-streaming-QXfsZsE0cX",
+    "fi": "/fi/wikis/tak/mtx-striimaus-HtFtvSo9pk",
+    "sv": "/sv/wikis/tak/mtx-stromning-W2p79UCLJ5"
+  },
   "blocks": [
     {
       "type": "html",
-      "html": "<p>MTX = MediaMTX is a ready-to-use and zero-dependency live media server and media proxy. It has been conceived as a \"media router\" that routes media streams from one end to the other. <a href=\"/doc/2cd1f565-0bd6-4041-8b60-35466dfc3d34\">What is MTX</a></p>"
+      "html": "<p>MTX = MediaMTX is a ready-to-use and zero-dependency live media server and media proxy. It has been conceived as a “media router” that routes media streams from one end to the other. <a href=\"/en/wikis/mtx/what-is-mtx-dfU8aHguP1\">What is MTX</a></p>"
     },
     {
       "type": "image",

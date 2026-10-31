@@ -24,10 +24,15 @@
       "id": "nykyiset-protokollat-joita-tuetaan-tai-arvioidaan"
     }
   ],
+  "translations": {
+    "en": "/en/wikis/tak/mtx-streaming-QXfsZsE0cX",
+    "fi": "/fi/wikis/tak/mtx-striimaus-HtFtvSo9pk",
+    "sv": "/sv/wikis/tak/mtx-stromning-W2p79UCLJ5"
+  },
   "blocks": [
     {
       "type": "html",
-      "html": "<p>MTX = <strong>MediaMTX</strong> on käyttövalmis ja ilman riippuvuuksia toimiva live-mediapalvelin ja mediavälityspalvelu (media proxy). Se on suunniteltu \"mediareitittimeksi\", joka välittää mediavirtoja päästä päähän.</p>"
+      "html": "<p>MTX = <strong>MediaMTX</strong> on käyttövalmis ja ilman riippuvuuksia toimiva live-mediapalvelin ja mediavälityspalvelu (media proxy). Se on suunniteltu “mediareitittimeksi”, joka välittää mediavirtoja päästä päähän.</p>"
     },
     {
       "type": "image",

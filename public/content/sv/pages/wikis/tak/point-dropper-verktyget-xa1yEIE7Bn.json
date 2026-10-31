@@ -35,10 +35,21 @@
       "id": "avsnittet-om-point-dropper-verktyget-i-atak-användarhandboken"
     }
   ],
+  "translations": {
+    "en": "/en/wikis/tak/point-dropper-tool-6BNurdPXpp",
+    "fi": "/fi/wikis/tak/point-dropper-tyokalu-eM4UMc4BBc"
+  },
   "blocks": [
     {
+      "type": "image",
+      "src": "/content/images/sv/attachments/4535799356955bab.webp",
+      "alt": "",
+      "width": 189,
+      "height": 190
+    },
+    {
       "type": "html",
-      "html": "<p><img src=\"/content/images/sv/attachments/4535799356955bab.webp\" alt=\"\">\\n</p>\n<h2 id=\"verktygsbeskrivning\"><a href=\"#verktygsbeskrivning\"><strong>Verktygsbeskrivning</strong></a></h2>\n<p>Intressanta positioner kan läggas till med hjälp av Point Dropper-verktyget. Välj Point Dropper-ikonen för att placera internationellt standardiserade markeringar och andra ikoner på kartan, redigera deras information samt dela markeringarna med andra användare i nätverket.</p>\n<h2 id=\"instruktionsvideor\"><a href=\"#instruktionsvideor\">Instruktionsvideor</a></h2>\n<h3 id=\"point-dropper-tool-5min\"><a href=\"#point-dropper-tool-5min\">Point Dropper tool (5min)</a></h3>"
+      "html": "<h2 id=\"verktygsbeskrivning\"><a href=\"#verktygsbeskrivning\"><strong>Verktygsbeskrivning</strong></a></h2>\n<p>Intressanta positioner kan läggas till med hjälp av Point Dropper-verktyget. Välj Point Dropper-ikonen för att placera internationellt standardiserade markeringar och andra ikoner på kartan, redigera deras information samt dela markeringarna med andra användare i nätverket.</p>\n<h2 id=\"instruktionsvideor\"><a href=\"#instruktionsvideor\">Instruktionsvideor</a></h2>\n<h3 id=\"point-dropper-tool-5min\"><a href=\"#point-dropper-tool-5min\">Point Dropper tool (5min)</a></h3>"
     },
     {
       "type": "youtube",

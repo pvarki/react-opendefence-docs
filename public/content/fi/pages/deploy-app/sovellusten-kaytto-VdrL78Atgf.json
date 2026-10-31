@@ -14,6 +14,11 @@
   "createdAt": "2026-02-17T06:55:04.610Z",
   "updatedAt": "2026-02-25T07:29:18.849Z",
   "headings": [],
+  "translations": {
+    "en": "/en/deploy-app/using-applications-CsobZMZ45Q",
+    "fi": "/fi/deploy-app/sovellusten-kaytto-VdrL78Atgf",
+    "sv": "/sv/deploy-app/anvanda-applikationer-0DvdFxbzvH"
+  },
   "blocks": [
     {
       "type": "slideset",

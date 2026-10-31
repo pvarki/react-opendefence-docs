@@ -13,6 +13,11 @@
   "createdAt": "2025-12-08T01:59:41.899Z",
   "updatedAt": "2026-02-19T13:42:53.477Z",
   "headings": [],
+  "translations": {
+    "en": "/en/wikis/tak/basic-ui-HMgE19faE8",
+    "fi": "/fi/wikis/tak/perus-kayttoliittyma-2HXcY5vRCG",
+    "sv": "/sv/wikis/tak/grundlaggande-anvandargranssnitt-h2BJMcZND4"
+  },
   "blocks": [
     {
       "type": "html",
@@ -27,7 +32,7 @@
     },
     {
       "type": "html",
-      "html": "<p>Oikeassa reunassa olevan pudotusvalikon kautta löytyvät kaikki toiminnot, ja aivan valikon lopusta löytyy virallinen <strong>tak.gov-dokumentaatio</strong>, kohdassa <em>\"Documentation\"</em>.</p>"
+      "html": "<p>Oikeassa reunassa olevan pudotusvalikon kautta löytyvät kaikki toiminnot, ja aivan valikon lopusta löytyy virallinen <strong>tak.gov-dokumentaatio</strong>, kohdassa <em>“Documentation”</em>.</p>"
     },
     {
       "type": "image",

@@ -18,6 +18,11 @@
       "id": "tak-product-pages-for-plugin"
     }
   ],
+  "translations": {
+    "en": "/en/wikis/tak/tak-replay-plugin-mI31D0ZhGP",
+    "fi": "/fi/wikis/tak/tak-replay-lisaosa-nC65dB5xJ4",
+    "sv": "/sv/wikis/tak/tak-replay-tillagg-nPQC6qexcA"
+  },
   "blocks": [
     {
       "type": "image",
@@ -28,7 +33,7 @@
     },
     {
       "type": "html",
-      "html": "<p>TAK Replay allows users to record map events and chats in real time to replay later. The recording area can be customized by zoom level and viewing region. Each recording can be replayed in a Timeline Viewer that allows the user to view events in real or accelerated time. Additionally, users can download and save from the TAK Server all map events and chats that occurred during a user-specified time frame.</p>\n<h2 id=\"tak-product-pages-for-plugin\"><a href=\"#tak-product-pages-for-plugin\">TAK Product pages for Plugin</a></h2>\n<ul>\n<li>WinTAK <a href=\"/doc/4f3fd3c2-b03c-4ecb-9fc9-87177e07dcbb\">TAK Replay -plugin</a></li>\n</ul>"
+      "html": "<p>TAK Replay allows users to record map events and chats in real time to replay later. The recording area can be customized by zoom level and viewing region. Each recording can be replayed in a Timeline Viewer that allows the user to view events in real or accelerated time. Additionally, users can download and save from the TAK Server all map events and chats that occurred during a user-specified time frame.</p>\n<h2 id=\"tak-product-pages-for-plugin\"><a href=\"#tak-product-pages-for-plugin\">TAK Product pages for Plugin</a></h2>\n<ul>\n<li>WinTAK <a href=\"/en/wikis/tak/tak-replay-plugin-kodpUReaKa\">TAK Replay -plugin</a></li>\n</ul>"
     }
   ]
 }

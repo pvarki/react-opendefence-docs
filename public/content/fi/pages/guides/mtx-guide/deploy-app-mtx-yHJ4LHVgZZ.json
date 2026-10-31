@@ -17,6 +17,11 @@
       "id": "deploy-app---mtx-sivu"
     }
   ],
+  "translations": {
+    "en": "/sv/guides/mtx-guide/deploy-app-mtx-C43AiOwo2H",
+    "fi": "/fi/guides/mtx-guide/deploy-app-mtx-yHJ4LHVgZZ",
+    "sv": "/sv/guides/mtx-guide/deploy-app-mtx-C43AiOwo2H"
+  },
   "blocks": [
     {
       "type": "html",

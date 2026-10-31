@@ -35,10 +35,21 @@
       "id": "atak-vns-google-routes-api-key"
     }
   ],
+  "translations": {
+    "en": "/en/wikis/tak/vns-plugin-6eZoNDPEBA",
+    "fi": "/fi/wikis/tak/vns-lisaosa-Hnpl0Xgv25"
+  },
   "blocks": [
     {
+      "type": "image",
+      "src": "/content/images/sv/attachments/0aed24c4dd22ccae.webp",
+      "alt": "",
+      "width": 741,
+      "height": 754
+    },
+    {
       "type": "html",
-      "html": "<p><img src=\"/content/images/sv/attachments/0aed24c4dd22ccae.webp\" alt=\"\">\\n</p>\n<h2 id=\"tilläggsbeskrivning\"><a href=\"#tilläggsbeskrivning\"><strong>Tilläggsbeskrivning</strong></a></h2>\n<p>Tillägget <strong>Vehicle Navigation System (VNS)</strong> utför två huvudsakliga funktioner. För det första möjliggör det ruttanpassning till vägnätet i ATAK. För det andra levererar det centrala data till applikationen <strong>Augmented Reality System–Navigation (ARES-N)</strong>, såsom enhetens position, symboler som förbättrar situationsmedvetenheten samt sväng-för-sväng-navigationsinstruktioner.</p>\n<p>Vägnätsdata hämtas genom <strong>PAR osm-routing-engine-projektet</strong>.</p>\n<h2 id=\"instruktionsvideor\"><a href=\"#instruktionsvideor\">Instruktionsvideor</a></h2>\n<h4 id=\"atak-vns-plugin\"><a href=\"#atak-vns-plugin\">ATAK VNS PLUGIN</a></h4>"
+      "html": "<h2 id=\"tilläggsbeskrivning\"><a href=\"#tilläggsbeskrivning\"><strong>Tilläggsbeskrivning</strong></a></h2>\n<p>Tillägget <strong>Vehicle Navigation System (VNS)</strong> utför två huvudsakliga funktioner. För det första möjliggör det ruttanpassning till vägnätet i ATAK. För det andra levererar det centrala data till applikationen <strong>Augmented Reality System–Navigation (ARES-N)</strong>, såsom enhetens position, symboler som förbättrar situationsmedvetenheten samt sväng-för-sväng-navigationsinstruktioner.</p>\n<p>Vägnätsdata hämtas genom <strong>PAR osm-routing-engine-projektet</strong>.</p>\n<h2 id=\"instruktionsvideor\"><a href=\"#instruktionsvideor\">Instruktionsvideor</a></h2>\n<h4 id=\"atak-vns-plugin\"><a href=\"#atak-vns-plugin\">ATAK VNS PLUGIN</a></h4>"
     },
     {
       "type": "youtube",

@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "id": "b21518c7-dcf1-4d55-bf57-c1a574b04e01",
+  "slug": "first-login-2tKlcGkU7E",
+  "collection": "deploy-app",
+  "locale": "en",
+  "title": "First Login",
+  "breadcrumb": [
+    "Platforms",
+    "Linux",
+    "Admin Guide",
+    "First Login"
+  ],
+  "createdAt": "2026-10-22T12:32:10.979Z",
+  "updatedAt": "2026-10-22T13:25:45.232Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/deploy-app/first-login-2tKlcGkU7E",
+    "fi": "/fi/deploy-app/ensimmainen-kirjautuminen-GpGTPGBu3t",
+    "sv": "/sv/deploy-app/forsta-inloggningen-XyuCJZR2T3"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "legacy",
+      "slides": [
+        {
+          "title": "Log in with the first-admin code",
+          "layout": "image-left",
+          "html": "<p>Open your Deploy App address. Type the first-admin code from your service operator in <strong>Enter your code</strong> and press <strong>Login with Code</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/a1fd09f78ddf998d.webp",
+              "width": 1614,
+              "height": 1600
+            }
+          ]
+        },
+        {
+          "title": "Choose your callsign",
+          "layout": "image-left",
+          "html": "<p>Type a callsign your unit knows you by and press <strong>Continue</strong>.</p>\n<ul>\n<li>You use the same callsign in every service.</li>\n<li>It is also your certificate password.</li>\n<li>As the first admin you skip the waiting room.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/235ac24e7ce72469.webp",
+              "width": 1612,
+              "height": 1454
+            }
+          ]
+        },
+        {
+          "title": "Get your key",
+          "layout": "image-left",
+          "html": "<p>Press <strong>Download key</strong>. The key is a file you add to your browser.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/6d0ad1c25f750cf5.webp",
+              "width": 2060,
+              "height": 1576
+            }
+          ]
+        },
+        {
+          "title": "Add the key to your browser",
+          "layout": "image-left",
+          "html": "<ol>\n<li>Press <strong>Copy address</strong> and open it in a new window: <strong>Ctrl+N</strong>, <strong>Ctrl+V</strong>, <strong>Enter</strong>.</li>\n<li>Press <strong>Import</strong>.</li>\n<li>Open Downloads, select your key file and press <strong>Select</strong>.</li>\n<li>Enter your callsign as the password and press <strong>OK</strong>.</li>\n<li>Come back to this window and press <strong>Installed – continue</strong>.</li>\n</ol>\n<ul>\n<li>On Firefox the steps are similar. Deploy App shows them for Firefox.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/da706a42d597b39e.webp",
+              "width": 2068,
+              "height": 1906
+            }
+          ]
+        },
+        {
+          "title": "Go to the service",
+          "layout": "image-left",
+          "html": "<p>Press <strong>Go to the service</strong>. The browser asks for a certificate with your callsign already selected. Press <strong>OK</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/bfea36e70af86d6d.webp",
+              "width": 2060,
+              "height": 1700
+            }
+          ]
+        },
+        {
+          "title": "You're in",
+          "layout": "image-left",
+          "html": "<p>Deploy App opens with the admin tools. A short guide shows the first time. Press <strong>Next</strong> to go through it, or close it.</p>\n<ul>\n<li>Next, add your users. See <strong>Adding Users</strong>.</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/cb985ac4e3ca7cca.webp",
+              "width": 2200,
+              "height": 2200
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

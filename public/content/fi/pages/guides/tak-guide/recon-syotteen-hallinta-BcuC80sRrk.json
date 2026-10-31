@@ -40,13 +40,13 @@
         {
           "title": "RECON-syötteen perusteet",
           "layout": "text",
-          "html": "<ul>\n<li>RECON-syöte on tarkoitettu johtopaikan (Command Post) hallinnoitavaksi.</li>\n<li>Taistelijoilla on siihen vain lukuoikeus.</li>\n<li>Jokainen Deploy App TAK -palvelimen ATAK-käyttäjä liitetään automaattisesti RECON-syötteen tilaajaksi.\nValmiina oleva ja tilattu RECON-syöte näkyy tässä.</li>\n</ul>",
+          "html": "<ul>\n<li>RECON-syöte on tarkoitettu johtopaikan (Command Post) hallinnoitavaksi.</li>\n<li>Taistelijoilla on siihen vain lukuoikeus.</li>\n<li>Jokainen Deploy App TAK -palvelimen ATAK-käyttäjä liitetään automaattisesti RECON-syötteen tilaajaksi.</li>\n</ul>\n<p>Valmiina oleva ja tilattu RECON-syöte näkyy tässä.</p>",
           "images": []
         },
         {
           "title": "RECON-syötteen tietojen päivittäminen 1",
           "layout": "image-bottom",
-          "html": "<ul>\n<li>TÄRKEÄ EDELLYTYS, jotta mallimme toimii: johtopaikkana <strong>aseta ATAK-roolisi HQ-rooliksi.</strong></li>\n<li>Taistelijat lähettävät sinulle havaintoja <strong>lähettämällä HQ-rooliin asetetuille käyttäjille</strong>, tai julkisesti muokattavan Observations-syötteen kautta, jos olet luonut sellaisen ja ohjeistanut sen käyttöön.\nBlue43 lähettää tässä uuden merkkinsä (Marker) sinulle HQ-rooliin.</li>\n</ul>",
+          "html": "<ul>\n<li>TÄRKEÄ EDELLYTYS, jotta mallimme toimii: johtopaikkana <strong>aseta ATAK-roolisi HQ-rooliksi.</strong></li>\n<li>Taistelijat lähettävät sinulle havaintoja <strong>lähettämällä HQ-rooliin asetetuille käyttäjille</strong>, tai julkisesti muokattavan Observations-syötteen kautta, jos olet luonut sellaisen ja ohjeistanut sen käyttöön.</li>\n</ul>\n<p>Blue43 lähettää tässä uuden merkkinsä (Marker) sinulle HQ-rooliin.</p>",
           "images": [
             {
               "src": "/content/images/fi/attachments/13ed3f60a7fb002f.webp",
@@ -58,7 +58,7 @@
         {
           "title": "RECON-syötteen tietojen päivittäminen 2",
           "layout": "image-bottom",
-          "html": "<ul>\n<li>Johtopaikka tarkistaa vastaanotetun tiedon, varmentaa sen ja tarvittaessa välittää oleelliset tiedot RECON-syötteeseen.</li>\n<li>Johtopaikka myös seuraa syötteen tietoja ja poistaa syötteestä vanhat, epäoleelliset tiedot.\niTAK HQ -käyttäjä johtopaikkana näkyy tässä lisäämässä Blue43:n merkkiä RECON-syötteeseen.</li>\n</ul>",
+          "html": "<ul>\n<li>Johtopaikka tarkistaa vastaanotetun tiedon, varmentaa sen ja tarvittaessa välittää oleelliset tiedot RECON-syötteeseen.</li>\n<li>Johtopaikka myös seuraa syötteen tietoja ja poistaa syötteestä vanhat, epäoleelliset tiedot.</li>\n</ul>\n<p>iTAK HQ -käyttäjä johtopaikkana näkyy tässä lisäämässä Blue43:n merkkiä RECON-syötteeseen.</p>",
           "images": [
             {
               "src": "/content/images/fi/attachments/224048abc6268778.webp",
@@ -70,7 +70,7 @@
         {
           "title": "RECON-syötteen tietojen päivittäminen 3",
           "layout": "image-bottom",
-          "html": "<ul>\n<li>Lisätyt tiedot tulevat näkyviin kaikille käyttäjille</li>\n<li>Poistetut tiedot katoavat käyttäjiltä.\nJuuri lisätty merkkimme Blue43:lta näytettynä RECON-syötteestä.</li>\n</ul>",
+          "html": "<ul>\n<li>Lisätyt tiedot tulevat näkyviin kaikille käyttäjille</li>\n<li>Poistetut tiedot katoavat käyttäjiltä.</li>\n</ul>\n<p>Juuri lisätty merkkimme Blue43:lta näytettynä RECON-syötteestä.</p>",
           "images": [
             {
               "src": "/content/images/fi/attachments/0348a5da252e244d.webp",
@@ -82,7 +82,7 @@
         {
           "title": "RECON-syötteen kierrättäminen",
           "layout": "image-bottom",
-          "html": "<ul>\n<li>Aktiivisen käytön aikana RECON-syötteeseen kertyy paljon tietoa, ja se on kierrätettävä vanhojen tietojen poistamiseksi.</li>\n<li>Kierrättämisen tekee johtopaikka, ja taistelijat kutsutaan uusiin syötteisiin säännöllisin väliajoin.\nTässä näkyy päivitetty, käytettävissä oleva RECON-syöte.</li>\n</ul>",
+          "html": "<ul>\n<li>Aktiivisen käytön aikana RECON-syötteeseen kertyy paljon tietoa, ja se on kierrätettävä vanhojen tietojen poistamiseksi.</li>\n<li>Kierrättämisen tekee johtopaikka, ja taistelijat kutsutaan uusiin syötteisiin säännöllisin väliajoin.</li>\n</ul>\n<p>Tässä näkyy päivitetty, käytettävissä oleva RECON-syöte.</p>",
           "images": [
             {
               "src": "/content/images/fi/attachments/22ab27310be30c0d.webp",

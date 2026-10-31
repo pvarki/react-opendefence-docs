@@ -135,7 +135,7 @@
         {
           "title": "Uusi syöte luotu!",
           "layout": "text",
-          "html": "<ul>\n<li>Uusi syötteesi on nyt täällä!</li>\n<li>Jos oletusrooli ei ole Admin, palvelimesi käyttäjät voivat nyt tilata syötteesi.</li>\n</ul>\n<p>Kun olet testannut syötteiden luonnin ja hallinnan onnistuneesti, jatka kohtaan <a href=\"/doc/2676ebbb-83f4-4569-a7a2-7050395f28c8\">Draw &#x26; share Plans</a></p>\n<p>Data Sync Default Role Owner -kuvaus korjattu:\\nKäyttäjästä tulee oletuksena syötteen Admin Data Sync -feedille. Tämän ominaisuuden käyttöä ei suositella, sillä uusi omistaja voi</p>",
+          "html": "<ul>\n<li>Uusi syötteesi on nyt täällä!</li>\n<li>Jos oletusrooli ei ole Admin, palvelimesi käyttäjät voivat nyt tilata syötteesi.</li>\n</ul>\n<p>Kun olet testannut syötteiden luonnin ja hallinnan onnistuneesti, jatka kohtaan <a href=\"/en/guides/tak-guide/draw-share-plans-fxjT3hDZ5p\">Draw &#x26; share Plans</a></p>\n<p>Data Sync Default Role Owner -kuvaus korjattu:\nKäyttäjästä tulee oletuksena syötteen Admin Data Sync -feedille. Tämän ominaisuuden käyttöä ei suositella, sillä uusi omistaja voi</p>",
           "images": []
         },
         {

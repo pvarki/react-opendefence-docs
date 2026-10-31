@@ -17,18 +17,22 @@
       "id": "kuka-käyttää-takia"
     }
   ],
+  "translations": {
+    "en": "/en/wikis/tak/what-is-tak-o1gM2motGE",
+    "fi": "/fi/wikis/tak/mika-on-tak-qDlgj4MWPN",
+    "sv": "/sv/wikis/tak/vad-ar-tak-qbojmFicSS"
+  },
   "blocks": [
     {
       "type": "image",
       "src": "/content/images/sv/attachments/e66a11da1a49077d.webp",
       "alt": "",
-      "caption": "=2000x",
       "width": 2000,
       "height": 2064
     },
     {
       "type": "html",
-      "html": "<p>\\n</p>\n<p>Tactical Assault Kit (TAK) on joukko paikkatietopohjaisia tilannekuvatyökaluja — yleisimmin Android-sovellus ATAK (Android Tactical Assault Kit) — jotka on suunniteltu tarjoamaan ryhmille reaaliaikainen karttanäkymä, sijainnin jakaminen ja tehtäväsuunnittelu.</p>\n<p>TAK yhdistää yhden laajennettavan käyttöliittymän alle useita toimintoja: reaaliaikaiset Blue Force / omajoukon sijainnin näytöt, kerrokselliset kartat (rasteri/vektori/WMS/WMTS/KML), chatin ja taktisen viestinnän, sensori- ja videovirrat sekä reitti- ja maalinmerkinnät.</p>\n<p>TAK on lisäosapohjainen, mikä mahdollistaa organisaatioiden lisätä toiminnallisuuksia — kuten havaitsemisen, analytiikan, laiteohjauksen ja hyötykuorman hallinnan — omien tehtävävaatimustensa mukaan. Laajalti käytössä puolustusvoimissa, lainvalvonnassa, pelastustoimessa ja siviiliorganisaatioissa, TAK on osa laajempaa ekosysteemiä, johon kuuluu asiakasohjelmia, palvelimia ja palveluita. Tämä ekosysteemi mahdollistaa yhteentoimivan ja turvallisen koordinaation sekä taistelukentällä että muissa kenttäoperaatioissa.</p>"
+      "html": "<p>Tactical Assault Kit (TAK) on joukko paikkatietopohjaisia tilannekuvatyökaluja — yleisimmin Android-sovellus ATAK (Android Tactical Assault Kit) — jotka on suunniteltu tarjoamaan ryhmille reaaliaikainen karttanäkymä, sijainnin jakaminen ja tehtäväsuunnittelu.</p>\n<p>TAK yhdistää yhden laajennettavan käyttöliittymän alle useita toimintoja: reaaliaikaiset Blue Force / omajoukon sijainnin näytöt, kerrokselliset kartat (rasteri/vektori/WMS/WMTS/KML), chatin ja taktisen viestinnän, sensori- ja videovirrat sekä reitti- ja maalinmerkinnät.</p>\n<p>TAK on lisäosapohjainen, mikä mahdollistaa organisaatioiden lisätä toiminnallisuuksia — kuten havaitsemisen, analytiikan, laiteohjauksen ja hyötykuorman hallinnan — omien tehtävävaatimustensa mukaan. Laajalti käytössä puolustusvoimissa, lainvalvonnassa, pelastustoimessa ja siviiliorganisaatioissa, TAK on osa laajempaa ekosysteemiä, johon kuuluu asiakasohjelmia, palvelimia ja palveluita. Tämä ekosysteemi mahdollistaa yhteentoimivan ja turvallisen koordinaation sekä taistelukentällä että muissa kenttäoperaatioissa.</p>"
     },
     {
       "type": "youtube",

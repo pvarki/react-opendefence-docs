@@ -25,12 +25,16 @@
       "id": "vns-lisäosan-käyttöohje-wintaklle"
     }
   ],
+  "translations": {
+    "en": "/en/wikis/tak/vns-plugin-myYvNJnnhw",
+    "fi": "/fi/wikis/tak/vns-lisaosa-yRSNhjwvwF",
+    "sv": "/sv/wikis/tak/vns-tillagget-YcOdXOjiCJ"
+  },
   "blocks": [
     {
       "type": "image",
       "src": "/content/images/fi/attachments/0aed24c4dd22ccae.webp",
       "alt": "",
-      "caption": "=342x",
       "width": 741,
       "height": 754
     },

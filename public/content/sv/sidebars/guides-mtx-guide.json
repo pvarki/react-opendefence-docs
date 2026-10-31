@@ -11,25 +11,6 @@
     },
     {
       "type": "group",
-      "id": "titta-pa-streamen-0SUHzvwK33",
-      "label": "Titta på streamen",
-      "children": [
-        {
-          "type": "doc",
-          "id": "webblasare-ww2sENtpLr",
-          "label": "Webbläsare",
-          "slug": "webblasare-ww2sENtpLr"
-        },
-        {
-          "type": "doc",
-          "id": "vlc-player-8p9jKo0ZTH",
-          "label": "VLC Player",
-          "slug": "vlc-player-8p9jKo0ZTH"
-        }
-      ]
-    },
-    {
-      "type": "group",
       "id": "publicera-streamen-51x6awRSrH",
       "label": "Publicera streamen",
       "children": [
@@ -38,12 +19,6 @@
           "id": "gopro-2PrQ7u3goE",
           "label": "GoPro",
           "slug": "gopro-2PrQ7u3goE"
-        },
-        {
-          "type": "doc",
-          "id": "opentak-icu-manuell-metod-are1FsNNAC",
-          "label": "OpenTAK ICU - Manuell metod",
-          "slug": "opentak-icu-manuell-metod-are1FsNNAC"
         },
         {
           "type": "doc",
