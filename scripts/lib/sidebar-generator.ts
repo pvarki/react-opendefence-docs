@@ -33,6 +33,7 @@ import {
   type SidebarConfig,
   type SidebarItem,
 } from "../../shared/content-schema";
+import { outlineUrlId } from "../../shared/outline-url-id";
 import type { CollectionConfig } from "../../config/collections";
 import { stripEmojis } from "./outline-normalizer";
 import type { OutlineNavNode } from "./script-types";
@@ -127,8 +128,9 @@ export function pruneHiddenPages(
 }
 
 /**
- * Index every page under a locale root by Outline slug and by document id:
- * authors' internal links use either `/doc/<slug>` or `/doc/<uuid>`. Only
+ * Index every page under a locale root by Outline slug, document id and
+ * urlId: authors' internal links use either `/doc/<slug>` or `/doc/<uuid>`,
+ * and a slug written before a rename still ends in the same urlId. Only
  * leaves become pages (buildBook); an organizer has no route, so a link to
  * it stays unresolved for validation to report instead of becoming a 404.
  * Returns the number of docs walked.
@@ -145,6 +147,8 @@ export function indexDocRoutes(
       const slug = slugFromUrl(node.url);
       index.set(slug, route(slug));
       index.set(node.id, route(slug));
+      const urlId = outlineUrlId(slug);
+      if (urlId) index.set(urlId, route(slug));
     }
     for (const child of node.children ?? []) walk(child);
   };

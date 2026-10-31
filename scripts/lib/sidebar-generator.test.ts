@@ -354,7 +354,7 @@ describe("label/title cleanup", () => {
     expect(detectPlatform("User Guide")).toBeUndefined();
   });
 
-  it("indexDocRoutes resolves pages by slug and id, not organizers", () => {
+  it("indexDocRoutes resolves pages by slug, id and urlId, not organizers", () => {
     const root: OutlineNavNode = {
       id: "root",
       url: "/doc/en-root-Ab12Cd34Ef",
@@ -382,8 +382,11 @@ describe("label/title cleanup", () => {
     expect(index.get("2586e9d1-9343-4b54-9218-b6d5b9659a12")).toBe(
       "/en/x/child-PQ4dCV2SYR",
     );
+    // A link written before the page was renamed carries the same urlId.
+    expect(index.get("PQ4dCV2SYR")).toBe("/en/x/child-PQ4dCV2SYR");
     expect(index.has("root")).toBe(false);
     expect(index.has("parent-Qq2V1k9VZ2")).toBe(false);
+    expect(index.has("Qq2V1k9VZ2")).toBe(false);
     expect(index.has("1a4e123c-b1fc-4835-a345-6cc0b4b63eff")).toBe(false);
   });
 
