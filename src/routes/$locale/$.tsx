@@ -260,6 +260,7 @@ function BookCover({
                 options={options}
                 activeId={active?.id}
                 onPick={pick}
+                oneRowWide
               />
             </div>
           )}

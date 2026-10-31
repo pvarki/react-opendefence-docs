@@ -8,6 +8,11 @@ interface PlatformListProps {
   activeId?: string;
   onPick: (option: ClientInfo) => void;
   variant?: "grid" | "chips";
+  /**
+   * Grid only: one row on wide screens. The book cover uses it so the
+   * platforms and a draft banner do not push Start reading below the fold.
+   */
+  oneRowWide?: boolean;
 }
 
 /**
@@ -21,6 +26,7 @@ export function PlatformList({
   activeId,
   onPick,
   variant = "grid",
+  oneRowWide = false,
 }: PlatformListProps) {
   if (variant === "chips") {
     return (
@@ -62,6 +68,7 @@ export function PlatformList({
         // stays at most two rows for any realistic client count.
         "grid gap-1.5 sm:grid-cols-3 sm:gap-2",
         options.length > 4 ? "grid-cols-3" : "grid-cols-2",
+        oneRowWide && "xl:grid-flow-col xl:auto-cols-fr xl:grid-cols-none",
       )}
     >
       {options.map((option) => (
