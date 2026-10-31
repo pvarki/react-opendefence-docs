@@ -31,7 +31,7 @@
     "userCard": "Käytän Deploy Appia",
     "userCardDesc": "Aloita, kirjaudu ja käytä palveluita kentällä",
     "guidesCard": "Tarvitsen tuoteoppaan",
-    "guidesCardDesc": "Virallisten tuoteintegraatioiden käyttöohjeet - TAK ja muut",
+    "guidesCardDesc": "Vaiheittaiset käyttöohjeet virallisille tuotteille – TAK ja muut",
     "devCard": "Kehitän",
     "devCardDesc": "Arkkitehtuuri, integraatiot, API-spec, ohjeet",
     "continueReading": "Jatka lukemista",
@@ -46,16 +46,16 @@
     "finish": "Aloita",
     "revisit": "Tietoa sivustosta",
     "slide1": {
-      "title": "Tervetuloa OpenDefenceen",
+      "title": "Tervetuloa OpenDefencen ohjeisiin",
       "body": "OpenDefence on Puolustusvoimia palveleva avoimen lähdekoodin projekti, jonka tavoitteena on tarjota multidomain-operaatioihin kykeneviä johtamisjärjestelmäpalveluita sotilaille helposti ja yhteentoimivasti. Täältä löydät ohjeet OpenDefence-projektin käyttöön, integrointiin ja kehittämiseen."
     },
     "slide2": {
       "title": "Sotilaan alusta",
-      "body": "OpenDefence **Deploy Appilla** otat hajautetut palvelut käyttöön sotilaille yhtenä kokonaisuutena. Taistelijat pääsevät käyttämään mm. TAK:ia, Matrixia ja videonjakoa yhdestä selkeästä käyttöliittymästä. Näin mahdollistuu moderni ja taistelunkestävä eli helppo JOJÄ. Deploy App hyväksyy itseensä uusia tuotteita - rakenna integraatio tuotteellesi toimittaaksesi sen sotilaille."
+      "body": "OpenDefence Deploy Appilla otat hajautetut palvelut käyttöön sotilaille yhtenä kokonaisuutena. Taistelijat pääsevät käyttämään mm. TAK:ia, Matrixia ja videonjakoa yhdestä selkeästä käyttöliittymästä. Näin mahdollistuu moderni ja taistelunkestävä johtamisjärjestelmä. Integroi oma tuotteesi Deploy Appiin, niin saat sen sotilaiden käyttöön."
     },
     "slide3": {
       "title": "Oppaat käyttöön tai kehitykseen",
-      "body": "Tämä ohjeisivusto sisältää loppukäyttäjien oppaita sekä dokumentaatiota OpenDefence-projektin kehittämisestä vapaaehtoisen maanpuolustuksen merkeissä kiinnostuneille, tuotteidensa integroinnista kiinnostuneille sekä näiden palveluiden operoijille Tervetuloa OpenDefenceen — teknologia maanpuolustuksen puolesta.",
+      "body": "Tämä ohjeisivusto sisältää oppaita loppukäyttäjille sekä dokumentaatiota projektin kehittäjille, tuotteiden integroijille ja palveluiden ylläpitäjille. Tervetuloa OpenDefenceen — teknologia maanpuolustuksen puolesta.",
       "contact": "Yhteystieto:"
     }
   },
@@ -157,7 +157,7 @@
     "next": "Seuraava",
     "startReading": "Aloita lukeminen",
     "offline": "Offline",
-    "endOfBook": "Sait valmiiksi: {{book}}",
+    "endOfBook": "Luit loppuun: {{book}}",
     "notTranslated": {
       "en": "Tätä sivua ei ole vielä suomeksi. Näytetään englanninkielinen versio.",
       "sv": "Tätä sivua ei ole vielä suomeksi. Näytetään ruotsinkielinen versio."
@@ -204,7 +204,7 @@
     "zoomReset": "Palauta zoomaus"
   },
   "devNav": {
-    "title": "Kehittäjän dokumentaatio",
+    "title": "Kehittäjädokumentaatio",
     "start": "Aloita tästä",
     "platform": "Alusta",
     "core": "Ydin",
@@ -280,9 +280,9 @@
     "wantTitle": "Haluatko tuotteesi tänne?",
     "wantBody": "OpenDefencen tavoitteena on tehdä Deploy Appista aito rajapinta sovellusten jakamiseen sotilaille. Se toimii, kun voit haarauttaa ytimemme, rakentaa integraatiosi itse ja sitten joko ottaa meihin yhteyttä virallisen integraatiostatuksen saamiseksi tai sopia toimittavasi sovelluksesi puolustusvoima-asiakkaallesi avoimen lähdekoodin teknologiallamme.",
     "products": {
-      "tak": "Kehittäjänä TAK Product Center (TPC), Yhdysvaltain hallituksen organisaatio. OpenDefencen kehittämä integraatio yhdistää ATAK-käyttäjäsi palvelimeen kaksoisnapautuksen itsepalvelulla — kyllä, paina kahta painiketta ja olet sisällä.",
+      "tak": "Kehittäjänä TAK Product Center (TPC), Yhdysvaltain hallituksen organisaatio. OpenDefencen kehittämä integraatio yhdistää ATAK-käyttäjäsi palvelimeen kahden napautuksen itsepalvelulla — kyllä, paina kahta painiketta ja olet sisällä.",
       "matrix": "Avoin, hajautettu viestintäprotokolla Matrix.org-säätiöltä; asiakasohjelmistoja kuten Element X kehittää edelläkävijänä New Vector Ltd. OpenDefencen kehittämä integraatio antaa käyttäjien yhdistää Element X -asiakkaansa Deploy Appin mukana tulevaan Synapse-palvelimeen yksinkertaisesti liittämällä palvelinosoitteen.",
-      "mediamtx": "Reaaliaikainen mediapalvelin: videonjakopalvelu, jolla voit nopeasti jakaa videota esimerkiksi drone-operaattoreilta. OpenDefencen kehittämä integraatio antaa sinun aloittaa striimaamisen OpenTAK ICU- ja UAS Tool -sovelluksillasi napauttamalla tuonti-asetukset-painiketta kerran.",
+      "mediamtx": "Reaaliaikainen mediapalvelin: videonjakopalvelu, jolla voit nopeasti jakaa videota esimerkiksi drone-operaattoreilta. OpenDefencen kehittämä integraatio antaa sinun aloittaa striimaamisen OpenTAK ICU- ja UAS Tool -sovelluksillasi napauttamalla kerran asetusten tuontipainiketta.",
       "cryptpad": "XWiki SAS:n kehittämä CryptPad on päästä-päähän-salattu yhteistyö- ja tiedostonjakopaketti, jota käyttää muun muassa Euroopan komissio."
     }
   },
@@ -320,15 +320,15 @@
   "guideFooter": {
     "maintainedBy": "Tämän integraation kehittää ja ylläpitää OpenDefence.",
     "tak-guide": {
-      "lead": "TAK (Team Awareness Kit) on Yhdysvaltain hallituksen taistelutestattu tilannekuva-alusta, joka antaa sotilaille jaetun operatiivisen kuvan Android-, iOS- ja Windows-laitteiden välillä kentällä.",
+      "lead": "TAK (Team Awareness Kit) on Yhdysvaltain hallituksen taistelutestattu tilannekuva-alusta, joka antaa sotilaille yhteisen tilannekuvan Android-, iOS- ja Windows-laitteiden välillä kentällä.",
       "core": "OpenDefencen TAK-integraatio mahdollistaa TAK-palvelinten käyttöönoton Deploy Appin kautta ja tuo vaiheittaiset ohjeet suoraan sotilaiden käyttöön — kattaen asiakasohjelmiston asennuksen, palvelimen konfiguraation ja päivittäisen käytön.",
-      "goal1Title": "Yhteinen operatiivinen kuva",
+      "goal1Title": "Yhteinen tilannekuva",
       "goal1Body": "TAK pitää kaikki yksikön jäsenet samalla kartalla reaaliajassa. OpenDefencen integraatio varmistaa, että palvelinpuoli on asetettu oikein ja yhtenäisesti niin, että kuva on aina tarkka, kun se eniten merkitsee.",
       "goal2Title": "Monialustatuki",
       "goal2Body": "ATAK:lla, iTAK:lla ja WinTAK:lla on kullakin oma asennusprosessinsa. Tämä opas käy läpi jokaisen asiakkaan, jotta yksikään sotilas ei jää jälkeen laitteestaan riippumatta.",
       "goal3Title": "Kenttäkelpoinen laatu",
       "goal3Body": "Jokainen tämän oppaan vaihe on validoitu todellisissa käyttöönottotilanteissa. Mitään ei sisällytetä, ellei se toimi luotettavasti operatiivisissa olosuhteissa.",
-      "copyright": "TAK: © TAK Product Center, U.S. Government organization"
+      "copyright": "TAK: © TAK Product Center, Yhdysvaltain hallituksen organisaatio"
     },
     "mtx-guide": {
       "lead": "MediaMTX on riippuvuudeton mediapalvelin ja välityspalvelin, joka käsittelee RTSP-, RTMP-, HLS-, WebRTC- ja SRT-striimejä — suunniteltu viiveherkkään videoon kenttäolosuhteissa.",
@@ -342,7 +342,7 @@
       "copyright": "MediaMTX: © aler9"
     },
     "matrix-guide": {
-      "lead": "Matrix on avoin standardi turvalliseen, hajautettuun reaaliaikaiseen viestintään — tarjoten sotilaille päästä-päähän-salatun viestinnän ja äänen, joka toimii organisaatiorajojen yli ilman keskitettyä auktoriteettia.",
+      "lead": "Matrix on avoin standardi turvalliseen, hajautettuun reaaliaikaiseen viestintään — tarjoten sotilaille päästä-päähän-salatun viestinnän ja äänen, joka toimii organisaatiorajojen yli ilman keskitettyä hallintaa.",
       "core": "OpenDefencen Matrix-integraatio ottaa käyttöön Synapse-kotipalvelimen Deploy Appin kautta ja opastaa käyttäjät asiakasohjelmiston asennukseen, huoneiden luomiseen ja palvelinten väliseen yhdistämiseen yksikköjenvälistä viestintää varten.",
       "goal1Title": "Oma viestintä",
       "goal1Body": "Yksikkösi viestit pysyvät omalla palvelimellasi. Yhdistäminen mahdollistaa viestinnän muiden yksiköiden palvelimien kanssa ilman, että yksikään organisaatio hallitsee koko verkostoa.",
@@ -355,7 +355,7 @@
     "deploy-app": {
       "lead": "Deploy App on OpenDefence-pinon ydin — rajapinta, jonka kautta operaattorit jakavat palveluita sotilaille ja jonka kautta sotilaat pääsevät kaikkeen yhdestä tutusta paikasta.",
       "core": "Tämä opas kattaa Deploy Appin molemmilta puolilta: sotilaat, jotka opettelevat pääsyn saamista ja tiliensä hallintaa, sekä operaattorit, jotka hallitsevat käyttäjiä, rooleja ja palvelinkäyttöönottoja yksikössään.",
-      "goal1Title": "Ei koulutusta tarvita",
+      "goal1Title": "Ei vaadi koulutusta",
       "goal1Body": "Ensimmäistä kertaa Deploy Appia käyttävän sotilaan tulisi pystyä kirjautumaan sisään ja pääsemään yksikkönsä palveluihin ilman manuaalin lukemista. Jokainen toiminto on suunniteltu tämä vaatimus mielessä.",
       "goal2Title": "Operaattorin hallinta",
       "goal2Body": "Operaattorit saavat tarkan hallinnan siitä, kuka pääsee mihinkin, auditoinnin ja roolinhallinnan avulla — vastaten sotilaallisen toiminnan vastuullisuusvaatimuksiin.",
