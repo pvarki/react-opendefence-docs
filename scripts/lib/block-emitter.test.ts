@@ -282,6 +282,31 @@ describe("emitBlocks canonical slidesets", () => {
     expect(slideset.slides[1].layout).toBe("text");
   });
 
+  it("renders trailing-space hard breaks, not before a slide caption", async () => {
+    const input = [
+      "META: slides",
+      "",
+      "Types:  ",
+      "• Map Items",
+      "",
+      "## Step one",
+      "",
+      "![s](/img/1.webp)  ",
+      "Caption line  ",
+      "second line",
+      "",
+    ].join("\n");
+    const { blocks } = await emitBlocks(input, ctx());
+    const intro = blocks[0];
+    if (intro.type !== "html") throw new Error("expected html block");
+    expect(intro.html).toBe("<p>Types:<br>\n• Map Items</p>");
+    const slideset = blocks[1];
+    if (slideset.type !== "slideset") throw new Error("expected slideset");
+    expect(slideset.slides[0].html).toBe(
+      "<p>Caption line<br>\nsecond line</p>",
+    );
+  });
+
   it("does not collect consumed step headings into the TOC", async () => {
     const input = ["META: slides", "## Hidden step", "Body."].join("\n");
     const { headings } = await emitBlocks(input, ctx());
