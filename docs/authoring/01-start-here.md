@@ -52,6 +52,24 @@ in depth-first order. It still appears — just not as a sub-sub-menu.
 
 So don't build deep trees. Two levels is the sweet spot.
 
+## Which marker? Show, mark or hide
+
+| The material is…                                              | Do this                                         |
+| ------------------------------------------------------------- | ----------------------------------------------- |
+| ready                                                         | nothing                                         |
+| usable, but needs final polish                                | mark the page under development                 |
+| a whole chapter or platform that is usable but not finished   | mark its organizer under development            |
+| a whole book that is so unfinished readers must be told       | mark the book's language root under development |
+| not fit to read yet (a few sentences, an idea, wrong content) | hide the page                                   |
+
+Mark a whole book only when the book as a whole is unfinished. If the
+visible pages are ready, the book needs no marker, even when some of
+its pages are hidden or marked.
+
+All draft banners come from these markers in Outline. Nothing is set
+in the site's code, so changing a marker never needs a developer, only
+the next sync.
+
 ## Not finished yet? Mark it
 
 Put this exact phrase anywhere in the document body:
@@ -77,6 +95,30 @@ So mark pages that readers can already use but that are not finished.
 A page that is not fit to read yet should be hidden instead (next
 section).
 
+### A whole chapter, platform or book
+
+The same marker works on an organizer doc too, and then covers every
+page under it:
+
+- **Chapter or section organizer** (e.g. `Supported Plugins`): every
+  page in that chapter shows the banner.
+- **Platform or client organizer** (e.g. `iTAK`): every page of that
+  client shows the banner, the book cover shows it while that client
+  is selected, and the platform selector shows an "Incomplete" tag.
+- **Language root** (`en`, `fi` or `sv` at the top of the collection):
+  the whole book in that language. The cover and every page show the
+  banner. Mark each language separately; marking `sv` only flags the
+  Swedish book.
+
+Write the marker as its own line in the organizer's body. Only
+organizers down to chapter level are read: a sub-organizer nested
+inside a chapter is flattened into it (see
+[Keep nesting shallow](#keep-nesting-shallow)), and its marker is
+ignored. Organizer
+markers are read on every sync, so adding or removing one takes effect
+on the next sync even when no page changed. Books without language
+roots (the developer books) can only be marked page by page.
+
 ## Not meant for readers? Hide it
 
 Put this exact phrase anywhere in the document body, a code block
@@ -87,7 +129,8 @@ included:
 ```
 
 The page is then left out of the site completely: no sidebar entry,
-no page, no search result. Use it for old, badly unfinished or wrong
+no page, no search result. Hidden pages never affect the draft banner
+of the pages around them, or of the book. Use it for old, badly unfinished or wrong
 content. The same rules as above apply: English in every language,
 any letter case, and a translation such as
 `(Tätä välilehteä ei pitäisi näyttää)` hides nothing and gets a
@@ -118,8 +161,9 @@ Android` are detected automatically. Use the marker when the name alone
   chapter, then `USING ATAK FEATURES` holding Basic Features, Advanced
   Features and Supported Plugins, then `USAGE BY ROLE`.
 - `(This tab is under development)` — on a client organizer this shows an
-  "Under development" tag in the platform selector, telling readers this
-  client still has sections missing compared to the others.
+  "Incomplete" tag in the platform selector and the draft banner on all of
+  the client's pages (see
+  [A whole chapter, platform or book](#a-whole-chapter-platform-or-book)).
 
 Structure under a client: organizers become chapters (or toporgs with the
 marker), loose docs group under the client's own name. Each client is its
