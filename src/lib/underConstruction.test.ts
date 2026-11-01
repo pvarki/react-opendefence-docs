@@ -27,12 +27,16 @@ describe("isPageUnderConstruction", () => {
     ).toBe(true);
   });
 
-  it("flags every page in the power-user wikis and the MTX guide", () => {
+  it("flags every page in the power-user wikis", () => {
     expect(isPageUnderConstruction({ collection: "wikis/tak" })).toBe(true);
     expect(isPageUnderConstruction({ collection: "wikis/mtx" })).toBe(true);
+  });
+
+  it("does not flag the MTX guide, whose visible pages are finished", () => {
     expect(isPageUnderConstruction({ collection: "guides/mtx-guide" })).toBe(
-      true,
+      false,
     );
+    expect(isCoverUnderConstruction("guides/mtx-guide")).toBe(false);
   });
 
   it("flags only the SUPPORTED PLUGINS chapters in the TAK guide", () => {
