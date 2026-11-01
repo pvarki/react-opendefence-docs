@@ -2,6 +2,7 @@ import { describe, expect, it } from "vitest";
 import {
   OutlineApiError,
   isAccessError,
+  isAuthError,
   isPermanentError,
 } from "./outline-api";
 
@@ -29,6 +30,21 @@ describe("isAccessError", () => {
     expect(new OutlineApiError(403, "Forbidden", "body").message).toBe(
       "Outline API error: 403 Forbidden - body",
     );
+  });
+});
+
+describe("isAuthError", () => {
+  it("is true for 401 and 403 from Outline", () => {
+    for (const status of [401, 403]) {
+      expect(isAuthError(new OutlineApiError(status, "x", ""))).toBe(true);
+    }
+  });
+
+  it("is false for 404, 5xx and other errors", () => {
+    for (const status of [404, 500]) {
+      expect(isAuthError(new OutlineApiError(status, "x", ""))).toBe(false);
+    }
+    expect(isAuthError(new Error("fetch failed"))).toBe(false);
   });
 });
 

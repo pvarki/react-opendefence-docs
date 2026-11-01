@@ -84,9 +84,13 @@ as soon as it happens. A permission or not-found error (4xx) is not
 retried, because retrying won't change the answer. Server errors
 (5xx) are retried a few times with a growing wait (about a minute in
 all), and the sync then tries any still-failing pages twice more at
-the end of the run. If no page could be downloaded at all, the run
-fails with the errors instead of opening a PR. That almost always
-means the API key or the bot user lost access.
+the end of the run. If no page could be downloaded and every failure
+was a key or rights error (401/403), or at least three downloads were
+tried and all of them failed, the run fails with the errors instead
+of opening a PR. That almost always means the API key or the bot user
+lost access. A quiet week, where nothing changed in Outline, downloads
+nothing anyway, so one or two other failures there only show up under
+**Failed pages**.
 
 ## Who merges, and when it deploys
 

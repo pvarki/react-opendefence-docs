@@ -13,7 +13,7 @@ import {
   buildSlugRouteMap,
   addCarriedOverRoutes,
   groupErrorMessages,
-  syncDownloadedNothing,
+  syncShouldFail,
   staleSlugs,
   runWithConcurrency,
   writeJson,
@@ -353,10 +353,38 @@ describe("groupErrorMessages", () => {
   });
 });
 
-describe("syncDownloadedNothing", () => {
-  it("is true only when pages failed and none downloaded", () => {
-    expect(syncDownloadedNothing(0, 3)).toBe(true);
-    expect(syncDownloadedNothing(1, 3)).toBe(false);
-    expect(syncDownloadedNothing(0, 0)).toBe(false);
+describe("syncShouldFail", () => {
+  it("fails when every failure is a key or rights error", () => {
+    expect(syncShouldFail({ processed: 0, failed: 1, authFailed: 1 })).toBe(
+      true,
+    );
+    expect(syncShouldFail({ processed: 0, failed: 40, authFailed: 40 })).toBe(
+      true,
+    );
+  });
+
+  it("fails when several downloads were tried and all failed", () => {
+    expect(syncShouldFail({ processed: 0, failed: 3, authFailed: 0 })).toBe(
+      true,
+    );
+  });
+
+  it("does not fail a quiet run over one or two stray failures", () => {
+    // Nothing changed in Outline, then one 5xx or a page deleted mid-run.
+    expect(syncShouldFail({ processed: 0, failed: 1, authFailed: 0 })).toBe(
+      false,
+    );
+    expect(syncShouldFail({ processed: 0, failed: 2, authFailed: 1 })).toBe(
+      false,
+    );
+  });
+
+  it("does not fail when something was downloaded or nothing failed", () => {
+    expect(syncShouldFail({ processed: 1, failed: 5, authFailed: 5 })).toBe(
+      false,
+    );
+    expect(syncShouldFail({ processed: 0, failed: 0, authFailed: 0 })).toBe(
+      false,
+    );
   });
 });

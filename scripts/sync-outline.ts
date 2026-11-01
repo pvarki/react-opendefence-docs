@@ -23,6 +23,7 @@ import chalk from "chalk";
 import {
   createOutlineClient,
   isAccessError,
+  isAuthError,
   isPermanentError,
 } from "./lib/outline-api";
 import { clearSyncWarnings, writeSyncWarnings } from "./lib/sync-warnings";
@@ -70,7 +71,7 @@ import {
   readJsonIfExists,
   listJsonSlugs,
   groupErrorMessages,
-  syncDownloadedNothing,
+  syncShouldFail,
   type SyncArgs,
   type BookEntryInput,
   type DocSyncStatus,
@@ -153,6 +154,9 @@ function translationsFilePath(locale: Locale) {
 
 const documentInfoCache = new Map<string, DocumentInfo>();
 
+/** Why documents.info failed, by doc id (to tell key errors from others). */
+const documentInfoErrors = new Map<string, unknown>();
+
 /** Organizer body markers, fetched once per doc per run. */
 const organizerMarkersCache = new Map<string, OrganizerMarkers>();
 
@@ -163,9 +167,14 @@ async function getCachedDocumentInfo(
 ): Promise<DocumentInfo> {
   const cached = documentInfoCache.get(docId);
   if (cached) return cached;
-  const info = await client.getDocumentInfo(docId);
-  documentInfoCache.set(docId, info);
-  return info;
+  try {
+    const info = await client.getDocumentInfo(docId);
+    documentInfoCache.set(docId, info);
+    return info;
+  } catch (error) {
+    documentInfoErrors.set(docId, error);
+    throw error;
+  }
 }
 
 // CI-aware logging helpers
@@ -225,6 +234,8 @@ interface SyncStats {
   endTime?: number;
   successfulSyncs: number;
   failedSyncs: number;
+  /** How many of `failedSyncs` were key or rights errors (401/403). */
+  authFailedSyncs: number;
   skippedSyncs: number;
   totalImages: number;
   deletedPages: number;
@@ -364,6 +375,7 @@ async function syncCollection(
     documentsSkipped: 0,
     imagesSaved: 0,
     errors: [],
+    authErrors: 0,
     warnings: [],
   };
   const books = new Map<Locale, BookSyncResult>();
@@ -525,6 +537,7 @@ async function syncCollection(
         // previous manifest entry (if any) is preserved and retried next run.
         docStatus.set(ref.docId, "failed");
         stats.errors.push(`${ref.title}: documents.info failed`);
+        if (isAuthError(documentInfoErrors.get(ref.docId))) stats.authErrors++;
         continue;
       }
       const previous = prevById.get(ref.docId);
@@ -675,6 +688,7 @@ async function syncCollection(
             if (isPermanentError(settled.reason)) {
               docStatus.set(pendingDocs[i].docId, "failed");
               stats.errors.push(`${pendingDocs[i].title}: ${message}`);
+              if (isAuthError(settled.reason)) stats.authErrors++;
               continue;
             }
             passFailedDocs.push(pendingDocs[i]);
@@ -900,6 +914,7 @@ async function main() {
     startTime: Date.now(),
     successfulSyncs: 0,
     failedSyncs: 0,
+    authFailedSyncs: 0,
     skippedSyncs: 0,
     totalImages: 0,
     deletedPages: 0,
@@ -1122,6 +1137,7 @@ async function main() {
       stats.successfulSyncs += collectionStats.documentsProcessed;
       stats.skippedSyncs += collectionStats.documentsSkipped;
       stats.failedSyncs += collectionStats.errors.length;
+      stats.authFailedSyncs += collectionStats.authErrors;
       stats.totalImages += collectionStats.imagesSaved;
 
       for (const [locale, book] of books) {
@@ -1142,6 +1158,7 @@ async function main() {
         `\n${chalk.red("✖")} Failed to sync ${collection.label}: ${message}`,
       );
       stats.failedSyncs++;
+      if (isAuthError(error)) stats.authFailedSyncs++;
     }
   }
 
@@ -1156,9 +1173,16 @@ async function main() {
     });
   }
 
-  if (syncDownloadedNothing(stats.successfulSyncs, stats.failedSyncs)) {
-    // Every page this run tried was refused: fail before writing anything,
-    // so no sync PR opens and the run's log shows the reason.
+  if (
+    syncShouldFail({
+      processed: stats.successfulSyncs,
+      failed: stats.failedSyncs,
+      authFailed: stats.authFailedSyncs,
+    })
+  ) {
+    // The key or the bot's rights are broken, or every one of several
+    // downloads failed: fail before writing anything, so no sync PR opens
+    // and the run's log shows the reason.
     const errors = stats.collections.flatMap((c) =>
       c.errors.map((e) => e.slice(e.indexOf(": ") + 2)),
     );
