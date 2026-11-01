@@ -26,8 +26,6 @@ const SCOPES: Scope[] = [
   // Power-user wikis — the whole books and everything in them.
   { collection: "wikis/tak" },
   { collection: "wikis/mtx" },
-  // MTX guide — the whole book.
-  { collection: "guides/mtx-guide" },
   // TAK guide — the iOS guides (iTAK + TAK Tracker - Apple) are the only
   // ios-platform clients, so this flags exactly those two.
   { collection: "guides/tak-guide", platform: "ios" },
