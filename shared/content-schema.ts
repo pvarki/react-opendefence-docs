@@ -246,6 +246,8 @@ export const ManifestPageSchema = z.object({
   /** Chapter (Outline organizer doc) this page belongs to. */
   chapterId: z.string().optional(),
   chapterLabel: z.string().optional(),
+  /** The book, or an organizer above the page, carries the under-development marker. */
+  underDevelopment: z.boolean().optional(),
 });
 export type ManifestPage = z.infer<typeof ManifestPageSchema>;
 
@@ -257,6 +259,8 @@ export const ManifestCollectionSchema = z.object({
   order: z.number().int().nonnegative(),
   /** Clients this book is authored for (absent = platform-agnostic book). */
   clients: z.array(ClientInfoSchema).optional(),
+  /** This locale's root doc carries the under-development marker: the whole book. */
+  underDevelopment: z.boolean().optional(),
 });
 export type ManifestCollection = z.infer<typeof ManifestCollectionSchema>;
 
