@@ -8,8 +8,9 @@ const HAZARD_STRIPES =
 
 /**
  * Non-blocking notice shown above content that hasn't met the quality bar yet.
- * Render it when isPageUnderConstruction / isCoverUnderConstruction is true,
- * or when the page carries the draft marker (PageDoc.underDevelopment).
+ * Render it when the page, an organizer above it or the book carries the
+ * draft marker in Outline (PageDoc / ManifestPage / ManifestCollection
+ * underDevelopment, or the active client's).
  * `compact` is for book covers, where Start reading must stay above the fold.
  */
 export function UnderConstructionBanner({
