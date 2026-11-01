@@ -31,7 +31,6 @@ import {
   resolveSplat,
 } from "@/lib/content/neighbors";
 import { downloadCollectionImages } from "@/lib/pwa/offline-download";
-import { isCoverUnderConstruction } from "@/lib/underConstruction";
 import { UnderConstructionBanner } from "@/components/reader/UnderConstructionBanner";
 import { setClientForBook, setPlatform, useReadingView } from "@/lib/platform";
 import { usePlatformPicker } from "@/lib/usePlatformPicker";
@@ -274,9 +273,9 @@ function BookCover({
       />
       <div className={cn(PAGE_FRAME, "flex-1 pt-4 pb-10 md:pt-6")}>
         <div className="max-w-3xl">
-          {(isCoverUnderConstruction(data.collection, active?.platform) ||
-            collection?.underDevelopment ||
-            active?.underDevelopment) && <UnderConstructionBanner compact />}
+          {(collection?.underDevelopment || active?.underDevelopment) && (
+            <UnderConstructionBanner compact />
+          )}
           {intro && (
             <p className="text-sm leading-relaxed text-foreground md:text-base">
               {t(`${intro}.lead`)}
