@@ -47,6 +47,17 @@ export function isAccessError(error: unknown): boolean {
 }
 
 /**
+ * True when Outline rejected the API key (401) or the bot lacks the rights
+ * (403). These point at the key or the bot user, not at one page.
+ */
+export function isAuthError(error: unknown): boolean {
+  return (
+    error instanceof OutlineApiError &&
+    (error.status === 401 || error.status === 403)
+  );
+}
+
+/**
  * True for a client error that waiting will not fix: a 4xx answer other
  * than 408 (timeout) and 429 (rate limit, already retried by the fetcher).
  * A bad key (401), missing rights (403) or a gone document (404) fail the

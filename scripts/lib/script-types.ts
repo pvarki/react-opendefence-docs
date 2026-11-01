@@ -142,6 +142,8 @@ export interface CollectionSyncStats {
   documentsSkipped: number;
   imagesSaved: number;
   errors: string[];
+  /** How many of `errors` were key or rights errors (401/403). */
+  authErrors: number;
   warnings: string[];
 }
 

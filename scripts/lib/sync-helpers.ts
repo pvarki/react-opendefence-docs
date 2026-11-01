@@ -432,10 +432,25 @@ export function groupErrorMessages(messages: Iterable<string>): string[] {
     );
 }
 
+/** Fewest failed downloads that fail a run on their own (see below). */
+export const MIN_FAILURES_TO_FAIL_SYNC = 3;
+
 /**
- * A run that downloaded nothing but had failures should fail instead of
- * opening a sync PR that changes nothing: every page it tried was refused.
+ * True when a run that downloaded nothing should fail instead of opening a
+ * sync PR: either every failure was a key or rights error (401/403), or the
+ * run tried several downloads and all of them failed. A quiet incremental
+ * run downloads nothing because nothing changed, so one stray failure there
+ * (a 5xx, a page deleted mid-run, one collection) must not fail the run.
  */
-export function syncDownloadedNothing(processed: number, failed: number) {
-  return processed === 0 && failed > 0;
+export function syncShouldFail({
+  processed,
+  failed,
+  authFailed,
+}: {
+  processed: number;
+  failed: number;
+  authFailed: number;
+}) {
+  if (processed > 0 || failed === 0) return false;
+  return authFailed === failed || failed >= MIN_FAILURES_TO_FAIL_SYNC;
 }
