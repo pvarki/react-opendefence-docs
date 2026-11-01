@@ -190,6 +190,7 @@ export function buildBookManifestPages(
       ...(ref.chapterId
         ? { chapterId: ref.chapterId, chapterLabel: ref.chapterLabel }
         : {}),
+      ...(ref.underDevelopment ? { underDevelopment: true } : {}),
     });
   }
 
@@ -210,6 +211,8 @@ export function buildLocaleManifest(opts: {
   syncedPages: ReadonlyMap<string, ManifestPage[]>;
   /** collection slug -> clients detected this run. */
   syncedClients?: ReadonlyMap<string, ClientInfo[]>;
+  /** Collection slugs whose locale root carries the under-development marker this run. */
+  syncedBookDrafts?: ReadonlySet<string>;
   /**
    * EN (canonical) clients — used as fallback when this locale has none yet.
    * Ensures the platform selector stays visible for untranslated locales
@@ -224,6 +227,7 @@ export function buildLocaleManifest(opts: {
     collections,
     syncedPages,
     syncedClients,
+    syncedBookDrafts,
     enClients,
     previous,
     generatedAt,
@@ -246,9 +250,15 @@ export function buildLocaleManifest(opts: {
     .filter((c) => present.has(c.slug))
     .map((c, order) => {
       // Fresh client info when synced; carried over from previous otherwise.
+      const previousEntry = previous?.collections.find(
+        (pc) => pc.slug === c.slug,
+      );
       const localeClients = syncedPages.has(c.slug)
         ? syncedClients?.get(c.slug)
-        : previous?.collections.find((pc) => pc.slug === c.slug)?.clients;
+        : previousEntry?.clients;
+      const underDevelopment = syncedPages.has(c.slug)
+        ? !!syncedBookDrafts?.has(c.slug)
+        : !!previousEntry?.underDevelopment;
       // Fall back to EN clients when this locale has none — the book is still
       // platform-aware, translations for those clients just aren't posted yet.
       const clients =
@@ -262,6 +272,7 @@ export function buildLocaleManifest(opts: {
         section: c.section,
         order,
         ...(clients && clients.length > 0 ? { clients } : {}),
+        ...(underDevelopment ? { underDevelopment: true } : {}),
       };
     });
 

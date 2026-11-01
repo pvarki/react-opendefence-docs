@@ -363,6 +363,8 @@ interface BookSyncResult {
   translationLinks: Map<string, Partial<Record<Locale, string>>>;
   /** Clients this book is authored for (under-dev flag from organizer body). */
   clients: ClientInfo[];
+  /** The locale root doc carries the under-development marker. */
+  underDevelopment: boolean;
 }
 
 /** Pages carrying the hide marker, found before any collection syncs. */
@@ -419,6 +421,7 @@ async function syncCollection(
         processedSlugs: new Set(),
         translationLinks: new Map(),
         clients: [],
+        underDevelopment: false,
       });
       continue;
     }
@@ -447,6 +450,12 @@ async function syncCollection(
       }
     };
     collectOrganizers(navChildren, 1);
+    // The locale root doc's own body can mark the whole book (a noLocale
+    // collection's root is synthetic, there is no doc to read).
+    if (!collection.noLocale) {
+      organizerIds.push(localeRoot.id);
+      organizerTitles.set(localeRoot.id, localeRoot.title);
+    }
 
     const markerSpinner = createSpinner(
       `Reading organizer markers for ${locale} (${organizerIds.length} organizers)`,
@@ -502,8 +511,10 @@ async function syncCollection(
     const platformsContainerIds = new Set<string>();
     const osByDocId = new Map<string, Platform>();
     const isProductDocIds = new Set<string>();
+    const underDevelopmentIds = new Set<string>();
     for (const docId of organizerIds) {
       const markers = organizerMarkersCache.get(docId);
+      if (markers?.underDevelopment) underDevelopmentIds.add(docId);
       if (markers?.toporg) toporgIds.add(docId);
       if (markers?.platform) platformByDocId.set(docId, markers.platform);
       if (markers?.platformsContainer) platformsContainerIds.add(docId);
@@ -523,6 +534,8 @@ async function syncCollection(
       platformsContainerIds,
       osByDocId,
       isProductDocIds,
+      underDevelopmentIds,
+      bookUnderDevelopment: underDevelopmentIds.has(localeRoot.id),
     });
     await writeJson(
       sidebarFilePath(locale, collection.slug),
@@ -781,7 +794,13 @@ async function syncCollection(
       }
     }
 
-    books.set(locale, { entries, processedSlugs, translationLinks, clients });
+    books.set(locale, {
+      entries,
+      processedSlugs,
+      translationLinks,
+      clients,
+      underDevelopment: underDevelopmentIds.has(localeRoot.id),
+    });
   }
 
   stats.duration = timer.elapsed();
@@ -1151,6 +1170,7 @@ async function main() {
   // Second pass: sync each collection (using cached structures)
   const syncedBooks = new Map<Locale, Map<string, ManifestPage[]>>();
   const syncedClients = new Map<Locale, Map<string, ClientInfo[]>>();
+  const syncedBookDrafts = new Map<Locale, Set<string>>();
   const processedSlugsByLocale = new Map<Locale, Set<string>>();
   const translationLinksByLocale = new Map<
     Locale,
@@ -1159,6 +1179,7 @@ async function main() {
   for (const locale of LOCALES) {
     syncedBooks.set(locale, new Map());
     syncedClients.set(locale, new Map());
+    syncedBookDrafts.set(locale, new Set());
     processedSlugsByLocale.set(locale, new Set());
     translationLinksByLocale.set(locale, new Map());
   }
@@ -1185,6 +1206,8 @@ async function main() {
       for (const [locale, book] of books) {
         syncedBooks.get(locale)!.set(collection.slug, book.entries);
         syncedClients.get(locale)!.set(collection.slug, book.clients);
+        if (book.underDevelopment)
+          syncedBookDrafts.get(locale)!.add(collection.slug);
         const processedSlugs = processedSlugsByLocale.get(locale)!;
         for (const slug of book.processedSlugs) processedSlugs.add(slug);
         const links = translationLinksByLocale.get(locale)!;
@@ -1251,6 +1274,7 @@ async function main() {
         collections: ALL_COLLECTIONS,
         syncedPages: syncedBooks.get(locale)!,
         syncedClients: syncedClients.get(locale)!,
+        syncedBookDrafts: syncedBookDrafts.get(locale)!,
         enClients: locale !== DEFAULT_LOCALE ? enClientsMap : undefined,
         previous: previousManifests.get(locale),
         generatedAt,
