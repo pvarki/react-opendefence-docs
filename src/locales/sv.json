@@ -47,11 +47,11 @@
     "revisit": "Om webbplatsen",
     "slide1": {
       "title": "Välkommen till OpenDefence Docs",
-      "body": "OpenDefence är ett FDF-tjänande nationellt försvarsprojekt med öppen källkod som syftar till att erbjuda C2-tjänster med kapacitet för operationer i flera domäner till soldater på ett enkelt och interoperabelt sätt. Här hittar du dokumentation för att använda, integrera och utveckla det."
+      "body": "OpenDefence är ett försvarsprojekt med öppen källkod som tjänar Försvarsmaktens och de allierades försvarsbehov. Det syftar till att erbjuda C2-tjänster med kapacitet för operationer i flera domäner till soldater på ett enkelt och interoperabelt sätt. Här hittar du dokumentation för att använda, integrera och utveckla det."
     },
     "slide2": {
       "title": "Soldatens plattform",
-      "body": "Med OpenDefence Deploy App kan du driftsätta decentraliserade tjänster till soldater som en enhet. Leverera TAK, Matrix och videoströmning för att möjliggöra ett modernt, stridståligt C2. Integrera din produkt med det för att leverera den till soldater."
+      "body": "Med OpenDefence Deploy App kan du driftsätta decentraliserade tjänster till soldater som en helhet. Leverera TAK, Matrix och videoströmning för att möjliggöra ett modernt, stridståligt C2. Integrera din produkt med det för att leverera den till soldater."
     },
     "slide3": {
       "title": "Guider att använda eller arbeta med",
@@ -134,10 +134,10 @@
       "lead": "Med Deploy App kan din organisation sätta upp och driva en komplett uppsättning interoperabla tjänster för soldater. Det är permanent öppen källkod, och dess syfte är att stödja FDF, den nationella säkerheten och de allierade.",
       "q1": {
         "prompt": "Är du…",
-        "a1": "Utvärderar Deploy App för min enhet eller organisation",
+        "a1": "Utvärderar Deploy App för mitt förband eller min organisation",
         "a2": "Ansvarar för IT eller drift och redo att driftsätta det",
         "a3": "Bara utforskar vad drift innebär",
-        "a1Body": "Deploy App är byggt för att sättas upp av en verklig organisation för verkliga soldater. Det buntar ihop officiella produktintegrationer så att du kan leverera TAK, Matrix, video och mer som en enhet. Börja med operatörens snabbstart för att se vad drift innebär.",
+        "a1Body": "Deploy App är byggt för att sättas upp av en verklig organisation för verkliga soldater. Det buntar ihop officiella produktintegrationer så att du kan leverera TAK, Matrix, video och mer som en helhet. Börja med operatörens snabbstart för att se vad drift innebär.",
         "a2Body": "Du kan driftsätta Deploy App med Docker Compose eller på Kubernetes, med day 2-drift och loggning samt observerbarhet täckt. Kom ihåg att respektera licenserna — de är inte virala. Dokumentationen nedan tar dig från noll till en körande stack.",
         "a3Body": "Deploy App och OpenDefence-stacken är permanent öppen källkod. Dess syfte är att stödja FDF, den nationella säkerheten och de allierade. Ta en titt på hur operatörer driftsätter och driver det — utan åtagande."
       },
@@ -260,7 +260,7 @@
     "tellMore": "Berätta mer",
     "core": "Kärnan i OpenDefence-stacken är Deploy App. För användare beskrivs den enklast som en app för att lägga till och hantera användare; för utvecklare som ett gränssnitt att integrera sin applikation med — för att få den i händerna på soldater.",
     "easyTitle": "Målet: enkel åtkomst",
-    "easyBody": "Deploy App ska ge soldater möjlighet att enkelt få, hantera och dela åtkomst till sin enhets tjänster. Att använda Deploy App och tjänsterna bakom den ska vara så enkelt att ingen särskild utbildning behövs.",
+    "easyBody": "Deploy App ska ge soldater möjlighet att enkelt få, hantera och dela åtkomst till sitt förbands tjänster. Att använda Deploy App och tjänsterna bakom den ska vara så enkelt att ingen särskild utbildning behövs.",
     "interopTitle": "Målet: interoperabilitet",
     "interopBody": "För oss är interoperabilitet inte en marknadsföringsslogan. Deploy App erbjuder apputvecklare ett integrationsgränssnitt: integrera din produkt i Deploy App, så kan Deploy App-operatörer distribuera den till soldater — och den fungerar tillsammans med de andra produkterna.",
     "maintain": "OpenDefence utvecklar och underhåller några officiella produktintegrationer och användarguider, som visas här. Själva produkterna görs av sina ursprungliga utvecklare, till exempel TAK Product Center. Våra officiella produktintegrationer följer våra mål och värderingar.",
@@ -320,10 +320,10 @@
   "guideFooter": {
     "maintainedBy": "Den här integrationen utvecklas och underhålls av OpenDefence.",
     "tak-guide": {
-      "lead": "TAK (Team Awareness Kit) är den amerikanska regeringens stridstestade plattform för lägesuppfattning som ger soldater en gemensam operativ bild på Android-, iOS- och Windows-enheter i fält.",
+      "lead": "TAK (Team Awareness Kit) är den amerikanska regeringens stridstestade plattform för lägesuppfattning som ger soldater en gemensam lägesbild på Android-, iOS- och Windows-enheter i fält.",
       "core": "OpenDefences TAK-integration gör TAK-servrar driftsättningsbara via Deploy App och lägger steg-för-steg-guider direkt i händerna på soldater — med klientinstallation, serverkonfiguration och daglig drift.",
-      "goal1Title": "Gemensam operativ bild",
-      "goal1Body": "TAK håller alla enhetsmedlemmar på samma karta i realtid. OpenDefences integration säkerställer att serversidan är korrekt och konsekvent konfigurerad så att bilden alltid är korrekt när det gäller som mest.",
+      "goal1Title": "Gemensam lägesbild",
+      "goal1Body": "TAK håller alla i förbandet på samma karta i realtid. OpenDefences integration säkerställer att serversidan är korrekt och konsekvent konfigurerad så att bilden alltid är korrekt när det gäller som mest.",
       "goal2Title": "Stöd för flera plattformar",
       "goal2Body": "ATAK, iTAK och WinTAK har var sin installationsprocess. Den här guiden går igenom varje klient så att ingen soldat hamnar efter oavsett enhet.",
       "goal3Title": "Fältduglig kvalitet",
@@ -343,20 +343,20 @@
     },
     "matrix-guide": {
       "lead": "Matrix är en öppen standard för säker, decentraliserad realtidskommunikation — som ger soldater krypterad meddelandehantering och röst som fungerar mellan organisationer utan central kontroll.",
-      "core": "OpenDefences Matrix-integration driftsätter en Synapse-hemserver via Deploy App och vägleder användare genom klientinstallation, rumskapande och federation mellan servrar för kommunikation mellan enheter.",
+      "core": "OpenDefences Matrix-integration driftsätter en Synapse-hemserver via Deploy App och vägleder användare genom klientinstallation, rumskapande och federation mellan servrar för kommunikation mellan förband.",
       "goal1Title": "Suverän meddelandehantering",
-      "goal1Body": "Enhetens meddelanden stannar på er server. Federation låter er kommunicera med andra enheters servrar utan att ge någon organisation kontroll över hela nätverket.",
+      "goal1Body": "Förbandets meddelanden stannar på er server. Federation låter er kommunicera med andra förbands servrar utan att ge någon organisation kontroll över hela nätverket.",
       "goal2Title": "Slutpunkt-till-slutpunkt-kryptering",
       "goal2Body": "Matrix E2EE innebär att inte ens hemserveroperatören kan läsa meddelandeinnehåll. Den här guiden täcker nyckelverifieringsstegen så att krypteringen är genuin i praktiken, inte bara i teorin.",
       "goal3Title": "Motståndskraftig design",
-      "goal3Body": "Matrix-hemservrar är designade för att klara nätverkspartitioner och återansluta graciöst. Driftsättningskonfigurationen är anpassad för den intermittenta anslutning som är typisk i fältoperationer.",
+      "goal3Body": "Matrix-hemservrar är designade för att klara nätverkspartitioner och återansluta smidigt. Driftsättningskonfigurationen är anpassad för den intermittenta anslutning som är typisk i fältoperationer.",
       "copyright": "Matrix: © The Matrix.org Foundation"
     },
     "deploy-app": {
       "lead": "Deploy App är hjärtat i OpenDefence-stacken — gränssnittet genom vilket operatörer driftsätter tjänster till soldater och genom vilket soldater når allt från ett enda välbekant ställe.",
-      "core": "Den här guiden täcker Deploy App från båda sidor: soldater som lär sig att få åtkomst och hantera sina konton, och operatörer som hanterar användare, roller och tjänstedriftsättningar i sin enhet.",
+      "core": "Den här guiden täcker Deploy App från båda sidor: soldater som lär sig att få åtkomst och hantera sina konton, och operatörer som hanterar användare, roller och tjänstedriftsättningar i sitt förband.",
       "goal1Title": "Ingen utbildning behövs",
-      "goal1Body": "En soldat som plockar upp Deploy App för första gången ska kunna logga in och nå enhetens tjänster utan att läsa en manual. Varje flöde är utformat med det ribban i åtanke.",
+      "goal1Body": "En soldat som plockar upp Deploy App för första gången ska kunna logga in och nå förbandets tjänster utan att läsa en manual. Varje flöde är utformat med den målsättningen i åtanke.",
       "goal2Title": "Operatörskontroll",
       "goal2Body": "Operatörer får detaljerad kontroll över vem som har tillgång till vad, med granskningsloggar och rollhantering som uppfyller ansvarskraven för militära operationer.",
       "goal3Title": "Integrationshubben",
