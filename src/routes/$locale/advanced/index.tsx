@@ -11,7 +11,6 @@ import { loadManifest } from "@/lib/content/loader";
 import { PAGE_FRAME } from "@/lib/pageFrame";
 import { siteSections } from "@/lib/siteSections";
 import { cn } from "@/lib/utils";
-import { UnderConstructionBanner } from "@/components/reader/UnderConstructionBanner";
 
 export const Route = createFileRoute("/$locale/advanced/")({
   loader: async ({ context }) => {
@@ -34,7 +33,6 @@ function AdvancedShelf() {
       <ShelfHero title={t("nav.advanced")} subtitle={t("home.powerCardDesc")} />
       <div className={cn(PAGE_FRAME, "pt-4 pb-8 md:pt-6 md:pb-10")}>
         <div className="max-w-3xl">
-          <UnderConstructionBanner />
           <p className="text-sm leading-relaxed text-foreground md:text-base">
             {t("advancedFooter.lead")}
           </p>
