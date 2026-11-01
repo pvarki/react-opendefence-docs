@@ -27,16 +27,11 @@ describe("isPageUnderConstruction", () => {
     ).toBe(true);
   });
 
-  it("flags every page in the power-user wikis", () => {
-    expect(isPageUnderConstruction({ collection: "wikis/tak" })).toBe(true);
-    expect(isPageUnderConstruction({ collection: "wikis/mtx" })).toBe(true);
-  });
-
-  it("does not flag the MTX guide, whose visible pages are finished", () => {
-    expect(isPageUnderConstruction({ collection: "guides/mtx-guide" })).toBe(
-      false,
-    );
-    expect(isCoverUnderConstruction("guides/mtx-guide")).toBe(false);
+  it("does not flag the finished MTX guide or the wikis", () => {
+    for (const collection of ["guides/mtx-guide", "wikis/tak", "wikis/mtx"]) {
+      expect(isPageUnderConstruction({ collection })).toBe(false);
+      expect(isCoverUnderConstruction(collection)).toBe(false);
+    }
   });
 
   it("flags only the SUPPORTED PLUGINS chapters in the TAK guide", () => {
@@ -63,10 +58,6 @@ describe("isCoverUnderConstruction", () => {
   it("shows on the deploy-app cover only when windows is active", () => {
     expect(isCoverUnderConstruction("deploy-app", "windows")).toBe(true);
     expect(isCoverUnderConstruction("deploy-app", "android")).toBe(false);
-  });
-
-  it("always shows on the wiki covers", () => {
-    expect(isCoverUnderConstruction("wikis/tak")).toBe(true);
   });
 
   it("never shows on the tak-guide cover (plugins are chapter-scoped)", () => {
