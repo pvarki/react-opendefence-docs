@@ -22,6 +22,7 @@ import chalk from "chalk";
 
 import { createOutlineClient, isAccessError } from "./lib/outline-api";
 import { clearSyncWarnings, writeSyncWarnings } from "./lib/sync-warnings";
+import { localizeBookPages } from "./lib/cross-locale-links";
 import type { CollectionSyncStats } from "./lib/script-types";
 import {
   processDocumentImages,
@@ -1128,6 +1129,7 @@ async function main() {
   // Translations: bare slug -> locale -> route path, enriched across all
   // locales' fresh manifests (collection prefixes included).
   const slugRoutes = buildSlugRouteMap(newManifests.values());
+  const translationsByLocale = new Map<Locale, TranslationsFile>();
   for (const locale of LOCALES) {
     const manifest = newManifests.get(locale)!;
     const translations = buildTranslationsFile({
@@ -1140,6 +1142,7 @@ async function main() {
       ),
     });
     await writeJson(translationsFilePath(locale), translations);
+    translationsByLocale.set(locale, translations);
   }
 
   // Stale cleanup: within collections synced this run, delete page files
@@ -1169,6 +1172,25 @@ async function main() {
         }
       }
     }
+  }
+
+  // Cross-locale links: a link to another locale's page becomes a link to
+  // its counterpart in the page's own locale, when one is known.
+  let localizedLinks = 0;
+  for (const locale of LOCALES) {
+    for (const collectionSlug of syncedBooks.get(locale)!.keys()) {
+      localizedLinks += await localizeBookPages(
+        path.join(CONTENT_ROOT, locale, "pages", ...collectionSlug.split("/")),
+        locale,
+        translationsByLocale,
+        slugRoutes,
+      );
+    }
+  }
+  if (localizedLinks > 0) {
+    console.log(
+      `  Pointed ${localizedLinks} cross-locale ${localizedLinks === 1 ? "link" : "links"} to the page's own locale`,
+    );
   }
 
   stats.endTime = Date.now();
