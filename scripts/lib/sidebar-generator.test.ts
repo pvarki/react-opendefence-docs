@@ -148,6 +148,66 @@ describe("buildBook", () => {
   });
 });
 
+describe("buildBook under-development markers", () => {
+  const markers = (
+    underDevelopmentIds: string[],
+    bookUnderDevelopment = false,
+  ) => ({
+    toporgIds: new Set<string>(),
+    platformByDocId: new Map(),
+    platformsContainerIds: new Set<string>(),
+    osByDocId: new Map(),
+    isProductDocIds: new Set<string>(),
+    underDevelopmentIds: new Set(underDevelopmentIds),
+    bookUnderDevelopment,
+  });
+  const tree = () => [
+    node("Overview", "overview-Ud01010101"),
+    node("Android", "android-Ud02020202", [
+      node("Start", "start-Ud03030303", [
+        node("Install", "install-Ud04040404"),
+      ]),
+      node("Use", "use-Ud05050505", [node("Map", "map-Ud06060606")]),
+    ]),
+    node("iOS", "ios-Ud07070707", [node("Setup", "setup-Ud08080808")]),
+  ];
+  const draftSlugs = (built: ReturnType<typeof buildBook>) =>
+    built.readingOrder.filter((r) => r.underDevelopment).map((r) => r.slug);
+
+  it("flags nothing without markers", () => {
+    expect(
+      draftSlugs(buildBook(tree(), collection, "en", markers([]))),
+    ).toEqual([]);
+  });
+
+  it("flags every page under a marked chapter", () => {
+    const t = tree();
+    const built = buildBook(
+      t,
+      collection,
+      "en",
+      markers([t[1].children[0].id]),
+    );
+    expect(draftSlugs(built)).toEqual(["install-Ud04040404"]);
+  });
+
+  it("flags every page of a marked client", () => {
+    const t = tree();
+    const built = buildBook(t, collection, "en", markers([t[1].id]));
+    expect(draftSlugs(built)).toEqual(["install-Ud04040404", "map-Ud06060606"]);
+  });
+
+  it("flags every page when the locale root is marked", () => {
+    const built = buildBook(tree(), collection, "en", markers([], true));
+    expect(draftSlugs(built)).toEqual([
+      "overview-Ud01010101",
+      "install-Ud04040404",
+      "map-Ud06060606",
+      "setup-Ud08080808",
+    ]);
+  });
+});
+
 describe("buildBook platform model", () => {
   // Deploy-app style: platform organizers directly under the locale root.
   const deployTree = [
