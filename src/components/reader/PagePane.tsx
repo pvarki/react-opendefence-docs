@@ -77,9 +77,9 @@ export function PagePane({
           <h1 className="mb-2 text-xl font-bold md:mb-6 md:text-3xl">
             {page.title}
           </h1>
-          {(isPageUnderConstruction(page) || doc?.underDevelopment) && (
-            <UnderConstructionBanner />
-          )}
+          {(isPageUnderConstruction(page) ||
+            page.underDevelopment ||
+            doc?.underDevelopment) && <UnderConstructionBanner />}
           {doc ? (
             <BlockRenderer blocks={doc.blocks} />
           ) : (
