@@ -1,5 +1,65 @@
 # Changelog
 
+## [0.4.0](https://github.com/pvarki/react-opendefence-docs/compare/0.3.0...0.4.0) (2026-11-01)
+
+
+### Features
+
+* **a11y:** default text size one step larger ([3acb363](https://github.com/pvarki/react-opendefence-docs/commit/3acb363dc9ca3c9fb608e0484ca5486eefcdf5a1))
+* add dev sidebar sections for changelog & api ref ([aa6e2c0](https://github.com/pvarki/react-opendefence-docs/commit/aa6e2c0abb7c523ba6aaab4884f5c75d3dd876d0))
+* **config:** connect API specs / changelogs to pages ([d8b0804](https://github.com/pvarki/react-opendefence-docs/commit/d8b0804f703dda236e883c2201a4c140bc81bb52))
+* copy code blocks and zoom diagrams ([a303c58](https://github.com/pvarki/react-opendefence-docs/commit/a303c58fa2c66db10e238bf1745c1b2573c0d5c5))
+* **home:** add foundation details to the footer ([150fddf](https://github.com/pvarki/react-opendefence-docs/commit/150fddf8d8e44ef577de2d1275c1ead24f039d30))
+* **home:** add OpenDefence as an organization section ([3381907](https://github.com/pvarki/react-opendefence-docs/commit/33819075db26212ff8cb54b7deb535c914ddfde5))
+* **i18n:** translate book descriptions ([ea64502](https://github.com/pvarki/react-opendefence-docs/commit/ea645022796cc902e4b36150adefbbc3df41b4eb))
+* improve book content page ([a330fd2](https://github.com/pvarki/react-opendefence-docs/commit/a330fd24c8bac3d6170253fb79b26f5e3d3dc33b))
+* index api spec + releases for search ([4a4bab6](https://github.com/pvarki/react-opendefence-docs/commit/4a4bab6643ac0ab711e298e1bc3972fbfed8b01c))
+* per-book URLs for API reference, releases and changelogs ([156d3f1](https://github.com/pvarki/react-opendefence-docs/commit/156d3f1d8db79c2828753b0ce443ac796915f6d2))
+* **reader:** expand Tell me more by default and drop duplicate contents from book cover ([27dae63](https://github.com/pvarki/react-opendefence-docs/commit/27dae63590ff2f4e4de6ac67802c436870e8dc8f))
+* **reader:** make the construction banner stand out ([7b2708d](https://github.com/pvarki/react-opendefence-docs/commit/7b2708d4bc3b25fb012c0837d01a4cb4467d4444))
+* **reader:** show draft pages with a banner ([98e6b00](https://github.com/pvarki/react-opendefence-docs/commit/98e6b0056790a6138e317836ba8b1ad9613fea26))
+* show sidebar at developer docs home ([dee47ac](https://github.com/pvarki/react-opendefence-docs/commit/dee47ac371b862522db80c88eeafffa33865cc12))
+* **sync:** accept only the official draft marker ([5f6ea33](https://github.com/pvarki/react-opendefence-docs/commit/5f6ea331d76bae2b4649cfb220cd9b36835af90f))
+* **sync:** hide pages marked not to be shown ([edf6433](https://github.com/pvarki/react-opendefence-docs/commit/edf6433bc09df4168eaf3b6dbf1020977d9297b2))
+* **sync:** keep draft pages in reading order ([96d6c59](https://github.com/pvarki/react-opendefence-docs/commit/96d6c5997f32f2cadcd99b64bb6b7decabe41f41))
+* **sync:** turn links to hidden pages into text ([f7f24aa](https://github.com/pvarki/react-opendefence-docs/commit/f7f24aa8cd19dfc484699700de61f0d16ca7db87))
+* updated docs site ([79b3469](https://github.com/pvarki/react-opendefence-docs/commit/79b3469144eb0bd731cc13a2a43e906e0835b515))
+* **validate:** list skipped collections in the sync report ([f47d062](https://github.com/pvarki/react-opendefence-docs/commit/f47d062ed9aab49d4a49f49070fe25b94cd8d57b))
+* **validate:** warn about marker look-alikes ([41bd337](https://github.com/pvarki/react-opendefence-docs/commit/41bd3370e5de0e3b944885cc7a8a808d7d6019e7))
+* **validate:** warn about missing translation links ([a9ee6cc](https://github.com/pvarki/react-opendefence-docs/commit/a9ee6cceabf3fea0a019f3fbcf7975222ce1ba33))
+* **validate:** warn about Outline leftovers ([dfe86ce](https://github.com/pvarki/react-opendefence-docs/commit/dfe86ceeecdd72a21f2c378c6f26c8d8ef5471a4))
+
+
+### Bug Fixes
+
+* ci ([0be9ab8](https://github.com/pvarki/react-opendefence-docs/commit/0be9ab842d214446d0069015824e7d30454247f7))
+* conflicting search shortcuts ([2af316f](https://github.com/pvarki/react-opendefence-docs/commit/2af316ff11fc910f346387035c4af6aba630d894))
+* **cover:** show platforms on one row on wide screens ([c057e11](https://github.com/pvarki/react-opendefence-docs/commit/c057e113479957b6181bb2ee3434a2536eeccbc2))
+* **i18n:** correct Finnish UI text errors ([257db54](https://github.com/pvarki/react-opendefence-docs/commit/257db54af66a613d2846b559ee604f18d0eb9271))
+* include version in url for api/releases ([685b561](https://github.com/pvarki/react-opendefence-docs/commit/685b561a8524395721d5ca54511ad872b87baf17))
+* integration page ([289d4b2](https://github.com/pvarki/react-opendefence-docs/commit/289d4b24608e9b7b84911f16197feabb5c132141))
+* mermaid diagram size in popup ([701e33a](https://github.com/pvarki/react-opendefence-docs/commit/701e33ad34ceed838b006d440fda5f79ee25c82d))
+* mobile nav on api/releases pages ([df7de79](https://github.com/pvarki/react-opendefence-docs/commit/df7de79cded0da1cb9158bbea255ca8ec6cc32d3))
+* move about this site to bottom right corner ([86d5a45](https://github.com/pvarki/react-opendefence-docs/commit/86d5a45d591401b9e028d3a71da093cd30c752a9))
+* **reader:** fall back to any locale's page ([037e97a](https://github.com/pvarki/react-opendefence-docs/commit/037e97ae626b0c904f16a3a0a406535ceaba1486))
+* redirect legacy api/releases paths ([c0f7fbc](https://github.com/pvarki/react-opendefence-docs/commit/c0f7fbc8be0e251018a20dc35fbd9b1b30daf4d7))
+* **shell:** switch language to the page's translation ([202538b](https://github.com/pvarki/react-opendefence-docs/commit/202538b6b006974ba47d29f03bcb9b5124a1ce52))
+* show sidebar on api/changelog pages ([6320aa4](https://github.com/pvarki/react-opendefence-docs/commit/6320aa4811f548c0fd11b2d4b8d50da452340c7b))
+* **sync:** don't fail a quiet run over one stray error ([3b04dc9](https://github.com/pvarki/react-opendefence-docs/commit/3b04dc90abf85ff11e811fd15465726db4189d41))
+* **sync:** don't rewrite manifests when only the timestamp would change ([dbb2e18](https://github.com/pvarki/react-opendefence-docs/commit/dbb2e1832af4045d7f83af159b45ae4092dfe7ba))
+* **sync:** drop lone backslash lines in lists ([8bd168d](https://github.com/pvarki/react-opendefence-docs/commit/8bd168d71310ed1b11f7f12b27a693a7c57f8a45))
+* **sync:** keep heading ids unique across a page ([2083699](https://github.com/pvarki/react-opendefence-docs/commit/20836994024e33c15c02a8dad94b23761aa92eb1))
+* **sync:** keep Shift+Enter line breaks from the Outline export ([18d88d0](https://github.com/pvarki/react-opendefence-docs/commit/18d88d0c29c2ce7b30c67b1cf4922627245d228a))
+* **sync:** move bold and italic out of inline code ([1fffee5](https://github.com/pvarki/react-opendefence-docs/commit/1fffee5c934f8309ff7f569a6c8ae1dace0bff25))
+* **sync:** render Outline soft breaks ([4a2e8cb](https://github.com/pvarki/react-opendefence-docs/commit/4a2e8cbeedd5aac3bd18068f82e62a8bcf65f40e))
+* **sync:** resolve /doc/&lt;uuid&gt; links ([5d532e4](https://github.com/pvarki/react-opendefence-docs/commit/5d532e40a6d8a255441753235c59fc26d751fc3b))
+* **sync:** resolve links to section organizers ([7ef3654](https://github.com/pvarki/react-opendefence-docs/commit/7ef3654f1b89b8c7d1d454c792d75a3412a718ea))
+* **sync:** show page errors at once, stop retrying what won't change ([70182e0](https://github.com/pvarki/react-opendefence-docs/commit/70182e01ce9145b4a18e356eb167856024d1c0f1))
+* **sync:** skip a collection that cannot be read ([2783c78](https://github.com/pvarki/react-opendefence-docs/commit/2783c785836adc2c6a1415c13f1ac5711b02caa7))
+* **sync:** treat width-only image sizes as size ([30e2af2](https://github.com/pvarki/react-opendefence-docs/commit/30e2af277dfc94e476c37f1222423ad454ee552f))
+* validate api/release links ([99b117c](https://github.com/pvarki/react-opendefence-docs/commit/99b117ccf74c0c2eab2768885c610cb31fa4fa5d))
+* **validate:** cut the sync report to fit the PR body ([1b727d8](https://github.com/pvarki/react-opendefence-docs/commit/1b727d88e5d059f578e5762937c4a92f5f269027))
+
 ## [0.3.0](https://github.com/pvarki/react-opendefence-docs/compare/0.2.1...0.3.0) (2026-08-21)
 
 
