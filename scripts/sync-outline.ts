@@ -34,6 +34,11 @@ import {
   updateImageReferences,
 } from "./lib/image-processor";
 import {
+  MAX_FILE_BYTES,
+  processDocumentFiles,
+  updateFileReferences,
+} from "./lib/file-attachments";
+import {
   normalizeOutlineMarkdown,
   extractTranslationLinks,
   linkedDocKeys,
@@ -256,6 +261,8 @@ interface ProcessResult {
   images: number;
   /** Text of each link that pointed to a hidden page (now plain text). */
   hiddenLinks: string[];
+  /** File attachments over the size limit, left out. */
+  tooLargeFiles: { entryName: string; bytes: number }[];
   translationLinks: Partial<Record<Locale, string>>;
   title: string;
 }
@@ -279,6 +286,11 @@ async function processDocument(
   let markdown = rawMarkdown;
   if (processedImages.size > 0) {
     markdown = updateImageReferences(markdown, processedImages, locale);
+  }
+  // PDFs and other files: stored under /content/files/, links rewritten.
+  const files = await processDocumentFiles(images, markdown);
+  if (files.files.size > 0) {
+    markdown = updateFileReferences(markdown, files.files);
   }
 
   // Text-level Outline fixups; cross-doc links resolve via the structure index.
@@ -336,6 +348,7 @@ async function processDocument(
   return {
     images: processedImages.size,
     hiddenLinks,
+    tooLargeFiles: files.tooLarge,
     translationLinks,
     title: ref.title,
   };
@@ -756,6 +769,11 @@ async function syncCollection(
       for (const linkText of result.hiddenLinks) {
         stats.warnings.push(
           `${locale} "${ref.title}": link "${linkText}" points to a hidden page, shown as plain text`,
+        );
+      }
+      for (const { entryName, bytes } of result.tooLargeFiles) {
+        stats.warnings.push(
+          `${locale} "${ref.title}": attachment "${entryName}" is ${(bytes / 1024 / 1024).toFixed(1)} MB, over the ${MAX_FILE_BYTES / 1024 / 1024} MB limit, not published`,
         );
       }
       if (Object.keys(result.translationLinks).length > 0) {

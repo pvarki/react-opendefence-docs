@@ -77,6 +77,15 @@ nothing. See [Start here](01-start-here.md#not-meant-for-readers-hide-it).
 - Skip decorative images. Every image should show the reader where
   to click or what they should see.
 
+## PDF attachments
+
+Upload a PDF (a manual, a quick start guide) into the Outline page as
+an attachment. The sync copies it to the site, and the link opens it
+from docs.opendefence.fi. Only PDFs linked from a visible page are
+published: a hidden page's attachments stay in Outline. A file larger
+than 25 MB is left out, and the sync log says which one. The same
+file attached to the en, fi and sv pages is stored once.
+
 ## Naming: it's "Deploy App"
 
 The product is called **Deploy App**. You'll find the old names
