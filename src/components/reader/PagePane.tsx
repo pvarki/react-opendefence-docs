@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import type { ManifestPage, PageDoc } from "@shared/content-schema";
 import type { PagePosition } from "@/lib/content/neighbors";
 import { loadPage } from "@/lib/content/loader";
-import { isPageUnderConstruction } from "@/lib/underConstruction";
 import { BlockRenderer } from "@/components/blocks/BlockRenderer";
 import { UnderConstructionBanner } from "@/components/reader/UnderConstructionBanner";
 import { PrevNextBar } from "@/components/reader/PrevNextBar";
@@ -77,7 +76,7 @@ export function PagePane({
           <h1 className="mb-2 text-xl font-bold md:mb-6 md:text-3xl">
             {page.title}
           </h1>
-          {(isPageUnderConstruction(page) || doc?.underDevelopment) && (
+          {(page.underDevelopment || doc?.underDevelopment) && (
             <UnderConstructionBanner />
           )}
           {doc ? (

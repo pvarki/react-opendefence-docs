@@ -163,6 +163,20 @@ describe("buildBookManifestPages", () => {
   });
 });
 
+describe("buildBookManifestPages under-development pages", () => {
+  it("copies the flag from the page ref", () => {
+    const pages = buildBookManifestPages("en", "deploy-app", [
+      {
+        ref: { ...ref("a"), underDevelopment: true },
+        updatedAt: "t",
+        status: "processed",
+      },
+      { ref: ref("b"), updatedAt: "t", status: "processed" },
+    ]);
+    expect(pages.map((p) => p.underDevelopment)).toEqual([true, undefined]);
+  });
+});
+
 describe("buildLocaleManifest", () => {
   const previous: LocaleManifest = {
     schemaVersion: 1,
@@ -216,6 +230,76 @@ describe("buildLocaleManifest", () => {
     expect(manifest.collections.map((c) => c.slug)).toEqual([
       "guides/tak-guide",
     ]);
+  });
+});
+
+describe("buildLocaleManifest under-development books", () => {
+  it("flags synced books by their locale root and carries the flag over", () => {
+    const previous: LocaleManifest = {
+      schemaVersion: 1,
+      locale: "en",
+      generatedAt: "then",
+      collections: [
+        {
+          slug: "guides/tak-guide",
+          label: "TAK Guide",
+          section: "guides",
+          order: 0,
+          underDevelopment: true,
+        },
+      ],
+      pages: [
+        manifestPage({
+          id: "2",
+          slug: "old-tak",
+          collection: "guides/tak-guide",
+        }),
+      ],
+    };
+    const manifest = buildLocaleManifest({
+      locale: "en",
+      collections: [DEPLOY, TAK],
+      syncedPages: new Map([
+        ["deploy-app", [manifestPage({ id: "3", slug: "new" })]],
+      ]),
+      syncedBookDrafts: new Set(["deploy-app"]),
+      previous,
+      generatedAt: "now",
+    });
+    expect(
+      manifest.collections.map((c) => [c.slug, c.underDevelopment ?? false]),
+    ).toEqual([
+      ["deploy-app", true],
+      ["guides/tak-guide", true],
+    ]);
+  });
+
+  it("clears the flag when a synced book's root lost the marker", () => {
+    const manifest = buildLocaleManifest({
+      locale: "en",
+      collections: [DEPLOY],
+      syncedPages: new Map([
+        ["deploy-app", [manifestPage({ id: "3", slug: "new" })]],
+      ]),
+      syncedBookDrafts: new Set(),
+      previous: {
+        schemaVersion: 1,
+        locale: "en",
+        generatedAt: "then",
+        collections: [
+          {
+            slug: "deploy-app",
+            label: "Deploy App",
+            section: "deploy-app",
+            order: 0,
+            underDevelopment: true,
+          },
+        ],
+        pages: [],
+      },
+      generatedAt: "now",
+    });
+    expect(manifest.collections[0].underDevelopment).toBeUndefined();
   });
 });
 

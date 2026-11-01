@@ -57,7 +57,9 @@ the reading order and search:
 Don't translate it: the marker is the same English phrase in fi and
 sv docs, in any letter case. Other wordings and translations are not
 recognised, and validation reports them as `marker-variant`. Delete
-the line when the page is ready.
+the line when the page is ready. The same marker on a chapter,
+platform or language root covers every page under it, see
+[Start here](01-start-here.md#a-whole-chapter-platform-or-book).
 
 The hide marker `(This tab should not be shown)` works the same way:
 one English phrase in every language. A translated copy hides

@@ -56,6 +56,8 @@ export interface BookPageRef {
   clientId?: string;
   chapterId?: string;
   chapterLabel?: string;
+  /** The book, or an organizer above the page, carries the under-development marker. */
+  underDevelopment?: boolean;
 }
 
 export interface BookClientRef {
@@ -84,6 +86,10 @@ export interface BookMarkers {
   osByDocId: ReadonlyMap<string, Platform>;
   /** Organizer docIds whose body says "META: product: yes". */
   isProductDocIds: ReadonlySet<string>;
+  /** Organizer docIds whose body carries the under-development marker. */
+  underDevelopmentIds?: ReadonlySet<string>;
+  /** The locale root doc carries the under-development marker: the whole book. */
+  bookUnderDevelopment?: boolean;
 }
 
 const NO_MARKERS: BookMarkers = {
@@ -333,6 +339,7 @@ interface ChapterContext {
   clientId?: string;
   chapterId?: string;
   chapterLabel?: string;
+  underDevelopment?: boolean;
 }
 
 function makePageRef(
@@ -357,6 +364,7 @@ function makePageRef(
     ...(ctx.chapterId
       ? { chapterId: ctx.chapterId, chapterLabel: ctx.chapterLabel }
       : {}),
+    ...(ctx.underDevelopment ? { underDevelopment: true } : {}),
   };
 }
 
@@ -384,6 +392,10 @@ export function buildBook(
     markers.platformByDocId.get(node.id) ??
     detectPlatform(node.title);
 
+  // The marker on an organizer covers every page under it.
+  const draftBelow = (node: OutlineNavNode, inherited?: boolean): boolean =>
+    !!inherited || !!markers.underDevelopmentIds?.has(node.id);
+
   // All leaf descendants of `node`, depth-first, flattened into one chapter.
   const collectLeaves = (
     node: OutlineNavNode,
@@ -398,7 +410,12 @@ export function buildBook(
         groupChildren.push(makeDocItem(child));
       } else {
         // Sub-organizers below chapter level flatten into the chapter.
-        collectLeaves(child, trail, ctx, groupChildren);
+        collectLeaves(
+          child,
+          trail,
+          { ...ctx, underDevelopment: draftBelow(child, ctx.underDevelopment) },
+          groupChildren,
+        );
       }
     }
   };
@@ -409,6 +426,7 @@ export function buildBook(
     node: OutlineNavNode,
     trailTitles: string[],
     client: BookClientRef | undefined,
+    draftAbove: boolean | undefined,
     into: SidebarItem[] = items,
   ): void => {
     const ctx: ChapterContext = {
@@ -416,6 +434,7 @@ export function buildBook(
       clientId: client?.id,
       chapterId: slugFromUrl(node.url),
       chapterLabel: cleanLabel(node.title),
+      underDevelopment: draftBelow(node, draftAbove),
     };
     const groupChildren: SidebarItem[] = [];
     collectLeaves(node, trailTitles, ctx, groupChildren);
@@ -435,6 +454,7 @@ export function buildBook(
     node: OutlineNavNode,
     trailTitles: string[],
     client: BookClientRef | undefined,
+    draftAbove: boolean | undefined,
     into: SidebarItem[] = items,
   ): void => {
     const toporgLabel = cleanLabel(node.title);
@@ -444,6 +464,7 @@ export function buildBook(
       clientId: client?.id,
       chapterId: slugFromUrl(node.url),
       chapterLabel: toporgLabel,
+      underDevelopment: draftBelow(node, draftAbove),
     };
     for (const sub of node.children) {
       const trail = [...trailTitles, sub.title];
@@ -451,7 +472,13 @@ export function buildBook(
         readingOrder.push(makePageRef(sub, trail, looseCtx));
         toporgChildren.push(makeDocItem(sub));
       } else {
-        addChapter(sub, trail, client, toporgChildren);
+        addChapter(
+          sub,
+          trail,
+          client,
+          looseCtx.underDevelopment,
+          toporgChildren,
+        );
       }
     }
     if (toporgChildren.length === 0) return;
@@ -470,6 +497,7 @@ export function buildBook(
     node: OutlineNavNode,
     trailTitles: string[],
     platform: Platform,
+    draftAbove: boolean | undefined,
   ) => {
     const explicitOs = markers.osByDocId.get(node.id);
     const client: BookClientRef = {
@@ -487,6 +515,7 @@ export function buildBook(
       clientId: client.id,
       chapterId: client.id,
       chapterLabel: client.label,
+      underDevelopment: draftBelow(node, draftAbove),
     };
     const looseChildren: SidebarItem[] = [];
     for (const sub of node.children) {
@@ -495,9 +524,9 @@ export function buildBook(
         readingOrder.push(makePageRef(sub, trail, looseCtx));
         looseChildren.push(makeDocItem(sub));
       } else if (markers.toporgIds.has(sub.id)) {
-        addToporg(sub, trail, client);
+        addToporg(sub, trail, client, looseCtx.underDevelopment);
       } else {
-        addChapter(sub, trail, client);
+        addChapter(sub, trail, client, looseCtx.underDevelopment);
       }
     }
     if (looseChildren.length > 0) {
@@ -513,7 +542,11 @@ export function buildBook(
 
   // A "root-like" level: locale root children, or the children of a wrapper
   // organizer that exists only to hold clients (e.g. "Platforms").
-  const walkRootLevel = (nodes: OutlineNavNode[], trailTitles: string[]) => {
+  const walkRootLevel = (
+    nodes: OutlineNavNode[],
+    trailTitles: string[],
+    draftAbove: boolean | undefined,
+  ) => {
     for (const child of nodes) {
       const trail = [...trailTitles, child.title];
 
@@ -522,25 +555,27 @@ export function buildBook(
       // (no children in an untranslated locale) is silently skipped rather
       // than being treated as a content page.
       if (markers.platformsContainerIds.has(child.id)) {
-        walkRootLevel(child.children, trail);
+        walkRootLevel(child.children, trail, draftBelow(child, draftAbove));
         continue;
       }
 
       // Top-level leaf: a content page shown on every client.
       if (child.children.length === 0) {
-        readingOrder.push(makePageRef(child, trail, {}));
+        readingOrder.push(
+          makePageRef(child, trail, { underDevelopment: draftAbove }),
+        );
         items.push(makeDocItem(child));
         continue;
       }
 
       const platform = clientPlatform(child);
       if (platform) {
-        addClient(child, trail, platform);
+        addClient(child, trail, platform, draftAbove);
         continue;
       }
 
       if (markers.toporgIds.has(child.id)) {
-        addToporg(child, trail, undefined);
+        addToporg(child, trail, undefined, draftAbove);
         continue;
       }
 
@@ -549,15 +584,15 @@ export function buildBook(
         (c) => c.children.length > 0 && clientPlatform(c),
       );
       if (wrapsClients) {
-        walkRootLevel(child.children, trail);
+        walkRootLevel(child.children, trail, draftBelow(child, draftAbove));
       } else {
         // Client-agnostic chapter (e.g. Troubleshooting, wiki sections).
-        addChapter(child, trail, undefined);
+        addChapter(child, trail, undefined, draftAbove);
       }
     }
   };
 
-  walkRootLevel(localeRootChildren, []);
+  walkRootLevel(localeRootChildren, [], markers.bookUnderDevelopment);
 
   return {
     sidebar: {

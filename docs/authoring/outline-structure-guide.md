@@ -78,7 +78,7 @@ Renders the organizer as a non-clickable **section heading** in the sidebar, gro
 META: incomplete
 ```
 
-Marks a platform or chapter as work in progress. Shows a red "Incomplete" tag in the platform selector; the pages under it stay in the reading order.
+Marks a platform or chapter as work in progress, the same as `(This tab is under development)`: every page under it shows the draft banner and stays in the reading order, and a platform also gets a red "Incomplete" tag in the platform selector. On the locale root it marks the whole book in that language. See [Start here](01-start-here.md#a-whole-chapter-platform-or-book).
 
 ### In any leaf page body
 
