@@ -6,6 +6,7 @@ import type {
   Platform,
   SidebarItem,
 } from "@shared/content-schema";
+import { outlineUrlId } from "@shared/outline-url-id";
 import { PLATFORM_LABELS, type ReadingView } from "@/lib/platform";
 
 /**
@@ -152,6 +153,22 @@ export function resolveSplat(
     }
   }
   return undefined;
+}
+
+/**
+ * The page an outdated URL means: its last segment ends in the same Outline
+ * urlId as a page in `manifest`. Page slugs are built from titles, so a rename
+ * (or a move to another book) changes the slug while the urlId stays — old
+ * links and bookmarks resolve here and are redirected to the page's URL.
+ */
+export function resolveByUrlId(
+  manifest: LocaleManifest,
+  splat: string,
+): ManifestPage | undefined {
+  const last = splat.replace(/\/+$/, "").split("/").pop() ?? "";
+  const urlId = outlineUrlId(last);
+  if (!urlId) return undefined;
+  return manifest.pages.find((p) => outlineUrlId(p.slug) === urlId);
 }
 
 /** Title of Outline's "Platforms" wrapper organizer (META: platforms-container). */

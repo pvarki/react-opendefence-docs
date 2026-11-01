@@ -285,26 +285,35 @@ describe("addCarriedOverRoutes", () => {
     generatedAt: "now",
     collections: [],
     pages: [
-      manifestPage({ id: "a1", slug: "arch-A1", collection: "architecture" }),
+      manifestPage({
+        id: "a1",
+        slug: "arch-Aa11111111",
+        collection: "architecture",
+      }),
       manifestPage({ id: "d1", slug: "deploy-D1", collection: "deploy-app" }),
     ],
   };
 
-  it("indexes pages of collections not synced this run by slug and id", () => {
+  it("indexes pages of collections not synced this run by slug, id and urlId", () => {
     const index = new Map<string, string>();
     addCarriedOverRoutes(index, [manifest, undefined], new Set(["deploy-app"]));
     expect(index).toEqual(
       new Map([
-        ["arch-A1", "/en/architecture/arch-A1"],
-        ["a1", "/en/architecture/arch-A1"],
+        ["arch-Aa11111111", "/en/architecture/arch-Aa11111111"],
+        ["a1", "/en/architecture/arch-Aa11111111"],
+        ["Aa11111111", "/en/architecture/arch-Aa11111111"],
       ]),
     );
   });
 
   it("keeps routes already indexed from this run", () => {
-    const index = new Map([["arch-A1", "/en/architecture/moved-A1"]]);
+    const index = new Map([
+      ["arch-Aa11111111", "/en/architecture/moved-Aa11111111"],
+    ]);
     addCarriedOverRoutes(index, [manifest], new Set());
-    expect(index.get("arch-A1")).toBe("/en/architecture/moved-A1");
+    expect(index.get("arch-Aa11111111")).toBe(
+      "/en/architecture/moved-Aa11111111",
+    );
     expect(index.get("d1")).toBe("/en/deploy-app/deploy-D1");
   });
 });

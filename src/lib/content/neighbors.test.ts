@@ -3,6 +3,7 @@ import type { LocaleManifest } from "@shared/content-schema";
 import {
   readerBreadcrumb,
   readingOrder,
+  resolveByUrlId,
   resolvePosition,
   resolveSplat,
 } from "./neighbors";
@@ -153,5 +154,42 @@ describe("readerBreadcrumb", () => {
     expect(readerBreadcrumb(manifest, at(["Basic Features", "Rooms"]))).toEqual(
       ["Basic Features", "Rooms"],
     );
+  });
+});
+
+describe("resolveByUrlId", () => {
+  const renamed: LocaleManifest = {
+    ...manifest,
+    pages: [
+      page("takserver-user-groups-PQ4dCV2SYR", "deploy-app", 0),
+      page("download-the-app-bJC3Opax4P", "guides/tak-guide", 0),
+    ],
+  };
+
+  it("finds a renamed page by the urlId at the end of its old slug", () => {
+    expect(
+      resolveByUrlId(renamed, "deploy-app/takserver-groups-PQ4dCV2SYR")?.slug,
+    ).toBe("takserver-user-groups-PQ4dCV2SYR");
+  });
+
+  it("finds a page moved to another book", () => {
+    expect(
+      resolveByUrlId(renamed, "deploy-app/make-sure-you-have-atak-bJC3Opax4P/")
+        ?.collection,
+    ).toBe("guides/tak-guide");
+  });
+
+  it("finds a page by its bare urlId", () => {
+    expect(resolveByUrlId(renamed, "deploy-app/PQ4dCV2SYR")?.slug).toBe(
+      "takserver-user-groups-PQ4dCV2SYR",
+    );
+  });
+
+  it("returns undefined for unknown urlIds and slugs without one", () => {
+    expect(
+      resolveByUrlId(renamed, "deploy-app/takserver-groups-XXXXXXXXXX"),
+    ).toBeUndefined();
+    expect(resolveByUrlId(renamed, "deploy-app/a-first")).toBeUndefined();
+    expect(resolveByUrlId(renamed, "deploy-app")).toBeUndefined();
   });
 });

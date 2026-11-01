@@ -10,13 +10,14 @@
  * rewriting (`attachments/...` -> `/content/images/...`).
  */
 import { normalizeLocale, type Locale } from "../../shared/content-schema";
+import { docKeys } from "../../shared/outline-url-id";
 
 export interface NormalizeContext {
   locale: Locale;
   collectionSlug: string;
   /** Resolves an Outline slug (incl. shortid, e.g. "first-login-qwmPnmJsrF") to a route path. */
   slugToRoute: (outlineSlug: string) => string | undefined;
-  /** Slugs and ids of hidden pages: links to them become plain text. */
+  /** Slugs, ids and urlIds of hidden pages: links to them become plain text. */
   hiddenDocKeys?: ReadonlySet<string>;
   /**
    * Told about each body link that pointed to a hidden page. Translations
@@ -262,11 +263,15 @@ function replaceInternalLinks(markdown: string, ctx: NormalizeContext): string {
   return markdown.replace(
     INTERNAL_LINK,
     (match, linkText, docKey, anchor, offset: number) => {
-      if (ctx.hiddenDocKeys?.has(docKey)) {
+      // A slug from before a rename still ends in the page's urlId.
+      const keys = docKeys(docKey);
+      if (keys.some((key) => ctx.hiddenDocKeys?.has(key))) {
         if (!inList(offset)) ctx.onHiddenLink?.(linkText, docKey);
         return linkText;
       }
-      const route = ctx.slugToRoute(docKey);
+      const route = keys
+        .map((key) => ctx.slugToRoute(key))
+        .find((r) => r !== undefined);
       if (!route) return match;
       return `[${linkText}](${route}${anchor || ""})`;
     },

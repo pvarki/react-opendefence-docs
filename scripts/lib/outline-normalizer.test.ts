@@ -102,6 +102,19 @@ describe("normalizeOutlineMarkdown", () => {
     ]);
   });
 
+  it("resolves links written before the target page was renamed", () => {
+    const input =
+      "See [Groups](/doc/takserver-groups-PQ4dCV2SYR#roles) and " +
+      "[hidden](/doc/old-overview-Hh11111111).\n";
+    const out = normalizeOutlineMarkdown(input, {
+      ...ctx({ PQ4dCV2SYR: "/en/deploy-app/takserver-user-groups-PQ4dCV2SYR" }),
+      hiddenDocKeys: new Set(["overview-Hh11111111", "Hh11111111"]),
+    });
+    expect(out).toBe(
+      "See [Groups](/en/deploy-app/takserver-user-groups-PQ4dCV2SYR#roles) and hidden.\n",
+    );
+  });
+
   it("does not report hidden links in the Translations list", () => {
     const reported: string[] = [];
     const input =

@@ -88,6 +88,7 @@ import {
   type Platform,
   type TranslationsFile,
 } from "../shared/content-schema";
+import { docKeys, outlineUrlId } from "../shared/outline-url-id";
 
 type OutlineClient = ReturnType<typeof createOutlineClient>;
 type DocumentInfo = Awaited<ReturnType<OutlineClient["getDocumentInfo"]>>;
@@ -281,7 +282,9 @@ async function processDocument(
   const translations: Record<string, string> = {};
   for (const [targetLocale, bareSlug] of Object.entries(translationLinks)) {
     if (!bareSlug) continue;
-    const route = slugRouteIndex.get(bareSlug);
+    const route = docKeys(bareSlug)
+      .map((key) => slugRouteIndex.get(key))
+      .find((r) => r !== undefined);
     if (route) translations[targetLocale] = route;
   }
 
@@ -324,10 +327,10 @@ interface BookSyncResult {
 
 /** Pages carrying the hide marker, found before any collection syncs. */
 interface HiddenPages {
-  /** Outline slugs and ids of every hidden page. */
+  /** Outline slugs, ids and urlIds of every hidden page. */
   keys: Set<string>;
   /**
-   * Slugs and ids of pages hidden since the previous sync, or shown that
+   * Slugs, ids and urlIds of pages hidden since the previous sync, or shown that
    * were not on the site before: pages linking to them are re-rendered.
    */
   relinkKeys: Set<string>;
@@ -520,7 +523,9 @@ async function syncCollection(
       // must be rewritten, so the page holding it is re-rendered.
       if (
         shouldSyncDoc(info.updatedAt, localUpdatedAt, args.force) ||
-        [...linkedDocKeys(info.text)].some((key) => hidden.relinkKeys.has(key))
+        [...linkedDocKeys(info.text)]
+          .flatMap(docKeys)
+          .some((key) => hidden.relinkKeys.has(key))
       ) {
         docsToProcess.push(ref);
       } else {
@@ -991,7 +996,9 @@ async function main() {
     const isHidden = info
       ? hasHideMarker(info.text)
       : !previousIds.has(node.id);
-    const keys = [slugFromUrl(node.url), node.id];
+    const slug = slugFromUrl(node.url);
+    const urlId = outlineUrlId(slug);
+    const keys = [slug, node.id, ...(urlId ? [urlId] : [])];
     if (isHidden === previousIds.has(node.id)) {
       for (const key of keys) hidden.relinkKeys.add(key);
     }
