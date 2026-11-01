@@ -21,8 +21,6 @@ interface Scope {
 }
 
 const SCOPES: Scope[] = [
-  // Deploy App — Windows guide (its pages only; Android/iOS are unaffected).
-  { collection: "deploy-app", platform: "windows" },
   // TAK guide — the iOS guides (iTAK + TAK Tracker - Apple) are the only
   // ios-platform clients, so this flags exactly those two.
   { collection: "guides/tak-guide", platform: "ios" },

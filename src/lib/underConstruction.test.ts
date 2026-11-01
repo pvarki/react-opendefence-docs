@@ -5,24 +5,24 @@ import {
 } from "./underConstruction";
 
 describe("isPageUnderConstruction", () => {
-  it("flags deploy-app windows pages but not android/ios", () => {
+  it("flags tak-guide ios pages but not android", () => {
     expect(
       isPageUnderConstruction({
-        collection: "deploy-app",
-        platform: "windows",
+        collection: "guides/tak-guide",
+        platform: "ios",
       }),
     ).toBe(true);
     expect(
       isPageUnderConstruction({
-        collection: "deploy-app",
+        collection: "guides/tak-guide",
         platform: "android",
       }),
     ).toBe(false);
-    // multi-platform page that includes windows still counts
+    // multi-platform page that includes ios still counts
     expect(
       isPageUnderConstruction({
-        collection: "deploy-app",
-        platforms: ["windows", "macos"],
+        collection: "guides/tak-guide",
+        platforms: ["ios", "android"],
       }),
     ).toBe(true);
   });
@@ -32,6 +32,15 @@ describe("isPageUnderConstruction", () => {
       expect(isPageUnderConstruction({ collection })).toBe(false);
       expect(isCoverUnderConstruction(collection)).toBe(false);
     }
+  });
+
+  it("does not flag the finished Deploy App windows pages", () => {
+    expect(
+      isPageUnderConstruction({
+        collection: "deploy-app",
+        platform: "windows",
+      }),
+    ).toBe(false);
   });
 
   it("flags only the SUPPORTED PLUGINS chapters in the TAK guide", () => {
@@ -55,9 +64,10 @@ describe("isPageUnderConstruction", () => {
 });
 
 describe("isCoverUnderConstruction", () => {
-  it("shows on the deploy-app cover only when windows is active", () => {
-    expect(isCoverUnderConstruction("deploy-app", "windows")).toBe(true);
-    expect(isCoverUnderConstruction("deploy-app", "android")).toBe(false);
+  it("shows on the tak-guide cover only when ios is active", () => {
+    expect(isCoverUnderConstruction("guides/tak-guide", "ios")).toBe(true);
+    expect(isCoverUnderConstruction("guides/tak-guide", "android")).toBe(false);
+    expect(isCoverUnderConstruction("deploy-app", "windows")).toBe(false);
   });
 
   it("never shows on the tak-guide cover (plugins are chapter-scoped)", () => {
