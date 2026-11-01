@@ -26,6 +26,8 @@ updates) a PR titled "docs: sync content from Outline". It contains:
 - the synced content as JSON under `public/content/`,
 - converted images (WebP, served from the site itself — no calls
   back to Outline at read time),
+- attached PDFs under `public/content/files/`, also served from the
+  site itself,
 - refreshed API specs,
 - and, as the **PR body**, the validation report.
 
