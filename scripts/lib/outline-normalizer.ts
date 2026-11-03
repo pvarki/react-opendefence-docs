@@ -242,10 +242,37 @@ function moveEmphasisOutOfCode(markdown: string): string {
         open[0].length === 1 &&
         (content.includes("``") || EMPHASIS_IN_CODE_RE.test(content))
       ) {
-        out +=
-          line.slice(pos, open.index) +
-          rewriteCodeSpan(content, line[open.index - 1] ?? "", line[end] ?? "");
-        pos = end;
+        let before = line.slice(pos, open.index);
+        let span = rewriteCodeSpan(
+          content,
+          line[open.index - 1] ?? "",
+          line[end] ?? "",
+        );
+        let next = end;
+        // The editor closes bold before bold code and opens it again after
+        // (`**into** `**app**`**.**`). Moving the stars out would leave
+        // `****` between the two, which CommonMark shows as text, so join
+        // the code's emphasis with the touching one instead.
+        const lead = /^(\*{1,3})`/.exec(span)?.[1];
+        if (
+          lead &&
+          before.endsWith(lead) &&
+          /[^*\s]/.test(before.at(-lead.length - 1) ?? "")
+        ) {
+          before = before.slice(0, -lead.length);
+          span = span.slice(lead.length);
+        }
+        const trail = /`(\*{1,3})$/.exec(span)?.[1];
+        if (
+          trail &&
+          line.startsWith(trail, end) &&
+          /[^*\s]/.test(line[end + trail.length] ?? "")
+        ) {
+          span = span.slice(0, -trail.length);
+          next = end + trail.length;
+        }
+        out += before + span;
+        pos = next;
       }
       i = j;
     }

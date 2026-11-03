@@ -375,6 +375,23 @@ describe("normalizeOutlineMarkdown inline code emphasis", () => {
     expect(normalizeOutlineMarkdown(input, ctx())).toBe(input);
   });
 
+  it("joins the moved bold with bold that touches the code span", () => {
+    const input = [
+      "**LDAP bind into** `**app-tak**`**.** TAK Server",
+      "**In** `**docker-integration**`**:** bump it",
+      "**Bold**`**code**` and `*a*`*b* end",
+      "",
+    ].join("\n");
+    expect(normalizeOutlineMarkdown(input, ctx())).toBe(
+      [
+        "**LDAP bind into** **`app-tak`.** TAK Server",
+        "**In** **`docker-integration`:** bump it",
+        "**Bold`code`** and *`a`b* end",
+        "",
+      ].join("\n"),
+    );
+  });
+
   it("drops the bold when a letter touches the code span", () => {
     expect(normalizeOutlineMarkdown("x`**a**`y and `**b**`\n", ctx())).toBe(
       "x`a`y and **`b`**\n",
