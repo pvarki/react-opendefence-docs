@@ -12,17 +12,18 @@
     "Använd GeoChat"
   ],
   "createdAt": "2026-06-18T19:33:25.668Z",
-  "updatedAt": "2026-06-18T20:23:41.110Z",
+  "updatedAt": "2026-11-01T21:12:54.197Z",
   "headings": [],
   "translations": {
     "en": "/en/guides/tak-guide/use-geochat-G4fqV0Y4fg",
     "fi": "/fi/guides/tak-guide/kayta-geochatia-F9hZhCTnub",
     "sv": "/sv/guides/tak-guide/anvand-geochat-D5tfU0DNdl"
   },
+  "underDevelopment": true,
   "blocks": [
     {
       "type": "html",
-      "html": "<p>GeoChat är WinTAK:s inbyggda textmeddelandefunktion. Använd den för att koordinera med din enhet utan att lämna kartan.</p>\n<blockquote>\n<p>Utkast: skrivet utan skärmbilder. Lägg till WinTAK GeoChat-skärmbilder när de finns tillgängliga.</p>\n</blockquote>"
+      "html": "<p>GeoChat är WinTAK:s inbyggda textmeddelandefunktion. Använd den för att koordinera med din enhet utan att lämna kartan.</p>"
     },
     {
       "type": "slideset",

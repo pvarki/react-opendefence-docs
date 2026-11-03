@@ -12,7 +12,7 @@
     "Tyhjennä sisältö"
   ],
   "createdAt": "2026-06-18T19:33:26.523Z",
-  "updatedAt": "2026-06-18T20:23:45.245Z",
+  "updatedAt": "2026-11-01T21:30:57.217Z",
   "headings": [],
   "translations": {
     "en": "/en/guides/tak-guide/clear-content-gLcPrq5b5J",
@@ -70,7 +70,7 @@
     },
     {
       "type": "html",
-      "html": "<p>Jatka aktivointia: <a href=\"/en/guides/tak-guide/set-language-localization-for-wintak-GstcQifMVj\">Start from Download</a></p>"
+      "html": "<p>Jatka aktivointia: <a href=\"/fi/guides/tak-guide/aseta-wintakn-kieli-ja-lokalisointi-h2H6q8rgOi\">Aseta WinTAK:n kieli ja lokalisointi</a></p>"
     }
   ]
 }

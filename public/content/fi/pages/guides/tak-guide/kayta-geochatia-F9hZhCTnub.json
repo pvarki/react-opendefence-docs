@@ -12,17 +12,18 @@
     "Käytä GeoChatia"
   ],
   "createdAt": "2026-06-18T19:33:25.399Z",
-  "updatedAt": "2026-06-18T20:23:40.216Z",
+  "updatedAt": "2026-11-01T21:12:57.936Z",
   "headings": [],
   "translations": {
     "en": "/en/guides/tak-guide/use-geochat-G4fqV0Y4fg",
     "fi": "/fi/guides/tak-guide/kayta-geochatia-F9hZhCTnub",
     "sv": "/sv/guides/tak-guide/anvand-geochat-D5tfU0DNdl"
   },
+  "underDevelopment": true,
   "blocks": [
     {
       "type": "html",
-      "html": "<p>GeoChat on WinTAKin sisäänrakennettu tekstiviestintä. Käytä sitä koordinointiin yksikkösi kanssa poistumatta kartalta.</p>\n<blockquote>\n<p>Luonnos: kirjoitettu ilman kuvakaappauksia. Lisää WinTAKin GeoChat-kuvakaappaukset, kun niitä on saatavilla.</p>\n</blockquote>"
+      "html": "<p>GeoChat on WinTAKin sisäänrakennettu tekstiviestintä. Käytä sitä koordinointiin yksikkösi kanssa poistumatta kartalta.</p>"
     },
     {
       "type": "slideset",

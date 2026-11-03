@@ -12,7 +12,7 @@
     "Aloita lataamisesta"
   ],
   "createdAt": "2026-06-18T19:35:29.641Z",
-  "updatedAt": "2026-06-18T20:25:40.143Z",
+  "updatedAt": "2026-11-01T21:35:07.754Z",
   "headings": [],
   "translations": {
     "en": "/en/guides/tak-guide/start-from-download-vQGTWj6wET",
@@ -340,7 +340,7 @@
     },
     {
       "type": "html",
-      "html": "<p>Kun asetukset on tehty onnistuneesti ja yhteys takserveriin on muodostettu, jatka osioon <a href=\"/en/guides/tak-guide/data-sync-U4cc7UE9hg\">Receive Feeds</a></p>"
+      "html": "<p>Kun asetukset on tehty ja yhteys TAK-palvelimeen on muodostettu, jatka kohtaan <a href=\"/fi/guides/tak-guide/datan-synkronointi-lzOCvJIN5S\">Datan synkronointi</a>.</p>"
     }
   ]
 }

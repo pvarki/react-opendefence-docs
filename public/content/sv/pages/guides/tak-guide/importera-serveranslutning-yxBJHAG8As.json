@@ -12,7 +12,7 @@
     "Importera serveranslutning"
   ],
   "createdAt": "2026-06-18T19:39:05.465Z",
-  "updatedAt": "2026-06-18T20:26:38.685Z",
+  "updatedAt": "2026-11-01T21:30:53.562Z",
   "headings": [],
   "translations": {
     "en": "/en/guides/tak-guide/importing-server-connection-URmd6F0UU5",
@@ -109,10 +109,6 @@
           ]
         }
       ]
-    },
-    {
-      "type": "html",
-      "html": "<p>När TAK Tracker är ansluten till servern, fortsätt till…</p>"
     }
   ]
 }

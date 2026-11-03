@@ -417,18 +417,6 @@
           "children": [
             {
               "type": "doc",
-              "id": "installera-uas-tool-plugin-VxIbbgH2nd",
-              "label": "Installera UAS Tool-plugin",
-              "slug": "installera-uas-tool-plugin-VxIbbgH2nd"
-            },
-            {
-              "type": "doc",
-              "id": "anslut-uas-tool-automatiskt-till-mediamtx-HeWL5goTM5",
-              "label": "Anslut UAS Tool automatiskt till MediaMTX",
-              "slug": "anslut-uas-tool-automatiskt-till-mediamtx-HeWL5goTM5"
-            },
-            {
-              "type": "doc",
               "id": "oppna-uas-verktyget-och-las-telemetri-wdcDijyRka",
               "label": "Öppna UAS-verktyget och läs telemetri",
               "slug": "oppna-uas-verktyget-och-las-telemetri-wdcDijyRka"
@@ -830,46 +818,6 @@
           "id": "datasynkronisering-sfvICpIRhr",
           "label": "Datasynkronisering",
           "slug": "datasynkronisering-sfvICpIRhr"
-        }
-      ]
-    },
-    {
-      "type": "group",
-      "id": "anvandning-efter-roll-IJYD3a1A1k",
-      "label": "Användning efter roll",
-      "clientId": "itak-Ic4xJNBg1l",
-      "children": [
-        {
-          "type": "doc",
-          "id": "oversikt-nzDS5OWw0k",
-          "label": "Översikt",
-          "slug": "oversikt-nzDS5OWw0k"
-        },
-        {
-          "type": "doc",
-          "id": "soldat-zS7E1xGRtx",
-          "label": "Soldat",
-          "slug": "soldat-zS7E1xGRtx"
-        },
-        {
-          "type": "doc",
-          "id": "kommandoplats-nXnVNhBp5i",
-          "label": "Kommandoplats",
-          "slug": "kommandoplats-nXnVNhBp5i"
-        }
-      ]
-    },
-    {
-      "type": "group",
-      "id": "itak-Ic4xJNBg1l",
-      "label": "iTAK",
-      "clientId": "itak-Ic4xJNBg1l",
-      "children": [
-        {
-          "type": "doc",
-          "id": "felsokning-hCbMpa5tPi",
-          "label": "Felsökning",
-          "slug": "felsokning-hCbMpa5tPi"
         }
       ]
     },

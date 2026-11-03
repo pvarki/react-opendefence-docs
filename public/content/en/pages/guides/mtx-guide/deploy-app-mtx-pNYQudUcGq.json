@@ -9,7 +9,7 @@
     "Deploy App - MTX"
   ],
   "createdAt": "2026-03-08T05:30:50.873Z",
-  "updatedAt": "2026-03-08T05:32:11.424Z",
+  "updatedAt": "2026-11-02T15:12:44.286Z",
   "headings": [
     {
       "depth": 2,
@@ -18,7 +18,7 @@
     }
   ],
   "translations": {
-    "en": "/sv/guides/mtx-guide/deploy-app-mtx-C43AiOwo2H",
+    "en": "/en/guides/mtx-guide/deploy-app-mtx-pNYQudUcGq",
     "fi": "/fi/guides/mtx-guide/deploy-app-mtx-yHJ4LHVgZZ",
     "sv": "/sv/guides/mtx-guide/deploy-app-mtx-C43AiOwo2H"
   },
@@ -149,7 +149,7 @@
     },
     {
       "type": "html",
-      "html": "<p>After seeing Deploy App - MTX, continue to <a href=\"/doc/e96c8450-ee15-4607-be9b-d1a479bcc24b\">Publish Stream</a>for more depth on publishing or for more in depth for watching <a href=\"/doc/9c3d844b-ebb7-453c-9d30-7bab0891f66e\">Watch Stream</a></p>"
+      "html": "<p>To publish a stream, continue to <a href=\"/en/guides/mtx-guide/gopro-gDG1IhzxmJ\">GoPro</a>, <a href=\"/en/guides/mtx-guide/opentak-icu-xN1NdJaGa8\">OpenTAK ICU</a> or <a href=\"/en/guides/mtx-guide/uas-tool-DwT6M5lj9c\">UAS Tool</a>. To watch a stream, continue to <a href=\"/en/guides/mtx-guide/browser-OODFuhucDG\">Browser</a>.</p>"
     }
   ]
 }

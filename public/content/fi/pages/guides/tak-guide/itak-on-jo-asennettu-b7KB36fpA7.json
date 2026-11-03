@@ -12,7 +12,7 @@
     "iTAK on jo asennettu"
   ],
   "createdAt": "2026-06-18T19:35:30.218Z",
-  "updatedAt": "2026-06-18T20:25:41.869Z",
+  "updatedAt": "2026-11-01T21:35:08.699Z",
   "headings": [],
   "translations": {
     "en": "/en/guides/tak-guide/itak-already-installed-DeEex1hIH2",
@@ -34,7 +34,7 @@
     },
     {
       "type": "html",
-      "html": "<p>iTAKin poistamisen jälkeen jatka kohtaan <a href=\"/en/guides/tak-guide/start-from-download-vQGTWj6wET\">Start from Download</a></p>"
+      "html": "<p>iTAKin poistamisen jälkeen jatka kohtaan <a href=\"/fi/guides/tak-guide/aloita-lataamisesta-qtXafhRjdo\">Aloita lataamisesta</a></p>"
     }
   ]
 }

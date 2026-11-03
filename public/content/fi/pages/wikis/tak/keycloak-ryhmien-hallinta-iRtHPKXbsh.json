@@ -11,7 +11,7 @@
     "Keycloak - Ryhmien hallinta"
   ],
   "createdAt": "2025-12-08T02:16:41.455Z",
-  "updatedAt": "2026-02-19T13:52:30.345Z",
+  "updatedAt": "2026-11-03T09:00:50.345Z",
   "headings": [
     {
       "depth": 2,
@@ -44,7 +44,7 @@
     },
     {
       "type": "html",
-      "html": "<p>Nykyinen Deploy App -ympäristö käyttää Keycloakia käyttäjäryhmien hallintaan. Nämä ryhmät välitetään takserverille, ja yhdistetyt käyttäjät saavat ryhmät automaattisesti.</p>\n<p>Pitkän aikavälin tavoitteena on tuoda ryhmähallinta jossain määrin osaksi Deploy App -sovellusta.</p>\n<h2 id=\"perusohjeet\"><a href=\"#perusohjeet\">Perusohjeet:</a></h2>\n<ul>\n<li>Kirjaudu Keycloakiin osoitteessa <strong>kc.your-server.fi</strong> käyttäen Rasenmäherin mukana toimitettua <strong>mTLS-varmennetta</strong>.</li>\n<li>Siirry sivupalkista <strong>Groups (Ryhmät)</strong> -osioon.</li>\n<li>Siirry <strong>tak</strong>-ryhmään hallitaksesi TAK-ryhmiä.</li>\n<li>Luo uusi ryhmä <strong>tak</strong>-ryhmän <strong>Child groups</strong> -sivulla\n<ul>\n<li>Ryhmän nimen tulee olla muodossa <strong>tak_groupname</strong></li>\n</ul>\n</li>\n<li>Avaa juuri luotu ryhmä.</li>\n<li>Siirry <strong>Members (Jäsenet)</strong> -osioon ja valitse <strong>Add member</strong>\n<ul>\n<li>Valitse käyttäjät, jotka haluat lisätä ryhmään.</li>\n</ul>\n</li>\n</ul>\n<p>Uuteen ryhmään lisätyt käyttäjät, jotka ovat yhteydessä takserveriin, saavat tämän ryhmän automaattisesti.</p>\n<h3 id=\"perusohjeiden-kuvat\"><a href=\"#perusohjeiden-kuvat\">Perusohjeiden kuvat</a></h3>"
+      "html": "<p>Nykyinen Deploy App -ympäristö käyttää Keycloakia käyttäjäryhmien hallintaan. Nämä ryhmät välitetään takserverille, ja yhdistetyt käyttäjät saavat ryhmät automaattisesti.</p>\n<p>Pitkän aikavälin tavoitteena on tuoda ryhmähallinta jossain määrin osaksi Deploy App -sovellusta.</p>\n<h2 id=\"perusohjeet\"><a href=\"#perusohjeet\">Perusohjeet:</a></h2>\n<ul>\n<li>Kirjaudu Keycloakiin osoitteessa <strong>kc.your-server.fi</strong> käyttäen Deploy Appin mukana toimitettua <strong>mTLS-varmennetta</strong>.</li>\n<li>Siirry sivupalkista <strong>Groups (Ryhmät)</strong> -osioon.</li>\n<li>Siirry <strong>tak</strong>-ryhmään hallitaksesi TAK-ryhmiä.</li>\n<li>Luo uusi ryhmä <strong>tak</strong>-ryhmän <strong>Child groups</strong> -sivulla\n<ul>\n<li>Ryhmän nimen tulee olla muodossa <strong>tak_groupname</strong></li>\n</ul>\n</li>\n<li>Avaa juuri luotu ryhmä.</li>\n<li>Siirry <strong>Members (Jäsenet)</strong> -osioon ja valitse <strong>Add member</strong>\n<ul>\n<li>Valitse käyttäjät, jotka haluat lisätä ryhmään.</li>\n</ul>\n</li>\n</ul>\n<p>Uuteen ryhmään lisätyt käyttäjät, jotka ovat yhteydessä takserveriin, saavat tämän ryhmän automaattisesti.</p>\n<h3 id=\"perusohjeiden-kuvat\"><a href=\"#perusohjeiden-kuvat\">Perusohjeiden kuvat</a></h3>"
     },
     {
       "type": "image",

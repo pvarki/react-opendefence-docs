@@ -59,7 +59,7 @@
     },
     {
       "type": "html",
-      "html": "<h2 id=\"product-flavors-pick-the-right-one\"><a href=\"#product-flavors-pick-the-right-one\">Product flavors: pick the right one</a></h2>\n<p>The 5.x example defines a compact set of flavors — <code>**civ**</code> (default), <code>**mil**</code>, and <code>**gov**</code> — generated from a <code>supportedFlavors</code> list. Each sets the manifest's <code>plugin-api</code> marker to the matching ATAK API:</p>"
+      "html": "<h2 id=\"product-flavors-pick-the-right-one\"><a href=\"#product-flavors-pick-the-right-one\">Product flavors: pick the right one</a></h2>\n<p>The 5.x example defines a compact set of flavors — <strong><code>civ</code></strong> (default), <strong><code>mil</code></strong>, and <strong><code>gov</code></strong> — generated from a <code>supportedFlavors</code> list. Each sets the manifest's <code>plugin-api</code> marker to the matching ATAK API:</p>"
     },
     {
       "type": "code",
@@ -68,7 +68,7 @@
     },
     {
       "type": "html",
-      "html": "<p>For open-source development you build the <code>**civ**</code> flavor, because you install alongside <strong>ATAK-CIV</strong> (<code>gov</code> maps its API marker to <code>CIV</code> too). The plugin's API marker must match the ATAK build on the device or ATAK will refuse to load it.</p>\n<blockquote>\n<p>ATAK 4.x shipped a much longer flavor list (<code>fvey</code>, <code>aus</code>, <code>nzl</code>, <code>swe</code>, …); 5.x's example trims it to <code>civ</code>/<code>mil</code>/<code>gov</code>. The build-task names below are unaffected.</p>\n</blockquote>\n<h2 id=\"build--install-commands\"><a href=\"#build--install-commands\">Build &#x26; install commands</a></h2>\n<p>Gradle tasks combine the <strong>flavor</strong> and the <strong>build type</strong> (<code>Debug</code> / <code>Release</code>):</p>"
+      "html": "<p>For open-source development you build the <strong><code>civ</code></strong> flavor, because you install alongside <strong>ATAK-CIV</strong> (<code>gov</code> maps its API marker to <code>CIV</code> too). The plugin's API marker must match the ATAK build on the device or ATAK will refuse to load it.</p>\n<blockquote>\n<p>ATAK 4.x shipped a much longer flavor list (<code>fvey</code>, <code>aus</code>, <code>nzl</code>, <code>swe</code>, …); 5.x's example trims it to <code>civ</code>/<code>mil</code>/<code>gov</code>. The build-task names below are unaffected.</p>\n</blockquote>\n<h2 id=\"build--install-commands\"><a href=\"#build--install-commands\">Build &#x26; install commands</a></h2>\n<p>Gradle tasks combine the <strong>flavor</strong> and the <strong>build type</strong> (<code>Debug</code> / <code>Release</code>):</p>"
     },
     {
       "type": "code",

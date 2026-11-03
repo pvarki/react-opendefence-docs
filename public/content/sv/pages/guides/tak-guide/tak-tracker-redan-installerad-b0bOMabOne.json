@@ -12,7 +12,7 @@
     "TAK Tracker redan installerad"
   ],
   "createdAt": "2026-06-18T19:45:49.131Z",
-  "updatedAt": "2026-06-18T20:27:32.224Z",
+  "updatedAt": "2026-11-01T21:30:56.329Z",
   "headings": [],
   "translations": {
     "en": "/en/guides/tak-guide/tak-tracker-already-installed-DmWqDN5jLp",
@@ -34,7 +34,7 @@
     },
     {
       "type": "html",
-      "html": "<p>Efter att du avinstallerat TAK Tracker, fortsätt till <a href=\"/en/guides/tak-guide/start-from-download-5tAQBOfF65\">Börja från nedladdning</a></p>"
+      "html": "<p>Efter att du avinstallerat TAK Tracker, fortsätt till <a href=\"/sv/guides/tak-guide/borja-med-nedladdning-syCbgRYiOo\">Börja med nedladdning</a></p>"
     }
   ]
 }

@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 1,
+  "id": "5d779ae3-0e14-4d51-92a8-298f742370e2",
+  "slug": "vlc-player-8p9jKo0ZTH",
+  "collection": "guides/mtx-guide",
+  "locale": "sv",
+  "title": "VLC Player",
+  "breadcrumb": [
+    "Titta på streamen",
+    "VLC Player"
+  ],
+  "createdAt": "2025-12-06T09:15:15.807Z",
+  "updatedAt": "2026-11-02T15:06:55.687Z",
+  "headings": [],
+  "translations": {
+    "fi": "/fi/guides/mtx-guide/vlc-player-fUPdjIb8kS",
+    "en": "/en/guides/mtx-guide/vlc-player-w1SqNUFWHC",
+    "sv": "/sv/guides/mtx-guide/vlc-player-8p9jKo0ZTH"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Titta på en livestream i mediaspelaren VLC med en färdig fil från Deploy App.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Installera VLC",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Installera mediaspelaren VLC, version 3.0 eller senare</li>\n<li>Hämta den från <a href=\"http://videolan.org\" target=\"_blank\" rel=\"noopener noreferrer\">videolan.org</a> eller enhetens appbutik</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/f7d15b9f8dbd7a72.webp",
+              "width": 1044,
+              "height": 454
+            }
+          ]
+        },
+        {
+          "title": "Öppna strömmen i Deploy App",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Öppna Deploy App</li>\n<li>Gå till <strong>startsidan</strong> och starta <strong>MTX</strong></li>\n<li>Välj en ström som är märkt <strong>LIVE</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/71a5dd21606047ee.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "Ladda ner VLC-paketet",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Välj <strong>Anslutningsalternativ</strong></li>\n<li>Tryck på <strong>VLC</strong> under <strong>Ladda ner paket</strong></li>\n<li>Deploy App laddar ner en fil som slutar på <strong>.m3u</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/eb91f76314e0b2cc.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "Öppna paketet i VLC",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Öppna den nedladdade <strong>.m3u</strong>-filen med VLC</li>\n<li>På en dator: <strong>Media → Open File</strong></li>\n<li>Strömmen börjar spelas</li>\n<li>Filen innehåller ditt lösenord och SRT-lösenfrasen: dela den inte, och radera den när du inte längre behöver den</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/7599fe1a836d9666.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "Om strömmen inte öppnas",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Öppna <strong>Avancerade länkar</strong> under <strong>Anslutningsalternativ</strong></li>\n<li>Kopiera <strong>HLS</strong>-adressen och lägg till <strong>/index.m3u8</strong> i slutet</li>\n<li>På en dator: gå till <strong>Media → Open Network Stream</strong> i VLC, klistra in adressen och tryck på <strong>Play</strong></li>\n<li>På en telefon: gå till <strong>More → Streams → New Stream</strong> i VLC, klistra in adressen i <strong>Enter network address</strong> och starta uppspelningen</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/5e954b4a575e1dbe.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "Nu kan du titta på en ström i VLC",
+          "layout": "text",
+          "html": "<ul>\n<li>Du kan stänga den här guiden.</li>\n</ul>\n<p>Om du vill titta i webbläsaren, se <a href=\"/sv/guides/mtx-guide/webblasare-ww2sENtpLr\">Webbläsare</a></p>",
+          "images": []
+        }
+      ]
+    }
+  ]
+}

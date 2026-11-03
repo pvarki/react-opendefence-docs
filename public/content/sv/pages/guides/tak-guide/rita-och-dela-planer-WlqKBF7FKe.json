@@ -12,7 +12,7 @@
     "Rita och dela planer"
   ],
   "createdAt": "2026-06-18T19:26:18.204Z",
-  "updatedAt": "2026-06-18T20:14:01.507Z",
+  "updatedAt": "2026-11-01T21:30:07.347Z",
   "headings": [],
   "translations": {
     "en": "/en/guides/tak-guide/draw-share-plans-fxjT3hDZ5p",
@@ -151,10 +151,6 @@
           "images": []
         }
       ]
-    },
-    {
-      "type": "html",
-      "html": "<p>När du har testat Rita och dela planer med gott resultat, fortsätt till <a href=\"/en/guides/tak-guide/geofences-wgaLkSEvef\">Geofences</a></p>"
     }
   ]
 }

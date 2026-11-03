@@ -12,7 +12,7 @@
     "ATAK - Geofences - Avancerade funktioner"
   ],
   "createdAt": "2026-06-18T19:26:20.938Z",
-  "updatedAt": "2026-06-18T20:14:40.720Z",
+  "updatedAt": "2026-11-01T21:19:32.916Z",
   "headings": [
     {
       "depth": 2,
@@ -155,10 +155,6 @@
           ]
         }
       ]
-    },
-    {
-      "type": "html",
-      "html": "<p>Nar du har testat Geofences framgangsrikt, fortsatt till</p>"
     }
   ]
 }

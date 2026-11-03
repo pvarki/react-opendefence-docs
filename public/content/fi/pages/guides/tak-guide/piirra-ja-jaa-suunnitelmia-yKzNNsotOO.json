@@ -12,17 +12,18 @@
     "Piirrä ja jaa suunnitelmia"
   ],
   "createdAt": "2026-06-18T19:33:29.043Z",
-  "updatedAt": "2026-06-18T20:23:51.193Z",
+  "updatedAt": "2026-11-01T21:12:44.152Z",
   "headings": [],
   "translations": {
     "en": "/en/guides/tak-guide/draw-share-plans-gUzuEffh5v",
     "fi": "/fi/guides/tak-guide/piirra-ja-jaa-suunnitelmia-yKzNNsotOO",
     "sv": "/sv/guides/tak-guide/rita-och-dela-planer-C7UNuLt8oq"
   },
+  "underDevelopment": true,
   "blocks": [
     {
       "type": "html",
-      "html": "<p>WinTAKin piirtotyökaluilla voit hahmotella suunnitelmia — reittejä, alueita ja johtamistoimenpiteitä — ja jakaa ne yksikkösi kanssa syötteen kautta.</p>\n<blockquote>\n<p>Luonnos: kirjoitettu ilman kuvakaappauksia. Lisää WinTAKin piirtotyökalujen kuvakaappaukset, kun niitä on saatavilla.</p>\n</blockquote>"
+      "html": "<p>WinTAKin piirtotyökaluilla voit hahmotella suunnitelmia — reittejä, alueita ja johtamistoimenpiteitä — ja jakaa ne yksikkösi kanssa syötteen kautta.</p>"
     },
     {
       "type": "slideset",

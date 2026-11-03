@@ -12,7 +12,7 @@
     "Point Dropper -tool"
   ],
   "createdAt": "2025-09-26T14:09:14.169Z",
-  "updatedAt": "2026-02-19T13:04:02.956Z",
+  "updatedAt": "2026-11-01T19:33:48.820Z",
   "headings": [
     {
       "depth": 2,
@@ -37,7 +37,8 @@
   ],
   "translations": {
     "en": "/en/wikis/tak/point-dropper-tool-6BNurdPXpp",
-    "fi": "/fi/wikis/tak/point-dropper-tyokalu-eM4UMc4BBc"
+    "fi": "/fi/wikis/tak/point-dropper-tyokalu-eM4UMc4BBc",
+    "sv": "/sv/wikis/tak/point-dropper-verktyget-xa1yEIE7Bn"
   },
   "blocks": [
     {
@@ -61,7 +62,7 @@
     },
     {
       "type": "pdf",
-      "src": "attachments/47b6722a-180c-4d52-928f-91fd35f9ba0c.pdf",
+      "src": "/content/files/7e37309e31177dfd.pdf",
       "title": "ATAK 5.6 Point Dropper.pdf"
     }
   ]

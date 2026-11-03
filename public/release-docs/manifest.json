@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-31T19:30:50.138Z",
+  "generatedAt": "2026-11-03T22:32:58.354Z",
   "components": [
     {
       "id": "opendefence-platform",
@@ -18,6 +18,11 @@
       "name": "TAK Integration",
       "repo": "pvarki/python-tak-rmapi",
       "releases": [
+        {
+          "file": "v1.18.0-261027.json",
+          "tag": "v1.18.0+261027",
+          "publishedAt": "2026-11-02T10:37:32Z"
+        },
         {
           "file": "v1.17.3-261029.json",
           "tag": "v1.17.3+261029",

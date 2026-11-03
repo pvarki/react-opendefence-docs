@@ -10,7 +10,7 @@
     "GoPro"
   ],
   "createdAt": "2025-12-06T09:15:33.315Z",
-  "updatedAt": "2026-02-20T07:30:34.049Z",
+  "updatedAt": "2026-11-03T09:00:03.214Z",
   "headings": [
     {
       "depth": 2,
@@ -120,7 +120,7 @@
     },
     {
       "type": "html",
-      "html": "<p>After successfully streaming, continue to <a href=\"/doc/9c3d844b-ebb7-453c-9d30-7bab0891f66e\">Watch Stream</a></p>"
+      "html": "<p>Once you have started the stream, continue to the section <a href=\"/en/guides/mtx-guide/browser-OODFuhucDG\">Watch Stream</a></p>"
     }
   ]
 }

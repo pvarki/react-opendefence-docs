@@ -12,9 +12,18 @@
     "Lataa sovellus"
   ],
   "createdAt": "2026-06-18T19:25:11.122Z",
-  "updatedAt": "2026-06-26T11:52:08.505Z",
+  "updatedAt": "2026-11-01T21:30:02.593Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/download-the-app-bJC3Opax4P",
+    "fi": "/fi/guides/tak-guide/lataa-sovellus-ceMKXWjxoQ",
+    "sv": "/sv/guides/tak-guide/ladda-ner-appen-ep7TvO7XkN"
+  },
   "blocks": [
+    {
+      "type": "html",
+      "html": "<hr>"
+    },
     {
       "type": "slideset",
       "source": "legacy",
@@ -272,10 +281,6 @@
           ]
         }
       ]
-    },
-    {
-      "type": "html",
-      "html": "<p>ATAKin asennuksen ja alustuksen jälkeen jatka kohtaan <a href=\"/en/guides/tak-guide/import-server-connection-from-deploy-app-PQ4dCV2SYR\">ATAK Already Installed</a></p>"
     }
   ]
 }

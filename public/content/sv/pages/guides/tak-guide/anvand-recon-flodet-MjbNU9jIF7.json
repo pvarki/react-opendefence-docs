@@ -13,7 +13,7 @@
     "Använd RECON-flödet"
   ],
   "createdAt": "2026-06-18T19:28:14.163Z",
-  "updatedAt": "2026-06-18T20:17:16.364Z",
+  "updatedAt": "2026-11-01T21:30:13.528Z",
   "headings": [],
   "translations": {
     "en": "/en/guides/tak-guide/use-recon-feed-1eKYHfIBys",
@@ -89,7 +89,7 @@
     },
     {
       "type": "html",
-      "html": "<p>När RECON-flödet är klart för dig, fortsätt till</p>\n<p>Läs mer om RECON-flödet på TAK Wiki <a href=\"/en/wikis/tak/takserver-recon-feed-6S3IuBlBTY\">Takserver RECON feed</a></p>\n<p>Läs mer om att vidarebefordra observationer till kommandoplatsen på TAK WIKI <a href=\"/en/wikis/tak/forwarding-observations-K5fcmMIAnp\">Forwarding Observations</a></p>"
+      "html": "<p>Läs mer om RECON-flödet på TAK Wiki <a href=\"/sv/wikis/tak/takserver-recon-flodet-da0vEyjl28\">Takserver RECON-flödet</a></p>\n<p>Läs mer om att vidarebefordra observationer till kommandoplatsen på TAK WIKI <a href=\"/sv/wikis/tak/vidarebefordran-av-observation-ee7btUhwIp\">Vidarebefordran av Observation</a></p>"
     }
   ]
 }

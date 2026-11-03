@@ -12,17 +12,18 @@
     "Blue force tracking"
   ],
   "createdAt": "2026-06-15T13:53:00.074Z",
-  "updatedAt": "2026-06-18T20:23:34.011Z",
+  "updatedAt": "2026-11-01T21:12:05.220Z",
   "headings": [],
   "translations": {
     "en": "/en/guides/tak-guide/blue-force-tracking-uv3kHr7LSr",
     "fi": "/fi/guides/tak-guide/omien-joukkojen-seuranta-tKICHJUF25",
     "sv": "/sv/guides/tak-guide/sparning-av-egna-styrkor-bRtgJ9hDGR"
   },
+  "underDevelopment": true,
   "blocks": [
     {
       "type": "html",
-      "html": "<p>Once you are connected and on the map, WinTAK shows everyone in your unit in real time. This shared picture — who is where — is blue force tracking.</p>\n<blockquote>\n<p>Draft: written without screenshots. Add images of TAK users on the map and an opened user card when available.</p>\n</blockquote>"
+      "html": "<p>Once you are connected and on the map, WinTAK shows everyone in your unit in real time. This shared picture — who is where — is blue force tracking.</p>"
     },
     {
       "type": "slideset",

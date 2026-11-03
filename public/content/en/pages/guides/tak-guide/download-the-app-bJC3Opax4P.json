@@ -12,9 +12,18 @@
     "Download the App"
   ],
   "createdAt": "2025-12-05T22:06:23.638Z",
-  "updatedAt": "2026-06-26T11:52:06.715Z",
+  "updatedAt": "2026-11-01T21:29:06.107Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/download-the-app-bJC3Opax4P",
+    "fi": "/fi/guides/tak-guide/lataa-sovellus-ceMKXWjxoQ",
+    "sv": "/sv/guides/tak-guide/ladda-ner-appen-ep7TvO7XkN"
+  },
   "blocks": [
+    {
+      "type": "html",
+      "html": "<hr>"
+    },
     {
       "type": "slideset",
       "source": "legacy",
@@ -272,10 +281,6 @@
           ]
         }
       ]
-    },
-    {
-      "type": "html",
-      "html": "<p>After installation and initialization of ATAK continue to <a href=\"/en/guides/tak-guide/import-server-connection-from-deploy-app-PQ4dCV2SYR\">ATAK Already Installed</a></p>"
     }
   ]
 }

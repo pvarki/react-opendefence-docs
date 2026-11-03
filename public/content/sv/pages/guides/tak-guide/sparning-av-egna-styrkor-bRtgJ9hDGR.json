@@ -12,17 +12,18 @@
     "Spårning av egna styrkor"
   ],
   "createdAt": "2026-06-18T19:32:31.654Z",
-  "updatedAt": "2026-06-18T20:23:35.779Z",
+  "updatedAt": "2026-11-01T21:13:08.428Z",
   "headings": [],
   "translations": {
     "en": "/en/guides/tak-guide/blue-force-tracking-uv3kHr7LSr",
     "fi": "/fi/guides/tak-guide/omien-joukkojen-seuranta-tKICHJUF25",
     "sv": "/sv/guides/tak-guide/sparning-av-egna-styrkor-bRtgJ9hDGR"
   },
+  "underDevelopment": true,
   "blocks": [
     {
       "type": "html",
-      "html": "<p>När du är ansluten och syns på kartan visar WinTAK alla i din enhet i realtid. Den här delade lägesbilden — vem som är var — är spårning av egna styrkor (blue force tracking).</p>\n<blockquote>\n<p>Utkast: skrivet utan skärmbilder. Lägg till bilder på TAK-användare på kartan och ett öppnat användarkort när de finns tillgängliga.</p>\n</blockquote>"
+      "html": "<p>När du är ansluten och syns på kartan visar WinTAK alla i din enhet i realtid. Den här delade lägesbilden — vem som är var — är spårning av egna styrkor (blue force tracking).</p>"
     },
     {
       "type": "slideset",

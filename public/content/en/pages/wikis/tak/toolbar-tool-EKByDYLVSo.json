@@ -12,7 +12,7 @@
     "Toolbar -tool"
   ],
   "createdAt": "2025-11-05T01:26:49.053Z",
-  "updatedAt": "2026-02-19T13:05:55.929Z",
+  "updatedAt": "2026-11-01T19:33:35.049Z",
   "headings": [
     {
       "depth": 2,
@@ -32,7 +32,8 @@
   ],
   "translations": {
     "en": "/en/wikis/tak/toolbar-tool-EKByDYLVSo",
-    "fi": "/fi/wikis/tak/toolbar-tyokalu-bYyF756MBb"
+    "fi": "/fi/wikis/tak/toolbar-tyokalu-bYyF756MBb",
+    "sv": "/sv/wikis/tak/toolbar-verktyget-DEWC4UgT03"
   },
   "blocks": [
     {
@@ -48,7 +49,7 @@
     },
     {
       "type": "pdf",
-      "src": "attachments/575db69d-4884-49e2-b504-e41282d3bcdf.pdf",
+      "src": "/content/files/792bf9db0a0eccfb.pdf",
       "title": "ATAK 5.6 Toolbar.pdf"
     }
   ]

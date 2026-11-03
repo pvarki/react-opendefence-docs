@@ -59,7 +59,7 @@
     },
     {
       "type": "html",
-      "html": "<p>There's also a simpler <code>**MarkerDetailHandler**</code> variant (the <code>helloworld</code> <code>SpecialDetailHandler</code> for the <code>__special</code> tag) when you only care about <code>Marker</code>s — its methods are <code>toCotDetail(Marker, CotDetail)</code> and <code>toMarkerMetadata(Marker, CotEvent, CotDetail)</code>.</p>\n<p>Register in <code>MapComponent.onCreate(...)</code> and <strong>unregister in teardown</strong>:</p>"
+      "html": "<p>There's also a simpler <strong><code>MarkerDetailHandler</code></strong> variant (the <code>helloworld</code> <code>SpecialDetailHandler</code> for the <code>__special</code> tag) when you only care about <code>Marker</code>s — its methods are <code>toCotDetail(Marker, CotDetail)</code> and <code>toMarkerMetadata(Marker, CotEvent, CotDetail)</code>.</p>\n<p>Register in <code>MapComponent.onCreate(...)</code> and <strong>unregister in teardown</strong>:</p>"
     },
     {
       "type": "code",

@@ -12,9 +12,18 @@
     "Importera serveranslutning från Deploy App"
   ],
   "createdAt": "2026-06-18T19:25:12.071Z",
-  "updatedAt": "2026-06-26T11:52:10.267Z",
+  "updatedAt": "2026-11-01T21:22:57.429Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/import-server-connection-from-deploy-app-PQ4dCV2SYR",
+    "fi": "/fi/guides/tak-guide/tuo-palvelinyhteys-deploy-appista-orW4BArnHi",
+    "sv": "/sv/guides/tak-guide/importera-serveranslutning-fran-deploy-app-Heo41dBNko"
+  },
   "blocks": [
+    {
+      "type": "html",
+      "html": "<hr>"
+    },
     {
       "type": "slideset",
       "source": "legacy",
@@ -86,10 +95,6 @@
           ]
         }
       ]
-    },
-    {
-      "type": "html",
-      "html": "<p>När anslutningen till takservern har lyckats, fortsätt till <a href=\"/en/guides/tak-guide/feeds-with-data-sync-thmayduqMx\">Receive Feeds</a></p>"
     }
   ]
 }

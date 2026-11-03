@@ -12,7 +12,7 @@
     "Palvelinyhteyden tuonti"
   ],
   "createdAt": "2026-06-18T19:39:05.193Z",
-  "updatedAt": "2026-06-18T20:26:36.775Z",
+  "updatedAt": "2026-11-01T21:30:53.106Z",
   "headings": [],
   "translations": {
     "en": "/en/guides/tak-guide/importing-server-connection-URmd6F0UU5",
@@ -109,10 +109,6 @@
           ]
         }
       ]
-    },
-    {
-      "type": "html",
-      "html": "<p>Kun TAK Tracker on yhdistetty palvelimeen, jatka kohtaan…</p>"
     }
   ]
 }

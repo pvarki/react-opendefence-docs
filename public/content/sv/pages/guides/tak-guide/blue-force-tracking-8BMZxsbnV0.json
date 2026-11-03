@@ -12,7 +12,7 @@
     "Blue Force Tracking"
   ],
   "createdAt": "2026-06-18T19:25:15.079Z",
-  "updatedAt": "2026-06-18T20:13:47.230Z",
+  "updatedAt": "2026-11-01T21:20:18.220Z",
   "headings": [],
   "translations": {
     "en": "/en/guides/tak-guide/blue-force-tracking-vZTVlgAzX8",
@@ -61,10 +61,6 @@
           ]
         }
       ]
-    },
-    {
-      "type": "html",
-      "html": "<p>När Blue Force Tracking har testats framgångsrikt, fortsätt till <a href=\"/en/guides/tak-guide/point-dropper-markers-lsYmFrTvqH\">Point Dropper - Markers</a></p>"
     }
   ]
 }

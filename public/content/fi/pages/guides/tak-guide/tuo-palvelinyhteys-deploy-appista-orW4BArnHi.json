@@ -12,9 +12,18 @@
     "Tuo palvelinyhteys Deploy Appista"
   ],
   "createdAt": "2026-06-18T19:25:11.736Z",
-  "updatedAt": "2026-06-26T11:52:09.105Z",
+  "updatedAt": "2026-11-01T21:23:09.172Z",
   "headings": [],
+  "translations": {
+    "en": "/en/guides/tak-guide/import-server-connection-from-deploy-app-PQ4dCV2SYR",
+    "fi": "/fi/guides/tak-guide/tuo-palvelinyhteys-deploy-appista-orW4BArnHi",
+    "sv": "/sv/guides/tak-guide/importera-serveranslutning-fran-deploy-app-Heo41dBNko"
+  },
   "blocks": [
+    {
+      "type": "html",
+      "html": "<hr>"
+    },
     {
       "type": "slideset",
       "source": "legacy",
@@ -86,10 +95,6 @@
           ]
         }
       ]
-    },
-    {
-      "type": "html",
-      "html": "<p>Kun yhteys takserveriin on muodostettu onnistuneesti, jatka kohtaan <a href=\"/en/guides/tak-guide/feeds-with-data-sync-thmayduqMx\">Receive Feeds</a></p>"
     }
   ]
 }

@@ -12,7 +12,7 @@
     "Hantering av WinTAK-tillägg"
   ],
   "createdAt": "2026-06-18T19:33:26.254Z",
-  "updatedAt": "2026-06-18T20:23:42.817Z",
+  "updatedAt": "2026-11-01T21:30:54.931Z",
   "headings": [],
   "translations": {
     "en": "/en/guides/tak-guide/plugin-management-EphDON8hEX",
@@ -97,10 +97,6 @@
           "images": []
         }
       ]
-    },
-    {
-      "type": "html",
-      "html": "<p>Nästa steg är att konfigurera <a href=\"/en/guides/tak-guide/data-sync-VswHZNexYA\">Data Sync</a></p>"
     }
   ]
 }

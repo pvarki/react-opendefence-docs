@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 1,
+  "id": "f8359615-cc9a-47ab-972b-128643af3af7",
+  "slug": "vlc-player-fUPdjIb8kS",
+  "collection": "guides/mtx-guide",
+  "locale": "fi",
+  "title": "VLC Player",
+  "breadcrumb": [
+    "Katso Striimiä",
+    "VLC Player"
+  ],
+  "createdAt": "2025-12-09T03:44:27.952Z",
+  "updatedAt": "2026-11-02T15:06:48.273Z",
+  "headings": [],
+  "translations": {
+    "fi": "/fi/guides/mtx-guide/vlc-player-fUPdjIb8kS",
+    "en": "/en/guides/mtx-guide/vlc-player-w1SqNUFWHC",
+    "sv": "/sv/guides/mtx-guide/vlc-player-8p9jKo0ZTH"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Katso live-striimiä VLC-mediasoittimella Deploy Appin valmiin tiedoston avulla.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Asenna VLC",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Asenna VLC-mediasoitin, versio 3.0 tai uudempi</li>\n<li>Lataa se osoitteesta <a href=\"http://videolan.org\" target=\"_blank\" rel=\"noopener noreferrer\">videolan.org</a> tai laitteesi sovelluskaupasta</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/43fa9badedcf6acf.webp",
+              "width": 968,
+              "height": 489
+            }
+          ]
+        },
+        {
+          "title": "Avaa striimi Deploy Appissa",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Avaa Deploy App</li>\n<li>Siirry <strong>aloitussivulle</strong> ja käynnistä <strong>MTX</strong></li>\n<li>Valitse striimi, joka on merkitty <strong>LIVE</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/284bc9a3ed6db474.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "Lataa VLC-paketti",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Valitse <strong>Yhteysasetukset</strong></li>\n<li>Paina kohdassa <strong>Lataa paketit</strong> painiketta <strong>VLC</strong></li>\n<li>Deploy App lataa tiedoston, jonka pääte on <strong>.m3u</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/2c4314492027454f.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "Avaa paketti VLC:ssä",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Avaa ladattu <strong>.m3u</strong>-tiedosto VLC:llä</li>\n<li>Tietokoneella: <strong>Media → Open File</strong></li>\n<li>Striimi alkaa</li>\n<li>Tiedostossa ovat salasanasi ja SRT-salausavain: älä jaa sitä, ja poista se, kun et enää tarvitse sitä</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/c82baa6b9a64e6fc.webp",
+              "width": 1079,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "Jos striimi ei aukea",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Avaa kohdassa <strong>Yhteysasetukset</strong> osio <strong>Lisälinkit</strong></li>\n<li>Kopioi <strong>HLS</strong>-osoite ja lisää sen loppuun <strong>/index.m3u8</strong></li>\n<li>Tietokoneella: siirry VLC:ssä kohtaan <strong>Media → Open Network Stream</strong>, liitä osoite ja paina <strong>Play</strong></li>\n<li>Puhelimella: siirry VLC:ssä kohtaan <strong>Lisää → Suoratoistot → Uusi suoratoisto</strong>, liitä osoite verkko-osoitteen kenttään ja käynnistä toisto</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/e5e2668a75e4b190.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "Osaat nyt katsoa striimiä VLC:llä",
+          "layout": "text",
+          "html": "<ul>\n<li>Voit sulkea tämän oppaan.</li>\n</ul>\n<p>Jos haluat katsoa selaimessa, katso <a href=\"/fi/guides/mtx-guide/selain-0MrE4uNLAM\">Selain</a></p>",
+          "images": []
+        }
+      ]
+    }
+  ]
+}

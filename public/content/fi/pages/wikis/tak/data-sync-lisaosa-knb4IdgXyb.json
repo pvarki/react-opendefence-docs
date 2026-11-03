@@ -12,7 +12,7 @@
     "Data Sync -lisäosa"
   ],
   "createdAt": "2025-12-08T01:24:11.730Z",
-  "updatedAt": "2026-02-19T13:05:30.279Z",
+  "updatedAt": "2026-11-01T19:33:55.765Z",
   "headings": [
     {
       "depth": 2,
@@ -32,7 +32,8 @@
   ],
   "translations": {
     "en": "/en/wikis/tak/data-sync-plugin-Ux2V5Gdsry",
-    "fi": "/fi/wikis/tak/data-sync-lisaosa-knb4IdgXyb"
+    "fi": "/fi/wikis/tak/data-sync-lisaosa-knb4IdgXyb",
+    "sv": "/sv/wikis/tak/data-sync-tillagget-aqLOkDieIe"
   },
   "blocks": [
     {
@@ -44,7 +45,7 @@
     },
     {
       "type": "html",
-      "html": "<h2 id=\"lisäosan-kuvaus\"><a href=\"#lisäosan-kuvaus\"><strong>Lisäosan kuvaus</strong></a></h2>\n<p>Data Synchronization -lisäosaa käytetään synkronoimaan useita ATAK-laitteita, jotka osallistuvat samaan harjoitukseen tai tapahtumaan. Tämä lisäosa vaatii TAK Server -version 1.3.3 tai uudemman. TAK Server tallentaa kaiken “mission” eli tehtävän datan palvelinpuolen tietokantaan. Asiakaslaitteet voivat liittyä tehtävään saadakseen dynaamisia päivityksiä tehtävän muuttuessa tai synkronoidakseen tiedot, jotka ovat jääneet vastaanottamatta laitteen ollessa irti yhteydestä.</p>\n<p>Lisäosa tukee tällä hetkellä seuraavia tietotyyppejä:\n• <strong>Karttakohteet (CoT-data)</strong> – kuten merkit, muodot, reitit jne.\n• <strong>Tiedostot</strong> – mikä tahansa tiedosto voidaan synkronoida, mukaan lukien kuvat, GRG:t, asetustiedostot jne.\n• <strong>Lokit</strong> – Mission- tai Recce-lokit ovat tehtävään liitettyjä, aikaleimattuja tapahtumia\n• <strong>Chat</strong> – Jokaisella tehtävällä on pysyvä tehtäväkohtainen keskusteluhuone</p>\n<p>Mielivaltaiset CoT/UID:t voidaan liittää tehtävään siten, että kaikki näihin kohteisiin liittyvät päivitykset synkronoidaan automaattisesti kaikille tilaajille. Lisäosa mahdollistaa koko tehtävän viennin mission-paketiksi (zip-tiedosto) arkistointia tai tietojen jakamista varten muihin järjestelmiin. Se tarjoaa myös dead reckoning -navigointikyvyn tilanteisiin, joissa GPS tai muu paikannus ei ole käytettävissä.</p>\n<h2 id=\"opastusvideot\"><a href=\"#opastusvideot\">Opastusvideot</a></h2>\n<h4 id=\"data-sync-plugin-for-atak-45min\"><a href=\"#data-sync-plugin-for-atak-45min\">Data Sync Plugin for ATAK (45min)</a></h4>"
+      "html": "<h2 id=\"lisäosan-kuvaus\"><a href=\"#lisäosan-kuvaus\"><strong>Lisäosan kuvaus</strong></a></h2>\n<p>Data Synchronization -lisäosaa käytetään synkronoimaan useita ATAK-laitteita, jotka osallistuvat samaan harjoitukseen tai tapahtumaan. Tämä lisäosa vaatii TAK Server -version 1.3.3 tai uudemman. TAK Server tallentaa kaiken “mission” eli tehtävän datan palvelinpuolen tietokantaan. Asiakaslaitteet voivat liittyä tehtävään saadakseen dynaamisia päivityksiä tehtävän muuttuessa tai synkronoidakseen tiedot, jotka ovat jääneet vastaanottamatta laitteen ollessa irti yhteydestä.</p>\n<p>Lisäosa tukee tällä hetkellä seuraavia tietotyyppejä:<br>\n• <strong>Karttakohteet (CoT-data)</strong> – kuten merkit, muodot, reitit jne.<br>\n• <strong>Tiedostot</strong> – mikä tahansa tiedosto voidaan synkronoida, mukaan lukien kuvat, GRG:t, asetustiedostot jne.<br>\n• <strong>Lokit</strong> – Mission- tai Recce-lokit ovat tehtävään liitettyjä, aikaleimattuja tapahtumia<br>\n• <strong>Chat</strong> – Jokaisella tehtävällä on pysyvä tehtäväkohtainen keskusteluhuone</p>\n<p>Mielivaltaiset CoT/UID:t voidaan liittää tehtävään siten, että kaikki näihin kohteisiin liittyvät päivitykset synkronoidaan automaattisesti kaikille tilaajille. Lisäosa mahdollistaa koko tehtävän viennin mission-paketiksi (zip-tiedosto) arkistointia tai tietojen jakamista varten muihin järjestelmiin. Se tarjoaa myös dead reckoning -navigointikyvyn tilanteisiin, joissa GPS tai muu paikannus ei ole käytettävissä.</p>\n<h2 id=\"opastusvideot\"><a href=\"#opastusvideot\">Opastusvideot</a></h2>\n<h4 id=\"data-sync-plugin-for-atak-45min\"><a href=\"#data-sync-plugin-for-atak-45min\">Data Sync Plugin for ATAK (45min)</a></h4>"
     },
     {
       "type": "youtube",
@@ -64,7 +65,7 @@
     },
     {
       "type": "pdf",
-      "src": "attachments/edea572a-c5cc-4f81-926b-42937f498a74.pdf",
+      "src": "/content/files/8bb1eddebf26c493.pdf",
       "title": "ATAK 5.5.0 DataSync SUM.pdf"
     }
   ]

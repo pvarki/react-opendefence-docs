@@ -12,7 +12,7 @@
     "UAS Tool -plugin"
   ],
   "createdAt": "2025-09-14T14:42:44.206Z",
-  "updatedAt": "2026-02-19T13:05:59.638Z",
+  "updatedAt": "2026-11-01T19:32:39.388Z",
   "headings": [
     {
       "depth": 2,
@@ -47,7 +47,8 @@
   ],
   "translations": {
     "en": "/en/wikis/tak/uas-tool-plugin-Q5Mzhv56VO",
-    "fi": "/fi/wikis/tak/uas-tool-lisaosa-BXzO8q7CVq"
+    "fi": "/fi/wikis/tak/uas-tool-lisaosa-BXzO8q7CVq",
+    "sv": "/sv/wikis/tak/uas-tool-tillagget-XJJNDWfYt5"
   },
   "blocks": [
     {
@@ -79,7 +80,7 @@
     },
     {
       "type": "pdf",
-      "src": "attachments/a614cc73-3b5b-40f5-aa5b-5a08da345cce.pdf",
+      "src": "/content/files/84fd4698d62768f0.pdf",
       "title": "UAS_Tool_Quick_Start_Guide (9-23-2021).pdf"
     },
     {
@@ -88,7 +89,7 @@
     },
     {
       "type": "pdf",
-      "src": "attachments/02323555-0ba9-4809-857f-8676edf8aec0.pdf",
+      "src": "/content/files/9bdebd1004f92a48.pdf",
       "title": "ATAK UAS Tool User Manual - v12.12.pdf"
     },
     {
@@ -97,7 +98,7 @@
     },
     {
       "type": "pdf",
-      "src": "attachments/94f1ed82-ab92-46a5-b157-82f8e1faa274.pdf",
+      "src": "/content/files/62c82b43f7c9a9b5.pdf",
       "title": "UAS_Tool_12.9_FPV_Configuration v3 (1-16-2024).pdf"
     }
   ]

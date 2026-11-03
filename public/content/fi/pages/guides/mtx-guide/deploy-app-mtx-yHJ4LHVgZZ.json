@@ -9,7 +9,7 @@
     "Deploy App - MTX"
   ],
   "createdAt": "2026-03-08T05:30:46.168Z",
-  "updatedAt": "2026-03-08T05:42:09.271Z",
+  "updatedAt": "2026-11-02T15:12:44.727Z",
   "headings": [
     {
       "depth": 2,
@@ -18,7 +18,7 @@
     }
   ],
   "translations": {
-    "en": "/sv/guides/mtx-guide/deploy-app-mtx-C43AiOwo2H",
+    "en": "/en/guides/mtx-guide/deploy-app-mtx-pNYQudUcGq",
     "fi": "/fi/guides/mtx-guide/deploy-app-mtx-yHJ4LHVgZZ",
     "sv": "/sv/guides/mtx-guide/deploy-app-mtx-C43AiOwo2H"
   },
@@ -149,7 +149,7 @@
     },
     {
       "type": "html",
-      "html": "<p>Kun olet tutustunut <strong>Deploy App – MTX</strong> -osioon, jatka kohtaan <a href=\"/doc/3323b1eb-2f08-4c27-9503-cf6f70fa960d\">Julkaise Striimiä</a> saadaksesi lisää tietoa striimin julkaisemisesta tai kohtaan <a href=\"/doc/53f74fbb-29cf-4abe-b448-93c0ab9674b7\">Katso Striimiä</a>saadaksesi tarkemmat ohjeet striimin katseluun.</p>"
+      "html": "<p>Striimin julkaiseminen neuvotaan sivuilla <a href=\"/fi/guides/mtx-guide/gopro-C3E58GqT35\">GoPro</a>, <a href=\"/fi/guides/mtx-guide/opentak-icu-f0iwedgGde\">OpenTAK ICU</a> ja <a href=\"/fi/guides/mtx-guide/uas-tool-CX4y0uY0IF\">UAS Tool</a>, ja katsominen sivulla <a href=\"/fi/guides/mtx-guide/selain-0MrE4uNLAM\">Selain</a>.</p>"
     }
   ]
 }

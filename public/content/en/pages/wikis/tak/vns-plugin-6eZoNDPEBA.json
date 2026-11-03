@@ -12,7 +12,7 @@
     "VNS -plugin"
   ],
   "createdAt": "2025-09-07T00:12:02.700Z",
-  "updatedAt": "2026-02-19T13:04:08.658Z",
+  "updatedAt": "2026-11-01T19:32:54.808Z",
   "headings": [
     {
       "depth": 2,
@@ -37,7 +37,8 @@
   ],
   "translations": {
     "en": "/en/wikis/tak/vns-plugin-6eZoNDPEBA",
-    "fi": "/fi/wikis/tak/vns-lisaosa-Hnpl0Xgv25"
+    "fi": "/fi/wikis/tak/vns-lisaosa-Hnpl0Xgv25",
+    "sv": "/sv/wikis/tak/vns-tillagget-Vx7rEZ4RGp"
   },
   "blocks": [
     {
@@ -69,7 +70,7 @@
     },
     {
       "type": "pdf",
-      "src": "attachments/5774a3dc-c647-408b-8fef-31ab4c0ddaba.pdf",
+      "src": "/content/files/7ffe05111ffd728d.pdf",
       "title": "ATAK-Plugin-vns-3.10-8136253f-5.5.0-civ-release.apk.pdf"
     },
     {
@@ -78,7 +79,7 @@
     },
     {
       "type": "pdf",
-      "src": "attachments/7712fedb-1b1d-4e1d-a6f3-793a783b6fc0.pdf",
+      "src": "/content/files/1b455cc1a5838724.pdf",
       "title": "ATAK VNS Google Routes API Key.pdf"
     }
   ]

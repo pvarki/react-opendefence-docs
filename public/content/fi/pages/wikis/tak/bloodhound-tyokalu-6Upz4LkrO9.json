@@ -12,7 +12,7 @@
     "Bloodhound-työkalu"
   ],
   "createdAt": "2025-12-08T01:24:26.083Z",
-  "updatedAt": "2026-02-19T13:05:09.198Z",
+  "updatedAt": "2026-11-01T19:34:20.982Z",
   "headings": [
     {
       "depth": 2,
@@ -37,7 +37,8 @@
   ],
   "translations": {
     "en": "/en/wikis/tak/bloodhound-tool-kZ8MTy07YY",
-    "fi": "/fi/wikis/tak/bloodhound-tyokalu-6Upz4LkrO9"
+    "fi": "/fi/wikis/tak/bloodhound-tyokalu-6Upz4LkrO9",
+    "sv": "/sv/wikis/tak/bloodhound-verktyget-8bsZHidzuJ"
   },
   "blocks": [
     {
@@ -61,7 +62,7 @@
     },
     {
       "type": "pdf",
-      "src": "attachments/daaf7514-a184-4c70-bb69-0b34b96584cc.pdf",
+      "src": "/content/files/cb99411da1a39924.pdf",
       "title": "ATAK 5.6 Bloodhound.pdf"
     }
   ]

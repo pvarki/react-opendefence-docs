@@ -12,17 +12,18 @@
     "Rita och dela planer"
   ],
   "createdAt": "2026-06-18T19:33:29.330Z",
-  "updatedAt": "2026-06-18T20:23:51.645Z",
+  "updatedAt": "2026-11-01T21:12:39.908Z",
   "headings": [],
   "translations": {
     "en": "/en/guides/tak-guide/draw-share-plans-gUzuEffh5v",
     "fi": "/fi/guides/tak-guide/piirra-ja-jaa-suunnitelmia-yKzNNsotOO",
     "sv": "/sv/guides/tak-guide/rita-och-dela-planer-C7UNuLt8oq"
   },
+  "underDevelopment": true,
   "blocks": [
     {
       "type": "html",
-      "html": "<p>WinTAK:s ritverktyg låter dig skissa planer — rutter, områden och ledningsåtgärder — och dela dem med din enhet via ett flöde.</p>\n<blockquote>\n<p>Utkast: skrivet utan skärmbilder. Lägg till skärmbilder av WinTAK:s ritverktyg när de finns tillgängliga.</p>\n</blockquote>"
+      "html": "<p>WinTAK:s ritverktyg låter dig skissa planer — rutter, områden och ledningsåtgärder — och dela dem med din enhet via ett flöde.</p>"
     },
     {
       "type": "slideset",

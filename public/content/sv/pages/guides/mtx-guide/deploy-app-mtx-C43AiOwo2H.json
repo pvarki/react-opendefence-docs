@@ -9,7 +9,7 @@
     "Deploy App - MTX"
   ],
   "createdAt": "2026-02-21T13:52:24.151Z",
-  "updatedAt": "2026-03-08T05:51:14.919Z",
+  "updatedAt": "2026-11-02T15:12:45.181Z",
   "headings": [
     {
       "depth": 2,
@@ -18,7 +18,7 @@
     }
   ],
   "translations": {
-    "en": "/sv/guides/mtx-guide/deploy-app-mtx-C43AiOwo2H",
+    "en": "/en/guides/mtx-guide/deploy-app-mtx-pNYQudUcGq",
     "fi": "/fi/guides/mtx-guide/deploy-app-mtx-yHJ4LHVgZZ",
     "sv": "/sv/guides/mtx-guide/deploy-app-mtx-C43AiOwo2H"
   },
@@ -149,7 +149,7 @@
     },
     {
       "type": "html",
-      "html": "<p>Efter att ha gått igenom <strong>Deploy App – MTX</strong>, fortsätt till <a href=\"/doc/b431891e-c96a-48c8-98bf-7d8d4dcc8bea\">Publicera streamen</a>för mer information om hur du publicerar en ström, eller <a href=\"/doc/ce8883ca-0875-427b-88c6-464f3ebcc0e9\">Titta på streamen</a>  för mer detaljerade instruktioner om hur du tittar på en ström.</p>"
+      "html": "<p>Hur du publicerar en ström beskrivs på sidorna <a href=\"/sv/guides/mtx-guide/gopro-2PrQ7u3goE\">GoPro</a>, <a href=\"/sv/guides/mtx-guide/opentak-icu-HJresNyWaE\">OpenTAK ICU</a> och <a href=\"/sv/guides/mtx-guide/uas-tool-97tr5ME3hk\">UAS Tool</a>, och hur du tittar på den på sidan <a href=\"/sv/guides/mtx-guide/webblasare-ww2sENtpLr\">Webbläsare</a>.</p>"
     }
   ]
 }

@@ -12,7 +12,7 @@
     "Merkin lähettäminen"
   ],
   "createdAt": "2026-06-18T19:25:17.511Z",
-  "updatedAt": "2026-09-12T19:58:56.407Z",
+  "updatedAt": "2026-11-01T21:30:11.724Z",
   "headings": [],
   "translations": {
     "en": "/en/guides/tak-guide/sending-a-marker-tbLPq64DLE",
@@ -87,7 +87,7 @@
         {
           "title": "Syötteet ovat paras työkalu merkkien jakamiseen",
           "layout": "image-bottom",
-          "html": "<ul>\n<li>Merkkien lähettäminen käyttäjille tukkii heidän karttansa nopeasti.</li>\n<li>Paras tapa on joko lisätä merkit suoraan syötteeseen...</li>\n<li>...tai kuten standardimallimme ohjeistaa, lähettää ne ensin komentopaikalle (CP), joka vastaa RECON-syötteen laadusta, jotta kaikki sieltä lukemasi on kuratoitua.</li>\n</ul>\n<p>Tuoreesti lisätty merkkimme käyttäjältä Blue43 näkyy tässä RECON-syötteessä.</p>\n<p>RECON-syötteen ymmärtämisen jälkeen jatka kohtaan</p>\n<p>Lue lisää RECON-syötteestä TAK Wikistä <a href=\"/en/wikis/tak/takserver-recon-feed-6S3IuBlBTY\">Takserver RECON feed</a></p>\n<p>Lue lisää havaintojen välittämisestä komentopaikalle TAK WIKIstä <a href=\"/en/wikis/tak/forwarding-observations-K5fcmMIAnp\">Forwarding Observations</a></p>",
+          "html": "<ul>\n<li>Merkkien lähettäminen käyttäjille tukkii heidän karttansa nopeasti.</li>\n<li>Paras tapa on joko lisätä merkit suoraan syötteeseen...</li>\n<li>...tai kuten standardimallimme ohjeistaa, lähettää ne ensin komentopaikalle (CP), joka vastaa RECON-syötteen laadusta, jotta kaikki sieltä lukemasi on kuratoitua.</li>\n</ul>\n<p>Tuoreesti lisätty merkkimme käyttäjältä Blue43 näkyy tässä RECON-syötteessä.</p>\n<p>Lue lisää RECON-syötteestä TAK Wikistä <a href=\"/fi/wikis/tak/takserver-recon-syote-PPNwDOJdZa\">Takserver RECON -syöte</a></p>\n<p>Lue lisää havaintojen välittämisestä komentopaikalle TAK WIKIstä <a href=\"/fi/wikis/tak/havainnon-edelleenlahettaminen-sIRDHP8qAL\">Havainnon edelleenlähettäminen</a></p>",
           "images": [
             {
               "src": "/content/images/fi/attachments/22ab27310be30c0d.webp",
