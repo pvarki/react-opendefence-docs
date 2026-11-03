@@ -30,12 +30,12 @@
     {
       "depth": 2,
       "text": "Tuote Saatavilla",
-      "id": "tuote-saatavilla"
+      "id": "tuote-saatavilla-1"
     },
     {
       "depth": 2,
       "text": "Tuotekuvaus",
-      "id": "tuotekuvaus"
+      "id": "tuotekuvaus-1"
     },
     {
       "depth": 2,
@@ -83,7 +83,7 @@
     },
     {
       "type": "pdf",
-      "src": "attachments/827f0892-ac29-4730-892e-5761cc12a82a.pdf",
+      "src": "/content/files/41607e2b9435f1e8.pdf",
       "title": "ATAK TAK Tracker App User Guide 4.6.1.pdf"
     },
     {
@@ -99,7 +99,7 @@
     },
     {
       "type": "html",
-      "html": "<h2 id=\"tuote-saatavilla\"><a href=\"#tuote-saatavilla\">Tuote Saatavilla</a></h2>\n<p><a href=\"https://apps.apple.com/us/app/tak-tracker/id6455684671\" target=\"_blank\" rel=\"noopener noreferrer\">https://apps.apple.com/us/app/tak-tracker/id6455684671</a></p>\n<h2 id=\"tuotekuvaus\"><a href=\"#tuotekuvaus\"><strong>Tuotekuvaus</strong></a></h2>\n<p>Team Awareness Kit (TAK) Tracker (tunnetaan Yhdysvaltain puolustusministeriössä nimellä Tactical Assault Kit) on kevyt, vain lähetystoiminnolla varustettu sovellus, joka on suunniteltu integroitumaan helposti olemassa oleviin koulutus- ja operatiivisiin työnkulkuihin. Sovellus on rakennettu alusta asti iOS:lle ja se yhdistyy suosikki-TAK-palvelimiisi joko datapakettien tai varmenteiden rekisteröinnin kautta. Lisäksi TAK Tracker voi lähettää tietojaan lähiverkkoon samalla tavalla kuin muut TAK-sovellukset.</p>\n<h2 id=\"tak-tracker-sisältää-seuraavat-ominaisuudet\"><a href=\"#tak-tracker-sisältää-seuraavat-ominaisuudet\"><strong>TAK Tracker sisältää seuraavat ominaisuudet</strong></a></h2>\n<ul>\n<li>Täysi tuki datapaketeille ja varmenteiden rekisteröinnille</li>\n<li>Sijainnin / CoT-tietojen lähetys UDP:n kautta</li>\n<li>Hätämajakkaominaisuudet</li>\n<li>Tuki tavallisille, hybridi- ja 3D-kartoille</li>\n<li>Mahdollisuus vaihtaa kaikkia mittayksiköitä, mukaan lukien MGRS</li>\n<li>Täysi tuki jatkuvalle taustatoiminnalle matalalla virrankulutuksella</li>\n</ul>\n<h2 id=\"tulossa-seuraavaan-julkaisuun\"><a href=\"#tulossa-seuraavaan-julkaisuun\"><strong>Tulossa seuraavaan julkaisuun:</strong></a></h2>\n<ul>\n<li>TAK-chatin tuki</li>\n<li>Ryhmä- / kanavatuki</li>\n<li>QR-koodirekisteröinti</li>\n</ul>\n<h2 id=\"järjestelmävaatimukset\"><a href=\"#järjestelmävaatimukset\"><strong>Järjestelmävaatimukset:</strong></a></h2>\n<ul>\n<li>Tukee iOS 15.4:ää ja uudempia versioita</li>\n</ul>"
+      "html": "<h2 id=\"tuote-saatavilla-1\"><a href=\"#tuote-saatavilla-1\">Tuote Saatavilla</a></h2>\n<p><a href=\"https://apps.apple.com/us/app/tak-tracker/id6455684671\" target=\"_blank\" rel=\"noopener noreferrer\">https://apps.apple.com/us/app/tak-tracker/id6455684671</a></p>\n<h2 id=\"tuotekuvaus-1\"><a href=\"#tuotekuvaus-1\"><strong>Tuotekuvaus</strong></a></h2>\n<p>Team Awareness Kit (TAK) Tracker (tunnetaan Yhdysvaltain puolustusministeriössä nimellä Tactical Assault Kit) on kevyt, vain lähetystoiminnolla varustettu sovellus, joka on suunniteltu integroitumaan helposti olemassa oleviin koulutus- ja operatiivisiin työnkulkuihin. Sovellus on rakennettu alusta asti iOS:lle ja se yhdistyy suosikki-TAK-palvelimiisi joko datapakettien tai varmenteiden rekisteröinnin kautta. Lisäksi TAK Tracker voi lähettää tietojaan lähiverkkoon samalla tavalla kuin muut TAK-sovellukset.</p>\n<h2 id=\"tak-tracker-sisältää-seuraavat-ominaisuudet\"><a href=\"#tak-tracker-sisältää-seuraavat-ominaisuudet\"><strong>TAK Tracker sisältää seuraavat ominaisuudet</strong></a></h2>\n<ul>\n<li>Täysi tuki datapaketeille ja varmenteiden rekisteröinnille</li>\n<li>Sijainnin / CoT-tietojen lähetys UDP:n kautta</li>\n<li>Hätämajakkaominaisuudet</li>\n<li>Tuki tavallisille, hybridi- ja 3D-kartoille</li>\n<li>Mahdollisuus vaihtaa kaikkia mittayksiköitä, mukaan lukien MGRS</li>\n<li>Täysi tuki jatkuvalle taustatoiminnalle matalalla virrankulutuksella</li>\n</ul>\n<h2 id=\"tulossa-seuraavaan-julkaisuun\"><a href=\"#tulossa-seuraavaan-julkaisuun\"><strong>Tulossa seuraavaan julkaisuun:</strong></a></h2>\n<ul>\n<li>TAK-chatin tuki</li>\n<li>Ryhmä- / kanavatuki</li>\n<li>QR-koodirekisteröinti</li>\n</ul>\n<h2 id=\"järjestelmävaatimukset\"><a href=\"#järjestelmävaatimukset\"><strong>Järjestelmävaatimukset:</strong></a></h2>\n<ul>\n<li>Tukee iOS 15.4:ää ja uudempia versioita</li>\n</ul>"
     }
   ]
 }

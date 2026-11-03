@@ -109,6 +109,16 @@
     "fi": "/fi/guides/tak-guide/mika-on-tak-u19DIbyqfY",
     "sv": "/sv/guides/tak-guide/vad-ar-tak-Y5ZYfcXyh8"
   },
+  "ladda-ner-appen-ep7TvO7XkN": {
+    "en": "/en/guides/tak-guide/download-the-app-bJC3Opax4P",
+    "fi": "/fi/guides/tak-guide/lataa-sovellus-ceMKXWjxoQ",
+    "sv": "/sv/guides/tak-guide/ladda-ner-appen-ep7TvO7XkN"
+  },
+  "importera-serveranslutning-fran-deploy-app-Heo41dBNko": {
+    "en": "/en/guides/tak-guide/import-server-connection-from-deploy-app-PQ4dCV2SYR",
+    "fi": "/fi/guides/tak-guide/tuo-palvelinyhteys-deploy-appista-orW4BArnHi",
+    "sv": "/sv/guides/tak-guide/importera-serveranslutning-fran-deploy-app-Heo41dBNko"
+  },
   "ladda-atak-plugins-TpJcLrKsGu": {
     "en": "/en/guides/tak-guide/load-atak-plugins-xBeVkYsFjI",
     "fi": "/fi/guides/tak-guide/lataa-atak-liitannaiset-CrjCC07xf1",
@@ -354,16 +364,6 @@
     "fi": "/fi/guides/tak-guide/toista-ja-kaappaa-videota-xag7zBmlMd",
     "sv": "/sv/guides/tak-guide/spela-upp-och-fanga-video-2fFwRMj9g4"
   },
-  "installera-uas-tool-plugin-VxIbbgH2nd": {
-    "en": "/en/guides/tak-guide/install-uas-tool-plugin-BDPcnhvDgk",
-    "fi": "/fi/guides/tak-guide/asenna-uas-tool-lisaosa-ezy7pwc4no",
-    "sv": "/sv/guides/tak-guide/installera-uas-tool-plugin-VxIbbgH2nd"
-  },
-  "anslut-uas-tool-automatiskt-till-mediamtx-HeWL5goTM5": {
-    "en": "/en/guides/tak-guide/auto-connect-uas-tool-to-mediamtx-MahzGHsEdu",
-    "fi": "/fi/guides/tak-guide/yhdista-uas-tool-automaattisesti-mediamtxaan-OxrZY5V7EQ",
-    "sv": "/sv/guides/tak-guide/anslut-uas-tool-automatiskt-till-mediamtx-HeWL5goTM5"
-  },
   "oppna-uas-verktyget-och-las-telemetri-wdcDijyRka": {
     "en": "/en/guides/tak-guide/open-uas-tool-read-telemetry-CvGSGecLE1",
     "fi": "/fi/guides/tak-guide/avaa-uas-tyokalu-ja-lue-telemetria-z5ZZMLVliu",
@@ -599,26 +599,6 @@
     "fi": "/fi/guides/tak-guide/datan-synkronointi-lzOCvJIN5S",
     "sv": "/sv/guides/tak-guide/datasynkronisering-sfvICpIRhr"
   },
-  "oversikt-nzDS5OWw0k": {
-    "en": "/en/guides/tak-guide/overview-bPeWx0MdZQ",
-    "fi": "/fi/guides/tak-guide/yleiskatsaus-UB5rRp5Nz5",
-    "sv": "/sv/guides/tak-guide/oversikt-nzDS5OWw0k"
-  },
-  "soldat-zS7E1xGRtx": {
-    "en": "/en/guides/tak-guide/fighter-rf4mMCmmWV",
-    "fi": "/fi/guides/tak-guide/taistelija-Rco9ioLaEE",
-    "sv": "/sv/guides/tak-guide/soldat-zS7E1xGRtx"
-  },
-  "kommandoplats-nXnVNhBp5i": {
-    "en": "/en/guides/tak-guide/command-post-YxjX9bA9iG",
-    "fi": "/fi/guides/tak-guide/komentopaikka-7qMzKheq4Z",
-    "sv": "/sv/guides/tak-guide/kommandoplats-nXnVNhBp5i"
-  },
-  "felsokning-hCbMpa5tPi": {
-    "en": "/en/guides/tak-guide/troubleshooting-Pj64UaHAJW",
-    "fi": "/fi/guides/tak-guide/vianmaaritys-LtZ3uqW6vO",
-    "sv": "/sv/guides/tak-guide/felsokning-hCbMpa5tPi"
-  },
   "borja-fran-nedladdning-I073Y0t0UQ": {
     "en": "/en/guides/tak-guide/start-from-download-x9ve2aL7oC",
     "fi": "/fi/guides/tak-guide/aloita-lataamisesta-HDrpxKE5fj",
@@ -665,9 +645,19 @@
     "sv": "/sv/guides/tak-guide/tak-tracker-redan-installerad-b0bOMabOne"
   },
   "deploy-app-mtx-C43AiOwo2H": {
-    "en": "/sv/guides/mtx-guide/deploy-app-mtx-C43AiOwo2H",
+    "en": "/en/guides/mtx-guide/deploy-app-mtx-pNYQudUcGq",
     "fi": "/fi/guides/mtx-guide/deploy-app-mtx-yHJ4LHVgZZ",
     "sv": "/sv/guides/mtx-guide/deploy-app-mtx-C43AiOwo2H"
+  },
+  "webblasare-ww2sENtpLr": {
+    "fi": "/fi/guides/mtx-guide/selain-0MrE4uNLAM",
+    "en": "/en/guides/mtx-guide/browser-OODFuhucDG",
+    "sv": "/sv/guides/mtx-guide/webblasare-ww2sENtpLr"
+  },
+  "vlc-player-8p9jKo0ZTH": {
+    "fi": "/fi/guides/mtx-guide/vlc-player-fUPdjIb8kS",
+    "en": "/en/guides/mtx-guide/vlc-player-w1SqNUFWHC",
+    "sv": "/sv/guides/mtx-guide/vlc-player-8p9jKo0ZTH"
   },
   "gopro-2PrQ7u3goE": {
     "en": "/en/guides/mtx-guide/gopro-gDG1IhzxmJ",

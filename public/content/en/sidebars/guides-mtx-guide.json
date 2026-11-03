@@ -11,6 +11,25 @@
     },
     {
       "type": "group",
+      "id": "watch-stream-i7cQZkpBTh",
+      "label": "Watch Stream",
+      "children": [
+        {
+          "type": "doc",
+          "id": "browser-OODFuhucDG",
+          "label": "Browser",
+          "slug": "browser-OODFuhucDG"
+        },
+        {
+          "type": "doc",
+          "id": "vlc-player-w1SqNUFWHC",
+          "label": "VLC Player",
+          "slug": "vlc-player-w1SqNUFWHC"
+        }
+      ]
+    },
+    {
+      "type": "group",
       "id": "publish-stream-XN1sPInAKr",
       "label": "Publish Stream",
       "children": [

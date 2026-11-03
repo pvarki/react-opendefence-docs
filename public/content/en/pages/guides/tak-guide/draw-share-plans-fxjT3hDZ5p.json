@@ -12,7 +12,7 @@
     "Draw & share Plans"
   ],
   "createdAt": "2025-12-05T22:06:22.115Z",
-  "updatedAt": "2026-06-18T20:14:00.606Z",
+  "updatedAt": "2026-11-01T21:30:06.431Z",
   "headings": [],
   "translations": {
     "en": "/en/guides/tak-guide/draw-share-plans-fxjT3hDZ5p",
@@ -151,10 +151,6 @@
           "images": []
         }
       ]
-    },
-    {
-      "type": "html",
-      "html": "<p>After successful testing Draw &#x26; share Plans, continue to <a href=\"/en/guides/tak-guide/geofences-wgaLkSEvef\">Geofences</a></p>"
     }
   ]
 }

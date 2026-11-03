@@ -30,12 +30,12 @@
     {
       "depth": 2,
       "text": "Produkt Tillgänglig",
-      "id": "produkt-tillgänglig"
+      "id": "produkt-tillgänglig-1"
     },
     {
       "depth": 2,
       "text": "Produktbeskrivning",
-      "id": "produktbeskrivning"
+      "id": "produktbeskrivning-1"
     },
     {
       "depth": 2,
@@ -83,7 +83,7 @@
     },
     {
       "type": "pdf",
-      "src": "attachments/827f0892-ac29-4730-892e-5761cc12a82a.pdf",
+      "src": "/content/files/41607e2b9435f1e8.pdf",
       "title": "ATAK TAK Tracker App User Guide 4.6.1.pdf"
     },
     {
@@ -99,7 +99,7 @@
     },
     {
       "type": "html",
-      "html": "<h2 id=\"produkt-tillgänglig\"><a href=\"#produkt-tillgänglig\">Produkt Tillgänglig</a></h2>\n<p><a href=\"https://apps.apple.com/us/app/tak-tracker/id6455684671\" target=\"_blank\" rel=\"noopener noreferrer\">https://apps.apple.com/us/app/tak-tracker/id6455684671</a></p>\n<h2 id=\"produktbeskrivning\"><a href=\"#produktbeskrivning\"><strong>Produktbeskrivning</strong></a></h2>\n<p>Team Awareness Kit (TAK) Tracker (känd inom USA:s försvarsdepartement som Tactical Assault Kit) är en lättviktig app med endast sändningsfunktion, avsedd att enkelt integreras i befintliga utbildnings- och operativa arbetsflöden. Appen är byggd från grunden för iOS och ansluter till dina TAK-servrar via datapaket eller certifikatregistrering. TAK Tracker kan även sända sin data i lokala nätverk på samma sätt som andra TAK-appar.</p>\n<h2 id=\"tak-tracker-innehåller-följande-funktioner\"><a href=\"#tak-tracker-innehåller-följande-funktioner\"><strong>TAK Tracker innehåller följande funktioner</strong></a></h2>\n<ul>\n<li>Fullt stöd för datapaket och certifikatregistrering</li>\n<li>Sändning av positions- / CoT-data via UDP</li>\n<li>Nödsignalsfunktioner</li>\n<li>Stöd för standard-, hybrid- och 3D-kartor</li>\n<li>Möjlighet att byta alla måttenheter, inklusive MGRS</li>\n<li>Fullt stöd för kontinuerlig bakgrundsdrift med låg energiförbrukning</li>\n</ul>\n<h2 id=\"kommande-i-nästa-version\"><a href=\"#kommande-i-nästa-version\"><strong>Kommande i nästa version</strong></a></h2>\n<ul>\n<li>Stöd för TAK-chatt</li>\n<li>Grupp- / kanalstöd</li>\n<li>QR-kodsregistrering</li>\n</ul>\n<h2 id=\"systemkrav\"><a href=\"#systemkrav\"><strong>Systemkrav</strong></a></h2>\n<ul>\n<li>Stöder iOS 15.4 och senare</li>\n</ul>"
+      "html": "<h2 id=\"produkt-tillgänglig-1\"><a href=\"#produkt-tillgänglig-1\">Produkt Tillgänglig</a></h2>\n<p><a href=\"https://apps.apple.com/us/app/tak-tracker/id6455684671\" target=\"_blank\" rel=\"noopener noreferrer\">https://apps.apple.com/us/app/tak-tracker/id6455684671</a></p>\n<h2 id=\"produktbeskrivning-1\"><a href=\"#produktbeskrivning-1\"><strong>Produktbeskrivning</strong></a></h2>\n<p>Team Awareness Kit (TAK) Tracker (känd inom USA:s försvarsdepartement som Tactical Assault Kit) är en lättviktig app med endast sändningsfunktion, avsedd att enkelt integreras i befintliga utbildnings- och operativa arbetsflöden. Appen är byggd från grunden för iOS och ansluter till dina TAK-servrar via datapaket eller certifikatregistrering. TAK Tracker kan även sända sin data i lokala nätverk på samma sätt som andra TAK-appar.</p>\n<h2 id=\"tak-tracker-innehåller-följande-funktioner\"><a href=\"#tak-tracker-innehåller-följande-funktioner\"><strong>TAK Tracker innehåller följande funktioner</strong></a></h2>\n<ul>\n<li>Fullt stöd för datapaket och certifikatregistrering</li>\n<li>Sändning av positions- / CoT-data via UDP</li>\n<li>Nödsignalsfunktioner</li>\n<li>Stöd för standard-, hybrid- och 3D-kartor</li>\n<li>Möjlighet att byta alla måttenheter, inklusive MGRS</li>\n<li>Fullt stöd för kontinuerlig bakgrundsdrift med låg energiförbrukning</li>\n</ul>\n<h2 id=\"kommande-i-nästa-version\"><a href=\"#kommande-i-nästa-version\"><strong>Kommande i nästa version</strong></a></h2>\n<ul>\n<li>Stöd för TAK-chatt</li>\n<li>Grupp- / kanalstöd</li>\n<li>QR-kodsregistrering</li>\n</ul>\n<h2 id=\"systemkrav\"><a href=\"#systemkrav\"><strong>Systemkrav</strong></a></h2>\n<ul>\n<li>Stöder iOS 15.4 och senare</li>\n</ul>"
     }
   ]
 }

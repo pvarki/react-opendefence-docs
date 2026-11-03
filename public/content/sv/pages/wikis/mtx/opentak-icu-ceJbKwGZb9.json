@@ -71,7 +71,7 @@
   "blocks": [
     {
       "type": "html",
-      "html": "<p>Opentak ICU är ett open source-program som kan användas för att dela livevideo över ett medianätverk till en medieserver eller till ett lokalt nätverk. Via medieservern möjliggörs delning vidare utanför det egna nätet.\nVideobild kan delas antingen från enhetens inbyggda kamera eller från en extern kamera som stöder USB-UVC-protokollet.</p>\n<h2 id=\"tillgängligt\"><a href=\"#tillgängligt\">Tillgängligt:</a></h2>\n<p><a href=\"https://github.com/brian7704/OpenTAK_ICU\" target=\"_blank\" rel=\"noopener noreferrer\">https://github.com/brian7704/OpenTAK_ICU</a></p>\n<h2 id=\"grundvy\"><a href=\"#grundvy\">Grundvy:</a></h2>"
+      "html": "<p>Opentak ICU är ett open source-program som kan användas för att dela livevideo över ett medianätverk till en medieserver eller till ett lokalt nätverk. Via medieservern möjliggörs delning vidare utanför det egna nätet.<br>\nVideobild kan delas antingen från enhetens inbyggda kamera eller från en extern kamera som stöder USB-UVC-protokollet.</p>\n<h2 id=\"tillgängligt\"><a href=\"#tillgängligt\">Tillgängligt:</a></h2>\n<p><a href=\"https://github.com/brian7704/OpenTAK_ICU\" target=\"_blank\" rel=\"noopener noreferrer\">https://github.com/brian7704/OpenTAK_ICU</a></p>\n<h2 id=\"grundvy\"><a href=\"#grundvy\">Grundvy:</a></h2>"
     },
     {
       "type": "image",

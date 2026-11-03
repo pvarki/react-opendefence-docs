@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "id": "ffec221e-3d44-43c7-a4d4-483ae0c03da8",
+  "slug": "browser-OODFuhucDG",
+  "collection": "guides/mtx-guide",
+  "locale": "en",
+  "title": "Browser",
+  "breadcrumb": [
+    "Watch Stream",
+    "Browser"
+  ],
+  "createdAt": "2025-12-06T01:03:30.576Z",
+  "updatedAt": "2026-11-03T08:54:14.008Z",
+  "headings": [],
+  "translations": {
+    "fi": "/fi/guides/mtx-guide/selain-0MrE4uNLAM",
+    "en": "/en/guides/mtx-guide/browser-OODFuhucDG",
+    "sv": "/sv/guides/mtx-guide/webblasare-ww2sENtpLr"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Watch a live stream in your browser through the MTX page in Deploy App.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Find the stream",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Streams that are broadcasting now are marked <strong>LIVE</strong></li>\n<li>Search in <strong>Search streams...</strong> by callsign or tool (icu, gopro, uas, ipcam)</li>\n<li>Select the stream you want to watch</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/74c421939cff4b12.webp",
+              "width": 1080,
+              "height": 2002
+            }
+          ]
+        },
+        {
+          "title": "Play the stream",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Press <strong>Play stream</strong></li>\n<li>The video plays on the page</li>\n<li>If you see <strong>Stream is offline</strong>, the stream is not broadcasting right now: go back with <strong>Back to streams</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/57fae925d2f171e7.webp",
+              "width": 1080,
+              "height": 2002
+            }
+          ]
+        },
+        {
+          "title": "Watch outside Deploy App",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Select <strong>Connection Options</strong></li>\n<li>Under <strong>Download Packages</strong>, press <strong>Browser</strong></li>\n<li>Open the downloaded file in your browser</li>\n<li>The file contains your username and password: do not share it, and delete it when you no longer need it</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/613aaa7253087dca.webp",
+              "width": 1080,
+              "height": 1999
+            }
+          ]
+        },
+        {
+          "title": "You can now watch a stream",
+          "layout": "text",
+          "html": "<ul>\n<li>You can close this guide.</li>\n</ul>\n<p>To watch with a separate player app, continue to <a href=\"/en/guides/mtx-guide/vlc-player-w1SqNUFWHC\">VLC Player</a></p>",
+          "images": []
+        }
+      ]
+    }
+  ]
+}

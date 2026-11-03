@@ -12,7 +12,7 @@
     "iTAK redan installerat"
   ],
   "createdAt": "2026-06-18T19:35:30.481Z",
-  "updatedAt": "2026-06-18T20:25:43.643Z",
+  "updatedAt": "2026-11-01T21:35:09.160Z",
   "headings": [],
   "translations": {
     "en": "/en/guides/tak-guide/itak-already-installed-DeEex1hIH2",
@@ -34,7 +34,7 @@
     },
     {
       "type": "html",
-      "html": "<p>Efter att du avinstallerat iTAK, fortsätt till <a href=\"/en/guides/tak-guide/start-from-download-vQGTWj6wET\">Start from Download</a></p>"
+      "html": "<p>Efter att du avinstallerat iTAK, fortsätt till <a href=\"/sv/guides/tak-guide/borja-fran-nedladdning-TsV7d2JP5F\">Börja från nedladdning</a></p>"
     }
   ]
 }

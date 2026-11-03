@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-31T19:30:45.397Z",
+  "generatedAt": "2026-11-03T22:32:55.084Z",
   "sources": [
     {
       "id": "rasenmaeher",
@@ -15,6 +15,11 @@
       "id": "tak",
       "name": "TAK Integration API",
       "versions": [
+        {
+          "tag": "v1.18.0+261027",
+          "specFile": "v1.18.0-261027.json",
+          "publishedAt": "2026-11-02T10:37:32Z"
+        },
         {
           "tag": "v1.17.3+261029",
           "specFile": "v1.17.3-261029.json",
@@ -34,11 +39,6 @@
           "tag": "v1.17.0+260921",
           "specFile": "v1.17.0-260921.json",
           "publishedAt": "2026-09-24T06:17:07Z"
-        },
-        {
-          "tag": "v1.17.0+260916",
-          "specFile": "v1.17.0-260916.json",
-          "publishedAt": "2026-09-21T10:59:23Z"
         }
       ]
     },

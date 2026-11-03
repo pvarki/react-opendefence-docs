@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 1,
+  "id": "5bcad522-f2a0-4cc4-967f-bd0e46953143",
+  "slug": "vlc-player-w1SqNUFWHC",
+  "collection": "guides/mtx-guide",
+  "locale": "en",
+  "title": "VLC Player",
+  "breadcrumb": [
+    "Watch Stream",
+    "VLC Player"
+  ],
+  "createdAt": "2025-12-06T01:03:44.046Z",
+  "updatedAt": "2026-11-02T15:06:33.586Z",
+  "headings": [],
+  "translations": {
+    "fi": "/fi/guides/mtx-guide/vlc-player-fUPdjIb8kS",
+    "en": "/en/guides/mtx-guide/vlc-player-w1SqNUFWHC",
+    "sv": "/sv/guides/mtx-guide/vlc-player-8p9jKo0ZTH"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Watch a live stream in VLC media player with a ready-made file from Deploy App.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Install VLC",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Install VLC media player, version 3.0 or newer</li>\n<li>Get it from <a href=\"http://videolan.org\" target=\"_blank\" rel=\"noopener noreferrer\">videolan.org</a> or your device's app store</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/b0de7ca235cec5ff.webp",
+              "width": 1046,
+              "height": 461
+            }
+          ]
+        },
+        {
+          "title": "Open the stream in Deploy App",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Open Deploy App</li>\n<li>Go to <strong>Home</strong> and launch <strong>MTX</strong></li>\n<li>Select a stream marked <strong>LIVE</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/921a89aab2084d8a.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "Download the VLC package",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Select <strong>Connection Options</strong></li>\n<li>Under <strong>Download Packages</strong>, press <strong>VLC</strong></li>\n<li>Deploy App downloads a file that ends in <strong>.m3u</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/c681b2f2e46edb13.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "Open the package in VLC",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Open the downloaded <strong>.m3u</strong> file with VLC</li>\n<li>On a computer: <strong>Media → Open File</strong></li>\n<li>The stream starts playing</li>\n<li>The file contains your password and the SRT passphrase: do not share it, and delete it when you no longer need it</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/0ddfe02b0629a957.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "If the stream does not open",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>In <strong>Connection Options</strong>, open <strong>Advanced Links</strong></li>\n<li>Copy the <strong>HLS</strong> address and add <strong>/index.m3u8</strong> to the end</li>\n<li>On a computer: in VLC, go to <strong>Media → Open Network Stream</strong>, paste the address and press <strong>Play</strong></li>\n<li>On a phone: in VLC, go to <strong>More → Streams → New Stream</strong>, paste the address in <strong>Enter network address</strong> and start playback</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/16be5b2fe2dc6087.webp",
+              "width": 1080,
+              "height": 2177
+            }
+          ]
+        },
+        {
+          "title": "You can now watch a stream in VLC",
+          "layout": "text",
+          "html": "<ul>\n<li>You can close this guide.</li>\n</ul>\n<p>To watch in your browser instead, see <a href=\"/en/guides/mtx-guide/browser-OODFuhucDG\">Browser</a></p>",
+          "images": []
+        }
+      ]
+    }
+  ]
+}

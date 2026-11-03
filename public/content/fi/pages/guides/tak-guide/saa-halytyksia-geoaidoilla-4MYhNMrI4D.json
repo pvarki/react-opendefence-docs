@@ -12,17 +12,18 @@
     "Saa hälytyksiä geoaidoilla"
   ],
   "createdAt": "2026-06-18T19:33:29.608Z",
-  "updatedAt": "2026-06-18T20:23:52.917Z",
+  "updatedAt": "2026-11-01T21:12:31.134Z",
   "headings": [],
   "translations": {
     "en": "/en/guides/tak-guide/get-alerts-with-geofences-Y1Bgr7UInI",
     "fi": "/fi/guides/tak-guide/saa-halytyksia-geoaidoilla-4MYhNMrI4D",
     "sv": "/sv/guides/tak-guide/fa-varningar-med-geostangsel-YvTX3n2Ucj"
   },
+  "underDevelopment": true,
   "blocks": [
     {
       "type": "html",
-      "html": "<p>Geoaita on kartalle piirtämäsi raja, joka antaa hälytyksen, kun jokin ylittää sen — näin voit valvoa aluetta tuijottamatta ruutua.</p>\n<blockquote>\n<p>Luonnos: kirjoitettu ilman kuvakaappauksia. Lisää WinTAK-geoaitojen kuvakaappaukset, kun niitä on saatavilla.</p>\n</blockquote>"
+      "html": "<p>Geoaita on kartalle piirtämäsi raja, joka antaa hälytyksen, kun jokin ylittää sen — näin voit valvoa aluetta tuijottamatta ruutua.</p>"
     },
     {
       "type": "slideset",

@@ -417,18 +417,6 @@
           "children": [
             {
               "type": "doc",
-              "id": "asenna-uas-tool-lisaosa-ezy7pwc4no",
-              "label": "Asenna UAS Tool -lisäosa",
-              "slug": "asenna-uas-tool-lisaosa-ezy7pwc4no"
-            },
-            {
-              "type": "doc",
-              "id": "yhdista-uas-tool-automaattisesti-mediamtxaan-OxrZY5V7EQ",
-              "label": "Yhdistä UAS Tool automaattisesti MediaMTX:ään",
-              "slug": "yhdista-uas-tool-automaattisesti-mediamtxaan-OxrZY5V7EQ"
-            },
-            {
-              "type": "doc",
               "id": "avaa-uas-tyokalu-ja-lue-telemetria-z5ZZMLVliu",
               "label": "Avaa UAS-työkalu ja lue telemetria",
               "slug": "avaa-uas-tyokalu-ja-lue-telemetria-z5ZZMLVliu"
@@ -830,46 +818,6 @@
           "id": "datan-synkronointi-lzOCvJIN5S",
           "label": "Datan synkronointi",
           "slug": "datan-synkronointi-lzOCvJIN5S"
-        }
-      ]
-    },
-    {
-      "type": "group",
-      "id": "kaytto-roolin-mukaan-vm304ASeSS",
-      "label": "Käyttö roolin mukaan",
-      "clientId": "itak-pzOFxqFSem",
-      "children": [
-        {
-          "type": "doc",
-          "id": "yleiskatsaus-UB5rRp5Nz5",
-          "label": "Yleiskatsaus",
-          "slug": "yleiskatsaus-UB5rRp5Nz5"
-        },
-        {
-          "type": "doc",
-          "id": "taistelija-Rco9ioLaEE",
-          "label": "Taistelija",
-          "slug": "taistelija-Rco9ioLaEE"
-        },
-        {
-          "type": "doc",
-          "id": "komentopaikka-7qMzKheq4Z",
-          "label": "Komentopaikka",
-          "slug": "komentopaikka-7qMzKheq4Z"
-        }
-      ]
-    },
-    {
-      "type": "group",
-      "id": "itak-pzOFxqFSem",
-      "label": "iTAK",
-      "clientId": "itak-pzOFxqFSem",
-      "children": [
-        {
-          "type": "doc",
-          "id": "vianmaaritys-LtZ3uqW6vO",
-          "label": "Vianmääritys",
-          "slug": "vianmaaritys-LtZ3uqW6vO"
         }
       ]
     },

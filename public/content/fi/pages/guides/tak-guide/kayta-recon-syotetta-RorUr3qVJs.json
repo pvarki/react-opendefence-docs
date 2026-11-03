@@ -13,7 +13,7 @@
     "Käytä RECON-syötettä"
   ],
   "createdAt": "2026-06-18T19:27:21.449Z",
-  "updatedAt": "2026-06-18T20:17:07.006Z",
+  "updatedAt": "2026-11-01T21:30:13.063Z",
   "headings": [],
   "translations": {
     "en": "/en/guides/tak-guide/use-recon-feed-1eKYHfIBys",
@@ -89,7 +89,7 @@
     },
     {
       "type": "html",
-      "html": "<p>Kun RECON-syöte on selvillä, jatka kohtaan</p>\n<p>Lue lisää RECON-syötteestä TAK Wikistä <a href=\"/en/wikis/tak/takserver-recon-feed-6S3IuBlBTY\">Takserver RECON feed</a></p>\n<p>Lue lisää havaintojen välittämisestä komentopaikalle TAK WIKIstä <a href=\"/en/wikis/tak/forwarding-observations-K5fcmMIAnp\">Forwarding Observations</a></p>"
+      "html": "<p>Lue lisää RECON-syötteestä TAK Wikistä <a href=\"/fi/wikis/tak/takserver-recon-syote-PPNwDOJdZa\">Takserver RECON -syöte</a></p>\n<p>Lue lisää havaintojen välittämisestä komentopaikalle TAK WIKIstä <a href=\"/fi/wikis/tak/havainnon-edelleenlahettaminen-sIRDHP8qAL\">Havainnon edelleenlähettäminen</a></p>"
     }
   ]
 }

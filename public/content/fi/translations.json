@@ -109,6 +109,16 @@
     "fi": "/fi/guides/tak-guide/mika-on-tak-u19DIbyqfY",
     "sv": "/sv/guides/tak-guide/vad-ar-tak-Y5ZYfcXyh8"
   },
+  "lataa-sovellus-ceMKXWjxoQ": {
+    "en": "/en/guides/tak-guide/download-the-app-bJC3Opax4P",
+    "fi": "/fi/guides/tak-guide/lataa-sovellus-ceMKXWjxoQ",
+    "sv": "/sv/guides/tak-guide/ladda-ner-appen-ep7TvO7XkN"
+  },
+  "tuo-palvelinyhteys-deploy-appista-orW4BArnHi": {
+    "en": "/en/guides/tak-guide/import-server-connection-from-deploy-app-PQ4dCV2SYR",
+    "fi": "/fi/guides/tak-guide/tuo-palvelinyhteys-deploy-appista-orW4BArnHi",
+    "sv": "/sv/guides/tak-guide/importera-serveranslutning-fran-deploy-app-Heo41dBNko"
+  },
   "lataa-atak-liitannaiset-CrjCC07xf1": {
     "en": "/en/guides/tak-guide/load-atak-plugins-xBeVkYsFjI",
     "fi": "/fi/guides/tak-guide/lataa-atak-liitannaiset-CrjCC07xf1",
@@ -354,16 +364,6 @@
     "fi": "/fi/guides/tak-guide/toista-ja-kaappaa-videota-xag7zBmlMd",
     "sv": "/sv/guides/tak-guide/spela-upp-och-fanga-video-2fFwRMj9g4"
   },
-  "asenna-uas-tool-lisaosa-ezy7pwc4no": {
-    "en": "/en/guides/tak-guide/install-uas-tool-plugin-BDPcnhvDgk",
-    "fi": "/fi/guides/tak-guide/asenna-uas-tool-lisaosa-ezy7pwc4no",
-    "sv": "/sv/guides/tak-guide/installera-uas-tool-plugin-VxIbbgH2nd"
-  },
-  "yhdista-uas-tool-automaattisesti-mediamtxaan-OxrZY5V7EQ": {
-    "en": "/en/guides/tak-guide/auto-connect-uas-tool-to-mediamtx-MahzGHsEdu",
-    "fi": "/fi/guides/tak-guide/yhdista-uas-tool-automaattisesti-mediamtxaan-OxrZY5V7EQ",
-    "sv": "/sv/guides/tak-guide/anslut-uas-tool-automatiskt-till-mediamtx-HeWL5goTM5"
-  },
   "avaa-uas-tyokalu-ja-lue-telemetria-z5ZZMLVliu": {
     "en": "/en/guides/tak-guide/open-uas-tool-read-telemetry-CvGSGecLE1",
     "fi": "/fi/guides/tak-guide/avaa-uas-tyokalu-ja-lue-telemetria-z5ZZMLVliu",
@@ -599,26 +599,6 @@
     "fi": "/fi/guides/tak-guide/datan-synkronointi-lzOCvJIN5S",
     "sv": "/sv/guides/tak-guide/datasynkronisering-sfvICpIRhr"
   },
-  "yleiskatsaus-UB5rRp5Nz5": {
-    "en": "/en/guides/tak-guide/overview-bPeWx0MdZQ",
-    "fi": "/fi/guides/tak-guide/yleiskatsaus-UB5rRp5Nz5",
-    "sv": "/sv/guides/tak-guide/oversikt-nzDS5OWw0k"
-  },
-  "taistelija-Rco9ioLaEE": {
-    "en": "/en/guides/tak-guide/fighter-rf4mMCmmWV",
-    "fi": "/fi/guides/tak-guide/taistelija-Rco9ioLaEE",
-    "sv": "/sv/guides/tak-guide/soldat-zS7E1xGRtx"
-  },
-  "komentopaikka-7qMzKheq4Z": {
-    "en": "/en/guides/tak-guide/command-post-YxjX9bA9iG",
-    "fi": "/fi/guides/tak-guide/komentopaikka-7qMzKheq4Z",
-    "sv": "/sv/guides/tak-guide/kommandoplats-nXnVNhBp5i"
-  },
-  "vianmaaritys-LtZ3uqW6vO": {
-    "en": "/en/guides/tak-guide/troubleshooting-Pj64UaHAJW",
-    "fi": "/fi/guides/tak-guide/vianmaaritys-LtZ3uqW6vO",
-    "sv": "/sv/guides/tak-guide/felsokning-hCbMpa5tPi"
-  },
   "aloita-lataamisesta-HDrpxKE5fj": {
     "en": "/en/guides/tak-guide/start-from-download-x9ve2aL7oC",
     "fi": "/fi/guides/tak-guide/aloita-lataamisesta-HDrpxKE5fj",
@@ -665,9 +645,19 @@
     "sv": "/sv/guides/tak-guide/tak-tracker-redan-installerad-b0bOMabOne"
   },
   "deploy-app-mtx-yHJ4LHVgZZ": {
-    "en": "/sv/guides/mtx-guide/deploy-app-mtx-C43AiOwo2H",
+    "en": "/en/guides/mtx-guide/deploy-app-mtx-pNYQudUcGq",
     "fi": "/fi/guides/mtx-guide/deploy-app-mtx-yHJ4LHVgZZ",
     "sv": "/sv/guides/mtx-guide/deploy-app-mtx-C43AiOwo2H"
+  },
+  "selain-0MrE4uNLAM": {
+    "fi": "/fi/guides/mtx-guide/selain-0MrE4uNLAM",
+    "en": "/en/guides/mtx-guide/browser-OODFuhucDG",
+    "sv": "/sv/guides/mtx-guide/webblasare-ww2sENtpLr"
+  },
+  "vlc-player-fUPdjIb8kS": {
+    "fi": "/fi/guides/mtx-guide/vlc-player-fUPdjIb8kS",
+    "en": "/en/guides/mtx-guide/vlc-player-w1SqNUFWHC",
+    "sv": "/sv/guides/mtx-guide/vlc-player-8p9jKo0ZTH"
   },
   "gopro-C3E58GqT35": {
     "en": "/en/guides/mtx-guide/gopro-gDG1IhzxmJ",
@@ -759,31 +749,38 @@
   },
   "bloodhound-tyokalu-6Upz4LkrO9": {
     "en": "/en/wikis/tak/bloodhound-tool-kZ8MTy07YY",
-    "fi": "/fi/wikis/tak/bloodhound-tyokalu-6Upz4LkrO9"
+    "fi": "/fi/wikis/tak/bloodhound-tyokalu-6Upz4LkrO9",
+    "sv": "/sv/wikis/tak/bloodhound-verktyget-8bsZHidzuJ"
   },
   "contacts-geochat-tyokalu-3p3x279r0s": {
     "en": "/en/wikis/tak/contacts-geochat-tool-3FdJAdO1R7",
-    "fi": "/fi/wikis/tak/contacts-geochat-tyokalu-3p3x279r0s"
+    "fi": "/fi/wikis/tak/contacts-geochat-tyokalu-3p3x279r0s",
+    "sv": "/sv/wikis/tak/contacts-geochat-verktyget-cpj9rNVTxW"
   },
   "data-sync-lisaosa-knb4IdgXyb": {
     "en": "/en/wikis/tak/data-sync-plugin-Ux2V5Gdsry",
-    "fi": "/fi/wikis/tak/data-sync-lisaosa-knb4IdgXyb"
+    "fi": "/fi/wikis/tak/data-sync-lisaosa-knb4IdgXyb",
+    "sv": "/sv/wikis/tak/data-sync-tillagget-aqLOkDieIe"
   },
   "point-dropper-tyokalu-eM4UMc4BBc": {
     "en": "/en/wikis/tak/point-dropper-tool-6BNurdPXpp",
-    "fi": "/fi/wikis/tak/point-dropper-tyokalu-eM4UMc4BBc"
+    "fi": "/fi/wikis/tak/point-dropper-tyokalu-eM4UMc4BBc",
+    "sv": "/sv/wikis/tak/point-dropper-verktyget-xa1yEIE7Bn"
   },
   "toolbar-tyokalu-bYyF756MBb": {
     "en": "/en/wikis/tak/toolbar-tool-EKByDYLVSo",
-    "fi": "/fi/wikis/tak/toolbar-tyokalu-bYyF756MBb"
+    "fi": "/fi/wikis/tak/toolbar-tyokalu-bYyF756MBb",
+    "sv": "/sv/wikis/tak/toolbar-verktyget-DEWC4UgT03"
   },
   "uas-tool-lisaosa-BXzO8q7CVq": {
     "en": "/en/wikis/tak/uas-tool-plugin-Q5Mzhv56VO",
-    "fi": "/fi/wikis/tak/uas-tool-lisaosa-BXzO8q7CVq"
+    "fi": "/fi/wikis/tak/uas-tool-lisaosa-BXzO8q7CVq",
+    "sv": "/sv/wikis/tak/uas-tool-tillagget-XJJNDWfYt5"
   },
   "vns-lisaosa-Hnpl0Xgv25": {
     "en": "/en/wikis/tak/vns-plugin-6eZoNDPEBA",
-    "fi": "/fi/wikis/tak/vns-lisaosa-Hnpl0Xgv25"
+    "fi": "/fi/wikis/tak/vns-lisaosa-Hnpl0Xgv25",
+    "sv": "/sv/wikis/tak/vns-tillagget-Vx7rEZ4RGp"
   },
   "lisaosa-listaus-N4znkanSPj": {
     "en": "/en/wikis/tak/plugin-list-cr2xfMYu9V",

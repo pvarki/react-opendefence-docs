@@ -12,7 +12,7 @@
     "Start from Download"
   ],
   "createdAt": "2025-12-05T22:06:11.383Z",
-  "updatedAt": "2026-06-18T20:25:38.601Z",
+  "updatedAt": "2026-11-01T21:30:58.136Z",
   "headings": [],
   "translations": {
     "en": "/en/guides/tak-guide/start-from-download-vQGTWj6wET",
@@ -340,7 +340,7 @@
     },
     {
       "type": "html",
-      "html": "<p>After successfully settings impementation and connection to takserver, continue to<a href=\"/en/guides/tak-guide/data-sync-U4cc7UE9hg\">Receive Feeds</a></p>"
+      "html": "<p>After setting up and connecting to the TAK Server, continue to <a href=\"/en/guides/tak-guide/data-sync-U4cc7UE9hg\">Data Sync</a>.</p>"
     }
   ]
 }

@@ -47,7 +47,7 @@
   "blocks": [
     {
       "type": "html",
-      "html": "<p>Missions (Data Sync -syötteet) hallitaan takserverin käyttöliittymän Mission Manager -osion kautta.\nMission Manager löytyy<a> osoitteesta:</a>\n<a><strong>https://tak.server.fi:8443/Marti/MissionManager.ht</strong></a><a href=\"https://tak.server.fi:8443/Marti/MissionManager.html\" target=\"_blank\" rel=\"noopener noreferrer\"><strong>ml</strong></a></p>"
+      "html": "<p>Missions (Data Sync -syötteet) hallitaan takserverin käyttöliittymän Mission Manager -osion kautta.<br>\nMission Manager löytyy<a> osoitteesta:</a><br>\n<a><strong>https://tak.server.fi:8443/Marti/MissionManager.ht</strong></a><a href=\"https://tak.server.fi:8443/Marti/MissionManager.html\" target=\"_blank\" rel=\"noopener noreferrer\"><strong>ml</strong></a></p>"
     },
     {
       "type": "image",
@@ -80,7 +80,7 @@
     },
     {
       "type": "html",
-      "html": "<h3 id=\"missionin-poistaminen--arkistointi\"><a href=\"#missionin-poistaminen--arkistointi\"><strong>Missionin poistaminen / Arkistointi</strong></a></h3>\n<p>Missionien poistaminen tehdään valitsemalla halutut syötteet ja painamalla <strong>Delete</strong>.\nPoistetut syötteet siirtyvät <strong>Archived Missions</strong> -osioon, joten niiden dataa ei poisteta palvelimelta.</p>"
+      "html": "<h3 id=\"missionin-poistaminen--arkistointi\"><a href=\"#missionin-poistaminen--arkistointi\"><strong>Missionin poistaminen / Arkistointi</strong></a></h3>\n<p>Missionien poistaminen tehdään valitsemalla halutut syötteet ja painamalla <strong>Delete</strong>.<br>\nPoistetut syötteet siirtyvät <strong>Archived Missions</strong> -osioon, joten niiden dataa ei poisteta palvelimelta.</p>"
     },
     {
       "type": "image",
@@ -91,7 +91,7 @@
     },
     {
       "type": "html",
-      "html": "<h3 id=\"missionin-muokkaaminen\"><a href=\"#missionin-muokkaaminen\"><strong>Missionin muokkaaminen</strong></a></h3>\n<p>Missionin muokkaus takserverissä tehdään Mission Manager -näkymästä.\nValitse syötteet, joita haluat muuttaa, ja säädä asetuksia tarpeen mukaan.</p>\n<p>Kun muutokset on tehty, valitse <strong>Save and Close</strong>.</p>"
+      "html": "<h3 id=\"missionin-muokkaaminen\"><a href=\"#missionin-muokkaaminen\"><strong>Missionin muokkaaminen</strong></a></h3>\n<p>Missionin muokkaus takserverissä tehdään Mission Manager -näkymästä.<br>\nValitse syötteet, joita haluat muuttaa, ja säädä asetuksia tarpeen mukaan.</p>\n<p>Kun muutokset on tehty, valitse <strong>Save and Close</strong>.</p>"
     },
     {
       "type": "image",

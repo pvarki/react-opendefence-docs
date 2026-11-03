@@ -12,7 +12,7 @@
     "Suunnitelmien piirtäminen ja jakaminen"
   ],
   "createdAt": "2026-06-18T19:26:17.934Z",
-  "updatedAt": "2026-06-18T20:14:01.051Z",
+  "updatedAt": "2026-11-01T21:30:06.891Z",
   "headings": [],
   "translations": {
     "en": "/en/guides/tak-guide/draw-share-plans-fxjT3hDZ5p",
@@ -151,10 +151,6 @@
           "images": []
         }
       ]
-    },
-    {
-      "type": "html",
-      "html": "<p>Kun olet testannut Suunnitelmien piirtämisen ja jakamisen onnistuneesti, jatka kohtaan <a href=\"/en/guides/tak-guide/geofences-wgaLkSEvef\">Geofences</a></p>"
     }
   ]
 }

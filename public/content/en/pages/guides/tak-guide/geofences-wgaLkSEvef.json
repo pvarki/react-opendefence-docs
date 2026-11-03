@@ -12,7 +12,7 @@
     "Geofences"
   ],
   "createdAt": "2025-12-05T22:06:22.040Z",
-  "updatedAt": "2026-06-18T20:14:39.591Z",
+  "updatedAt": "2026-11-01T21:19:49.677Z",
   "headings": [
     {
       "depth": 2,
@@ -155,10 +155,6 @@
           ]
         }
       ]
-    },
-    {
-      "type": "html",
-      "html": "<p>After successful testing Geofences, continue to</p>"
     }
   ]
 }

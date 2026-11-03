@@ -12,7 +12,7 @@
     "Clear Content"
   ],
   "createdAt": "2026-02-21T22:25:18.130Z",
-  "updatedAt": "2026-06-18T20:23:43.290Z",
+  "updatedAt": "2026-11-01T21:30:56.778Z",
   "headings": [],
   "translations": {
     "en": "/en/guides/tak-guide/clear-content-gLcPrq5b5J",
@@ -70,7 +70,7 @@
     },
     {
       "type": "html",
-      "html": "<p>Continue activation: <a href=\"/en/guides/tak-guide/set-language-localization-for-wintak-GstcQifMVj\">Start from Download</a></p>"
+      "html": "<p>Continue activation: <a href=\"/en/guides/tak-guide/set-language-localization-for-wintak-GstcQifMVj\">Set language &#x26; localization for WinTAK</a></p>"
     }
   ]
 }

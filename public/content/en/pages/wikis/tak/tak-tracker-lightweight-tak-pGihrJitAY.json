@@ -30,12 +30,12 @@
     {
       "depth": 2,
       "text": "Available from",
-      "id": "available-from"
+      "id": "available-from-1"
     },
     {
       "depth": 2,
       "text": "Product Description",
-      "id": "product-description"
+      "id": "product-description-1"
     },
     {
       "depth": 2,
@@ -83,7 +83,7 @@
     },
     {
       "type": "pdf",
-      "src": "attachments/818edc6c-faeb-4dbd-b4f7-9b3051a9a78f.pdf",
+      "src": "/content/files/41607e2b9435f1e8.pdf",
       "title": "ATAK TAK Tracker App User Guide 4.6.1.pdf"
     },
     {
@@ -99,7 +99,7 @@
     },
     {
       "type": "html",
-      "html": "<h2 id=\"available-from\"><a href=\"#available-from\">Available from</a></h2>\n<p><a href=\"https://apps.apple.com/us/app/tak-tracker/id6455684671\" target=\"_blank\" rel=\"noopener noreferrer\">https://apps.apple.com/us/app/tak-tracker/id6455684671</a></p>\n<h2 id=\"product-description\"><a href=\"#product-description\">Product Description</a></h2>\n<p>The Team Awareness Kit (TAK) Tracker (also known as the Tactical Assault Kit in the Department of Defense) is a lightweight, send-only application designed to enable easy integrations into existing training and operational workflows. The application is designed from the ground-up in iOS and connects to your favorite TAK servers with either Data Packages or Certificate Enrollment. In addition, TAK Tracker can broadcast its information to the local network like you would expect from any TAK application.</p>\n<h2 id=\"tak-tracker-contains-with-the-following-features\"><a href=\"#tak-tracker-contains-with-the-following-features\">TAK Tracker contains with the following features</a></h2>\n<ul>\n<li>Full support for Data Packages and Certificate Enrollment</li>\n<li>Location / CoT broadcast over UDP</li>\n<li>Emergency Beacon support</li>\n<li>Support for Standard, Hybrid and 3D Maps</li>\n<li>Ability to change all measurement types, including MGRS</li>\n<li>Full support for continuously running in the background with low power draw</li>\n</ul>\n<h3 id=\"additional-features-coming-in-the-next-release\"><a href=\"#additional-features-coming-in-the-next-release\">Additional features coming in the next release:</a></h3>\n<ul>\n<li>TAK Chat Support</li>\n<li>Group/Channel Support</li>\n<li>QR Code Enrollment</li>\n</ul>\n<h3 id=\"system-requirements\"><a href=\"#system-requirements\">System Requirements:</a></h3>\n<ul>\n<li>Supports iOS 15.4 and later versions</li>\n</ul>"
+      "html": "<h2 id=\"available-from-1\"><a href=\"#available-from-1\">Available from</a></h2>\n<p><a href=\"https://apps.apple.com/us/app/tak-tracker/id6455684671\" target=\"_blank\" rel=\"noopener noreferrer\">https://apps.apple.com/us/app/tak-tracker/id6455684671</a></p>\n<h2 id=\"product-description-1\"><a href=\"#product-description-1\">Product Description</a></h2>\n<p>The Team Awareness Kit (TAK) Tracker (also known as the Tactical Assault Kit in the Department of Defense) is a lightweight, send-only application designed to enable easy integrations into existing training and operational workflows. The application is designed from the ground-up in iOS and connects to your favorite TAK servers with either Data Packages or Certificate Enrollment. In addition, TAK Tracker can broadcast its information to the local network like you would expect from any TAK application.</p>\n<h2 id=\"tak-tracker-contains-with-the-following-features\"><a href=\"#tak-tracker-contains-with-the-following-features\">TAK Tracker contains with the following features</a></h2>\n<ul>\n<li>Full support for Data Packages and Certificate Enrollment</li>\n<li>Location / CoT broadcast over UDP</li>\n<li>Emergency Beacon support</li>\n<li>Support for Standard, Hybrid and 3D Maps</li>\n<li>Ability to change all measurement types, including MGRS</li>\n<li>Full support for continuously running in the background with low power draw</li>\n</ul>\n<h3 id=\"additional-features-coming-in-the-next-release\"><a href=\"#additional-features-coming-in-the-next-release\">Additional features coming in the next release:</a></h3>\n<ul>\n<li>TAK Chat Support</li>\n<li>Group/Channel Support</li>\n<li>QR Code Enrollment</li>\n</ul>\n<h3 id=\"system-requirements\"><a href=\"#system-requirements\">System Requirements:</a></h3>\n<ul>\n<li>Supports iOS 15.4 and later versions</li>\n</ul>"
     }
   ]
 }

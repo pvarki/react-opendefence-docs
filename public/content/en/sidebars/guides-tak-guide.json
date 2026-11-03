@@ -417,18 +417,6 @@
           "children": [
             {
               "type": "doc",
-              "id": "install-uas-tool-plugin-BDPcnhvDgk",
-              "label": "Install UAS Tool Plugin",
-              "slug": "install-uas-tool-plugin-BDPcnhvDgk"
-            },
-            {
-              "type": "doc",
-              "id": "auto-connect-uas-tool-to-mediamtx-MahzGHsEdu",
-              "label": "Auto-connect UAS Tool to MediaMTX",
-              "slug": "auto-connect-uas-tool-to-mediamtx-MahzGHsEdu"
-            },
-            {
-              "type": "doc",
               "id": "open-uas-tool-read-telemetry-CvGSGecLE1",
               "label": "Open UAS Tool & Read Telemetry",
               "slug": "open-uas-tool-read-telemetry-CvGSGecLE1"
@@ -830,46 +818,6 @@
           "id": "data-sync-U4cc7UE9hg",
           "label": "Data Sync",
           "slug": "data-sync-U4cc7UE9hg"
-        }
-      ]
-    },
-    {
-      "type": "group",
-      "id": "usage-by-role-LlQdNcNgkg",
-      "label": "Usage by Role",
-      "clientId": "itak-bwDYWvqdnY",
-      "children": [
-        {
-          "type": "doc",
-          "id": "overview-bPeWx0MdZQ",
-          "label": "Overview",
-          "slug": "overview-bPeWx0MdZQ"
-        },
-        {
-          "type": "doc",
-          "id": "fighter-rf4mMCmmWV",
-          "label": "Fighter",
-          "slug": "fighter-rf4mMCmmWV"
-        },
-        {
-          "type": "doc",
-          "id": "command-post-YxjX9bA9iG",
-          "label": "Command Post",
-          "slug": "command-post-YxjX9bA9iG"
-        }
-      ]
-    },
-    {
-      "type": "group",
-      "id": "itak-bwDYWvqdnY",
-      "label": "iTAK",
-      "clientId": "itak-bwDYWvqdnY",
-      "children": [
-        {
-          "type": "doc",
-          "id": "troubleshooting-Pj64UaHAJW",
-          "label": "Troubleshooting",
-          "slug": "troubleshooting-Pj64UaHAJW"
         }
       ]
     },

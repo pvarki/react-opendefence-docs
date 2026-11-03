@@ -12,7 +12,7 @@
     "WinTAK-laajennusten hallinta"
   ],
   "createdAt": "2026-06-18T19:33:25.937Z",
-  "updatedAt": "2026-06-18T20:23:42.249Z",
+  "updatedAt": "2026-11-01T21:30:54.461Z",
   "headings": [],
   "translations": {
     "en": "/en/guides/tak-guide/plugin-management-EphDON8hEX",
@@ -97,10 +97,6 @@
           "images": []
         }
       ]
-    },
-    {
-      "type": "html",
-      "html": "<p>Seuraava vaihe on määrittää <a href=\"/en/guides/tak-guide/data-sync-VswHZNexYA\">Data Sync</a></p>"
     }
   ]
 }

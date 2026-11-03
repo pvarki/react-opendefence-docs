@@ -12,7 +12,7 @@
     "TAK Tracker on jo asennettu"
   ],
   "createdAt": "2026-06-18T19:39:04.644Z",
-  "updatedAt": "2026-06-18T20:26:34.864Z",
+  "updatedAt": "2026-11-01T21:30:55.871Z",
   "headings": [],
   "translations": {
     "en": "/en/guides/tak-guide/tak-tracker-already-installed-DoVQOAKWVB",
@@ -34,7 +34,7 @@
     },
     {
       "type": "html",
-      "html": "<p>Kun olet poistanut TAK Trackerin, jatka kohtaan <a href=\"/en/guides/tak-guide/start-from-download-x9ve2aL7oC\">Aloita lataamalla</a></p>"
+      "html": "<p>Kun olet poistanut TAK Trackerin, jatka kohtaan <a href=\"/fi/guides/tak-guide/aloita-lataamisesta-HDrpxKE5fj\">Aloita lataamisesta</a></p>"
     }
   ]
 }

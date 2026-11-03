@@ -12,7 +12,7 @@
     "Plugin Management"
   ],
   "createdAt": "2026-02-21T19:59:37.122Z",
-  "updatedAt": "2026-06-18T20:23:41.683Z",
+  "updatedAt": "2026-11-01T21:30:54.016Z",
   "headings": [],
   "translations": {
     "en": "/en/guides/tak-guide/plugin-management-EphDON8hEX",
@@ -97,10 +97,6 @@
           "images": []
         }
       ]
-    },
-    {
-      "type": "html",
-      "html": "<p>Next step is to configure <a href=\"/en/guides/tak-guide/data-sync-VswHZNexYA\">Data Sync</a></p>"
     }
   ]
 }

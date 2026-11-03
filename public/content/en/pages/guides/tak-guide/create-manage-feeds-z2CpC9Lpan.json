@@ -12,7 +12,7 @@
     "Create & Manage Feeds"
   ],
   "createdAt": "2025-12-05T22:06:22.318Z",
-  "updatedAt": "2026-06-18T20:13:57.845Z",
+  "updatedAt": "2026-11-01T21:30:04.984Z",
   "headings": [],
   "translations": {
     "en": "/en/guides/tak-guide/create-manage-feeds-z2CpC9Lpan",
@@ -135,7 +135,7 @@
         {
           "title": "New Feed Created!",
           "layout": "text",
-          "html": "<ul>\n<li>Your new feed is now here!</li>\n<li>If the default role is not Admin, people from your server can now subscribe your feed.</li>\n</ul>\n<p>After successful testing Create &#x26; Manage Feeds, continue to <a href=\"/en/guides/tak-guide/draw-share-plans-fxjT3hDZ5p\">Draw &#x26; share Plans</a></p>\n<p>Korjataan Data Sync Default Role Owner kuvaus:\nKäyttäjästä tulee oletuksena Admin Data Sync feedille. Tätä ominaisuutta ei suositella käytettäväksi, uusi omistaja voi</p>",
+          "html": "<ul>\n<li>Your new feed is now here!</li>\n<li>If the default role is not Admin, people from your server can now subscribe your feed.</li>\n</ul>\n<p>Korjataan Data Sync Default Role Owner kuvaus:<br>\nKäyttäjästä tulee oletuksena Admin Data Sync feedille. Tätä ominaisuutta ei suositella käytettäväksi, uusi omistaja voi</p>",
           "images": []
         },
         {

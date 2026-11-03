@@ -11,6 +11,25 @@
     },
     {
       "type": "group",
+      "id": "titta-pa-streamen-0SUHzvwK33",
+      "label": "Titta på streamen",
+      "children": [
+        {
+          "type": "doc",
+          "id": "webblasare-ww2sENtpLr",
+          "label": "Webbläsare",
+          "slug": "webblasare-ww2sENtpLr"
+        },
+        {
+          "type": "doc",
+          "id": "vlc-player-8p9jKo0ZTH",
+          "label": "VLC Player",
+          "slug": "vlc-player-8p9jKo0ZTH"
+        }
+      ]
+    },
+    {
+      "type": "group",
       "id": "publicera-streamen-51x6awRSrH",
       "label": "Publicera streamen",
       "children": [

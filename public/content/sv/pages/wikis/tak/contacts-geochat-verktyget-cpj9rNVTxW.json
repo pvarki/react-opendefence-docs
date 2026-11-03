@@ -32,7 +32,7 @@
     {
       "depth": 3,
       "text": "Verktygsbeskrivning",
-      "id": "verktygsbeskrivning"
+      "id": "verktygsbeskrivning-1"
     },
     {
       "depth": 2,
@@ -79,7 +79,7 @@
     },
     {
       "type": "html",
-      "html": "<h3 id=\"verktygsbeskrivning\"><a href=\"#verktygsbeskrivning\"><strong>Verktygsbeskrivning</strong></a></h3>\n<p>Chat-verktyget loggar, organiserar och visar det senaste meddelandet som skickats i varje chattrum som enheten har anslutit sig till. Detta ger en snabb översikt över alla grupper och konversationer där aktiv kommunikation pågår.</p>\n<h2 id=\"opastusvideot\"><a href=\"#opastusvideot\">Opastusvideot</a></h2>\n<h3 id=\"contacts-tool-3min\"><a href=\"#contacts-tool-3min\">Contacts Tool (3min)</a></h3>"
+      "html": "<h3 id=\"verktygsbeskrivning-1\"><a href=\"#verktygsbeskrivning-1\"><strong>Verktygsbeskrivning</strong></a></h3>\n<p>Chat-verktyget loggar, organiserar och visar det senaste meddelandet som skickats i varje chattrum som enheten har anslutit sig till. Detta ger en snabb översikt över alla grupper och konversationer där aktiv kommunikation pågår.</p>\n<h2 id=\"opastusvideot\"><a href=\"#opastusvideot\">Opastusvideot</a></h2>\n<h3 id=\"contacts-tool-3min\"><a href=\"#contacts-tool-3min\">Contacts Tool (3min)</a></h3>"
     },
     {
       "type": "youtube",
@@ -91,7 +91,7 @@
     },
     {
       "type": "pdf",
-      "src": "attachments/b820049a-914f-4337-9877-4c3d37264871.pdf",
+      "src": "/content/files/6b6adb2542ed36b5.pdf",
       "title": "ATAK 5.6 Contacts - GeoChat.pdf"
     }
   ]

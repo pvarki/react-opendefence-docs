@@ -12,7 +12,7 @@
     "Point Dropper - Markers"
   ],
   "createdAt": "2025-12-05T22:06:22.373Z",
-  "updatedAt": "2026-06-18T20:13:49.189Z",
+  "updatedAt": "2026-11-01T21:30:09.730Z",
   "headings": [],
   "translations": {
     "en": "/en/guides/tak-guide/point-dropper-markers-lsYmFrTvqH",
@@ -289,10 +289,6 @@
           ]
         }
       ]
-    },
-    {
-      "type": "html",
-      "html": "<p>After successful testing Point Dropper, continue to <a href=\"/en/guides/tak-guide/geochat-SMWfbwNItT\">Use GeoChat</a></p>"
     }
   ]
 }

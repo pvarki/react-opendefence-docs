@@ -12,7 +12,7 @@
     "Aloita lataamisesta"
   ],
   "createdAt": "2026-06-18T19:39:04.069Z",
-  "updatedAt": "2026-06-18T20:26:33.145Z",
+  "updatedAt": "2026-11-01T21:30:55.401Z",
   "headings": [],
   "translations": {
     "en": "/en/guides/tak-guide/start-from-download-x9ve2aL7oC",
@@ -136,7 +136,7 @@
     },
     {
       "type": "html",
-      "html": "<p>TAK Trackerin asentamisen jälkeen jatka kohtaan <a href=\"/en/guides/tak-guide/importing-server-connection-URmd6F0UU5\">Palvelinyhteyden tuominen</a></p>"
+      "html": "<p>TAK Trackerin asentamisen jälkeen jatka kohtaan <a href=\"/fi/guides/tak-guide/palvelinyhteyden-tuonti-se5nhvhcj0\">Palvelinyhteyden tuonti</a></p>"
     }
   ]
 }

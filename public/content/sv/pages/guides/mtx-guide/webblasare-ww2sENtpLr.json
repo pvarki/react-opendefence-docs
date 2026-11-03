@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "id": "8f4db11b-9c95-4715-875f-0d6109fa48cd",
+  "slug": "webblasare-ww2sENtpLr",
+  "collection": "guides/mtx-guide",
+  "locale": "sv",
+  "title": "Webbläsare",
+  "breadcrumb": [
+    "Titta på streamen",
+    "Webbläsare"
+  ],
+  "createdAt": "2025-12-06T09:15:10.550Z",
+  "updatedAt": "2026-11-03T08:54:24.569Z",
+  "headings": [],
+  "translations": {
+    "fi": "/fi/guides/mtx-guide/selain-0MrE4uNLAM",
+    "en": "/en/guides/mtx-guide/browser-OODFuhucDG",
+    "sv": "/sv/guides/mtx-guide/webblasare-ww2sENtpLr"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Titta på en livestream i webbläsaren via MTX-sidan i Deploy App.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Hitta strömmen",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Strömmar som sänder just nu är märkta <strong>LIVE</strong></li>\n<li>Sök i <strong>Sök strömmar...</strong> efter anropssignal eller verktyg (icu, gopro, uas, ipcam)</li>\n<li>Välj strömmen du vill titta på</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/baa85ee668f82795.webp",
+              "width": 1080,
+              "height": 1825
+            }
+          ]
+        },
+        {
+          "title": "Spela strömmen",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Tryck på <strong>Spela ström</strong></li>\n<li>Videon spelas upp på sidan</li>\n<li>Om du ser <strong>Strömmen är offline</strong> sänder strömmen inte just nu: gå tillbaka med <strong>Tillbaka till strömmar</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/57fae925d2f171e7.webp",
+              "width": 1080,
+              "height": 2002
+            }
+          ]
+        },
+        {
+          "title": "Titta utanför Deploy App",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Välj <strong>Anslutningsalternativ</strong></li>\n<li>Tryck på <strong>Webbläsare</strong> under <strong>Ladda ner paket</strong></li>\n<li>Öppna den nedladdade filen i webbläsaren</li>\n<li>Filen innehåller ditt användarnamn och lösenord: dela den inte, och radera den när du inte längre behöver den</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/6ae1d1f95b669c95.webp",
+              "width": 1080,
+              "height": 2006
+            }
+          ]
+        },
+        {
+          "title": "Nu kan du titta på en ström",
+          "layout": "text",
+          "html": "<ul>\n<li>Du kan stänga den här guiden.</li>\n</ul>\n<p>Om du vill titta med en separat spelarapp, fortsätt till <a href=\"/sv/guides/mtx-guide/vlc-player-8p9jKo0ZTH\">VLC Player</a></p>",
+          "images": []
+        }
+      ]
+    }
+  ]
+}

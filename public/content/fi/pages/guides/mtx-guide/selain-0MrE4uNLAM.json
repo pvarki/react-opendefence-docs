@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "id": "70562d86-f135-4376-b3cd-96cd6dad013a",
+  "slug": "selain-0MrE4uNLAM",
+  "collection": "guides/mtx-guide",
+  "locale": "fi",
+  "title": "Selain",
+  "breadcrumb": [
+    "Katso Striimiä",
+    "Selain"
+  ],
+  "createdAt": "2025-12-09T03:44:27.995Z",
+  "updatedAt": "2026-11-03T08:54:18.665Z",
+  "headings": [],
+  "translations": {
+    "fi": "/fi/guides/mtx-guide/selain-0MrE4uNLAM",
+    "en": "/en/guides/mtx-guide/browser-OODFuhucDG",
+    "sv": "/sv/guides/mtx-guide/webblasare-ww2sENtpLr"
+  },
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Katso live-striimiä selaimessa Deploy Appin MTX-sivun kautta.</p>"
+    },
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Etsi striimi",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Parhaillaan lähettävät striimit on merkitty <strong>LIVE</strong></li>\n<li>Hae kentällä <strong>Hae striimejä...</strong> kutsutunnuksella tai työkalulla (icu, gopro, uas, ipcam)</li>\n<li>Valitse striimi, jota haluat katsoa</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/84ac4b5be89312dd.webp",
+              "width": 1080,
+              "height": 2006
+            }
+          ]
+        },
+        {
+          "title": "Toista striimi",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Paina <strong>Toista striimi</strong></li>\n<li>Video alkaa sivulla</li>\n<li>Jos näet tekstin <strong>Striimi ei ole käytössä</strong>, striimi ei lähetä juuri nyt: palaa kohdasta <strong>Takaisin striimeihin</strong></li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/57fae925d2f171e7.webp",
+              "width": 1080,
+              "height": 2002
+            }
+          ]
+        },
+        {
+          "title": "Katso Deploy Appin ulkopuolella",
+          "layout": "image-bottom",
+          "html": "<ul>\n<li>Valitse <strong>Yhteysasetukset</strong></li>\n<li>Paina kohdassa <strong>Lataa paketit</strong> painiketta <strong>Selain</strong></li>\n<li>Avaa ladattu tiedosto selaimessa</li>\n<li>Tiedostossa ovat käyttäjätunnuksesi ja salasanasi: älä jaa sitä, ja poista se, kun et enää tarvitse sitä</li>\n</ul>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/b53ab9d3d0f12410.webp",
+              "width": 1080,
+              "height": 2000
+            }
+          ]
+        },
+        {
+          "title": "Osaat nyt katsoa striimiä",
+          "layout": "text",
+          "html": "<ul>\n<li>Voit sulkea tämän oppaan.</li>\n</ul>\n<p>Jos haluat katsoa erillisellä soitinsovelluksella, jatka kohtaan <a href=\"/fi/guides/mtx-guide/vlc-player-fUPdjIb8kS\">VLC Player</a></p>",
+          "images": []
+        }
+      ]
+    }
+  ]
+}

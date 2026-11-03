@@ -13,7 +13,7 @@
     "Use RECON Feed"
   ],
   "createdAt": "2026-01-23T21:12:33.341Z",
-  "updatedAt": "2026-06-18T20:17:03.983Z",
+  "updatedAt": "2026-11-01T21:30:12.614Z",
   "headings": [],
   "translations": {
     "en": "/en/guides/tak-guide/use-recon-feed-1eKYHfIBys",
@@ -89,7 +89,7 @@
     },
     {
       "type": "html",
-      "html": "<p>After understandig RECON feed, continue to</p>\n<p>Read more about RECON feed at TAK Wiki <a href=\"/en/wikis/tak/takserver-recon-feed-6S3IuBlBTY\">Takserver RECON feed</a></p>\n<p>Read more about Forwarding observations to Command Post at TAK WIKI <a href=\"/en/wikis/tak/forwarding-observations-K5fcmMIAnp\">Forwarding Observations</a></p>"
+      "html": "<p>Read more about RECON feed at TAK Wiki <a href=\"/en/wikis/tak/takserver-recon-feed-6S3IuBlBTY\">Takserver RECON feed</a></p>\n<p>Read more about Forwarding observations to Command Post at TAK WIKI <a href=\"/en/wikis/tak/forwarding-observations-K5fcmMIAnp\">Forwarding Observations</a></p>"
     }
   ]
 }

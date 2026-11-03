@@ -12,17 +12,18 @@
     "Use GeoChat"
   ],
   "createdAt": "2025-12-05T22:05:59.366Z",
-  "updatedAt": "2026-06-18T20:23:39.735Z",
+  "updatedAt": "2026-11-01T21:13:04.680Z",
   "headings": [],
   "translations": {
     "en": "/en/guides/tak-guide/use-geochat-G4fqV0Y4fg",
     "fi": "/fi/guides/tak-guide/kayta-geochatia-F9hZhCTnub",
     "sv": "/sv/guides/tak-guide/anvand-geochat-D5tfU0DNdl"
   },
+  "underDevelopment": true,
   "blocks": [
     {
       "type": "html",
-      "html": "<p>GeoChat is WinTAK's built-in text messaging. Use it to coordinate with your unit without leaving the map.</p>\n<blockquote>\n<p>Draft: written without screenshots. Add WinTAK GeoChat screenshots when available.</p>\n</blockquote>"
+      "html": "<p>GeoChat is WinTAK's built-in text messaging. Use it to coordinate with your unit without leaving the map.</p>"
     },
     {
       "type": "slideset",

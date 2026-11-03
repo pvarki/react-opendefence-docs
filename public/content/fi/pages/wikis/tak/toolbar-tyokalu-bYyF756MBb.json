@@ -12,7 +12,7 @@
     "Toolbar-työkalu"
   ],
   "createdAt": "2025-12-08T01:23:57.323Z",
-  "updatedAt": "2026-02-19T13:05:52.415Z",
+  "updatedAt": "2026-11-02T13:53:35.831Z",
   "headings": [
     {
       "depth": 2,
@@ -26,13 +26,14 @@
     },
     {
       "depth": 2,
-      "text": "Toolbar -tool section from ATAK manual",
-      "id": "toolbar--tool-section-from-atak-manual"
+      "text": "Toolbar-työkalun osio ATAKin käyttöoppaasta",
+      "id": "toolbar-työkalun-osio-atakin-käyttöoppaasta"
     }
   ],
   "translations": {
     "en": "/en/wikis/tak/toolbar-tool-EKByDYLVSo",
-    "fi": "/fi/wikis/tak/toolbar-tyokalu-bYyF756MBb"
+    "fi": "/fi/wikis/tak/toolbar-tyokalu-bYyF756MBb",
+    "sv": "/sv/wikis/tak/toolbar-verktyget-DEWC4UgT03"
   },
   "blocks": [
     {
@@ -44,11 +45,11 @@
     },
     {
       "type": "html",
-      "html": "<h2 id=\"työkalun-kuvaus\"><a href=\"#työkalun-kuvaus\"><strong>Työkalun kuvaus</strong></a></h2>\n<p>ATAK-työkalupalkki on muokattavissa, mikä mahdollistaa useiden eri asettelujen luomisen ja niiden välillä nopean vaihtamisen tai muokkaamisen. Oletustyökalupalkissa on viisi työkalua, ja älypuhelimessa siihen voidaan lisätä kuudes työkalu. Tablet-laitteissa työkalupalkki voi sisältää jopa kymmenen työkalua.</p>\n<h2 id=\"opastusvideot\"><a href=\"#opastusvideot\">Opastusvideot</a></h2>\n<p>==YouTube==</p>\n<h2 id=\"toolbar--tool-section-from-atak-manual\"><a href=\"#toolbar--tool-section-from-atak-manual\">Toolbar -tool section from ATAK manual</a></h2>"
+      "html": "<h2 id=\"työkalun-kuvaus\"><a href=\"#työkalun-kuvaus\"><strong>Työkalun kuvaus</strong></a></h2>\n<p>ATAK-työkalupalkki on muokattavissa, mikä mahdollistaa useiden eri asettelujen luomisen ja niiden välillä nopean vaihtamisen tai muokkaamisen. Oletustyökalupalkissa on viisi työkalua, ja älypuhelimessa siihen voidaan lisätä kuudes työkalu. Tablet-laitteissa työkalupalkki voi sisältää jopa kymmenen työkalua.</p>\n<h2 id=\"opastusvideot\"><a href=\"#opastusvideot\">Opastusvideot</a></h2>\n<p>==YouTube==</p>\n<h2 id=\"toolbar-työkalun-osio-atakin-käyttöoppaasta\"><a href=\"#toolbar-työkalun-osio-atakin-käyttöoppaasta\">Toolbar-työkalun osio ATAKin käyttöoppaasta</a></h2>"
     },
     {
       "type": "pdf",
-      "src": "attachments/d2fe9f9f-1383-4965-810a-90e94a209971.pdf",
+      "src": "/content/files/792bf9db0a0eccfb.pdf",
       "title": "ATAK 5.6 Toolbar.pdf"
     }
   ]

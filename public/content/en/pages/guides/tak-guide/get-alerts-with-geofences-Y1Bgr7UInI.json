@@ -12,17 +12,18 @@
     "Get alerts with Geofences"
   ],
   "createdAt": "2025-12-05T22:05:59.131Z",
-  "updatedAt": "2026-06-18T20:23:52.229Z",
+  "updatedAt": "2026-11-01T21:12:35.932Z",
   "headings": [],
   "translations": {
     "en": "/en/guides/tak-guide/get-alerts-with-geofences-Y1Bgr7UInI",
     "fi": "/fi/guides/tak-guide/saa-halytyksia-geoaidoilla-4MYhNMrI4D",
     "sv": "/sv/guides/tak-guide/fa-varningar-med-geostangsel-YvTX3n2Ucj"
   },
+  "underDevelopment": true,
   "blocks": [
     {
       "type": "html",
-      "html": "<p>A geofence is a boundary you draw on the map that raises an alert when something crosses it — so you can watch an area without staring at the screen.</p>\n<blockquote>\n<p>Draft: written without screenshots. Add WinTAK geofence screenshots when available.</p>\n</blockquote>"
+      "html": "<p>A geofence is a boundary you draw on the map that raises an alert when something crosses it — so you can watch an area without staring at the screen.</p>"
     },
     {
       "type": "slideset",
