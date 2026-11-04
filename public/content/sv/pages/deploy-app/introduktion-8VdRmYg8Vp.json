@@ -10,7 +10,7 @@
     "Introduktion"
   ],
   "createdAt": "2026-06-18T20:34:50.644Z",
-  "updatedAt": "2026-09-12T20:40:07.841Z",
+  "updatedAt": "2026-11-04T23:20:23.753Z",
   "headings": [],
   "translations": {
     "en": "/en/deploy-app/introduction-d1XzfzOkpz",
@@ -47,6 +47,18 @@
               "src": "/content/images/sv/attachments/408823f815c4d338.webp",
               "width": 2560,
               "height": 5712
+            }
+          ]
+        },
+        {
+          "title": "Decentraliserat, en server per enhet",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Enheten vet vilka dess soldater är och vem som behöver vilken åtkomst.</li>\n<li>Deploy App ger enheten full kontroll över sin alldeles egna Deploy App-server. Ingen långsam och farlig centraliserad identitetshantering.</li>\n</ul>\n<p>Du kan starta dem i molnet eller på egna maskiner, precis det du vill driva.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/903cec9986ebe100.webp",
+              "width": 1800,
+              "height": 1000
             }
           ]
         },

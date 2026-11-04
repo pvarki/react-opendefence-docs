@@ -1,9 +1,4 @@
 {
-  "introduktion-8VdRmYg8Vp": {
-    "en": "/en/deploy-app/introduction-d1XzfzOkpz",
-    "fi": "/fi/deploy-app/johdanto-pVdcEzIB4j",
-    "sv": "/sv/deploy-app/introduktion-8VdRmYg8Vp"
-  },
   "ga-med-i-en-deploy-app-Weat7nbJuF": {
     "en": "/en/deploy-app/joining-a-deploy-app-p9htrbBL4S",
     "fi": "/fi/deploy-app/liittyminen-deploy-appiin-hFiNczU5i7",
@@ -929,5 +924,10 @@
     "en": "/en/wikis/mtx/uas-tool-streaming-nxo5zBYr3D",
     "fi": "/fi/wikis/mtx/uas-tool-striimaus-7enOQTR7tf",
     "sv": "/sv/wikis/mtx/uas-tool-stromning-5JeQ6TxVVy"
+  },
+  "introduktion-8VdRmYg8Vp": {
+    "en": "/en/deploy-app/introduction-d1XzfzOkpz",
+    "fi": "/fi/deploy-app/johdanto-pVdcEzIB4j",
+    "sv": "/sv/deploy-app/introduktion-8VdRmYg8Vp"
   }
 }
