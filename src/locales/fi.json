@@ -1,7 +1,16 @@
 {
   "app": {
     "title": "OpenDefence Docs",
-    "tagline": "Opi käyttämään Deploy Appia ja OpenDefence-pinoa"
+    "taglinePrefix": "Moderni",
+    "taglineItems": [
+      "tilannekuva",
+      "pikaviestintä",
+      "videonjako",
+      "tiedostonjako",
+      "tulenkäytön koordinointi",
+      "johtamisjärjestelmä"
+    ],
+    "taglineSuffix": "yksikkösi käyttöön"
   },
   "docsBuild": "Dokumentaation koonti {{date}} · {{commit}}",
   "guideIssues": "Ongelmia? Toiveita? Tee issue →",
@@ -38,7 +47,8 @@
     "powerCard": "Olen tehokäyttäjä",
     "powerCardDesc": "Käytä tuotteita edistyneillä tavoilla",
     "demoCard": "Kokeile demoa",
-    "demoCardDesc": "Kokeile, miten Deploy App toimii ja miltä se tuntuu"
+    "demoCardDesc": "Kokeile, miten Deploy App toimii ja miltä se tuntuu",
+    "pitch": "Erillisverkossa tai pilvessä: OpenDefencen avulla saat joukkojesi taistelukykyiset palvelut käyntiin seuraavan 15 minuutin aikana. Lue täältä, miten käytät sitä käyttäjänä ja miten kehität sitä kehittäjänä."
   },
   "intro": {
     "back": "Takaisin",
@@ -255,8 +265,9 @@
     "developer": "Kehittäjät"
   },
   "footer": {
+    "whoTitle": "Keitä me olemme?",
     "lead": "OpenDefence on Puolustusvoimia palveleva kansallisen puolustuksen avoimen lähdekoodin hanke, jonka tavoitteena on tarjota sotilaille monialueoperaatioihin kykeneviä johtamispalveluita helposti ja yhteentoimivasti.",
-    "lead2": "Hankkeen kulmakivi on Deploy App, joka ottaa vastaan tuoteintegraatioita, määrittää, miten niiden kanssa käynnistetään palvelimia ja antaa sotilaiden käyttää niitä helposti.",
+    "lead2": "Hankkeen sydän on Deploy App. Ideana on ratkaista, miten saat joukkosi käyttämään tarvitsemiaan sovelluksia. Pystytät Deploy App -palvelimia, yksi per yksikkö. Yksiköt voivat sitten lisätä käyttäjänsä ja käyttää jokaista palvelua oman palvelimensa kautta Deploy Appin myöntämällä identiteetillä.",
     "tellMore": "Kerro lisää",
     "core": "OpenDefence-pinon ydin on Deploy App. Käyttäjille se on helpoiten kuvattuna sovellus käyttäjien lisäämiseen ja hallintaan; kehittäjille rajapinta, jonka kautta oma sovellus integroidaan ja saadaan sotilaiden käyttöön.",
     "easyTitle": "Tavoitteena helppo pääsy",
