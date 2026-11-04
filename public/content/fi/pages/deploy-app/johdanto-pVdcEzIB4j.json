@@ -10,7 +10,7 @@
     "Johdanto"
   ],
   "createdAt": "2026-06-18T20:34:50.100Z",
-  "updatedAt": "2026-09-12T20:40:07.669Z",
+  "updatedAt": "2026-11-04T23:20:23.493Z",
   "headings": [],
   "translations": {
     "en": "/en/deploy-app/introduction-d1XzfzOkpz",
@@ -47,6 +47,18 @@
               "src": "/content/images/fi/attachments/408823f815c4d338.webp",
               "width": 2560,
               "height": 5712
+            }
+          ]
+        },
+        {
+          "title": "Hajautettu, yksi palvelin yhtä yksikköä kohti",
+          "layout": "image-left",
+          "html": "<ul>\n<li>Yksikkö tietää, keitä sen taistelijat ovat ja kuka tarvitsee mitäkin pääsyä.</li>\n<li>Deploy App antaa yksikölle täyden hallinnan omaan Deploy App -palvelimeensa. Ei hidasta ja vaarallista keskitettyä identiteetinhallintaa.</li>\n</ul>\n<p>Voit pystyttää palvelimet pilveen tai omille laitteillesi sen mukaan, mitä haluat operoida.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/903cec9986ebe100.webp",
+              "width": 1800,
+              "height": 1000
             }
           ]
         },
