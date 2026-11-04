@@ -1,4 +1,4 @@
-import { Fragment, useState } from "react";
+import { Fragment, useEffect, useState } from "react";
 import { createFileRoute } from "@tanstack/react-router";
 import { useTranslation } from "react-i18next";
 import {
@@ -12,6 +12,7 @@ import {
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import { BookCard } from "@/components/shell/BookCard";
+import { useReducedMotion } from "@/components/reader/useReducedMotion";
 import { OrientationModal } from "@/components/shell/OrientationModal";
 import { markOrientationSeen, type TrackKey } from "@/lib/orientationFlows";
 import { PwaInstallPrompt } from "@/components/shell/PwaInstallPrompt";
@@ -112,8 +113,9 @@ function HomePage() {
         <h1 className="relative text-2xl font-bold tracking-tight break-words md:text-3xl">
           {t("app.title")}
         </h1>
-        <p className="relative mt-1.5 text-sm text-muted-foreground md:text-base">
-          {t("app.tagline")}
+        <RotatingTagline />
+        <p className="relative mt-3 max-w-3xl text-sm leading-relaxed md:text-base">
+          {t("home.pitch")}
         </p>
       </header>
       <div className={cn(PAGE_FRAME, "pt-2 pb-8 md:pb-10")}>
@@ -142,6 +144,54 @@ function HomePage() {
       </div>
       <SiteFooter agentExample={t("agentNote.exampleHome")} />
     </div>
+  );
+}
+
+const TAGLINE_INTERVAL_MS = 3500;
+
+/**
+ * "Modern <situational awareness | instant messaging | …> to your unit" — the
+ * middle part cycles so the subtitle says what the stack does. Screen readers
+ * always get the full list; reduced-motion users get it too instead of a
+ * self-changing text (WCAG 2.2.2).
+ */
+function RotatingTagline() {
+  const { t } = useTranslation();
+  const reduced = useReducedMotion();
+  const items = t("app.taglineItems", { returnObjects: true }) as string[];
+  const [i, setI] = useState(0);
+
+  useEffect(() => {
+    if (reduced) return;
+    const id = setInterval(
+      () => setI((n) => (n + 1) % items.length),
+      TAGLINE_INTERVAL_MS,
+    );
+    return () => clearInterval(id);
+  }, [reduced, items.length]);
+
+  const prefix = t("app.taglinePrefix");
+  const suffix = t("app.taglineSuffix");
+  return (
+    <p className="relative mt-1.5 text-sm text-muted-foreground md:text-base">
+      <span className="sr-only">
+        {prefix} ({items.join(" / ")}) {suffix}
+      </span>
+      <span aria-hidden>
+        {prefix}{" "}
+        {reduced ? (
+          `(${items.join(" / ")})`
+        ) : (
+          <span
+            key={i}
+            className="animate-in fade-in font-medium text-foreground duration-500"
+          >
+            {items[i]}
+          </span>
+        )}{" "}
+        {suffix}
+      </span>
+    </p>
   );
 }
 
@@ -184,7 +234,10 @@ function HomeAbout() {
 
   return (
     <section className="mt-10 max-w-3xl border-t border-border pt-8 md:mt-12">
-      <p className="text-sm leading-relaxed text-foreground md:text-base">
+      <h2 className="text-base font-semibold text-foreground">
+        {t("footer.whoTitle")}
+      </h2>
+      <p className="mt-2 text-sm leading-relaxed text-foreground md:text-base">
         {t("footer.lead")}
       </p>
       <p className="mt-3 text-sm leading-relaxed text-foreground md:text-base">
