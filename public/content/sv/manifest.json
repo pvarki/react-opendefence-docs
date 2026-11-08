@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "locale": "sv",
-  "generatedAt": "2026-11-03T22:32:50.499Z",
+  "generatedAt": "2026-11-08T07:50:29.135Z",
   "collections": [
     {
       "slug": "deploy-app",
@@ -68,7 +68,8 @@
           "label": "iTAK",
           "platform": "ios",
           "os": "ios",
-          "isProduct": true
+          "isProduct": true,
+          "underDevelopment": true
         },
         {
           "id": "tak-tracker-android-ZmUQV0eZYK",
@@ -82,7 +83,8 @@
           "label": "TAK Tracker - Apple",
           "platform": "ios",
           "os": "ios",
-          "isProduct": true
+          "isProduct": true,
+          "underDevelopment": true
         }
       ]
     },
@@ -145,7 +147,7 @@
         "Introduktion"
       ],
       "path": "/content/sv/pages/deploy-app/introduktion-8VdRmYg8Vp.json",
-      "updatedAt": "2026-09-12T20:40:07.841Z",
+      "updatedAt": "2026-11-04T23:20:23.753Z",
       "order": 0
     },
     {
@@ -2414,7 +2416,8 @@
       "platform": "ios",
       "clientId": "itak-Ic4xJNBg1l",
       "chapterId": "start-KwmezzKrdE",
-      "chapterLabel": "Start"
+      "chapterLabel": "Start",
+      "underDevelopment": true
     },
     {
       "id": "a4a252ff-06b7-45fd-bf07-2183e59f401f",
@@ -2433,7 +2436,8 @@
       "platform": "ios",
       "clientId": "itak-Ic4xJNBg1l",
       "chapterId": "start-KwmezzKrdE",
-      "chapterLabel": "Start"
+      "chapterLabel": "Start",
+      "underDevelopment": true
     },
     {
       "id": "fe0e99df-b62d-4419-876f-206d6bb4cab6",
@@ -2452,7 +2456,8 @@
       "platform": "ios",
       "clientId": "itak-Ic4xJNBg1l",
       "chapterId": "grundfunktioner-PrjaQuQBVq",
-      "chapterLabel": "Grundfunktioner"
+      "chapterLabel": "Grundfunktioner",
+      "underDevelopment": true
     },
     {
       "id": "5a6b3a64-de23-44dc-839c-3cba8b8838ad",
@@ -2604,7 +2609,8 @@
       "platform": "ios",
       "clientId": "tak-tracker-apple-RIzneI62k8",
       "chapterId": "kom-igang-och-anslut-ip0DOpuzex",
-      "chapterLabel": "KOM IGÅNG OCH ANSLUT"
+      "chapterLabel": "KOM IGÅNG OCH ANSLUT",
+      "underDevelopment": true
     },
     {
       "id": "5f0720e9-c674-4207-b11f-b099d0c876df",
@@ -2623,7 +2629,8 @@
       "platform": "ios",
       "clientId": "tak-tracker-apple-RIzneI62k8",
       "chapterId": "kom-igang-och-anslut-ip0DOpuzex",
-      "chapterLabel": "KOM IGÅNG OCH ANSLUT"
+      "chapterLabel": "KOM IGÅNG OCH ANSLUT",
+      "underDevelopment": true
     },
     {
       "id": "e67c3a42-502a-4c85-b255-2fbf23fde23b",

@@ -10,7 +10,7 @@
     "Introduction"
   ],
   "createdAt": "2026-06-12T23:07:43.260Z",
-  "updatedAt": "2026-09-12T20:40:07.498Z",
+  "updatedAt": "2026-11-04T23:20:23.210Z",
   "headings": [],
   "translations": {
     "en": "/en/deploy-app/introduction-d1XzfzOkpz",
@@ -47,6 +47,18 @@
               "src": "/content/images/en/attachments/408823f815c4d338.webp",
               "width": 2560,
               "height": 5712
+            }
+          ]
+        },
+        {
+          "title": "Decentralized, one server to one unit",
+          "layout": "image-left",
+          "html": "<ul>\n<li>The unit knows who their fighters are and who needs what access.</li>\n<li>Deploy App lets them have full control of their very own Deploy App server. No slow and dangerous centralized identity management.</li>\n</ul>\n<p>You can spin them up in the cloud or on your own boxes, whichever you want to operate.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/903cec9986ebe100.webp",
+              "width": 1800,
+              "height": 1000
             }
           ]
         },
