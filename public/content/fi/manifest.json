@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "locale": "fi",
-  "generatedAt": "2026-11-03T22:32:50.499Z",
+  "generatedAt": "2026-11-08T07:50:29.135Z",
   "collections": [
     {
       "slug": "deploy-app",
@@ -68,7 +68,8 @@
           "label": "iTAK",
           "platform": "ios",
           "os": "ios",
-          "isProduct": true
+          "isProduct": true,
+          "underDevelopment": true
         },
         {
           "id": "tak-tracker-android-E5prGxCUhh",
@@ -82,7 +83,8 @@
           "label": "TAK Tracker - Apple",
           "platform": "ios",
           "os": "ios",
-          "isProduct": true
+          "isProduct": true,
+          "underDevelopment": true
         }
       ]
     },
@@ -145,7 +147,7 @@
         "Johdanto"
       ],
       "path": "/content/fi/pages/deploy-app/johdanto-pVdcEzIB4j.json",
-      "updatedAt": "2026-09-12T20:40:07.669Z",
+      "updatedAt": "2026-11-04T23:20:23.493Z",
       "order": 0
     },
     {
@@ -2414,7 +2416,8 @@
       "platform": "ios",
       "clientId": "itak-pzOFxqFSem",
       "chapterId": "aloitus-r6ZvF4Ztdj",
-      "chapterLabel": "Aloitus"
+      "chapterLabel": "Aloitus",
+      "underDevelopment": true
     },
     {
       "id": "162642b1-e1f1-46c2-9a95-8b6166f0ae78",
@@ -2433,7 +2436,8 @@
       "platform": "ios",
       "clientId": "itak-pzOFxqFSem",
       "chapterId": "aloitus-r6ZvF4Ztdj",
-      "chapterLabel": "Aloitus"
+      "chapterLabel": "Aloitus",
+      "underDevelopment": true
     },
     {
       "id": "d9dc958f-f34a-48d9-ba9e-0349404a8406",
@@ -2452,7 +2456,8 @@
       "platform": "ios",
       "clientId": "itak-pzOFxqFSem",
       "chapterId": "perustoiminnot-AR7DoihPBU",
-      "chapterLabel": "Perustoiminnot"
+      "chapterLabel": "Perustoiminnot",
+      "underDevelopment": true
     },
     {
       "id": "2936078e-8d2c-4836-9e8a-0181fe284bb4",
@@ -2604,7 +2609,8 @@
       "platform": "ios",
       "clientId": "tak-tracker-apple-fLXmWaMemp",
       "chapterId": "aloitus-ja-yhteyden-muodostaminen-zNOY45PsbD",
-      "chapterLabel": "ALOITUS JA YHTEYDEN MUODOSTAMINEN"
+      "chapterLabel": "ALOITUS JA YHTEYDEN MUODOSTAMINEN",
+      "underDevelopment": true
     },
     {
       "id": "7b31e467-8ef9-4534-96c0-ae85ed98d814",
@@ -2623,7 +2629,8 @@
       "platform": "ios",
       "clientId": "tak-tracker-apple-fLXmWaMemp",
       "chapterId": "aloitus-ja-yhteyden-muodostaminen-zNOY45PsbD",
-      "chapterLabel": "ALOITUS JA YHTEYDEN MUODOSTAMINEN"
+      "chapterLabel": "ALOITUS JA YHTEYDEN MUODOSTAMINEN",
+      "underDevelopment": true
     },
     {
       "id": "95181bf8-9633-4bc0-98a5-2d19f45c8a83",
