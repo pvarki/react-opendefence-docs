@@ -13,7 +13,7 @@
     "Name phones without odmdm-fleet"
   ],
   "createdAt": "2026-10-29T10:36:03.712Z",
-  "updatedAt": "2026-11-20T21:36:42.881Z",
+  "updatedAt": "2026-11-20T22:07:59.354Z",
   "headings": [],
   "blocks": [
     {
@@ -59,7 +59,7 @@
         {
           "title": "Send the policy again",
           "layout": "image-bottom",
-          "html": "<p>Once the phones have enrolled, go to <strong>Controls</strong>, <strong>OS settings</strong>, <strong>Configuration profiles</strong>. Delete the policy file and add it again.</p>",
+          "html": "<p>Once every phone has its apps, go to <strong>Controls</strong>, <strong>OS settings</strong>, <strong>Configuration profiles</strong>. Delete the policy file and add it again.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/11dfb2b661af7839.webp",
