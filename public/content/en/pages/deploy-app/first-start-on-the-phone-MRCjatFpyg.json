@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "bc4af1be-49f1-4a03-8226-20596696f376",
+  "slug": "first-start-on-the-phone-MRCjatFpyg",
+  "collection": "deploy-app",
+  "locale": "en",
+  "title": "First start on the phone",
+  "breadcrumb": [
+    "Platforms",
+    "Android",
+    "Admin Guide",
+    "Bringing users via MDM",
+    "First start on the phone"
+  ],
+  "createdAt": "2026-11-20T19:35:14.323Z",
+  "updatedAt": "2026-11-20T22:14:18.931Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Open Deploy App",
+          "layout": "image-bottom",
+          "html": "<p>On the phone, open the <strong>Work</strong> apps and tap <strong>Deploy App</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/84840932117af60e.webp",
+              "width": 912,
+              "height": 1804
+            }
+          ]
+        },
+        {
+          "title": "Chrome's first start",
+          "layout": "image-bottom",
+          "html": "<p>The first time, tap <strong>Stay signed out</strong> or <strong>Use without an account</strong>, whichever Chrome shows.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/0c9c55b572c71199.webp",
+              "width": 912,
+              "height": 1804
+            }
+          ]
+        },
+        {
+          "title": "Signed in",
+          "layout": "image-bottom",
+          "html": "<p>Deploy App opens as the phone's callsign. Identical phones look alike in Fleet: label each one from this greeting.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/0e281f149b1dc049.webp",
+              "width": 912,
+              "height": 1804
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

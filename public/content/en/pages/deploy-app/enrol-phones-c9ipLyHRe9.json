@@ -1,18 +1,19 @@
 {
   "schemaVersion": 1,
   "id": "a7f6b598-93e8-4c0e-85fb-d7a062499d91",
-  "slug": "mdm-devices-c9ipLyHRe9",
+  "slug": "enrol-phones-c9ipLyHRe9",
   "collection": "deploy-app",
   "locale": "en",
-  "title": "MDM Devices",
+  "title": "Enrol phones",
   "breadcrumb": [
     "Platforms",
     "Android",
     "Admin Guide",
-    "MDM Devices"
+    "Bringing users via MDM",
+    "Enrol phones"
   ],
   "createdAt": "2026-10-29T10:35:51.931Z",
-  "updatedAt": "2026-10-31T11:12:25.278Z",
+  "updatedAt": "2026-11-20T22:07:57.681Z",
   "headings": [],
   "blocks": [
     {
@@ -22,7 +23,7 @@
         {
           "title": "Get the enrolment link",
           "layout": "image-bottom",
-          "html": "<p>In Fleet, open your <strong>preparation</strong> team and choose <strong>Add hosts</strong>, then <strong>Android</strong>. Copy the link to the phones. A phone Fleet has seen before keeps its old team and its old name: transfer it to the preparation team first, and give it a new name below.</p>",
+          "html": "<p>In Fleet, open your Deploy App team, then <strong>Add hosts</strong> and <strong>Android</strong>. Send the link to the phones, as many as you like.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/be65720cb87b22b7.webp",
@@ -58,7 +59,7 @@
         {
           "title": "Accept",
           "layout": "image-bottom",
-          "html": "<p>Tap <strong>Accept &#x26; continue</strong>, then <strong>Next</strong> if asked, and wait a minute.</p>",
+          "html": "<p>Tap <strong>Accept &#x26; continue</strong>, then <strong>Next</strong> if asked.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/e0d676c54c6c7569.webp",
@@ -70,7 +71,7 @@
         {
           "title": "Done",
           "layout": "image-bottom",
-          "html": "<p>Tap <strong>Done</strong>. The apps arrive in the work profile.</p>",
+          "html": "<p>Tap <strong>Done</strong>. The apps arrive in the work profile within a few minutes. Name the phones once they all have their apps.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/6ff5b74a5a7be991.webp",
@@ -80,14 +81,14 @@
           ]
         },
         {
-          "title": "Name each phone",
+          "title": "Phones already in Fleet",
           "layout": "image-bottom",
-          "html": "<p>In Fleet, open the phone's host, choose <strong>Edit user</strong> and type its callsign, such as <code>OTTER4</code>: 3–32 letters, digits or hyphens. <strong>Save</strong>. Renaming a phone that already has its certificate gives it a second callsign; revoke the old one in Deploy App.</p>",
+          "html": "<p>Enrolled in another team? Tick the phones in Fleet, choose <strong>Transfer</strong> and pick your Deploy App team. For this team's apps too, enrol them again here.</p>",
           "images": [
             {
-              "src": "/content/images/en/attachments/864752cd63281309.webp",
+              "src": "/content/images/en/attachments/80b224e7ffe15bee.webp",
               "width": 2128,
-              "height": 1150
+              "height": 1210
             }
           ]
         }

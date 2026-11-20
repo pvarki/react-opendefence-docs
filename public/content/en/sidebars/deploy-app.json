@@ -36,7 +36,7 @@
       ]
     },
     {
-      "type": "group",
+      "type": "toporg",
       "id": "admin-guide-V5Hs1rBdRL",
       "label": "Admin Guide",
       "clientId": "android-MENReFAfCN",
@@ -66,22 +66,54 @@
           "slug": "access-external-services-ohReBmQJiu"
         },
         {
-          "type": "doc",
-          "id": "mdm-setup-CqNOaahyKB",
-          "label": "MDM Setup",
-          "slug": "mdm-setup-CqNOaahyKB"
-        },
-        {
-          "type": "doc",
-          "id": "mdm-devices-c9ipLyHRe9",
-          "label": "MDM Devices",
-          "slug": "mdm-devices-c9ipLyHRe9"
-        },
-        {
-          "type": "doc",
-          "id": "mdm-enrolment-S69TrSf5OW",
-          "label": "MDM Enrolment",
-          "slug": "mdm-enrolment-S69TrSf5OW"
+          "type": "group",
+          "id": "bringing-users-via-mdm-Hv7ump2xHK",
+          "label": "Bringing users via MDM",
+          "clientId": "android-MENReFAfCN",
+          "children": [
+            {
+              "type": "doc",
+              "id": "deploy-app-supports-mdm-hgbi4NqgKT",
+              "label": "Deploy App supports MDM",
+              "slug": "deploy-app-supports-mdm-hgbi4NqgKT"
+            },
+            {
+              "type": "doc",
+              "id": "connect-your-mdm-CqNOaahyKB",
+              "label": "Connect your MDM",
+              "slug": "connect-your-mdm-CqNOaahyKB"
+            },
+            {
+              "type": "doc",
+              "id": "enrol-phones-c9ipLyHRe9",
+              "label": "Enrol phones",
+              "slug": "enrol-phones-c9ipLyHRe9"
+            },
+            {
+              "type": "doc",
+              "id": "name-phones-0Fh4ZTpcJs",
+              "label": "Name phones",
+              "slug": "name-phones-0Fh4ZTpcJs"
+            },
+            {
+              "type": "doc",
+              "id": "name-phones-without-odmdm-fleet-S69TrSf5OW",
+              "label": "Name phones without odmdm-fleet",
+              "slug": "name-phones-without-odmdm-fleet-S69TrSf5OW"
+            },
+            {
+              "type": "doc",
+              "id": "first-start-on-the-phone-MRCjatFpyg",
+              "label": "First start on the phone",
+              "slug": "first-start-on-the-phone-MRCjatFpyg"
+            },
+            {
+              "type": "doc",
+              "id": "when-a-phone-does-not-arrive-f3b9RaRVoP",
+              "label": "When a phone does not arrive",
+              "slug": "when-a-phone-does-not-arrive-f3b9RaRVoP"
+            }
+          ]
         }
       ]
     },

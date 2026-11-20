@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 1,
+  "id": "d706bafa-974a-4a29-b8b5-ac5a0c1fa2e9",
+  "slug": "connect-your-mdm-CqNOaahyKB",
+  "collection": "deploy-app",
+  "locale": "en",
+  "title": "Connect your MDM",
+  "breadcrumb": [
+    "Platforms",
+    "Android",
+    "Admin Guide",
+    "Bringing users via MDM",
+    "Connect your MDM"
+  ],
+  "createdAt": "2026-10-29T10:35:43.762Z",
+  "updatedAt": "2026-11-20T21:31:26.161Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Open the MDM page",
+          "layout": "image-bottom",
+          "html": "<p>Open <strong>☰</strong>, then <strong>User Management</strong>, then <strong>MDM</strong>. You connect an MDM once per Deploy App.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/8096e7b2a2de9748.webp",
+              "width": 912,
+              "height": 1804
+            }
+          ]
+        },
+        {
+          "title": "Open enrolment",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Open for 2 hours</strong>. Fleet needs this window's challenge.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/b5d4bd107bb4855f.webp",
+              "width": 912,
+              "height": 1804
+            }
+          ]
+        },
+        {
+          "title": "Copy the SCEP details",
+          "layout": "image-bottom",
+          "html": "<p>Copy the <strong>SCEP URL</strong> and the <strong>Challenge</strong>. Keep the challenge to yourself.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/1e4e7000716aed9d.webp",
+              "width": 912,
+              "height": 1804
+            }
+          ]
+        },
+        {
+          "title": "Point odmdm-fleet at both",
+          "layout": "image-bottom",
+          "html": "<p>On the operator's computer, set Fleet's address, the token file, the template and your Deploy App's address. Paste the challenge when <code>read</code> waits.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/ae2f137ad67aa2e3.webp",
+              "width": 1400,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Name the authority",
+          "layout": "image-bottom",
+          "html": "<p>In the template, give this Deploy App its own <strong>authority</strong> name. Two Deploy Apps never share one.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/fdd87cb37295b299.webp",
+              "width": 1400,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Apply",
+          "layout": "image-bottom",
+          "html": "<p>Run <code>odmdm-fleet apply</code>. Your team in Fleet gets the certificate, the policy, the apps and the <strong>Deploy App</strong> icon.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/dadcae06e3b27460.webp",
+              "width": 1400,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Without odmdm-fleet",
+          "layout": "image-bottom",
+          "html": "<p>No tool? Create the same five things in your Fleet team by hand. The <code>odmdm-fleet</code> README lists each one.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/dc45d0077c03aac8.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Phones without names",
+          "layout": "image-bottom",
+          "html": "<p>Names do not matter? Set the certificate subject to <code>CN=$FLEET_VAR_HOST_HARDWARE_SERIAL</code>. Phones join under their enrollment ID as they enrol, so guard the enrolment link.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/a577d2102710e476.webp",
+              "width": 912,
+              "height": 1804
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
