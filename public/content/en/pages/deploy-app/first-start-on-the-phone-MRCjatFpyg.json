@@ -13,7 +13,7 @@
     "First start on the phone"
   ],
   "createdAt": "2026-11-20T19:35:14.323Z",
-  "updatedAt": "2026-11-20T21:31:40.961Z",
+  "updatedAt": "2026-11-20T22:14:18.931Z",
   "headings": [],
   "blocks": [
     {
@@ -35,7 +35,7 @@
         {
           "title": "Chrome's first start",
           "layout": "image-bottom",
-          "html": "<p>The first time, tap <strong>Stay signed out</strong>.</p>",
+          "html": "<p>The first time, tap <strong>Stay signed out</strong> or <strong>Use without an account</strong>, whichever Chrome shows.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/0c9c55b572c71199.webp",

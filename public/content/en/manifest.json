@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "locale": "en",
-  "generatedAt": "2026-11-20T22:10:11.128Z",
+  "generatedAt": "2026-11-20T22:16:31.405Z",
   "collections": [
     {
       "slug": "deploy-app",
@@ -505,7 +505,7 @@
         "First start on the phone"
       ],
       "path": "/content/en/pages/deploy-app/first-start-on-the-phone-MRCjatFpyg.json",
-      "updatedAt": "2026-11-20T21:31:40.961Z",
+      "updatedAt": "2026-11-20T22:14:18.931Z",
       "order": 13,
       "platform": "android",
       "clientId": "android-MENReFAfCN",
