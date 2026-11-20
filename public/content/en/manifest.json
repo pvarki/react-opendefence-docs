@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "locale": "en",
-  "generatedAt": "2026-11-20T21:39:09.095Z",
+  "generatedAt": "2026-11-20T22:10:11.128Z",
   "collections": [
     {
       "slug": "deploy-app",
@@ -445,7 +445,7 @@
         "Enrol phones"
       ],
       "path": "/content/en/pages/deploy-app/enrol-phones-c9ipLyHRe9.json",
-      "updatedAt": "2026-11-20T21:31:29.731Z",
+      "updatedAt": "2026-11-20T22:07:57.681Z",
       "order": 10,
       "platform": "android",
       "clientId": "android-MENReFAfCN",
@@ -465,7 +465,7 @@
         "Name phones"
       ],
       "path": "/content/en/pages/deploy-app/name-phones-0Fh4ZTpcJs.json",
-      "updatedAt": "2026-11-20T21:31:37.245Z",
+      "updatedAt": "2026-11-20T22:07:58.515Z",
       "order": 11,
       "platform": "android",
       "clientId": "android-MENReFAfCN",
@@ -485,7 +485,7 @@
         "Name phones without odmdm-fleet"
       ],
       "path": "/content/en/pages/deploy-app/name-phones-without-odmdm-fleet-S69TrSf5OW.json",
-      "updatedAt": "2026-11-20T21:36:42.881Z",
+      "updatedAt": "2026-11-20T22:07:59.354Z",
       "order": 12,
       "platform": "android",
       "clientId": "android-MENReFAfCN",

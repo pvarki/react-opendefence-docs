@@ -13,7 +13,7 @@
     "Enrol phones"
   ],
   "createdAt": "2026-10-29T10:35:51.931Z",
-  "updatedAt": "2026-11-20T21:31:29.731Z",
+  "updatedAt": "2026-11-20T22:07:57.681Z",
   "headings": [],
   "blocks": [
     {
@@ -71,7 +71,7 @@
         {
           "title": "Done",
           "layout": "image-bottom",
-          "html": "<p>Tap <strong>Done</strong>. The apps arrive in the work profile. The phone now waits for its name.</p>",
+          "html": "<p>Tap <strong>Done</strong>. The apps arrive in the work profile within a few minutes. Name the phones once they all have their apps.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/6ff5b74a5a7be991.webp",
