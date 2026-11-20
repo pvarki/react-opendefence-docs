@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "id": "a81dbef4-4c98-49c7-af52-512a36763f12",
+  "slug": "deploy-app-supports-mdm-hgbi4NqgKT",
+  "collection": "deploy-app",
+  "locale": "en",
+  "title": "Deploy App supports MDM",
+  "breadcrumb": [
+    "Platforms",
+    "Android",
+    "Admin Guide",
+    "Bringing users via MDM",
+    "Deploy App supports MDM"
+  ],
+  "createdAt": "2026-11-20T19:34:58.782Z",
+  "updatedAt": "2026-11-20T21:31:18.839Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "What it does",
+          "layout": "image-bottom",
+          "html": "<p>Your MDM sets up the phone. Deploy App gives it an identity: a certificate in its callsign.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/5ce3d105e10b06f3.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Why use it",
+          "layout": "image-bottom",
+          "html": "<p>A whole batch of phones arrives ready, with apps, certificate and the <strong>Deploy App</strong> icon. Nobody types an invite code.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/bb05fb6c668edb7f.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "One callsign per phone",
+          "layout": "image-bottom",
+          "html": "<p>Each phone joins as its callsign, such as <code>OTTER4</code>, and reaches Deploy App and its services like any user.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/60a22ad1b2c3c1d4.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Enrol first, name after",
+          "layout": "image-bottom",
+          "html": "<p>Phones enrol in any number and any order. Name them when you like, all at once: each then gets its certificate.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/a5345a669422be50.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "You decide when",
+          "layout": "image-bottom",
+          "html": "<p>Deploy App issues certificates only while you keep enrolment open, at most 2 hours. Every opening makes a new challenge.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/5857b63e858095f3.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Who does what",
+          "layout": "image-bottom",
+          "html": "<p>The Deploy App admin opens enrolment. The MDM operator enrols and names the phones in Fleet.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/f88173ae0f4145a6.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "What you need",
+          "layout": "image-bottom",
+          "html": "<p>FleetDM with Android Enterprise, and one team in it per Deploy App. <code>odmdm-fleet</code> is optional: it saves the clicks.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/2cda0fbf57c7dbcb.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

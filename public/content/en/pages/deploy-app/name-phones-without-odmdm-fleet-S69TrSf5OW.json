@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "id": "149ddbd8-3815-4fd5-82d9-dbe57518256f",
+  "slug": "name-phones-without-odmdm-fleet-S69TrSf5OW",
+  "collection": "deploy-app",
+  "locale": "en",
+  "title": "Name phones without odmdm-fleet",
+  "breadcrumb": [
+    "Platforms",
+    "Android",
+    "Admin Guide",
+    "Bringing users via MDM",
+    "Name phones without odmdm-fleet"
+  ],
+  "createdAt": "2026-10-29T10:36:03.712Z",
+  "updatedAt": "2026-11-20T21:36:42.881Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Give Fleet the challenge",
+          "layout": "image-bottom",
+          "html": "<p>In Fleet: <strong>Settings</strong>, <strong>Integrations</strong>, <strong>Certificate enrollment</strong>. Edit your Deploy App's entry, paste the challenge and <strong>Save</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/541fb7130e37899f.webp",
+              "width": 1820,
+              "height": 1302
+            }
+          ]
+        },
+        {
+          "title": "Name the phone",
+          "layout": "image-bottom",
+          "html": "<p>Open the phone in Fleet, choose <strong>Edit user</strong>, type its callsign and <strong>Save</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/864752cd63281309.webp",
+              "width": 2128,
+              "height": 1150
+            }
+          ]
+        },
+        {
+          "title": "Send its certificate",
+          "layout": "image-bottom",
+          "html": "<p>On the same page open <strong>OS settings</strong>. On the <strong>rmscep</strong> row choose <strong>Resend</strong>. Naming alone sends nothing.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/f02b4ebe7e64ac97.webp",
+              "width": 1820,
+              "height": 634
+            }
+          ]
+        },
+        {
+          "title": "Send the policy again",
+          "layout": "image-bottom",
+          "html": "<p>Once the phones have enrolled, go to <strong>Controls</strong>, <strong>OS settings</strong>, <strong>Configuration profiles</strong>. Delete the policy file and add it again.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/11dfb2b661af7839.webp",
+              "width": 1920,
+              "height": 751
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

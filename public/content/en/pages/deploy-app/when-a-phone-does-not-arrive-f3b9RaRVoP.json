@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "id": "c54ccb86-b5fe-4809-81a5-6ed21d7780aa",
+  "slug": "when-a-phone-does-not-arrive-f3b9RaRVoP",
+  "collection": "deploy-app",
+  "locale": "en",
+  "title": "When a phone does not arrive",
+  "breadcrumb": [
+    "Platforms",
+    "Android",
+    "Admin Guide",
+    "Bringing users via MDM",
+    "When a phone does not arrive"
+  ],
+  "createdAt": "2026-11-20T19:35:19.388Z",
+  "updatedAt": "2026-11-20T21:31:49.551Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "See what happened",
+          "layout": "image-bottom",
+          "html": "<p><code>odmdm-fleet phones</code> says where each phone is, and why one was refused.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/3d57b3fb43568e4d.webp",
+              "width": 1400,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Fix the cause",
+          "layout": "image-bottom",
+          "html": "<p>The name is taken or not allowed, enrolment is closed, or Fleet has an old challenge.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/56bc258fc6a8b186.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Ask again",
+          "layout": "image-bottom",
+          "html": "<p><code>odmdm-fleet resend</code> asks again for every refused phone. A phone you rename asks by itself.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/dbdf1373d6df16bf.webp",
+              "width": 1400,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Never swap the certificate",
+          "layout": "image-bottom",
+          "html": "<p>Do not replace the team's certificate in Fleet to retry. Every phone in the team would lose its own.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/e737378227dd0fa4.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "A phone comes back",
+          "layout": "image-bottom",
+          "html": "<p>A wiped phone keeps its old name, and Deploy App gives no name twice. Give the phone a new one.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/e1c114c5e8ce0362.webp",
+              "width": 1400,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Retire the old callsign",
+          "layout": "image-bottom",
+          "html": "<p>Renaming leaves the old callsign behind. Remove it in <strong>User Management</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/f3baf97fdd2dcc80.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Certificate Authentication Failed",
+          "layout": "image-bottom",
+          "html": "<p>The phone has its certificate but lost the rule that lets Chrome use it. Run <code>odmdm-fleet apply --force-policy</code>, then restart the phone.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/07dd454c6be9a599.webp",
+              "width": 912,
+              "height": 1804
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

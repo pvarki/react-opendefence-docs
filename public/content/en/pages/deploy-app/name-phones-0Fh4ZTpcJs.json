@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "id": "77fc3ef4-ae4c-4085-98de-6b785e8743b0",
+  "slug": "name-phones-0Fh4ZTpcJs",
+  "collection": "deploy-app",
+  "locale": "en",
+  "title": "Name phones",
+  "breadcrumb": [
+    "Platforms",
+    "Android",
+    "Admin Guide",
+    "Bringing users via MDM",
+    "Name phones"
+  ],
+  "createdAt": "2026-11-20T19:35:09.881Z",
+  "updatedAt": "2026-11-20T21:31:37.245Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Open enrolment",
+          "layout": "image-bottom",
+          "html": "<p>In Deploy App, open <strong>MDM</strong> and tap <strong>Open for 2 hours</strong>. Each opening makes a new challenge.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/b5d4bd107bb4855f.webp",
+              "width": 912,
+              "height": 1804
+            }
+          ]
+        },
+        {
+          "title": "Give Fleet the challenge",
+          "layout": "image-bottom",
+          "html": "<p>Run <code>odmdm-fleet challenge</code> and paste the new challenge. Phones asking with an old one are turned away.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/9a778930f0becaf7.webp",
+              "width": 1400,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "See who is waiting",
+          "layout": "image-bottom",
+          "html": "<p><code>odmdm-fleet phones</code> lists the team. Check that the phones waiting are the ones in your hands.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/9b2accf151b02deb.webp",
+              "width": 1400,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Name them all at once",
+          "layout": "image-bottom",
+          "html": "<p><code>odmdm-fleet name --all OTTER</code> gives every waiting phone the next free number.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/1aef989a4506941d.webp",
+              "width": 1400,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Or choose each name",
+          "layout": "image-bottom",
+          "html": "<p>Give the number from the list and the callsign you want. Any phones, in any order.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/48eaf76884392fe4.webp",
+              "width": 1400,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Callsign rules",
+          "layout": "image-bottom",
+          "html": "<p>Use 3–32 letters, digits or hyphens, with no hyphen at either end. A revoked callsign cannot be used again.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/aef47a49db9deec4.webp",
+              "width": 1400,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Wait for the phones",
+          "layout": "image-bottom",
+          "html": "<p>Within 20 minutes each phone appears here under its callsign. When all are in, tap <strong>Close now</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/f696b94f6eeafb1a.webp",
+              "width": 912,
+              "height": 1804
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
