@@ -13,7 +13,7 @@
     "Deploy App supports MDM"
   ],
   "createdAt": "2026-11-20T19:34:58.782Z",
-  "updatedAt": "2026-11-20T21:31:18.839Z",
+  "updatedAt": "2026-11-21T16:20:34.985Z",
   "headings": [],
   "blocks": [
     {
@@ -21,24 +21,60 @@
       "source": "canonical",
       "slides": [
         {
-          "title": "What it does",
+          "title": "Ready when handed out",
           "layout": "image-bottom",
-          "html": "<p>Your MDM sets up the phone. Deploy App gives it an identity: a certificate in its callsign.</p>",
+          "html": "<p>A phone your MDM sets up reaches its user ready: apps installed, and Deploy App opens under the phone's own callsign.</p>",
           "images": [
             {
-              "src": "/content/images/en/attachments/5ce3d105e10b06f3.webp",
+              "src": "/content/images/en/attachments/c006eaf215449fff.webp",
               "width": 1800,
               "height": 1000
             }
           ]
         },
         {
-          "title": "Why use it",
+          "title": "By hand, one phone at a time",
           "layout": "image-bottom",
-          "html": "<p>A whole batch of phones arrives ready, with apps, certificate and the <strong>Deploy App</strong> icon. Nobody types an invite code.</p>",
+          "html": "<p>Without MDM each user opens an invite, waits for an admin to approve them, downloads a key and installs it with a password. Thirty phones, thirty times.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/f94f2047dba6c6c1.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "With MDM, a whole batch",
+          "layout": "image-bottom",
+          "html": "<p>You set it up once. Every phone you enrol gets its apps and the <strong>Deploy App</strong> icon by itself, and its certificate once you name it. Nobody types an invite code.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/bb05fb6c668edb7f.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "The key stays on the phone",
+          "layout": "image-bottom",
+          "html": "<p>Each phone makes its own key and Deploy App signs it. No key file and no password is passed around.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/93df5dfe1497b32d.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "How it works",
+          "layout": "image-bottom",
+          "html": "<p>Your MDM sets up the phone. Deploy App gives it an identity: a certificate in its callsign.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/5ce3d105e10b06f3.webp",
               "width": 1800,
               "height": 1000
             }
@@ -59,7 +95,7 @@
         {
           "title": "Enrol first, name after",
           "layout": "image-bottom",
-          "html": "<p>Phones enrol in any number and any order. Name them when you like, all at once: each then gets its certificate.</p>",
+          "html": "<p>Phones enrol in any number and any order. Once they all have their apps, name them all at once: each then gets its certificate.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/a5345a669422be50.webp",
@@ -71,7 +107,7 @@
         {
           "title": "You decide when",
           "layout": "image-bottom",
-          "html": "<p>Deploy App issues certificates only while you keep enrolment open, at most 2 hours. Every opening makes a new challenge.</p>",
+          "html": "<p>Deploy App issues certificates only while you keep enrolment open, at most 2 hours. Phones can join Fleet at any time. Every opening makes a new challenge: a password your MDM needs.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/5857b63e858095f3.webp",
@@ -83,7 +119,7 @@
         {
           "title": "Who does what",
           "layout": "image-bottom",
-          "html": "<p>The Deploy App admin opens enrolment. The MDM operator enrols and names the phones in Fleet.</p>",
+          "html": "<p>The Deploy App admin opens enrolment. The MDM operator enrols the phones in Fleet and names them with the connector.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/f88173ae0f4145a6.webp",
@@ -95,10 +131,34 @@
         {
           "title": "What you need",
           "layout": "image-bottom",
-          "html": "<p>FleetDM with Android Enterprise, and one team in it per Deploy App. <code>odmdm-fleet</code> is optional: it saves the clicks.</p>",
+          "html": "<p>Fleet (FleetDM) with Android Enterprise, and a team in it for the phones. Ask your Fleet admin whether Android is turned on in Fleet. The <strong>ODMDM connector</strong> is optional.</p>",
           "images": [
             {
-              "src": "/content/images/en/attachments/2cda0fbf57c7dbcb.webp",
+              "src": "/content/images/en/attachments/2e1c3b859069b907.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "One Fleet for each Deploy App",
+          "layout": "image-bottom",
+          "html": "<p>With the connector, one Fleet serves one Deploy App. A second Deploy App needs a Fleet of its own.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/67172ded87650436.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Your route",
+          "layout": "image-bottom",
+          "html": "<p>With Fleet and the connector, read <strong>Install the connector</strong>, <strong>Connect your MDM</strong>, <strong>Enrol phones</strong>, <strong>Name phones</strong> and <strong>First start on the phone</strong>. The rest is for when you need it.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/f11f7e7eda3d8b1f.webp",
               "width": 1800,
               "height": 1000
             }
