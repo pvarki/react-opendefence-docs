@@ -13,7 +13,7 @@
     "Connect your MDM"
   ],
   "createdAt": "2026-10-29T10:35:43.762Z",
-  "updatedAt": "2026-11-21T16:52:04.028Z",
+  "updatedAt": "2026-11-21T19:09:31.341Z",
   "headings": [],
   "blocks": [
     {
@@ -23,7 +23,7 @@
         {
           "title": "Start the connector",
           "layout": "image-bottom",
-          "html": "<p>Start the connector and open the address it prints (see <strong>Install the connector</strong>). The first time it asks you to add your Deploy App.</p>",
+          "html": "<p>Start the connector (see <strong>Install the connector</strong>): its page opens in your default browser. The first time it asks you to add your Deploy App.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/c280a03b4b45918c.webp",

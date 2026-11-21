@@ -13,7 +13,7 @@
     "Install the connector"
   ],
   "createdAt": "2026-11-21T08:05:50.369Z",
-  "updatedAt": "2026-11-21T16:20:44.138Z",
+  "updatedAt": "2026-11-21T19:08:35.950Z",
   "headings": [],
   "blocks": [
     {
@@ -71,11 +71,23 @@
         {
           "title": "Start it",
           "layout": "image-bottom",
-          "html": "<p>Type <code>odmdm-connector web</code> and press Enter, then open the address it prints in your browser. Start it only once: if it says the connector may be running already, use the page you have.</p>",
+          "html": "<p>Type <code>odmdm-connector web</code> and press Enter: the connector's page opens in your browser. If it does not open, open the address the terminal shows.</p>",
           "images": [
             {
-              "src": "/content/images/en/attachments/20d4453c2c68fd2d.webp",
+              "src": "/content/images/en/attachments/6a4f2a5aca1be212.webp",
               "width": 1400,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Your default browser",
+          "layout": "image-bottom",
+          "html": "<p>It opens in your default browser: use Deploy App in that same browser. Start it only once: if it says the connector may be running already, use the page you have.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/129485b6349ab577.webp",
+              "width": 1800,
               "height": 1000
             }
           ]
@@ -95,7 +107,7 @@
         {
           "title": "A new address at every start",
           "layout": "image-bottom",
-          "html": "<p>Every start prints a new address. A page left open from before asks for it: open the new address in the same browser.</p>",
+          "html": "<p>Every start makes a new address, and a page left open from before asks for it. Start the connector again and use the page it opens.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/3a9a743bc59a3145.webp",

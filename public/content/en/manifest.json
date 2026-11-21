@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "locale": "en",
-  "generatedAt": "2026-11-21T16:57:12.260Z",
+  "generatedAt": "2026-11-21T19:11:56.911Z",
   "collections": [
     {
       "slug": "deploy-app",
@@ -425,7 +425,7 @@
         "Install the connector"
       ],
       "path": "/content/en/pages/deploy-app/install-the-connector-Fi93BT5Ntd.json",
-      "updatedAt": "2026-11-21T16:20:44.138Z",
+      "updatedAt": "2026-11-21T19:08:35.950Z",
       "order": 9,
       "platform": "android",
       "clientId": "android-MENReFAfCN",
@@ -445,7 +445,7 @@
         "Connect your MDM"
       ],
       "path": "/content/en/pages/deploy-app/connect-your-mdm-CqNOaahyKB.json",
-      "updatedAt": "2026-11-21T16:52:04.028Z",
+      "updatedAt": "2026-11-21T19:09:31.341Z",
       "order": 10,
       "platform": "android",
       "clientId": "android-MENReFAfCN",
@@ -545,7 +545,7 @@
         "After the first batch"
       ],
       "path": "/content/en/pages/deploy-app/after-the-first-batch-cOk5iBzJoS.json",
-      "updatedAt": "2026-11-21T16:53:07.300Z",
+      "updatedAt": "2026-11-21T19:09:43.038Z",
       "order": 15,
       "platform": "android",
       "clientId": "android-MENReFAfCN",

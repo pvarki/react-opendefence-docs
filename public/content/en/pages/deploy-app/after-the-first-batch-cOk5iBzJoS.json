@@ -13,7 +13,7 @@
     "After the first batch"
   ],
   "createdAt": "2026-11-21T08:07:42.947Z",
-  "updatedAt": "2026-11-21T16:53:07.300Z",
+  "updatedAt": "2026-11-21T19:09:43.038Z",
   "headings": [],
   "blocks": [
     {
@@ -23,10 +23,10 @@
         {
           "title": "Start the connector again",
           "layout": "image-bottom",
-          "html": "<p>Open a terminal, type <code>odmdm-connector web</code> and open the new address it prints.</p>",
+          "html": "<p>Open a terminal, type <code>odmdm-connector web</code> and press Enter: the connector's page opens in your browser. If it does not open, open the address the terminal shows.</p>",
           "images": [
             {
-              "src": "/content/images/en/attachments/20d4453c2c68fd2d.webp",
+              "src": "/content/images/en/attachments/6a4f2a5aca1be212.webp",
               "width": 1400,
               "height": 1000
             }
