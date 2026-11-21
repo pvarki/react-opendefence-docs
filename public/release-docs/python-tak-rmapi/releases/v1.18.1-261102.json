@@ -1,0 +1,5 @@
+{
+  "tag": "v1.18.1+261102",
+  "publishedAt": "2026-11-16T09:37:57Z",
+  "html": "<h2 id=\"1181261102-2026-11-16\"><a href=\"#1181261102-2026-11-16\">1.18.1+261102 (2026-11-16)</a></h2>\n<h3 id=\"tak-guide-links-open-the-current-documentation-166\"><a href=\"#tak-guide-links-open-the-current-documentation-166\">TAK guide links open the current documentation (<a href=\"https://github.com/pvarki/python-tak-rmapi/pull/166\" target=\"_blank\" rel=\"noopener noreferrer\">#166</a>)</a></h3>\n<p>The documentation links in the TAK product view now open the TAK Guide on docs.opendefence.fi in the user's language, instead of the old docs.pvarki.fi site that is no longer updated.</p>\n<h2 id=\"changelog\"><a href=\"#changelog\">Changelog</a></h2>\n<h3 id=\"fixes\"><a href=\"#fixes\">Fixes</a></h3>\n<ul>\n<li>point the TAK guide links to docs.opendefence.fi (<a href=\"https://github.com/pvarki/python-tak-rmapi/commit/8df5a667f160bc20b25f2c7497401b59a4b4fd84\" target=\"_blank\" rel=\"noopener noreferrer\">8df5a66</a>)</li>\n</ul>"
+}

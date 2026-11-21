@@ -10,7 +10,7 @@
       "slug": "introduction-d1XzfzOkpz"
     },
     {
-      "type": "group",
+      "type": "toporg",
       "id": "user-guide-SNTomIhnLe",
       "label": "User Guide",
       "clientId": "android-MENReFAfCN",
@@ -36,7 +36,7 @@
       ]
     },
     {
-      "type": "group",
+      "type": "toporg",
       "id": "admin-guide-V5Hs1rBdRL",
       "label": "Admin Guide",
       "clientId": "android-MENReFAfCN",
@@ -66,22 +66,84 @@
           "slug": "access-external-services-ohReBmQJiu"
         },
         {
-          "type": "doc",
-          "id": "mdm-setup-CqNOaahyKB",
-          "label": "MDM Setup",
-          "slug": "mdm-setup-CqNOaahyKB"
-        },
-        {
-          "type": "doc",
-          "id": "mdm-devices-c9ipLyHRe9",
-          "label": "MDM Devices",
-          "slug": "mdm-devices-c9ipLyHRe9"
-        },
-        {
-          "type": "doc",
-          "id": "mdm-enrolment-S69TrSf5OW",
-          "label": "MDM Enrolment",
-          "slug": "mdm-enrolment-S69TrSf5OW"
+          "type": "group",
+          "id": "bringing-users-via-mdm-Hv7ump2xHK",
+          "label": "Bringing users via MDM",
+          "clientId": "android-MENReFAfCN",
+          "children": [
+            {
+              "type": "doc",
+              "id": "deploy-app-supports-mdm-hgbi4NqgKT",
+              "label": "Deploy App supports MDM",
+              "slug": "deploy-app-supports-mdm-hgbi4NqgKT"
+            },
+            {
+              "type": "doc",
+              "id": "install-the-connector-Fi93BT5Ntd",
+              "label": "Install the connector",
+              "slug": "install-the-connector-Fi93BT5Ntd"
+            },
+            {
+              "type": "doc",
+              "id": "connect-your-mdm-CqNOaahyKB",
+              "label": "Connect your MDM",
+              "slug": "connect-your-mdm-CqNOaahyKB"
+            },
+            {
+              "type": "doc",
+              "id": "enrol-phones-c9ipLyHRe9",
+              "label": "Enrol phones",
+              "slug": "enrol-phones-c9ipLyHRe9"
+            },
+            {
+              "type": "doc",
+              "id": "name-phones-0Fh4ZTpcJs",
+              "label": "Name phones",
+              "slug": "name-phones-0Fh4ZTpcJs"
+            },
+            {
+              "type": "doc",
+              "id": "first-start-on-the-phone-MRCjatFpyg",
+              "label": "First start on the phone",
+              "slug": "first-start-on-the-phone-MRCjatFpyg"
+            },
+            {
+              "type": "doc",
+              "id": "when-a-phone-does-not-arrive-f3b9RaRVoP",
+              "label": "When a phone does not arrive",
+              "slug": "when-a-phone-does-not-arrive-f3b9RaRVoP"
+            },
+            {
+              "type": "doc",
+              "id": "after-the-first-batch-cOk5iBzJoS",
+              "label": "After the first batch",
+              "slug": "after-the-first-batch-cOk5iBzJoS"
+            },
+            {
+              "type": "doc",
+              "id": "connect-your-mdm-without-the-connector-Xm6Qo0Xkhr",
+              "label": "Connect your MDM without the connector",
+              "slug": "connect-your-mdm-without-the-connector-Xm6Qo0Xkhr"
+            },
+            {
+              "type": "doc",
+              "id": "name-phones-without-the-connector-S69TrSf5OW",
+              "label": "Name phones without the connector",
+              "slug": "name-phones-without-the-connector-S69TrSf5OW"
+            },
+            {
+              "type": "doc",
+              "id": "from-the-command-line-Fs7VvuiDAo",
+              "label": "From the command line",
+              "slug": "from-the-command-line-Fs7VvuiDAo"
+            },
+            {
+              "type": "doc",
+              "id": "using-another-mdm-V3bHoMMsq3",
+              "label": "Using another MDM",
+              "slug": "using-another-mdm-V3bHoMMsq3"
+            }
+          ]
         }
       ]
     },

@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 1,
+  "id": "77fc3ef4-ae4c-4085-98de-6b785e8743b0",
+  "slug": "name-phones-0Fh4ZTpcJs",
+  "collection": "deploy-app",
+  "locale": "en",
+  "title": "Name phones",
+  "breadcrumb": [
+    "Platforms",
+    "Android",
+    "Admin Guide",
+    "Bringing users via MDM",
+    "Name phones"
+  ],
+  "createdAt": "2026-11-20T19:35:09.881Z",
+  "updatedAt": "2026-11-21T16:21:50.118Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Check that enrolment is open",
+          "layout": "image-bottom",
+          "html": "<p>The line at the top says until when Deploy App accepts phones. Red means closed: press <strong>Open Deploy App ↗</strong> and there <strong>Open for 2 hours</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/2afed851efa25f49.webp",
+              "width": 1860,
+              "height": 1273
+            }
+          ]
+        },
+        {
+          "title": "Hand over the new settings",
+          "layout": "image-bottom",
+          "html": "<p>After every opening, press <strong>Open in the MDM connector</strong> again. Fleet needs the new challenge before the phones ask.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/d3dc6cf3ac378483.webp",
+              "width": 1860,
+              "height": 1025
+            }
+          ]
+        },
+        {
+          "title": "Use them",
+          "layout": "image-bottom",
+          "html": "<p>The new tab asks first. Press <strong>Use the new settings</strong>, and Fleet gets the new challenge.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/d5f54056781a9a02.webp",
+              "width": 1052,
+              "height": 816
+            }
+          ]
+        },
+        {
+          "title": "Not the admin?",
+          "layout": "image-bottom",
+          "html": "<p>Ask the admin to open enrolment and send you a new settings line. Press <strong>New settings</strong>, paste it, press <strong>Continue</strong> and then <strong>Use the new settings</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/68f6b0b41dc77700.webp",
+              "width": 1052,
+              "height": 1116
+            }
+          ]
+        },
+        {
+          "title": "See who is waiting",
+          "layout": "image-bottom",
+          "html": "<p>Check that the phones <strong>waiting for a name</strong> are in your hands, and that each shows its apps in its <strong>Work</strong> tab.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/a6046ddd1f37fc02.webp",
+              "width": 1860,
+              "height": 1273
+            }
+          ]
+        },
+        {
+          "title": "Give callsigns",
+          "layout": "image-bottom",
+          "html": "<p>With no phone selected, press <strong>Give callsigns</strong> and type a prefix under <strong>Numbered</strong>. Every phone without a name gets a number in the order they joined, and the preview shows who gets what.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/5d316fa037d1134d.webp",
+              "width": 1860,
+              "height": 1273
+            }
+          ]
+        },
+        {
+          "title": "Or use your own list",
+          "layout": "image-bottom",
+          "html": "<p>Choose <strong>From a list</strong> and type one callsign per line. <strong>Keep the rest of the list for next time</strong> keeps the callsigns left over.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/0988a5fd71ea5e13.webp",
+              "width": 1860,
+              "height": 1273
+            }
+          ]
+        },
+        {
+          "title": "Callsign rules",
+          "layout": "image-bottom",
+          "html": "<p>Use 3–32 letters, digits or hyphens, with no hyphen at either end; the button waits until every row passes. A callsign is never given twice: raise <strong>First number</strong> if higher numbers were used before.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/5db3dd57b0fa1c4d.webp",
+              "width": 1860,
+              "height": 1478
+            }
+          ]
+        },
+        {
+          "title": "Name them",
+          "layout": "image-bottom",
+          "html": "<p>Press <strong>Name 6 phones</strong>. Fleet asks each phone for its certificate, and a phone answers within about 15 minutes.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/6a1fc5a490681904.webp",
+              "width": 1860,
+              "height": 1273
+            }
+          ]
+        },
+        {
+          "title": "Wait until all are ready",
+          "layout": "image-bottom",
+          "html": "<p>The count above the table says how many are <strong>ready</strong>. The table updates by itself every minute.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/0a9dc4d5b4d0d429.webp",
+              "width": 1860,
+              "height": 1273
+            }
+          ]
+        },
+        {
+          "title": "Close enrolment",
+          "layout": "image-bottom",
+          "html": "<p>Each phone also appears on Deploy App's MDM page under its callsign. When all are in, the admin presses <strong>Close</strong> (you, if you are the admin).</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/9988190019494dd2.webp",
+              "width": 1860,
+              "height": 1387
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

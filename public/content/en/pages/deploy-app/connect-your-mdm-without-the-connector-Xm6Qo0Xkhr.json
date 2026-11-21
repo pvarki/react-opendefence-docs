@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 1,
+  "id": "3a51451c-093b-44e8-9cf4-da191ac8c4ff",
+  "slug": "connect-your-mdm-without-the-connector-Xm6Qo0Xkhr",
+  "collection": "deploy-app",
+  "locale": "en",
+  "title": "Connect your MDM without the connector",
+  "breadcrumb": [
+    "Platforms",
+    "Android",
+    "Admin Guide",
+    "Bringing users via MDM",
+    "Connect your MDM without the connector"
+  ],
+  "createdAt": "2026-11-21T05:59:01.407Z",
+  "updatedAt": "2026-11-21T16:23:36.932Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Start with a team",
+          "layout": "image-bottom",
+          "html": "<p>The connector does all of this for you; by hand it takes technical staff. Make a team in Fleet for this Deploy App, and open enrolment in Deploy App to see the <strong>SCEP URL</strong> and the <strong>Challenge</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/dc45d0077c03aac8.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Add Deploy App as an authority",
+          "layout": "image-bottom",
+          "html": "<p>In Fleet: <strong>Settings</strong>, <strong>Integrations</strong>, <strong>Certificate enrollment</strong>. Add a custom SCEP authority with Deploy App's <strong>SCEP URL</strong> and <strong>Challenge</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/541fb7130e37899f.webp",
+              "width": 1820,
+              "height": 1302
+            }
+          ]
+        },
+        {
+          "title": "Add the certificate",
+          "layout": "image-bottom",
+          "html": "<p>Choose your team at the top, then <strong>Controls</strong>, <strong>OS settings</strong>, <strong>Certificates</strong>, <strong>Add</strong>. Name <code>rmscep</code>, subject <code>CN=$FLEET_VAR_HOST_END_USER_IDP_USERNAME_LOCAL_PART, OU=$FLEET_VAR_HOST_UUID</code>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/f9d6c87160cd5f27.webp",
+              "width": 1820,
+              "height": 1876
+            }
+          ]
+        },
+        {
+          "title": "Add the policy",
+          "layout": "image-bottom",
+          "html": "<p>Under <strong>Configuration profiles</strong>, add the policy file: the <code>policy</code> part of <code>template.json</code> in the connector's source, with your Deploy App's name as in its SCEP URL, such as <code>unit.example.fi</code>, for <code>{domain}</code> and <code>rmscep</code> for <code>{key_alias}</code>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/11dfb2b661af7839.webp",
+              "width": 1920,
+              "height": 751
+            }
+          ]
+        },
+        {
+          "title": "Choose the apps",
+          "layout": "image-bottom",
+          "html": "<p><strong>Setup experience</strong>, <strong>Install software</strong>, <strong>Android</strong>: tick Chrome and the apps your unit uses. They install when a phone enrols, and at no other time.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/e1e78513ac74bf9d.webp",
+              "width": 2020,
+              "height": 1130
+            }
+          ]
+        },
+        {
+          "title": "Let Chrome use the certificate",
+          "layout": "image-bottom",
+          "html": "<p>Without a setting of its own, Chrome does not send the certificate. Under <strong>Software</strong>, with your team chosen, open <strong>Google Chrome</strong>, then <strong>Actions</strong> and <strong>Edit configuration</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/0a6d95de7462cc36.webp",
+              "width": 1860,
+              "height": 689
+            }
+          ]
+        },
+        {
+          "title": "Chrome's setting",
+          "layout": "image-bottom",
+          "html": "<p>Give <strong>Google Chrome</strong> the <code>config</code> part of Chrome in <code>template.json</code>, inside <code>managedConfiguration</code>, with your Deploy App's address, such as <code>https://mtls.unit.example.fi</code>, for <code>{mtls_url}</code>. Press <strong>Save</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/3677aa7738481c21.webp",
+              "width": 1860,
+              "height": 1311
+            }
+          ]
+        },
+        {
+          "title": "No Deploy App icon by hand",
+          "layout": "image-bottom",
+          "html": "<p>Fleet's console cannot make the <strong>Deploy App</strong> icon: that takes the connector or Fleet's API. Without it, people open work <strong>Chrome</strong> and type your Deploy App's address.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/0cd070aecc51aefd.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Then enrol and name",
+          "layout": "image-bottom",
+          "html": "<p>Phones can now enrol. Name them in Fleet too: see <strong>Name phones without the connector</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/a5345a669422be50.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

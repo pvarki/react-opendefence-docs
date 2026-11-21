@@ -788,7 +788,7 @@
       ]
     },
     {
-      "type": "group",
+      "type": "toporg",
       "id": "aloitus-r6ZvF4Ztdj",
       "label": "Aloitus",
       "clientId": "itak-pzOFxqFSem",
@@ -808,7 +808,7 @@
       ]
     },
     {
-      "type": "group",
+      "type": "toporg",
       "id": "perustoiminnot-AR7DoihPBU",
       "label": "Perustoiminnot",
       "clientId": "itak-pzOFxqFSem",

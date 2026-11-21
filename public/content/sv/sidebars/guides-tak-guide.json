@@ -788,7 +788,7 @@
       ]
     },
     {
-      "type": "group",
+      "type": "toporg",
       "id": "start-KwmezzKrdE",
       "label": "Start",
       "clientId": "itak-Ic4xJNBg1l",
@@ -808,7 +808,7 @@
       ]
     },
     {
-      "type": "group",
+      "type": "toporg",
       "id": "grundfunktioner-PrjaQuQBVq",
       "label": "Grundfunktioner",
       "clientId": "itak-Ic4xJNBg1l",
