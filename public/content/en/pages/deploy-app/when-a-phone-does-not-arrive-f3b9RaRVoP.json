@@ -13,7 +13,7 @@
     "When a phone does not arrive"
   ],
   "createdAt": "2026-11-20T19:35:19.388Z",
-  "updatedAt": "2026-11-20T21:31:49.551Z",
+  "updatedAt": "2026-11-21T16:52:54.856Z",
   "headings": [],
   "blocks": [
     {
@@ -23,19 +23,31 @@
         {
           "title": "See what happened",
           "layout": "image-bottom",
-          "html": "<p><code>odmdm-fleet phones</code> says where each phone is, and why one was refused.</p>",
+          "html": "<p>A phone that was refused or failed shows in red, with the reason. The count says how many <strong>failed</strong>.</p>",
           "images": [
             {
-              "src": "/content/images/en/attachments/3d57b3fb43568e4d.webp",
-              "width": 1400,
-              "height": 1000
+              "src": "/content/images/en/attachments/f480db3454b8cfa4.webp",
+              "width": 1860,
+              "height": 1273
+            }
+          ]
+        },
+        {
+          "title": "Read the details",
+          "layout": "image-bottom",
+          "html": "<p>Double-click the phone, or select it and press <strong>Details</strong>: the reason in full, and whether enrolment is still open.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/0db1dcd48847ac5f.webp",
+              "width": 1860,
+              "height": 1273
             }
           ]
         },
         {
           "title": "Fix the cause",
           "layout": "image-bottom",
-          "html": "<p>The name is taken or not allowed, enrolment is closed, or Fleet has an old challenge.</p>",
+          "html": "<p>Callsign taken or not allowed: give another. Enrolment closed, or Fleet has an old challenge: open enrolment and press <strong>Open in the MDM connector</strong> again.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/56bc258fc6a8b186.webp",
@@ -45,14 +57,50 @@
           ]
         },
         {
-          "title": "Ask again",
+          "title": "Could not reach Deploy App",
           "layout": "image-bottom",
-          "html": "<p><code>odmdm-fleet resend</code> asks again for every refused phone. A phone you rename asks by itself.</p>",
+          "html": "<p>The phone could not reach Deploy App's address when it asked. Check its network, then press <strong>Ask again</strong>.</p>",
           "images": [
             {
-              "src": "/content/images/en/attachments/dbdf1373d6df16bf.webp",
-              "width": 1400,
-              "height": 1000
+              "src": "/content/images/en/attachments/48e005d891a0ed87.webp",
+              "width": 1860,
+              "height": 1273
+            }
+          ]
+        },
+        {
+          "title": "Enrolment has closed",
+          "layout": "image-bottom",
+          "html": "<p>The line turns amber ten minutes before closing, and red after. <strong>Open Deploy App ↗</strong> takes you to the MDM page to open enrolment again.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/ac4b5ae7ff5d4024.webp",
+              "width": 1860,
+              "height": 1273
+            }
+          ]
+        },
+        {
+          "title": "Ask again",
+          "layout": "image-bottom",
+          "html": "<p>Cause fixed? Select the phone and press <strong>Ask again</strong>. <strong>Refused or failed</strong> selects them all.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/81e459f86695c18b.webp",
+              "width": 1860,
+              "height": 1273
+            }
+          ]
+        },
+        {
+          "title": "Or give another callsign",
+          "layout": "image-bottom",
+          "html": "<p>A taken callsign is never freed. In the phone's details press <strong>Give another callsign</strong>, and give it a new one.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/3f8d7748d3059c33.webp",
+              "width": 1860,
+              "height": 1273
             }
           ]
         },
@@ -69,36 +117,24 @@
           ]
         },
         {
-          "title": "A phone comes back",
+          "title": "The token stopped working",
           "layout": "image-bottom",
-          "html": "<p>A wiped phone keeps its old name, and Deploy App gives no name twice. Give the phone a new one.</p>",
+          "html": "<p>When Fleet no longer accepts the token, the connector asks for a new one by itself, with Fleet's reason. Paste a new token and press <strong>Connect</strong>.</p>",
           "images": [
             {
-              "src": "/content/images/en/attachments/e1c114c5e8ce0362.webp",
-              "width": 1400,
-              "height": 1000
-            }
-          ]
-        },
-        {
-          "title": "Retire the old callsign",
-          "layout": "image-bottom",
-          "html": "<p>Renaming leaves the old callsign behind. Remove it in <strong>User Management</strong>.</p>",
-          "images": [
-            {
-              "src": "/content/images/en/attachments/f3baf97fdd2dcc80.webp",
-              "width": 1800,
-              "height": 1000
+              "src": "/content/images/en/attachments/d9642f31d96b06e1.webp",
+              "width": 1052,
+              "height": 1057
             }
           ]
         },
         {
           "title": "Certificate Authentication Failed",
           "layout": "image-bottom",
-          "html": "<p>The phone has its certificate but lost the rule that lets Chrome use it. Run <code>odmdm-fleet apply --force-policy</code>, then restart the phone.</p>",
+          "html": "<p>The phone has its certificate, but the policy that lets Chrome use it was overwritten. Send the policy again (see <strong>From the command line</strong>), then open Deploy App on the phone again.</p>",
           "images": [
             {
-              "src": "/content/images/en/attachments/07dd454c6be9a599.webp",
+              "src": "/content/images/en/attachments/9848e8f46462b67c.webp",
               "width": 912,
               "height": 1804
             }
