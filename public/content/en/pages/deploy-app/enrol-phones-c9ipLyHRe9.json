@@ -13,7 +13,7 @@
     "Enrol phones"
   ],
   "createdAt": "2026-10-29T10:35:51.931Z",
-  "updatedAt": "2026-11-20T22:07:57.681Z",
+  "updatedAt": "2026-11-21T16:52:06.884Z",
   "headings": [],
   "blocks": [
     {
@@ -23,7 +23,7 @@
         {
           "title": "Get the enrolment link",
           "layout": "image-bottom",
-          "html": "<p>In Fleet, open your Deploy App team, then <strong>Add hosts</strong> and <strong>Android</strong>. Send the link to the phones, as many as you like.</p>",
+          "html": "<p>In Fleet, open your Deploy App team, then <strong>Add hosts</strong>, <strong>Android</strong> and keep <strong>Personal (BYOD)</strong>. Copy the link and send it to the phones.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/be65720cb87b22b7.webp",
@@ -71,7 +71,7 @@
         {
           "title": "Done",
           "layout": "image-bottom",
-          "html": "<p>Tap <strong>Done</strong>. The apps arrive in the work profile within a few minutes. Name the phones once they all have their apps.</p>",
+          "html": "<p>Tap <strong>Done</strong>. Within a few minutes the apps appear in the phone's <strong>Work</strong> tab.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/6ff5b74a5a7be991.webp",
@@ -83,12 +83,24 @@
         {
           "title": "Phones already in Fleet",
           "layout": "image-bottom",
-          "html": "<p>Enrolled in another team? Tick the phones in Fleet, choose <strong>Transfer</strong> and pick your Deploy App team. For this team's apps too, enrol them again here.</p>",
+          "html": "<p>Enrolled in another team (Fleet may call a team a fleet)? Tick the phones, choose <strong>Transfer</strong> and pick your Deploy App team. For this team's apps too, remove the work profile and enrol the phone again with this team's link.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/80b224e7ffe15bee.webp",
               "width": 2128,
               "height": 1210
+            }
+          ]
+        },
+        {
+          "title": "Watch them arrive",
+          "layout": "image-bottom",
+          "html": "<p>The connector lists each phone within a minute of its enrolling, soon as <strong>waiting for a name</strong>. Name the phones once every phone shows its apps.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/3bc1f13c2bfc91f1.webp",
+              "width": 1860,
+              "height": 1273
             }
           ]
         }
