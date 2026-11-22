@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
   "id": "149ddbd8-3815-4fd5-82d9-dbe57518256f",
-  "slug": "name-phones-without-the-connector-S69TrSf5OW",
+  "slug": "name-phones-in-fleet-without-the-connector-S69TrSf5OW",
   "collection": "deploy-app",
   "locale": "en",
-  "title": "Name phones without the connector",
+  "title": "Name phones in Fleet without the connector",
   "breadcrumb": [
     "Platforms",
     "Android",
     "Admin Guide",
-    "Bringing users via MDM",
-    "Name phones without the connector"
+    "MDM: Fleet",
+    "Name phones in Fleet without the connector"
   ],
   "createdAt": "2026-10-29T10:36:03.712Z",
-  "updatedAt": "2026-11-21T16:23:42.785Z",
+  "updatedAt": "2026-11-22T00:13:58.952Z",
   "headings": [],
   "blocks": [
     {
@@ -21,12 +21,24 @@
       "source": "canonical",
       "slides": [
         {
+          "title": "What these slides are for",
+          "layout": "image-bottom",
+          "html": "<p>These slides name phones in Fleet's console by hand, for when the connector cannot be used. It takes technical staff, one phone at a time.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/f9ad8e2eb9cf167a.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
           "title": "Open enrolment",
           "layout": "image-bottom",
           "html": "<p>In Deploy App, open <strong>User Management</strong>, then <strong>MDM</strong>, and press <strong>Open for 2 hours</strong>.</p>",
           "images": [
             {
-              "src": "/content/images/en/attachments/a96290c1e7fd71ce.webp",
+              "src": "/content/images/en/attachments/2f1b71141c8c41e9.webp",
               "width": 1860,
               "height": 789
             }
@@ -35,10 +47,10 @@
         {
           "title": "Copy the challenge",
           "layout": "image-bottom",
-          "html": "<p>Press the copy mark beside <strong>Challenge</strong>. It is new for every opening, so Fleet needs it each time.</p>",
+          "html": "<p>Press the copy mark beside <strong>Challenge</strong>. It is new for every opening, so your MDM needs it each time.</p>",
           "images": [
             {
-              "src": "/content/images/en/attachments/4680e5a6a51360da.webp",
+              "src": "/content/images/en/attachments/ae4a4aac2863dfe2.webp",
               "width": 1860,
               "height": 1025
             }
@@ -47,12 +59,12 @@
         {
           "title": "Give Fleet the challenge",
           "layout": "image-bottom",
-          "html": "<p>In Fleet: <strong>Settings</strong>, <strong>Integrations</strong>, <strong>Certificate enrollment</strong>. Edit your Deploy App's authority, paste the challenge and <strong>Save</strong>.</p>",
+          "html": "<p>In Fleet: <strong>Settings</strong>, <strong>Integrations</strong>, <strong>Certificate enrollment</strong>. Edit your Deploy App's authority, paste the challenge and press <strong>Save</strong>.</p>",
           "images": [
             {
-              "src": "/content/images/en/attachments/541fb7130e37899f.webp",
-              "width": 1820,
-              "height": 1302
+              "src": "/content/images/en/attachments/bbabdb48fd4be54d.webp",
+              "width": 1860,
+              "height": 1368
             }
           ]
         },
@@ -71,7 +83,7 @@
         {
           "title": "Send its certificate",
           "layout": "image-bottom",
-          "html": "<p>On the same page open <strong>OS settings</strong>. On the <strong>rmscep</strong> row choose <strong>Resend</strong>. Naming alone sends nothing.</p>",
+          "html": "<p>On the same page open <strong>OS settings</strong> and choose <strong>Resend</strong> on the <strong>rmscep</strong> row: naming alone sends nothing.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/f02b4ebe7e64ac97.webp",
@@ -83,7 +95,7 @@
         {
           "title": "Send the policy again",
           "layout": "image-bottom",
-          "html": "<p>Once every phone has its apps, send the policy again, so that Chrome may use the certificate: <strong>Controls</strong>, <strong>OS settings</strong>, <strong>Configuration profiles</strong>, delete the policy file and add it again.</p>",
+          "html": "<p>Once every phone has its apps, delete the policy under <strong>Controls</strong>, <strong>OS settings</strong>, <strong>Configuration profiles</strong> and add it again, so Chrome may use the certificate. Then press <strong>Close</strong> in Deploy App and see <strong>First start on the phone</strong>.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/11dfb2b661af7839.webp",
