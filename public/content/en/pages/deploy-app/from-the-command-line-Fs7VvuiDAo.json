@@ -13,7 +13,7 @@
     "From the command line"
   ],
   "createdAt": "2026-11-21T08:08:40.072Z",
-  "updatedAt": "2026-11-21T23:27:19.445Z",
+  "updatedAt": "2026-11-22T01:59:00.955Z",
   "headings": [],
   "blocks": [
     {
@@ -23,7 +23,7 @@
         {
           "title": "The same, typed",
           "layout": "image-bottom",
-          "html": "<p>The daily work has commands too, for those who script. Both come in the same install.</p>",
+          "html": "<p>The daily work has commands too, for those who script. They work the same with the downloaded file, typed in its folder, as with the install from a terminal.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/864e35025a0c3e54.webp",
