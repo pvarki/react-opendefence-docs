@@ -13,7 +13,7 @@
     "First start on the phone"
   ],
   "createdAt": "2026-11-20T19:35:14.323Z",
-  "updatedAt": "2026-11-21T15:31:45.767Z",
+  "updatedAt": "2026-11-21T23:26:14.427Z",
   "headings": [],
   "blocks": [
     {
@@ -47,7 +47,7 @@
         {
           "title": "Signed in",
           "layout": "image-bottom",
-          "html": "<p>Deploy App opens as the phone's callsign. Write it on a label on the phone: identical phones look alike in Fleet.</p>",
+          "html": "<p>Deploy App opens as the phone's callsign. Write it on a label on the phone: identical phones look alike in your MDM.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/0e281f149b1dc049.webp",
@@ -62,7 +62,7 @@
           "html": "<p>The phone is not ready yet, or something went wrong: see <strong>When a phone does not arrive</strong>.</p>",
           "images": [
             {
-              "src": "/content/images/en/attachments/9848e8f46462b67c.webp",
+              "src": "/content/images/en/attachments/a40ba9c93e23e220.webp",
               "width": 912,
               "height": 1804
             }
