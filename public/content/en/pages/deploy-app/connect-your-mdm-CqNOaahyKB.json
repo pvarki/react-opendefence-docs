@@ -13,7 +13,7 @@
     "Connect your MDM"
   ],
   "createdAt": "2026-10-29T10:35:43.762Z",
-  "updatedAt": "2026-11-22T01:37:55.535Z",
+  "updatedAt": "2026-11-22T16:12:00.685Z",
   "headings": [],
   "blocks": [
     {
@@ -122,9 +122,9 @@
           "html": "<p>Your MDM's group for this Deploy App now has the certificate, the policy, the apps and the <strong>Deploy App</strong> icon. Press <strong>Show the phones</strong>.</p>",
           "images": [
             {
-              "src": "/content/images/en/attachments/d1962bfd7d2f1116.webp",
+              "src": "/content/images/en/attachments/a147bb9c023d0795.webp",
               "width": 1052,
-              "height": 949
+              "height": 976
             }
           ]
         },
