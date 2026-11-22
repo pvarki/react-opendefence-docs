@@ -13,7 +13,7 @@
     "Install the connector"
   ],
   "createdAt": "2026-11-21T08:05:50.369Z",
-  "updatedAt": "2026-11-22T02:19:22.211Z",
+  "updatedAt": "2026-11-22T15:34:07.635Z",
   "headings": [],
   "blocks": [
     {
@@ -191,7 +191,7 @@
         {
           "title": "Next time",
           "layout": "image-bottom",
-          "html": "<p>Next time, open the same file again and use the page it opens. Every start makes a new address, and a page left open from before asks for it.</p>",
+          "html": "<p>Next time, open the same file again and use the page it opens; a page left open from before asks for its new address. If the connector is running already, a second window says so, and Enter closes it.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/3a9a743bc59a3145.webp",
