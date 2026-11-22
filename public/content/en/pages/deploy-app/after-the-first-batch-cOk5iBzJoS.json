@@ -13,7 +13,7 @@
     "After the first batch"
   ],
   "createdAt": "2026-11-21T08:07:42.947Z",
-  "updatedAt": "2026-11-21T23:55:48.787Z",
+  "updatedAt": "2026-11-22T01:38:49.116Z",
   "headings": [],
   "blocks": [
     {
@@ -23,10 +23,10 @@
         {
           "title": "Start the connector again",
           "layout": "image-bottom",
-          "html": "<p>Open a terminal, type <code>odmdm-connector web</code> and press Enter: the connector's page opens in your browser. If it does not open, open the address the terminal shows.</p>",
+          "html": "<p>Open the connector's file again, or type <code>odmdm-connector web</code> if you installed it from a terminal. Its page opens in your browser; if not, open the address its window shows.</p>",
           "images": [
             {
-              "src": "/content/images/en/attachments/6a4f2a5aca1be212.webp",
+              "src": "/content/images/en/attachments/727992f26f8e44fe.webp",
               "width": 1400,
               "height": 1000
             }
@@ -50,9 +50,9 @@
           "html": "<p>Open enrolment and press <strong>Open in the MDM connector</strong>. Every opening makes a new challenge, so hand it over before the phones ask.</p>",
           "images": [
             {
-              "src": "/content/images/en/attachments/74b9ca370c729b8b.webp",
+              "src": "/content/images/en/attachments/53c7c9d4c09a461b.webp",
               "width": 1860,
-              "height": 1387
+              "height": 1500
             }
           ]
         },
