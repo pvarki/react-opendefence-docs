@@ -64,6 +64,96 @@
           "id": "kayta-ulkoisia-palveluita-3RiDEDjjg0",
           "label": "Käytä ulkoisia palveluita",
           "slug": "kayta-ulkoisia-palveluita-3RiDEDjjg0"
+        },
+        {
+          "type": "doc",
+          "id": "deploy-app-tukee-mdmaa-jVgQarMKxG",
+          "label": "Deploy App tukee MDM:ää",
+          "slug": "deploy-app-tukee-mdmaa-jVgQarMKxG"
+        },
+        {
+          "type": "doc",
+          "id": "asenna-liitin-POM9A5h4cd",
+          "label": "Asenna liitin",
+          "slug": "asenna-liitin-POM9A5h4cd"
+        },
+        {
+          "type": "doc",
+          "id": "yhdista-mdm-QBy34u1J8P",
+          "label": "Yhdistä MDM",
+          "slug": "yhdista-mdm-QBy34u1J8P"
+        },
+        {
+          "type": "doc",
+          "id": "liita-puhelimet-o8nMr5refc",
+          "label": "Liitä puhelimet",
+          "slug": "liita-puhelimet-o8nMr5refc"
+        },
+        {
+          "type": "doc",
+          "id": "nimea-puhelimet-vzIe9142oV",
+          "label": "Nimeä puhelimet",
+          "slug": "nimea-puhelimet-vzIe9142oV"
+        },
+        {
+          "type": "doc",
+          "id": "ensimmainen-kaynnistys-puhelimessa-XZm8dfyOk7",
+          "label": "Ensimmäinen käynnistys puhelimessa",
+          "slug": "ensimmainen-kaynnistys-puhelimessa-XZm8dfyOk7"
+        },
+        {
+          "type": "doc",
+          "id": "kun-puhelin-ei-tule-perille-RawT0cG1WW",
+          "label": "Kun puhelin ei tule perille",
+          "slug": "kun-puhelin-ei-tule-perille-RawT0cG1WW"
+        },
+        {
+          "type": "doc",
+          "id": "ensimmaisen-eran-jalkeen-uml2XzLB4Q",
+          "label": "Ensimmäisen erän jälkeen",
+          "slug": "ensimmaisen-eran-jalkeen-uml2XzLB4Q"
+        },
+        {
+          "type": "doc",
+          "id": "asenna-liitin-paatteesta-zFGeRuAR6T",
+          "label": "Asenna liitin päätteestä",
+          "slug": "asenna-liitin-paatteesta-zFGeRuAR6T"
+        },
+        {
+          "type": "doc",
+          "id": "komentorivilta-IHi2889tpu",
+          "label": "Komentoriviltä",
+          "slug": "komentorivilta-IHi2889tpu"
+        },
+        {
+          "type": "doc",
+          "id": "toisen-mdmn-kaytto-w4fjf8R0J4",
+          "label": "Toisen MDM:n käyttö",
+          "slug": "toisen-mdmn-kaytto-w4fjf8R0J4"
+        },
+        {
+          "type": "doc",
+          "id": "maarita-fleet-deploy-appia-varten-Puxv3F0J4g",
+          "label": "Määritä Fleet Deploy Appia varten",
+          "slug": "maarita-fleet-deploy-appia-varten-Puxv3F0J4g"
+        },
+        {
+          "type": "doc",
+          "id": "lisaa-puhelimet-fleetiin-9CeCdOVgei",
+          "label": "Lisää puhelimet Fleetiin",
+          "slug": "lisaa-puhelimet-fleetiin-9CeCdOVgei"
+        },
+        {
+          "type": "doc",
+          "id": "maarita-fleet-ilman-liitinta-v1gTQPz5sV",
+          "label": "Määritä Fleet ilman liitintä",
+          "slug": "maarita-fleet-ilman-liitinta-v1gTQPz5sV"
+        },
+        {
+          "type": "doc",
+          "id": "nimea-puhelimet-fleetissa-ilman-liitinta-9ZR0tAiRxJ",
+          "label": "Nimeä puhelimet Fleetissä ilman liitintä",
+          "slug": "nimea-puhelimet-fleetissa-ilman-liitinta-9ZR0tAiRxJ"
         }
       ]
     },
