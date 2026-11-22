@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 1,
+  "id": "603a9973-df35-41e6-b86d-5eee63b09dcc",
+  "slug": "set-fleet-up-for-deploy-app-Prkasq85P6",
+  "collection": "deploy-app",
+  "locale": "en",
+  "title": "Set Fleet up for Deploy App",
+  "breadcrumb": [
+    "Platforms",
+    "Android",
+    "Admin Guide",
+    "MDM: Fleet",
+    "Set Fleet up for Deploy App"
+  ],
+  "createdAt": "2026-11-21T23:23:12.839Z",
+  "updatedAt": "2026-11-22T00:13:02.005Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "What Fleet needs",
+          "layout": "image-bottom",
+          "html": "<p>Fleet needs three things for Deploy App: Android turned on, a team for this Deploy App's phones and an API token for the connector.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/987306905b8f5b71.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Android turned on",
+          "layout": "image-bottom",
+          "html": "<p>In Fleet: <strong>Settings</strong>, <strong>Integrations</strong>, <strong>MDM</strong> must say <strong>Android MDM turned on.</strong> If not, whoever runs Fleet connects Android Enterprise there: once, for all teams.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/194599442ac9d77a.webp",
+              "width": 1860,
+              "height": 1031
+            }
+          ]
+        },
+        {
+          "title": "A team named after your deployment",
+          "layout": "image-bottom",
+          "html": "<p>Name the team with your deployment's name and DeployApp, such as <code>golden-monkey DeployApp</code>: anyone in Fleet then sees which team belongs to which Deploy App. Fleet's console calls a team a fleet.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/412a9f4da212baed.webp",
+              "width": 1860,
+              "height": 881
+            }
+          ]
+        },
+        {
+          "title": "The connector makes it",
+          "layout": "image-bottom",
+          "html": "<p>Least work: the connector makes the team at <strong>Connect</strong>, from the name on its <strong>Team</strong> card. To make it yourself: <strong>Settings</strong>, <strong>Fleets</strong>, <strong>Add fleet</strong>, type the name and press <strong>Create</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/29b58272dc19a25b.webp",
+              "width": 1860,
+              "height": 1032
+            }
+          ]
+        },
+        {
+          "title": "An API token",
+          "layout": "image-bottom",
+          "html": "<p>The connector needs a global admin's API token. One from <strong>My account</strong>, <strong>Get API token</strong> ends with that sign-in, after 5 days by default; an API-only user's does not end.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/213c687a6fdc4627.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "An API-only user",
+          "layout": "image-bottom",
+          "html": "<p>Whoever runs Fleet makes one: <strong>Settings</strong>, <strong>Users</strong>, <strong>Add user</strong>, <strong>API-only user</strong>, with the role Admin for all of Fleet (Global). They then give you its token.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/17faf3b2f47a6b6f.webp",
+              "width": 1860,
+              "height": 820
+            }
+          ]
+        },
+        {
+          "title": "One Fleet, one Deploy App",
+          "layout": "image-bottom",
+          "html": "<p>With the connector, one Fleet serves one Deploy App. A second Deploy App needs a Fleet of its own.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/fded7148f13c3d6e.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Fleet's address",
+          "layout": "image-bottom",
+          "html": "<p>When the connector asks what your MDM needs, type the address you open Fleet at on <strong>Fleet address</strong>, and press <strong>Next</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/2813ed9f25d3633b.webp",
+              "width": 1052,
+              "height": 888
+            }
+          ]
+        },
+        {
+          "title": "The token",
+          "layout": "image-bottom",
+          "html": "<p>Paste the token and press <strong>Next</strong>. With <strong>Remember on this computer</strong> ticked, the keychain keeps it for the next start.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/d2c3174ecc33c338.webp",
+              "width": 1052,
+              "height": 965
+            }
+          ]
+        },
+        {
+          "title": "The team",
+          "layout": "image-bottom",
+          "html": "<p><strong>Team</strong> suggests <code>Deploy App</code>: type your deployment's name over it, such as <code>golden-monkey DeployApp</code>, and leave <strong>More settings</strong> as they are. Press <strong>Connect</strong>: the team is made if it is not there.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/8dac385537c7a381.webp",
+              "width": 1052,
+              "height": 977
+            }
+          ]
+        },
+        {
+          "title": "What Connect sets up",
+          "layout": "image-bottom",
+          "html": "<p>Fleet gets Deploy App as a certificate authority, and the team gets the certificate, the policy, the apps and the <strong>Deploy App</strong> icon. Then go on at <strong>It sets your MDM up</strong> in <strong>Connect your MDM</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/df8a81045262ee8f.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
