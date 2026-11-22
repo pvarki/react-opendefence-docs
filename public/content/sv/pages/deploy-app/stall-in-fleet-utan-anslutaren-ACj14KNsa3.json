@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "id": "897fe57c-d7ed-47a1-ae9b-861529d6d7a9",
+  "slug": "stall-in-fleet-utan-anslutaren-ACj14KNsa3",
+  "collection": "deploy-app",
+  "locale": "sv",
+  "title": "Ställ in Fleet utan anslutaren",
+  "breadcrumb": [
+    "Platforms",
+    "Android",
+    "Administratörsguide",
+    "MDM: Fleet",
+    "Ställ in Fleet utan anslutaren"
+  ],
+  "createdAt": "2026-11-22T22:10:31.035Z",
+  "updatedAt": "2026-11-22T22:29:21.253Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/deploy-app/set-fleet-up-without-the-connector-Xm6Qo0Xkhr",
+    "fi": "/fi/deploy-app/maarita-fleet-ilman-liitinta-v1gTQPz5sV",
+    "sv": "/sv/deploy-app/stall-in-fleet-utan-anslutaren-ACj14KNsa3"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Vad de här bilderna är till för",
+          "layout": "image-bottom",
+          "html": "<p>De här bilderna ställer in Fleet för Deploy App för hand, när anslutaren inte kan användas. Det kräver teknisk personal och Fleets konsol.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/0cd37edbbc0d17e2.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Börja med ett team",
+          "layout": "image-bottom",
+          "html": "<p>Skapa ett team med namn efter din miljö, till exempel <code>golden-monkey DeployApp</code>: <strong>Settings</strong>, <strong>Fleets</strong>, <strong>Add fleet</strong>. Öppna anslutningen i Deploy App för att se <strong>SCEP-adress</strong> och <strong>Utmaning</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/0e15c91adbfc4443.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Lägg till Deploy App som utfärdare",
+          "layout": "image-bottom",
+          "html": "<p>I Fleet: <strong>Settings</strong>, <strong>Integrations</strong>, <strong>Certificate enrollment</strong>, <strong>Add CA</strong>. Välj <strong>Custom Simple Certificate Enrollment Protocol (SCEP)</strong>, med Deploy Apps <strong>SCEP-adress</strong> och <strong>Utmaning</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/9b3b4a139f0d870d.webp",
+              "width": 1860,
+              "height": 1486
+            }
+          ]
+        },
+        {
+          "title": "Lägg till certifikatet",
+          "layout": "image-bottom",
+          "html": "<p>Välj ditt team högst upp och sedan <strong>Controls</strong>, <strong>OS settings</strong>, <strong>Certificates</strong>, <strong>Add</strong>. Namn <code>rmscep</code>, subject <code>CN=$FLEET_VAR_HOST_END_USER_IDP_USERNAME_LOCAL_PART, OU=$FLEET_VAR_HOST_UUID</code>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/a7c898d5603efdd0.webp",
+              "width": 1860,
+              "height": 1915
+            }
+          ]
+        },
+        {
+          "title": "Lägg till policyn",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på <strong>Add profile</strong> i <strong>Configuration profiles</strong> och lägg till delen <code>policy</code> i anslutarens <code>template.json</code>, med din Deploy Apps namn, till exempel <code>golden-monkey.example.fi</code>, för <code>{domain}</code> och <code>rmscep</code> för <code>{key_alias}</code>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/11dfb2b661af7839.webp",
+              "width": 1920,
+              "height": 751
+            }
+          ]
+        },
+        {
+          "title": "Välj apparna",
+          "layout": "image-bottom",
+          "html": "<p><strong>Controls</strong>, <strong>Setup experience</strong>, <strong>Install software</strong>, <strong>Android</strong>, med ditt team valt: kryssa i Chrome och de appar din enhet använder. De installeras när en telefon ansluts, och aldrig annars.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/e1e78513ac74bf9d.webp",
+              "width": 2020,
+              "height": 1130
+            }
+          ]
+        },
+        {
+          "title": "Låt Chrome använda certifikatet",
+          "layout": "image-bottom",
+          "html": "<p>Utan en egen inställning skickar Chrome inte certifikatet. Under <strong>Software</strong>, med ditt team valt, öppnar du <strong>Google Chrome</strong> och sedan <strong>Actions</strong> och <strong>Edit configuration</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/32fe026b3d6cb7ae.webp",
+              "width": 1860,
+              "height": 689
+            }
+          ]
+        },
+        {
+          "title": "Chromes inställning",
+          "layout": "image-bottom",
+          "html": "<p>Ge <strong>Google Chrome</strong> delen <code>config</code> för Chrome i <code>template.json</code>, inuti <code>managedConfiguration</code>, med din Deploy Apps adress, till exempel <code>https://mtls.golden-monkey.example.fi</code>, för <code>{mtls_url}</code>. Tryck på <strong>Save</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/4058ec053e129c71.webp",
+              "width": 1860,
+              "height": 1311
+            }
+          ]
+        },
+        {
+          "title": "Ingen Deploy App-ikon för hand",
+          "layout": "image-bottom",
+          "html": "<p>Fleets konsol kan inte skapa ikonen <strong>Deploy App</strong>: det kräver anslutaren eller Fleets API. Utan den öppnar användarna jobbprofilens <strong>Chrome</strong> och skriver din Deploy Apps adress.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/30a0e3e03346a725.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Anslut och namnge sedan",
+          "layout": "image-bottom",
+          "html": "<p>Telefoner kan nu anslutas: se <strong>Lägg till telefoner i Fleet</strong>. Namnge dem också i Fleet: se <strong>Namnge telefoner i Fleet utan anslutaren</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/1225aa38afabcfbf.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
