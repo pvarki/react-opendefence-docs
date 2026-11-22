@@ -7,9 +7,10 @@
  * English platform organizers already created in Outline and enumerated in
  * scripts/add-meta-markers.mts (the `META: os/product` markers live on them).
  *
- * Only the English (En) locale roots are targeted for now — that's the locked
- * default locale and the pilot scope. Add fi/sv organizer ids here when those
- * platform trees exist in Outline.
+ * The English (En) locale roots are the default targets. A translated chapter
+ * is pushed through a platform key of its own that names the language, such as
+ * "android-fi" (drafts/deploy-app/android-fi/<slug>): its organizer is that
+ * language's platform organizer. Add more fi/sv organizer ids the same way.
  */
 import { MAIN_COLLECTION, GUIDE_COLLECTIONS } from "../../config/collections";
 
@@ -55,6 +56,16 @@ export const PRODUCTS: Record<string, ProductTarget> = {
         key: "android",
         label: "Android",
         organizerId: "356a70b8-4ac4-470f-ae30-9a4249c7f989",
+      },
+      {
+        key: "android-fi",
+        label: "Android (fi)",
+        organizerId: "cdd04071-30d1-41be-ae25-3b4b9e18d880",
+      },
+      {
+        key: "android-sv",
+        label: "Android (sv)",
+        organizerId: "7778ee93-0a6a-4a0d-b4c0-0e611f9d5d24",
       },
       {
         key: "ios",
