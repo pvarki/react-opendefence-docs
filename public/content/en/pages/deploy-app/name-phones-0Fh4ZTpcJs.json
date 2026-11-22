@@ -13,7 +13,7 @@
     "Name phones"
   ],
   "createdAt": "2026-11-20T19:35:09.881Z",
-  "updatedAt": "2026-11-21T16:21:50.118Z",
+  "updatedAt": "2026-11-21T23:54:48.736Z",
   "headings": [],
   "blocks": [
     {
@@ -26,7 +26,7 @@
           "html": "<p>The line at the top says until when Deploy App accepts phones. Red means closed: press <strong>Open Deploy App ↗</strong> and there <strong>Open for 2 hours</strong>.</p>",
           "images": [
             {
-              "src": "/content/images/en/attachments/2afed851efa25f49.webp",
+              "src": "/content/images/en/attachments/c15ec504840db66f.webp",
               "width": 1860,
               "height": 1273
             }
@@ -35,10 +35,10 @@
         {
           "title": "Hand over the new settings",
           "layout": "image-bottom",
-          "html": "<p>After every opening, press <strong>Open in the MDM connector</strong> again. Fleet needs the new challenge before the phones ask.</p>",
+          "html": "<p>After every opening, press <strong>Open in the MDM connector</strong> again. Your MDM needs the new challenge before the phones ask.</p>",
           "images": [
             {
-              "src": "/content/images/en/attachments/d3dc6cf3ac378483.webp",
+              "src": "/content/images/en/attachments/b498ffb148da6f80.webp",
               "width": 1860,
               "height": 1025
             }
@@ -47,24 +47,12 @@
         {
           "title": "Use them",
           "layout": "image-bottom",
-          "html": "<p>The new tab asks first. Press <strong>Use the new settings</strong>, and Fleet gets the new challenge.</p>",
+          "html": "<p>The new tab asks first. Press <strong>Use the new settings</strong>, and your MDM gets the new challenge.</p>",
           "images": [
             {
-              "src": "/content/images/en/attachments/d5f54056781a9a02.webp",
+              "src": "/content/images/en/attachments/81d4e75338d27c75.webp",
               "width": 1052,
               "height": 816
-            }
-          ]
-        },
-        {
-          "title": "Not the admin?",
-          "layout": "image-bottom",
-          "html": "<p>Ask the admin to open enrolment and send you a new settings line. Press <strong>New settings</strong>, paste it, press <strong>Continue</strong> and then <strong>Use the new settings</strong>.</p>",
-          "images": [
-            {
-              "src": "/content/images/en/attachments/68f6b0b41dc77700.webp",
-              "width": 1052,
-              "height": 1116
             }
           ]
         },
@@ -74,7 +62,7 @@
           "html": "<p>Check that the phones <strong>waiting for a name</strong> are in your hands, and that each shows its apps in its <strong>Work</strong> tab.</p>",
           "images": [
             {
-              "src": "/content/images/en/attachments/a6046ddd1f37fc02.webp",
+              "src": "/content/images/en/attachments/ef07fe1428653d63.webp",
               "width": 1860,
               "height": 1273
             }
@@ -86,7 +74,7 @@
           "html": "<p>With no phone selected, press <strong>Give callsigns</strong> and type a prefix under <strong>Numbered</strong>. Every phone without a name gets a number in the order they joined, and the preview shows who gets what.</p>",
           "images": [
             {
-              "src": "/content/images/en/attachments/5d316fa037d1134d.webp",
+              "src": "/content/images/en/attachments/e2591fa96b5b7039.webp",
               "width": 1860,
               "height": 1273
             }
@@ -98,7 +86,7 @@
           "html": "<p>Choose <strong>From a list</strong> and type one callsign per line. <strong>Keep the rest of the list for next time</strong> keeps the callsigns left over.</p>",
           "images": [
             {
-              "src": "/content/images/en/attachments/0988a5fd71ea5e13.webp",
+              "src": "/content/images/en/attachments/f6c2eb7c171c38b5.webp",
               "width": 1860,
               "height": 1273
             }
@@ -110,7 +98,7 @@
           "html": "<p>Use 3–32 letters, digits or hyphens, with no hyphen at either end; the button waits until every row passes. A callsign is never given twice: raise <strong>First number</strong> if higher numbers were used before.</p>",
           "images": [
             {
-              "src": "/content/images/en/attachments/5db3dd57b0fa1c4d.webp",
+              "src": "/content/images/en/attachments/8d97bfc85e49d8e3.webp",
               "width": 1860,
               "height": 1478
             }
@@ -119,10 +107,10 @@
         {
           "title": "Name them",
           "layout": "image-bottom",
-          "html": "<p>Press <strong>Name 6 phones</strong>. Fleet asks each phone for its certificate, and a phone answers within about 15 minutes.</p>",
+          "html": "<p>Press <strong>Name 6 phones</strong>. Your MDM asks each phone for its certificate; with Fleet, a phone answers within about 15 minutes.</p>",
           "images": [
             {
-              "src": "/content/images/en/attachments/6a1fc5a490681904.webp",
+              "src": "/content/images/en/attachments/dc8299550d3505a4.webp",
               "width": 1860,
               "height": 1273
             }
@@ -134,7 +122,7 @@
           "html": "<p>The count above the table says how many are <strong>ready</strong>. The table updates by itself every minute.</p>",
           "images": [
             {
-              "src": "/content/images/en/attachments/0a9dc4d5b4d0d429.webp",
+              "src": "/content/images/en/attachments/cc5c6c508f64837c.webp",
               "width": 1860,
               "height": 1273
             }
@@ -143,10 +131,10 @@
         {
           "title": "Close enrolment",
           "layout": "image-bottom",
-          "html": "<p>Each phone also appears on Deploy App's MDM page under its callsign. When all are in, the admin presses <strong>Close</strong> (you, if you are the admin).</p>",
+          "html": "<p>Each phone also appears on Deploy App's MDM page under its callsign. When all are in, press <strong>Close</strong>.</p>",
           "images": [
             {
-              "src": "/content/images/en/attachments/9988190019494dd2.webp",
+              "src": "/content/images/en/attachments/c5f2fbc43bbf5d67.webp",
               "width": 1860,
               "height": 1387
             }
