@@ -1,0 +1,175 @@
+{
+  "schemaVersion": 1,
+  "id": "e4a063ec-f1c3-4d5b-8756-70a544a2b677",
+  "slug": "deploy-app-stoder-mdm-4ZstBxkyd8",
+  "collection": "deploy-app",
+  "locale": "sv",
+  "title": "Deploy App stöder MDM",
+  "breadcrumb": [
+    "Platforms",
+    "Android",
+    "Administratörsguide",
+    "Ta in användare via MDM",
+    "Deploy App stöder MDM"
+  ],
+  "createdAt": "2026-11-22T22:00:22.004Z",
+  "updatedAt": "2026-11-22T22:19:11.664Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/deploy-app/deploy-app-supports-mdm-hgbi4NqgKT",
+    "fi": "/fi/deploy-app/deploy-app-tukee-mdmaa-jVgQarMKxG",
+    "sv": "/sv/deploy-app/deploy-app-stoder-mdm-4ZstBxkyd8"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Klar när den delas ut",
+          "layout": "image-bottom",
+          "html": "<p>En telefon som din MDM ställer in är klar när användaren får den: apparna är installerade och Deploy App öppnas under telefonens egen anropssignal.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/82e7ee72df0fca5c.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "För hand, en telefon i taget",
+          "layout": "image-bottom",
+          "html": "<p>Utan MDM öppnar varje användare en inbjudan, väntar på att en administratör godkänner den, laddar ner en nyckel och installerar den med ett lösenord. Trettio telefoner, trettio gånger.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/a70703792bb2e3ee.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Med MDM, en hel omgång",
+          "layout": "image-bottom",
+          "html": "<p>Ställ in det en gång, så får varje telefon du ansluter sina appar och ikonen <strong>Deploy App</strong> av sig själv, och sitt certifikat när du namnger den. Ingen skriver in en inbjudningskod.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/d02149d347987b0d.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Nyckeln stannar på telefonen",
+          "layout": "image-bottom",
+          "html": "<p>Varje telefon skapar sin egen nyckel och Deploy App signerar den. Ingen nyckelfil och inget lösenord skickas runt.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/b8726431f208fab9.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Så fungerar det",
+          "layout": "image-bottom",
+          "html": "<p>Din MDM ställer in telefonen. Deploy App ger den en identitet: ett certifikat i dess anropssignal.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/c18bf239a1f77b47.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "En anropssignal per telefon",
+          "layout": "image-bottom",
+          "html": "<p>Varje telefon ansluter som sin anropssignal, till exempel <code>OTTER4</code>, och når Deploy App och dess tjänster som vilken användare som helst.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/60a22ad1b2c3c1d4.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Anslut först, namnge sedan",
+          "layout": "image-bottom",
+          "html": "<p>Telefoner ansluts i valfritt antal och valfri ordning. När alla har sina appar namnger du dem på en gång: var och en får då sitt certifikat.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/abe48548ddc2b288.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Du bestämmer när",
+          "layout": "image-bottom",
+          "html": "<p>Telefoner kan anslutas till din MDM när som helst, men Deploy App utfärdar certifikat bara medan anslutningen är öppen, högst 2 timmar åt gången. Varje öppning skapar en ny utmaning: ett lösenord som din MDM behöver.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/369dedc11a61e1bd.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Vad din MDM måste kunna",
+          "layout": "image-bottom",
+          "html": "<p>Din MDM måste kunna de här fem sakerna. <strong>Använda en annan MDM</strong> visar var och en.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/874ffe46e7e688d4.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Fleet fungerar som den är",
+          "layout": "image-bottom",
+          "html": "<p>Fleet (FleetDM) är en MDM, och den som fungerar som den är: <strong>ODMDM connector</strong> ställer in den åt dig. En annan MDM behöver ett tillägg till anslutaren, som inte finns ännu, eller så görs inställningarna för hand.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/7d81313e5e5b1f4a.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Vad du behöver",
+          "layout": "image-bottom",
+          "html": "<p>En MDM med Android Enterprise påslaget (fråga den som sköter den) och en grupp i den för den här Deploy Apps telefoner. <strong>ODMDM connector</strong> är valfri: utan den, se <strong>Utan anslutaren</strong> i <strong>Koppla din MDM</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/5a8bbe147d2dd887.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Din väg",
+          "layout": "image-bottom",
+          "html": "<p>Installera anslutaren, koppla din MDM, anslut telefonerna, namnge dem och starta dem. Med Fleet, kontrollera först <strong>Vad Fleet behöver</strong> i <strong>Ställ in Fleet för Deploy App</strong>; med en annan MDM, börja med <strong>Använda en annan MDM</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/3729a2c0f1bb4675.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
