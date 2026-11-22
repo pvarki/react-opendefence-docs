@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "id": "42d9b5a9-88b7-4ca4-b3b2-78901bb3a211",
+  "slug": "anvanda-en-annan-mdm-hnnCqf9hTL",
+  "collection": "deploy-app",
+  "locale": "sv",
+  "title": "Använda en annan MDM",
+  "breadcrumb": [
+    "Platforms",
+    "Android",
+    "Administratörsguide",
+    "Ta in användare via MDM",
+    "Använda en annan MDM"
+  ],
+  "createdAt": "2026-11-22T22:09:25.486Z",
+  "updatedAt": "2026-11-22T22:27:15.379Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/deploy-app/using-another-mdm-V3bHoMMsq3",
+    "fi": "/fi/deploy-app/toisen-mdmn-kaytto-w4fjf8R0J4",
+    "sv": "/sv/deploy-app/anvanda-en-annan-mdm-hnnCqf9hTL"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Fleet är inbyggd",
+          "layout": "image-bottom",
+          "html": "<p>Anslutaren fungerar med Fleet som den är. En annan MDM behöver ett tillägg, ett litet program som talar med den MDM:en, och inget finns ännu.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/a5b54f7342d9db5e.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Vad en MDM måste kunna",
+          "layout": "image-bottom",
+          "html": "<p>En MDM passar om den kan de här fem sakerna. Fråga MDM:ens leverantör, eller pröva dem i dess konsol.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/af0bff3fd787313c.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "En egen grupp",
+          "layout": "image-bottom",
+          "html": "<p>Telefoner för en Deploy App ansluts till en grupp, med namn efter din miljö, till exempel <code>golden-monkey DeployApp</code>, med sin egen anslutningslänk.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/d2f5276210d0e4f0.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "En utmaning för alla telefoner",
+          "layout": "image-bottom",
+          "html": "<p>MDM:en skickar varje telefons certifikatbegäran till Deploy Apps <strong>SCEP-adress</strong>, med utmaningen du ger den: samma för varje telefon.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/59312283913c4949.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Ett namn för varje telefon",
+          "layout": "image-bottom",
+          "html": "<p>Certifikatets namn kommer från ett fält som du kan sätta för varje telefon. Det namnet är telefonens anropssignal.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/49de705c88d0c11e.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "En ny utmaning varje gång",
+          "layout": "image-bottom",
+          "html": "<p>Varje öppning skapar en ny utmaning. Om MDM:en inte kan ta emot den från anslutaren visar telefonvyn den, så att du kan kopiera den till MDM:en, som med det här demotillägget.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/1547e1697a2e1b9f.webp",
+              "width": 1860,
+              "height": 1273
+            }
+          ]
+        },
+        {
+          "title": "Fråga igen",
+          "layout": "image-bottom",
+          "html": "<p>Efter namngivningen måste MDM:en be just den telefonen om dess certifikat igen, och lämna de andra i fred.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/20614a251668dc16.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Lägga till ett tillägg",
+          "layout": "image-bottom",
+          "html": "<p>Ett tillägg kräver att anslutaren är installerad från en terminal: teknisk personal lägger till det med installationsraden i anslutarens README. Med mer än en MDM installerad frågar anslutaren <strong>Which MDM?</strong></p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/9c231f75104bf13b.webp",
+              "width": 1052,
+              "height": 800
+            }
+          ]
+        },
+        {
+          "title": "Anslutaren frågar först",
+          "layout": "image-bottom",
+          "html": "<p>Ett tillägg ser din MDM-token. Första gången du väljer ett, och efter att det har uppdaterats, säger anslutaren vilket paket det kommer från och frågar innan det används.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/d6e5dacef4b47e00.webp",
+              "width": 1052,
+              "height": 858
+            }
+          ]
+        },
+        {
+          "title": "Steg för hand",
+          "layout": "image-bottom",
+          "html": "<p>Det som MDM:en inte kan göra via API listar anslutaren, så att du gör det i MDM:ens konsol. Tryck sedan på <strong>Show the phones</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/a73e60c59e5d142b.webp",
+              "width": 1052,
+              "height": 1019
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
