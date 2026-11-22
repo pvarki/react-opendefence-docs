@@ -121,18 +121,6 @@
             },
             {
               "type": "doc",
-              "id": "connect-your-mdm-without-the-connector-Xm6Qo0Xkhr",
-              "label": "Connect your MDM without the connector",
-              "slug": "connect-your-mdm-without-the-connector-Xm6Qo0Xkhr"
-            },
-            {
-              "type": "doc",
-              "id": "name-phones-without-the-connector-S69TrSf5OW",
-              "label": "Name phones without the connector",
-              "slug": "name-phones-without-the-connector-S69TrSf5OW"
-            },
-            {
-              "type": "doc",
               "id": "from-the-command-line-Fs7VvuiDAo",
               "label": "From the command line",
               "slug": "from-the-command-line-Fs7VvuiDAo"
@@ -142,6 +130,38 @@
               "id": "using-another-mdm-V3bHoMMsq3",
               "label": "Using another MDM",
               "slug": "using-another-mdm-V3bHoMMsq3"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "id": "mdm-fleet-3boBPxHsym",
+          "label": "MDM: Fleet",
+          "clientId": "android-MENReFAfCN",
+          "children": [
+            {
+              "type": "doc",
+              "id": "set-fleet-up-for-deploy-app-Prkasq85P6",
+              "label": "Set Fleet up for Deploy App",
+              "slug": "set-fleet-up-for-deploy-app-Prkasq85P6"
+            },
+            {
+              "type": "doc",
+              "id": "add-phones-in-fleet-lJT3f5UOlt",
+              "label": "Add phones in Fleet",
+              "slug": "add-phones-in-fleet-lJT3f5UOlt"
+            },
+            {
+              "type": "doc",
+              "id": "set-fleet-up-without-the-connector-Xm6Qo0Xkhr",
+              "label": "Set Fleet up without the connector",
+              "slug": "set-fleet-up-without-the-connector-Xm6Qo0Xkhr"
+            },
+            {
+              "type": "doc",
+              "id": "name-phones-in-fleet-without-the-connector-S69TrSf5OW",
+              "label": "Name phones in Fleet without the connector",
+              "slug": "name-phones-in-fleet-without-the-connector-S69TrSf5OW"
             }
           ]
         }
