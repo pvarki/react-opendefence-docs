@@ -13,7 +13,7 @@
     "When a phone does not arrive"
   ],
   "createdAt": "2026-11-20T19:35:19.388Z",
-  "updatedAt": "2026-11-21T16:52:54.856Z",
+  "updatedAt": "2026-11-21T23:55:38.752Z",
   "headings": [],
   "blocks": [
     {
@@ -26,7 +26,7 @@
           "html": "<p>A phone that was refused or failed shows in red, with the reason. The count says how many <strong>failed</strong>.</p>",
           "images": [
             {
-              "src": "/content/images/en/attachments/f480db3454b8cfa4.webp",
+              "src": "/content/images/en/attachments/3e1dd49850968200.webp",
               "width": 1860,
               "height": 1273
             }
@@ -38,7 +38,7 @@
           "html": "<p>Double-click the phone, or select it and press <strong>Details</strong>: the reason in full, and whether enrolment is still open.</p>",
           "images": [
             {
-              "src": "/content/images/en/attachments/0db1dcd48847ac5f.webp",
+              "src": "/content/images/en/attachments/cbbeadf656388f0b.webp",
               "width": 1860,
               "height": 1273
             }
@@ -47,7 +47,7 @@
         {
           "title": "Fix the cause",
           "layout": "image-bottom",
-          "html": "<p>Callsign taken or not allowed: give another. Enrolment closed, or Fleet has an old challenge: open enrolment and press <strong>Open in the MDM connector</strong> again.</p>",
+          "html": "<p>Callsign taken or not allowed: give another. Enrolment closed, or your MDM has an old challenge: open enrolment and press <strong>Open in the MDM connector</strong> again.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/56bc258fc6a8b186.webp",
@@ -62,7 +62,7 @@
           "html": "<p>The phone could not reach Deploy App's address when it asked. Check its network, then press <strong>Ask again</strong>.</p>",
           "images": [
             {
-              "src": "/content/images/en/attachments/48e005d891a0ed87.webp",
+              "src": "/content/images/en/attachments/619bc4a811f740fa.webp",
               "width": 1860,
               "height": 1273
             }
@@ -74,7 +74,7 @@
           "html": "<p>The line turns amber ten minutes before closing, and red after. <strong>Open Deploy App ↗</strong> takes you to the MDM page to open enrolment again.</p>",
           "images": [
             {
-              "src": "/content/images/en/attachments/ac4b5ae7ff5d4024.webp",
+              "src": "/content/images/en/attachments/5ccec4f2099fb02e.webp",
               "width": 1860,
               "height": 1273
             }
@@ -83,10 +83,10 @@
         {
           "title": "Ask again",
           "layout": "image-bottom",
-          "html": "<p>Cause fixed? Select the phone and press <strong>Ask again</strong>. <strong>Refused or failed</strong> selects them all.</p>",
+          "html": "<p>Once the cause is fixed, select the phone and press <strong>Ask again</strong>. <strong>Refused or failed</strong> selects them all.</p>",
           "images": [
             {
-              "src": "/content/images/en/attachments/81e459f86695c18b.webp",
+              "src": "/content/images/en/attachments/5f724d898c00bad4.webp",
               "width": 1860,
               "height": 1273
             }
@@ -98,7 +98,7 @@
           "html": "<p>A taken callsign is never freed. In the phone's details press <strong>Give another callsign</strong>, and give it a new one.</p>",
           "images": [
             {
-              "src": "/content/images/en/attachments/3f8d7748d3059c33.webp",
+              "src": "/content/images/en/attachments/3f7ad1842b5f1f38.webp",
               "width": 1860,
               "height": 1273
             }
@@ -107,10 +107,10 @@
         {
           "title": "Never swap the certificate",
           "layout": "image-bottom",
-          "html": "<p>Do not replace the team's certificate in Fleet to retry. Every phone in the team would lose its own.</p>",
+          "html": "<p>With Fleet, do not replace the team's certificate to retry: every phone in the team would lose its own.</p>",
           "images": [
             {
-              "src": "/content/images/en/attachments/e737378227dd0fa4.webp",
+              "src": "/content/images/en/attachments/66ea1bf3de754815.webp",
               "width": 1800,
               "height": 1000
             }
@@ -119,10 +119,10 @@
         {
           "title": "The token stopped working",
           "layout": "image-bottom",
-          "html": "<p>When Fleet no longer accepts the token, the connector asks for a new one by itself, with Fleet's reason. Paste a new token and press <strong>Connect</strong>.</p>",
+          "html": "<p>When your MDM no longer accepts the token, the connector asks for a new one by itself, with the MDM's reason. Paste a new token and press <strong>Connect</strong>.</p>",
           "images": [
             {
-              "src": "/content/images/en/attachments/d9642f31d96b06e1.webp",
+              "src": "/content/images/en/attachments/0d4ac4d3b64c9d75.webp",
               "width": 1052,
               "height": 1057
             }
@@ -131,10 +131,10 @@
         {
           "title": "Certificate Authentication Failed",
           "layout": "image-bottom",
-          "html": "<p>The phone has its certificate, but the policy that lets Chrome use it was overwritten. Send the policy again (see <strong>From the command line</strong>), then open Deploy App on the phone again.</p>",
+          "html": "<p>The phone has its certificate, but Chrome's policy for it was overwritten. Send the policy again (see <strong>From the command line</strong>, or without the connector <strong>Name phones in Fleet without the connector</strong>), then open Deploy App again.</p>",
           "images": [
             {
-              "src": "/content/images/en/attachments/9848e8f46462b67c.webp",
+              "src": "/content/images/en/attachments/a40ba9c93e23e220.webp",
               "width": 912,
               "height": 1804
             }
