@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "id": "4123d582-3452-401e-b836-06b5e56e875d",
+  "slug": "namnge-telefoner-Szm4GfJooc",
+  "collection": "deploy-app",
+  "locale": "sv",
+  "title": "Namnge telefoner",
+  "breadcrumb": [
+    "Platforms",
+    "Android",
+    "Administratörsguide",
+    "Ta in användare via MDM",
+    "Namnge telefoner"
+  ],
+  "createdAt": "2026-11-22T22:07:26.033Z",
+  "updatedAt": "2026-11-22T22:23:09.483Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/deploy-app/name-phones-0Fh4ZTpcJs",
+    "fi": "/fi/deploy-app/nimea-puhelimet-vzIe9142oV",
+    "sv": "/sv/deploy-app/namnge-telefoner-Szm4GfJooc"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Kontrollera att anslutningen är öppen",
+          "layout": "image-bottom",
+          "html": "<p>Raden högst upp säger till när Deploy App tar emot telefoner. Rött betyder stängt: tryck på <strong>Open Deploy App ↗</strong> och där på <strong>Öppna i 2 timmar</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/c15ec504840db66f.webp",
+              "width": 1860,
+              "height": 1273
+            }
+          ]
+        },
+        {
+          "title": "Lämna över de nya inställningarna",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på <strong>Öppna i MDM-anslutaren</strong> igen efter varje öppning. Din MDM behöver den nya utmaningen innan telefonerna ber om sina certifikat.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/ddf645eea66bb693.webp",
+              "width": 1860,
+              "height": 1125
+            }
+          ]
+        },
+        {
+          "title": "Använd dem",
+          "layout": "image-bottom",
+          "html": "<p>Den nya fliken frågar först. Tryck på <strong>Use the new settings</strong>, så får din MDM den nya utmaningen.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/81d4e75338d27c75.webp",
+              "width": 1052,
+              "height": 816
+            }
+          ]
+        },
+        {
+          "title": "Se vilka som väntar",
+          "layout": "image-bottom",
+          "html": "<p>Kontrollera att telefonerna som är <strong>waiting for a name</strong> är i dina händer, och att var och en visar sina appar på fliken <strong>Work</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/ef07fe1428653d63.webp",
+              "width": 1860,
+              "height": 1273
+            }
+          ]
+        },
+        {
+          "title": "Ge anropssignaler",
+          "layout": "image-bottom",
+          "html": "<p>Med ingen telefon markerad trycker du på <strong>Give callsigns</strong> och skriver ett prefix under <strong>Numbered</strong>. Varje telefon utan namn får ett nummer i den ordning de anslöts, och förhandsvisningen visar vem som får vad.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/e2591fa96b5b7039.webp",
+              "width": 1860,
+              "height": 1273
+            }
+          ]
+        },
+        {
+          "title": "Eller använd din egen lista",
+          "layout": "image-bottom",
+          "html": "<p>Välj <strong>From a list</strong> och skriv en anropssignal per rad. <strong>Keep the rest of the list for next time</strong> sparar de anropssignaler som blir över.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/f6c2eb7c171c38b5.webp",
+              "width": 1860,
+              "height": 1273
+            }
+          ]
+        },
+        {
+          "title": "Regler för anropssignaler",
+          "layout": "image-bottom",
+          "html": "<p>Använd 3–32 bokstäver, siffror eller bindestreck, utan bindestreck i början eller slutet; knappen väntar tills varje rad godkänns. En anropssignal ges aldrig två gånger: höj <strong>First number</strong> om högre nummer har använts förut.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/8d97bfc85e49d8e3.webp",
+              "width": 1860,
+              "height": 1478
+            }
+          ]
+        },
+        {
+          "title": "Namnge dem",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på <strong>Name 6 phones</strong>. Din MDM ber varje telefon om dess certifikat; med Fleet svarar en telefon inom ungefär 15 minuter.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/dc8299550d3505a4.webp",
+              "width": 1860,
+              "height": 1273
+            }
+          ]
+        },
+        {
+          "title": "Vänta tills alla är klara",
+          "layout": "image-bottom",
+          "html": "<p>Antalet ovanför tabellen säger hur många som är <strong>ready</strong>. Tabellen uppdateras av sig själv varje minut.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/cc5c6c508f64837c.webp",
+              "width": 1860,
+              "height": 1273
+            }
+          ]
+        },
+        {
+          "title": "Stäng anslutningen",
+          "layout": "image-bottom",
+          "html": "<p>Varje telefon syns också på Deploy Apps MDM-sida under sin anropssignal. När alla är inne trycker du på <strong>Stäng</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/782d4d1b083b88d1.webp",
+              "width": 1860,
+              "height": 1500
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
