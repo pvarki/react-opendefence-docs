@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "id": "d5f8444f-8849-450f-881f-93d633d4acae",
+  "slug": "nimea-puhelimet-vzIe9142oV",
+  "collection": "deploy-app",
+  "locale": "fi",
+  "title": "Nimeä puhelimet",
+  "breadcrumb": [
+    "Platforms",
+    "Android",
+    "Ylläpitäjäohjeet",
+    "Käyttäjien tuominen MDM:llä",
+    "Nimeä puhelimet"
+  ],
+  "createdAt": "2026-11-22T22:02:21.397Z",
+  "updatedAt": "2026-11-22T22:23:07.810Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/deploy-app/name-phones-0Fh4ZTpcJs",
+    "fi": "/fi/deploy-app/nimea-puhelimet-vzIe9142oV",
+    "sv": "/sv/deploy-app/namnge-telefoner-Szm4GfJooc"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Tarkista, että liittyminen on auki",
+          "layout": "image-bottom",
+          "html": "<p>Ylin rivi kertoo, mihin asti Deploy App ottaa puhelimia vastaan. Punainen tarkoittaa suljettua: paina <strong>Open Deploy App ↗</strong> ja siellä <strong>Avaa 2 tunniksi</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/c15ec504840db66f.webp",
+              "width": 1860,
+              "height": 1273
+            }
+          ]
+        },
+        {
+          "title": "Anna uudet asetukset",
+          "layout": "image-bottom",
+          "html": "<p>Paina jokaisen avauksen jälkeen uudelleen <strong>Avaa MDM-liittimessä</strong>. MDM tarvitsee uuden haasteen, ennen kuin puhelimet pyytävät varmennettaan.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/03c67d4732bce7b3.webp",
+              "width": 1860,
+              "height": 1120
+            }
+          ]
+        },
+        {
+          "title": "Ota ne käyttöön",
+          "layout": "image-bottom",
+          "html": "<p>Uusi välilehti kysyy ensin. Paina <strong>Use the new settings</strong>, niin MDM saa uuden haasteen.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/81d4e75338d27c75.webp",
+              "width": 1052,
+              "height": 816
+            }
+          ]
+        },
+        {
+          "title": "Katso, ketkä odottavat",
+          "layout": "image-bottom",
+          "html": "<p>Tarkista, että tilassa <strong>waiting for a name</strong> olevat puhelimet ovat käsissäsi ja että kunkin <strong>Work</strong>-välilehdellä näkyvät sen sovellukset.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/ef07fe1428653d63.webp",
+              "width": 1860,
+              "height": 1273
+            }
+          ]
+        },
+        {
+          "title": "Anna kutsutunnukset",
+          "layout": "image-bottom",
+          "html": "<p>Kun yhtään puhelinta ei ole valittuna, paina <strong>Give callsigns</strong> ja kirjoita etuliite kohtaan <strong>Numbered</strong>. Jokainen nimetön puhelin saa numeron liittymisjärjestyksessä, ja esikatselu näyttää, kuka saa minkä.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/e2591fa96b5b7039.webp",
+              "width": 1860,
+              "height": 1273
+            }
+          ]
+        },
+        {
+          "title": "Tai käytä omaa luetteloasi",
+          "layout": "image-bottom",
+          "html": "<p>Valitse <strong>From a list</strong> ja kirjoita yksi kutsutunnus riville. <strong>Keep the rest of the list for next time</strong> säilyttää yli jääneet kutsutunnukset.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/f6c2eb7c171c38b5.webp",
+              "width": 1860,
+              "height": 1273
+            }
+          ]
+        },
+        {
+          "title": "Kutsutunnuksen säännöt",
+          "layout": "image-bottom",
+          "html": "<p>Käytä 3–32 kirjainta, numeroa tai yhdysmerkkiä, ei yhdysmerkkiä alkuun eikä loppuun; painike odottaa, kunnes jokainen rivi kelpaa. Kutsutunnusta ei anneta kahdesti: suurenna kohtaa <strong>First number</strong>, jos suurempia numeroita on käytetty aiemmin.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/8d97bfc85e49d8e3.webp",
+              "width": 1860,
+              "height": 1478
+            }
+          ]
+        },
+        {
+          "title": "Nimeä ne",
+          "layout": "image-bottom",
+          "html": "<p>Paina <strong>Name 6 phones</strong>. MDM pyytää jokaiselta puhelimelta sen varmennetta; Fleetin kanssa puhelin vastaa noin 15 minuutin kuluessa.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/dc8299550d3505a4.webp",
+              "width": 1860,
+              "height": 1273
+            }
+          ]
+        },
+        {
+          "title": "Odota, kunnes kaikki ovat valmiita",
+          "layout": "image-bottom",
+          "html": "<p>Taulukon yllä oleva luku kertoo, kuinka moni on tilassa <strong>ready</strong>. Taulukko päivittyy itsestään minuutin välein.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/cc5c6c508f64837c.webp",
+              "width": 1860,
+              "height": 1273
+            }
+          ]
+        },
+        {
+          "title": "Sulje liittyminen",
+          "layout": "image-bottom",
+          "html": "<p>Jokainen puhelin näkyy myös Deploy Appin MDM-sivulla kutsutunnuksellaan. Kun kaikki ovat mukana, paina <strong>Sulje</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/29993e3253a257c1.webp",
+              "width": 1860,
+              "height": 1500
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
