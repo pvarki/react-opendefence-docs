@@ -13,7 +13,7 @@
     "Enrol phones"
   ],
   "createdAt": "2026-10-29T10:35:51.931Z",
-  "updatedAt": "2026-11-21T16:52:06.884Z",
+  "updatedAt": "2026-11-21T23:25:23.296Z",
   "headings": [],
   "blocks": [
     {
@@ -21,86 +21,38 @@
       "source": "canonical",
       "slides": [
         {
-          "title": "Get the enrolment link",
+          "title": "Phones enrol in your MDM",
           "layout": "image-bottom",
-          "html": "<p>In Fleet, open your Deploy App team, then <strong>Add hosts</strong>, <strong>Android</strong> and keep <strong>Personal (BYOD)</strong>. Copy the link and send it to the phones.</p>",
+          "html": "<p>Phones enrol in your MDM as they always do, into the group for this Deploy App. With Fleet, see <strong>Add phones in Fleet</strong> in <strong>MDM: Fleet</strong>.</p>",
           "images": [
             {
-              "src": "/content/images/en/attachments/be65720cb87b22b7.webp",
-              "width": 2128,
-              "height": 1326
-            }
-          ]
-        },
-        {
-          "title": "Open the link on the phone",
-          "layout": "image-bottom",
-          "html": "<p>Open the link and tap <strong>Enroll</strong>.</p>",
-          "images": [
-            {
-              "src": "/content/images/en/attachments/13980932ec6c3a74.webp",
-              "width": 912,
-              "height": 1804
-            }
-          ]
-        },
-        {
-          "title": "Set up the work profile",
-          "layout": "image-bottom",
-          "html": "<p>Tap <strong>Next</strong>, and <strong>Continue</strong> if asked.</p>",
-          "images": [
-            {
-              "src": "/content/images/en/attachments/e7f89bb3db7e6a4b.webp",
-              "width": 912,
-              "height": 1804
-            }
-          ]
-        },
-        {
-          "title": "Accept",
-          "layout": "image-bottom",
-          "html": "<p>Tap <strong>Accept &#x26; continue</strong>, then <strong>Next</strong> if asked.</p>",
-          "images": [
-            {
-              "src": "/content/images/en/attachments/e0d676c54c6c7569.webp",
-              "width": 912,
-              "height": 1804
-            }
-          ]
-        },
-        {
-          "title": "Done",
-          "layout": "image-bottom",
-          "html": "<p>Tap <strong>Done</strong>. Within a few minutes the apps appear in the phone's <strong>Work</strong> tab.</p>",
-          "images": [
-            {
-              "src": "/content/images/en/attachments/6ff5b74a5a7be991.webp",
-              "width": 912,
-              "height": 1804
-            }
-          ]
-        },
-        {
-          "title": "Phones already in Fleet",
-          "layout": "image-bottom",
-          "html": "<p>Enrolled in another team (Fleet may call a team a fleet)? Tick the phones, choose <strong>Transfer</strong> and pick your Deploy App team. For this team's apps too, remove the work profile and enrol the phone again with this team's link.</p>",
-          "images": [
-            {
-              "src": "/content/images/en/attachments/80b224e7ffe15bee.webp",
-              "width": 2128,
-              "height": 1210
+              "src": "/content/images/en/attachments/53710a2f46b0af45.webp",
+              "width": 1800,
+              "height": 1000
             }
           ]
         },
         {
           "title": "Watch them arrive",
           "layout": "image-bottom",
-          "html": "<p>The connector lists each phone within a minute of its enrolling, soon as <strong>waiting for a name</strong>. Name the phones once every phone shows its apps.</p>",
+          "html": "<p>The connector lists each phone within a minute of its enrolling, soon as <strong>waiting for a name</strong>.</p>",
           "images": [
             {
-              "src": "/content/images/en/attachments/3bc1f13c2bfc91f1.webp",
+              "src": "/content/images/en/attachments/85c6549c4adbb79d.webp",
               "width": 1860,
               "height": 1273
+            }
+          ]
+        },
+        {
+          "title": "Wait for the apps",
+          "layout": "image-bottom",
+          "html": "<p>Name the phones once every phone shows its apps in its <strong>Work</strong> tab: see <strong>Name phones</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/84840932117af60e.webp",
+              "width": 912,
+              "height": 1804
             }
           ]
         }
