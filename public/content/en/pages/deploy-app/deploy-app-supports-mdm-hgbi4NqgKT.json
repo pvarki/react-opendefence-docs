@@ -13,7 +13,7 @@
     "Deploy App supports MDM"
   ],
   "createdAt": "2026-11-20T19:34:58.782Z",
-  "updatedAt": "2026-11-21T16:20:34.985Z",
+  "updatedAt": "2026-11-22T00:12:53.458Z",
   "headings": [],
   "blocks": [
     {
@@ -47,10 +47,10 @@
         {
           "title": "With MDM, a whole batch",
           "layout": "image-bottom",
-          "html": "<p>You set it up once. Every phone you enrol gets its apps and the <strong>Deploy App</strong> icon by itself, and its certificate once you name it. Nobody types an invite code.</p>",
+          "html": "<p>Set it up once, and every phone you enrol gets its apps and the <strong>Deploy App</strong> icon by itself, and its certificate once you name it. Nobody types an invite code.</p>",
           "images": [
             {
-              "src": "/content/images/en/attachments/bb05fb6c668edb7f.webp",
+              "src": "/content/images/en/attachments/65ed7199a6a02d27.webp",
               "width": 1800,
               "height": 1000
             }
@@ -74,7 +74,7 @@
           "html": "<p>Your MDM sets up the phone. Deploy App gives it an identity: a certificate in its callsign.</p>",
           "images": [
             {
-              "src": "/content/images/en/attachments/5ce3d105e10b06f3.webp",
+              "src": "/content/images/en/attachments/6da2b1cbc253ffcd.webp",
               "width": 1800,
               "height": 1000
             }
@@ -95,10 +95,10 @@
         {
           "title": "Enrol first, name after",
           "layout": "image-bottom",
-          "html": "<p>Phones enrol in any number and any order. Once they all have their apps, name them all at once: each then gets its certificate.</p>",
+          "html": "<p>Phones enrol in any number and any order. Once they all have their apps, name them at once: each then gets its certificate.</p>",
           "images": [
             {
-              "src": "/content/images/en/attachments/a5345a669422be50.webp",
+              "src": "/content/images/en/attachments/374fa33deb37b30b.webp",
               "width": 1800,
               "height": 1000
             }
@@ -107,7 +107,7 @@
         {
           "title": "You decide when",
           "layout": "image-bottom",
-          "html": "<p>Deploy App issues certificates only while you keep enrolment open, at most 2 hours. Phones can join Fleet at any time. Every opening makes a new challenge: a password your MDM needs.</p>",
+          "html": "<p>Phones can join your MDM at any time, but Deploy App issues certificates only while enrolment is open, at most 2 hours. Every opening makes a new challenge: a password your MDM needs.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/5857b63e858095f3.webp",
@@ -117,12 +117,24 @@
           ]
         },
         {
-          "title": "Who does what",
+          "title": "What your MDM must do",
           "layout": "image-bottom",
-          "html": "<p>The Deploy App admin opens enrolment. The MDM operator enrols the phones in Fleet and names them with the connector.</p>",
+          "html": "<p>Your MDM must be able to do these five things. <strong>Using another MDM</strong> shows each one.</p>",
           "images": [
             {
-              "src": "/content/images/en/attachments/f88173ae0f4145a6.webp",
+              "src": "/content/images/en/attachments/d80c89855a1ccd70.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Fleet works as it comes",
+          "layout": "image-bottom",
+          "html": "<p>Fleet (FleetDM) is one MDM, and the one that works as it comes: the <strong>ODMDM connector</strong> sets it up for you. Another MDM needs a plugin for the connector, none yet, or its settings made by hand.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/0cbb9770b257bce2.webp",
               "width": 1800,
               "height": 1000
             }
@@ -131,22 +143,10 @@
         {
           "title": "What you need",
           "layout": "image-bottom",
-          "html": "<p>Fleet (FleetDM) with Android Enterprise, and a team in it for the phones. Ask your Fleet admin whether Android is turned on in Fleet. The <strong>ODMDM connector</strong> is optional.</p>",
+          "html": "<p>An MDM with Android Enterprise turned on (ask whoever runs it), and a group in it for this Deploy App's phones. The <strong>ODMDM connector</strong> is optional: without it, see <strong>Without the connector</strong> in <strong>Connect your MDM</strong>.</p>",
           "images": [
             {
-              "src": "/content/images/en/attachments/2e1c3b859069b907.webp",
-              "width": 1800,
-              "height": 1000
-            }
-          ]
-        },
-        {
-          "title": "One Fleet for each Deploy App",
-          "layout": "image-bottom",
-          "html": "<p>With the connector, one Fleet serves one Deploy App. A second Deploy App needs a Fleet of its own.</p>",
-          "images": [
-            {
-              "src": "/content/images/en/attachments/67172ded87650436.webp",
+              "src": "/content/images/en/attachments/8e754f1d885e8723.webp",
               "width": 1800,
               "height": 1000
             }
@@ -155,7 +155,7 @@
         {
           "title": "Your route",
           "layout": "image-bottom",
-          "html": "<p>With Fleet and the connector, read <strong>Install the connector</strong>, <strong>Connect your MDM</strong>, <strong>Enrol phones</strong>, <strong>Name phones</strong> and <strong>First start on the phone</strong>. The rest is for when you need it.</p>",
+          "html": "<p>Install the connector, connect your MDM, enrol the phones, name them and start them. With Fleet, first check <strong>What Fleet needs</strong> in <strong>Set Fleet up for Deploy App</strong>; with another MDM, start at <strong>Using another MDM</strong>.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/f11f7e7eda3d8b1f.webp",
