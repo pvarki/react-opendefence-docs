@@ -64,6 +64,96 @@
           "id": "atkomst-till-externa-tjanster-j1mymYziCz",
           "label": "Åtkomst till externa tjänster",
           "slug": "atkomst-till-externa-tjanster-j1mymYziCz"
+        },
+        {
+          "type": "doc",
+          "id": "deploy-app-stoder-mdm-4ZstBxkyd8",
+          "label": "Deploy App stöder MDM",
+          "slug": "deploy-app-stoder-mdm-4ZstBxkyd8"
+        },
+        {
+          "type": "doc",
+          "id": "installera-anslutaren-3aFYZgX1LK",
+          "label": "Installera anslutaren",
+          "slug": "installera-anslutaren-3aFYZgX1LK"
+        },
+        {
+          "type": "doc",
+          "id": "koppla-din-mdm-o32bkyreTb",
+          "label": "Koppla din MDM",
+          "slug": "koppla-din-mdm-o32bkyreTb"
+        },
+        {
+          "type": "doc",
+          "id": "anslut-telefoner-taCwggfyD7",
+          "label": "Anslut telefoner",
+          "slug": "anslut-telefoner-taCwggfyD7"
+        },
+        {
+          "type": "doc",
+          "id": "namnge-telefoner-Szm4GfJooc",
+          "label": "Namnge telefoner",
+          "slug": "namnge-telefoner-Szm4GfJooc"
+        },
+        {
+          "type": "doc",
+          "id": "forsta-starten-pa-telefonen-MrU1UzNYI2",
+          "label": "Första starten på telefonen",
+          "slug": "forsta-starten-pa-telefonen-MrU1UzNYI2"
+        },
+        {
+          "type": "doc",
+          "id": "nar-en-telefon-inte-kommer-fram-kuLFushpb9",
+          "label": "När en telefon inte kommer fram",
+          "slug": "nar-en-telefon-inte-kommer-fram-kuLFushpb9"
+        },
+        {
+          "type": "doc",
+          "id": "efter-den-forsta-omgangen-lzMVPz857A",
+          "label": "Efter den första omgången",
+          "slug": "efter-den-forsta-omgangen-lzMVPz857A"
+        },
+        {
+          "type": "doc",
+          "id": "installera-anslutaren-fran-en-terminal-DTEI1XK0FM",
+          "label": "Installera anslutaren från en terminal",
+          "slug": "installera-anslutaren-fran-en-terminal-DTEI1XK0FM"
+        },
+        {
+          "type": "doc",
+          "id": "fran-kommandoraden-xFyiTHblin",
+          "label": "Från kommandoraden",
+          "slug": "fran-kommandoraden-xFyiTHblin"
+        },
+        {
+          "type": "doc",
+          "id": "anvanda-en-annan-mdm-hnnCqf9hTL",
+          "label": "Använda en annan MDM",
+          "slug": "anvanda-en-annan-mdm-hnnCqf9hTL"
+        },
+        {
+          "type": "doc",
+          "id": "stall-in-fleet-for-deploy-app-8QfR6PSGC7",
+          "label": "Ställ in Fleet för Deploy App",
+          "slug": "stall-in-fleet-for-deploy-app-8QfR6PSGC7"
+        },
+        {
+          "type": "doc",
+          "id": "lagg-till-telefoner-i-fleet-5qOyo9hK23",
+          "label": "Lägg till telefoner i Fleet",
+          "slug": "lagg-till-telefoner-i-fleet-5qOyo9hK23"
+        },
+        {
+          "type": "doc",
+          "id": "stall-in-fleet-utan-anslutaren-ACj14KNsa3",
+          "label": "Ställ in Fleet utan anslutaren",
+          "slug": "stall-in-fleet-utan-anslutaren-ACj14KNsa3"
+        },
+        {
+          "type": "doc",
+          "id": "namnge-telefoner-i-fleet-utan-anslutaren-qSBu1CRt27",
+          "label": "Namnge telefoner i Fleet utan anslutaren",
+          "slug": "namnge-telefoner-i-fleet-utan-anslutaren-qSBu1CRt27"
         }
       ]
     },
