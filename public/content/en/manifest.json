@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "locale": "en",
-  "generatedAt": "2026-11-22T02:22:20.362Z",
+  "generatedAt": "2026-11-22T16:15:14.875Z",
   "collections": [
     {
       "slug": "deploy-app",
@@ -425,7 +425,7 @@
         "Install the connector"
       ],
       "path": "/content/en/pages/deploy-app/install-the-connector-Fi93BT5Ntd.json",
-      "updatedAt": "2026-11-22T02:19:22.211Z",
+      "updatedAt": "2026-11-22T15:34:07.635Z",
       "order": 9,
       "platform": "android",
       "clientId": "android-MENReFAfCN",
@@ -445,7 +445,7 @@
         "Connect your MDM"
       ],
       "path": "/content/en/pages/deploy-app/connect-your-mdm-CqNOaahyKB.json",
-      "updatedAt": "2026-11-22T01:37:55.535Z",
+      "updatedAt": "2026-11-22T16:12:00.685Z",
       "order": 10,
       "platform": "android",
       "clientId": "android-MENReFAfCN",
@@ -525,7 +525,7 @@
         "When a phone does not arrive"
       ],
       "path": "/content/en/pages/deploy-app/when-a-phone-does-not-arrive-f3b9RaRVoP.json",
-      "updatedAt": "2026-11-21T23:55:38.752Z",
+      "updatedAt": "2026-11-22T16:13:02.000Z",
       "order": 14,
       "platform": "android",
       "clientId": "android-MENReFAfCN",
@@ -545,7 +545,7 @@
         "After the first batch"
       ],
       "path": "/content/en/pages/deploy-app/after-the-first-batch-cOk5iBzJoS.json",
-      "updatedAt": "2026-11-22T01:38:49.116Z",
+      "updatedAt": "2026-11-22T16:12:10.351Z",
       "order": 15,
       "platform": "android",
       "clientId": "android-MENReFAfCN",
@@ -585,7 +585,7 @@
         "From the command line"
       ],
       "path": "/content/en/pages/deploy-app/from-the-command-line-Fs7VvuiDAo.json",
-      "updatedAt": "2026-11-22T01:59:00.955Z",
+      "updatedAt": "2026-11-22T16:13:08.579Z",
       "order": 17,
       "platform": "android",
       "clientId": "android-MENReFAfCN",
@@ -625,7 +625,7 @@
         "Set Fleet up for Deploy App"
       ],
       "path": "/content/en/pages/deploy-app/set-fleet-up-for-deploy-app-Prkasq85P6.json",
-      "updatedAt": "2026-11-22T00:13:02.005Z",
+      "updatedAt": "2026-11-22T15:36:07.147Z",
       "order": 19,
       "platform": "android",
       "clientId": "android-MENReFAfCN",
