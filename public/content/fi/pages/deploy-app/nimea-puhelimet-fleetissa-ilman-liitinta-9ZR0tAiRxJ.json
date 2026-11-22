@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "id": "bab25218-ca4f-4981-8034-997b96c8b052",
+  "slug": "nimea-puhelimet-fleetissa-ilman-liitinta-9ZR0tAiRxJ",
+  "collection": "deploy-app",
+  "locale": "fi",
+  "title": "Nimeä puhelimet Fleetissä ilman liitintä",
+  "breadcrumb": [
+    "Platforms",
+    "Android",
+    "Ylläpitäjäohjeet",
+    "MDM: Fleet",
+    "Nimeä puhelimet Fleetissä ilman liitintä"
+  ],
+  "createdAt": "2026-11-22T22:05:32.542Z",
+  "updatedAt": "2026-11-22T22:29:15.863Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/deploy-app/name-phones-in-fleet-without-the-connector-S69TrSf5OW",
+    "fi": "/fi/deploy-app/nimea-puhelimet-fleetissa-ilman-liitinta-9ZR0tAiRxJ",
+    "sv": "/sv/deploy-app/namnge-telefoner-i-fleet-utan-anslutaren-qSBu1CRt27"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Mihin nämä diat ovat",
+          "layout": "image-bottom",
+          "html": "<p>Näillä dioilla puhelimet nimetään Fleetin konsolissa käsin, kun liitintä ei voi käyttää. Siihen tarvitaan teknistä henkilöstöä, ja se tehdään puhelin kerrallaan.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/0ae4a794a2bda108.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Avaa liittyminen",
+          "layout": "image-bottom",
+          "html": "<p>Avaa Deploy Appissa <strong>Käyttäjien hallinta</strong> ja sitten <strong>MDM</strong>, ja paina <strong>Avaa 2 tunniksi</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/9aceb503da2c83cc.webp",
+              "width": 1860,
+              "height": 884
+            }
+          ]
+        },
+        {
+          "title": "Kopioi haaste",
+          "layout": "image-bottom",
+          "html": "<p>Paina kopiointimerkkiä kohdan <strong>Haaste</strong> vieressä. Haaste on uusi jokaisella avauksella, joten MDM tarvitsee sen joka kerta.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/0aa060a47a5d5c88.webp",
+              "width": 1860,
+              "height": 1120
+            }
+          ]
+        },
+        {
+          "title": "Anna haaste Fleetille",
+          "layout": "image-bottom",
+          "html": "<p>Fleetissä: <strong>Settings</strong>, <strong>Integrations</strong>, <strong>Certificate enrollment</strong>. Muokkaa Deploy Appisi myöntäjää, liitä haaste ja paina <strong>Save</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/bbabdb48fd4be54d.webp",
+              "width": 1860,
+              "height": 1368
+            }
+          ]
+        },
+        {
+          "title": "Nimeä puhelin",
+          "layout": "image-bottom",
+          "html": "<p>Avaa puhelin Fleetissä, valitse <strong>Edit user</strong>, kirjoita sen kutsutunnus ja paina <strong>Save</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/864752cd63281309.webp",
+              "width": 2128,
+              "height": 1150
+            }
+          ]
+        },
+        {
+          "title": "Lähetä sen varmenne",
+          "layout": "image-bottom",
+          "html": "<p>Avaa samalla sivulla <strong>OS settings</strong> ja valitse <strong>Resend</strong> rivillä <strong>rmscep</strong>: pelkkä nimeäminen ei lähetä mitään.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/f02b4ebe7e64ac97.webp",
+              "width": 1820,
+              "height": 634
+            }
+          ]
+        },
+        {
+          "title": "Lähetä käytäntö uudelleen",
+          "layout": "image-bottom",
+          "html": "<p>Kun jokaisella puhelimella on sovelluksensa, poista käytäntö kohdasta <strong>Controls</strong>, <strong>OS settings</strong>, <strong>Configuration profiles</strong> ja lisää se uudelleen, jotta Chrome saa käyttää varmennetta. Paina sitten Deploy Appissa <strong>Sulje</strong> ja katso <strong>Ensimmäinen käynnistys puhelimessa</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/11dfb2b661af7839.webp",
+              "width": 1920,
+              "height": 751
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
