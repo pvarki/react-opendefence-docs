@@ -13,7 +13,7 @@
     "Connect your MDM"
   ],
   "createdAt": "2026-10-29T10:35:43.762Z",
-  "updatedAt": "2026-11-21T23:54:40.006Z",
+  "updatedAt": "2026-11-22T01:37:55.535Z",
   "headings": [],
   "blocks": [
     {
@@ -38,7 +38,7 @@
           "html": "<p>On the same computer and in the same browser, sign in to Deploy App as an admin. Open <strong>User Management</strong>, then <strong>MDM</strong>.</p>",
           "images": [
             {
-              "src": "/content/images/en/attachments/d6fa2035506a133c.webp",
+              "src": "/content/images/en/attachments/01b8a91d60440fc4.webp",
               "width": 1860,
               "height": 856
             }
@@ -50,9 +50,9 @@
           "html": "<p>Press <strong>Open for 2 hours</strong>. Every opening makes a new challenge, which your MDM needs.</p>",
           "images": [
             {
-              "src": "/content/images/en/attachments/2f1b71141c8c41e9.webp",
+              "src": "/content/images/en/attachments/da96e1bc702c9eef.webp",
               "width": 1860,
-              "height": 789
+              "height": 889
             }
           ]
         },
@@ -62,9 +62,9 @@
           "html": "<p>Press <strong>Open in the MDM connector</strong>. It opens the connector in a new tab, with this opening's settings.</p>",
           "images": [
             {
-              "src": "/content/images/en/attachments/a71ddd98520695cd.webp",
+              "src": "/content/images/en/attachments/f75878c3643e9872.webp",
               "width": 1860,
-              "height": 1025
+              "height": 1125
             }
           ]
         },
@@ -74,9 +74,9 @@
           "html": "<p>Check that the connector is running and that Deploy App is open in the same browser. Or press <strong>Copy settings</strong> and paste the line on the connector's first card.</p>",
           "images": [
             {
-              "src": "/content/images/en/attachments/965b36ff825d568f.webp",
+              "src": "/content/images/en/attachments/995b78b324597037.webp",
               "width": 1860,
-              "height": 1025
+              "height": 1125
             }
           ]
         },
