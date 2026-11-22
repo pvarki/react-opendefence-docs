@@ -13,7 +13,7 @@
     "After the first batch"
   ],
   "createdAt": "2026-11-21T08:07:42.947Z",
-  "updatedAt": "2026-11-22T01:38:49.116Z",
+  "updatedAt": "2026-11-22T16:12:10.351Z",
   "headings": [],
   "blocks": [
     {
@@ -38,9 +38,9 @@
           "html": "<p>Without <strong>Remember on this computer</strong>, the connector asks for the token at every start. Paste it and press <strong>Connect</strong>.</p>",
           "images": [
             {
-              "src": "/content/images/en/attachments/cb265f2dc0aa3d03.webp",
+              "src": "/content/images/en/attachments/96c6ed0fc7ec2ff1.webp",
               "width": 1052,
-              "height": 974
+              "height": 1002
             }
           ]
         },
@@ -134,7 +134,7 @@
           "html": "<p>With Fleet, press <strong>Settings</strong>, then <strong>Change the Fleet settings</strong>. <strong>Settings</strong> also shows where the connector's log is.</p>",
           "images": [
             {
-              "src": "/content/images/en/attachments/2949760b9074a578.webp",
+              "src": "/content/images/en/attachments/83859f0d42041828.webp",
               "width": 1860,
               "height": 1273
             }
@@ -146,9 +146,9 @@
           "html": "<p>Press <strong>Next</strong> on <strong>Fleet address</strong>, paste the new token on <strong>API token</strong>, press <strong>Next</strong> and then <strong>Connect</strong>.</p>",
           "images": [
             {
-              "src": "/content/images/en/attachments/487913875a105644.webp",
+              "src": "/content/images/en/attachments/0636992548910499.webp",
               "width": 1052,
-              "height": 965
+              "height": 992
             }
           ]
         },
@@ -158,9 +158,9 @@
           "html": "<p>A kept token works only with the settings it was kept for. After changing Fleet's address or the team, type the token again.</p>",
           "images": [
             {
-              "src": "/content/images/en/attachments/1e1ff9c46e4239e9.webp",
+              "src": "/content/images/en/attachments/a75588f695772c42.webp",
               "width": 1052,
-              "height": 1041
+              "height": 1069
             }
           ]
         },
