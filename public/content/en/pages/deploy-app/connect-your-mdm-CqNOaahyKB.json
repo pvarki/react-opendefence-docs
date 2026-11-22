@@ -13,7 +13,7 @@
     "Connect your MDM"
   ],
   "createdAt": "2026-10-29T10:35:43.762Z",
-  "updatedAt": "2026-11-21T19:09:31.341Z",
+  "updatedAt": "2026-11-21T23:54:40.006Z",
   "headings": [],
   "blocks": [
     {
@@ -33,38 +33,14 @@
           ]
         },
         {
-          "title": "Not the Deploy App admin?",
-          "layout": "image-bottom",
-          "html": "<p>Not the Deploy App admin? Ask the admin to open enrolment, press <strong>Copy settings</strong> and send you the line by a way you both trust.</p>",
-          "images": [
-            {
-              "src": "/content/images/en/attachments/c22f7334fe7512db.webp",
-              "width": 1860,
-              "height": 1025
-            }
-          ]
-        },
-        {
-          "title": "Paste the line",
-          "layout": "image-bottom",
-          "html": "<p>Paste the line under <strong>Paste its settings line:</strong> and press <strong>Continue</strong>. Then skip to <strong>Add your Deploy App</strong>.</p>",
-          "images": [
-            {
-              "src": "/content/images/en/attachments/c280a03b4b45918c.webp",
-              "width": 1052,
-              "height": 1232
-            }
-          ]
-        },
-        {
           "title": "Open the MDM page",
           "layout": "image-bottom",
-          "html": "<p>Are you the admin? On the same computer and in the same browser, sign in to Deploy App. Open <strong>User Management</strong>, then <strong>MDM</strong>.</p>",
+          "html": "<p>On the same computer and in the same browser, sign in to Deploy App as an admin. Open <strong>User Management</strong>, then <strong>MDM</strong>.</p>",
           "images": [
             {
-              "src": "/content/images/en/attachments/23da86916d511ee9.webp",
+              "src": "/content/images/en/attachments/d6fa2035506a133c.webp",
               "width": 1860,
-              "height": 862
+              "height": 856
             }
           ]
         },
@@ -74,7 +50,7 @@
           "html": "<p>Press <strong>Open for 2 hours</strong>. Every opening makes a new challenge, which your MDM needs.</p>",
           "images": [
             {
-              "src": "/content/images/en/attachments/a96290c1e7fd71ce.webp",
+              "src": "/content/images/en/attachments/2f1b71141c8c41e9.webp",
               "width": 1860,
               "height": 789
             }
@@ -86,7 +62,19 @@
           "html": "<p>Press <strong>Open in the MDM connector</strong>. It opens the connector in a new tab, with this opening's settings.</p>",
           "images": [
             {
-              "src": "/content/images/en/attachments/dbcde2c78c2970b2.webp",
+              "src": "/content/images/en/attachments/a71ddd98520695cd.webp",
+              "width": 1860,
+              "height": 1025
+            }
+          ]
+        },
+        {
+          "title": "No new tab?",
+          "layout": "image-bottom",
+          "html": "<p>Check that the connector is running and that Deploy App is open in the same browser. Or press <strong>Copy settings</strong> and paste the line on the connector's first card.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/965b36ff825d568f.webp",
               "width": 1860,
               "height": 1025
             }
@@ -95,70 +83,34 @@
         {
           "title": "Add your Deploy App",
           "layout": "image-bottom",
-          "html": "<p>Check that the name is your Deploy App's, then press <strong>Add unit.example.fi</strong>. Any web page can open the connector, so add only the one you expect.</p>",
+          "html": "<p>Check that the name is your Deploy App's, then press <strong>Add golden-monkey.example.fi</strong>. Any web page can open the connector, so add only the one you expect.</p>",
           "images": [
             {
-              "src": "/content/images/en/attachments/ed07801cd0ebaa2f.webp",
+              "src": "/content/images/en/attachments/8ba3acd99713a0df.webp",
               "width": 1052,
-              "height": 848
+              "height": 881
             }
           ]
         },
         {
-          "title": "Get a token from Fleet",
+          "title": "What your MDM needs",
           "layout": "image-bottom",
-          "html": "<p>The connector needs an API token from Fleet. Ask whoever runs your Fleet for the API token of an API-only user who is a global admin: one from <strong>My account</strong> ends after some days.</p>",
+          "html": "<p>The connector now asks what your MDM needs. With Fleet, see <strong>Set Fleet up for Deploy App</strong> in <strong>MDM: Fleet</strong>.</p>",
           "images": [
             {
-              "src": "/content/images/en/attachments/81354fe939d39614.webp",
+              "src": "/content/images/en/attachments/8f9c13e73651785e.webp",
               "width": 1800,
               "height": 1000
             }
           ]
         },
         {
-          "title": "Fleet's address",
+          "title": "It sets your MDM up",
           "layout": "image-bottom",
-          "html": "<p>Type the address you open Fleet at, and press <strong>Next</strong>.</p>",
+          "html": "<p>After <strong>Connect</strong>, the connector sets your MDM up, which can take a minute or two. Each step is ticked when it is done.</p>",
           "images": [
             {
-              "src": "/content/images/en/attachments/b17744bf4e05dd67.webp",
-              "width": 1052,
-              "height": 888
-            }
-          ]
-        },
-        {
-          "title": "The token",
-          "layout": "image-bottom",
-          "html": "<p>Paste the token and press <strong>Next</strong>. With <strong>Remember on this computer</strong> ticked, the keychain keeps it for the next start.</p>",
-          "images": [
-            {
-              "src": "/content/images/en/attachments/864ebecd7b9409de.webp",
-              "width": 1052,
-              "height": 965
-            }
-          ]
-        },
-        {
-          "title": "The team",
-          "layout": "image-bottom",
-          "html": "<p>Leave <strong>Team</strong> as <code>Deploy App</code> unless you want another name: the team is made if it is not there. Press <strong>Connect</strong>.</p>",
-          "images": [
-            {
-              "src": "/content/images/en/attachments/7ec56c0955140b90.webp",
-              "width": 1052,
-              "height": 977
-            }
-          ]
-        },
-        {
-          "title": "It sets Fleet up",
-          "layout": "image-bottom",
-          "html": "<p>The connector sets your team up in Fleet: this can take a minute or two. Each step is ticked when it is done.</p>",
-          "images": [
-            {
-              "src": "/content/images/en/attachments/09abecbe83da35bc.webp",
+              "src": "/content/images/en/attachments/25434164079def7c.webp",
               "width": 1052,
               "height": 949
             }
@@ -167,10 +119,10 @@
         {
           "title": "Connected",
           "layout": "image-bottom",
-          "html": "<p>Your team in Fleet now has the certificate, the policy, the apps and the <strong>Deploy App</strong> icon. Press <strong>Show the phones</strong>.</p>",
+          "html": "<p>Your MDM's group for this Deploy App now has the certificate, the policy, the apps and the <strong>Deploy App</strong> icon. Press <strong>Show the phones</strong>.</p>",
           "images": [
             {
-              "src": "/content/images/en/attachments/f6b358ffd18dfe05.webp",
+              "src": "/content/images/en/attachments/d1962bfd7d2f1116.webp",
               "width": 1052,
               "height": 949
             }
@@ -179,10 +131,10 @@
         {
           "title": "Ready for phones",
           "layout": "image-bottom",
-          "html": "<p>The page lists the team's phones: none yet. Leave it open and enrol the phones.</p>",
+          "html": "<p>The page lists this Deploy App's phones: none yet. Leave it open and enrol the phones.</p>",
           "images": [
             {
-              "src": "/content/images/en/attachments/828eeeb687131a52.webp",
+              "src": "/content/images/en/attachments/afb67a1cd0952c42.webp",
               "width": 1860,
               "height": 1273
             }
@@ -191,10 +143,10 @@
         {
           "title": "Without the connector",
           "layout": "image-bottom",
-          "html": "<p>No connector? Technical staff can set most of this up in Fleet by hand: see <strong>Connect your MDM without the connector</strong>.</p>",
+          "html": "<p>Without the connector, technical staff can set most of this up in your MDM by hand. With Fleet, see <strong>Set Fleet up without the connector</strong> in <strong>MDM: Fleet</strong>.</p>",
           "images": [
             {
-              "src": "/content/images/en/attachments/dc45d0077c03aac8.webp",
+              "src": "/content/images/en/attachments/4dc0b07e26be8996.webp",
               "width": 1800,
               "height": 1000
             }
