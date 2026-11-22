@@ -13,7 +13,7 @@
     "When a phone does not arrive"
   ],
   "createdAt": "2026-11-20T19:35:19.388Z",
-  "updatedAt": "2026-11-21T23:55:38.752Z",
+  "updatedAt": "2026-11-22T16:13:02.000Z",
   "headings": [],
   "blocks": [
     {
@@ -122,21 +122,33 @@
           "html": "<p>When your MDM no longer accepts the token, the connector asks for a new one by itself, with the MDM's reason. Paste a new token and press <strong>Connect</strong>.</p>",
           "images": [
             {
-              "src": "/content/images/en/attachments/0d4ac4d3b64c9d75.webp",
+              "src": "/content/images/en/attachments/b2c40515d9c9f80b.webp",
               "width": 1052,
-              "height": 1057
+              "height": 1086
             }
           ]
         },
         {
           "title": "Certificate Authentication Failed",
           "layout": "image-bottom",
-          "html": "<p>The phone has its certificate, but Chrome's policy for it was overwritten. Send the policy again (see <strong>From the command line</strong>, or without the connector <strong>Name phones in Fleet without the connector</strong>), then open Deploy App again.</p>",
+          "html": "<p>The phone has its certificate, but Chrome's policy for it was overwritten: send the policy again. Typed, see <strong>From the command line</strong>; without the connector, <strong>Name phones in Fleet without the connector</strong>.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/a40ba9c93e23e220.webp",
               "width": 912,
               "height": 1804
+            }
+          ]
+        },
+        {
+          "title": "Send the policy again",
+          "layout": "image-bottom",
+          "html": "<p>Press <strong>Settings</strong>, then <strong>Send the policy again</strong>, once no phone is still installing apps. Then open Deploy App again on the phone.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/f8d1aec84a0c2f47.webp",
+              "width": 1220,
+              "height": 1183
             }
           ]
         }
