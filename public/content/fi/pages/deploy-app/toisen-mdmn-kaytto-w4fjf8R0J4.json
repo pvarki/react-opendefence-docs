@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "id": "c232d3d7-bf22-45a6-94cd-371e9604ca37",
+  "slug": "toisen-mdmn-kaytto-w4fjf8R0J4",
+  "collection": "deploy-app",
+  "locale": "fi",
+  "title": "Toisen MDM:n käyttö",
+  "breadcrumb": [
+    "Platforms",
+    "Android",
+    "Ylläpitäjäohjeet",
+    "Käyttäjien tuominen MDM:llä",
+    "Toisen MDM:n käyttö"
+  ],
+  "createdAt": "2026-11-22T22:04:21.813Z",
+  "updatedAt": "2026-11-22T22:26:17.940Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/deploy-app/using-another-mdm-V3bHoMMsq3",
+    "fi": "/fi/deploy-app/toisen-mdmn-kaytto-w4fjf8R0J4",
+    "sv": "/sv/deploy-app/anvanda-en-annan-mdm-hnnCqf9hTL"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Fleet on mukana valmiina",
+          "layout": "image-bottom",
+          "html": "<p>Liitin toimii Fleetin kanssa sellaisenaan. Toinen MDM tarvitsee lisäosan, pienen lisäohjelman, joka puhuu kyseiselle MDM:lle, eikä sellaista vielä ole.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/b6cb8be03b237224.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Mitä MDM:n on osattava",
+          "layout": "image-bottom",
+          "html": "<p>MDM sopii, jos se osaa nämä viisi asiaa. Kysy MDM:n toimittajalta tai kokeile niitä sen hallintakonsolissa.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/c0bfe3a26b4339bc.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Oma ryhmä",
+          "layout": "image-bottom",
+          "html": "<p>Yhden Deploy Appin puhelimet liitetään yhteen ryhmään, joka on nimetty ympäristösi mukaan, esimerkiksi <code>golden-monkey DeployApp</code>, ja jolla on oma liittymislinkkinsä.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/70486791b3871c67.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Yksi haaste kaikille puhelimille",
+          "layout": "image-bottom",
+          "html": "<p>MDM lähettää jokaisen puhelimen varmennepyynnön Deploy Appin osoitteeseen (<strong>SCEP-osoite</strong>) antamasi haasteen kanssa: sama jokaiselle puhelimelle.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/1cdc739ed253a7c4.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Nimi jokaiselle puhelimelle",
+          "layout": "image-bottom",
+          "html": "<p>Varmenteen nimi tulee kentästä, jonka voit asettaa jokaiselle puhelimelle erikseen. Se nimi on puhelimen kutsutunnus.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/a357afec8456fd25.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Joka kerta uusi haaste",
+          "layout": "image-bottom",
+          "html": "<p>Jokainen avaus tekee uuden haasteen. Jos MDM ei voi ottaa sitä liittimeltä, puhelinnäkymä näyttää sen, jotta voit kopioida sen MDM:ään, kuten tällä esittelylisäosalla.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/1547e1697a2e1b9f.webp",
+              "width": 1860,
+              "height": 1273
+            }
+          ]
+        },
+        {
+          "title": "Uudelleen pyytäminen",
+          "layout": "image-bottom",
+          "html": "<p>Nimeämisen jälkeen MDM:n on pyydettävä varmennetta uudelleen juuri siltä yhdeltä puhelimelta ja jätettävä muut rauhaan.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/4999a4648c97a54b.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Lisäosan lisääminen",
+          "layout": "image-bottom",
+          "html": "<p>Lisäosa vaatii, että liitin on asennettu päätteestä: tekninen henkilöstö lisää sen liittimen README-tiedoston asennusrivillä. Kun asennettuna on useampi kuin yksi MDM, liitin kysyy <strong>Which MDM?</strong></p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/9c231f75104bf13b.webp",
+              "width": 1052,
+              "height": 800
+            }
+          ]
+        },
+        {
+          "title": "Liitin kysyy ensin",
+          "layout": "image-bottom",
+          "html": "<p>Lisäosa näkee MDM-tunnisteesi. Kun valitset lisäosan ensimmäisen kerran, ja aina sen päivityksen jälkeen, liitin kertoo, mistä paketista se tulee, ja kysyy ennen sen käyttöä.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/d6e5dacef4b47e00.webp",
+              "width": 1052,
+              "height": 858
+            }
+          ]
+        },
+        {
+          "title": "Vaiheet käsin",
+          "layout": "image-bottom",
+          "html": "<p>Sen, mitä MDM ei voi tehdä rajapinnan kautta, liitin luettelee sinun tehtäväksesi MDM:n konsolissa. Paina sitten <strong>Show the phones</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/a73e60c59e5d142b.webp",
+              "width": 1052,
+              "height": 1019
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
