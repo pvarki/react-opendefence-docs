@@ -13,7 +13,7 @@
     "From the command line"
   ],
   "createdAt": "2026-11-21T08:08:40.072Z",
-  "updatedAt": "2026-11-21T16:23:51.416Z",
+  "updatedAt": "2026-11-21T23:27:19.445Z",
   "headings": [],
   "blocks": [
     {
@@ -35,10 +35,10 @@
         {
           "title": "Point it at Fleet",
           "layout": "image-bottom",
-          "html": "<p>Set Fleet's address, the file that holds the token and your Deploy App's name, such as <code>unit.example.fi</code>. The token is read from that plain text file, never typed on the line.</p>",
+          "html": "<p>These slides show Fleet: set its address, the token file, the team, such as <code>golden-monkey DeployApp</code>, and your Deploy App's name. The token is read from that file, never typed on the line.</p>",
           "images": [
             {
-              "src": "/content/images/en/attachments/aae558c3cbf4a2a5.webp",
+              "src": "/content/images/en/attachments/7ea27eb11ee482a4.webp",
               "width": 1400,
               "height": 1000
             }
@@ -50,7 +50,7 @@
           "html": "<p>The first time, paste the settings line into <code>ODMDM_CHALLENGE</code> as shown, run <code>odmdm-connector apply</code>, then unset it. Your team gets the certificate, the policy, the apps and the <strong>Deploy App</strong> icon.</p>",
           "images": [
             {
-              "src": "/content/images/en/attachments/a3bb4f8bc2fa72c3.webp",
+              "src": "/content/images/en/attachments/a44219bf84f0ce9f.webp",
               "width": 1400,
               "height": 1000
             }
@@ -59,7 +59,7 @@
         {
           "title": "A new opening",
           "layout": "image-bottom",
-          "html": "<p><code>odmdm-connector challenge</code> asks for the settings line you copied, without showing it, and gives Fleet the new challenge.</p>",
+          "html": "<p><code>odmdm-connector challenge</code> asks for the settings line you copied, without showing it, and gives your MDM the new challenge.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/878838dd726cfbaf.webp",
@@ -71,7 +71,7 @@
         {
           "title": "List the phones",
           "layout": "image-bottom",
-          "html": "<p><code>odmdm-connector phones</code> lists the team: each phone's number, callsign and certificate.</p>",
+          "html": "<p><code>odmdm-connector phones</code> lists the phones: each phone's number, callsign and certificate.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/ddc239b6f7e191b3.webp",
@@ -110,7 +110,7 @@
           "html": "<p><code>apply --force-policy</code> sends the policy to every phone again: the fix for <strong>Certificate Authentication Failed</strong> on a phone that has its certificate. Not while phones are still installing apps.</p>",
           "images": [
             {
-              "src": "/content/images/en/attachments/fe4286d36cd78349.webp",
+              "src": "/content/images/en/attachments/04567df2bbe048dc.webp",
               "width": 1400,
               "height": 1000
             }
