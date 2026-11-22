@@ -13,7 +13,7 @@
     "From the command line"
   ],
   "createdAt": "2026-11-21T08:08:40.072Z",
-  "updatedAt": "2026-11-22T01:59:00.955Z",
+  "updatedAt": "2026-11-22T16:13:08.579Z",
   "headings": [],
   "blocks": [
     {
@@ -35,10 +35,10 @@
         {
           "title": "Point it at Fleet",
           "layout": "image-bottom",
-          "html": "<p>These slides show Fleet: set its address, the token file, the team, such as <code>golden-monkey DeployApp</code>, and your Deploy App's name. The token is read from that file, never typed on the line.</p>",
+          "html": "<p>These slides show Fleet: set its address, the token file and your Deploy App's name, which also names the team, such as <code>golden-monkey DeployApp</code>. The token is read from that file, never typed on the line.</p>",
           "images": [
             {
-              "src": "/content/images/en/attachments/7ea27eb11ee482a4.webp",
+              "src": "/content/images/en/attachments/0d3279d77fecd317.webp",
               "width": 1400,
               "height": 1000
             }
@@ -50,7 +50,7 @@
           "html": "<p>The first time, paste the settings line into <code>ODMDM_CHALLENGE</code> as shown, run <code>odmdm-connector apply</code>, then unset it. Your team gets the certificate, the policy, the apps and the <strong>Deploy App</strong> icon.</p>",
           "images": [
             {
-              "src": "/content/images/en/attachments/a44219bf84f0ce9f.webp",
+              "src": "/content/images/en/attachments/31eb604022bf4338.webp",
               "width": 1400,
               "height": 1000
             }
@@ -110,7 +110,7 @@
           "html": "<p><code>apply --force-policy</code> sends the policy to every phone again: the fix for <strong>Certificate Authentication Failed</strong> on a phone that has its certificate. Not while phones are still installing apps.</p>",
           "images": [
             {
-              "src": "/content/images/en/attachments/04567df2bbe048dc.webp",
+              "src": "/content/images/en/attachments/afa3272453328ebd.webp",
               "width": 1400,
               "height": 1000
             }
