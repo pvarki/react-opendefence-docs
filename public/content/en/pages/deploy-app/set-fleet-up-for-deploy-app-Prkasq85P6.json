@@ -13,7 +13,7 @@
     "Set Fleet up for Deploy App"
   ],
   "createdAt": "2026-11-21T23:23:12.839Z",
-  "updatedAt": "2026-11-22T00:13:02.005Z",
+  "updatedAt": "2026-11-22T15:36:07.147Z",
   "headings": [],
   "blocks": [
     {
@@ -122,16 +122,16 @@
           "html": "<p>Paste the token and press <strong>Next</strong>. With <strong>Remember on this computer</strong> ticked, the keychain keeps it for the next start.</p>",
           "images": [
             {
-              "src": "/content/images/en/attachments/d2c3174ecc33c338.webp",
+              "src": "/content/images/en/attachments/609524e26b21f815.webp",
               "width": 1052,
-              "height": 965
+              "height": 992
             }
           ]
         },
         {
           "title": "The team",
           "layout": "image-bottom",
-          "html": "<p><strong>Team</strong> suggests <code>Deploy App</code>: type your deployment's name over it, such as <code>golden-monkey DeployApp</code>, and leave <strong>More settings</strong> as they are. Press <strong>Connect</strong>: the team is made if it is not there.</p>",
+          "html": "<p><strong>Team</strong> suggests your deployment's name with DeployApp, such as <code>golden-monkey DeployApp</code>: leave it, and leave <strong>More settings</strong> as they are. Press <strong>Connect</strong>: the team is made if it is not there.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/8dac385537c7a381.webp",
