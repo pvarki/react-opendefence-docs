@@ -13,7 +13,7 @@
     "Using another MDM"
   ],
   "createdAt": "2026-11-21T08:08:49.025Z",
-  "updatedAt": "2026-11-21T23:56:38.644Z",
+  "updatedAt": "2026-11-22T01:39:45.706Z",
   "headings": [],
   "blocks": [
     {
@@ -107,7 +107,7 @@
         {
           "title": "Adding a plugin",
           "layout": "image-bottom",
-          "html": "<p>Technical staff add a plugin with the install line in the connector's README. With more than one MDM installed, the connector asks <strong>Which MDM?</strong></p>",
+          "html": "<p>A plugin needs the connector installed from a terminal: technical staff add it with the install line in the connector's README. With more than one MDM installed, the connector asks <strong>Which MDM?</strong></p>",
           "images": [
             {
               "src": "/content/images/en/attachments/9c231f75104bf13b.webp",
