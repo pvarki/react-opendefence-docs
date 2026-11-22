@@ -13,7 +13,7 @@
     "After the first batch"
   ],
   "createdAt": "2026-11-21T08:07:42.947Z",
-  "updatedAt": "2026-11-22T16:12:10.351Z",
+  "updatedAt": "2026-11-22T21:31:54.311Z",
   "headings": [],
   "blocks": [
     {
@@ -167,7 +167,7 @@
         {
           "title": "Another Deploy App",
           "layout": "image-bottom",
-          "html": "<p>The name at the top right lists your Deploy Apps, and <strong>+ Add a Deploy App</strong> adds one. With Fleet, each needs a Fleet of its own: see <strong>One Fleet, one Deploy App</strong> in <strong>Set Fleet up for Deploy App</strong>.</p>",
+          "html": "<p>The name at the top right lists your Deploy Apps, and <strong>+ Add a Deploy App</strong> adds one. One Fleet can serve them all, each in a team of its own: see <strong>One Fleet, several Deploy Apps</strong> in <strong>Set Fleet up for Deploy App</strong>.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/f063864c2bcc7881.webp",

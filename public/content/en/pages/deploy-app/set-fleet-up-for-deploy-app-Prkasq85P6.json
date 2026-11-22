@@ -13,7 +13,7 @@
     "Set Fleet up for Deploy App"
   ],
   "createdAt": "2026-11-21T23:23:12.839Z",
-  "updatedAt": "2026-11-22T15:36:07.147Z",
+  "updatedAt": "2026-11-22T21:32:02.576Z",
   "headings": [],
   "blocks": [
     {
@@ -93,12 +93,12 @@
           ]
         },
         {
-          "title": "One Fleet, one Deploy App",
+          "title": "One Fleet, several Deploy Apps",
           "layout": "image-bottom",
-          "html": "<p>With the connector, one Fleet serves one Deploy App. A second Deploy App needs a Fleet of its own.</p>",
+          "html": "<p>One Fleet can serve several Deploy Apps: at <strong>Connect</strong> each gets a team and a certificate authority of its own. The token is a global admin's, so share a Fleet only with admins you trust with all of it.</p>",
           "images": [
             {
-              "src": "/content/images/en/attachments/fded7148f13c3d6e.webp",
+              "src": "/content/images/en/attachments/322dd331fd36e3cc.webp",
               "width": 1800,
               "height": 1000
             }
