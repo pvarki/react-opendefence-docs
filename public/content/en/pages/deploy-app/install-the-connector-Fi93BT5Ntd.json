@@ -13,7 +13,7 @@
     "Install the connector"
   ],
   "createdAt": "2026-11-21T08:05:50.369Z",
-  "updatedAt": "2026-11-21T23:53:48.927Z",
+  "updatedAt": "2026-11-22T02:19:22.211Z",
   "headings": [],
   "blocks": [
     {
@@ -33,81 +33,165 @@
           ]
         },
         {
-          "title": "Open a terminal",
+          "title": "Get it from Deploy App",
           "layout": "image-bottom",
-          "html": "<p>Installing takes a few typed lines in a terminal. On Windows, open <strong>Start</strong>, type <code>PowerShell</code> and press Enter; on a Mac, press Cmd+Space, type <code>Terminal</code> and press Enter.</p>",
+          "html": "<p>In Deploy App, as an admin, open <strong>User Management</strong>, then <strong>MDM</strong>. Press <strong>Install the ODMDM connector</strong>.</p>",
           "images": [
             {
-              "src": "/content/images/en/attachments/a8ddf3b7717ed673.webp",
+              "src": "/content/images/en/attachments/6dce91ada27a12c8.webp",
+              "width": 1860,
+              "height": 889
+            }
+          ]
+        },
+        {
+          "title": "No such button?",
+          "layout": "image-bottom",
+          "html": "<p>A Deploy App that does not offer the download has no such button. Then see <strong>Install the connector from a terminal</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/5192c3d6856b3812.webp",
               "width": 1800,
               "height": 1000
             }
           ]
         },
         {
-          "title": "Get uv and git",
+          "title": "Download it",
           "layout": "image-bottom",
-          "html": "<p>The connector installs with <strong>uv</strong>, which fetches it with <strong>git</strong>. Type your computer's lines, pressing Enter after each and accepting what the Mac offers, then open a new terminal.</p>",
+          "html": "<p>Press <strong>Download for Windows</strong>, or your system's: on an Intel Mac, choose <strong>macOS (Intel)</strong> under <strong>Other systems</strong> first. If your browser holds the download, choose to keep the file.</p>",
           "images": [
             {
-              "src": "/content/images/en/attachments/d47d3c8c20f681bf.webp",
-              "width": 1400,
-              "height": 1000
+              "src": "/content/images/en/attachments/5945c707aed3de59.webp",
+              "width": 1220,
+              "height": 1211
             }
           ]
         },
         {
-          "title": "Install it",
+          "title": "Is it the released file?",
           "layout": "image-bottom",
-          "html": "<p>Type this as one line and press Enter: <code>uv tool install git+https://github.com/pvarki/python-odmdm-fleet</code></p>",
+          "html": "<p>Before you open it: the dialog shows the file's SHA-256 and version. To be sure, download <strong>SHA256SUMS</strong> from that version's release under github.com/pvarki/python-odmdm-fleet/releases and compare your file's line.</p>",
           "images": [
             {
-              "src": "/content/images/en/attachments/2ac5e4284e554cd8.webp",
-              "width": 1400,
-              "height": 1000
-            }
-          ]
-        },
-        {
-          "title": "Start it",
-          "layout": "image-bottom",
-          "html": "<p>Type <code>odmdm-connector web</code> and press Enter: the connector's page opens in your browser. If it does not open, open the address the terminal shows.</p>",
-          "images": [
-            {
-              "src": "/content/images/en/attachments/6a4f2a5aca1be212.webp",
-              "width": 1400,
-              "height": 1000
-            }
-          ]
-        },
-        {
-          "title": "Your default browser",
-          "layout": "image-bottom",
-          "html": "<p>It opens in your default browser: use Deploy App in that same browser. Start it only once: if it says the connector may be running already, use the page you have.</p>",
-          "images": [
-            {
-              "src": "/content/images/en/attachments/129485b6349ab577.webp",
+              "src": "/content/images/en/attachments/33347b61d0fb2f58.webp",
               "width": 1800,
               "height": 1000
             }
           ]
         },
         {
-          "title": "Keep the terminal open",
+          "title": "Check the file itself",
           "layout": "image-bottom",
-          "html": "<p>The connector runs while its terminal is open, and Ctrl+C stops it. A page whose connector has stopped says so.</p>",
+          "html": "<p>Technical staff can check the downloaded file itself: in its folder, these lines print its SHA-256, which must be the dialog's; capitals do not matter. On a Mac it checks the <strong>.zip</strong>, before it is unzipped.</p>",
           "images": [
             {
-              "src": "/content/images/en/attachments/83cbeb42058ac724.webp",
+              "src": "/content/images/en/attachments/1d8c05b706d218c9.webp",
+              "width": 1400,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "On Windows",
+          "layout": "image-bottom",
+          "html": "<p>Open the downloaded file. If Windows stops it with <strong>Windows protected your PC</strong>, choose <strong>More info</strong>, then <strong>Run anyway</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/047129ada3baf050.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Windows will not run it?",
+          "layout": "image-bottom",
+          "html": "<p>If Windows offers no <strong>Run anyway</strong>, this computer does not run unsigned files. Ask whoever runs it, or use another computer.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/410cb9d9fb430562.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "On a Mac",
+          "layout": "image-bottom",
+          "html": "<p>Open <strong>odmdm-connector</strong> from your downloads; unzip it first if needed. On an Intel Mac, it is the file for <strong>macOS (Intel)</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/f0c344047d47dbcb.webp",
+              "width": 1220,
+              "height": 1250
+            }
+          ]
+        },
+        {
+          "title": "When macOS stops it",
+          "layout": "image-bottom",
+          "html": "<p>The first time, macOS stops it with a warning like this one. Press <strong>Done</strong>, not <strong>Move to Trash</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/f18722d2690ebf42.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Open Anyway",
+          "layout": "image-bottom",
+          "html": "<p>Open <strong>System Settings</strong>, <strong>Privacy &#x26; Security</strong>, scroll down and press <strong>Open Anyway</strong>, there for about an hour. Enter your login password and press <strong>OK</strong>, then <strong>Open</strong> when the warning comes back.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/79a48bc36df7abef.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "On Linux",
+          "layout": "image-bottom",
+          "html": "<p>Download the file for Linux and unpack it. Then, in its folder, run <code>./odmdm-connector</code> in a terminal.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/9c41199f72aebd7c.webp",
+              "width": 1220,
+              "height": 1172
+            }
+          ]
+        },
+        {
+          "title": "Keep its window open",
+          "layout": "image-bottom",
+          "html": "<p>The connector opens a window (on Linux, it is your terminal) and runs while it is open. If the page did not open, open the address the window shows.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/727992f26f8e44fe.webp",
+              "width": 1400,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "It opens in your browser",
+          "layout": "image-bottom",
+          "html": "<p>The connector's page opens in your default browser: use Deploy App in that same browser. The first time it asks you to add your Deploy App: see <strong>Connect your MDM</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/c280a03b4b45918c.webp",
               "width": 1052,
-              "height": 609
+              "height": 1232
             }
           ]
         },
         {
-          "title": "A new address at every start",
+          "title": "Next time",
           "layout": "image-bottom",
-          "html": "<p>Every start makes a new address, and a page left open from before asks for it. Start the connector again and use the page it opens.</p>",
+          "html": "<p>Next time, open the same file again and use the page it opens. Every start makes a new address, and a page left open from before asks for it.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/3a9a743bc59a3145.webp",
@@ -129,50 +213,26 @@
           ]
         },
         {
-          "title": "No internet?",
-          "layout": "image-bottom",
-          "html": "<p>For a network without internet, technical staff can carry the connector in as one file: see its README. It needs only Python 3.11 or newer, and asks for the token at each start.</p>",
-          "images": [
-            {
-              "src": "/content/images/en/attachments/fd895f209208fce2.webp",
-              "width": 1400,
-              "height": 1000
-            }
-          ]
-        },
-        {
           "title": "Upgrade it",
           "layout": "image-bottom",
-          "html": "<p>Stop the connector with Ctrl+C and type the install line again with <code>--reinstall</code> at the end. If you use a plugin, keep its <code>--with</code> part in the line.</p>",
+          "html": "<p>The dialog shows the version your Deploy App offers. For a newer one, stop the connector, download it again, check it as before and use the new file: your settings stay.</p>",
           "images": [
             {
-              "src": "/content/images/en/attachments/2eee9506e2d17f7d.webp",
-              "width": 1400,
-              "height": 1000
-            }
-          ]
-        },
-        {
-          "title": "Before removing it",
-          "layout": "image-bottom",
-          "html": "<p>Open the Deploy App's name at the top right and remove each Deploy App. The connector then forgets its token, and the keychain keeps nothing.</p>",
-          "images": [
-            {
-              "src": "/content/images/en/attachments/762126c97999ea93.webp",
-              "width": 1860,
-              "height": 1273
+              "src": "/content/images/en/attachments/ac4f171cfdbf6ed8.webp",
+              "width": 1220,
+              "height": 1211
             }
           ]
         },
         {
           "title": "Remove it",
           "layout": "image-bottom",
-          "html": "<p>Stop the connector, then type <code>uv tool uninstall odmdm-connector</code> in a terminal.</p>",
+          "html": "<p>First open the Deploy App's name at the top right and remove each Deploy App, so the keychain keeps no token. Then stop the connector and delete the file.</p>",
           "images": [
             {
-              "src": "/content/images/en/attachments/39e53dae4fa8689d.webp",
-              "width": 1400,
-              "height": 1000
+              "src": "/content/images/en/attachments/762126c97999ea93.webp",
+              "width": 1860,
+              "height": 1273
             }
           ]
         }
