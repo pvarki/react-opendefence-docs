@@ -1,0 +1,235 @@
+{
+  "schemaVersion": 1,
+  "id": "a10e002c-c228-4358-85d1-2c263c666e97",
+  "slug": "installera-anslutaren-3aFYZgX1LK",
+  "collection": "deploy-app",
+  "locale": "sv",
+  "title": "Installera anslutaren",
+  "breadcrumb": [
+    "Platforms",
+    "Android",
+    "Administratörsguide",
+    "Ta in användare via MDM",
+    "Installera anslutaren"
+  ],
+  "createdAt": "2026-11-22T22:06:20.044Z",
+  "updatedAt": "2026-11-22T22:21:07.786Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/deploy-app/install-the-connector-Fi93BT5Ntd",
+    "fi": "/fi/deploy-app/asenna-liitin-POM9A5h4cd",
+    "sv": "/sv/deploy-app/installera-anslutaren-3aFYZgX1LK"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "En sida på din dator",
+          "layout": "image-bottom",
+          "html": "<p><strong>ODMDM connector</strong> körs på din dator och öppnas som en sida i webbläsaren. Den talar med din MDM med din token, aldrig med Deploy App.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/cc5c6c508f64837c.webp",
+              "width": 1860,
+              "height": 1273
+            }
+          ]
+        },
+        {
+          "title": "Hämta den från Deploy App",
+          "layout": "image-bottom",
+          "html": "<p>Öppna <strong>Användarhantering</strong> och sedan <strong>MDM</strong> i Deploy App, som administratör. Tryck på <strong>Installera ODMDM connector</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/4ea6d5283f43dc98.webp",
+              "width": 1860,
+              "height": 889
+            }
+          ]
+        },
+        {
+          "title": "Ladda ner den",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på <strong>Ladda ner för Windows</strong>, eller knappen för ditt system: på en Intel-Mac väljer du först <strong>macOS (Intel)</strong> under <strong>Andra system</strong>. Om webbläsaren håller kvar nedladdningen väljer du att behålla filen.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/b6bd3302ff22e586.webp",
+              "width": 1220,
+              "height": 1211
+            }
+          ]
+        },
+        {
+          "title": "Är det den släppta filen?",
+          "layout": "image-bottom",
+          "html": "<p>Innan du öppnar den: dialogrutan visar filens SHA-256 och version. För att vara säker laddar du ner <strong>SHA256SUMS</strong> från den versionens släpp under github.com/pvarki/python-odmdm-fleet/releases och jämför raden för din fil.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/2d84f745fe5153b0.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Kontrollera själva filen",
+          "layout": "image-bottom",
+          "html": "<p>Teknisk personal kan kontrollera själva den nedladdade filen: i dess mapp skriver de här raderna ut dess SHA-256, som måste vara dialogrutans; stora och små bokstäver spelar ingen roll. På en Mac kontrolleras <strong>.zip</strong>-filen, innan den packas upp.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/1d8c05b706d218c9.webp",
+              "width": 1400,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "På Windows",
+          "layout": "image-bottom",
+          "html": "<p>Öppna den nedladdade filen. Om Windows stoppar den med <strong>Windows protected your PC</strong>, välj <strong>Mer information</strong> (More info) och sedan <strong>Kör ändå</strong> (Run anyway).</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/18d9a25774f67479.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Kör Windows den inte?",
+          "layout": "image-bottom",
+          "html": "<p>Om Windows inte erbjuder <strong>Kör ändå</strong> (Run anyway) kör den här datorn inte osignerade filer. Fråga den som sköter den, eller använd en annan dator.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/861e30dfe82434ad.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "På en Mac",
+          "layout": "image-bottom",
+          "html": "<p>Öppna <strong>odmdm-connector</strong> bland dina hämtade filer; packa upp den först om det behövs. På en Intel-Mac är det filen för <strong>macOS (Intel)</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/5f58ea1f9f9ff3eb.webp",
+              "width": 1220,
+              "height": 1250
+            }
+          ]
+        },
+        {
+          "title": "När macOS stoppar den",
+          "layout": "image-bottom",
+          "html": "<p>Första gången stoppar macOS den med en varning som den här. Tryck på <strong>Klar</strong> (Done), inte <strong>Flytta till papperskorgen</strong> (Move to Trash).</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/0c63527e11f76899.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Öppna ändå",
+          "layout": "image-bottom",
+          "html": "<p>Öppna <strong>Systeminställningar</strong> (System Settings), <strong>Integritet och säkerhet</strong> (Privacy &#x26; Security), rulla ner och tryck på <strong>Öppna ändå</strong> (Open Anyway): knappen finns där i omkring en timme. Ange ditt inloggningslösenord och tryck på <strong>OK</strong>, och sedan <strong>Öppna</strong> (Open) när varningen kommer tillbaka.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/34e229c7da8db22c.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "På Linux",
+          "layout": "image-bottom",
+          "html": "<p>Ladda ner filen för Linux och packa upp den. Kör sedan <code>./odmdm-connector</code> i en terminal, i filens mapp.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/46166b675e9afbf2.webp",
+              "width": 1220,
+              "height": 1172
+            }
+          ]
+        },
+        {
+          "title": "Håll dess fönster öppet",
+          "layout": "image-bottom",
+          "html": "<p>Anslutaren öppnar ett fönster (på Linux är det din terminal) och körs så länge det är öppet. Om sidan inte öppnades, öppna adressen som fönstret visar.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/727992f26f8e44fe.webp",
+              "width": 1400,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Den öppnas i din webbläsare",
+          "layout": "image-bottom",
+          "html": "<p>Anslutarens sida öppnas i din standardwebbläsare: använd Deploy App i samma webbläsare. Första gången ber den dig lägga till din Deploy App: se <strong>Koppla din MDM</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/c280a03b4b45918c.webp",
+              "width": 1052,
+              "height": 1232
+            }
+          ]
+        },
+        {
+          "title": "Nästa gång",
+          "layout": "image-bottom",
+          "html": "<p>Nästa gång öppnar du samma fil igen och använder sidan den öppnar; en sida som blivit kvar sedan tidigare frågar efter sin nya adress. Om anslutaren redan körs säger ett andra fönster det, och Enter stänger det.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/3a9a743bc59a3145.webp",
+              "width": 1052,
+              "height": 738
+            }
+          ]
+        },
+        {
+          "title": "Vad den sparar",
+          "layout": "image-bottom",
+          "html": "<p>Med <strong>Remember on this computer</strong> ikryssat sparas din token i datorns nyckelring, aldrig i en fil. Utmaningen finns bara kvar medan anslutaren körs.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/601aad787457ba02.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Uppgradera den",
+          "layout": "image-bottom",
+          "html": "<p>Dialogrutan visar den version som din Deploy App erbjuder. För en nyare: stoppa anslutaren, ladda ner den igen, kontrollera den som förut och använd den nya filen. Dina inställningar finns kvar.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/7deddcd676ef317f.webp",
+              "width": 1220,
+              "height": 1211
+            }
+          ]
+        },
+        {
+          "title": "Ta bort den",
+          "layout": "image-bottom",
+          "html": "<p>Öppna först Deploy Apps namn uppe till höger och ta bort varje Deploy App, så att ingen token blir kvar i nyckelringen. Stoppa sedan anslutaren och radera filen.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/762126c97999ea93.webp",
+              "width": 1860,
+              "height": 1273
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
