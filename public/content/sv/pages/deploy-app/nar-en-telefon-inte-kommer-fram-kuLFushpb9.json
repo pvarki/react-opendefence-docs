@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "id": "154ad922-f514-49f6-9dc8-90c623bafad9",
+  "slug": "nar-en-telefon-inte-kommer-fram-kuLFushpb9",
+  "collection": "deploy-app",
+  "locale": "sv",
+  "title": "När en telefon inte kommer fram",
+  "breadcrumb": [
+    "Platforms",
+    "Android",
+    "Administratörsguide",
+    "Ta in användare via MDM",
+    "När en telefon inte kommer fram"
+  ],
+  "createdAt": "2026-11-22T22:08:13.712Z",
+  "updatedAt": "2026-11-22T22:24:12.773Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/deploy-app/when-a-phone-does-not-arrive-f3b9RaRVoP",
+    "fi": "/fi/deploy-app/kun-puhelin-ei-tule-perille-RawT0cG1WW",
+    "sv": "/sv/deploy-app/nar-en-telefon-inte-kommer-fram-kuLFushpb9"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Se vad som hände",
+          "layout": "image-bottom",
+          "html": "<p>En telefon som avvisades eller misslyckades visas i rött, med orsaken. Antalet säger hur många som är <strong>failed</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/3e1dd49850968200.webp",
+              "width": 1860,
+              "height": 1273
+            }
+          ]
+        },
+        {
+          "title": "Läs detaljerna",
+          "layout": "image-bottom",
+          "html": "<p>Dubbelklicka på telefonen, eller markera den och tryck på <strong>Details</strong>: hela orsaken, och om anslutningen fortfarande är öppen.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/cbbeadf656388f0b.webp",
+              "width": 1860,
+              "height": 1273
+            }
+          ]
+        },
+        {
+          "title": "Åtgärda orsaken",
+          "layout": "image-bottom",
+          "html": "<p>Anropssignalen är upptagen eller inte tillåten: ge en annan. Anslutningen är stängd, eller din MDM har en gammal utmaning: öppna anslutningen och tryck på <strong>Öppna i MDM-anslutaren</strong> igen.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/cd1df61851150773.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Kunde inte nå Deploy App",
+          "layout": "image-bottom",
+          "html": "<p>Telefonen kunde inte nå Deploy Apps adress när den bad om sitt certifikat. Kontrollera dess nätverk och tryck sedan på <strong>Ask again</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/619bc4a811f740fa.webp",
+              "width": 1860,
+              "height": 1273
+            }
+          ]
+        },
+        {
+          "title": "Anslutningen har stängts",
+          "layout": "image-bottom",
+          "html": "<p>Raden blir gul tio minuter före stängning och röd efteråt. <strong>Open Deploy App ↗</strong> tar dig till MDM-sidan där du öppnar anslutningen igen.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/5ccec4f2099fb02e.webp",
+              "width": 1860,
+              "height": 1273
+            }
+          ]
+        },
+        {
+          "title": "Fråga igen",
+          "layout": "image-bottom",
+          "html": "<p>När orsaken är åtgärdad markerar du telefonen och trycker på <strong>Ask again</strong>. <strong>Refused or failed</strong> markerar dem alla.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/5f724d898c00bad4.webp",
+              "width": 1860,
+              "height": 1273
+            }
+          ]
+        },
+        {
+          "title": "Eller ge en annan anropssignal",
+          "layout": "image-bottom",
+          "html": "<p>En upptagen anropssignal blir aldrig ledig. Tryck på <strong>Give another callsign</strong> i telefonens detaljer och ge den en ny.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/3f7ad1842b5f1f38.webp",
+              "width": 1860,
+              "height": 1273
+            }
+          ]
+        },
+        {
+          "title": "Byt aldrig ut certifikatet",
+          "layout": "image-bottom",
+          "html": "<p>Med Fleet: ersätt inte teamets certifikat för att försöka igen. Varje telefon i teamet skulle förlora sitt eget.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/e04dec3cfbb22b60.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Token slutade fungera",
+          "layout": "image-bottom",
+          "html": "<p>När din MDM inte längre godtar din token ber anslutaren själv om en ny, med MDM:s orsak. Klistra in en ny token och tryck på <strong>Connect</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/b2c40515d9c9f80b.webp",
+              "width": 1052,
+              "height": 1086
+            }
+          ]
+        },
+        {
+          "title": "Certifikatsautentisering misslyckades",
+          "layout": "image-bottom",
+          "html": "<p>Telefonen har sitt certifikat, men Chromes policy för det har skrivits över: skicka policyn igen. Med kommando, se <strong>Från kommandoraden</strong>; utan anslutaren, <strong>Namnge telefoner i Fleet utan anslutaren</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/0c679294b8027013.webp",
+              "width": 912,
+              "height": 1804
+            }
+          ]
+        },
+        {
+          "title": "Skicka policyn igen",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på <strong>Settings</strong> och sedan <strong>Send the policy again</strong>, när ingen telefon längre installerar appar. Öppna sedan Deploy App igen på telefonen.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/f8d1aec84a0c2f47.webp",
+              "width": 1220,
+              "height": 1183
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
