@@ -13,7 +13,7 @@
     "Using another MDM"
   ],
   "createdAt": "2026-11-21T08:08:49.025Z",
-  "updatedAt": "2026-11-21T16:53:55.498Z",
+  "updatedAt": "2026-11-21T23:56:38.644Z",
   "headings": [],
   "blocks": [
     {
@@ -23,7 +23,7 @@
         {
           "title": "Fleet is built in",
           "layout": "image-bottom",
-          "html": "<p>The connector works with Fleet as it comes. Another MDM needs a plugin: a small add-on that speaks to that MDM. None exists yet.</p>",
+          "html": "<p>The connector works with Fleet as it comes. Another MDM needs a plugin, a small add-on that speaks to that MDM, and none exists yet.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/64e5ceba5eeb370a.webp",
@@ -47,7 +47,7 @@
         {
           "title": "A group of its own",
           "layout": "image-bottom",
-          "html": "<p>Phones for one Deploy App enrol into one group, with its own enrolment link.</p>",
+          "html": "<p>Phones for one Deploy App enrol into one group, named after your deployment, such as <code>golden-monkey DeployApp</code>, with its own enrolment link.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/73ee840dc2bab814.webp",
@@ -86,7 +86,7 @@
           "html": "<p>Every opening makes a new challenge. If the MDM cannot take it from the connector, the phones view shows it for you to copy into the MDM, as with this demo plugin.</p>",
           "images": [
             {
-              "src": "/content/images/en/attachments/604e934624b5eb1a.webp",
+              "src": "/content/images/en/attachments/1547e1697a2e1b9f.webp",
               "width": 1860,
               "height": 1273
             }
@@ -110,9 +110,9 @@
           "html": "<p>Technical staff add a plugin with the install line in the connector's README. With more than one MDM installed, the connector asks <strong>Which MDM?</strong></p>",
           "images": [
             {
-              "src": "/content/images/en/attachments/40c7f84a20b6a51e.webp",
+              "src": "/content/images/en/attachments/9c231f75104bf13b.webp",
               "width": 1052,
-              "height": 840
+              "height": 800
             }
           ]
         },
@@ -122,7 +122,7 @@
           "html": "<p>A plugin sees your MDM token. The first time you choose one, and after it is updated, the connector says which package it comes from and asks before using it.</p>",
           "images": [
             {
-              "src": "/content/images/en/attachments/3b236f57bbc78194.webp",
+              "src": "/content/images/en/attachments/d6e5dacef4b47e00.webp",
               "width": 1052,
               "height": 858
             }
@@ -134,9 +134,9 @@
           "html": "<p>What the MDM cannot do by API, the connector lists for you to do in its console. Then press <strong>Show the phones</strong>.</p>",
           "images": [
             {
-              "src": "/content/images/en/attachments/cebecdad18bceaba.webp",
+              "src": "/content/images/en/attachments/a73e60c59e5d142b.webp",
               "width": 1052,
-              "height": 991
+              "height": 1019
             }
           ]
         }
