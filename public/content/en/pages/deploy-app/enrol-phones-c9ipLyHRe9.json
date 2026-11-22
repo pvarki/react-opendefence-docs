@@ -13,8 +13,13 @@
     "Enrol phones"
   ],
   "createdAt": "2026-10-29T10:35:51.931Z",
-  "updatedAt": "2026-11-21T23:25:23.296Z",
+  "updatedAt": "2026-11-22T22:29:43.864Z",
   "headings": [],
+  "translations": {
+    "en": "/en/deploy-app/enrol-phones-c9ipLyHRe9",
+    "fi": "/fi/deploy-app/liita-puhelimet-o8nMr5refc",
+    "sv": "/sv/deploy-app/anslut-telefoner-taCwggfyD7"
+  },
   "blocks": [
     {
       "type": "slideset",

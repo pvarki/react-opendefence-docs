@@ -13,8 +13,13 @@
     "First start on the phone"
   ],
   "createdAt": "2026-11-20T19:35:14.323Z",
-  "updatedAt": "2026-11-21T23:26:14.427Z",
+  "updatedAt": "2026-11-22T22:29:45.196Z",
   "headings": [],
+  "translations": {
+    "en": "/en/deploy-app/first-start-on-the-phone-MRCjatFpyg",
+    "fi": "/fi/deploy-app/ensimmainen-kaynnistys-puhelimessa-XZm8dfyOk7",
+    "sv": "/sv/deploy-app/forsta-starten-pa-telefonen-MrU1UzNYI2"
+  },
   "blocks": [
     {
       "type": "slideset",

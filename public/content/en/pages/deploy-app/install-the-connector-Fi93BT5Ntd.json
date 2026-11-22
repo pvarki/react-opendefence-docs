@@ -13,8 +13,13 @@
     "Install the connector"
   ],
   "createdAt": "2026-11-21T08:05:50.369Z",
-  "updatedAt": "2026-11-22T21:13:01.064Z",
+  "updatedAt": "2026-11-22T22:29:42.481Z",
   "headings": [],
+  "translations": {
+    "en": "/en/deploy-app/install-the-connector-Fi93BT5Ntd",
+    "fi": "/fi/deploy-app/asenna-liitin-POM9A5h4cd",
+    "sv": "/sv/deploy-app/installera-anslutaren-3aFYZgX1LK"
+  },
   "blocks": [
     {
       "type": "slideset",

@@ -13,8 +13,13 @@
     "Deploy App supports MDM"
   ],
   "createdAt": "2026-11-20T19:34:58.782Z",
-  "updatedAt": "2026-11-22T00:12:53.458Z",
+  "updatedAt": "2026-11-22T22:05:29.410Z",
   "headings": [],
+  "translations": {
+    "en": "/en/deploy-app/deploy-app-supports-mdm-hgbi4NqgKT",
+    "fi": "/fi/deploy-app/deploy-app-tukee-mdmaa-jVgQarMKxG",
+    "sv": "/sv/deploy-app/deploy-app-stoder-mdm-4ZstBxkyd8"
+  },
   "blocks": [
     {
       "type": "slideset",

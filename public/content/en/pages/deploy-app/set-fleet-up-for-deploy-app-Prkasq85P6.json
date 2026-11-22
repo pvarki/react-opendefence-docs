@@ -13,8 +13,13 @@
     "Set Fleet up for Deploy App"
   ],
   "createdAt": "2026-11-21T23:23:12.839Z",
-  "updatedAt": "2026-11-22T21:32:02.576Z",
+  "updatedAt": "2026-11-22T22:29:49.085Z",
   "headings": [],
+  "translations": {
+    "en": "/en/deploy-app/set-fleet-up-for-deploy-app-Prkasq85P6",
+    "fi": "/fi/deploy-app/maarita-fleet-deploy-appia-varten-Puxv3F0J4g",
+    "sv": "/sv/deploy-app/stall-in-fleet-for-deploy-app-8QfR6PSGC7"
+  },
   "blocks": [
     {
       "type": "slideset",

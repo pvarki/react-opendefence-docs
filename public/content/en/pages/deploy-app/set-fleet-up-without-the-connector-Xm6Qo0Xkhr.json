@@ -13,8 +13,13 @@
     "Set Fleet up without the connector"
   ],
   "createdAt": "2026-11-21T05:59:01.407Z",
-  "updatedAt": "2026-11-22T00:13:53.263Z",
+  "updatedAt": "2026-11-22T22:29:50.943Z",
   "headings": [],
+  "translations": {
+    "en": "/en/deploy-app/set-fleet-up-without-the-connector-Xm6Qo0Xkhr",
+    "fi": "/fi/deploy-app/maarita-fleet-ilman-liitinta-v1gTQPz5sV",
+    "sv": "/sv/deploy-app/stall-in-fleet-utan-anslutaren-ACj14KNsa3"
+  },
   "blocks": [
     {
       "type": "slideset",

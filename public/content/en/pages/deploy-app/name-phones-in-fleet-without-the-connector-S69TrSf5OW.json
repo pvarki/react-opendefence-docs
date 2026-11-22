@@ -13,8 +13,13 @@
     "Name phones in Fleet without the connector"
   ],
   "createdAt": "2026-10-29T10:36:03.712Z",
-  "updatedAt": "2026-11-22T01:39:51.591Z",
+  "updatedAt": "2026-11-22T22:29:51.861Z",
   "headings": [],
+  "translations": {
+    "en": "/en/deploy-app/name-phones-in-fleet-without-the-connector-S69TrSf5OW",
+    "fi": "/fi/deploy-app/nimea-puhelimet-fleetissa-ilman-liitinta-9ZR0tAiRxJ",
+    "sv": "/sv/deploy-app/namnge-telefoner-i-fleet-utan-anslutaren-qSBu1CRt27"
+  },
   "blocks": [
     {
       "type": "slideset",

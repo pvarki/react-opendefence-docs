@@ -13,8 +13,13 @@
     "Install the connector from a terminal"
   ],
   "createdAt": "2026-11-22T01:37:42.104Z",
-  "updatedAt": "2026-11-22T21:13:51.466Z",
+  "updatedAt": "2026-11-22T22:29:47.151Z",
   "headings": [],
+  "translations": {
+    "en": "/en/deploy-app/install-the-connector-from-a-terminal-vSDV2SJXgj",
+    "fi": "/fi/deploy-app/asenna-liitin-paatteesta-zFGeRuAR6T",
+    "sv": "/sv/deploy-app/installera-anslutaren-fran-en-terminal-DTEI1XK0FM"
+  },
   "blocks": [
     {
       "type": "slideset",

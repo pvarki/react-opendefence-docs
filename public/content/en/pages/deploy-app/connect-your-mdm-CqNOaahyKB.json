@@ -13,8 +13,13 @@
     "Connect your MDM"
   ],
   "createdAt": "2026-10-29T10:35:43.762Z",
-  "updatedAt": "2026-11-22T16:12:00.685Z",
+  "updatedAt": "2026-11-22T22:29:43.210Z",
   "headings": [],
+  "translations": {
+    "en": "/en/deploy-app/connect-your-mdm-CqNOaahyKB",
+    "fi": "/fi/deploy-app/yhdista-mdm-QBy34u1J8P",
+    "sv": "/sv/deploy-app/koppla-din-mdm-o32bkyreTb"
+  },
   "blocks": [
     {
       "type": "slideset",

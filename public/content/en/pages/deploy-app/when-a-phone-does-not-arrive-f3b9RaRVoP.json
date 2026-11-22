@@ -13,8 +13,13 @@
     "When a phone does not arrive"
   ],
   "createdAt": "2026-11-20T19:35:19.388Z",
-  "updatedAt": "2026-11-22T16:13:02.000Z",
+  "updatedAt": "2026-11-22T22:29:45.870Z",
   "headings": [],
+  "translations": {
+    "en": "/en/deploy-app/when-a-phone-does-not-arrive-f3b9RaRVoP",
+    "fi": "/fi/deploy-app/kun-puhelin-ei-tule-perille-RawT0cG1WW",
+    "sv": "/sv/deploy-app/nar-en-telefon-inte-kommer-fram-kuLFushpb9"
+  },
   "blocks": [
     {
       "type": "slideset",

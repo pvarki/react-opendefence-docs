@@ -13,8 +13,13 @@
     "From the command line"
   ],
   "createdAt": "2026-11-21T08:08:40.072Z",
-  "updatedAt": "2026-11-22T16:13:08.579Z",
+  "updatedAt": "2026-11-22T22:29:47.781Z",
   "headings": [],
+  "translations": {
+    "en": "/en/deploy-app/from-the-command-line-Fs7VvuiDAo",
+    "fi": "/fi/deploy-app/komentorivilta-IHi2889tpu",
+    "sv": "/sv/deploy-app/fran-kommandoraden-xFyiTHblin"
+  },
   "blocks": [
     {
       "type": "slideset",

@@ -13,8 +13,13 @@
     "Name phones"
   ],
   "createdAt": "2026-11-20T19:35:09.881Z",
-  "updatedAt": "2026-11-22T01:38:02.271Z",
+  "updatedAt": "2026-11-22T22:29:44.508Z",
   "headings": [],
+  "translations": {
+    "en": "/en/deploy-app/name-phones-0Fh4ZTpcJs",
+    "fi": "/fi/deploy-app/nimea-puhelimet-vzIe9142oV",
+    "sv": "/sv/deploy-app/namnge-telefoner-Szm4GfJooc"
+  },
   "blocks": [
     {
       "type": "slideset",

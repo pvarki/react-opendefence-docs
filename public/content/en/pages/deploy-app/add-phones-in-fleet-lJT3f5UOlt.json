@@ -13,8 +13,13 @@
     "Add phones in Fleet"
   ],
   "createdAt": "2026-11-21T23:23:33.572Z",
-  "updatedAt": "2026-11-21T23:56:52.512Z",
+  "updatedAt": "2026-11-22T22:29:50.295Z",
   "headings": [],
+  "translations": {
+    "en": "/en/deploy-app/add-phones-in-fleet-lJT3f5UOlt",
+    "fi": "/fi/deploy-app/lisaa-puhelimet-fleetiin-9CeCdOVgei",
+    "sv": "/sv/deploy-app/lagg-till-telefoner-i-fleet-5qOyo9hK23"
+  },
   "blocks": [
     {
       "type": "slideset",

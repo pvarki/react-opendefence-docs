@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "locale": "en",
-  "generatedAt": "2026-11-22T21:34:08.872Z",
+  "generatedAt": "2026-11-22T22:36:54.139Z",
   "collections": [
     {
       "slug": "deploy-app",
@@ -405,7 +405,7 @@
         "Deploy App supports MDM"
       ],
       "path": "/content/en/pages/deploy-app/deploy-app-supports-mdm-hgbi4NqgKT.json",
-      "updatedAt": "2026-11-22T00:12:53.458Z",
+      "updatedAt": "2026-11-22T22:05:29.410Z",
       "order": 8,
       "platform": "android",
       "clientId": "android-MENReFAfCN",
@@ -425,7 +425,7 @@
         "Install the connector"
       ],
       "path": "/content/en/pages/deploy-app/install-the-connector-Fi93BT5Ntd.json",
-      "updatedAt": "2026-11-22T21:13:01.064Z",
+      "updatedAt": "2026-11-22T22:29:42.481Z",
       "order": 9,
       "platform": "android",
       "clientId": "android-MENReFAfCN",
@@ -445,7 +445,7 @@
         "Connect your MDM"
       ],
       "path": "/content/en/pages/deploy-app/connect-your-mdm-CqNOaahyKB.json",
-      "updatedAt": "2026-11-22T16:12:00.685Z",
+      "updatedAt": "2026-11-22T22:29:43.210Z",
       "order": 10,
       "platform": "android",
       "clientId": "android-MENReFAfCN",
@@ -465,7 +465,7 @@
         "Enrol phones"
       ],
       "path": "/content/en/pages/deploy-app/enrol-phones-c9ipLyHRe9.json",
-      "updatedAt": "2026-11-21T23:25:23.296Z",
+      "updatedAt": "2026-11-22T22:29:43.864Z",
       "order": 11,
       "platform": "android",
       "clientId": "android-MENReFAfCN",
@@ -485,7 +485,7 @@
         "Name phones"
       ],
       "path": "/content/en/pages/deploy-app/name-phones-0Fh4ZTpcJs.json",
-      "updatedAt": "2026-11-22T01:38:02.271Z",
+      "updatedAt": "2026-11-22T22:29:44.508Z",
       "order": 12,
       "platform": "android",
       "clientId": "android-MENReFAfCN",
@@ -505,7 +505,7 @@
         "First start on the phone"
       ],
       "path": "/content/en/pages/deploy-app/first-start-on-the-phone-MRCjatFpyg.json",
-      "updatedAt": "2026-11-21T23:26:14.427Z",
+      "updatedAt": "2026-11-22T22:29:45.196Z",
       "order": 13,
       "platform": "android",
       "clientId": "android-MENReFAfCN",
@@ -525,7 +525,7 @@
         "When a phone does not arrive"
       ],
       "path": "/content/en/pages/deploy-app/when-a-phone-does-not-arrive-f3b9RaRVoP.json",
-      "updatedAt": "2026-11-22T16:13:02.000Z",
+      "updatedAt": "2026-11-22T22:29:45.870Z",
       "order": 14,
       "platform": "android",
       "clientId": "android-MENReFAfCN",
@@ -545,7 +545,7 @@
         "After the first batch"
       ],
       "path": "/content/en/pages/deploy-app/after-the-first-batch-cOk5iBzJoS.json",
-      "updatedAt": "2026-11-22T21:31:54.311Z",
+      "updatedAt": "2026-11-22T22:29:46.499Z",
       "order": 15,
       "platform": "android",
       "clientId": "android-MENReFAfCN",
@@ -565,7 +565,7 @@
         "Install the connector from a terminal"
       ],
       "path": "/content/en/pages/deploy-app/install-the-connector-from-a-terminal-vSDV2SJXgj.json",
-      "updatedAt": "2026-11-22T21:13:51.466Z",
+      "updatedAt": "2026-11-22T22:29:47.151Z",
       "order": 16,
       "platform": "android",
       "clientId": "android-MENReFAfCN",
@@ -585,7 +585,7 @@
         "From the command line"
       ],
       "path": "/content/en/pages/deploy-app/from-the-command-line-Fs7VvuiDAo.json",
-      "updatedAt": "2026-11-22T16:13:08.579Z",
+      "updatedAt": "2026-11-22T22:29:47.781Z",
       "order": 17,
       "platform": "android",
       "clientId": "android-MENReFAfCN",
@@ -605,7 +605,7 @@
         "Using another MDM"
       ],
       "path": "/content/en/pages/deploy-app/using-another-mdm-V3bHoMMsq3.json",
-      "updatedAt": "2026-11-22T01:39:45.706Z",
+      "updatedAt": "2026-11-22T22:29:48.444Z",
       "order": 18,
       "platform": "android",
       "clientId": "android-MENReFAfCN",
@@ -625,7 +625,7 @@
         "Set Fleet up for Deploy App"
       ],
       "path": "/content/en/pages/deploy-app/set-fleet-up-for-deploy-app-Prkasq85P6.json",
-      "updatedAt": "2026-11-22T21:32:02.576Z",
+      "updatedAt": "2026-11-22T22:29:49.085Z",
       "order": 19,
       "platform": "android",
       "clientId": "android-MENReFAfCN",
@@ -645,7 +645,7 @@
         "Add phones in Fleet"
       ],
       "path": "/content/en/pages/deploy-app/add-phones-in-fleet-lJT3f5UOlt.json",
-      "updatedAt": "2026-11-21T23:56:52.512Z",
+      "updatedAt": "2026-11-22T22:29:50.295Z",
       "order": 20,
       "platform": "android",
       "clientId": "android-MENReFAfCN",
@@ -665,7 +665,7 @@
         "Set Fleet up without the connector"
       ],
       "path": "/content/en/pages/deploy-app/set-fleet-up-without-the-connector-Xm6Qo0Xkhr.json",
-      "updatedAt": "2026-11-22T00:13:53.263Z",
+      "updatedAt": "2026-11-22T22:29:50.943Z",
       "order": 21,
       "platform": "android",
       "clientId": "android-MENReFAfCN",
@@ -685,7 +685,7 @@
         "Name phones in Fleet without the connector"
       ],
       "path": "/content/en/pages/deploy-app/name-phones-in-fleet-without-the-connector-S69TrSf5OW.json",
-      "updatedAt": "2026-11-22T01:39:51.591Z",
+      "updatedAt": "2026-11-22T22:29:51.861Z",
       "order": 22,
       "platform": "android",
       "clientId": "android-MENReFAfCN",
