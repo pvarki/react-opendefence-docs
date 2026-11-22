@@ -13,7 +13,7 @@
     "Name phones"
   ],
   "createdAt": "2026-11-20T19:35:09.881Z",
-  "updatedAt": "2026-11-21T23:54:48.736Z",
+  "updatedAt": "2026-11-22T01:38:02.271Z",
   "headings": [],
   "blocks": [
     {
@@ -38,9 +38,9 @@
           "html": "<p>After every opening, press <strong>Open in the MDM connector</strong> again. Your MDM needs the new challenge before the phones ask.</p>",
           "images": [
             {
-              "src": "/content/images/en/attachments/b498ffb148da6f80.webp",
+              "src": "/content/images/en/attachments/9aa5b4840d6528b0.webp",
               "width": 1860,
-              "height": 1025
+              "height": 1125
             }
           ]
         },
@@ -134,9 +134,9 @@
           "html": "<p>Each phone also appears on Deploy App's MDM page under its callsign. When all are in, press <strong>Close</strong>.</p>",
           "images": [
             {
-              "src": "/content/images/en/attachments/c5f2fbc43bbf5d67.webp",
+              "src": "/content/images/en/attachments/d5085959c0ee2dfb.webp",
               "width": 1860,
-              "height": 1387
+              "height": 1500
             }
           ]
         }
