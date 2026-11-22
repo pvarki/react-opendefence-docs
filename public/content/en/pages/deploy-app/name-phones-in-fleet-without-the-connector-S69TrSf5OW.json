@@ -13,7 +13,7 @@
     "Name phones in Fleet without the connector"
   ],
   "createdAt": "2026-10-29T10:36:03.712Z",
-  "updatedAt": "2026-11-22T00:13:58.952Z",
+  "updatedAt": "2026-11-22T01:39:51.591Z",
   "headings": [],
   "blocks": [
     {
@@ -38,9 +38,9 @@
           "html": "<p>In Deploy App, open <strong>User Management</strong>, then <strong>MDM</strong>, and press <strong>Open for 2 hours</strong>.</p>",
           "images": [
             {
-              "src": "/content/images/en/attachments/2f1b71141c8c41e9.webp",
+              "src": "/content/images/en/attachments/da96e1bc702c9eef.webp",
               "width": 1860,
-              "height": 789
+              "height": 889
             }
           ]
         },
@@ -50,9 +50,9 @@
           "html": "<p>Press the copy mark beside <strong>Challenge</strong>. It is new for every opening, so your MDM needs it each time.</p>",
           "images": [
             {
-              "src": "/content/images/en/attachments/ae4a4aac2863dfe2.webp",
+              "src": "/content/images/en/attachments/8804c0942a9ec47e.webp",
               "width": 1860,
-              "height": 1025
+              "height": 1125
             }
           ]
         },
