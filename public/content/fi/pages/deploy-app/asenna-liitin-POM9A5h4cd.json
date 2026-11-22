@@ -1,0 +1,235 @@
+{
+  "schemaVersion": 1,
+  "id": "9b328b16-f25e-47be-936a-8ee01aa3456e",
+  "slug": "asenna-liitin-POM9A5h4cd",
+  "collection": "deploy-app",
+  "locale": "fi",
+  "title": "Asenna liitin",
+  "breadcrumb": [
+    "Platforms",
+    "Android",
+    "Ylläpitäjäohjeet",
+    "Käyttäjien tuominen MDM:llä",
+    "Asenna liitin"
+  ],
+  "createdAt": "2026-11-22T22:01:15.593Z",
+  "updatedAt": "2026-11-22T22:21:07.153Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/deploy-app/install-the-connector-Fi93BT5Ntd",
+    "fi": "/fi/deploy-app/asenna-liitin-POM9A5h4cd",
+    "sv": "/sv/deploy-app/installera-anslutaren-3aFYZgX1LK"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Sivu omalla tietokoneellasi",
+          "layout": "image-bottom",
+          "html": "<p><strong>ODMDM connector</strong> toimii tietokoneellasi ja avautuu sivuna selaimeen. Se puhuu MDM:lle sinun tunnisteellasi, ei koskaan Deploy Appille.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/cc5c6c508f64837c.webp",
+              "width": 1860,
+              "height": 1273
+            }
+          ]
+        },
+        {
+          "title": "Hae se Deploy Appista",
+          "layout": "image-bottom",
+          "html": "<p>Avaa Deploy Appissa ylläpitäjänä <strong>Käyttäjien hallinta</strong> ja sitten <strong>MDM</strong>. Paina <strong>Asenna ODMDM connector</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/d915751d38341c77.webp",
+              "width": 1860,
+              "height": 884
+            }
+          ]
+        },
+        {
+          "title": "Lataa se",
+          "layout": "image-bottom",
+          "html": "<p>Paina <strong>Lataa: Windows</strong> tai oman järjestelmäsi painiketta: Intel-Macissa valitse ensin <strong>macOS (Intel)</strong> kohdasta <strong>Muut järjestelmät</strong>. Jos selain pidättää latauksen, valitse tiedoston säilyttäminen.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/172a2af6daaa8669.webp",
+              "width": 1220,
+              "height": 1250
+            }
+          ]
+        },
+        {
+          "title": "Onko se julkaistu tiedosto?",
+          "layout": "image-bottom",
+          "html": "<p>Ennen kuin avaat sen: ikkuna näyttää tiedoston SHA-256-tiivisteen ja version. Varmistaaksesi lataa <strong>SHA256SUMS</strong> kyseisen version julkaisusta osoitteesta github.com/pvarki/python-odmdm-fleet/releases ja vertaa tiedostosi riviä.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/df202772163e4f33.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Tarkista itse tiedosto",
+          "layout": "image-bottom",
+          "html": "<p>Tekninen henkilöstö voi tarkistaa itse ladatun tiedoston: sen kansiossa nämä rivit tulostavat sen SHA-256-tiivisteen, jonka on oltava sama kuin ikkunassa; isoilla ja pienillä kirjaimilla ei ole väliä. Macissa tarkistetaan <strong>.zip</strong>, ennen kuin se puretaan.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/1d8c05b706d218c9.webp",
+              "width": 1400,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Windowsissa",
+          "layout": "image-bottom",
+          "html": "<p>Avaa ladattu tiedosto. Jos Windows pysäyttää sen ilmoituksella <strong>Windows suojasi tietokonettasi</strong> (Windows protected your PC), valitse <strong>Lisätietoja</strong> (More info) ja sitten <strong>Suorita joka tapauksessa</strong> (Run anyway).</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/8314bebedc8bd1a7.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Eikö Windows suorita sitä?",
+          "layout": "image-bottom",
+          "html": "<p>Jos Windows ei tarjoa painiketta <strong>Suorita joka tapauksessa</strong> (Run anyway), tämä tietokone ei suorita allekirjoittamattomia tiedostoja. Kysy sen ylläpitäjältä tai käytä toista tietokonetta.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/e284367e48e83192.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Macissa",
+          "layout": "image-bottom",
+          "html": "<p>Avaa <strong>odmdm-connector</strong> latauksistasi; pura se ensin tarvittaessa. Intel-Macissa se on tiedosto <strong>macOS (Intel)</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/6f4c8e7c6202c2c5.webp",
+              "width": 1220,
+              "height": 1290
+            }
+          ]
+        },
+        {
+          "title": "Kun macOS pysäyttää sen",
+          "layout": "image-bottom",
+          "html": "<p>Ensimmäisellä kerralla macOS pysäyttää sen tämänkaltaisella varoituksella. Paina <strong>Valmis</strong> (Done), älä <strong>Siirrä roskakoriin</strong> (Move to Trash).</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/173c4a5787cfc472.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Avaa kuitenkin",
+          "layout": "image-bottom",
+          "html": "<p>Avaa <strong>Järjestelmäasetukset</strong> (System Settings), <strong>Tietosuoja ja suojaus</strong> (Privacy &#x26; Security), vieritä alas ja paina <strong>Avaa kuitenkin</strong> (Open Anyway): painike on käytettävissä noin tunnin. Syötä kirjautumissalasanasi ja paina <strong>OK</strong>, ja sitten <strong>Avaa</strong> (Open), kun varoitus tulee uudelleen.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/6faaac35bfbd8a36.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Linuxissa",
+          "layout": "image-bottom",
+          "html": "<p>Lataa Linuxin tiedosto ja pura se. Suorita sitten sen kansiossa päätteessä <code>./odmdm-connector</code>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/827ad03e0ede35c5.webp",
+              "width": 1220,
+              "height": 1211
+            }
+          ]
+        },
+        {
+          "title": "Pidä sen ikkuna auki",
+          "layout": "image-bottom",
+          "html": "<p>Liitin avaa ikkunan (Linuxissa se on päätteesi) ja toimii niin kauan kuin ikkuna on auki. Jos sivu ei avautunut, avaa ikkunassa näkyvä osoite.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/727992f26f8e44fe.webp",
+              "width": 1400,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Se avautuu selaimeesi",
+          "layout": "image-bottom",
+          "html": "<p>Liittimen sivu avautuu oletusselaimeesi: käytä Deploy Appia samassa selaimessa. Ensimmäisellä kerralla se pyytää lisäämään Deploy Appisi: katso <strong>Yhdistä MDM</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/c280a03b4b45918c.webp",
+              "width": 1052,
+              "height": 1232
+            }
+          ]
+        },
+        {
+          "title": "Seuraavalla kerralla",
+          "layout": "image-bottom",
+          "html": "<p>Seuraavalla kerralla avaa sama tiedosto uudelleen ja käytä sivua, jonka se avaa; aiemmin auki jäänyt sivu kysyy uutta osoitettaan. Jos liitin on jo käynnissä, toinen ikkuna kertoo sen, ja Enter sulkee ikkunan.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/3a9a743bc59a3145.webp",
+              "width": 1052,
+              "height": 738
+            }
+          ]
+        },
+        {
+          "title": "Mitä se säilyttää",
+          "layout": "image-bottom",
+          "html": "<p>Kun <strong>Remember on this computer</strong> on valittuna, tunnisteesi tallentuu tietokoneen avainnippuun, ei koskaan tiedostoon. Haaste on tallessa vain niin kauan kuin liitin on käynnissä.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/28967a760e6334aa.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Päivitä se",
+          "layout": "image-bottom",
+          "html": "<p>Ikkuna näyttää version, jota Deploy Appisi tarjoaa. Uudempaa varten pysäytä liitin, lataa se uudelleen, tarkista se kuten aiemmin ja käytä uutta tiedostoa: asetuksesi säilyvät.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/0cef61278ffeb408.webp",
+              "width": 1220,
+              "height": 1250
+            }
+          ]
+        },
+        {
+          "title": "Poista se",
+          "layout": "image-bottom",
+          "html": "<p>Avaa ensin Deploy Appin nimi oikeasta yläkulmasta ja poista jokainen Deploy App, jotta avainnippuun ei jää tunnistetta. Pysäytä sitten liitin ja poista tiedosto.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/762126c97999ea93.webp",
+              "width": 1860,
+              "height": 1273
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
