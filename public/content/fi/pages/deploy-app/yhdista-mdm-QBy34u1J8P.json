@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "id": "481765e1-b731-48b0-98ab-4e0899c3c5b2",
+  "slug": "yhdista-mdm-QBy34u1J8P",
+  "collection": "deploy-app",
+  "locale": "fi",
+  "title": "Yhdistä MDM",
+  "breadcrumb": [
+    "Platforms",
+    "Android",
+    "Ylläpitäjäohjeet",
+    "Käyttäjien tuominen MDM:llä",
+    "Yhdistä MDM"
+  ],
+  "createdAt": "2026-11-22T22:02:08.882Z",
+  "updatedAt": "2026-11-22T22:22:06.533Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/deploy-app/connect-your-mdm-CqNOaahyKB",
+    "fi": "/fi/deploy-app/yhdista-mdm-QBy34u1J8P",
+    "sv": "/sv/deploy-app/koppla-din-mdm-o32bkyreTb"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Käynnistä liitin",
+          "layout": "image-bottom",
+          "html": "<p>Käynnistä liitin (katso <strong>Asenna liitin</strong>): sen sivu avautuu oletusselaimeesi. Ensimmäisellä kerralla se pyytää lisäämään Deploy Appisi.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/c280a03b4b45918c.webp",
+              "width": 1052,
+              "height": 1232
+            }
+          ]
+        },
+        {
+          "title": "Avaa MDM-sivu",
+          "layout": "image-bottom",
+          "html": "<p>Kirjaudu samalla tietokoneella ja samassa selaimessa Deploy Appiin ylläpitäjänä. Avaa <strong>Käyttäjien hallinta</strong> ja sitten <strong>MDM</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/a20b441b70dad913.webp",
+              "width": 1860,
+              "height": 856
+            }
+          ]
+        },
+        {
+          "title": "Avaa liittyminen",
+          "layout": "image-bottom",
+          "html": "<p>Paina <strong>Avaa 2 tunniksi</strong>. Jokainen avaus tekee uuden haasteen, jonka MDM tarvitsee.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/9aceb503da2c83cc.webp",
+              "width": 1860,
+              "height": 884
+            }
+          ]
+        },
+        {
+          "title": "Anna se liittimelle",
+          "layout": "image-bottom",
+          "html": "<p>Paina <strong>Avaa MDM-liittimessä</strong>. Se avaa liittimen uuteen välilehteen tämän avauksen asetuksilla.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/b1470c6470a94526.webp",
+              "width": 1860,
+              "height": 1120
+            }
+          ]
+        },
+        {
+          "title": "Eikö uutta välilehteä avautunut?",
+          "layout": "image-bottom",
+          "html": "<p>Tarkista, että liitin on käynnissä ja että Deploy App on auki samassa selaimessa. Tai paina <strong>Kopioi asetukset</strong> ja liitä rivi liittimen ensimmäiseen korttiin.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/f77cca67af2fe17a.webp",
+              "width": 1860,
+              "height": 1120
+            }
+          ]
+        },
+        {
+          "title": "Lisää Deploy Appisi",
+          "layout": "image-bottom",
+          "html": "<p>Tarkista, että nimi on sinun Deploy Appisi, ja paina sitten <strong>Add golden-monkey.example.fi</strong>. Mikä tahansa verkkosivu voi avata liittimen, joten lisää vain se, jota odotat.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/8ba3acd99713a0df.webp",
+              "width": 1052,
+              "height": 881
+            }
+          ]
+        },
+        {
+          "title": "Mitä MDM tarvitsee",
+          "layout": "image-bottom",
+          "html": "<p>Liitin kysyy nyt, mitä MDM tarvitsee. Fleetin kanssa katso <strong>Määritä Fleet Deploy Appia varten</strong> luvussa <strong>MDM: Fleet</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/bf8ba17d5675cc6c.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Liitin määrittää MDM:n",
+          "layout": "image-bottom",
+          "html": "<p>Kun olet painanut <strong>Connect</strong>, liitin määrittää MDM:n, mikä voi kestää minuutin tai kaksi. Jokainen vaihe merkitään, kun se on valmis.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/25434164079def7c.webp",
+              "width": 1052,
+              "height": 949
+            }
+          ]
+        },
+        {
+          "title": "Yhdistetty",
+          "layout": "image-bottom",
+          "html": "<p>MDM:n ryhmällä tälle Deploy Appille on nyt varmenne, käytäntö, sovellukset ja <strong>Deploy App</strong> -kuvake. Paina <strong>Show the phones</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/a147bb9c023d0795.webp",
+              "width": 1052,
+              "height": 976
+            }
+          ]
+        },
+        {
+          "title": "Valmiina puhelimille",
+          "layout": "image-bottom",
+          "html": "<p>Sivu luettelee tämän Deploy Appin puhelimet: vielä ei yhtään. Jätä se auki ja liitä puhelimet.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/afb67a1cd0952c42.webp",
+              "width": 1860,
+              "height": 1273
+            }
+          ]
+        },
+        {
+          "title": "Ilman liitintä",
+          "layout": "image-bottom",
+          "html": "<p>Ilman liitintä tekninen henkilöstö voi määrittää suurimman osan tästä MDM:ään käsin. Fleetin kanssa katso <strong>Määritä Fleet ilman liitintä</strong> luvussa <strong>MDM: Fleet</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/91d4fcdc6d6d1f95.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
