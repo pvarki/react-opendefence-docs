@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "locale": "en",
-  "generatedAt": "2026-11-22T16:15:14.875Z",
+  "generatedAt": "2026-11-22T21:17:10.533Z",
   "collections": [
     {
       "slug": "deploy-app",
@@ -425,7 +425,7 @@
         "Install the connector"
       ],
       "path": "/content/en/pages/deploy-app/install-the-connector-Fi93BT5Ntd.json",
-      "updatedAt": "2026-11-22T15:34:07.635Z",
+      "updatedAt": "2026-11-22T21:13:01.064Z",
       "order": 9,
       "platform": "android",
       "clientId": "android-MENReFAfCN",
@@ -565,7 +565,7 @@
         "Install the connector from a terminal"
       ],
       "path": "/content/en/pages/deploy-app/install-the-connector-from-a-terminal-vSDV2SJXgj.json",
-      "updatedAt": "2026-11-22T02:20:13.893Z",
+      "updatedAt": "2026-11-22T21:13:51.466Z",
       "order": 16,
       "platform": "android",
       "clientId": "android-MENReFAfCN",

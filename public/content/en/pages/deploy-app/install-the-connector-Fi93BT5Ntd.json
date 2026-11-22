@@ -13,7 +13,7 @@
     "Install the connector"
   ],
   "createdAt": "2026-11-21T08:05:50.369Z",
-  "updatedAt": "2026-11-22T15:34:07.635Z",
+  "updatedAt": "2026-11-22T21:13:01.064Z",
   "headings": [],
   "blocks": [
     {
@@ -41,18 +41,6 @@
               "src": "/content/images/en/attachments/6dce91ada27a12c8.webp",
               "width": 1860,
               "height": 889
-            }
-          ]
-        },
-        {
-          "title": "No such button?",
-          "layout": "image-bottom",
-          "html": "<p>A Deploy App that does not offer the download has no such button. Then see <strong>Install the connector from a terminal</strong>.</p>",
-          "images": [
-            {
-              "src": "/content/images/en/attachments/5192c3d6856b3812.webp",
-              "width": 1800,
-              "height": 1000
             }
           ]
         },

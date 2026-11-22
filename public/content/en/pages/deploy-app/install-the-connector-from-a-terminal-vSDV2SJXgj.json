@@ -13,7 +13,7 @@
     "Install the connector from a terminal"
   ],
   "createdAt": "2026-11-22T01:37:42.104Z",
-  "updatedAt": "2026-11-22T02:20:13.893Z",
+  "updatedAt": "2026-11-22T21:13:51.466Z",
   "headings": [],
   "blocks": [
     {
@@ -23,7 +23,7 @@
         {
           "title": "When to use a terminal",
           "layout": "image-bottom",
-          "html": "<p>Use these slides when your Deploy App does not offer the download, or for a plugin. Open a terminal: on Windows <strong>Start</strong>, type <code>PowerShell</code>; on a Mac Cmd+Space, type <code>Terminal</code>; then press Enter.</p>",
+          "html": "<p>Use these slides for a plugin, or if you prefer a terminal to the downloaded file. Open a terminal: on Windows <strong>Start</strong>, type <code>PowerShell</code>; on a Mac Cmd+Space, type <code>Terminal</code>; then press Enter.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/a8ddf3b7717ed673.webp",
