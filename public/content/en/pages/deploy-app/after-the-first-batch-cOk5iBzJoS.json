@@ -13,7 +13,7 @@
     "After the first batch"
   ],
   "createdAt": "2026-11-21T08:07:42.947Z",
-  "updatedAt": "2026-11-22T22:29:46.499Z",
+  "updatedAt": "2026-11-23T22:12:10.446Z",
   "headings": [],
   "translations": {
     "en": "/en/deploy-app/after-the-first-batch-cOk5iBzJoS",
@@ -184,10 +184,10 @@
         {
           "title": "Remove a Deploy App",
           "layout": "image-bottom",
-          "html": "<p>In the same list, <strong>Remove north.example.fi…</strong> asks first, then forgets that Deploy App and its token on this computer. Nothing changes in Deploy App, your MDM or the phones.</p>",
+          "html": "<p>In the same list, <strong>Remove north.example.fi…</strong> asks first, then forgets that Deploy App and its token on this computer. Nothing changes in Deploy App, your MDM or the phones. To end it in your MDM too, see <strong>When the deployment ends</strong>.</p>",
           "images": [
             {
-              "src": "/content/images/en/attachments/762126c97999ea93.webp",
+              "src": "/content/images/en/attachments/7dbc9f5938f0e007.webp",
               "width": 1860,
               "height": 1273
             }

@@ -13,7 +13,7 @@
     "Install the connector"
   ],
   "createdAt": "2026-11-21T08:05:50.369Z",
-  "updatedAt": "2026-11-22T22:29:42.481Z",
+  "updatedAt": "2026-11-23T22:11:16.329Z",
   "headings": [],
   "translations": {
     "en": "/en/deploy-app/install-the-connector-Fi93BT5Ntd",
@@ -220,10 +220,10 @@
         {
           "title": "Remove it",
           "layout": "image-bottom",
-          "html": "<p>First open the Deploy App's name at the top right and remove each Deploy App, so the keychain keeps no token. Then stop the connector and delete the file.</p>",
+          "html": "<p>First open the Deploy App's name at the top right and remove each Deploy App, so the keychain keeps no token. Is its deployment over? See <strong>When the deployment ends</strong> first. Then stop the connector and delete the file.</p>",
           "images": [
             {
-              "src": "/content/images/en/attachments/762126c97999ea93.webp",
+              "src": "/content/images/en/attachments/7dbc9f5938f0e007.webp",
               "width": 1860,
               "height": 1273
             }
