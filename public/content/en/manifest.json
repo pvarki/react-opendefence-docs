@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "locale": "en",
-  "generatedAt": "2026-11-23T20:08:53.064Z",
+  "generatedAt": "2026-11-23T21:10:37.627Z",
   "collections": [
     {
       "slug": "deploy-app",
@@ -3700,19 +3700,81 @@
     },
     {
       "id": "4456842b-d383-4a78-bb25-881c3297e3b0",
-      "slug": "why-opendefence-main-qSkewIfx3U",
+      "slug": "introduction-qSkewIfx3U",
       "collection": "wikis/opendefence-plugins",
-      "title": "Why OpenDefence Main",
+      "title": "Introduction",
       "breadcrumb": [
         "OpenDefence Main",
-        "About",
-        "Why OpenDefence Main"
+        "Introduction"
       ],
-      "path": "/content/en/pages/wikis/opendefence-plugins/why-opendefence-main-qSkewIfx3U.json",
-      "updatedAt": "2026-11-23T20:01:15.372Z",
+      "path": "/content/en/pages/wikis/opendefence-plugins/introduction-qSkewIfx3U.json",
+      "updatedAt": "2026-11-23T21:06:29.239Z",
       "order": 0,
-      "chapterId": "about-2cyZsZGd4Y",
-      "chapterLabel": "About"
+      "chapterId": "opendefence-main-D5yPc1Vhkr",
+      "chapterLabel": "OpenDefence Main"
+    },
+    {
+      "id": "95d40723-7d1f-4465-bae4-4ac9e2e0e33d",
+      "slug": "concepts-A8ZscwHYBx",
+      "collection": "wikis/opendefence-plugins",
+      "title": "Concepts",
+      "breadcrumb": [
+        "OpenDefence Main",
+        "Concepts"
+      ],
+      "path": "/content/en/pages/wikis/opendefence-plugins/concepts-A8ZscwHYBx.json",
+      "updatedAt": "2026-11-23T21:06:38.293Z",
+      "order": 1,
+      "chapterId": "opendefence-main-D5yPc1Vhkr",
+      "chapterLabel": "OpenDefence Main"
+    },
+    {
+      "id": "23d433a7-11c9-430b-b8be-4723d5745091",
+      "slug": "set-up-the-orbat-admins-GdcjlgH84p",
+      "collection": "wikis/opendefence-plugins",
+      "title": "Set up the ORBAT (admins)",
+      "breadcrumb": [
+        "OpenDefence Main",
+        "Setting up",
+        "Set up the ORBAT (admins)"
+      ],
+      "path": "/content/en/pages/wikis/opendefence-plugins/set-up-the-orbat-admins-GdcjlgH84p.json",
+      "updatedAt": "2026-11-23T12:42:04.216Z",
+      "order": 2,
+      "chapterId": "setting-up-SWxYLg9BIc",
+      "chapterLabel": "Setting up"
+    },
+    {
+      "id": "2d9c402b-e58a-4e6b-9a05-c453c6874382",
+      "slug": "set-favourites-and-defaults-admins-9pQQEPNhRd",
+      "collection": "wikis/opendefence-plugins",
+      "title": "Set favourites and defaults (admins)",
+      "breadcrumb": [
+        "OpenDefence Main",
+        "Setting up",
+        "Set favourites and defaults (admins)"
+      ],
+      "path": "/content/en/pages/wikis/opendefence-plugins/set-favourites-and-defaults-admins-9pQQEPNhRd.json",
+      "updatedAt": "2026-11-23T12:42:46.678Z",
+      "order": 3,
+      "chapterId": "setting-up-SWxYLg9BIc",
+      "chapterLabel": "Setting up"
+    },
+    {
+      "id": "6ff8c01b-6177-48c0-89bd-b8ce8242026b",
+      "slug": "share-a-setup-as-a-template-admins-ZQFGv1UdSz",
+      "collection": "wikis/opendefence-plugins",
+      "title": "Share a setup as a template (admins)",
+      "breadcrumb": [
+        "OpenDefence Main",
+        "Setting up",
+        "Share a setup as a template (admins)"
+      ],
+      "path": "/content/en/pages/wikis/opendefence-plugins/share-a-setup-as-a-template-admins-ZQFGv1UdSz.json",
+      "updatedAt": "2026-11-23T12:42:52.589Z",
+      "order": 4,
+      "chapterId": "setting-up-SWxYLg9BIc",
+      "chapterLabel": "Setting up"
     },
     {
       "id": "c3b38071-28c1-45e4-92eb-e7cf287cb24b",
@@ -3721,238 +3783,46 @@
       "title": "The thumb bar",
       "breadcrumb": [
         "OpenDefence Main",
-        "About",
+        "Starting as a user",
         "The thumb bar"
       ],
       "path": "/content/en/pages/wikis/opendefence-plugins/the-thumb-bar-Ky6JMEoHf3.json",
       "updatedAt": "2026-11-23T12:38:45.426Z",
-      "order": 1,
-      "chapterId": "about-2cyZsZGd4Y",
-      "chapterLabel": "About"
-    },
-    {
-      "id": "c52a9d65-b723-4fca-ae1a-3f7b091e3a80",
-      "slug": "mark-an-enemy-K0Yfm70eNf",
-      "collection": "wikis/opendefence-plugins",
-      "title": "Mark an enemy",
-      "breadcrumb": [
-        "OpenDefence Main",
-        "Marking",
-        "Mark an enemy"
-      ],
-      "path": "/content/en/pages/wikis/opendefence-plugins/mark-an-enemy-K0Yfm70eNf.json",
-      "updatedAt": "2026-11-23T20:01:23.058Z",
-      "order": 2,
-      "chapterId": "marking-XF1J9UfeuT",
-      "chapterLabel": "Marking"
-    },
-    {
-      "id": "26f6fced-7e17-4748-a059-306cd9a771f4",
-      "slug": "mark-friendly-units-positions-routes-and-areas-Io7ZDzuDxE",
-      "collection": "wikis/opendefence-plugins",
-      "title": "Mark friendly units, positions, routes and areas",
-      "breadcrumb": [
-        "OpenDefence Main",
-        "Marking",
-        "Mark friendly units, positions, routes and areas"
-      ],
-      "path": "/content/en/pages/wikis/opendefence-plugins/mark-friendly-units-positions-routes-and-areas-Io7ZDzuDxE.json",
-      "updatedAt": "2026-11-23T20:01:32.423Z",
-      "order": 3,
-      "chapterId": "marking-XF1J9UfeuT",
-      "chapterLabel": "Marking"
-    },
-    {
-      "id": "a6a52bbe-7208-4789-b7e8-c9060a0effb3",
-      "slug": "show-heading-and-speed-JBOovcbUuP",
-      "collection": "wikis/opendefence-plugins",
-      "title": "Show heading and speed",
-      "breadcrumb": [
-        "OpenDefence Main",
-        "Marking",
-        "Show heading and speed"
-      ],
-      "path": "/content/en/pages/wikis/opendefence-plugins/show-heading-and-speed-JBOovcbUuP.json",
-      "updatedAt": "2026-11-23T12:39:41.208Z",
-      "order": 4,
-      "chapterId": "marking-XF1J9UfeuT",
-      "chapterLabel": "Marking"
-    },
-    {
-      "id": "3d6bfb60-d04e-4f58-9455-4325c24b12fd",
-      "slug": "tell-stale-marks-from-fresh-ones-hydpkikyzd",
-      "collection": "wikis/opendefence-plugins",
-      "title": "Tell stale marks from fresh ones",
-      "breadcrumb": [
-        "OpenDefence Main",
-        "Marking",
-        "Tell stale marks from fresh ones"
-      ],
-      "path": "/content/en/pages/wikis/opendefence-plugins/tell-stale-marks-from-fresh-ones-hydpkikyzd.json",
-      "updatedAt": "2026-11-23T12:39:59.054Z",
       "order": 5,
-      "chapterId": "marking-XF1J9UfeuT",
-      "chapterLabel": "Marking"
+      "chapterId": "starting-as-a-user-2cyZsZGd4Y",
+      "chapterLabel": "Starting as a user"
     },
     {
-      "id": "ee02836d-260c-470e-9d12-8ffd94095bc1",
-      "slug": "add-details-to-a-mark-ushiTeUjx2",
+      "id": "120274f1-e0e5-4dba-8caf-bde6ab4fe8da",
+      "slug": "pick-your-unit-oXkeDUK6xZ",
       "collection": "wikis/opendefence-plugins",
-      "title": "Add details to a mark",
+      "title": "Pick your unit",
       "breadcrumb": [
         "OpenDefence Main",
-        "Marking",
-        "Add details to a mark"
+        "Starting as a user",
+        "Pick your unit"
       ],
-      "path": "/content/en/pages/wikis/opendefence-plugins/add-details-to-a-mark-ushiTeUjx2.json",
-      "updatedAt": "2026-11-23T12:38:53.923Z",
+      "path": "/content/en/pages/wikis/opendefence-plugins/pick-your-unit-oXkeDUK6xZ.json",
+      "updatedAt": "2026-11-23T21:06:45.996Z",
       "order": 6,
-      "chapterId": "marking-XF1J9UfeuT",
-      "chapterLabel": "Marking"
+      "chapterId": "starting-as-a-user-2cyZsZGd4Y",
+      "chapterLabel": "Starting as a user"
     },
     {
-      "id": "3ae59bcc-3aef-4a7c-87cb-5a00ac0efb1c",
-      "slug": "mark-an-enemy-drone-3N3eBeJers",
+      "id": "3d1e64ec-8727-4d80-a365-7facb3522a44",
+      "slug": "choose-what-counts-as-near-dVH1nWSqg0",
       "collection": "wikis/opendefence-plugins",
-      "title": "Mark an enemy drone",
+      "title": "Choose what counts as near",
       "breadcrumb": [
         "OpenDefence Main",
-        "Marking",
-        "Mark an enemy drone"
+        "Starting as a user",
+        "Choose what counts as near"
       ],
-      "path": "/content/en/pages/wikis/opendefence-plugins/mark-an-enemy-drone-3N3eBeJers.json",
-      "updatedAt": "2026-11-23T12:39:00.676Z",
+      "path": "/content/en/pages/wikis/opendefence-plugins/choose-what-counts-as-near-dVH1nWSqg0.json",
+      "updatedAt": "2026-11-23T20:42:59.009Z",
       "order": 7,
-      "chapterId": "marking-XF1J9UfeuT",
-      "chapterLabel": "Marking"
-    },
-    {
-      "id": "db1490a4-fec9-4a19-a2e7-6acb3c430f6d",
-      "slug": "mark-unknown-and-neutral-contacts-jOAvlyCt0c",
-      "collection": "wikis/opendefence-plugins",
-      "title": "Mark unknown and neutral contacts",
-      "breadcrumb": [
-        "OpenDefence Main",
-        "Marking",
-        "Mark unknown and neutral contacts"
-      ],
-      "path": "/content/en/pages/wikis/opendefence-plugins/mark-unknown-and-neutral-contacts-jOAvlyCt0c.json",
-      "updatedAt": "2026-11-23T12:39:05.942Z",
-      "order": 8,
-      "chapterId": "marking-XF1J9UfeuT",
-      "chapterLabel": "Marking"
-    },
-    {
-      "id": "157bb7dd-9912-428e-bdd0-a0de4c684d66",
-      "slug": "place-a-mark-by-grid-sv0H59a7LQ",
-      "collection": "wikis/opendefence-plugins",
-      "title": "Place a mark by grid",
-      "breadcrumb": [
-        "OpenDefence Main",
-        "Marking",
-        "Place a mark by grid"
-      ],
-      "path": "/content/en/pages/wikis/opendefence-plugins/place-a-mark-by-grid-sv0H59a7LQ.json",
-      "updatedAt": "2026-11-23T12:39:45.625Z",
-      "order": 9,
-      "chapterId": "marking-XF1J9UfeuT",
-      "chapterLabel": "Marking"
-    },
-    {
-      "id": "88b4232f-b319-4f5b-bc8e-248f521a237b",
-      "slug": "mark-posts-code-name-points-and-patrols-LMlR75u5vV",
-      "collection": "wikis/opendefence-plugins",
-      "title": "Mark posts, code-name points and patrols",
-      "breadcrumb": [
-        "OpenDefence Main",
-        "Marking",
-        "Mark posts, code-name points and patrols"
-      ],
-      "path": "/content/en/pages/wikis/opendefence-plugins/mark-posts-code-name-points-and-patrols-LMlR75u5vV.json",
-      "updatedAt": "2026-11-23T12:39:54.103Z",
-      "order": 10,
-      "chapterId": "marking-XF1J9UfeuT",
-      "chapterLabel": "Marking"
-    },
-    {
-      "id": "103e5843-3d86-4a9a-94da-4d42cb8292e0",
-      "slug": "mark-a-halt-and-its-positions-LZHLEd4XYT",
-      "collection": "wikis/opendefence-plugins",
-      "title": "Mark a halt and its positions",
-      "breadcrumb": [
-        "OpenDefence Main",
-        "Marking",
-        "Mark a halt and its positions"
-      ],
-      "path": "/content/en/pages/wikis/opendefence-plugins/mark-a-halt-and-its-positions-LZHLEd4XYT.json",
-      "updatedAt": "2026-11-23T20:02:13.534Z",
-      "order": 11,
-      "chapterId": "marking-XF1J9UfeuT",
-      "chapterLabel": "Marking"
-    },
-    {
-      "id": "cc689956-f5ef-4f31-87cc-840d6ca0777e",
-      "slug": "send-a-mark-BE0s8jVOmW",
-      "collection": "wikis/opendefence-plugins",
-      "title": "Send a mark",
-      "breadcrumb": [
-        "OpenDefence Main",
-        "Sharing",
-        "Send a mark"
-      ],
-      "path": "/content/en/pages/wikis/opendefence-plugins/send-a-mark-BE0s8jVOmW.json",
-      "updatedAt": "2026-11-23T20:02:21.000Z",
-      "order": 12,
-      "chapterId": "sharing-HjXUGvZf4P",
-      "chapterLabel": "Sharing"
-    },
-    {
-      "id": "55734353-57ac-4cf7-9dbd-13157f4d9961",
-      "slug": "edit-or-undo-a-mark-ekPQ5TkC5L",
-      "collection": "wikis/opendefence-plugins",
-      "title": "Edit or undo a mark",
-      "breadcrumb": [
-        "OpenDefence Main",
-        "Sharing",
-        "Edit or undo a mark"
-      ],
-      "path": "/content/en/pages/wikis/opendefence-plugins/edit-or-undo-a-mark-ekPQ5TkC5L.json",
-      "updatedAt": "2026-11-23T20:02:28.628Z",
-      "order": 13,
-      "chapterId": "sharing-HjXUGvZf4P",
-      "chapterLabel": "Sharing"
-    },
-    {
-      "id": "b551d267-fcb4-492e-a2e3-9e1b5de42124",
-      "slug": "read-your-inbox-E7dixp7sWf",
-      "collection": "wikis/opendefence-plugins",
-      "title": "Read your Inbox",
-      "breadcrumb": [
-        "OpenDefence Main",
-        "Reading",
-        "Read your Inbox"
-      ],
-      "path": "/content/en/pages/wikis/opendefence-plugins/read-your-inbox-E7dixp7sWf.json",
-      "updatedAt": "2026-11-23T12:40:07.342Z",
-      "order": 14,
-      "chapterId": "reading-Fwe1ClqQRV",
-      "chapterLabel": "Reading"
-    },
-    {
-      "id": "ff9435df-7522-41f9-a307-9755c539e38d",
-      "slug": "use-the-timeline-nbX0VE7qWM",
-      "collection": "wikis/opendefence-plugins",
-      "title": "Use the timeline",
-      "breadcrumb": [
-        "OpenDefence Main",
-        "Reading",
-        "Use the timeline"
-      ],
-      "path": "/content/en/pages/wikis/opendefence-plugins/use-the-timeline-nbX0VE7qWM.json",
-      "updatedAt": "2026-11-23T12:40:56.543Z",
-      "order": 15,
-      "chapterId": "reading-Fwe1ClqQRV",
-      "chapterLabel": "Reading"
+      "chapterId": "starting-as-a-user-2cyZsZGd4Y",
+      "chapterLabel": "Starting as a user"
     },
     {
       "id": "1a4293c3-d10d-4dd5-bf5e-036da4353244",
@@ -3961,14 +3831,46 @@
       "title": "Choose alerts and quiet time",
       "breadcrumb": [
         "OpenDefence Main",
-        "Reading",
+        "Starting as a user",
         "Choose alerts and quiet time"
       ],
       "path": "/content/en/pages/wikis/opendefence-plugins/choose-alerts-and-quiet-time-Jw0ihPyXeZ.json",
-      "updatedAt": "2026-11-23T12:40:43.241Z",
-      "order": 16,
-      "chapterId": "reading-Fwe1ClqQRV",
-      "chapterLabel": "Reading"
+      "updatedAt": "2026-11-23T20:42:57.672Z",
+      "order": 8,
+      "chapterId": "starting-as-a-user-2cyZsZGd4Y",
+      "chapterLabel": "Starting as a user"
+    },
+    {
+      "id": "9cd2885d-db86-49a0-8f6e-a394ffb532b6",
+      "slug": "find-the-settings-and-the-user-manual-BZxmLEFNqW",
+      "collection": "wikis/opendefence-plugins",
+      "title": "Find the settings and the user manual",
+      "breadcrumb": [
+        "OpenDefence Main",
+        "Starting as a user",
+        "Find the settings and the user manual"
+      ],
+      "path": "/content/en/pages/wikis/opendefence-plugins/find-the-settings-and-the-user-manual-BZxmLEFNqW.json",
+      "updatedAt": "2026-11-23T20:42:59.441Z",
+      "order": 9,
+      "chapterId": "starting-as-a-user-2cyZsZGd4Y",
+      "chapterLabel": "Starting as a user"
+    },
+    {
+      "id": "b551d267-fcb4-492e-a2e3-9e1b5de42124",
+      "slug": "read-your-inbox-E7dixp7sWf",
+      "collection": "wikis/opendefence-plugins",
+      "title": "Read your Inbox",
+      "breadcrumb": [
+        "OpenDefence Main",
+        "Inbox, receiving and timeline",
+        "Read your Inbox"
+      ],
+      "path": "/content/en/pages/wikis/opendefence-plugins/read-your-inbox-E7dixp7sWf.json",
+      "updatedAt": "2026-11-23T12:40:07.342Z",
+      "order": 10,
+      "chapterId": "inbox-receiving-and-timeline-Fwe1ClqQRV",
+      "chapterLabel": "Inbox, receiving and timeline"
     },
     {
       "id": "6e27751a-c635-4dc9-aa7d-d2280c2775b8",
@@ -3977,14 +3879,94 @@
       "title": "See what your unit reported",
       "breadcrumb": [
         "OpenDefence Main",
-        "Reading",
+        "Inbox, receiving and timeline",
         "See what your unit reported"
       ],
       "path": "/content/en/pages/wikis/opendefence-plugins/see-what-your-unit-reported-778pSV3jkJ.json",
       "updatedAt": "2026-11-23T12:40:49.310Z",
-      "order": 17,
-      "chapterId": "reading-Fwe1ClqQRV",
-      "chapterLabel": "Reading"
+      "order": 11,
+      "chapterId": "inbox-receiving-and-timeline-Fwe1ClqQRV",
+      "chapterLabel": "Inbox, receiving and timeline"
+    },
+    {
+      "id": "ff9435df-7522-41f9-a307-9755c539e38d",
+      "slug": "use-the-timeline-nbX0VE7qWM",
+      "collection": "wikis/opendefence-plugins",
+      "title": "Use the timeline",
+      "breadcrumb": [
+        "OpenDefence Main",
+        "Inbox, receiving and timeline",
+        "Use the timeline"
+      ],
+      "path": "/content/en/pages/wikis/opendefence-plugins/use-the-timeline-nbX0VE7qWM.json",
+      "updatedAt": "2026-11-23T12:40:56.543Z",
+      "order": 12,
+      "chapterId": "inbox-receiving-and-timeline-Fwe1ClqQRV",
+      "chapterLabel": "Inbox, receiving and timeline"
+    },
+    {
+      "id": "c52a9d65-b723-4fca-ae1a-3f7b091e3a80",
+      "slug": "mark-an-enemy-K0Yfm70eNf",
+      "collection": "wikis/opendefence-plugins",
+      "title": "Mark an enemy",
+      "breadcrumb": [
+        "OpenDefence Main",
+        "Drawing markers and sending them",
+        "Mark an enemy"
+      ],
+      "path": "/content/en/pages/wikis/opendefence-plugins/mark-an-enemy-K0Yfm70eNf.json",
+      "updatedAt": "2026-11-23T20:42:56.578Z",
+      "order": 13,
+      "chapterId": "drawing-markers-and-sending-them-HjXUGvZf4P",
+      "chapterLabel": "Drawing markers and sending them"
+    },
+    {
+      "id": "cc689956-f5ef-4f31-87cc-840d6ca0777e",
+      "slug": "send-a-mark-BE0s8jVOmW",
+      "collection": "wikis/opendefence-plugins",
+      "title": "Send a mark",
+      "breadcrumb": [
+        "OpenDefence Main",
+        "Drawing markers and sending them",
+        "Send a mark"
+      ],
+      "path": "/content/en/pages/wikis/opendefence-plugins/send-a-mark-BE0s8jVOmW.json",
+      "updatedAt": "2026-11-23T20:02:21.000Z",
+      "order": 14,
+      "chapterId": "drawing-markers-and-sending-them-HjXUGvZf4P",
+      "chapterLabel": "Drawing markers and sending them"
+    },
+    {
+      "id": "55734353-57ac-4cf7-9dbd-13157f4d9961",
+      "slug": "edit-or-undo-a-mark-ekPQ5TkC5L",
+      "collection": "wikis/opendefence-plugins",
+      "title": "Edit or undo a mark",
+      "breadcrumb": [
+        "OpenDefence Main",
+        "Drawing markers and sending them",
+        "Edit or undo a mark"
+      ],
+      "path": "/content/en/pages/wikis/opendefence-plugins/edit-or-undo-a-mark-ekPQ5TkC5L.json",
+      "updatedAt": "2026-11-23T20:02:28.628Z",
+      "order": 15,
+      "chapterId": "drawing-markers-and-sending-them-HjXUGvZf4P",
+      "chapterLabel": "Drawing markers and sending them"
+    },
+    {
+      "id": "3d6bfb60-d04e-4f58-9455-4325c24b12fd",
+      "slug": "tell-stale-marks-from-fresh-ones-hydpkikyzd",
+      "collection": "wikis/opendefence-plugins",
+      "title": "Tell stale marks from fresh ones",
+      "breadcrumb": [
+        "OpenDefence Main",
+        "Managing stale markers",
+        "Tell stale marks from fresh ones"
+      ],
+      "path": "/content/en/pages/wikis/opendefence-plugins/tell-stale-marks-from-fresh-ones-hydpkikyzd.json",
+      "updatedAt": "2026-11-23T21:06:52.200Z",
+      "order": 16,
+      "chapterId": "managing-stale-markers-a4uWglTaf0",
+      "chapterLabel": "Managing stale markers"
     },
     {
       "id": "f097e147-f3e2-42ae-8aed-644503c864fb",
@@ -3997,8 +3979,8 @@
         "Request drones on a mark or area"
       ],
       "path": "/content/en/pages/wikis/opendefence-plugins/request-drones-on-a-mark-or-area-5bytZM8jZl.json",
-      "updatedAt": "2026-11-23T20:02:37.831Z",
-      "order": 18,
+      "updatedAt": "2026-11-23T21:07:31.032Z",
+      "order": 17,
       "chapterId": "requests-pCxzxkcC14",
       "chapterLabel": "Requests"
     },
@@ -4014,7 +3996,7 @@
       ],
       "path": "/content/en/pages/wikis/opendefence-plugins/see-requests-waiting-for-you-U31GbV0uuU.json",
       "updatedAt": "2026-11-23T12:41:02.053Z",
-      "order": 19,
+      "order": 18,
       "chapterId": "requests-pCxzxkcC14",
       "chapterLabel": "Requests"
     },
@@ -4030,105 +4012,183 @@
       ],
       "path": "/content/en/pages/wikis/opendefence-plugins/mark-what-a-drone-sees-p5EDt8y6Vi.json",
       "updatedAt": "2026-11-23T12:41:07.246Z",
-      "order": 20,
+      "order": 19,
       "chapterId": "requests-pCxzxkcC14",
       "chapterLabel": "Requests"
     },
     {
-      "id": "120274f1-e0e5-4dba-8caf-bde6ab4fe8da",
-      "slug": "pick-your-unit-and-dim-the-map-oXkeDUK6xZ",
+      "id": "26f6fced-7e17-4748-a059-306cd9a771f4",
+      "slug": "mark-friendly-units-positions-routes-and-areas-Io7ZDzuDxE",
       "collection": "wikis/opendefence-plugins",
-      "title": "Pick your unit and dim the map",
+      "title": "Mark friendly units, positions, routes and areas",
       "breadcrumb": [
         "OpenDefence Main",
-        "Setup",
-        "Pick your unit and dim the map"
+        "Advanced",
+        "Mark friendly units, positions, routes and areas"
       ],
-      "path": "/content/en/pages/wikis/opendefence-plugins/pick-your-unit-and-dim-the-map-oXkeDUK6xZ.json",
-      "updatedAt": "2026-11-23T12:41:45.025Z",
+      "path": "/content/en/pages/wikis/opendefence-plugins/mark-friendly-units-positions-routes-and-areas-Io7ZDzuDxE.json",
+      "updatedAt": "2026-11-23T20:01:32.423Z",
+      "order": 20,
+      "chapterId": "advanced-XF1J9UfeuT",
+      "chapterLabel": "Advanced"
+    },
+    {
+      "id": "103e5843-3d86-4a9a-94da-4d42cb8292e0",
+      "slug": "mark-a-halt-and-its-positions-LZHLEd4XYT",
+      "collection": "wikis/opendefence-plugins",
+      "title": "Mark a halt and its positions",
+      "breadcrumb": [
+        "OpenDefence Main",
+        "Advanced",
+        "Mark a halt and its positions"
+      ],
+      "path": "/content/en/pages/wikis/opendefence-plugins/mark-a-halt-and-its-positions-LZHLEd4XYT.json",
+      "updatedAt": "2026-11-23T20:02:13.534Z",
       "order": 21,
-      "chapterId": "setup-SWxYLg9BIc",
-      "chapterLabel": "Setup"
+      "chapterId": "advanced-XF1J9UfeuT",
+      "chapterLabel": "Advanced"
     },
     {
-      "id": "23d433a7-11c9-430b-b8be-4723d5745091",
-      "slug": "set-up-the-orbat-admins-GdcjlgH84p",
+      "id": "88b4232f-b319-4f5b-bc8e-248f521a237b",
+      "slug": "mark-posts-code-name-points-and-patrols-LMlR75u5vV",
       "collection": "wikis/opendefence-plugins",
-      "title": "Set up the ORBAT (admins)",
+      "title": "Mark posts, code-name points and patrols",
       "breadcrumb": [
         "OpenDefence Main",
-        "Setup",
-        "Set up the ORBAT (admins)"
+        "Advanced",
+        "Mark posts, code-name points and patrols"
       ],
-      "path": "/content/en/pages/wikis/opendefence-plugins/set-up-the-orbat-admins-GdcjlgH84p.json",
-      "updatedAt": "2026-11-23T12:42:04.216Z",
+      "path": "/content/en/pages/wikis/opendefence-plugins/mark-posts-code-name-points-and-patrols-LMlR75u5vV.json",
+      "updatedAt": "2026-11-23T12:39:54.103Z",
       "order": 22,
-      "chapterId": "setup-SWxYLg9BIc",
-      "chapterLabel": "Setup"
+      "chapterId": "advanced-XF1J9UfeuT",
+      "chapterLabel": "Advanced"
     },
     {
-      "id": "2d9c402b-e58a-4e6b-9a05-c453c6874382",
-      "slug": "set-favourites-and-defaults-admins-9pQQEPNhRd",
+      "id": "ee02836d-260c-470e-9d12-8ffd94095bc1",
+      "slug": "add-details-to-a-mark-ushiTeUjx2",
       "collection": "wikis/opendefence-plugins",
-      "title": "Set favourites and defaults (admins)",
+      "title": "Add details to a mark",
       "breadcrumb": [
         "OpenDefence Main",
-        "Setup",
-        "Set favourites and defaults (admins)"
+        "Advanced",
+        "Add details to a mark"
       ],
-      "path": "/content/en/pages/wikis/opendefence-plugins/set-favourites-and-defaults-admins-9pQQEPNhRd.json",
-      "updatedAt": "2026-11-23T12:42:46.678Z",
+      "path": "/content/en/pages/wikis/opendefence-plugins/add-details-to-a-mark-ushiTeUjx2.json",
+      "updatedAt": "2026-11-23T12:38:53.923Z",
       "order": 23,
-      "chapterId": "setup-SWxYLg9BIc",
-      "chapterLabel": "Setup"
+      "chapterId": "advanced-XF1J9UfeuT",
+      "chapterLabel": "Advanced"
     },
     {
-      "id": "3d1e64ec-8727-4d80-a365-7facb3522a44",
-      "slug": "choose-what-counts-as-near-dVH1nWSqg0",
+      "id": "a6a52bbe-7208-4789-b7e8-c9060a0effb3",
+      "slug": "show-heading-and-speed-JBOovcbUuP",
       "collection": "wikis/opendefence-plugins",
-      "title": "Choose what counts as near",
+      "title": "Show heading and speed",
       "breadcrumb": [
         "OpenDefence Main",
-        "Setup",
-        "Choose what counts as near"
+        "Advanced",
+        "Show heading and speed"
       ],
-      "path": "/content/en/pages/wikis/opendefence-plugins/choose-what-counts-as-near-dVH1nWSqg0.json",
-      "updatedAt": "2026-11-23T12:41:50.164Z",
+      "path": "/content/en/pages/wikis/opendefence-plugins/show-heading-and-speed-JBOovcbUuP.json",
+      "updatedAt": "2026-11-23T12:39:41.208Z",
       "order": 24,
-      "chapterId": "setup-SWxYLg9BIc",
-      "chapterLabel": "Setup"
+      "chapterId": "advanced-XF1J9UfeuT",
+      "chapterLabel": "Advanced"
     },
     {
-      "id": "6ff8c01b-6177-48c0-89bd-b8ce8242026b",
-      "slug": "share-a-setup-as-a-template-admins-ZQFGv1UdSz",
+      "id": "3ae59bcc-3aef-4a7c-87cb-5a00ac0efb1c",
+      "slug": "mark-an-enemy-drone-3N3eBeJers",
       "collection": "wikis/opendefence-plugins",
-      "title": "Share a setup as a template (admins)",
+      "title": "Mark an enemy drone",
       "breadcrumb": [
         "OpenDefence Main",
-        "Setup",
-        "Share a setup as a template (admins)"
+        "Advanced",
+        "Mark an enemy drone"
       ],
-      "path": "/content/en/pages/wikis/opendefence-plugins/share-a-setup-as-a-template-admins-ZQFGv1UdSz.json",
-      "updatedAt": "2026-11-23T12:42:52.589Z",
+      "path": "/content/en/pages/wikis/opendefence-plugins/mark-an-enemy-drone-3N3eBeJers.json",
+      "updatedAt": "2026-11-23T12:39:00.676Z",
       "order": 25,
-      "chapterId": "setup-SWxYLg9BIc",
-      "chapterLabel": "Setup"
+      "chapterId": "advanced-XF1J9UfeuT",
+      "chapterLabel": "Advanced"
     },
     {
-      "id": "9cd2885d-db86-49a0-8f6e-a394ffb532b6",
-      "slug": "find-the-settings-and-the-user-manual-BZxmLEFNqW",
+      "id": "db1490a4-fec9-4a19-a2e7-6acb3c430f6d",
+      "slug": "mark-unknown-and-neutral-contacts-jOAvlyCt0c",
       "collection": "wikis/opendefence-plugins",
-      "title": "Find the settings and the user manual",
+      "title": "Mark unknown and neutral contacts",
       "breadcrumb": [
         "OpenDefence Main",
-        "Setup",
-        "Find the settings and the user manual"
+        "Advanced",
+        "Mark unknown and neutral contacts"
       ],
-      "path": "/content/en/pages/wikis/opendefence-plugins/find-the-settings-and-the-user-manual-BZxmLEFNqW.json",
-      "updatedAt": "2026-11-23T12:41:56.623Z",
+      "path": "/content/en/pages/wikis/opendefence-plugins/mark-unknown-and-neutral-contacts-jOAvlyCt0c.json",
+      "updatedAt": "2026-11-23T12:39:05.942Z",
       "order": 26,
-      "chapterId": "setup-SWxYLg9BIc",
-      "chapterLabel": "Setup"
+      "chapterId": "advanced-XF1J9UfeuT",
+      "chapterLabel": "Advanced"
+    },
+    {
+      "id": "157bb7dd-9912-428e-bdd0-a0de4c684d66",
+      "slug": "place-a-mark-by-grid-sv0H59a7LQ",
+      "collection": "wikis/opendefence-plugins",
+      "title": "Place a mark by grid",
+      "breadcrumb": [
+        "OpenDefence Main",
+        "Advanced",
+        "Place a mark by grid"
+      ],
+      "path": "/content/en/pages/wikis/opendefence-plugins/place-a-mark-by-grid-sv0H59a7LQ.json",
+      "updatedAt": "2026-11-23T12:39:45.625Z",
+      "order": 27,
+      "chapterId": "advanced-XF1J9UfeuT",
+      "chapterLabel": "Advanced"
+    },
+    {
+      "id": "595b98b6-724c-4acf-ae0d-27d87f032c34",
+      "slug": "wash-out-the-map-14wSTAXLq0",
+      "collection": "wikis/opendefence-plugins",
+      "title": "Wash out the map",
+      "breadcrumb": [
+        "OpenDefence Main",
+        "Advanced",
+        "Wash out the map"
+      ],
+      "path": "/content/en/pages/wikis/opendefence-plugins/wash-out-the-map-14wSTAXLq0.json",
+      "updatedAt": "2026-11-23T21:07:37.295Z",
+      "order": 28,
+      "chapterId": "advanced-XF1J9UfeuT",
+      "chapterLabel": "Advanced"
+    },
+    {
+      "id": "5a67245d-fd94-4651-a12e-fc7b8f149cbb",
+      "slug": "introduction-j4Le2MC6ed",
+      "collection": "wikis/opendefence-plugins",
+      "title": "Introduction",
+      "breadcrumb": [
+        "OpenDefence UAVOps",
+        "Introduction"
+      ],
+      "path": "/content/en/pages/wikis/opendefence-plugins/introduction-j4Le2MC6ed.json",
+      "updatedAt": "2026-11-23T21:07:43.425Z",
+      "order": 29,
+      "chapterId": "opendefence-uavops-ifEkgFe8Jk",
+      "chapterLabel": "OpenDefence UAVOps"
+    },
+    {
+      "id": "84069cd5-f7e5-4122-8689-fa8737b748da",
+      "slug": "concepts-faJbfGEVjn",
+      "collection": "wikis/opendefence-plugins",
+      "title": "Concepts",
+      "breadcrumb": [
+        "OpenDefence UAVOps",
+        "Concepts"
+      ],
+      "path": "/content/en/pages/wikis/opendefence-plugins/concepts-faJbfGEVjn.json",
+      "updatedAt": "2026-11-23T21:07:52.697Z",
+      "order": 30,
+      "chapterId": "opendefence-uavops-ifEkgFe8Jk",
+      "chapterLabel": "OpenDefence UAVOps"
     },
     {
       "id": "8c1a51d2-3df1-4de9-b6ad-a2f90c58098f",
@@ -4137,14 +4197,14 @@
       "title": "Pick your role and unit",
       "breadcrumb": [
         "OpenDefence UAVOps",
-        "Get started",
+        "Starting as a user",
         "Pick your role and unit"
       ],
       "path": "/content/en/pages/wikis/opendefence-plugins/pick-your-role-and-unit-kRgC9F0DFO.json",
       "updatedAt": "2026-11-23T12:43:03.159Z",
-      "order": 27,
-      "chapterId": "get-started-WTdIbYO7bO",
-      "chapterLabel": "Get started"
+      "order": 31,
+      "chapterId": "starting-as-a-user-WTdIbYO7bO",
+      "chapterLabel": "Starting as a user"
     },
     {
       "id": "5bf32bf6-3b80-4dba-8f46-d97bd4b90749",
@@ -4153,14 +4213,14 @@
       "title": "Open the user manual",
       "breadcrumb": [
         "OpenDefence UAVOps",
-        "Get started",
+        "Starting as a user",
         "Open the user manual"
       ],
       "path": "/content/en/pages/wikis/opendefence-plugins/open-the-user-manual-ypFALFvuyX.json",
       "updatedAt": "2026-11-23T12:43:14.857Z",
-      "order": 28,
-      "chapterId": "get-started-WTdIbYO7bO",
-      "chapterLabel": "Get started"
+      "order": 32,
+      "chapterId": "starting-as-a-user-WTdIbYO7bO",
+      "chapterLabel": "Starting as a user"
     },
     {
       "id": "659db36f-8f06-416b-8161-99d6e9896483",
@@ -4174,7 +4234,7 @@
       ],
       "path": "/content/en/pages/wikis/opendefence-plugins/ask-for-a-drone-Wm8lqKzB5v.json",
       "updatedAt": "2026-11-23T15:08:16.286Z",
-      "order": 29,
+      "order": 33,
       "chapterId": "forward-observer-officer-foo-QTezaGDSdx",
       "chapterLabel": "Forward observer officer"
     },
@@ -4190,7 +4250,7 @@
       ],
       "path": "/content/en/pages/wikis/opendefence-plugins/ask-for-recon-over-an-area-ocS1bj514p.json",
       "updatedAt": "2026-11-23T20:03:14.437Z",
-      "order": 30,
+      "order": 34,
       "chapterId": "forward-observer-officer-foo-QTezaGDSdx",
       "chapterLabel": "Forward observer officer"
     },
@@ -4206,7 +4266,7 @@
       ],
       "path": "/content/en/pages/wikis/opendefence-plugins/follow-your-request-h3Kkovi8rm.json",
       "updatedAt": "2026-11-23T12:47:48.886Z",
-      "order": 31,
+      "order": 35,
       "chapterId": "forward-observer-officer-foo-QTezaGDSdx",
       "chapterLabel": "Forward observer officer"
     },
@@ -4222,7 +4282,7 @@
       ],
       "path": "/content/en/pages/wikis/opendefence-plugins/draw-a-corridor-QLkNeobJW1.json",
       "updatedAt": "2026-11-23T12:47:57.037Z",
-      "order": 32,
+      "order": 36,
       "chapterId": "hq-and-toc-xLYTOtxkp5",
       "chapterLabel": "HQ and TOC"
     },
@@ -4238,7 +4298,7 @@
       ],
       "path": "/content/en/pages/wikis/opendefence-plugins/give-a-quota-KEPqdB5jT4.json",
       "updatedAt": "2026-11-23T15:08:01.091Z",
-      "order": 33,
+      "order": 37,
       "chapterId": "hq-and-toc-xLYTOtxkp5",
       "chapterLabel": "HQ and TOC"
     },
@@ -4254,7 +4314,7 @@
       ],
       "path": "/content/en/pages/wikis/opendefence-plugins/assign-a-request-Jw7WylyATm.json",
       "updatedAt": "2026-11-23T12:53:26.036Z",
-      "order": 34,
+      "order": 38,
       "chapterId": "hq-and-toc-xLYTOtxkp5",
       "chapterLabel": "HQ and TOC"
     },
@@ -4270,7 +4330,7 @@
       ],
       "path": "/content/en/pages/wikis/opendefence-plugins/message-or-decline-a-request-YBBd86Uqfk.json",
       "updatedAt": "2026-11-23T12:53:46.212Z",
-      "order": 35,
+      "order": 39,
       "chapterId": "hq-and-toc-xLYTOtxkp5",
       "chapterLabel": "HQ and TOC"
     },
@@ -4286,7 +4346,7 @@
       ],
       "path": "/content/en/pages/wikis/opendefence-plugins/follow-and-cancel-missions-RDiPd224dM.json",
       "updatedAt": "2026-11-23T12:53:59.044Z",
-      "order": 36,
+      "order": 40,
       "chapterId": "hq-and-toc-xLYTOtxkp5",
       "chapterLabel": "HQ and TOC"
     },
@@ -4302,7 +4362,7 @@
       ],
       "path": "/content/en/pages/wikis/opendefence-plugins/assign-requests-as-a-toc-CqK9kOFC6O.json",
       "updatedAt": "2026-11-23T20:03:20.191Z",
-      "order": 37,
+      "order": 41,
       "chapterId": "hq-and-toc-xLYTOtxkp5",
       "chapterLabel": "HQ and TOC"
     },
@@ -4318,7 +4378,7 @@
       ],
       "path": "/content/en/pages/wikis/opendefence-plugins/end-a-corridor-or-a-quota-pkseFjTDaN.json",
       "updatedAt": "2026-11-23T15:08:26.830Z",
-      "order": 38,
+      "order": 42,
       "chapterId": "hq-and-toc-xLYTOtxkp5",
       "chapterLabel": "HQ and TOC"
     },
@@ -4334,7 +4394,7 @@
       ],
       "path": "/content/en/pages/wikis/opendefence-plugins/set-up-your-drones-ppEaacOYMK.json",
       "updatedAt": "2026-11-23T12:55:20.791Z",
-      "order": 39,
+      "order": 43,
       "chapterId": "drone-team-JlYLvmVyea",
       "chapterLabel": "Drone team"
     },
@@ -4350,7 +4410,7 @@
       ],
       "path": "/content/en/pages/wikis/opendefence-plugins/share-drone-types-S7H8ijvYSH.json",
       "updatedAt": "2026-11-23T12:55:33.972Z",
-      "order": 40,
+      "order": 44,
       "chapterId": "drone-team-JlYLvmVyea",
       "chapterLabel": "Drone team"
     },
@@ -4366,7 +4426,7 @@
       ],
       "path": "/content/en/pages/wikis/opendefence-plugins/plan-a-mission-yVGegg7DLD.json",
       "updatedAt": "2026-11-23T12:55:45.982Z",
-      "order": 41,
+      "order": 45,
       "chapterId": "drone-team-JlYLvmVyea",
       "chapterLabel": "Drone team"
     },
@@ -4382,7 +4442,7 @@
       ],
       "path": "/content/en/pages/wikis/opendefence-plugins/fix-a-plan-that-cannot-be-made-KUsqDaHnoc.json",
       "updatedAt": "2026-11-23T15:08:34.616Z",
-      "order": 42,
+      "order": 46,
       "chapterId": "drone-team-JlYLvmVyea",
       "chapterLabel": "Drone team"
     },
@@ -4398,7 +4458,7 @@
       ],
       "path": "/content/en/pages/wikis/opendefence-plugins/check-the-plan-before-sending-RPB7m27gAZ.json",
       "updatedAt": "2026-11-23T20:03:27.166Z",
-      "order": 43,
+      "order": 47,
       "chapterId": "drone-team-JlYLvmVyea",
       "chapterLabel": "Drone team"
     },
@@ -4414,7 +4474,7 @@
       ],
       "path": "/content/en/pages/wikis/opendefence-plugins/fly-a-mission-kPE0vJm7Hk.json",
       "updatedAt": "2026-11-23T15:09:00.946Z",
-      "order": 44,
+      "order": 48,
       "chapterId": "drone-team-JlYLvmVyea",
       "chapterLabel": "Drone team"
     },
@@ -4430,7 +4490,7 @@
       ],
       "path": "/content/en/pages/wikis/opendefence-plugins/draw-a-hand-flown-drones-path-NX9hw2LszM.json",
       "updatedAt": "2026-11-23T15:09:09.038Z",
-      "order": 45,
+      "order": 49,
       "chapterId": "drone-team-JlYLvmVyea",
       "chapterLabel": "Drone team"
     },
@@ -4446,7 +4506,7 @@
       ],
       "path": "/content/en/pages/wikis/opendefence-plugins/report-a-mission-qa1Hne2kxH.json",
       "updatedAt": "2026-11-23T20:03:33.876Z",
-      "order": 46,
+      "order": 50,
       "chapterId": "drone-team-JlYLvmVyea",
       "chapterLabel": "Drone team"
     },
@@ -4462,7 +4522,7 @@
       ],
       "path": "/content/en/pages/wikis/opendefence-plugins/fly-with-a-drone-track-hjRRfrpQcA.json",
       "updatedAt": "2026-11-23T20:03:39.944Z",
-      "order": 47,
+      "order": 51,
       "chapterId": "drone-team-JlYLvmVyea",
       "chapterLabel": "Drone team"
     },
@@ -4478,7 +4538,7 @@
       ],
       "path": "/content/en/pages/wikis/opendefence-plugins/abort-or-take-back-an-ending-NcqeU1iP46.json",
       "updatedAt": "2026-11-23T15:09:18.898Z",
-      "order": 48,
+      "order": 52,
       "chapterId": "drone-team-JlYLvmVyea",
       "chapterLabel": "Drone team"
     },
@@ -4494,7 +4554,7 @@
       ],
       "path": "/content/en/pages/wikis/opendefence-plugins/confirm-a-strike-with-recon-lFdFjWb71y.json",
       "updatedAt": "2026-11-23T15:09:27.598Z",
-      "order": 49,
+      "order": 53,
       "chapterId": "drone-team-JlYLvmVyea",
       "chapterLabel": "Drone team"
     },
@@ -4510,7 +4570,7 @@
       ],
       "path": "/content/en/pages/wikis/opendefence-plugins/fly-by-the-numbers-LrXYv48SY2.json",
       "updatedAt": "2026-11-23T15:09:36.293Z",
-      "order": 50,
+      "order": 54,
       "chapterId": "pilot-U9TjVVMu8m",
       "chapterLabel": "Pilot"
     },
@@ -4526,7 +4586,7 @@
       ],
       "path": "/content/en/pages/wikis/opendefence-plugins/see-drones-on-the-map-3RuFVgZ7gI.json",
       "updatedAt": "2026-11-23T15:09:45.478Z",
-      "order": 51,
+      "order": 55,
       "chapterId": "everyone-01wZkg8vEZ",
       "chapterLabel": "Everyone"
     },
@@ -4542,7 +4602,7 @@
       ],
       "path": "/content/en/pages/wikis/opendefence-plugins/watch-drone-video-ZdW9in1eoq.json",
       "updatedAt": "2026-11-23T20:04:12.480Z",
-      "order": 52,
+      "order": 56,
       "chapterId": "everyone-01wZkg8vEZ",
       "chapterLabel": "Everyone"
     },
@@ -4558,9 +4618,39 @@
       ],
       "path": "/content/en/pages/wikis/opendefence-plugins/clear-drone-data-ShWSOcLJ1d.json",
       "updatedAt": "2026-11-23T15:09:52.366Z",
-      "order": 53,
+      "order": 57,
       "chapterId": "everyone-01wZkg8vEZ",
       "chapterLabel": "Everyone"
+    },
+    {
+      "id": "3279f23a-cb4c-4575-86df-930f8981efdd",
+      "slug": "introduction-JQETMDrj4f",
+      "collection": "wikis/opendefence-plugins",
+      "title": "Introduction",
+      "breadcrumb": [
+        "OpenDefence Voice",
+        "Introduction"
+      ],
+      "path": "/content/en/pages/wikis/opendefence-plugins/introduction-JQETMDrj4f.json",
+      "updatedAt": "2026-11-23T21:07:58.618Z",
+      "order": 58,
+      "chapterId": "opendefence-voice-Siv4gsBra9",
+      "chapterLabel": "OpenDefence Voice"
+    },
+    {
+      "id": "994fb83a-deef-4109-a533-495181e65638",
+      "slug": "concepts-hcXYz1rNRI",
+      "collection": "wikis/opendefence-plugins",
+      "title": "Concepts",
+      "breadcrumb": [
+        "OpenDefence Voice",
+        "Concepts"
+      ],
+      "path": "/content/en/pages/wikis/opendefence-plugins/concepts-hcXYz1rNRI.json",
+      "updatedAt": "2026-11-23T21:08:31.566Z",
+      "order": 59,
+      "chapterId": "opendefence-voice-Siv4gsBra9",
+      "chapterLabel": "OpenDefence Voice"
     },
     {
       "id": "b6e237dd-464c-4be7-9b6e-dd2a3b22376d",
@@ -4569,14 +4659,30 @@
       "title": "Join a net and talk",
       "breadcrumb": [
         "OpenDefence Voice",
-        "Talk",
+        "Starting as a user",
         "Join a net and talk"
       ],
       "path": "/content/en/pages/wikis/opendefence-plugins/join-a-net-and-talk-XxhpRIvhlN.json",
-      "updatedAt": "2026-11-23T04:59:27.552Z",
-      "order": 54,
-      "chapterId": "talk-q2lqGQEgoe",
-      "chapterLabel": "Talk"
+      "updatedAt": "2026-11-23T20:43:04.326Z",
+      "order": 60,
+      "chapterId": "starting-as-a-user-8NvBWlZmaC",
+      "chapterLabel": "Starting as a user"
+    },
+    {
+      "id": "3062c852-7d72-4c88-ac81-b104611984f9",
+      "slug": "use-a-ptt-button-or-vox-aPSKb5LWyf",
+      "collection": "wikis/opendefence-plugins",
+      "title": "Use a PTT button or VOX",
+      "breadcrumb": [
+        "OpenDefence Voice",
+        "Starting as a user",
+        "Use a PTT button or VOX"
+      ],
+      "path": "/content/en/pages/wikis/opendefence-plugins/use-a-ptt-button-or-vox-aPSKb5LWyf.json",
+      "updatedAt": "2026-11-23T21:08:39.550Z",
+      "order": 61,
+      "chapterId": "starting-as-a-user-8NvBWlZmaC",
+      "chapterLabel": "Starting as a user"
     },
     {
       "id": "e75043fc-819e-4b2e-b0ce-8d628e86ca97",
@@ -4590,7 +4696,7 @@
       ],
       "path": "/content/en/pages/wikis/opendefence-plugins/listen-to-other-nets-OW2RIAkOuU.json",
       "updatedAt": "2026-11-23T04:59:40.520Z",
-      "order": 55,
+      "order": 62,
       "chapterId": "talk-q2lqGQEgoe",
       "chapterLabel": "Talk"
     },
@@ -4606,7 +4712,7 @@
       ],
       "path": "/content/en/pages/wikis/opendefence-plugins/see-who-is-in-your-net-MDeMhgMtZR.json",
       "updatedAt": "2026-11-23T04:59:32.982Z",
-      "order": 56,
+      "order": 63,
       "chapterId": "talk-q2lqGQEgoe",
       "chapterLabel": "Talk"
     },
@@ -4622,57 +4728,9 @@
       ],
       "path": "/content/en/pages/wikis/opendefence-plugins/leave-a-net-YjTAiBTW9V.json",
       "updatedAt": "2026-11-23T04:59:45.990Z",
-      "order": 57,
+      "order": 64,
       "chapterId": "talk-q2lqGQEgoe",
       "chapterLabel": "Talk"
-    },
-    {
-      "id": "5c9b310a-c70c-482f-afe0-05a758197a8d",
-      "slug": "fix-a-ptt-that-will-not-talk-cs5tInnguw",
-      "collection": "wikis/opendefence-plugins",
-      "title": "Fix a PTT that will not talk",
-      "breadcrumb": [
-        "OpenDefence Voice",
-        "Talk",
-        "Fix a PTT that will not talk"
-      ],
-      "path": "/content/en/pages/wikis/opendefence-plugins/fix-a-ptt-that-will-not-talk-cs5tInnguw.json",
-      "updatedAt": "2026-11-23T04:59:50.655Z",
-      "order": 58,
-      "chapterId": "talk-q2lqGQEgoe",
-      "chapterLabel": "Talk"
-    },
-    {
-      "id": "3062c852-7d72-4c88-ac81-b104611984f9",
-      "slug": "use-a-ptt-button-or-vox-aPSKb5LWyf",
-      "collection": "wikis/opendefence-plugins",
-      "title": "Use a PTT button or VOX",
-      "breadcrumb": [
-        "OpenDefence Voice",
-        "Setup",
-        "Use a PTT button or VOX"
-      ],
-      "path": "/content/en/pages/wikis/opendefence-plugins/use-a-ptt-button-or-vox-aPSKb5LWyf.json",
-      "updatedAt": "2026-11-23T05:00:27.077Z",
-      "order": 59,
-      "chapterId": "setup-39iUCv9bab",
-      "chapterLabel": "Setup"
-    },
-    {
-      "id": "ef8c395e-8ead-44d9-9337-ff90d6b24c46",
-      "slug": "turn-voice-off-868watyMeE",
-      "collection": "wikis/opendefence-plugins",
-      "title": "Turn Voice off",
-      "breadcrumb": [
-        "OpenDefence Voice",
-        "Setup",
-        "Turn Voice off"
-      ],
-      "path": "/content/en/pages/wikis/opendefence-plugins/turn-voice-off-868watyMeE.json",
-      "updatedAt": "2026-11-23T05:00:32.652Z",
-      "order": 60,
-      "chapterId": "setup-39iUCv9bab",
-      "chapterLabel": "Setup"
     },
     {
       "id": "f62034e9-a05a-4e3f-9061-9767dadd8db8",
@@ -4681,14 +4739,108 @@
       "title": "Change Voice settings in ATAK",
       "breadcrumb": [
         "OpenDefence Voice",
-        "Setup",
+        "Settings",
         "Change Voice settings in ATAK"
       ],
       "path": "/content/en/pages/wikis/opendefence-plugins/change-voice-settings-in-atak-uwsl3y4Ls4.json",
       "updatedAt": "2026-11-23T05:00:38.530Z",
-      "order": 61,
-      "chapterId": "setup-39iUCv9bab",
-      "chapterLabel": "Setup"
+      "order": 65,
+      "chapterId": "settings-39iUCv9bab",
+      "chapterLabel": "Settings"
+    },
+    {
+      "id": "ef8c395e-8ead-44d9-9337-ff90d6b24c46",
+      "slug": "turn-voice-off-868watyMeE",
+      "collection": "wikis/opendefence-plugins",
+      "title": "Turn Voice off",
+      "breadcrumb": [
+        "OpenDefence Voice",
+        "Settings",
+        "Turn Voice off"
+      ],
+      "path": "/content/en/pages/wikis/opendefence-plugins/turn-voice-off-868watyMeE.json",
+      "updatedAt": "2026-11-23T05:00:32.652Z",
+      "order": 66,
+      "chapterId": "settings-39iUCv9bab",
+      "chapterLabel": "Settings"
+    },
+    {
+      "id": "5c9b310a-c70c-482f-afe0-05a758197a8d",
+      "slug": "fix-a-ptt-that-will-not-talk-cs5tInnguw",
+      "collection": "wikis/opendefence-plugins",
+      "title": "Fix a PTT that will not talk",
+      "breadcrumb": [
+        "OpenDefence Voice",
+        "Settings",
+        "Fix a PTT that will not talk"
+      ],
+      "path": "/content/en/pages/wikis/opendefence-plugins/fix-a-ptt-that-will-not-talk-cs5tInnguw.json",
+      "updatedAt": "2026-11-23T20:43:05.193Z",
+      "order": 67,
+      "chapterId": "settings-39iUCv9bab",
+      "chapterLabel": "Settings"
+    },
+    {
+      "id": "80d184f9-12fe-4f83-978e-ebc2ebcb1f58",
+      "slug": "introduction-75PnjTU6LV",
+      "collection": "wikis/opendefence-plugins",
+      "title": "Introduction",
+      "breadcrumb": [
+        "OpenDefence Matrix",
+        "Introduction"
+      ],
+      "path": "/content/en/pages/wikis/opendefence-plugins/introduction-75PnjTU6LV.json",
+      "updatedAt": "2026-11-23T21:08:44.948Z",
+      "order": 68,
+      "chapterId": "opendefence-matrix-YaB4zpp6Pv",
+      "chapterLabel": "OpenDefence Matrix"
+    },
+    {
+      "id": "a807cb04-5ab8-4966-9551-b5adb3abec89",
+      "slug": "concepts-gNkXFS8ukj",
+      "collection": "wikis/opendefence-plugins",
+      "title": "Concepts",
+      "breadcrumb": [
+        "OpenDefence Matrix",
+        "Concepts"
+      ],
+      "path": "/content/en/pages/wikis/opendefence-plugins/concepts-gNkXFS8ukj.json",
+      "updatedAt": "2026-11-23T21:08:51.127Z",
+      "order": 69,
+      "chapterId": "opendefence-matrix-YaB4zpp6Pv",
+      "chapterLabel": "OpenDefence Matrix"
+    },
+    {
+      "id": "586ac13d-8fb2-4b64-b1a9-6c5f0c1e5404",
+      "slug": "sign-in-3ohSyV0wd8",
+      "collection": "wikis/opendefence-plugins",
+      "title": "Sign in",
+      "breadcrumb": [
+        "OpenDefence Matrix",
+        "Starting as a user",
+        "Sign in"
+      ],
+      "path": "/content/en/pages/wikis/opendefence-plugins/sign-in-3ohSyV0wd8.json",
+      "updatedAt": "2026-11-23T20:43:07.951Z",
+      "order": 70,
+      "chapterId": "starting-as-a-user-DloUWupjfO",
+      "chapterLabel": "Starting as a user"
+    },
+    {
+      "id": "e27e583f-aec4-4c3e-a893-1f99f167d957",
+      "slug": "join-a-room-FgouSLgTql",
+      "collection": "wikis/opendefence-plugins",
+      "title": "Join a room",
+      "breadcrumb": [
+        "OpenDefence Matrix",
+        "Starting as a user",
+        "Join a room"
+      ],
+      "path": "/content/en/pages/wikis/opendefence-plugins/join-a-room-FgouSLgTql.json",
+      "updatedAt": "2026-11-23T20:43:08.393Z",
+      "order": 71,
+      "chapterId": "starting-as-a-user-DloUWupjfO",
+      "chapterLabel": "Starting as a user"
     },
     {
       "id": "25fa8159-4707-4795-b015-09d534a8c0c1",
@@ -4697,12 +4849,28 @@
       "title": "Chat in a room",
       "breadcrumb": [
         "OpenDefence Matrix",
-        "Chat",
+        "Starting as a user",
         "Chat in a room"
       ],
       "path": "/content/en/pages/wikis/opendefence-plugins/chat-in-a-room-Y8iK8KbVhQ.json",
-      "updatedAt": "2026-11-23T05:00:45.786Z",
-      "order": 62,
+      "updatedAt": "2026-11-23T20:43:08.860Z",
+      "order": 72,
+      "chapterId": "starting-as-a-user-DloUWupjfO",
+      "chapterLabel": "Starting as a user"
+    },
+    {
+      "id": "cdf90347-1b2f-4545-935b-8b9b132e261e",
+      "slug": "find-a-chat-LJet3PVGCz",
+      "collection": "wikis/opendefence-plugins",
+      "title": "Find a chat",
+      "breadcrumb": [
+        "OpenDefence Matrix",
+        "Chat",
+        "Find a chat"
+      ],
+      "path": "/content/en/pages/wikis/opendefence-plugins/find-a-chat-LJet3PVGCz.json",
+      "updatedAt": "2026-11-23T05:01:44.629Z",
+      "order": 73,
       "chapterId": "chat-28GSi3XFCL",
       "chapterLabel": "Chat"
     },
@@ -4718,7 +4886,7 @@
       ],
       "path": "/content/en/pages/wikis/opendefence-plugins/message-one-person-caAVww0lqJ.json",
       "updatedAt": "2026-11-23T05:00:52.837Z",
-      "order": 63,
+      "order": 74,
       "chapterId": "chat-28GSi3XFCL",
       "chapterLabel": "Chat"
     },
@@ -4734,7 +4902,7 @@
       ],
       "path": "/content/en/pages/wikis/opendefence-plugins/reply-in-a-thread-b7w9ZfyA7F.json",
       "updatedAt": "2026-11-23T05:01:26.392Z",
-      "order": 64,
+      "order": 75,
       "chapterId": "chat-28GSi3XFCL",
       "chapterLabel": "Chat"
     },
@@ -4750,7 +4918,7 @@
       ],
       "path": "/content/en/pages/wikis/opendefence-plugins/edit-or-delete-a-message-lwCBJz9gdi.json",
       "updatedAt": "2026-11-23T05:01:33.135Z",
-      "order": 65,
+      "order": 76,
       "chapterId": "chat-28GSi3XFCL",
       "chapterLabel": "Chat"
     },
@@ -4766,23 +4934,7 @@
       ],
       "path": "/content/en/pages/wikis/opendefence-plugins/write-with-no-connection-HgZMIDKd28.json",
       "updatedAt": "2026-11-23T05:01:37.706Z",
-      "order": 66,
-      "chapterId": "chat-28GSi3XFCL",
-      "chapterLabel": "Chat"
-    },
-    {
-      "id": "cdf90347-1b2f-4545-935b-8b9b132e261e",
-      "slug": "find-a-chat-LJet3PVGCz",
-      "collection": "wikis/opendefence-plugins",
-      "title": "Find a chat",
-      "breadcrumb": [
-        "OpenDefence Matrix",
-        "Chat",
-        "Find a chat"
-      ],
-      "path": "/content/en/pages/wikis/opendefence-plugins/find-a-chat-LJet3PVGCz.json",
-      "updatedAt": "2026-11-23T05:01:44.629Z",
-      "order": 67,
+      "order": 77,
       "chapterId": "chat-28GSi3XFCL",
       "chapterLabel": "Chat"
     },
@@ -4798,23 +4950,7 @@
       ],
       "path": "/content/en/pages/wikis/opendefence-plugins/make-a-room-zB2M1ynw43.json",
       "updatedAt": "2026-11-23T05:01:51.575Z",
-      "order": 68,
-      "chapterId": "rooms-t2Q84AfTy7",
-      "chapterLabel": "Rooms"
-    },
-    {
-      "id": "e27e583f-aec4-4c3e-a893-1f99f167d957",
-      "slug": "join-a-room-FgouSLgTql",
-      "collection": "wikis/opendefence-plugins",
-      "title": "Join a room",
-      "breadcrumb": [
-        "OpenDefence Matrix",
-        "Rooms",
-        "Join a room"
-      ],
-      "path": "/content/en/pages/wikis/opendefence-plugins/join-a-room-FgouSLgTql.json",
-      "updatedAt": "2026-11-23T05:01:56.166Z",
-      "order": 69,
+      "order": 78,
       "chapterId": "rooms-t2Q84AfTy7",
       "chapterLabel": "Rooms"
     },
@@ -4830,7 +4966,7 @@
       ],
       "path": "/content/en/pages/wikis/opendefence-plugins/run-your-room-e7EzTvqEFG.json",
       "updatedAt": "2026-11-23T05:02:29.852Z",
-      "order": 70,
+      "order": 79,
       "chapterId": "rooms-t2Q84AfTy7",
       "chapterLabel": "Rooms"
     },
@@ -4846,7 +4982,7 @@
       ],
       "path": "/content/en/pages/wikis/opendefence-plugins/send-a-photo-or-a-file-8VARfQqA7e.json",
       "updatedAt": "2026-11-23T05:02:36.505Z",
-      "order": 71,
+      "order": 80,
       "chapterId": "photos-voice-and-polls-vWiFBOmnDJ",
       "chapterLabel": "Photos, voice and polls"
     },
@@ -4862,7 +4998,7 @@
       ],
       "path": "/content/en/pages/wikis/opendefence-plugins/open-photos-videos-and-files-WLfU1ePbO7.json",
       "updatedAt": "2026-11-23T05:02:41.972Z",
-      "order": 72,
+      "order": 81,
       "chapterId": "photos-voice-and-polls-vWiFBOmnDJ",
       "chapterLabel": "Photos, voice and polls"
     },
@@ -4878,7 +5014,7 @@
       ],
       "path": "/content/en/pages/wikis/opendefence-plugins/send-a-voice-message-NEQ6ppCUYI.json",
       "updatedAt": "2026-11-23T05:02:46.701Z",
-      "order": 73,
+      "order": 82,
       "chapterId": "photos-voice-and-polls-vWiFBOmnDJ",
       "chapterLabel": "Photos, voice and polls"
     },
@@ -4894,7 +5030,7 @@
       ],
       "path": "/content/en/pages/wikis/opendefence-plugins/ask-with-a-poll-sdO5q8bsYC.json",
       "updatedAt": "2026-11-23T05:02:53.220Z",
-      "order": 74,
+      "order": 83,
       "chapterId": "photos-voice-and-polls-vWiFBOmnDJ",
       "chapterLabel": "Photos, voice and polls"
     },
@@ -4910,7 +5046,7 @@
       ],
       "path": "/content/en/pages/wikis/opendefence-plugins/send-a-map-item-to-a-chat-TgMTmLydc6.json",
       "updatedAt": "2026-11-23T10:52:33.575Z",
-      "order": 75,
+      "order": 84,
       "chapterId": "map-nmXNZBNwkV",
       "chapterLabel": "Map"
     },
@@ -4926,7 +5062,7 @@
       ],
       "path": "/content/en/pages/wikis/opendefence-plugins/put-a-shared-item-on-your-map-FEKFNUlEfW.json",
       "updatedAt": "2026-11-23T10:52:42.137Z",
-      "order": 76,
+      "order": 85,
       "chapterId": "map-nmXNZBNwkV",
       "chapterLabel": "Map"
     },
@@ -4942,7 +5078,7 @@
       ],
       "path": "/content/en/pages/wikis/opendefence-plugins/see-where-a-message-was-sent-FuW5aXHneB.json",
       "updatedAt": "2026-11-23T05:03:30.940Z",
-      "order": 77,
+      "order": 86,
       "chapterId": "map-nmXNZBNwkV",
       "chapterLabel": "Map"
     },
@@ -4958,7 +5094,7 @@
       ],
       "path": "/content/en/pages/wikis/opendefence-plugins/add-a-map-file-to-your-map-7Svg3Kz3ed.json",
       "updatedAt": "2026-11-23T05:03:36.371Z",
-      "order": 78,
+      "order": 87,
       "chapterId": "map-nmXNZBNwkV",
       "chapterLabel": "Map"
     },
@@ -4974,7 +5110,7 @@
       ],
       "path": "/content/en/pages/wikis/opendefence-plugins/see-live-locations-WKo5Ya1vRc.json",
       "updatedAt": "2026-11-23T10:52:50.413Z",
-      "order": 79,
+      "order": 88,
       "chapterId": "map-nmXNZBNwkV",
       "chapterLabel": "Map"
     },
@@ -4985,30 +5121,14 @@
       "title": "Choose notifications",
       "breadcrumb": [
         "OpenDefence Matrix",
-        "Setup",
+        "Settings",
         "Choose notifications"
       ],
       "path": "/content/en/pages/wikis/opendefence-plugins/choose-notifications-h92Xi0dH1v.json",
       "updatedAt": "2026-11-23T05:03:47.493Z",
-      "order": 80,
-      "chapterId": "setup-LK3xrGHhfr",
-      "chapterLabel": "Setup"
-    },
-    {
-      "id": "586ac13d-8fb2-4b64-b1a9-6c5f0c1e5404",
-      "slug": "sign-in-3ohSyV0wd8",
-      "collection": "wikis/opendefence-plugins",
-      "title": "Sign in",
-      "breadcrumb": [
-        "OpenDefence Matrix",
-        "Setup",
-        "Sign in"
-      ],
-      "path": "/content/en/pages/wikis/opendefence-plugins/sign-in-3ohSyV0wd8.json",
-      "updatedAt": "2026-11-23T10:52:59.770Z",
-      "order": 81,
-      "chapterId": "setup-LK3xrGHhfr",
-      "chapterLabel": "Setup"
+      "order": 89,
+      "chapterId": "settings-LK3xrGHhfr",
+      "chapterLabel": "Settings"
     },
     {
       "id": "feaa358c-3b98-4dea-b80f-45e429179f34",
@@ -5017,14 +5137,14 @@
       "title": "Sign out",
       "breadcrumb": [
         "OpenDefence Matrix",
-        "Setup",
+        "Settings",
         "Sign out"
       ],
       "path": "/content/en/pages/wikis/opendefence-plugins/sign-out-ynIoStdt26.json",
       "updatedAt": "2026-11-23T05:03:50.977Z",
-      "order": 82,
-      "chapterId": "setup-LK3xrGHhfr",
-      "chapterLabel": "Setup"
+      "order": 90,
+      "chapterId": "settings-LK3xrGHhfr",
+      "chapterLabel": "Settings"
     },
     {
       "id": "1c499c9e-1ef7-49a9-b8ae-d77266a97f83",

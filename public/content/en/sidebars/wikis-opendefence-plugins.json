@@ -9,28 +9,108 @@
       "label": "OpenDefence Main",
       "children": [
         {
+          "type": "doc",
+          "id": "introduction-qSkewIfx3U",
+          "label": "Introduction",
+          "slug": "introduction-qSkewIfx3U"
+        },
+        {
+          "type": "doc",
+          "id": "concepts-A8ZscwHYBx",
+          "label": "Concepts",
+          "slug": "concepts-A8ZscwHYBx"
+        },
+        {
           "type": "group",
-          "id": "about-2cyZsZGd4Y",
-          "label": "About",
+          "id": "setting-up-SWxYLg9BIc",
+          "label": "Setting up",
           "children": [
             {
               "type": "doc",
-              "id": "why-opendefence-main-qSkewIfx3U",
-              "label": "Why OpenDefence Main",
-              "slug": "why-opendefence-main-qSkewIfx3U"
+              "id": "set-up-the-orbat-admins-GdcjlgH84p",
+              "label": "Set up the ORBAT",
+              "slug": "set-up-the-orbat-admins-GdcjlgH84p"
             },
             {
               "type": "doc",
-              "id": "the-thumb-bar-Ky6JMEoHf3",
-              "label": "The thumb bar",
-              "slug": "the-thumb-bar-Ky6JMEoHf3"
+              "id": "set-favourites-and-defaults-admins-9pQQEPNhRd",
+              "label": "Set favourites and defaults",
+              "slug": "set-favourites-and-defaults-admins-9pQQEPNhRd"
+            },
+            {
+              "type": "doc",
+              "id": "share-a-setup-as-a-template-admins-ZQFGv1UdSz",
+              "label": "Share a setup as a template",
+              "slug": "share-a-setup-as-a-template-admins-ZQFGv1UdSz"
             }
           ]
         },
         {
           "type": "group",
-          "id": "marking-XF1J9UfeuT",
-          "label": "Marking",
+          "id": "starting-as-a-user-2cyZsZGd4Y",
+          "label": "Starting as a user",
+          "children": [
+            {
+              "type": "doc",
+              "id": "the-thumb-bar-Ky6JMEoHf3",
+              "label": "The thumb bar",
+              "slug": "the-thumb-bar-Ky6JMEoHf3"
+            },
+            {
+              "type": "doc",
+              "id": "pick-your-unit-oXkeDUK6xZ",
+              "label": "Pick your unit",
+              "slug": "pick-your-unit-oXkeDUK6xZ"
+            },
+            {
+              "type": "doc",
+              "id": "choose-what-counts-as-near-dVH1nWSqg0",
+              "label": "Choose what counts as near",
+              "slug": "choose-what-counts-as-near-dVH1nWSqg0"
+            },
+            {
+              "type": "doc",
+              "id": "choose-alerts-and-quiet-time-Jw0ihPyXeZ",
+              "label": "Choose alerts and quiet time",
+              "slug": "choose-alerts-and-quiet-time-Jw0ihPyXeZ"
+            },
+            {
+              "type": "doc",
+              "id": "find-the-settings-and-the-user-manual-BZxmLEFNqW",
+              "label": "Find the settings and the user manual",
+              "slug": "find-the-settings-and-the-user-manual-BZxmLEFNqW"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "id": "inbox-receiving-and-timeline-Fwe1ClqQRV",
+          "label": "Inbox, receiving and timeline",
+          "children": [
+            {
+              "type": "doc",
+              "id": "read-your-inbox-E7dixp7sWf",
+              "label": "Read your Inbox",
+              "slug": "read-your-inbox-E7dixp7sWf"
+            },
+            {
+              "type": "doc",
+              "id": "see-what-your-unit-reported-778pSV3jkJ",
+              "label": "See what your unit reported",
+              "slug": "see-what-your-unit-reported-778pSV3jkJ"
+            },
+            {
+              "type": "doc",
+              "id": "use-the-timeline-nbX0VE7qWM",
+              "label": "Use the timeline",
+              "slug": "use-the-timeline-nbX0VE7qWM"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "id": "drawing-markers-and-sending-them-HjXUGvZf4P",
+          "label": "Drawing markers and sending them",
           "children": [
             {
               "type": "doc",
@@ -38,67 +118,6 @@
               "label": "Mark an enemy",
               "slug": "mark-an-enemy-K0Yfm70eNf"
             },
-            {
-              "type": "doc",
-              "id": "mark-friendly-units-positions-routes-and-areas-Io7ZDzuDxE",
-              "label": "Mark friendly units, positions, routes and areas",
-              "slug": "mark-friendly-units-positions-routes-and-areas-Io7ZDzuDxE"
-            },
-            {
-              "type": "doc",
-              "id": "show-heading-and-speed-JBOovcbUuP",
-              "label": "Show heading and speed",
-              "slug": "show-heading-and-speed-JBOovcbUuP"
-            },
-            {
-              "type": "doc",
-              "id": "tell-stale-marks-from-fresh-ones-hydpkikyzd",
-              "label": "Tell stale marks from fresh ones",
-              "slug": "tell-stale-marks-from-fresh-ones-hydpkikyzd"
-            },
-            {
-              "type": "doc",
-              "id": "add-details-to-a-mark-ushiTeUjx2",
-              "label": "Add details to a mark",
-              "slug": "add-details-to-a-mark-ushiTeUjx2"
-            },
-            {
-              "type": "doc",
-              "id": "mark-an-enemy-drone-3N3eBeJers",
-              "label": "Mark an enemy drone",
-              "slug": "mark-an-enemy-drone-3N3eBeJers"
-            },
-            {
-              "type": "doc",
-              "id": "mark-unknown-and-neutral-contacts-jOAvlyCt0c",
-              "label": "Mark unknown and neutral contacts",
-              "slug": "mark-unknown-and-neutral-contacts-jOAvlyCt0c"
-            },
-            {
-              "type": "doc",
-              "id": "place-a-mark-by-grid-sv0H59a7LQ",
-              "label": "Place a mark by grid",
-              "slug": "place-a-mark-by-grid-sv0H59a7LQ"
-            },
-            {
-              "type": "doc",
-              "id": "mark-posts-code-name-points-and-patrols-LMlR75u5vV",
-              "label": "Mark posts, code-name points and patrols",
-              "slug": "mark-posts-code-name-points-and-patrols-LMlR75u5vV"
-            },
-            {
-              "type": "doc",
-              "id": "mark-a-halt-and-its-positions-LZHLEd4XYT",
-              "label": "Mark a halt and its positions",
-              "slug": "mark-a-halt-and-its-positions-LZHLEd4XYT"
-            }
-          ]
-        },
-        {
-          "type": "group",
-          "id": "sharing-HjXUGvZf4P",
-          "label": "Sharing",
-          "children": [
             {
               "type": "doc",
               "id": "send-a-mark-BE0s8jVOmW",
@@ -115,32 +134,14 @@
         },
         {
           "type": "group",
-          "id": "reading-Fwe1ClqQRV",
-          "label": "Reading",
+          "id": "managing-stale-markers-a4uWglTaf0",
+          "label": "Managing stale markers",
           "children": [
             {
               "type": "doc",
-              "id": "read-your-inbox-E7dixp7sWf",
-              "label": "Read your Inbox",
-              "slug": "read-your-inbox-E7dixp7sWf"
-            },
-            {
-              "type": "doc",
-              "id": "use-the-timeline-nbX0VE7qWM",
-              "label": "Use the timeline",
-              "slug": "use-the-timeline-nbX0VE7qWM"
-            },
-            {
-              "type": "doc",
-              "id": "choose-alerts-and-quiet-time-Jw0ihPyXeZ",
-              "label": "Choose alerts and quiet time",
-              "slug": "choose-alerts-and-quiet-time-Jw0ihPyXeZ"
-            },
-            {
-              "type": "doc",
-              "id": "see-what-your-unit-reported-778pSV3jkJ",
-              "label": "See what your unit reported",
-              "slug": "see-what-your-unit-reported-778pSV3jkJ"
+              "id": "tell-stale-marks-from-fresh-ones-hydpkikyzd",
+              "label": "Tell stale marks from fresh ones",
+              "slug": "tell-stale-marks-from-fresh-ones-hydpkikyzd"
             }
           ]
         },
@@ -171,44 +172,62 @@
         },
         {
           "type": "group",
-          "id": "setup-SWxYLg9BIc",
-          "label": "Setup",
+          "id": "advanced-XF1J9UfeuT",
+          "label": "Advanced",
           "children": [
             {
               "type": "doc",
-              "id": "pick-your-unit-and-dim-the-map-oXkeDUK6xZ",
-              "label": "Pick your unit and dim the map",
-              "slug": "pick-your-unit-and-dim-the-map-oXkeDUK6xZ"
+              "id": "mark-friendly-units-positions-routes-and-areas-Io7ZDzuDxE",
+              "label": "Mark friendly units, positions, routes and areas",
+              "slug": "mark-friendly-units-positions-routes-and-areas-Io7ZDzuDxE"
             },
             {
               "type": "doc",
-              "id": "set-up-the-orbat-admins-GdcjlgH84p",
-              "label": "Set up the ORBAT",
-              "slug": "set-up-the-orbat-admins-GdcjlgH84p"
+              "id": "mark-a-halt-and-its-positions-LZHLEd4XYT",
+              "label": "Mark a halt and its positions",
+              "slug": "mark-a-halt-and-its-positions-LZHLEd4XYT"
             },
             {
               "type": "doc",
-              "id": "set-favourites-and-defaults-admins-9pQQEPNhRd",
-              "label": "Set favourites and defaults",
-              "slug": "set-favourites-and-defaults-admins-9pQQEPNhRd"
+              "id": "mark-posts-code-name-points-and-patrols-LMlR75u5vV",
+              "label": "Mark posts, code-name points and patrols",
+              "slug": "mark-posts-code-name-points-and-patrols-LMlR75u5vV"
             },
             {
               "type": "doc",
-              "id": "choose-what-counts-as-near-dVH1nWSqg0",
-              "label": "Choose what counts as near",
-              "slug": "choose-what-counts-as-near-dVH1nWSqg0"
+              "id": "add-details-to-a-mark-ushiTeUjx2",
+              "label": "Add details to a mark",
+              "slug": "add-details-to-a-mark-ushiTeUjx2"
             },
             {
               "type": "doc",
-              "id": "share-a-setup-as-a-template-admins-ZQFGv1UdSz",
-              "label": "Share a setup as a template",
-              "slug": "share-a-setup-as-a-template-admins-ZQFGv1UdSz"
+              "id": "show-heading-and-speed-JBOovcbUuP",
+              "label": "Show heading and speed",
+              "slug": "show-heading-and-speed-JBOovcbUuP"
             },
             {
               "type": "doc",
-              "id": "find-the-settings-and-the-user-manual-BZxmLEFNqW",
-              "label": "Find the settings and the user manual",
-              "slug": "find-the-settings-and-the-user-manual-BZxmLEFNqW"
+              "id": "mark-an-enemy-drone-3N3eBeJers",
+              "label": "Mark an enemy drone",
+              "slug": "mark-an-enemy-drone-3N3eBeJers"
+            },
+            {
+              "type": "doc",
+              "id": "mark-unknown-and-neutral-contacts-jOAvlyCt0c",
+              "label": "Mark unknown and neutral contacts",
+              "slug": "mark-unknown-and-neutral-contacts-jOAvlyCt0c"
+            },
+            {
+              "type": "doc",
+              "id": "place-a-mark-by-grid-sv0H59a7LQ",
+              "label": "Place a mark by grid",
+              "slug": "place-a-mark-by-grid-sv0H59a7LQ"
+            },
+            {
+              "type": "doc",
+              "id": "wash-out-the-map-14wSTAXLq0",
+              "label": "Wash out the map",
+              "slug": "wash-out-the-map-14wSTAXLq0"
             }
           ]
         }
@@ -220,9 +239,21 @@
       "label": "OpenDefence UAVOps",
       "children": [
         {
+          "type": "doc",
+          "id": "introduction-j4Le2MC6ed",
+          "label": "Introduction",
+          "slug": "introduction-j4Le2MC6ed"
+        },
+        {
+          "type": "doc",
+          "id": "concepts-faJbfGEVjn",
+          "label": "Concepts",
+          "slug": "concepts-faJbfGEVjn"
+        },
+        {
           "type": "group",
-          "id": "get-started-WTdIbYO7bO",
-          "label": "Get started",
+          "id": "starting-as-a-user-WTdIbYO7bO",
+          "label": "Starting as a user",
           "children": [
             {
               "type": "doc",
@@ -431,9 +462,21 @@
       "label": "OpenDefence Voice",
       "children": [
         {
+          "type": "doc",
+          "id": "introduction-JQETMDrj4f",
+          "label": "Introduction",
+          "slug": "introduction-JQETMDrj4f"
+        },
+        {
+          "type": "doc",
+          "id": "concepts-hcXYz1rNRI",
+          "label": "Concepts",
+          "slug": "concepts-hcXYz1rNRI"
+        },
+        {
           "type": "group",
-          "id": "talk-q2lqGQEgoe",
-          "label": "Talk",
+          "id": "starting-as-a-user-8NvBWlZmaC",
+          "label": "Starting as a user",
           "children": [
             {
               "type": "doc",
@@ -441,6 +484,19 @@
               "label": "Join a net and talk",
               "slug": "join-a-net-and-talk-XxhpRIvhlN"
             },
+            {
+              "type": "doc",
+              "id": "use-a-ptt-button-or-vox-aPSKb5LWyf",
+              "label": "Use a PTT button or VOX",
+              "slug": "use-a-ptt-button-or-vox-aPSKb5LWyf"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "id": "talk-q2lqGQEgoe",
+          "label": "Talk",
+          "children": [
             {
               "type": "doc",
               "id": "listen-to-other-nets-OW2RIAkOuU",
@@ -458,25 +514,19 @@
               "id": "leave-a-net-YjTAiBTW9V",
               "label": "Leave a net",
               "slug": "leave-a-net-YjTAiBTW9V"
-            },
-            {
-              "type": "doc",
-              "id": "fix-a-ptt-that-will-not-talk-cs5tInnguw",
-              "label": "Fix a PTT that will not talk",
-              "slug": "fix-a-ptt-that-will-not-talk-cs5tInnguw"
             }
           ]
         },
         {
           "type": "group",
-          "id": "setup-39iUCv9bab",
-          "label": "Setup",
+          "id": "settings-39iUCv9bab",
+          "label": "Settings",
           "children": [
             {
               "type": "doc",
-              "id": "use-a-ptt-button-or-vox-aPSKb5LWyf",
-              "label": "Use a PTT button or VOX",
-              "slug": "use-a-ptt-button-or-vox-aPSKb5LWyf"
+              "id": "change-voice-settings-in-atak-uwsl3y4Ls4",
+              "label": "Change Voice settings in ATAK",
+              "slug": "change-voice-settings-in-atak-uwsl3y4Ls4"
             },
             {
               "type": "doc",
@@ -486,9 +536,9 @@
             },
             {
               "type": "doc",
-              "id": "change-voice-settings-in-atak-uwsl3y4Ls4",
-              "label": "Change Voice settings in ATAK",
-              "slug": "change-voice-settings-in-atak-uwsl3y4Ls4"
+              "id": "fix-a-ptt-that-will-not-talk-cs5tInnguw",
+              "label": "Fix a PTT that will not talk",
+              "slug": "fix-a-ptt-that-will-not-talk-cs5tInnguw"
             }
           ]
         }
@@ -500,15 +550,52 @@
       "label": "OpenDefence Matrix",
       "children": [
         {
+          "type": "doc",
+          "id": "introduction-75PnjTU6LV",
+          "label": "Introduction",
+          "slug": "introduction-75PnjTU6LV"
+        },
+        {
+          "type": "doc",
+          "id": "concepts-gNkXFS8ukj",
+          "label": "Concepts",
+          "slug": "concepts-gNkXFS8ukj"
+        },
+        {
+          "type": "group",
+          "id": "starting-as-a-user-DloUWupjfO",
+          "label": "Starting as a user",
+          "children": [
+            {
+              "type": "doc",
+              "id": "sign-in-3ohSyV0wd8",
+              "label": "Sign in",
+              "slug": "sign-in-3ohSyV0wd8"
+            },
+            {
+              "type": "doc",
+              "id": "join-a-room-FgouSLgTql",
+              "label": "Join a room",
+              "slug": "join-a-room-FgouSLgTql"
+            },
+            {
+              "type": "doc",
+              "id": "chat-in-a-room-Y8iK8KbVhQ",
+              "label": "Chat in a room",
+              "slug": "chat-in-a-room-Y8iK8KbVhQ"
+            }
+          ]
+        },
+        {
           "type": "group",
           "id": "chat-28GSi3XFCL",
           "label": "Chat",
           "children": [
             {
               "type": "doc",
-              "id": "chat-in-a-room-Y8iK8KbVhQ",
-              "label": "Chat in a room",
-              "slug": "chat-in-a-room-Y8iK8KbVhQ"
+              "id": "find-a-chat-LJet3PVGCz",
+              "label": "Find a chat",
+              "slug": "find-a-chat-LJet3PVGCz"
             },
             {
               "type": "doc",
@@ -533,12 +620,6 @@
               "id": "write-with-no-connection-HgZMIDKd28",
               "label": "Write with no connection",
               "slug": "write-with-no-connection-HgZMIDKd28"
-            },
-            {
-              "type": "doc",
-              "id": "find-a-chat-LJet3PVGCz",
-              "label": "Find a chat",
-              "slug": "find-a-chat-LJet3PVGCz"
             }
           ]
         },
@@ -552,12 +633,6 @@
               "id": "make-a-room-zB2M1ynw43",
               "label": "Make a room",
               "slug": "make-a-room-zB2M1ynw43"
-            },
-            {
-              "type": "doc",
-              "id": "join-a-room-FgouSLgTql",
-              "label": "Join a room",
-              "slug": "join-a-room-FgouSLgTql"
             },
             {
               "type": "doc",
@@ -637,20 +712,14 @@
         },
         {
           "type": "group",
-          "id": "setup-LK3xrGHhfr",
-          "label": "Setup",
+          "id": "settings-LK3xrGHhfr",
+          "label": "Settings",
           "children": [
             {
               "type": "doc",
               "id": "choose-notifications-h92Xi0dH1v",
               "label": "Choose notifications",
               "slug": "choose-notifications-h92Xi0dH1v"
-            },
-            {
-              "type": "doc",
-              "id": "sign-in-3ohSyV0wd8",
-              "label": "Sign in",
-              "slug": "sign-in-3ohSyV0wd8"
             },
             {
               "type": "doc",
