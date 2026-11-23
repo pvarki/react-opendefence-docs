@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "b112fac9-7a11-46aa-a6b2-25b189076c7e",
+  "slug": "clear-drone-data-ShWSOcLJ1d",
+  "collection": "wikis/opendefence-plugins",
+  "locale": "en",
+  "title": "Clear drone data",
+  "breadcrumb": [
+    "OpenDefence UAVOps",
+    "Everyone",
+    "Clear drone data"
+  ],
+  "createdAt": "2026-11-06T23:07:30.702Z",
+  "updatedAt": "2026-11-23T15:09:52.366Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Find it",
+          "layout": "image-bottom",
+          "html": "<p><strong>Clear drone data</strong> is last in <strong>Settings</strong>. It touches only this phone.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/e490fad2ae6f0a13.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Check what goes",
+          "layout": "image-bottom",
+          "html": "<p>It lists what this phone holds. Tap <strong>Clear</strong>, or <strong>Cancel</strong> to keep it.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/14606899aa72e882.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Done",
+          "layout": "image-bottom",
+          "html": "<p><strong>Settings</strong> says <strong>Drone data cleared</strong>. Your role, unit and drone types stay.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/63adf04f96334866.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

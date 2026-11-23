@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "id": "c0d51092-68b7-4110-922f-32604848db70",
+  "slug": "message-or-decline-a-request-YBBd86Uqfk",
+  "collection": "wikis/opendefence-plugins",
+  "locale": "en",
+  "title": "Message or decline a request",
+  "breadcrumb": [
+    "OpenDefence UAVOps",
+    "HQ and TOC",
+    "Message or decline a request"
+  ],
+  "createdAt": "2026-11-06T23:04:23.149Z",
+  "updatedAt": "2026-11-23T12:53:46.212Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Select the request",
+          "layout": "image-bottom",
+          "html": "<p>In <strong>Drones</strong>, on <strong>Requests</strong>, tap the request. <strong>Message</strong> and <strong>Decline</strong> show under it.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/1736c03b47d3e135.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Message the asker",
+          "layout": "image-bottom",
+          "html": "<p>Message opens ATAK's chat with the asker, here <strong>ALPHA-1</strong>. Ask before you decline.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/8741662d32fc4602.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Decline it",
+          "layout": "image-bottom",
+          "html": "<p>Go back to <strong>Drones</strong>, tap the request again, then Decline. Pick why, such as <strong>Weather</strong>, and the asker is told.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/25b154800f53da38.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Undo in time",
+          "layout": "image-bottom",
+          "html": "<p><strong>Undo</strong> takes it back for 5 seconds. Then the request leaves your list.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/22008fed145061ca.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "The asker sees it",
+          "layout": "image-bottom",
+          "html": "<p>On the asker's phone the request says <strong>Declined</strong> and why, here <strong>Declined: weather</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/7bd2fc77a816b852.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

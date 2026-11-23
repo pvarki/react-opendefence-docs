@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "1246014b-f3d9-4bfc-a4ef-da3f4029a4c4",
+  "slug": "draw-a-hand-flown-drones-path-NX9hw2LszM",
+  "collection": "wikis/opendefence-plugins",
+  "locale": "en",
+  "title": "Draw a hand-flown drone's path",
+  "breadcrumb": [
+    "OpenDefence UAVOps",
+    "Drone team",
+    "Draw a hand-flown drone's path"
+  ],
+  "createdAt": "2026-11-06T23:06:20.954Z",
+  "updatedAt": "2026-11-23T15:09:09.038Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Start drawing",
+          "layout": "image-bottom",
+          "html": "<p>On a drone flown <strong>By hand</strong>, tap <strong>Draw track</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/6a07e2cf2f69f76a.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Draw the path",
+          "layout": "image-bottom",
+          "html": "<p>Draw where the drone flies with one finger. Two fingers still move the map.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/5e7c69d752f6ad83.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Stop drawing",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Draw track</strong> again to stop. Only your phone shows the drawn path.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/d9c36b442e79f176.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

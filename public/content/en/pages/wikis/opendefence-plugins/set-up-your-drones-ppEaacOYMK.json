@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 1,
+  "id": "d0464c54-369f-4dc8-a7bf-ef7dd3336225",
+  "slug": "set-up-your-drones-ppEaacOYMK",
+  "collection": "wikis/opendefence-plugins",
+  "locale": "en",
+  "title": "Set up your drones",
+  "breadcrumb": [
+    "OpenDefence UAVOps",
+    "Drone team",
+    "Set up your drones"
+  ],
+  "createdAt": "2026-11-06T23:05:19.233Z",
+  "updatedAt": "2026-11-23T12:55:20.791Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Open Our drones",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Drones</strong>, then <strong>Our drones</strong> and <strong>+ Add drone</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/068dde313891abff.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Make a type",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>New type</strong> for a drone your team has not typed yet.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/b39402ba24ab2d05.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Name and class it",
+          "layout": "image-bottom",
+          "html": "<p>Type a short <strong>Name</strong>, then pick its <strong>Frame</strong>, <strong>Payload</strong> and <strong>Link</strong>. <strong>Attack</strong>, <strong>Bomber</strong> and <strong>Multi-role</strong> drones can strike.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/900e107007ea555f.webp",
+              "width": 1336,
+              "height": 2660
+            }
+          ]
+        },
+        {
+          "title": "Fill in the numbers",
+          "layout": "image-bottom",
+          "html": "<p>Fill in the numbers as your team flies it, then tap <strong>Save</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/1a765929ea2bd859.webp",
+              "width": 1336,
+              "height": 2660
+            }
+          ]
+        },
+        {
+          "title": "Count your drones",
+          "layout": "image-bottom",
+          "html": "<p>Saving adds one drone. <strong>+</strong> and <strong>−</strong> keep the count true, and a drone used or lost comes off by itself.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/9539d72cfab669b9.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Set team status",
+          "layout": "image-bottom",
+          "html": "<p>Set <strong>Team status</strong> as you move or rest. The HQ and the TOC see it with your drones.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/349998f8f11f9417.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Name your video stream",
+          "layout": "image-bottom",
+          "html": "<p>On <strong>Settings</strong>, under <strong>Video</strong>, <strong>Send our video to</strong> names your stream. Left empty, it uses live/uas/ and your callsign.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/280c54db547dc23d.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Turn on weather",
+          "layout": "image-bottom",
+          "html": "<p>Set <strong>Weather lookups</strong> to <strong>On</strong>. Your plans then check FMI's forecast.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/dc93a04c5041895c.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

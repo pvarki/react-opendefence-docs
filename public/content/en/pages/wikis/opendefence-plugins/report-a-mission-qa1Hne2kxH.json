@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "id": "ac4b3cf3-6984-49b3-85a5-5719aac7d30b",
+  "slug": "report-a-mission-qa1Hne2kxH",
+  "collection": "wikis/opendefence-plugins",
+  "locale": "en",
+  "title": "Report a mission",
+  "breadcrumb": [
+    "OpenDefence UAVOps",
+    "Drone team",
+    "Report a mission"
+  ],
+  "createdAt": "2026-11-06T23:06:28.461Z",
+  "updatedAt": "2026-11-23T20:03:33.876Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "See what needs you",
+          "layout": "image-bottom",
+          "html": "<p><strong>Needs you</strong> counts the flights not reported yet. Open the mission and tap <strong>Report</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/2e74cdf547c5421a.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Say what happened",
+          "layout": "image-bottom",
+          "html": "<p>Tap one result. Add a short <strong>Comment</strong> if it helps, then tap <strong>Send</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/0131edff601b758d.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Send the report",
+          "layout": "image-bottom",
+          "html": "<p>The mission moves to <strong>Finished missions</strong>, and the asker and everyone else see the result.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/8c9b1c1f986e7181.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Fly again",
+          "layout": "image-bottom",
+          "html": "<p>After a hit, a miss or nothing seen, a lost drone or an abort, <strong>Fly again</strong> plans another drone on the same request. <strong>‹</strong> leaves without sending.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/c76faa7504a2eb4e.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "A recon's report",
+          "layout": "image-bottom",
+          "html": "<p>A recon asks <strong>What did the drone see?</strong> instead. Pick what fits, here <strong>Done as planned</strong>, and tap <strong>Send</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/aba52317722aebb2.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

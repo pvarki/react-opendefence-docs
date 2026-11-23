@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "id": "c785763c-2283-4877-9ca2-c2f60b0ee5d4",
+  "slug": "give-a-quota-KEPqdB5jT4",
+  "collection": "wikis/opendefence-plugins",
+  "locale": "en",
+  "title": "Give a quota",
+  "breadcrumb": [
+    "OpenDefence UAVOps",
+    "HQ and TOC",
+    "Give a quota"
+  ],
+  "createdAt": "2026-11-06T23:04:07.507Z",
+  "updatedAt": "2026-11-23T15:08:01.091Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Open Quotas",
+          "layout": "image-bottom",
+          "html": "<p>In <strong>Drones</strong>, tap <strong>Quotas</strong>, then <strong>New quota</strong>. The team needs a corridor first.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/c4acff1a26bada0d.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Who may ask",
+          "layout": "image-bottom",
+          "html": "<p>Type the asker's callsign under <strong>Who may ask</strong>, or tap <strong>Pick</strong> for a whole unit.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/61ccadb44238d429.webp",
+              "width": 1336,
+              "height": 2660
+            }
+          ]
+        },
+        {
+          "title": "Team that flies",
+          "layout": "image-bottom",
+          "html": "<p>Under <strong>Team that flies</strong>, tap <strong>Pick</strong>. Open <strong>1J</strong>, then tap <strong>2R</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/9a821707c70750f2.webp",
+              "width": 1336,
+              "height": 2660
+            }
+          ]
+        },
+        {
+          "title": "Set the numbers",
+          "layout": "image-bottom",
+          "html": "<p>Set <strong>Requests a day</strong> with <strong>−</strong> and <strong>+</strong>, and change <strong>Valid from</strong> and <strong>Valid until</strong> if needed. Tap <strong>Send</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/c59e2b0729c4ead4.webp",
+              "width": 1336,
+              "height": 2660
+            }
+          ]
+        },
+        {
+          "title": "See it live",
+          "layout": "image-bottom",
+          "html": "<p>The quota is live, so 2R/1J now comes first when ALPHA-1 asks for a drone. The row counts the requests used today.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/813b0bd0e0f299ef.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "If the team has no corridor",
+          "layout": "image-bottom",
+          "html": "<p>If the team has no corridor, <strong>Send</strong> says so and sends nothing. <strong>Draw corridor</strong> draws one and brings you back to the quota.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/2c5169dcc70a033f.webp",
+              "width": 1336,
+              "height": 2660
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

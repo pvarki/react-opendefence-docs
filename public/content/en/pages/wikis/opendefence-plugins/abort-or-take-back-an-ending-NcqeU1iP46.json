@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "id": "43973144-89b4-4d8e-be45-dc629641e6d9",
+  "slug": "abort-or-take-back-an-ending-NcqeU1iP46",
+  "collection": "wikis/opendefence-plugins",
+  "locale": "en",
+  "title": "Abort or take back an ending",
+  "breadcrumb": [
+    "OpenDefence UAVOps",
+    "Drone team",
+    "Abort or take back an ending"
+  ],
+  "createdAt": "2026-11-06T23:07:05.162Z",
+  "updatedAt": "2026-11-23T15:09:18.898Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Lost asks once",
+          "layout": "image-bottom",
+          "html": "<p><strong>Lost</strong> asks once before it counts the drone as lost. Tap <strong>Lost</strong> to confirm, or <strong>Cancel</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/1daf14c11151cfe4.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Take it back",
+          "layout": "image-bottom",
+          "html": "<p>Tapped the wrong ending? <strong>Back to flying</strong> undoes it until you report.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/14e902e7e0b3011a.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Abort",
+          "layout": "image-bottom",
+          "html": "<p>Back to flying brings the flying card back. Tap Abort there, then pick why or tap <strong>Cancel</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/49fd54e9b68bd8ec.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Back in Requests",
+          "layout": "image-bottom",
+          "html": "<p>For 5 seconds, the line under the title says the mission is back in <strong>Requests</strong>. It waits there for your team or another team.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/5f40f0765f11b8eb.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "The asker sees it",
+          "layout": "image-bottom",
+          "html": "<p>The asker reads <strong>Aborted, open again</strong> under <strong>Sent</strong> in the <strong>Inbox</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/4fa487b37235c701.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "id": "659db36f-8f06-416b-8161-99d6e9896483",
+  "slug": "ask-for-a-drone-Wm8lqKzB5v",
+  "collection": "wikis/opendefence-plugins",
+  "locale": "en",
+  "title": "Ask for a drone",
+  "breadcrumb": [
+    "OpenDefence UAVOps",
+    "Forward observer officer (FOO)",
+    "Ask for a drone"
+  ],
+  "createdAt": "2026-11-06T23:03:13.649Z",
+  "updatedAt": "2026-11-23T15:08:16.286Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Open My requests",
+          "layout": "image-bottom",
+          "html": "<p>As a FOO, tap <strong>Drones</strong>, then <strong>Requests</strong>. Tap <strong>Ask for a drone</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/08b62ed4ecad2b3e.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Tap the target",
+          "layout": "image-bottom",
+          "html": "<p>Tap the enemy mark you want a drone on. <strong>Back</strong> cancels.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/e54d9ccf670745d2.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Pick the mark in the list",
+          "layout": "image-bottom",
+          "html": "<p>If ATAK shows <strong>Select Item</strong>, tap the mark in the list.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/62cae880eb92aba1.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Choose what you need",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Strike</strong> or <strong>Recon</strong>. <strong>Send</strong> stays off until you do.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/952773c67d40b66b.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Pick who flies it",
+          "layout": "image-bottom",
+          "html": "<p>Under <strong>To</strong>, the team your quota is on comes first, <strong>Any</strong> asks every team, <strong>HQ</strong> lets the HQ choose and a unit such as <strong>1J</strong> asks that unit. Pick one and tap <strong>Send</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/0d9c175e1d0ba025.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "See it waiting",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Drones</strong> again and <strong>My requests</strong> lists it. <strong>Waiting for the HQ</strong> means no team has it yet.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/8832439dec5842e2.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "If a drone is already there",
+          "layout": "image-bottom",
+          "html": "<p>When a drone already flies on that target, the line under <strong>To</strong> says so. With more than four choices, tap <strong>To</strong> and pick from the list.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/01b208011af56620.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

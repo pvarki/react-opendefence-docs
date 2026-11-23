@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "id": "5452a6df-21f5-4968-8b31-1343c473aa7f",
+  "slug": "check-the-plan-before-sending-RPB7m27gAZ",
+  "collection": "wikis/opendefence-plugins",
+  "locale": "en",
+  "title": "Check the plan before sending",
+  "breadcrumb": [
+    "OpenDefence UAVOps",
+    "Drone team",
+    "Check the plan before sending"
+  ],
+  "createdAt": "2026-11-06T23:06:08.176Z",
+  "updatedAt": "2026-11-23T20:03:27.166Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Read the notes",
+          "layout": "image-bottom",
+          "html": "<p><strong>No corridor to this target</strong> and <strong>Caution</strong> are notes. <strong>Send</strong> still works.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/11a07a82a571bb2d.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "See a drone fall short",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Change</strong>, pick a drone and tap <strong>Update plan</strong>. One that falls short is still planned, and <strong>Range</strong> says <strong>Too far</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/10e831876cd6c664.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Check before sending",
+          "layout": "image-bottom",
+          "html": "<p>When the plan has a problem, <strong>Send</strong> lists it first. <strong>Change plan</strong> opens the drone and window choices again, and <strong>Send anyway</strong> sends it as it is.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/34792bdf730da2a7.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Fix it",
+          "layout": "image-bottom",
+          "html": "<p>Pick a drone that reaches, and a later <strong>To</strong> time if it must fly longer. When <strong>Range</strong> says <strong>Ok</strong>, tap <strong>Send</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/60ace34816819693.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Another mission in the way",
+          "layout": "image-bottom",
+          "html": "<p>Another team planning near your route at the same time sees your mission, here <strong>Overlaps Recon 4</strong>. When you see <strong>Overlaps</strong>, check with that team before you tap <strong>Send anyway</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/57e9f65fbfe3cb73.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

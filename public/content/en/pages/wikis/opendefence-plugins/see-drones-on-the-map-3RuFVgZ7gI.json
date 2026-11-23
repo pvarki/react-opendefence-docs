@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "993221d9-9ab0-487d-893d-ea70e8e7bd3d",
+  "slug": "see-drones-on-the-map-3RuFVgZ7gI",
+  "collection": "wikis/opendefence-plugins",
+  "locale": "en",
+  "title": "See drones on the map",
+  "breadcrumb": [
+    "OpenDefence UAVOps",
+    "Everyone",
+    "See drones on the map"
+  ],
+  "createdAt": "2026-11-06T23:07:21.886Z",
+  "updatedAt": "2026-11-23T15:09:45.478Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "See where drones fly",
+          "layout": "image-bottom",
+          "html": "<p>Every phone on the drone feeds shows corridors, routes, sortie circles and drones on its map. A route's name says <strong>Executing</strong> while the drone flies.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/2ee5092a068d4bc8.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Tap a route",
+          "layout": "image-bottom",
+          "html": "<p>Tap a route or a drone for ATAK's own menu and details. If ATAK lists several items, tap the route's name.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/6b81f52749c15e8d.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "See what they find",
+          "layout": "image-bottom",
+          "html": "<p>What the drone team marks and sends arrives as an enemy mark, like any report. Its label says who sent it.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/c5d6effa5f669dfd.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

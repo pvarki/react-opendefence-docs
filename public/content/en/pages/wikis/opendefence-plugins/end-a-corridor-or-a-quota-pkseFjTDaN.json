@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "id": "0c3e3c4f-a3d9-447b-9a6b-70737c90b0a7",
+  "slug": "end-a-corridor-or-a-quota-pkseFjTDaN",
+  "collection": "wikis/opendefence-plugins",
+  "locale": "en",
+  "title": "End a corridor or a quota",
+  "breadcrumb": [
+    "OpenDefence UAVOps",
+    "HQ and TOC",
+    "End a corridor or a quota"
+  ],
+  "createdAt": "2026-11-06T23:05:11.251Z",
+  "updatedAt": "2026-11-23T15:08:26.830Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Open the corridor",
+          "layout": "image-bottom",
+          "html": "<p>Open the corridor from Corridors in <strong>Drones</strong>. <strong>Change shape</strong> redraws it and <strong>Change</strong> edits its name, team and hours.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/905db2e80fe069f2.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "End it",
+          "layout": "image-bottom",
+          "html": "<p><strong>End corridor</strong> asks once. The corridor then leaves the map.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/3243ed63157d1dbe.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "See it ended",
+          "layout": "image-bottom",
+          "html": "<p>The page now says when it ended. <strong>Reopen</strong> opens its form again, from now to 12 hours later.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/b5ce6feea136a9f5.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Open the quota",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>‹</strong>, open Quotas and tap the quota. Its form has <strong>End quota</strong> at the bottom.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/f08632ef1212b73a.webp",
+              "width": 1336,
+              "height": 2660
+            }
+          ]
+        },
+        {
+          "title": "End a quota",
+          "layout": "image-bottom",
+          "html": "<p><strong>End quota</strong> asks once. Tap <strong>End quota</strong> again to end it.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/21edbce15d76e050.webp",
+              "width": 1336,
+              "height": 2660
+            }
+          ]
+        },
+        {
+          "title": "See what ended",
+          "layout": "image-bottom",
+          "html": "<p>Ended quotas and corridors stay under <strong>Ended</strong> for 7 days.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/4507777c01447df2.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

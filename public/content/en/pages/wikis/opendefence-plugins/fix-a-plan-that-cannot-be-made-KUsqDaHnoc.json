@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "eb36ba79-eeee-40c5-94c4-77f1633c58fb",
+  "slug": "fix-a-plan-that-cannot-be-made-KUsqDaHnoc",
+  "collection": "wikis/opendefence-plugins",
+  "locale": "en",
+  "title": "Fix a plan that cannot be made",
+  "breadcrumb": [
+    "OpenDefence UAVOps",
+    "Drone team",
+    "Fix a plan that cannot be made"
+  ],
+  "createdAt": "2026-11-06T23:06:03.017Z",
+  "updatedAt": "2026-11-23T15:08:34.616Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "See what is missing",
+          "layout": "image-bottom",
+          "html": "<p>If no plan can be made, the page says what is missing and has no <strong>Send</strong>. <strong>Our drones</strong> takes you to the fix.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/be547d2cf67cedb8.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Add the drones you have",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Our drones</strong> and add your drones with <strong>+ Add drone</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/901814ba91ceddf7.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Plan again",
+          "layout": "image-bottom",
+          "html": "<p>Back on <strong>Requests</strong>, select the request and tap <strong>Plan</strong> again. Amber lines only warn, and a red <strong>No go</strong> or <strong>Too far</strong> opens <strong>Check before sending</strong> at <strong>Send</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/ebf37af43aad5e64.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

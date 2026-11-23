@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "id": "5bf32bf6-3b80-4dba-8f46-d97bd4b90749",
+  "slug": "open-the-user-manual-ypFALFvuyX",
+  "collection": "wikis/opendefence-plugins",
+  "locale": "en",
+  "title": "Open the user manual",
+  "breadcrumb": [
+    "OpenDefence UAVOps",
+    "Get started",
+    "Open the user manual"
+  ],
+  "createdAt": "2026-11-23T12:43:14.857Z",
+  "updatedAt": "2026-11-23T12:43:14.857Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Open ATAK's menu",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>≡</strong> at the top right, scroll to the end and tap <strong>Settings</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/4dd90daf0fdb7c65.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Open ATAK's Settings",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Tool Preferences</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/3b1f1b37f8eddfba.webp",
+              "width": 1336,
+              "height": 2660
+            }
+          ]
+        },
+        {
+          "title": "Find the plugins' settings",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Specific Tool Preferences</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/951d5f6a145433bf.webp",
+              "width": 1336,
+              "height": 2660
+            }
+          ]
+        },
+        {
+          "title": "Pick OD UAVOps",
+          "layout": "image-bottom",
+          "html": "<p>Scroll down to the OD pages, one for each OpenDefence plugin. Tap <strong>OD UAVOps Preferences</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/23c2c7a15885a195.webp",
+              "width": 1336,
+              "height": 2660
+            }
+          ]
+        },
+        {
+          "title": "Open the manual",
+          "layout": "image-bottom",
+          "html": "<p>Change these feeds, weather and video settings only when you are told to. Under <strong>HELP</strong>, tap <strong>User manual</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/cb7f8b37edb5cecc.webp",
+              "width": 1336,
+              "height": 2660
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

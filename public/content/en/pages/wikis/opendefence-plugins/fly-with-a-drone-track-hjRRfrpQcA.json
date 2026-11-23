@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "a00d2309-acc6-471b-8999-d5779dc837de",
+  "slug": "fly-with-a-drone-track-hjRRfrpQcA",
+  "collection": "wikis/opendefence-plugins",
+  "locale": "en",
+  "title": "Fly with a drone track",
+  "breadcrumb": [
+    "OpenDefence UAVOps",
+    "Drone team",
+    "Fly with a drone track"
+  ],
+  "createdAt": "2026-11-06T23:06:34.324Z",
+  "updatedAt": "2026-11-23T20:03:39.944Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Pick the track",
+          "layout": "image-bottom",
+          "html": "<p>When the drone is up, tap <strong>Took off</strong> on the mission's card, then tap its track, here <strong>KOIRA11</strong>. <strong>Drone track</strong> on the card changes a wrong pick.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/1815f43c98d4f8bd.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Eyes on target",
+          "layout": "image-bottom",
+          "html": "<p><strong>Eyes on target</strong> shows while the drone's camera looks at the target. <strong>KOIRA11 SPI</strong> on the map marks where it looks.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/ff381e2b9f695459.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Mark where it looks",
+          "layout": "image-bottom",
+          "html": "<p><strong>Mark finding</strong> opens a new marker where the camera looks. Pick what you see and tap <strong>Place</strong>, then send it with <strong>Send to…</strong> in OpenDefence Main.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/c43e9d7303053cf8.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Drone gone?",
+          "layout": "image-bottom",
+          "html": "<p>When the track sends nothing for a minute, the card asks. Tap <strong>Not yet</strong> or the answer it suggests, here <strong>Landed</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/0ceb87223616db23.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

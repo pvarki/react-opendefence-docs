@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "id": "612c60e0-3252-4dc5-b1f7-51d07aded624",
+  "slug": "draw-a-corridor-QLkNeobJW1",
+  "collection": "wikis/opendefence-plugins",
+  "locale": "en",
+  "title": "Draw a corridor",
+  "breadcrumb": [
+    "OpenDefence UAVOps",
+    "HQ and TOC",
+    "Draw a corridor"
+  ],
+  "createdAt": "2026-11-06T23:04:01.714Z",
+  "updatedAt": "2026-11-23T12:47:57.037Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Open Corridors",
+          "layout": "image-bottom",
+          "html": "<p>In <strong>Drones</strong>, tap <strong>Corridors</strong>, then <strong>New corridor</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/69ab185b9e737705.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Tap the corners",
+          "layout": "image-bottom",
+          "html": "<p>Tap at least 3 corners on the map, then <strong>Next</strong>. <strong>Undo corner</strong> takes the last one off.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/e9a9a8a614457ab7.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Name it",
+          "layout": "image-bottom",
+          "html": "<p>Type the corridor's <strong>Name</strong>. <strong>Valid from</strong> starts at about now and <strong>Valid until</strong> 12 hours later.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/dab1b8e8c5aa679d.webp",
+              "width": 1336,
+              "height": 2660
+            }
+          ]
+        },
+        {
+          "title": "Pick the team",
+          "layout": "image-bottom",
+          "html": "<p>Under <strong>For whom</strong>, tap <strong>Pick</strong>. Open <strong>1J</strong>, then tap <strong>2R</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/9231f9990d2622b9.webp",
+              "width": 1336,
+              "height": 2660
+            }
+          ]
+        },
+        {
+          "title": "Send it",
+          "layout": "image-bottom",
+          "html": "<p>To change the hours, type four digits such as 0600. Tap <strong>Send</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/aa7e8650e236ac4a.webp",
+              "width": 1336,
+              "height": 2660
+            }
+          ]
+        },
+        {
+          "title": "See it live",
+          "layout": "image-bottom",
+          "html": "<p>The corridor is live and on every map. Tap its row later to change or end it.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/371ea41d9f1c3978.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

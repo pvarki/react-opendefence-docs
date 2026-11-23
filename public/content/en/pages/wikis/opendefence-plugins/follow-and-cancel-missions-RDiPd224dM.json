@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "e5e4a406-8ae3-4865-adc4-6084d9129ae1",
+  "slug": "follow-and-cancel-missions-RDiPd224dM",
+  "collection": "wikis/opendefence-plugins",
+  "locale": "en",
+  "title": "Follow and cancel missions",
+  "breadcrumb": [
+    "OpenDefence UAVOps",
+    "HQ and TOC",
+    "Follow and cancel missions"
+  ],
+  "createdAt": "2026-11-06T23:04:29.117Z",
+  "updatedAt": "2026-11-23T12:53:59.044Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Open Missions",
+          "layout": "image-bottom",
+          "html": "<p>In <strong>Drones</strong>, tap <strong>Missions</strong>. <strong>Active</strong> lists every unit's missions until their sortie ends.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/03e23798a640116d.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Open a mission",
+          "layout": "image-bottom",
+          "html": "<p>Tap a mission for its team, drone and window. <strong>Show on map</strong> moves the map to it.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/675eeceda1f7ba62.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Cancel it",
+          "layout": "image-bottom",
+          "html": "<p>Before the drone is up, <strong>Cancel mission</strong> stops it. It asks once and tells the team.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/06cd539203a39a7a.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "See it finished",
+          "layout": "image-bottom",
+          "html": "<p>The mission moves to <strong>Finished</strong>. The request goes back to the team.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/ee82e784feccca67.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

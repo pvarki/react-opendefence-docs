@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "a79fda6e-2ec8-4d32-b0fe-4f91efeee20d",
+  "slug": "plan-a-mission-yVGegg7DLD",
+  "collection": "wikis/opendefence-plugins",
+  "locale": "en",
+  "title": "Plan a mission",
+  "breadcrumb": [
+    "OpenDefence UAVOps",
+    "Drone team",
+    "Plan a mission"
+  ],
+  "createdAt": "2026-11-06T23:05:30.312Z",
+  "updatedAt": "2026-11-23T12:55:45.982Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Open the request",
+          "layout": "image-bottom",
+          "html": "<p>Tap the request on <strong>Requests</strong>, then <strong>Plan</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/69c62eb3400f0db8.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Check the plan",
+          "layout": "image-bottom",
+          "html": "<p>UAVOps picks the drone, window and route. Check them and the <strong>Weather</strong> and <strong>Range</strong> cells.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/2be974c05b5787e5.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Change the drone or time",
+          "layout": "image-bottom",
+          "html": "<p><strong>Change</strong> takes another drone or a time typed like 1620. <strong>Update plan</strong> plans again.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/302c10c57fd9d793.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Send it",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Send</strong>, and the mission opens on <strong>Missions</strong>, ready for <strong>Took off</strong>. If the plan has a problem, <strong>Check before sending</strong> comes first.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/911751fadc3fa40f.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
