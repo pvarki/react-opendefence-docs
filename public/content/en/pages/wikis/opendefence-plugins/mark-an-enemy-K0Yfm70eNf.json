@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "id": "c52a9d65-b723-4fca-ae1a-3f7b091e3a80",
+  "slug": "mark-an-enemy-K0Yfm70eNf",
+  "collection": "wikis/opendefence-plugins",
+  "locale": "en",
+  "title": "Mark an enemy",
+  "breadcrumb": [
+    "OpenDefence Main",
+    "Marking",
+    "Mark an enemy"
+  ],
+  "createdAt": "2026-10-27T21:22:48.939Z",
+  "updatedAt": "2026-11-23T20:01:23.058Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Open Markers",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Markers</strong> on the thumb bar.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/88e1dda22348735e.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Switch to Enemy",
+          "layout": "image-bottom",
+          "html": "<p>The popup opens on <strong>Unknown</strong>. Tap <strong>Enemy</strong>, then the symbol in the middle.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/5d794775e3eb649d.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Pick the type",
+          "layout": "image-bottom",
+          "html": "<p>The usual types come first, then others you used lately. Tap the type you saw, here <strong>Mech. infantry</strong>, or search.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/06bcd0436622904c.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Set the size",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Size</strong> and pick what you saw, such as <strong>Platoon</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/a8c749882b501c9c.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Place it",
+          "layout": "image-bottom",
+          "html": "<p>Check the type and size, then tap <strong>Place</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/728383669ae816c8.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Tap the map",
+          "layout": "image-bottom",
+          "html": "<p>Tap where the enemy is. Swipe instead to show which way it moves.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/56d6828e47ede9bb.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Check it",
+          "layout": "image-bottom",
+          "html": "<p>The mark is on your map and reads <strong>NOT SENT</strong> until you send it. Tap <strong>Send to…</strong> to share it.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/341c6e83a7e266a4.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

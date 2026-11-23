@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "f94abb30-25dc-4c5a-b421-2fd9811afd5d",
+  "slug": "mark-what-a-drone-sees-p5EDt8y6Vi",
+  "collection": "wikis/opendefence-plugins",
+  "locale": "en",
+  "title": "Mark what a drone sees",
+  "breadcrumb": [
+    "OpenDefence Main",
+    "Requests",
+    "Mark what a drone sees"
+  ],
+  "createdAt": "2026-11-06T23:01:26.350Z",
+  "updatedAt": "2026-11-23T12:41:07.246Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Mark the finding",
+          "layout": "image-bottom",
+          "html": "<p>In <strong>Drones</strong> on <strong>Missions</strong> open the flying mission, here <strong>Strike 1 on Bunker</strong>. Tap <strong>Mark finding</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/6a07e2cf2f69f76a.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Markers opens at the drone",
+          "layout": "image-bottom",
+          "html": "<p>Markers opens on <strong>Enemy</strong> at the drone's spot. Tap <strong>Enemy ›</strong> to pick what you see.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/c6b60ec9d043d5ed.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Pick the type",
+          "layout": "image-bottom",
+          "html": "<p>Pick what you see, here <strong>Armour</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/40d10adf9fd2fb21.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Place it",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Place</strong>. The mark goes straight to the drone's spot and stays <strong>NOT SENT</strong> until you tap <strong>Send to…</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/6f9fce8a9dd3b5f3.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

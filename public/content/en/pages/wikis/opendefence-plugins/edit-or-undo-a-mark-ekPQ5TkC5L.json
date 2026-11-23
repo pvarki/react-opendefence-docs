@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "id": "55734353-57ac-4cf7-9dbd-13157f4d9961",
+  "slug": "edit-or-undo-a-mark-ekPQ5TkC5L",
+  "collection": "wikis/opendefence-plugins",
+  "locale": "en",
+  "title": "Edit or undo a mark",
+  "breadcrumb": [
+    "OpenDefence Main",
+    "Sharing",
+    "Edit or undo a mark"
+  ],
+  "createdAt": "2026-11-06T23:00:12.852Z",
+  "updatedAt": "2026-11-23T20:02:28.628Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Open your mark",
+          "layout": "image-bottom",
+          "html": "<p>Tap your mark on the map, then the outlined diamond on the ring. Its card opens.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/32dd5d383218476b.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Open Edit",
+          "layout": "image-bottom",
+          "html": "<p>Its card shows where it went, <strong>→ HQ, 1 phone, no receipt</strong>. Tap <strong>Edit</strong> to change it.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/232a3b0f0c9adaab.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Change it",
+          "layout": "image-bottom",
+          "html": "<p>Change what you need, such as <strong>Destroyed</strong>. <strong>Edit, not sent</strong> means no phone confirmed it, as a role send has no receipt.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/5bb2a5e887dda0d0.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Move it and save",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Position, tap to move</strong>, and the popup hides until you tap the new spot on the map. When it is back with <strong>Position, moved 100 m</strong>, tap <strong>Save</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/229478e2d88653c1.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Undo a sent mark",
+          "layout": "image-bottom",
+          "html": "<p>ATAK's box at the top right shows the new grid, and the HQ phones online now get the change. To take the mark back, tap <strong>Undo</strong> on the card.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/d6d2e29380c0d0ca.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Remove it",
+          "layout": "image-bottom",
+          "html": "<p>The sheet says how many HQ phones online get the delete, and phones offline now keep the mark. Tap <strong>Remove from 1 HQ phone</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/829b7031941c9aa8.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Put it back",
+          "layout": "image-bottom",
+          "html": "<p>The card reads <strong>Removed</strong>. To change your mind, tap <strong>Put back</strong> within 2 minutes, before you close the card.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/0334e372cbbaac43.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "id": "4456842b-d383-4a78-bb25-881c3297e3b0",
+  "slug": "why-opendefence-main-qSkewIfx3U",
+  "collection": "wikis/opendefence-plugins",
+  "locale": "en",
+  "title": "Why OpenDefence Main",
+  "breadcrumb": [
+    "OpenDefence Main",
+    "About",
+    "Why OpenDefence Main"
+  ],
+  "createdAt": "2026-10-27T21:22:39.235Z",
+  "updatedAt": "2026-11-23T20:01:15.372Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "An easier ATAK",
+          "layout": "image-bottom",
+          "html": "<p>ATAK can do almost anything, but it is built for specialists. OpenDefence Main puts marking, sending and reading reports one thumb away.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/5d794775e3eb649d.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Plugins join in",
+          "layout": "image-bottom",
+          "html": "<p>Other OpenDefence plugins, such as <strong>Drones</strong> and <strong>Voice</strong>, add their buttons to the thumb bar. Your requests to <strong>Drones</strong> and their answers show in the same <strong>Inbox</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/7658202e351d2ab4.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Tap an enemy mark",
+          "layout": "image-bottom",
+          "html": "<p>Tap an enemy mark, such as this <strong>Anti-armour</strong>, then the target button on the ring around it. It is the crosshair at the lower left.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/cf9a5d529bbfa842.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Ask from the map",
+          "layout": "image-bottom",
+          "html": "<p>Ask <strong>Drones</strong> for a <strong>Strike</strong> or <strong>Recon</strong> on an enemy mark, straight from the map. The answer comes to your <strong>Inbox</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/e7df3a9dc7e9355c.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "One way of working, shared",
+          "layout": "image-bottom",
+          "html": "<p>Learn <strong>Markers</strong>, <strong>Send to…</strong> and the <strong>Inbox</strong> once. Plugins that build on them, such as <strong>Drones</strong>, use them the same way.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/e7837e6ed2ea8e2c.webp",
+              "width": 2480,
+              "height": 1300
+            }
+          ]
+        },
+        {
+          "title": "A template for every plugin",
+          "layout": "image-bottom",
+          "html": "<p>Every OpenDefence plugin is built and checked the same way, and TAK.gov signs it. New plugins, such as Fires and Logistics, will be made the same way.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/97b6e17b08d82c05.webp",
+              "width": 2480,
+              "height": 1120
+            }
+          ]
+        },
+        {
+          "title": "Built for military use",
+          "layout": "image-bottom",
+          "html": "<p><strong>Markers</strong> draws APP-6D and MIL-STD-2525D symbols and sends standard CoT that any TAK client reads. Your admins set the usual types, like these enemy favourites, and your unit's ORBAT for the whole operation.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/06bcd0436622904c.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

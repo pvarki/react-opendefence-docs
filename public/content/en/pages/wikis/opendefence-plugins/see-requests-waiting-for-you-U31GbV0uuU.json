@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "e3469e98-352b-49c3-9bcf-3fbeb09b4baf",
+  "slug": "see-requests-waiting-for-you-U31GbV0uuU",
+  "collection": "wikis/opendefence-plugins",
+  "locale": "en",
+  "title": "See requests waiting for you",
+  "breadcrumb": [
+    "OpenDefence Main",
+    "Requests",
+    "See requests waiting for you"
+  ],
+  "createdAt": "2026-11-06T23:01:21.968Z",
+  "updatedAt": "2026-11-23T12:41:02.053Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "A request arrives",
+          "layout": "image-bottom",
+          "html": "<p>A new request for you shows as a red count on <strong>Inbox</strong> and on <strong>Drones</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/18fe3059f6be2307.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Find it in the Inbox",
+          "layout": "image-bottom",
+          "html": "<p>Requests waiting for you are under <strong>For you</strong>. They stay there until someone answers them in <strong>Drones</strong> or they lapse.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/d1bbb5b5c7551af1.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Open it",
+          "layout": "image-bottom",
+          "html": "<p>Tap the row. The map flies to the target and <strong>Drones</strong> opens on the request.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/1736c03b47d3e135.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Choose how it reaches you",
+          "layout": "image-bottom",
+          "html": "<p>In the Inbox tap <strong>Alerts</strong>. Under <strong>Requests for me</strong> pick <strong>Buzz</strong>, <strong>Banner</strong> or <strong>List only</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/6af296e519087feb.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

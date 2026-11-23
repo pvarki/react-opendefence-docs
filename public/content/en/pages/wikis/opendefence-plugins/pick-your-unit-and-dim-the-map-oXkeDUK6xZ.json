@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 1,
+  "id": "120274f1-e0e5-4dba-8caf-bde6ab4fe8da",
+  "slug": "pick-your-unit-and-dim-the-map-oXkeDUK6xZ",
+  "collection": "wikis/opendefence-plugins",
+  "locale": "en",
+  "title": "Pick your unit and dim the map",
+  "breadcrumb": [
+    "OpenDefence Main",
+    "Setup",
+    "Pick your unit and dim the map"
+  ],
+  "createdAt": "2026-10-27T21:23:48.557Z",
+  "updatedAt": "2026-11-23T12:41:45.025Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Find the unit setting",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Inbox</strong> at the bottom left, then <strong>Set your unit to watch its area ›</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/22f7e2f67d350b55.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Go into your platoon",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>›</strong> at the right of your platoon's row to go into it. Tapping the row itself picks that unit.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/92fb8bc2e9bdb982.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Pick your unit",
+          "layout": "image-bottom",
+          "html": "<p>Tap your squad, or your platoon's card at the top if you lead it.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/c42037f6c5798c38.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "See what your unit reports",
+          "layout": "image-bottom",
+          "html": "<p>The Inbox now watches 1J and counts its reports under <strong>Reported by your unit</strong>. Tap <strong>Done</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/48c9c077081bd061.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Check your marks",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Markers</strong> on the bar at the bottom and pick <strong>Friendly</strong>. <strong>Unit</strong> now shows <strong>1J</strong>, so the friendly marks you place belong to 1J unless you pick another unit.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/a77ee5a536da31e2.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Change it later",
+          "layout": "image-bottom",
+          "html": "<p>To change your unit later, tap <strong>≡</strong>, scroll the tools to <strong>OpenDefence Main</strong> and tap your unit under <strong>My unit</strong>, here <strong>1J</strong>. The last row of the list that opens, <strong>No unit</strong>, clears it.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/79ec74a1cf62834d.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Dim the map",
+          "layout": "image-bottom",
+          "html": "<p>Under <strong>Wash out the map</strong>, pick how pale the map is, here <strong>50 %</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/2761676560b60764.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Check the map",
+          "layout": "image-bottom",
+          "html": "<p>Close the pane with <strong>✕</strong> to see your arrow and other marks stand out on the paler map. To bring the map back, open OpenDefence Main again and pick <strong>Off</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/3a0bfa7feb182dac.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "db1490a4-fec9-4a19-a2e7-6acb3c430f6d",
+  "slug": "mark-unknown-and-neutral-contacts-jOAvlyCt0c",
+  "collection": "wikis/opendefence-plugins",
+  "locale": "en",
+  "title": "Mark unknown and neutral contacts",
+  "breadcrumb": [
+    "OpenDefence Main",
+    "Marking",
+    "Mark unknown and neutral contacts"
+  ],
+  "createdAt": "2026-11-06T22:59:04.898Z",
+  "updatedAt": "2026-11-23T12:39:05.942Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Say what you see",
+          "layout": "image-bottom",
+          "html": "<p>Markers opens on <strong>Unknown</strong>. Tap <strong>Equipment</strong> and pick what you see, such as <strong>Car / SUV</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/d38e9c9e1cbf6968.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Check the type",
+          "layout": "image-bottom",
+          "html": "<p>The type now reads <strong>Car / SUV</strong>. Tap <strong>Place</strong>, then the map.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/785f9d2d7af917a5.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Check it",
+          "layout": "image-bottom",
+          "html": "<p>It is on your map, <strong>NOT SENT</strong> until you send it. Once you know whose it is, tap <strong>Edit</strong> and pick the side.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/636ec123fddd34ea.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Mark civilians",
+          "layout": "image-bottom",
+          "html": "<p>For civilians and authorities, open Markers, tap <strong>Neutral</strong>, then the type in the middle. Pick one, such as <strong>Refugees</strong>, and place it the same way.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/743a7d74693dc1e0.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

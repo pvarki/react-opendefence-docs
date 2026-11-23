@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "157bb7dd-9912-428e-bdd0-a0de4c684d66",
+  "slug": "place-a-mark-by-grid-sv0H59a7LQ",
+  "collection": "wikis/opendefence-plugins",
+  "locale": "en",
+  "title": "Place a mark by grid",
+  "breadcrumb": [
+    "OpenDefence Main",
+    "Marking",
+    "Place a mark by grid"
+  ],
+  "createdAt": "2026-11-06T22:59:13.322Z",
+  "updatedAt": "2026-11-23T12:39:45.625Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Type the grid",
+          "layout": "image-bottom",
+          "html": "<p>Start a mark as usual with the side and the symbol, then tap <strong>MGRS</strong> and type the grid reference. Tap <strong>OK</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/f4ce588ee8b08826.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Place it",
+          "layout": "image-bottom",
+          "html": "<p><strong>MGRS ✓</strong> shows the grid is set. Tap <strong>Place</strong> and the mark goes straight there.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/06506980864eae35.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Check it",
+          "layout": "image-bottom",
+          "html": "<p>The mark is on the map at that grid, <strong>NOT SENT</strong> until you send it.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/e611319c1712c5de.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

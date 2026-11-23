@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "id": "ee02836d-260c-470e-9d12-8ffd94095bc1",
+  "slug": "add-details-to-a-mark-ushiTeUjx2",
+  "collection": "wikis/opendefence-plugins",
+  "locale": "en",
+  "title": "Add details to a mark",
+  "breadcrumb": [
+    "OpenDefence Main",
+    "Marking",
+    "Add details to a mark"
+  ],
+  "createdAt": "2026-11-06T22:58:22.446Z",
+  "updatedAt": "2026-11-23T12:38:53.923Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Pick the type and size",
+          "layout": "image-bottom",
+          "html": "<p>Open Markers and pick the enemy type and size. <strong>Modifiers</strong> and <strong>Equipment</strong> beside the type add details.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/728383669ae816c8.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Add modifiers",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Modifiers</strong> and tap what you saw, such as <strong>Tracked</strong>. Tap <strong>OK</strong> when done.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/77a2bce505778634.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Name the equipment",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Equipment</strong> and pick what you saw, such as <strong>BMP-2</strong>. Tap <strong>…</strong> to write in another type.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/4ebf99dd531b2502.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Say what it is doing",
+          "layout": "image-bottom",
+          "html": "<p>Pick <strong>Present</strong>, <strong>Anticipated</strong> or <strong>Destroyed</strong>, and what it is doing, such as <strong>Digging in</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/2d5b05ad9480ce03.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Name it",
+          "layout": "image-bottom",
+          "html": "<p>Tap the name field and type a short name. Tap ✓ on the keyboard to close it.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/35de5b79effdbb00.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Add a description",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Description</strong>, write what you saw and tap <strong>Done</strong>. Everyone you send it to sees it.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/bd36db863d187698.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Place it",
+          "layout": "image-bottom",
+          "html": "<p>Place it on the map. The label shows the name and the card shows the description.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/ce7dca353fec052f.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

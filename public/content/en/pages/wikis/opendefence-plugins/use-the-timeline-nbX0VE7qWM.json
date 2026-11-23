@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "id": "ff9435df-7522-41f9-a307-9755c539e38d",
+  "slug": "use-the-timeline-nbX0VE7qWM",
+  "collection": "wikis/opendefence-plugins",
+  "locale": "en",
+  "title": "Use the timeline",
+  "breadcrumb": [
+    "OpenDefence Main",
+    "Reading",
+    "Use the timeline"
+  ],
+  "createdAt": "2026-10-27T22:27:03.724Z",
+  "updatedAt": "2026-11-23T12:40:56.543Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Open Timelines",
+          "layout": "image-bottom",
+          "html": "<p>In the <strong>Inbox</strong>, tap <strong>Timelines</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/53546c2fdd1aa0c8.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Read the time axis",
+          "layout": "image-bottom",
+          "html": "<p><strong>Direct</strong> is what reached your phone straight from others. Use <strong>−</strong> and <strong>+</strong> to see more or less time.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/e0f6c967430dce64.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Open a lane",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Direct</strong> to see its reports along the time axis. Where there is room, a report names who added it, such as <strong>By BRAVO-2</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/67672f473a49a365.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "See a busy moment",
+          "layout": "image-bottom",
+          "html": "<p>Where reports crowd, tap the count to list them. The list says what was new or removed, when and by whom.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/229311b373997ee0.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Go to it",
+          "layout": "image-bottom",
+          "html": "<p>Tap a report for its details. <strong>Close and go to</strong> flies the map there.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/1c1df7fc56776f22.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Reach further back",
+          "layout": "image-bottom",
+          "html": "<p>Close every sheet, then tap <strong>≡</strong> and <strong>OpenDefence Main</strong>. <strong>Timeline history</strong> sets how far back Timelines reach.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/0cdf283125f8da1c.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

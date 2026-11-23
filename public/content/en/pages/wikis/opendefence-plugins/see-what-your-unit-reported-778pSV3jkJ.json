@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "6e27751a-c635-4dc9-aa7d-d2280c2775b8",
+  "slug": "see-what-your-unit-reported-778pSV3jkJ",
+  "collection": "wikis/opendefence-plugins",
+  "locale": "en",
+  "title": "See what your unit reported",
+  "breadcrumb": [
+    "OpenDefence Main",
+    "Reading",
+    "See what your unit reported"
+  ],
+  "createdAt": "2026-11-06T23:01:01.869Z",
+  "updatedAt": "2026-11-23T12:40:49.310Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Open the Inbox",
+          "layout": "image-bottom",
+          "html": "<p>As a leader, tap <strong>Inbox</strong>. <strong>Reported by your unit</strong> counts enemy reports by who in your unit made them.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/dd43501e9e51eeb4.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Open a count",
+          "layout": "image-bottom",
+          "html": "<p>Tap a sub-unit, such as <strong>2R</strong>, to list its reports with time, direction and distance.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/02f2d18298f5e3dd.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Show them on the map",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Show all on map</strong>. The map zooms out to fit all of them.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/00e4d745910b68b4.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

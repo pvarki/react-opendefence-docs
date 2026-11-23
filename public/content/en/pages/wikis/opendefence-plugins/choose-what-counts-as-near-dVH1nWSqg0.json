@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "3d1e64ec-8727-4d80-a365-7facb3522a44",
+  "slug": "choose-what-counts-as-near-dVH1nWSqg0",
+  "collection": "wikis/opendefence-plugins",
+  "locale": "en",
+  "title": "Choose what counts as near",
+  "breadcrumb": [
+    "OpenDefence Main",
+    "Setup",
+    "Choose what counts as near"
+  ],
+  "createdAt": "2026-11-06T23:02:07.196Z",
+  "updatedAt": "2026-11-23T12:41:50.164Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Open the menu",
+          "layout": "image-bottom",
+          "html": "<p><strong>Enemy near me</strong> sets how far the Inbox's Near you list reaches. Tap <strong>≡</strong>, scroll the tools to <strong>OpenDefence Main</strong> and, under <strong>Enemy near me</strong>, tap <strong>10 km</strong> or <strong>Own…</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/13a27028db9237a5.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Pick a distance",
+          "layout": "image-bottom",
+          "html": "<p>Tap the field, type a distance from 1 to 50 and tap <strong>OK</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/457c792b862da68d.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Check the distance",
+          "layout": "image-bottom",
+          "html": "<p>The third button under <strong>Enemy near me</strong> now reads <strong>3 km</strong>. Tap <strong>✕</strong> to close the pane.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/6e853dfab4009a14.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Check the Inbox",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Inbox</strong> and scroll down. The <strong>Artillery</strong> 1.9 km away now shows under <strong>Near you, 3 km</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/cc86b0f68d82fd39.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
