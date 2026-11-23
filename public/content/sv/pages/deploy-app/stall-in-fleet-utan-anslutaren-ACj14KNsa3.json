@@ -13,7 +13,7 @@
     "Ställ in Fleet utan anslutaren"
   ],
   "createdAt": "2026-11-22T22:10:31.035Z",
-  "updatedAt": "2026-11-22T22:29:21.253Z",
+  "updatedAt": "2026-11-23T11:56:01.715Z",
   "headings": [],
   "translations": {
     "en": "/en/deploy-app/set-fleet-up-without-the-connector-Xm6Qo0Xkhr",
@@ -64,10 +64,10 @@
         {
           "title": "Lägg till certifikatet",
           "layout": "image-bottom",
-          "html": "<p>Välj ditt team högst upp och sedan <strong>Controls</strong>, <strong>OS settings</strong>, <strong>Certificates</strong>, <strong>Add</strong>. Namn <code>rmscep</code>, subject <code>CN=$FLEET_VAR_HOST_END_USER_IDP_USERNAME_LOCAL_PART, OU=$FLEET_VAR_HOST_UUID</code>.</p>",
+          "html": "<p>Välj ditt team högst upp och sedan <strong>Controls</strong>, <strong>OS settings</strong>, <strong>Certificates</strong>, <strong>Add</strong>. Namn <code>rmscep</code>, subject <code>CN=$FLEET_VAR_HOST_END_USER_IDP_USERNAME_LOCAL_PART</code>.</p>",
           "images": [
             {
-              "src": "/content/images/sv/attachments/a7c898d5603efdd0.webp",
+              "src": "/content/images/sv/attachments/194e51dab07a0035.webp",
               "width": 1860,
               "height": 1915
             }

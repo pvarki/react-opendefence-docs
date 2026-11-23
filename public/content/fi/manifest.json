@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "locale": "fi",
-  "generatedAt": "2026-11-22T22:36:54.139Z",
+  "generatedAt": "2026-11-23T11:59:15.926Z",
   "collections": [
     {
       "slug": "deploy-app",
@@ -554,7 +554,7 @@
         "Määritä Fleet ilman liitintä"
       ],
       "path": "/content/fi/pages/deploy-app/maarita-fleet-ilman-liitinta-v1gTQPz5sV.json",
-      "updatedAt": "2026-11-22T22:28:20.538Z",
+      "updatedAt": "2026-11-23T11:55:12.730Z",
       "order": 21,
       "platform": "android",
       "clientId": "android-vdSzGssyHX",

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "locale": "sv",
-  "generatedAt": "2026-11-22T22:36:54.139Z",
+  "generatedAt": "2026-11-23T11:59:15.926Z",
   "collections": [
     {
       "slug": "deploy-app",
@@ -554,7 +554,7 @@
         "Ställ in Fleet utan anslutaren"
       ],
       "path": "/content/sv/pages/deploy-app/stall-in-fleet-utan-anslutaren-ACj14KNsa3.json",
-      "updatedAt": "2026-11-22T22:29:21.253Z",
+      "updatedAt": "2026-11-23T11:56:01.715Z",
       "order": 21,
       "platform": "android",
       "clientId": "android-yFEMlNyGOI",

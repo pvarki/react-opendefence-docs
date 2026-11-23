@@ -994,14 +994,14 @@
     "fi": "/fi/deploy-app/lisaa-puhelimet-fleetiin-9CeCdOVgei",
     "sv": "/sv/deploy-app/lagg-till-telefoner-i-fleet-5qOyo9hK23"
   },
-  "set-fleet-up-without-the-connector-Xm6Qo0Xkhr": {
-    "en": "/en/deploy-app/set-fleet-up-without-the-connector-Xm6Qo0Xkhr",
-    "fi": "/fi/deploy-app/maarita-fleet-ilman-liitinta-v1gTQPz5sV",
-    "sv": "/sv/deploy-app/stall-in-fleet-utan-anslutaren-ACj14KNsa3"
-  },
   "name-phones-in-fleet-without-the-connector-S69TrSf5OW": {
     "en": "/en/deploy-app/name-phones-in-fleet-without-the-connector-S69TrSf5OW",
     "fi": "/fi/deploy-app/nimea-puhelimet-fleetissa-ilman-liitinta-9ZR0tAiRxJ",
     "sv": "/sv/deploy-app/namnge-telefoner-i-fleet-utan-anslutaren-qSBu1CRt27"
+  },
+  "set-fleet-up-without-the-connector-Xm6Qo0Xkhr": {
+    "en": "/en/deploy-app/set-fleet-up-without-the-connector-Xm6Qo0Xkhr",
+    "fi": "/fi/deploy-app/maarita-fleet-ilman-liitinta-v1gTQPz5sV",
+    "sv": "/sv/deploy-app/stall-in-fleet-utan-anslutaren-ACj14KNsa3"
   }
 }

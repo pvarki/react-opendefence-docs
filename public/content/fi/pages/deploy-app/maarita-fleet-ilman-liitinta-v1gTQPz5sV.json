@@ -13,7 +13,7 @@
     "Määritä Fleet ilman liitintä"
   ],
   "createdAt": "2026-11-22T22:05:26.554Z",
-  "updatedAt": "2026-11-22T22:28:20.538Z",
+  "updatedAt": "2026-11-23T11:55:12.730Z",
   "headings": [],
   "translations": {
     "en": "/en/deploy-app/set-fleet-up-without-the-connector-Xm6Qo0Xkhr",
@@ -64,10 +64,10 @@
         {
           "title": "Lisää varmenne",
           "layout": "image-bottom",
-          "html": "<p>Valitse ylhäältä tiimisi ja sitten <strong>Controls</strong>, <strong>OS settings</strong>, <strong>Certificates</strong>, <strong>Add</strong>. Nimi <code>rmscep</code>, subject <code>CN=$FLEET_VAR_HOST_END_USER_IDP_USERNAME_LOCAL_PART, OU=$FLEET_VAR_HOST_UUID</code>.</p>",
+          "html": "<p>Valitse ylhäältä tiimisi ja sitten <strong>Controls</strong>, <strong>OS settings</strong>, <strong>Certificates</strong>, <strong>Add</strong>. Nimi <code>rmscep</code>, subject <code>CN=$FLEET_VAR_HOST_END_USER_IDP_USERNAME_LOCAL_PART</code>.</p>",
           "images": [
             {
-              "src": "/content/images/fi/attachments/a7c898d5603efdd0.webp",
+              "src": "/content/images/fi/attachments/194e51dab07a0035.webp",
               "width": 1860,
               "height": 1915
             }

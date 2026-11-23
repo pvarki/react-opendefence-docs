@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "locale": "en",
-  "generatedAt": "2026-11-22T22:36:54.139Z",
+  "generatedAt": "2026-11-23T11:59:15.926Z",
   "collections": [
     {
       "slug": "deploy-app",
@@ -665,7 +665,7 @@
         "Set Fleet up without the connector"
       ],
       "path": "/content/en/pages/deploy-app/set-fleet-up-without-the-connector-Xm6Qo0Xkhr.json",
-      "updatedAt": "2026-11-22T22:29:50.943Z",
+      "updatedAt": "2026-11-23T11:55:04.523Z",
       "order": 21,
       "platform": "android",
       "clientId": "android-MENReFAfCN",

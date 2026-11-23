@@ -13,7 +13,7 @@
     "Set Fleet up without the connector"
   ],
   "createdAt": "2026-11-21T05:59:01.407Z",
-  "updatedAt": "2026-11-22T22:29:50.943Z",
+  "updatedAt": "2026-11-23T11:55:04.523Z",
   "headings": [],
   "translations": {
     "en": "/en/deploy-app/set-fleet-up-without-the-connector-Xm6Qo0Xkhr",
@@ -64,10 +64,10 @@
         {
           "title": "Add the certificate",
           "layout": "image-bottom",
-          "html": "<p>Choose your team at the top, then <strong>Controls</strong>, <strong>OS settings</strong>, <strong>Certificates</strong>, <strong>Add</strong>. Name <code>rmscep</code>, subject <code>CN=$FLEET_VAR_HOST_END_USER_IDP_USERNAME_LOCAL_PART, OU=$FLEET_VAR_HOST_UUID</code>.</p>",
+          "html": "<p>Choose your team at the top, then <strong>Controls</strong>, <strong>OS settings</strong>, <strong>Certificates</strong>, <strong>Add</strong>. Name <code>rmscep</code>, subject <code>CN=$FLEET_VAR_HOST_END_USER_IDP_USERNAME_LOCAL_PART</code>.</p>",
           "images": [
             {
-              "src": "/content/images/en/attachments/a7c898d5603efdd0.webp",
+              "src": "/content/images/en/attachments/194e51dab07a0035.webp",
               "width": 1860,
               "height": 1915
             }
