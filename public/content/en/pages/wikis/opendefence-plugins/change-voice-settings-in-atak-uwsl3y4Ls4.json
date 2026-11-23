@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "id": "f62034e9-a05a-4e3f-9061-9767dadd8db8",
+  "slug": "change-voice-settings-in-atak-uwsl3y4Ls4",
+  "collection": "wikis/opendefence-plugins",
+  "locale": "en",
+  "title": "Change Voice settings in ATAK",
+  "breadcrumb": [
+    "OpenDefence Voice",
+    "Setup",
+    "Change Voice settings in ATAK"
+  ],
+  "createdAt": "2026-11-23T05:00:38.530Z",
+  "updatedAt": "2026-11-23T05:00:38.530Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Find OD Voice in ATAK's settings",
+          "layout": "image-bottom",
+          "html": "<p>Tap ATAK's menu at the top right, then Settings, Tool Preferences and <strong>Specific Tool Preferences</strong>. Scroll down and tap <strong>OD Voice Preferences</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/d9f96544ebce8973.webp",
+              "width": 1336,
+              "height": 2720
+            }
+          ]
+        },
+        {
+          "title": "See the settings",
+          "layout": "image-bottom",
+          "html": "<p>The pane's settings are here too, under <strong>CONNECTION</strong>, <strong>PTT DEVICE</strong>, <strong>TRANSMIT</strong> and <strong>VOICE ACTIVATION</strong>. A change here works at once, as in the pane.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/56567fc48d2321c6.webp",
+              "width": 1336,
+              "height": 2720
+            }
+          ]
+        },
+        {
+          "title": "Pick a PTT button here",
+          "layout": "image-bottom",
+          "html": "<p><strong>PTT device</strong> opens a page of its own. Tap <strong>Scan for PTT devices</strong>, then tap your button under <strong>FOUND DEVICES</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/380ccb8f0d529014.webp",
+              "width": 1336,
+              "height": 2720
+            }
+          ]
+        },
+        {
+          "title": "Set VOX sensitivity",
+          "layout": "image-bottom",
+          "html": "<p>Go back and scroll down. Tap <strong>VOX sensitivity</strong> to open a slider, then <strong>OK</strong> to keep it or <strong>Default</strong> for the middle.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/8beb384ecfd7b116.webp",
+              "width": 1336,
+              "height": 2720
+            }
+          ]
+        },
+        {
+          "title": "Open the manual",
+          "layout": "image-bottom",
+          "html": "<p>Under <strong>HELP</strong>, <strong>User manual</strong> opens the OD Voice manual in a PDF viewer.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/ca8b8aa18be1a8ae.webp",
+              "width": 1336,
+              "height": 2720
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

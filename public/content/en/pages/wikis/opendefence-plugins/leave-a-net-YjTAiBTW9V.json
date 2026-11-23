@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "e51d4b7a-8b13-48a9-bcf0-11ece33d0730",
+  "slug": "leave-a-net-YjTAiBTW9V",
+  "collection": "wikis/opendefence-plugins",
+  "locale": "en",
+  "title": "Leave a net",
+  "breadcrumb": [
+    "OpenDefence Voice",
+    "Talk",
+    "Leave a net"
+  ],
+  "createdAt": "2026-11-23T04:59:45.990Z",
+  "updatedAt": "2026-11-23T04:59:45.990Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Leave your net",
+          "layout": "image-bottom",
+          "html": "<p>Tap the NET header to open <strong>Select net</strong>, then <strong>Leave</strong> beside your net. You stop talking in it at once.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/83a97b2dc0fcc1c1.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        },
+        {
+          "title": "Undo a mistake",
+          "layout": "image-bottom",
+          "html": "<p>For five seconds, <strong>Undo</strong> joins the same net again. The nets you listen to stay as they are.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/942032f323a79db2.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        },
+        {
+          "title": "Join again to talk",
+          "layout": "image-bottom",
+          "html": "<p>Your talk is off and the PTT reads <strong>JOIN A NET</strong>. Tap the <strong>NET</strong> header and join a net to talk again.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/caf052367c18fb4f.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

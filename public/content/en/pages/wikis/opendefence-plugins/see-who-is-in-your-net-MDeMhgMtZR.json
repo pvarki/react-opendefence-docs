@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "ea1dceb3-2a4b-40aa-a9ff-5887f311e9f4",
+  "slug": "see-who-is-in-your-net-MDeMhgMtZR",
+  "collection": "wikis/opendefence-plugins",
+  "locale": "en",
+  "title": "See who is in your net",
+  "breadcrumb": [
+    "OpenDefence Voice",
+    "Talk",
+    "See who is in your net"
+  ],
+  "createdAt": "2026-11-23T04:59:32.982Z",
+  "updatedAt": "2026-11-23T04:59:32.982Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Count who is here",
+          "layout": "image-bottom",
+          "html": "<p>The number beside the PTT counts who is in your net. Tap it to see them.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/f26273e1a7bad0a4.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        },
+        {
+          "title": "See who is here",
+          "layout": "image-bottom",
+          "html": "<p>Everyone in your net is listed by name here. Tap <strong>◀</strong> to go back.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/a98bb8d7776b06ae.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        },
+        {
+          "title": "See who is talking",
+          "layout": "image-bottom",
+          "html": "<p>While someone in your net talks, their name shows in blue under the net.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/d6006dcb95614acf.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
