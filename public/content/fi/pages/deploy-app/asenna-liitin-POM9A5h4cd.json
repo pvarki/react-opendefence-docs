@@ -13,7 +13,7 @@
     "Asenna liitin"
   ],
   "createdAt": "2026-11-22T22:01:15.593Z",
-  "updatedAt": "2026-11-22T22:21:07.153Z",
+  "updatedAt": "2026-11-23T22:13:12.403Z",
   "headings": [],
   "translations": {
     "en": "/en/deploy-app/install-the-connector-Fi93BT5Ntd",
@@ -220,10 +220,10 @@
         {
           "title": "Poista se",
           "layout": "image-bottom",
-          "html": "<p>Avaa ensin Deploy Appin nimi oikeasta yläkulmasta ja poista jokainen Deploy App, jotta avainnippuun ei jää tunnistetta. Pysäytä sitten liitin ja poista tiedosto.</p>",
+          "html": "<p>Avaa ensin Deploy Appin nimi oikeasta yläkulmasta ja poista jokainen Deploy App, jotta avainnippuun ei jää tunnistetta. Onko sen ympäristö päättynyt? Katso ensin <strong>Kun ympäristö päättyy</strong>. Pysäytä sitten liitin ja poista tiedosto.</p>",
           "images": [
             {
-              "src": "/content/images/fi/attachments/762126c97999ea93.webp",
+              "src": "/content/images/fi/attachments/7dbc9f5938f0e007.webp",
               "width": 1860,
               "height": 1273
             }
