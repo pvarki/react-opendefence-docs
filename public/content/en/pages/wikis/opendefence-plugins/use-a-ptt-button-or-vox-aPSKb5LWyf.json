@@ -7,11 +7,11 @@
   "title": "Use a PTT button or VOX",
   "breadcrumb": [
     "OpenDefence Voice",
-    "Setup",
+    "Starting as a user",
     "Use a PTT button or VOX"
   ],
   "createdAt": "2026-10-28T07:44:40.786Z",
-  "updatedAt": "2026-11-23T05:00:27.077Z",
+  "updatedAt": "2026-11-23T21:08:39.550Z",
   "headings": [],
   "blocks": [
     {
@@ -72,7 +72,7 @@
           "html": "<p>Pull down the notifications. <strong>Voice push-to-talk is ready</strong> means a Bluetooth PTT button, a headset's talk button and the volume-up key talk in the background, even with the phone locked.</p>",
           "images": [
             {
-              "src": "/content/images/en/attachments/eab707fdc9f5e6e6.webp",
+              "src": "/content/images/en/attachments/0b37c74ab6139ce8.webp",
               "width": 1336,
               "height": 2720
             }
