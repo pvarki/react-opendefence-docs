@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "id": "4d0104b1-c530-44c1-afa0-52e4384d7256",
+  "slug": "nar-miljon-avslutas-87eb0xSxwz",
+  "collection": "deploy-app",
+  "locale": "sv",
+  "title": "När miljön avslutas",
+  "breadcrumb": [
+    "Platforms",
+    "Android",
+    "Administratörsguide",
+    "Ta in användare via MDM",
+    "När miljön avslutas"
+  ],
+  "createdAt": "2026-11-23T22:15:22.950Z",
+  "updatedAt": "2026-11-23T22:16:33.799Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/deploy-app/when-the-deployment-ends-0IdROkcsVK",
+    "fi": "/fi/deploy-app/kun-ymparisto-paattyy-TItex9Xbr1",
+    "sv": "/sv/deploy-app/nar-miljon-avslutas-87eb0xSxwz"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Miljön är avslutad",
+          "layout": "image-bottom",
+          "html": "<p>När din Deploy App tas ner öppnar dess certifikat ingenting längre, men din MDM har fortfarande ett kvar på varje telefon. Avsluta den i din MDM också: sedan kan telefonerna ta emot din nästa Deploy Apps certifikat.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/10a97eac7b33819f.webp",
+              "width": 1860,
+              "height": 1273
+            }
+          ]
+        },
+        {
+          "title": "Öppna Remove",
+          "layout": "image-bottom",
+          "html": "<p>Ge din MDM:s token om anslutaren frågar. Öppna listan uppe till höger: har du flera Deploy App öppnar du först golden-monkey.example.fi. Välj sedan <strong>Remove golden-monkey.example.fi…</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/6f515206644ffbfe.webp",
+              "width": 1860,
+              "height": 1273
+            }
+          ]
+        },
+        {
+          "title": "Avsluta den i din MDM också",
+          "layout": "image-bottom",
+          "html": "<p>Kryssa i <strong>Also end it in Fleet</strong>: raden visar din MDM:s namn. Utan kryss glömmer <strong>Remove</strong> bara Deploy App på den här datorn. Dialogrutan säger hur många telefoner som förlorar certifikatet. <strong>End and remove</strong> kan inte ångras.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/4d4a1397091f9145.webp",
+              "width": 1860,
+              "height": 1273
+            }
+          ]
+        },
+        {
+          "title": "Vad den gjorde",
+          "layout": "image-bottom",
+          "html": "<p>Din MDM har tagit bort den här Deploy Apps certifikat från gruppen: varje telefon tar bort det nästa gång den talar med din MDM, med Fleet inom ungefär 15 minuter. Anslutaren har glömt Deploy App och dess token.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/d6572235bfb8c9a5.webp",
+              "width": 1052,
+              "height": 1007
+            }
+          ]
+        },
+        {
+          "title": "Din nästa Deploy App",
+          "layout": "image-bottom",
+          "html": "<p>Lägg till din nästa Deploy App som i <strong>Koppla din MDM</strong>, med samma grupp telefoner. Medan anslutningen är öppen begär varje namngiven telefon sitt nya certifikat under det namn den har. Om telefonernas ikon med Fleet, se <strong>Avsluta en Deploy App i Fleet</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/010aa25022ef4e98.webp",
+              "width": 1860,
+              "height": 1273
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
