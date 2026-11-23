@@ -56,7 +56,8 @@ jobs:
         run: pnpm build
 
   e2e:
-    runs-on: ubuntu-latest
+    # ubuntu-latest is 26.04, for which Playwright 1.60 installs no Chromium. Back to ubuntu-latest once it does.
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
       - uses: pnpm/action-setup@v4
