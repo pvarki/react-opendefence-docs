@@ -1,17 +1,17 @@
 {
   "schemaVersion": 1,
   "id": "120274f1-e0e5-4dba-8caf-bde6ab4fe8da",
-  "slug": "pick-your-unit-and-dim-the-map-oXkeDUK6xZ",
+  "slug": "pick-your-unit-oXkeDUK6xZ",
   "collection": "wikis/opendefence-plugins",
   "locale": "en",
-  "title": "Pick your unit and dim the map",
+  "title": "Pick your unit",
   "breadcrumb": [
     "OpenDefence Main",
-    "Setup",
-    "Pick your unit and dim the map"
+    "Starting as a user",
+    "Pick your unit"
   ],
   "createdAt": "2026-10-27T21:23:48.557Z",
-  "updatedAt": "2026-11-23T12:41:45.025Z",
+  "updatedAt": "2026-11-23T21:06:45.996Z",
   "headings": [],
   "blocks": [
     {
@@ -21,7 +21,7 @@
         {
           "title": "Find the unit setting",
           "layout": "image-bottom",
-          "html": "<p>Tap <strong>Inbox</strong> at the bottom left, then <strong>Set your unit to watch its area ›</strong>.</p>",
+          "html": "<p>Tap <strong>Inbox</strong> at the bottom left, then <strong>Set your unit to watch its area ›</strong> at the end of its list. It opens the ORBAT your admins published, or the built-in rifle company until they do.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/22f7e2f67d350b55.webp",
@@ -43,9 +43,9 @@
           ]
         },
         {
-          "title": "Pick your unit",
+          "title": "Tap your squad or platoon",
           "layout": "image-bottom",
-          "html": "<p>Tap your squad, or your platoon's card at the top if you lead it.</p>",
+          "html": "<p>Tap your squad, or the platoon's card at the top if you lead the platoon, here <strong>1J</strong>.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/c42037f6c5798c38.webp",
@@ -57,7 +57,7 @@
         {
           "title": "See what your unit reports",
           "layout": "image-bottom",
-          "html": "<p>The Inbox now watches 1J and counts its reports under <strong>Reported by your unit</strong>. Tap <strong>Done</strong>.</p>",
+          "html": "<p>The Inbox now watches 1J's area and, as you lead 1J, counts its squads' reports under <strong>Reported by your unit</strong>. Tap <strong>Done</strong>.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/48c9c077081bd061.webp",
@@ -67,9 +67,9 @@
           ]
         },
         {
-          "title": "Check your marks",
+          "title": "See your unit in Markers",
           "layout": "image-bottom",
-          "html": "<p>Tap <strong>Markers</strong> on the bar at the bottom and pick <strong>Friendly</strong>. <strong>Unit</strong> now shows <strong>1J</strong>, so the friendly marks you place belong to 1J unless you pick another unit.</p>",
+          "html": "<p>Tap <strong>Markers</strong> on the thumb bar and pick <strong>Friendly</strong>. The <strong>Unit</strong> field above <strong>Cancel</strong> now reads your unit, here <strong>1J</strong>, so the friendly marks you place belong to it unless you pick another unit.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/a77ee5a536da31e2.webp",
@@ -85,30 +85,6 @@
           "images": [
             {
               "src": "/content/images/en/attachments/79ec74a1cf62834d.webp",
-              "width": 1336,
-              "height": 2782
-            }
-          ]
-        },
-        {
-          "title": "Dim the map",
-          "layout": "image-bottom",
-          "html": "<p>Under <strong>Wash out the map</strong>, pick how pale the map is, here <strong>50 %</strong>.</p>",
-          "images": [
-            {
-              "src": "/content/images/en/attachments/2761676560b60764.webp",
-              "width": 1336,
-              "height": 2782
-            }
-          ]
-        },
-        {
-          "title": "Check the map",
-          "layout": "image-bottom",
-          "html": "<p>Close the pane with <strong>✕</strong> to see your arrow and other marks stand out on the paler map. To bring the map back, open OpenDefence Main again and pick <strong>Off</strong>.</p>",
-          "images": [
-            {
-              "src": "/content/images/en/attachments/3a0bfa7feb182dac.webp",
               "width": 1336,
               "height": 2782
             }
