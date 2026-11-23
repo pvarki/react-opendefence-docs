@@ -11,7 +11,7 @@
     "Request drones on a mark or area"
   ],
   "createdAt": "2026-11-06T23:01:16.198Z",
-  "updatedAt": "2026-11-23T20:02:37.831Z",
+  "updatedAt": "2026-11-23T21:07:31.032Z",
   "headings": [],
   "blocks": [
     {
@@ -19,9 +19,21 @@
       "source": "canonical",
       "slides": [
         {
+          "title": "Who answers your request",
+          "layout": "image-bottom",
+          "html": "<p><strong>Drones</strong> opens OpenDefence UAVOps, a separate plugin that this chapter uses to show how a request travels and how you follow it. You ask from OpenDefence Main, and those you ask answer in <strong>Drones</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/8c26f4ddcf79c104.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
           "title": "Tap the target button",
           "layout": "image-bottom",
-          "html": "<p>Tap the enemy mark, or the outline of an area drawn with <strong>Markers</strong> on <strong>Unknown</strong> or <strong>Enemy</strong>, then the target button, the crosshair on its ring. If ATAK first lists several items, tap the one you want.</p>",
+          "html": "<p>Tap the enemy mark, or the outline of an enemy or unknown area, then the target button, a crosshair in the ring of buttons around it. If ATAK first lists several items, tap the one you want.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/59ba9efb350f60c1.webp",
@@ -31,9 +43,9 @@
           ]
         },
         {
-          "title": "Open the request",
+          "title": "Read the sheet",
           "layout": "image-bottom",
-          "html": "<p>Pick what you need. <strong>Send</strong> turns on once each choice has a pick.</p>",
+          "html": "<p><strong>To</strong> first offers the unit HQ gave you a quota on, here <strong>2R/1J</strong>, and the line below says how many requests you have left on it today. <strong>Send</strong> turns on once each choice has a pick.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/d989359bd731c828.webp",
@@ -45,7 +57,7 @@
         {
           "title": "Pick and send",
           "layout": "image-bottom",
-          "html": "<p>Pick <strong>Strike</strong> or <strong>Recon</strong>, the priority and who to ask. Tap <strong>Send</strong>.</p>",
+          "html": "<p>Pick <strong>Strike</strong> or <strong>Recon</strong>, the priority, and under <strong>To</strong> your quota's unit, <strong>Any</strong> to ask every team, or <strong>HQ</strong> when it does not matter who flies. Tap <strong>Send</strong>.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/ff890d64d77012b9.webp",
@@ -81,7 +93,7 @@
         {
           "title": "Ask about an area",
           "layout": "image-bottom",
-          "html": "<p>First draw and name the area with <strong>Markers</strong> on <strong>Unknown</strong> or <strong>Enemy</strong>, then <strong>Area</strong>. In <strong>Drones</strong> on <strong>My requests</strong> tap <strong>Ask for a drone</strong>.</p>",
+          "html": "<p>You can also start from <strong>Drones</strong>, here for an area you drew with <strong>Markers</strong> on <strong>Unknown</strong> or <strong>Enemy</strong>, then <strong>Area</strong>. Tap <strong>Drones</strong>, then <strong>Ask for a drone</strong> beside <strong>My requests</strong>.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/2bccbc76af2f13dc.webp",
@@ -93,7 +105,7 @@
         {
           "title": "Tap the area",
           "layout": "image-bottom",
-          "html": "<p>Tap the area's outline. <strong>Back</strong> cancels.</p>",
+          "html": "<p>Tap the area's yellow outline, since a tap inside it does nothing. The phone's Back button cancels.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/a98247db02e33873.webp",
