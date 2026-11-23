@@ -13,7 +13,7 @@
     "Installera anslutaren"
   ],
   "createdAt": "2026-11-22T22:06:20.044Z",
-  "updatedAt": "2026-11-22T22:21:07.786Z",
+  "updatedAt": "2026-11-23T22:14:27.920Z",
   "headings": [],
   "translations": {
     "en": "/en/deploy-app/install-the-connector-Fi93BT5Ntd",
@@ -220,10 +220,10 @@
         {
           "title": "Ta bort den",
           "layout": "image-bottom",
-          "html": "<p>Öppna först Deploy Apps namn uppe till höger och ta bort varje Deploy App, så att ingen token blir kvar i nyckelringen. Stoppa sedan anslutaren och radera filen.</p>",
+          "html": "<p>Öppna först Deploy Apps namn uppe till höger och ta bort varje Deploy App, så att ingen token blir kvar i nyckelringen. Är dess miljö avslutad? Se först <strong>När miljön avslutas</strong>. Stoppa sedan anslutaren och radera filen.</p>",
           "images": [
             {
-              "src": "/content/images/sv/attachments/762126c97999ea93.webp",
+              "src": "/content/images/sv/attachments/7dbc9f5938f0e007.webp",
               "width": 1860,
               "height": 1273
             }

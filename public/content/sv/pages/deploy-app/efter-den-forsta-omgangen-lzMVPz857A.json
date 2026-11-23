@@ -13,7 +13,7 @@
     "Efter den första omgången"
   ],
   "createdAt": "2026-11-22T22:08:24.299Z",
-  "updatedAt": "2026-11-22T22:25:14.387Z",
+  "updatedAt": "2026-11-23T22:15:18.130Z",
   "headings": [],
   "translations": {
     "en": "/en/deploy-app/after-the-first-batch-cOk5iBzJoS",
@@ -184,10 +184,10 @@
         {
           "title": "Ta bort en Deploy App",
           "layout": "image-bottom",
-          "html": "<p>I samma lista frågar <strong>Remove north.example.fi…</strong> först och glömmer sedan den Deploy App och dess token på den här datorn. Inget ändras i Deploy App, din MDM eller telefonerna.</p>",
+          "html": "<p>I samma lista frågar <strong>Remove north.example.fi…</strong> först och glömmer sedan den Deploy App och dess token på den här datorn. Inget ändras i Deploy App, din MDM eller telefonerna. Vill du avsluta den i din MDM också, se <strong>När miljön avslutas</strong>.</p>",
           "images": [
             {
-              "src": "/content/images/sv/attachments/762126c97999ea93.webp",
+              "src": "/content/images/sv/attachments/7dbc9f5938f0e007.webp",
               "width": 1860,
               "height": 1273
             }
