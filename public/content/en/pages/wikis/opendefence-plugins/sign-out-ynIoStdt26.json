@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "id": "feaa358c-3b98-4dea-b80f-45e429179f34",
+  "slug": "sign-out-ynIoStdt26",
+  "collection": "wikis/opendefence-plugins",
+  "locale": "en",
+  "title": "Sign out",
+  "breadcrumb": [
+    "OpenDefence Matrix",
+    "Setup",
+    "Sign out"
+  ],
+  "createdAt": "2026-11-23T05:03:50.977Z",
+  "updatedAt": "2026-11-23T05:03:50.977Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Sign out in Settings",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Chat</strong>, then the gear at the top of Chats, then <strong>Sign out of Matrix</strong>. It acts at once and removes your messages from this phone.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/39681fb11439f5b0.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        },
+        {
+          "title": "Signed out",
+          "layout": "image-bottom",
+          "html": "<p>The chat offers <strong>Sign in</strong> again, and Chat leaves the thumb bar. Signing in asks for your recovery key, so keep it at hand.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/6aabbdd63fd81ae2.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

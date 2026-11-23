@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "586ac13d-8fb2-4b64-b1a9-6c5f0c1e5404",
+  "slug": "sign-in-3ohSyV0wd8",
+  "collection": "wikis/opendefence-plugins",
+  "locale": "en",
+  "title": "Sign in",
+  "breadcrumb": [
+    "OpenDefence Matrix",
+    "Setup",
+    "Sign in"
+  ],
+  "createdAt": "2026-11-06T23:55:44.675Z",
+  "updatedAt": "2026-11-23T10:52:59.770Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "ATAK asks you to sign in",
+          "layout": "image-bottom",
+          "html": "<p>The first time ATAK connects to your OpenDefence TAK server, it asks you to sign in to the chat. Tap <strong>OpenDefence Matrix</strong> in your notifications.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/55a556fba91d6d32.webp",
+              "width": 1336,
+              "height": 2720
+            }
+          ]
+        },
+        {
+          "title": "Tap Sign in",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Sign in</strong>. The chat bubble in ATAK's toolbar also opens this page.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/0a6f04ca8d788312.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        },
+        {
+          "title": "Choose your certificate",
+          "layout": "image-bottom",
+          "html": "<p>Pick the certificate with your callsign if the browser asks, and tap <strong>SELECT</strong>. On the next pages tap Continue, and Create Account the first time.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/18115f806db47735.webp",
+              "width": 1336,
+              "height": 2720
+            }
+          ]
+        },
+        {
+          "title": "Verify this phone",
+          "layout": "image-bottom",
+          "html": "<p>Back in <strong>Chats</strong>, tap <strong>Verify</strong>, then Use my recovery key, enter the key and tap Unlock. On your first phone the yellow line offers Set up instead, so save the key it gives you.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/9c20311eca55e941.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

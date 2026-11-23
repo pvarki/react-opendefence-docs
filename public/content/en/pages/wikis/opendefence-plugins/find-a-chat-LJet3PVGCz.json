@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "id": "cdf90347-1b2f-4545-935b-8b9b132e261e",
+  "slug": "find-a-chat-LJet3PVGCz",
+  "collection": "wikis/opendefence-plugins",
+  "locale": "en",
+  "title": "Find a chat",
+  "breadcrumb": [
+    "OpenDefence Matrix",
+    "Chat",
+    "Find a chat"
+  ],
+  "createdAt": "2026-11-06T23:53:44.217Z",
+  "updatedAt": "2026-11-23T05:01:44.629Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Open search",
+          "layout": "image-bottom",
+          "html": "<p>In Chats, tap the search button at the top. The first time, it opens with <strong>Channels</strong> and <strong>A–Z</strong> chosen.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/9424e67ee0e044a9.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        },
+        {
+          "title": "Find a room by name",
+          "layout": "image-bottom",
+          "html": "<p>Type part of its name. Rooms you can join show below yours with <strong>Join</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/3af8a1abd8e87491.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        },
+        {
+          "title": "Sort the list",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Recent</strong> for the latest chats first, or <strong>A–Z</strong> for names.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/a6e8bf6bc6de0bc1.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        },
+        {
+          "title": "Find a message",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Contents</strong> and type words from the message. It also finds older messages in every chat you are in.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/c925af4e7678d500.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        },
+        {
+          "title": "Open it",
+          "layout": "image-bottom",
+          "html": "<p>Tap a result to open its chat. Scroll up to find the message.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/423aeeb722dc2fb6.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        },
+        {
+          "title": "Find a person",
+          "layout": "image-bottom",
+          "html": "<p>Go back to Chats, open search again and tap <strong>People</strong>. Type a name or callsign, then tap the person to open or start a direct chat.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/5afa8a4beeb2e8ed.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

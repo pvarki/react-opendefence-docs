@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "id": "18eb91ec-c662-4630-94ba-8fe0bca64c44",
+  "slug": "make-a-room-zB2M1ynw43",
+  "collection": "wikis/opendefence-plugins",
+  "locale": "en",
+  "title": "Make a room",
+  "breadcrumb": [
+    "OpenDefence Matrix",
+    "Rooms",
+    "Make a room"
+  ],
+  "createdAt": "2026-10-28T07:40:17.211Z",
+  "updatedAt": "2026-11-23T05:01:51.575Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Start a new room",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Chat</strong>, then the speech bubble beside Channels at the top of your chats, then <strong>New room in</strong> your space.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/14a94e469646ba5c.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        },
+        {
+          "title": "Name it",
+          "layout": "image-bottom",
+          "html": "<p>Give the room a name and, if you like, a topic, then tap <strong>Create</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/7d1c2d9006aea656.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        },
+        {
+          "title": "Create it",
+          "layout": "image-bottom",
+          "html": "<p>The room opens, and everyone in your space can find and join it. Tap the <strong>i</strong> at the top to see the room.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/d37feb22a0f06fda.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        },
+        {
+          "title": "See the room",
+          "layout": "image-bottom",
+          "html": "<p>You made the room, so you are its <strong>Admin</strong>. Tap <strong>Invite people</strong> to add someone.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/56c5e34bf976c43b.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        },
+        {
+          "title": "Invite people",
+          "layout": "image-bottom",
+          "html": "<p>Type a name or callsign and tap the person you want.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/edec341965b4955b.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        },
+        {
+          "title": "Wait for them",
+          "layout": "image-bottom",
+          "html": "<p>They get an invite and show as <strong>Invited</strong> until they join.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/0aacf69ebbfa38df.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "d00c329f-e443-408b-8a5d-b0cea58bf024",
+  "slug": "see-where-a-message-was-sent-FuW5aXHneB",
+  "collection": "wikis/opendefence-plugins",
+  "locale": "en",
+  "title": "See where a message was sent",
+  "breadcrumb": [
+    "OpenDefence Matrix",
+    "Map",
+    "See where a message was sent"
+  ],
+  "createdAt": "2026-11-06T23:55:09.090Z",
+  "updatedAt": "2026-11-23T05:03:30.940Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Spot the position",
+          "layout": "image-bottom",
+          "html": "<p>A message sent with a position shows it under the text, here <strong>35V LH 97550 87327</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/5a4f41a566feaeac.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        },
+        {
+          "title": "Go there",
+          "layout": "image-bottom",
+          "html": "<p>Tap the position, then close the pane with Back. The map shows a marker with the sender's name and the time it was sent.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/c7dc1f9595583744.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        },
+        {
+          "title": "Turn your position on or off",
+          "layout": "image-bottom",
+          "html": "<p>Tap the pin by the field to stop sending your position in this chat. The pin turns grey, and another tap turns it back on.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/b35bb60fabdf7b5f.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

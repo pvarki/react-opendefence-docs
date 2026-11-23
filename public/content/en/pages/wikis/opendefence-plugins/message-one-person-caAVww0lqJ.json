@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "id": "b67c332a-bbc2-4af6-8190-2cc1cf51ebc5",
+  "slug": "message-one-person-caAVww0lqJ",
+  "collection": "wikis/opendefence-plugins",
+  "locale": "en",
+  "title": "Message one person",
+  "breadcrumb": [
+    "OpenDefence Matrix",
+    "Chat",
+    "Message one person"
+  ],
+  "createdAt": "2026-11-06T23:52:51.065Z",
+  "updatedAt": "2026-11-23T05:00:52.837Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Start a new chat",
+          "layout": "image-bottom",
+          "html": "<p>In <strong>Chats</strong>, tap the speech bubble next to <strong>Channels</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/619a6bdf699bf873.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        },
+        {
+          "title": "New message",
+          "layout": "image-bottom",
+          "html": "<p><strong>New message</strong> opens. Tap the <strong>Name or callsign</strong> field.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/0eb5c8462249cd4b.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        },
+        {
+          "title": "Find them",
+          "layout": "image-bottom",
+          "html": "<p>Type their name or callsign, then tap them.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/da3346b181e61af6.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        },
+        {
+          "title": "Write to them",
+          "layout": "image-bottom",
+          "html": "<p>Your direct chat with them opens. Write as in any chat.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/37d53bd463f57e51.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        },
+        {
+          "title": "Start from the map",
+          "layout": "image-bottom",
+          "html": "<p>You can also start from the map. Tap their marker, then the speech bubble on the ring around it.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/12abdefbca3341fc.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        },
+        {
+          "title": "The same chat opens",
+          "layout": "image-bottom",
+          "html": "<p>The same direct chat opens. The speech bubble on their row in ATAK's contacts opens it too.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/58578a40401de176.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "42b3cd60-9d4e-4262-8c29-8052116d0cd8",
+  "slug": "put-a-shared-item-on-your-map-FEKFNUlEfW",
+  "collection": "wikis/opendefence-plugins",
+  "locale": "en",
+  "title": "Put a shared item on your map",
+  "breadcrumb": [
+    "OpenDefence Matrix",
+    "Map",
+    "Put a shared item on your map"
+  ],
+  "createdAt": "2026-11-06T23:55:04.165Z",
+  "updatedAt": "2026-11-23T10:52:42.137Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Find the map item",
+          "layout": "image-bottom",
+          "html": "<p>A map item someone shared shows as a <strong>MAP ITEM</strong> with <strong>On map</strong>. Tap <strong>On map</strong> to put it on your map.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/2e47bbe66ba8de8f.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        },
+        {
+          "title": "Put it on the map",
+          "layout": "image-bottom",
+          "html": "<p>The item goes on your map and the map goes to it. Press Back once to close its radial menu and any ODMain alert, then again to close the pane.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/579ca432fde2d7c0.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        },
+        {
+          "title": "See who shared it",
+          "layout": "image-bottom",
+          "html": "<p>Tap the item, then the details button in its radial menu. Scroll to <strong>Remarks</strong>, which says who shared it over Matrix.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/4ad319b17201b254.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

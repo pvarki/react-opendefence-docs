@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "id": "bb0852bf-8abf-4a4f-8f68-9d8f0fd3b133",
+  "slug": "send-a-map-item-to-a-chat-TgMTmLydc6",
+  "collection": "wikis/opendefence-plugins",
+  "locale": "en",
+  "title": "Send a map item to a chat",
+  "breadcrumb": [
+    "OpenDefence Matrix",
+    "Map",
+    "Send a map item to a chat"
+  ],
+  "createdAt": "2026-11-06T23:54:59.248Z",
+  "updatedAt": "2026-11-23T10:52:33.575Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Tap the item",
+          "layout": "image-bottom",
+          "html": "<p>Tap the item on the map, here <strong>Rally point</strong>. Then tap the share sign in its radial menu, an arrow out of a box.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/1977927b997f2e7b.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        },
+        {
+          "title": "Pick Chat…",
+          "layout": "image-bottom",
+          "html": "<p>In <strong>Send: Rally point</strong>, tap <strong>Chat…, ODMatrix</strong>. Rows in grey cannot be used now, and each says why.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/23914e9d7b62553a.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        },
+        {
+          "title": "Pick the chat",
+          "layout": "image-bottom",
+          "html": "<p>Tap the chat it should go to, here <strong>1st Platoon</strong>. Your chats are listed by name.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/b7d83efe323dceeb.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        },
+        {
+          "title": "Check the map",
+          "layout": "image-bottom",
+          "html": "<p>On the map the item now reads <strong>Shared</strong>. It went to the chat only, not to a feed.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/ed6c6b02d6e80e97.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        },
+        {
+          "title": "Sent",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Chat</strong> and open 1st Platoon to see it as a <strong>MAP ITEM</strong> with its position. <strong>Show on map</strong> takes you back to it.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/9966a2505a52daa2.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

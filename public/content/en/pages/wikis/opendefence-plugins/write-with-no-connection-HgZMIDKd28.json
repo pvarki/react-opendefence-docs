@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "4d20f23e-f261-49ef-b400-d7cbd1b19076",
+  "slug": "write-with-no-connection-HgZMIDKd28",
+  "collection": "wikis/opendefence-plugins",
+  "locale": "en",
+  "title": "Write with no connection",
+  "breadcrumb": [
+    "OpenDefence Matrix",
+    "Chat",
+    "Write with no connection"
+  ],
+  "createdAt": "2026-11-06T23:53:06.738Z",
+  "updatedAt": "2026-11-23T05:01:37.706Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "See that you are offline",
+          "layout": "image-bottom",
+          "html": "<p>With no connection, a line at the top of <strong>Chats</strong> says you are offline.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/736d45d17fb855e2.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        },
+        {
+          "title": "Write anyway",
+          "layout": "image-bottom",
+          "html": "<p>Write and send as usual. The message shows <strong>Sending…</strong> while it waits.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/2e8efe5d6bbc8b98.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        },
+        {
+          "title": "It goes by itself",
+          "layout": "image-bottom",
+          "html": "<p>When the connection comes back, the message goes by itself. Open the chat again to see <strong>Read by 1</strong> once someone has read it.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/db1f7f2af7c3cea6.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

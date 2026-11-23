@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "id": "5e49f808-3883-4654-9b8c-5817762ea2cd",
+  "slug": "send-a-photo-or-a-file-8VARfQqA7e",
+  "collection": "wikis/opendefence-plugins",
+  "locale": "en",
+  "title": "Send a photo or a file",
+  "breadcrumb": [
+    "OpenDefence Matrix",
+    "Photos, voice and polls",
+    "Send a photo or a file"
+  ],
+  "createdAt": "2026-10-28T07:40:21.146Z",
+  "updatedAt": "2026-11-23T05:02:36.505Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Attach",
+          "layout": "image-bottom",
+          "html": "<p>In a chat, the + left of the field opens this panel. Pick what to send.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/cca755e4cdfda4c2.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        },
+        {
+          "title": "Pick a photo",
+          "layout": "image-bottom",
+          "html": "<p>Gallery opens your photos and videos. Pick one, or choose Camera in the panel to take a new one.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/ab797bb3180b7c26.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        },
+        {
+          "title": "Add a caption",
+          "layout": "image-bottom",
+          "html": "<p>The photo waits in a bar above the field. Type a caption, then tap the arrow, or hold it to send full size.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/1bfc159a06151616.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        },
+        {
+          "title": "Sent",
+          "layout": "image-bottom",
+          "html": "<p>Photos go smaller, and the location stored in the file is removed. The grid under it comes from the pin, as on any message.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/94c3fb041279104c.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        },
+        {
+          "title": "Send a file",
+          "layout": "image-bottom",
+          "html": "<p>Tap + and choose File, pick the file and tap the arrow. It shows with its name and size.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/23e0356b609f7aa0.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

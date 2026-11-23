@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "id": "b67b8286-a812-487e-839a-d8b2083a1e0c",
+  "slug": "run-your-room-e7EzTvqEFG",
+  "collection": "wikis/opendefence-plugins",
+  "locale": "en",
+  "title": "Run your room",
+  "breadcrumb": [
+    "OpenDefence Matrix",
+    "Rooms",
+    "Run your room"
+  ],
+  "createdAt": "2026-11-06T23:54:01.041Z",
+  "updatedAt": "2026-11-23T05:02:29.852Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Open room info",
+          "layout": "image-bottom",
+          "html": "<p>In your room, tap its name or the i at the top. <strong>Room info</strong> shows the topic, what you can change and the members.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/67777d12934632b1.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        },
+        {
+          "title": "Rename it",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Rename room</strong>, type the new name and tap <strong>SAVE</strong>. Change topic works the same way, but a new topic may show only when you open Room info again.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/267634b014206262.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        },
+        {
+          "title": "Give someone a role",
+          "layout": "image-bottom",
+          "html": "<p>Tap a member, then <strong>Make moderator</strong> or <strong>Make admin</strong>. The new role shows the next time you open Room info.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/93bed6b7adf3af16.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        },
+        {
+          "title": "Remove someone",
+          "layout": "image-bottom",
+          "html": "<p>Tap a member and pick Remove from room. Confirm with <strong>REMOVE</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/48f8acbcbadbc0b1.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        },
+        {
+          "title": "Close the room",
+          "layout": "image-bottom",
+          "html": "<p>A room cannot be deleted, so tap <strong>Remove from</strong> your space and <strong>REMOVE</strong>. Then tap <strong>Leave room</strong> and confirm, and ask the others to leave as well.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/c87337151354a0c5.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

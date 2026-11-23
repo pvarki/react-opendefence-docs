@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "id": "d0fad189-e463-4f26-b165-b28e2fd13463",
+  "slug": "choose-notifications-h92Xi0dH1v",
+  "collection": "wikis/opendefence-plugins",
+  "locale": "en",
+  "title": "Choose notifications",
+  "breadcrumb": [
+    "OpenDefence Matrix",
+    "Setup",
+    "Choose notifications"
+  ],
+  "createdAt": "2026-10-28T07:40:25.699Z",
+  "updatedAt": "2026-11-23T05:03:47.493Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Open ATAK's Settings",
+          "layout": "image-bottom",
+          "html": "<p>Tap ATAK's menu at the top right, then <strong>Settings</strong> in the last row. Tap <strong>Tool Preferences</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/8faacb123b867ed2.webp",
+              "width": 1336,
+              "height": 2720
+            }
+          ]
+        },
+        {
+          "title": "Find OD Matrix",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Specific Tool Preferences</strong>, then scroll to <strong>OD Matrix Preferences</strong> and tap it.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/52e458e9591a9b19.webp",
+              "width": 1336,
+              "height": 2720
+            }
+          ]
+        },
+        {
+          "title": "OD Matrix Preferences",
+          "layout": "image-bottom",
+          "html": "<p>ATAK heads the page Plugin Preferences. Tap <strong>Notify me in ATAK about</strong> to choose what you hear about.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/848873a4915f750f.webp",
+              "width": 1336,
+              "height": 2720
+            }
+          ]
+        },
+        {
+          "title": "Choose what notifies you",
+          "layout": "image-bottom",
+          "html": "<p>Pick what ATAK tells you about. <strong>Direct messages and mentions</strong> is the default.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/7901a0cf24075f67.webp",
+              "width": 1336,
+              "height": 2720
+            }
+          ]
+        },
+        {
+          "title": "Get a notification",
+          "layout": "image-bottom",
+          "html": "<p>A notification names the chat and how many messages are new, never the text.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/0e45ad8d93e0c42e.webp",
+              "width": 1336,
+              "height": 2720
+            }
+          ]
+        },
+        {
+          "title": "Open the chat",
+          "layout": "image-bottom",
+          "html": "<p>Tap the notification to open the chat. The new message is last.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/beb3736f53251a40.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
