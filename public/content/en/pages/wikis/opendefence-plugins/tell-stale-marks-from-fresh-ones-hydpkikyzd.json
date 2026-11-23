@@ -7,11 +7,11 @@
   "title": "Tell stale marks from fresh ones",
   "breadcrumb": [
     "OpenDefence Main",
-    "Marking",
+    "Managing stale markers",
     "Tell stale marks from fresh ones"
   ],
   "createdAt": "2026-10-27T22:27:09.137Z",
-  "updatedAt": "2026-11-23T12:39:59.054Z",
+  "updatedAt": "2026-11-23T21:06:52.200Z",
   "headings": [],
   "blocks": [
     {
@@ -21,7 +21,7 @@
         {
           "title": "Read the label",
           "layout": "image-bottom",
-          "html": "<p>The second line of a label gives the mark's age, <strong>Local</strong> when it did not come from a feed, and who sent it. A stale mark's label turns grey and reads <strong>Stale</strong>.</p>",
+          "html": "<p>The second line of a label gives the mark's age, <strong>Local</strong> when it is not known to be in a feed, and who made it. A stale mark's label turns grey and reads <strong>Stale</strong>.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/d5daa18ba8d2189c.webp",
@@ -33,7 +33,7 @@
         {
           "title": "Stale in the Inbox",
           "layout": "image-bottom",
-          "html": "<p>A stale report leaves <strong>Near you, 1 km</strong>, and its message stays greyed under <strong>Received</strong>. Tap <strong>Older reports (1)</strong> at the end of the <strong>Inbox</strong> to see it.</p>",
+          "html": "<p>A stale report leaves <strong>Near you, 1 km</strong> for <strong>Older reports (1)</strong> at the end of the <strong>Inbox</strong>. Its row under <strong>Received</strong> turns grey.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/94d464abfbf68aa3.webp",
@@ -45,7 +45,7 @@
         {
           "title": "Open older reports",
           "layout": "image-bottom",
-          "html": "<p>The older report opens in its place, greyed, with the day and time it was seen.</p>",
+          "html": "<p>Tap <strong>Older reports (1)</strong>. The report opens in its place, greyed, with the day and time it was seen, here <strong>21.11. 0413</strong>.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/4d4d4bf39ab1561a.webp",
@@ -57,7 +57,7 @@
         {
           "title": "Admins set the time",
           "layout": "image-bottom",
-          "html": "<p>Admins open <strong>OpenDefence Main</strong> from ATAK's ≡ menu and scroll to <strong>Server configuration (admins)</strong>. They pick from <strong>6 h</strong> to <strong>7 d</strong> under <strong>Enemy marks go stale after</strong>, then publish the setup.</p>",
+          "html": "<p>Admins tap <strong>≡</strong>, scroll the tools to <strong>OpenDefence Main</strong>, tap it and scroll to <strong>Server configuration (admins)</strong>. Under <strong>Enemy marks go stale after</strong> they pick from <strong>6 h</strong> to <strong>7 d</strong>, <strong>24 h</strong> unless changed, then tap <strong>Publish…</strong> at the end of the pane.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/f60f497bb0ed7831.webp",
