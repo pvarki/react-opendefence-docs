@@ -115,6 +115,12 @@
         },
         {
           "type": "doc",
+          "id": "nar-miljon-avslutas-87eb0xSxwz",
+          "label": "När miljön avslutas",
+          "slug": "nar-miljon-avslutas-87eb0xSxwz"
+        },
+        {
+          "type": "doc",
           "id": "installera-anslutaren-fran-en-terminal-DTEI1XK0FM",
           "label": "Installera anslutaren från en terminal",
           "slug": "installera-anslutaren-fran-en-terminal-DTEI1XK0FM"
@@ -154,6 +160,12 @@
           "id": "namnge-telefoner-i-fleet-utan-anslutaren-qSBu1CRt27",
           "label": "Namnge telefoner i Fleet utan anslutaren",
           "slug": "namnge-telefoner-i-fleet-utan-anslutaren-qSBu1CRt27"
+        },
+        {
+          "type": "doc",
+          "id": "avsluta-en-deploy-app-i-fleet-yMLUsZrUsf",
+          "label": "Avsluta en Deploy App i Fleet",
+          "slug": "avsluta-en-deploy-app-i-fleet-yMLUsZrUsf"
         }
       ]
     },

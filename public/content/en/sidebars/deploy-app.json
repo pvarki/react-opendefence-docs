@@ -121,6 +121,12 @@
             },
             {
               "type": "doc",
+              "id": "when-the-deployment-ends-0IdROkcsVK",
+              "label": "When the deployment ends",
+              "slug": "when-the-deployment-ends-0IdROkcsVK"
+            },
+            {
+              "type": "doc",
               "id": "install-the-connector-from-a-terminal-vSDV2SJXgj",
               "label": "Install the connector from a terminal",
               "slug": "install-the-connector-from-a-terminal-vSDV2SJXgj"
@@ -168,6 +174,12 @@
               "id": "name-phones-in-fleet-without-the-connector-S69TrSf5OW",
               "label": "Name phones in Fleet without the connector",
               "slug": "name-phones-in-fleet-without-the-connector-S69TrSf5OW"
+            },
+            {
+              "type": "doc",
+              "id": "end-a-deploy-app-in-fleet-DBZairqewD",
+              "label": "End a Deploy App in Fleet",
+              "slug": "end-a-deploy-app-in-fleet-DBZairqewD"
             }
           ]
         }

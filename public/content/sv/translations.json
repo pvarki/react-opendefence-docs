@@ -935,11 +935,6 @@
     "fi": "/fi/deploy-app/deploy-app-tukee-mdmaa-jVgQarMKxG",
     "sv": "/sv/deploy-app/deploy-app-stoder-mdm-4ZstBxkyd8"
   },
-  "installera-anslutaren-3aFYZgX1LK": {
-    "en": "/en/deploy-app/install-the-connector-Fi93BT5Ntd",
-    "fi": "/fi/deploy-app/asenna-liitin-POM9A5h4cd",
-    "sv": "/sv/deploy-app/installera-anslutaren-3aFYZgX1LK"
-  },
   "koppla-din-mdm-o32bkyreTb": {
     "en": "/en/deploy-app/connect-your-mdm-CqNOaahyKB",
     "fi": "/fi/deploy-app/yhdista-mdm-QBy34u1J8P",
@@ -964,11 +959,6 @@
     "en": "/en/deploy-app/when-a-phone-does-not-arrive-f3b9RaRVoP",
     "fi": "/fi/deploy-app/kun-puhelin-ei-tule-perille-RawT0cG1WW",
     "sv": "/sv/deploy-app/nar-en-telefon-inte-kommer-fram-kuLFushpb9"
-  },
-  "efter-den-forsta-omgangen-lzMVPz857A": {
-    "en": "/en/deploy-app/after-the-first-batch-cOk5iBzJoS",
-    "fi": "/fi/deploy-app/ensimmaisen-eran-jalkeen-uml2XzLB4Q",
-    "sv": "/sv/deploy-app/efter-den-forsta-omgangen-lzMVPz857A"
   },
   "installera-anslutaren-fran-en-terminal-DTEI1XK0FM": {
     "en": "/en/deploy-app/install-the-connector-from-a-terminal-vSDV2SJXgj",
@@ -1004,5 +994,25 @@
     "en": "/en/deploy-app/set-fleet-up-without-the-connector-Xm6Qo0Xkhr",
     "fi": "/fi/deploy-app/maarita-fleet-ilman-liitinta-v1gTQPz5sV",
     "sv": "/sv/deploy-app/stall-in-fleet-utan-anslutaren-ACj14KNsa3"
+  },
+  "installera-anslutaren-3aFYZgX1LK": {
+    "en": "/en/deploy-app/install-the-connector-Fi93BT5Ntd",
+    "fi": "/fi/deploy-app/asenna-liitin-POM9A5h4cd",
+    "sv": "/sv/deploy-app/installera-anslutaren-3aFYZgX1LK"
+  },
+  "efter-den-forsta-omgangen-lzMVPz857A": {
+    "en": "/en/deploy-app/after-the-first-batch-cOk5iBzJoS",
+    "fi": "/fi/deploy-app/ensimmaisen-eran-jalkeen-uml2XzLB4Q",
+    "sv": "/sv/deploy-app/efter-den-forsta-omgangen-lzMVPz857A"
+  },
+  "nar-miljon-avslutas-87eb0xSxwz": {
+    "en": "/en/deploy-app/when-the-deployment-ends-0IdROkcsVK",
+    "fi": "/fi/deploy-app/kun-ymparisto-paattyy-TItex9Xbr1",
+    "sv": "/sv/deploy-app/nar-miljon-avslutas-87eb0xSxwz"
+  },
+  "avsluta-en-deploy-app-i-fleet-yMLUsZrUsf": {
+    "en": "/en/deploy-app/end-a-deploy-app-in-fleet-DBZairqewD",
+    "fi": "/fi/deploy-app/paata-deploy-app-fleetissa-5JjkJVQReP",
+    "sv": "/sv/deploy-app/avsluta-en-deploy-app-i-fleet-yMLUsZrUsf"
   }
 }

@@ -115,6 +115,12 @@
         },
         {
           "type": "doc",
+          "id": "kun-ymparisto-paattyy-TItex9Xbr1",
+          "label": "Kun ympäristö päättyy",
+          "slug": "kun-ymparisto-paattyy-TItex9Xbr1"
+        },
+        {
+          "type": "doc",
           "id": "asenna-liitin-paatteesta-zFGeRuAR6T",
           "label": "Asenna liitin päätteestä",
           "slug": "asenna-liitin-paatteesta-zFGeRuAR6T"
@@ -154,6 +160,12 @@
           "id": "nimea-puhelimet-fleetissa-ilman-liitinta-9ZR0tAiRxJ",
           "label": "Nimeä puhelimet Fleetissä ilman liitintä",
           "slug": "nimea-puhelimet-fleetissa-ilman-liitinta-9ZR0tAiRxJ"
+        },
+        {
+          "type": "doc",
+          "id": "paata-deploy-app-fleetissa-5JjkJVQReP",
+          "label": "Päätä Deploy App Fleetissä",
+          "slug": "paata-deploy-app-fleetissa-5JjkJVQReP"
         }
       ]
     },
