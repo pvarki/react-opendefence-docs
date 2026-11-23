@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "id": "a807cb04-5ab8-4966-9551-b5adb3abec89",
+  "slug": "concepts-gNkXFS8ukj",
+  "collection": "wikis/opendefence-plugins",
+  "locale": "en",
+  "title": "Concepts",
+  "breadcrumb": [
+    "OpenDefence Matrix",
+    "Concepts"
+  ],
+  "createdAt": "2026-11-23T21:08:51.127Z",
+  "updatedAt": "2026-11-23T21:08:51.127Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Your account",
+          "layout": "image-bottom",
+          "html": "<p>Your chat account is your OpenDefence account on Matrix, the chat system the Element X app also uses, so your rooms and messages are the same in both apps. Once the Deploy App has connected ATAK to your OpenDefence TAK server, you sign in on each phone with your Deploy App certificate, and there is no server to type in. On the first device you chat on, you save a recovery key. Keep it safe, because a later phone reads encrypted messages only once you verify it with that key or with another of your devices.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/0a6f04ca8d788312.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        },
+        {
+          "title": "Rooms and direct chats",
+          "layout": "image-bottom",
+          "html": "<p>A room is a group chat, such as your platoon's, and a direct chat is between you and one person. <strong>Chats</strong> lists both, and below them, under <strong>MORE ROOMS IN</strong>, the other rooms in your OpenDefence space, each with <strong>Join</strong>. A room you make in OpenDefence Matrix goes in that space for anyone there to find and join, and stays encrypted. Whoever makes a room is its <strong>Admin</strong>, who can rename it, invite people and give roles.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/619a6bdf699bf873.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        },
+        {
+          "title": "Threads",
+          "layout": "image-bottom",
+          "html": "<p>A thread is a side conversation under one message, so a long exchange does not flood the room. The room shows only how many replies there are, here <strong>2 replies in thread</strong>, and a tap on it opens the thread.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/2b9d785bf71984ee.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        },
+        {
+          "title": "Writing with no connection",
+          "layout": "image-bottom",
+          "html": "<p>With no connection, <strong>Chats</strong> says you are offline, but you can still read your chats and write. A new message waits as <strong>Sending…</strong> and goes by itself once the connection is back, so do not send it again.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/2e8efe5d6bbc8b98.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        },
+        {
+          "title": "Chat and the map",
+          "layout": "image-bottom",
+          "html": "<p>Your position goes with your messages by default, as the grid under each one, and the pin by the field turns that off for a chat. Points, routes and drawings travel as <strong>MAP ITEM</strong> cards, and route and area files (KML, KMZ or GPX) can go on your map as an overlay you can hide. A map item or file someone sends goes on your map only when you tap it, here <strong>On map</strong>, and is not sent on. People who share their live location in Element X, in a chat you are in, show on your map by name without a tap.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/5a4f41a566feaeac.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        },
+        {
+          "title": "Notifications",
+          "layout": "image-bottom",
+          "html": "<p>By default ATAK notifies you of new direct messages and of messages that name you, the choice <strong>Direct messages and mentions</strong>. Under <strong>OD Matrix Preferences</strong> in ATAK's Settings you can pick <strong>All messages</strong> or <strong>Nothing</strong> instead, for this phone only, while Element X keeps its own. A notification names the chat and how many messages are new, never the text, because ATAK shows notifications on a locked screen. The unread count on the chat button in ATAK's toolbar and on <strong>Chat</strong> shows whatever you choose.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/0e45ad8d93e0c42e.webp",
+              "width": 1336,
+              "height": 2720
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "4456842b-d383-4a78-bb25-881c3297e3b0",
+  "slug": "introduction-qSkewIfx3U",
+  "collection": "wikis/opendefence-plugins",
+  "locale": "en",
+  "title": "Introduction",
+  "breadcrumb": [
+    "OpenDefence Main",
+    "Introduction"
+  ],
+  "createdAt": "2026-10-27T21:22:39.235Z",
+  "updatedAt": "2026-11-23T21:06:29.239Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "An easier ATAK",
+          "layout": "image-bottom",
+          "html": "<p>ATAK, the map app TAK users share positions and marks on, is built for every possible user, so one enemy mark takes many taps. OpenDefence Main is a plugin for ATAK that does the common things in a few taps: mark the enemy, send the mark and read what others report.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/5d794775e3eb649d.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Plugins join in",
+          "layout": "image-bottom",
+          "html": "<p>OpenDefence Main's buttons sit on the thumb bar at the bottom left of the map: <strong>Inbox</strong> on top and <strong>Markers</strong> below. Other OpenDefence plugins add their buttons beside <strong>Markers</strong>, such as <strong>Drones</strong> from OpenDefence UAVOps and <strong>Voice</strong> from OpenDefence Voice. What they send you, such as the answer to a drone request, shows in the same <strong>Inbox</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/7658202e351d2ab4.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "One way of working, shared",
+          "layout": "image-bottom",
+          "html": "<p>Learn <strong>Markers</strong>, <strong>Send to…</strong>, where you share a mark, and the <strong>Inbox</strong> once. Plugins that build on them, such as <strong>Drones</strong>, work through them the same way.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/e7837e6ed2ea8e2c.webp",
+              "width": 2480,
+              "height": 1300
+            }
+          ]
+        },
+        {
+          "title": "Built for military use",
+          "layout": "image-bottom",
+          "html": "<p><strong>Markers</strong> draws NATO's standard military symbols (APP-6D), and every mark goes out in TAK's standard format. Users of plain ATAK, of WinTAK on Windows and of iTAK on iPhone, allies included, see the right symbol without OpenDefence Main. Your admins pick the types that come first for the whole operation, like these enemy favourites.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/06bcd0436622904c.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

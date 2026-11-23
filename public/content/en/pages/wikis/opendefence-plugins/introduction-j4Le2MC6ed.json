@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "5a67245d-fd94-4651-a12e-fc7b8f149cbb",
+  "slug": "introduction-j4Le2MC6ed",
+  "collection": "wikis/opendefence-plugins",
+  "locale": "en",
+  "title": "Introduction",
+  "breadcrumb": [
+    "OpenDefence UAVOps",
+    "Introduction"
+  ],
+  "createdAt": "2026-11-23T21:07:43.425Z",
+  "updatedAt": "2026-11-23T21:07:43.425Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Drone work in ATAK",
+          "layout": "image-bottom",
+          "html": "<p>OpenDefence UAVOps is OpenDefence's drone operations plugin, behind the <strong>Drones</strong> button. It takes a soldier's request for a drone to the team that flies it, and brings the result back. <strong>Missions</strong> shows which drones fly now and how far each target is from you.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/2f8a91d3c723ad21.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "From ask to result",
+          "layout": "image-bottom",
+          "html": "<p>A forward observer asks for a strike or a recon on an enemy mark or a drawn area. The headquarters (HQ) or a platoon's tactical operations centre (TOC) hands the request to a drone team, or it goes straight to the teams the observer asked. The team plans, flies and reports the mission. The asker follows each step in OpenDefence Main's <strong>Inbox</strong> under <strong>Sent</strong>, here <strong>Hit</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/852d1735fb056d89.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "It does not fly the drone",
+          "layout": "image-bottom",
+          "html": "<p>OpenDefence UAVOps does not fly drones. The drone shows on the map from the position it already sends, its track, here <strong>KOIRA11</strong>, or as a marker the team moves <strong>By hand</strong>. The drone team records the take-off, the landing and the result.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/1815f43c98d4f8bd.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Before you start",
+          "layout": "image-bottom",
+          "html": "<p>OpenDefence UAVOps works with OpenDefence Main and needs the Data Sync plugin, whose drone feeds carry the missions from phone to phone. It opens from <strong>Drones</strong> on OpenDefence Main's thumb bar, the buttons at the bottom left of the map. Concepts explains the words used here, Starting as a user sets your role and unit, and then each role has its own chapter.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/a0cb5e2c31123738.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "80d184f9-12fe-4f83-978e-ebc2ebcb1f58",
+  "slug": "introduction-75PnjTU6LV",
+  "collection": "wikis/opendefence-plugins",
+  "locale": "en",
+  "title": "Introduction",
+  "breadcrumb": [
+    "OpenDefence Matrix",
+    "Introduction"
+  ],
+  "createdAt": "2026-11-23T21:08:44.948Z",
+  "updatedAt": "2026-11-23T21:08:44.948Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Chat beside the map",
+          "layout": "image-bottom",
+          "html": "<p>OpenDefence Matrix puts your OpenDefence chat in a pane under the ATAK map, so you read and write without leaving the map. It is the same chat as the Element X app, so people on either app talk in the same rooms. It opens from the chat button in ATAK's top toolbar, which takes the place of ATAK's own GeoChat. With OpenDefence Main, <strong>Chat</strong> on its thumb bar at the bottom of the map opens it too once you are signed in.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/1b4c5ef187588589.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        },
+        {
+          "title": "More than text",
+          "layout": "image-bottom",
+          "html": "<p>A chat carries photos, videos, files, voice messages and polls as well as text. Photos are sent smaller, to save data.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/2c9adf860034828f.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        },
+        {
+          "title": "Share from the map",
+          "layout": "image-bottom",
+          "html": "<p>You can send a point, route or drawing from the map to a chat, and put what others send on your own map. Each message can also show where it was sent.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/9966a2505a52daa2.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        },
+        {
+          "title": "Kept private",
+          "layout": "image-bottom",
+          "html": "<p>Rooms and direct chats made in OpenDefence Matrix are end-to-end encrypted, so only the people in them can read what is said. A message's <strong>Message info</strong> says so, as here. Photos and videos go without the location stored in the file. Your position goes as the grid under a message, only in encrypted chats, and the pin by the field turns it off.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/f13187176c22f58a.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

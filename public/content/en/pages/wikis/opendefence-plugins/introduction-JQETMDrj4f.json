@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "3279f23a-cb4c-4575-86df-930f8981efdd",
+  "slug": "introduction-JQETMDrj4f",
+  "collection": "wikis/opendefence-plugins",
+  "locale": "en",
+  "title": "Introduction",
+  "breadcrumb": [
+    "OpenDefence Voice",
+    "Introduction"
+  ],
+  "createdAt": "2026-11-23T21:07:58.618Z",
+  "updatedAt": "2026-11-23T21:07:58.618Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Push-to-talk in ATAK",
+          "layout": "image-bottom",
+          "html": "<p>OpenDefence Voice is push-to-talk (PTT) voice inside ATAK. Hold the PTT button and talk to your net, the voice channel you joined. The button turns red and reads <strong>TRANSMITTING</strong> while you are on the air. You hear the others, with the map still in front of you.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/d31e9840f5593c10.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        },
+        {
+          "title": "Nothing to sign in to",
+          "layout": "image-bottom",
+          "html": "<p>A separate voice app would mean a second sign-in and a second set of settings. OpenDefence Voice reuses what ATAK already holds, the TAK server's address and your certificate. It connects by itself and shows <strong>Connected</strong>, with nothing to sign in to.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/4f4526e0869132af.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        },
+        {
+          "title": "On the thumb bar",
+          "layout": "image-bottom",
+          "html": "<p>OpenDefence Voice works on its own, opened from ATAK's ≡ menu. With OpenDefence Main in the same ATAK, it also gets a <strong>Voice</strong> button on the thumb bar, the row of buttons at the bottom left of the map. Push-to-talk is then one tap from the map.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/2e57c8764c20cec7.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        },
+        {
+          "title": "Works with the phone locked",
+          "layout": "image-bottom",
+          "html": "<p>OpenDefence Voice keeps working with ATAK in the background and the phone locked. A Bluetooth PTT button, a headset's talk button or the volume-up key, once set up in <strong>Settings</strong>, lets you talk even then. The notification <strong>Voice push-to-talk is ready</strong> means they work now.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/0b37c74ab6139ce8.webp",
+              "width": 1336,
+              "height": 2720
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

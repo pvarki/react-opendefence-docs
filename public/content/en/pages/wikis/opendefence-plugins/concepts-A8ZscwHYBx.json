@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 1,
+  "id": "95d40723-7d1f-4465-bae4-4ac9e2e0e33d",
+  "slug": "concepts-A8ZscwHYBx",
+  "collection": "wikis/opendefence-plugins",
+  "locale": "en",
+  "title": "Concepts",
+  "breadcrumb": [
+    "OpenDefence Main",
+    "Concepts"
+  ],
+  "createdAt": "2026-11-23T21:06:38.293Z",
+  "updatedAt": "2026-11-23T21:06:38.293Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Admins and users",
+          "layout": "image-bottom",
+          "html": "<p>Deploy App, the service that enrols your phone on the TAK server, makes some users admins. They set up the operation for every phone, in a part of OpenDefence Main only they see. Every soldier sets their own phone under <strong>THIS PHONE</strong>, here in ATAK's settings, and only admins change what <strong>OPERATION</strong> shows. Admins start with the chapter Setting up, every other soldier with Starting as a user.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/66e78a05025c5022.webp",
+              "width": 1336,
+              "height": 2660
+            }
+          ]
+        },
+        {
+          "title": "ORBAT",
+          "layout": "image-bottom",
+          "html": "<p>The ORBAT, the order of battle, lists the operation's units, each under the one it belongs to, here company 1K and its platoons. Admins build it, and until they publish one, phones use a built-in Finnish rifle company. You meet it when you pick your own unit and when you mark a friendly unit. Your unit decides which area the Inbox watches and which feeds, the TAK server's shared lists of marks, you should follow.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/92fb8bc2e9bdb982.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Admin settings",
+          "layout": "image-bottom",
+          "html": "<p>Admins set up the operation under <strong>Server configuration (admins)</strong> in the <strong>OpenDefence Main</strong> pane. There they set the ORBAT, each side's favourite symbols, where each unit's marks usually go (<strong>Usual targets</strong>), which feeds it follows and when enemy marks go stale. Once an admin publishes, every phone takes the setup, and a card on the map says so. You meet it in the types <strong>Markers</strong> offers first and the one-tap send on a new mark's card.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/f60f497bb0ed7831.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Markers",
+          "layout": "image-bottom",
+          "html": "<p><strong>Markers</strong> is a button on the thumb bar, OpenDefence Main's buttons at the bottom left of the map. It puts what you see or plan on the map in a few taps: a unit, a position, a route or an area, friendly, neutral, unknown or enemy. Each mark it places carries its standard military symbol, so other TAK users read it too. A new mark stays on your phone and reads <strong>NOT SENT</strong> until you share it with <strong>Send to…</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/ddad62b17446be70.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Stale and fresh markers",
+          "layout": "image-bottom",
+          "html": "<p>Enemy reports get old, and the enemy may have moved since. A neutral, unknown or enemy mark goes stale once it is older than the time your admins set, 24 hours unless they change it. Its label then turns grey and reads <strong>Stale</strong>, and the Inbox stops listing it as near you. Until then it is fresh, and the label's second line says how old it is.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/d5daa18ba8d2189c.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Inbox",
+          "layout": "image-bottom",
+          "html": "<p>The <strong>Inbox</strong> at the top of the thumb bar gathers what others report, the closest enemy first: close, under 500 m, then near you, then your unit's area. Its red count says how many items are new, and a banner shows new arrivals. It also lists requests waiting for you and how your own requests are going.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/4dbfe60c136f0e63.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Requests",
+          "layout": "image-bottom",
+          "html": "<p>A request asks another OpenDefence plugin to act on a mark or a drawn area, such as OpenDefence UAVOps, behind <strong>Drones</strong>, for a drone strike or recon. You tap the item, then the target button, a crosshair in ATAK's ring of buttons, and the sheet asks what that plugin needs. You follow it under <strong>Sent</strong> in the <strong>Inbox</strong>, and those you asked find it under <strong>For you</strong>. With no such plugin on the phone, there is no target button.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/e7df3a9dc7e9355c.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Open for new plugins",
+          "layout": "image-bottom",
+          "html": "<p>Other OpenDefence plugins, each its own app, join in where you already look, such as <strong>Drones</strong> and <strong>Voice</strong> on the thumb bar. OpenDefence Matrix adds a chat row to <strong>Send to…</strong>, and OpenDefence UAVOps, behind <strong>Drones</strong>, adds requests, Inbox rows and the admin setting <strong>Quotas and corridors</strong>. Each works without the others, and each is built and checked the same way and signed by the TAK Product Center at TAK.gov. Plugins still to come, such as Fires, Logistics and Sensors, will join the same way.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/97b6e17b08d82c05.webp",
+              "width": 2480,
+              "height": 1120
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

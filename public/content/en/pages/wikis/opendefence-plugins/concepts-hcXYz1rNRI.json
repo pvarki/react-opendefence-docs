@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "id": "994fb83a-deef-4109-a533-495181e65638",
+  "slug": "concepts-hcXYz1rNRI",
+  "collection": "wikis/opendefence-plugins",
+  "locale": "en",
+  "title": "Concepts",
+  "breadcrumb": [
+    "OpenDefence Voice",
+    "Concepts"
+  ],
+  "createdAt": "2026-11-23T21:08:31.566Z",
+  "updatedAt": "2026-11-23T21:08:31.566Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Voice server and sign-in",
+          "layout": "image-bottom",
+          "html": "<p>OpenDefence Voice talks through your unit's voice server, which it finds through the TAK server that ATAK is connected to. It signs in with ATAK's own certificate, the digital ID you got when you enrolled, so there is no password. It waits for ATAK with <strong>Connect ATAK to the TAK server first</strong> and <strong>NOT CONNECTED</strong>, as here, and then connects by itself. Your first press shows <strong>Allow microphone</strong>: tap it and allow what Android asks.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/49b63071420470d6.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        },
+        {
+          "title": "Nets",
+          "layout": "image-bottom",
+          "html": "<p>A net is a voice channel, and the <strong>NET</strong> header opens <strong>Select net</strong>, the list shown here. <strong>Teams/Blue</strong> is the net Blue in the group <strong>Teams</strong>, beside <strong>Units</strong>, <strong>Missions</strong> and <strong>Roles</strong>. You <strong>Join</strong> one net at a time and talk only there, and tick <strong>Listen</strong> to hear other nets too. Without any setup, OpenDefence Voice also listens to <strong>Missions/Guard</strong>, the mission nets open to you and the nets of your ATAK team and role.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/a383c9b04f26bbb6.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        },
+        {
+          "title": "Talking",
+          "layout": "image-bottom",
+          "html": "<p>Push-to-talk (PTT) means you talk while you hold a button and stop when you let go. Besides the PTT on the screen, a Bluetooth PTT button, a headset's talk button or the volume-up key can be your PTT. VOX (voice activation) needs no press and sends any sound loud enough at your headset's microphone, under your name. Each is off until you set it up in <strong>Settings</strong>, but the Active Key on some Samsung XCover and Tab Active models works with no setup.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/16abd82c498ee8eb.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        },
+        {
+          "title": "Who is there and who talks",
+          "layout": "image-bottom",
+          "html": "<p>The number beside the PTT is how many are in your net, and a tap on it lists their names. While someone in your net talks, their name shows in blue under <strong>NET</strong>, as BRAVO2 does here. The <strong>Listening</strong> line below the PTT lists the other nets you hear, with the name of whoever talks in one. Others see you by the name you were enrolled with, which can differ from your callsign in ATAK.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/d6006dcb95614acf.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        },
+        {
+          "title": "The status line",
+          "layout": "image-bottom",
+          "html": "<p>The line under the pane's title says how OpenDefence Voice is connected, and its dot says it at a glance. Green with <strong>Connected</strong> means it is up, amber means it is connecting or trying again by itself, and red means it needs you to act. Grey means it is off or not connected. <strong>User manual</strong>, under <strong>HELP</strong> in ATAK's <strong>OD Voice Preferences</strong>, lists every message and what to do.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/634c649624278edc.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
