@@ -1,6 +1,4 @@
-import { useEffect, useState } from "react";
-import { useNavigate, useParams } from "@tanstack/react-router";
-import useEmblaCarousel from "embla-carousel-react";
+import { useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
 import {
   ChevronLeft,
@@ -12,101 +10,63 @@ import type { SlidesetBlock } from "@shared/content-schema";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { Lightbox } from "@/components/slides/Lightbox";
-import { useImagePreloader } from "@/components/slides/useImagePreloader";
-import { useEdgePageFlow } from "@/components/slides/useEdgePageFlow";
-import { useReaderData } from "@/lib/useReaderData";
-import { useReadingView } from "@/lib/platform";
+import { SlideImage } from "@/components/slides/SlideImage";
+import { usePreloadImages } from "@/components/slides/useImagePreloader";
+import { useDeck } from "@/components/slides/useDeck";
+import { IS_STANDALONE } from "@/lib/standalone";
 import { useIsLargeText } from "@/lib/textScale";
-import { resolveGlobalPosition } from "@/lib/content/neighbors";
 
 /**
- * Mobile slideshow — the primary guide surface. Occupies the viewport below
- * the title so image AND caption are visible at one glance: the image takes
- * the flexible space, the caption a bounded strip below it. Swipes inside
- * the deck (data-swipe-scope) turn slides, never the page; the last slide's
- * forward button continues to the next page so the flow never dead-ends.
+ * Mobile slideshow — the primary guide surface. On a guide page it fills the
+ * rest of the first screen below the title (PagePane), so image AND caption
+ * are visible at one glance: the image takes the flexible space, the caption
+ * a bounded strip below it. Swipes inside the deck (data-swipe-scope) turn
+ * slides, never the page; stepping past the last or first slide continues on
+ * the neighbouring page (useDeck), so the flow never dead-ends.
  */
-export function MobileSlideShow({ block }: { block: SlidesetBlock }) {
+export function MobileSlideShow({
+  block,
+  bindSlideParam = false,
+}: {
+  block: SlidesetBlock;
+  bindSlideParam?: boolean;
+}) {
   const { t } = useTranslation();
-  const navigate = useNavigate();
-  const params = useParams({ strict: false });
-  const reader = useReaderData();
-  const view = useReadingView();
+  const count = block.slides.length;
+  const {
+    sectionRef,
+    viewportRef,
+    selected,
+    isFirst,
+    isLast,
+    hasPrevPage,
+    hasNextPage: nextPage,
+    goTo,
+    goPrev,
+    goNext,
+    skip,
+  } = useDeck(count, { bindSlideParam, duration: 22 });
 
-  const [selected, setSelected] = useState(0);
   const [enlarged, setEnlarged] = useState<{ src: string; alt?: string }>();
   // At large text steps, shrink the image so the (now bigger) caption fits, and
   // surface an explicit "Enlarge the image" button instead of tap-anywhere.
   const largeText = useIsLargeText();
 
-  const [viewportRef, embla] = useEmblaCarousel({
-    axis: "x",
-    align: "start",
-    containScroll: "trimSnaps",
-    duration: 22,
-    watchFocus: false,
-  });
-
-  const preloader = useImagePreloader(
-    block.slides.flatMap((s) => s.images.map((i) => i.src)),
+  usePreloadImages(
+    useMemo(
+      () => block.slides.flatMap((s) => s.images.map((i) => i.src)),
+      [block],
+    ),
   );
-
-  useEffect(() => {
-    if (!embla) return;
-    const onSelect = () => setSelected(embla.selectedScrollSnap());
-    embla.on("select", onSelect);
-    return () => {
-      embla.off("select", onSelect);
-    };
-  }, [embla]);
-
-  // Surrounding pages in the GLOBAL reading order: the deck flows into them.
-  const position =
-    reader?.slug !== undefined
-      ? resolveGlobalPosition(
-          reader.manifest,
-          reader.collection,
-          reader.slug,
-          view,
-        )
-      : undefined;
-  const nextPage = position?.next;
-  const prevPage = position?.prev;
-
-  const isLast = selected === block.slides.length - 1;
-
-  const goToPage = (page: { collection: string; slug: string } | undefined) => {
-    if (!page || !params.locale) return;
-    void navigate({
-      to: "/$locale/$",
-      params: {
-        locale: params.locale,
-        _splat: `${page.collection}/${page.slug}`,
-      },
-    });
-  };
-
-  const goForward = () => {
-    if (!isLast) embla?.scrollNext();
-    else goToPage(nextPage);
-  };
-
-  // Dragging past the deck's edges continues through the book — no need to
-  // exit the slideshow to keep reading.
-  useEdgePageFlow(embla, {
-    isFirst: selected === 0,
-    isLast,
-    onNextPage: () => goToPage(nextPage),
-    onPrevPage: () => goToPage(prevPage),
-  });
 
   return (
     <section
+      ref={sectionRef}
       data-swipe-scope="slides"
       role="group"
       aria-roledescription="carousel"
       aria-label={block.title}
-      className="my-3 flex h-[calc(100dvh-var(--header-h)-var(--tabbar-h)-4.5rem)] min-h-80 flex-col overflow-hidden rounded-xl border border-border bg-card"
+      className="mt-1 mb-2 flex h-[calc(100dvh-var(--header-h)-var(--tabbar-h)-4.5rem)] min-h-80 flex-[1_1_0px] flex-col overflow-hidden rounded-xl border border-border bg-card"
     >
       <div
         ref={viewportRef}
@@ -119,7 +79,7 @@ export function MobileSlideShow({ block }: { block: SlidesetBlock }) {
               inert={i !== selected}
               role="group"
               aria-roledescription="slide"
-              aria-label={`${i + 1} / ${block.slides.length}`}
+              aria-label={`${i + 1} / ${count}`}
               className="flex h-full min-w-0 flex-[0_0_100%] flex-col"
             >
               {slide.images[0] && (
@@ -129,20 +89,11 @@ export function MobileSlideShow({ block }: { block: SlidesetBlock }) {
                     largeText ? "h-28 shrink-0" : "min-h-0 flex-1",
                   )}
                 >
-                  {!preloader.isLoaded(slide.images[0].src) && (
-                    <span className="absolute inset-0 flex items-center justify-center">
-                      <span className="size-7 animate-spin rounded-full border-2 border-primary border-t-transparent" />
-                    </span>
-                  )}
-                  <img
-                    src={slide.images[0].src}
-                    alt={slide.images[0].alt ?? slide.title ?? ""}
-                    className={cn(
-                      "h-full w-full object-contain transition-opacity duration-200",
-                      preloader.isLoaded(slide.images[0].src)
-                        ? "opacity-100"
-                        : "opacity-0",
-                    )}
+                  <SlideImage
+                    image={slide.images[0]}
+                    fallbackAlt={slide.title}
+                    className="h-full w-full duration-200"
+                    spinnerClassName="size-7"
                   />
                   <button
                     type="button"
@@ -194,19 +145,27 @@ export function MobileSlideShow({ block }: { block: SlidesetBlock }) {
         </div>
       </div>
 
-      <div className="flex shrink-0 items-center justify-between gap-2 border-t border-border px-2 py-1.5">
+      <div
+        className={cn(
+          "flex shrink-0 items-center justify-between gap-2 border-t border-border px-2 py-1.5",
+          // The installed app's floating Back button (TabBar) sits over this
+          // corner: keep Previous clear of it.
+          IS_STANDALONE && "pl-14",
+        )}
+      >
         <Button
           variant="ghost"
           size="icon-sm"
-          onClick={() => embla?.scrollPrev()}
-          disabled={selected === 0}
-          aria-label={t("slides.prevStep")}
+          data-step="-1"
+          onClick={goPrev}
+          disabled={isFirst && !hasPrevPage}
+          aria-label={isFirst ? t("reader.previousPage") : t("slides.prevStep")}
         >
           <ChevronLeft />
         </Button>
         <div className="flex min-w-0 items-center gap-1.5 overflow-hidden">
           <span className="shrink-0 text-[11px] text-muted-foreground tabular-nums">
-            {selected + 1}/{block.slides.length}
+            {selected + 1}/{count}
           </span>
           <div className="flex items-center gap-1 overflow-hidden">
             {block.slides.map((_, i) => (
@@ -214,7 +173,7 @@ export function MobileSlideShow({ block }: { block: SlidesetBlock }) {
                 key={i}
                 type="button"
                 aria-label={`${i + 1}`}
-                onClick={() => embla?.scrollTo(i)}
+                onClick={() => goTo(i)}
                 className={cn(
                   "size-1.5 shrink-0 rounded-full transition-all",
                   i === selected ? "w-4 bg-primary" : "bg-muted",
@@ -229,7 +188,7 @@ export function MobileSlideShow({ block }: { block: SlidesetBlock }) {
               variant="ghost"
               size="sm"
               className="h-8 gap-0.5 px-2 text-xs text-muted-foreground"
-              onClick={() => goToPage(nextPage)}
+              onClick={skip}
               aria-label={t("slides.skipToNextPage")}
             >
               {t("slides.skip")}
@@ -240,7 +199,8 @@ export function MobileSlideShow({ block }: { block: SlidesetBlock }) {
             variant={isLast && nextPage ? "default" : "outline"}
             size="sm"
             className={cn(!(isLast && nextPage) && "size-8 px-0")}
-            onClick={goForward}
+            data-step="1"
+            onClick={goNext}
             disabled={isLast && !nextPage}
             aria-label={isLast ? t("reader.nextPage") : t("slides.nextStep")}
           >
