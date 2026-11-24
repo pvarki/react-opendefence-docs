@@ -2,6 +2,8 @@ import { Fragment } from "react";
 import { createFileRoute } from "@tanstack/react-router";
 import { useTranslation } from "react-i18next";
 import { BookText } from "lucide-react";
+import { UNDER_CONSTRUCTION_SECTIONS } from "@config/collections";
+import { UnderConstructionBanner } from "@/components/reader/UnderConstructionBanner";
 import { BookCard } from "@/components/shell/BookCard";
 import { ShelfHero } from "@/components/shell/ShelfHero";
 import { SiteFooter } from "@/components/shell/SiteFooter";
@@ -33,6 +35,9 @@ function AdvancedShelf() {
       <ShelfHero title={t("nav.advanced")} subtitle={t("home.powerCardDesc")} />
       <div className={cn(PAGE_FRAME, "pt-4 pb-8 md:pt-6 md:pb-10")}>
         <div className="max-w-3xl">
+          {UNDER_CONSTRUCTION_SECTIONS.includes("wikis") && (
+            <UnderConstructionBanner compact />
+          )}
           <p className="text-sm leading-relaxed text-foreground md:text-base">
             {t("advancedFooter.lead")}
           </p>
@@ -50,6 +55,7 @@ function AdvancedShelf() {
                   title={book.label}
                   description={bookDescription(t, book)}
                   image={CARD_IMAGES[book.slug]}
+                  underConstruction={book.underDevelopment}
                 />
               ))}
             </div>

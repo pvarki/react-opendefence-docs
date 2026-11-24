@@ -17,6 +17,7 @@ import { OrientationModal } from "@/components/shell/OrientationModal";
 import { markOrientationSeen, type TrackKey } from "@/lib/orientationFlows";
 import { PwaInstallPrompt } from "@/components/shell/PwaInstallPrompt";
 import { ShelfIndicator } from "@/components/shell/ShelfIndicator";
+import { UNDER_CONSTRUCTION_SECTIONS, type Section } from "@config/collections";
 import { SiteFooter } from "@/components/shell/SiteFooter";
 import { Button } from "@/components/ui/button";
 import { SectionLabel } from "@/components/ui/section-label";
@@ -37,6 +38,8 @@ interface HomeCard {
   icon: LucideIcon;
   titleKey: string;
   descKey: string;
+  /** The shelf's section, for the "Under construction" mark. */
+  section?: Section;
 }
 
 const ORGANIZERS: { titleKey: string; cards: HomeCard[] }[] = [
@@ -82,12 +85,14 @@ const ORGANIZERS: { titleKey: string; cards: HomeCard[] }[] = [
         icon: Zap,
         titleKey: "home.powerCard",
         descKey: "home.powerCardDesc",
+        section: "wikis",
       },
       {
         to: "/$locale/dev",
         icon: Code2,
         titleKey: "home.devCard",
         descKey: "home.devCardDesc",
+        section: "dev",
       },
     ],
   },
@@ -135,6 +140,10 @@ function HomePage() {
                   title={t(card.titleKey)}
                   description={t(card.descKey)}
                   size="tall"
+                  underConstruction={
+                    !!card.section &&
+                    UNDER_CONSTRUCTION_SECTIONS.includes(card.section)
+                  }
                 />
               ))}
             </div>
