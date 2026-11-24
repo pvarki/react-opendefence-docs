@@ -13,12 +13,17 @@ import { SiteFooter } from "@/components/shell/SiteFooter";
 import { Skeleton } from "@/components/ui/skeleton";
 import { useScrollMemory } from "@/components/reader/useScrollMemory";
 
-function usePageDoc(page: ManifestPage): PageDoc | undefined {
+function usePageDoc(
+  page: ManifestPage,
+  isCurrent: boolean,
+): PageDoc | undefined {
   // Usually loaded already (the swiper preloads neighbors): no skeleton frame.
   const [doc, setDoc] = useState(() => peekPage(page.path));
 
   // Panes are keyed by slug, so page.path is stable for this instance's
   // lifetime — no stale-doc reset needed before the (usually cached) load.
+  // Runs again when the pane becomes the current one: turning to a page
+  // whose load failed retries it.
   useEffect(() => {
     let cancelled = false;
     loadPage(page.path)
@@ -31,7 +36,7 @@ function usePageDoc(page: ManifestPage): PageDoc | undefined {
     return () => {
       cancelled = true;
     };
-  }, [page.path]);
+  }, [page.path, isCurrent]);
 
   return doc;
 }
@@ -63,7 +68,7 @@ export const PagePane = memo(function PagePane({
   likelyGuide = false,
 }: PagePaneProps) {
   const { page, next } = position;
-  const doc = usePageDoc(page);
+  const doc = usePageDoc(page, isCurrent);
   const scrollRef = useScrollMemory(
     `${locale}:${page.collection}:${page.slug}`,
     !!doc,
