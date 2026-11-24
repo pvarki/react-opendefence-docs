@@ -1,5 +1,5 @@
 import { Suspense, lazy, useEffect, useState } from "react";
-import { createFileRoute, notFound } from "@tanstack/react-router";
+import { createFileRoute, notFound, redirect } from "@tanstack/react-router";
 import { useTranslation } from "react-i18next";
 import { Braces } from "lucide-react";
 import { DEFAULT_LOCALE } from "@shared/content-schema";
@@ -16,6 +16,7 @@ import {
 import { Skeleton } from "@/components/ui/skeleton";
 import { HtmlBlock } from "@/components/blocks/HtmlBlock";
 import { withBase } from "@/lib/base";
+import { hiddenBookShelf } from "@/lib/siteSections";
 import { cn } from "@/lib/utils";
 import {
   loadRefDoc,
@@ -45,6 +46,14 @@ export const Route = createFileRoute("/$locale/dev/$book/$view")({
   validateSearch: (search: Record<string, unknown>): { v?: string } =>
     typeof search.v === "string" ? { v: search.v } : {},
   loader: async ({ context, params }) => {
+    const shelf = hiddenBookShelf(params.book);
+    if (shelf) {
+      throw redirect({
+        to: shelf,
+        params: { locale: context.locale },
+        replace: true,
+      });
+    }
     const view = VIEWS.find((v) => v === params.view);
     if (!view) throw notFound();
 

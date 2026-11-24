@@ -48,6 +48,7 @@ import { SectionLabel } from "@/components/ui/section-label";
 import { PAGE_FRAME } from "@/lib/pageFrame";
 import { cn } from "@/lib/utils";
 import { bookDescription } from "@/lib/bookDescription";
+import { hiddenBookShelf } from "@/lib/siteSections";
 
 export interface ReaderData extends BookContext {
   kind: "cover" | "page";
@@ -101,6 +102,15 @@ export const Route = createFileRoute("/$locale/$")({
   },
   loader: async ({ context, params, location }): Promise<ReaderData> => {
     const splat = params._splat ?? "";
+    // A hidden book: its shelf holds the notice.
+    const shelf = hiddenBookShelf(splat);
+    if (shelf) {
+      throw redirect({
+        to: shelf,
+        params: { locale: context.locale },
+        replace: true,
+      });
+    }
     const own = await resolveForLocale(context.locale, splat);
     if (own) return { ...own, contentLocale: context.locale, fallback: false };
 
