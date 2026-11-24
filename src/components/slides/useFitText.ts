@@ -64,7 +64,8 @@ export function useFitText<
         }
       }
     }
-    best = Math.round(best * 100) / 100;
+    // Down, never up: rounding up can cross the size at which a line wraps.
+    best = Math.floor(best * 100) / 100;
     content.style.fontSize = `${best}px`;
     setFontSize(best);
   }, [min, max]);
