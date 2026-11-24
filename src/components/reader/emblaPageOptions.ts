@@ -8,15 +8,7 @@ import type { EmblaOptionsType } from "embla-carousel";
  */
 export const EDGE_DEAD_ZONE_PX = 32;
 
-export interface PageDragGuards {
-  /** True while a settle->navigate->reInit commit is in flight. */
-  navLocked: () => boolean;
-}
-
-export function pageSwiperOptions(
-  startIndex: number,
-  guards: PageDragGuards,
-): EmblaOptionsType {
+export function pageSwiperOptions(startIndex: number): EmblaOptionsType {
   return {
     axis: "x",
     align: "start",
@@ -28,7 +20,6 @@ export function pageSwiperOptions(
     watchFocus: false,
     watchSlides: false,
     watchDrag: (_api, evt) => {
-      if (guards.navLocked()) return false;
       const target = evt.target as Element | null;
       if (!target) return false;
       // Slidesets / lightboxes own their gestures; form fields keep selection.
