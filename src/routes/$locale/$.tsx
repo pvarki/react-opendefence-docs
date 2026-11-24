@@ -143,6 +143,7 @@ export const Route = createFileRoute("/$locale/$")({
 function ReaderRoute() {
   const data = Route.useLoaderData();
   const { locale } = Route.useParams();
+  const { slide } = Route.useSearch();
   const view = useReadingView();
   const collectionMeta = data.manifest.collections.find(
     (c) => c.slug === data.collection,
@@ -219,6 +220,7 @@ function ReaderRoute() {
               collection={data.collection}
               slug={data.slug}
               view={view}
+              slide={slide}
             />
           )}
         </div>
