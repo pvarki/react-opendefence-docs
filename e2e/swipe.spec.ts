@@ -1,4 +1,4 @@
-import { expect, test, type Page } from "@playwright/test";
+import { expect, test, type Locator, type Page } from "@playwright/test";
 
 // Real synced content: deploy-app, android platform, User Guide chapter.
 // INTRO is shown on every platform and opens the whole reading order.
@@ -39,6 +39,13 @@ async function swipe(page: Page, direction: "left" | "right") {
   const y = title ? title.y + title.height / 2 : 80;
   const left = reader?.x ?? 0;
   const width = reader?.width ?? viewport.width;
+  // From rest: a drag that catches the previous turn mid-glide adds to it,
+  // and how far that got depends on how loaded the machine is.
+  await expect
+    .poll(async () =>
+      Math.abs(((await currentPane(page).boundingBox())?.x ?? left) - left),
+    )
+    .toBeLessThan(2);
   const from = left + width * (direction === "left" ? 0.8 : 0.2);
   const to = left + width * (direction === "left" ? 0.2 : 0.8);
   await page.mouse.move(from, y);
@@ -119,11 +126,17 @@ async function fingerSwipe(
   });
 }
 
-/** A two-finger trackpad flick and the inertia the OS adds after it. */
-async function trackpadSwipe(page: Page) {
-  for (const deltaX of [20, 35, 40, 35, 20, ...Array<number>(30).fill(25)]) {
-    await page.mouse.wheel(deltaX, 0);
-  }
+/**
+ * A two-finger trackpad flick and the inertia the OS adds after it, as the
+ * one dense stream a trackpad sends. Dispatched in the page: sent through CDP
+ * the events drift apart on a loaded machine and read as several swipes.
+ */
+async function trackpadSwipe(target: Locator) {
+  await target.evaluate((el) => {
+    for (const deltaX of [20, 35, 40, 35, 20, ...Array<number>(30).fill(25)]) {
+      el.dispatchEvent(new WheelEvent("wheel", { deltaX, bubbles: true }));
+    }
+  });
 }
 
 test.describe("book swipe navigation", () => {
@@ -176,10 +189,7 @@ test.describe("book swipe navigation", () => {
   }, testInfo) => {
     test.skip(testInfo.project.name !== "desktop", "trackpads are desktop");
     await open(page, FIRST);
-    const title = await currentPane(page).locator("h1").boundingBox();
-    if (!title) throw new Error("no title");
-    await page.mouse.move(title.x + 100, title.y + title.height / 2);
-    await trackpadSwipe(page);
+    await trackpadSwipe(currentPane(page).locator("h1"));
     await expect(page).toHaveURL(SECOND);
     await page.waitForTimeout(1500);
     await expect(page).toHaveURL(SECOND);
@@ -191,8 +201,7 @@ test.describe("book swipe navigation", () => {
     test.skip(testInfo.project.name !== "desktop", "trackpads are desktop");
     await open(page, FIRST);
     const deck = page.locator("[data-current] [data-swipe-scope]").first();
-    await deck.hover();
-    await trackpadSwipe(page);
+    await trackpadSwipe(deck.locator("[aria-roledescription=slide]").first());
     await expect(page).toHaveURL(`${FIRST}?slide=2`);
     await page.waitForTimeout(1500);
     await expect(page).toHaveURL(`${FIRST}?slide=2`);
