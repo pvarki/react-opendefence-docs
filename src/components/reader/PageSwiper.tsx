@@ -254,11 +254,13 @@ function PageStrip({
   useEffect(() => {
     const onKeyDown = (e: KeyboardEvent) => {
       if (e.key !== "ArrowLeft" && e.key !== "ArrowRight") return;
-      if (e.metaKey || e.ctrlKey || e.altKey) return;
+      if (e.metaKey || e.ctrlKey || e.altKey || e.shiftKey) return;
+      // An open menu, select or dialog owns the arrows.
+      if (e.defaultPrevented) return;
       const target = e.target as Element | null;
       if (
         target?.closest(
-          "input,textarea,select,[contenteditable=true],[data-swipe-scope]",
+          "input,textarea,select,[contenteditable=true],[data-swipe-scope],[role=listbox],[role=menu],[role=radiogroup],[role=dialog]",
         )
       ) {
         return;
