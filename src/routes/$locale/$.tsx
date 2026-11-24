@@ -54,6 +54,9 @@ import { cn } from "@/lib/utils";
 import { bookDescription } from "@/lib/bookDescription";
 import { hiddenBookShelf } from "@/lib/siteSections";
 
+/** How long a page turn waits for the page's JSON before turning without it. */
+const PAGE_JSON_GRACE_MS = 100;
+
 export interface ReaderData extends BookContext {
   kind: "cover" | "page";
   /** True when the URL locale has no translation and another locale's content is shown. */
@@ -85,10 +88,14 @@ async function resolveForLocale(
     (p) => p.collection === resolved.collection && p.slug === resolved.slug,
   );
   if (!page) return undefined;
-  // Start the fetch without waiting for it: the URL and the pane change at
-  // once, and the pane fills in when its JSON arrives (it usually has — the
-  // swiper preloads neighbors, links preload on intent).
-  void loadPage(page.path).catch(() => {});
+  // Give the page's JSON a moment, so a fast load renders in one go — but
+  // never hold the turn for a slow one: the pane shows a skeleton and fills
+  // in. (It has usually loaded: the swiper preloads neighbors, links preload
+  // on intent.)
+  await Promise.race([
+    loadPage(page.path).catch(() => {}),
+    new Promise((resolve) => setTimeout(resolve, PAGE_JSON_GRACE_MS)),
+  ]);
   return {
     kind: "page",
     manifest,
