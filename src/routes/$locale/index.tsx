@@ -23,7 +23,7 @@ import { Button } from "@/components/ui/button";
 import { SectionLabel } from "@/components/ui/section-label";
 import { withBase } from "@/lib/base";
 import { CONTACT_EMAIL } from "@/lib/introModal";
-import { PAGE_FRAME } from "@/lib/pageFrame";
+import { PAGE_FRAME, SHELF_SCROLL } from "@/lib/pageFrame";
 import { cn } from "@/lib/utils";
 
 export const Route = createFileRoute("/$locale/")({
@@ -103,7 +103,7 @@ function HomePage() {
   const { locale } = Route.useParams();
 
   return (
-    <div className="flex h-full flex-col overflow-y-auto">
+    <div className={SHELF_SCROLL}>
       <div className="relative h-20 shrink-0 overflow-hidden md:h-28">
         <img
           src={withBase("/images/poweruser.jpg")}

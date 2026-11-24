@@ -45,7 +45,7 @@ import { loadDevRefs, type DevRef } from "@/lib/devNav";
 import { ReaderBar } from "@/components/shell/ReaderBar";
 import { Button } from "@/components/ui/button";
 import { SectionLabel } from "@/components/ui/section-label";
-import { PAGE_FRAME } from "@/lib/pageFrame";
+import { PAGE_FRAME, SHELF_SCROLL } from "@/lib/pageFrame";
 import { cn } from "@/lib/utils";
 import { bookDescription } from "@/lib/bookDescription";
 import { hiddenBookShelf } from "@/lib/siteSections";
@@ -281,7 +281,7 @@ function BookCover({
   }, [data.collection]);
 
   return (
-    <div className="flex h-full flex-col overflow-y-auto">
+    <div className={SHELF_SCROLL}>
       <ShelfHero
         title={bookLabel}
         subtitle={collection && bookDescription(t, collection)}

@@ -16,7 +16,7 @@ import { SectionLabel } from "@/components/ui/section-label";
 import { CARD_IMAGES } from "@/lib/cardImages";
 import { bookDescription } from "@/lib/bookDescription";
 import { loadManifest } from "@/lib/content/loader";
-import { PAGE_FRAME } from "@/lib/pageFrame";
+import { PAGE_FRAME, SHELF_SCROLL } from "@/lib/pageFrame";
 import { siteSections } from "@/lib/siteSections";
 import { cn } from "@/lib/utils";
 
@@ -52,7 +52,7 @@ function GuidesShelf() {
   const { sections } = Route.useLoaderData();
 
   return (
-    <div className="flex h-full flex-col overflow-y-auto">
+    <div className={SHELF_SCROLL}>
       <ShelfHero title={t("nav.guides")} />
       <div className={cn(PAGE_FRAME, "pt-2 pb-8 md:pb-10")}>
         {sections.map((section) => (

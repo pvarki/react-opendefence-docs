@@ -14,7 +14,7 @@ import { CARD_IMAGES } from "@/lib/cardImages";
 import { bookDescription } from "@/lib/bookDescription";
 import { loadManifest } from "@/lib/content/loader";
 import { devNavSections } from "@/lib/devNav";
-import { PAGE_FRAME } from "@/lib/pageFrame";
+import { PAGE_FRAME, SHELF_SCROLL } from "@/lib/pageFrame";
 import { cn } from "@/lib/utils";
 import { afterViewTransition } from "@/lib/viewTransition";
 
@@ -30,7 +30,7 @@ export const Route = createFileRoute("/$locale/dev/")({
 function DevShelfClosed() {
   const { t } = useTranslation();
   return (
-    <div className="flex h-full flex-col overflow-y-auto">
+    <div className={SHELF_SCROLL}>
       <ShelfHero title={t("nav.develop")} />
       <div className={cn(PAGE_FRAME, "flex-1 pt-4 pb-8 md:pt-6 md:pb-10")}>
         <div className="max-w-3xl">
@@ -60,7 +60,7 @@ function DevShelf() {
   }, []);
 
   return (
-    <div className="flex h-full flex-col overflow-y-auto">
+    <div className={SHELF_SCROLL}>
       <ShelfHero title={t("nav.develop")} />
       <div className={cn(PAGE_FRAME, "pt-4 pb-8 md:pt-6 md:pb-10")}>
         <p className="max-w-3xl text-sm leading-relaxed text-foreground md:text-base">
