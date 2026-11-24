@@ -200,18 +200,17 @@ export function MobileSlideShow({
               <ChevronsRight className="size-3.5" />
             </Button>
           )}
+          {/* The same size and spot on every slide: the reader walks the
+              book by tapping here, and Skip must never slide under that tap. */}
           <Button
             variant={isLast && nextPage ? "default" : "outline"}
             size="sm"
-            className={cn(!(isLast && nextPage) && "size-8 px-0")}
+            className="size-8 px-0"
             data-step="1"
             onClick={goNext}
             disabled={isLast && !nextPage}
             aria-label={isLast ? t("reader.nextPage") : t("slides.nextStep")}
           >
-            {isLast && nextPage && (
-              <span className="text-xs">{t("reader.nextPage")}</span>
-            )}
             <ChevronRight />
           </Button>
         </div>
