@@ -10,7 +10,7 @@
     "Introduction"
   ],
   "createdAt": "2026-11-23T21:08:44.948Z",
-  "updatedAt": "2026-11-23T21:08:44.948Z",
+  "updatedAt": "2026-11-24T14:01:20.677Z",
   "headings": [],
   "blocks": [
     {
@@ -20,7 +20,31 @@
         {
           "title": "Chat beside the map",
           "layout": "image-bottom",
-          "html": "<p>OpenDefence Matrix puts your OpenDefence chat in a pane under the ATAK map, so you read and write without leaving the map. It is the same chat as the Element X app, so people on either app talk in the same rooms. It opens from the chat button in ATAK's top toolbar, which takes the place of ATAK's own GeoChat. With OpenDefence Main, <strong>Chat</strong> on its thumb bar at the bottom of the map opens it too once you are signed in.</p>",
+          "html": "<p>OpenDefence Matrix puts your OpenDefence chat in a pane under the ATAK map. You read and write without leaving the map.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/5ac4904432613ea5.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        },
+        {
+          "title": "Same chat as Element X",
+          "layout": "image-bottom",
+          "html": "<p>OpenDefence Matrix is the same chat as the Element X app. People on either app talk in the same rooms.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/0a6f04ca8d788312.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        },
+        {
+          "title": "Where it opens",
+          "layout": "image-bottom",
+          "html": "<p>The chat button at the top opens OpenDefence Matrix in place of ATAK's GeoChat. With OpenDefence Main, <strong>Chat</strong> at the bottom left opens it too, once you sign in.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/1b4c5ef187588589.webp",
@@ -44,7 +68,7 @@
         {
           "title": "Share from the map",
           "layout": "image-bottom",
-          "html": "<p>You can send a point, route or drawing from the map to a chat, and put what others send on your own map. Each message can also show where it was sent.</p>",
+          "html": "<p>You can send a point, route or drawing from the map to a chat. You can also put what others send on your own map.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/9966a2505a52daa2.webp",
@@ -56,10 +80,34 @@
         {
           "title": "Kept private",
           "layout": "image-bottom",
-          "html": "<p>Rooms and direct chats made in OpenDefence Matrix are end-to-end encrypted, so only the people in them can read what is said. A message's <strong>Message info</strong> says so, as here. Photos and videos go without the location stored in the file. Your position goes as the grid under a message, only in encrypted chats, and the pin by the field turns it off.</p>",
+          "html": "<p>Rooms and direct chats made in OpenDefence Matrix are end-to-end encrypted, so only the people in them can read what is said. <strong>Message info</strong> says so, as here.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/f13187176c22f58a.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        },
+        {
+          "title": "No location in photos",
+          "layout": "image-bottom",
+          "html": "<p>Photos and videos go without the location stored in the file. The attach panel says so before you send.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/cca755e4cdfda4c2.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        },
+        {
+          "title": "Your position on messages",
+          "layout": "image-bottom",
+          "html": "<p>Your position can go as the grid under your messages, only in encrypted chats. The pin by the message field turns it off.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/5a4f41a566feaeac.webp",
               "width": 1336,
               "height": 2842
             }
