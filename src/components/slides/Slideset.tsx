@@ -18,7 +18,7 @@ export function Slideset({ block, bindSlideParam }: SlidesetProps) {
   const isMobile = useIsMobile();
 
   return isMobile ? (
-    <MobileSlideShow block={block} />
+    <MobileSlideShow block={block} bindSlideParam={bindSlideParam} />
   ) : (
     <SlideDeck block={block} bindSlideParam={bindSlideParam} />
   );
