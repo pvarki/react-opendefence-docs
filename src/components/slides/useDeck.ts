@@ -33,6 +33,7 @@ export function useDeck(
   const pane = usePane();
   const navigate = useNavigate();
   const sectionRef = useRef<HTMLElement>(null);
+  const dotsRef = useRef<HTMLDivElement>(null);
   const isCurrent = pane?.isCurrent ?? true;
   const slide = bindSlideParam ? pane?.slide : undefined;
 
@@ -126,6 +127,17 @@ export function useDeck(
   const isFirst = selected === 0;
   const isLast = selected === count - 1;
 
+  // A long deck has more dots than its strip can show: keep the current one
+  // in the middle of it.
+  useEffect(() => {
+    const strip = dotsRef.current;
+    const dot = strip?.children[selected];
+    if (strip && dot instanceof HTMLElement) {
+      strip.scrollLeft =
+        dot.offsetLeft - (strip.clientWidth - dot.offsetWidth) / 2;
+    }
+  }, [selected]);
+
   // Dragging past the deck's edges continues through the book too — as a
   // page turn; the buttons below cut (see PageSwiper).
   useEdgePageFlow(embla, {
@@ -152,6 +164,7 @@ export function useDeck(
   return {
     sectionRef,
     viewportRef,
+    dotsRef,
     selected,
     isFirst,
     isLast,

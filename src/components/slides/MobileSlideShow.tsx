@@ -36,6 +36,7 @@ export function MobileSlideShow({
   const {
     sectionRef,
     viewportRef,
+    dotsRef,
     selected,
     isFirst,
     isLast,
@@ -66,13 +67,14 @@ export function MobileSlideShow({
       role="group"
       aria-roledescription="carousel"
       aria-label={block.title}
-      className="mt-1 mb-2 flex h-[calc(100dvh-var(--header-h)-var(--tabbar-h)-4.5rem)] min-h-80 flex-[1_1_0px] flex-col overflow-hidden rounded-xl border border-border bg-card"
+      className="mt-1 mb-2 flex h-[calc(100dvh-var(--header-h)-var(--tabbar-h)-4.5rem)] min-h-[min(20rem,100cqh)] flex-[1_1_0px] flex-col overflow-hidden rounded-xl border border-border bg-card"
     >
       <div
         ref={viewportRef}
-        className="min-h-0 flex-1 touch-pan-y overflow-hidden"
+        className="relative min-h-0 flex-1 touch-pan-y overflow-hidden"
       >
-        <div className="flex h-full">
+        {/* Fills the viewport by position, not by a percentage height. */}
+        <div className="absolute inset-0 flex">
           {block.slides.map((slide, i) => (
             <div
               key={i}
@@ -167,7 +169,10 @@ export function MobileSlideShow({
           <span className="shrink-0 text-[11px] text-muted-foreground tabular-nums">
             {selected + 1}/{count}
           </span>
-          <div className="flex items-center gap-1 overflow-hidden">
+          <div
+            ref={dotsRef}
+            className="relative flex items-center gap-1 overflow-hidden"
+          >
             {block.slides.map((_, i) => (
               <button
                 key={i}
