@@ -50,8 +50,8 @@ export function BookCard({
     >
       <Icon className="size-5 shrink-0 text-primary" />
       <div className="min-w-0 flex-1">
-        <p className="flex items-center gap-1.5 text-sm font-semibold">
-          <span className="truncate">{title}</span>
+        <p className="flex flex-wrap items-center gap-x-1.5 gap-y-1 text-sm font-semibold">
+          <span className="min-w-0 truncate">{title}</span>
           {underConstruction && (
             <span className="flex shrink-0 items-center gap-1 rounded-sm bg-yellow-400 px-1.5 py-0.5 text-[10px] leading-none font-bold tracking-wide text-black uppercase">
               <Construction className="size-3" aria-hidden />
