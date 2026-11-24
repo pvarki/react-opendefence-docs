@@ -11,7 +11,7 @@
     "Tell stale marks from fresh ones"
   ],
   "createdAt": "2026-10-27T22:27:09.137Z",
-  "updatedAt": "2026-11-23T21:06:52.200Z",
+  "updatedAt": "2026-11-24T13:57:22.508Z",
   "headings": [],
   "blocks": [
     {
@@ -21,7 +21,7 @@
         {
           "title": "Read the label",
           "layout": "image-bottom",
-          "html": "<p>The second line of a label gives the mark's age, <strong>Local</strong> when it is not known to be in a feed, and who made it. A stale mark's label turns grey and reads <strong>Stale</strong>.</p>",
+          "html": "<p>A label's second line gives the mark's age, <strong>Local</strong> if no known feed holds it, and who made it. Past a set time, the label turns grey and reads <strong>Stale</strong>.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/d5daa18ba8d2189c.webp",
@@ -57,7 +57,7 @@
         {
           "title": "Admins set the time",
           "layout": "image-bottom",
-          "html": "<p>Admins tap <strong>≡</strong>, scroll the tools to <strong>OpenDefence Main</strong>, tap it and scroll to <strong>Server configuration (admins)</strong>. Under <strong>Enemy marks go stale after</strong> they pick from <strong>6 h</strong> to <strong>7 d</strong>, <strong>24 h</strong> unless changed, then tap <strong>Publish…</strong> at the end of the pane.</p>",
+          "html": "<p>In <strong>Server configuration (admins)</strong>, admins pick a time under <strong>Enemy marks go stale after</strong>, <strong>24 h</strong> unless changed. Then they tap <strong>Publish…</strong> at the end of the pane.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/f60f497bb0ed7831.webp",

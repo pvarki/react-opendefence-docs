@@ -11,7 +11,7 @@
     "Mark friendly units, positions, routes and areas"
   ],
   "createdAt": "2026-10-27T21:22:57.371Z",
-  "updatedAt": "2026-11-23T20:01:32.423Z",
+  "updatedAt": "2026-11-24T13:58:14.246Z",
   "headings": [],
   "blocks": [
     {
@@ -21,7 +21,7 @@
         {
           "title": "Pick the unit",
           "layout": "image-bottom",
-          "html": "<p>Tap <strong>Markers</strong>, <strong>Friendly</strong>, the symbol and <strong>›</strong> on your platoon, here <strong>1J</strong>, to list its squads. Tap your squad, here <strong>2R</strong>, or <strong>Other type or search…</strong> for a friendly type that is not in your ORBAT.</p>",
+          "html": "<p>Tap <strong>Markers</strong>, <strong>Friendly</strong>, the symbol and <strong>›</strong> on your platoon, here <strong>1J</strong>. Tap your squad, here <strong>2R</strong>, or <strong>Other type or search…</strong> for a type not in your ORBAT.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/ff51dce82e956bab.webp",
@@ -45,7 +45,7 @@
         {
           "title": "Pick a position",
           "layout": "image-bottom",
-          "html": "<p>Open <strong>Markers</strong>, tap <strong>Friendly</strong> and <strong>Position</strong>, and check that <strong>Unit</strong> reads your squad. <strong>Fighting position</strong> comes first, with <strong>Firing area</strong> <strong>On</strong>, so tap <strong>Place</strong>.</p>",
+          "html": "<p>Open <strong>Markers</strong>, tap <strong>Friendly</strong> and <strong>Position</strong>, and check that <strong>Unit</strong> reads your squad. <strong>Fighting position</strong> comes first, with <strong>Firing area</strong> set to <strong>On</strong>, so tap <strong>Place</strong>.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/ef8c27a605efd8da.webp",
@@ -93,7 +93,7 @@
         {
           "title": "Draw a direction of attack",
           "layout": "image-bottom",
-          "html": "<p>Open <strong>Markers</strong>, tap <strong>Friendly</strong>, <strong>Route</strong>, the symbol, <strong>Direction of attack</strong> and <strong>Place</strong>. Draw it from start to tip and tap <strong>Done</strong>, then mark an <strong>Objective</strong> the same way from <strong>Area</strong>, drawing its outline at the tip.</p>",
+          "html": "<p>Tap <strong>Markers</strong>, <strong>Friendly</strong>, <strong>Route</strong>, the symbol, <strong>Direction of attack</strong> and <strong>Place</strong>, draw from start to tip and tap <strong>Done</strong>. Mark an <strong>Objective</strong> at its tip the same way, from <strong>Area</strong>.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/9c177fa8f43fea42.webp",

@@ -11,7 +11,7 @@
     "Set favourites and defaults (admins)"
   ],
   "createdAt": "2026-10-27T22:13:15.344Z",
-  "updatedAt": "2026-11-23T12:42:46.678Z",
+  "updatedAt": "2026-11-24T13:56:17.815Z",
   "headings": [],
   "blocks": [
     {
@@ -21,7 +21,7 @@
         {
           "title": "Favourites",
           "layout": "image-bottom",
-          "html": "<p>Under Server configuration (admins), tap <strong>Favourites</strong> and pick a side. Tap a type to rename it, move it up or remove it.</p>",
+          "html": "<p>Under <strong>Server configuration (admins)</strong>, tap <strong>Favourites</strong> and pick a side. Tap a type to rename it, move it up or remove it.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/f8f7a08a3f0ead18.webp",
@@ -33,7 +33,7 @@
         {
           "title": "Add a type",
           "layout": "image-bottom",
-          "html": "<p>Scroll down and tap Add type. In <strong>Search symbols</strong>, type a name and tap the symbol you want.</p>",
+          "html": "<p>Scroll down and tap <strong>Add type</strong>. In <strong>Search symbols</strong>, type a name and tap the symbol you want.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/aa6d89676e342b05.webp",
@@ -45,7 +45,7 @@
         {
           "title": "Usual targets",
           "layout": "image-bottom",
-          "html": "<p>Go back, tap Usual targets, then Add a line… and pick a unit, here 1J. Pick a feed or a role where its marks go, such as <strong>HQ</strong>.</p>",
+          "html": "<p>Go back, tap <strong>Usual targets</strong>, <strong>Add a line…</strong> and a unit, here <strong>1J</strong>. Pick where one tap sends its marks, a feed or a role such as <strong>HQ</strong>.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/451e233a11c1c29b.webp",
@@ -69,7 +69,7 @@
         {
           "title": "Feeds to follow",
           "layout": "image-bottom",
-          "html": "<p>Go back, tap <strong>Feeds to follow</strong>, then <strong>Add a line…</strong> and pick a unit. Pick a feed, or tap Another feed by name… and type it as Data Sync shows it.</p>",
+          "html": "<p>Go back, tap <strong>Feeds to follow</strong>, <strong>Add a line…</strong> and a unit. Pick a feed, or tap <strong>Another feed by name…</strong> and type it as Data Sync shows it.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/5fa4844103ed3e03.webp",
@@ -93,7 +93,7 @@
         {
           "title": "Plugin settings",
           "layout": "image-bottom",
-          "html": "<p>Plugins add their own settings here, such as <strong>Quotas and corridors</strong> from <strong>Drones</strong>. Pick <strong>Off</strong> for a unit without TOCs, and Drones then drops quotas, corridors and the TOC role.</p>",
+          "html": "<p>Plugins add their own settings here, such as <strong>Quotas and corridors</strong> from OpenDefence UAVOps. <strong>Off</strong> suits a unit without TOCs and hides quotas, corridors and the TOC role.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/83ab79e71cf1e21d.webp",

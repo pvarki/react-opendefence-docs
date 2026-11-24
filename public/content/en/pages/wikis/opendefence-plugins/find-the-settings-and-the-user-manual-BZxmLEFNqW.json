@@ -11,7 +11,7 @@
     "Find the settings and the user manual"
   ],
   "createdAt": "2026-11-23T12:41:56.623Z",
-  "updatedAt": "2026-11-23T20:42:59.441Z",
+  "updatedAt": "2026-11-24T13:57:18.096Z",
   "headings": [],
   "blocks": [
     {
@@ -69,7 +69,7 @@
         {
           "title": "Settings for this phone and the operation",
           "layout": "image-bottom",
-          "html": "<p>Tap a row under <strong>THIS PHONE</strong> to change it, as in OpenDefence Main's menu. <strong>OPERATION</strong> shows the operation's settings, such as <strong>Quotas and corridors</strong> from UAVOps, which only admins change in OpenDefence Main.</p>",
+          "html": "<p>Tap a row under <strong>THIS PHONE</strong> to change it. <strong>OPERATION</strong> shows settings your admins set for everyone, such as <strong>Quotas and corridors</strong>.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/66e78a05025c5022.webp",
@@ -85,6 +85,18 @@
           "images": [
             {
               "src": "/content/images/en/attachments/e6400c97cc5e7c4c.webp",
+              "width": 1336,
+              "height": 2660
+            }
+          ]
+        },
+        {
+          "title": "Open the user manual",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>User manual</strong> under <strong>HELP</strong> to open OpenDefence Main's manual. Where it is greyed, as here, your copy has none, but the copy from TAK.gov carries it.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/59b9256b4d0f6b15.webp",
               "width": 1336,
               "height": 2660
             }

@@ -11,7 +11,7 @@
     "Request drones on a mark or area"
   ],
   "createdAt": "2026-11-06T23:01:16.198Z",
-  "updatedAt": "2026-11-23T21:07:31.032Z",
+  "updatedAt": "2026-11-24T13:58:05.548Z",
   "headings": [],
   "blocks": [
     {
@@ -21,7 +21,7 @@
         {
           "title": "Who answers your request",
           "layout": "image-bottom",
-          "html": "<p><strong>Drones</strong> opens OpenDefence UAVOps, a separate plugin that this chapter uses to show how a request travels and how you follow it. You ask from OpenDefence Main, and those you ask answer in <strong>Drones</strong>.</p>",
+          "html": "<p><strong>Drones</strong> opens OpenDefence UAVOps, a separate plugin used here to show how a request travels. You ask from OpenDefence Main, and those you ask answer in <strong>Drones</strong>.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/8c26f4ddcf79c104.webp",
@@ -33,7 +33,7 @@
         {
           "title": "Tap the target button",
           "layout": "image-bottom",
-          "html": "<p>Tap the enemy mark, or the outline of an enemy or unknown area, then the target button, a crosshair in the ring of buttons around it. If ATAK first lists several items, tap the one you want.</p>",
+          "html": "<p>Tap the enemy mark, or an enemy or unknown area's outline, then the crosshair target button in the ring of buttons. If ATAK lists several items, tap the right one.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/59ba9efb350f60c1.webp",
@@ -45,7 +45,7 @@
         {
           "title": "Read the sheet",
           "layout": "image-bottom",
-          "html": "<p><strong>To</strong> first offers the unit HQ gave you a quota on, here <strong>2R/1J</strong>, and the line below says how many requests you have left on it today. <strong>Send</strong> turns on once each choice has a pick.</p>",
+          "html": "<p><strong>To</strong> first offers the team your daily quota is on, here <strong>2R/1J</strong>, and <strong>Your quota</strong> shows the requests left today. <strong>Send</strong> turns on once each choice has a pick.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/d989359bd731c828.webp",
@@ -57,7 +57,7 @@
         {
           "title": "Pick and send",
           "layout": "image-bottom",
-          "html": "<p>Pick <strong>Strike</strong> or <strong>Recon</strong>, the priority, and under <strong>To</strong> your quota's unit, <strong>Any</strong> to ask every team, or <strong>HQ</strong> when it does not matter who flies. Tap <strong>Send</strong>.</p>",
+          "html": "<p>Pick <strong>Strike</strong> or <strong>Recon</strong>, the priority, and under <strong>To</strong> your quota's team, <strong>Any</strong> to ask every team, or <strong>HQ</strong> when it does not matter who flies. Tap <strong>Send</strong>.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/ff890d64d77012b9.webp",
@@ -81,7 +81,7 @@
         {
           "title": "Read the answer",
           "layout": "image-bottom",
-          "html": "<p>Open <strong>Inbox</strong> again to see the answer on the same row, here <strong>Declined: weather</strong> with a blue dot. Tap the row to fly to the target.</p>",
+          "html": "<p>Open <strong>Inbox</strong> again to see the answer on the same row, here <strong>Declined: weather</strong> with a blue dot. Tap the row to show the target on the map.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/ba1697956dae7106.webp",
@@ -93,7 +93,7 @@
         {
           "title": "Ask about an area",
           "layout": "image-bottom",
-          "html": "<p>You can also start from <strong>Drones</strong>, here for an area you drew with <strong>Markers</strong> on <strong>Unknown</strong> or <strong>Enemy</strong>, then <strong>Area</strong>. Tap <strong>Drones</strong>, then <strong>Ask for a drone</strong> beside <strong>My requests</strong>.</p>",
+          "html": "<p>You can also ask from <strong>Drones</strong>, here for an enemy or unknown area drawn with <strong>Markers</strong>. Tap <strong>Drones</strong>, then <strong>Ask for a drone</strong>.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/2bccbc76af2f13dc.webp",
@@ -117,7 +117,7 @@
         {
           "title": "Recon comes picked",
           "layout": "image-bottom",
-          "html": "<p>For an area <strong>Recon</strong> comes already picked. Pick who to ask and tap <strong>Send</strong>.</p>",
+          "html": "<p>For an area, <strong>Recon</strong> comes already picked. Pick who to ask and tap <strong>Send</strong>.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/a26009033e95b1bb.webp",
