@@ -195,6 +195,12 @@ function PageStrip({
       const shown = embla.selectedScrollSnap();
       const to = positions[shown]?.page;
       if (!to || shown === urlIndex) return;
+      if (shown - urlIndex > 0 !== moved < 0) {
+        // The drag caught a page turn early and was too gentle to carry on:
+        // the carousel fell back to the page being left, against the drag.
+        embla.scrollTo(urlIndex);
+        return;
+      }
       swipedTo.current = shown;
       // A forward swipe into another book lands on its cover (see stepSplat).
       const intoBook =
