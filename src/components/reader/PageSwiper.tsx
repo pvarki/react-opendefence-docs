@@ -255,8 +255,10 @@ function PageStrip({
     const onKeyDown = (e: KeyboardEvent) => {
       if (e.key !== "ArrowLeft" && e.key !== "ArrowRight") return;
       if (e.metaKey || e.ctrlKey || e.altKey || e.shiftKey) return;
-      // An open menu, select or dialog owns the arrows.
+      // An open menu, select, dialog or sheet owns the arrows — also when
+      // the focus is not inside it (the lightbox leaves it on the page).
       if (e.defaultPrevented) return;
+      if (document.querySelector("[role=dialog][data-state=open]")) return;
       const target = e.target as Element | null;
       if (
         target?.closest(
