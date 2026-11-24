@@ -48,14 +48,14 @@ describe("onWheelSwipe", () => {
       wheel(el, 40);
     }
     expect(swipes).toEqual([1]);
-    wait(200);
+    wait(300);
     wheel(el, 80);
     expect(swipes).toEqual([1, 1]);
   });
 
   it("forgets travel that stopped short", () => {
     wheel(el, 40);
-    wait(200);
+    wait(300);
     wheel(el, 40);
     expect(swipes).toEqual([]);
   });
