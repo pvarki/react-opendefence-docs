@@ -80,9 +80,10 @@ async function resolveForLocale(
     (p) => p.collection === resolved.collection && p.slug === resolved.slug,
   );
   if (!page) return undefined;
-  // Warm the cache so the current pane renders without a skeleton flash;
-  // the swiper itself preloads the neighbors.
-  await loadPage(page.path).catch(() => {});
+  // Start the fetch without waiting for it: the URL and the pane change at
+  // once, and the pane fills in when its JSON arrives (it usually has — the
+  // swiper preloads neighbors, links preload on intent).
+  void loadPage(page.path).catch(() => {});
   return {
     kind: "page",
     manifest,
