@@ -120,9 +120,13 @@ export function useDeck(
   useEffect(() => {
     if (!isCurrent || !focusOnArrival) return;
     if (focusOnArrival.page === ownPage) {
-      sectionRef.current
-        ?.querySelector<HTMLElement>(`[data-step="${focusOnArrival.dir}"]`)
-        ?.focus({ preventScroll: true });
+      const button = sectionRef.current?.querySelector<HTMLButtonElement>(
+        `[data-step="${focusOnArrival.dir}"]`,
+      );
+      // At either end of the app that button is disabled: the deck itself.
+      (button && !button.disabled ? button : sectionRef.current)?.focus({
+        preventScroll: true,
+      });
     }
     focusOnArrival = undefined;
   }, [isCurrent, ownPage]);
