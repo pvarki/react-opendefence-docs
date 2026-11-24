@@ -16,8 +16,11 @@ let focusOnArrival: { page: string; dir: 1 | -1 } | undefined;
 
 /** The slide a deck opens on: the URL's `?slide=`, else the first. */
 function entryIndex(slide: SlideParam | undefined, count: number): number {
-  if (slide === undefined) return 0;
-  return slide === "last" ? count - 1 : Math.min(Math.max(slide, 1), count) - 1;
+  if (slide === "last") return count - 1;
+  // A hand-edited ?slide= reaches here as it was typed.
+  return typeof slide === "number" && Number.isInteger(slide)
+    ? Math.min(Math.max(slide, 1), count) - 1
+    : 0;
 }
 
 /**
