@@ -267,6 +267,16 @@ function PageStrip({
     () => new Map(manifest.collections.map((c) => [c.slug, c.label])),
     [manifest],
   );
+  // Every page of these books is a step guide (a slideset).
+  const guideBooks = useMemo(
+    () =>
+      new Set(
+        manifest.collections
+          .filter((c) => c.section === "deploy-app" || c.section === "guides")
+          .map((c) => c.slug),
+      ),
+    [manifest],
+  );
   const current = positions[urlIndex];
 
   return (
@@ -302,6 +312,7 @@ function PageStrip({
                     isCurrent={isCurrent}
                     slide={isCurrent ? slide : undefined}
                     onStep={step}
+                    likelyGuide={guideBooks.has(page.collection)}
                     // At a book's last page, name where the swipe continues.
                     nextBookLabel={
                       next &&

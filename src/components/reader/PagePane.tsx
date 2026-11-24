@@ -45,6 +45,8 @@ interface PagePaneProps {
   onStep: (from: PagePosition, dir: 1 | -1, cut: boolean) => void;
   /** Set on a book's last page: the book the swipe continues into. */
   nextBookLabel?: string;
+  /** The page's book holds step guides: how to lay out before the doc is in. */
+  likelyGuide?: boolean;
 }
 
 /**
@@ -58,6 +60,7 @@ export const PagePane = memo(function PagePane({
   slide,
   onStep,
   nextBookLabel,
+  likelyGuide = false,
 }: PagePaneProps) {
   const { page, next } = position;
   const doc = usePageDoc(page);
@@ -79,7 +82,7 @@ export const PagePane = memo(function PagePane({
   // A step guide: title, intro and slideset share the first screen, the
   // slideset taking whatever height is left of it.
   const deckAt = doc ? doc.blocks.findIndex((b) => b.type === "slideset") : -1;
-  const isGuide = deckAt !== -1;
+  const isGuide = doc ? deckAt !== -1 : likelyGuide;
 
   return (
     <PaneContext value={pane}>
@@ -95,8 +98,10 @@ export const PagePane = memo(function PagePane({
           <div
             className={cn(
               "pt-2",
+              // At least one screen: what cannot fit makes the column grow and
+              // the page scroll. Nothing but the slideset gives way.
               isGuide
-                ? "flex h-[100cqh] min-h-fit flex-col md:pt-3"
+                ? "flex min-h-[100cqh] flex-col *:shrink-0 md:pt-3"
                 : "md:pt-8",
             )}
           >
@@ -111,11 +116,16 @@ export const PagePane = memo(function PagePane({
               {page.title}
             </h1>
             {(page.underDevelopment || doc?.underDevelopment) && (
-              <UnderConstructionBanner compact={isGuide} />
+              <UnderConstructionBanner size={isGuide ? "line" : "full"} />
             )}
             {doc ? (
               <BlockRenderer
                 blocks={isGuide ? doc.blocks.slice(0, deckAt + 1) : doc.blocks}
+              />
+            ) : isGuide ? (
+              <Skeleton
+                className="mt-1 mb-2 min-h-80 flex-1 rounded-xl"
+                aria-busy="true"
               />
             ) : (
               <div className="space-y-3" aria-busy="true">
