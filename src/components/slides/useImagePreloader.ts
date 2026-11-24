@@ -9,16 +9,14 @@ const loaded = new Set<string>();
 const pinned = new Map<string, HTMLImageElement>();
 const listeners = new Set<() => void>();
 
-function notify() {
-  for (const l of listeners) l();
-}
-
 function preload(src: string) {
   if (pinned.has(src)) return;
   const img = new Image();
-  img.onload = () => {
+  // A failed image is done loading too: the slide shows its alt text
+  // instead of a spinner that never stops.
+  img.onload = img.onerror = () => {
     loaded.add(src);
-    notify();
+    for (const listener of listeners) listener();
   };
   img.src = src;
   pinned.set(src, img);
@@ -31,6 +29,23 @@ function subscribe(callback: () => void) {
   };
 }
 
+/** Warm every image of a deck; `srcs` must be referentially stable. */
+export function usePreloadImages(srcs: string[]) {
+  useEffect(() => {
+    for (const src of srcs) preload(src);
+  }, [srcs]);
+}
+
+/** One image's state: a load re-renders that image, not its whole deck. */
+export function useImageLoaded(src: string): boolean {
+  return useSyncExternalStore(
+    subscribe,
+    () => loaded.has(src),
+    () => false,
+  );
+}
+
+/** @deprecated Subscribes a whole deck; the decks move to the hooks above. */
 export function useImagePreloader(srcs: string[]) {
   useEffect(() => {
     for (const src of srcs) preload(src);
