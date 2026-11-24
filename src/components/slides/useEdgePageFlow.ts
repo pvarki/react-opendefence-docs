@@ -8,8 +8,12 @@ interface EdgeFlowOptions {
   onNextPage?: () => void;
 }
 
-/** Px the deck must be dragged past its edge before the page turns. */
-const OVERDRAG_THRESHOLD = 56;
+/**
+ * Px the deck must rest past its edge at release before the page turns. The
+ * rubber band damps the drag, so this is roughly 45 px of finger travel:
+ * a deliberate flick, not a twitch.
+ */
+const OVERDRAG_THRESHOLD = 32;
 
 /**
  * Lets a slideshow flow into the surrounding book: dragging forward past the
