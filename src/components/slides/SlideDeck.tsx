@@ -35,6 +35,7 @@ export function SlideDeck({ block, bindSlideParam = false }: SlideDeckProps) {
   const {
     sectionRef,
     viewportRef,
+    dotsRef,
     selected,
     isFirst,
     isLast,
@@ -91,6 +92,10 @@ export function SlideDeck({ block, bindSlideParam = false }: SlideDeckProps) {
   };
 
   const stepOf = t("slides.stepOf", { current: selected + 1, total: count });
+  const prevLabel =
+    isFirst && hasPrevPage ? t("reader.previousPage") : t("slides.prevStep");
+  const nextLabel =
+    isLast && hasNextPage ? t("reader.nextPage") : t("slides.nextStep");
 
   return (
     <section
@@ -102,7 +107,8 @@ export function SlideDeck({ block, bindSlideParam = false }: SlideDeckProps) {
       tabIndex={0}
       onKeyDown={onKeyDown}
       className={cn(
-        "mt-1 mb-2 flex h-[70dvh] min-h-[22rem] flex-[1_1_0px] flex-col rounded-xl border border-border bg-card outline-none focus-visible:ring-2 focus-visible:ring-ring",
+        // A container itself: the control row adapts to the deck's width.
+        "@container mt-1 mb-2 flex h-[70dvh] min-h-[min(22rem,100cqh)] flex-[1_1_0px] flex-col rounded-xl border border-border bg-card outline-none focus-visible:ring-2 focus-visible:ring-ring",
         // Widens into the pane's spare width; PagePane is the container.
         "md:mx-[calc(-1*clamp(0px,(100cqi_-_48rem)/2,10rem))]",
       )}
@@ -113,8 +119,13 @@ export function SlideDeck({ block, bindSlideParam = false }: SlideDeckProps) {
         </h3>
       )}
 
-      <div ref={viewportRef} className="min-h-0 flex-1 overflow-hidden">
-        <div className="flex h-full">
+      {/* The track fills the viewport by position: no percentage height has
+          to resolve through the flex columns above it. */}
+      <div
+        ref={viewportRef}
+        className="relative min-h-0 flex-1 overflow-hidden"
+      >
+        <div className="absolute inset-0 flex">
           {block.slides.map((slide, i) => (
             <div
               key={i}
@@ -134,25 +145,27 @@ export function SlideDeck({ block, bindSlideParam = false }: SlideDeckProps) {
         </div>
       </div>
 
-      <div className="flex shrink-0 items-center gap-3 border-t border-border px-3 py-2">
+      {/* Narrow decks (a small window, a large text size) drop the button
+          labels first, then the dots; the step count always fits. */}
+      <div className="flex shrink-0 items-center gap-2 border-t border-border px-3 py-2 @xl:gap-3">
         <Button
           variant="outline"
           size="sm"
           data-step="-1"
           onClick={goPrev}
           disabled={isFirst && !hasPrevPage}
+          aria-label={prevLabel}
         >
           <ChevronLeft />
-          {isFirst && hasPrevPage
-            ? t("reader.previousPage")
-            : t("slides.prevStep")}
+          <span className="hidden @xl:inline">{prevLabel}</span>
         </Button>
         <div className="flex min-w-0 flex-1 items-center justify-center gap-3">
           <p className="shrink-0 text-xs text-muted-foreground tabular-nums">
             {stepOf}
           </p>
           <div
-            className="flex min-w-0 items-center gap-1.5 overflow-hidden"
+            ref={dotsRef}
+            className="relative hidden min-w-0 items-center gap-1.5 overflow-hidden @md:flex"
             role="tablist"
             aria-label={stepOf}
           >
@@ -190,8 +203,9 @@ export function SlideDeck({ block, bindSlideParam = false }: SlideDeckProps) {
           data-step="1"
           onClick={goNext}
           disabled={isLast && !hasNextPage}
+          aria-label={nextLabel}
         >
-          {isLast && hasNextPage ? t("reader.nextPage") : t("slides.nextStep")}
+          <span className="hidden @xl:inline">{nextLabel}</span>
           <ChevronRight />
         </Button>
       </div>
