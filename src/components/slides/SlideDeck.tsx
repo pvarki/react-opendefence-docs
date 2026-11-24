@@ -76,6 +76,8 @@ export function SlideDeck({ block, bindSlideParam = false }: SlideDeckProps) {
   }, []);
 
   const onKeyDown = (e: React.KeyboardEvent) => {
+    // Keys from the lightbox bubble here through its portal: not the deck's.
+    if (!e.currentTarget.contains(e.target as Node)) return;
     // Space on a focused button is that button's own click.
     if (e.key === " " && e.target !== e.currentTarget) return;
     if (e.key === "ArrowLeft") {
