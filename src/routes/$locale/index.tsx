@@ -17,7 +17,11 @@ import { OrientationModal } from "@/components/shell/OrientationModal";
 import { markOrientationSeen, type TrackKey } from "@/lib/orientationFlows";
 import { PwaInstallPrompt } from "@/components/shell/PwaInstallPrompt";
 import { ShelfIndicator } from "@/components/shell/ShelfIndicator";
-import { UNDER_CONSTRUCTION_SECTIONS, type Section } from "@config/collections";
+import {
+  HIDDEN_SECTIONS,
+  UNDER_CONSTRUCTION_SECTIONS,
+  type Section,
+} from "@config/collections";
 import { SiteFooter } from "@/components/shell/SiteFooter";
 import { Button } from "@/components/ui/button";
 import { SectionLabel } from "@/components/ui/section-label";
@@ -207,6 +211,8 @@ function RotatingTagline() {
 /** Set at build time (e.g. repo variable LANDING_URL) — hidden when unset. */
 const LANDING_URL = import.meta.env.VITE_LANDING_URL;
 
+const DEV_DOCS_SHOWN = !HIDDEN_SECTIONS.includes("dev");
+
 // The contribute/integrate/operate doors — each opens a guided orientation flow.
 const CONTRIBUTE_DOORS: { track: TrackKey; labelKey: string }[] = [
   { track: "contribute", labelKey: "devShelf.contribute" },
@@ -299,30 +305,33 @@ function HomeAbout() {
         </div>
       </details>
 
-      {/* The three doors for people who want to do more than read. */}
-      <div className="mt-8">
-        <h2 className="text-base font-semibold text-foreground">
-          {t("footer.contributeHeadline")}
-        </h2>
-        <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-          {t("footer.contributeBody")}
-        </p>
-        <div className="mt-3 flex flex-wrap gap-2">
-          {CONTRIBUTE_DOORS.map(({ track, labelKey }) => (
-            <Button
-              key={track}
-              variant="outline"
-              size="sm"
-              onClick={() => {
-                markOrientationSeen();
-                setOrient(track);
-              }}
-            >
-              {t(labelKey)}
-            </Button>
-          ))}
+      {/* The three doors for people who want to do more than read. They lead
+          into the developer docs, so they are hidden along with them. */}
+      {DEV_DOCS_SHOWN && (
+        <div className="mt-8">
+          <h2 className="text-base font-semibold text-foreground">
+            {t("footer.contributeHeadline")}
+          </h2>
+          <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+            {t("footer.contributeBody")}
+          </p>
+          <div className="mt-3 flex flex-wrap gap-2">
+            {CONTRIBUTE_DOORS.map(({ track, labelKey }) => (
+              <Button
+                key={track}
+                variant="outline"
+                size="sm"
+                onClick={() => {
+                  markOrientationSeen();
+                  setOrient(track);
+                }}
+              >
+                {t(labelKey)}
+              </Button>
+            ))}
+          </div>
         </div>
-      </div>
+      )}
 
       <div className="mt-8">
         <h2 className="text-base font-semibold text-foreground">
@@ -333,13 +342,15 @@ function HomeAbout() {
         </p>
       </div>
 
-      <OrientationModal
-        open={orient !== null}
-        start={orient ?? "contribute"}
-        onOpenChange={(o) => {
-          if (!o) setOrient(null);
-        }}
-      />
+      {DEV_DOCS_SHOWN && (
+        <OrientationModal
+          open={orient !== null}
+          start={orient ?? "contribute"}
+          onOpenChange={(o) => {
+            if (!o) setOrient(null);
+          }}
+        />
+      )}
 
       <div className="mt-8">
         <PwaInstallPrompt />
