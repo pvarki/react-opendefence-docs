@@ -22,7 +22,11 @@ import {
 } from "@shared/content-schema";
 import type { BookContext } from "@/lib/bookContext";
 import i18n from "@/lib/i18n";
-import { loadManifest, loadPage } from "@/lib/content/loader";
+import {
+  loadManifest,
+  loadPage,
+  loadSyncedManifest,
+} from "@/lib/content/loader";
 import {
   readerBreadcrumb,
   readingOrder,
@@ -128,7 +132,9 @@ export const Route = createFileRoute("/$locale/$")({
     // A renamed or moved page: same Outline urlId, new slug. Redirect to its
     // current URL (same URL locale, slide kept) instead of a 404.
     for (const l of [context.locale, ...others]) {
-      const manifest = await loadManifest(l).catch(() => undefined);
+      // The synced manifest: a hidden page's old URL resolves too, and its
+      // current one then leads to the notice (above).
+      const manifest = await loadSyncedManifest(l).catch(() => undefined);
       const page = manifest && resolveByUrlId(manifest, splat);
       const target = page && `${page.collection}/${page.slug}`;
       // Already its URL yet unresolved (its book is missing): 404, not a loop.

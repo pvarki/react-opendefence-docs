@@ -91,15 +91,34 @@ export function applySectionStatus(manifest: LocaleManifest): LocaleManifest {
   };
 }
 
+const syncedManifests = new Map<Locale, Promise<LocaleManifest>>();
 const manifestCache = new Map<Locale, Promise<LocaleManifest>>();
+
+/**
+ * The manifest as synced, hidden books included. Only for telling where an
+ * outdated URL leads — everything a reader sees comes from loadManifest.
+ */
+export function loadSyncedManifest(locale: Locale): Promise<LocaleManifest> {
+  let cached = syncedManifests.get(locale);
+  if (!cached) {
+    cached = fetchJson(`/content/${locale}/manifest.json`)
+      .then((data) => LocaleManifestSchema.parse(data))
+      .catch((err: unknown) => {
+        syncedManifests.delete(locale); // don't cache failures
+        throw err;
+      });
+    syncedManifests.set(locale, cached);
+  }
+  return cached;
+}
 
 export function loadManifest(locale: Locale): Promise<LocaleManifest> {
   let cached = manifestCache.get(locale);
   if (!cached) {
-    cached = fetchJson(`/content/${locale}/manifest.json`)
-      .then((data) => applySectionStatus(LocaleManifestSchema.parse(data)))
+    cached = loadSyncedManifest(locale)
+      .then(applySectionStatus)
       .catch((err: unknown) => {
-        manifestCache.delete(locale); // don't cache failures
+        manifestCache.delete(locale);
         throw err;
       });
     manifestCache.set(locale, cached);
