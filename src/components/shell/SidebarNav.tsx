@@ -97,6 +97,7 @@ export function ShelfBackLink({
     <Link
       to={shelf.to}
       params={{ locale: props.locale }}
+      activeOptions={{ exact: true }}
       onClick={onNavigate}
       className={cn(
         "-ml-1 inline-flex items-center gap-0.5 rounded-md py-0.5 pr-1.5 text-xs text-muted-foreground transition-colors hover:text-foreground",
@@ -129,6 +130,7 @@ export function SidebarNav(props: SidebarProps) {
             <Link
               to="/$locale/$"
               params={{ locale: props.locale, _splat: props.collection }}
+              activeOptions={{ exact: true }}
               onClick={props.onNavigate}
               className="mt-1 block text-base leading-snug font-semibold text-foreground transition-colors hover:text-primary"
             >
@@ -147,7 +149,13 @@ export function SidebarNav(props: SidebarProps) {
 
 /** The tree itself, no aside chrome — desktop aside + mobile contents sheet. */
 export function SidebarBody(props: SidebarProps) {
-  return isDevSpine(props) ? <DevDocsNav {...props} /> : <BookNav {...props} />;
+  return isDevSpine(props) ? (
+    <DevDocsNav {...props} />
+  ) : (
+    // Keyed: another book starts empty, not with the previous book's tree
+    // (whose rows would link into the new book).
+    <BookNav key={props.collection} {...props} />
+  );
 }
 
 function BookNav({
@@ -197,6 +205,11 @@ function BookNav({
 const CHEVRON_GUTTER = "pl-7";
 
 const ACTIVE_ROW = "bg-primary/10 font-medium text-primary";
+
+/** Ref of the current page's row: keeps the reader's place in sight. */
+function reveal(row: HTMLElement | null) {
+  row?.scrollIntoView({ block: "nearest" });
+}
 
 function Disclosure({ open }: { open: boolean }) {
   return (
@@ -266,6 +279,7 @@ export function SidebarItems({
         ) : item.type === "doc" && item.slug ? (
           <li key={item.id}>
             <Link
+              ref={item.slug === currentSlug ? reveal : undefined}
               to="/$locale/$"
               params={{ locale, _splat: `${collection}/${item.slug}` }}
               onClick={onNavigate}
