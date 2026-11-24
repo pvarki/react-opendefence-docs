@@ -177,6 +177,20 @@ export const ALL_COLLECTIONS: CollectionConfig[] = [
   // dev books above). Its Outline collection is left intact.
 ];
 
+/**
+ * Sections whose books have not met the quality bar yet: the shelf, every
+ * book and every page of them carry the "Under construction" notice.
+ */
+export const UNDER_CONSTRUCTION_SECTIONS: readonly Section[] = ["wikis", "dev"];
+
+/**
+ * Sections kept off the site until they are ready: the shelf shows only the
+ * notice, every URL of their books leads back to it, and their pages are left
+ * out of navigation, the reading order and search. Their JSON still ships —
+ * this hides content, it does not make it secret.
+ */
+export const HIDDEN_SECTIONS: readonly Section[] = ["dev"];
+
 export function getCollectionBySlug(
   slug: string,
 ): CollectionConfig | undefined {
