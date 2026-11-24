@@ -1,3 +1,4 @@
+import { ALL_COLLECTIONS, HIDDEN_SECTIONS } from "@config/collections";
 import type {
   LocaleManifest,
   ManifestCollection,
@@ -60,4 +61,17 @@ export function parentShelf(
     default:
       return { to: "/$locale/guides", labelKey: "sidebar.allGuides" };
   }
+}
+
+/**
+ * The shelf a hidden book's URL leads to — the book itself, a page of it or
+ * its slug in a reference route — or undefined for a book that is shown.
+ */
+export function hiddenBookShelf(path: string): ParentShelf["to"] | undefined {
+  const book = ALL_COLLECTIONS.find(
+    (c) =>
+      HIDDEN_SECTIONS.includes(c.section) &&
+      (path === c.slug || path.startsWith(`${c.slug}/`)),
+  );
+  return book && parentShelf(book.section).to;
 }

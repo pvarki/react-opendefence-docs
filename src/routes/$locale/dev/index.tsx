@@ -2,6 +2,8 @@ import { Fragment, useEffect, useState } from "react";
 import { createFileRoute } from "@tanstack/react-router";
 import { useTranslation } from "react-i18next";
 import { Code2, Compass } from "lucide-react";
+import { HIDDEN_SECTIONS } from "@config/collections";
+import { UnderConstructionBanner } from "@/components/reader/UnderConstructionBanner";
 import { BookCard } from "@/components/shell/BookCard";
 import { OrientationModal } from "@/components/shell/OrientationModal";
 import { orientationSeen, markOrientationSeen } from "@/lib/orientationFlows";
@@ -21,8 +23,24 @@ export const Route = createFileRoute("/$locale/dev/")({
     const manifest = await loadManifest(context.locale);
     return { sections: devNavSections(manifest) };
   },
-  component: DevShelf,
+  component: HIDDEN_SECTIONS.includes("dev") ? DevShelfClosed : DevShelf,
 });
+
+/** The Develop shelf while its books are hidden: the notice, nothing else. */
+function DevShelfClosed() {
+  const { t } = useTranslation();
+  return (
+    <div className="flex h-full flex-col overflow-y-auto">
+      <ShelfHero title={t("nav.develop")} />
+      <div className={cn(PAGE_FRAME, "flex-1 pt-4 pb-8 md:pt-6 md:pb-10")}>
+        <div className="max-w-3xl">
+          <UnderConstructionBanner />
+        </div>
+      </div>
+      <SiteFooter />
+    </div>
+  );
+}
 
 function DevShelf() {
   const { t } = useTranslation();
