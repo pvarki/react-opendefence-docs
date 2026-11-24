@@ -10,7 +10,7 @@
     "Concepts"
   ],
   "createdAt": "2026-11-23T21:08:31.566Z",
-  "updatedAt": "2026-11-23T21:08:31.566Z",
+  "updatedAt": "2026-11-24T14:00:24.149Z",
   "headings": [],
   "blocks": [
     {
@@ -18,9 +18,45 @@
       "source": "canonical",
       "slides": [
         {
-          "title": "Voice server and sign-in",
+          "title": "How it works",
           "layout": "image-bottom",
-          "html": "<p>OpenDefence Voice talks through your unit's voice server, which it finds through the TAK server that ATAK is connected to. It signs in with ATAK's own certificate, the digital ID you got when you enrolled, so there is no password. It waits for ATAK with <strong>Connect ATAK to the TAK server first</strong> and <strong>NOT CONNECTED</strong>, as here, and then connects by itself. Your first press shows <strong>Allow microphone</strong>: tap it and allow what Android asks.</p>",
+          "html": "<p>OpenDefence Voice signs in to your unit's voice server with ATAK's certificate. You talk in the one net you join, and can listen to other nets too.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/a2039559a6ef879d.webp",
+              "width": 1336,
+              "height": 2274
+            }
+          ]
+        },
+        {
+          "title": "The voice server",
+          "layout": "image-bottom",
+          "html": "<p>Your unit's voice server sits beside its TAK server and holds the nets. OpenDefence Voice finds it through the TAK server ATAK is connected to.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/b40609cb40037543.webp",
+              "width": 1336,
+              "height": 1742
+            }
+          ]
+        },
+        {
+          "title": "No password",
+          "layout": "image-bottom",
+          "html": "<p>OpenDefence Voice signs in with ATAK's own certificate, the digital ID you got when you enrolled. There is no password and nothing for you to sign in to.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/2a56df89a591c6b6.webp",
+              "width": 1336,
+              "height": 2274
+            }
+          ]
+        },
+        {
+          "title": "Connects by itself",
+          "layout": "image-bottom",
+          "html": "<p>Until ATAK is connected to the TAK server, the pane reads <strong>Connect ATAK to the TAK server first</strong> and <strong>NOT CONNECTED</strong>, as here. Then OpenDefence Voice connects by itself.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/49b63071420470d6.webp",
@@ -30,33 +66,141 @@
           ]
         },
         {
-          "title": "Nets",
+          "title": "Allow the microphone",
           "layout": "image-bottom",
-          "html": "<p>A net is a voice channel, and the <strong>NET</strong> header opens <strong>Select net</strong>, the list shown here. <strong>Teams/Blue</strong> is the net Blue in the group <strong>Teams</strong>, beside <strong>Units</strong>, <strong>Missions</strong> and <strong>Roles</strong>. You <strong>Join</strong> one net at a time and talk only there, and tick <strong>Listen</strong> to hear other nets too. Without any setup, OpenDefence Voice also listens to <strong>Missions/Guard</strong>, the mission nets open to you and the nets of your ATAK team and role.</p>",
+          "html": "<p>Your first press to talk shows <strong>Allow microphone</strong>. Tap it and allow what Android asks.</p>",
           "images": [
             {
-              "src": "/content/images/en/attachments/a383c9b04f26bbb6.webp",
+              "src": "/content/images/en/attachments/1b5c04b568a2adcf.webp",
               "width": 1336,
-              "height": 2842
+              "height": 1742
+            }
+          ]
+        },
+        {
+          "title": "Nets",
+          "layout": "image-bottom",
+          "html": "<p>A net is a voice channel on the voice server. <strong>Teams/Blue</strong> is the net Blue in the group <strong>Teams</strong>, beside <strong>Units</strong>, <strong>Missions</strong> and <strong>Roles</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/aba884454e845f8d.webp",
+              "width": 1336,
+              "height": 1617
+            }
+          ]
+        },
+        {
+          "title": "Your net",
+          "layout": "image-bottom",
+          "html": "<p>You <strong>Join</strong> one net at a time, and only that net hears you. You pick it from the <strong>NET</strong> header on the pane.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/ff9c6d856ba32c04.webp",
+              "width": 1336,
+              "height": 2274
+            }
+          ]
+        },
+        {
+          "title": "Listening",
+          "layout": "image-bottom",
+          "html": "<p>Tick <strong>Listen</strong> to hear another net without joining it. The <strong>Listening</strong> line under the PTT names the nets you hear, and who talks in one.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/56801601e06d0bc9.webp",
+              "width": 1336,
+              "height": 2274
+            }
+          ]
+        },
+        {
+          "title": "Heard with no setup",
+          "layout": "image-bottom",
+          "html": "<p>With no setup, OpenDefence Voice listens to <strong>Missions/Guard</strong>, the mission nets open to you and the nets of your ATAK team and role.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/381f0ea575518784.webp",
+              "width": 1336,
+              "height": 951
             }
           ]
         },
         {
           "title": "Talking",
           "layout": "image-bottom",
-          "html": "<p>Push-to-talk (PTT) means you talk while you hold a button and stop when you let go. Besides the PTT on the screen, a Bluetooth PTT button, a headset's talk button or the volume-up key can be your PTT. VOX (voice activation) needs no press and sends any sound loud enough at your headset's microphone, under your name. Each is off until you set it up in <strong>Settings</strong>, but the Active Key on some Samsung XCover and Tab Active models works with no setup.</p>",
+          "html": "<p>You talk in your net with push-to-talk (PTT) or with voice activation (VOX).</p>",
           "images": [
             {
-              "src": "/content/images/en/attachments/16abd82c498ee8eb.webp",
+              "src": "/content/images/en/attachments/1d6ad87248eb2508.webp",
+              "width": 1336,
+              "height": 1462
+            }
+          ]
+        },
+        {
+          "title": "Push-to-talk",
+          "layout": "image-bottom",
+          "html": "<p>Push-to-talk (PTT) means you talk while you hold a button and stop when you let go. <strong>HOLD TO TX</strong> on the pane is your PTT and needs no setup.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/20a249bb79bf68fc.webp",
+              "width": 1336,
+              "height": 1462
+            }
+          ]
+        },
+        {
+          "title": "Other PTT buttons",
+          "layout": "image-bottom",
+          "html": "<p>A Bluetooth PTT button, a headset's talk button or volume up works once set up in <strong>Settings</strong>. The Active Key on Samsung XCover and Tab Active models needs no setup.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/bac647748a610c23.webp",
+              "width": 1336,
+              "height": 978
+            }
+          ]
+        },
+        {
+          "title": "VOX",
+          "layout": "image-bottom",
+          "html": "<p>VOX needs no press: it sends any sound loud enough at your headset's microphone, under your name. It is off until you turn it on in <strong>Settings</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/cdf8218cb1c2b197.webp",
+              "width": 1336,
+              "height": 1462
+            }
+          ]
+        },
+        {
+          "title": "Who is there",
+          "layout": "image-bottom",
+          "html": "<p>OpenDefence Voice shows who is in your net and who is talking. Here BRAVO2 joins your net, then talks.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/8aee8562a4a8c856.webp",
+              "width": 1336,
+              "height": 1983
+            }
+          ]
+        },
+        {
+          "title": "Who is in your net",
+          "layout": "image-bottom",
+          "html": "<p>The number beside the PTT is how many are in your net, here 2. Tap it for their names.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/f26273e1a7bad0a4.webp",
               "width": 1336,
               "height": 2842
             }
           ]
         },
         {
-          "title": "Who is there and who talks",
+          "title": "Who is talking",
           "layout": "image-bottom",
-          "html": "<p>The number beside the PTT is how many are in your net, and a tap on it lists their names. While someone in your net talks, their name shows in blue under <strong>NET</strong>, as BRAVO2 does here. The <strong>Listening</strong> line below the PTT lists the other nets you hear, with the name of whoever talks in one. Others see you by the name you were enrolled with, which can differ from your callsign in ATAK.</p>",
+          "html": "<p>While someone in your net talks, their name shows in blue under <strong>NET</strong>, as BRAVO2 does here.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/d6006dcb95614acf.webp",
@@ -66,14 +210,50 @@
           ]
         },
         {
+          "title": "Your name in the net",
+          "layout": "image-bottom",
+          "html": "<p>Others see you by the name you were enrolled with, from your certificate. It can differ from your callsign in ATAK.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/a73d2eb33383be53.webp",
+              "width": 1336,
+              "height": 1622
+            }
+          ]
+        },
+        {
           "title": "The status line",
           "layout": "image-bottom",
-          "html": "<p>The line under the pane's title says how OpenDefence Voice is connected, and its dot says it at a glance. Green with <strong>Connected</strong> means it is up, amber means it is connecting or trying again by itself, and red means it needs you to act. Grey means it is off or not connected. <strong>User manual</strong>, under <strong>HELP</strong> in ATAK's <strong>OD Voice Preferences</strong>, lists every message and what to do.</p>",
+          "html": "<p>The line under <strong>OD Voice</strong> says how OpenDefence Voice is connected, here <strong>Connected</strong> with a green dot.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/634c649624278edc.webp",
               "width": 1336,
               "height": 2842
+            }
+          ]
+        },
+        {
+          "title": "What the dot means",
+          "layout": "image-bottom",
+          "html": "<p>Green means <strong>Connected</strong>, amber that it is connecting or retrying by itself. Red means you must act, grey that it is off or not connected.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/1fcedfd94a756fc4.webp",
+              "width": 1336,
+              "height": 1392
+            }
+          ]
+        },
+        {
+          "title": "The user manual",
+          "layout": "image-bottom",
+          "html": "<p><strong>User manual</strong>, under <strong>HELP</strong> in ATAK's <strong>OD Voice Preferences</strong>, lists every message and what to do.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/ca8b8aa18be1a8ae.webp",
+              "width": 1336,
+              "height": 2720
             }
           ]
         }
