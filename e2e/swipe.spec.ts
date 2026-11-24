@@ -81,6 +81,51 @@ async function touchSwipe(page: Page, direction: "left" | "right") {
   );
 }
 
+/**
+ * A real finger, through CDP touch events. The browser may claim these for
+ * panning and cancel the pointer — synthetic PointerEvents never go through
+ * that, so they cannot tell whether a swipe survives on a device.
+ */
+async function fingerSwipe(
+  page: Page,
+  from: { x: number; y: number },
+  to: { x: number; y: number },
+) {
+  const cdp = await page.context().newCDPSession(page);
+  const steps = 8;
+  let timestamp = Date.now() / 1000;
+  await cdp.send("Input.dispatchTouchEvent", {
+    type: "touchStart",
+    touchPoints: [from],
+    timestamp,
+  });
+  for (let i = 1; i <= steps; i++) {
+    timestamp += 0.015;
+    await cdp.send("Input.dispatchTouchEvent", {
+      type: "touchMove",
+      touchPoints: [
+        {
+          x: from.x + ((to.x - from.x) * i) / steps,
+          y: from.y + ((to.y - from.y) * i) / steps,
+        },
+      ],
+      timestamp,
+    });
+  }
+  await cdp.send("Input.dispatchTouchEvent", {
+    type: "touchEnd",
+    touchPoints: [],
+    timestamp: timestamp + 0.005,
+  });
+}
+
+/** A two-finger trackpad flick and the inertia the OS adds after it. */
+async function trackpadSwipe(page: Page) {
+  for (const deltaX of [20, 35, 40, 35, 20, ...Array<number>(30).fill(25)]) {
+    await page.mouse.wheel(deltaX, 0);
+  }
+}
+
 test.describe("book swipe navigation", () => {
   test("swipe left turns to the next page and pushes history", async ({
     page,
@@ -124,6 +169,33 @@ test.describe("book swipe navigation", () => {
     await swipe(page, "right");
     await page.waitForTimeout(500);
     await expect(page).toHaveURL(INTRO);
+  });
+
+  test("a trackpad swipe turns one page, inertia and all", async ({
+    page,
+  }, testInfo) => {
+    test.skip(testInfo.project.name !== "desktop", "trackpads are desktop");
+    await open(page, FIRST);
+    const title = await currentPane(page).locator("h1").boundingBox();
+    if (!title) throw new Error("no title");
+    await page.mouse.move(title.x + 100, title.y + title.height / 2);
+    await trackpadSwipe(page);
+    await expect(page).toHaveURL(SECOND);
+    await page.waitForTimeout(1500);
+    await expect(page).toHaveURL(SECOND);
+  });
+
+  test("a trackpad swipe over the slideshow steps a slide, not the page", async ({
+    page,
+  }, testInfo) => {
+    test.skip(testInfo.project.name !== "desktop", "trackpads are desktop");
+    await open(page, FIRST);
+    const deck = page.locator("[data-current] [data-swipe-scope]").first();
+    await deck.hover();
+    await trackpadSwipe(page);
+    await expect(page).toHaveURL(`${FIRST}?slide=2`);
+    await page.waitForTimeout(1500);
+    await expect(page).toHaveURL(`${FIRST}?slide=2`);
   });
 
   test("quick arrow presses turn exactly that many pages", async ({ page }) => {
@@ -320,6 +392,20 @@ test.describe("bookshelf-level swipe (landing pages)", () => {
 
     await touchSwipe(page, "left");
     await expect(page).toHaveURL("/en/dev");
+  });
+
+  test("a real finger swipe turns between landing pages", async ({
+    page,
+  }, testInfo) => {
+    test.skip(testInfo.project.name !== "mobile", "needs a touch screen");
+    await openShelf(page, "/en");
+    await fingerSwipe(page, { x: 330, y: 300 }, { x: 80, y: 305 });
+    await expect(page).toHaveURL("/en/deploy-app");
+    await settle(page);
+    // A vertical drag is a scroll, not a turn.
+    await fingerSwipe(page, { x: 200, y: 500 }, { x: 205, y: 250 });
+    await page.waitForTimeout(500);
+    await expect(page).toHaveURL("/en/deploy-app");
   });
 
   test("swipe right walks back toward Home", async ({ page }) => {
