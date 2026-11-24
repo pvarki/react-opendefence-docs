@@ -832,6 +832,32 @@ test.describe("slideshow flows into the book", () => {
     await expect(deck.locator('[data-step="-1"]')).toBeInViewport({ ratio: 1 });
   });
 
+  test("a malformed ?slide opens the first slide", async ({ page }) => {
+    await open(page, `${FIRST}?slide=abc`);
+    const deck = page.locator("[data-current] [data-swipe-scope]").first();
+    await expect(deck.getByText(/\b1\s*(of|\/)\s*\d+/).first()).toBeVisible();
+    await deck.locator('[data-step="1"]').click();
+    await expect(page).toHaveURL(`${FIRST}?slide=2`);
+  });
+
+  test("arrow keys in the image lightbox do not turn the page", async ({
+    page,
+  }, testInfo) => {
+    test.skip(testInfo.project.name !== "desktop", "keyboard");
+    // The last slide: the deck's own ArrowRight would walk on to the next page.
+    await open(page, `${FIRST}?slide=last`);
+    const deck = page.locator("[data-current] [data-swipe-scope]").first();
+    await expect(deck.getByText(/(\d+) of \1$/)).toBeVisible();
+    const opened = new URL(page.url()).pathname;
+    await deck.locator("[aria-roledescription=slide]:not([inert]) img").click();
+    await expect(page.getByRole("dialog")).toBeVisible();
+    await page.keyboard.press("ArrowRight");
+    await page.keyboard.press("ArrowLeft");
+    await page.waitForTimeout(500);
+    expect(new URL(page.url()).pathname).toBe(opened);
+    await expect(page.getByRole("dialog")).toBeVisible();
+  });
+
   test("a narrow deck keeps its controls inside and apart", async ({
     page,
   }, testInfo) => {
