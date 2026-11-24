@@ -1,7 +1,7 @@
 /** Sideways travel that makes a swipe. */
 const SWIPE_PX = 60;
 /** A wheel stream that pauses this long is over, inertia included. */
-const IDLE_MS = 160;
+const IDLE_MS = 200;
 
 /** Something between the pointer and `root` that scrolls sideways itself. */
 function scrollsSideways(target: EventTarget | null, root: HTMLElement) {
