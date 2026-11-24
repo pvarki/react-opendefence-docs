@@ -45,9 +45,18 @@ function CodeBlock({ html }: { html: string }) {
   );
 }
 
-export function BlockRenderer({ blocks }: { blocks: Block[] }) {
+export function BlockRenderer({
+  blocks,
+  bindSlideParam = true,
+}: {
+  blocks: Block[];
+  /** False when these blocks follow the page's first slideset. */
+  bindSlideParam?: boolean;
+}) {
   const { t } = useTranslation();
-  const firstSlideset = blocks.findIndex((b) => b.type === "slideset");
+  const firstSlideset = bindSlideParam
+    ? blocks.findIndex((b) => b.type === "slideset")
+    : -1;
 
   return (
     <>

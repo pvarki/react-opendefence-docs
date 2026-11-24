@@ -2,6 +2,7 @@ import { memo, useEffect, useMemo, useState } from "react";
 import type { ManifestPage, PageDoc } from "@shared/content-schema";
 import type { PagePosition } from "@/lib/content/neighbors";
 import { loadPage, peekPage } from "@/lib/content/loader";
+import { cn } from "@/lib/utils";
 import { BlockRenderer } from "@/components/blocks/BlockRenderer";
 import { UnderConstructionBanner } from "@/components/reader/UnderConstructionBanner";
 import { PrevNextBar } from "@/components/reader/PrevNextBar";
@@ -75,30 +76,61 @@ export const PagePane = memo(function PagePane({
     [locale, position, isCurrent, slide, onStep],
   );
 
+  // A step guide: title, intro and slideset share the first screen, the
+  // slideset taking whatever height is left of it.
+  const deckAt = doc ? doc.blocks.findIndex((b) => b.type === "slideset") : -1;
+  const isGuide = deckAt !== -1;
+
   return (
     <PaneContext value={pane}>
       <div
         ref={scrollRef}
         data-page-scroll
         tabIndex={-1}
-        className="@container h-full overflow-y-auto overscroll-y-contain px-4 outline-none md:px-8"
+        // A size container: 100cqh is one screen of this pane, and slidesets
+        // widen into its spare width with cqi.
+        className="h-full overflow-y-auto overscroll-y-contain px-4 outline-none [container-type:size] md:px-8"
       >
-        <article className="mx-auto max-w-3xl py-2 md:py-8">
-          <h1 className="mb-2 text-xl font-bold md:mb-6 md:text-3xl">
-            {page.title}
-          </h1>
-          {(page.underDevelopment || doc?.underDevelopment) && (
-            <UnderConstructionBanner />
-          )}
-          {doc ? (
-            <BlockRenderer blocks={doc.blocks} />
-          ) : (
-            <div className="space-y-3" aria-busy="true">
-              <Skeleton className="h-4 w-full" />
-              <Skeleton className="h-4 w-5/6" />
-              <Skeleton className="h-48 w-full" />
-              <Skeleton className="h-4 w-2/3" />
-            </div>
+        <article className="mx-auto max-w-3xl pb-2 md:pb-8">
+          <div
+            className={cn(
+              "pt-2",
+              isGuide
+                ? "flex h-[100cqh] min-h-fit flex-col md:pt-3"
+                : "md:pt-8",
+            )}
+          >
+            <h1
+              className={cn(
+                "font-bold",
+                isGuide
+                  ? "mb-1.5 text-lg leading-snug md:mb-2 md:text-2xl"
+                  : "mb-2 text-xl md:mb-6 md:text-3xl",
+              )}
+            >
+              {page.title}
+            </h1>
+            {(page.underDevelopment || doc?.underDevelopment) && (
+              <UnderConstructionBanner compact={isGuide} />
+            )}
+            {doc ? (
+              <BlockRenderer
+                blocks={isGuide ? doc.blocks.slice(0, deckAt + 1) : doc.blocks}
+              />
+            ) : (
+              <div className="space-y-3" aria-busy="true">
+                <Skeleton className="h-4 w-full" />
+                <Skeleton className="h-4 w-5/6" />
+                <Skeleton className="h-48 w-full" />
+                <Skeleton className="h-4 w-2/3" />
+              </div>
+            )}
+          </div>
+          {doc && isGuide && (
+            <BlockRenderer
+              blocks={doc.blocks.slice(deckAt + 1)}
+              bindSlideParam={false}
+            />
           )}
           <PrevNextBar locale={locale} position={position} />
           {next && nextBookLabel && (
