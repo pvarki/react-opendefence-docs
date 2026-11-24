@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "locale": "en",
-  "generatedAt": "2026-11-23T21:10:37.627Z",
+  "generatedAt": "2026-11-24T11:33:19.899Z",
   "collections": [
     {
       "slug": "deploy-app",
@@ -4185,7 +4185,7 @@
         "Concepts"
       ],
       "path": "/content/en/pages/wikis/opendefence-plugins/concepts-faJbfGEVjn.json",
-      "updatedAt": "2026-11-23T21:07:52.697Z",
+      "updatedAt": "2026-11-24T11:32:07.677Z",
       "order": 30,
       "chapterId": "opendefence-uavops-ifEkgFe8Jk",
       "chapterLabel": "OpenDefence UAVOps"

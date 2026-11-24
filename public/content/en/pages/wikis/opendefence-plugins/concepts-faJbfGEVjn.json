@@ -10,7 +10,7 @@
     "Concepts"
   ],
   "createdAt": "2026-11-23T21:07:52.697Z",
-  "updatedAt": "2026-11-23T21:07:52.697Z",
+  "updatedAt": "2026-11-24T11:32:07.677Z",
   "headings": [],
   "blocks": [
     {
@@ -20,7 +20,7 @@
         {
           "title": "Roles",
           "layout": "image-bottom",
-          "html": "<p>Each phone has one role, picked on <strong>Your role</strong> the first time <strong>Drones</strong> opens, and <strong>Drones</strong> then shows only that role's pages. The <strong>FOO</strong>, the forward observer officer, asks for drones. The <strong>HQ</strong> hands requests to the teams and sets corridors and quotas, and a <strong>TOC</strong>, a platoon's tactical operations centre, hands them to its own teams. In a <strong>Drone team</strong> the navigator plans, runs and reports the flights, and the <strong>Pilot</strong> flies by bearing and distance on the team's second phone.</p>",
+          "html": "<p>Each phone has one role, picked on <strong>Your role</strong> the first time <strong>Drones</strong> opens. From then on <strong>Drones</strong> shows only that role's pages.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/2144284fcdd5d5d6.webp",
@@ -30,9 +30,69 @@
           ]
         },
         {
+          "title": "Forward observer officer (FOO)",
+          "layout": "image-bottom",
+          "html": "<p>The <strong>FOO</strong> asks for drones and follows each mission. <strong>My requests</strong> shows where each request stands, such as <strong>Waiting for the HQ</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/8832439dec5842e2.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "HQ",
+          "layout": "image-bottom",
+          "html": "<p>The <strong>HQ</strong> gives waiting requests to drone teams with <strong>Assign</strong>. It draws corridors, the areas where teams may fly, and alone gives quotas, a set number of requests a day.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/1ff224b202f57aae.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "TOC",
+          "layout": "image-bottom",
+          "html": "<p>A <strong>TOC</strong>, a platoon's tactical operations centre, works like the HQ for its own teams. It gives them requests with <strong>Assign</strong> and draws their corridors, but gives no quotas.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/ece92a50f4b0315c.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Drone team",
+          "layout": "image-bottom",
+          "html": "<p>The team's navigator, or crew observer, takes the <strong>Drone team</strong> role. They keep the team's drones, plan each mission, run it and report how it went.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/6fe5a685a22ebc44.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Pilot",
+          "layout": "image-bottom",
+          "html": "<p>The <strong>Pilot</strong> role is for the drone team's second phone. Its one page gives the bearing and distance from drone to target, the planned height and the flight time left.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/917b6992187d84ff.webp",
+              "width": 1336,
+              "height": 2660
+            }
+          ]
+        },
+        {
           "title": "Requests",
           "layout": "image-bottom",
-          "html": "<p>A request asks for a <strong>Strike</strong> or a <strong>Recon</strong> on an enemy mark or a drawn area, with a <strong>Priority</strong> and, under <strong>To</strong>, whom to ask. The FOO sends it, and it waits for the HQ, a TOC or a drone team on their <strong>Requests</strong> page and in OpenDefence Main's <strong>Inbox</strong>. The asker follows each step under <strong>Sent</strong> in the <strong>Inbox</strong>. A request that no team takes lapses after two hours.</p>",
+          "html": "<p>A request asks for a <strong>Strike</strong> or a <strong>Recon</strong> on an enemy mark or area. <strong>To</strong> says who should answer, and a request no team takes lapses after two hours.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/0d9c175e1d0ba025.webp",
@@ -44,7 +104,7 @@
         {
           "title": "Corridors",
           "layout": "image-bottom",
-          "html": "<p>A corridor is the area where a team may fly, for set hours. It shows as a shaded area on every phone that follows the drone feed, the Data Sync feed that carries missions, corridors and quotas between phones. The HQ draws corridors, and a TOC draws them for its own unit and the units under it. A plan uses the corridor that holds the target, or goes ahead with a note when none does, and the pilot sees how far the drone is from the corridor's edge.</p>",
+          "html": "<p>A corridor is the area where a team may fly, for set hours. It shows shaded on the map, and a plan warns when its route leaves it.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/371ea41d9f1c3978.webp",
@@ -56,7 +116,7 @@
         {
           "title": "Quotas",
           "layout": "image-bottom",
-          "html": "<p>A quota gives a forward observer, or a whole unit, a set number of requests a day to one team. Only the HQ gives quotas, and the team needs a corridor first. On the Request sheet, that team then comes first under <strong>To</strong>, with a line saying how many requests are left today.</p>",
+          "html": "<p>A quota gives a forward observer, or a whole unit, a number of requests a day to one team. The Request sheet then lists that team first under <strong>To</strong>.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/813b0bd0e0f299ef.webp",
@@ -68,7 +128,7 @@
         {
           "title": "Missions and plans",
           "layout": "image-bottom",
-          "html": "<p>A mission is one drone flight on a request, named like <strong>Strike 1</strong> or <strong>Recon 4</strong>. The team's plan proposes the drone, the time window and the route, and checks the drone's <strong>Range</strong> and, with <strong>Weather lookups</strong> on, the <strong>Weather</strong> in the forecast of the Finnish Meteorological Institute (FMI). Problems such as <strong>No go</strong> weather are listed before sending, but the team decides. <strong>Missions</strong> then follows the mission from take-off to the team's report.</p>",
+          "html": "<p>A mission is one drone flight on a request, such as <strong>Strike 1</strong>. Its plan flags problems with <strong>Range</strong>, and with <strong>Weather</strong> when <strong>Weather lookups</strong> is on, but the team decides.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/2be974c05b5787e5.webp",
@@ -80,7 +140,7 @@
         {
           "title": "Drone types",
           "layout": "image-bottom",
-          "html": "<p>A drone team lists the drones it has as types, each with its frame, payload, link and limits such as range and flight time, and a count. Plans use these types and their limits, and the HQ and the TOC see them with the team's status. <strong>Attack</strong>, <strong>Bomber</strong> and <strong>Multi-role</strong> drones are armed and can fly strikes. A drone used or lost comes off the count by itself.</p>",
+          "html": "<p>A drone team lists its drones by type, with range, flight time and how many it has. Plans use these limits, and the HQ and TOC see them.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/9539d72cfab669b9.webp",
@@ -92,7 +152,7 @@
         {
           "title": "What everyone sees",
           "layout": "image-bottom",
-          "html": "<p>Every phone on the drone feeds shows the corridors, each mission's route and the sortie circle around its target. The drone shows from its own track, the position it sends, or as a marker its team moves by hand, and the route's name says <strong>Executing</strong> while it flies. What the team marks and sends arrives as an enemy mark, and <strong>Watch</strong> on a flying mission opens its video. Phones without OpenDefence UAVOps see the map items too.</p>",
+          "html": "<p>Phones on the drone feeds show corridors, routes, drones and the circle around each target, even without OpenDefence UAVOps. In OpenDefence UAVOps, <strong>Watch</strong> on a flying mission opens its video.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/2ee5092a068d4bc8.webp",
@@ -104,7 +164,7 @@
         {
           "title": "A plugin on OpenDefence Main",
           "layout": "image-bottom",
-          "html": "<p>OpenDefence UAVOps is a separate plugin that works through OpenDefence Main. Its units come from the ORBAT, the order of battle an admin sets up in OpenDefence Main, and requests are made on OpenDefence Main's Request sheet. Its rows in the <strong>Inbox</strong> show what waits for you, here under <strong>For you</strong>, and under <strong>Sent</strong> how your own requests went. An admin can switch <strong>Quotas and corridors</strong> off in OpenDefence Main for a unit that runs no TOCs, which turns off quotas, corridors and the TOC role.</p>",
+          "html": "<p>OpenDefence UAVOps is a separate plugin that works through OpenDefence Main's Request sheet and <strong>Inbox</strong>. When an admin sets <strong>Quotas and corridors</strong> to <strong>Off</strong> there, requests go straight to the teams.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/5e082b63d0b0f6fc.webp",
