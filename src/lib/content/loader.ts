@@ -80,6 +80,7 @@ export function loadManifest(locale: Locale): Promise<LocaleManifest> {
 /** Small LRU for page docs — adjacent-page preloading lives on top of this. */
 const PAGE_CACHE_MAX = 30;
 const pageCache = new Map<string, Promise<PageDoc>>();
+const loadedPages = new Map<string, PageDoc>();
 
 export function loadPage(path: string): Promise<PageDoc> {
   let cached = pageCache.get(path);
@@ -90,7 +91,11 @@ export function loadPage(path: string): Promise<PageDoc> {
     return cached;
   }
   cached = fetchJson(path)
-    .then((data) => rebaseAssets(PageDocSchema.parse(data)))
+    .then((data) => {
+      const doc = rebaseAssets(PageDocSchema.parse(data));
+      if (pageCache.has(path)) loadedPages.set(path, doc);
+      return doc;
+    })
     .catch((err: unknown) => {
       pageCache.delete(path);
       throw err;
@@ -98,9 +103,17 @@ export function loadPage(path: string): Promise<PageDoc> {
   pageCache.set(path, cached);
   if (pageCache.size > PAGE_CACHE_MAX) {
     const oldest = pageCache.keys().next().value;
-    if (oldest) pageCache.delete(oldest);
+    if (oldest) {
+      pageCache.delete(oldest);
+      loadedPages.delete(oldest);
+    }
   }
   return cached;
+}
+
+/** A page doc that has already loaded, without waiting a tick for its promise. */
+export function peekPage(path: string): PageDoc | undefined {
+  return loadedPages.get(path);
 }
 
 const sidebarCache = new Map<string, Promise<SidebarConfig>>();
