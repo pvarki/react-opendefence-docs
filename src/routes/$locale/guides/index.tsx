@@ -71,6 +71,7 @@ function GuidesShelf() {
                   title={book.label}
                   description={bookDescription(t, book)}
                   image={CARD_IMAGES[book.slug]}
+                  underConstruction={book.underDevelopment}
                 />
               ))}
             </div>

@@ -1,5 +1,6 @@
 import { Link } from "@tanstack/react-router";
-import type { LucideIcon } from "lucide-react";
+import { useTranslation } from "react-i18next";
+import { Construction, type LucideIcon } from "lucide-react";
 import type { CardImage } from "@/lib/cardImages";
 import { cn } from "@/lib/utils";
 import { withBase } from "@/lib/base";
@@ -18,6 +19,8 @@ interface BookCardProps {
   image?: CardImage;
   /** "tall" for sparse pages (home); default stays shelf-compact. */
   size?: "default" | "tall";
+  /** Marks a book or shelf that carries the "Under construction" notice. */
+  underConstruction?: boolean;
 }
 
 /**
@@ -34,7 +37,9 @@ export function BookCard({
   description,
   image,
   size = "default",
+  underConstruction = false,
 }: BookCardProps) {
+  const { t } = useTranslation();
   const wrapperClass = "group block h-full focus-visible:outline-none";
   const inner = (
     <div
@@ -45,7 +50,15 @@ export function BookCard({
     >
       <Icon className="size-5 shrink-0 text-primary" />
       <div className="min-w-0 flex-1">
-        <p className="truncate text-sm font-semibold">{title}</p>
+        <p className="flex items-center gap-1.5 text-sm font-semibold">
+          <span className="truncate">{title}</span>
+          {underConstruction && (
+            <span className="flex shrink-0 items-center gap-1 rounded-sm bg-yellow-400 px-1.5 py-0.5 text-[10px] leading-none font-bold tracking-wide text-black uppercase">
+              <Construction className="size-3" aria-hidden />
+              {t("reader.underConstruction.title")}
+            </span>
+          )}
+        </p>
         {description && (
           <p className="mt-0.5 line-clamp-2 text-xs leading-snug text-muted-foreground">
             {description}
