@@ -110,7 +110,7 @@ export function SlideDeck({ block, bindSlideParam = false }: SlideDeckProps) {
       onKeyDown={onKeyDown}
       className={cn(
         // A container itself: the control row adapts to the deck's width.
-        "@container mt-1 mb-2 flex h-[70dvh] min-h-[min(22rem,100cqh)] flex-[1_1_0px] flex-col rounded-xl border border-border bg-card outline-none focus-visible:ring-2 focus-visible:ring-ring",
+        "@container mt-1 mb-2 flex h-[70dvh] min-h-[min(22rem,60cqh)] flex-[1_1_0px] flex-col rounded-xl border border-border bg-card outline-none focus-visible:ring-2 focus-visible:ring-ring",
         // Widens into the pane's spare width; PagePane is the container.
         "md:mx-[calc(-1*clamp(0px,(100cqi_-_48rem)/2,10rem))]",
       )}
