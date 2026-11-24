@@ -48,8 +48,8 @@ interface PagePaneProps {
   slide?: SlideParam;
   /** A slideset of this page walks on into the neighbouring page. */
   onStep: (from: PagePosition, dir: 1 | -1, cut: boolean) => void;
-  /** Set on a book's last page: the book the swipe continues into. */
-  nextBookLabel?: string;
+  /** Set on a book's last page: the book to read next. */
+  nextBook?: { label: string; href: string };
   /** The page's book holds step guides: how to lay out before the doc is in. */
   likelyGuide?: boolean;
 }
@@ -64,10 +64,10 @@ export const PagePane = memo(function PagePane({
   isCurrent,
   slide,
   onStep,
-  nextBookLabel,
+  nextBook,
   likelyGuide = false,
 }: PagePaneProps) {
-  const { page, next } = position;
+  const { page } = position;
   const doc = usePageDoc(page, isCurrent);
   const scrollRef = useScrollMemory(
     `${locale}:${page.collection}:${page.slug}`,
@@ -148,14 +148,7 @@ export const PagePane = memo(function PagePane({
             />
           )}
           <PrevNextBar locale={locale} position={position} />
-          {next && nextBookLabel && (
-            <EndOfBookCard
-              nextBook={{
-                label: nextBookLabel,
-                href: `/${locale}/${next.collection}`,
-              }}
-            />
-          )}
+          {nextBook && <EndOfBookCard nextBook={nextBook} />}
           <PageFooter
             collection={page.collection}
             title={page.title}

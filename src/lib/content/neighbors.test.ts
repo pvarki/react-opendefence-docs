@@ -1,13 +1,12 @@
 import { describe, expect, it } from "vitest";
 import type { LocaleManifest } from "@shared/content-schema";
 import {
-  globalPositions,
+  bookPositions,
+  nextBook,
   readerBreadcrumb,
   readingOrder,
   resolveByUrlId,
-  resolvePosition,
   resolveSplat,
-  stepSplat,
 } from "./neighbors";
 
 const page = (slug: string, collection: string, order: number) => ({
@@ -59,72 +58,53 @@ describe("readingOrder", () => {
   });
 });
 
-describe("resolvePosition", () => {
-  it("returns neighbors in reading order", () => {
-    const pos = resolvePosition(manifest, "deploy-app", "c-third");
-    expect(pos?.prev?.slug).toBe("b-second");
-    expect(pos?.next?.slug).toBe("d-fourth");
-    expect(pos?.index).toBe(2);
-    expect(pos?.total).toBe(4);
-  });
+describe("bookPositions", () => {
+  const positions = bookPositions(manifest, "deploy-app");
 
-  it("has no prev at book start and no next at book end", () => {
-    expect(
-      resolvePosition(manifest, "deploy-app", "a-first")?.prev,
-    ).toBeUndefined();
-    expect(
-      resolvePosition(manifest, "deploy-app", "d-fourth")?.next,
-    ).toBeUndefined();
-  });
-
-  it("returns undefined for unknown slugs", () => {
-    expect(resolvePosition(manifest, "deploy-app", "nope")).toBeUndefined();
-  });
-});
-
-describe("globalPositions", () => {
-  const positions = globalPositions(manifest);
-
-  it("chains every book into one order", () => {
-    expect(positions.map((p) => p.page.slug)).toEqual([
-      "a-first",
-      "b-second",
-      "c-third",
-      "d-fourth",
-      "tak-intro",
+  it("lists the book's pages in reading order, counted within the book", () => {
+    expect(positions.map((p) => [p.page.slug, p.index, p.total])).toEqual([
+      ["a-first", 0, 4],
+      ["b-second", 1, 4],
+      ["c-third", 2, 4],
+      ["d-fourth", 3, 4],
     ]);
   });
 
-  it("links neighbours across books but counts within the book", () => {
-    const [last, intro] = positions.slice(3);
-    expect(last.next?.slug).toBe("tak-intro");
-    expect([last.index, last.total]).toEqual([3, 4]);
-    expect(intro.prev?.slug).toBe("d-fourth");
-    expect([intro.index, intro.total]).toEqual([0, 1]);
+  it("links each page to its neighbours", () => {
+    expect(positions[2].prev?.slug).toBe("b-second");
+    expect(positions[2].next?.slug).toBe("d-fourth");
+  });
+
+  it("stops at the book's ends, never reaching into another book", () => {
     expect(positions[0].prev).toBeUndefined();
-    expect(intro.next).toBeUndefined();
+    expect(positions[3].next).toBeUndefined();
+    expect(bookPositions(manifest, "guides/tak-guide")[0].prev).toBeUndefined();
+  });
+
+  it("is empty for an unknown book", () => {
+    expect(bookPositions(manifest, "nope")).toEqual([]);
   });
 });
 
-describe("stepSplat", () => {
-  const [first, , , last, intro] = globalPositions(manifest);
-
-  it("steps to the neighbouring page within a book", () => {
-    expect(stepSplat(first, 1)).toBe("deploy-app/b-second");
-    expect(stepSplat(last, -1)).toBe("deploy-app/c-third");
+describe("nextBook", () => {
+  it("names the book that follows", () => {
+    expect(nextBook(manifest, "deploy-app")?.slug).toBe("guides/tak-guide");
   });
 
-  it("lands on the cover going forward into another book", () => {
-    expect(stepSplat(last, 1)).toBe("guides/tak-guide");
+  it("has none after the last book", () => {
+    expect(nextBook(manifest, "guides/tak-guide")).toBeUndefined();
   });
 
-  it("goes straight to the page going back into another book", () => {
-    expect(stepSplat(intro, -1)).toBe("deploy-app/d-fourth");
-  });
-
-  it("has nowhere to go at either end of the app", () => {
-    expect(stepSplat(first, -1)).toBeUndefined();
-    expect(stepSplat(intro, 1)).toBeUndefined();
+  it("skips a book with nothing to read", () => {
+    const withEmpty: LocaleManifest = {
+      ...manifest,
+      collections: [
+        manifest.collections[0],
+        { slug: "empty", label: "Empty", section: "guides", order: 1 },
+        { ...manifest.collections[1], order: 2 },
+      ],
+    };
+    expect(nextBook(withEmpty, "deploy-app")?.slug).toBe("guides/tak-guide");
   });
 });
 

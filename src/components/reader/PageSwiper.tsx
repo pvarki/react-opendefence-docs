@@ -13,9 +13,9 @@ import type { LocaleManifest, ManifestPage } from "@shared/content-schema";
 import type { ReadingView } from "@/lib/platform";
 import { loadPage } from "@/lib/content/loader";
 import {
-  globalPositions,
+  bookPositions,
+  nextBook,
   resolveSplat,
-  stepSplat,
   type PagePosition,
 } from "@/lib/content/neighbors";
 import { pageSwiperOptions } from "@/components/reader/emblaPageOptions";
@@ -46,9 +46,9 @@ const TAP_SLOP_PX = 10;
 const TURN_MS = 700;
 
 /**
- * Book-like swipe navigation over the GLOBAL reading order: pages flow
- * through chapters and across book boundaries, so the whole app reads as one
- * continuous swipe for the active platform.
+ * Book-like swipe navigation through one book, in the active platform's
+ * reading order. Page turns stop at the book's ends: the way into another
+ * book is a link (the card under a book's last page), never a swipe.
  */
 export function PageSwiper({
   locale,
@@ -59,28 +59,32 @@ export function PageSwiper({
   slide,
 }: PageSwiperProps) {
   const positions = useMemo(
-    () => globalPositions(manifest, view),
-    [manifest, view],
+    () => bookPositions(manifest, collection, view),
+    [manifest, collection, view],
   );
-  const urlIndex = positions.findIndex(
-    ({ page }) => page.collection === collection && page.slug === slug,
-  );
+  const onward = useMemo(() => {
+    const book = nextBook(manifest, collection, view);
+    return book && { label: book.label, href: `/${locale}/${book.slug}` };
+  }, [manifest, collection, view, locale]);
+  const urlIndex = positions.findIndex(({ page }) => page.slug === slug);
   // A deep link into another platform's page, until the route switches view.
   if (urlIndex === -1) return null;
 
   return (
     <PageStrip
+      key={collection} // another book is another strip
       locale={locale}
       manifest={manifest}
       positions={positions}
       urlIndex={urlIndex}
       slide={slide}
+      nextBook={onward}
     />
   );
 }
 
 /**
- * One slot per page of the reading order, laid out as a single strip that the
+ * One slot per page of the book, laid out as a single strip that the
  * carousel scrolls; only the pages next to the reader are mounted in their
  * slots. The slots never move, so there is no window to shift and nothing
  * waits for an animation to end. The URL is the single source of truth:
@@ -96,12 +100,15 @@ function PageStrip({
   positions,
   urlIndex,
   slide,
+  nextBook,
 }: {
   locale: string;
   manifest: LocaleManifest;
   positions: PagePosition[];
   urlIndex: number;
   slide?: SlideParam;
+  /** Where the card under the book's last page leads. */
+  nextBook?: { label: string; href: string };
 }) {
   const { t } = useTranslation();
   const navigate = useNavigate();
@@ -143,8 +150,9 @@ function PageStrip({
   const cutTo = useRef<string>(undefined);
   const step = useCallback(
     (from: PagePosition, dir: 1 | -1, cut: boolean) => {
-      const splat = stepSplat(from, dir);
-      if (!splat) return;
+      const dest = dir === 1 ? from.next : from.prev;
+      if (!dest) return;
+      const splat = keyOf(dest);
       if (cut) cutTo.current = splat;
       void navigate({
         to: "/$locale/$",
@@ -216,11 +224,7 @@ function PageStrip({
         return;
       }
       swipedTo.current = shown;
-      // A forward swipe into another book lands on its cover (see stepSplat).
-      const intoBook =
-        shown > urlIndex &&
-        to.collection !== positions[urlIndex].page.collection;
-      void go(intoBook ? to.collection : keyOf(to)).finally(() => {
+      void go(keyOf(to)).finally(() => {
         // Wherever that ended up (a redirect, a newer click), the URL wins.
         if (swipedTo.current !== shown) return;
         swipedTo.current = undefined;
@@ -238,8 +242,9 @@ function PageStrip({
     if (!embla) return;
     return onWheelSwipe(embla.rootNode(), (dir) => {
       const { positions, urlIndex } = live.current;
-      const dest = stepSplat(positions[urlIndex], dir);
-      if (dest) void go(dest);
+      const { next, prev } = positions[urlIndex];
+      const dest = dir === 1 ? next : prev;
+      if (dest) void go(keyOf(dest));
     });
   }, [embla, go]);
 
@@ -278,19 +283,15 @@ function PageStrip({
         ({ page }) =>
           page.collection === at?.collection && page.slug === at.slug,
       );
-      const dest = from && stepSplat(from, e.key === "ArrowRight" ? 1 : -1);
+      const dest = e.key === "ArrowRight" ? from?.next : from?.prev;
       if (!dest) return;
       e.preventDefault();
-      void go(dest);
+      void go(keyOf(dest));
     };
     window.addEventListener("keydown", onKeyDown);
     return () => window.removeEventListener("keydown", onKeyDown);
   }, [manifest, router, locale, go]);
 
-  const bookLabels = useMemo(
-    () => new Map(manifest.collections.map((c) => [c.slug, c.label])),
-    [manifest],
-  );
   // Every page of these books is a step guide (a slideset).
   const guideBooks = useMemo(
     () =>
@@ -317,7 +318,7 @@ function PageStrip({
       <div ref={viewportRef} className="h-full touch-pan-y overflow-hidden">
         <div className="flex h-full">
           {positions.map((position, i) => {
-            const { page, next, index, total } = position;
+            const { page } = position;
             const isCurrent = i === urlIndex;
             // Neighbor panes are mounted for the swipe reveal but inert —
             // their links and headings stay out of the tab order and
@@ -339,14 +340,7 @@ function PageStrip({
                     slide={isCurrent ? slide : undefined}
                     onStep={step}
                     likelyGuide={guideBooks.has(page.collection)}
-                    // At a book's last page, name where the swipe continues.
-                    nextBookLabel={
-                      next &&
-                      index === total - 1 &&
-                      next.collection !== page.collection
-                        ? bookLabels.get(next.collection)
-                        : undefined
-                    }
+                    nextBook={i === positions.length - 1 ? nextBook : undefined}
                   />
                 )}
               </div>
