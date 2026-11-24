@@ -1,11 +1,13 @@
 import { describe, expect, it } from "vitest";
 import type { LocaleManifest } from "@shared/content-schema";
 import {
+  globalPositions,
   readerBreadcrumb,
   readingOrder,
   resolveByUrlId,
   resolvePosition,
   resolveSplat,
+  stepSplat,
 } from "./neighbors";
 
 const page = (slug: string, collection: string, order: number) => ({
@@ -77,6 +79,52 @@ describe("resolvePosition", () => {
 
   it("returns undefined for unknown slugs", () => {
     expect(resolvePosition(manifest, "deploy-app", "nope")).toBeUndefined();
+  });
+});
+
+describe("globalPositions", () => {
+  const positions = globalPositions(manifest);
+
+  it("chains every book into one order", () => {
+    expect(positions.map((p) => p.page.slug)).toEqual([
+      "a-first",
+      "b-second",
+      "c-third",
+      "d-fourth",
+      "tak-intro",
+    ]);
+  });
+
+  it("links neighbours across books but counts within the book", () => {
+    const [last, intro] = positions.slice(3);
+    expect(last.next?.slug).toBe("tak-intro");
+    expect([last.index, last.total]).toEqual([3, 4]);
+    expect(intro.prev?.slug).toBe("d-fourth");
+    expect([intro.index, intro.total]).toEqual([0, 1]);
+    expect(positions[0].prev).toBeUndefined();
+    expect(intro.next).toBeUndefined();
+  });
+});
+
+describe("stepSplat", () => {
+  const [first, , , last, intro] = globalPositions(manifest);
+
+  it("steps to the neighbouring page within a book", () => {
+    expect(stepSplat(first, 1)).toBe("deploy-app/b-second");
+    expect(stepSplat(last, -1)).toBe("deploy-app/c-third");
+  });
+
+  it("lands on the cover going forward into another book", () => {
+    expect(stepSplat(last, 1)).toBe("guides/tak-guide");
+  });
+
+  it("goes straight to the page going back into another book", () => {
+    expect(stepSplat(intro, -1)).toBe("deploy-app/d-fourth");
+  });
+
+  it("has nowhere to go at either end of the app", () => {
+    expect(stepSplat(first, -1)).toBeUndefined();
+    expect(stepSplat(intro, 1)).toBeUndefined();
   });
 });
 

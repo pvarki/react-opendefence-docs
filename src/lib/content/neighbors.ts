@@ -91,44 +91,51 @@ export function resolvePosition(
 }
 
 /**
- * Every readable page of the app in one sequence: books in manifest order,
- * each in its platform-filtered reading order — the whole app is swipable
- * start to finish.
+ * Every readable page of the app in one sequence — books in manifest order,
+ * each in its platform-filtered reading order — with its swipe neighbours.
+ * Neighbours cross book boundaries; index/total stay scoped to the page's own
+ * book, so "Page n of N" and the progress bar describe the book while the
+ * swipe continues past it.
  */
-export function globalReadingOrder(
+export function globalPositions(
   manifest: LocaleManifest,
   view?: ReadingView,
-): ManifestPage[] {
-  return [...manifest.collections]
+): PagePosition[] {
+  const order = [...manifest.collections]
     .sort((a, b) => a.order - b.order)
     .flatMap((c) => readingOrder(manifest, c.slug, view));
+  const totals = new Map<string, number>();
+  for (const page of order) {
+    totals.set(page.collection, (totals.get(page.collection) ?? 0) + 1);
+  }
+  const seen = new Map<string, number>();
+  return order.map((page, i) => {
+    const index = seen.get(page.collection) ?? 0;
+    seen.set(page.collection, index + 1);
+    return {
+      page,
+      prev: order[i - 1],
+      next: order[i + 1],
+      index,
+      total: totals.get(page.collection)!,
+    };
+  });
 }
 
 /**
- * A page's swipe neighbors in the GLOBAL order (crossing book boundaries),
- * with index/total still scoped to its own book — "Page n of N" and the
- * progress bar describe the book, the swipe continues past it.
+ * Reader splat one step from a page, or undefined at either end of the app.
+ * A forward step into another book lands on that book's cover, so the reader
+ * can orient before diving in; a backward step goes straight to the page.
  */
-export function resolveGlobalPosition(
-  manifest: LocaleManifest,
-  collection: string,
-  slug: string,
-  view?: ReadingView,
-): PagePosition | undefined {
-  const global = globalReadingOrder(manifest, view);
-  const gi = global.findIndex(
-    (p) => p.collection === collection && p.slug === slug,
-  );
-  if (gi === -1) return undefined;
-  const book = readingOrder(manifest, collection, view);
-  const bi = book.findIndex((p) => p.slug === slug);
-  return {
-    page: global[gi],
-    prev: global[gi - 1],
-    next: global[gi + 1],
-    index: bi,
-    total: book.length,
-  };
+export function stepSplat(
+  position: PagePosition,
+  dir: 1 | -1,
+): string | undefined {
+  const dest = dir === 1 ? position.next : position.prev;
+  if (!dest) return undefined;
+  return dir === 1 && dest.collection !== position.page.collection
+    ? dest.collection
+    : `${dest.collection}/${dest.slug}`;
 }
 
 /**
@@ -241,4 +248,45 @@ export function filterSidebarByPlatform(
     }
   }
   return out;
+}
+
+/**
+ * Every readable page of the app in one sequence: books in manifest order,
+ * each in its platform-filtered reading order — the whole app is swipable
+ * start to finish.
+ */
+export function globalReadingOrder(
+  manifest: LocaleManifest,
+  view?: ReadingView,
+): ManifestPage[] {
+  return [...manifest.collections]
+    .sort((a, b) => a.order - b.order)
+    .flatMap((c) => readingOrder(manifest, c.slug, view));
+}
+
+/**
+ * A page's swipe neighbors in the GLOBAL order (crossing book boundaries),
+ * with index/total still scoped to its own book — "Page n of N" and the
+ * progress bar describe the book, the swipe continues past it.
+ */
+export function resolveGlobalPosition(
+  manifest: LocaleManifest,
+  collection: string,
+  slug: string,
+  view?: ReadingView,
+): PagePosition | undefined {
+  const global = globalReadingOrder(manifest, view);
+  const gi = global.findIndex(
+    (p) => p.collection === collection && p.slug === slug,
+  );
+  if (gi === -1) return undefined;
+  const book = readingOrder(manifest, collection, view);
+  const bi = book.findIndex((p) => p.slug === slug);
+  return {
+    page: global[gi],
+    prev: global[gi - 1],
+    next: global[gi + 1],
+    index: bi,
+    total: book.length,
+  };
 }
