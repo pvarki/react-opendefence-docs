@@ -282,11 +282,11 @@ test.describe("book swipe navigation", () => {
     await expect(page).toHaveURL(ADMIN_FIRST);
   });
 
-  test("swipe flows across book boundaries (Deploy App -> TAK Guide)", async ({
+  test("page turns stop at a book's last page; the next book is a link", async ({
     page,
   }) => {
-    // Last android page of deploy-app continues into the TAK guide. Read it
-    // from the manifest: new Outline pages move it on every sync.
+    // Deploy App's last android page. Read it from the manifest: new Outline
+    // pages move it on every sync.
     const response = await page.request.get("/content/en/manifest.json");
     const manifest = (await response.json()) as {
       pages: { collection: string; slug: string; breadcrumb: string[] }[];
@@ -300,11 +300,37 @@ test.describe("book swipe navigation", () => {
     if (!lastAndroid) throw new Error("no android page in deploy-app");
     const last = `/en/deploy-app/${lastAndroid.slug}`;
     await open(page, last);
+    // Neither a swipe nor a key carries on into the TAK guide.
     await swipe(page, "left");
-    await expect(page).toHaveURL("/en/guides/tak-guide");
-    // Covers are shelf stops, so swiping does not re-enter the previous book.
-    await page.goBack();
+    await page.keyboard.press("ArrowRight");
+    await page.waitForTimeout(500);
     await expect(page).toHaveURL(last);
+    await expect(
+      currentPane(page).getByRole("link", { name: "Next" }),
+    ).toHaveCount(0);
+    // It is offered instead.
+    await currentPane(page)
+      .getByRole("link", { name: "TAK Guide", exact: true })
+      .click();
+    await expect(page).toHaveURL("/en/guides/tak-guide");
+  });
+
+  test("page turns stop at a book's first page", async ({ page }) => {
+    const response = await page.request.get("/content/en/manifest.json");
+    const manifest = (await response.json()) as {
+      pages: { collection: string; slug: string; order: number }[];
+    };
+    // Shown on every platform, so it opens the book whatever the view.
+    const first = manifest.pages
+      .filter((p) => p.collection === "guides/cryptpad-guide")
+      .sort((a, b) => a.order - b.order)[0];
+    if (!first) throw new Error("no cryptpad page");
+    const url = `/en/guides/cryptpad-guide/${first.slug}`;
+    await open(page, url);
+    await swipe(page, "right");
+    await page.keyboard.press("ArrowLeft");
+    await page.waitForTimeout(500);
+    await expect(page).toHaveURL(url);
   });
 
   test("drags inside the slideshow turn slides, never the page", async ({
@@ -935,6 +961,14 @@ test.describe("shelves under construction", () => {
     await page.keyboard.press("ArrowRight");
     await page.waitForTimeout(500);
     await expect(page).toHaveURL(url);
+    // No "next book" card into a hidden book either.
+    for (const hidden of manifest.collections.filter(
+      (c) => c.section === "dev",
+    )) {
+      await expect(
+        page.locator(`main a[href="/en/${hidden.slug}"]`),
+      ).toHaveCount(0);
+    }
   });
 
   test("Develop shows only the notice, and its books lead back to it", async ({
