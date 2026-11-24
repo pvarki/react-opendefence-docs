@@ -1,18 +1,20 @@
-import { useEffect, useState } from "react";
+import { memo, useEffect, useMemo, useState } from "react";
 import type { ManifestPage, PageDoc } from "@shared/content-schema";
 import type { PagePosition } from "@/lib/content/neighbors";
-import { loadPage } from "@/lib/content/loader";
+import { loadPage, peekPage } from "@/lib/content/loader";
 import { BlockRenderer } from "@/components/blocks/BlockRenderer";
 import { UnderConstructionBanner } from "@/components/reader/UnderConstructionBanner";
 import { PrevNextBar } from "@/components/reader/PrevNextBar";
 import { EndOfBookCard } from "@/components/reader/EndOfBookCard";
 import { PageFooter } from "@/components/reader/PageFooter";
+import { PaneContext, type SlideParam } from "@/components/reader/paneContext";
 import { SiteFooter } from "@/components/shell/SiteFooter";
 import { Skeleton } from "@/components/ui/skeleton";
 import { useScrollMemory } from "@/components/reader/useScrollMemory";
 
 function usePageDoc(page: ManifestPage): PageDoc | undefined {
-  const [doc, setDoc] = useState<PageDoc>();
+  // Usually loaded already (the swiper preloads neighbors): no skeleton frame.
+  const [doc, setDoc] = useState(() => peekPage(page.path));
 
   // Panes are keyed by slug, so page.path is stable for this instance's
   // lifetime — no stale-doc reset needed before the (usually cached) load.
@@ -35,37 +37,46 @@ function usePageDoc(page: ManifestPage): PageDoc | undefined {
 
 interface PagePaneProps {
   locale: string;
-  page: ManifestPage;
   position: PagePosition;
   isCurrent: boolean;
-  nextBook?: { label: string; href: string };
+  slide?: SlideParam;
+  /** A slideset of this page walks on into the neighbouring page. */
+  onStep: (from: PagePosition, dir: 1 | -1, cut: boolean) => void;
+  /** Set on a book's last page: the book the swipe continues into. */
+  nextBookLabel?: string;
 }
 
 /**
- * One pane of the PageSwiper: owns its vertical scroll (the horizontal track
+ * One page of the PageSwiper: owns its vertical scroll (the horizontal track
  * never scrolls vertically) and remembers its scroll position per slug.
- * Neighbor panes are mounted for the swipe reveal but inert — their links
- * and headings stay out of the tab order and accessibility tree.
  */
-export function PagePane({
+export const PagePane = memo(function PagePane({
   locale,
-  page,
   position,
   isCurrent,
-  nextBook,
+  slide,
+  onStep,
+  nextBookLabel,
 }: PagePaneProps) {
+  const { page, next } = position;
   const doc = usePageDoc(page);
   const scrollRef = useScrollMemory(
     `${locale}:${page.collection}:${page.slug}`,
+    !!doc,
   );
-  const isLast = position.index === position.total - 1;
+  const pane = useMemo(
+    () => ({
+      locale,
+      position,
+      isCurrent,
+      slide,
+      step: (dir: 1 | -1, cut: boolean) => onStep(position, dir, cut),
+    }),
+    [locale, position, isCurrent, slide, onStep],
+  );
 
   return (
-    <div
-      className="min-w-0 flex-[0_0_100%]"
-      inert={!isCurrent}
-      data-current={isCurrent || undefined}
-    >
+    <PaneContext value={pane}>
       <div
         ref={scrollRef}
         data-page-scroll
@@ -90,7 +101,14 @@ export function PagePane({
             </div>
           )}
           <PrevNextBar locale={locale} position={position} />
-          {isLast && nextBook && <EndOfBookCard nextBook={nextBook} />}
+          {next && nextBookLabel && (
+            <EndOfBookCard
+              nextBook={{
+                label: nextBookLabel,
+                href: `/${locale}/${next.collection}`,
+              }}
+            />
+          )}
           <PageFooter
             collection={page.collection}
             title={page.title}
@@ -99,6 +117,6 @@ export function PagePane({
           <SiteFooter compact />
         </article>
       </div>
-    </div>
+    </PaneContext>
   );
-}
+});

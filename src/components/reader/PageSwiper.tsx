@@ -1,5 +1,6 @@
 import {
   useCallback,
+  useDeferredValue,
   useEffect,
   useLayoutEffect,
   useMemo,
@@ -14,13 +15,15 @@ import type { LocaleManifest, ManifestPage } from "@shared/content-schema";
 import type { ReadingView } from "@/lib/platform";
 import { loadPage } from "@/lib/content/loader";
 import {
-  globalReadingOrder,
-  resolveGlobalPosition,
+  globalPositions,
   resolveSplat,
+  stepSplat,
+  type PagePosition,
 } from "@/lib/content/neighbors";
 import { pageSwiperOptions } from "@/components/reader/emblaPageOptions";
 import { stripBase } from "@/lib/base";
 import { PagePane } from "@/components/reader/PagePane";
+import type { SlideParam } from "@/components/reader/paneContext";
 import { useReducedMotion } from "@/components/reader/useReducedMotion";
 
 interface PageSwiperProps {
@@ -30,22 +33,20 @@ interface PageSwiperProps {
   slug: string;
   /** Active view (platform + per-book clients): the swipe order covers it start to finish. */
   view?: ReadingView;
+  /** The URL's `?slide=`, handed to the current page's slideset. */
+  slide?: SlideParam;
 }
 
-/** Slugs are unique per collection only — windowing keys on both. */
+/** Slugs are unique per collection only — slots key on both. */
 const keyOf = (page: ManifestPage) => `${page.collection}/${page.slug}`;
+
+/** A press that moved the strip less than this is a click, not a swipe. */
+const TAP_SLOP_PX = 10;
 
 /**
  * Book-like swipe navigation over the GLOBAL reading order: pages flow
  * through chapters and across book boundaries, so the whole app reads as one
- * continuous swipe for the active platform. The URL is the single source of
- * truth:
- * - a settled swipe commits a history push (so OS back-gestures land on the
- *   previous page — the only sane behavior on iOS standalone);
- * - URL changes from links/back/forward animate when the target is the
- *   adjacent pane, otherwise jump instantly.
- * Only prev/current/next panes are mounted, keyed by collection/slug so the
- * visible pane's DOM survives window shifts without remounting.
+ * continuous swipe for the active platform.
  */
 export function PageSwiper({
   locale,
@@ -53,140 +54,172 @@ export function PageSwiper({
   collection,
   slug,
   view,
+  slide,
 }: PageSwiperProps) {
+  const positions = useMemo(
+    () => globalPositions(manifest, view),
+    [manifest, view],
+  );
+  const urlIndex = positions.findIndex(
+    ({ page }) => page.collection === collection && page.slug === slug,
+  );
+  // A deep link into another platform's page, until the route switches view.
+  if (urlIndex === -1) return null;
+
+  return (
+    <PageStrip
+      locale={locale}
+      manifest={manifest}
+      positions={positions}
+      urlIndex={urlIndex}
+      slide={slide}
+    />
+  );
+}
+
+/**
+ * One slot per page of the reading order, laid out as a single strip that the
+ * carousel scrolls; only the pages next to the reader are mounted in their
+ * slots. The slots never move, so there is no window to shift and nothing
+ * waits for an animation to end. The URL is the single source of truth:
+ * - the URL's page is the current, interactive one from the moment it changes;
+ *   the carousel follows it — a page turn to a neighbour, a cut otherwise;
+ * - a swipe that ends on another page commits a history push (so OS
+ *   back-gestures land on the previous page — the only sane behavior on iOS
+ *   standalone).
+ */
+function PageStrip({
+  locale,
+  manifest,
+  positions,
+  urlIndex,
+  slide,
+}: {
+  locale: string;
+  manifest: LocaleManifest;
+  positions: PagePosition[];
+  urlIndex: number;
+  slide?: SlideParam;
+}) {
   const { t } = useTranslation();
   const navigate = useNavigate();
   const router = useRouter();
   const reducedMotion = useReducedMotion();
 
-  const order = useMemo(
-    () => globalReadingOrder(manifest, view),
-    [manifest, view],
+  // Deferred, so a page turn makes its page interactive before the page that
+  // becomes its new neighbour mounts.
+  const nearIndex = useDeferredValue(urlIndex);
+
+  const [options] = useState(() => pageSwiperOptions(urlIndex));
+  const [plugins] = useState(() => [WheelGesturesPlugin()]);
+  const [viewportRef, embla] = useEmblaCarousel(options, plugins);
+
+  // The carousel's handlers outlive renders; they read the route from here.
+  const live = useRef({ positions, urlIndex, reducedMotion });
+  useLayoutEffect(() => {
+    live.current = { positions, urlIndex, reducedMotion };
+  });
+
+  // The page a swipe left the carousel on, until the URL has caught up.
+  const swipedTo = useRef<number>(undefined);
+
+  const go = useCallback(
+    (splat: string) =>
+      navigate({ to: "/$locale/$", params: { locale, _splat: splat } }),
+    [navigate, locale],
   );
 
-  const urlKey = `${collection}/${slug}`;
-
-  // The page whose window is currently rendered. Lags the URL while an
-  // animated page turn (from a link/back navigation) is in flight.
-  const [windowKey, setWindowKey] = useState(urlKey);
-
-  const windowIndex = order.findIndex((p) => keyOf(p) === windowKey);
-  const windowPages = useMemo(
-    () =>
-      [
-        order[windowIndex - 1],
-        order[windowIndex],
-        order[windowIndex + 1],
-      ].filter((p): p is ManifestPage => p !== undefined),
-    [order, windowIndex],
-  );
-  const startIndex = windowIndex === 0 ? 0 : 1;
-
-  const navLockRef = useRef(false);
-  // navLockRef is read inside Embla's watchDrag at gesture time, never during
-  // render; the react-hooks/refs rule can't see across the factory boundary.
-  /* eslint-disable react-hooks/refs */
-  const guards = useMemo(() => ({ navLocked: () => navLockRef.current }), []);
-
-  const [viewportRef, embla] = useEmblaCarousel(
-    useMemo(() => pageSwiperOptions(startIndex, guards), [startIndex, guards]),
-    useMemo(() => [WheelGesturesPlugin()], []),
-  );
-  /* eslint-enable react-hooks/refs */
-
-  const navigateToPage = useCallback(
-    (page: ManifestPage) => {
-      navLockRef.current = true;
+  // A slideset's Previous/Next button walks on into the neighbouring page.
+  // That page is cut to, not turned to: the button the reader keeps pressing
+  // must be back under the pointer at once, not gliding past it.
+  const cutTo = useRef<string>(undefined);
+  const step = useCallback(
+    (from: PagePosition, dir: 1 | -1, cut: boolean) => {
+      const splat = stepSplat(from, dir);
+      if (!splat) return;
+      if (cut) cutTo.current = splat;
       void navigate({
         to: "/$locale/$",
-        params: { locale, _splat: keyOf(page) },
+        params: { locale, _splat: splat },
+        search: dir === -1 ? { slide: "last" } : {},
       });
     },
     [navigate, locale],
   );
 
-  // Gesture path: a settle on a neighbor pane commits the navigation.
+  const showUrlPage = useCallback(
+    (cut = false) => {
+      if (!embla) return;
+      const { urlIndex, reducedMotion } = live.current;
+      const shown = embla.selectedScrollSnap();
+      // Already there — or a newer swipe is ahead of a URL still catching up.
+      if (shown === urlIndex || shown === swipedTo.current) return;
+      embla.scrollTo(
+        urlIndex,
+        cut || reducedMotion || Math.abs(shown - urlIndex) > 1,
+      );
+    },
+    [embla],
+  );
+
+  // The slots follow the reading order: a platform switch replaces them.
+  const strip = useRef(positions);
+  useLayoutEffect(() => {
+    if (!embla || strip.current === positions) return;
+    strip.current = positions;
+    embla.reInit({ startIndex: urlIndex });
+  }, [embla, positions, urlIndex]);
+
+  // URL -> carousel.
+  useLayoutEffect(() => {
+    if (swipedTo.current === urlIndex) swipedTo.current = undefined;
+    showUrlPage(cutTo.current === keyOf(positions[urlIndex].page));
+    cutTo.current = undefined;
+  }, [urlIndex, positions, showUrlPage]);
+
+  // Carousel -> URL: only a pointer or trackpad gesture ends in "pointerUp",
+  // so the carousel's own page turns can never navigate.
   useEffect(() => {
     if (!embla) return;
-    const onSettle = () => {
-      const selected = embla.selectedScrollSnap();
-      const target = windowPages[selected];
-      // Skip when already current — incl. settles from OUR animated scrollTo
-      // during link/back reconciliation, where the URL leads the window.
-      if (!target || keyOf(target) === windowKey || keyOf(target) === urlKey)
-        return;
-      // Cross-book forward swipe: land on the cover of the next book rather
-      // than its first content page so the reader can orient before diving in.
-      const current = order[windowIndex];
-      if (current && target.collection !== current.collection) {
-        navLockRef.current = true;
-        void navigate({
-          to: "/$locale/$",
-          params: { locale, _splat: target.collection },
-        });
+    let downAt = 0;
+    const onPointerDown = () => {
+      downAt = embla.internalEngine().location.get();
+    };
+    const onPointerUp = () => {
+      const { positions, urlIndex } = live.current;
+      const moved = embla.internalEngine().location.get() - downAt;
+      if (Math.abs(moved) < TAP_SLOP_PX) {
+        // A click froze a page that was still sliding in: finish the turn.
+        embla.scrollTo(urlIndex);
         return;
       }
-      navigateToPage(target);
+      const shown = embla.selectedScrollSnap();
+      const to = positions[shown]?.page;
+      if (!to || shown === urlIndex) return;
+      swipedTo.current = shown;
+      // A forward swipe into another book lands on its cover (see stepSplat).
+      const intoBook =
+        shown > urlIndex &&
+        to.collection !== positions[urlIndex].page.collection;
+      void go(intoBook ? to.collection : keyOf(to)).finally(() => {
+        // Wherever that ended up (a redirect, a newer click), the URL wins.
+        if (swipedTo.current !== shown) return;
+        swipedTo.current = undefined;
+        showUrlPage();
+      });
     };
-    embla.on("settle", onSettle);
+    embla.on("pointerDown", onPointerDown).on("pointerUp", onPointerUp);
     return () => {
-      embla.off("settle", onSettle);
+      embla.off("pointerDown", onPointerDown).off("pointerUp", onPointerUp);
     };
-  }, [
-    embla,
-    windowPages,
-    windowKey,
-    urlKey,
-    navigateToPage,
-    order,
-    windowIndex,
-    navigate,
-    locale,
-  ]);
-
-  // URL path: reconcile the rendered window with the page from the route.
-  // Embla is an external animation engine; this effect is the designed sync
-  // point between it and the URL, so the setState here is intentional.
-  /* eslint-disable react-hooks/set-state-in-effect */
-  useLayoutEffect(() => {
-    if (urlKey === windowKey) {
-      navLockRef.current = false;
-      return;
-    }
-    if (navLockRef.current) {
-      // We initiated this navigation from a settled gesture: shift the window
-      // silently — the settled pane is already what the reader sees.
-      setWindowKey(urlKey);
-      return;
-    }
-    const adjacentIndex = windowPages.findIndex((p) => keyOf(p) === urlKey);
-    if (embla && adjacentIndex !== -1 && !reducedMotion) {
-      // Link/back/forward to the adjacent page: animate the page turn, then
-      // shift the window once the animation settles.
-      const onSettle = () => {
-        embla.off("settle", onSettle);
-        setWindowKey(urlKey);
-      };
-      embla.on("settle", onSettle);
-      embla.scrollTo(adjacentIndex, false);
-    } else {
-      setWindowKey(urlKey);
-    }
-  }, [urlKey, windowKey, windowPages, embla, reducedMotion]);
-  /* eslint-enable react-hooks/set-state-in-effect */
-
-  // Whenever the window re-renders, snap the carousel to the current pane.
-  useLayoutEffect(() => {
-    if (!embla) return;
-    embla.scrollTo(startIndex, true);
-  }, [embla, windowKey, startIndex]);
+  }, [embla, go, showUrlPage]);
 
   // Preload neighbors so a swipe reveals content, not a skeleton.
   useEffect(() => {
-    for (const page of windowPages) {
-      if (keyOf(page) !== windowKey) void loadPage(page.path).catch(() => {});
+    for (const neighbor of [positions[urlIndex - 1], positions[urlIndex + 1]]) {
+      if (neighbor) void loadPage(neighbor.page.path).catch(() => {});
     }
-  }, [windowPages, windowKey]);
+  }, [positions, urlIndex]);
 
   // Keyboard page turns (skipped when typing or inside a slideset's scope).
   useEffect(() => {
@@ -201,102 +234,86 @@ export function PageSwiper({
       ) {
         return;
       }
-      // Resolve from the router's live location: props lag the URL during
-      // animated transitions, and rapid keypresses must not be dropped.
+      // Step from the router's live location, not from props: every press of
+      // a held key turns one page, even while the last turn is committing.
       const pathname = stripBase(router.state.location.pathname);
       const splat = pathname.startsWith(`/${locale}/`)
         ? pathname.slice(locale.length + 2)
         : "";
-      const resolved = resolveSplat(manifest, decodeURIComponent(splat));
-      if (!resolved?.slug) return;
-      const current = resolveGlobalPosition(
-        manifest,
-        resolved.collection,
-        resolved.slug,
-        view,
+      const at = resolveSplat(manifest, decodeURIComponent(splat));
+      const from = live.current.positions.find(
+        ({ page }) =>
+          page.collection === at?.collection && page.slug === at.slug,
       );
-      const dest = e.key === "ArrowLeft" ? current?.prev : current?.next;
-      if (dest) {
-        e.preventDefault();
-        // Right-arrow into a new book: land on the cover, not the first page.
-        const crossBook =
-          e.key === "ArrowRight" && dest.collection !== resolved.collection;
-        void navigate({
-          to: "/$locale/$",
-          params: {
-            locale,
-            _splat: crossBook ? dest.collection : keyOf(dest),
-          },
-        });
-      }
+      const dest = from && stepSplat(from, e.key === "ArrowRight" ? 1 : -1);
+      if (!dest) return;
+      e.preventDefault();
+      void go(dest);
     };
     window.addEventListener("keydown", onKeyDown);
     return () => window.removeEventListener("keydown", onKeyDown);
-  }, [manifest, router, navigate, locale, view]);
+  }, [manifest, router, locale, go]);
 
-  const windowPage = order[windowIndex];
-  const position = windowPage
-    ? resolveGlobalPosition(
-        manifest,
-        windowPage.collection,
-        windowPage.slug,
-        view,
-      )
-    : undefined;
-
-  // At a book's last page, name where the swipe continues (the next book).
-  const nextBook = useMemo(() => {
-    if (!position?.next || position.index !== position.total - 1)
-      return undefined;
-    if (position.next.collection === position.page.collection) return undefined;
-    const next = manifest.collections.find(
-      (c) => c.slug === position.next!.collection,
-    );
-    return next
-      ? { label: next.label, href: `/${locale}/${position.next!.collection}` }
-      : undefined;
-  }, [position, manifest, locale]);
-
-  if (!position) return null;
+  const bookLabels = useMemo(
+    () => new Map(manifest.collections.map((c) => [c.slug, c.label])),
+    [manifest],
+  );
+  const current = positions[urlIndex];
 
   return (
-    <div className="relative h-full">
+    <div data-reader-root className="relative h-full bg-background">
       {/* Reading progress through the current book, under the header */}
       <div className="absolute inset-x-0 top-0 z-10 h-0.5 bg-muted">
         <div
           data-testid="reading-progress"
           className="h-full bg-primary transition-[width] duration-300 ease-out"
-          style={{ width: `${((position.index + 1) / position.total) * 100}%` }}
+          style={{ width: `${((current.index + 1) / current.total) * 100}%` }}
         />
       </div>
 
       <div ref={viewportRef} className="h-full touch-pan-y overflow-hidden">
         <div className="flex h-full">
-          {windowPages.map((page) => (
-            <PagePane
-              key={keyOf(page)}
-              locale={locale}
-              page={page}
-              position={
-                resolveGlobalPosition(
-                  manifest,
-                  page.collection,
-                  page.slug,
-                  view,
-                ) ?? position
-              }
-              isCurrent={keyOf(page) === windowKey}
-              nextBook={nextBook}
-            />
-          ))}
+          {positions.map((position, i) => {
+            const { page, next, index, total } = position;
+            const isCurrent = i === urlIndex;
+            // Neighbor panes are mounted for the swipe reveal but inert —
+            // their links and headings stay out of the tab order and
+            // accessibility tree.
+            return (
+              <div
+                key={keyOf(page)}
+                className="min-w-0 flex-[0_0_100%]"
+                inert={!isCurrent}
+                data-current={isCurrent || undefined}
+              >
+                {(isCurrent || Math.abs(i - nearIndex) <= 1) && (
+                  <PagePane
+                    locale={locale}
+                    position={position}
+                    isCurrent={isCurrent}
+                    slide={isCurrent ? slide : undefined}
+                    onStep={step}
+                    // At a book's last page, name where the swipe continues.
+                    nextBookLabel={
+                      next &&
+                      index === total - 1 &&
+                      next.collection !== page.collection
+                        ? bookLabels.get(next.collection)
+                        : undefined
+                    }
+                  />
+                )}
+              </div>
+            );
+          })}
         </div>
       </div>
 
       <span aria-live="polite" className="sr-only">
         {t("reader.pageAnnouncement", {
-          title: position.page.title,
-          current: position.index + 1,
-          total: position.total,
+          title: current.page.title,
+          current: current.index + 1,
+          total: current.total,
         })}
       </span>
     </div>

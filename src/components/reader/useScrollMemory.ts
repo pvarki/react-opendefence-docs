@@ -31,14 +31,16 @@ function write(key: string, value: number) {
   }
 }
 
-export function useScrollMemory(key: string) {
+/** `ready`: the page's content is in — restoring against a skeleton clamps. */
+export function useScrollMemory(key: string, ready: boolean) {
   const ref = useRef<HTMLDivElement>(null);
 
   useLayoutEffect(() => {
     const el = ref.current;
-    if (!el) return;
+    if (!el || !ready) return;
 
-    el.scrollTop = read(key);
+    const top = read(key);
+    if (top) el.scrollTop = top;
 
     let frame = 0;
     const onScroll = () => {
@@ -50,7 +52,7 @@ export function useScrollMemory(key: string) {
       cancelAnimationFrame(frame);
       el.removeEventListener("scroll", onScroll);
     };
-  }, [key]);
+  }, [key, ready]);
 
   return ref;
 }
