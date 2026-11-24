@@ -76,13 +76,22 @@ export function useFitText<
   useEffect(() => {
     const box = boxRef.current;
     if (!box) return;
-    const observer = new ResizeObserver(() => fit());
+    // A ResizeObserver also reports the size it starts with, which the layout
+    // effect above has just fitted: only a changed size needs another pass.
+    let seen: string | undefined;
+    const observer = new ResizeObserver(([entry]) => {
+      const size = `${entry.contentRect.width}x${entry.contentRect.height}`;
+      if (seen !== undefined && seen !== size) fit();
+      seen = size;
+    });
     observer.observe(box);
     let cancelled = false;
     // Web fonts shift text metrics — re-fit once they are ready.
-    void document.fonts?.ready.then(() => {
-      if (!cancelled) fit();
-    });
+    if (document.fonts && document.fonts.status !== "loaded") {
+      void document.fonts.ready.then(() => {
+        if (!cancelled) fit();
+      });
+    }
     return () => {
       cancelled = true;
       observer.disconnect();
