@@ -19,7 +19,7 @@ const OVERDRAG_THRESHOLD = 32;
  * Lets a slideshow flow into the surrounding book: dragging forward past the
  * last slide turns the page, dragging back past the first slide goes to the
  * previous page. Within the deck, swipes keep turning slides — so the whole
- * app stays one continuous swipe, slides included.
+ * book stays one continuous swipe, slides included.
  */
 export function useEdgePageFlow(
   embla: EmblaCarouselType | undefined,

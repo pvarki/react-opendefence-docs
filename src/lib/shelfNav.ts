@@ -2,7 +2,7 @@
  * The "bookshelf-level" landing pages, in swipe order. Swiping (or arrow
  * keys / wheel) on any of these moves to the adjacent one — Home ⇄ Deploy
  * App ⇄ Guides ⇄ Advanced ⇄ Develop — a separate gesture from the in-book
- * reader, which swipes chapter-by-chapter across the whole app.
+ * reader, which swipes page by page through its own book.
  *
  * Deploy App is the deploy-app book *cover* (served by the `/$locale/$`
  * reader route); the other four are dedicated shelf/home routes. Only the

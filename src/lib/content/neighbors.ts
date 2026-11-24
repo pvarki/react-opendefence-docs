@@ -2,6 +2,7 @@ import type {
   ClientInfo,
   Locale,
   LocaleManifest,
+  ManifestCollection,
   ManifestPage,
   Platform,
   SidebarItem,
@@ -71,71 +72,36 @@ export interface PagePosition {
   total: number;
 }
 
-/** Resolve a page and its swipe neighbors within its collection's book. */
-export function resolvePosition(
+/**
+ * A book's pages for this view, each with its neighbours. Page turns stay
+ * inside the book: its first page has no prev, its last no next.
+ */
+export function bookPositions(
   manifest: LocaleManifest,
   collection: string,
-  slug: string,
   view?: ReadingView,
-): PagePosition | undefined {
+): PagePosition[] {
   const order = readingOrder(manifest, collection, view);
-  const index = order.findIndex((p) => p.slug === slug);
-  if (index === -1) return undefined;
-  return {
-    page: order[index],
+  return order.map((page, index) => ({
+    page,
     prev: order[index - 1],
     next: order[index + 1],
     index,
     total: order.length,
-  };
+  }));
 }
 
-/**
- * Every readable page of the app in one sequence — books in manifest order,
- * each in its platform-filtered reading order — with its swipe neighbours.
- * Neighbours cross book boundaries; index/total stay scoped to the page's own
- * book, so "Page n of N" and the progress bar describe the book while the
- * swipe continues past it.
- */
-export function globalPositions(
+/** The book after this one that has pages to read in this view. */
+export function nextBook(
   manifest: LocaleManifest,
+  collection: string,
   view?: ReadingView,
-): PagePosition[] {
-  const order = [...manifest.collections]
-    .sort((a, b) => a.order - b.order)
-    .flatMap((c) => readingOrder(manifest, c.slug, view));
-  const totals = new Map<string, number>();
-  for (const page of order) {
-    totals.set(page.collection, (totals.get(page.collection) ?? 0) + 1);
-  }
-  const seen = new Map<string, number>();
-  return order.map((page, i) => {
-    const index = seen.get(page.collection) ?? 0;
-    seen.set(page.collection, index + 1);
-    return {
-      page,
-      prev: order[i - 1],
-      next: order[i + 1],
-      index,
-      total: totals.get(page.collection)!,
-    };
-  });
-}
-
-/**
- * Reader splat one step from a page, or undefined at either end of the app.
- * A forward step into another book lands on that book's cover, so the reader
- * can orient before diving in; a backward step goes straight to the page.
- */
-export function stepSplat(
-  position: PagePosition,
-  dir: 1 | -1,
-): string | undefined {
-  const dest = dir === 1 ? position.next : position.prev;
-  if (!dest) return undefined;
-  return dir === 1 && dest.collection !== position.page.collection
-    ? dest.collection
-    : `${dest.collection}/${dest.slug}`;
+): ManifestCollection | undefined {
+  const books = [...manifest.collections].sort((a, b) => a.order - b.order);
+  const at = books.findIndex((c) => c.slug === collection);
+  return books
+    .slice(at + 1)
+    .find((c) => readingOrder(manifest, c.slug, view).length > 0);
 }
 
 /**
