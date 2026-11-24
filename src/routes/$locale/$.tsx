@@ -289,7 +289,7 @@ function BookCover({
       <div className={cn(PAGE_FRAME, "flex-1 pt-4 pb-10 md:pt-6")}>
         <div className="max-w-3xl">
           {(collection?.underDevelopment || active?.underDevelopment) && (
-            <UnderConstructionBanner compact />
+            <UnderConstructionBanner size="compact" />
           )}
           {intro && (
             <p className="text-sm leading-relaxed text-foreground md:text-base">

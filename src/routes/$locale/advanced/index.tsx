@@ -36,7 +36,7 @@ function AdvancedShelf() {
       <div className={cn(PAGE_FRAME, "pt-4 pb-8 md:pt-6 md:pb-10")}>
         <div className="max-w-3xl">
           {UNDER_CONSTRUCTION_SECTIONS.includes("wikis") && (
-            <UnderConstructionBanner compact />
+            <UnderConstructionBanner size="compact" />
           )}
           <p className="text-sm leading-relaxed text-foreground md:text-base">
             {t("advancedFooter.lead")}

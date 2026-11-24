@@ -10,15 +10,31 @@ const HAZARD_STRIPES =
  * Non-blocking notice shown above content that hasn't met the quality bar yet.
  * Render it when the page, an organizer above it or the book carries the
  * draft marker in Outline (PageDoc / ManifestPage / ManifestCollection
- * underDevelopment, or the active client's).
- * `compact` is for book covers, where Start reading must stay above the fold.
+ * underDevelopment, or the active client's), or when its section is under
+ * construction (config/collections.ts).
+ * `compact` is for book covers, where Start reading must stay above the fold;
+ * `line` for step guides, whose slideset shares the first screen with it.
  */
 export function UnderConstructionBanner({
-  compact = false,
+  size = "full",
 }: {
-  compact?: boolean;
+  size?: "full" | "compact" | "line";
 }) {
   const { t } = useTranslation();
+  if (size === "line") {
+    return (
+      <p
+        role="note"
+        title={t("reader.underConstruction.body")}
+        className="mb-2 flex items-center justify-center gap-2 rounded-md border-2 border-black bg-yellow-400 px-3 py-1 text-center text-sm leading-tight font-black tracking-wide text-black uppercase"
+      >
+        <Construction className="size-4 shrink-0" aria-hidden />
+        {t("reader.underConstruction.title")}
+        <span className="sr-only">{t("reader.underConstruction.body")}</span>
+      </p>
+    );
+  }
+  const compact = size === "compact";
   const stripes = cn(HAZARD_STRIPES, compact ? "h-4" : "h-8.5");
   return (
     <div
