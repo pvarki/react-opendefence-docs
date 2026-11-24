@@ -1,6 +1,8 @@
 import { expect, test, type Page } from "@playwright/test";
 
 // Real synced content: deploy-app, android platform, User Guide chapter.
+// INTRO is shown on every platform and opens the whole reading order.
+const INTRO = "/en/deploy-app/introduction-d1XzfzOkpz";
 const FIRST = "/en/deploy-app/joining-a-deploy-app-p9htrbBL4S";
 const SECOND = "/en/deploy-app/using-applications-CsobZMZ45Q";
 const THIRD = "/en/deploy-app/interface-4Ncp4affe9";
@@ -31,10 +33,12 @@ async function swipe(page: Page, direction: "left" | "right") {
   const viewport = page.viewportSize();
   if (!viewport) throw new Error("no viewport");
   const title = await currentPane(page).locator("h1").first().boundingBox();
-  const pane = await currentPane(page).boundingBox();
+  // The reader's box, not the pane's: a page is current while it still glides
+  // in, and a swipe is aimed at the screen.
+  const reader = await page.locator("[data-reader-root]").boundingBox();
   const y = title ? title.y + title.height / 2 : 80;
-  const left = pane?.x ?? 0;
-  const width = pane?.width ?? viewport.width;
+  const left = reader?.x ?? 0;
+  const width = reader?.width ?? viewport.width;
   const from = left + width * (direction === "left" ? 0.8 : 0.2);
   const to = left + width * (direction === "left" ? 0.2 : 0.8);
   await page.mouse.move(from, y);
@@ -116,10 +120,54 @@ test.describe("book swipe navigation", () => {
   test("swipe right on the first page stays put (rubber band)", async ({
     page,
   }) => {
-    await open(page, FIRST);
+    await open(page, INTRO);
     await swipe(page, "right");
     await page.waitForTimeout(500);
-    await expect(page).toHaveURL(FIRST);
+    await expect(page).toHaveURL(INTRO);
+  });
+
+  test("quick arrow presses turn exactly that many pages", async ({ page }) => {
+    await open(page, FIRST);
+    for (let i = 0; i < 3; i++) {
+      await page.keyboard.press("ArrowRight");
+      await page.waitForTimeout(60);
+    }
+    await expect(page).toHaveURL(ADMIN_FIRST);
+    // Nothing follows on its own once the turns have played out.
+    await page.waitForTimeout(2500);
+    await expect(page).toHaveURL(ADMIN_FIRST);
+    await page.goBack();
+    await expect(page).toHaveURL(THIRD);
+  });
+
+  test("reversing a page turn mid-way lands back on a live page", async ({
+    page,
+  }) => {
+    await open(page, SECOND);
+    await page.keyboard.press("ArrowRight");
+    await page.waitForTimeout(150);
+    await page.keyboard.press("ArrowLeft");
+    await expect(page).toHaveURL(SECOND);
+    await page.waitForTimeout(2500);
+    await expect(page).toHaveURL(SECOND);
+    await expect(
+      currentPane(page).getByRole("heading", {
+        name: "Using applications",
+        exact: true,
+      }),
+    ).toBeInViewport();
+    // Live: its own link works.
+    await currentPane(page).getByRole("link", { name: "Next" }).click();
+    await expect(page).toHaveURL(THIRD);
+  });
+
+  test("a turned page is interactive at once", async ({ page }) => {
+    await open(page, FIRST);
+    await currentPane(page).getByRole("link", { name: "Next" }).click();
+    await expect(page).toHaveURL(SECOND);
+    // No waiting for the page turn to finish.
+    await currentPane(page).getByRole("link", { name: "Next" }).click();
+    await expect(page).toHaveURL(THIRD);
   });
 
   test("keyboard arrows turn pages", async ({ page }) => {
@@ -192,12 +240,9 @@ test.describe("book swipe navigation", () => {
     await page.mouse.move(box.x + box.width * 0.2, y, { steps: 8 });
     await page.mouse.up();
     await page.waitForTimeout(500);
-    if (testInfo.project.name === "desktop") {
-      // Desktop deck binds the ?slide deep link.
-      await expect(page).toHaveURL(`${FIRST}?slide=2`);
-    } else {
-      // Mobile show advances internally; the page never turns.
-      await expect(page).toHaveURL(FIRST);
+    // The slide changed, the page did not: the ?slide deep link follows.
+    await expect(page).toHaveURL(`${FIRST}?slide=2`);
+    if (testInfo.project.name === "mobile") {
       await expect(
         scope.getByText("2/", { exact: false }).first(),
       ).toBeVisible();
@@ -655,6 +700,43 @@ test.describe("slideshow flows into the book", () => {
     await expect(page).toHaveURL(SECOND);
   });
 
+  test("Previous and Next walk on into the neighbouring pages", async ({
+    page,
+  }) => {
+    await open(page, SECOND);
+    const deck = () =>
+      page.locator("[data-current] [data-swipe-scope]").first();
+    // Previous on the first slide: the previous page, on its last slide.
+    await deck().getByRole("button", { name: "Previous page" }).click();
+    await expect(page).toHaveURL(new RegExp(`${FIRST}\\?slide=\\d+$`));
+    const last = /(\d+)$/.exec(page.url())![1];
+    await expect(
+      deck()
+        .getByText(new RegExp(`${last}\\s*(of|/)\\s*${last}`))
+        .first(),
+    ).toBeVisible();
+    // Next on the last slide: the next page, on its first slide.
+    await deck()
+      .getByRole("button", { name: "Next page", exact: true })
+      .click();
+    await expect(page).toHaveURL(SECOND);
+    await expect(
+      deck()
+        .getByText(/\b1\s*(of|\/)\s*\d+/)
+        .first(),
+    ).toBeVisible();
+  });
+
+  test("the slideshow fits the first screen, controls included", async ({
+    page,
+  }) => {
+    await open(page, FIRST);
+    const deck = page.locator("[data-current] [data-swipe-scope]").first();
+    await expect(currentPane(page).locator("h1")).toBeInViewport({ ratio: 1 });
+    await expect(deck.locator('[data-step="1"]')).toBeInViewport({ ratio: 1 });
+    await expect(deck.locator('[data-step="-1"]')).toBeInViewport({ ratio: 1 });
+  });
+
   test("skip button leaves the deck mid-slides", async ({ page }, testInfo) => {
     test.skip(testInfo.project.name !== "mobile", "mobile deck control");
     await open(page, FIRST);
@@ -662,5 +744,36 @@ test.describe("slideshow flows into the book", () => {
     // Still on slide 1 of 8 — the skip control goes straight to the next page.
     await scope.getByRole("button", { name: "Next page" }).click();
     await expect(page).toHaveURL(SECOND);
+  });
+});
+
+test.describe("shelves under construction", () => {
+  test("Advanced carries the notice and still lists its books", async ({
+    page,
+  }) => {
+    await page.goto("/en/advanced");
+    const main = page.locator("main");
+    await expect(main.getByRole("note")).toContainText("Under construction");
+    await expect(main.getByRole("link", { name: /TAK Wiki/ })).toBeVisible();
+  });
+
+  test("Develop shows only the notice, and its books lead back to it", async ({
+    page,
+  }) => {
+    await page.goto("/en/dev");
+    const main = page.locator("main");
+    await expect(main.getByRole("note")).toContainText("Under construction");
+    await expect(main.getByRole("link", { name: /Architecture/ })).toHaveCount(
+      0,
+    );
+    for (const url of [
+      "/en/architecture",
+      "/en/introduction/",
+      "/en/dev/develop-deploy-app/api",
+    ]) {
+      await page.goto(url);
+      await expect(page).toHaveURL("/en/dev");
+      await expect(main.getByRole("note")).toBeVisible();
+    }
   });
 });
