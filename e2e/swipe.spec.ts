@@ -823,6 +823,26 @@ test.describe("slideshow flows into the book", () => {
     await expect(deck.locator('[data-step="-1"]')).toBeInViewport({ ratio: 1 });
   });
 
+  test("a narrow deck keeps its controls inside and apart", async ({
+    page,
+  }, testInfo) => {
+    test.skip(testInfo.project.name !== "desktop", "desktop control row");
+    await page.setViewportSize({ width: 800, height: 600 });
+    await open(page, FIRST);
+    const deck = page.locator("[data-current] [data-swipe-scope]").first();
+    const [frame, prev, next, count] = await Promise.all([
+      deck.boundingBox(),
+      deck.locator('[data-step="-1"]').boundingBox(),
+      deck.locator('[data-step="1"]').boundingBox(),
+      deck.getByText(/^Step \d+ of \d+$/).boundingBox(),
+    ]);
+    if (!frame || !prev || !next || !count) throw new Error("deck not visible");
+    expect(prev.x).toBeGreaterThanOrEqual(frame.x);
+    expect(next.x + next.width).toBeLessThanOrEqual(frame.x + frame.width);
+    expect(count.x).toBeGreaterThanOrEqual(prev.x + prev.width);
+    expect(count.x + count.width).toBeLessThanOrEqual(next.x);
+  });
+
   test("skip button leaves the deck mid-slides", async ({ page }, testInfo) => {
     test.skip(testInfo.project.name !== "mobile", "mobile deck control");
     await open(page, FIRST);
@@ -843,6 +863,45 @@ test.describe("shelves under construction", () => {
     await expect(main.getByRole("link", { name: /TAK Wiki/ })).toBeVisible();
   });
 
+  test("every wiki cover and page carries the notice", async ({ page }) => {
+    await page.goto("/en/wikis/tak");
+    await expect(page.locator("main").getByRole("note")).toBeVisible();
+    const manifest = (await (
+      await page.request.get("/content/en/manifest.json")
+    ).json()) as { pages: { collection: string; slug: string }[] };
+    const wikiPage = manifest.pages.find((p) => p.collection === "wikis/mtx");
+    if (!wikiPage) throw new Error("no wiki page");
+    await open(page, `/en/wikis/mtx/${wikiPage.slug}`);
+    await expect(currentPane(page).getByRole("note")).toBeVisible();
+  });
+
+  test("the reading order ends where the shown books end", async ({ page }) => {
+    // The synced manifest still lists the hidden books after the wikis.
+    const manifest = (await (
+      await page.request.get("/content/en/manifest.json")
+    ).json()) as {
+      collections: { slug: string; section: string; order: number }[];
+      pages: { collection: string; slug: string; order: number }[];
+    };
+    const lastBook = manifest.collections
+      .filter((c) => c.section !== "dev")
+      .sort((a, b) => a.order - b.order)
+      .at(-1);
+    const lastPage = manifest.pages
+      .filter((p) => p.collection === lastBook?.slug)
+      .sort((a, b) => a.order - b.order)
+      .at(-1);
+    if (!lastBook || !lastPage) throw new Error("no last page");
+    const url = `/en/${lastBook.slug}/${lastPage.slug}`;
+    await open(page, url);
+    await expect(
+      currentPane(page).getByRole("link", { name: "Next" }),
+    ).toHaveCount(0);
+    await page.keyboard.press("ArrowRight");
+    await page.waitForTimeout(500);
+    await expect(page).toHaveURL(url);
+  });
+
   test("Develop shows only the notice, and its books lead back to it", async ({
     page,
   }) => {
@@ -852,10 +911,19 @@ test.describe("shelves under construction", () => {
     await expect(main.getByRole("link", { name: /Architecture/ })).toHaveCount(
       0,
     );
+    // Also an outdated URL of one of its pages, found by the page's urlId.
+    const manifest = (await (
+      await page.request.get("/content/en/manifest.json")
+    ).json()) as { pages: { collection: string; slug: string }[] };
+    const hidden = manifest.pages.find((p) => p.collection === "architecture");
+    if (!hidden) throw new Error("no developer page");
+    const urlId = hidden.slug.split("-").at(-1);
     for (const url of [
       "/en/architecture",
       "/en/introduction/",
       "/en/dev/develop-deploy-app/api",
+      `/en/architecture/${hidden.slug}`,
+      `/en/deploy-app/an-old-title-${urlId}`,
     ]) {
       await page.goto(url);
       await expect(page).toHaveURL("/en/dev");
