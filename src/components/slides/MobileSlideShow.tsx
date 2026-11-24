@@ -67,7 +67,7 @@ export function MobileSlideShow({
       role="group"
       aria-roledescription="carousel"
       aria-label={block.title}
-      className="mt-1 mb-2 flex h-[calc(100dvh-var(--header-h)-var(--tabbar-h)-4.5rem)] min-h-[min(20rem,100cqh)] flex-[1_1_0px] flex-col overflow-hidden rounded-xl border border-border bg-card"
+      className="mt-1 mb-2 flex h-[calc(100dvh-var(--header-h)-var(--tabbar-h)-4.5rem)] min-h-[min(17rem,100cqh)] flex-[1_1_0px] flex-col overflow-hidden rounded-xl border border-border bg-card"
     >
       <div
         ref={viewportRef}
