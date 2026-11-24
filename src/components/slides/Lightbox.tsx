@@ -17,6 +17,8 @@ export function Lightbox({ src, alt, onClose }: LightboxProps) {
     <Dialog open={!!src} onOpenChange={(open) => !open && onClose()}>
       <DialogContent
         data-swipe-scope="lightbox"
+        // Only the fullscreen element's subtree is painted while one is up.
+        container={document.fullscreenElement}
         showCloseButton
         className="flex h-[95dvh] w-[95vw] max-w-none items-center justify-center border-none bg-black/95 p-0 shadow-none sm:max-w-none"
         onClick={onClose}
