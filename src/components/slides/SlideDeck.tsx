@@ -1,19 +1,15 @@
-import { useCallback, useEffect, useRef, useState } from "react";
-import { useNavigate, useParams, useSearch } from "@tanstack/react-router";
-import useEmblaCarousel from "embla-carousel-react";
+import { memo, useEffect, useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { ChevronLeft, ChevronRight, Maximize2, Minimize2 } from "lucide-react";
 import type { Slide, SlidesetBlock } from "@shared/content-schema";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { Lightbox } from "@/components/slides/Lightbox";
-import { useImagePreloader } from "@/components/slides/useImagePreloader";
-import { useEdgePageFlow } from "@/components/slides/useEdgePageFlow";
+import { SlideImage } from "@/components/slides/SlideImage";
+import { usePreloadImages } from "@/components/slides/useImagePreloader";
+import { useDeck } from "@/components/slides/useDeck";
 import { useFitText } from "@/components/slides/useFitText";
-import { useReaderData } from "@/lib/useReaderData";
-import { useReadingView } from "@/lib/platform";
 import { useTextScaleMult } from "@/lib/textScale";
-import { resolveGlobalPosition } from "@/lib/content/neighbors";
 
 interface SlideDeckProps {
   block: SlidesetBlock;
@@ -21,131 +17,80 @@ interface SlideDeckProps {
   bindSlideParam?: boolean;
 }
 
+type Enlarged = { src: string; alt?: string };
+
 /**
  * Desktop rendering of a slideset: an Embla deck inside the page swiper.
  * Gesture ownership is one source-level rule: the section is a
- * data-swipe-scope, so the PageSwiper's watchDrag rejects gestures starting
- * here. The deck deliberately has no wheel plugin — trackpad swipes always
- * turn the page, drags/buttons/keys drive the deck.
+ * data-swipe-scope, so the PageSwiper leaves gestures starting here alone —
+ * drags, trackpad swipes, buttons and keys drive the deck, and past its
+ * first or last slide they continue into the neighbouring page (useDeck).
+ *
+ * On a guide page the deck is a flex item that fills the rest of the first
+ * screen (PagePane); the height below only applies outside one.
  */
 export function SlideDeck({ block, bindSlideParam = false }: SlideDeckProps) {
   const { t } = useTranslation();
-  const navigate = useNavigate();
-  const params = useParams({ strict: false });
-  const reader = useReaderData();
-  const view = useReadingView();
-  const search = useSearch({ strict: false }) as { slide?: number };
-  const sectionRef = useRef<HTMLElement>(null);
-
-  const initialSlide = bindSlideParam && search.slide ? search.slide - 1 : 0;
-  const [selected, setSelected] = useState(() =>
-    Math.min(Math.max(initialSlide, 0), block.slides.length - 1),
-  );
-  const [fullscreen, setFullscreen] = useState(false);
-  const [enlarged, setEnlarged] = useState<{ src: string; alt?: string }>();
-
-  const [viewportRef, embla] = useEmblaCarousel({
-    axis: "x",
-    align: "start",
-    containScroll: "trimSnaps",
-    skipSnaps: false,
-    duration: 25,
-    startIndex: selected,
-    watchFocus: false,
-  });
-
-  const allImageSrcs = block.slides.flatMap((s) => s.images.map((i) => i.src));
-  const preloader = useImagePreloader(allImageSrcs);
-
-  useEffect(() => {
-    if (!embla) return;
-    const onSelect = () => {
-      const index = embla.selectedScrollSnap();
-      setSelected(index);
-      if (bindSlideParam) {
-        void navigate({
-          to: ".",
-          search: (prev: Record<string, unknown>) => ({
-            ...prev,
-            slide: index + 1,
-          }),
-          replace: true,
-        });
-      }
-    };
-    embla.on("select", onSelect);
-    return () => {
-      embla.off("select", onSelect);
-    };
-  }, [embla, bindSlideParam, navigate]);
-
-  const goTo = useCallback((index: number) => embla?.scrollTo(index), [embla]);
-
-  // Dragging past the deck's edges continues through the book, exactly like
-  // the mobile show — the deck never dead-ends the reading flow.
-  const position =
-    reader?.slug !== undefined
-      ? resolveGlobalPosition(
-          reader.manifest,
-          reader.collection,
-          reader.slug,
-          view,
-        )
-      : undefined;
-  const goToPage = useCallback(
-    (page: { collection: string; slug: string } | undefined) => {
-      if (!page || !params.locale) return;
-      void navigate({
-        to: "/$locale/$",
-        params: {
-          locale: params.locale,
-          _splat: `${page.collection}/${page.slug}`,
-        },
-      });
-    },
-    [navigate, params.locale],
-  );
-  const isLast = selected === block.slides.length - 1;
-  // Forward from the last slide continues into the next chapter, so the Next
-  // button never dead-ends — same flow as the drag-past-edge gesture below.
-  const goForward = () => {
-    if (!isLast) embla?.scrollNext();
-    else goToPage(position?.next);
-  };
-  useEdgePageFlow(embla, {
-    isFirst: selected === 0,
+  const count = block.slides.length;
+  const {
+    sectionRef,
+    viewportRef,
+    selected,
+    isFirst,
     isLast,
-    onNextPage: () => goToPage(position?.next),
-    onPrevPage: () => goToPage(position?.prev),
-  });
+    hasPrevPage,
+    hasNextPage,
+    goTo,
+    goPrev,
+    goNext,
+  } = useDeck(count, { bindSlideParam, duration: 25 });
+  const [fullscreen, setFullscreen] = useState(false);
+  const [enlarged, setEnlarged] = useState<Enlarged>();
 
-  const onKeyDown = (e: React.KeyboardEvent) => {
-    if (e.key === "ArrowLeft") {
-      e.preventDefault();
-      e.stopPropagation();
-      embla?.scrollPrev();
-    } else if (e.key === "ArrowRight" || e.key === " ") {
-      e.preventDefault();
-      e.stopPropagation();
-      embla?.scrollNext();
-    } else if (e.key === "f") {
-      void toggleFullscreen();
-    }
-  };
+  usePreloadImages(
+    useMemo(
+      () => block.slides.flatMap((s) => s.images.map((i) => i.src)),
+      [block],
+    ),
+  );
 
-  const toggleFullscreen = async () => {
+  // The whole reader goes fullscreen, not this deck, so it stays fullscreen
+  // when a step continues on the next page.
+  const toggleFullscreen = () => {
     if (document.fullscreenElement) {
-      await document.exitFullscreen().catch(() => {});
+      void document.exitFullscreen().catch(() => {});
     } else {
-      await sectionRef.current?.requestFullscreen().catch(() => {});
+      void sectionRef.current
+        ?.closest("[data-reader-root]")
+        ?.requestFullscreen()
+        .catch(() => {});
     }
   };
 
   useEffect(() => {
     const onChange = () => setFullscreen(!!document.fullscreenElement);
+    onChange();
     document.addEventListener("fullscreenchange", onChange);
     return () => document.removeEventListener("fullscreenchange", onChange);
   }, []);
+
+  const onKeyDown = (e: React.KeyboardEvent) => {
+    // Space on a focused button is that button's own click.
+    if (e.key === " " && e.target !== e.currentTarget) return;
+    if (e.key === "ArrowLeft") {
+      e.preventDefault();
+      e.stopPropagation();
+      goPrev();
+    } else if (e.key === "ArrowRight" || e.key === " ") {
+      e.preventDefault();
+      e.stopPropagation();
+      goNext();
+    } else if (e.key === "f") {
+      toggleFullscreen();
+    }
+  };
+
+  const stepOf = t("slides.stepOf", { current: selected + 1, total: count });
 
   return (
     <section
@@ -157,103 +102,96 @@ export function SlideDeck({ block, bindSlideParam = false }: SlideDeckProps) {
       tabIndex={0}
       onKeyDown={onKeyDown}
       className={cn(
-        "my-8 rounded-xl border border-border bg-card outline-none focus-visible:ring-2 focus-visible:ring-ring",
-        // Widens into the pane's spare width; needs @container on PagePane.
-        !fullscreen && "md:mx-[calc(-1*clamp(0px,(100cqi_-_48rem)/2,10rem))]",
-        fullscreen &&
-          "flex h-full flex-col justify-center rounded-none bg-background",
+        "mt-1 mb-2 flex h-[70dvh] min-h-[22rem] flex-[1_1_0px] flex-col rounded-xl border border-border bg-card outline-none focus-visible:ring-2 focus-visible:ring-ring",
+        // Widens into the pane's spare width; PagePane is the container.
+        "md:mx-[calc(-1*clamp(0px,(100cqi_-_48rem)/2,10rem))]",
       )}
     >
-      <div className="flex items-center justify-between border-b border-border px-4 py-3">
-        <div className="min-w-0">
-          {block.title && (
-            <h3 className="truncate font-semibold">{block.title}</h3>
-          )}
-          <p className="text-xs text-muted-foreground tabular-nums">
-            {t("slides.stepOf", {
-              current: selected + 1,
-              total: block.slides.length,
-            })}
-          </p>
-        </div>
-        <Button
-          variant="ghost"
-          size="icon-sm"
-          onClick={() => void toggleFullscreen()}
-          aria-label={
-            fullscreen ? t("slides.exitFullscreen") : t("slides.fullscreen")
-          }
-        >
-          {fullscreen ? <Minimize2 /> : <Maximize2 />}
-        </Button>
-      </div>
+      {block.title && (
+        <h3 className="truncate border-b border-border px-4 py-2 font-semibold">
+          {block.title}
+        </h3>
+      )}
 
-      <div ref={viewportRef} className="overflow-hidden">
-        <div className="flex">
+      <div ref={viewportRef} className="min-h-0 flex-1 overflow-hidden">
+        <div className="flex h-full">
           {block.slides.map((slide, i) => (
             <div
               key={i}
-              className="min-w-0 flex-[0_0_100%]"
+              className="h-full min-w-0 flex-[0_0_100%]"
               inert={i !== selected}
               role="group"
               aria-roledescription="slide"
-              aria-label={`${i + 1} / ${block.slides.length}`}
+              aria-label={`${i + 1} / ${count}`}
             >
               <SlideContent
                 slide={slide}
                 fullscreen={fullscreen}
-                imageLoaded={preloader.isLoaded}
-                onEnlarge={(src, alt) => setEnlarged({ src, alt })}
+                onEnlarge={setEnlarged}
               />
             </div>
           ))}
         </div>
       </div>
 
-      <div className="flex items-center justify-between gap-4 border-t border-border px-4 py-3">
+      <div className="flex shrink-0 items-center gap-3 border-t border-border px-3 py-2">
         <Button
           variant="outline"
           size="sm"
-          onClick={() => embla?.scrollPrev()}
-          disabled={selected === 0}
+          data-step="-1"
+          onClick={goPrev}
+          disabled={isFirst && !hasPrevPage}
         >
           <ChevronLeft />
-          {t("slides.prevStep")}
+          {isFirst && hasPrevPage
+            ? t("reader.previousPage")
+            : t("slides.prevStep")}
         </Button>
-        <div
-          className="flex items-center gap-1.5"
-          role="tablist"
-          aria-label={t("slides.stepOf", {
-            current: selected + 1,
-            total: block.slides.length,
-          })}
-        >
-          {block.slides.map((_, i) => (
-            <button
-              key={i}
-              type="button"
-              role="tab"
-              aria-selected={i === selected}
-              aria-label={`${i + 1}`}
-              onClick={() => goTo(i)}
-              className={cn(
-                "size-2 rounded-full transition-all",
-                i === selected
-                  ? "w-5 bg-primary"
-                  : "bg-muted hover:bg-muted-foreground",
-              )}
-            />
-          ))}
+        <div className="flex min-w-0 flex-1 items-center justify-center gap-3">
+          <p className="shrink-0 text-xs text-muted-foreground tabular-nums">
+            {stepOf}
+          </p>
+          <div
+            className="flex min-w-0 items-center gap-1.5 overflow-hidden"
+            role="tablist"
+            aria-label={stepOf}
+          >
+            {block.slides.map((_, i) => (
+              <button
+                key={i}
+                type="button"
+                role="tab"
+                aria-selected={i === selected}
+                aria-label={`${i + 1}`}
+                onClick={() => goTo(i)}
+                className={cn(
+                  "size-2 shrink-0 rounded-full transition-all",
+                  i === selected
+                    ? "w-5 bg-primary"
+                    : "bg-muted hover:bg-muted-foreground",
+                )}
+              />
+            ))}
+          </div>
         </div>
+        <Button
+          variant="ghost"
+          size="icon-sm"
+          onClick={toggleFullscreen}
+          aria-label={
+            fullscreen ? t("slides.exitFullscreen") : t("slides.fullscreen")
+          }
+        >
+          {fullscreen ? <Minimize2 /> : <Maximize2 />}
+        </Button>
         <Button
           variant="outline"
           size="sm"
-          onClick={goForward}
-          disabled={isLast && !position?.next}
+          data-step="1"
+          onClick={goNext}
+          disabled={isLast && !hasNextPage}
         >
-          {isLast && position?.next
-            ? t("reader.nextPage")
-            : t("slides.nextStep")}
+          {isLast && hasNextPage ? t("reader.nextPage") : t("slides.nextStep")}
           <ChevronRight />
         </Button>
       </div>
@@ -267,16 +205,15 @@ export function SlideDeck({ block, bindSlideParam = false }: SlideDeckProps) {
   );
 }
 
-function SlideContent({
+// Memoized: a slide change re-renders the deck, not every slide's content.
+const SlideContent = memo(function SlideContent({
   slide,
   fullscreen,
-  imageLoaded,
   onEnlarge,
 }: {
   slide: Slide;
   fullscreen: boolean;
-  imageLoaded: (src: string) => boolean;
-  onEnlarge: (src: string, alt?: string) => void;
+  onEnlarge: (image: Enlarged) => void;
 }) {
   const image = slide.images[0];
   // Desktop guide slides standardize on image-left/text-right; only the
@@ -292,41 +229,28 @@ function SlideContent({
       : "grid-cols-[minmax(0,1.618fr)_minmax(0,1fr)]";
 
   // The caption scales up to fill its column but is clamped so even the most
-  // verbose slide always fits — the box owns a fixed height, so the fit is
-  // stable. Sparse slides grow into bold headlines; fullscreen gets more room.
-  // The clamps follow the global text-size control so deck captions scale too.
+  // verbose slide always fits — the slide's height comes from the deck, not
+  // from its text, so the fit is stable. Sparse slides grow into bold
+  // headlines; fullscreen gets more room. The clamps follow the global
+  // text-size control so deck captions scale too.
   const textScale = useTextScaleMult();
   const { boxRef, contentRef, fontSize } = useFitText({
     min: Math.round(13 * textScale),
     max: Math.round((fullscreen ? 24 : 19) * textScale),
   });
 
-  const imageEl = (img: {
-    src: string;
-    alt?: string;
-    width?: number;
-    height?: number;
-  }) => (
+  const imageEl = (img: Slide["images"][number]) => (
     <button
       key={img.src}
       type="button"
       className="group relative flex h-full min-h-0 w-full min-w-0 cursor-zoom-in items-center justify-center rounded-md outline-none focus-visible:ring-2 focus-visible:ring-ring"
-      onClick={() => onEnlarge(img.src, img.alt)}
+      onClick={() => onEnlarge({ src: img.src, alt: img.alt })}
     >
-      {!imageLoaded(img.src) && (
-        <span className="absolute inset-0 flex items-center justify-center">
-          <span className="size-8 animate-spin rounded-full border-2 border-primary border-t-transparent" />
-        </span>
-      )}
-      <img
-        src={img.src}
-        alt={img.alt ?? slide.title ?? ""}
-        width={img.width}
-        height={img.height}
-        className={cn(
-          "max-h-full max-w-full rounded-md object-contain transition-opacity duration-300",
-          imageLoaded(img.src) ? "opacity-100" : "opacity-0",
-        )}
+      <SlideImage
+        image={img}
+        fallbackAlt={slide.title}
+        className="max-h-full max-w-full rounded-md duration-300"
+        spinnerClassName="size-8"
       />
     </button>
   );
@@ -356,16 +280,11 @@ function SlideContent({
     </div>
   );
 
-  // A fixed slide height keeps the deck uniform and gives the caption a stable
-  // box to fit into. Tall enough that even the most verbose caption in the
-  // corpus fits without scrolling; fullscreen gets the taller frame.
-  const frame = fullscreen ? "h-[72dvh]" : "h-[62dvh] min-h-[420px]";
-
   // Legacy / unused layout: a grid of images above a plain caption. Kept for
   // safety (no slide currently authors it) without the fit machinery.
   if (slide.layout === "grid") {
     return (
-      <div className="space-y-4 p-4 md:p-6">
+      <div className="h-full space-y-4 overflow-y-auto p-4 md:p-6">
         <div className="grid grid-cols-2 gap-3">
           {slide.images.map(imageEl)}
         </div>
@@ -387,9 +306,8 @@ function SlideContent({
           // PowerPoint-style split: image panel left, caption right, divided on
           // the golden ratio — the major column goes to the image or the text
           // depending on the screenshot's orientation (see `columns`).
-          "grid items-stretch gap-6 p-4 md:gap-8 md:p-6",
+          "grid h-full grid-rows-[minmax(0,1fr)] items-stretch gap-6 p-4 md:gap-8 md:p-6",
           columns,
-          frame,
         )}
       >
         {slide.layout === "image-right" ? (
@@ -410,8 +328,8 @@ function SlideContent({
   // Text-only slide: a centred, measure-constrained block — reads like a
   // section title card rather than a wall of full-width text.
   return (
-    <div className={cn("flex flex-col p-4 md:p-8", frame)}>
+    <div className="flex h-full flex-col p-4 md:p-8">
       {caption("w-full flex-1", "mx-auto max-w-[55ch]")}
     </div>
   );
-}
+});
