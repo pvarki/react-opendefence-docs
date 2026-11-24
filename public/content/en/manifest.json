@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "locale": "en",
-  "generatedAt": "2026-11-24T11:33:19.899Z",
+  "generatedAt": "2026-11-24T14:03:56.876Z",
   "collections": [
     {
       "slug": "deploy-app",
@@ -4233,7 +4233,7 @@
         "Ask for a drone"
       ],
       "path": "/content/en/pages/wikis/opendefence-plugins/ask-for-a-drone-Wm8lqKzB5v.json",
-      "updatedAt": "2026-11-23T15:08:16.286Z",
+      "updatedAt": "2026-11-24T13:59:17.601Z",
       "order": 33,
       "chapterId": "forward-observer-officer-foo-QTezaGDSdx",
       "chapterLabel": "Forward observer officer"
@@ -4569,7 +4569,7 @@
         "Fly by the numbers"
       ],
       "path": "/content/en/pages/wikis/opendefence-plugins/fly-by-the-numbers-LrXYv48SY2.json",
-      "updatedAt": "2026-11-23T15:09:36.293Z",
+      "updatedAt": "2026-11-24T13:59:22.763Z",
       "order": 54,
       "chapterId": "pilot-U9TjVVMu8m",
       "chapterLabel": "Pilot"
@@ -4679,7 +4679,7 @@
         "Use a PTT button or VOX"
       ],
       "path": "/content/en/pages/wikis/opendefence-plugins/use-a-ptt-button-or-vox-aPSKb5LWyf.json",
-      "updatedAt": "2026-11-23T21:08:39.550Z",
+      "updatedAt": "2026-11-24T14:01:08.926Z",
       "order": 61,
       "chapterId": "starting-as-a-user-8NvBWlZmaC",
       "chapterLabel": "Starting as a user"
@@ -4775,7 +4775,7 @@
         "Fix a PTT that will not talk"
       ],
       "path": "/content/en/pages/wikis/opendefence-plugins/fix-a-ptt-that-will-not-talk-cs5tInnguw.json",
-      "updatedAt": "2026-11-23T20:43:05.193Z",
+      "updatedAt": "2026-11-24T14:01:13.090Z",
       "order": 67,
       "chapterId": "settings-39iUCv9bab",
       "chapterLabel": "Settings"
@@ -4821,7 +4821,7 @@
         "Sign in"
       ],
       "path": "/content/en/pages/wikis/opendefence-plugins/sign-in-3ohSyV0wd8.json",
-      "updatedAt": "2026-11-23T20:43:07.951Z",
+      "updatedAt": "2026-11-24T14:02:17.533Z",
       "order": 70,
       "chapterId": "starting-as-a-user-DloUWupjfO",
       "chapterLabel": "Starting as a user"

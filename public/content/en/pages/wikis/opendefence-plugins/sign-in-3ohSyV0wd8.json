@@ -11,7 +11,7 @@
     "Sign in"
   ],
   "createdAt": "2026-11-06T23:55:44.675Z",
-  "updatedAt": "2026-11-23T20:43:07.951Z",
+  "updatedAt": "2026-11-24T14:02:17.533Z",
   "headings": [],
   "blocks": [
     {
@@ -45,7 +45,7 @@
         {
           "title": "Choose your certificate",
           "layout": "image-bottom",
-          "html": "<p>Pick the certificate with your callsign if the browser asks, and tap <strong>SELECT</strong>. On the next pages tap Continue, and Create Account the first time.</p>",
+          "html": "<p>If the browser asks, pick the certificate with your callsign and tap <strong>SELECT</strong>. Then tap <strong>Continue</strong> on each page, and <strong>Create Account</strong> the first time.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/18115f806db47735.webp",
@@ -57,7 +57,7 @@
         {
           "title": "Verify this phone",
           "layout": "image-bottom",
-          "html": "<p>Back in <strong>Chats</strong>, tap <strong>Verify</strong>, then Use my recovery key, enter the key and tap Unlock. On your first phone the yellow line offers Set up instead, so save the key it gives you.</p>",
+          "html": "<p>Back in <strong>Chats</strong>, tap <strong>Verify</strong>, then <strong>Use my recovery key</strong>, enter the key and tap <strong>Unlock</strong>. On your first phone, tap <strong>Set up</strong> instead and save the key.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/9c20311eca55e941.webp",

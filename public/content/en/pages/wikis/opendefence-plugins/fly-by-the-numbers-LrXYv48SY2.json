@@ -11,7 +11,7 @@
     "Fly by the numbers"
   ],
   "createdAt": "2026-11-06T23:07:15.584Z",
-  "updatedAt": "2026-11-23T15:09:36.293Z",
+  "updatedAt": "2026-11-24T13:59:22.763Z",
   "headings": [],
   "blocks": [
     {
@@ -21,7 +21,7 @@
         {
           "title": "Set up the pilot's phone",
           "layout": "image-bottom",
-          "html": "<p>Open Drones and its Settings tab, tap <strong>Pilot</strong> and set your team under <strong>Unit</strong> with <strong>Pick</strong>. Tap <strong>‹</strong> to open the pilot page.</p>",
+          "html": "<p>In <strong>Drones</strong>, open <strong>Settings</strong>, tap <strong>Pilot</strong>, then <strong>Pick</strong> your team under <strong>Unit</strong>. Tap <strong>‹</strong> to open the pilot page.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/8ffe854b8953a0d0.webp",
@@ -57,7 +57,7 @@
         {
           "title": "Fly by the numbers",
           "layout": "image-bottom",
-          "html": "<p>Fly by the big bearing and the arrow, drawn <strong>North up</strong>, with <strong>Distance</strong> and <strong>Flight left</strong> under them. The bottom line says how far the drone is from the edge of the corridor it must stay in, left or right as it faces the target.</p>",
+          "html": "<p>Fly by the big bearing and the arrow, drawn <strong>North up</strong>. <strong>Corridor edge</strong> says how far the drone is from leaving its area, left or right as it faces the target.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/917b6992187d84ff.webp",
@@ -69,7 +69,7 @@
         {
           "title": "See the map",
           "layout": "image-bottom",
-          "html": "<p>The pilot page's Map button shows the target here. Tap <strong>Drones</strong> to come back.</p>",
+          "html": "<p><strong>Map</strong> on the pilot page shows the target on the map. Tap <strong>Drones</strong> to come back.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/9d68eb46b510eedd.webp",

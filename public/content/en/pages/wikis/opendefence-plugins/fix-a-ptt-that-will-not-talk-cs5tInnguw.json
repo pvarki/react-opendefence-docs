@@ -11,7 +11,7 @@
     "Fix a PTT that will not talk"
   ],
   "createdAt": "2026-11-23T04:59:50.655Z",
-  "updatedAt": "2026-11-23T20:43:05.193Z",
+  "updatedAt": "2026-11-24T14:01:13.090Z",
   "headings": [],
   "blocks": [
     {
@@ -21,7 +21,7 @@
         {
           "title": "Allow the microphone",
           "layout": "image-bottom",
-          "html": "<p>If the PTT reads <strong>NO MIC</strong> after a press, Voice may not use the microphone. Tap <strong>Allow microphone</strong>.</p>",
+          "html": "<p>If the PTT reads <strong>NO MIC</strong> after a press, Android has not let OpenDefence Voice use the microphone. Tap <strong>Allow microphone</strong>.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/cadc7dc64b41db5d.webp",
@@ -33,7 +33,7 @@
         {
           "title": "Answer Android's questions",
           "layout": "image-bottom",
-          "html": "<p>Tap <strong>While using the app</strong>, then allow nearby devices and notifications when Android asks. A Bluetooth headset or PTT button needs nearby devices.</p>",
+          "html": "<p>Tap <strong>While using the app</strong>, then <strong>Allow</strong> for nearby devices and notifications. A Bluetooth headset or PTT button needs nearby devices.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/cf8fe21b9e7d20bb.webp",
@@ -45,7 +45,7 @@
         {
           "title": "Connect ATAK first",
           "layout": "image-bottom",
-          "html": "<p><strong>Connect ATAK to the TAK server first</strong> means ATAK is not connected to its TAK server, and the dot at the bottom right of the map is red. Once ATAK connects, Voice connects by itself.</p>",
+          "html": "<p><strong>Connect ATAK to the TAK server first</strong> means ATAK is not connected, so ATAK's dot at the map's bottom right is red. Once ATAK connects, OpenDefence Voice connects by itself.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/49b63071420470d6.webp",

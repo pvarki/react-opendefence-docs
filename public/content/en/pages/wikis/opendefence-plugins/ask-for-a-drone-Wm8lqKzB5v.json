@@ -11,7 +11,7 @@
     "Ask for a drone"
   ],
   "createdAt": "2026-11-06T23:03:13.649Z",
-  "updatedAt": "2026-11-23T15:08:16.286Z",
+  "updatedAt": "2026-11-24T13:59:17.601Z",
   "headings": [],
   "blocks": [
     {
@@ -33,7 +33,7 @@
         {
           "title": "Tap the target",
           "layout": "image-bottom",
-          "html": "<p>Tap the enemy mark you want a drone on. <strong>Back</strong> cancels.</p>",
+          "html": "<p>Tap the enemy mark or drawn area you want a drone on. <strong>Back</strong> cancels.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/e54d9ccf670745d2.webp",
@@ -69,7 +69,7 @@
         {
           "title": "Pick who flies it",
           "layout": "image-bottom",
-          "html": "<p>Under <strong>To</strong>, the team your quota is on comes first, <strong>Any</strong> asks every team, <strong>HQ</strong> lets the HQ choose and a unit such as <strong>1J</strong> asks that unit. Pick one and tap <strong>Send</strong>.</p>",
+          "html": "<p>Under <strong>To</strong>, pick who should answer, then tap <strong>Send</strong>. <strong>HQ</strong> lets the HQ choose and <strong>Any</strong> asks every team.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/0d9c175e1d0ba025.webp",
@@ -93,7 +93,7 @@
         {
           "title": "If a drone is already there",
           "layout": "image-bottom",
-          "html": "<p>When a drone already flies on that target, the line under <strong>To</strong> says so. With more than four choices, tap <strong>To</strong> and pick from the list.</p>",
+          "html": "<p>When a drone already flies on that target, the line under <strong>To</strong> says so, such as <strong>Recon 4 already on it</strong>.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/01b208011af56620.webp",

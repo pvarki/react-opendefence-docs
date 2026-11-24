@@ -11,7 +11,7 @@
     "Use a PTT button or VOX"
   ],
   "createdAt": "2026-10-28T07:44:40.786Z",
-  "updatedAt": "2026-11-23T21:08:39.550Z",
+  "updatedAt": "2026-11-24T14:01:08.926Z",
   "headings": [],
   "blocks": [
     {
@@ -21,7 +21,7 @@
         {
           "title": "Open Devices",
           "layout": "image-bottom",
-          "html": "<p>In Voice, tap <strong>Settings</strong>, then <strong>Devices</strong>. On a Samsung XCover7, XCover6 Pro, Tab Active3, Tab Active4 Pro or Tab Active5, the Active Key talks in ATAK with no setup.</p>",
+          "html": "<p>Tap <strong>Voice</strong>, then <strong>Settings</strong> and <strong>Devices</strong>. The Active Key on some Samsung XCover and Tab Active models talks in ATAK with no setup.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/8841f82ffabf4ec5.webp",
@@ -33,7 +33,7 @@
         {
           "title": "Scan for your button",
           "layout": "image-bottom",
-          "html": "<p>Tap <strong>Scan for PTT devices</strong> and press the button on your PTT. When your button shows, tap Use beside it.</p>",
+          "html": "<p>Tap <strong>Scan for PTT devices</strong> and press the button on your PTT. When your button shows, tap <strong>Use</strong> beside it.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/5c0e1bb805e547f2.webp",
@@ -45,7 +45,7 @@
         {
           "title": "Volume key and tones",
           "layout": "image-bottom",
-          "html": "<p>Tick <strong>Volume-up PTT</strong> to talk with the volume-up key, which then no longer changes the volume. Tick <strong>PTT tones</strong> to hear whether a press goes out, is refused or nears its time limit.</p>",
+          "html": "<p>Tick <strong>Volume-up PTT</strong> to talk with the volume-up key, which then stops changing the volume. Tick <strong>PTT tones</strong> to hear if a press goes out or is refused.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/1b0917801132cb9e.webp",
@@ -57,7 +57,7 @@
         {
           "title": "Use a headset's talk button",
           "layout": "image-bottom",
-          "html": "<p>Tick <strong>Headset PTT</strong> to talk with the talk button of a Bluetooth headset. It works with headsets that send a talk event, such as the FalconClaw FC-PTT.</p>",
+          "html": "<p>Tick <strong>Headset PTT</strong> to talk with a Bluetooth headset's talk button. Only some headsets work this way, such as the FalconClaw FC-PTT.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/16abd82c498ee8eb.webp",
@@ -69,7 +69,7 @@
         {
           "title": "Talk from the background",
           "layout": "image-bottom",
-          "html": "<p>Pull down the notifications. <strong>Voice push-to-talk is ready</strong> means a Bluetooth PTT button, a headset's talk button and the volume-up key talk in the background, even with the phone locked.</p>",
+          "html": "<p>Pull down the notifications. <strong>Voice push-to-talk is ready</strong> means the PTT buttons and keys you set up here work in the background, even with the phone locked.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/0b37c74ab6139ce8.webp",
@@ -81,7 +81,7 @@
         {
           "title": "Talk without a press",
           "layout": "image-bottom",
-          "html": "<p>Tick <strong>Voice activation (VOX)</strong> to talk without a press, with a headset only. Drag the slider toward <strong>Less</strong> or <strong>More</strong>, or tap <strong>Default</strong>.</p>",
+          "html": "<p>Tick <strong>Voice activation (VOX)</strong> to talk without a press, with a headset only. Set <strong>VOX sensitivity</strong> with the slider, or tap <strong>Default</strong>.</p>",
           "images": [
             {
               "src": "/content/images/en/attachments/b59302e2539df5de.webp",
