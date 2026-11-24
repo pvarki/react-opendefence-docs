@@ -35,6 +35,7 @@ import { UnderConstructionBanner } from "@/components/reader/UnderConstructionBa
 import { setClientForBook, setPlatform, useReadingView } from "@/lib/platform";
 import { usePlatformPicker } from "@/lib/usePlatformPicker";
 import { PageSwiper } from "@/components/reader/PageSwiper";
+import type { SlideParam } from "@/components/reader/paneContext";
 import { NotFound } from "@/components/shell/NotFound";
 import { PlatformList } from "@/components/shell/PlatformList";
 import { ShelfHero } from "@/components/shell/ShelfHero";
@@ -92,7 +93,8 @@ async function resolveForLocale(
 }
 
 export const Route = createFileRoute("/$locale/$")({
-  validateSearch: (search: Record<string, unknown>): { slide?: number } => {
+  validateSearch: (search: Record<string, unknown>): { slide?: SlideParam } => {
+    if (search.slide === "last") return { slide: "last" };
     const slide = Number(search.slide);
     return Number.isInteger(slide) && slide >= 1 ? { slide } : {};
   },
