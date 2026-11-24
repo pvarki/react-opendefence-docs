@@ -44,22 +44,3 @@ export function useImageLoaded(src: string): boolean {
     () => false,
   );
 }
-
-/** @deprecated Subscribes a whole deck; the decks move to the hooks above. */
-export function useImagePreloader(srcs: string[]) {
-  useEffect(() => {
-    for (const src of srcs) preload(src);
-  }, [srcs]);
-
-  const loadedCount = useSyncExternalStore(
-    subscribe,
-    () => srcs.filter((s) => loaded.has(s)).length,
-    () => 0,
-  );
-
-  return {
-    loadedCount,
-    total: srcs.length,
-    isLoaded: (src: string) => loaded.has(src),
-  };
-}
