@@ -10,7 +10,7 @@ import { SiteFooter } from "@/components/shell/SiteFooter";
 import { CARD_IMAGES } from "@/lib/cardImages";
 import { bookDescription } from "@/lib/bookDescription";
 import { loadManifest } from "@/lib/content/loader";
-import { PAGE_FRAME } from "@/lib/pageFrame";
+import { PAGE_FRAME, SHELF_SCROLL } from "@/lib/pageFrame";
 import { siteSections } from "@/lib/siteSections";
 import { cn } from "@/lib/utils";
 
@@ -31,7 +31,7 @@ function AdvancedShelf() {
   const { sections } = Route.useLoaderData();
 
   return (
-    <div className="flex h-full flex-col overflow-y-auto">
+    <div className={SHELF_SCROLL}>
       <ShelfHero title={t("nav.advanced")} subtitle={t("home.powerCardDesc")} />
       <div className={cn(PAGE_FRAME, "pt-4 pb-8 md:pt-6 md:pb-10")}>
         <div className="max-w-3xl">
