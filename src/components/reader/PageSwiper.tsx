@@ -1,6 +1,5 @@
 import {
   useCallback,
-  useDeferredValue,
   useEffect,
   useLayoutEffect,
   useMemo,
@@ -42,6 +41,9 @@ const keyOf = (page: ManifestPage) => `${page.collection}/${page.slug}`;
 
 /** A press that moved the strip less than this is a click, not a swipe. */
 const TAP_SLOP_PX = 10;
+
+/** A page turn has played out by now; its page's new neighbour mounts then. */
+const TURN_MS = 700;
 
 /**
  * Book-like swipe navigation over the GLOBAL reading order: pages flow
@@ -106,9 +108,16 @@ function PageStrip({
   const router = useRouter();
   const reducedMotion = useReducedMotion();
 
-  // Deferred, so a page turn makes its page interactive before the page that
-  // becomes its new neighbour mounts.
-  const nearIndex = useDeferredValue(urlIndex);
+  // Mounted: the URL's page, the page a turn is leaving, and the pages next
+  // to where the reader has settled. Those follow only once a turn has played
+  // out (a page mounting in the middle of one stalls it) or a drag begins.
+  const [turn, setTurn] = useState({ at: urlIndex, from: urlIndex });
+  if (turn.at !== urlIndex) setTurn({ at: urlIndex, from: turn.at });
+  const [nearIndex, setNearIndex] = useState(urlIndex);
+  useEffect(() => {
+    const timer = setTimeout(() => setNearIndex(urlIndex), TURN_MS);
+    return () => clearTimeout(timer);
+  }, [urlIndex]);
 
   const [options] = useState(() => pageSwiperOptions(urlIndex));
   const [viewportRef, embla] = useEmblaCarousel(options);
@@ -153,9 +162,13 @@ function PageStrip({
       const shown = embla.selectedScrollSnap();
       // Already there — or a newer swipe is ahead of a URL still catching up.
       if (shown === urlIndex || shown === swipedTo.current) return;
+      // Where the strip is, in slots. A turn starts from next door only: from
+      // further away (quick presses outrun the animation) it would glide
+      // across slots that are not mounted.
+      const at = embla.scrollProgress() * (embla.scrollSnapList().length - 1);
       embla.scrollTo(
         urlIndex,
-        cut || reducedMotion || Math.abs(shown - urlIndex) > 1,
+        cut || reducedMotion || Math.abs(at - urlIndex) > 1.01,
       );
     },
     [embla],
@@ -183,6 +196,7 @@ function PageStrip({
     let downAt = 0;
     const onPointerDown = () => {
       downAt = embla.internalEngine().location.get();
+      setNearIndex(live.current.urlIndex); // a drag may reveal either side now
     };
     const onPointerUp = () => {
       const { positions, urlIndex } = live.current;
@@ -311,7 +325,9 @@ function PageStrip({
                 inert={!isCurrent}
                 data-current={isCurrent || undefined}
               >
-                {(isCurrent || Math.abs(i - nearIndex) <= 1) && (
+                {(isCurrent ||
+                  i === turn.from ||
+                  Math.abs(i - nearIndex) <= 1) && (
                   <PagePane
                     locale={locale}
                     position={position}
