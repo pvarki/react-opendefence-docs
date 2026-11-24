@@ -1,9 +1,9 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { useNavigate } from "@tanstack/react-router";
 import useEmblaCarousel from "embla-carousel-react";
-import { WheelGesturesPlugin } from "embla-carousel-wheel-gestures";
 import { usePane, type SlideParam } from "@/components/reader/paneContext";
 import { useEdgePageFlow } from "@/components/slides/useEdgePageFlow";
+import { onWheelSwipe } from "@/lib/wheelSwipe";
 
 /** Quiet time after the last slide change before `?slide=` is written. */
 const URL_WRITE_DELAY_MS = 250;
@@ -48,8 +48,7 @@ export function useDeck(
     startIndex: selected,
     watchFocus: false,
   }));
-  const [plugins] = useState(() => [WheelGesturesPlugin()]);
-  const [viewportRef, embla] = useEmblaCarousel(options, plugins);
+  const [viewportRef, embla] = useEmblaCarousel(options);
 
   useEffect(() => {
     if (!embla) return;
@@ -136,17 +135,19 @@ export function useDeck(
     onNextPage: () => stepPage(1, false),
   });
 
-  // A sideways trackpad swipe over the deck turns its slides (the wheel
-  // plugin above), so it must not reach the page swiper and turn the page.
+  // A trackpad swipe over the deck steps a slide, and past either end turns
+  // the page; it stays with the deck instead of turning the page behind it.
   useEffect(() => {
     const section = sectionRef.current;
-    if (!section) return;
-    const keep = (e: WheelEvent) => {
-      if (Math.abs(e.deltaX) > Math.abs(e.deltaY)) e.stopPropagation();
-    };
-    section.addEventListener("wheel", keep, { passive: true });
-    return () => section.removeEventListener("wheel", keep);
-  }, []);
+    if (!embla || !section) return;
+    return onWheelSwipe(section, (dir) => {
+      if (dir === 1 ? embla.canScrollNext() : embla.canScrollPrev()) {
+        embla.scrollTo(embla.selectedScrollSnap() + dir);
+      } else {
+        stepPage(dir, false);
+      }
+    });
+  }, [embla, stepPage]);
 
   return {
     sectionRef,

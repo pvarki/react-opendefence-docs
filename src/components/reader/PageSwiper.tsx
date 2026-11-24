@@ -9,7 +9,6 @@ import {
 } from "react";
 import { useNavigate, useRouter } from "@tanstack/react-router";
 import useEmblaCarousel from "embla-carousel-react";
-import { WheelGesturesPlugin } from "embla-carousel-wheel-gestures";
 import { useTranslation } from "react-i18next";
 import type { LocaleManifest, ManifestPage } from "@shared/content-schema";
 import type { ReadingView } from "@/lib/platform";
@@ -22,6 +21,7 @@ import {
 } from "@/lib/content/neighbors";
 import { pageSwiperOptions } from "@/components/reader/emblaPageOptions";
 import { stripBase } from "@/lib/base";
+import { onWheelSwipe } from "@/lib/wheelSwipe";
 import { PagePane } from "@/components/reader/PagePane";
 import type { SlideParam } from "@/components/reader/paneContext";
 import { useReducedMotion } from "@/components/reader/useReducedMotion";
@@ -111,8 +111,7 @@ function PageStrip({
   const nearIndex = useDeferredValue(urlIndex);
 
   const [options] = useState(() => pageSwiperOptions(urlIndex));
-  const [plugins] = useState(() => [WheelGesturesPlugin()]);
-  const [viewportRef, embla] = useEmblaCarousel(options, plugins);
+  const [viewportRef, embla] = useEmblaCarousel(options);
 
   // The carousel's handlers outlive renders; they read the route from here.
   const live = useRef({ positions, urlIndex, reducedMotion });
@@ -177,8 +176,8 @@ function PageStrip({
     cutTo.current = undefined;
   }, [urlIndex, positions, showUrlPage]);
 
-  // Carousel -> URL: only a pointer or trackpad gesture ends in "pointerUp",
-  // so the carousel's own page turns can never navigate.
+  // Carousel -> URL: only a finger or mouse drag ends in "pointerUp", so the
+  // carousel's own page turns can never navigate.
   useEffect(() => {
     if (!embla) return;
     let downAt = 0;
@@ -213,6 +212,16 @@ function PageStrip({
       embla.off("pointerDown", onPointerDown).off("pointerUp", onPointerUp);
     };
   }, [embla, go, showUrlPage]);
+
+  // A trackpad swipe turns one page.
+  useEffect(() => {
+    if (!embla) return;
+    return onWheelSwipe(embla.rootNode(), (dir) => {
+      const { positions, urlIndex } = live.current;
+      const dest = stepSplat(positions[urlIndex], dir);
+      if (dest) void go(dest);
+    });
+  }, [embla, go]);
 
   // Preload neighbors so a swipe reveals content, not a skeleton.
   useEffect(() => {
