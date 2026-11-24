@@ -102,7 +102,8 @@ export const Route = createFileRoute("/$locale/$")({
   validateSearch: (search: Record<string, unknown>): { slide?: SlideParam } => {
     if (search.slide === "last") return { slide: "last" };
     const slide = Number(search.slide);
-    return Number.isInteger(slide) && slide >= 1 ? { slide } : {};
+    // Explicitly none: the router otherwise passes an invalid value through.
+    return { slide: Number.isInteger(slide) && slide >= 1 ? slide : undefined };
   },
   loader: async ({ context, params, location }): Promise<ReaderData> => {
     const splat = params._splat ?? "";
