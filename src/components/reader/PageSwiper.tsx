@@ -203,7 +203,7 @@ function PageStrip({
       const moved = embla.internalEngine().location.get() - downAt;
       if (Math.abs(moved) < TAP_SLOP_PX) {
         // A click froze a page that was still sliding in: finish the turn.
-        embla.scrollTo(urlIndex);
+        embla.scrollTo(swipedTo.current ?? urlIndex);
         return;
       }
       const shown = embla.selectedScrollSnap();
