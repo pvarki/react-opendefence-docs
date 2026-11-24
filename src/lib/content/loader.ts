@@ -1,3 +1,7 @@
+import {
+  HIDDEN_SECTIONS,
+  UNDER_CONSTRUCTION_SECTIONS,
+} from "@config/collections";
 import { withBase } from "@/lib/base";
 import {
   LocaleManifestSchema,
@@ -61,13 +65,39 @@ function rebaseAssets(doc: PageDoc): PageDoc {
   return doc;
 }
 
+/**
+ * The manifest as the app sees it: books of hidden sections dropped, books of
+ * sections under construction flagged like a draft marker in Outline would.
+ */
+export function applySectionStatus(manifest: LocaleManifest): LocaleManifest {
+  const slugsIn = (sections: readonly string[]) =>
+    new Set(
+      manifest.collections
+        .filter((c) => sections.includes(c.section))
+        .map((c) => c.slug),
+    );
+  const hidden = slugsIn(HIDDEN_SECTIONS);
+  const flagged = slugsIn(UNDER_CONSTRUCTION_SECTIONS);
+  return {
+    ...manifest,
+    collections: manifest.collections
+      .filter((c) => !hidden.has(c.slug))
+      .map((c) => (flagged.has(c.slug) ? { ...c, underDevelopment: true } : c)),
+    pages: manifest.pages
+      .filter((p) => !hidden.has(p.collection))
+      .map((p) =>
+        flagged.has(p.collection) ? { ...p, underDevelopment: true } : p,
+      ),
+  };
+}
+
 const manifestCache = new Map<Locale, Promise<LocaleManifest>>();
 
 export function loadManifest(locale: Locale): Promise<LocaleManifest> {
   let cached = manifestCache.get(locale);
   if (!cached) {
     cached = fetchJson(`/content/${locale}/manifest.json`)
-      .then((data) => LocaleManifestSchema.parse(data))
+      .then((data) => applySectionStatus(LocaleManifestSchema.parse(data)))
       .catch((err: unknown) => {
         manifestCache.delete(locale); // don't cache failures
         throw err;

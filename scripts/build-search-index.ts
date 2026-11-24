@@ -16,7 +16,11 @@ import {
   LocaleManifestSchema,
   PageDocSchema,
 } from "../shared/content-schema";
-import { API_SPEC_SOURCES, RELEASE_DOC_SOURCES } from "../config/collections";
+import {
+  API_SPEC_SOURCES,
+  HIDDEN_SECTIONS,
+  RELEASE_DOC_SOURCES,
+} from "../config/collections";
 
 const PUBLIC_DIR = path.join(process.cwd(), "public");
 
@@ -170,7 +174,13 @@ async function main() {
     }
     const manifest = LocaleManifestSchema.parse(JSON.parse(manifestRaw));
 
+    const hidden = new Set(
+      manifest.collections
+        .filter((c) => HIDDEN_SECTIONS.includes(c.section))
+        .map((c) => c.slug),
+    );
     for (const page of manifest.pages) {
+      if (hidden.has(page.collection)) continue;
       const doc = PageDocSchema.parse(
         JSON.parse(
           await fs.readFile(
@@ -211,7 +221,9 @@ async function main() {
     }
   }
 
-  const refs = await indexDevReference(index);
+  const refs = HIDDEN_SECTIONS.includes("dev")
+    ? 0
+    : await indexDevReference(index);
 
   await fs.rm(path.join(PUBLIC_DIR, "pagefind"), {
     recursive: true,
