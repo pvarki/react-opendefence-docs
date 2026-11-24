@@ -110,9 +110,21 @@ export function useDeck(
       if (sectionRef.current?.contains(document.activeElement)) {
         focusOnArrival = { page: `${dest.collection}/${dest.slug}`, dir };
       }
+      // Leaving ahead of the pending ?slide write: the entry left behind
+      // must say where the reader was, for Back.
+      if (bindSlideParam && slide !== selected + 1) {
+        void navigate({
+          to: ".",
+          search: (prev: Record<string, unknown>) => ({
+            ...prev,
+            slide: selected + 1,
+          }),
+          replace: true,
+        });
+      }
       pane.step(dir, cut);
     },
-    [pane],
+    [pane, bindSlideParam, slide, selected, navigate],
   );
 
   const page = pane?.position.page;
