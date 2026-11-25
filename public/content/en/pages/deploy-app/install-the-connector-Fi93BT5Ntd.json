@@ -1,0 +1,182 @@
+{
+  "schemaVersion": 1,
+  "id": "4b52b481-1e66-4ace-a059-88707afc5579",
+  "slug": "install-the-connector-Fi93BT5Ntd",
+  "collection": "deploy-app",
+  "locale": "en",
+  "title": "Install the connector",
+  "breadcrumb": [
+    "Platforms",
+    "Android",
+    "Admin Guide",
+    "Bringing users via MDM",
+    "Install the connector"
+  ],
+  "createdAt": "2026-11-21T08:05:50.369Z",
+  "updatedAt": "2026-11-21T19:08:35.950Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "A page on your computer",
+          "layout": "image-bottom",
+          "html": "<p>The <strong>ODMDM connector</strong> runs on the MDM operator's computer and opens as a page in the browser. It talks to your MDM with your token, never to Deploy App.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/0a9dc4d5b4d0d429.webp",
+              "width": 1860,
+              "height": 1273
+            }
+          ]
+        },
+        {
+          "title": "Open a terminal",
+          "layout": "image-bottom",
+          "html": "<p>Installing takes a few typed lines. On Windows, open <strong>Start</strong>, type <code>PowerShell</code> and press Enter. On a Mac, press Cmd+Space, type <code>Terminal</code> and press Enter.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/a8ddf3b7717ed673.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Get uv and git",
+          "layout": "image-bottom",
+          "html": "<p>The connector installs with <strong>uv</strong>, which fetches it with <strong>git</strong>. Type the lines for your computer, pressing Enter after each and accepting what the Mac offers to install, then close the terminal and open a new one.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/d47d3c8c20f681bf.webp",
+              "width": 1400,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Install it",
+          "layout": "image-bottom",
+          "html": "<p>Type this as one line and press Enter: <code>uv tool install git+https://github.com/pvarki/python-odmdm-fleet</code></p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/ef2015e3de06bdf8.webp",
+              "width": 1400,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Start it",
+          "layout": "image-bottom",
+          "html": "<p>Type <code>odmdm-connector web</code> and press Enter: the connector's page opens in your browser. If it does not open, open the address the terminal shows.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/6a4f2a5aca1be212.webp",
+              "width": 1400,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Your default browser",
+          "layout": "image-bottom",
+          "html": "<p>It opens in your default browser: use Deploy App in that same browser. Start it only once: if it says the connector may be running already, use the page you have.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/129485b6349ab577.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Keep the terminal open",
+          "layout": "image-bottom",
+          "html": "<p>The connector runs while its terminal is open, and Ctrl+C stops it. A page whose connector has stopped says so.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/83cbeb42058ac724.webp",
+              "width": 1052,
+              "height": 609
+            }
+          ]
+        },
+        {
+          "title": "A new address at every start",
+          "layout": "image-bottom",
+          "html": "<p>Every start makes a new address, and a page left open from before asks for it. Start the connector again and use the page it opens.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/3a9a743bc59a3145.webp",
+              "width": 1052,
+              "height": 738
+            }
+          ]
+        },
+        {
+          "title": "What it keeps",
+          "layout": "image-bottom",
+          "html": "<p>With <strong>Remember on this computer</strong> ticked, your token goes to the computer's keychain, never to a file. The challenge is held only while the connector runs.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/7d8c036976de5249.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "No internet?",
+          "layout": "image-bottom",
+          "html": "<p>For a network without internet, technical staff can carry the connector in as one file: see its README. It needs only Python 3.11 or newer, and asks for the token at each start.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/fd895f209208fce2.webp",
+              "width": 1400,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Upgrade it",
+          "layout": "image-bottom",
+          "html": "<p>Stop the connector with Ctrl+C and type the install line again with <code>--reinstall</code> at the end. If you use a plugin, keep its <code>--with</code> part in the line.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/cbfa71c0df6d4035.webp",
+              "width": 1400,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Before removing it",
+          "layout": "image-bottom",
+          "html": "<p>Open the Deploy App's name at the top right and remove each Deploy App. The connector then forgets its token, and the keychain keeps nothing.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/beaeea4e75714bdf.webp",
+              "width": 1860,
+              "height": 1273
+            }
+          ]
+        },
+        {
+          "title": "Remove it",
+          "layout": "image-bottom",
+          "html": "<p>Stop the connector, then type <code>uv tool uninstall odmdm-connector</code> in a terminal.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/39e53dae4fa8689d.webp",
+              "width": 1400,
+              "height": 1000
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

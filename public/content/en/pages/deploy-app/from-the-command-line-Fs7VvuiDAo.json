@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 1,
+  "id": "3d014237-bc79-4933-871a-e47397edaaf8",
+  "slug": "from-the-command-line-Fs7VvuiDAo",
+  "collection": "deploy-app",
+  "locale": "en",
+  "title": "From the command line",
+  "breadcrumb": [
+    "Platforms",
+    "Android",
+    "Admin Guide",
+    "Bringing users via MDM",
+    "From the command line"
+  ],
+  "createdAt": "2026-11-21T08:08:40.072Z",
+  "updatedAt": "2026-11-21T16:23:51.416Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "The same, typed",
+          "layout": "image-bottom",
+          "html": "<p>The daily work has commands too, for those who script. Both come in the same install.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/864e35025a0c3e54.webp",
+              "width": 1400,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Point it at Fleet",
+          "layout": "image-bottom",
+          "html": "<p>Set Fleet's address, the file that holds the token and your Deploy App's name, such as <code>unit.example.fi</code>. The token is read from that plain text file, never typed on the line.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/aae558c3cbf4a2a5.webp",
+              "width": 1400,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Set the team up",
+          "layout": "image-bottom",
+          "html": "<p>The first time, paste the settings line into <code>ODMDM_CHALLENGE</code> as shown, run <code>odmdm-connector apply</code>, then unset it. Your team gets the certificate, the policy, the apps and the <strong>Deploy App</strong> icon.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/a3bb4f8bc2fa72c3.webp",
+              "width": 1400,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "A new opening",
+          "layout": "image-bottom",
+          "html": "<p><code>odmdm-connector challenge</code> asks for the settings line you copied, without showing it, and gives Fleet the new challenge.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/878838dd726cfbaf.webp",
+              "width": 1400,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "List the phones",
+          "layout": "image-bottom",
+          "html": "<p><code>odmdm-connector phones</code> lists the team: each phone's number, callsign and certificate.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/ddc239b6f7e191b3.webp",
+              "width": 1400,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Name them",
+          "layout": "image-bottom",
+          "html": "<p><code>name --all OTTER</code> numbers every waiting phone. Or choose each: <code>name 33=OTTER3 34=OTTER4</code>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/0ac3cabe164f5748.webp",
+              "width": 1400,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Ask again",
+          "layout": "image-bottom",
+          "html": "<p><code>odmdm-connector resend</code> asks again for every named phone that was refused or failed.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/cf40e1a9ab35701e.webp",
+              "width": 1400,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Send the policy again",
+          "layout": "image-bottom",
+          "html": "<p><code>apply --force-policy</code> sends the policy to every phone again: the fix for <strong>Certificate Authentication Failed</strong> on a phone that has its certificate. Not while phones are still installing apps.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/fe4286d36cd78349.webp",
+              "width": 1400,
+              "height": 1000
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

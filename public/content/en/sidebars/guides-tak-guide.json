@@ -788,7 +788,7 @@
       ]
     },
     {
-      "type": "group",
+      "type": "toporg",
       "id": "start-sLRG2uavSv",
       "label": "Start",
       "clientId": "itak-bwDYWvqdnY",
@@ -808,7 +808,7 @@
       ]
     },
     {
-      "type": "group",
+      "type": "toporg",
       "id": "basic-features-StHwTheTn5",
       "label": "Basic Features",
       "clientId": "itak-bwDYWvqdnY",

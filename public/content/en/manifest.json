@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "locale": "en",
-  "generatedAt": "2026-11-04T23:22:38.154Z",
+  "generatedAt": "2026-11-21T22:25:56.351Z",
   "collections": [
     {
       "slug": "deploy-app",
@@ -68,7 +68,8 @@
           "label": "iTAK",
           "platform": "ios",
           "os": "ios",
-          "isProduct": true
+          "isProduct": true,
+          "underDevelopment": true
         },
         {
           "id": "tak-tracker-android-JCZw3YH2nW",
@@ -82,7 +83,8 @@
           "label": "TAK Tracker - Apple",
           "platform": "ios",
           "os": "ios",
-          "isProduct": true
+          "isProduct": true,
+          "underDevelopment": true
         }
       ]
     },
@@ -393,61 +395,244 @@
       "chapterLabel": "Admin Guide"
     },
     {
-      "id": "d706bafa-974a-4a29-b8b5-ac5a0c1fa2e9",
-      "slug": "mdm-setup-CqNOaahyKB",
+      "id": "a81dbef4-4c98-49c7-af52-512a36763f12",
+      "slug": "deploy-app-supports-mdm-hgbi4NqgKT",
       "collection": "deploy-app",
-      "title": "MDM Setup",
+      "title": "Deploy App supports MDM",
       "breadcrumb": [
         "Platforms",
         "Android",
         "Admin Guide",
-        "MDM Setup"
+        "Bringing users via MDM",
+        "Deploy App supports MDM"
       ],
-      "path": "/content/en/pages/deploy-app/mdm-setup-CqNOaahyKB.json",
-      "updatedAt": "2026-10-31T11:12:19.610Z",
+      "path": "/content/en/pages/deploy-app/deploy-app-supports-mdm-hgbi4NqgKT.json",
+      "updatedAt": "2026-11-21T16:20:34.985Z",
       "order": 8,
       "platform": "android",
       "clientId": "android-MENReFAfCN",
-      "chapterId": "admin-guide-V5Hs1rBdRL",
-      "chapterLabel": "Admin Guide"
+      "chapterId": "bringing-users-via-mdm-Hv7ump2xHK",
+      "chapterLabel": "Bringing users via MDM"
     },
     {
-      "id": "a7f6b598-93e8-4c0e-85fb-d7a062499d91",
-      "slug": "mdm-devices-c9ipLyHRe9",
+      "id": "4b52b481-1e66-4ace-a059-88707afc5579",
+      "slug": "install-the-connector-Fi93BT5Ntd",
       "collection": "deploy-app",
-      "title": "MDM Devices",
+      "title": "Install the connector",
       "breadcrumb": [
         "Platforms",
         "Android",
         "Admin Guide",
-        "MDM Devices"
+        "Bringing users via MDM",
+        "Install the connector"
       ],
-      "path": "/content/en/pages/deploy-app/mdm-devices-c9ipLyHRe9.json",
-      "updatedAt": "2026-10-31T11:12:25.278Z",
+      "path": "/content/en/pages/deploy-app/install-the-connector-Fi93BT5Ntd.json",
+      "updatedAt": "2026-11-21T19:08:35.950Z",
       "order": 9,
       "platform": "android",
       "clientId": "android-MENReFAfCN",
-      "chapterId": "admin-guide-V5Hs1rBdRL",
-      "chapterLabel": "Admin Guide"
+      "chapterId": "bringing-users-via-mdm-Hv7ump2xHK",
+      "chapterLabel": "Bringing users via MDM"
     },
     {
-      "id": "149ddbd8-3815-4fd5-82d9-dbe57518256f",
-      "slug": "mdm-enrolment-S69TrSf5OW",
+      "id": "d706bafa-974a-4a29-b8b5-ac5a0c1fa2e9",
+      "slug": "connect-your-mdm-CqNOaahyKB",
       "collection": "deploy-app",
-      "title": "MDM Enrolment",
+      "title": "Connect your MDM",
       "breadcrumb": [
         "Platforms",
         "Android",
         "Admin Guide",
-        "MDM Enrolment"
+        "Bringing users via MDM",
+        "Connect your MDM"
       ],
-      "path": "/content/en/pages/deploy-app/mdm-enrolment-S69TrSf5OW.json",
-      "updatedAt": "2026-10-31T11:12:31.695Z",
+      "path": "/content/en/pages/deploy-app/connect-your-mdm-CqNOaahyKB.json",
+      "updatedAt": "2026-11-21T19:09:31.341Z",
       "order": 10,
       "platform": "android",
       "clientId": "android-MENReFAfCN",
-      "chapterId": "admin-guide-V5Hs1rBdRL",
-      "chapterLabel": "Admin Guide"
+      "chapterId": "bringing-users-via-mdm-Hv7ump2xHK",
+      "chapterLabel": "Bringing users via MDM"
+    },
+    {
+      "id": "a7f6b598-93e8-4c0e-85fb-d7a062499d91",
+      "slug": "enrol-phones-c9ipLyHRe9",
+      "collection": "deploy-app",
+      "title": "Enrol phones",
+      "breadcrumb": [
+        "Platforms",
+        "Android",
+        "Admin Guide",
+        "Bringing users via MDM",
+        "Enrol phones"
+      ],
+      "path": "/content/en/pages/deploy-app/enrol-phones-c9ipLyHRe9.json",
+      "updatedAt": "2026-11-21T16:52:06.884Z",
+      "order": 11,
+      "platform": "android",
+      "clientId": "android-MENReFAfCN",
+      "chapterId": "bringing-users-via-mdm-Hv7ump2xHK",
+      "chapterLabel": "Bringing users via MDM"
+    },
+    {
+      "id": "77fc3ef4-ae4c-4085-98de-6b785e8743b0",
+      "slug": "name-phones-0Fh4ZTpcJs",
+      "collection": "deploy-app",
+      "title": "Name phones",
+      "breadcrumb": [
+        "Platforms",
+        "Android",
+        "Admin Guide",
+        "Bringing users via MDM",
+        "Name phones"
+      ],
+      "path": "/content/en/pages/deploy-app/name-phones-0Fh4ZTpcJs.json",
+      "updatedAt": "2026-11-21T16:21:50.118Z",
+      "order": 12,
+      "platform": "android",
+      "clientId": "android-MENReFAfCN",
+      "chapterId": "bringing-users-via-mdm-Hv7ump2xHK",
+      "chapterLabel": "Bringing users via MDM"
+    },
+    {
+      "id": "bc4af1be-49f1-4a03-8226-20596696f376",
+      "slug": "first-start-on-the-phone-MRCjatFpyg",
+      "collection": "deploy-app",
+      "title": "First start on the phone",
+      "breadcrumb": [
+        "Platforms",
+        "Android",
+        "Admin Guide",
+        "Bringing users via MDM",
+        "First start on the phone"
+      ],
+      "path": "/content/en/pages/deploy-app/first-start-on-the-phone-MRCjatFpyg.json",
+      "updatedAt": "2026-11-21T15:31:45.767Z",
+      "order": 13,
+      "platform": "android",
+      "clientId": "android-MENReFAfCN",
+      "chapterId": "bringing-users-via-mdm-Hv7ump2xHK",
+      "chapterLabel": "Bringing users via MDM"
+    },
+    {
+      "id": "c54ccb86-b5fe-4809-81a5-6ed21d7780aa",
+      "slug": "when-a-phone-does-not-arrive-f3b9RaRVoP",
+      "collection": "deploy-app",
+      "title": "When a phone does not arrive",
+      "breadcrumb": [
+        "Platforms",
+        "Android",
+        "Admin Guide",
+        "Bringing users via MDM",
+        "When a phone does not arrive"
+      ],
+      "path": "/content/en/pages/deploy-app/when-a-phone-does-not-arrive-f3b9RaRVoP.json",
+      "updatedAt": "2026-11-21T16:52:54.856Z",
+      "order": 14,
+      "platform": "android",
+      "clientId": "android-MENReFAfCN",
+      "chapterId": "bringing-users-via-mdm-Hv7ump2xHK",
+      "chapterLabel": "Bringing users via MDM"
+    },
+    {
+      "id": "6ccbbae7-2d6f-4757-be7c-bddadb5af3b2",
+      "slug": "after-the-first-batch-cOk5iBzJoS",
+      "collection": "deploy-app",
+      "title": "After the first batch",
+      "breadcrumb": [
+        "Platforms",
+        "Android",
+        "Admin Guide",
+        "Bringing users via MDM",
+        "After the first batch"
+      ],
+      "path": "/content/en/pages/deploy-app/after-the-first-batch-cOk5iBzJoS.json",
+      "updatedAt": "2026-11-21T19:09:43.038Z",
+      "order": 15,
+      "platform": "android",
+      "clientId": "android-MENReFAfCN",
+      "chapterId": "bringing-users-via-mdm-Hv7ump2xHK",
+      "chapterLabel": "Bringing users via MDM"
+    },
+    {
+      "id": "3a51451c-093b-44e8-9cf4-da191ac8c4ff",
+      "slug": "connect-your-mdm-without-the-connector-Xm6Qo0Xkhr",
+      "collection": "deploy-app",
+      "title": "Connect your MDM without the connector",
+      "breadcrumb": [
+        "Platforms",
+        "Android",
+        "Admin Guide",
+        "Bringing users via MDM",
+        "Connect your MDM without the connector"
+      ],
+      "path": "/content/en/pages/deploy-app/connect-your-mdm-without-the-connector-Xm6Qo0Xkhr.json",
+      "updatedAt": "2026-11-21T16:23:36.932Z",
+      "order": 16,
+      "platform": "android",
+      "clientId": "android-MENReFAfCN",
+      "chapterId": "bringing-users-via-mdm-Hv7ump2xHK",
+      "chapterLabel": "Bringing users via MDM"
+    },
+    {
+      "id": "149ddbd8-3815-4fd5-82d9-dbe57518256f",
+      "slug": "name-phones-without-the-connector-S69TrSf5OW",
+      "collection": "deploy-app",
+      "title": "Name phones without the connector",
+      "breadcrumb": [
+        "Platforms",
+        "Android",
+        "Admin Guide",
+        "Bringing users via MDM",
+        "Name phones without the connector"
+      ],
+      "path": "/content/en/pages/deploy-app/name-phones-without-the-connector-S69TrSf5OW.json",
+      "updatedAt": "2026-11-21T16:23:42.785Z",
+      "order": 17,
+      "platform": "android",
+      "clientId": "android-MENReFAfCN",
+      "chapterId": "bringing-users-via-mdm-Hv7ump2xHK",
+      "chapterLabel": "Bringing users via MDM"
+    },
+    {
+      "id": "3d014237-bc79-4933-871a-e47397edaaf8",
+      "slug": "from-the-command-line-Fs7VvuiDAo",
+      "collection": "deploy-app",
+      "title": "From the command line",
+      "breadcrumb": [
+        "Platforms",
+        "Android",
+        "Admin Guide",
+        "Bringing users via MDM",
+        "From the command line"
+      ],
+      "path": "/content/en/pages/deploy-app/from-the-command-line-Fs7VvuiDAo.json",
+      "updatedAt": "2026-11-21T16:23:51.416Z",
+      "order": 18,
+      "platform": "android",
+      "clientId": "android-MENReFAfCN",
+      "chapterId": "bringing-users-via-mdm-Hv7ump2xHK",
+      "chapterLabel": "Bringing users via MDM"
+    },
+    {
+      "id": "5e943c81-acd1-483a-afc0-e232910702ed",
+      "slug": "using-another-mdm-V3bHoMMsq3",
+      "collection": "deploy-app",
+      "title": "Using another MDM",
+      "breadcrumb": [
+        "Platforms",
+        "Android",
+        "Admin Guide",
+        "Bringing users via MDM",
+        "Using another MDM"
+      ],
+      "path": "/content/en/pages/deploy-app/using-another-mdm-V3bHoMMsq3.json",
+      "updatedAt": "2026-11-21T16:53:55.498Z",
+      "order": 19,
+      "platform": "android",
+      "clientId": "android-MENReFAfCN",
+      "chapterId": "bringing-users-via-mdm-Hv7ump2xHK",
+      "chapterLabel": "Bringing users via MDM"
     },
     {
       "id": "cdde88ea-2777-42c6-b918-b9726de6926a",
@@ -462,7 +647,7 @@
       ],
       "path": "/content/en/pages/deploy-app/joining-a-deploy-app-A7hCnp5D1b.json",
       "updatedAt": "2026-10-22T13:25:42.376Z",
-      "order": 11,
+      "order": 20,
       "platform": "ios",
       "clientId": "ios-8ux4fDfFeI",
       "chapterId": "user-guide-aRTF5enbWV",
@@ -481,7 +666,7 @@
       ],
       "path": "/content/en/pages/deploy-app/using-applications-FFuT98Qlcv.json",
       "updatedAt": "2026-06-18T20:38:55.528Z",
-      "order": 12,
+      "order": 21,
       "platform": "ios",
       "clientId": "ios-8ux4fDfFeI",
       "chapterId": "user-guide-aRTF5enbWV",
@@ -500,7 +685,7 @@
       ],
       "path": "/content/en/pages/deploy-app/interface-pyG1Ln1MfU.json",
       "updatedAt": "2026-06-18T20:38:56.803Z",
-      "order": 13,
+      "order": 22,
       "platform": "ios",
       "clientId": "ios-8ux4fDfFeI",
       "chapterId": "user-guide-aRTF5enbWV",
@@ -519,7 +704,7 @@
       ],
       "path": "/content/en/pages/deploy-app/first-login-oKodQDb6I1.json",
       "updatedAt": "2026-10-22T13:25:42.775Z",
-      "order": 14,
+      "order": 23,
       "platform": "ios",
       "clientId": "ios-8ux4fDfFeI",
       "chapterId": "admin-guide-mVE2SN7j33",
@@ -538,7 +723,7 @@
       ],
       "path": "/content/en/pages/deploy-app/adding-users-LKw6wrsELi.json",
       "updatedAt": "2026-06-18T20:39:01.775Z",
-      "order": 15,
+      "order": 24,
       "platform": "ios",
       "clientId": "ios-8ux4fDfFeI",
       "chapterId": "admin-guide-mVE2SN7j33",
@@ -557,7 +742,7 @@
       ],
       "path": "/content/en/pages/deploy-app/managing-users-nWgFG3XzMv.json",
       "updatedAt": "2026-06-18T20:39:03.381Z",
-      "order": 16,
+      "order": 25,
       "platform": "ios",
       "clientId": "ios-8ux4fDfFeI",
       "chapterId": "admin-guide-mVE2SN7j33",
@@ -576,7 +761,7 @@
       ],
       "path": "/content/en/pages/deploy-app/access-external-services-wQy9bpe1aE.json",
       "updatedAt": "2026-06-18T20:39:05.498Z",
-      "order": 17,
+      "order": 26,
       "platform": "ios",
       "clientId": "ios-8ux4fDfFeI",
       "chapterId": "admin-guide-mVE2SN7j33",
@@ -595,7 +780,7 @@
       ],
       "path": "/content/en/pages/deploy-app/join-a-deploy-app-Ns73TcVodz.json",
       "updatedAt": "2026-10-22T13:25:43.326Z",
-      "order": 18,
+      "order": 27,
       "platform": "windows",
       "clientId": "windows-7LrSmQmqQ6",
       "chapterId": "user-guide-irnHx8wSE7",
@@ -614,7 +799,7 @@
       ],
       "path": "/content/en/pages/deploy-app/admin-first-login-1wjrnFERNt.json",
       "updatedAt": "2026-10-22T13:25:43.695Z",
-      "order": 19,
+      "order": 28,
       "platform": "windows",
       "clientId": "windows-7LrSmQmqQ6",
       "chapterId": "admin-guide-vhfls732g4",
@@ -633,7 +818,7 @@
       ],
       "path": "/content/en/pages/deploy-app/joining-a-deploy-app-6vV32V3B2c.json",
       "updatedAt": "2026-10-22T13:25:44.109Z",
-      "order": 20,
+      "order": 29,
       "platform": "macos",
       "clientId": "macos-z5DmedU8xk",
       "chapterId": "user-guide-NcVBuKVflZ",
@@ -652,7 +837,7 @@
       ],
       "path": "/content/en/pages/deploy-app/first-login-bi15QH96SC.json",
       "updatedAt": "2026-10-22T13:25:44.496Z",
-      "order": 21,
+      "order": 30,
       "platform": "macos",
       "clientId": "macos-z5DmedU8xk",
       "chapterId": "admin-guide-zqZyytPQuA",
@@ -671,7 +856,7 @@
       ],
       "path": "/content/en/pages/deploy-app/joining-a-deploy-app-0kPsFcJ37S.json",
       "updatedAt": "2026-10-22T13:25:44.884Z",
-      "order": 22,
+      "order": 31,
       "platform": "linux",
       "clientId": "linux-1sNJpibOcB",
       "chapterId": "user-guide-s0mbljRohP",
@@ -690,7 +875,7 @@
       ],
       "path": "/content/en/pages/deploy-app/first-login-2tKlcGkU7E.json",
       "updatedAt": "2026-10-22T13:25:45.232Z",
-      "order": 23,
+      "order": 32,
       "platform": "linux",
       "clientId": "linux-1sNJpibOcB",
       "chapterId": "admin-guide-XWvSppdQcs",
@@ -2582,7 +2767,8 @@
       "platform": "ios",
       "clientId": "itak-bwDYWvqdnY",
       "chapterId": "start-sLRG2uavSv",
-      "chapterLabel": "Start"
+      "chapterLabel": "Start",
+      "underDevelopment": true
     },
     {
       "id": "20a9fdbe-ba84-4a18-89ce-bbacfe3af064",
@@ -2601,7 +2787,8 @@
       "platform": "ios",
       "clientId": "itak-bwDYWvqdnY",
       "chapterId": "start-sLRG2uavSv",
-      "chapterLabel": "Start"
+      "chapterLabel": "Start",
+      "underDevelopment": true
     },
     {
       "id": "dc7f6de4-b754-457d-a704-dd1c792152af",
@@ -2620,7 +2807,8 @@
       "platform": "ios",
       "clientId": "itak-bwDYWvqdnY",
       "chapterId": "basic-features-StHwTheTn5",
-      "chapterLabel": "Basic Features"
+      "chapterLabel": "Basic Features",
+      "underDevelopment": true
     },
     {
       "id": "4f4b85db-a381-44b9-b106-30ba37172e1b",
@@ -2772,7 +2960,8 @@
       "platform": "ios",
       "clientId": "tak-tracker-apple-PmHvleNK0F",
       "chapterId": "start-connect-oZzAX4X7Er",
-      "chapterLabel": "START & CONNECT"
+      "chapterLabel": "START & CONNECT",
+      "underDevelopment": true
     },
     {
       "id": "c5a3d4f8-ab45-49f1-ad12-c7d612cc732b",
@@ -2791,7 +2980,8 @@
       "platform": "ios",
       "clientId": "tak-tracker-apple-PmHvleNK0F",
       "chapterId": "start-connect-oZzAX4X7Er",
-      "chapterLabel": "START & CONNECT"
+      "chapterLabel": "START & CONNECT",
+      "underDevelopment": true
     },
     {
       "id": "2f7189f4-8995-4438-a6a9-f54f1a6ef46c",
