@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "id": "fe00138b-3be1-4d0b-bd83-d3894a0be0a3",
+  "slug": "kun-puhelin-ei-tule-perille-RawT0cG1WW",
+  "collection": "deploy-app",
+  "locale": "fi",
+  "title": "Kun puhelin ei tule perille",
+  "breadcrumb": [
+    "Platforms",
+    "Android",
+    "Ylläpitäjäohjeet",
+    "Käyttäjien tuominen MDM:llä",
+    "Kun puhelin ei tule perille"
+  ],
+  "createdAt": "2026-11-22T22:03:09.673Z",
+  "updatedAt": "2026-11-22T22:23:19.159Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/deploy-app/when-a-phone-does-not-arrive-f3b9RaRVoP",
+    "fi": "/fi/deploy-app/kun-puhelin-ei-tule-perille-RawT0cG1WW",
+    "sv": "/sv/deploy-app/nar-en-telefon-inte-kommer-fram-kuLFushpb9"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Katso, mitä tapahtui",
+          "layout": "image-bottom",
+          "html": "<p>Hylätty tai epäonnistunut puhelin näkyy punaisella, syyn kanssa. Luku kertoo, kuinka moni on tilassa <strong>failed</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/3e1dd49850968200.webp",
+              "width": 1860,
+              "height": 1273
+            }
+          ]
+        },
+        {
+          "title": "Lue tiedot",
+          "layout": "image-bottom",
+          "html": "<p>Kaksoisnapsauta puhelinta tai valitse se ja paina <strong>Details</strong>: näet syyn kokonaan ja sen, onko liittyminen vielä auki.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/cbbeadf656388f0b.webp",
+              "width": 1860,
+              "height": 1273
+            }
+          ]
+        },
+        {
+          "title": "Korjaa syy",
+          "layout": "image-bottom",
+          "html": "<p>Kutsutunnus on varattu tai ei kelpaa: anna toinen. Liittyminen on suljettu, tai MDM:llä on vanha haaste: avaa liittyminen ja paina uudelleen <strong>Avaa MDM-liittimessä</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/364f2abe6067edfc.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Deploy Appiin ei saatu yhteyttä",
+          "layout": "image-bottom",
+          "html": "<p>Puhelin ei saanut yhteyttä Deploy Appin osoitteeseen pyytäessään varmennetta. Tarkista sen verkkoyhteys ja paina sitten <strong>Ask again</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/619bc4a811f740fa.webp",
+              "width": 1860,
+              "height": 1273
+            }
+          ]
+        },
+        {
+          "title": "Liittyminen on sulkeutunut",
+          "layout": "image-bottom",
+          "html": "<p>Rivi muuttuu keltaiseksi kymmenen minuuttia ennen sulkeutumista ja punaiseksi sen jälkeen. <strong>Open Deploy App ↗</strong> vie MDM-sivulle, jossa avaat liittymisen uudelleen.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/5ccec4f2099fb02e.webp",
+              "width": 1860,
+              "height": 1273
+            }
+          ]
+        },
+        {
+          "title": "Pyydä uudelleen",
+          "layout": "image-bottom",
+          "html": "<p>Kun syy on korjattu, valitse puhelin ja paina <strong>Ask again</strong>. <strong>Refused or failed</strong> valitsee ne kaikki.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/5f724d898c00bad4.webp",
+              "width": 1860,
+              "height": 1273
+            }
+          ]
+        },
+        {
+          "title": "Tai anna toinen kutsutunnus",
+          "layout": "image-bottom",
+          "html": "<p>Varattu kutsutunnus ei koskaan vapaudu. Paina puhelimen tiedoissa <strong>Give another callsign</strong> ja anna sille uusi.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/3f7ad1842b5f1f38.webp",
+              "width": 1860,
+              "height": 1273
+            }
+          ]
+        },
+        {
+          "title": "Älä koskaan vaihda varmennetta",
+          "layout": "image-bottom",
+          "html": "<p>Älä Fleetin kanssa korvaa tiimin varmennetta yrittääksesi uudelleen: jokainen tiimin puhelin menettäisi omansa.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/d2c70b0915d08fe5.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Tunniste lakkasi toimimasta",
+          "layout": "image-bottom",
+          "html": "<p>Kun MDM ei enää hyväksy tunnistetta, liitin pyytää itse uutta ja näyttää MDM:n antaman syyn. Liitä uusi tunniste ja paina <strong>Connect</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/b2c40515d9c9f80b.webp",
+              "width": 1052,
+              "height": 1086
+            }
+          ]
+        },
+        {
+          "title": "Varmenteen todennus epäonnistui",
+          "layout": "image-bottom",
+          "html": "<p>Puhelimella on varmenteensa, mutta sen Chrome-käytäntö on kirjoitettu yli: lähetä käytäntö uudelleen. Komennolla: katso <strong>Komentoriviltä</strong>; ilman liitintä: <strong>Nimeä puhelimet Fleetissä ilman liitintä</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/1ff20adc2e18302f.webp",
+              "width": 912,
+              "height": 1804
+            }
+          ]
+        },
+        {
+          "title": "Lähetä käytäntö uudelleen",
+          "layout": "image-bottom",
+          "html": "<p>Paina <strong>Settings</strong> ja sitten <strong>Send the policy again</strong>, kun mikään puhelin ei enää asenna sovelluksia. Avaa sitten Deploy App puhelimessa uudelleen.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/f8d1aec84a0c2f47.webp",
+              "width": 1220,
+              "height": 1183
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

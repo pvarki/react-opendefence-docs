@@ -1,0 +1,139 @@
+{
+  "schemaVersion": 1,
+  "id": "c96ebdfa-d1b9-43cc-909e-d57b16610474",
+  "slug": "asenna-liitin-paatteesta-zFGeRuAR6T",
+  "collection": "deploy-app",
+  "locale": "fi",
+  "title": "Asenna liitin päätteestä",
+  "breadcrumb": [
+    "Platforms",
+    "Android",
+    "Ylläpitäjäohjeet",
+    "Käyttäjien tuominen MDM:llä",
+    "Asenna liitin päätteestä"
+  ],
+  "createdAt": "2026-11-22T22:03:27.674Z",
+  "updatedAt": "2026-11-22T22:25:11.439Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/deploy-app/install-the-connector-from-a-terminal-vSDV2SJXgj",
+    "fi": "/fi/deploy-app/asenna-liitin-paatteesta-zFGeRuAR6T",
+    "sv": "/sv/deploy-app/installera-anslutaren-fran-en-terminal-DTEI1XK0FM"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Milloin pääte on tarpeen",
+          "layout": "image-bottom",
+          "html": "<p>Käytä näitä dioja lisäosaa varten, tai jos käytät mieluummin päätettä kuin ladattua tiedostoa. Avaa pääte: Windowsissa <strong>Käynnistä</strong> (Start) ja kirjoita <code>PowerShell</code>; Macissa Cmd+välilyönti ja kirjoita <code>Terminal</code>; paina sitten Enter.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/2f12adb872cb3dbd.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Hanki uv ja git",
+          "layout": "image-bottom",
+          "html": "<p>Liitin asennetaan <strong>uv</strong>:llä, joka hakee sen <strong>git</strong>illä. Kirjoita oman tietokoneesi rivit, paina jokaisen jälkeen Enter ja hyväksy, mitä Mac ehdottaa. Avaa sitten uusi pääte.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/d47d3c8c20f681bf.webp",
+              "width": 1400,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Asenna se",
+          "layout": "image-bottom",
+          "html": "<p>Kirjoita tämä yhtenä rivinä ja paina Enter: <code>uv tool install git+https://github.com/pvarki/python-odmdm-fleet</code></p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/2ac5e4284e554cd8.webp",
+              "width": 1400,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Käynnistä se",
+          "layout": "image-bottom",
+          "html": "<p>Kirjoita <code>odmdm-connector web</code> ja paina Enter: liittimen sivu avautuu selaimeesi. Jos se ei avaudu, avaa päätteessä näkyvä osoite.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/6a4f2a5aca1be212.webp",
+              "width": 1400,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Oletusselaimesi",
+          "layout": "image-bottom",
+          "html": "<p>Sivu avautuu oletusselaimeesi: käytä Deploy Appia samassa selaimessa. Käynnistä liitin vain kerran: jos se sanoo, että liitin saattaa jo olla käynnissä, käytä sivua, joka sinulla on.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/76f7fc6987956e7d.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Pidä pääte auki",
+          "layout": "image-bottom",
+          "html": "<p>Liitin toimii niin kauan kuin sen pääte on auki, ja Ctrl+C pysäyttää sen. Sen sivu pyytää sitten lisäämään Deploy Appisi: katso <strong>Yhdistä MDM</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/83cbeb42058ac724.webp",
+              "width": 1052,
+              "height": 609
+            }
+          ]
+        },
+        {
+          "title": "Ei internetiä?",
+          "layout": "image-bottom",
+          "html": "<p>uv:llä asentaminen vaatii internetin. Ilman sitä tekninen henkilöstö voi tuoda liittimen yhtenä tiedostona, joka tarvitsee Python 3.11:n tai uudemman: katso <strong>Into a network without internet</strong> liittimen README-tiedostosta.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/caaacdefed334d18.webp",
+              "width": 1400,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Päivitä se",
+          "layout": "image-bottom",
+          "html": "<p>Pysäytä liitin painamalla Ctrl+C ja kirjoita asennusrivi uudelleen niin, että sen lopussa on <code>--reinstall</code>. Jos käytät lisäosaa, pidä sen <code>--with</code>-osa rivissä.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/2eee9506e2d17f7d.webp",
+              "width": 1400,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Poista se",
+          "layout": "image-bottom",
+          "html": "<p>Avaa ensin liittimen sivun oikeasta yläkulmasta Deploy Appin nimi ja poista jokainen Deploy App. Pysäytä sitten liitin ja kirjoita <code>uv tool uninstall odmdm-connector</code>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/39e53dae4fa8689d.webp",
+              "width": 1400,
+              "height": 1000
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "id": "33466338-c84b-40e0-92a5-6555f16e72e6",
+  "slug": "forsta-starten-pa-telefonen-MrU1UzNYI2",
+  "collection": "deploy-app",
+  "locale": "sv",
+  "title": "Första starten på telefonen",
+  "breadcrumb": [
+    "Platforms",
+    "Android",
+    "Administratörsguide",
+    "Ta in användare via MDM",
+    "Första starten på telefonen"
+  ],
+  "createdAt": "2026-11-22T22:07:29.263Z",
+  "updatedAt": "2026-11-22T22:23:22.411Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/deploy-app/first-start-on-the-phone-MRCjatFpyg",
+    "fi": "/fi/deploy-app/ensimmainen-kaynnistys-puhelimessa-XZm8dfyOk7",
+    "sv": "/sv/deploy-app/forsta-starten-pa-telefonen-MrU1UzNYI2"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Öppna Deploy App",
+          "layout": "image-bottom",
+          "html": "<p>Öppna jobbapparna (<strong>Work</strong>) på telefonen och tryck på <strong>Deploy App</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/84840932117af60e.webp",
+              "width": 912,
+              "height": 1804
+            }
+          ]
+        },
+        {
+          "title": "Chromes första start",
+          "layout": "image-bottom",
+          "html": "<p>Första gången trycker du på <strong>Stay signed out</strong> eller <strong>Use without an account</strong>, beroende på vad Chrome visar. På en svensk telefon står knapparna på svenska.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/0c9c55b572c71199.webp",
+              "width": 912,
+              "height": 1804
+            }
+          ]
+        },
+        {
+          "title": "Inloggad",
+          "layout": "image-bottom",
+          "html": "<p>Deploy App öppnas som telefonens anropssignal. Skriv den på en etikett på telefonen: likadana telefoner ser likadana ut i din MDM.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/0e281f149b1dc049.webp",
+              "width": 912,
+              "height": 1804
+            }
+          ]
+        },
+        {
+          "title": "Om det står Certifikatsautentisering misslyckades",
+          "layout": "image-bottom",
+          "html": "<p>Telefonen är inte klar ännu, eller något gick fel: se <strong>När en telefon inte kommer fram</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/0c679294b8027013.webp",
+              "width": 912,
+              "height": 1804
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

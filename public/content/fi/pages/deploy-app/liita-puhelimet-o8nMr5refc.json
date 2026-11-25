@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "c944e5c8-27f3-4af4-b57b-ebc0829e8b6d",
+  "slug": "liita-puhelimet-o8nMr5refc",
+  "collection": "deploy-app",
+  "locale": "fi",
+  "title": "Liitä puhelimet",
+  "breadcrumb": [
+    "Platforms",
+    "Android",
+    "Ylläpitäjäohjeet",
+    "Käyttäjien tuominen MDM:llä",
+    "Liitä puhelimet"
+  ],
+  "createdAt": "2026-11-22T22:02:13.049Z",
+  "updatedAt": "2026-11-22T22:22:09.859Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/deploy-app/enrol-phones-c9ipLyHRe9",
+    "fi": "/fi/deploy-app/liita-puhelimet-o8nMr5refc",
+    "sv": "/sv/deploy-app/anslut-telefoner-taCwggfyD7"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Puhelimet liitetään MDM:ään",
+          "layout": "image-bottom",
+          "html": "<p>Puhelimet liitetään MDM:ään kuten aina, tämän Deploy Appin ryhmään. Fleetin kanssa katso <strong>Lisää puhelimet Fleetiin</strong> luvussa <strong>MDM: Fleet</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/55c4aa5b0351e1aa.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Seuraa niiden saapumista",
+          "layout": "image-bottom",
+          "html": "<p>Liitin näyttää jokaisen puhelimen minuutin kuluessa sen liittämisestä, pian tilassa <strong>waiting for a name</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/85c6549c4adbb79d.webp",
+              "width": 1860,
+              "height": 1273
+            }
+          ]
+        },
+        {
+          "title": "Odota sovelluksia",
+          "layout": "image-bottom",
+          "html": "<p>Nimeä puhelimet, kun jokaisen puhelimen <strong>Work</strong>-välilehdellä (työsovellukset) näkyvät sen sovellukset: katso <strong>Nimeä puhelimet</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/84840932117af60e.webp",
+              "width": 912,
+              "height": 1804
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

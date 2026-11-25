@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "id": "b6278927-fee0-4faf-90ae-5687a77ac262",
+  "slug": "when-the-deployment-ends-0IdROkcsVK",
+  "collection": "deploy-app",
+  "locale": "en",
+  "title": "When the deployment ends",
+  "breadcrumb": [
+    "Platforms",
+    "Android",
+    "Admin Guide",
+    "Bringing users via MDM",
+    "When the deployment ends"
+  ],
+  "createdAt": "2026-11-23T22:12:16.215Z",
+  "updatedAt": "2026-11-23T22:16:13.612Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/deploy-app/when-the-deployment-ends-0IdROkcsVK",
+    "fi": "/fi/deploy-app/kun-ymparisto-paattyy-TItex9Xbr1",
+    "sv": "/sv/deploy-app/nar-miljon-avslutas-87eb0xSxwz"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "The deployment is over",
+          "layout": "image-bottom",
+          "html": "<p>When your Deploy App is taken down, its certificates open nothing any more, but your MDM still keeps one on every phone. End it in your MDM too: the phones can then take your next Deploy App's certificate.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/10a97eac7b33819f.webp",
+              "width": 1860,
+              "height": 1273
+            }
+          ]
+        },
+        {
+          "title": "Open Remove",
+          "layout": "image-bottom",
+          "html": "<p>Give your MDM's token if the connector asks. Open the list at the top right: with several Deploy Apps, open golden-monkey.example.fi first. Then choose <strong>Remove golden-monkey.example.fi…</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/6f515206644ffbfe.webp",
+              "width": 1860,
+              "height": 1273
+            }
+          ]
+        },
+        {
+          "title": "End it in your MDM too",
+          "layout": "image-bottom",
+          "html": "<p>Tick <strong>Also end it in Fleet</strong>: the line shows your MDM's name. Unticked, <strong>Remove</strong> only forgets the Deploy App on this computer. The dialog says how many phones lose the certificate. <strong>End and remove</strong> cannot be undone.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/4d4a1397091f9145.webp",
+              "width": 1860,
+              "height": 1273
+            }
+          ]
+        },
+        {
+          "title": "What it did",
+          "layout": "image-bottom",
+          "html": "<p>Your MDM has taken this Deploy App's certificate out of the group: each phone drops it when it next talks to your MDM, with Fleet within about 15 minutes. The connector has forgotten the Deploy App and its token.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/d6572235bfb8c9a5.webp",
+              "width": 1052,
+              "height": 1007
+            }
+          ]
+        },
+        {
+          "title": "Your next Deploy App",
+          "layout": "image-bottom",
+          "html": "<p>Add your next Deploy App as in <strong>Connect your MDM</strong>, with the same group of phones. While enrolment is open, each named phone asks for its new certificate under the name it has. For the phones' icon with Fleet, see <strong>End a Deploy App in Fleet</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/010aa25022ef4e98.webp",
+              "width": 1860,
+              "height": 1273
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

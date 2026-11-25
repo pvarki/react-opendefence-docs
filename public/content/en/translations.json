@@ -928,5 +928,90 @@
     "en": "/en/deploy-app/introduction-d1XzfzOkpz",
     "fi": "/fi/deploy-app/johdanto-pVdcEzIB4j",
     "sv": "/sv/deploy-app/introduktion-8VdRmYg8Vp"
+  },
+  "deploy-app-supports-mdm-hgbi4NqgKT": {
+    "en": "/en/deploy-app/deploy-app-supports-mdm-hgbi4NqgKT",
+    "fi": "/fi/deploy-app/deploy-app-tukee-mdmaa-jVgQarMKxG",
+    "sv": "/sv/deploy-app/deploy-app-stoder-mdm-4ZstBxkyd8"
+  },
+  "connect-your-mdm-CqNOaahyKB": {
+    "en": "/en/deploy-app/connect-your-mdm-CqNOaahyKB",
+    "fi": "/fi/deploy-app/yhdista-mdm-QBy34u1J8P",
+    "sv": "/sv/deploy-app/koppla-din-mdm-o32bkyreTb"
+  },
+  "enrol-phones-c9ipLyHRe9": {
+    "en": "/en/deploy-app/enrol-phones-c9ipLyHRe9",
+    "fi": "/fi/deploy-app/liita-puhelimet-o8nMr5refc",
+    "sv": "/sv/deploy-app/anslut-telefoner-taCwggfyD7"
+  },
+  "name-phones-0Fh4ZTpcJs": {
+    "en": "/en/deploy-app/name-phones-0Fh4ZTpcJs",
+    "fi": "/fi/deploy-app/nimea-puhelimet-vzIe9142oV",
+    "sv": "/sv/deploy-app/namnge-telefoner-Szm4GfJooc"
+  },
+  "first-start-on-the-phone-MRCjatFpyg": {
+    "en": "/en/deploy-app/first-start-on-the-phone-MRCjatFpyg",
+    "fi": "/fi/deploy-app/ensimmainen-kaynnistys-puhelimessa-XZm8dfyOk7",
+    "sv": "/sv/deploy-app/forsta-starten-pa-telefonen-MrU1UzNYI2"
+  },
+  "when-a-phone-does-not-arrive-f3b9RaRVoP": {
+    "en": "/en/deploy-app/when-a-phone-does-not-arrive-f3b9RaRVoP",
+    "fi": "/fi/deploy-app/kun-puhelin-ei-tule-perille-RawT0cG1WW",
+    "sv": "/sv/deploy-app/nar-en-telefon-inte-kommer-fram-kuLFushpb9"
+  },
+  "install-the-connector-from-a-terminal-vSDV2SJXgj": {
+    "en": "/en/deploy-app/install-the-connector-from-a-terminal-vSDV2SJXgj",
+    "fi": "/fi/deploy-app/asenna-liitin-paatteesta-zFGeRuAR6T",
+    "sv": "/sv/deploy-app/installera-anslutaren-fran-en-terminal-DTEI1XK0FM"
+  },
+  "from-the-command-line-Fs7VvuiDAo": {
+    "en": "/en/deploy-app/from-the-command-line-Fs7VvuiDAo",
+    "fi": "/fi/deploy-app/komentorivilta-IHi2889tpu",
+    "sv": "/sv/deploy-app/fran-kommandoraden-xFyiTHblin"
+  },
+  "using-another-mdm-V3bHoMMsq3": {
+    "en": "/en/deploy-app/using-another-mdm-V3bHoMMsq3",
+    "fi": "/fi/deploy-app/toisen-mdmn-kaytto-w4fjf8R0J4",
+    "sv": "/sv/deploy-app/anvanda-en-annan-mdm-hnnCqf9hTL"
+  },
+  "set-fleet-up-for-deploy-app-Prkasq85P6": {
+    "en": "/en/deploy-app/set-fleet-up-for-deploy-app-Prkasq85P6",
+    "fi": "/fi/deploy-app/maarita-fleet-deploy-appia-varten-Puxv3F0J4g",
+    "sv": "/sv/deploy-app/stall-in-fleet-for-deploy-app-8QfR6PSGC7"
+  },
+  "add-phones-in-fleet-lJT3f5UOlt": {
+    "en": "/en/deploy-app/add-phones-in-fleet-lJT3f5UOlt",
+    "fi": "/fi/deploy-app/lisaa-puhelimet-fleetiin-9CeCdOVgei",
+    "sv": "/sv/deploy-app/lagg-till-telefoner-i-fleet-5qOyo9hK23"
+  },
+  "name-phones-in-fleet-without-the-connector-S69TrSf5OW": {
+    "en": "/en/deploy-app/name-phones-in-fleet-without-the-connector-S69TrSf5OW",
+    "fi": "/fi/deploy-app/nimea-puhelimet-fleetissa-ilman-liitinta-9ZR0tAiRxJ",
+    "sv": "/sv/deploy-app/namnge-telefoner-i-fleet-utan-anslutaren-qSBu1CRt27"
+  },
+  "set-fleet-up-without-the-connector-Xm6Qo0Xkhr": {
+    "en": "/en/deploy-app/set-fleet-up-without-the-connector-Xm6Qo0Xkhr",
+    "fi": "/fi/deploy-app/maarita-fleet-ilman-liitinta-v1gTQPz5sV",
+    "sv": "/sv/deploy-app/stall-in-fleet-utan-anslutaren-ACj14KNsa3"
+  },
+  "install-the-connector-Fi93BT5Ntd": {
+    "en": "/en/deploy-app/install-the-connector-Fi93BT5Ntd",
+    "fi": "/fi/deploy-app/asenna-liitin-POM9A5h4cd",
+    "sv": "/sv/deploy-app/installera-anslutaren-3aFYZgX1LK"
+  },
+  "after-the-first-batch-cOk5iBzJoS": {
+    "en": "/en/deploy-app/after-the-first-batch-cOk5iBzJoS",
+    "fi": "/fi/deploy-app/ensimmaisen-eran-jalkeen-uml2XzLB4Q",
+    "sv": "/sv/deploy-app/efter-den-forsta-omgangen-lzMVPz857A"
+  },
+  "when-the-deployment-ends-0IdROkcsVK": {
+    "en": "/en/deploy-app/when-the-deployment-ends-0IdROkcsVK",
+    "fi": "/fi/deploy-app/kun-ymparisto-paattyy-TItex9Xbr1",
+    "sv": "/sv/deploy-app/nar-miljon-avslutas-87eb0xSxwz"
+  },
+  "end-a-deploy-app-in-fleet-DBZairqewD": {
+    "en": "/en/deploy-app/end-a-deploy-app-in-fleet-DBZairqewD",
+    "fi": "/fi/deploy-app/paata-deploy-app-fleetissa-5JjkJVQReP",
+    "sv": "/sv/deploy-app/avsluta-en-deploy-app-i-fleet-yMLUsZrUsf"
   }
 }

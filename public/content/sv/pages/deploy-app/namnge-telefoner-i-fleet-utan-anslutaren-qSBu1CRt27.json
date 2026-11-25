@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "id": "f9f18163-7459-485a-9b15-0cc4b9bb9643",
+  "slug": "namnge-telefoner-i-fleet-utan-anslutaren-qSBu1CRt27",
+  "collection": "deploy-app",
+  "locale": "sv",
+  "title": "Namnge telefoner i Fleet utan anslutaren",
+  "breadcrumb": [
+    "Platforms",
+    "Android",
+    "Administratörsguide",
+    "MDM: Fleet",
+    "Namnge telefoner i Fleet utan anslutaren"
+  ],
+  "createdAt": "2026-11-22T22:10:37.079Z",
+  "updatedAt": "2026-11-22T22:29:27.691Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/deploy-app/name-phones-in-fleet-without-the-connector-S69TrSf5OW",
+    "fi": "/fi/deploy-app/nimea-puhelimet-fleetissa-ilman-liitinta-9ZR0tAiRxJ",
+    "sv": "/sv/deploy-app/namnge-telefoner-i-fleet-utan-anslutaren-qSBu1CRt27"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Vad de här bilderna är till för",
+          "layout": "image-bottom",
+          "html": "<p>De här bilderna namnger telefoner för hand i Fleets konsol, när anslutaren inte kan användas. Det kräver teknisk personal, en telefon i taget.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/085cd4cf10afdeb1.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Öppna anslutningen",
+          "layout": "image-bottom",
+          "html": "<p>Öppna <strong>Användarhantering</strong> och sedan <strong>MDM</strong> i Deploy App, och tryck på <strong>Öppna i 2 timmar</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/bdc186723314cd99.webp",
+              "width": 1860,
+              "height": 889
+            }
+          ]
+        },
+        {
+          "title": "Kopiera utmaningen",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på kopieringsmärket bredvid <strong>Utmaning</strong>. Den är ny för varje öppning, så din MDM behöver den varje gång.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/a6eca8debb25fbb2.webp",
+              "width": 1860,
+              "height": 1125
+            }
+          ]
+        },
+        {
+          "title": "Ge Fleet utmaningen",
+          "layout": "image-bottom",
+          "html": "<p>I Fleet: <strong>Settings</strong>, <strong>Integrations</strong>, <strong>Certificate enrollment</strong>. Redigera din Deploy Apps utfärdare, klistra in utmaningen och tryck på <strong>Save</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/bbabdb48fd4be54d.webp",
+              "width": 1860,
+              "height": 1368
+            }
+          ]
+        },
+        {
+          "title": "Namnge telefonen",
+          "layout": "image-bottom",
+          "html": "<p>Öppna telefonen i Fleet, välj <strong>Edit user</strong>, skriv dess anropssignal och tryck på <strong>Save</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/864752cd63281309.webp",
+              "width": 2128,
+              "height": 1150
+            }
+          ]
+        },
+        {
+          "title": "Skicka dess certifikat",
+          "layout": "image-bottom",
+          "html": "<p>Öppna <strong>OS settings</strong> på samma sida och välj <strong>Resend</strong> på raden <strong>rmscep</strong>: namngivningen ensam skickar ingenting.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/f02b4ebe7e64ac97.webp",
+              "width": 1820,
+              "height": 634
+            }
+          ]
+        },
+        {
+          "title": "Skicka policyn igen",
+          "layout": "image-bottom",
+          "html": "<p>När varje telefon har sina appar tar du bort policyn under <strong>Controls</strong>, <strong>OS settings</strong>, <strong>Configuration profiles</strong> och lägger till den igen, så att Chrome får använda certifikatet. Tryck sedan på <strong>Stäng</strong> i Deploy App och se <strong>Första starten på telefonen</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/11dfb2b661af7839.webp",
+              "width": 1920,
+              "height": 751
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

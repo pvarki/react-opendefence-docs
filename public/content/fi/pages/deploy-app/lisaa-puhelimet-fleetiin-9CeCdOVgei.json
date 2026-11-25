@@ -1,0 +1,139 @@
+{
+  "schemaVersion": 1,
+  "id": "3ad509f9-89b5-453d-b0b2-28abd3ebbd1f",
+  "slug": "lisaa-puhelimet-fleetiin-9CeCdOVgei",
+  "collection": "deploy-app",
+  "locale": "fi",
+  "title": "Lisää puhelimet Fleetiin",
+  "breadcrumb": [
+    "Platforms",
+    "Android",
+    "Ylläpitäjäohjeet",
+    "MDM: Fleet",
+    "Lisää puhelimet Fleetiin"
+  ],
+  "createdAt": "2026-11-22T22:05:18.432Z",
+  "updatedAt": "2026-11-22T22:28:12.243Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/deploy-app/add-phones-in-fleet-lJT3f5UOlt",
+    "fi": "/fi/deploy-app/lisaa-puhelimet-fleetiin-9CeCdOVgei",
+    "sv": "/sv/deploy-app/lagg-till-telefoner-i-fleet-5qOyo9hK23"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Avaa tiimi",
+          "layout": "image-bottom",
+          "html": "<p>Avaa Fleetissä <strong>Hosts</strong> ja valitse ylhäältä Deploy Appisi tiimi, esimerkiksi <code>golden-monkey DeployApp</code>. Paina sitten <strong>Add hosts</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/95b773aaa7191df8.webp",
+              "width": 1860,
+              "height": 766
+            }
+          ]
+        },
+        {
+          "title": "Hae liittymislinkki",
+          "layout": "image-bottom",
+          "html": "<p>Valitse <strong>Android</strong>, pidä valinta <strong>Personal (BYOD)</strong> ja kopioi linkki. Lähetä se puhelimiin.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/b38688edc2fca7e8.webp",
+              "width": 1860,
+              "height": 1221
+            }
+          ]
+        },
+        {
+          "title": "Avaa linkki puhelimessa",
+          "layout": "image-bottom",
+          "html": "<p>Avaa linkki ja napauta <strong>Enroll</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/13980932ec6c3a74.webp",
+              "width": 912,
+              "height": 1804
+            }
+          ]
+        },
+        {
+          "title": "Määritä työprofiili",
+          "layout": "image-bottom",
+          "html": "<p>Napauta <strong>Next</strong> ja pyydettäessä <strong>Continue</strong>. Suomenkielisessä puhelimessa painikkeet ovat suomeksi.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/e7f89bb3db7e6a4b.webp",
+              "width": 912,
+              "height": 1804
+            }
+          ]
+        },
+        {
+          "title": "Hyväksy",
+          "layout": "image-bottom",
+          "html": "<p>Napauta <strong>Accept &#x26; continue</strong> ja pyydettäessä <strong>Next</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/e0d676c54c6c7569.webp",
+              "width": 912,
+              "height": 1804
+            }
+          ]
+        },
+        {
+          "title": "Valmis",
+          "layout": "image-bottom",
+          "html": "<p>Napauta <strong>Done</strong>. Sovellukset ilmestyvät muutamassa minuutissa puhelimen <strong>Work</strong>-välilehdelle.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/6ff5b74a5a7be991.webp",
+              "width": 912,
+              "height": 1804
+            }
+          ]
+        },
+        {
+          "title": "Puhelimet, jotka ovat jo Fleetissä",
+          "layout": "image-bottom",
+          "html": "<p>Onko puhelin jo toisessa tiimissä? Valitse se sivulla <strong>Hosts</strong> ja paina <strong>Transfer</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/8dcfc754b4a6a05b.webp",
+              "width": 1860,
+              "height": 766
+            }
+          ]
+        },
+        {
+          "title": "Valitse tiimi",
+          "layout": "image-bottom",
+          "html": "<p>Valitse Deploy Appisi tiimi ja paina <strong>Transfer</strong>. Jotta puhelin saa myös tämän tiimin sovellukset, poista työprofiili ja liitä puhelin uudelleen tämän tiimin linkillä.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/4ed14db1849952ca.webp",
+              "width": 1860,
+              "height": 1135
+            }
+          ]
+        },
+        {
+          "title": "Nimeä ne sitten",
+          "layout": "image-bottom",
+          "html": "<p>Puhelimet ilmestyvät liittimeen tilassa <strong>waiting for a name</strong>: jatka sivulta <strong>Nimeä puhelimet</strong> luvussa <strong>Käyttäjien tuominen MDM:llä</strong>. Ilman liitintä katso <strong>Nimeä puhelimet Fleetissä ilman liitintä</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/85c6549c4adbb79d.webp",
+              "width": 1860,
+              "height": 1273
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

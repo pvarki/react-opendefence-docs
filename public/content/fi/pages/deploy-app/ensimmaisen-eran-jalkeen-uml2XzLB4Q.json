@@ -1,0 +1,199 @@
+{
+  "schemaVersion": 1,
+  "id": "8a90f383-6567-470f-892b-80112830da48",
+  "slug": "ensimmaisen-eran-jalkeen-uml2XzLB4Q",
+  "collection": "deploy-app",
+  "locale": "fi",
+  "title": "Ensimmäisen erän jälkeen",
+  "breadcrumb": [
+    "Platforms",
+    "Android",
+    "Ylläpitäjäohjeet",
+    "Käyttäjien tuominen MDM:llä",
+    "Ensimmäisen erän jälkeen"
+  ],
+  "createdAt": "2026-11-22T22:03:19.834Z",
+  "updatedAt": "2026-11-23T22:13:22.506Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/deploy-app/after-the-first-batch-cOk5iBzJoS",
+    "fi": "/fi/deploy-app/ensimmaisen-eran-jalkeen-uml2XzLB4Q",
+    "sv": "/sv/deploy-app/efter-den-forsta-omgangen-lzMVPz857A"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Käynnistä liitin uudelleen",
+          "layout": "image-bottom",
+          "html": "<p>Avaa liittimen tiedosto uudelleen, tai kirjoita <code>odmdm-connector web</code>, jos asensit sen päätteestä. Sen sivu avautuu selaimeesi; jos ei, avaa ikkunassa näkyvä osoite.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/727992f26f8e44fe.webp",
+              "width": 1400,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Eikö tunnistetta säilytetty?",
+          "layout": "image-bottom",
+          "html": "<p>Ilman valintaa <strong>Remember on this computer</strong> liitin kysyy tunnistetta jokaisella käynnistyksellä. Liitä se ja paina <strong>Connect</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/96c6ed0fc7ec2ff1.webp",
+              "width": 1052,
+              "height": 1002
+            }
+          ]
+        },
+        {
+          "title": "Jokainen erä alkaa samoin",
+          "layout": "image-bottom",
+          "html": "<p>Avaa liittyminen ja paina <strong>Avaa MDM-liittimessä</strong>. Jokainen avaus tekee uuden haasteen, joten anna se liittimelle, ennen kuin puhelimet pyytävät varmennettaan.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/207fe25d9bd42e90.webp",
+              "width": 1860,
+              "height": 1500
+            }
+          ]
+        },
+        {
+          "title": "Ota uudet asetukset käyttöön",
+          "layout": "image-bottom",
+          "html": "<p>Paina liittimen uudessa välilehdessä <strong>Use the new settings</strong>. MDM:llä on sen jälkeen uusi haaste.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/81d4e75338d27c75.webp",
+              "width": 1052,
+              "height": 816
+            }
+          ]
+        },
+        {
+          "title": "Seuraa kelloa",
+          "layout": "image-bottom",
+          "html": "<p>Ylin rivi kertoo, mihin asti puhelimia otetaan vastaan, ja muuttuu keltaiseksi kymmenen minuuttia ennen. Sulkeutumisen jälkeen pyytävä puhelin hylätään.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/e031100720f16014.webp",
+              "width": 1860,
+              "height": 1273
+            }
+          ]
+        },
+        {
+          "title": "Puhelin vaihdetaan tai tyhjennetään",
+          "layout": "image-bottom",
+          "html": "<p>Liitä puhelin ja anna sille uusi kutsutunnus: Deploy App ei anna samaa kutsutunnusta kahdesti. Tyhjennetty puhelin voi palata vanhalla tunnuksellaan: anna sillekin uusi.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/c68ad60a60efff71.webp",
+              "width": 1860,
+              "height": 1273
+            }
+          ]
+        },
+        {
+          "title": "Puhelin nimetään uudelleen",
+          "layout": "image-bottom",
+          "html": "<p>Valitse se ja paina <strong>Give callsigns</strong>. Vanha kutsutunnus toimii, kunnes se poistetaan Deploy Appista: liitin kertoo, mikä se on.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/e760a1e909d51d9f.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Poista vanha kutsutunnus",
+          "layout": "image-bottom",
+          "html": "<p>Avaa Deploy Appissa <strong>Käyttäjien hallinta</strong> ja sitten <strong>Hallitse käyttäjiä</strong>, valitse vanha kutsutunnus, paina <strong>Poista</strong> ja vahvista kirjoittamalla kutsutunnus.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/26c2f1555d8e179d.webp",
+              "width": 1860,
+              "height": 1094
+            }
+          ]
+        },
+        {
+          "title": "Varmenteet vanhenevat",
+          "layout": "image-bottom",
+          "html": "<p>Puhelimen varmenne on voimassa yhtä kauan kuin Deploy Appisi varmenteet: tällä hetkellä enintään kolme kuukautta. Anna puhelimelle ennen sitä uusi kutsutunnus ja poista vanha, kuten edellä.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/27badde8912dd90d.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Vaihda tunniste",
+          "layout": "image-bottom",
+          "html": "<p>Fleetin kanssa paina <strong>Settings</strong> ja sitten <strong>Change the Fleet settings</strong>. <strong>Settings</strong> näyttää myös, missä liittimen loki on.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/83859f0d42041828.webp",
+              "width": 1860,
+              "height": 1273
+            }
+          ]
+        },
+        {
+          "title": "Anna uusi tunniste",
+          "layout": "image-bottom",
+          "html": "<p>Paina <strong>Next</strong> kortissa <strong>Fleet address</strong>, liitä uusi tunniste korttiin <strong>API token</strong>, paina <strong>Next</strong> ja sitten <strong>Connect</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/0636992548910499.webp",
+              "width": 1052,
+              "height": 992
+            }
+          ]
+        },
+        {
+          "title": "Vaihtuiko osoite tai tiimi?",
+          "layout": "image-bottom",
+          "html": "<p>Säilytetty tunniste toimii vain niillä asetuksilla, joille se tallennettiin. Kun Fleetin osoite tai tiimi on vaihtunut, kirjoita tunniste uudelleen.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/a75588f695772c42.webp",
+              "width": 1052,
+              "height": 1069
+            }
+          ]
+        },
+        {
+          "title": "Toinen Deploy App",
+          "layout": "image-bottom",
+          "html": "<p>Oikean yläkulman nimi luettelee Deploy Appisi, ja <strong>+ Add a Deploy App</strong> lisää uuden. Yksi Fleet voi palvella niitä kaikkia, kutakin omassa tiimissään: katso <strong>Yksi Fleet, monta Deploy Appia</strong> sivulla <strong>Määritä Fleet Deploy Appia varten</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/f063864c2bcc7881.webp",
+              "width": 1860,
+              "height": 1273
+            }
+          ]
+        },
+        {
+          "title": "Poista Deploy App",
+          "layout": "image-bottom",
+          "html": "<p>Samassa luettelossa <strong>Remove north.example.fi…</strong> kysyy ensin ja unohtaa sitten kyseisen Deploy Appin ja sen tunnisteen tältä tietokoneelta. Deploy Appissa, MDM:ssä tai puhelimissa ei muutu mikään. Jos haluat päättää sen myös MDM:ssä, katso <strong>Kun ympäristö päättyy</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/7dbc9f5938f0e007.webp",
+              "width": 1860,
+              "height": 1273
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

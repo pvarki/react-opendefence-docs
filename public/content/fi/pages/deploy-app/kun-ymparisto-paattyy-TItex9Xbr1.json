@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "id": "6ae87787-28f7-434f-8a58-f20508e2f559",
+  "slug": "kun-ymparisto-paattyy-TItex9Xbr1",
+  "collection": "deploy-app",
+  "locale": "fi",
+  "title": "Kun ympäristö päättyy",
+  "breadcrumb": [
+    "Platforms",
+    "Android",
+    "Ylläpitäjäohjeet",
+    "Käyttäjien tuominen MDM:llä",
+    "Kun ympäristö päättyy"
+  ],
+  "createdAt": "2026-11-23T22:14:10.049Z",
+  "updatedAt": "2026-11-23T22:16:23.776Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/deploy-app/when-the-deployment-ends-0IdROkcsVK",
+    "fi": "/fi/deploy-app/kun-ymparisto-paattyy-TItex9Xbr1",
+    "sv": "/sv/deploy-app/nar-miljon-avslutas-87eb0xSxwz"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Ympäristö on päättynyt",
+          "layout": "image-bottom",
+          "html": "<p>Kun Deploy Appisi ajetaan alas, sen varmenteilla ei enää pääse mihinkään, mutta MDM pitää sellaista yhä jokaisessa puhelimessa. Päätä se myös MDM:ssä: sen jälkeen puhelimet voivat ottaa seuraavan Deploy Appisi varmenteen.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/10a97eac7b33819f.webp",
+              "width": 1860,
+              "height": 1273
+            }
+          ]
+        },
+        {
+          "title": "Avaa Remove",
+          "layout": "image-bottom",
+          "html": "<p>Anna MDM:n tunniste, jos liitin kysyy sitä. Avaa oikean yläkulman luettelo: jos Deploy Appeja on useita, avaa ensin golden-monkey.example.fi. Valitse sitten <strong>Remove golden-monkey.example.fi…</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/6f515206644ffbfe.webp",
+              "width": 1860,
+              "height": 1273
+            }
+          ]
+        },
+        {
+          "title": "Päätä se myös MDM:ssä",
+          "layout": "image-bottom",
+          "html": "<p>Valitse <strong>Also end it in Fleet</strong>: rivillä näkyy MDM:si nimi. Ilman valintaa <strong>Remove</strong> vain unohtaa Deploy Appin tältä tietokoneelta. Ikkuna kertoo, kuinka moni puhelin menettää varmenteen. Painiketta <strong>End and remove</strong> ei voi perua.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/4d4a1397091f9145.webp",
+              "width": 1860,
+              "height": 1273
+            }
+          ]
+        },
+        {
+          "title": "Mitä se teki",
+          "layout": "image-bottom",
+          "html": "<p>MDM on poistanut tämän Deploy Appin varmenteen ryhmältä: jokainen puhelin poistaa sen, kun se seuraavan kerran on yhteydessä MDM:ään, Fleetin kanssa noin 15 minuutin kuluessa. Liitin on unohtanut Deploy Appin ja sen tunnisteen.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/d6572235bfb8c9a5.webp",
+              "width": 1052,
+              "height": 1007
+            }
+          ]
+        },
+        {
+          "title": "Seuraava Deploy Appisi",
+          "layout": "image-bottom",
+          "html": "<p>Lisää seuraava Deploy Appisi kuten sivulla <strong>Yhdistä MDM</strong>, samalla puhelinryhmällä. Kun liittyminen on auki, jokainen nimetty puhelin pyytää uutta varmennettaan sillä nimellä, joka sillä on. Puhelinten kuvakkeesta Fleetin kanssa katso <strong>Päätä Deploy App Fleetissä</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/010aa25022ef4e98.webp",
+              "width": 1860,
+              "height": 1273
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

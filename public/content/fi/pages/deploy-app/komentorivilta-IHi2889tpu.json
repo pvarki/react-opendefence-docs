@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 1,
+  "id": "9b4de840-bcf3-4622-bd8c-b8a3e46ec390",
+  "slug": "komentorivilta-IHi2889tpu",
+  "collection": "deploy-app",
+  "locale": "fi",
+  "title": "Komentoriviltä",
+  "breadcrumb": [
+    "Platforms",
+    "Android",
+    "Ylläpitäjäohjeet",
+    "Käyttäjien tuominen MDM:llä",
+    "Komentoriviltä"
+  ],
+  "createdAt": "2026-11-22T22:04:13.710Z",
+  "updatedAt": "2026-11-22T22:26:10.023Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/deploy-app/from-the-command-line-Fs7VvuiDAo",
+    "fi": "/fi/deploy-app/komentorivilta-IHi2889tpu",
+    "sv": "/sv/deploy-app/fran-kommandoraden-xFyiTHblin"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Sama kirjoittamalla",
+          "layout": "image-bottom",
+          "html": "<p>Päivittäiseen työhön on myös komennot niille, jotka tekevät skriptejä. Ne toimivat ladatulla tiedostolla, sen kansiossa kirjoitettuina, samoin kuin päätteestä asennetulla liittimellä.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/864e35025a0c3e54.webp",
+              "width": 1400,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Osoita se Fleetiin",
+          "layout": "image-bottom",
+          "html": "<p>Nämä diat näyttävät Fleetin: aseta sen osoite, tunnistetiedosto ja Deploy Appisi nimi, josta myös tiimi saa nimensä, esimerkiksi <code>golden-monkey DeployApp</code>. Tunniste luetaan tiedostosta, eikä sitä koskaan kirjoiteta komentoriville.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/0d3279d77fecd317.webp",
+              "width": 1400,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Määritä tiimi",
+          "layout": "image-bottom",
+          "html": "<p>Liitä ensimmäisellä kerralla asetusrivi muuttujaan <code>ODMDM_CHALLENGE</code> kuvan mukaisesti, suorita <code>odmdm-connector apply</code> ja tyhjennä muuttuja. Tiimisi saa varmenteen, käytännön, sovellukset ja <strong>Deploy App</strong> -kuvakkeen.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/31eb604022bf4338.webp",
+              "width": 1400,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Uusi avaus",
+          "layout": "image-bottom",
+          "html": "<p><code>odmdm-connector challenge</code> kysyy kopioimaasi asetusriviä näyttämättä sitä ja antaa MDM:lle uuden haasteen.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/878838dd726cfbaf.webp",
+              "width": 1400,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Luettele puhelimet",
+          "layout": "image-bottom",
+          "html": "<p><code>odmdm-connector phones</code> luettelee puhelimet: kunkin numeron, kutsutunnuksen ja varmenteen.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/ddc239b6f7e191b3.webp",
+              "width": 1400,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Nimeä ne",
+          "layout": "image-bottom",
+          "html": "<p><code>name --all OTTER</code> numeroi jokaisen odottavan puhelimen. Tai valitse kukin erikseen: <code>name 33=OTTER3 34=OTTER4</code>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/0ac3cabe164f5748.webp",
+              "width": 1400,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Pyydä uudelleen",
+          "layout": "image-bottom",
+          "html": "<p><code>odmdm-connector resend</code> pyytää varmennetta uudelleen jokaiselle nimetylle puhelimelle, joka hylättiin tai epäonnistui.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/cf40e1a9ab35701e.webp",
+              "width": 1400,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Lähetä käytäntö uudelleen",
+          "layout": "image-bottom",
+          "html": "<p><code>apply --force-policy</code> lähettää käytännön jokaiseen puhelimeen uudelleen: korjaus ilmoitukseen <strong>Varmenteen todennus epäonnistui</strong> puhelimessa, jolla on varmenteensa. Ei silloin, kun puhelimet vielä asentavat sovelluksia.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/afa3272453328ebd.webp",
+              "width": 1400,
+              "height": 1000
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

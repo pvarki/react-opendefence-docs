@@ -1,0 +1,175 @@
+{
+  "schemaVersion": 1,
+  "id": "c47f9599-9459-44c6-aaf1-d15750da8462",
+  "slug": "deploy-app-tukee-mdmaa-jVgQarMKxG",
+  "collection": "deploy-app",
+  "locale": "fi",
+  "title": "Deploy App tukee MDM:ää",
+  "breadcrumb": [
+    "Platforms",
+    "Android",
+    "Ylläpitäjäohjeet",
+    "Käyttäjien tuominen MDM:llä",
+    "Deploy App tukee MDM:ää"
+  ],
+  "createdAt": "2026-11-22T22:00:12.992Z",
+  "updatedAt": "2026-11-22T22:19:11.197Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/deploy-app/deploy-app-supports-mdm-hgbi4NqgKT",
+    "fi": "/fi/deploy-app/deploy-app-tukee-mdmaa-jVgQarMKxG",
+    "sv": "/sv/deploy-app/deploy-app-stoder-mdm-4ZstBxkyd8"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Valmiina käyttäjälle",
+          "layout": "image-bottom",
+          "html": "<p>MDM:n määrittämä puhelin on valmis, kun käyttäjä saa sen: sovellukset on asennettu, ja Deploy App avautuu puhelimen omalla kutsutunnuksella.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/0cf1fdd05c6fd237.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Käsin, puhelin kerrallaan",
+          "layout": "image-bottom",
+          "html": "<p>Ilman MDM:ää jokainen käyttäjä avaa kutsun, odottaa ylläpitäjän hyväksyntää, lataa avaimen ja asentaa sen salasanalla. Kolmekymmentä puhelinta, kolmekymmentä kertaa.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/3928b1a19cbc3f9d.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "MDM:llä koko erä kerralla",
+          "layout": "image-bottom",
+          "html": "<p>Määritä kerran, niin jokainen liittämäsi puhelin saa sovelluksensa ja <strong>Deploy App</strong> -kuvakkeen itsestään, ja varmenteensa, kun nimeät sen. Kukaan ei kirjoita kutsukoodia.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/f29028aa433cd5dc.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Avain pysyy puhelimessa",
+          "layout": "image-bottom",
+          "html": "<p>Jokainen puhelin tekee oman avaimensa, ja Deploy App allekirjoittaa sen. Avaintiedostoa tai salasanaa ei välitetä kenellekään.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/e82db0e5566486cc.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Näin se toimii",
+          "layout": "image-bottom",
+          "html": "<p>MDM määrittää puhelimen. Deploy App antaa sille identiteetin: varmenteen sen kutsutunnuksella.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/5a63eb896c08974b.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Yksi kutsutunnus puhelinta kohti",
+          "layout": "image-bottom",
+          "html": "<p>Jokainen puhelin liittyy kutsutunnuksellaan, esimerkiksi <code>OTTER4</code>, ja käyttää Deploy Appia ja sen palveluita kuten kuka tahansa käyttäjä.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/60a22ad1b2c3c1d4.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Liitä ensin, nimeä sitten",
+          "layout": "image-bottom",
+          "html": "<p>Puhelimia voi liittää kuinka monta tahansa ja missä järjestyksessä tahansa. Kun kaikilla on sovelluksensa, nimeä ne kerralla: jokainen saa silloin varmenteensa.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/1e37e871dc6f397e.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Sinä päätät, milloin",
+          "layout": "image-bottom",
+          "html": "<p>Puhelimen voi liittää MDM:ään milloin tahansa, mutta Deploy App myöntää varmenteita vain, kun liittyminen on auki, enintään 2 tuntia kerrallaan. Jokainen avaus tekee uuden haasteen: salasanan, jonka MDM tarvitsee.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/fb67325e9dadf4f3.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Mitä MDM:ltä vaaditaan",
+          "layout": "image-bottom",
+          "html": "<p>MDM:n on osattava nämä viisi asiaa. <strong>Toisen MDM:n käyttö</strong> näyttää jokaisen.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/1299438cd3d77c30.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Fleet toimii sellaisenaan",
+          "layout": "image-bottom",
+          "html": "<p>Fleet (FleetDM) on yksi MDM, ja se, joka toimii sellaisenaan: <strong>ODMDM connector</strong> määrittää sen puolestasi. Toinen MDM tarvitsee liittimeen lisäosan, jollaista ei vielä ole, tai sen asetukset tehdään käsin.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/f544344bb3a924f9.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Mitä tarvitset",
+          "layout": "image-bottom",
+          "html": "<p>MDM:n, jossa Android Enterprise on käytössä (kysy MDM:n ylläpitäjältä), ja siihen ryhmän tämän Deploy Appin puhelimille. <strong>ODMDM connector</strong> on vapaaehtoinen: ilman sitä katso <strong>Ilman liitintä</strong> sivulla <strong>Yhdistä MDM</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/c244a35e6e077e6d.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Reittisi",
+          "layout": "image-bottom",
+          "html": "<p>Asenna liitin, yhdistä MDM, liitä puhelimet, nimeä ne ja käynnistä ne. Fleetin kanssa tarkista ensin <strong>Mitä Fleet tarvitsee</strong> sivulla <strong>Määritä Fleet Deploy Appia varten</strong>; toisen MDM:n kanssa aloita sivulta <strong>Toisen MDM:n käyttö</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/98fbcd461e864076.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

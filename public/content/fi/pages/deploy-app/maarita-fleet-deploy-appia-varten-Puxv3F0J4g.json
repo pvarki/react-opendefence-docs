@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "id": "cab8f146-e0fd-4baa-899c-a08900b2a6cd",
+  "slug": "maarita-fleet-deploy-appia-varten-Puxv3F0J4g",
+  "collection": "deploy-app",
+  "locale": "fi",
+  "title": "Määritä Fleet Deploy Appia varten",
+  "breadcrumb": [
+    "Platforms",
+    "Android",
+    "Ylläpitäjäohjeet",
+    "MDM: Fleet",
+    "Määritä Fleet Deploy Appia varten"
+  ],
+  "createdAt": "2026-11-22T22:05:12.158Z",
+  "updatedAt": "2026-11-22T22:27:16.256Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/deploy-app/set-fleet-up-for-deploy-app-Prkasq85P6",
+    "fi": "/fi/deploy-app/maarita-fleet-deploy-appia-varten-Puxv3F0J4g",
+    "sv": "/sv/deploy-app/stall-in-fleet-for-deploy-app-8QfR6PSGC7"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Mitä Fleet tarvitsee",
+          "layout": "image-bottom",
+          "html": "<p>Fleet tarvitsee Deploy Appia varten kolme asiaa: Androidin käytössä, tiimin tämän Deploy Appin puhelimille ja API-tunnisteen liittimelle.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/c866e93180af146a.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Android käytössä",
+          "layout": "image-bottom",
+          "html": "<p>Fleetissä: kohdassa <strong>Settings</strong>, <strong>Integrations</strong>, <strong>MDM</strong> on luettava <strong>Android MDM turned on.</strong> Jos ei, Fleetin ylläpitäjä yhdistää siihen Android Enterprisen: kerran, kaikille tiimeille.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/194599442ac9d77a.webp",
+              "width": 1860,
+              "height": 1031
+            }
+          ]
+        },
+        {
+          "title": "Tiimi ympäristösi nimellä",
+          "layout": "image-bottom",
+          "html": "<p>Nimeä tiimi ympäristösi nimellä ja sanalla DeployApp, esimerkiksi <code>golden-monkey DeployApp</code>: kuka tahansa näkee silloin Fleetissä, mikä tiimi kuuluu millekin Deploy Appille. Fleetin konsoli kutsuu tiimiä nimellä fleet.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/412a9f4da212baed.webp",
+              "width": 1860,
+              "height": 881
+            }
+          ]
+        },
+        {
+          "title": "Liitin tekee sen",
+          "layout": "image-bottom",
+          "html": "<p>Vähimmällä vaivalla: liitin tekee tiimin, kun painat <strong>Connect</strong>, korttinsa <strong>Team</strong> nimellä. Jos teet sen itse: <strong>Settings</strong>, <strong>Fleets</strong>, <strong>Add fleet</strong>, kirjoita nimi ja paina <strong>Create</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/29b58272dc19a25b.webp",
+              "width": 1860,
+              "height": 1032
+            }
+          ]
+        },
+        {
+          "title": "API-tunniste",
+          "layout": "image-bottom",
+          "html": "<p>Liitin tarvitsee pääylläpitäjän (global admin) API-tunnisteen. Kohdasta <strong>My account</strong>, <strong>Get API token</strong> saatu tunniste lakkaa toimimasta, kun kyseinen kirjautuminen päättyy, oletuksena 5 päivän kuluttua; API-only-käyttäjän tunniste ei vanhene.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/ee6f04dde7942fa8.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "API-only-käyttäjä",
+          "layout": "image-bottom",
+          "html": "<p>Fleetin ylläpitäjä tekee sellaisen: <strong>Settings</strong>, <strong>Users</strong>, <strong>Add user</strong>, <strong>API-only user</strong>, roolina koko Fleetin Admin (Global). Hän antaa sitten sinulle sen tunnisteen.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/17faf3b2f47a6b6f.webp",
+              "width": 1860,
+              "height": 820
+            }
+          ]
+        },
+        {
+          "title": "Yksi Fleet, monta Deploy Appia",
+          "layout": "image-bottom",
+          "html": "<p>Yksi Fleet voi palvella useaa Deploy Appia: kun painat <strong>Connect</strong>, kukin saa oman tiimin ja oman varmenteiden myöntäjän. Tunniste on pääylläpitäjän, joten jaa Fleet vain sellaisten ylläpitäjien kanssa, joille uskot sen kokonaan.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/322dd331fd36e3cc.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Fleetin osoite",
+          "layout": "image-bottom",
+          "html": "<p>Kun liitin kysyy, mitä MDM tarvitsee, kirjoita korttiin <strong>Fleet address</strong> osoite, josta avaat Fleetin, ja paina <strong>Next</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/2813ed9f25d3633b.webp",
+              "width": 1052,
+              "height": 888
+            }
+          ]
+        },
+        {
+          "title": "Tunniste",
+          "layout": "image-bottom",
+          "html": "<p>Liitä tunniste ja paina <strong>Next</strong>. Kun <strong>Remember on this computer</strong> on valittuna, avainnippu säilyttää sen seuraavaa käynnistystä varten.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/609524e26b21f815.webp",
+              "width": 1052,
+              "height": 992
+            }
+          ]
+        },
+        {
+          "title": "Tiimi",
+          "layout": "image-bottom",
+          "html": "<p><strong>Team</strong> ehdottaa ympäristösi nimeä ja sanaa DeployApp, esimerkiksi <code>golden-monkey DeployApp</code>: jätä se, ja jätä <strong>More settings</strong> ennalleen. Paina <strong>Connect</strong>: tiimi tehdään, jos sitä ei ole.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/8dac385537c7a381.webp",
+              "width": 1052,
+              "height": 977
+            }
+          ]
+        },
+        {
+          "title": "Mitä Connect määrittää",
+          "layout": "image-bottom",
+          "html": "<p>Fleet saa Deploy Appin varmenteiden myöntäjäksi, ja tiimi saa varmenteen, käytännön, sovellukset ja <strong>Deploy App</strong> -kuvakkeen. Jatka sitten kohdasta <strong>Liitin määrittää MDM:n</strong> sivulla <strong>Yhdistä MDM</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/801aa5dfe3218452.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

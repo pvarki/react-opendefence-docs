@@ -1,0 +1,139 @@
+{
+  "schemaVersion": 1,
+  "id": "55530d51-d0a0-4309-8356-c8f6145cfc7b",
+  "slug": "lagg-till-telefoner-i-fleet-5qOyo9hK23",
+  "collection": "deploy-app",
+  "locale": "sv",
+  "title": "Lägg till telefoner i Fleet",
+  "breadcrumb": [
+    "Platforms",
+    "Android",
+    "Administratörsguide",
+    "MDM: Fleet",
+    "Lägg till telefoner i Fleet"
+  ],
+  "createdAt": "2026-11-22T22:10:22.524Z",
+  "updatedAt": "2026-11-22T22:29:12.688Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/deploy-app/add-phones-in-fleet-lJT3f5UOlt",
+    "fi": "/fi/deploy-app/lisaa-puhelimet-fleetiin-9CeCdOVgei",
+    "sv": "/sv/deploy-app/lagg-till-telefoner-i-fleet-5qOyo9hK23"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Öppna teamet",
+          "layout": "image-bottom",
+          "html": "<p>Öppna <strong>Hosts</strong> i Fleet och välj din Deploy Apps team högst upp, till exempel <code>golden-monkey DeployApp</code>. Tryck sedan på <strong>Add hosts</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/95b773aaa7191df8.webp",
+              "width": 1860,
+              "height": 766
+            }
+          ]
+        },
+        {
+          "title": "Hämta anslutningslänken",
+          "layout": "image-bottom",
+          "html": "<p>Välj <strong>Android</strong>, behåll <strong>Personal (BYOD)</strong> och kopiera länken. Skicka den till telefonerna.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/b38688edc2fca7e8.webp",
+              "width": 1860,
+              "height": 1221
+            }
+          ]
+        },
+        {
+          "title": "Öppna länken på telefonen",
+          "layout": "image-bottom",
+          "html": "<p>Öppna länken och tryck på <strong>Enroll</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/13980932ec6c3a74.webp",
+              "width": 912,
+              "height": 1804
+            }
+          ]
+        },
+        {
+          "title": "Ställ in jobbprofilen",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på <strong>Next</strong>, och <strong>Continue</strong> om du blir tillfrågad. På en svensk telefon står knapparna på svenska.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/e7f89bb3db7e6a4b.webp",
+              "width": 912,
+              "height": 1804
+            }
+          ]
+        },
+        {
+          "title": "Godkänn",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på <strong>Accept &#x26; continue</strong>, och sedan <strong>Next</strong> om du blir tillfrågad.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/e0d676c54c6c7569.webp",
+              "width": 912,
+              "height": 1804
+            }
+          ]
+        },
+        {
+          "title": "Klart",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på <strong>Done</strong>. Inom några minuter dyker apparna upp på telefonens flik <strong>Work</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/6ff5b74a5a7be991.webp",
+              "width": 912,
+              "height": 1804
+            }
+          ]
+        },
+        {
+          "title": "Telefoner som redan finns i Fleet",
+          "layout": "image-bottom",
+          "html": "<p>Finns telefonen redan i ett annat team? Kryssa i den på <strong>Hosts</strong> och tryck på <strong>Transfer</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/8dcfc754b4a6a05b.webp",
+              "width": 1860,
+              "height": 766
+            }
+          ]
+        },
+        {
+          "title": "Välj teamet",
+          "layout": "image-bottom",
+          "html": "<p>Välj din Deploy Apps team och tryck på <strong>Transfer</strong>. För att telefonen också ska få det här teamets appar tar du bort jobbprofilen och ansluter telefonen igen med det här teamets länk.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/4ed14db1849952ca.webp",
+              "width": 1860,
+              "height": 1135
+            }
+          ]
+        },
+        {
+          "title": "Namnge dem sedan",
+          "layout": "image-bottom",
+          "html": "<p>Telefonerna dyker upp i anslutaren som <strong>waiting for a name</strong>: fortsätt med <strong>Namnge telefoner</strong> i <strong>Ta in användare via MDM</strong>. Utan anslutaren, se <strong>Namnge telefoner i Fleet utan anslutaren</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/85c6549c4adbb79d.webp",
+              "width": 1860,
+              "height": 1273
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

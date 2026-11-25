@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "id": "aa6b20c1-db89-4b85-bc5d-aa9cfbd402cc",
+  "slug": "maarita-fleet-ilman-liitinta-v1gTQPz5sV",
+  "collection": "deploy-app",
+  "locale": "fi",
+  "title": "Määritä Fleet ilman liitintä",
+  "breadcrumb": [
+    "Platforms",
+    "Android",
+    "Ylläpitäjäohjeet",
+    "MDM: Fleet",
+    "Määritä Fleet ilman liitintä"
+  ],
+  "createdAt": "2026-11-22T22:05:26.554Z",
+  "updatedAt": "2026-11-23T11:55:12.730Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/deploy-app/set-fleet-up-without-the-connector-Xm6Qo0Xkhr",
+    "fi": "/fi/deploy-app/maarita-fleet-ilman-liitinta-v1gTQPz5sV",
+    "sv": "/sv/deploy-app/stall-in-fleet-utan-anslutaren-ACj14KNsa3"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Mihin nämä diat ovat",
+          "layout": "image-bottom",
+          "html": "<p>Näillä dioilla Fleet määritetään Deploy Appia varten käsin, kun liitintä ei voi käyttää. Siihen tarvitaan teknistä henkilöstöä ja Fleetin konsolia.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/8c60a40750a953be.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Aloita tiimistä",
+          "layout": "image-bottom",
+          "html": "<p>Tee ympäristösi mukaan nimetty tiimi, esimerkiksi <code>golden-monkey DeployApp</code>: <strong>Settings</strong>, <strong>Fleets</strong>, <strong>Add fleet</strong>. Avaa liittyminen Deploy Appissa, niin näet kohdat <strong>SCEP-osoite</strong> ja <strong>Haaste</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/801aa5dfe3218452.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Lisää Deploy App varmenteiden myöntäjäksi",
+          "layout": "image-bottom",
+          "html": "<p>Fleetissä: <strong>Settings</strong>, <strong>Integrations</strong>, <strong>Certificate enrollment</strong>, <strong>Add CA</strong>. Valitse <strong>Custom Simple Certificate Enrollment Protocol (SCEP)</strong> ja anna Deploy Appin <strong>SCEP-osoite</strong> ja <strong>Haaste</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/9b3b4a139f0d870d.webp",
+              "width": 1860,
+              "height": 1486
+            }
+          ]
+        },
+        {
+          "title": "Lisää varmenne",
+          "layout": "image-bottom",
+          "html": "<p>Valitse ylhäältä tiimisi ja sitten <strong>Controls</strong>, <strong>OS settings</strong>, <strong>Certificates</strong>, <strong>Add</strong>. Nimi <code>rmscep</code>, subject <code>CN=$FLEET_VAR_HOST_END_USER_IDP_USERNAME_LOCAL_PART</code>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/194e51dab07a0035.webp",
+              "width": 1860,
+              "height": 1915
+            }
+          ]
+        },
+        {
+          "title": "Lisää käytäntö",
+          "layout": "image-bottom",
+          "html": "<p>Paina kohdassa <strong>Configuration profiles</strong> <strong>Add profile</strong> ja lisää liittimen <code>template.json</code>-tiedoston osa <code>policy</code> niin, että <code>{domain}</code> on Deploy Appisi nimi, esimerkiksi <code>golden-monkey.example.fi</code>, ja <code>{key_alias}</code> on <code>rmscep</code>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/11dfb2b661af7839.webp",
+              "width": 1920,
+              "height": 751
+            }
+          ]
+        },
+        {
+          "title": "Valitse sovellukset",
+          "layout": "image-bottom",
+          "html": "<p><strong>Controls</strong>, <strong>Setup experience</strong>, <strong>Install software</strong>, <strong>Android</strong>, tiimisi valittuna: valitse Chrome ja yksikkösi käyttämät sovellukset. Ne asennetaan, kun puhelin liitetään, eikä koskaan muulloin.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/e1e78513ac74bf9d.webp",
+              "width": 2020,
+              "height": 1130
+            }
+          ]
+        },
+        {
+          "title": "Anna Chromen käyttää varmennetta",
+          "layout": "image-bottom",
+          "html": "<p>Ilman omaa asetustaan Chrome ei lähetä varmennetta. Avaa kohdassa <strong>Software</strong>, tiimisi valittuna, <strong>Google Chrome</strong> ja sitten <strong>Actions</strong> ja <strong>Edit configuration</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/32fe026b3d6cb7ae.webp",
+              "width": 1860,
+              "height": 689
+            }
+          ]
+        },
+        {
+          "title": "Chromen asetus",
+          "layout": "image-bottom",
+          "html": "<p>Anna kohtaan <strong>Google Chrome</strong> <code>template.json</code>-tiedoston Chromen osa <code>config</code>, kohdan <code>managedConfiguration</code> sisään, niin että <code>{mtls_url}</code> on Deploy Appisi osoite, esimerkiksi <code>https://mtls.golden-monkey.example.fi</code>. Paina <strong>Save</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/4058ec053e129c71.webp",
+              "width": 1860,
+              "height": 1311
+            }
+          ]
+        },
+        {
+          "title": "Deploy App -kuvaketta ei saa käsin",
+          "layout": "image-bottom",
+          "html": "<p>Fleetin konsolilla ei voi tehdä <strong>Deploy App</strong> -kuvaketta: siihen tarvitaan liitin tai Fleetin rajapinta. Ilman sitä käyttäjät avaavat työprofiilin <strong>Chrome</strong>n ja kirjoittavat Deploy Appisi osoitteen.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/116f83762088a51f.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Liitä ja nimeä sitten",
+          "layout": "image-bottom",
+          "html": "<p>Puhelimia voi nyt liittää: katso <strong>Lisää puhelimet Fleetiin</strong>. Nimeä ne myös Fleetissä: katso <strong>Nimeä puhelimet Fleetissä ilman liitintä</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/26e6605f962b54b8.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

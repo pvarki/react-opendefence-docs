@@ -1,0 +1,139 @@
+{
+  "schemaVersion": 1,
+  "id": "92bff599-b0d5-41ab-bc8c-d32f025d6301",
+  "slug": "installera-anslutaren-fran-en-terminal-DTEI1XK0FM",
+  "collection": "deploy-app",
+  "locale": "sv",
+  "title": "Installera anslutaren från en terminal",
+  "breadcrumb": [
+    "Platforms",
+    "Android",
+    "Administratörsguide",
+    "Ta in användare via MDM",
+    "Installera anslutaren från en terminal"
+  ],
+  "createdAt": "2026-11-22T22:08:31.710Z",
+  "updatedAt": "2026-11-22T22:26:12.006Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/deploy-app/install-the-connector-from-a-terminal-vSDV2SJXgj",
+    "fi": "/fi/deploy-app/asenna-liitin-paatteesta-zFGeRuAR6T",
+    "sv": "/sv/deploy-app/installera-anslutaren-fran-en-terminal-DTEI1XK0FM"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "När en terminal behövs",
+          "layout": "image-bottom",
+          "html": "<p>Använd de här bilderna för ett tillägg, eller om du hellre använder en terminal än den nedladdade filen. Öppna en terminal: på Windows <strong>Start</strong> och skriv <code>PowerShell</code>; på en Mac Cmd+Mellanslag och skriv <code>Terminal</code>; tryck sedan på Enter.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/1a0fae89afeae2fb.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Skaffa uv och git",
+          "layout": "image-bottom",
+          "html": "<p>Anslutaren installeras med <strong>uv</strong>, som hämtar den med <strong>git</strong>. Skriv raderna för din dator, tryck på Enter efter varje och godta det Macen erbjuder. Öppna sedan en ny terminal.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/d47d3c8c20f681bf.webp",
+              "width": 1400,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Installera den",
+          "layout": "image-bottom",
+          "html": "<p>Skriv detta som en rad och tryck på Enter: <code>uv tool install git+https://github.com/pvarki/python-odmdm-fleet</code></p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/2ac5e4284e554cd8.webp",
+              "width": 1400,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Starta den",
+          "layout": "image-bottom",
+          "html": "<p>Skriv <code>odmdm-connector web</code> och tryck på Enter: anslutarens sida öppnas i din webbläsare. Om den inte öppnas, öppna adressen som terminalen visar.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/6a4f2a5aca1be212.webp",
+              "width": 1400,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Din standardwebbläsare",
+          "layout": "image-bottom",
+          "html": "<p>Den öppnas i din standardwebbläsare: använd Deploy App i samma webbläsare. Starta den bara en gång: om den säger att anslutaren kanske redan körs, använd sidan du har.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/da17c41372a41b3a.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Håll terminalen öppen",
+          "layout": "image-bottom",
+          "html": "<p>Den körs så länge dess terminal är öppen, och Ctrl+C stoppar den. Dess sida ber dig sedan lägga till din Deploy App: se <strong>Koppla din MDM</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/83cbeb42058ac724.webp",
+              "width": 1052,
+              "height": 609
+            }
+          ]
+        },
+        {
+          "title": "Inget internet?",
+          "layout": "image-bottom",
+          "html": "<p>Att installera med uv kräver internet. Utan det kan teknisk personal ta med anslutaren som en enda fil, som behöver Python 3.11 eller nyare: se <strong>Into a network without internet</strong> i anslutarens README.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/caaacdefed334d18.webp",
+              "width": 1400,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Uppgradera den",
+          "layout": "image-bottom",
+          "html": "<p>Stoppa anslutaren med Ctrl+C och skriv installationsraden igen med <code>--reinstall</code> i slutet. Om du använder ett tillägg behåller du dess <code>--with</code>-del i raden.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/2eee9506e2d17f7d.webp",
+              "width": 1400,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Ta bort den",
+          "layout": "image-bottom",
+          "html": "<p>Öppna först Deploy Apps namn uppe till höger på anslutarens sida och ta bort varje Deploy App. Stoppa den sedan och skriv <code>uv tool uninstall odmdm-connector</code>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/39e53dae4fa8689d.webp",
+              "width": 1400,
+              "height": 1000
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "id": "fb0a7226-4239-40d7-9915-0ec6f6a630a3",
+  "slug": "koppla-din-mdm-o32bkyreTb",
+  "collection": "deploy-app",
+  "locale": "sv",
+  "title": "Koppla din MDM",
+  "breadcrumb": [
+    "Platforms",
+    "Android",
+    "Administratörsguide",
+    "Ta in användare via MDM",
+    "Koppla din MDM"
+  ],
+  "createdAt": "2026-11-22T22:07:12.965Z",
+  "updatedAt": "2026-11-22T22:22:07.810Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/deploy-app/connect-your-mdm-CqNOaahyKB",
+    "fi": "/fi/deploy-app/yhdista-mdm-QBy34u1J8P",
+    "sv": "/sv/deploy-app/koppla-din-mdm-o32bkyreTb"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Starta anslutaren",
+          "layout": "image-bottom",
+          "html": "<p>Starta anslutaren (se <strong>Installera anslutaren</strong>): dess sida öppnas i din standardwebbläsare. Första gången ber den dig lägga till din Deploy App.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/c280a03b4b45918c.webp",
+              "width": 1052,
+              "height": 1232
+            }
+          ]
+        },
+        {
+          "title": "Öppna MDM-sidan",
+          "layout": "image-bottom",
+          "html": "<p>Logga in i Deploy App som administratör, på samma dator och i samma webbläsare. Öppna <strong>Användarhantering</strong> och sedan <strong>MDM</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/db3252f1c66a83d6.webp",
+              "width": 1860,
+              "height": 856
+            }
+          ]
+        },
+        {
+          "title": "Öppna anslutningen",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på <strong>Öppna i 2 timmar</strong>. Varje öppning skapar en ny utmaning, som din MDM behöver.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/bdc186723314cd99.webp",
+              "width": 1860,
+              "height": 889
+            }
+          ]
+        },
+        {
+          "title": "Lämna över den till anslutaren",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på <strong>Öppna i MDM-anslutaren</strong>. Den öppnar anslutaren i en ny flik, med den här öppningens inställningar.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/556d5332f0df4d7e.webp",
+              "width": 1860,
+              "height": 1125
+            }
+          ]
+        },
+        {
+          "title": "Ingen ny flik?",
+          "layout": "image-bottom",
+          "html": "<p>Kontrollera att anslutaren körs och att Deploy App är öppen i samma webbläsare. Eller tryck på <strong>Kopiera inställningarna</strong> och klistra in raden på anslutarens första kort.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/1fd41bbc71b2168c.webp",
+              "width": 1860,
+              "height": 1125
+            }
+          ]
+        },
+        {
+          "title": "Lägg till din Deploy App",
+          "layout": "image-bottom",
+          "html": "<p>Kontrollera att namnet är din Deploy Apps och tryck sedan på <strong>Add golden-monkey.example.fi</strong>. Vilken webbsida som helst kan öppna anslutaren, så lägg bara till den du väntar dig.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/8ba3acd99713a0df.webp",
+              "width": 1052,
+              "height": 881
+            }
+          ]
+        },
+        {
+          "title": "Vad din MDM behöver",
+          "layout": "image-bottom",
+          "html": "<p>Anslutaren frågar nu vad din MDM behöver. Med Fleet, se <strong>Ställ in Fleet för Deploy App</strong> i <strong>MDM: Fleet</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/d77a1bf8e38d3c14.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Den ställer in din MDM",
+          "layout": "image-bottom",
+          "html": "<p>Efter <strong>Connect</strong> ställer anslutaren in din MDM, vilket kan ta en minut eller två. Varje steg bockas av när det är klart.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/25434164079def7c.webp",
+              "width": 1052,
+              "height": 949
+            }
+          ]
+        },
+        {
+          "title": "Kopplad",
+          "layout": "image-bottom",
+          "html": "<p>Din MDM:s grupp för den här Deploy App har nu certifikatet, policyn, apparna och ikonen <strong>Deploy App</strong>. Tryck på <strong>Show the phones</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/a147bb9c023d0795.webp",
+              "width": 1052,
+              "height": 976
+            }
+          ]
+        },
+        {
+          "title": "Redo för telefoner",
+          "layout": "image-bottom",
+          "html": "<p>Sidan listar den här Deploy Apps telefoner: inga ännu. Låt den vara öppen och anslut telefonerna.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/afb67a1cd0952c42.webp",
+              "width": 1860,
+              "height": 1273
+            }
+          ]
+        },
+        {
+          "title": "Utan anslutaren",
+          "layout": "image-bottom",
+          "html": "<p>Utan anslutaren kan teknisk personal ställa in det mesta av detta i din MDM för hand. Med Fleet, se <strong>Ställ in Fleet utan anslutaren</strong> i <strong>MDM: Fleet</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/293f4c9d9f626ee4.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

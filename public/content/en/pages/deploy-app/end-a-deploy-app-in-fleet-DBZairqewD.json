@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "id": "5ae984b6-76d5-4f20-a862-5849fe1be7c8",
+  "slug": "end-a-deploy-app-in-fleet-DBZairqewD",
+  "collection": "deploy-app",
+  "locale": "en",
+  "title": "End a Deploy App in Fleet",
+  "breadcrumb": [
+    "Platforms",
+    "Android",
+    "Admin Guide",
+    "MDM: Fleet",
+    "End a Deploy App in Fleet"
+  ],
+  "createdAt": "2026-11-23T22:12:22.585Z",
+  "updatedAt": "2026-11-23T22:16:18.704Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/deploy-app/end-a-deploy-app-in-fleet-DBZairqewD",
+    "fi": "/fi/deploy-app/paata-deploy-app-fleetissa-5JjkJVQReP",
+    "sv": "/sv/deploy-app/avsluta-en-deploy-app-i-fleet-yMLUsZrUsf"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "What ending removes",
+          "layout": "image-bottom",
+          "html": "<p>In the connector, ending deletes two things in Fleet: the team's certificate, named <code>rmscep</code>, and the Deploy App's authority, unless another team uses it. The team, its phones, their names and their apps stay.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/654165ace7a4703d.webp",
+              "width": 1860,
+              "height": 1091
+            }
+          ]
+        },
+        {
+          "title": "By hand: the certificate",
+          "layout": "image-bottom",
+          "html": "<p>Without the connector: choose your team at the top, then <strong>Controls</strong>, <strong>OS settings</strong>, <strong>Certificates</strong>. On <code>rmscep</code> open <strong>Actions</strong>, choose <strong>Delete</strong> and confirm: every phone of that team drops the certificate, and it cannot be undone.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/8cc1e68b50127fd7.webp",
+              "width": 1860,
+              "height": 930
+            }
+          ]
+        },
+        {
+          "title": "By hand: the authority",
+          "layout": "image-bottom",
+          "html": "<p>Then <strong>Settings</strong>, <strong>Integrations</strong>, <strong>Certificate enrollment</strong>: delete your Deploy App's authority, the one named under <code>rmscep</code> on the first slide. If Fleet refuses, another team's certificate still uses it: leave it.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/a153d40a6a93d93c.webp",
+              "width": 1860,
+              "height": 978
+            }
+          ]
+        },
+        {
+          "title": "The next Deploy App",
+          "layout": "image-bottom",
+          "html": "<p>At <strong>Connect</strong> for your next Deploy App, type the old team's name on <strong>Team</strong>, such as <code>golden-monkey DeployApp</code>. Each named phone in it then asks for the new certificate while enrolment is open.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/e1e587b096125b38.webp",
+              "width": 1052,
+              "height": 977
+            }
+          ]
+        },
+        {
+          "title": "The next one, by hand",
+          "layout": "image-bottom",
+          "html": "<p>By hand, make no new team: add the new Deploy App's authority and certificate to the same team, and put its address in the policy and in <strong>Google Chrome</strong>'s setting, as in <strong>Set Fleet up without the connector</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/adfedcc89aed2293.webp",
+              "width": 1860,
+              "height": 1091
+            }
+          ]
+        },
+        {
+          "title": "Apps and the icon",
+          "layout": "image-bottom",
+          "html": "<p>A phone gets apps and the <strong>Deploy App</strong> icon only when it enrols, so a kept phone's icon still opens the old Deploy App. For the new one, remove its work profile before you connect the next Deploy App, and enrol it again after.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/84840932117af60e.webp",
+              "width": 912,
+              "height": 1804
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

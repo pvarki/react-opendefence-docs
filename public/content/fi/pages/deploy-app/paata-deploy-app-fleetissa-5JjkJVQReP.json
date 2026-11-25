@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "id": "8fb7cd71-79b0-41e6-afad-5734c47d7f4f",
+  "slug": "paata-deploy-app-fleetissa-5JjkJVQReP",
+  "collection": "deploy-app",
+  "locale": "fi",
+  "title": "Päätä Deploy App Fleetissä",
+  "breadcrumb": [
+    "Platforms",
+    "Android",
+    "Ylläpitäjäohjeet",
+    "MDM: Fleet",
+    "Päätä Deploy App Fleetissä"
+  ],
+  "createdAt": "2026-11-23T22:14:15.741Z",
+  "updatedAt": "2026-11-23T22:16:28.543Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/deploy-app/end-a-deploy-app-in-fleet-DBZairqewD",
+    "fi": "/fi/deploy-app/paata-deploy-app-fleetissa-5JjkJVQReP",
+    "sv": "/sv/deploy-app/avsluta-en-deploy-app-i-fleet-yMLUsZrUsf"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Mitä päättäminen poistaa",
+          "layout": "image-bottom",
+          "html": "<p>Kun Deploy App päätetään liittimessä, Fleetistä poistuu kaksi asiaa: tiimin varmenne nimeltä <code>rmscep</code> ja Deploy Appin myöntäjä, ellei jokin toinen tiimi käytä sitä. Tiimi, sen puhelimet, niiden nimet ja sovellukset säilyvät.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/654165ace7a4703d.webp",
+              "width": 1860,
+              "height": 1091
+            }
+          ]
+        },
+        {
+          "title": "Käsin: varmenne",
+          "layout": "image-bottom",
+          "html": "<p>Ilman liitintä: valitse ylhäältä tiimisi ja sitten <strong>Controls</strong>, <strong>OS settings</strong>, <strong>Certificates</strong>. Avaa rivillä <code>rmscep</code> <strong>Actions</strong>, valitse <strong>Delete</strong> ja vahvista: tiimin jokainen puhelin poistaa varmenteen, eikä sitä voi perua.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/8cc1e68b50127fd7.webp",
+              "width": 1860,
+              "height": 930
+            }
+          ]
+        },
+        {
+          "title": "Käsin: myöntäjä",
+          "layout": "image-bottom",
+          "html": "<p>Sitten <strong>Settings</strong>, <strong>Integrations</strong>, <strong>Certificate enrollment</strong>: poista Deploy Appisi myöntäjä, se joka näkyy ensimmäisellä dialla rivin <code>rmscep</code> alla. Jos Fleet kieltäytyy, jonkin toisen tiimin varmenne käyttää sitä vielä: jätä se paikalleen.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/a153d40a6a93d93c.webp",
+              "width": 1860,
+              "height": 978
+            }
+          ]
+        },
+        {
+          "title": "Seuraava Deploy App",
+          "layout": "image-bottom",
+          "html": "<p>Kun yhdistät seuraavan Deploy Appisi, kirjoita ennen kuin painat <strong>Connect</strong> korttiin <strong>Team</strong> vanhan tiimin nimi, esimerkiksi <code>golden-monkey DeployApp</code>. Jokainen tiimin nimetty puhelin pyytää sitten uutta varmennetta, kun liittyminen on auki.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/e1e587b096125b38.webp",
+              "width": 1052,
+              "height": 977
+            }
+          ]
+        },
+        {
+          "title": "Seuraava käsin",
+          "layout": "image-bottom",
+          "html": "<p>Käsin: älä tee uutta tiimiä. Lisää uuden Deploy Appin myöntäjä ja varmenne samaan tiimiin ja vaihda sen osoite käytäntöön ja <strong>Google Chrome</strong>n asetukseen, kuten sivulla <strong>Määritä Fleet ilman liitintä</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/adfedcc89aed2293.webp",
+              "width": 1860,
+              "height": 1091
+            }
+          ]
+        },
+        {
+          "title": "Sovellukset ja kuvake",
+          "layout": "image-bottom",
+          "html": "<p>Puhelin saa sovellukset ja <strong>Deploy App</strong> -kuvakkeen vain liittyessään, joten tiimiin jääneen puhelimen kuvake avaa yhä vanhan Deploy Appin. Uutta varten poista sen työprofiili ennen kuin yhdistät seuraavan Deploy Appin, ja liitä puhelin uudelleen sen jälkeen.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/84840932117af60e.webp",
+              "width": 912,
+              "height": 1804
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

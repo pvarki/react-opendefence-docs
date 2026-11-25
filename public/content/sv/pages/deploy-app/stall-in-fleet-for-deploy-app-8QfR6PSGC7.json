@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "id": "bcfeff32-1a2b-4015-b97c-d9cff5a41cb6",
+  "slug": "stall-in-fleet-for-deploy-app-8QfR6PSGC7",
+  "collection": "deploy-app",
+  "locale": "sv",
+  "title": "Ställ in Fleet för Deploy App",
+  "breadcrumb": [
+    "Platforms",
+    "Android",
+    "Administratörsguide",
+    "MDM: Fleet",
+    "Ställ in Fleet för Deploy App"
+  ],
+  "createdAt": "2026-11-22T22:10:16.175Z",
+  "updatedAt": "2026-11-22T22:28:16.045Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/deploy-app/set-fleet-up-for-deploy-app-Prkasq85P6",
+    "fi": "/fi/deploy-app/maarita-fleet-deploy-appia-varten-Puxv3F0J4g",
+    "sv": "/sv/deploy-app/stall-in-fleet-for-deploy-app-8QfR6PSGC7"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Vad Fleet behöver",
+          "layout": "image-bottom",
+          "html": "<p>Fleet behöver tre saker för Deploy App: Android påslaget, ett team för den här Deploy Apps telefoner och en API-token för anslutaren.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/f45d95736eaf2a54.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Android påslaget",
+          "layout": "image-bottom",
+          "html": "<p>I Fleet: <strong>Settings</strong>, <strong>Integrations</strong>, <strong>MDM</strong> ska säga <strong>Android MDM turned on.</strong> Om inte kopplar den som sköter Fleet Android Enterprise dit: en gång, för alla team.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/194599442ac9d77a.webp",
+              "width": 1860,
+              "height": 1031
+            }
+          ]
+        },
+        {
+          "title": "Ett team med din miljös namn",
+          "layout": "image-bottom",
+          "html": "<p>Ge teamet din miljös namn och DeployApp, till exempel <code>golden-monkey DeployApp</code>: då ser alla i Fleet vilket team som hör till vilken Deploy App. Fleets konsol kallar ett team för fleet.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/412a9f4da212baed.webp",
+              "width": 1860,
+              "height": 881
+            }
+          ]
+        },
+        {
+          "title": "Anslutaren skapar det",
+          "layout": "image-bottom",
+          "html": "<p>Minst arbete: anslutaren skapar teamet vid <strong>Connect</strong>, med namnet på kortet <strong>Team</strong>. Om du gör det själv: <strong>Settings</strong>, <strong>Fleets</strong>, <strong>Add fleet</strong>, skriv namnet och tryck på <strong>Create</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/29b58272dc19a25b.webp",
+              "width": 1860,
+              "height": 1032
+            }
+          ]
+        },
+        {
+          "title": "En API-token",
+          "layout": "image-bottom",
+          "html": "<p>Anslutaren behöver en global administratörs API-token. En från <strong>My account</strong>, <strong>Get API token</strong> slutar gälla med den inloggningen, efter 5 dagar som standard; en API-only-användares slutar inte gälla.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/2d00637a3cb7ebd5.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "En API-only-användare",
+          "layout": "image-bottom",
+          "html": "<p>Den som sköter Fleet skapar en: <strong>Settings</strong>, <strong>Users</strong>, <strong>Add user</strong>, <strong>API-only user</strong>, med rollen Admin för hela Fleet (Global). Hen ger dig sedan dess token.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/17faf3b2f47a6b6f.webp",
+              "width": 1860,
+              "height": 820
+            }
+          ]
+        },
+        {
+          "title": "En Fleet, flera Deploy App",
+          "layout": "image-bottom",
+          "html": "<p>En Fleet kan betjäna flera Deploy App: vid <strong>Connect</strong> får var och en ett eget team och en egen certifikatutfärdare. Din token är en global administratörs, så dela en Fleet bara med administratörer som du anförtror hela den.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/322dd331fd36e3cc.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Fleets adress",
+          "layout": "image-bottom",
+          "html": "<p>När anslutaren frågar vad din MDM behöver skriver du adressen du öppnar Fleet på i <strong>Fleet address</strong> och trycker på <strong>Next</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/2813ed9f25d3633b.webp",
+              "width": 1052,
+              "height": 888
+            }
+          ]
+        },
+        {
+          "title": "Token",
+          "layout": "image-bottom",
+          "html": "<p>Klistra in din token och tryck på <strong>Next</strong>. Med <strong>Remember on this computer</strong> ikryssat sparar nyckelringen den till nästa start.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/609524e26b21f815.webp",
+              "width": 1052,
+              "height": 992
+            }
+          ]
+        },
+        {
+          "title": "Teamet",
+          "layout": "image-bottom",
+          "html": "<p><strong>Team</strong> föreslår din miljös namn med DeployApp, till exempel <code>golden-monkey DeployApp</code>: låt det stå, och låt <strong>More settings</strong> vara som de är. Tryck på <strong>Connect</strong>: teamet skapas om det inte finns.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/8dac385537c7a381.webp",
+              "width": 1052,
+              "height": 977
+            }
+          ]
+        },
+        {
+          "title": "Vad Connect ställer in",
+          "layout": "image-bottom",
+          "html": "<p>Fleet får Deploy App som certifikatutfärdare, och teamet får certifikatet, policyn, apparna och ikonen <strong>Deploy App</strong>. Fortsätt sedan vid <strong>Den ställer in din MDM</strong> i <strong>Koppla din MDM</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/0e15c91adbfc4443.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "a7f6b598-93e8-4c0e-85fb-d7a062499d91",
+  "slug": "enrol-phones-c9ipLyHRe9",
+  "collection": "deploy-app",
+  "locale": "en",
+  "title": "Enrol phones",
+  "breadcrumb": [
+    "Platforms",
+    "Android",
+    "Admin Guide",
+    "Bringing users via MDM",
+    "Enrol phones"
+  ],
+  "createdAt": "2026-10-29T10:35:51.931Z",
+  "updatedAt": "2026-11-22T22:29:43.864Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/deploy-app/enrol-phones-c9ipLyHRe9",
+    "fi": "/fi/deploy-app/liita-puhelimet-o8nMr5refc",
+    "sv": "/sv/deploy-app/anslut-telefoner-taCwggfyD7"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Phones enrol in your MDM",
+          "layout": "image-bottom",
+          "html": "<p>Phones enrol in your MDM as they always do, into the group for this Deploy App. With Fleet, see <strong>Add phones in Fleet</strong> in <strong>MDM: Fleet</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/53710a2f46b0af45.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Watch them arrive",
+          "layout": "image-bottom",
+          "html": "<p>The connector lists each phone within a minute of its enrolling, soon as <strong>waiting for a name</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/85c6549c4adbb79d.webp",
+              "width": 1860,
+              "height": 1273
+            }
+          ]
+        },
+        {
+          "title": "Wait for the apps",
+          "layout": "image-bottom",
+          "html": "<p>Name the phones once every phone shows its apps in its <strong>Work</strong> tab: see <strong>Name phones</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/84840932117af60e.webp",
+              "width": 912,
+              "height": 1804
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

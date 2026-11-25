@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "e74469a4-b3f6-4438-8b02-f0d4e1b3b4b4",
+  "slug": "anslut-telefoner-taCwggfyD7",
+  "collection": "deploy-app",
+  "locale": "sv",
+  "title": "Anslut telefoner",
+  "breadcrumb": [
+    "Platforms",
+    "Android",
+    "Administratörsguide",
+    "Ta in användare via MDM",
+    "Anslut telefoner"
+  ],
+  "createdAt": "2026-11-22T22:07:17.396Z",
+  "updatedAt": "2026-11-22T22:22:11.341Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/deploy-app/enrol-phones-c9ipLyHRe9",
+    "fi": "/fi/deploy-app/liita-puhelimet-o8nMr5refc",
+    "sv": "/sv/deploy-app/anslut-telefoner-taCwggfyD7"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Telefoner ansluts till din MDM",
+          "layout": "image-bottom",
+          "html": "<p>Telefoner ansluts till din MDM som alltid, till gruppen för den här Deploy App. Med Fleet, se <strong>Lägg till telefoner i Fleet</strong> i <strong>MDM: Fleet</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/fa7c3c2609db7afe.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Se dem komma in",
+          "layout": "image-bottom",
+          "html": "<p>Anslutaren visar varje telefon inom en minut efter att den anslutits, snart som <strong>waiting for a name</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/85c6549c4adbb79d.webp",
+              "width": 1860,
+              "height": 1273
+            }
+          ]
+        },
+        {
+          "title": "Vänta på apparna",
+          "layout": "image-bottom",
+          "html": "<p>Namnge telefonerna när varje telefon visar sina appar på fliken <strong>Work</strong> (jobbapparna): se <strong>Namnge telefoner</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/84840932117af60e.webp",
+              "width": 912,
+              "height": 1804
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

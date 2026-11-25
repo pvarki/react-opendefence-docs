@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "id": "149ddbd8-3815-4fd5-82d9-dbe57518256f",
+  "slug": "name-phones-in-fleet-without-the-connector-S69TrSf5OW",
+  "collection": "deploy-app",
+  "locale": "en",
+  "title": "Name phones in Fleet without the connector",
+  "breadcrumb": [
+    "Platforms",
+    "Android",
+    "Admin Guide",
+    "MDM: Fleet",
+    "Name phones in Fleet without the connector"
+  ],
+  "createdAt": "2026-10-29T10:36:03.712Z",
+  "updatedAt": "2026-11-22T22:29:51.861Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/deploy-app/name-phones-in-fleet-without-the-connector-S69TrSf5OW",
+    "fi": "/fi/deploy-app/nimea-puhelimet-fleetissa-ilman-liitinta-9ZR0tAiRxJ",
+    "sv": "/sv/deploy-app/namnge-telefoner-i-fleet-utan-anslutaren-qSBu1CRt27"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "What these slides are for",
+          "layout": "image-bottom",
+          "html": "<p>These slides name phones in Fleet's console by hand, for when the connector cannot be used. It takes technical staff, one phone at a time.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/f9ad8e2eb9cf167a.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Open enrolment",
+          "layout": "image-bottom",
+          "html": "<p>In Deploy App, open <strong>User Management</strong>, then <strong>MDM</strong>, and press <strong>Open for 2 hours</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/da96e1bc702c9eef.webp",
+              "width": 1860,
+              "height": 889
+            }
+          ]
+        },
+        {
+          "title": "Copy the challenge",
+          "layout": "image-bottom",
+          "html": "<p>Press the copy mark beside <strong>Challenge</strong>. It is new for every opening, so your MDM needs it each time.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/8804c0942a9ec47e.webp",
+              "width": 1860,
+              "height": 1125
+            }
+          ]
+        },
+        {
+          "title": "Give Fleet the challenge",
+          "layout": "image-bottom",
+          "html": "<p>In Fleet: <strong>Settings</strong>, <strong>Integrations</strong>, <strong>Certificate enrollment</strong>. Edit your Deploy App's authority, paste the challenge and press <strong>Save</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/bbabdb48fd4be54d.webp",
+              "width": 1860,
+              "height": 1368
+            }
+          ]
+        },
+        {
+          "title": "Name the phone",
+          "layout": "image-bottom",
+          "html": "<p>Open the phone in Fleet, choose <strong>Edit user</strong>, type its callsign and <strong>Save</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/864752cd63281309.webp",
+              "width": 2128,
+              "height": 1150
+            }
+          ]
+        },
+        {
+          "title": "Send its certificate",
+          "layout": "image-bottom",
+          "html": "<p>On the same page open <strong>OS settings</strong> and choose <strong>Resend</strong> on the <strong>rmscep</strong> row: naming alone sends nothing.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/f02b4ebe7e64ac97.webp",
+              "width": 1820,
+              "height": 634
+            }
+          ]
+        },
+        {
+          "title": "Send the policy again",
+          "layout": "image-bottom",
+          "html": "<p>Once every phone has its apps, delete the policy under <strong>Controls</strong>, <strong>OS settings</strong>, <strong>Configuration profiles</strong> and add it again, so Chrome may use the certificate. Then press <strong>Close</strong> in Deploy App and see <strong>First start on the phone</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/11dfb2b661af7839.webp",
+              "width": 1920,
+              "height": 751
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

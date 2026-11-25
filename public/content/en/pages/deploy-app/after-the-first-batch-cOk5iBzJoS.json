@@ -1,0 +1,199 @@
+{
+  "schemaVersion": 1,
+  "id": "6ccbbae7-2d6f-4757-be7c-bddadb5af3b2",
+  "slug": "after-the-first-batch-cOk5iBzJoS",
+  "collection": "deploy-app",
+  "locale": "en",
+  "title": "After the first batch",
+  "breadcrumb": [
+    "Platforms",
+    "Android",
+    "Admin Guide",
+    "Bringing users via MDM",
+    "After the first batch"
+  ],
+  "createdAt": "2026-11-21T08:07:42.947Z",
+  "updatedAt": "2026-11-23T22:12:10.446Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/deploy-app/after-the-first-batch-cOk5iBzJoS",
+    "fi": "/fi/deploy-app/ensimmaisen-eran-jalkeen-uml2XzLB4Q",
+    "sv": "/sv/deploy-app/efter-den-forsta-omgangen-lzMVPz857A"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Start the connector again",
+          "layout": "image-bottom",
+          "html": "<p>Open the connector's file again, or type <code>odmdm-connector web</code> if you installed it from a terminal. Its page opens in your browser; if not, open the address its window shows.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/727992f26f8e44fe.webp",
+              "width": 1400,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Token not kept?",
+          "layout": "image-bottom",
+          "html": "<p>Without <strong>Remember on this computer</strong>, the connector asks for the token at every start. Paste it and press <strong>Connect</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/96c6ed0fc7ec2ff1.webp",
+              "width": 1052,
+              "height": 1002
+            }
+          ]
+        },
+        {
+          "title": "Every batch starts the same",
+          "layout": "image-bottom",
+          "html": "<p>Open enrolment and press <strong>Open in the MDM connector</strong>. Every opening makes a new challenge, so hand it over before the phones ask.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/53c7c9d4c09a461b.webp",
+              "width": 1860,
+              "height": 1500
+            }
+          ]
+        },
+        {
+          "title": "Use the new settings",
+          "layout": "image-bottom",
+          "html": "<p>In the connector's new tab, press <strong>Use the new settings</strong>. Your MDM then has the new challenge.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/81d4e75338d27c75.webp",
+              "width": 1052,
+              "height": 816
+            }
+          ]
+        },
+        {
+          "title": "Watch the clock",
+          "layout": "image-bottom",
+          "html": "<p>The line at the top says until when phones are accepted, and turns amber ten minutes before. A phone that asks after closing is refused.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/e031100720f16014.webp",
+              "width": 1860,
+              "height": 1273
+            }
+          ]
+        },
+        {
+          "title": "A phone is replaced or wiped",
+          "layout": "image-bottom",
+          "html": "<p>Enrol the phone and give it a new callsign: Deploy App gives no callsign twice. A wiped phone can come back under its old one: give it a new one too.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/c68ad60a60efff71.webp",
+              "width": 1860,
+              "height": 1273
+            }
+          ]
+        },
+        {
+          "title": "A phone is renamed",
+          "layout": "image-bottom",
+          "html": "<p>Select it and press <strong>Give callsigns</strong>. The old callsign keeps working until it is removed in Deploy App: the connector says which one.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/18285f1f6ba99716.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Remove the old callsign",
+          "layout": "image-bottom",
+          "html": "<p>In Deploy App open <strong>User Management</strong>, then <strong>Manage Users</strong>, choose the old callsign, press <strong>Remove</strong> and type the callsign to confirm.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/0c6d2bb9b914086e.webp",
+              "width": 1860,
+              "height": 1094
+            }
+          ]
+        },
+        {
+          "title": "Certificates end",
+          "layout": "image-bottom",
+          "html": "<p>A phone's certificate lasts as long as your Deploy App's certificates do: at most three months today. Before it ends, give the phone a new callsign and remove the old one, as above.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/e702b5a10058bb7d.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Change the token",
+          "layout": "image-bottom",
+          "html": "<p>With Fleet, press <strong>Settings</strong>, then <strong>Change the Fleet settings</strong>. <strong>Settings</strong> also shows where the connector's log is.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/83859f0d42041828.webp",
+              "width": 1860,
+              "height": 1273
+            }
+          ]
+        },
+        {
+          "title": "Give the new token",
+          "layout": "image-bottom",
+          "html": "<p>Press <strong>Next</strong> on <strong>Fleet address</strong>, paste the new token on <strong>API token</strong>, press <strong>Next</strong> and then <strong>Connect</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/0636992548910499.webp",
+              "width": 1052,
+              "height": 992
+            }
+          ]
+        },
+        {
+          "title": "Changed the address or team?",
+          "layout": "image-bottom",
+          "html": "<p>A kept token works only with the settings it was kept for. After changing Fleet's address or the team, type the token again.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/a75588f695772c42.webp",
+              "width": 1052,
+              "height": 1069
+            }
+          ]
+        },
+        {
+          "title": "Another Deploy App",
+          "layout": "image-bottom",
+          "html": "<p>The name at the top right lists your Deploy Apps, and <strong>+ Add a Deploy App</strong> adds one. One Fleet can serve them all, each in a team of its own: see <strong>One Fleet, several Deploy Apps</strong> in <strong>Set Fleet up for Deploy App</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/f063864c2bcc7881.webp",
+              "width": 1860,
+              "height": 1273
+            }
+          ]
+        },
+        {
+          "title": "Remove a Deploy App",
+          "layout": "image-bottom",
+          "html": "<p>In the same list, <strong>Remove north.example.fi…</strong> asks first, then forgets that Deploy App and its token on this computer. Nothing changes in Deploy App, your MDM or the phones. To end it in your MDM too, see <strong>When the deployment ends</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/7dbc9f5938f0e007.webp",
+              "width": 1860,
+              "height": 1273
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

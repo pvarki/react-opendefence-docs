@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "id": "90f047fe-db2e-40b3-bb18-b8e302103863",
+  "slug": "avsluta-en-deploy-app-i-fleet-yMLUsZrUsf",
+  "collection": "deploy-app",
+  "locale": "sv",
+  "title": "Avsluta en Deploy App i Fleet",
+  "breadcrumb": [
+    "Platforms",
+    "Android",
+    "Administratörsguide",
+    "MDM: Fleet",
+    "Avsluta en Deploy App i Fleet"
+  ],
+  "createdAt": "2026-11-23T22:15:28.719Z",
+  "updatedAt": "2026-11-23T22:17:13.897Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/deploy-app/end-a-deploy-app-in-fleet-DBZairqewD",
+    "fi": "/fi/deploy-app/paata-deploy-app-fleetissa-5JjkJVQReP",
+    "sv": "/sv/deploy-app/avsluta-en-deploy-app-i-fleet-yMLUsZrUsf"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Vad som tas bort",
+          "layout": "image-bottom",
+          "html": "<p>När en Deploy App avslutas i anslutaren tas två saker bort i Fleet: teamets certifikat, som heter <code>rmscep</code>, och Deploy Apps utfärdare, om inget annat team använder den. Teamet, dess telefoner, deras namn och appar finns kvar.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/654165ace7a4703d.webp",
+              "width": 1860,
+              "height": 1091
+            }
+          ]
+        },
+        {
+          "title": "För hand: certifikatet",
+          "layout": "image-bottom",
+          "html": "<p>Utan anslutaren: välj ditt team högst upp, sedan <strong>Controls</strong>, <strong>OS settings</strong>, <strong>Certificates</strong>. Öppna <strong>Actions</strong> på <code>rmscep</code>, välj <strong>Delete</strong> och bekräfta: varje telefon i teamet tar bort certifikatet, och det kan inte ångras.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/8cc1e68b50127fd7.webp",
+              "width": 1860,
+              "height": 930
+            }
+          ]
+        },
+        {
+          "title": "För hand: utfärdaren",
+          "layout": "image-bottom",
+          "html": "<p>Sedan <strong>Settings</strong>, <strong>Integrations</strong>, <strong>Certificate enrollment</strong>: ta bort din Deploy Apps utfärdare, den som står under <code>rmscep</code> på den första bilden. Om Fleet vägrar använder ett annat teams certifikat den fortfarande: låt den vara.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/a153d40a6a93d93c.webp",
+              "width": 1860,
+              "height": 978
+            }
+          ]
+        },
+        {
+          "title": "Nästa Deploy App",
+          "layout": "image-bottom",
+          "html": "<p>Vid <strong>Connect</strong> för din nästa Deploy App skriver du det gamla teamets namn på <strong>Team</strong>, till exempel <code>golden-monkey DeployApp</code>. Varje namngiven telefon i teamet begär sedan det nya certifikatet medan anslutningen är öppen.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/e1e587b096125b38.webp",
+              "width": 1052,
+              "height": 977
+            }
+          ]
+        },
+        {
+          "title": "Nästa, för hand",
+          "layout": "image-bottom",
+          "html": "<p>För hand: skapa inget nytt team. Lägg till den nya Deploy Apps utfärdare och certifikat i samma team, och byt till dess adress i policyn och i <strong>Google Chrome</strong>s inställning, som i <strong>Ställ in Fleet utan anslutaren</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/adfedcc89aed2293.webp",
+              "width": 1860,
+              "height": 1091
+            }
+          ]
+        },
+        {
+          "title": "Appar och ikonen",
+          "layout": "image-bottom",
+          "html": "<p>En telefon får appar och ikonen <strong>Deploy App</strong> bara när den ansluter, så ikonen på en telefon som stannar i teamet öppnar fortfarande den gamla Deploy App. För den nya: ta bort dess jobbprofil innan du kopplar nästa Deploy App, och anslut telefonen igen efteråt.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/84840932117af60e.webp",
+              "width": 912,
+              "height": 1804
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

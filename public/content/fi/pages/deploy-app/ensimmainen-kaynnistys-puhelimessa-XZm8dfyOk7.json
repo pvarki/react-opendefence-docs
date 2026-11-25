@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "id": "5b9e1640-7ad9-4a62-b43e-ebc6d5088bf8",
+  "slug": "ensimmainen-kaynnistys-puhelimessa-XZm8dfyOk7",
+  "collection": "deploy-app",
+  "locale": "fi",
+  "title": "Ensimmäinen käynnistys puhelimessa",
+  "breadcrumb": [
+    "Platforms",
+    "Android",
+    "Ylläpitäjäohjeet",
+    "Käyttäjien tuominen MDM:llä",
+    "Ensimmäinen käynnistys puhelimessa"
+  ],
+  "createdAt": "2026-11-22T22:02:24.566Z",
+  "updatedAt": "2026-11-22T22:23:10.571Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/deploy-app/first-start-on-the-phone-MRCjatFpyg",
+    "fi": "/fi/deploy-app/ensimmainen-kaynnistys-puhelimessa-XZm8dfyOk7",
+    "sv": "/sv/deploy-app/forsta-starten-pa-telefonen-MrU1UzNYI2"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Avaa Deploy App",
+          "layout": "image-bottom",
+          "html": "<p>Avaa puhelimessa työsovellukset (<strong>Work</strong>) ja napauta <strong>Deploy App</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/84840932117af60e.webp",
+              "width": 912,
+              "height": 1804
+            }
+          ]
+        },
+        {
+          "title": "Chromen ensimmäinen käynnistys",
+          "layout": "image-bottom",
+          "html": "<p>Ensimmäisellä kerralla napauta <strong>Stay signed out</strong> tai <strong>Use without an account</strong> sen mukaan, kumman Chrome näyttää. Suomenkielisessä puhelimessa painikkeet ovat suomeksi.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/0c9c55b572c71199.webp",
+              "width": 912,
+              "height": 1804
+            }
+          ]
+        },
+        {
+          "title": "Kirjautunut",
+          "layout": "image-bottom",
+          "html": "<p>Deploy App avautuu puhelimen kutsutunnuksella. Kirjoita se tarraan puhelimen kylkeen: samanlaiset puhelimet näyttävät MDM:ssä samalta.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/0e281f149b1dc049.webp",
+              "width": 912,
+              "height": 1804
+            }
+          ]
+        },
+        {
+          "title": "Jos näkyy Varmenteen todennus epäonnistui",
+          "layout": "image-bottom",
+          "html": "<p>Puhelin ei ole vielä valmis, tai jokin meni vikaan: katso <strong>Kun puhelin ei tule perille</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/fi/attachments/1ff20adc2e18302f.webp",
+              "width": 912,
+              "height": 1804
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

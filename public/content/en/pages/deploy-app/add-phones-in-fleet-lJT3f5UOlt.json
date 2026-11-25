@@ -1,0 +1,139 @@
+{
+  "schemaVersion": 1,
+  "id": "0892b653-f5bc-4abc-832f-8837f4e42f46",
+  "slug": "add-phones-in-fleet-lJT3f5UOlt",
+  "collection": "deploy-app",
+  "locale": "en",
+  "title": "Add phones in Fleet",
+  "breadcrumb": [
+    "Platforms",
+    "Android",
+    "Admin Guide",
+    "MDM: Fleet",
+    "Add phones in Fleet"
+  ],
+  "createdAt": "2026-11-21T23:23:33.572Z",
+  "updatedAt": "2026-11-22T22:29:50.295Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/deploy-app/add-phones-in-fleet-lJT3f5UOlt",
+    "fi": "/fi/deploy-app/lisaa-puhelimet-fleetiin-9CeCdOVgei",
+    "sv": "/sv/deploy-app/lagg-till-telefoner-i-fleet-5qOyo9hK23"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Open the team",
+          "layout": "image-bottom",
+          "html": "<p>In Fleet, open <strong>Hosts</strong> and choose your Deploy App's team at the top, such as <code>golden-monkey DeployApp</code>. Then press <strong>Add hosts</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/95b773aaa7191df8.webp",
+              "width": 1860,
+              "height": 766
+            }
+          ]
+        },
+        {
+          "title": "Get the enrolment link",
+          "layout": "image-bottom",
+          "html": "<p>Choose <strong>Android</strong>, keep <strong>Personal (BYOD)</strong> and copy the link. Send it to the phones.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/b38688edc2fca7e8.webp",
+              "width": 1860,
+              "height": 1221
+            }
+          ]
+        },
+        {
+          "title": "Open the link on the phone",
+          "layout": "image-bottom",
+          "html": "<p>Open the link and tap <strong>Enroll</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/13980932ec6c3a74.webp",
+              "width": 912,
+              "height": 1804
+            }
+          ]
+        },
+        {
+          "title": "Set up the work profile",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Next</strong>, and <strong>Continue</strong> if asked.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/e7f89bb3db7e6a4b.webp",
+              "width": 912,
+              "height": 1804
+            }
+          ]
+        },
+        {
+          "title": "Accept",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Accept &#x26; continue</strong>, then <strong>Next</strong> if asked.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/e0d676c54c6c7569.webp",
+              "width": 912,
+              "height": 1804
+            }
+          ]
+        },
+        {
+          "title": "Done",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Done</strong>. Within a few minutes the apps appear in the phone's <strong>Work</strong> tab.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/6ff5b74a5a7be991.webp",
+              "width": 912,
+              "height": 1804
+            }
+          ]
+        },
+        {
+          "title": "Phones already in Fleet",
+          "layout": "image-bottom",
+          "html": "<p>A phone already in another team? On <strong>Hosts</strong>, tick it and press <strong>Transfer</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/8dcfc754b4a6a05b.webp",
+              "width": 1860,
+              "height": 766
+            }
+          ]
+        },
+        {
+          "title": "Pick the team",
+          "layout": "image-bottom",
+          "html": "<p>Pick your Deploy App's team and press <strong>Transfer</strong>. To get this team's apps as well, remove the work profile and enrol the phone again with this team's link.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/4ed14db1849952ca.webp",
+              "width": 1860,
+              "height": 1135
+            }
+          ]
+        },
+        {
+          "title": "Then name them",
+          "layout": "image-bottom",
+          "html": "<p>The phones show up in the connector, <strong>waiting for a name</strong>: go on with <strong>Name phones</strong> in <strong>Bringing users via MDM</strong>. Without the connector, see <strong>Name phones in Fleet without the connector</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/85c6549c4adbb79d.webp",
+              "width": 1860,
+              "height": 1273
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

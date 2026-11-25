@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 1,
+  "id": "d1352b94-4c5b-4cd8-abe6-57ffcdcc7e52",
+  "slug": "fran-kommandoraden-xFyiTHblin",
+  "collection": "deploy-app",
+  "locale": "sv",
+  "title": "Från kommandoraden",
+  "breadcrumb": [
+    "Platforms",
+    "Android",
+    "Administratörsguide",
+    "Ta in användare via MDM",
+    "Från kommandoraden"
+  ],
+  "createdAt": "2026-11-22T22:09:17.509Z",
+  "updatedAt": "2026-11-22T22:26:18.772Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/deploy-app/from-the-command-line-Fs7VvuiDAo",
+    "fi": "/fi/deploy-app/komentorivilta-IHi2889tpu",
+    "sv": "/sv/deploy-app/fran-kommandoraden-xFyiTHblin"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Samma sak, skrivet",
+          "layout": "image-bottom",
+          "html": "<p>Det dagliga arbetet har kommandon också, för den som skriver skript. De fungerar likadant med den nedladdade filen, skrivna i dess mapp, som med installationen från en terminal.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/864e35025a0c3e54.webp",
+              "width": 1400,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Peka den mot Fleet",
+          "layout": "image-bottom",
+          "html": "<p>De här bilderna visar Fleet: ange dess adress, tokenfilen och din Deploy Apps namn, som också ger teamet dess namn, till exempel <code>golden-monkey DeployApp</code>. Din token läses från filen och skrivs aldrig på raden.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/0d3279d77fecd317.webp",
+              "width": 1400,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Ställ in teamet",
+          "layout": "image-bottom",
+          "html": "<p>Första gången klistrar du in inställningsraden i <code>ODMDM_CHALLENGE</code> som bilden visar, kör <code>odmdm-connector apply</code> och tömmer sedan variabeln. Ditt team får certifikatet, policyn, apparna och ikonen <strong>Deploy App</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/31eb604022bf4338.webp",
+              "width": 1400,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "En ny öppning",
+          "layout": "image-bottom",
+          "html": "<p><code>odmdm-connector challenge</code> frågar efter inställningsraden du kopierade, utan att visa den, och ger din MDM den nya utmaningen.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/878838dd726cfbaf.webp",
+              "width": 1400,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Lista telefonerna",
+          "layout": "image-bottom",
+          "html": "<p><code>odmdm-connector phones</code> listar telefonerna: varje telefons nummer, anropssignal och certifikat.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/ddc239b6f7e191b3.webp",
+              "width": 1400,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Namnge dem",
+          "layout": "image-bottom",
+          "html": "<p><code>name --all OTTER</code> numrerar varje väntande telefon. Eller välj var och en: <code>name 33=OTTER3 34=OTTER4</code>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/0ac3cabe164f5748.webp",
+              "width": 1400,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Fråga igen",
+          "layout": "image-bottom",
+          "html": "<p><code>odmdm-connector resend</code> frågar igen för varje namngiven telefon som avvisades eller misslyckades.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/cf40e1a9ab35701e.webp",
+              "width": 1400,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Skicka policyn igen",
+          "layout": "image-bottom",
+          "html": "<p><code>apply --force-policy</code> skickar policyn till varje telefon igen: lösningen på <strong>Certifikatsautentisering misslyckades</strong> på en telefon som har sitt certifikat. Inte medan telefoner fortfarande installerar appar.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/afa3272453328ebd.webp",
+              "width": 1400,
+              "height": 1000
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

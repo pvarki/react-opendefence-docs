@@ -1,0 +1,199 @@
+{
+  "schemaVersion": 1,
+  "id": "ea1ec2db-ecaa-4583-bb19-cec02b9e31ea",
+  "slug": "efter-den-forsta-omgangen-lzMVPz857A",
+  "collection": "deploy-app",
+  "locale": "sv",
+  "title": "Efter den första omgången",
+  "breadcrumb": [
+    "Platforms",
+    "Android",
+    "Administratörsguide",
+    "Ta in användare via MDM",
+    "Efter den första omgången"
+  ],
+  "createdAt": "2026-11-22T22:08:24.299Z",
+  "updatedAt": "2026-11-23T22:15:18.130Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/deploy-app/after-the-first-batch-cOk5iBzJoS",
+    "fi": "/fi/deploy-app/ensimmaisen-eran-jalkeen-uml2XzLB4Q",
+    "sv": "/sv/deploy-app/efter-den-forsta-omgangen-lzMVPz857A"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Starta anslutaren igen",
+          "layout": "image-bottom",
+          "html": "<p>Öppna anslutarens fil igen, eller skriv <code>odmdm-connector web</code> om du installerade den från en terminal. Dess sida öppnas i din webbläsare; om inte, öppna adressen som fönstret visar.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/727992f26f8e44fe.webp",
+              "width": 1400,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Sparades inte din token?",
+          "layout": "image-bottom",
+          "html": "<p>Utan <strong>Remember on this computer</strong> frågar anslutaren efter din token vid varje start. Klistra in den och tryck på <strong>Connect</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/96c6ed0fc7ec2ff1.webp",
+              "width": 1052,
+              "height": 1002
+            }
+          ]
+        },
+        {
+          "title": "Varje omgång börjar likadant",
+          "layout": "image-bottom",
+          "html": "<p>Öppna anslutningen och tryck på <strong>Öppna i MDM-anslutaren</strong>. Varje öppning skapar en ny utmaning, så lämna över den innan telefonerna ber om sina certifikat.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/6af2579d0cb7d102.webp",
+              "width": 1860,
+              "height": 1500
+            }
+          ]
+        },
+        {
+          "title": "Använd de nya inställningarna",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på <strong>Use the new settings</strong> i anslutarens nya flik. Din MDM har sedan den nya utmaningen.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/81d4e75338d27c75.webp",
+              "width": 1052,
+              "height": 816
+            }
+          ]
+        },
+        {
+          "title": "Håll koll på klockan",
+          "layout": "image-bottom",
+          "html": "<p>Raden högst upp säger till när telefoner tas emot, och blir gul tio minuter innan. En telefon som ber om certifikat efter stängning avvisas.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/e031100720f16014.webp",
+              "width": 1860,
+              "height": 1273
+            }
+          ]
+        },
+        {
+          "title": "En telefon byts ut eller nollställs",
+          "layout": "image-bottom",
+          "html": "<p>Anslut telefonen och ge den en ny anropssignal: Deploy App ger ingen anropssignal två gånger. En nollställd telefon kan komma tillbaka under sin gamla: ge den också en ny.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/c68ad60a60efff71.webp",
+              "width": 1860,
+              "height": 1273
+            }
+          ]
+        },
+        {
+          "title": "En telefon får nytt namn",
+          "layout": "image-bottom",
+          "html": "<p>Markera den och tryck på <strong>Give callsigns</strong>. Den gamla anropssignalen fortsätter fungera tills den tas bort i Deploy App: anslutaren säger vilken det är.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/b40a697cb825e1f4.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Ta bort den gamla anropssignalen",
+          "layout": "image-bottom",
+          "html": "<p>Öppna <strong>Användarhantering</strong> och sedan <strong>Hantera användare</strong> i Deploy App, välj den gamla anropssignalen, tryck på <strong>Ta bort</strong> och skriv anropssignalen för att bekräfta.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/25b7f35773daa3fb.webp",
+              "width": 1860,
+              "height": 1094
+            }
+          ]
+        },
+        {
+          "title": "Certifikat går ut",
+          "layout": "image-bottom",
+          "html": "<p>En telefons certifikat gäller lika länge som din Deploy Apps certifikat: högst tre månader i dag. Ge telefonen en ny anropssignal innan det går ut och ta bort den gamla, som ovan.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/0773d1659634860f.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Byt token",
+          "layout": "image-bottom",
+          "html": "<p>Med Fleet trycker du på <strong>Settings</strong> och sedan <strong>Change the Fleet settings</strong>. <strong>Settings</strong> visar också var anslutarens logg finns.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/83859f0d42041828.webp",
+              "width": 1860,
+              "height": 1273
+            }
+          ]
+        },
+        {
+          "title": "Ge den nya token",
+          "layout": "image-bottom",
+          "html": "<p>Tryck på <strong>Next</strong> på <strong>Fleet address</strong>, klistra in den nya token på <strong>API token</strong>, tryck på <strong>Next</strong> och sedan <strong>Connect</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/0636992548910499.webp",
+              "width": 1052,
+              "height": 992
+            }
+          ]
+        },
+        {
+          "title": "Har adressen eller teamet ändrats?",
+          "layout": "image-bottom",
+          "html": "<p>En sparad token fungerar bara med de inställningar den sparades för. När Fleets adress eller teamet har ändrats skriver du in din token igen.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/a75588f695772c42.webp",
+              "width": 1052,
+              "height": 1069
+            }
+          ]
+        },
+        {
+          "title": "En annan Deploy App",
+          "layout": "image-bottom",
+          "html": "<p>Namnet uppe till höger listar dina Deploy App, och <strong>+ Add a Deploy App</strong> lägger till en. En Fleet kan betjäna dem alla, var och en i sitt eget team: se <strong>En Fleet, flera Deploy App</strong> i <strong>Ställ in Fleet för Deploy App</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/f063864c2bcc7881.webp",
+              "width": 1860,
+              "height": 1273
+            }
+          ]
+        },
+        {
+          "title": "Ta bort en Deploy App",
+          "layout": "image-bottom",
+          "html": "<p>I samma lista frågar <strong>Remove north.example.fi…</strong> först och glömmer sedan den Deploy App och dess token på den här datorn. Inget ändras i Deploy App, din MDM eller telefonerna. Vill du avsluta den i din MDM också, se <strong>När miljön avslutas</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/sv/attachments/7dbc9f5938f0e007.webp",
+              "width": 1860,
+              "height": 1273
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,235 @@
+{
+  "schemaVersion": 1,
+  "id": "4b52b481-1e66-4ace-a059-88707afc5579",
+  "slug": "install-the-connector-Fi93BT5Ntd",
+  "collection": "deploy-app",
+  "locale": "en",
+  "title": "Install the connector",
+  "breadcrumb": [
+    "Platforms",
+    "Android",
+    "Admin Guide",
+    "Bringing users via MDM",
+    "Install the connector"
+  ],
+  "createdAt": "2026-11-21T08:05:50.369Z",
+  "updatedAt": "2026-11-23T22:11:16.329Z",
+  "headings": [],
+  "translations": {
+    "en": "/en/deploy-app/install-the-connector-Fi93BT5Ntd",
+    "fi": "/fi/deploy-app/asenna-liitin-POM9A5h4cd",
+    "sv": "/sv/deploy-app/installera-anslutaren-3aFYZgX1LK"
+  },
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "A page on your computer",
+          "layout": "image-bottom",
+          "html": "<p>The <strong>ODMDM connector</strong> runs on your computer and opens as a page in the browser. It talks to your MDM with your token, never to Deploy App.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/cc5c6c508f64837c.webp",
+              "width": 1860,
+              "height": 1273
+            }
+          ]
+        },
+        {
+          "title": "Get it from Deploy App",
+          "layout": "image-bottom",
+          "html": "<p>In Deploy App, as an admin, open <strong>User Management</strong>, then <strong>MDM</strong>. Press <strong>Install the ODMDM connector</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/6dce91ada27a12c8.webp",
+              "width": 1860,
+              "height": 889
+            }
+          ]
+        },
+        {
+          "title": "Download it",
+          "layout": "image-bottom",
+          "html": "<p>Press <strong>Download for Windows</strong>, or your system's: on an Intel Mac, choose <strong>macOS (Intel)</strong> under <strong>Other systems</strong> first. If your browser holds the download, choose to keep the file.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/5945c707aed3de59.webp",
+              "width": 1220,
+              "height": 1211
+            }
+          ]
+        },
+        {
+          "title": "Is it the released file?",
+          "layout": "image-bottom",
+          "html": "<p>Before you open it: the dialog shows the file's SHA-256 and version. To be sure, download <strong>SHA256SUMS</strong> from that version's release under github.com/pvarki/python-odmdm-fleet/releases and compare your file's line.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/33347b61d0fb2f58.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Check the file itself",
+          "layout": "image-bottom",
+          "html": "<p>Technical staff can check the downloaded file itself: in its folder, these lines print its SHA-256, which must be the dialog's; capitals do not matter. On a Mac it checks the <strong>.zip</strong>, before it is unzipped.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/1d8c05b706d218c9.webp",
+              "width": 1400,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "On Windows",
+          "layout": "image-bottom",
+          "html": "<p>Open the downloaded file. If Windows stops it with <strong>Windows protected your PC</strong>, choose <strong>More info</strong>, then <strong>Run anyway</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/047129ada3baf050.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Windows will not run it?",
+          "layout": "image-bottom",
+          "html": "<p>If Windows offers no <strong>Run anyway</strong>, this computer does not run unsigned files. Ask whoever runs it, or use another computer.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/410cb9d9fb430562.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "On a Mac",
+          "layout": "image-bottom",
+          "html": "<p>Open <strong>odmdm-connector</strong> from your downloads; unzip it first if needed. On an Intel Mac, it is the file for <strong>macOS (Intel)</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/f0c344047d47dbcb.webp",
+              "width": 1220,
+              "height": 1250
+            }
+          ]
+        },
+        {
+          "title": "When macOS stops it",
+          "layout": "image-bottom",
+          "html": "<p>The first time, macOS stops it with a warning like this one. Press <strong>Done</strong>, not <strong>Move to Trash</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/f18722d2690ebf42.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Open Anyway",
+          "layout": "image-bottom",
+          "html": "<p>Open <strong>System Settings</strong>, <strong>Privacy &#x26; Security</strong>, scroll down and press <strong>Open Anyway</strong>, there for about an hour. Enter your login password and press <strong>OK</strong>, then <strong>Open</strong> when the warning comes back.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/79a48bc36df7abef.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "On Linux",
+          "layout": "image-bottom",
+          "html": "<p>Download the file for Linux and unpack it. Then, in its folder, run <code>./odmdm-connector</code> in a terminal.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/9c41199f72aebd7c.webp",
+              "width": 1220,
+              "height": 1172
+            }
+          ]
+        },
+        {
+          "title": "Keep its window open",
+          "layout": "image-bottom",
+          "html": "<p>The connector opens a window (on Linux, it is your terminal) and runs while it is open. If the page did not open, open the address the window shows.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/727992f26f8e44fe.webp",
+              "width": 1400,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "It opens in your browser",
+          "layout": "image-bottom",
+          "html": "<p>The connector's page opens in your default browser: use Deploy App in that same browser. The first time it asks you to add your Deploy App: see <strong>Connect your MDM</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/c280a03b4b45918c.webp",
+              "width": 1052,
+              "height": 1232
+            }
+          ]
+        },
+        {
+          "title": "Next time",
+          "layout": "image-bottom",
+          "html": "<p>Next time, open the same file again and use the page it opens; a page left open from before asks for its new address. If the connector is running already, a second window says so, and Enter closes it.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/3a9a743bc59a3145.webp",
+              "width": 1052,
+              "height": 738
+            }
+          ]
+        },
+        {
+          "title": "What it keeps",
+          "layout": "image-bottom",
+          "html": "<p>With <strong>Remember on this computer</strong> ticked, your token goes to the computer's keychain, never to a file. The challenge is held only while the connector runs.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/7d8c036976de5249.webp",
+              "width": 1800,
+              "height": 1000
+            }
+          ]
+        },
+        {
+          "title": "Upgrade it",
+          "layout": "image-bottom",
+          "html": "<p>The dialog shows the version your Deploy App offers. For a newer one, stop the connector, download it again, check it as before and use the new file: your settings stay.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/ac4f171cfdbf6ed8.webp",
+              "width": 1220,
+              "height": 1211
+            }
+          ]
+        },
+        {
+          "title": "Remove it",
+          "layout": "image-bottom",
+          "html": "<p>First open the Deploy App's name at the top right and remove each Deploy App, so the keychain keeps no token. Is its deployment over? See <strong>When the deployment ends</strong> first. Then stop the connector and delete the file.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/7dbc9f5938f0e007.webp",
+              "width": 1860,
+              "height": 1273
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
