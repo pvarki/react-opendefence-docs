@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "id": "8c1a51d2-3df1-4de9-b6ad-a2f90c58098f",
+  "slug": "pick-your-role-and-unit-kRgC9F0DFO",
+  "collection": "wikis/opendefence-plugins",
+  "locale": "en",
+  "title": "Pick your role and unit",
+  "breadcrumb": [
+    "OpenDefence UAVOps",
+    "Starting as a user",
+    "Pick your role and unit"
+  ],
+  "createdAt": "2026-11-06T23:03:04.636Z",
+  "updatedAt": "2026-11-23T12:43:03.159Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Open Drones",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Drones</strong> on the thumb bar. ATAK's tools menu has <strong>Drones</strong> too.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/a0cb5e2c31123738.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Pick your role",
+          "layout": "image-bottom",
+          "html": "<p>The first time, <strong>Drones</strong> asks <strong>Your role</strong>. Tap yours, here <strong>Drone team</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/2144284fcdd5d5d6.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Pick your unit",
+          "layout": "image-bottom",
+          "html": "<p>With no unit set, OpenDefence Main asks for <strong>My unit</strong>. Tap <strong>›</strong> next to your platoon, here <strong>1J</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/5564184c36f1896f.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Pick your team",
+          "layout": "image-bottom",
+          "html": "<p>Inside the platoon, tap your team, here <strong>2R</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/6b0414327d4f8310.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "See your first page",
+          "layout": "image-bottom",
+          "html": "<p>Your role's pages are the tabs at the bottom. A drone team starts on <strong>Requests</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/3932c69873119205.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Check it in Settings",
+          "layout": "image-bottom",
+          "html": "<p><strong>Settings</strong> shows your <strong>Role</strong> and <strong>Unit</strong>. Tap another role, or <strong>Pick</strong> for another unit.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/6f4fd72b93bcf2f0.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -79,6 +79,13 @@ export const WIKI_COLLECTIONS: CollectionConfig[] = [
     section: "wikis",
     description: "MTX technical reference",
   },
+  {
+    collectionId: "9c2c3f4f-0f61-4eb0-8bef-0c42e7553fa0",
+    label: "OpenDefence Plugins",
+    slug: "wikis/opendefence-plugins",
+    section: "wikis",
+    description: "Learn how to use the OpenDefence plugins for ATAK",
+  },
 ];
 
 export const FOR_DEVELOPERS_COLLECTION: CollectionConfig = {

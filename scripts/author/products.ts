@@ -11,7 +11,11 @@
  * default locale and the pilot scope. Add fi/sv organizer ids here when those
  * platform trees exist in Outline.
  */
-import { MAIN_COLLECTION, GUIDE_COLLECTIONS } from "../../config/collections";
+import {
+  MAIN_COLLECTION,
+  GUIDE_COLLECTIONS,
+  WIKI_COLLECTIONS,
+} from "../../config/collections";
 
 const takCollectionId = GUIDE_COLLECTIONS.find(
   (c) => c.slug === "guides/tak-guide",
@@ -21,6 +25,9 @@ const matrixCollectionId = GUIDE_COLLECTIONS.find(
 )!.collectionId;
 const cryptpadCollectionId = GUIDE_COLLECTIONS.find(
   (c) => c.slug === "guides/cryptpad-guide",
+)!.collectionId;
+const pluginsCollectionId = WIKI_COLLECTIONS.find(
+  (c) => c.slug === "wikis/opendefence-plugins",
 )!.collectionId;
 
 export interface PlatformTarget {
@@ -122,6 +129,13 @@ export const PRODUCTS: Record<string, ProductTarget> = {
     label: "CryptPad Guide",
     collectionId: cryptpadCollectionId,
     // Platform-agnostic: pages hang off the En locale root.
+    platforms: [],
+  },
+  "opendefence-plugins": {
+    key: "opendefence-plugins",
+    label: "OpenDefence Plugins",
+    collectionId: pluginsCollectionId,
+    // Platform-agnostic: one chapter per plugin under the En locale root.
     platforms: [],
   },
 };

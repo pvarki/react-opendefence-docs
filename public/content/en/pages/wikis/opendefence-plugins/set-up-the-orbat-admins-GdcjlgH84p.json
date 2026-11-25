@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "id": "23d433a7-11c9-430b-b8be-4723d5745091",
+  "slug": "set-up-the-orbat-admins-GdcjlgH84p",
+  "collection": "wikis/opendefence-plugins",
+  "locale": "en",
+  "title": "Set up the ORBAT (admins)",
+  "breadcrumb": [
+    "OpenDefence Main",
+    "Setting up",
+    "Set up the ORBAT (admins)"
+  ],
+  "createdAt": "2026-10-27T22:12:38.892Z",
+  "updatedAt": "2026-11-24T13:56:09.777Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Open the admin settings",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>≡</strong>, scroll the tools to <strong>OpenDefence Main</strong>, and scroll down to <strong>Server configuration (admins)</strong>. Only admins see it.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/f60f497bb0ed7831.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "See the tree",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>ORBAT</strong>. The top unit comes first, and <strong>›</strong> goes into a unit.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/aa10480fb38b95ae.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Go into a unit",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>›</strong> on a platoon, here <strong>1J</strong>, to see its squads. <strong>‹ 1K</strong> takes you back up.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/e3b8138a9e0ff9a5.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Add a unit",
+          "layout": "image-bottom",
+          "html": "<p>Tap the name on the dashed row to add a squad like the one above, or <strong>⋯</strong> for another kind of unit. The new squad is marked <strong>new</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/374ac95b0cfc4d5a.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Open the new unit",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>›</strong> on 4R to go into it, then tap its card <strong>4R</strong> at the top to edit it. <strong>Undo (1)</strong> takes back the last change.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/02ac35e8fe7f5756.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Edit a unit",
+          "layout": "image-bottom",
+          "html": "<p>Change the name, size or type, or tap <strong>Move…</strong> or <strong>Delete 4R…</strong>. Tap <strong>Done</strong> to close the sheet.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/4ce1bc513467b94b.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Publish",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>1J</strong> in the trail to go back up. Your change stays on this phone, as <strong>1 unpublished change</strong>, until you tap <strong>Publish…</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/08275cebff333b52.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -136,6 +136,8 @@ async function findChildByTitle(
   const children = await client.listDocuments({
     collectionId: product.collectionId,
     parentDocumentId: parentId,
+    // An unpublished draft from an earlier push is the page to update, not a reason to create another.
+    includeDrafts: true,
   });
   const want = childTitle.trim().toLowerCase();
   return children.find((c) => c.title.trim().toLowerCase() === want);

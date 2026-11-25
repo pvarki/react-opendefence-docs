@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "id": "cc689956-f5ef-4f31-87cc-840d6ca0777e",
+  "slug": "send-a-mark-BE0s8jVOmW",
+  "collection": "wikis/opendefence-plugins",
+  "locale": "en",
+  "title": "Send a mark",
+  "breadcrumb": [
+    "OpenDefence Main",
+    "Drawing markers and sending them",
+    "Send a mark"
+  ],
+  "createdAt": "2026-10-27T21:23:05.148Z",
+  "updatedAt": "2026-11-23T20:02:21.000Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Open Send to…",
+          "layout": "image-bottom",
+          "html": "<p>After you place a mark, tap <strong>Send to…</strong> on its card.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/69e459e0d23d88b4.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Pick where it goes",
+          "layout": "image-bottom",
+          "html": "<p><strong>Feed</strong> keeps it in a feed for everyone in it. Tap <strong>Role</strong> to reach the phones of a role, such as HQ, that are online now.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/da9ace15bc672377.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Pick the role",
+          "layout": "image-bottom",
+          "html": "<p>In <strong>Roles, only phones online now</strong>, tap <strong>HQ</strong>. Phones that come online later do not get it.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/401b173de6ed5296.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Check where it went",
+          "layout": "image-bottom",
+          "html": "<p>The card shows where it went, <strong>→ HQ, 1 phone, no receipt</strong>. The firing area's label now reads <strong>Sent to HQ</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/3581a226bb6c9573.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "One tap next time",
+          "layout": "image-bottom",
+          "html": "<p>Your next enemy mark offers <strong>→ HQ</strong> on its card. One tap sends it there.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/294610301e27965d.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Send from the map",
+          "layout": "image-bottom",
+          "html": "<p>Or tap any mark on the map, then the share button on the ring, a box with an arrow up. The same Send sheet opens for that one item.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/a6ae32dd5847ca2f.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

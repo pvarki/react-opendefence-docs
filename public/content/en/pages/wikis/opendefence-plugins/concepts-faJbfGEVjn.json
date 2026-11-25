@@ -1,0 +1,191 @@
+{
+  "schemaVersion": 1,
+  "id": "84069cd5-f7e5-4122-8689-fa8737b748da",
+  "slug": "concepts-faJbfGEVjn",
+  "collection": "wikis/opendefence-plugins",
+  "locale": "en",
+  "title": "Concepts",
+  "breadcrumb": [
+    "OpenDefence UAVOps",
+    "Concepts"
+  ],
+  "createdAt": "2026-11-23T21:07:52.697Z",
+  "updatedAt": "2026-11-24T13:59:09.441Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "How it works",
+          "layout": "image-bottom",
+          "html": "<p>A forward observer officer (FOO) asks for drones. The HQ or a platoon's TOC gives the request to a drone team, which flies and reports to the FOO's <strong>Inbox</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/b4b16eb3a4e3826d.webp",
+              "width": 1336,
+              "height": 2496
+            }
+          ]
+        },
+        {
+          "title": "Roles",
+          "layout": "image-bottom",
+          "html": "<p>Each role does one part of the job, from asking for a drone to flying it. A phone has one role, and <strong>Drones</strong> shows only that role's pages.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/6e952cdb6e1ae46d.webp",
+              "width": 1336,
+              "height": 1951
+            }
+          ]
+        },
+        {
+          "title": "Forward observer officer (FOO)",
+          "layout": "image-bottom",
+          "html": "<p>The <strong>FOO</strong> asks for drones and follows each request. <strong>My requests</strong> shows where each one stands, such as <strong>Waiting for the HQ</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/1236414056a84597.webp",
+              "width": 1336,
+              "height": 1951
+            }
+          ]
+        },
+        {
+          "title": "HQ",
+          "layout": "image-bottom",
+          "html": "<p>The <strong>HQ</strong> gives requests to drone teams with <strong>Assign</strong> and draws corridors, where teams may fly. Only the HQ gives quotas, a set number of requests a day.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/4508a225e8d26be7.webp",
+              "width": 1336,
+              "height": 1951
+            }
+          ]
+        },
+        {
+          "title": "TOC",
+          "layout": "image-bottom",
+          "html": "<p>A <strong>TOC</strong>, a platoon's tactical operations centre, works like the HQ for its own teams. It gives them requests with <strong>Assign</strong> and draws their corridors, but gives no quotas.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/21ed99fd00acf7a1.webp",
+              "width": 1336,
+              "height": 1951
+            }
+          ]
+        },
+        {
+          "title": "Drone team",
+          "layout": "image-bottom",
+          "html": "<p>The team's navigator, or crew observer, takes the <strong>Drone team</strong> role. They list the team's drones, plan each mission, run it and report how it went.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/4201f4dd559c4c0d.webp",
+              "width": 1336,
+              "height": 1951
+            }
+          ]
+        },
+        {
+          "title": "Pilot",
+          "layout": "image-bottom",
+          "html": "<p>The <strong>Pilot</strong> role is for the drone team's second phone. Its one page gives the bearing and distance from drone to target, the planned height and the flight time left.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/4695bc9e04057eca.webp",
+              "width": 1336,
+              "height": 1951
+            }
+          ]
+        },
+        {
+          "title": "Requests",
+          "layout": "image-bottom",
+          "html": "<p>A request asks for a <strong>Strike</strong> or a <strong>Recon</strong> on an enemy mark or area. <strong>To</strong> says who should answer, and a request no team takes lapses after two hours.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/809fefae851a2e4f.webp",
+              "width": 1336,
+              "height": 2496
+            }
+          ]
+        },
+        {
+          "title": "Corridors",
+          "layout": "image-bottom",
+          "html": "<p>A corridor is the area where a team may fly, for set hours. It shows shaded on the map, and a plan warns if its route leaves the corridor.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/b6ffa98ec0c4e95d.webp",
+              "width": 1336,
+              "height": 2103
+            }
+          ]
+        },
+        {
+          "title": "Quotas",
+          "layout": "image-bottom",
+          "html": "<p>A quota gives a FOO, or a whole unit, a set number of requests a day on one team. The Request sheet then lists that team first under <strong>To</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/bd4d1ba013c524ef.webp",
+              "width": 1336,
+              "height": 2343
+            }
+          ]
+        },
+        {
+          "title": "Missions and plans",
+          "layout": "image-bottom",
+          "html": "<p>A mission is one drone flight on a request, such as <strong>Strike 1</strong>. Its plan warns about <strong>Range</strong>, and <strong>Weather</strong> if turned on, but the team decides.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/154cc490fc6b7c33.webp",
+              "width": 1336,
+              "height": 2188
+            }
+          ]
+        },
+        {
+          "title": "Drone types",
+          "layout": "image-bottom",
+          "html": "<p>A drone team lists its drone types with their range, flight time and count. Plans use these limits, and the HQ and TOC see which team has drones that fit.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/86f3a062dab91bad.webp",
+              "width": 1336,
+              "height": 1983
+            }
+          ]
+        },
+        {
+          "title": "What everyone sees",
+          "layout": "image-bottom",
+          "html": "<p>Phones on the drone feeds show corridors, routes, drones and the circle around each target, even without OpenDefence UAVOps. In OpenDefence UAVOps, <strong>Watch</strong> on a flying mission opens its video.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/2ee5092a068d4bc8.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "A plugin on OpenDefence Main",
+          "layout": "image-bottom",
+          "html": "<p>OpenDefence UAVOps is a separate plugin that works through OpenDefence Main's Request sheet and <strong>Inbox</strong>. If an admin turns <strong>Quotas and corridors</strong> <strong>Off</strong>, requests go straight to the teams.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/fc97128ae241912d.webp",
+              "width": 1336,
+              "height": 1854
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

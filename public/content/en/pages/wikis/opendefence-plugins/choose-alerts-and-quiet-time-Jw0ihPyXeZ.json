@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "id": "1a4293c3-d10d-4dd5-bf5e-036da4353244",
+  "slug": "choose-alerts-and-quiet-time-Jw0ihPyXeZ",
+  "collection": "wikis/opendefence-plugins",
+  "locale": "en",
+  "title": "Choose alerts and quiet time",
+  "breadcrumb": [
+    "OpenDefence Main",
+    "Starting as a user",
+    "Choose alerts and quiet time"
+  ],
+  "createdAt": "2026-11-06T23:00:57.790Z",
+  "updatedAt": "2026-11-23T20:42:57.672Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Open Alerts",
+          "layout": "image-bottom",
+          "html": "<p>In the Inbox, tap <strong>Alerts</strong>. Pick <strong>Buzz</strong>, <strong>Banner</strong> or <strong>List only</strong> for each kind.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/725246cf16d536ad.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Turn one alert down",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>List only</strong> for what you need not hear about. The Inbox still lists it.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/e0ed42fcb33f9485.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Silence the buzz",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Done</strong>, then <strong>No buzz…</strong>, and pick <strong>1 h</strong>, <strong>4 h</strong> or <strong>8 h</strong>. The badge and banners still show.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/1f395cead054f3fd.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Check the Inbox button",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Done</strong>. While the buzz is off, <strong>Inbox</strong> shows a small crossed bell at the lower right of its icon.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/ca851edde2f84e9c.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Turn the buzz back on",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Inbox</strong> to see how long is left. Tap <strong>Buzz on</strong> to end it early.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/4d0e8ec41a21902c.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "4ca5b23c-a459-46ba-9f48-1fa97cc88a82",
+  "slug": "watch-drone-video-ZdW9in1eoq",
+  "collection": "wikis/opendefence-plugins",
+  "locale": "en",
+  "title": "Watch drone video",
+  "breadcrumb": [
+    "OpenDefence UAVOps",
+    "Everyone",
+    "Watch drone video"
+  ],
+  "createdAt": "2026-11-06T23:07:26.135Z",
+  "updatedAt": "2026-11-23T20:04:12.480Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Set where you watch",
+          "layout": "image-bottom",
+          "html": "<p>Open <strong>Drones</strong>, then <strong>Settings</strong>. Under <strong>Watch video from</strong>, paste your address from the Deploy App once.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/9e49734fde544291.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "See it is set",
+          "layout": "image-bottom",
+          "html": "<p><strong>Watch video from</strong> then shows only the host and port. Your user name and password stay in ATAK's video list.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/1044b51e7fd02b03.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Watch",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Watch</strong> on a flying mission. ATAK's player opens with your own sign-in.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/fa06c167d534c4d1.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

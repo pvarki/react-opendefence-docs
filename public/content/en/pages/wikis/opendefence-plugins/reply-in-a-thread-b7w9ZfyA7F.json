@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "929c0c54-3fd0-47bb-93d9-9aba6d913669",
+  "slug": "reply-in-a-thread-b7w9ZfyA7F",
+  "collection": "wikis/opendefence-plugins",
+  "locale": "en",
+  "title": "Reply in a thread",
+  "breadcrumb": [
+    "OpenDefence Matrix",
+    "Chat",
+    "Reply in a thread"
+  ],
+  "createdAt": "2026-11-06T23:52:56.400Z",
+  "updatedAt": "2026-11-23T05:01:26.392Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Start a thread",
+          "layout": "image-bottom",
+          "html": "<p>Tap a message, then <strong>Reply in thread</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/b57aa0657eab2e91.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        },
+        {
+          "title": "Write in the thread",
+          "layout": "image-bottom",
+          "html": "<p>Type your reply and tap the arrow. It stays in the thread, under the first message.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/e0cfec0c968181a7.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        },
+        {
+          "title": "Back in the room",
+          "layout": "image-bottom",
+          "html": "<p>Tap the back arrow. The message now shows how many replies it has.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/2b9d785bf71984ee.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        },
+        {
+          "title": "Open the thread",
+          "layout": "image-bottom",
+          "html": "<p>Tap the reply count to open the thread again. Read the replies and answer in the field.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/6870b96a8665847f.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

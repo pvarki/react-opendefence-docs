@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "3d6bfb60-d04e-4f58-9455-4325c24b12fd",
+  "slug": "tell-stale-marks-from-fresh-ones-hydpkikyzd",
+  "collection": "wikis/opendefence-plugins",
+  "locale": "en",
+  "title": "Tell stale marks from fresh ones",
+  "breadcrumb": [
+    "OpenDefence Main",
+    "Managing stale markers",
+    "Tell stale marks from fresh ones"
+  ],
+  "createdAt": "2026-10-27T22:27:09.137Z",
+  "updatedAt": "2026-11-24T13:57:22.508Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Read the label",
+          "layout": "image-bottom",
+          "html": "<p>A label's second line gives the mark's age, <strong>Local</strong> if no known feed holds it, and who made it. Past a set time, the label turns grey and reads <strong>Stale</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/d5daa18ba8d2189c.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Stale in the Inbox",
+          "layout": "image-bottom",
+          "html": "<p>A stale report leaves <strong>Near you, 1 km</strong> for <strong>Older reports (1)</strong> at the end of the <strong>Inbox</strong>. Its row under <strong>Received</strong> turns grey.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/94d464abfbf68aa3.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Open older reports",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Older reports (1)</strong>. The report opens in its place, greyed, with the day and time it was seen, here <strong>21.11. 0413</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/4d4d4bf39ab1561a.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Admins set the time",
+          "layout": "image-bottom",
+          "html": "<p>In <strong>Server configuration (admins)</strong>, admins pick a time under <strong>Enemy marks go stale after</strong>, <strong>24 h</strong> unless changed. Then they tap <strong>Publish…</strong> at the end of the pane.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/f60f497bb0ed7831.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

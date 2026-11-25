@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "id": "e75043fc-819e-4b2e-b0ce-8d628e86ca97",
+  "slug": "listen-to-other-nets-OW2RIAkOuU",
+  "collection": "wikis/opendefence-plugins",
+  "locale": "en",
+  "title": "Listen to other nets",
+  "breadcrumb": [
+    "OpenDefence Voice",
+    "Talk",
+    "Listen to other nets"
+  ],
+  "createdAt": "2026-10-28T07:44:35.455Z",
+  "updatedAt": "2026-11-23T04:59:40.520Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "See what you hear",
+          "layout": "image-bottom",
+          "html": "<p>The line under the PTT lists the other nets you hear, not your own. Guard, mission nets and the nets of your ATAK team and role are added for you.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/634c649624278edc.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        },
+        {
+          "title": "Find the groups",
+          "layout": "image-bottom",
+          "html": "<p>Tap the NET header to open <strong>Select net</strong>. Each group names the nets you hear in it, and a tap opens it.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/e7e2e53f61e59962.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        },
+        {
+          "title": "Tick Listen",
+          "layout": "image-bottom",
+          "html": "<p>Tick <strong>Listen</strong> on another net. You hear it without joining it.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/a383c9b04f26bbb6.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        },
+        {
+          "title": "See who talks there",
+          "layout": "image-bottom",
+          "html": "<p>A name after a net shows who is talking there.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/66d842b48b3202a4.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        },
+        {
+          "title": "Stop listening",
+          "layout": "image-bottom",
+          "html": "<p>Untick <strong>Listen</strong> to stop hearing a net. If Voice added the net for you, it comes back when ATAK restarts.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/ec25e4dc71aa6d1b.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "id": "3ae59bcc-3aef-4a7c-87cb-5a00ac0efb1c",
+  "slug": "mark-an-enemy-drone-3N3eBeJers",
+  "collection": "wikis/opendefence-plugins",
+  "locale": "en",
+  "title": "Mark an enemy drone",
+  "breadcrumb": [
+    "OpenDefence Main",
+    "Advanced",
+    "Mark an enemy drone"
+  ],
+  "createdAt": "2026-11-06T22:58:59.645Z",
+  "updatedAt": "2026-11-23T12:39:00.676Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Pick UAV",
+          "layout": "image-bottom",
+          "html": "<p>In the Markers popup, tap <strong>Enemy</strong>, then the big tile in the middle. Tap <strong>UAV</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/06bcd0436622904c.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Say what kind",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Equipment</strong> and pick the airframe you saw, such as <strong>Multirotor</strong>. For a winged drone, pick the engine you heard.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/7e4c34c63ae4d94a.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Say what it does",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Modifiers</strong> and pick its task, such as <strong>Attack</strong> for a strike or FPV drone, and how far it reaches. Tap <strong>OK</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/4e56847df727ecf8.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Say how many",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Size</strong> and pick how many you saw, such as <strong>2</strong>. Then tap <strong>Place</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/df6dcac87888348e.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Show where it flies",
+          "layout": "image-bottom",
+          "html": "<p>Touch where it is and swipe the way it flies. The longer the swipe, the faster.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/8d3510cafe415dc0.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Check it",
+          "layout": "image-bottom",
+          "html": "<p>The mark is named after the airframe, here <strong>2× Multirotor</strong>. It reads <strong>NOT SENT</strong> until you tap <strong>Send to…</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/07a8142b82b639e3.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

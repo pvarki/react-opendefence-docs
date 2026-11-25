@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "id": "5a67245d-fd94-4651-a12e-fc7b8f149cbb",
+  "slug": "introduction-j4Le2MC6ed",
+  "collection": "wikis/opendefence-plugins",
+  "locale": "en",
+  "title": "Introduction",
+  "breadcrumb": [
+    "OpenDefence UAVOps",
+    "Introduction"
+  ],
+  "createdAt": "2026-11-23T21:07:43.425Z",
+  "updatedAt": "2026-11-24T13:58:24.010Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Drone work in ATAK",
+          "layout": "image-bottom",
+          "html": "<p>OpenDefence UAVOps is OpenDefence's drone operations plugin. It takes a soldier's request for a drone to the team that flies it, and brings the result back.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/0d9c175e1d0ba025.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "From ask to result",
+          "layout": "image-bottom",
+          "html": "<p>A forward observer asks for a strike or recon. The headquarters (HQ) or a platoon's tactical operations centre (TOC) assigns a team, or it goes straight to the teams asked.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/c7f5e2ed12508af1.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Follow it in the Inbox",
+          "layout": "image-bottom",
+          "html": "<p>The asker follows each step in OpenDefence Main's <strong>Inbox</strong> under <strong>Sent</strong>. Here the strike on Bunker reads <strong>Hit</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/852d1735fb056d89.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "See drones fly",
+          "layout": "image-bottom",
+          "html": "<p><strong>Missions</strong> shows which drones fly now and how far each target is from you.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/2f8a91d3c723ad21.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "It does not fly the drone",
+          "layout": "image-bottom",
+          "html": "<p>OpenDefence UAVOps does not fly drones. The drone team records the take-off, the landing and the result, here <strong>Hit</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/0131edff601b758d.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "The drone on the map",
+          "layout": "image-bottom",
+          "html": "<p>The drone shows on the map from the position it already sends, here <strong>KOIRA11</strong>, or as a marker the team moves <strong>By hand</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/1815f43c98d4f8bd.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Opens from Drones",
+          "layout": "image-bottom",
+          "html": "<p>OpenDefence UAVOps works with OpenDefence Main. It opens from <strong>Drones</strong> on the thumb bar, the buttons at the bottom left of the map.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/a0cb5e2c31123738.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Needs Data Sync",
+          "layout": "image-bottom",
+          "html": "<p>OpenDefence UAVOps also needs the Data Sync plugin, which carries the missions from phone to phone. Without it, <strong>Settings</strong> warns <strong>No Data Sync plugin: missions cannot be sent</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/6f4fd72b93bcf2f0.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Where to start",
+          "layout": "image-bottom",
+          "html": "<p>Concepts explains the words used here, and Starting as a user sets your role and unit. Then each role has its own chapter.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/2144284fcdd5d5d6.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

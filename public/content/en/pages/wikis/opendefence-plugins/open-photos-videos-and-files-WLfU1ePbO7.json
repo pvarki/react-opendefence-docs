@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "e5e1f3b0-9905-49ca-94b6-829d7b1a1698",
+  "slug": "open-photos-videos-and-files-WLfU1ePbO7",
+  "collection": "wikis/opendefence-plugins",
+  "locale": "en",
+  "title": "Open photos, videos and files",
+  "breadcrumb": [
+    "OpenDefence Matrix",
+    "Photos, voice and polls",
+    "Open photos, videos and files"
+  ],
+  "createdAt": "2026-11-06T23:54:43.389Z",
+  "updatedAt": "2026-11-23T05:02:41.972Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "See what was sent",
+          "layout": "image-bottom",
+          "html": "<p>Photos and videos show small in the chat, files by name.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/2c9adf860034828f.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        },
+        {
+          "title": "Look at a photo",
+          "layout": "image-bottom",
+          "html": "<p>Tap a photo to see it full size. Pinch or double tap to zoom.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/eb4858997f6dfd9f.webp",
+              "width": 1336,
+              "height": 2720
+            }
+          ]
+        },
+        {
+          "title": "Play a video",
+          "layout": "image-bottom",
+          "html": "<p>Tap a video to play it. Tap the picture to pause.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/7a4cd51a6a8ce752.webp",
+              "width": 1336,
+              "height": 2720
+            }
+          ]
+        },
+        {
+          "title": "Open a file",
+          "layout": "image-bottom",
+          "html": "<p>Tap a file to open it in another app. Pick the app if Android asks.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/19863ce14b77cf71.webp",
+              "width": 1336,
+              "height": 2720
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

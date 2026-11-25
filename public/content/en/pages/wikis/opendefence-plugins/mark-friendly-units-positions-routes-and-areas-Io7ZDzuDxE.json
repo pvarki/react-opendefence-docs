@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 1,
+  "id": "26f6fced-7e17-4748-a059-306cd9a771f4",
+  "slug": "mark-friendly-units-positions-routes-and-areas-Io7ZDzuDxE",
+  "collection": "wikis/opendefence-plugins",
+  "locale": "en",
+  "title": "Mark friendly units, positions, routes and areas",
+  "breadcrumb": [
+    "OpenDefence Main",
+    "Advanced",
+    "Mark friendly units, positions, routes and areas"
+  ],
+  "createdAt": "2026-10-27T21:22:57.371Z",
+  "updatedAt": "2026-11-24T13:58:14.246Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Pick the unit",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Markers</strong>, <strong>Friendly</strong>, the symbol and <strong>›</strong> on your platoon, here <strong>1J</strong>. Tap your squad, here <strong>2R</strong>, or <strong>Other type or search…</strong> for a type not in your ORBAT.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/ff51dce82e956bab.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Mark the squad",
+          "layout": "image-bottom",
+          "html": "<p><strong>Unit</strong> says whose mark it is and <strong>Owner</strong> who keeps it up to date. Tap <strong>Place</strong>, then the map.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/f5de0510b2b762ba.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Pick a position",
+          "layout": "image-bottom",
+          "html": "<p>Open <strong>Markers</strong>, tap <strong>Friendly</strong> and <strong>Position</strong>, and check that <strong>Unit</strong> reads your squad. <strong>Fighting position</strong> comes first, with <strong>Firing area</strong> set to <strong>On</strong>, so tap <strong>Place</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/ef8c27a605efd8da.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Draw its front",
+          "layout": "image-bottom",
+          "html": "<p>Tap its left end, then its right end, facing the enemy. Tap <strong>Done</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/123c15336734bd73.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Set the firing area",
+          "layout": "image-bottom",
+          "html": "<p>Drag <strong>L</strong>, <strong>R</strong> and the range, then tap <strong>Done</strong>, or <strong>Skip</strong> for none. Green shows what the position can see.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/baf50a0e8200bb1d.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Mark the Y-point",
+          "layout": "image-bottom",
+          "html": "<p>Tap where the squad gathers before moving in, or <strong>Cancel</strong> to skip it.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/6288a0c4fe2f1378.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Draw a direction of attack",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Markers</strong>, <strong>Friendly</strong>, <strong>Route</strong>, the symbol, <strong>Direction of attack</strong> and <strong>Place</strong>, draw from start to tip and tap <strong>Done</strong>. Mark an <strong>Objective</strong> at its tip the same way, from <strong>Area</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/9c177fa8f43fea42.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Check the map",
+          "layout": "image-bottom",
+          "html": "<p>Short names tell them apart: <strong>TULIALUE AS</strong> the firing area of a fighting position, <strong>Y</strong> a Y-point, <strong>HS</strong> a direction of attack, <strong>OBJ</strong> an objective. <strong>Hide sight</strong> clears the green.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/ddad62b17446be70.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

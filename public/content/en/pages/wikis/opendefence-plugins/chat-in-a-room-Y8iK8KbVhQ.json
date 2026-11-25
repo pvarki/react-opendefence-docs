@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "id": "25fa8159-4707-4795-b015-09d534a8c0c1",
+  "slug": "chat-in-a-room-Y8iK8KbVhQ",
+  "collection": "wikis/opendefence-plugins",
+  "locale": "en",
+  "title": "Chat in a room",
+  "breadcrumb": [
+    "OpenDefence Matrix",
+    "Starting as a user",
+    "Chat in a room"
+  ],
+  "createdAt": "2026-10-28T07:40:12.904Z",
+  "updatedAt": "2026-11-23T20:43:08.860Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Open your chats",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Chat</strong> on the thumb bar. The red number counts your unread messages.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/1b4c5ef187588589.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        },
+        {
+          "title": "Open a room",
+          "layout": "image-bottom",
+          "html": "<p>Tap a room to open it. The newest messages are at the bottom.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/5ac4904432613ea5.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        },
+        {
+          "title": "Write",
+          "layout": "image-bottom",
+          "html": "<p>Type in the field, then tap the arrow to send. While the pin is lit, your position goes with the message.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/5dc7b6a7d12c9da4.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        },
+        {
+          "title": "Reply",
+          "layout": "image-bottom",
+          "html": "<p>Swipe a message to the right to answer it. Its quote shows above the field.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/ca05e599596a2e0e.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        },
+        {
+          "title": "React",
+          "layout": "image-bottom",
+          "html": "<p>Tap a message to see what you can do with it. Tap an emoji to react, and it shows under the message.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/711009db246df5da.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        },
+        {
+          "title": "See who has read it",
+          "layout": "image-bottom",
+          "html": "<p>Tap your message, then Message info on its card. The panel lists who has read it and when.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/f13187176c22f58a.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

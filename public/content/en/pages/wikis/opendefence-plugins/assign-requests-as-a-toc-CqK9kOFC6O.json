@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "id": "14286747-77fa-4f7f-b338-eab5f5fde9d2",
+  "slug": "assign-requests-as-a-toc-CqK9kOFC6O",
+  "collection": "wikis/opendefence-plugins",
+  "locale": "en",
+  "title": "Assign requests as a TOC",
+  "breadcrumb": [
+    "OpenDefence UAVOps",
+    "HQ and TOC",
+    "Assign requests as a TOC"
+  ],
+  "createdAt": "2026-11-06T23:05:03.780Z",
+  "updatedAt": "2026-11-23T20:03:20.191Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Take the TOC role",
+          "layout": "image-bottom",
+          "html": "<p>In <strong>Drones</strong>, tap <strong>Settings</strong>, then <strong>TOC</strong>. Tap <strong>Pick</strong> and choose your platoon as <strong>Unit</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/5be17eeaa1dc2f15.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "See the requests",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Requests</strong> to see the requests for your unit and those asked of every team. Tap one, then <strong>Assign</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/ece92a50f4b0315c.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Assign to your team",
+          "layout": "image-bottom",
+          "html": "<p>Tap a team under your unit, then <strong>Assign to 2R/1J</strong>. The team gets it in its <strong>Requests</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/60cfcc2bcf4ace78.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "See every unit's missions",
+          "layout": "image-bottom",
+          "html": "<p>Later, tap <strong>Missions</strong>, then <strong>All units</strong> for every unit's missions. <strong>Active</strong> and <strong>Finished</strong> hold only your teams' missions.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/08883bcd643bbdad.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Draw corridors for your teams",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Corridors</strong>, where a TOC draws corridors for the units under it. Tap <strong>New corridor</strong> to draw one.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/63eb87fc97747556.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

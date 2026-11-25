@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "id": "14b03a1a-bc87-440d-a15e-f51ecc14a19d",
+  "slug": "follow-your-request-h3Kkovi8rm",
+  "collection": "wikis/opendefence-plugins",
+  "locale": "en",
+  "title": "Follow your request",
+  "breadcrumb": [
+    "OpenDefence UAVOps",
+    "Forward observer officer (FOO)",
+    "Follow your request"
+  ],
+  "createdAt": "2026-11-06T23:03:25.294Z",
+  "updatedAt": "2026-11-23T12:47:48.886Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "See who has it",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Drones</strong>, then <strong>Requests</strong>. <strong>My requests</strong> says what became of each request, and <strong>With 2R/1J, no plan yet</strong> means a team has it.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/95d08999e5ff99fa.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Read it in the Inbox",
+          "layout": "image-bottom",
+          "html": "<p>Open <strong>Inbox</strong>. Under <strong>Sent</strong>, the row says where your request stands.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/3bb554ffef09d47f.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "See it fly",
+          "layout": "image-bottom",
+          "html": "<p>Open <strong>Drones</strong> and tap <strong>Missions</strong>. <strong>Active</strong> lists every drone flying now and how far each target is from you.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/2f8a91d3c723ad21.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Get the result",
+          "layout": "image-bottom",
+          "html": "<p>When the team reports, open <strong>Inbox</strong> again. The <strong>Sent</strong> row gives the result.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/852d1735fb056d89.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "See finished missions",
+          "layout": "image-bottom",
+          "html": "<p>In <strong>Missions</strong>, tap <strong>Finished</strong>. Each row starts with how it ended, such as <strong>Hit</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/7293e1b0335edc68.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Open the mission",
+          "layout": "image-bottom",
+          "html": "<p>Tap the mission to see how it went. The team's comment is last.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/1d156bcb4a530e58.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

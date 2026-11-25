@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "e27e583f-aec4-4c3e-a893-1f99f167d957",
+  "slug": "join-a-room-FgouSLgTql",
+  "collection": "wikis/opendefence-plugins",
+  "locale": "en",
+  "title": "Join a room",
+  "breadcrumb": [
+    "OpenDefence Matrix",
+    "Starting as a user",
+    "Join a room"
+  ],
+  "createdAt": "2026-11-06T23:53:54.692Z",
+  "updatedAt": "2026-11-23T20:43:08.393Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Find rooms you can join",
+          "layout": "image-bottom",
+          "html": "<p>Scroll down <strong>Chats</strong> to the rooms you can join, then tap <strong>Join</strong> or the room's row.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/96c990cdd0912f0d.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        },
+        {
+          "title": "Join",
+          "layout": "image-bottom",
+          "html": "<p>The room opens, and you can write in it at once.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/246730ff63718add.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        },
+        {
+          "title": "Answer an invite",
+          "layout": "image-bottom",
+          "html": "<p>A chat you are invited to shows <strong>Invites you</strong>. Tap it to join.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/692f9fdc40e2e082.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

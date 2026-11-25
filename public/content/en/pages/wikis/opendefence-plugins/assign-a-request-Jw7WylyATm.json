@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "id": "ed65f1b8-d5d4-40a8-9593-c6d655e351ef",
+  "slug": "assign-a-request-Jw7WylyATm",
+  "collection": "wikis/opendefence-plugins",
+  "locale": "en",
+  "title": "Assign a request",
+  "breadcrumb": [
+    "OpenDefence UAVOps",
+    "HQ and TOC",
+    "Assign a request"
+  ],
+  "createdAt": "2026-11-06T23:04:15.786Z",
+  "updatedAt": "2026-11-23T12:53:26.036Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "See what waits",
+          "layout": "image-bottom",
+          "html": "<p>A request for you shows in <strong>Inbox</strong> under <strong>For you</strong>. Tap it.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/5e082b63d0b0f6fc.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Select the request",
+          "layout": "image-bottom",
+          "html": "<p>It opens selected and the map moves to its mark. Tap <strong>Assign</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/1ff224b202f57aae.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Pick a team",
+          "layout": "image-bottom",
+          "html": "<p>Teams that can fly it come first, with their drones. Tap one.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/c7f5e2ed12508af1.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Confirm",
+          "layout": "image-bottom",
+          "html": "<p>Nothing is sent yet. Tap <strong>Assign to 2R/1J</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/22fc4c4fdcb371f1.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "See it with the team",
+          "layout": "image-bottom",
+          "html": "<p>For 5 seconds, the line under <strong>Requests</strong> says what you did. The request waits under <strong>With a team</strong> until the team plans it.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/9e835d6ce0f4f48e.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Give it to another team",
+          "layout": "image-bottom",
+          "html": "<p>To move it, tap it under <strong>With a team</strong>, then <strong>Change team</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/b8b8968d08becb16.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Pick the new team",
+          "layout": "image-bottom",
+          "html": "<p>Pick a team and confirm, as before. <strong>‹</strong> leaves it with 2R/1J.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/9cc7a4e0382b95ad.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

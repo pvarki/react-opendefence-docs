@@ -1,0 +1,227 @@
+{
+  "schemaVersion": 1,
+  "id": "a807cb04-5ab8-4966-9551-b5adb3abec89",
+  "slug": "concepts-gNkXFS8ukj",
+  "collection": "wikis/opendefence-plugins",
+  "locale": "en",
+  "title": "Concepts",
+  "breadcrumb": [
+    "OpenDefence Matrix",
+    "Concepts"
+  ],
+  "createdAt": "2026-11-23T21:08:51.127Z",
+  "updatedAt": "2026-11-24T14:02:11.124Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "How it works",
+          "layout": "image-bottom",
+          "html": "<p>OpenDefence Matrix puts your OpenDefence chat under the ATAK map, in the same chats as Element X. Positions and map items in messages go on your map with a tap.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/0e65d24f1a499226.webp",
+              "width": 1336,
+              "height": 2071
+            }
+          ]
+        },
+        {
+          "title": "Your account",
+          "layout": "image-bottom",
+          "html": "<p>Your chat account is your OpenDefence account on Matrix, the chat system Element X also uses. Your rooms and messages are the same in both apps.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/d4c5691219ad07d3.webp",
+              "width": 1336,
+              "height": 2071
+            }
+          ]
+        },
+        {
+          "title": "Signing in",
+          "layout": "image-bottom",
+          "html": "<p>Once the Deploy App has connected ATAK to your OpenDefence TAK server, you sign in on each phone with your Deploy App certificate. There is no server to type in.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/b76db904a32e0b45.webp",
+              "width": 1336,
+              "height": 2223
+            }
+          ]
+        },
+        {
+          "title": "Recovery key",
+          "layout": "image-bottom",
+          "html": "<p>Your first device gives you a recovery key to keep safe. A later phone reads encrypted messages only after you verify it with that key or another of your devices.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/a5822ca7da62aa6e.webp",
+              "width": 1336,
+              "height": 2103
+            }
+          ]
+        },
+        {
+          "title": "Rooms and direct chats",
+          "layout": "image-bottom",
+          "html": "<p>A room is a group chat, such as your platoon's, and a direct chat is between you and one person. <strong>Chats</strong> lists both.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/a1c7f808c5e9eb0a.webp",
+              "width": 1336,
+              "height": 2071
+            }
+          ]
+        },
+        {
+          "title": "Your OpenDefence space",
+          "layout": "image-bottom",
+          "html": "<p>Your OpenDefence space groups the rooms its members can join. A room you make goes there, and others see it in <strong>Chats</strong> under <strong>MORE ROOMS IN</strong>, with <strong>Join</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/a8c1ac55b246e32a.webp",
+              "width": 1336,
+              "height": 2322
+            }
+          ]
+        },
+        {
+          "title": "Room admins",
+          "layout": "image-bottom",
+          "html": "<p>Whoever makes a room is its <strong>Admin</strong>. In <strong>Room info</strong> the admin can rename it, invite people and give roles.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/e28834f02f8b86c5.webp",
+              "width": 1336,
+              "height": 2333
+            }
+          ]
+        },
+        {
+          "title": "Threads",
+          "layout": "image-bottom",
+          "html": "<p>A thread keeps a side conversation under one message, so it does not flood the room. The room shows only how many replies it has.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/aeedc5bd5bb9dbab.webp",
+              "width": 1336,
+              "height": 1742
+            }
+          ]
+        },
+        {
+          "title": "Writing with no connection",
+          "layout": "image-bottom",
+          "html": "<p><strong>Chats</strong> says when you are offline, but you can still read and write. A new message waits as <strong>Sending…</strong> and goes by itself, so do not send it again.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/717431385cfb0416.webp",
+              "width": 1336,
+              "height": 2223
+            }
+          ]
+        },
+        {
+          "title": "Chat and the map",
+          "layout": "image-bottom",
+          "html": "<p>Messages carry positions, map items and map files as well as words, and a tap shows them on your map. Live locations shared in Element X appear with no tap.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/a3ba4ab6da7a362b.webp",
+              "width": 1336,
+              "height": 2071
+            }
+          ]
+        },
+        {
+          "title": "Positions on messages",
+          "layout": "image-bottom",
+          "html": "<p>In encrypted chats your position goes with each message by default, as the grid under it. The pin by the message field turns that off for a chat.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/3dd36c3e1a50aa27.webp",
+              "width": 1336,
+              "height": 1721
+            }
+          ]
+        },
+        {
+          "title": "Map items",
+          "layout": "image-bottom",
+          "html": "<p>Points, routes and drawings travel through chats as <strong>MAP ITEM</strong> cards. One goes on your map only when you tap <strong>On map</strong>, and is not passed on to anyone.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/5b23d4df9fcce7ef.webp",
+              "width": 1336,
+              "height": 1742
+            }
+          ]
+        },
+        {
+          "title": "Map files",
+          "layout": "image-bottom",
+          "html": "<p>Route and area files (KML, KMZ or GPX) can go on your map as an overlay you can hide. As with map items, only your tap puts them there.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/cca738fb3799afd0.webp",
+              "width": 1336,
+              "height": 1742
+            }
+          ]
+        },
+        {
+          "title": "Live locations",
+          "layout": "image-bottom",
+          "html": "<p>People who share their live location in Element X, in a chat you are in, show on your map by name without a tap.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/320affbf78e2f8a4.webp",
+              "width": 1336,
+              "height": 1622
+            }
+          ]
+        },
+        {
+          "title": "Notifications",
+          "layout": "image-bottom",
+          "html": "<p>By default ATAK notifies you of direct messages and of messages that name you, called mentions. <strong>OD Matrix Preferences</strong> in ATAK's Settings changes that for this phone.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/7a21257f3872bf25.webp",
+              "width": 1336,
+              "height": 1715
+            }
+          ]
+        },
+        {
+          "title": "No text in notifications",
+          "layout": "image-bottom",
+          "html": "<p>A notification names the chat and how many messages are new, never the text, because ATAK shows notifications on a locked screen.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/e18b42361e39a226.webp",
+              "width": 1336,
+              "height": 1619
+            }
+          ]
+        },
+        {
+          "title": "Unread count",
+          "layout": "image-bottom",
+          "html": "<p>The chat button in ATAK's toolbar and <strong>Chat</strong> on OpenDefence Main's thumb bar count every unread message, whatever notifications you choose.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/3286ddb8e159a978.webp",
+              "width": 1336,
+              "height": 1742
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

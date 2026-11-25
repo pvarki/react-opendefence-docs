@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "id": "d60683d8-5380-4827-aaf0-19c20aa0646c",
+  "slug": "fly-by-the-numbers-LrXYv48SY2",
+  "collection": "wikis/opendefence-plugins",
+  "locale": "en",
+  "title": "Fly by the numbers",
+  "breadcrumb": [
+    "OpenDefence UAVOps",
+    "Pilot",
+    "Fly by the numbers"
+  ],
+  "createdAt": "2026-11-06T23:07:15.584Z",
+  "updatedAt": "2026-11-24T13:59:22.763Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Set up the pilot's phone",
+          "layout": "image-bottom",
+          "html": "<p>In <strong>Drones</strong>, open <strong>Settings</strong>, tap <strong>Pilot</strong>, then <strong>Pick</strong> your team under <strong>Unit</strong>. Tap <strong>‹</strong> to open the pilot page.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/8ffe854b8953a0d0.webp",
+              "width": 1336,
+              "height": 2660
+            }
+          ]
+        },
+        {
+          "title": "Wait for the flight",
+          "layout": "image-bottom",
+          "html": "<p>The page waits for a flight from your team and shows the accepted strike under it. The screen stays on.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/9a2ef456aad2d18c.webp",
+              "width": 1336,
+              "height": 2660
+            }
+          ]
+        },
+        {
+          "title": "No drone position yet",
+          "layout": "image-bottom",
+          "html": "<p>Once your team takes off, the page shows the strike and its target. Until your team picks the drone track it says <strong>No drone position</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/b322f55922d1fbc2.webp",
+              "width": 1336,
+              "height": 2660
+            }
+          ]
+        },
+        {
+          "title": "Fly by the numbers",
+          "layout": "image-bottom",
+          "html": "<p>Fly by the big bearing and the arrow, drawn <strong>North up</strong>. <strong>Corridor edge</strong> says how far the drone is from leaving its area, left or right as it faces the target.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/917b6992187d84ff.webp",
+              "width": 1336,
+              "height": 2660
+            }
+          ]
+        },
+        {
+          "title": "See the map",
+          "layout": "image-bottom",
+          "html": "<p><strong>Map</strong> on the pilot page shows the target on the map. Tap <strong>Drones</strong> to come back.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/9d68eb46b510eedd.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

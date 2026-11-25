@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "id": "88b4232f-b319-4f5b-bc8e-248f521a237b",
+  "slug": "mark-posts-code-name-points-and-patrols-LMlR75u5vV",
+  "collection": "wikis/opendefence-plugins",
+  "locale": "en",
+  "title": "Mark posts, code-name points and patrols",
+  "breadcrumb": [
+    "OpenDefence Main",
+    "Advanced",
+    "Mark posts, code-name points and patrols"
+  ],
+  "createdAt": "2026-11-23T12:39:54.103Z",
+  "updatedAt": "2026-11-23T12:39:54.103Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Pick a post",
+          "layout": "image-bottom",
+          "html": "<p>In <strong>Markers</strong>, tap <strong>Friendly</strong>, <strong>Position</strong> and the symbol tile in the middle of the popup. Pick a post, such as <strong>Observation post</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/24e529059191b6ae.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Check its sight",
+          "layout": "image-bottom",
+          "html": "<p><strong>Sight</strong> shows what the post can see up to 2 km. Tap <strong>Place</strong>, then the map.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/de12c740dddbcb13.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "See what it sees",
+          "layout": "image-bottom",
+          "html": "<p>Green shows the ground the post can see, red the ground it cannot. <strong>Hide sight</strong> clears it.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/e25ffbbbf3db7d99.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Mark a code-name point",
+          "layout": "image-bottom",
+          "html": "<p>For a place you call by its code name, pick <strong>Code-name point</strong> under <strong>Friendly</strong> and <strong>Position</strong>. Type the code name, then tap <strong>Place</strong> and the map.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/224ebbe0aa893af8.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Draw a patrol's route",
+          "layout": "image-bottom",
+          "html": "<p>For a patrol, pick <strong>Patrol line</strong> under <strong>Friendly</strong> and <strong>Position</strong>. Tap <strong>Colour</strong> to tell it from other patrols.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/10f66f3673fea1bf.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Pick a patrol's colour",
+          "layout": "image-bottom",
+          "html": "<p>Tap a colour, then <strong>Place</strong>. Tap the line's corners on the map and <strong>Done</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/39f298d0c5e62dd7.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Check the map",
+          "layout": "image-bottom",
+          "html": "<p>Each mark shows on the map with its short name, such as <strong>OP</strong>. A point reads <strong>NOT SENT</strong> until you send it.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/a8c505f829a8819e.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

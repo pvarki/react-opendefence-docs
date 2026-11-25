@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "611446a9-acbe-492a-9b17-7ae7e77eb029",
+  "slug": "add-a-map-file-to-your-map-7Svg3Kz3ed",
+  "collection": "wikis/opendefence-plugins",
+  "locale": "en",
+  "title": "Add a map file to your map",
+  "breadcrumb": [
+    "OpenDefence Matrix",
+    "Map",
+    "Add a map file to your map"
+  ],
+  "createdAt": "2026-11-06T23:55:13.995Z",
+  "updatedAt": "2026-11-23T05:03:36.371Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Tap the file",
+          "layout": "image-bottom",
+          "html": "<p>Tap a KML, KMZ or GPX file in a chat. Here ODMXEMU1 sent <strong>patrol-route.gpx</strong> to <strong>1st Platoon</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/c60812f6159e4505.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        },
+        {
+          "title": "Check it",
+          "layout": "image-bottom",
+          "html": "<p>Check what it is, who sent it and how many places it holds. Then tap <strong>ADD TO MAP</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/a2fafe8678f9b098.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        },
+        {
+          "title": "On your map",
+          "layout": "image-bottom",
+          "html": "<p>Close the pane with Back to see the route, here from <strong>Start</strong> to <strong>Objective</strong>. It stays on this phone and is not sent on.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/3135575347517649.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        },
+        {
+          "title": "Find it again",
+          "layout": "image-bottom",
+          "html": "<p>Tap the layers button at the top of the map, then File Overlays and <strong>GPX</strong>. The eye hides the route or shows it again.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/aa716d5dc86a07dc.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

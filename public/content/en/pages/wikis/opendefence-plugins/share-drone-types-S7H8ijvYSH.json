@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "id": "d6eff74b-b6b1-47b5-ab99-a01992ece416",
+  "slug": "share-drone-types-S7H8ijvYSH",
+  "collection": "wikis/opendefence-plugins",
+  "locale": "en",
+  "title": "Share drone types",
+  "breadcrumb": [
+    "OpenDefence UAVOps",
+    "Drone team",
+    "Share drone types"
+  ],
+  "createdAt": "2026-11-06T23:05:24.117Z",
+  "updatedAt": "2026-11-23T12:55:33.972Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Export types",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Export types</strong> to save a file in atak/export. Copy that file into atak/export on the phone that needs it.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/da380f6b92624281.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Change or delete a type",
+          "layout": "image-bottom",
+          "html": "<p>Tap a type to change it, then <strong>Save</strong>. <strong>Delete</strong> removes it.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/b595a2d8b5f72c3e.webp",
+              "width": 1336,
+              "height": 2660
+            }
+          ]
+        },
+        {
+          "title": "Undo a delete",
+          "layout": "image-bottom",
+          "html": "<p>For 5 seconds, <strong>Undo</strong> brings the type back.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/a861d7ff01e82625.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Pick the file",
+          "layout": "image-bottom",
+          "html": "<p>On the phone that needs them, tap <strong>Import types</strong> and the file.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/64263654ac3c3c21.webp",
+              "width": 1336,
+              "height": 2660
+            }
+          ]
+        },
+        {
+          "title": "See what came in",
+          "layout": "image-bottom",
+          "html": "<p>A new type comes in with no drones, so set its count with <strong>+</strong>. A type you have keeps its count.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/6fe633cccc5e501d.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

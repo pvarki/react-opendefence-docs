@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "id": "65b926a5-0366-4217-b8e2-c21b82b904c3",
+  "slug": "ask-with-a-poll-sdO5q8bsYC",
+  "collection": "wikis/opendefence-plugins",
+  "locale": "en",
+  "title": "Ask with a poll",
+  "breadcrumb": [
+    "OpenDefence Matrix",
+    "Photos, voice and polls",
+    "Ask with a poll"
+  ],
+  "createdAt": "2026-11-06T23:54:54.238Z",
+  "updatedAt": "2026-11-23T05:02:53.220Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Make a poll",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>+</strong>, then <strong>Poll</strong>. Write the question and one answer a line, then tap <strong>SEND</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/653346a9f06a5ba4.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        },
+        {
+          "title": "Send it",
+          "layout": "image-bottom",
+          "html": "<p>Your poll shows in the chat. Everyone in the chat can vote.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/26752a61b498147c.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        },
+        {
+          "title": "Vote",
+          "layout": "image-bottom",
+          "html": "<p>Tap an answer to vote. Tap another to change your vote.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/ab7fd2811a2dc87a.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        },
+        {
+          "title": "End it",
+          "layout": "image-bottom",
+          "html": "<p>Tap your poll's question, not an answer, to open this card. Then tap <strong>End poll</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/69cf98849063a47c.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        },
+        {
+          "title": "Confirm",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>END POLL</strong> to confirm. Voting stops.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/ca63f6bccab3c8f9.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        },
+        {
+          "title": "Read the result",
+          "layout": "image-bottom",
+          "html": "<p>Everyone sees <strong>Final result</strong> with the winner in bold.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/3342e5971b68b189.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

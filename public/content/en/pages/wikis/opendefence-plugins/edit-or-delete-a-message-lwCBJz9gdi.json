@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "id": "35e32e81-75bf-4829-a62e-84cb7a472302",
+  "slug": "edit-or-delete-a-message-lwCBJz9gdi",
+  "collection": "wikis/opendefence-plugins",
+  "locale": "en",
+  "title": "Edit or delete a message",
+  "breadcrumb": [
+    "OpenDefence Matrix",
+    "Chat",
+    "Edit or delete a message"
+  ],
+  "createdAt": "2026-11-06T23:53:02.286Z",
+  "updatedAt": "2026-11-23T05:01:33.135Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Tap your message",
+          "layout": "image-bottom",
+          "html": "<p>Tap a message you sent to see <strong>Edit</strong> and <strong>Delete</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/baad8d130026d78a.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        },
+        {
+          "title": "Edit it",
+          "layout": "image-bottom",
+          "html": "<p>Tap Edit, fix the text under <strong>Editing your message</strong> and tap the arrow.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/0deb72c9ee78c11b.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        },
+        {
+          "title": "Check the change",
+          "layout": "image-bottom",
+          "html": "<p>The message now shows <strong>edited</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/ee0201236d8389c4.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        },
+        {
+          "title": "Delete it",
+          "layout": "image-bottom",
+          "html": "<p>Tap the message, then Delete. The last row turns into <strong>Tap again to delete</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/7fc8b4a44b96fbc0.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        },
+        {
+          "title": "Gone for everyone",
+          "layout": "image-bottom",
+          "html": "<p>Tap that row again. Everyone in the chat now sees <strong>Message deleted</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/8c9bdd75727e7b5e.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

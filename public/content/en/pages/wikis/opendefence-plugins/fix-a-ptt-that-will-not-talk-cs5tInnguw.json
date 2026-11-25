@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "5c9b310a-c70c-482f-afe0-05a758197a8d",
+  "slug": "fix-a-ptt-that-will-not-talk-cs5tInnguw",
+  "collection": "wikis/opendefence-plugins",
+  "locale": "en",
+  "title": "Fix a PTT that will not talk",
+  "breadcrumb": [
+    "OpenDefence Voice",
+    "Settings",
+    "Fix a PTT that will not talk"
+  ],
+  "createdAt": "2026-11-23T04:59:50.655Z",
+  "updatedAt": "2026-11-24T14:01:13.090Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Allow the microphone",
+          "layout": "image-bottom",
+          "html": "<p>If the PTT reads <strong>NO MIC</strong> after a press, Android has not let OpenDefence Voice use the microphone. Tap <strong>Allow microphone</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/cadc7dc64b41db5d.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        },
+        {
+          "title": "Answer Android's questions",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>While using the app</strong>, then <strong>Allow</strong> for nearby devices and notifications. A Bluetooth headset or PTT button needs nearby devices.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/cf8fe21b9e7d20bb.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        },
+        {
+          "title": "Connect ATAK first",
+          "layout": "image-bottom",
+          "html": "<p><strong>Connect ATAK to the TAK server first</strong> means ATAK is not connected, so ATAK's dot at the map's bottom right is red. Once ATAK connects, OpenDefence Voice connects by itself.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/49b63071420470d6.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

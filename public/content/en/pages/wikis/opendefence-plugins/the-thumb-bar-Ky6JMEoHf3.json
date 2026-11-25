@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "id": "c3b38071-28c1-45e4-92eb-e7cf287cb24b",
+  "slug": "the-thumb-bar-Ky6JMEoHf3",
+  "collection": "wikis/opendefence-plugins",
+  "locale": "en",
+  "title": "The thumb bar",
+  "breadcrumb": [
+    "OpenDefence Main",
+    "Starting as a user",
+    "The thumb bar"
+  ],
+  "createdAt": "2026-10-27T22:12:17.859Z",
+  "updatedAt": "2026-11-24T13:57:03.762Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Find the thumb bar",
+          "layout": "image-bottom",
+          "html": "<p>The thumb bar sits at the bottom left of the map. <strong>Inbox</strong> on top counts new reports in red, and plugins such as <strong>Drones</strong> and <strong>Voice</strong> add buttons.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/7658202e351d2ab4.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Inbox",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Inbox</strong> to see what others have reported, the closest first.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/a9be1f367316ec16.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Drones",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Done</strong>, then <strong>Drones</strong>. It comes from OpenDefence UAVOps and opens its own pane, with the thumb bar still on the map above it.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/8c26f4ddcf79c104.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Markers",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Markers</strong> to mark any side, <strong>Friendly</strong>, <strong>Neutral</strong>, <strong>Unknown</strong> or <strong>Enemy</strong>. The thumb bar hides while it is open.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/5d794775e3eb649d.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "On its side",
+          "layout": "image-bottom",
+          "html": "<p>Turn the phone on its side, and the thumb bar keeps its buttons at the bottom left. If the map stays upright, tap <strong>≡</strong>, scroll to <strong>Orientation</strong> and tap it.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/71a33d60701f9a3d.webp",
+              "width": 2596,
+              "height": 1522
+            }
+          ]
+        },
+        {
+          "title": "Markers on its side",
+          "layout": "image-bottom",
+          "html": "<p>On its side, the popup splits into two columns, with <strong>Cancel</strong>, <strong>MGRS</strong> and <strong>Place</strong> in the top row. To turn the screen back, tap <strong>≡</strong>, then <strong>Orientation</strong> again.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/fdaa7ccc14322c23.webp",
+              "width": 2596,
+              "height": 1522
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

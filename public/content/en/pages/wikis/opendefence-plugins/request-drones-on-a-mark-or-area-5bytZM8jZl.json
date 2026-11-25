@@ -1,0 +1,132 @@
+{
+  "schemaVersion": 1,
+  "id": "f097e147-f3e2-42ae-8aed-644503c864fb",
+  "slug": "request-drones-on-a-mark-or-area-5bytZM8jZl",
+  "collection": "wikis/opendefence-plugins",
+  "locale": "en",
+  "title": "Request drones on a mark or area",
+  "breadcrumb": [
+    "OpenDefence Main",
+    "Requests",
+    "Request drones on a mark or area"
+  ],
+  "createdAt": "2026-11-06T23:01:16.198Z",
+  "updatedAt": "2026-11-24T13:58:05.548Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Who answers your request",
+          "layout": "image-bottom",
+          "html": "<p><strong>Drones</strong> opens OpenDefence UAVOps, a separate plugin used here to show how a request travels. You ask from OpenDefence Main, and those you ask answer in <strong>Drones</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/8c26f4ddcf79c104.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Tap the target button",
+          "layout": "image-bottom",
+          "html": "<p>Tap the enemy mark, or an enemy or unknown area's outline, then the crosshair target button in the ring of buttons. If ATAK lists several items, tap the right one.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/59ba9efb350f60c1.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Read the sheet",
+          "layout": "image-bottom",
+          "html": "<p><strong>To</strong> first offers the team your daily quota is on, here <strong>2R/1J</strong>, and <strong>Your quota</strong> shows the requests left today. <strong>Send</strong> turns on once each choice has a pick.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/d989359bd731c828.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Pick and send",
+          "layout": "image-bottom",
+          "html": "<p>Pick <strong>Strike</strong> or <strong>Recon</strong>, the priority, and under <strong>To</strong> your quota's team, <strong>Any</strong> to ask every team, or <strong>HQ</strong> when it does not matter who flies. Tap <strong>Send</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/ff890d64d77012b9.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Follow it in the Inbox",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Inbox</strong>. Your request shows under <strong>Sent</strong> with the time you sent it.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/34b36a8935d3885b.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Read the answer",
+          "layout": "image-bottom",
+          "html": "<p>Open <strong>Inbox</strong> again to see the answer on the same row, here <strong>Declined: weather</strong> with a blue dot. Tap the row to show the target on the map.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/ba1697956dae7106.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Ask about an area",
+          "layout": "image-bottom",
+          "html": "<p>You can also ask from <strong>Drones</strong>, here for an enemy or unknown area drawn with <strong>Markers</strong>. Tap <strong>Drones</strong>, then <strong>Ask for a drone</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/2bccbc76af2f13dc.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Tap the area",
+          "layout": "image-bottom",
+          "html": "<p>Tap the area's yellow outline, since a tap inside it does nothing. The phone's Back button cancels.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/a98247db02e33873.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Recon comes picked",
+          "layout": "image-bottom",
+          "html": "<p>For an area, <strong>Recon</strong> comes already picked. Pick who to ask and tap <strong>Send</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/a26009033e95b1bb.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

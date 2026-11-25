@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "af218ce1-f240-42da-96c2-84d434471a3b",
+  "slug": "send-a-voice-message-NEQ6ppCUYI",
+  "collection": "wikis/opendefence-plugins",
+  "locale": "en",
+  "title": "Send a voice message",
+  "breadcrumb": [
+    "OpenDefence Matrix",
+    "Photos, voice and polls",
+    "Send a voice message"
+  ],
+  "createdAt": "2026-11-06T23:54:47.040Z",
+  "updatedAt": "2026-11-23T05:02:46.701Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Record",
+          "layout": "image-bottom",
+          "html": "<p>With the field empty, hold the microphone and speak. Slide left to cancel.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/fc38493f47ab11a3.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        },
+        {
+          "title": "Send",
+          "layout": "image-bottom",
+          "html": "<p>Let go to send it. It shows with a play button and its length.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/ee88f4a3fe57f7d6.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        },
+        {
+          "title": "Listen",
+          "layout": "image-bottom",
+          "html": "<p>Tap the play button on a voice message. The bar fills as it plays.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/8440ff86e6bb726a.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

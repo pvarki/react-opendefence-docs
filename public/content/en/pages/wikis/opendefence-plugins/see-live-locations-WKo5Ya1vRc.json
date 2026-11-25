@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "a8ce30e6-da99-4938-acd9-421623ae5629",
+  "slug": "see-live-locations-WKo5Ya1vRc",
+  "collection": "wikis/opendefence-plugins",
+  "locale": "en",
+  "title": "See live locations",
+  "breadcrumb": [
+    "OpenDefence Matrix",
+    "Map",
+    "See live locations"
+  ],
+  "createdAt": "2026-11-23T10:52:50.413Z",
+  "updatedAt": "2026-11-23T10:52:50.413Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Someone shares a live location",
+          "layout": "image-bottom",
+          "html": "<p>When someone in the chat shares a live location in Element X, the chat says <strong>Sharing live location</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/597cbf4a91faddd0.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        },
+        {
+          "title": "Find them on the map",
+          "layout": "image-bottom",
+          "html": "<p>Press Back to close the pane. They show on your map by name, as a friendly marker that moves with them.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/3267adfb5466ef69.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        },
+        {
+          "title": "See where it comes from",
+          "layout": "image-bottom",
+          "html": "<p>Tap the marker, then the details button in its radial menu. Scroll to <strong>Remarks</strong>, which says it was shared in Matrix.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/ddb4af4ccd76f4a8.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

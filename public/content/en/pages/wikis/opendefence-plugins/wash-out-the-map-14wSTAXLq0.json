@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "595b98b6-724c-4acf-ae0d-27d87f032c34",
+  "slug": "wash-out-the-map-14wSTAXLq0",
+  "collection": "wikis/opendefence-plugins",
+  "locale": "en",
+  "title": "Wash out the map",
+  "breadcrumb": [
+    "OpenDefence Main",
+    "Advanced",
+    "Wash out the map"
+  ],
+  "createdAt": "2026-11-23T21:07:37.295Z",
+  "updatedAt": "2026-11-23T21:07:37.295Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Open OpenDefence Main",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>≡</strong>, scroll the tools to <strong>OpenDefence Main</strong> and tap it. <strong>Wash out the map</strong> lays white over the map, so it turns paler, not darker, and marks stand out.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/79ec74a1cf62834d.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Pick how pale",
+          "layout": "image-bottom",
+          "html": "<p>Under <strong>Wash out the map</strong>, pick <strong>25 %</strong>, <strong>50 %</strong> or <strong>75 %</strong>, here <strong>50 %</strong>. Your arrow and the marks keep their full colour.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/2761676560b60764.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Check the map",
+          "layout": "image-bottom",
+          "html": "<p>Close the pane with <strong>✕</strong> to see the marks stand out. To bring the map back, open <strong>OpenDefence Main</strong> again and pick <strong>Off</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/3a0bfa7feb182dac.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "id": "3f472db1-7c6a-4a29-8bd0-3d97196d0d76",
+  "slug": "fly-a-mission-kPE0vJm7Hk",
+  "collection": "wikis/opendefence-plugins",
+  "locale": "en",
+  "title": "Fly a mission",
+  "breadcrumb": [
+    "OpenDefence UAVOps",
+    "Drone team",
+    "Fly a mission"
+  ],
+  "createdAt": "2026-11-06T23:06:16.037Z",
+  "updatedAt": "2026-11-23T15:09:00.946Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Took off",
+          "layout": "image-bottom",
+          "html": "<p>In <strong>Missions</strong>, open the mission. Tap <strong>Took off</strong> when the drone is up.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/dc6a889e6786d8eb.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Pick the drone track",
+          "layout": "image-bottom",
+          "html": "<p>Tap the drone's track, or <strong>By hand</strong> when it sends no position.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/c80a11ef2855b683.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Move the drone",
+          "layout": "image-bottom",
+          "html": "<p>Move the drone marker with <strong>Draw track</strong> as it flies, and others see it once it is 300 m from you. Tap <strong>Mark finding</strong> when the drone sees something.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/6fe5a685a22ebc44.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Mark what it sees",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Enemy ›</strong> and pick what the drone sees, here Armour. Then tap <strong>Place</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/c6b60ec9d043d5ed.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "See the finding",
+          "layout": "image-bottom",
+          "html": "<p>The mark lands on your map where the drone is. Send it on with <strong>Send to…</strong> as you send any mark.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/6f9fce8a9dd3b5f3.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "End the flight",
+          "layout": "image-bottom",
+          "html": "<p>When the flight ends, tap how it ended. After <strong>Expended</strong>, the used drone comes off <strong>Our drones</strong> by itself.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/2e74cdf547c5421a.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

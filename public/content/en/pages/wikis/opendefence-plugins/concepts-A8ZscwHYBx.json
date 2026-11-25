@@ -1,0 +1,275 @@
+{
+  "schemaVersion": 1,
+  "id": "95d40723-7d1f-4465-bae4-4ac9e2e0e33d",
+  "slug": "concepts-A8ZscwHYBx",
+  "collection": "wikis/opendefence-plugins",
+  "locale": "en",
+  "title": "Concepts",
+  "breadcrumb": [
+    "OpenDefence Main",
+    "Concepts"
+  ],
+  "createdAt": "2026-11-23T21:06:38.293Z",
+  "updatedAt": "2026-11-24T13:56:01.847Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "How it works",
+          "layout": "image-bottom",
+          "html": "<p>Admins set up every phone, and you send your marks to others' <strong>Inbox</strong>. Ask a plugin such as <strong>Drones</strong> to act on a target, and its updates arrive in yours.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/0662cbfa017a8325.webp",
+              "width": 1336,
+              "height": 2728
+            }
+          ]
+        },
+        {
+          "title": "Admins and users",
+          "layout": "image-bottom",
+          "html": "<p>Deploy App, the service that enrols your phone on the TAK server, makes some users admins. Admins start with the Setting up chapter, everyone else with Starting as a user.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/9f82a1a7af9824ef.webp",
+              "width": 1336,
+              "height": 1603
+            }
+          ]
+        },
+        {
+          "title": "Your phone and the operation",
+          "layout": "image-bottom",
+          "html": "<p>Every soldier sets their own phone under <strong>THIS PHONE</strong>, such as <strong>My unit</strong> and <strong>Enemy near me</strong>. Only admins change what <strong>OPERATION</strong> shows.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/fcb632b2fc0d8de4.webp",
+              "width": 1336,
+              "height": 852
+            }
+          ]
+        },
+        {
+          "title": "ORBAT",
+          "layout": "image-bottom",
+          "html": "<p>The ORBAT, the order of battle, lists the operation's units, each under the one it belongs to. Admins build it, and until then phones use a built-in Finnish rifle company.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/a66308142a217625.webp",
+              "width": 1336,
+              "height": 1502
+            }
+          ]
+        },
+        {
+          "title": "Your unit",
+          "layout": "image-bottom",
+          "html": "<p>Your unit, picked from the ORBAT, decides which area the <strong>Inbox</strong> watches. It also decides which feeds you should follow, the TAK server's shared lists of marks.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/e88443d74ef35223.webp",
+              "width": 1336,
+              "height": 1376
+            }
+          ]
+        },
+        {
+          "title": "Admin settings",
+          "layout": "image-bottom",
+          "html": "<p>Admins set up the operation under <strong>Server configuration (admins)</strong>, which only they see in the <strong>OpenDefence Main</strong> pane. Once they publish, every phone takes the setup.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/edd03852c24bb386.webp",
+              "width": 1336,
+              "height": 2728
+            }
+          ]
+        },
+        {
+          "title": "Favourites",
+          "layout": "image-bottom",
+          "html": "<p>Admins pick up to 12 favourite symbols for each side. <strong>Markers</strong> offers them first when you pick a symbol.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/9b7afc45ea7067d4.webp",
+              "width": 1336,
+              "height": 1021
+            }
+          ]
+        },
+        {
+          "title": "Usual targets",
+          "layout": "image-bottom",
+          "html": "<p>Admins set each unit's <strong>Usual targets</strong>, where its marks usually go. The card after placing a mark then sends there in one tap.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/3d3cb0036d6ddc57.webp",
+              "width": 1336,
+              "height": 1141
+            }
+          ]
+        },
+        {
+          "title": "Markers",
+          "layout": "image-bottom",
+          "html": "<p><strong>Markers</strong>, on the thumb bar at the map's bottom left, places what you see or plan in a few taps. Each mark carries a military symbol every TAK user reads.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/f695f0874b51c5a7.webp",
+              "width": 1336,
+              "height": 2728
+            }
+          ]
+        },
+        {
+          "title": "What you can mark",
+          "layout": "image-bottom",
+          "html": "<p>A mark can be a unit, a position, a route or an area, friendly, neutral, unknown or enemy. Friendly units come from the ORBAT.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/ddad62b17446be70.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Sending a mark",
+          "layout": "image-bottom",
+          "html": "<p>A new mark stays on your phone and reads <strong>NOT SENT</strong>. <strong>Send to…</strong> shares it to a feed, a role such as HQ, or another plugin.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/cea763e196e3a2c7.webp",
+              "width": 1336,
+              "height": 1502
+            }
+          ]
+        },
+        {
+          "title": "Stale and fresh markers",
+          "layout": "image-bottom",
+          "html": "<p>Enemy reports get old, and the enemy may have moved since. A neutral, unknown or enemy mark goes stale after the time admins set, 24 hours unless they change it.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/13f04c69eed0d943.webp",
+              "width": 1336,
+              "height": 1622
+            }
+          ]
+        },
+        {
+          "title": "Stale on the map",
+          "layout": "image-bottom",
+          "html": "<p>A fresh mark's label says how old it is, such as <strong>3 h ago</strong>. A stale one turns grey and reads <strong>Stale</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/d5daa18ba8d2189c.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Inbox",
+          "layout": "image-bottom",
+          "html": "<p>The <strong>Inbox</strong>, at the top of the thumb bar, gathers what others report. Its red count says how many items are new.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/bf07093518e0b141.webp",
+              "width": 1336,
+              "height": 2728
+            }
+          ]
+        },
+        {
+          "title": "Closest first",
+          "layout": "image-bottom",
+          "html": "<p>The <strong>Inbox</strong> lists the closest enemy first: <strong>Close, under 500 m</strong>, then <strong>Near you</strong>, then your unit's area.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/4dbfe60c136f0e63.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Requests",
+          "layout": "image-bottom",
+          "html": "<p>A request asks another OpenDefence plugin to act on a mark or a drawn area. OpenDefence UAVOps, opened with <strong>Drones</strong>, takes requests for a drone strike or recon.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/a7e9da0a534b788a.webp",
+              "width": 1336,
+              "height": 2728
+            }
+          ]
+        },
+        {
+          "title": "The target button",
+          "layout": "image-bottom",
+          "html": "<p>Tap the mark or area, then the target button, a crosshair in ATAK's ring of buttons. It is there only when the phone has a plugin that takes requests.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/3b1d811e7fc43b0d.webp",
+              "width": 1336,
+              "height": 2103
+            }
+          ]
+        },
+        {
+          "title": "Following a request",
+          "layout": "image-bottom",
+          "html": "<p>You follow your request under <strong>Sent</strong> in the <strong>Inbox</strong>. Those you asked find it under <strong>For you</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/9ed3b7ea578a7b39.webp",
+              "width": 1336,
+              "height": 2223
+            }
+          ]
+        },
+        {
+          "title": "Open for new plugins",
+          "layout": "image-bottom",
+          "html": "<p>Other OpenDefence plugins, each its own app, join OpenDefence Main where you already look. OpenDefence Voice and OpenDefence Matrix also work alone, but OpenDefence UAVOps needs OpenDefence Main.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/9df02832cab8a4a8.webp",
+              "width": 1336,
+              "height": 1534
+            }
+          ]
+        },
+        {
+          "title": "Where plugins join in",
+          "layout": "image-bottom",
+          "html": "<p>Plugins add buttons such as <strong>Drones</strong> and <strong>Voice</strong>, rows in <strong>Send to…</strong> and the <strong>Inbox</strong>, choices on the Request sheet and admin settings such as <strong>Quotas and corridors</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/b37c420e1912428f.webp",
+              "width": 1336,
+              "height": 2346
+            }
+          ]
+        },
+        {
+          "title": "Built and signed the same way",
+          "layout": "image-bottom",
+          "html": "<p>Every plugin is built and checked the same way, and TAK.gov signs it. Plugins to come, such as Fires, Logistics and Sensors, join the same way.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/d1d1f979e9859b89.webp",
+              "width": 1336,
+              "height": 2103
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

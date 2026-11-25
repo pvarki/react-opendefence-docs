@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "id": "b6e237dd-464c-4be7-9b6e-dd2a3b22376d",
+  "slug": "join-a-net-and-talk-XxhpRIvhlN",
+  "collection": "wikis/opendefence-plugins",
+  "locale": "en",
+  "title": "Join a net and talk",
+  "breadcrumb": [
+    "OpenDefence Voice",
+    "Starting as a user",
+    "Join a net and talk"
+  ],
+  "createdAt": "2026-10-28T07:44:31.073Z",
+  "updatedAt": "2026-11-23T20:43:04.326Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Open Voice",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Voice</strong> on the thumb bar. Without OpenDefence Main, open OpenDefence Voice from ATAK's ≡ menu.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/2e57c8764c20cec7.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        },
+        {
+          "title": "Pick a net first",
+          "layout": "image-bottom",
+          "html": "<p>Voice connects by itself, with no sign in. <strong>JOIN A NET</strong> means you have not joined a net yet, so tap the <strong>NET</strong> header.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/4f4526e0869132af.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        },
+        {
+          "title": "Open a group",
+          "layout": "image-bottom",
+          "html": "<p>Nets sit in groups, with your unit's nets first and always open. Tap a group such as <strong>Teams</strong> to open it.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/e3a742de20a38804.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        },
+        {
+          "title": "Join your net",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Join</strong> on the net you want. Voice remembers it and joins it again after a reconnect or a restart.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/84645886bcc0cf87.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        },
+        {
+          "title": "Hold to talk",
+          "layout": "image-bottom",
+          "html": "<p>Once you are in a net, hold the PTT and talk when it reads <strong>TRANSMITTING</strong>. Let go to stop.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/d31e9840f5593c10.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        },
+        {
+          "title": "Mind the time limit",
+          "layout": "image-bottom",
+          "html": "<p>A press ends after 30 seconds. <strong>TIME LIMIT</strong> and a buzz warn you 5 seconds before.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/b6c8641f605b067e.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

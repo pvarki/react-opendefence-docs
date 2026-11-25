@@ -1,0 +1,735 @@
+{
+  "schemaVersion": 1,
+  "label": "OpenDefence Plugins",
+  "slug": "wikis/opendefence-plugins",
+  "items": [
+    {
+      "type": "toporg",
+      "id": "opendefence-main-D5yPc1Vhkr",
+      "label": "OpenDefence Main",
+      "children": [
+        {
+          "type": "doc",
+          "id": "introduction-qSkewIfx3U",
+          "label": "Introduction",
+          "slug": "introduction-qSkewIfx3U"
+        },
+        {
+          "type": "doc",
+          "id": "concepts-A8ZscwHYBx",
+          "label": "Concepts",
+          "slug": "concepts-A8ZscwHYBx"
+        },
+        {
+          "type": "group",
+          "id": "setting-up-SWxYLg9BIc",
+          "label": "Setting up",
+          "children": [
+            {
+              "type": "doc",
+              "id": "set-up-the-orbat-admins-GdcjlgH84p",
+              "label": "Set up the ORBAT",
+              "slug": "set-up-the-orbat-admins-GdcjlgH84p"
+            },
+            {
+              "type": "doc",
+              "id": "set-favourites-and-defaults-admins-9pQQEPNhRd",
+              "label": "Set favourites and defaults",
+              "slug": "set-favourites-and-defaults-admins-9pQQEPNhRd"
+            },
+            {
+              "type": "doc",
+              "id": "share-a-setup-as-a-template-admins-ZQFGv1UdSz",
+              "label": "Share a setup as a template",
+              "slug": "share-a-setup-as-a-template-admins-ZQFGv1UdSz"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "id": "starting-as-a-user-2cyZsZGd4Y",
+          "label": "Starting as a user",
+          "children": [
+            {
+              "type": "doc",
+              "id": "the-thumb-bar-Ky6JMEoHf3",
+              "label": "The thumb bar",
+              "slug": "the-thumb-bar-Ky6JMEoHf3"
+            },
+            {
+              "type": "doc",
+              "id": "pick-your-unit-oXkeDUK6xZ",
+              "label": "Pick your unit",
+              "slug": "pick-your-unit-oXkeDUK6xZ"
+            },
+            {
+              "type": "doc",
+              "id": "choose-what-counts-as-near-dVH1nWSqg0",
+              "label": "Choose what counts as near",
+              "slug": "choose-what-counts-as-near-dVH1nWSqg0"
+            },
+            {
+              "type": "doc",
+              "id": "choose-alerts-and-quiet-time-Jw0ihPyXeZ",
+              "label": "Choose alerts and quiet time",
+              "slug": "choose-alerts-and-quiet-time-Jw0ihPyXeZ"
+            },
+            {
+              "type": "doc",
+              "id": "find-the-settings-and-the-user-manual-BZxmLEFNqW",
+              "label": "Find the settings and the user manual",
+              "slug": "find-the-settings-and-the-user-manual-BZxmLEFNqW"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "id": "inbox-receiving-and-timeline-Fwe1ClqQRV",
+          "label": "Inbox, receiving and timeline",
+          "children": [
+            {
+              "type": "doc",
+              "id": "read-your-inbox-E7dixp7sWf",
+              "label": "Read your Inbox",
+              "slug": "read-your-inbox-E7dixp7sWf"
+            },
+            {
+              "type": "doc",
+              "id": "see-what-your-unit-reported-778pSV3jkJ",
+              "label": "See what your unit reported",
+              "slug": "see-what-your-unit-reported-778pSV3jkJ"
+            },
+            {
+              "type": "doc",
+              "id": "use-the-timeline-nbX0VE7qWM",
+              "label": "Use the timeline",
+              "slug": "use-the-timeline-nbX0VE7qWM"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "id": "drawing-markers-and-sending-them-HjXUGvZf4P",
+          "label": "Drawing markers and sending them",
+          "children": [
+            {
+              "type": "doc",
+              "id": "mark-an-enemy-K0Yfm70eNf",
+              "label": "Mark an enemy",
+              "slug": "mark-an-enemy-K0Yfm70eNf"
+            },
+            {
+              "type": "doc",
+              "id": "send-a-mark-BE0s8jVOmW",
+              "label": "Send a mark",
+              "slug": "send-a-mark-BE0s8jVOmW"
+            },
+            {
+              "type": "doc",
+              "id": "edit-or-undo-a-mark-ekPQ5TkC5L",
+              "label": "Edit or undo a mark",
+              "slug": "edit-or-undo-a-mark-ekPQ5TkC5L"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "id": "managing-stale-markers-a4uWglTaf0",
+          "label": "Managing stale markers",
+          "children": [
+            {
+              "type": "doc",
+              "id": "tell-stale-marks-from-fresh-ones-hydpkikyzd",
+              "label": "Tell stale marks from fresh ones",
+              "slug": "tell-stale-marks-from-fresh-ones-hydpkikyzd"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "id": "requests-pCxzxkcC14",
+          "label": "Requests",
+          "children": [
+            {
+              "type": "doc",
+              "id": "request-drones-on-a-mark-or-area-5bytZM8jZl",
+              "label": "Request drones on a mark or area",
+              "slug": "request-drones-on-a-mark-or-area-5bytZM8jZl"
+            },
+            {
+              "type": "doc",
+              "id": "see-requests-waiting-for-you-U31GbV0uuU",
+              "label": "See requests waiting for you",
+              "slug": "see-requests-waiting-for-you-U31GbV0uuU"
+            },
+            {
+              "type": "doc",
+              "id": "mark-what-a-drone-sees-p5EDt8y6Vi",
+              "label": "Mark what a drone sees",
+              "slug": "mark-what-a-drone-sees-p5EDt8y6Vi"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "id": "advanced-XF1J9UfeuT",
+          "label": "Advanced",
+          "children": [
+            {
+              "type": "doc",
+              "id": "mark-friendly-units-positions-routes-and-areas-Io7ZDzuDxE",
+              "label": "Mark friendly units, positions, routes and areas",
+              "slug": "mark-friendly-units-positions-routes-and-areas-Io7ZDzuDxE"
+            },
+            {
+              "type": "doc",
+              "id": "mark-a-halt-and-its-positions-LZHLEd4XYT",
+              "label": "Mark a halt and its positions",
+              "slug": "mark-a-halt-and-its-positions-LZHLEd4XYT"
+            },
+            {
+              "type": "doc",
+              "id": "mark-posts-code-name-points-and-patrols-LMlR75u5vV",
+              "label": "Mark posts, code-name points and patrols",
+              "slug": "mark-posts-code-name-points-and-patrols-LMlR75u5vV"
+            },
+            {
+              "type": "doc",
+              "id": "add-details-to-a-mark-ushiTeUjx2",
+              "label": "Add details to a mark",
+              "slug": "add-details-to-a-mark-ushiTeUjx2"
+            },
+            {
+              "type": "doc",
+              "id": "show-heading-and-speed-JBOovcbUuP",
+              "label": "Show heading and speed",
+              "slug": "show-heading-and-speed-JBOovcbUuP"
+            },
+            {
+              "type": "doc",
+              "id": "mark-an-enemy-drone-3N3eBeJers",
+              "label": "Mark an enemy drone",
+              "slug": "mark-an-enemy-drone-3N3eBeJers"
+            },
+            {
+              "type": "doc",
+              "id": "mark-unknown-and-neutral-contacts-jOAvlyCt0c",
+              "label": "Mark unknown and neutral contacts",
+              "slug": "mark-unknown-and-neutral-contacts-jOAvlyCt0c"
+            },
+            {
+              "type": "doc",
+              "id": "place-a-mark-by-grid-sv0H59a7LQ",
+              "label": "Place a mark by grid",
+              "slug": "place-a-mark-by-grid-sv0H59a7LQ"
+            },
+            {
+              "type": "doc",
+              "id": "wash-out-the-map-14wSTAXLq0",
+              "label": "Wash out the map",
+              "slug": "wash-out-the-map-14wSTAXLq0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "toporg",
+      "id": "opendefence-uavops-ifEkgFe8Jk",
+      "label": "OpenDefence UAVOps",
+      "children": [
+        {
+          "type": "doc",
+          "id": "introduction-j4Le2MC6ed",
+          "label": "Introduction",
+          "slug": "introduction-j4Le2MC6ed"
+        },
+        {
+          "type": "doc",
+          "id": "concepts-faJbfGEVjn",
+          "label": "Concepts",
+          "slug": "concepts-faJbfGEVjn"
+        },
+        {
+          "type": "group",
+          "id": "starting-as-a-user-WTdIbYO7bO",
+          "label": "Starting as a user",
+          "children": [
+            {
+              "type": "doc",
+              "id": "pick-your-role-and-unit-kRgC9F0DFO",
+              "label": "Pick your role and unit",
+              "slug": "pick-your-role-and-unit-kRgC9F0DFO"
+            },
+            {
+              "type": "doc",
+              "id": "open-the-user-manual-ypFALFvuyX",
+              "label": "Open the user manual",
+              "slug": "open-the-user-manual-ypFALFvuyX"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "id": "forward-observer-officer-foo-QTezaGDSdx",
+          "label": "Forward observer officer",
+          "children": [
+            {
+              "type": "doc",
+              "id": "ask-for-a-drone-Wm8lqKzB5v",
+              "label": "Ask for a drone",
+              "slug": "ask-for-a-drone-Wm8lqKzB5v"
+            },
+            {
+              "type": "doc",
+              "id": "ask-for-recon-over-an-area-ocS1bj514p",
+              "label": "Ask for recon over an area",
+              "slug": "ask-for-recon-over-an-area-ocS1bj514p"
+            },
+            {
+              "type": "doc",
+              "id": "follow-your-request-h3Kkovi8rm",
+              "label": "Follow your request",
+              "slug": "follow-your-request-h3Kkovi8rm"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "id": "hq-and-toc-xLYTOtxkp5",
+          "label": "HQ and TOC",
+          "children": [
+            {
+              "type": "doc",
+              "id": "draw-a-corridor-QLkNeobJW1",
+              "label": "Draw a corridor",
+              "slug": "draw-a-corridor-QLkNeobJW1"
+            },
+            {
+              "type": "doc",
+              "id": "give-a-quota-KEPqdB5jT4",
+              "label": "Give a quota",
+              "slug": "give-a-quota-KEPqdB5jT4"
+            },
+            {
+              "type": "doc",
+              "id": "assign-a-request-Jw7WylyATm",
+              "label": "Assign a request",
+              "slug": "assign-a-request-Jw7WylyATm"
+            },
+            {
+              "type": "doc",
+              "id": "message-or-decline-a-request-YBBd86Uqfk",
+              "label": "Message or decline a request",
+              "slug": "message-or-decline-a-request-YBBd86Uqfk"
+            },
+            {
+              "type": "doc",
+              "id": "follow-and-cancel-missions-RDiPd224dM",
+              "label": "Follow and cancel missions",
+              "slug": "follow-and-cancel-missions-RDiPd224dM"
+            },
+            {
+              "type": "doc",
+              "id": "assign-requests-as-a-toc-CqK9kOFC6O",
+              "label": "Assign requests as a TOC",
+              "slug": "assign-requests-as-a-toc-CqK9kOFC6O"
+            },
+            {
+              "type": "doc",
+              "id": "end-a-corridor-or-a-quota-pkseFjTDaN",
+              "label": "End a corridor or a quota",
+              "slug": "end-a-corridor-or-a-quota-pkseFjTDaN"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "id": "drone-team-JlYLvmVyea",
+          "label": "Drone team",
+          "children": [
+            {
+              "type": "doc",
+              "id": "set-up-your-drones-ppEaacOYMK",
+              "label": "Set up your drones",
+              "slug": "set-up-your-drones-ppEaacOYMK"
+            },
+            {
+              "type": "doc",
+              "id": "share-drone-types-S7H8ijvYSH",
+              "label": "Share drone types",
+              "slug": "share-drone-types-S7H8ijvYSH"
+            },
+            {
+              "type": "doc",
+              "id": "plan-a-mission-yVGegg7DLD",
+              "label": "Plan a mission",
+              "slug": "plan-a-mission-yVGegg7DLD"
+            },
+            {
+              "type": "doc",
+              "id": "fix-a-plan-that-cannot-be-made-KUsqDaHnoc",
+              "label": "Fix a plan that cannot be made",
+              "slug": "fix-a-plan-that-cannot-be-made-KUsqDaHnoc"
+            },
+            {
+              "type": "doc",
+              "id": "check-the-plan-before-sending-RPB7m27gAZ",
+              "label": "Check the plan before sending",
+              "slug": "check-the-plan-before-sending-RPB7m27gAZ"
+            },
+            {
+              "type": "doc",
+              "id": "fly-a-mission-kPE0vJm7Hk",
+              "label": "Fly a mission",
+              "slug": "fly-a-mission-kPE0vJm7Hk"
+            },
+            {
+              "type": "doc",
+              "id": "draw-a-hand-flown-drones-path-NX9hw2LszM",
+              "label": "Draw a hand-flown drone's path",
+              "slug": "draw-a-hand-flown-drones-path-NX9hw2LszM"
+            },
+            {
+              "type": "doc",
+              "id": "report-a-mission-qa1Hne2kxH",
+              "label": "Report a mission",
+              "slug": "report-a-mission-qa1Hne2kxH"
+            },
+            {
+              "type": "doc",
+              "id": "fly-with-a-drone-track-hjRRfrpQcA",
+              "label": "Fly with a drone track",
+              "slug": "fly-with-a-drone-track-hjRRfrpQcA"
+            },
+            {
+              "type": "doc",
+              "id": "abort-or-take-back-an-ending-NcqeU1iP46",
+              "label": "Abort or take back an ending",
+              "slug": "abort-or-take-back-an-ending-NcqeU1iP46"
+            },
+            {
+              "type": "doc",
+              "id": "confirm-a-strike-with-recon-lFdFjWb71y",
+              "label": "Confirm a strike with recon",
+              "slug": "confirm-a-strike-with-recon-lFdFjWb71y"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "id": "pilot-U9TjVVMu8m",
+          "label": "Pilot",
+          "children": [
+            {
+              "type": "doc",
+              "id": "fly-by-the-numbers-LrXYv48SY2",
+              "label": "Fly by the numbers",
+              "slug": "fly-by-the-numbers-LrXYv48SY2"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "id": "everyone-01wZkg8vEZ",
+          "label": "Everyone",
+          "children": [
+            {
+              "type": "doc",
+              "id": "see-drones-on-the-map-3RuFVgZ7gI",
+              "label": "See drones on the map",
+              "slug": "see-drones-on-the-map-3RuFVgZ7gI"
+            },
+            {
+              "type": "doc",
+              "id": "watch-drone-video-ZdW9in1eoq",
+              "label": "Watch drone video",
+              "slug": "watch-drone-video-ZdW9in1eoq"
+            },
+            {
+              "type": "doc",
+              "id": "clear-drone-data-ShWSOcLJ1d",
+              "label": "Clear drone data",
+              "slug": "clear-drone-data-ShWSOcLJ1d"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "toporg",
+      "id": "opendefence-voice-Siv4gsBra9",
+      "label": "OpenDefence Voice",
+      "children": [
+        {
+          "type": "doc",
+          "id": "introduction-JQETMDrj4f",
+          "label": "Introduction",
+          "slug": "introduction-JQETMDrj4f"
+        },
+        {
+          "type": "doc",
+          "id": "concepts-hcXYz1rNRI",
+          "label": "Concepts",
+          "slug": "concepts-hcXYz1rNRI"
+        },
+        {
+          "type": "group",
+          "id": "starting-as-a-user-8NvBWlZmaC",
+          "label": "Starting as a user",
+          "children": [
+            {
+              "type": "doc",
+              "id": "join-a-net-and-talk-XxhpRIvhlN",
+              "label": "Join a net and talk",
+              "slug": "join-a-net-and-talk-XxhpRIvhlN"
+            },
+            {
+              "type": "doc",
+              "id": "use-a-ptt-button-or-vox-aPSKb5LWyf",
+              "label": "Use a PTT button or VOX",
+              "slug": "use-a-ptt-button-or-vox-aPSKb5LWyf"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "id": "talk-q2lqGQEgoe",
+          "label": "Talk",
+          "children": [
+            {
+              "type": "doc",
+              "id": "listen-to-other-nets-OW2RIAkOuU",
+              "label": "Listen to other nets",
+              "slug": "listen-to-other-nets-OW2RIAkOuU"
+            },
+            {
+              "type": "doc",
+              "id": "see-who-is-in-your-net-MDeMhgMtZR",
+              "label": "See who is in your net",
+              "slug": "see-who-is-in-your-net-MDeMhgMtZR"
+            },
+            {
+              "type": "doc",
+              "id": "leave-a-net-YjTAiBTW9V",
+              "label": "Leave a net",
+              "slug": "leave-a-net-YjTAiBTW9V"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "id": "settings-39iUCv9bab",
+          "label": "Settings",
+          "children": [
+            {
+              "type": "doc",
+              "id": "change-voice-settings-in-atak-uwsl3y4Ls4",
+              "label": "Change Voice settings in ATAK",
+              "slug": "change-voice-settings-in-atak-uwsl3y4Ls4"
+            },
+            {
+              "type": "doc",
+              "id": "turn-voice-off-868watyMeE",
+              "label": "Turn Voice off",
+              "slug": "turn-voice-off-868watyMeE"
+            },
+            {
+              "type": "doc",
+              "id": "fix-a-ptt-that-will-not-talk-cs5tInnguw",
+              "label": "Fix a PTT that will not talk",
+              "slug": "fix-a-ptt-that-will-not-talk-cs5tInnguw"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "toporg",
+      "id": "opendefence-matrix-YaB4zpp6Pv",
+      "label": "OpenDefence Matrix",
+      "children": [
+        {
+          "type": "doc",
+          "id": "introduction-75PnjTU6LV",
+          "label": "Introduction",
+          "slug": "introduction-75PnjTU6LV"
+        },
+        {
+          "type": "doc",
+          "id": "concepts-gNkXFS8ukj",
+          "label": "Concepts",
+          "slug": "concepts-gNkXFS8ukj"
+        },
+        {
+          "type": "group",
+          "id": "starting-as-a-user-DloUWupjfO",
+          "label": "Starting as a user",
+          "children": [
+            {
+              "type": "doc",
+              "id": "sign-in-3ohSyV0wd8",
+              "label": "Sign in",
+              "slug": "sign-in-3ohSyV0wd8"
+            },
+            {
+              "type": "doc",
+              "id": "join-a-room-FgouSLgTql",
+              "label": "Join a room",
+              "slug": "join-a-room-FgouSLgTql"
+            },
+            {
+              "type": "doc",
+              "id": "chat-in-a-room-Y8iK8KbVhQ",
+              "label": "Chat in a room",
+              "slug": "chat-in-a-room-Y8iK8KbVhQ"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "id": "chat-28GSi3XFCL",
+          "label": "Chat",
+          "children": [
+            {
+              "type": "doc",
+              "id": "find-a-chat-LJet3PVGCz",
+              "label": "Find a chat",
+              "slug": "find-a-chat-LJet3PVGCz"
+            },
+            {
+              "type": "doc",
+              "id": "message-one-person-caAVww0lqJ",
+              "label": "Message one person",
+              "slug": "message-one-person-caAVww0lqJ"
+            },
+            {
+              "type": "doc",
+              "id": "reply-in-a-thread-b7w9ZfyA7F",
+              "label": "Reply in a thread",
+              "slug": "reply-in-a-thread-b7w9ZfyA7F"
+            },
+            {
+              "type": "doc",
+              "id": "edit-or-delete-a-message-lwCBJz9gdi",
+              "label": "Edit or delete a message",
+              "slug": "edit-or-delete-a-message-lwCBJz9gdi"
+            },
+            {
+              "type": "doc",
+              "id": "write-with-no-connection-HgZMIDKd28",
+              "label": "Write with no connection",
+              "slug": "write-with-no-connection-HgZMIDKd28"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "id": "rooms-t2Q84AfTy7",
+          "label": "Rooms",
+          "children": [
+            {
+              "type": "doc",
+              "id": "make-a-room-zB2M1ynw43",
+              "label": "Make a room",
+              "slug": "make-a-room-zB2M1ynw43"
+            },
+            {
+              "type": "doc",
+              "id": "run-your-room-e7EzTvqEFG",
+              "label": "Run your room",
+              "slug": "run-your-room-e7EzTvqEFG"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "id": "photos-voice-and-polls-vWiFBOmnDJ",
+          "label": "Photos, voice and polls",
+          "children": [
+            {
+              "type": "doc",
+              "id": "send-a-photo-or-a-file-8VARfQqA7e",
+              "label": "Send a photo or a file",
+              "slug": "send-a-photo-or-a-file-8VARfQqA7e"
+            },
+            {
+              "type": "doc",
+              "id": "open-photos-videos-and-files-WLfU1ePbO7",
+              "label": "Open photos, videos and files",
+              "slug": "open-photos-videos-and-files-WLfU1ePbO7"
+            },
+            {
+              "type": "doc",
+              "id": "send-a-voice-message-NEQ6ppCUYI",
+              "label": "Send a voice message",
+              "slug": "send-a-voice-message-NEQ6ppCUYI"
+            },
+            {
+              "type": "doc",
+              "id": "ask-with-a-poll-sdO5q8bsYC",
+              "label": "Ask with a poll",
+              "slug": "ask-with-a-poll-sdO5q8bsYC"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "id": "map-nmXNZBNwkV",
+          "label": "Map",
+          "children": [
+            {
+              "type": "doc",
+              "id": "send-a-map-item-to-a-chat-TgMTmLydc6",
+              "label": "Send a map item to a chat",
+              "slug": "send-a-map-item-to-a-chat-TgMTmLydc6"
+            },
+            {
+              "type": "doc",
+              "id": "put-a-shared-item-on-your-map-FEKFNUlEfW",
+              "label": "Put a shared item on your map",
+              "slug": "put-a-shared-item-on-your-map-FEKFNUlEfW"
+            },
+            {
+              "type": "doc",
+              "id": "see-where-a-message-was-sent-FuW5aXHneB",
+              "label": "See where a message was sent",
+              "slug": "see-where-a-message-was-sent-FuW5aXHneB"
+            },
+            {
+              "type": "doc",
+              "id": "add-a-map-file-to-your-map-7Svg3Kz3ed",
+              "label": "Add a map file to your map",
+              "slug": "add-a-map-file-to-your-map-7Svg3Kz3ed"
+            },
+            {
+              "type": "doc",
+              "id": "see-live-locations-WKo5Ya1vRc",
+              "label": "See live locations",
+              "slug": "see-live-locations-WKo5Ya1vRc"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "id": "settings-LK3xrGHhfr",
+          "label": "Settings",
+          "children": [
+            {
+              "type": "doc",
+              "id": "choose-notifications-h92Xi0dH1v",
+              "label": "Choose notifications",
+              "slug": "choose-notifications-h92Xi0dH1v"
+            },
+            {
+              "type": "doc",
+              "id": "sign-out-ynIoStdt26",
+              "label": "Sign out",
+              "slug": "sign-out-ynIoStdt26"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

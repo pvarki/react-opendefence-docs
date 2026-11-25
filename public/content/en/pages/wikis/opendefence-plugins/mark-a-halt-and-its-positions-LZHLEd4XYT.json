@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "id": "103e5843-3d86-4a9a-94da-4d42cb8292e0",
+  "slug": "mark-a-halt-and-its-positions-LZHLEd4XYT",
+  "collection": "wikis/opendefence-plugins",
+  "locale": "en",
+  "title": "Mark a halt and its positions",
+  "breadcrumb": [
+    "OpenDefence Main",
+    "Advanced",
+    "Mark a halt and its positions"
+  ],
+  "createdAt": "2026-11-23T20:02:13.534Z",
+  "updatedAt": "2026-11-23T20:02:13.534Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Pick Halt area",
+          "layout": "image-bottom",
+          "html": "<p>In <strong>Markers</strong>, tap <strong>Friendly</strong>, <strong>Route</strong>, the symbol and <strong>Halt area</strong>. Check that <strong>Unit</strong> reads your platoon, here <strong>1J</strong>, or tap it and pick the platoon, then tap <strong>Place</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/4938b2d4c8cca54b.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Draw the halt",
+          "layout": "image-bottom",
+          "html": "<p>Draw the halt's outline with one finger, or tap its corners. Tap <strong>Done</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/b587025cfd28a097.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Draw each squad's position",
+          "layout": "image-bottom",
+          "html": "<p>OpenDefence Main asks for each squad's position in turn. Tap its left end, then its right end, facing the enemy, and tap <strong>Done</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/f8c79ace02993415.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Set its firing area",
+          "layout": "image-bottom",
+          "html": "<p>Drag <strong>L</strong>, <strong>R</strong> and the range, then tap <strong>Done</strong>, or <strong>Skip</strong> for none.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/5f3701dfcd5aca12.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Go on or stop",
+          "layout": "image-bottom",
+          "html": "<p>The next squad follows. Tap <strong>Cancel</strong> when every position you need is on the map.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/fac5ddbd0bbc82c2.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Check the map",
+          "layout": "image-bottom",
+          "html": "<p>The halt and its positions go on the card together, <strong>NOT SENT</strong> until you send them.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/2bdccc86f08cc8d2.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Take it back",
+          "layout": "image-bottom",
+          "html": "<p>To take the halt back, tap <strong>Undo</strong> on the card. <strong>Undo all 5</strong> takes back the whole set, or tap one item.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/8cc2899348150401.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

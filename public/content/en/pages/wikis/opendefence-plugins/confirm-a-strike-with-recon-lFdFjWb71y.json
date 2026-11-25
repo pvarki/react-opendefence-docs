@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "da065a7b-90dc-48e1-95fb-e83b6d070a13",
+  "slug": "confirm-a-strike-with-recon-lFdFjWb71y",
+  "collection": "wikis/opendefence-plugins",
+  "locale": "en",
+  "title": "Confirm a strike with recon",
+  "breadcrumb": [
+    "OpenDefence UAVOps",
+    "Drone team",
+    "Confirm a strike with recon"
+  ],
+  "createdAt": "2026-11-06T23:07:10.050Z",
+  "updatedAt": "2026-11-23T15:09:27.598Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Watch the target",
+          "layout": "image-bottom",
+          "html": "<p>Keep your recon drone's camera on the target while another team strikes it. The card shows <strong>Eyes on target</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/5e1f49f26467a413.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Say what your drone saw",
+          "layout": "image-bottom",
+          "html": "<p>When another team's strike ends where your drone's camera looks, <strong>Missions</strong> asks what you saw. Tap <strong>Destroyed</strong>, <strong>Damaged</strong> or <strong>Miss</strong>, or <strong>Can't tell</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/c55eefdf7e69acf8.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "The striking team sees it",
+          "layout": "image-bottom",
+          "html": "<p>The strike's row names the recon that saw it, here <strong>observed by CHARLIE-3</strong> of 2R/1J. <strong>Needs you</strong> still asks the striking team for its own report.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/b88553588c4451d2.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "id": "120274f1-e0e5-4dba-8caf-bde6ab4fe8da",
+  "slug": "pick-your-unit-oXkeDUK6xZ",
+  "collection": "wikis/opendefence-plugins",
+  "locale": "en",
+  "title": "Pick your unit",
+  "breadcrumb": [
+    "OpenDefence Main",
+    "Starting as a user",
+    "Pick your unit"
+  ],
+  "createdAt": "2026-10-27T21:23:48.557Z",
+  "updatedAt": "2026-11-24T13:57:10.645Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Find the unit setting",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Inbox</strong>, then <strong>Set your unit to watch its area ›</strong> at the end. It lists your admins' ORBAT, or a built-in rifle company until they publish one.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/22f7e2f67d350b55.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Go into your platoon",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>›</strong> at the right of your platoon's row to go into it. Tapping the row itself picks that unit.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/92fb8bc2e9bdb982.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Tap your squad or platoon",
+          "layout": "image-bottom",
+          "html": "<p>Tap your squad, or the platoon's card at the top if you lead the platoon, here <strong>1J</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/c42037f6c5798c38.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "See what your unit reports",
+          "layout": "image-bottom",
+          "html": "<p>The Inbox now watches 1J's area and, as you lead 1J, counts its squads' reports under <strong>Reported by your unit</strong>. Tap <strong>Done</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/48c9c077081bd061.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "See your unit in Markers",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Markers</strong> and pick <strong>Friendly</strong>. The <strong>Unit</strong> cell above <strong>Cancel</strong> now reads your unit, here <strong>1J</strong>, so friendly marks you place belong to it unless you pick another.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/a77ee5a536da31e2.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Change it later",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>≡</strong>, scroll the tools to <strong>OpenDefence Main</strong> and tap your unit under <strong>My unit</strong>, here <strong>1J</strong>. <strong>No unit</strong>, the last row of the list that opens, clears it.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/79ec74a1cf62834d.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

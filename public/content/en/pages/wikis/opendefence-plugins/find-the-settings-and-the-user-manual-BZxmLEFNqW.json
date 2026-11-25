@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "id": "9cd2885d-db86-49a0-8f6e-a394ffb532b6",
+  "slug": "find-the-settings-and-the-user-manual-BZxmLEFNqW",
+  "collection": "wikis/opendefence-plugins",
+  "locale": "en",
+  "title": "Find the settings and the user manual",
+  "breadcrumb": [
+    "OpenDefence Main",
+    "Starting as a user",
+    "Find the settings and the user manual"
+  ],
+  "createdAt": "2026-11-23T12:41:56.623Z",
+  "updatedAt": "2026-11-24T13:57:18.096Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Open ATAK's settings",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>≡</strong> and scroll the tools to the end. Tap <strong>Settings</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/aa393c30ad6dce4c.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Open Tool Preferences",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Tool Preferences</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/dd0a91a79210f126.webp",
+              "width": 1336,
+              "height": 2660
+            }
+          ]
+        },
+        {
+          "title": "Open the plugins' settings",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Specific Tool Preferences</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/af7a0168fbddd357.webp",
+              "width": 1336,
+              "height": 2660
+            }
+          ]
+        },
+        {
+          "title": "Find OpenDefence Main",
+          "layout": "image-bottom",
+          "html": "<p>Scroll down and tap <strong>OD Main Preferences</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/03461b616c1cda5b.webp",
+              "width": 1336,
+              "height": 2660
+            }
+          ]
+        },
+        {
+          "title": "Settings for this phone and the operation",
+          "layout": "image-bottom",
+          "html": "<p>Tap a row under <strong>THIS PHONE</strong> to change it. <strong>OPERATION</strong> shows settings your admins set for everyone, such as <strong>Quotas and corridors</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/66e78a05025c5022.webp",
+              "width": 1336,
+              "height": 2660
+            }
+          ]
+        },
+        {
+          "title": "Change your unit",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>My unit</strong> to see every unit of your ORBAT. The list opens at your unit, and <strong>No unit</strong> at its very top clears it.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/e6400c97cc5e7c4c.webp",
+              "width": 1336,
+              "height": 2660
+            }
+          ]
+        },
+        {
+          "title": "Open the user manual",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>User manual</strong> under <strong>HELP</strong> to open OpenDefence Main's manual. Where it is greyed, as here, your copy has none, but the copy from TAK.gov carries it.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/59b9256b4d0f6b15.webp",
+              "width": 1336,
+              "height": 2660
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

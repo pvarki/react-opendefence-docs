@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "id": "b551d267-fcb4-492e-a2e3-9e1b5de42124",
+  "slug": "read-your-inbox-E7dixp7sWf",
+  "collection": "wikis/opendefence-plugins",
+  "locale": "en",
+  "title": "Read your Inbox",
+  "breadcrumb": [
+    "OpenDefence Main",
+    "Inbox, receiving and timeline",
+    "Read your Inbox"
+  ],
+  "createdAt": "2026-10-27T21:23:41.208Z",
+  "updatedAt": "2026-11-23T12:40:07.342Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Watch the badge",
+          "layout": "image-bottom",
+          "html": "<p>The red count on <strong>Inbox</strong> says how many items are new. A red diamond means a new enemy within 500 m.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/7d2e839a9a554d4c.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Open the Inbox",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Inbox</strong> and swipe up. Under <strong>Close, under 500 m</strong> and <strong>Near you, 1 km</strong> each report shows the time seen and how far.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/4dbfe60c136f0e63.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Open an item",
+          "layout": "image-bottom",
+          "html": "<p>Tap a row and the map flies to it. Tap <strong>Next (4)</strong> for the next new one.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/4ab0d417d1a75a85.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "See everything received",
+          "layout": "image-bottom",
+          "html": "<p>Open the Inbox again and tap <strong>All received</strong> at its end. Filter by side or by unit, such as <strong>2R/1J</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/a31bbdc5a840ee1b.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Mark all read",
+          "layout": "image-bottom",
+          "html": "<p>Close <strong>All received</strong>, then tap <strong>Mark all read</strong> to clear every dot. Nothing leaves the list.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/1e0e9afabb18ca67.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Catch new arrivals",
+          "layout": "image-bottom",
+          "html": "<p>New reports show as a banner at the top. Tap it to fly there.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/7c6ee14a12bd87cb.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Know when you are offline",
+          "layout": "image-bottom",
+          "html": "<p>If the Inbox says <strong>Offline</strong>, new reports can't reach you. An empty list then does not mean all clear.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/292f677a76be6920.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

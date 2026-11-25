@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "ef8c395e-8ead-44d9-9337-ff90d6b24c46",
+  "slug": "turn-voice-off-868watyMeE",
+  "collection": "wikis/opendefence-plugins",
+  "locale": "en",
+  "title": "Turn Voice off",
+  "breadcrumb": [
+    "OpenDefence Voice",
+    "Settings",
+    "Turn Voice off"
+  ],
+  "createdAt": "2026-11-23T05:00:32.652Z",
+  "updatedAt": "2026-11-23T05:00:32.652Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Turn Voice off",
+          "layout": "image-bottom",
+          "html": "<p>In Voice, tap <strong>Settings</strong>, then <strong>Server</strong>, and untick <strong>Voice on</strong>. Nothing is heard or sent until you tick it again.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/b956d59d4894121f.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        },
+        {
+          "title": "See that Voice is off",
+          "layout": "image-bottom",
+          "html": "<p>The PTT reads <strong>VOICE OFF</strong>. To connect again, tap <strong>Settings</strong> and tick Voice on.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/98d50944fc60f239.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        },
+        {
+          "title": "Save battery instead",
+          "layout": "image-bottom",
+          "html": "<p>To stay on the net with less battery, tap <strong>Settings</strong> and tick <strong>Voice on</strong> and <strong>Enable power-saving mode</strong>. It adds some delay.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/e7cc5feaaea9ecad.webp",
+              "width": 1336,
+              "height": 2842
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

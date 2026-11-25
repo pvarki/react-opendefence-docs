@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "d227765c-5b29-4b2f-b325-d1ad4a62fcb8",
+  "slug": "ask-for-recon-over-an-area-ocS1bj514p",
+  "collection": "wikis/opendefence-plugins",
+  "locale": "en",
+  "title": "Ask for recon over an area",
+  "breadcrumb": [
+    "OpenDefence UAVOps",
+    "Forward observer officer (FOO)",
+    "Ask for recon over an area"
+  ],
+  "createdAt": "2026-11-06T23:03:18.897Z",
+  "updatedAt": "2026-11-23T20:03:14.437Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Tap the area",
+          "layout": "image-bottom",
+          "html": "<p>Draw the area first with <strong>Markers</strong> on <strong>Unknown</strong> or <strong>Enemy</strong>, then <strong>Area</strong>. In <strong>Drones</strong>, tap <strong>Ask for a drone</strong>, then the area's outline.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/a98247db02e33873.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Recon is chosen",
+          "layout": "image-bottom",
+          "html": "<p>On an area, <strong>Recon</strong> is already chosen. Under <strong>To</strong>, pick who to ask.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/a26009033e95b1bb.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Ask every team",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Any</strong> to ask every team, then <strong>Send</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/4038c562bb417d57.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "See it waiting",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>Drones</strong>. <strong>My requests</strong> shows it as <strong>Waiting for a team</strong>.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/2268a7bc3636ad9a.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

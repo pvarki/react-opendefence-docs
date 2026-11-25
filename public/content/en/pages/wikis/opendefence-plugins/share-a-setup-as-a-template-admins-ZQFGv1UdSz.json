@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "6ff8c01b-6177-48c0-89bd-b8ce8242026b",
+  "slug": "share-a-setup-as-a-template-admins-ZQFGv1UdSz",
+  "collection": "wikis/opendefence-plugins",
+  "locale": "en",
+  "title": "Share a setup as a template (admins)",
+  "breadcrumb": [
+    "OpenDefence Main",
+    "Setting up",
+    "Share a setup as a template (admins)"
+  ],
+  "createdAt": "2026-11-06T23:02:28.023Z",
+  "updatedAt": "2026-11-24T13:56:23.192Z",
+  "headings": [],
+  "blocks": [
+    {
+      "type": "slideset",
+      "source": "canonical",
+      "slides": [
+        {
+          "title": "Export the draft",
+          "layout": "image-bottom",
+          "html": "<p>Tap <strong>≡</strong>, scroll the tools to <strong>OpenDefence Main</strong>, scroll the pane to its end and tap <strong>Export</strong>. Your draft is saved as a template file in ATAK's export folder.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/19cbdb25cbb70497.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Import a template",
+          "layout": "image-bottom",
+          "html": "<p>Copy the file into atak/export on the other admin's phone, with a USB cable or a file manager. There, tap <strong>Import…</strong> beside <strong>Export</strong> and pick the file.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/26a5f982674053c7.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Check what it holds",
+          "layout": "image-bottom",
+          "html": "<p>Check what the file holds, then tap <strong>Fill draft</strong>. Nothing changes on other phones yet.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/e355efedda4709ca.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        },
+        {
+          "title": "Review it",
+          "layout": "image-bottom",
+          "html": "<p>Your draft now holds the template, here <strong>4 unpublished changes</strong>. Check the ORBAT and the other tiles, then tap <strong>Publish…</strong> to replace everyone's setup on this TAK server.</p>",
+          "images": [
+            {
+              "src": "/content/images/en/attachments/ddb906c63c6ae1c9.webp",
+              "width": 1336,
+              "height": 2782
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
